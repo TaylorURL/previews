@@ -5,13 +5,13 @@
 //     node scripts/prerender.js      (npm run build runs it)
 
 import { mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { dirname, join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
 const DIST = 'dist';
 const SSR = 'node_modules/.previews-ssr';
 const shell = readFileSync(join(DIST, 'index.html'), 'utf8');
-const { render, SLUGS, SAMPLES } = await import(pathToFileURL(join(process.cwd(), SSR, 'entry-server.js')).href);
+const { render, pathsOf, SLUGS, SAMPLES } = await import(pathToFileURL(join(process.cwd(), SSR, 'entry-server.js')).href);
 
 const escape = (value) =>
   String(value).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -42,23 +42,29 @@ const label = Object.fromEntries(Object.entries(SAMPLES).map(([name, slug]) => [
 mkdirSync(join(DIST, 'b'), { recursive: true });
 
 for (const slug of SLUGS) {
-  const { html, brand } = render(slug);
-  const body = html.replace(BODY_PRELOAD, '');
-  const head = [
-    `<title>${escape(`${brand.name} | ${brand.town}, ${brand.state}`)}</title>`,
-    // Fonts never hold up the first frame: the page paints in the fallback
-    // and swaps when the brand's faces arrive.
-    `<link rel="preload" as="style" href="${brand.brand.fonts}" onload="this.onload=null;this.rel='stylesheet'" />`,
-    `<noscript><link rel="stylesheet" href="${brand.brand.fonts}" /></noscript>`,
-    heroPreload(body),
-    `<script>window.__SLUG__ = ${JSON.stringify(slug)};</script>`,
-  ].join('\n    ');
-  const page = inlined
-    .replace(/<title>[\s\S]*?<\/title>/, '')
-    .replace(/<script id="boot">[\s\S]*?<\/script>/, head)
-    .replace('<div id="root"></div>', `<div id="root">${body}</div>`);
   const name = label[slug] || slug;
-  writeFileSync(join(DIST, 'b', `${name}.html`), page);
+  for (const path of pathsOf(slug)) {
+    const { html, brand } = render(slug, path);
+    const body = html.replace(BODY_PRELOAD, '');
+    const head = [
+      `<title>${escape(`${brand.name} | ${brand.town}, ${brand.state}`)}</title>`,
+      // Fonts never hold up the first frame: the page paints in the fallback
+      // and swaps when the brand's faces arrive.
+      `<link rel="preload" as="style" href="${brand.brand.fonts}" onload="this.onload=null;this.rel='stylesheet'" />`,
+      `<noscript><link rel="stylesheet" href="${brand.brand.fonts}" /></noscript>`,
+      heroPreload(body),
+      `<script>window.__SLUG__ = ${JSON.stringify(slug)}; window.__PATH__ = ${JSON.stringify(path)};</script>`,
+    ].join('\n    ');
+    const page = inlined
+      .replace(/<title>[\s\S]*?<\/title>/, '')
+      .replace(/<script id="boot">[\s\S]*?<\/script>/, head)
+      .replace('<div id="root"></div>', `<div id="root">${body}</div>`);
+    // The home page keeps the address it always had, /b/<name>; every other
+    // page sits under it at /b/<name>/<path>.
+    const file = path ? join(DIST, 'b', name, `${path}.html`) : join(DIST, 'b', `${name}.html`);
+    mkdirSync(dirname(file), { recursive: true });
+    writeFileSync(file, page);
+  }
   console.log(`prerendered ${name}`);
 }
 

@@ -1,13 +1,13 @@
 import { StrictMode } from 'react';
 import { createRoot, hydrateRoot } from 'react-dom/client';
 import App from './App.jsx';
-import { loadBrand, resolveSlug } from './site.js';
+import { loadBrand, resolvePath, resolveSlug } from './site.js';
 import './index.css';
 
 const slug = resolveSlug();
 const app = (
   <StrictMode>
-    <App brand={slug ? loadBrand(slug) : null} />
+    <App brand={slug ? loadBrand(slug) : null} path={resolvePath()} />
   </StrictMode>
 );
 const root = document.getElementById('root');

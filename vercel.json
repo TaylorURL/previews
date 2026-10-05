@@ -33,6 +33,16 @@
       "destination": "/b/:slug"
     },
     {
+      "source": "/:path((?!assets/|brands/).+)",
+      "has": [
+        {
+          "type": "host",
+          "value": "(?<slug>[a-z0-9-]+)\\.taylorurl\\.com"
+        }
+      ],
+      "destination": "/b/:slug/:path"
+    },
+    {
       "source": "/(.*)",
       "destination": "/b/shell"
     }

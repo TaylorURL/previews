@@ -218,7 +218,12 @@ def send(slug):
 
 
 def sent_today():
-    start = datetime.now(timezone.utc) - timedelta(hours=20)
+    # The day is Houston's, so a letter sent at five in the afternoon counts
+    # toward that day and not toward the next morning's run.
+    from zoneinfo import ZoneInfo
+
+    local = datetime.now(ZoneInfo("America/Chicago"))
+    start = local.replace(hour=0, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
     rows = rest("GET", f"preview_sites?select=slug&sent_at=gte.{start.isoformat().replace('+00:00', 'Z')}")
     print(len(rows or []))
 
