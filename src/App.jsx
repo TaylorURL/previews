@@ -7,26 +7,19 @@ import RealEstate from './templates/RealEstate.jsx';
 
 const TEMPLATES = { plumbing: Plumbing, barber: Barber, realestate: RealEstate };
 
+const slug = resolveSlug();
+const found = slug ? loadBrand(slug) : null;
+
 export default function App() {
-  const [state, setState] = useState({ status: 'loading' });
+  const [brand] = useState(found);
 
   useEffect(() => {
-    const slug = resolveSlug();
-    if (!slug) {
-      setState({ status: 'missing' });
-      return;
-    }
-    loadBrand(slug).then((brand) => {
-      setState(brand ? { status: 'ready', brand } : { status: 'missing' });
-      if (brand) {
-        document.title = `${brand.name} | ${brand.town}, ${brand.state}`;
-        recordView(brand);
-      }
-    });
-  }, []);
+    if (!brand) return;
+    document.title = `${brand.name} | ${brand.town}, ${brand.state}`;
+    recordView(brand);
+  }, [brand]);
 
-  if (state.status === 'loading') return <div className="min-h-screen" aria-busy="true" />;
-  if (state.status === 'missing') {
+  if (!brand) {
     return (
       <main className="mx-auto my-[20vh] max-w-md px-4 text-center font-sans">
         <h1 className="text-2xl font-semibold">Nothing Here Yet</h1>
@@ -38,7 +31,6 @@ export default function App() {
     );
   }
 
-  const { brand } = state;
   const Template = TEMPLATES[brand.template];
   return (
     <>

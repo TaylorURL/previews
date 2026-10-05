@@ -12,7 +12,7 @@ const SUPABASE_KEY = 'sb_publishable_qn4ZWB2n95HGMJm0L58I0w_ClE_Qu4M';
 
 export const SAMPLES = { plumbing: 'sample-plumbing', barber: 'sample-barber', realestate: 'sample-realestate' };
 
-const brands = import.meta.glob('./brands/*.json', { import: 'default' });
+const brands = import.meta.glob('./brands/*.json', { import: 'default', eager: true });
 
 export function resolveSlug(location = window.location) {
   const label = location.hostname.split('.')[0];
@@ -23,9 +23,9 @@ export function resolveSlug(location = window.location) {
   return null;
 }
 
-export async function loadBrand(slug) {
-  const load = brands[`./brands/${slug}.json`];
-  return load ? { slug, ...(await load()) } : null;
+export function loadBrand(slug) {
+  const brand = brands[`./brands/${slug}.json`];
+  return brand ? { slug, ...brand } : null;
 }
 
 /** Counts a view of a prospect's preview. Fire and forget. */
