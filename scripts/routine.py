@@ -18,6 +18,10 @@ Commands:
                                    industry and name come from the prospect
     live SLUG                      exit 0 when SLUG.taylorurl.com serves the
                                    business's own page
+    shot SLUG                      capture the live preview at desktop and
+                                   phone size, compose one image, store it and
+                                   file its address on the preview, so the
+                                   letter can show the site
     send SLUG                      send the first letter through
                                    /api/outreach/previews
     sent-today                     how many preview letters went out today
@@ -26,7 +30,10 @@ Commands:
 import json
 import os
 import re
+import subprocess
 import sys
+import tempfile
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -109,6 +116,87 @@ def live(slug):
     print(f"{url} is live")
 
 
+BUCKET = "preview-shots"
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+
+def compose(desktop_path, phone_path, out_path):
+    """One picture of the site: the desktop page, with the phone page standing
+    in front of its lower right corner, the way a person would show it off."""
+    from PIL import Image, ImageDraw, ImageFilter
+
+    width, height, pad = 1200, 760, 40
+    canvas = Image.new("RGB", (width, height), (238, 240, 243))
+
+    desktop = Image.open(desktop_path).convert("RGB")
+    desk_w = width - pad * 2 - 140
+    desktop = desktop.resize((desk_w, round(desktop.height * desk_w / desktop.width)), Image.LANCZOS)
+    frame = Image.new("RGB", (desktop.width, desktop.height + 28), (255, 255, 255))
+    bar = ImageDraw.Draw(frame)
+    for i, colour in enumerate([(255, 95, 87), (254, 188, 46), (40, 200, 64)]):
+        bar.ellipse((14 + i * 18, 9, 24 + i * 18, 19), fill=colour)
+    frame.paste(desktop, (0, 28))
+    shadow = Image.new("RGBA", (frame.width + 60, frame.height + 60), (0, 0, 0, 0))
+    ImageDraw.Draw(shadow).rounded_rectangle((30, 36, frame.width + 30, frame.height + 36), 14, fill=(0, 0, 0, 60))
+    shadow = shadow.filter(ImageFilter.GaussianBlur(14))
+    canvas.paste(shadow, (pad - 30, pad - 30), shadow)
+    mask = Image.new("L", frame.size, 0)
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, frame.width - 1, frame.height - 1), 10, fill=255)
+    canvas.paste(frame, (pad, pad), mask)
+
+    phone = Image.open(phone_path).convert("RGB")
+    phone_h = height - pad * 2 - 40
+    phone = phone.resize((round(phone.width * phone_h / phone.height), phone_h), Image.LANCZOS)
+    bezel = 9
+    body = Image.new("RGB", (phone.width + bezel * 2, phone.height + bezel * 2), (17, 17, 20))
+    screen_mask = Image.new("L", phone.size, 0)
+    ImageDraw.Draw(screen_mask).rounded_rectangle((0, 0, phone.width - 1, phone.height - 1), 26, fill=255)
+    body.paste(phone, (bezel, bezel), screen_mask)
+    body_mask = Image.new("L", body.size, 0)
+    ImageDraw.Draw(body_mask).rounded_rectangle((0, 0, body.width - 1, body.height - 1), 34, fill=255)
+    x, y = width - pad - body.width, height - pad - body.height + 10
+    shadow = Image.new("RGBA", (body.width + 80, body.height + 80), (0, 0, 0, 0))
+    ImageDraw.Draw(shadow).rounded_rectangle((40, 48, body.width + 40, body.height + 48), 34, fill=(0, 0, 0, 90))
+    shadow = shadow.filter(ImageFilter.GaussianBlur(18))
+    canvas.paste(shadow, (x - 40, y - 40), shadow)
+    canvas.paste(body, (x, y), body_mask)
+
+    canvas.save(out_path, "JPEG", quality=84, optimize=True, progressive=True)
+
+
+def shot(slug):
+    found = rest("GET", f"preview_sites?slug=eq.{slug}&select=id")
+    if not found:
+        sys.exit(f"{slug} is not registered; register it before taking its picture")
+    with tempfile.TemporaryDirectory() as work:
+        subprocess.run(["node", os.path.join(HERE, "shot.mjs"), slug, work], check=True)
+        out = os.path.join(work, f"{slug}.jpg")
+        compose(os.path.join(work, f"{slug}-desktop.png"), os.path.join(work, f"{slug}-phone.png"), out)
+        with open(out, "rb") as handle:
+            data = handle.read()
+    request = urllib.request.Request(
+        f"{SUPABASE}/storage/v1/object/{BUCKET}/{slug}.jpg",
+        data=data,
+        method="POST",
+        headers={
+            "apikey": key(),
+            "Authorization": f"Bearer {key()}",
+            "Content-Type": "image/jpeg",
+            "x-upsert": "true",
+            "Cache-Control": "max-age=31536000",
+        },
+    )
+    try:
+        urllib.request.urlopen(request, timeout=60).read()
+    except urllib.error.HTTPError as error:
+        sys.exit(f"storing the picture of {slug}: {error.code} {error.read().decode()[:300]}")
+    # The version keeps a re-taken picture from being served out of a mail
+    # client's cache under the old one.
+    url = f"{SUPABASE}/storage/v1/object/public/{BUCKET}/{slug}.jpg?v={int(time.time())}"
+    rest("PATCH", f"preview_sites?slug=eq.{slug}", {"shot_url": url}, prefer="return=minimal")
+    print(f"{slug}: {url} ({len(data) // 1024} KB)")
+
+
 def send(slug):
     secret = os.environ.get("CRON_SECRET")
     if not secret:
@@ -145,6 +233,8 @@ def main(argv):
         register(*rest_args)
     elif command == "live" and len(rest_args) == 1:
         live(rest_args[0])
+    elif command == "shot" and len(rest_args) == 1:
+        shot(rest_args[0])
     elif command == "send" and len(rest_args) == 1:
         send(rest_args[0])
     elif command == "sent-today":
