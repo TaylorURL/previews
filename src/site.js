@@ -1,93 +1,76 @@
 /**
- * Which template a request is for, and whose business it is dressed as.
+ * Which business a request is dressed as.
  *
- * The subdomain names the template: plumbing.taylorurl.com,
- * barber.taylorurl.com, realestate.taylorurl.com. Anywhere else - a Vercel
- * preview URL, localhost - `?t=` names it instead. The first path segment is
- * the slug of a row in `preview_sites`; no slug shows the template's own
- * sample business.
+ * The subdomain names it. plumbing, barber and realestate are the templates'
+ * own sample businesses; any other label is a prospect's slug, a file in
+ * src/brands, as in wedgeworthplumbing.taylorurl.com. Anywhere else - a
+ * Vercel preview URL, localhost - `?b=` names it instead.
  */
-
-import plumbing from './industries/plumbing.js';
-import barber from './industries/barber.js';
-import realestate from './industries/realestate.js';
-
-export const INDUSTRIES = { plumbing, barber, realestate };
 
 const SUPABASE_URL = 'https://gujgtjqqurildqurpffh.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_qn4ZWB2n95HGMJm0L58I0w_ClE_Qu4M';
 
-export function resolveIndustry(location = window.location) {
-  const label = location.hostname.split('.')[0];
-  if (INDUSTRIES[label]) return label;
-  const asked = new URLSearchParams(location.search).get('t');
-  return INDUSTRIES[asked] ? asked : 'plumbing';
-}
+export const SAMPLES = { plumbing: 'sample-plumbing', barber: 'sample-barber', realestate: 'sample-realestate' };
+
+const brands = import.meta.glob('./brands/*.json', { import: 'default' });
 
 export function resolveSlug(location = window.location) {
-  const first = location.pathname.split('/').filter(Boolean)[0] || '';
-  return /^[a-z0-9]+(-[a-z0-9]+)*$/.test(first) ? first : null;
+  const label = location.hostname.split('.')[0];
+  const asked = new URLSearchParams(location.search).get('b');
+  const pick = SAMPLES[label] || label;
+  if (brands[`./brands/${pick}.json`]) return pick;
+  if (asked && brands[`./brands/${SAMPLES[asked] || asked}.json`]) return SAMPLES[asked] || asked;
+  return null;
 }
 
-/** The stored business for a slug, or null when there is none. */
-export async function fetchBusiness(industry, slug) {
-  if (window.__preview) return window.__preview;
-  const response = await fetch(`${SUPABASE_URL}/rest/v1/rpc/preview_site`, {
+export async function loadBrand(slug) {
+  const load = brands[`./brands/${slug}.json`];
+  return load ? { slug, ...(await load()) } : null;
+}
+
+/** Counts a view of a prospect's preview. Fire and forget. */
+export function recordView(brand) {
+  if (!brand.preview) return;
+  fetch(`${SUPABASE_URL}/rest/v1/rpc/preview_site`, {
     method: 'POST',
-    headers: {
-      apikey: SUPABASE_KEY,
-      Authorization: `Bearer ${SUPABASE_KEY}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ p_industry: industry, p_slug: slug }),
-  });
-  if (!response.ok) return null;
-  return response.json();
+    keepalive: true,
+    headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ p_industry: brand.template, p_slug: brand.slug }),
+  }).catch(() => {});
 }
 
 /**
- * The business a page is dressed as. A real one never borrows a fact from the
- * sample: its own reviews, hours, staff and service area or none at all, so a
- * preview never puts words in a real owner's mouth. The template decides what
- * to show in a gap.
+ * The src and srcset for an image. A path under /brands/ has -800 and -1600
+ * webp files beside it; an Unsplash URL is resized on request.
  */
-export function mergeBusiness(sample, real) {
-  if (!real) return { ...sample, isPreview: false };
-  return {
-    ...real,
-    state: real.state || 'TX',
-    reviews: Array.isArray(real.reviews) ? real.reviews : [],
-    shortName: real.shortName || shorten(real.name),
-    isPreview: true,
-  };
-}
-
-function shorten(name = '') {
-  return name
-    .replace(/,?\s+(llc|inc|co|corp|ltd|pllc)\.?$/i, '')
-    .trim();
+export function pic(src) {
+  if (!src) return {};
+  if (src.startsWith('https://images.unsplash.com/')) {
+    const at = (w) => `${src}?auto=format&fit=crop&q=65&w=${w}`;
+    return { src: at(1400), srcSet: [640, 1000, 1400, 2000].map((w) => `${at(w)} ${w}w`).join(', ') };
+  }
+  if (/\.(webp|png|jpe?g|svg)$/.test(src)) return { src };
+  return { src: `${src}-1600.webp`, srcSet: `${src}-800.webp 800w, ${src}-1600.webp 1600w` };
 }
 
 export function telHref(phone = '') {
-  return `tel:${phone.replace(/[^\d+]/g, '')}`;
+  return `tel:+1${phone.replace(/\D/g, '').replace(/^1/, '')}`;
 }
 
-/** An Unsplash photo at the width it is drawn at. */
-export function photo(id, width = 1600) {
-  return `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=70`;
+export function mapsHref(b) {
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${b.name} ${b.address} ${b.town} ${b.state}`)}`;
 }
 
-/** The srcset the boot script in index.html preloads, so the two must match. */
-export function heroSrcSet(id) {
-  return [640, 960, 1400, 2000]
-    .map((w) => `https://images.unsplash.com/${id}?auto=format&fit=crop&q=60&w=${w} ${w}w`)
-    .join(', ');
+export function ratingLine(b) {
+  if (!b.rating || !b.reviewCount) return null;
+  return `${Number(b.rating).toFixed(1)} from ${b.reviewCount.toLocaleString()} Google reviews`;
 }
 
-export function loadFonts(href) {
-  if ([...document.styleSheets].some((sheet) => sheet.href === href) || document.querySelector(`link[href="${href}"]`)) return;
-  const link = document.createElement('link');
-  link.rel = 'stylesheet';
-  link.href = href;
-  document.head.appendChild(link);
+/** The brand's colors and fonts as custom properties on the template root. */
+export function brandVars(brand) {
+  const vars = {};
+  for (const [key, value] of Object.entries(brand)) {
+    if (typeof value === 'string' && !['fonts', 'logo'].includes(key)) vars[`--${key}`] = value;
+  }
+  return vars;
 }

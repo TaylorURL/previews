@@ -1,0 +1,172 @@
+{
+  "template": "barber",
+  "preview": true,
+  "name": "Hourani's Barbershop",
+  "shortName": "Hourani's",
+  "phone": "(346) 677-3353",
+  "email": "info@houranisbarbershop.com",
+  "address": "12121 Westheimer Rd, Suite 103",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77077",
+  "rating": 4.7,
+  "reviewCount": 468,
+  "since": 1983,
+  "hours": [
+    [
+      "Monday",
+      "9 AM – 7 PM"
+    ],
+    [
+      "Tuesday – Sunday",
+      "9 AM – 8 PM"
+    ]
+  ],
+  "brand": {
+    "primary": "#a3262a",
+    "ink": "#f3efe7",
+    "muted": "#a39e95",
+    "bg": "#121214",
+    "panel": "#1b1b1f",
+    "line": "#2c2b2f",
+    "heading": "'Marcellus', Georgia, serif",
+    "body": "'Outfit', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Marcellus&family=Outfit:wght@300;400;500;600&display=swap",
+    "logo": "/brands/houranisbarbershop/logo.webp",
+    "logoWidth": 150
+  },
+  "hero": {
+    "eyebrow": "Westheimer Road · Houston",
+    "title": "Classic cuts, passed down since 1983.",
+    "lead": "A family barbershop that began in Sidon, Lebanon. Walk in, take a seat, and leave looking sharp.",
+    "image": "/brands/houranisbarbershop/why",
+    "imageAlt": "The Hourani's Barbershop storefront on Westheimer Road",
+    "inset": "/brands/houranisbarbershop/what",
+    "insetAlt": "Mike Hourani cutting hair in his first shop"
+  },
+  "story": {
+    "eyebrow": "Our story",
+    "title": "Four decades behind the chair",
+    "chapters": [
+      {
+        "year": "1983",
+        "title": "Sidon, Lebanon",
+        "text": "Mohamad \"Mike\" Hourani opens his first shop with borrowed tools and hand-me-down furniture, cutting hair for men and women.",
+        "image": "/brands/houranisbarbershop/what",
+        "alt": "Mike Hourani with a client in the original shop"
+      },
+      {
+        "year": "The years after",
+        "title": "Through it all",
+        "text": "Through war, uncertainty and change, the work stays the same: precise, patient and proud. Those habits are passed down by doing, not by being taught.",
+        "image": "/brands/houranisbarbershop/who",
+        "alt": "Barbers at work in the original shop"
+      },
+      {
+        "year": "Today",
+        "title": "Westheimer Road",
+        "text": "The family carries it on in Houston, with the same standards and the same welcome for every client who walks through the door.",
+        "image": "/brands/houranisbarbershop/why",
+        "alt": "The shop sign: Hourani's Barbershop, since 1983"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "group": "Hair and Grooming",
+      "items": [
+        {
+          "name": "Classic Haircut",
+          "text": "Slick backs, quiffs, pomps, comb-overs and fades, finished with styling."
+        },
+        {
+          "name": "Kids' Haircut",
+          "text": "Cut with patience, for the youngest clients."
+        },
+        {
+          "name": "Beard Shave, Trim and Line-Up",
+          "text": "Razor or trimmer, with clean cheek lines, neckline and mustache shaping."
+        },
+        {
+          "name": "Hair and Beard Combo",
+          "text": "The full service and the shop favorite."
+        }
+      ]
+    },
+    {
+      "group": "Specialized",
+      "items": [
+        {
+          "name": "Hair Coloring",
+          "text": "Color for style or for coverage."
+        },
+        {
+          "name": "Beard Coloring",
+          "text": "Even, natural color for the beard."
+        },
+        {
+          "name": "Keratin Treatment",
+          "text": "Smooths the hair, cuts the frizz and adds shine."
+        }
+      ]
+    },
+    {
+      "group": "Personal Care",
+      "items": [
+        {
+          "name": "Face, Nose and Ear Wax",
+          "text": "Quick and clean."
+        },
+        {
+          "name": "Eyebrow Grooming",
+          "text": "Shaped and trimmed to suit the face."
+        },
+        {
+          "name": "Facial Exfoliation and Steam",
+          "text": "A deeper clean for the skin."
+        },
+        {
+          "name": "Facial Scrub and Black Mask",
+          "text": "The finishing touch after a cut."
+        }
+      ]
+    }
+  ],
+  "hairTypes": [
+    {
+      "name": "Straight",
+      "code": "1a – 1c",
+      "image": "/brands/houranisbarbershop/style-Straight"
+    },
+    {
+      "name": "Wavy",
+      "code": "2a – 2c",
+      "image": "/brands/houranisbarbershop/style-Wavy"
+    },
+    {
+      "name": "Curly",
+      "code": "3a – 3c",
+      "image": "/brands/houranisbarbershop/style-Curly"
+    },
+    {
+      "name": "Coily",
+      "code": "4a – 4c",
+      "image": "/brands/houranisbarbershop/style-Kinky"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Nhan Nguyen",
+      "text": "An absolutely wonderful barber. The results are always on point. The owner is a great guy with exceptional skills. He knows exactly what to do and never fails to give me the look I'm going for."
+    },
+    {
+      "author": "Long Truong",
+      "text": "Been going here for the last 3 years. Never left dissatisfied. The guys here always greeted everyone with a smile and make sure every gentleman is pampered."
+    },
+    {
+      "author": "Jonathan Harris",
+      "text": "Fast and always cuts exactly how I need. Great service!"
+    }
+  ],
+  "visitImage": "/brands/houranisbarbershop/story"
+}

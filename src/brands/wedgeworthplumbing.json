@@ -1,0 +1,76 @@
+{
+  "template": "plumbing",
+  "preview": true,
+  "name": "Wedgeworth Plumbing",
+  "shortName": "Wedgeworth",
+  "phone": "(832) 867-5309",
+  "email": "office@wedgeworthplumbing.com",
+  "address": "9025 Ruland Rd, Unit 003",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77055",
+  "rating": 4.9,
+  "reviewCount": 647,
+  "hours": [["Mon – Fri", "7:30 AM – 7 PM"], ["Saturday", "8 AM – 5 PM"], ["Sunday", "Closed"]],
+  "brand": {
+    "primary": "#0c9547",
+    "primaryDeep": "#06572a",
+    "accent": "#f4ea0a",
+    "ink": "#0d2416",
+    "surface": "#f1f7f2",
+    "heading": "'Barlow Condensed', 'Arial Narrow', sans-serif",
+    "body": "'Barlow', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,800&family=Barlow:wght@400;500;600;700&display=swap",
+    "logo": "/brands/wedgeworthplumbing/logo.webp",
+    "logoWidth": 210
+  },
+  "hero": {
+    "eyebrow": "Houston plumbers",
+    "title": "Houston plumbing so good,",
+    "titleAccent": "it's scary.",
+    "lead": "Experienced plumbers only, a price you approve before any work starts, and some of the strongest warranties in Houston.",
+    "image": "/brands/wedgeworthplumbing/team",
+    "imageAlt": "The Wedgeworth Plumbing crew in front of a company truck",
+    "mascot": "/brands/wedgeworthplumbing/wolfman.webp",
+    "mascotLine": "So good, it's scary."
+  },
+  "promises": ["Up-front pricing", "Experienced techs only", "Strong warranties", "Financing available"],
+  "services": [
+    { "title": "Water Heaters", "icon": "flame", "text": "Repairs and full replacements, gas or electric, usually the same day." },
+    { "title": "Tankless Water Heaters", "icon": "zap", "text": "Endless hot water and a smaller utility bill, sized and installed right." },
+    { "title": "Drain and Toilet Clogs", "icon": "droplets", "text": "Kitchen, bath and main lines cleared, and the cause found so it stays clear." },
+    { "title": "Hydro Jetting", "icon": "waves", "text": "High-pressure water scours grease and roots out of the line, wall to wall." },
+    { "title": "Sewer Repair and Replacement", "icon": "construction", "text": "Camera inspection first, then the repair, with the yard put back after." },
+    { "title": "Slab Leaks and Leak Detection", "icon": "search", "text": "Leaks pinpointed electronically, so the floor opens in one spot, not five." },
+    { "title": "Repiping", "icon": "wrench", "text": "Old galvanized and polybutylene pipe swapped for PEX or copper." },
+    { "title": "Gas Lines", "icon": "gauge", "text": "New lines, repairs and pressure testing, permitted and inspected." },
+    { "title": "Garbage Disposals", "icon": "cog", "text": "Jammed, leaking or worn out, repaired or replaced in one visit." },
+    { "title": "Water Filtration", "icon": "filter", "text": "Whole-home and under-sink systems for cleaner, better-tasting water." },
+    { "title": "Bathroom Remodels and Showers", "icon": "shower", "text": "New showers, tubs and fixtures, plumbed properly from the rough-in up." },
+    { "title": "Commercial Plumbing", "icon": "building", "text": "Restaurants, offices and retail, scheduled around your business hours." }
+  ],
+  "crew": {
+    "eyebrow": "The Wedgeworth difference",
+    "title": "Only experienced plumbers come to your door.",
+    "text": "Every call goes to an experienced, trained technician. They diagnose the problem, give you the price, and do the work only after you approve it.",
+    "points": [
+      { "title": "Price first", "text": "You see the full price before a wrench comes out." },
+      { "title": "On time", "text": "A call when the tech is on the way, inside the window you were given." },
+      { "title": "Warrantied", "text": "Work backed by some of the best warranties in the business." }
+    ],
+    "image": "/brands/wedgeworthplumbing/toilet",
+    "imageAlt": "A Wedgeworth plumber repairing a toilet"
+  },
+  "band": {
+    "title": "Look for the green truck.",
+    "text": "Wedgeworth crews cover Houston and the Bay Area, from West U to Kemah.",
+    "image": "/brands/wedgeworthplumbing/truck",
+    "imageAlt": "A green Wedgeworth Plumbing service van"
+  },
+  "serviceArea": ["Houston", "Bellaire", "West University Place", "Hunters Creek Village", "Piney Point Village", "Bunker Hill Village", "Hedwig Village", "Webster", "League City", "Seabrook", "Kemah", "Clear Lake Shores"],
+  "reviews": [
+    { "author": "Matt Malinsky", "text": "Very professional and timely service. TJ came during assigned window, clearly explained what he found and what he proposed to do and made the repair. Highly recommend." },
+    { "author": "Penny McQueen", "text": "Prompt with very competitive pricing. James was great! They replaced the entire main sewage line with minimal impact to my deck and back yard. Great work!" },
+    { "author": "Lacey Harris", "text": "Highly recommend. James was AWESOME. He was polite and professional, and gave me honest feedback on the problems we were having. He arrived right on time and took care of things in a timely manner." }
+  ]
+}

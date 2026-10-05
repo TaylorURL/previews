@@ -1,27 +1,33 @@
 # Previews
 
-Industry template sites that TaylorURL dresses as a prospect's own business and sends in outreach.
+Sites TaylorURL builds in a prospect's own brand and sends in outreach, so the pitch is their new site rather
+than a description of one.
 
-| Template | Sample | Subdomain |
+| Template | Prospect preview | Sample |
 | :--- | :--- | :--- |
-| Plumbing | Bayside Plumbing Co. | https://plumbing.taylorurl.com |
-| Barber | Sharp Line Barber Co. | https://barber.taylorurl.com |
-| Real estate | Harbor & Main Realty | https://realestate.taylorurl.com |
+| Plumbing | https://wedgeworthplumbing.taylorurl.com | https://plumbing.taylorurl.com |
+| Barber | https://houranisbarbershop.taylorurl.com | https://barber.taylorurl.com |
+| Real estate | https://styledrealestate.taylorurl.com | https://realestate.taylorurl.com |
 
-The subdomain picks the template (`?t=` does it anywhere else). The first path segment is the slug of a
-row in `preview_sites` on Supabase project `gujgtjqqurildqurpffh`, so
-`plumbing.taylorurl.com/acme-plumbing` is that row's business laid over the plumbing template. The page reads
-the row through the `preview_site(industry, slug)` function, which also counts the view; the table itself
-grants the browser nothing.
+Each business is one file in `src/brands/<slug>.json`: its facts, colors, fonts, logo and copy, with its
+photos under `public/brands/<slug>/` as `-800` and `-1600` webp. The subdomain is the slug, so a new preview
+is a brand file, its images, and the subdomain added to the Vercel project. `plumbing`, `barber` and
+`realestate` are the templates' sample businesses. Anywhere else, `?b=<slug>` picks one.
 
-A real business never borrows a fact from the sample: reviews, hours, staff and service area come from its row
-or are left out. Every page is `noindex`.
+A preview never borrows a fact from another business. Reviews are the business's own, quoted from its site
+or Google listing, and anything unknown is left out rather than filled in. Every page is `noindex` and
+carries a strip saying it is a preview.
+
+Views are counted in `preview_sites` on Supabase project `gujgtjqqurildqurpffh`, through the
+`preview_site(industry, slug)` function. The table grants the browser nothing.
+
+Styling is Tailwind. The brand's colors and fonts are custom properties set on each template's root, and
+`tailwind.config.js` names them, so one set of utilities dresses every business.
 
 ```bash
 npm install
-npm run dev      # http://localhost:5173/?t=barber
+npm run dev      # http://localhost:5173/?b=wedgeworthplumbing
 npm run build
 ```
 
-New previews are made by `scripts/make-preview.py`, which picks prospects from `outreach_prospects`,
-pulls their Google listing, and writes the row.
+`scripts/make-preview.py candidates` ranks the outreach prospects a template fits.

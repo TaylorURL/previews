@@ -1,0 +1,107 @@
+{
+  "template": "realestate",
+  "preview": true,
+  "name": "Styled Real Estate",
+  "shortName": "Styled",
+  "broker": "Shelly Scanlin",
+  "phone": "(281) 625-9771",
+  "email": "hello@styledrealestate.com",
+  "address": "27880 Birnham Woods Dr, Suite C",
+  "town": "Spring",
+  "state": "TX",
+  "zip": "77386",
+  "rating": 5.0,
+  "reviewCount": 28,
+  "mlsId": "STYD01",
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#143147",
+    "accent": "#b08d57",
+    "ink": "#2d2d37",
+    "cream": "#f6f3ef",
+    "line": "#e3ddd3",
+    "heading": "'Josefin Sans', system-ui, sans-serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Open+Sans:wght@400;500;600&display=swap",
+    "logo": "/brands/styledrealestate/logo.webp",
+    "logoWidth": 170
+  },
+  "hero": {
+    "eyebrow": "Spring · The Woodlands · Greater Houston",
+    "title": "Take. Care. Of. People.",
+    "lead": "Buying, selling, designing and managing homes across Greater Houston, all from one office in Spring.",
+    "image": "/brands/styledrealestate/hero",
+    "imageAlt": "Aerial view of a lakefront home with a circular drive"
+  },
+  "divisions": [
+    {
+      "title": "Buy a Home",
+      "text": "Every walkthrough, every question, every negotiation, handled by people who answer the phone.",
+      "image": "/brands/styledrealestate/lender"
+    },
+    {
+      "title": "Sell Your Home",
+      "text": "Pricing, staging and marketing built to sell quickly and close clean.",
+      "image": "/brands/styledrealestate/design"
+    },
+    {
+      "title": "Design + Renovate",
+      "text": "Visit the design center to plan finishes, updates and full renovations."
+    },
+    {
+      "title": "Blue Mind Custom Pools",
+      "text": "Custom pool design and construction through Blue Mind Custom Pools."
+    },
+    {
+      "title": "Care 4 Properties",
+      "text": "Property management for owners who want rentals looked after properly."
+    },
+    {
+      "title": "Commercial Real Estate",
+      "text": "Commercial property bought, sold and leased."
+    }
+  ],
+  "areas": [
+    "Benders Landing Estates",
+    "Carlton Woods",
+    "The Woodlands",
+    "Spring",
+    "Cypress",
+    "Humble",
+    "Garden Oaks",
+    "Bay Area"
+  ],
+  "about": {
+    "title": "Led by broker Shelly Scanlin",
+    "text": "Clients from Benders Landing to Garden Oaks say the same things about working with Styled: Shelly shows up for every walkthrough, answers every question, and negotiates hard when it counts.",
+    "image": "https://images.unsplash.com/photo-1600121848594-d8644e57abab",
+    "imageAlt": "A bright living room with gray and white furniture"
+  },
+  "reviews": [
+    {
+      "author": "Benji Nelson",
+      "where": "Shady Elms, Bay Area",
+      "text": "To say that we had a perfect experience would honestly be an understatement."
+    },
+    {
+      "author": "Mattie & Nik",
+      "where": "Aspen Bend, Cypress",
+      "text": "As first time homebuyers, my husband and I could not have been happier with Styled Real Estate."
+    },
+    {
+      "author": "Leslie W.",
+      "where": "Crescent Valley, Humble",
+      "text": "The Styled Real Estate team knew just what was needed to quickly sell our house."
+    }
+  ],
+  "listings": "sample"
+}

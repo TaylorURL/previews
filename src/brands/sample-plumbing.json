@@ -1,0 +1,64 @@
+{
+  "template": "plumbing",
+  "name": "Bayside Plumbing Co.",
+  "shortName": "Bayside Plumbing",
+  "phone": "(281) 555-0142",
+  "email": "service@baysideplumbing.example",
+  "address": "1200 Market St",
+  "town": "Baytown",
+  "state": "TX",
+  "rating": 4.9,
+  "reviewCount": 212,
+  "hours": [["Mon – Fri", "7 AM – 7 PM"], ["Saturday", "8 AM – 4 PM"], ["Sunday", "Emergencies only"]],
+  "brand": {
+    "primary": "#0b5cd5",
+    "primaryDeep": "#0a2a5e",
+    "accent": "#ff8a1f",
+    "ink": "#0e1a2e",
+    "surface": "#f2f6fc",
+    "heading": "'Barlow Condensed', 'Arial Narrow', sans-serif",
+    "body": "'Barlow', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,800&family=Barlow:wght@400;500;600;700&display=swap"
+  },
+  "hero": {
+    "eyebrow": "Baytown plumbers",
+    "title": "Plumbing fixed right",
+    "titleAccent": "the first time.",
+    "lead": "Licensed plumbers, a flat price you approve before work starts, and a truck at your door the same day.",
+    "image": "https://images.unsplash.com/photo-1749532125405-70950966b0e5",
+    "imageAlt": "A plumber repairing pipes under a bathroom sink"
+  },
+  "promises": ["Licensed and insured", "Flat-rate pricing", "Same-day service", "1-year labor warranty"],
+  "services": [
+    { "title": "Water Heaters", "icon": "flame", "text": "Tank and tankless units repaired or replaced, usually the same day." },
+    { "title": "Drain Cleaning", "icon": "droplets", "text": "Kitchen, bath and main lines cleared, with a camera when a clog keeps coming back." },
+    { "title": "Leak Detection", "icon": "search", "text": "Slab and wall leaks found electronically, so the floor opens in one spot." },
+    { "title": "Sewer Lines", "icon": "construction", "text": "Root intrusion and broken lines repaired, trenchless where the yard allows." },
+    { "title": "Repiping", "icon": "wrench", "text": "Old galvanized pipe swapped for PEX or copper, with drywall patched after." },
+    { "title": "Fixtures and Toilets", "icon": "shower", "text": "Running toilets, dripping faucets and new vanities, installed and sealed." }
+  ],
+  "crew": {
+    "eyebrow": "How it works",
+    "title": "No surprises on the bill.",
+    "text": "A real person answers the phone and gives you an arrival window. The plumber finds the problem and quotes a flat price before any work starts.",
+    "points": [
+      { "title": "Price first", "text": "You approve the full price before work begins." },
+      { "title": "On time", "text": "A text when the plumber is on the way." },
+      { "title": "Cleaned up", "text": "The work area is left the way it was found." }
+    ],
+    "image": "https://images.unsplash.com/photo-1676210134190-3f2c0d5cf58d",
+    "imageAlt": "A plumber servicing a water heater"
+  },
+  "band": {
+    "title": "Plumbing emergency?",
+    "text": "Burst pipe or no hot water, the phone is answered around the clock.",
+    "image": "https://images.unsplash.com/photo-1676210134188-4c05dd172f89",
+    "imageAlt": "A plumber working on a pipe in a wall"
+  },
+  "serviceArea": ["Baytown", "Mont Belvieu", "La Porte", "Highlands", "Crosby", "Pasadena"],
+  "reviews": [
+    { "author": "Maria G.", "text": "Water heater went out on a Sunday night. They had a tech here by 9 the next morning and a new tank in by lunch. Price was exactly what they quoted on the phone." },
+    { "author": "Derek H.", "text": "Found a slab leak two other companies missed. Showed me the readings on the meter before touching anything." },
+    { "author": "Lynn P.", "text": "Cleaned out a kitchen line that kept backing up and ran a camera to show me why. Has not clogged since." }
+  ]
+}

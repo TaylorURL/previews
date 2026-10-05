@@ -1,0 +1,59 @@
+{
+  "template": "barber",
+  "name": "Sharp Line Barber Co.",
+  "shortName": "Sharp Line",
+  "phone": "(281) 555-0187",
+  "email": "book@sharpline.example",
+  "address": "418 W Texas Ave",
+  "town": "Baytown",
+  "state": "TX",
+  "rating": 4.9,
+  "reviewCount": 348,
+  "since": 2016,
+  "hours": [["Monday", "Closed"], ["Tue – Fri", "9 AM – 7 PM"], ["Saturday", "8 AM – 5 PM"], ["Sunday", "10 AM – 3 PM"]],
+  "brand": {
+    "primary": "#c9a45c",
+    "ink": "#ece6dc",
+    "muted": "#a59c8f",
+    "bg": "#0e0d0c",
+    "panel": "#171513",
+    "line": "#2a2622",
+    "heading": "'Marcellus', Georgia, serif",
+    "body": "'Outfit', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Marcellus&family=Outfit:wght@300;400;500;600&display=swap"
+  },
+  "hero": {
+    "eyebrow": "Texas Avenue · Baytown",
+    "title": "Sharp cuts. No waiting around.",
+    "lead": "Fades, beards and hot towel shaves. Pick a time, walk in, and go straight to the chair.",
+    "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1",
+    "imageAlt": "A client in a barber chair",
+    "inset": "https://images.unsplash.com/photo-1599351431202-1e0f0137899a",
+    "insetAlt": "A barber using a straight razor"
+  },
+  "story": {
+    "eyebrow": "The shop",
+    "title": "Built around the chair",
+    "chapters": [
+      { "year": "2016", "title": "One chair", "text": "Sharp Line opens with a single chair and a waiting list by the end of the first month.", "image": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70", "alt": "A leather barber chair against brick" },
+      { "year": "Now", "title": "Four barbers", "text": "Four barbers, online booking and the same hot towel finish on every cut.", "image": "https://images.unsplash.com/photo-1657105052497-f996284ffff8", "alt": "A barber trimming with shears" }
+    ]
+  },
+  "menu": [
+    { "group": "Cuts", "items": [
+      { "name": "Classic Cut", "price": 30, "text": "Scissor or clipper cut, washed and styled." },
+      { "name": "Skin Fade", "price": 35, "text": "Bald to blended, finished with a razor line." },
+      { "name": "Kids Cut", "price": 22, "text": "Twelve and under." }
+    ]},
+    { "group": "Beard and Shave", "items": [
+      { "name": "Beard Trim", "price": 20, "text": "Shaped, lined and finished with a hot towel." },
+      { "name": "Hot Towel Shave", "price": 35, "text": "Lather, straight razor, two hot towels." },
+      { "name": "Cut and Beard", "price": 45, "text": "The full service, start to finish." }
+    ]}
+  ],
+  "reviews": [
+    { "author": "Jordan T.", "text": "Cleanest fade I have had in years. Booked online at lunch and was in the chair by 5." },
+    { "author": "Chris M.", "text": "Brought my son for his first real haircut. They were patient with him and he walked out grinning." },
+    { "author": "Andre W.", "text": "The hot towel shave is worth every dollar. Good music, no rush, fair prices." }
+  ]
+}

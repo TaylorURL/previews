@@ -6,41 +6,29 @@
     <meta name="robots" content="noindex, nofollow" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://images.unsplash.com" />
-    <link rel="preconnect" href="https://gujgtjqqurildqurpffh.supabase.co" crossorigin />
     <title>Preview</title>
     <script>
       (function () {
-        var heroes = {
-          plumbing: 'photo-1749532125405-70950966b0e5',
-          barber: 'photo-1503951914875-452162b0f3f1',
-          realestate: 'photo-1613977257592-4871e5fcd7c4'
-        };
+        var brands = __BRANDS__;
+        var samples = { plumbing: 'sample-plumbing', barber: 'sample-barber', realestate: 'sample-realestate' };
         var label = location.hostname.split('.')[0];
-        var t = heroes[label] ? label : new URLSearchParams(location.search).get('t');
-        if (!heroes[t]) t = 'plumbing';
-        var base = 'https://images.unsplash.com/' + heroes[t] + '?auto=format&fit=crop&q=60&w=';
-        var link = document.createElement('link');
-        link.rel = 'preload';
-        link.as = 'image';
-        link.setAttribute('fetchpriority', 'high');
-        link.setAttribute('imagesrcset', [640, 960, 1400, 2000].map(function (w) { return base + w + ' ' + w + 'w'; }).join(', '));
-        link.setAttribute('imagesizes', '100vw');
-        document.head.appendChild(link);
-        var fonts = { plumbing: 'https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap', barber: 'https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap', realestate: 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap' };
+        var asked = new URLSearchParams(location.search).get('b');
+        var slug = samples[label] || label;
+        if (!brands[slug]) slug = samples[asked] || asked;
+        var b = brands[slug];
+        if (!b) return;
+        document.title = b.title;
+        var img = document.createElement('link');
+        img.rel = 'preload';
+        img.as = 'image';
+        img.setAttribute('fetchpriority', 'high');
+        img.setAttribute('imagesrcset', b.hero);
+        img.setAttribute('imagesizes', b.sizes);
+        document.head.appendChild(img);
         var css = document.createElement('link');
         css.rel = 'stylesheet';
-        css.href = fonts[t];
+        css.href = b.fonts;
         document.head.appendChild(css);
-        var slug = location.pathname.split('/').filter(Boolean)[0];
-        if (slug && /^[a-z0-9]+(-[a-z0-9]+)*$/.test(slug)) {
-          var key = 'sb_publishable_qn4ZWB2n95HGMJm0L58I0w_ClE_Qu4M';
-          window.__preview = fetch('https://gujgtjqqurildqurpffh.supabase.co/rest/v1/rpc/preview_site', {
-            method: 'POST',
-            headers: { apikey: key, Authorization: 'Bearer ' + key, 'Content-Type': 'application/json' },
-            body: JSON.stringify({ p_industry: t, p_slug: slug })
-          }).then(function (r) { return r.ok ? r.json() : null; });
-        }
       })();
     </script>
   </head>
