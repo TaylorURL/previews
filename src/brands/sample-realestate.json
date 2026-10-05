@@ -10,7 +10,20 @@
   "state": "TX",
   "rating": 5.0,
   "reviewCount": 96,
-  "hours": [["Mon – Fri", "9 AM – 6 PM"], ["Saturday", "10 AM – 4 PM"], ["Sunday", "By appointment"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 6 PM"
+    ],
+    [
+      "Saturday",
+      "10 AM – 4 PM"
+    ],
+    [
+      "Sunday",
+      "By appointment"
+    ]
+  ],
   "brand": {
     "primary": "#1f3b33",
     "accent": "#b08a4e",
@@ -29,11 +42,29 @@
     "imageAlt": "A modern white home with a pool"
   },
   "divisions": [
-    { "title": "Buy a Home", "text": "Tours on your schedule, honest advice on every house, and a strong offer when you find the one.", "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914" },
-    { "title": "Sell Your Home", "text": "Pricing from this month's sales on your street, pro photos and a plan to sell fast.", "image": "https://images.unsplash.com/photo-1600121848594-d8644e57abab" },
-    { "title": "Relocation", "text": "Video tours and a local guide for buyers moving in from out of state." }
+    {
+      "title": "Buy a Home",
+      "text": "Tours on your schedule, honest advice on every house, and a strong offer when you find the one.",
+      "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914"
+    },
+    {
+      "title": "Sell Your Home",
+      "text": "Pricing from this month's sales on your street, pro photos and a plan to sell fast.",
+      "image": "https://images.unsplash.com/photo-1600121848594-d8644e57abab"
+    },
+    {
+      "title": "Relocation",
+      "text": "Video tours and a local guide for buyers moving in from out of state."
+    }
   ],
-  "areas": ["Lakewood", "Goose Creek", "Country Club Oaks", "Mont Belvieu", "Cove", "Chambers County"],
+  "areas": [
+    "Lakewood",
+    "Goose Creek",
+    "Country Club Oaks",
+    "Mont Belvieu",
+    "Cove",
+    "Chambers County"
+  ],
   "about": {
     "title": "Meet Rachel Moreno",
     "text": "Rachel has helped families buy and sell across Baytown for over a decade, with a focus on pricing homes right and negotiating the repairs that follow an inspection.",
@@ -41,9 +72,22 @@
     "imageAlt": "A bright living room with a vaulted ceiling"
   },
   "reviews": [
-    { "author": "The Alvarez family", "where": "Relocated from Denver", "text": "Rachel toured homes on video, flagged the issues before we asked and we closed in 26 days." },
-    { "author": "Brian K.", "where": "Lakewood", "text": "Sold our house over list in the first weekend. The photos and pricing advice made the difference." },
-    { "author": "Tasha R.", "where": "Goose Creek", "text": "First-time buyers with a lot of questions. Every one got answered, usually the same hour." }
+    {
+      "author": "The Alvarez family",
+      "where": "Relocated from Denver",
+      "text": "Rachel toured homes on video, flagged the issues before we asked and we closed in 26 days."
+    },
+    {
+      "author": "Brian K.",
+      "where": "Lakewood",
+      "text": "Sold our house over list in the first weekend. The photos and pricing advice made the difference."
+    },
+    {
+      "author": "Tasha R.",
+      "where": "Goose Creek",
+      "text": "First-time buyers with a lot of questions. Every one got answered, usually the same hour."
+    }
   ],
-  "listings": "sample"
+  "listings": "sample",
+  "strapline": "Buy · Sell · Relocate"
 }

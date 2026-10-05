@@ -107,7 +107,9 @@ export default function RealEstate({ b }) {
             {rating}
           </div>
         )}
-        <div className="px-6 py-3 font-heading text-[13px] uppercase tracking-[0.2em] sm:py-5">Buy · Sell · Design · Manage</div>
+        {b.strapline && (
+          <div className="px-6 py-3 font-heading text-[13px] uppercase tracking-[0.2em] sm:py-5">{b.strapline}</div>
+        )}
         {b.mlsId && <div className="px-6 py-3 text-[15px] sm:border-l sm:border-white/15 sm:py-5">MLS ID #{b.mlsId}</div>}
       </section>
 
