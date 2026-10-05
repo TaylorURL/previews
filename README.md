@@ -30,4 +30,7 @@ npm run dev      # http://localhost:5173/?b=wedgeworthplumbing
 npm run build
 ```
 
-`scripts/make-preview.py candidates` ranks the outreach prospects a template fits.
+Previews are built by the preview routine on the Pi, ten each weekday: it picks prospects with
+`preview_candidates()`, writes their brand files here, lands them, and sends each letter through
+taylorurl.com's `/api/outreach/previews`. `*.taylorurl.com` points at this project, so a pushed brand file is
+a live subdomain. `scripts/routine.py` is the database and mail half of that run.
