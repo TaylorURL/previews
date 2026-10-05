@@ -1,10 +1,17 @@
 import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 import App from './App.jsx';
+import { loadBrand, resolveSlug } from './site.js';
 import './index.css';
 
-createRoot(document.getElementById('root')).render(
+const slug = resolveSlug();
+const app = (
   <StrictMode>
-    <App />
-  </StrictMode>,
+    <App brand={slug ? loadBrand(slug) : null} />
+  </StrictMode>
 );
+const root = document.getElementById('root');
+
+// A prerendered page already holds its markup; anywhere else the app draws it.
+if (root.hasChildNodes()) hydrateRoot(root, app);
+else createRoot(root).render(app);

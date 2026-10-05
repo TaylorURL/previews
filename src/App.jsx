@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { loadBrand, recordView, resolveSlug } from './site.js';
+import { useEffect } from 'react';
+import { recordView } from './site.js';
 import PreviewBar from './PreviewBar.jsx';
 import Plumbing from './templates/Plumbing.jsx';
 import Barber from './templates/Barber.jsx';
@@ -7,12 +7,7 @@ import RealEstate from './templates/RealEstate.jsx';
 
 const TEMPLATES = { plumbing: Plumbing, barber: Barber, realestate: RealEstate };
 
-const slug = resolveSlug();
-const found = slug ? loadBrand(slug) : null;
-
-export default function App() {
-  const [brand] = useState(found);
-
+export default function App({ brand }) {
   useEffect(() => {
     if (!brand) return;
     document.title = `${brand.name} | ${brand.town}, ${brand.state}`;

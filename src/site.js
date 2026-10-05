@@ -14,7 +14,10 @@ export const SAMPLES = { plumbing: 'sample-plumbing', barber: 'sample-barber', r
 
 const brands = import.meta.glob('./brands/*.json', { import: 'default', eager: true });
 
+export const SLUGS = Object.keys(brands).map((path) => path.slice(9, -5));
+
 export function resolveSlug(location = window.location) {
+  if (window.__SLUG__) return window.__SLUG__;
   const label = location.hostname.split('.')[0];
   const asked = new URLSearchParams(location.search).get('b');
   const pick = SAMPLES[label] || label;
