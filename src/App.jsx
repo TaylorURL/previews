@@ -1,13 +1,9 @@
 import { useEffect } from 'react';
 import { recordView } from './site.js';
 import PreviewBar from './PreviewBar.jsx';
-import Plumbing from './templates/Plumbing.jsx';
-import Barber from './templates/Barber.jsx';
-import RealEstate from './templates/RealEstate.jsx';
+import { TEMPLATES } from './templates.js';
 
-const TEMPLATES = { plumbing: Plumbing, barber: Barber, realestate: RealEstate };
-
-export default function App({ brand }) {
+export default function App({ brand, path = '' }) {
   useEffect(() => {
     if (!brand) return;
     document.title = `${brand.name} | ${brand.town}, ${brand.state}`;
@@ -26,11 +22,11 @@ export default function App({ brand }) {
     );
   }
 
-  const Template = TEMPLATES[brand.template];
+  const Template = TEMPLATES[brand.template]?.default;
   return (
     <>
       {brand.preview && <PreviewBar b={brand} />}
-      <Template b={brand} />
+      <Template b={brand} path={path} />
     </>
   );
 }
