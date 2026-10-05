@@ -31,6 +31,13 @@ function heroPreload(body) {
 // a string there is no head to put it in, so it comes out of the body.
 const BODY_PRELOAD = /<link\s[^>]*rel="preload"[^>]*as="image"[^>]*\/?>/gi;
 
+// The stylesheet is small enough to ship inside each document, which saves the
+// request a phone would otherwise wait on before drawing anything.
+const cssHref = shell.match(/<link rel="stylesheet"[^>]*href="(\/assets\/[^"]+\.css)"[^>]*>/);
+const inlined = cssHref
+  ? shell.replace(cssHref[0], `<style>${readFileSync(join(DIST, cssHref[1]), 'utf8')}</style>`)
+  : shell;
+
 const label = Object.fromEntries(Object.entries(SAMPLES).map(([name, slug]) => [slug, name]));
 mkdirSync(join(DIST, 'b'), { recursive: true });
 
@@ -39,11 +46,14 @@ for (const slug of SLUGS) {
   const body = html.replace(BODY_PRELOAD, '');
   const head = [
     `<title>${escape(`${brand.name} | ${brand.town}, ${brand.state}`)}</title>`,
-    `<link rel="stylesheet" href="${brand.brand.fonts}" />`,
+    // Fonts never hold up the first frame: the page paints in the fallback
+    // and swaps when the brand's faces arrive.
+    `<link rel="preload" as="style" href="${brand.brand.fonts}" onload="this.onload=null;this.rel='stylesheet'" />`,
+    `<noscript><link rel="stylesheet" href="${brand.brand.fonts}" /></noscript>`,
     heroPreload(body),
     `<script>window.__SLUG__ = ${JSON.stringify(slug)};</script>`,
   ].join('\n    ');
-  const page = shell
+  const page = inlined
     .replace(/<title>[\s\S]*?<\/title>/, '')
     .replace(/<script id="boot">[\s\S]*?<\/script>/, head)
     .replace('<div id="root"></div>', `<div id="root">${body}</div>`);
