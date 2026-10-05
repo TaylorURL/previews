@@ -4,7 +4,7 @@
 //
 //     node scripts/prerender.js      (npm run build runs it)
 
-import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
@@ -52,4 +52,7 @@ for (const slug of SLUGS) {
   console.log(`prerendered ${name}`);
 }
 
+// The shell moves out of the root. Vercel serves a file that exists before it
+// reads a rewrite, so with index.html in place the host rule never ran.
+renameSync(join(DIST, 'index.html'), join(DIST, 'b', 'shell.html'));
 rmSync(SSR, { recursive: true, force: true });
