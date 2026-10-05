@@ -98,6 +98,7 @@ export default function RealEstate({ b, c }) {
           <div>
             <p className="re-eyebrow">Featured Listings</p>
             <h2>Homes for sale around {b.town}</h2>
+            {b.isPreview && <p className="re-note">Sample homes, shown until your own listings are added.</p>}
           </div>
           <div className="re-filters" role="tablist" aria-label="Filter listings">
             {tags.map((t) => (
