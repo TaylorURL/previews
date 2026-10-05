@@ -1,0 +1,74 @@
+{
+  "template": "plumbing",
+  "preview": true,
+  "name": "Accurate Plumbing Services",
+  "shortName": "Accurate Plumbing",
+  "phone": "(713) 817-3977",
+  "email": "info@accurateplumbingtx.com",
+  "address": "7102 Brookside Rd, Ste 108",
+  "town": "Pearland",
+  "state": "TX",
+  "zip": "77581",
+  "rating": 4.9,
+  "reviewCount": 368,
+  "hours": [["Mon – Fri", "8 AM – 6 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "brand": {
+    "primary": "#0a76b4",
+    "primaryDeep": "#0c2791",
+    "accent": "#83ba14",
+    "ink": "#0f1a2e",
+    "surface": "#eef5fa",
+    "heading": "'Montserrat', system-ui, sans-serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;1,800&family=Open+Sans:wght@400;500;600;700&display=swap",
+    "logo": "/brands/accurateplumbing/logo.webp",
+    "logoWidth": 175
+  },
+  "hero": {
+    "eyebrow": "Pearland plumbers",
+    "title": "Professional service,",
+    "titleAccent": "affordable prices.",
+    "lead": "Your trusted local plumber for Pearland, Friendswood and the communities around them. Locally owned since 2019, licensed and insured, with same-day emergency support.",
+    "image": "/brands/accurateplumbing/team",
+    "imageAlt": "The Accurate Plumbing team in front of a company van"
+  },
+  "promises": ["Locally Owned", "Licensed and Insured", "Same-Day Emergency Support", "Interest-Free Financing"],
+  "services": [
+    { "title": "Drain Cleaning", "icon": "droplets", "text": "Clogs and blockages cleared from kitchen, bath and main lines, so wastewater flows again." },
+    { "title": "Hydro Jetting", "icon": "waves", "text": "High-pressure water scours stubborn buildup out of the line, using nothing but water." },
+    { "title": "Sewer Line Services", "icon": "construction", "text": "Sewer cleaning and repair that starts with a camera inspection of the whole run." },
+    { "title": "Under Slab Plumbing", "icon": "building", "text": "Slab leaks found early and repaired with as little cutting into the foundation as possible." },
+    { "title": "Water Heater Services", "icon": "flame", "text": "Leaks, heating faults and system failures diagnosed, then the unit repaired or replaced." },
+    { "title": "Tankless Water Heaters", "icon": "zap", "text": "Tankless units installed, repaired and serviced, for hot water without the tank." },
+    { "title": "Gas Line Services", "icon": "gauge", "text": "Installation, repair, replacement, leak detection and inspection for your gas lines." },
+    { "title": "Home Repiping", "icon": "wrench", "text": "Aging or damaged pipe replaced throughout the house, so the system stops springing leaks." },
+    { "title": "Water Softeners", "icon": "filter", "text": "Softeners installed and repaired, so hard water stops leaving limescale behind." },
+    { "title": "Water Filtration", "icon": "shower", "text": "Reverse osmosis and carbon filtration systems for cleaner, better-tasting water." },
+    { "title": "Garbage Disposals", "icon": "cog", "text": "Disposals repaired or replaced when they jam, leak or stop turning." },
+    { "title": "Plumbing Inspections", "icon": "search", "text": "A full look at the plumbing in the house, so problems turn up before the damage does." }
+  ],
+  "crew": {
+    "eyebrow": "Why choose us",
+    "title": "Rooted in the community we work in.",
+    "text": "We are not just another Pearland plumber. Our team has been part of this community since 2019, and we treat every home like our own, with meticulous workmanship and respectful service.",
+    "points": [
+      { "title": "Licensed and insured", "text": "Every technician is licensed and trained, and the company is insured to protect your property." },
+      { "title": "Transparent pricing", "text": "You get the price up front, with no hidden fees or surprise costs at the end." },
+      { "title": "Warrantied work", "text": "Most services carry a warranty on both labor and parts." }
+    ],
+    "image": "/brands/accurateplumbing/tech",
+    "imageAlt": "An Accurate Plumbing technician beside a company van"
+  },
+  "band": {
+    "title": "Look for the Accurate trucks.",
+    "text": "We cover Pearland, Friendswood, Houston and the communities between them.",
+    "image": "/brands/accurateplumbing/trucks",
+    "imageAlt": "Accurate Plumbing service vans and a tanker truck"
+  },
+  "serviceArea": ["Pearland", "Friendswood", "Houston", "Manvel", "Clear Lake", "League City", "Pasadena", "Deer Park"],
+  "reviews": [
+    { "author": "Brenda Bugg", "text": "Eric and his helper arrived and cleared our drain quickly. They were courteous and knowledgeable. We have used Accurate Plumbing Services in the past and always receive excellent service at an affordable price." },
+    { "author": "Jeremy Kinn", "text": "I called Accurate Plumbing Services as a second opinion and I am extremely happy I did. The tech that came out, Eric, was friendly, professional, skilled and above all honest. The prices were reasonable and I would recommend giving them a call." },
+    { "author": "Shannon Tobias", "text": "Great service and they were very prompt, arriving right when they said they would. Prices were reasonable and they were super fast, respectful of my property and cleaned up after themselves." }
+  ]
+}
