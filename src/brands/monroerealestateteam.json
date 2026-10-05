@@ -1,0 +1,76 @@
+{
+  "template": "realestate",
+  "preview": true,
+  "name": "The Monroe Team",
+  "shortName": "Monroe Team",
+  "broker": "Real Broker",
+  "phone": "(832) 598-1885",
+  "email": "kaleb@thekmteam.com",
+  "address": "1322 Space Park Dr, Ste B133",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77058",
+  "rating": 4.5,
+  "reviewCount": 63,
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
+  "brand": {
+    "primary": "#373d28",
+    "accent": "#967545",
+    "ink": "#33362c",
+    "cream": "#f4f0e6",
+    "line": "#e4decd",
+    "heading": "'Kaisei Opti', Georgia, serif",
+    "body": "'Poppins', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap",
+    "logo": "/brands/monroerealestateteam/logo.webp",
+    "logoWidth": 165
+  },
+  "hero": {
+    "eyebrow": "Clear Lake · The Woodlands · Katy · Greater Houston",
+    "title": "We are the buffalo.",
+    "lead": "Helping clients buy, sell, build and invest across Greater Houston, from a first home to an investment portfolio to a whole development.",
+    "image": "/brands/monroerealestateteam/hero",
+    "imageAlt": "A living room with a vaulted ceiling and an exposed beam"
+  },
+  "divisions": [
+    {
+      "title": "Buyer Services",
+      "text": "Personalized home searches and neighborhood tours, access to off-market and pre-list opportunities, and skilled negotiation through to close.",
+      "image": "/brands/monroerealestateteam/buyers"
+    },
+    {
+      "title": "Seller Services",
+      "text": "Detailed market analysis and pricing strategy, professional photography and videography, and a marketing plan across digital, print and social.",
+      "image": "/brands/monroerealestateteam/sellers"
+    },
+    {
+      "title": "Investor Services",
+      "text": "Income property sourcing, ROI analysis and cash flow projections, rehab oversight and ongoing asset management."
+    },
+    {
+      "title": "Developer Services",
+      "text": "Land acquisition and feasibility insights, pre-development pricing and product strategy, and sales management from launch to sell-out."
+    }
+  ],
+  "areas": [
+    "Clear Lake",
+    "The Woodlands",
+    "Sugarland",
+    "Katy",
+    "Richmond",
+    "Friendswood"
+  ],
+  "about": {
+    "title": "Led by Kaleb Monroe",
+    "text": "Kaleb Monroe is a Houston-based real estate entrepreneur, team leader and investor who has sold over $100 million in real estate. He founded the team to guide clients across residential, investment and development opportunities, and invests in small multifamily properties and renovation projects of his own. The team works under Real Broker, the national cloud-based brokerage.",
+    "image": "/brands/monroerealestateteam/team",
+    "imageAlt": "The Monroe Team"
+  },
+  "listings": "sample",
+  "strapline": "Buy · Sell · Invest · Develop"
+}
