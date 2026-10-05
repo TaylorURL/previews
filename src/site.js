@@ -1,8 +1,8 @@
 /**
  * Which business a request is dressed as.
  *
- * The subdomain names it. plumbing, barber and realestate are the templates'
- * own sample businesses; any other label is a prospect's slug, a file in
+ * The subdomain names it. A template's name (plumbing, roofing, salon...) is
+ * that template's own sample business; any other label is a prospect's slug, a file in
  * src/brands, as in wedgeworthplumbing.taylorurl.com. Anywhere else - a
  * Vercel preview URL, localhost - `?b=` names it instead.
  */
@@ -10,11 +10,15 @@
 const SUPABASE_URL = 'https://gujgtjqqurildqurpffh.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_qn4ZWB2n95HGMJm0L58I0w_ClE_Qu4M';
 
-export const SAMPLES = { plumbing: 'sample-plumbing', barber: 'sample-barber', realestate: 'sample-realestate' };
-
 const brands = import.meta.glob('./brands/*.json', { import: 'default', eager: true });
 
 export const SLUGS = Object.keys(brands).map((path) => path.slice(9, -5));
+
+// Each template's sample business is the brand file named sample-<template>,
+// and it answers at <template>.taylorurl.com.
+export const SAMPLES = Object.fromEntries(
+  SLUGS.filter((slug) => slug.startsWith('sample-')).map((slug) => [slug.slice(7), slug]),
+);
 
 export function resolveSlug(location = window.location) {
   if (window.__SLUG__) return window.__SLUG__;
@@ -24,6 +28,18 @@ export function resolveSlug(location = window.location) {
   if (brands[`./brands/${pick}.json`]) return pick;
   if (asked && brands[`./brands/${SAMPLES[asked] || asked}.json`]) return SAMPLES[asked] || asked;
   return null;
+}
+
+/**
+ * Which page of the business's site is asked for, '' being the home page. A
+ * prerendered page names its own; on a subdomain it is the address path; on a
+ * preview URL or localhost `?p=` names it.
+ */
+export function resolvePath(location = window.location) {
+  if (typeof window.__PATH__ === 'string') return window.__PATH__;
+  const asked = new URLSearchParams(location.search).get('p');
+  if (asked != null) return asked.replace(/^\/+|\/+$/g, '');
+  return location.pathname.replace(/^\/+|\/+$/g, '').replace(/\.html$/, '');
 }
 
 export function loadBrand(slug) {
