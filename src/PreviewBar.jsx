@@ -14,7 +14,7 @@ export default function PreviewBar({ b }) {
         <strong className="font-semibold">A preview, not a live site.</strong>{' '}
         <span className="hidden sm:inline">TaylorURL designed this for {b.name}.</span>
       </p>
-      <a href={claim} className="flex-none rounded-full bg-[#2f6bff] px-3.5 py-1.5 font-semibold text-white no-underline">
+      <a href={claim} className="relative flex-none rounded-full bg-[#2f6bff] px-3.5 py-1.5 font-semibold text-white no-underline before:absolute before:-inset-y-1.5 before:inset-x-0 before:content-['']">
         Make It Yours
       </a>
     </div>
