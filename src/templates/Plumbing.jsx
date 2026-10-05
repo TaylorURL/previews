@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import {
   ArrowRight,
   Building2,
@@ -11,15 +12,17 @@ import {
   Gauge,
   Mail,
   MapPin,
+  Menu,
   Phone,
   ScanSearch,
   ShowerHead,
   Waves,
   Wrench,
+  X,
   Zap,
 } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { EnquiryForm, Img, Logo, Stars } from './shared.jsx';
+import { EnquiryForm, Img, Stars } from './shared.jsx';
 
 const ICONS = {
   flame: Flame,
@@ -36,315 +39,516 @@ const ICONS = {
   building: Building2,
 };
 
-const eyebrow = 'mb-3 text-[13px] font-bold uppercase tracking-[0.16em] text-primary';
-const h2 = 'font-heading text-[clamp(2.3rem,4.8vw,3.6rem)] font-extrabold uppercase leading-[0.98]';
-const pill =
-  'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-bold no-underline transition hover:-translate-y-0.5';
+const NAV = [
+  ['#services', 'Services'],
+  ['#why', 'Why Us'],
+  ['#reviews', 'Reviews'],
+  ['#area', 'Service Area'],
+  ['#schedule', 'Contact'],
+];
 
-export default function Plumbing({ b }) {
-  const tel = telHref(b.phone);
-  const rating = ratingLine(b);
-  const today = b.hours?.[0];
+const wrap = 'mx-auto w-full max-w-page px-gutter';
+const pad = 'py-[clamp(4rem,9vw,7rem)]';
+const anchor = 'scroll-mt-28 lg:scroll-mt-36';
+const h2 =
+  'font-heading text-[clamp(2rem,1.4rem+2.4vw,3rem)] font-extrabold leading-[1.06] tracking-[-0.01em] [text-wrap:balance] break-words';
+const btn =
+  'inline-flex min-h-[52px] items-center justify-center gap-2 rounded-md px-6 text-[17px] font-bold no-underline transition duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2';
+
+function Eyebrow({ children, dark = false }) {
+  return (
+    <p
+      className={`mb-4 flex items-center gap-3 text-[13px] font-bold uppercase tracking-[0.14em] ${
+        dark ? 'text-white/85' : 'text-primary'
+      }`}
+    >
+      <span className="h-0.5 w-7 flex-none bg-accent" aria-hidden="true" />
+      <span className="min-w-0">{children}</span>
+    </p>
+  );
+}
+
+/** The logo sized by height so tall and wide marks sit the same in the bar. */
+function Mark({ b, className = '', textClass = '' }) {
+  if (b.brand.logo) {
+    return <img className={`block w-auto max-w-[46vw] object-contain ${className}`} src={b.brand.logo} alt={b.name} />;
+  }
+  return <span className={`block font-heading text-2xl font-extrabold leading-none ${textClass}`}>{b.shortName}</span>;
+}
+
+function Header({ b, tel }) {
+  const [open, setOpen] = useState(false);
   const stick = b.preview ? 'top-11' : 'top-0';
 
-  return (
-    <div className="bg-white font-body text-ink antialiased" style={brandVars(b.brand)}>
-      <div className="flex justify-center gap-4 bg-primary-deep px-gutter py-2 text-sm text-white/85 sm:justify-between">
-        <span className="hidden items-center gap-1.5 sm:inline-flex">
-          <Clock size={15} aria-hidden="true" /> {today ? `${today[0]} ${today[1]}` : 'Call for service'}
-        </span>
-        <a href={tel} className="inline-flex items-center gap-1.5 font-bold text-accent no-underline">
-          <Phone size={15} aria-hidden="true" /> {b.phone}
-        </a>
-      </div>
+  useEffect(() => {
+    if (!open) return undefined;
+    const onKey = (event) => event.key === 'Escape' && setOpen(false);
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [open]);
 
-      <header
-        className={`sticky ${stick} z-30 flex items-center gap-8 border-b border-black/5 bg-white/95 px-gutter py-3 backdrop-blur`}
-      >
-        <a href="#top" className="flex flex-none" aria-label={`${b.name} home`}>
-          <Logo b={b} className="max-w-[40vw]" textClass="uppercase text-primary-deep" />
+  return (
+    <header className={`sticky ${stick} z-30 border-b border-ink/10 bg-white`}>
+      <div className={`${wrap} flex min-h-[68px] items-center gap-6 py-2.5 lg:min-h-[84px]`}>
+        <a href="#top" className="flex min-h-[44px] flex-none items-center" aria-label={`${b.name} home`} onClick={() => setOpen(false)}>
+          <Mark b={b} className="h-11 sm:h-12 lg:h-16" textClass="text-primary-deep" />
         </a>
-        <nav aria-label="Main" className="mr-auto hidden gap-7 font-semibold lg:flex">
-          {[
-            ['#services', 'Services'],
-            ['#why', 'Why Us'],
-            ['#reviews', 'Reviews'],
-            ['#area', 'Service Area'],
-          ].map(([href, label]) => (
-            <a key={href} href={href} className="text-ink/70 no-underline transition hover:text-primary">
+
+        <nav aria-label="Main" className="mx-auto hidden items-center gap-6 lg:flex xl:gap-8">
+          {NAV.map(([href, label]) => (
+            <a
+              key={href}
+              href={href}
+              className="flex min-h-[44px] items-center whitespace-nowrap text-[16px] font-semibold text-ink/80 no-underline transition hover:text-primary"
+            >
               {label}
             </a>
           ))}
         </nav>
-        <div className="ml-auto flex items-center gap-5 lg:ml-0">
-          <a href={tel} className="grid text-right leading-tight no-underline">
-            <span className="hidden text-[11px] font-semibold uppercase tracking-[0.12em] text-ink/60 sm:block">Call Now</span>
-            <strong className="font-heading text-lg text-primary-deep sm:text-2xl">{b.phone}</strong>
+
+        <div className="ml-auto flex items-center gap-2 sm:gap-5 lg:ml-0">
+          <a href={tel} className="hidden min-h-[44px] content-center text-right leading-tight no-underline sm:grid lg:hidden xl:grid">
+            <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-ink/60">Call Now</span>
+            <strong className="whitespace-nowrap font-heading text-[22px] font-extrabold text-primary">{b.phone}</strong>
           </a>
-          <a href="#schedule" className={`${pill} hidden bg-primary px-5 py-3 text-white sm:inline-flex`}>
+          <a href="#schedule" className={`${btn} hidden bg-primary text-white hover:bg-primary-deep md:inline-flex`}>
             Schedule Service
           </a>
+          <a
+            href={tel}
+            className="grid h-11 w-11 place-items-center rounded-md bg-primary text-white sm:hidden"
+            aria-label={`Call ${b.phone}`}
+          >
+            <Phone size={20} aria-hidden="true" />
+          </a>
+          <button
+            type="button"
+            className="inline-flex h-11 items-center gap-2 rounded-md border border-ink/15 px-3.5 font-bold text-ink lg:hidden"
+            aria-expanded={open}
+            aria-controls="site-menu"
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? <X size={20} aria-hidden="true" /> : <Menu size={20} aria-hidden="true" />}
+            <span>{open ? 'Close' : 'Menu'}</span>
+          </button>
         </div>
-      </header>
+      </div>
 
-      <section id="top" className="relative isolate overflow-hidden bg-primary-deep text-white">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_0%_100%,color-mix(in_srgb,var(--primary)_55%,transparent),transparent_60%)]" />
-        <div className="relative aspect-[4/3] w-full lg:absolute lg:inset-y-0 lg:right-0 lg:aspect-auto lg:w-[50%] lg:[clip-path:polygon(14%_0,100%_0,100%_100%,0_100%)]">
-          <Img
-            className="h-full w-full object-cover object-[center_45%]"
-            src={b.hero.image}
-            alt={b.hero.imageAlt}
-            sizes="(max-width: 1024px) 100vw, 50vw"
-            eager
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary-deep/60 to-transparent lg:hidden" />
-        </div>
-        <div className="mx-auto grid w-full max-w-page px-gutter pb-24 pt-10 lg:min-h-[min(80vh,720px)] lg:grid-cols-2 lg:items-center lg:pb-28 lg:pt-20">
-          <div className="lg:pr-10">
-            {rating && (
-              <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold">
-                <Stars value={b.rating} size={14} /> <span>{rating}</span>
-              </p>
-            )}
-            <h1 className="font-heading text-[clamp(3rem,6.4vw,5.6rem)] font-extrabold uppercase leading-[0.92]">
-              {b.hero.title} <em className="block italic text-accent">{b.hero.titleAccent}</em>
-            </h1>
-            <p className="mb-9 mt-6 max-w-xl text-lg text-white/85 sm:text-xl">{b.hero.lead}</p>
-            <div className="flex flex-wrap gap-3">
-              <a href="#schedule" className={`${pill} bg-accent px-7 py-4 text-lg text-ink shadow-lg shadow-black/20`}>
-                Schedule Service <ArrowRight size={18} aria-hidden="true" />
-              </a>
-              <a href={tel} className={`${pill} border-2 border-white/60 px-7 py-4 text-lg text-white hover:bg-white/10`}>
-                <Phone size={18} aria-hidden="true" /> {b.phone}
-              </a>
-            </div>
-          </div>
-        </div>
-        {b.hero.mascot && (
-          <figure className="absolute bottom-0 right-3 m-0 w-28 animate-peek drop-shadow-2xl sm:w-36 lg:left-[46%] lg:right-auto lg:w-[clamp(170px,15vw,230px)]">
-            <img src={b.hero.mascot} alt="" width="230" height="228" className="h-auto w-full" />
-            <figcaption className="absolute -top-2 left-[78%] hidden whitespace-nowrap rounded-2xl rounded-bl-sm bg-white px-4 py-2.5 font-heading text-lg font-extrabold uppercase text-ink shadow-xl lg:block">
-              {b.hero.mascotLine}
-            </figcaption>
-          </figure>
-        )}
-      </section>
-
-      <ul
-        aria-label="Our promises"
-        className="relative z-10 mx-4 -mt-8 grid grid-cols-1 divide-y divide-black/5 rounded-2xl bg-white shadow-[0_24px_50px_-24px_rgba(0,0,0,0.35)] sm:grid-cols-2 lg:mx-auto lg:-mt-10 lg:max-w-[1180px] lg:grid-cols-4 lg:divide-x lg:divide-y-0"
+      <div
+        id="site-menu"
+        hidden={!open}
+        className="absolute inset-x-0 top-full max-h-[calc(100dvh-8rem)] overflow-y-auto border-b border-ink/10 bg-white shadow-[0_24px_40px_-24px_rgba(0,0,0,0.35)] lg:hidden"
       >
-        {b.promises.map((p) => (
-          <li key={p} className="flex items-center gap-3 px-5 py-4 font-bold lg:py-6">
-            <span className="grid h-8 w-8 flex-none place-items-center rounded-full bg-primary text-white">
-              <Check size={16} strokeWidth={3} aria-hidden="true" />
-            </span>
-            {p}
-          </li>
-        ))}
-      </ul>
-
-      <section id="services" className="mx-auto max-w-page px-gutter py-[clamp(4.5rem,9vw,7rem)]">
-        <div className="mb-12 max-w-2xl">
-          <p className={eyebrow}>{b.hero.eyebrow}</p>
-          <h2 className={h2}>What we fix</h2>
-          <p className="mt-4 text-lg text-ink/75">
-            Residential and commercial plumbing across {b.town}, from a dripping faucet to a full repipe.
-          </p>
-        </div>
-        <div className="grid grid-cols-[repeat(auto-fill,minmax(270px,1fr))] gap-4">
-          {b.services.map((s) => {
-            const Icon = ICONS[s.icon] || Wrench;
-            return (
-              <a
-                key={s.title}
-                href="#schedule"
-                className="group flex flex-col rounded-2xl bg-surface p-7 no-underline transition duration-200 hover:-translate-y-1 hover:bg-primary-deep hover:text-white"
-              >
-                <span className="mb-5 grid h-12 w-12 place-items-center rounded-xl bg-primary text-white transition group-hover:bg-accent group-hover:text-ink">
-                  <Icon size={24} aria-hidden="true" />
-                </span>
-                <h3 className="font-heading text-[1.4rem] font-bold uppercase leading-none">{s.title}</h3>
-                <p className="mb-6 mt-2.5 opacity-75">{s.text}</p>
-                <span className="mt-auto inline-flex items-center gap-1.5 font-bold text-primary group-hover:text-accent">
-                  Schedule <ArrowRight size={15} aria-hidden="true" />
-                </span>
-              </a>
-            );
-          })}
-        </div>
-      </section>
-
-      <section
-        id="why"
-        className="mx-auto grid max-w-page items-center gap-[clamp(2.5rem,6vw,5.5rem)] px-gutter pb-[clamp(4.5rem,9vw,7rem)] md:grid-cols-2"
-      >
-        <div className="relative mr-4 md:mr-6">
-          <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-2xl bg-accent md:translate-x-6 md:translate-y-6" />
-          <Img
-            className="relative aspect-[4/5] w-full rounded-2xl object-cover"
-            src={b.crew.image}
-            alt={b.crew.imageAlt}
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
-        </div>
-        <div>
-          <p className={eyebrow}>{b.crew.eyebrow}</p>
-          <h2 className={h2}>{b.crew.title}</h2>
-          <p className="mt-5 text-lg text-ink/80">{b.crew.text}</p>
-          <ol className="mt-9 grid gap-6">
-            {b.crew.points.map((p, i) => (
-              <li key={p.title} className="flex gap-5 border-t border-black/10 pt-6">
-                <span className="font-heading text-4xl font-extrabold leading-none text-primary">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <div>
-                  <h3 className="font-heading text-[1.4rem] font-bold uppercase leading-none">{p.title}</h3>
-                  <p className="mt-1.5 text-ink/75">{p.text}</p>
-                </div>
+        <nav aria-label="Mobile" className={`${wrap} pb-2 pt-1`}>
+          <ul>
+            {NAV.map(([href, label]) => (
+              <li key={href} className="border-b border-ink/10">
+                <a
+                  href={href}
+                  onClick={() => setOpen(false)}
+                  className="flex min-h-[56px] items-center justify-between font-heading text-[21px] font-extrabold text-ink no-underline"
+                >
+                  {label} <ArrowRight size={18} className="text-primary" aria-hidden="true" />
+                </a>
               </li>
             ))}
-          </ol>
+          </ul>
+        </nav>
+        <div className={`${wrap} grid gap-3 pb-6 pt-4 sm:grid-cols-2`}>
+          <a href="#schedule" onClick={() => setOpen(false)} className={`${btn} bg-primary text-white`}>
+            Schedule Service
+          </a>
+          <a href={tel} className={`${btn} border-[1.5px] border-ink/20 text-ink`}>
+            <Phone size={18} aria-hidden="true" /> {b.phone}
+          </a>
+          {b.hours?.length > 0 && (
+            <p className="text-[15px] text-ink/65 sm:col-span-2">{b.hours.map(([d, h]) => `${d} ${h}`).join(' · ')}</p>
+          )}
+        </div>
+      </div>
+    </header>
+  );
+}
+
+function Hero({ b, tel, rating }) {
+  return (
+    <section id="top" className="relative isolate overflow-hidden bg-primary-deep text-white">
+      <Img
+        className="absolute inset-0 -z-20 h-full w-full object-cover object-[center_45%]"
+        src={b.hero.image}
+        alt={b.hero.imageAlt}
+        sizes="100vw"
+        eager
+      />
+      <div
+        className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,color-mix(in_srgb,var(--primaryDeep)_92%,transparent)_0%,color-mix(in_srgb,var(--primaryDeep)_80%,transparent)_60%,color-mix(in_srgb,var(--primaryDeep)_55%,transparent)_100%)] lg:bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_95%,transparent)_0%,color-mix(in_srgb,var(--primaryDeep)_82%,transparent)_45%,color-mix(in_srgb,var(--primaryDeep)_10%,transparent)_100%)]"
+        aria-hidden="true"
+      />
+      <div className={`${wrap} flex min-h-[min(78vh,700px)] items-center pb-16 pt-14 sm:pb-20 lg:py-24`}>
+        <div className="w-full max-w-[44rem] lg:max-w-[41rem]">
+          <Eyebrow dark>{b.hero.eyebrow}</Eyebrow>
+          <h1 className="break-words font-heading text-[clamp(2.25rem,1.05rem+4vw,4.25rem)] font-extrabold leading-[1.03] tracking-[-0.015em] [text-wrap:balance]">
+            {b.hero.title} <span className="text-accent">{b.hero.titleAccent}</span>
+          </h1>
+          <p className="mt-6 max-w-[36rem] text-[17px] leading-[1.6] text-white/90 sm:text-[19px]">{b.hero.lead}</p>
+          <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
+            <a href="#schedule" className={`${btn} bg-accent text-ink hover:brightness-105`}>
+              Schedule Service <ArrowRight size={18} aria-hidden="true" />
+            </a>
+            <a href={tel} className={`${btn} border-[1.5px] border-white/60 text-white hover:bg-white/10`}>
+              <Phone size={18} aria-hidden="true" /> {b.phone}
+            </a>
+          </div>
+          {rating && (
+            <p className="mt-7 flex flex-wrap items-center gap-x-3 gap-y-1 text-[15px] font-semibold text-white/90">
+              <Stars value={b.rating} size={16} /> <span>{rating}</span>
+            </p>
+          )}
+        </div>
+      </div>
+      {b.hero.mascot && (
+        <figure className="pointer-events-none absolute bottom-0 right-2 m-0 hidden w-[clamp(150px,15vw,220px)] animate-peek drop-shadow-2xl md:block lg:right-[6%]">
+          <img src={b.hero.mascot} alt="" width="220" height="218" className="h-auto w-full" />
+          {b.hero.mascotLine && (
+            <figcaption className="absolute -top-3 right-[70%] hidden whitespace-nowrap rounded-xl rounded-br-sm bg-white px-4 py-2.5 font-heading text-lg font-extrabold text-ink shadow-xl xl:block">
+              {b.hero.mascotLine}
+            </figcaption>
+          )}
+        </figure>
+      )}
+    </section>
+  );
+}
+
+export default function Plumbing({ b }) {
+  const tel = telHref(b.phone);
+  const rating = ratingLine(b);
+  const first = b.hours?.[0];
+  const street = [b.address, b.town].filter(Boolean).join(', ');
+  const full = `${street}, ${b.state}${b.zip ? ` ${b.zip}` : ''}`;
+
+  return (
+    <div className="overflow-x-clip bg-white font-body text-[16px] text-ink antialiased" style={brandVars(b.brand)}>
+      <div className="bg-primary-deep text-[14px] text-white/80">
+        <div className={`${wrap} flex min-h-[40px] items-center justify-center gap-6 py-1.5 sm:min-h-[44px] sm:justify-between sm:py-0`}>
+          <p className="flex min-w-0 items-center gap-2">
+            <Clock size={15} className="flex-none text-accent" aria-hidden="true" />
+            <span className="truncate">
+              {first ? `${first[0]} ${first[1]}` : 'Call for service'}
+              <span className="hidden md:inline">
+                {' '}
+                &middot; {street}, {b.state}
+              </span>
+            </span>
+          </p>
+          <a href={tel} className="hidden min-h-[44px] flex-none items-center gap-1.5 font-bold text-accent no-underline sm:inline-flex">
+            <Phone size={15} aria-hidden="true" /> {b.phone}
+          </a>
+        </div>
+      </div>
+
+      <Header b={b} tel={tel} />
+      <Hero b={b} tel={tel} rating={rating} />
+
+      {b.promises?.length > 0 && (
+        <div className="bg-primary text-white">
+          <ul aria-label="Our promises" className={`${wrap} grid divide-y divide-white/15 py-2 sm:grid-cols-2 sm:gap-x-8 sm:divide-y-0 sm:py-5 lg:grid-cols-4`}>
+            {b.promises.map((p) => (
+              <li key={p} className="flex items-center gap-3 py-3 text-[16px] font-semibold leading-snug">
+                <span className="grid h-7 w-7 flex-none place-items-center rounded-full bg-accent text-ink">
+                  <Check size={15} strokeWidth={3} aria-hidden="true" />
+                </span>
+                {p}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      <section id="services" className={`${anchor} ${pad}`}>
+        <div className={wrap}>
+          <div className="mb-10 grid gap-5 lg:mb-14 lg:grid-cols-[1fr_minmax(0,28rem)] lg:items-end lg:gap-16">
+            <div>
+              <Eyebrow>Services</Eyebrow>
+              <h2 className={h2}>What we fix</h2>
+            </div>
+            <p className="text-[17px] leading-[1.6] text-ink/70 sm:text-[18px]">
+              Residential and commercial plumbing across {b.town}, from a dripping faucet to a full repipe.
+            </p>
+          </div>
+          <ul className="grid gap-x-12 md:grid-cols-2">
+            {b.services.map((s) => {
+              const Icon = ICONS[s.icon] || Wrench;
+              return (
+                <li key={s.title} className="border-t border-ink/10">
+                  <a
+                    href="#schedule"
+                    className="group flex gap-4 py-5 text-ink no-underline sm:gap-5 sm:py-6"
+                  >
+                    <span className="grid h-12 w-12 flex-none place-items-center rounded-lg bg-surface text-primary transition group-hover:bg-primary group-hover:text-white">
+                      <Icon size={22} aria-hidden="true" />
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      <span className="block font-heading text-[19px] font-extrabold leading-tight sm:text-[20px]">
+                        {s.title}
+                      </span>
+                      <span className="mt-1.5 block leading-[1.55] text-ink/70">{s.text}</span>
+                    </span>
+                    <ArrowRight
+                      size={18}
+                      className="mt-1 hidden flex-none text-primary transition group-hover:translate-x-1 sm:block"
+                      aria-hidden="true"
+                    />
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </section>
 
-      <section
-        id="reviews"
-        className="bg-primary-deep bg-[radial-gradient(circle_at_15%_20%,color-mix(in_srgb,var(--primary)_70%,transparent),transparent_55%)] text-white"
-      >
-        <div className="mx-auto grid max-w-page items-center gap-[clamp(2rem,5vw,4rem)] px-gutter py-[clamp(4rem,8vw,6rem)] lg:grid-cols-[260px_1fr]">
-          <div className="grid justify-items-start gap-2">
-            <strong className="font-heading text-8xl font-extrabold leading-[0.85]">{Number(b.rating).toFixed(1)}</strong>
-            <Stars value={b.rating} size={22} />
-            <span className="font-semibold text-white/80">{b.reviewCount?.toLocaleString()} Google reviews</span>
+      <section id="why" className={`${anchor} bg-surface ${pad}`}>
+        <div className={`${wrap} grid items-center gap-10 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-20`}>
+          <Img
+            className="aspect-[4/3] w-full rounded-lg object-cover md:aspect-[4/5]"
+            src={b.crew.image}
+            alt={b.crew.imageAlt}
+            sizes="(max-width: 768px) 100vw, 45vw"
+          />
+          <div>
+            <Eyebrow>{b.crew.eyebrow}</Eyebrow>
+            <h2 className={h2}>{b.crew.title}</h2>
+            <p className="mt-5 text-[17px] leading-[1.65] text-ink/80 sm:text-[18px]">{b.crew.text}</p>
+            <ol className="mt-8 grid">
+              {b.crew.points.map((p, i) => (
+                <li key={p.title} className="flex gap-4 border-t border-ink/10 py-5 sm:gap-5">
+                  <span className="w-9 flex-none font-heading text-[26px] font-extrabold leading-none text-primary">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <div className="min-w-0">
+                    <h3 className="font-heading text-[19px] font-extrabold leading-tight sm:text-[20px]">{p.title}</h3>
+                    <p className="mt-1.5 leading-[1.55] text-ink/70">{p.text}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
           </div>
-          <div className="grid gap-4 lg:grid-cols-3">
+        </div>
+      </section>
+
+      <section id="reviews" className={`${anchor} ${pad}`}>
+        <div className={wrap}>
+          <div className="mb-10 flex flex-col gap-6 lg:mb-12 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <Eyebrow>Reviews</Eyebrow>
+              <h2 className={h2}>What customers say</h2>
+            </div>
+            {b.rating && (
+              <div className="flex items-center gap-4">
+                <strong className="font-heading text-[52px] font-extrabold leading-none">{Number(b.rating).toFixed(1)}</strong>
+                <div className="grid gap-1.5">
+                  <Stars value={b.rating} size={18} />
+                  {b.reviewCount && (
+                    <span className="text-[15px] font-semibold text-ink/70">
+                      {b.reviewCount.toLocaleString()} Google reviews
+                    </span>
+                  )}
+                </div>
+              </div>
+            )}
+          </div>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-5">
             {b.reviews.map((r) => (
-              <figure key={r.author} className="m-0 flex flex-col rounded-2xl bg-white p-7 text-ink">
+              <figure key={r.author} className="m-0 flex flex-col rounded-lg border border-ink/10 bg-white p-6 sm:p-7">
                 <Stars value={5} size={15} />
-                <blockquote className="mb-5 mt-4 leading-relaxed">{r.text}</blockquote>
-                <figcaption className="mt-auto font-bold">{r.author}</figcaption>
+                <blockquote className="mb-5 mt-4 leading-[1.65] text-ink/85">{r.text}</blockquote>
+                <figcaption className="mt-auto font-bold text-ink/75">{r.author}</figcaption>
               </figure>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="area" className="relative isolate overflow-hidden text-white">
+      <section id="area" className={`${anchor} relative isolate overflow-hidden bg-primary-deep text-white`}>
         <Img className="absolute inset-0 -z-20 h-full w-full object-cover" src={b.band.image} alt={b.band.imageAlt} />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-black/80 to-black/35" />
-        <div className="mx-auto max-w-page px-gutter py-[clamp(5rem,11vw,8.5rem)]">
-          <h2 className={`${h2} max-w-[14ch]`}>{b.band.title}</h2>
-          <p className="mb-8 mt-4 max-w-lg text-lg text-white/90">{b.band.text}</p>
-          <ul className="flex max-w-3xl flex-wrap gap-2">
-            {b.serviceArea.map((t) => (
-              <li
-                key={t}
-                className="inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/15 px-3.5 py-2 text-sm font-semibold backdrop-blur"
-              >
-                <MapPin size={14} aria-hidden="true" /> {t}
-              </li>
-            ))}
-          </ul>
+        <div
+          className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_94%,transparent),color-mix(in_srgb,var(--primaryDeep)_78%,transparent)_60%,color-mix(in_srgb,var(--primaryDeep)_45%,transparent))]"
+          aria-hidden="true"
+        />
+        <div className={`${wrap} py-[clamp(4.5rem,10vw,7.5rem)]`}>
+          <div className="max-w-[48rem]">
+            <Eyebrow dark>Service area</Eyebrow>
+            <h2 className={h2}>{b.band.title}</h2>
+            <p className="mt-4 max-w-[36rem] text-[17px] leading-[1.6] text-white/90 sm:text-[18px]">{b.band.text}</p>
+            <ul className="mt-7 flex flex-wrap gap-2">
+              {b.serviceArea.map((t) => (
+                <li
+                  key={t}
+                  className="inline-flex items-center gap-1.5 rounded-full border border-white/25 bg-white/10 px-3.5 py-2 text-[14px] font-semibold"
+                >
+                  <MapPin size={14} className="flex-none text-accent" aria-hidden="true" /> {t}
+                </li>
+              ))}
+            </ul>
+            <a href={tel} className={`${btn} mt-9 w-full bg-accent text-ink hover:brightness-105 sm:w-auto`}>
+              <Phone size={18} aria-hidden="true" /> Call {b.phone}
+            </a>
+          </div>
         </div>
       </section>
 
-      <section
-        id="schedule"
-        className="mx-auto grid max-w-page items-start gap-[clamp(2rem,6vw,5rem)] px-gutter py-[clamp(4.5rem,9vw,7rem)] md:grid-cols-[1fr_1.15fr]"
-      >
-        <div>
-          <p className={eyebrow}>Schedule service</p>
-          <h2 className={h2}>Tell us what is going on.</h2>
-          <p className="mb-8 mt-4 text-lg text-ink/75">A real person calls you back to confirm a time.</p>
-          <ul className="mb-8 grid gap-3.5 font-semibold">
-            {[
-              [Phone, tel, b.phone],
-              b.email && [Mail, `mailto:${b.email}`, b.email],
-              [MapPin, mapsHref(b), `${b.address}, ${b.town}, ${b.state} ${b.zip || ''}`],
-            ]
-              .filter(Boolean)
-              .map(([Icon, href, label]) => (
-                <li key={href}>
-                  <a href={href} className="flex items-center gap-3 no-underline">
-                    <span className="grid h-10 w-10 flex-none place-items-center rounded-full bg-surface text-primary">
-                      <Icon size={18} aria-hidden="true" />
-                    </span>
-                    {label}
+      <section id="schedule" className={`${anchor} bg-surface ${pad}`}>
+        <div className={`${wrap} grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:gap-20`}>
+          <div>
+            <Eyebrow>Schedule service</Eyebrow>
+            <h2 className={h2}>Tell us what is going on.</h2>
+            <p className="mb-8 mt-4 text-[17px] leading-[1.6] text-ink/75 sm:text-[18px]">
+              A real person calls you back to confirm a time.
+            </p>
+            <ul className="mb-8 grid gap-3 font-semibold">
+              {[
+                [Phone, tel, b.phone],
+                b.email && [Mail, `mailto:${b.email}`, b.email],
+                [MapPin, mapsHref(b), full],
+              ]
+                .filter(Boolean)
+                .map(([Icon, href, label]) => (
+                  <li key={href}>
+                    <a href={href} className="flex min-h-[44px] items-center gap-3 text-ink no-underline hover:text-primary">
+                      <span className="grid h-11 w-11 flex-none place-items-center rounded-full bg-white text-primary">
+                        <Icon size={18} aria-hidden="true" />
+                      </span>
+                      <span className="min-w-0 break-words">{label}</span>
+                    </a>
+                  </li>
+                ))}
+            </ul>
+            {b.hours?.length > 0 && (
+              <table className="w-full max-w-md border-collapse">
+                <caption className="sr-only">Opening hours</caption>
+                <tbody>
+                  {b.hours.map(([d, h]) => (
+                    <tr key={d} className="border-b border-ink/10">
+                      <th scope="row" className="py-3 pr-4 text-left font-semibold text-ink/70">
+                        {d}
+                      </th>
+                      <td className="py-3 text-right font-semibold">{h}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            )}
+          </div>
+          <div className="rounded-xl bg-white p-5 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.3)] sm:p-8 lg:p-10">
+            <h3 className="mb-6 font-heading text-[24px] font-extrabold leading-tight">Request service</h3>
+            <EnquiryForm
+              b={b}
+              submitLabel="Request Service"
+              styles={{
+                form: '',
+                label: 'text-[14px] font-bold',
+                field:
+                  'min-h-[48px] rounded-md border border-ink/20 bg-white px-3.5 py-3 text-[16px] font-normal text-ink focus:outline focus:outline-2 focus:outline-offset-1 focus:outline-primary',
+                button:
+                  'min-h-[52px] rounded-md bg-primary py-3.5 text-[17px] font-bold text-white transition hover:bg-primary-deep',
+                done: 'py-4',
+              }}
+              fields={[
+                { name: 'name', label: 'Name', required: true, autoComplete: 'name' },
+                { name: 'phone', label: 'Phone', type: 'tel', required: true, autoComplete: 'tel' },
+                { name: 'address', label: 'Service Address', wide: true, autoComplete: 'street-address' },
+                {
+                  name: 'service',
+                  label: 'What Do You Need?',
+                  type: 'select',
+                  required: true,
+                  wide: true,
+                  options: [...b.services.map((s) => s.title), 'Something else'],
+                },
+                { name: 'details', label: 'Details', type: 'textarea', wide: true },
+              ]}
+            />
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-primary-deep pb-24 text-white/75 md:pb-0">
+        <div className={`${wrap} grid gap-10 pb-12 pt-14 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:gap-12`}>
+          <div className="grid content-start gap-4">
+            {b.brand.logo ? (
+              <span className="inline-flex w-fit rounded-lg bg-white px-3 py-2">
+                <Mark b={b} className="h-14" />
+              </span>
+            ) : (
+              <Mark b={b} textClass="text-white" />
+            )}
+            <p className="max-w-xs leading-[1.6]">
+              Plumbing in {b.town}, {b.state} and the communities around it.
+            </p>
+          </div>
+          <div>
+            <h2 className="mb-4 text-[13px] font-bold uppercase tracking-[0.14em] text-accent">Services</h2>
+            <ul className="-my-2.5 grid">
+              {b.services.slice(0, 6).map((s) => (
+                <li key={s.title}>
+                  <a href="#services" className="flex min-h-[44px] items-center text-white/80 no-underline hover:text-white">
+                    {s.title}
                   </a>
                 </li>
               ))}
-          </ul>
-          {b.hours && (
-            <table className="w-full max-w-sm border-collapse">
-              <tbody>
+            </ul>
+          </div>
+          {b.hours?.length > 0 && (
+            <div>
+              <h2 className="mb-4 text-[13px] font-bold uppercase tracking-[0.14em] text-accent">Hours</h2>
+              <dl className="grid gap-2">
                 {b.hours.map(([d, h]) => (
-                  <tr key={d} className="border-b border-black/10">
-                    <th className="py-2.5 text-left font-semibold text-ink/70">{d}</th>
-                    <td className="py-2.5 text-right font-semibold">{h}</td>
-                  </tr>
+                  <div key={d} className="flex flex-wrap gap-x-2">
+                    <dt className="text-white/60">{d}</dt>
+                    <dd className="m-0 text-white/90">{h}</dd>
+                  </div>
                 ))}
-              </tbody>
-            </table>
+              </dl>
+            </div>
           )}
+          <div>
+            <h2 className="mb-4 text-[13px] font-bold uppercase tracking-[0.14em] text-accent">Contact</h2>
+            <a href={tel} className="flex min-h-[44px] items-center font-heading text-[24px] font-extrabold text-white no-underline">
+              {b.phone}
+            </a>
+            {b.email && (
+              <a href={`mailto:${b.email}`} className="flex min-h-[44px] items-center break-all text-white/85 no-underline hover:text-white">
+                {b.email}
+              </a>
+            )}
+            <a href={mapsHref(b)} className="block py-2.5 leading-[1.6] text-white/80 no-underline hover:text-white">
+              {b.address}
+              <br />
+              {b.town}, {b.state} {b.zip}
+            </a>
+          </div>
         </div>
-        <div className="rounded-3xl border-t-[6px] border-primary bg-surface p-[clamp(1.5rem,4vw,2.5rem)]">
-          <EnquiryForm
-            b={b}
-            submitLabel="Request Service"
-            styles={{
-              form: '',
-              label: 'text-sm font-bold',
-              field:
-                'rounded-xl border border-black/15 bg-white px-3.5 py-3 font-normal text-ink focus:outline focus:outline-2 focus:outline-offset-1 focus:outline-primary',
-              button: 'rounded-full bg-primary py-4 text-lg font-extrabold text-white transition hover:brightness-110',
-              done: 'py-4',
-            }}
-            fields={[
-              { name: 'name', label: 'Name', required: true, autoComplete: 'name' },
-              { name: 'phone', label: 'Phone', type: 'tel', required: true, autoComplete: 'tel' },
-              { name: 'address', label: 'Service Address', wide: true, autoComplete: 'street-address' },
-              {
-                name: 'service',
-                label: 'What Do You Need?',
-                type: 'select',
-                required: true,
-                wide: true,
-                options: [...b.services.map((s) => s.title), 'Something else'],
-              },
-              { name: 'details', label: 'Details', type: 'textarea', wide: true },
-            ]}
-          />
-        </div>
-      </section>
-
-      <footer className="flex flex-wrap items-center justify-between gap-x-12 gap-y-6 bg-primary-deep px-gutter pb-28 pt-12 text-white/80 md:pb-12">
-        <div className="grid gap-3">
-          <Logo b={b} textClass="uppercase text-white" />
-          <p>
-            {b.address}, {b.town}, {b.state} {b.zip}
+        <div className={wrap}>
+          <p className="border-t border-white/10 py-6 text-[14px] text-white/55">
+            &copy; {new Date().getFullYear()} {b.name}
           </p>
         </div>
-        <div className="grid gap-1 font-bold">
-          <a href={tel} className="text-white no-underline">
-            {b.phone}
-          </a>
-          {b.email && (
-            <a href={`mailto:${b.email}`} className="text-white no-underline">
-              {b.email}
-            </a>
-          )}
-        </div>
-        <p className="basis-full text-sm text-white/60">
-          &copy; {new Date().getFullYear()} {b.name}
-        </p>
       </footer>
 
-      <div className="fixed inset-x-3 bottom-3 z-40 grid grid-cols-[1fr_1.6fr] gap-2 md:hidden">
-        <a href={tel} className={`${pill} bg-ink py-4 text-white shadow-xl`}>
-          <Phone size={18} aria-hidden="true" /> Call
+      <div
+        className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 border-t border-white/10 bg-primary-deep md:hidden"
+        style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}
+      >
+        <a
+          href={tel}
+          className="flex min-h-[56px] items-center justify-center gap-2 px-2 text-[16px] font-bold text-white no-underline"
+        >
+          <Phone size={18} className="flex-none" aria-hidden="true" /> Call Now
         </a>
-        <a href="#schedule" className={`${pill} bg-primary py-4 text-white shadow-xl`}>
+        <a
+          href="#schedule"
+          className="flex min-h-[56px] items-center justify-center bg-accent px-2 text-[16px] font-bold text-ink no-underline"
+        >
           Schedule Service
         </a>
       </div>
