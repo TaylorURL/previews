@@ -31,6 +31,7 @@ export function resolveSlug(location = window.location) {
 
 /** The stored business for a slug, or null when there is none. */
 export async function fetchBusiness(industry, slug) {
+  if (window.__preview) return window.__preview;
   const response = await fetch(`${SUPABASE_URL}/rest/v1/rpc/preview_site`, {
     method: 'POST',
     headers: {
@@ -76,7 +77,15 @@ export function photo(id, width = 1600) {
   return `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=70`;
 }
 
+/** The srcset the boot script in index.html preloads, so the two must match. */
+export function heroSrcSet(id) {
+  return [640, 960, 1400, 2000]
+    .map((w) => `https://images.unsplash.com/${id}?auto=format&fit=crop&q=60&w=${w} ${w}w`)
+    .join(', ');
+}
+
 export function loadFonts(href) {
+  if ([...document.styleSheets].some((sheet) => sheet.href === href) || document.querySelector(`link[href="${href}"]`)) return;
   const link = document.createElement('link');
   link.rel = 'stylesheet';
   link.href = href;

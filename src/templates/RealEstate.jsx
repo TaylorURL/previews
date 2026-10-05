@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { photo, telHref } from '../site.js';
+import { heroSrcSet, photo, telHref } from '../site.js';
 import { EnquiryForm, Stars, ratingLine, yearsIn } from './shared.jsx';
 import './realestate.css';
 
@@ -31,7 +31,15 @@ export default function RealEstate({ b, c }) {
         </a>
       </header>
 
-      <section id="top" className="re-hero" style={{ '--hero': `url(${photo(c.hero, 2200)})` }}>
+      <section id="top" className="re-hero">
+        <img
+          className="re-hero-img"
+          srcSet={heroSrcSet(c.hero)}
+          sizes="100vw"
+          src={photo(c.hero, 1400)}
+          alt=""
+          fetchPriority="high"
+        />
         <div className="re-hero-inner">
           <p className="re-eyebrow">
             {b.town}, {b.state} Real Estate

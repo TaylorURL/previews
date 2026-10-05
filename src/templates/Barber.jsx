@@ -1,4 +1,4 @@
-import { photo, telHref } from '../site.js';
+import { heroSrcSet, photo, telHref } from '../site.js';
 import { EnquiryForm, Stars, ratingLine } from './shared.jsx';
 import './barber.css';
 
@@ -27,7 +27,15 @@ export default function Barber({ b, c }) {
         </a>
       </header>
 
-      <section id="top" className="bb-hero" style={{ '--hero': `url(${photo(c.hero, 2000)})` }}>
+      <section id="top" className="bb-hero">
+        <img
+          className="bb-hero-img"
+          srcSet={heroSrcSet(c.hero)}
+          sizes="100vw"
+          src={photo(c.hero, 1400)}
+          alt=""
+          fetchPriority="high"
+        />
         <div className="bb-hero-inner">
           <p className="bb-eyebrow">
             {b.town}, {b.state}

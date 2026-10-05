@@ -1,4 +1,4 @@
-import { photo, telHref } from '../site.js';
+import { heroSrcSet, photo, telHref } from '../site.js';
 import { EnquiryForm, Stars, ratingLine, yearsIn } from './shared.jsx';
 import './plumbing.css';
 
@@ -34,7 +34,15 @@ export default function Plumbing({ b, c }) {
         </a>
       </header>
 
-      <section id="top" className="pl-hero" style={{ '--hero': `url(${photo(c.hero, 2000)})` }}>
+      <section id="top" className="pl-hero">
+        <img
+          className="pl-hero-img"
+          srcSet={heroSrcSet(c.hero)}
+          sizes="100vw"
+          src={photo(c.hero, 1400)}
+          alt=""
+          fetchPriority="high"
+        />
         <div className="pl-hero-inner">
           {rating && (
             <p className="pl-badge">
