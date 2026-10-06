@@ -1,0 +1,610 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Texas Strong Mechanical",
+  "shortName": "Texas Strong",
+  "summary": "Veteran-owned air conditioning and heating company in Humble, serving homes, churches, property managers and businesses across Greater Houston.",
+  "phone": "(832) 419-4488",
+  "email": "info@texasstrongmechanical.com",
+  "address": "120 E Main St",
+  "town": "Humble",
+  "state": "TX",
+  "zip": "77338",
+  "rating": 4.9,
+  "reviewCount": 291,
+  "since": 2010,
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
+  "brand": {
+    "primary": "#0a2540",
+    "primaryDeep": "#061829",
+    "accent": "#fcc500",
+    "ink": "#171f32",
+    "muted": "#5d666f",
+    "surface": "#f2f4f9",
+    "line": "#d7d9e9",
+    "heading": "'Barlow Condensed', system-ui, sans-serif",
+    "body": "'Manrope', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap",
+    "logo": "/brands/texasstrongmechanical/logo.webp",
+    "logoWidth": 200
+  },
+  "emergency": {
+    "title": "24/7 emergency service",
+    "text": "No cooling in a heatwave or no heat in a freeze, we answer the phone around the clock and aim to be at the door within two to four hours."
+  },
+  "sameDay": "We prioritize service calls and aim for same-day air conditioning repair, typically responding within hours.",
+  "licenses": [
+    {
+      "label": "Texas HVAC",
+      "number": "TACLA00126275E"
+    }
+  ],
+  "financing": {
+    "text": "GoodLeap financing puts a new system or a large repair on monthly payments, with the application completed in our office."
+  },
+  "hero": {
+    "eyebrow": "Air conditioning and heating across Greater Houston",
+    "title": "Air conditioning and heating,",
+    "titleAccent": "repair first.",
+    "lead": "Texas Strong Mechanical was built to give customers practical HVAC options, honest repair choices and fair value without unnecessary replacement pressure. Licensed, insured and answering the phone 24/7.",
+    "image": "/brands/texasstrongmechanical/hero",
+    "imageAlt": "The Texas Strong Mechanical crew on a commercial rooftop beside packaged units"
+  },
+  "groups": [
+    {
+      "slug": "air-conditioning",
+      "title": "Air Conditioning",
+      "icon": "snowflake",
+      "summary": "Repair-first AC service, tune-ups and installation for Houston's heat and humidity.",
+      "intro": "Surviving a Houston summer without a high-performance cooling system is nearly impossible. We diagnose the cause rather than topping off refrigerant, explain what we find, and give you a firm price before any work begins. Every repair is backed by a 1-year parts and labor warranty.",
+      "image": "/brands/texasstrongmechanical/cooling",
+      "imageAlt": "A Texas Strong Mechanical technician servicing an outdoor condensing unit",
+      "services": [
+        {
+          "slug": "ac-repair",
+          "title": "AC Repair",
+          "icon": "wrench",
+          "text": "24-hour air conditioning repair for homes and businesses. Our technicians diagnose the cooling problem, explain what they find, and offer practical repair options before recommending replacement.",
+          "points": [
+            "Same-day response, typically within hours",
+            "Failing capacitors, refrigerant leaks and compressor faults",
+            "Frozen evaporator coils and clogged condensate drain lines",
+            "Grinding or squealing blower motors and electrical faults",
+            "Diagnostic or service call $89, minor electrical repairs $150 to $350",
+            "Refrigerant recharge or leak repair $300 to $900",
+            "Blower motor replacement $500 to $1,200",
+            "Compressor replacement $1,500 to $2,500 and up"
+          ]
+        },
+        {
+          "slug": "ac-maintenance",
+          "title": "AC Tune-Up and Maintenance",
+          "icon": "gauge",
+          "text": "Preventive maintenance is the most effective way to avoid an emergency repair. We test capacitor strength, deep-clean coils, clear drain lines and tune the system so it is ready before peak season.",
+          "points": [
+            "Capacitors tested before high heat degrades them",
+            "Coils cleaned to restore heat transfer and prevent freezing",
+            "Condensate lines cleared of algae and sludge",
+            "$69.95 for first-time customers, $150.00 thereafter",
+            "Indoor coil cleaning add-on $150 to $300, condenser coil deep clean $100 to $200",
+            "A digital health report on the system after every visit",
+            "A thorough multi-point safety inspection on every maintenance visit",
+            "We recommend professional maintenance at least once a year, ideally in spring"
+          ]
+        },
+        {
+          "slug": "ac-installation",
+          "title": "AC Installation",
+          "icon": "air-vent",
+          "text": "When a new system genuinely is the right choice, we install it. Our approach is not anti-replacement; it is against unnecessary replacement, so we compare repair, efficiency, comfort and financing with you before you decide.",
+          "points": [
+            "High-efficiency systems sized for Houston humidity",
+            "Standard efficiency, 14 to 15 SEER, $3,500 to $5,500",
+            "High efficiency, 16 to 20+ SEER, $6,000 to $9,000 and up",
+            "Ductwork replacement add-on $1,500 to $3,500",
+            "Every installation includes a complimentary smart thermostat and a 1-year labor warranty",
+            "Most replacements completed within 24 to 48 hours",
+            "GoodLeap financing available on new systems"
+          ]
+        },
+        {
+          "slug": "refrigerant-retrofit",
+          "title": "R-22 Refrigerant Retrofit",
+          "icon": "droplets",
+          "text": "When the EPA phased out R-22, the refrigerant most people know as freon, older systems were left without a supply. We assess which refrigerant a system runs on and upgrade it to one of the newer, environmentally safe replacements.",
+          "points": [
+            "Upgrades to R407c and MO99",
+            "The system is assessed before an upgrade plan is quoted",
+            "Residential and commercial units",
+            "Planning ahead for an eventual upgrade, rather than waiting for a failure"
+          ]
+        },
+        {
+          "slug": "duct-balancing",
+          "title": "Duct Resizing and Air Balancing",
+          "icon": "wind",
+          "text": "A system can be in good order and still leave rooms that never cool. Undersized or unbalanced ductwork is usually the reason, so we resize the runs and balance the airflow rather than oversizing the equipment.",
+          "points": [
+            "Duct resizing on residential and commercial systems",
+            "Air balancing so rooms hold an even temperature",
+            "Airflow and temperatures measured before anything is changed"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "heating",
+      "title": "Heating",
+      "icon": "flame",
+      "summary": "Furnace and heat pump repair, installation and safety inspection for Houston's winter freezes.",
+      "intro": "Houston winters bring sudden freezes that can leave a home dangerously cold if the heating system fails. Gas furnaces also need specialist attention in a humid climate, where corrosion and cracked heat exchangers put carbon monoxide into the house. Every heating visit includes a multi-point safety inspection.",
+      "image": "/brands/texasstrongmechanical/heating",
+      "imageAlt": "A ductless mini-split head mounted on an interior wall",
+      "services": [
+        {
+          "slug": "furnace-repair",
+          "title": "Furnace Repair",
+          "icon": "heater",
+          "text": "Same-day furnace repair when the heat goes out. A failed ignitor, a tripped safety switch, a clogged burner or a faulty thermostat are the usual causes, and we find which one before quoting.",
+          "points": [
+            "Furnace not turning on, or blowing cold air",
+            "Banging, squealing or ozone-like burning smells",
+            "Short cycling caused by poor airflow and overheating",
+            "Heating service call $89 to $129, minor repairs $150 to $400",
+            "Ignitor replacement $200 to $400, blower motor replacement $500 to $1,200",
+            "Heat exchanger repair $1,500 to $2,500 and up",
+            "Every repair includes a multi-point safety inspection"
+          ]
+        },
+        {
+          "slug": "furnace-installation",
+          "title": "Furnace Installation",
+          "icon": "flame",
+          "text": "Gas and electric furnace installation to Houston's safety and mechanical codes. When an old furnace becomes unreliable or inefficient, we size and fit the replacement and verify it before we leave.",
+          "points": [
+            "Standard efficiency furnace $3,000 to $4,500",
+            "High-efficiency furnace $5,000 to $7,000 and up",
+            "Gas line retrofit add-on $500 to $1,200",
+            "Every installation includes a complimentary programmable thermostat and a 1-year labor warranty",
+            "Installed under Texas license TACLA00126275E",
+            "Replacements often completed within 24 to 48 hours"
+          ]
+        },
+        {
+          "slug": "heat-pump",
+          "title": "Heat Pump Repair and Installation",
+          "icon": "thermometer",
+          "text": "In a climate with mild winters and intense summers, a heat pump is often the most efficient choice for year-round comfort. We install and repair them, and make sure the system switches cleanly between modes.",
+          "points": [
+            "Standard heat pump, 15 to 16 SEER, $4,500 to $6,500",
+            "High-efficiency inverter, 18 to 20+ SEER, $7,500 to $10,000 and up",
+            "Hybrid dual-fuel systems $8,500 to $12,000 and up",
+            "Heat pump tune-up or service $89 to $149",
+            "Control boards and thermostat connections tested and calibrated",
+            "Mode-switching and defrost faults diagnosed properly",
+            "Repairs backed by a 1-year parts and labor warranty"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "indoor-air-quality",
+      "title": "Indoor Air Quality",
+      "icon": "filter",
+      "summary": "Air duct cleaning for homes, churches and businesses, so the air moving through the house is not the dust sitting in it.",
+      "intro": "Over time a ventilation system becomes a collection point for dust, pet dander, mold spores and other allergens, and that same build-up makes the equipment work harder. Our technicians explain what they find inside the duct system and help you understand whether cleaning, filter changes or other HVAC improvements are the practical next step.",
+      "image": "/brands/texasstrongmechanical/air-quality",
+      "imageAlt": "A Texas Strong Mechanical technician working on an attic air handler and duct run",
+      "services": [
+        {
+          "slug": "air-duct-cleaning",
+          "title": "Air Duct Cleaning",
+          "icon": "wind",
+          "text": "Residential duct cleaning that removes deep-seated dust, debris and allergens. It improves breathing conditions at home and takes strain off the system at the same time.",
+          "points": [
+            "Dust, pet dander and mold spores removed from the duct run",
+            "An industrial-grade HEPA vacuum connected to the main duct line, so debris is contained",
+            "Standard residential cleaning $400 to $800",
+            "Anti-microbial sanitization $150 to $300, indoor coil deep cleaning $250 to $500",
+            "Dryer vent cleaning add-on $99 to $189",
+            "Every cleaning includes an inspection of ductwork integrity, so you are not losing air into the attic",
+            "Lower strain on the air conditioner and better efficiency",
+            "Available for homes, churches and businesses"
+          ]
+        },
+        {
+          "slug": "commercial-air-duct-cleaning",
+          "title": "Commercial Air Duct Cleaning",
+          "icon": "building",
+          "text": "High-capacity duct cleaning for offices, retail spaces and facilities, where accumulated dust and mold lower air quality and force the system to work harder.",
+          "points": [
+            "Small office or retail cleaning $800 to $1,500",
+            "Large industrial or office facilities quoted on square footage",
+            "Anti-microbial sanitization $0.15 to $0.30 per square foot",
+            "Coil and blower motor cleaning $250 to $500 per unit",
+            "Complimentary on-site survey for large facilities, so the quote is exact",
+            "Scheduled to keep disruption to the business down",
+            "Carried out under Texas license TACLA00126275E"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "commercial-hvac",
+      "title": "Commercial and Multi-Family",
+      "icon": "building",
+      "summary": "HVAC repair, maintenance and installation for businesses, churches, landlords and property managers.",
+      "intro": "Texas Strong Mechanical provides commercial HVAC repair and maintenance for local businesses, churches, landlords, property managers and commercial properties across Greater Houston. Business owners and property managers need practical options, clear communication and minimal disruption, so we explain repair, maintenance and replacement choices and let you make a budget-conscious decision.",
+      "image": "/brands/texasstrongmechanical/commercial",
+      "imageAlt": "Packaged rooftop units on a commercial building",
+      "services": [
+        {
+          "slug": "commercial-hvac-repair",
+          "title": "Commercial HVAC Repair",
+          "icon": "settings",
+          "text": "Every hour of downtime costs a business revenue, so we respond the same day and restore operations quickly. Commercial diagnostic is $199.00 plus tax.",
+          "points": [
+            "Same-day response for businesses across Greater Houston",
+            "Commercial diagnostic $199.00 plus tax",
+            "Blower motor replacement $500 to $1,200, refrigerant leak repair $400 to $1,500",
+            "Rooftop units serviced with our own specialized tools and safety gear",
+            "Commercial maintenance from $235.00 per unit",
+            "Repair, maintenance and replacement options explained before you decide"
+          ]
+        },
+        {
+          "slug": "church-hvac",
+          "title": "Church HVAC",
+          "icon": "home",
+          "text": "Cooling a worship center brings mechanical challenges a residential system cannot handle: high ceilings, large open spaces and occupancy that swings through the week. We prioritize quiet operation and occupant comfort.",
+          "points": [
+            "High-capacity systems for large open worship spaces",
+            "Smart zoned thermostats, so the sanctuary and the offices run on their own schedules",
+            "Large-tonnage diagnostic $129 to $189, commercial blower motor repair $600 to $1,500",
+            "Special non-profit rates on annual maintenance agreements for worship centers",
+            "Church partners get priority scheduling, with emergency repairs often addressed in 2 to 4 hours",
+            "Quiet operation during services",
+            "Year-round climate control and energy efficiency"
+          ]
+        },
+        {
+          "slug": "multi-family-hvac",
+          "title": "Multi-Family Home HVAC",
+          "icon": "building",
+          "text": "We work with developers on new builds and with landlords and property managers who need rapid repair across dozens of occupied units, with responsive service and clear communication throughout.",
+          "points": [
+            "New-build multi-family HVAC construction, with full project design and install quoted per project",
+            "New unit installation at a bulk rate, $2,800 to $4,500 per unit",
+            "Maintenance $99 to $180 per unit per year",
+            "Property manager emergency repair call $89 to $129",
+            "Bulk pricing for firms with 20 or more units under contract",
+            "Aging PTAC and split systems replaced in phases",
+            "Rapid repair across occupied units",
+            "Tenant comfort concerns handled directly"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "AC maintenance special",
+    "title": "A full AC tune-up for first-time customers.",
+    "text": "A professional tune-up and preventive maintenance service that keeps the system running efficiently through the Houston summer.",
+    "price": "$69.95",
+    "priceNote": "first-time customers",
+    "image": "/brands/texasstrongmechanical/tuneup",
+    "imageAlt": "Two outdoor condensing units beside a brick home"
+  },
+  "plan": {
+    "name": "TSM 99 Club",
+    "intro": "Texas Strong Mechanical offers one-time maintenance, an annual membership and commercial maintenance plans. Our team will explain the best option before you enroll.",
+    "tiers": [
+      {
+        "name": "TSM 99 Club",
+        "price": "$99",
+        "period": "per year",
+        "featured": true,
+        "features": [
+          "Two scheduled visits a year: a spring AC tune-up and a fall heating inspection",
+          "10% off all repairs and equipment",
+          "Priority scheduling, even in peak season",
+          "Small issues caught before they become expensive ones",
+          "We remind you when service is due"
+        ]
+      },
+      {
+        "name": "One-Time Residential Maintenance",
+        "price": "$150",
+        "period": "per visit",
+        "features": [
+          "A single scheduled maintenance visit",
+          "$69.95 for first-time customers",
+          "No membership required",
+          "Residential AC inspection available at $150.00"
+        ]
+      },
+      {
+        "name": "TSM Commercial Maintenance",
+        "price": "$235",
+        "period": "per unit, one-time",
+        "features": [
+          "One-time commercial maintenance, $235.00 per unit",
+          "Bi-annual commercial maintenance, $300.00 per unit",
+          "Quarterly commercial maintenance, $600.00 per unit",
+          "For businesses, churches and managed properties"
+        ]
+      }
+    ],
+    "note": "Maintenance and membership terms apply. The $99 offer is available for a limited time and may be modified or withdrawn without prior notice."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "A veteran-owned Houston HVAC company built on honest service",
+    "text": [
+      "Texas Strong Mechanical is a veteran-owned, owner-led HVAC company based in Humble, serving homeowners, churches, property managers and local businesses across Greater Houston. Built on honest diagnostics, fair value and personal service, we give customers practical repair, maintenance, replacement and financing options without unnecessary pressure.",
+      "Before starting Texas Strong Mechanical, our owner worked around some of the larger air-conditioning companies in Houston. He often met homeowners who needed HVAC repair or replacement but could not move forward because the price was out of reach. Those experiences shaped the mission behind the company: professional HVAC service on a more personal and affordable scale.",
+      "We believe customers deserve to understand what is happening with their system before approving work. Our licensed and insured team explains the issue clearly, provides upfront recommendations, and helps each customer choose the best next step for their comfort, budget and long-term system performance.",
+      "Our team works on all major HVAC brands and operates under Texas HVAC license TACLA00126275E. Eligible HVAC repairs are backed by a 1-year parts and labor warranty."
+    ],
+    "image": "/brands/texasstrongmechanical/team",
+    "imageAlt": "The Texas Strong Mechanical team in front of a branded service truck",
+    "values": [
+      {
+        "title": "Repair first",
+        "text": "We look for safe, practical repair options before recommending a full system replacement, and we never pressure a sale."
+      },
+      {
+        "title": "Upfront quotes",
+        "text": "Every repair job starts with a thorough diagnostic, after which you get a firm, transparent quote before any work begins."
+      },
+      {
+        "title": "Backed by warranty",
+        "text": "Eligible repairs carry a 1-year parts and labor warranty, and our technicians are EPA and NATE certified."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Licensed and insured",
+      "text": "Texas HVAC license TACLA00126275E, held as Texas Strong Air Conditioning & Heating. Texas Strong Mechanical is fully state-licensed and insured, and every visit is carried out to Houston's mechanical and safety codes."
+    },
+    {
+      "heading": "Certifications",
+      "text": "Our technicians are EPA and NATE certified, and every service includes a multi-point safety inspection."
+    },
+    {
+      "heading": "Recognition",
+      "items": [
+        "BBB Winner of Distinction",
+        "4.9 stars on Google",
+        "A 100% customer satisfaction record",
+        "Veteran-owned and owner-led"
+      ]
+    },
+    {
+      "heading": "Warranty",
+      "text": "Eligible repairs are backed by a 1-year parts and labor warranty, and work carried out on a maintenance visit carries a 1-year service warranty."
+    },
+    {
+      "heading": "Free estimates and inspections",
+      "text": "Estimates are free, and you can book a free inspection before deciding on anything. A firm, upfront quote follows the diagnostic and comes before any work starts."
+    },
+    {
+      "heading": "What a new system installation includes",
+      "items": [
+        "A complimentary smart thermostat on an air conditioning or heat pump installation",
+        "A complimentary programmable thermostat on a furnace installation",
+        "A 1-year labor warranty on the installation",
+        "Sizing based on measured airflow and the home's actual load"
+      ]
+    },
+    {
+      "heading": "Brands we service and install",
+      "items": [
+        "Lennox",
+        "Carrier",
+        "Trane",
+        "Daikin",
+        "Honeywell",
+        "Amana",
+        "Goodman"
+      ]
+    },
+    {
+      "heading": "Diagnostic and service pricing",
+      "items": [
+        "Residential diagnostic, $89.95",
+        "Commercial diagnostic, $199.00 plus tax",
+        "Residential AC inspection, $150.00",
+        "Minor repairs generally $150 to $350",
+        "A firm quote follows the diagnostic, before any repair begins"
+      ]
+    },
+    {
+      "heading": "Who we work for",
+      "items": [
+        "Homeowners across Greater Houston",
+        "Churches and worship centers",
+        "Property managers and landlords",
+        "Multi-family developments",
+        "Local businesses and commercial properties"
+      ]
+    },
+    {
+      "heading": "Financing",
+      "items": [
+        "GoodLeap financing on air conditioning and heating projects",
+        "A simple in-office application, which our team walks you through during the visit",
+        "A fast approval process and affordable monthly payments",
+        "A free consultation on the options before you apply",
+        "Call us to go over eligibility and the offers running now"
+      ]
+    },
+    {
+      "heading": "What members get",
+      "items": [
+        "A live 24/7 call center for members",
+        "No overtime charges on after-hours work",
+        "Discounted service, backed by the 1-year warranty",
+        "Priority response, even at the peak of the season"
+      ]
+    },
+    {
+      "heading": "A maintenance visit",
+      "items": [
+        "A standard precision tune-up runs 60 to 90 minutes per unit",
+        "Multiple units or high-tonnage systems take 2 to 3 hours",
+        "A precision performance audit measuring airflow and temperatures",
+        "A deep clean of the outdoor condenser coils and clearing of the condensate drain lines",
+        "Electrical connections tightened and the thermostat calibrated",
+        "A detailed digital health report at the end",
+        "Our plans are built to prevent 80% of common mechanical failures",
+        "Most major brands require proof of annual professional maintenance to honour their parts warranty"
+      ]
+    },
+    {
+      "heading": "Repair or replace",
+      "items": [
+        "Under 10 years old, and a repair is usually the better call",
+        "Over 12 to 15 years old, replacement is worth costing out",
+        "A repair under 50% of the system's value is worth doing; above that, we say so",
+        "Struggling to keep up, or sudden unexplained bill spikes, point to replacement",
+        "If another company has recommended replacement, we will inspect the system and tell you whether a practical repair still exists"
+      ]
+    },
+    {
+      "heading": "Free calculators on our site",
+      "items": [
+        "Duct calculator",
+        "Load calculator",
+        "Air changes per hour calculator",
+        "HVAC CFM calculator"
+      ]
+    },
+    {
+      "heading": "Text messages",
+      "text": "Service texts cover appointment confirmations, reminders, scheduling updates and service notifications. Marketing texts about offers and discounts are opt-in and separate; frequency varies, message and data rates may apply, you can text HELP for assistance and reply STOP to opt out at any time."
+    },
+    {
+      "heading": "Response times",
+      "items": [
+        "Emergency arrival target of 2 to 4 hours",
+        "Minor repairs typically 30 to 90 minutes",
+        "Major repairs usually same-day, with common parts on the trucks",
+        "Full system replacement often within 24 to 48 hours"
+      ]
+    },
+    {
+      "heading": "Current specials",
+      "items": [
+        "HVAC tune-up, $69.95",
+        "Heating tune-up, $69.95",
+        "Free estimate",
+        "TSM 99 Club membership, $99 a year, for a limited time"
+      ]
+    },
+    {
+      "heading": "Where we work",
+      "text": "We dispatch across roughly a 30-mile radius from our Humble headquarters, covering the Greater Houston metro."
+    },
+    {
+      "heading": "Track record",
+      "text": "Over 850 projects completed, serving Texas since 2010."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "facebook.com/TXstrongac",
+        "instagram.com/texasstrongmechanical",
+        "x.com/TxStrong713"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do you offer same-day AC repair in Houston?",
+      "a": "Yes. We prioritize all service calls and aim for same-day delivery on air conditioning repair requests, typically responding within hours."
+    },
+    {
+      "q": "How much does an AC service call cost?",
+      "a": "Residential diagnostic is $89.95 and commercial diagnostic is $199.00 plus tax. Minor repairs generally range from $150 to $350, and we provide a full quote before any work is started."
+    },
+    {
+      "q": "What warranties do you offer?",
+      "a": "Eligible AC repairs are backed by a 1-year parts and labor warranty."
+    },
+    {
+      "q": "Is Texas Strong Mechanical licensed?",
+      "a": "Yes. We are fully state-licensed under Texas HVAC license TACLA00126275E, and insured."
+    },
+    {
+      "q": "Should I repair or replace my older AC unit?",
+      "a": "If your unit is over 10 to 12 years old and repairs are frequent, replacement might be more cost-effective. We always assess the system and offer the most logical repair options first."
+    },
+    {
+      "q": "Do you offer emergency HVAC service after hours?",
+      "a": "Yes, we are available 24/7 for emergency AC and heating repairs, and we respond quickly during extreme Houston weather."
+    },
+    {
+      "q": "What HVAC brands do you service and install?",
+      "a": "We service all major manufacturers, including Trane, Carrier, Lennox and Goodman. Our technicians are trained to handle the technical requirements of high-efficiency cooling and heating systems."
+    },
+    {
+      "q": "How often should I have my AC system serviced?",
+      "a": "We recommend professional maintenance at least once a year, ideally in the spring. Regular tune-ups prevent most common failures and help maintain your manufacturer's warranty coverage."
+    },
+    {
+      "q": "Can you help with indoor air quality and allergies?",
+      "a": "Yes. Our air duct cleaning and filtration services remove dust, pet dander and allergens from the home, which improves breathing conditions and the system's efficiency."
+    },
+    {
+      "q": "Do you provide HVAC services for commercial properties?",
+      "a": "Yes, we offer commercial HVAC repair, maintenance and installation for small businesses and churches, and we understand the cooling loads of commercial spaces in Greater Houston."
+    },
+    {
+      "q": "Do you charge for an estimate?",
+      "a": "No. Estimates are free, and you can book a free inspection before you decide on anything. For a large facility we will come out and survey the site at no cost so the quote is exact."
+    },
+    {
+      "q": "My system still runs on R-22 freon. Can you upgrade it?",
+      "a": "Yes. The EPA phased out R-22, so we assess which refrigerant your system uses and upgrade it to a newer, environmentally safe replacement such as R407c or MO99. We can do it now or help you plan for it."
+    },
+    {
+      "q": "What comes with a new system installation?",
+      "a": "A complimentary thermostat and a 1-year labor warranty. Air conditioning and heat pump installations include a smart thermostat, furnace installations a programmable one."
+    },
+    {
+      "q": "Some rooms never cool properly. Is that the air conditioner?",
+      "a": "Often it is the ductwork rather than the equipment. We measure airflow and temperatures, then resize the duct runs and balance the air instead of selling you a bigger system."
+    },
+    {
+      "q": "Do you work with churches and property managers on maintenance?",
+      "a": "Yes. We offer special non-profit rates on annual maintenance agreements for worship centers, and bulk pricing for property management firms with 20 or more units under contract."
+    },
+    {
+      "q": "Will I pay extra for an after-hours call?",
+      "a": "Members do not. There are no overtime charges on member work, and members reach a live 24/7 call center rather than an answering service."
+    }
+  ],
+  "serviceArea": [
+    "Humble",
+    "Houston",
+    "Katy",
+    "Sugar Land",
+    "Pearland",
+    "Cypress",
+    "The Woodlands",
+    "Conroe",
+    "Friendswood",
+    "Clear Lake",
+    "River Oaks",
+    "West University",
+    "The Heights",
+    "Wilchester"
+  ]
+}
