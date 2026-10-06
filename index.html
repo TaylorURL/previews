@@ -11,11 +11,10 @@
     <script id="boot">
       (function () {
         var brands = __BRANDS__;
-        var samples = { plumbing: 'sample-plumbing', barber: 'sample-barber', realestate: 'sample-realestate' };
-        var label = location.hostname.split('.')[0];
-        var asked = new URLSearchParams(location.search).get('b');
-        var slug = samples[label] || label;
-        if (!brands[slug]) slug = samples[asked] || asked;
+        var pick = function (name) {
+          return name && (brands['sample-' + name] ? 'sample-' + name : brands[name] ? name : null);
+        };
+        var slug = pick(location.hostname.split('.')[0]) || pick(new URLSearchParams(location.search).get('b'));
         var b = brands[slug];
         if (!b) return;
         document.title = b.title;

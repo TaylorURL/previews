@@ -1,0 +1,158 @@
+{
+  "template": "flooring",
+  "name": "Goose Creek Floor Studio",
+  "shortName": "Goose Creek Floors",
+  "phone": "(281) 555-0186",
+  "email": "hello@goosecreekfloors.example",
+  "address": "4510 Garth Rd, Suite 120",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77521",
+  "rating": 4.9,
+  "reviewCount": 168,
+  "hours": [["Mon – Fri", "9 AM – 6 PM"], ["Saturday", "10 AM – 4 PM"], ["Sunday", "Closed"]],
+  "brand": {
+    "primary": "#7a4a2b",
+    "primaryDeep": "#3b2618",
+    "accent": "#b9874a",
+    "ink": "#2a211b",
+    "muted": "#6f6157",
+    "cream": "#f7f1e7",
+    "surface": "#efe6d7",
+    "line": "#e0d4c1",
+    "heading": "'Fraunces', Georgia, serif",
+    "body": "'Work Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Work+Sans:wght@400;500;600&display=swap",
+    "logo": "/brands/sample-flooring/logo.webp",
+    "logoWidth": 190
+  },
+  "tagline": "A flooring showroom and install crew in Baytown since 2009.",
+  "hero": {
+    "eyebrow": "Flooring showroom in Baytown",
+    "title": "Floors you choose in person, installed by our own crew.",
+    "lead": "Walk the showroom, take samples home, and get one written price for the floor, the prep and the install.",
+    "image": "/brands/sample-flooring/hero",
+    "imageAlt": "A bright living room with pale oak floors, a white sofa and tall linen curtains"
+  },
+  "categories": [
+    {
+      "slug": "hardwood",
+      "title": "Hardwood",
+      "short": "Solid and engineered oak, hickory and maple.",
+      "text": "Real wood in site-finished and prefinished planks, from narrow red oak to wide white oak. Engineered boards go over slab, which is most of the houses around Baytown.",
+      "texture": "/brands/sample-flooring/hardwood-texture",
+      "textureAlt": "Close view of light white oak planks",
+      "image": "/brands/sample-flooring/hardwood-room",
+      "imageAlt": "A dining room with warm oak floors and a long white table",
+      "brands": ["Shaw", "Mohawk", "Anderson Tuftex", "Bruce", "Hallmark Floors"],
+      "features": [
+        { "title": "Engineered for slab", "text": "A real wood wear layer over a stable core, glued or floated over concrete." },
+        { "title": "Refinish later", "text": "Thicker wear layers can be sanded and refinished when the finish wears." },
+        { "title": "Stairs and trim", "text": "Matching stair treads, nosing and transitions ordered with the floor." }
+      ]
+    },
+    {
+      "slug": "luxury-vinyl",
+      "title": "Luxury Vinyl",
+      "short": "Waterproof plank and tile for kitchens and baths.",
+      "text": "Rigid-core plank and tile that looks like wood or stone and shrugs off water, dogs and kids. The floor most of our customers pick for the whole downstairs.",
+      "texture": "/brands/sample-flooring/vinyl-texture",
+      "textureAlt": "Close view of grey-brown vinyl planks with a wood grain",
+      "image": "/brands/sample-flooring/vinyl-room",
+      "imageAlt": "A white kitchen with a marble island over pale vinyl plank floors",
+      "brands": ["COREtec", "Mannington", "Shaw Floorte", "Mohawk SolidTech"],
+      "features": [
+        { "title": "Waterproof core", "text": "Spills and mopping stay on top instead of swelling the boards." },
+        { "title": "One floor, every room", "text": "Runs through kitchens, baths and living areas without a transition." },
+        { "title": "Quiet underfoot", "text": "An attached pad softens footsteps on slab." }
+      ]
+    },
+    {
+      "slug": "tile",
+      "title": "Tile",
+      "short": "Porcelain, ceramic and natural stone.",
+      "text": "Large-format porcelain, wood-look plank tile, marble mosaics and shower floors, set by installers who level the slab before the first tile goes down.",
+      "texture": "/brands/sample-flooring/tile-texture",
+      "textureAlt": "Close view of white marble hexagon mosaic tile",
+      "image": "/brands/sample-flooring/tile-room",
+      "imageAlt": "A walk-in shower with marble-look porcelain walls and a dark tile floor",
+      "brands": ["Daltile", "Emser", "Marazzi", "MSI"],
+      "features": [
+        { "title": "Floors and showers", "text": "Floors, shower pans, walls and backsplashes in one visit." },
+        { "title": "Flat to start with", "text": "Slabs are ground and leveled so large tiles sit flat." },
+        { "title": "Waterproofed", "text": "Membranes under every shower and wet-area floor." }
+      ]
+    },
+    {
+      "slug": "carpet",
+      "title": "Carpet",
+      "short": "Soft carpet for bedrooms, stairs and game rooms.",
+      "text": "Nylon, polyester and wool carpet in plush, textured and patterned styles, with pad matched to the room and seams placed where nobody walks.",
+      "texture": "/brands/sample-flooring/carpet-texture",
+      "textureAlt": "Close view of soft beige cut-pile carpet",
+      "image": "/brands/sample-flooring/g-carpet-2",
+      "imageAlt": "A bedroom with new soft brown carpet and a sliding door to a deck",
+      "brands": ["Shaw", "Mohawk SmartStrand", "Dream Weaver", "Phenix"],
+      "features": [
+        { "title": "Pet-friendly fibers", "text": "Stain-resistant fibers that clean up after accidents." },
+        { "title": "Stairs done right", "text": "Wrapped or waterfall stairs, stretched tight and stapled clean." },
+        { "title": "Old carpet hauled off", "text": "Removal and disposal included in the price." }
+      ]
+    },
+    {
+      "slug": "laminate",
+      "title": "Laminate",
+      "short": "The look of wood at a lower price.",
+      "text": "Water-resistant laminate with a realistic wood surface and a hard top layer that stands up to chairs, toys and claws. A good fit for rentals and busy family rooms.",
+      "texture": "/brands/sample-flooring/laminate-texture",
+      "textureAlt": "Close view of honey-toned laminate planks",
+      "image": "/brands/sample-flooring/laminate-room",
+      "imageAlt": "A living room with light laminate floors, a fireplace and a glass coffee table",
+      "brands": ["Mohawk RevWood", "Pergo", "Shaw Repel"],
+      "features": [
+        { "title": "Scratch resistant", "text": "A tough wear layer that holds up to pets and furniture." },
+        { "title": "Fast install", "text": "Most rooms are done in a day, with no glue and no smell." },
+        { "title": "Spill protection", "text": "Sealed edges keep everyday spills from soaking in." }
+      ]
+    }
+  ],
+  "process": [
+    { "title": "Visit", "text": "Walk the showroom, see full boards in daylight, and take samples home to try against your walls and light." },
+    { "title": "Measure", "text": "We measure every room at your house, check the subfloor, and give you one written price before anything is ordered." },
+    { "title": "Install", "text": "Our own crew moves the furniture, preps the floor and installs it, then cleans up and hauls the old flooring away." }
+  ],
+  "gallery": [
+    { "image": "/brands/sample-flooring/g-hardwood-1", "alt": "An open living room with wide white oak floors and a sputnik chandelier", "category": "hardwood", "title": "Wide white oak, open plan" },
+    { "image": "/brands/sample-flooring/g-vinyl-1", "alt": "A large kitchen with a marble island over pale vinyl plank", "category": "luxury-vinyl", "title": "Kitchen and breakfast room" },
+    { "image": "/brands/sample-flooring/g-tile-1", "alt": "A bathroom with a freestanding tub on large porcelain tile", "category": "tile", "title": "Primary bath, large porcelain" },
+    { "image": "/brands/sample-flooring/carpet-room", "alt": "A living room with soft carpet under a wood coffee table", "category": "carpet", "title": "Family room carpet" },
+    { "image": "/brands/sample-flooring/g-laminate-2", "alt": "A sunlit living room with honey-toned laminate seen from above", "category": "laminate", "title": "Upstairs living room" },
+    { "image": "/brands/sample-flooring/g-hardwood-2", "alt": "A formal dining room with oak floors and a crystal chandelier", "category": "hardwood", "title": "Formal dining room" },
+    { "image": "/brands/sample-flooring/g-tile-2", "alt": "Polished marble-look porcelain across an entry hall", "category": "tile", "title": "Entry in polished porcelain" },
+    { "image": "/brands/sample-flooring/g-vinyl-2", "alt": "A galley kitchen with grey cabinets over wood-look vinyl", "category": "luxury-vinyl", "title": "Galley kitchen refresh" },
+    { "image": "/brands/sample-flooring/g-carpet-1", "alt": "A knit pouf on thick beige carpet", "category": "carpet", "title": "Plush bedroom carpet" },
+    { "image": "/brands/sample-flooring/g-laminate-1", "alt": "A living room with light laminate floors and a dark sofa", "category": "laminate", "title": "Living room and hallway" }
+  ],
+  "about": {
+    "eyebrow": "The showroom",
+    "title": "A family floor store on Garth Road.",
+    "text": [
+      "We opened on Garth Road in 2009 with a few racks of carpet and a single install crew. Today the showroom holds hundreds of full-size samples, and the same people who sell you the floor are the ones who put it in.",
+      "Bring a cabinet door, a paint chip or a photo of your room. We will pull boards off the wall, lay them on the floor by the window, and send you home with the ones you like."
+    ],
+    "image": "/brands/sample-flooring/showroom",
+    "imageAlt": "A flooring showroom with tall wood plank sample panels on the walls",
+    "points": ["Our own employed install crews", "Free in-home measuring", "Samples to take home", "Written price before ordering"]
+  },
+  "estimate": {
+    "title": "Get a free estimate.",
+    "text": "Tell us about the rooms and the floor you have in mind. We will call to set a time to measure, and you get a written price for the floor, the prep and the install."
+  },
+  "serviceArea": ["Baytown", "Mont Belvieu", "La Porte", "Highlands", "Crosby", "Deer Park", "Pasadena", "Anahuac"],
+  "reviews": [
+    { "author": "Homeowner in Baytown", "text": "We brought a cabinet door in and they laid six different planks next to it by the window. Ended up with a white oak we never would have picked from a picture. The crew finished the whole downstairs in three days." },
+    { "author": "Homeowner in Mont Belvieu", "text": "The price they wrote down after measuring is what we paid. They even leveled a low spot in the slab we did not know we had." },
+    { "author": "Homeowner in La Porte", "text": "New carpet upstairs and vinyl in the kitchen. Moved all the furniture, hauled the old carpet off, and vacuumed before they left." },
+    { "author": "Homeowner in Crosby", "text": "Took home three tile samples twice before deciding. Nobody rushed us, and the shower floor came out perfect." }
+  ]
+}

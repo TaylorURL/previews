@@ -40,7 +40,28 @@ from datetime import datetime, timedelta, timezone
 
 SUPABASE = "https://gujgtjqqurildqurpffh.supabase.co"
 SEND = "https://www.taylorurl.com/api/outreach/previews"
-INDUSTRY = {"plumber": "plumbing", "barber shop": "barber", "real estate agency": "realestate"}
+INDUSTRY = {
+    "plumber": "plumbing",
+    "barber shop": "barber",
+    "real estate agency": "realestate",
+    "roofing contractor": "roofing",
+    "HVAC contractor": "hvac",
+    "electrician": "hvac",
+    "flooring contractor": "flooring",
+    "hair salon": "salon",
+    "fitness": "fitness",
+    "printing": "printing",
+    "auto repair": "autorepair",
+    "insurance agency": "professional",
+    "accountant": "professional",
+    "title company": "professional",
+}
+
+
+def templates():
+    """The templates this checkout can draw, by the name a brand file uses."""
+    folder = os.path.join(HERE, "..", "src", "templates")
+    return {name[:-4].lower() for name in os.listdir(folder) if name.endswith(".jsx") and name != "shared.jsx"}
 
 
 def key():
@@ -69,8 +90,11 @@ def rest(method, path, body=None, prefer=None):
 
 
 def candidates(limit):
-    rows = rest("POST", "rpc/preview_candidates", {"p_limit": limit})
-    print(json.dumps(rows, indent=2))
+    # Only businesses a template exists for: the database knows every trade the
+    # studio may build for, and this checkout knows which ones it can build yet.
+    ready = templates()
+    rows = rest("POST", "rpc/preview_candidates", {"p_limit": 1000})
+    print(json.dumps([row for row in rows if row["industry"] in ready][:limit], indent=2))
 
 
 def register(slug, prospect_id, letter_path):

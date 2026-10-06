@@ -1,0 +1,244 @@
+{
+  "template": "professional",
+  "kind": "insurance",
+  "name": "Whitlock & Rowe Insurance Group",
+  "shortName": "Whitlock & Rowe",
+  "tagline": "Independent insurance for Baytown families and businesses",
+  "phone": "(281) 555-0163",
+  "email": "hello@whitlockrowe.example",
+  "address": "4515 Garth Rd, Suite 200",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77521",
+  "since": 2004,
+  "license": "Licensed in Texas for property, casualty, life and health insurance.",
+  "rating": 4.9,
+  "reviewCount": 187,
+  "hours": [["Mon – Fri", "8:30 AM – 5 PM"], ["Saturday", "By appointment"], ["Sunday", "Closed"]],
+  "cta": { "label": "Get a Quote", "text": "Tell us what you need covered and an agent will call you back with options the same business day." },
+  "brand": {
+    "primary": "#1f3a5f",
+    "primaryDeep": "#132741",
+    "accent": "#b0794a",
+    "ink": "#18212d",
+    "muted": "#5a6472",
+    "surface": "#f6f4ef",
+    "cream": "#eee8dc",
+    "line": "#e2dccf",
+    "heading": "'Libre Baskerville', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/sample-professional/logo.webp",
+    "logoWidth": 210
+  },
+  "hero": {
+    "eyebrow": "Independent agency in Baytown",
+    "title": "Insurance that fits the way you actually live and work.",
+    "lead": "We compare coverage across several carriers, explain it in plain terms, and stay your agent when it is time to file a claim.",
+    "image": "/brands/sample-professional/hero",
+    "imageAlt": "Two agents reviewing a policy together at a conference table",
+    "points": ["Quotes from several carriers", "A local office on Garth Road", "Claims help from your own agent"]
+  },
+  "overview": {
+    "title": "Coverage for households and businesses across east Harris County.",
+    "text": "Pick a line of coverage to see what it includes, or call and talk it through with an agent."
+  },
+  "audiences": { "individuals": "Individuals & Families", "businesses": "Businesses" },
+  "services": [
+    {
+      "slug": "auto",
+      "title": "Auto Insurance",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Liability, full coverage and teen drivers.",
+      "text": "Liability, full coverage and teen drivers, quoted across several carriers so you can compare price against protection.",
+      "lead": "From a first car to a household with three drivers, we find the coverage that fits and show you what each option costs.",
+      "image": "/brands/sample-professional/auto",
+      "imageAlt": "Car keys being handed from one person to another",
+      "covers": [
+        { "title": "Liability", "text": "Injuries and damage you cause to others, at limits above the state minimum when it makes sense." },
+        { "title": "Collision and comprehensive", "text": "Repairs to your own car after a wreck, hail, flood water or theft." },
+        { "title": "Uninsured motorist", "text": "Protection when the other driver has no insurance or not enough of it." },
+        { "title": "Teen and new drivers", "text": "Adding a driver to the household policy and the discounts that come with good grades." }
+      ],
+      "questions": [
+        { "q": "Will shopping my policy raise my rate?", "a": "No. Quoting does not affect your current policy, and we only move it if the new option is better." },
+        { "q": "Can I bundle auto with my home policy?", "a": "Yes. Most of our carriers discount auto and home written together, and we quote both ways so you can see the difference." }
+      ]
+    },
+    {
+      "slug": "home",
+      "title": "Home Insurance",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Homeowners, renters and windstorm coverage.",
+      "text": "Homeowners, renters and windstorm coverage written for Gulf Coast weather, with the deductibles explained before you sign.",
+      "lead": "Gulf Coast homes need coverage that holds up in hurricane season. We walk through wind, hail and deductibles before you choose.",
+      "image": "/brands/sample-professional/home",
+      "imageAlt": "A white house with a wraparound porch under a clear sky",
+      "covers": [
+        { "title": "Dwelling and contents", "text": "Rebuilding the house and replacing what is inside it after a covered loss." },
+        { "title": "Windstorm and hail", "text": "Wind coverage through the carrier or the state windstorm pool, depending on where you live." },
+        { "title": "Personal liability", "text": "Injuries to guests and damage you are responsible for, on and off the property." },
+        { "title": "Renters coverage", "text": "Belongings and liability for apartments and rental homes, usually for a few dollars a week." }
+      ],
+      "questions": [
+        { "q": "Does homeowners insurance cover flooding?", "a": "No. Flood is a separate policy, and we usually quote the two together." },
+        { "q": "What is a percentage deductible?", "a": "Some policies set the wind and hail deductible as a share of the home's insured value. We show you the dollar amount before you decide." }
+      ]
+    },
+    {
+      "slug": "flood",
+      "title": "Flood Insurance",
+      "audience": "individuals",
+      "icon": "waves",
+      "summary": "Federal and private flood policies.",
+      "text": "Federal and private flood policies for homes in and out of the flood zone, with the waiting period planned around storm season.",
+      "lead": "A standard home policy does not pay for flood water. We help you choose between federal and private flood coverage and time it before storm season.",
+      "image": "/brands/sample-professional/flood",
+      "imageAlt": "A residential street standing under flood water",
+      "covers": [
+        { "title": "Building coverage", "text": "Foundation, walls, flooring, water heaters and other parts of the structure." },
+        { "title": "Contents coverage", "text": "Furniture, clothing and appliances, written as a separate limit." },
+        { "title": "Private flood options", "text": "Higher limits and shorter waiting periods where a private carrier will write the home." },
+        { "title": "Elevation certificates", "text": "Help ordering and reading one, since it can change the price a great deal." }
+      ],
+      "questions": [
+        { "q": "How long before a flood policy starts?", "a": "Federal flood policies usually take 30 days to begin, so it pays to buy well before a storm is in the forecast." },
+        { "q": "Do I need flood insurance outside the flood zone?", "a": "Lenders do not require it there, but many flood claims come from homes outside the mapped zones." }
+      ]
+    },
+    {
+      "slug": "life",
+      "title": "Life Insurance",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Term and permanent life coverage.",
+      "text": "Term and permanent life coverage sized to your mortgage, income and family, without pressure to buy more than you need.",
+      "lead": "We help you work out how much coverage your family would need, then compare term and permanent policies side by side.",
+      "image": "/brands/sample-professional/life",
+      "imageAlt": "A family walking together on a path at sunset",
+      "covers": [
+        { "title": "Term life", "text": "Coverage for a set number of years, often matched to a mortgage or to children at home." },
+        { "title": "Whole and universal life", "text": "Permanent coverage that builds cash value over time." },
+        { "title": "Final expense", "text": "Smaller policies that cover funeral and end-of-life costs." },
+        { "title": "Policy reviews", "text": "A look at coverage you already have through work or an older policy." }
+      ],
+      "questions": [
+        { "q": "How much life insurance do I need?", "a": "It depends on your income, debts and who relies on you. We work through it with you in a short conversation." },
+        { "q": "Is a medical exam required?", "a": "Not always. Several carriers offer coverage with a health questionnaire instead." }
+      ]
+    },
+    {
+      "slug": "business",
+      "title": "Business Insurance",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "General liability, property and packages.",
+      "text": "General liability, property and business owner packages for shops, offices and contractors across the Baytown area.",
+      "lead": "Shops, offices and contractors each carry different risks. We build a package around how your business actually operates.",
+      "image": "/brands/sample-professional/business",
+      "imageAlt": "A small business owner standing behind the counter of her cafe",
+      "covers": [
+        { "title": "General liability", "text": "Customer injuries and property damage that happen because of your work." },
+        { "title": "Business owner package", "text": "Liability and property combined in one policy for small and mid-size businesses." },
+        { "title": "Commercial property", "text": "Your building, equipment and inventory, including storm damage." },
+        { "title": "Certificates of insurance", "text": "Certificates issued to your clients and general contractors when they ask." }
+      ],
+      "questions": [
+        { "q": "How fast can I get a certificate of insurance?", "a": "Usually the same business day. Email us the holder's name and any wording they need." },
+        { "q": "Do I need a separate policy for my home office?", "a": "Often yes. A homeowners policy covers very little business equipment or liability." }
+      ]
+    },
+    {
+      "slug": "commercial-auto",
+      "title": "Commercial Auto",
+      "audience": "businesses",
+      "icon": "truck",
+      "summary": "Work trucks, vans and small fleets.",
+      "text": "Work trucks, vans and small fleets, with drivers and vehicles added or removed as your business changes.",
+      "lead": "Personal auto policies stop at the job site. We cover the trucks, vans and drivers your business depends on.",
+      "image": "/brands/sample-professional/commercial-auto",
+      "imageAlt": "A row of white work vans parked in a lot",
+      "covers": [
+        { "title": "Vehicle liability", "text": "Damage and injuries your drivers cause while on the job." },
+        { "title": "Physical damage", "text": "Repairs and replacement for the vehicles themselves." },
+        { "title": "Hired and non-owned auto", "text": "Coverage when employees drive their own cars or rentals for work." },
+        { "title": "Fleet changes", "text": "Vehicles and drivers added the same day you call." }
+      ],
+      "questions": [
+        { "q": "Does my personal policy cover a truck I use for work?", "a": "Usually not once the truck is used mainly for business. We can review how you use it and tell you which policy fits." }
+      ]
+    },
+    {
+      "slug": "workers-comp",
+      "title": "Workers' Compensation",
+      "audience": "businesses",
+      "icon": "hard-hat",
+      "summary": "Coverage for employee injuries on the job.",
+      "text": "Medical bills and lost wages for employees hurt at work, with the paperwork handled when a claim comes in.",
+      "lead": "Texas lets employers choose whether to carry workers' compensation. We explain the tradeoffs and quote it when it fits.",
+      "covers": [
+        { "title": "Medical costs", "text": "Treatment for employees injured on the job." },
+        { "title": "Lost wages", "text": "Income replacement while an employee recovers." },
+        { "title": "Employer liability", "text": "Protection if an injured employee files suit." },
+        { "title": "Contract requirements", "text": "Proof of coverage for general contractors and public projects." }
+      ],
+      "questions": [
+        { "q": "Is workers' compensation required in Texas?", "a": "Most private employers in Texas may opt out, but many contracts require it, and opting out carries its own risks." }
+      ]
+    }
+  ],
+  "process": {
+    "title": "How we work",
+    "text": "The same four steps for a first car or a fleet of work trucks.",
+    "steps": [
+      { "title": "A short conversation", "text": "We ask about your home, vehicles or business and what you have now." },
+      { "title": "We shop the carriers", "text": "Your details go to the carriers that fit, so you fill out one application." },
+      { "title": "Options side by side", "text": "You see the price and the coverage of each option, with the differences explained." },
+      { "title": "We stay your agent", "text": "Renewals, changes and claims come back to the same office." }
+    ]
+  },
+  "affiliations": {
+    "title": "Carriers we represent",
+    "items": ["Travelers", "Progressive", "Safeco", "The Hartford", "Germania", "National Flood Insurance Program", "Texas Windstorm Insurance Association"]
+  },
+  "about": {
+    "title": "An independent agency on Garth Road since 2004.",
+    "text": [
+      "Whitlock & Rowe started as a two-person office writing home and auto policies for neighbors. It has grown into a team that insures households, contractors and small businesses across east Harris and Chambers counties.",
+      "Being independent means we work for you rather than a single carrier. When a renewal jumps, we shop it. When a storm comes through, we help you file the claim and follow it to the end."
+    ],
+    "image": "/brands/sample-professional/about",
+    "imageAlt": "An agent shaking hands with a client across a desk",
+    "values": [
+      { "title": "Plain answers", "text": "Coverage explained in everyday terms, including what a policy does not cover." },
+      { "title": "Several carriers", "text": "Options from more than one company, so price and protection can be compared." },
+      { "title": "Help at claim time", "text": "A local agent who picks up the phone after the storm." }
+    ]
+  },
+  "team": [
+    { "name": "Dana Whitlock", "role": "Principal Agent", "bio": "Writes home, flood and life coverage and has led the agency since it opened.", "image": "/brands/sample-professional/team-1", "imageAlt": "Dana Whitlock" },
+    { "name": "Marcus Rowe", "role": "Commercial Lines Agent", "bio": "Works with contractors, shops and fleets on liability, property and commercial auto.", "image": "/brands/sample-professional/team-2", "imageAlt": "Marcus Rowe" },
+    { "name": "Lena Tran", "role": "Personal Lines Account Manager", "bio": "Handles policy changes, renewals and claim questions for households.", "image": "/brands/sample-professional/team-3", "imageAlt": "Lena Tran" }
+  ],
+  "faqs": [
+    { "q": "What does an independent agency do differently?", "a": "We are appointed with several carriers, so we can compare policies from each of them rather than offering one company's products." },
+    { "q": "Does it cost more to buy through an agent?", "a": "No. Carriers pay the agency a commission that is already part of the premium, whether you buy from us or directly." },
+    { "q": "What should I have ready for a quote?", "a": "Your current declarations page if you have one, driver's license numbers for auto, and the year and square footage for a home." },
+    { "q": "Who do I call when I have a claim?", "a": "Call us first. We can file it with the carrier for you and follow up until it is settled." },
+    { "q": "Can you review the policies I already have?", "a": "Yes. Bring or email your current policies and we will tell you where you are covered and where you are not." },
+    { "q": "Do you insure homes outside Baytown?", "a": "Yes. We write policies across Texas, and most of our clients are in east Harris and Chambers counties." }
+  ],
+  "resources": [
+    { "title": "FEMA Flood Map Service Center", "text": "Look up the flood zone for any address before you buy or renew.", "href": "https://msc.fema.gov/portal/home" },
+    { "title": "Texas Department of Insurance", "text": "Consumer guides, agent license lookups and complaint help.", "href": "https://www.tdi.texas.gov" },
+    { "title": "Texas Windstorm Insurance Association", "text": "Wind and hail coverage for coastal homes that carriers will not write.", "href": "https://www.twia.org" }
+  ],
+  "serviceArea": ["Baytown", "Mont Belvieu", "La Porte", "Highlands", "Crosby", "Channelview", "Dayton", "Anahuac"],
+  "reviews": [
+    { "author": "Homeowner", "where": "Baytown", "text": "Our renewal went up a lot and they found us a policy with the same coverage for less. Explained the windstorm deductible so we finally understood it." },
+    { "author": "Contractor", "where": "Mont Belvieu", "text": "I needed a certificate for a job the same afternoon and had it in my inbox within the hour." },
+    { "author": "Family of four", "where": "La Porte", "text": "After the storm they walked us through the flood claim step by step and kept calling the carrier until it was paid." }
+  ]
+}
