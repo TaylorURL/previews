@@ -37,7 +37,10 @@ npm run dev      # http://localhost:5173/?b=wedgeworthplumbing
 npm run build
 ```
 
-Previews are built by the preview routine on the Pi, ten each weekday: it picks prospects with
-`preview_candidates()`, writes their brand files here, lands them, and sends each letter through
-taylorurl.com's `/api/outreach/previews`. `*.taylorurl.com` points at this project, so a pushed brand file is
+Previews are built by the preview routine on the Pi each weekday morning, one for every prospect whose
+third letter is due: two letters sent, the second at least five days ago. It reads that list from
+`preview_candidates()`, oldest due first, writes the brand files here a batch at a time, lands them, and sends
+each letter through taylorurl.com's `/api/outreach/previews` once the site is live, so the third letter never goes
+without its site. Whatever one run cannot reach in its time is at the head of the next run's list. A business no
+site can be built for is recorded with `routine.py skip` and stops being offered. `*.taylorurl.com` points at this project, so a pushed brand file is
 a live subdomain. `scripts/routine.py` is the database and mail half of that run.
