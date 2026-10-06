@@ -78,22 +78,21 @@ function send(brand) {
 }
 
 /**
- * Counts a prospect looking at their preview: once per visit, in a real
- * browser, after the page has actually been looked at. The studio's own
- * browsers, automated ones and anything that loads the page and leaves are not
- * counted. Fire and forget.
+ * Whether this visit is one that counts as a prospect's: a preview rather than
+ * a sample, not one of the studio's own browsers, and not an automated one. The
+ * view count and the behaviour tracker both ask this, so they agree on who is
+ * a prospect.
  */
-const watching = new Set();
+export function counts(brand) {
+  return Boolean(brand?.preview) && !ours() && !automated();
+}
 
-export function recordView(brand) {
-  if (!brand.preview || watching.has(brand.slug) || ours() || automated()) return;
-  watching.add(brand.slug);
-  const key = `viewed:${brand.slug}`;
-  try {
-    if (sessionStorage.getItem(key)) return;
-  } catch {
-    // Storage refused; count the visit anyway.
-  }
+/**
+ * Calls `then` once the page has actually been looked at: on screen for a few
+ * seconds, or scrolled, tapped or clicked. Anything that loads the page and
+ * leaves never reaches it.
+ */
+export function whenLooked(then) {
   let done = false;
   let timer = null;
   const events = ['scroll', 'pointerdown', 'keydown', 'touchstart'];
@@ -103,12 +102,7 @@ export function recordView(brand) {
     clearTimeout(timer);
     events.forEach((name) => removeEventListener(name, count));
     document.removeEventListener('visibilitychange', watch);
-    try {
-      sessionStorage.setItem(key, '1');
-    } catch {
-      // Nothing to remember it in.
-    }
-    send(brand);
+    then();
   };
   const watch = () => {
     clearTimeout(timer);
@@ -117,6 +111,33 @@ export function recordView(brand) {
   events.forEach((name) => addEventListener(name, count, { once: true, passive: true }));
   document.addEventListener('visibilitychange', watch);
   watch();
+}
+
+/**
+ * Counts a prospect looking at their preview: once per visit, in a real
+ * browser, after the page has actually been looked at. The studio's own
+ * browsers, automated ones and anything that loads the page and leaves are not
+ * counted. Fire and forget.
+ */
+const watching = new Set();
+
+export function recordView(brand) {
+  if (watching.has(brand.slug) || !counts(brand)) return;
+  watching.add(brand.slug);
+  const key = `viewed:${brand.slug}`;
+  try {
+    if (sessionStorage.getItem(key)) return;
+  } catch {
+    // Storage refused; count the visit anyway.
+  }
+  whenLooked(() => {
+    try {
+      sessionStorage.setItem(key, '1');
+    } catch {
+      // Nothing to remember it in.
+    }
+    send(brand);
+  });
 }
 
 /**
