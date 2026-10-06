@@ -47,6 +47,10 @@ const NAV = [
   ['#schedule', 'Contact'],
 ];
 
+/** Reviews quoted on the page; a business with none has no reviews section and no link to one. */
+const reviewsOf = (b) => (Array.isArray(b.reviews) ? b.reviews : []);
+const navOf = (b) => NAV.filter(([href]) => href !== '#reviews' || reviewsOf(b).length > 0);
+
 const wrap = 'mx-auto w-full max-w-page px-gutter';
 const pad = 'py-[clamp(4rem,9vw,7rem)]';
 const anchor = 'scroll-mt-28 lg:scroll-mt-36';
@@ -95,7 +99,7 @@ function Header({ b, tel }) {
         </a>
 
         <nav aria-label="Main" className="mx-auto hidden items-center gap-6 lg:flex xl:gap-8">
-          {NAV.map(([href, label]) => (
+          {navOf(b).map(([href, label]) => (
             <a
               key={href}
               href={href}
@@ -141,7 +145,7 @@ function Header({ b, tel }) {
       >
         <nav aria-label="Mobile" className={`${wrap} pb-2 pt-1`}>
           <ul>
-            {NAV.map(([href, label]) => (
+            {navOf(b).map(([href, label]) => (
               <li key={href} className="border-b border-ink/10">
                 <a
                   href={href}
@@ -223,6 +227,7 @@ function Hero({ b, tel, rating }) {
 export default function Plumbing({ b }) {
   const tel = telHref(b.phone);
   const rating = ratingLine(b);
+  const reviews = reviewsOf(b);
   const first = b.hours?.[0];
   const street = [b.address, b.town].filter(Boolean).join(', ');
   const full = `${street}, ${b.state}${b.zip ? ` ${b.zip}` : ''}`;
@@ -336,38 +341,40 @@ export default function Plumbing({ b }) {
         </div>
       </section>
 
-      <section id="reviews" className={`${anchor} ${pad}`}>
-        <div className={wrap}>
-          <div className="mb-10 flex flex-col gap-6 lg:mb-12 lg:flex-row lg:items-end lg:justify-between">
-            <div>
-              <Eyebrow>Reviews</Eyebrow>
-              <h2 className={h2}>What customers say</h2>
-            </div>
-            {b.rating && (
-              <div className="flex items-center gap-4">
-                <strong className="font-heading text-[52px] font-extrabold leading-none">{Number(b.rating).toFixed(1)}</strong>
-                <div className="grid gap-1.5">
-                  <Stars value={b.rating} size={18} />
-                  {b.reviewCount && (
-                    <span className="text-[15px] font-semibold text-ink/70">
-                      {b.reviewCount.toLocaleString()} Google reviews
-                    </span>
-                  )}
-                </div>
+      {reviews.length > 0 && (
+        <section id="reviews" className={`${anchor} ${pad}`}>
+          <div className={wrap}>
+            <div className="mb-10 flex flex-col gap-6 lg:mb-12 lg:flex-row lg:items-end lg:justify-between">
+              <div>
+                <Eyebrow>Reviews</Eyebrow>
+                <h2 className={h2}>What customers say</h2>
               </div>
-            )}
+              {ratingLine(b) && (
+                <div className="flex items-center gap-4">
+                  <strong className="font-heading text-[52px] font-extrabold leading-none">{Number(b.rating).toFixed(1)}</strong>
+                  <div className="grid gap-1.5">
+                    <Stars value={b.rating} size={18} />
+                    {b.reviewCount && (
+                      <span className="text-[15px] font-semibold text-ink/70">
+                        {b.reviewCount.toLocaleString()} Google reviews
+                      </span>
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-5">
+              {reviews.map((r) => (
+                <figure key={r.author} className="m-0 flex flex-col rounded-lg border border-ink/10 bg-white p-6 sm:p-7">
+                  <Stars value={5} size={15} />
+                  <blockquote className="mb-5 mt-4 leading-[1.65] text-ink/85">{r.text}</blockquote>
+                  <figcaption className="mt-auto font-bold text-ink/75">{r.author}</figcaption>
+                </figure>
+              ))}
+            </div>
           </div>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-5">
-            {b.reviews.map((r) => (
-              <figure key={r.author} className="m-0 flex flex-col rounded-lg border border-ink/10 bg-white p-6 sm:p-7">
-                <Stars value={5} size={15} />
-                <blockquote className="mb-5 mt-4 leading-[1.65] text-ink/85">{r.text}</blockquote>
-                <figcaption className="mt-auto font-bold text-ink/75">{r.author}</figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <section id="area" className={`${anchor} relative isolate overflow-hidden bg-primary-deep text-white`}>
         <Img className="absolute inset-0 -z-20 h-full w-full object-cover" src={b.band.image} alt={b.band.imageAlt} />
