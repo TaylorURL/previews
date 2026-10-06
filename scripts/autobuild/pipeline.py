@@ -253,7 +253,10 @@ def main(argv):
     log(f"{len(rows)} due for a scripted build")
     stamp = datetime.now(HOUSTON).strftime("%Y%m%d-%H%M")
     n = 0
-    while rows and time.time() < deadline() - 25 * 60:
+    # A batch of ten takes about fifteen minutes from its first build to its
+    # last registration, the deploy wait included, so none starts later than that.
+    reserve = int(os.environ.get("PIPELINE_BATCH_MINUTES") or 15) * 60
+    while rows and time.time() < deadline() - reserve:
         batch, rows = rows[:args.batch], rows[args.batch:]
         n += 1
         passed, parked = build_batch(batch)
