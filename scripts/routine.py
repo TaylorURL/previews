@@ -12,7 +12,13 @@ environment and nowhere else.
       -- scripts/routine.py <command> ...
 
 Commands:
-    candidates [N]                 the next N prospects to build for, as JSON
+    candidates [N]                 every prospect whose third letter (the
+                                   preview) is due, oldest due first, as
+                                   JSON; N caps the list for a look, and the
+                                   routine passes none
+    waiting                        how many prospects are due a site now
+    skip PROSPECT_ID REASON        record that no site can be built for this
+                                   business, so it stops being offered
     register SLUG PROSPECT_ID LETTER_JSON
                                    file the preview and its letter; the
                                    industry and name come from the prospect
@@ -89,12 +95,40 @@ def rest(method, path, body=None, prefer=None):
         sys.exit(f"{method} {path}: {error.code} {error.read().decode()[:400]}")
 
 
-def candidates(limit):
+def due():
     # Only businesses a template exists for: the database knows every trade the
     # studio may build for, and this checkout knows which ones it can build yet.
+    # The database hands back the whole list, oldest due first, so whatever one
+    # run cannot reach is at the head of the next run's list.
     ready = templates()
-    rows = rest("POST", "rpc/preview_candidates", {"p_limit": 1000})
-    print(json.dumps([row for row in rows if row["industry"] in ready][:limit], indent=2))
+    rows = rest("POST", "rpc/preview_candidates", {}) or []
+    return [row for row in rows if row["industry"] in ready]
+
+
+def candidates(limit):
+    rows = due()
+    print(json.dumps(rows if limit is None else rows[:limit], indent=2))
+
+
+def waiting():
+    print(len(due()))
+
+
+def skip(prospect_id, reason):
+    reason = " ".join(reason.split())[:300]
+    if not reason:
+        sys.exit("say why no site can be built")
+    found = rest("GET", f"outreach_prospects?id=eq.{prospect_id}&select=id,name")
+    if not found:
+        sys.exit(f"no prospect {prospect_id}")
+    at = datetime.now(timezone.utc).isoformat()
+    rest(
+        "PATCH",
+        f"outreach_prospects?id=eq.{prospect_id}",
+        {"preview_skipped_at": at, "preview_skip_reason": reason},
+        prefer="return=minimal",
+    )
+    print(f"skipped {found[0]['name']}: {reason}")
 
 
 def register(slug, prospect_id, letter_path):
@@ -257,7 +291,11 @@ def main(argv):
         sys.exit(__doc__)
     command, rest_args = argv[0], argv[1:]
     if command == "candidates":
-        candidates(int(rest_args[0]) if rest_args else 10)
+        candidates(int(rest_args[0]) if rest_args else None)
+    elif command == "waiting":
+        waiting()
+    elif command == "skip" and len(rest_args) >= 2:
+        skip(rest_args[0], " ".join(rest_args[1:]))
     elif command == "register" and len(rest_args) == 3:
         register(*rest_args)
     elif command == "live" and len(rest_args) == 1:
