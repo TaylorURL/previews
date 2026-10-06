@@ -93,6 +93,17 @@ def build_batch(rows):
     """Builds and checks each business; returns the ones that passed and the parked ones."""
     passed, parked = [], []
     for row in rows:
+        # A site an earlier run landed and never registered is taken as it is
+        # rather than built again under a second name.
+        landed = os.path.join(ROOT, "src", "brands", f"{slug_for(row['name'], None, ROOT)}.json")
+        if os.path.exists(landed):
+            with open(landed) as handle:
+                brand = json.load(handle)
+            if brand.get("name") == " ".join(row["name"].split()):
+                slug = os.path.basename(landed)[:-5]
+                passed.append({"row": row, "slug": slug, "brand": brand, "problems": [], "landed": True})
+                log("already landed", slug)
+                continue
         slug = slug_for(row["name"], row.get("town"), ROOT)
         try:
             brand, evidence = build(row, ROOT, slug)
@@ -104,7 +115,10 @@ def build_batch(rows):
         item = {"row": row, "slug": slug, "brand": brand, "problems": problems}
         (parked if problems else passed).append(item)
         log("built" if not problems else "parked", slug, "; ".join(problems))
-    drawn = render([p["slug"] for p in passed])
+    fresh = [p for p in passed if not p.get("landed")]
+    if not fresh:
+        return passed, parked
+    drawn = render([p["slug"] for p in fresh])
     for item in list(passed):
         if drawn.get(item["slug"]):
             item["problems"] = drawn[item["slug"]]
@@ -114,7 +128,7 @@ def build_batch(rows):
         done = subprocess.run(["npm", "run", "build"], cwd=ROOT, capture_output=True, text=True, stdin=subprocess.DEVNULL)
         if done.returncode != 0:
             raise RuntimeError(f"the site build failed: {done.stderr[-600:]}")
-        seen = layout([p["slug"] for p in passed])
+        seen = layout([p["slug"] for p in passed if not p.get("landed")])
         for item in list(passed):
             if seen.get(item["slug"]):
                 item["problems"] = seen[item["slug"]]
@@ -125,7 +139,23 @@ def build_batch(rows):
     return passed, parked
 
 
+def release():
+    """Puts develop on main when it holds anything main does not."""
+    git("fetch", "origin")
+    if not git("log", "--oneline", "origin/main..origin/develop").stdout.strip():
+        return
+    today = datetime.now(HOUSTON).strftime("%Y-%m-%d %H:%M")
+    url = gh("pr", "create", "--base", "main", "--head", "develop", "--title", f"Release {today} previews", "--body",
+             "Puts the preview sites landed on develop live.")
+    gh("pr", "merge", url, "--merge")
+    git("fetch", "origin")
+
+
 def land(passed, branch):
+    passed = [p for p in passed if not p.get("landed")]
+    if not passed:
+        release()
+        return
     names = [p["row"]["name"] for p in passed]
     git("checkout", "-B", branch, "origin/develop")
     for p in passed:
@@ -139,13 +169,13 @@ def land(passed, branch):
     url = gh("pr", "create", "--base", "develop", "--head", branch, "--title", subject, "--body",
              "Brand files and pictures built by the scripted preview run, each from the business's own website and "
              "Google listing, each past the checks before it was added.")
-    gh("pr", "merge", url, "--squash", "--delete-branch")
-    git("fetch", "origin")
-    today = datetime.now(HOUSTON).strftime("%Y-%m-%d %H:%M")
-    release = gh("pr", "create", "--base", "main", "--head", "develop", "--title", f"Release {today} previews", "--body",
-                 f"Puts {len(names)} new preview sites live.")
-    gh("pr", "merge", release, "--merge")
-    git("fetch", "origin")
+    # The merge is asked of GitHub alone: gh's own branch cleanup tries to
+    # check out develop here, which the primary checkout already holds.
+    gh("pr", "merge", url, "--squash")
+    git("push", "origin", "--delete", branch, check=False)
+    git("checkout", "--detach", "origin/develop", check=False)
+    git("branch", "-D", branch, check=False)
+    release()
 
 
 def wait_live(slugs, minutes=10):
