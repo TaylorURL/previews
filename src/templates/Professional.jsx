@@ -261,9 +261,11 @@ function Header({ b, path, k, groups, nav, tel, ctaLabel }) {
           <Mark b={b} className="max-h-10 lg:max-h-[50px]" />
         </a>
 
-        <nav aria-label="Main" className="ml-auto hidden lg:block">
-          <ul className="flex items-center gap-6 xl:gap-9">
+        <nav aria-label="Main" className="ml-auto hidden self-stretch lg:block">
+          <ul className="flex h-full items-center gap-6 xl:gap-9">
+            {/* Full header height, so the pointer stays inside it on the way down to the menu. */}
             <li
+              className="flex h-full items-center"
               onMouseEnter={show}
               onMouseLeave={hide}
               onFocus={show}
