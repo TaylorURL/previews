@@ -21,6 +21,13 @@ carries a strip saying it is a preview.
 Views are counted in `preview_sites` on Supabase project `gujgtjqqurildqurpffh`, through the
 `preview_site(industry, slug)` function. The table grants the browser nothing.
 
+What a visit does on the site is recorded by `src/track.js`, a few KB loaded once the page is idle: pages, scroll
+depth, time per section, clicks and taps, lingering hovers, rage and dead clicks, form fields by name (never what
+is typed), and idle and hidden time. It runs only for a visit the view count would count and only once the page
+has been looked at, and posts batches to taylorurl.com's `/api/preview-events`, which writes `preview_sessions` and
+`preview_events` and drops anything from the studio's own connections through the same `preview_view_ours()` the
+view count asks.
+
 Styling is Tailwind. The brand's colors and fonts are custom properties set on each template's root, and
 `tailwind.config.js` names them, so one set of utilities dresses every business.
 
@@ -30,7 +37,10 @@ npm run dev      # http://localhost:5173/?b=wedgeworthplumbing
 npm run build
 ```
 
-Previews are built by the preview routine on the Pi, ten each weekday: it picks prospects with
-`preview_candidates()`, writes their brand files here, lands them, and sends each letter through
-taylorurl.com's `/api/outreach/previews`. `*.taylorurl.com` points at this project, so a pushed brand file is
+Previews are built by the preview routine on the Pi each weekday morning, one for every prospect whose
+third letter is due: two letters sent, the second at least five days ago. It reads that list from
+`preview_candidates()`, oldest due first, writes the brand files here a batch at a time, lands them, and sends
+each letter through taylorurl.com's `/api/outreach/previews` once the site is live, so the third letter never goes
+without its site. Whatever one run cannot reach in its time is at the head of the next run's list. A business no
+site can be built for is recorded with `routine.py skip` and stops being offered. `*.taylorurl.com` points at this project, so a pushed brand file is
 a live subdomain. `scripts/routine.py` is the database and mail half of that run.

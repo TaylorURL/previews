@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { recordView } from './site.js';
+import { counts, recordView } from './site.js';
 import PreviewBar from './PreviewBar.jsx';
 import { TEMPLATES } from './templates.js';
 
@@ -8,7 +8,12 @@ export default function App({ brand, path = '' }) {
     if (!brand) return;
     document.title = `${brand.name} | ${brand.town}, ${brand.state}`;
     recordView(brand);
-  }, [brand]);
+    // The behaviour tracker is its own small file, fetched once the page is
+    // idle, so the first frame never waits on it and samples never load it.
+    if (!counts(brand)) return;
+    const later = window.requestIdleCallback || ((fn) => setTimeout(fn, 1500));
+    later(() => import('./track.js').then(({ track }) => track(brand, path)).catch(() => {}));
+  }, [brand, path]);
 
   if (!brand) {
     return (
