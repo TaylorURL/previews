@@ -59,7 +59,15 @@ def git(*args, check=True):
 
 
 def gh(*args):
-    return subprocess.run(["gh", *args], cwd=ROOT, check=True, capture_output=True, text=True, stdin=subprocess.DEVNULL).stdout.strip()
+    """One GitHub call, asked again after a pause when it fails: a branch pushed
+    a second ago is not always visible to the pull request API yet."""
+    for attempt in range(4):
+        done = subprocess.run(["gh", *args], cwd=ROOT, capture_output=True, text=True, stdin=subprocess.DEVNULL)
+        if done.returncode == 0:
+            return done.stdout.strip()
+        log("gh", args[0], args[1], "failed:", done.stderr.strip()[-300:])
+        time.sleep(10 * (attempt + 1))
+    raise RuntimeError(f"gh {' '.join(args[:2])} failed four times: {done.stderr.strip()[-300:]}")
 
 
 def deadline():
