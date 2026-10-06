@@ -41,16 +41,15 @@ def shape(brand):
 def facts(brand, evidence):
     problems = []
     digits = lambda s: re.sub(r"\D", "", str(s or ""))
-    if digits(brand.get("phone")) != digits(evidence["phone"]):
-        problems.append("the phone does not match the Google listing")
-    if brand.get("address") != evidence["address"]:
-        problems.append("the address does not match the Google listing")
+    if len(digits(brand.get("phone"))) != 10 or digits(brand.get("phone")) != digits(evidence["phone"]):
+        problems.append("the phone does not match the one stored from the Google listing")
+    if not brand.get("address") or brand.get("address") != evidence["address"]:
+        problems.append("the address does not match the one stored from the Google listing")
     if "rating" in brand and (brand["rating"] != evidence["rating"] or brand.get("reviewCount") != evidence["reviewCount"]):
-        problems.append("the rating does not match the Google listing")
-    sources = [" ".join(s.split()) for s in evidence["reviews"]]
-    for review in brand.get("reviews", []):
-        if not any(review["text"] in s for s in sources):
-            problems.append(f"a review by {review['author']} is not word for word from Google")
+        problems.append("the rating does not match the one stored from the Google listing")
+    # Nothing stored holds review text, so no review may be quoted.
+    if brand.get("reviews"):
+        problems.append("quotes reviews that cannot be proved word for word")
     page = " ".join(evidence["text"].split())
     for paragraph in (brand.get("about") or {}).get("text") or []:
         if paragraph not in page:

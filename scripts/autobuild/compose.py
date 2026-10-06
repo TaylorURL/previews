@@ -50,7 +50,7 @@ ICONS = {
 
 SINCE = re.compile(r"\b(?:since|established|founded|est\.?|serving [^.]{0,40} since)\s+((?:19|20)\d\d)\b", re.I)
 LICENSE = re.compile(r"\b((?:TDLR|TACLA|TECL|TDI|NPN|License|Lic\.)\s*(?:No\.?|#|Number)\s*:?\s*[A-Z]{0,6}-?\d[\w-]{3,})", re.I)
-NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how to|why|what|when|your|schedule|consult|estimator|calculator|types of|our |blog|news|faq|cost|price|pricing|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?)\b", re.I)
+NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how to|why|what|when|your|schedule|consult|estimator|calculator|types of|our |blog|news|faq|cost|price|pricing|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award)\b", re.I)
 ACRONYMS = {"IRS", "CFO", "CPA", "CPAS", "HVAC", "AC", "A/C", "TPO", "LLC", "QB", "EPDM", "UV", "HOA", "1031", "S-CORP"}
 GENERIC_NAV = re.compile(r"^(home|about( us)?|contact( us)?|services|our services|blog|faq|reviews|gallery|careers|menu|get a quote|request a quote|free estimate|call now|learn more|read more|more|portal|login|pay online|resources|team|our team|testimonials)$", re.I)
 
@@ -104,53 +104,93 @@ def short_name(name):
     return cut.strip() or plain(name)
 
 
-def address_parts(place, prospect):
-    parts = {c["types"][0]: c for c in place.get("addressComponents", []) if c.get("types")}
-    street = " ".join(x for x in [parts.get("street_number", {}).get("longText"), parts.get("route", {}).get("shortText")] if x)
-    if parts.get("subpremise"):
-        street = f"{street}, {parts['subpremise']['longText']}"
-    town = parts.get("locality", {}).get("longText") or prospect.get("town")
-    state = parts.get("administrative_area_level_1", {}).get("shortText") or "TX"
-    zip_ = parts.get("postal_code", {}).get("longText")
-    if not street and prospect.get("address"):
-        street = prospect["address"].split(",")[0]
-    return street, town, state, zip_
+def address_parts(prospect):
+    """Street, town, state and zip from the address stored off the Google
+    listing: "2323 S Voss Rd Ste 510, Houston, TX 77057, USA"."""
+    parts = [p.strip() for p in plain(prospect.get("address")).split(",") if p.strip()]
+    if parts and parts[-1].upper() in ("USA", "US", "UNITED STATES"):
+        parts = parts[:-1]
+    state, zip_ = "TX", None
+    at = next((i for i, p in enumerate(parts) if re.fullmatch(r"[A-Z]{2}(\s+\d{5}(-\d{4})?)?", p)), None)
+    if at is None or at < 2:
+        return None, prospect.get("town"), state, None
+    m = re.fullmatch(r"([A-Z]{2})(?:\s+(\d{5}))?(?:-\d{4})?", parts[at])
+    state, zip_ = m.group(1), m.group(2)
+    town = parts[at - 1]
+    street = ", ".join(parts[:at - 1])
+    return street, town or prospect.get("town"), state, zip_
 
 
-def hours_of(place):
-    """Google's opening hours, consecutive days with the same hours run together."""
-    lines = (place.get("regularOpeningHours") or {}).get("weekdayDescriptions") or []
+def listing_rating(prospect):
+    """The rating and review count stored off the Google listing."""
+    try:
+        rating = round(float(prospect.get("rating")), 1)
+        count = int(prospect.get("rating_count"))
+    except (TypeError, ValueError):
+        return None, None
+    if rating <= 0 or count <= 0:
+        return None, None
+    return (int(rating) if rating == int(rating) else rating), count
+
+
+DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+DAY_CODES = {"mo": 0, "tu": 1, "we": 2, "th": 3, "fr": 4, "sa": 5, "su": 6, "monday": 0, "tuesday": 1, "wednesday": 2,
+             "thursday": 3, "friday": 4, "saturday": 5, "sunday": 6}
+
+
+def _clock(text):
+    m = re.fullmatch(r"(\d{1,2}):(\d{2})(?::\d{2})?", text.strip())
+    if not m:
+        return None
+    h, mi = int(m.group(1)), int(m.group(2))
+    if h > 24 or mi > 59:
+        return None
+    suffix = "AM" if h < 12 or h == 24 else "PM"
+    h12 = h % 12 or 12
+    return f"{h12}:{mi:02d} {suffix}" if mi else f"{h12} {suffix}"
+
+
+def hours_of(business):
+    """Opening hours as the business's own structured data states them, or
+    nothing. Only the schema.org forms are read; prose hours are left alone
+    rather than guessed at."""
+    week = {}
+    for spec in business.get("openingHoursSpecification") or []:
+        if not isinstance(spec, dict):
+            continue
+        days = spec.get("dayOfWeek")
+        days = days if isinstance(days, list) else [days]
+        opens, closes = _clock(str(spec.get("opens", ""))), _clock(str(spec.get("closes", "")))
+        if not (opens and closes):
+            return []
+        for d in days:
+            key = str(d or "").rsplit("/", 1)[-1].lower()
+            if key not in DAY_CODES:
+                return []
+            week[DAY_CODES[key]] = f"{opens} – {closes}"
+    raw = business.get("openingHours")
+    for line in ([raw] if isinstance(raw, str) else raw or []):
+        m = re.fullmatch(r"\s*([A-Za-z]{2})(?:\s*-\s*([A-Za-z]{2}))?\s+(\d{1,2}:\d{2})\s*-\s*(\d{1,2}:\d{2})\s*", str(line))
+        if not m or m.group(1).lower() not in DAY_CODES:
+            return []
+        first = DAY_CODES[m.group(1).lower()]
+        last = DAY_CODES.get((m.group(2) or m.group(1)).lower(), first)
+        opens, closes = _clock(m.group(3)), _clock(m.group(4))
+        if not (opens and closes) or last < first:
+            return []
+        for d in range(first, last + 1):
+            week[d] = f"{opens} – {closes}"
+    if not week:
+        return []
+    # Only the days their data names: a day it leaves out is not called closed.
     rows = []
-    for line in lines:
-        if ":" not in line:
-            continue
-        day, time = line.split(":", 1)
-        time = plain(time).replace(" ", " ").replace(" ", " ").replace(" – ", " – ")
-        if rows and rows[-1][1] == time:
-            rows[-1][0].append(day[:3])
+    for d in sorted(week):
+        time = week[d]
+        if rows and rows[-1][2] == time and rows[-1][1] == d - 1:
+            rows[-1][1] = d
         else:
-            rows.append([[day[:3]], time])
-    out = []
-    for days, time in rows:
-        label = days[0] if len(days) == 1 else f"{days[0]} – {days[-1]}"
-        out.append([label, time])
-    return out
-
-
-def reviews_of(place, limit=3):
-    out = []
-    for review in place.get("reviews") or []:
-        if (review.get("rating") or 0) < 4:
-            continue
-        source = (review.get("originalText") or review.get("text") or {}).get("text") or ""
-        text = trim(source, 320)
-        author = plain((review.get("authorAttribution") or {}).get("displayName"))
-        if len(text) < 40 or not author:
-            continue
-        out.append({"author": author, "text": text, "_source": source})
-        if len(out) == limit:
-            break
-    return out
+            rows.append([d, d, time])
+    return [[DAYS[a] if a == b else f"{DAYS[a]} – {DAYS[b]}", t] for a, b, t in rows]
 
 
 def page_text(pages):

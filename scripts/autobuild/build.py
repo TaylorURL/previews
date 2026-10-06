@@ -2,9 +2,16 @@
 
     build(prospect, root) -> (brand, evidence)   or raises Parked(reason)
 
-`prospect` is a row from preview_candidates. `evidence` is what the checks
-prove the brand against: the collected phone, address, rating, review sources
-and the text of the business's own pages.
+`prospect` is a row from preview_candidates. The phone, address, rating and
+review count come from that row, which was filled from the Google listing when
+the prospect was found, so no Google API is asked anything here. Everything
+else comes from the business's own website. `evidence` is what the checks
+prove the brand against: the stored listing values and the text of the
+business's own pages.
+
+No review is quoted. Nothing stored holds review text, and a review read from
+anywhere but its source cannot be proved word for word, so the page shows the
+stored rating and count alone, which is true.
 """
 
 import json
@@ -60,8 +67,8 @@ def _logo(pages, business):
     return None, None
 
 
-def _photos(pages, place, logo_src, limit=6):
-    """Their own photos: the Google listing's first, then the large pictures on their site."""
+def _photos(pages, logo_src, limit=6):
+    """Their own photos: the large pictures on their own site."""
     found = []
     hashes = []
 
@@ -77,22 +84,26 @@ def _photos(pages, place, logo_src, limit=6):
         hashes.append(h)
         found.append((image.convert("RGB"), source))
 
-    for photo in (place.get("photos") or [])[:limit]:
-        try:
-            keep(images.open_image(collect.place_photo(photo["name"])), "google")
-        except Exception:
-            continue
+    def order(item):
+        # A wide photograph leads, since it becomes the hero; a square one is
+        # as likely to be a badge or a graphic and goes last.
+        ratio = item[0].width / item[0].height
+        return (0 if 1.3 <= ratio <= 2.3 else 1 if ratio > 1.05 else 2, -item[0].width)
+
     for page in pages[:4]:
         for img in page.images:
-            if len(found) >= limit + 2:
+            if len(found) >= limit:
                 break
-            if img["src"] == logo_src or re.search(r"logo|icon|badge|seal|avatar|sprite|award|bbb|google|facebook|yelp|angi|homeadvisor|\.svg", img["hint"] + img["src"].lower()):
+            if img["src"] == logo_src or re.search(
+                r"logo|icon|badge|seal|avatar|sprite|award|bbb|google|facebook|yelp|angi|homeadvisor|\.svg|certif|"
+                r"accredit|member|partner|warranty|craftsman|certainteed|gaf|owens|malarkey|atlas|carrier|trane|lennox|"
+                r"rheem|goodman|banner|coupon|offer|financ|map|qr", img["hint"] + img["alt"].lower() + img["src"].lower()):
                 continue
             try:
                 keep(images.open_image(collect.fetch(img["src"], binary=True)[1]), "site")
             except Exception:
                 continue
-    return found
+    return sorted(found, key=order)
 
 
 def build(prospect, root, slug):
@@ -103,10 +114,6 @@ def build(prospect, root, slug):
         pages = collect.site(prospect["website"])
     except Exception as error:
         raise Parked(f"their website did not load: {str(error)[:120]}")
-    try:
-        place = collect.places(prospect.get("place_id"))
-    except Exception as error:
-        raise Parked(f"the Google listing could not be read: {str(error)[:120]}")
     business = collect.jsonld_business(pages)
     text = compose.page_text(pages)
     css = collect.css_text(pages)
@@ -114,10 +121,10 @@ def build(prospect, root, slug):
 
     name = compose.plain(prospect["name"])
     short = compose.short_name(name)
-    phone = place.get("nationalPhoneNumber") or prospect.get("phone")
-    street, town, state, zip_ = compose.address_parts(place, prospect)
+    phone = compose.plain(prospect.get("phone"))
+    street, town, state, zip_ = compose.address_parts(prospect)
     if not phone or not street or not town:
-        raise Parked("no phone or street address on the Google listing")
+        raise Parked("no phone or street address stored from the Google listing")
 
     folder = os.path.join(root, "public", "brands", slug)
     os.makedirs(folder, exist_ok=True)
@@ -131,9 +138,9 @@ def build(prospect, root, slug):
     if not colors:
         raise Parked("no brand color in the logo or the site's stylesheet")
 
-    photos = _photos(pages, place, logo_src)
+    photos = _photos(pages, logo_src)
     if not photos:
-        raise Parked("no usable photo on the Google listing or the website")
+        raise Parked("no usable photo on their website")
     names = []
     for i, (image, source) in enumerate(photos, 1):
         images.save_photo(image, folder, f"photo{i}")
@@ -148,7 +155,6 @@ def build(prospect, root, slug):
     lead, lead_source = compose.lead_of(pages, about)
     if not lead:
         raise Parked("no description of the business in its own words")
-    reviews = place and compose.reviews_of(place) or []
     areas = compose.areas_of(text, town, TOWNS)
     since = compose.SINCE.search(text)
     license_line = compose.LICENSE.search(text)
@@ -168,14 +174,15 @@ def build(prospect, root, slug):
     }
     if zip_:
         brand["zip"] = zip_
-    if place.get("rating") and place.get("userRatingCount"):
-        brand["rating"] = place["rating"]
-        brand["reviewCount"] = place["userRatingCount"]
+    rating, count = compose.listing_rating(prospect)
+    if rating and count:
+        brand["rating"] = rating
+        brand["reviewCount"] = count
     if since:
         brand["since"] = int(since.group(1))
     if license_line:
         brand["license"] = compose.plain(license_line.group(1))
-    hours = compose.hours_of(place)
+    hours = compose.hours_of(business)
     if hours:
         brand["hours"] = hours
 
@@ -199,8 +206,6 @@ def build(prospect, root, slug):
         what = " and ".join(t if t.isupper() else t.lower() for t in [x["title"] for x in services[:2]])
         brand["hero"]["title"] = f"{what[:1].upper()}{what[1:]} in {town} from {short}"
 
-    if reviews:
-        brand["reviews"] = [{"author": r["author"], "text": r["text"]} for r in reviews]
     brand["serviceArea"] = areas
 
     spare = [n for n, _ in names[1:]]
@@ -252,9 +257,8 @@ def build(prospect, root, slug):
     evidence = {
         "phone": phone,
         "address": street,
-        "rating": place.get("rating"),
-        "reviewCount": place.get("userRatingCount"),
-        "reviews": [r["_source"] for r in reviews],
+        "rating": rating,
+        "reviewCount": count,
         "lead_source": lead_source,
         "text": text,
         "photos": [s for _, s in names],

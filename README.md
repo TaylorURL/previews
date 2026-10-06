@@ -45,9 +45,11 @@ without its site. Whatever one run cannot reach in its time is at the head of th
 site can be built for is recorded with `routine.py skip` and stops being offered.
 
 Most previews are built by a script rather than a session. `python3 -m scripts.autobuild.pipeline` reads the
-due list, builds each business's brand file and pictures from its own website and Google listing
-(`scripts/autobuild/`), and runs the checks before anything lands: required fields, the phone, address and
-rating against what was collected, reviews and about text word for word from their source, pictures that load
+due list, builds each business's brand file and pictures from its own website and the phone, address, rating and review
+count stored from its Google listing when it was found (`scripts/autobuild/`), asking no Google API, and runs the
+checks before anything lands: required fields, the phone, address and rating against those stored values, no quoted
+review (nothing stored holds review text, so a page shows the rating and count alone), about text word for word
+from their site, pictures that load
 and are not blank, tiny or another business's, no placeholder or other business's name, every page drawn by the
 server build, and the built home page opened at desktop and phone size with nothing wider than the screen and no
 empty section. A business that fails any check is parked on its prospect row with the reason, and only parked
