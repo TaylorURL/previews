@@ -64,7 +64,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, Check, ChevronDown, Clock, ExternalLink, Mail, MapPin, Menu, Phone, Plus, X } from 'lucide-react';
 import { brandVars, mapsHref, telHref } from '../site.js';
-import { EnquiryForm, Img, Stars } from './shared.jsx';
+import { EnquiryForm, Img, Stars, Facts } from './shared.jsx';
 import { iconFor } from './professional/icons.js';
 
 const KIND = {
@@ -1151,6 +1151,7 @@ function Footer({ b, groups, nav, tel }) {
   const linkCls = 'inline-flex min-h-11 min-w-11 items-center text-muted no-underline hover:text-primary';
   return (
     <footer className="border-t border-line bg-surface text-base">
+      <Facts b={b} />
       <div
         className={`${wrap} grid gap-10 pb-10 pt-14 sm:grid-cols-2 lg:gap-10 lg:pt-20 ${
           groups.length > 1 ? 'lg:grid-cols-[1.4fr_repeat(4,minmax(0,1fr))]' : 'lg:grid-cols-[1.4fr_repeat(3,minmax(0,1fr))]'

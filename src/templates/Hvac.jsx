@@ -165,7 +165,7 @@ import {
   Zap,
 } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { EnquiryForm, Img, Stars } from './shared.jsx';
+import { EnquiryForm, Img, Stars, Facts } from './shared.jsx';
 import { onColor } from './hvac/color.js';
 
 const ICONS = {
@@ -814,6 +814,7 @@ function Footer({ b, groups, tel }) {
   const head = 'mb-3 font-heading text-[13px] font-bold uppercase tracking-[0.14em] text-ink';
   return (
     <footer className="border-t border-line bg-surface pb-28 text-[16px] md:text-[15px] text-muted md:pb-0">
+      <Facts b={b} />
       <div className={`${wrap} grid grid-cols-2 gap-x-6 gap-y-10 pb-12 pt-14 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr] lg:gap-12`}>
         <div className="col-span-2 grid content-start gap-4 lg:col-span-1">
           <a href="/" className="flex min-h-[44px] w-fit max-w-full items-center" aria-label={`${b.name} home`}>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ArrowUpRight, Clock, Mail, MapPin, Menu, Phone, X } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { Img, Logo, Stars } from './shared.jsx';
+import { Img, Logo, Stars, Facts } from './shared.jsx';
 import { onColor } from './barber/color.js';
 
 /** Primary pulled toward the ink color, so it stays readable as text on the dark ground. */
@@ -472,6 +472,8 @@ export default function Barber({ b }) {
       </section>
 
       <footer className="border-t border-line bg-panel">
+
+        <Facts b={b} />
         <div
           className={`${wrap} grid gap-10 pb-10 pt-14 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,0.8fr)_minmax(0,1.1fr)_minmax(0,1.1fr)] lg:gap-12 lg:pt-20`}
         >
