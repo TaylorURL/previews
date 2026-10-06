@@ -105,3 +105,45 @@ export function EnquiryForm({ b, fields, submitLabel, styles }) {
     </form>
   );
 }
+
+/**
+ * What the business's own website says that no section of the template has a
+ * place for: license numbers, certifications, affiliations, payment methods,
+ * languages spoken, warranties, specials, policies, and the like. A preview
+ * must not drop anything their current site tells a customer, so the routine
+ * puts every such fact here rather than leaving it out.
+ *
+ *   "facts": [
+ *     { "heading": "Licenses", "items": ["Texas Master Plumber M-12345"] },
+ *     { "heading": "Payment", "text": "Cash, card and financing through ..." }
+ *   ]
+ *
+ * It sits at the top of the footer on every page and takes the footer's own
+ * colors, so it reads as part of whichever template draws it.
+ */
+export function Facts({ b }) {
+  const facts = (b.facts ?? []).filter((fact) => fact?.heading && (fact.text || fact.items?.length));
+  if (!facts.length) return null;
+  const rule = { borderColor: 'color-mix(in srgb, currentColor 18%, transparent)' };
+  return (
+    <section aria-label={`About ${b.name}`} className="mx-auto w-full max-w-7xl px-5 sm:px-8">
+      <div className="grid gap-x-10 gap-y-7 border-b py-10 sm:grid-cols-2 lg:grid-cols-3" style={rule}>
+        {facts.map((fact) => (
+          <div key={fact.heading} className="min-w-0">
+            <h2 className="font-heading text-[17px] font-semibold opacity-100">{fact.heading}</h2>
+            {fact.text && <p className="mt-2 text-[16px] leading-relaxed opacity-85">{fact.text}</p>}
+            {fact.items?.length > 0 && (
+              <ul className="mt-2 space-y-1.5 text-[16px] leading-relaxed opacity-85">
+                {fact.items.map((item) => (
+                  <li key={item} className="break-words">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}

@@ -1,3 +1,4 @@
+import { Facts } from './shared.jsx';
 /**
  * FITNESS - a gym or group-training studio, drawn dark: a near-black ground,
  * the brand color as the one bright accent, oversized condensed capitals.
@@ -307,6 +308,7 @@ function Footer({ b, nav, ctx }) {
   const link = 'inline-flex min-h-11 items-center text-base text-ink no-underline hover:underline';
   return (
     <footer className="overflow-hidden border-t border-line bg-[color-mix(in_srgb,var(--bg)_70%,#000)] pb-28 md:pb-0">
+      <Facts b={b} />
       <div
         className={`${wrap} grid gap-10 pb-10 pt-16 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,0.8fr)_minmax(0,1fr)_minmax(0,1fr)] lg:gap-12 lg:pt-24`}
       >

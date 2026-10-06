@@ -133,7 +133,7 @@ import {
   X,
 } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { EnquiryForm, Img, Stars } from './shared.jsx';
+import { EnquiryForm, Img, Stars, Facts } from './shared.jsx';
 import { onColor, townId } from './roofing/color.js';
 
 const GROUPS = [
@@ -1082,6 +1082,7 @@ function Footer({ b, tel }) {
   const linkCls = 'flex min-h-[44px] items-center text-white/80 no-underline hover:text-white';
   return (
     <footer className={`bg-ink pb-24 text-white/75 md:pb-0 ${topClip} pt-[calc(clamp(28px,5vw,88px)+3.5rem)]`}>
+      <Facts b={b} />
       <div className={`${wrap} grid gap-10 pb-12 sm:grid-cols-2 lg:grid-cols-[1.25fr_1fr_0.9fr_1.25fr] lg:gap-12`}>
         <div className="grid content-start gap-5">
           {b.brand.logo ? (
