@@ -355,12 +355,11 @@ function EstimateBand({ b }) {
   );
 }
 
-function Footer({ b, cats }) {
+function Footer({ b }) {
   const tel = telHref(b.phone);
   return (
     <footer className="bg-primary-deep text-white/80">
-      <Facts b={b} />
-      <div className={`${wrap} grid gap-12 pb-12 pt-16 sm:grid-cols-2 lg:grid-cols-[1.3fr_0.8fr_1fr_1.25fr] lg:gap-12`}>
+      <div className={`${wrap} grid gap-12 pb-12 pt-16 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1.25fr] lg:gap-12`}>
         <div className="grid content-start gap-5">
           {b.brand.logo ? (
             <a href="/" className="inline-flex w-fit bg-cream px-4 py-3" aria-label={`${b.name} home`}>
@@ -373,20 +372,6 @@ function Footer({ b, cats }) {
           )}
           {b.tagline && <p className="m-0 max-w-[22rem] text-[16px] leading-[1.65]">{b.tagline}</p>}
         </div>
-        {cats.length > 0 && (
-          <div>
-            <h2 className="mb-4 text-[13px] font-semibold uppercase tracking-[0.16em] text-accent">Flooring</h2>
-            <ul className="-my-2 m-0 list-none p-0">
-              {cats.map((c) => (
-                <li key={c.slug}>
-                  <a href={`/flooring/${c.slug}`} className="flex min-h-11 items-center text-white/85 no-underline hover:text-white">
-                    {c.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
         <div>
           <h2 className="mb-4 text-[13px] font-semibold uppercase tracking-[0.16em] text-accent">Visit</h2>
           <a href={mapsHref(b)} className="block leading-[1.65] text-white/85 no-underline hover:text-white">
@@ -997,7 +982,8 @@ export default function Flooring({ b, path = '' }) {
     <div className="overflow-x-clip bg-cream font-body text-[16px] text-ink antialiased sm:text-[17px]" style={{ ...DEFAULT_TOKENS, ...brandVars(b.brand) }}>
       <Header b={b} cats={cats} current={current} />
       {page}
-      <Footer b={b} cats={cats} />
+      {!path && <Facts b={b} />}
+      <Footer b={b} />
     </div>
   );
 }

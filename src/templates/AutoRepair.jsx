@@ -93,7 +93,7 @@
  *     points       ["Six service bays", ...] short facts, shown as a checklist
  *     gallery      [{ image*, alt* }] more photos of the shop for the About page
  *   band           { title, text } the call to action over every footer
- *   serviceArea    ["Baytown", "Mont Belvieu", ...] towns served, in the footer
+ *   serviceArea    ["Baytown", "Mont Belvieu", ...] towns served, on the about page
  *                  and on the About page
  *   reviews        [{ author*, text*, vehicle }] quoted from the shop's Google
  *                  listing; author as the listing shows it, vehicle like
@@ -102,7 +102,7 @@
 
 import { ArrowRight, Check, Clock, MapPin, Phone, ShieldCheck } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { Img, Stars } from './shared.jsx';
+import { Facts, Img, Stars } from './shared.jsx';
 import { CtaBand, Footer, Header, HoursStrip, HoursToday, MobileBar, useToday } from './autorepair/chrome.jsx';
 import { liftOn, onColor } from './autorepair/color.js';
 import { AppointmentForm, QuickBook } from './autorepair/forms.jsx';
@@ -850,6 +850,7 @@ export default function AutoRepair({ b, path = '' }) {
       <HoursStrip b={b} today={today} />
       <main>{body}</main>
       <CtaBand b={b} tel={tel} service={group?.slug} />
+      {!path && <Facts b={b} />}
       <Footer b={b} tel={tel} today={today} />
       <MobileBar b={b} tel={tel} />
     </div>
