@@ -1,0 +1,330 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Grand Slam Plumbing",
+  "shortName": "Grand Slam Plumbing",
+  "summary": "Family owned and operated plumbing for homes in Kemah, League City and the surrounding Bay Area, with honest upfront pricing.",
+  "phone": "(832) 864-3334",
+  "email": "josh@txgrandslam.com",
+  "address": "351 Columbia Memorial Pkwy, Ste G1",
+  "town": "Kemah",
+  "state": "TX",
+  "zip": "77565",
+  "rating": 5.0,
+  "reviewCount": 533,
+  "hours": [
+    ["Monday", "7 AM – 11:30 PM"],
+    ["Tue – Fri", "7:30 AM – 11:30 PM"],
+    ["Saturday", "Open 24 hours"],
+    ["Sunday", "7:30 AM – 11:30 PM"]
+  ],
+  "brand": {
+    "primary": "#193388",
+    "primaryDeep": "#0e1f4f",
+    "accent": "#d8232a",
+    "ink": "#15181f",
+    "muted": "#56607a",
+    "surface": "#eef2fb",
+    "line": "#d6ddec",
+    "heading": "'Agdasima', 'Arial Narrow', sans-serif",
+    "body": "'Karla', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Karla:wght@400;500;600;700&display=swap",
+    "logo": "/brands/grandslamplumbing/logo.webp",
+    "logoWidth": 180
+  },
+  "hero": {
+    "eyebrow": "Family owned and operated plumbing",
+    "title": "We knock plumbing problems",
+    "titleAccent": "out of the park.",
+    "lead": "Our goal is to provide our customers with an All Star experience by offering exceptional plumbing service and advice with honest upfront pricing. Call or book online and we will get you on the schedule.",
+    "image": "/brands/grandslamplumbing/truck",
+    "imageAlt": "The Grand Slam Plumbing van parked in a driveway"
+  },
+  "sameDay": "We look over the day's schedule to see where we can put you in line, and get the job done the same day wherever we can.",
+  "licenses": [{ "label": "Responsible Master Plumber", "number": "Joshua Fasske, RMP #42025" }],
+  "groups": [
+    {
+      "slug": "water-heaters",
+      "title": "Water Heaters",
+      "icon": "flame",
+      "summary": "Tank and tankless water heaters repaired, replaced and installed.",
+      "intro": "A water heater is one of the jobs we do most. We will tell you what is wrong, give you the options for repairing or replacing it and put the price in front of you before any work starts.",
+      "image": "/brands/grandslamplumbing/tankless",
+      "imageAlt": "A tankless water heater mounted on an interior wall",
+      "services": [
+        {
+          "slug": "water-heater-repair",
+          "title": "Water Heater Repair",
+          "icon": "wrench",
+          "text": "No hot water, not enough hot water or a leak at the tank, looked at and repaired.",
+          "points": ["Gas and electric tanks", "Tank flushes", "Options and pricing before we start"]
+        },
+        {
+          "slug": "water-heater-installation",
+          "title": "Water Heater Installation",
+          "icon": "flame",
+          "text": "A new tank water heater installed, with the old one and its parts taken away.",
+          "points": ["Work completed in a timely manner", "The best materials possible"]
+        },
+        {
+          "slug": "tankless-water-heaters",
+          "title": "Tankless Water Heaters",
+          "icon": "thermometer",
+          "text": "Tankless units installed and serviced for houses that want hot water without a tank taking up space.",
+          "points": [
+            "Installed straight and level",
+            "Gas and venting handled with the install",
+            "Annual maintenance to keep the manufacturer warranty current"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "drains-and-water-lines",
+      "title": "Drains and Water Lines",
+      "icon": "waves",
+      "summary": "Drain cleaning and water line repair, from a slow sink to a busted line in the yard.",
+      "intro": "Slow drains and leaking water lines are what most people call us about first. We find the actual cause before we start cutting, which is what keeps the repair small.",
+      "image": "/brands/grandslamplumbing/water-line",
+      "imageAlt": "A repaired water line in an open trench",
+      "services": [
+        {
+          "slug": "drain-cleaning",
+          "title": "Drain Cleaning",
+          "icon": "waves",
+          "text": "Kitchen, bath and main line drains cleared and left running the way they should.",
+          "points": ["Same-day work where the schedule allows"]
+        },
+        {
+          "slug": "water-lines",
+          "title": "Water Lines",
+          "icon": "droplets",
+          "text": "Leaking and broken water lines traced, repaired or replaced, inside the house or out in the yard.",
+          "points": [
+            "We find the leak before we open anything up",
+            "Water pressure problems traced",
+            "Refrigerator and appliance water connections",
+            "Work areas cleaned up when we are done"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "fixtures-and-repairs",
+      "title": "Fixtures and Repairs",
+      "icon": "settings",
+      "summary": "Faucets, toilets and garbage disposals repaired and installed.",
+      "intro": "The everyday fixtures are the ones that get used hardest. Josh takes pride in setting fixtures, toilets, you name it, to perfection, straight and level.",
+      "image": "/brands/grandslamplumbing/faucet",
+      "imageAlt": "A new kitchen faucet over a stainless steel sink",
+      "services": [
+        {
+          "slug": "faucets",
+          "title": "Faucets",
+          "icon": "droplets",
+          "text": "Kitchen, bath and outdoor faucets repaired or swapped for a new one.",
+          "points": ["Repairs and installs both"]
+        },
+        {
+          "slug": "toilets",
+          "title": "Toilets",
+          "icon": "wrench",
+          "text": "Running, leaking and rocking toilets repaired, and new ones set on a sound flange.",
+          "points": ["Flange repairs done properly, not shimmed"]
+        },
+        {
+          "slug": "garbage-disposals",
+          "title": "Garbage Disposals",
+          "icon": "settings",
+          "text": "Jammed and leaking disposals repaired, and new units fitted under the sink.",
+          "points": ["Drain checked while we are under there"]
+        }
+      ]
+    },
+    {
+      "slug": "remodels",
+      "title": "Remodels",
+      "icon": "home",
+      "summary": "Plumbing for bathroom and kitchen remodels, from rough-in to the finished fixtures.",
+      "intro": "When a bathroom or kitchen is being redone, the plumbing has to be right before the tile goes on. We handle the rough-in and come back to set the finished fixtures.",
+      "image": "/brands/grandslamplumbing/shower-remodel",
+      "imageAlt": "A remodelled tiled shower with a new valve and head",
+      "services": [
+        {
+          "slug": "bathroom-remodels",
+          "title": "Bathroom Remodels",
+          "icon": "droplets",
+          "text": "Tub and shower installs, valves, drains and the fixtures that finish the room.",
+          "points": ["Tub and shower installs", "Fixtures set straight and level"]
+        },
+        {
+          "slug": "kitchen-remodels",
+          "title": "Kitchen Remodels",
+          "icon": "home",
+          "text": "Sink, faucet, disposal and supply work for a kitchen that is being rebuilt.",
+          "points": ["Repairs and installs, we do it all"]
+        }
+      ]
+    },
+    {
+      "slug": "natural-gas-lines",
+      "title": "Natural Gas Lines",
+      "icon": "flame",
+      "summary": "Natural gas lines run, repaired and tested by a licensed plumber.",
+      "intro": "Gas work is licensed work. We run new lines for ranges, water heaters, grills and generators, and repair the ones already in the ground.",
+      "services": [
+        {
+          "slug": "gas-line-installation",
+          "title": "Gas Line Installation",
+          "icon": "flame",
+          "text": "New natural gas lines run to appliances inside the house and out on the patio.",
+          "points": ["Licensed master plumber on the job"]
+        },
+        {
+          "slug": "gas-line-repair",
+          "title": "Gas Line Repair",
+          "icon": "wrench",
+          "text": "Leaking and damaged natural gas lines located, repaired and tested.",
+          "points": ["The best materials possible"]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "Our homerun team",
+    "title": "The Fasske family, and the crew that drives Big Blue.",
+    "text": [
+      "We are the Fasske family. Josh owns the company and has been in the plumbing trade since 2007. Brittani runs the office and answers the calls, and the two of them have three kids, Graham, Ellisyn and Greyson. Family is our core value.",
+      "We understand how frustrating and shocking it can be to allow a company to begin a job in your home, expecting an originally agreed upon price, and once the job is complete the tech informs you that the bill has doubled or tripled without warning. We strongly believe in the importance of giving our customers all of the information available and presenting them with options for their particular needs.",
+      "Our team is proud to offer the best plumbing services in League City and the surrounding areas. We strive for complete customer satisfaction and to hit a home run every time, and we promise to treat your family and home like it's our own."
+    ],
+    "image": "/brands/grandslamplumbing/team",
+    "imageAlt": "Two Grand Slam Plumbing technicians standing in front of the company van",
+    "values": [
+      {
+        "title": "Honest upfront pricing",
+        "text": "You get all of the information available and the options for your particular needs before the work begins."
+      },
+      {
+        "title": "Family owned and operated",
+        "text": "Josh runs the trucks, Brittani runs the office, and we treat your family and home like it's our own."
+      },
+      {
+        "title": "Clean, finished work",
+        "text": "Fixtures set straight and level, and every job cleaned up before we leave."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Do you give estimates?",
+      "a": "Free estimates are available. For a quote of services, schedule an appointment and we will come and look at the job."
+    },
+    {
+      "q": "How do I book an appointment?",
+      "a": "Call 832-864-3334 or book online. If you book online, give us your best three days and times and we will contact you by phone or email as quickly as possible to confirm. There is an emergency option if the request cannot wait."
+    },
+    {
+      "q": "Will the price change once the work has started?",
+      "a": "No. We present you with the options and the price for your particular needs before the job begins, which is the whole point of honest upfront pricing."
+    },
+    {
+      "q": "Are you licensed?",
+      "a": "Yes. Joshua Fasske is a Responsible Master Plumber, RMP #42025, licensed by the Texas State Board of Plumbing Examiners."
+    },
+    {
+      "q": "Do you do small jobs as well as big ones?",
+      "a": "Yes. Repairs and installs, we do it all, large or small."
+    },
+    {
+      "q": "Does a tankless water heater need servicing?",
+      "a": "Yes. The manufacturer requires annual maintenance to keep the warranty current, so plan on a visit once a year with a tankless unit."
+    },
+    {
+      "q": "Can you come out after hours?",
+      "a": "We answer the phone on Saturdays and in the evening, and we come out after hours for a leak that will not keep. Select the emergency option when you book so the request is flagged."
+    }
+  ],
+  "serviceArea": [
+    "Kemah",
+    "League City",
+    "Seabrook",
+    "Dickinson",
+    "Clear Lake",
+    "Santa Fe",
+    "Alvin",
+    "Galveston",
+    "Houston"
+  ],
+  "reviews": [
+    {
+      "author": "Dennis Stockman, League City",
+      "text": "I called in the morning, Josh and Justin were here shortly after noon the same day. Josh told me what I needed and quoted me a price. They removed the old hot water heater and related parts, installed the new unit and other need items. They cleaned up the work site and were gone by 3 PM."
+    },
+    {
+      "author": "Christy Luetzow",
+      "text": "Grand Slam Plumbing is amazing and the service is outstanding! They are fast, reliable, friendly and honest! The owner Josh takes pride in his work and he is extremely knowledgeable, helpful and trustworthy! He goes the extra mile to spend time explaining everything in detail!"
+    },
+    {
+      "author": "Melissa Cooper, Houston",
+      "text": "Josh and his team traveled a little farther than they normally would to take care of some issues at our house in Houston. They replaced an old toilet, and all that that entails, as well as troubleshot a pressure issue. He communicated along the way and got the job done in a timely manner. He's our go-to plumbing service."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Our promise",
+      "text": "I will only work with the best materials possible, my work will always be completed in a timely manner, large or small, ensuring the best possible price and outcomes for the customer."
+    },
+    {
+      "heading": "Free estimates",
+      "text": "Free estimates are available. For a quote of services, schedule an appointment and we will come out and look at the job."
+    },
+    {
+      "heading": "Booking an appointment",
+      "text": "Fill out the scheduling assessment with your best three days and times, and you will be contacted by phone or email as quickly as possible to confirm. Select the emergency option if the request is urgent."
+    },
+    {
+      "heading": "After hours and emergencies",
+      "text": "We answer the phone on Saturdays and in the evening, and we come out after hours for a leak that will not keep. Select the emergency option on the scheduling assessment if the request cannot wait."
+    },
+    {
+      "heading": "The team",
+      "items": [
+        "Josh Fasske, owner, in the plumbing trade since 2007",
+        "Brittani Fasske, office and scheduling, and six years as an ultrasound tech at a breast center before that",
+        "Justin, joined as an apprentice in October 2018 and is working toward his next license",
+        "Joe, service technician"
+      ]
+    },
+    {
+      "heading": "In the community",
+      "text": "Josh has been an active member of the League City community for years, and serves with a local church organization providing missional support across the surrounding communities."
+    },
+    {
+      "heading": "Tankless, the pros and cons",
+      "items": [
+        "Endless hot water, you never run out",
+        "Energy efficient",
+        "Saves space",
+        "Costs more up front than a standard tank unit",
+        "Annual maintenance is mandatory to keep the manufacturer warranty current"
+      ]
+    },
+    {
+      "heading": "Big Blue",
+      "items": ["Smoke-free trucks", "Fully stocked", "Designed to arrive professional and clean"]
+    },
+    {
+      "heading": "Licensing",
+      "text": "Joshua Fasske, RMP #42025. Texas State Board of Plumbing Examiners, P.O. Box 4200, Austin, TX 78765-4200, 512-936-5200."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Grand Slam Plumbing on Google",
+        "Grand Slam Plumbing League City on Facebook",
+        "Grand Slam Plumbing, League City on Yelp"
+      ]
+    }
+  ]
+}

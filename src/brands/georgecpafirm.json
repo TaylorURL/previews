@@ -1,0 +1,391 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "George CPA Firm, LLC",
+  "shortName": "George CPA Firm",
+  "tagline": "The Business Owner's CPA",
+  "phone": "(832) 767-0184",
+  "email": "info@georgecpafirm.com",
+  "address": "2855 Mangum Rd, Ste A571",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77092",
+  "since": 2017,
+  "rating": 5.0,
+  "reviewCount": 53,
+  "hours": [["Mon – Fri", "9:00 AM – 5:00 PM CT"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "cta": {
+    "label": "Schedule a Free Consultation",
+    "text": "Tell us where your books and taxes stand and we will set up a free, no-pressure consultation to walk through it together."
+  },
+  "brand": {
+    "primary": "#3c4756",
+    "primaryDeep": "#2a323d",
+    "accent": "#dc5922",
+    "ink": "#1d242d",
+    "muted": "#5c6673",
+    "surface": "#f7f5f2",
+    "cream": "#f0ebe5",
+    "line": "#e3ddd5",
+    "heading": "'Roboto Slab', Georgia, serif",
+    "body": "'Montserrat', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap",
+    "logo": "/brands/georgecpafirm/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Houston CPA firm for service businesses",
+    "title": "Let's take care of the financial stuff so you can get back to what you do best – running your business.",
+    "lead": "George CPA Firm handles the bookkeeping, tax, payroll and CFO work for service-based businesses in Houston, so you keep more of what you earn and worry less about your business's financial future.",
+    "image": "/brands/georgecpafirm/hero",
+    "imageAlt": "The George CPA Firm team",
+    "points": ["Flat, predictable monthly fee", "A committed account manager", "Free consultation to start"]
+  },
+  "overview": {
+    "title": "Comprehensive financial support to empower you.",
+    "text": "We assess where you stand financially, then craft and implement solutions that fit. Pick a service to see what it covers, or call and talk it through with our team."
+  },
+  "audiences": { "individuals": "For Individuals", "businesses": "For Businesses" },
+  "services": [
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping",
+      "audience": "businesses",
+      "icon": "book",
+      "summary": "Accurate books and real-time insight.",
+      "text": "Our bookkeeping goes beyond data entry. We maintain accurate records, deliver real-time insights and support informed decisions to keep your cash flow strong.",
+      "lead": "Struggling to open QuickBooks and make sense of it all? Overwhelmed with the changing interface and all the to-dos to get your financial statements correct? Our bookkeeping services go beyond data entry.",
+      "covers": [
+        { "title": "Transactions and reconciliations", "text": "We meticulously record your transactions and reconcile accounts, including daily bank and credit card reconciliation at our Premier level." },
+        { "title": "Clear financial statements", "text": "Monthly financial statements that give you a precise understanding of your business's financial health." },
+        { "title": "Systems that scale", "text": "Streamlined systems and processes that scale with your operations, so your reporting is robust enough to support strategic planning or secure funding." },
+        { "title": "Cleanup and historical data", "text": "Transforming messy QuickBooks into organized, accurate records, including wrangling historical data into streamlined reporting." }
+      ],
+      "questions": [
+        { "q": "What software do you work in?", "a": "We work in QuickBooks Online and Xero, and we provide QuickBooks support as part of every package." },
+        { "q": "Can I use the financials with my banker?", "a": "Yes. Whether you need accurate financials to give to your banker, file your tax return or make a decision, we will support you to get the correct end result." }
+      ]
+    },
+    {
+      "slug": "tax",
+      "title": "Tax",
+      "audience": "businesses",
+      "icon": "receipt",
+      "summary": "Business tax filing, planning and strategy.",
+      "text": "Our team optimizes your financial records and tax strategies to maximize earnings and reduce your tax burden, with accurate, proactive work that supports effective planning.",
+      "lead": "Navigating tax filing is complex. We go beyond basic compliance, developing tax strategies designed for growing service companies and identifying opportunities to maximize deductions and minimize liabilities.",
+      "covers": [
+        { "title": "Business tax preparation", "text": "Business and personal tax returns prepared on meticulous financial records, so filing is straightforward." },
+        { "title": "Proactive planning", "text": "Quarterly tax projections and planning for the tax implications of new hires, expanded services or geographical diversification." },
+        { "title": "Deductions and credits", "text": "We work to identify eligible deductions and credits so you keep more of what you earn." },
+        { "title": "Filings and forms", "text": "1099 preparation and filing, payroll tax reconciliation, and sales tax filings available on request." }
+      ],
+      "questions": [
+        { "q": "Do you handle both the business and the owner's return?", "a": "Yes. Business and personal tax preparation are both included in our packages, because an owner's personal return is usually intertwined with the company's financials." },
+        { "q": "Can you represent me before the IRS?", "a": "IRS representation is available as an additional service on request." }
+      ]
+    },
+    {
+      "slug": "payroll",
+      "title": "Payroll Services",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Pay cycles, filings and year-end forms.",
+      "text": "Different pay cycles, payroll deposits, payroll tax filings, year-end forms. We remove the friction from payroll tax processing and filing, which keeps you safe from IRS penalties.",
+      "lead": "Your team is central to your growth, and keeping them paid accurately and on time is non-negotiable. We take the burden of payroll off your shoulders.",
+      "covers": [
+        { "title": "Pay cycles and deposits", "text": "Pay cycles and direct deposits handled so your employees are always treated like the key team members they are." },
+        { "title": "Payroll tax filings", "text": "Federal and state payroll tax filings, with full compliance that helps you avoid costly penalties." },
+        { "title": "Year-end reporting", "text": "Year-end forms and reporting prepared alongside the rest of your financial records." },
+        { "title": "Part of the wider picture", "text": "Payroll integrated into your broader financial strategy rather than run as a separate chore." }
+      ],
+      "questions": [
+        { "q": "Is payroll processing included in a package?", "a": "Payroll processing is available as an additional service on request, and payroll tax reconciliation is included from our Essential level up." }
+      ]
+    },
+    {
+      "slug": "cfo-services",
+      "title": "CFO Services",
+      "audience": "businesses",
+      "icon": "chart",
+      "summary": "Fractional CFO oversight and planning.",
+      "text": "For growing businesses that need strategic financial leadership without the cost of a full-time executive, we provide high-level oversight, strategic planning and performance analysis.",
+      "lead": "As your business grows, the need for executive-level financial guidance becomes critical, but a full-time CFO might not yet be viable. Our fractional CFO services bridge that gap.",
+      "covers": [
+        { "title": "Financial oversight", "text": "High-level oversight of your numbers, so you can interpret the metrics that actually move the business." },
+        { "title": "Forecasting and budgets", "text": "Goal setting, budget preparation and budget to actual variance analysis." },
+        { "title": "Profitability analysis", "text": "Performance analysis that identifies areas for improved profitability and efficiency." },
+        { "title": "Business advisory", "text": "Quarterly or monthly business and tax advisory, depending on the level of support you choose." }
+      ],
+      "questions": [
+        { "q": "Who is this for?", "a": "Established service businesses that require strategic financial leadership to scale confidently, typically at our Premier level." }
+      ]
+    },
+    {
+      "slug": "consulting",
+      "title": "Consulting and Auxiliary Support",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Process, systems and operational guidance.",
+      "text": "Beyond traditional accounting, we offer specialized consulting and auxiliary support: optimizing financial processes, exploring new revenue streams and navigating complex challenges.",
+      "lead": "Got questions? We've got answers. Whether you need guidance on setting up new financial systems, understanding basic financial reports or optimizing a particular business process, we're here to help.",
+      "image": "/brands/georgecpafirm/consulting",
+      "imageAlt": "A business owner in an office",
+      "covers": [
+        { "title": "Financial systems", "text": "Setting up new financial systems and refining the internal processes behind them." },
+        { "title": "Reading your reports", "text": "Understanding what your financial reports are telling you about the business." },
+        { "title": "Technology and transitions", "text": "Advice on technology integration and preparing for significant business transitions." },
+        { "title": "Growth engagements", "text": "Value Builder growth-focused engagements and reasonable salary compensation studies at our Premier level." }
+      ]
+    },
+    {
+      "slug": "personal-tax",
+      "title": "Personal Tax Preparation & Planning",
+      "audience": "individuals",
+      "icon": "calculator",
+      "summary": "Owner and individual returns and planning.",
+      "text": "We specialize in meticulous personal tax preparation, applying the deductions and credits relevant to your entrepreneurial income and investments.",
+      "lead": "As a business owner your personal tax situation can be complex and is often intertwined with your company's financials. We take the stress out of filing so you can confidently meet your obligations.",
+      "covers": [
+        { "title": "Return preparation", "text": "Personal returns prepared with the same precision and insight you expect for your business." },
+        { "title": "Deductions and credits", "text": "Deductions and credits relevant to entrepreneurial income and investments, properly applied." },
+        { "title": "Proactive planning", "text": "Planning tailored to your financial goals and business earnings, so you can anticipate future tax implications." }
+      ],
+      "questions": [
+        { "q": "Do I have to be a business client?", "a": "No. We also support individuals who require expert tax preparation and financial advisory services." }
+      ]
+    },
+    {
+      "slug": "individual-consulting",
+      "title": "Individual Financial Consulting",
+      "audience": "individuals",
+      "icon": "handshake",
+      "summary": "Guidance on personal financial decisions.",
+      "text": "The same solution-oriented guidance you appreciate for your company, applied to your personal wealth, in clear and easy-to-understand terms.",
+      "lead": "You're a leader in your business, but navigating personal financial decisions can still feel overwhelming. We help you gain clarity around your financial goals and chart a course for success.",
+      "covers": [
+        { "title": "Financial goals", "text": "Clear advice to help you gain clarity around your goals and the decisions in front of you." },
+        { "title": "Life events", "text": "Support when you are planning for significant life events or seeking to grow your personal assets." }
+      ]
+    }
+  ],
+  "process": {
+    "title": "Why George CPA Firm works for you",
+    "text": "We understand that every business is different, so we don't offer cookie-cutter solutions.",
+    "steps": [
+      { "title": "We get to know your numbers", "text": "First we assess where you stand financially." },
+      { "title": "We build the strategy", "text": "Then we create smart, personalized strategies to help you keep more of what you earn." },
+      { "title": "We take care of the details", "text": "We handle the financial details so you can focus on running your business." },
+      { "title": "We stay your partner", "text": "A reliable and supportive partner, helping you grow with less stress and more clarity." }
+    ]
+  },
+  "affiliations": {
+    "title": "Credentials and memberships",
+    "items": [
+      "American Institute of CPAs (AICPA) member",
+      "Professional Association of Small Business Accountants",
+      "Goldman Sachs 10,000 Small Businesses",
+      "Intuit QuickBooks Elite Tier",
+      "Value Builder",
+      "QuickBooks Online",
+      "Xero",
+      "Gusto"
+    ]
+  },
+  "about": {
+    "title": "From overwhelm to clarity: our journey.",
+    "text": [
+      "George CPA Firm, LLC was founded in 2017 with a deep understanding of the challenges business owners face. We know the feeling of being tired, stressed and overwhelmed by finances, or the spiral that comes with trying to organize everything in QuickBooks while running your business and still having time for yourself.",
+      "That's why we built a firm specifically to be your partner. We saw a need for approachable, knowledgeable experts who could truly support businesses beyond just basic record-keeping, so you can keep more of what you earn and worry less about your business's health and financial future.",
+      "Our mission is clear: we assess our clients' current financial state, then craft and implement innovative solutions. We envision a future where every business owner feels confident and in control of their financial health, free from stress and uncertainty."
+    ],
+    "image": "/brands/georgecpafirm/about",
+    "imageAlt": "The George CPA Firm team",
+    "values": [
+      { "title": "Focused", "text": "On igniting the potential of our clients." },
+      { "title": "Always Learning", "text": "Always growing." },
+      { "title": "Integrity", "text": "We're truthful in all our interactions." },
+      { "title": "Time", "text": "We deliver when we say we will." },
+      { "title": "Honor", "text": "We value every relationship within our ecosystem." }
+    ]
+  },
+  "team": [
+    {
+      "name": "Rae Ann George, CPA",
+      "role": "Founder, Owner, President",
+      "bio": "Rae Ann George, the business owner's CPA, established George CPA Firm, LLC to help business owners succeed financially. Beyond crunching numbers and formulating tax strategies to save clients money, she is dedicated to making financial record-keeping and financial statement preparation a seamless part of business owners' processes, then using the data from those statements to help owners manage and grow. As a member of the American Institute of CPAs, she has access to the latest industry standards and best practices, which she applies for the benefit of her clients. A strong proponent of our core value of Always Learning, Rae Ann has participated in the Goldman Sachs 10K Small Business Program, the Houston Urban League Small Business Program and other business accelerator programs across Houston. She has sat on various boards and committees, including NAWBO-Houston, EEDC and Toastmasters International District 56. When not serving clients, Rae Ann enjoys growing giant cucumbers, gardening and traveling for food tours.",
+      "image": "/brands/georgecpafirm/rae-ann-george",
+      "imageAlt": "Rae Ann George, CPA"
+    },
+    {
+      "name": "Nikesha Ramnarace Rampersad, MBA",
+      "role": "Accounting Manager",
+      "bio": "Nikesha is a seasoned accounting and finance professional with over a decade of experience and a solid academic foundation. Her portfolio as Accounting Manager includes comprehensive financial statement preparation, expert bookkeeping, financial analysis, budgeting, forecasting and cash flow management. She is known for her commitment to continuous improvement and her disciplined focus on accuracy, efficiency, timeliness and auditability. When not designing and implementing financial recording workflows, Nikesha loves to read, is a foodie always on the hunt for new flavors and an unbeatable Monopoly champion.",
+      "image": "/brands/georgecpafirm/nikesha-ramnarace-rampersad",
+      "imageAlt": "Nikesha Ramnarace Rampersad, MBA"
+    },
+    {
+      "name": "Kenwyn Peters, MBA",
+      "role": "Strategic Marketing Director",
+      "bio": "Kenwyn is a versatile business consultant with experience across telecommunications, medical laboratories, financial services, iron and steel, furniture, food services and construction. He brings multidisciplinary experience in sales and marketing, project management, human resources, strategic planning, entrepreneurship, supply chain management and customer experience to clients as they strategize and grow. His background includes an MBA specializing in entrepreneurial management and multiple certificates in project management, leadership, operations and supply chain management. When not engaged in strategy sessions, Kenwyn enjoys going to the beach and searching for that perfect mango.",
+      "image": "/brands/georgecpafirm/kenwyn-peters",
+      "imageAlt": "Kenwyn Peters, MBA"
+    },
+    {
+      "name": "Marie Francis, BBA",
+      "role": "Senior Administrator, Marketing & Customer Service Specialist",
+      "bio": "Marie is a highly trained senior administrator, marketer and customer service specialist. She brings leadership in quality assurance, process improvement and re-engineering initiatives, project planning, customer experience design, event planning and social media marketing. Her passion for people and dedication to achieving win-win results are key attributes that ensure her success. When taking a break from design and content creation, Marie enjoys spending time with family and friends, serving at church and writing poetry.",
+      "image": "/brands/georgecpafirm/marie-francis",
+      "imageAlt": "Marie Francis, BBA"
+    },
+    {
+      "name": "Rachel Docdocil, BSc",
+      "role": "Senior Bookkeeper / Tax Accountant",
+      "bio": "Rachel is a senior bookkeeper with a specialization in tax. Known for providing accurate and timely financial statements, she is highly proficient in preparing and analyzing daily financial transactions, complex accounting problems, untangling payroll issues and all other facets of bookkeeping. She prides herself on her critical thinking skills and her attention to detail. She exhibits the highest levels of integrity and confidentiality in the execution of her duties. When not crunching numbers, Rachel enjoys all things pink, traveling with her family and growing roses.",
+      "image": "/brands/georgecpafirm/rachel-docdocil",
+      "imageAlt": "Rachel Docdocil, BSc"
+    },
+    {
+      "name": "Sherry-Ann Bailey-Seethal, BA",
+      "role": "Junior Bookkeeper",
+      "bio": "Sherry-Ann specializes in transforming messy QuickBooks into organized and accurate financial records. With a special focus on wrangling historical data into streamlined reporting, her attention to detail and focus on complete record-keeping and establishing systems for good record-keeping contribute to the accuracy and efficiency of client deliverables. Outside of work, Sherry-Ann enjoys sports, hiking and making beautiful memories with her family.",
+      "image": "/brands/georgecpafirm/sherry-ann-bailey-seethal",
+      "imageAlt": "Sherry-Ann Bailey-Seethal, BA"
+    },
+    {
+      "name": "Nia Williams, BSc",
+      "role": "Junior Bookkeeper",
+      "bio": "Nia helps business owners answer the question \"How do I know if I made a profit?\" and keeps their financial statements accurate month after month. She is known for her reliability and consistency in daily financial tasks, and supports the bookkeeping team with diligence and professionalism while continuing to expand her technical skills in accounting. When not crunching numbers, Nia is a foodie who enjoys cooking, gaming and planning her travel adventures.",
+      "image": "/brands/georgecpafirm/nia-williams",
+      "imageAlt": "Nia Williams, BSc"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Who do you work with?",
+      "a": "Growth-focused service businesses with revenues typically between $1 million and $10 million, newer startups and solo entrepreneurs who need reliable bookkeeping and tax work, and individuals who need personal tax preparation and financial advisory."
+    },
+    {
+      "q": "How much does it cost to work with a CPA?",
+      "a": "Pricing doesn't need to be a mystery. Our Essential level runs $500 to $1,250 a month, Accelerate $950 to $2,750 a month and Premier $2,500 to $12,500 a month, and we can customize a price for you. Your exact, flat monthly fee is confirmed in a free, no-pressure consultation."
+    },
+    {
+      "q": "What is included at the Essential level?",
+      "a": "Monthly bookkeeping, bank reconciliations, payroll tax reconciliation, monthly financial statements, 1099 preparation and filing, QuickBooks support, and business and personal tax preparation."
+    },
+    {
+      "q": "What does Accelerate add?",
+      "a": "Everything in Essential, expanded to include quarterly business advisory, quarterly tax projections, goal setting and budget preparation, and budget to actual variance analysis."
+    },
+    {
+      "q": "What does Premier add?",
+      "a": "Everything in Accelerate, plus monthly business and tax advisory, daily bank and credit card account reconciliation, a reasonable salary compensation study and a Value Builder growth-focused engagement."
+    },
+    {
+      "q": "Can I see what my books are costing before I call?",
+      "a": "Yes. Our price estimator asks a few quick questions about your entity type, revenue, services and headcount and gives you a ballpark range to help you plan. It is not a quote; we set a flat, predictable monthly fee once we understand your situation."
+    }
+  ],
+  "resources": [
+    { "title": "Make a Payment to George CPA Firm", "text": "Pay your invoice securely through CPACharge.", "href": "https://secure.cpacharge.com/pages/georgecpafirm/payments" },
+    { "title": "Where's My Refund?", "text": "Check the status of your federal refund with the IRS.", "href": "https://www.irs.gov/wheres-my-refund" },
+    { "title": "Make a Payment to the IRS", "text": "Pay a federal tax bill directly through IRS.gov.", "href": "https://www.irs.gov/payments" },
+    { "title": "TWC Employer Resources", "text": "Texas Workforce Commission resources for employers.", "href": "https://www.twc.texas.gov/employer-resources" },
+    { "title": "QuickBooks Online Sign In", "text": "Sign in to your Intuit account.", "href": "https://accounts.intuit.com/app/sign-in" },
+    { "title": "Xero Sign In", "text": "Sign in to your Xero organisation.", "href": "https://www.xero.com/us/login/" },
+    { "title": "Client Portal", "text": "Share documents and sign engagement paperwork in our TaxDome portal.", "href": "https://portal.georgecpafirm.com/" }
+  ],
+  "serviceArea": ["Houston"],
+  "facts": [
+    {
+      "heading": "Why George CPA Firm",
+      "items": [
+        "Proven expertise: 15+ years of experience dedicated to your success",
+        "Expert excellence: CPA certified and trained team of experts and professionals",
+        "Reliable support: a committed account manager available for support",
+        "Insightful visibility: real-time information giving you broad oversight of your organization",
+        "Transparent pricing: easy invoicing with a flat, predictable monthly fee",
+        "Instant clarity: the right information at the right time for effective decision making"
+      ]
+    },
+    {
+      "heading": "Pricing",
+      "items": [
+        "Essential: $500 – $1,250 per month",
+        "Accelerate: $950 – $2,750 per month",
+        "Premier: $2,500 – $12,500 per month",
+        "Additional services on request: sales tax filings, invoicing, bill pay, payroll processing, IRS representation",
+        "Billed monthly, quarterly or annually, whichever suits you"
+      ]
+    },
+    {
+      "heading": "Software we work in",
+      "items": ["QuickBooks Online", "Xero", "Gusto", "CPACharge for client payments"]
+    },
+    {
+      "heading": "Ownership",
+      "text": "George CPA Firm is a Black-owned and women-owned firm, founded in Houston in 2017."
+    },
+    {
+      "heading": "How our solutions are grouped",
+      "items": [
+        "Growth-Focused: service-based businesses that have passed $1 million in revenue and need strategic tax, payroll, bookkeeping and CFO work to scale",
+        "Business Essentials: new startups and solo entrepreneurs who need reliable bookkeeping, tax compliance and practical accounting guidance",
+        "For Individuals: owners and individuals who need personal tax preparation, planning and financial consulting"
+      ]
+    },
+    {
+      "heading": "Becoming a client",
+      "text": "Every engagement opens with a free consultation. New clients then complete our New Client Data Form, with a separate version for an individual, for a business, or for both, and share documents through our TaxDome client portal."
+    },
+    {
+      "heading": "Learning center",
+      "text": "Our small business learning center carries articles including The Pros and Cons of Factoring and What Should I Pay Myself?, a practical guide to business owner pay, business structure, reasonable compensation and cash flow. Twelve e-books are available to download on request, among them Five Benefits of Working with Your CPA for Your Bookkeeping."
+    },
+    {
+      "heading": "Join our team",
+      "text": "George CPA Firm is growing and we are always looking for accounting professionals who share our vision for client success."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/georgecpafirm",
+        "Instagram: instagram.com/george_cpa_firm",
+        "LinkedIn: linkedin.com/company/george-cpa-firm"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Marc D",
+      "where": "Google",
+      "text": "Rae Ann George, CPA and her wonderful and attentive staff are just what we needed in a CPA firm to help us with our taxes and tax strategy moving forward. Very professional, excellent use of technology to help us stay organized, etc. I would highly recommend George CPA firm for anyone looking for a great CPA for personal and/or small business."
+    },
+    {
+      "author": "Blenda C",
+      "where": "Google",
+      "text": "As always, it has been a pleasure working with Rae Ann and her team. We have partnered with them for several years. They are knowledgeable and very responsive. I highly recommend George CPA."
+    },
+    {
+      "author": "L. R",
+      "where": "Google",
+      "text": "I recently had a tax planning and bookkeeping consultation with Rae Ann George of George CPA Firm, LLC, and I was genuinely impressed. While her warmth and approachability immediately put me at ease, what truly stood out was her willingness to share lessons she learned when starting her own business. She offered practical insight that gave me a lot to consider and helped me identify blind spots I hadn't fully examined. Her experience working with other attorneys was evident in the thoughtful, strategic questions she asked to understand where I was coming from. I left the conversation feeling supported, understood, and better positioned to make smart financial decisions."
+    },
+    {
+      "author": "Southern C",
+      "where": "Google",
+      "text": "Rae Ann and her team at George CPA are what you call experts. They found errors that another CPA firm had done and made corrections to make sure filing our business will be smooth sailing moving forward. We can't thank these Tax experts from what they did from start to finish. Highly recommend"
+    },
+    {
+      "author": "Jordan A",
+      "where": "Google",
+      "text": "Rae Ann was extremely helpful in giving me a good starting point for starting a business. She gave me great ideas and helpful resources to continue my research and education on the topic and overall was extremely kind!"
+    },
+    {
+      "author": "Ely T",
+      "where": "Google",
+      "text": "Excellent service and wonderful representatives! George CPA is a pleasure to work with on both my personal and business tax needs. They are always quick to respond and very thorough. Everyone that I have interacted with has been both friendly and knowledgeable."
+    }
+  ]
+}
