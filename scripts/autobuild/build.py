@@ -10,6 +10,7 @@ and the text of the business's own pages.
 import json
 import os
 import re
+import urllib.error
 
 from . import collect, compose, images
 
@@ -25,6 +26,12 @@ TOWNS = [
 
 class Parked(Exception):
     """A business this script cannot build without guessing, and why."""
+
+
+class Transient(Exception):
+    """A source that refused for now - a rate limit, an outage - rather than
+    anything about the business. Nothing is parked over it; the run stops and
+    the next one tries again."""
 
 
 def _sample(root, template):
@@ -105,8 +112,12 @@ def build(prospect, root, slug):
         raise Parked(f"their website did not load: {str(error)[:120]}")
     try:
         place = collect.places(prospect.get("place_id"))
-    except Exception as error:
-        raise Parked(f"the Google listing could not be read: {str(error)[:120]}")
+    except urllib.error.HTTPError as error:
+        if error.code == 429 or error.code >= 500:
+            raise Transient(f"the Google listing answered {error.code}")
+        raise Parked(f"the Google listing could not be read: {error.code}")
+    except (urllib.error.URLError, TimeoutError, ConnectionError) as error:
+        raise Transient(f"the Google listing did not answer: {str(error)[:120]}")
     business = collect.jsonld_business(pages)
     text = compose.page_text(pages)
     css = collect.css_text(pages)
