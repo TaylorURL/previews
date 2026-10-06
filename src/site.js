@@ -10,7 +10,9 @@
 const SUPABASE_URL = 'https://gujgtjqqurildqurpffh.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_qn4ZWB2n95HGMJm0L58I0w_ClE_Qu4M';
 
-const brands = import.meta.glob('./brands/*.json', { import: 'default', eager: true });
+// Each brand file is its own chunk, fetched only by the page that is dressed in
+// it, so a page carries one business rather than every business on the list.
+const brands = import.meta.glob('./brands/*.json', { import: 'default' });
 
 export const SLUGS = Object.keys(brands).map((path) => path.slice(9, -5));
 
@@ -42,9 +44,9 @@ export function resolvePath(location = window.location) {
   return location.pathname.replace(/^\/+|\/+$/g, '').replace(/\.html$/, '');
 }
 
-export function loadBrand(slug) {
-  const brand = brands[`./brands/${slug}.json`];
-  return brand ? { slug, ...brand } : null;
+export async function loadBrand(slug) {
+  const load = brands[`./brands/${slug}.json`];
+  return load ? { slug, ...(await load()) } : null;
 }
 
 // Set on .taylorurl.com by the studio's console and by opening any preview
