@@ -1,0 +1,458 @@
+{
+  "template": "fitness",
+  "name": "Forge 146 Fitness",
+  "shortName": "Forge 146",
+  "phone": "(281) 555-0163",
+  "email": "hello@forge146.example",
+  "address": "4520 Garth Rd, Suite 110",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77521",
+  "rating": 4.9,
+  "reviewCount": 187,
+  "since": 2019,
+  "hours": [
+    [
+      "Mon – Fri",
+      "5 AM – 8:30 PM"
+    ],
+    [
+      "Saturday",
+      "7 AM – 12 PM"
+    ],
+    [
+      "Sunday",
+      "8 AM – 11 AM"
+    ]
+  ],
+  "social": {
+    "instagram": "https://www.instagram.com/",
+    "facebook": "https://www.facebook.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/"
+  },
+  "brand": {
+    "primary": "#d4ff3a",
+    "heading": "'Bebas Neue', 'Arial Narrow', Impact, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap",
+    "logo": "/brands/sample-fitness/logo.webp",
+    "logoWidth": 150
+  },
+  "hero": {
+    "eyebrow": "Group training on Garth Road",
+    "title": "Show up.",
+    "titleAccent": "Get after it.",
+    "lead": "Coached group classes for every level, from 5 AM to 7:30 PM. Your first class is free, and a coach walks you through it.",
+    "image": "/brands/sample-fitness/hero",
+    "imageAlt": "A group class training with resistance bands under studio lights",
+    "position": "center 35%"
+  },
+  "trial": {
+    "label": "Start Your Free Trial",
+    "eyebrow": "Free trial",
+    "title": "Your first class is on us.",
+    "text": "Pick any class on the schedule, tell us you are coming, and a coach meets you at the door. No contract, no sales pitch.",
+    "image": "/brands/sample-fitness/bags",
+    "imageAlt": "A row of heavy bags hanging in a dark gym"
+  },
+  "about": {
+    "eyebrow": "The studio",
+    "title": "Forty-five minutes. A coach the whole time.",
+    "text": [
+      "Every class at Forge 146 is planned by a coach and run by one, so the weights, the pace and the form get watched from the first rep to the last.",
+      "Beginners get scaled options and a little extra attention. Regulars get programming that moves forward week to week instead of repeating."
+    ],
+    "points": [
+      "Coached every class",
+      "Scaled for every level",
+      "Programming that progresses",
+      "Open 5 AM on weekdays"
+    ],
+    "image": "/brands/sample-fitness/studio",
+    "imageAlt": "The training floor with racks and machines under low lights"
+  },
+  "classes": [
+    {
+      "slug": "hiit-burn",
+      "name": "HIIT Burn",
+      "intensity": 5,
+      "duration": 45,
+      "summary": "Short, hard intervals with ropes, bikes and bodyweight.",
+      "text": "Work and rest on a clock: forty seconds on, twenty off, around stations that change every round. You set the effort, and the coach keeps the pace honest.",
+      "expect": [
+        "A ten-minute warm-up before the first interval",
+        "Stations for ropes, rowers, bikes and floor work",
+        "A scaled option for every movement",
+        "A cool-down and stretch to finish"
+      ],
+      "image": "/brands/sample-fitness/hiit",
+      "imageAlt": "A woman working with battle ropes in the studio"
+    },
+    {
+      "slug": "strength-lab",
+      "name": "Strength Lab",
+      "intensity": 4,
+      "duration": 60,
+      "summary": "Barbell lifts taught properly and loaded week by week.",
+      "text": "Squats, deadlifts, presses and pulls, coached in small groups so your form gets checked on every set. The program runs in six-week blocks, so the weight on the bar goes up on purpose.",
+      "expect": [
+        "Technique work before the working sets",
+        "Your numbers written down and tracked",
+        "Accessory work for the back, hips and core",
+        "Groups capped at ten per coach"
+      ],
+      "image": "/brands/sample-fitness/strength",
+      "imageAlt": "A lifter setting up for a deadlift on a rubber floor"
+    },
+    {
+      "slug": "ride",
+      "name": "Ride",
+      "intensity": 4,
+      "duration": 45,
+      "summary": "Indoor cycling to a loud playlist and a coach who rides with you.",
+      "text": "Climbs, sprints and steady efforts on the bike, with the lights down and the music up. Low impact on the joints and hard on the lungs.",
+      "expect": [
+        "A bike fitted to you before the first ride",
+        "Climbs, sprints and recovery rides",
+        "Clip-in or regular shoes, either works",
+        "Towels and water at every bike"
+      ],
+      "image": "/brands/sample-fitness/ride",
+      "imageAlt": "A row of indoor bikes in a dark studio"
+    },
+    {
+      "slug": "boxing",
+      "name": "Boxing Conditioning",
+      "intensity": 5,
+      "duration": 50,
+      "summary": "Bag work, footwork and combinations, with no sparring.",
+      "text": "Learn the jab, the cross and the hook, then put them together on the heavy bag in timed rounds. Conditioning between rounds keeps the heart rate up.",
+      "expect": [
+        "Wraps and gloves to borrow for your first class",
+        "Combinations taught from the stance up",
+        "Rounds on the heavy bag",
+        "No sparring and no contact"
+      ],
+      "image": "/brands/sample-fitness/boxing",
+      "imageAlt": "A man training on a heavy bag"
+    },
+    {
+      "slug": "bootcamp",
+      "name": "Bootcamp",
+      "intensity": 4,
+      "duration": 50,
+      "summary": "Tires, sleds and teams. The Saturday morning crowd favorite.",
+      "text": "A full-body session built on carries, pushes, pulls and partner work. Some days it is a circuit, some days it is a team challenge, every day it is coached.",
+      "expect": [
+        "Partner and team workouts",
+        "Tire flips, sled pushes and carries",
+        "Scaled loads for every level",
+        "A different session every week"
+      ],
+      "image": "/brands/sample-fitness/bootcamp",
+      "imageAlt": "Two people flipping a tire across the gym floor"
+    },
+    {
+      "slug": "mobility-core",
+      "name": "Mobility and Core",
+      "intensity": 2,
+      "duration": 40,
+      "summary": "Slower work for hips, shoulders and trunk. The class that keeps you training.",
+      "text": "Controlled strength through full ranges of motion, kettlebell get-ups, carries and core work. Good on a recovery day and good for anyone who sits at a desk.",
+      "expect": [
+        "Joint-by-joint mobility work",
+        "Kettlebell get-ups and carries",
+        "Core work without endless crunches",
+        "A pace anyone can follow"
+      ],
+      "image": "/brands/sample-fitness/mobility",
+      "imageAlt": "A man doing a kettlebell get-up on the gym floor"
+    }
+  ],
+  "classesIntro": "Six class types, all coached and all scaled to your level. New here? HIIT Burn and Bootcamp are the easiest places to start.",
+  "schedule": [
+    {
+      "day": "Monday",
+      "sessions": [
+        {
+          "time": "5:00 AM",
+          "class": "hiit-burn",
+          "coach": "Marcus"
+        },
+        {
+          "time": "6:15 AM",
+          "class": "strength-lab",
+          "coach": "Tasha"
+        },
+        {
+          "time": "12:00 PM",
+          "class": "ride",
+          "coach": "Andre"
+        },
+        {
+          "time": "5:30 PM",
+          "class": "boxing",
+          "coach": "Andre"
+        },
+        {
+          "time": "6:30 PM",
+          "class": "hiit-burn",
+          "coach": "Marcus"
+        }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "sessions": [
+        {
+          "time": "5:00 AM",
+          "class": "ride",
+          "coach": "Andre"
+        },
+        {
+          "time": "6:15 AM",
+          "class": "bootcamp",
+          "coach": "Marcus"
+        },
+        {
+          "time": "5:30 PM",
+          "class": "strength-lab",
+          "coach": "Tasha"
+        },
+        {
+          "time": "6:45 PM",
+          "class": "mobility-core",
+          "coach": "Tasha"
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "sessions": [
+        {
+          "time": "5:00 AM",
+          "class": "hiit-burn",
+          "coach": "Marcus"
+        },
+        {
+          "time": "6:15 AM",
+          "class": "strength-lab",
+          "coach": "Tasha"
+        },
+        {
+          "time": "12:00 PM",
+          "class": "boxing",
+          "coach": "Andre"
+        },
+        {
+          "time": "5:30 PM",
+          "class": "ride",
+          "coach": "Andre"
+        },
+        {
+          "time": "6:30 PM",
+          "class": "bootcamp",
+          "coach": "Marcus"
+        }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "sessions": [
+        {
+          "time": "5:00 AM",
+          "class": "boxing",
+          "coach": "Andre"
+        },
+        {
+          "time": "6:15 AM",
+          "class": "mobility-core",
+          "coach": "Tasha"
+        },
+        {
+          "time": "5:30 PM",
+          "class": "strength-lab",
+          "coach": "Tasha"
+        },
+        {
+          "time": "6:30 PM",
+          "class": "hiit-burn",
+          "coach": "Marcus"
+        }
+      ]
+    },
+    {
+      "day": "Friday",
+      "sessions": [
+        {
+          "time": "5:00 AM",
+          "class": "bootcamp",
+          "coach": "Marcus"
+        },
+        {
+          "time": "6:15 AM",
+          "class": "ride",
+          "coach": "Andre"
+        },
+        {
+          "time": "12:00 PM",
+          "class": "hiit-burn",
+          "coach": "Marcus"
+        },
+        {
+          "time": "5:30 PM",
+          "class": "boxing",
+          "coach": "Andre"
+        }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "sessions": [
+        {
+          "time": "8:00 AM",
+          "class": "bootcamp",
+          "coach": "Marcus"
+        },
+        {
+          "time": "9:15 AM",
+          "class": "ride",
+          "coach": "Andre"
+        },
+        {
+          "time": "10:30 AM",
+          "class": "mobility-core",
+          "coach": "Tasha"
+        }
+      ]
+    },
+    {
+      "day": "Sunday",
+      "sessions": [
+        {
+          "time": "9:00 AM",
+          "class": "strength-lab",
+          "coach": "Tasha"
+        }
+      ]
+    }
+  ],
+  "membership": {
+    "intro": "No contracts and no sign-up fee. Freeze or cancel any time with a month's notice.",
+    "tiers": [
+      {
+        "name": "Drop-In",
+        "price": 22,
+        "period": "class",
+        "text": "One class, any time on the schedule.",
+        "features": [
+          "Any class on the schedule",
+          "Good for visitors",
+          "Pay at the door"
+        ]
+      },
+      {
+        "name": "Unlimited",
+        "price": 139,
+        "period": "month",
+        "text": "Every class, every week, as often as you want.",
+        "features": [
+          "Unlimited classes",
+          "Open gym hours",
+          "A goal session with a coach each quarter",
+          "Bring a friend free once a month"
+        ],
+        "featured": true,
+        "badge": "Most popular"
+      },
+      {
+        "name": "8 Classes",
+        "price": 99,
+        "period": "month",
+        "text": "Two classes a week, for a steady routine.",
+        "features": [
+          "Eight classes a month",
+          "Book up to a week ahead",
+          "Unused classes roll over once"
+        ]
+      }
+    ],
+    "note": "Prices include tax. Student, first responder and military members get 15% off any monthly membership."
+  },
+  "coaches": [
+    {
+      "name": "Marcus Bell",
+      "role": "Head Coach",
+      "bio": "Marcus runs HIIT Burn and Bootcamp and writes the conditioning program. He spent eight years coaching high school football before opening Forge 146.",
+      "specialties": [
+        "Conditioning",
+        "Bootcamp",
+        "Beginners"
+      ],
+      "image": "/brands/sample-fitness/coach-marcus",
+      "imageAlt": "Marcus Bell in a black tank top"
+    },
+    {
+      "name": "Tasha Monroe",
+      "role": "Strength Coach",
+      "bio": "Tasha coaches Strength Lab and Mobility and Core. She competes in powerlifting and loves teaching the first deadlift.",
+      "specialties": [
+        "Barbell strength",
+        "Mobility",
+        "Form"
+      ],
+      "image": "/brands/sample-fitness/coach-tasha",
+      "imageAlt": "Tasha Monroe standing on the gym floor"
+    },
+    {
+      "name": "Andre Silva",
+      "role": "Boxing and Ride Coach",
+      "bio": "Andre teaches Boxing Conditioning and leads the Ride classes. Expect loud music and a lot of encouragement.",
+      "specialties": [
+        "Boxing",
+        "Indoor cycling"
+      ],
+      "image": "/brands/sample-fitness/coach-andre",
+      "imageAlt": "Andre Silva in the studio"
+    }
+  ],
+  "coachesIntro": "Every class is run by one of three coaches, and every one of them still trains on the same floor.",
+  "faq": [
+    {
+      "q": "I have never done a class like this. Can I keep up?",
+      "a": "Yes. Every movement has a scaled version, and the coach will show you which one to use. Plenty of members started with their first class here."
+    },
+    {
+      "q": "What should I bring?",
+      "a": "Training shoes, a water bottle and something you can move in. We have towels, and gloves and wraps for boxing."
+    },
+    {
+      "q": "How early should I arrive?",
+      "a": "Ten minutes before your first class, so a coach can show you around and set you up."
+    }
+  ],
+  "areas": [
+    "Baytown",
+    "Mont Belvieu",
+    "La Porte",
+    "Highlands",
+    "Crosby"
+  ],
+  "contactImage": "/brands/sample-fitness/floor",
+  "contactImageAlt": "A squat rack and barbells on the training floor",
+  "reviews": [
+    {
+      "author": "Member since 2021",
+      "text": "I was nervous walking into my first class and the coach checked on me the whole time. Two years later I still come four mornings a week."
+    },
+    {
+      "author": "Strength Lab regular",
+      "text": "They actually teach you how to lift. My deadlift has gone up every block and my back has never felt better."
+    },
+    {
+      "author": "5 AM crew",
+      "text": "The early class is the best part of my day. Hard workout, good people, and I am still at my desk by eight."
+    }
+  ]
+}
