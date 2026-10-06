@@ -42,5 +42,15 @@ third letter is due: two letters sent, the second at least five days ago. It rea
 `preview_candidates()`, oldest due first, writes the brand files here a batch at a time, lands them, and sends
 each letter through taylorurl.com's `/api/outreach/previews` once the site is live, so the third letter never goes
 without its site. Whatever one run cannot reach in its time is at the head of the next run's list. A business no
-site can be built for is recorded with `routine.py skip` and stops being offered. `*.taylorurl.com` points at this project, so a pushed brand file is
+site can be built for is recorded with `routine.py skip` and stops being offered.
+
+Most previews are built by a script rather than a session. `python3 -m scripts.autobuild.pipeline` reads the
+due list, builds each business's brand file and pictures from its own website and Google listing
+(`scripts/autobuild/`), and runs the checks before anything lands: required fields, the phone, address and
+rating against what was collected, reviews and about text word for word from their source, pictures that load
+and are not blank, tiny or another business's, no placeholder or other business's name, every page drawn by the
+server build, and the built home page opened at desktop and phone size with nothing wider than the screen and no
+empty section. A business that fails any check is parked on its prospect row with the reason, and only parked
+businesses are left to the session. `--dry` builds and checks without landing, registering or sending; `--send`
+sends the letters of the sites it proved live, no more in a day than the outreach machine's daily cap. `*.taylorurl.com` points at this project, so a pushed brand file is
 a live subdomain. `scripts/routine.py` is the database and mail half of that run.
