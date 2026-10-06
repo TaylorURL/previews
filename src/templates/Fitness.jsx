@@ -308,7 +308,6 @@ function Footer({ b, nav, ctx }) {
   const link = 'inline-flex min-h-11 items-center text-base text-ink no-underline hover:underline';
   return (
     <footer className="overflow-hidden border-t border-line bg-[color-mix(in_srgb,var(--bg)_70%,#000)] pb-28 md:pb-0">
-      <Facts b={b} />
       <div
         className={`${wrap} grid gap-10 pb-10 pt-16 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,0.8fr)_minmax(0,1fr)_minmax(0,1fr)] lg:gap-12 lg:pt-24`}
       >
@@ -379,14 +378,6 @@ function Footer({ b, nav, ctx }) {
                 </a>
               </li>
             )}
-            <li>
-              <a
-                href={ctx.trial.href}
-                className={`inline-flex min-h-11 items-center gap-2 text-base font-semibold no-underline hover:underline ${hot}`}
-              >
-                {ctx.trial.label} <ArrowRight size={16} aria-hidden="true" />
-              </a>
-            </li>
           </ul>
         </div>
       </div>
@@ -450,6 +441,7 @@ export default function Fitness({ b, path = '' }) {
     >
       <Header b={b} nav={nav} section={section} ctx={ctx} />
       <main>{page}</main>
+      {!path && <Facts b={b} />}
       <Footer b={b} nav={nav} ctx={ctx} />
 
       <div className="fixed inset-x-0 bottom-0 z-30 flex gap-2 border-t border-line bg-ground/95 px-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur-md md:hidden">

@@ -578,9 +578,8 @@ export default function RealEstate({ b }) {
         </section>
       </main>
 
+      <Facts b={b} />
       <footer className={`${deep} pb-28 pt-14 text-[15px] text-white/75 lg:pb-10 lg:pt-20`}>
-
-        <Facts b={b} />
         <div className={`${wrap} grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1.2fr_1.3fr] lg:gap-12`}>
           <div className="min-w-0">
             <a href="#top" className="inline-flex max-w-[240px] no-underline" aria-label={`${b.name} home`}>

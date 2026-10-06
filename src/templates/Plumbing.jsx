@@ -472,9 +472,8 @@ export default function Plumbing({ b }) {
         </div>
       </section>
 
+      <Facts b={b} />
       <footer className="bg-primary-deep pb-24 text-white/75 md:pb-0">
-
-        <Facts b={b} />
         <div className={`${wrap} grid gap-10 pb-12 pt-14 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:gap-12`}>
           <div className="grid content-start gap-4">
             {b.brand.logo ? (
@@ -491,7 +490,7 @@ export default function Plumbing({ b }) {
           <div>
             <h2 className="mb-4 text-[13px] font-bold uppercase tracking-[0.14em] text-accent">Services</h2>
             <ul className="-my-2.5 grid">
-              {b.services.slice(0, 6).map((s) => (
+              {b.services.slice(0, 4).map((s) => (
                 <li key={s.title}>
                   <a href="#services" className="flex min-h-[44px] items-center text-white/80 no-underline hover:text-white">
                     {s.title}

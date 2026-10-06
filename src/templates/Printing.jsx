@@ -109,7 +109,7 @@
  *     points      optional, [{ title, text }]
  *   }
  *
- *   serviceArea   optional, towns delivered to or served, shown on contact and in the footer
+ *   serviceArea   optional, towns delivered to or served, shown on the contact page
  *   reviews       optional, Google reviews [{ author, text, product? }], product being what they ordered
  */
 import { useEffect, useRef, useState } from 'react';
@@ -892,15 +892,13 @@ function QuoteBand({ b, tel }) {
   );
 }
 
-function Footer({ b, cats, tel }) {
+function Footer({ b, tel }) {
   const hours = list(b.hours);
-  const area = list(b.serviceArea);
   const heading = 'mb-4 font-heading text-[13px] font-semibold uppercase tracking-[0.16em] text-white/55';
   const link = 'flex min-h-[44px] items-center text-white/85 no-underline hover:text-accent';
   return (
     <footer className="bg-ink text-white/75">
-      <Facts b={b} />
-      <div className={`${wrap} grid gap-10 pb-12 pt-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_0.8fr_1.1fr] lg:gap-12`}>
+      <div className={`${wrap} grid gap-10 pb-12 pt-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_0.8fr_1.1fr] lg:gap-12`}>
         <div className="grid content-start gap-5">
           {b.brand.logo ? (
             <span className="inline-flex w-fit rounded-xl bg-white px-4 py-3">
@@ -913,19 +911,6 @@ function Footer({ b, cats, tel }) {
             A print shop in {b.town}, {b.state}
             {b.since ? `, since ${b.since}` : ''}.
           </p>
-          {area.length > 0 && <p className="max-w-sm text-[16px] lg:text-[15px] leading-[1.6] text-white/60">Serving {area.join(', ')}.</p>}
-        </div>
-        <div>
-          <h2 className={heading}>Products</h2>
-          <ul className="-my-1 grid">
-            {cats.map((c) => (
-              <li key={c.slug}>
-                <a href={`/products/${c.slug}`} className={link}>
-                  {c.title}
-                </a>
-              </li>
-            ))}
-          </ul>
         </div>
         <div>
           <h2 className={heading}>Shop</h2>
@@ -1610,7 +1595,8 @@ export default function Printing({ b, path = '' }) {
         {page === 'about' && <About b={b} tel={tel} />}
         {page === 'contact' && <Contact b={b} tel={tel} />}
       </main>
-      <Footer b={b} cats={cats} tel={tel} />
+      {!path && <Facts b={b} />}
+      <Footer b={b} tel={tel} />
     </div>
   );
 }
