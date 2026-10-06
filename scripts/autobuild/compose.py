@@ -121,14 +121,21 @@ def address_parts(prospect):
     return street, town or prospect.get("town"), state, zip_
 
 
+# Fewer reviews than this and the rating says little, so the page and the
+# letter leave it out rather than show it. It decides only what is shown: a
+# business with no reviews at all still gets its preview.
+RATING_SHOWN_FROM = 5
+
+
 def listing_rating(prospect):
-    """The rating and review count stored off the Google listing."""
+    """The rating and review count stored off the Google listing, or nothing
+    when there is none or too few to show."""
     try:
         rating = round(float(prospect.get("rating")), 1)
         count = int(prospect.get("rating_count"))
     except (TypeError, ValueError):
         return None, None
-    if rating <= 0 or count <= 0:
+    if rating <= 0 or count < RATING_SHOWN_FROM:
         return None, None
     return (int(rating) if rating == int(rating) else rating), count
 
