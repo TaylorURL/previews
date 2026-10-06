@@ -36,7 +36,8 @@ VOCAB = {
     "hvac": r"air condition|\bac\b|a/c|heating|furnace|heat pump|duct|indoor air|air quality|thermostat|electrical|wiring|panel|generator|maintenance|installation|repair|refrigeration|commercial|residential|mini.?split|ventilation|cooling|plumbing",
     "insurance": r"insurance|auto|home|homeowner|life|business|commercial|flood|health|renters|umbrella|bond|workers|motorcycle|boat|landlord|liability|medicare|annuit",
     "accounting": r"tax|bookkeeping|payroll|audit|advisory|planning|accounting|irs|consult|quickbooks|cfo|estate|financial statement|business formation|compilation|review",
-    "title": r"title|closing|escrow|refinanc|residential|commercial|1031|policy|search|notary|transaction",
+    # A bare "title" names every company in the trade, so only the services do.
+    "title": r"title (?:insurance|search|polic|commitment|exam|transfer)|closing|escrow|refinanc|residential|commercial|1031|owner'?s polic|lender'?s polic|notary|curative",
 }
 
 ICONS = {
@@ -50,8 +51,34 @@ ICONS = {
 
 SINCE = re.compile(r"\b(?:since|established|founded|est\.?|serving [^.]{0,40} since)\s+((?:19|20)\d\d)\b", re.I)
 LICENSE = re.compile(r"\b((?:TDLR|TACLA|TECL|TDI|NPN|License|Lic\.)\s*(?:No\.?|#|Number)\s*:?\s*[A-Z]{0,6}-?\d[\w-]{3,})", re.I)
-NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how to|why|what|when|your|schedule|consult|estimator|calculator|types of|our |blog|news|faq|cost|price|pricing|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award)\b", re.I)
+NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how to|why|what|when|your|schedule|consult|consultation|request|checklist|estimator|calculator|types of|our |blog|news|faq|cost|price|pricing|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|office|branch|powered|serving|products|vice president|vp|agents?|industry|page|companies|finance a)\b", re.I)
 ACRONYMS = {"IRS", "CFO", "CPA", "CPAS", "HVAC", "AC", "A/C", "TPO", "LLC", "QB", "EPDM", "UV", "HOA", "1031", "S-CORP"}
+# A business's own name, or anything carrying a corporate suffix, is never
+# one of its services.
+CORPORATE = re.compile(r"\b(llc|l\.l\.c|inc|incorporated|corp|corporation|ltd|pllc|co|company)\b", re.I)
+# A numbered step, an emoji or a trademark sign, a page aimed at a town
+# ("... Houston, TX", "... in Pasadena"), and a product's one-word brand name
+# ("ClosingLock") are headings on their site, not services they sell.
+NOT_A_SERVICE_SHAPE = re.compile(r"^\d+\.\s|[^\w\s&'\u2019,./()\-\u2013+]|,\s*[A-Za-z]{2}$|\b(?i:tx|texas)$|\bin [A-Z][a-z]|^[A-Z][a-z]+[A-Z]\w*$")
+NAME_FILLER = {"the", "llc", "inc", "co", "company", "corp", "ltd", "pllc", "agency", "group"}
+
+
+def bare_name(text):
+    words = re.sub(r"[^a-z0-9 ]", " ", (text or "").lower()).split()
+    return " ".join(w for w in words if w not in NAME_FILLER)
+
+
+def names_the_business(title, own):
+    """True when a heading is the business's own name or carries it."""
+    if CORPORATE.search(title):
+        return True
+    own = bare_name(own).split()
+    if not own:
+        return False
+    lead = " ".join(own[:2])
+    return f" {lead} " in f" {bare_name(title)} " and (len(own) > 1 or len(lead) >= 4)
+
+
 GENERIC_NAV = re.compile(r"^(home|about( us)?|contact( us)?|services|our services|blog|faq|reviews|gallery|careers|menu|get a quote|request a quote|free estimate|call now|learn more|read more|more|portal|login|pay online|resources|team|our team|testimonials)$", re.I)
 
 FONTS = [
@@ -204,9 +231,12 @@ def page_text(pages):
     return "\n".join(t for p in pages for _, t, _ in p.blocks)
 
 
-def services_of(pages, vocab):
+def services_of(pages, vocab, own=None, town=None):
     """Their own service names, with their own description where the site gives one."""
     pattern = re.compile(vocab, re.I)
+    # "Houston Bookkeeping" and "Tax Preparation (Houston)" are pages written
+    # for a search engine; the service under them is listed on its own.
+    local = re.compile(rf"\b{re.escape(town)}\b", re.I) if town else None
     found = {}
     order = []
 
@@ -215,6 +245,8 @@ def services_of(pages, vocab):
         if not (3 <= len(name) <= 42) or len(name.split()) > 6 or GENERIC_NAV.match(name):
             return
         if not pattern.search(name) or re.search(r"[?!@]|\d{3}", name) or NOT_A_SERVICE.search(name) or re.match(r"(on|for|with|to|in|at|from|and)\b", name, re.I):
+            return
+        if NOT_A_SERVICE_SHAPE.search(name) or (own and names_the_business(name, own)) or (local and local.search(name)):
             return
 
         key = re.sub(r"[^a-z0-9 ]", "", name.lower())
