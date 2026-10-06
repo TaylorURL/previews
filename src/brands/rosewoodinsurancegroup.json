@@ -28,7 +28,7 @@
   },
   "hero": {
     "eyebrow": "Insurance in Friendswood",
-    "title": "Insurance solutions and personal insurance in Friendswood from Rosewood Insurance Group",
+    "title": "Personal insurance and flood in Friendswood from Rosewood Insurance Group",
     "lead": "At Rosewood Insurance Group, we take time to listen first. Let's find insurance protection for your personal and business needs today.",
     "image": "/brands/rosewoodinsurancegroup/photo1",
     "imageAlt": "A photo of Rosewood Insurance Group"
@@ -38,12 +38,6 @@
   ],
   "kind": "insurance",
   "services": [
-    {
-      "slug": "insurance-solutions",
-      "title": "Insurance Solutions",
-      "summary": "Insurance Solutions",
-      "text": ""
-    },
     {
       "slug": "personal-insurance",
       "title": "Personal Insurance",
@@ -71,21 +65,30 @@
       "icon": "house"
     },
     {
-      "slug": "insurance-by-industry",
-      "title": "Insurance by Industry",
-      "summary": "Insurance by Industry",
-      "text": ""
-    },
-    {
-      "slug": "insurance-agent",
-      "title": "Insurance Agent",
-      "summary": "Insurance Agent",
-      "text": ""
-    },
-    {
       "slug": "business-insurance",
       "title": "Business Insurance",
       "summary": "Business Insurance",
+      "text": "",
+      "icon": "briefcase"
+    },
+    {
+      "slug": "errors-and-omissions-liability",
+      "title": "Errors and Omissions Liability",
+      "summary": "Errors and Omissions Liability",
+      "text": "",
+      "icon": "briefcase"
+    },
+    {
+      "slug": "commercial-property",
+      "title": "Commercial Property",
+      "summary": "Commercial Property",
+      "text": "",
+      "icon": "briefcase"
+    },
+    {
+      "slug": "general-liability",
+      "title": "General Liability",
+      "summary": "General Liability",
       "text": "",
       "icon": "briefcase"
     }

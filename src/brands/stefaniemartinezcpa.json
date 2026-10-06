@@ -9,8 +9,6 @@
   "town": "Houston",
   "state": "TX",
   "zip": "77062",
-  "rating": 5,
-  "reviewCount": 4,
   "brand": {
     "primary": "#008180",
     "primaryDeep": "#005a5a",
@@ -28,7 +26,7 @@
   },
   "hero": {
     "eyebrow": "Accounting and tax in Houston",
-    "title": "Legacy and estate and irs tax payments in Houston from Stefanie Martinez CPA",
+    "title": "Legacy and estate and tax services in Houston from Stefanie Martinez CPA",
     "lead": "A trusted CPA firm providing modern and personalized services to help our clients reach their financial and business goals through tax and business strategies",
     "image": "/brands/stefaniemartinezcpa/photo1",
     "imageAlt": "A photo of Stefanie Martinez CPA"
@@ -46,25 +44,6 @@
       "slug": "legacy-and-estate",
       "title": "Legacy and Estate",
       "summary": "Legacy and Estate",
-      "text": ""
-    },
-    {
-      "slug": "irs-tax-payments",
-      "title": "IRS Tax Payments",
-      "summary": "IRS Tax Payments",
-      "text": "",
-      "icon": "calculator"
-    },
-    {
-      "slug": "irs-glossary",
-      "title": "IRS Glossary",
-      "summary": "IRS Glossary",
-      "text": ""
-    },
-    {
-      "slug": "irs-forms",
-      "title": "IRS Forms",
-      "summary": "IRS Forms",
       "text": ""
     },
     {
@@ -97,6 +76,28 @@
       "summary": "Accounting and Bookkeeping",
       "text": "",
       "lead": "Monthly, quarterly, or annual accounting and bookkeeping (on site options available), payroll tax deposits, financial statement preparation and analysis, strategic planning",
+      "icon": "calculator"
+    },
+    {
+      "slug": "contract-controller-cfo",
+      "title": "Contract Controller/CFO",
+      "summary": "Contract Controller/CFO",
+      "text": "",
+      "lead": "Audit and review consulting, business startup, entity selection and restructuring, financial and retirement planning, financial projections and budget, strategic planning, and full accounting support"
+    },
+    {
+      "slug": "quickbooks-setup-training",
+      "title": "QuickBooks Setup/Training",
+      "summary": "QuickBooks Setup/Training",
+      "text": "Set up of accounts, vendors and customers, recording daily activities, bank feeds and reconciliations, payroll, and QuickBooks accounting and report review",
+      "lead": "Set up of accounts, vendors and customers, recording daily activities, bank feeds and reconciliations, payroll, and QuickBooks accounting and report review"
+    },
+    {
+      "slug": "tax-manager",
+      "title": "Tax Manager",
+      "summary": "Tax Manager",
+      "text": "This position is responsible for performing complex tax preparation and review, tax research, and tax planning with minimal supervision.",
+      "lead": "This position is responsible for performing complex tax preparation and review, tax research, and tax planning with minimal supervision.",
       "icon": "calculator"
     }
   ],

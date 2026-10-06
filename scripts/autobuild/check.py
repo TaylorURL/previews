@@ -12,7 +12,7 @@ import re
 
 from PIL import Image
 
-from . import images
+from . import compose, images
 
 REQUIRED = {
     "professional": ["name", "shortName", "phone", "email", "address", "town", "state", "brand", "hero", "services", "about"],
@@ -98,6 +98,12 @@ def words(brand, root, slug):
     if hit:
         problems.append(f"placeholder text: {hit.group(0)}")
     own = brand["name"].lower()
+    for item in brand.get("services") or brand.get("groups") or []:
+        title = item.get("title") or ""
+        if compose.names_the_business(title, brand["name"]):
+            problems.append(f"lists the business's own name as a service: {title}")
+        elif compose.NOT_A_SERVICE_SHAPE.search(title) or re.search(r"\b(privacy|terms|glossary)\b", title, re.I):
+            problems.append(f"lists a heading that is not a service: {title}")
     for path in glob.glob(os.path.join(root, "src", "brands", "*.json")):
         other_slug = os.path.basename(path)[:-5]
         if other_slug == slug:
