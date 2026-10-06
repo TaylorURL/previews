@@ -34,7 +34,7 @@ from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 from .__main__ import ROOT, render
-from .build import Parked, build
+from .build import Parked, Transient, build
 from .check import all_checks
 from .compose import AUTOMATED
 from .letter import letter_for
@@ -108,6 +108,12 @@ def build_batch(rows):
         try:
             brand, evidence = build(row, ROOT, slug)
             problems = all_checks(brand, evidence, ROOT, slug)
+        except Transient as reason:
+            # Not the business's fault: it stays due, unparked, for the next
+            # run, and so does everything behind it.
+            discard(slug)
+            log("stopped", slug, str(reason))
+            raise
         except Parked as reason:
             problems, brand = [str(reason)], None
         except Exception as error:
@@ -259,7 +265,12 @@ def main(argv):
     while rows and time.time() < deadline() - reserve:
         batch, rows = rows[:args.batch], rows[args.batch:]
         n += 1
-        passed, parked = build_batch(batch)
+        try:
+            passed, parked = build_batch(batch)
+        except Transient as reason:
+            report["notes"].append(f"stopped early: {reason}; the rest stays due for the next run")
+            rows = batch + rows
+            break
         report["parked"] += [{"slug": p["slug"], "name": p["row"]["name"], "why": "; ".join(p["problems"])} for p in parked]
         if args.dry:
             report["built"] += [p["slug"] for p in passed]
