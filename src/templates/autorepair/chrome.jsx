@@ -1,4 +1,3 @@
-import { Facts } from '../shared.jsx';
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, ChevronDown, Mail, MapPin, Menu, Phone, X } from 'lucide-react';
 import { mapsHref } from '../../site.js';
@@ -361,7 +360,6 @@ export function Footer({ b, tel, today }) {
 
   return (
     <footer id="visit" className="scroll-mt-28 bg-panel pb-[72px] text-white md:pb-0">
-      <Facts b={b} />
       <div className="grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)]">
         <div className={`px-gutter py-[clamp(3.5rem,7vw,5.5rem)] lg:pr-14 ${edgeLlg}`}>
           <Eyebrow dark>Shop hours</Eyebrow>
@@ -435,7 +433,7 @@ export function Footer({ b, tel, today }) {
       </div>
 
       <div className="border-t border-white/10">
-        <div className={`${wrap} grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr]`}>
+        <div className={`${wrap} grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr]`}>
           <div className="min-w-0">
             <span className="inline-flex bg-white px-4 py-3 [clip-path:polygon(0_0,100%_0,calc(100%_-_12px)_100%,0_100%)] pr-8">
               <Mark b={b} className="h-10 max-w-[220px]" />
@@ -445,18 +443,6 @@ export function Footer({ b, tel, today }) {
               {b.since ? `, since ${b.since}` : ''}.
             </p>
           </div>
-          <nav aria-label="Services">
-            <h2 className="mb-3 text-[13px] font-bold uppercase tracking-[0.14em] text-[color:var(--primary-lit)]">Services</h2>
-            <ul>
-              {b.services.map((s) => (
-                <li key={s.slug}>
-                  <a href={href(`services/${s.slug}`)} className="flex min-h-[44px] items-center text-white/80 no-underline hover:text-white">
-                    {s.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
           <nav aria-label="Shop">
             <h2 className="mb-3 text-[13px] font-bold uppercase tracking-[0.14em] text-[color:var(--primary-lit)]">Shop</h2>
             <ul>
@@ -469,18 +455,6 @@ export function Footer({ b, tel, today }) {
               ))}
             </ul>
           </nav>
-          {b.serviceArea?.length > 0 && (
-            <div>
-              <h2 className="mb-3 text-[13px] font-bold uppercase tracking-[0.14em] text-[color:var(--primary-lit)]">Serving</h2>
-              <ul className="grid gap-2 pt-2 text-white/80">
-                {b.serviceArea.map((t) => (
-                  <li key={t} className="flex items-center gap-2">
-                    <MapPin size={14} className="flex-none text-white/45" aria-hidden="true" /> {t}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
         </div>
         <div className={wrap}>
           <p className="border-t border-white/10 py-6 text-[14px] text-white/55">

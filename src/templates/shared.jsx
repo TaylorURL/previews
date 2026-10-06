@@ -118,8 +118,9 @@ export function EnquiryForm({ b, fields, submitLabel, styles }) {
  *     { "heading": "Payment", "text": "Cash, card and financing through ..." }
  *   ]
  *
- * It sits at the top of the footer on every page and takes the footer's own
- * colors, so it reads as part of whichever template draws it.
+ * It is a section of its own on the home page, just above the footer, in the
+ * page's own colors. The footer stays the short list a local business needs:
+ * name, contact, hours, a few links and the copyright line.
  */
 export function Facts({ b }) {
   const facts = (b.facts ?? []).filter((fact) => fact?.heading && (fact.text || fact.items?.length));
@@ -127,7 +128,7 @@ export function Facts({ b }) {
   const rule = { borderColor: 'color-mix(in srgb, currentColor 18%, transparent)' };
   return (
     <section aria-label={`About ${b.name}`} className="mx-auto w-full max-w-7xl px-5 sm:px-8">
-      <div className="grid gap-x-10 gap-y-7 border-b py-10 sm:grid-cols-2 lg:grid-cols-3" style={rule}>
+      <div className="grid gap-x-10 gap-y-7 border-t py-12 sm:grid-cols-2 lg:grid-cols-3" style={rule}>
         {facts.map((fact) => (
           <div key={fact.heading} className="min-w-0">
             <h2 className="font-heading text-[17px] font-semibold opacity-100">{fact.heading}</h2>

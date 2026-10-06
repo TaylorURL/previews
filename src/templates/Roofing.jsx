@@ -1074,16 +1074,11 @@ function CtaBand({ b, tel }) {
 }
 
 function Footer({ b, tel }) {
-  const services = servicesOf(b);
-  const columns = GROUPS.map(([key, label]) => [label, services.filter((s) => groupOf(s) === key)]).filter(
-    ([, items]) => items.length,
-  );
   const head = 'mb-4 font-heading text-[14px] font-semibold uppercase tracking-[0.16em] text-accent';
   const linkCls = 'flex min-h-[44px] items-center text-white/80 no-underline hover:text-white';
   return (
     <footer className={`bg-ink pb-24 text-white/75 md:pb-0 ${topClip} pt-[calc(clamp(28px,5vw,88px)+3.5rem)]`}>
-      <Facts b={b} />
-      <div className={`${wrap} grid gap-10 pb-12 sm:grid-cols-2 lg:grid-cols-[1.25fr_1fr_0.9fr_1.25fr] lg:gap-12`}>
+      <div className={`${wrap} grid gap-10 pb-12 sm:grid-cols-2 lg:grid-cols-[1.25fr_0.9fr_1.25fr] lg:gap-12`}>
         <div className="grid content-start gap-5">
           {b.brand.logo ? (
             <span className="inline-flex w-fit bg-white px-4 py-3">
@@ -1103,31 +1098,14 @@ function Footer({ b, tel }) {
           )}
         </div>
         <div>
-          <h2 className={head}>Services</h2>
-          {columns.map(([label, items]) => (
-            <ul key={label} className="mb-3 grid">
-              {items.map((s) => (
-                <li key={s.slug}>
-                  <a href={`/services/${s.slug}`} className={linkCls}>
-                    {s.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          ))}
-        </div>
-        <div>
           <h2 className={head}>Company</h2>
           <ul className="grid">
             {[
               ['/services', 'All Services'],
               ['/service-areas', 'Service Areas'],
-              list(b.projects).length > 0 && ['/#projects', 'Projects'],
               ['/about', 'About'],
               ['/contact', 'Contact'],
-            ]
-              .filter(Boolean)
-              .map(([href, label]) => (
+            ].map(([href, label]) => (
                 <li key={href}>
                   <a href={href} className={linkCls}>
                     {label}
@@ -1647,6 +1625,7 @@ export default function Roofing({ b, path = '' }) {
       <UtilityBar b={b} tel={tel} />
       <Header b={b} tel={tel} />
       <main>{page}</main>
+      {!path && <Facts b={b} />}
       <Footer b={b} tel={tel} />
       <div
         className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 bg-ink md:hidden"

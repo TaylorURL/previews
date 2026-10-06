@@ -13,7 +13,7 @@
  *   name         (req) Full business name, used in the footer and the title
  *   shortName    (req) The name as people say it; used in copy and buttons
  *   summary      (req) One sentence on what the business does and where. Shown
- *                      under the home services heading and in the footer
+ *                      under the home services heading
  *   phone        (req) "(281) 555-0187"
  *   email              Shown on the contact page and in the footer
  *   address      (req) Street line, "4810 Garth Rd, Suite 6"
@@ -808,19 +808,14 @@ function CtaPair({ b, tel, className = '' }) {
 function Footer({ b, groups, tel }) {
   const licenses = list(b.licenses);
   const hours = list(b.hours);
-  const company = [b.plan?.tiers?.length && ['/maintenance-plan', 'Maintenance Plan'], b.about && ['/about', 'About'], ['/contact', 'Contact']].filter(
-    Boolean,
-  );
   const head = 'mb-3 font-heading text-[13px] font-bold uppercase tracking-[0.14em] text-ink';
   return (
     <footer className="border-t border-line bg-surface pb-28 text-[16px] md:text-[15px] text-muted md:pb-0">
-      <Facts b={b} />
-      <div className={`${wrap} grid grid-cols-2 gap-x-6 gap-y-10 pb-12 pt-14 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr] lg:gap-12`}>
+      <div className={`${wrap} grid grid-cols-2 gap-x-6 gap-y-10 pb-12 pt-14 lg:grid-cols-[1.4fr_1fr_1.2fr] lg:gap-12`}>
         <div className="col-span-2 grid content-start gap-4 lg:col-span-1">
           <a href="/" className="flex min-h-[44px] w-fit max-w-full items-center" aria-label={`${b.name} home`}>
             <Mark b={b} className="h-12" />
           </a>
-          <p className="max-w-xs leading-[1.6]">{b.summary}</p>
           {licenses.length > 0 && (
             <ul className="grid gap-1 text-[14px]">
               {licenses.map((l) => (
@@ -837,22 +832,10 @@ function Footer({ b, groups, tel }) {
         <div>
           <h2 className={head}>Services</h2>
           <ul className="grid">
-            {groups.map((g) => (
+            {groups.slice(0, 4).map((g) => (
               <li key={g.slug}>
                 <a href={`/${g.slug}`} className="flex min-h-[44px] items-center text-muted no-underline hover:text-[color:var(--pt)]">
                   {g.title}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <h2 className={head}>Company</h2>
-          <ul className="grid">
-            {company.map(([href, label]) => (
-              <li key={href}>
-                <a href={href} className="flex min-h-[44px] items-center text-muted no-underline hover:text-[color:var(--pt)]">
-                  {label}
                 </a>
               </li>
             ))}
@@ -1523,6 +1506,7 @@ export default function Hvac({ b, path = '' }) {
         {page === 'about' && <AboutPage b={b} tel={tel} />}
         {page === 'contact' && <ContactPage b={b} groups={groups} tel={tel} />}
       </main>
+      {!path && <Facts b={b} />}
       <Footer b={b} groups={groups} tel={tel} />
       <MobileBar b={b} tel={tel} />
     </div>

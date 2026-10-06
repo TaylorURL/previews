@@ -471,9 +471,8 @@ export default function Barber({ b }) {
         />
       </section>
 
+      <Facts b={b} />
       <footer className="border-t border-line bg-panel">
-
-        <Facts b={b} />
         <div
           className={`${wrap} grid gap-10 pb-10 pt-14 sm:grid-cols-2 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,0.8fr)_minmax(0,1.1fr)_minmax(0,1.1fr)] lg:gap-12 lg:pt-20`}
         >

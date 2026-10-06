@@ -1148,16 +1148,13 @@ function ContactPage(props) {
 
 /* ------------------------------------------------------------------ footer */
 
-function Footer({ b, groups, nav, tel }) {
+function Footer({ b, nav, tel }) {
   const hours = list(b.hours);
   const linkCls = 'inline-flex min-h-11 min-w-11 items-center text-muted no-underline hover:text-primary';
   return (
     <footer className="border-t border-line bg-surface text-base">
-      <Facts b={b} />
       <div
-        className={`${wrap} grid gap-10 pb-10 pt-14 sm:grid-cols-2 lg:gap-10 lg:pt-20 ${
-          groups.length > 1 ? 'lg:grid-cols-[1.4fr_repeat(4,minmax(0,1fr))]' : 'lg:grid-cols-[1.4fr_repeat(3,minmax(0,1fr))]'
-        }`}
+        className={`${wrap} grid gap-10 pb-10 pt-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_repeat(2,minmax(0,1fr))] lg:gap-10 lg:pt-20`}
       >
         <div className="min-w-0 sm:col-span-2 lg:col-span-1">
           <a href="/" className="inline-flex min-h-11 max-w-[240px] items-center no-underline" aria-label={`${b.name} home`}>
@@ -1170,20 +1167,6 @@ function Footer({ b, groups, nav, tel }) {
             {b.town}, {b.state} {b.zip}
           </p>
         </div>
-        {groups.map((g) => (
-          <nav key={g.key} aria-label={g.label || 'Services'} className="min-w-0">
-            <h2 className="mb-3 text-[13px] font-bold uppercase tracking-[0.16em] text-ink">{g.label || 'Services'}</h2>
-            <ul>
-              {g.items.map((s) => (
-                <li key={s.slug}>
-                  <a href={`/services/${s.slug}`} className={linkCls}>
-                    {s.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        ))}
         <nav aria-label="Footer" className="min-w-0">
           <h2 className="mb-3 text-[13px] font-bold uppercase tracking-[0.16em] text-ink">{b.shortName}</h2>
           <ul>
@@ -1259,6 +1242,7 @@ export default function Professional({ b, path = '' }) {
       <TopBar b={b} tel={tel} />
       <Header {...props} />
       <main>{page}</main>
+      {!path && <Facts b={b} />}
       <Footer {...props} />
     </div>
   );

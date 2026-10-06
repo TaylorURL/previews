@@ -375,7 +375,6 @@ export default function Salon({ b, path = '' }) {
 
   const footer = (
     <footer className="bg-panel">
-      <Facts b={b} />
       <div className={`${wrap} grid justify-items-center gap-8 pb-10 pt-[clamp(4rem,8vw,6rem)] text-center`}>
         <a href={page ? '/' : '#top'} className="no-underline" aria-label={`${b.name} home`}>
           <Wordmark b={b} size="footer" />
@@ -479,6 +478,7 @@ export default function Salon({ b, path = '' }) {
           />
         )}
       </main>
+      {!path && <Facts b={b} />}
       {footer}
       {bar}
     </div>
