@@ -21,7 +21,11 @@ function brandBoot() {
           plumbing: '(max-width: 1024px) 100vw, 50vw',
           barber: '(max-width: 768px) 100vw, 45vw',
           realestate: '100vw',
-        }[brand.template];
+          hvac: '(max-width: 1024px) 100vw, 50vw',
+          autorepair: '(max-width: 1024px) 100vw, 50vw',
+          professional: '(max-width: 1024px) 100vw, 50vw',
+          salon: '(max-width: 768px) 100vw, 45vw',
+        }[brand.template] ?? '100vw';
         map[file.replace(/\.json$/, '')] = { hero: srcset, sizes, fonts: brand.brand.fonts, title: brand.name };
       }
       return html.replace('__BRANDS__', JSON.stringify(map));
