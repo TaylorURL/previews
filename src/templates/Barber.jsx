@@ -26,6 +26,10 @@ const NAV = [
   ['#visit', 'Visit'],
 ];
 
+/** Reviews quoted on the page; a business with none has no reviews section and no link to one. */
+const reviewsOf = (b) => (Array.isArray(b.reviews) ? b.reviews : []);
+const navOf = (b) => NAV.filter(([href]) => href !== '#reviews' || reviewsOf(b).length > 0);
+
 function HoursTable({ hours, className = '' }) {
   return (
     <table className={`w-full border-collapse ${className}`}>
@@ -46,6 +50,7 @@ export default function Barber({ b }) {
   const tel = telHref(b.phone);
   const directions = mapsHref(b);
   const rating = ratingLine(b);
+  const reviews = reviewsOf(b);
   const names = b.menu.flatMap((g) => g.items.map((i) => i.name));
   const stick = b.preview ? 'top-11' : 'top-0';
   const city = `${b.town}, ${b.state}${b.zip ? ` ${b.zip}` : ''}`;
@@ -141,7 +146,7 @@ export default function Barber({ b }) {
             </span>
           </a>
           <nav aria-label="Main" className="mx-auto hidden gap-9 lg:flex">
-            {NAV.map(([href, text]) => (
+            {navOf(b).map(([href, text]) => (
               <a
                 key={href}
                 href={href}
@@ -186,7 +191,7 @@ export default function Barber({ b }) {
           className={`absolute inset-x-0 top-full max-h-[calc(100dvh-160px)] overflow-y-auto border-b border-line bg-ground lg:hidden`}
         >
           <nav aria-label="Mobile" className={`${wrap} pt-2`}>
-            {NAV.map(([href, text]) => (
+            {navOf(b).map(([href, text]) => (
               <a
                 key={href}
                 href={href}
@@ -392,45 +397,47 @@ export default function Barber({ b }) {
         </div>
       </section>
 
-      <section id="reviews" className={`border-t border-line ${anchor}`}>
-        <div className={`${wrap} ${pad} grid gap-x-16 gap-y-10 lg:grid-cols-[minmax(0,300px)_minmax(0,1fr)]`}>
-          <div>
-            <p className={eyebrow}>From the chair</p>
-            {rating ? (
-              <div className="flex flex-wrap items-center gap-x-5 gap-y-3 lg:block">
-                <p className="m-0 font-heading text-[clamp(4rem,3rem+5vw,7.5rem)] leading-none">
-                  {Number(b.rating).toFixed(1)}
-                </p>
-                <div className="grid gap-2 lg:mt-4">
-                  <Stars value={b.rating} size={20} />
-                  <p className="m-0 text-base text-muted">From {b.reviewCount.toLocaleString()} Google reviews</p>
+      {reviews.length > 0 && (
+        <section id="reviews" className={`border-t border-line ${anchor}`}>
+          <div className={`${wrap} ${pad} grid gap-x-16 gap-y-10 lg:grid-cols-[minmax(0,300px)_minmax(0,1fr)]`}>
+            <div>
+              <p className={eyebrow}>From the chair</p>
+              {rating ? (
+                <div className="flex flex-wrap items-center gap-x-5 gap-y-3 lg:block">
+                  <p className="m-0 font-heading text-[clamp(4rem,3rem+5vw,7.5rem)] leading-none">
+                    {Number(b.rating).toFixed(1)}
+                  </p>
+                  <div className="grid gap-2 lg:mt-4">
+                    <Stars value={b.rating} size={20} />
+                    <p className="m-0 text-base text-muted">From {b.reviewCount.toLocaleString()} Google reviews</p>
+                  </div>
                 </div>
-              </div>
-            ) : (
-              <h2 className={h2}>What clients say</h2>
-            )}
-          </div>
-          <div className="grid gap-4 md:grid-cols-2 lg:gap-5">
-            {b.reviews.map((r, i) => (
-              <figure
-                key={r.author}
-                className={`m-0 flex flex-col border p-6 sm:p-8 ${
-                  i === 0 ? `border-primary bg-primary md:col-span-2 ${onPrimary}` : 'border-line bg-panel'
-                }`}
-              >
-                <blockquote
-                  className={`m-0 mb-6 font-heading leading-snug ${i === 0 ? 'text-[1.35rem] sm:text-[1.65rem]' : 'text-[1.2rem] sm:text-xl'}`}
+              ) : (
+                <h2 className={h2}>What clients say</h2>
+              )}
+            </div>
+            <div className="grid gap-4 md:grid-cols-2 lg:gap-5">
+              {reviews.map((r, i) => (
+                <figure
+                  key={r.author}
+                  className={`m-0 flex flex-col border p-6 sm:p-8 ${
+                    i === 0 ? `border-primary bg-primary md:col-span-2 ${onPrimary}` : 'border-line bg-panel'
+                  }`}
                 >
-                  &ldquo;{r.text}&rdquo;
-                </blockquote>
-                <figcaption className="mt-auto text-xs font-medium uppercase tracking-[0.16em] opacity-80">
-                  {r.author}
-                </figcaption>
-              </figure>
-            ))}
+                  <blockquote
+                    className={`m-0 mb-6 font-heading leading-snug ${i === 0 ? 'text-[1.35rem] sm:text-[1.65rem]' : 'text-[1.2rem] sm:text-xl'}`}
+                  >
+                    &ldquo;{r.text}&rdquo;
+                  </blockquote>
+                  <figcaption className="mt-auto text-xs font-medium uppercase tracking-[0.16em] opacity-80">
+                    {r.author}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <section id="visit" className={`grid border-t border-line md:grid-cols-2 ${anchor}`}>
         <div className="w-full min-w-0 px-gutter py-[clamp(4rem,8vw,7rem)] md:max-w-[660px] md:justify-self-end">
@@ -490,7 +497,7 @@ export default function Barber({ b }) {
           <div>
             <p className={`${label} mb-3`}>Index</p>
             <ul className="m-0 grid list-none p-0">
-              {NAV.map(([href, text]) => (
+              {navOf(b).map(([href, text]) => (
                 <li key={href}>
                   <a
                     href={href}

@@ -248,9 +248,9 @@ export default function Salon({ b, path = '' }) {
     gallery.length && [home('#gallery'), 'Gallery'],
   ].filter(Boolean);
   const right = [
-    [home('#reviews'), 'Reviews'],
+    Array.isArray(b.reviews) && b.reviews.length > 0 && [home('#reviews'), 'Reviews'],
     [home('#visit'), 'Visit'],
-  ];
+  ].filter(Boolean);
   const nav = [...left, ...right];
 
   useEffect(() => {
@@ -486,7 +486,9 @@ export default function Salon({ b, path = '' }) {
 }
 
 function Home({ b, anchor, ctas, rating, extras, gallery, menuPage, stylistPage, tel, city, directions }) {
-  const [quote, ...rest] = b.reviews;
+  // A business with no reviews quoted has no reviews section; its rating, when
+  // it has one, still shows under the hero.
+  const [quote, ...rest] = Array.isArray(b.reviews) ? b.reviews : [];
   const others = rest.slice(0, 4);
   const ig = b.social?.instagram;
 
@@ -506,7 +508,7 @@ function Home({ b, anchor, ctas, rating, extras, gallery, menuPage, stylistPage,
           {ctas()}
           {rating && (
             <a
-              href="#reviews"
+              href={quote ? '#reviews' : undefined}
               className="mt-8 inline-flex min-h-11 flex-wrap items-center gap-x-3 gap-y-1 text-base text-muted no-underline hover:text-ink"
             >
               <Stars value={b.rating} size={16} />
@@ -665,36 +667,38 @@ function Home({ b, anchor, ctas, rating, extras, gallery, menuPage, stylistPage,
         </section>
       )}
 
-      <section id="reviews" className={`border-t border-line ${pad} ${anchor}`}>
-        <div className={wrap}>
-          <figure className="m-0 mx-auto max-w-[62rem] text-center">
-            <span aria-hidden="true" className="block font-heading text-[5rem] leading-[0.6] text-accent sm:text-[7rem]">
-              &ldquo;
-            </span>
-            <blockquote className="m-0 mt-4 font-heading text-[clamp(1.55rem,1rem+2.1vw,2.7rem)] italic leading-[1.3] [text-wrap:balance]">
-              {quote.text}
-            </blockquote>
-            <figcaption className="mt-8 grid justify-items-center gap-3">
-              <span className={small}>{quote.author}</span>
-              {rating && (
-                <span className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-base text-muted">
-                  <Stars value={b.rating} size={16} /> {rating}
-                </span>
-              )}
-            </figcaption>
-          </figure>
-          {others.length > 0 && (
-            <div className={`mx-auto mt-[clamp(3.5rem,7vw,5.5rem)] grid max-w-[62rem] gap-x-12 gap-y-8 ${others.length > 1 ? 'md:grid-cols-2' : ''}`}>
-              {others.map((r) => (
-                <figure key={r.author + r.text.slice(0, 12)} className="m-0 border-t border-line pt-7">
-                  <blockquote className="m-0 text-lg leading-relaxed">&ldquo;{r.text}&rdquo;</blockquote>
-                  <figcaption className={`${small} mt-4`}>{r.author}</figcaption>
-                </figure>
-              ))}
-            </div>
-          )}
-        </div>
-      </section>
+      {quote && (
+        <section id="reviews" className={`border-t border-line ${pad} ${anchor}`}>
+          <div className={wrap}>
+            <figure className="m-0 mx-auto max-w-[62rem] text-center">
+              <span aria-hidden="true" className="block font-heading text-[5rem] leading-[0.6] text-accent sm:text-[7rem]">
+                &ldquo;
+              </span>
+              <blockquote className="m-0 mt-4 font-heading text-[clamp(1.55rem,1rem+2.1vw,2.7rem)] italic leading-[1.3] [text-wrap:balance]">
+                {quote.text}
+              </blockquote>
+              <figcaption className="mt-8 grid justify-items-center gap-3">
+                <span className={small}>{quote.author}</span>
+                {rating && (
+                  <span className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-base text-muted">
+                    <Stars value={b.rating} size={16} /> {rating}
+                  </span>
+                )}
+              </figcaption>
+            </figure>
+            {others.length > 0 && (
+              <div className={`mx-auto mt-[clamp(3.5rem,7vw,5.5rem)] grid max-w-[62rem] gap-x-12 gap-y-8 ${others.length > 1 ? 'md:grid-cols-2' : ''}`}>
+                {others.map((r) => (
+                  <figure key={r.author + r.text.slice(0, 12)} className="m-0 border-t border-line pt-7">
+                    <blockquote className="m-0 text-lg leading-relaxed">&ldquo;{r.text}&rdquo;</blockquote>
+                    <figcaption className={`${small} mt-4`}>{r.author}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       {gallery.length > 0 && (
         <section id="gallery" className={`bg-panel ${pad} ${anchor}`}>
