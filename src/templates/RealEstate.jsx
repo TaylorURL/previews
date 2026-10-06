@@ -90,6 +90,12 @@ export default function RealEstate({ b }) {
   const address = `${b.address}, ${b.town}, ${b.state}${b.zip ? ` ${b.zip}` : ''}`;
   const [menuOpen, setMenuOpen] = useState(false);
   const [filter, setFilter] = useState('All');
+  // 'none' is a business that does not sell homes - a vacation rental manager,
+  // an apartment locator, a cash buyer - so it gets no homes for sale, no home
+  // search and no link to either.
+  const hasListings = b.listings !== 'none';
+  const nav = hasListings ? NAV : NAV.filter(([href]) => href !== '#listings');
+  const toAreas = hasListings ? '#listings' : '#contact';
   const tags = ['All', ...new Set(SAMPLE_LISTINGS.map((l) => l.tag))];
   const listings = filter === 'All' ? SAMPLE_LISTINGS : SAMPLE_LISTINGS.filter((l) => l.tag === filter);
   const featured = b.divisions.filter((d) => d.image);
@@ -135,7 +141,7 @@ export default function RealEstate({ b }) {
             <BrandMark b={b} className="max-h-11 lg:max-h-[52px]" />
           </a>
           <nav aria-label="Main" className="ml-auto hidden items-center gap-6 lg:flex xl:gap-8">
-            {NAV.map(([href, label]) => (
+            {nav.map(([href, label]) => (
               <a key={href} href={href} className="inline-flex min-h-11 items-center text-[15px] font-semibold text-white/85 no-underline transition-colors hover:text-white">
                 {label}
               </a>
@@ -169,7 +175,7 @@ export default function RealEstate({ b }) {
           className="absolute inset-x-0 top-full max-h-[calc(100dvh-116px)] overflow-y-auto border-t border-white/10 bg-primary shadow-[0_24px_40px_-20px_rgba(0,0,0,0.5)] lg:hidden"
         >
           <nav aria-label="Mobile" className={`${wrap} grid py-3`}>
-            {NAV.map(([href, label]) => (
+            {nav.map(([href, label]) => (
               <a
                 key={href}
                 href={href}
@@ -204,6 +210,7 @@ export default function RealEstate({ b }) {
                 {b.hero.title}
               </h1>
               <p className="mt-5 max-w-xl text-[17px] leading-relaxed text-white/85 sm:text-lg">{b.hero.lead}</p>
+              {hasListings && (
               <form
                 role="search"
                 aria-label="Search homes"
@@ -239,13 +246,14 @@ export default function RealEstate({ b }) {
                   <Search size={17} aria-hidden="true" /> Search Homes
                 </button>
               </form>
+              )}
               {areas.length > 0 && (
                 <div className="mt-6 flex flex-wrap items-center gap-2">
                   <span className="mr-1 text-xs font-bold uppercase tracking-[0.16em] text-white/60">Or start in</span>
                   {areas.slice(0, 4).map((a) => (
                     <a
                       key={a}
-                      href="#listings"
+                      href={toAreas}
                       className="inline-flex min-h-11 items-center rounded-full border border-white/30 px-4 text-sm font-semibold text-white no-underline transition-colors hover:border-white hover:bg-white/10"
                     >
                       {a}
@@ -348,6 +356,7 @@ export default function RealEstate({ b }) {
           </div>
         </section>
 
+        {hasListings && (
         <section id="listings" className={`${anchor} ${pad} bg-cream`}>
           <div className={wrap}>
             <div className="mb-[clamp(2rem,4vw,3rem)] flex flex-wrap items-end justify-between gap-6">
@@ -409,6 +418,7 @@ export default function RealEstate({ b }) {
             </div>
           </div>
         </section>
+        )}
 
         <section id="about" className={`${anchor} ${pad}`}>
           <div className={`${wrap} grid items-center gap-[clamp(2.5rem,6vw,5.5rem)] lg:grid-cols-2`}>
@@ -448,12 +458,12 @@ export default function RealEstate({ b }) {
                 {areas.map((a) => (
                   <li key={a}>
                     <a
-                      href="#listings"
+                      href={toAreas}
                       className="group flex h-full flex-col justify-between gap-3 rounded-xl border border-line p-4 text-ink no-underline transition-colors hover:border-primary lg:p-5"
                     >
                       <span className="break-words font-heading text-[17px] leading-snug">{a}</span>
                       <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
-                        View Homes <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+                        {hasListings ? 'View Homes' : 'Get in Touch'} <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
                       </span>
                     </a>
                   </li>
@@ -586,7 +596,7 @@ export default function RealEstate({ b }) {
           <nav aria-label="Footer">
             <h2 className="mb-4 text-[13px] font-bold uppercase tracking-[0.16em] text-white">Explore</h2>
             <ul className="grid gap-1">
-              {NAV.map(([href, label]) => (
+              {nav.map(([href, label]) => (
                 <li key={href}>
                   <a href={href} className="inline-flex min-h-9 items-center text-white/75 no-underline hover:text-white">
                     {label}
