@@ -21,6 +21,13 @@ carries a strip saying it is a preview.
 Views are counted in `preview_sites` on Supabase project `gujgtjqqurildqurpffh`, through the
 `preview_site(industry, slug)` function. The table grants the browser nothing.
 
+What a visit does on the site is recorded by `src/track.js`, a few KB loaded once the page is idle: pages, scroll
+depth, time per section, clicks and taps, lingering hovers, rage and dead clicks, form fields by name (never what
+is typed), and idle and hidden time. It runs only for a visit the view count would count and only once the page
+has been looked at, and posts batches to taylorurl.com's `/api/preview-events`, which writes `preview_sessions` and
+`preview_events` and drops anything from the studio's own connections through the same `preview_view_ours()` the
+view count asks.
+
 Styling is Tailwind. The brand's colors and fonts are custom properties set on each template's root, and
 `tailwind.config.js` names them, so one set of utilities dresses every business.
 
