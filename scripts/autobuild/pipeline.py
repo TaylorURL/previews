@@ -6,7 +6,6 @@ preview session builds only those.
     ~/.claude/tools/with-credential.py \\
       supabase-service-role-sunday=SUPABASE_SERVICE_ROLE_KEY \\
       taylorurl-cron-secret=CRON_SECRET \\
-      google-places-api-key=GOOGLE_PLACES_API_KEY \\
       -- python3 -m scripts.autobuild.pipeline [--dry] [--send] [--batch N] [--limit N]
 
 Run from a worktree of the previews repository cut from origin/develop. It
@@ -34,7 +33,7 @@ from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 from .__main__ import ROOT, render
-from .build import Parked, Transient, build
+from .build import Parked, build
 from .check import all_checks
 from .compose import AUTOMATED
 from .letter import letter_for
@@ -45,8 +44,9 @@ routine = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(routine)
 
 HOUSTON = ZoneInfo("America/Chicago")
-# Letters go in working hours, as a person would send them.
-SEND_HOURS = range(8, 18)
+# The outreach machine's own window (taylorurl-com lib/outreach/sending/schedule.js):
+# 8:00 to 17:00 Houston time, Monday to Saturday.
+SEND_HOURS = range(8, 17)
 SPACING = 20
 
 
@@ -108,12 +108,6 @@ def build_batch(rows):
         try:
             brand, evidence = build(row, ROOT, slug)
             problems = all_checks(brand, evidence, ROOT, slug)
-        except Transient as reason:
-            # Not the business's fault: it stays due, unparked, for the next
-            # run, and so does everything behind it.
-            discard(slug)
-            log("stopped", slug, str(reason))
-            raise
         except Parked as reason:
             problems, brand = [str(reason)], None
         except Exception as error:
@@ -206,8 +200,6 @@ def call(*args):
 
 def ceiling():
     """How many first preview letters may go today: the outreach machine's own daily cap."""
-    if os.environ.get("PREVIEW_DAILY_CEILING"):
-        return int(os.environ["PREVIEW_DAILY_CEILING"])
     settings = routine.rest("GET", "outreach_settings?select=daily_cap,sending_enabled&limit=1")[0]
     return settings["daily_cap"] if settings["sending_enabled"] else 0
 
@@ -224,7 +216,8 @@ def unsent():
 
 
 def send_waiting(report):
-    if datetime.now(HOUSTON).hour not in SEND_HOURS:
+    now = datetime.now(HOUSTON)
+    if now.hour not in SEND_HOURS or now.weekday() == 6:
         report["notes"].append("outside sending hours, so no letter went")
         return
     room = ceiling() - sent_today()
@@ -265,12 +258,7 @@ def main(argv):
     while rows and time.time() < deadline() - reserve:
         batch, rows = rows[:args.batch], rows[args.batch:]
         n += 1
-        try:
-            passed, parked = build_batch(batch)
-        except Transient as reason:
-            report["notes"].append(f"stopped early: {reason}; the rest stays due for the next run")
-            rows = batch + rows
-            break
+        passed, parked = build_batch(batch)
         report["parked"] += [{"slug": p["slug"], "name": p["row"]["name"], "why": "; ".join(p["problems"])} for p in parked]
         if args.dry:
             report["built"] += [p["slug"] for p in passed]
