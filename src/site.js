@@ -47,15 +47,76 @@ export function loadBrand(slug) {
   return brand ? { slug, ...brand } : null;
 }
 
-/** Counts a view of a prospect's preview. Fire and forget. */
-export function recordView(brand) {
-  if (!brand.preview) return;
+// Set on .taylorurl.com by the studio's console and by opening any preview
+// with `?staff`, so the studio's own browsers never count as a prospect.
+const STAFF_COOKIE = 'tu_staff';
+const BOTS = /bot|crawl|spider|slurp|preview|scan|headless|lighthouse|pagespeed|python|curl|wget|node|axios|go-http|java\//i;
+// A visit counts once it has been on screen this long, or as soon as the
+// reader scrolls, taps or clicks. Link scanners load a page and leave.
+const LOOKED_MS = 4000;
+
+function ours() {
+  if (/(?:^|;\s*)tu_staff=1/.test(document.cookie)) return true;
+  if (new URLSearchParams(location.search).has('staff')) {
+    document.cookie = `${STAFF_COOKIE}=1; domain=.taylorurl.com; path=/; max-age=315360000; samesite=lax; secure`;
+    return true;
+  }
+  return false;
+}
+
+function automated() {
+  return navigator.webdriver || BOTS.test(navigator.userAgent) || !navigator.languages?.length;
+}
+
+function send(brand) {
   fetch(`${SUPABASE_URL}/rest/v1/rpc/preview_site`, {
     method: 'POST',
     keepalive: true,
     headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({ p_industry: brand.template, p_slug: brand.slug }),
   }).catch(() => {});
+}
+
+/**
+ * Counts a prospect looking at their preview: once per visit, in a real
+ * browser, after the page has actually been looked at. The studio's own
+ * browsers, automated ones and anything that loads the page and leaves are not
+ * counted. Fire and forget.
+ */
+const watching = new Set();
+
+export function recordView(brand) {
+  if (!brand.preview || watching.has(brand.slug) || ours() || automated()) return;
+  watching.add(brand.slug);
+  const key = `viewed:${brand.slug}`;
+  try {
+    if (sessionStorage.getItem(key)) return;
+  } catch {
+    // Storage refused; count the visit anyway.
+  }
+  let done = false;
+  let timer = null;
+  const events = ['scroll', 'pointerdown', 'keydown', 'touchstart'];
+  const count = () => {
+    if (done) return;
+    done = true;
+    clearTimeout(timer);
+    events.forEach((name) => removeEventListener(name, count));
+    document.removeEventListener('visibilitychange', watch);
+    try {
+      sessionStorage.setItem(key, '1');
+    } catch {
+      // Nothing to remember it in.
+    }
+    send(brand);
+  };
+  const watch = () => {
+    clearTimeout(timer);
+    if (document.visibilityState === 'visible') timer = setTimeout(count, LOOKED_MS);
+  };
+  events.forEach((name) => addEventListener(name, count, { once: true, passive: true }));
+  document.addEventListener('visibilitychange', watch);
+  watch();
 }
 
 /**
