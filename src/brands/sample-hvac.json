@@ -1,0 +1,287 @@
+{
+  "template": "hvac",
+  "name": "Bayline Air & Electric LLC",
+  "shortName": "Bayline Air & Electric",
+  "summary": "Heating, air conditioning and electrical work for homes and small businesses in Baytown and east Harris County.",
+  "phone": "(281) 555-0187",
+  "email": "service@baylineair.example",
+  "address": "4810 Garth Rd, Suite 6",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77521",
+  "rating": 4.9,
+  "reviewCount": 318,
+  "since": 2009,
+  "hours": [["Mon – Fri", "7 AM – 6 PM"], ["Saturday", "8 AM – 2 PM"], ["Sunday", "Emergency calls only"]],
+  "brand": {
+    "primary": "#0369a1",
+    "primaryDeep": "#0b2f4d",
+    "accent": "#ffb020",
+    "ink": "#0b1b2b",
+    "muted": "#4f6275",
+    "surface": "#f0f6fb",
+    "line": "#d9e4ee",
+    "heading": "'Plus Jakarta Sans', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/sample-hvac/logo.webp",
+    "logoWidth": 150
+  },
+  "emergency": {
+    "title": "24/7 emergency service",
+    "text": "No cooling, no heat or a breaker that will not reset, a technician is on call every night of the year."
+  },
+  "sameDay": "Call before noon and a technician is usually at your door the same afternoon.",
+  "licenses": [
+    { "label": "TDLR HVAC", "number": "TACLA 00045821C" },
+    { "label": "TDLR Electrical", "number": "TECL 31274" }
+  ],
+  "financing": {
+    "text": "Monthly payments on new systems and panel upgrades, with approval on the spot."
+  },
+  "hero": {
+    "eyebrow": "Heating, cooling and electrical in Baytown",
+    "title": "Comfort you can count on,",
+    "titleAccent": "every season of the year.",
+    "lead": "Licensed technicians for your air conditioner, furnace and wiring, with an arrival window you can plan around and a written price before any work starts.",
+    "image": "/brands/sample-hvac/hero",
+    "imageAlt": "A technician checking an electrical meter on the side of a house"
+  },
+  "groups": [
+    {
+      "slug": "cooling",
+      "title": "Cooling",
+      "icon": "snowflake",
+      "summary": "Air conditioner repair, replacement and tune-ups for the long Gulf Coast summer.",
+      "intro": "When the house will not cool down, a technician finds the cause, explains it in plain words and gives you a written price before touching anything.",
+      "image": "/brands/sample-hvac/cooling",
+      "imageAlt": "An outdoor air conditioner unit mounted on a brick wall",
+      "services": [
+        {
+          "slug": "ac-repair",
+          "title": "AC Repair",
+          "icon": "wrench",
+          "text": "Warm air, short cycling, frozen coils and noisy fans diagnosed and fixed, most on the first visit.",
+          "points": ["Trucks stocked with common parts", "Refrigerant leaks found and sealed", "Repairs guaranteed for a year"]
+        },
+        {
+          "slug": "ac-installation",
+          "title": "AC Installation",
+          "icon": "air-vent",
+          "text": "New systems sized to your home with a load calculation, not a guess from the old unit's label.",
+          "points": ["High-efficiency and variable-speed options", "Old equipment hauled away", "Permit and inspection handled"]
+        },
+        {
+          "slug": "heat-pumps",
+          "title": "Heat Pumps",
+          "icon": "thermometer",
+          "text": "One system that cools all summer and heats through a mild Texas winter, installed and serviced.",
+          "points": ["Repair on all major brands", "Ducted and ductless systems"]
+        },
+        {
+          "slug": "ductless-mini-splits",
+          "title": "Ductless Mini-Splits",
+          "icon": "fan",
+          "text": "Quiet cooling for garages, additions and rooms the main system never quite reaches.",
+          "points": ["Single and multi-zone setups", "Clean wall-mounted installs"]
+        }
+      ]
+    },
+    {
+      "slug": "heating",
+      "title": "Heating",
+      "icon": "flame",
+      "summary": "Furnace and heat pump repair so the first cold front does not catch you out.",
+      "intro": "Texas winters are short, which is why a furnace that sat all year tends to fail on the first cold night. We repair, replace and safety-check gas and electric systems.",
+      "image": "/brands/sample-hvac/heating",
+      "imageAlt": "An outdoor heat pump unit beside a brick house",
+      "services": [
+        {
+          "slug": "furnace-repair",
+          "title": "Furnace Repair",
+          "icon": "flame",
+          "text": "Igniters, flame sensors, blower motors and control boards replaced on gas and electric furnaces.",
+          "points": ["Carbon monoxide test on every gas visit", "Upfront written pricing"]
+        },
+        {
+          "slug": "furnace-installation",
+          "title": "Furnace Installation",
+          "icon": "heater",
+          "text": "Replacement furnaces matched to your ductwork and your existing air conditioner.",
+          "points": ["Gas line and venting checked", "Manufacturer warranty registered for you"]
+        },
+        {
+          "slug": "heating-tune-ups",
+          "title": "Heating Tune-Ups",
+          "icon": "gauge",
+          "text": "A fall inspection and cleaning that catches a worn part before it becomes a no-heat call.",
+          "points": ["Burners and heat exchanger inspected", "Filter changed while we are there"]
+        }
+      ]
+    },
+    {
+      "slug": "indoor-air-quality",
+      "title": "Indoor Air Quality",
+      "icon": "wind",
+      "summary": "Cleaner, drier air inside a humid house, from filtration to duct repair.",
+      "intro": "Humidity, dust and allergens ride through the same ducts as your cool air. We test what is in the air and fix the source rather than selling a gadget.",
+      "image": "/brands/sample-hvac/air",
+      "imageAlt": "A ceiling air vent connected to insulated ductwork",
+      "services": [
+        {
+          "slug": "air-filtration",
+          "title": "Air Filtration",
+          "icon": "filter",
+          "text": "Whole-home media filters and air purifiers installed right at the air handler.",
+          "points": ["MERV-rated filters sized to your system"]
+        },
+        {
+          "slug": "dehumidifiers",
+          "title": "Whole-Home Dehumidifiers",
+          "icon": "droplets",
+          "text": "Takes the sticky feel out of a coastal house and keeps mildew out of closets.",
+          "points": ["Ducted units tied into your system"]
+        },
+        {
+          "slug": "duct-repair",
+          "title": "Duct Sealing and Repair",
+          "icon": "waves",
+          "text": "Leaky, crushed and disconnected ducts found in the attic and sealed or replaced.",
+          "points": ["Airflow measured before and after"]
+        }
+      ]
+    },
+    {
+      "slug": "electrical",
+      "title": "Electrical",
+      "icon": "zap",
+      "summary": "Panels, wiring, generators and EV chargers by licensed electricians.",
+      "intro": "The same company that keeps your air conditioner running can handle the panel it plugs into. Every job is done by a licensed electrician and permitted where the city requires it.",
+      "image": "/brands/sample-hvac/electrical",
+      "imageAlt": "An electrician working inside an open electrical panel",
+      "services": [
+        {
+          "slug": "panel-upgrades",
+          "title": "Panel Upgrades",
+          "icon": "circuit",
+          "text": "Older and undersized panels replaced so a new AC, EV charger or addition has the power it needs.",
+          "points": ["100 to 200 amp service upgrades", "Utility and permit coordination"]
+        },
+        {
+          "slug": "wiring-and-repairs",
+          "title": "Wiring and Repairs",
+          "icon": "plug",
+          "text": "Dead outlets, tripping breakers, flickering lights and new circuits traced and fixed safely.",
+          "points": ["GFCI and AFCI protection added", "Whole-home safety inspections"]
+        },
+        {
+          "slug": "generators",
+          "title": "Standby Generators",
+          "icon": "power",
+          "text": "Automatic home generators that keep the lights and the AC on through hurricane season.",
+          "points": ["Transfer switch installation", "Yearly maintenance visits"]
+        },
+        {
+          "slug": "ev-chargers",
+          "title": "EV Chargers",
+          "icon": "ev",
+          "text": "Level 2 chargers installed in the garage or driveway on a dedicated circuit.",
+          "points": ["Load check on your panel first"]
+        },
+        {
+          "slug": "lighting",
+          "title": "Lighting and Ceiling Fans",
+          "icon": "lightbulb",
+          "text": "Recessed lights, outdoor lighting and ceiling fans installed and wired to the right switch."
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Spring tune-up",
+    "title": "Get your AC ready before the first 95-degree day.",
+    "text": "A full cooling inspection, coil rinse and refrigerant check, booked now while the schedule is open.",
+    "price": "$89",
+    "priceNote": "per system",
+    "image": "/brands/sample-hvac/tuneup",
+    "imageAlt": "A smart thermostat on a white wall"
+  },
+  "plan": {
+    "name": "Bayline Comfort Club",
+    "intro": "Two tune-ups a year, priority scheduling and a discount on any repair, for a set monthly price.",
+    "tiers": [
+      {
+        "name": "Cooling",
+        "price": "$12",
+        "period": "per month",
+        "features": ["One spring AC tune-up", "Priority scheduling", "10% off repairs"]
+      },
+      {
+        "name": "Comfort",
+        "price": "$19",
+        "period": "per month",
+        "featured": true,
+        "features": ["Spring AC and fall heating tune-ups", "Priority scheduling", "15% off repairs", "No overtime charges"]
+      },
+      {
+        "name": "Whole Home",
+        "price": "$29",
+        "period": "per month",
+        "features": ["Both tune-ups", "Yearly electrical safety inspection", "Generator check", "15% off repairs", "No overtime charges"]
+      }
+    ],
+    "note": "Billed monthly. Cancel any time with a phone call."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "A Baytown shop that answers its own phone.",
+    "text": [
+      "Bayline started as one technician and one van serving neighbors in Baytown. The company grew one customer referral at a time, and it still runs the same way: the person who answers the phone is in the office down the hall from the technicians.",
+      "Today the crew covers heating, cooling and electrical, so a new air conditioner and the circuit it needs can be handled by one team on one schedule."
+    ],
+    "image": "/brands/sample-hvac/team",
+    "imageAlt": "A smiling technician in a company jacket",
+    "values": [
+      { "title": "Written prices", "text": "You see the full price on paper before any work begins." },
+      { "title": "On-time arrivals", "text": "A two-hour window and a text when the technician is on the way." },
+      { "title": "Clean work", "text": "Shoe covers inside and every work area left the way we found it." }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How often should my air conditioner be serviced?",
+      "a": "Once a year, in spring, before it runs every day. Systems that also heat get a second visit in the fall."
+    },
+    {
+      "q": "Do you charge a trip fee?",
+      "a": "There is a diagnostic fee to find the problem, and it is credited toward the repair if you go ahead with it."
+    },
+    {
+      "q": "Should I repair or replace an old system?",
+      "a": "If the system is past 12 to 15 years and the repair is a large one, replacement usually costs less over time. The technician gives you both prices so you can decide."
+    },
+    {
+      "q": "Can you add a circuit for a new AC or EV charger?",
+      "a": "Yes. Our electricians check your panel's capacity first and pull the permit where one is required."
+    },
+    {
+      "q": "Do you offer financing?",
+      "a": "Yes, on new systems and panel upgrades. Ask for the options when you book the estimate."
+    }
+  ],
+  "serviceArea": ["Baytown", "Mont Belvieu", "La Porte", "Highlands", "Crosby", "Channelview", "Deer Park", "Dayton"],
+  "reviews": [
+    {
+      "author": "Homeowner in Baytown",
+      "text": "AC quit on a Friday in July. They had someone out that afternoon, found a bad capacitor and had the house cooling again in under an hour."
+    },
+    {
+      "author": "Customer in Mont Belvieu",
+      "text": "They replaced our old furnace and upgraded the panel at the same time, so we did not have to schedule two companies. Clean work and the price matched the quote."
+    },
+    {
+      "author": "Customer in La Porte",
+      "text": "The technician showed me the dirty coil before cleaning it and explained the dehumidifier option without pushing it. The house feels less muggy already."
+    }
+  ]
+}
