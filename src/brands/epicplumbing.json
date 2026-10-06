@@ -1,0 +1,100 @@
+{
+  "template": "plumbing",
+  "preview": true,
+  "name": "Epic Plumbing",
+  "shortName": "Epic",
+  "phone": "(281) 299-0028",
+  "email": "info@epicservices.com",
+  "address": "17302 County Road 125",
+  "town": "Pearland",
+  "state": "TX",
+  "zip": "77581",
+  "rating": 4.9,
+  "reviewCount": 2287,
+  "hours": [["Mon – Fri", "7:45 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "brand": {
+    "primary": "#a31f37",
+    "primaryDeep": "#17181b",
+    "accent": "#c9ced3",
+    "ink": "#17181b",
+    "surface": "#f2f3f4",
+    "heading": "'Archivo', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap",
+    "logo": "/brands/epicplumbing/logo.webp",
+    "logoWidth": 170
+  },
+  "hero": {
+    "eyebrow": "Plumbers in Pearland",
+    "title": "Never fear,",
+    "titleAccent": "Epic is here.",
+    "lead": "Plumbing services for families in Pearland and the surrounding area since 1996. Flat rates you know before we start, and same-day service whenever we can get to you.",
+    "image": "/brands/epicplumbing/team",
+    "imageAlt": "The Epic Plumbing team in front of two company vans",
+    "mascot": "/brands/epicplumbing/mascot.webp",
+    "mascotLine": "No need to drain yourself."
+  },
+  "promises": ["Flat-Rate, Upfront Pricing", "Same-Day Service Available", "Woman-Owned and Family Operated", "90-Day Satisfaction Guarantee"],
+  "services": [
+    { "title": "Leak Detection and Repair", "icon": "search", "text": "Fast, effective leak detection that locates the problem before it costs you in water bills, water damage or foundation damage." },
+    { "title": "Water Heater Repair and Installation", "icon": "flame", "text": "Repairs, inspections, maintenance and replacement on gas and electric tank units, with honest advice on whether to fix or replace." },
+    { "title": "Tankless Water Heater Repair and Installation", "icon": "zap", "text": "On-demand hot water that saves energy and running costs, installed and serviced by licensed, smoke-free technicians." },
+    { "title": "Drain Cleaning and Repair", "icon": "droplets", "text": "Hair, food, grease and mineral build-up cleared out properly, so slow and clogged drains run smoothly all year." },
+    { "title": "Hydro Jetting", "icon": "waves", "text": "A fast, effective and environmentally friendly way to scour a line clean when a snake is not the right tool for the job." },
+    { "title": "Video Camera Inspection", "icon": "search", "text": "A camera down the drain or sewer line shows in real time what is going on, so the cause is diagnosed rather than guessed at." },
+    { "title": "Sewer Repair and Cleaning", "icon": "construction", "text": "Sewer line repair, replacement and cleaning, with same-day appointments whenever possible and upfront pricing before any decision." },
+    { "title": "Repiping", "icon": "wrench", "text": "Personalized, cost-effective repiping options for homes where repair after repair is no longer the cheaper route." },
+    { "title": "Gas Line Repair and Installation", "icon": "gauge", "text": "Natural gas and propane line installation, repair and leak checks, done carefully because natural gas is flammable and harmful to people and pets." },
+    { "title": "Toilet Repair, Installation and Replacement", "icon": "shower", "text": "Running toilets, chronic clogs and tired units, repaired or replaced by background-checked plumbers. We strive to be number one in a number two business." },
+    { "title": "Kitchen Plumbing", "icon": "cog", "text": "Sinks, faucets and garbage disposals in the hub of the home, with solutions matched to your plumbing and your budget." },
+    { "title": "Water Softener and Filtration Systems", "icon": "filter", "text": "Hard water carries excess minerals that scale up your plumbing and spoil the taste. A softener or filtration system fixes both." },
+    { "title": "Commercial Plumbing", "icon": "building", "text": "Customizable solutions scheduled around your business, because every day your plumbing is down is a day you could be losing money." }
+  ],
+  "crew": {
+    "eyebrow": "Why are we so Epic",
+    "title": "Local, woman-owned and family operated since 1996.",
+    "text": "We have worked tirelessly to build a team of technicians and office staff that is friendly, professional and knowledgeable. Every person we have brought on board is someone we would entrust with our own homes, and the difference this passion makes is clear.",
+    "points": [
+      { "title": "Flat-rate and upfront pricing", "text": "We do not charge by the hour, we charge by the job, and you know the cost before we start. No surprises and no hidden fees." },
+      { "title": "Fully stocked vans", "text": "Our vans carry what the job needs, so most work is done in one visit with the least inconvenience to you." },
+      { "title": "Smoke-free company", "text": "We respect your home, so our plumbers will never smoke on your property or on the job." },
+      { "title": "High quality fixtures and supplies", "text": "With higher quality plumbing supplies comes longer lasting repairs and installations, so that is what goes into your home." },
+      { "title": "We arrive when we said we would", "text": "Our technicians show up within the scheduled time and work a fast, effective repair or installation, so you can get back to your day." }
+    ],
+    "image": "/brands/epicplumbing/tankless",
+    "imageAlt": "Copper water lines run to a tankless water heater"
+  },
+  "band": {
+    "title": "Pearland and the South Houston area.",
+    "text": "Homeowners across Pearland and the communities around it know they can count on our technicians for fast, reliable plumbing and water heater service.",
+    "image": "/brands/epicplumbing/fleet",
+    "imageAlt": "The Epic Plumbing team lined up in front of the company van fleet"
+  },
+  "serviceArea": ["Pearland", "Alvin", "Bellaire", "Clear Lake City", "Deer Park", "Dickinson", "Friendswood", "Kemah", "League City", "Manvel", "Rosharon", "Santa Fe", "Seabrook", "Webster"],
+  "reviews": [
+    { "author": "Stephen Piersall", "text": "My experience was excellent. They dispatched someone out to my house within an hour and made the repair before lunch. They are the best plumbing company I have ever used." },
+    { "author": "Kelly Bo Belly", "text": "Everyone from scheduling with Heather to our plumber, Johnathan, was extremely accommodating and helpful. They were detailed, thorough, and very knowledgeable. Everyone was straightforward and honest at every step of the way." },
+    { "author": "Cesar A", "text": "I had a cracked pipe on my outside faucet, they were able to squeeze me in a day early. They gave me best and worst case scenarios with best and worst scenario prices. Everything was upfront with no hidden surprises." }
+  ],
+  "facts": [
+    {"heading": "Family business since 1996", "text": "Todd and Denesse started Epic Services, Inc. in 1996 and the company has been serving Pearland ever since, residential and commercial. It is woman-owned and family operated, and several of the family work in the business today."},
+    {"heading": "Licensed, insured and background checked", "text": "Plumber License #15247. Our plumbers are fully trained, licensed and insured, and every member of staff, from the plumbers to the people answering your calls, is background checked."},
+    {"heading": "100% satisfaction guarantee", "text": "If you are not completely happy with our work for any reason, tell us within 90 days of the job and we will do everything we can to make it right, at no additional charge to you."},
+    {"heading": "Flat-rate, upfront pricing", "text": "We do not charge by the hour. We charge by the job and tell you the cost before any work begins, so there are no surprises and no hidden fees."},
+    {"heading": "Financing through Wisetack", "text": "Finance projects up to $25,000 with terms from 3 to 60 months and APRs from 0 to 35.9%, with no hidden fees and no compounding interest. The application takes about a minute and checking your options does not affect your credit score. All financing is subject to credit approval and your terms may vary."},
+    {"heading": "Emergency sewer service", "text": "You do not get to choose when a sewer line backs up, so our drain and sewer plumbers offer emergency repair. Same-day appointments are often available on other work too."},
+    {"heading": "A+ Better Business Bureau rating", "text": "Epic Plumbing holds an A+ rating with the Better Business Bureau."},
+    {"heading": "Named Best Plumber twice", "text": "Epic Plumbing has twice been named Living Magazine's Best Plumber of the year."},
+    {"heading": "No pressure, and a free commercial estimate", "text": "We will never pressure you into a service or a product you do not need, and after an inspection you get a clear report and our guidance on what to do about it. On commercial work, call and we will schedule an appointment for a free estimate."},
+    {"heading": "Real estate plumbing inspections", "text": "Buying or selling a property means getting the plumbing system inspected. Our video camera inspection plumbers do that inspection, so the sale moves along."},
+    {"heading": "What we fit in a commercial building", "items": ["Repair and remodel", "Drain lines, water lines and air lines", "Gas lines, medical gas and specialty gas", "Commercial water heaters", "Jetting services", "Sensor and touchless fixtures, including sensor toilets", "Plumbing fixtures", "Water leak detection and gas leak detection", "Commercial kitchens"]},
+    {"heading": "Commercial service area", "text": "Our commercial work runs across the metropolitan area, including but not limited to Pearland, Friendswood, Alvin, League City, Clear Lake City, Manvel and Webster, scheduled around your business hours."},
+    {"heading": "PEX or copper on a repipe", "text": "PEX is flexible, inexpensive to install and resistant to acidic substances, but UV light damages it so it cannot go outside and it cannot connect directly to a water heater. Copper costs more upfront, will not bend or flex, and lasts longer. We will tell you which one suits the house."},
+    {"heading": "The people you will meet", "items": ["Denesse, Owner", "Todd, Master Plumber", "Bryant, General Manager", "April, HR and Communications Director", "Michael, Operations Manager", "Jake, Service Manager", "Pedro, Warehouse Manager", "Sarah, Customer Service Representative", "Sergio, Journeyman Plumber", "AJ, Service Plumber", "Chris, Service Plumber", "Jonathan, Service Plumber", "Jesus, Service Plumber", "Juan, Apprentice Plumber", "Ben, Apprentice Plumber", "Matt, Apprentice Plumber", "Donnell, Drain Cleaner", "Finn, Team Leader", "Axl, Moral Support"]},
+    {"heading": "Our master plumber", "text": "Todd started working with his father, a master plumber, as a boy. He was a licensed journeyman plumber in his senior year of high school, earned his Master Plumber License in 1984, and added a Class A air conditioning license in 2001."},
+    {"heading": "Main office", "text": "17302 County Road 125, Pearland, TX 77581. The office is open Monday to Friday, 7:45 AM to 5:00 PM, and closed at weekends. The office line is 281-588-0085, and (281) 815-2322 reaches us to book an appointment. Email info@epicservices.com."},
+    {"heading": "Text messages from us", "text": "You can opt in to appointment reminders, service updates and offers by text. Consent is not a condition of purchase, message frequency varies, and standard message and data rates may apply. Reply STOP at any time and nothing further is sent, or HELP for help."},
+    {"heading": "Working here", "text": "We regularly have openings for journeyman and tradesman plumbers, apprentice plumbers and registered drain cleaners. The job comes with health, dental, vision and life insurance, Aflac, paid holidays and vacation, continued training, and a company vehicle, gas card, uniforms and tablet on the roles that need them."},
+    {"heading": "Follow along", "items": ["Facebook: facebook.com/epicplumbing", "Instagram: @epic_plumbing", "LinkedIn: Epic Services, Inc.", "Yelp: Epic Plumbing, Pearland", "Angi: Epic Services, Inc., Pearland"]}
+  ]
+}

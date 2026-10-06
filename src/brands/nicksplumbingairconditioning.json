@@ -1,0 +1,643 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Nick's Plumbing & Air Conditioning",
+  "shortName": "Nick's",
+  "summary": "Family owned plumbing, air conditioning and heating for homes and businesses across the greater Houston area, serving the city since 1979.",
+  "phone": "(713) 868-9907",
+  "email": "service@nicksplumbing.com",
+  "address": "3780 Yale St",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77018",
+  "rating": 4.7,
+  "reviewCount": 4391,
+  "since": 1979,
+  "hours": [
+    ["Mon – Fri", "8 AM – 7 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#024B8A",
+    "primaryDeep": "#013159",
+    "accent": "#D30100",
+    "ink": "#13202e",
+    "muted": "#55657a",
+    "surface": "#eef4fa",
+    "line": "#d7e2ed",
+    "heading": "'Lato', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/nicksplumbingairconditioning/logo.webp",
+    "logoWidth": 180
+  },
+  "emergency": {
+    "title": "24/7 emergency service",
+    "text": "Live representatives take your call around the clock, and emergency AC repair is available when a system fails unexpectedly."
+  },
+  "sameDay": "Same-day appointments are often available for plumbing and air conditioning calls.",
+  "licenses": [
+    { "label": "Master Plumber", "number": "MPL# 38548" },
+    { "label": "TDLR HVAC", "number": "TACLA0012793E" },
+    { "label": "TDLR HVAC", "number": "TACLB85298E" }
+  ],
+  "financing": {
+    "text": "Financing through Service Finance, with plans running from no interest for six months to 9.95% APR over 120 months."
+  },
+  "hero": {
+    "eyebrow": "Plumbing, air conditioning and heating in Houston",
+    "title": "Houston's plumbing and AC company",
+    "titleAccent": "since 1979.",
+    "lead": "Family owned and operated, with licensed, insured and background-checked technicians handling everything from a dripping faucet to a full system replacement.",
+    "image": "/brands/nicksplumbingairconditioning/hero",
+    "imageAlt": "Outdoor air conditioning condenser units beside a building"
+  },
+  "groups": [
+    {
+      "slug": "air-conditioning",
+      "title": "Air Conditioning",
+      "icon": "snowflake",
+      "summary": "Repair, installation, maintenance and ductless systems for the long Houston summer.",
+      "intro": "The climate in Houston has us relying on air conditioning for eight or nine months out of every year. Nick's services all major makes and models and carries common parts on the truck, and every job is quoted with upfront pricing and no hidden fees.",
+      "image": "/brands/nicksplumbingairconditioning/air-conditioning",
+      "imageAlt": "Two outdoor air conditioning condenser units outside a Houston home",
+      "services": [
+        {
+          "slug": "ac-repair",
+          "title": "AC Repair",
+          "icon": "wrench",
+          "text": "If your AC is not cooling properly, making strange noises or not turning on at all, Nick's provides fast and accurate air conditioning repairs in Houston.",
+          "points": [
+            "All major makes and models serviced",
+            "Common parts carried on the truck",
+            "Same-day appointments often available",
+            "24/7 emergency AC repair"
+          ]
+        },
+        {
+          "slug": "ac-installation",
+          "title": "AC Installation & Replacement",
+          "icon": "air-vent",
+          "text": "Whether you are building a new home or replacing an old, inefficient unit, Nick's helps you select the right system for your home's size, your budget and your energy goals.",
+          "points": [
+            "Existing ductwork inspected before a new unit goes in",
+            "Warranty-backed installations and parts",
+            "Daikin variable-speed systems installed"
+          ]
+        },
+        {
+          "slug": "ac-maintenance",
+          "title": "AC Maintenance & Tune-Ups",
+          "icon": "gauge",
+          "text": "A thorough inspection identifies problems early, improves efficiency and extends the life of the system. Schedule it at least once a year, ideally before summer hits.",
+          "points": ["Included twice a year with the VIP Maintenance Plan"]
+        },
+        {
+          "slug": "ductless-mini-splits",
+          "title": "Ductless Mini-Splits",
+          "icon": "fan",
+          "text": "For homes without ductwork, or rooms that need extra cooling, Nick's installs, repairs and maintains ductless mini-split systems.",
+          "points": ["Mitsubishi ductless units carried", "Installation, repair and maintenance"]
+        },
+        {
+          "slug": "ac-filters-and-purifiers",
+          "title": "AC Filters & Purifiers",
+          "icon": "filter",
+          "text": "Filter and purifier services for a city where what you breathe indoors matters, along with indoor air quality assessments.",
+          "points": ["Indoor air quality assessments", "Platinum IAQ and IAQ package options"]
+        },
+        {
+          "slug": "commercial-ac",
+          "title": "Commercial AC",
+          "icon": "building",
+          "text": "Commercial HVAC systems have to suit the building, the number of occupants and how the space is used. Nick's services commercial systems alongside residential.",
+          "points": ["Portable AC rentals available"]
+        },
+        {
+          "slug": "daikin-systems",
+          "title": "Daikin Systems",
+          "icon": "thermometer",
+          "text": "Nick's is a Daikin dealer and installs and services Daikin heating and air conditioning technologies."
+        }
+      ]
+    },
+    {
+      "slug": "heating",
+      "title": "Heating",
+      "icon": "flame",
+      "summary": "Furnace repair, installation and maintenance for the two or three months Houston needs them.",
+      "intro": "For two or three months out of the year Houston turns its attention to keeping warm. Nick's offers a full array of residential heating services, from scheduled furnace maintenance through minor and major repair to professional installation.",
+      "image": "/brands/nicksplumbingairconditioning/heating",
+      "imageAlt": "A line-up of Daikin heating and air conditioning systems",
+      "services": [
+        {
+          "slug": "heating-repair",
+          "title": "Heating & Furnace Repair",
+          "icon": "flame",
+          "text": "Heating systems never fail at a convenient time. Nick's handles minor and major furnace repair at home and at your business."
+        },
+        {
+          "slug": "heating-installation",
+          "title": "Heating & Furnace Installation",
+          "icon": "heater",
+          "text": "A new furnace, a smart thermostat or a complete HVAC system, installed to suit the house it is going into."
+        },
+        {
+          "slug": "heating-maintenance",
+          "title": "Heating & Furnace Maintenance",
+          "icon": "gauge",
+          "text": "Regularly scheduled furnace maintenance, so the first cold night is not the night you find out something is wrong.",
+          "points": ["A heat tune-up is included once a year with the VIP Maintenance Plan"]
+        },
+        {
+          "slug": "indoor-air-quality",
+          "title": "Indoor Air Quality",
+          "icon": "wind",
+          "text": "Indoor air quality assessments, plus the Platinum IAQ and IAQ package options for improving the air your system moves through the house.",
+          "points": [
+            "REME HALO in-duct air purifier by RGF Environmental Group installed",
+            "Fitted in the return air plenum with no ductwork modifications",
+            "Light cell is user-serviceable and replaced every two years"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "plumbing",
+      "title": "Plumbing",
+      "icon": "wrench",
+      "summary": "Repair, installation, leak detection, repipes and gas line work, residential and commercial.",
+      "intro": "Normal wear, hard water and the settling of a Houston home quietly stress pipes over the years. Nick's has been repairing and installing plumbing here since 1979, with licensed, background-checked plumbers on every job.",
+      "image": "/brands/nicksplumbingairconditioning/plumbing",
+      "imageAlt": "Copper and steel supply pipes, valves and gauges",
+      "services": [
+        {
+          "slug": "plumbing-repair",
+          "title": "Plumbing Repair",
+          "icon": "wrench",
+          "text": "Bathtubs, faucets, showers, toilets and garbage disposals repaired. A running toilet alone can waste as much as 200 gallons of water a day.",
+          "points": [
+            "Bathtub, shower and faucet repair",
+            "Toilet repair, including running and leaking toilets",
+            "Garbage disposal repair"
+          ]
+        },
+        {
+          "slug": "plumbing-installation",
+          "title": "Plumbing Installation",
+          "icon": "settings",
+          "text": "Fixtures and fittings installed throughout the house, from a kitchen faucet to a new shower enclosure.",
+          "points": [
+            "Bathtub, shower, sink and toilet installation",
+            "Faucet and outdoor faucet installation",
+            "Garbage disposal installation",
+            "Hot water recirculation and yard drain installation"
+          ]
+        },
+        {
+          "slug": "leak-detection-and-repair",
+          "title": "Leak Detection & Repair",
+          "icon": "droplets",
+          "text": "The leaks that do the most damage are the ones you never see. Nick's locates them and repairs the line, under the slab included.",
+          "points": [
+            "Hydrostatic leak detection testing",
+            "Water leak repair and water line repair",
+            "FLO by Moen leak detection systems installed"
+          ]
+        },
+        {
+          "slug": "repipe-specialists",
+          "title": "Whole-House Repipe",
+          "icon": "waves",
+          "text": "Whole-house repiping for homes whose original supply lines have reached the end of their service life."
+        },
+        {
+          "slug": "gas-line-plumbing",
+          "title": "Gas Line Plumbing",
+          "icon": "power",
+          "text": "Gas leak detection, inspections, installation, repair and replacement, carried out by licensed plumbers.",
+          "points": ["Gas leak detection", "Gas line inspection and installation", "Gas line repair and replacement"]
+        },
+        {
+          "slug": "plumbing-inspections",
+          "title": "Plumbing Inspections",
+          "icon": "shield",
+          "text": "A full look at the plumbing before small problems become expensive ones, and the service behind the '48 in 48' home inspection report estimate."
+        },
+        {
+          "slug": "commercial-plumbing",
+          "title": "Commercial Plumbing",
+          "icon": "building",
+          "text": "Repair, installation, drain cleaning, water heaters, sewer lines and gas lines for restaurants, offices and industrial facilities, with downtime kept short."
+        }
+      ]
+    },
+    {
+      "slug": "drains-and-sewer-lines",
+      "title": "Drains & Sewer Lines",
+      "icon": "waves",
+      "summary": "Drain cleaning, hydro jetting, sewer repair and trenchless replacement across Houston.",
+      "intro": "Everything that goes into a sink, shower, tub or toilet finds its way to the sewer line, and sewer line repair and replacement has been a staple of Nick's services since 1979. Main line drain cleaning includes a camera inspection.",
+      "image": "/brands/nicksplumbingairconditioning/drains",
+      "imageAlt": "An excavator beside large sewer pipes on a work site",
+      "services": [
+        {
+          "slug": "drain-cleaning",
+          "title": "Drain Cleaning",
+          "icon": "droplets",
+          "text": "Clogged bathtubs, showers, sinks and toilets cleared, and main line drain cleaning through a ground-level, code-approved cleanout.",
+          "points": ["Main line drain cleaning includes a camera inspection"]
+        },
+        {
+          "slug": "hydro-jetting",
+          "title": "Hydro Jetting",
+          "icon": "waves",
+          "text": "High-pressure water used to scour a line clear when a cable will not hold the clog back for long."
+        },
+        {
+          "slug": "sewer-leak-detection",
+          "title": "Sewer Leak Detection",
+          "icon": "gauge",
+          "text": "Hidden drain leaks are among the most frustrating problems a Houston homeowner meets. Nick's locates them before any digging starts."
+        },
+        {
+          "slug": "sewer-line-repair",
+          "title": "Sewer Line Repair",
+          "icon": "wrench",
+          "text": "Clogged, bellied, cracked and leaking sewer lines repaired by a licensed plumbing technician."
+        },
+        {
+          "slug": "sewer-line-replacement",
+          "title": "Sewer Line Replacement & Installation",
+          "icon": "settings",
+          "text": "Full line replacement where repair will not hold. Expect roughly $55 to $95 per foot of installed pipe, with excavation, landscaping and backfill on top."
+        },
+        {
+          "slug": "trenchless-sewer-repair",
+          "title": "Trenchless Sewer Repair",
+          "icon": "timer",
+          "text": "The cured-in-place pipe method lines your existing sewer line with an epoxy-soaked felt tube, so the yard does not have to come up.",
+          "points": ["An alternative to massive excavation under a slab"]
+        }
+      ]
+    },
+    {
+      "slug": "water-heaters",
+      "title": "Water Heaters",
+      "icon": "droplets",
+      "summary": "Gas, electric and tankless water heaters repaired, maintained, installed and replaced.",
+      "intro": "From hot showers in the morning to dishes at night, the water heater is the appliance nobody thinks about until it quits. Nick's repairs, maintains, installs and replaces gas, electric and tankless units, and also handles water treatment.",
+      "image": "/brands/nicksplumbingairconditioning/water-heaters",
+      "imageAlt": "A wall-mounted water heater in a tiled utility space",
+      "services": [
+        {
+          "slug": "water-heater-repair",
+          "title": "Water Heater Repair",
+          "icon": "wrench",
+          "text": "Gas and electric water heaters diagnosed and repaired when the hot water goes cold."
+        },
+        {
+          "slug": "water-heater-installation",
+          "title": "Installation & Replacement",
+          "icon": "settings",
+          "text": "Every water heater eventually fails and needs replacing. Nick's sizes and installs the new one, gas or electric.",
+          "points": ["Bradford White tank water heaters carried"]
+        },
+        {
+          "slug": "tankless-water-heaters",
+          "title": "Tankless Water Heaters",
+          "icon": "flame",
+          "text": "Tankless units heat water on demand for greater energy efficiency. Without regular flushing, hard water can destroy one within two years and void the manufacturer's warranty.",
+          "points": ["Tankless flush service available"]
+        },
+        {
+          "slug": "water-heater-maintenance",
+          "title": "Water Heater Maintenance",
+          "icon": "gauge",
+          "text": "Scheduled maintenance that keeps a unit running and its warranty intact.",
+          "points": ["A whole-house plumbing and water heater check is part of the VIP Maintenance Plan"]
+        },
+        {
+          "slug": "water-treatment",
+          "title": "Water Softening & Filtration",
+          "icon": "filter",
+          "text": "Hard water is one of the things Houston homeowners can count on. Nick's installs water softeners, HALO whole-house filtration and conditioning, and Flow-Tech anti-scale systems.",
+          "points": [
+            "Water softener installation",
+            "HALO whole-house water filtration and conditioning",
+            "Flow-Tech anti-scale, a salt-free electronic conditioner"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "VIP Maintenance Plan",
+    "title": "The tune-up happens whether you remember to call or not.",
+    "text": "One flat plan covers an AC tune-up, a heat tune-up and a whole-house plumbing check each year, plus 10% off the pricebook.",
+    "price": "$19.79",
+    "priceNote": "per month, or $199 a year",
+    "image": "/brands/nicksplumbingairconditioning/promo",
+    "imageAlt": "A wall thermostat set to 63 degrees"
+  },
+  "plan": {
+    "name": "Nick's VIP Maintenance Plan",
+    "intro": "A VIP membership is not a coupon, it is a standing appointment. Twice-a-year visits, a standing discount, and no more guessing when service is due.",
+    "tiers": [
+      {
+        "name": "Basic VIP, monthly",
+        "price": "$19.79",
+        "period": "per month",
+        "featured": true,
+        "features": [
+          "AC tune-up, once a year",
+          "Heat tune-up, once a year",
+          "Whole-house plumbing and water heater check",
+          "10% off the pricebook",
+          "12-month minimum term"
+        ]
+      },
+      {
+        "name": "Basic VIP, annual",
+        "price": "$199",
+        "period": "per year",
+        "features": [
+          "The same two tune-ups and plumbing check",
+          "The same 10% off the pricebook",
+          "Works out to roughly a month and a half free",
+          "Extra units $80 a year each"
+        ]
+      }
+    ],
+    "note": "Extra units are $8 a month on the monthly plan or $80 a year on the annual plan, each covering a second HVAC system or property. Both tune-ups and the discount start on day one with no waiting period. Cancelling inside the 12-month term carries a $120 fee. HVAC system replacements are not part of the 10% pricebook discount and carry their own separate discounts."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Family owned and operated in Houston since 1979.",
+    "text": [
+      "Nick's Plumbing & Air Conditioning has been part of the Houston business community for over forty years, providing Houston and the surrounding area with professional plumbing, AC and heating services.",
+      "The business is locally owned and takes pride in treating every customer like a neighbour, because that is exactly what they are. More than 50,000 customers have been served in that time.",
+      "Every job is done by a trained, fully licensed and background-checked technician, and work is quoted upfront with no hidden fees."
+    ],
+    "image": "/brands/nicksplumbingairconditioning/team",
+    "imageAlt": "The Nick's Plumbing & Air Conditioning team in front of the company sign",
+    "values": [
+      { "title": "Upfront pricing", "text": "You get the price before the work starts, with no hidden fees." },
+      { "title": "Licensed and insured", "text": "Licensed, insured and background-checked technicians on every job." },
+      { "title": "Same-day help", "text": "Same-day appointments are often available, and live representatives answer the phone 24/7." }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What can go wrong with my sewer lines?",
+      "a": "Everything that goes into our sink, shower and tub drains, our toilets and our garbage disposals finds its way to the sewer line: hair, shampoo, soap, toothpaste, cooking grease, chicken bones, pasta and rice. Since the first rule of plumbing is that water heads downhill, it is not surprising that drain and sewer lines become clogged."
+    },
+    {
+      "q": "How much does it cost to replace a sewer line?",
+      "a": "Every job is different and the cost depends on the length of the line and how much of it needs replacing. For the replacement alone, expect somewhere between $55 and $95 per foot of installed pipe. For a complete house-to-street replacement, the average homeowner is looking at $4,000 up to $25,000 and beyond, once excavation, landscaping and backfilling are counted."
+    },
+    {
+      "q": "Does homeowner's insurance cover sewer line repair or replacement?",
+      "a": "Standard homeowner's policies rarely, if ever, include repair or replacement of sewer lines. Secondary policies covering sewer line expenses are available from a number of companies at around $20 a month for $5,000 a year of benefits. Read the fine print, as some customers report excavation and pavement restoration costs they still had to pay out of pocket."
+    },
+    {
+      "q": "What if my sewer line is beneath a slab?",
+      "a": "More and more Houston homes sit on concrete slabs, and much of the water supply and drain pipework runs beneath them. A leak under the slab shifts a lot of soil and can move the foundation with it. Cracked patios, doors that are hard to open and close, cracks in the drywall and sloped or squeaky floorboards are all signs of water leaking beneath a slab, and it needs correcting quickly to prevent foundation damage. Reaching those lines takes some excavation, though the cured-in-place pipe method is now an alternative to digging the slab up."
+    },
+    {
+      "q": "What is trenchless sewer line repair?",
+      "a": "The cured-in-place pipe method uses a felt tube soaked in epoxy that runs the length of your original sewer line. Once it is snaked into place, hot air expands it to fit the pipe walls and speeds the curing, and the result is a new lining that will last for decades without massive excavation."
+    },
+    {
+      "q": "What is a sewer belly?",
+      "a": "A sewer belly occurs when the soil beneath the sewer line erodes or washes away. The unsupported section sags, creating low spots where wastewater and sediment collect, and bellied pipes are more likely to leak because the movement creates stress cracks between pipe segments. A bellied line needs to be repaired or replaced by a licensed plumbing technician."
+    },
+    {
+      "q": "How much do AC services cost in Houston?",
+      "a": "It depends on the service, the complexity and the system, but on average AC repairs run $150 to $600 and up, a new AC installation $4,500 to $9,000 depending on unit size and efficiency, maintenance visits $100 to $200 per tune-up, and a mini-split installation $3,000 to $8,000 per system. Pricing is given upfront and financing is available."
+    },
+    {
+      "q": "Should I repair or replace my air conditioner?",
+      "a": "Watch for frequent breakdowns and recurring repairs, high energy bills despite normal usage, uneven cooling or weak airflow, strange noises such as banging, squealing or grinding, and a unit over 10 to 15 years old. If you are unsure, Nick's will give you an honest evaluation."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Houston Heights",
+    "Bellaire",
+    "Braeswood Place",
+    "Bunker Hill Village",
+    "Galleria",
+    "Midtown",
+    "Montrose",
+    "Rice Military",
+    "River Oaks",
+    "Washington Corridor",
+    "West University Place",
+    "Hilshire Village",
+    "Humble",
+    "Hunters Creek Village",
+    "Jersey Village",
+    "Kingwood",
+    "Spring",
+    "The Woodlands",
+    "Cypress",
+    "Energy Corridor",
+    "Katy",
+    "Memorial",
+    "Piney Point Village",
+    "Spring Branch",
+    "Spring Valley Village",
+    "Sugar Land",
+    "Upper Kirby"
+  ],
+  "reviews": [
+    {
+      "author": "Gaye Barclay",
+      "text": "Came out within an hour. Jarrod was very friendly and informative. Will definitely use them again."
+    },
+    {
+      "author": "Anne Gerner",
+      "text": "On time professional knowledgeable answered all my question explained everything and they were not pushy"
+    },
+    {
+      "author": "SrDiva Riggins",
+      "text": "Great. Excellent Service. Nick's Plumbing and Air Conditioner Service Technician arrived and unclogged our Sewage in less than two after calling them. It was after 5pm."
+    },
+    {
+      "author": "Chris Tomlinson",
+      "text": "Nick's saved the day again. Had a problem with my AC clicking off in the heat of the day. The behavior was mysterious, but Roberto systematically worked through the system and figured out that it was the Nest thermostat. Signing up for Nick's VIP service, where I can get help within hours instead of days, paid off again."
+    },
+    {
+      "author": "Samuel Lam",
+      "text": "Had a bad AC condenser for my house (over 40 years old). These guys came out within an hour of me calling, did a free inspection, gave me a reasonable quote and said they could do the work the same day. I signed up. The crew shows up an hour later with the unit. They laid down floor covers inside to protect the hardwood. A couple hours later, I had a working AC again."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Phone numbers",
+      "items": [
+        "Plumbing: (713) 868-9907",
+        "Air conditioning and heating: (713) 913-3577",
+        "Email: service@nicksplumbing.com"
+      ]
+    },
+    {
+      "heading": "By the numbers",
+      "items": [
+        "Serving Houston since 1979",
+        "45+ years of proven service",
+        "50,000+ satisfied customers",
+        "Family owned and operated, with no corporate parent",
+        "100% satisfaction guarantee",
+        "24/7 emergency service"
+      ]
+    },
+    {
+      "heading": "Mission",
+      "text": "To offer superior plumbing, heating and air conditioning services to the greater Houston area at a reasonable price. Every call answered at Nick's is aimed at giving the customer a five-star experience, and being family owned means each job gets the individual attention and resources it deserves."
+    },
+    {
+      "heading": "Where Nick's works from",
+      "text": "Nick's runs a fleet of service repair trucks out of its headquarters at 3780 Yale St, in the Independence Heights neighborhood, and has been Houston-based since 1979."
+    },
+    {
+      "heading": "Management team",
+      "items": [
+        "Richard Saad, CEO and President",
+        "John Eccles, Director of Operations",
+        "Gerald Sibley, Plumbing Field Supervisor",
+        "Ursula O'Hara, Director of Marketing",
+        "Jeff Dickerson, HVAC Manager",
+        "Gracie Jackson, Customer Service Manager"
+      ]
+    },
+    {
+      "heading": "What Nick's stands on",
+      "items": [
+        "Integrity, with complete transparency, no hidden fees and no unnecessary upsells",
+        "Quality craftsmanship, with technicians trained to the highest standards and premium materials",
+        "Customer focus, with service tailored to what you need",
+        "Innovation, with continued investment in new technology and training",
+        "Reliability, so when Nick's says it will be there, it is",
+        "Community, as a locally owned business serving its Houston neighbours"
+      ]
+    },
+    {
+      "heading": "Diagnostics and estimates",
+      "items": [
+        "Plumbing diagnostics are carried out with no trip charge",
+        "HVAC diagnostics carry a $69 fee, credited toward any work performed",
+        "Pricing is given upfront before work starts, with no hidden fees",
+        "Final pricing on equipment is set on site after a licensed technician evaluates the home"
+      ]
+    },
+    {
+      "heading": "Offer terms",
+      "items": [
+        "One offer per customer at a time unless an offer states otherwise",
+        "Offers cannot be combined with each other or with previous purchases unless stated",
+        "VIP discounts cannot be combined with any other offer",
+        "Offers are valid only inside Nick's standard service area",
+        "Financing offers are subject to credit approval",
+        "Offers may change or be withdrawn without notice"
+      ]
+    },
+    {
+      "heading": "Awards and recognition",
+      "items": [
+        "2023 Houston City's Best Award",
+        "2024 Best Plumber Award",
+        "Neighborhood Faves 2024",
+        "Five Star Rated",
+        "Best Pick Reports",
+        "HomeAdvisor Top Rated",
+        "A+ rated and BBB accredited",
+        "Member of the Greater Heights Area Chamber of Commerce"
+      ]
+    },
+    {
+      "heading": "Current offers",
+      "items": [
+        "$79 main line drain cleaning, including a camera inspection. Residential only, requires exterior cleanout access, business hours apply",
+        "$49 off any plumbing service for new customers, minimum spend $400",
+        "'48 in 48': send a home inspection report, Nick's reviews the plumbing or HVAC findings line by line, and a written estimate comes back within 48 business hours, for $48",
+        "$275 tankless water heater flush on standard units in working condition",
+        "5% off plumbing repairs for senior citizens",
+        "5% off for veterans and active duty military",
+        "Buy a 6-year warranty Bradford White tank water heater and the manufacturer's warranty is extended another 4 years"
+      ]
+    },
+    {
+      "heading": "Financing through Service Finance",
+      "items": [
+        "Service repair loan, no interest for 6 months. Plan 1006, $1,500 at $56 a month",
+        "Deferred interest, no interest for 18 months. Plan 1018, $10,000 at $264 a month",
+        "No interest and no payments for 12 months. Plan 541243, $10,000 at $144 a month",
+        "Pay over time at 9.95% APR for 120 months. Plan 54132, $10,000 at $132 a month",
+        "Apply online at apply.svcfin.com, with your technician, or by calling (866) 393-0033",
+        "Fast approvals, with e-sign online or in person",
+        "All financing is subject to credit approval"
+      ]
+    },
+    {
+      "heading": "Careers at Nick's",
+      "items": [
+        "Hiring HVAC service technicians, installers, lead installers, senior technicians and associate assistants",
+        "Paid weekly, with PTO and paid holidays",
+        "Company-paid short-term disability insurance",
+        "Voluntary long-term disability, accident, critical illness, hospitalization and legal plans",
+        "Employee Assistance Program available 24/7",
+        "401k with employer match of 100% of the first 3% and 50% of the next 2% of salary, traditional or Roth, eligible after one year"
+      ]
+    },
+    {
+      "heading": "Equipment and brands",
+      "items": [
+        "Daikin dealer, including variable-speed systems",
+        "Mitsubishi ductless air conditioning",
+        "Trane air conditioners, gas furnaces and heat pumps",
+        "REME HALO in-duct air purifiers by RGF Environmental Group",
+        "Platinum IAQ and IAQ package indoor air quality systems",
+        "Bradford White water heaters",
+        "HALO whole-house water filtration and conditioning",
+        "Flow-Tech anti-scale systems",
+        "FLO by Moen water leak detection"
+      ]
+    },
+    {
+      "heading": "Booking and accounts",
+      "text": "Book online, call, or use the web chat on the site. Existing customers have a customer portal, and live representatives take calls 24 hours a day."
+    },
+    {
+      "heading": "Where to find things",
+      "items": [
+        "Plumbing: nicksplumbing.com, (713) 868-9907",
+        "Air conditioning and heating: nicksairconditioning.com, (713) 913-3577",
+        "An AC and heating average cost guide",
+        "An online shop for equipment and parts",
+        "A customer portal for existing customers",
+        "A blog on plumbing, HVAC and indoor air quality, and a media page",
+        "A BBB profile for Nick's Plumbing & Sewer Service"
+      ]
+    },
+    {
+      "heading": "Service area, by region",
+      "items": [
+        "Houston: Bellaire, Braeswood Place, Bunker Hill Village, Galleria, Midtown, Montrose, Rice Military, River Oaks, Washington Corridor, West University",
+        "North Houston: Hilshire Village, Houston Heights, Humble, Hunters Creek Village, Jersey Village, Kingwood, Spring, The Woodlands",
+        "West Houston: Cypress, Energy Corridor, Katy, Memorial, Piney Point Village",
+        "South Houston: Spring Branch, Spring Valley Village, Sugar Land, Upper Kirby"
+      ]
+    },
+    {
+      "heading": "Licensing",
+      "items": ["MPL# 38548", "TACLA0012793E", "TACLB85298E"]
+    },
+    {
+      "heading": "Follow Nick's",
+      "items": ["Facebook", "Instagram", "X", "YouTube", "Nextdoor"]
+    }
+  ]
+}

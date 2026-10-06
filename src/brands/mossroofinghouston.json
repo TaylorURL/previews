@@ -1,0 +1,488 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "Moss Roofing Houston",
+  "shortName": "Moss Roofing",
+  "phone": "(832) 840-8027",
+  "email": "info@mossroofinghouston.com",
+  "address": "13100 Wortham Center Dr, 3rd Floor",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77065",
+  "rating": 5.0,
+  "reviewCount": 715,
+  "since": 2015,
+  "license": "Insured, and a CertainTeed Select ShingleMaster",
+  "hours": [["Mon – Sun", "Open 24 hours"]],
+  "brand": {
+    "primary": "#ed1f24",
+    "primaryDeep": "#9e1115",
+    "accent": "#ff5a5e",
+    "ink": "#1c1c1c",
+    "surface": "#f8f9fa",
+    "heading": "'Open Sans', Arial, Helvetica, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap",
+    "logo": "/brands/mossroofinghouston/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Houston roofing company since 2015",
+    "title": "Right team. Right values.",
+    "titleAccent": "Right roof. Right now.",
+    "lead": "Roof replacement, repair and maintenance for homes and businesses across the greater Houston area. Every job starts with a free consultation and a free roof inspection, and nothing is quoted until we have been on the roof.",
+    "image": "/brands/mossroofinghouston/hero",
+    "imageAlt": "A new shingle roof on a brick home in the Houston area"
+  },
+  "promises": [
+    "Free roof consultation",
+    "Free roof inspection",
+    "Transferable labor warranty",
+    "No money collected until the job is complete"
+  ],
+  "services": [
+    {
+      "slug": "free-roof-consultation",
+      "group": "residential",
+      "title": "Free Roof Consultation",
+      "short": "A skilled roofing consultant out to your home, at no cost.",
+      "text": "Free means free. We send out one of our skilled roofing consultants to assess damage on all roof elevations and accessories.",
+      "image": "/brands/mossroofinghouston/consultation",
+      "imageAlt": "A Moss Roofing Houston yard sign in front of a Houston home",
+      "body": [
+        "Free means free. We will send out one of our skilled roofing consultants for a free roof repair consultation. We will assess damage on all roof elevations and accessories as well as make notes of any damage to gutters, downspouts, and window screens.",
+        "Depending on the extent of damage found during the free roof repair estimate, we will let you know the best next steps for your Houston area home."
+      ],
+      "points": [
+        "Damage assessed on all roof elevations",
+        "Roof accessories checked",
+        "Notes on gutters, downspouts and window screens",
+        "The best next steps for your home, in writing",
+        "No cost and no obligation"
+      ],
+      "faqs": [
+        {
+          "q": "Is the consultation really free?",
+          "a": "Free means free. We will send out one of our skilled roofing consultants for a free roof repair consultation, and you are under no obligation afterwards."
+        }
+      ]
+    },
+    {
+      "slug": "roof-inspection",
+      "group": "residential",
+      "title": "Roof Inspection",
+      "short": "A systematic look at shingles, flashing, accessories and your attic.",
+      "text": "Our roofing consultant team assesses damage to shingles, flashing, roof accessories and the drip edge, then checks the attic for leaks and ventilation.",
+      "image": "/brands/mossroofinghouston/inspection",
+      "imageAlt": "An aerial view of a Houston-area home with a new shingle roof",
+      "body": [
+        "During our systematic free roof inspection, our roofing consultant team will assess damage to shingles, flashing, roof accessories, and the drip edge.",
+        "While performing the free roof analysis, we will also assess your attic for evidence of leaks and the quality and balance of ventilation. Depending on the extent of damage found during the roof review, we will let you know the best next steps for your home."
+      ],
+      "points": [
+        "Shingles, flashing and the drip edge",
+        "Roof accessories",
+        "Attic checked for evidence of leaks",
+        "Quality and balance of ventilation",
+        "The best next steps for your home"
+      ],
+      "faqs": [
+        {
+          "q": "What are the signs that indicate I may need to schedule a roof inspection or repair?",
+          "a": "Signs that may indicate the need for a roof inspection or repair include leaks, missing or damaged shingles, sagging areas, and signs of water damage in your attic or ceiling. If you notice any of these signs, please contact us immediately for a free inspection."
+        }
+      ]
+    },
+    {
+      "slug": "roofing-repair",
+      "group": "residential",
+      "title": "Roofing Repair",
+      "short": "Repair and installation across the greater Houston area.",
+      "text": "We understand the temptation of a cheap and quick fix. A roofing consultant comes out, assesses the damage and talks through the repair options with you first.",
+      "image": "/brands/mossroofinghouston/repair",
+      "imageAlt": "An aerial view of a Houston-area home with a newly replaced roof",
+      "body": [
+        "When it comes to repairing your roof, we understand the temptation to find a cheap and quick fix. However, we highly recommend having one of our Houston area roofing consultants come out to assess any damage and provide you with a free consultation to discuss roofing repair options and the next best steps for your home.",
+        "Don't wait until it's too late. We provide roof repair and installation in the greater Houston area, including Katy, Cinco Ranch, The Woodlands, Clear Lake, and everywhere in between."
+      ],
+      "points": [
+        "Damage assessed by a Houston area roofing consultant",
+        "Free consultation before any repair",
+        "Roof repair and installation",
+        "Katy, Cinco Ranch, The Woodlands, Clear Lake and everywhere in between"
+      ]
+    },
+    {
+      "slug": "roof-replacement",
+      "group": "residential",
+      "title": "Roof Replacement",
+      "short": "Full replacement, usually in a day, with an immaculate cleanup.",
+      "text": "From the first assessment to the final installation, our team works to leave you with a durable roof that protects your home for years to come.",
+      "image": "/brands/mossroofinghouston/replacement",
+      "imageAlt": "An aerial view of a Houston-area home with a pool and a new shingle roof",
+      "claim": true,
+      "materials": true,
+      "body": [
+        "When it comes to replacing your roof, entrusting the job to a reputable and experienced Houston area roof replacement company is paramount. From the initial assessment to the final roof installation, the Moss Roofing team works diligently to ensure the highest quality results, while providing you with a durable and reliable roof that will protect your home for years to come.",
+        "Moss Roofing Houston has been working in the greater Houston area for over a decade and has served over 1,000 homes and their families. We have a local, physical address and we wait until the job is complete to collect any money from you.",
+        "Three questions worth asking any roofing contractor: do they have a local, physical address, do they collect money upfront or wait until the entire job is complete, and do they have a list of at least 15 to 20 clients they have served within the past 30 days?"
+      ],
+      "points": [
+        "A local, physical address in Houston",
+        "No money collected until the job is complete",
+        "Most roofs replaced in one day, up to two on larger homes",
+        "Tear-off shields for outdoor AC units, pool pumps and water softeners",
+        "A dedicated roofing consultant and a project manager on build day",
+        "An immaculate job site cleanup"
+      ],
+      "faqs": [
+        {
+          "q": "How long will it take to replace my roof once the claim is approved?",
+          "a": "The process of removing your roof and replacing it typically takes 1-2 days depending on the size of the roof. Moss Roofing Houston takes pride in offering a quality installation and an immaculate clean up."
+        },
+        {
+          "q": "What are day of build expectations?",
+          "a": "Time can vary, but we strive to be there from 6:00 am and leave around 8:00 pm. Most of the time we can replace your roof in just one day; however, we pride ourselves in replacing your roof with quality and care so it can take up to two days depending on the size of your home."
+        },
+        {
+          "q": "How will you protect my landscaping and outdoor fixtures during the roof replacement?",
+          "a": "It is the homeowner's responsibility to move any items that may be exposed or damaged during the roof replacement. Moss Roofing Houston will take extra measures to protect your property during the roof replacement by using tear-off shields for outdoor AC units, pool pumps, and water softeners."
+        },
+        {
+          "q": "Will there be a point of contact available throughout the roof replacement process?",
+          "a": "Yes, you will have a dedicated roofing consultant who will be your point of contact throughout the roof replacement process. There will also be a project manager present on the day of your roof replacement, capable of answering any technical questions you may have."
+        },
+        {
+          "q": "Do you offer financing options for roof replacement projects?",
+          "a": "Yes, please speak to your roofing consultant about our financing options."
+        },
+        {
+          "q": "Will my insurance cover the full cost of the roof replacement?",
+          "a": "The extent of your coverage can vary depending on your policy arrangement. The homeowner will be responsible for the hail and wind deductible. We will help walk you through the claims process and ensure a seamless process."
+        },
+        {
+          "q": "Is your company insured?",
+          "a": "Yes, Moss Roofing Houston is insured for your peace of mind."
+        },
+        {
+          "q": "Do you provide warranties on your roofing work?",
+          "a": "Yes, Moss Roofing Houston offers a warranty on our workmanship to ensure your satisfaction and protect your investment. As a Select ShingleMaster through CertainTeed, we can offer an extended manufacturer warranty."
+        },
+        {
+          "q": "Can you provide references from past homeowners who have had their roofs replaced through insurance with your company?",
+          "a": "Yes, we'd be happy to provide references from satisfied homeowners who have gone through the insurance claim process with us."
+        },
+        {
+          "q": "Will you provide documentation of the completed roof replacement for my records and for insurance purposes?",
+          "a": "Yes, we'll provide you with detailed documentation of the completed roof replacement for your records and to submit to your insurance company if needed."
+        },
+        {
+          "q": "Can you provide guidance on insurance-related questions or issues that may arise after the roof replacement?",
+          "a": "Yes, we're happy to provide guidance and assistance with any insurance-related questions or issues you may have after the roof replacement. Just reach out to our team, and we'll do our best to help."
+        },
+        {
+          "q": "What should I do if I have questions or concerns about the appearance or performance of my new roof?",
+          "a": "If you have any questions or concerns about your new roof, don't hesitate to contact us. We're here to address any issues and ensure your complete satisfaction with our work."
+        },
+        {
+          "q": "What steps should I take if I want to make any changes or additions to my new roof in the future?",
+          "a": "If you're considering making changes or additions to your new roof, such as adding solar panels or skylights, please contact us to discuss your options to ensure your labor or manufacturer's warranty isn't voided. We'll assess the feasibility and provide recommendations based on your needs."
+        },
+        {
+          "q": "What should I do if I plan to sell my home in the future?",
+          "a": "If you plan to sell your home in the future, having a well-maintained roof can increase its value and appeal to potential buyers. We recommend keeping all documentation related to the roof replacement and scheduling regular inspections to ensure it remains in good condition."
+        },
+        {
+          "q": "How can I provide feedback about my experience with the roof replacement process and the quality of your services?",
+          "a": "We welcome feedback from our homeowners and strive to continuously improve our services. You can provide feedback through various channels, including email, phone, or Google reviews. The greatest compliment we can receive is a word-of-mouth referral to a neighbor, family member, or friend."
+        }
+      ]
+    },
+    {
+      "slug": "residential-roofing",
+      "group": "residential",
+      "title": "Residential Roofing",
+      "short": "Personalized roofing for the place your family lives.",
+      "text": "Replacing a roof after storm damage or simply replacing an aging one, with solutions tailored to each home rather than a single package.",
+      "image": "/brands/mossroofinghouston/residential",
+      "imageAlt": "An aerial view of a two-story Houston-area home with a new roof",
+      "body": [
+        "Residential roofing is more than just protecting a house from the elements; it's about safeguarding the place where families create memories and find refuge. Whether it's replacing roofs after storm damage or simply replacing an aging roof, our dedicated team ensures that every project is completed with precision and care.",
+        "We recognize that each home is unique, which is why we offer personalized solutions tailored to meet each homeowner's specific needs. As a residential roofing company servicing the greater Houston area and its surrounding communities, we provide a wide range of options to enhance both the aesthetics and functionality of residential properties."
+      ],
+      "points": [
+        "Storm damage replacement",
+        "Replacing an aging roof",
+        "Personalized solutions for each home",
+        "Options for both appearance and function",
+        "The greater Houston area and surrounding communities"
+      ]
+    },
+    {
+      "slug": "roofing-maintenance",
+      "group": "residential",
+      "title": "Roofing Maintenance",
+      "short": "Yearly inspections, and a check after every serious storm.",
+      "text": "Your home is one of your biggest investments. We recommend having your roof inspected at least once a year, especially after hail, flooding rain or extreme wind.",
+      "image": "/brands/mossroofinghouston/maintenance",
+      "imageAlt": "An aerial view of a Houston-area home with a newly installed shingle roof",
+      "body": [
+        "Your home is one of your biggest investments and maintaining the health of your roof is key to weathering the storm. As a roof maintenance company and masters of our craft, we strongly recommend proper roofing maintenance, including having your roof inspected at least once a year, especially after any hail storms, flooding rain, or extreme wind events.",
+        "Our Houston roofing consultants are skilled in ascertaining damage and providing you with the next best steps for you and your home. We assist both business and residential clients with roofing maintenance."
+      ],
+      "points": [
+        "Fix any loose shingles",
+        "Survey the fascia and soffit boards, and replace any rotted areas",
+        "Trim any trees that overhang the roof",
+        "Remove any dead branches off any trees around your home",
+        "Clean debris from the valleys on the roof and all gutters"
+      ],
+      "faqs": [
+        {
+          "q": "Will you provide guidance on how to maintain and care for my new roof once the replacement is completed?",
+          "a": "It is recommended that you have your roof inspected yearly to ensure your roof is still performing at top quality. If you had your roof replaced by Moss Roofing Houston, please contact your roofing consultant if any issues arise."
+        }
+      ]
+    }
+  ],
+  "claim": {
+    "title": "How a storm claim works",
+    "text": "We specialize in roof replacements on homes impacted by storm damage, and we work closely with your insurance provider to keep the process smooth.",
+    "steps": [
+      {
+        "title": "Free inspection",
+        "text": "A roofing consultant assesses damage on all roof elevations and accessories, at no cost to you."
+      },
+      {
+        "title": "We walk you through the claim",
+        "text": "We help walk you through the claims process. We have insurance claim specialists on the team who understand how to get a claim approved."
+      },
+      {
+        "title": "Your deductible",
+        "text": "Coverage varies by policy. The homeowner is responsible for the hail and wind deductible."
+      },
+      {
+        "title": "Installation",
+        "text": "Once the claim is approved, removing and replacing your roof typically takes 1-2 days depending on its size."
+      },
+      {
+        "title": "Documentation",
+        "text": "We provide detailed documentation of the completed roof replacement for your records and to submit to your insurance company."
+      }
+    ]
+  },
+  "materials": {
+    "title": "Materials and manufacturers we work with",
+    "text": "We take pride in only partnering with companies whose quality of materials we wholeheartedly believe in. As a CertainTeed Select ShingleMaster, we install the Integrity Roof System on most of our projects, and the CertainTeed Landmark shingle is the product we feature.",
+    "brands": ["CertainTeed", "ABC Supply Co.", "SRS", "KARNAK"]
+  },
+  "about": {
+    "title": "A Houston roofing contractor, founded here in 2015",
+    "text": [
+      "Moss Roofing Houston was founded in 2015 by Wiley Moss. Our mission has always been to consistently deliver our clients exceptional customer service, materials and craftsmanship, and our goal is to build a foundation of trust with the community by doing it right the first time.",
+      "With over 50 years of combined experience in construction, roofing and insurance claims, we are trusted experts in storm restoration and roof replacement. We specialize in complex insurance claims, including helping homeowners who have been previously denied by their insurance.",
+      "Our commitment to achieving perfection is a combination of selecting high-quality products and roofing materials, an efficient installation by expert roofing crews, a great roofing warranty, fantastic customer service, and an immaculate job site cleanup. We're not done until you say we are."
+    ],
+    "image": "/brands/mossroofinghouston/team",
+    "imageAlt": "The Moss Roofing Houston team photographed together at the office",
+    "values": [
+      {
+        "title": "Customer obsessed",
+        "text": "We prioritize our customers' experience, and we're not done until you say we are."
+      },
+      {
+        "title": "Passionate about roof replacements",
+        "text": "Storm restoration and roof replacement are what we specialize in, not a sideline."
+      },
+      {
+        "title": "Ownership in all things",
+        "text": "Agile, responsive and team focused, from the first call to the final cleanup."
+      }
+    ]
+  },
+  "inspection": {
+    "title": "What happens at a free roof inspection",
+    "steps": [
+      {
+        "title": "A consultant comes out",
+        "text": "One of our skilled roofing consultants visits your Houston area home at no cost."
+      },
+      {
+        "title": "We assess the roof and attic",
+        "text": "Shingles, flashing, roof accessories and the drip edge, then the attic for leaks and ventilation."
+      },
+      {
+        "title": "You get the next steps",
+        "text": "Depending on the damage found, we let you know the best next steps and quote any work."
+      }
+    ]
+  },
+  "serviceArea": [
+    "Houston",
+    "Katy",
+    "Cinco Ranch",
+    "The Woodlands",
+    "Clear Lake",
+    "Cypress",
+    "Spring",
+    "Tomball",
+    "Sugarland",
+    "Richmond",
+    "Rosenberg",
+    "Pearland",
+    "Missouri City",
+    "Friendswood",
+    "Fulshear",
+    "Brookshire",
+    "Klein",
+    "Memorial",
+    "West Memorial",
+    "Bridgeland",
+    "Towne Lake",
+    "Aliana",
+    "Augusta Pines",
+    "Autumn Ridge",
+    "Avonak",
+    "Benders Landing",
+    "Bryan",
+    "College Station",
+    "Colony Bend",
+    "Cross Creek Ranch",
+    "Fairfield Village",
+    "Falcon Ranch",
+    "Grand Lakes",
+    "Grand Mission Estates",
+    "Grayson Lakes",
+    "Greatwood",
+    "Hickory Creek",
+    "Katy Creek Ranch",
+    "Lake Jackson",
+    "Lakemont",
+    "Lakes of Bella Terra",
+    "Louetta",
+    "Magnolia Plantation",
+    "North Hampton",
+    "Park Row",
+    "Pecan Bend",
+    "Pecan Grove",
+    "Pine Lakes",
+    "Rayford",
+    "Rose Hill",
+    "Seven Meadows",
+    "Shenandoah",
+    "Sienna Plantation",
+    "Silver Ranch",
+    "Sugar Creek",
+    "Sugar Lakes",
+    "Sugar Mill",
+    "Sweetwater",
+    "Telfair",
+    "Texana Plantation",
+    "Venetian Estates",
+    "Waters of Avalon",
+    "Waterside Estates",
+    "Williamsburg Colony & Settlement"
+  ],
+  "areasText": "Moss Roofing serves Houston and all surrounding cities, from our office on Wortham Center Drive out to Katy, Cinco Ranch, The Woodlands, Clear Lake and everywhere in between.",
+  "areasImage": "/brands/mossroofinghouston/areas",
+  "areasImageAlt": "An aerial view of a Houston-area neighborhood home with a new roof",
+  "contactImage": "/brands/mossroofinghouston/contact",
+  "contactImageAlt": "An aerial view of a Houston-area home with a newly completed roof",
+  "reviews": [
+    {
+      "author": "Mike Erickson, Clear Lake",
+      "text": "After a hail storm damaged our roof in May 2019, we decided to start the process of having it inspected by our insurance and replaced. We got lucky when Wiley and his crew just happened to be working in our neighborhood. Within a couple days Wiley inspected our roof and we hired him to replace our roof. Wiley helped us get the best deal from our insurance company by negotiating with them directly, as well as handling many of the details we were inexperienced with."
+    },
+    {
+      "author": "Clark Thannisch, The Heights",
+      "text": "Wiley and his crew were a pleasure to work with and treated my house as if it were their own with great care! It was a great experience start to finish! One thing I look for in hired help is knowledge, experience and work ethic, and man does this crew have all three!"
+    },
+    {
+      "author": "Gail Turner, Richmond",
+      "text": "Thank you Mr. Moss and your crew for a stress free experience during a very stressful time. He reviewed the insurance quote with us to help determine how best to settle on a price that would benefit my husband and I. The job was completed in one day. The clean up after job completion was stellar. The roof is so pretty!"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Our team",
+      "items": [
+        "Wiley, Owner",
+        "Mike H., General Manager",
+        "Gretchen, Office Manager",
+        "Ross, Operations Manager"
+      ]
+    },
+    {
+      "heading": "Our qualifications",
+      "items": [
+        "Over 50 years of combined experience in construction, roofing and insurance claims",
+        "We specialize in complex insurance claims and helping homeowners who have been previously denied by their insurance",
+        "Insurance claim specialists on the team who understand how to get a claim approved",
+        "A+ rated through the BBB",
+        "Listed by Forbes Home among roofing companies in Houston, TX",
+        "Over a decade in the greater Houston area, and over 1,000 homes served"
+      ]
+    },
+    {
+      "heading": "Certifications and partners",
+      "items": [
+        "CertainTeed Select ShingleMaster",
+        "Certified CertainTeed contractor, installing the full Integrity Roof System",
+        "KARNAK Q Applicator Program",
+        "Partners and suppliers: CertainTeed, ABC Supply Co., SRS and KARNAK"
+      ]
+    },
+    {
+      "heading": "Warranty",
+      "text": "We stand behind the quality of our workmanship and roofing materials. Our warranty offers a transferable feature on our labor, and through our partnership with CertainTeed we can provide extended warranties covering both their product and our workmanship. Speak to one of our roofing consultants to learn more."
+    },
+    {
+      "heading": "Insurance and financing",
+      "text": "Moss Roofing Houston is insured for your peace of mind. Financing options are available for roof replacement projects. Please speak to your roofing consultant about them."
+    },
+    {
+      "heading": "Payment",
+      "text": "We have a local, physical address and we wait until the job is complete to collect any money from you. On an insurance job, the homeowner is responsible for the hail and wind deductible."
+    },
+    {
+      "heading": "Our mission",
+      "items": [
+        "We deliver extraordinary roofing solutions.",
+        "We prioritize our customers' experience.",
+        "We guarantee the ultimate security for your home.",
+        "We honor God in all things."
+      ]
+    },
+    {
+      "heading": "Core values",
+      "items": [
+        "Passionate about roof replacements",
+        "Customer obsessed",
+        "Team focused",
+        "Agile and responsive",
+        "Ownership in all things"
+      ]
+    },
+    {
+      "heading": "References and documentation",
+      "text": "We are happy to provide references from homeowners who have gone through the insurance claim process with us, and we provide detailed documentation of the completed roof replacement for your records and for your insurer."
+    },
+    {
+      "heading": "Community projects",
+      "text": "We serve the communities we build in by giving back, especially when catastrophe hits. Our community projects include Kolbe House after Hurricane Laura and Children's Lighthouse of Spring after Hurricane Ida."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/mossroofinghouston",
+        "Instagram: instagram.com/mossroofinghouston",
+        "LinkedIn: linkedin.com/company/moss-roofing-houston",
+        "Read and leave reviews on our Google Business Profile"
+      ]
+    },
+    {
+      "heading": "Careers",
+      "text": "Moss Roofing Houston hires in the greater Houston area, full-time and part-time. Positions we recruit for are market specialist, insurance claims specialist, sales and internships. An application asks for your last three employers, at least two references and a resume, and selected applicants submit to a background check."
+    }
+  ]
+}
