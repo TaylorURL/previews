@@ -1,0 +1,767 @@
+{
+ "template": "hvac",
+ "preview": true,
+ "name": "Air Tech of Houston AC & Plumbing",
+ "shortName": "Air Tech",
+ "summary": "Air conditioning, heating, plumbing, electrical and generator service for the greater Houston area, from a team that has worked this market since 1985.",
+ "phone": "(832) 680-5546",
+ "email": "service@airtechofhouston.com",
+ "address": "2114 Lou Ellen Ln",
+ "town": "Houston",
+ "state": "TX",
+ "zip": "77018",
+ "rating": 4.8,
+ "reviewCount": 6577,
+ "since": 1985,
+ "hours": [
+  [
+   "Mon – Sun",
+   "Open 24 hours"
+  ]
+ ],
+ "brand": {
+  "primary": "#00383e",
+  "primaryDeep": "#00262a",
+  "accent": "#ff6e00",
+  "ink": "#0d1f22",
+  "muted": "#4d6468",
+  "surface": "#eef5f5",
+  "line": "#d4e2e2",
+  "heading": "'Poppins', system-ui, sans-serif",
+  "body": "'Open Sans', system-ui, sans-serif",
+  "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap",
+  "logo": "/brands/airtechofhouston/logo.webp",
+  "logoWidth": 200
+ },
+ "emergency": {
+  "title": "24/7 emergency service",
+  "text": "AC, heating, plumbing and electrical emergencies are answered around the clock, and after-hours fees on HVAC calls are currently waived."
+ },
+ "licenses": [
+  {
+   "label": "HVAC",
+   "number": "TACLB00110099E"
+  },
+  {
+   "label": "Plumbing",
+   "number": "RMP 44203"
+  },
+  {
+   "label": "Electrical",
+   "number": "592546; 39145"
+  }
+ ],
+ "financing": {
+  "text": "Financing on new systems and larger jobs through Synchrony, Wells Fargo Home Projects and Service Finance, all subject to credit approval."
+ },
+ "hero": {
+  "eyebrow": "Air conditioning, electrical and plumbing in Houston, TX",
+  "title": "Repair, installation and maintenance",
+  "titleAccent": "since 1985",
+  "lead": "One team for cooling, heating, plumbing, electrical and whole-home generators. Call any hour, get a price before the work starts, and have it backed by written guarantees.",
+  "image": "/brands/airtechofhouston/hero",
+  "imageAlt": "Air Tech service vans and trucks lined up with the Houston skyline behind them"
+ },
+ "groups": [
+  {
+   "slug": "air-conditioning",
+   "title": "Air Conditioning",
+   "icon": "snowflake",
+   "summary": "Repair, replacement, tune-ups and indoor air quality for the long Houston summer.",
+   "intro": "High humidity and heat are the norm in the Houston area, so air conditioning is not a luxury. From installation to seasonal tune-ups, Air Tech keeps every part of the cooling system in condition to run accurately and efficiently all summer. After-hours fees on HVAC calls are currently waived.",
+   "image": "/brands/airtechofhouston/cooling",
+   "imageAlt": "An Air Tech technician working at an outdoor air conditioning condenser",
+   "services": [
+    {
+     "slug": "ac-emergency",
+     "title": "AC Emergency",
+     "icon": "timer",
+     "text": "Fast emergency AC repair when you need it most, answered around the clock.",
+     "points": [
+      "Answered 24 hours a day",
+      "No after-hours fee on HVAC calls right now"
+     ]
+    },
+    {
+     "slug": "ac-repair",
+     "title": "AC Repair",
+     "icon": "wrench",
+     "text": "Diagnosis and repair of a system that is running but not cooling, short cycling or making noise.",
+     "points": [
+      "Price given before any work starts",
+      "No quotes over the phone, so there are no surprises at the door",
+      "$50 off repairs, with a 2 year parts and labour warranty",
+      "$0 service fee when a repair is carried out"
+     ]
+    },
+    {
+     "slug": "ac-installation",
+     "title": "AC Installation",
+     "icon": "air-vent",
+     "text": "New systems sized by a full in-home load analysis rather than a guess at square footage.",
+     "points": [
+      "Load analysis covers insulation, windows, ceiling height and duct layout",
+      "Indoor and outdoor components matched so the rated efficiency is what you get",
+      "30% utility savings guarantee on new system installations",
+      "10 year parts and labour guarantee",
+      "Up to $2,000 off select new AC systems"
+     ]
+    },
+    {
+     "slug": "ac-tune-up",
+     "title": "AC Tune-Up",
+     "icon": "gauge",
+     "text": "A precision tune-up in spring, before Houston's heat and humidity arrive.",
+     "points": [
+      "Fans, compressors and coils, indoor and outdoor",
+      "Refrigerant lines and levels",
+      "Electrical connections, drain lines and ductwork"
+     ]
+    },
+    {
+     "slug": "ductless-ac",
+     "title": "Ductless AC",
+     "icon": "wind",
+     "text": "Ductless systems for rooms and additions where running ductwork does not make sense.",
+     "points": [
+      "Equipment from Mitsubishi Electric and other carried brands"
+     ]
+    },
+    {
+     "slug": "indoor-air-quality",
+     "title": "Indoor Air Quality",
+     "icon": "filter",
+     "text": "A standard one-inch filter protects the equipment; it does not meaningfully clean the air you breathe. Media filtration and purification do.",
+     "points": [
+      "Free indoor air quality test",
+      "$100 off any indoor air quality product or service",
+      "Media and whole-home air filtration systems",
+      "UV air purifiers",
+      "Humidifiers and dehumidifiers"
+     ]
+    },
+    {
+     "slug": "air-ducts",
+     "title": "Air Ducts",
+     "icon": "cable",
+     "text": "Ductwork inspection, sealing, insulation, cleaning and sanitising.",
+     "points": [
+      "Duct cleaning and sanitising",
+      "Ductwork inspection, sealing and insulation"
+     ]
+    },
+    {
+     "slug": "attic-insulation",
+     "title": "Attic Insulation",
+     "icon": "home",
+     "text": "Attic insulation that keeps the cool air inside the house where it belongs.",
+     "points": []
+    },
+    {
+     "slug": "thermostats",
+     "title": "Thermostats",
+     "icon": "thermometer",
+     "text": "Smart thermostats installed and set up around your schedule, so comfort is managed without thinking about it daily.",
+     "points": []
+    },
+    {
+     "slug": "indoor-hvac-components",
+     "title": "Indoor HVAC Components",
+     "icon": "settings",
+     "text": "When one part is not working, the whole system feels it. Indoor components diagnosed and replaced.",
+     "points": []
+    }
+   ]
+  },
+  {
+   "slug": "heating",
+   "title": "Heating",
+   "icon": "flame",
+   "summary": "Furnace repair, replacement and tune-ups, plus heat pumps that cover both seasons.",
+   "intro": "Mild Houston winters do not mean a working heater is optional. Air Tech handles furnace repair, maintenance and replacement, and keeps every part of the heating system in condition before the first cold front. Heating maintenance is done in the fall, before you actually need it.",
+   "image": "/brands/airtechofhouston/heating",
+   "imageAlt": "A heat pump unit beside a modern house exterior",
+   "services": [
+    {
+     "slug": "heating-emergency",
+     "title": "Heating Emergency",
+     "icon": "timer",
+     "text": "No heat during a freeze is answered the same way an AC failure in August is: around the clock.",
+     "points": [
+      "Answered 24 hours a day"
+     ]
+    },
+    {
+     "slug": "furnace-repair",
+     "title": "Furnace Repair",
+     "icon": "wrench",
+     "text": "Furnace faults diagnosed and repaired, with the price agreed before work begins.",
+     "points": []
+    },
+    {
+     "slug": "furnace-installation",
+     "title": "Furnace Installation",
+     "icon": "heater",
+     "text": "Furnace replacement sized to the house, from brands including Trane, American Standard, Daikin, Carrier and Mitsubishi Electric.",
+     "points": [
+      "No Lemon Guarantee: a heat exchanger that fails in the first 10 years means a new furnace"
+     ]
+    },
+    {
+     "slug": "furnace-tune-up",
+     "title": "Furnace Tune-Up",
+     "icon": "gauge",
+     "text": "Fall maintenance covering dampers, valves, blowers, burners and the flue, alongside the usual electrical and drain checks.",
+     "points": [
+      "Twice-yearly maintenance is what gets the most life out of a system"
+     ]
+    },
+    {
+     "slug": "heat-pumps",
+     "title": "Heat Pumps",
+     "icon": "sun",
+     "text": "A two-in-one heating and cooling system, installed and serviced.",
+     "points": []
+    }
+   ]
+  },
+  {
+   "slug": "plumbing",
+   "title": "Plumbing",
+   "icon": "droplets",
+   "summary": "Drains, water heaters, leaks, sewer lines and gas lines, residential and commercial.",
+   "intro": "Residents in Houston and the surrounding areas rely on their plumbing every day, and minor inconveniences turn into major headaches quickly. Air Tech handles thorough, long-lasting plumbing repairs, replacements and tune-ups across Houston, Conroe, Humble, Pasadena, Katy and the surrounding areas.",
+   "image": "/brands/airtechofhouston/plumbing",
+   "imageAlt": "An Air Tech plumber working on a kitchen sink faucet",
+   "services": [
+    {
+     "slug": "emergency-plumbing",
+     "title": "Emergency Plumbing",
+     "icon": "timer",
+     "text": "Burst pipes, active leaks and sewer backups do not wait for business hours. If the house is flooding, call and the team will walk you through shutting off the water supply while a technician is on the way.",
+     "points": [
+      "Answered 24 hours a day"
+     ]
+    },
+    {
+     "slug": "drain-cleaning",
+     "title": "Drain Cleaning",
+     "icon": "waves",
+     "text": "Slow drains, sink odours and drains that will not clear, cleared properly rather than temporarily.",
+     "points": [
+      "$89 drain clearing special, originally $129, with a free camera inspection"
+     ]
+    },
+    {
+     "slug": "plumbing-repairs",
+     "title": "Plumbing Repairs",
+     "icon": "wrench",
+     "text": "Low pressure through the house, slow drains in several places at once, gurgling, wet spots or a water bill that has crept up are all worth looking at early.",
+     "points": [
+      "Warranty terms vary by service and are explained before the work is completed"
+     ]
+    },
+    {
+     "slug": "water-heaters",
+     "title": "Water Heaters",
+     "icon": "flame",
+     "text": "Tank and tankless water heaters installed, repaired and flushed.",
+     "points": [
+      "$150 off a new tank water heater, with a 10 year tank, parts and labour warranty on select units",
+      "$250 off a new tankless water heater"
+     ]
+    },
+    {
+     "slug": "water-leaks",
+     "title": "Water Leaks",
+     "icon": "droplets",
+     "text": "Random wet spots, water stains and unexplained high bills traced back to the leak causing them.",
+     "points": []
+    },
+    {
+     "slug": "slab-leak-detection",
+     "title": "Slab Leak Detection",
+     "icon": "gauge",
+     "text": "A slab leak is a leak in the water lines beneath the concrete foundation. Warm spots on the floor, running water with everything off, a rising water bill or new cracks in flooring are the signs. Left alone they cause serious foundation damage.",
+     "points": [
+      "Detection and repair, including the hardest-to-reach leaks"
+     ]
+    },
+    {
+     "slug": "sewer-lines",
+     "title": "Sewer Lines",
+     "icon": "waves",
+     "text": "Sewer line inspection, repair and replacement.",
+     "points": []
+    },
+    {
+     "slug": "trenchless-plumbing",
+     "title": "Trenchless Plumbing",
+     "icon": "settings",
+     "text": "Sewer and pipe repairs without tearing up the property.",
+     "points": [
+      "Free camera inspection on trenchless plumbing services, so you see the problem yourself"
+     ]
+    },
+    {
+     "slug": "gas-lines",
+     "title": "Gas Lines",
+     "icon": "flame",
+     "text": "Gas line work for a safe and functional home.",
+     "points": []
+    },
+    {
+     "slug": "bathroom-plumbing",
+     "title": "Bathroom Plumbing",
+     "icon": "droplets",
+     "text": "Bathtubs, showers, toilets and the fixtures around them repaired and replaced.",
+     "points": []
+    },
+    {
+     "slug": "kitchen-plumbing",
+     "title": "Kitchen Plumbing",
+     "icon": "home",
+     "text": "From dishwashers to garbage disposals, the kitchen kept running.",
+     "points": []
+    },
+    {
+     "slug": "water-softeners",
+     "title": "Water Softeners",
+     "icon": "filter",
+     "text": "Hard water is a real issue in the Houston area and it damages fixtures and water heaters over time. Whole-home softeners and filtration systems installed.",
+     "points": []
+    },
+    {
+     "slug": "sump-pumps",
+     "title": "Sump Pumps",
+     "icon": "waves",
+     "text": "Sump pump installation and service, before the next heavy rain hits.",
+     "points": []
+    },
+    {
+     "slug": "commercial-plumbing",
+     "title": "Commercial Plumbing",
+     "icon": "building",
+     "text": "Repairs and fixture upgrades for business premises across the Houston area.",
+     "points": []
+    }
+   ]
+  },
+  {
+   "slug": "electrical",
+   "title": "Electrical",
+   "icon": "zap",
+   "summary": "Panels, wiring, lighting, surge protection, smoke detectors and EV chargers.",
+   "intro": "A breaker that will not stay reset, half the house without power or a switch that pops rather than clicks all need a licensed electrician. Air Tech's electricians hold state licenses and handle everything from an outlet swap to a panel replacement or a whole-home rewire.",
+   "image": "/brands/airtechofhouston/electrical",
+   "imageAlt": "A residential electrical panel with the breakers exposed",
+   "services": [
+    {
+     "slug": "electrical-emergency",
+     "title": "Electrical Emergency",
+     "icon": "timer",
+     "text": "A loud pop from a switch, a warm switch plate or crackling is arcing, which is a fire hazard and should be checked right away.",
+     "points": [
+      "Answered 24 hours a day"
+     ]
+    },
+    {
+     "slug": "electrical-panels",
+     "title": "Electrical Panels",
+     "icon": "circuit",
+     "text": "Panel repair and replacement. A panel is energised even with the main breaker off, which is why it is not a job to take on yourself.",
+     "points": [
+      "$99 panel maintenance special"
+     ]
+    },
+    {
+     "slug": "electrical-repairs",
+     "title": "Electrical Repairs",
+     "icon": "wrench",
+     "text": "A breaker that trips with nothing plugged in, or half the house losing power from a lost leg, points to a wiring fault rather than a device.",
+     "points": []
+    },
+    {
+     "slug": "switch-outlet-repair",
+     "title": "Switch & Outlet Repair",
+     "icon": "plug",
+     "text": "Switches, outlets and GFCIs replaced. A GFCI that keeps tripping with nothing obviously wrong is worth looking at.",
+     "points": []
+    },
+    {
+     "slug": "wiring-and-rewiring",
+     "title": "Wiring & Rewiring",
+     "icon": "cable",
+     "text": "Wiring and whole-home rewiring by a licensed electrician.",
+     "points": []
+    },
+    {
+     "slug": "surge-protection",
+     "title": "Whole-Home Surge Protection",
+     "icon": "shield",
+     "text": "A whole-home surge protector sits at the panel and intercepts a surge from a storm or a grid fluctuation before it reaches appliances, electronics or HVAC equipment.",
+     "points": [
+      "$100 off whole-home surge protectors"
+     ]
+    },
+    {
+     "slug": "ev-chargers",
+     "title": "EV Chargers",
+     "icon": "ev",
+     "text": "A dedicated Level 2 charger at home, with the permits pulled and the circuit sized for the vehicle.",
+     "points": [
+      "10% off electric vehicle chargers"
+     ]
+    },
+    {
+     "slug": "lighting",
+     "title": "Lighting",
+     "icon": "lightbulb",
+     "text": "Interior lighting installed and replaced.",
+     "points": []
+    },
+    {
+     "slug": "outdoor-lighting",
+     "title": "Outdoor & Security Lighting",
+     "icon": "sun",
+     "text": "Outdoor and security lighting for the yard, drive and entrances.",
+     "points": []
+    },
+    {
+     "slug": "ceiling-fans",
+     "title": "Ceiling Fans",
+     "icon": "fan",
+     "text": "Ceiling fans installed and replaced.",
+     "points": []
+    },
+    {
+     "slug": "smoke-co-detectors",
+     "title": "Smoke & CO Detectors",
+     "icon": "shield",
+     "text": "Smoke and carbon monoxide detectors fitted and replaced.",
+     "points": []
+    },
+    {
+     "slug": "home-automation",
+     "title": "Home Automation",
+     "icon": "settings",
+     "text": "Home automation wiring and setup.",
+     "points": []
+    },
+    {
+     "slug": "electrical-inspections",
+     "title": "Electrical Inspections",
+     "icon": "gauge",
+     "text": "Inspections of the panel, circuits and wiring.",
+     "points": []
+    },
+    {
+     "slug": "electrical-remodeling",
+     "title": "Electrical Remodeling",
+     "icon": "home",
+     "text": "Electrical work for remodels and additions.",
+     "points": []
+    }
+   ]
+  },
+  {
+   "slug": "generators",
+   "title": "Generators",
+   "icon": "battery",
+   "summary": "Standby generators installed and maintained for Houston's outages and storm season.",
+   "intro": "After extended outages, winter storms and hurricane season, more Houston-area homeowners are taking backup power seriously. A standby generator is permanently installed, connected to the natural gas or propane line and tied into the electrical panel, so it senses the outage and starts within seconds. No extension cords, no hauling fuel.",
+   "image": "/brands/airtechofhouston/generators",
+   "imageAlt": "A whole-home standby generator installed on a pad beside a house",
+   "services": [
+    {
+     "slug": "generator-installation",
+     "title": "Generator Installation",
+     "icon": "power",
+     "text": "Whole-home standby generators installed and connected to the panel, so the house comes back on its own when the grid goes down.",
+     "points": [
+      "Free estimates on new whole-home generator installations"
+     ]
+    },
+    {
+     "slug": "generator-maintenance",
+     "title": "Generator Maintenance",
+     "icon": "settings",
+     "text": "Generators sit idle most of the time, which is harder on them than regular use. Oil, filters, spark plugs and battery connections all need periodic attention, and a weekly self-test is not a substitute for an annual tune-up.",
+     "points": [
+      "Shield of Protection members can include generator maintenance in the plan"
+     ]
+    }
+   ]
+  }
+ ],
+ "promo": {
+  "eyebrow": "Seasonal tune-up",
+  "title": "Get the system ready before the Texas summer",
+  "text": "Schedule a seasonal AC tune-up and have the fans, compressors, coils, refrigerant levels, electrical connections and drain lines checked before the heat arrives.",
+  "price": "$69",
+  "priceNote": "mention the coupon when scheduling",
+  "image": "/brands/airtechofhouston/tuneup",
+  "imageAlt": "An impact driver and tools resting on an outdoor air conditioning unit during a service visit"
+ },
+ "plan": {
+  "name": "Shield of Protection",
+  "intro": "One membership covering HVAC, plumbing and electrical. Air Tech schedules the maintenance visits and sends the reminders, so the systems are seen to before summer and before the next freeze.",
+  "tiers": [
+   {
+    "name": "Shield of Protection",
+    "price": "Call",
+    "period": "for current pricing",
+    "featured": true,
+    "features": [
+     "Two free precision HVAC tune-ups a year, spring AC and fall heating",
+     "One free plumbing inspection and a yearly hot water tank flush",
+     "One free electrical inspection",
+     "48-hour priority scheduling across all trades",
+     "Free diagnostic fee on all trades",
+     "20% off HVAC repairs, 10% off plumbing, 5% off electrical",
+     "$100 a year loyalty credit toward a new system, up to $800"
+    ]
+   }
+  ],
+  "note": "If membership lapses for 3 months, the loyalty credit is voided. Tankless water heaters are not included in the yearly tank flush."
+ },
+ "about": {
+  "eyebrow": "About us",
+  "title": "Your reliable partner since 1985",
+  "text": [
+   "Since 1985, Air Tech of Houston AC & Plumbing has delivered home comfort work to homeowners throughout the Houston area. What began as an HVAC company has grown into a full-service provider covering heating, cooling, electrical, plumbing, generators, drain cleaning and indoor air quality, all from one team.",
+   "From fast repairs and routine maintenance to complete system replacements and new installations, the technicians are trained, certified and equipped for everything from air conditioning and heating systems to whole-home generators, electrical upgrades, plumbing repairs and indoor air quality work.",
+   "The industry keeps changing, which is why Air Tech keeps investing in training so technicians stay current with the technology, codes and best practices. That is what makes the difference between a lasting solution and a temporary fix.",
+   "Every service is backed by written satisfaction guarantees, and the Shield of Protection membership plan adds priority scheduling, discounts and preventative maintenance for homeowners who would rather stay ahead of problems than react to them."
+  ],
+  "image": "/brands/airtechofhouston/team",
+  "imageAlt": "Air Tech technicians standing in front of a branded service van",
+  "values": [
+   {
+    "title": "No Surprise Pricing",
+    "text": "The quote given upfront is the price paid. Any additional work is approved in writing before it is started."
+   },
+   {
+    "title": "Licensed And Background Checked",
+    "text": "Every technician is licensed, background checked and randomly drug tested. HVAC technicians are EPA certified and the company is fully insured."
+   },
+   {
+    "title": "Property Protection",
+    "text": "Lawns, shrubbery, carpets, floors, walls, furniture and door frames are protected, drop cloths are used on all work and traffic areas, and damaged property is repaired or replaced."
+   }
+  ]
+ },
+ "faqs": [
+  {
+   "q": "How often should I have my HVAC system maintained?",
+   "a": "Twice a year. AC tune-ups in the spring before Houston's heat and humidity arrive, and heating maintenance in the fall before you actually need it. If you would rather stop thinking about it, the Shield of Protection membership handles the scheduling for you."
+  },
+  {
+   "q": "What does preventative maintenance actually include?",
+   "a": "A technician inspects the fans, compressors, coils, refrigerant lines, electrical connections, drain lines, ductwork and furnace components. The point is to find the small problems while they are still small, before they turn into an expensive repair in the middle of a heat wave."
+  },
+  {
+   "q": "What is a SEER rating and does it matter?",
+   "a": "SEER stands for Seasonal Energy Efficiency Ratio, and it measures how much cooling you get for every dollar of electricity. A higher number means lower bills. Modern systems start around 14 SEER, and we back new installations with a 30% utility savings guarantee."
+  },
+  {
+   "q": "How often should I change my air filter?",
+   "a": "A standard one-inch filter usually needs replacing every 30 days. Thicker media filters can go 60 to 90 days. Shorten the interval if you have pets or anyone in the house has allergies."
+  },
+  {
+   "q": "What should I set my thermostat to?",
+   "a": "Whatever you are comfortable with. For efficiency, 78 degrees while you are home and higher while you are out is the usual advice, and a smart thermostat handles the switching for you."
+  },
+  {
+   "q": "How often should I clean my AC drain line?",
+   "a": "Once a month is a good habit. Flush it with a mix of equal parts warm water and white vinegar."
+  },
+  {
+   "q": "How long should my HVAC system last?",
+   "a": "It depends on the equipment, how it was installed and how well it has been maintained. Generally a well-maintained system in the Houston area runs 12 to 18 years. Between the long summers, the humidity and the occasional hard freeze, regular maintenance is the single biggest factor in getting the most life out of it."
+  },
+  {
+   "q": "How do I know what HVAC system is right for my home?",
+   "a": "Bigger is not better. An oversized system short-cycles, wears out faster and never properly dehumidifies the house. An undersized one runs constantly and still cannot keep up. We do a full in-home load analysis covering square footage, insulation, window placement, ceiling height and duct layout before recommending anything."
+  },
+  {
+   "q": "Do you give quotes over the phone?",
+   "a": "No. A phone quote is either too low, so you are surprised at the door, or padded to protect us, so you overpay. We send a technician, they assess what is actually going on, and give you a clear price before touching anything. You decide whether to move forward."
+  },
+  {
+   "q": "What is a slab leak and how do I know if I have one?",
+   "a": "A slab leak is a leak in the water lines that run beneath the concrete foundation, and they are more common in the Houston area than most homeowners realise. Signs include warm spots on the floor, the sound of running water when everything is off, an unexplained rise in the water bill, or cracks in flooring or walls. Left alone they cause serious foundation damage."
+  },
+  {
+   "q": "Do you warranty your plumbing work?",
+   "a": "Yes. The terms vary by the type of service, and we go through them with you before the work starts rather than after."
+  },
+  {
+   "q": "Why does my circuit breaker keep tripping?",
+   "a": "Usually overload. High-draw appliances like a microwave, toaster and hair dryer running at once will do it. Try unplugging everything on that circuit and resetting the breaker. If it holds, the problem is likely one of the devices. If it trips again with nothing plugged in, there is a wiring issue and you need an electrician."
+  },
+  {
+   "q": "I lost power to part of my house. What should I check first?",
+   "a": "Look for a tripped GFCI outlet with a reset button on it, usually in a bathroom, kitchen, garage or outside. Then check the breaker panel for a flipped breaker. If neither explains it, call us."
+  },
+  {
+   "q": "What is a GFCI and why does mine keep tripping?",
+   "a": "A GFCI, or ground fault circuit interrupter, watches the flow of electricity and cuts it off the instant it detects an imbalance. Nuisance tripping usually comes down to a failing appliance on the circuit, moisture, or a GFCI that has simply worn out."
+  },
+  {
+   "q": "Can I replace a circuit breaker or outlet myself?",
+   "a": "We strongly recommend you do not. The panel is energised even when the main breaker is off, and touching the wrong part can cause serious injury or start a fire."
+  },
+  {
+   "q": "Why does half my house have no power?",
+   "a": "That usually means a lost leg, where one of the two 120-volt lines feeding the house has a bad connection. If the fault is on the utility's side of the meter they will test and repair it at no cost to you. If it is at your meter or panel, it needs a licensed electrician."
+  },
+  {
+   "q": "What is the difference between a standby generator and a portable one?",
+   "a": "A portable generator runs on gasoline, has to be started by hand and needs to stay well outside the house. A standby generator is permanently installed, connected to the natural gas or propane line and tied into the panel, so it senses the outage and starts within seconds on its own."
+  },
+  {
+   "q": "Is the Shield of Protection worth it if my system is newer?",
+   "a": "Yes. Manufacturer warranties generally require documented maintenance to stay valid, so the tune-ups protect the coverage you already paid for. The free diagnostic fee on its own offsets much of the membership, and the yearly loyalty credit builds toward the eventual replacement."
+  },
+  {
+   "q": "Are your technicians licensed?",
+   "a": "Yes. Every technician is licensed, background checked and holds the credentials required for their trade. Our electricians and plumbers hold state licenses, our HVAC technicians are EPA certified, we are fully insured, and we carry a BBB A+ rating."
+  },
+  {
+   "q": "Do you offer financing?",
+   "a": "Yes. A new HVAC system, a whole-home generator or a full repipe is not a small purchase, so we offer financing through Synchrony, Wells Fargo Home Projects and Service Finance. Terms vary by project and all options are subject to credit approval."
+  }
+ ],
+ "serviceArea": [
+  "Houston",
+  "Conroe",
+  "Katy",
+  "The Woodlands",
+  "Humble",
+  "Pasadena"
+ ],
+ "facts": [
+  {
+   "heading": "Licenses",
+   "items": [
+    "HVAC: TACLB00110099E",
+    "Plumbing: RMP 44203",
+    "Electrical: 592546; 39145"
+   ]
+  },
+  {
+   "heading": "Ironclad guarantees",
+   "items": [
+    "100% Customer Satisfaction Guarantee on every job: if we disappoint, we come back and make it right",
+    "30% Utility Savings Guarantee on a new system installation",
+    "10 Year Part & Labor Guarantee",
+    "Transparent estimates",
+    "Peace of Mind: technicians are background checked and randomly drug tested",
+    "100% Money Back: if an installed system does not reach the promised temperature range, it is replaced at no charge",
+    "No Surprise: the quote upfront is the price paid, with additional work approved in writing first",
+    "Property Protection: damaged property is repaired or replaced, drop cloths on all work areas",
+    "Comfort: equipment that does not perform as stated is removed and the investment returned in full",
+    "$500 Installation Date: $500 paid if a new system is not operating by the date promised",
+    "$500 No Frustration: a first-year breakdown leaving you without heating or cooling is attended within 24 hours or $500 is paid",
+    "No Lemon: a compressor failing twice in the first 5 years means a new condensing unit; a heat exchanger failing in the first 10 means a new furnace"
+   ]
+  },
+  {
+   "heading": "Certifications and ratings",
+   "items": [
+    "BBB accredited with an A+ rating",
+    "Trane Comfort Specialist Dealer",
+    "Excellence in Workplace Culture 2025",
+    "Carrier corporation partner",
+    "EPA certified HVAC technicians",
+    "Licensed electricians and plumbers holding state licenses",
+    "Fully insured",
+    "Serving the greater Houston area for over 40 years"
+   ]
+  },
+  {
+   "heading": "Brands carried",
+   "text": "Trane, American Standard, Daikin, Carrier and Mitsubishi Electric."
+  },
+  {
+   "heading": "Current specials",
+   "items": [
+    "$69 AC tune-up",
+    "Free indoor air quality test",
+    "$89 drain clearing, originally $129, with a free camera inspection",
+    "$25 off the dispatch fee for new plumbing customers",
+    "$100 off any indoor air quality product or service",
+    "Up to $2,000 off select new AC systems",
+    "$150 off a new tank water heater, $250 off a new tankless",
+    "Up to 20% off any plumbing service or repair",
+    "$99 panel maintenance",
+    "$100 off whole-home surge protectors",
+    "10% off EV chargers",
+    "$50 off repairs, including a 2 year parts and labour warranty",
+    "$0 service fee with a repair",
+    "Free camera inspection for trenchless plumbing",
+    "Free estimates on new whole-home generator installations",
+    "No after-hours fee on HVAC services",
+    "0% financing available through Service Finance, subject to credit approval",
+    "A standing offer on the Shield of Protection membership"
+   ]
+  },
+  {
+   "heading": "Coupon terms",
+   "text": "Mention the coupon when scheduling. Offers cannot be combined with one another, and restrictions apply on most of them. The drain clearing special covers one accessible ground-level drain line, one per customer. The $50 off and $0 service fee offers are one-time use, one per customer, and apply to future services. The tankless water heater discount is limited to one per customer. Generator estimates are free on new installations only."
+  },
+  {
+   "heading": "Financing",
+   "text": "Synchrony Home Design card, the Wells Fargo Home Projects card with 60 month financing on deluxe and above Trane equipment, and Service Finance, which carries 0% financing on approved credit. Each lender takes its application online. All subject to credit approval and lender terms. Synchrony promotions carry a $69 account activation fee, a 26.99% purchase APR on new accounts and a $2 minimum monthly interest charge, and minimum monthly payments are required. The Wells Fargo offer applies to Trane deluxe equipment and above, carries no additional discount, and restrictions apply."
+  },
+  {
+   "heading": "Our locations",
+   "items": [
+    "Houston: 2114 Lou Ellen Ln, Houston, TX 77018, (832) 699-4685",
+    "Conroe: 12577 TX-105, Conroe, TX 77304, (936) 955-1137",
+    "The Woodlands: 25307 IH 45 North, 160, The Woodlands, TX 77380, (713) 366-4237",
+    "Katy: 1402 Vander Wilt Ln, Katy, TX 77449, (713) 571-2112",
+    "Humble: 1710 1st Street East, Humble, TX 77338, (346) 361-2159",
+    "Pasadena: 2915 Preston Ave., Pasadena, TX 77503, (281) 944-3759"
+   ]
+  },
+  {
+   "heading": "Booking",
+   "text": "Request service online or by phone, and tell us whether you need a repair, maintenance, an estimate or something else. Every location keeps the same hours and answers around the clock. A request submitted after hours or at a weekend is best placed by phone, as otherwise it is answered the following business day."
+  },
+  {
+   "heading": "Our team",
+   "items": [
+    "Jey G., service technician, more than 20 years with Air Tech",
+    "Isaac, HVAC installation technician, more than 10 years",
+    "Claudia, service technician, more than 10 years",
+    "Nicholas R., service technician",
+    "Jeremy, service technician",
+    "Micah, service technician"
+   ]
+  },
+  {
+   "heading": "Working here",
+   "items": [
+    "Health insurance and a 401K after 90 days",
+    "Paid holiday and vacation time",
+    "A company vehicle",
+    "Continual training and room to grow",
+    "A family-oriented atmosphere",
+    "Applications are taken online, and an employee of the month is recognised"
+   ]
+  },
+  {
+   "heading": "Policies",
+   "text": "An accessibility statement, privacy policy, terms and conditions, legal disclaimer and marketing opt-out preferences are all published and available to read."
+  },
+  {
+   "heading": "Follow us",
+   "items": [
+    "Facebook: facebook.com/airtechofhouston",
+    "YouTube: @AirTechACPlumbing"
+   ]
+  }
+ ]
+}
