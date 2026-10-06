@@ -22,7 +22,7 @@ import {
   Zap,
 } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { EnquiryForm, Img, Stars } from './shared.jsx';
+import { EnquiryForm, Img, Stars, Facts } from './shared.jsx';
 
 const ICONS = {
   flame: Flame,
@@ -473,6 +473,8 @@ export default function Plumbing({ b }) {
       </section>
 
       <footer className="bg-primary-deep pb-24 text-white/75 md:pb-0">
+
+        <Facts b={b} />
         <div className={`${wrap} grid gap-10 pb-12 pt-14 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:gap-12`}>
           <div className="grid content-start gap-4">
             {b.brand.logo ? (

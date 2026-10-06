@@ -149,7 +149,7 @@ import {
   X,
 } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { EnquiryForm, Img, Stars } from './shared.jsx';
+import { EnquiryForm, Img, Stars, Facts } from './shared.jsx';
 import { onColor } from './printing/color.js';
 
 const CATEGORY_ICONS = {
@@ -899,6 +899,7 @@ function Footer({ b, cats, tel }) {
   const link = 'flex min-h-[44px] items-center text-white/85 no-underline hover:text-accent';
   return (
     <footer className="bg-ink text-white/75">
+      <Facts b={b} />
       <div className={`${wrap} grid gap-10 pb-12 pt-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_0.8fr_1.1fr] lg:gap-12`}>
         <div className="grid content-start gap-5">
           {b.brand.logo ? (

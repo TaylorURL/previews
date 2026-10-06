@@ -81,7 +81,7 @@
 import { useEffect, useState } from 'react';
 import { ArrowRight, ArrowUpRight, CalendarDays, Clock, Mail, MapPin, Menu, MessageCircle, Phone, X } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { Img, Stars } from './shared.jsx';
+import { Img, Stars, Facts } from './shared.jsx';
 import { onColor } from './salon/color.js';
 import { SOCIAL } from './salon/icons.jsx';
 
@@ -375,6 +375,7 @@ export default function Salon({ b, path = '' }) {
 
   const footer = (
     <footer className="bg-panel">
+      <Facts b={b} />
       <div className={`${wrap} grid justify-items-center gap-8 pb-10 pt-[clamp(4rem,8vw,6rem)] text-center`}>
         <a href={page ? '/' : '#top'} className="no-underline" aria-label={`${b.name} home`}>
           <Wordmark b={b} size="footer" />

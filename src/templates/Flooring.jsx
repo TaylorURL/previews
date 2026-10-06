@@ -90,7 +90,7 @@
 import { useState } from 'react';
 import { ArrowRight, ArrowUpRight, Check, Clock, Mail, MapPin, Phone } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { EnquiryForm, Img, Stars } from './shared.jsx';
+import { EnquiryForm, Img, Stars, Facts } from './shared.jsx';
 import Header from './flooring/Header.jsx';
 import { BrandMark, Eyebrow, MASONRY, h2, light, outline, pad, solid, wrap } from './flooring/parts.jsx';
 
@@ -359,6 +359,7 @@ function Footer({ b, cats }) {
   const tel = telHref(b.phone);
   return (
     <footer className="bg-primary-deep text-white/80">
+      <Facts b={b} />
       <div className={`${wrap} grid gap-12 pb-12 pt-16 sm:grid-cols-2 lg:grid-cols-[1.3fr_0.8fr_1fr_1.25fr] lg:gap-12`}>
         <div className="grid content-start gap-5">
           {b.brand.logo ? (

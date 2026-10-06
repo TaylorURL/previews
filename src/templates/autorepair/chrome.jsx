@@ -1,3 +1,4 @@
+import { Facts } from '../shared.jsx';
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, ChevronDown, Mail, MapPin, Menu, Phone, X } from 'lucide-react';
 import { mapsHref } from '../../site.js';
@@ -360,6 +361,7 @@ export function Footer({ b, tel, today }) {
 
   return (
     <footer id="visit" className="scroll-mt-28 bg-panel pb-[72px] text-white md:pb-0">
+      <Facts b={b} />
       <div className="grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)]">
         <div className={`px-gutter py-[clamp(3.5rem,7vw,5.5rem)] lg:pr-14 ${edgeLlg}`}>
           <Eyebrow dark>Shop hours</Eyebrow>
