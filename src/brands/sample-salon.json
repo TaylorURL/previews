@@ -1,0 +1,138 @@
+{
+  "template": "salon",
+  "name": "Willow Room Hair Studio",
+  "shortName": "Willow Room",
+  "phone": "(281) 555-0163",
+  "texts": true,
+  "email": "hello@willowroom.example",
+  "address": "4721 Garth Rd, Suite 140",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77521",
+  "rating": 4.9,
+  "reviewCount": 263,
+  "since": 2014,
+  "hours": [["Sunday – Monday", "Closed"], ["Tuesday – Thursday", "10 AM – 7 PM"], ["Friday", "9 AM – 6 PM"], ["Saturday", "8 AM – 3 PM"]],
+  "booking": {
+    "url": "https://willowroom.example/book",
+    "label": "Book Online"
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/willowroom.baytown",
+    "handle": "@willowroom.baytown",
+    "facebook": "https://www.facebook.com/willowroom.baytown",
+    "tiktok": "https://www.tiktok.com/@willowroom.baytown"
+  },
+  "brand": {
+    "primary": "#a8654f",
+    "primaryDeep": "#5e3428",
+    "accent": "#d8b4a0",
+    "ink": "#2a2320",
+    "muted": "#74675f",
+    "bg": "#fbf7f3",
+    "panel": "#f3e9e2",
+    "surface": "#ffffff",
+    "line": "#e6d9cf",
+    "heading": "'Playfair Display', Georgia, serif",
+    "body": "'DM Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap",
+    "logo": null
+  },
+  "hero": {
+    "eyebrow": "Hair studio · Garth Road, Baytown",
+    "title": "Color, cuts and blowouts,",
+    "titleAccent": "done slowly and done well.",
+    "lead": "A bright, unhurried studio for lived-in color, precision cuts and hair that still looks right six weeks later.",
+    "image": "/brands/sample-salon/hero",
+    "imageAlt": "A stylist finishing a client's hair by the front window of the studio",
+    "collage": [
+      { "image": "/brands/sample-salon/collage-wave", "alt": "Long brunette hair with soft caramel ends, styled in loose waves" },
+      { "image": "/brands/sample-salon/collage-bob", "alt": "A sleek, glossy brown bob seen from behind" }
+    ]
+  },
+  "intro": {
+    "eyebrow": "The studio",
+    "title": "Every appointment starts with a conversation.",
+    "text": "Before anyone picks up scissors or a color bowl, your stylist sits down with you to talk through what you want, how you wear your hair day to day and what it will take to keep it. Then they do the work without rushing it.",
+    "points": ["Free color consultations", "Olaplex in every lightening service", "Cruelty-free professional color", "Kids welcome on Saturdays"],
+    "image": "/brands/sample-salon/studio",
+    "imageAlt": "The studio's front desk under a white arch, with color products shelved behind it"
+  },
+  "menu": [
+    {
+      "group": "Cut",
+      "text": "Every cut includes a consultation, a shampoo and a finished style.",
+      "image": "/brands/sample-salon/cut",
+      "imageAlt": "A stylist point-cutting the ends of a client's dark hair",
+      "items": [
+        { "name": "Women's Cut and Style", "price": 65, "from": true, "text": "Shaped to how you actually wear it.", "duration": "60 min" },
+        { "name": "Men's Cut", "price": 40, "text": "Scissor or clipper, washed and styled.", "duration": "30 min" },
+        { "name": "Bang or Fringe Trim", "price": 15, "text": "Between appointments.", "duration": "15 min" },
+        { "name": "Kids' Cut", "price": 30, "text": "Twelve and under.", "duration": "30 min" }
+      ]
+    },
+    {
+      "group": "Color",
+      "text": "Prices start with shoulder-length hair. Longer or thicker hair is quoted at your consultation.",
+      "image": "/brands/sample-salon/color",
+      "imageAlt": "Two colorists applying lightener and foils to a client's hair",
+      "items": [
+        { "name": "Root Touch-Up", "price": 85, "from": true, "text": "Single process at the regrowth.", "duration": "90 min" },
+        { "name": "All-Over Color", "price": 110, "from": true, "text": "One shade, roots to ends.", "duration": "2 hr" },
+        { "name": "Partial Highlights", "price": 140, "from": true, "text": "Foils around the face and crown.", "duration": "2 hr" },
+        { "name": "Balayage", "price": 195, "from": true, "text": "Hand-painted and soft at the root, with a toner.", "duration": "3 hr" },
+        { "name": "Gloss or Toner", "price": 45, "text": "Refreshes tone and adds shine.", "duration": "30 min" }
+      ]
+    },
+    {
+      "group": "Treatments",
+      "text": "Add any treatment to a cut or color, or book it on its own.",
+      "image": "/brands/sample-salon/treatment",
+      "imageAlt": "A client reclined at the shampoo bowl during a conditioning treatment",
+      "items": [
+        { "name": "Keratin Smoothing", "price": 250, "from": true, "text": "Cuts frizz for up to four months.", "duration": "3 hr" },
+        { "name": "Olaplex Bond Repair", "price": 35, "text": "For hair that has been lightened or heat-styled hard.", "duration": "20 min" },
+        { "name": "Scalp Treatment", "price": 30, "text": "Exfoliating scrub and a long massage at the bowl.", "duration": "20 min" }
+      ]
+    },
+    {
+      "group": "Styling",
+      "text": "For events, photos or a week that needs good hair.",
+      "image": "/brands/sample-salon/styling",
+      "imageAlt": "A stylist blow-drying a client's hair with a round brush",
+      "items": [
+        { "name": "Blowout", "price": 45, "text": "Shampoo and a smooth or bouncy finish.", "duration": "45 min" },
+        { "name": "Curls or Waves", "price": 55, "text": "Iron-set, brushed out soft.", "duration": "45 min" },
+        { "name": "Updo", "price": 85, "from": true, "text": "Formal or undone, with a trial on request.", "duration": "60 min" },
+        { "name": "Bridal Hair", "price": 150, "from": true, "text": "On-site styling for the bride and party, quoted per event.", "duration": "By quote" }
+      ]
+    }
+  ],
+  "menuNote": "Prices are starting points. Your stylist confirms the price at your consultation, before any work begins.",
+  "policies": [
+    { "title": "New color clients", "text": "Book a free 15-minute consultation first, so we can patch test and plan the color." },
+    { "title": "Running late", "text": "Text us. More than 15 minutes late, we may need to move your appointment." },
+    { "title": "Cancelling", "text": "Please give us 24 hours' notice so someone on the waiting list can take the time." }
+  ],
+  "stylists": [
+    { "name": "Lauren", "role": "Owner and Colorist", "image": "/brands/sample-salon/stylist-1", "bio": "Lauren opened the studio in 2014 after ten years behind the chair in Houston. She does most of the studio's balayage and corrective color.", "specialties": ["Balayage", "Color correction", "Blonding"] },
+    { "name": "Danielle", "role": "Senior Stylist", "image": "/brands/sample-salon/stylist-2", "bio": "Danielle loves a precise cut: bobs, shags and anything with a sharp line. She also does the studio's keratin treatments.", "specialties": ["Precision cuts", "Keratin", "Short hair"] },
+    { "name": "Imani", "role": "Stylist", "image": "/brands/sample-salon/stylist-3", "bio": "Imani works with curls and coils of every type, from silk presses to curl-by-curl cuts, and keeps the studio's Saturdays busy.", "specialties": ["Curly cuts", "Silk press", "Natural hair"] },
+    { "name": "Sam", "role": "Stylist", "image": "/brands/sample-salon/stylist-4", "bio": "Sam does men's and gender-neutral cuts, lived-in color and most of the studio's wedding-day styling.", "specialties": ["Men's cuts", "Bridal styling", "Lived-in color"] }
+  ],
+  "gallery": [
+    { "image": "/brands/sample-salon/look-1", "alt": "Dark hair with soft brown balayage in loose waves" },
+    { "image": "/brands/sample-salon/look-2", "alt": "Long silver-blonde waves with a darker root" },
+    { "image": "/brands/sample-salon/look-3", "alt": "Two clients with blonde and bronde waves, side by side" },
+    { "image": "/brands/sample-salon/look-4", "alt": "Dark twists with copper-brown ends" },
+    { "image": "/brands/sample-salon/look-5", "alt": "Platinum blonde hair being smoothed with a round brush" },
+    { "image": "/brands/sample-salon/look-6", "alt": "A stylist setting curls with an iron" }
+  ],
+  "reviews": [
+    { "author": "Color client", "text": "I have been chasing the right blonde for years and Lauren got it in one appointment. It grew out soft, with no line at the root, and I went eleven weeks before I needed to come back." },
+    { "author": "Regular since 2019", "text": "Danielle listens. I brought one blurry photo and she still knew exactly what I meant." },
+    { "author": "First visit", "text": "Imani was so patient with my curls and showed me how to style them at home. The studio is calm and bright and nobody rushed me." }
+  ],
+  "visitImage": "/brands/sample-salon/visit",
+  "visitImageAlt": "The studio's styling floor, with arched mirrors along one wall"
+}
