@@ -1,10 +1,8 @@
-"""What is real about one business: read from its own website and its Google
-listing, and nothing else.
+"""What is real about one business, read from its own website.
 
-Every value carries where it came from, so the checks can prove a phone number,
-a rating or a quoted review against the source rather than trusting the brand
-file. Anything not found stays empty; nothing is guessed and nothing is
-borrowed from another business.
+The Google listing's phone, address, rating and review count were stored on the
+prospect when it was found, so nothing here asks Google. Anything not found
+stays empty; nothing is guessed and nothing is borrowed from another business.
 """
 
 import os
@@ -227,30 +225,6 @@ def css_text(pages, limit=4):
             except Exception:
                 continue
     return "\n".join(out)
-
-
-PLACES_FIELDS = (
-    "displayName,rating,userRatingCount,reviews,regularOpeningHours,formattedAddress,"
-    "nationalPhoneNumber,addressComponents,photos,websiteUri"
-)
-
-
-def places(place_id):
-    key = os.environ.get("GOOGLE_PLACES_API_KEY")
-    if not key or not place_id:
-        return {}
-    request = urllib.request.Request(
-        f"https://places.googleapis.com/v1/places/{place_id}",
-        headers={"X-Goog-Api-Key": key, "X-Goog-FieldMask": PLACES_FIELDS},
-    )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return json.loads(response.read().decode())
-
-
-def place_photo(name, width=1600):
-    key = os.environ.get("GOOGLE_PLACES_API_KEY")
-    url = f"https://places.googleapis.com/v1/{name}/media?maxWidthPx={width}&key={key}"
-    return fetch(url, timeout=40, binary=True)[1]
 
 
 def jsonld_business(pages):
