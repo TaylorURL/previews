@@ -1,0 +1,341 @@
+{
+  "template": "autorepair",
+  "preview": true,
+  "name": "Gulf Coast Auto & Truck Repair",
+  "shortName": "Gulf Coast Auto & Truck Repair",
+  "phone": "(281) 332-8376",
+  "email": "service@gcatr.com",
+  "address": "281 Highway 3 S.",
+  "town": "League City",
+  "state": "TX",
+  "zip": "77573",
+  "mapQuery": "Gulf Coast Auto & Truck Repair, 281 Highway 3 S, League City, TX 77573",
+  "since": 1982,
+  "rating": 4.9,
+  "reviewCount": 1693,
+  "hours": [
+    ["Mon – Fri", "7 AM – 6 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#be2a33",
+    "primaryDeep": "#8c1d24",
+    "accent": "#f2c40c",
+    "ink": "#15191e",
+    "panel": "#1f262d",
+    "surface": "#eef0f2",
+    "line": "#d6dadf",
+    "muted": "#5c6670",
+    "heading": "'Open Sans', system-ui, sans-serif",
+    "body": "'PT Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&family=PT+Sans:wght@400;700&display=swap",
+    "logo": "/brands/gulfcoastautotruckrepair/logo.webp",
+    "logoWidth": 150
+  },
+  "hero": {
+    "eyebrow": "League City's one-stop auto and truck repair shop since 1982",
+    "title": "From sub-compacts to class 7 trucks,",
+    "titleAccent": "we are equipped to fix it.",
+    "lead": "Gas, diesel, alternative fuel, hybrid or electric. Our staff is trained to diagnose and repair your vehicle right the very first time, at a competitive price and in a timely manner.",
+    "image": "/brands/gulfcoastautotruckrepair/shopfront",
+    "imageAlt": "Cars and a lifted pickup parked in front of the Gulf Coast Auto & Truck Repair building on Highway 3 South"
+  },
+  "warranty": {
+    "title": "100% guaranteed satisfaction warranty",
+    "text": "Customer satisfaction is our number one priority. We are committed to you, not just today but for the long term, and we promise never to upcharge or sell you repairs your vehicle does not need."
+  },
+  "certifications": [
+    {
+      "title": "Master Certified Technicians",
+      "text": "Our team of master certified technicians and dedicated professionals is geared to diagnose and repair your vehicle's specific problem."
+    },
+    {
+      "title": "12-point inspection with every service",
+      "text": "We check the vehicle over on every visit to catch issues before they become expensive problems."
+    }
+  ],
+  "services": [
+    {
+      "slug": "diesel-and-truck-repair",
+      "title": "Diesel and Truck Repair",
+      "icon": "truck",
+      "summary": "Powerstroke, Duramax and Cummins work, up to class 7 commercial trucks.",
+      "text": "Diesel pickups, commercial trucks, RVs and motorhomes. We work on Ford Powerstroke, Chevy Duramax and Dodge Cummins engines, from a DEF system fault to pulling the cab to reach the drive line.",
+      "image": "/brands/gulfcoastautotruckrepair/dieselbay",
+      "imageAlt": "A Ford Super Duty in the shop with its cab lifted off, exposing the drive line",
+      "items": [
+        { "title": "Diesel Engine Repair", "text": "Diagnosis and repair on diesel pickups and commercial trucks, from sub-compacts right up to class 7." },
+        { "title": "Diesel DEF System Repairs", "text": "Diesel exhaust fluid system faults traced and repaired." },
+        { "title": "Diesel Truck Repair in League City", "text": "Chevy Duramax, Dodge Cummins, Ford Powerstroke, and Chevy, Dodge, Ford, GMC and Toyota pickups." },
+        { "title": "RVs and Motorhomes", "text": "Minor to major repairs on motorhomes, including the generator, water pump system, engine and electrical circuits, as well as suspension and brake work." },
+        { "title": "Fleet Maintenance", "text": "Scheduled maintenance for businesses running multiple commercial vehicles, catching problems before they put a truck off the road." }
+      ]
+    },
+    {
+      "slug": "engine-repair",
+      "title": "Engine Repair",
+      "icon": "engine",
+      "summary": "Gas and diesel engine work, cooling, timing belts and tune-ups.",
+      "text": "Gas engine repair, overheating, timing belts, water pumps and tune-ups. We work on all types of domestic and import autos and handle minor to major repairs and everything in between.",
+      "image": "/brands/gulfcoastautotruckrepair/exhaustpipes",
+      "imageAlt": "New exhaust pipes fitted to a diesel truck before the cab is lowered back on",
+      "items": [
+        { "title": "Gas Engine Repair", "text": "Domestic and import engines, minor to major." },
+        { "title": "Timing Belt Replacement", "text": "Belt, tensioner and related parts replaced on schedule." },
+        { "title": "Radiators and Water Pumps", "text": "Radiator service, coolant and antifreeze change and flush, and water pump replacement." },
+        { "title": "Tune-ups", "text": "Plugs, filters and the rest of a tune-up, with a 12-point inspection on the visit." },
+        { "title": "Exhaust and Muffler Service", "text": "Exhaust and muffler service and repair." }
+      ]
+    },
+    {
+      "slug": "diagnostics-and-electrical",
+      "title": "Diagnostics and Electrical",
+      "icon": "scan",
+      "summary": "Check engine lights, factory programming and electrical faults.",
+      "text": "A check engine light can mean something serious or something as basic as a faulty gas cap. We are fully equipped to find out which, on gas, diesel, hybrid, EV and alternative fuel vehicles.",
+      "items": [
+        { "title": "Check Engine Light", "text": "Contact us as soon as the light comes on and we will tell you what is behind it." },
+        { "title": "Engine Diagnostics", "text": "Industry standard equipment and the latest technology to find the fault the first time." },
+        { "title": "Factory Programming", "text": "Factory programming for modules that need it after a repair." },
+        { "title": "Electrical Repairs", "text": "Automotive electrical work, power windows and power accessories." },
+        { "title": "Emission System Repair", "text": "Emission system faults diagnosed and repaired." }
+      ]
+    },
+    {
+      "slug": "brakes",
+      "title": "Brakes",
+      "icon": "brakes",
+      "summary": "Inspection, pads and rotors, hoses, fluid and anti-lock faults.",
+      "text": "Brake repair keeps your vehicle performing safely on the road. Leaks in the brake lines are a serious road hazard, so our brake work starts with identifying the issue accurately and fixing it promptly.",
+      "items": [
+        { "title": "Brake Inspection", "text": "A free brake inspection tells you where the brakes stand before anything is replaced." },
+        { "title": "Brake Service and Repair", "text": "Pads and rotors per axle, on cars and light trucks." },
+        { "title": "Brake Fluid and Hoses", "text": "Brake fluid flushes and brake hose replacement." },
+        { "title": "Anti-lock Brakes", "text": "Anti-lock brake faults diagnosed and repaired." }
+      ]
+    },
+    {
+      "slug": "suspension-and-alignment",
+      "title": "Suspension and Alignment",
+      "icon": "wheel",
+      "summary": "Struts, shocks, complete suspension repairs and wheel alignment.",
+      "text": "Suspension carries the weight of the vehicle, and the road puts a lot of stress on it. If the steering dips over uneven surfaces or the tires shake, bring it in. We are especially proficient at suspension and alignments.",
+      "items": [
+        { "title": "Complete Suspension Repairs", "text": "Front and rear suspension work on cars, trucks and motorhomes." },
+        { "title": "Struts and Shocks", "text": "Worn struts and shocks replaced." },
+        { "title": "Wheel and Tire Alignment", "text": "Alignment for most cars and light trucks, with a free alignment check." },
+        { "title": "Drive Axles and U-joints", "text": "Drive axle and u-joint replacement." }
+      ]
+    },
+    {
+      "slug": "transmission-and-drivetrain",
+      "title": "Transmission and Drivetrain",
+      "icon": "transmission",
+      "summary": "Automatic, manual and CVT repair, rear ends and transaxles.",
+      "text": "Automatic, manual and continuously variable transmission specialists are here at the shop. Contact us at the first sign of an issue, before a small problem turns into an expensive transmission job.",
+      "image": "/brands/gulfcoastautotruckrepair/transmission",
+      "imageAlt": "A clutch release bearing welded to the transmission front bearing cover on a 2003 Dodge Durango",
+      "items": [
+        { "title": "Automatic Transmission Repairs", "text": "Automatic transmission diagnosis, repair and overhaul." },
+        { "title": "Manual and CVT Repair", "text": "Manual and continuously variable transmission work." },
+        { "title": "Rear End and Transaxle Repairs", "text": "Rear ends and transaxles rebuilt or replaced." },
+        { "title": "Clutch and Drivetrain Noise", "text": "Noises under the clutch pedal traced to the part causing them." }
+      ]
+    },
+    {
+      "slug": "ac-and-heating",
+      "title": "AC and Heating",
+      "icon": "snowflake",
+      "summary": "Air conditioning and heating systems, with a free AC check.",
+      "text": "Air conditioning and heating repair for cars, light trucks and motorhomes, starting with a free AC check to find where the system is losing it.",
+      "items": [
+        { "title": "Air Conditioning Repair (HVAC)", "text": "Leaks, compressors and controls on most cars and light trucks." },
+        { "title": "Heating Systems", "text": "Heater and climate control repair." },
+        { "title": "Free AC Check", "text": "A check of the system before any work is quoted." }
+      ]
+    },
+    {
+      "slug": "maintenance",
+      "title": "Maintenance",
+      "icon": "droplet",
+      "summary": "Oil changes, scheduled service, batteries, starters and alternators.",
+      "text": "Preventative maintenance is what keeps the expensive repairs away. Fluid checks and changes, filters and system inspections, on the schedule your vehicle calls for.",
+      "items": [
+        { "title": "Oil Changes and Lube Service", "text": "Oil and filter service for cars, light trucks and diesels." },
+        { "title": "Preventative and Scheduled Maintenance", "text": "Fluids, filters and inspections set to a schedule for your vehicle." },
+        { "title": "Air Filter Replacement", "text": "Air filter checked and changed, which is an inexpensive way to keep fuel economy and performance where they should be." },
+        { "title": "Batteries, Starters and Alternators", "text": "Charging and starting system parts tested and replaced, with a free battery check." },
+        { "title": "Fuel Injection Cleaning", "text": "Fuel injection cleaning service." }
+      ]
+    }
+  ],
+  "servicesIntro": "Our goal is to provide all the services you may ever need for your vehicle, on domestic and import autos, diesel pickup trucks and motorhomes. We handle minor to major repairs and everything in between, and we take you and your family's safety seriously, as if it were our own.",
+  "expect": [
+    {
+      "title": "Call, text or stop by",
+      "text": "Call (281) 332-8376, or use our dedicated customer text line at (281) 724-5242 for questions, service inquiries, estimates and general correspondence."
+    },
+    {
+      "title": "We find the fault first",
+      "text": "Master certified technicians diagnose the problem with industry standard equipment, and every service includes a 12-point inspection."
+    },
+    {
+      "title": "A complete estimate before anything starts",
+      "text": "You get a complete estimate of what needs doing right away alongside the items that can wait, and our technicians never perform any work without your authorization first."
+    },
+    {
+      "title": "Repaired right the first time",
+      "text": "We repair your vehicle on its first visit, at a price that is affordable, and we never upcharge or sell you repairs your vehicle does not need."
+    }
+  ],
+  "expectTitle": "How a visit goes",
+  "makes": [
+    "Acura", "BMW", "Buick", "Cadillac", "Chevrolet", "Chrysler", "Dodge", "Ford", "GMC", "Honda",
+    "Hyundai", "Infiniti", "Jeep", "Lexus", "Lincoln", "Mazda", "Mercedes", "Mercury", "MINI",
+    "Nissan", "Oldsmobile", "Pontiac", "Porsche", "Saturn", "Scion", "Subaru", "Suzuki", "Toyota"
+  ],
+  "makesText": "Domestic and foreign, from mini sub-compacts, sedans and SUVs to 1-ton trucks and class 7 commercial vehicles, as well as RVs and motorhomes. On the diesel side we work on Chevy Duramax, Dodge Cummins, Ford Powerstroke and Toyota pickups.",
+  "about": {
+    "eyebrow": "About the shop",
+    "title": "Delivering honest, affordable and quality driven auto and truck repair since 1982",
+    "text": [
+      "Gulf Coast Auto & Truck Repair of League City is your one-stop auto and truck repair shop. Our mission is to provide you with the absolute best service at a competitive price while doing so in a timely manner. From sub-compacts to class 7 commercial trucks, we are equipped and trained to handle all your repair needs.",
+      "The mission of the management and master certified technical teams at Gulf Coast Auto and Truck Repair is to correctly repair your vehicle on its first visit, to do so at a price that is affordable, and to perform those repairs in a timely manner. In addition, we promise never to upcharge or sell you repairs that your vehicle does not need.",
+      "Our shop is set up to be an integral part of the Clear Lake and Bay Area communities. For more than 35 years we have kept the residents and businesses in this area operating in good condition, and we have been providing quality service and repair for the greater Bay Area for over 40 years."
+    ],
+    "image": "/brands/gulfcoastautotruckrepair/lot",
+    "imageAlt": "The Gulf Coast Auto & Truck Repair building with customer vehicles parked out front and a car under the covered bay",
+    "points": [
+      "Open Monday to Friday, 7 AM to 6 PM",
+      "24-hour towing service",
+      "Customer shuttle service",
+      "Financing available",
+      "Gas, diesel, hybrid, EV and alternative fuel",
+      "Fleet maintenance for commercial vehicles",
+      "Appointments can be requested online",
+      "Service desk: Casey, Blake and Gabe"
+    ],
+    "gallery": [
+      {
+        "image": "/brands/gulfcoastautotruckrepair/entrance",
+        "alt": "The front of the shop on Highway 3 South with customer cars parked at the door"
+      },
+      {
+        "image": "/brands/gulfcoastautotruckrepair/frontdoor",
+        "alt": "The shop entrance with the Gulf Coast Auto & Truck Repair sign and the company truck in the covered bay"
+      },
+      {
+        "image": "/brands/gulfcoastautotruckrepair/shopyard",
+        "alt": "Customer trucks and SUVs in the lot beside the covered service bay"
+      }
+    ]
+  },
+  "band": {
+    "title": "Need a repair, an estimate or a tow?",
+    "text": "Call (281) 332-8376, text (281) 724-5242, or email service@gcatr.com. Towing is available 24 hours."
+  },
+  "serviceArea": [
+    "League City",
+    "Texas City",
+    "La Marque",
+    "Hitchcock",
+    "Santa Fe",
+    "Alvin",
+    "Friendswood",
+    "Pearland",
+    "South Houston",
+    "Houston",
+    "Clear Lake City",
+    "Nassau Bay",
+    "Seabrook",
+    "Kemah",
+    "Clear Lake Shores",
+    "Bacliff",
+    "Bayview",
+    "Dickinson",
+    "Webster"
+  ],
+  "facts": [
+    {
+      "heading": "Towing and shuttle",
+      "items": [
+        "24-hour towing service, dispatched to your area 24/7",
+        "After hours towing: (281) 316-1325",
+        "After hours towing text: (281) 957-1889",
+        "Dedicated customer shuttle service",
+        "Towing a vehicle that will not start is the way to get it repaired here, and we arrange it for you"
+      ]
+    },
+    {
+      "heading": "Ways to reach us",
+      "items": [
+        "Call (281) 332-8376",
+        "Customer text line for questions, service inquiries and estimates: (281) 724-5242",
+        "Email service@gcatr.com"
+      ]
+    },
+    {
+      "heading": "Financing",
+      "text": "Unexpected auto repairs? Fix it today. We offer financing."
+    },
+    {
+      "heading": "Current specials",
+      "items": [
+        "$20 off your first visit. Cannot be used for state inspection service, tires or batteries.",
+        "$40 off brake service, per axle on brake pads and rotors.",
+        "$15 off wheel alignment, most cars and light trucks. Replacement parts cost extra.",
+        "Free alignment check, free brake inspection, free battery check and free AC check.",
+        "10% military discount to active and retired members of the US Armed Forces with valid ID, maximum discount $150.",
+        "10% teacher's discount with valid ID, maximum discount $150.",
+        "Specials cannot be combined with any other offer and must be presented at the time of service."
+      ]
+    },
+    {
+      "heading": "Vehicles we service",
+      "text": "Gas, diesel, hybrid, EV and alternative fuel vehicles. Domestic and foreign, from mini sub-compacts, sedans and SUVs through 1-ton trucks to class 7 commercial vehicles, plus RVs and motorhomes."
+    },
+    {
+      "heading": "Our team",
+      "items": [
+        "Frank Prisco, CEO",
+        "Service desk: Casey, Blake and Gabe",
+        "Master certified technical teams"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Google: Gulf Coast Auto & Truck Repair, League City",
+        "Facebook: Gulf Coast Auto And Truck Repair",
+        "Yelp: Gulf Coast Auto and Truck Repair, League City",
+        "Reviews are welcome on any of the three"
+      ]
+    },
+    {
+      "heading": "Estimates and authorization",
+      "items": [
+        "You get a complete estimate of the work that needs doing right away, along with the items that can be addressed later",
+        "Our technicians never perform any work without your authorization first",
+        "Appointments can be requested online, by phone, by text or by stopping in",
+        "Questions, service inquiries and estimates are all handled on the customer text line"
+      ]
+    },
+    {
+      "heading": "Fleet maintenance",
+      "text": "Fleet maintenance for businesses running multiple commercial vehicles, with oil changes, air filter changes and fluid flushes on a schedule we set up with you, so problems are found before they become a road hazard. Contact the shop to set up your fleet maintenance schedule."
+    },
+    {
+      "heading": "Questions we are asked often",
+      "items": [
+        "Do I have to go to the dealership for repairs or scheduled maintenance? No. The law requires the factory to honor your warranty as long as you have proper documentation of the appropriate maintenance. Have any legitimate mechanic do the work, keep your records and receipts, and have the mechanic sign your maintenance schedule book if you have one.",
+        "Is my vehicle safe to drive? Call the shop before you drive it. We can assess the situation well enough to tell you whether it is safe to drive or needs to be towed, and if there is any question we will help you arrange to get it towed here.",
+        "Car care tips for summer and winter weather, long trips, fuel economy, oil change intervals and RV care are on our Car Care Tips page."
+      ]
+    },
+    {
+      "heading": "Useful vehicle info",
+      "text": "Check your vehicle for recalls at Safercar.gov, using the VIN. Vehicles are lasting longer: the average vehicle on the road is 11.5 years old, and drivers do not need to think about a new one until it approaches 200,000 miles. AAA studies compute that the depreciation from replacing a vehicle too early costs 2.5 times more than all the insurance payments made during the life of a vehicle, so holding on to your later model vehicle makes excellent financial sense."
+    }
+  ]
+}
