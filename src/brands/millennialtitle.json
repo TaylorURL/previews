@@ -1,0 +1,229 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "title",
+  "name": "Millennial Title Company",
+  "shortName": "Millennial Title",
+  "tagline": "A tech inspired title company",
+  "phone": "(346) 701-7236",
+  "email": "nataly@millennialtitlecompany.com",
+  "address": "3305 Hwy 90 Ste 200",
+  "town": "Crosby",
+  "state": "TX",
+  "zip": "77532",
+  "hours": [
+    ["Mon – Fri", "9 AM – 5 PM"],
+    ["Saturday", "By appointment"],
+    ["Sunday", "Closed"]
+  ],
+  "cta": {
+    "label": "Open a Title Order",
+    "text": "Send the contract over to the Crosby office and an escrow officer will open title and take it from there."
+  },
+  "brand": {
+    "primary": "#033A63",
+    "primaryDeep": "#022742",
+    "accent": "#9C7C47",
+    "ink": "#17212c",
+    "muted": "#56626f",
+    "surface": "#f5f7fa",
+    "cream": "#efe7da",
+    "line": "#dde4ec",
+    "heading": "'Libre Baskerville', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/millennialtitle/logo.webp",
+    "logoWidth": 220
+  },
+  "hero": {
+    "eyebrow": "Title and closing in Crosby",
+    "title": "A modern, technology focused title company.",
+    "lead": "We provide innovative solutions for the real estate industry, allowing our buyers, sellers, investors and realtor partners to experience much more time efficient closings.",
+    "image": "/brands/millennialtitle/hero",
+    "imageAlt": "A hand holding a house key up to a front door",
+    "points": [
+      "Residential and commercial closings",
+      "Licensed title agents and processors",
+      "Hablamos Español"
+    ]
+  },
+  "overview": {
+    "title": "Title insurance and settlement services.",
+    "text": "Pick the part of the transaction you have a question about, or call the Crosby office and talk it through with our closing team."
+  },
+  "audiences": {
+    "individuals": "Buyers & Sellers",
+    "businesses": "Investors & Realtor Partners"
+  },
+  "services": [
+    {
+      "slug": "title-insurance",
+      "title": "Title Insurance",
+      "audience": "individuals",
+      "icon": "shield-check",
+      "summary": "A policy covering what the search uncovers later.",
+      "text": "When you buy title insurance for your property, a title company searches the public records to find, and remedy if possible, several types of ownership issues.",
+      "lead": "When you buy title insurance for your property, a title company searches these records to find - and remedy, if possible - several types of ownership issues. First, the title company searches public records to determine the property's ownership status. After this search, the underwriter will determine the insurability of the title.",
+      "covers": [
+        { "title": "The records search", "text": "The title company searches public records to determine the property's ownership status." },
+        { "title": "Ownership issues", "text": "The search is there to find, and remedy if possible, several types of ownership issues on the property." },
+        { "title": "The underwriter's call", "text": "After the search, the underwriter determines the insurability of the title." },
+        { "title": "The policy", "text": "Once the searching is finished, a title insurance policy is issued that helps protect you from a variety of issues that might be uncovered later." }
+      ],
+      "questions": [
+        { "q": "What does the title company look at first?", "a": "Public records, to determine the property's ownership status." },
+        { "q": "Who decides whether the title can be insured?", "a": "After the search, the underwriter determines the insurability of the title." }
+      ]
+    },
+    {
+      "slug": "settlement-services",
+      "title": "Settlement Services",
+      "audience": "individuals",
+      "icon": "file-text",
+      "summary": "Keeping the closing simple and on time.",
+      "text": "We work hard to keep closings as simple as possible and on time, with licensed title agents, processors and customer service representatives on the file.",
+      "lead": "We work hard to keep closings as simple as possible and on time. Our team consists of licensed title agents, processors and customer service representatives who are committed to a smooth closing experience for all parties involved.",
+      "image": "/brands/millennialtitle/about",
+      "imageAlt": "Two people signing paperwork across a desk",
+      "covers": [
+        { "title": "Licensed title agents", "text": "The people reading the file and clearing it are licensed title agents." },
+        { "title": "Processors", "text": "Processors move the file along between contract and the closing table." },
+        { "title": "Customer service", "text": "Customer service representatives committed to a smooth closing experience for all parties involved." },
+        { "title": "On time", "text": "The whole point of the way we work is keeping closings as simple as possible and on time." }
+      ],
+      "questions": [
+        { "q": "Who is actually on my file?", "a": "Licensed title agents, processors and customer service representatives, all of them committed to a smooth closing experience for every party involved." }
+      ]
+    },
+    {
+      "slug": "residential-closings",
+      "title": "Residential Closings",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Closing a home purchase or sale.",
+      "text": "Our escrow officers close residential property, and our team is well versed on the intricacies of the local real estate market.",
+      "lead": "Our commercial and residential escrow officers close residential property. Our team is well versed on the intricacies of the local real estate market, and whether it is a short sale, a foreclosure, or a residential or commercial property, we are your best resource for getting deals done."
+    },
+    {
+      "slug": "commercial-closings",
+      "title": "Commercial Closings",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Commercial title and escrow work.",
+      "text": "Both of our escrow officers are commercial and residential escrow officers, so commercial files are handled by the same people as residential ones.",
+      "lead": "Both of our escrow officers are commercial and residential escrow officers, so a commercial file is handled by the same people as a residential one. Our team is well versed on the intricacies of the local real estate market."
+    },
+    {
+      "slug": "short-sales-and-foreclosures",
+      "title": "Short Sales and Foreclosures",
+      "audience": "businesses",
+      "icon": "landmark",
+      "summary": "Distressed files, closed the same way.",
+      "text": "Whether it is a short sale, a foreclosure, or a residential or commercial property, we are your best resource for getting deals done.",
+      "lead": "Whether it's a short sale, a foreclosure, or a residential or commercial property, we are your best resource for getting deals done. Our team is well versed on the intricacies of the local real estate market."
+    },
+    {
+      "slug": "investor-and-realtor-partners",
+      "title": "Investor and Realtor Partners",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Time efficient closings for repeat partners.",
+      "text": "Innovative solutions for the real estate industry, allowing our buyers, sellers, investors and realtor partners to experience much more time efficient closings.",
+      "lead": "Millennial Title is a modern, technology focused title company that provides innovative solutions for the real estate industry, allowing our buyers, sellers, investors and realtor partners to experience much more time efficient closings and exceeding clients expectations."
+    }
+  ],
+  "process": {
+    "title": "How a title file moves",
+    "text": "What happens between the contract reaching us and the policy being issued.",
+    "steps": [
+      { "title": "The records search", "text": "The title company searches public records to determine the property's ownership status." },
+      { "title": "Finding the issues", "text": "The search is there to find, and remedy if possible, several types of ownership issues." },
+      { "title": "The underwriter", "text": "After the search, the underwriter determines the insurability of the title." },
+      { "title": "The closing", "text": "Licensed title agents, processors and customer service representatives keep the closing as simple as possible and on time." },
+      { "title": "The policy", "text": "A title insurance policy is issued that helps protect you from a variety of issues that might be uncovered later." }
+    ]
+  },
+  "about": {
+    "title": "About us",
+    "text": [
+      "Millennial Title is a modern, technology focused title company that provides innovative solutions for the real estate industry, allowing our buyers, sellers, investors and realtor partners to experience much more time efficient closings and exceeding clients expectations.",
+      "We work hard to keep closings as simple as possible and on time. Our team consists of licensed title agents, processors and customer service representatives who are committed to a smooth closing experience for all parties involved.",
+      "Our team is well versed on the intricacies of the local real estate market. Whether it's a short sale, a foreclosure, or a residential or commercial property, we are your best resource for getting deals done."
+    ],
+    "image": "/brands/millennialtitle/about",
+    "imageAlt": "Two people signing paperwork across a desk",
+    "values": [
+      { "title": "Technology focused", "text": "A modern, technology focused title company providing innovative solutions for the real estate industry." },
+      { "title": "Time efficient closings", "text": "Our buyers, sellers, investors and realtor partners experience much more time efficient closings." },
+      { "title": "Simple and on time", "text": "We work hard to keep closings as simple as possible and on time." },
+      { "title": "Hablamos Español", "text": "The office takes clients in Spanish as well as English." }
+    ]
+  },
+  "team": [
+    {
+      "name": "Mimi Vilano",
+      "role": "Founder/Commercial & Residential Escrow Officer & Business Development"
+    },
+    {
+      "name": "Nataly Vilano",
+      "role": "Commercial & Residential Escrow Officer"
+    },
+    {
+      "name": "Marco Barrientos",
+      "role": "Post Closing Specialist"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What does buying title insurance actually get me?",
+      "a": "When you buy title insurance for your property, a title company searches the public records to find - and remedy, if possible - several types of ownership issues. After the searching is finished, it provides a title insurance policy that will help protect you from a variety of issues that might be uncovered later."
+    },
+    {
+      "q": "What is searched, and who decides the title can be insured?",
+      "a": "First the title company searches public records to determine the property's ownership status. After this search, the underwriter will determine the insurability of the title."
+    },
+    {
+      "q": "Who works on my closing?",
+      "a": "Our team consists of licensed title agents, processors and customer service representatives who are committed to a smooth closing experience for all parties involved."
+    },
+    {
+      "q": "Do you close commercial property as well as homes?",
+      "a": "Yes. Both of our escrow officers are commercial and residential escrow officers, and whether it's a short sale, a foreclosure, or a residential or commercial property, we are your best resource for getting deals done."
+    },
+    {
+      "q": "Can I be helped in Spanish?",
+      "a": "Yes. Hablamos Español."
+    }
+  ],
+  "serviceArea": ["Crosby"],
+  "facts": [
+    {
+      "heading": "The Crosby office",
+      "text": "3305 Hwy 90 Ste 200, open Monday to Friday from 9 AM to 5 PM, and Saturday by appointment."
+    },
+    {
+      "heading": "Who is on the team",
+      "items": [
+        "Mimi Vilano, Founder/Commercial & Residential Escrow Officer & Business Development",
+        "Nataly Vilano, Commercial & Residential Escrow Officer",
+        "Marco Barrientos, Post Closing Specialist"
+      ]
+    },
+    {
+      "heading": "Who closes the file",
+      "text": "Licensed title agents, processors and customer service representatives, all committed to a smooth closing for every party involved."
+    },
+    {
+      "heading": "Files we take",
+      "items": ["Residential property", "Commercial property", "Short sales", "Foreclosures"]
+    },
+    {
+      "heading": "Hablamos Español",
+      "text": "The office works with clients in Spanish as well as English."
+    },
+    {
+      "heading": "Also in Houston",
+      "text": "Millennial Title keeps a second office in Houston alongside the Crosby one."
+    }
+  ]
+}

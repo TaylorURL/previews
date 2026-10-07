@@ -1,0 +1,316 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "insurance",
+  "name": "Texas Statewide Insurance",
+  "shortName": "Texas Statewide",
+  "tagline": "Insurance for all of Texas",
+  "phone": "(281) 328-9000",
+  "email": "charles@texasstatewide.com",
+  "address": "20111 FM 2100",
+  "town": "Crosby",
+  "state": "TX",
+  "zip": "77532",
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ]
+  ],
+  "cta": {
+    "label": "Get a Quote",
+    "text": "Tell us which lines you want quoted and we will compare plans across the companies we represent."
+  },
+  "brand": {
+    "primary": "#203064",
+    "primaryDeep": "#16224a",
+    "accent": "#be2134",
+    "ink": "#15171c",
+    "muted": "#5b6474",
+    "surface": "#f5f7fb",
+    "cream": "#e8edf7",
+    "line": "#dce3ef",
+    "heading": "'Source Serif 4', Georgia, serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Open+Sans:wght@400;500;600;700&display=swap",
+    "logo": "/brands/texasstatewideinsurance/logo.webp"
+  },
+  "hero": {
+    "eyebrow": "Locally owned agency in Crosby",
+    "title": "Insurance for all of Texas, personal and commercial.",
+    "lead": "Texas Statewide Insurance writes both personal and business policies, and we represent many different insurance companies so we can compare plans and find you the best value for your individual needs.",
+    "image": "/brands/texasstatewideinsurance/hero",
+    "imageAlt": "A magnifying glass resting on an insurance policy document",
+    "points": [
+      "Locally owned and operated",
+      "Many insurance companies compared",
+      "Personal and business policies"
+    ]
+  },
+  "overview": {
+    "title": "The lines we write for Texans.",
+    "text": "Auto, homeowners, life, renters, windstorm and business coverage, quoted across the companies we represent."
+  },
+  "audiences": {
+    "individuals": "Individuals & Families",
+    "businesses": "Businesses"
+  },
+  "services": [
+    {
+      "slug": "auto",
+      "title": "Auto Insurance",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Car coverage quoted across many companies.",
+      "text": "Texans get great auto coverage. We work for you rather than for some big conglomerate, so you can trust us to help you make good coverage decisions.",
+      "lead": "Texans get great auto coverage through our agency. We work for you rather than for some big conglomerate, so you can trust us to help you make good coverage decisions.",
+      "image": "/brands/texasstatewideinsurance/auto",
+      "imageAlt": "A pickup truck driving along a highway",
+      "covers": [
+        {
+          "title": "We work for you",
+          "text": "We work for you rather than for some big conglomerate, so the recommendation is about your coverage rather than one company's product."
+        },
+        {
+          "title": "Plans compared for value",
+          "text": "We represent many different insurance companies, so we can compare plans and find you the best value for your individual needs."
+        },
+        {
+          "title": "The rest of what you drive and ride",
+          "text": "Our personal lines also take in boat insurance, motorcycle insurance and RV and motor home coverage."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Can you quote more than my car?",
+          "a": "Yes. Our personal insurance lines include auto insurance, homeowner's insurance, boat insurance, motorcycle insurance, condominium insurance, renter's insurance and RV and motor home coverages."
+        }
+      ]
+    },
+    {
+      "slug": "homeowners",
+      "title": "Homeowners Insurance",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "A policy written with your home in mind.",
+      "text": "Every Texas home is as unique as the family that lives there. We offer customizable homeowners insurance coverage that can be written specifically with your home in mind.",
+      "lead": "Every Texas home is as unique as the family that lives there. You need a homeowner's policy that effectively protects your dwelling as well as the belongings you keep there.",
+      "image": "/brands/texasstatewideinsurance/home",
+      "imageAlt": "A white two-story house behind green trees",
+      "covers": [
+        {
+          "title": "The dwelling and what is in it",
+          "text": "A homeowner's policy that effectively protects your dwelling as well as the belongings you keep there."
+        },
+        {
+          "title": "Written for your home",
+          "text": "We offer customizable homeowners insurance coverage that can be written specifically with your home in mind."
+        },
+        {
+          "title": "Windstorm considered alongside it",
+          "text": "We also write windstorm insurance, so the windstorm coverage your home needs can be quoted alongside the homeowner's policy."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why does every home need its own policy?",
+          "a": "Every Texas home is as unique as the family that lives there, so the policy is written specifically with your home in mind rather than from a standard template."
+        }
+      ]
+    },
+    {
+      "slug": "windstorm",
+      "title": "Windstorm Insurance",
+      "audience": "individuals",
+      "icon": "waves",
+      "summary": "Wind coverage with the cost kept down.",
+      "text": "Our knowledge and experience allow us to help create the windstorm coverage you need while keeping the cost down. Do not be caught without windstorm insurance coverage.",
+      "lead": "Our knowledge and experience allow us to help create the windstorm coverage you need while keeping the cost down. Do not be caught without windstorm insurance coverage.",
+      "covers": [
+        {
+          "title": "Coverage built to what you need",
+          "text": "Our knowledge and experience allow us to help create the windstorm coverage you need."
+        },
+        {
+          "title": "Cost kept down",
+          "text": "Our knowledge and experience let us create that coverage while keeping the cost down."
+        }
+      ]
+    },
+    {
+      "slug": "life",
+      "title": "Life Insurance",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Life and long-term care solutions.",
+      "text": "Life insurance and long-term care solutions. Get the peace of mind that comes from financially protecting yourself and your family.",
+      "lead": "Life insurance and long-term care solutions, so you get the peace of mind that comes from financially protecting yourself and your family."
+    },
+    {
+      "slug": "renters",
+      "title": "Renters Insurance",
+      "audience": "individuals",
+      "icon": "key",
+      "summary": "Some of the benefits of a homeowners' policy.",
+      "text": "A renters' insurance policy provides some of the benefits of homeowners' insurance, without coverage for the dwelling itself.",
+      "lead": "A renters' insurance policy provides some of the benefits of homeowners' insurance, but does not include coverage for the dwelling, or structure, with the exception of small alterations that a tenant makes to the structure.",
+      "covers": [
+        {
+          "title": "What it does cover",
+          "text": "Some of the benefits of a homeowners' policy, carried over to a home you rent rather than own."
+        },
+        {
+          "title": "What it does not",
+          "text": "It does not include coverage for the dwelling, or structure, with the exception of small alterations that a tenant makes to the structure."
+        },
+        {
+          "title": "Condominiums too",
+          "text": "Condominium insurance sits in our personal lines alongside renter's coverage."
+        }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial Insurance",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Property, liability, comp and commercial auto.",
+      "text": "Commercial insurance comes highly recommended by local business owners who have experienced its benefits. We cover property, general liability, workers' compensation and professional exposures.",
+      "lead": "Commercial insurance comes highly recommended by local business owners who have experienced their benefits or are forced to work through situations without it around the Texas area. We specialize in business and commercial insurance needs.",
+      "image": "/brands/texasstatewideinsurance/commercial",
+      "imageAlt": "An open sign hanging in a shop window",
+      "covers": [
+        {
+          "title": "Business Owners Policies",
+          "text": "The packaged policy that carries the property and liability a business runs on."
+        },
+        {
+          "title": "General liability",
+          "text": "General liability, written as part of the business and commercial program."
+        },
+        {
+          "title": "Workers' compensation",
+          "text": "Workers' compensation for the people on your payroll."
+        },
+        {
+          "title": "Commercial auto and truck",
+          "text": "Coverage for commercial auto and truck, written alongside the rest of the program."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does your commercial program cover?",
+          "a": "We specialize in business and commercial insurance needs covered with Business Owners Policies, General Liability, Workers Compensation and Commercial Auto and Truck, along with property, general and professional exposures."
+        }
+      ]
+    }
+  ],
+  "process": {
+    "title": "How we work",
+    "text": "You tell us what needs quoting, we compare the companies we represent, and you get the value rather than the first number back.",
+    "steps": [
+      {
+        "title": "Tell us what to quote",
+        "text": "Send us your name, email and phone, and tick the lines you want priced: auto, life, home, renters, windstorm or commercial."
+      },
+      {
+        "title": "We compare the companies",
+        "text": "We represent many different insurance companies, so we can compare plans rather than quote one carrier's product at you."
+      },
+      {
+        "title": "We find the value for you",
+        "text": "Our rates are highly competitive, and we offer the highest quality protection, so the plan you take is the best value for your individual needs."
+      },
+      {
+        "title": "You deal with people locally",
+        "text": "We are locally owned and operated, and we always give friendly and courteous assistance from the Crosby office."
+      }
+    ]
+  },
+  "about": {
+    "title": "A locally owned agency that has met the insurance needs of Texans.",
+    "text": [
+      "Texas Statewide Insurance has met the insurance needs of Texans, writing both personal and business policies. The office is in Crosby and the coverage reaches across the state.",
+      "We are locally owned and operated and take great pride in the excellent service we provide our clients. Our rates are highly competitive, and we offer the highest quality protection and always give friendly and courteous assistance.",
+      "Our personal insurance lines include auto insurance, homeowner's insurance, boat insurance, motorcycle insurance, condominium insurance, renter's insurance and RV and motor home coverages. We represent many different insurance companies so that we can compare plans and find you the best value for your individual needs.",
+      "We specialize in business and commercial insurance needs covered with Business Owners Policies, General Liability, Workers Compensation and Commercial Auto and Truck."
+    ],
+    "values": [
+      {
+        "title": "Locally owned",
+        "text": "We are locally owned and operated and take great pride in the excellent service we provide our clients."
+      },
+      {
+        "title": "Many companies",
+        "text": "We represent many different insurance companies so that we can compare plans and find you the best value for your individual needs."
+      },
+      {
+        "title": "Personal and business",
+        "text": "Texas Statewide has been writing both personal and business policies, and specializes in business and commercial insurance needs."
+      },
+      {
+        "title": "Friendly assistance",
+        "text": "Our rates are highly competitive, we offer the highest quality protection, and we always give friendly and courteous assistance."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What kinds of insurance do you write?",
+      "a": "Auto and car insurance, homeowners insurance, life insurance, renters insurance, windstorm insurance and business and commercial insurance for all of Texas."
+    },
+    {
+      "q": "Do you only quote one insurance company?",
+      "a": "No. We represent many different insurance companies so that we can compare plans and find you the best value for your individual needs."
+    },
+    {
+      "q": "What is in your personal insurance lines?",
+      "a": "Auto insurance, homeowner's insurance, boat insurance, motorcycle insurance, condominium insurance, renter's insurance and RV and motor home coverages."
+    },
+    {
+      "q": "What does a renters' policy leave out?",
+      "a": "It provides some of the benefits of homeowners' insurance, but does not include coverage for the dwelling, or structure, with the exception of small alterations that a tenant makes to the structure."
+    },
+    {
+      "q": "Do I need windstorm coverage?",
+      "a": "Do not be caught without windstorm insurance coverage. Our knowledge and experience allow us to help create the windstorm coverage you need while keeping the cost down."
+    },
+    {
+      "q": "What does commercial insurance cover here?",
+      "a": "We specialize in business and commercial insurance needs covered with Business Owners Policies, General Liability, Workers Compensation and Commercial Auto and Truck, taking in property, general and professional exposures."
+    },
+    {
+      "q": "How do I ask for a quote?",
+      "a": "Send your name, email and phone and tick the lines you want priced: Auto, Life, Home, Renters, Windstorm or Commercial. You can call the office on (281) 328-9000 during business hours instead."
+    }
+  ],
+  "serviceArea": [
+    "Crosby"
+  ],
+  "facts": [
+    {
+      "heading": "Personal insurance lines",
+      "items": [
+        "Auto insurance",
+        "Homeowner's insurance",
+        "Boat insurance",
+        "Motorcycle insurance",
+        "Condominium insurance",
+        "Renter's insurance",
+        "RV and motor home coverages"
+      ]
+    },
+    {
+      "heading": "Business and commercial",
+      "text": "We specialize in business and commercial insurance needs covered with Business Owners Policies, General Liability, Workers Compensation and Commercial Auto and Truck, along with property, general and professional coverage."
+    },
+    {
+      "heading": "Asking for a quote",
+      "text": "The quote request takes your name, email and phone and the lines you want priced: Auto, Life, Home, Renters, Windstorm or Commercial. You can add a subject and a message, and there is an option to subscribe to the newsletter."
+    },
+    {
+      "heading": "Reaching the office",
+      "text": "The office is on (281) 328-9000 and the fax is 832-201-9331. Email reaches us at charles@texasstatewide.com, and the office is open Monday to Friday, 9 AM to 5 PM."
+    }
+  ]
+}
