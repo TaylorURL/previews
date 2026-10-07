@@ -1,0 +1,416 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Jerry Cooper CPA",
+  "shortName": "Cooper CPA",
+  "tagline": "Quality tax, accounting and litigation support services",
+  "phone": "(713) 234-7084",
+  "email": "jerry@cooper-cpa.com",
+  "address": "800 Wilcrest Dr, Suite 145",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77042",
+  "license": "Jerry Cooper, CPA, CFF. Certified Public Accountant in the State of Texas and Certified Forensic Accountant.",
+  "rating": 5.0,
+  "reviewCount": 27,
+  "hours": [
+    [
+      "Mon – Fri",
+      "9:30 AM – 5:30 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Tell us more about your needs and your concerns, and we will give you a free quote on regular or one-time accounting services."
+  },
+  "brand": {
+    "primary": "#1b1d21",
+    "primaryDeep": "#0d0e11",
+    "accent": "#a07a33",
+    "ink": "#17181c",
+    "muted": "#5a5d66",
+    "surface": "#f7f5f0",
+    "cream": "#efeade",
+    "line": "#e3ddcf",
+    "heading": "'Playfair Display', Georgia, serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap",
+    "logo": "/brands/jerrycoopercpa/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Houston CPA firm",
+    "title": "Quality tax, accounting and litigation support services.",
+    "lead": "Cooper CPA, PC is a full service CPA firm that provides professional bookkeeping and tax services to small businesses and individuals.",
+    "image": "/brands/jerrycoopercpa/hero",
+    "imageAlt": "A desk calculator and paperwork on a wooden desk",
+    "points": [
+      "Monthly QuickBooks bookkeeping",
+      "Certified Forensic Accountant",
+      "Secure client portal"
+    ]
+  },
+  "overview": {
+    "title": "Tax and accounting for small businesses and individuals.",
+    "text": "Pick a service to see what it covers, or call and talk it through with our team."
+  },
+  "audiences": {
+    "individuals": "Individuals",
+    "businesses": "Small Businesses"
+  },
+  "services": [
+    {
+      "slug": "individual-tax-returns",
+      "title": "Individual Tax Return Preparation",
+      "audience": "individuals",
+      "icon": "calculator",
+      "summary": "Form 1040 returns, with every deduction found.",
+      "text": "We prepare your form 1040 personal tax return and provide you with all possible deductions to minimize your tax liability and maximize your potential refund.",
+      "lead": "Our firm can prepare your personal 1040 tax return and provide you with all possible deductions to minimize your tax liability and maximize your potential refund. We are up to date with the latest tax laws.",
+      "covers": [
+        {
+          "title": "Form 1040 preparation",
+          "text": "Your personal return prepared with all possible deductions, so your tax liability is as low as it should be."
+        },
+        {
+          "title": "Prior year review",
+          "text": "We can review your prior 1040 tax returns to assure you received the deductions you are entitled to."
+        },
+        {
+          "title": "Current tax law",
+          "text": "We are up to date with the latest tax laws."
+        },
+        {
+          "title": "Rapid e-file",
+          "text": "With rapid e-file, your refund can arrive in your bank account in 7-10 business days."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Can I pay for my tax preparation out of my refund?",
+          "a": "Yes. Our CPA firm has the latest bookkeeping and tax tools that will enable you to pay your tax preparation fees with your refund."
+        },
+        {
+          "q": "Can you check a return somebody else filed for me?",
+          "a": "Yes. We can review your prior 1040 tax returns to assure you received the deductions you are entitled to."
+        }
+      ]
+    },
+    {
+      "slug": "irs-audit-representation",
+      "title": "IRS Audit Representation",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "We deal with the IRS on your behalf.",
+      "text": "IRS audits are very stressful and can demand a great deal of your time. Let us represent you, plan a strategy and gather the information the audit needs.",
+      "lead": "IRS audits are very stressful and can demand a great deal of your time. Let us represent you. We will help plan a strategy and gather all the necessary information so that we can respond to the Internal Revenue Service and help you get through the tax audit.",
+      "covers": [
+        {
+          "title": "A strategy for the audit",
+          "text": "We help plan how to answer what the Internal Revenue Service has asked for."
+        },
+        {
+          "title": "Gathering the records",
+          "text": "We gather all the necessary information so that we can respond to the IRS."
+        },
+        {
+          "title": "Responding for you",
+          "text": "We represent you and help you get through the tax audit."
+        }
+      ]
+    },
+    {
+      "slug": "tax-planning",
+      "title": "Tax Planning",
+      "audience": "individuals",
+      "icon": "chart",
+      "summary": "Know next year's tax before it arrives.",
+      "text": "We can help you estimate your future taxes by providing quality tax planning services, so you can arrange and plan your activities around them.",
+      "lead": "Do you know how much in taxes you will pay next year or your refund? We can help you estimate your future taxes by providing quality tax planning services. By doing this you can arrange and plan your business activities and know what is awaiting your future with regards to your taxes.",
+      "covers": [
+        {
+          "title": "An estimate for next year",
+          "text": "What you will pay in taxes next year, or what your refund should be."
+        },
+        {
+          "title": "Planning around it",
+          "text": "You can arrange and plan your business activities knowing what is awaiting you with regards to your taxes."
+        }
+      ]
+    },
+    {
+      "slug": "small-business-accounting",
+      "title": "Small Business Accounting and Bookkeeping",
+      "audience": "businesses",
+      "icon": "book",
+      "summary": "Monthly QuickBooks bookkeeping, mess and all.",
+      "text": "Books a mess? No problem. We have the latest tools and knowledge to take any information you have and do the monthly QuickBooks bookkeeping for your business.",
+      "lead": "We have the latest tools and knowledge to take any information you have and do the monthly QuickBooks bookkeeping for your business. Just starting a business? Our CPA firm will help you set up your company in QuickBooks and maintain your small business accounting records so you can focus on managing your business.",
+      "covers": [
+        {
+          "title": "Monthly QuickBooks bookkeeping",
+          "text": "We take any information you have and keep the monthly books for your business."
+        },
+        {
+          "title": "QuickBooks setup",
+          "text": "Just starting a business? We will help you set up your company in QuickBooks."
+        },
+        {
+          "title": "Records maintained",
+          "text": "We maintain your small business accounting records so you can focus on managing your business."
+        },
+        {
+          "title": "Fixing the books you have",
+          "text": "Books a mess? No problem. We can fix any issues you might have with your current accounting records."
+        }
+      ],
+      "questions": [
+        {
+          "q": "My records are in bad shape. Is that a problem?",
+          "a": "No. Books a mess? No problem. We can fix any issues you might have with your current accounting records."
+        }
+      ]
+    },
+    {
+      "slug": "business-tax-returns",
+      "title": "Small Business Tax Return Preparation",
+      "audience": "businesses",
+      "icon": "receipt",
+      "summary": "Every business return, federal and state.",
+      "text": "Whether you are self-employed, a corporation or a partnership, we prepare all of your business tax returns, including 1099's, sales tax, K-1's, franchise and federal returns.",
+      "lead": "Whether you are self-employed, corporation or partnership, our CPA firm can prepare all of your business tax returns including 1099's, sales tax return, K-1's, franchise tax returns and federal tax returns.",
+      "covers": [
+        {
+          "title": "Federal corporate returns",
+          "text": "Federal tax returns for corporations and partnerships, including K-1's for the owners."
+        },
+        {
+          "title": "Texas franchise tax",
+          "text": "Franchise tax returns filed with the state."
+        },
+        {
+          "title": "Sales tax and 1099's",
+          "text": "Sales tax returns and the 1099's you have to issue."
+        },
+        {
+          "title": "Schedule C",
+          "text": "If you are self-employed, we can prepare your Schedule C for your personal tax return."
+        }
+      ]
+    },
+    {
+      "slug": "payroll",
+      "title": "Full-Service Payroll",
+      "audience": "businesses",
+      "icon": "banknote",
+      "summary": "Payroll and payroll tax filings, handled.",
+      "text": "Our firm can provide full-service payroll to any small business, handling all federal and state payroll tax preparations and filings so you can focus on running your business.",
+      "lead": "Our firm can provide full-service payroll to any small business. We can handle all federal and state payroll tax preparations and tax filings so that you can focus on running your business. Payroll can be tedious and you do not want to handle this on your own.",
+      "covers": [
+        {
+          "title": "Employees paid on time",
+          "text": "We have the tools and experience to make sure your employees are paid on time."
+        },
+        {
+          "title": "Federal and state payroll tax",
+          "text": "All federal and state payroll tax preparations and tax filings."
+        },
+        {
+          "title": "Filings kept current",
+          "text": "We make sure your tax filings remain up to date."
+        }
+      ]
+    },
+    {
+      "slug": "start-your-business",
+      "title": "Start Your Business",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Incorporation, EIN and DBA paperwork.",
+      "text": "If you are starting a business, we help you select the corporate form that best fits your organization, file the paperwork with the state and apply for your federal tax ID.",
+      "lead": "If you are starting a business and wish to start a corporation, we can help you by selecting the corporate form that best fits your organization, filing the paperwork with the state and applying for your federal employer tax identification number.",
+      "covers": [
+        {
+          "title": "Choosing the corporate form",
+          "text": "Selecting the form that best fits your organization."
+        },
+        {
+          "title": "State filing",
+          "text": "Filing the paperwork with the state for you."
+        },
+        {
+          "title": "Federal tax ID",
+          "text": "Applying for your federal employer tax identification number."
+        },
+        {
+          "title": "DBA filing",
+          "text": "If you need to file a DBA (Doing Business As) for your business, we can help you get that."
+        }
+      ]
+    },
+    {
+      "slug": "litigation-support",
+      "title": "Litigation Support",
+      "audience": "businesses",
+      "icon": "scale",
+      "summary": "Forensic accounting and damages for law firms.",
+      "text": "We provide forensic accounting services to law firms to assist them in evaluating damages as a result of a wrongful act in a legal case.",
+      "lead": "We provide forensic accounting services to law firms to assist them in evaluating damages as a result of a wrongful act in a legal case. Properly calculating damages requires knowledge, skill and expertise to determine the values that are correct and verifiable.",
+      "covers": [
+        {
+          "title": "Evaluating damages",
+          "text": "Damages as a result of a wrongful act in a legal case, calculated for the law firm handling it."
+        },
+        {
+          "title": "Values that hold up",
+          "text": "Properly calculating damages requires knowledge, skill and expertise to determine the values that are correct and verifiable."
+        },
+        {
+          "title": "A Certified Forensic Accountant",
+          "text": "Jerry Cooper is a Certified Forensic Accountant as well as a Texas CPA."
+        }
+      ]
+    }
+  ],
+  "affiliations": {
+    "title": "Credentials and memberships",
+    "items": [
+      "Certified Public Accountant, State of Texas",
+      "Certified Forensic Accountant",
+      "American Institute of Certified Public Accountants",
+      "Texas Society of CPA's",
+      "Intuit QuickBooks Certified ProAdvisor (Online)"
+    ]
+  },
+  "about": {
+    "title": "A full service CPA firm on Wilcrest Drive.",
+    "text": [
+      "Our mission at Cooper CPA, PC is to be the premier CPA firm providing professional bookkeeping and tax services at an affordable price to our clients.",
+      "We developed strategies for both small business and individual clients and we work hard and long hours when they need us, even after tax season. So let us tackle your most pressing financial issues.",
+      "We know that the accounting needs for each business or family are unique. Tell us more about your needs and your concerns, and we will give you a free quote on regular or one-time accounting services."
+    ],
+    "image": "/brands/jerrycoopercpa/about",
+    "imageAlt": "Tax forms and a mileage log book on a desk with a pen",
+    "values": [
+      {
+        "title": "An affordable price",
+        "text": "Professional bookkeeping and tax services at an affordable price to our clients."
+      },
+      {
+        "title": "Available after April",
+        "text": "We work hard and long hours when our clients need us, even after tax season."
+      },
+      {
+        "title": "Your data kept secure",
+        "text": "We utilize the latest software and expertise available to secure your information from potential external threats such as malware and ransomware."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Jerry Cooper, CPA, CFF",
+      "role": "Certified Public Accountant and Certified Forensic Accountant",
+      "bio": "Jerry Cooper has been a Certified Public Accountant in the State of Texas for over 20 years and is also a Certified Forensic Accountant. He has worked as an accountant and auditor for various small to medium public accounting firms, and for large oil and gas corporations in the Houston area as well as abroad. He has extensive experience in accounting for small and large companies and in preparing tax returns for high net-worth individuals and corporate clients with complicated tax issues. He graduated from the main campus of the University of Houston in 1999 with a double major bachelor's degree in Accounting and Finance, and is a member of the American Institute of Certified Public Accountants as well as a member of the Texas Society of CPA's."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What does the first conversation cost?",
+      "a": "Nothing. Tell us more about your needs and your concerns and we will give you a free quote on regular or one-time accounting services."
+    },
+    {
+      "q": "Do you take on one-time work as well as monthly?",
+      "a": "Yes. We quote regular and one-time accounting services both."
+    },
+    {
+      "q": "How do I get my documents to you?",
+      "a": "We provide a client portal that allows clients to easily share their data onto a secure platform."
+    },
+    {
+      "q": "Which bookkeeping software do you work in?",
+      "a": "QuickBooks. We do monthly QuickBooks bookkeeping and can set your company up in it if you are just starting out."
+    },
+    {
+      "q": "Can I pay my tax preparation fees out of my refund?",
+      "a": "Yes. Our CPA firm has the latest bookkeeping and tax tools that will enable you to pay your tax preparation fees with your refund."
+    },
+    {
+      "q": "Do you work with law firms?",
+      "a": "Yes. We provide forensic accounting services to law firms to assist them in evaluating damages as a result of a wrongful act in a legal case."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Client Portal",
+      "text": "Share your documents with us on a secure platform through Intuit.",
+      "href": "https://link.intuit.com/login/#/signin"
+    },
+    {
+      "title": "LinkedIn",
+      "text": "Cooper CPA, PC on LinkedIn.",
+      "href": "https://www.linkedin.com/company/jerry-cooper-cpa"
+    },
+    {
+      "title": "Yelp",
+      "text": "Jerry Cooper CPA on Yelp.",
+      "href": "https://www.yelp.com/biz/_zoGid9zAaMLmzKe1I2-2w"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Data security and management",
+      "text": "Your personal and company information is very important to us. We utilize the latest software and expertise available to secure your information from potential external threats such as malware and ransomware. We provide a client portal that allows clients to easily share their data onto a secure platform."
+    },
+    {
+      "heading": "Pay your fees from your refund",
+      "text": "Are you in a cash crunch? Our CPA firm has the latest bookkeeping and tax tools that will enable you to pay your tax preparation fees with your refund. With rapid e-file, your refund can arrive in your bank account in 7-10 business days."
+    },
+    {
+      "heading": "A free quote",
+      "text": "We know that the accounting needs for each business or family are unique. Tell us more about your needs and your concerns, and we will give you a free quote on regular or one-time accounting services."
+    },
+    {
+      "heading": "Experience",
+      "items": [
+        "Certified Public Accountant in the State of Texas for over 20 years",
+        "Certified Forensic Accountant",
+        "Accountant and auditor for small to medium public accounting firms",
+        "Accounting for large oil and gas corporations in Houston and abroad",
+        "Returns for high net-worth individuals and corporate clients with complicated tax issues"
+      ]
+    },
+    {
+      "heading": "Scheduling an office appointment",
+      "text": "Call (713) 234-7084 today for a consultation, or use the Schedule an Appointment form on our contact page. Our office is in Suite 145 at 800 Wilcrest Dr, Houston, Texas 77042, United States."
+    },
+    {
+      "heading": "What we ask for when you get in touch",
+      "items": [
+        "Your name",
+        "Your email address",
+        "Your type of business",
+        "Your average number of monthly transactions",
+        "What your accounting needs are",
+        "Any other questions, concerns or special needs that you have"
+      ]
+    },
+    {
+      "heading": "Where to find us",
+      "items": [
+        "Houston office at 800 Wilcrest Dr, Suite 145",
+        "LinkedIn: linkedin.com/company/jerry-cooper-cpa",
+        "Yelp: Jerry Cooper CPA, Houston",
+        "Client portal through Intuit"
+      ]
+    }
+  ]
+}
