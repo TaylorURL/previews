@@ -1,0 +1,506 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Trizone Electric",
+  "shortName": "Trizone Electric",
+  "summary": "Residential, commercial and industrial electrical work, standby generators and EV charger installations across the Greater Houston Area.",
+  "phone": "(832) 477-3360",
+  "email": "info@trizoneelectric.com",
+  "address": "10400 Westoffice Dr #114",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77042",
+  "rating": 4.9,
+  "reviewCount": 76,
+  "hours": [
+    ["Mon – Fri", "8 AM – 5 PM"],
+    ["Sat – Sun", "Emergency only"]
+  ],
+  "brand": {
+    "primary": "#4e4c61",
+    "primaryDeep": "#332f40",
+    "accent": "#e6343a",
+    "ink": "#17161f",
+    "muted": "#5a5868",
+    "surface": "#f1f1f5",
+    "line": "#dcdbe3",
+    "heading": "'Montserrat', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/trizoneelectric/logo.webp",
+    "logoWidth": 200
+  },
+  "emergency": {
+    "title": "24-hour emergency electrical service",
+    "text": "Emergency repair covers power outages, circuit failures, equipment malfunctions and safety hazards, and the office keeps weekend hours for emergencies."
+  },
+  "hero": {
+    "eyebrow": "Electrical services in Houston, TX",
+    "title": "Looking for electrical services in Houston?",
+    "titleAccent": "Trizone Electric is here for you.",
+    "lead": "Whether you own a small house in the suburbs or a huge industrial complex, we offer a wide range of services to fulfill your electrical needs, from simple light installation to whole-home and business wiring updates.",
+    "image": "/brands/trizoneelectric/hero",
+    "imageAlt": "A restaurant bar lit by pendant and track lighting"
+  },
+  "groups": [
+    {
+      "slug": "residential",
+      "title": "Residential",
+      "icon": "home",
+      "summary": "Wiring, lighting, panels, safety inspections and smart panels for Houston homes.",
+      "intro": "Our commitment is to bring top-tier electrical solutions to Houston homeowners, ensuring safety, efficiency and reliability in every project. Our dedicated team of licensed electricians works across a wide array of residential electrical services tailored to the diverse needs of Houston homes.",
+      "image": "/brands/trizoneelectric/residential",
+      "imageAlt": "A hand fitting a glass pendant light to a ceiling fixture",
+      "services": [
+        {
+          "slug": "wiring-upgrades",
+          "title": "Wiring Upgrades and Repairs",
+          "icon": "cable",
+          "text": "From aged wiring replacements to troubleshooting and repairs, we make sure your home's electrical system is safe and up to date.",
+          "points": [
+            "Aged wiring replacement",
+            "Troubleshooting and repair",
+            "Appliance circuits and outlet installations",
+            "Whole-house rewiring"
+          ]
+        },
+        {
+          "slug": "lighting",
+          "title": "Lighting Installation and Repair",
+          "icon": "lightbulb",
+          "text": "We assess your home's needs room by room, considering size, functionality and the ambiance you want, and we recommend LED throughout.",
+          "points": [
+            "LED recessed lighting for ambient light without taking ceiling space",
+            "Task lighting for kitchens, study areas and workspaces",
+            "Accent lighting and spotlights for architectural features and artwork",
+            "Outdoor LED fixtures for security and curb appeal",
+            "LED lasts up to 25 times longer than an incandescent bulb"
+          ]
+        },
+        {
+          "slug": "panel-upgrades",
+          "title": "Electrical Panel Upgrades",
+          "icon": "circuit",
+          "text": "If you have run into frequent circuit overloads, flickering lights or an outdated panel, it may be time for an upgrade. Our electricians assess the existing panel and plan the capacity your home needs.",
+          "points": [
+            "Frequent circuit overloads and flickering lights assessed",
+            "Capacity for modern appliances and smart technology",
+            "Higher electrical safety and energy efficiency"
+          ]
+        },
+        {
+          "slug": "ev-charger-installation",
+          "title": "Home EV Charger Installation",
+          "icon": "ev",
+          "text": "We find the right location for your charger and install it to meet the electrical requirements specific to the Houston area, for a Tesla or any other EV model.",
+          "points": [
+            "Level 2 chargers run on a 240-volt circuit and add about 10 to 25 miles of range per hour",
+            "Level 1 chargers run on a standard 120-volt outlet and add about 2 to 5 miles per hour",
+            "A dedicated circuit is required, and local code mandates it",
+            "New wiring run from your panel to the charger location"
+          ]
+        },
+        {
+          "slug": "safety-inspections",
+          "title": "Safety Inspections and Code Compliance",
+          "icon": "shield",
+          "text": "We inspect from the utility connection through the entire electrical system, so you know your home is secure and compliant with local electrical codes.",
+          "points": [
+            "Main panel, circuit breakers and overall wiring assessed",
+            "Outlets, switches and light fixtures tested throughout the house",
+            "Grounding and bonding checked",
+            "GFCI and AFCI devices tested",
+            "Correct light bulb wattage verified",
+            "Surge protection and smoke detector installation verified",
+            "Outdoor electrical systems inspected"
+          ]
+        },
+        {
+          "slug": "smart-panels",
+          "title": "Smart Electrical Panels",
+          "icon": "settings",
+          "text": "A smart panel replaces the traditional breaker box with circuit-level control, real-time monitoring and an app, so you can prioritize what matters during an outage.",
+          "points": [
+            "Set must-have, nice-to-have and delay circuits so a battery powers the essentials longer",
+            "SPAN integrated with Sunrun and other solar and storage providers",
+            "Site assessment and load calculation, design and permitting, AHJ approvals and utility coordination",
+            "Clean panel swap with neat wiring and clear circuit labels",
+            "Commissioning, firmware, circuit discovery and app setup",
+            "Post-install torque audit and photo log, with an optional thermal scan"
+          ]
+        },
+        {
+          "slug": "emergency-repairs",
+          "title": "Emergency Repairs",
+          "icon": "timer",
+          "text": "Power outages, circuit breaker failures and faulty wiring diagnosed and resolved quickly, to restore function and cut the risk of electrical fire or shock.",
+          "points": [
+            "Power outages and circuit breaker failures",
+            "Faulty wiring",
+            "Repairs made to local electrical codes"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial",
+      "icon": "building",
+      "summary": "Restaurants, retail, data centers, medical facilities and ground-up construction.",
+      "intro": "We provide comprehensive commercial electrical services to support a wide range of businesses, from restaurants and retail stores to data centers. We understand the unique challenges of commercial spaces, such as the high energy demands of data centers or the specific lighting and power requirements of restaurants and retail stores, and we work to keep disruption to your business to a minimum.",
+      "image": "/brands/trizoneelectric/commercial",
+      "imageAlt": "A restaurant dining room lit by hanging chandeliers",
+      "services": [
+        {
+          "slug": "data-centers",
+          "title": "Data Center Electrical Services",
+          "icon": "circuit",
+          "text": "From routine maintenance to full-scale installations, we work on data center electrical systems for uninterrupted power, safety and compliance with industry standards.",
+          "points": [
+            "Routine maintenance and full-scale installation",
+            "Uninterrupted power and industry standard compliance"
+          ]
+        },
+        {
+          "slug": "emergency-electrical",
+          "title": "24-Hour Emergency Electrical Solutions",
+          "icon": "timer",
+          "text": "Our emergency repair service covers everything from power outages and circuit failures to equipment malfunctions and safety hazards.",
+          "points": [
+            "Power outages and circuit failures",
+            "Equipment malfunctions and safety hazards"
+          ]
+        },
+        {
+          "slug": "commercial-ev-chargers",
+          "title": "Commercial EV Charger Installations",
+          "icon": "ev",
+          "text": "As electric vehicles become more popular, shopping centers, businesses and residential complexes have the opportunity to add charging to their facilities.",
+          "points": [
+            "Shopping centers, businesses and residential complexes",
+            "Installed as a Qmerit and Tesla certified installer"
+          ]
+        },
+        {
+          "slug": "construction-design",
+          "title": "Commercial Electrical Design",
+          "icon": "sun",
+          "text": "Effective lighting design is crucial for creating productive and inviting commercial spaces.",
+          "points": [
+            "Lighting design for commercial spaces"
+          ]
+        },
+        {
+          "slug": "ground-up-construction",
+          "title": "Ground Up Construction",
+          "icon": "building",
+          "text": "Our electrical engineers work closely with architects and construction teams to develop comprehensive electrical system designs tailored to your project.",
+          "points": [
+            "Designs developed with architects and construction teams",
+            "Tailored to the specific project requirements"
+          ]
+        },
+        {
+          "slug": "medical-facilities",
+          "title": "Hospital and Medical Facilities",
+          "icon": "shield",
+          "text": "Reliable emergency power is critical in hospital settings, where uninterrupted electrical supply can be a matter of life and death.",
+          "points": [
+            "Hospitals and medical centers",
+            "Dental clinics, urgent care centers, nursing homes and assisted living facilities"
+          ]
+        },
+        {
+          "slug": "special-projects",
+          "title": "Special Projects",
+          "icon": "lightbulb",
+          "text": "Illuminating a corporate space goes beyond basic functionality. We build custom lighting solutions for productivity, aesthetics and energy efficiency.",
+          "points": [
+            "Corporate interior lighting",
+            "Restaurant lighting and commercial kitchen upgrades"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "industrial",
+      "title": "Industrial",
+      "icon": "settings",
+      "summary": "Power distribution, lighting, control systems and emergency support for industrial facilities.",
+      "intro": "We deliver industrial electrical services built for the demands of your business, from large-scale installations to routine maintenance. We understand the complexities of industrial environments, and we work to keep productivity up, downtime down and your facility compliant with safety regulations.",
+      "image": "/brands/trizoneelectric/industrial",
+      "imageAlt": "Valves and instrumentation on pipework inside an industrial plant",
+      "services": [
+        {
+          "slug": "industrial-facilities",
+          "title": "Industrial Facilities Electrical Solutions",
+          "icon": "power",
+          "text": "Proper lighting is essential for worker safety, productivity and energy efficiency in industrial settings, and we cover the systems around it.",
+          "points": [
+            "Power distribution",
+            "Industrial lighting",
+            "Control systems",
+            "Emergency electrical support"
+          ]
+        },
+        {
+          "slug": "industrial-installations",
+          "title": "Installations, Upgrades and Troubleshooting",
+          "icon": "wrench",
+          "text": "New electrical systems, upgrades or troubleshooting, with installations and repairs carried out in line with industry standards.",
+          "points": [
+            "New systems and upgrades",
+            "Troubleshooting on existing infrastructure",
+            "Work to industry safety standards"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "generators",
+      "title": "Generators",
+      "icon": "battery",
+      "summary": "Standby generator installation and maintenance for homes, businesses, industry and medical facilities.",
+      "intro": "Our certified electricians install Cummins, Kohler and Briggs & Stratton standby generators for residential, commercial, industrial and medical facilities. From 18 kW homes to 300 kW industrial and hospital-grade systems, every installation is safe, code-compliant and sized for the property.",
+      "image": "/brands/trizoneelectric/generators",
+      "imageAlt": "A standby generator installed beside a building",
+      "services": [
+        {
+          "slug": "residential-generators",
+          "title": "Residential Generators",
+          "icon": "home",
+          "text": "Standby power for the home, installed and maintained by our own team so the job stays as hassle-free as possible.",
+          "points": [
+            "Briggs & Stratton packages from 20 kW to 26 kW",
+            "Installed pricing applies within 20 feet of the meter or breaker panel and 10 feet of the gas meter",
+            "Annual inspection and servicing, including occasional load tests"
+          ]
+        },
+        {
+          "slug": "commercial-generators",
+          "title": "Commercial Generators",
+          "icon": "building",
+          "text": "Standby power sized for the business, so a storm or an outage does not stop the operation.",
+          "points": [
+            "Monthly or bi-monthly inspections",
+            "Load bank testing at least annually",
+            "Built to meet NFPA and other industry standards"
+          ]
+        },
+        {
+          "slug": "industrial-generators",
+          "title": "Industrial Generators",
+          "icon": "power",
+          "text": "Installation and maintenance for industrial sites, where every minute of downtime affects the bottom line.",
+          "points": [
+            "Systems up to 300 kW",
+            "Generac, Kohler, AKSA, Briggs & Stratton, Caterpillar and Cummins"
+          ]
+        },
+        {
+          "slug": "medical-generators",
+          "title": "Generators for Medical Centers",
+          "icon": "shield",
+          "text": "In a medical center or hospital, uninterrupted power is a necessity rather than a convenience, and we install backup systems to hospital grade.",
+          "points": [
+            "Hospitals and medical centers",
+            "Dental clinics and urgent care centers",
+            "Nursing homes and assisted living facilities"
+          ]
+        },
+        {
+          "slug": "generator-maintenance",
+          "title": "Generator Maintenance and Repair",
+          "icon": "wrench",
+          "text": "Proactive care prevents major breakdowns and extends the life of the generator, the way routine car maintenance does.",
+          "points": [
+            "Oil levels checked and filters replaced at the recommended intervals",
+            "Fuel system inspected for leaks and contamination",
+            "Coolant levels maintained to prevent overheating",
+            "Air filters and intake cleaned or replaced",
+            "Preventative maintenance plan pricing available with a generator purchase"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Generator packages",
+    "title": "Featured Briggs & Stratton generator packages.",
+    "text": "A 20 kW Briggs & Stratton package is $13,000 installed, down from $16,300. The 24 kW is $14,500 and the 26 kW is $15,400. Pricing is for installations less than 20 feet from the electrical meter or breaker panel and less than 10 feet from the gas meter.",
+    "price": "$13,000",
+    "priceNote": "20 kW installed, was $16,300",
+    "image": "/brands/trizoneelectric/offers",
+    "imageAlt": "A Kohler standby generator lifted into place in crane slings"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Founded by a master electrician, serving Houston for more than ten years.",
+    "text": [
+      "Trizone Electric was founded by a master electrician with a wealth of experience spanning decades, and we have become a cornerstone of excellence in the Greater Houston Area. From installations and repairs to complex planning, we bring proven knowledge and precision to every project.",
+      "With a deep-rooted history of serving Houston residents and businesses, we have a unique understanding of the electrical challenges in our community. Working across homes, businesses and industrial sites has given us a reputation for dependable, high-quality service.",
+      "We are a one-stop shop for electrical services in Houston. From residential to commercial and industrial projects, our licensed and insured electricians handle NEC and local code compliance and inspections, with clear pricing and responsive support after the install."
+    ],
+    "image": "/brands/trizoneelectric/team",
+    "imageAlt": "Workers standing in an office space under newly fitted track lighting",
+    "values": [
+      {
+        "title": "Discipline",
+        "text": "We do things right every time. Precision, safety and detail matter."
+      },
+      {
+        "title": "Accountability",
+        "text": "We keep our word, delivering on time, on budget and to the highest standard."
+      },
+      {
+        "title": "Transparency",
+        "text": "Honest, upfront communication. No hidden costs, no surprises."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What residential electrical services do you offer?",
+      "a": "Panel upgrades for your home's electrical capacity, wiring installations, repairs and upgrades, troubleshooting to find and resolve faults, lighting improvements tailored to each room, and EV charger installation. We also carry out safety inspections and code compliance work."
+    },
+    {
+      "q": "What does it cost to install an EV charging station at home?",
+      "a": "The charger itself ranges from $300 to $700 for a Level 2 unit. Installation labor in the Houston area runs $200 to $1,000, an electrical panel upgrade where one is needed is $500 to $3,000 or more, permits add $100 to $300, and additional wiring and materials add roughly $100 to $500. In total a Level 2 installation comes to about $700 to $4,500, though a typical residential job falls within $500 to $2,500."
+    },
+    {
+      "q": "Do I need a dedicated circuit for my EV charger?",
+      "a": "Yes. A Level 2 charger needs a 240-volt circuit, higher amperage than a standard household outlet, and sharing a circuit with other appliances risks overload and slower charging. Many local electrical codes in Houston require a dedicated circuit, so an electrician will usually run new wiring from your panel to the charger location."
+    },
+    {
+      "q": "How long does it take to charge an electric vehicle at home?",
+      "a": "A Level 1 charger on a standard 120-volt outlet adds about 2 to 5 miles of range per hour, so a 200-mile EV can take 40 to 100 hours from empty. A Level 2 charger on a 240-volt circuit adds about 10 to 25 miles per hour, which is why it is the most common choice for a home."
+    },
+    {
+      "q": "What kind of lighting do you recommend for a home?",
+      "a": "LED, for a few reasons. It uses significantly less electricity than traditional bulbs, it lasts up to 25 times longer than an incandescent bulb, it comes in a range of color temperatures with dimming, and it is more resistant to shock and vibration. We recommend recessed LED for ambient light, task lighting in kitchens and workspaces, accent lighting for architectural features, and outdoor LED for security and curb appeal."
+    },
+    {
+      "q": "How often does a generator need servicing?",
+      "a": "A residential generator typically needs an annual inspection and service, including the occasional load test. Commercial units often need monthly or bi-monthly inspections and a load bank test at least once a year, which matters most in sectors like healthcare where NFPA standards apply."
+    },
+    {
+      "q": "Which generator brands do you install?",
+      "a": "Cummins, Kohler and Briggs & Stratton, along with many others. Our technicians are trained to install and configure these brands so the generator works with your existing electrical system."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Spring",
+    "The Woodlands",
+    "Katy",
+    "Sugar Land",
+    "Pearland",
+    "Pasadena",
+    "Missouri City",
+    "League City",
+    "Clear Lake",
+    "Friendswood",
+    "Richmond",
+    "Rosenberg"
+  ],
+  "facts": [
+    {
+      "heading": "Certifications",
+      "items": [
+        "Tesla Certified Installer",
+        "Qmerit certified",
+        "EVITP certified",
+        "NFPA 70E",
+        "Licensed and insured"
+      ]
+    },
+    {
+      "heading": "Generator packages",
+      "items": [
+        "Briggs & Stratton 20 kW, $13,000, was $16,300",
+        "Briggs & Stratton 24 kW, $14,500, was $18,200",
+        "Briggs & Stratton 26 kW, $15,400, was $19,300",
+        "Pricing covers installations less than 20 feet from the electrical meter or breaker panel and less than 10 feet from the gas meter",
+        "Ask about preventative maintenance plan pricing with the purchase of a generator"
+      ]
+    },
+    {
+      "heading": "Generator brands",
+      "items": [
+        "Cummins",
+        "Kohler",
+        "Briggs & Stratton"
+      ]
+    },
+    {
+      "heading": "Generator sizing",
+      "text": "From 18 kW homes to 300 kW industrial and hospital-grade systems, sized and installed to code."
+    },
+    {
+      "heading": "EV charging partners",
+      "items": [
+        "ChargePoint",
+        "Tesla",
+        "Blink",
+        "EverCharge",
+        "Qmerit"
+      ]
+    },
+    {
+      "heading": "Quotes",
+      "text": "A free consultation and quote on generator work, with a satisfaction guarantee behind the installation."
+    },
+    {
+      "heading": "Hours",
+      "items": [
+        "Monday to Friday, 8:00 AM to 5:00 PM",
+        "Saturday and Sunday, emergencies only",
+        "1 (832) 477-3360 for appointments"
+      ]
+    },
+    {
+      "heading": "Smart panel process",
+      "items": [
+        "Site assessment and load calculation",
+        "Design and permitting, with AHJ approvals and utility coordination",
+        "Panel swap with clean wiring and clear circuit names",
+        "Commissioning, firmware, circuit discovery and alerts",
+        "Solar, battery and EV integration coordinated with your provider",
+        "Training and handoff on outage priorities and maintenance",
+        "Post-install torque audit and photo log, with an optional thermal scan"
+      ]
+    },
+    {
+      "heading": "Referrals",
+      "text": "Refer a friend and win up to $1,000."
+    },
+    {
+      "heading": "Core values",
+      "items": [
+        "Inspirational",
+        "Discipline",
+        "Accountability",
+        "Transparency",
+        "Alignment",
+        "Results-Oriented",
+        "Collaboration"
+      ]
+    },
+    {
+      "heading": "Office",
+      "items": [
+        "10400 Westoffice Dr #114, Houston, TX 77042",
+        "info@trizoneelectric.com"
+      ]
+    },
+    {
+      "heading": "Follow us",
+      "items": [
+        "Facebook",
+        "Instagram",
+        "LinkedIn",
+        "YouTube"
+      ]
+    }
+  ]
+}
