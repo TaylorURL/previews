@@ -1,0 +1,806 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "B Credeur CPA, LLC",
+  "shortName": "B Credeur CPA",
+  "tagline": "A full-service CPA firm in Baytown, TX",
+  "phone": "(281) 422-8191",
+  "email": "info@bctxcpa.com",
+  "address": "621 Rollingbrook Dr",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77521",
+  "license": "A full-service Certified Public Accounting firm licensed in Texas. All our CPAs hold valid TX State CPA Certificates.",
+  "rating": 4.8,
+  "reviewCount": 6,
+  "hours": [
+    [
+      "Mon – Thu",
+      "8 – 11:30 AM, 1 – 5 PM"
+    ],
+    [
+      "Friday",
+      "By appointment"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Please call us at (281) 422-8191 today and we'll be happy to offer you a consultation."
+  },
+  "brand": {
+    "primary": "#23425e",
+    "primaryDeep": "#16314a",
+    "accent": "#396a92",
+    "ink": "#1c2733",
+    "muted": "#566273",
+    "surface": "#f4f6f8",
+    "cream": "#e7edf2",
+    "line": "#dce4eb",
+    "heading": "'Source Serif 4', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/bcredeurcpa/logo.webp",
+    "logoWidth": 210
+  },
+  "hero": {
+    "eyebrow": "Baytown, TX CPA firm",
+    "title": "A blend of personal service and expertise.",
+    "lead": "We are a full-service CPA firm licensed in Texas, offering a broad range of services for business owners, executives and independent professionals. Our rates are affordable. We are experienced and friendly.",
+    "image": "/brands/bcredeurcpa/hero",
+    "imageAlt": "A calculator, pens and working papers on a desk",
+    "points": [
+      "Licensed in Texas",
+      "Member of the AICPA",
+      "Intuit Certified QuickBooks ProAdvisor"
+    ]
+  },
+  "overview": {
+    "title": "Services for business owners, executives and individuals.",
+    "text": "Pick a service to see what it includes, or call and talk it through with our team."
+  },
+  "audiences": {
+    "individuals": "Individuals",
+    "businesses": "Businesses"
+  },
+  "services": [
+    {
+      "slug": "individual-tax-preparation",
+      "title": "Individual Tax Preparation",
+      "audience": "individuals",
+      "icon": "file-text",
+      "summary": "Personal returns, filed accurately and on time.",
+      "text": "We evaluate your individual tax situation and guide you through any tax challenges that develop, with the goal of minimizing your tax liability so you keep more of what you earn.",
+      "lead": "As your trusted advisors, we evaluate your individual tax situation and guide you through any tax challenges that develop. Our goal is to minimize your tax liability so that you can keep more of your hard-earned money.",
+      "covers": [
+        {
+          "title": "Accurate returns, filed on time",
+          "text": "We use our in-depth knowledge of the tax codes so you do not miss out on any tax credits and deductions you are entitled to take."
+        },
+        {
+          "title": "Estimated taxes",
+          "text": "We calculate estimated taxes for self-employed small business owners."
+        },
+        {
+          "title": "Electronic filing",
+          "text": "Electronic filing and direct deposit, for a faster tax refund."
+        },
+        {
+          "title": "Extensions",
+          "text": "We file extensions and calculate estimated tax to avoid interest and penalties."
+        },
+        {
+          "title": "Planning alongside the return",
+          "text": "We develop tax planning strategies that reflect your individual financial goals."
+        }
+      ]
+    },
+    {
+      "slug": "tax-planning",
+      "title": "Tax Planning",
+      "audience": "individuals",
+      "icon": "clipboard-check",
+      "summary": "Year-round planning, not just at tax time.",
+      "text": "There is more to preparing your taxes than filling out forms at tax time. We work with you all year long to develop strategies that lower your tax bill.",
+      "lead": "Many people feel like their tax bill is too high. The good news is that it doesn't have to be. There is more to preparing your taxes than simply filling out forms at tax time.",
+      "covers": [
+        {
+          "title": "Every credit and deduction",
+          "text": "Based on careful analysis of your tax situation, we make sure you take every tax credit and deduction you deserve on your return."
+        },
+        {
+          "title": "Recordkeeping",
+          "text": "We help you set up a recordkeeping system that meets IRS requirements."
+        },
+        {
+          "title": "Withholding",
+          "text": "We review and adjust your paycheck withholding so that it accurately reflects your tax situation and lets you keep more of your money."
+        },
+        {
+          "title": "Deferring tax",
+          "text": "We help you understand how to defer tax liabilities through pension plans, retirement contributions and similar plans."
+        },
+        {
+          "title": "Tax-exempt income",
+          "text": "We make sure you take advantage of certain investments to produce tax-exempt income, federal or state or both."
+        }
+      ]
+    },
+    {
+      "slug": "estate-and-trust-tax",
+      "title": "Estate and Trust Tax",
+      "audience": "individuals",
+      "icon": "landmark",
+      "summary": "Fiduciary returns and estate planning.",
+      "text": "Estate and trust tax preparation and planning are an important part of managing your financial future, and not just for the one percent.",
+      "lead": "Estate and trust tax preparation and planning help preserve, protect and enhance your financial legacy. It is important for everyone, especially if you have a spouse or children or own a business. We work closely with investment advisors, attorneys and other financial professionals to develop a long-term estate plan that meets your needs.",
+      "covers": [
+        {
+          "title": "Allocating assets",
+          "text": "Allocating assets to spouses, children, trusts and charities."
+        },
+        {
+          "title": "Reviewing your plan",
+          "text": "Reviewing your estate plan and trust tax situation to make sure financial goals are met."
+        },
+        {
+          "title": "Gift tax",
+          "text": "Gift tax returns and strategies."
+        },
+        {
+          "title": "Trusts",
+          "text": "Trust administration and trust income tax returns."
+        },
+        {
+          "title": "Estate tax returns",
+          "text": "Preparation of estate tax returns."
+        },
+        {
+          "title": "Business succession",
+          "text": "Business succession planning as part of the wider estate plan."
+        }
+      ]
+    },
+    {
+      "slug": "irs-audit-representation",
+      "title": "IRS Audit Representation",
+      "audience": "individuals",
+      "icon": "scale",
+      "summary": "We handle the audit so you don't have to.",
+      "text": "As friendly as IRS auditors might seem, they represent the IRS, not you. When you hire us to represent you during an audit, we take the correspondence and the discussions off your hands.",
+      "lead": "When it comes to tax and audit representation, we're in your corner. While you may be tempted to respond to a letter or notice from the IRS yourself, it is not always a good idea even if you have a firm grasp of tax law.",
+      "covers": [
+        {
+          "title": "Audit correspondence",
+          "text": "We take care of all audit correspondence."
+        },
+        {
+          "title": "Minimizing liability",
+          "text": "We make sure you take the steps needed to minimize your tax liability."
+        },
+        {
+          "title": "Discussions with auditors",
+          "text": "We handle all discussions with auditors, to reduce the risk of additional liability."
+        },
+        {
+          "title": "Appeals",
+          "text": "We appeal a decision, if necessary."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How many returns does the IRS actually audit?",
+          "a": "The IRS has audited less than one percent of tax returns in recent years, and nearly 75 percent of those audits are notices or letters requesting additional information or clarification rather than field audits."
+        }
+      ]
+    },
+    {
+      "slug": "tax-relief",
+      "title": "Tax Relief",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "Help if you owe the IRS money.",
+      "text": "If the IRS has caught up with you and is demanding payment, we understand how the IRS works and what it takes to mediate a fair solution on your behalf. We pride ourselves on being efficient, affordable and discreet.",
+      "lead": "Millions of taxpayers receive letters or notices from the IRS every year, and most of the time there is nothing to worry about. But if the IRS is demanding payment, the next step is likely to be garnishing your wages, putting a lien on your home or a levy on your bank account, and ignoring it will not make it go away. We handle the problems below, whether that means filing a past due return, minimizing back tax debt and any penalties or fines, or submitting an offer in compromise.",
+      "covers": [
+        {
+          "title": "IRS audits",
+          "text": "Rarely do our clients have to talk with the IRS. We handle it all for you, so you need not take time off work for the bureaucracy and the paperwork."
+        },
+        {
+          "title": "Non-filed tax returns",
+          "text": "We reconstruct records you have misplaced, prepare and submit the returns, negotiate with the IRS on your behalf, and represent you through preparation and collection."
+        },
+        {
+          "title": "Back taxes owed",
+          "text": "Penalties and interest add up fast. We offer several options for resolving unpaid taxes, starting with a free consultation with our tax specialist."
+        },
+        {
+          "title": "Payroll tax problems",
+          "text": "The IRS views failing to pay payroll taxes as the cardinal sin of tax delinquency, because much of what an employer pays over is its employees' own withholdings."
+        },
+        {
+          "title": "IRS payment plans",
+          "text": "If you do not qualify for the Offer in Compromise program, a payment plan gives you more time to pay off the debt. Interest keeps accruing, but there is a chance we can get the penalties removed."
+        },
+        {
+          "title": "Liens, levies and garnishment",
+          "text": "We also take on IRS liens and levies, wage garnishment, delinquent returns and failure to file, and arrange installment agreements with the IRS."
+        }
+      ]
+    },
+    {
+      "slug": "small-business-accounting",
+      "title": "Small Business Accounting",
+      "audience": "businesses",
+      "icon": "calculator",
+      "summary": "Take control of your finances.",
+      "text": "You probably started your business because you had a great product or service to offer, not because you were excited about cash flow analysis and budget forecasting. That is why we're here.",
+      "lead": "Whether we meet with you monthly, quarterly or once a year, we help you take financial control of your business, so you can focus on your core business tasks and make informed decisions about your financial future.",
+      "covers": [
+        {
+          "title": "Reports and analysis",
+          "text": "We generate reports and analyze financial data, including custom financial reports."
+        },
+        {
+          "title": "Cash flow and profitability",
+          "text": "We evaluate cash flow and improve profitability, and prepare budgets."
+        },
+        {
+          "title": "Financial statements",
+          "text": "Quarterly, monthly and annual financial statements, profit statements and balance sheets."
+        },
+        {
+          "title": "Systems set-up",
+          "text": "Accounting systems set-up, chart of accounts and general ledger, with internal controls for fraud prevention."
+        },
+        {
+          "title": "Tax work",
+          "text": "Strategic tax planning and financial forecasting, business tax returns, and use and sales tax processing."
+        }
+      ]
+    },
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping Services",
+      "audience": "businesses",
+      "icon": "book",
+      "summary": "Accurate books, kept up to date.",
+      "text": "Accurate bookkeeping is essential to your company's long-term viability. We serve clients from self-employed home-based business owners to small and medium-sized businesses with employees.",
+      "lead": "When you outsource your bookkeeping to us you get one-on-one personalized service along with current technology and payroll software. If you are just starting out, we set up reporting and recordkeeping systems. If you have been in business a while but need help cleaning up your books, we streamline your systems and set up a system of checks and balances.",
+      "covers": [
+        {
+          "title": "Accounts payable",
+          "text": "Entry and bill paying."
+        },
+        {
+          "title": "Accounts receivable",
+          "text": "Entry, invoicing, deposits and collection."
+        },
+        {
+          "title": "Reconciliations and ledger",
+          "text": "Bank reconciliations and general ledger work."
+        },
+        {
+          "title": "Inventory and clean-up",
+          "text": "Inventory management and bookkeeping clean-up."
+        },
+        {
+          "title": "Tax forms",
+          "text": "1099s and 1096."
+        },
+        {
+          "title": "Payroll processing",
+          "text": "Payroll processed as part of your outsourced bookkeeping."
+        }
+      ]
+    },
+    {
+      "slug": "business-tax-preparation",
+      "title": "Business Tax Preparation",
+      "audience": "businesses",
+      "icon": "receipt",
+      "summary": "Returns from a firm that knows your business.",
+      "text": "It is important to develop a relationship with a tax preparation firm that understands how your business works. We make sure you stay on top of your tax obligations.",
+      "lead": "Today's tax laws are complicated, and IRS compliance can be overwhelming. With so many details to consider, it is easy to make an error or omit something that ends up as a penalty, fine or unwanted problem with the IRS. As your trusted advisor, we make sure you stay on top of your tax obligations and avoid penalties and fees that reduce your profitability.",
+      "covers": [
+        {
+          "title": "Planning and preparation",
+          "text": "We serve both planning and preparation needs while remaining compliant with continuously changing tax laws and regulations."
+        },
+        {
+          "title": "Deductions and credits",
+          "text": "We work with you to plan ahead and maximize appropriate deductions and credit opportunities."
+        },
+        {
+          "title": "Sales and payroll tax",
+          "text": "Tax compliance across sales, use and payroll taxes."
+        },
+        {
+          "title": "Quarterly estimates",
+          "text": "Annual tax returns and quarterly estimated taxes as needed."
+        }
+      ]
+    },
+    {
+      "slug": "part-time-cfo",
+      "title": "Part-Time CFO Services",
+      "audience": "businesses",
+      "icon": "chart",
+      "summary": "A financial executive without the full-time cost.",
+      "text": "Businesses of all sizes benefit from a CFO or controller, but many small business owners worry they cannot afford one. Part-time, outsourced CFO services are a cost-effective solution.",
+      "lead": "When you take advantage of our outsourced CFO services, you get a dedicated, experienced financial professional who helps you make the tough business decisions. You will also have a better understanding of the financial side of your business, based on hard numbers.",
+      "covers": [
+        {
+          "title": "Financial statements",
+          "text": "Monthly, quarterly or annual financial statements prepared for you."
+        },
+        {
+          "title": "Forecasting",
+          "text": "Financial forecasting and guidance for increasing cash flow and improving profitability in support of future goals."
+        },
+        {
+          "title": "Payables and receivables",
+          "text": "Accounts payable and accounts receivable handled on your behalf."
+        },
+        {
+          "title": "Tax planning and compliance",
+          "text": "Strategic tax planning, and compliance for sales, use and payroll taxes."
+        },
+        {
+          "title": "Systems and controls",
+          "text": "Setting up an accounting system and the controls around it."
+        }
+      ]
+    },
+    {
+      "slug": "cash-flow-management",
+      "title": "Cash Flow Management",
+      "audience": "businesses",
+      "icon": "banknote",
+      "summary": "Projections, statements and collections.",
+      "text": "Many businesses fail because of poor cash flow management. Our expertise lies in helping business owners manage cash flow better, with the goal of increased profitability.",
+      "lead": "Cash flow is the movement of money into and out of a business. While every business has temporary periods of negative cash flow, too many months of it can and will cause a business to fail. Managing cash flow is the key to operating any successful business.",
+      "covers": [
+        {
+          "title": "Cash projections",
+          "text": "We develop short and long-term cash projections."
+        },
+        {
+          "title": "Where the money goes",
+          "text": "We analyze prior years' cash flow statements to help you understand where the money goes."
+        },
+        {
+          "title": "Ongoing statements",
+          "text": "Monthly, quarterly and annual cash flow statements."
+        },
+        {
+          "title": "Collections",
+          "text": "Tools to accelerate the collection process, and updated billing and payment policies."
+        },
+        {
+          "title": "Credit and surplus cash",
+          "text": "Assistance obtaining a line of credit, and getting the maximum rate of return on surplus cash."
+        }
+      ]
+    },
+    {
+      "slug": "new-business-formation",
+      "title": "New Business Formation",
+      "audience": "businesses",
+      "icon": "store",
+      "summary": "Entity choice, systems and compliance.",
+      "text": "There is more to starting a business than developing a product and hoping it sells. We help you with the entity, the systems and the filings.",
+      "lead": "As an entrepreneur, you are probably a big-picture person with a vision. You would rather not deal with nitty-gritty details like choosing a business entity, sales and payroll tax, or accounting systems that help you manage cash flow. The good news is that we're here to help you figure it out.",
+      "covers": [
+        {
+          "title": "Entity selection",
+          "text": "Determining which business entity best meets your goals and minimizes tax liability, including partnership agreements."
+        },
+        {
+          "title": "Budget and plan",
+          "text": "Preparing a cash flow budget and creating a business plan to help you secure financing if needed."
+        },
+        {
+          "title": "Accounting system",
+          "text": "Setting up an accounting system using software that works for you, plus billing systems and collection policies."
+        },
+        {
+          "title": "Tax compliance",
+          "text": "Making sure you are compliant with state, local and federal tax laws such as sales and use tax, payroll tax and a Federal EIN."
+        },
+        {
+          "title": "Licenses and permits",
+          "text": "Assistance filing paperwork for state and local licenses and permits as required, and assessing your business insurance needs."
+        }
+      ]
+    },
+    {
+      "slug": "business-advisory",
+      "title": "Business Advisory Services",
+      "audience": "businesses",
+      "icon": "handshake",
+      "summary": "Planning, metrics and valuations.",
+      "text": "We combine industry experience with time-tested solutions to develop a framework on which to build your company's success.",
+      "lead": "Business planning is the foundation of future success. With years of proven expertise in business planning, we make sure business owners have the information and the insights they need to stay competitive.",
+      "covers": [
+        {
+          "title": "Strategic growth",
+          "text": "Planning for strategic growth, with performance metrics to measure it."
+        },
+        {
+          "title": "Internal controls",
+          "text": "Review and evaluation of internal controls, and SAS 112 compliance."
+        },
+        {
+          "title": "Valuations",
+          "text": "Business valuations and due diligence."
+        },
+        {
+          "title": "Budget and projections",
+          "text": "Budget and cash flow analysis and management, plus financial projections and forecasts."
+        },
+        {
+          "title": "Structure and financing",
+          "text": "Business entity selection and restructuring, and assistance with debt and financing."
+        },
+        {
+          "title": "Expansion",
+          "text": "Business expansion and acquisition analysis, and evaluation and implementation of accounting software."
+        }
+      ]
+    },
+    {
+      "slug": "succession-planning",
+      "title": "Succession Planning",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Transferring ownership or selling up.",
+      "text": "We work with business owners and their families to develop plans for transferring business ownership to the next generation or to new leadership.",
+      "lead": "Developing and implementing a well-designed succession plan is essential to the survival of any family business. If you decide to sell, we identify the financial strengths and weaknesses of your business and develop a plan to maximize its value. If you decide to keep it in the family, we help prepare your successor, or identify one.",
+      "covers": [
+        {
+          "title": "Internal transfer",
+          "text": "Assistance with the internal transfer to a family member."
+        },
+        {
+          "title": "Finding a buyer",
+          "text": "Identifying potential buyers, and business valuations in preparation for sale."
+        },
+        {
+          "title": "Agreements",
+          "text": "Buy and sell agreements."
+        },
+        {
+          "title": "Estate and gift tax",
+          "text": "Estate and trust tax planning, and gift tax planning."
+        },
+        {
+          "title": "Retirement",
+          "text": "Retirement planning and tax projections."
+        },
+        {
+          "title": "Restructuring",
+          "text": "Business restructuring where it serves the plan."
+        }
+      ]
+    },
+    {
+      "slug": "nonprofit-accounting",
+      "title": "Non-Profit Organizations",
+      "audience": "businesses",
+      "icon": "heart",
+      "summary": "Form 990, audits and tax-exempt status.",
+      "text": "As a nonprofit you face challenges for-profit businesses do not, from the annual Form 990 to paying tax on unrelated business income.",
+      "lead": "We specialize in nonprofit accounting services and tax compliance. Whether you are an established nonprofit organization, association, foundation, charity or other service organization, or are just getting started, we can help.",
+      "covers": [
+        {
+          "title": "Annual audits",
+          "text": "We conduct annual audits."
+        },
+        {
+          "title": "Financial statements",
+          "text": "Quarterly and annual financial statements, and reviewed or compiled financial statements."
+        },
+        {
+          "title": "Forms 990 and 990-T",
+          "text": "We submit annual Forms 990 and 990-T."
+        },
+        {
+          "title": "Supporting documents",
+          "text": "Income, program and functional expenses, balance sheets and revenue support schedules."
+        },
+        {
+          "title": "State compliance",
+          "text": "Compliance with state laws affecting nonprofits."
+        },
+        {
+          "title": "Tax-exempt status",
+          "text": "Applying for tax-exempt status under Section 501(c)(3), including filing Form 1023."
+        }
+      ]
+    },
+    {
+      "slug": "quickbooks",
+      "title": "Services for QuickBooks",
+      "audience": "businesses",
+      "icon": "file-pen",
+      "summary": "Setup, training, tune-ups and answers.",
+      "text": "QuickBooks is easy to use and an affordable way to manage your business more efficiently, but the initial setup must be done correctly for future information to be accurate.",
+      "lead": "We are an Intuit Certified QuickBooks ProAdvisor firm. From the first install through to training your staff and cleaning up a year of entries, we are here for you at every step.",
+      "covers": [
+        {
+          "title": "Setup and customization",
+          "text": "We study and evaluate your software and accounting needs, recommend software and hardware requirements, then install and set up a chart of accounts and the entire accounting package including payroll."
+        },
+        {
+          "title": "One-on-one training",
+          "text": "We come to your location and focus on the individual issues facing your business, rather than spending time on features that do not affect it."
+        },
+        {
+          "title": "Tune-up for QuickBooks",
+          "text": "In four hours a QuickBooks Professional Advisor reviews your transactions for the year, cleans up stray entries, customizes reports, balances the general ledger to subsidiary records and adds personalized training."
+        },
+        {
+          "title": "Answers to QuickBooks Questions",
+          "text": "Questions may be called in, left on voice mail, faxed or emailed, and a Certified Professional Advisor who specializes in QuickBooks responds with a detailed solution, usually within 24 hours. The service is $20 per question."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does Answers to QuickBooks Questions cost?",
+          "a": "$20 per question. If we cannot adequately resolve your problem or question, your money will be refunded 100 percent, guaranteed."
+        },
+        {
+          "q": "How much does QuickBooks setup cost?",
+          "a": "We first want to find out a little more about your business and your accounting records before we quote you an exact price. We work with many small business owners and our rates are designed to fit their budgets."
+        }
+      ]
+    },
+    {
+      "slug": "bank-financing",
+      "title": "Bank Financing",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "A loan proposal a bank will take seriously.",
+      "text": "Banks evaluate your ability to pay back a loan by examining a number of factors. Understanding what a bank wants, and preparing for it, can make the difference.",
+      "lead": "If you need bank financing, it pays to be prepared. We start by understanding your business and what you are trying to achieve, look at financial performance and projections, identify potential sources of financing, then work with you to prepare a successful business loan proposal.",
+      "covers": [
+        {
+          "title": "Executive summary",
+          "text": "The summary that opens the loan proposal."
+        },
+        {
+          "title": "Pro forma cash budgets",
+          "text": "Forward-looking cash budgets for the lender."
+        },
+        {
+          "title": "Financial statements",
+          "text": "Business financial statements and the owner's personal financial statements."
+        },
+        {
+          "title": "Lender introductions",
+          "text": "Introductions to lenders, and representation through the process."
+        }
+      ]
+    }
+  ],
+  "process": {
+    "title": "How we work",
+    "text": "Our firm provides outstanding service because of our dedication to three underlying principles.",
+    "steps": [
+      {
+        "title": "Professionalism",
+        "text": "We believe our high standards, service and specialized staff make a difference, and we are dedicated to ensuring every client receives personal attention."
+      },
+      {
+        "title": "Responsiveness",
+        "text": "We provide comprehensive financial services to individuals, small to medium-sized businesses and other agencies, and we are dedicated to serving client needs throughout the year, not just at tax time."
+      },
+      {
+        "title": "Quality",
+        "text": "As trusted advisors, we are available to assist our clients at any time, to provide insightful advice that enables them to make informed financial decisions."
+      }
+    ]
+  },
+  "affiliations": {
+    "title": "Credentials and memberships",
+    "items": [
+      "Certified Public Accounting firm licensed in Texas",
+      "Member of the AICPA",
+      "Intuit Certified QuickBooks ProAdvisor",
+      "Certified QuickBooks Consultant",
+      "Accountant Finder Network"
+    ]
+  },
+  "about": {
+    "title": "A full-service CPA firm in Baytown, TX.",
+    "text": [
+      "If you are looking for a blend of personal service and expertise, you have come to the right place. B Credeur CPA LLC is a full-service tax, accounting and business consulting firm in Baytown, and we offer a broad range of services for business owners, executives and independent professionals.",
+      "We are a Certified Public Accounting firm licensed in Texas, and all our CPAs hold valid TX State CPA Certificates. We continually educate ourselves through professional organizations to improve our technical expertise and financial knowledge, as well as how to serve our clients better using state-of-the-art technologies.",
+      "Our team has been helping clients in the Baytown area for years. Each client receives close personal and professional attention, and we are available throughout the year rather than only at tax time."
+    ],
+    "image": "/brands/bcredeurcpa/about",
+    "imageAlt": "A calculator and office supplies on a desk",
+    "values": [
+      {
+        "title": "Professionalism",
+        "text": "High standards, specialized staff and personal attention for every client, with continuing education to stay informed about new developments in tax law."
+      },
+      {
+        "title": "Responsiveness",
+        "text": "Comprehensive financial services for individuals, small to medium-sized businesses and other agencies, with a quick response to any concern, all year round."
+      },
+      {
+        "title": "Quality",
+        "text": "Insightful advice from trusted advisors, available at any time, so you can make informed financial decisions."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Bethany Credeur, MBA, CPA",
+      "role": "Certified Public Accountant",
+      "bio": "Bethany (Badgett) Credeur grew up in Dayton, Texas. She attended Lamar University in Beaumont, Texas, where she received her Bachelor of Business Administration in Accounting and Masters of Business Administration. With 15+ years in the accounting field, she is ready to be a valued asset in the lives of those she helps. She serves as a board member and treasurer of Bay Area Homeless Services, and as a board member, treasurer and finance committee member of United Way GBACC.",
+      "image": "/brands/bcredeurcpa/team-1",
+      "imageAlt": "Bethany Credeur"
+    },
+    {
+      "name": "Katy Milligan Angel",
+      "role": "Accounting Staff",
+      "bio": "Katy is a graduate of University of Houston Clear Lake with a Bachelor of Science in Accounting. She completed her Associate of Applied Science in Business Administration from San Jacinto College during 2013. With a driven personality and 10+ years in the accounting field, she is currently pursuing her CPA certification. She is a junior board member of Bay Area Homeless Services and a Mane Event committee member.",
+      "image": "/brands/bcredeurcpa/team-2",
+      "imageAlt": "Katy Milligan Angel"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "My company's books are a nightmare. I don't even know where to start.",
+      "a": "We take care of your books for you, so you can get back to the job of running your business and generating profits."
+    },
+    {
+      "q": "I'm spending all my time managing payroll for my employees.",
+      "a": "We offer payroll solutions that meet your business's needs and enable you to spend time doing what you do best, running your company."
+    },
+    {
+      "q": "I use QuickBooks, but I'm not sure I'm getting the most out of the software.",
+      "a": "We offer a variety of services to help make sure that you are taking full advantage of QuickBooks' many features, from setup and training to a four-hour tune-up."
+    },
+    {
+      "q": "I made a mistake on my taxes.",
+      "a": "We're here to help you resolve your tax problems and put an end to the misery that the IRS can put you through, including audit representation, non-filed returns, back taxes owed, payroll tax problems and IRS payment plans."
+    },
+    {
+      "q": "I need help planning my family's financial future.",
+      "a": "We offer one-on-one guidance and a comprehensive financial plan that helps manage risk, improve performance, and ensure the growth and longevity of your wealth."
+    },
+    {
+      "q": "Which industries do you work with?",
+      "a": "We work with construction, dentists, healthcare, hospitality, law firms, manufacturers and real estate, among others."
+    },
+    {
+      "q": "Can I send you documents securely?",
+      "a": "Yes. We have a client portal and a SecureSend file upload, and you can also call the office on (281) 422-8191 to arrange it."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Client Portal",
+      "text": "Sign in to reach your documents and returns.",
+      "href": "http://www.bctxcpa.com/clientportal.php"
+    },
+    {
+      "title": "SecureSend",
+      "text": "Send us a file securely without emailing it.",
+      "href": "http://www.bctxcpa.com/quick-send.php"
+    },
+    {
+      "title": "Financial Calculators",
+      "text": "Calculators for loans, retirement, savings and tax questions.",
+      "href": "http://www.bctxcpa.com/calc-section.php"
+    },
+    {
+      "title": "Tax Center",
+      "text": "Track your refund, tax due dates, tax rates, IRS forms and publications, the record retention guide and state tax forms.",
+      "href": "http://www.bctxcpa.com/taxrefunds.php"
+    },
+    {
+      "title": "Monthly Newsletter",
+      "text": "Timely articles to help you achieve your financial goals.",
+      "href": "http://www.bctxcpa.com/newsletter.php"
+    }
+  ],
+  "serviceArea": [
+    "Baytown"
+  ],
+  "facts": [
+    {
+      "heading": "Office hours",
+      "items": [
+        "Monday through Thursday, 8:00 AM – 11:30 AM and 1:00 PM – 5:00 PM",
+        "Closed Friday, Saturday and Sunday unless scheduled in advance"
+      ]
+    },
+    {
+      "heading": "License and credentials",
+      "items": [
+        "Full-service Certified Public Accounting firm licensed in Texas",
+        "All our CPAs hold valid TX State CPA Certificates",
+        "Member of the AICPA",
+        "Intuit Certified QuickBooks ProAdvisor",
+        "Certified QuickBooks Consultant"
+      ]
+    },
+    {
+      "heading": "Industries we work with",
+      "items": [
+        "Construction",
+        "Dentists",
+        "Healthcare",
+        "Hospitality",
+        "Law firms",
+        "Manufacturers",
+        "Real estate"
+      ]
+    },
+    {
+      "heading": "IRS problem resolution",
+      "items": [
+        "IRS audit representation",
+        "Non-filed and delinquent tax returns",
+        "Back taxes owed",
+        "Payroll tax problems",
+        "IRS payment plans and installment agreements",
+        "Offers in compromise",
+        "IRS liens and levies",
+        "Wage garnishment"
+      ]
+    },
+    {
+      "heading": "Free consultation on a tax problem",
+      "text": "If you owe back taxes or need an IRS payment plan, the first conversation with our tax specialist is free. Call (281) 422-8191 or send us the details and we will tell you what your options are."
+    },
+    {
+      "heading": "Answers to QuickBooks Questions",
+      "text": "$20 per question, answered by a Certified Professional Advisor who specializes in QuickBooks, usually within 24 hours. If we cannot adequately resolve your problem or question, your money will be refunded 100 percent, guaranteed."
+    },
+    {
+      "heading": "Sending us documents",
+      "text": "We have a client portal and a SecureSend file upload for sending documents without emailing them. Contact the office on (281) 422-8191 or at info@bctxcpa.com and we will set you up."
+    },
+    {
+      "heading": "Community work",
+      "items": [
+        "Bay Area Homeless Services, board member and treasurer",
+        "Bay Area Homeless Services, junior board member and Mane Event committee member",
+        "United Way GBACC, board member, treasurer and finance committee member"
+      ]
+    },
+    {
+      "heading": "Your client portal",
+      "text": "Clients get a secure, password-protected portal to store and reach their tax returns, financial work papers and accounting database from anywhere, at work, at home or on vacation. It is also how we exchange working documents, scanned receipts and very large QuickBooks files with you. You can register for an account from the portal page, or use SecureSend to send us a file without one."
+    },
+    {
+      "heading": "Working here",
+      "items": [
+        "We are seeking professional, hard-working, licensed CPAs with at least three years of experience",
+        "The job calls for high-level tax preparation skills, strong tax research and problem solving, broad software knowledge, and clear writing and speaking",
+        "We work as a team across tax compliance, planning, financial statements and general business consulting",
+        "The firm asks for independence, integrity, objectivity, competence and due care from everybody on an engagement, and decisions are based on the substance of the issue rather than its form",
+        "Email your resume and references to info@bctxcpa.com"
+      ]
+    },
+    {
+      "heading": "Privacy of your information",
+      "text": "Our privacy policy follows the Gramm-Leach-Bliley Act of 1999. We do not disclose any nonpublic personal information about clients or former clients to anyone except as permitted by law, and access inside the firm is restricted to the people who need it to do your work. Physical, electronic and procedural safeguards that comply with federal regulations guard it, and anything online is stored on secure servers in SOC 1 certified datacenters."
+    },
+    {
+      "heading": "Find us",
+      "text": "621 Rollingbrook Dr, Baytown, TX 77521. Call (281) 422-8191 or email info@bctxcpa.com and we will happily offer you a consultation to determine how we can best serve you."
+    }
+  ]
+}

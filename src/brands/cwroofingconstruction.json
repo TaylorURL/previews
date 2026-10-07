@@ -1,0 +1,401 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "CW Roofing & Construction",
+  "shortName": "CW Roofing",
+  "phone": "(281) 925-7663",
+  "email": "info@cwroofingservices.com",
+  "address": "4819 Pineloch Byu Dr",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77523",
+  "rating": 5.0,
+  "reviewCount": 27,
+  "license": "Fully insured · GAF Certified · Owens Corning Preferred Contractor",
+  "hours": [["Mon – Fri", "7 AM – 6 PM"], ["Saturday", "8 AM – 2 PM"], ["Sunday", "Closed"]],
+  "brand": {
+    "primary": "#5abd28",
+    "primaryDeep": "#36701a",
+    "accent": "#8bc541",
+    "ink": "#121519",
+    "surface": "#f3f5f0",
+    "heading": "'Oswald', 'Arial Narrow', sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap",
+    "logo": "/brands/cwroofingconstruction/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Protect what matters",
+    "title": "Residential & Commercial",
+    "titleAccent": "Roofing & Construction",
+    "lead": "From roofs and exteriors to remodels, fencing, metal buildings and custom fabrication, we take on residential and commercial projects with careful planning and workmanship built to last.",
+    "image": "/brands/cwroofingconstruction/hero",
+    "imageAlt": "Architectural shingle roof with dormers on a residential home"
+  },
+  "promises": ["Fully Insured", "Manufacturer-Backed Warranties", "Code-Compliant Installations", "24/7 Emergency Service"],
+  "services": [
+    {
+      "slug": "roof-replacement",
+      "group": "residential",
+      "title": "Roof Replacement",
+      "short": "Complete roofing system upgrades with expert installation.",
+      "text": "Complete roofing system upgrades with premium materials and expert installation, from architectural shingles to synthetic slate.",
+      "image": "/brands/cwroofingconstruction/synthetic-slate",
+      "imageAlt": "Synthetic slate roof on a stone-faced home",
+      "materials": true,
+      "body": [
+        "A replacement is a manufacturer-backed roofing system, not just a bundle of shingles. We install architectural shingles, designer shingles, synthetic slate and composite, and tile roofing, and we hold GAF and Owens Corning certifications for the systems we put on.",
+        "Most residential roof replacements can be completed in one to three days depending on the size and complexity of the roof. We provide an accurate timeline after the initial inspection."
+      ],
+      "points": [
+        "Architectural shingles",
+        "Designer shingles",
+        "Synthetic slate and composite",
+        "Tile roofing",
+        "Code-compliant installation",
+        "Manufacturer-backed warranties"
+      ],
+      "faqs": [
+        { "q": "How long does a roof replacement take?", "a": "Most residential roof replacements can be completed in 1-3 days depending on the size and complexity of the roof. We'll provide an accurate timeline after our initial inspection." },
+        { "q": "What types of roofs do you install?", "a": "We install architectural shingles, designer shingles, standing seam metal, TPO, PVC, R-Panel, Mod Bit, synthetic slate, and tile roofing systems. We work with all major roofing materials." }
+      ]
+    },
+    {
+      "slug": "metal-roofing",
+      "group": "residential",
+      "title": "Metal Roofing",
+      "short": "Standing seam and R-Panel metal roofing systems.",
+      "text": "Standing seam metal and R-Panel or PBR panel roofing for homes and buildings along the Gulf Coast.",
+      "image": "/brands/cwroofingconstruction/standing-seam",
+      "imageAlt": "Standing seam metal roof panels running to the ridge",
+      "body": [
+        "Metal is one of the roofing systems we install most, and the two we carry are standing seam and R-Panel or PBR panel. Which one fits depends on the slope, the span and how the building is used.",
+        "We inspect and document before a scope is written, so the panel, the fastening and the flashing details are decided on the roof rather than guessed at."
+      ],
+      "points": ["Standing seam metal", "R-Panel and PBR panel", "Residential and commercial", "Code-compliant installations"]
+    },
+    {
+      "slug": "roof-repairs",
+      "group": "residential",
+      "title": "Roof Repairs",
+      "short": "Leak repairs, flashing fixes and maintenance.",
+      "text": "Leak repairs, flashing fixes and maintenance to extend the life of your roof.",
+      "body": [
+        "A small leak around flashing or a penetration rarely stays small. We find where the water is getting in, document it, and give you a scope for the fix rather than a guess.",
+        "Repairs and maintenance are how a roof reaches the end of the life it was built for. Where a repair is no longer the right call, we say so."
+      ],
+      "points": ["Leak repairs", "Flashing repairs", "Roof maintenance", "Residential and commercial roofs"]
+    },
+    {
+      "slug": "roof-inspections",
+      "group": "residential",
+      "title": "Roof Inspections",
+      "short": "Comprehensive inspections before problems get costly.",
+      "text": "Comprehensive inspections to identify issues before they become costly problems.",
+      "body": [
+        "We use advanced inspection technology and detailed reporting, so what comes back to you is a record of the roof's condition rather than an opinion about it.",
+        "A comprehensive property evaluation is the first step on every project we take on, whether the work turns out to be a repair, a replacement or nothing at all."
+      ],
+      "points": ["Comprehensive property evaluation", "Detailed condition reporting", "Advanced inspection technology", "Residential and commercial properties"]
+    },
+    {
+      "slug": "exterior-solutions",
+      "group": "residential",
+      "title": "Exterior Solutions",
+      "short": "Siding, gutters, soffit and fascia.",
+      "text": "Siding, gutters, soffit and fascia for a more complete exterior.",
+      "body": [
+        "A roof works with everything around it. Siding, gutters, soffit and fascia all move water away from the structure, and a roof replacement is usually the moment to put them right.",
+        "We take the exterior on as part of the same project, so there is one scope and one crew rather than a second contractor to chase."
+      ],
+      "points": ["Siding", "Gutters", "Soffit", "Fascia"]
+    },
+    {
+      "slug": "remodels-and-additions",
+      "group": "residential",
+      "title": "Remodels & Additions",
+      "short": "Kitchen remodels, bath remodels and additions.",
+      "text": "Kitchen remodels, bath remodels and additions planned around the way you use your space.",
+      "body": [
+        "We are a roofing and construction company, and the construction side takes on kitchen remodels, bath remodels and home additions.",
+        "Planning comes first: the scope is set around how the space is actually used, so the finished room works rather than just looks finished."
+      ],
+      "points": ["Kitchen remodels", "Bath remodels", "Home additions"],
+      "faqs": [
+        { "q": "Do you do construction work beyond roofing?", "a": "Yes. We also take on siding, gutters, soffit, fascia, kitchen and bath remodels, additions, wood and metal fencing, metal shops, barns, carports, and custom metal fabrication." }
+      ]
+    },
+    {
+      "slug": "fencing",
+      "group": "residential",
+      "title": "Fencing",
+      "short": "Wood and metal fencing, including custom projects.",
+      "text": "Wood and metal fencing, including custom fence projects for homes and businesses.",
+      "body": [
+        "We build wood and metal fencing for homes and for businesses, and we take on custom fence projects that a fence company working from a catalogue will not.",
+        "Because we fabricate metal in house, a custom gate or a run that has to fit an awkward boundary is a drawing rather than a problem."
+      ],
+      "points": ["Wood fencing", "Metal fencing", "Custom fence projects", "Residential and commercial"]
+    },
+    {
+      "slug": "storm-damage-repair",
+      "group": "storm",
+      "title": "Storm Damage Repair",
+      "short": "Inspections, documentation and repairs after wind or hail.",
+      "text": "Roof inspections, damage documentation and repairs after wind or hail storms.",
+      "body": [
+        "When severe weather hits the Gulf Coast, shortcuts aren't an option. We inspect the roof, document what the storm did, and build a repair scope from the record rather than from a sales pitch.",
+        "We don't create damage. We uncover what the storm already did, and we make sure it gets addressed the right way."
+      ],
+      "points": [
+        "Wind and hail damage inspection",
+        "Storm damage documentation",
+        "Repairs and full restoration",
+        "Residential and commercial properties"
+      ]
+    },
+    {
+      "slug": "claim-documentation",
+      "group": "storm",
+      "title": "Claim Documentation",
+      "short": "We document the damage; your insurer decides coverage.",
+      "text": "We inspect and document roof damage and provide a repair scope. Your insurance company determines coverage and handles the claim.",
+      "claim": true,
+      "body": [
+        "Navigating an insurance claim can feel overwhelming, especially when your home has been damaged. We work directly with property owners to document damage, provide professional assessments, and help streamline the claims process.",
+        "Texas law requires property owners to pay their insurance deductible. Be cautious of anyone offering to waive, absorb or rebate it. Coverage and payment decisions belong to your insurance company, not the contractor."
+      ],
+      "points": [
+        "Roof inspection and damage documentation",
+        "Professional assessment and repair scope",
+        "Help streamlining the claims process",
+        "Your insurer determines coverage"
+      ],
+      "faqs": [
+        { "q": "Can you document storm damage for an insurance claim?", "a": "Yes, we can inspect and document roof conditions and provide a repair estimate. Your insurance company determines coverage and handles the claim." }
+      ]
+    },
+    {
+      "slug": "emergency-roof-repair",
+      "group": "storm",
+      "title": "Emergency Roof Repair",
+      "short": "Available 24/7 for storm damage and urgent repairs.",
+      "text": "Emergency services available 24/7 for storm damage and urgent repairs.",
+      "body": [
+        "We offer 24/7 emergency roofing repair for storm damage and urgent situations. Call (281) 925-7663 any time you need immediate assistance.",
+        "If you are making the property safe yourself, avoid damaged areas and use temporary measures only when they can be completed safely. Keep receipts for emergency work."
+      ],
+      "points": ["Available 24 hours a day, 7 days a week", "Storm damage response", "Urgent leak and roof repairs"],
+      "faqs": [
+        { "q": "Do you offer emergency repair services?", "a": "Yes, we offer 24/7 emergency roofing repair services for storm damage and urgent situations. Call (281) 925-ROOF any time you need immediate assistance." }
+      ]
+    },
+    {
+      "slug": "commercial-roofing",
+      "group": "commercial",
+      "title": "Commercial Roofing",
+      "short": "TPO, PVC, Mod Bit and R-Panel systems.",
+      "text": "Low-slope and metal commercial roofing systems: TPO, PVC, Mod Bit and R-Panel.",
+      "image": "/brands/cwroofingconstruction/tpo",
+      "imageAlt": "Large white TPO single-ply roof on a commercial building",
+      "body": [
+        "On the commercial side we install TPO, PVC and Mod Bit for low-slope roofs, and R-Panel where a metal roof is the right system. Commercial property managers, industrial facilities, HOAs and developers are all regular clients.",
+        "Every installation is code-compliant and manufacturer-backed, and the inspection and reporting that precede it are the same ones we run on a house."
+      ],
+      "points": ["TPO single-ply", "PVC roofing", "Mod Bit", "R-Panel and PBR panel", "Commercial and industrial properties"]
+    },
+    {
+      "slug": "metal-buildings",
+      "group": "commercial",
+      "title": "Metal Buildings",
+      "short": "Metal shops, barns and carports.",
+      "text": "Metal shops, barns and carports for residential and commercial needs.",
+      "image": "/brands/cwroofingconstruction/r-panel",
+      "imageAlt": "R-Panel metal roofing running down a building slope",
+      "body": [
+        "We put up metal shops, barns and carports for homeowners and for businesses, using the same panel systems we roof with.",
+        "Because the fabrication is ours, a building that has to fit a particular footprint or carry a particular opening is a drawing rather than a special order."
+      ],
+      "points": ["Metal shops", "Barns", "Carports", "Residential and commercial"]
+    },
+    {
+      "slug": "metal-fabrication",
+      "group": "commercial",
+      "title": "Metal Fabrication",
+      "short": "Custom metal fabrication and specialty projects.",
+      "text": "Custom metal fabrication and smaller specialty projects.",
+      "body": [
+        "Custom metal fabrication is its own line of work for us, and it is what lets the fencing, the metal buildings and the trickier roof details come out right.",
+        "Smaller specialty projects are welcome. Tell us what the piece has to do and where it has to fit."
+      ],
+      "points": ["Custom metal fabrication", "Specialty projects", "Fencing and gate components", "Metal building components"]
+    }
+  ],
+  "claim": {
+    "title": "How a roof insurance claim works",
+    "text": "A practical process for Texas property owners, from the first signs of wind or hail damage through inspection and repair planning.",
+    "steps": [
+      { "title": "Make the property safe", "text": "Avoid damaged areas and use temporary measures only when they can be completed safely. Keep receipts for emergency work." },
+      { "title": "Document visible damage", "text": "Photograph the roof from the ground, exterior damage, interior leaks, and affected belongings. Note the storm date and time." },
+      { "title": "Review your policy", "text": "Check your wind and hail deductible, coverage limits, exclusions, and deadlines. Your insurer decides what the policy covers." },
+      { "title": "Notify your insurer", "text": "Report the loss promptly and keep your claim number, adjuster details, emails, estimates, and receipts together." },
+      { "title": "Schedule a roof inspection", "text": "A professional inspection can identify and document storm-related conditions so you can discuss the findings with your adjuster." }
+    ]
+  },
+  "materials": {
+    "title": "Manufacturers we install",
+    "text": "We hold manufacturer certifications for the roofing systems we install, and every installation is manufacturer-backed.",
+    "brands": ["GAF", "Owens Corning"]
+  },
+  "projects": [
+    {
+      "title": "Storm damage restoration",
+      "town": "Baytown",
+      "scope": "Residential shingle replacement",
+      "service": "storm-damage-repair",
+      "text": "A worn and storm-damaged shingle roof documented and replaced with a new architectural shingle system.",
+      "image": "/brands/cwroofingconstruction/project-after",
+      "imageAlt": "Aerial view of a brick home with a new brown architectural shingle roof",
+      "before": "/brands/cwroofingconstruction/project-before",
+      "beforeAlt": "Aerial view of the same home before the work, with weathered grey shingles"
+    }
+  ],
+  "about": {
+    "title": "Built on precision, integrity and performance",
+    "text": [
+      "CW Roofing & Construction was founded with a simple mission: raise the standard of craftsmanship on every project we take on.",
+      "We saw too many homeowners forced to choose between speed and quality, between insurance convenience and true craftsmanship. So we built a company that delivers both.",
+      "Our leadership brings deep construction knowledge, project management expertise and real-world field experience to every job. We don't guess. We inspect, document and execute with precision.",
+      "Using advanced inspection technology, detailed reporting and manufacturer-backed systems, CW Roofing makes sure every project meets a high standard of durability and performance. When severe weather hits the Gulf Coast, shortcuts aren't an option, so we deliver solutions designed for longevity rather than temporary fixes.",
+      "Whether your project is insurance-related or retail, we focus on doing the job right. We aren't trying to be the biggest. Because a roof isn't just another project: it's protection for everything underneath it."
+    ],
+    "image": "/brands/cwroofingconstruction/about",
+    "imageAlt": "A completed tile roof on a large two-story home",
+    "values": [
+      { "title": "No shortcuts, no surprises", "text": "Anyone can install shingles. Very few operate with a defined standard. Every project follows a proven process designed to eliminate surprises." },
+      { "title": "Clear communication", "text": "No confusion. No disappearing contractors. No cut corners, from start to finish." },
+      { "title": "Quality materials", "text": "We use only premium roofing materials and proven installation techniques, backed by manufacturer warranties." }
+    ]
+  },
+  "inspection": {
+    "title": "How a project runs",
+    "steps": [
+      { "title": "Comprehensive property evaluation", "text": "We inspect and document the condition of the roof and the property rather than guess at it." },
+      { "title": "Clear, professional communication", "text": "No confusion, no disappearing contractors, no cut corners." },
+      { "title": "Transparent scope of work", "text": "A written scope, so you can see what the project includes before it starts." },
+      { "title": "Skilled installation crews", "text": "Premium materials and proven installation techniques, installed to code." },
+      { "title": "Thorough final inspection", "text": "A final inspection of the finished work before the project is closed out." }
+    ]
+  },
+  "serviceArea": [
+    "Baytown", "Houston", "Mont Belvieu", "La Porte", "Kemah", "Seabrook", "Anahuac", "Dayton",
+    "Liberty", "Deer Park", "Pasadena", "Pearland", "League City", "Cove", "Beach City", "Crosby",
+    "Highlands", "Channelview", "Old River-Winfree", "Hankamer", "Wallisville", "San Leon",
+    "Dickinson", "Friendswood", "South Houston", "Galena Park", "Galveston", "Crystal Beach",
+    "Sheldon", "Winnie", "Huffman", "Lake Houston", "Beaumont"
+  ],
+  "areasText": "We take on residential and commercial roofing and construction projects across Southeast Texas. The communities below are examples, not a boundary. If your location isn't listed, contact us with your project details to check availability.",
+  "facts": [
+    {
+      "heading": "Certifications",
+      "items": [
+        "GAF Certified Residential Roofing Contractor",
+        "Owens Corning Top of the House Certified Preferred Contractor"
+      ]
+    },
+    {
+      "heading": "Insurance",
+      "text": "We are fully insured. We maintain GAF certification and meet all Texas roofing standards."
+    },
+    {
+      "heading": "Financing",
+      "items": ["Flexible financing available", "Low monthly payments", "Quick approval", "Multiple plan options"]
+    },
+    {
+      "heading": "Emergency service",
+      "text": "We offer 24/7 emergency roofing repair for storm damage and urgent situations. Call (281) 925-7663 any time you need immediate assistance."
+    },
+    {
+      "heading": "Roofing systems we install",
+      "items": [
+        "Architectural shingles",
+        "Designer shingles",
+        "Synthetic slate and composite",
+        "Tile roofing",
+        "Standing seam metal",
+        "R-Panel and PBR panel",
+        "TPO",
+        "PVC roofing",
+        "Mod Bit"
+      ]
+    },
+    {
+      "heading": "Who we serve",
+      "items": [
+        "Homeowners",
+        "Commercial property managers",
+        "HOAs",
+        "Industrial facilities",
+        "Real estate professionals",
+        "Developers"
+      ]
+    },
+    {
+      "heading": "Why property owners trust us",
+      "items": [
+        "Fully insured professionals",
+        "Manufacturer-backed warranties",
+        "Insurance claim specialists",
+        "Code-compliant installations",
+        "Storm damage documentation",
+        "Commercial and residential expertise",
+        "Clear communication from start to finish",
+        "No shortcuts, no surprises",
+        "Quality materials and warranties",
+        "Financing options available",
+        "Experience and expertise",
+        "Fast response times"
+      ]
+    },
+    {
+      "heading": "Questions to ask before signing",
+      "items": [
+        "Is the contractor fully insured, and can they provide current documentation?",
+        "Does the written scope identify materials, ventilation, flashing, cleanup and warranties?",
+        "Who will communicate scheduling changes and answer questions during the project?",
+        "Does the contract clearly show your deductible and payment schedule?"
+      ]
+    },
+    {
+      "heading": "Insurance claim guidance",
+      "text": "Our claims guidance is general information, not legal or insurance advice. Policy terms vary, so contact your insurance company or a qualified insurance professional with coverage questions."
+    },
+    {
+      "heading": "Insurance claims",
+      "text": "We inspect and document roof damage and provide a repair scope. Your insurance company determines coverage and handles the claim. Texas law requires property owners to pay their insurance deductible, so be cautious of anyone offering to waive, absorb or rebate it."
+    },
+    {
+      "heading": "Counties and areas we work in",
+      "items": [
+        "Harris County communities (Crosby, Highlands, Channelview, Huffman)",
+        "Chambers County communities (Anahuac, Sheldon, Winnie)",
+        "Galveston County areas (Galveston, Texas City, Dickinson)",
+        "Liberty County areas (Liberty, Dayton)",
+        "Southeast Houston suburbs (Pasadena, Deer Park, South Houston, Galena Park)",
+        "Southwest Houston suburbs (Pearland, Friendswood, League City)",
+        "Other locations by project inquiry"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "facebook.com/share/1JdRG1ibnA",
+        "instagram.com/cw_roofing_construction",
+        "linkedin.com/company/cw-roofing-construction",
+        "trustpilot.com/review/cwroofingservices.com",
+        "g.page/r/Cfx7vi_AKbRgEBM/review"
+      ]
+    }
+  ]
+}

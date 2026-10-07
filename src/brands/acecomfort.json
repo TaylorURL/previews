@@ -1,0 +1,531 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Ace Comfort Air Conditioning & Heating",
+  "shortName": "Ace Comfort",
+  "summary": "Licensed, insured HVAC contractor in Houston for AC repair, installation, replacement, maintenance, heating and heat pumps, residential and commercial.",
+  "phone": "(281) 658-5141",
+  "email": "service@acecomfort-tx.com",
+  "address": "601 Milwaukee St",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77009",
+  "rating": 4.9,
+  "reviewCount": 211,
+  "since": 2015,
+  "hours": [
+    ["Mon – Sat", "7:30 AM – 8:00 PM"],
+    ["Sunday", "Closed"],
+    ["Online booking", "Mon – Sat, 24 hours"]
+  ],
+  "brand": {
+    "primary": "#214698",
+    "primaryDeep": "#16306C",
+    "accent": "#ED1C24",
+    "ink": "#14213A",
+    "muted": "#55637F",
+    "surface": "#F1F5FB",
+    "line": "#DCE4F0",
+    "heading": "'Poppins', 'Segoe UI', system-ui, sans-serif",
+    "body": "'Poppins', 'Segoe UI', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+    "logo": "/brands/acecomfort/logo.webp",
+    "logoWidth": 48
+  },
+  "emergency": {
+    "title": "24/7 emergency HVAC service",
+    "text": "An AC or heating breakdown should not wait for the next business day, so we answer emergency calls around the clock, 365 days a year."
+  },
+  "sameDay": "If your system is not cooling properly, our technician will work to restore it the same day.",
+  "licenses": [{ "label": "TDLR HVAC", "number": "TACLB64349E" }],
+  "financing": {
+    "text": "0% interest plans on replacements and repairs, with an online application and a decision in minutes."
+  },
+  "hero": {
+    "eyebrow": "HVAC contractor in Houston, TX",
+    "title": "Houston AC repair, installation",
+    "titleAccent": "and heating service.",
+    "lead": "Licensed and insured technicians, fast response times, honest pricing and transparent quotes with no hidden fees. Free estimates on any new installation or replacement.",
+    "image": "/brands/acecomfort/hero",
+    "imageAlt": "An Ace Comfort service truck parked in front of a Houston home"
+  },
+  "groups": [
+    {
+      "slug": "air-conditioning",
+      "title": "Air Conditioning",
+      "icon": "snowflake",
+      "summary": "AC repair, installation, replacement and maintenance for homes and businesses across Houston.",
+      "intro": "Houston's heat does not wait. Whether your system is blowing warm air, making strange noises or cycling on and off, our licensed technician diagnoses the problem and works to fix it the same day. We service all major brands, for residential and commercial properties, with transparent pricing and no hidden fees.",
+      "image": "/brands/acecomfort/cooling",
+      "imageAlt": "An Ace Comfort technician rinsing an outdoor condenser unit",
+      "services": [
+        {
+          "slug": "ac-repair",
+          "title": "AC Repair",
+          "icon": "wrench",
+          "text": "We diagnose and repair all AC brands fast, from a quick fix to a full system diagnostic, for residential and commercial properties across Houston.",
+          "points": [
+            "Refrigerant leaks located, repaired and recharged to correct levels",
+            "Dirty or clogged filters, faulty thermostats and compressor issues",
+            "Heat pump system issues",
+            "Transparent pricing with no hidden fees"
+          ]
+        },
+        {
+          "slug": "emergency-ac-repair",
+          "title": "Emergency AC Repair",
+          "icon": "shield",
+          "text": "Available round the clock for emergency AC and heating breakdowns, whether it is the middle of the night, a weekend or a holiday.",
+          "points": [
+            "24 hour emergency service, 365 days a year",
+            "Residential and commercial emergency repairs",
+            "Prompt response and accurate diagnosis"
+          ]
+        },
+        {
+          "slug": "ac-installation",
+          "title": "AC Installation",
+          "icon": "air-vent",
+          "text": "New central air conditioning installed right the first time, sized to your home rather than copied from the label on the old unit.",
+          "points": [
+            "System sizing based on home size, layout and SEER rating",
+            "Split systems and central AC",
+            "Old equipment removed, ductwork connected and sealed, thermostat installed",
+            "System testing and calibration, then a post-installation walk-through",
+            "Residential and commercial installation"
+          ]
+        },
+        {
+          "slug": "ac-replacement",
+          "title": "AC Replacement",
+          "icon": "settings",
+          "text": "When your air conditioner cannot keep up or cannot be repaired, we replace it with a system designed for Houston's climate. Most installations are completed in a single day, including removal and testing.",
+          "points": [
+            "Detailed load calculation and sizing before anything is ordered",
+            "Options for efficient units, duct upgrades and air quality improvements",
+            "Energy rebates and tax credits reviewed with you",
+            "Labor and manufacturer warranties",
+            "0% financing for qualified customers"
+          ]
+        },
+        {
+          "slug": "ac-maintenance",
+          "title": "AC Maintenance and Tune-Ups",
+          "icon": "gauge",
+          "text": "Regular maintenance keeps your system running efficiently and extends its lifespan. We also build customized maintenance plans around your home rather than selling one fixed package.",
+          "points": [
+            "Filters, evaporator and condenser coils and fins cleaned, drain lines flushed",
+            "Thermostats, electrical components, refrigerant levels, belts, fans and motors inspected",
+            "Moving parts lubricated, thermostats and connections calibrated",
+            "Airflow and cooling efficiency tested, worn parts replaced before they fail",
+            "Residential and commercial plans"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "heating",
+      "title": "Heating",
+      "icon": "flame",
+      "summary": "Heating repair, furnace installation and maintenance, and heat pump service for Houston's cold fronts.",
+      "intro": "Houston does not see long winters, but when a cold front arrives a heater problem becomes urgent. We repair furnaces, heat pumps and central heating systems of every type and brand, with same-day and 24/7 emergency heating repair and honest advice on whether repair or replacement is the better long-term choice.",
+      "image": "/brands/acecomfort/heating",
+      "imageAlt": "An Ace Comfort technician servicing an attic heating system",
+      "services": [
+        {
+          "slug": "heating-repair",
+          "title": "Heating Repair",
+          "icon": "heater",
+          "text": "If your furnace, heat pump or central heating system stops working, we deliver same-day repairs on all heater, furnace and heat pump brands.",
+          "points": [
+            "Heater blowing cold air or not turning on",
+            "Furnace ignition, flame sensor, igniter and gas flow problems",
+            "Heat pump not heating or freezing up",
+            "Burning or smoky smells, and thermostats that will not respond",
+            "24/7 emergency heating repair"
+          ]
+        },
+        {
+          "slug": "furnace-installation",
+          "title": "Furnace Installation",
+          "icon": "flame",
+          "text": "Furnace and heating system installation for Houston homes, handled by licensed and insured technicians.",
+          "points": [
+            "Licensed and insured, with honest pricing",
+            "Fast scheduling"
+          ]
+        },
+        {
+          "slug": "furnace-maintenance",
+          "title": "Furnace Maintenance",
+          "icon": "filter",
+          "text": "A yearly heater tune-up and complete heating system inspection that improves efficiency, prevents breakdowns and extends the life of your furnace.",
+          "points": [
+            "Heat exchanger inspection and burner assembly cleaning",
+            "Blower motor and wheel cleaning, gas valve and connection checks",
+            "Ignition system testing, carbon monoxide and safety checks",
+            "Thermostat calibration, filter replacement, electrical connections tightened",
+            "Airflow measured and adjusted"
+          ]
+        },
+        {
+          "slug": "heat-pumps",
+          "title": "Heat Pumps",
+          "icon": "thermometer",
+          "text": "One system that heats and cools your home, repaired, maintained and replaced by NATE-certified technicians. Most repairs are completed the same day.",
+          "points": [
+            "Systems that will not switch between heating and cooling",
+            "Refrigerant leaks, frozen coils, thermostat faults, unusual noises and weak airflow",
+            "Seasonal maintenance and tune-ups",
+            "Complete system replacements with sizing and warranty protection",
+            "All major brands: Carrier, Trane, Lennox, Rheem and more"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "comfort-and-efficiency",
+      "title": "Comfort and Efficiency",
+      "icon": "leaf",
+      "summary": "Energy-efficient AC installation and smart thermostats that lower what your system costs to run.",
+      "intro": "Staying cool in Houston does not have to come with the energy bill that usually follows. We install high-efficiency systems and smart thermostats chosen for your home, and we handle the sizing and installation that decide whether the efficiency rating on the box ever reaches your utility bill.",
+      "image": "/brands/acecomfort/efficiency",
+      "imageAlt": "A newly installed high-efficiency air conditioning system",
+      "services": [
+        {
+          "slug": "energy-saving-air-conditioning",
+          "title": "Energy-Saving Air Conditioning",
+          "icon": "sun",
+          "text": "Energy-efficient AC installation that lowers monthly bills, reduces your carbon footprint and delivers more consistent cooling on the hottest Houston days.",
+          "points": [
+            "High SEER-rated systems and ENERGY STAR certified units",
+            "Variable-speed technology that matches output to your cooling needs",
+            "Load calculation so the system is neither oversized nor undersized",
+            "Help finding and claiming local or utility rebates"
+          ]
+        },
+        {
+          "slug": "smart-thermostats",
+          "title": "Smart Thermostat Installation",
+          "icon": "timer",
+          "text": "Smart thermostats learn your heating and cooling patterns and adjust automatically. A professional installation typically takes one to two hours.",
+          "points": [
+            "Remote control from a phone or computer, anywhere",
+            "Savings of 10% to 23% on heating and cooling costs for the average user",
+            "Smart home integration",
+            "Personalized schedules built around your routine",
+            "Compatibility checked against your existing system",
+            "Ongoing support for technical issues and updates"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Current specials",
+    "title": "Ask about this month's manufacturer and financing specials.",
+    "text": "Seasonal promotions change through the year, and we will tell you which ones your job qualifies for before the work is quoted.",
+    "image": "/brands/acecomfort/tuneup",
+    "imageAlt": "Manifold gauges connected to an air conditioning system during a service visit"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "One Houston technician, 21 years in the trade, on every job.",
+    "text": [
+      "Ace Comfort Air Conditioning & Heating has been serving the Greater Houston Area since 2015. Abram Ayala founded the company after working his way up from helper to licensed HVAC technician, building a reputation for honest pricing and quality residential HVAC services.",
+      "Abram did not start at the top. He started as a helper, learned the trade from the ground up, and earned his state HVAC license after more than two decades of hands-on experience. He founded Ace Comfort because he believed homeowners deserved a contractor who was honest, skilled and genuinely invested in the outcome, and he remains hands-on with every job.",
+      "Since opening, the company has completed hundreds of residential AC repairs and system installations across Houston and surrounding communities. As it grew, it added high-efficiency system upgrades and indoor air quality solutions, and built partnerships with brands like Trane and American Standard. None of that growth came from advertising. It came from referrals and repeat customers who know what to expect: a technician who shows up on time, tells the truth and gets the job done right."
+    ],
+    "image": "/brands/acecomfort/team",
+    "imageAlt": "Abram Ayala, founder and HVAC technician at Ace Comfort",
+    "values": [
+      {
+        "title": "Integrity",
+        "text": "Your comfort and satisfaction drive every decision we make. We do not close a job until you are taken care of."
+      },
+      {
+        "title": "Quality workmanship",
+        "text": "We fix it right the first time, backed by Abram's 21 years in the trade."
+      },
+      {
+        "title": "Reliability",
+        "text": "On time, every time. When your AC goes out on a 100-degree Houston day, you cannot afford to wait on a contractor who does not show up."
+      },
+      {
+        "title": "Respect",
+        "text": "We treat every home and every customer like family. No pressure, no upselling, no shortcuts."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Do you offer emergency HVAC services?",
+      "a": "Yes. We offer emergency HVAC services for urgent issues outside regular business hours, 365 days a year. Call (281) 658-5141 for immediate assistance."
+    },
+    {
+      "q": "How often should I schedule HVAC maintenance?",
+      "a": "At least once a year, ideally before the start of the heating and cooling seasons. Regular maintenance helps prevent breakdowns, improve efficiency and prolong the life of your system."
+    },
+    {
+      "q": "How often should I replace my HVAC air filter?",
+      "a": "Every 1 to 3 months, depending on the type of filter, whether you have pets, and your indoor air quality. Regular filter changes keep performance and air quality where they should be."
+    },
+    {
+      "q": "Why is my AC unit freezing up?",
+      "a": "Several things can cause it, including low refrigerant levels, poor airflow or a failing blower motor. It is worth addressing promptly to prevent further damage to the system."
+    },
+    {
+      "q": "What is the lifespan of an HVAC system?",
+      "a": "It varies by brand, maintenance and usage. On average, a well-maintained system lasts 15 to 20 years, and regular maintenance extends it."
+    },
+    {
+      "q": "When should I consider replacing my AC system?",
+      "a": "Replacement is often the right call if your system is more than 10 to 15 years old, breaking down often, or no longer cooling efficiently. Energy bills that keep rising despite repairs are another sign."
+    },
+    {
+      "q": "How much does AC replacement cost in Houston?",
+      "a": "Most homeowners spend $4,500 to $8,000 for an AC replacement, depending on the system size and efficiency. Most installations are finished in a single day, including removal and testing."
+    },
+    {
+      "q": "Do you offer financing?",
+      "a": "Yes. We offer flexible financing, as low as 0%, with a quick online application and a decision in minutes, no hidden fees and no prepayment penalties."
+    },
+    {
+      "q": "Do you offer warranties on installations?",
+      "a": "Yes. We offer warranties and guarantees on our air conditioning installations, with full labor warranties and manufacturer protection on replacements."
+    },
+    {
+      "q": "Do you work on commercial properties?",
+      "a": "Yes. We handle repair, installation and maintenance for both residential and commercial properties, and we work around your schedule to minimize downtime."
+    },
+    {
+      "q": "Do you charge extra for emergency service?",
+      "a": "No. There are no extra fees for an emergency call. You get the same honest rates day or night, with transparent pricing and no hidden costs."
+    },
+    {
+      "q": "What counts as an emergency AC repair?",
+      "a": "Any situation where your cooling has failed completely, poses a safety risk or leaves the house unbearable: a total breakdown, a refrigerant leak, an electrical failure, or losing cooling in extreme heat."
+    },
+    {
+      "q": "How quickly can you get here?",
+      "a": "We offer same-day service on most repair calls and aim to arrive within hours, not days. Emergency calls are prioritized."
+    },
+    {
+      "q": "How much does heating repair cost in Houston?",
+      "a": "It depends on the issue, the parts and the system. A simple fix such as a thermostat replacement starts around $150, while a compressor or heat exchanger repair runs higher. You get upfront pricing before any work starts."
+    },
+    {
+      "q": "How much does furnace installation cost in Houston?",
+      "a": "Most furnace installations fall between $3,500 and $7,500, depending on system size, efficiency rating and the layout of your home. Most are finished in four to six hours."
+    },
+    {
+      "q": "Should I repair or replace my furnace?",
+      "a": "Repair usually makes sense on a unit under 10 years old that has had yearly maintenance and a minor fault. Replacement is the better choice past 12 to 15 years, when repairs cost more than 30 percent of a new system, or when heating is uneven and bills keep climbing."
+    },
+    {
+      "q": "What brands of heating and cooling systems do you work on?",
+      "a": "All major brands, including Carrier, Trane, Lennox, Rheem, Bryant, Goodman, American Standard, Westinghouse, Honeywell and York."
+    },
+    {
+      "q": "Can I do furnace maintenance myself?",
+      "a": "You can change filters yourself. A full tune-up needs a trained technician, because a DIY check misses the heat exchanger, gas valve, ignition and carbon monoxide safety items that matter most."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Aldine",
+    "Atascocita",
+    "Bellaire",
+    "Braeburn",
+    "Braeswood Place",
+    "Brays Oak",
+    "Brookside Village",
+    "Bunker Hill Village",
+    "Cloverleaf",
+    "Cypress",
+    "Deer Park",
+    "East Aldine",
+    "East Houston",
+    "Fourth Ward",
+    "Galena Park",
+    "Garden Oaks",
+    "Greater Eastwood",
+    "Greater Heights",
+    "Gulfton",
+    "Hedwig Village",
+    "Houston Heights",
+    "Humble",
+    "Hunters Creek Village",
+    "Hyde Park",
+    "Jacinto City",
+    "Katy",
+    "Kingwood",
+    "Lazybrook and Timbergrove",
+    "Memorial",
+    "Midtown",
+    "Missouri City",
+    "Montrose",
+    "Mt Houston",
+    "Northside",
+    "Park Place",
+    "Pasadena",
+    "Pearland",
+    "Piney Point Village",
+    "Rice Military",
+    "Rice Village",
+    "River Oaks",
+    "South Houston",
+    "Southeast Houston",
+    "Spring",
+    "Spring Branch",
+    "Stafford",
+    "Sugar Land",
+    "Tanglewood",
+    "The Woodlands",
+    "University Place",
+    "Uptown",
+    "West University Place",
+    "Westchase"
+  ],
+  "facts": [
+    {
+      "heading": "HVAC brands we service",
+      "items": [
+        "American Standard",
+        "Bryant",
+        "Carrier",
+        "Goodman",
+        "Honeywell",
+        "Lennox",
+        "Rheem",
+        "Trane",
+        "Westinghouse",
+        "York"
+      ]
+    },
+    {
+      "heading": "Licensed, insured and certified",
+      "items": [
+        "Licensed under the Texas Department of Licensing and Regulation, TACLB64349E",
+        "100% licensed, insured and bonded",
+        "NATE-certified technicians",
+        "BBB Accredited Business",
+        "HomeAdvisor Screened & Approved"
+      ]
+    },
+    {
+      "heading": "Financing and warranties",
+      "items": [
+        "0% interest plans, short-term and long-term, for qualified customers",
+        "Instant approval through a quick online application",
+        "No hidden fees, no prepayment penalties",
+        "Full labor warranties and manufacturer protection",
+        "Help finding and claiming energy rebates and tax credits"
+      ]
+    },
+    {
+      "heading": "Free estimates",
+      "text": "Estimates are free on any new installation or replacement, and you get upfront, transparent pricing before any work begins."
+    },
+    {
+      "heading": "Homes and businesses",
+      "text": "We focus on residential HVAC and also handle commercial repair, installation and maintenance for offices, retail spaces and restaurants, scheduled around your business hours."
+    },
+    {
+      "heading": "Houston neighborhoods we cover",
+      "text": "Midtown, Fourth Ward, Montrose, EaDo, The Heights, Rice Military, Museum District, Washington Avenue Arts District, River Oaks, Medical Center, Greater Third Ward, Greenway and Upper Kirby, Gulfton, South Main, Northside Village, Acres Homes, Near Northside, Independence Heights, Harrisburg and Manchester, and Sunnyside."
+    },
+    {
+      "heading": "Zip codes we serve",
+      "text": "77002 through 77050, covering the city centre, the inner loop and the near north, east and south sides of Houston."
+    },
+    {
+      "heading": "Book online",
+      "items": [
+        "Online booking is open Monday through Saturday, 24 hours a day, so you can pick a visit without waiting for the office to open",
+        "Book at book.housecallpro.com/book/Ace-comfort-LLC/b332c3320d634dda91dc983f29e6e26b",
+        "Same-day and next-day appointments, with scheduling around the clock",
+        "Or call (281) 658-5141, email service@acecomfort-tx.com, or send the request form on the contact page"
+      ]
+    },
+    {
+      "heading": "Apply for financing",
+      "text": "The financing application is online at wisetack.us/#/tbax0oc/prequalify, and a prequalification takes a few minutes."
+    },
+    {
+      "heading": "What jobs cost",
+      "items": [
+        "AC replacement: $4,500 to $8,000, depending on system size and efficiency",
+        "Furnace installation: $3,500 to $7,500, depending on size, efficiency rating and the layout of your home",
+        "Simple heating repairs such as a thermostat replacement: from around $150",
+        "Free estimates on new installations and replacements, and a free consultation on a system upgrade",
+        "Quotes are given at the time of service, and no emergency call carries an extra fee"
+      ]
+    },
+    {
+      "heading": "How long the work takes",
+      "items": [
+        "Most AC replacements: a single day, including removal and testing",
+        "Most furnace installations: four to six hours",
+        "Smart thermostat installation: one to two hours",
+        "Most repairs, including heat pumps: the same day"
+      ]
+    },
+    {
+      "heading": "Current offers",
+      "items": [
+        "Special spring and summer pricing",
+        "Exclusive offers for Houston residents",
+        "Seasonal manufacturer and financing promotions, which change through the year"
+      ]
+    },
+    {
+      "heading": "Maintenance plans",
+      "text": "Maintenance plans are customized to the home rather than sold as one fixed package, and they run from routine service calls through to emergency service. We recommend a tune-up at least once a year, in spring before the cooling season and in fall before the heating season, and twice a year for a system that works hard. Between visits, a seasonal maintenance checklist covers the simple tasks you can handle yourself."
+    },
+    {
+      "heading": "Our mission",
+      "text": "To deliver dependable, high-quality air conditioning and heating services with honesty, professionalism and unmatched customer care, so every Houston family we serve stays comfortable year-round."
+    },
+    {
+      "heading": "Our vision",
+      "text": "To become one of Houston's most trusted HVAC companies by setting the standard for integrity, craftsmanship and long-term customer relationships, while continuing to grow through service excellence."
+    },
+    {
+      "heading": "A family-owned local company",
+      "text": "Ace Comfort is family owned, locally owned and operated, and has served Houston for more than 10 years. The growth has not come from advertising. It has come from referrals and repeat customers, and from the 5-star ratings the company has held since day one."
+    },
+    {
+      "heading": "How we work",
+      "items": [
+        "Honest diagnostics, with no upselling and no pressure tactics",
+        "A clear cost estimate before any work begins, so there are no surprise charges",
+        "Straight advice on whether repair or replacement is the better long-term choice",
+        "Strict safety protocols on every visit, for your property and for our technician",
+        "A satisfaction guarantee, and a 98% customer satisfaction rate",
+        "Common parts kept in stock, so a repair does not wait on an order"
+      ]
+    },
+    {
+      "heading": "Furnaces we install",
+      "items": [
+        "Gas furnaces, which heat quickly and suit a home with natural gas",
+        "Electric furnaces, for lower energy use and steadier indoor temperatures",
+        "High-efficiency systems"
+      ]
+    },
+    {
+      "heading": "Commercial properties we serve",
+      "text": "Offices and office buildings, retail spaces, restaurants and warehouses, including rooftop units and large-scale heating systems, scheduled around your business hours to keep downtime short."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/profile.php?id=100087527012779",
+        "X: @ace_comfort",
+        "Better Business Bureau: Ace Comfort LLC, BBB profile 0915-90044634",
+        "Google Business Profile, with map check-ins across the neighborhoods we serve"
+      ]
+    }
+  ]
+}
