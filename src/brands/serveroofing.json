@@ -1,0 +1,529 @@
+{
+  "preview": true,
+  "template": "roofing",
+  "name": "Serve Roofing",
+  "shortName": "Serve Roofing",
+  "phone": "(281) 203-2037",
+  "email": "office@serveroofing.com",
+  "address": "21450 Cedar Ln",
+  "town": "Tomball",
+  "state": "TX",
+  "zip": "77377",
+  "rating": 5.0,
+  "reviewCount": 61,
+  "license": "Licensed and insured, and accredited with an A+ rating by the BBB",
+  "hours": [["Monday – Sunday", "Open 24 hours"]],
+
+  "brand": {
+    "primary": "#15809f",
+    "primaryDeep": "#0b5168",
+    "accent": "#ecad00",
+    "ink": "#131220",
+    "surface": "#f1f5f7",
+    "heading": "'Manrope', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/serveroofing/logo.webp",
+    "logoWidth": 158
+  },
+
+  "hero": {
+    "eyebrow": "Roofing contractor in Tomball, TX",
+    "title": "Roof repair, replacement",
+    "titleAccent": "and storm claims.",
+    "lead": "Serve Roofing is a local roofing company based in Tomball, working on homes and businesses across Greater Houston. Free inspections, factory-certified crews, and help with your insurance claim from the first photo to the last shingle.",
+    "image": "/brands/serveroofing/hero",
+    "imageAlt": "A house part-way through a re-roof, with one slope stripped back to the decking"
+  },
+
+  "promises": [
+    "Free roof inspections",
+    "GAF factory-certified crews",
+    "0% interest financing available",
+    "Transferable workmanship warranty"
+  ],
+
+  "services": [
+    {
+      "slug": "roof-replacement",
+      "group": "residential",
+      "title": "Roof Replacement",
+      "short": "A new roof from crews factory-trained by the manufacturer.",
+      "text": "A full replacement using asphalt, composition, architectural or dimensional shingles, installed by crews factory-trained by GAF, CertainTeed and Tamko, with the manufacturer warranty registered on the finished roof.",
+      "image": "/brands/serveroofing/replacement",
+      "imageAlt": "A finished grey shingle roof on a two-story brick home",
+      "materials": true,
+      "body": [
+        "A sturdy, well-installed roof guards against water damage and energy loss, and Houston's climate is hard on one. Most roofs last 20 to 25 years, and the signs it is time are usually missing shingles, stains on ceilings or walls, and shingle granules collecting in the gutters.",
+        "We install asphalt, composition, architectural and dimensional shingles, metal roofing, tile and flat roofing systems, and we quote the job after we have been in the attic rather than from the kerb. Class 3 and Class 4 impact-resistant shingles stand up to wind of as much as 160 mph and give better hail protection, and they can earn a discount on your insurance.",
+        "Financing is there if you want it, including 0% interest plans, so the cost does not have to land all at once."
+      ],
+      "points": [
+        "An initial inspection to assess the condition of the roof",
+        "Asphalt, composition, architectural and dimensional shingles",
+        "Class 3 and Class 4 impact-resistant options",
+        "Rotten decking replaced where we find it",
+        "Ventilation checked, because the manufacturer warranty requires it",
+        "Flexible financing, including 0% interest plans"
+      ],
+      "faqs": [
+        {
+          "q": "Do I need to be home when you come out for the estimate?",
+          "a": "It is always better if you are. It lets us do a complete evaluation, including getting into the attic space. Proper ventilation is mandatory for the manufacturer warranty, and without it your attic can develop mould. Attic access also lets us see how much rotten wood needs replacing, so the estimate is more accurate."
+        },
+        {
+          "q": "Does my spouse need to be there for the estimate?",
+          "a": "It helps. Having both of you there gets everyone's questions answered in one visit instead of another call or another appointment, and it is when we go through how the job will be scheduled, when the materials arrive, who your job supervisor is, and how the process runs from start to finish."
+        },
+        {
+          "q": "What causes a roof to fail early?",
+          "a": "Almost always improper installation rather than faulty materials. Modern roofing materials are engineered to last 25 years and in some cases 50, and most do not fail prematurely under normal conditions."
+        }
+      ]
+    },
+    {
+      "slug": "roof-repair",
+      "group": "residential",
+      "title": "Roof Repair",
+      "short": "Leaks, lifted flashing and missing shingles, put right.",
+      "text": "Leaks, wind-damaged and missing shingles, lifted flashing and failed vent seals, repaired rather than replaced where a repair is what the roof actually needs.",
+      "image": "/brands/serveroofing/repair",
+      "imageAlt": "A dark shingle roof on a red brick home, seen from above",
+      "body": [
+        "Plenty of roofing firms will try to convince you the whole roof has to go when it does not. We are happy to take on customers who only need a repair, we quote repairs free, and we guarantee the work with a two-year warranty on the repaired area.",
+        "The signs worth calling about are water stains on ceilings or walls, missing, cracked or curling shingles, a sagging roofline, granules collecting in the gutters, and energy bills climbing. Left alone, a small leak turns into interior water damage, mould and structural problems."
+      ],
+      "points": [
+        "Roof leak repair",
+        "Wind-damaged and missing shingles",
+        "Lifted roof flashing",
+        "Storm-damaged roof repairs",
+        "Loose roof vent flashing and sealant repairs",
+        "Flashing around chimneys, vents and skylights"
+      ],
+      "faqs": [
+        {
+          "q": "Do you warranty a repair?",
+          "a": "Yes. We guarantee our work with a two-year warranty on the repaired area."
+        },
+        {
+          "q": "What does a repair quote cost?",
+          "a": "Nothing. We provide free roof repair quotes."
+        }
+      ]
+    },
+    {
+      "slug": "roof-inspection",
+      "group": "residential",
+      "title": "Roof Inspection",
+      "short": "Free, by certified GAF roof inspectors, with a photo report.",
+      "text": "A free inspection by certified GAF roof inspectors, with a detailed photo report of the roof's condition and what it needs, whether that is maintenance, a repair or a claim.",
+      "image": "/brands/serveroofing/inspection",
+      "imageAlt": "An aerial view of a large shingle roof with a ladder set against the eave",
+      "body": [
+        "A roof inspection is a full evaluation of the roof's condition, looking for damage and wear that could compromise the system. We offer them free, and our inspectors use proper safety equipment so nobody in the household has to get on the roof.",
+        "Worth booking one annually as routine maintenance, when buying or selling a home, after severe weather, and whenever you are filing an insurance claim — the report is the documentation that supports it."
+      ],
+      "points": [
+        "Damage from storms, wind and hail",
+        "Roof shingles and flashing conditions",
+        "Gutters and drainage systems",
+        "Ventilation and insulation",
+        "Roof underlayment and structural soundness",
+        "A detailed written report with photographs"
+      ],
+      "faqs": [
+        {
+          "q": "What does an inspection cost?",
+          "a": "Nothing. We offer free roof inspections by certified GAF roof inspectors, and a free picture report of what we find."
+        }
+      ]
+    },
+    {
+      "slug": "metal-roofing",
+      "group": "residential",
+      "title": "Metal Roofing",
+      "short": "Durable and energy-efficient, for homes and businesses.",
+      "text": "Metal roofing for homes and commercial buildings, one of the more durable and energy-efficient systems we install.",
+      "image": "/brands/serveroofing/metal",
+      "imageAlt": "A home's roof with a standing seam metal section over the patio",
+      "body": [
+        "Metal is one of the materials Houston homeowners weigh up against asphalt shingles and tile, and it earns its place on durability and energy efficiency. We install metal roofs on homes and on commercial buildings, where we also fit commercial metal systems.",
+        "Which material suits your roof depends on the pitch, the structure and the weather it has to take. We assess that on the first visit rather than recommending the same system to everyone."
+      ],
+      "points": [
+        "Residential metal roofing",
+        "Commercial metal roofing",
+        "Durable and energy-efficient",
+        "Assessed against your roof's pitch and structure"
+      ]
+    },
+    {
+      "slug": "gutters-and-downspouts",
+      "group": "residential",
+      "title": "Gutters And Downspouts",
+      "short": "Installation, repair and cleaning, for homes and businesses.",
+      "text": "A well-maintained gutter system directs water away from the property. We install, clean and repair gutters and downspouts to prevent water damage and improve drainage.",
+      "body": [
+        "Clogged gutters are one of the common causes of a roof leak, and granules collecting in them are often the first sign that shingles are wearing out. Keeping the system clear is part of making a roof last.",
+        "On commercial and business properties we fabricate and install seamless gutters on site, in K-style or half-round."
+      ],
+      "points": [
+        "Gutter installation",
+        "Gutter repair",
+        "Gutter cleaning",
+        "Commercial seamless gutters, K-style or half-round, fabricated on site"
+      ]
+    },
+    {
+      "slug": "roof-maintenance",
+      "group": "residential",
+      "title": "Roof Maintenance",
+      "short": "Inspections, small repairs, debris clearing and gutter cleaning.",
+      "text": "Routine maintenance that keeps a roof in good condition: regular inspections, preventative leak repairs, debris removal and gutter cleaning, on homes and on commercial buildings.",
+      "body": [
+        "Maintenance is regular roof inspections, timely preventative leak repairs, clearing debris such as leaves and pine needles, and cleaning the gutters out so the system is not clogged. It is the cheapest work we do and it is the work that puts off the expensive kind.",
+        "We quote maintenance in writing, setting out the extent of the work, the materials needed and the cost, so there is nothing to find out later."
+      ],
+      "points": [
+        "Roof and gutter maintenance",
+        "Commercial roof maintenance",
+        "Metal roof maintenance",
+        "Flat roof maintenance",
+        "Preventative roof leak repairs",
+        "Debris removal, including leaves and pine needles"
+      ]
+    },
+    {
+      "slug": "ventilation-roofing",
+      "group": "residential",
+      "title": "Roof Ventilation",
+      "short": "Soffit vents, ridge vents and solar attic fans, installed and repaired.",
+      "text": "Roof vent installation, repair and leak repair, balancing intake and exhaust so heat and moisture leave the attic instead of collecting in it.",
+      "body": [
+        "A roof has to breathe. Intake vents at the soffit pull cool air in, exhaust vents at the ridge let hot, humid air out, and when that balance is wrong the heat and moisture stay in the roof. That is what brittle, curling shingles, damp insulation, mould and mildew, a warped frame and a climbing energy bill usually trace back to.",
+        "Improper ventilation can void a manufacturer warranty and can bring a roof replacement forward by years, so we assess the airflow between the roof and the ceiling first and then recommend the type and the number of vents. Vents can go on during a replacement or be added to a roof you already have.",
+        "Nine out of ten American homes lack proper roof ventilation."
+      ],
+      "points": [
+        "Soffit vents, which let outside air into the roof at the eaves",
+        "Ridge vents, installed along the peak, passive and powered by nothing",
+        "Solar attic fans, run on solar energy",
+        "Roof vent installation, repair and vent leak repair",
+        "Fitted during a replacement or added to an existing roof",
+        "Intake and exhaust balanced, because the warranty depends on it"
+      ]
+    },
+    {
+      "slug": "roof-financing",
+      "group": "residential",
+      "title": "Roof Financing",
+      "short": "0% interest plans, monthly payments and deductible financing.",
+      "text": "Flexible roof financing so the cost of a roof does not have to land in one go: 0% interest plans, monthly payments from $69 a month, and financing for your insurance deductible.",
+      "image": "/brands/serveroofing/financing",
+      "imageAlt": "An aerial view of a finished roof on a large single-story home",
+      "body": [
+        "0% interest financing suits anyone who can clear the balance inside the promotional period, with no interest charged if it is repaid in the time allowed. If you want longer, our payment plans break the total into monthly payments across 12 to 60 months at competitive rates.",
+        "Even when insurance covers the roof, the deductible is still yours to pay. Insurance deductible financing covers that out-of-pocket part so the work does not have to wait, and there is emergency roofing financing for damage that cannot wait at all.",
+        "Payment plans are offered through Hearth. Qualifying needs proof of income, a credit check and that you own the home the work is being done on, and there are options for bad credit or no credit."
+      ],
+      "points": [
+        "0% interest within the promotional period",
+        "Payments as low as $69 a month",
+        "Monthly payment plans over 12 to 60 months",
+        "No money down",
+        "Insurance deductible financing",
+        "Emergency roofing financing",
+        "Options for bad credit or no credit"
+      ],
+      "faqs": [
+        {
+          "q": "What do I need to qualify?",
+          "a": "Proof of a stable source of income, a credit check, and that you own the home the roof work is being done on. We also offer no-credit-check financing options."
+        }
+      ]
+    },
+    {
+      "slug": "storm-damage-repair",
+      "group": "storm",
+      "title": "Storm Damage Repair",
+      "short": "Hail and wind damage, inspected free with a photo report.",
+      "text": "Hail, wind and storm damage repaired, starting with a free storm damage inspection and a picture analysis of the roof's condition.",
+      "image": "/brands/serveroofing/storm",
+      "imageAlt": "A roof stripped back to bare decking during a replacement",
+      "body": [
+        "Houston's weather — hail, high winds, hurricanes, hard sun and heavy rain — pushes roofs to their limits, and a lot of the damage it does is not visible from the ground. If you are not sure whether a storm has hurt your roof, we inspect it free and give you a photo report.",
+        "The report tells you two things: whether the roof needs a repair or a replacement, and whether the damage meets your insurer's requirements for a replacement. For emergency roof repair, call us on (281) 203-2037.",
+        "Insurers in the Greater Houston area have been cancelling policies over old roofs and worn materials. Routine maintenance and inspections head that off, by catching the small problems while they are still small."
+      ],
+      "points": [
+        "Missing or lifted shingles from high winds",
+        "Granule loss on asphalt shingles",
+        "Dented or cracked shingles from hail impact",
+        "Water stains on ceilings",
+        "Leaks and moisture building up in the attic",
+        "Free storm damage inspections and repair quotes"
+      ],
+      "faqs": [
+        {
+          "q": "How long do I have to file a claim after a hail or wind storm?",
+          "a": "In Houston the window for hail is typically up to two years from the date of the storm, though some policies allow only one. For wind damage the claim period can be as short as 30 to 60 days. File as early as you can — insurers use hail maps to check when and where a storm happened."
+        }
+      ]
+    },
+    {
+      "slug": "roof-insurance-restoration-claim",
+      "group": "storm",
+      "title": "Roof Insurance Claims",
+      "short": "Insurance restoration specialists, from filing to the new roof.",
+      "text": "Our insurance restoration specialists help property owners through a roof claim, from documenting the damage to the replacement. We work with all major insurance providers.",
+      "image": "/brands/serveroofing/claim",
+      "imageAlt": "An aerial view of a newly finished grey shingle roof",
+      "claim": true,
+      "body": [
+        "Most people file one roof claim in their life, and the outcome usually turns on the documentation. Our specialists are trained to find the small signs of hail damage an untrained eye misses, and the photo report we produce is what the claim rests on.",
+        "We help with storm damage claims, wind and hail evaluations, and the point where the insurer sends a cheque and you have to work out what it covers. If your policy is actual cash value, the payout is based on what the roof was worth at the time of loss and the depreciation is not recoverable — worth knowing before you file.",
+        "If there is a deductible to find, our insurance deductible financing covers it so the work can start."
+      ],
+      "points": [
+        "Restoring the property to its pre-loss condition",
+        "Roofing insurance claims for storm damage",
+        "Wind damage claim evaluations",
+        "Hail damage claim processing",
+        "Help when the insurer sends a cheque for the roof replacement",
+        "Guidance on how much insurance pays towards a replacement",
+        "Insurance deductible financing"
+      ]
+    },
+    {
+      "slug": "commercial-roofing",
+      "group": "commercial",
+      "title": "Commercial Roofing",
+      "short": "Flat, low-slope and metal systems for Houston businesses.",
+      "text": "Commercial roof repair, replacement, inspection and maintenance, including flat and low-slope systems, with the work planned around keeping the building running.",
+      "body": [
+        "No two buildings are the same, so the roof has to be designed, constructed and installed with that building's demands in mind. We assess on day one and recommend from there, and in Texas the weather carries a lot of weight in which material is right.",
+        "We install built-up roofs, modified bitumen, roof coatings, foam and thermoplastic single-ply membranes. PVC is strong, durable and resistant to moisture, wind, fire and chemicals, and it is the best option for an eco-friendly system over a flat or low-slope roof. TPO is reflective and energy-efficient, which is why demand for it keeps growing. EPDM is low maintenance and weathers well, and its black membrane absorbs solar energy, which helps keep a building warm in a hard winter.",
+        "We are more than roofing contractors on a commercial site, and the rest of the building exterior is work we take on too."
+      ],
+      "points": [
+        "Commercial roof repair and replacement",
+        "Flat and low-slope roofing: BUR, modified bitumen, coatings and foam",
+        "TPO, PVC and EPDM single-ply membranes",
+        "Commercial metal roofing",
+        "Skylight installation",
+        "Commercial gutter installation and replacement",
+        "Window replacement, siding, fascia and soffit",
+        "Blown-in insulation and interior drywall repair"
+      ]
+    }
+  ],
+
+  "claim": {
+    "title": "How a storm claim works",
+    "text": "We help homeowners find hail and wind damage, get through the insurance process, and get the roof replaced.",
+    "steps": [
+      {
+        "title": "Free inspection",
+        "text": "We inspect the roof at no cost and give you a picture report of its condition."
+      },
+      {
+        "title": "Does it qualify",
+        "text": "The report shows whether the damage meets your insurer's requirements for a replacement."
+      },
+      {
+        "title": "Filing the claim",
+        "text": "One of our insurance claim consultants walks you through filing with your provider."
+      },
+      {
+        "title": "The adjuster",
+        "text": "An adjuster evaluates the damage. We work with all major insurance providers."
+      },
+      {
+        "title": "The new roof",
+        "text": "We replace the roof, and deductible financing covers the out-of-pocket part if you need it."
+      }
+    ]
+  },
+
+  "materials": {
+    "title": "Shingles we install",
+    "text": "Our crews are factory-trained by the manufacturers we install, and we offer extended manufacturer warranties on their materials.",
+    "brands": ["GAF", "CertainTeed", "Owens Corning", "Tamko"]
+  },
+
+  "about": {
+    "title": "A Tomball crew, on Greater Houston roofs",
+    "text": [
+      "Serve Roofing is a locally owned roofing company based on Cedar Lane in Tomball, working on homes and businesses across Houston, Tomball, Cypress, Magnolia, Spring, The Woodlands, Montgomery and the surrounding communities.",
+      "Our roofers bring more than twenty years of roofing industry knowledge to the job, and our crews are factory-trained by GAF, CertainTeed and Tamko. That is what sits behind the precision of the installation and the manufacturer warranties we are able to register on a finished roof.",
+      "We combine technical expertise with service that treats you like a neighbour, because that is what you are. We don't just fix roofs, we serve people."
+    ],
+    "image": "/brands/serveroofing/crew-truck",
+    "imageAlt": "A work truck in the driveway and tarps over the landscaping on a replacement day",
+    "values": [
+      {
+        "title": "Factory-certified crews",
+        "text": "Trained by GAF, CertainTeed and Tamko on the systems we install."
+      },
+      {
+        "title": "20+ years of experience",
+        "text": "Our roofers bring more than twenty years in the industry to every job."
+      },
+      {
+        "title": "A+ with the BBB",
+        "text": "Accredited by the Better Business Bureau with an A+ rating."
+      }
+    ]
+  },
+
+  "inspection": {
+    "title": "What happens at a free inspection",
+    "steps": [
+      {
+        "title": "We come out to you",
+        "text": "It is better if you are home, so we can get into the attic and check the ventilation."
+      },
+      {
+        "title": "We photograph the roof",
+        "text": "You get a detailed picture report of its condition and anything we found."
+      },
+      {
+        "title": "We go through the options",
+        "text": "Repair, replacement, or whether the damage qualifies for an insurance claim. The quote is free."
+      }
+    ]
+  },
+
+  "serviceArea": [
+    "Tomball",
+    "Magnolia",
+    "Hockley",
+    "Cypress",
+    "Spring",
+    "Houston",
+    "Sugar Land",
+    "Mission Bend",
+    "Fulshear",
+    "Katy",
+    "Bridgeland",
+    "Waller",
+    "Humble",
+    "Kingwood",
+    "Conroe",
+    "Montgomery",
+    "The Woodlands",
+    "Jersey Village",
+    "Deer Park",
+    "Richmond"
+  ],
+  "areasText": "We are based on Cedar Lane in Tomball, and the crews work across Greater Houston every day.",
+  "areasImage": "/brands/serveroofing/areas",
+  "areasImageAlt": "An aerial view of a Greater Houston home with a new shingle roof",
+  "contactImage": "/brands/serveroofing/contact",
+  "contactImageAlt": "A close view of new black shingles on a finished roof",
+
+  "facts": [
+    {
+      "heading": "Our warranty",
+      "items": [
+        "Every project includes a workmanship labour warranty, covering installation to manufacturer specification.",
+        "The workmanship warranty transfers once to the next homeowner, which adds value if you sell.",
+        "If anything does not perform as it should inside the warranty period, we fix it at no extra cost.",
+        "Extended manufacturer warranties on GAF, CertainTeed and Tamko materials, against defects that would otherwise shorten the roof's life.",
+        "Roof repairs carry a two-year warranty on the repaired area.",
+        "The warranty holds as long as the roof is maintained to the guidelines we provide. Alterations or repairs by a third party may void it."
+      ]
+    },
+    {
+      "heading": "Certifications and ratings",
+      "items": [
+        "GAF factory-certified, with certified GAF roof inspectors. GAF Certified contractors are about 7% of roofing contractors in North America, and the status is earned rather than bought",
+        "CertainTeed SELECT ShingleMaster",
+        "Certified Tamko Pro installer",
+        "Accredited with the Better Business Bureau at an A+ rating",
+        "Licensed and insured",
+        "Locally owned, based in Tomball, TX, and not part of a national chain"
+      ]
+    },
+    {
+      "heading": "Impact-resistant shingles",
+      "text": "We install Class 3 and Class 4 impact-resistant shingles, which hold up to wind of as much as 160 mph and give better protection against hail. They can also earn a discount on your insurance, and come with a 50-year shingle warranty."
+    },
+    {
+      "heading": "Reaching us",
+      "text": "We answer around the clock, seven days a week, and you can text us as well as call. For emergency roof repair, call (281) 203-2037. Our office is at 21450 Cedar Ln, Tomball, TX 77377, and office@serveroofing.com reaches us too. You can also book a consultation online at calendly.com/office-serveroofing."
+    },
+    {
+      "heading": "The team",
+      "text": "Brian, Ryan and Tammy are the team you deal with at Serve Roofing."
+    },
+    {
+      "heading": "Roofs we work on",
+      "items": [
+        "Asphalt, composition and comp shingle roofs",
+        "Class 3 and Class 4 impact-resistant shingles",
+        "Standing seam metal",
+        "Slate and tile",
+        "Wood shake",
+        "Flat and low-slope roofs",
+        "Skylights",
+        "Gutters and downspouts"
+      ]
+    },
+    {
+      "heading": "How we install",
+      "items": [
+        "Hand-nailed with six nails per shingle, rather than air-gun nailed, for tighter nail placement and more holding power in a storm",
+        "GAF Timberline HDZ shingles, Tamko TitanXt and GAF Tiger-Paw synthetic underlayment",
+        "50-year shingles, the longest in the industry, built for heavy hail",
+        "Materials sourced from local suppliers: ABC Roofing Supply, Beacon Supply and SRS Distribution",
+        "A dedicated project manager oversees the job from start to finish",
+        "You can follow every milestone of the installation through a link we give you"
+      ]
+    },
+    {
+      "heading": "Cleaning up after ourselves",
+      "text": "Debris comes off the site as we go, and the yard, driveway and flowerbeds get a magnetic nail sweep so no nails are left behind. We clear debris off window ledges, remove roof granules and clean out the gutters, and we leave the exterior cleaner than we found it."
+    },
+    {
+      "heading": "Discounts",
+      "items": [
+        "$100 off for referring a friend",
+        "5% off all roof repair services for veterans and seniors",
+        "Free roof inspections with no obligation",
+        "Discounted repairs on minor hail damage"
+      ]
+    },
+    {
+      "heading": "On your deductible",
+      "text": "Be wary of any roofer who offers to absorb your deductible or skip charging it. It means false invoices and inflated costs put to your insurer, it is illegal, and both the homeowner and the roofer carry the consequences. We do not do it."
+    },
+    {
+      "heading": "What a roof repair costs in Houston",
+      "text": "A typical repair runs from $780 to $4,906, and most homeowners spend around $2,413. What moves it is the size of the roof, how far the damage goes and the kind of work needed. Aluminium gutter downspouts run $9.18 to $14.60 a foot."
+    },
+    {
+      "heading": "What can void a manufacturer warranty",
+      "items": [
+        "New shingles installed over the old ones",
+        "Improper installation",
+        "Adding certain roof fixtures and features",
+        "Mixing roofing materials from different manufacturers",
+        "Inadequate roof ventilation"
+      ]
+    },
+    {
+      "heading": "Pricing and quotes",
+      "items": [
+        "Free roof estimates, with transparent competitive pricing and no hidden fees",
+        "Quotes set out the extent of the work, the materials and the cost",
+        "An estimate is written after we have been in the attic, not from a drive-by measurement"
+      ]
+    },
+    {
+      "heading": "Finding us online",
+      "text": "Our reviews are on Google, Yelp and Facebook, our Facebook page is facebook.com/people/Serve-Roofing, and we are listed in GAF's own contractor directory and on the Better Business Bureau as an accredited business."
+    }
+  ]
+}
