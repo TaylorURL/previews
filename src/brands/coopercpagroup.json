@@ -1,0 +1,718 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Cooper CPA Group, PC",
+  "shortName": "Cooper CPA Group",
+  "tagline": "Managing growth in the fast lane.",
+  "phone": "(713) 243-8590",
+  "email": "hello@coopercpagroup.com",
+  "address": "1703 W 12th St",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77008",
+  "rating": 4.7,
+  "reviewCount": 129,
+  "hours": [
+    [
+      "Monday to Friday",
+      "8:00 AM - 5:00 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Start with a free meet and greet with Christopher Cooper, our Director of Practice Management. He will answer your questions and walk you through our firm and our process."
+  },
+  "brand": {
+    "primary": "#2e4d61",
+    "primaryDeep": "#1d3340",
+    "accent": "#7a7510",
+    "ink": "#1b2730",
+    "muted": "#566573",
+    "surface": "#f5f7f8",
+    "cream": "#eceff1",
+    "line": "#dde4e8",
+    "heading": "'Archivo', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap",
+    "logo": "/brands/coopercpagroup/logo.webp",
+    "logoWidth": 120
+  },
+  "hero": {
+    "eyebrow": "Houston Heights CPA firm",
+    "title": "More than a firm - a partner.",
+    "lead": "We have been serving the accounting and tax needs of Houston, TX and the surrounding areas for over two decades. If you need help managing and understanding all aspects of your personal or business's financial framework, we want to hear from you.",
+    "image": "/brands/coopercpagroup/hero",
+    "imageAlt": "Reviewing financial statements with a calculator at a desk",
+    "points": [
+      "Tax preparation and tax planning",
+      "Bookkeeping and QuickBooks support",
+      "M&A, valuation and succession work"
+    ]
+  },
+  "overview": {
+    "title": "We offer solutions with our services.",
+    "text": "Tax preparation, tax planning, financial statements, succession planning, merger and acquisition guidance, bookkeeping consulting. Pick a service to see what it covers, or call and talk it through with our team."
+  },
+  "audiences": {
+    "individuals": "Individuals",
+    "businesses": "Businesses"
+  },
+  "services": [
+    {
+      "slug": "tax-preparation",
+      "title": "Tax Preparation",
+      "audience": "individuals",
+      "icon": "receipt",
+      "summary": "Individual and business returns, filed online.",
+      "text": "We handle both individual and business taxes, from straightforward 1040 filings to complex multi-entity tax structures, and file electronically so refunds arrive faster.",
+      "lead": "Today's tax laws are so complicated that filing a relatively simple return can be confusing. It is just too easy to overlook deductions and credits to which you are entitled. Even if you use a computer software program, there's no substitute for the assistance of an experienced tax professional.",
+      "image": "/brands/coopercpagroup/tax-preparation",
+      "imageAlt": "Tax documents and a pen on a desk",
+      "covers": [
+        {
+          "title": "Individual and business returns",
+          "text": "From straightforward 1040 filings to complex multi-entity tax structures, whether you are a W-2 employee, a self-employed freelancer or a business owner with several entities."
+        },
+        {
+          "title": "A thorough review",
+          "text": "We review your documentation thoroughly, identify potential IRS red flags and maximize your deductions to minimize your tax liability."
+        },
+        {
+          "title": "Electronic filing",
+          "text": "Our electronic filing system means you receive your refund faster."
+        },
+        {
+          "title": "Tax resolution",
+          "text": "Penalty abatement, installment agreements, offer in compromise and negotiating tax debt with the IRS or the state."
+        },
+        {
+          "title": "IRS audit assistance",
+          "text": "We manage the communication, prepare the necessary documentation and represent you through an examination or an IRS inquiry."
+        },
+        {
+          "title": "Business structuring",
+          "text": "Launching, restructuring or changing entity type (LLC, S-Corp, C-Corp), analyzed against your financial goals and tax implications."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Do you handle business and individual taxes?",
+          "a": "Yes, we handle both individual and business taxes, ranging from straightforward 1040 filings to complex multi-entity tax structures. Whether you're a W-2 employee, a self-employed freelancer, or a business owner with multiple entities, we have the expertise to navigate your tax situation efficiently and strategically."
+        },
+        {
+          "q": "What information and documents do you need from me to get started?",
+          "a": "During our initial consultation, our Director of Practice Management will review your specific tax needs and outline the required documentation. To begin the process, we'll request that you upload relevant financial records, prior-year tax returns, and any supporting documents into our secure client portal. Then we will assess your situation, provide a detailed quote, and send out an engagement letter."
+        },
+        {
+          "q": "Can you assist with business structuring and tax efficiency strategies?",
+          "a": "Yes, we frequently work with clients on business structuring and tax efficiency planning. Whether you're launching a new business, restructuring an existing one, or considering entity changes (LLC, S-Corp, C-Corp, etc.), we analyze your financial goals and tax implications to recommend the most advantageous structure."
+        }
+      ]
+    },
+    {
+      "slug": "tax-planning",
+      "title": "Tax Planning",
+      "audience": "individuals",
+      "icon": "calculator",
+      "summary": "Strategies put in place before year-end.",
+      "text": "Effective tax planning happens before it is time to file. We evaluate your projected tax liability, identify planning opportunities and develop strategies that can be implemented before year-end.",
+      "lead": "Work with an experienced Houston CPA team to evaluate your projected tax liability, identify planning opportunities, and implement proactive strategies before year-end. Whether you need a tax projection, a focused consultation, or a more comprehensive business tax plan, our team can provide the level of guidance that fits your situation.",
+      "covers": [
+        {
+          "title": "2-Minute Drill Consultation",
+          "text": "A one-hour meeting reviewing your previously filed return to determine any life or business changes and relevant tax law changes, and you leave with a planning cheat sheet of tax questions for the future."
+        },
+        {
+          "title": "Tax Projection",
+          "text": "A brief phone call about yearly changes and expectations, a projection based on last year's numbers and current activity, then a one-hour meeting to discuss it and answer questions."
+        },
+        {
+          "title": "Individual or Business Tax Plan",
+          "text": "An initial meeting with a tax preparer, a full financial model run on your adjusted numbers, a year-end action list to help mitigate exposure, and a summary meeting where findings are discussed to set a direction."
+        },
+        {
+          "title": "Multiple scenarios",
+          "text": "We develop multiple scenarios so you can visualize the effect of the various strategies we are proposing, then meet to discuss the plan."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is a tax plan?",
+          "a": "A Tax Plan provides peace of mind and an opportunity to minimize your tax liability. It consists of reviewing business and personal financial documents used to compute estimated tax liability. The Plan provides insightful information that allows you to make business decisions that create additional tax deductions or the deferral of revenues to reduce your tax liability. It is critical to act on the strategies selected before year end because after December 31 it is merely history."
+        },
+        {
+          "q": "What's the difference between tax preparation and tax planning?",
+          "a": "Tax preparation focuses primarily on reporting activity that has already occurred and preparing the required returns. Tax planning is forward-looking and evaluates potential strategies and decisions before year-end so there is still time to act."
+        },
+        {
+          "q": "Is getting a tax plan only beneficial for businesses or is it beneficial for individuals as well?",
+          "a": "A Tax Plan is very beneficial for individuals who have complex tax returns. If you have a sole proprietorship it is basically reporting business activity in your personal tax filing that has the same complexities as an actual business tax return filing. You have harvesting of losses, non-cash deductions, rental properties, passive activity income from K-1s, and the tax attributes of other personal investments that create the need for a plan."
+        },
+        {
+          "q": "How would you reduce my taxes?",
+          "a": "By preparing a plan and gathering your financial documents we can clearly see your business and personal activity. We look for methods to accelerate expenses, defer income, or identify investment opportunities that will allow for minimizing your taxes. This process will be completed before year-end to allow for the implementation of the identified strategies."
+        },
+        {
+          "q": "What are the steps for a tax plan?",
+          "a": "Set up an appointment to discuss your business and personal activity. Gather your documents and update your financial accounting records with the most current information. Accounting clean-up may be necessary to have solid financial information to create the plan. After creating the projection and reviewing your financial records we may request additional documentation to reduce your projected liability. We will have a meeting once the plan is completed to discuss the strategies being recommended. You will need to execute the strategies."
+        }
+      ]
+    },
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping",
+      "audience": "businesses",
+      "icon": "book",
+      "summary": "Monthly books, reconciliations and QuickBooks.",
+      "text": "Ongoing bookkeeping for Houston businesses that need reliable financial records, timely reconciliations and greater visibility into their financial performance.",
+      "lead": "Keeping accurate books becomes more challenging as your business grows. Whether you need monthly bookkeeping, QuickBooks support, or a more complete outsourced bookkeeping solution, our team can tailor the level of support around your business.",
+      "image": "/brands/coopercpagroup/bookkeeping",
+      "imageAlt": "Bookkeeping records and a laptop on a desk",
+      "covers": [
+        {
+          "title": "Chart of accounts",
+          "text": "We set up your chart of accounts, train you, and monitor your future activities."
+        },
+        {
+          "title": "Monthly and quarterly close",
+          "text": "We perform monthly or quarterly close processes to ensure your general ledger is in order."
+        },
+        {
+          "title": "Reconciliations",
+          "text": "We reconcile your bank and credit card accounts so the records can be relied on."
+        },
+        {
+          "title": "QuickBooks training",
+          "text": "Our team is proficient in both QuickBooks Online and Desktop and can train you on basic navigation, advanced features or troubleshooting."
+        },
+        {
+          "title": "Outsourced bookkeeping",
+          "text": "Ongoing outsourced support including reconciliations, close processes, financial reporting and QuickBooks assistance."
+        },
+        {
+          "title": "Troubleshooting",
+          "text": "We work through your specific problems and issues step by step so you understand your financial position and results of operations."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Do you offer QuickBooks training?",
+          "a": "Absolutely. Our team of experts is proficient in both QuickBooks Online and Desktop versions, and we can provide tailored training to suit your specific needs. Whether you need assistance with basic navigation, advanced features, or troubleshooting, our experienced trainers are here to help you master QuickBooks and optimize its use for your business."
+        },
+        {
+          "q": "What are your fees and pricing structure for bookkeeping services?",
+          "a": "We understand that each business has unique bookkeeping needs, and we tailor our fees accordingly. We take the time to understand your company's requirements and create customized packages during the Meet & Greet that are specifically designed to meet your individual needs."
+        },
+        {
+          "q": "Is there any technical knowledge I should know before hiring a bookkeeper?",
+          "a": "We understand that not everyone may have a deep technical knowledge of financial statements, and that's perfectly fine. It's always helpful to have a general understanding of these statements, but our team will guide you through the details and ensure that you have a clear understanding of your financials."
+        },
+        {
+          "q": "What industries or types of businesses do you specialize in?",
+          "a": "We have extensive experience working with clients across various industries, including but not limited to restaurants, retail, professional services and real estate. Our team is equipped to handle diverse business types and unique situations. During our Meet & Greet we take the time to understand your specific needs and tailor our services accordingly."
+        },
+        {
+          "q": "Do you offer outsourced bookkeeping services?",
+          "a": "Yes. Our team can provide ongoing outsourced bookkeeping support based on your business's needs, including reconciliations, monthly or quarterly close processes, financial reporting, and QuickBooks assistance."
+        }
+      ]
+    },
+    {
+      "slug": "payroll",
+      "title": "Payroll",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Payroll and tax filing through ADP.",
+      "text": "We have partnered with ADP Small Business Services to help our clients with payroll, tax filing and other small business needs such as workers' comp, HR and retirement plans.",
+      "lead": "We have partnered with ADP Small Business Services to act as an extension of our agency and help our clients with their payroll, tax filing, and other small business needs such as Worker's comp, HR, and Retirement plans. We recognize the importance of having a relationship like this in place to enhance your organization's ability to operate more efficiently and profitably and ultimately be in compliance with the several complicated legislative changes that have quickly passed.",
+      "covers": [
+        {
+          "title": "Payroll and tax filing",
+          "text": "Run through ADP Small Business Services, with our firm as the point of contact."
+        },
+        {
+          "title": "Workers' comp, HR and retirement",
+          "text": "The other small business needs that sit alongside payroll, available through the same relationship."
+        }
+      ]
+    },
+    {
+      "slug": "financial-accounting-advisory",
+      "title": "Financial and Accounting Advisory",
+      "audience": "businesses",
+      "icon": "chart",
+      "summary": "Accounting, tax and CFO-level guidance.",
+      "text": "Closing the books is only the beginning. We bring accounting, tax and CFO-level guidance together through one connected financial team, so you can focus on running the business with greater confidence in the numbers behind it.",
+      "lead": "Your books may be closed, but can you trust the numbers? Growing businesses need financial information they can trust, not just to report what happened, but to help make better decisions about what comes next. Each engagement is staffed by the same core team, allowing the work to remain close to your business and reducing the need to repeatedly explain your operations to different professionals.",
+      "covers": [
+        {
+          "title": "Accounting and reporting",
+          "text": "Ongoing bookkeeping and account reconciliation, organized monthly financial reporting, and cleaner, more reliable financial information for decision-making."
+        },
+        {
+          "title": "Tax and planning",
+          "text": "Coordinated business and personal tax compliance, proactive tax-planning conversations through the year, and better visibility into how business decisions may affect your tax position."
+        },
+        {
+          "title": "Strategy and advisory",
+          "text": "Ongoing review of financial performance and key business trends, expanding into deeper strategic and fractional CFO-level guidance as your needs evolve."
+        },
+        {
+          "title": "One dedicated team",
+          "text": "Your bookkeeping, tax, planning and strategic guidance sit under one coordinated team, so you spend less time managing separate providers."
+        },
+        {
+          "title": "A dedicated finance pod",
+          "text": "Each engagement is supported by a fractional CFO, an accounting manager and a staff accountant, with budgeting, forecasting, cash flow and growth guidance alongside the books."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is a Fractional CFO?",
+          "a": "A Fractional CFO provides ongoing financial leadership without joining the company as a full-time internal executive. The scope can include reporting, forecasting, cash-flow planning, budgeting, performance analysis and strategic financial guidance."
+        },
+        {
+          "q": "What size company is the service designed for?",
+          "a": "The service is designed primarily for owner-led companies beginning at approximately $5 million in annual revenue. The appropriate level depends on company size, complexity, entity count, transaction volume and strategic needs."
+        },
+        {
+          "q": "Is bookkeeping included?",
+          "a": "Full-cycle bookkeeping, reconciliations, monthly close and financial statements are included in the core service levels."
+        },
+        {
+          "q": "Will I work with one person or a team?",
+          "a": "Each engagement is supported by a dedicated finance pod consisting of a fractional CFO, an accounting manager and a staff accountant."
+        },
+        {
+          "q": "How frequently will I meet with the CFO?",
+          "a": "The cadence depends on the selected level. Foundation includes an annual CFO review and Advisory includes quarterly CFO strategy sessions."
+        },
+        {
+          "q": "How long does implementation take?",
+          "a": "Implementation generally takes four to six weeks and begins at $10,000."
+        },
+        {
+          "q": "Can Cooper CPA Group help prepare my business for a sale?",
+          "a": "The higher service levels include support for value creation, exit readiness, financial diligence preparation, valuation and ownership-transition planning."
+        },
+        {
+          "q": "Are tax services included?",
+          "a": "Tax planning and business and personal tax returns are included within the service framework. The exact scope is confirmed in the engagement proposal."
+        },
+        {
+          "q": "Is this an audit or review engagement?",
+          "a": "No. Fractional CFO services are advisory and accounting services and are not an audit, review or attestation engagement."
+        }
+      ]
+    },
+    {
+      "slug": "business-consulting",
+      "title": "Business Consulting",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Packages for start-ups and established owners.",
+      "text": "Practical financial and strategic guidance from experienced CPA advisors to help you understand your numbers, make better decisions, and plan what comes next.",
+      "lead": "Whether you have owned and operated a small business for years or are just beginning your company, hiring our business consultants to partner with you could be your ideal solution. Our primary goal is to improve your overall effectiveness and to expand clarity on your financial information. Time management is essential if you want to win in the fast lane.",
+      "image": "/brands/coopercpagroup/consulting",
+      "imageAlt": "Two people working through figures together at a table",
+      "covers": [
+        {
+          "title": "Concierge Consulting",
+          "text": "Agenda-driven quarterly meetings to resolve issues, set goals and create solutions, plus one 15-minute check-in call a month."
+        },
+        {
+          "title": "Start-Up Consulting",
+          "text": "Four detailed meetings covering the business plan, entity structure and operating agreement, the chart of accounts, infrastructure needs and reporting, with unlimited phone calls for questions that do not require research."
+        },
+        {
+          "title": "Quarterly Close Process",
+          "text": "Quarter-ended financial statements properly reconciled and supported, a two-hour strategy meeting each quarter, quantifiable goals for the quarter ahead, ongoing tax planning and a simple calculation of value to measure growth."
+        },
+        {
+          "title": "Buyside Consulting",
+          "text": "Buy-side and sell-side support, due diligence, financial analysis and valuation, legal and document support, and referrals and networking, with tax preparation, tax planning and bookkeeping available as add-ons."
+        }
+      ]
+    },
+    {
+      "slug": "ma-services",
+      "title": "M&A Services",
+      "audience": "businesses",
+      "icon": "handshake",
+      "summary": "Buy-side and sell-side advisory and due diligence.",
+      "text": "We help business owners, buyers and sellers understand the financial side of a transaction, analyzing the numbers, identifying potential risks and providing practical guidance through the deal process.",
+      "lead": "Cooper CPA Group helps business owners, buyers, and sellers understand the financial side of a transaction. We specialize in working with small businesses, offering personalized and tailored services that larger firms often overlook. We are not an investment banking firm, but we have a trusted boutique investment banking referral partner we can work with to support your transaction when appropriate.",
+      "covers": [
+        {
+          "title": "Buy side and sell side advisory",
+          "text": "Assisting buyers with thorough due diligence and the purchase process, and helping owners prepare for a potential sale, evaluate financial readiness and coordinate with transaction professionals."
+        },
+        {
+          "title": "Financial due diligence",
+          "text": "Analysis of historical financial performance, cash flow, working capital and other considerations that may affect the transaction."
+        },
+        {
+          "title": "Business valuation",
+          "text": "Analysis of financial performance and other relevant factors to develop a clearer understanding of business value, supporting transaction planning, pricing discussions and negotiations."
+        },
+        {
+          "title": "Legal and document support",
+          "text": "Financial insights and analysis for drafting and reviewing purchase agreements and letters of intent, coordinating with attorneys and transaction advisors."
+        },
+        {
+          "title": "Referrals and networking",
+          "text": "Referrals to experienced transactional attorneys, investment bankers and SBA bankers, and to financial advisors after the transaction closes."
+        }
+      ]
+    },
+    {
+      "slug": "quality-of-earnings",
+      "title": "Quality of Earnings",
+      "audience": "businesses",
+      "icon": "scale",
+      "summary": "QoE reports scoped to the size of the deal.",
+      "text": "From smaller acquisitions to complex, multi-entity transactions, our Quality of Earnings engagements are scoped around the size and complexity of the deal, with fixed fees confirmed before work begins.",
+      "lead": "We analyze historical earnings and financial trends to provide a clearer picture of the business's underlying financial performance, and evaluate EBITDA adjustments and add-backs to help distinguish recurring earnings from owner-related, nonrecurring or unusual items.",
+      "covers": [
+        {
+          "title": "Standard, starting at $12,500",
+          "text": "Generally suited for a single-entity acquisition with a purchase price of approximately $5 million or less and records in a single accounting system. Proof of cash analysis, adjusted EBITDA with supporting documentation, review of owner compensation, related-party transactions and customer concentration. Approximately 3 to 4 weeks."
+        },
+        {
+          "title": "Core, starting at $22,500",
+          "text": "Generally suited for transactions involving one to three entities and purchase prices of approximately $5 million to $10 million. Standard-level procedures plus month-by-month earnings analysis, working capital trends, debt-like item schedules, receivables and payables aging with DSO and DPO, and a source-linked Excel databook with a key findings summary. Approximately 4 to 5 weeks."
+        },
+        {
+          "title": "Comprehensive, varies by scope",
+          "text": "Designed for larger or more complex transactions where deal size, entity structure, financial complexity or requested support requires a more tailored scope of work."
+        },
+        {
+          "title": "Scoping and proposal",
+          "text": "We discuss the transaction, financing requirements, entity structure, timeline and expected scope, review the available financial records, data room and accounting system access, then provide a defined scope, estimated timeline, deliverables and engagement fee. Starting prices are estimates; final scope, deliverables, timeline and fees are confirmed in the engagement letter."
+        },
+        {
+          "title": "Scoped separately",
+          "text": "Working capital peg and purchase agreement support, tax diligence and exposure review, transaction structure and tax modeling, forward projections and pro forma modeling, additional entities beyond the agreed scope, sell-side or vendor Quality of Earnings, and accelerated delivery subject to availability."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is a Quality of Earnings report?",
+          "a": "A Quality of Earnings report analyzes a company's financial performance to help determine how much of its reported earnings are accurate, recurring and sustainable. It can also identify adjustments, unusual expenses and potential financial risks."
+        },
+        {
+          "q": "What will a QofE review?",
+          "a": "The required analysis may include historical and trailing 12-month cash activity, reported earnings, add-backs and adjustments, customer concentration, contract continuity, and the sustainability of revenue and margins."
+        },
+        {
+          "q": "Who prepares the required QoE?",
+          "a": "The required QoE must be completed by an independent financial professional for the benefit of the lender, rather than by the buyer or seller."
+        },
+        {
+          "q": "How could a QoE affect SBA financing?",
+          "a": "Lenders will use the earnings determined through the QoE when evaluating qualifying transactions. If normalized earnings differ from the figures originally presented, it could affect debt service coverage, financing structure or other aspects of the deal."
+        },
+        {
+          "q": "Can a buyer or seller order the required SBA QoE?",
+          "a": "Under the new SBA requirements, the required QoE must be performed by an independent, experienced financial professional for the lender's benefit. A report prepared by or for the borrower or seller cannot satisfy that requirement. Buyers should coordinate with their lender regarding the specific requirements for their transaction."
+        }
+      ]
+    },
+    {
+      "slug": "succession-planning",
+      "title": "Succession Planning",
+      "audience": "businesses",
+      "icon": "key",
+      "summary": "Planning a family or third-party transition.",
+      "text": "For small and mid-market business owners, retirement is a transition that affects leadership, ownership, cash flow and family dynamics. We help you design a plan that protects the long-term future of the business.",
+      "lead": "Retirement isn't just walking away. More than seven out of ten small or mid-market businesses fail to survive the transition from founder to second generation, typically falling prey to lack of innovation, poor management or estate taxes, or family discord. A well-designed succession plan is essential to protecting the long-term future of your business.",
+      "image": "/brands/coopercpagroup/succession",
+      "imageAlt": "An older business owner talking through plans across a desk",
+      "covers": [
+        {
+          "title": "Business valuation",
+          "text": "A comprehensive valuation analysis to determine fair market value, assess enterprise strength and identify opportunities to enhance value before transition."
+        },
+        {
+          "title": "Business restructuring",
+          "text": "We evaluate whether entity restructuring, shareholder agreements or recapitalization are necessary to facilitate a smooth transition while protecting control and flexibility."
+        },
+        {
+          "title": "Tax consequences",
+          "text": "We analyze potential income, gift and estate tax exposure and develop strategies to minimize the overall burden while maintaining compliance."
+        },
+        {
+          "title": "Retirement projections",
+          "text": "Detailed retirement cash flow projections to determine whether the transition strategy supports your lifestyle goals and long-term financial independence."
+        },
+        {
+          "title": "Tax projections",
+          "text": "We model future tax scenarios under various transition structures to evaluate the long-term impact on both you and the next generation."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What happens to the business when you are no longer running it?",
+          "a": "For small and mid-market business owners, retirement is not simply a decision to stop coming into the office. It is a transition that affects leadership, ownership, cash flow and family dynamics, and conversations around aging, legacy and financial affairs are easier to have early than late."
+        },
+        {
+          "q": "Will the transition generate enough income to support your retirement goals?",
+          "a": "We prepare detailed retirement cash flow projections to determine whether the transition strategy supports your lifestyle goals and long-term financial independence."
+        },
+        {
+          "q": "Family transfer or third-party sale?",
+          "a": "We evaluate your options and help you choose the right path, then clearly structure who will lead and who will own."
+        },
+        {
+          "q": "Who will lead and who will own?",
+          "a": "We clearly structure management and ownership transitions, and evaluate whether entity restructuring, shareholder agreements or recapitalization are needed to make the transfer work."
+        },
+        {
+          "q": "How can taxes be minimized?",
+          "a": "We design strategies to reduce tax exposure and preserve value, analyzing potential income, gift and estate tax exposure and modelling future tax scenarios under various transition structures."
+        },
+        {
+          "q": "How do we keep it fair when family is involved?",
+          "a": "Relationships, expectations, and long-standing dynamics often influence decisions in ways that financial models alone cannot solve. We help align expectations and reduce family tension."
+        }
+      ]
+    }
+  ],
+  "process": {
+    "title": "What to expect from our process",
+    "text": "The same three steps whether you are coming to us for a return or for ongoing bookkeeping.",
+    "steps": [
+      {
+        "title": "Meet and greet",
+        "text": "A free meet and greet with Christopher Cooper, our Director of Practice Management, who covers your questions and tells you more about our firm and process."
+      },
+      {
+        "title": "Quote and engagement letter",
+        "text": "You receive a quote prepared for the services to be rendered, then an engagement letter electronically through DocuSign."
+      },
+      {
+        "title": "Work begins",
+        "text": "Once the engagement letter is signed you are assigned a preparer or bookkeeper and a manager of the firm, who help you set up a secure portal."
+      }
+    ]
+  },
+  "affiliations": {
+    "title": "Credentials and partnerships",
+    "items": [
+      "QuickBooks Certified ProAdvisor",
+      "QuickBooks Advanced Certified ProAdvisor",
+      "ADP Small Business Services partner",
+      "Houston Chronicle Best of the Best finalist, 2023",
+      "Houston Chronicle Best of the Best finalist, 2024",
+      "Houston Chronicle Best of the Best finalist, 2025",
+      "Houston Chronicle Best of the Best finalist, 2026"
+    ]
+  },
+  "about": {
+    "title": "More than a firm - a partner, in the Houston Heights for over two decades.",
+    "text": [
+      "At Cooper CPA Group, PC, we've been serving the accounting and tax needs of Houston, TX and the surrounding areas for over two decades. If you need help managing and understanding all aspects of your personal or business's financial framework, we want to hear from you.",
+      "Our team offers a broad range of solutions for business owners, executives, and independent professionals: tax preparation and tax planning with a proven result of minimizing your tax liability, exceptional knowledge of QuickBooks consulting, assistance in M&A services, accounting clean-up and analysis, and business consulting.",
+      "Our core values are based on an energetic, lively, and friendly environment. We have implemented a flat organizational chart, which comes from trust in our very competent staff. We believe in relationships which can only be built through strong communications. We help our clients understand their numbers and enable them to increase profitability and minimize taxes."
+    ],
+    "image": "/brands/coopercpagroup/about",
+    "imageAlt": "Colleagues reviewing financial reports together",
+    "values": [
+      {
+        "title": "A flat organizational chart",
+        "text": "Trust in a very competent staff, so you can pick up the phone and reach a senior member of the firm rather than working up a chain."
+      },
+      {
+        "title": "Collaboration is the key",
+        "text": "Regular team building and a weekly staff meeting with shout-outs for a job well done. We work hard, play hard, and help one another."
+      },
+      {
+        "title": "A coordinated network",
+        "text": "We hold regular gatherings with our extensive outside professional network, because we are interested in our partners' overall business success."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Gary Cooper",
+      "role": "CPA",
+      "bio": "Recognized by ABC News Channel 13 as \"Your Rock Star CPA.\" He speaks at the Texas Entrepreneurship Through Acquisition Conference at Rice University, sharing his story as an entrepreneur and insights on financial strategy, due diligence, and the role of clean books in successful transactions."
+    },
+    {
+      "name": "Christopher Cooper",
+      "role": "Director of Practice Management",
+      "bio": "Christopher runs the free meet and greet that starts every engagement, covering your questions and explaining the firm and its process, then reviews your needs and outlines the documentation required to get started."
+    },
+    {
+      "name": "Victoria Nowling",
+      "role": "Bookkeeping Supervisor",
+      "bio": "A QuickBooks Certified ProAdvisor and QuickBooks Advanced Certified ProAdvisor, Victoria has in-depth knowledge of both QuickBooks Online and Desktop versions. Her passion lies in helping businesses optimize their bookkeeping processes using QuickBooks, and she provides comprehensive training covering the functionality that streamlines financial management.",
+      "image": "/brands/coopercpagroup/team-tori",
+      "imageAlt": "Victoria Nowling"
+    },
+    {
+      "name": "Gina Crombie",
+      "role": "Staff Accountant",
+      "bio": "Gina works closely with our clients, providing bookkeeping services and helping them maintain accurate and up-to-date financial records. Her proficiency in QuickBooks Desktop makes her an invaluable asset, as she provides comprehensive training to help clients optimize their use of the software.",
+      "image": "/brands/coopercpagroup/team-gina",
+      "imageAlt": "Gina Crombie"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What services do you offer beyond tax preparation?",
+      "a": "In addition to tax preparation, we offer a full suite of financial and advisory services, including bookkeeping for accurate financial records, business consulting for strategic guidance, tax planning to minimize liabilities, M&A services covering buy-side, sell-side and due diligence, and succession planning to help business owners transition ownership smoothly."
+    },
+    {
+      "q": "Do you specialize in any industries?",
+      "a": "While we don't specialize in a single industry, we have extensive experience working with businesses and individuals across a diverse range of sectors. Our client base spans from real estate investors and medical professionals to small business startups, construction firms, retail businesses, and more. This breadth of experience allows us to provide tailored tax strategies that align with industry-specific challenges and opportunities."
+    },
+    {
+      "q": "Do you offer tax resolution services?",
+      "a": "Yes, we offer comprehensive tax resolution services for individuals and businesses facing IRS or state tax challenges. Whether you need help with penalty abatement, installment agreements, offer in compromise, or negotiating tax debt, we work to develop a strategy that resolves your tax issues while protecting your financial interests."
+    },
+    {
+      "q": "Can you assist if I am audited by the IRS?",
+      "a": "Yes, we provide IRS audit assistance, guiding you through the process to ensure compliance while advocating on your behalf. Whether you've received a notice for an examination or need help responding to IRS inquiries, we help manage the communication, prepare necessary documentation, and represent you to achieve the best possible resolution."
+    },
+    {
+      "q": "Do you provide bookkeeping and tax planning for small businesses in Houston?",
+      "a": "Yes. Cooper CPA Group works with Houston-area businesses across a variety of industries and can tailor bookkeeping support around the size, complexity, and financial needs of your company. We also work with Houston-area business owners to evaluate projected tax liabilities and identify planning opportunities."
+    },
+    {
+      "q": "How does an engagement start?",
+      "a": "With a free meet and greet with our Director of Practice Management, Christopher Cooper. After that you receive a quote for the services to be rendered and an engagement letter electronically. Once the engagement letter is signed you are assigned a preparer or bookkeeper and a manager of the firm, who set you up with a secure portal."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Houston Heights"
+  ],
+  "facts": [
+    {
+      "heading": "Houston Heights office",
+      "items": [
+        "1703 W. 12th Street, Houston, TX 77008",
+        "T: (713) 243-8590",
+        "F: (713) 243-8595",
+        "We are not limited to zip code."
+      ]
+    },
+    {
+      "heading": "Recognition",
+      "items": [
+        "Gary Cooper recognized by ABC News Channel 13 as \"Your Rock Star CPA\"",
+        "Houston Chronicle Best of the Best finalist, 2023, 2024, 2025 and 2026",
+        "Repeatedly ranked by Google as one of the best CPA firms in Houston, TX"
+      ]
+    },
+    {
+      "heading": "Sponsorships",
+      "items": [
+        "Veterans Business Battle, hosted by Rice University",
+        "Texas Entrepreneurship Through Acquisition Conference, hosted by Rice University",
+        "Lemonade Day Houston, Heights area"
+      ]
+    },
+    {
+      "heading": "Secure client portal",
+      "text": "Financial records, prior-year returns and supporting documents are exchanged through a secure portal set up by your preparer or bookkeeper. Engagement letters are signed electronically through DocuSign. Existing clients log in or register through the client portal, and fees can be paid online from the Pay My Fee page by entering the invoice number and amount."
+    },
+    {
+      "heading": "Advisory service levels",
+      "items": [
+        "Foundation, starting at $3,500 per month: bookkeeping and QuickBooks reconciliation, monthly close, profit and loss statement, balance sheet, cash-flow statement, financial performance review, tax planning, and business and personal tax preparation and compliance",
+        "Advisory, starting at $5,500 per month: everything in Foundation plus customized KPI reporting, financial performance commentary, budget-to-actual variance analysis, a rolling 12-month forecast, an annual budget and operating plan, recorded strategy-review videos, margin and pricing analysis, financial risk analysis and industry benchmarking",
+        "Enterprise, starting at $8,500 per month: everything in Advisory plus a 13-week cash-flow forecast, maintained adjusted EBITDA and add-back schedules, an annual business value calculation, an exit-readiness assessment, value-driver review, value-creation roadmap, Quality of Earnings pre-diligence review, and succession and ownership-transition planning",
+        "Custom Engagement: scope and pricing built around the services your business needs today",
+        "Implementation generally takes four to six weeks and begins at $10,000"
+      ]
+    },
+    {
+      "heading": "Payment methods",
+      "items": [
+        "Paid by credit card through the PayPal network",
+        "Visa",
+        "Mastercard",
+        "Discover",
+        "American Express"
+      ]
+    },
+    {
+      "heading": "SBA Quality of Earnings update",
+      "text": "Beginning October 1, 2026, SBA lenders must obtain an independent Quality of Earnings report for certain business acquisitions with a purchase price of $3 million or more, in addition to the required business valuation. If you are involved in an SBA-financed acquisition, our M&A advisory team can help you understand the changes and determine the appropriate next steps."
+    },
+    {
+      "heading": "Software and partners",
+      "items": [
+        "QuickBooks Online and QuickBooks Desktop",
+        "UltraTax CS and CCH ProSystem fx tax software",
+        "ADP Small Business Services, for payroll, tax filing, workers' comp, HR and retirement plans",
+        "A boutique investment banking referral partner for transactions, when appropriate"
+      ]
+    },
+    {
+      "heading": "Now hiring",
+      "items": [
+        "Senior Tax Preparer: two to four years preparing federal and state individual, partnership and corporate returns",
+        "Tax Preparer: one to five years preparing federal and state individual, partnership and corporate returns",
+        "Both roles want a thorough understanding of GAAP and experience with UltraTax CS, Intuit QuickBooks, Microsoft Office and Adobe Acrobat",
+        "We are always looking for talented, entrepreneurial-minded self-starters."
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "facebook.com/CooperCPAGroup",
+        "instagram.com/coopercpagroup",
+        "Cooper CPA Group on LinkedIn",
+        "Cooper CPA Group on YouTube"
+      ]
+    },
+    {
+      "heading": "Charitable Donations Calculator",
+      "text": "Most people do not understand the definition of thrift store value. From previous returns we have seen, people have been advised to take $50.00 a bag for clothing and other articles donated to non-profits. Our spreadsheet calculator, free to download, shows that a donation bag could be valued at more like $500.00."
+    },
+    {
+      "heading": "Events we host",
+      "items": [
+        "Rockin' Business Social",
+        "Networking events through the year",
+        "An annual Halloween celebration"
+      ]
+    },
+    {
+      "heading": "Our vision",
+      "text": "We have an environment of collaboration that is built on openness and mutual respect. When employees work hard and want to succeed, self-esteem, desired results and self-actualization can be achieved. We help our clients understand their numbers and enable them to increase profitability and minimize taxes. Our goal is to minimize your worries and help make it happen."
+    },
+    {
+      "heading": "Launching your business into the fast lane",
+      "items": [
+        "Growth consulting",
+        "Accounting clean-up and analysis",
+        "Tax minimization",
+        "Business strategy execution",
+        "Increased profitability",
+        "Understanding your financial position"
+      ]
+    },
+    {
+      "heading": "What the year brought",
+      "items": [
+        "2023: launched consulting packages for start-ups and established businesses, expanded buy-side consulting and due diligence, and strengthened internal training",
+        "2024: welcomed client care specialists, enhanced technology tools for bookkeeping and reporting, expanded advisory beyond tax preparation into ongoing financial strategy, and deepened community involvement",
+        "2025: upgraded internal systems and automations, introduced the Quarterly Close Process, expanded industry partnerships in valuations, banking and legal services, and rolled out advanced tax planning strategies",
+        "2026: expanded proactive tax planning, strengthened bookkeeping and advisory support, continued improving internal systems, and grew industry partnerships"
+      ]
+    }
+  ]
+}

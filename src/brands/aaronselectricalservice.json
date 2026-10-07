@@ -1,0 +1,553 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Aaron's Electrical Service",
+  "shortName": "Aaron's Electrical Service",
+  "summary": "Residential and commercial electrical repairs, installations and standby generators for homes and businesses across the greater Houston area.",
+  "phone": "(281) 719-0464",
+  "email": "info@aaronselectricalservice.com",
+  "address": "504 Spring Hill Dr, Suite 410",
+  "town": "Spring",
+  "state": "TX",
+  "zip": "77386",
+  "rating": 4.9,
+  "reviewCount": 688,
+  "since": 2013,
+  "hours": [
+    [
+      "Mon – Sat",
+      "24 Hours"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#002e63",
+    "primaryDeep": "#001c40",
+    "accent": "#ffe801",
+    "ink": "#0c1623",
+    "muted": "#4d5e74",
+    "surface": "#eef3fa",
+    "line": "#d6e0ed",
+    "heading": "'Archivo', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/aaronselectricalservice/logo.webp",
+    "logoWidth": 200
+  },
+  "emergency": {
+    "title": "Taking calls 24/7",
+    "text": "Sparks, a dead panel or exposed wiring, calls are answered around the clock and electricians are dispatched 24 hours a day Monday through Saturday."
+  },
+  "sameDay": "Same-day service for routine service calls, in a fully stocked vehicle.",
+  "licenses": [
+    {
+      "label": "TX State Electrical Contractor's License",
+      "number": "31569"
+    }
+  ],
+  "financing": {
+    "text": "Financing is available on your electrical work, with same-day approval."
+  },
+  "hero": {
+    "eyebrow": "Licensed electricians in Spring and the greater Houston area",
+    "title": "Aaron's Electrical Service,",
+    "titleAccent": "proudly serving the Houston area.",
+    "lead": "A Christian, family-owned team of licensed and insured electricians for your wiring, panel, lighting and standby generator, with an accurate estimate, no hidden fees and a lifetime warranty on the work.",
+    "image": "/brands/aaronselectricalservice/hero",
+    "imageAlt": "A single-storey house at dusk with its exterior and interior lighting on"
+  },
+  "groups": [
+    {
+      "slug": "residential",
+      "title": "Residential",
+      "icon": "home",
+      "summary": "Wiring, panels, lighting and safety devices for single-family homes, mobile homes and townhomes.",
+      "intro": "You rely on your home's electrical system every day. If your breakers keep tripping, your panel is overheating or your lights are simply outdated, our licensed and insured electricians have the answer that works for your home and family. We work on single-family homes, mobile homes and townhomes.",
+      "image": "/brands/aaronselectricalservice/residential",
+      "imageAlt": "A technician testing circuits inside an open electrical panel",
+      "services": [
+        {
+          "slug": "wiring",
+          "title": "Wiring",
+          "icon": "cable",
+          "text": "Many homes in Harris, Fort Bend and Montgomery counties have faulty or outdated wiring. Others need a new circuit for an appliance or an upgrade.",
+          "points": [
+            "Aluminum wiring replacements and repairs",
+            "Appliance wiring and circuits",
+            "Underground wiring repair",
+            "Switch and outlet repairs"
+          ]
+        },
+        {
+          "slug": "breaker-panels",
+          "title": "Breaker Panels",
+          "icon": "circuit",
+          "text": "Flickering lights, a breaker that keeps tripping or a panel you are ready to replace, handled by licensed and insured electricians.",
+          "points": [
+            "Panel installation",
+            "Breakers and fuses",
+            "Arc fault breakers",
+            "GFCI outlets and breakers"
+          ]
+        },
+        {
+          "slug": "lighting",
+          "title": "Lighting",
+          "icon": "lightbulb",
+          "text": "Every home deserves proper illumination for comfort, convenience and safety. We install, maintain, repair and replace lighting throughout the Houston area.",
+          "points": [
+            "Light fixture installations and repairs",
+            "Lighting retrofits",
+            "Recessed lighting",
+            "Switches and dimmers",
+            "Landscape lighting"
+          ]
+        },
+        {
+          "slug": "service-upgrade",
+          "title": "Service Upgrade",
+          "icon": "power",
+          "text": "If your family has grown and you are using more appliances and devices, your home may not have the power or the panel space to add more.",
+          "points": [
+            "Service panel capacity reviewed",
+            "AC and heating circuit services"
+          ]
+        },
+        {
+          "slug": "ev-chargers",
+          "title": "EV Charger Installation",
+          "icon": "ev",
+          "text": "A dedicated charger at home is much faster than a standard outlet and keeps you off the public chargers. We install full-power Level 2 chargers.",
+          "points": [
+            "Level 2 chargers installed at home",
+            "A Level 2 charger runs on a 240-volt circuit",
+            "Circuits rated at 50 amps for high-power chargers",
+            "A Level 1 charger on a standard 120-volt outlet can need as long as 18 hours for a full charge"
+          ]
+        },
+        {
+          "slug": "electrical-inspections",
+          "title": "Electrical Inspections",
+          "icon": "shield",
+          "text": "With all the new gadgets and appliances on the market, it is common for a home to approach or exceed its capacity without anyone knowing. We check that the wiring is up to code.",
+          "points": [
+            "Checked against the minimum requirements of the National Electrical Code",
+            "Meter, panel, breaker sizing and load-bearing",
+            "Wire type, grounding, and damaged or frayed wiring",
+            "GFCI outlets, switch plates and junction boxes",
+            "Code violation corrections",
+            "Smoke and carbon monoxide detectors",
+            "Surge protection"
+          ]
+        },
+        {
+          "slug": "fans",
+          "title": "Attic and Ceiling Fans",
+          "icon": "fan",
+          "text": "Attic fans and ceiling fans installed and repaired, wired to the right switch."
+        }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial",
+      "icon": "building",
+      "summary": "Installations, repairs, lighting and maintenance for offices, warehouses, retail stores and restaurants.",
+      "intro": "We are here to keep your business running day or night. Your employees and guests need reliable power for everything from keeping the lights on to climate control, and any electrical problem in a commercial setting can mean lost business. Our fully licensed and insured technicians are available at all times to get your building back up and running.",
+      "image": "/brands/aaronselectricalservice/commercial",
+      "imageAlt": "Pendant lights hanging in a row from a commercial ceiling",
+      "services": [
+        {
+          "slug": "commercial-installations",
+          "title": "Commercial Electrical Installations",
+          "icon": "plug",
+          "text": "Upgrades, replacements and new installations for retail stores, restaurants, offices, warehouses and more.",
+          "points": [
+            "Computer and phone cabling and wiring",
+            "Electrical outlets and panels",
+            "Office lighting"
+          ]
+        },
+        {
+          "slug": "commercial-repairs",
+          "title": "Commercial Electrical Repairs",
+          "icon": "wrench",
+          "text": "Rewiring, GFCI outlet installation, panel repair and fuse and breaker replacements, with 24-hour emergency repair when a fault stops the business.",
+          "points": [
+            "Emergency repair 24 hours a day",
+            "Safe, efficient power distribution"
+          ]
+        },
+        {
+          "slug": "commercial-lighting",
+          "title": "Commercial and Security Lighting",
+          "icon": "sun",
+          "text": "Installation, repair and maintenance of commercial lighting for functionality and energy efficiency, indoors and out.",
+          "points": [
+            "Outdoor and security lighting",
+            "Parking lot lighting",
+            "Landscape lighting",
+            "Lighting retrofits"
+          ]
+        },
+        {
+          "slug": "electrical-maintenance",
+          "title": "Electrical Maintenance Services",
+          "icon": "settings",
+          "text": "A maintenance plan puts a qualified commercial electrician over your electrical components regularly, so a malfunction is found before it affects your productivity. Programs are built around each customer's needs.",
+          "points": [
+            "Overcurrent protection",
+            "Electrical faultfinding",
+            "Generator inspections",
+            "Lighting and light fixture inspections",
+            "Motor control maintenance",
+            "Transformer and metering services",
+            "Wiring distribution and terminations",
+            "Maintenance for alarms and motion detection systems"
+          ]
+        },
+        {
+          "slug": "surge-protection",
+          "title": "Surge Protection",
+          "icon": "zap",
+          "text": "Surge protection installed to keep a spike on the utility line from reaching your equipment."
+        }
+      ]
+    },
+    {
+      "slug": "general-electrician",
+      "title": "General Electrician",
+      "icon": "zap",
+      "summary": "Repairs, wiring installations and electrical safety work, from a small fix to a major install.",
+      "intro": "From small repairs to major installations, your electrical system should always be worked on by trained, licensed electricians. Once you know a Houston electrician you can trust to do the work for a fair price, you can feel a lot more confident about your safety and comfort. We guarantee to be on time in a fully stocked vehicle.",
+      "image": "/brands/aaronselectricalservice/general-electrician",
+      "imageAlt": "A person in work gloves using a screwdriver on an electrical outlet",
+      "services": [
+        {
+          "slug": "electrical-repairs",
+          "title": "Electrical Repairs",
+          "icon": "wrench",
+          "text": "Whether it is a dead wall outlet or a dangerous breaker box, an electrical problem should be repaired right away.",
+          "points": [
+            "Circuit breaker repair",
+            "Light fixture repair",
+            "Outlet repair and replacement",
+            "Underground wiring repair",
+            "Generator repair"
+          ]
+        },
+        {
+          "slug": "wiring-installations",
+          "title": "Wiring Installations and Upgrades",
+          "icon": "cable",
+          "text": "Any time you modify or add to your electrical system, a professional should do the work so everything is up to code and inspection-ready.",
+          "points": [
+            "Circuit and outlet wiring",
+            "Panel installation and service upgrades",
+            "Appliance wiring",
+            "Light fixtures and ceiling fans",
+            "Standby generators"
+          ]
+        },
+        {
+          "slug": "electrical-safety",
+          "title": "Electrical Safety Services",
+          "icon": "shield",
+          "text": "We test, inspect and install electrical safety devices, whether you need to correct a code violation, get ready for an inspection or sell your home.",
+          "points": [
+            "Electrical inspections",
+            "Code violation corrections",
+            "Arc fault breakers",
+            "GFCI outlets",
+            "Carbon monoxide and smoke detectors",
+            "Surge protection"
+          ]
+        },
+        {
+          "slug": "emergency-electrician",
+          "title": "Emergency Electrician",
+          "icon": "timer",
+          "text": "Late at night or on a Saturday, we send out a licensed and insured electrician for a power outage inside the home, an overheating outlet, sparks from a switch, a buzzing panel or exposed wiring.",
+          "points": [
+            "Calls answered 24/7",
+            "All major credit cards accepted"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "generators",
+      "title": "Generators",
+      "icon": "battery",
+      "summary": "Whole-home and commercial standby generators, repairs, and transfer switches for portable units.",
+      "intro": "When a power outage or hurricane strikes, you need more than candles to light the way. We install whole-home generators and commercial standby generators, as well as interlock kits for easy operation of a portable generator, and we offer emergency service for standby and commercial units.",
+      "image": "/brands/aaronselectricalservice/generators",
+      "imageAlt": "A large standby generator installed beside wall-mounted power inverters",
+      "services": [
+        {
+          "slug": "generator-installation",
+          "title": "Generator Installation",
+          "icon": "power",
+          "text": "A full standby generator is installed alongside your main electrical service and switches on automatically when the power goes out.",
+          "points": [
+            "More powerful than a portable generator",
+            "Keeps the house comfortable through heat waves, winter storms and hurricanes",
+            "Powers the refrigerator, cooking equipment and medical devices",
+            "Larger models can run central HVAC",
+            "Simple to maintain and refuel",
+            "Properly sized, integrated with your electrical system and compliant with local codes",
+            "Assessment through to final setup and testing"
+          ]
+        },
+        {
+          "slug": "generator-repair",
+          "title": "Generator Repair",
+          "icon": "wrench",
+          "text": "If your generator is not working right, we offer prompt repairs to get it back on track, plus routine testing and maintenance over the years.",
+          "points": [
+            "All the top brands serviced",
+            "Emergency service for standby units"
+          ]
+        },
+        {
+          "slug": "transfer-switch-interlock",
+          "title": "Transfer Switches and Interlock Kits",
+          "icon": "settings",
+          "text": "A transfer switch or interlock kit lets you connect a portable generator to your panel safely. Without one you risk your appliances, the generator and the public utility lines, and a utility worker restoring power could be seriously injured.",
+          "points": [
+            "Installed to code and tested"
+          ]
+        },
+        {
+          "slug": "commercial-generators",
+          "title": "Commercial Generators",
+          "icon": "building",
+          "text": "Your business relies on power for the security system, internet, point of sale and other critical devices. Talk to us about your power needs and we help you pick a unit with the right wattage.",
+          "points": [
+            "Automatic transfer switch at the service panel",
+            "Installation, maintenance and repair"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Current offers",
+    "title": "Save on your service today.",
+    "text": "Take $25 off any service, and ask about the whole house surge protector deal and the free panel inspection.",
+    "price": "$25",
+    "priceNote": "off any service",
+    "image": "/brands/aaronselectricalservice/offers",
+    "imageAlt": "A row of white circuit breakers in a panel"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "A Christian, family-owned electrical company.",
+    "text": [
+      "When you need quality electrical services in the Houston area, turn to the Aaron's Electrical Service team. We offer residential and commercial electrical services, and we are available 24 hours Monday through Saturday.",
+      "We are a Christian, family-owned and operated team, and we pride ourselves on truth, integrity and honor in everything we do. It is our goal to set ourselves apart in the industry as a trustworthy company that takes pride in serving all those we encounter.",
+      "Your neighbors have relied on our team for top-rated service since 2013. We are committed to quality, and all of our work is backed by a 100% satisfaction guarantee and a lifetime workmanship warranty. We are closed on Sundays for faith, family and friends."
+    ],
+    "image": "/brands/aaronselectricalservice/team",
+    "imageAlt": "The owners of Aaron's Electrical Service",
+    "values": [
+      {
+        "title": "Accurate estimates",
+        "text": "We give you an accurate estimate with no hidden fees, and we have been transparent about our costs from the very beginning."
+      },
+      {
+        "title": "On-time service",
+        "text": "We guarantee our electricians show up on time, ready to work, in a fully equipped service vehicle."
+      },
+      {
+        "title": "Customer first",
+        "text": "We value strong customer relationships formed on honesty and trust, and we encourage you to ask our electricians any question you have."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Why does my breaker keep tripping?",
+      "a": "Circuit breakers trip when the circuit is overloaded or when there is a short from the hot wire to neutral or ground. Shorts trip the breaker immediately, while it may take time for an overloaded circuit to trip. Remove one device at a time to reduce the load, and if the circuit still trips often, it may indicate more severe problems."
+    },
+    {
+      "q": "What are the risks of overloading a circuit?",
+      "a": "An overloaded circuit can allow the wires inside your wall to heat up and start a fire. Most household circuits are rated at 15 amps, and if you exceed that significantly, the circuit breaker should trip. Avoid using extension cords or outlet strips, and if you must, make sure they are rated appropriately for the devices connected to them."
+    },
+    {
+      "q": "Can I do my own electrical work?",
+      "a": "It is not only dangerous, it can even be illegal if you do not have a permit. Shoddy electrical repairs can lead to fires, electrocution and device failure, so it is not worth the risk."
+    },
+    {
+      "q": "When should you have an electrical safety check?",
+      "a": "A safety check ensures that your property is safe after years of potential neglect. It should be performed every five years. You should also request one if you are moving into a home that is over 25 years old. The process tests the safety of your circuits and identifies overloading."
+    },
+    {
+      "q": "Which problems require an emergency electrician?",
+      "a": "Any time your safety or comfort has been seriously compromised. A power outage inside the home while your neighbors have power, an overheating or smoking outlet, sparks from an outlet or light switch, a broken breaker, a buzzing or overheated panel, damaged or exposed wiring, or a repair needed to keep medical equipment working."
+    }
+  ],
+  "serviceArea": [
+    "Spring",
+    "The Woodlands",
+    "Houston",
+    "Atascocita",
+    "Bellaire",
+    "Bunker Hill",
+    "Champion Forest",
+    "Cinco Ranch",
+    "Clear Lake",
+    "College Station",
+    "Conroe",
+    "Cypress",
+    "Deer Park",
+    "Friendswood",
+    "Humble",
+    "Hunters Creek Village",
+    "Jersey Village",
+    "Katy",
+    "Kingwood",
+    "LaPorte",
+    "Magnolia",
+    "Memorial",
+    "Missouri City",
+    "Montgomery",
+    "New Caney",
+    "Oak Ridge North",
+    "Panorama Village",
+    "Pasadena",
+    "Patton Village",
+    "Pearland",
+    "Pinehurst",
+    "Porter Heights",
+    "Rice Village",
+    "Richmond",
+    "River Oaks",
+    "Roman Forest",
+    "Rosenberg",
+    "Shenandoah",
+    "Splendora",
+    "Spring Branch",
+    "Stafford",
+    "Stagecoach",
+    "Sugar Land",
+    "Tomball",
+    "West University Place",
+    "Willis",
+    "Woodbranch",
+    "Woodloch"
+  ],
+  "facts": [
+    {
+      "heading": "License",
+      "items": [
+        "TX State Electrical Contractor's License #31569",
+        "Every electrician on the team is licensed, insured and bonded",
+        "Licensed, certified and insured electrical masters on the team"
+      ]
+    },
+    {
+      "heading": "Guarantee and warranty",
+      "items": [
+        "100% satisfaction guarantee on all our services",
+        "Lifetime workmanship warranty"
+      ]
+    },
+    {
+      "heading": "Award",
+      "text": "Houston's Best Gold Winner, 2025."
+    },
+    {
+      "heading": "Current offers",
+      "items": [
+        "$25 off any service",
+        "Whole house surge protector deal, $395",
+        "Free panel inspection with a $200 purchase",
+        "Offers expire 11/03/26, cannot be combined with any other offer, and must be presented at the time of service"
+      ]
+    },
+    {
+      "heading": "Brands we service and install",
+      "items": [
+        "Briggs & Stratton",
+        "Square D",
+        "Eaton",
+        "Generators from Briggs & Stratton, Honda, Cummins and more"
+      ]
+    },
+    {
+      "heading": "Payment",
+      "text": "All major credit cards accepted, and a free estimate before the work."
+    },
+    {
+      "heading": "Counties served",
+      "text": "Harris County, Fort Bend County, Montgomery County and Brazos County, Texas. If you do not see your county or area listed, give us a call and we will tell you whether we serve your community."
+    },
+    {
+      "heading": "What to expect",
+      "items": [
+        "Skilled, licensed electricians",
+        "Top-quality work at fair, upfront prices",
+        "Complete courtesy and respect, and technicians who clean up after themselves",
+        "Guaranteed on-time service",
+        "Fully equipped service vehicles",
+        "Same-day service for routine service calls",
+        "24-hour emergency service, and after-hours service",
+        "A 100% satisfaction guarantee on all our services",
+        "Exclusive specials, discounts and coupons",
+        "Locally owned and operated"
+      ]
+    },
+    {
+      "heading": "Code",
+      "items": [
+        "Texas electrical code requires arc-fault circuit interrupter breakers",
+        "The National Electrical Code is updated every three years, and we suggest scheduling an inspection to coincide with each update"
+      ]
+    },
+    {
+      "heading": "Common code corrections after an inspection",
+      "items": [
+        "Repairing or replacing loose, faulty or incorrect wiring",
+        "Updating appliance circuits",
+        "Updating underground wiring",
+        "Replacing faulty circuit panels",
+        "Installing surge protectors",
+        "Anchoring cables",
+        "Adjusting electrical box height"
+      ]
+    },
+    {
+      "heading": "Dallas-Fort Worth area",
+      "text": "We also serve the Dallas-Fort Worth area from our Irving office: Plano, Arlington, Irving, Lewisville, Garland, Allen, Richardson, Grapevine, Carrollton, Mesquite, Mansfield, Midlothian and Cedar Hill."
+    },
+    {
+      "heading": "Financing",
+      "text": "Financing is available on your electrical work, with same-day approval."
+    },
+    {
+      "heading": "Offices",
+      "items": [
+        "504 Spring Hill Dr, Suite 410, Spring, TX 77386",
+        "5000 Riverside Dr., Building 6, Suite 100E-127, Irving, TX 75039"
+      ]
+    },
+    {
+      "heading": "Follow us",
+      "items": [
+        "Facebook: /AaronsElectricalService",
+        "Instagram: @aaronselectricalservice",
+        "X: @ElectricByAaron",
+        "YouTube: @AaronsElectricalService",
+        "Yelp: Aaron's Electrical Service, Spring"
+      ]
+    },
+    {
+      "heading": "Hiring",
+      "text": "We are now hiring. Call us or leave a form."
+    }
+  ]
+}
