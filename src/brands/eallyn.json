@@ -1,0 +1,180 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "E. Allyn LLC",
+  "shortName": "E. Allyn",
+  "tagline": "Professional tax preparation and IRS support",
+  "phone": "(832) 422-5455",
+  "email": "jessica.allyn@eallyn.com",
+  "address": "11727 Diamond Ct",
+  "town": "Mont Belvieu",
+  "state": "TX",
+  "zip": "77535",
+  "license": "Enrolled Agent licensed to practice before the Internal Revenue Service, and authorized by the IRS to e-file federal and applicable state returns.",
+  "hours": [["Mon – Sun", "8 AM – 6 PM"]],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "To begin, I recommend scheduling a brief call so I can understand your situation and outline next steps. The introductory call is free."
+  },
+  "brand": {
+    "primary": "#285c41",
+    "primaryDeep": "#1b4230",
+    "accent": "#7d6b3c",
+    "ink": "#1b2420",
+    "muted": "#57615b",
+    "surface": "#f7f6f1",
+    "cream": "#ebe9dd",
+    "line": "#e1dfd1",
+    "heading": "'Montserrat', Georgia, serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/eallyn/logo.webp",
+    "logoWidth": 60
+  },
+  "hero": {
+    "eyebrow": "Enrolled Agent in Mont Belvieu",
+    "title": "Accurate filings, clear guidance, and responsive support.",
+    "lead": "I help individuals and business owners understand their tax decisions, including entity classification, so they can file accurately, stay compliant, and avoid costly mistakes.",
+    "image": "/brands/eallyn/hero",
+    "imageAlt": "Tax forms, a pen and a coffee mug on a desk",
+    "points": [
+      "Licensed to practice before the IRS",
+      "Remote by video or phone, or in person",
+      "A reply within 1 business day"
+    ]
+  },
+  "overview": {
+    "title": "Tax preparation for individuals, business owners and organizations.",
+    "text": "Pick a service to see what it covers, or schedule a brief call and we will work out what you need."
+  },
+  "audiences": { "individuals": "Individuals", "businesses": "Businesses & Organizations" },
+  "services": [
+    {
+      "slug": "individual-tax-filing",
+      "title": "Individual Tax Filing",
+      "audience": "individuals",
+      "icon": "file-text",
+      "summary": "Form 1040, Schedule C and Schedule E.",
+      "text": "Form 1040 preparation, including Schedule C for self-employment and Schedule E for rental real estate, along with prior-year filings and corrections.",
+      "lead": "Accurate and thorough preparation of 1040 returns, whether you are filing for the current year or catching up on prior years.",
+      "image": "/brands/eallyn/individual",
+      "imageAlt": "Stacks of paper documents and file folders",
+      "covers": [
+        { "title": "Form 1040 preparation", "text": "Including Schedule C for self-employment income and Schedule E for rental real estate." },
+        { "title": "Prior-year filings and corrections", "text": "Returns from earlier years, and resolving outstanding tax obligations." },
+        { "title": "Estimated tax calculations", "text": "Federal and state estimated tax calculations, when they are required." },
+        { "title": "More complex returns", "text": "K-1s, self-employment income and other scenarios that take more than one form." },
+        { "title": "Deductions and credits", "text": "Deductions and credits maximized while the return stays fully compliant." }
+      ],
+      "questions": [
+        { "q": "What are the tax filing deadlines?", "a": "For most individuals, the federal tax filing deadline is April 15. Extensions may be available depending on your situation." },
+        { "q": "Can you help if I am close to or past a deadline?", "a": "Yes. If you are approaching a deadline or are already late, options may still be available. That can include extensions, late filings or corrective filings depending on the circumstances." },
+        { "q": "Do I need to have all my documents ready before scheduling?", "a": "No. You do not need to have everything prepared before our initial call. The purpose of the call is to understand your situation and outline next steps." }
+      ]
+    },
+    {
+      "slug": "business-entity-filing",
+      "title": "Business & Entity Filing",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Partnership, S corp and C corp returns.",
+      "text": "Partnership returns on Form 1065, S corporation returns on Form 1120-S and C corporation returns on Form 1120, with guidance on S corporation elections.",
+      "lead": "Returns for partnerships, S corporations and C corporations, with guidance on the entity structure and election decisions behind them.",
+      "image": "/brands/eallyn/business",
+      "imageAlt": "Rows of ring binders on office shelves",
+      "covers": [
+        { "title": "Partnership returns", "text": "Form 1065 for partnerships and multi-member LLCs." },
+        { "title": "S corporation returns", "text": "Form 1120-S, with guidance on the S corporation election itself." },
+        { "title": "C corporation returns", "text": "Form 1120 for C corporations." },
+        { "title": "Entity structure decisions", "text": "How sole proprietor, LLC, S corporation or C corporation treatment affects filing requirements, self-employment taxes and payroll considerations." }
+      ],
+      "questions": [
+        { "q": "When are business returns due?", "a": "Partnership and S corporation returns are generally due March 15. Extensions may be available depending on your situation." },
+        { "q": "Can you file an extension for me?", "a": "Extensions may be available if sufficient information is provided before the deadline. We can discuss it during our initial call." }
+      ]
+    },
+    {
+      "slug": "nonprofit-tax-filing",
+      "title": "Nonprofit Tax Filing",
+      "audience": "businesses",
+      "icon": "landmark",
+      "summary": "Form 990 for tax-exempt organizations.",
+      "text": "Form 990 filings for tax-exempt organizations, prepared from the records your organization provides.",
+      "lead": "Form 990 filings for tax-exempt organizations. Schedule a brief call and we will work through what your organization needs to file and by when.",
+      "image": "/brands/eallyn/nonprofit",
+      "imageAlt": "A row of filing cabinet drawers"
+    },
+    {
+      "slug": "tax-advisory",
+      "title": "Tax Advisory & Planning",
+      "audience": "businesses",
+      "icon": "scale",
+      "summary": "Limited, tax-focused advisory support.",
+      "text": "Limited advisory support tied to tax preparation and compliance, so you are not just filing a return but understanding the decisions behind it.",
+      "lead": "Advisory services are provided on a limited, tax-focused basis and are intended to support tax preparation and compliance. I do not provide bookkeeping services, audits or financial statement reviews.",
+      "image": "/brands/eallyn/advisory",
+      "imageAlt": "A notebook and pen on a desk",
+      "covers": [
+        { "title": "A high-level read of your records", "text": "Client-provided summaries or bookkeeping reports reviewed at a high level for tax relevance." },
+        { "title": "Income and deductions", "text": "Major income categories and commonly applicable deductions identified." },
+        { "title": "Startup costs", "text": "Startup costs, and capitalization against expense considerations." },
+        { "title": "Entity structure", "text": "Sole proprietor or LLC, S corporation and C corporation treatment from a tax perspective, including filing requirements, self-employment taxes and payroll." },
+        { "title": "Items to clarify", "text": "Anything flagged that may need further documentation for tax purposes." }
+      ],
+      "questions": [
+        { "q": "Does advisory work replace legal or financial planning advice?", "a": "No. Advisory services are not ongoing monitoring and do not replace legal, accounting or financial planning advice." },
+        { "q": "How is advisory work priced?", "a": "Any advisory work outside the scope of tax preparation is discussed in advance and quoted separately." }
+      ]
+    }
+  ],
+  "process": {
+    "title": "What to expect",
+    "text": "Timelines can vary based on complexity, document completeness and time of year.",
+    "steps": [
+      { "title": "Schedule a brief call", "text": "A short conversation to understand your situation, timeline and filing needs. The introductory call is free, and you do not need to have all documents ready at this stage." },
+      { "title": "Fee quote and engagement", "text": "A fee quote and an engagement letter setting out the scope of work. Work begins once the engagement is signed and the initial installment is in." },
+      { "title": "Secure document upload", "text": "You receive access to encrypted ShareFile to upload your tax documents. Documents should not be emailed." },
+      { "title": "Preparation and review", "text": "I prepare your return from the information provided, and follow up if anything needs clarification. Requests for additional documents may extend the timeline, depending on the complexity of the return and how quickly they come back." },
+      { "title": "Final payment and filing", "text": "The remaining balance is due before e-filing. Once it is received the return is filed and a copy is provided in the client portal." }
+    ]
+  },
+  "affiliations": {
+    "title": "Credentials and tools",
+    "items": ["Enrolled Agent (IRS)", "IRS-authorized e-file provider", "ShareFile secure client portal", "Google Meet appointments"]
+  },
+  "about": {
+    "title": "An Enrolled Agent who works on tax and nothing else.",
+    "text": [
+      "I'm Jessica Allyn, an Enrolled Agent licensed to practice before the Internal Revenue Service. An Enrolled Agent is a federally authorized tax professional permitted to prepare tax returns and represent taxpayers before the IRS, and Enrolled Agents specialize exclusively in taxation, compliance and IRS matters.",
+      "I graduated from Eastern Connecticut State University and have worked in tax preparation and compliance since 2019, assisting individuals and business owners with accurate filings, prior-year returns and more complex tax situations.",
+      "I specialize in individual and small business tax preparation, with a focus on helping clients understand how income structure, entity classification and tax elections affect their filings and ongoing compliance obligations. My goal is to provide thorough, accurate returns while remaining available to answer questions throughout the process, from engagement through filing."
+    ],
+    "image": "/brands/eallyn/about",
+    "imageAlt": "A planner, budget sheets and a pen on a desk",
+    "values": [
+      { "title": "Licensed before the IRS", "text": "A federally authorized tax professional, permitted to prepare returns and represent taxpayers before the IRS." },
+      { "title": "Tax, exclusively", "text": "Enrolled Agents work on taxation, compliance and IRS matters and nothing else." },
+      { "title": "Clear explanations", "text": "Personalized support and plain explanations throughout, so the process is smooth rather than stressful." }
+    ]
+  },
+  "faqs": [
+    { "q": "Do I need to have all my documents ready before scheduling?", "a": "No. You do not need to have everything prepared before our initial call. The purpose of the call is to understand your situation and outline next steps." },
+    { "q": "When will I receive a pricing quote?", "a": "After our initial call, or after reviewing your pricing form responses, I will provide a non-binding fee estimate by the next business day." },
+    { "q": "How are fees set?", "a": "Tax preparation fees vary based on the type of return and overall complexity. Because every tax situation is different, I prefer to provide a personalized quote after reviewing your information, and all fees are quoted and agreed upon prior to preparation." },
+    { "q": "How do appointments work?", "a": "Appointments are held via Google Meet, and a meeting link is sent automatically after scheduling. I recommend joining from a computer or laptop. If you prefer a phone call, leave a note when scheduling and I will be happy to accommodate." },
+    { "q": "How do I submit my tax documents?", "a": "For security reasons, tax documents should not be emailed or uploaded prior to engagement. Once we begin working together, I will provide access to encrypted ShareFile for secure document upload." },
+    { "q": "Can you file an extension for me?", "a": "Extensions may be available if sufficient information is provided before the deadline. This can be discussed during our initial call." }
+  ],
+  "facts": [
+    { "heading": "Appointments", "text": "Available remotely by video or phone, as well as in person. I travel within 30 miles of the Houston area." },
+    { "heading": "Response time", "text": "I respond within 1 business day after you book an appointment." },
+    { "heading": "Experience", "text": "Working in tax preparation and compliance since 2019, on current-year and prior-year filings across a wide range of tax situations." },
+    { "heading": "How fees work", "text": "Fees vary by the type of return and overall complexity. A personalized quote follows a review of your information, and all fees are quoted and agreed before preparation begins." },
+    { "heading": "Document security", "text": "Tax documents are uploaded through encrypted ShareFile once we are engaged, never by email." },
+    { "heading": "Getting a quote", "text": "A non-binding fee estimate comes either from the introductory call or from the pricing estimate form, whichever suits you. The form lets me assess scope, complexity and pricing before any work begins." },
+    { "heading": "Sending a message", "text": "The message form is for general questions only. Please do not include tax documents or sensitive personal information in it, and for anything time-sensitive schedule a call instead." },
+    { "heading": "Through the client portal", "text": "Your portal is created once the scheduling session is complete and we have agreed on a fee. ShareFile uses encrypted storage, and client access is at eallyn.sharefile.com.", "items": ["Upload tax documents securely", "Review your completed tax return prior to filing", "Sign engagement letters and tax forms electronically", "Download copies of your finalized return"] },
+    { "heading": "What is not offered", "text": "Bookkeeping services, audits and financial statement reviews are not part of the practice." }
+  ]
+}

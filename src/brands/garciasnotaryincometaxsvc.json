@@ -1,0 +1,440 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Garcia's Notary & Income Tax Services",
+  "shortName": "Garcia's Notary",
+  "tagline": "Your Tax Journey, Our Expertise: Where Excellence Meets Community Care.",
+  "phone": "(832) 328-8799",
+  "email": "agarcia@garciasnotary.com",
+  "address": "2809 Strawberry Rd",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77502",
+  "since": 2005,
+  "rating": 4.8,
+  "reviewCount": 105,
+  "hours": [
+    [
+      "Mon – Fri",
+      "10 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Request an Appointment",
+    "text": "We are here to assist you with preparing and filing your income tax return. Call the office on Strawberry Road or request an appointment and we will take it from there."
+  },
+  "brand": {
+    "primary": "#1c2f5f",
+    "primaryDeep": "#12203f",
+    "accent": "#6c6d70",
+    "ink": "#141b26",
+    "muted": "#5a6472",
+    "surface": "#f4f6f9",
+    "cream": "#e7ebf1",
+    "line": "#dde3ec",
+    "heading": "'Montserrat', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/garciasnotaryincometaxsvc/logo.webp",
+    "logoWidth": 170
+  },
+  "hero": {
+    "eyebrow": "Notary, income tax and title services in Pasadena",
+    "title": "Our pledge is to offer you unparalleled service.",
+    "lead": "Upon calling, you'll experience the individualized care you desire. You're not just a mere \"account number,\" but a cherished customer – a familiar presence, a valued friend, and a neighbor. Count on us to stand by your side when you require assistance the most.",
+    "image": "/brands/garciasnotaryincometaxsvc/hero",
+    "imageAlt": "A pen resting on a printed tax form beside a mileage log book",
+    "points": [
+      "Tax preparation since 2005",
+      "Notary service available 24/7",
+      "All title work done locally"
+    ]
+  },
+  "overview": {
+    "title": "One office for your taxes, your notarizations and your title work.",
+    "text": "Pick a service to see what it covers, or call and talk it through with our team."
+  },
+  "services": [
+    {
+      "slug": "tax-preparation",
+      "title": "Tax Preparation",
+      "icon": "receipt",
+      "summary": "Corporate, partnership and individual returns.",
+      "text": "Amid intricate new tax laws, we commit to diligently scrutinizing and securing every credit and deduction you're entitled to on your corporate, partnership, and individual income tax returns.",
+      "lead": "Navigating your own income tax return can often lead to more questions than answers. Recent data from the US Government's General Accounting Office revealed that the majority of taxpayers (77% out of 71 million) found value in utilizing a professional tax preparer.",
+      "covers": [
+        {
+          "title": "Complex returns made plain",
+          "text": "Given the intricate nature of today's tax laws, even a seemingly straightforward return can become perplexing. Unintentionally missing out on entitled deductions and credits is all too common."
+        },
+        {
+          "title": "More than software",
+          "text": "Even if you rely on software, nothing substitutes the guidance of a seasoned tax expert."
+        },
+        {
+          "title": "How you pay our fee",
+          "text": "At Garcia's Notary and Income Tax Service, you're in control of how you cover your tax preparation fees as you engage our tax services. Our range of choices caters to all preferences."
+        },
+        {
+          "title": "Electronic filing",
+          "text": "Opt for electronic filing to expedite your refund beyond traditional paper filing. Choose E-file and ask about our Electronic Refund Check for the quickest possible refund route."
+        },
+        {
+          "title": "IRS Direct Deposit",
+          "text": "For those seeking a more economical option, and with a bit of patience, consider IRS Direct Deposit, potentially delivering your refund in just 10 to 21 days, right to your bank account."
+        }
+      ]
+    },
+    {
+      "slug": "notary-services",
+      "title": "Notary Services",
+      "icon": "stamp",
+      "summary": "Notarial acts, available around the clock.",
+      "text": "Embrace the convenience of 24/7 access to our expert notary services, catering to diverse domains including adoption, finance, legal intricacies, real estate transactions, and an array of other specialized areas.",
+      "lead": "When it comes to your document needs, our notaries bring expertise that spans a wide spectrum, covering everything from the intricacies of real estate deeds to the precise language of contracts, and from the criticality of loan documents to the solemnity of affidavits. Regardless of the complexity, our notaries are equipped to handle it all, ensuring the professional finalization of your important paperwork.",
+      "covers": [
+        {
+          "title": "Available 24/7",
+          "text": "Our dedication is resolute: to offer you a service that is not only professional and accurate but also characterized by compassion and promptness. We stand by this commitment 24/7, ready to assist whenever you require our expertise."
+        },
+        {
+          "title": "Impartial witnesses",
+          "text": "Our notaries uphold the legal boundaries set for their role. They serve as impartial witnesses during the signing of documents, refraining from the unauthorized practice of law."
+        },
+        {
+          "title": "Legal and real estate papers",
+          "text": "Real estate documents, loan documents, title transfers, subpoenas, affidavits, statements, depositions and discovery documents."
+        },
+        {
+          "title": "Medical and family matters",
+          "text": "Medical affidavits, medical records, wills, codicils, hospital notarizations, adoption documents, parental rights affidavits, guardianships and school documents."
+        },
+        {
+          "title": "Business and insurance",
+          "text": "Corporate affidavits, insurance documents, claims, releases and billing records."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Can your notary give me legal advice about my document?",
+          "a": "No. Our notaries serve as impartial witnesses during the signing of documents and refrain from the unauthorized practice of law. That keeps their position neutral and protects the legal validity of your documents."
+        }
+      ]
+    },
+    {
+      "slug": "title-transfer",
+      "title": "Title Transfer",
+      "icon": "car",
+      "summary": "Auto title transfers, registrations and stickers.",
+      "text": "Discover your comprehensive destination for all things auto title-related. Whether it's transfers, lost titles, bonded titles, or stickers, our services have you fully covered – even extending to boats, trailers, and beyond.",
+      "lead": "In the tapestry of life, time is an invaluable thread. At Garcia's Notary and Income Tax, we understand this urgency. Our mission is to simplify the labyrinthine world of title and registration processes, providing you both convenience and the reassurance of meticulous precision.",
+      "covers": [
+        {
+          "title": "All title work done locally",
+          "text": "Renowned for our dependability and precision, we stand out by performing all title services locally, eschewing outsourcing for a direct connection to each transaction's intricacies."
+        },
+        {
+          "title": "Every kind of vehicle",
+          "text": "Auto title transfers and registrations for automobiles, motorcycles, trucks, trailers, boats, jet skis and vessels."
+        },
+        {
+          "title": "Salvage and bonded titles",
+          "text": "Salvage titles and bonded titles, alongside lost titles and registration stickers."
+        },
+        {
+          "title": "In-house expertise",
+          "text": "With in-house expertise as our guiding compass, we merge tradition and technology. Our meticulous research and attention to detail lay the groundwork for seamless transactions."
+        }
+      ]
+    },
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping",
+      "icon": "calculator",
+      "summary": "Books and payroll for business owners.",
+      "text": "Garcia's Notary and Income Tax Services revitalizes business proprietors by relieving them of the bookkeeping load, guaranteeing precise tax return submissions.",
+      "lead": "Take the weight off your shoulders by allowing us to expertly handle your internal bookkeeping and payroll needs. Our services encompass a wide spectrum, including critical tasks such as preparing detailed general ledger and trial balance sheets, ensuring the accuracy and organization of your financial records.",
+      "covers": [
+        {
+          "title": "Ledgers and reconciliation",
+          "text": "General ledger maintenance, trial balance sheet preparation, bank account reconciliation, and accounts receivable and accounts payable reconciliation and reporting."
+        },
+        {
+          "title": "Sales tax",
+          "text": "Sales tax reconciliation and reporting."
+        },
+        {
+          "title": "Payroll",
+          "text": "From processing payments accurately and promptly to navigating the complexities of payroll tax regulations, we ensure that your employees are paid on time and in compliance with all necessary reporting requirements."
+        },
+        {
+          "title": "Payroll tax reporting",
+          "text": "Quarterly payroll tax reports to government agencies and year-end reporting including W-2s and 1099s."
+        }
+      ]
+    },
+    {
+      "slug": "short-term-loans",
+      "title": "Short Term Loans",
+      "icon": "banknote",
+      "summary": "Flexible terms and quick approval.",
+      "text": "With flexible terms and quick approval, these loans provide peace of mind and a practical approach to managing and resolving unexpected financial challenges.",
+      "lead": "Amidst the ever-changing and unpredictable market landscape, obtaining the necessary short-term loans to address emergency expenses or immediate financial needs can prove challenging. Garcia's Notary and Income Tax has been a guiding hand for numerous Americans who require short-term financial assistance.",
+      "covers": [
+        {
+          "title": "When the bill will not wait",
+          "text": "Whether you're facing unexpected auto repairs, medical bills, or simply need to bridge monthly expenses, our short-term loans provide a swift and convenient remedy."
+        },
+        {
+          "title": "Costs outside the budget",
+          "text": "Short-term loans serve as an ideal option for those instances when you require additional funds to manage sudden bills, such as medical expenses or unforeseen costs that fall beyond your regular budget."
+        },
+        {
+          "title": "When other doors are closed",
+          "text": "In circumstances where traditional avenues like banks or assistance from family and friends aren't feasible, short-term loans step in as a viable choice."
+        }
+      ]
+    },
+    {
+      "slug": "refund-options",
+      "title": "Refund Options",
+      "icon": "wallet",
+      "summary": "Several ways to receive your refund.",
+      "text": "When it comes to filing your Federal or State taxes, there are diverse options available for receiving your refund. Including the convenience of covering your tax preparation fees directly from your refund.",
+      "lead": "When it comes to filing your Federal or State taxes, there are diverse options available for receiving your refund, including the convenience of covering your tax preparation fees directly from your refund.",
+      "covers": [
+        {
+          "title": "Refund Transfer",
+          "text": "A Refund Transfer offers convenience without any upfront fees. You can receive your refund by check, direct deposit or debit card. When the IRS or state disburses your refund, typically within 21 days, your fees can be deducted from the refund proceeds. The balance is then disbursed by a check printed in the tax office, deposited into your bank account, or loaded onto your debit card. Additional fees may apply."
+        },
+        {
+          "title": "IRS Paper Check",
+          "text": "Once your return is accepted by the IRS or state, the taxing authority will process and mail your refund check. You can expect it to arrive approximately three to four weeks after your return has been accepted."
+        },
+        {
+          "title": "IRS Direct Deposit",
+          "text": "After the IRS or state accepts your return, your refund will be electronically deposited directly into your bank account. This typically occurs within 21 days of acceptance by the taxing authority."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "title": "Established in 2005, on Strawberry Road in Pasadena.",
+    "text": [
+      "Established in 2005, Garcia's Notary & Income Tax Services embarked on its tax preparation journey. Over the years, we've amassed valuable insights and expertise in the tax preparation realm, further enriched by academic courses and continuous learning.",
+      "Our client base has flourished, catering to numerous individuals. As time progresses, we're expanding our service offerings to better meet our clients' needs, guided by an unwavering commitment to excellence.",
+      "Count on us for unparalleled service. Our approach is personal and attentive, treating you not as an \"account number\" but as a cherished customer – a familiar presence, a valued friend, and a trusted neighbor. When you reach out, we're here to provide steadfast support, ready to assist you in times of need."
+    ],
+    "values": [
+      {
+        "title": "Outstanding customer service",
+        "text": "Our mission is to uphold outstanding customer service, foster exceptional leadership and promote robust teamwork."
+      },
+      {
+        "title": "A client-first policy",
+        "text": "We train and engage seasonal employees under the same client-first policy, the very foundation of our company."
+      },
+      {
+        "title": "Continuous learning",
+        "text": "Expertise in the tax preparation realm built up over the years and enriched by academic courses and continuous learning."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Keiwana McGaw",
+      "role": "Senior Tax Consultant",
+      "bio": "Keiwana McGaw runs the Income Tax Division part of the business. Keiwana is an IRS Certified Licensed Tax Preparer. She is also well versed in new policy and procedures. Keiwana has a dual Bachelors Degree in Biology and Accounting. Keiwana brings the new generation flavor to the family business."
+    },
+    {
+      "name": "Cheryl (Cobb) Williams",
+      "role": "Business Consultant",
+      "bio": "Cheryl Williams brings over 35 years of experience in the financial industry. Cheryl began her career as a secretary. Soon after completing her Bachelors Degree, she landed a job as a Credit Manager with one of the largest southeastern companies. Eventually, Cheryl left and established Cobb's Tax & Financial Services. She is a business owner with a great deal of diverse knowledge and years of experience."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "When is the office open?",
+      "a": "Monday through Friday, 10 AM to 5 PM, at 2809 Strawberry Road in Pasadena. Notary service is available 24/7."
+    },
+    {
+      "q": "How do I book a time?",
+      "a": "Call 832-328-8799 or use the appointment scheduler on the resources page to pick a slot."
+    },
+    {
+      "q": "Can I pay my tax preparation fee out of my refund?",
+      "a": "Yes. A Refund Transfer lets your fees be deducted from the refund proceeds when the IRS or state disburses it, with no upfront fee. Additional fees may apply."
+    },
+    {
+      "q": "How fast will my refund come?",
+      "a": "IRS Direct Deposit typically arrives within 21 days of the taxing authority accepting your return, and a mailed paper check takes roughly three to four weeks. E-file with an Electronic Refund Check is the quickest route."
+    },
+    {
+      "q": "Do you handle more than cars for title work?",
+      "a": "Yes. Automobiles, motorcycles, trucks, trailers, boats, jet skis and vessels, including salvage and bonded titles."
+    },
+    {
+      "q": "How do I send you a fax?",
+      "a": "Our fax number is 832-548-1606."
+    },
+    {
+      "q": "Will you text me about my appointment?",
+      "a": "Only if you opt in. We use text messages for appointment reminders, service updates, document status notifications, billing notices and customer support. Reply STOP to any message to opt out, or HELP for assistance."
+    },
+    {
+      "q": "Who works on my return?",
+      "a": "Keiwana McGaw runs the income tax division and is an IRS Certified Licensed Tax Preparer. Cheryl (Cobb) Williams is our business consultant, with over 35 years in the financial industry."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Request an appointment",
+      "text": "Pick a time with us on our own appointment schedule.",
+      "href": "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0Y04tNOvxBaevs50Sygd6YOWXCZaNxiinwxatYDHgQyyIvzkfRhh8f9GTyvn26natNpnvQHpxn"
+    },
+    {
+      "title": "Where's My Refund?",
+      "text": "Track your federal refund with the IRS.",
+      "href": "https://sa.www4.irs.gov/irfof/lang/en/irfofgetstatus.jsp"
+    },
+    {
+      "title": "Where's My Amended Return?",
+      "text": "Track an amended return with the IRS.",
+      "href": "https://sa.www4.irs.gov/wmar/login"
+    },
+    {
+      "title": "IRS Withholding Calculator",
+      "text": "Check whether the right amount is coming out of your paycheck.",
+      "href": "https://www.irs.gov/individuals/tax-withholding-estimator"
+    },
+    {
+      "title": "IRS Forms and Publications",
+      "text": "Current forms, instructions and publications.",
+      "href": "https://www.irs.gov/forms-instructions"
+    },
+    {
+      "title": "IRS Prior Year Forms",
+      "text": "Forms and publications from earlier tax years.",
+      "href": "https://apps.irs.gov/app/picklist/list/priorFormPublication.html"
+    },
+    {
+      "title": "IRS Telephone Assistance",
+      "text": "Phone numbers for the IRS, by the kind of question you have.",
+      "href": "https://www.irs.gov/help/telephone-assistance"
+    },
+    {
+      "title": "Tax Law Changes",
+      "text": "IRS news and events, including what changed this year.",
+      "href": "https://www.irs.gov/newsroom"
+    },
+    {
+      "title": "Pay Federal Taxes",
+      "text": "Pay a federal tax bill by card or bank account.",
+      "href": "https://www.pay1040.com/?aid=220049"
+    },
+    {
+      "title": "Texas Comptroller of Public Accounts",
+      "text": "State tax accounts, sales tax filing and payments.",
+      "href": "https://comptroller.texas.gov"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Office Details",
+      "items": [
+        "2809 Strawberry Road, Pasadena, TX 77502",
+        "Phone 832-328-8799",
+        "Fax 832-548-1606",
+        "agarcia@garciasnotary.com",
+        "Open Monday to Friday, 10 AM to 5 PM",
+        "Notary service available 24/7"
+      ]
+    },
+    {
+      "heading": "Notary Documents We Handle",
+      "items": [
+        "All types of notarial acts performed",
+        "Medical affidavits, wills and codicils",
+        "Legal affidavits and corporate affidavits",
+        "Personal notarizations",
+        "Loan documents and title transfers",
+        "Wills and hospital notarizations",
+        "Subpoenas, affidavits and statements",
+        "Depositions and discovery documents",
+        "Insurance documents, claims and releases",
+        "Billing records and medical records",
+        "School documents and guardianships",
+        "Adoption documents and parental rights affidavits",
+        "Real estate documents"
+      ]
+    },
+    {
+      "heading": "Bookkeeping Services We Perform",
+      "items": [
+        "General ledger maintenance",
+        "Accounts receivable reconciliation and reporting",
+        "Accounts payable reconciliation and reporting",
+        "Bank account reconciliation",
+        "Trial balance sheet preparation",
+        "Sales tax reconciliation and reporting",
+        "Payroll processing",
+        "Quarterly payroll tax report preparation to government agencies",
+        "Year-end payroll tax report preparation including W-2s and 1099s"
+      ]
+    },
+    {
+      "heading": "Vehicles We Title and Register",
+      "items": [
+        "Automobiles, motorcycles and trucks",
+        "Trailers",
+        "Boats, jet skis and vessels",
+        "Salvage titles",
+        "Bonded titles",
+        "Lost titles and registration stickers"
+      ]
+    },
+    {
+      "heading": "Worksheets You Can Download",
+      "text": "Our resources page carries an Auto and Mileage Worksheet, an Information Acknowledgment and our Privacy Policy, plus occupational deduction worksheets for attorneys, business professionals, clergy and ministry, computer specialists, day care providers, entertainers, executives, fire fighters, law and security enforcement, medical professionals, military and armed forces, mortgage brokers, outside sales, overnight drivers, peace officers, plumbers and carpenters, real estate professionals, realtors, sales representatives, teachers and educators, telecommunications and truck drivers."
+    },
+    {
+      "heading": "Upload Your Documents From Your Phone",
+      "text": "We use the MyTaxOffice mobile app, on Google Play and the App Store, so you can start your return, upload personal information and submit W-2s and documents securely in minutes. Ask the office for our firm passcode."
+    },
+    {
+      "heading": "Find Us On Facebook",
+      "text": "We post at facebook.com/garciasnotary."
+    },
+    {
+      "heading": "Who We Serve",
+      "text": "The Garcia's advantage has been experienced by countless Texans and by individuals nationwide. All title services are performed locally rather than outsourced."
+    },
+    {
+      "heading": "Text Message Reminders",
+      "text": "Opt in and we will text you appointment reminders, service updates, document status notifications, billing notices and customer support messages, and nothing else. We do not sell, rent or share your mobile number with third parties or affiliates for marketing. Reply STOP to any message to opt out, or HELP for assistance. Consent and message records are kept only as long as compliance requires, then securely deleted."
+    },
+    {
+      "heading": "How We Handle Your Information",
+      "items": [
+        "We collect names, addresses, phone numbers and email addresses, plus what is needed to provide our notary and tax preparation services",
+        "Information is stored securely, protected by encryption, and reachable only by the employees and vendors who need it to deliver the service",
+        "We share it with third-party vendors only as far as completing your transaction requires, and you can opt out of being contacted at any time",
+        "You can ask us to access, correct, delete or port your information, restrict its processing, or withdraw your consent",
+        "Call 832-328-8799 or email agarcia@garciasnotary.com to correct or delete anything we hold"
+      ]
+    },
+    {
+      "heading": "State Tax Links On Our Resources Page",
+      "text": "Alongside the IRS links, our resources page carries a direct link to the tax agency of all fifty states, the District of Columbia and New York City, including the Texas Comptroller of Public Accounts."
+    }
+  ]
+}
