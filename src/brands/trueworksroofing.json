@@ -1,0 +1,611 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "TrueWorks Roofing",
+  "shortName": "TrueWorks",
+  "phone": "(713) 903-7663",
+  "email": "hello@trueworksroofing.com",
+  "address": "8566 Katy Fwy Ste 122",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77024",
+  "rating": 5.0,
+  "reviewCount": 288,
+  "since": 2020,
+  "license": "RCAT licensed, Fortified certified, A+ rated with the BBB",
+  "hours": [["Monday – Sunday", "Open 24 hours"]],
+  "brand": {
+    "primary": "#6DBE47",
+    "primaryDeep": "#3C7A26",
+    "accent": "#8FD95C",
+    "ink": "#1F2124",
+    "surface": "#F2F5EF",
+    "heading": "'Barlow Condensed', 'Arial Narrow', sans-serif",
+    "body": "'Barlow', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap",
+    "logo": "/brands/trueworksroofing/logo.webp",
+    "logoWidth": 190
+  },
+  "hero": {
+    "eyebrow": "Houston roofing contractor",
+    "title": "Build your",
+    "titleAccent": "dream roof.",
+    "lead": "Residential and commercial roofing across Houston and the surrounding areas. Book a free roof assessment and we scan the roof with a drone and AI, grade it on our own grading system, and send you a live photo link so you can see what we see.",
+    "image": "/brands/trueworksroofing/hero",
+    "imageAlt": "A Houston home with a dark standing seam metal roof over stone and stucco walls"
+  },
+  "promises": [
+    "Free roof assessment",
+    "Drone and AI roof inspection",
+    "Pay only when you are 100% satisfied",
+    "After Care inspections every three years"
+  ],
+  "services": [
+    {
+      "slug": "roof-repair",
+      "group": "residential",
+      "title": "Roof Repair",
+      "short": "A full repair division for leaks, missing shingles and flashing.",
+      "text": "TrueWorks runs a dedicated Rapid Repair Division, trained to handle a small roof problem with the same precision as a full install.",
+      "image": "/brands/trueworksroofing/repair",
+      "imageAlt": "A TrueWorks roofer working on a shingle roof above a lake",
+      "body": [
+        "Even small leaks can lead to big problems, so the repair division is staffed and trained the same way the install crews are. Whether it is a drip in the ceiling or signs of moisture in the attic, the repair team shows up with the tools, the training and the technology to fix it right the first time.",
+        "We do not patch, we solve. From missing shingles to flashing failures, every repair is backed by our own inspection process and overseen by an in-house project lead. Most issues are resolved in a single visit."
+      ],
+      "points": [
+        "Leaks and ceiling drips",
+        "Missing and lifted shingles",
+        "Flashing failures",
+        "Attic moisture",
+        "Most repairs resolved in a single visit"
+      ],
+      "faqs": [
+        {
+          "q": "How do I know if I just need a repair or a full replacement?",
+          "a": "Age is the first thing to look at, since most roofs run 20 to 30 years. After that it is the condition of the shingles, whether they are curling, buckling or missing, how many leaks there are and how much water damage, how much granule loss there is on an asphalt roof, whether the roof sags, whether moss or algae is growing, and whether your energy bills have jumped. An inspection settles it, and ours is free."
+        },
+        {
+          "q": "How long will the work take?",
+          "a": "We finish 95% of our roofing jobs within a single day. It is rare for one to run to a second day."
+        }
+      ]
+    },
+    {
+      "slug": "roof-replacement",
+      "group": "residential",
+      "title": "Roof Replacement",
+      "short": "A new roof, with the quote, the colour and the warranty settled first.",
+      "text": "We make buying a roof straightforward: get a quote, choose your products, visualise the roof and get approved. Then our own crew installs it.",
+      "image": "/brands/trueworksroofing/replacement",
+      "imageAlt": "A roof stripped to new decking with a new pipe vent set in place",
+      "materials": true,
+      "body": [
+        "Every replacement starts with a free roof assessment. Our team diagnoses the ventilation in your attic and grades the roof using our own grading system, so the quote is built on what is actually up there rather than an aerial measurement.",
+        "On install day your project is overseen by a dedicated on-site project manager. Our crews fabricate custom metal flashings on site and use ring shank nails throughout. Payment is only due after an immaculate cleanup and once you are 100% satisfied."
+      ],
+      "points": [
+        "Free roof assessment and attic ventilation diagnosis",
+        "Roof graded on our own grading system",
+        "TrueArmor Protection System over your home and landscaping",
+        "Custom metal flashings fabricated on site",
+        "Ring shank nails throughout",
+        "A dedicated on-site project manager",
+        "Payment due only after cleanup and your sign-off"
+      ],
+      "faqs": [
+        {
+          "q": "What types of roofing materials do you offer?",
+          "a": "Metal, tile, slate, composite and fortified roofing systems, for both residential and commercial buildings. We partner with premium brands to keep the options long-lasting and good-looking."
+        },
+        {
+          "q": "What happens after the roof is on?",
+          "a": "Our After Care Program carries complimentary roof inspections and routine maintenance every three years for the life of your warranty."
+        },
+        {
+          "q": "Can I finance a replacement roof?",
+          "a": "Yes. Financing comes through us directly, with an interest-free option over 12 months and a reduced-interest option over as long as 120 months."
+        },
+        {
+          "q": "How long does a roof last?",
+          "a": "It depends on the material. Asphalt shingles run 20 to 30 years, metal roofs 40 to 70 years, tile roofs 50 years and up, and flat roof systems 15 to 25 years. Installation quality and the weather move all of those figures."
+        },
+        {
+          "q": "Aren't all roofing warranties pretty much the same?",
+          "a": "No. The manufacturer sets the terms, and coverage and length vary a lot between them, so it is worth understanding what a specific warranty covers before you choose the product."
+        }
+      ]
+    },
+    {
+      "slug": "roof-installation",
+      "group": "residential",
+      "title": "Roof Installation",
+      "short": "Installed by our own crews, with a project manager on site.",
+      "text": "Our installation crews fabricate custom metal flashings on site and install every detail of the roof by hand, under the TrueArmor Protection System.",
+      "image": "/brands/trueworksroofing/installation",
+      "imageAlt": "Two TrueWorks crew members laying synthetic underlayment across a roof",
+      "body": [
+        "When it is time for the install, we protect your home and landscaping with our proprietary TrueArmor Protection System before anything comes off the roof. You can watch the crew fabricate the metal flashings on site rather than fit something off the shelf.",
+        "Every project is overseen by a dedicated on-site project manager, so there is one person answering for communication and for the result. We use only ring shank nails, and the job is not finished until the cleanup is immaculate."
+      ],
+      "points": [
+        "TrueArmor Protection System on the house and landscaping",
+        "Custom metal flashings fabricated on site",
+        "Ring shank nails only",
+        "A dedicated on-site project manager",
+        "Immaculate cleanup before payment is due"
+      ]
+    },
+    {
+      "slug": "roof-inspection",
+      "group": "residential",
+      "title": "Roof Inspection",
+      "short": "A free, drone and AI scan with a live photo link.",
+      "text": "During your free inspection we use drone technology and AI to scan the roof and detect storm damage, and you get a live photo link while we work.",
+      "image": "/brands/trueworksroofing/inspection",
+      "imageAlt": "A TrueWorks inspector standing on a composite shake roof",
+      "body": [
+        "Book the free roof assessment and we keep you informed from there. You get a notice when we are on the way, and an introduction to the inspector who is coming.",
+        "On the roof, the drone and AI scan looks for storm damage, leaks and ventilation problems, and the live photo link means you are not taking our word for anything. The team also diagnoses the ventilation in your attic and grades the roof using our own grading system."
+      ],
+      "points": [
+        "Free of charge",
+        "Drone and AI scan of the roof surface",
+        "Live photo link with geo-tagged photos",
+        "Attic ventilation diagnosis",
+        "A grade from our own roof grading system"
+      ],
+      "faqs": [
+        {
+          "q": "What should I expect during my free roof inspection?",
+          "a": "Our team uses drones and AI to give a detailed analysis of your roof's condition, identifying potential leaks, storm damage and ventilation issues. You get real-time updates with geo-tagged photos."
+        },
+        {
+          "q": "How much does an inspection cost?",
+          "a": "Our roof inspections and estimates are 100% free."
+        }
+      ]
+    },
+    {
+      "slug": "roof-maintenance",
+      "group": "residential",
+      "title": "Roof Maintenance",
+      "short": "Regular assessments that catch a problem before it escalates.",
+      "text": "Routine inspections and scheduled upkeep, so leaks, damaged shingles and water damage are found and dealt with before they turn into a replacement.",
+      "body": [
+        "Maintenance is a thorough inspection on a regular footing: we look for leaks, damaged shingles and water damage before any of it escalates. Houston's frequent rainfall and high humidity are what make the difference between an annual look and an unplanned replacement.",
+        "Scheduled upkeep handles the urgent items and the long-term ones in the same visit, and a final inspection closes it out. Estimates and consultations are free, and the Rapid Repair Division picks up anything small enough to resolve on the spot."
+      ],
+      "points": [
+        "Inspection for leaks, damaged shingles and water damage",
+        "Scheduled upkeep and a final inspection",
+        "Free estimates and consultations",
+        "Rapid Repair Division for the small items"
+      ]
+    },
+    {
+      "slug": "shingle-roofing",
+      "group": "residential",
+      "title": "Shingle Roofing",
+      "short": "Asphalt and synthetic shingle, built for Houston weather.",
+      "text": "Asphalt shingle and composition roofing from Malarkey, plus F-Wave synthetic shingles, chosen to hold up through a Houston summer and a Houston storm.",
+      "image": "/brands/trueworksroofing/shingle",
+      "imageAlt": "A stone-fronted Houston home with a new shingle roof over several gables",
+      "body": [
+        "We are a Malarkey Emerald Premium contractor, which is the top tier of their programme, and we install Malarkey's asphalt shingles alongside F-Wave synthetic shingles. Both are picked for the same reason: they handle Houston's tough weather.",
+        "If you want hail-resistant shingles or a synthetic that behaves like one, that is a conversation we have at the quote rather than after the fact."
+      ],
+      "points": [
+        "Malarkey asphalt shingles",
+        "F-Wave synthetic shingles",
+        "Tamko Titan",
+        "IKO",
+        "Composition roofing"
+      ]
+    },
+    {
+      "slug": "metal-roofing",
+      "group": "residential",
+      "title": "Metal Roofing",
+      "short": "Metal roofs that look right and last.",
+      "text": "Metal roofing for homes across Houston, including McElroy standing seam, fitted and flashed by our own crews.",
+      "image": "/brands/trueworksroofing/metal",
+      "imageAlt": "An aerial view of a standing seam metal roof on a Houston home beside a pool",
+      "body": [
+        "Metal is the roof most of our clients are choosing when they say they never want to replace a roof again. McElroy's standing seam metal roofing looks good and gives strong protection, and the panels are flashed with metal we fabricate on site.",
+        "We also work with Euroshield, which is a strong material and useful where a metal look is wanted on a building that takes a beating."
+      ],
+      "points": [
+        "McElroy standing seam",
+        "Custom metal flashings fabricated on site",
+        "Euroshield",
+        "Residential and commercial metal roofs"
+      ]
+    },
+    {
+      "slug": "standing-seam-metal-roofing",
+      "group": "residential",
+      "title": "Standing Seam Metal Roofing",
+      "short": "Concealed-fastener standing seam, in McElroy panels.",
+      "text": "Standing seam metal roofing with the fasteners hidden under the seam, installed in McElroy panels with flashings made on site.",
+      "image": "/brands/trueworksroofing/standing-seam",
+      "imageAlt": "A standing seam metal roof running up to a brick chimney",
+      "body": [
+        "Standing seam is the metal roof people picture: long panels running from ridge to eave with the fasteners concealed in the seam, so there is no exposed hardware to work loose.",
+        "We install McElroy standing seam, and the penetrations and chimney work are flashed with metal our crews bend on site rather than a stock part forced to fit."
+      ],
+      "points": [
+        "McElroy standing seam panels",
+        "Concealed fasteners",
+        "Chimney and penetration flashings made on site",
+        "Residential and commercial"
+      ]
+    },
+    {
+      "slug": "tile-roofing",
+      "group": "residential",
+      "title": "Tile Roofing",
+      "short": "Clay, concrete and composite tile, including repairs.",
+      "text": "Clay and concrete tile roofing and tile roof repair, plus Brava and KasselWood composite tile that carries the look at a lighter weight.",
+      "image": "/brands/trueworksroofing/tile",
+      "imageAlt": "A Houston home with a clay tile roof above stucco walls",
+      "body": [
+        "Tile is a Houston roof with a long history, and it needs a crew that knows how the underlayment and the flashing work beneath it. We do clay and concrete tile roofs and clay and concrete tile roof repair.",
+        "We are a Brava Preferred Contractor, and we install KasselWood composite tile as well, which is how we won a Spanish Barrel Tile Roof Excellence Award."
+      ],
+      "points": [
+        "Clay and concrete tile",
+        "Clay and concrete tile roof repair",
+        "Brava composite tile",
+        "KasselWood composite",
+        "Slate roofing and slate roof repair"
+      ]
+    },
+    {
+      "slug": "attic-ventilation",
+      "group": "residential",
+      "title": "Attic Ventilation",
+      "short": "Solar attic fans and soffit vents for a cooler attic.",
+      "text": "Solar-powered attic ventilation that cuts heat and moisture without adding to your electric bill, paired with soffit vents and a ventilation-grade assessment.",
+      "image": "/brands/trueworksroofing/ventilation",
+      "imageAlt": "A solar-powered attic fan mounted on a shingle roof",
+      "body": [
+        "Your attic should not feel like a furnace. If it does, you are losing comfort and money. Our energy-smart attic fans kick in on their own when the temperature rises, quietly pulling hot air out and replacing it with cooler airflow.",
+        "Paired with soffit vents and a ventilation-grade assessment, this turns the attic into a buffer rather than a heat trap, which protects the roof and the insulation and takes load off the air conditioning."
+      ],
+      "points": [
+        "Solar-powered attic fans",
+        "Soffit vents",
+        "Ventilation-grade assessment",
+        "Thermostat-controlled, no added electricity cost"
+      ]
+    },
+    {
+      "slug": "storm-damage",
+      "group": "storm",
+      "title": "Storm Damage Roof Restoration",
+      "short": "Hail and wind damage found, documented and restored.",
+      "text": "From granule loss after hail to repairs after high winds, we document the damage with a drone and AI scan and work with your insurance company from there.",
+      "image": "/brands/trueworksroofing/storm",
+      "imageAlt": "An aerial view of a Houston home with a new shingle roof",
+      "claim": true,
+      "body": [
+        "Houston is no stranger to volatile weather, and a roof takes the first hit. Granule loss from hail and lifted or torn shingles from high winds are the two we see most, and neither is easy to judge from the yard.",
+        "The free assessment uses a drone and AI to scan the roof for storm damage, and the live photo link means you see the evidence as it is found. Navigating an insurance claim on a storm-damaged roof is complicated, so our team guides you through each step of dealing with your insurer."
+      ],
+      "points": [
+        "Hail and wind damage inspection",
+        "Drone and AI scan with geo-tagged photos",
+        "Insurance claim guidance from start to finish",
+        "Repair or full restoration once the claim settles"
+      ],
+      "faqs": [
+        {
+          "q": "Do you handle roofing insurance claims?",
+          "a": "Yes. Our team works closely with your insurance company to streamline the claims process, so the repair or replacement is managed and covered properly."
+        },
+        {
+          "q": "Will my homeowner's insurance pay to have my roof repaired?",
+          "a": "Storm damage is generally covered, subject to your deductible. What matters is getting a professional assessment, understanding how the claim works, choosing an ethical contractor and having someone advocating for you while the claim is open. We guide you through all of it."
+        },
+        {
+          "q": "Someone offered me a free roof and said I would not have to pay my deductible. Do you do that?",
+          "a": "No. Texas law prohibits waiving a homeowner's deductible, and doing it is insurance fraud. We will not, and we would not work with a company that offers it."
+        },
+        {
+          "q": "How can I tell if my roof has hail damage?",
+          "a": "Book the free inspection and we will tell you, with photographs of what we found if you want them. If you have already called your insurer, give us notice of the adjuster's visit and we will be there for it."
+        }
+      ]
+    },
+    {
+      "slug": "emergency-roofing",
+      "group": "storm",
+      "title": "Emergency Roof Repair",
+      "short": "A fast response when the roof has opened up.",
+      "text": "High winds, impact damage or a storm can turn a roof into an emergency. We move quickly to make it safe and sound again.",
+      "image": "/brands/trueworksroofing/emergency",
+      "imageAlt": "A blue tarp covering a storm-damaged roof on a Houston home",
+      "body": [
+        "A roofing emergency left alone gets worse, and the damage stops being about the roof and starts being about the house. We handle the problem quickly, with the aim of making your roof safe and strong again as fast as possible.",
+        "Our repair technicians use the same materials and the same standards as a full install: Malarkey, Tamko Titan, McElroy standing seam and Euroshield, whichever your roof is built from."
+      ],
+      "points": [
+        "Storm, wind and impact damage",
+        "Emergency leak response",
+        "Slate roof repairs",
+        "Same materials and standards as a full install"
+      ]
+    },
+    {
+      "slug": "fortified-roofing",
+      "group": "storm",
+      "title": "Fortified Roofing",
+      "short": "An IBHS Fortified roof, built to the standard insurers reward.",
+      "text": "A Fortified roof is tested and verified to the IBHS Fortified Home standard, and many Texas insurers discount a policy once one is on the house.",
+      "image": "/brands/trueworksroofing/fortified",
+      "imageAlt": "An aerial view of a large Houston home with a new tile roof",
+      "body": [
+        "TrueWorks leads the way in Houston on Fortified roofing systems, which are scientifically researched and engineered for the weather this city actually gets. A Fortified roof is built to endure Category 1 to 3 hurricanes and the severe storm activity that is normal in Texas.",
+        "Our team is trained in the latest IBHS protocols and uses materials that exceed local building codes: sealed roof decks, reinforced drip edges that resist wind and water intrusion, and high-performance underlayment and shingles tested under real-world hurricane conditions.",
+        "Many insurers reward a Fortified roof upgrade with a substantial discount, and the figure their own research points to is 30% to 55% off premiums. Not every carrier offers it, so check with yours, or let us help you work it out."
+      ],
+      "points": [
+        "IBHS certified installation",
+        "Sealed roof deck",
+        "Reinforced drip edges",
+        "High-performance underlayment and shingles",
+        "Built for Category 1 to 3 hurricanes",
+        "Existing roofs can often be upgraded to the standard"
+      ],
+      "faqs": [
+        {
+          "q": "Is a Fortified roof more expensive than a traditional roof?",
+          "a": "The upfront cost may be slightly higher, but a Fortified roof offers long-term savings on insurance and on storm repairs."
+        },
+        {
+          "q": "Can I upgrade my current roof to a Fortified one?",
+          "a": "Yes. In many cases we can modify your existing roof structure to meet the IBHS Fortified Roof standard."
+        },
+        {
+          "q": "Do all insurers offer discounts for Fortified roofs?",
+          "a": "Not all, but many leading insurance providers in Texas do. Check with your carrier, or let us help guide you through it."
+        }
+      ]
+    },
+    {
+      "slug": "commercial-roofing",
+      "group": "commercial",
+      "title": "Commercial Roofing",
+      "short": "TPO, coatings, flat and foam roofs for Houston business.",
+      "text": "Commercial roof repair, installation and coating for low-slope and flat buildings, including TPO, foam and Duro-Last PVC.",
+      "image": "/brands/trueworksroofing/commercial",
+      "imageAlt": "A long low-slope roof on a stone commercial building in Houston",
+      "body": [
+        "We work on commercial and low-slope roofs across Houston: repair, full installation, and roof coating where the existing deck is sound and what it needs is a new surface.",
+        "We are a Castagra certified applicator, and the systems we install include IKO TPO and Duro-Last PVC. Tamko Titan and Euroshield are strong materials that suit larger commercial buildings such as shopping centres."
+      ],
+      "points": [
+        "Commercial roof repair",
+        "Commercial roof installation",
+        "Commercial roof coating, Castagra certified applicator",
+        "TPO roofing",
+        "Flat and foam roofing",
+        "Duro-Last PVC"
+      ]
+    }
+  ],
+  "claim": {
+    "title": "How a storm claim works with us",
+    "text": "Navigating an insurance claim on a storm-damaged roof is complicated, so our team guides you through every step of dealing with your insurance company.",
+    "steps": [
+      {
+        "title": "Free assessment",
+        "text": "We scan the roof with a drone and AI, and send you a live photo link of what we find."
+      },
+      {
+        "title": "We grade the roof",
+        "text": "The attic ventilation is diagnosed and the roof is graded on our own grading system."
+      },
+      {
+        "title": "The claim",
+        "text": "Our team works with your insurance company so the repair or replacement is covered properly."
+      },
+      {
+        "title": "Installation",
+        "text": "A dedicated on-site project manager runs the job, under the TrueArmor Protection System."
+      },
+      {
+        "title": "You sign off",
+        "text": "Payment is only due after an immaculate cleanup and once you are 100% satisfied."
+      }
+    ]
+  },
+  "materials": {
+    "title": "Materials we install",
+    "text": "We are a Malarkey Emerald Premium contractor, a Brava Preferred Contractor and a Castagra certified applicator.",
+    "brands": [
+      "Malarkey",
+      "F-Wave",
+      "Tamko Titan",
+      "IKO",
+      "Brava",
+      "KasselWood",
+      "Euroshield",
+      "McElroy",
+      "Duro-Last",
+      "Castagra"
+    ]
+  },
+  "about": {
+    "title": "Meet the Green Team",
+    "text": [
+      "Joel and Laura started TrueWorks in 2020, right during Covid. Joel had been in the industry for several years and saw the need for a company that installed roofs that actually last: one that communicated well, left job sites clean, and treated people and their homes as if they were its own. They had a newborn and worked out of a one-bedroom apartment.",
+      "It was a struggle at first, but they kept going above and beyond for clients and built a team that believed in the mission. They have always strived to do the right thing no matter what, even when it meant losing money on a job, and when they have made mistakes they have owned them and made them right.",
+      "Joel also serves as the current President of HARCA, the Houston Area Roofing Contractors Association. Laura is a mom and a yoga instructor, and on many jobs she is the one on the roof taking the photos and writing the quote."
+    ],
+    "image": "/brands/trueworksroofing/team",
+    "imageAlt": "Two members of the TrueWorks Roofing team talking outside a Houston home",
+    "values": [
+      {
+        "title": "Do the right thing",
+        "text": "Every time, even when it costs us money on the job."
+      },
+      {
+        "title": "Never cut corners",
+        "text": "Precision and detail are what make a roof extraordinary."
+      },
+      {
+        "title": "Pay when you are happy",
+        "text": "Payment is due after an immaculate cleanup and your sign-off."
+      }
+    ]
+  },
+  "inspection": {
+    "title": "What happens at a free roof assessment",
+    "steps": [
+      {
+        "title": "You book it",
+        "text": "Once it is scheduled we keep you informed at every step."
+      },
+      {
+        "title": "We tell you we are coming",
+        "text": "You get a notice when we are on the way, and an introduction to your inspector."
+      },
+      {
+        "title": "We scan and grade the roof",
+        "text": "A drone and AI scan, an attic ventilation diagnosis, and a grade from our own grading system."
+      },
+      {
+        "title": "You see the photos live",
+        "text": "A live photo link with geo-tagged photos, so you see the roof as we see it."
+      }
+    ]
+  },
+  "serviceArea": [
+    "Houston",
+    "South Houston",
+    "West Houston",
+    "Katy",
+    "Cypress",
+    "Tomball",
+    "Spring",
+    "The Woodlands",
+    "Kingwood",
+    "League City",
+    "Pearland",
+    "Sugar Land",
+    "Spring Valley Village",
+    "Piney Point",
+    "Hunters Creek",
+    "Hedwig Village",
+    "Memorial",
+    "River Oaks",
+    "The Heights",
+    "Kelliwood",
+    "Cinco Ranch"
+  ],
+  "areasText": "Our office is on the Katy Freeway in Houston, and we serve homeowners and businesses throughout Houston, Texas and the surrounding areas.",
+  "areasImage": "/brands/trueworksroofing/areas",
+  "areasImageAlt": "An aerial view of a Houston home with a tile roof in a wooded neighbourhood",
+  "contactImage": "/brands/trueworksroofing/shop",
+  "contactImageAlt": "The TrueWorks Roofing team around a roofing mock-up at a training session",
+  "facts": [
+    {
+      "heading": "Certifications",
+      "items": [
+        "Malarkey Emerald Premium Contractor",
+        "Brava Preferred Contractor",
+        "Castagra certified applicator",
+        "Fortified certified, trained in IBHS protocols",
+        "RCAT licensed",
+        "HARCA member, Houston Area Roofing Contractors Association",
+        "A+ rating with the Better Business Bureau"
+      ]
+    },
+    {
+      "heading": "Licensed and insured",
+      "text": "Texas does not require a state licence to roof, so we hold our RCAT and HARCA licences by choice. We carry $2 million in insurance and workman's compensation, plus a further $20,000 of protection for you through Directorii."
+    },
+    {
+      "heading": "The Green Team",
+      "items": [
+        "Gabriel Wiltenburg, production and repair division manager",
+        "Angel Albiter, project manager",
+        "Jonathan Jimenez, repair tech and project manager",
+        "CJ Bachand, roofing consultant and repair tech",
+        "Ryan Emerson, roofing consultant",
+        "Michelle Baldwin, roofing consultant",
+        "Adrianna Stamps, client success manager",
+        "Kristina Fazenbaker, office manager",
+        "Ivan Narvaez, neighborhood outreach advisor"
+      ]
+    },
+    {
+      "heading": "Our crew",
+      "text": "A 15-person crew with 60 years of combined experience, employed with us for four years. A new hire is trained extensively before they touch a shingle, and a certified project manager oversees every project. We finish 95% of our roofing jobs within a single day."
+    },
+    {
+      "heading": "Warranties",
+      "text": "Our warranties cover both the roofing materials and the labour. Manufacturer terms vary by brand in what they cover and for how long, so we go through the specific warranty with you when you choose the product."
+    },
+    {
+      "heading": "Awards",
+      "items": [
+        "HARCA Residential Roof of the Year 2022",
+        "Brava Excellence Award, 2022 and 2023",
+        "Castagra Contractor of the Year 2022",
+        "BBB Awards of Excellence 2024",
+        "Spanish Barrel Tile Roof Excellence Award",
+        "Commercial Roofing Contractor of the Year",
+        "Named by Forbes in the top 10 in 2023 and 2024"
+      ]
+    },
+    {
+      "heading": "After Care Program",
+      "text": "Complimentary roof inspections and routine maintenance every three years throughout your warranty, plus the TrueWorks Guarantee and our Only Pay When 100% Satisfied policy."
+    },
+    {
+      "heading": "Financing",
+      "text": "Financing is provided directly through TrueWorks Roofing. Apply online or with a team member, get a quick approval decision, and choose the plan that suits you: interest-free for 12 months, or reduced interest for up to 120 months. Checking what you qualify for is a soft pull."
+    },
+    {
+      "heading": "Referral Program",
+      "text": "Refer anyone to us and you earn $500 once their project is complete."
+    },
+    {
+      "heading": "Free Resources",
+      "items": [
+        "Residential Roofing Homeowner Education Guide",
+        "Homeowner's Guide to an Insurance Claim",
+        "Ventilation calculator",
+        "TrueWorks Roofing questionnaire"
+      ]
+    },
+    {
+      "heading": "What a roof costs in Houston",
+      "text": "Most homeowners spend between $10,000 and $20,000. By material that is roughly $4.00 to $6.50 a square foot for asphalt shingles, $5.50 to $9.00 for a flat or low-slope roof, $8.00 to $14.00 for metal and $12.00 to $20.00 for tile. Roof size, pitch, labour complexity, permits, tearing off the old roof and extras like gutters and skylights all move the figure, and labour alone is 40% to 60% of the total."
+    },
+    {
+      "heading": "Our core values",
+      "items": [
+        "Doing the right thing every time",
+        "Exceeding expectations with WOW-factor service",
+        "Creating unforgettable client experiences",
+        "Delivering energy-efficient, eco-friendly roofing systems",
+        "Meticulous attention to detail, without cutting corners"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "facebook.com/trueworksroofing",
+        "instagram.com/trueworksroofing",
+        "youtube.com/@trueworksroofing7368",
+        "linkedin.com/company/trueworks-roofing",
+        "yelp.com/biz/trueworks-roofing-houston",
+        "The Houston Roofer podcast, on Apple Podcasts"
+      ]
+    }
+  ]
+}
