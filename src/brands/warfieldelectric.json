@@ -1,0 +1,333 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Warfield Electric LLC",
+  "shortName": "Warfield Electric",
+  "summary": "Residential and commercial electrical service, repair and construction in Pearland and across the Houston area.",
+  "phone": "(281) 485-9798",
+  "email": "james@warfieldelectricllc.com",
+  "address": "3600 E Walnut St",
+  "town": "Pearland",
+  "state": "TX",
+  "zip": "77581",
+  "rating": 4.8,
+  "reviewCount": 37,
+  "hours": [["Mon – Fri", "8 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "brand": {
+    "primary": "#10508f",
+    "primaryDeep": "#0a3563",
+    "accent": "#b00c0c",
+    "ink": "#13181f",
+    "muted": "#4b5968",
+    "surface": "#eef3f9",
+    "line": "#d6e0ea",
+    "heading": "'Archivo', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/warfieldelectric/logo.webp",
+    "logoWidth": 200
+  },
+  "sameDay": "Many electrical service calls can be made the same day.",
+  "licenses": [{ "label": "Texas Electrical Contractor", "number": "TECL 26384" }],
+  "hero": {
+    "eyebrow": "Electricians in Pearland, Friendswood and Clear Lake",
+    "title": "Looking for an electrician",
+    "titleAccent": "in the Houston area?",
+    "lead": "Warfield Electric is a full service electrical contractor for homes and businesses. We are licensed and insured, and many electrical service calls can be made the same day.",
+    "image": "/brands/warfieldelectric/hero",
+    "imageAlt": "A Warfield Electric electrician working from a boom lift beside a house"
+  },
+  "groups": [
+    {
+      "slug": "residential",
+      "title": "Residential",
+      "icon": "home",
+      "summary": "Panels, breakers, wiring, lighting and troubleshooting for houses old and new.",
+      "intro": "Residential services include but are not limited to panels and breakers, troubleshooting, old house wiring, lighting and ceiling fans, grounding systems and dedicated circuits. Our business is built on repeat business and referrals, so we want you satisfied with the work and with the visit.",
+      "image": "/brands/warfieldelectric/residential",
+      "imageAlt": "A new electrical service panel and meter mounted on an exterior wall",
+      "services": [
+        {
+          "slug": "panels-and-breakers",
+          "title": "Panels and Breakers",
+          "icon": "circuit",
+          "text": "Panel change outs, circuit breaker upgrades and breaker replacement and installation.",
+          "points": ["Panels and breakers", "Circuit breaker upgrades", "Arc fault breakers"]
+        },
+        {
+          "slug": "troubleshooting",
+          "title": "Troubleshooting and Inspections",
+          "icon": "wrench",
+          "text": "Electrical troubleshooting, electrical inspections and code violations corrected.",
+          "points": ["Troubleshooting", "Electrical inspections", "Code violations corrected", "GFCI replacement", "Grounding systems"]
+        },
+        {
+          "slug": "outlets-switches-and-lighting",
+          "title": "Outlets, Switches and Lighting",
+          "icon": "lightbulb",
+          "text": "Outlets, switches and fixtures, lighting fixtures and ceiling fan installation.",
+          "points": ["Outlets, switches and fixtures", "Lighting fixtures", "Ceiling fan installation"]
+        },
+        {
+          "slug": "wiring-and-circuits",
+          "title": "Wiring and Circuits",
+          "icon": "cable",
+          "text": "Old house wiring, underground cables, 220 V plugs and dedicated circuits.",
+          "points": ["Old house wiring", "Underground cables", "220 V plugs", "Dedicated circuits"]
+        }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial",
+      "icon": "building",
+      "summary": "Build-outs, lease spaces, commercial lighting, parking lot lights and service upgrades.",
+      "intro": "We work for businesses on new construction and remodels as well as on service calls. Commercial services include new construction buildout, design and build, remodel, service, troubleshooting, lighting, service upgrades and generator installation.",
+      "image": "/brands/warfieldelectric/commercial",
+      "imageAlt": "A Warfield Electric van and boom lift at work on a lit pylon sign",
+      "services": [
+        {
+          "slug": "new-construction-and-buildouts",
+          "title": "New Construction and Build-Outs",
+          "icon": "building",
+          "text": "New construction buildout, design and build, remodel, new tenant build-outs and lease spaces.",
+          "points": ["New construction buildout", "Design and build", "Remodel"]
+        },
+        {
+          "slug": "commercial-lighting",
+          "title": "Commercial Lighting",
+          "icon": "lightbulb",
+          "text": "Commercial lighting services, including parking lot lights.",
+          "points": ["Lighting", "Parking lot lights"]
+        },
+        {
+          "slug": "service-and-troubleshooting",
+          "title": "Service and Troubleshooting",
+          "icon": "wrench",
+          "text": "Commercial electrical service repair and electrical troubleshooting."
+        },
+        {
+          "slug": "service-upgrades",
+          "title": "Service Upgrades",
+          "icon": "power",
+          "text": "Service upgrades and panel change outs for buildings that have outgrown the power they were built with."
+        }
+      ]
+    },
+    {
+      "slug": "generators",
+      "title": "Generators",
+      "icon": "power",
+      "summary": "Back up generator installation for homes and businesses, with a transfer switch.",
+      "intro": "Backup home generators are the only reliable protection against a power outage, and power can be lost for weeks at a time after a hurricane or a storm. We install back up generators for houses and generator systems for commercial buildings.",
+      "image": "/brands/warfieldelectric/generators",
+      "imageAlt": "A Generac standby generator beside its automatic transfer switch",
+      "services": [
+        {
+          "slug": "standby-generators",
+          "title": "Standby Generators",
+          "icon": "power",
+          "text": "Standby generators run on natural gas or propane and turn on and off by themselves, with unlimited running time. They must be installed by a professional electrician.",
+          "points": ["20,000 to 45,000 watts", "Natural gas or propane", "Turns on and off by itself"]
+        },
+        {
+          "slug": "generator-installation",
+          "title": "Generator Installation",
+          "icon": "battery",
+          "text": "Back up generators installed at the house and generator installation for commercial buildings, wired through a transfer switch."
+        }
+      ]
+    },
+    {
+      "slug": "marine",
+      "title": "Marine",
+      "icon": "waves",
+      "summary": "Boat lifts, boat house lighting and underwater green lights on the water.",
+      "intro": "Marine services include but are not limited to boat lifts, boat house lighting and receptacles, GFCIs, PVC conduit and underwater lights. We bend our own PVC pipe for an uncluttered look, so there are no factory bends on the job.",
+      "image": "/brands/warfieldelectric/marine",
+      "imageAlt": "Underwater green lights glowing in the water beside a lit boat house",
+      "services": [
+        {
+          "slug": "boat-lifts",
+          "title": "Boat Lifts",
+          "icon": "settings",
+          "text": "Electrical work for boat lifts on docks and canal frontage."
+        },
+        {
+          "slug": "boat-house-lighting",
+          "title": "Boat House Lighting and Receptacles",
+          "icon": "lightbulb",
+          "text": "Lighting, receptacles and GFCIs for boat houses and docks.",
+          "points": ["Boat house lighting and receptacles", "GFCIs"]
+        },
+        {
+          "slug": "pvc-conduit",
+          "title": "PVC Conduit",
+          "icon": "cable",
+          "text": "We bend our own PVC pipe for an uncluttered look. No factory bends."
+        },
+        {
+          "slug": "underwater-green-lights",
+          "title": "Underwater Green Lights",
+          "icon": "droplets",
+          "text": "Also known as green lights, underwater fishing lights, dock lights and fish lights. We can help you customize the lighting around your home, boat dock and canal or lake frontage, and if you are out of state we can ship it to you. Call for pricing and installation information.",
+          "points": ["Installed or shipped out of state", "Call for pricing and installation information"]
+        }
+      ]
+    },
+    {
+      "slug": "surge-protection",
+      "title": "Surge Protection",
+      "icon": "shield",
+      "summary": "Surge suppression systems for the whole house, and surge protectors for an RV.",
+      "intro": "Surge suppression is part of what we do on both the residential and the commercial side. We install whole house surge protectors, and we fit RV surge protectors for rigs that plug into campground and park pedestals.",
+      "image": "/brands/warfieldelectric/surge",
+      "imageAlt": "An RV surge protector installed in a coach's electrical compartment",
+      "services": [
+        {
+          "slug": "whole-house-surge-protectors",
+          "title": "Whole House Surge Protectors",
+          "icon": "shield",
+          "text": "Whole house surge protectors and surge suppression systems, installed at the panel."
+        },
+        {
+          "slug": "rv-surge-protectors",
+          "title": "RV Surge Protectors",
+          "icon": "car",
+          "text": "Recreation vehicles today have multiple electronic circuit boards, and many campgrounds, fairgrounds and park pedestals are incorrectly wired. A surge protector guards against improper electrical power and reduces the risk of damage to the RV's electronic systems.",
+          "points": [
+            "High and low voltage protection",
+            "Reverse polarity, open neutral and open ground protection",
+            "Five mode surge protection, 3640 joule rating",
+            "Accidental 220 V protection",
+            "Digital display of voltage, current, frequency and error codes"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "We want to be Pearland's most referred electrician.",
+    "text": [
+      "Warfield Electric is an electrical contracting company specializing in residential and commercial electric service and construction. Our primary focus includes residential and commercial electrical service repair, commercial lighting services, new tenant build-outs, lease spaces, parking lot lights, panel change outs, breaker replacement and installation, generator installation, surge suppression systems, commercial and residential remodeling and electrical troubleshooting. And for fun, we offer underwater fishing lights, also known as green lights.",
+      "Do you ever wonder where the service went in your electric service call? Have you ever called for electrical service and then weren't sure you wanted to let the electrician in the door? You should expect your electrician to be knowledgeable, service oriented, punctual and polite, not to mention reasonably priced.",
+      "Our business is built on your repeat business and your referrals, and we want you to be satisfied. We are licensed and insured, and many electrical service calls can be made the same day. Warfield Electric is a full service electrical contractor serving Houston, Clear Lake, Seabrook, Pearland and the surrounding areas."
+    ],
+    "image": "/brands/warfieldelectric/team",
+    "imageAlt": "A Warfield Electric service truck and boom lift parked at a job",
+    "values": [
+      {
+        "title": "Licensed and insured",
+        "text": "Texas Electrical Contractor's License TECL #26384, and insured for the work we do."
+      },
+      {
+        "title": "Built on referrals",
+        "text": "Our business is built on your repeat business and your referrals. We want you to be satisfied."
+      },
+      {
+        "title": "Same day where we can",
+        "text": "Many electrical service calls can be made the same day. Call the office and ask."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Are you licensed and insured?",
+      "a": "Yes. We hold Texas Electrical Contractor's License TECL #26384 and we are insured."
+    },
+    {
+      "q": "Can you come out the same day?",
+      "a": "Many electrical service calls can be made the same day. Call the office rather than emailing for a faster response, because we are in the field working."
+    },
+    {
+      "q": "Is my electrical panel safe?",
+      "a": "It depends what is in it. Federal Pacific Electric made circuit breakers from the 1950s into the 1980s, and electricians and inspectors found they did not provide adequate protection for the electrical service. Zinsco panels are largely obsolete today but are still in older homes, and a modern house draws much more power than they were built for. When either one overheats or a breaker fails to trip, it can become a fire or shock hazard. If you have one, have it looked at."
+    },
+    {
+      "q": "Do you ship underwater green lights out of state?",
+      "a": "Yes. If you are out of state we can ship it to you. Call for pricing and installation information."
+    },
+    {
+      "q": "Why should an RV have a surge protector?",
+      "a": "Recreation vehicles have multiple electronic circuit boards controlling various systems in the rig, and those systems are vulnerable to the power surges and voltage fluctuations common in today's campgrounds. In our experience many campgrounds, fairgrounds and park pedestals are incorrectly wired."
+    }
+  ],
+  "serviceArea": [
+    "Algoa",
+    "Alvin",
+    "Arcola",
+    "Arcadia",
+    "Bacliff",
+    "Bayou Vista",
+    "Clear Lake City",
+    "Clear Lake Shores",
+    "Deer Park",
+    "Dickinson",
+    "El Lago",
+    "Friendswood",
+    "Galveston",
+    "Hitchcock",
+    "Houston",
+    "Jamaica Beach",
+    "Kemah",
+    "La Marque",
+    "La Porte",
+    "League City",
+    "Manvel",
+    "Nassau Bay",
+    "Pasadena",
+    "Pearland",
+    "Rosharon",
+    "Santa Fe",
+    "San Leon",
+    "Sea Isle",
+    "Seabrook",
+    "Texas City",
+    "Tiki Island",
+    "Webster"
+  ],
+  "facts": [
+    {
+      "heading": "Reaching Us",
+      "text": "Call the office at (281) 485-9798 for a faster response, because we are in the field working. The fax is (281) 997-0117. Email reaches James at james@warfieldelectricllc.com or Michael at michael@warfieldelectricllc.com."
+    },
+    {
+      "heading": "Generator Brands",
+      "items": ["Generac standby generators", "Kohler standby generators"]
+    },
+    {
+      "heading": "Panels Worth Checking",
+      "items": [
+        "Federal Pacific Electric (FPE) breaker panels",
+        "Zinsco breaker panels"
+      ]
+    },
+    {
+      "heading": "Federal Pacific Panels",
+      "text": "A New Jersey state court ruled in a class action lawsuit that Federal Pacific Electric violated the Consumer Fraud Act, because the company knowingly distributed circuit breakers that were not tested to meet UL standards. When a breaker fails to trip, the current coming into the panel cannot be turned off once it flows through the lines, and it keeps flowing until it exhausts itself or the wires melt, so the panel can overheat and start a fire."
+    },
+    {
+      "heading": "Choosing A Backup Generator",
+      "items": [
+        "Portable gas engine generators cost between $300 and $2,500 and provide 2,500 to 10,000 watts, but you have to start them, refuel them and keep them away from the house because of carbon monoxide",
+        "Standby generators cost between $2,000 and $9,000, provide 20,000 to 45,000 watts with unlimited running time, and must be installed by a professional electrician",
+        "Decide what you need before the power goes out rather than after"
+      ]
+    },
+    {
+      "heading": "More On The RV Surge Protector",
+      "items": [
+        "AC frequency protection shuts down source power if it deviates more than 9 hertz from 60 cycles per second",
+        "A surge indicator error code shows when the protector's own circuit has been damaged and needs replacing",
+        "A previous error code readout tells you why power was last interrupted",
+        "A manual bypass passes source power through if the computer fails, without disabling the surge protection",
+        "Microprocessor controlled, and owners can get a free upgrade processor by returning the old one if the software changes"
+      ]
+    },
+    {
+      "heading": "Customers And Business Associates",
+      "text": "Our favorite links page collects the web sites of customers and business associates, including Pearland Homes and UV Country."
+    }
+  ]
+}
