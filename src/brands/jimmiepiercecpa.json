@@ -1,0 +1,398 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Jimmie Pierce CPA, P.C.",
+  "shortName": "Jimmie Pierce CPA",
+  "tagline": "A full-service tax, accounting and business consulting firm in La Porte",
+  "phone": "(281) 471-7891",
+  "email": "jimmie@jpiercecpa.com",
+  "address": "601 W Main St",
+  "town": "La Porte",
+  "state": "TX",
+  "zip": "77571",
+  "license": "A full-service accounting firm licensed in Texas.",
+  "rating": 5.0,
+  "reviewCount": 10,
+  "hours": [["Mon – Fri", "8:30 AM – 5:00 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Please call us today. We will happily offer you a free initial consultation to determine how we can best serve you."
+  },
+  "brand": {
+    "primary": "#600001",
+    "primaryDeep": "#420001",
+    "accent": "#b67d2b",
+    "ink": "#1d1d1d",
+    "muted": "#5b5b5b",
+    "surface": "#f8f5f0",
+    "cream": "#efe7da",
+    "line": "#e3dacb",
+    "heading": "'Lato', 'Helvetica Neue', sans-serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@400;500;600;700&display=swap",
+    "logo": "/brands/jimmiepiercecpa/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Certified public accountants in La Porte, TX",
+    "title": "A full-service accounting firm for business owners, executives and independent professionals.",
+    "lead": "We offer a broad range of services for business owners, executives, and independent professionals. We are affordable, experienced, and friendly.",
+    "image": "/brands/jimmiepiercecpa/hero",
+    "imageAlt": "A calculator and a laptop on a desk",
+    "points": ["Free initial consultation", "Licensed in Texas", "An office on West Main Street"]
+  },
+  "overview": {
+    "title": "Tax, accounting and business consulting for La Porte and the surrounding areas.",
+    "text": "Pick a service to see what it includes, or call and talk it through with our team."
+  },
+  "audiences": { "individuals": "Individuals & Families", "businesses": "Businesses" },
+  "services": [
+    {
+      "slug": "tax-preparation",
+      "title": "Tax Preparation",
+      "audience": "individuals",
+      "icon": "file-text",
+      "summary": "Returns prepared, checked and e-filed.",
+      "text": "Preparing your own income tax return can leave you with more questions than answers. Today's tax laws are complicated enough that filing a relatively simple return can be confusing.",
+      "lead": "According to a study released by the US Government's General Accounting Office, most taxpayers (77% of 71 million taxpayers) believe they benefited from using a professional tax preparer. It is just too easy to overlook deductions and credits to which you are entitled, and even if you use a computer software program there is no substitute for the assistance of an experienced tax professional.",
+      "image": "/brands/jimmiepiercecpa/tax-preparation",
+      "imageAlt": "A typewriter with a tax return form in it",
+      "covers": [
+        { "title": "Checked and rechecked", "text": "Your tax return is checked and rechecked by our computer software, identifying potential problems the IRS may look at more closely and reviewing the math to limit IRS contacts." },
+        { "title": "Electronic filing", "text": "Your tax return can be filed electronically, so you will get a refund back quicker." },
+        { "title": "Withholding adjusted", "text": "Our staff will show you how to adjust your payroll withholding to get more money back each week, rather than giving the IRS an interest free loan." },
+        { "title": "Deductions for next year", "text": "We will show you potential deductions to limit your tax liability for next year, and give you a sheet of commonly overlooked deductions for the year after that." },
+        { "title": "Books a mess? No problem", "text": "If you own a small business and have not kept up your bookkeeping, we can prepare your bookkeeping for the year, prepare a full Schedule C as well as your personal income tax return, then help you set up an easy system for next year." }
+      ]
+    },
+    {
+      "slug": "tax-planning",
+      "title": "Tax Planning",
+      "audience": "individuals",
+      "icon": "clipboard-check",
+      "summary": "Strategies that lower the bill all year.",
+      "text": "Planning is the key to successfully and legally reducing your tax liability. We go beyond tax compliance and proactively recommend tax saving strategies to maximize your after-tax income.",
+      "lead": "We continually look for ways to minimize your taxes throughout the year, not just at the end of the year, so businesses and individuals pay the lowest amount of taxes allowable by law. We make it a priority to enhance our mastery of the current tax law, complex tax code, and new tax regulations by attending frequent tax seminars.",
+      "image": "/brands/jimmiepiercecpa/tax-planning",
+      "imageAlt": "A tax withholding form, a pen and a cup of coffee on a desk",
+      "covers": [
+        { "title": "Grow and preserve assets", "text": "Strategies that keep more of what you have built where it belongs, and defer income so you can keep your money now and pay less taxes later." },
+        { "title": "Income and expense timing", "text": "Shifting income or expenses from one year to another so they fall where they will be taxed at a lower rate, and splitting income among family members or legal entities to get more of it taxed in a lower bracket." },
+        { "title": "Investment choices", "text": "Deferring tax liabilities through pension plans, contributions and similar plans, and using certain investments to produce income exempt from federal or state tax." },
+        { "title": "Estate, gifts and retirement", "text": "Reducing taxes on your estate so your family keeps more of what you have made, on your gifts so you can give more, and on your retirement distributions." }
+      ],
+      "questions": [
+        { "q": "Who do you work for?", "a": "We work for you, not for the IRS. Many of our clients save many times the fee in reduced tax liability through careful planning and legitimate tax strategies." }
+      ]
+    },
+    {
+      "slug": "tax-problems",
+      "title": "Tax Problems",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "IRS representation and resolution.",
+      "text": "We are here to help you resolve your tax problems and put an end to the misery that the IRS can put you through. We pride ourselves on being very efficient, affordable, and of course, extremely discreet.",
+      "lead": "IRS problems will not just go away by themselves; they keep getting worse with penalties and interest being added each day. It may take the IRS several years to catch up to you, but they are relentless in collecting all the money that is owed.",
+      "covers": [
+        { "title": "IRS audit representation", "text": "Rarely do our clients have to talk with the IRS. We handle it all for you so that you need not take time off of your job to handle the bureaucracy and paperwork." },
+        { "title": "Non-filed returns and back taxes", "text": "If you do not file, you can be prosecuted and punished with potential jail time, one year for each year not filed. We offer several options when it comes to resolving unpaid taxes." },
+        { "title": "Liens, levies and garnishment", "text": "Liens filed against you show up on your credit report. We are often able to get levies released, and a payment plan negotiated by us is always more favorable than an IRS wage garnishment." },
+        { "title": "Offer in compromise and payment plans", "text": "You can settle your debt with the IRS for pennies on the dollar through their Offer in Compromise program. If you do not qualify, a payment plan may be the way to resolve your problem." },
+        { "title": "Payroll tax problems", "text": "The IRS views failing to pay payroll taxes as the cardinal sin of tax delinquency, because a large portion of payroll taxes are your employees' withholdings." },
+        { "title": "Innocent spouse relief and your IRS file", "text": "Innocent spouse relief was designed to alleviate unjust situations where one spouse was clearly the victim of fraud. Obtaining a copy of your IRS file is critical in analyzing the options available to you." }
+      ]
+    },
+    {
+      "slug": "estate-planning",
+      "title": "Estate Planning",
+      "audience": "individuals",
+      "icon": "landmark",
+      "summary": "Wills, trusts and transfers to heirs.",
+      "text": "Estate planning on your own can be complicated and costly. Not knowing your legal and financial rights often ends up costing you more in the end.",
+      "lead": "Every estate planning situation is different. In order to help you, we want to know you, your unique situation, and the nature of your relationships. We offer discussion, recommendations and useful research tools to make your planning simple, efficient, and worry-free, and we are available throughout the process.",
+      "covers": [
+        { "title": "Define your goals", "text": "We help you clearly define your estate planning goals, and organize and create your estate planning team of law, finance and tax experts if you need one." },
+        { "title": "Documents reviewed", "text": "Preparing, organizing and reviewing your estate planning documents, including current wills, trusts, health care and power of attorney." },
+        { "title": "Probate and taxes", "text": "Decreasing the problems and expenses associated with probate, and lessening taxes at time of death." },
+        { "title": "Management and transfer", "text": "Arranging for management of your estate if you are incapacitated, drafting a working plan for managing it after death, and transferring assets to heirs the way you want." },
+        { "title": "Family wealth and charities", "text": "Living wills and trusts, lifetime family wealth transfers, family partnerships and other business relationships, and leaving money to charities." }
+      ],
+      "questions": [
+        { "q": "Am I too young to think about estate planning?", "a": "You may feel that you are, or the reminder of death may make you uncomfortable. In all cases, estate planning ends up saving your family lots of time, heartache and money." }
+      ]
+    },
+    {
+      "slug": "elder-care",
+      "title": "Elder Care",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Day-to-day finances for a loved one.",
+      "text": "As your cherished family member gets older, they may need some help with their day-to-day financial tasks. Ordinarily simple tasks such as balancing a checkbook and paying household bills become increasingly difficult for the elderly.",
+      "lead": "You could take care of their day-to-day financial tasks yourself, if you have the time and live close. With our elder care services you get the help of a caring, honest and knowledgeable professional, and you are kept informed of every step we make, so you always know that your family member's needs are being met.",
+      "covers": [
+        { "title": "Bills and record keeping", "text": "Reviewing and paying household bills, budgeting and record keeping, assistance with check writing and checkbook balancing, and making sure money is received, receipted and deposited." },
+        { "title": "Day-to-day transactions", "text": "Handling home repairs, routine maintenance and emergency medical expenses, and offering second opinions on household issues and unexpected situations." },
+        { "title": "Documents and assets", "text": "Organizing and reviewing personal, financial and legal documents, and preparing an inventory of personal assets and investments." },
+        { "title": "Retirement income", "text": "Planning retirement account distributions and safeguarding against improper disbursements, and determining current and long-term cash flow needs by analyzing income and expenses." },
+        { "title": "Benefits questions", "text": "Addressing questions about lifestyle, Social Security, pensions, Medicare and long-term insurance." },
+        { "title": "Tax filings and referrals", "text": "Preparing, planning and filing income, trust, gift and estate tax, and providing referrals to local services and agencies." }
+      ]
+    },
+    {
+      "slug": "small-business-accounting",
+      "title": "Small Business Accounting",
+      "audience": "businesses",
+      "icon": "calculator",
+      "summary": "Your books kept monthly or quarterly.",
+      "text": "As a small business owner you have more important things to do than to keep your own books. We take care of your books for you, so you can get back to the job of running your business and generating profits.",
+      "lead": "Each month or quarter we reconcile your bank account, generate an income statement and a balance sheet, clean up your general ledger and provide unlimited consultations. These tasks form the solid foundation of your small business accounting system, and you can customize the package by adding payroll, tax planning, tax preparation or any of our other services.",
+      "image": "/brands/jimmiepiercecpa/small-business-accounting",
+      "imageAlt": "A calculator, a ledger book and receipts on a desk",
+      "covers": [
+        { "title": "Bank reconciliation", "text": "Reconciling your business checking account each month keeps your bank account, accounting and taxes up to date, and lets you manage your cash more effectively." },
+        { "title": "Income statement", "text": "A monthly or quarterly statement of where your money is coming from and where it is going." },
+        { "title": "Balance sheet", "text": "A clear picture of what the business owns and owes at a point in time." },
+        { "title": "General ledger cleanup", "text": "Problem transactions found and corrected before they reach your financial statements." },
+        { "title": "Catching errors and fraud", "text": "Reconciling identifies lost checks, lost deposits and unauthorized wire transactions, detects unjustified bank charges, and helps prevent embezzlement of funds from within your company." },
+        { "title": "Unlimited consultations", "text": "Questions about the numbers answered as they come up, rather than once a year." }
+      ]
+    },
+    {
+      "slug": "payroll",
+      "title": "Payroll",
+      "audience": "businesses",
+      "icon": "banknote",
+      "summary": "Payroll run and the taxes filed.",
+      "text": "When it comes to paying employees, laws and the IRS have made the payroll function a time consuming nightmare for the small business owner. We offer payroll solutions that meet your business's needs.",
+      "lead": "Small business owners spend an average of eight hours a month performing payroll functions. That is 12 full days a year that could be spent generating sales, prospecting new business opportunities, improving products or services, or servicing customers.",
+      "covers": [
+        { "title": "It is cost effective", "text": "Use your staff more efficiently by letting us handle payroll and the associated legal details, and reduce overhead by removing the need to hire specialized employees." },
+        { "title": "It is a time saver", "text": "Our payroll service eliminates the burden of customizing, updating and maintaining your own payroll system. No more data entry, no more researching updates or new laws." },
+        { "title": "Worry free payroll tax filing", "text": "Federal, state and local payroll tax laws are frequently changing and becoming more complex. Having professionals calculate and file them removes that risk." },
+        { "title": "Comprehensive reports", "text": "A wide variety of user-friendly and accurate payroll reports. For a nominal fee we will include union reports, certified payroll, workers' compensation reports and more." }
+      ],
+      "questions": [
+        { "q": "Do you offer more than one way to run payroll?", "a": "Yes. We know that when it comes to payroll service no one size fits all, so we offer three custom payroll processing options." }
+      ]
+    },
+    {
+      "slug": "part-time-cfo",
+      "title": "Part-Time CFO Services",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "A financial manager without the salary.",
+      "text": "Growing businesses often reach a point where they need professional financial advice, but cannot afford a full-time CFO or controller. Our Part-Time CFO service gives you a professional financial manager who works with you to help guide your business to success.",
+      "lead": "The cost of hiring a full-time CFO can range from $60,000 to over $100,000 per year plus bonuses and benefits. Our Part-Time CFO services provide you with experienced support at a small fraction of that cost.",
+      "covers": [
+        { "title": "Time and clarity", "text": "More time to focus on new services, new customers and other core business issues, and a better understanding of the financial side of your business, so you have fewer surprises and more control over the money." },
+        { "title": "A sounding board", "text": "A readily available sounding board to help with tough business decisions and to help you clarify your business plans." },
+        { "title": "Controls and staff", "text": "Strong financial controls established in your business to reduce employee theft and increase profits, plus training and managing your accounting staff." },
+        { "title": "Budgets and analysis", "text": "Budget preparation and monitoring, profitability analysis by service or product line, trend analysis, and improved quality and timeliness of financial information." },
+        { "title": "Financing and negotiation", "text": "Assistance obtaining financing from banks, including help with negotiations, liaison with bankers, attorneys, vendors and insurance agents, and review of insurance policies." },
+        { "title": "Planning the spend", "text": "Cash management, analysis of equipment purchases and expansions, and assistance in defining long-range plans and quantifying goals." }
+      ]
+    },
+    {
+      "slug": "audits-reviews-compilations",
+      "title": "Audits, Reviews and Compilations",
+      "audience": "businesses",
+      "icon": "clipboard-check",
+      "summary": "Three levels of assurance.",
+      "text": "Stockholders, creditors and private investors often need assurance that the financial statements accurately represent the true financial position of a company. They have different levels of risk tolerance, so we provide three levels of assurance to meet your needs.",
+      "lead": "An audit provides the highest level of assurance. It is a methodical review and objective examination of the financial statements, including the verification of specific information as determined by the auditor or as established by general practice.",
+      "covers": [
+        { "title": "What an audit covers", "text": "A review of internal controls, testing of selected transactions, and communication with third parties. Based on our findings we issue a report on whether the financial statements are fairly stated and free of material misstatements." },
+        { "title": "Who we write to", "text": "Your customers, to check outstanding receivable balances; your banks, to confirm cash or debt balances and terms; your vendors, to verify outstanding payable balances; and your attorneys, for information on pending or threatened legal action." },
+        { "title": "Physical inspection", "text": "We observe your inventory counting methods and perform test counts, and we document and test each operating cycle, including sales and cash receipts, expenses and cash disbursements, and payroll." },
+        { "title": "What an audit lets you do", "text": "Satisfy stakeholders as to the credibility of published information, comply with banking covenants, deter and detect material fraud and error, and facilitate the purchase and sale of businesses." }
+      ],
+      "questions": [
+        { "q": "Are audits only for public companies?", "a": "No. All public companies are required to have an annual audit, but some nonpublic entities must undergo one as well, including local governments, not-for-profit agencies and other organizations receiving government grants." }
+      ]
+    },
+    {
+      "slug": "quickbooks-services",
+      "title": "QuickBooks Services",
+      "audience": "businesses",
+      "icon": "book",
+      "summary": "Setup, training and tune-ups.",
+      "text": "QuickBooks is the ideal business accounting software for small to mid-sized business owners. Although it is designed for the layman to understand, the initial setup and installation can be tricky.",
+      "lead": "Save hours of frustration by allowing us to set QuickBooks up for you correctly, then train you or your employees to operate it specifically for your business.",
+      "covers": [
+        { "title": "QuickBooks setup", "text": "The initial setup and installation done correctly, so the file you work in all year is built the right way from the start." },
+        { "title": "QuickBooks training", "text": "Once QuickBooks is set up and working properly, we can train you or your employees to properly operate it specifically for your business." },
+        { "title": "QuickAnswers", "text": "Email and telephone support, so your accounting department knows the answers to their QuickBooks questions are only an email or phone call away." },
+        { "title": "QuickTune-up", "text": "Whether you need to prepare your books for tax time or a financial review, or just need to clean up some problem areas, a complete tune-up gets QuickBooks running smoothly again." },
+        { "title": "Buy QuickBooks and save", "text": "Save up to 20% on the newest version of QuickBooks." }
+      ]
+    },
+    {
+      "slug": "new-business-formation",
+      "title": "New Business Formation",
+      "audience": "businesses",
+      "icon": "store",
+      "summary": "Starting a business the right way.",
+      "text": "Opening your own business is exciting and thrilling. It is everything that comes after the excitement and thrill has worn off that dictates whether a small business will make it or not.",
+      "lead": "A methodical plan of action is needed to fulfill your dream of being your own boss and running a successful business. Success lies in the approach you choose to take, and we help you avoid the common pitfalls that many new small business owners make when starting their new venture.",
+      "covers": [
+        { "title": "A business plan", "text": "An initial business plan prepared to clarify your marketing, management and financial plans." },
+        { "title": "Start-up capital", "text": "Determining your start-up capital needs, identifying sources and backup sources, and evaluating and quantifying your borrowing power." },
+        { "title": "Structure and software", "text": "Selecting a business structure that fits by evaluating tax advantages, legal exposure, ease of operation and portability, and selecting the right accounting software for your budget, needs and hardware." },
+        { "title": "Cash flow budget", "text": "A cash flow budget so you know exactly how much money you need to keep the business alive each month for the first few years. Unplanned cash requirements are always emotionally painful." },
+        { "title": "Billing and cost control", "text": "Billing and collection procedures established to maximize your cash flow, and procedures to monitor and control costs." },
+        { "title": "Licenses and filings", "text": "Preparing and filing all required state and local licenses and permits, your application for your Federal Employer Identification Number, and setting up a home office to maximize your tax deductions." }
+      ]
+    },
+    {
+      "slug": "business-valuation",
+      "title": "Business Valuation",
+      "audience": "businesses",
+      "icon": "scale",
+      "summary": "What your business is actually worth.",
+      "text": "Few things are more important to business owners than the value of their business. The valuation you get for your business can make or break a proposition.",
+      "lead": "Business valuation is not an exact science. It is based on judgment, experience and relevant information, so you need professionals who are well qualified, with significant experience in evaluating all types of organizations. Our approach is to intimately know your business in order to understand what constitutes its value.",
+      "covers": [
+        { "title": "How we work", "text": "We work closely with you to analyze your operations and historical financial data. Our in-depth knowledge of your business enables us to provide a well-reasoned, fully documented and defensible valuation opinion." },
+        { "title": "Mergers and buyouts", "text": "Valuations for negotiating a merger, considering new shareholders, buyouts and acquisitions." },
+        { "title": "Disputes and divorce", "text": "Valuations to resolve disputes associated with liability, shareholder equity and marital dissolution." },
+        { "title": "Estate planning and gifting", "text": "Valuations prepared for estate planning, gifting, financing and bankruptcy." }
+      ]
+    },
+    {
+      "slug": "cash-flow-management",
+      "title": "Cash Flow Management",
+      "audience": "businesses",
+      "icon": "chart",
+      "summary": "A projection, before the crisis.",
+      "text": "A cash crisis can be emotionally devastating. It can even kill your business. The starting point for avoiding a cash crisis is allowing us to develop a cash flow projection for you.",
+      "lead": "A cash flow projection shows you what is coming in and going out before it happens, so a shortfall is something you plan around rather than something you discover.",
+      "covers": [
+        { "title": "A cash flow projection", "text": "Built from your own numbers, so you can see where the business is headed month by month." },
+        { "title": "Bank financing", "text": "Requesting a business loan without adequate preparation sends a clear message to the lender: high risk. It pays to be prepared and organized in your approach for financing." },
+        { "title": "Internal controls", "text": "We assess your internal control systems to determine the efficiency and effectiveness of your operating procedures, then make recommendations that help your company become stronger." }
+      ]
+    },
+    {
+      "slug": "forensic-accounting",
+      "title": "Forensic Accounting",
+      "audience": "businesses",
+      "icon": "gem",
+      "summary": "Accounting for disputes and litigation.",
+      "text": "Forensic accounting, also called financial forensics or forensic auditing, is an area of accounting that investigates actual or anticipated disputes.",
+      "lead": "Where a dispute turns on what the numbers actually show, forensic accounting is the work of establishing that record and standing behind it."
+    },
+    {
+      "slug": "nonprofit-organizations",
+      "title": "Non-Profit Organizations",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Keeping tax-exempt status intact.",
+      "text": "The IRS uses very specific revenue and expense classifications to determine if your organization will retain its tax-exempt status.",
+      "lead": "The IRS uses very specific revenue and expense classifications to determine if your organization will retain its tax-exempt status, so how a non-profit's books are kept matters as much as what is in them."
+    },
+    {
+      "slug": "succession-planning",
+      "title": "Succession Planning",
+      "audience": "businesses",
+      "icon": "handshake",
+      "summary": "Passing a family business on.",
+      "text": "Developing and implementing a well-designed succession plan is essential to the survival of a family business from one generation to the next.",
+      "lead": "Developing and implementing a well-designed succession plan is essential to the survival of a family business from one generation to the next."
+    },
+    {
+      "slug": "strategic-business-planning",
+      "title": "Strategic Business Planning",
+      "audience": "businesses",
+      "icon": "pen-line",
+      "summary": "Getting the plan out of your head.",
+      "text": "If you still have all your plans and ideas locked up inside your head, preparing a strategic plan can help you clarify your company's direction.",
+      "lead": "If you still have all your plans and ideas locked up inside your head, preparing a strategic plan can help you clarify your company's direction."
+    }
+  ],
+  "about": {
+    "title": "A full-service accounting firm on West Main Street in La Porte.",
+    "text": [
+      "We are a full-service accounting firm licensed in TX. We offer a broad range of services for business owners, executives, and independent professionals. We are affordable, experienced, and friendly.",
+      "At Jimmie Pierce CPA, PC, we have been serving the accounting needs of La Porte, TX and the surrounding areas for years. If you need help managing any aspect of your home or business's finances, we want to hear from you.",
+      "Our firm is one of the leading firms in the area. By combining our expertise, experience and the energy of our staff, each client receives close personal and professional attention, and we make sure that every client is served by the expertise of our whole firm. Because we get new business from the people who know us best, client referrals have fueled our growth in the recent years."
+    ],
+    "image": "/brands/jimmiepiercecpa/about",
+    "imageAlt": "Tax forms and a cup of coffee on a desk",
+    "values": [
+      { "title": "Professionalism", "text": "Our high standards, service and specialized staff spell the difference between our outstanding performance and other firms. Each client receives close personal and professional attention." },
+      { "title": "Responsiveness", "text": "Companies who choose our firm rely on competent advice and fast, accurate personnel. We provide total financial services to individuals, large and small businesses and other agencies." },
+      { "title": "Quality", "text": "An accounting firm is known for the quality of its service, and our reputation reflects the high standards we demand of ourselves. We continually educate ourselves to improve our technical expertise, financial knowledge and service to our clients." }
+    ]
+  },
+  "faqs": [
+    { "q": "Do you charge for a first meeting?", "a": "No. We will happily offer you a free initial consultation to determine how we can best serve you." },
+    { "q": "Who do you work with?", "a": "Business owners, executives, and independent professionals, as well as individuals, large and small businesses and other agencies." },
+    { "q": "Can you answer questions outside of tax season?", "a": "Yes. Our primary goal as a trusted advisor is to be available and to provide insightful advice to enable our clients to make informed financial decisions. We will answer all of your questions, as they impact both your tax and financial situations, and we welcome you to contact us anytime." },
+    { "q": "Can you send documents securely?", "a": "Yes. We have a secure client portal for exchanging documents, and the link is on our site." }
+  ],
+  "resources": [
+    {
+      "title": "Client Portal",
+      "text": "Sign in to the secure portal to store and exchange documents. New clients can register for an account here.",
+      "href": "https://www.securefirmportal.com/Account/Login/13102"
+    },
+    {
+      "title": "Form W-4",
+      "text": "Use this form to determine an employee's federal income tax withholding.",
+      "href": "https://www.irs.gov/pub/irs-pdf/fw4.pdf"
+    },
+    {
+      "title": "Form I-9",
+      "text": "All employees must complete this form at time of hire.",
+      "href": "https://www.uscis.gov/sites/default/files/document/forms/i-9.pdf"
+    }
+  ],
+  "serviceArea": ["La Porte"],
+  "facts": [
+    {
+      "heading": "Office",
+      "items": [
+        "601 West Main Street, La Porte, TX 77571",
+        "Phone: 281-471-7891",
+        "Fax: 281-471-4549",
+        "jimmie@jpiercecpa.com"
+      ]
+    },
+    {
+      "heading": "Client tools",
+      "items": [
+        "A secure, password-protected client portal for storing and reaching your financial documents from anywhere, at any time",
+        "The portal handles working documents, scanned receipts and very large QuickBooks files",
+        "SecureSend delivers a file straight to a member of the firm without an account, and notifies them once the upload finishes",
+        "Financial calculators, including a 1040 tax calculator and a marginal and effective tax rates calculator",
+        "Tax center: track your refund, tax due dates, tax rates, IRS forms and publications, a record retention guide and state tax forms",
+        "A monthly newsletter, with previous issues archived"
+      ]
+    },
+    {
+      "heading": "Guides on our site",
+      "items": [
+        "Life events",
+        "Business strategies",
+        "Tax strategies for business owners",
+        "Tax strategies for individuals",
+        "Over 500 everyday financial questions answered"
+      ]
+    },
+    {
+      "heading": "Follow us",
+      "items": [
+        "Facebook: facebook.com/jpiercecpa"
+      ]
+    },
+    {
+      "heading": "Your privacy",
+      "text": "We do not disclose any nonpublic personal information about our clients or former clients to anyone, except as permitted by law. Access to it is restricted to the people who need it to serve you, and we maintain physical, electronic and procedural safeguards that comply with federal regulations, including the Gramm-Leach-Bliley Act of 1999."
+    },
+    {
+      "heading": "Working here",
+      "text": "We are seeking professional, hard-working, licensed CPAs with at least four years of experience. The job requires high level tax preparation skills, superior tax research and problem solving abilities, broad software knowledge, and excellent written and oral communication skills. The firm demands independence, integrity, objectivity, competence and due care from all of its personnel. Fax a resume and references to 281-471-4549 or email jimmie@jpiercecpa.com."
+    }
+  ]
+}

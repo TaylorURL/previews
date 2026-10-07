@@ -1,0 +1,541 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "Frost Roofing & Renovations",
+  "shortName": "Frost Roofing",
+  "phone": "(281) 709-8424",
+  "email": "dustin@frostroof.com",
+  "address": "238 S Egret Bay Blvd Ste. 154",
+  "town": "League City",
+  "state": "TX",
+  "zip": "77573",
+  "rating": 5.0,
+  "reviewCount": 76,
+  "license": "Licensed, bonded and insured, A+ rated and accredited by the BBB",
+  "hours": [["Mon – Sat", "9 AM – 5 PM"], ["Sunday", "Closed"]],
+  "brand": {
+    "primary": "#1e1a54",
+    "primaryDeep": "#141135",
+    "accent": "#43b3e5",
+    "ink": "#1f1f1f",
+    "surface": "#f7f7f2",
+    "heading": "'Montserrat', 'Helvetica Neue', sans-serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap",
+    "logo": "/brands/frostroofingrenovations/logo.webp",
+    "logoWidth": 190
+  },
+  "hero": {
+    "eyebrow": "League City roofing and renovation contractor",
+    "title": "Trusted roofing and renovations in",
+    "titleAccent": "Greater Houston and beyond.",
+    "lead": "Frost Roofing & Renovations has shielded residential and commercial properties throughout Greater Houston for a decade. Storm claim, roof replacement, repair or home improvement project, you get quality materials and craftsmanship you can be confident in.",
+    "image": "/brands/frostroofingrenovations/hero",
+    "imageAlt": "Frost Roofing crew working on the roof of a two-story home"
+  },
+  "promises": [
+    "Free roof inspections, estimates and consultations",
+    "Bonded and insured",
+    "A+ rated and accredited by the BBB",
+    "Two project managers on every re-roof"
+  ],
+  "services": [
+    {
+      "slug": "residential-roofing",
+      "group": "residential",
+      "title": "Residential Roofing",
+      "short": "Installation, replacement, repair and inspection for homes.",
+      "text": "Roof installation, replacement, repair and inspection for homes across Greater Houston, with honest guidance and materials chosen for real Texas weather.",
+      "image": "/brands/frostroofingrenovations/residential-roofing",
+      "imageAlt": "A Frost Roofing jobsite tent and banner outside a home being re-roofed",
+      "body": [
+        "Homes across Texas face intense sun, sudden storms, strong wind and heavy rain through the year. Those conditions slowly weaken roofing materials and can create hidden leaks that damage ceilings, walls and insulation. We inspect every roof closely and recommend the repair, replacement or installation that fits what we find.",
+        "The focus is always on honest guidance, durable materials and careful workmanship, so your roof is built to handle heat, storms and moisture while keeping your family comfortable in every season."
+      ],
+      "points": [
+        "Residential roof installation",
+        "Residential roof replacement",
+        "Roof repair for homes",
+        "Storm, hail and wind damage roofing",
+        "Emergency residential roofing",
+        "Roof inspection for homes",
+        "Shingle and metal residential roofing"
+      ],
+      "faqs": [
+        { "q": "When should a roof be replaced instead of repaired?", "a": "We inspect the whole roof first and tell you plainly what we find. Where the damage is isolated we repair it; where the roof is worn through, a replacement is the better buy and we will show you why." },
+        { "q": "Can storm damage be hidden?", "a": "Yes. Hail and wind damage is often invisible from the ground, which is why we inspect after a storm and document what is there before anything is filed." }
+      ]
+    },
+    {
+      "slug": "reroofing",
+      "group": "residential",
+      "title": "Reroofing And Roof Replacement",
+      "short": "Tear-off and replacement, including Owens Corning shingle systems.",
+      "text": "Roof replacements and new roofs built to last. We install Owens Corning roofing systems, including Duration shingles and high-profile RizerRidge.",
+      "image": "/brands/frostroofingrenovations/reroofing",
+      "imageAlt": "A home mid-reroof with tarps over the landscaping and new material on the lawn",
+      "materials": true,
+      "body": [
+        "A reroof means the old roof comes off and a new system goes on, rather than a layer being added over the top of worn material. We tear off, look at what is underneath, and build back with a system engineered for performance, appearance and long-term coverage.",
+        "Before the first shingle comes off we deploy The Catch-All System to help safeguard your home, AC unit and landscaping through the job. Two project managers are on every re-roof, so if one has to step away for materials someone is still on site keeping an eye on your home and your project."
+      ],
+      "points": [
+        "Residential and commercial reroofing",
+        "Full roof replacement",
+        "Tear-off and reroof",
+        "Storm damaged roof replacement",
+        "Shingle roof replacement",
+        "Metal roof replacement",
+        "The Catch-All System protecting your home, AC unit and landscaping"
+      ],
+      "faqs": [
+        { "q": "What does reroofing mean?", "a": "The old roof is removed and a new roofing system is installed in its place, rather than new material being laid over the old." },
+        { "q": "What do you leave behind when the job is done?", "a": "A Shingle Tomb, with complimentary shingles matched to your roof's exact batch and brand, detailed roof measurements and our contact information. If you ever need us again, everything is right there." }
+      ]
+    },
+    {
+      "slug": "metal-roofing",
+      "group": "residential",
+      "title": "Metal Roofing",
+      "short": "Worthouse stone-coated steel and standing seam metal roofs.",
+      "text": "A variety of metal roofing solutions, including our preferred Worthouse stone-coated steel panel roofing, gutter systems, and traditional standing seam metal roofing.",
+      "image": "/brands/frostroofingrenovations/metal-roofing",
+      "imageAlt": "A dark metal roof on a large home seen from above",
+      "body": [
+        "We are a preferred contractor for Worthouse Metal Roofing, and their stone-coated steel panel system is the one we reach for most often on Texas homes. Standing seam and corrugated profiles are available too, in steel and aluminium.",
+        "Metal works hard in this climate: it sheds water, stands up to wind, and reflects a good deal of the heat that an asphalt roof absorbs. We will walk you through the styles and what each one costs before anything is ordered."
+      ],
+      "points": [
+        "Residential and commercial metal roofing",
+        "Worthouse stone-coated steel panel roofing",
+        "Standing seam metal roofing",
+        "Corrugated metal roofing",
+        "Steel and aluminium options",
+        "Metal roof installation, replacement and repair",
+        "Metal gutter systems"
+      ],
+      "faqs": [
+        { "q": "Does metal roofing improve energy efficiency?", "a": "Metal reflects rather than absorbs a large share of the sun's heat, which is one of the reasons Texas property owners choose it." },
+        { "q": "Are metal roofs good for homes and businesses?", "a": "Both. We install metal roofing on houses and on commercial buildings, and the profile we recommend depends on the slope and the look you want." }
+      ]
+    },
+    {
+      "slug": "roof-repair",
+      "group": "residential",
+      "title": "Roof Repair",
+      "short": "Fast, accurate repairs that stop leaks and extend roof life.",
+      "text": "Fast, accurate repairs to stop leaks, fix storm damage, and extend the life of your roof.",
+      "image": "/brands/frostroofingrenovations/roof-repair",
+      "imageAlt": "A shingle roof with vent pipes and a bundle of replacement shingles",
+      "body": [
+        "Most problems start small: a lifted shingle, a worn pipe boot, flashing that let go. We find where the water is getting in and fix it there, so the repair lands in the right spot the first time.",
+        "We repair homes and businesses, and we take emergency and same-day calls when a storm has already opened the roof up."
+      ],
+      "points": [
+        "Residential and commercial roof repair",
+        "Emergency roof repair",
+        "Storm, hail and wind damage repair",
+        "Roof leak repair",
+        "Same-day roof repair",
+        "Roof inspection and repair"
+      ],
+      "faqs": [
+        { "q": "Can repairs extend roof life?", "a": "Yes. Catching a leak or a failed detail early keeps water out of the decking and insulation, and that is what buys a roof its remaining years." },
+        { "q": "Do you repair homes and businesses?", "a": "Both. We work on residential roofs and on commercial and industrial buildings across Greater Houston." }
+      ]
+    },
+    {
+      "slug": "gutters",
+      "group": "residential",
+      "title": "Gutters",
+      "short": "Seamless gutters, leaf guards and downspouts.",
+      "text": "Gutter systems that help protect your roofline, fascia, foundation, and home exterior.",
+      "image": "/brands/frostroofingrenovations/gutters",
+      "imageAlt": "A single-story home with roofing material staged on the driveway",
+      "body": [
+        "Gutters do most of their work in the few heavy storms each year. When a run is clogged, undersized or pitched wrong, that water goes into the fascia and down against the slab instead of away from the house.",
+        "We install and repair residential and commercial gutter systems, including seamless and metal gutters, leaf guards and downspouts, and we clean and replace the runs that are past saving."
+      ],
+      "points": [
+        "Residential and commercial gutter installation",
+        "Seamless gutters",
+        "Metal gutters",
+        "Gutter repair and replacement",
+        "Gutter cleaning",
+        "Leaf guard installation",
+        "Downspout installation"
+      ],
+      "faqs": [
+        { "q": "Are seamless gutters worth installing?", "a": "Fewer joints means fewer places for a run to leak, which is why seamless is what we fit on most homes." },
+        { "q": "Can damaged gutters affect indoor areas?", "a": "Yes. Water that overflows a failed gutter runs behind the fascia and into the soffit, and from there it reaches ceilings and walls." }
+      ]
+    },
+    {
+      "slug": "insurance-claims",
+      "group": "storm",
+      "title": "Insurance Claims And Storm Damage",
+      "short": "We guide homeowners through the whole claims process.",
+      "text": "Storm damage is stressful enough. We assist homeowners with insurance-related paperwork and guide you through the claims process from inspection to final cleanup, so you are not navigating it alone.",
+      "image": "/brands/frostroofingrenovations/insurance-claims",
+      "imageAlt": "An aerial view of a large shingle roof on a Texas home",
+      "claim": true,
+      "body": [
+        "We help with storm damage repairs and guide homeowners through the insurance process, handling the paperwork and the filing. We are a storm damage specialist and an insurance claims assistant, and the inspection that starts it is free.",
+        "We handle residential and commercial claims: storm, hail, water, fire and roof damage, and we support appeals when a claim comes back denied or the settlement is short."
+      ],
+      "points": [
+        "Residential property insurance claim help",
+        "Commercial insurance claims for businesses",
+        "Storm, hail, water and fire damage claims",
+        "Roof damage insurance claims",
+        "Insurance claim denial help and appeal support",
+        "Insurance-related repairs and restoration after Houston's storms"
+      ],
+      "faqs": [
+        { "q": "Do you help with insurance claims and storm damage?", "a": "Yes. We help with storm damage repairs and guide homeowners through the insurance process, handling all paperwork and filing." },
+        { "q": "Does Frost Roofing & Renovations only handle claims, or also the repairs?", "a": "Both. We document the damage, work the claim with you and then carry out the repair or replacement once it is approved." }
+      ]
+    },
+    {
+      "slug": "commercial-roofing",
+      "group": "commercial",
+      "title": "Commercial Roofing",
+      "short": "Flat, metal and low-slope roofs for Texas businesses.",
+      "text": "Installation, replacement, repair and maintenance for commercial, warehouse and industrial roofs across Greater Houston.",
+      "image": "/brands/frostroofingrenovations/commercial-roofing",
+      "imageAlt": "A flat commercial roof with rooftop units seen from above",
+      "body": [
+        "We work on commercial, warehouse and industrial buildings, on flat and low-slope systems as well as metal, and we schedule around your hours so the doors stay open.",
+        "Storm damage on a commercial roof is often invisible from the parking lot. Regular checks and a maintenance plan catch it while it is still a repair rather than a replacement."
+      ],
+      "points": [
+        "Commercial roof installation and replacement",
+        "Commercial roof repair",
+        "Flat roof commercial services",
+        "Metal commercial roofing",
+        "Warehouse and industrial roofing",
+        "Emergency commercial roof repair",
+        "Storm damage commercial roofing",
+        "Commercial roofing maintenance"
+      ],
+      "faqs": [
+        { "q": "How often should a commercial roof be checked?", "a": "Regularly, and after every significant storm. Damage on a low-slope roof is rarely visible from the ground and the first sign is usually a leak inside." },
+        { "q": "Is metal roofing good for Texas businesses?", "a": "It holds up well to heat and wind and is one of the systems we install most often on commercial buildings here." }
+      ]
+    },
+    {
+      "slug": "siding",
+      "group": "residential",
+      "title": "Siding",
+      "short": "Siding repair, replacement and installation.",
+      "text": "Exterior siding repair, replacement and installation for homes across Greater Houston.",
+      "image": "/brands/frostroofingrenovations/siding",
+      "imageAlt": "A ladder against a house with siding part-way through replacement",
+      "body": [
+        "Siding takes the same beating the roof does, and it fails quietly: a seam opens, water gets behind it, and the sheathing underneath goes soft long before anything shows on the outside.",
+        "We repair, replace and install residential siding, and we handle it as part of the same project as the roof so you are not juggling two contractors."
+      ],
+      "points": [
+        "Residential siding repair",
+        "Professional siding installation",
+        "Exterior siding installation",
+        "Siding replacement"
+      ]
+    },
+    {
+      "slug": "fascia",
+      "group": "residential",
+      "title": "Fascia Repair",
+      "short": "Fascia repair, replacement and sealing along the roofline.",
+      "text": "Fascia repair, board replacement, sealing and installation along the roofline, including wood rot and storm damage.",
+      "image": "/brands/frostroofingrenovations/fascia",
+      "imageAlt": "A damaged fascia board exposed along the edge of a roof",
+      "body": [
+        "Fascia is the board the gutters hang from, and it is the first thing to go when a gutter has been overflowing. By the time the paint is peeling the wood behind it is usually rotten.",
+        "We repair and replace fascia, seal it, and fix what caused the damage in the first place, which is often the gutter run above it."
+      ],
+      "points": [
+        "Residential fascia repair",
+        "Fascia installation",
+        "Gutter fascia repair",
+        "Fascia repair after storm damage",
+        "Wood rot fascia repair",
+        "Fascia board replacement and sealing",
+        "Emergency fascia repair",
+        "Fascia in vinyl, wood and aluminium"
+      ],
+      "faqs": [
+        { "q": "What is fascia and why is it important?", "a": "It is the board that runs along the edge of the roof and carries the gutters. It closes the roof edge off, and when it fails water reaches the decking and the soffit behind it." },
+        { "q": "What happens if fascia damage is ignored?", "a": "The rot spreads into the roof edge and the soffit, the gutters lose what they are fixed to, and a board replacement turns into a roofline repair." }
+      ]
+    },
+    {
+      "slug": "soffit",
+      "group": "residential",
+      "title": "Soffit Repair",
+      "short": "Soffit repair and installation, including the intake vents.",
+      "text": "Soffit repair, replacement and installation under the roof overhang, including the intake ventilation your attic depends on.",
+      "image": "/brands/frostroofingrenovations/soffit",
+      "imageAlt": "A worker in a hard hat fixing a soffit under a roof overhang",
+      "body": [
+        "The soffit is the underside of the roof overhang, and it is where your attic draws its air. Proper ventilation starts at soffit intake, not just roof vents, so a blocked or damaged soffit makes the whole roof run hotter.",
+        "As Lamanco Certified contractors we assess the full ventilation system rather than just the part that is visible from the street, so your home breathes the way it should."
+      ],
+      "points": [
+        "Residential soffit repair",
+        "Soffit installation",
+        "Vented soffit installation",
+        "Vinyl soffit repair",
+        "Roof soffit repair",
+        "Soffit and fascia repair together",
+        "Routine soffit cleaning",
+        "Attic intake ventilation assessed as a system"
+      ]
+    },
+    {
+      "slug": "painting",
+      "group": "residential",
+      "title": "Painting",
+      "short": "Interior and exterior painting for homes and businesses.",
+      "text": "Interior and exterior painting for homes and businesses, with paints chosen to hold up to Texas sun and weather.",
+      "image": "/brands/frostroofingrenovations/painting",
+      "imageAlt": "A painter on scaffolding working on the exterior wall of a building",
+      "body": [
+        "Exterior paint is the layer that keeps weather off the material underneath, so on a Texas elevation it is doing more than looking good. We prepare properly before any colour goes on.",
+        "We paint interiors and exteriors, residential and commercial, and we schedule commercial work around your hours."
+      ],
+      "points": [
+        "Interior painting",
+        "Exterior painting",
+        "Residential painting",
+        "Commercial painting",
+        "Painting and decorating"
+      ]
+    },
+    {
+      "slug": "sheet-rock",
+      "group": "residential",
+      "title": "Sheet Rock",
+      "short": "Sheetrock and drywall repair, replacement and installation.",
+      "text": "Sheetrock repair, replacement and installation, including ceilings, which is usually what a roof leak takes with it.",
+      "image": "/brands/frostroofingrenovations/sheet-rock",
+      "imageAlt": "A room with a ceiling opened up for sheetrock repair",
+      "body": [
+        "When water comes through a roof, the ceiling is where you see it. We repair and replace the sheetrock after the leak is fixed, so the inside of the house is finished rather than patched.",
+        "We also install drywall on renovation work, which keeps the roofing and the interior repair with one team."
+      ],
+      "points": [
+        "Sheetrock repair",
+        "Drywall installation",
+        "Ceiling sheetrock repair",
+        "Sheetrock replacement"
+      ]
+    },
+    {
+      "slug": "fencing",
+      "group": "residential",
+      "title": "Fencing",
+      "short": "Fence installation and repair in wood, vinyl, metal and chain link.",
+      "text": "Fence installation and repair in wood, vinyl, metal and chain link, including privacy and security fencing and gates.",
+      "image": "/brands/frostroofingrenovations/fencing",
+      "imageAlt": "A white vinyl privacy fence along a property line",
+      "body": [
+        "Fences in this climate take sun, wind and standing water, and the first thing to fail is usually a post rather than a panel. We will tell you whether a repair gets you more years or whether the run is done.",
+        "We install privacy, wood, vinyl, chain link, metal and security fencing, and fit metal gates to match."
+      ],
+      "points": [
+        "Fence installation and repair",
+        "Privacy fence installation",
+        "Wood fence installation",
+        "Vinyl fence installation",
+        "Chain link fence installation",
+        "Metal and security fence installation",
+        "Metal gate installation"
+      ]
+    },
+    {
+      "slug": "home-renovation",
+      "group": "residential",
+      "title": "Home Renovation",
+      "short": "Interior and exterior renovation, including kitchens and bathrooms.",
+      "text": "Interior and exterior renovation, from a single room to a whole house, handled by the same team that does your roof.",
+      "image": "/brands/frostroofingrenovations/home-renovation",
+      "imageAlt": "A tradesman working on built-in cabinetry during an interior renovation",
+      "body": [
+        "Frost Roofing & Renovations expertly handles the exterior and interior work that keeps your home looking good and performing the way it should. We are a full scale roofing and interior and exterior renovations company, so it is one trusted team rather than several contractors to juggle.",
+        "That covers kitchens, bathrooms and whole-house work as well as the exterior pieces, patios among them."
+      ],
+      "points": [
+        "Home repair and renovation, interior and exterior",
+        "Home remodeling",
+        "Kitchen renovation",
+        "Bathroom renovation",
+        "Whole house and custom renovation",
+        "Patios"
+      ]
+    }
+  ],
+  "claim": {
+    "title": "We make insurance claims easier",
+    "text": "Storm damage is stressful enough. We guide you from the first inspection through to the final cleanup, so you are not navigating it alone.",
+    "steps": [
+      { "title": "Free inspection", "text": "We look at the roof and the rest of the exterior for free, and tell you what we find." },
+      { "title": "Damage documented", "text": "We record the storm, hail, wind or water damage so there is evidence behind the claim." },
+      { "title": "Paperwork and filing", "text": "We handle the insurance-related paperwork and the filing, and guide you through the process." },
+      { "title": "Repair or replacement", "text": "Once the claim is settled, our own install team carries out the work." },
+      { "title": "Final cleanup", "text": "We finish the job and clean the site before we leave." }
+    ]
+  },
+  "materials": {
+    "title": "What we install",
+    "text": "We are proudly preferred contractors for Owens Corning and Worthouse Metal Roofing, and we install roofing systems engineered for performance, appearance and long-term coverage.",
+    "brands": ["Owens Corning", "Owens Corning Duration", "RizerRidge", "Worthouse Metal Roofing"]
+  },
+  "about": {
+    "title": "A decade of trusted roofing and renovation",
+    "text": [
+      "For ten years, Frost Roofing & Renovations has provided Houston-area homeowners with stellar roofing and remodeling services, committed to honest evaluations and a strong work ethic. Our team treats your property as their own and believes every job should be handled with care from start to finish.",
+      "Our install team has been with us since the company's inception. Maintaining a strong working relationship is what lets us put dependable crews, reliable craftsmanship and consistent results on every home.",
+      "We are bonded and insured, we have held an A+ BBB rating for all of our years, and we are preferred contractors for both Owens Corning and Worthouse Metal Roofing."
+    ],
+    "image": "/brands/frostroofingrenovations/about",
+    "imageAlt": "A roofer on scaffolding working along the roof of a brick home",
+    "values": [
+      { "title": "The Catch-All System", "text": "We protect your home, AC unit and landscaping before the first shingle comes off." },
+      { "title": "Two project managers", "text": "Every re-roof gets two, so someone is always on site watching your home and your project." },
+      { "title": "The Shingle Tomb", "text": "We leave matching shingles, your roof measurements and our details behind when we finish." }
+    ]
+  },
+  "inspection": {
+    "title": "What happens when you get in touch",
+    "steps": [
+      { "title": "You reach out", "text": "Call, email or fill in the form. We are always just a step away." },
+      { "title": "Free consultation or inspection", "text": "We schedule it at a time that works best for you, free, with no obligation." },
+      { "title": "Clear recommendations", "text": "We tell you what we found and what we would do about it." },
+      { "title": "A no-obligation estimate", "text": "You get the numbers in writing, so you know exactly what to expect." }
+    ]
+  },
+  "serviceArea": [
+    "League City",
+    "Clear Lake",
+    "Houston",
+    "Pearland",
+    "Friendswood",
+    "Webster",
+    "Dickinson",
+    "Galveston",
+    "Santa Fe",
+    "Katy",
+    "Spring",
+    "Humble",
+    "Missouri City",
+    "The Woodlands"
+  ],
+  "areasText": "No matter where you are in the Greater Houston area, our team is ready to bring roofing and renovation services to your doorstep.",
+  "areasImage": "/brands/frostroofingrenovations/areas",
+  "areasImageAlt": "A shingle roof overlooking homes near the water",
+  "contactImage": "/brands/frostroofingrenovations/contact",
+  "contactImageAlt": "A Frost Roofing banner and trailer outside a home being re-roofed",
+  "facts": [
+    {
+      "heading": "Certifications And Accreditations",
+      "items": [
+        "Owens Corning Preferred Contractor",
+        "Worthouse Metal Roofing Preferred Contractor",
+        "Lamanco Certified contractors",
+        "WPI-8 Certification Installation",
+        "A+ rated and accredited by the BBB",
+        "Bonded and insured"
+      ]
+    },
+    {
+      "heading": "What Separates Us From The Pack",
+      "items": [
+        "We protect your home before the first shingle comes off. We uniquely deploy The Catch-All System to help safeguard your home, AC unit and landscaping throughout the job.",
+        "We provide two project managers on every re-roof. If one has to step away for materials, someone is still on site keeping an eye on your home and your project.",
+        "As Lamanco Certified contractors we consider your home's distinct ventilation needs. Proper ventilation starts at soffit intake, not just roof vents.",
+        "We leave you set for the future, with a Shingle Tomb holding complimentary shingles matched to your roof's exact batch and brand, detailed roof measurements and our contact information.",
+        "Our install team has been with us since the company's inception.",
+        "Quality materials, every time, as a preferred contractor for both Owens Corning and Worthouse Metal Roofing."
+      ]
+    },
+    {
+      "heading": "Built On Five Values",
+      "text": "Authenticity, honesty, reliability, knowledge and quality. These five values are not simply something we list to market our business. They are the principles we apply to every single project we oversee and every relationship we build."
+    },
+    {
+      "heading": "Meet The Team",
+      "items": [
+        "Dustin Frost, Owner",
+        "Jaun Verde, Master Foreman",
+        "Brandon Simpson, Restoration Specialist",
+        "Dustin Stegall, Project Manager",
+        "Lance Skarke, Process Manager and Admin",
+        "Dulce, Lead Repair Team",
+        "Alfredo Paredes, Lead Repair Team",
+        "Connor Brooks, Restoration Specialist",
+        "Matt Ballentine, Restoration Specialist",
+        "Johnny Watson, Restoration Specialist"
+      ]
+    },
+    {
+      "heading": "What A Free Inspection Checks",
+      "items": [
+        "Missing or damaged shingles",
+        "Flashing and vent seals",
+        "Signs of water damage",
+        "Roof ventilation condition",
+        "Valleys and decking"
+      ]
+    },
+    {
+      "heading": "What Your Estimate Includes",
+      "items": [
+        "Clear photos of what we found",
+        "A written cost breakdown, materials and work",
+        "Material recommendations",
+        "A project timeline",
+        "Warranty coverage details",
+        "No hidden charges, and no obligation to go ahead"
+      ]
+    },
+    {
+      "heading": "Warranties",
+      "text": "We explain the warranty details before a replacement starts, and a repair estimate sets out the warranty coverage that comes with it. The systems we install carry manufacturer warranties, and every crew member is trained and insured so that coverage stays intact."
+    },
+    {
+      "heading": "Emergency And Storm Response",
+      "text": "Urgent cases come first, on homes and on commercial buildings, and we get there as quickly as we can, often the same day. We find the active leak, secure the exposed area and put temporary protection on, then plan the permanent repair."
+    },
+    {
+      "heading": "Get A Quote Online",
+      "text": "If you want a figure before booking a visit, start it from home: send the property address, clear photos of the roof and a description of what you are seeing, and ask for a follow-up call. An inspection is still how the work gets priced accurately, but this gives you a starting point for planning."
+    },
+    {
+      "heading": "When To Book An Inspection",
+      "items": [
+        "Before storm season",
+        "After heavy hail",
+        "During a home purchase",
+        "Every few years as routine maintenance"
+      ]
+    },
+    {
+      "heading": "How We Work",
+      "text": "We are a fully licensed roofing contractor in Texas and carry proper insurance. Our crews follow Texas building codes and each manufacturer's installation guidelines, we fix what caused the damage rather than the symptom, and we leave the work area clean."
+    },
+    {
+      "heading": "Follow Us",
+      "items": [
+        "Facebook: facebook.com/Frostroof",
+        "Instagram: instagram.com/frost_roofing",
+        "X: x.com/frost_roofing",
+        "YouTube: youtube.com/@frost_roof"
+      ]
+    },
+    {
+      "heading": "Where Else We Work",
+      "text": "Beyond the towns listed above we serve much of Greater Houston and the surrounding communities, including but not limited to Sugar Land, La Porte, Manvel, Seabrook, Texas City, Hitchcock, La Marque, Kemah, Baytown, Pasadena, Deer Park, South Houston, Cypress, Mont Belvieu, Rosenberg, Stafford, Richmond, Lake Jackson, Alvin, Angleton, Atascocita, Tomball, Beaumont, Jersey Village, San Leon, Clear Lake Shores and Jamaica Beach."
+    }
+  ]
+}

@@ -1,0 +1,397 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "Priority Roofing",
+  "shortName": "Priority Roofing",
+  "phone": "(281) 380-0357",
+  "email": "houston@priorityroofs.com",
+  "address": "260 N Sam Houston Pkwy E, Suite 150",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77060",
+  "rating": 5.0,
+  "reviewCount": 377,
+  "license": "Family-owned, insured and bonded. GAF Master Elite roofer.",
+  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "brand": {
+    "primary": "#205baf",
+    "primaryDeep": "#16437f",
+    "accent": "#d95f3f",
+    "ink": "#181a1d",
+    "surface": "#f5f9ff",
+    "heading": "'Manrope', system-ui, sans-serif",
+    "body": "'Manrope', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap",
+    "logo": "/brands/priorityroofing/logo.webp",
+    "logoWidth": 170
+  },
+  "hero": {
+    "eyebrow": "Houston roofing contractor",
+    "title": "Roof repair and replacement",
+    "titleAccent": "in Houston, Texas.",
+    "lead": "For a leaky or damaged roof, Priority Roofing is your trusted local roof repair, replacement and installation company in Houston. Our branch on Sam Houston Parkway serves the greater Houston area, and the inspection is free.",
+    "image": "/brands/priorityroofing/hero",
+    "imageAlt": "A newly shingled roof on a stone home under a blue sky"
+  },
+  "promises": [
+    "Free roof inspections",
+    "No money up front",
+    "Photo documentation of damage",
+    "5 to 20 year labor warranty"
+  ],
+  "services": [
+    {
+      "slug": "roof-inspections",
+      "group": "residential",
+      "title": "Roof Inspections",
+      "short": "A free inspection with photos of what we find.",
+      "text": "A free, thorough inspection that spots storm or wear damage early, with a detailed report and repair recommendations.",
+      "image": "/brands/priorityroofing/inspection",
+      "imageAlt": "An aerial view of a shingle roof on a Houston-area home",
+      "body": [
+        "Severe weather takes a toll on a roof in this part of Texas. Priority Roofing offers thorough residential inspections to spot storm or wear damage early, with detailed reports and repair recommendations that keep your home safe.",
+        "Words are words, and you may hear everything and anything from a roofing company. That is why we show you photo documentation of any damage on your property, and make sure you are aware of the current parameters insurance companies set for a roof to qualify as totaled."
+      ],
+      "points": [
+        "Free inspection, with no obligation",
+        "Photo documentation of your roof's condition",
+        "Detailed report and repair recommendations",
+        "Storm response inside 24 to 48 hours",
+        "Free drone inspection available on commercial buildings"
+      ],
+      "faqs": [
+        {
+          "q": "Does Priority Roofing offer free roof inspections in Houston?",
+          "a": "Yes, we offer free roof inspections, especially after storms in Houston, to assess any damage and help you plan your next steps."
+        },
+        {
+          "q": "How often should I have my roof inspected?",
+          "a": "Priority Roofing recommends checking your roof at least twice a year, particularly after storms or if you spot any damage."
+        },
+        {
+          "q": "Who should I choose?",
+          "a": "It is hard to know who to trust, so we encourage homeowners to ask questions. Your roofer should know the ins and outs of the roof and the insurance process. Check reviews, because the best way to vet a company is to see what other people's experiences are. And look for credentials: choose a company that holds the top certifications from the manufacturers whose products you will be installing."
+        }
+      ]
+    },
+    {
+      "slug": "roof-repair",
+      "group": "residential",
+      "title": "Roof Repair",
+      "short": "Leaks, missing shingles and overflowing gutters.",
+      "text": "Roof leaks, missing shingles and constantly overflowing gutters are all signs your roof needs professional repair. Our specialists inspect it and recommend the right fix.",
+      "image": "/brands/priorityroofing/repair",
+      "imageAlt": "An aerial view of a dark shingle roof over a home and outbuildings",
+      "body": [
+        "Experiencing roof leaks, missing shingles, or constantly overflowing gutters? These can all be signs your roof needs professional repair. Priority Roofing offers expert residential roof repair to address all types of roofing issues, and our trained specialists will inspect your roof and recommend the best repair solution to keep your home protected from the elements.",
+        "We also offer emergency roof repair in Houston, available to help you quickly after storm damage or other urgent issues."
+      ],
+      "points": [
+        "Leak repair",
+        "Missing and damaged shingles",
+        "Gutter and drainage problems",
+        "Emergency repairs after storm damage",
+        "Tarping and temporary patching"
+      ],
+      "faqs": [
+        {
+          "q": "How long does a typical roof repair or replacement take in Houston?",
+          "a": "Roof repairs or replacements can take anywhere from a day to several weeks, depending on the size and complexity of the roof. Contact us for a free consultation and we will give you a more specific timeline."
+        },
+        {
+          "q": "Do you offer emergency roof repair in Houston?",
+          "a": "Yes. We offer emergency roof repair services in Houston, available to help you quickly after storm damage or other urgent issues."
+        }
+      ]
+    },
+    {
+      "slug": "roof-replacement",
+      "group": "residential",
+      "title": "Roof Replacement",
+      "short": "A full replacement, step by step, with a labor warranty.",
+      "text": "Still dealing with leaks after repairs, or higher energy bills? Priority Roofing makes residential roof replacement straightforward, with a range of quality materials to match your home.",
+      "image": "/brands/priorityroofing/replacement",
+      "imageAlt": "A new shingle roof over the gables of a brick home",
+      "materials": true,
+      "body": [
+        "Still dealing with roof leaks after repairs, or higher energy bills? It might be time for a replacement. With years of local expertise we offer efficient service and a range of quality materials to find the match for your home.",
+        "We understand that installing a new roof can seem like a daunting task, but our friendly team of experts is here to support you every step of the way. The benefits homeowners tell us about are reduced utility expenses, an increase in home value and a lower insurance premium, alongside the 10 year labor warranty and no-leak guarantee."
+      ],
+      "points": [
+        "Tear off: we remove all existing layers of shingles",
+        "Decking: up to three sheets replaced at no additional cost",
+        "Underlayment: synthetic, a 100 percent waterproof barrier rather than #15 felt",
+        "Starter strip around the perimeter, with a lifetime and 110 mph wind warranty",
+        "Valley protection: GAF Ice and Water Shield, peel and stick and self sealing",
+        "Dura Flo pipe flashings, carrying a 35 year manufacturer warranty",
+        "Ventilation sized to the NFVA your home needs",
+        "Yard cleanup with a magnetic toolbar once we finish"
+      ],
+      "faqs": [
+        {
+          "q": "Does Priority Roofing offer warranties on its work?",
+          "a": "Yes. Priority Roofing offers warranties, including both manufacturer warranties on materials and labor warranties on installation. You can receive warranty options ranging from 10 to 25 years, depending on the chosen roofing system."
+        },
+        {
+          "q": "How do I know my roof is damaged?",
+          "a": "We show you photo documentation of any damage on your property, and make sure you are aware of the current parameters set by insurance companies to qualify for a totaled roof."
+        }
+      ]
+    },
+    {
+      "slug": "designer-roofing",
+      "group": "residential",
+      "title": "Designer Roofing",
+      "short": "Slate, clay tile, synthetic, shake, standing seam and stone-coated steel.",
+      "text": "Priority Designer restores century-old slate and clay tile, installs lightweight systems like Brava, and does custom copper work.",
+      "image": "/brands/priorityroofing/designer",
+      "imageAlt": "A large home with a slate-style roof and multiple gables",
+      "body": [
+        "Whether you have a 100-year-old slate or clay tile roof in need of restoration, you are building a new home with a lightweight system like Brava, or you want custom copper work to make a statement, Priority Designer has the knowledge to guide you through your project.",
+        "In addition to asphalt shingles, our Houston branch offers designer roofing inspection, repair and replacement backed by the finest products and reputable certifications, including GAF, NRCA, UASRC and OSHA, along with our labor warranties.",
+        "We also offer free annual inspections on a designer roof, which are the easiest way to be sure your investment is in good condition. We perform them at no cost, usually by drone so the roof takes no further damage, and send you a full engineer's report on its condition. Slate and clay tile are the roofs we concentrate on for these annual inspections."
+      ],
+      "points": [
+        "Free annual inspections, usually by drone, with a full engineer's report",
+        "Slate and clay tile restoration on century-old roofs",
+        "Custom copper work",
+        "Slate, a natural stone roof that often exceeds a century with proper maintenance",
+        "Clay tile, with a lifespan beyond 50 years and minimal maintenance",
+        "Synthetic, engineered polymers that replicate slate, wood or clay tile",
+        "Shake, usually cedar, resistant to decay and insects for over 30 years",
+        "Standing seam metal, 40 to 70 years, watertight and energy efficient",
+        "Stone-coated steel, 40 to 70 years, in styles matching tile, slate or shingle"
+      ]
+    },
+    {
+      "slug": "storm-damage",
+      "group": "storm",
+      "title": "Storm Damage",
+      "short": "Quick inspections and emergency repairs after a storm.",
+      "text": "After a storm we inspect inside 24 to 48 hours, tarp and temporarily patch to stop further damage, and document everything with photos.",
+      "image": "/brands/priorityroofing/storm",
+      "imageAlt": "An aerial view of a large home with a dark shingle roof and grounds",
+      "body": [
+        "At Priority we don't chase storms, we help restore the communities that we live in. With years of experience working with insurance companies, we're prepared to assist you when storms or bad weather hit your area.",
+        "For roof repair in Houston after a storm, we respond inside 24 to 48 hours, provide tarping and temporary patching to prevent further damage, and give you a free inspection with photo documentation of your roof's condition."
+      ],
+      "points": [
+        "Quick inspections, a 24 to 48 hour response time",
+        "Emergency tarping and temporary patching",
+        "Free inspection with photo documentation",
+        "Insurance support with documentation and adjuster meetings",
+        "Repair or replacement once the claim is settled"
+      ]
+    },
+    {
+      "slug": "insurance-claims",
+      "group": "storm",
+      "title": "Insurance Claim Help",
+      "short": "Documentation, adjuster meetings and the work that follows.",
+      "text": "We assist you with all aspects of your insurance claim, including documentation and meetings with the adjuster.",
+      "image": "/brands/priorityroofing/claims",
+      "imageAlt": "A roofing crew working on a tile roof with a city skyline behind",
+      "claim": true,
+      "body": [
+        "We assist you with all aspects of your insurance claim, including documentation and meetings with the adjuster. To make sure you are well supported during the repair, we also offer warranties and complimentary inspections.",
+        "Your roofer should know the ins and outs of the roof and the insurance process. We show you the photo documentation and make sure you are aware of the current parameters set by insurance companies to qualify for a totaled roof, so you can decide with the facts in front of you."
+      ],
+      "points": [
+        "Photo documentation of the damage",
+        "Help filing and following the claim",
+        "We meet your adjuster at the property",
+        "Decking replaced and invoiced to your insurer where it is rotted",
+        "Repair or replacement once the claim is approved"
+      ]
+    },
+    {
+      "slug": "commercial-roofing",
+      "group": "commercial",
+      "title": "Commercial Roofing",
+      "short": "Inspections, repairs, replacement, maintenance, metal and coatings.",
+      "text": "Commercial roofing inspection, repair and replacement backed by premier products and both labor and product warranties.",
+      "image": "/brands/priorityroofing/commercial",
+      "imageAlt": "A large flat commercial roof on a single-storey building",
+      "body": [
+        "Priority Roofing delivers commercial roofing solutions, including inspections, repairs, replacements, maintenance, and options like metal and roof coatings. We work with you to find the most durable, cost-effective solution for your building and your business goals.",
+        "Our highly trained commercial roofing experts use current technology to assess your roof accurately, so you receive only the work that is essential. A free drone roof inspection gives you an aerial assessment of your roof at no cost, as a one-off, semi-annually or annually."
+      ],
+      "points": [
+        "Commercial roof inspections, including free drone inspections",
+        "Commercial roof repairs",
+        "Replacement and maintenance programs",
+        "Metal roofing and roof coatings",
+        "Asphalt shingle: lifetime material warranty with 10 year labor coverage",
+        "Single-ply: 20 year warranty and a no-leak guarantee; metal: 20 years",
+        "Clay, tile, slate, SPF foam and modified bitumen: warranties up to 30 years"
+      ]
+    }
+  ],
+  "claim": {
+    "title": "How a storm claim works",
+    "text": "With years of experience working with insurance companies, here is how we handle a claim with you.",
+    "steps": [
+      {
+        "title": "Quick inspection",
+        "text": "We respond inside 24 to 48 hours after a storm and inspect the roof."
+      },
+      {
+        "title": "Photo documentation",
+        "text": "You get a free inspection with photo documentation of your roof's condition."
+      },
+      {
+        "title": "Emergency repairs",
+        "text": "We tarp and temporarily patch where needed to prevent further damage."
+      },
+      {
+        "title": "Insurance support",
+        "text": "We assist with the claim, providing documentation and meeting with the adjuster."
+      },
+      {
+        "title": "Repair or replacement",
+        "text": "Once the claim is settled, our crew does the work under our labor warranty."
+      }
+    ]
+  },
+  "materials": {
+    "title": "Materials and manufacturers",
+    "text": "Priority Roofing is a GAF Master Elite roofer and an Owens Corning Preferred Contractor.",
+    "brands": ["GAF", "Owens Corning", "DaVinci Roofscapes", "Brava", "EuroShield", "CeDUR"]
+  },
+  "about": {
+    "title": "Your trusted local roofer in Houston",
+    "text": [
+      "For a leaky or damaged roof, Priority Roofing is your trusted local roof repair, replacement and installation company in Houston, Texas. As your trusted local roofer, we deliver exceptional and guaranteed roofing services throughout the greater Houston area.",
+      "Priority Roofing is family-owned, and local management and production teams run more than 30 locations. Our Houston branch is dedicated to delivering exceptional customer service and exceptional workmanship, and we offer some of the best warranties in the roofing industry.",
+      "At Priority we don't chase storms, we help restore the communities that we live in. As the roofing company in Houston, we take pride in our quality, integrity and transparency, and we are licensed and insured."
+    ],
+    "image": "/brands/priorityroofing/about",
+    "imageAlt": "A stone home with a steep new shingle roof and dormer",
+    "values": [
+      {
+        "title": "Convenient location",
+        "text": "Our office on Sam Houston Parkway makes it easy for you to reach us."
+      },
+      {
+        "title": "No high-pressure sales",
+        "text": "We put honesty and transparency into every interaction."
+      },
+      {
+        "title": "Family-owned values",
+        "text": "We treat every home as if it were our own, with care and respect."
+      }
+    ]
+  },
+  "inspection": {
+    "title": "What happens at a free inspection",
+    "steps": [
+      {
+        "title": "Get in touch",
+        "text": "Call or email the Houston office and we will set a time for your free inspection."
+      },
+      {
+        "title": "We check the roof",
+        "text": "We assess the roof for storm or wear damage, leaks and anything that needs attention."
+      },
+      {
+        "title": "You see the photos",
+        "text": "You get photo documentation of your roof's condition and our repair recommendations."
+      }
+    ]
+  },
+  "serviceArea": [
+    "Houston",
+    "Sugar Land",
+    "Pasadena",
+    "Jacinto City",
+    "Galena Park",
+    "Missouri City",
+    "Houston Heights",
+    "Golden Acres",
+    "River Oaks",
+    "League City",
+    "Galveston"
+  ],
+  "areasText": "We serve Houston and the neighbouring communities. If your area is not listed, please reach out and we will be happy to assist you.",
+  "areasImage": "/brands/priorityroofing/areas",
+  "areasImageAlt": "The downtown Houston skyline at dusk",
+  "contactImage": "/brands/priorityroofing/contact",
+  "contactImageAlt": "An aerial view of a home with a new tile and shingle roof",
+  "facts": [
+    {
+      "heading": "Certifications",
+      "items": [
+        "GAF Master Elite roofer",
+        "Owens Corning Preferred Contractor",
+        "NRCA certified",
+        "UASRC certified",
+        "OSHA certified"
+      ]
+    },
+    {
+      "heading": "Years in business",
+      "text": "Over 9 years of service as a family-owned roofing company."
+    },
+    {
+      "heading": "Full-service roofing",
+      "text": "From inspections through to installation, with a fully stocked warehouse and a dedicated team of project managers, roofing crews and repair technicians."
+    },
+    {
+      "heading": "Warranties and guarantees",
+      "items": [
+        "Warranty options from 10 to 25 years, depending on the roofing system",
+        "A 5 to 20 year labor warranty and a no-leak guarantee",
+        "Starter strip with a lifetime and 110 mph wind warranty",
+        "Dura Flo pipe flashings with a 35 year manufacturer warranty"
+      ]
+    },
+    {
+      "heading": "The Good Contractors List",
+      "text": "Priority Roofing is a member of The Good Contractors List, which carries a $10,000 guarantee on every job we perform."
+    },
+    {
+      "heading": "Recognition",
+      "text": "Ranked 15th in the nation by RoofingContractor.com."
+    },
+    {
+      "heading": "Our promises to you",
+      "items": [
+        "No money up front: we will not ask for a dime until the work is done",
+        "Honest in everything we say and do",
+        "We will do the job right, and fix it if a mistake happens",
+        "Focused attention and care for your home"
+      ]
+    },
+    {
+      "heading": "The Houston team",
+      "items": [
+        "Jason Abney, Managing Partner, Houston",
+        "Bree Lewis, Office Manager, Houston, with Priority since 2024"
+      ]
+    },
+    {
+      "heading": "The company",
+      "items": [
+        "Will Miller, Owner and President",
+        "Micah McQueen, Vice President, with Priority since 2018",
+        "Victoria Miller, Chief Financial Officer",
+        "Mark Robinette, Chief Operations Officer",
+        "Katelyn Neil, Director of Operations"
+      ]
+    },
+    {
+      "heading": "Support and payments",
+      "text": "Priority Roofing's support team is reachable 24/7 on (469) 615-8193, and payments can be made online through the Make a Payment page on priorityroofs.com. Please add 3 percent if you are paying by credit card."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "facebook.com/PriorityContractingandRoofing",
+        "instagram.com/priority_roofs",
+        "instagram.com/prioritydesignerroofs",
+        "twitter.com/PriorityRoofs",
+        "linkedin.com/company/priority-contracting-and-roofing"
+      ]
+    }
+  ]
+}
