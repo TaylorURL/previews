@@ -1,0 +1,391 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Lumens Electric LLC",
+  "shortName": "Lumens Electric",
+  "summary": "Residential and commercial electrical repairs, remodels and new construction in Houston and the surrounding area.",
+  "phone": "(713) 649-7800",
+  "email": "service@lumenselectric.com",
+  "address": "3500 S Richey St Ste. 310",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77017",
+  "since": 2006,
+  "hours": [["Monday – Sunday", "Open 24 hours"]],
+  "brand": {
+    "primary": "#000462",
+    "primaryDeep": "#000238",
+    "accent": "#ff0004",
+    "ink": "#0a0f24",
+    "muted": "#4b5270",
+    "surface": "#eef0f8",
+    "line": "#d6dae9",
+    "heading": "'Archivo', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/lumenselectric/logo.webp",
+    "logoWidth": 210
+  },
+  "emergency": {
+    "title": "24/7 emergency service",
+    "text": "Electrical emergencies do not wait for a convenient time, so our licensed electricians are on call 24/7 and respond anywhere in the Houston area."
+  },
+  "licenses": [
+    { "label": "Eaton", "number": "Certified Electrical Contractor" },
+    { "label": "Lutron", "number": "PRO Residential" }
+  ],
+  "financing": {
+    "text": "Financing is available through GreenSky."
+  },
+  "hero": {
+    "eyebrow": "Electrical contractor in Houston, TX",
+    "title": "Light any part of your home or business",
+    "titleAccent": "however you see fit.",
+    "lead": "Licensed electricians for repairs, remodels and new construction, with up front pricing you approve in writing before any work starts. Free estimates on new construction and remodels.",
+    "image": "/brands/lumenselectric/hero",
+    "imageAlt": "A kitchen lit by recessed ceiling lights and a hanging fixture"
+  },
+  "groups": [
+    {
+      "slug": "residential-electrical",
+      "title": "Residential Electrical",
+      "icon": "plug",
+      "summary": "Repairs, rewiring, outlets and ceiling fans for homes across the Houston area.",
+      "intro": "Whether it is a light switch that is not working properly, a sprinkler system that will not program or part of the house sitting in the dark, we have been called in on it before. We repair what is there regardless of who installed it in the first place.",
+      "image": "/brands/lumenselectric/residential",
+      "imageAlt": "A kitchen with pendant lights over the counter and under-cabinet lighting",
+      "services": [
+        {
+          "slug": "electrical-repairs",
+          "title": "Electrical Repairs",
+          "icon": "wrench",
+          "text": "A light switch that will not work, a sound system out of sync, a sprinkler timer that will not program or part of the house in the dark.",
+          "points": [
+            "Troubleshooting first, to pinpoint where the problem is coming from",
+            "Systems repaired whether or not we installed them",
+            "Available 24/7 for emergencies"
+          ]
+        },
+        {
+          "slug": "electrical-wiring-repairs",
+          "title": "Electrical Wiring & Repairs",
+          "icon": "cable",
+          "text": "Wiring that has stopped working through age and use, traced and replaced by people who do it every day.",
+          "points": [
+            "Dead outlets and bulbs that will not light",
+            "Flickering lights are usually the wiring, not a ghost",
+            "Replacement wiring improves performance across your appliances"
+          ]
+        },
+        {
+          "slug": "outlets-and-gfci",
+          "title": "Outlets and GFCI Installation & Repairs",
+          "icon": "plug",
+          "text": "Worn outlets replaced before they chew through your chargers, and extra outlets added where you have run out.",
+          "points": [
+            "Outlets that keep pulling off the wall, usually a poor first install",
+            "Capacity updated for the number of devices a home runs now",
+            "GFCI protection where moisture is a factor, such as kitchens and bathrooms",
+            "Tamper-resistant outlets and outlets with USB ports, where you want them",
+            "Residential and commercial"
+          ]
+        },
+        {
+          "slug": "ceiling-fan-installation",
+          "title": "Ceiling Fan Installation",
+          "icon": "fan",
+          "text": "Ceiling fans installed and wired, including odd-shaped ceilings and spots with no existing box.",
+          "points": [
+            "Swapping one fan for another is often done within the hour",
+            "Any opening is covered by the fan itself or properly repaired",
+            "Wiring run correctly inside walls and ceilings"
+          ]
+        },
+        {
+          "slug": "aluminum-wiring-replacement",
+          "title": "Aluminum Wiring Replacement",
+          "icon": "cable",
+          "text": "Homes built in the fifties and sixties often run on aluminum wiring, which heats up more than today's copper and raises the fire hazard.",
+          "points": [
+            "Some insurers will not pay a fire claim on a house still wired in aluminum",
+            "Better lighting performance and fewer flickering rooms afterwards",
+            "More devices plugged in without worrying about the socket"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "panels-and-safety",
+      "title": "Panels and Safety",
+      "icon": "circuit",
+      "summary": "Breaker box upgrades, safety inspections, surge protection and alarms.",
+      "intro": "Breaker boxes wear down and fall behind what a house now asks of them. We inspect the whole system, correct what the City of Houston's guidelines call for, and lay out the options rather than replacing equipment on a hunch.",
+      "image": "/brands/lumenselectric/panels",
+      "imageAlt": "An opened breaker panel with its wiring exposed",
+      "services": [
+        {
+          "slug": "breaker-box-panel-upgrades",
+          "title": "Breaker Box Panel Upgrades & Repairs",
+          "icon": "circuit",
+          "text": "Switches, internal wiring and whole panels replaced, because homes run more electrical appliances now than they did ten or twenty years ago.",
+          "points": [
+            "Soft upgrades: individual switches replaced rather than a full rewire",
+            "Panels adjusted to meet the demands of a system update",
+            "A range of options laid out for you to choose from"
+          ]
+        },
+        {
+          "slug": "electrical-safety-inspections",
+          "title": "Electrical Safety Inspections",
+          "icon": "shield",
+          "text": "All of your wiring and breaker boxes checked for loose wiring and anything that could be a fire hazard, and taken care of when we find it.",
+          "points": [
+            "Electrical code corrections to the City of Houston's guidelines",
+            "Worth doing before you put a house on the market",
+            "Yearly is the usual answer; older wiring warrants more often"
+          ]
+        },
+        {
+          "slug": "surge-protection-grounding",
+          "title": "Surge Protection & Grounding Systems",
+          "icon": "zap",
+          "text": "Protection that prevents major damage when equipment is hit by lightning or anything else comes to pass.",
+          "points": [
+            "Ground fault and arc fault protection",
+            "Whole-house protection at the panel, or point-of-use protection on the individual devices worth guarding",
+            "Different approaches to protect a range of appliances",
+            "Homes and businesses"
+          ]
+        },
+        {
+          "slug": "electrical-alarms",
+          "title": "Electrical Alarms",
+          "icon": "battery",
+          "text": "Smoke and carbon monoxide alarms installed, relocated and kept running, so the system works on the day you need it.",
+          "points": [
+            "Smoke alarms repositioned so cooking does not set them off",
+            "Carbon monoxide detection, for a gas you will not notice yourself",
+            "Backup power added so alarms keep working through an outage",
+            "Inspections you can book to check every part of the system, on top of the monthly test you do yourself"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "lighting",
+      "title": "Lighting",
+      "icon": "lightbulb",
+      "summary": "Landscape, security, pool and recessed lighting, installed and repaired.",
+      "intro": "A large share of the work we get is residential lighting, and lighting is a crucial part of how a home is designed rather than a matter of hooking up some lights. Landscape lighting alone is a universe of its own.",
+      "image": "/brands/lumenselectric/lighting",
+      "imageAlt": "A cluster of hanging pendant bulbs against a dark ceiling",
+      "services": [
+        {
+          "slug": "lighting-installation-and-repair",
+          "title": "Lighting Installation and Repair",
+          "icon": "lightbulb",
+          "text": "Landscape, recessed, security and pool lighting, and the setups other companies will not take on because they are not cookie-cutter.",
+          "points": [
+            "Pool and water-adjacent lighting done safely",
+            "Low voltage landscape systems, so the lighting does not run up the bill",
+            "Security lighting that pairs with an alarm system and cameras",
+            "A lighting consultation first, where we look at what is there and lay out a plan before anything is installed"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "generators-and-ev-charging",
+      "title": "Generators and EV Charging",
+      "icon": "power",
+      "summary": "Home generators sized to what you need, and car charging stations set up properly.",
+      "intro": "Both come down to sizing and setup. We work out what you actually need to power before anyone spends money on a machine that delivers all the watts in the world.",
+      "image": "/brands/lumenselectric/generators",
+      "imageAlt": "A portable gasoline generator on wheels",
+      "services": [
+        {
+          "slug": "home-generators",
+          "title": "Home Generators",
+          "icon": "power",
+          "text": "The right size generator for the appliances you would need in an outage, rather than an excessive spend on capacity you will not use.",
+          "points": [
+            "We work from your own list of must-run appliances",
+            "Automatic kick-in set up, so it starts when the power goes out",
+            "Transfer and changeover handled"
+          ]
+        },
+        {
+          "slug": "car-charging-stations",
+          "title": "Car Charging Stations",
+          "icon": "ev",
+          "text": "Home charging stations set up so your vehicle is charged when you start the day, and so the install does not blow up your electric bill.",
+          "points": [
+            "We have been setting up charging stations since electric golf carts",
+            "Setup matched to your particular driving needs",
+            "Doing it right the first time saves money down the road"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "commercial-electrical",
+      "title": "Commercial Electrical",
+      "icon": "building",
+      "summary": "Large scale commercial repairs, retrofits, panel upgrades and energy audits.",
+      "intro": "Troubleshooting is step one on every commercial job, so we can pinpoint where an issue is coming from and give you a budget before anything is replaced. Plenty of problems have been solved by realigning cables or reconfiguring a device, and not every issue sets you back hundreds of dollars.",
+      "image": "/brands/lumenselectric/commercial",
+      "imageAlt": "An office corridor lit by recessed ceiling panels",
+      "services": [
+        {
+          "slug": "commercial-electrical-services",
+          "title": "Commercial Electrical Services",
+          "icon": "building",
+          "text": "Panel upgrades, all-around lighting, setups and retrofit services for commercial properties, plus a check on all of your electrical fixtures.",
+          "points": [
+            "Troubleshooting before any replacement, then a budget you approve",
+            "Your setup and panel brought in line with local laws and regulations, so fines are not waiting for you",
+            "Certified electricians spearheading the project",
+            "Safety inspections written up as a report, with what needs repairing or upgrading"
+          ]
+        },
+        {
+          "slug": "energy-efficiency",
+          "title": "Energy Efficiency Solutions",
+          "icon": "gauge",
+          "text": "Energy audits and energy-efficient system installation, which lower consumption and improve how the electrical system performs overall.",
+          "points": [
+            "Aimed at reducing operating costs on a commercial property",
+            "LED lighting upgrades, smart thermostats and advanced surge protection"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Established in 2006, and still on time.",
+    "text": [
+      "Lumens Electric is a Houston electrical contractor serving homeowners, property managers and commercial clients. We know your time is valuable, which is why we are committed to being on time to our appointments.",
+      "We are knowledgeable in all residential and commercial electrical installations and repairs, and we take the time to fully understand what the customer is trying to accomplish, as well as to offer advice when we see fit. We provide up front pricing and start work only after the customer understands, in writing, the service we are going to provide, including the total cost. Estimates on new construction and remodels are free.",
+      "The business is owned by Pablo Rios Jr., who has 34 years of experience in the electrical field and extensive knowledge of residential and commercial projects. He is NCCER Certified and was an Electrical Technology Instructor at Houston Community College under Tom Tynan. He believes in listening to the needs and concerns of his customers first and then offering his recommendation, and that trust is one of the greatest attributes a man can have."
+    ],
+    "image": "/brands/lumenselectric/team",
+    "imageAlt": "Two Lumens Electric service trucks with ladder racks parked on a job",
+    "values": [
+      { "title": "On time", "text": "Your time is valuable, so we are committed to being on time to our appointments." },
+      { "title": "Knowledgeable", "text": "We take the time to fully understand what you are trying to accomplish, and offer advice when we see fit." },
+      { "title": "Up front pricing", "text": "Work starts only once you understand, in writing, the service we will provide and the total cost." }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Do I need to hurry to replace aluminum wiring?",
+      "a": "No. If the wires were so harmful your home would not still be standing, so it is not something to stop what you are doing over. The main reason people have it done is that some insurance companies could refuse to pay over fire damages if the home still has aluminum wiring."
+    },
+    {
+      "q": "How often should I have my home inspected?",
+      "a": "The go-to answer is that yearly inspections are a good idea. If you have older equipment and wiring at home you could be more at risk, and may want to consider more inspections per year or outright changing the wiring and appliances."
+    },
+    {
+      "q": "How much damage does installing a ceiling fan do to the ceiling?",
+      "a": "We do have to drill and run the wiring inside walls and ceilings, and our certified electricians go to great lengths to ensure whatever is done to the ceiling is either covered up by the fan itself or properly repaired."
+    },
+    {
+      "q": "How long does a ceiling fan installation take?",
+      "a": "If we are removing one fan and putting in another, there is a good chance we can do it within the hour. Otherwise it depends on how long it takes to hook up the wiring in the exact spot you need the fan placed."
+    },
+    {
+      "q": "How do I work out what size generator I need?",
+      "a": "Make a list of the appliances you would most need to keep running in an outage. People typically name the AC, the fridge and a pump for clean water, which would need a generator providing at least 6910 starting watts and 3610 running watts."
+    },
+    {
+      "q": "Do you charge for an estimate?",
+      "a": "We provide free estimates on new construction and remodels. You can also request a free quote through the contact form or by calling (713) 649-7800."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Sugar Land",
+    "Meadows Place",
+    "Pasadena",
+    "Clear Lake",
+    "Friendswood",
+    "Pearland",
+    "Missouri City",
+    "West University",
+    "Bellaire",
+    "La Porte",
+    "Baytown",
+    "League City",
+    "Katy",
+    "Spring",
+    "Humble",
+    "Kingwood",
+    "The Woodlands"
+  ],
+  "facts": [
+    {
+      "heading": "Our team",
+      "items": [
+        "Pablo Rios Jr. — Business Owner",
+        "Carmelo Martinez — Lead Installer",
+        "Jason Moreno — Service Manager",
+        "Marco Duarte — Business Development",
+        "Samuel Wentworth — Office Manager"
+      ]
+    },
+    {
+      "heading": "Certifications and affiliations",
+      "items": [
+        "Eaton Certified Electrical Contractor",
+        "Lutron PRO Residential",
+        "NCCER Certified ownership",
+        "State of Texas Seal of the Residential Safety Professionals: background checked, trained and skilled, drug tested",
+        "Better Business Bureau accredited profile"
+      ]
+    },
+    {
+      "heading": "Awards",
+      "text": "Winners of the Best of HomeAdvisor award in 2015, 2019 and 2020."
+    },
+    {
+      "heading": "Guarantee",
+      "text": "100% satisfaction guaranteed."
+    },
+    {
+      "heading": "Pricing and estimates",
+      "text": "Up front pricing, with work starting only after you understand in writing the service and the total cost. Free estimates on new construction and remodels, and free quotes by phone or through the contact form."
+    },
+    {
+      "heading": "Financing",
+      "text": "Financing is available through GreenSky."
+    },
+    {
+      "heading": "What we work on",
+      "text": "Residential and commercial repairs, remodels and new construction, with particular experience on older properties and on adding EV charging and smart lighting."
+    },
+    {
+      "heading": "Ways to reach us",
+      "items": [
+        "Call (713) 649-7800",
+        "Text (832) 818-4080",
+        "Email service@lumenselectric.com",
+        "Send a service request online, any time, and we come back to you"
+      ]
+    },
+    {
+      "heading": "Your information",
+      "text": "What you send us through the form or by email is used only to answer you. It is not sold or passed to anyone unaffiliated with us without your say-so."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/Lumens-Electric-118199119965346",
+        "Yelp: yelp.com/biz/lumens-electric-houston-3",
+        "HomeAdvisor: homeadvisor.com/rated.LumensElectricLLC.12885171.html",
+        "Angi: angieslist.com/companylist/us/tx/houston/lumens-electric-reviews-2683012.htm",
+        "BBB: bbb.org/us/tx/houston/profile/electrician/lumens-electric-llc-0915-10000244"
+      ]
+    }
+  ]
+}
