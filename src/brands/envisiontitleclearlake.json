@@ -1,0 +1,271 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "title",
+  "name": "Envision Title",
+  "shortName": "Envision Title",
+  "tagline": "A full service title agency, from contract to close",
+  "phone": "(281) 671-0435",
+  "email": "lhelmbrecht@envisiontitletexas.com",
+  "address": "1331 Gemini St #200",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77058",
+  "rating": 4.9,
+  "reviewCount": 145,
+  "hours": [
+    ["Mon – Fri", "8 AM – 5 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "cta": {
+    "label": "Open a Title Order",
+    "text": "Call the Clear Lake office or send over the contract, and an escrow officer will open title and take it from there."
+  },
+  "brand": {
+    "primary": "#075A9E",
+    "primaryDeep": "#04406F",
+    "accent": "#0073CF",
+    "ink": "#1a222d",
+    "muted": "#586475",
+    "surface": "#f4f7fb",
+    "cream": "#e7eff7",
+    "line": "#d7e2ee",
+    "heading": "'Montserrat', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/envisiontitleclearlake/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Clear Lake title office on Gemini Street",
+    "title": "A full service title agency, from contract to close.",
+    "lead": "We offer comprehensive title, escrow and closing solutions to the Houston and surrounding area real estate markets, and we are proficient in both residential and commercial transactions.",
+    "image": "/brands/envisiontitleclearlake/hero",
+    "imageAlt": "The Clear Lake waterfront seen from the air",
+    "points": [
+      "Residential and commercial transactions",
+      "Title, escrow and closing in one office",
+      "Clear Lake office at 1331 Gemini Street"
+    ]
+  },
+  "overview": {
+    "title": "Title, escrow and closing work for the Houston area.",
+    "text": "Pick the part of the transaction you have a question about, or call the Clear Lake office and talk it through with our closing team."
+  },
+  "audiences": {
+    "individuals": "Buyers & Sellers",
+    "businesses": "Commercial & Industry Partners"
+  },
+  "services": [
+    {
+      "slug": "residential-closings",
+      "title": "Residential Closings",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Closing a home purchase or sale.",
+      "text": "We handle residential closings for the Houston and surrounding area market, from the day title is opened through the day the file funds.",
+      "lead": "Our escrow officers close residential real estate across the Houston area. At Envision, our clients are more than just another transaction, and our goal is to create clients for life by treating every individual we work with like family.",
+      "covers": [
+        { "title": "Opening title", "text": "The file starts with the title company and the escrow officer opening title on the property under contract." },
+        { "title": "The title commitment", "text": "A commitment showing ownership interests, liens, encumbrances or defects goes to you for review before closing." },
+        { "title": "Clearing the title", "text": "The title agent works with the sellers to remove any title defects so the property closes on clear title." },
+        { "title": "The owner's policy", "text": "At closing you receive a title insurance policy that protects you for as long as you own the property." }
+      ],
+      "questions": [
+        { "q": "When is title insurance bought?", "a": "It is purchased at the time of the transaction, and it insures against events that occurred in the past history of the property." },
+        { "q": "How long does the owner's policy last?", "a": "The owner's policy protects the new owner for as long as the buyer owns the property." }
+      ]
+    },
+    {
+      "slug": "title-insurance",
+      "title": "Title Insurance",
+      "audience": "individuals",
+      "icon": "shield-check",
+      "summary": "Owner's and lender's title policies.",
+      "text": "Title insurance protects owners and lenders against financial loss from liens, encumbrances or other defects in the title of the property, except those listed as exclusions in the policy.",
+      "lead": "Anytime a property is sold or financed, there are public records of the transaction. There are also records that may affect the ownership of a property, such as liens, judgements, levies and encumbrances. Title insurance protects owners and lenders against financial loss from those defects, except the ones the policy lists as exclusions.",
+      "image": "/brands/envisiontitleclearlake/about",
+      "imageAlt": "Two people signing documents across a desk",
+      "covers": [
+        { "title": "Liens and judgements", "text": "Financial loss from liens, judgements, levies and encumbrances recorded against the property." },
+        { "title": "Defects in the title", "text": "Other defects in the title of the property, apart from those listed as exclusions in the policy." },
+        { "title": "The owner's policy", "text": "Protects the new owner for as long as the buyer owns the property." },
+        { "title": "The lender's policy", "text": "Insures the lender's interest in the property for as long as the loan is outstanding." }
+      ],
+      "questions": [
+        { "q": "What does title insurance actually insure against?", "a": "It insures against events that occurred in the past history of the property, rather than against something that might happen later." },
+        { "q": "Why are there two policies at a closing?", "a": "The owner's policy covers the buyer's ownership, and the lender's policy separately insures the lender's interest for as long as the loan is outstanding." }
+      ]
+    },
+    {
+      "slug": "title-search-and-examination",
+      "title": "Title Search and Examination",
+      "audience": "individuals",
+      "icon": "file-text",
+      "summary": "Reading the property's title history.",
+      "text": "The title agent searches title data from previous transactions and public records to determine the title history of the property, then issues a commitment on what that search found.",
+      "lead": "Before anything can close, somebody has to read the property's history. Our title agents go through title data information from previous transactions and public records to determine the title history of the property.",
+      "covers": [
+        { "title": "The search", "text": "Title data from previous transactions and public records, pulled for the specified property." },
+        { "title": "The history", "text": "What the records show about who has owned the property and what has been recorded against it." },
+        { "title": "The commitment", "text": "A title commitment showing ownership interests, liens, encumbrances or defects, sent to the client for review." },
+        { "title": "Curing defects", "text": "Work with the sellers to remove the title defects the search turned up, in order to get a clear title." }
+      ],
+      "questions": [
+        { "q": "What is a title commitment?", "a": "It is the document that shows ownership interests, liens, encumbrances or defects with the property. We send it to the client for review." }
+      ]
+    },
+    {
+      "slug": "escrow",
+      "title": "Escrow Services",
+      "audience": "businesses",
+      "icon": "landmark",
+      "summary": "Escrow handling through to funding.",
+      "text": "Escrow and closing solutions handled by escrow officers who are knowledgeable in all aspects of title insurance and related services, as well as escrow procedures.",
+      "lead": "Envision Title is a full service title agency offering comprehensive title, escrow and closing solutions to the Houston and surrounding area real estate markets. Our Clear Lake escrow officers are knowledgeable in all aspects of title insurance and related services, as well as escrow procedures.",
+      "questions": [
+        { "q": "Who opens the file?", "a": "The process starts with the title company and escrow officer opening title on the property." }
+      ]
+    },
+    {
+      "slug": "commercial-closings",
+      "title": "Commercial Closings",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Commercial title and closing work.",
+      "text": "We are proficient in commercial as well as residential transactions, and able to handle all surrounding areas of Houston.",
+      "lead": "Envision Title is proficient in both residential and commercial transactions, and able to handle all surrounding areas of Houston. Our Clear Lake area manager closes commercial real estate alongside residential.",
+      "covers": [
+        { "title": "Commercial transactions", "text": "Proficiency in commercial work as well as residential, from the same Clear Lake office." },
+        { "title": "The whole Houston area", "text": "Files across Houston and all of its surrounding areas." },
+        { "title": "Title and escrow together", "text": "Comprehensive title, escrow and closing solutions handled in one place." }
+      ]
+    },
+    {
+      "slug": "industry-education",
+      "title": "Industry Education and Networking",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Classes and networking for professionals.",
+      "text": "Alongside the closing work, we offer a number of educational and networking opportunities for industry professionals.",
+      "lead": "Envision Title offers a number of educational and networking opportunities for industry professionals, for the agents, lenders and partners who work alongside our offices."
+    }
+  ],
+  "process": {
+    "title": "The process",
+    "text": "How a file moves from opening title to the policy being issued.",
+    "steps": [
+      { "title": "Opening title", "text": "The process starts with the title company and escrow officer opening title." },
+      { "title": "The title search", "text": "The title agent goes through title data from previous transactions and public records to determine the title history of the property." },
+      { "title": "The commitment", "text": "A title commitment showing ownership interests, liens, encumbrances or defects is sent to the client for review." },
+      { "title": "Clearing defects", "text": "The title agent works with the sellers to remove any title defects in order to get a clear title." },
+      { "title": "The policy", "text": "The title agent provides a title insurance policy protecting the client from issues that were not known or determinable at the time of the transaction." }
+    ]
+  },
+  "about": {
+    "title": "About us",
+    "text": [
+      "We are a full service title agency offering comprehensive title, escrow and closing solutions to the Houston and surrounding area real estate markets. We are proficient in both residential and commercial transactions and able to handle all surrounding areas of Houston.",
+      "In addition, we offer a number of educational and networking opportunities for industry professionals.",
+      "At Envision, our clients are more than just another transaction. Our goal is to create clients for life by treating every individual we work with like family."
+    ],
+    "values": [
+      { "title": "Clients for life", "text": "Our goal is to create clients for life by treating every individual we work with like family." },
+      { "title": "Residential and commercial", "text": "We are proficient in both residential and commercial transactions, and able to handle all surrounding areas of Houston." },
+      { "title": "A standard of service", "text": "Our president's number one priority is to provide the highest standard of customer service." },
+      { "title": "A team that works together", "text": "An amazing team that works efficiently together to provide an awesome title experience for the client." }
+    ]
+  },
+  "team": [
+    {
+      "name": "Maria DeForest",
+      "role": "President",
+      "bio": "As President for Envision Title, Maria DeForest has over a decade of experience in the title industry. Maria's number one priority is to provide the highest standard of customer service. She is knowledgeable in all aspects of title insurance and related services, as well as escrow procedures. She has put together an amazing team that works efficiently together to provide an awesome title experience for the client. Over the years, Maria's greatest pride and successes have come from creating and maintaining dedicated relationships with the people she works with, her partners in the industry and the clients she strives to serve with excellence. Maria enjoys spending time with her friends and family, whether it be traveling or just hanging out at home.",
+      "image": "/brands/envisiontitleclearlake/maria-deforest",
+      "imageAlt": "Maria DeForest, President of Envision Title"
+    },
+    {
+      "name": "Lisa Helmbrecht",
+      "role": "Area Manager / Sr. Escrow Officer",
+      "bio": "Lisa Helmbrecht has over 43 years of experience in the title industry. Her passion is helping people. She can close residential real estate as well as commercial. Lisa loves spending her time off cooking, sewing, vacationing and most importantly spending time with her very large family.",
+      "image": "/brands/envisiontitleclearlake/lisa-helmbrecht",
+      "imageAlt": "Lisa Helmbrecht, Area Manager and Senior Escrow Officer"
+    },
+    {
+      "name": "Julie Gonzalez",
+      "role": "Escrow Officer",
+      "bio": "Julie has over 13 years of experience in the title industry, having started her career as a receptionist and working her way through every role to become an Escrow Officer. Her well-rounded background gives her a deep understanding of the closing process from start to finish. As a bilingual professional, Julie is able to communicate clearly with a diverse range of clients, helping ensure a smooth and confident closing experience. She especially enjoys closing day and finds great joy in assisting first-time homebuyers. Outside of work, Julie enjoys spending weekends with her husband watching movies and cooking together. She also loves spending time with her grandbaby and shopping with her daughters and mom.",
+      "image": "/brands/envisiontitleclearlake/julie-gonzalez",
+      "imageAlt": "Julie Gonzalez, Escrow Officer"
+    },
+    {
+      "name": "Melissa Barahona",
+      "role": "Escrow Assistant",
+      "bio": "Melissa began her career in the title industry at Envision Title as a receptionist, where she quickly developed a strong interest in the work and a desire to learn more. With a year of industry experience, her curiosity and dedication led her into her current role as an Escrow Assistant, a position she truly enjoys. As a bilingual professional, she is able to communicate clearly and effectively with a diverse range of clients, helping ensure a smooth and confident closing experience. She is always eager to continue learning and growing within the industry. Outside of work, she enjoys starting her mornings with a good cup of coffee, running and working out, spending time outdoors, reading, and making meaningful memories with her family.",
+      "image": "/brands/envisiontitleclearlake/melissa-barahona",
+      "imageAlt": "Melissa Barahona, Escrow Assistant"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is title insurance?",
+      "a": "Anytime a property is sold or financed, there are public records of the transaction. There are also records that may affect the ownership of a property, such as liens, judgements, levies and encumbrances. Title insurance protects owners and lenders against financial loss from liens, encumbrances or other defects in the title of the property, except those listed as exclusions in the policy."
+    },
+    {
+      "q": "When is it purchased, and what does it cover?",
+      "a": "Title insurance is purchased at the time of the transaction and insures against events that occurred in the past history of the property."
+    },
+    {
+      "q": "How long does each policy last?",
+      "a": "The owner's policy protects the new owner for as long as the buyer owns the property, and a lender's policy insures the lender's interest in the property for as long as the loan is outstanding."
+    },
+    {
+      "q": "How does the closing process start?",
+      "a": "The process starts with the title company and escrow officer opening title. The title agent then searches the property's title data and public records to determine its title history."
+    },
+    {
+      "q": "What happens if the search finds a problem?",
+      "a": "The title agent works with the sellers to remove any title defects in order to get a clear title, then provides a title insurance policy that protects the client from issues that might not have been known or determinable at the time of the transaction."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Premium Rate Calculator",
+      "text": "Our own calculator for working out a Texas title premium.",
+      "href": "https://www.envisiontitletexas.com/premium-rate-calculator"
+    },
+    {
+      "title": "Envision Title on Facebook",
+      "text": "The Envision Title Facebook page.",
+      "href": "https://www.facebook.com/envisiontitle.houston/"
+    }
+  ],
+  "serviceArea": ["Clear Lake", "Houston", "Surrounding areas of Houston"],
+  "facts": [
+    {
+      "heading": "A full service title agency",
+      "text": "Comprehensive title, escrow and closing solutions for the Houston and surrounding area real estate markets, residential and commercial."
+    },
+    {
+      "heading": "Bilingual service",
+      "text": "Two of the Clear Lake escrow staff are bilingual professionals, so a diverse range of clients can be talked through closing clearly."
+    },
+    {
+      "heading": "For industry professionals",
+      "text": "Alongside the closing work, we offer a number of educational and networking opportunities for industry professionals."
+    },
+    {
+      "heading": "Other Envision Title offices",
+      "items": ["Houston", "Katy", "Conroe"]
+    },
+    {
+      "heading": "Experience at the Clear Lake office",
+      "items": [
+        "Area manager with over 43 years in the title industry",
+        "Escrow officer with over 13 years in the title industry",
+        "President with over a decade in the title industry"
+      ]
+    }
+  ]
+}
