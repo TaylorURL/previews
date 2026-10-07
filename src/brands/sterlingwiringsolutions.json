@@ -1,0 +1,599 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Sterling Wiring Solutions",
+  "shortName": "Sterling Wiring",
+  "summary": "Commercial and industrial electrical and telecommunications contracting across Greater Houston, from new construction wiring to lighting retrofits, structured cabling, repair and maintenance.",
+  "phone": "(281) 997-0999",
+  "email": "info@sterlingwiring.com",
+  "address": "3931 Halik St",
+  "town": "Pearland",
+  "state": "TX",
+  "zip": "77581",
+  "rating": 4.6,
+  "reviewCount": 11,
+  "since": 2002,
+  "hours": [
+    [
+      "Mon – Fri",
+      "8:00am – 5:00pm"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#22346c",
+    "primaryDeep": "#1d1e49",
+    "accent": "#1b87b7",
+    "ink": "#141a2a",
+    "muted": "#4f5a72",
+    "surface": "#eef2f8",
+    "line": "#d5deeb",
+    "heading": "'Archivo', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/sterlingwiringsolutions/logo.webp",
+    "logoWidth": 220
+  },
+  "licenses": [
+    {
+      "label": "Texas Electrical Contractor License",
+      "number": "27247"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Commercial electricians in Pearland and Greater Houston",
+    "title": "Sterling Wiring Solutions.",
+    "titleAccent": "Solutions. Service. Relationships.",
+    "lead": "A licensed electrical contractor serving customers across Greater Houston since 2002, handling commercial and industrial electrical and telecommunications work from concept to completion. A certified woman and minority owned business.",
+    "image": "/brands/sterlingwiringsolutions/hero",
+    "imageAlt": "An electrician in work clothes and a helmet at a power switch"
+  },
+  "groups": [
+    {
+      "slug": "commercial",
+      "title": "Commercial",
+      "icon": "building",
+      "summary": "New installations, retrofits, lighting, repairs and maintenance for offices, warehouses, retail, restaurants and hotels.",
+      "intro": "Based in Houston, Texas, Sterling Wiring Solutions offers a full range of commercial electrician services from new installations to renewable power solutions. No job is too big, too small, or too unique for us to tackle, and our electricians are some of the best in the business. Because we are members of both the National Fire Protection Association and the Texas Electrical Safety Association, our work always meets the highest safety standards in the business.",
+      "image": "/brands/sterlingwiringsolutions/commercial",
+      "imageAlt": "An electrician in a yellow hard hat installing wiring",
+      "services": [
+        {
+          "slug": "complete-electrical-solutions",
+          "title": "Complete Electrical Solutions",
+          "icon": "zap",
+          "text": "When we say that we do everything, we mean it. Need a service not listed here? Give us a call, and we will accommodate your company's electrical needs.",
+          "points": [
+            "New installations",
+            "Disaster recovery",
+            "Lighting maintenance",
+            "Renewable power solutions",
+            "Wiring retrofits"
+          ]
+        },
+        {
+          "slug": "new-construction-retrofits",
+          "title": "New Construction and Retrofits",
+          "icon": "plug",
+          "text": "Whether you want to construct new warehouses or a small boutique, we will ensure that your new facility has safe and reliable wiring. Most business owners prefer to renovate existing properties wherever possible, and we can retrofit your current facilities with new wiring and electrical fixtures.",
+          "points": [
+            "New industrial complexes, retail outlets, restaurants, offices and hotels",
+            "Retrofits of existing facilities",
+            "We work with other companies and contractors to finish your job on budget and on schedule"
+          ]
+        },
+        {
+          "slug": "repairs-maintenance",
+          "title": "Repairs and Maintenance",
+          "icon": "wrench",
+          "text": "Electrical systems are designed for low maintenance, and they should work for years without any problems. But outlets, switches and even wires grow unreliable after decades of use. If your facility was built in the '70s or '80s and has not been upgraded since, your building probably needs electrical repairs.",
+          "points": [
+            "Flickering lights and outlets that spark when you plug something in",
+            "Fraying wires that show no signs but still pose a fire hazard",
+            "Potential issues identified and fixed before they cause serious problems",
+            "Most repairs only take a few hours to complete"
+          ]
+        },
+        {
+          "slug": "communications-infrastructure",
+          "title": "Communications Infrastructure",
+          "icon": "cable",
+          "text": "Electricity is only half of our business. If you are still using a dedicated T1 line or another slow connection, we can upgrade your facility with fiber optic cabling for far faster network speeds.",
+          "points": [
+            "Fiber optic cabling",
+            "USB 3.0, HDMI and Ethernet wiring upgrades",
+            "Wireless networks installed and configured at speeds up to 2 Gbps"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "commercial-lighting",
+      "title": "Commercial Lighting",
+      "icon": "lightbulb",
+      "summary": "Interior and exterior lighting installed, retrofitted to LED and maintained, indoors and across a site.",
+      "intro": "Lights burn out, they waste electricity, and you cannot touch them without burning your hand. At Sterling Wiring Solutions we are dedicated to completely replacing all of Houston's outdated lighting infrastructure. Warehouses and offices need reliable lighting to create a safe work environment, and at 12 hours of use per day an incandescent bulb lasts about three months where an LED lasts about 11 years.",
+      "image": "/brands/sterlingwiringsolutions/lighting",
+      "imageAlt": "A large warehouse interior lit by overhead fixtures",
+      "services": [
+        {
+          "slug": "types-of-lighting",
+          "title": "Types of Lighting We Do",
+          "icon": "sun",
+          "text": "Interior and exterior lighting across every kind of site in the Houston area.",
+          "points": [
+            "Parking lots",
+            "Interior and exterior lighting",
+            "Warehouse",
+            "Security",
+            "Sign lighting maintenance",
+            "Pole lights",
+            "Auto dealerships",
+            "Churches",
+            "Sports fields and facilities",
+            "High atriums",
+            "Parking garages"
+          ]
+        },
+        {
+          "slug": "led-retrofits",
+          "title": "LED Retrofits",
+          "icon": "zap",
+          "text": "The average incandescent light bulb uses about 75 watts of electricity, but the average LED bulb uses about 15 watts. Depending on your business, lighting accounts for 10 to 20 percent of your total energy needs.",
+          "points": [
+            "Lighting retrofits are relatively cheap and simple compared to other energy efficiency retrofits",
+            "Most LED bulbs work right out of the box with your existing fixtures and switches",
+            "Switches and light fixtures only take a few minutes to install"
+          ]
+        },
+        {
+          "slug": "lighting-installations-upgrades",
+          "title": "Lighting Installations and Upgrades",
+          "icon": "lightbulb",
+          "text": "We install both interior and exterior lighting fixtures with low wattage LED bulbs, and we offer a number of other services to further improve your facility.",
+          "points": [
+            "UPS and generator backups provide power during blackouts",
+            "Motion sensors save energy while increasing security",
+            "Dimmers allow employees to select optimal light levels",
+            "Lighting connected to a renewable energy solution"
+          ]
+        },
+        {
+          "slug": "lighting-maintenance",
+          "title": "Lighting Maintenance",
+          "icon": "settings",
+          "text": "We inspect your motion sensors, fixtures and switches to make sure everything is functioning properly, and keep a site lit for a safe work environment."
+        }
+      ]
+    },
+    {
+      "slug": "structured-cabling",
+      "title": "Structured Cabling",
+      "icon": "cable",
+      "summary": "Voice, data, fiber optics, networks, LANs and phone systems installed and upgraded.",
+      "intro": "If your business still uses 10-year-old networking equipment, we have a simple solution: a complete upgrade of your structured cabling. Although Sterling Wiring Solutions started as a Houston electrical contractor, we now offer a full range of structured cabling options. Our experts will inspect your current infrastructure and make recommendations based on your bandwidth needs, and many customers decide to upgrade their electrical and structured cabling at the same time to minimize costs.",
+      "image": "/brands/sterlingwiringsolutions/cabling",
+      "imageAlt": "Blue network cables patched into a rack-mounted switch",
+      "services": [
+        {
+          "slug": "data",
+          "title": "Data",
+          "icon": "cable",
+          "text": "As you hire additional employees and upgrade your computers, you will quickly find that your aging network can no longer handle the increased load. To bring your LAN up to speed, we can install the following cables.",
+          "points": [
+            "Cat 6",
+            "Fiber optics",
+            "HDMI",
+            "Cat 6 Ethernet is the gold standard for wired networks, and depending on your access points and adapters we can boost LAN speeds up to 10 Gbps"
+          ]
+        },
+        {
+          "slug": "voice-communications",
+          "title": "Voice Communications",
+          "icon": "plug",
+          "text": "We can install or upgrade telephone systems including private branch exchanges, giving you the flexibility to add, remove or edit extensions at will. We can also help you configure VoIP so you communicate over your internet connection instead of a dedicated telephone line.",
+          "points": [
+            "Private branch exchanges",
+            "VoIP configuration",
+            "You keep a phone number, with added flexibility and mobility"
+          ]
+        },
+        {
+          "slug": "wireless",
+          "title": "Wireless",
+          "icon": "zap",
+          "text": "Wired networks provide incredible speeds and reliability, but wireless networks are easier to install and expand. Because wireless speeds and signal strength have improved in recent years, we now offer wireless LAN installations.",
+          "points": [
+            "Wireless LAN installations",
+            "Standards such as 802.11ac have largely bridged the gap with wired networks",
+            "We are FOA certified"
+          ]
+        },
+        {
+          "slug": "modern-connectivity",
+          "title": "Modern Connectivity",
+          "icon": "settings",
+          "text": "Copper telephone lines used to be sufficient for basic phone calls and browsing, but the day-to-day tasks added over the years need far more bandwidth.",
+          "points": [
+            "Streaming internet radio and videos",
+            "Teleconferencing",
+            "Transferring 100 MB and larger files"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "new-installation",
+      "title": "New Installation and Construction",
+      "icon": "home",
+      "summary": "Electrical and telecommunications design and installation for a facility built from the ground up.",
+      "intro": "Planning on building a new store or office building? Let Sterling Wiring Solutions handle all of your electrical and telecommunications wiring requirements. If you have already started the design process, we can work with the contractor or construction company of your choice to make sure the electrical design is up to code. Otherwise, we can help design a facility from the ground up.",
+      "image": "/brands/sterlingwiringsolutions/new-construction",
+      "imageAlt": "A worker running electrical wiring through a ceiling",
+      "services": [
+        {
+          "slug": "expert-consultations",
+          "title": "Expert Consultations",
+          "icon": "shield",
+          "text": "An office building, hotel and department store might have the same square footage, but their electrical needs are vastly different. A Sterling electrician begins by asking project questions.",
+          "points": [
+            "What is the new facility's square footage and layout?",
+            "What is the facility's primary purpose?",
+            "What are your current and anticipated electrical needs?",
+            "Free consultation"
+          ]
+        },
+        {
+          "slug": "in-house-design-build",
+          "title": "In-House Design and Installation",
+          "icon": "settings",
+          "text": "Sterling Wiring Solutions never outsources the design process to another company. Besides electrical and structured cabling, we handle everything related to your electrical system.",
+          "points": [
+            "Switchgears",
+            "New transformers",
+            "Light fixtures",
+            "Backup generators",
+            "Solar panels and wind turbines",
+            "We pull the necessary permits before our design and build team begins"
+          ]
+        },
+        {
+          "slug": "why-new-construction-is-easier",
+          "title": "Why New Construction Costs Less",
+          "icon": "timer",
+          "text": "Electrical work is both cheaper and easier for new installations compared to retrofits for one simple reason: we can access the walls and ceiling before the drywall goes up, which makes working around plumbing and wall studs straightforward.",
+          "points": [
+            "New electrical installations typically complete within one to two weeks, though construction times vary by project",
+            "We can influence the design to better place outlets, fixtures and switches",
+            "We make every effort to improve the new facility's energy efficiency"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "renovations-remodels",
+      "title": "Renovations and Remodels",
+      "icon": "wrench",
+      "summary": "An existing facility brought up to code, rewired, relit and fitted with current outlets and ports.",
+      "intro": "Need to update an existing facility? Sterling Wiring Solutions can bring your current property up to code while improving your building's safety and functionality. Whether you wish to simply run a new Ethernet cable from one room to another or need to completely replace your wiring, an electrical contractor will breathe fresh life back into your facility.",
+      "image": "/brands/sterlingwiringsolutions/renovations",
+      "imageAlt": "Wires connected inside an open switch box",
+      "services": [
+        {
+          "slug": "the-time-to-upgrade",
+          "title": "The Time to Upgrade",
+          "icon": "zap",
+          "text": "Because your building's electrical infrastructure will be virtually replaced, we can easily add new conduits to increase electrical capacity or Ethernet cables running from room to room. At a marginal cost increase, we can vastly improve your electrical and telecommunications infrastructure without significantly delaying the project.",
+          "points": [
+            "New conduits to increase electrical capacity",
+            "Ethernet cabling run room to room",
+            "Campus, building, room and classroom control automation"
+          ]
+        },
+        {
+          "slug": "improved-functionality",
+          "title": "Improved Functionality",
+          "icon": "plug",
+          "text": "None of these products were available 10 years ago and they are now relatively commonplace. We can install conduits and wall plates that accept any type of digital cable, so you can upgrade your networking infrastructure as new technologies emerge.",
+          "points": [
+            "USB wall outlets",
+            "HDMI ports",
+            "Cat 6 Ethernet ports",
+            "Wireless light dimmer switches"
+          ]
+        },
+        {
+          "slug": "safety-first-renovations",
+          "title": "Safety First",
+          "icon": "shield",
+          "text": "If we notice an outlet sparking or a light switch that is no longer functioning, we will replace the faulty equipment to eliminate the fire hazard. All commercial renovations will meet your local building codes, which can mean rerouting wires or replacing fixtures.",
+          "points": [
+            "Code compliance on every renovation",
+            "Alarm systems",
+            "CCTV cameras",
+            "Motion sensor light fixtures",
+            "Older facilities do not typically cost substantially more"
+          ]
+        },
+        {
+          "slug": "a-fresh-look",
+          "title": "A Fresh Look",
+          "icon": "lightbulb",
+          "text": "There is no easier way to update your building's look than installing new lighting. Our LED fixtures look great while using less energy than conventional lights, and we can install designer switches and outlets."
+        }
+      ]
+    },
+    {
+      "slug": "industrial",
+      "title": "Industrial",
+      "icon": "circuit",
+      "summary": "Heavy industrial wiring, switchgear, grounding and plant electrical systems from concept to completion.",
+      "intro": "Sterling Wiring provides professional electrical and telecommunications services for industrial installations, handling all aspects from concept to completion. Our experienced technicians are committed to safely performing the job for all heavy industrial wiring projects, and the team is equipped to perform new installation, upgrade existing systems and perform general maintenance, including repairs, troubleshooting and diagnosing a problem.",
+      "image": "/brands/sterlingwiringsolutions/industrial",
+      "imageAlt": "Electrical control gear inside an industrial plant",
+      "services": [
+        {
+          "slug": "industrial-services",
+          "title": "Industrial Electrical Services",
+          "icon": "zap",
+          "text": "The full range of industrial electrical work we take on in Houston and the surrounding areas.",
+          "points": [
+            "Low voltage and high voltage",
+            "Above ground and below ground wiring",
+            "Industrial lighting",
+            "Security lighting",
+            "Safety inspection",
+            "Facility inspection",
+            "Switchgear",
+            "Cable tray service and install",
+            "Grounding",
+            "Fiber optics",
+            "Cathodic protection",
+            "VFD repair and installation",
+            "Parking lot lighting",
+            "Electrical distribution systems",
+            "Upfitting",
+            "Machine repair and installation"
+          ]
+        },
+        {
+          "slug": "water-treatment",
+          "title": "Water and Waste Water Treatment Plants",
+          "icon": "settings",
+          "text": "A team of trained and certified technicians specializing in electrical design and installation for water treatment and water reclamation facilities. Call on us to service your current system or upgrade to a new installation.",
+          "points": [
+            "Water treatment plants",
+            "Water reclamation facilities",
+            "Electrical design and installation",
+            "Service of an existing system or a new installation"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "safety",
+      "title": "Safety",
+      "icon": "shield",
+      "summary": "Arc flash protection, tested PPE and an OSHA-led training program behind every job.",
+      "intro": "Safety is such a serious and important matter that the owners of Sterling Wiring Solutions have another business named Live Line Electrical Safety Services, which tests electrical personal protective equipment, sells it and trains in electrical safety. It contains the only PPE testing laboratory serving the Greater Houston area for 200 miles.",
+      "image": "/brands/sterlingwiringsolutions/safety",
+      "imageAlt": "An arc flash protection suit and hood",
+      "services": [
+        {
+          "slug": "safety-training",
+          "title": "Safety Training and Practices",
+          "icon": "shield",
+          "text": "Our technicians are overseen and instructed by a Safety Manager who is an authorized OSHA trainer with extensive knowledge in both General 1910 and Construction 1926 industries. Every technician is required to obtain the following.",
+          "points": [
+            "1910 General Industry OSHA 10 cards",
+            "Transportation Worker Identification Credential (TWIC) cards",
+            "Basic Plus safety training",
+            "First Aid, CPR and AED",
+            "Self propelled and aerial lift",
+            "OSHA 1910.331-1910.335 and NFPA 70E electrical safety training"
+          ]
+        },
+        {
+          "slug": "arc-flash-safety",
+          "title": "Arc Flash Safety",
+          "icon": "zap",
+          "text": "An arc flash is an extremely dangerous burst of electricity resulting from an electric arc, shooting out a broad spectrum of electromagnetic energy, plasma, fragments and other dangerous molten materials.",
+          "points": [
+            "Light, an extremely violent burst that can be as harmful as staring into the sun and can cause lasting retinal damage",
+            "Heat, reaching as high as 35,000 degrees Fahrenheit, which is why a fully enclosed arc flash suit matters",
+            "Arc blast, where superheated air and vaporized solids expand from the fault at supersonic speeds, loud enough to cause permanent hearing damage"
+          ]
+        },
+        {
+          "slug": "where-arc-flashes-occur",
+          "title": "Where Arc Flashes Occur",
+          "icon": "circuit",
+          "text": "Arc flashes can happen abruptly without notice, with or without the presence of an electrician, in any location where electricity is present, including residential, industrial and commercial buildings.",
+          "points": [
+            "Old rusting equipment",
+            "Conductive dust build-up",
+            "Carelessly placed tools",
+            "Unsafe work procedures",
+            "Even a moist spiderweb can conduct enough electricity for an arc flash to occur"
+          ]
+        },
+        {
+          "slug": "tested-ppe",
+          "title": "Tested PPE",
+          "icon": "wrench",
+          "text": "All of Sterling Wiring's PPE is tested and inspected in compliance with OSHA, and every job is overseen by an OSHA Certified Health and Safety Official to minimize safety hazards.",
+          "points": [
+            "No employee uses outdated or non-compliant PPE",
+            "Experience Modification Rate worksheets and OSHA Form 300A records published on our site"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Sterling: highest in quality.",
+    "text": [
+      "Sterling Wiring Solutions has been serving customers across Greater Houston since 2002. With more than a decade of experience in the electrical and telecommunications industries, every Houston electrician we employ can handle any type of commercial wiring or cabling project.",
+      "You will never run across a Sterling Wiring Solutions electrician who does not provide exceptional work and calls it a day. We understand that good enough is never actually good enough, and our electricians will always strive for perfection. From the very first time you call us until our electricians screw the last outlet into place, we take pride in providing exceptional service for every client.",
+      "We are a member of both the Texas Electrical Safety Association and the National Fire Protection Association, and we are managed by an OSHA Certified Safety and Health Official. Every job meets the highest safety standards in the industry. Sterling Wiring Solutions is a small, family-owned business based in Pearland, and a certified woman and minority owned business."
+    ],
+    "image": "/brands/sterlingwiringsolutions/about",
+    "imageAlt": "An industrial electric motor and its wiring in a plant",
+    "values": [
+      {
+        "title": "Trained on every visit",
+        "text": "Every Sterling Wiring Solutions electrician is trained to both identify and fix wiring issues on the same visit, saving time and money."
+      },
+      {
+        "title": "Credentialed on site",
+        "text": "All of our electricians carry Transportation Worker Identification Credentials, a biometric ID that allows access to restricted areas in ports, factories and vessels, so you never have to worry about unauthorized users entering your facility."
+      },
+      {
+        "title": "Local codes by heart",
+        "text": "Codes differ from county to county and between towns and cities. Our Houston area electricians know the local electrical codes, so wires are properly grounded, outlets sit at the correct height and your inspection passes."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Does my building need electrical repairs?",
+      "a": "Electrical systems are designed for low maintenance and should work for years without any problems, but outlets, switches and even wires grow unreliable after decades of use. If your facility was built in the '70s or '80s and has not been upgraded since, it probably needs repairs. Some symptoms are obvious, like flickering lights and outlets that spark when you plug something in. Other problems such as fraying wires might not display any signs, but they still pose a fire hazard."
+    },
+    {
+      "q": "How long does a new electrical installation take?",
+      "a": "We can typically complete new electrical installations within one to two weeks, but construction times may vary by project. Unlike a complete remodel, electrical maintenance and repair jobs can be as simple as replacing a defective transformer, and most repairs only take a few hours to complete."
+    },
+    {
+      "q": "Why is new construction cheaper than a retrofit?",
+      "a": "Electrical work is both cheaper and easier for new installations for one simple reason: we can access the walls and ceiling before the drywall goes up, which makes working around plumbing and wall studs a breeze. New construction projects also allow us to influence the design to better place outlets, fixtures and switches."
+    },
+    {
+      "q": "How much can a lighting retrofit save?",
+      "a": "The average incandescent light bulb uses about 75 watts of electricity, but the average LED bulb uses about 15 watts. Depending on your business, lighting accounts for 10 to 20 percent of your total energy needs. Lighting retrofits are relatively cheap and simple compared to other energy efficiency retrofits, and most LED bulbs work right out of the box with your existing fixtures and switches."
+    },
+    {
+      "q": "Why choose a licensed electrical contractor?",
+      "a": "Maintaining a valid license is all about accountability. Not all unlicensed electricians will take your money and run; some will finish the job with makeshift repairs that will not last more than a year or two, and there are others that will do a good job. Unfortunately, there is no way to know what kind of job an unlicensed contractor will provide. We hold Texas Electrical Contractor License 27247 and have always maintained all of the necessary licenses in Houston."
+    },
+    {
+      "q": "Do you work around our business hours?",
+      "a": "Yes. With flexible scheduling options, our electricians can work around your business hours to avoid any disruption to your operations."
+    },
+    {
+      "q": "Do you handle data and phone as well as electrical?",
+      "a": "Electricity is only half of our business. We also specialize in data and phone system installations, which makes us a one-stop shop for everything related to wires, and many of our customers decide to upgrade their electrical and structured cabling at the same time to minimize costs."
+    }
+  ],
+  "serviceArea": [
+    "Pearland",
+    "Houston",
+    "Missouri City",
+    "Webster",
+    "League City",
+    "Friendswood"
+  ],
+  "facts": [
+    {
+      "heading": "License",
+      "items": [
+        "Texas Electrical Contractor License 27247",
+        "Master Electrician License",
+        "Every job is overseen by an OSHA Certified Health and Safety Official"
+      ]
+    },
+    {
+      "heading": "Certifications",
+      "items": [
+        "City of Houston MBE Certificate",
+        "City of Houston WBE Certificate",
+        "City of Houston Hire Houston First",
+        "TX HUB Certificate",
+        "Port of Houston Authority Certificate",
+        "A certified woman and minority owned business"
+      ]
+    },
+    {
+      "heading": "Memberships and networks",
+      "items": [
+        "National Fire Protection Association",
+        "Texas Electrical Safety Association",
+        "Eaton Certified Contractor Network",
+        "FOA certified for fiber optics"
+      ]
+    },
+    {
+      "heading": "Quotes and consultations",
+      "items": [
+        "Free quote, requested by phone or through the online form",
+        "Free consultation on new construction",
+        "An accurate quote once the electrician has investigated the issue"
+      ]
+    },
+    {
+      "heading": "How long work takes",
+      "items": [
+        "New electrical installations typically complete within one to two weeks, though construction times vary by project",
+        "Most repairs only take a few hours to complete"
+      ]
+    },
+    {
+      "heading": "Payment",
+      "text": "We accept most major credit cards."
+    },
+    {
+      "heading": "Hours",
+      "text": "Monday to Friday, 8:00am to 5:00pm. Flexible scheduling is available so our electricians can work around your business hours."
+    },
+    {
+      "heading": "Employee training required",
+      "items": [
+        "OSHA 10 General Industry Certification",
+        "Houston Area Safety Council Basic Plus Certification",
+        "Transportation Worker Identification Credential (TWIC)",
+        "First Aid, CPR and AED",
+        "NFPA 70E electrical safety training"
+      ]
+    },
+    {
+      "heading": "Safety record",
+      "items": [
+        "Experience Modification Rate worksheets published for 2016 through 2019",
+        "OSHA Form 300A published for 2015 through 2018",
+        "The owners also run Live Line Electrical Safety Services, which holds the only PPE testing laboratory serving the Greater Houston area for 200 miles"
+      ]
+    },
+    {
+      "heading": "Experience",
+      "items": [
+        "Serving customers across Greater Houston since 2002",
+        "More than a decade of experience in the electrical and telecommunications industries"
+      ]
+    },
+    {
+      "heading": "Community service",
+      "text": "We sponsor a number of organizations including the Sienna Plantation Softball Association."
+    },
+    {
+      "heading": "Office",
+      "items": [
+        "3931 Halik St, Pearland, TX 77581",
+        "info@sterlingwiring.com",
+        "(281) 997-0999"
+      ]
+    },
+    {
+      "heading": "Follow us",
+      "items": [
+        "Facebook",
+        "X",
+        "Yelp",
+        "LinkedIn",
+        "YouTube"
+      ]
+    }
+  ]
+}
