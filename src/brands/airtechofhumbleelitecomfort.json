@@ -1,0 +1,608 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Air Tech of Humble - Elite Comfort",
+  "shortName": "Air Tech of Humble",
+  "summary": "Air conditioning, heating, plumbing, electrical and generator service for homeowners across Humble, TX and the surrounding communities.",
+  "phone": "(346) 236-1240",
+  "email": "service@airtechofhumble.com",
+  "address": "1710 1st St E",
+  "town": "Humble",
+  "state": "TX",
+  "zip": "77338",
+  "rating": 4.9,
+  "reviewCount": 3213,
+  "since": 2012,
+  "hours": [
+    ["Mon – Fri", "Open 24 hours"],
+    ["Saturday", "Open 24 hours"],
+    ["Sunday", "Open 24 hours"]
+  ],
+  "brand": {
+    "primary": "#00383e",
+    "primaryDeep": "#00262a",
+    "accent": "#ff6e00",
+    "ink": "#0d2226",
+    "muted": "#4d666a",
+    "surface": "#eef5f5",
+    "line": "#d5e3e3",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap",
+    "logo": "/brands/airtechofhumbleelitecomfort/logo.webp",
+    "logoWidth": 210
+  },
+  "emergency": {
+    "title": "24/7 emergency service",
+    "text": "Emergency HVAC, plumbing and electrical service is available across the whole service area, and after-hours fees on HVAC calls are currently waived."
+  },
+  "sameDay": "Trucks are stocked so most repairs are completed on the spot, and same-day service is available throughout the service area.",
+  "licenses": [
+    { "label": "TDLR HVAC", "number": "TACLA00021907C" },
+    { "label": "TSBPE Plumbing", "number": "RMP44203" },
+    { "label": "TDLR Electrical", "number": "592546; 39145" }
+  ],
+  "financing": {
+    "text": "Financing on repairs and system replacements through Synchrony, Wells Fargo Home Projects and Service Finance, with applications completed directly with each lender and subject to credit approval."
+  },
+  "hero": {
+    "eyebrow": "Cooling, heating, plumbing and electrical in Humble, TX",
+    "title": "The Humble home services team that shows up",
+    "titleAccent": "and fixes it right the first time.",
+    "lead": "Long cooling seasons, heavy humidity and constant electrical demand put real stress on a Humble home. Our technicians find problems early, repair them efficiently and explain the options before anything escalates. All work is backed by our 100% satisfaction guarantee.",
+    "image": "/brands/airtechofhumbleelitecomfort/hero",
+    "imageAlt": "The Air Tech service fleet lined up in front of the Houston skyline"
+  },
+  "groups": [
+    {
+      "slug": "air-conditioning",
+      "title": "Air Conditioning",
+      "icon": "snowflake",
+      "summary": "AC repair, installation, tune-ups, ductwork, insulation and indoor air quality for Humble homes.",
+      "intro": "Here in Humble we deal with high levels of heat and humidity nearly all year long. With weather like that, air conditioning is a necessity rather than a luxury. Our technicians are trained to know your AC unit inside and out, and they move quickly so the house is comfortable again as soon as possible.",
+      "image": "/brands/airtechofhumbleelitecomfort/cooling",
+      "imageAlt": "An Air Tech technician taking refrigerant readings at an outdoor condenser",
+      "services": [
+        {
+          "slug": "ac-repair",
+          "title": "AC Repair",
+          "icon": "wrench",
+          "text": "When your AC stops working, don't panic. Strange sounds and odors, broken compressors, air handlers, airflow restrictions, refrigerant concerns and thermostat faults are all diagnosed and fixed.",
+          "points": [
+            "Same-day diagnosis and repair",
+            "24/7 emergency HVAC service",
+            "No after-hours fee on HVAC calls"
+          ]
+        },
+        {
+          "slug": "ac-installation",
+          "title": "AC Installation",
+          "icon": "air-vent",
+          "text": "Start fresh with a new unit and an install team that guides you through the type, brand and size of system that is right for your home.",
+          "points": [
+            "Trane Comfort System products installed",
+            "All major equipment brands serviced",
+            "Financing available on system replacements"
+          ]
+        },
+        {
+          "slug": "ac-tune-up",
+          "title": "AC Tune-Up",
+          "icon": "gauge",
+          "text": "Schedule your annual maintenance and let us show your AC a little love. A tune-up visit is where looming repairs get spotted and efficiency adjustments get made.",
+          "points": [
+            "Condenser coils cleaned and condensate drains cleared",
+            "Refrigerant levels and electrical connections checked",
+            "$69 seasonal AC or heating tune-up",
+            "Included twice a year with Shield of Protection"
+          ]
+        },
+        {
+          "slug": "air-ducts",
+          "title": "Air Ducts",
+          "icon": "wind",
+          "text": "Avoid the high energy bills and frequent HVAC repairs that come with leaking or failing ductwork. Duct cleaning, repair and replacement are all handled in house."
+        },
+        {
+          "slug": "ductless-ac",
+          "title": "Ductless AC",
+          "icon": "fan",
+          "text": "A ductless AC is designed without the main cause of energy loss in central systems: air ducts. In the right application, a mini-split can dramatically reduce energy loss."
+        },
+        {
+          "slug": "smart-thermostat",
+          "title": "Smart Thermostat",
+          "icon": "thermometer",
+          "text": "Bring your home into the future with smart temperature control, installed and set up by a technician who knows how it needs to talk to your system."
+        },
+        {
+          "slug": "indoor-air-quality",
+          "title": "Indoor Air Quality",
+          "icon": "filter",
+          "text": "Humble is known for high humidity and Texas allergies, and that combination causes air quality problems even inside the house. We test the air, then clean it up.",
+          "points": [
+            "IAQ testing",
+            "Air filtration and purification systems",
+            "Humidity control",
+            "$100 off any indoor air quality product or service"
+          ]
+        },
+        {
+          "slug": "attic-insulation",
+          "title": "Attic Insulation",
+          "icon": "home",
+          "text": "Improving attic insulation takes load off the cooling system, which is where the monthly saving comes from."
+        },
+        {
+          "slug": "commercial-hvac",
+          "title": "Commercial HVAC",
+          "icon": "building",
+          "text": "Your employees and customers want to stay cool too. Commercial cooling and heating service for businesses around Humble."
+        }
+      ]
+    },
+    {
+      "slug": "heating",
+      "title": "Heating",
+      "icon": "flame",
+      "summary": "Heater repair, installation and tune-ups for gas furnaces, electric heaters and heat pumps.",
+      "intro": "Humble winters are mild compared to most of the country, but when a cold front rolls through you need the heating system to work. Because heaters here sit unused for most of the year, they develop issues between seasons that only show up the first time you flip the heat on.",
+      "image": "/brands/airtechofhumbleelitecomfort/heating",
+      "imageAlt": "A technician working on a residential gas furnace",
+      "services": [
+        {
+          "slug": "heater-repair",
+          "title": "Heater Repair",
+          "icon": "heater",
+          "text": "Stop shivering in the cold. Same-day diagnosis and repair for gas furnaces, electric heaters and heat pumps.",
+          "points": [
+            "Gas furnaces, electric furnaces, heat pumps and dual-fuel systems",
+            "Carrier, Trane, American Standard, Daikin and more"
+          ]
+        },
+        {
+          "slug": "heater-installation",
+          "title": "Heater Installation",
+          "icon": "flame",
+          "text": "You choose it, we install it. New system installs and full replacements when a repair no longer makes sense."
+        },
+        {
+          "slug": "heater-tune-up",
+          "title": "Heater Tune-Up",
+          "icon": "gauge",
+          "text": "A pre-season tune-up in the fall catches the startup problems that would otherwise leave you without heat during the first cold snap, and keeps the system running efficiently.",
+          "points": [
+            "Annual maintenance, ideally in the fall",
+            "Seasonal reminders with the Shield of Protection plan"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "plumbing",
+      "title": "Plumbing",
+      "icon": "droplets",
+      "summary": "Licensed plumbers for drains, leaks, slab leaks, water heaters, softeners, sewer and gas lines.",
+      "intro": "Plumbing systems in Humble homes are worked on by soil movement, aging pipes and hard water. Our licensed plumbers show up prepared, give you an upfront quote and fix it right the first time, and the trucks are stocked for the most common repairs so there is no second trip.",
+      "image": "/brands/airtechofhumbleelitecomfort/plumbing",
+      "imageAlt": "A plumber working on a bathroom sink faucet",
+      "services": [
+        {
+          "slug": "drain-services",
+          "title": "Drain Services",
+          "icon": "waves",
+          "text": "Clogged drains are the most common plumbing call we get in Humble. We clear the clog and help prevent it coming back.",
+          "points": [
+            "$89 drain clearing, originally $129, with a free camera inspection",
+            "One accessible ground-level drain line"
+          ]
+        },
+        {
+          "slug": "bathroom-plumbing",
+          "title": "Bathroom Plumbing",
+          "icon": "droplets",
+          "text": "Faucets, toilets, showers, tub drains and fixture replacements, from a leaky tap to a full remodel."
+        },
+        {
+          "slug": "kitchen-plumbing",
+          "title": "Kitchen Plumbing",
+          "icon": "droplets",
+          "text": "Leaky faucets, garbage disposals, supply lines and kitchen drain issues fixed the right way."
+        },
+        {
+          "slug": "water-heaters",
+          "title": "Water Heaters",
+          "icon": "flame",
+          "text": "Hot water on demand. We install, repair and replace tank and tankless systems, all brands.",
+          "points": [
+            "Gas, electric and tankless units, all major brands and models",
+            "Permits pulled on a new installation so you do not have to",
+            "Same-day service on a water heater emergency",
+            "$150 off a new tank water heater",
+            "$250 off a new tankless water heater"
+          ]
+        },
+        {
+          "slug": "water-softeners",
+          "title": "Water Softeners",
+          "icon": "filter",
+          "text": "Installation and service for Humble's hard water, which protects the pipes and the fixtures downstream of it."
+        },
+        {
+          "slug": "slab-leak",
+          "title": "Slab Leak Services",
+          "icon": "home",
+          "text": "Slab leaks are serious, and shifting soil around Humble causes them. Accurate detection and repair with minimal disruption."
+        },
+        {
+          "slug": "water-leak",
+          "title": "Water Leak Services",
+          "icon": "droplets",
+          "text": "Leaks located and stopped before they cause major damage."
+        },
+        {
+          "slug": "sewer-and-gas-lines",
+          "title": "Sewer and Gas Lines",
+          "icon": "cable",
+          "text": "Sewer and gas line repairs and inspections by licensed plumbers.",
+          "points": ["Free camera inspection on trenchless plumbing services"]
+        },
+        {
+          "slug": "commercial-plumbing",
+          "title": "Commercial Plumbing",
+          "icon": "building",
+          "text": "Expert commercial plumbing to keep a business running, for residential and light commercial customers alike."
+        }
+      ]
+    },
+    {
+      "slug": "electrical",
+      "title": "Electrical",
+      "icon": "zap",
+      "summary": "Licensed electricians for repairs, panels, wiring, lighting, surge protection and EV chargers.",
+      "intro": "A residential electrical system has to safely carry growing demand from appliances, HVAC equipment and home technology. Our licensed electricians troubleshoot faults, update service panels and install the new circuits that modern loads need, all to current code.",
+      "image": "/brands/airtechofhumbleelitecomfort/electrical",
+      "imageAlt": "A family charging an electric car from a home charger in a garage",
+      "services": [
+        {
+          "slug": "electrical-repairs",
+          "title": "Electrical Repairs",
+          "icon": "wrench",
+          "text": "Fast, reliable electrical repairs for your home or business, including troubleshooting the faults that are hard to pin down.",
+          "points": ["Circuit breaker faults, ceiling fans and new circuits"]
+        },
+        {
+          "slug": "electrical-panels",
+          "title": "Electrical Panels",
+          "icon": "circuit",
+          "text": "Panel upgrades and replacements done safely and to code, for homes whose demand has outgrown the original service.",
+          "points": ["$99 panel maintenance"]
+        },
+        {
+          "slug": "electrical-inspections",
+          "title": "Electrical Inspections",
+          "icon": "shield",
+          "text": "A full inspection of the system, which is also where an unsafe connection gets found before it becomes a problem."
+        },
+        {
+          "slug": "electrical-remodeling",
+          "title": "Electrical Remodeling",
+          "icon": "settings",
+          "text": "Upgrade the electrical system as part of a remodel, so the new layout is wired for what will actually be plugged into it."
+        },
+        {
+          "slug": "wiring-rewiring",
+          "title": "Wiring & Rewiring",
+          "icon": "cable",
+          "text": "Code-compliant wiring and rewiring, including older homes whose original wiring is past its service life."
+        },
+        {
+          "slug": "switch-outlet-repair",
+          "title": "Switch & Outlet Repair",
+          "icon": "plug",
+          "text": "Faulty switches and outlets fixed quickly by a licensed team."
+        },
+        {
+          "slug": "surge-protection",
+          "title": "Whole Home Surge Protection",
+          "icon": "power",
+          "text": "Shield the electronics and appliances in the house from a surge coming in off the grid.",
+          "points": ["$100 off whole-home surge protectors"]
+        },
+        {
+          "slug": "ev-charger-installation",
+          "title": "EV Charger Installation",
+          "icon": "ev",
+          "text": "Home EV charger installation by our licensed team, including the circuit the charger needs.",
+          "points": ["10% off EV chargers"]
+        },
+        {
+          "slug": "lighting",
+          "title": "Lighting",
+          "icon": "lightbulb",
+          "text": "Any lighting install or repair inside the home, from a single fixture to a whole room."
+        },
+        {
+          "slug": "outdoor-lighting",
+          "title": "Outdoor Lighting",
+          "icon": "sun",
+          "text": "Outdoor lighting installed and repaired by our expert team."
+        },
+        {
+          "slug": "security-lighting",
+          "title": "Security Lighting",
+          "icon": "shield",
+          "text": "Deter intruders and stay safer with security lighting around the property."
+        },
+        {
+          "slug": "smoke-co-detectors",
+          "title": "Smoke & CO Detectors",
+          "icon": "shield",
+          "text": "Keep your family safe with updated smoke and carbon monoxide detectors, wired and placed correctly."
+        },
+        {
+          "slug": "home-automation",
+          "title": "Home Automation",
+          "icon": "settings",
+          "text": "Control your home smarter with home automation installed by electricians rather than guessed at."
+        }
+      ]
+    },
+    {
+      "slug": "generators",
+      "title": "Generators",
+      "icon": "battery",
+      "summary": "Whole-home standby generators installed and serviced, so the house keeps running through an outage.",
+      "intro": "Severe weather and grid disruptions can leave homes without electricity when it is needed most. Air Tech of Humble installs and services whole-home standby generators, so essential systems keep running during an outage.",
+      "image": "/brands/airtechofhumbleelitecomfort/generators",
+      "imageAlt": "A whole-home standby generator installed on a concrete pad beside a house",
+      "services": [
+        {
+          "slug": "generator-installation",
+          "title": "Generator Installation",
+          "icon": "battery",
+          "text": "System sizing and installation for a whole-home standby generator, matched to what the house actually needs to keep running.",
+          "points": ["Free estimates on new whole-home generator installations"]
+        },
+        {
+          "slug": "generator-maintenance",
+          "title": "Generator Maintenance",
+          "icon": "gauge",
+          "text": "Service for an existing unit, which is what keeps it ready for the outage it was bought for."
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Seasonal tune-up",
+    "title": "Get your seasonal AC or heating tune-up and stay comfortable.",
+    "text": "Mention the coupon when scheduling and the seasonal tune-up is $69.",
+    "price": "$69",
+    "image": "/brands/airtechofhumbleelitecomfort/tuneup",
+    "imageAlt": "A finger adjusting a digital thermostat on a wall"
+  },
+  "plan": {
+    "name": "Shield of Protection",
+    "intro": "Your plumbing, electrical, cooling and heating service should be stress-free. Members get two HVAC tune-ups a year whether or not they remember to book them, priority scheduling, discounted repairs and no diagnostic fee.",
+    "tiers": [
+      {
+        "name": "Shield of Protection",
+        "price": "$14.95",
+        "period": "a month and up",
+        "featured": true,
+        "features": [
+          "2 free precision HVAC tune-ups every year",
+          "20% discount on HVAC repairs",
+          "48-hour priority scheduling",
+          "Free diagnostic fee on all trades",
+          "$100 a year loyalty credit toward a new system, up to $800"
+        ]
+      }
+    ],
+    "note": "If membership lapses for 3 months, the loyalty credit is voided. Some restrictions apply; call for details."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Founded in Humble in 2012, and still built on telling you the truth about your system.",
+    "text": [
+      "Air Tech of Humble, previously known as Elite Comfort Solutions, was founded in 2012 and has been delivering home services to homeowners throughout Humble and the surrounding areas ever since. The mission has always been to combine quality products, expert craftsmanship and dependable service across every trade we offer.",
+      "We believe great service starts with education and transparency. Every customer gets an accurate diagnosis and recommendations tailored to their home, not sales pressure, and every job is backed by our 100% satisfaction guarantee. That approach was recently recognised with the Excellence in Workplace Culture award.",
+      "Our technicians stay current with the latest technology and best practice in the industry. As a Trane Comfort Specialist we install Trane Comfort System products while servicing all brands of HVAC equipment. With a well-stocked service fleet we offer 7-day-a-week service and complete most repairs on the spot."
+    ],
+    "image": "/brands/airtechofhumbleelitecomfort/team",
+    "imageAlt": "The Air Tech team standing in front of a company van",
+    "values": [
+      {
+        "title": "No surprise pricing",
+        "text": "The quote you get upfront is the price you pay, and any additional work is approved in writing before it starts."
+      },
+      {
+        "title": "Peace of mind",
+        "text": "Every technician who enters your home is background checked and randomly drug tested."
+      },
+      {
+        "title": "Property protection",
+        "text": "Lawns, carpets, floors, walls and door frames are protected, drop cloths go down on every work area, and damaged property is repaired or replaced."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How often should I have my heater serviced in Humble?",
+      "a": "Once a year, ideally in the fall before the first cold front hits. Humble's mild climate means heaters sit idle for months at a time, which can cause startup issues and wear on components that weren't obvious at the end of last season. An annual tune-up keeps the system clean, calibrated and ready to run when you need it."
+    },
+    {
+      "q": "What type of heating systems do you service?",
+      "a": "We service all major types of residential heating systems: gas furnaces, electric furnaces, heat pumps and dual-fuel systems. We work on all major brands including Carrier, Trane, American Standard and Daikin."
+    },
+    {
+      "q": "When should I replace my heater instead of repairing it?",
+      "a": "A common guideline is the $5,000 rule: multiply the unit's age by the repair cost. If that number exceeds $5,000, replacement usually makes more financial sense. We'll always give you both options with honest recommendations so you can make the right call for your situation."
+    },
+    {
+      "q": "Are your plumbers licensed in Texas?",
+      "a": "Yes. All of our plumbers hold valid Texas plumbing licenses and carry full insurance. Our plumbing license number is RMP44203. Every technician is also background-checked before entering your home."
+    },
+    {
+      "q": "How much does plumbing repair cost?",
+      "a": "It depends on the type and scope of the repair. We always provide an upfront written quote before starting any work so there are no surprises. We also offer financing for larger jobs. Call us for a free estimate."
+    },
+    {
+      "q": "Do you offer emergency services in all the areas you cover?",
+      "a": "Yes. Emergency HVAC, plumbing and electrical services are available across our entire service area. If your AC goes out at midnight or a pipe bursts on a Sunday, we have technicians on call and ready to respond."
+    },
+    {
+      "q": "Is ductless really more efficient than central AC?",
+      "a": "A ductless AC is designed without the main cause of energy loss in central systems: air ducts. That means a mini-split installation in the correct application can dramatically reduce your energy loss."
+    },
+    {
+      "q": "What is included in an AC tune-up?",
+      "a": "An AC tune-up includes cleaning condenser coils, checking refrigerant levels, inspecting electrical connections, clearing condensate drains and making sure the system is cooling at its best. Early spring, March or April, is the best time to book one, before the intense Texas heat arrives."
+    },
+    {
+      "q": "How long do AC units last in Texas?",
+      "a": "Because of the heavy usage here, most AC units in Texas last 10 to 15 years. Regular maintenance is what gets a system to the longer end of that range. A unit under 10 years old with a minor fault is usually worth fixing; one running R-22 refrigerant or needing frequent repairs should be replaced."
+    },
+    {
+      "q": "Should I repair or replace my water heater?",
+      "a": "It depends on the age of the unit and the nature of the problem. If your water heater is under 8 years old and the issue is a failed heating element or thermostat, repair usually makes sense. If it is over 10 years old, or the tank itself is leaking or corroded, replacement is almost always the better call. Our plumbers will give you an honest assessment either way."
+    },
+    {
+      "q": "Is a tankless water heater worth it in Humble?",
+      "a": "For most Humble homeowners, yes, especially if your current tank is aging out and you plan to stay in the home for several years. A tankless unit heats water only when you need it rather than keeping a full tank hot around the clock, and they typically last 20 to 25 years against 10 to 15 for a traditional tank. The upfront cost is higher, so we can run the numbers for your household before you decide."
+    },
+    {
+      "q": "What counts as an AC emergency?",
+      "a": "A total cooling failure during a heatwave, an electrical burning smell, sparking, or water leaking from the indoor unit all need immediate service. Call us rather than waiting, and there is no after-hours fee on HVAC calls at the moment."
+    },
+    {
+      "q": "How often should I change my air filters?",
+      "a": "Every three to six months for most homes. If you have pets, change them more often, every two to four months. It is the simplest thing you can do for both air quality and system efficiency."
+    }
+  ],
+  "serviceArea": [
+    "Humble",
+    "Atascocita",
+    "Kingwood",
+    "Spring",
+    "Crosby",
+    "Huffman",
+    "New Caney",
+    "Splendora",
+    "Tomball",
+    "Cypress",
+    "Aldine",
+    "The Woodlands",
+    "Conroe",
+    "Houston",
+    "Katy",
+    "Pasadena"
+  ],
+  "facts": [
+    {
+      "heading": "Our guarantees",
+      "items": [
+        "100% satisfaction guarantee on every service we provide",
+        "Peace of Mind: every technician in your home is background checked and randomly drug tested",
+        "100% Money Back: if an installed system does not reach the temperature range promised, it is replaced at no charge",
+        "No Surprise: the quote you get upfront is the price you pay, with additional work approved by the owner in writing first",
+        "Property Protection: lawns, shrubbery, carpeting, floors, walls, furniture and door frames are protected, and damaged property is repaired or replaced",
+        "Comfort: equipment that does not perform as stated is removed and 100% of your investment returned",
+        "Utility Savings: a minimum 30% saving on heating and cooling costs on deluxe or higher systems, or we refund double the difference not realised in the first year",
+        "$500 Installation Date: $500 paid if your new system is not operating by the date promised",
+        "$500 No Frustration: a first-year breakdown leaving you without heating or cooling is attended within 24 hours or $500 is paid",
+        "No Lemon: a compressor failing twice in the first 5 years means a complete new condensing unit, and a heat exchanger failing in the first 10 years means a new furnace"
+      ]
+    },
+    {
+      "heading": "Awards, certifications and affiliations",
+      "items": [
+        "BBB accredited with an A+ rating",
+        "Trane Comfort Specialist",
+        "Excellence in Workplace Culture award",
+        "BBB Awards for Excellence 2020 winner",
+        "Houston Chronicle Best of the Best, Houston 2020",
+        "Licensed and insured for HVAC, plumbing and electrical work in Texas",
+        "Technicians background checked and randomly drug tested",
+        "7-day-a-week service from a well-stocked service fleet"
+      ]
+    },
+    {
+      "heading": "Brands we carry",
+      "text": "Trane, American Standard, Carrier, Daikin, Mitsubishi Electric and Generac. We service all brands of HVAC equipment."
+    },
+    {
+      "heading": "Current specials",
+      "items": [
+        "No after-hours fees on HVAC calls",
+        "$69 seasonal AC or heating tune-up",
+        "Up to $2,000 off select new AC systems",
+        "$100 off any indoor air quality product or service",
+        "$89 drain clearing, originally $129, with a free camera inspection",
+        "Up to 20% off any plumbing service or repair",
+        "$25 off the dispatch fee for new plumbing customers",
+        "$150 off a new tank water heater, $250 off a new tankless",
+        "Free camera inspection with trenchless plumbing services",
+        "$99 panel maintenance",
+        "$100 off whole-home surge protectors",
+        "10% off EV chargers",
+        "$50 off repairs, including a 2 year parts and labour warranty",
+        "$0 service fee with a repair",
+        "Free estimates on new whole-home generator installations",
+        "No money down with convenient monthly payments on a new unit",
+        "0% financing available through Service Finance",
+        "Shield membership as low as $14.95 a month"
+      ]
+    },
+    {
+      "heading": "Coupon terms",
+      "text": "Mention the coupon when scheduling service. Offers cannot be combined with one another and restrictions apply on most of them. The $50 off repairs coupon is one-time use, one per customer, for future services, and carries a 2 year parts and labour warranty. The $150 off tank water heater offer is on select units and carries a 10 year tank, parts and labour warranty. Drain clearing at $89 covers one accessible ground-level drain line. Financing offers are subject to credit approval. Call for details."
+    },
+    {
+      "heading": "Financing partners",
+      "items": [
+        "Synchrony: simple application with fast credit decisions, unsecured revolving credit lines, promotional financing and online account management. Purchase APR 26.99% on new accounts, $2 minimum monthly interest charge, and a $69 account activation fee on qualifying purchases with the Home Design credit card",
+        "Wells Fargo Home Projects: 60 month financing with approved credit on deluxe and above Trane equipment, issued by Wells Fargo Bank, N.A., an Equal Housing Lender",
+        "Service Finance: additional flexible financing for HVAC equipment and home comfort improvements, applied for securely online"
+      ]
+    },
+    {
+      "heading": "Booking and hours",
+      "text": "Open 24 hours, seven days a week, with easy online booking and a request service form on the site. If you are submitting a service request after hours or at the weekend, it is best to call, otherwise your request will not be answered until the following business day. The form asks for your name, email, phone, address, city, state, zip, the service you need and whether it is an appointment or a general enquiry."
+    },
+    {
+      "heading": "Our name",
+      "text": "The company trades as Air Tech Cooling, Heating, Plumbing & Electrical, and was previously known as Elite Comfort Solutions. Air Tech of Humble is the Humble branch."
+    },
+    {
+      "heading": "Payments accepted",
+      "text": "Visa, Mastercard, American Express and Discover."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/airtechofhumble",
+        "Instagram: instagram.com/airtechhumble",
+        "X: x.com/elitecomfort1",
+        "YouTube: youtube.com/@AirTechACPlumbing",
+        "LinkedIn: linkedin.com/company/elite-comfort-home-&-commercial-services"
+      ]
+    },
+    {
+      "heading": "Working with us",
+      "text": "We are always looking for strong technicians to join the team, and a resume can be sent in through the careers page. Our team attends training continuously to keep up with changing equipment and technology, and the workplace itself was recognised with the Excellence in Workplace Culture award."
+    },
+    {
+      "heading": "Outside the service area",
+      "text": "If you are not in our direct service area we have sister companies we recommend across Texas, including Austin, Beaumont, Blanco, Boerne, College Station, Corpus Christi, League City and San Antonio. Call and we will connect you with the right team."
+    },
+    {
+      "heading": "Texts, calls and emails",
+      "text": "Consent to marketing texts, calls and emails is never a condition of purchase, and you can opt out at any time. Reply STOP to any text, or HELP for assistance, and you can also opt out by calling us or emailing service@airtechofhumble.com. Message frequency varies, and message and data rates may apply."
+    },
+    {
+      "heading": "Site policies",
+      "text": "An accessibility statement, privacy policy, terms and conditions and cookie preferences are all published on the site."
+    }
+  ]
+}

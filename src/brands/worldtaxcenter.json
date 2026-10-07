@@ -1,0 +1,202 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "World Tax Center",
+  "shortName": "World Tax Center",
+  "tagline": "Income tax and bookkeeping",
+  "phone": "(832) 975-0101",
+  "email": "contact@theworldtaxcenter.com",
+  "address": "3222 Burke Rd Suite 110",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77504",
+  "rating": 5.0,
+  "reviewCount": 36,
+  "hours": [["Mon – Fri", "10 AM – 5 PM"], ["Saturday", "By appointment"], ["Sunday", "Closed"]],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Call the office or book a consultation, and remember that tax preparation fees can be paid out of your refund rather than upfront."
+  },
+  "brand": {
+    "primary": "#263bb5",
+    "primaryDeep": "#1a2a86",
+    "accent": "#a8761c",
+    "ink": "#15192b",
+    "muted": "#565d72",
+    "surface": "#f5f6fb",
+    "cream": "#eceefa",
+    "line": "#dde0ee",
+    "heading": "'Fjalla One', Impact, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/worldtaxcenter/logo.webp",
+    "logoWidth": 190
+  },
+  "hero": {
+    "eyebrow": "Income tax and bookkeeping in Pasadena",
+    "title": "Taxes made simpler for people and businesses.",
+    "lead": "At World Tax Center our mission is to simplify the tax process for our clients. We provide reliable and accurate tax services to individuals and businesses, and we handle the bookkeeping, payroll and sales tax filing behind a business as well.",
+    "image": "/brands/worldtaxcenter/hero",
+    "imageAlt": "Office towers seen from the street below",
+    "points": [
+      "No tax preparation fees upfront",
+      "Bookkeeping, payroll and sales tax filing",
+      "Forms and updates in English and Spanish"
+    ]
+  },
+  "overview": {
+    "title": "Tax work for individuals, and the back office for a business.",
+    "text": "Pick a service to see what it covers, or call the Burke Road office and talk it through with our team."
+  },
+  "audiences": { "individuals": "Individuals", "businesses": "Businesses" },
+  "services": [
+    {
+      "slug": "tax-preparation",
+      "title": "Tax Preparation",
+      "audience": "individuals",
+      "icon": "file-text",
+      "summary": "Returns prepared, with no fees upfront.",
+      "text": "We prepare your return and check it for accuracy, and the preparation fee can come out of your refund instead of your pocket.",
+      "lead": "We know sometimes you need money for projects or emergencies, so there is no need to pay tax preparation fees upfront. The fee can be taken from your refund, which means there is nothing to pay when the return is filed.",
+      "image": "/brands/worldtaxcenter/tax-preparation",
+      "imageAlt": "A return being checked against a calculator on a desk",
+      "covers": [
+        { "title": "Reliable and accurate filing", "text": "Your return prepared by a tax professional and reviewed before it goes to the IRS." },
+        { "title": "Fees from the refund", "text": "Preparation fees can be paid out of the refund, so there is nothing to pay upfront." }
+      ],
+      "questions": [
+        { "q": "Do I have to pay the preparation fee upfront?", "a": "No. Tax preparation fees can be paid from your refund, so there is nothing to pay when we file." },
+        { "q": "When is the office open during tax season?", "a": "We keep extended hours in tax season. Outside of it the office is open Monday to Friday from 10 AM to 5 PM, with Saturdays by appointment." }
+      ]
+    },
+    {
+      "slug": "tax-planning",
+      "title": "Tax Planning",
+      "audience": "individuals",
+      "icon": "chart",
+      "summary": "Planning ahead to lower what you owe.",
+      "text": "We help you achieve your tax objectives while minimizing your tax liability, rather than seeing your numbers for the first time at filing.",
+      "lead": "Planning is the part of tax work that happens before the deadline. Our goal is to help you achieve your tax objectives while keeping your tax liability as low as the rules allow."
+    },
+    {
+      "slug": "tax-resolution",
+      "title": "Tax Resolution",
+      "audience": "individuals",
+      "icon": "scale",
+      "summary": "Help with notices and back taxes.",
+      "text": "When something has gone wrong with a past return or a balance owed, our team works it through with the agency on your behalf.",
+      "lead": "Taxes can be complicated and stressful, and a notice in the mail is the most stressful part of them. Our team of tax professionals has the knowledge and expertise to work through a resolution with you.",
+      "image": "/brands/worldtaxcenter/tax-resolution",
+      "imageAlt": "A document being read closely through a magnifying glass"
+    },
+    {
+      "slug": "tax-consulting",
+      "title": "Tax Consulting",
+      "audience": "individuals",
+      "icon": "handshake",
+      "summary": "Answers on a complicated tax question.",
+      "text": "Consulting for the situations that do not fit a form, from a change in circumstances to a question nobody has answered yet.",
+      "lead": "We offer consulting services to help our clients navigate complex tax issues. Bring the question to the office and we will work through what it means for you."
+    },
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping",
+      "audience": "businesses",
+      "icon": "book",
+      "summary": "Your books kept current through the year.",
+      "text": "We keep the books for your business so the year's numbers are ready when the return is, rather than reconstructed in April.",
+      "lead": "Bookkeeping is one of the solutions we provide for your business. Keeping the records straight through the year is what makes everything else, from payroll to the return itself, straightforward.",
+      "image": "/brands/worldtaxcenter/bookkeeping",
+      "imageAlt": "Records being written up at a desk beside a calculator"
+    },
+    {
+      "slug": "payroll",
+      "title": "Payroll",
+      "audience": "businesses",
+      "icon": "wallet",
+      "summary": "Paying your people and the filings with it.",
+      "text": "Payroll run for your business, with the reporting that goes alongside it handled in the same place as your books.",
+      "lead": "We help you with payroll as part of the wider set of solutions we provide for a business, so the people who work for you are paid and the filings behind that are kept up.",
+      "image": "/brands/worldtaxcenter/payroll",
+      "imageAlt": "Hundred dollar bills laid out on a wooden table"
+    },
+    {
+      "slug": "sales-tax-filing",
+      "title": "Sales Tax Filing",
+      "audience": "businesses",
+      "icon": "receipt",
+      "summary": "Sales tax returns filed on time.",
+      "text": "Sales tax collected and reported by a business has its own schedule, and we file those returns for you.",
+      "lead": "Sales tax filing is part of the business side of what we do. We take the figures from your records and file the return on the schedule your business is on."
+    },
+    {
+      "slug": "llc-registration",
+      "title": "LLC Registration",
+      "audience": "businesses",
+      "icon": "landmark",
+      "summary": "Registering a new LLC, start to finish.",
+      "text": "Register an LLC through our office. Fill in the details for the new company and we review them and come back with any questions.",
+      "lead": "You can register an LLC through our office using the form on our site. Once we have the details we review the information and contact you if we have any additional questions.",
+      "covers": [
+        { "title": "Applicant details", "text": "Full name, email and phone for the person registering the company." },
+        { "title": "Two company names", "text": "The two names you would like for the company, in order of preference." },
+        { "title": "Partners", "text": "The name and address of each partner, where the company has them." },
+        { "title": "The business and its start date", "text": "What kind of business it will be, and the date you want to open it, from today up to 90 days out." },
+        { "title": "Identification", "text": "IDs and a Social Security number or ITIN for the people on the registration." }
+      ]
+    }
+  ],
+  "about": {
+    "title": "A tax office on Burke Road in Pasadena.",
+    "text": [
+      "At World Tax Center, our mission is to simplify the tax process for our clients. We understand that taxes can be complicated and stressful, which is why we are committed to providing reliable and accurate tax services to individuals and businesses. Our goal is to help our clients achieve their tax objectives while minimizing their tax liability.",
+      "We provide a variety of tax services, including tax preparation, tax planning and tax resolution, and we offer consulting to help our clients navigate complex tax issues. We also provide more solutions for your business: bookkeeping, payroll and sales tax filing.",
+      "We love our customers, so feel free to visit during normal business hours."
+    ],
+    "image": "/brands/worldtaxcenter/about",
+    "imageAlt": "A U.S. individual income tax return on a desk with a pen and glasses",
+    "values": [
+      { "title": "No fees upfront", "text": "Tax preparation fees can be paid from the refund, so there is nothing to pay when we file." },
+      { "title": "Individuals and businesses", "text": "The return and the bookkeeping, payroll and sales tax filing behind a business, in one office." },
+      { "title": "English and Spanish", "text": "Our forms and the tax updates we publish are written in both English and Spanish." }
+    ]
+  },
+  "faqs": [
+    { "q": "Do I pay tax preparation fees upfront?", "a": "No. We know sometimes you need money for projects or emergencies, so tax preparation fees can be paid from the refund. There is nothing to pay upfront." },
+    { "q": "What can you do for my business beyond the return?", "a": "We provide more solutions for your business, including bookkeeping, payroll and sales tax filing. You can also register an LLC through our office." },
+    { "q": "Can I just come to the office?", "a": "Yes. We love our customers, so feel free to visit during normal business hours, which are Monday to Friday from 10 AM to 5 PM. Saturdays are by appointment and we are closed on major holidays." },
+    { "q": "Are your hours different during tax season?", "a": "Yes. We keep extended hours in tax season." },
+    { "q": "Do you work in Spanish?", "a": "Yes. Our registration forms and the tax updates we publish are in both English and Spanish." }
+  ],
+  "resources": [
+    { "title": "Book a consultation", "text": "Pick a time on the office calendar and schedule a consultation online.", "href": "https://link.faarmdigital.com/widget/booking/CgjisShj85r9h8TkJ3B9" },
+    { "title": "Client portal", "text": "Sign in to the portal to reach your documents and messages from the office.", "href": "https://theworldtaxcenter.app.clientclub.net/" },
+    { "title": "IRS new deadlines for natural disaster victims", "text": "Our write-up of the filing deadlines the IRS moved for people in a declared disaster area.", "href": "https://theworldtaxcenter.com/post/irs-new-deadlines-for-natural-disaster-victims" },
+    { "title": "Nuevos plazos del IRS para las víctimas de desastres naturales", "text": "The same update in Spanish.", "href": "https://theworldtaxcenter.com/post/nuevos-plazos-del-irs-para-las-vctimas-de-desastres-naturales" }
+  ],
+  "facts": [
+    {
+      "heading": "No fees upfront",
+      "text": "We know sometimes you need money for projects or emergencies, so there is no need to pay tax preparation fees upfront. Tax preparation fees can be paid from the refund, so there is nothing to pay now."
+    },
+    {
+      "heading": "Office hours",
+      "items": [
+        "Monday to Friday, 10 AM to 5 PM",
+        "Saturday by appointment",
+        "Sunday closed",
+        "Closed major holidays",
+        "Extended hours in tax season"
+      ]
+    },
+    {
+      "heading": "English and Spanish",
+      "text": "Our registration forms and the tax updates we publish are written in both English and Spanish."
+    },
+    {
+      "heading": "Text messaging",
+      "text": "No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. All of the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties."
+    }
+  ]
+}
