@@ -1,0 +1,701 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Ratliff & Jentho, CPAs",
+  "shortName": "Ratliff & Jentho",
+  "tagline": "A full-service CPA firm in Baytown, Texas",
+  "phone": "(281) 422-2296",
+  "email": "info@rjcpas.com",
+  "address": "606 Rollingbrook Dr, Suite 1B",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77521",
+  "license": "A full-service CPA firm licensed in Texas, enrolled in the AICPA Peer Review Program.",
+  "rating": 3.4,
+  "reviewCount": 5,
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Call the office or send the form and we will be happy to offer you a free initial consultation."
+  },
+  "brand": {
+    "primary": "#3b6095",
+    "primaryDeep": "#2a4670",
+    "accent": "#9c6b35",
+    "ink": "#1b2430",
+    "muted": "#586372",
+    "surface": "#f5f7fa",
+    "cream": "#e8eef6",
+    "line": "#dde4ed",
+    "heading": "'Source Serif 4', Georgia, serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Open+Sans:wght@400;500;600;700&display=swap",
+    "logo": "/brands/ratliffjentho/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Certified public accountants in Baytown",
+    "title": "A full-service CPA firm for business owners, executives and independent professionals.",
+    "lead": "We offer a broad range of accounting, tax and advisory services from one office on Rollingbrook Drive. Call us today and we will be happy to offer you a free initial consultation.",
+    "image": "/brands/ratliffjentho/hero",
+    "imageAlt": "A calculator resting on financial statements on a desk",
+    "points": [
+      "Partners in practice since 1985",
+      "Five CPAs on staff",
+      "Free initial consultation"
+    ]
+  },
+  "overview": {
+    "title": "Accounting, tax and advisory work for individuals and for the businesses that employ them.",
+    "text": "Pick a service to see what it covers, or call the office and talk it through with our team. Pricing is quoted by phone."
+  },
+  "audiences": {
+    "individuals": "Individuals & Families",
+    "businesses": "Businesses & Non-Profits"
+  },
+  "services": [
+    {
+      "slug": "tax-preparation",
+      "title": "Tax Preparation",
+      "audience": "individuals",
+      "icon": "receipt",
+      "summary": "Returns prepared, reviewed and e-filed.",
+      "text": "Today's tax laws are complicated enough that a relatively simple return can be confusing, and it is easy to overlook deductions and credits you are entitled to.",
+      "lead": "Preparing your own return can leave you with more questions than answers. Even with a software package there is no substitute for an experienced tax professional reading your situation.",
+      "image": "/brands/ratliffjentho/tax-preparation",
+      "imageAlt": "Tax withholding publications, forms and a calculator laid out on a table",
+      "covers": [
+        {
+          "title": "Checked and rechecked",
+          "text": "Your return is run against our software to identify the items the IRS may look at more closely and to review the math, which limits contact from the IRS."
+        },
+        {
+          "title": "Electronic filing",
+          "text": "Your return can be filed electronically so a refund comes back quicker."
+        },
+        {
+          "title": "Withholding review",
+          "text": "We show you how to adjust your payroll withholding so you keep more of each paycheck instead of lending the IRS money interest-free."
+        },
+        {
+          "title": "Next year's deductions",
+          "text": "We point out deductions that will lower next year's liability, and give you a sheet of the ones most commonly overlooked."
+        },
+        {
+          "title": "Books a mess? No problem",
+          "text": "If you own a small business and have not kept up the bookkeeping, we will prepare the year's books, a full Schedule C and your personal return, then set up a system you can keep up with."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Do you prepare business returns as well as personal ones?",
+          "a": "Yes. The firm prepares business, individual and trust income tax returns."
+        },
+        {
+          "q": "What does it cost?",
+          "a": "Call the office for pricing. The first consultation is free."
+        }
+      ]
+    },
+    {
+      "slug": "tax-planning",
+      "title": "Tax Planning",
+      "audience": "individuals",
+      "icon": "chart",
+      "summary": "Strategies worked out before year end.",
+      "text": "Planning is the key to successfully and legally reducing your tax liability. We go beyond tax compliance and proactively recommend strategies to maximize your after-tax income.",
+      "lead": "We go beyond tax compliance. Planning is the key to legally reducing what you owe, and it works best as a conversation held before the year closes rather than after it.",
+      "covers": [
+        {
+          "title": "Year-round attention",
+          "text": "We make tax planning part of your overall financial picture rather than something that happens once a year at filing time."
+        },
+        {
+          "title": "Current on the law",
+          "text": "We continually educate ourselves on changes to the tax law, new tax rules and the court decisions that interpret them."
+        },
+        {
+          "title": "Business owners",
+          "text": "Perfectly legal deductions that owners commonly miss, read against how your business is actually structured."
+        },
+        {
+          "title": "Individuals",
+          "text": "Legitimate strategies for lowering a personal tax bill, sized to your income and your circumstances."
+        }
+      ],
+      "questions": [
+        {
+          "q": "When should we talk about planning?",
+          "a": "Before year end, while there is still time to act on it. Call the office and we will set up a free initial consultation."
+        }
+      ]
+    },
+    {
+      "slug": "tax-problems",
+      "title": "Tax Problems",
+      "audience": "individuals",
+      "icon": "shield-check",
+      "summary": "IRS audits, notices and unfiled returns.",
+      "text": "We are here to help you resolve your tax problems and put an end to the misery the IRS can put you through. We pride ourselves on being efficient, affordable and discrete.",
+      "lead": "Few things are worse than an audit letter in the mail. Rarely do our clients even have to talk with the IRS. You forward us the notice and we handle it from A to Z.",
+      "covers": [
+        {
+          "title": "IRS audit representation",
+          "text": "Audits take significant time away from your business and family. We handle the bureaucracy and the paperwork so you are not taking time off work to do it."
+        },
+        {
+          "title": "Non-filed tax returns",
+          "text": "Getting back into the filing system, so the problem stops growing while it sits."
+        },
+        {
+          "title": "Get your IRS file",
+          "text": "Requesting and reading what the IRS already holds on you, so a plan can be built on the real record."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Do I have to deal with the auditor myself?",
+          "a": "Rarely. IRS auditors are trained to extract more information than you are legally obliged to provide, so we handle it for you."
+        },
+        {
+          "q": "What should I do with an audit notice?",
+          "a": "Send it to us and call the office. A consultation about an audit notice is free."
+        }
+      ]
+    },
+    {
+      "slug": "personal-financial-planning",
+      "title": "Personal Financial Planning",
+      "audience": "individuals",
+      "icon": "piggy-bank",
+      "summary": "One-on-one guidance and a written plan.",
+      "text": "You get one-on-one guidance and a comprehensive financial plan that helps manage risk, improve performance, and ensure the growth and longevity of your wealth.",
+      "lead": "A plan is worth having in writing. We sit down with you one-on-one and build one that manages risk, improves performance and holds up over time.",
+      "covers": [
+        {
+          "title": "Managing risk",
+          "text": "Reading where your money is exposed and what to do about it."
+        },
+        {
+          "title": "Performance",
+          "text": "Looking at what your assets are actually returning against what they should be."
+        },
+        {
+          "title": "Growth and longevity",
+          "text": "Planning for the long run rather than the current year."
+        }
+      ]
+    },
+    {
+      "slug": "estate-planning",
+      "title": "Estate Planning",
+      "audience": "individuals",
+      "icon": "scale",
+      "summary": "Wills, trusts and transfers to heirs.",
+      "text": "The hassles and red tape associated with estate planning can be daunting, but you don't need to do it alone. Our team is waiting to assist you through every step of the process.",
+      "lead": "Every estate planning situation is different. To help you we want to know you, your situation and the nature of your relationships, and we stay available through the whole process.",
+      "covers": [
+        {
+          "title": "Defining the goals",
+          "text": "Getting clear on what you want to happen before any document is drawn up."
+        },
+        {
+          "title": "Your documents",
+          "text": "Preparing, organizing and reviewing current wills, trusts, health care directives and powers of attorney."
+        },
+        {
+          "title": "Probate and taxes",
+          "text": "Decreasing the problems and expenses that come with probate, and lessening taxes at time of death."
+        },
+        {
+          "title": "Transfers and liquidity",
+          "text": "Transferring assets to heirs the way you want, with fair and adequate liquidation to cover taxes and other expenses."
+        },
+        {
+          "title": "Incapacity",
+          "text": "Arranging management of your estate in the event you are incapacitated, and amending the plan as circumstances change."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Am I too young to think about this?",
+          "a": "In all cases estate planning ends up saving your family time, heartache and money. It is easier done early than late."
+        },
+        {
+          "q": "Can you work with my attorney?",
+          "a": "Yes. We help organize and create your estate planning team across law, finance and taxes if you need one."
+        }
+      ]
+    },
+    {
+      "slug": "small-business-accounting",
+      "title": "Small Business Accounting",
+      "audience": "businesses",
+      "icon": "calculator",
+      "summary": "Monthly or quarterly books kept for you.",
+      "text": "As a small business owner you have more important things to do than to keep your own books. We take care of your books for you, so you can get back to running your business.",
+      "lead": "Each month or quarter we reconcile your bank account, generate an income statement and a balance sheet, and clean up your general ledger. That is the foundation the rest of your accounting sits on.",
+      "image": "/brands/ratliffjentho/bookkeeping",
+      "imageAlt": "A tax statement, a pen and an open mileage log book on a desk",
+      "covers": [
+        {
+          "title": "Bank reconciliation",
+          "text": "Reconciling each month identifies lost checks and deposits, catches unjustified bank charges, and transfers the risk of a forged check back to the bank when you object promptly."
+        },
+        {
+          "title": "Income statement",
+          "text": "An itemized profit and loss for the period, so you can see operating performance and which areas are over or under budget."
+        },
+        {
+          "title": "Balance sheet",
+          "text": "A snapshot of the business's financial condition, and the figure a lender looks at first."
+        },
+        {
+          "title": "General ledger",
+          "text": "Cleaning up the ledger, where an out-of-balance account is usually the first sign something has been posted wrong."
+        },
+        {
+          "title": "Built out as you need it",
+          "text": "You can customize the package by adding payroll, tax planning, tax preparation or any of the firm's other services."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Monthly or quarterly?",
+          "a": "Either. We do the same set of work on whichever cycle suits the business."
+        }
+      ]
+    },
+    {
+      "slug": "quickbooks",
+      "title": "QuickBooks Services",
+      "audience": "businesses",
+      "icon": "book",
+      "summary": "Setup, training, support and tune-ups.",
+      "text": "QuickBooks is the ideal business accounting software for small to mid-sized business owners, and we set it up, train your staff on it and keep it running right.",
+      "lead": "QuickBooks is designed for the layman, but the initial setup and installation can be tricky, and a file that was set up wrong stays wrong. We handle the whole of it.",
+      "covers": [
+        {
+          "title": "QuickBooks setup",
+          "text": "Saving hours of frustration by having us set QuickBooks up correctly the first time."
+        },
+        {
+          "title": "QuickBooks training",
+          "text": "Once it is working properly, we train you or your employees to operate it specifically for your business."
+        },
+        {
+          "title": "QuickAnswers",
+          "text": "Email and telephone support, so your accounting staff know the answer to a QuickBooks question is a phone call away."
+        },
+        {
+          "title": "QuickTuneup",
+          "text": "A complete tune-up to prepare your books for tax time or a financial review, or to clean up problem areas."
+        },
+        {
+          "title": "Buy QuickBooks and save",
+          "text": "Save up to 20% on the newest version of QuickBooks through the firm."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Can you train my bookkeeper rather than do the work?",
+          "a": "Yes. Training your own employees to run QuickBooks for your business is one of the services on its own."
+        }
+      ]
+    },
+    {
+      "slug": "assurance",
+      "title": "Assurance Services",
+      "audience": "businesses",
+      "icon": "clipboard-check",
+      "summary": "Audits, reviews and compilations.",
+      "text": "Reviews and compilations for businesses, and audits for governmental entities, non-profit organizations and pension and profit sharing plans.",
+      "lead": "Both partners have spent their careers in this work. The firm's accounting and auditing practice is enrolled in the AICPA Peer Review Program and is peer reviewed every three years.",
+      "covers": [
+        {
+          "title": "Reviews",
+          "text": "Analytical procedures and inquiry giving limited assurance on your financial statements, where a full audit is more than the situation calls for."
+        },
+        {
+          "title": "Compilations",
+          "text": "Financial statements assembled from your own records, for the lender or stakeholder that asks for them."
+        },
+        {
+          "title": "Governmental entities",
+          "text": "Audit work for governmental bodies, an area both partners have emphasised for over thirty years."
+        },
+        {
+          "title": "Non-profit organizations",
+          "text": "Audit and review work for tax-exempt organizations, including Circular A-133 engagements."
+        },
+        {
+          "title": "Pension and profit sharing plans",
+          "text": "Audits of employee benefit plans."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Is the firm peer reviewed?",
+          "a": "Yes. The firm is enrolled in the AICPA Peer Review Program and has a peer review of its accounting and auditing practice every three years."
+        },
+        {
+          "q": "Do you perform peer reviews for other firms?",
+          "a": "Yes. David A. Jentho has performed peer reviews for a number of CPA firms in Texas and is a past chairman of the AICPA Peer Review Board."
+        }
+      ]
+    },
+    {
+      "slug": "cash-flow-management",
+      "title": "Cash Flow Management",
+      "audience": "businesses",
+      "icon": "banknote",
+      "summary": "Projections that head off a cash crisis.",
+      "text": "A cash crisis can be emotionally devastating. It can even kill your business. The starting point for avoiding one is allowing us to develop a cash flow projection for you.",
+      "lead": "A profitable business can still run out of money. A projection is what turns that from a surprise into something you can see coming and plan around.",
+      "covers": [
+        {
+          "title": "A cash flow projection",
+          "text": "What is coming in and going out, far enough ahead that a shortfall is a decision rather than an emergency."
+        },
+        {
+          "title": "Seasonal swings",
+          "text": "Planning around the months the business collects less than it spends."
+        },
+        {
+          "title": "Knowing where it went",
+          "text": "Proper management of funds does not only save money, it makes money for you."
+        }
+      ]
+    },
+    {
+      "slug": "bank-financing",
+      "title": "Bank Financing",
+      "audience": "businesses",
+      "icon": "landmark",
+      "summary": "Loan applications a lender takes seriously.",
+      "text": "Requesting a business loan without adequate preparation sends a clear message to the lender: high risk. It pays to be prepared and organized in your approach for financing.",
+      "lead": "Lenders read preparation as a proxy for how the business is run. We put the numbers and the narrative together before you walk in.",
+      "covers": [
+        {
+          "title": "The financial package",
+          "text": "Statements and projections assembled in the form a loan officer expects to read them in."
+        },
+        {
+          "title": "The business case",
+          "text": "What the money is for and how it gets repaid, set out plainly."
+        },
+        {
+          "title": "Before you apply",
+          "text": "Finding the weak spots in the application while there is still time to address them."
+        }
+      ]
+    },
+    {
+      "slug": "strategic-business-planning",
+      "title": "Strategic Business Planning",
+      "audience": "businesses",
+      "icon": "file-pen",
+      "summary": "Getting the plan out of your head.",
+      "text": "If you still have all your plans and ideas locked up inside your head, preparing a strategic plan can help you clarify your company's direction.",
+      "lead": "A plan that lives only in the owner's head cannot be tested, funded or handed to anybody else. Writing it down is most of the work.",
+      "covers": [
+        {
+          "title": "Clarifying direction",
+          "text": "Putting the direction of the company into words that the people running it can act on."
+        },
+        {
+          "title": "The numbers behind it",
+          "text": "Testing the plan against what the business can actually afford to do."
+        },
+        {
+          "title": "Something to measure against",
+          "text": "A written plan is what makes it possible to tell later whether it worked."
+        }
+      ]
+    },
+    {
+      "slug": "succession-planning",
+      "title": "Succession Planning",
+      "audience": "businesses",
+      "icon": "handshake",
+      "summary": "Passing a family business on.",
+      "text": "Developing and implementing a well-designed succession plan is essential to the survival of a family business from one generation to the next.",
+      "lead": "Most family businesses do not survive the handover, and the reason is usually that nobody planned it. It is a long conversation, best started early.",
+      "covers": [
+        {
+          "title": "The transfer",
+          "text": "How ownership actually moves, and what it costs in tax when it does."
+        },
+        {
+          "title": "The next generation",
+          "text": "Who runs it, and what they need to be ready to run it."
+        },
+        {
+          "title": "Lifetime transfers",
+          "text": "Family partnerships, wealth transfers and the other structures that spread a handover over years rather than days."
+        }
+      ]
+    },
+    {
+      "slug": "new-business-formation",
+      "title": "New Business Formation",
+      "audience": "businesses",
+      "icon": "store",
+      "summary": "Setting a new business up right.",
+      "text": "Opening your own business is exciting. It's everything that comes after the excitement has worn off that dictates whether a small business will make it or not.",
+      "lead": "The choices made in the first month — the entity, the registrations, the accounting system — are the ones that are expensive to change later.",
+      "covers": [
+        {
+          "title": "Entity selection",
+          "text": "Which structure fits how you intend to own and run the business, read for tax as well as liability."
+        },
+        {
+          "title": "Registrations",
+          "text": "The federal employer identification number and setup with federal and state agencies, including payroll."
+        },
+        {
+          "title": "Your accounting system",
+          "text": "Designing and installing a system from the start, so the first year's books are not a cleanup job."
+        }
+      ]
+    },
+    {
+      "slug": "non-profit-organizations",
+      "title": "Non-Profit Organizations",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Form 990, 501(c)(3) and exempt status.",
+      "text": "We help you set up and maintain your organization's tax-exempt status by handling all the IRS reporting for you. The IRS uses very specific revenue and expense classifications to decide whether you keep it.",
+      "lead": "The IRS judges an exempt organization on very specific revenue and expense classifications, so it is imperative that your accounting system is built around them from the start.",
+      "covers": [
+        {
+          "title": "Form 990 and 990-T",
+          "text": "Preparing and filing the annual returns, with the income statement, balance sheet, functional expense statement, program expense statements and revenue support schedules the IRS requires."
+        },
+        {
+          "title": "Applying for exempt status",
+          "text": "Completing and filing the 501(c)(3) application, including articles of incorporation with the exempt purpose and dissolution statements, EIN, by-laws and board minutes."
+        },
+        {
+          "title": "Your accounting system",
+          "text": "Designing, installing and maintaining a system built around the IRS classifications, and reviewing and compiling your financial statements."
+        },
+        {
+          "title": "Payroll",
+          "text": "Weekly, bi-weekly or monthly payroll preparation, with payroll tax preparation and deposits."
+        },
+        {
+          "title": "Training",
+          "text": "Training for your accounting personnel, and for your board on reading non-profit financial statements and budgeting effectively."
+        },
+        {
+          "title": "Churches",
+          "text": "Preparing the pastoral housing allowance and the other benefit documentation that meets the complex dual status of ministers."
+        }
+      ],
+      "questions": [
+        {
+          "q": "We are just starting out. Can you help with the application?",
+          "a": "Yes. If you are starting a new not-for-profit we can help prepare the 501(c)(3) application for tax-exempt status and the initial start-up documentation."
+        }
+      ]
+    }
+  ],
+  "process": {
+    "title": "How we work",
+    "text": "Our firm's service rests on three principles: professionalism, responsiveness and quality.",
+    "steps": [
+      {
+        "title": "Professionalism",
+        "text": "Each client receives close personal and professional attention, and is served by the expertise of the whole firm rather than one person in it."
+      },
+      {
+        "title": "Responsiveness",
+        "text": "Companies who choose our firm rely on competent advice and fast, accurate personnel. We provide total financial services to individuals, to large and small businesses and to other agencies."
+      },
+      {
+        "title": "Quality",
+        "text": "An accounting firm is known for the quality of its service, and our reputation reflects the high standards we demand of ourselves."
+      }
+    ]
+  },
+  "affiliations": {
+    "title": "Credentials and memberships",
+    "items": [
+      "American Institute of Certified Public Accountants",
+      "Texas Society of Certified Public Accountants",
+      "Houston Chapter of the Texas Society of CPAs",
+      "AICPA Peer Review Program",
+      "AICPA Peer Review Board (past chairman)",
+      "Texas Society Peer Review Committee"
+    ]
+  },
+  "about": {
+    "title": "A Baytown CPA firm whose partners have practised together since 1985.",
+    "text": [
+      "Ratliff & Jentho, CPAs is a full-service CPA firm licensed in Texas, working from one office on Rollingbrook Drive in Baytown. We offer a broad range of services for business owners, executives and independent professionals, and we are affordable, experienced and friendly.",
+      "Gary R. Ratliff and David A. Jentho have both been partners of the firm since 1985, each with over thirty years in public practice. Five certified public accountants work here, and every client is served by the expertise of the whole firm rather than one person in it.",
+      "Because we get new business from the people who know us best, client referrals have fuelled our growth in recent years. Through hard work we have earned the respect of the business and financial communities, and that respect illustrates our diverse talents, dedication and ability to respond quickly.",
+      "Our primary goal as a trusted advisor is to be available to provide insightful advice that lets our clients make informed financial decisions. We feel it is extremely important to continually educate ourselves professionally, to improve our technical expertise, financial knowledge and service. We will answer all of your questions as they affect both your tax and your financial situation, and we welcome you to contact us anytime."
+    ],
+    "image": "/brands/ratliffjentho/partners",
+    "imageAlt": "The team at Ratliff & Jentho, CPAs",
+    "values": [
+      {
+        "title": "Professionalism",
+        "text": "Expertise, experience and the energy of our staff combined, so each client receives close personal and professional attention."
+      },
+      {
+        "title": "Responsiveness",
+        "text": "Competent advice and fast, accurate personnel, for individuals, for large and small businesses and for other agencies."
+      },
+      {
+        "title": "Quality",
+        "text": "High standards demanded of ourselves, and an accounting and auditing practice peer reviewed every three years."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Gary R. Ratliff, CPA",
+      "role": "Partner / Certified Public Accountant",
+      "bio": "A partner of Ratliff & Jentho, CPAs since 1985, with over thirty years in public practice. His emphasis is accounting for small businesses and auditing for governmental entities, non-profit organizations and pension and profit sharing plans, and he is experienced in taxation for corporations, partnerships, non-profits and individuals. A member of the AICPA, the Texas Society of CPAs and its Houston Chapter, he graduated in accounting from Sam Houston State University. He has been an active member of the Baytown Lions Club for many years, serving as president in 1995-1996, and has served on the boards of the Baytown Crime Stoppers Association and the Chambers County Long-term Recovery Organization, and in the past for the Baytown United Way and the Barbers Hill Athletic Booster Club."
+    },
+    {
+      "name": "David A. Jentho, CPA",
+      "role": "Partner / Certified Public Accountant",
+      "bio": "A partner at Ratliff & Jentho, CPAs since 1985, with over thirty years of experience emphasising accounting and auditing for governmental entities and non-profit organizations. He has performed peer reviews for a number of CPA firms in Texas. He is past chairman of the AICPA Peer Review Board, served as chairman of that board's Practice Monitoring Task Force for Circular A-133 audits, and was appointed to a three-year term on the AICPA Council as an at-large member. He has served on the Texas Society Peer Review Committee as both chairman and vice chairman, and on the Society's Professional Standards Committee. A native of Houston, he graduated in accounting from the University of Houston."
+    },
+    {
+      "name": "Susan Jentho, CPA",
+      "role": "Certified Public Accountant"
+    },
+    {
+      "name": "Vyju Mahadevan, CPA",
+      "role": "Certified Public Accountant"
+    },
+    {
+      "name": "Kien Le, CPA",
+      "role": "Certified Public Accountant"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is the first consultation free?",
+      "a": "Yes. Call us today and we will be happy to offer you a free initial consultation."
+    },
+    {
+      "q": "What does it cost?",
+      "a": "The firm quotes pricing by phone rather than publishing a rate. Call the office and we will talk through what you need."
+    },
+    {
+      "q": "Who will I be working with?",
+      "a": "Five certified public accountants work at the firm. We make sure every client is served by the expertise of our whole firm, not one person in it."
+    },
+    {
+      "q": "Is the firm peer reviewed?",
+      "a": "Yes. Our firm is enrolled in the AICPA Peer Review Program and has a peer review of its accounting and auditing practice every three years."
+    },
+    {
+      "q": "Can I send you documents without coming in?",
+      "a": "Yes. The firm takes files through a secure upload and a secure client portal, and you can also fax them to (281) 422-5955 or (877) 459-1579."
+    },
+    {
+      "q": "Can I pay online?",
+      "a": "Yes. The firm takes card payments online as well as at the office."
+    },
+    {
+      "q": "Do you only work with people in Baytown?",
+      "a": "The office is on Rollingbrook Drive in Baytown and the firm also has an office in Houston."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Where's My Refund",
+      "text": "Track the status of your federal refund directly with the IRS.",
+      "href": "https://www.irs.gov/refunds"
+    },
+    {
+      "title": "IRS forms and publications",
+      "text": "Every federal form, instruction and publication, free to download.",
+      "href": "https://www.irs.gov/forms-instructions"
+    },
+    {
+      "title": "Texas Comptroller of Public Accounts",
+      "text": "State tax forms, franchise tax and sales tax filing for Texas businesses.",
+      "href": "https://comptroller.texas.gov/taxes/"
+    }
+  ],
+  "serviceArea": [
+    "Baytown",
+    "Houston"
+  ],
+  "facts": [
+    {
+      "heading": "Peer review",
+      "text": "The firm is enrolled in the AICPA Peer Review Program and has a peer review of its accounting and auditing practice every three years. The most recent peer review report is published on the firm's own site."
+    },
+    {
+      "heading": "Client center",
+      "items": [
+        "Secure file upload and a secure client portal",
+        "Pay online by card",
+        "Track your federal refund",
+        "Tax due dates and a record retention guide",
+        "A tax organizer and financial calculators"
+      ]
+    },
+    {
+      "heading": "Offices and fax",
+      "items": [
+        "606 Rollingbrook Dr, Suite 1B, Baytown, TX 77521",
+        "A second office in Houston",
+        "Fax: (281) 422-5955 or (877) 459-1579"
+      ]
+    },
+    {
+      "heading": "Pricing",
+      "text": "The firm publishes no rates and quotes pricing by phone. Call for pricing on any service, and the initial consultation is free."
+    },
+    {
+      "heading": "Five ways to reach us",
+      "text": "Call, email, fax, write, or stop by the office on Rollingbrook Drive. The contact form goes to the same place."
+    },
+    {
+      "heading": "Reach a CPA directly",
+      "items": [
+        "Gary R. Ratliff, CPA: (281) 422-2296 ext. 26, gratliff@rjcpas.com",
+        "David A. Jentho, CPA: (281) 422-2296 ext. 17, djentho@rjcpas.com",
+        "Susan Jentho, CPA: sjentho@rjcpas.com",
+        "Vyju Mahadevan, CPA: vyju@rjcpas.com",
+        "Kien Le, CPA: kle@rjcpas.com"
+      ]
+    },
+    {
+      "heading": "Privacy of your information",
+      "text": "The firm keeps the privacy policy required by the Gramm-Leach-Bliley Act of 1999. We collect nonpublic personal information from what you give us on applications, tax organizers, worksheets and other documents, from your transactions with us, and from a consumer-reporting agency. We do not disclose it about any client or former client to anyone except as permitted by law, access is restricted to the members of the firm who need it to do your work, and we maintain physical, electronic and procedural safeguards that comply with federal regulations."
+    },
+    {
+      "heading": "Careers",
+      "items": [
+        "Tax Manager: a CPA licence and a minimum of five years of tax compliance work, preparing and reviewing returns for individuals and businesses, researching tax issues and developing planning strategies, and managing and coaching a team of tax professionals.",
+        "Staff Accountant: a CPA or CPA eligible, three to five years with a public accounting firm, experience preparing business, individual and trust returns, bookkeeping, financial statements and work in QuickBooks.",
+        "Both roles are on a hybrid work model with the flexibility to work from home, across the firm's Baytown and Houston offices."
+      ]
+    }
+  ]
+}
