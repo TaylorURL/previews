@@ -1,0 +1,488 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Sandra Tapia, CPA, PLLC",
+  "shortName": "Sandra Tapia, CPA",
+  "tagline": "A local full-service CPA firm for families and small businesses",
+  "phone": "(832) 672-7530",
+  "email": "brandon@stapiacpa.com",
+  "address": "5616 Pine Ave",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77503",
+  "since": 2014,
+  "license": "Sandra Tapia has held a Texas CPA license since 1999. Member, AICPA and the Texas Society of CPAs.",
+  "rating": 4.8,
+  "reviewCount": 81,
+  "hours": [
+    ["Mon – Fri", "9:00 AM – 5:00 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Contact us to schedule an appointment. Let's talk about where you are now and where you want to be."
+  },
+  "brand": {
+    "primary": "#1d4f6c",
+    "primaryDeep": "#143a51",
+    "accent": "#d76f30",
+    "ink": "#2b2b2b",
+    "muted": "#5d6670",
+    "surface": "#f5f7f8",
+    "cream": "#eceff1",
+    "line": "#dde4e8",
+    "heading": "'Playfair Display', Georgia, serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Open+Sans:wght@400;500;600;700&display=swap",
+    "logo": "/brands/sandratapiacpa/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "CPA firm in Pasadena and Pearland",
+    "title": "Looking for advice you can trust from a Texas CPA?",
+    "lead": "We are a local full-service CPA firm providing tax, accounting, payroll, consulting and tax planning to both business and individual clients, customized to each client's needs.",
+    "image": "/brands/sandratapiacpa/hero",
+    "imageAlt": "Tax forms, a calculator and a pen laid out on a desk",
+    "points": ["Tax, accounting and payroll under one roof", "Offices in Pasadena and Pearland", "Free consultation to start"]
+  },
+  "overview": {
+    "title": "Tax, accounting and payroll for Texas families and growing businesses.",
+    "text": "Pick a service to see what it covers, or call and talk it through with our team."
+  },
+  "audiences": { "individuals": "Tax & IRS Help", "businesses": "For Growing Businesses" },
+  "services": [
+    {
+      "slug": "tax-preparation",
+      "title": "Tax Preparation",
+      "audience": "individuals",
+      "icon": "file-text",
+      "summary": "Returns checked, double-checked and e-filed.",
+      "text": "Today's tax laws are increasingly complicated and the rules for deductions and credits change year by year. There is no substitute for an experienced tax professional who can answer your questions and ask you the ones that save you tax dollars.",
+      "lead": "How confident are you that your return is accurate, and could you be missing potential deductions? Tax software does not ask you the questions that matter. We do.",
+      "covers": [
+        { "title": "Checked for accuracy", "text": "Assurance that your return has been checked and double-checked for mathematical accuracy and the errors that are commonly flagged by the IRS, resulting in fewer chances for contact by the IRS." },
+        { "title": "Withholding advice", "text": "Tips for better managing your payroll withholding so that you have the advantage of greater income all year long, rather than loaning that money to the government and waiting for it to come back as a refund." },
+        { "title": "Deductions for next year", "text": "A list of common deductions that may benefit you in the coming year, and tips for limiting your future tax liability." },
+        { "title": "Electronic filing", "text": "Electronic filing for a quicker refund." }
+      ],
+      "questions": [
+        { "q": "What paperwork do I need for small business taxes?", "a": "Income records, expense receipts, payroll documents, prior year returns, and any 1099s or K-1s you received. A big mistake we see here is mixing personal and business expenses: keep them separate from day one and it will save you hours during tax prep." },
+        { "q": "How do I get ready for my appointment?", "a": "Getting organized before your tax appointment saves a lot of time and is well worth the effort. We publish a tax preparation checklist you can download and work through; not every item will apply to you, but it covers 95% of our clients." }
+      ]
+    },
+    {
+      "slug": "tax-planning",
+      "title": "Tax Planning",
+      "audience": "individuals",
+      "icon": "chart",
+      "summary": "Shrink next year's bill, not just file this one.",
+      "text": "Our tax professionals focus on the nuances of tax law and stay up to date on the changes that affect your returns through the year, because planning is the key to valuable tax savings.",
+      "lead": "Would you like to shrink your yearly tax burden? Our clients pay the least amount of taxes allowable by law, because we help them look for ways to minimize it all year rather than once at filing.",
+      "covers": [
+        { "title": "Income timing", "text": "Shift income and expenses to different years in order to best take advantage of lower rates, and move income into lower tax brackets by splitting it among family members or legal entities." },
+        { "title": "Deferring liability", "text": "Defer tax liability through some types of investment options, and avoid it through others, both at the federal and the state level." },
+        { "title": "Deductions and retirement", "text": "Increase your deductions, and plan for retirement in ways that benefit you rather than the IRS." },
+        { "title": "Estate and giving", "text": "Understand estate taxes and planning so that your family keeps more of what you make, and give money in ways that reduce taxes and maximize your giving potential." }
+      ],
+      "questions": [
+        { "q": "Do I pay the IRS when I file or throughout the year?", "a": "If you expect to owe $1,000 or more and do not have enough withholding from other sources, you need to make quarterly estimated payments. Follow the Safe Harbor Rule: pay 100% of last year's tax liability, or 110% if your AGI exceeded $150K, to avoid penalties." },
+        { "q": "Does the planning fee pay for itself?", "a": "Our fees are often paid back through the reduced tax liability you enjoy as part of our planning and legitimate tax saving strategies." }
+      ]
+    },
+    {
+      "slug": "irs-representation",
+      "title": "IRS Representation",
+      "audience": "individuals",
+      "icon": "scale",
+      "summary": "Take on an audit without lifting a finger.",
+      "text": "An IRS tax auditor is trained to pick apart a return and scrutinize every line. Our clients rarely have to do more than forward us the audit letter.",
+      "lead": "There is nothing more time-consuming than a crash course in tax law when the IRS decides to audit your return. We take on the IRS for you.",
+      "covers": [
+        { "title": "The letter comes to us", "text": "Forward us an IRS Notification of Audit Letter and we take it from there." },
+        { "title": "The paperwork", "text": "We handle the paperwork, the questions, the scrutiny and the intimidation factor while you go on about your business as usual." },
+        { "title": "A free consultation", "text": "If you have received an audit letter, get in touch and one of our tax specialists will be in contact with a free consultation." }
+      ]
+    },
+    {
+      "slug": "tax-problem-resolution",
+      "title": "Tax Problem Resolution",
+      "audience": "individuals",
+      "icon": "shield-check",
+      "summary": "Liens, levies, garnishments and unfiled returns.",
+      "text": "You've got a friend in the tax business. From IRS wage garnishment protection to helping you get innocent spouse protection, we have the experience you need.",
+      "lead": "Let our team of experienced tax relief experts help you find the light at the end of the tunnel.",
+      "covers": [
+        { "title": "Asset seizure protection", "text": "When the IRS moves to confiscate your home, your car or even your retirement accounts." },
+        { "title": "Levies, liens and garnishments", "text": "Help getting money and assets back after a levy, safeguards for your credit against an IRS lien, and protection when the IRS reaches into your paycheck." },
+        { "title": "Offers in compromise", "text": "An offer in compromise could be the solution you need. We will tell you whether it fits your situation." },
+        { "title": "Innocent spouse relief", "text": "You are not responsible for the misdeeds of your spouse, if you know what steps to take." },
+        { "title": "Unfiled returns", "text": "The IRS would love to take care of your unfiled tax returns for you. We complete them properly instead." },
+        { "title": "Your IRS file", "text": "We cut through the red tape to get your IRS file, so you know exactly what they have on you." },
+        { "title": "Payroll tax protection", "text": "Failure to pay or a late payroll tax return carries penalties more severe than almost any other, and the IRS will seize assets and sell property to collect. If you are behind, we assess where you stand and find the answer that best preserves your ability to stay in business." },
+        { "title": "Bankruptcy options", "text": "Before you file to wipe out tax debt, interest and penalties, have the situation reviewed. Each type of bankruptcy has a different purpose, outcome and long-term effect, and if you do not qualify to eliminate tax debt that way you can be left with the liability anyway. Contact us for pre-bankruptcy counseling." }
+      ]
+    },
+    {
+      "slug": "tax-extensions",
+      "title": "Tax Extensions",
+      "audience": "individuals",
+      "icon": "stamp",
+      "summary": "Filed an extension? You still have time.",
+      "text": "If you filed a request on Form 4868 by the tax deadline, you have six months to file the return. We get the filing in order, check it for accuracy and deal with any penalties arising from an extended return.",
+      "lead": "Sometimes, no matter how hard you try, you cannot get everything done by the tax deadline. You can always ask for more time to file, but do not wait until the extension deadline to get them in.",
+      "covers": [
+        { "title": "An extension to file is not an extension to pay", "text": "If you are due a refund you can be on your way, but if you owe, the tax is due on the normal deadline. Otherwise you can be charged penalties, to the tune of 5% to 25%, plus interest on those penalties." },
+        { "title": "What an extension does not do", "text": "It does not flag you for audit, it does not affect a refund you legitimately have coming, and it does not give you more time to fund an individual retirement account unless it is the self-employed kind. They are also not hard to get." },
+        { "title": "Special situations", "text": "Extra time to file, and sometimes to pay, for taxpayers serving in or near combat zones, US citizens and resident aliens living abroad for business or military purposes, and those living in or providing relief to federal disaster areas." }
+      ]
+    },
+    {
+      "slug": "accounting",
+      "title": "Accounting",
+      "audience": "businesses",
+      "icon": "calculator",
+      "summary": "Monthly or quarterly books, done for you.",
+      "text": "Monthly or quarterly, depending on the size of your business and your needs, we take care of bank reconciliation, income statements, general ledger management and balance sheets.",
+      "lead": "Don't waste your valuable time on bookkeeping and finances. Give yourself time to do what you do best and go out and get more clients.",
+      "covers": [
+        { "title": "Bank reconciliation", "text": "Identify lost checks, lost deposits or unauthorized wire transfers, detect and prevent embezzlement from within the business, and protect yourself from bank errors and fraudulent checks." },
+        { "title": "Income statements", "text": "Regular profit and loss statements that track operating costs, show which areas are over or under budget, and determine your current tax liability." },
+        { "title": "General ledger management", "text": "We can set up a general ledger system, or identify problems with your current one, so you can eliminate discrepancies and keep accurate records." },
+        { "title": "Balance sheets", "text": "A snapshot of the financial health of your business at any point in time, and the single most important element, with income statements, for reporting to potential lenders and investors." },
+        { "title": "Customized add-ons", "text": "Unlimited consultations, payroll management, tax planning and preparation, and other financial services that would benefit your business." }
+      ]
+    },
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping",
+      "audience": "businesses",
+      "icon": "book",
+      "summary": "Reconciled books and reports you can act on.",
+      "text": "We reconcile discrepancies, produce and pay invoices for bills and orders, complete payroll, track transactions and generate regular reports to help you make growth decisions.",
+      "lead": "We read between the lines of the systems, the software and the financial statements to see the true financial story being told. The future of your business doesn't have to be a question mark.",
+      "covers": [
+        { "title": "Receivable and payable", "text": "Accounts receivable, accounts payable and expense reimbursement kept current." },
+        { "title": "Reconciliation and close", "text": "Bank and credit card reconciliation, month-end close, and financial account reconciliation." },
+        { "title": "Filings and reporting", "text": "Sales tax, 1099 preparation and financial reporting." },
+        { "title": "Systems and inventory", "text": "Accounting software management and inventory control." },
+        { "title": "Budgets and trends", "text": "We build budgets and identify trends within your business, so you spot financial problems before they become a catastrophe." }
+      ],
+      "questions": [
+        { "q": "What is the difference between a profit and loss statement and a cash flow statement?", "a": "A profit and loss statement shows your performance over a quarter or a year and answers whether the business made a profit. A cash flow statement tracks the actual movement of cash in and out over the same period and answers whether you have enough cash to pay your bills. Having both prepared accurately and reviewed regularly is a cornerstone of sound accounting." }
+      ]
+    },
+    {
+      "slug": "payroll",
+      "title": "Payroll Services",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Three levels, from full service to online.",
+      "text": "The IRS is serious about payroll tax laws and the penalties for those who don't comply are stiff. We keep up with the changing federal and state tax laws so that you don't have to.",
+      "lead": "If you process your own payroll, or pay an employee to do it, you are probably spending a minimum of 12 days a year that could go to generating new business. We offer three different levels of payroll service.",
+      "covers": [
+        { "title": "Comprehensive payroll", "text": "Full-service payroll: on-time check preparation and laser printing on blank maximum security check stock, free direct deposits, IRS and state tax reporting with EFTPS deposits, monthly, quarterly and annual payroll tax reports including W2, W3 and 1099 forms, sick, vacation and personal day accruals, and new hire tax paperwork." },
+        { "title": "Post-payroll services", "text": "If you prefer to process checks yourself, we take your data records into our files for maintenance and reporting, handle the tax reporting and deposits, and produce the same reports and new hire paperwork." },
+        { "title": "Online payroll processing", "text": "Enter employee hours and earnings online, print your own checks on your own computer, with free direct deposits and the same tax reporting behind it." },
+        { "title": "Other payroll work", "text": "Workers' compensation audits, unemployment claims, Social Security audits, child support audits, W-2 and W-3 processing, 1099 and 1096 processing, and assistance with federal and state registration." }
+      ],
+      "questions": [
+        { "q": "How do I know if someone is an employee or an independent contractor?", "a": "Generally, if you control when, where and how the work gets done, that person is an employee. If the worker decides how the job is completed, uses their own tools and is hired for a specific project, they are more likely an independent contractor. Misclassifying someone can lead to penalties for unpaid payroll taxes." }
+      ]
+    },
+    {
+      "slug": "part-time-cfo",
+      "title": "Part-time CFO Services",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "A CFO's advice without the full-time salary.",
+      "text": "At some point your business would benefit from the advice of a full-time CFO before you are ready for the near $100,000 price tag plus bonuses and benefits. Our part-time CFO services are the bridge.",
+      "lead": "You get all the benefits of a full-time CFO at a part-time price, available on membership retainer plans.",
+      "covers": [
+        { "title": "An expert on the team", "text": "The ease of knowing an expert is overseeing and protecting the financial side of your business." },
+        { "title": "Time back", "text": "More time to focus on growth: developing new services, attracting new customers and dealing with other core business issues." },
+        { "title": "Understanding your numbers", "text": "An enhanced understanding of the financial side of your business, so you can manage the hard and true numbers to the best benefit of the business." },
+        { "title": "Tough decisions", "text": "An expert to help guide you through tough business decisions and clarify your business plan." }
+      ]
+    },
+    {
+      "slug": "cash-flow-management",
+      "title": "Cash Flow Management",
+      "audience": "businesses",
+      "icon": "banknote",
+      "summary": "Know when, where and how cash moves.",
+      "text": "Understanding when, where and how your cash needs are being met is crucial to owning a successful business. Our cash flow management services help you conquer cash worry once and for all.",
+      "lead": "In this economy cash is king, and we will make sure you are positioned right.",
+      "covers": [
+        { "title": "Cash flow projections", "text": "We show you how to manage daily cash through short-term weekly and monthly projections, and how to develop the capital for long-term annual and three to five year needs." },
+        { "title": "Historical projections", "text": "Historical cash flow projections, so you can see exactly where your cash has gone and where it could be better used." },
+        { "title": "Banks and creditors", "text": "How to build good relationships with banks and creditors, so resources are available when a cash crunch comes." }
+      ],
+      "questions": [
+        { "q": "How can I improve my business's cash flow?", "a": "Get money in faster and let it out slower. Invoice immediately on delivery and follow up aggressively on overdue accounts. Negotiate longer payment terms with suppliers while keeping the relationship good. If you carry inventory, keep it lean, and build a simple 90-day forecast to anticipate tight spots before they hit." }
+      ]
+    },
+    {
+      "slug": "quickbooks",
+      "title": "QuickBooks Services",
+      "audience": "businesses",
+      "icon": "clipboard-check",
+      "summary": "Setup, training and getting your file straight.",
+      "text": "QuickBooks handles your receipts and payables with the same ease whether your income is a little or a lot, and it grows as your business grows. We set it up, train your staff and keep it right.",
+      "lead": "Let us set up QuickBooks for you and avoid days, or potential weeks, of hassle and aggravation.",
+      "covers": [
+        { "title": "Hassle-free setup", "text": "We review your current accounting system and determine your needs, set the best start date and load balances as of that date including outstanding receivables and payables, and enter transactions from the start date forward." },
+        { "title": "Your items and sales tax", "text": "We prepare the list of services, inventory items, non-inventory items, additional charges and sales tax that you will bill to your customers." },
+        { "title": "Training for you and your staff", "text": "We train you or a member of your staff to use QuickBooks for your accounting and financial management, with follow-up training to make sure it is working seamlessly." },
+        { "title": "Periodic review", "text": "Monthly, quarterly or annual review of the data, so you are on track for tax preparation and have the management reports you need." }
+      ]
+    },
+    {
+      "slug": "xero",
+      "title": "Xero Services",
+      "audience": "businesses",
+      "icon": "file-pen",
+      "summary": "Cloud bookkeeping set up and supported.",
+      "text": "Xero's cloud-based tools, combined with our expertise, make bookkeeping, invoicing and reporting simple and tailored to your business.",
+      "lead": "Managing your finances doesn't have to be overwhelming. We handle the details so you can focus on growing your business.",
+      "covers": [
+        { "title": "Hassle-free setup", "text": "We review your current bookkeeping system, set up your Xero account around your needs, enter your starting balances and transactions since, and train your team to use it from day one." },
+        { "title": "Ongoing support", "text": "Already on Xero? We review your financial data for accuracy and consistency, clean up your records for tax season or general management, customize reports and troubleshoot your setup." },
+        { "title": "Automation and reporting", "text": "Automated invoicing and bank reconciliation, and customizable reports that make sense without manual spreadsheets." },
+        { "title": "Getting paid faster", "text": "We set up online invoicing and payment options to eliminate payment delays, and connect Xero to the software you already use." }
+      ]
+    },
+    {
+      "slug": "starting-a-business",
+      "title": "Starting a Business",
+      "audience": "businesses",
+      "icon": "store",
+      "summary": "Entity choice, a plan and your startup capital.",
+      "text": "In order to assure your business succeeds beyond the initial thrill, you need a comprehensive plan and the right information in place before you begin. We can help you avoid becoming another failed business statistic.",
+      "lead": "Know the simple steps for starting your business right. With our help you will identify and avoid the common mistakes many new business owners make.",
+      "covers": [
+        { "title": "A plan and your capital needs", "text": "Prepare a business plan and determine your initial capital needs, then identify your current resources, your sources of start-up capital and your borrowing capacity." },
+        { "title": "Business structure", "text": "Review potential business structures in terms of tax advantages and portability, in case you need to relocate." },
+        { "title": "Financial management", "text": "Plan for the financial management of your business by selecting accounting software that fits your projected budget, and the hardware to run it." },
+        { "title": "Cash flow projection", "text": "Understand the key components of a cash flow projection and develop one for your first period of trading." }
+      ],
+      "questions": [
+        { "q": "Should I be an LLC or an S corp for taxes?", "a": "It comes down to how much profit the business makes and whether you want to save on self-employment taxes. With an LLC you file a Schedule C, pay self-employment tax on all profits and need no payroll, which suits newer businesses and smaller margins. With an S corp you must pay yourself a reasonable salary through payroll, but the remaining profits are not subject to self-employment tax. Most owners see the benefit when profits consistently hit $60-$80K or more a year." }
+      ]
+    },
+    {
+      "slug": "succession-planning",
+      "title": "Succession Planning",
+      "audience": "businesses",
+      "icon": "handshake",
+      "summary": "Transfer the business without losing it.",
+      "text": "Seven out of ten family owned businesses do not survive the transfer from one generation to the next. If you want the business you built to support future generations, your plans for succession have to be clarified, finalized and legalized.",
+      "lead": "Passing your business to a family member or associate can be a risky proposition. Lack of planning, and discomfort discussing aging, death and financial affairs, more often than not ends in the loss of a business.",
+      "covers": [
+        { "title": "What happens to the business", "text": "Keep it in the family, sell it to a third party, or pass it on another way. We help you weigh the advantages and disadvantages of each, and work out how the business can best provide for you in retirement." },
+        { "title": "The tax burden on transfer", "text": "When a business transfers ownership, taxes are a reality regardless of the relationship between the parties. We review your options so you can make the decisions that minimize it." }
+      ]
+    },
+    {
+      "slug": "non-profit-startup",
+      "title": "Non-Profit Startup",
+      "audience": "businesses",
+      "icon": "heart",
+      "summary": "501(c)(3) status, set up and maintained.",
+      "text": "To set up and keep tax exempt status, your organization has to meet very specific expense and income classifications. The way you set up your bookkeeping is crucial to maintaining non-profit status.",
+      "lead": "Let us help you create the non-profit of your dreams. We build the bookkeeping systems the IRS expects and can file the forms for you each year.",
+      "covers": [
+        { "title": "What the IRS looks at", "text": "Yearly income statements categorizing donations, salaries, postage and rent; a yearly balance sheet with cash, receivables and payables; individual program expense statements detailing every expense for each program, service or seminar; and revenue support schedules for charitable donations, membership fees and investment interest." },
+        { "title": "Getting set up", "text": "Filing your non-profit status application, initial start-up documentation, incorporation, FEIN and payroll setup with federal and state agencies. Contact us for the list of items needed to apply for 501(c)(3) status." }
+      ]
+    },
+    {
+      "slug": "internal-control-systems",
+      "title": "Internal Control Systems",
+      "audience": "businesses",
+      "icon": "shield",
+      "summary": "An objective review of how money moves.",
+      "text": "We provide an objective review of your internal control systems and determine the efficiency and effectiveness of your operating procedures.",
+      "lead": "Discover how our systems can free you to work on your business, not in your business.",
+      "covers": [
+        { "title": "Segregation of duties", "text": "Segregate duties to reduce the risk of error or inappropriate action, so no one person has control over all aspects of any single financial transaction." },
+        { "title": "Authority and review", "text": "Ensure all transactions are handled by a delegate with approved authority, and put a process in place where every transaction is reviewed and reconciled by someone other than the transactor." },
+        { "title": "Physical safeguards", "text": "Assure the physical safety of equipment and introduce periodic counts, so equipment, inventory, cash and other property match the record." },
+        { "title": "Training and documentation", "text": "Job training for all employees, appropriate supervision, clear channels for reporting potential problems, and documentation of all policies and procedures accessible to your staff." }
+      ]
+    },
+    {
+      "slug": "strategic-business-coaching",
+      "title": "Strategic Business Coaching",
+      "audience": "businesses",
+      "icon": "award",
+      "summary": "Build the plan the business runs on.",
+      "text": "A strategic business plan gives your company clarity of direction, a unified vision, and keeps key members and employees focused on the tasks at hand. We help you develop it.",
+      "lead": "More than just a tax return service: without a blueprint it is very difficult to know what you are building.",
+      "covers": [
+        { "title": "The core components", "text": "How the company is defined, what your products are, who your competitors are, how the company will be managed, and the processes for ensuring financial health and approaching business risk." },
+        { "title": "When it helps most", "text": "Starting a new business or enterprise, expanding a current one or adding a new product or service, buying a business, product or service, or turning around a failing business." }
+      ]
+    }
+  ],
+  "affiliations": {
+    "title": "Credentials and memberships",
+    "items": ["American Institute of CPAs (AICPA)", "Texas Society of CPAs (TXCPA)", "QuickBooks", "Xero"]
+  },
+  "about": {
+    "title": "A local full-service CPA firm, founded in 2014.",
+    "text": [
+      "We are a local full-service CPA firm providing professional services to both business and individual clients. Our services include tax, accounting, payroll, consulting and tax planning, and they are customizable to each of our client's needs.",
+      "Sandra Tapia is a Certified Public Accountant who has been sharing her love of numbers with the public since earning her CPA license in 1999. With over 34 years of experience in accounting, Sandra founded her own firm in 2014, driven by a passion for tailoring financial services to meet each client's unique needs.",
+      "A proud native of the Deer Park and Pasadena area, Sandra and her husband, both graduates of Deer Park High School, are deeply rooted in the community they love. She finds great fulfillment in serving the people and businesses of her hometown."
+    ],
+    "values": [
+      { "title": "Respect, integrity and honesty", "text": "Our core values are respect, integrity and honesty. We value our clients and make every effort to be responsive." },
+      { "title": "Explained so it makes sense", "text": "We explain things in a manner our clients understand, rather than leaving you to sort through it all on your own." },
+      { "title": "Not the painful version", "text": "We will not make dealing with a tax professional as painful as it has been in the past." }
+    ]
+  },
+  "team": [
+    {
+      "name": "Sandra Tapia, CPA",
+      "role": "Managing Partner",
+      "bio": "A Certified Public Accountant who has been sharing her love of numbers with the public since earning her CPA license in 1999. With over 34 years of experience in accounting, she founded the firm in 2014 and is a proud native of the Deer Park and Pasadena area.",
+      "image": "/brands/sandratapiacpa/team-1",
+      "imageAlt": "Sandra Tapia, CPA"
+    },
+    {
+      "name": "Brandon Jordan",
+      "role": "Partner",
+      "bio": "Earned his Bachelor of Science in Accounting and Finance from the University of Houston-Clear Lake and has been building his expertise since childhood. His enthusiasm and energy offer a refreshing perspective in a field that can often feel overwhelming.",
+      "image": "/brands/sandratapiacpa/team-2",
+      "imageAlt": "Brandon Jordan"
+    },
+    {
+      "name": "Amber Clement",
+      "role": "Operations Manager",
+      "bio": "Joined the team in 2018. A graduate of Central Methodist University, currently working on her Masters of Business Administration, she oversees operational activities across both locations.",
+      "image": "/brands/sandratapiacpa/team-3",
+      "imageAlt": "Amber Clement"
+    },
+    {
+      "name": "Stevie Pennington",
+      "role": "Operations Coordinator",
+      "bio": "Joined in early 2023. As Operations Coordinator and head of the billing department, she manages the firm's internal systems, streamlines processes and makes sure billing is handled with accuracy and transparency.",
+      "image": "/brands/sandratapiacpa/team-4",
+      "imageAlt": "Stevie Pennington"
+    },
+    {
+      "name": "Dennis Irwin, CPA",
+      "role": "Certified Public Accountant",
+      "image": "/brands/sandratapiacpa/team-5",
+      "imageAlt": "Dennis Irwin, CPA"
+    },
+    {
+      "name": "Vanessa Cervantes",
+      "role": "Bookkeeping Manager",
+      "image": "/brands/sandratapiacpa/team-6",
+      "imageAlt": "Vanessa Cervantes"
+    },
+    { "name": "Bonnie Keith, CPA", "role": "Certified Public Accountant" },
+    { "name": "Jose Jimenez", "role": "Customer Success Specialist" },
+    { "name": "Renee Young", "role": "Tax Preparer" },
+    { "name": "Erika Acosta Barron", "role": "Tax Coordinator" },
+    { "name": "Yohana \"Ana\" Verdin", "role": "Tax Preparer" },
+    { "name": "Catherine Segovia", "role": "Tax Administrative Associate" },
+    { "name": "Terri Cervantes", "role": "Payroll Manager" },
+    { "name": "Ricky Johnson", "role": "Bookkeeper" },
+    { "name": "Ildemaro Rivera", "role": "Bookkeeper" },
+    { "name": "Michelle Rodriguez", "role": "Bookkeeper" },
+    { "name": "Kate Gonzalez", "role": "Administrative Associate" }
+  ],
+  "faqs": [
+    { "q": "What can I write off for my business?", "a": "Any ordinary and necessary business expense, but you will be asked to provide proof, so keep detailed records and receipts. Home office expenses, business meals, professional development, equipment, software subscriptions and travel costs are all legitimate deductions when they directly support your revenue-generating activities. The critical test is whether you would have incurred the expense without your business." },
+    { "q": "Can I write off my home office?", "a": "Yes, if you use part of your home exclusively and regularly for business, and that area is your principal place of business or is used to meet clients. Using your kitchen table as an office does not qualify. If you are unsure whether yours qualifies, we can help." },
+    { "q": "What tax credits can my small business get?", "a": "The most accessible are the Small Business Health Care Tax Credit for businesses with fewer than 25 employees, the Work Opportunity Tax Credit for hiring from targeted groups, and various energy efficiency credits for qualifying equipment. Many owners also overlook the Research and Development Credit, which applies more broadly than you would think, and the Disabled Access Credit provides up to $5,000 annually for accessibility improvements." },
+    { "q": "How do I pay less taxes as a small business owner?", "a": "Smart planning, and taking advantage of every opportunity the IRS provides. Be meticulous about deducting all your normal and necessary expenses, explore the credits that directly reduce your bill, and contribute to a retirement plan like a SEP IRA or Solo 401(k), which saves for your future and lowers your taxable income right away." },
+    { "q": "How do I book an appointment?", "a": "Contact us to schedule an appointment, at either office. The first conversation is a free consultation: let's talk about where you are now and where you want to be." }
+  ],
+  "resources": [
+    { "title": "Client Portal", "text": "Sign in to our secure Verifyle portal to send and receive documents.", "href": "https://verifyle.com/login.html" },
+    { "title": "Tax Preparation Checklist", "text": "The list of documents to gather before your appointment. Not every item will apply to you, but it covers 95% of our clients.", "href": "https://selectyourlayout.com/tools/Tax-Preparation-Checklist.pdf" },
+    { "title": "IRS", "text": "Forms, refund status and account information. 1.800.829.1040.", "href": "https://www.irs.gov" },
+    { "title": "EFTPS", "text": "The federal system for making payroll and other federal tax deposits. 1.800.555.4477.", "href": "https://www.eftps.gov" },
+    { "title": "Texas Comptroller", "text": "Franchise tax, sales tax and unclaimed property. 1.800.252.1381.", "href": "https://comptroller.texas.gov" },
+    { "title": "Texas Secretary of State", "text": "Entity filings and business registration. 512.463.5555.", "href": "https://www.sos.state.tx.us" },
+    { "title": "Texas State Board of Public Accountancy", "text": "Look up a Texas CPA licence. 512.305.7800.", "href": "https://www.tsbpa.texas.gov" },
+    { "title": "Texas Workforce Commission", "text": "Unemployment tax and wage reporting. 1.800.832.9394.", "href": "https://www.twc.texas.gov" },
+    { "title": "Harris County Appraisal District", "text": "Property tax valuations and exemptions. 713.957.7800.", "href": "https://hcad.org" }
+  ],
+  "serviceArea": ["Pasadena", "Pearland", "Deer Park"],
+  "facts": [
+    {
+      "heading": "Two offices",
+      "items": ["5616 Pine Ave, Pasadena, TX 77503", "3001 E Broadway St, Pearland, TX 77581"]
+    },
+    {
+      "heading": "Reaching us",
+      "items": ["Phone: (832) 672-7530", "Fax: (832) 672-7529", "Email: brandon@stapiacpa.com"]
+    },
+    {
+      "heading": "En español",
+      "text": "Our website is also published in Spanish at es.stapiacpa.com, and we have bilingual tax preparers, bookkeeping and payroll staff and front-desk staff who work with clients in Spanish and English."
+    },
+    {
+      "heading": "Find us online",
+      "items": ["Facebook: facebook.com/stapiacpa", "In Spanish: es.stapiacpa.com", "Our blog, written by Sandra Tapia, CPA, PLLC"]
+    },
+    {
+      "heading": "Client tools",
+      "items": ["A secure client portal through Verifyle", "A refund tracker", "A financial calculator", "A downloadable tax preparation checklist", "Local links for Texas filers"]
+    },
+    {
+      "heading": "Service pricing estimator",
+      "text": "Our site carries an estimator you can use before you call. Tax preparation starts at $500 a month for individuals and $785 a month for businesses; bookkeeping starts at $375 a month, CFO services at $2,500 a month and registration of an entity at $1,000; payroll starts at $90 a month for one to five employees, $125 for six to ten and $150 for eleven to twenty. Tax planning is quoted directly, as is payroll above twenty employees. Prices are subject to change."
+    },
+    {
+      "heading": "Card payments",
+      "text": "Card payments are handled on a system certified by SecurityMetrics under its Credit Card Safe program."
+    },
+    {
+      "heading": "Where the firm came from",
+      "text": "Bay Area Management Services was started in June 1980 by Elaine and Bob Domec, who had both worked in private accounting, and in 2017 they sold it to Brandon Jordan, an employee of the business at the time. Elaine has stayed with it for over 45 years and still assists with bookkeeping for long-time clients."
+    },
+    {
+      "heading": "Also known as",
+      "text": "Sandra Tapia, CPA, PLLC also operates informally under the name Tapia Business Management."
+    },
+    {
+      "heading": "The first conversation is free",
+      "text": "Call or email and we will give you two options for coming in right away. A free consultation or strategy session costs you nothing and puts you under no obligation: a client relationship starts only once we have accepted an engagement in writing."
+    },
+    {
+      "heading": "Text messages and reminders",
+      "items": [
+        "Opt in and we can text you appointment reminders and scheduling confirmations, document requests, billing notices and status updates on the work you asked for.",
+        "Message frequency varies and message and data rates may apply. Reply STOP to opt out at any time, or HELP for assistance.",
+        "We never share your number or your consent with third parties or affiliates."
+      ]
+    },
+    {
+      "heading": "Sending us sensitive documents",
+      "text": "Do not send Social Security numbers, EINs or copies of government-issued identification through a general web form. When we need those from you we will point you to the secure client portal."
+    },
+    {
+      "heading": "Financial calculators on our site",
+      "items": [
+        "Cash flow: net worth now and projected, what you are spending, how long your money will last, the emergency fund you need, paying down debt against investing, and the effect of inflation on your standard of living",
+        "Credit: payoff timelines for cards and loans, what a loan payment would be, whether you carry too much debt, consolidation, and the effect of extra payments",
+        "Taxation: a federal income tax estimator, a refund estimator, self-employment tax, capital gains and losses, payroll withholding adjustments, estate tax liability, how much of a Social Security benefit is taxable, and itemizing against the standard deduction"
+      ]
+    },
+    {
+      "heading": "Checking a state refund",
+      "text": "Our refund tracker links to every state that collects income tax. Texas is not one of them, along with Alaska, Florida, Nevada, New Hampshire, South Dakota, Tennessee, Washington and Wyoming. Most states will ask for the exact refund amount in whole dollars to confirm who you are; if we filed for you and you do not have it, ask us for a copy of the return."
+    },
+    {
+      "heading": "Both offices",
+      "text": "Our Pearland office on E Broadway St keeps the same Monday to Friday hours as Pasadena. Operations are run across both locations, and some of our tax preparers work out of Pearland and Pasadena both."
+    }
+  ]
+}
