@@ -1,0 +1,520 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "Stone Castle Roofing",
+  "shortName": "Stone Castle Roofing",
+  "phone": "(281) 250-1265",
+  "email": "ed.cano@stonecastleroofing.com",
+  "address": "7626 Longleaf Dr",
+  "town": "Pearland",
+  "state": "TX",
+  "zip": "77581",
+  "rating": 5.0,
+  "reviewCount": 119,
+  "hours": [
+    [
+      "Monday – Friday",
+      "9:00 AM – 5:00 PM"
+    ],
+    [
+      "Saturday – Sunday",
+      "By appointment only"
+    ]
+  ],
+  "brand": {
+    "primary": "#E0101F",
+    "primaryDeep": "#9C0A16",
+    "accent": "#F2A71B",
+    "ink": "#3C4451",
+    "surface": "#F2F4F7",
+    "heading": "'Oswald', 'Helvetica Neue', sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap",
+    "logo": "/brands/stonecastleroofing/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Free inspections within 24 hours",
+    "title": "Roofing for the",
+    "titleAccent": "Greater Houston Area.",
+    "lead": "Stone Castle Roofing is a locally owned residential and commercial roofing company with headquarters in Pearland and a regional office in Canyon Lake. Replacements, repairs, routine maintenance, gutters and home addition projects.",
+    "image": "/brands/stonecastleroofing/hero",
+    "imageAlt": "An aerial view of a brick home in Pearland with a newly installed shingle roof"
+  },
+  "promises": [
+    "Free inspections within 24 hours",
+    "Over 20 years of hands-on experience",
+    "Free consultations and flexible financing",
+    "Honest pricing with no hidden costs"
+  ],
+  "services": [
+    {
+      "slug": "roof-installation",
+      "group": "residential",
+      "title": "Roof Installation",
+      "short": "A new roof chosen with you and installed by our own crew.",
+      "text": "Roof installation built to handle Houston's heat, heavy rain and storms, with the materials and the design chosen alongside you before any work starts.",
+      "image": "/brands/stonecastleroofing/installation",
+      "imageAlt": "A new home with a freshly installed grey shingle roof",
+      "materials": true,
+      "body": [
+        "Investing in a new roof is an essential step in safeguarding your home while enhancing its value and energy efficiency. We collaborate with you to choose the roofing materials and the design that complement your home and fit your budget, and every installation is completed by our own team with attention to detail.",
+        "Choosing the wrong roofing contractor leads to problems that surface later. Improper installation compromises the roof's ability to hold up to Houston's heavy rains and strong winds. Subpar materials or poor insulation push energy costs up. Low-quality workmanship means frequent repairs and a shorter roof life. We install it right the first time.",
+        "Most installations are completed within one to three days, and you get a clear schedule during your consultation so you know what to expect."
+      ],
+      "points": [
+        "Material and design chosen with you before anything is ordered",
+        "Durable, energy-efficient materials",
+        "Installation by our own skilled crew",
+        "Regular updates through the whole installation",
+        "Honest pricing with no hidden costs",
+        "Most installations completed within one to three days"
+      ],
+      "faqs": [
+        {
+          "q": "How long will it take to install my new roof?",
+          "a": "The timeline depends on the size and complexity of the project, but most installations are completed within one to three days. We give you a clear schedule during your consultation."
+        },
+        {
+          "q": "What types of roofing materials do you recommend?",
+          "a": "We work with asphalt shingles, metal roofing, tile and flat roofing systems. Our team helps you pick based on your style, your budget and what Houston's climate demands."
+        }
+      ]
+    },
+    {
+      "slug": "roof-repair",
+      "group": "residential",
+      "title": "Roof Repair",
+      "short": "Leaks, storm damage and everyday wear, found and fixed.",
+      "text": "Roof repair across Houston and the surrounding areas, tailored to what the roof actually needs rather than sold as a larger job.",
+      "image": "/brands/stonecastleroofing/repair",
+      "imageAlt": "Close view of a storm-damaged shingle roof with lifted and missing shingles",
+      "body": [
+        "A well-maintained roof is what keeps Houston's weather out of your house. We inspect the roof thoroughly, explain plainly what we found, and recommend the repair that fits the damage. From storm damage to everyday wear, the repair is done with materials chosen to hold up to the heat and the rain here.",
+        "Addressing damage early saves money later. Leaks lead to mold, mildew and structural issues. A damaged roof lets conditioned air escape and pushes energy bills up. Ignored problems eventually compromise the integrity of the house itself.",
+        "Many repairs are completed within one day. We give you a clear timeline at the consultation rather than after the work has started."
+      ],
+      "points": [
+        "Leak and storm damage repair",
+        "Shingle, flashing and ventilation repair",
+        "Full inspection before any repair is recommended",
+        "A clear explanation of the problem and the fix",
+        "Honest pricing with no hidden costs",
+        "Many repairs completed within one day"
+      ],
+      "faqs": [
+        {
+          "q": "How can I tell if my roof needs repairs?",
+          "a": "Look for missing shingles, leaks, sagging or visible damage. If you are not sure, schedule an inspection and we will give you a professional evaluation."
+        },
+        {
+          "q": "Can roof repairs really extend the life of my roof?",
+          "a": "Yes. Fixing issues promptly prevents further damage and keeps the roof functional and durable for years longer."
+        }
+      ]
+    },
+    {
+      "slug": "roof-inspections",
+      "group": "residential",
+      "title": "Roof Inspections",
+      "short": "A free inspection within 24 hours, with a written report.",
+      "text": "A detailed inspection of shingles, gutters and flashing that finds the problems while they are still small, with a clear report of what we found.",
+      "image": "/brands/stonecastleroofing/inspection",
+      "imageAlt": "An aerial view of a shingle roof being inspected",
+      "body": [
+        "Your roof faces constant challenges from Houston's weather: intense heat, heavy rain and strong winds. Over time even minor issues grow into significant problems if they go unchecked. We inspect every aspect of the roof, including shingles, gutters and flashing, so nothing is missed, and you get a clear understanding of the roof's condition along with recommendations for maintenance or repair.",
+        "Even a roof that looks problem-free hides issues beneath the surface. The three we find most often are hidden leaks, which cause mold and long-term structural damage if they are not addressed; cracked, missing or worn shingles; and poor ventilation, which raises energy costs, traps moisture and shortens the life of the roof.",
+        "Have the roof inspected annually, and again after any major weather event. If we find damage we walk you through the next steps with a detailed assessment rather than a sales pitch."
+      ],
+      "points": [
+        "Free inspections, scheduled within 24 hours",
+        "Shingles, gutters and flashing all checked",
+        "A detailed report with practical recommendations",
+        "Annual inspections and post-storm inspections",
+        "No hidden fees"
+      ],
+      "faqs": [
+        {
+          "q": "How often should I have my roof inspected?",
+          "a": "Annually, to catch normal wear and tear, and again after any major weather event. Regular inspections save you money by addressing small issues before they turn into major repairs."
+        },
+        {
+          "q": "What happens if damage is found?",
+          "a": "We walk you through the next steps with a detailed assessment and practical solutions, whether that is a simple repair or a longer-term improvement."
+        }
+      ]
+    },
+    {
+      "slug": "metal-roofing",
+      "group": "residential",
+      "title": "Metal Roofing",
+      "short": "Energy-efficient metal roofs built for Houston heat.",
+      "text": "Metal roof installation that reflects heat, resists rust and leaks, and lasts decades longer than traditional roofing materials.",
+      "image": "/brands/stonecastleroofing/metal",
+      "imageAlt": "A modern home with a dark standing seam metal roof",
+      "body": [
+        "Metal roofs are built to withstand Houston's intense heat, heavy rain and storms, and they reflect heat rather than absorbing it, which keeps the house cooler through the summer and lowers cooling costs. They resist rust, leaks and common wear, so upkeep is minimal: periodic inspections and occasional cleaning are enough.",
+        "A metal roof typically lasts 40 to 70 years, outlasting traditional materials by decades. The panels are made from recyclable materials, so the roof is a reasonable choice environmentally as well as financially.",
+        "If your metal roof has been damaged by a storm, we handle the insurance claim process alongside the repair. Our metal roofs include industry-leading warranties."
+      ],
+      "points": [
+        "Metal roof installation and replacement",
+        "Reflective panels that lower cooling costs",
+        "Resistant to rust, leaks and common wear",
+        "A typical service life of 40 to 70 years",
+        "Storm damage repair with the claim handled",
+        "Industry-leading warranties on our metal roofs"
+      ],
+      "faqs": [
+        {
+          "q": "How long can I expect a metal roof to last?",
+          "a": "Typically 40 to 70 years, which is decades longer than traditional roofing materials."
+        },
+        {
+          "q": "What kind of maintenance does a metal roof need?",
+          "a": "Very little. Periodic inspections and occasional cleaning are enough to keep it in excellent condition."
+        }
+      ]
+    },
+    {
+      "slug": "slate-tile-roofing",
+      "group": "residential",
+      "title": "Slate and Tile Roofing",
+      "short": "Slate and tile installation and repair, done carefully.",
+      "text": "Slate and tile roof installation and repair for homes across Houston, handled with the care these materials need.",
+      "image": "/brands/stonecastleroofing/slate-tile",
+      "imageAlt": "A home with a red clay tile roof",
+      "body": [
+        "Slate is natural stone, built to withstand the elements and last for decades, and it is a sustainable material as well as a striking one. A slate roof can last over 100 years. Tile roofs last 50 to 70 years with proper maintenance, come in a wide range of colors, shapes and materials, and naturally insulate the house, which cuts energy costs year-round.",
+        "Even the most durable slate roof needs occasional repair. We identify cracks, missing tiles and structural concerns, then repair them with premium materials so the roof keeps both its strength and its appearance. On tile we check for broken tiles, leaks and underlayment problems.",
+        "Regular inspections, prompt repairs and professional cleaning are what keep a slate or tile roof in excellent condition."
+      ],
+      "points": [
+        "Slate roof installation and repair",
+        "Tile roof installation and repair",
+        "Cracks, missing tiles and underlayment problems addressed",
+        "A range of tile colors, shapes and materials",
+        "Comprehensive inspection before any repair is quoted"
+      ],
+      "faqs": [
+        {
+          "q": "What is the lifespan of a slate or tile roof?",
+          "a": "Slate roofs can last over 100 years, and tile roofs often last 50 to 70 years with proper maintenance."
+        },
+        {
+          "q": "Are slate and tile roofs energy-efficient?",
+          "a": "Yes. Both materials naturally insulate the house, which reduces energy costs and improves indoor comfort."
+        }
+      ]
+    },
+    {
+      "slug": "gutters-siding-and-fascia",
+      "group": "residential",
+      "title": "Gutters, Siding and Fascia",
+      "short": "The exterior around the roof, repaired or replaced.",
+      "text": "Gutter systems, siding and fascia installed and repaired so water leaves the roof properly and the structure behind it stays sound.",
+      "image": "/brands/stonecastleroofing/exterior",
+      "imageAlt": "A worker on a ladder replacing siding on a house",
+      "body": [
+        "Your home's exterior does the work of defending it against the weather. Custom gutters manage water efficiently and prevent foundation damage and soil erosion. Siding is where the energy efficiency lives, and new siding improves insulation and helps regulate indoor temperatures. Fascia boards support the roof and the gutters, and they are precision-installed rather than approximated.",
+        "Sagging gutters, peeling siding, water damage or gaps along the fascia are the signs that it is time for an inspection. We assess the exterior, identify the damage, and recommend a fix based on the house rather than a standard package.",
+        "Most installations are completed within a few days, and you get a detailed schedule at the consultation."
+      ],
+      "points": [
+        "Custom gutter systems that direct water away from the foundation",
+        "Siding installation and replacement",
+        "Fascia board installation and repair",
+        "A full inspection of the exterior before anything is recommended",
+        "Transparent pricing with no surprises",
+        "Most installations completed within a few days"
+      ],
+      "faqs": [
+        {
+          "q": "How do I know if I need new gutters, siding or fascia?",
+          "a": "Look for sagging gutters, peeling siding, water damage or gaps along the fascia. Any of those is reason to schedule an inspection."
+        },
+        {
+          "q": "What are the benefits of replacing old siding?",
+          "a": "Replacing worn or damaged siding improves energy efficiency, enhances curb appeal and protects the house from moisture, pests and extreme weather."
+        }
+      ]
+    },
+    {
+      "slug": "patio-additions",
+      "group": "residential",
+      "title": "Patio Additions",
+      "short": "Custom patio covers designed to match the house.",
+      "text": "Custom patio covers built in aluminum, wood or composite, designed to fit the house and the way you use the space.",
+      "image": "/brands/stonecastleroofing/patio",
+      "imageAlt": "A covered patio with a stained wood ceiling and a ceiling fan",
+      "body": [
+        "A patio cover gives you shade and a usable outdoor room, and it adds to the look and the market value of the house. We design the cover to suit your home's style rather than dropping a standard structure onto the back of it, and we build it from weather-resistant materials so it lasts.",
+        "We work in aluminum, wood and composite. Each is chosen for durability, low maintenance and how well it fits the house, and we talk through which one suits your project at the consultation.",
+        "If you already have a patio, the cover can be integrated into it. Most patio additions are completed within one to two weeks, with a detailed project schedule from design through final installation."
+      ],
+      "points": [
+        "Patio covers designed around the house's existing style",
+        "Weather-resistant aluminum, wood and composite",
+        "Covers integrated into an existing patio",
+        "A detailed design plan before anything is built",
+        "Most additions completed within one to two weeks"
+      ],
+      "faqs": [
+        {
+          "q": "What materials do you use for patio covers?",
+          "a": "Weather-resistant aluminum, wood and composite. Each is selected for durability, low maintenance and how well it complements the house, and we discuss which fits your project at the consultation."
+        },
+        {
+          "q": "Can a patio cover be added to an existing patio?",
+          "a": "Yes. We integrate a custom cover into the patio you already have, tailored to fit the space."
+        }
+      ]
+    },
+    {
+      "slug": "storm-damage-restoration",
+      "group": "storm",
+      "title": "Storm Damage Restoration",
+      "short": "Hail and storm damage restored, and the claim handled.",
+      "text": "Storm and hail damage restoration across Houston, with the insurance claim documented and filed on your behalf.",
+      "image": "/brands/stonecastleroofing/storm",
+      "imageAlt": "A house with storm damage to the roof and debris in the yard",
+      "claim": true,
+      "body": [
+        "Storms in the Houston and Pearland areas bring heavy rain, high winds and hail, and they leave a roof vulnerable in ways that are not always visible from the ground. We respond quickly, identify every area of damage, and restore the roof with materials that hold up to what comes next.",
+        "We handle the insurance process from your side of it. Our team is experienced in thorough insurance assessments and documentation, so every detail of the damage is properly recorded and submitted, and we work on your behalf to make sure your policy covers all eligible repairs.",
+        "Delay is what turns storm damage expensive. Leaks cause mold, mildew and structural damage. Minor issues escalate into larger repairs. A damaged roof reduces the value of the property. Minor repairs are often done in a day or two; more significant damage takes several days, and you get a clear timeline at the consultation."
+      ],
+      "points": [
+        "Free inspection, scheduled within 24 hours",
+        "Every area of hail and wind damage identified and recorded",
+        "Insurance assessment and documentation prepared for the carrier",
+        "The claim filed and followed through on your behalf",
+        "Restoration with high-quality materials",
+        "Advice on preventing future storm damage"
+      ],
+      "faqs": [
+        {
+          "q": "How do I know if my roof has storm damage?",
+          "a": "Look for missing shingles, dents from hail, water stains on the ceiling or sagging sections. Some damage, like small cracks or weakened areas, is not visible from the ground, so a professional inspection is the only way to be sure."
+        },
+        {
+          "q": "Can storm damage be repaired, or will I need a new roof?",
+          "a": "It depends on the severity and the location. Minor issues such as small leaks or a few missing shingles are usually repaired. Widespread or severe damage may need a replacement, and we tell you which after the inspection."
+        },
+        {
+          "q": "How long does storm damage restoration take?",
+          "a": "Minor repairs are often completed within a day or two. More significant damage can take several days, and we give you a clear timeline at the consultation."
+        }
+      ]
+    },
+    {
+      "slug": "commercial-roof-repair",
+      "group": "commercial",
+      "title": "Commercial Roof Repair",
+      "short": "Leaks, ponding and storm damage on a working building.",
+      "text": "Commercial roof repair for businesses across Houston, scheduled around the building so the work does not stop.",
+      "image": "/brands/stonecastleroofing/commercial-repair",
+      "imageAlt": "A roofer installing metal panels on a commercial building",
+      "body": [
+        "A damaged commercial roof turns expensive quickly. Leaks, pooling water, visible cracks and loose materials are the signs that it needs attention, and we repair all of them with materials chosen to hold up rather than to come back. The work is sequenced to minimize disruption to the business underneath it.",
+        "Timely repairs stop leaks and structural issues from worsening, maximise the roof's remaining life, and protect your employees, tenants and assets from water and weather damage.",
+        "You get a comprehensive report of the issues, the recommended fixes and an estimated timeline before the work begins. Most repairs are completed within a few days."
+      ],
+      "points": [
+        "Leaks, ponding water, cracks and loose materials repaired",
+        "A full inspection and written report before any work",
+        "Transparent pricing on every line of the repair",
+        "Work sequenced to keep disruption to a minimum",
+        "Most repairs completed within a few days"
+      ],
+      "faqs": [
+        {
+          "q": "How do I know if my commercial roof needs repairs?",
+          "a": "Leaks, pooling water, visible cracks or loose materials. Any of those is reason to schedule an inspection right away."
+        },
+        {
+          "q": "How long does a commercial roof repair take?",
+          "a": "It depends on the extent of the damage, but most repairs are completed within a few days. We give you a clear timeline at the consultation."
+        }
+      ]
+    },
+    {
+      "slug": "commercial-roof-replacement",
+      "group": "commercial",
+      "title": "Commercial Roof Replacement",
+      "short": "A full replacement when repair has stopped being the answer.",
+      "text": "Commercial roof replacement for property owners and managers across Houston, with the system and the timeline settled before the tear-off starts.",
+      "image": "/brands/stonecastleroofing/commercial-replacement",
+      "imageAlt": "A large flat commercial roof with new metal decking",
+      "body": [
+        "When a commercial roof reaches the point where repairs no longer hold, a replacement is what protects the building and everything in it. We assess the existing system, recommend the roof that fits the building and the budget, and set out the scope and the schedule in writing before anything is removed.",
+        "The work is planned around the business operating underneath it, with clear communication at each stage so you know what is happening on the roof and when.",
+        "We work in TPO, EPDM, metal and modified bitumen, chosen to suit the building and the budget. Most replacements are completed within a few days to a few weeks, and you get a detailed schedule at the consultation."
+      ],
+      "points": [
+        "Assessment of the existing roof before a replacement is recommended",
+        "A written scope and schedule before the tear-off begins",
+        "High-quality materials chosen for the building",
+        "Work planned around the business operating below",
+        "Clear communication through every stage"
+      ]
+    }
+  ],
+  "claim": {
+    "title": "How a storm claim works",
+    "text": "We handle the insurance process from documenting the damage through filing the paperwork, so the claim is not another job on your list.",
+    "steps": [
+      {
+        "title": "Free inspection",
+        "text": "We schedule a free roof inspection within 24 hours and identify every area of storm or hail damage, including what is not visible from the ground."
+      },
+      {
+        "title": "Damage documented",
+        "text": "Our team prepares a thorough insurance assessment so every detail of the damage is properly recorded."
+      },
+      {
+        "title": "The claim is filed",
+        "text": "We handle the paperwork and submit the documentation to your insurance provider."
+      },
+      {
+        "title": "We work on your behalf",
+        "text": "We advocate for you through the process so your policy covers all eligible repairs."
+      },
+      {
+        "title": "Restoration",
+        "text": "Once the claim settles, our team restores the roof with high-quality materials and a clear timeline."
+      }
+    ]
+  },
+  "materials": {
+    "title": "Certified contractors for",
+    "text": "We install and repair asphalt shingles, metal roofing, tile, slate and flat roofing systems.",
+    "brands": [
+      "GAF",
+      "CertainTeed",
+      "Owens Corning"
+    ]
+  },
+  "about": {
+    "title": "A locally owned roofing company serving hard working Texans",
+    "text": [
+      "Stone Castle Roofing is your trusted local partner for residential and commercial roofing. With headquarters in Pearland, Texas and a regional office in Canyon Lake, Texas, we serve the Greater Houston area and the Texas Hill Country. We specialize in residential and commercial replacements, roof repairs, routine maintenance, gutters and home addition projects.",
+      "With over 20 years of hands-on experience, our crews deliver the same standard of craftsmanship on every project. We offer free consultations and flexible financing, and we provide high-quality repairs and replacements without cutting corners. You can count on reliable expertise and clear communication at every step.",
+      "What sets us apart is our commitment to integrity and customer satisfaction. We handle every job with care and precision, and we treat your property as if it were our own."
+    ],
+    "image": "/brands/stonecastleroofing/team",
+    "imageAlt": "A Stone Castle Roofing truck loaded with ladders outside a customer's home",
+    "values": [
+      {
+        "title": "Integrity First",
+        "text": "We prioritise honesty and fairness in everything we do, so your trust is earned on every project we take on."
+      },
+      {
+        "title": "Uncompromising Quality",
+        "text": "Our team delivers durable, reliable roofing using premium materials and expert techniques."
+      },
+      {
+        "title": "Customer Focus",
+        "text": "Personalized care and clear communication from the first call through to the final walkthrough."
+      }
+    ]
+  },
+  "inspection": {
+    "title": "How it works",
+    "steps": [
+      {
+        "title": "Schedule your free inspection",
+        "text": "Get in touch for a thorough assessment and recommendations tailored to your property. Inspections are scheduled within 24 hours."
+      },
+      {
+        "title": "Get a tailored proposal",
+        "text": "We provide a detailed plan with roofing options that align with your budget and your design preferences."
+      },
+      {
+        "title": "The work gets done",
+        "text": "Our team completes the installation or repair with precision, and keeps you updated through every stage."
+      }
+    ]
+  },
+  "serviceArea": [
+    "Pearland",
+    "Houston",
+    "Canyon Lake"
+  ],
+  "areasText": "Our headquarters is in Pearland at 7626 Longleaf Dr, and our regional office is at 475 La Paloma Dr in Canyon Lake. Between the two we serve the Greater Houston area and the Texas Hill Country, residential and commercial.",
+  "areasImage": "/brands/stonecastleroofing/areas",
+  "areasImageAlt": "An aerial view of a suburban neighborhood of rooftops near Houston",
+  "contactImage": "/brands/stonecastleroofing/contact",
+  "contactImageAlt": "A close view of a new shingle roof on a brick home",
+  "facts": [
+    {
+      "heading": "Experience and Credentials",
+      "items": [
+        "Over 20 years of hands-on roofing experience",
+        "Certified contractors for GAF, CertainTeed and Owens Corning",
+        "Locally owned and operated"
+      ]
+    },
+    {
+      "heading": "Warranty",
+      "text": "A 20 year warranty. Our metal roofs include industry-leading warranties."
+    },
+    {
+      "heading": "Inspections and Estimates",
+      "text": "Free inspections, scheduled within 24 hours. Free consultations on every project. We inspect shingles, gutters and flashing, give you a clear report of the roof's condition, and provide honest pricing with no hidden costs."
+    },
+    {
+      "heading": "Financing",
+      "text": "Flexible financing is available."
+    },
+    {
+      "heading": "Insurance Claims",
+      "items": [
+        "Experienced in thorough insurance assessments and documentation",
+        "The entire claims process handled, from documenting damage to filing paperwork",
+        "We work on your behalf so the policy covers all eligible repairs",
+        "Storm and hail damage on residential and commercial roofs"
+      ]
+    },
+    {
+      "heading": "Materials We Work With",
+      "items": [
+        "Asphalt shingles",
+        "Metal roofing",
+        "Tile roofing",
+        "Slate roofing",
+        "Flat roofing systems"
+      ]
+    },
+    {
+      "heading": "Typical Timelines",
+      "items": [
+        "Roof installation: one to three days",
+        "Most roof repairs: within one day",
+        "Storm damage restoration: one to two days for minor repairs, several days for significant damage",
+        "Gutters, siding and fascia: a few days",
+        "Patio additions: one to two weeks",
+        "Commercial roof repair: a few days",
+        "Commercial roof replacement: a few days to a few weeks"
+      ]
+    },
+    {
+      "heading": "Who We Work For",
+      "items": [
+        "Homeowners in Pearland, Houston and the surrounding areas",
+        "Businesses, their employees and their tenants"
+      ]
+    },
+    {
+      "heading": "Offices",
+      "items": [
+        "Pearland headquarters: 7626 Longleaf Dr, Pearland, TX 77581",
+        "Canyon Lake regional office: 475 La Paloma Dr, Canyon Lake, TX 78133"
+      ]
+    },
+    {
+      "heading": "Hours",
+      "text": "Monday to Friday, 9:00 AM to 5:00 PM. Saturday and Sunday by appointment only. Free inspections are scheduled within 24 hours."
+    }
+  ]
+}
