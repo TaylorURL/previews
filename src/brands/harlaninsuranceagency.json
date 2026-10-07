@@ -1,0 +1,570 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "insurance",
+  "name": "Harlan Insurance Agency",
+  "shortName": "Harlan Insurance",
+  "tagline": "Independent insurance you can trust",
+  "phone": "(713) 947-7860",
+  "email": "bruce@bruceharlaninsurance.net",
+  "address": "2318 Center St, Ste 165",
+  "town": "Deer Park",
+  "state": "TX",
+  "zip": "77536",
+  "since": 2004,
+  "rating": 5.0,
+  "reviewCount": 12,
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Get a Quote",
+    "text": "Have questions about our services? We look forward to helping you secure peace of mind and financial confidence."
+  },
+  "brand": {
+    "primary": "#0e2b67",
+    "primaryDeep": "#091d45",
+    "accent": "#0a4f93",
+    "ink": "#14161a",
+    "muted": "#5a6472",
+    "surface": "#f5f7fa",
+    "cream": "#e9eef6",
+    "line": "#dde4ee",
+    "heading": "'Red Hat Display', system-ui, sans-serif",
+    "body": "'Red Hat Text', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&family=Red+Hat+Text:wght@400;500;600;700&display=swap",
+    "logo": "/brands/harlaninsuranceagency/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Independent agency in Deer Park",
+    "title": "Comprehensive insurance services in Greater Houston since 2004.",
+    "lead": "Founded by Bruce Harlan, we are an independent agency focused on helping families and businesses find the right coverage at competitive prices, working with top-rated carriers to put together customized options.",
+    "image": "/brands/harlaninsuranceagency/hero",
+    "imageAlt": "An insurance agent shaking hands with a client across a desk",
+    "points": [
+      "Serving the Houston area since 2004",
+      "Options from top-rated carriers",
+      "Over 20 years of industry experience"
+    ]
+  },
+  "overview": {
+    "title": "The local source for complete insurance solutions.",
+    "text": "Explore our wide range of insurance services tailored to meet your needs, covering everything from home to commercial insurance."
+  },
+  "audiences": {
+    "individuals": "Individuals & Families",
+    "businesses": "Businesses"
+  },
+  "services": [
+    {
+      "slug": "home",
+      "title": "Home Insurance",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Coverage for your most cherished asset.",
+      "text": "Coverage tailored to your home against fire, theft and storm damage, written through top-rated carriers.",
+      "lead": "At the heart of our services is our home insurance, dedicated to covering your most cherished asset. With two decades of experience, we offer solutions tailored to your unique needs, ensuring peace of mind against unexpected events.",
+      "image": "/brands/harlaninsuranceagency/home",
+      "imageAlt": "A pair of hands sheltering a model house",
+      "covers": [
+        {
+          "title": "Fire, theft and storm damage",
+          "text": "Whether it is fire, theft or storm damage, we've got you covered."
+        },
+        {
+          "title": "A personalized approach",
+          "text": "You get more than just a policy; you get protection crafted to fit the nuances of your life."
+        },
+        {
+          "title": "Diverse carrier options",
+          "text": "As an independently operated agency, we team up with top-rated carriers, offering diverse and tailored coverage to match your situation."
+        },
+        {
+          "title": "A complimentary quote",
+          "text": "Contact us for a complimentary quote and competitive pricing on your home coverage."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What should I consider when choosing home insurance?",
+          "a": "Consider the level of coverage you need, the specific risks in your area, and the value of your home and belongings. It is also important to evaluate the reliability and customer service of potential insurers. We simplify this by offering policies that suit your circumstances."
+        }
+      ]
+    },
+    {
+      "slug": "auto",
+      "title": "Auto Insurance",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Liability and collision through several carriers.",
+      "text": "Auto policies crafted to give you the coverage you need, quoted across top-rated carriers for competitive rates.",
+      "lead": "Auto insurance is more than a legal requirement; it's a shield that protects you, your passengers and your vehicle. We work with top-rated carriers to offer competitive rates and secure options.",
+      "image": "/brands/harlaninsuranceagency/auto",
+      "imageAlt": "A driver smiling at the wheel of her car",
+      "covers": [
+        {
+          "title": "Liability protection",
+          "text": "Coverage for the injuries and damage you are responsible for on the road."
+        },
+        {
+          "title": "Collision coverage",
+          "text": "Repairs to your own vehicle after a wreck."
+        },
+        {
+          "title": "Competitive rates",
+          "text": "Your details go to several top-rated carriers so price can be compared against protection."
+        },
+        {
+          "title": "Complimentary policy reviews",
+          "text": "We review your coverage after a new vehicle, a move or a change in your family situation."
+        }
+      ],
+      "questions": [
+        {
+          "q": "When should I review my auto insurance policy?",
+          "a": "Key times include after buying a new vehicle, moving to a new location, or a change in your family situation. We provide complimentary reviews to help keep your coverage up to date."
+        },
+        {
+          "q": "Can you quote my auto insurance in Deer Park?",
+          "a": "Yes. We serve the Deer Park area with auto insurance solutions crafted to meet your needs, and we work with various top-rated carriers to find competitive rates."
+        }
+      ]
+    },
+    {
+      "slug": "renters",
+      "title": "Renters Insurance",
+      "audience": "individuals",
+      "icon": "key",
+      "summary": "Belongings and liability for a rented home.",
+      "text": "Protection for your personal belongings and liability as a renter, customized to the way you live.",
+      "lead": "As a renter, protecting your personal belongings and liability is crucial. Our renters insurance goes beyond standard coverage to offer comprehensive protection for your cherished possessions.",
+      "image": "/brands/harlaninsuranceagency/renters",
+      "imageAlt": "A woman sitting with a laptop among moving boxes",
+      "covers": [
+        {
+          "title": "Personal belongings",
+          "text": "Whether it's your valuable electronics or your treasured furniture, we customize coverage to fit your lifestyle."
+        },
+        {
+          "title": "Liability",
+          "text": "Protection from the liabilities that can arise during unexpected events in a rented home."
+        },
+        {
+          "title": "Competitive rates",
+          "text": "An extensive network of top-rated carriers means tailored solutions at competitive rates."
+        }
+      ]
+    },
+    {
+      "slug": "flood",
+      "title": "Flood Insurance",
+      "audience": "individuals",
+      "icon": "waves",
+      "summary": "Flood coverage for Houston-area property.",
+      "text": "Flood coverage written through top-rated carriers, for the many Houston-area properties that face real flood risk.",
+      "lead": "Many areas, especially in Houston, face significant flood risk. We work with top-rated carriers to provide affordable and comprehensive flood insurance options tailored to your property.",
+      "questions": [
+        {
+          "q": "What factors influence flood insurance rates?",
+          "a": "Flood insurance rates are influenced by the property's flood risk, location, elevation, and the amount and type of coverage chosen. Contact us to determine the best flood insurance plan for your property."
+        }
+      ]
+    },
+    {
+      "slug": "life",
+      "title": "Life Insurance",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Life coverage alongside your other policies.",
+      "text": "Life insurance written through top-rated carriers, sized to your family and quoted alongside your home and auto coverage.",
+      "lead": "As an independent agency, we work with a wide range of top-rated carriers to offer you customized coverage for your life insurance needs alongside your home, auto, flood and commercial policies."
+    },
+    {
+      "slug": "umbrella",
+      "title": "Umbrella Policies",
+      "audience": "individuals",
+      "icon": "umbrella",
+      "summary": "Extra liability above your other limits.",
+      "text": "Additional liability protection that extends over your existing home, auto and rental policies.",
+      "lead": "When the unexpected occurs, an umbrella policy can provide additional protection beyond the standard insurance limits. Our umbrella insurance acts as a safety net, offering extra liability coverage for lawsuits and claims.",
+      "image": "/brands/harlaninsuranceagency/umbrella",
+      "imageAlt": "A policy notepad, calculator and paperwork laid out on a desk",
+      "covers": [
+        {
+          "title": "Extra liability limits",
+          "text": "Coverage for lawsuits and claims that run past the limits on your standard policies."
+        },
+        {
+          "title": "Extends over what you have",
+          "text": "The policy seamlessly extends over your existing home, auto and rental policies."
+        },
+        {
+          "title": "Built with top-rated carriers",
+          "text": "Custom-fit solutions crafted in collaboration with top-rated carriers, spanning home, auto, flood and commercial coverage."
+        }
+      ]
+    },
+    {
+      "slug": "jewelry",
+      "title": "Jewelry Insurance",
+      "audience": "individuals",
+      "icon": "gem",
+      "summary": "Theft, loss and damage for valued pieces.",
+      "text": "Policies designed to protect jewelry from theft, loss or damage, with a personalized consultation to set the coverage.",
+      "lead": "Your jewelry is more than just an accessory; it holds memories and value. Our jewelry insurance policies are designed to protect these precious items from uncertainties such as theft, loss or damage.",
+      "image": "/brands/harlaninsuranceagency/jewelry",
+      "imageAlt": "A diamond ring in an open presentation box",
+      "covers": [
+        {
+          "title": "Theft, loss and damage",
+          "text": "Protection for precious items against the uncertainties that standard coverage can leave out."
+        },
+        {
+          "title": "Personalized consultations",
+          "text": "We provide personalized consultations to determine the best coverage for your valuable assets."
+        },
+        {
+          "title": "Heirlooms and new pieces",
+          "text": "Whether you own an heirloom necklace or a custom engagement ring, we make sure it is adequately protected."
+        }
+      ]
+    },
+    {
+      "slug": "boat-marine",
+      "title": "Boat & Marine Insurance",
+      "audience": "individuals",
+      "icon": "anchor",
+      "summary": "Watercraft from small boats to yachts.",
+      "text": "Marine policies covering your watercraft against accidents, natural disasters and unforeseen mishaps.",
+      "lead": "Setting sail brings joy, but also responsibilities. Our boat and marine insurance covers your watercraft against accidents, natural disasters and unforeseen mishaps.",
+      "image": "/brands/harlaninsuranceagency/boat-marine",
+      "imageAlt": "A motor yacht under way on open water",
+      "covers": [
+        {
+          "title": "Accidents and natural disasters",
+          "text": "Coverage for your vessel against accidents, natural disasters and unforeseen mishaps."
+        },
+        {
+          "title": "Small craft to larger yachts",
+          "text": "From small crafts to larger yachts, our policies cover you on every adventure."
+        },
+        {
+          "title": "New and existing vessels",
+          "text": "Whether you're purchasing a new vessel or need coverage for an existing one, we guide you through the intricacies of marine insurance."
+        }
+      ]
+    },
+    {
+      "slug": "rv",
+      "title": "RV Insurance",
+      "audience": "individuals",
+      "icon": "truck",
+      "summary": "Coverage for recreational vehicles.",
+      "text": "Personalized plans that protect your recreational investment, built with top carriers for real protection and affordability.",
+      "lead": "We leverage our extensive industry experience to make sure your valuable recreational investments are protected. By collaborating with top carriers, we craft personalized insurance plans that maximize real protection and affordability.",
+      "image": "/brands/harlaninsuranceagency/rv",
+      "imageAlt": "A motorhome travelling along a mountain road",
+      "covers": [
+        {
+          "title": "Personalized plans",
+          "text": "Plans crafted around how and where you actually use the vehicle."
+        },
+        {
+          "title": "Guidance through the process",
+          "text": "Our team guides you through every step, turning complex decisions into confident choices."
+        },
+        {
+          "title": "An insurance evaluation",
+          "text": "Reach out for a thorough insurance evaluation and a quote before your next trip."
+        }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial Insurance",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Coverage for a business's assets and staff.",
+      "text": "Customized commercial coverage that protects your business's debts, assets and staff, through multiple top-rated carriers.",
+      "lead": "Navigating the complexities of insurance can be daunting, but we make it simple for businesses in Deer Park. Every business is unique, which means coverage tailored to specific needs.",
+      "image": "/brands/harlaninsuranceagency/commercial",
+      "imageAlt": "A business owner signing a commercial insurance policy",
+      "covers": [
+        {
+          "title": "Debts, assets and staff",
+          "text": "Customized commercial insurance solutions that protect your debts, assets and staff."
+        },
+        {
+          "title": "Property damage and legal claims",
+          "text": "Commercial insurance covers things like property damage, legal claims and employee-related risks."
+        },
+        {
+          "title": "Multiple top-rated carriers",
+          "text": "Our partnership with multiple top-rated carriers gives clients access to options rather than one company's products."
+        },
+        {
+          "title": "A complimentary consultation",
+          "text": "Reach out to secure your business's future with a complimentary consultation."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How does commercial insurance protect my business?",
+          "a": "It serves as an essential safeguard against a range of potential risks and liabilities, covering things like property damage, legal claims and employee-related risks. We build custom policies designed to fit the needs of each business."
+        }
+      ]
+    },
+    {
+      "slug": "general-liability",
+      "title": "General Liability Insurance",
+      "audience": "businesses",
+      "icon": "shield-check",
+      "summary": "Liability protection for your enterprise.",
+      "text": "Extensive liability protection at competitive rates, designed around what your business actually does.",
+      "lead": "Securing adequate insurance coverage against unpredictable circumstances starts with understanding your protection options. General liability coverage safeguards your investments and secures peace of mind for your enterprise in Deer Park.",
+      "image": "/brands/harlaninsuranceagency/general-liability",
+      "imageAlt": "A certificate of liability insurance on a desk",
+      "covers": [
+        {
+          "title": "Business assets",
+          "text": "Protection for the investments and assets your business depends on."
+        },
+        {
+          "title": "Plans built around your business",
+          "text": "Two decades of expertise behind insurance plans designed with your specific business needs in mind."
+        },
+        {
+          "title": "Leading carriers",
+          "text": "Our independent agency collaborates with leading carriers, bringing you extensive liability protection at competitive rates."
+        }
+      ]
+    },
+    {
+      "slug": "workers-comp",
+      "title": "Workers' Compensation Insurance",
+      "audience": "businesses",
+      "icon": "hard-hat",
+      "summary": "Cover for work-related employee injuries.",
+      "text": "Workers' compensation written through top-rated carriers, covering work-related injuries to protect your employees and your bottom line.",
+      "lead": "Securing peace of mind for your workforce is crucial. With over two decades of experience, our team balances your company's needs with robust solutions from top-rated insurance carriers.",
+      "image": "/brands/harlaninsuranceagency/workers-comp",
+      "imageAlt": "A workers' compensation claim form on a desk",
+      "covers": [
+        {
+          "title": "Work-related injuries",
+          "text": "Coverage so you're fully protected against work-related injuries."
+        },
+        {
+          "title": "Employees and the bottom line",
+          "text": "Protection for both your employees and your bottom line."
+        },
+        {
+          "title": "A tailored consultation",
+          "text": "Connect with us for a tailored consultation and reliable coverage options."
+        }
+      ]
+    },
+    {
+      "slug": "inland-marine",
+      "title": "Inland Marine Insurance",
+      "audience": "businesses",
+      "icon": "factory",
+      "summary": "Property in transit or away from the office.",
+      "text": "Coverage for business property in transit or away from your primary location, from construction equipment to inventory on the move.",
+      "lead": "Inland marine insurance is an essential coverage option to protect property in transit or away from the primary business location, including construction equipment, inventory in transit and tools used off-site.",
+      "image": "/brands/harlaninsuranceagency/inland-marine",
+      "imageAlt": "Cranes and containers at a freight port",
+      "covers": [
+        {
+          "title": "Equipment and tools off-site",
+          "text": "Construction equipment, inventory in transit and tools used away from your main location."
+        },
+        {
+          "title": "Theft, damage and loss",
+          "text": "Whether you're a contractor moving heavy equipment or a retailer moving inventory, the policy guards against theft, damage or loss."
+        },
+        {
+          "title": "Construction, shipping and logistics",
+          "text": "Particularly useful for industries that frequently transport or temporarily store materials and goods in different locations."
+        },
+        {
+          "title": "A risk assessment",
+          "text": "Our team works closely with you to assess your business's risks and set the appropriate level of coverage."
+        }
+      ]
+    },
+    {
+      "slug": "surety-bond",
+      "title": "Surety Bond",
+      "audience": "businesses",
+      "icon": "stamp",
+      "summary": "Performance, bid and license bonds.",
+      "text": "A financial guarantee that your business will meet its contractual obligations, in the form the project or licence requires.",
+      "lead": "Businesses involved in contracts or construction projects, or that require licensing, often need a surety bond to comply with local regulations and build trust with clients. A surety bond is a financial guarantee that your business will fulfill its contractual obligations as agreed.",
+      "image": "/brands/harlaninsuranceagency/surety-bond",
+      "imageAlt": "A hand signing an insurance document on a desk",
+      "covers": [
+        {
+          "title": "Performance bonds",
+          "text": "A guarantee that contracted work will be completed as agreed."
+        },
+        {
+          "title": "Bid bonds",
+          "text": "Backing for a bid so a project owner can rely on the offer you have made."
+        },
+        {
+          "title": "License bonds",
+          "text": "The bond a licence or local regulation calls for before you can operate."
+        },
+        {
+          "title": "Protection for your clients",
+          "text": "The bond shields clients from potential financial losses if work goes unfulfilled or legal requirements are not met."
+        }
+      ]
+    }
+  ],
+  "process": {
+    "title": "How we work",
+    "text": "Your risks assessed, your options explained, and support long after the policy is written.",
+    "steps": [
+      {
+        "title": "We evaluate your risks",
+        "text": "We work with you to evaluate the risks specific to your property or business and help you choose coverage that fits both your needs and your budget."
+      },
+      {
+        "title": "We compare the carriers",
+        "text": "We shop the market across multiple top-rated carriers, so you are not paying more than you need to and are not giving up comprehensive coverage to get there."
+      },
+      {
+        "title": "We explain the policy",
+        "text": "We take the time to explain the insurance terms and the detail of each policy, from deductibles through to add-ons like flood and hurricane coverage, so you know exactly what you are getting."
+      },
+      {
+        "title": "We stay with you after",
+        "text": "We keep you updated on changes to your policy, help with claims, and adjust your coverage as your life changes."
+      }
+    ]
+  },
+  "about": {
+    "title": "Protecting what matters most: a legacy of care.",
+    "text": [
+      "Harlan Insurance Agency has proudly served Houston since 2004. Founded by Bruce Harlan, a small business owner and family man, the agency was built on a simple belief: people deserve honest protection from someone who truly cares.",
+      "As an independent insurance agency, we focus on helping Houston families and businesses find coverage that fits their lives, not a one-size-fits-all policy. Bruce understands firsthand the responsibility of protecting a family and running a business, and that perspective drives our commitment to personalized service, trust and long-term relationships.",
+      "At Harlan Insurance Agency, we're here to help, guide and protect. Every client, every step of the way."
+    ],
+    "image": "/brands/harlaninsuranceagency/about",
+    "imageAlt": "An agent and a client going over policy paperwork at a desk",
+    "values": [
+      {
+        "title": "Independent",
+        "text": "We work with a wide range of top-rated carriers rather than a single company, so coverage can be matched to your situation."
+      },
+      {
+        "title": "Personalized service",
+        "text": "Quality protection, personalized service and competitive pricing, all tailored to meet your unique requirements."
+      },
+      {
+        "title": "Long-term relationships",
+        "text": "Our emphasis on forming lasting relationships lets us guide clients through the complexities of insurance."
+      },
+      {
+        "title": "Local and family-owned",
+        "text": "Supporting local, family-owned businesses like ours makes a real difference, and we truly appreciate your trust."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Bruce Harlan",
+      "role": "Owner and Agent",
+      "bio": "Owner and principal agent of Harlan Insurance Agency. With over 20 years of experience in the insurance industry and a Bachelor of Science in Business Management, Bruce is dedicated to providing reliable, expert guidance to each of our clients.",
+      "image": "/brands/harlaninsuranceagency/bruce-harlan",
+      "imageAlt": "Bruce Harlan"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What makes Harlan Insurance Agency different?",
+      "a": "Established in 2004 by Bruce Harlan, the agency brings over 20 years of industry experience and a commitment to personalized attention, trust and integrity. As an independent agency, we provide diverse insurance services tailored to the needs of each client."
+    },
+    {
+      "q": "What kinds of insurance do you write?",
+      "a": "We offer customized coverage across home, auto, flood, life and commercial insurance, along with renters, umbrella, jewelry, boat and marine, RV, general liability, workers' compensation, inland marine and surety bonds."
+    },
+    {
+      "q": "Does it cost anything to get a quote or a review?",
+      "a": "No. Quotes and consultations are complimentary, and we also provide complimentary policy reviews to keep your coverage up to date and comprehensive."
+    },
+    {
+      "q": "What should I consider when choosing home insurance?",
+      "a": "The level of coverage you need, the specific risks in your area, and the value of your home and belongings. It is also worth evaluating the reliability and customer service of potential insurers."
+    },
+    {
+      "q": "How does commercial insurance protect my business?",
+      "a": "It safeguards against a range of potential risks and liabilities, covering things like property damage, legal claims and employee-related risks. We build custom policies designed to fit the needs of each business."
+    },
+    {
+      "q": "What factors influence flood insurance rates?",
+      "a": "A property's flood risk, location and elevation, along with the amount and type of coverage chosen. Many areas in Houston face significant risk, so flood coverage is often necessary."
+    },
+    {
+      "q": "Where can I find top insurance services in Greater Houston?",
+      "a": "Our agency offers a wide range of personalized coverage options across Greater Houston, so every client finds the protection they need. With years of experience and a track record of reliability, we deliver trustworthy, custom-fit solutions for your insurance needs."
+    }
+  ],
+  "serviceArea": [
+    "Deer Park",
+    "Baytown",
+    "La Porte",
+    "Pasadena",
+    "South Houston",
+    "Houston",
+    "Channelview",
+    "Crosby",
+    "Mont Belvieu",
+    "Seabrook",
+    "Kemah",
+    "Webster",
+    "Friendswood",
+    "League City",
+    "Pearland",
+    "Sugar Land",
+    "Galveston"
+  ],
+  "facts": [
+    {
+      "heading": "Why clients choose Harlan Insurance Agency",
+      "items": [
+        "Over 20 years of insurance industry experience",
+        "Customized coverage for individuals and businesses",
+        "Strong partnerships with top-rated carriers",
+        "Commitment to client education and empowerment",
+        "Reliable service and support with flexible accessibility"
+      ]
+    },
+    {
+      "heading": "Local knowledge of local risk",
+      "text": "Deer Park and much of the Houston area is prone to flooding and storm damage, so we make sure flood protection is considered on home and business policies, and we know the local laws and regulations your coverage has to meet."
+    },
+    {
+      "heading": "Ways to save on your coverage",
+      "text": "We offer guidance on bundling your policies together to save money while maximizing your coverage, and we compare policies across multiple carriers so price is weighed against protection rather than chosen on the premium alone."
+    },
+    {
+      "heading": "Find the agency online",
+      "text": "Harlan Insurance Agency is on Facebook at facebook.com/BruceHarlanInsurance and has a Google Business Profile listing for the Deer Park office."
+    }
+  ]
+}

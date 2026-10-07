@@ -1,0 +1,326 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Tri City AC & Heat",
+  "shortName": "Tri City AC & Heat",
+  "summary": "Air conditioning and heating repair, replacement, maintenance and parts for homes and businesses in Pasadena and the surrounding Houston area.",
+  "phone": "(713) 740-9500",
+  "email": "sittinpretty@tricityac.com",
+  "address": "131 Pasadena Fwy",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77506",
+  "rating": 5.0,
+  "reviewCount": 181,
+  "since": 1982,
+  "hours": [["Mon – Fri", "9:30 AM – 5:30 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "brand": {
+    "primary": "#04558a",
+    "primaryDeep": "#033b61",
+    "accent": "#9f041b",
+    "ink": "#111c26",
+    "muted": "#4c5f70",
+    "surface": "#eef4f9",
+    "line": "#d7e2ec",
+    "heading": "'Red Hat Text', system-ui, sans-serif",
+    "body": "'Questrial', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;600;700&family=Questrial&display=swap",
+    "logo": "/brands/tricityacheat/logo.webp",
+    "logoWidth": 160
+  },
+  "emergency": {
+    "title": "24/7 emergency service",
+    "text": "HVAC systems rarely break down at a convenient hour, so emergency service is available when your heating or cooling quits."
+  },
+  "sameDay": "Same-day estimates are available on new system installations and replacements.",
+  "licenses": [{ "label": "TDLR HVAC", "number": "TACLB23630E" }],
+  "financing": {
+    "text": "Fixed-interest financing on new systems and repairs, with predictable monthly payments and no surprise rate hikes."
+  },
+  "hero": {
+    "eyebrow": "Air conditioning and heating contractor in Pasadena, TX",
+    "title": "You're sittin' pretty",
+    "titleAccent": "with Tri City.",
+    "lead": "A family-owned HVAC contractor in Pasadena since 1982. We service all makes and models, honor all manufacturer warranties, and give you a free estimate on a new system before you decide anything.",
+    "image": "/brands/tricityacheat/hero",
+    "imageAlt": "A technician checking the controls inside an outdoor HVAC unit with a meter"
+  },
+  "groups": [
+    {
+      "slug": "cooling",
+      "title": "Residential AC",
+      "icon": "snowflake",
+      "summary": "Air conditioning installation, repair and maintenance for Texas summers.",
+      "intro": "Texas summers demand a reliable cooling system, and our residential AC services keep your home comfortable through the worst of the heat. We handle everything from precision installations to emergency repairs, and we work on every make and model.",
+      "image": "/brands/tricityacheat/cooling",
+      "imageAlt": "Service gauges connected to an outdoor air conditioner on a home's concrete pad",
+      "services": [
+        {
+          "slug": "central-ac-installation",
+          "title": "Central AC Installation",
+          "icon": "air-vent",
+          "text": "Central air conditioning installed with efficiency in mind, with a free estimate on any new system or replacement.",
+          "points": ["Free estimates on new systems and replacements", "Same-day estimates available", "Financing available"]
+        },
+        {
+          "slug": "ac-repair",
+          "title": "AC Repair and Maintenance",
+          "icon": "wrench",
+          "text": "Our certified technicians use advanced diagnostic tools to find problems others miss, then explain the issue in detail before any repair.",
+          "points": ["All makes and models serviced", "All manufacturer warranties honored", "Emergency AC repair available"]
+        },
+        {
+          "slug": "ductless-mini-splits",
+          "title": "Ductless Mini-Split Systems",
+          "icon": "fan",
+          "text": "Ductless mini-splits for rooms and spaces the main system was never sized to reach."
+        },
+        {
+          "slug": "preventative-maintenance",
+          "title": "Preventative Maintenance Plans",
+          "icon": "gauge",
+          "text": "Regular inspections, cleaning and tune-ups that extend equipment life and hold efficiency where it should be.",
+          "points": ["Two visits a year, heating and cooling", "25-point precision system tune-up"]
+        },
+        {
+          "slug": "duct-work",
+          "title": "Duct Work Installation and Repair",
+          "icon": "waves",
+          "text": "Duct work installed and repaired, so the air your system makes actually reaches the rooms you live in."
+        }
+      ]
+    },
+    {
+      "slug": "heating",
+      "title": "Residential Heating",
+      "icon": "flame",
+      "summary": "Furnaces, heat pumps and ductless heating, installed and repaired.",
+      "intro": "When winter temperatures drop, our residential heating services keep your home warm. We service every heating system type, including furnaces, heat pumps and boilers, with expertise that comes from four decades in the industry.",
+      "image": "/brands/tricityacheat/heating",
+      "imageAlt": "An indoor furnace and air handler connected to new ductwork",
+      "services": [
+        {
+          "slug": "furnace-installation",
+          "title": "Furnace Installation",
+          "icon": "heater",
+          "text": "Furnaces installed and replaced, with a free estimate before the work is scheduled.",
+          "points": ["Free estimates on new systems and replacements", "Financing available"]
+        },
+        {
+          "slug": "heat-pump-systems",
+          "title": "Heat Pump Systems",
+          "icon": "thermometer",
+          "text": "Heat pump systems installed and serviced for homes that heat and cool from one piece of equipment."
+        },
+        {
+          "slug": "ductless-heating",
+          "title": "Ductless Heating Solutions",
+          "icon": "fan",
+          "text": "Ductless heating for additions, garages and rooms without duct work running to them."
+        },
+        {
+          "slug": "heating-repair",
+          "title": "Heating Repair and Maintenance",
+          "icon": "wrench",
+          "text": "Repairs and maintenance on furnaces, heat pumps and boilers, on all makes and models.",
+          "points": ["All manufacturer warranties honored", "Emergency services available"]
+        },
+        {
+          "slug": "heating-maintenance-plans",
+          "title": "Preventative Maintenance Plans",
+          "icon": "gauge",
+          "text": "A visit before the heating season catches a worn part before it turns into a no-heat call."
+        }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial HVAC",
+      "icon": "building",
+      "summary": "Rooftop units, split systems and packaged units for Pasadena businesses.",
+      "intro": "Business operations depend on consistent climate control. Our commercial team works efficiently to maintain, repair or install systems that meet your needs, whether you run a small retail space or manage a large commercial facility.",
+      "image": "/brands/tricityacheat/commercial",
+      "imageAlt": "Ductwork running along the ceiling of a commercial corridor",
+      "services": [
+        {
+          "slug": "rooftop-units",
+          "title": "Rooftop Unit Installation and Repair",
+          "icon": "building",
+          "text": "Rooftop units installed and repaired by technicians who work on them every week."
+        },
+        {
+          "slug": "split-systems",
+          "title": "Split System Solutions",
+          "icon": "air-vent",
+          "text": "Split systems for commercial spaces where a single packaged unit is not the right fit."
+        },
+        {
+          "slug": "packaged-units",
+          "title": "Packaged Unit Services",
+          "icon": "settings",
+          "text": "Service and replacement for all-in-one packaged commercial equipment."
+        },
+        {
+          "slug": "commercial-maintenance",
+          "title": "Preventative Maintenance Plans",
+          "icon": "gauge",
+          "text": "Scheduled maintenance that extends the life of your equipment and avoids unexpected breakdowns."
+        },
+        {
+          "slug": "commercial-emergency-repairs",
+          "title": "Emergency Repairs",
+          "icon": "timer",
+          "text": "Emergency repairs when a commercial system goes down outside business hours.",
+          "points": ["Sell, service and replace commercial systems", "Over 40 years of experience"]
+        }
+      ]
+    },
+    {
+      "slug": "hvac-parts",
+      "title": "HVAC Parts",
+      "icon": "filter",
+      "summary": "An in-store parts counter stocking genuine components for all major brands.",
+      "intro": "We stock a large inventory of air conditioning and heating parts, and we sell them over the counter. Everything we supply is a genuine, manufacturer-approved component that meets or exceeds original specifications, and we will order what we do not have on the shelf.",
+      "image": "/brands/tricityacheat/parts",
+      "imageAlt": "An open service panel at an outdoor HVAC unit with wiring and controls exposed",
+      "services": [
+        {
+          "slug": "filters-and-thermostats",
+          "title": "Air Filters and Thermostats",
+          "icon": "filter",
+          "text": "Air filters for clean air and thermostats for precise temperature control.",
+          "points": ["Genuine parts for all major brands"]
+        },
+        {
+          "slug": "motors-and-capacitors",
+          "title": "Motors and Capacitors",
+          "icon": "settings",
+          "text": "Indoor blower motors for efficient airflow, plus fan motors and capacitors.",
+          "points": ["Fan blades and installation supplies"]
+        },
+        {
+          "slug": "heating-components",
+          "title": "Heating Components",
+          "icon": "flame",
+          "text": "Heating components for reliable warmth, for the common gas and electric systems in this area."
+        },
+        {
+          "slug": "parts-counter",
+          "title": "Pick-Up, Delivery and Shipping",
+          "icon": "car",
+          "text": "Collect parts at the counter on Pasadena Fwy, or have them delivered or shipped.",
+          "points": ["In-store parts sales Mon – Fri, 9:30 AM – 5:30 PM", "Shipping available on all orders", "Expert installation if you would rather we fit it"]
+        }
+      ]
+    }
+  ],
+  "plan": {
+    "name": "Preferred Service Policy",
+    "intro": "Two planned maintenance calls a year, one before the heating season and one before the cooling season, each with a 25-point precision system tune-up. The visit is to inspect the system and advise you of any repairs needed; no repairs are made without your approval.",
+    "tiers": [
+      {
+        "name": "First System",
+        "price": "$16.99",
+        "period": "per month",
+        "featured": true,
+        "features": [
+          "Two service visits a year, heating and cooling",
+          "25-point precision system tune-up",
+          "Priority emergency service on a breakdown",
+          "10% discount on parts for repairs",
+          "$89 reduced residential service and repair trip charge",
+          "Or $179.99 for the year"
+        ]
+      },
+      {
+        "name": "Each Additional System",
+        "price": "$6.99",
+        "period": "per month",
+        "features": [
+          "Two service visits a year on the additional system",
+          "25-point precision system tune-up",
+          "Or $59.99 for the year"
+        ]
+      }
+    ],
+    "note": "Monthly pricing is by credit card auto draft. One year covers two service visits. Filter replacements and system cleanings are included and tailored to your equipment."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Your friend in the AC business.",
+    "text": [
+      "Tri City AC & Heat is a family-owned and operated business, and it has been keeping homes and businesses across Pasadena comfortable since 1982. Founder David Moore retired in 2003, and Jeff Hurley, a long-time technician, bought the operation and still runs it.",
+      "Our foundation is honesty, integrity and quality workmanship. We treat every customer like a friend, we take the time to explain what is actually wrong, and we always try to fix a problem before we talk about replacing anything. We specialize in residential air conditioning and heating as well as duct work, and we also sell parts over the counter.",
+      "Forty years in has taught us that systems fail at inconvenient hours, which is why we answer emergency calls. It has also earned us an A+ rating with the Better Business Bureau. From preventative maintenance to emergency service to parts sales, you'll be sittin' pretty with Tri City."
+    ],
+    "image": "/brands/tricityacheat/team",
+    "imageAlt": "Tri City technicians working on rooftop condensing units",
+    "values": [
+      { "title": "Repair before replace", "text": "We always strive to fix the issue before considering a replacement." },
+      { "title": "Free estimates", "text": "Free estimates on new system installations and replacements, available the same day." },
+      { "title": "Any make, any model", "text": "Our technicians work on all makes and models, and we honor all manufacturer warranties." }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Do you sell HVAC system parts?",
+      "a": "Yes, we sell parts for all major brands of HVAC systems. We will also work with you to order the parts you need."
+    },
+    {
+      "q": "Do you offer emergency services?",
+      "a": "Yes. We are available for HVAC-related emergencies."
+    },
+    {
+      "q": "Can you service and replace commercial HVAC systems?",
+      "a": "Yes. We sell, service, and replace residential and commercial HVAC systems."
+    }
+  ],
+  "serviceArea": ["Pasadena", "Deer Park", "La Porte", "Friendswood", "League City", "Houston", "Humble", "Manvel"],
+  "facts": [
+    {
+      "heading": "Brands We Service",
+      "items": ["Trane", "RUUD", "Coleman", "Amana", "Mitsubishi Electric", "Daikin"]
+    },
+    {
+      "heading": "Accreditation",
+      "text": "A+ rating with the Better Business Bureau."
+    },
+    {
+      "heading": "Our Team",
+      "items": [
+        "Jeff Hurley, President and Master AC Technician",
+        "Nikki Hurley, Dispatch and COO",
+        "Merrick Harman, AC Technician",
+        "Sebastian Bettis, AC Technician"
+      ]
+    },
+    {
+      "heading": "Warranties and Estimates",
+      "text": "All manufacturer warranties honored. Free estimates on new system installations and replacements, and same-day estimates are available."
+    },
+    {
+      "heading": "Phone",
+      "items": ["Main: (713) 740-9500", "Alternate: (713) 999-4285"]
+    },
+    {
+      "heading": "Parts Counter",
+      "text": "In-store parts sales Monday to Friday, 9:30 AM to 5:30 PM, with pick-up, delivery and shipping available."
+    },
+    {
+      "heading": "Languages",
+      "items": ["English", "Spanish"]
+    },
+    {
+      "heading": "Payment Methods",
+      "items": ["American Express", "Discover", "MasterCard", "Visa", "Financing"]
+    },
+    {
+      "heading": "Preventative Maintenance Benefits",
+      "text": "Maintenance is best done twice a year, once before the heating season and once before the cooling season. It saves energy, avoids unnecessary repairs, keeps your home safe and extends the life of your system."
+    },
+    {
+      "heading": "Find Us Online",
+      "items": ["facebook.com/tricityacheating", "instagram.com/tricityacheat", "linkedin.com/company/tri-city-ac-heat"]
+    }
+  ]
+}

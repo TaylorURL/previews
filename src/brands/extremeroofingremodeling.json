@@ -1,0 +1,252 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "eXtreme Roofing & Remodeling",
+  "shortName": "eXtreme Roofing",
+  "phone": "(409) 354-2135",
+  "email": "nick@extreme-roofing.com",
+  "address": "3802 Filmore Ln",
+  "town": "Deer Park",
+  "state": "TX",
+  "zip": "77536",
+  "rating": 4.1,
+  "reviewCount": 17,
+  "hours": [["Mon – Sat", "8 AM – 5 PM"], ["Sunday", "Closed"]],
+  "brand": {
+    "primary": "#c03d38",
+    "primaryDeep": "#8a2824",
+    "accent": "#ef6a60",
+    "ink": "#23272f",
+    "surface": "#f4f5f7",
+    "heading": "'Barlow Condensed', 'Arial Narrow', sans-serif",
+    "body": "'Heebo', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Heebo:wght@400;500;600;700&display=swap",
+    "logo": "/brands/extremeroofingremodeling/logo.webp",
+    "logoWidth": 170
+  },
+  "hero": {
+    "eyebrow": "Deer Park roofer and general contractor",
+    "title": "Your reliable",
+    "titleAccent": "neighborhood roofer.",
+    "lead": "A family-owned general contractor in Deer Park, with over 15 years on roofs, decks, patios, pergolas, stairs and fences. Call for a free estimate.",
+    "image": "/brands/extremeroofingremodeling/hero",
+    "imageAlt": "A roofer working on a residential shingle roof"
+  },
+  "promises": ["Free estimates", "24/7 emergency repairs", "Warranties with our work", "Family owned and operated"],
+  "services": [
+    {
+      "slug": "roof-installation-and-replacement",
+      "group": "residential",
+      "title": "Roof Installation and Replacement",
+      "short": "New roofs and full replacements, with a warranty.",
+      "text": "New installations and full replacements, built from high-quality materials from top industry manufacturers and backed by a warranty on our work.",
+      "image": "/brands/extremeroofingremodeling/roof-installation",
+      "imageAlt": "A new asphalt shingle roof being installed on a house",
+      "body": [
+        "Your roof protects your family, your home and its foundation against water damage from rain. It also keeps out pests, aids ventilation and helps regulate the internal temperature of your home, so a properly installed roof matters to how the whole house feels.",
+        "By combining knowledge and expertise with high-quality materials from top industry manufacturers, we are able to provide first-rate, energy-efficient roofing systems. We provide warranties with our work, so you can rest assured that you are fully protected. We will walk you through the alternatives and help you select the best option for your needs."
+      ],
+      "points": [
+        "New roof installation",
+        "Full roof replacement",
+        "Asphalt shingle, tile, slate, membrane, wood and metal systems",
+        "Free guidance on selecting the right system",
+        "Warranties on our work"
+      ],
+      "faqs": [
+        { "q": "Do I have to replace gutters and downspouts?", "a": "As long as they are in good shape and are not in need of fixing or replacing, then we can work around them." },
+        { "q": "What if my newly installed roof leaks?", "a": "We stand by our work, so if there are any leaks in the new roof, we cover the repair cost to the roof and any damage caused by the leak." }
+      ]
+    },
+    {
+      "slug": "roof-repair-and-maintenance",
+      "group": "residential",
+      "title": "Roof Repair and Maintenance",
+      "short": "Honest assessments, repairs and maintenance packages.",
+      "text": "A thorough inspection of every component of your roofing system, an honest assessment, and the repair or maintenance schedule that will get the most out of the roof.",
+      "image": "/brands/extremeroofingremodeling/roof-repair",
+      "imageAlt": "A worker repairing damaged shingles on a roof",
+      "body": [
+        "Age and environmental factors can wreak havoc on your roof, so we usually advise homeowners to get their roofs professionally inspected at least once a year. Being unaware of or ignoring problems for too long can cause expensive problems down the road.",
+        "Our roof repair and maintenance service involves a thorough inspection of every component of your roofing system. We provide an accurate, honest assessment and recommend the best way to restore and protect your roof. We also put together customized roof maintenance packages, so the roof performs the way it should throughout its lifespan."
+      ],
+      "points": [
+        "Full inspection of every roofing component",
+        "An accurate, honest assessment",
+        "Repairs to restore and protect the roof",
+        "Customized roof maintenance packages",
+        "Scheduled annual inspections"
+      ]
+    },
+    {
+      "slug": "emergency-roof-repair",
+      "group": "storm",
+      "title": "24/7 Emergency Roof Repair",
+      "short": "Roof damage does not follow a schedule, so neither do we.",
+      "text": "Emergency repairs around the clock, because roof damage does not always follow a schedule. We fix the roof and get you back to comfort as quickly as possible.",
+      "image": "/brands/extremeroofingremodeling/emergency-repair",
+      "imageAlt": "A roofer replacing storm-damaged shingles on a house",
+      "body": [
+        "Storms and sudden damage do not wait for business hours. We offer 24/7 emergency repairs, so when water is coming in there is somebody to call.",
+        "We will fix your roof expertly and professionally, and get you back to comfort as quickly as possible. Call (409) 354-2135."
+      ],
+      "points": ["24/7 emergency repair calls", "Expert, professional repairs", "Back to comfort as quickly as possible"]
+    },
+    {
+      "slug": "insurance-roof-inspection",
+      "group": "storm",
+      "title": "Homeowners Insurance Roof Inspection",
+      "short": "A detailed inspection for your insurance claim, $75.",
+      "text": "Has your roof been damaged by a storm? We provide a detailed inspection for $75, with an additional cost to file the paperwork directly with your insurance company.",
+      "image": "/brands/extremeroofingremodeling/insurance-inspection",
+      "imageAlt": "Close view of asphalt shingles on a residential roof",
+      "body": [
+        "If a storm has been through and you need a thorough, professional roof inspection to file your insurance claim, we will go over the roof in detail and document what we find.",
+        "The inspection is $75. Filing the paperwork directly with your insurance company is an additional cost, and we will tell you what that is before we do it."
+      ],
+      "points": ["Detailed storm damage inspection, $75", "Documentation for your insurance claim", "Paperwork filed directly with your insurer at an additional cost"],
+      "faqs": [
+        { "q": "Do you provide homeowners insurance inspections?", "a": "Yes, we provide a detailed inspection for $75 with an additional cost to file the paperwork directly with your insurance company." }
+      ]
+    },
+    {
+      "slug": "patio-and-deck",
+      "group": "residential",
+      "title": "Patio and Deck",
+      "short": "Decks and patios built, renovated and repaired.",
+      "text": "Decks and patios in concrete, wood or a mix of both, built to suit your property, plus renovation and repair of the one you already have.",
+      "image": "/brands/extremeroofingremodeling/patio-deck",
+      "imageAlt": "A finished wooden deck and covered patio behind a house",
+      "body": [
+        "Decks and patios are a great way to expand the space of a property and increase its value. They are ideal for entertaining or just relaxing with family. Decks come in various styles, including attached, detached, multi-level and meandering, and they can be made from concrete, wood, or even a mix of both.",
+        "We have been building decks and patios for customers in the Deer Park area for many years. Our team will happily guide you through the process of selecting environmentally friendly materials suited to your property and tastes. If your existing patio or deck is falling apart, or you would like to upgrade to a more durable material, we can handle that too.",
+        "Every project begins with an extensive consultation where we work out what you want the space to do. Our team then comes up with the best available options to achieve it, and you can expect clear, open communication from us at every stage."
+      ],
+      "points": [
+        "Attached, detached, multi-level and meandering decks",
+        "Concrete, wood or a mix of both",
+        "Patio and deck renovation",
+        "Patio and deck repairs",
+        "Environmentally friendly materials suited to your property",
+        "Strict standards of quality",
+        "Consultation before anything is built"
+      ]
+    },
+    {
+      "slug": "pergolas",
+      "group": "residential",
+      "title": "Pergolas",
+      "short": "A shaded, airy spot to sit out in the yard.",
+      "text": "Pergolas with vertical posts, cross-beams and an open lattice, for a shaded walkway or a cozy place to sit out in the yard.",
+      "image": "/brands/extremeroofingremodeling/pergolas",
+      "imageAlt": "A wooden pergola over a backyard patio",
+      "body": [
+        "Pergolas are outdoor garden features that form shaded walkways and sitting areas. They usually consist of vertical posts or pillars supporting cross-beams and an open lattice that vines can grow on.",
+        "Unlike gazebos, which provide full coverage from the sun, pergolas allow some sunlight to shine through their slatted roofs, making for a charming, airy and cozy relaxation spot. Extend your living space and add one to your home."
+      ],
+      "points": ["Posts, cross-beams and open lattice", "Shaded walkways and sitting areas", "A lattice vines can grow on"]
+    },
+    {
+      "slug": "stairs",
+      "group": "residential",
+      "title": "Stairs",
+      "short": "Modern, traditional and custom stairs.",
+      "text": "Porch and deck stairs in a variety of materials and shapes, modern, traditional or custom, that do more than connect two levels.",
+      "image": "/brands/extremeroofingremodeling/stairs",
+      "imageAlt": "Newly built wooden stairs leading up to a deck",
+      "body": [
+        "Beyond their function of connecting lower and higher levels, stairs are a great way to add beauty and personality to your home.",
+        "Choose from a variety of materials and shapes, and from our range of modern, traditional and custom stairs. If you are looking to remodel your porch stairs, give us a call."
+      ],
+      "points": ["Porch and deck stairs", "Modern, traditional and custom designs", "A variety of materials and shapes"]
+    },
+    {
+      "slug": "fencing",
+      "group": "residential",
+      "title": "Fencing",
+      "short": "Fences for boundaries, privacy and security.",
+      "text": "A well-constructed fence to demarcate your property's boundaries, enhance privacy and security, and keep kids and pets in the yard.",
+      "image": "/brands/extremeroofingremodeling/fencing",
+      "imageAlt": "A new wooden fence along the edge of a backyard",
+      "body": [
+        "Fences are perfect for demarcating your property's boundaries, enhancing privacy and keeping your property secure.",
+        "A well-constructed fence keeps your kids and pets from running outside, and adds beauty to the exterior landscape of your house. Tell us what the fence needs to do and we will help you construct it."
+      ],
+      "points": ["Property boundary fencing", "Privacy and security fencing", "Keeps kids and pets in the yard"]
+    }
+  ],
+  "about": {
+    "title": "A family-owned general contractor in Deer Park",
+    "text": [
+      "eXtreme Roofing & Remodeling is a family-owned and -operated general contractor specializing in roofing and general remodeling. For over 15 years we have been serving Deer Park and the surrounding communities with quality roofing solutions and home upgrades.",
+      "We use high-quality materials from top industry manufacturers to ensure consistently good results, and our team is skilled, professional and attentive to detail. Whether it is a roof replacement or a deck installation, we have got you covered. We are dedicated to delivering exceptional service, and will only close out a project when you are satisfied with the results."
+    ],
+    "image": "/brands/extremeroofingremodeling/about",
+    "imageAlt": "A completed residential shingle roof on a Deer Park home",
+    "values": [
+      { "title": "Family owned", "text": "Brothers Nick and Michael McIntyre run it, as third-generation tradesmen." },
+      { "title": "Over 15 years", "text": "Roofing and remodeling in Deer Park and the communities around it." },
+      { "title": "We stand by our work", "text": "If a roof we installed leaks, we cover the repair and the damage the leak caused." }
+    ]
+  },
+  "serviceArea": ["Deer Park", "La Porte", "Pasadena", "South Houston", "Morgans Point", "Channelview", "Shoreacres", "Cloverleaf", "Galena Park", "Taylor Lake Village"],
+  "areasText": "We work out of Filmore Lane in Deer Park, and these are the communities we service most often.",
+  "areasImage": "/brands/extremeroofingremodeling/areas",
+  "areasImageAlt": "A residential street of single-family homes",
+  "contactImage": "/brands/extremeroofingremodeling/contact",
+  "contactImageAlt": "A finished patio and deck installation behind a house",
+  "facts": [
+    {
+      "heading": "Our Team",
+      "items": [
+        "Nick McIntyre and Michael McIntyre, brothers and co-owners, third-generation tradesmen with more than 15 years in construction between them when they started the company.",
+        "Cody Hawkey, sales and project leader, with over 10 years of customer service experience. A second-generation tradesman and a lifelong friend turned family, he earned the nickname \"the mailman\" for delivering on projects come rain, snow or shine.",
+        "Raymond Wearsch, job site supervisor, known as \"Uncle Ray\", with over 40 years of industry experience. He takes care of the tools, the equipment and, most importantly, our clients."
+      ]
+    },
+    {
+      "heading": "Roofing Systems We Work On",
+      "items": ["Asphalt shingles", "Tile", "Slate", "Membrane", "Wood", "Metal"]
+    },
+    {
+      "heading": "Warranties",
+      "text": "We provide warranties with our installation work. If there are any leaks in a new roof we installed, we cover the repair cost to the roof and any damage caused by the leak."
+    },
+    {
+      "heading": "Emergency Service",
+      "text": "24/7 emergency roof repairs, because roof damage does not always follow a schedule."
+    },
+    {
+      "heading": "Insurance Inspections",
+      "text": "A detailed homeowners insurance roof inspection is $75, with an additional cost to file the paperwork directly with your insurance company."
+    },
+    {
+      "heading": "Remodeling Services",
+      "items": ["Stairs", "Decks", "Patios", "Pergolas", "Fences"]
+    },
+    {
+      "heading": "Residential and Commercial",
+      "text": "High-quality, affordable solutions for residential and commercial properties. A roof is the first line of defense against the elements and a major factor in the comfort of a home or an office."
+    },
+    {
+      "heading": "Free Estimates and Consultations",
+      "text": "The inspection, the estimate and the consultation are free. Call (409) 354-2135 or fill out the online form and we will respond promptly."
+    },
+    {
+      "heading": "Free Roofing Advice",
+      "text": "Free guidance on selecting the best form of protection for your home, which we then install and maintain, plus free advice and tips on getting the best out of your roofing system throughout its lifespan."
+    },
+    {
+      "heading": "New Construction and Repairs",
+      "text": "Whether you have a new construction project or need repairs, we are here to help."
+    },
+    {
+      "heading": "Satisfaction Guaranteed",
+      "text": "We are committed to delivering the highest quality work possible within your budget, and we will only close out a project when you are satisfied with the results."
+    },
+    {
+      "heading": "Follow Us",
+      "items": ["facebook.com/extremeroofinghouston", "instagram.com/extremeroofing"]
+    }
+  ]
+}
