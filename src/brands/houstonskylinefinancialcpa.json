@@ -1,0 +1,439 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Houston Skyline Financial CPA",
+  "shortName": "Skyline Financial CPA",
+  "tagline": "Reliable tax accountant in Houston.",
+  "phone": "(713) 897-1727",
+  "email": "info@skylinefinancialcpa.com",
+  "address": "601 Westheimer Rd",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77006",
+  "rating": 4.9,
+  "reviewCount": 162,
+  "hours": [
+    [
+      "Monday to Saturday",
+      "8:00 AM - 6:00 PM"
+    ]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Looking for honest advisory support for your unique tax situation in Texas? Work directly with Zahra Samji, a licensed Houston CPA who offers clear and compliance-focused tax guidance."
+  },
+  "brand": {
+    "primary": "#06395a",
+    "primaryDeep": "#042a42",
+    "accent": "#6f9a2f",
+    "ink": "#15242f",
+    "muted": "#56646f",
+    "surface": "#f4f7f9",
+    "cream": "#eaeff3",
+    "line": "#dbe3e9",
+    "heading": "'Archivo', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap",
+    "logo": "/brands/houstonskylinefinancialcpa/logo.webp",
+    "logoWidth": 190
+  },
+  "hero": {
+    "eyebrow": "Licensed Houston CPA",
+    "title": "Houston CPA for tax planning, accounting and bookkeeping.",
+    "lead": "Looking to get informed insights from a licensed Houston CPA? Find out how Skyline Financial Management, led by Zahra Samji, supports clients responsibly to tackle their taxes.",
+    "image": "/brands/houstonskylinefinancialcpa/hero",
+    "imageAlt": "A calculator, pen and financial paperwork on a desk",
+    "points": [
+      "You work one-on-one with Zahra Samji",
+      "Individual, self-employment and small business taxes",
+      "Accounting, bookkeeping and IRS resolution"
+    ]
+  },
+  "overview": {
+    "title": "Houston CPA accounting and tax services.",
+    "text": "Individual and business taxes, self-employment and back taxes, real estate and investment income, S Corporations and payroll filings, sales and use tax, franchise tax, accounting, bookkeeping, QuickBooks setup, fractional CFO support and IRS tax resolution. Pick a service to see what it covers, or call and talk it through with Zahra."
+  },
+  "audiences": {
+    "individuals": "Individuals",
+    "businesses": "Businesses"
+  },
+  "services": [
+    {
+      "slug": "individual-taxes",
+      "title": "Individual Taxes",
+      "audience": "individuals",
+      "icon": "receipt",
+      "summary": "Personal returns prepared and filed start to finish.",
+      "text": "Skyline offers individual income tax advisory services, which allow the clients to get a clear idea about the filing requirements, deductions, credits, and compliance responsibilities.",
+      "lead": "Individual tax preparation is all about getting your personal taxes ready to file. That includes collecting income details, finding tax deductions for individuals, and filling out the right forms. Whether you have one job or several income sources, our personal tax preparation service manages everything from start to finish.",
+      "image": "/brands/houstonskylinefinancialcpa/tax-advisory",
+      "imageAlt": "A person working through figures on a calculator beside a laptop",
+      "covers": [
+        {
+          "title": "Complete tax return preparation",
+          "text": "We handle your tax return from the start. You just need to share your income documents. We will carefully review them to make sure you get every deduction you qualify for."
+        },
+        {
+          "title": "Federal and state tax filing",
+          "text": "We file your federal and state returns for you, so you don't need to stress over deadlines or forms."
+        },
+        {
+          "title": "Personal tax filing support",
+          "text": "We answer all your questions throughout the process. No question is too small. We are here to help you understand everything."
+        },
+        {
+          "title": "Tax deductions for individuals",
+          "text": "We find every deduction that you are allowed to take. This includes mortgage interest, charitable donations, medical expenses, and more."
+        },
+        {
+          "title": "Tax planning for individuals",
+          "text": "We help with tax planning year-round, so you are better prepared for next year."
+        }
+      ]
+    },
+    {
+      "slug": "self-employment-taxes",
+      "title": "Self-Employment Taxes",
+      "audience": "individuals",
+      "icon": "calculator",
+      "summary": "Estimates, expense tracking and quarterly filings.",
+      "text": "Freelancers and self-employed people get support in estimating their taxes, tracking their expenses, making quarterly filings, and knowing what deductions are allowed."
+    },
+    {
+      "slug": "back-taxes",
+      "title": "Back Taxes",
+      "audience": "individuals",
+      "icon": "scale",
+      "summary": "Unfiled returns and past-due obligations, brought current.",
+      "text": "Houston CPA Zahra helps you tackle back taxes. You get an understanding of the notices, filing options, and past-due obligations, and can take the necessary compliance steps.",
+      "lead": "If you have unfiled returns, getting current is always the first step. You get guidance to reconstruct your records, prepare the missing returns accurately, and file them in a way that reduces your exposure."
+    },
+    {
+      "slug": "real-estate-taxes",
+      "title": "Real Estate Taxes",
+      "audience": "individuals",
+      "icon": "key",
+      "summary": "Property assessment review and informed decisions.",
+      "text": "Zahra's real estate tax consulting offers support in the areas of property assessment review, thorough explanation of the processes, and support of informed decisions about the possibility of tax reductions.",
+      "lead": "Depreciation, rental income, 1031 exchanges and passive activity rules all change what you owe. Zahra Samji works through how each applies to your property."
+    },
+    {
+      "slug": "investment-income",
+      "title": "Investment Income",
+      "audience": "individuals",
+      "icon": "chart",
+      "summary": "Dividends, stocks, bonds and capital gains reporting.",
+      "text": "Get support for dividend income reporting that helps you understand the tax rules, documentation requirements, investment implications, and compliance considerations.",
+      "lead": "You get advisory on the treatment of taxes on stocks, bonds, capital gains, investment income, basis reporting, and how taxation may affect your overall financial portfolio.",
+      "covers": [
+        {
+          "title": "Dividend income",
+          "text": "Reporting support covering the tax rules, documentation requirements, investment implications and compliance considerations."
+        },
+        {
+          "title": "Stocks and bonds",
+          "text": "Advisory on capital gains, investment income and basis reporting, and how taxation may affect your overall financial portfolio."
+        },
+        {
+          "title": "Unemployment and disability",
+          "text": "Support for unemployment and disability tax concerns, including benefits reporting, withholding rules, return adjustments, and compliance awareness for various situations."
+        }
+      ]
+    },
+    {
+      "slug": "s-corporations",
+      "title": "S Corporations",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Structure, compensation rules, elections and filings.",
+      "text": "Consulting for S Corporation tax matters, helping business owners understand structure requirements, compensation rules, and filings under federal and state regulations.",
+      "lead": "S Corporation elections support help you get clarity about the eligibility criteria, tax forms required, deadlines, and long-term implications of filing responsibly.",
+      "covers": [
+        {
+          "title": "S Corporation tax preparation",
+          "text": "Structure requirements, compensation rules and filings under federal and state regulations."
+        },
+        {
+          "title": "S Corporation elections",
+          "text": "Eligibility criteria, the tax forms required, deadlines, and the long-term implications of filing."
+        }
+      ]
+    },
+    {
+      "slug": "payroll-and-state-filings",
+      "title": "Payroll and State Filings",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Quarterly payroll, sales and use tax, franchise tax.",
+      "text": "Zahra's quarterly payroll filings help businesses know their reporting duties, withholding requirements, deadlines, and compliance expectations for employment taxes.",
+      "lead": "Meet every federal, state, and local filing deadline accurately, so penalties, notices, and missed obligations never disrupt your business.",
+      "covers": [
+        {
+          "title": "Quarterly payroll filing",
+          "text": "Reporting duties, withholding requirements, deadlines, and compliance expectations for employment taxes."
+        },
+        {
+          "title": "Sales and use tax",
+          "text": "Advisory services covering nexus evaluation, reporting rules, filing guidance, and state-specific obligations."
+        },
+        {
+          "title": "Franchise tax",
+          "text": "Support for franchise tax issues that involve interpreting rules, assessing their filing needs, meeting deadlines, and being compliant within state jurisdictions."
+        }
+      ]
+    },
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping",
+      "audience": "businesses",
+      "icon": "book",
+      "summary": "Transactions recorded, reconciled and tax-ready.",
+      "text": "Get bookkeeping support for tracking income and expenses, organizing transactions, and keeping your business records up to date for better financial clarity and decision-making.",
+      "lead": "We don't just track your transactions. We make sure that your income, expenses, and accounts are recorded correctly and consistently throughout the year. From the very first steps of working together, our Houston bookkeeping services help you avoid any confusion, reduce errors, and keep you prepared for stress-free tax filings.",
+      "covers": [
+        {
+          "title": "Accurate transaction recording",
+          "text": "We record your every source of revenue, including dividend income, to help you prevent errors."
+        },
+        {
+          "title": "Monthly reconciliations",
+          "text": "We review your bank and credit card accounts regularly to ensure your records match actual activity."
+        },
+        {
+          "title": "Organized financial records",
+          "text": "We help you maintain clear records that support better financial decisions."
+        },
+        {
+          "title": "Tax-ready books",
+          "text": "We align your bookkeeping with IRS guidelines and accounting standards, so you are prepared for the tax season."
+        },
+        {
+          "title": "QuickBooks setup",
+          "text": "Zahra Samji builds a properly configured QuickBooks system around your business so your books are accurate and functional from day one."
+        }
+      ]
+    },
+    {
+      "slug": "accounting-services",
+      "title": "Accounting Services",
+      "audience": "businesses",
+      "icon": "chart",
+      "summary": "Records, reviews and reporting you can act on.",
+      "text": "Get accounting support that helps you understand your financial reports, maintain accurate records, and meet tax compliance requirements for your Houston-based business.",
+      "lead": "Accounting is about helping you figure out where you stand financially and what to do next. Whether you are self-employed or managing multiple income streams, accurate accounting plays an important role in giving you long-term success.",
+      "covers": [
+        {
+          "title": "Accurate financial recordkeeping",
+          "text": "We keep your records organized and up to date so you always have the information you need to make informed decisions."
+        },
+        {
+          "title": "Monthly and quarterly reviews",
+          "text": "We identify any potential issues early and stay informed about your overall financial health."
+        },
+        {
+          "title": "Tax-ready accounting",
+          "text": "We ensure that your books meet IRS requirements and help you avoid surprises when tax season arrives."
+        },
+        {
+          "title": "Income and expense tracking",
+          "text": "We gain a clear view of cash flow and profitability to better manage your finances."
+        }
+      ]
+    },
+    {
+      "slug": "fractional-cfo",
+      "title": "Fractional CFO",
+      "audience": "businesses",
+      "icon": "handshake",
+      "summary": "Senior financial strategy without a full-time hire.",
+      "text": "Get senior-level financial strategy, forecasting, and cash flow oversight without the full-time executive salary your budget can't justify yet.",
+      "lead": "A fractional CFO is a qualified financial executive who works with your business on a part-time or project basis. You get the expertise of a CFO: cash flow management, financial forecasting, budgeting, and strategic planning, without the full-time salary, benefits, and overhead that come with an in-house hire.",
+      "covers": [
+        {
+          "title": "Cash flow management",
+          "text": "We monitor cash positions, identify gaps, and help you plan around seasonal fluctuations or growth surges so you're never caught off guard."
+        },
+        {
+          "title": "Financial forecasting and budgeting",
+          "text": "We build realistic financial models and operating budgets based on your revenue trends, industry benchmarks, and business objectives."
+        },
+        {
+          "title": "Strategic financial planning",
+          "text": "From expansion decisions to capital investments, we help you evaluate options with accurate financial analysis. Every major move gets a proper financial lens before you commit."
+        },
+        {
+          "title": "KPI tracking and reporting",
+          "text": "We identify the key performance indicators that actually matter for your business, set up tracking systems, and deliver clean, actionable reports so you always know where you stand."
+        },
+        {
+          "title": "Virtual CFO",
+          "text": "Everything delivered remotely with the same level of depth and attention you would expect from an in-house hire."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why hire a fractional CFO instead of a full-time CFO?",
+          "a": "Most small business owners cannot justify a full-time CFO at a $150,000+ salary, and that is before benefits, bonuses and overhead. A fractional CFO gives you experienced strategic oversight at a fraction of that cost."
+        }
+      ]
+    },
+    {
+      "slug": "irs-tax-resolution",
+      "title": "IRS Tax Resolution",
+      "audience": "individuals",
+      "icon": "scale",
+      "summary": "Notices, penalties, agreements and collection status.",
+      "text": "Are you facing IRS notices or back taxes? Get straightforward guidance on your options, obligations, and the right next steps.",
+      "lead": "Tax resolution refers to the process of resolving unpaid taxes, disputed balances, penalties, or compliance issues with the IRS or state tax authorities. It covers everything from understanding what a notice means to negotiating a formal agreement with the IRS to bring your account back into good standing. The right strategy depends on what you owe, why you owe it, your financial situation, and your filing history.",
+      "covers": [
+        {
+          "title": "IRS notice review and response",
+          "text": "Not every IRS notice means you owe money. We review what you received, interpret what it means, and help you respond correctly and on time."
+        },
+        {
+          "title": "Back tax filings",
+          "text": "Guidance to reconstruct your records, prepare the missing returns accurately, and file them in a way that reduces your exposure."
+        },
+        {
+          "title": "Penalty relief",
+          "text": "The IRS offers several penalty relief programs, including first-time penalty abatement and reasonable cause relief. We evaluate your eligibility and file the appropriate requests."
+        },
+        {
+          "title": "Installment agreement negotiation",
+          "text": "If you owe taxes you can't pay in full, an installment agreement lets you pay over time. We negotiate the terms on your behalf to get you a manageable monthly payment."
+        },
+        {
+          "title": "Offer in compromise",
+          "text": "In certain situations you may qualify to settle your tax liabilities for less than the full amount owed. Your eligibility will be assessed honestly, and the application will be handled if it's a viable option."
+        },
+        {
+          "title": "Currently not collectible status",
+          "text": "If your financial situation makes payment truly impossible, the IRS can place your account in a temporarily uncollectible status. We help you qualify and document this properly."
+        },
+        {
+          "title": "State tax matters",
+          "text": "IRS issues sometimes come alongside Texas Comptroller matters. We address both federal and state obligations."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "title": "A solo tax consulting practice led by a licensed Houston CPA.",
+    "text": [
+      "Skyline Financial Management is a solo tax consulting practice founded by Zahra Samji, a licensed Houston CPA. The firm provides advisory support to property owners, individuals, and small businesses tackling tax assessments, filings, and planning. With a focus on clarity and compliance, Zahra offers personalized guidance rooted in professional experience and a commitment to client understanding.",
+      "Skyline Financial Management was established due to Zahra's love for making tax advice easier and friendlier for common taxpayers. She worked for top-tier firms like PwC and Deloitte, was also active in the community, and saw that there was a demand for a solo practitioner who would be able to give personal attention and who would help the clients make informed decisions.",
+      "Zahra's vision was to bridge the gap between complex tax regulations and the people affected by them, show integrity, and educate the masses professionally."
+    ],
+    "image": "/brands/houstonskylinefinancialcpa/about",
+    "imageAlt": "An adviser talking a client through a financial report across a desk",
+    "values": [
+      {
+        "title": "Direct access to a CPA",
+        "text": "You work one-on-one with Zahra. This way you get straightforward advice from a licensed Houston CPA who listens."
+      },
+      {
+        "title": "Non-generic tax strategies",
+        "text": "Your life is unique, so we do personalized tax planning in Houston that helps you find openings for smarter decisions."
+      },
+      {
+        "title": "Compliance-first guidance",
+        "text": "You get recommendations that follow current tax regulations to keep filings safe and aligned with what authorities expect."
+      },
+      {
+        "title": "Strictly objective advisory",
+        "text": "You don't get vague claims of \"maximizing refunds\" or \"guaranteed tax relief.\" Instead, Zahra helps you with objective guidance."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Zahra Samji",
+      "role": "Founder and CEO",
+      "bio": "A licensed Houston CPA and tax accountant. Zahra founded Skyline Financial Management after working for top-tier firms like PwC and Deloitte, and works solo, taking care of each case herself so clients get one-on-one tax guidance.",
+      "image": "/brands/houstonskylinefinancialcpa/team-zahra",
+      "imageAlt": "Zahra Samji"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What tax services does Skyline Financial Management offer?",
+      "a": "Skyline Financial Management provides tax advisory support for individuals and small businesses. Services include individual taxes, self-employment taxes, S Corporation guidance, real estate taxes, quarterly payroll filing, and more. The focus is on helping clients understand their tax responsibilities clearly."
+    },
+    {
+      "q": "Can Skyline Financial Management help with back taxes or IRS letters?",
+      "a": "Definitely. Zahra provides counseling for customers who are facing issues of tax arrears or tax notices. She lends her expertise through document checking, clarifying the following actions, and assisting in the process of making decisions based on the individual's situation, all the while keeping in compliance with the regulations."
+    },
+    {
+      "q": "Is Skyline Financial Management a CPA firm?",
+      "a": "Skyline is owned and operated by a licensed CPA, although it is not a CPA firm and does not perform audit or attestation services. The practice focuses on practical tax consulting and professional insight."
+    },
+    {
+      "q": "Does Zahra work directly with every client?",
+      "a": "Yes. In her practice, Zahra works solo and takes care of each case, offering people one-on-one tax guidance that not only supports them but also makes them feel well-informed about their taxes."
+    }
+  ],
+  "serviceArea": [
+    "Houston"
+  ],
+  "facts": [
+    {
+      "heading": "Houston office",
+      "items": [
+        "601 Westheimer Rd, Houston, TX 77006",
+        "T: (713) 897-1727",
+        "info@skylinefinancialcpa.com",
+        "Monday to Saturday, 8am to 6pm (CST)"
+      ]
+    },
+    {
+      "heading": "Scope of practice",
+      "text": "Skyline Financial Management is owned and operated by a licensed CPA. However, it is not a CPA firm and does not provide audit or attestation services."
+    },
+    {
+      "heading": "By the numbers",
+      "items": [
+        "10+ years of experience",
+        "100% transparent pricing",
+        "24 to 48 hour response time",
+        "500+ returns reviewed"
+      ]
+    },
+    {
+      "heading": "Our packages",
+      "items": [
+        "Essential Tax Consultation: ideal for addressing a single, pressing tax issue. It's a one-time engagement that helps you find a focused strategy. Zahra analyzes your situation, answers your questions, and delivers a clear, actionable plan to move forward with confidence.",
+        "Annual Advisory Package: proactive, year-round support that helps you tackle issues outside of one-time tasks. This package creates an ongoing advisory partnership, which includes strategic mid-year and end-of-year planning sessions.",
+        "Premium Consulting Partnership: the most comprehensive solution for clients with complex needs. This high-touch partnership offers quarterly strategic sessions and priority support, with Zahra acting as your exclusive financial advisor for compliance, payroll, and tax planning, among others."
+      ]
+    },
+    {
+      "heading": "Industries we work with",
+      "items": [
+        "Agriculture",
+        "Corporate",
+        "Physicians, healthcare and dental",
+        "Startups and small business",
+        "Hospitality and hotels",
+        "Construction",
+        "Distribution and manufacturing",
+        "Nonprofit",
+        "Real estate",
+        "Oil and gas",
+        "Law firms",
+        "Transportation"
+      ]
+    },
+    {
+      "heading": "Client portal",
+      "text": "Existing clients exchange documents through the Skyline client portal at skylinefinancialcpa.securefilepro.com."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "facebook.com/skylinefinancialcpa",
+        "instagram.com/skyline.financialcpa"
+      ]
+    }
+  ]
+}
