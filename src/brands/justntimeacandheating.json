@@ -1,0 +1,425 @@
+{
+ "template": "hvac",
+ "preview": true,
+ "name": "Just-N-Time AC and Heating",
+ "shortName": "Just-N-Time",
+ "summary": "Locally owned and operated HVAC service for Houston and the surrounding areas, covering AC and heating maintenance, installation, repair, commercial systems, insulation and duct design.",
+ "phone": "(281) 908-4602",
+ "email": "admin@justintimeaircondition.com",
+ "address": "2219 W 34th St. Ste A1",
+ "town": "Houston",
+ "state": "TX",
+ "zip": "77018",
+ "rating": 4.9,
+ "reviewCount": 430,
+ "hours": [
+  [
+   "Mon – Fri",
+   "7:00 AM – 9:00 PM"
+  ],
+  [
+   "Sat",
+   "7:00 AM – 7:00 PM"
+  ],
+  [
+   "Sun",
+   "Closed"
+  ]
+ ],
+ "brand": {
+  "primary": "#025781",
+  "primaryDeep": "#01405f",
+  "accent": "#ed1c24",
+  "ink": "#12212b",
+  "muted": "#4c646f",
+  "surface": "#eef4f7",
+  "line": "#d6e3ea",
+  "heading": "'Barlow', system-ui, sans-serif",
+  "body": "'Barlow', system-ui, sans-serif",
+  "fonts": "https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap",
+  "logo": "/brands/justntimeacandheating/logo.webp",
+  "logoWidth": 200
+ },
+ "emergency": {
+  "title": "24/7 emergency service",
+  "text": "Emergency HVAC repairs are answered around the clock, outside the posted hours and at weekends."
+ },
+ "licenses": [
+  {
+   "label": "HVAC",
+   "number": "TACLB101887E"
+  }
+ ],
+ "financing": {
+  "text": "Financing and leasing options, with senior and military discounts and free estimates on all projects."
+ },
+ "hero": {
+  "eyebrow": "HVAC services in Houston, TX and the surrounding areas",
+  "title": "Prompt heating and cooling service,",
+  "titleAccent": "just in time",
+  "lead": "A locally owned team covering AC and heater maintenance, installation and repair, commercial HVAC, insulation and duct design. Free estimates, a 10-year parts and labor warranty, and emergency repairs answered around the clock.",
+  "image": "/brands/justntimeacandheating/hero",
+  "imageAlt": "A Just-N-Time technician working at an outdoor air conditioning condenser beside a house"
+ },
+ "groups": [
+  {
+   "slug": "air-conditioning",
+   "title": "Air Conditioning",
+   "icon": "snowflake",
+   "summary": "AC repair, installation and maintenance for the long Houston summer.",
+   "intro": "A refrigerant leak, a failing compressor or general wear and tear turns an uncomfortable day into an unbearable one once Houston heats up. Just-N-Time handles air conditioner repair, installation and seasonal maintenance, with technicians who diagnose the problem and fix it rather than work around it.",
+   "image": "/brands/justntimeacandheating/cooling",
+   "imageAlt": "A Just-N-Time technician standing beside a newly installed Daikin outdoor unit",
+   "services": [
+    {
+     "slug": "air-conditioner-repair",
+     "title": "Air Conditioner Repair",
+     "icon": "wrench",
+     "text": "Refrigerant leaks, a malfunctioning compressor and general wear and tear diagnosed and repaired, so the system goes back to cooling properly.",
+     "points": [
+      "Emergency AC repair when the system fails outside normal hours",
+      "Residential air conditioning repair across Houston and the surrounding areas",
+      "Senior and military discounts on repair work"
+     ]
+    },
+    {
+     "slug": "ac-installation",
+     "title": "AC/Heater Installation",
+     "icon": "air-vent",
+     "text": "New heating and cooling systems installed with correct sizing and placement, because a system that is the wrong size wastes energy and wears out early.",
+     "points": [
+      "10-year parts and labor warranty",
+      "Free estimates before the job is booked",
+      "Equipment chosen for the warranty it carries, under a hassle-free warranty policy",
+      "Every component set up correctly, from ductwork to wiring, to avoid refrigerant leaks and uneven cooling"
+     ]
+    },
+    {
+     "slug": "ac-maintenance",
+     "title": "AC/Heater Maintenance",
+     "icon": "gauge",
+     "text": "Routine servicing that finds the small faults before they become breakdowns, keeps the system efficient and extends how long it lasts.",
+     "points": [
+      "Components cleaned, lubricated and calibrated to reduce strain on the system",
+      "Lower energy waste and lower monthly utility bills",
+      "Less dust, mold and allergen circulating through the system",
+      "Free estimates, plus senior and military discounts"
+     ]
+    },
+    {
+     "slug": "ac-replacement",
+     "title": "AC & Heating Replacement",
+     "icon": "snowflake",
+     "text": "When a system has reached the end of its life, replacing it with a more energy-efficient unit brings the running cost down rather than paying to repair it again.",
+     "points": [
+      "Financing and leasing options available"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "heating",
+   "title": "Heating",
+   "icon": "flame",
+   "summary": "Heater repair and furnace replacement for the cold snaps Houston does get.",
+   "intro": "Heaters give warning before they fail: uneven heating between rooms, banging or squealing, a sudden rise in the energy bill, or a unit that cycles on and off constantly. Just-N-Time repairs heating systems and replaces furnaces that are past the point where repairs still make sense.",
+   "image": "/brands/justntimeacandheating/heating",
+   "imageAlt": "A technician working inside an open gas furnace cabinet",
+   "services": [
+    {
+     "slug": "heater-repair",
+     "title": "Heater Repair",
+     "icon": "wrench",
+     "text": "Advanced diagnostics, repair of heating elements and thermostat recalibration, plus the ductwork faults behind uneven heat.",
+     "points": [
+      "Uneven heating, unusual noises, frequent cycling and rising bills all traced to the cause",
+      "Return air duct design and duct insulation corrected where that is what is wrong",
+      "Commercial heating repair as well as residential",
+      "Backed by our satisfaction guarantee"
+     ]
+    },
+    {
+     "slug": "furnace-replacement",
+     "title": "Furnace Replacement",
+     "icon": "heater",
+     "text": "A full evaluation of the existing system and the home's heating needs, then safe removal, accurate installation and final performance testing.",
+     "points": [
+      "Correct sizing, to avoid short cycling, uneven airflow and unnecessary strain",
+      "Most replacements are completed within one day",
+      "Fewer breakdowns and reduced repair needs afterwards",
+      "Estimates, senior and military discounts and warranty options available"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "commercial-hvac",
+   "title": "Commercial HVAC",
+   "icon": "building",
+   "summary": "Preventative maintenance, inspection and maintenance programs for business premises.",
+   "intro": "Commercial systems are larger and more complex than residential ones, and downtime costs more than the repair does. Just-N-Time runs scheduled inspections and tailored maintenance programs that keep offices, warehouses and retail spaces comfortable and the equipment working for longer.",
+   "image": "/brands/justntimeacandheating/commercial",
+   "imageAlt": "A technician servicing rooftop air conditioning units on a commercial building",
+   "services": [
+    {
+     "slug": "commercial-preventative-maintenance",
+     "title": "Commercial HVAC Preventative Maintenance",
+     "icon": "gauge",
+     "text": "Scheduled inspections and servicing that keep business systems running reliably and efficiently, instead of waiting for the call-out.",
+     "points": [
+      "Significantly reduces the risk of costly downtime",
+      "Keeps a comfortable environment for employees and customers"
+     ]
+    },
+    {
+     "slug": "commercial-inspection",
+     "title": "Commercial HVAC Inspection",
+     "icon": "shield",
+     "text": "Thorough inspections that detect issues early and maintain safe, efficient operation."
+    },
+    {
+     "slug": "commercial-maintenance",
+     "title": "Commercial HVAC Maintenance",
+     "icon": "settings",
+     "text": "Maintenance programs tailored to the site, designed to reduce downtime and extend the life of the equipment."
+    }
+   ]
+  },
+  {
+   "slug": "efficiency",
+   "title": "Insulation & Airflow",
+   "icon": "home",
+   "summary": "Insulation installation, air duct design and smart thermostats, so the system does not have to work as hard.",
+   "intro": "Poor insulation and badly planned ductwork are often what is actually behind inconsistent temperatures and a high energy bill, not the equipment. Just-N-Time installs attic, wall and spray foam insulation, designs duct layouts for balanced airflow, and fits programmable thermostats that adjust to your routine.",
+   "image": "/brands/justntimeacandheating/efficiency",
+   "imageAlt": "Insulation batts laid between joists in an attic",
+   "services": [
+    {
+     "slug": "insulation-installation",
+     "title": "Insulation Installation",
+     "icon": "leaf",
+     "text": "Attic insulation, spray foam insulation and wall insulation installation, fitted with minimal disruption to the day.",
+     "points": [
+      "Less heat loss in winter and less heat gain in summer",
+      "Removes the cold spots and the hot, stuffy rooms",
+      "Acts as a sound barrier as well as a thermal one",
+      "Seals the gaps that let outdoor pollutants, allergens and moisture in"
+     ]
+    },
+    {
+     "slug": "air-duct-design",
+     "title": "Air Duct Design",
+     "icon": "cable",
+     "text": "Duct layouts built for the home's own plan using duct design software and load calculations, then installed with air leaks kept to a minimum.",
+     "points": [
+      "Balanced airflow, so every room gets consistent heating or cooling",
+      "Correct sizing, worked out rather than guessed",
+      "Return air duct design and insulation during the duct design process",
+      "Adjustments and upgrades to existing systems as well as new ones"
+     ]
+    },
+    {
+     "slug": "smart-thermostats",
+     "title": "Smart Thermostats",
+     "icon": "thermometer",
+     "text": "Programmable thermostats installed and set up to your routine, adjusting on their own and reachable from your phone while you are out.",
+     "points": [
+      "Stops the system running when nobody needs it",
+      "Avoids the large temperature swings that wear equipment out",
+      "Wireless access and remote control from a smartphone",
+      "Walked through the setup rather than left to work it out"
+     ]
+    }
+   ]
+  }
+ ],
+ "promo": {
+  "eyebrow": "Current offers",
+  "title": "Free estimates, and a 10-year parts and labor warranty",
+  "text": "Estimates are free on all projects, a 10-year parts and labor warranty is available, and senior and military discounts apply across repairs, maintenance, insulation and thermostat work.",
+  "image": "/brands/justntimeacandheating/filter",
+  "imageAlt": "A new air filter being slid into place at an indoor air handler"
+ },
+ "about": {
+  "eyebrow": "About us",
+  "title": "Locally owned, and named for how we work",
+  "text": [
+   "Just-N-Time AC and Heating is a locally owned and operated HVAC company serving Houston, TX and the surrounding areas. As the name suggests, we pride ourselves on prompt, efficient service, and with years of experience in the industry we have built a reputation for getting every repair or installation right the first time.",
+   "Our licensed and experienced technicians cover AC and heater maintenance, AC and heater installation, commercial HVAC preventative maintenance and inspection, air conditioner repair, heater repair, insulation installation, air duct design and smart thermostats. We believe prevention is better than cure, which is why we offer maintenance plans that catch potential issues before they become a problem.",
+   "In the event of unexpected damage, our emergency repair services are available around the clock. We also provide free quotes on all projects, so you know what to expect upfront, and we work with superior products that carry excellent warranties under our hassle-free warranty policy.",
+   "We support our troops and the community. As part of that we offer financing and leasing options alongside special discounts for seniors and military personnel, and our technicians go through extensive customer service training so that every job ends with a satisfied customer."
+  ],
+  "image": "/brands/justntimeacandheating/team",
+  "imageAlt": "Justin M., lead technician and owner of Just-N-Time AC and Heating, in front of a Texas flag",
+  "values": [
+   {
+    "title": "Free Quotes Upfront",
+    "text": "Free estimates on every project, so you know what to expect before any work is booked."
+   },
+   {
+    "title": "Hassle-Free Warranty Policy",
+    "text": "We work with superior products that offer excellent warranties, and a 10-year parts and labor warranty is available."
+   },
+   {
+    "title": "Trained On Service, Not Just Equipment",
+    "text": "Our technicians undergo extensive customer service training alongside their trade licensing."
+   }
+  ]
+ },
+ "faqs": [
+  {
+   "q": "How do I know if I need furnace replacement rather than another repair?",
+   "a": "If your furnace requires frequent repairs, produces uneven heating, or causes higher energy bills, furnace replacement services may provide a more reliable solution than continued repairs."
+  },
+  {
+   "q": "How long does a furnace replacement take?",
+   "a": "Most furnace replacement projects are completed within one day. The timeline depends on system size, existing setup, and any required airflow adjustments."
+  },
+  {
+   "q": "What are the benefits of a furnace upgrade?",
+   "a": "Furnace upgrade services provide more consistent heating, quieter operation, improved efficiency, and fewer unexpected breakdowns during colder months."
+  },
+  {
+   "q": "What are the signs that my heater needs a technician?",
+   "a": "Six things are worth a call: uneven heating between rooms, banging, rattling or squealing noises, a sudden spike in utility costs, a heater that constantly turns on and off, inconsistent heating in a commercial space, and a unit nearing the end of its lifespan. Recognizing these early prevents bigger problems."
+  },
+  {
+   "q": "Why does regular HVAC maintenance matter?",
+   "a": "Routine maintenance keeps the system running efficiently, which reduces energy waste and lowers monthly bills, and it lets a technician spot minor issues before they turn into costly repairs. It also extends the life of the equipment, because keeping components clean, lubricated and calibrated reduces strain and prevents premature wear."
+  },
+  {
+   "q": "Do you offer emergency service?",
+   "a": "Yes. Our emergency repair services are available around the clock, outside our posted hours and at weekends."
+  },
+  {
+   "q": "Do you charge for an estimate?",
+   "a": "No. We provide free quotes on all projects, so you know what to expect upfront."
+  },
+  {
+   "q": "What warranty do you offer on an installation?",
+   "a": "A 10-year parts and labor warranty is available. We work with superior products that offer excellent warranties, in adherence to our hassle-free warranty policy."
+  },
+  {
+   "q": "Are there discounts available?",
+   "a": "Yes. We offer special discounts for seniors and military personnel across our services, as well as financing and leasing options on larger projects."
+  },
+  {
+   "q": "Why does the size of a new system matter so much?",
+   "a": "Correct sizing and placement are what make a system run at peak efficiency. The wrong size leads to short cycling, uneven airflow and unnecessary strain on the equipment, which wastes energy and shortens the life of the unit."
+  },
+  {
+   "q": "Could my high energy bill be the insulation rather than the AC?",
+   "a": "Often, yes. Without proper insulation, your HVAC system has to work overtime to hold the temperature you set, which raises energy costs and leaves rooms uneven. Attic, wall and spray foam insulation seal the gaps so the system does not have to compensate."
+  },
+  {
+   "q": "What does a programmable thermostat actually save?",
+   "a": "It adjusts temperatures automatically through the day and night, so the system is not running when nobody needs it, which shows up on the monthly bill. It also avoids large temperature swings, which reduces strain on the equipment and extends its lifespan."
+  }
+ ],
+ "serviceArea": [
+  "Houston",
+  "Houston Heights",
+  "Garden Oaks",
+  "Oak Forest",
+  "Downtown Houston",
+  "East Downtown Houston",
+  "Midtown Houston",
+  "Rice Village",
+  "West University Place",
+  "Bellaire",
+  "River Oaks",
+  "Montrose",
+  "Memorial",
+  "Memorial City",
+  "Tanglewood",
+  "Spring Branch",
+  "Energy Corridor",
+  "Woodland Heights",
+  "Vintage Park",
+  "Champions Forest",
+  "Jersey Village",
+  "Aldine",
+  "Klein",
+  "Spring",
+  "Humble",
+  "Cypress",
+  "Katy",
+  "Conroe",
+  "The Woodlands"
+ ],
+ "facts": [
+  {
+   "heading": "License",
+   "items": [
+    "HVAC: TACLB101887E"
+   ]
+  },
+  {
+   "heading": "What is included as standard",
+   "items": [
+    "Free estimates on all projects",
+    "10-year parts and labor warranty available",
+    "Hassle-free warranty policy on the equipment we install",
+    "Senior and military discounts",
+    "Financing and leasing options",
+    "Emergency repair services around the clock",
+    "Maintenance plans, to catch issues before they become a problem"
+   ]
+  },
+  {
+   "heading": "Brands we install",
+   "text": "Carrier, Daikin, Goodman, ICP and Lennox. We work on all unit models."
+  },
+  {
+   "heading": "Services",
+   "items": [
+    "AC/Heater Maintenance",
+    "AC/Heater Installation",
+    "AC & Heating Replacement",
+    "Air Conditioner Repair",
+    "Heater Repair",
+    "Furnace Replacement",
+    "Commercial HVAC Preventative Maintenance & Inspection",
+    "Commercial HVAC Maintenance",
+    "Commercial HVAC Inspection",
+    "Insulation Installation",
+    "Air Duct Design",
+    "Smart Thermostats"
+   ]
+  },
+  {
+   "heading": "Insulation we install",
+   "items": [
+    "Attic insulation",
+    "Spray foam insulation",
+    "Wall insulation installation"
+   ]
+  },
+  {
+   "heading": "Our team",
+   "items": [
+    "Justin M., lead technician and owner"
+   ]
+  },
+  {
+   "heading": "Recognition",
+   "items": [
+    "Award recipient, recognized for excellence in service",
+    "Locally owned and operated"
+   ]
+  },
+  {
+   "heading": "Hours",
+   "items": [
+    "Monday to Friday: 7:00 AM to 9:00 PM",
+    "Saturday: 7:00 AM to 7:00 PM",
+    "Sunday: closed",
+    "Emergency services available outside these hours"
+   ]
+  },
+  {
+   "heading": "Booking",
+   "text": "Call (281) 908-4602, email admin@justintimeaircondition.com, or fill out the form on the site."
+  }
+ ]
+}
