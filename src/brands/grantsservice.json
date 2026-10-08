@@ -1,0 +1,242 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Grant's Service Company LLC",
+  "shortName": "Grant's Service Company",
+  "summary": "Air conditioning, heating and commercial refrigeration service for Texas City and the surrounding areas.",
+  "phone": "(832) 551-3007",
+  "email": "office@grantsservicecompany.com",
+  "address": "1030 14th St N",
+  "town": "Texas City",
+  "state": "TX",
+  "zip": "77590",
+  "rating": 5.0,
+  "reviewCount": 54,
+  "hours": [
+    [
+      "Mon – Fri",
+      "7 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "8 AM – 4 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#003b5c",
+    "primaryDeep": "#002740",
+    "accent": "#ff6a13",
+    "ink": "#0c1c26",
+    "muted": "#4d6675",
+    "surface": "#eef4f8",
+    "line": "#d5e2ea",
+    "heading": "'Lora', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Source+Sans+3:wght@400;500;600&display=swap",
+    "logo": "/brands/grantsservice/logo.webp",
+    "logoWidth": 180
+  },
+  "licenses": [
+    {
+      "label": "TDLR HVAC",
+      "number": "TACLA 132807C"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Air conditioning, heating and commercial refrigeration in Texas City",
+    "title": "Where service",
+    "titleAccent": "still matters.",
+    "lead": "We believe in empowering homeowners through education, not pressure. With modern tools and full transparency, we keep you informed every step of the way, so you feel confident, supported and in control of your home's comfort decisions.",
+    "image": "/brands/grantsservice/hero",
+    "imageAlt": "An outdoor air conditioning condenser beside a building"
+  },
+  "groups": [
+    {
+      "slug": "air-conditioning",
+      "title": "Air Conditioning",
+      "icon": "snowflake",
+      "summary": "Installation, routine maintenance and reliable repairs for all types of air conditioning systems.",
+      "intro": "We provide professional installation, routine maintenance and reliable repairs for all types of air conditioning systems. We also offer energy-efficient solutions to help lower your cooling costs, and we are committed to keeping your home cool and comfortable all summer long.",
+      "image": "/brands/grantsservice/cooling",
+      "imageAlt": "A row of air conditioning units outside a building",
+      "services": [
+        {
+          "slug": "ac-repair",
+          "title": "AC Repair",
+          "icon": "wrench",
+          "text": "Reliable repairs for all types of air conditioning systems. Whether you need a new system, regular upkeep or a quick repair, our experienced technicians are ready to help.",
+          "points": [
+            "Modern tools and clear communication",
+            "You are kept informed at every step"
+          ]
+        },
+        {
+          "slug": "ac-installation",
+          "title": "AC Installation",
+          "icon": "air-vent",
+          "text": "Professional installation of all types of air conditioning systems, including energy-efficient options that help lower your cooling costs.",
+          "points": [
+            "Energy-efficient systems available"
+          ]
+        },
+        {
+          "slug": "ac-maintenance",
+          "title": "AC Maintenance",
+          "icon": "gauge",
+          "text": "Routine maintenance that helps prevent costly breakdowns and keeps your home cool and comfortable all summer long."
+        }
+      ]
+    },
+    {
+      "slug": "heating",
+      "title": "Heating",
+      "icon": "flame",
+      "summary": "Installation, routine maintenance and reliable repairs for all types of heating systems.",
+      "intro": "We provide professional installation, routine maintenance and reliable repairs for all types of heating systems. We also offer energy-efficient solutions to help lower your heating costs, and we are committed to keeping your home warm and comfortable all winter long.",
+      "image": "/brands/grantsservice/heating",
+      "imageAlt": "A heat pump unit standing outside a house",
+      "services": [
+        {
+          "slug": "heating-repair",
+          "title": "Heating Repair",
+          "icon": "flame",
+          "text": "Reliable repairs for all types of heating systems. Whether you need a new system, regular upkeep or a quick repair, our experienced technicians are ready to help.",
+          "points": [
+            "Modern tools and clear communication",
+            "You are kept informed at every step"
+          ]
+        },
+        {
+          "slug": "heating-installation",
+          "title": "Heating Installation",
+          "icon": "heater",
+          "text": "Professional installation of all types of heating systems, including energy-efficient options that help lower your heating costs.",
+          "points": [
+            "Energy-efficient systems available"
+          ]
+        },
+        {
+          "slug": "heating-maintenance",
+          "title": "Heating Maintenance",
+          "icon": "gauge",
+          "text": "Routine maintenance that helps prevent costly breakdowns and keeps your home warm and comfortable all winter long."
+        }
+      ]
+    },
+    {
+      "slug": "refrigeration",
+      "title": "Refrigeration",
+      "icon": "thermometer",
+      "summary": "Installation, maintenance and repairs for select commercial refrigeration equipment.",
+      "intro": "We provide reliable installation, maintenance and repairs for select commercial refrigeration equipment. We are dedicated to helping keep your business running smoothly and your products safe, whether you need a new unit, emergency service or routine upkeep.",
+      "image": "/brands/grantsservice/refrigeration",
+      "imageAlt": "Stainless steel refrigeration units in a commercial kitchen",
+      "services": [
+        {
+          "slug": "walk-in-coolers-and-freezers",
+          "title": "Walk-In Coolers and Freezers",
+          "icon": "snowflake",
+          "text": "Installation, maintenance and repairs for walk-in coolers and freezers, so your business keeps running smoothly and your products stay safe."
+        },
+        {
+          "slug": "reach-in-refrigerators",
+          "title": "Reach-In Refrigerators",
+          "icon": "building",
+          "text": "Installation, maintenance and repairs for reach-in refrigerators, whether you need a new unit or routine upkeep."
+        },
+        {
+          "slug": "ice-machines",
+          "title": "Ice Machines",
+          "icon": "droplets",
+          "text": "Installation, maintenance and repairs for commercial ice machines, handled by our experienced technicians."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Where service still matters.",
+    "text": [
+      "At Grant's Service Company we believe in empowering homeowners through education, not pressure. With modern tools and full transparency, we keep you informed every step of the way, so you feel confident, supported and in control of your home's comfort decisions.",
+      "We build lasting relationships by consistently doing what is right. \"Where Service Still Matters\" isn't just a slogan — it's how we do business every day.",
+      "We serve customers across the greater Houston area from Texas City, and we are licensed in Texas under TACLA 132807C."
+    ],
+    "image": "/brands/grantsservice/about",
+    "imageAlt": "A wall thermostat showing the set temperature"
+  },
+  "serviceArea": [
+    "Texas City",
+    "Alvin",
+    "Arcadia",
+    "Arcola",
+    "Bacliff",
+    "Bayou Vista",
+    "Baytown",
+    "Beach City",
+    "Bellaire",
+    "Brookside Village",
+    "Clear Lake City",
+    "Clear Lake Shores",
+    "Deer Park",
+    "Dickinson",
+    "El Lago",
+    "Fresno",
+    "Friendswood",
+    "Galveston",
+    "Hitchcock",
+    "Houston",
+    "Jamaica Beach",
+    "Kemah",
+    "La Marque",
+    "La Porte",
+    "League City",
+    "Manvel",
+    "Missouri City",
+    "Nassau Bay",
+    "Pasadena",
+    "Pearland",
+    "Richmond",
+    "Rosharon",
+    "San Leon",
+    "Santa Fe",
+    "Seabrook",
+    "Stafford",
+    "Sugar Land",
+    "Taylor Lake Village",
+    "Tiki Island",
+    "Webster"
+  ],
+  "facts": [
+    {
+      "heading": "Current Offers",
+      "items": [
+        "Unsure about a quote or diagnostic from another company",
+        "Find an existing issue",
+        "Help prevent costly breakdowns"
+      ]
+    },
+    {
+      "heading": "Booking an appointment",
+      "text": "Call or email to book an appointment: (832) 551-3007, office@grantsservicecompany.com. Appointments can also be booked online."
+    },
+    {
+      "heading": "From our blog",
+      "items": [
+        "How Does an Air Conditioner Work?",
+        "Does Your A/C Really Need Replacing?",
+        "What Is an Air Conditioning Maintenance Plan?",
+        "What Is Refrigerant?"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/people/Grants-Service-Company/61579093730558"
+      ]
+    }
+  ]
+}

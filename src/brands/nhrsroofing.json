@@ -1,0 +1,535 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "New Horizons Roofing Specialists",
+  "shortName": "NHRS Roofing",
+  "phone": "(281) 489-1717",
+  "email": "info@nhrsroofing.com",
+  "address": "2517 E Broadway St, Ste 103",
+  "town": "Pearland",
+  "state": "TX",
+  "zip": "77581",
+  "rating": 4.6,
+  "reviewCount": 56,
+  "license": "RCAT licensed, GAF certified and an Owens Corning Preferred Contractor",
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#002896",
+    "primaryDeep": "#001a63",
+    "accent": "#f2a71b",
+    "ink": "#17191d",
+    "surface": "#f2f4f8",
+    "heading": "'Archivo', 'Arial Narrow', sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap",
+    "logo": "/brands/nhrsroofing/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Houston roofing contractor",
+    "title": "Bring your roof",
+    "titleAccent": "back to life.",
+    "lead": "New roofs, re-roofing and repairs for Houston-area homes and businesses, from a family-owned contractor working out of Pearland. Every job starts with a free, no-obligation roof inspection and, if it is needed, a repair or replacement estimate.",
+    "image": "/brands/nhrsroofing/hero",
+    "imageAlt": "A large two-story Pearland home with a new roof and an NHRS Roofing yard sign at the curb"
+  },
+  "promises": [
+    "Free roof inspections",
+    "No-obligation estimates",
+    "Residential and commercial",
+    "Family owned and operated"
+  ],
+  "services": [
+    {
+      "slug": "new-roof-installation",
+      "group": "residential",
+      "title": "New Roof Installation",
+      "short": "Turnkey new roofs for homes, multi-family and whole developments.",
+      "text": "Turnkey new roof installs for single homes, multi-family housing units, office buildings and entire community developments.",
+      "image": "/brands/nhrsroofing/new-roof",
+      "imageAlt": "An aerial view of a brick Pearland home with a new gray shingle roof",
+      "body": [
+        "NHRS Roofing is a top Houston roofing contractor for new turnkey roof installs on single homes, multi-family housing units, office buildings and entire communities.",
+        "Our new turnkey roofing services cover single homes or entire community developments, and our roofing capabilities run from repairing a single roof to installing new roofs within a new community development."
+      ],
+      "points": [
+        "New roofs for homes and businesses",
+        "Multi-family housing units",
+        "Office buildings",
+        "Whole community developments",
+        "Free inspection and estimate before any work"
+      ]
+    },
+    {
+      "slug": "re-roofing",
+      "group": "residential",
+      "title": "Re-Roofing",
+      "short": "Re-roof your home or business, faster and more efficiently.",
+      "text": "We can re-roof your home or business faster and more efficiently than most Houston roofing contractors around.",
+      "image": "/brands/nhrsroofing/re-roofing",
+      "imageAlt": "A weathered shingle roof slope with worn and lifted shingles",
+      "body": [
+        "NHRS Roofing can re-roof your Houston home or business faster and more efficiently than other Houston-area roofing contractors, because of our quality and our commitment to excellence.",
+        "If it is time for a new roof on your Houston home or business, give us a call to discuss all of your options, or schedule a free roof inspection online."
+      ],
+      "points": [
+        "Residential re-roofing",
+        "Commercial re-roofing",
+        "Free inspection and estimate",
+        "Packaged discounts when more than one service is bought together"
+      ]
+    },
+    {
+      "slug": "roof-repair",
+      "group": "residential",
+      "title": "Roof Repair",
+      "short": "Leaks, old age and storm damage, repaired.",
+      "text": "Each year we repair many Houston roofs due to old age, deterioration, leaks, and damage from hail, wind, storms and hurricanes.",
+      "image": "/brands/nhrsroofing/repair",
+      "imageAlt": "A shingle roof with water staining along a wall where a leak had been running",
+      "body": [
+        "Each year, NHRS Roofing repairs scores of Houston roofs due to old age, deterioration, leaks, and damage from hail, wind, storms and hurricanes, just to name a few.",
+        "If your roof is leaking, we offer a free, no-obligation inspection and, if it is needed, a repair or replacement estimate for your Houston home or business."
+      ],
+      "points": [
+        "Leak repairs",
+        "Repairs for hail, wind and hurricane damage",
+        "Repairs to older and deteriorating roofs",
+        "Residential and commercial",
+        "Free inspection and estimate"
+      ],
+      "faqs": [
+        {
+          "q": "What does an inspection cost?",
+          "a": "Nothing. NHRS Roofing offers a free, no-obligation roof inspection, and if it is needed, a repair or replacement estimate."
+        },
+        {
+          "q": "Do you repair commercial roofs too?",
+          "a": "Yes. Our commercial roofing service line covers the same services as our residential line, with commercial office building and multi-family roofing added to it."
+        }
+      ]
+    },
+    {
+      "slug": "metal-roofing",
+      "group": "residential",
+      "title": "Metal Roofing",
+      "short": "Metal roofs for homes, businesses and industrial buildings.",
+      "text": "Metal roofing for residential, commercial and industrial properties across the Houston area, with lots of options to choose from.",
+      "image": "/brands/nhrsroofing/metal",
+      "imageAlt": "A light blue standing seam metal roof seen along its panels",
+      "body": [
+        "NHRS Roofing provides one of the leading metal roofing services in the Houston area, with lots of options to choose from.",
+        "We install metal roofing for residential, commercial and industrial purposes throughout the Houston area."
+      ],
+      "points": [
+        "Residential metal roofing",
+        "Commercial metal roofing",
+        "Industrial metal roofing",
+        "Lots of options to choose from"
+      ]
+    },
+    {
+      "slug": "roof-tear-offs",
+      "group": "residential",
+      "title": "Roof Tear-Offs",
+      "short": "From a single home to an industrial complex.",
+      "text": "Tear-offs of every size, from a small home roof to a large apartment or industrial complex, handled by our own team of specialists.",
+      "image": "/brands/nhrsroofing/tear-off",
+      "imageAlt": "A roof stripped back to bare decking during a tear-off",
+      "body": [
+        "From small home roof tear-offs to large-scale, industrial complex tear-offs, NHRS Roofing and its team of specialists can handle it.",
+        "We are a leader in roof tearoffs for residential homes and for commercial and industrial businesses and warehouses, small-scale and large-scale alike."
+      ],
+      "points": [
+        "Residential tear-offs",
+        "Commercial and industrial tear-offs",
+        "Apartment and multi-family complexes",
+        "Warehouses",
+        "Small and large-scale tear-offs"
+      ]
+    },
+    {
+      "slug": "fascia-and-soffit",
+      "group": "residential",
+      "title": "Fascia and Soffit",
+      "short": "Fascia and soffit for homes and businesses.",
+      "text": "Fascia and soffit work for homes and businesses, with many options to pick from.",
+      "image": "/brands/nhrsroofing/fascia-soffit",
+      "imageAlt": "White vented soffit and fascia under the edge of a metal roof",
+      "body": [
+        "We help Houston homeowners and businesses make their properties look amazing with fascia and soffit.",
+        "NHRS Roofing provides fascia and soffit services with many options for both residential and commercial purposes."
+      ],
+      "points": [
+        "Residential fascia and soffit",
+        "Commercial fascia and soffit",
+        "Many options to choose from"
+      ]
+    },
+    {
+      "slug": "gutters",
+      "group": "residential",
+      "title": "Gutters",
+      "short": "Gutter install, repair and replacement.",
+      "text": "Gutter install, repair and replacement for homes and businesses, because most roof damage starts with water.",
+      "image": "/brands/nhrsroofing/gutters",
+      "imageAlt": "A white gutter and downspout elbow running along a roof edge",
+      "body": [
+        "Most causes of roof damage involve water, and that is why the roofing contractors at NHRS Roofing also specialize in gutter install, repair and replacement services.",
+        "The best way to protect your home or business is to keep it dry. That is why NHRS Roofing is an expert in residential and commercial gutter install and repair services."
+      ],
+      "points": [
+        "Gutter installation",
+        "Gutter repair",
+        "Gutter replacement",
+        "Residential and commercial",
+        "Packaged discounts when more than one service is bought at the same time"
+      ]
+    },
+    {
+      "slug": "siding",
+      "group": "residential",
+      "title": "Siding",
+      "short": "Residential and commercial siding.",
+      "text": "High-quality, affordable residential and commercial siding that complements our painting and gutter work.",
+      "image": "/brands/nhrsroofing/siding",
+      "imageAlt": "Light gray lap siding on the side of a building",
+      "body": [
+        "NHRS Roofing offers many high-quality yet affordable residential and commercial siding services, to complement our professional painting and gutter services.",
+        "Our siding, painting and gutter work is aimed at complementing our primary line of roofing services, and we offer packaged discounts when more than one service is bought at the same time."
+      ],
+      "points": [
+        "Residential siding",
+        "Commercial siding",
+        "Packaged discounts when more than one service is bought at the same time"
+      ]
+    },
+    {
+      "slug": "painting",
+      "group": "residential",
+      "title": "Interior and Exterior Painting",
+      "short": "Professional interior and exterior painting.",
+      "text": "Interior and exterior painting and coating for Houston-area homes and businesses, with a wide choice of colors and coats.",
+      "image": "/brands/nhrsroofing/painting",
+      "imageAlt": "A cream stucco house wall with tall arched windows",
+      "body": [
+        "NHRS Roofing is also one of the leading professional interior and exterior painters in the Houston area, providing a wide option of paint colors and coats to choose from.",
+        "We provide many different types of professional painting services to choose from, including both interior and exterior painting options, aimed at complementing our primary line of roofing services."
+      ],
+      "points": [
+        "Interior painting",
+        "Exterior painting and coating",
+        "Residential and commercial",
+        "A wide option of paint colors and coats to choose from"
+      ]
+    },
+    {
+      "slug": "storm-and-hail-damage",
+      "group": "storm",
+      "title": "Storm and Hail Damage",
+      "short": "Hail, hurricane, tornado and wind damage.",
+      "text": "Roof damage from hail, hurricanes, tornadoes and wind, inspected free and repaired or replaced.",
+      "image": "/brands/nhrsroofing/storm",
+      "imageAlt": "A shingle roof slope with a dormer vent after a storm",
+      "body": [
+        "Has your home or business sustained roof damage due to hail, hurricane, tornado or wind? If so, we can help. As a top roofing contractor in Houston, we are able to provide a free inspection and estimate for repair or replacement.",
+        "We have repaired or replaced hundreds of roofs in the Houston area due to storm damage, hail and hurricanes."
+      ],
+      "points": [
+        "Hail damage",
+        "Hurricane damage",
+        "Tornado and wind damage",
+        "Free inspection and estimate",
+        "Repair or full replacement"
+      ],
+      "faqs": [
+        {
+          "q": "My roof is leaking right now. What do I do?",
+          "a": "Call 281-489-1717 or request a free roof inspection online, and an NHRS Roofing representative will be in contact with you shortly."
+        }
+      ]
+    },
+    {
+      "slug": "free-roof-inspection",
+      "group": "storm",
+      "title": "Free Roof Inspection",
+      "short": "A free, no-obligation inspection and estimate.",
+      "text": "A free, no-obligation roof inspection and, if it is needed, a repair or replacement estimate for your home or business.",
+      "image": "/brands/nhrsroofing/inspection",
+      "imageAlt": "The gables of a Pearland home roof against a blue sky",
+      "body": [
+        "NHRS Roofing offers a free, no-obligation roof inspection, and if needed, a repair or replacement estimate for your Houston home or business.",
+        "To get started, send us the property address and the estimated date of the last roof replacement, and a representative will be in contact with you shortly."
+      ],
+      "points": [
+        "Free and no obligation",
+        "Homes and businesses",
+        "Repair or replacement estimate",
+        "Urgent inspections when a roof is leaking"
+      ]
+    },
+    {
+      "slug": "commercial-roofing",
+      "group": "commercial",
+      "title": "Commercial Roofing",
+      "short": "Office buildings, multi-family and businesses of every size.",
+      "text": "Installs, re-roofing, repairs, metal roofing and tear-offs for Houston businesses, organizations and non-profits, including office buildings and multi-family housing.",
+      "image": "/brands/nhrsroofing/commercial",
+      "imageAlt": "An aerial view of a long low-slope shingle roof over a commercial building",
+      "body": [
+        "NHRS Roofing offers a full line of commercial roofing services and solutions for Houston-area businesses, organizations and non-profits. From a simple roof leak repair to a full tear-off or a new roof install on a multi-family development, our commercial department gives an extra level of attention and detail.",
+        "Over the past 25 years and more, NHRS Roofing has repaired or replaced hundreds of commercial roofs for businesses all over the Houston area. Our in-house commercial roofing professionals have gained the trust of Houston businesses from The Woodlands to Galveston, and from Katy to Beaumont. We know how to get the job done right the first time, on-budget and on-time.",
+        "We are a leader in the Houston area when it comes to roofing for commercial office buildings, and over the past 25 years and more we have completed scores of roofing projects for commercial multi-family housing units.",
+        "We are also one of the few roofing contractors in Houston that travel the entire state of Texas for larger-scale commercial roofing projects."
+      ],
+      "points": [
+        "Commercial roof installs",
+        "Commercial re-roofing",
+        "Commercial roof repair",
+        "Commercial metal roofing",
+        "Commercial tear-offs",
+        "Office buildings and multi-family units",
+        "Commercial fascia and soffit",
+        "Businesses, organizations and non-profits"
+      ],
+      "faqs": [
+        {
+          "q": "Do you travel outside Houston for commercial work?",
+          "a": "Yes. We are one of the few roofing contractors in Houston that travel the entire state of Texas for larger-scale commercial roofing projects."
+        }
+      ]
+    },
+    {
+      "slug": "roof-maintenance",
+      "group": "commercial",
+      "title": "Roof Maintenance",
+      "short": "A maintenance program for homes and businesses.",
+      "text": "A residential and commercial roof maintenance program aimed at reducing the overall cost of roof maintenance and improving how long a roof lasts.",
+      "image": "/brands/nhrsroofing/maintenance",
+      "imageAlt": "A close view of a new gray architectural shingle roof at a valley",
+      "body": [
+        "NHRS Roofing offers both residential and commercial roofing maintenance solutions aimed at reducing the overall cost of roof maintenance while improving roof longevity and its useful life over time.",
+        "An NHRS Roofing Commercial Roof Maintenance Plan reduces the overall cost of roof maintenance and improves the reliability of roof performance and longevity."
+      ],
+      "points": [
+        "Residential maintenance program",
+        "Commercial Roof Maintenance Plan",
+        "Lower overall maintenance cost",
+        "More reliable roof performance",
+        "Longer roof life"
+      ]
+    },
+    {
+      "slug": "energy-saving-solutions",
+      "group": "commercial",
+      "title": "Energy-Saving Solutions",
+      "short": "Solar-powered ventilation and other energy savings.",
+      "text": "Energy-saving solutions for homes and businesses, including solar-powered roof ventilation that cuts cooling costs.",
+      "image": "/brands/nhrsroofing/energy",
+      "imageAlt": "An aerial view over a patio and a new shingle roof section on a Pearland home",
+      "body": [
+        "We provide a variety of energy-saving solutions for Houston homeowners and businesses looking to reduce their power bill, add value to their property and reduce their carbon footprint.",
+        "That includes residential and commercial solar-powered roof ventilation, which reduces cooling costs significantly."
+      ],
+      "points": [
+        "Solar-powered roof ventilation",
+        "Residential and commercial",
+        "Lower cooling costs"
+      ]
+    },
+    {
+      "slug": "lighting-solutions",
+      "group": "commercial",
+      "title": "Lighting Solutions",
+      "short": "Skylights and other natural lighting.",
+      "text": "Lighting solutions for homes and businesses, including skylights that bring natural light into a space while reducing the power bill.",
+      "body": [
+        "NHRS Roofing offers intuitive lighting solutions for Houston homes and businesses that include, but are not limited to, skylights that bring natural light into your space while reducing your power bill.",
+        "On a commercial building, commercial skylights cut overall lighting costs while bringing in natural light."
+      ],
+      "points": [
+        "Residential skylights",
+        "Commercial skylights",
+        "Lower lighting costs"
+      ]
+    }
+  ],
+  "materials": {
+    "title": "Certified and affiliated",
+    "text": "NHRS Roofing is a member, affiliated and certified by professional organizations including the BBB, GAF and Owens Corning.",
+    "brands": [
+      "GAF Certified",
+      "Owens Corning Preferred Contractor",
+      "CertainTeed ShingleMaster",
+      "RCAT Licensed",
+      "BBB Accredited Business"
+    ]
+  },
+  "projects": [
+    {
+      "title": "New roof on a single-story brick home",
+      "town": "Houston",
+      "scope": "Roof replacement",
+      "service": "re-roofing",
+      "text": "A new architectural shingle roof over the whole house, with our sign still in the yard on the day it finished.",
+      "image": "/brands/nhrsroofing/project-sign",
+      "imageAlt": "A single-story brick Pearland home with a new shingle roof and an NHRS Roofing sign in the yard"
+    },
+    {
+      "title": "Dormered roof on a colonial-style home",
+      "town": "Houston",
+      "scope": "New roof installation",
+      "service": "new-roof-installation",
+      "text": "A new roof across the main slopes and three dormers, shingled to match the trim and the brick.",
+      "image": "/brands/nhrsroofing/project-dormers",
+      "imageAlt": "A colonial-style home with three dormers and a new gray shingle roof"
+    },
+    {
+      "title": "Brick home re-roofed to the garage",
+      "town": "Houston",
+      "scope": "Re-roofing",
+      "service": "re-roofing",
+      "text": "A full re-roof over the house and the attached garage, shingled through in one color.",
+      "image": "/brands/nhrsroofing/project-brick",
+      "imageAlt": "A brick home with a new shingle roof over the house and the two-car garage"
+    }
+  ],
+  "about": {
+    "title": "A Houston roofing contractor you can trust and rely on",
+    "text": [
+      "NHRS Roofing is one of the top-rated roofing contractors in the Houston area. If your Houston home or business needs a new roof or just a simple repair, look no further than New Horizons Roofing Specialists.",
+      "We are owned and operated by a local Houston family, and we put relationship building and customer service ahead of anything else. That is one of the reasons we hold an A+ rating with the BBB.",
+      "Over the past 25 years and more our line of roofing services has expanded across residential and commercial work, from new roof installs and repairs to large-scale tear-offs, metal roofing, and fascia and soffit. We have successfully completed thousands of residential and commercial roofing projects throughout the Houston area."
+    ],
+    "image": "/brands/nhrsroofing/crew",
+    "imageAlt": "An NHRS Roofing crew installing a new roof over exposed underlayment on a Houston home",
+    "values": [
+      {
+        "title": "Quality, Value and Service",
+        "text": "The three things we put first on every roof, residential or commercial."
+      },
+      {
+        "title": "Family Owned",
+        "text": "Owned and operated by a local Houston family, with relationships ahead of anything else."
+      },
+      {
+        "title": "In-House Crews",
+        "text": "Our own team of specialists, including an in-house commercial roofing department."
+      }
+    ]
+  },
+  "inspection": {
+    "title": "How a free roof inspection works",
+    "steps": [
+      {
+        "title": "Tell us about the property",
+        "text": "The address, and the estimated date of the last roof replacement if you know it."
+      },
+      {
+        "title": "We get in touch",
+        "text": "An NHRS Roofing representative will be in contact with you shortly to set a time."
+      },
+      {
+        "title": "You get the estimate",
+        "text": "The inspection is free and carries no obligation, and if work is needed we give you a repair or replacement estimate."
+      }
+    ]
+  },
+  "serviceArea": [
+    "Pearland",
+    "Houston",
+    "Friendswood",
+    "Manvel",
+    "Alvin",
+    "Rosharon",
+    "Missouri City",
+    "Sugar Land",
+    "Pasadena",
+    "League City",
+    "Clear Lake",
+    "Kemah",
+    "Baytown",
+    "Texas City",
+    "Galveston",
+    "Katy",
+    "Cypress",
+    "Spring",
+    "The Woodlands",
+    "Conroe",
+    "Tomball",
+    "Humble",
+    "Atascocita",
+    "Channelview",
+    "Richmond",
+    "Sealy",
+    "Brookshire",
+    "Waller",
+    "Bellaire",
+    "Lake Jackson",
+    "Angleton",
+    "Beaumont",
+    "College Station",
+    "Huntsville",
+    "Brenham"
+  ],
+  "areasText": "Our office is on East Broadway in Pearland, and we currently service homes and businesses located within a two hundred mile radius of downtown Houston. For larger-scale commercial projects we travel the entire state of Texas.",
+  "areasImage": "/brands/nhrsroofing/areas",
+  "areasImageAlt": "A brick Pearland home with a new gray shingle roof",
+  "contactImage": "/brands/nhrsroofing/contact",
+  "contactImageAlt": "A stucco home with a barrel tile roof over a round turret",
+  "facts": [
+    {
+      "heading": "Licensing and Certifications",
+      "items": [
+        "Licensed Roofing Contractor, Roofing Contractors Association of Texas (RCAT)",
+        "GAF Certified Weather Stopper Roofing Contractor",
+        "Owens Corning Preferred Contractor",
+        "CertainTeed ShingleMaster"
+      ]
+    },
+    {
+      "heading": "Memberships and Recognition",
+      "items": [
+        "BBB Accredited Business",
+        "A+ rating with the BBB"
+      ]
+    },
+    {
+      "heading": "Experience",
+      "items": [
+        "More than 25 years in business",
+        "Thousands of residential and commercial roofing projects completed in the Houston area",
+        "Owned and operated by a local Houston family"
+      ]
+    },
+    {
+      "heading": "How Far We Travel",
+      "text": "Homes and businesses within a two hundred mile radius of downtown Houston, which takes in Houston, Galveston, Beaumont, Sealy, College Station, Austin and San Antonio along with the surrounding areas, and the entire state of Texas for larger-scale commercial roofing projects."
+    },
+    {
+      "heading": "Free Inspections",
+      "text": "Every job starts with a free, no-obligation roof inspection and, if it is needed, a repair or replacement estimate."
+    },
+    {
+      "heading": "Emergency Roofing Help",
+      "text": "Free inspections are requested by phone or online for an urgent roof replacement, an inspection needed right away, a leaking roof, hail damage and hurricane damage."
+    },
+    {
+      "heading": "Packaged Discounts",
+      "text": "Packaged discounts are offered when more than one service, such as roofing with painting, siding or gutters, is bought at the same time."
+    }
+  ]
+}
