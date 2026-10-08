@@ -1,0 +1,763 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "insurance",
+  "name": "BIG - Brock Insurance Group",
+  "shortName": "BIG - Brock Insurance Group",
+  "tagline": "Go BIG, Save BIG!",
+  "phone": "(281) 482-4244",
+  "email": "service@brockinsurancegrp.com",
+  "address": "820 South Friendswood Drive, Suite 103",
+  "town": "Friendswood",
+  "state": "TX",
+  "zip": "77546",
+  "since": 2006,
+  "license": "Agent License - TX 761169. Agency License - TX 1407119.",
+  "rating": 4.9,
+  "reviewCount": 173,
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Request a Quote",
+    "text": "Start with your contact details, or share more about the coverage you need. Our team is here to help."
+  },
+  "brand": {
+    "primary": "#0a235b",
+    "primaryDeep": "#071840",
+    "accent": "#d7081c",
+    "ink": "#151c2b",
+    "muted": "#566071",
+    "surface": "#f5f7fb",
+    "cream": "#e9eef7",
+    "line": "#dde3ed",
+    "heading": "'Nunito', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/bigbrockinsurance/logo.webp",
+    "logoWidth": 190
+  },
+  "hero": {
+    "eyebrow": "Independent Texas agency in Friendswood and New Braunfels",
+    "title": "BIG protection. Insuring Texans since 2006.",
+    "lead": "Personal guidance for your home, your business, and everything you've worked for. More choices. Personal service.",
+    "image": "/brands/bigbrockinsurance/hero",
+    "imageAlt": "Two people reviewing paperwork at a laptop",
+    "points": [
+      "Access to 100+ A-rated carriers",
+      "Four generations of insurance experience",
+      "Offices in Friendswood and New Braunfels"
+    ]
+  },
+  "overview": {
+    "title": "Coverage for Texas families, businesses, farms and ranches.",
+    "text": "Pick a line of coverage to see what it includes, or call and talk it through with an agent."
+  },
+  "audiences": {
+    "individuals": "For Your Life",
+    "businesses": "For Your Business"
+  },
+  "services": [
+    {
+      "slug": "auto",
+      "title": "Auto Insurance",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Liability, comp and collision, SR-22.",
+      "text": "Coverage built around how you drive, what you drive, and who rides with you.",
+      "lead": "Coverage built around how you drive, what you drive, and who rides with you. We shop trusted carriers and explain your options in plain language.",
+      "image": "/brands/bigbrockinsurance/auto",
+      "imageAlt": "A car on an open road",
+      "covers": [
+        {
+          "title": "Liability coverage",
+          "text": "Injuries and damage you cause to others."
+        },
+        {
+          "title": "Comprehensive and collision",
+          "text": "Physical damage to your own vehicle."
+        },
+        {
+          "title": "Uninsured motorist",
+          "text": "Protection when the other driver has no coverage or not enough of it."
+        },
+        {
+          "title": "Roadside and rental options",
+          "text": "Roadside assistance and a rental car while yours is in the shop."
+        },
+        {
+          "title": "Cars, SUVs and high-value vehicles",
+          "text": "Everyday drivers, families, young drivers and high-value vehicles."
+        },
+        {
+          "title": "Medical payments and PIP",
+          "text": "Medical payments or personal injury protection, compared alongside the rest."
+        },
+        {
+          "title": "SR-22 needs",
+          "text": "Filings handled for drivers who need them."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Can I bundle my home and auto insurance?",
+          "a": "Yes. Bundling your home and auto insurance can save you money and simplify your coverage. Ask us about available discounts and how bundling can benefit you."
+        },
+        {
+          "q": "How quickly can I start coverage?",
+          "a": "Most quotes are same-day, and auto can often be bound the same day once we have your details."
+        }
+      ]
+    },
+    {
+      "slug": "home",
+      "title": "Home Insurance",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Dwelling, contents and liability.",
+      "text": "Protection for your home, belongings, and everyday liability exposures.",
+      "lead": "Protection for your home, belongings, and everyday liability exposures, with the Texas details - wind and hail deductibles, roof and construction credits, homestead considerations - explained before you sign.",
+      "image": "/brands/bigbrockinsurance/home",
+      "imageAlt": "A house at the end of a quiet residential street",
+      "covers": [
+        {
+          "title": "Dwelling coverage",
+          "text": "The structure itself, plus detached garages, fences and sheds."
+        },
+        {
+          "title": "Personal property",
+          "text": "What is inside the house, and loss of use while it is repaired."
+        },
+        {
+          "title": "Liability protection",
+          "text": "Injuries to guests and damage you are responsible for."
+        },
+        {
+          "title": "Water backup options",
+          "text": "An endorsement for backup through sewers and drains."
+        },
+        {
+          "title": "Home add-ons and endorsements",
+          "text": "Service line and equipment breakdown, ordinance or law, replacement cost."
+        },
+        {
+          "title": "Secondary, vacation and mobile homes",
+          "text": "Lake and beach homes, mountain cabins, and factory-built homes."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How do Texas hail and hurricane deductibles work?",
+          "a": "Home policies here often have a separate wind/hail or hurricane deductible, sometimes listed as a percentage of the dwelling limit. We'll explain how it applies to storms and help you choose a deductible that balances premium and out-of-pocket costs."
+        },
+        {
+          "q": "Can you review my existing Texas policies?",
+          "a": "Absolutely. We'll check for gaps, overlaps, and Texas-specific details such as wind/hail deductibles, roof and construction credits, homestead considerations, and common discounts. We'll then recommend clear options - often with savings."
+        }
+      ]
+    },
+    {
+      "slug": "condo-renters",
+      "title": "Condo & Renters Insurance",
+      "audience": "individuals",
+      "icon": "key",
+      "summary": "Unit owners, tenants and landlords.",
+      "text": "Coverage tailored to unit owners and association master policy gaps, and affordable protection for renters' possessions and personal liability.",
+      "lead": "Condo owners, renters and landlords each need something different from a homeowners policy. We write all three.",
+      "covers": [
+        {
+          "title": "Interior build-out",
+          "text": "The part of a condo the association master policy does not cover, plus loss assessment."
+        },
+        {
+          "title": "Personal property",
+          "text": "Possessions and theft coverage for tenants and unit owners."
+        },
+        {
+          "title": "Additional living expenses",
+          "text": "Somewhere to stay while the unit is uninhabitable."
+        },
+        {
+          "title": "Landlord and rental property",
+          "text": "Dwelling (DP forms), loss of rents, premises liability, resident-manager options and vacant property."
+        },
+        {
+          "title": "Short-term rental and home-sharing",
+          "text": "Commercial use endorsements, liability to guests and loss of income when hosting through Airbnb or VRBO."
+        }
+      ]
+    },
+    {
+      "slug": "flood",
+      "title": "Flood Insurance",
+      "audience": "individuals",
+      "icon": "waves",
+      "summary": "NFIP and private flood options.",
+      "text": "Protection from rising water not covered by standard home policies, quoted through both national programs and private markets.",
+      "lead": "Flood is not covered by homeowners insurance. In Texas, heavy rain and bayou or creek overflow can affect areas outside designated high-risk zones.",
+      "covers": [
+        {
+          "title": "NFIP policies",
+          "text": "Flood coverage through the national program."
+        },
+        {
+          "title": "Private flood options",
+          "text": "Private market alternatives, often at competitive rates."
+        },
+        {
+          "title": "Elevation-based rating",
+          "text": "How your property's elevation affects what you pay."
+        },
+        {
+          "title": "Contents and building",
+          "text": "The structure and what is inside it."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Do I need flood insurance in Texas, even if I'm not in a high-risk zone?",
+          "a": "Flood is not covered by homeowners insurance. In Texas, heavy rain and bayou or creek overflow can affect areas outside designated high-risk zones. We'll quote both NFIP and private flood options - many low-risk homes qualify for very affordable rates."
+        }
+      ]
+    },
+    {
+      "slug": "earthquake",
+      "title": "Earthquake & Earth Movement",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "Quakes, landslide and ground shift.",
+      "text": "Specialty coverage for quakes, landslide, and ground shift.",
+      "lead": "Specialty coverage for quakes, landslide and ground shift - one of the risks a standard policy does not always cover.",
+      "covers": [
+        {
+          "title": "Dwelling",
+          "text": "The structure of your home."
+        },
+        {
+          "title": "Personal property",
+          "text": "Belongings inside the home."
+        },
+        {
+          "title": "Loss of use",
+          "text": "Temporary living expenses after a covered claim."
+        },
+        {
+          "title": "Deductible options",
+          "text": "Deductible choices, and how they affect pricing and protection."
+        }
+      ]
+    },
+    {
+      "slug": "wind-hail",
+      "title": "Wind & Hail Coverage",
+      "audience": "individuals",
+      "icon": "shield-check",
+      "summary": "Coastal wind and named-storm cover.",
+      "text": "Solutions for properties in hurricane or high-wind zones, including wind-only policies where a carrier will not include it.",
+      "lead": "Many coastal properties require a separate wind and hail policy. We'll verify your address and present options that meet lender requirements and reflect your home's distance from the coast and roof type.",
+      "covers": [
+        {
+          "title": "Named-storm deductibles",
+          "text": "How the hurricane deductible applies and what it costs you."
+        },
+        {
+          "title": "Wind-only policies",
+          "text": "Standalone wind and hail cover for coastal addresses."
+        },
+        {
+          "title": "Roof loss settlement",
+          "text": "How the policy settles a roof claim."
+        },
+        {
+          "title": "Compliance aid",
+          "text": "Meeting lender requirements for coastal property."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Do I need separate windstorm insurance on the Texas Gulf Coast?",
+          "a": "Many coastal properties require a separate wind/hail policy. We'll verify your address and present options that meet lender requirements and reflect your home's distance from the coast and roof type."
+        }
+      ]
+    },
+    {
+      "slug": "umbrella",
+      "title": "Personal Umbrella",
+      "audience": "individuals",
+      "icon": "umbrella",
+      "summary": "Extra liability above home and auto.",
+      "text": "Extra liability limits that sit above home, auto, and recreational policies.",
+      "lead": "An umbrella picks up where your home, auto and recreational policies stop, which matters most when there are teen drivers in the household.",
+      "covers": [
+        {
+          "title": "Higher per-occurrence limits",
+          "text": "Liability limits above what the underlying policies carry."
+        },
+        {
+          "title": "Defense costs",
+          "text": "Legal defense costs."
+        },
+        {
+          "title": "Uninsured exposures",
+          "text": "Gaps the underlying policies do not reach."
+        },
+        {
+          "title": "Teen drivers",
+          "text": "The exposure that most often drives a household to buy one."
+        }
+      ]
+    },
+    {
+      "slug": "life",
+      "title": "Life Insurance",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Term, whole life and final expense.",
+      "text": "Flexible options that help protect income, debt obligations, and long-term family plans.",
+      "lead": "Flexible options that help protect income, debt obligations, and long-term family plans, explained in plain language with no pressure to buy more than you need. We also review a policy you already have - coverage, beneficiaries, riders and gaps - including cover through an employer.",
+      "image": "/brands/bigbrockinsurance/life",
+      "imageAlt": "A family walking together outdoors",
+      "covers": [
+        {
+          "title": "Term life",
+          "text": "Coverage for a set number of years."
+        },
+        {
+          "title": "Whole life",
+          "text": "Permanent coverage, with options that may build cash value over time."
+        },
+        {
+          "title": "Final expense",
+          "text": "Smaller policies for end-of-life costs."
+        },
+        {
+          "title": "Mortgage protection",
+          "text": "Coverage sized to what is left on the house."
+        },
+        {
+          "title": "Universal life",
+          "text": "A further permanent option we can help you review."
+        },
+        {
+          "title": "Key person and buy-sell",
+          "text": "Life insurance used in business planning."
+        }
+      ]
+    },
+    {
+      "slug": "recreational",
+      "title": "Recreational & Specialty",
+      "audience": "individuals",
+      "icon": "anchor",
+      "summary": "Boats, RVs, motorcycles and off-road.",
+      "text": "Solutions for the vehicles, homes, and hobbies that need something beyond a standard policy.",
+      "lead": "Solutions for the vehicles, homes, and hobbies that need something beyond a standard policy - on the water, on the trail and in the garage.",
+      "image": "/brands/bigbrockinsurance/recreational",
+      "imageAlt": "An ATV rider on a dirt trail",
+      "covers": [
+        {
+          "title": "Boat and personal watercraft",
+          "text": "Runabouts, pontoons, sailboats and jet skis, with towing and on-water assistance."
+        },
+        {
+          "title": "RV and travel trailer",
+          "text": "Motorhomes and towables, with personal effects, vacation liability and full-timer options."
+        },
+        {
+          "title": "Motorcycle and scooter",
+          "text": "Liability and comp/collision, custom parts, safety apparel and roadside assistance."
+        },
+        {
+          "title": "Off-road and powersports",
+          "text": "ATVs, UTVs, dirt bikes, snowmobiles, side-by-sides and dune buggies."
+        },
+        {
+          "title": "Classic and collector cars",
+          "text": "Agreed-value protection for show cars, antiques, replica builds and spare parts."
+        },
+        {
+          "title": "Personal articles and jewelry",
+          "text": "Scheduled coverage for jewelry, watches, fine art, collectibles, cameras, instruments and sports equipment."
+        }
+      ]
+    },
+    {
+      "slug": "general-liability",
+      "title": "General Liability",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Liability cover for Texas businesses.",
+      "text": "Practical protection for your property, people, and day-to-day operations, shopped across top carriers.",
+      "lead": "As an independent local agency, we shop top carriers and align the right solutions - general liability, property, workers' comp, commercial auto, cyber, and more - for contractors, manufacturers, tech, retail, healthcare, and beyond.",
+      "image": "/brands/bigbrockinsurance/business",
+      "imageAlt": "A small business owner at work",
+      "questions": [
+        {
+          "q": "Do you work with both Texas families and businesses?",
+          "a": "Yes. We protect Texas families with home, auto, life, renters, and umbrella policies - and we insure Texas businesses of many sizes, including contractors, retailers, restaurants, professional offices, and more."
+        }
+      ]
+    },
+    {
+      "slug": "commercial-property",
+      "title": "Commercial Property",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Buildings, equipment and inventory.",
+      "text": "Property cover for the building, the equipment and the stock your business runs on.",
+      "lead": "We write commercial property alongside liability for manufacturers, fabricators, wholesalers, distributors and real estate owners, and for the landlords and managers of the buildings they occupy.",
+      "image": "/brands/bigbrockinsurance/workers-comp",
+      "imageAlt": "A contractor reviewing plans at a workbench"
+    },
+    {
+      "slug": "workers-compensation",
+      "title": "Workers' Compensation",
+      "audience": "businesses",
+      "icon": "hard-hat",
+      "summary": "Cover for employees hurt on the job.",
+      "text": "Workers' comp placed alongside your general liability and property, so the coverages line up rather than leaving gaps.",
+      "lead": "Workers' comp placed alongside your general liability and property, written for contractors and skilled trades, manufacturers, restaurants, transportation operators and the other Texas businesses we insure."
+    },
+    {
+      "slug": "commercial-auto",
+      "title": "Commercial Auto",
+      "audience": "businesses",
+      "icon": "truck",
+      "summary": "Fleet, cargo and brokerage cover.",
+      "text": "Fleet, cargo, and brokerage protection for moving goods safely and on time.",
+      "lead": "Fleet, cargo, and brokerage protection for local and long-haul trucking, last-mile delivery, couriers and freight brokers, and for garage and repair shops with customers' vehicles in their care."
+    },
+    {
+      "slug": "cyber",
+      "title": "Cyber Insurance",
+      "audience": "businesses",
+      "icon": "shield-check",
+      "summary": "Cyber and tech E&O cover.",
+      "text": "Cyber and tech E&O coverage for software and IT-driven businesses, and personal cyber and ID theft cover for households.",
+      "lead": "Cyber and tech E&O coverage for SaaS companies, IT services and MSPs, tech startups, and data centers and hosting providers. We also write personal cyber and ID theft cover.",
+      "covers": [
+        {
+          "title": "Identity restoration",
+          "text": "Help putting an identity back together after fraud."
+        },
+        {
+          "title": "Cyber extortion response",
+          "text": "Response cover when a business or household is held to ransom."
+        },
+        {
+          "title": "Data breach costs",
+          "text": "The cost of handling a breach."
+        },
+        {
+          "title": "Online liability",
+          "text": "Cyberstalking and digital-life liabilities."
+        }
+      ]
+    },
+    {
+      "slug": "professional-liability",
+      "title": "Professional Liability",
+      "audience": "businesses",
+      "icon": "scale",
+      "summary": "Cover for licensed experts and advisers.",
+      "text": "Business and professional liability for licensed experts and advisory firms.",
+      "lead": "Business and professional liability for licensed experts and advisory firms, and professional liability and malpractice for medical and allied health practices.",
+      "covers": [
+        {
+          "title": "Consultants",
+          "text": "Advisory firms and independent consultants."
+        },
+        {
+          "title": "Accountants and bookkeepers",
+          "text": "Professional liability for finance practices."
+        },
+        {
+          "title": "Law firms",
+          "text": "Cover for legal practices."
+        },
+        {
+          "title": "Architects and engineers",
+          "text": "Design and engineering professional liability."
+        },
+        {
+          "title": "Healthcare liability and malpractice",
+          "text": "Medical and dental practices, clinics and urgent care, allied health professionals and ambulatory surgery centers."
+        }
+      ]
+    },
+    {
+      "slug": "farm-ranch",
+      "title": "Farm & Ranch",
+      "audience": "businesses",
+      "icon": "factory",
+      "summary": "Home, livestock, buildings and equipment.",
+      "text": "Farm and ranch coverage for your home, livestock, buildings, and equipment.",
+      "lead": "Protect your operation - home, barns, livestock, equipment, and liability - with coverage built for Texas farms and ranches.",
+      "image": "/brands/bigbrockinsurance/farm-ranch",
+      "imageAlt": "A combine harvester working in a field"
+    }
+  ],
+  "process": {
+    "title": "How we work",
+    "text": "Our office includes a state-of-the-art computer system for policy services and a comparative rating service, so our agents can get rates quickly and compare each policy's coverage across all our carriers.",
+    "steps": [
+      {
+        "title": "Share your details",
+        "text": "Call the office, fill in the online form or come in. We gather some basic information to work from."
+      },
+      {
+        "title": "We compare the carriers",
+        "text": "Your details go to the carriers that fit, and we compare coverage and price across more than 100 of them."
+      },
+      {
+        "title": "Options in plain language",
+        "text": "You see what each option covers and what it costs, with the Texas details explained."
+      },
+      {
+        "title": "We stay your agent",
+        "text": "Policy changes, renewals and claims come back to the same office, with proactive reviews year after year."
+      }
+    ]
+  },
+  "affiliations": {
+    "title": "Some of Our Carriers",
+    "items": [
+      "Progressive",
+      "Foremost",
+      "CNA",
+      "Homeowners of America",
+      "Hiscox",
+      "Geico",
+      "The Hartford",
+      "Nationwide",
+      "Tapco",
+      "American Modern",
+      "Liberty Mutual",
+      "Travelers",
+      "SageSure",
+      "USLI",
+      "National General"
+    ]
+  },
+  "about": {
+    "title": "Your trusted insurance partner.",
+    "text": [
+      "BIG - Brock Insurance Group was founded on a simple belief: people deserve clarity, care, and real advocacy when it comes to protecting what matters most.",
+      "From day one, we set out to be a neighbor first and an agency second - growing through trust, referrals, and the outcomes we deliver for Texas families and businesses. We have become a trusted partner in Texas.",
+      "As a Texas independent agency, we represent several leading insurance companies rather than any single provider. That gives us the ability to continually monitor the marketplace and offer you the best possible rates. Our mission is to provide you the highest level of customer service and dedicate our resources to meet your needs and earn your trust.",
+      "With four generations of Texas experience, we protect what matters most with integrity, proactive risk advice, and responsive claims support, so you can move forward with confidence.",
+      "Our Agency has helped thousands of Texas clients find the lowest rates available and the best insurance plans to protect their cars, homes, businesses, and families for decades. We serve clients all over Texas with offices in Friendswood and New Braunfels."
+    ],
+    "image": "/brands/bigbrockinsurance/about",
+    "imageAlt": "A family preparing a meal together",
+    "values": [
+      {
+        "title": "Client Commitment",
+        "text": "We put our clients first, ensuring that every policy is tailored to fit their needs. Our approach is centered around delivering exceptional service and value, with a focus on long-term relationships."
+      },
+      {
+        "title": "Security-First Mindset",
+        "text": "We protect what you've earned before we pursue new growth, ensuring you never build on shaky ground."
+      },
+      {
+        "title": "Expertise in the Texas Market",
+        "text": "With deep roots in Texas, we know the unique challenges and opportunities that the state presents. Our team leverages local knowledge to offer the most relevant insurance solutions."
+      },
+      {
+        "title": "Fourth Generation Experience Since 1992",
+        "text": "Serving Texas families and businesses across generations with seasoned guidance, local advocacy, and proven results since 1992."
+      },
+      {
+        "title": "Over 100 Carriers - Best Rate for You",
+        "text": "We compare 100+ trusted carriers to tailor coverage and value - so you don't have to shop around."
+      },
+      {
+        "title": "Technology Focus and Leverage",
+        "text": "Fast quotes, secure digital service, and proactive reviews - technology that elevates your client experience."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Mark Brock",
+      "role": "Founder",
+      "bio": "A 4th generation agent with over 30 years of experience in the insurance industry, who has dedicated his career to helping families and businesses in Texas overcome their insurance challenges with solutions that offer both security and savings.",
+      "image": "/brands/bigbrockinsurance/team-1",
+      "imageAlt": "Mark Brock"
+    },
+    {
+      "name": "Jessica Engesveen",
+      "role": "Commercial Lines Account Manager",
+      "bio": "Over 18 years in the insurance industry, with a strong focus on commercial accounts and client service. Specialises in commercial property and casualty, with experience in personal lines and recreational.",
+      "image": "/brands/bigbrockinsurance/team-2",
+      "imageAlt": "Jessica Engesveen"
+    },
+    {
+      "name": "Elvie Reformina",
+      "role": "Commercial Lines - Virtual Assistant",
+      "bio": "Four years and seven months in real estate insurance. Quotes auto, homeowners and flood coverage on personal lines, and supports commercial lines clients with documentation and email assistance.",
+      "image": "/brands/bigbrockinsurance/team-3",
+      "imageAlt": "Elvie Reformina"
+    },
+    {
+      "name": "Ruth A Saenz",
+      "role": "Personal Lines Account Manager",
+      "bio": "Twenty-four years in insurance, specialising in auto, home, renters, windstorm, flood and umbrella coverage. Houston born and raised in Pearland.",
+      "image": "/brands/bigbrockinsurance/team-4",
+      "imageAlt": "Ruth A Saenz"
+    },
+    {
+      "name": "Brenda Ann Guerra",
+      "role": "Servicing all customers policy needs",
+      "bio": "Twenty-eight years in insurance, specialising in auto, renters, umbrella, recreational and home, and focused on helping clients save money while keeping the right protection on their most valuable investments.",
+      "image": "/brands/bigbrockinsurance/team-5",
+      "imageAlt": "Brenda Ann Guerra"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What types of insurance do you offer in Texas?",
+      "a": "We offer a full lineup for Texans: home, condo, renters, auto, motorcycle, life, umbrella, and a wide range of business policies. We also handle Texas-specific needs like coastal wind/hail, farm & ranch, and flood insurance through both private markets and national programs."
+    },
+    {
+      "q": "What makes your agency different in Texas?",
+      "a": "We're independent, local, and Texas-focused. That means honest guidance, personal service, and access to many A-rated carriers that know the Texas market - from hail and hurricane exposure to rural and coastal needs - so we can tailor coverage that truly fits your life or business."
+    },
+    {
+      "q": "How quickly can I get a Texas quote or start coverage?",
+      "a": "Most quotes are same-day, and many policies can start within 24 hours once we have your details. Auto can often be bound the same day, while homes may require quick underwriting checks (and, in some areas, an exterior inspection). We'll guide you each step."
+    },
+    {
+      "q": "Can I switch my insurance to you from another Texas provider?",
+      "a": "Yes. We'll compare your current coverages, time the start date to avoid any lapse, and handle the transition and any necessary cancellations for a smooth switch."
+    },
+    {
+      "q": "Do you offer virtual or in-person appointments in Texas?",
+      "a": "Yes. We meet by phone or video anywhere in Texas, and we're happy to meet in person locally by appointment."
+    },
+    {
+      "q": "How do I get a quote?",
+      "a": "You can request a quote by calling our office, filling out our online form, or visiting us in person. We'll gather some basic information and provide you with a personalized quote - often in just a few minutes."
+    },
+    {
+      "q": "What information do I need to get started?",
+      "a": "For a quote, you'll typically need basic details like your address, type of property or vehicle, current coverage (if any), and information about household members or drivers. We'll walk you through everything needed."
+    },
+    {
+      "q": "What should I do after an accident or claim situation?",
+      "a": "Your safety comes first. Make sure everyone is safe, then contact emergency services if needed. As soon as possible, contact our agency so we can guide you through the claims process and help you every step of the way."
+    },
+    {
+      "q": "How do I make changes to my policy?",
+      "a": "You can call or email our office to request changes, such as updating drivers, vehicles, or coverage amounts. We make policy changes quick and easy."
+    },
+    {
+      "q": "How can I lower my insurance premiums?",
+      "a": "There are several ways to lower your premiums, such as bundling policies, increasing your deductible, maintaining a good driving record, installing safety devices, and qualifying for loyalty or claims-free discounts. We'll review your options with you."
+    },
+    {
+      "q": "Do you offer coverage for rental properties or vacation homes?",
+      "a": "Absolutely. We offer landlord insurance for rental properties and specialized coverage for vacation or secondary homes. Let us know your situation and we'll find the right policy for you."
+    },
+    {
+      "q": "Why should I use a local insurance agency?",
+      "a": "A local agency offers personal service, expert advice, and a relationship you can count on. We're here to answer your questions, advocate for you, and support you when you need us most."
+    }
+  ],
+  "serviceArea": [
+    "Friendswood",
+    "New Braunfels"
+  ],
+  "facts": [
+    {
+      "heading": "Our Locations",
+      "items": [
+        "Friendswood Office - 820 South Friendswood Drive, Suite 103, Friendswood, TX 77546. (281) 482-4244",
+        "New Braunfels Office - 468 S Seguin Ave, Ste 402, New Braunfels, TX 78130. (830) 631-8110",
+        "We serve clients all over Texas from both offices."
+      ]
+    },
+    {
+      "heading": "Licensing",
+      "items": [
+        "Agent License - TX 761169",
+        "Agency License - TX 1407119"
+      ]
+    },
+    {
+      "heading": "Industries we insure",
+      "items": [
+        "Professional services and advisers",
+        "Contractors and skilled trades",
+        "Developers and builders",
+        "Real estate owners and managers",
+        "Wholesale, importers and distributors",
+        "Manufacturing and fabrication",
+        "Transportation and logistics",
+        "Auto dealers, franchise and independent",
+        "Garage and repair shops",
+        "Retail and e-commerce",
+        "Restaurants and food service",
+        "Healthcare and allied health",
+        "Education and childcare",
+        "Technology firms and startups",
+        "Nonprofits and community groups"
+      ]
+    },
+    {
+      "heading": "Working with us",
+      "text": "We're an independent Texas agency, so we represent several leading insurance companies rather than any single provider. Complimentary policy reviews are open to clients and to anyone just seeking guidance, and a free consultation is there for anyone who wants to talk coverage through first."
+    },
+    {
+      "heading": "Work with us",
+      "text": "Our culture is built on trust, open communication, and a shared commitment to helping one another - and our clients - thrive. We're seeking team members who are proactive, compassionate, and ready to make a difference. Whether you're just starting your career or looking to take it to the next level, our careers page takes a preliminary application."
+    },
+    {
+      "heading": "Ways we look for savings",
+      "items": [
+        "Bundling home and auto",
+        "Safe-driver and paid-in-full discounts",
+        "Protective device and home security credits",
+        "Loyalty and claims-free discounts",
+        "A higher deductible where it makes sense"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook",
+        "Instagram",
+        "LinkedIn",
+        "YouTube"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "title": "FEMA Flood Map Service Center",
+      "text": "Look up the flood zone for any Texas address before you buy or renew.",
+      "href": "https://msc.fema.gov/portal/home"
+    },
+    {
+      "title": "Texas Department of Insurance",
+      "text": "Consumer guides, agent licence lookups and complaint help.",
+      "href": "https://www.tdi.texas.gov"
+    },
+    {
+      "title": "Texas Windstorm Insurance Association",
+      "text": "Wind and hail coverage for coastal properties.",
+      "href": "https://www.twia.org"
+    }
+  ]
+}
