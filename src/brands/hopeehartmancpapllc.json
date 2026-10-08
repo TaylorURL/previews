@@ -1,0 +1,260 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Hope E Hartman, CPA PLLC",
+  "shortName": "Hope E. Hartman, CPA",
+  "tagline": "Certified public accountant serving Crosby, Huffman, Humble and Atascocita",
+  "phone": "(281) 324-8702",
+  "email": "admin@hopehartmancpa.com",
+  "address": "20111 FM 2100 Rd, Suite 102",
+  "town": "Crosby",
+  "state": "TX",
+  "zip": "77532",
+  "rating": 4.2,
+  "reviewCount": 5,
+  "hours": [
+    ["Mon – Fri", "9 AM – 5 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Tell us what you need and we will get back to you. We pride ourselves in returning calls and emails promptly."
+  },
+  "brand": {
+    "primary": "#395288",
+    "primaryDeep": "#25375c",
+    "accent": "#8c6b3c",
+    "ink": "#1b2333",
+    "muted": "#5b6577",
+    "surface": "#f6f6f3",
+    "cream": "#ebeaf1",
+    "line": "#dedfe6",
+    "heading": "'Libre Baskerville', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/hopeehartmancpapllc/logo.webp",
+    "logoWidth": 220
+  },
+  "hero": {
+    "eyebrow": "CPA office in Crosby, Texas",
+    "title": "Your success is our success.",
+    "lead": "A certified public accountant office on FM 2100 in Crosby, handling tax, bookkeeping, payroll and advisory work for individuals and businesses across Crosby, Huffman, Humble and Atascocita.",
+    "image": "/brands/hopeehartmancpapllc/hero",
+    "imageAlt": "Financial charts, a notebook and a calculator on an office desk",
+    "points": [
+      "Helping the community one client at a time",
+      "Over 17 years of accounting experience",
+      "QuickBooks ProAdvisor"
+    ]
+  },
+  "overview": {
+    "title": "Areas of practice.",
+    "text": "Pick an area to see what it covers, or call the office and talk it through with our team. Please contact us if you do not see what you are looking for and we will see if we can accommodate you."
+  },
+  "audiences": { "individuals": "Individuals", "businesses": "Businesses" },
+  "services": [
+    {
+      "slug": "tax",
+      "title": "Tax",
+      "audience": "individuals",
+      "icon": "receipt",
+      "summary": "Individual, business, estate and non-profit returns.",
+      "text": "Individual, business, estate and non-profit returns, IRS notices, and payroll and state reporting.",
+      "lead": "We prepare returns for individuals, businesses, estates and non-profits, and we handle the notices and the state and payroll reporting that come with them.",
+      "image": "/brands/hopeehartmancpapllc/tax",
+      "imageAlt": "IRS tax forms, a pen and a calculator laid out on a desk",
+      "covers": [
+        { "title": "Individual returns", "text": "Personal returns prepared and filed for households in Crosby, Huffman, Humble and Atascocita." },
+        { "title": "Business returns", "text": "Returns for businesses, prepared alongside the books and the payroll reporting when you need both." },
+        { "title": "Estate returns", "text": "Estate returns prepared as part of the office's tax practice." },
+        { "title": "Non-profit returns", "text": "Returns for non-profit organizations." },
+        { "title": "IRS notices", "text": "Help reading and answering a notice from the IRS." },
+        { "title": "Payroll and state reporting", "text": "Payroll reporting and state reporting filed with the returns." }
+      ],
+      "questions": [
+        { "q": "Can I send my tax documents in without coming by?", "a": "Yes. The office uses Intuit Link, and there is an upload link on our site for current clients." },
+        { "q": "I do not see what I need listed.", "a": "Please contact us if you do not see what you are looking for and we will see if we can accommodate you." }
+      ]
+    },
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping",
+      "audience": "businesses",
+      "icon": "book",
+      "summary": "Outsourced bookkeeping, whatever software you use.",
+      "text": "No matter what software you use, we can help. Sometimes it is easier and more efficient to outsource your accounting needs.",
+      "lead": "No matter what software you use, we can help. Sometimes it is easier and more efficient to outsource your accounting needs. With over 17 years of experience, whatever your needs, we can meet them.",
+      "covers": [
+        { "title": "Any software", "text": "We work in whatever package your books already sit in rather than asking you to move." },
+        { "title": "Outsourced accounting", "text": "The day-to-day bookkeeping handled here when it is easier and more efficient than keeping it in house." },
+        { "title": "QuickBooks", "text": "Hope has 19 plus years using QuickBooks and is listed with QuickBooks as a ProAdvisor." }
+      ]
+    },
+    {
+      "slug": "payroll",
+      "title": "Payroll",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Prepared and reported in multiple states.",
+      "text": "We can help you prepare and report payroll in multiple states. Call us for your specific needs.",
+      "lead": "We can help you prepare and report payroll in multiple states. Call us for your specific needs.",
+      "covers": [
+        { "title": "Payroll preparation", "text": "Payroll prepared for the pay periods your business runs." },
+        { "title": "Multi-state reporting", "text": "Reporting filed in more than one state when your people work across state lines." }
+      ]
+    },
+    {
+      "slug": "advisory",
+      "title": "Advisory",
+      "audience": "businesses",
+      "icon": "handshake",
+      "summary": "A call or a click away in business hours.",
+      "text": "Always just a click or a call away during business hours. We pride ourselves in returning calls and emails promptly.",
+      "lead": "Always just a click or a call away during business hours. We pride ourselves in returning calls and emails promptly.",
+      "covers": [
+        { "title": "Questions as they come up", "text": "A call or an email during business hours rather than waiting for year end." },
+        { "title": "Prompt replies", "text": "We pride ourselves in returning calls and emails promptly." }
+      ]
+    },
+    {
+      "slug": "cash-management",
+      "title": "Cash Management",
+      "audience": "businesses",
+      "icon": "banknote",
+      "summary": "Collections through to cash flow analysis.",
+      "text": "From collections, to handling, to management of cash, to a cash flow analysis, we got you covered.",
+      "lead": "From collections, to handling, to management of cash, to a cash flow analysis, we got you covered.",
+      "covers": [
+        { "title": "Collections", "text": "Getting what you are owed in, as part of how the cash is managed." },
+        { "title": "Cash handling", "text": "How cash moves through the business day to day." },
+        { "title": "Cash flow analysis", "text": "A look at what comes in and what goes out, and when." }
+      ]
+    },
+    {
+      "slug": "software-training",
+      "title": "Accounting Software Training",
+      "audience": "businesses",
+      "icon": "clipboard-check",
+      "summary": "Training on the accounting software you run.",
+      "text": "Training on the accounting software your business runs. Hope has 19 plus years experience using QuickBooks and is listed with QuickBooks as a ProAdvisor.",
+      "lead": "Training on the accounting software your business already runs. Hope has 19 plus years experience using QuickBooks and is listed with QuickBooks as a ProAdvisor. No matter your business, she can help."
+    },
+    {
+      "slug": "financial-statements",
+      "title": "Financial Statements",
+      "audience": "businesses",
+      "icon": "chart",
+      "summary": "Statements prepared for your business.",
+      "text": "Financial statements prepared for your business.",
+      "lead": "Financial statements prepared for your business. Call the office for your specific needs."
+    },
+    {
+      "slug": "start-ups-and-closures",
+      "title": "Business Start Ups and Closures",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Opening a business and closing one down.",
+      "text": "Help opening a business and help closing one down, including entity selection.",
+      "lead": "Help opening a business and help closing one down. Hope has worked with new start ups and can help diagnose errors in start ups, and has experience in closing down companies as well.",
+      "covers": [
+        { "title": "Entity selection", "text": "Choosing the entity the business will be set up as." },
+        { "title": "New start ups", "text": "Hope has worked with new start ups and can help diagnose errors in start ups." },
+        { "title": "Closures", "text": "Experience in closing down companies as well." }
+      ]
+    },
+    {
+      "slug": "notary-services",
+      "title": "Notary Services",
+      "audience": "individuals",
+      "icon": "stamp",
+      "summary": "Documents notarised at the Crosby office.",
+      "text": "Notary services at the office on FM 2100 in Crosby.",
+      "lead": "Notary services at the office on FM 2100 in Crosby."
+    }
+  ],
+  "affiliations": {
+    "title": "Credentials and memberships",
+    "items": [
+      "Certified Public Accountant",
+      "QuickBooks ProAdvisor",
+      "Crosby Huffman Chamber of Commerce"
+    ]
+  },
+  "about": {
+    "title": "A CPA office on FM 2100, helping the community one client at a time.",
+    "text": [
+      "Hope E. Hartman attended school at the University of Houston, C.T. Bauer School of Business. There she earned her Bachelor degree in Accounting with a minor in Oil & Gas Accounting. She then went on to complete her Masters of Science in Accountancy and Taxation at the same university. She has over 17 years plus of experience in both the public and private sectors.",
+      "The office is at 20111 FM 2100 Suite 102 in Crosby, and we are actively seeking new clients in the Crosby, Huffman, Humble and Atascocita, Texas area."
+    ],
+    "image": "/brands/hopeehartmancpapllc/about",
+    "imageAlt": "A quiet office with a desk and chair beside a window",
+    "values": [
+      { "title": "Your success is our success", "text": "Our mission statement, and the way the office works: helping the community one client at a time." },
+      { "title": "Oil and gas accounting", "text": "Hope has 14 years plus experience in O&G accounting, five of them in OGSYS, and works in JIBs, severance tax and rendition reporting and revenue accounting." },
+      { "title": "QuickBooks ProAdvisor", "text": "Hope has 19 plus years experience using QuickBooks and is listed with QuickBooks as a ProAdvisor. No matter your business, she can help." }
+    ]
+  },
+  "team": [
+    {
+      "name": "Hope E. Hartman, CPA",
+      "role": "Owner",
+      "bio": "Hope attended the University of Houston, C.T. Bauer School of Business, where she earned her Bachelor degree in Accounting with a minor in Oil & Gas Accounting, then completed her Masters of Science in Accountancy and Taxation at the same university. She has over 17 years plus of experience in both the public and private sectors, 14 years plus of it in oil and gas accounting, and is listed with QuickBooks as a ProAdvisor."
+    },
+    {
+      "name": "Mary Ann Wymore, CPA",
+      "role": "Senior Tax",
+      "bio": "MaryAnn graduated from Texas A&M University, College Station, where she earned her bachelors in Accounting and her Masters in Business Administration. MaryAnn has been a business owner herself, and has extensive experience in operations, implementation, construction, bonding, and other key areas of accounting and taxation."
+    },
+    {
+      "name": "Jennifer Wolf",
+      "role": "Office Manager",
+      "bio": "Jennifer has worked for our office for a couple of years now. Previously she worked for a private engineering firm, heading the documentation control center. She is intelligent, thorough, and a great asset to our team."
+    },
+    {
+      "name": "Chandini Garib",
+      "role": "Bookkeeper"
+    }
+  ],
+  "faqs": [
+    { "q": "Where is the office?", "a": "20111 FM 2100 Rd, Suite 102, Crosby, Texas 77532. Mail can go to PO Box 1267, Huffman, Texas 77336." },
+    { "q": "How do I send in my tax documents?", "a": "Current clients upload documents through Intuit Link. There is an upload link on our site, or call the office and we will point you to it." },
+    { "q": "Are you taking new clients?", "a": "Yes. We are actively seeking new clients in the Crosby, Huffman, Humble and Atascocita, Texas area." },
+    { "q": "What if I need something that is not listed?", "a": "Please contact us if you do not see what you are looking for and we will see if we can accommodate you." },
+    { "q": "How quickly will I hear back?", "a": "We are always just a click or a call away during business hours, and we pride ourselves in returning calls and emails promptly." }
+  ],
+  "resources": [
+    { "title": "Intuit Link", "text": "Current clients upload tax documents here.", "href": "https://link.intuit.com/home/#/landing" },
+    { "title": "Journal of Accountancy", "text": "Daily updates and publications we point clients to.", "href": "http://www.journalofaccountancy.com" },
+    { "title": "Crosby Huffman Chamber of Commerce", "text": "The chamber for Crosby and Huffman.", "href": "http://crosbyhuffmancc.org/wordpress/?page_id=1092" }
+  ],
+  "serviceArea": ["Crosby", "Huffman", "Humble", "Atascocita"],
+  "facts": [
+    {
+      "heading": "Contact the office",
+      "items": [
+        "Tel: (281) 324-8702",
+        "Fax: (281) 462-7617",
+        "Email: admin@hopehartmancpa.com",
+        "Office: 20111 FM 2100 Rd, Suite 102, Crosby, Texas 77532",
+        "Mailing address: PO Box 1267, Huffman, Texas 77336"
+      ]
+    },
+    {
+      "heading": "Current clients",
+      "text": "Current clients upload tax documents through Intuit Link."
+    },
+    {
+      "heading": "Mission statement",
+      "text": "Your success is our success. Helping the community one client at a time."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/HopeHartmanCPA",
+        "LinkedIn: linkedin.com/in/hope-hartman-cpa-08567733"
+      ]
+    }
+  ]
+}
