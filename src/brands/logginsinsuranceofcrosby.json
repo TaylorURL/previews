@@ -1,0 +1,325 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "insurance",
+  "name": "Loggins Insurance of Crosby",
+  "shortName": "Loggins Insurance",
+  "tagline": "Insurance is the language of the Practical Life",
+  "phone": "(281) 328-1888",
+  "email": "rick@logginsinscrosby.com",
+  "address": "507 Runneburg Rd",
+  "town": "Crosby",
+  "state": "TX",
+  "zip": "77532",
+  "hours": [
+    [
+      "Mon – Fri",
+      "8:30 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Get a Quote",
+    "text": "Call the office for a free quote, or send a message and you will hear back within 48 to 72 hours."
+  },
+  "brand": {
+    "primary": "#375F92",
+    "primaryDeep": "#27456B",
+    "accent": "#137DA7",
+    "ink": "#1b2430",
+    "muted": "#5a6472",
+    "surface": "#f5f7fa",
+    "cream": "#e8eef6",
+    "line": "#d9e1ec",
+    "heading": "'Libre Baskerville', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/logginsinsuranceofcrosby/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Independent agency in Crosby",
+    "title": "Your hometown insurance agent in Crosby.",
+    "lead": "From a quote on car insurance, business or home to a custom package that fits all of your needs, we are your one-stop shop for all things insurance-related.",
+    "image": "/brands/logginsinsuranceofcrosby/hero",
+    "imageAlt": "The front porch of a house with a swing and wicker chairs",
+    "points": [
+      "Same day auto insurance",
+      "Numerous A-rated carriers",
+      "A personal account manager"
+    ]
+  },
+  "overview": {
+    "title": "What we insure in Crosby, Dayton, Huffman and Mont Belvieu.",
+    "text": "Pick a line of coverage to see what it covers, or call the office and talk it through with an agent."
+  },
+  "services": [
+    {
+      "slug": "auto",
+      "title": "Auto Insurance",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Car policies, usually bound the same day.",
+      "text": "Car policies quoted across numerous A-rated carriers, and in most cases bound the same day, normally within a few minutes.",
+      "lead": "It can be difficult to determine what type of car you should invest in and what benefits roll along with each option, but now it is easier than ever to make these decisions. We will help you understand them all and how to protect you and your vehicle.",
+      "image": "/brands/logginsinsuranceofcrosby/auto",
+      "imageAlt": "A white pickup truck on an open road at sunset",
+      "covers": [
+        {
+          "title": "Same day coverage",
+          "text": "Most auto policies are written the same day, normally within a few minutes of the call."
+        },
+        {
+          "title": "Discounts on your rate",
+          "text": "We look for the discounts on car insurance rates that you qualify for across the carriers we represent."
+        },
+        {
+          "title": "Bundling with home",
+          "text": "Writing auto alongside homeowners or another policy can qualify you for further discounts."
+        },
+        {
+          "title": "Claims help",
+          "text": "When you have a loss we give you the carrier's claims number and answer questions about the process."
+        }
+      ]
+    },
+    {
+      "slug": "homeowners",
+      "title": "Homeowners Insurance",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Home policies with windstorm coverage.",
+      "text": "There are a lot of different ways we can keep your home protected, from custom packages that include windstorm coverage to a simple consult on what your options are.",
+      "lead": "There are a lot of different ways we can keep your home protected. From custom packages that include wind storm coverage in tier 1 and tier 2 areas to a simple consult on what your options are, we have got all your home needs covered.",
+      "image": "/brands/logginsinsuranceofcrosby/home",
+      "imageAlt": "A brick house with a white front door and porch steps",
+      "covers": [
+        {
+          "title": "Windstorm in tier 1 and tier 2",
+          "text": "Custom packages that include wind storm coverage for homes in tier 1 and tier 2 areas."
+        },
+        {
+          "title": "A consult on your options",
+          "text": "If you only want to understand what is available before you decide, we will walk you through it."
+        },
+        {
+          "title": "Bundled discounts",
+          "text": "Homeowners written with auto and other policies can qualify you for discounts."
+        }
+      ]
+    },
+    {
+      "slug": "flood",
+      "title": "Flood Insurance",
+      "audience": "individuals",
+      "icon": "waves",
+      "summary": "Flood policies, separate from your home policy.",
+      "text": "Flood is written as its own policy, and we place it through the National Flood Insurance Program and through private flood carriers.",
+      "lead": "Flood water is not covered by a homeowners policy, so it is written separately. Ask us about flood cover for your address, and we are the people you call when it is time to file.",
+      "image": "/brands/logginsinsuranceofcrosby/flood",
+      "imageAlt": "A village street standing under flood water"
+    },
+    {
+      "slug": "mobile-home",
+      "title": "Mobile Home Insurance",
+      "audience": "individuals",
+      "icon": "building",
+      "summary": "Coverage for manufactured and mobile homes.",
+      "text": "Mobile and manufactured homes are one of the lines we write, placed with the A-rated carriers our independent agency has access to.",
+      "lead": "Mobile and manufactured homes are one of the lines we write. As an independent agency we have the flexibility to offer numerous A-rated insurance carriers to find the coverages and rates that meet your needs. Call us today for your free quote.",
+      "image": "/brands/logginsinsuranceofcrosby/mobile-home",
+      "imageAlt": "A mobile home sitting in a grassy field"
+    },
+    {
+      "slug": "renters",
+      "title": "Renters Insurance",
+      "audience": "individuals",
+      "icon": "key",
+      "summary": "Cover what you own in a rented home.",
+      "text": "Renters coverage for an apartment or a rented house, quoted across the carriers we represent and often bundled with your auto policy.",
+      "lead": "If you rent, the building is the landlord's and what is inside it is yours. We write renters policies across numerous A-rated carriers, and bundling one with your auto insurance can qualify you for a discount.",
+      "image": "/brands/logginsinsuranceofcrosby/renters",
+      "imageAlt": "A sunlit living room with a sofa and a low table"
+    },
+    {
+      "slug": "motorcycle",
+      "title": "Motorcycle Insurance",
+      "audience": "individuals",
+      "summary": "Policies written for riders.",
+      "text": "Motorcycle policies written through the carriers our independent agency represents, quoted free before you commit to anything.",
+      "lead": "Motorcycles are one of the lines we write. As an independent agency we can compare numerous A-rated carriers to find the coverages and rates that suit how and how often you ride. Call us today for your free quote.",
+      "image": "/brands/logginsinsuranceofcrosby/motorcycle",
+      "imageAlt": "A cruiser motorcycle parked beside a dark building"
+    },
+    {
+      "slug": "boats",
+      "title": "Boat Insurance",
+      "audience": "individuals",
+      "icon": "anchor",
+      "summary": "Cover for the boat on the trailer.",
+      "text": "We know you love your toys. Boats are one of the specialty lines we write, on a policy specific to what you own and where you run it.",
+      "lead": "Boats, RVs and classic cars: we know you love your toys. Let us help you protect them with an insurance policy specific to your interest.",
+      "image": "/brands/logginsinsuranceofcrosby/boats",
+      "imageAlt": "Two boats moored on calm water"
+    },
+    {
+      "slug": "rv",
+      "title": "RV Insurance",
+      "audience": "individuals",
+      "icon": "truck",
+      "summary": "Motorhomes, travel trailers and campers.",
+      "text": "RVs are one of the specialty lines we write, on a policy built around the rig rather than squeezed onto an auto policy.",
+      "lead": "Boats, RVs and classic cars: we know you love your toys. Let us help you protect them with an insurance policy specific to your interest.",
+      "image": "/brands/logginsinsuranceofcrosby/rv",
+      "imageAlt": "A motorhome parked on a desert track"
+    },
+    {
+      "slug": "specialty",
+      "title": "Specialty Insurance",
+      "audience": "individuals",
+      "icon": "gem",
+      "summary": "Classic cars and the rest of the toys.",
+      "text": "Classic cars and other specialty vehicles, written on a policy specific to your interest rather than a standard auto form.",
+      "lead": "Boats, RVs and classic cars: we know you love your toys. Let us help you protect them with an insurance policy specific to your interest.",
+      "image": "/brands/logginsinsuranceofcrosby/specialty",
+      "imageAlt": "A red classic Ford Mustang parked among pine trees"
+    },
+    {
+      "slug": "business",
+      "title": "Business Insurance",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Commercial packages, consultations free.",
+      "text": "It is hard to know just how your business needs to be insured and what you should be insuring for. We will help you decide how to best protect your assets.",
+      "lead": "It is hard to know just how your business needs to be insured and what you should be insuring for. We will help you decide how to best protect your assets, and the consultation costs you nothing.",
+      "image": "/brands/logginsinsuranceofcrosby/business",
+      "imageAlt": "A small shop front with a red and white awning",
+      "covers": [
+        {
+          "title": "Free business consultations",
+          "text": "Sit down with us and work out what the business needs covered before anything is quoted."
+        },
+        {
+          "title": "Business packages",
+          "text": "Coverage assembled into a package around how your business actually operates."
+        },
+        {
+          "title": "Commercial claims",
+          "text": "Commercial claims come straight to the office on 281-328-1888."
+        }
+      ]
+    }
+  ],
+  "affiliations": {
+    "title": "Carriers we work with",
+    "items": [
+      "Safeco",
+      "State Auto",
+      "Progressive",
+      "Mercury",
+      "Met",
+      "Maison",
+      "Anchor Insurance",
+      "Wellington",
+      "UPC Insurance"
+    ]
+  },
+  "about": {
+    "title": "A one-stop shop for all things insurance-related.",
+    "text": [
+      "At Loggins Insurance of Crosby our insurance agency is here to help you. From requesting a quote for car insurance, business or home to a custom package that fits all of your needs, we are your one-stop shop for all things insurance-related.",
+      "As an independent agency, we have the flexibility to offer numerous A-rated insurance carriers to find the coverages and rates that meet your personal or business needs. Call us today for your free quote.",
+      "Rick Loggins, Jr is your hometown insurance agent, proudly serving Crosby, Dayton, Huffman and Mont Belvieu."
+    ],
+    "image": "/brands/logginsinsuranceofcrosby/about",
+    "imageAlt": "A single storey house set back behind a lawn and trees",
+    "values": [
+      {
+        "title": "Friendly, helpful and knowledgeable staff",
+        "text": "The office is small enough that you get a straight answer from someone who knows your file."
+      },
+      {
+        "title": "A personal account manager",
+        "text": "One person handles your account, so you are not explaining your policy again every time you call."
+      },
+      {
+        "title": "Safety first",
+        "text": "We pass on safety tips for you and your family, because the claim you never have to file is the best outcome."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Rick Loggins, Jr",
+      "role": "Agent",
+      "bio": "Rick is your hometown insurance agent, proudly serving Crosby, Dayton, Huffman and Mont Belvieu with home insurance, flood insurance, windstorm coverage, auto insurance, commercial insurance and specialty insurance packages."
+    }
+  ],
+  "serviceArea": [
+    "Crosby",
+    "Dayton",
+    "Huffman",
+    "Mont Belvieu"
+  ],
+  "facts": [
+    {
+      "heading": "Some of the benefits you will enjoy",
+      "items": [
+        "Same day auto insurance, normally within a few minutes",
+        "Friendly, helpful and knowledgeable staff",
+        "Personal account manager",
+        "Safety First tips for you and your family",
+        "Free business consultations",
+        "Discounts on car insurance rates",
+        "Discounts when you bundle",
+        "Business packages"
+      ]
+    },
+    {
+      "heading": "Bundling",
+      "text": "Bundling your auto, homeowners and other types of insurance can qualify you for discounts. We can help you create an insurance package that will take advantage of all of the discounts available to you."
+    },
+    {
+      "heading": "If you have a loss",
+      "text": "Our first concern is for you and your family to be safe and well. In the unfortunate case that you have a loss or damages, first take action to prevent further damage or loss. Take pictures as proof of loss or damage. File a claim with your insurance company as soon as possible. If you have questions about the claims process, we are here for you."
+    },
+    {
+      "heading": "Claims numbers",
+      "items": [
+        "Safeco Auto: 800-332-3226",
+        "State Auto / Home: 800-766-1853",
+        "Progressive Auto: 800-776-4737",
+        "Met Auto / Home: 800-854-6011",
+        "Mercury: 800-503-3724",
+        "Anchor Insurance: 844-365-5588",
+        "Maison Homeowners: 844-962-4766",
+        "Maison Flood: 800-767-4341",
+        "NFIP: 800-767-4341",
+        "Texas Fair Plan: 800-979-6440",
+        "Wellington: 800-880-0474",
+        "UPC Insurance: 888-256-3578",
+        "Griffin General: 281-820-0555",
+        "Commercial Claims: 281-328-1888"
+      ]
+    },
+    {
+      "heading": "Water damage restoration",
+      "text": "Service Master Restore, 832-799-1210, for initial water damage restoration and dryout."
+    },
+    {
+      "heading": "Mailing address",
+      "text": "PO Box 1971, Crosby, TX 77532. The office is at 507 Runneburg Road."
+    },
+    {
+      "heading": "Fax and Facebook",
+      "text": "Fax 281-328-0444. Find the agency on Facebook at facebook.com/Loggin-Insurance-of-Crosby-167095506658813."
+    }
+  ]
+}
