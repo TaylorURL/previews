@@ -1,0 +1,326 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Growth Accounting, Inc.",
+  "shortName": "Growth Accounting",
+  "tagline": "Growth Driven Strategies",
+  "phone": "(409) 234-6171",
+  "email": "info@growthaccounting.org",
+  "address": "6341 Stewart Rd, Suite 202",
+  "town": "Galveston",
+  "state": "TX",
+  "zip": "77551",
+  "license": "Intuit, QuickBooks and QuickBooks ProAdvisor are registered trademarks of Intuit Inc., used with permission under the QuickBooks ProAdvisor Agreement.",
+  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "We are here to help you resolve questions and concerns you have about the financial side of your business."
+  },
+  "brand": {
+    "primary": "#153142",
+    "primaryDeep": "#0d2130",
+    "accent": "#788402",
+    "ink": "#17222b",
+    "muted": "#56646f",
+    "surface": "#f6f6f3",
+    "cream": "#eceee3",
+    "line": "#dfe2d8",
+    "heading": "'Playfair Display', Georgia, serif",
+    "body": "'Montserrat', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap",
+    "logo": "/brands/growthaccounting/logo.webp"
+  },
+  "hero": {
+    "eyebrow": "Fractional CFO firm in Galveston",
+    "title": "Fractional CFO consultation is what we do best.",
+    "lead": "Growth Accounting, Inc. is based in Texas and specializes in bookkeeping, payroll, and QuickBooks. We also work closely with you to review your current processes and services, and help evaluate what you have in place and what you may be paying for.",
+    "image": "/brands/growthaccounting/hero",
+    "imageAlt": "A dandelion seed head releasing its seeds at sunset",
+    "points": ["Bookkeeping, payroll and QuickBooks", "Part-time CFO services", "A liaison between you and your CPA"]
+  },
+  "overview": {
+    "title": "We are here to help your business succeed.",
+    "text": "We offer a broad range of services for business owners, executives, and independent professionals. Pick a service to see what it includes, or call and talk it through with our team."
+  },
+  "services": [
+    {
+      "slug": "small-business-accounting",
+      "title": "Small Business Accounting",
+      "icon": "calculator",
+      "summary": "Reports, cash flow and tax planning.",
+      "text": "As a small business owner you have more important things to do than keep your own books. We take care of them, so you can get back to running your business and generating profits.",
+      "lead": "We're accountants and we enjoy crunching numbers, but chances are good that as a small business owner, you don't. Whether we meet with you monthly, quarterly, or once a year, we help you take financial control of your business.",
+      "covers": [
+        { "title": "Reporting and analysis", "text": "Generate reports and analyze financial data, with quarterly, monthly and annual financial statements." },
+        { "title": "Cash flow and profitability", "text": "Evaluate cash flow and improve profitability, prepare budgets, and produce profit statements and balance sheets." },
+        { "title": "Systems and controls", "text": "Accounting systems set-up, Chart of Accounts and General Ledger, and internal controls for fraud prevention." },
+        { "title": "Tax and sales tax", "text": "Strategic tax planning and financial forecasting, business tax returns, and use and sales tax processing." }
+      ]
+    },
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping Services",
+      "icon": "book",
+      "summary": "Experienced, affordable and reliable.",
+      "text": "Accurate bookkeeping is essential to your company's long-term viability. Experienced, affordable, and reliable, we serve a variety of industries and clients.",
+      "lead": "We serve clients from self-employed home-based business owners to small and medium-sized businesses with employees. When you outsource your bookkeeping to us you get one on one personalized service and state of the art technology and payroll software.",
+      "image": "/brands/growthaccounting/bookkeeping",
+      "imageAlt": "A boardwalk crossing the dunes to the beach at sunset on the Texas coast",
+      "covers": [
+        { "title": "Accounts payable and receivable", "text": "Entry and bill paying on one side, invoicing, deposits and collection on the other." },
+        { "title": "Reconciliations and ledger", "text": "Bank reconciliations, general ledger and inventory management." },
+        { "title": "Clean up", "text": "If you have been in business a while but need help cleaning up your books, we streamline your systems and set up checks and balances." },
+        { "title": "Tax forms and payroll", "text": "Tax forms including 1099s and 1096, payroll processing and outsourced bookkeeping." }
+      ],
+      "questions": [
+        { "q": "I am just starting a business. Can you set things up from scratch?", "a": "Yes. We'll set up reporting and recordkeeping systems that make it easy for you to keep track of where your money is going." }
+      ]
+    },
+    {
+      "slug": "payroll-and-sales-tax",
+      "title": "Payroll & Sales Tax",
+      "icon": "users",
+      "summary": "A dedicated payroll representative.",
+      "text": "We offer payroll solutions that meet your business's needs and enable you to spend time doing what you do best, which is running your company.",
+      "lead": "On average, small business owners spend eight hours per month on payroll-related tasks. When you outsource your payroll to us you get a dedicated payroll representative who works with you throughout the entire payroll process.",
+      "covers": [
+        { "title": "Paying your people", "text": "Direct Deposit and Electronic Fund Transfer, and payroll check printing." },
+        { "title": "Tax compliance", "text": "Payroll tax compliance, e-filing and tax payments. We stay on top of legislation affecting payroll compliance, so you don't need to." },
+        { "title": "Reporting", "text": "Payroll reporting by employee or department, and monthly, quarterly and annual payroll tax reports that are easy to understand." },
+        { "title": "Year end and withholdings", "text": "W-2, W-3 and 1099 processing, and payment of third-party withholdings such as insurance." }
+      ],
+      "questions": [
+        { "q": "Do I need to maintain a payroll system in house?", "a": "No. There's no need for you to hire an in-house advisor or maintain a payroll system." }
+      ]
+    },
+    {
+      "slug": "part-time-cfo",
+      "title": "Part-Time CFO Services",
+      "icon": "chart",
+      "summary": "A financial manager without the salary.",
+      "text": "Our Part-Time CFO Service gives you a professional financial manager who works with you to help guide your business to success.",
+      "lead": "Businesses of all sizes benefit from hiring a CFO or controller, but many small business owners worry that they can't afford it. Outsourced CFO services are the cost-effective solution, and you get the benefits of an experienced financial executive without the added expense.",
+      "image": "/brands/growthaccounting/cfo",
+      "imageAlt": "Waves breaking against the Galveston seawall",
+      "covers": [
+        { "title": "Financial statements", "text": "Monthly, quarterly or annual financial statements, plus financial forecasting." },
+        { "title": "Cash flow and profitability", "text": "Guidance for increasing cash flow and improving profitability in support of future financial goals." },
+        { "title": "Day to day", "text": "Accounts payable and receivable handled alongside your own team." },
+        { "title": "Planning and systems", "text": "Strategic tax planning, tax compliance for sales use and payroll taxes, and setting up an accounting system and controls." }
+      ],
+      "questions": [
+        { "q": "Is this only for established companies?", "a": "No. Whether you're a start-up business, have made it to the five-year mark, or are ready to expand, we have the expertise and experience you need." }
+      ]
+    },
+    {
+      "slug": "cash-flow-management",
+      "title": "Cash Flow Management",
+      "icon": "banknote",
+      "summary": "Projections that keep you out of a crisis.",
+      "text": "A cash crisis can be emotionally devastating. It can even kill your business. The starting point for avoiding one is allowing us to develop a cash flow projection for you.",
+      "lead": "Many businesses fail because of poor cash flow management. Too many months of negative cash flow can, and will, cause a business to fail. Our expertise lies in helping business owners manage their cash flow better with the goal of increased profitability.",
+      "covers": [
+        { "title": "Projections", "text": "Develop short and long-term cash projections, and prepare monthly, quarterly and annual cash flow statements." },
+        { "title": "Where the money goes", "text": "Analyze prior years cash flow statements to help you understand where the money goes." },
+        { "title": "Getting paid faster", "text": "Tools to accelerate the collection process, and updated billing and payment policies." },
+        { "title": "Credit and surplus", "text": "Assistance with obtaining a line of credit, and help getting the maximum rate of return on surplus cash." }
+      ]
+    },
+    {
+      "slug": "bank-financing",
+      "title": "Bank Financing",
+      "icon": "landmark",
+      "summary": "A loan proposal lenders take seriously.",
+      "text": "Requesting a business loan without adequate preparation sends a clear message to the lender: High Risk. It pays to be prepared and organized in your approach for financing.",
+      "lead": "Banks are not in the business of handing out money to everyone who asks. Understanding what a bank wants and how to prepare for it can mean the difference between securing the financing you need and having to scrape together cash from other sources.",
+      "covers": [
+        { "title": "Understand the business", "text": "The first step we take is to make sure we understand your business and what you are trying to achieve." },
+        { "title": "Performance and sources", "text": "We look at financial performance and projections and identify potential sources for financing." },
+        { "title": "The proposal", "text": "An executive summary, pro forma cash budgets, business financial statements and owner's personal financial statements." },
+        { "title": "At the bank", "text": "Lender introductions and representation through the application." }
+      ]
+    },
+    {
+      "slug": "business-coaching",
+      "title": "Business Coaching",
+      "icon": "handshake",
+      "summary": "Planning for strategic growth.",
+      "text": "If you still have all your plans and ideas locked up inside your head, preparing a strategic plan can help you clarify your company's direction.",
+      "lead": "We combine industry experience with time-tested solutions to develop a framework upon which to build your company's success. When you leave the business planning to us, you can get back to doing what you enjoy and do best, which is running your business.",
+      "covers": [
+        { "title": "Growth and metrics", "text": "Planning for strategic growth, performance metrics, and business expansion and acquisition analysis." },
+        { "title": "Structure", "text": "Business entity selection and restructuring, plus business valuations and due diligence." },
+        { "title": "Numbers", "text": "Budget and cash flow analysis and management, and financial projections and forecasts." },
+        { "title": "Systems and funding", "text": "Review and evaluation of internal controls, assistance with debt and financing, and evaluation and implementation of accounting software." }
+      ]
+    },
+    {
+      "slug": "new-business-formation",
+      "title": "New Business Formation",
+      "icon": "store",
+      "summary": "Getting a new business started right.",
+      "text": "Opening your own business is exciting and thrilling. It's everything that comes after the excitement and thrill have worn off that dictates whether a small business will make it or not.",
+      "lead": "As an entrepreneur you're probably a big picture person with a vision. You'd rather not deal with nitty-gritty details like choosing a business entity, sales and payroll tax, or accounting systems that help you manage cash flow. We're here to help you figure it out.",
+      "covers": [
+        { "title": "Entity and agreements", "text": "Determine which business entity best meets your goals and minimizes tax liability, and prepare partnership agreements." },
+        { "title": "Money in and out", "text": "Prepare a cash flow budget, create a business plan to help you secure financing if needed, and set up billing systems and collections policies." },
+        { "title": "Systems", "text": "Set up an accounting system using software that works for you." },
+        { "title": "Compliance", "text": "State, local and federal tax law including sales and use tax, payroll tax and Federal EIN, annual returns and quarterly estimates, licenses and permits, and an assessment of your business insurance needs." }
+      ]
+    },
+    {
+      "slug": "internal-controls",
+      "title": "Internal Controls",
+      "icon": "shield",
+      "summary": "Mitigating risk and preventing fraud.",
+      "text": "We assess your internal control systems to determine the efficiency and effectiveness of your operating procedures, then we make recommendations that help your company become stronger.",
+      "lead": "We work with your business to identify and document weaknesses with existing internal controls, then perform procedures to test whether the controls you have in place are effective. Finally we offer recommendations in a report of findings.",
+      "covers": [
+        { "title": "Segregation of duties", "text": "Dividing responsibilities so that no single person has control over all aspects of financial transactions." },
+        { "title": "Authorization and review", "text": "Approval authority delegated only where transactions are consistent with policy and funds are available, with records routinely reviewed and reconciled by someone other than the preparer." },
+        { "title": "Safeguarding property", "text": "Equipment, inventories, cash and other property accounted for, physically secured, periodically counted and compared with control records." },
+        { "title": "People and policy", "text": "Appropriate training and guidance for employees, proper channels for reporting suspected improprieties, and documented policies made accessible to staff." }
+      ]
+    },
+    {
+      "slug": "forensic-accounting",
+      "title": "Forensic Accounting",
+      "icon": "scale",
+      "summary": "Investigating suspected fraud.",
+      "text": "Forensic accounting, also called financial forensics or forensic auditing, is an area of accounting that investigates actual or anticipated disputes.",
+      "lead": "Forensic accountants are more than just number crunchers. It takes a unique combination of skill, intuition, perseverance, diligence and integrity to do what we do. We'll help you get to the bottom of complex financial matters no matter how long it takes.",
+      "covers": [
+        { "title": "Quantifying the loss", "text": "Quantifying losses due to fraud, and searching for unreported income and assets." },
+        { "title": "Records", "text": "Records examination and reconstruction, and analyzing bookkeeping and accounting systems." },
+        { "title": "Investigation", "text": "Investigation of financial reporting irregularities, bribery and kickback schemes, and analysis of insurance claims." },
+        { "title": "Afterwards", "text": "Identifying weaknesses in your accounting processes and developing procedures that help you detect and deter fraud." },
+        { "title": "The disputes we are brought into", "text": "Embezzlement and other white-collar crime, employees suspected of taking kickbacks, and a soon-to-be ex-spouse claiming there are no matrimonial assets when you know there are." }
+      ]
+    },
+    {
+      "slug": "business-tax-preparation",
+      "title": "Tax Preparation for Businesses",
+      "icon": "receipt",
+      "summary": "Filing, planning and never missing a deadline.",
+      "text": "It is important to develop a relationship with a tax preparation firm that understands how your business works. As your trusted advisor, we make sure you stay on top of your tax obligations.",
+      "lead": "The IRS, as well as state and local governments, imposes strict deadlines for business tax obligations. Missing them and failing to comply with payroll and sales taxes negatively impacts your bottom line and may result in fines for non-compliance.",
+      "covers": [
+        { "title": "Preparation and filing", "text": "State and federal income tax preparation and filing, and profit and loss statements." },
+        { "title": "Sales and payroll tax", "text": "Local and state sales tax compliance, and state and federal payroll tax." },
+        { "title": "Planning", "text": "Minimize tax liability through the use of proven tax planning strategies." },
+        { "title": "Structure", "text": "Entity selection and structure for S-Corp, C-Corp and LLC, and support on mergers and acquisitions." }
+      ]
+    },
+    {
+      "slug": "tax-relief",
+      "title": "Tax Relief",
+      "icon": "stamp",
+      "summary": "Help when you owe the IRS.",
+      "text": "We're here to help you resolve your tax problems and put an end to the misery that the IRS can put you through. We pride ourselves on being very efficient, affordable, and of course, extremely discreet.",
+      "lead": "We understand how the IRS works and what it takes to successfully mediate a solution on your behalf, whether that's filing a past due return, minimizing back tax debt and any penalties or fines, or submitting an offer in compromise.",
+      "covers": [
+        { "title": "Audits and back taxes", "text": "IRS audits and back taxes owed from earlier years." },
+        { "title": "Non-filed returns", "text": "Delinquent tax returns and failure to file. If you do not file you can be prosecuted and punished with potential jail time, one year for each year not filed." },
+        { "title": "Liens, levies and garnishment", "text": "IRS liens and levies, and wage garnishment." },
+        { "title": "Payroll tax problems", "text": "The IRS views failing to pay payroll taxes as the cardinal sin of tax delinquency, because a large portion of what you pay as an employer is your employees' tax withholdings." },
+        { "title": "Getting back on track", "text": "We reconstruct tax records you have misplaced, prepare and submit non-filed returns, negotiate with the IRS on your behalf, submit an offer in compromise, arrange installment agreements to pay back the taxes owed, and represent you throughout the preparation and collection process." }
+      ],
+      "questions": [
+        { "q": "What does it cost to find out where I stand on payroll taxes?", "a": "Nothing. The consultation on how to resolve your payroll tax problems is free. If you are behind, do not meet with the IRS on your own - how you answer their initial questions can determine whether you stay in business." }
+      ]
+    },
+    {
+      "slug": "quickbooks",
+      "title": "Services for QuickBooks",
+      "icon": "wallet",
+      "summary": "Setup, training, review and tune-ups.",
+      "text": "QuickBooks is the ideal business accounting software for small to mid-sized business owners, and it is one of the things we specialize in.",
+      "lead": "Although QuickBooks is designed for the layperson to understand, the initial setup and installation can be tricky. We understand that the decision to switch to a new accounting system can be a difficult one, and we're here for you every step of the way.",
+      "covers": [
+        { "title": "Set up and customization", "text": "After we set up your QuickBooks software, we help you customize it specifically for your business, including integrating third-party invoicing or bill pay software." },
+        { "title": "Employee training", "text": "Personalized training for you and your employees at your location or ours. One on one rather than a class, so the time goes on the issues facing your business instead of features that do not affect it." },
+        { "title": "QuickBooks review", "text": "Review, sort and process monthly or quarterly transactions, reconcile the general ledger and all accounts, and prepare required reports." },
+        { "title": "Periodic tune-ups", "text": "Periodic reviews of your QuickBooks system, cleaning up and organizing your bookkeeping system, whether for tax time, a financial review or a problem area. A tune-up runs four hours with a QuickBooks Professional Advisor, reviewing the year's transactions, clearing stray entries, customizing reports and balancing the general ledger to the subsidiary records." },
+        { "title": "Answers to QuickBooks questions", "text": "Questions can be called in, left on voice mail, faxed or emailed, and a Certified Professional Advisor who works with QuickBooks replies with a detailed solution, usually within 24 hours. It is $20 per question, and if we cannot adequately resolve your question your money is refunded 100 percent." }
+      ],
+      "questions": [
+        { "q": "Can we get help after the setup is done?", "a": "Yes. Your accounting staff will find comfort in knowing that the answers to their QuickBooks questions are only an email or phone call away." },
+        { "q": "What does the QuickBooks setup cost?", "a": "We want to find out a little more about your business and your accounting records before we quote you an exact price. We work with many small business owners and our rates are designed to fit our clients' budgets." }
+      ]
+    }
+  ],
+  "affiliations": {
+    "title": "Credentials and memberships",
+    "items": ["Certified QuickBooks ProAdvisor", "National Association of Certified QuickBooks Advisors", "Intuit QuickBooks ProAdvisor Agreement"]
+  },
+  "about": {
+    "title": "A Galveston firm that does the work behind the scenes.",
+    "text": [
+      "Growth Accounting, Inc. is based in Texas and specializes in bookkeeping, payroll, and QuickBooks. We also work closely with you to review your current processes and services, and help evaluate what you have in place and what you may be paying for. We are professional, experienced, and affordable, and we offer a broad range of services for business owners, executives, and independent professionals.",
+      "We work with a variety of CPAs and refer you to a CPA that we feel can best suit your needs. Additionally, we do the work behind the scenes at a much more affordable price than a CPA. We also specialize in being the liaison between the CPA and the business owner, so that you have someone who speaks the language of the small business owner and can make sure both owner and CPA are on the same page.",
+      "We provide comprehensive financial services to individuals, small to medium-sized businesses, and other agencies. Dedicated to serving client needs throughout the year, not just at tax time, we strive to respond quickly to any concerns our clients have."
+    ],
+    "image": "/brands/growthaccounting/about",
+    "imageAlt": "A heron standing in the marsh grass along the Galveston shoreline",
+    "values": [
+      { "title": "Professionalism", "text": "Our high standards, service and staff make a difference, and we are dedicated to ensuring every client receives personal attention. We continually educate ourselves through professional organizations to improve our technical expertise and financial knowledge." },
+      { "title": "Responsiveness", "text": "We serve client needs throughout the year, not just at tax time, and strive to respond quickly to any concerns our clients have." },
+      { "title": "Quality", "text": "As trusted advisors, we are available to assist our clients at any time to provide insightful advice that enables them to make informed financial decisions." }
+    ]
+  },
+  "team": [
+    {
+      "name": "Tara Racer",
+      "role": "CEO & Founder",
+      "bio": "As someone with over 25 years working with QuickBooks and small businesses, Tara is proud to lead a team dedicated to providing clients with comprehensive, flexible and highly personalized service. She has taught numerous classes in Payroll and Contract Labor regulations and Corporate Structure, and has coached QuickBooks training classes to small business and Chamber of Commerce groups. She was a founding member of the Katy Woman's Leadership Circle, and is currently a Certified QuickBooks Pro Advisor and a member of the National Association of Certified QuickBooks Advisors.",
+      "image": "/brands/growthaccounting/team-1",
+      "imageAlt": "Tara Racer"
+    }
+  ],
+  "faqs": [
+    { "q": "Do I still need a CPA?", "a": "We work with a variety of CPAs and refer you to a CPA that we feel can best suit your needs. We do the work behind the scenes at a much more affordable price than a CPA, and we specialize in being the liaison between the CPA and the business owner." },
+    { "q": "How long is the first consultation?", "a": "Thirty minutes. Call the office at (409) 234-6171 or send a message and we will schedule it." },
+    { "q": "Do you work with businesses of any size?", "a": "We serve a variety of industries and clients, from self-employed home-based business owners to small and medium-sized businesses with employees." },
+    { "q": "Do you only work with clients at tax time?", "a": "No. We provide comprehensive financial services throughout the year, and whether we meet with you monthly, quarterly or once a year, we help you take financial control of your business." },
+    { "q": "Can you send and receive documents securely?", "a": "Yes. Clients use our client portal to log in, and SecureSend to send a file to the office." }
+  ],
+  "facts": [
+    {
+      "heading": "Industries We Serve",
+      "items": ["Construction", "Dentists", "Healthcare", "Hospitality", "Law Firms", "Manufacturers", "Real Estate"]
+    },
+    {
+      "heading": "Client Center",
+      "items": ["Client portal login", "SecureSend file transfer", "This month's newsletter and previous newsletters", "Financial calculators", "Track your refund, tax due dates and tax rates", "IRS tax forms and publications, and state tax forms", "Internet links"]
+    },
+    {
+      "heading": "Guides on Our Site",
+      "items": ["Life events", "Business strategies", "Investment strategies", "Tax strategies for business owners", "Tax strategies for individuals", "Record retention guide", "Over 500 everyday financial questions answered"]
+    },
+    {
+      "heading": "Tax Services",
+      "text": "We serve both individual and business planning, preparation and filing needs while staying compliant with continuously changing tax law, and we work with you to plan ahead and maximize appropriate deductions and credit opportunities."
+    },
+    {
+      "heading": "Secure Document Exchange",
+      "text": "The client portal is password protected and holds your tax returns, financial work papers and accounting database, so you can reach them from anywhere at any time, and we use it to exchange working documents, scanned receipts and very large QuickBooks files. SecureSend delivers a file straight to a member of the firm, who is notified once the upload finishes, and it needs no account."
+    },
+    {
+      "heading": "Your Information",
+      "text": "Our privacy policy is the one required by the Gramm-Leach-Bliley Act of 1999. We do not disclose nonpublic personal information about clients or former clients to anyone except as permitted by law, access is restricted to the members of the firm who need it to serve you, and we maintain physical, electronic and procedural safeguards that comply with federal regulations."
+    },
+    {
+      "heading": "Working With Your CPA",
+      "text": "We do the work behind the scenes at a much more affordable price than a CPA, and we act as the liaison between the CPA and the business owner so that both are on the same page."
+    },
+    {
+      "heading": "Find Us Online",
+      "items": ["Facebook: facebook.com/growthaccountinginc", "Instagram: instagram.com/growthaccountinginc", "LinkedIn: linkedin.com/company/growth-accounting-inc"]
+    },
+    {
+      "heading": "Text Messages",
+      "text": "If you consent to receive text messages from Growth Accounting we use them for client communications, appointment reminders and inquiries, never for marketing or promotion, and frequency varies with what you need, typically one or two messages a month. Reply STOP at any time to opt out, or text HELP to (409) 234-6171 for assistance. Message and data rates may apply, and phone numbers collected for SMS consent are not shared with third parties."
+    }
+  ]
+}

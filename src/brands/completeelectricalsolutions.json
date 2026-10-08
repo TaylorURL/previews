@@ -1,0 +1,396 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Complete Electrical Solutions",
+  "shortName": "Complete Electrical Solutions",
+  "summary": "Licensed residential and commercial electrical work and Generac generator installation in Pearland and the greater Houston area.",
+  "phone": "(281) 272-6125",
+  "email": "office@completeelectricalsolutionstx.com",
+  "address": "1135 W Brompton Dr",
+  "town": "Pearland",
+  "state": "TX",
+  "zip": "77584",
+  "rating": 4.9,
+  "reviewCount": 70,
+  "since": 2016,
+  "hours": [
+    [
+      "Monday – Sunday",
+      "Open 24 hours"
+    ]
+  ],
+  "brand": {
+    "primary": "#0045a0",
+    "primaryDeep": "#002d6b",
+    "accent": "#dd3333",
+    "ink": "#1d2430",
+    "muted": "#56606f",
+    "surface": "#eef3fa",
+    "line": "#d7e1ef",
+    "heading": "'Ubuntu', system-ui, sans-serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&family=Open+Sans:wght@400;500;600&display=swap",
+    "logo": "/brands/completeelectricalsolutions/logo.webp",
+    "logoWidth": 180
+  },
+  "emergency": {
+    "title": "24/7 emergency service",
+    "text": "Emergency electrical service is available 24 hours a day, seven days a week — call (281) 272-6125."
+  },
+  "sameDay": "We have the resources and personnel to provide you with quick and effective services.",
+  "licenses": [
+    {
+      "label": "Master Electrician",
+      "number": "TMEL# 388338"
+    },
+    {
+      "label": "TX Electrical Contractor",
+      "number": "TECL# 32445"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Licensed electricians in Pearland, Texas",
+    "title": "Powering homes and businesses with",
+    "titleAccent": "expert generator installations.",
+    "lead": "Since 2016 we have provided top quality residential and commercial electrical work across Pearland and the greater Houston area. Reliable, local, professional — contact us today for a free estimate.",
+    "image": "/brands/completeelectricalsolutions/hero",
+    "imageAlt": "A Complete Electrical Solutions technician working at an installed standby generator"
+  },
+  "groups": [
+    {
+      "slug": "generators",
+      "title": "Generators",
+      "icon": "power",
+      "summary": "Sales, installation and maintenance of Generac generators and transfer switches.",
+      "intro": "We specialize in the sales and installation of Generac generators and transfer switches for residential and commercial properties in Pearland. Our top-tier generators are installed for the convenience of properties and are the finest alternative to lighting during power outages.",
+      "image": "/brands/completeelectricalsolutions/generators",
+      "imageAlt": "A meter, disconnects and a transfer switch mounted on an exterior wall",
+      "services": [
+        {
+          "slug": "generac-generators",
+          "title": "Generac Generators",
+          "icon": "power",
+          "text": "We offer Generac generators for residential and commercial areas to power locations in Pearland.",
+          "points": [
+            "Residential and commercial installations",
+            "Installed for the convenience of the property"
+          ]
+        },
+        {
+          "slug": "generator-install",
+          "title": "Generator Install",
+          "icon": "battery",
+          "text": "Commercial and residential generator installation by trained, licensed and insured technicians."
+        },
+        {
+          "slug": "transfer-switch-install",
+          "title": "Transfer Switch Install",
+          "icon": "settings",
+          "text": "We provide transfer switches to connect the main power grid with a back up generator, ensuring a smooth transition of electricity during power outages."
+        },
+        {
+          "slug": "generator-maintenance",
+          "title": "Generator Maintenance",
+          "icon": "gauge",
+          "text": "Maintenance visits that keep a standby generator ready for the next outage."
+        }
+      ]
+    },
+    {
+      "slug": "electrical-repairs-and-upgrades",
+      "title": "Electrical Repairs and Upgrades",
+      "icon": "circuit",
+      "summary": "Safety inspections, troubleshooting, panel upgrades, rewiring and new circuits.",
+      "intro": "From lights not working to a total loss of power, we will restore your daily life. With our highly trained licensed employees, our team is sure to properly diagnose and effectively remediate any electrical situation, for residential and commercial customers alike.",
+      "image": "/brands/completeelectricalsolutions/repairs",
+      "imageAlt": "An open electrical panel with newly landed circuit wiring",
+      "services": [
+        {
+          "slug": "electrical-safety-inspection",
+          "title": "Electrical Safety Inspection",
+          "icon": "shield",
+          "text": "An inspection of the electrical system so a problem is found before it becomes a hazard."
+        },
+        {
+          "slug": "electrical-troubleshooting",
+          "title": "Electrical Troubleshooting",
+          "icon": "zap",
+          "text": "From lights not working to a total loss of power, we properly diagnose and effectively remediate any electrical situation."
+        },
+        {
+          "slug": "electrical-panel-upgrades",
+          "title": "Electrical Panel Upgrades",
+          "icon": "circuit",
+          "text": "Panel upgrades for homes and businesses, done to national and local electrical code."
+        },
+        {
+          "slug": "disconnects",
+          "title": "Disconnects and A/C Disconnects",
+          "icon": "settings",
+          "text": "Disconnect and A/C disconnect installation for residential and commercial properties."
+        },
+        {
+          "slug": "dedicated-circuits",
+          "title": "Dedicated 120 to 220 Volt Circuits",
+          "icon": "plug",
+          "text": "Dedicated 120 to 220 volt circuits run for the equipment and appliances that need their own supply."
+        },
+        {
+          "slug": "rewiring",
+          "title": "Rewiring",
+          "icon": "cable",
+          "text": "Rewiring for homes and businesses, everything up to national and local electrical code."
+        },
+        {
+          "slug": "switches-plugs-and-dimmers",
+          "title": "Switches, Plugs and Dimmers",
+          "icon": "plug",
+          "text": "Switches, plugs and dimmers installed and replaced on residential and commercial jobs."
+        }
+      ]
+    },
+    {
+      "slug": "lighting-remodeling-and-ev",
+      "title": "Lighting, Remodeling and EV",
+      "icon": "lightbulb",
+      "summary": "Indoor and outdoor lighting, ceiling fans, remodels, EV charging and underground work.",
+      "intro": "Servicing residential and commercial customers in the greater Houston area, we are your solution for electrical repairs, electrical upgrades and new electrical installations. It is our promise to follow industry standards, implement best practices and meet all city and state codes.",
+      "image": "/brands/completeelectricalsolutions/lighting",
+      "imageAlt": "A kitchen with new lighting fitted above the range and counters",
+      "services": [
+        {
+          "slug": "indoor-and-outdoor-lighting",
+          "title": "Indoor and Outdoor Lighting",
+          "icon": "lightbulb",
+          "text": "Indoor and outdoor lighting installed for homes and businesses across Pearland."
+        },
+        {
+          "slug": "ceiling-fan-installation",
+          "title": "Ceiling Fan Installation",
+          "icon": "fan",
+          "text": "Ceiling fans installed and wired by a licensed electrician."
+        },
+        {
+          "slug": "electrical-remodeling-and-renovation",
+          "title": "Electrical Remodeling and Renovation",
+          "icon": "home",
+          "text": "Electrical remodeling and renovation work, done up to national and local electrical code the first time."
+        },
+        {
+          "slug": "ev-charging-station",
+          "title": "EV Charging Station",
+          "icon": "ev",
+          "text": "EV charging stations installed for residential and commercial properties."
+        },
+        {
+          "slug": "underground-trenching-and-boring",
+          "title": "Underground Trenching and Boring",
+          "icon": "cable",
+          "text": "Underground work, including trenching and boring, to get power where it needs to go."
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Exclusive discount",
+    "title": "10% off for those who serve our community.",
+    "text": "We offer 10% discounts to veterans, active duty military, police officers, firefighters, senior citizens and teachers, guaranteeing that we give back to the community in and around Pearland.",
+    "price": "10%",
+    "priceNote": "off your service",
+    "image": "/brands/completeelectricalsolutions/discount",
+    "imageAlt": "A newly installed exterior panel and meter"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Electricians you can trust in Pearland.",
+    "text": [
+      "Look no further, you have arrived to your Complete Electrical Solutions. Servicing residential and commercial customers in the greater Houston area, we are your solution for electrical repairs, electrical upgrades and new electrical installations.",
+      "As trained, licensed, certified and insured technicians, each of our team members ensure safe and reliable services. It is our promise to you to follow industry standards, implement best practices, and meet all city and state codes to ensure the job is done right the first time, every time.",
+      "We enjoy our work. We get great satisfaction and sense of accomplishment in meeting and exceeding our customers' expectations. We don't cut corners nor do we rig things up to save time. Everything we do is up to national and local electrical code, and it is this pride in our workmanship that sets us apart from others. That is why we get the job done right the first time, with honesty, integrity and the commitment to our customers."
+    ],
+    "image": "/brands/completeelectricalsolutions/team",
+    "imageAlt": "Conduit and panel work on a commercial building",
+    "values": [
+      {
+        "title": "Transparent pricing",
+        "text": "No work is done without confirming costs with you first, so you know exactly what you pay for."
+      },
+      {
+        "title": "Professional service",
+        "text": "Uniformed technicians who wear shoe covers and clean the job site at the end of every work day."
+      },
+      {
+        "title": "Trained and licensed",
+        "text": "Each team member is trained, certified, licensed and insured to ensure the highest standards of workmanship."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Guarantees",
+      "items": [
+        "Lifetime workmanship guarantee",
+        "100% satisfaction guarantee",
+        "We guarantee 100% top-quality services",
+        "Licensed and insured",
+        "Best warranties"
+      ]
+    },
+    {
+      "heading": "Estimates and consultations",
+      "text": "Free estimates and a free consultation. Transparent pricing, with no work done without confirming costs with you first."
+    },
+    {
+      "heading": "10% exclusive discount",
+      "items": [
+        "Veterans",
+        "Active duty military",
+        "Police officers",
+        "Firefighters",
+        "Senior citizens",
+        "Teachers"
+      ]
+    },
+    {
+      "heading": "Coupons",
+      "text": "Coupons and discounts are available for maintenance, installations and renovations — ask when you call, or download them from our coupons page."
+    },
+    {
+      "heading": "The range of our work",
+      "text": "A full range of electrical services, from small repairs to major reworks, for residential and commercial customers. We are happy to come out to your location and give you the best work at the best price."
+    },
+    {
+      "heading": "Brands we install",
+      "text": "We specialize in the sales and installation of Generac generators and transfer switches."
+    },
+    {
+      "heading": "Certificates",
+      "items": [
+        "Home Advisor",
+        "Electrical Contractor Certified",
+        "Satisfaction Guaranteed"
+      ]
+    },
+    {
+      "heading": "Certified technicians",
+      "text": "Our courteous technicians take the time to talk with you so your home can be safer and more efficient, and each team member is trained, certified, licensed and insured."
+    },
+    {
+      "heading": "Why choose us",
+      "items": [
+        "Safety and honesty are our priorities",
+        "We know reliability of your electrical service is important",
+        "Customer service is our focus, including quick response to inquiries and arriving on time for scheduled appointments",
+        "Transparent pricing, no work is done without confirming costs with you first",
+        "Uniformed technicians who wear shoe covers and ensure job-site cleanup",
+        "Each team member is trained, certified, licensed and insured"
+      ]
+    },
+    {
+      "heading": "How to reach us",
+      "text": "Call or send a text message to (281) 272-6125, email office@completeelectricalsolutionstx.com, or send an online request and we will get back to you. Emergency service is available 24 hours a day, seven days a week."
+    },
+    {
+      "heading": "Find us online",
+      "text": "Find Complete Electrical Solutions on Facebook at facebook.com/CompleteElectricalSolutionsTX, and on HomeAdvisor."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do you offer free estimates?",
+      "a": "Yes. We offer free estimates and a free consultation, and no work is done without confirming costs with you first."
+    },
+    {
+      "q": "Are you licensed and insured?",
+      "a": "Yes. We hold Master Electrician license TMEL# 388338 and TX Electrical Contractor license TECL# 32445, and each team member is trained, certified, licensed and insured."
+    },
+    {
+      "q": "Do you answer after hours?",
+      "a": "Yes. Our emergency service is available 24/7, with 24 hour emergency services seven days a week."
+    },
+    {
+      "q": "Do you work on commercial properties as well as homes?",
+      "a": "Yes. We provide top quality residential and commercial electrical work, covering the entire greater Houston area."
+    },
+    {
+      "q": "Which generators do you install?",
+      "a": "We specialize in the sales and installation of Generac generators and transfer switches, for both residential and commercial properties."
+    },
+    {
+      "q": "Do you offer any discounts?",
+      "a": "We offer 10% discounts to veterans, active duty military, police officers, firefighters, senior citizens and teachers."
+    }
+  ],
+  "serviceArea": [
+    "Pearland",
+    "Alief",
+    "Atascocita",
+    "Baytown",
+    "Bellaire",
+    "Braeswood",
+    "Brookside Village",
+    "Bunker Hill",
+    "Champions",
+    "Channelview",
+    "Cinco Ranch",
+    "Clear Creek",
+    "Clear Lake City",
+    "Clear Lake Shores",
+    "Cypress",
+    "Deer Park",
+    "El Lago",
+    "Energy Corridor",
+    "Fondren Southwest",
+    "Fresno",
+    "Friendswood",
+    "Galena Park",
+    "Galleria",
+    "Highlands",
+    "Houston",
+    "Houston Heights",
+    "Humble",
+    "Hunters Creek",
+    "Jacinto City",
+    "Jersey Village",
+    "Katy",
+    "Kemah",
+    "Klein",
+    "La Porte",
+    "League City",
+    "Manvel",
+    "Meadows Place",
+    "Med Center",
+    "Memorial Villages",
+    "Meyerland",
+    "Midtown",
+    "Missouri City",
+    "Montrose",
+    "Morgan's Point",
+    "Nassau Bay",
+    "New Territory",
+    "North Shore",
+    "Pasadena",
+    "Piney Point",
+    "Rice Village",
+    "Richmond",
+    "River Oaks",
+    "Rosharon",
+    "Seabrook",
+    "Shoreacres",
+    "South Shore Harbor",
+    "Southside Place",
+    "Spring",
+    "Spring Branch",
+    "Spring Valley",
+    "Stafford",
+    "Sugar Land",
+    "Summerwood",
+    "Taylor Lake",
+    "Tomball",
+    "Webster",
+    "West Houston",
+    "West University Place",
+    "Westbury",
+    "Westchase District"
+  ]
+}
