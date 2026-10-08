@@ -1,0 +1,241 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Edward J. Walsh & Associates, CPA",
+  "shortName": "Edward J. Walsh & Associates",
+  "tagline": "A Legacy of Loyalty",
+  "phone": "(409) 763-4626",
+  "email": "eddie@walshcpa.com",
+  "address": "Moody National Bank Tower, 2302 Postoffice St., Suite 602",
+  "town": "Galveston",
+  "state": "TX",
+  "zip": "77550",
+  "since": 1932,
+  "license": "Certified Public Accountants. Edward J. Walsh was granted Certificate Number 376 by the Texas State Board of Public Accountancy on January 9, 1932.",
+  "hours": [
+    ["Mon – Fri", "8 AM – 5 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Contact us to make an appointment today."
+  },
+  "brand": {
+    "primary": "#3f5e72",
+    "primaryDeep": "#1f2f39",
+    "accent": "#41627a",
+    "ink": "#22272b",
+    "muted": "#657078",
+    "surface": "#f4f7f9",
+    "cream": "#dfe8ee",
+    "line": "#d4e0e7",
+    "heading": "'Jost', 'Futura', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/edwardjwalshassociatescpa/logo.webp",
+    "logoWidth": 50
+  },
+  "hero": {
+    "eyebrow": "Certified Public Accountants in Galveston",
+    "title": "Our family firm, serving Galveston clients since 1932.",
+    "lead": "Edward J. Walsh & Associates provides unparalleled personalized accounting services to a broad range of clients. As full-service CPAs serving clients since 1932, we specialize in personal and business income tax, financial consulting, estate planning, bookkeeping, payroll and more. For three generations, the Walsh family has served clients with distinction and care.",
+    "image": "/brands/edwardjwalshassociatescpa/hero",
+    "imageAlt": "An open accounting ledger on a desk",
+    "points": ["Established 1932", "Three generations of the Walsh family", "An office in the Moody National Bank Tower"]
+  },
+  "overview": {
+    "title": "We offer a wide range of services to meet your specific personal or business needs.",
+    "text": "Pick a service to see what it covers, or call the office and talk it through with our team."
+  },
+  "audiences": { "individuals": "Individuals and Families", "businesses": "Businesses" },
+  "services": [
+    {
+      "slug": "tax-accounting",
+      "title": "Individual and Business Tax",
+      "audience": "individuals",
+      "icon": "calculator",
+      "summary": "Tax accounting, consulting and compliance.",
+      "text": "Individual and business income tax accounting, consulting and compliance, handled by the same firm year after year.",
+      "lead": "Income tax is the work this firm has done since 1932, for individuals and for the businesses they run. We prepare the returns, advise on the decisions behind them, and keep the filings compliant.",
+      "image": "/brands/edwardjwalshassociatescpa/tax",
+      "imageAlt": "Tax forms and a pen on a desk",
+      "covers": [
+        { "title": "Tax accounting", "text": "Personal and business income tax work, prepared from your records." },
+        { "title": "Tax consulting", "text": "Advice on the financial decisions that shape what you owe, taken before the year closes." },
+        { "title": "Tax compliance", "text": "Returns and filings kept current for individuals and for businesses." }
+      ]
+    },
+    {
+      "slug": "expatriate-and-international-tax",
+      "title": "Expatriate and International Tax",
+      "audience": "individuals",
+      "icon": "stamp",
+      "summary": "U.S. tax accounting and compliance abroad.",
+      "text": "Expatriate and international U.S. tax accounting and compliance for clients whose income or residence crosses a border.",
+      "lead": "A U.S. filing obligation does not end at the border. We handle the accounting and the compliance for expatriate and international U.S. tax matters.",
+      "covers": [
+        { "title": "Expatriate tax accounting", "text": "U.S. tax work for clients living or working outside the country." },
+        { "title": "International compliance", "text": "The U.S. filings that come with income, accounts or interests abroad." }
+      ]
+    },
+    {
+      "slug": "trust-and-estate",
+      "title": "Trust and Estate Tax",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "Trust and estate tax, and estate planning.",
+      "text": "Trust and estate tax work alongside estate planning, so what you leave behind is handled the way you intended.",
+      "lead": "Trusts and estates carry their own returns and their own decisions. We prepare the tax work and advise on the planning that sits behind it.",
+      "covers": [
+        { "title": "Trust and estate tax", "text": "Returns and tax accounting for trusts and for estates." },
+        { "title": "Estate planning", "text": "Planning the financial side of an estate, with your interests in mind." }
+      ]
+    },
+    {
+      "slug": "retirement-plans",
+      "title": "Retirement Plans",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Formation, accounting and compliance.",
+      "text": "Retirement planning, plan formation, accounting and compliance, from setting a plan up to keeping it filed.",
+      "lead": "A retirement plan has to be formed, accounted for and kept compliant year after year. We take on all three.",
+      "covers": [
+        { "title": "Planning and formation", "text": "Setting up a retirement plan and the decisions that go into it." },
+        { "title": "Plan accounting", "text": "The accounting a plan needs once it is running." },
+        { "title": "Compliance", "text": "Keeping the plan's filings current." }
+      ]
+    },
+    {
+      "slug": "payroll",
+      "title": "Payroll Services",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Payroll and payroll tax preparation.",
+      "text": "Payroll services and payroll tax preparation, so your staff are paid and the filings behind them are done on time.",
+      "lead": "Payroll is a deadline every pay period and a filing every quarter. We run the payroll and prepare the payroll tax that follows it.",
+      "covers": [
+        { "title": "Payroll services", "text": "Running payroll for your employees." },
+        { "title": "Payroll tax preparation", "text": "Preparing the payroll tax filings that come with it." }
+      ]
+    },
+    {
+      "slug": "accounting-and-bookkeeping",
+      "title": "Accounting and Bookkeeping",
+      "audience": "businesses",
+      "icon": "file-text",
+      "summary": "Books kept and accounts reconciled.",
+      "text": "Accounting and bookkeeping kept up through the year, so the figures are ready when a return or a decision needs them.",
+      "lead": "Bookkeeping done through the year is what makes everything else straightforward. We keep the books, reconcile the accounts and report back.",
+      "image": "/brands/edwardjwalshassociatescpa/bookkeeping",
+      "imageAlt": "A calculator and printed statements on a desk",
+      "covers": [
+        { "title": "Bookkeeping", "text": "Your records kept current rather than reconstructed at year end." },
+        { "title": "Reconciliation and reporting", "text": "Accounts reconciled and the figures reported back to you." }
+      ]
+    },
+    {
+      "slug": "homeowner-association-accounting",
+      "title": "Homeowner Association Accounting",
+      "audience": "businesses",
+      "icon": "house",
+      "summary": "Accounting and consulting for HOAs.",
+      "text": "Homeowner association accounting and consulting, a sub-specialty the firm has grown since 2010.",
+      "lead": "Veronica Hugger joined the firm in 2010 to grow a sub-specialty in services to homeowners associations, and manages the accounts receivable and accounts payable for local HOA clients.",
+      "image": "/brands/edwardjwalshassociatescpa/hoa",
+      "imageAlt": "An aerial view of a residential neighborhood",
+      "covers": [
+        { "title": "HOA accounting", "text": "Accounts receivable and accounts payable managed for local homeowner association clients." },
+        { "title": "HOA consulting", "text": "Advice on the association's accounting as questions come up." }
+      ]
+    }
+  ],
+  "about": {
+    "title": "Three generations of the Walsh family, in Galveston since 1932.",
+    "text": [
+      "Edward J. Walsh was granted Certificate Number 376 by the Texas State Board of Public Accountancy on January 9, 1932, and soon launched Edward J. Walsh & Associates in his family's hometown of Galveston, Texas.",
+      "His son, Edward J. Walsh, Jr. (Ed), became a C.P.A. on January 17, 1960, Certificate Number 5055, after graduating from the University of Texas. He soon joined his father's growing practice and over the years built it to meet the needs of many individuals and businesses by listening to and working for the benefit of thousands of clients. Many of his clients became close, long-lasting friends.",
+      "Edward was joined by his wife, Rose Marie, where they worked hand in hand every day for 35 years. In 1982, their son, Eddie, joined the practice, and in 1989, their second son, Kevin, followed. Ed and Rose Marie instilled in their sons the dedication and commitment needed to provide you with respectable and valued accounting services that you demand.",
+      "The legacy created, built and nurtured by Edward, Ed and Rose Marie continues in the third generation. Eddie and Kevin and their valued team offer services to meet a wide range of both corporate and personal needs. As a valued client of Edward J. Walsh & Associates, you'll leave your accounting worries with us so you can focus on the things that matter most in your life."
+    ],
+    "image": "/brands/edwardjwalshassociatescpa/about",
+    "imageAlt": "A pier and waterfront homes on the Texas Gulf Coast",
+    "values": [
+      { "title": "Personalized service", "text": "Unparalleled personalized accounting services to a broad range of clients." },
+      { "title": "Your best interests", "text": "We are here to ensure that all of your financial decisions are made carefully and with your best interests in mind." },
+      { "title": "Individualized attention", "text": "Our team works diligently and collaboratively to bring you individualized attention and effective, timely financial management solutions." },
+      { "title": "We love what we do", "text": "At Edward J. Walsh & Associates, we love what we do, which translates into positive client experiences." }
+    ]
+  },
+  "team": [
+    {
+      "name": "Edward (Eddie) J. Walsh III, CPA, CFE",
+      "role": "Partner",
+      "bio": "Eddie graduated from the University of Texas in 1982 and immediately joined his father as an associate. He earned his CPA designation in 1985, becoming the first third-generation CPA in the state of Texas. An active Rotarian since 1983, Eddie also has served the Galveston community on numerous non-profit and charity boards and on the governing entities of the Galveston Park Board and the Port of Galveston Wharves Board."
+    },
+    {
+      "name": "Kevin C. Walsh, CPA",
+      "role": "Partner",
+      "bio": "Kevin obtained his Bachelor's in Accounting from the University of Houston Clear Lake in 1989 and became a Certified Public Accountant in 1995. He served as Galveston County Treasurer for twenty years, from 2003 to 2023."
+    },
+    {
+      "name": "Joseph Hugger",
+      "role": "Accountant",
+      "bio": "Joseph earned his Master's of Professional Accounting from the University of Texas at Arlington in 2023 and immediately joined the family firm. He currently is studying for the CPA exam."
+    },
+    {
+      "name": "Julie Cunningham",
+      "role": "Accountant",
+      "bio": "Located outside Austin, Julie works remotely to assist Eddie and Kevin with tax and financial calculation, reconciliation and reporting."
+    },
+    {
+      "name": "Veronica Hugger",
+      "role": "Special Account Services",
+      "bio": "Veronica, who married Eddie in 2008, joined Edward J. Walsh & Associates in 2010 to grow a sub-specialty of the firm: services to homeowners associations. Veronica manages the accounts receivable and accounts payable for local HOA clients."
+    },
+    {
+      "name": "Erica Gartee",
+      "role": "Accounting Assistant",
+      "bio": "Chances are you'll hear Erica's friendly voice when you phone the office, or she'll call you when your tax return is ready. She also is working to keep the office running smoothly while learning what she can about the business of accounting."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Mailing Address",
+      "text": "P.O. Box 538, Galveston, TX 77553. The office itself is in the Moody National Bank Tower at 2302 Postoffice St., Suite 602."
+    },
+    {
+      "heading": "Fax",
+      "text": "fax (409) 763-2108"
+    },
+    {
+      "heading": "Paying Your Bill",
+      "text": "For your convenience, we accept debit card payments. Once the payment has been processed, you will receive a receipt by email."
+    },
+    {
+      "heading": "Texas CPA Certificates",
+      "items": [
+        "Edward J. Walsh, Certificate Number 376, granted January 9, 1932",
+        "Edward J. Walsh, Jr., Certificate Number 5055, granted January 17, 1960",
+        "Edward (Eddie) J. Walsh III, CPA designation earned 1985",
+        "Kevin C. Walsh, Certified Public Accountant since 1995"
+      ]
+    },
+    {
+      "heading": "Privacy Policy",
+      "items": [
+        "Effective date: August 1, 2018",
+        "We may ask you for your email address and your first and last name",
+        "We do not collect Usage Data nor do we collect Tracking & Cookies Data",
+        "Your data is used to provide and maintain the service, to let you take part in its interactive features, and to provide customer care and support",
+        "Information you provide is transferred to and processed in the United States",
+        "Our service does not address anyone under the age of 18"
+      ]
+    },
+    {
+      "heading": "Find Us",
+      "text": "facebook.com/walshcpa"
+    }
+  ]
+}
