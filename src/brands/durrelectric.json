@@ -1,0 +1,266 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Durr Electric",
+  "shortName": "Durr Electric",
+  "summary": "A locally owned and operated electrician in Alvin, TX, serving homes and businesses across Houston and the surrounding area.",
+  "phone": "(281) 381-7529",
+  "email": "mark@durrelectric.com",
+  "address": "615 Legion Rd",
+  "town": "Alvin",
+  "state": "TX",
+  "zip": "77511",
+  "rating": 4.9,
+  "reviewCount": 43,
+  "hours": [
+    ["Mon – Fri", "Open 24 hours"],
+    ["Saturday", "Open 24 hours"],
+    ["Sunday", "Open 24 hours"]
+  ],
+  "brand": {
+    "primary": "#3D4045",
+    "primaryDeep": "#26282C",
+    "accent": "#FF9000",
+    "ink": "#23262A",
+    "muted": "#5C6168",
+    "surface": "#F5F6F7",
+    "line": "#DEE0E3",
+    "heading": "'Jost', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/durrelectric/logo.webp",
+    "logoWidth": 220
+  },
+  "emergency": {
+    "title": "24/7 emergency service",
+    "text": "Durr Electric provides 24 hour day and night emergency electrical repair, and the staff is available seven days a week."
+  },
+  "hero": {
+    "eyebrow": "Alvin, TX electrician",
+    "title": "A reliable Alvin electrician",
+    "titleAccent": "for your next project.",
+    "lead": "Locally owned and operated, with free estimates, 24/7 emergency service and a lifetime guarantee on all labor. Call today to schedule an appointment.",
+    "image": "/brands/durrelectric/hero",
+    "imageAlt": "An open residential breaker panel with its circuits wired in"
+  },
+  "groups": [
+    {
+      "slug": "residential",
+      "title": "Residential",
+      "icon": "home",
+      "summary": "Wiring, panels, lighting and ceiling fans for your home, by a state-licensed electrician.",
+      "intro": "Whether you own a home or a business, Durr Electric can handle your electrical needs. There is a master electrician on staff trained to perform many jobs, from a single ceiling fan to the wiring on an addition.",
+      "image": "/brands/durrelectric/residential",
+      "imageAlt": "A ceiling light fixture with several bulbs lit",
+      "services": [
+        {
+          "slug": "electric-wiring",
+          "title": "Electric Wiring",
+          "icon": "cable",
+          "text": "Residential wiring throughout the house, done by a state-licensed Alvin, TX, electrician with references available throughout the community.",
+          "points": ["Free estimates", "Lifetime guarantee on all labor"]
+        },
+        {
+          "slug": "panel-install-repair-upgrade",
+          "title": "Electric Panel Install, Repair and Upgrade",
+          "icon": "circuit",
+          "text": "Electric panel repair, installation and upgrades, including circuit breaker installation.",
+          "points": ["Panel repair", "Circuit breaker installation"]
+        },
+        {
+          "slug": "ceiling-fan-installation",
+          "title": "Ceiling Fan Installation",
+          "icon": "fan",
+          "text": "Ceiling fans supplied, mounted and wired to the right switch."
+        },
+        {
+          "slug": "interior-exterior-lighting",
+          "title": "Interior and Exterior Lighting",
+          "icon": "lightbulb",
+          "text": "Lighting inside the house and out, including exterior lighting around the yard and drive."
+        },
+        {
+          "slug": "add-on-remodel-new-construction",
+          "title": "Add On, Remodel and New Construction",
+          "icon": "wrench",
+          "text": "Electrical service for additions, remodels and new construction, with every project completed promptly and professionally."
+        }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial",
+      "icon": "building",
+      "summary": "Full electrical service for any commercial application.",
+      "intro": "Durr Electric provides full electrical service for any commercial application, from wiring and panels to the lighting and maintenance that keep a building running. Free estimates, and a lifetime guarantee on all labor.",
+      "image": "/brands/durrelectric/commercial",
+      "imageAlt": "Labelled breakers in a commercial electrical switchgear cabinet",
+      "services": [
+        {
+          "slug": "commercial-wiring",
+          "title": "Commercial Wiring",
+          "icon": "cable",
+          "text": "Electric wiring for commercial buildings, handled by a state-licensed electrician."
+        },
+        {
+          "slug": "commercial-panels",
+          "title": "Electric Panel Install, Repair and Upgrade",
+          "icon": "circuit",
+          "text": "Commercial electric panels installed, repaired and upgraded."
+        },
+        {
+          "slug": "commercial-lighting",
+          "title": "Interior and Exterior Lighting",
+          "icon": "lightbulb",
+          "text": "Interior and exterior lighting for commercial premises."
+        },
+        {
+          "slug": "security-lighting",
+          "title": "Security Lighting",
+          "icon": "shield",
+          "text": "Security lighting fitted around the outside of the building."
+        },
+        {
+          "slug": "commercial-maintenance",
+          "title": "Maintenance",
+          "icon": "settings",
+          "text": "Ongoing electrical maintenance for commercial customers."
+        }
+      ]
+    },
+    {
+      "slug": "generators",
+      "title": "Generators",
+      "icon": "power",
+      "summary": "Generator sales and generator service.",
+      "intro": "Durr Electric sells generators and services them, for homes and for businesses. Generator sales and generator service, by the same electrician either way.",
+      "services": [
+        {
+          "slug": "generator-sales",
+          "title": "Generator Sales",
+          "icon": "power",
+          "text": "Generators supplied through Durr Electric."
+        },
+        {
+          "slug": "generator-service",
+          "title": "Generator Service",
+          "icon": "settings",
+          "text": "Generator service by a state-licensed electrician, backed by the lifetime guarantee on all labor."
+        }
+      ]
+    },
+    {
+      "slug": "emergency-repair",
+      "title": "Emergency Repair",
+      "icon": "zap",
+      "summary": "24 hour day and night emergency electrical repair, seven days a week.",
+      "intro": "Durr Electric provides 24 hour day and night emergency service. The staff is available seven days a week, and 24/7 emergency service is part of what keeps a loyal customer base.",
+      "image": "/brands/durrelectric/emergency",
+      "imageAlt": "Yellow, blue and black insulated wires run into a junction",
+      "services": [
+        {
+          "slug": "emergency-electrical-repair",
+          "title": "24/7 Emergency Electrical Repair",
+          "icon": "zap",
+          "text": "Emergency electrical repair, day or night, any day of the week.",
+          "points": ["Staff available seven days a week"]
+        },
+        {
+          "slug": "panel-repair",
+          "title": "Panel Repair",
+          "icon": "circuit",
+          "text": "Electric panel repair, and circuit breaker installation."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Who is Durr Electric?",
+    "text": [
+      "If you need a reliable Alvin, TX, electrician to handle an important project, look no further than Durr Electric. As a locally owned and operated business, we are committed to providing some of the best services at the most affordable prices. We are also focused on completing every project promptly and professionally.",
+      "When you call Durr Electric for service, you get a state-licensed Alvin, TX, electrician with references available throughout the community. Our free estimates and 24/7 emergency services help us keep a loyal customer base, and we are proud of our A+ rating with the Better Business Bureau.",
+      "Our staff is available seven days a week, and we accept cash, credit and debit cards and personal checks. Call today to schedule an appointment."
+    ],
+    "image": "/brands/durrelectric/about",
+    "imageAlt": "An electrical panel part-built, with breakers and wiring in place",
+    "values": [
+      { "title": "Lifetime guarantee", "text": "A lifetime guarantee on all labor." },
+      { "title": "Free estimates", "text": "Estimates are free, so you know the job before it starts." },
+      { "title": "State-licensed", "text": "A state-licensed electrician, with a master electrician on staff." }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Experience and standing",
+      "items": [
+        "Mark Durr, owner",
+        "A master electrician on staff",
+        "State-licensed, with references available throughout the community",
+        "A+ rating with the Better Business Bureau"
+      ]
+    },
+    {
+      "heading": "What you get",
+      "items": [
+        "Free estimates",
+        "Lifetime guarantee on all labor",
+        "24/7 emergency service",
+        "Staff available seven days a week"
+      ]
+    },
+    {
+      "heading": "Payment accepted",
+      "text": "Cash, credit and debit cards, and personal checks."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: Durr Electric",
+        "Instagram: @durr_electric",
+        "Twitter: @durrelectric"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do you charge for an estimate?",
+      "a": "No. Estimates are free. Call the office and we will schedule an appointment."
+    },
+    {
+      "q": "Can you come out at night or on a weekend?",
+      "a": "Yes. We provide 24 hour day and night emergency service, and our staff is available seven days a week."
+    },
+    {
+      "q": "How do I pay?",
+      "a": "We accept cash, credit and debit cards, and personal checks."
+    },
+    {
+      "q": "Do you work on commercial buildings as well as houses?",
+      "a": "Yes. Whether you own a home or a business, we can handle your electrical needs, and we provide full electrical service for any commercial application."
+    },
+    {
+      "q": "Is the work guaranteed?",
+      "a": "Yes. We have a lifetime guarantee on all labor."
+    }
+  ],
+  "serviceArea": [
+    "Alvin",
+    "Houston",
+    "Friendswood",
+    "League City",
+    "Pearland",
+    "Webster",
+    "Sugar Land",
+    "Angleton",
+    "Freeport",
+    "Santa Fe",
+    "Manvel",
+    "Kingwood",
+    "Humble",
+    "Missouri City",
+    "Galveston",
+    "Pasadena",
+    "Clear Lake"
+  ]
+}

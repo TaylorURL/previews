@@ -1,0 +1,244 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "insurance",
+  "name": "Coady & Lewis Associates, Inc.",
+  "shortName": "Coady & Lewis",
+  "tagline": "Independent insurance brokerage for personal, business, life and health coverage",
+  "phone": "(281) 286-6060",
+  "email": "info@coadyandlewis.com",
+  "address": "400 Hobbs Rd, Suite 104",
+  "town": "League City",
+  "state": "TX",
+  "zip": "77573",
+  "since": 1994,
+  "rating": 4.8,
+  "reviewCount": 22,
+  "hours": [
+    ["Monday", "8:30 AM – 5 PM"],
+    ["Tuesday", "8 AM – 5 PM"],
+    ["Wednesday", "8:30 AM – 5 PM"],
+    ["Thursday", "8:30 AM – 5 PM"],
+    ["Friday", "8:30 AM – 5 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "cta": {
+    "label": "Get a Quote",
+    "text": "Let us review your current coverage for free. We'll identify any dangerous gaps and show you how to properly protect your assets."
+  },
+  "brand": {
+    "primary": "#0a58a2",
+    "primaryDeep": "#073f74",
+    "accent": "#0f7ad1",
+    "ink": "#15202b",
+    "muted": "#56616e",
+    "surface": "#f5f8fb",
+    "cream": "#e9f0f7",
+    "line": "#d8e2ec",
+    "heading": "'Inter', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/coadyandlewis/logo.webp",
+    "logoWidth": 170
+  },
+  "hero": {
+    "eyebrow": "Trusted independent insurance brokerage",
+    "title": "Protecting what matters most.",
+    "lead": "At Coady & Lewis, we believe that an educated client makes the best decisions. We prioritize teaching you about your options while providing tailored personal, business, and life insurance policies to ensure you're confidently protected.",
+    "image": "/brands/coadyandlewis/hero",
+    "imageAlt": "An insurance advisor going through a policy with a family at the kitchen table",
+    "points": ["Personal insurance", "Business coverage", "Life & health"]
+  },
+  "overview": {
+    "title": "Comprehensive insurance solutions",
+    "text": "We offer a full spectrum of insurance policies. Our goal is to educate you on every option so you can confidently choose the coverage that fits your unique needs."
+  },
+  "audiences": { "individuals": "Personal", "businesses": "Business" },
+  "services": [
+    {
+      "slug": "auto",
+      "title": "Auto Insurance",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Accidents, liability and uninsured motorists.",
+      "text": "Comprehensive coverage for your vehicles, protecting you against accidents, liability, and uninsured motorists.",
+      "lead": "Comprehensive coverage for your vehicles, protecting you against accidents, liability, and uninsured motorists. We look at your limits before we look at the premium, because state minimums are where most of the exposure hides.",
+      "covers": [
+        { "title": "Adequate liability limits", "text": "Limits matched to your net worth. If a major lawsuit happens, your savings, investments, and home are fully protected." },
+        { "title": "Uninsured motorist", "text": "Protection against drivers who carry no insurance or not enough of it." },
+        { "title": "Manageable deductibles", "text": "We structure deductibles you can comfortably afford without risking financial hardship in the event of a claim." },
+        { "title": "Proactive reviews", "text": "As your life changes, whether buying a new home or adding a teen driver, we adjust your coverage to keep you fully protected." }
+      ],
+      "questions": [
+        { "q": "What happens if I only carry state minimum liability?", "a": "If you are sued for $500,000 and only have $50,000 in coverage, your personal assets, home, and savings are exposed. We size the limits to what you actually have to lose." }
+      ]
+    },
+    {
+      "slug": "homeowners",
+      "title": "Homeowners Insurance",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Fire, theft, weather damage and liability.",
+      "text": "Safeguard your most valuable asset from fire, theft, weather damage, and personal liability claims.",
+      "lead": "Safeguard your most valuable asset from fire, theft, weather damage, and personal liability claims. On the Texas coast the wind and hail terms matter as much as the premium, so we go through them with you before you sign.",
+      "covers": [
+        { "title": "Replacement cost coverage", "text": "If a disaster strikes, your policy pays to buy brand new items at today's retail prices, with zero depreciation." },
+        { "title": "Texas storm protection", "text": "Manageable 2% wind and hail deductibles and full Replacement Cost Value for your roof, ensuring you're covered when the next hailstorm hits." },
+        { "title": "Personal liability", "text": "Protection against liability claims made against you as a homeowner." },
+        { "title": "Quality carriers", "text": "We exclusively partner with highly-rated carriers known for fair, prompt claims resolution and exceptional financial stability." }
+      ],
+      "questions": [
+        { "q": "Why does a cheap Texas home policy cost more in the end?", "a": "High percentage wind and hail deductibles of 2% or 3% and actual cash value roof schedules mean you could pay tens of thousands out of pocket for storm damage." },
+        { "q": "What is actual cash value?", "a": "Payouts are heavily depreciated. You get the garage sale value of your items, not what it actually costs to replace them." },
+        { "q": "What does a hailstorm cost on a cheap policy?", "a": "On a $400,000 home with a $35,000 roof replacement, a cheap Texas policy pays about $13,000 after the 2% wind and hail deductible and roof depreciation, leaving you $22,000 out of pocket. With full replacement cost value the policy pays about $27,000 and you pay the $8,000 deductible." }
+      ]
+    },
+    {
+      "slug": "renters",
+      "title": "Renters Insurance",
+      "audience": "individuals",
+      "icon": "key",
+      "summary": "Belongings and liability when you rent.",
+      "text": "Protect your personal belongings and gain liability coverage even when you don't own the property.",
+      "lead": "Protect your personal belongings and gain liability coverage even when you don't own the property.",
+      "covers": [
+        { "title": "Personal belongings", "text": "Cover for the contents of your rented home or apartment." },
+        { "title": "Personal liability", "text": "Liability coverage that follows you even though you do not own the property." }
+      ]
+    },
+    {
+      "slug": "umbrella",
+      "title": "Umbrella Insurance",
+      "audience": "individuals",
+      "icon": "umbrella",
+      "summary": "Liability above your auto and home limits.",
+      "text": "Extra liability coverage that goes beyond the limits of your standard auto and home policies.",
+      "lead": "Extra liability coverage that goes beyond the limits of your standard auto and home policies. It is the layer that keeps a single large claim from reaching your savings, investments and home.",
+      "covers": [
+        { "title": "Limits matched to your net worth", "text": "If a major lawsuit happens, your savings, investments, and home are fully protected." },
+        { "title": "Sits over auto and home", "text": "It picks up where the liability limits on your underlying policies stop." }
+      ]
+    },
+    {
+      "slug": "boat-watercraft",
+      "title": "Boat & Watercraft",
+      "audience": "individuals",
+      "icon": "anchor",
+      "summary": "Boats, yachts and personal watercraft.",
+      "text": "Specialized coverage for your boat, yacht, or personal watercraft against damage and liability.",
+      "lead": "Specialized coverage for your boat, yacht, or personal watercraft against damage and liability."
+    },
+    {
+      "slug": "motorcycle",
+      "title": "Motorcycle Insurance",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "Damage, liability and custom parts.",
+      "text": "Tailored policies for motorcycle enthusiasts covering damage, liability, and custom parts.",
+      "lead": "Tailored policies for motorcycle enthusiasts covering damage, liability, and custom parts."
+    },
+    {
+      "slug": "life-and-health",
+      "title": "Life & Health",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Term and whole life, explained.",
+      "text": "Protecting your family's future has never been easier. Compare rates instantly and find the life insurance policy that fits your needs.",
+      "lead": "Protecting your family's future has never been easier. We compare rates and help you find the life insurance policy that fits your needs, and we explain the differences rather than leaving you to guess at them.",
+      "covers": [
+        { "title": "Term versus whole life", "text": "Confused about your options? We break down the key differences between term and whole life policies." },
+        { "title": "Real-time quotes", "text": "Compare rates instantly and find the policy that fits your needs in just minutes." }
+      ],
+      "questions": [
+        { "q": "Should I buy term or whole life?", "a": "It depends on how long you need the coverage and what you want it to do. We break down the key differences between term and whole life policies so you can decide with the facts in front of you." }
+      ]
+    },
+    {
+      "slug": "business",
+      "title": "Business Insurance",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Commercial coverage built around your risks.",
+      "text": "Commercial coverage for Texas businesses, with the different types of policy explained so you can see what your business actually needs.",
+      "lead": "We help you understand the different types of commercial coverage and work out what your business actually needs, rather than handing you a one-size-fits-all package.",
+      "covers": [
+        { "title": "Landlord and property policies", "text": "Deep knowledge of Texas home, auto, landlord, and business policies. We explain the coverage, not just the price." },
+        { "title": "Cyber liability", "text": "Every modern business, regardless of size, needs protection against data breaches and cyber threats." }
+      ]
+    }
+  ],
+  "process": {
+    "title": "How we work for you",
+    "text": "We don't just sell policies; we build customized protection strategies.",
+    "steps": [
+      { "title": "Risk assessment first", "text": "We take the time to understand your unique exposures, lifestyle, and assets before we ever look at a premium. No cookie-cutter policies." },
+      { "title": "Quality carriers", "text": "We exclusively partner with highly-rated carriers known for fair, prompt claims resolution and exceptional financial stability." },
+      { "title": "Tailored asset protection", "text": "Your home and car are significant investments. We design custom policies to shield your wealth from unexpected liabilities." },
+      { "title": "Unbiased expert guidance", "text": "As independent brokers, we work for you, not the insurance companies. We educate you on the 'why' behind every recommendation." },
+      { "title": "Long-term partnership", "text": "Your life changes, and your coverage should too. We provide proactive annual reviews to ensure your protection evolves with you." }
+    ]
+  },
+  "about": {
+    "title": "Over three decades of trusted experience.",
+    "text": [
+      "Since 1994, Coady & Lewis Associates, Inc. has been a cornerstone of the community, providing reliable, independent insurance solutions. For over three decades, we have built our business on a foundation of trust, integrity, and an unwavering commitment to our clients.",
+      "As the industry has evolved, so have we, but our core mission remains unchanged: putting our clients first and ensuring they have the education and guidance necessary to protect what matters most. Our long-standing relationships with top-rated carriers allow us to continually deliver exceptional value and peace of mind.",
+      "Many agencies compete to offer the absolute lowest price. We don't. We focus on securing the best premium for comprehensive coverage, so you aren't left exposed when disaster strikes."
+    ],
+    "values": [
+      { "title": "Independent focus", "text": "We work for you, not the insurance companies. This means we can shop across multiple carriers to find the perfect coverage at the best rate." },
+      { "title": "Personalized service", "text": "Every client is unique. We take the time to understand your specific needs, risks, and goals to craft a truly customized insurance strategy." },
+      { "title": "Education first", "text": "Our priority is to educate you. By breaking down complex policy details, we ensure you have the knowledge needed to make informed decisions about your coverage." }
+    ]
+  },
+  "team": [
+    { "name": "Karen Coady", "role": "Founder & CEO", "bio": "Karen founded Coady & Lewis Associates in 1994 in Clear Lake, Texas, drawing on her prior experience in the logistics industry. She built the agency on a foundation of trust and a commitment to putting clients first." },
+    { "name": "Jeffrey Lewis", "role": "President", "bio": "A Clear Creek High School graduate with a B.A. from Rice University, Jeffrey serves as President. He brings extensive local knowledge and a dedication to finding the right insurance solutions for the community." },
+    { "name": "Shaun McPhee", "role": "COO", "bio": "As COO, Shaun is dedicated to providing outstanding customer service and tailored insurance strategies. He works closely with clients to review policies and ensure their unique needs are met." },
+    { "name": "Amanda Chocalas", "role": "Insurance Professional", "bio": "Amanda brings a wealth of experience and a passion for helping clients find the perfect coverage. She is dedicated to providing excellent personalized service." },
+    { "name": "Veronica Cantu", "role": "Insurance Professional", "bio": "Veronica is committed to supporting our clients with their insurance needs, ensuring they receive the best guidance and service possible." }
+  ],
+  "serviceArea": ["League City", "Clear Lake", "Houston"],
+  "facts": [
+    {
+      "heading": "Our offices",
+      "items": [
+        "400 Hobbs Rd Ste 104, League City, TX 77573",
+        "1334 Brittmoore Rd Ste 1202, Houston, TX 77043"
+      ]
+    },
+    {
+      "heading": "Our history",
+      "items": [
+        "1994 — Karen Coady establishes Coady & Lewis Associates in Clear Lake, Texas, building the agency on trust and client-first values.",
+        "2004 — Expanded our independent services, strengthening our relationships with top-rated carriers to offer better choices to our growing client base.",
+        "2014 — Celebrating 20 years of service, continuing our commitment to educating clients and providing tailored protection strategies.",
+        "Present — Now serving the community for over 30 years, we remain proudly independent and dedicated to your family's and business's future."
+      ]
+    },
+    {
+      "heading": "Best premium, not cheapest rate",
+      "items": [
+        "Cut-rate policies often strip out essential coverages, impose massive deductibles, and leave you personally liable for tens of thousands of dollars in a claim.",
+        "You might save $20 a month on a cheap policy, then face a crippling $5,000 or $10,000 deductible when an emergency strikes.",
+        "We structure your policy to provide maximum protection for your assets at a competitive rate, so you have true peace of mind when you need it most."
+      ]
+    },
+    {
+      "heading": "Partner referral program",
+      "text": "Built for mortgage and real estate professionals. Give your clients same-day insurance quotes from a trusted local brokerage, and earn monthly gift cards for every qualified referral. Register as a partner for a unique Partner ID and referral link, share it with clients who need insurance during their transaction, and we quote the same day. Partners with 5 or more qualified referrals in a month are entered in a $100 gift card drawing; 10 or more enters the premium $250 drawing."
+    },
+    {
+      "heading": "Resources and tips",
+      "items": [
+        "How to choose the right business insurance",
+        "5 tips for lowering your auto insurance premium",
+        "Understanding life insurance: term vs. whole life",
+        "What does homeowners insurance actually cover?",
+        "The importance of cyber liability insurance",
+        "When to review and update your insurance policies"
+      ]
+    }
+  ]
+}

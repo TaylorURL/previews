@@ -1,0 +1,243 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "talk": "Brian or DeeAnn",
+  "name": "Standlee & Bleifeld CPAs PLLC",
+  "shortName": "Standlee & Bleifeld",
+  "tagline": "Accounting - Tax - Consulting",
+  "phone": "(832) 769-7135",
+  "email": "brian@texasaccountingfirm.com",
+  "address": "1334 Brittmoore Rd #1000D",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77043",
+  "rating": 4.7,
+  "reviewCount": 41,
+  "cta": {
+    "label": "Contact Us",
+    "text": "If you need help or want to know, just ask."
+  },
+  "brand": {
+    "primary": "#1b244f",
+    "primaryDeep": "#131937",
+    "accent": "#bb3439",
+    "ink": "#161c2b",
+    "muted": "#596274",
+    "surface": "#f6f7f9",
+    "cream": "#eceff5",
+    "line": "#dde2eb",
+    "heading": "'Playfair Display', Georgia, serif",
+    "body": "'Inter Tight', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter+Tight:wght@400;500;600;700&display=swap",
+    "logo": "/brands/standleebleifeld/logo.webp",
+    "logoWidth": 220
+  },
+  "hero": {
+    "eyebrow": "CPAs in Houston and South Texas",
+    "title": "Accounting is the language of business. Brian and DeeAnn speak it on your behalf.",
+    "lead": "From a financial perspective, nothing is a bigger threat to your business than not being in compliance with tax laws and regulations. Standlee & Bleifeld CPAs know the language of business and can help you comply, grow and succeed.",
+    "image": "/brands/standleebleifeld/hero",
+    "imageAlt": "Downtown Houston at dusk",
+    "points": [
+      "Offices in Houston and South Texas",
+      "International tax compliance",
+      "IRS and state tax resolution"
+    ]
+  },
+  "overview": {
+    "title": "Areas of practice",
+    "text": "We are not the largest firm in Texas, but we think it is one of the best. Pick an area to see how we work in it, or call and talk it through with Brian or DeeAnn."
+  },
+  "audiences": { "individuals": "Individuals", "businesses": "Businesses" },
+  "services": [
+    {
+      "slug": "tax-resolution",
+      "title": "Tax Resolution",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "Answering IRS and state tax notices.",
+      "text": "Notices from the IRS or state tax authorities can be intimidating. Standlee & Bleifeld is the firm you want in your corner for practical solutions and aggressive defense against unreasonable penalties and agency errors.",
+      "lead": "We provide experienced, professional support to resolve your tax issues with both IRS and state revenue agencies. Stop losing sleep over your taxes.",
+      "image": "/brands/standleebleifeld/tax-resolution",
+      "imageAlt": "A letter from the IRS being read at a desk",
+      "covers": [
+        { "title": "FIRPTA withholding", "text": "Recovering money the IRS owes you from FIRPTA withholding on a property sale." },
+        { "title": "Notices of Deficiency", "text": "Reading what the notice actually claims and answering it before the deadline runs." },
+        { "title": "Civil penalty letters", "text": "Defending against unreasonable penalties rather than paying them by default." },
+        { "title": "Agency errors", "text": "Correcting mistakes the IRS has made on your tax account." },
+        { "title": "Balances you cannot pay", "text": "Working out what to do about a large balance owed to the IRS or your state." }
+      ]
+    },
+    {
+      "slug": "expat-and-immigrant-tax",
+      "title": "Expat & Immigrant Tax",
+      "audience": "individuals",
+      "icon": "users",
+      "summary": "US tax compliance for expats and immigrants.",
+      "text": "US tax compliance for expats and immigrants, including US taxpayers with foreign income or accounts and nonresidents who own property or other assets here.",
+      "lead": "Living or earning across a border changes what the United States asks of you at tax time. DeeAnn Standlee's practice is built on US tax compliance for expats and immigrants, and on the reporting that foreign income, accounts and assets bring with them.",
+      "covers": [
+        { "title": "Foreign income and accounts", "text": "Reporting for a US taxpayer with income or accounts outside the United States." },
+        { "title": "Nonresident property owners", "text": "US filing for a nonresident who owns real property or other assets here." },
+        { "title": "Minimizing US tax liability", "text": "Keeping the US liability as low as the rules allow while staying compliant." }
+      ]
+    },
+    {
+      "slug": "real-estate",
+      "title": "Real Estate",
+      "audience": "businesses",
+      "icon": "house",
+      "summary": "Tax planning for investors and developers.",
+      "text": "Real estate investors, rehabbers, flippers and developers can greatly benefit from proper tax planning and execution. As real estate investors ourselves, we can help you get started right and grow your real estate business.",
+      "lead": "Whether you are buying your first short- or long-term rental, riding the BRRRR train or raising capital to build a new office building, trust the team at Standlee & Bleifeld CPAs PLLC to meet your accounting and tax needs.",
+      "image": "/brands/standleebleifeld/real-estate",
+      "imageAlt": "Homes, an office building and a Texas field of bluebonnets",
+      "covers": [
+        { "title": "Tax planning", "text": "Planning before a property is under contract rather than after, so the structure is right from the start." },
+        { "title": "Tax preparation", "text": "Returns for investors, rehabbers, flippers and developers." },
+        { "title": "Tax matters resolution", "text": "Handling the notices and disputes that come out of a real estate position." },
+        { "title": "Rentals, development and land", "text": "Commercial and residential rentals, development, BRRRR and land flipping." }
+      ],
+      "questions": [
+        { "q": "When should I start tax planning on a deal?", "a": "Do not wait to start tax planning until you have a property under contract. Schedule a consultation today." }
+      ]
+    },
+    {
+      "slug": "international",
+      "title": "International",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "US compliance for cross-border business.",
+      "text": "International accounts, businesses, properties and trusts create special reporting and tax requirements that do not apply to domestic businesses. Failure to comply can lead to stiff penalties.",
+      "lead": "At Standlee & Bleifeld CPAs PLLC, you will find professionals with the knowledge and skills to confidently manage your international tax compliance and minimize your US tax liability.",
+      "covers": [
+        { "title": "Foreign entities in the US", "text": "A foreign entity doing business in the United States." },
+        { "title": "US entities abroad", "text": "A US entity doing business outside the United States." },
+        { "title": "Foreign income and accounts", "text": "A US taxpayer with foreign income or accounts." },
+        { "title": "US assets held by nonresidents", "text": "A nonresident who owns real property or other assets in the US." }
+      ]
+    },
+    {
+      "slug": "restaurants-and-bars",
+      "title": "Restaurants & Bars",
+      "audience": "businesses",
+      "icon": "store",
+      "summary": "Accounting built for food and drink.",
+      "text": "Restaurants and bars have unique accounting and tax needs. Hire a CPA firm that is experienced in meeting those needs.",
+      "lead": "Restaurants and bars have unique accounting and tax needs. So do distillers, brewers and vintners. Hire a CPA firm that is experienced in meeting those needs.",
+      "image": "/brands/standleebleifeld/restaurants-bars",
+      "imageAlt": "A bartender, a steak on the grill and a bar at service",
+      "covers": [
+        { "title": "Bars and restaurants", "text": "Accounting and tax for a trade with its own margins, its own payroll and its own reporting." },
+        { "title": "Distillers, brewers and vintners", "text": "Producers whose accounting carries requirements the dining room does not." }
+      ]
+    },
+    {
+      "slug": "influencers",
+      "title": "Influencers",
+      "audience": "businesses",
+      "icon": "chart",
+      "summary": "1099s, deductions and the rest of it.",
+      "text": "You are killing it on social media and exploding with free products and referral fees. Then the 1099s come. Many influencers leave money on the table by not deducting their necessary and ordinary expenses.",
+      "lead": "You need a CPA firm that is experienced in working with influencers, podcasts and affiliate marketing. We can help guide you to what is taxable, what is tax deductible, and how to reduce your tax burden and manage the financial aspects of being an online powerhouse.",
+      "image": "/brands/standleebleifeld/influencers",
+      "imageAlt": "A microphone resting on banknotes",
+      "covers": [
+        { "title": "Influencer deductions", "text": "The necessary and ordinary expenses that too often go unclaimed." },
+        { "title": "1099s and withholding", "text": "Managing the forms that arrive and the tax withheld against them." },
+        { "title": "Minimizing tax liability", "text": "Keeping the bill down on referral fees, gifted product and sponsorship income." },
+        { "title": "Records and payroll", "text": "Maintaining financial records, and payroll if you need it." },
+        { "title": "Staying current", "text": "How to avoid getting behind on your tax compliance." }
+      ]
+    }
+  ],
+  "about": {
+    "title": "Passion - Experience - Diligence",
+    "text": [
+      "Brian Bleifeld CPA and DeeAnn Standlee CPA met at Texas A&M's Bonfire in 1994. Friends from the beginning, Brian and DeeAnn used their education and experience to help worldwide businesses operate in the United States.",
+      "Standlee & Bleifeld CPAs PLLC is not the largest firm in Texas, but we think it is one of the best. Our client relationships span decades, not years. The personal accounting firm for countless global citizens and businesses both near and far, we are smart enough to serve you and small enough to care.",
+      "Our individual fields complement each other in surprising, and what turned out to be inseparable, ways. Our firm is destined to become one of the most sought-after corporate firms for complex small- to medium-sized businesses."
+    ],
+    "values": [
+      { "title": "Relationships that last", "text": "Our client relationships span decades, not years." },
+      { "title": "Small enough to care", "text": "We are smart enough to serve you and small enough to care." },
+      { "title": "Current with the technology", "text": "As technology has changed, many CPAs have not evolved with the times. DeeAnn and Brian are always on the cutting edge of technology in order to provide exceptional service to their clients." }
+    ]
+  },
+  "team": [
+    {
+      "name": "DeeAnn Standlee, CPA",
+      "role": "CPA, South Texas",
+      "bio": "DeeAnn has built her career on serving clients in complex and challenging tax situations. From defending clients against unwarranted IRS penalties to international tax compliance, DeeAnn goes to bat for her clients every day.",
+      "image": "/brands/standleebleifeld/team-1",
+      "imageAlt": "DeeAnn Standlee, CPA"
+    },
+    {
+      "name": "Brian Bleifeld, CPA",
+      "role": "CPA, Houston Area",
+      "bio": "Brian is not your normal CPA. He pairs technological know how with concern for your business or personal tax situation. Able to tackle your accounting and lead your finances with the heart of a teacher.",
+      "image": "/brands/standleebleifeld/team-2",
+      "imageAlt": "Brian Bleifeld, CPA"
+    }
+  ],
+  "serviceArea": ["Houston", "South Texas"],
+  "facts": [
+    {
+      "heading": "Offices in Houston and South Texas",
+      "items": [
+        "Brian Bleifeld CPA - Houston Area: 1334 Brittmoore Rd, Houston, Texas 77043, Brian@TexasAccountingFirm.com",
+        "DeeAnn Standlee CPA - South Texas: P.O. Box 1029, San Diego, TX 78384, DeeAnn@TexasAccountingFirm.com"
+      ]
+    },
+    {
+      "heading": "Brian's expertise is in accounting and tax for",
+      "items": [
+        "International business operations",
+        "Artists and entertainers",
+        "Bars and restaurants",
+        "Software designers"
+      ]
+    },
+    {
+      "heading": "DeeAnn's expertise is in accounting and tax for",
+      "items": [
+        "US tax compliance for international business",
+        "US tax compliance for expats and immigrants",
+        "Real estate, including but not limited to commercial and residential rentals, development, BRRRR and land flipping",
+        "Distillers, brewers and vintners"
+      ]
+    },
+    {
+      "heading": "When a tax notice arrives, these are the questions we hear",
+      "items": [
+        "Does IRS owe you money from FIRPTA withholding?",
+        "Did you receive a Notice of Deficiency?",
+        "Have you received a Civil Penalty letter from IRS?",
+        "Has IRS made an error on your tax account?",
+        "Do you owe IRS or your state a large balance you cannot pay in full?"
+      ]
+    },
+    {
+      "heading": "Booking a consultation",
+      "items": [
+        "Discovery call, 20 minutes - an introductory meeting to discuss your needs and our ability to meet those needs.",
+        "Existing client catch up, 30 minutes.",
+        "Texas reinstatement, 30 minutes - to discuss the path to reinstating a Texas LLC which has been forfeited.",
+        "These meetings are informational only and do not constitute accounting advice, which can only be given with a formal engagement."
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "title": "Schedule An Appointment",
+      "text": "Book a discovery call, an existing client catch up or a Texas reinstatement appointment.",
+      "href": "https://texasaccountingfirmschedule.as.me/"
+    },
+    {
+      "title": "Texas Corporate Reinstatement",
+      "text": "Start the reinstatement of a Texas LLC which has been forfeited.",
+      "href": "https://texasreinstatement.involve.me/texas-corporate-reinstatement"
+    }
+  ]
+}
