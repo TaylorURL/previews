@@ -1,0 +1,287 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "TCB Elite Fleet, LLC",
+  "shortName": "TCB Elite Fleet",
+  "phone": "(281) 573-1937",
+  "email": "ctgatlin@tcbelitefleet.com",
+  "address": "10902 I-10 Ste 5A",
+  "town": "Mont Belvieu",
+  "state": "TX",
+  "zip": "77523",
+  "rating": 4.9,
+  "reviewCount": 259,
+  "since": 2017,
+  "hours": [["Mon – Sun", "Open 24 hours"]],
+  "brand": {
+    "primary": "#0b2a63",
+    "primaryDeep": "#061a40",
+    "accent": "#c8102e",
+    "ink": "#17191d",
+    "surface": "#f2f4f8",
+    "heading": "'Poppins', 'Helvetica Neue', sans-serif",
+    "body": "'Lato', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Lato:wght@400;700&display=swap",
+    "logo": "/brands/tcbelitefleet/logo.webp",
+    "logoWidth": 210
+  },
+  "hero": {
+    "eyebrow": "Mont Belvieu roofing contractor",
+    "title": "Protecting your property with",
+    "titleAccent": "proven roofing solutions.",
+    "lead": "Residential and commercial roofing across the Houston area, from minor repairs to complete commercial roof installations. Free inspections, free estimates and 24/7 emergency service.",
+    "image": "/brands/tcbelitefleet/hero",
+    "imageAlt": "A home with steep gabled shingle roofs"
+  },
+  "promises": ["Free roof inspections", "Free estimates", "24/7 emergency service", "Financing available"],
+  "services": [
+    {
+      "slug": "residential-roofing",
+      "group": "residential",
+      "title": "Residential Roofing",
+      "short": "Roofing for Houston-area homes, from repairs to replacement.",
+      "text": "Your home deserves protection from a roofing team that understands the unique challenges Houston's climate presents.",
+      "image": "/brands/tcbelitefleet/residential",
+      "imageAlt": "A large two-story home with a new shingle roof",
+      "body": [
+        "Take care of those you love by protecting what shields them the most. Our residential roofing services ensure your family stays safe and your home looks its best.",
+        "Our residential roofing services encompass everything from traditional asphalt shingles to energy-efficient cool roofing systems designed specifically for Texas heat. A well-maintained roof is essential for the safety and aesthetics of your home, and it keeps your curb appeal while it stands up to the weather."
+      ],
+      "points": [
+        "Asphalt shingle roofing",
+        "Energy-efficient cool roofing systems",
+        "Free roof inspections and estimates",
+        "Financing options to fit your budget",
+        "Warranties to protect your investment",
+        "No job is too big or too small"
+      ]
+    },
+    {
+      "slug": "roof-installation",
+      "group": "residential",
+      "title": "Roof Installation",
+      "short": "Asphalt, metal and tile roofs installed to manufacturer spec.",
+      "text": "Specializing in asphalt, metal and tile roof installations, we make sure every roof we install stands the test of time.",
+      "image": "/brands/tcbelitefleet/installation",
+      "imageAlt": "New shingles over the exposed timber framing of a roof",
+      "body": [
+        "Professional roof installation is about more than just placing new materials. It is a comprehensive process that begins with thorough preparation and ends with meticulous quality checks, and our installation teams follow manufacturer-specified protocols so your new roof performs for its entire expected lifespan.",
+        "Your roof is your home's first line of defense. Our commitment is to give you a durable, dependable roof that offers peace of mind for years to come."
+      ],
+      "points": [
+        "Asphalt, metal and tile roof installation",
+        "High-quality materials and workmanship",
+        "Manufacturer-specified installation protocols",
+        "Tailored solutions to fit your specific needs",
+        "Re-roofing and full roof replacement"
+      ],
+      "faqs": [
+        {
+          "q": "How long does it take to replace a roof?",
+          "a": "This will vary depending on the size of the roof, but we can typically have the job completed in just one day."
+        }
+      ]
+    },
+    {
+      "slug": "roof-repair",
+      "group": "residential",
+      "title": "Roof Repair",
+      "short": "Leaks and damage found early, before they become emergencies.",
+      "text": "Timely roof repairs can prevent minor issues from escalating into costly emergencies, and many of our repairs are one-day jobs.",
+      "image": "/brands/tcbelitefleet/repair",
+      "imageAlt": "A hammer and pulled roofing nails resting on a shingle roof",
+      "body": [
+        "Our repair specialists are trained to quickly identify the root causes of leaks, damaged areas or performance issues affecting your roof. We provide honest assessments and straightforward solutions rather than pushing for unnecessary replacements.",
+        "We handle everything, from working with your insurance claim representative to offering financing options, so you get the quality service you deserve at a reasonable rate. Many of our roof repairs are one-day jobs."
+      ],
+      "points": [
+        "Leak and damaged area repair",
+        "Honest assessment before any replacement is suggested",
+        "Work with your insurance claim representative",
+        "Many repairs completed in one day",
+        "24/7 emergency service available"
+      ],
+      "faqs": [
+        {
+          "q": "Do you provide roof inspections?",
+          "a": "Yes, we offer complimentary roof inspections. If we find any concerns, we will take photos and show them to you. If the damage is significant enough that insurance will cover it, we will let you know so that you can file a claim."
+        }
+      ]
+    },
+    {
+      "slug": "storm-damaged-roof-repair",
+      "group": "storm",
+      "title": "Storm-Damaged Roof Repair",
+      "short": "24/7 emergency response after a storm.",
+      "text": "Our crews mobilize quickly after major storms, prioritizing temporary protection before completing permanent repairs.",
+      "image": "/brands/tcbelitefleet/storm",
+      "imageAlt": "A tree fallen against the roof of a house after a storm",
+      "claim": true,
+      "body": [
+        "When your roof has taken a hit from a storm, peace of mind can seem out of reach. Our team offers 24/7 emergency repairs, so you are never left waiting.",
+        "Our experienced crews can quickly mobilize after major storms, prioritizing temporary protection measures before completing permanent repairs that restore your roof's structural integrity and weather resistance. Acting quickly prevents leaks and water damage, and it saves you money in the long run."
+      ],
+      "points": [
+        "24/7 emergency service available",
+        "Temporary protection first, permanent repair after",
+        "Prevents leaks and further water damage",
+        "Restores the structural integrity of the roof",
+        "Free roof inspection after the storm"
+      ],
+      "faqs": [
+        {
+          "q": "How often does my roof need to be inspected?",
+          "a": "A good rule of thumb is to have your roof inspected once a year, but if there is a storm with high winds, we recommend having it looked at as soon as possible."
+        }
+      ]
+    },
+    {
+      "slug": "hail-damaged-roof-repair",
+      "group": "storm",
+      "title": "Hail-Damaged Roof Repair",
+      "short": "Granule loss, dents and cracked tiles put right.",
+      "text": "From granule loss on asphalt shingles to dents in metal roofing or cracked tiles, we address all forms of hail damage.",
+      "image": "/brands/tcbelitefleet/hail",
+      "imageAlt": "A hand holding a hailstone above a shingle roof",
+      "body": [
+        "Hail damage is a serious concern for homeowners, but you do not have to tackle it alone. We assess your roof damage and provide a tailored solution that suits your needs.",
+        "Hail can cause significant damage to your roof, leading to leaks, structural issues and further costly repairs if left unchecked. Severe hail damage can compromise roof integrity, so the sooner it is found, the less it costs to put right."
+      ],
+      "points": [
+        "Granule loss on asphalt shingles",
+        "Dents in metal roofing",
+        "Cracked tiles",
+        "Free roof inspection with photos of what we find",
+        "Insurance restoration"
+      ]
+    },
+    {
+      "slug": "commercial-roofing",
+      "group": "commercial",
+      "title": "Commercial Roofing",
+      "short": "Flat and low-slope systems: TPO, modified bitumen and more.",
+      "text": "Flat roofing systems, TPO, modified bitumen and other commercial-grade materials designed to protect your business investment.",
+      "image": "/brands/tcbelitefleet/commercial",
+      "imageAlt": "A white church building with a steeple and a low-slope roof",
+      "body": [
+        "Commercial properties require specialized roofing approaches that balance durability, maintenance requirements and cost-effectiveness. Our commercial roofing team brings extensive experience with flat roofing systems, TPO, modified bitumen and other commercial-grade materials.",
+        "As a business owner, you have got a million things on your mind. Let us handle your roofing needs so you can concentrate on what matters most, running your business."
+      ],
+      "points": [
+        "Flat and low-slope roofing systems",
+        "TPO single-ply roofing",
+        "Modified bitumen",
+        "Protection from weather damage",
+        "Compliance with safety standards",
+        "Enhanced energy efficiency and long-term cost savings",
+        "Increased property value"
+      ]
+    }
+  ],
+  "claim": {
+    "title": "How we handle an insurance claim",
+    "text": "We work with your insurance claim representative, and the inspection that starts it is free.",
+    "steps": [
+      {
+        "title": "Free roof inspection",
+        "text": "We offer complimentary roof inspections. If we find any concerns, we take photos and show them to you."
+      },
+      {
+        "title": "We tell you where you stand",
+        "text": "If the damage is significant enough that insurance will cover it, we let you know so that you can file a claim."
+      },
+      {
+        "title": "We work with your claim representative",
+        "text": "From working with your insurance claim representative to offering financing options, we handle it."
+      }
+    ]
+  },
+  "about": {
+    "title": "Mont Belvieu's preferred roofing contractor",
+    "text": [
+      "When your roof is in desperate need of repair, you should entrust it to an experienced team. Regardless of your roofing materials, needing a replacement or repair is inevitable. TCB Elite Fleet can help you rest assured that your roof will get the service it needs, and no service request is ever too big or small.",
+      "From gutters to sheetrock, TCB Elite Fleet is here for your roof. Nobody can make do without a sturdy roof over their heads, which is why we pay close attention to details when we work for our customers. Our team members enjoy going the extra mile to provide quick and reliable services to each customer.",
+      "Call to ask about our warranties and insurance claims process. We also offer free estimates, which means you do not have to pay upfront, and many of our roof repairs are one-day jobs."
+    ],
+    "image": "/brands/tcbelitefleet/about",
+    "imageAlt": "A two-story brick home with a new dark shingle roof",
+    "values": [
+      { "title": "Family owned and operated", "text": "A family-owned and operated roofing company serving the Houston area." },
+      { "title": "A+ rating with the BBB", "text": "Our A+ rating with the Better Business Bureau reflects how we deal with people." },
+      { "title": "No job too big or small", "text": "From a single repair to a complete commercial roof installation." }
+    ]
+  },
+  "inspection": {
+    "title": "What happens at a free roof inspection",
+    "steps": [
+      { "title": "You get in touch", "text": "Fill out the form or call, and a TCB Elite Fleet representative will contact you shortly to schedule it." },
+      { "title": "We inspect the roof", "text": "A complimentary roof inspection, at no cost and with no obligation." },
+      { "title": "You see the photos", "text": "If we find any concerns, we take photos and show them to you, and tell you if insurance will cover it." }
+    ]
+  },
+  "serviceArea": ["Mont Belvieu", "Baytown", "Anahuac", "Dayton", "Houston", "Katy"],
+  "areasText": "Our office is on I-10 in Mont Belvieu, and we serve Baytown, Mont Belvieu, Anahuac, Dayton, Houston, Katy and the surrounding areas.",
+  "areasImage": "/brands/tcbelitefleet/areas",
+  "areasImageAlt": "An aerial view of a brick ranch home with a new shingle roof",
+  "contactImage": "/brands/tcbelitefleet/contact",
+  "contactImageAlt": "The front elevation of a large home with a new charcoal shingle roof",
+  "facts": [
+    {
+      "heading": "Why Choose TCB Elite Fleet",
+      "items": [
+        "24/7 emergency service available",
+        "Free roof inspections",
+        "Free estimates",
+        "Financing available",
+        "Warranties available",
+        "A+ rating with the BBB",
+        "Over 40 years of experience",
+        "Exceptional customer service",
+        "No job is too big or too small"
+      ]
+    },
+    {
+      "heading": "Services",
+      "items": [
+        "Roof replacement",
+        "Roof repair",
+        "Re-roofing",
+        "Roof installation",
+        "Commercial roofing",
+        "Insurance restoration"
+      ]
+    },
+    {
+      "heading": "Financing",
+      "text": "We offer a range of financing options tailored to your needs, with personalized rates designed to fit your budget. Whether it is a small repair or a full roof replacement, you can protect your home today and pay over time."
+    },
+    {
+      "heading": "Payment Methods",
+      "items": ["Cash", "Check"]
+    },
+    {
+      "heading": "Associations",
+      "text": "Better Business Bureau, with an A+ rating."
+    },
+    {
+      "heading": "Languages",
+      "text": "English."
+    },
+    {
+      "heading": "Good To Know",
+      "text": "Asphalt roofs last up to 20 years, while metal roofs last up to 60 years."
+    },
+    {
+      "heading": "How We Work",
+      "text": "Clear communication from the initial free inspection through project completion, premium materials and proven installation methods, and transparent business practices on every project."
+    },
+    {
+      "heading": "Find Us",
+      "items": [
+        "Facebook: facebook.com/108815395249963",
+        "Instagram: @tcbelitefleet",
+        "LinkedIn: linkedin.com/company/tcb-elite-fleet-llc"
+      ]
+    }
+  ]
+}

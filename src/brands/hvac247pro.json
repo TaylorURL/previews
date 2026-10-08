@@ -1,0 +1,464 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "HVAC247PRO",
+  "shortName": "HVAC247PRO",
+  "summary": "Licensed heating and air conditioning service, installation and 24/7 emergency repair for homes and businesses across Greater Houston.",
+  "phone": "(346) 509-6027",
+  "email": "office@hvac247pro.com",
+  "address": "5010 Gallagher Dr",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77045",
+  "rating": 5.0,
+  "reviewCount": 22,
+  "since": 2009,
+  "hours": [
+    [
+      "Mon – Fri",
+      "8:00 AM – 6:00 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Emergency calls only"
+    ],
+    [
+      "Emergency line",
+      "24 hours, every day"
+    ]
+  ],
+  "brand": {
+    "primary": "#234982",
+    "primaryDeep": "#0a1628",
+    "accent": "#e92227",
+    "ink": "#0a1628",
+    "muted": "#55637a",
+    "surface": "#f1f5fa",
+    "line": "#dbe3ee",
+    "heading": "'Space Grotesk', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/hvac247pro/logo.webp",
+    "logoWidth": 180
+  },
+  "emergency": {
+    "title": "24/7 emergency service",
+    "text": "No cooling, no heat or a system down overnight, a live person answers the emergency line after hours, on weekends and on holidays."
+  },
+  "sameDay": "Most calls are dispatched within the hour, and same-day repairs are typical.",
+  "licenses": [
+    {
+      "label": "TDLR HVAC",
+      "number": "TACLB00105442E"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Heating and air conditioning in Houston",
+    "title": "Houston's HVAC experts,",
+    "titleAccent": "24 hours a day.",
+    "lead": "Emergency repair, expert installation and licensed technicians serving the Greater Houston metro area, with upfront flat-rate pricing before any work begins.",
+    "image": "/brands/hvac247pro/hero",
+    "imageAlt": "Manifold gauges connected to an outdoor condensing unit beside a Houston home"
+  },
+  "groups": [
+    {
+      "slug": "cooling",
+      "title": "Cooling",
+      "icon": "snowflake",
+      "summary": "Same-day AC diagnosis and repair, new system installation and ductless mini-splits.",
+      "intro": "A Houston summer gives an air conditioner no rest. Our technicians diagnose the real fault, quote the repair before touching anything, and carry the common parts on the van so most jobs finish the same day.",
+      "image": "/brands/hvac247pro/cooling",
+      "imageAlt": "A ductless mini-split condenser mounted on the brick wall of a Houston house",
+      "services": [
+        {
+          "slug": "ac-repair",
+          "title": "AC Repair",
+          "icon": "wrench",
+          "text": "Same-day diagnosis and repair for any AC fault: compressor failures, refrigerant leaks, electrical problems and control board faults.",
+          "points": [
+            "24/7 emergency AC repair",
+            "Same-day repairs typical",
+            "All major brands serviced",
+            "1-year repair warranty"
+          ]
+        },
+        {
+          "slug": "ac-installation",
+          "title": "AC Installation",
+          "icon": "air-vent",
+          "text": "Rooftop units, split systems and package units, sized by a professional load calculation rather than a guess from the old label.",
+          "points": [
+            "Rooftop and split system installation",
+            "Load calculations and system sizing",
+            "16-20 SEER efficiency systems",
+            "Startup commissioning included"
+          ]
+        },
+        {
+          "slug": "mini-split-systems",
+          "title": "Mini-Split Systems",
+          "icon": "fan",
+          "text": "Ductless and multi-zone mini-splits for room additions, server rooms and retail spaces where there is no ductwork to work with.",
+          "points": [
+            "No ductwork installation required",
+            "20-26 SEER inverter-driven efficiency",
+            "Multi-zone independent control",
+            "1-3 day installation"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "heating",
+      "title": "Heating",
+      "icon": "flame",
+      "summary": "Furnace, heat pump and boiler repair and replacement before the first cold front.",
+      "intro": "A Houston heating system sits unused most of the year and then fails on the coldest night. We repair gas furnaces, heat pumps and boilers around the clock, and install replacements sized to the building rather than to the old equipment.",
+      "image": "/brands/hvac247pro/heating",
+      "imageAlt": "A gas furnace and air handler installed in a Houston attic",
+      "services": [
+        {
+          "slug": "heating-repair",
+          "title": "Heating Repair",
+          "icon": "flame",
+          "text": "Ignition system repairs, blower motor replacement, heat exchanger diagnostics and thermostat troubleshooting on furnaces, heat pumps and boilers.",
+          "points": [
+            "Furnace, heat pump and boiler repair",
+            "24/7 emergency heating service",
+            "Same-day repairs when possible",
+            "All major heating brands serviced"
+          ]
+        },
+        {
+          "slug": "heating-installation",
+          "title": "Heating Installation",
+          "icon": "heater",
+          "text": "Gas furnaces, heat pumps, boilers and radiant heating installed with the ductwork, gas line and electrical work handled as part of the job.",
+          "points": [
+            "Gas furnaces, heat pumps and boilers",
+            "90-98% AFUE efficiency ratings",
+            "Gas line and electrical upgrades",
+            "10-20 year equipment warranties"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "indoor-air-quality",
+      "title": "Indoor Air Quality",
+      "icon": "wind",
+      "summary": "Duct cleaning, filtration, UV purification and ventilation for cleaner air inside.",
+      "intro": "Dust, humidity and allergens travel through the same ducts as the cool air. We clean and repair the ductwork first, then add the filtration or purification the building actually needs.",
+      "image": "/brands/hvac247pro/air",
+      "imageAlt": "Insulated flexible ductwork run between the rafters of a Houston attic",
+      "services": [
+        {
+          "slug": "duct-cleaning",
+          "title": "Duct Cleaning",
+          "icon": "waves",
+          "text": "NADCA-certified duct cleaning with truck-mounted negative-pressure equipment, removing dust, mold and debris from the system.",
+          "points": [
+            "NADCA-certified technicians",
+            "Truck-mounted negative-pressure equipment",
+            "Improves airflow 25-40%",
+            "Before and after inspection photos"
+          ]
+        },
+        {
+          "slug": "indoor-air-quality",
+          "title": "Air Purification and Filtration",
+          "icon": "filter",
+          "text": "MERV 13-16 filtration, UV-C disinfection, bipolar ionization and ERV/HRV ventilation, specified to meet ASHRAE requirements.",
+          "points": [
+            "ASHRAE 62.1 compliance solutions",
+            "MERV 13-16 filtration systems",
+            "UV-C air purification",
+            "ERV and HRV ventilation systems"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "maintenance",
+      "title": "Maintenance",
+      "icon": "gauge",
+      "summary": "Tune-ups, maintenance contracts and smart thermostat installation that keep bills down.",
+      "intro": "Most emergency calls start as something a tune-up would have caught. Regular maintenance keeps coils clean, refrigerant correct and electrical connections tight, and it is the cheapest part of owning a system.",
+      "image": "/brands/hvac247pro/maintenance",
+      "imageAlt": "An air handler cabinet opened up with the blower assembly exposed",
+      "services": [
+        {
+          "slug": "ac-maintenance",
+          "title": "AC Maintenance",
+          "icon": "settings",
+          "text": "Preventive maintenance contracts covering coil cleaning, refrigerant checks and electrical testing, on a quarterly schedule for commercial sites.",
+          "points": [
+            "Quarterly maintenance contracts",
+            "Extends equipment life 40-60%",
+            "15-25% energy cost reduction",
+            "Priority emergency service"
+          ]
+        },
+        {
+          "slug": "thermostat-installation",
+          "title": "Thermostat Installation",
+          "icon": "thermometer",
+          "text": "Smart Wi-Fi thermostats, multi-zone control and programmable scheduling, including integration with a building management system.",
+          "points": [
+            "Smart Wi-Fi thermostats",
+            "BMS integration over BACnet and Modbus",
+            "Multi-zone control systems",
+            "20-30% energy cost savings"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial HVAC",
+      "icon": "building",
+      "summary": "Offices, retail, restaurants, medical offices and industrial buildings, with compliance expertise.",
+      "intro": "Commercial-grade systems need a contractor who can work around trading hours and keep a building compliant. We install, repair and maintain rooftop units, package units and chilled systems for Houston businesses, with weekend and after-hours installation when the floor cannot be shut down.",
+      "image": "/brands/hvac247pro/commercial",
+      "imageAlt": "A row of commercial rooftop package units on a Houston building",
+      "services": [
+        {
+          "slug": "commercial-installation",
+          "title": "Commercial Installation",
+          "icon": "building",
+          "text": "Rooftop and package unit installation for offices, retail, warehouses and restaurants, including crane service and electrical upgrades.",
+          "points": [
+            "Weekend and after-hours installation",
+            "Crane service and electrical upgrades",
+            "5-10 year equipment warranties"
+          ]
+        },
+        {
+          "slug": "emergency-hvac-repair",
+          "title": "Emergency HVAC Repair",
+          "icon": "shield",
+          "text": "Critical system failures, refrigerant leaks, compressor failures and electrical faults answered after hours, at weekends and on holidays.",
+          "points": [
+            "Priority dispatch for complete system failures",
+            "After hours, weekends and holidays",
+            "No trip charge on emergency calls"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Limited offer",
+    "title": "Save 10% off your first HVAC service.",
+    "text": "New customers get 10% off their first service with HVAC247PRO, booked by phone or through the form.",
+    "image": "/brands/hvac247pro/tuneup",
+    "imageAlt": "A smart thermostat mounted on a hallway wall"
+  },
+  "plan": {
+    "name": "Maintenance Plan",
+    "intro": "A twice-yearly maintenance visit that keeps the system running and puts you at the front of the queue when something does go wrong.",
+    "tiers": [
+      {
+        "name": "Maintenance Plan",
+        "price": "$79",
+        "period": "per visit",
+        "featured": true,
+        "features": [
+          "28-point AC tune-up",
+          "Filter replacement",
+          "System optimization",
+          "Priority scheduling",
+          "15% off all repairs"
+        ]
+      }
+    ],
+    "note": "Twice yearly. Prices are starting estimates; final pricing depends on system type, parts needed and job complexity."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "A family-owned Houston shop that answers the phone itself.",
+    "text": [
+      "HVAC247PRO was founded in 2009 with a clear mission: give Houston homes and businesses reliable, professional HVAC service whenever they need it. What started as a small team of technicians has grown into a full commercial and residential contractor covering the Greater Houston metro area.",
+      "Climate control here is not only about comfort. It protects a business, its equipment and its bottom line, which is why the emergency line is answered 24 hours a day, 365 days a year.",
+      "The team is licensed, bonded and insured, holds EPA and NATE certification, and stays current with the systems and techniques coming into the trade. We are family-owned and Houston-local, not a national franchise."
+    ],
+    "image": "/brands/hvac247pro/team",
+    "imageAlt": "Air handlers and insulated ductwork installed in a Houston attic",
+    "values": [
+      {
+        "title": "Upfront pricing",
+        "text": "Flat-rate pricing agreed before any work begins, with no hidden fees and free estimates on installations and major repairs."
+      },
+      {
+        "title": "100% satisfaction",
+        "text": "If you are not happy we make it right, and the workmanship is guaranteed on every job."
+      },
+      {
+        "title": "Licensed and insured",
+        "text": "Texas license TACLB00105442E, bonded, insured and EPA-certified technicians on every call."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What HVAC services do you offer in Houston?",
+      "a": "AC repair, AC installation, heating repair, furnace installation, ductless mini-split systems, duct cleaning, indoor air quality solutions and preventive maintenance plans, for both residential and commercial properties across Houston and 23 surrounding cities."
+    },
+    {
+      "q": "Do you offer 24/7 emergency HVAC repair?",
+      "a": "Yes. Whether the AC breaks down at midnight or the heater fails on a holiday, our licensed technicians are ready to respond. The emergency line is answered by a live person, not a voicemail."
+    },
+    {
+      "q": "What brands of HVAC equipment do you install?",
+      "a": "We install and service all major HVAC brands, including Carrier, Trane, Lennox, Rheem, Goodman, Daikin and York. Our technicians are factory-trained and can recommend the best system for your budget, home size and efficiency goals."
+    },
+    {
+      "q": "How do I know if I need AC repair or a full replacement?",
+      "a": "Consider replacement if the system is over 10 to 15 years old, needs frequent repairs costing more than 50% of a new unit, uses R-22 refrigerant, which has been phased out, or your energy bills have risen significantly."
+    },
+    {
+      "q": "Do you provide free estimates for HVAC work?",
+      "a": "Yes, free estimates on all HVAC installations and major repairs. On a service call there is a diagnostic fee, and it is credited back toward the repair when you approve the work."
+    },
+    {
+      "q": "How much does a new AC unit cost in Houston?",
+      "a": "A new AC installation in Houston typically ranges from $3,500 to $8,500 depending on system size, SEER rating and the square footage of the building. Call us for a quote based on your own system."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Baytown",
+    "Bellaire",
+    "Channelview",
+    "Conroe",
+    "Cypress",
+    "Deer Park",
+    "Friendswood",
+    "Humble",
+    "Katy",
+    "Kingwood",
+    "La Porte",
+    "League City",
+    "Missouri City",
+    "Pasadena",
+    "Pearland",
+    "Richmond",
+    "Rosenberg",
+    "Spring",
+    "Stafford",
+    "Sugar Land",
+    "The Woodlands",
+    "Tomball",
+    "Webster"
+  ],
+  "facts": [
+    {
+      "heading": "Licensed, certified and insured",
+      "items": [
+        "Texas state license TACLB00105442E, issued by the Texas Department of Licensing and Regulation",
+        "EPA Section 608 certified for refrigerant handling",
+        "NATE certified, North American Technician Excellence",
+        "NADCA-certified duct cleaning technicians",
+        "General liability and workers compensation insurance, $2M coverage",
+        "BBB accredited with an A+ rating",
+        "Carrier Factory Authorized Dealer",
+        "Best of Katy, 2024 winner"
+      ]
+    },
+    {
+      "heading": "Inspection fees, credited back",
+      "items": [
+        "Residential home AC and heating diagnostic: $49",
+        "Commercial, retail and restaurant spaces: $99",
+        "Office buildings and multi-unit facilities: $149",
+        "Nights, weekends and holidays: an extra $50 on the service call",
+        "Your inspection fee is credited toward the repair when you approve the work"
+      ]
+    },
+    {
+      "heading": "Warranties",
+      "items": [
+        "Equipment warranties of up to 10 years on installed systems",
+        "1-year parts and labor warranty on repairs",
+        "A 2-year labor warranty on an installation, on top of the manufacturer's parts warranty",
+        "Workmanship warranty of one to two years, set out in the service contract",
+        "Manufacturer warranties cover the equipment and materials, and we handle the claim paperwork",
+        "Workmanship guaranteed on every job, with a 100% satisfaction guarantee"
+      ]
+    },
+    {
+      "heading": "Our guarantees",
+      "items": [
+        "Price match: we beat any competitor's written quote",
+        "On-time guarantee: we arrive when promised or the service call is free",
+        "100% satisfaction: if you are not completely satisfied we make it right, or your money back",
+        "A written quote, with the parts, labor and warranty terms, before any work begins"
+      ]
+    },
+    {
+      "heading": "Home warranty claims",
+      "text": "We take direct payment from American Home Shield, Choice Home Warranty, Old Republic, 2-10 HBW and most other major carriers, and document everything the claim needs for approval."
+    },
+    {
+      "heading": "Permits and code compliance",
+      "items": [
+        "City of Houston permits pulled where the work requires one",
+        "Refrigerant work, gas furnace repairs and ductwork changes done to the 2021 IMC adoption",
+        "Refrigerant recovery documented for EPA Section 608 compliance",
+        "Paperwork left with you for insurers, home warranty providers and the next buyer's inspector",
+        "Permits and inspections coordinated on an electric-to-gas furnace conversion"
+      ]
+    },
+    {
+      "heading": "Brands we install and service",
+      "text": "Carrier, Trane, Lennox, Rheem, Goodman, Daikin, York, American Standard, Bryant and Amana, plus all other major HVAC brands. Our technicians are factory-trained across them, and we carry both OEM and generic parts for the most common systems. Smart thermostats: Nest, Ecobee and Honeywell."
+    },
+    {
+      "heading": "More work we do",
+      "items": [
+        "Refrigerant and Freon leak detection and repair",
+        "R-22 and R-410A system recharging",
+        "AC coil cleaning",
+        "Ductwork restoration and sealing",
+        "Indoor air quality testing",
+        "Heat pump repair and boiler installation",
+        "Smart thermostat setup",
+        "Over 60 services in all, listed in our service catalog"
+      ]
+    },
+    {
+      "heading": "Starting prices",
+      "items": [
+        "Heating installation: from $2,200",
+        "Duct cleaning: from $299 for a full home",
+        "Indoor air quality testing: $199",
+        "Smart thermostat installation: $149",
+        "Commercial HVAC: from $500",
+        "Starting estimates only; the final price depends on system type, parts and job complexity"
+      ]
+    },
+    {
+      "heading": "Houston neighborhoods we serve",
+      "text": "Downtown, the Heights, Midtown, the Galleria, Uptown, Greenway Plaza, EaDo, Briar Forest, Eldridge, Champions, Rice Military, Astrodome, Golfcrest, Aldine and Cloverleaf, plus Cinco Ranch and Cross Creek in Katy, First Colony and Telfair in Sugar Land, Manvel by Pearland, and Fulshear and Brookshire to the west. 365 neighborhoods and ZIP codes across the metro, from 24 service locations."
+    },
+    {
+      "heading": "Houston since 2009",
+      "items": [
+        "Over 15 years of experience on the team",
+        "More than 5,000 customers served across Greater Houston",
+        "471 photographed jobs across 24 neighborhoods in our gallery",
+        "Family-owned and Houston-local, not a national franchise"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/HVAC247PRO",
+        "LinkedIn: linkedin.com/company/hvac247pro",
+        "Pinterest: pinterest.com/hvac247pro",
+        "Yelp, Trustpilot, Yellow Pages and the Better Business Bureau",
+        "DexKnows, SuperPages and MapQuest"
+      ]
+    }
+  ]
+}

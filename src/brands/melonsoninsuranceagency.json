@@ -1,0 +1,282 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "insurance",
+  "name": "Melonson Insurance Agency",
+  "shortName": "Melonson Insurance",
+  "tagline": "Home, auto, commercial, motorcycle, recreational and surety bonds",
+  "phone": "(936) 336-4014",
+  "email": "hmelonson@melonsoninsurance.com",
+  "address": "1403 Marshall St",
+  "town": "Liberty",
+  "state": "TX",
+  "zip": "77575",
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "7 AM – 8 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Get a Quote",
+    "text": "Call the office on (936) 336-4014 or send a note through the form, and tell us what you need covered. Someone will get back to you shortly."
+  },
+  "brand": {
+    "primary": "#a61f00",
+    "primaryDeep": "#7a1700",
+    "accent": "#f38971",
+    "ink": "#1f1d1c",
+    "muted": "#463f3e",
+    "surface": "#faf6f4",
+    "cream": "#f3e8e3",
+    "line": "#e6d8d2",
+    "heading": "'Libre Baskerville', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/melonsoninsuranceagency/logo.webp",
+    "logoWidth": 44
+  },
+  "hero": {
+    "eyebrow": "Insurance agency in Liberty, Texas",
+    "title": "Friendly service and reliable coverage in Liberty.",
+    "lead": "At Melonson Insurance we are dedicated to providing our customers with friendly service. We value your business, and we have made it our mission to provide reliable services in our customer-driven approach.",
+    "image": "/brands/melonsoninsuranceagency/agent",
+    "imageAlt": "Melonson Insurance Agency, Liberty, Texas",
+    "points": [
+      "Home, auto and commercial",
+      "Motorcycle, recreational and ATV",
+      "Surety bonds"
+    ]
+  },
+  "overview": {
+    "title": "What we write for Liberty households and businesses.",
+    "text": "Pick a line of coverage to see what it covers, or call the office on (936) 336-4014 and talk it through with an agent."
+  },
+  "audiences": {
+    "individuals": "Individuals & Families",
+    "businesses": "Businesses"
+  },
+  "services": [
+    {
+      "slug": "home",
+      "title": "Home Insurance",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Coverage for the house and what is in it.",
+      "text": "Coverage for the house and what is in it, written through the carriers we represent in Liberty.",
+      "lead": "Home is one of the lines we write. Tell us about the house and we will go through the coverage with you before anything is signed.",
+      "image": "/brands/melonsoninsuranceagency/home",
+      "imageAlt": "A single storey house with a brick chimney",
+      "covers": [
+        {
+          "title": "The structure",
+          "text": "The house itself, so it can be repaired or rebuilt after a covered loss."
+        },
+        {
+          "title": "What is inside",
+          "text": "Furniture, clothing and the rest of the contents of the home."
+        },
+        {
+          "title": "Liability at the property",
+          "text": "Injuries to guests and damage you are responsible for."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How do I get a quote on my home?",
+          "a": "Call the office on (936) 336-4014 or send a note through the contact form and tell us about the property."
+        }
+      ]
+    },
+    {
+      "slug": "auto",
+      "title": "Auto Insurance",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Cover for the cars in the household.",
+      "text": "Cover for the cars in the household, quoted through the carriers we represent, GAINSCO Auto Insurance among them.",
+      "lead": "We write auto for drivers in and around Liberty, through the carriers we represent.",
+      "image": "/brands/melonsoninsuranceagency/auto",
+      "imageAlt": "A car key resting on the bodywork of a car",
+      "covers": [
+        {
+          "title": "Liability",
+          "text": "Injuries and damage you cause to other people and their property."
+        },
+        {
+          "title": "Damage to your own car",
+          "text": "Repairs after a wreck, and the other losses a comprehensive policy picks up."
+        },
+        {
+          "title": "The carriers we represent",
+          "text": "GAINSCO Auto Insurance is one of the auto carriers whose coverage we write."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Can you quote more than one carrier?",
+          "a": "We represent several carriers. Call the office on (936) 336-4014 and we will tell you which of them we can quote for your vehicles."
+        }
+      ]
+    },
+    {
+      "slug": "motorcycle",
+      "title": "Motorcycle Insurance",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "Cover for the bike on and off the road.",
+      "text": "Cover for the bike, written as its own policy rather than as an afterthought on the car.",
+      "lead": "Motorcycle is one of the lines we write. Tell us about the bike and how it is ridden, and we will quote it.",
+      "image": "/brands/melonsoninsuranceagency/motorcycle",
+      "imageAlt": "A motorcycle on an open road",
+      "covers": [
+        {
+          "title": "Liability",
+          "text": "Injuries and damage you cause to others while riding."
+        },
+        {
+          "title": "Damage to the bike",
+          "text": "Repairs or replacement after a covered loss."
+        }
+      ]
+    },
+    {
+      "slug": "recreational-and-atv",
+      "title": "Recreational and ATV Insurance",
+      "audience": "individuals",
+      "icon": "truck",
+      "summary": "Recreational vehicles and ATVs.",
+      "text": "Recreational vehicles and ATVs, which a home or auto policy does not cover on its own.",
+      "lead": "Recreational and ATV is one of the lines we write. The machines that get ridden on the weekend usually need a policy of their own.",
+      "image": "/brands/melonsoninsuranceagency/recreational",
+      "imageAlt": "An all terrain vehicle on a wooded trail",
+      "covers": [
+        {
+          "title": "ATVs and off-road machines",
+          "text": "Cover for the machine and for the damage it causes."
+        },
+        {
+          "title": "Recreational vehicles",
+          "text": "A separate policy for what the house and car policies leave out."
+        }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial Insurance",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Cover for the business and its property.",
+      "text": "Cover for the business and its property, written through the commercial carriers and markets we represent.",
+      "lead": "We write commercial for businesses around Liberty, through the carriers and markets we represent. Texas Mutual, CNA, Burns & Wilcox, Hull & Company and IMS are among them.",
+      "image": "/brands/melonsoninsuranceagency/commercial",
+      "imageAlt": "A small commercial building beside a road",
+      "covers": [
+        {
+          "title": "The premises",
+          "text": "The building, the contents and the equipment the business runs on."
+        },
+        {
+          "title": "Liability",
+          "text": "Claims brought against the business by customers and others."
+        },
+        {
+          "title": "Workers' compensation",
+          "text": "Texas Mutual is among the carriers we represent for workers' compensation."
+        },
+        {
+          "title": "Markets we work with",
+          "text": "Burns & Wilcox, Hull & Company and IMS are among the markets we place business through."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Do you write workers' compensation?",
+          "a": "Texas Mutual, a workers' compensation carrier, is one of the carriers we represent."
+        }
+      ]
+    },
+    {
+      "slug": "surety-bonds",
+      "title": "Surety Bonds",
+      "audience": "businesses",
+      "icon": "stamp",
+      "summary": "Bonds a job or a licence calls for.",
+      "text": "Surety bonds for the jobs and licences that call for one, written through CNA Surety and Western Surety Company.",
+      "lead": "We write surety bonds through CNA Surety and Western Surety Company. Tell us which bond has been asked for and we will take it from there.",
+      "image": "/brands/melonsoninsuranceagency/surety",
+      "imageAlt": "A person signing a document at a desk",
+      "covers": [
+        {
+          "title": "Bonds for a licence or a permit",
+          "text": "The bond a city, county or state office asks for before it will issue one."
+        },
+        {
+          "title": "CNA Surety and Western Surety",
+          "text": "The surety markets we write bonds through."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Which bond do I need?",
+          "a": "Bring us the request from whoever is asking for the bond. It names the type and the amount, and we go from there."
+        }
+      ]
+    }
+  ],
+  "affiliations": {
+    "title": "Carriers we represent",
+    "items": [
+      "Progressive",
+      "MetLife",
+      "Kemper",
+      "GAINSCO Auto Insurance",
+      "Texas Mutual",
+      "CNA Surety",
+      "Western Surety Company",
+      "Burns & Wilcox",
+      "Hull & Company",
+      "IMS / London American"
+    ]
+  },
+  "about": {
+    "title": "About Melonson Insurance",
+    "text": [
+      "At Melonson Insurance we are dedicated to providing our customers with friendly service. We value your business.",
+      "We have made it our mission to provide reliable services in our customer-driven approach. To learn more about Melonson Insurance, and the services we can offer, please call us at (936) 336-4014."
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Lines we write",
+      "items": [
+        "Home",
+        "Auto",
+        "Commercial",
+        "Motorcycle",
+        "Recreational and ATV",
+        "Surety bonds"
+      ]
+    },
+    {
+      "heading": "Reaching the office",
+      "items": [
+        "Phone (936) 336-4014",
+        "Fax 936-336-7246",
+        "Email hmelonson@melonsoninsurance.com"
+      ]
+    },
+    {
+      "heading": "Commercial and personal",
+      "text": "Melonson Insurance writes commercial and personal insurance, so the house, the cars and the business can be handled in the same office."
+    }
+  ]
+}
