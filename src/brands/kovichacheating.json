@@ -1,0 +1,231 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Kovich A/C & Heating, LLC",
+  "shortName": "Kovich A/C & Heating",
+  "summary": "Residential and commercial air conditioning and heating repairs and installations for Galveston County and the surrounding areas.",
+  "phone": "(409) 770-3958",
+  "email": "info@kovichac.com",
+  "address": "8015 Bayside Ave Ste. B",
+  "town": "Galveston",
+  "state": "TX",
+  "zip": "77554",
+  "rating": 5.0,
+  "reviewCount": 7,
+  "hours": [["Every day", "Open 24 hours"]],
+  "brand": {
+    "primary": "#1b7cb8",
+    "primaryDeep": "#0f4c73",
+    "accent": "#ed252b",
+    "ink": "#2b2b2b",
+    "muted": "#6a6a6a",
+    "surface": "#eef5fa",
+    "line": "#d7e3ec",
+    "heading": "'Archivo', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/kovichacheating/logo.webp",
+    "logoWidth": 220
+  },
+  "emergency": {
+    "title": "Available 24/7",
+    "text": "Our technicians are available 24/7 for all your heating, cooling and indoor air quality needs."
+  },
+  "licenses": [{ "label": "TDLR HVAC", "number": "TACLB105022E" }],
+  "hero": {
+    "eyebrow": "Residential • Commercial • Repairs • Installations",
+    "title": "Let the professionals",
+    "titleAccent": "take care of your A/C and heating.",
+    "lead": "Your air conditioning and heating systems are vital to the comfort of your home or business. When it is just not performing like it should, call us for fast and affordable service that you can rely on.",
+    "image": "/brands/kovichacheating/hero",
+    "imageAlt": "An outdoor air conditioning condenser on a sunny day"
+  },
+  "groups": [
+    {
+      "slug": "cooling",
+      "title": "Cooling",
+      "icon": "snowflake",
+      "summary": "Air conditioning repairs, new installations and routine maintenance for homes and businesses.",
+      "intro": "Beat the Texas heat with Kovich A/C & Heating. When the air conditioning is just not performing like it should, call us for fast and affordable service that you can rely on, at any hour of the day or night.",
+      "image": "/brands/kovichacheating/cooling",
+      "imageAlt": "Air conditioning units mounted on a white exterior wall under a blue sky",
+      "services": [
+        {
+          "slug": "ac-repair",
+          "title": "A/C Repair",
+          "icon": "wrench",
+          "text": "Fast and affordable air conditioning repair for homes and businesses across Galveston County, with technicians available 24/7.",
+          "points": ["Residential and commercial", "Available 24 hours a day, every day"]
+        },
+        {
+          "slug": "ac-installation",
+          "title": "A/C Installation",
+          "icon": "air-vent",
+          "text": "New air conditioning systems installed in homes and commercial buildings, with a free estimate before you commit to anything.",
+          "points": [
+            "Free estimates for new installations",
+            "Luxaire, American Standard and Rheem equipment"
+          ]
+        },
+        {
+          "slug": "ac-maintenance",
+          "title": "Routine Maintenance",
+          "icon": "gauge",
+          "text": "Routine maintenance on the system you already have, so a problem is found before the hottest part of the summer.",
+          "points": ["Residential and commercial"]
+        }
+      ]
+    },
+    {
+      "slug": "heating",
+      "title": "Heating",
+      "icon": "flame",
+      "summary": "Heating repairs, replacements and maintenance for the handful of cold weeks on the island.",
+      "intro": "Your heating system is vital to the comfort of your home or business, and on the island it sits idle most of the year. We repair, replace and maintain heating systems for residential and commercial customers, 24 hours a day.",
+      "image": "/brands/kovichacheating/heating",
+      "imageAlt": "An outdoor heat pump unit beside a brick building",
+      "services": [
+        {
+          "slug": "heating-repair",
+          "title": "Heating Repair",
+          "icon": "flame",
+          "text": "No heat on the first cold night is a 24/7 call here. A technician comes out and gets the system running again.",
+          "points": ["Residential and commercial", "Available 24 hours a day, every day"]
+        },
+        {
+          "slug": "heating-installation",
+          "title": "Heating Installation",
+          "icon": "heater",
+          "text": "New heating systems installed for homes and businesses, quoted with a free estimate first.",
+          "points": [
+            "Free estimates for new installations",
+            "Luxaire, American Standard and Rheem equipment"
+          ]
+        },
+        {
+          "slug": "heating-maintenance",
+          "title": "Routine Maintenance",
+          "icon": "gauge",
+          "text": "Routine maintenance that catches a worn part on a system that has sat unused since last winter.",
+          "points": ["Residential and commercial"]
+        }
+      ]
+    },
+    {
+      "slug": "indoor-air-quality",
+      "title": "Indoor Air Quality",
+      "icon": "wind",
+      "summary": "The air inside the house, handled by the same technicians who service the system.",
+      "intro": "Our technicians are available 24/7 for all your heating, cooling and indoor air quality needs. The air inside a Galveston home travels through the same system that cools it, so it is handled by the same crew on the same visit.",
+      "image": "/brands/kovichacheating/air",
+      "imageAlt": "A circular metal ceiling vent with ductwork behind it",
+      "services": [
+        {
+          "slug": "indoor-air-quality",
+          "title": "Indoor Air Quality",
+          "icon": "wind",
+          "text": "Indoor air quality work for homes and businesses, by technicians who are available 24 hours a day, every day of the year.",
+          "points": ["Residential and commercial", "Available 24 hours a day, every day"]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "New installations",
+    "title": "Free estimates on a new system.",
+    "text": "Tell us about the home or the building and we price the new installation before you commit to anything."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Over 35 years in the industry, on the island.",
+    "text": [
+      "Kovich A/C & Heating provides trusted service to Galveston County and the surrounding areas, for homes and for businesses, on repairs and on new installations alike.",
+      "Our team has been in the industry for over 35 years and are known and recommended for their honesty, integrity and quality workmanship.",
+      "Our technicians are available 24/7 for all your heating, cooling and indoor air quality needs."
+    ],
+    "image": "/brands/kovichacheating/about",
+    "imageAlt": "Refrigeration manifold gauges used to charge an air conditioning system",
+    "values": [
+      {
+        "title": "Honesty and integrity",
+        "text": "The two things our customers name first when they recommend us."
+      },
+      {
+        "title": "Quality workmanship",
+        "text": "Over 35 years in the industry behind every repair and every installation."
+      },
+      {
+        "title": "Available 24/7",
+        "text": "Technicians on call for heating, cooling and indoor air quality, any hour."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Are you available at night and on weekends?",
+      "a": "Yes. Our technicians are available 24/7 for all your heating, cooling and indoor air quality needs."
+    },
+    {
+      "q": "Do you charge for an estimate on a new system?",
+      "a": "No. Estimates for new installations are free."
+    },
+    {
+      "q": "Do you work on commercial buildings as well as homes?",
+      "a": "Yes. We handle residential and commercial work, both repairs and installations."
+    },
+    {
+      "q": "Which brands do you install?",
+      "a": "Luxaire, American Standard and Rheem are our preferred brands and manufacturers."
+    },
+    {
+      "q": "Where do you work?",
+      "a": "Kovich A/C & Heating provides trusted service to Galveston County and the surrounding areas."
+    },
+    {
+      "q": "How can I pay?",
+      "a": "American Express, Visa, MasterCard, Discover, Apple Pay, check and cash."
+    }
+  ],
+  "serviceArea": [
+    "Galveston",
+    "League City",
+    "Texas City",
+    "Santa Fe",
+    "La Marque",
+    "Hitchcock",
+    "Dickinson",
+    "Friendswood",
+    "Alvin",
+    "Pasadena"
+  ],
+  "facts": [
+    {
+      "heading": "Preferred Brands and Manufacturers",
+      "items": ["Luxaire", "American Standard", "Rheem"]
+    },
+    {
+      "heading": "Payment Methods",
+      "items": ["American Express", "Visa", "MasterCard", "Discover", "Apple Pay", "Check", "Cash"]
+    },
+    {
+      "heading": "Service Area",
+      "text": "Kovich A/C & Heating provides trusted service to Galveston County and the surrounding areas."
+    },
+    {
+      "heading": "What We Cover",
+      "items": ["Residential", "Commercial", "Repairs", "Installations"]
+    },
+    {
+      "heading": "License",
+      "text": "TACLB105022E. Regulated by the Texas Department of Licensing and Regulation, PO Box 12157, Austin, Texas, 1-800-803-9202 or (512) 463-6599, www.tdlr.texas.gov."
+    },
+    {
+      "heading": "Experience",
+      "text": "Our team has been in the industry for over 35 years and are known and recommended for their honesty, integrity and quality workmanship."
+    },
+    {
+      "heading": "Social",
+      "text": "Kovich A/C & Heating is on Facebook and Instagram."
+    }
+  ]
+}

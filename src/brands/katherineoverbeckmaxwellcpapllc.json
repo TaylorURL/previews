@@ -1,0 +1,609 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Katherine Overbeck Maxwell, CPA, PLLC",
+  "shortName": "Overbeck Maxwell CPA",
+  "tagline": "Turning vision into value",
+  "phone": "(409) 765-5287",
+  "email": "katherine@overbeckmaxwellcpa.com",
+  "address": "2200 Market St, Suite 703",
+  "town": "Galveston",
+  "state": "TX",
+  "zip": "77550",
+  "license": "An accounting firm licensed in Texas. All our CPAs hold valid Texas State CPA certificates.",
+  "rating": 4.5,
+  "reviewCount": 8,
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Tell us how we can be of service and we will offer you an initial consultation to work out how we can best help."
+  },
+  "brand": {
+    "primary": "#373536",
+    "primaryDeep": "#232122",
+    "accent": "#9a2e3e",
+    "ink": "#1d1b1c",
+    "muted": "#5d595a",
+    "surface": "#f6f4f3",
+    "cream": "#ece8e6",
+    "line": "#e0dbd9",
+    "heading": "'Libre Baskerville', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/katherineoverbeckmaxwellcpapllc/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "CPA firm in Galveston, Texas",
+    "title": "Accounting is what we do best.",
+    "lead": "Katherine Overbeck Maxwell CPA PLLC is a full service tax, accounting and business consulting firm in Galveston. We offer a broad range of services for business owners, executives and independent professionals.",
+    "image": "/brands/katherineoverbeckmaxwellcpapllc/hero",
+    "imageAlt": "A desk with a laptop, reading glasses and printed financial reports",
+    "points": [
+      "Licensed in Texas",
+      "Tax, accounting and auditing",
+      "Certified QuickBooks consultant"
+    ]
+  },
+  "overview": {
+    "title": "Services for individuals, businesses and the people who run them.",
+    "text": "Pick a service to see what it includes, or call and talk it through with our team."
+  },
+  "audiences": {
+    "individuals": "Individuals",
+    "businesses": "Businesses"
+  },
+  "services": [
+    {
+      "slug": "individual-tax-preparation",
+      "title": "Individual Tax Preparation",
+      "audience": "individuals",
+      "icon": "receipt",
+      "summary": "Personal returns, filed accurately and on time.",
+      "text": "We evaluate your individual tax situation and guide you through any tax challenges that develop, with the goal of minimizing your tax liability so you keep more of your hard-earned money.",
+      "lead": "Filing a relatively simple return can be confusing, and it is just too easy to overlook deductions and credits you are entitled to. Even if you use a software program, there is no substitute for the assistance of an experienced tax professional.",
+      "image": "/brands/katherineoverbeckmaxwellcpapllc/tax-prep",
+      "imageAlt": "A blank tax form, a calculator and a bundle of banknotes on a green desk",
+      "covers": [
+        {
+          "title": "Accurate returns, filed on time",
+          "text": "We prepare your return and file it on time, using our knowledge of current federal and state tax codes."
+        },
+        {
+          "title": "Estimated taxes",
+          "text": "We calculate estimated taxes for self-employed small business owners."
+        },
+        {
+          "title": "Planning strategies",
+          "text": "We develop tax planning strategies that reflect your individual financial goals."
+        },
+        {
+          "title": "Electronic filing",
+          "text": "Electronic filing and direct deposit, for a faster tax refund."
+        },
+        {
+          "title": "Extensions",
+          "text": "We file extensions and calculate estimated tax to avoid interest and penalties."
+        }
+      ]
+    },
+    {
+      "slug": "tax-planning",
+      "title": "Tax Planning",
+      "audience": "individuals",
+      "icon": "chart",
+      "summary": "Year-round planning, not just at tax time.",
+      "text": "There is more to preparing your taxes than filling out forms at tax time. We work with you all year long to develop strategies that lower your tax bill.",
+      "lead": "Many people feel their tax bill is too high. Based on careful analysis of your tax situation, we make sure you take every tax credit and deduction you deserve.",
+      "covers": [
+        {
+          "title": "Credits and deductions",
+          "text": "Careful analysis of your situation, so you take every credit and deduction you deserve on your return."
+        },
+        {
+          "title": "Recordkeeping",
+          "text": "We help you set up a recordkeeping system that meets IRS requirements."
+        },
+        {
+          "title": "Withholding",
+          "text": "We review and adjust your paycheck withholding so it accurately reflects your tax situation."
+        },
+        {
+          "title": "Deferring tax",
+          "text": "We help you understand how to defer tax liabilities through pension plans, retirement contributions and similar plans."
+        },
+        {
+          "title": "Tax-exempt income",
+          "text": "We make sure you take advantage of certain investments that produce tax-exempt income, federal or state or both."
+        }
+      ]
+    },
+    {
+      "slug": "personal-financial-planning",
+      "title": "Personal Financial Planning",
+      "audience": "individuals",
+      "icon": "wallet",
+      "summary": "One-on-one guidance and a written plan.",
+      "text": "You get one-on-one guidance and a comprehensive financial plan that helps manage risk, improve performance, and ensure the growth and longevity of your wealth."
+    },
+    {
+      "slug": "retirement-planning",
+      "title": "Retirement Planning",
+      "audience": "individuals",
+      "icon": "landmark",
+      "summary": "Plan ahead now, reap the benefits later.",
+      "text": "Do not put retirement planning on the back burner. Use a tax professional to plan ahead now, and reap the benefits later."
+    },
+    {
+      "slug": "estate-planning",
+      "title": "Estate Planning",
+      "audience": "individuals",
+      "icon": "scale",
+      "summary": "Help through every step of the process.",
+      "text": "The hassles and red tape associated with estate planning can be daunting, but you do not need to do it alone. Our team is waiting to assist you through every step of the process."
+    },
+    {
+      "slug": "tax-relief",
+      "title": "Tax Relief and IRS Problems",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "Back taxes, audits, liens and levies.",
+      "text": "We understand how the IRS works and what it takes to mediate a solution on your behalf, whether that is filing a past due return, minimizing back tax debt and penalties, or submitting an offer in compromise.",
+      "lead": "If the IRS has caught up to you and is demanding payment, the worst thing you can do is keep ignoring it. We help you find a fair solution to your tax problem.",
+      "covers": [
+        {
+          "title": "IRS audit representation",
+          "text": "Rarely do our clients have to talk with the IRS. We handle the bureaucracy and the paperwork for you."
+        },
+        {
+          "title": "Non-filed tax returns",
+          "text": "Getting delinquent returns filed before failing to file turns into something far more serious."
+        },
+        {
+          "title": "Back taxes owed",
+          "text": "Penalties and interest add up fast. We offer several options for resolving unpaid taxes."
+        },
+        {
+          "title": "Payroll tax problems",
+          "text": "The IRS treats unpaid payroll taxes as the cardinal sin of tax delinquency, because much of it is your employees' withholdings."
+        },
+        {
+          "title": "Offer in compromise",
+          "text": "Settling your debt with the IRS through their Offer in Compromise program."
+        },
+        {
+          "title": "IRS payment plan",
+          "text": "If you do not qualify for an offer in compromise, a payment plan may be the way to resolve the problem."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What if I was not the one who caused the tax problem?",
+          "a": "Innocent Spouse Relief was designed to alleviate unjust situations where one spouse was clearly the victim of fraud perpetrated by their spouse or ex-spouse."
+        },
+        {
+          "q": "What happens if I keep ignoring the notices?",
+          "a": "The next step is likely to be garnishing your wages, putting a lien on your home or a levy on your bank account. It will not go away unless you take action."
+        }
+      ]
+    },
+    {
+      "slug": "small-business-accounting",
+      "title": "Small Business Accounting",
+      "audience": "businesses",
+      "icon": "calculator",
+      "summary": "We keep the books so you can run the business.",
+      "text": "As a small business owner, you have more important things to do than to keep your own books. We take care of your books for you, so you can get back to the job of running your business and generating profits."
+    },
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping Services",
+      "audience": "businesses",
+      "icon": "book",
+      "summary": "Payables, receivables, reconciliations, clean-up.",
+      "text": "Accurate bookkeeping is essential to your company's long-term viability. Experienced, affordable and reliable, we serve a variety of industries and clients.",
+      "lead": "We serve clients from self-employed home-based business owners to small and medium-sized businesses with employees. If you are just starting out, we set up reporting and recordkeeping systems that make it easy to track where your money is going. If you have been in business a while but need help cleaning up your books, we streamline your systems and set up checks and balances.",
+      "image": "/brands/katherineoverbeckmaxwellcpapllc/bookkeeping",
+      "imageAlt": "Blank printed forms and a pen on a wooden desk beside a small plant",
+      "covers": [
+        {
+          "title": "Accounts payable",
+          "text": "Entry and bill paying."
+        },
+        {
+          "title": "Accounts receivable",
+          "text": "Entry, invoicing, deposits and collection."
+        },
+        {
+          "title": "Bank reconciliations",
+          "text": "Monthly reconciliation of your accounts against the general ledger."
+        },
+        {
+          "title": "Inventory management",
+          "text": "Keeping stock records in step with the books."
+        },
+        {
+          "title": "Bookkeeping clean-up",
+          "text": "Sorting out books that have fallen behind, then keeping them current."
+        },
+        {
+          "title": "Tax forms",
+          "text": "1099s and 1096s prepared and filed."
+        }
+      ]
+    },
+    {
+      "slug": "payroll",
+      "title": "Payroll",
+      "audience": "businesses",
+      "icon": "banknote",
+      "summary": "Outsourced payroll with a dedicated specialist.",
+      "text": "We offer payroll solutions that meet your business's needs and enable you to spend time doing what you do best, which is running your company.",
+      "lead": "On average, small business owners spend eight hours per month on payroll-related tasks, and every year brings new federal, state or local legislation to comply with. When you outsource payroll to us you get a dedicated payroll specialist who works with you throughout the entire process.",
+      "image": "/brands/katherineoverbeckmaxwellcpapllc/payroll",
+      "imageAlt": "A calculator, stacked coins and banknotes on a pale wooden desk",
+      "covers": [
+        {
+          "title": "Direct deposit",
+          "text": "Direct deposit and electronic fund transfer, or printed payroll checks."
+        },
+        {
+          "title": "Tax compliance",
+          "text": "Payroll tax compliance, e-filing and tax payments."
+        },
+        {
+          "title": "Reporting",
+          "text": "Payroll reporting by employee or department, with monthly, quarterly and annual tax reports."
+        },
+        {
+          "title": "Year-end forms",
+          "text": "W-2, W-3 and 1099 processing."
+        },
+        {
+          "title": "Third-party withholdings",
+          "text": "Payment of third-party withholdings such as insurance."
+        }
+      ]
+    },
+    {
+      "slug": "business-tax-preparation",
+      "title": "Tax Preparation for Businesses",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Income, sales and payroll tax, filed on time.",
+      "text": "We make sure you stay on top of your tax obligations and avoid the penalties and fees that reduce your profitability.",
+      "lead": "Now that you have employees, pay estimated taxes and need to manage cash flow, it is time to find a trusted advisor to partner with all year long, not just at tax time.",
+      "image": "/brands/katherineoverbeckmaxwellcpapllc/business-tax",
+      "imageAlt": "A row of coloured lever arch files standing on a shelf",
+      "covers": [
+        {
+          "title": "Income tax",
+          "text": "State and federal income tax preparation and filing."
+        },
+        {
+          "title": "Sales and payroll tax",
+          "text": "Local and state sales tax compliance, and state and federal payroll tax."
+        },
+        {
+          "title": "Planning strategies",
+          "text": "Minimizing tax liability through proven tax planning strategies."
+        },
+        {
+          "title": "Entity selection",
+          "text": "Entity selection and structure: S-Corp, C-Corp, LLC."
+        },
+        {
+          "title": "Statements",
+          "text": "Profit and loss statements, and support through mergers and acquisitions."
+        }
+      ]
+    },
+    {
+      "slug": "part-time-cfo",
+      "title": "Part-Time CFO Services",
+      "audience": "businesses",
+      "icon": "handshake",
+      "summary": "A financial manager, without a full-time hire.",
+      "text": "Our part-time CFO service gives you a professional financial manager who works with you to help guide your business to success.",
+      "lead": "Businesses of all sizes benefit from a CFO or controller, but many small business owners worry they cannot afford one. Outsourced, part-time CFO services are a cost-effective solution.",
+      "covers": [
+        {
+          "title": "Financial statements",
+          "text": "Monthly, quarterly or annual financial statements prepared for you."
+        },
+        {
+          "title": "Forecasting",
+          "text": "Financial forecasting, and guidance for increasing cash flow and improving profitability."
+        },
+        {
+          "title": "Payables and receivables",
+          "text": "Accounts payable and receivable handled alongside the rest of your financials."
+        },
+        {
+          "title": "Strategic tax planning",
+          "text": "Tax planning and compliance, including sales, use and payroll taxes."
+        },
+        {
+          "title": "Systems and controls",
+          "text": "Setting up an accounting system and the controls around it."
+        }
+      ]
+    },
+    {
+      "slug": "audits-reviews-compilations",
+      "title": "Audits, Reviews and Compilations",
+      "audience": "businesses",
+      "icon": "stamp",
+      "summary": "Three levels of assurance on your statements.",
+      "text": "Your stockholders, creditors or private investors have different levels of risk tolerance, so we provide three levels of assurance to meet your needs.",
+      "lead": "Which one is best for your business depends on the level of assurance or financial accuracy you want. You may decide a compilation is all you need this year, and that a review or an audit gives you better information in the years after.",
+      "image": "/brands/katherineoverbeckmaxwellcpapllc/audit",
+      "imageAlt": "Printed charts and graphs on a desk beside a calculator and a laptop",
+      "covers": [
+        {
+          "title": "Compilations",
+          "text": "The first level of service. There is no verification that the numbers are accurate, and the statements produced are for management and third-party use."
+        },
+        {
+          "title": "Reviews",
+          "text": "More involved than a compilation, providing limited assurance. Key personnel are interviewed about accounting policies, procedures, industry, operations and statements, and a review report is issued."
+        },
+        {
+          "title": "Audits",
+          "text": "The highest level of service. We work closely with key personnel to gain knowledge of internal control systems, and perform verification and substantiation procedures in accordance with Generally Accepted Auditing Standards."
+        }
+      ]
+    },
+    {
+      "slug": "quickbooks",
+      "title": "QuickBooks Services",
+      "audience": "businesses",
+      "icon": "gem",
+      "summary": "Setup, training, review and tune-ups.",
+      "text": "QuickBooks is easy to use and an affordable way to manage your business more efficiently. We are here for you at every step, from setup to periodic tune-ups.",
+      "lead": "With both desktop and online versions, it is easy to view transaction records and prepare custom reports that help you manage cash flow, monitor income and expenses, and make sound business decisions.",
+      "covers": [
+        {
+          "title": "Setup and customization",
+          "text": "After we set up your QuickBooks software, we customize it for your business, including integrating third-party invoicing or bill pay software."
+        },
+        {
+          "title": "Employee training",
+          "text": "Personalized training for you and your employees, at your location or ours."
+        },
+        {
+          "title": "QuickBooks review",
+          "text": "Review, sort and process monthly or quarterly transactions, reconcile the general ledger and all accounts, and prepare required reports."
+        },
+        {
+          "title": "Periodic tune-ups",
+          "text": "Periodic reviews of your QuickBooks system, cleaning up and organizing your bookkeeping."
+        }
+      ]
+    },
+    {
+      "slug": "new-business-formation",
+      "title": "New Business Formation",
+      "audience": "businesses",
+      "icon": "store",
+      "summary": "Entity choice, systems and compliance from day one.",
+      "text": "Opening your own business is exciting. It is everything that comes after the excitement has worn off that dictates whether a small business will make it or not.",
+      "lead": "You would rather not deal with details like choosing a business entity, sales and payroll tax, or the accounting systems that help you manage cash flow. We are here to help you figure it out.",
+      "covers": [
+        {
+          "title": "Entity selection",
+          "text": "Determining which business entity best meets your goals and minimizes tax liability, including partnership agreements."
+        },
+        {
+          "title": "Cash flow and planning",
+          "text": "Preparing a cash flow budget and a business plan to help you secure financing, if needed."
+        },
+        {
+          "title": "Accounting systems",
+          "text": "Setting up an accounting system, billing systems and collections policies and procedures."
+        },
+        {
+          "title": "Compliance",
+          "text": "Making sure you comply with state, local and federal tax law, including sales and use tax, payroll tax and a Federal EIN."
+        },
+        {
+          "title": "Licences and permits",
+          "text": "Help filing the paperwork for state and local licences and permits as required."
+        }
+      ]
+    },
+    {
+      "slug": "cash-flow-management",
+      "title": "Cash Flow Management",
+      "audience": "businesses",
+      "icon": "waves",
+      "summary": "A cash flow projection before a crisis hits.",
+      "text": "A cash crisis can be emotionally devastating, and it can even kill your business. The starting point for avoiding one is allowing us to develop a cash flow projection for you."
+    },
+    {
+      "slug": "bank-financing",
+      "title": "Bank Financing",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Going to the lender prepared and organized.",
+      "text": "Requesting a business loan without adequate preparation sends a clear message to the lender: high risk. It pays to be prepared and organized in your approach for financing."
+    },
+    {
+      "slug": "non-profit-organizations",
+      "title": "Non-Profit Organizations",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Keeping your tax-exempt status intact.",
+      "text": "The IRS uses very specific revenue and expense classifications to determine if your organization will retain its tax-exempt status."
+    },
+    {
+      "slug": "internal-controls",
+      "title": "Internal Controls",
+      "audience": "businesses",
+      "icon": "key",
+      "summary": "Assessing the checks and balances you rely on.",
+      "text": "We assess your internal control systems to determine the efficiency and effectiveness of your operating procedures, then we make recommendations that help your company become stronger."
+    }
+  ],
+  "process": {
+    "title": "How we work with you",
+    "steps": [
+      {
+        "title": "Initial consultation",
+        "text": "Tell us how we can be of service and we will offer you an initial consultation to determine how we can best serve you."
+      },
+      {
+        "title": "Close personal attention",
+        "text": "Each client is served by the expertise of the whole firm, with close personal and professional attention."
+      },
+      {
+        "title": "All year, not just at tax time",
+        "text": "We work with you throughout the year on planning strategies, and we answer your questions as they affect both your tax and your financial situation."
+      }
+    ]
+  },
+  "affiliations": {
+    "title": "Credentials and memberships",
+    "items": [
+      "American Institute of Certified Public Accountants",
+      "Texas Society of Certified Public Accountants",
+      "Licensed in Texas"
+    ]
+  },
+  "about": {
+    "title": "A Galveston firm built on professionalism, responsiveness and quality.",
+    "text": [
+      "Katherine Overbeck Maxwell CPA PLLC is a full service tax, accounting and business consulting firm located in Galveston, TX. We offer a broad range of services for business owners, executives and independent professionals.",
+      "Our firm is responsive. Companies who choose our firm rely on competent advice and fast, accurate personnel. We provide total financial services to individuals, large and small businesses and other agencies. Because we get new business from the people who know us best, client referrals have fuelled our growth in recent years.",
+      "Our primary goal as a trusted advisor is to be available and to provide insightful advice that enables our clients to make informed financial decisions. We feel it is extremely important to continually educate ourselves professionally, to improve our technical expertise, financial knowledge and service to our clients."
+    ],
+    "image": "/brands/katherineoverbeckmaxwellcpapllc/office",
+    "imageAlt": "A laptop and notepad on a desk by a sunlit window",
+    "values": [
+      {
+        "title": "Professionalism",
+        "text": "By combining our expertise, experience and the energy of our staff, each client receives close personal and professional attention."
+      },
+      {
+        "title": "Responsiveness",
+        "text": "Companies who choose our firm rely on competent advice and fast, accurate personnel, and we provide total financial services to individuals, businesses and other agencies."
+      },
+      {
+        "title": "Quality",
+        "text": "An accounting firm is known for the quality of its service, and our reputation reflects the high standards we demand of ourselves."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Katherine Maxwell, CPA",
+      "role": "Certified Public Accountant",
+      "bio": "Katherine graduated magna cum laude from Texas A&M University with a BBA in Accounting. She began her career working in the nonprofit arena then later transitioned to public accounting. She has more than twenty years experience in tax, accounting and auditing. Katherine is a member of the American Institute of Certified Public Accountants and the Texas Society of Certified Public Accountants."
+    },
+    {
+      "name": "Alpha Jallow, CPA",
+      "role": "Certified Public Accountant",
+      "bio": "Alpha graduated magna cum laude from the University of Houston Clear Lake with a Bachelor of Science in Accounting. He has extensive experience in performing Single Audits on both governmental and not for profit entities."
+    },
+    {
+      "name": "Bobbie Weatherton",
+      "role": "Admin",
+      "bio": "Bobbie is the office secretary and payroll clerk. She has more than twenty years of experience preparing payrolls for a variety of industries."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "My company's books are a nightmare. I do not even know where to start.",
+      "a": "We take care of your books for you, so you can get back to the job of running your business and generating profits."
+    },
+    {
+      "q": "I am spending all my time managing payroll for my employees.",
+      "a": "We offer payroll solutions that meet your business's needs and enable you to spend time doing what you do best, which is running your company."
+    },
+    {
+      "q": "I use QuickBooks, but I am not sure I am getting the most out of the software.",
+      "a": "We offer a variety of services to help make sure that you are taking full advantage of QuickBooks' many features."
+    },
+    {
+      "q": "I made a mistake on my taxes.",
+      "a": "We are here to help you resolve your tax problems and put an end to the misery that the IRS can put you through."
+    },
+    {
+      "q": "I need help planning my family's financial future.",
+      "a": "We offer one-on-one guidance and a comprehensive financial plan that helps manage risk, improve performance, and ensure the growth and longevity of your wealth."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Client Portal",
+      "text": "Sign in to the secure client portal to exchange documents with the firm, or register for an account.",
+      "href": "https://portal.secure256.com/Public/Register.aspx?intDomainID=58059"
+    },
+    {
+      "title": "Pay Your Invoice",
+      "text": "Pay a firm invoice online through CPACharge.",
+      "href": "https://secure.cpacharge.com/pages/overbeckmaxwellcpa/payments"
+    },
+    {
+      "title": "Tax Planning Guide",
+      "text": "The firm's online tax planning guide, with current rates, due dates and planning strategies.",
+      "href": "https://www.webtaxguide.net/overbeckmaxwellcpa/"
+    },
+    {
+      "title": "Track Your Refund",
+      "text": "Check the status of a federal refund after your return has been filed.",
+      "href": "http://www.overbeckmaxwellcpa.com/taxrefunds.php"
+    },
+    {
+      "title": "Record Retention Guide",
+      "text": "How long to keep business and personal records before disposing of them.",
+      "href": "http://www.overbeckmaxwellcpa.com/taxretention.php"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Reach the office",
+      "items": [
+        "Phone: (409) 765-5287",
+        "Fax: (409) 765-9644",
+        "katherine@overbeckmaxwellcpa.com",
+        "2200 Market St, Suite 703, Galveston, TX 77550"
+      ]
+    },
+    {
+      "heading": "Industries we work with",
+      "items": [
+        "Construction",
+        "Healthcare and medical practices",
+        "Hospitality",
+        "Law firms",
+        "Non-profit organizations",
+        "Real estate",
+        "Restaurants"
+      ]
+    },
+    {
+      "heading": "Paying and sending files",
+      "items": [
+        "Pay an invoice online through CPACharge",
+        "Secure client portal for signing in and registering",
+        "SecureSend to deliver a file directly to a member of the firm",
+        "Monthly emailed newsletter with news, updates and tips"
+      ]
+    }
+  ]
+}
