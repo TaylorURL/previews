@@ -1,0 +1,620 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Mackey Services",
+  "shortName": "Mackey Services",
+  "summary": "Honest, expert HVAC, electrical and generator services across the Texas Gulf Coast since 1992, from a family-owned company based in Dickinson.",
+  "phone": "(281) 317-0631",
+  "email": "info@mackeyservicestx.com",
+  "address": "5252 FM 517 Rd E",
+  "town": "Dickinson",
+  "state": "TX",
+  "zip": "77539",
+  "rating": 4.9,
+  "reviewCount": 1036,
+  "since": 1992,
+  "hours": [
+    [
+      "Mon – Fri",
+      "7 AM – 8 PM"
+    ],
+    [
+      "Saturday",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#0e7d4b",
+    "primaryDeep": "#00543c",
+    "accent": "#2bb566",
+    "ink": "#0d1b14",
+    "muted": "#4a6356",
+    "surface": "#f1f8f3",
+    "line": "#d8e7dd",
+    "heading": "'Bricolage Grotesque', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap",
+    "logo": "/brands/mackeyservices/logo.webp",
+    "logoWidth": 210
+  },
+  "licenses": [
+    {
+      "label": "Texas HVAC Contractor",
+      "number": "TACLA 112769C"
+    },
+    {
+      "label": "Texas Electrical Contractor",
+      "number": "TECL 558211"
+    }
+  ],
+  "financing": {
+    "text": "Affordable monthly payments on qualifying installations and major repairs, subject to approved credit."
+  },
+  "hero": {
+    "eyebrow": "Family Owned · Serving Texas Since 1992",
+    "title": "Expert HVAC, electrical, and",
+    "titleAccent": "generator solutions.",
+    "lead": "Expert solutions for heating, cooling, electrical, and generators across the Texas Gulf Coast, from one licensed family company out of Dickinson, TX. Less to pay. Better day. That's the Mackey way.",
+    "image": "/brands/mackeyservices/hero",
+    "imageAlt": "Mackey Services vans lined up outside the Dickinson shop at dusk"
+  },
+  "groups": [
+    {
+      "slug": "air-conditioning",
+      "title": "Air Conditioning",
+      "icon": "snowflake",
+      "summary": "AC repair, installation and tune-ups across Greater Houston and the Texas Gulf Coast.",
+      "intro": "Is your air conditioner blowing warm air or making strange noises? We diagnose the root cause and restore your home's cooling without the guesswork. We install and service Lennox and American Standard systems, sized and matched to Gulf Coast humidity, and we service every major brand regardless of who installed it.",
+      "image": "/brands/mackeyservices/cooling",
+      "imageAlt": "A technician working on an air conditioning system",
+      "services": [
+        {
+          "slug": "ac-repair",
+          "title": "AC Repair & Service",
+          "icon": "wrench",
+          "text": "Warm air from the vents, a harsh buzzing hum from the outdoor unit, or a system that will not start at all, diagnosed and repaired by a licensed technician.",
+          "points": [
+            "Evening appointments until 8 PM, Monday to Friday",
+            "Upfront pricing before work begins",
+            "Repair and replacement options laid out with clear costs"
+          ]
+        },
+        {
+          "slug": "ac-installation",
+          "title": "AC Installation & Replacement",
+          "icon": "air-vent",
+          "text": "New systems quoted on a sizing visit, with honest numbers on each brand we carry and instant quotes available for many installations.",
+          "points": [
+            "Lennox and American Standard equipment",
+            "Utility and manufacturer rebates verified and priced into the quote",
+            "Financing available on qualifying installations"
+          ]
+        },
+        {
+          "slug": "ac-maintenance",
+          "title": "AC Maintenance & Tune-Up",
+          "icon": "gauge",
+          "text": "Home of the $49 Tune-Up: a licensed technician inspects, cleans and optimizes your system so it survives the long Gulf Coast cooling season.",
+          "points": [
+            "Coils, refrigerant charge, drain line, electrical connections and airflow"
+          ]
+        },
+        {
+          "slug": "ductless-mini-split",
+          "title": "Ductless Mini-Split",
+          "icon": "fan",
+          "text": "Is your wall unit blowing warm air or flashing error codes? We quickly diagnose complex system failures and restore your right indoor climate.",
+          "points": [
+            "Repair, installation and replacement, and maintenance",
+            "A fit for garages, additions and casitas",
+            "Designed for room additions and hot spots ductwork will not reach"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "heating",
+      "title": "Heating & Heat Pumps",
+      "icon": "flame",
+      "summary": "Furnace and heat pump repair, replacement and seasonal checks before the first freeze.",
+      "intro": "Is your furnace blowing cold air or constantly short-cycling? We diagnose the mechanical failure and restore your home's warmth safely. Winters here are mild until they are not, and heat pumps, furnaces and panels all work hardest during a cold snap.",
+      "image": "/brands/mackeyservices/heating",
+      "imageAlt": "An attic air handler installation",
+      "services": [
+        {
+          "slug": "heating-repair",
+          "title": "Heating Repair & Service",
+          "icon": "flame",
+          "text": "A furnace that sat idle all summer should be inspected before the first freeze warning, not during it. We diagnose the failure and get the heat back on.",
+          "points": [
+            "Heat strips, heat pumps and furnaces",
+            "Evening hours until 8 PM",
+            "Honest assessment on repair against replacement"
+          ]
+        },
+        {
+          "slug": "heating-installation",
+          "title": "Heating Installation & Replacement",
+          "icon": "heater",
+          "text": "Replacement heating quoted on a sizing visit, with the right equipment for your home priced across brands.",
+          "points": [
+            "Lennox and American Standard equipment",
+            "Rebates checked before financing is calculated",
+            "Financing available on qualifying installations"
+          ]
+        },
+        {
+          "slug": "heating-maintenance",
+          "title": "Heating Maintenance & Tune-Up",
+          "icon": "gauge",
+          "text": "A seasonal heating visit covering the gas side, the ignition sequence and the safeties, with an electronic system health report afterwards.",
+          "points": [
+            "Gas lines and gas pressure, ignition sequence and burners",
+            "Heat exchanger, flame sensor, safety limits and switches",
+            "Electrical connections and terminals, drain-line cleaning"
+          ]
+        },
+        {
+          "slug": "heat-pump",
+          "title": "Heat Pump Repair & Service",
+          "icon": "thermometer",
+          "text": "Is your heat pump struggling to keep your home comfortable? We provide expert diagnostics and reliable repair services to restore your comfort.",
+          "points": [
+            "Repair, installation and replacement, and maintenance",
+            "High-efficiency heat pumps that both cool and heat",
+            "Refrigerant pressures and heat-kit sequence checked on maintenance visits"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "indoor-air-quality",
+      "title": "Indoor Air Quality",
+      "icon": "wind",
+      "summary": "Purification, dehumidification and smart thermostats, sized to your system and your home.",
+      "intro": "Waking up with a scratchy throat or noticing lingering odors? We find the mechanical root causes and restore clean, healthy breathing air to your home. Everything we install is sized to your system and home rather than sold off a shelf.",
+      "image": "/brands/mackeyservices/air-quality",
+      "imageAlt": "A clean air filter beside a dirty one",
+      "services": [
+        {
+          "slug": "air-quality-assessment",
+          "title": "Indoor Air Quality Assessment & Service",
+          "icon": "filter",
+          "text": "If your AC is struggling with high humidity, lingering odors or excessive dust, an assessment evaluates how well your home is actually filtering air.",
+          "points": [
+            "Works alongside your existing HVAC system",
+            "Mechanical root causes found rather than masked"
+          ]
+        },
+        {
+          "slug": "air-purification",
+          "title": "Whole-Home Air Purification",
+          "icon": "leaf",
+          "text": "Whole-house air purification and UV lights installed on your system, with UV light inspection included on maintenance visits.",
+          "points": [
+            "Whole-house purification and UV lights",
+            "Sized to your system and home"
+          ]
+        },
+        {
+          "slug": "dehumidification",
+          "title": "Whole-House Dehumidification",
+          "icon": "droplets",
+          "text": "A Gulf Coast essential. Average relative humidity returns above 70% from March, and a dry house is a comfortable one.",
+          "points": [
+            "Whole-house dehumidification installed and serviced"
+          ]
+        },
+        {
+          "slug": "smart-thermostats",
+          "title": "Smart Thermostat Installation & Service",
+          "icon": "thermometer",
+          "text": "Smart thermostats installed and serviced, matched to the system you already have.",
+          "points": [
+            "Installation and service",
+            "Sized to your system and home"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "electrical",
+      "title": "Electrical",
+      "icon": "zap",
+      "summary": "Licensed electricians for panels, rewiring, EV chargers and surge protection. Lic. #TECL 558211.",
+      "intro": "Are flickering lights and tripping breakers disrupting your home? Our licensed electricians diagnose hidden wiring issues and restore safe, reliable power. Mackey holds Texas electrical license #TECL 558211, so one call reaches the same company that handles your heating and cooling.",
+      "image": "/brands/mackeyservices/electrical",
+      "imageAlt": "An electrician working inside a residential electrical panel",
+      "services": [
+        {
+          "slug": "panel-upgrades",
+          "title": "Electrical Panel Repair & Upgrade",
+          "icon": "circuit",
+          "text": "Sometimes the issue is not the air conditioner but the panel supplying it. If your system trips breakers or the lights flicker when the compressor starts, we inspect the panel and the wiring.",
+          "points": [
+            "Panel repair and upgrade",
+            "Panel capacity evaluated before a new load is added"
+          ]
+        },
+        {
+          "slug": "electrical-repair",
+          "title": "Electrical Repair & Troubleshooting",
+          "icon": "plug",
+          "text": "Hidden wiring issues traced and repaired, including house rewiring, lighting and luxury home electrical projects.",
+          "points": [
+            "House rewiring and lighting",
+            "Luxury home electrical projects"
+          ]
+        },
+        {
+          "slug": "surge-protection",
+          "title": "Whole-Home Surge Protection",
+          "icon": "shield",
+          "text": "Whole-home surge protection installed by a licensed electrician, so a grid event does not take your equipment with it.",
+          "points": [
+            "Installed by licensed electricians"
+          ]
+        },
+        {
+          "slug": "ev-chargers",
+          "title": "EV Charger Installation",
+          "icon": "ev",
+          "text": "We install Level 2 home EV chargers, evaluate whether your panel can support the load, and handle any panel upgrade needed to charge safely and quickly.",
+          "points": [
+            "Level 2 home chargers",
+            "Panel load evaluated first",
+            "Panel upgrade handled where one is needed"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "generators",
+      "title": "Generators",
+      "icon": "battery",
+      "summary": "Whole-home standby generators installed and maintained. Kohler and Generac, ready before the next storm.",
+      "intro": "Tired of power outages disrupting your life? We provide reliable generator services to keep your home powered and protected. A whole-home standby generator starts automatically within seconds of an outage and keeps your AC, refrigerator and medical equipment running.",
+      "image": "/brands/mackeyservices/generators",
+      "imageAlt": "A standby generator being serviced beside a house",
+      "services": [
+        {
+          "slug": "generator-installation",
+          "title": "Backup Generator Installation",
+          "icon": "power",
+          "text": "Whole-home standby generators installed and commissioned. Installs booked in spring are in and running before hurricane season peaks.",
+          "points": [
+            "Kohler and Generac systems",
+            "Carries heat, well pump and refrigeration through winter outages"
+          ]
+        },
+        {
+          "slug": "generator-repair",
+          "title": "Generator Repair & Service",
+          "icon": "wrench",
+          "text": "Repair and service on standby generators, with priority storm-season service to keep your unit ready when the grid goes down.",
+          "points": [
+            "Priority storm-season service"
+          ]
+        },
+        {
+          "slug": "generator-maintenance",
+          "title": "Generator Maintenance",
+          "icon": "timer",
+          "text": "Standby generators need annual maintenance and periodic exercise cycles. We offer annual generator maintenance as a service.",
+          "points": [
+            "Annual maintenance and exercise cycles"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "commercial-hvac",
+      "title": "Commercial HVAC",
+      "icon": "building",
+      "summary": "Rooftop units, large mechanical projects and maintenance programs for property managers and business owners.",
+      "intro": "Are dead air and hot spots disrupting your daily business? We troubleshoot complex rooftop units and restore reliable climate control quickly. We serve commercial properties across Greater Houston and the Texas Gulf Coast.",
+      "image": "/brands/mackeyservices/commercial",
+      "imageAlt": "Rooftop ventilation units on a commercial building",
+      "services": [
+        {
+          "slug": "commercial-repair",
+          "title": "Commercial HVAC Repair & Service",
+          "icon": "wrench",
+          "text": "Complex rooftop units troubleshot and repaired so climate control comes back quickly.",
+          "points": [
+            "Rooftop units",
+            "Large mechanical projects"
+          ]
+        },
+        {
+          "slug": "commercial-installation",
+          "title": "Commercial HVAC Installation & Replacement",
+          "icon": "building",
+          "text": "Commercial installation and replacement, including large mechanical projects.",
+          "points": [
+            "Large mechanical projects"
+          ]
+        },
+        {
+          "slug": "commercial-maintenance",
+          "title": "Commercial HVAC Maintenance & Tune-Up",
+          "icon": "settings",
+          "text": "Maintenance programs for property managers and business owners who need the climate control to stay up.",
+          "points": [
+            "Maintenance programs for property managers"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Signature Offer",
+    "title": "The famous $49 Tune-Up.",
+    "text": "A precision inspection and optimization of your system by a licensed Mackey Services technician. Mention the offer when you call or book online.",
+    "price": "$49",
+    "priceNote": "per system"
+  },
+  "plan": {
+    "name": "Happy Home Maintenance Plan",
+    "intro": "One simple membership keeps your comfort systems on the happy track: two seasonal maintenance visits, member-only savings and priority service, year-round. Happy Comfort. Helpful Savings. All year long.",
+    "tiers": [
+      {
+        "name": "Monthly Membership",
+        "price": "$16.50",
+        "period": "per month, first HVAC system",
+        "featured": true,
+        "features": [
+          "Two seasonal maintenance visits",
+          "$0 service calls, an $85 value on every visit",
+          "20% off service and repairs",
+          "20% off the online filter shop",
+          "$125 annual system replacement credit",
+          "Priority scheduling",
+          "Two annual drain-line cleanings and clearings",
+          "$8.15/mo for each additional HVAC system"
+        ]
+      },
+      {
+        "name": "Annual Membership",
+        "price": "$198",
+        "period": "per year, first HVAC system",
+        "features": [
+          "Two seasonal maintenance visits",
+          "$0 service calls, an $85 value on every visit",
+          "20% off service and repairs",
+          "20% off the online filter shop",
+          "$125 annual system replacement credit",
+          "Priority scheduling",
+          "Two annual drain-line cleanings and clearings",
+          "$98/yr for each additional HVAC system"
+        ]
+      }
+    ],
+    "note": "The replacement credit accumulates up to $1,250 toward a new system, and the drain-line cleanings are a combined value of more than $450. The 20% repair discount excludes warranty work and equipment installation. Monthly payments are billed on the 15th of each month using the card on file. Prefer to talk? Call the Happy Home VIP Line: (281) 985-5934."
+  },
+  "about": {
+    "eyebrow": "The Mackey Story",
+    "title": "A Dickinson family company that never stopped adding value.",
+    "text": [
+      "Mackey Services exists to keep our communities powered, comfortable, and thriving by providing honest, expert HVAC, electrical, and generator services. What started as a local Texas service company in 1992 has grown into a three-trade team without losing the family way of doing business.",
+      "Today our wrapped green vans roll out of Dickinson every morning to homes and businesses across Galveston County and greater Houston. One number reaches a licensed HVAC contractor (#TACLA 112769C), a licensed electrical contractor (#TECL 558211), and generator specialists.",
+      "Less to pay. Better day. That's the Mackey way. It's more than a slogan. It's why we're the Home of the $49 Tune-Up, why the Happy Home Maintenance Plan rewards loyalty with real credits, and why 1,000+ neighbors rate us 4.9 stars."
+    ],
+    "image": "/brands/mackeyservices/team",
+    "imageAlt": "The Mackey Services team outside their Dickinson headquarters",
+    "values": [
+      {
+        "title": "Trust",
+        "text": "Upfront pricing, honest recommendations, and licensed pros in every trade. We earn your trust on every visit."
+      },
+      {
+        "title": "Customer Service",
+        "text": "Driven by results and focused on every customer we serve. You'll be happy you called Mackey."
+      },
+      {
+        "title": "Teamwork",
+        "text": "Powered by teamwork: HVAC techs, electricians, and generator specialists working as one."
+      },
+      {
+        "title": "Integrity",
+        "text": "We do what we say, stand behind our work, and treat your home or property like our own."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Are you licensed and insured?",
+      "a": "Yes. Mackey Services holds Texas HVAC license #TACLA 112769C and electrical license #TECL 558211, and we're fully insured. We're also a BBB-accredited business with an A+ rating, and our technicians are NATE-certified."
+    },
+    {
+      "q": "What is the $49 Tune-Up?",
+      "a": "We're the Home of the $49 Tune-Up. A licensed technician inspects, cleans, and optimizes your system so it runs efficiently through the long Gulf Coast cooling season. It's the cheapest insurance you can buy against a mid-August breakdown."
+    },
+    {
+      "q": "How often should my AC be serviced in the Houston area?",
+      "a": "At least once a year, ideally each spring before the heat arrives. Gulf Coast systems run far more hours than the national average, and humidity is hard on coils and drain lines. Our Happy Home Maintenance Plan handles the schedule for you and adds 20% off repairs."
+    },
+    {
+      "q": "Should I repair or replace my AC?",
+      "a": "A good rule of thumb: if the repair costs more than a third of a new system's price and your unit is 10+ years old, replacement usually wins on comfort and energy costs. We give you an honest assessment either way, and Happy Home members earn up to $1,250 in replacement credits."
+    },
+    {
+      "q": "Why should I consider a whole-home generator on the Gulf Coast?",
+      "a": "Hurricane season and grid strain make outages a matter of when, not if. A whole-home standby generator starts automatically within seconds of an outage and keeps your AC, refrigerator, and medical equipment running. We install and service Kohler and Generac systems."
+    },
+    {
+      "q": "Do you install EV charging stations?",
+      "a": "Yes. We install Level 2 home EV chargers, evaluate whether your panel can support the load, and handle any panel upgrade needed to charge safely and quickly."
+    },
+    {
+      "q": "Do you give free estimates?",
+      "a": "We provide upfront, honest pricing before work begins, and instant quotes are available for many installations. Call (281) 317-0631 or request service online and we'll get you a number fast."
+    },
+    {
+      "q": "Do you serve commercial properties?",
+      "a": "Yes. Commercial HVAC, including rooftop units, large mechanical projects, and maintenance programs for property managers and business owners."
+    }
+  ],
+  "serviceArea": [
+    "Dickinson",
+    "League City",
+    "Friendswood",
+    "Pearland",
+    "Webster",
+    "Kemah",
+    "Texas City",
+    "Galveston",
+    "Santa Fe",
+    "Alvin",
+    "La Porte",
+    "Pasadena",
+    "Houston",
+    "Seabrook",
+    "Nassau Bay",
+    "Clear Lake Shores",
+    "El Lago",
+    "Bacliff",
+    "San Leon",
+    "Hitchcock",
+    "La Marque",
+    "Bayou Vista",
+    "Tiki Island",
+    "Deer Park",
+    "Baytown",
+    "Manvel",
+    "Angleton",
+    "Katy",
+    "Cypress",
+    "Spring",
+    "The Woodlands",
+    "Sugar Land",
+    "Stafford",
+    "Humble",
+    "Algoa",
+    "Arcadia",
+    "Arcola",
+    "Bellaire",
+    "Clifton Beach",
+    "Crosby",
+    "Fresno",
+    "Galena Park",
+    "Hedwig Village",
+    "Jamaica Beach",
+    "Jersey Village",
+    "Liverpool",
+    "Piney Point Village",
+    "River Oaks",
+    "Rosharon",
+    "Shoreacres",
+    "South Houston",
+    "Taylor Lake Village",
+    "Todville",
+    "Wallisville",
+    "West University Place"
+  ],
+  "facts": [
+    {
+      "heading": "Licensed and accredited",
+      "items": [
+        "Texas HVAC Contractor License #TACLA 112769C",
+        "Texas Electrical Contractor License #TECL 558211",
+        "BBB Accredited Business, A+ Rating",
+        "NATE-Certified Technicians",
+        "ENERGY STAR and EPA recognized",
+        "Technicians licensed, insured and background-checked",
+        "Fully insured"
+      ]
+    },
+    {
+      "heading": "Equipment partners",
+      "items": [
+        "Lennox",
+        "American Standard",
+        "Kohler",
+        "Generac"
+      ]
+    },
+    {
+      "heading": "Happy at Home: free HVAC system for a local hero",
+      "text": "Each year we give away a free HVAC system to a deserving local hero in our community. Know someone who gives back? Nominate them. See official giveaway details and eligibility when you contact us."
+    },
+    {
+      "heading": "Rebates before financing",
+      "text": "High-efficiency systems can qualify for utility instant discounts and manufacturer rebate windows. We verify every program and price it into your quote before financing is even calculated. Financing is subject to approved credit, and full terms are available during your free estimate."
+    },
+    {
+      "heading": "What a visit looks like",
+      "items": [
+        "Our technicians wear protective shoe covers and lay down drop cloths to protect your floors",
+        "We clean up the work area completely before we leave",
+        "We lay out the exact options for repair versus replacement with clear costs and zero hidden fees",
+        "No high-pressure sales tactics and no new system pushed when a reliable repair is the better route",
+        "If we discover a problem during maintenance, we explain our findings and provide separate pricing. No repairs are completed without your authorization"
+      ]
+    },
+    {
+      "heading": "Reaching the office",
+      "items": [
+        "Call or text (281) 317-0631 — a real person answers, never a phone tree",
+        "Request service online and the team is in touch shortly, usually within the hour during business hours",
+        "Happy Home members have a VIP line: (281) 985-5934",
+        "A free two-minute Home Health Score assessment is available online",
+        "We never sell your information or share SMS data for marketing, and you can reply STOP to opt out of texts at any time"
+      ]
+    },
+    {
+      "heading": "Across the Gulf Coast",
+      "text": "Our wrapped green vans serve more than 50 Gulf Coast communities across Galveston County and greater Houston, out of one shop at 5252 FM 517 Rd E in Dickinson."
+    },
+    {
+      "heading": "What the two seasonal visits cover",
+      "items": [
+        "Cooling: electrical components and connections, voltage and amperage, refrigerant pressure, accessible ductwork, contactor and capacitor, outdoor condenser coil rinse, a visual inspection of the evaporator coil, thermal operation, drain-line cleaning and clearing, and UV light inspection where one is fitted",
+        "Heating: gas lines and gas pressure, ignition sequence and burners, heat exchanger and flame sensor, safety limits and switches, electrical connections and terminals, drain-line cleaning and clearing, and refrigerant pressures and heat-kit sequence on heat pumps",
+        "An electronic system health report follows each visit"
+      ]
+    },
+    {
+      "heading": "Rebates and tax credits",
+      "items": [
+        "CenterPoint and TNMP utility instant discounts on 15.2+ SEER2 equipment, applied through participating contractors",
+        "Manufacturer rebate windows run seasonally on Lennox and American Standard equipment",
+        "The federal 25C and 25D credits ended for any system installed after 31 December 2025",
+        "The Texas HOMES and HEAR programs are funded but not yet open, and we are tracking the launch"
+      ]
+    },
+    {
+      "heading": "Equipment lifespans here",
+      "text": "An AC condenser lasts 10 to 15 years on the Gulf Coast against 15 to 20 further north, because salt air corrodes outdoor coils and a nine-month cooling season doubles the runtime hours. Coastal homes in Kemah, Galveston and San Leon see the shortest lifespans."
+    },
+    {
+      "heading": "Working at Mackey",
+      "items": [
+        "Top-of-market wages plus performance bonuses",
+        "Health, dental, vision, PTO and a 401(k) match",
+        "Paid training, with certification and licensing costs supported as you qualify",
+        "A path from apprentice or helper to licensed technician, lead tech and a second trade",
+        "Open roles for field service technicians, installation crew members and customer service representatives",
+        "Every application is read and answered within one to two business days"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook",
+        "Instagram",
+        "YouTube",
+        "LinkedIn",
+        "Google Business Profile"
+      ]
+    },
+    {
+      "heading": "Online filter shop",
+      "text": "Replacement filters can be ordered from the Mackey Services online shop, and Happy Home members get 20% off."
+    }
+  ]
+}

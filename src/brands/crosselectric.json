@@ -1,0 +1,407 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Cross Electric LLC",
+  "shortName": "Cross Electric",
+  "summary": "Residential and commercial electrical repair, installation and service from a third-generation electrical contractor in Fort Worth.",
+  "phone": "(817) 847-7111",
+  "email": "office@crosselectricllc.com",
+  "address": "9227 Live Oak Ln",
+  "town": "Fort Worth",
+  "state": "TX",
+  "zip": "76179",
+  "rating": 4.9,
+  "reviewCount": 695,
+  "since": 1980,
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
+  "brand": {
+    "primary": "#D40000",
+    "primaryDeep": "#8C0000",
+    "accent": "#FF0000",
+    "ink": "#111111",
+    "muted": "#5A6068",
+    "surface": "#F8F4F4",
+    "line": "#E4DCDC",
+    "heading": "'Archivo Black', system-ui, sans-serif",
+    "body": "'Montserrat', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@400;500;600;700&display=swap",
+    "logo": "/brands/crosselectric/logo.webp",
+    "logoWidth": 180
+  },
+  "emergency": {
+    "title": "24-hour emergency service",
+    "text": "Electrical problems do not always happen during business hours, so the phone is answered around the clock for homes and businesses across DFW."
+  },
+  "licenses": [
+    {
+      "label": "TX License",
+      "number": "TECL 26929"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Powering homes and businesses across DFW",
+    "title": "A third-generation electrician",
+    "titleAccent": "serving DFW since 1980.",
+    "lead": "Residential and commercial electrical repair, installation and service from licensed, insured electricians who arrive in fully stocked trucks and explain what they find before the work starts.",
+    "image": "/brands/crosselectric/hero",
+    "imageAlt": "A Cross Electric service truck and work trailer parked on a residential street"
+  },
+  "groups": [
+    {
+      "slug": "residential",
+      "title": "Residential",
+      "icon": "home",
+      "summary": "Repairs, panels, wiring, lighting and surge protection for homes across the DFW area.",
+      "intro": "Your home's electrical system powers nearly everything you rely on every day. When something goes wrong, or when you are ready to make an upgrade, our electricians diagnose the problem, explain the work that needs to be done and get your electrical system back up and running.",
+      "image": "/brands/crosselectric/residential",
+      "imageAlt": "Recessed lighting and a chandelier in a vaulted living room ceiling",
+      "services": [
+        {
+          "slug": "electrical-repairs",
+          "title": "Electrical Repairs",
+          "icon": "wrench",
+          "text": "Faulty outlets, light switches, breakers, wiring, GFCI circuits, panels, fixtures, ceiling fans and code violations diagnosed and repaired.",
+          "points": [
+            "Troubleshooting before parts are replaced",
+            "Burning smells, hot components and tripping breakers investigated",
+            "Flickering lights and dead outlets traced to the cause"
+          ]
+        },
+        {
+          "slug": "electrical-panels",
+          "title": "Electrical Panels and Breakers",
+          "icon": "circuit",
+          "text": "Panel and meter installation, panel repair, replacement and upgrades, breaker service and sub-panel installation, sized to your home's electrical load rather than a one-size-fits-all box.",
+          "points": [
+            "Evaluated for repair before replacement is recommended",
+            "Sub-panels for additions, garages and workshops",
+            "Federal Pacific and fuse-box replacements",
+            "Upfront quotes, with the factors that affect the cost explained first"
+          ]
+        },
+        {
+          "slug": "outlets-switches",
+          "title": "Outlets, Switches and GFCI",
+          "icon": "plug",
+          "text": "Repair, replacement and new installation of outlets and switches, including GFCI circuits and modern receptacles with USB ports and smart features.",
+          "points": [
+            "Loose, warm, discolored or dead receptacles",
+            "New outlets where you need them, including appliance circuits",
+            "GFCI service for kitchens, baths and wet areas"
+          ]
+        },
+        {
+          "slug": "lighting-ceiling-fans",
+          "title": "Lighting and Ceiling Fans",
+          "icon": "lightbulb",
+          "text": "Light fixture installation, recessed lighting, landscape and exterior lighting, lighting repairs and ceiling fan installation.",
+          "points": [
+            "Indoor and outdoor lighting",
+            "Exterior electrical work as well as inside"
+          ]
+        },
+        {
+          "slug": "surge-protection",
+          "title": "Whole-House Surge Protection",
+          "icon": "shield",
+          "text": "A whole-house surge protector installed at your electrical panel to help protect appliances, electronics and wiring from voltage spikes, with point-of-use protection available for sensitive equipment.",
+          "points": [
+            "Installation, repair and replacement",
+            "Point-of-use protection at the outlet",
+            "Electrical load evaluated first"
+          ]
+        },
+        {
+          "slug": "pool-hot-tub-spa-wiring",
+          "title": "Pool, Hot Tub and Spa Wiring",
+          "icon": "droplets",
+          "text": "Hot tub electrical connections, 240-volt feeds, GFCI protection, grounding and bonding, disconnect installation and troubleshooting for existing pool and spa systems.",
+          "points": [
+            "New pool and spa installations wired from the start",
+            "Applicable electrical permitting handled",
+            "Repairs when equipment, lights or controls stop working",
+            "Pumps, heaters, controls and pool and spa lighting",
+            "Sauna and infrared, LED and red light panel wiring"
+          ]
+        },
+        {
+          "slug": "wiring-and-inspections",
+          "title": "Wiring, Inspections and Thermal Imaging",
+          "icon": "cable",
+          "text": "Individual circuits, wiring repairs and whole-home rewiring, plus electrical inspections, safety checks, code compliance and thermal imaging.",
+          "points": [
+            "Specialty and dedicated circuits for appliances and equipment",
+            "Thermal imaging finds loose connections and overheating components",
+            "Safety checks and code compliance",
+            "Aluminum wiring solutions",
+            "Electrical code violations corrected"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial",
+      "icon": "building",
+      "summary": "Lighting, data center power, EV charging and maintenance for businesses across DFW.",
+      "intro": "Your business depends on reliable electrical service. Cross Electric provides commercial electrical repair, installation, maintenance, lighting, data center services and equipment power solutions designed to keep your business operating, from routine repairs to larger projects with minimal interruption.",
+      "image": "/brands/crosselectric/commercial",
+      "imageAlt": "An electrician working from a lift on commercial electrical equipment",
+      "services": [
+        {
+          "slug": "commercial-lighting",
+          "title": "Lighting and Repair",
+          "icon": "lightbulb",
+          "text": "Commercial lighting installation, repair and maintenance, LED retrofits, parking lot lighting and aerial lighting.",
+          "points": [
+            "LED upgrades and retrofits",
+            "Parking lot and exterior lighting kept lit",
+            "Ongoing lighting maintenance programs",
+            "Warehouse and industrial lighting systems",
+            "Aerial lighting with the equipment to reach high exterior fixtures"
+          ]
+        },
+        {
+          "slug": "data-center-services",
+          "title": "Data Center Services",
+          "icon": "settings",
+          "text": "Electrical system design and installation for data center environments, including high-density power distribution, backup and emergency power, preventative maintenance and infrastructure upgrades.",
+          "points": [
+            "Uninterruptible power supplies and generator systems",
+            "Preventative maintenance aimed at uptime",
+            "Electricians with specialized data center training"
+          ]
+        },
+        {
+          "slug": "car-charging-stations",
+          "title": "Car Charging Stations",
+          "icon": "ev",
+          "text": "Commercial EV charging installation for employees, customers, tenants and fleets, starting with an evaluation of whether your existing electrical system can support the load.",
+          "points": [
+            "Tesla certified",
+            "Electrical upgrades and panel work where capacity is short",
+            "Charging station repair and maintenance"
+          ]
+        },
+        {
+          "slug": "business-electrical",
+          "title": "Repairs, Installations and Upgrades",
+          "icon": "wrench",
+          "text": "Electrical repairs and replacements, new panel installations, outlet wiring, tenant improvements, wiring, transformer installation, variable frequency drives, and primary and emergency power.",
+          "points": [
+            "Tenant improvements and build-outs",
+            "Variable frequency drives",
+            "Primary and emergency power",
+            "Transformer installation and breaker and fuse repair",
+            "Robotics and automation, and industrial equipment power",
+            "Sound system installation"
+          ]
+        },
+        {
+          "slug": "low-voltage-and-underground",
+          "title": "Voice, Data and Underground",
+          "icon": "cable",
+          "text": "Voice and data wiring, fiber optic wiring and terminations, camera and CCTV installation, underground electrical utilities, underground line locating and specialty grounding protection.",
+          "points": [
+            "Fiber optic wiring and terminations",
+            "Camera and CCTV installation",
+            "Underground line locating",
+            "Specialty grounding protection"
+          ]
+        },
+        {
+          "slug": "maintenance-and-inspections",
+          "title": "Maintenance and Safety Inspections",
+          "icon": "gauge",
+          "text": "Electrical maintenance, safety inspections, thermal imaging, troubleshooting, power usage reviews and energy savings consulting.",
+          "points": [
+            "Thermal imaging and infrared testing on commercial systems",
+            "Power usage reviews and energy savings consulting",
+            "24-hour emergency commercial repairs"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "generators-ev-charging",
+      "title": "Generators and EV Charging",
+      "icon": "power",
+      "summary": "Generac certified standby generators and Tesla certified home EV charging.",
+      "intro": "What would you do if your power went out? A whole-home generator can keep your home powered through an outage, and an EV charger lets you charge where you park. Cross Electric handles both, starting with an evaluation of what your electrical system can support.",
+      "image": "/brands/crosselectric/backup-power",
+      "imageAlt": "A standby generator installed beside a house",
+      "services": [
+        {
+          "slug": "standby-generators",
+          "title": "Whole-Home Standby Generators",
+          "icon": "power",
+          "text": "A standby generator is permanently connected to your home's electrical system, detects an outage automatically and returns to standby when utility power comes back, so backup power is there even when you are away.",
+          "points": [
+            "Generac certified",
+            "Electrical connections, gas hookup, permitting, inspection and startup",
+            "Sized to your home's electrical needs"
+          ]
+        },
+        {
+          "slug": "generator-repair-maintenance",
+          "title": "Generator Repair and Maintenance",
+          "icon": "settings",
+          "text": "Troubleshooting for a generator that will not start or is not providing power, replacement for an aging system, and maintenance to keep it ready.",
+          "points": [
+            "Generator membership with annual inspections and maintenance",
+            "Replacement when a system no longer meets the home's needs"
+          ]
+        },
+        {
+          "slug": "interlock-kits",
+          "title": "Interlock and Inlet Kits",
+          "icon": "timer",
+          "text": "Backup power without a standby system: an interlock kit lets you safely run your home's essential circuits from a portable generator.",
+          "points": [
+            "A lower-cost route to backup power"
+          ]
+        },
+        {
+          "slug": "home-ev-charging",
+          "title": "Home EV Charging",
+          "icon": "ev",
+          "text": "Charge where you park. Cross Electric installs hardwired and mobile EV chargers at home and evaluates your existing electrical system to make sure it can safely support the equipment.",
+          "points": [
+            "Tesla certified",
+            "Panel upgrades where more capacity is needed"
+          ]
+        }
+      ]
+    }
+  ],
+  "plan": {
+    "name": "The Cross Club",
+    "intro": "A monthly membership for homeowners: an annual whole-home electrical safety evaluation, priority service, member discounts and extended warranty protection.",
+    "tiers": [
+      {
+        "name": "Cross Club Membership",
+        "price": "$9.95",
+        "period": "per month",
+        "featured": true,
+        "features": [
+          "A free whole-home electrical safety evaluation every year",
+          "Lightbulbs and smoke detector batteries changed during the evaluation",
+          "Front-of-the-line priority service",
+          "Member discounts on services and products",
+          "Lifetime warranty on installations and double the warranty on repairs",
+          "Exclusive member specials"
+        ]
+      }
+    ],
+    "note": "Membership terms and benefit eligibility apply. Your membership is transferable to the new owner if you sell your home, and it can move with you to a new home inside the service area."
+  },
+  "about": {
+    "eyebrow": "Our story",
+    "title": "A family tradition of electrical excellence.",
+    "text": [
+      "Cross Electric's story began in 1980 and has continued through three generations of electrical experience. Over the years the company has grown while remaining rooted in the values that built it: quality workmanship, dependable service and taking care of customers.",
+      "Today Cross Electric is owned and operated by Brandon and Jen Cross, who lead a team dedicated to providing dependable electrical service with professionalism, skill and pride in their work.",
+      "More than 46 years after Cross Electric began, that family tradition remains at the heart of everything we do, from our electricians in the field to the team supporting them behind the scenes."
+    ],
+    "image": "/brands/crosselectric/team",
+    "imageAlt": "Two Cross Electric electricians replacing an electrical panel on the side of a house",
+    "values": [
+      {
+        "title": "Professional service",
+        "text": "Skilled electricians who take pride in their work and respect your home or business."
+      },
+      {
+        "title": "Safety and peace of mind",
+        "text": "Licensed, insured, drug tested and fully uniformed professionals committed to safe, code-compliant electrical work."
+      },
+      {
+        "title": "Experience you can trust",
+        "text": "More than four decades of electrical experience, supported by ongoing training and experienced supervision."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How much does Cross Club cost?",
+      "a": "Cross Club is a monthly membership currently priced at $9.95 per month."
+    },
+    {
+      "q": "What is included with my membership?",
+      "a": "Membership includes an annual whole-home electrical safety evaluation, priority service, discounts, extended warranty protection and exclusive member specials."
+    },
+    {
+      "q": "How often is the electrical safety evaluation performed?",
+      "a": "The membership includes an annual whole-home electrical safety evaluation."
+    },
+    {
+      "q": "Do Cross Club members receive priority service?",
+      "a": "Yes. Cross Club members receive front-of-the-line priority service when they need electrical assistance."
+    },
+    {
+      "q": "Do Cross Club members receive extra warranty benefits?",
+      "a": "Cross Club members receive a lifetime warranty on installations, and double the warranty on repairs."
+    },
+    {
+      "q": "What if I sell my home?",
+      "a": "Your membership is transferable to the new owner if you sell your home. Your membership plan can also move with you to your new home if you stay in our service area."
+    },
+    {
+      "q": "Do you offer emergency electrical service?",
+      "a": "Yes. Cross Electric provides 24-hour emergency electrical service for homes and businesses when an electrical problem cannot wait for business hours."
+    },
+    {
+      "q": "Does my electrical panel need to be replaced?",
+      "a": "Not always. Breakers that trip often, lights that dim when appliances run, a panel that feels hot or smells unusual, a home still on fuses or a Federal Pacific panel are all reasons to have it evaluated. We look at whether a repair will solve the problem before recommending replacement."
+    }
+  ],
+  "serviceArea": [
+    "Fort Worth",
+    "Saginaw",
+    "Keller"
+  ],
+  "facts": [
+    {
+      "heading": "Licensed and certified",
+      "items": [
+        "TX License TECL 26929",
+        "Licensed and insured",
+        "Generac Certified for generator installation, repair and maintenance",
+        "Tesla Certified for EV charger installation",
+        "Certified to perform lead-based paint testing",
+        "Electricians drug tested and fully uniformed"
+      ]
+    },
+    {
+      "heading": "Counties we cover",
+      "text": "Cross Electric serves homeowners and businesses throughout the DFW area, including communities across Dallas, Denton, Hood, Johnson, Parker, Palo Pinto, Tarrant and Wise Counties."
+    },
+    {
+      "heading": "What to expect",
+      "items": [
+        "Fully stocked trucks, so electricians arrive ready to diagnose and repair",
+        "We explain what we find, what the repair involves, what it will cost and what you can expect",
+        "Upfront quotes, with any potential additional costs explained before work begins",
+        "Applicable electrical permitting handled as part of the work",
+        "Third-generation, family-owned and operated since 1980"
+      ]
+    },
+    {
+      "heading": "Our electricians",
+      "items": [
+        "Ongoing technical training to stay current with electrical standards",
+        "Experienced field supervisors and office support available for added technical expertise",
+        "Employees carefully screened, for professional service inside your home",
+        "Specialized training for data center environments"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "text": "Cross Electric is on Facebook and Instagram as @crosselectricllc."
+    }
+  ]
+}
