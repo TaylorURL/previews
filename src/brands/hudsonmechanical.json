@@ -1,0 +1,634 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Hudson Mechanical Inc",
+  "shortName": "Hudson Mechanical",
+  "summary": "Hudson Mechanical designs, installs and maintains industrial and commercial HVAC systems for facilities across the Houston area, from our shop in Crosby.",
+  "phone": "(281) 462-8146",
+  "email": "kelly@hudsonmechanical.net",
+  "address": "4355 Hwy 90",
+  "town": "Crosby",
+  "state": "TX",
+  "zip": "77532",
+  "rating": 4.4,
+  "reviewCount": 7,
+  "hours": [
+    [
+      "Mon – Fri",
+      "7:00 AM – 4:30 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#c41e21",
+    "primaryDeep": "#8c1417",
+    "accent": "#eb2629",
+    "ink": "#212121",
+    "muted": "#5c5c5c",
+    "surface": "#f7f4f3",
+    "line": "#e3dcdb",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/hudsonmechanical/logo.webp",
+    "logoWidth": 200
+  },
+  "emergency": {
+    "title": "24/7 emergency service",
+    "text": "Emergency HVAC repair is available around the clock, including nights, weekends and holidays, with rental equipment available for extended repairs."
+  },
+  "hero": {
+    "eyebrow": "Industrial and commercial HVAC in the Houston area",
+    "title": "Houston industrial and commercial",
+    "titleAccent": "HVAC contractor.",
+    "lead": "Hudson Mechanical designs, installs, and maintains industrial and commercial HVAC systems for facilities across the Houston area. From explosion-proof equipment to routine preventative maintenance, our team delivers dependable mechanical work for facilities that cannot afford downtime.",
+    "image": "/brands/hudsonmechanical/hero",
+    "imageAlt": "An engineered rooftop air package unit installed by Hudson Mechanical"
+  },
+  "groups": [
+    {
+      "slug": "commercial-industrial-hvac",
+      "title": "Commercial & Industrial HVAC",
+      "icon": "building",
+      "summary": "Design, installation and service for commercial, industrial and institutional HVAC, including hazardous locations.",
+      "intro": "Hudson Mechanical is a premier HVAC company serving Houston and the surrounding areas, with experience across commercial, industrial, and institutional applications. We serve office buildings and retail stores, industrial facilities including refineries and chemical plants, and medical institutions, government, school and food and beverage buildings. Our work covers new construction installation, troubleshooting and repair of existing systems, and project design and management from start to finish.",
+      "image": "/brands/hudsonmechanical/services",
+      "imageAlt": "An explosion-proof HVAC unit on an industrial site",
+      "services": [
+        {
+          "slug": "explosion-proof-hvac",
+          "title": "Explosion-Proof HVAC",
+          "icon": "shield",
+          "text": "Hudson Mechanical designs, installs, and services explosion-proof HVAC systems for hazardous locations, including chemical plants, refineries, and other Class 1 Division 1 and 2 environments.",
+          "points": [
+            "Class 1 Division 1 and 2 environments",
+            "15 ton Carrier package unit modified to Class 1 Division 2 groups B, C and D",
+            "Class 1 Division 2 rated air conditioning equipment",
+            "Pressurization of control houses, analyzer shelters and MCCs"
+          ]
+        },
+        {
+          "slug": "nfpa-496-purge-pressurization",
+          "title": "NFPA 496 Purge & Pressurization",
+          "icon": "wind",
+          "text": "Hudson Mechanical installs NFPA 496-compliant purge and pressurization systems that keep control rooms and equipment enclosures safe in hazardous locations.",
+          "points": [
+            "Control houses, analyzer shelters and MCCs in refineries",
+            "Documentation to support safety compliance records",
+            "Testing and maintenance to stay compliant"
+          ]
+        },
+        {
+          "slug": "hvac-controls-building-automation",
+          "title": "HVAC Controls & Building Automation",
+          "icon": "circuit",
+          "text": "Hudson Mechanical installs and services HVAC controls and building automation systems that improve efficiency and give facility managers better visibility into their equipment.",
+          "points": [
+            "Carrier and Trane control systems, and all major brands",
+            "Scheduling and zoning to reduce energy waste",
+            "Remote monitoring of equipment performance",
+            "Integration with existing HVAC equipment"
+          ]
+        },
+        {
+          "slug": "industrial-ductwork",
+          "title": "Industrial Ductwork",
+          "icon": "air-vent",
+          "text": "Hudson Mechanical designs, fabricates, and installs commercial and industrial ductwork, backed by our own in-house sheet metal shop for custom projects.",
+          "points": [
+            "G90 galvanized, hot dipped galvanized, stainless steel and PVC options",
+            "Fume hood exhaust and supply ductwork",
+            "Sealing and insulation to reduce energy loss"
+          ]
+        },
+        {
+          "slug": "piping-services",
+          "title": "Piping Services",
+          "icon": "waves",
+          "text": "Hudson Mechanical provides process piping and pipe insulation services for commercial and industrial facilities, including chilled water and hot water systems.",
+          "points": [
+            "Chilled water, hot water and process piping",
+            "All types of pipe insulation and jacketing",
+            "Leak detection and repair on existing piping"
+          ]
+        },
+        {
+          "slug": "refrigerant-recovery-retrofit",
+          "title": "Refrigerant Recovery & Retrofit",
+          "icon": "snowflake",
+          "text": "Hudson Mechanical helps facilities still running on R22 refrigerant transition to compliant alternatives, with recovery and retrofit services handled by experienced technicians.",
+          "points": [
+            "R22 recovery per EPA regulations",
+            "Compatibility assessment for retrofit refrigerants",
+            "Full replacement when a retrofit is not practical"
+          ]
+        },
+        {
+          "slug": "hvac-service-repair",
+          "title": "HVAC Service & Repair",
+          "icon": "wrench",
+          "text": "Hudson Mechanical troubleshoots and repairs existing commercial and industrial HVAC systems, with quick response to minimize downtime for facilities across the Houston area."
+        },
+        {
+          "slug": "refrigeration",
+          "title": "Refrigeration",
+          "icon": "snowflake",
+          "text": "Hudson Mechanical services commercial refrigeration systems for facilities across the Houston area, alongside its HVAC work."
+        },
+        {
+          "slug": "indoor-air-quality-humidity-control",
+          "title": "Indoor Air Quality & Humidity Control",
+          "icon": "filter",
+          "text": "Hudson Mechanical improves indoor air quality and controls humidity in commercial and industrial buildings, through filtration upgrades, dedicated outdoor air systems and pressure control.",
+          "points": [
+            "Filtration upgrades on air handling units",
+            "Dedicated outdoor air systems for ventilation compliance",
+            "Pressure and humidity control for sensitive spaces"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "equipment-we-service",
+      "title": "Equipment We Service",
+      "icon": "gauge",
+      "summary": "The full range of commercial HVAC systems we install and service, from split systems to chillers.",
+      "intro": "Hudson Mechanical installs a full range of commercial HVAC systems, from VRF systems and rooftop units to air handling units and split systems, all built to keep facilities across the Houston area comfortable and efficient. Whether you need a single split system or a full VRF installation across multiple zones, our team sizes, installs, and services equipment built to perform in Houston's demanding climate. Every installation includes proper load calculations and code-compliant work, so your new system performs the way it is supposed to from day one.",
+      "image": "/brands/hudsonmechanical/equipment",
+      "imageAlt": "A chiller installed and piped by Hudson Mechanical",
+      "services": [
+        {
+          "slug": "dx-split-systems",
+          "title": "DX Split Systems",
+          "icon": "snowflake",
+          "text": "Hudson Mechanical installs and services DX split systems for commercial facilities across the Houston area, delivering reliable cooling without the complexity of a central chilled-water plant.",
+          "points": [
+            "Sized to match building load and occupancy",
+            "Compatible with Class 1 Division 2 applications",
+            "Technicians experienced on all major brands"
+          ]
+        },
+        {
+          "slug": "cooling-towers",
+          "title": "Cooling Towers",
+          "icon": "droplets",
+          "text": "Hudson Mechanical keeps industrial cooling towers running efficiently with regular maintenance, cleaning, and repair for facilities across the Houston area.",
+          "points": [
+            "Scheduled inspection and cleaning programs",
+            "Water treatment coordination to prevent scale and corrosion",
+            "Fill media and drift eliminator inspection",
+            "Fan, motor and gearbox service",
+            "Basin and structure inspection"
+          ]
+        },
+        {
+          "slug": "outside-air-units",
+          "title": "Outside Air Units",
+          "icon": "wind",
+          "text": "Hudson Mechanical designs and installs dedicated outdoor air systems that bring in 100% fresh air for ventilation compliance without overloading your primary HVAC equipment.",
+          "points": [
+            "Two Trane 54 ton 100% outside air units for lab make-up air",
+            "41 ton Trane 100% outside air unit with Heresite coated coils and TDC ductwork",
+            "Supports ASHRAE ventilation requirements",
+            "Energy recovery options available"
+          ]
+        },
+        {
+          "slug": "air-handling-units",
+          "title": "Air Handling Units",
+          "icon": "fan",
+          "text": "Hudson Mechanical installs and services commercial air handling units for facilities throughout the Houston area. Our expert technicians match the units to your building's airflow and filtration needs.",
+          "points": [
+            "Custom sizing and selection for your building",
+            "Filtration upgrades to improve indoor air quality",
+            "Variable frequency drive controls available",
+            "Coil cleaning and filter replacement programs"
+          ]
+        },
+        {
+          "slug": "rooftop-hvac",
+          "title": "Rooftop HVAC",
+          "icon": "building",
+          "text": "Hudson Mechanical installs and services rooftop HVAC units (RTUs) for commercial buildings, offering an efficient way to heat and cool a facility without dedicating interior space to equipment.",
+          "points": [
+            "Package units combining heating, cooling and ventilation",
+            "Curb adapters available for equipment replacement",
+            "Most commercial RTUs last 15 to 20 years with regular maintenance"
+          ]
+        },
+        {
+          "slug": "boilers",
+          "title": "Boilers",
+          "icon": "flame",
+          "text": "Hudson Mechanical installs and services commercial and industrial boilers, delivering reliable heating and process steam for facilities across the Houston area.",
+          "points": [
+            "Steam and hot water boiler installation",
+            "Code-compliant installation and venting",
+            "Combustion efficiency testing"
+          ]
+        },
+        {
+          "slug": "chillers",
+          "title": "Chillers",
+          "icon": "thermometer",
+          "text": "Hudson Mechanical installs and services air-cooled and water-cooled chillers for commercial and industrial facilities that need reliable, large-scale cooling capacity.",
+          "points": [
+            "80 ton chiller with Heresite coated coils, piping by Hudson Mechanical",
+            "90 ton Trane chiller with circulating pumps and aluminum jacketed insulation, installed in house",
+            "Air-cooled and water-cooled options",
+            "Heresite and other corrosion-resistant coatings available"
+          ]
+        },
+        {
+          "slug": "vrf-systems",
+          "title": "VRF Systems",
+          "icon": "settings",
+          "text": "Hudson Mechanical installs VRF systems, from a single zone to a full installation across multiple zones, sized for the way your facility actually runs.",
+          "points": [
+            "Heat recovery VRF for simultaneous heating and cooling across zones",
+            "Heat pump VRF for uniform seasonal demand",
+            "Ducted, ductless wall-mounted and ceiling cassette indoor units",
+            "Centralized or zone-level VRF controls",
+            "Retrofits and upgrades of aging equipment"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sheet-metal-shop",
+      "title": "Sheet Metal Shop",
+      "icon": "wrench",
+      "summary": "Our own Houston sheet metal shop, fabricating precision ductwork in house rather than through outside vendors.",
+      "intro": "Hudson Mechanical operates its own in-house custom sheet metal shop in Houston, giving us the ability to fabricate precision ductwork rather than relying on outside vendors. Our own shop lets us fabricate custom ductwork to exact specifications and pass the cost savings on to customers. The crew is highly trained and properly protected for the potential risks involved in fabrication work.",
+      "image": "/brands/hudsonmechanical/sheetmetal",
+      "imageAlt": "Inside the Hudson Mechanical sheet metal shop",
+      "services": [
+        {
+          "slug": "custom-ductwork",
+          "title": "Custom Ductwork",
+          "icon": "air-vent",
+          "text": "Custom solutions fabricated to exact specifications, from fresh air intake stacks to stainless steel laboratory ductwork."
+        },
+        {
+          "slug": "plasma-table",
+          "title": "Plasma Table",
+          "icon": "settings",
+          "text": "A 20-foot Vicon plasma table with current software, so cuts are made to specification in our own shop."
+        },
+        {
+          "slug": "equipment-service",
+          "title": "Equipment Service & Upgrades",
+          "icon": "wrench",
+          "text": "Service and upgrades for existing equipment, handled by the same fabrication and field crews."
+        },
+        {
+          "slug": "new-construction",
+          "title": "New Construction",
+          "icon": "building",
+          "text": "Fabrication support for new construction projects, coordinated with the rest of our mechanical scope."
+        }
+      ]
+    },
+    {
+      "slug": "maintenance-support",
+      "title": "Maintenance & Support",
+      "icon": "timer",
+      "summary": "Preventive maintenance agreements, 24/7 emergency repair and equipment replacement.",
+      "intro": "Hudson Mechanical helps facilities avoid costly downtime with preventive maintenance agreements, emergency repair service, and equipment replacement support across the Houston area. Service agreements are tailored to the equipment and operating schedule of your specific facility, not a one-size-fits-all checklist. Preventive maintenance agreements reduce unexpected failures, extend equipment life, and typically pay for themselves through efficiency gains and priority service discounts for agreement customers.",
+      "image": "/brands/hudsonmechanical/maintenance",
+      "imageAlt": "Industrial mechanical equipment serviced by Hudson Mechanical",
+      "services": [
+        {
+          "slug": "preventative-maintenance-service-agreements",
+          "title": "Preventative Maintenance & Service Agreements",
+          "icon": "timer",
+          "text": "Hudson Mechanical's preventive maintenance agreements keep commercial HVAC systems running efficiently, reducing the risk of unexpected failures and costly downtime.",
+          "points": [
+            "Seasonal inspection visits, typically spring and fall",
+            "Filter, belt and electrical connection checks",
+            "Priority scheduling for agreement customers",
+            "Discounts on additional service and parts",
+            "Same technician assignment where possible"
+          ]
+        },
+        {
+          "slug": "emergency-24-7-service",
+          "title": "Emergency & 24/7 Service",
+          "icon": "zap",
+          "text": "Hudson Mechanical provides 24/7 emergency HVAC service for commercial and industrial facilities across the Houston area, because equipment failures don't wait for business hours.",
+          "points": [
+            "Available nights, weekends and holidays",
+            "Rental equipment available for extended repairs",
+            "Priority response for service agreement customers",
+            "Clear communication throughout the repair"
+          ]
+        },
+        {
+          "slug": "equipment-replacement",
+          "title": "Equipment Replacement",
+          "icon": "wrench",
+          "text": "When repairs are no longer a cost-efficient option, Hudson Mechanical helps facilities plan and execute commercial HVAC system replacements with minimal disruption.",
+          "points": [
+            "Load calculations to size new equipment before install",
+            "Repair-versus-replace evaluation for your equipment",
+            "Planning around your facility's operating schedule",
+            "Rental equipment available during installation",
+            "Single-unit and full-system replacements"
+          ]
+        },
+        {
+          "slug": "energy-assessments",
+          "title": "Energy Assessments",
+          "icon": "gauge",
+          "text": "Hudson Mechanical's energy audits and efficiency assessments identify opportunities to reduce a facility's operating costs while keeping occupants comfortable.",
+          "points": [
+            "Energy audits and efficiency assessments",
+            "Service agreements structured to control operating costs",
+            "Assessments for property portfolios and school budgets"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "industries",
+      "title": "Industries We Serve",
+      "icon": "shield",
+      "summary": "HVAC built for the demands of refineries, marine, labs, healthcare, schools and commercial facilities.",
+      "intro": "Hudson Mechanical serves a wide range of industries across the Houston area, from chemical plants and refineries to healthcare campuses and schools, with HVAC solutions built for each environment's specific demands. Different industries bring different HVAC challenges, from hazardous location requirements in refineries to precise air quality control in labs and healthcare. Our team brings equipment and code expertise specific to each sector we serve.",
+      "image": "/brands/hudsonmechanical/industries",
+      "imageAlt": "An industrial facility of the kind Hudson Mechanical serves",
+      "services": [
+        {
+          "slug": "oil-gas-refineries",
+          "title": "Oil & Gas Refineries",
+          "icon": "flame",
+          "text": "Hudson Mechanical provides explosion-proof HVAC systems for oil and gas refineries, where hazardous location classifications demand equipment built to strict safety standards.",
+          "points": [
+            "Pressurization for control houses, analyzer shelters and MCCs",
+            "Fume hood and lab exhaust systems within refineries",
+            "Rental equipment for planned outages and turnarounds"
+          ]
+        },
+        {
+          "slug": "marine",
+          "title": "Marine",
+          "icon": "waves",
+          "text": "Hudson Mechanical installs and services marine HVAC systems for tow boats, push boats, and other vessels operating in and around the Houston area.",
+          "points": [
+            "Two Carrier 12.5 ton package units with TDC ductwork for new tow boats",
+            "Heresite coated Carrier mini split with stainless jacketed insulation on a marine application",
+            "New-build and retrofit vessels",
+            "Corrosion-resistant coatings and stainless components",
+            "Compact systems built for vessel spaces"
+          ]
+        },
+        {
+          "slug": "laboratories-research-facilities",
+          "title": "Laboratories & Research Facilities",
+          "icon": "filter",
+          "text": "Hudson Mechanical designs and installs HVAC systems for laboratories and research facilities that need precise temperature, humidity, and air quality control.",
+          "points": [
+            "FRP exhaust fan for fume hood with PVC ductwork on a custom built roof curb",
+            "Fume hoods, exhaust fans and supply fans with VFD controls",
+            "Pressure and humidity control for sensitive spaces",
+            "Support for varied lab layouts"
+          ]
+        },
+        {
+          "slug": "corrosive-coastal-environments",
+          "title": "Corrosive & Coastal Environments",
+          "icon": "shield",
+          "text": "Hudson Mechanical installs corrosion-resistant HVAC systems for facilities in coastal and chemically corrosive environments, where standard equipment fails prematurely.",
+          "points": [
+            "Heresite coated coils and epoxy coated cabinets",
+            "Epoxy coated exhaust fans for industrial applications",
+            "Marine-grade cabinet and hardware options",
+            "Retrofit coating options for existing equipment",
+            "Routine inspection to catch corrosion early"
+          ]
+        },
+        {
+          "slug": "power-generation",
+          "title": "Power Generation",
+          "icon": "power",
+          "text": "Hudson Mechanical supports power generation facilities with industrial HVAC systems designed for continuous operation and demanding environmental conditions.",
+          "points": [
+            "Explosion-proof equipment for hazardous areas",
+            "Building automation and controls",
+            "Chiller and cooling tower maintenance"
+          ]
+        },
+        {
+          "slug": "compressor-stations",
+          "title": "Compressor Stations",
+          "icon": "gauge",
+          "text": "Hudson Mechanical installs explosion-proof HVAC and ventilation systems for gas compressor stations, where hazardous location classifications demand specialized equipment.",
+          "points": [
+            "Class 1 Division 2 rated equipment",
+            "NFPA 496 pressurization for control buildings",
+            "Explosion-proof exhaust and supply fans",
+            "Retrofit of existing ventilation to current requirements"
+          ]
+        },
+        {
+          "slug": "healthcare",
+          "title": "Healthcare",
+          "icon": "thermometer",
+          "text": "Hudson Mechanical installs and services HVAC systems for hospitals and medical facilities that depend on precise climate control and reliable uptime.",
+          "points": [
+            "Engineered Air units on a surgery center",
+            "Cleanroom-capable HVAC design",
+            "Dedicated outdoor air systems for ventilation compliance",
+            "Redundancy planning for critical spaces",
+            "Rental equipment available during major repairs"
+          ]
+        },
+        {
+          "slug": "commercial-real-estate-facilities",
+          "title": "Commercial Real Estate & Facilities",
+          "icon": "building",
+          "text": "Hudson Mechanical supports commercial real estate and facility managers with HVAC installation, maintenance, and repair across the Houston area.",
+          "points": [
+            "Service agreements covering multiple properties under one point of contact",
+            "Priority scheduling for tenant comfort issues",
+            "Rooftop unit and air handler service",
+            "Energy assessments to control operating costs"
+          ]
+        },
+        {
+          "slug": "schools-and-educational-facilities",
+          "title": "Schools & Educational Facilities",
+          "icon": "lightbulb",
+          "text": "Hudson Mechanical installs and services HVAC systems for schools and universities, keeping classrooms comfortable and air quality in check for students and staff.",
+          "points": [
+            "Installation and renovation scheduled around the academic calendar",
+            "Filtration upgrades and dedicated outdoor air for classroom air quality",
+            "Projects from a single building to a full campus"
+          ]
+        },
+        {
+          "slug": "manufacturing-and-warehouse",
+          "title": "Manufacturing & Warehouse",
+          "icon": "settings",
+          "text": "Hudson Mechanical installs and services HVAC for manufacturing plants and warehouses across the Houston area, from commercial warehouse installations to process facilities.",
+          "points": [
+            "Two twenty ton units for a pipe threading facility"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About Hudson Mechanical",
+    "title": "Houston's trusted partner for industrial and commercial HVAC",
+    "text": [
+      "Hudson Mechanical has served the Houston area with HVAC services that businesses can rely on across chemical, marine, healthcare, and commercial sectors.",
+      "We are a full-service HVAC contractor serving industrial and commercial clients throughout the Houston region. We support facilities in demanding environments, from chemical plants and refineries to healthcare campuses and schools. Our installation, maintenance, and emergency repair services prioritize uptime and safety.",
+      "Our expertise covers industrial chill water systems, explosion-proof AC and HVAC repair in hazardous locations, NFPA 496 building pressurization, and corrosion-resistant equipment for demanding environments, alongside standard commercial HVAC work. Our in-house sheet metal shop allows us to fabricate custom ductwork without outside vendors, savings we pass on to our customers.",
+      "Safety is our top priority. All employees carry TWIC cards, and our team is ISNetworld and PICS certified, credentials that matter for industrial site access across the Houston area."
+    ],
+    "image": "/brands/hudsonmechanical/about",
+    "imageAlt": "The Hudson Mechanical shop in Crosby, Texas",
+    "values": [
+      {
+        "title": "24/7 Emergency Response",
+        "text": "Fast, reliable HVAC repair whenever your facility needs it most."
+      },
+      {
+        "title": "Certified & Experienced Technicians",
+        "text": "Licensed teams trained on industrial and commercial equipment."
+      },
+      {
+        "title": "Industrial-Grade Solutions",
+        "text": "Built for chemical plants, refineries, and heavy-duty facilities."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What services does Hudson Mechanical provide?",
+      "a": "We provide commercial and industrial HVAC installation, controls and automation, ductwork fabrication, piping, maintenance agreements, and emergency repair."
+    },
+    {
+      "q": "Do you work on both new construction and existing buildings?",
+      "a": "Yes, we support new construction projects as well as retrofits, replacements, and ongoing maintenance for existing facilities."
+    },
+    {
+      "q": "Do you handle design-build projects?",
+      "a": "Yes, we offer design-build and project management services, taking a project from concept through completion."
+    },
+    {
+      "q": "Do you offer rental equipment?",
+      "a": "Yes, rental water chillers and self-contained package units are available to support projects and planned outages."
+    },
+    {
+      "q": "Is emergency service available on weekends and holidays?",
+      "a": "Yes, emergency HVAC repair is available 24/7, including nights, weekends, and holidays."
+    },
+    {
+      "q": "How often should commercial HVAC systems be serviced?",
+      "a": "Most commercial systems benefit from at least twice-a-year maintenance visits, though high-use industrial equipment may need more frequent service."
+    },
+    {
+      "q": "Do you fabricate ductwork in-house?",
+      "a": "Yes, we operate our own custom sheet metal shop with a 20-foot Vicon plasma table, letting us fabricate ductwork to exact specifications."
+    },
+    {
+      "q": "Do you have experience with hazardous location requirements?",
+      "a": "Yes, explosion-proof and NFPA 496 compliant systems are a core part of our work in chemical, refinery, and compressor station environments."
+    },
+    {
+      "q": "Can you help reduce our building's energy costs?",
+      "a": "Our energy audits and efficiency assessments identify opportunities to reduce operating costs while maintaining comfort."
+    },
+    {
+      "q": "Do you service multiple properties under one agreement?",
+      "a": "Yes, our service agreements can be structured to cover multiple properties under a single point of contact."
+    },
+    {
+      "q": "Can installation work be scheduled around the school year?",
+      "a": "Yes, we work with schools and universities to schedule major installation and renovation work during breaks and off-peak periods where possible."
+    },
+    {
+      "q": "Do you install fume hood exhaust systems?",
+      "a": "Yes, we design and install fume hoods, exhaust fans, and supply fans with VFD controls for laboratory and research applications."
+    },
+    {
+      "q": "Can you support planned refinery turnarounds?",
+      "a": "Yes, rental chillers and package units are available to maintain climate control during planned outages and turnarounds."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Crosby",
+    "Harris County",
+    "Liberty County",
+    "Chambers County"
+  ],
+  "facts": [
+    {
+      "heading": "Certifications & Memberships",
+      "items": [
+        "Houston Area Safety Council (HASC) member",
+        "ISNetworld certified",
+        "Avetta certified",
+        "PICS certified",
+        "National Balancing Council member",
+        "TWIC cards carried by all employees",
+        "Familiar with ACCA and ASHRAE guidelines"
+      ]
+    },
+    {
+      "heading": "Equipment Brands We Service",
+      "text": "Licensed technicians experienced on all major brands, including Carrier, Trane, Daikin, Lennox, AAON and RUUD, with Engineered Air, Bard and Edwards Engineering equipment among our installed projects."
+    },
+    {
+      "heading": "Full Mechanical Capability",
+      "text": "Hudson Mechanical is a premier MEP contractor serving Houston and the surrounding areas, with HVAC as our core specialty alongside a full range of commercial and industrial mechanical services, managed end to end from a single point of contact."
+    },
+    {
+      "heading": "Rental Equipment",
+      "text": "Rental water chillers and self-contained package units are available to keep a facility running through planned outages, extended repairs and replacement projects."
+    },
+    {
+      "heading": "In-House Sheet Metal Shop",
+      "text": "Our own Houston sheet metal shop runs a 20-foot Vicon plasma table, so custom ductwork is fabricated in house rather than through outside vendors."
+    },
+    {
+      "heading": "Recent Projects",
+      "items": [
+        "Two Carrier 12.5 ton package units with TDC ductwork for new tow boats",
+        "Two Trane 54 ton 100% outside air units for lab make-up air",
+        "80 ton chiller with Heresite coated coils, piping by Hudson Mechanical",
+        "15 ton Carrier package unit modified to Class 1 Division 2 groups B, C and D",
+        "Carrier 150 ton rental chiller, 460/3, with pump, hose and electrical cords",
+        "90 ton Trane chiller with circulating pumps and aluminum jacketed insulation, installed in house",
+        "Engineered Air units on a surgery center",
+        "Edwards Engineering process chiller with hot gas bypass and Heresite coated coils",
+        "2 ton Bard wall pack with coated coils and a custom built pressurization blower, explosion proofed Class I Division II",
+        "Two twenty ton units for a pipe threading facility",
+        "Bolivar Ferries",
+        "Epoxy coated exhaust fan on an industrial application"
+      ]
+    },
+    {
+      "heading": "Quotes & Consultations",
+      "text": "Send an RFQ with equipment photos, nameplates, drawings, plans or specifications attached, up to 50 MB, say whether you would rather be reached by phone or email, and you get a free, no-obligation consultation on the right system for your business."
+    },
+    {
+      "heading": "Careers",
+      "text": "Hudson Mechanical is hiring qualified HVAC technicians in the Houston area, from experienced technicians to those starting in HVAC and looking to grow their careers. Email a resume to kevin@hudsonmechanical.net to be considered for open positions; EPA certification is preferred but not required.",
+      "items": [
+        "Competitive pay",
+        "Health and dental insurance",
+        "Simple IRA with company match",
+        "Paid time off",
+        "Company vehicle for qualified positions",
+        "Ongoing training and certification support"
+      ]
+    }
+  ]
+}
