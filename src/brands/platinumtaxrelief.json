@@ -1,0 +1,274 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Platinum Tax Relief, Inc",
+  "shortName": "Platinum Tax Relief",
+  "tagline": "Tax negotiation, preparation and planning in all 50 states",
+  "phone": "(409) 465-1979",
+  "email": "sales@platinumtaxrelief.com",
+  "address": "7120 E Hunter Dr",
+  "town": "Hitchcock",
+  "state": "TX",
+  "zip": "77563",
+  "since": 2013,
+  "license": "Platinum Tax Relief, Inc is a California stock corporation. Our team includes licensed attorneys, Enrolled Agents, CPAs and tax preparers who have served before the IRS.",
+  "hours": [["Mon – Sat", "9 AM – 8 PM"], ["Sunday", "9 AM – 5 PM"]],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Tell us what the IRS is asking for and we will set up a consultation to go through your options."
+  },
+  "brand": {
+    "primary": "#1c2230",
+    "primaryDeep": "#0e1219",
+    "accent": "#8b939e",
+    "ink": "#15181d",
+    "muted": "#5b6270",
+    "surface": "#f5f6f7",
+    "cream": "#e9ebee",
+    "line": "#dcdfe4",
+    "heading": "'Libre Baskerville', Georgia, serif",
+    "body": "'Gudea', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:wght@400;700&display=swap",
+    "logo": "/brands/platinumtaxrelief/logo.webp",
+    "logoWidth": 88
+  },
+  "hero": {
+    "eyebrow": "Tax negotiation, preparation and avoidance",
+    "title": "Expert tax help for individuals and businesses.",
+    "lead": "Our tax preparers, Enrolled Agents and attorneys help you work through the complexities of tax law and find the best solution for your situation. Contact us today to schedule a consultation.",
+    "image": "/brands/platinumtaxrelief/hero",
+    "imageAlt": "Tax paperwork and a calculator laid out on a desk",
+    "points": [
+      "Licensed attorneys, EAs and tax professionals",
+      "Serving small businesses and consumers in all 50 states",
+      "Consultations on Zoom or in the office"
+    ]
+  },
+  "overview": {
+    "title": "Comprehensive tax negotiation, preparation and avoidance services.",
+    "text": "Pick a service to see what it covers, or call and talk it through with our team."
+  },
+  "audiences": { "individuals": "Individuals", "businesses": "Business Owners" },
+  "services": [
+    {
+      "slug": "tax-preparation",
+      "title": "Tax Preparation",
+      "audience": "individuals",
+      "icon": "calculator",
+      "summary": "Accurate, timely returns for individuals.",
+      "text": "Our licensed tax preparers are well-versed in the latest tax laws and regulations, and prepare your return accurately and on time.",
+      "lead": "Whether you are an individual or a small business owner, we prepare your returns accurately and on time, maximizing your deductions and minimizing your tax liability.",
+      "image": "/brands/platinumtaxrelief/tax-preparation",
+      "imageAlt": "A federal tax return form on a desk",
+      "covers": [
+        { "title": "Current tax law", "text": "Our preparers stay up to date with the latest tax laws and regulations so your return is prepared in full compliance." },
+        { "title": "Deductions and credits", "text": "We work closely with you to identify the deductions, credits and strategies that reduce your tax liability." },
+        { "title": "Paperwork handled", "text": "We handle the paperwork, calculations and filings so you can focus on your business or your personal life." },
+        { "title": "Support through the year", "text": "Our team is available to answer questions and provide support throughout the year, not only during tax season." }
+      ],
+      "questions": [
+        { "q": "Do I have to come into the office?", "a": "No. We run virtual consultations on Zoom, and you can upload your tax forms to us online." },
+        { "q": "Can I get the IRS forms from you?", "a": "Yes. We publish the Form 1040 and its common schedules for download, and we will tell you which ones apply to you." }
+      ]
+    },
+    {
+      "slug": "irs-settlements",
+      "title": "IRS Settlements and Tax Negotiation",
+      "audience": "individuals",
+      "icon": "scale",
+      "summary": "Negotiating with the IRS on your behalf.",
+      "text": "If you are facing tax issues with the IRS or state tax authorities, our negotiators represent your interests, working to minimize penalties and resolve disputes.",
+      "lead": "We represent you before the IRS and state tax authorities, negotiating to minimize penalties, resolve disputes and find a workable solution.",
+      "image": "/brands/platinumtaxrelief/irs-settlements",
+      "imageAlt": "The columned facade of a courthouse",
+      "covers": [
+        { "title": "IRS debt reduction", "text": "The IRS has frequently reduced debts of one hundred thousand dollars or more, and our attorneys negotiate toward that reduction." },
+        { "title": "Levies and liens", "text": "Our attorneys work to prevent the IRS from taking a levy or a lien on your house." },
+        { "title": "US Tax Court", "text": "We sue the IRS in the US Tax Court where a case calls for it." },
+        { "title": "State franchise tax boards", "text": "We negotiate reductions with state franchise tax boards in several states." }
+      ],
+      "questions": [
+        { "q": "Can the IRS really reduce what I owe?", "a": "It frequently has. The IRS has reduced debts of one hundred thousand dollars or more, and that is the outcome we negotiate toward." },
+        { "q": "Can you stop a lien on my house?", "a": "That is what we work to prevent. Our attorneys represent you before the IRS to head off a levy or a lien." }
+      ]
+    },
+    {
+      "slug": "self-employed-tax-refunds",
+      "title": "Self Employed Tax Refunds",
+      "audience": "individuals",
+      "icon": "receipt",
+      "summary": "Refunds and credits for the self employed.",
+      "text": "Self employment carries its own returns, credits and refunds. We prepare them and claim what you are owed.",
+      "lead": "Self employment carries tax responsibilities a salaried return never sees. We prepare your return, identify the credits that apply and claim the refund you are owed.",
+      "covers": [
+        { "title": "Self employment returns", "text": "Schedule C and self employment tax prepared alongside your individual return." },
+        { "title": "Credits for the self employed", "text": "We identify the credits and incentives that apply to self employed filers." },
+        { "title": "Prior year returns", "text": "We prepare returns for earlier years, and we publish the forms and schedules for those years for download." }
+      ]
+    },
+    {
+      "slug": "small-business-tax-preparation",
+      "title": "Small Business Tax Preparation",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Returns and compliance for small businesses.",
+      "text": "Running a small business comes with unique tax responsibilities. Our experts keep your business compliant while maximizing the tax benefits available to it.",
+      "lead": "Running a small business comes with its own tax responsibilities. We understand the intricacies of small business taxation and keep your business compliant while maximizing the benefits available to it.",
+      "image": "/brands/platinumtaxrelief/small-business",
+      "imageAlt": "Receipts and bookkeeping records on a desk",
+      "covers": [
+        { "title": "Business returns", "text": "Returns prepared for the business alongside the owner's individual filing." },
+        { "title": "Tax compliance", "text": "Tax compliance is essential to avoiding costly penalties and legal disputes, and we keep your business compliant with all applicable tax laws." },
+        { "title": "Tax planning", "text": "Proper tax planning is essential to the success of small and medium sized businesses, and we handle it so you can focus on growing yours." },
+        { "title": "Favorable treatment", "text": "Small businesses get favorable treatment in the tax code, and we make sure yours claims it." }
+      ]
+    },
+    {
+      "slug": "tax-consulting",
+      "title": "Tax Consulting",
+      "audience": "businesses",
+      "icon": "chart",
+      "summary": "Strategic guidance and tax planning.",
+      "text": "Our tax consultants provide strategic guidance and customized solutions so you can make informed decisions and optimize your tax planning.",
+      "lead": "Navigating the complexities of tax law can be challenging. Our consultants provide strategic guidance and customized solutions so you can make informed decisions and optimize your tax planning strategies.",
+      "covers": [
+        { "title": "Tax avoidance strategy", "text": "Lawful strategy built around your business, so you pay what you owe and no more." },
+        { "title": "Estate planning", "text": "Proper estate planning protects your assets and makes sure your wishes are carried out, and we build a plan around your goals." },
+        { "title": "High net worth individuals", "text": "Our tax attorneys help high net worth individuals minimize their tax liability while remaining in compliance with all applicable tax laws." },
+        { "title": "Tax litigation", "text": "Our litigation team represents you in court in a tax-related legal dispute." }
+      ]
+    },
+    {
+      "slug": "employee-retention-credit",
+      "title": "Employee Retention Credit",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Claiming the ERC for your payroll.",
+      "text": "The Employee Retention Credit is a payroll tax credit for employers. We work out whether yours qualifies and claim it.",
+      "lead": "The Employee Retention Credit is a payroll tax credit for employers who kept staff on. We work out whether your business qualifies and prepare the claim.",
+      "image": "/brands/platinumtaxrelief/employee-retention-credit",
+      "imageAlt": "A laptop open to a spreadsheet of payroll figures",
+      "covers": [
+        { "title": "Eligibility", "text": "We read your payroll and your filings to work out whether the credit applies to your business." },
+        { "title": "Preparing the claim", "text": "The claim is prepared and filed by our tax professionals." },
+        { "title": "Small business refunds", "text": "ERC refunds for small businesses, prepared to the IRS rules that govern them." }
+      ]
+    },
+    {
+      "slug": "texas-franchise-tax",
+      "title": "Texas Franchise Tax",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Franchise tax filings and refunds in Texas.",
+      "text": "If your gross receipts total more than $1,400,000 in Texas you owe a 1% state franchise tax. We handle the filing and look for refunds.",
+      "lead": "If your gross receipts total more than $1,400,000 in Texas you are required to pay a 1% state franchise tax to the Texas Comptroller's office, a minimum of $14,000.00 in extra taxes. We handle the filing, and look at whether a refund or an avoidance strategy applies to you.",
+      "covers": [
+        { "title": "The threshold", "text": "Gross receipts above $1,400,000 in Texas bring the franchise tax into play." },
+        { "title": "What it costs", "text": "The tax runs at 1% to the Texas Comptroller's office, a minimum of $14,000.00 in extra taxes." },
+        { "title": "Refunds and strategy", "text": "We look at whether a refund is available to you, and at the tax avoidance strategy that fits your business." }
+      ]
+    }
+  ],
+  "process": {
+    "title": "How we work",
+    "text": "A personalized approach, because every individual and business has different tax needs.",
+    "steps": [
+      { "title": "Schedule a consultation", "text": "Call us or send a message, and we set up a consultation in the office or on Zoom." },
+      { "title": "We read your situation", "text": "We listen to your concerns and analyze your financial situation before we recommend anything." },
+      { "title": "A strategy built for you", "text": "We develop a customized strategy that aligns with your financial goals, whether that is preparation, negotiation or planning." },
+      { "title": "We handle the filing", "text": "We handle the paperwork, the calculations and the filings, and we represent you before the IRS where that is what is needed." },
+      { "title": "Support through the year", "text": "Our team stays available to answer questions and provide support throughout the year, not only during tax season." }
+    ]
+  },
+  "about": {
+    "title": "About Platinum Tax Relief, Inc",
+    "text": [
+      "Welcome to Platinum Tax Relief, Inc, the premier destination for tax preparation services. Our experienced tax preparers are here to help you navigate the complexities of tax law and find the best solutions for your unique situation.",
+      "Platinum Tax Relief, Inc provides comprehensive tax negotiation, preparation and avoidance services to small businesses and consumers across all 50 states. Our team of tax preparers, Enrolled Agents and tax professionals have served before the IRS, and we understand the tax laws and regulations that apply in each state.",
+      "We take a personalized approach. Every individual and business has unique tax needs, so we take the time to listen to your concerns, analyze your financial situation and develop strategies that are in your best interest. Platinum Tax Relief is owned and operated by Black accountants."
+    ],
+    "image": "/brands/platinumtaxrelief/about",
+    "imageAlt": "Financial documents and a ledger on a desk",
+    "values": [
+      { "title": "Personalized service", "text": "Every client is unique and has different tax needs. We take the time to get to know our clients and tailor our services to meet their specific needs." },
+      { "title": "Results-driven approach", "text": "Our team is dedicated to achieving the best possible outcome for our clients, and to helping them achieve their financial goals." },
+      { "title": "Compliance and ethics", "text": "We operate with the highest level of integrity, ethics and compliance, and adhere to all IRS guidelines and regulations." },
+      { "title": "Exceptional customer service", "text": "We are responsive and attentive, and we aim to make your experience with us as smooth and stress-free as possible." },
+      { "title": "Community", "text": "We believe in strengthening our communities and neighborhoods." }
+    ]
+  },
+  "team": [
+    { "name": "Jason Marx", "role": "CPA" },
+    { "name": "Andrew Lehman", "role": "MBA, J.D." },
+    { "name": "Chad Elrod", "role": "Esq." },
+    { "name": "Zaine Kasem", "role": "J.D." },
+    { "name": "Damion Emholtz" },
+    { "name": "Daniel Goldstein", "role": "J.D." },
+    { "name": "Larry Peluso", "role": "Esq." },
+    { "name": "Joe Kelly", "role": "Esq." },
+    { "name": "Samuel Elliott", "role": "Paralegal" },
+    { "name": "Jason Goldberg", "role": "Tax Preparer" },
+    { "name": "Tanya Campbell", "role": "Tax Preparer" },
+    { "name": "Ashleigh Smith", "role": "Admin" },
+    { "name": "Melanie Paree", "role": "Admin" },
+    { "name": "Andrea Fiore", "role": "Web Admin" }
+  ],
+  "faqs": [
+    { "q": "Where do you work?", "a": "All 50 states. We provide tax negotiation, preparation and avoidance services to small businesses and consumers nationwide, and we understand the tax laws and regulations that apply in each state." },
+    { "q": "Can we meet without coming into the office?", "a": "Yes. We run virtual tax consultations on Zoom." },
+    { "q": "Who will be working on my case?", "a": "Our team includes licensed attorneys, Enrolled Agents, CPAs, paralegals and tax preparers, several of whom have served before the IRS." },
+    { "q": "Do you work with businesses as well as individuals?", "a": "Yes. Small business tax preparation, tax planning, compliance and the Employee Retention Credit are all part of what we do." },
+    { "q": "Can I download the IRS forms I need?", "a": "Yes. We publish the Form 1040 and its common schedules, along with Forms 7202, 8962 and 8995-A, for download from our site." },
+    { "q": "Are franchises available?", "a": "Yes. Franchises are available for 2026. Contact us to talk it through." }
+  ],
+  "resources": [
+    { "title": "IRS Form 1040", "text": "The US individual income tax return, the form most personal filings are built on.", "href": "https://www.irs.gov/forms-pubs/about-form-1040" },
+    { "title": "Texas Comptroller: Franchise Tax", "text": "The state office that collects the Texas franchise tax, and its current thresholds and rates.", "href": "https://comptroller.texas.gov/taxes/franchise/" },
+    { "title": "United States Tax Court", "text": "The court where a disputed IRS determination is heard.", "href": "https://www.ustaxcourt.gov/" }
+  ],
+  "serviceArea": ["Hitchcock", "Houston", "San Francisco", "Miami", "Los Angeles", "All 50 states"],
+  "facts": [
+    {
+      "heading": "Offices",
+      "items": [
+        "957 Nasa Parkway #1102, Houston, TX 77058",
+        "584 Castro Street, Suite 500, San Francisco, CA 94114",
+        "5201 Blue Lagoon, Suite 300, Miami, FL 33126",
+        "5111 Hollywood Blvd, Suite 1053, Los Angeles, CA 90028"
+      ]
+    },
+    {
+      "heading": "Virtual Taxes on Zoom",
+      "text": "Consultations run on Zoom, so you can work with us without coming into an office."
+    },
+    {
+      "heading": "Visiting the Office",
+      "text": "We love our customers, so feel free to visit during normal business hours."
+    },
+    {
+      "heading": "Houston Office Line",
+      "text": "The Houston office at 957 Nasa Parkway takes calls on 713-903-9690."
+    },
+    {
+      "heading": "File Your Taxes Now",
+      "text": "Upload your tax forms to us online and our preparers take it from there."
+    },
+    {
+      "heading": "Who We Are",
+      "text": "Platinum Tax Relief, Inc is a California stock corporation, owned and operated by Black accountants, with a team of licensed attorneys, Enrolled Agents, CPAs and tax preparers who have served before the IRS."
+    },
+    {
+      "heading": "Tax Forms to Download",
+      "text": "We publish the Form 1040 and Schedules 1, 2, 3, A, C and SE for 2021 and 2022, along with Forms 7202, 8962 and 8995-A, free to download from our site."
+    },
+    {
+      "heading": "Franchises",
+      "text": "Franchises are available for 2026."
+    },
+    {
+      "heading": "Please Note",
+      "text": "Information on this site is for general informational purposes only and should not be considered legal or financial advice. Please consult with a licensed professional for personalized guidance."
+    }
+  ]
+}
