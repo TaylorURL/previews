@@ -1,0 +1,296 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "SmartChoice Roofing Solutions",
+  "shortName": "SmartChoice Roofing",
+  "phone": "(832) 272-8575",
+  "email": "dan@smartchoiceroofing.net",
+  "address": "105 S Friendswood Dr",
+  "town": "Friendswood",
+  "state": "TX",
+  "zip": "77546",
+  "rating": 5.0,
+  "reviewCount": 73,
+  "hours": [["Mon – Fri", "8 AM – 5 PM"], ["Saturday", "8 AM – 2 PM"], ["Sunday", "Closed"]],
+  "brand": {
+    "primary": "#2168b3",
+    "primaryDeep": "#17497d",
+    "accent": "#e8433c",
+    "ink": "#232426",
+    "surface": "#f1f3f6",
+    "heading": "'Barlow Condensed', 'Arial Narrow', sans-serif",
+    "body": "'Barlow', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap",
+    "logo": "/brands/smartchoiceroofing/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Friendswood roofing contractor",
+    "title": "Exceptional service,",
+    "titleAccent": "honest pricing.",
+    "lead": "SmartChoice Roofing repairs and replaces residential and commercial roofs across the Greater Houston area. We assess your roof to help you make informed decisions, and every inspection is 100% pressure free.",
+    "image": "/brands/smartchoiceroofing/hero",
+    "imageAlt": "View of a residential rooftop with composite shingles overlooking a waterfront neighborhood"
+  },
+  "promises": [
+    "100% no strings attached inspections",
+    "Manufacturer and workmanship warranties on re-roofs",
+    "OSHA-30 certified project managers",
+    "Locally owned in Friendswood"
+  ],
+  "services": [
+    {
+      "slug": "roof-repair",
+      "group": "residential",
+      "title": "Roof Repair",
+      "short": "If your roof can be fixed, we can help.",
+      "text": "As homeowners, we know the importance and cost of home upkeep. If your roof can be fixed, we can help.",
+      "image": "/brands/smartchoiceroofing/repair",
+      "imageAlt": "A roof with gray asphalt shingles undergoing repair, with one section of exposed plywood",
+      "body": [
+        "As homeowners, we know the importance and cost of home upkeep. If your roof can be fixed, we can help. We assess the roof first and show you what is actually there, so the choice between a repair and a new roof is yours to make with the facts in hand.",
+        "At SmartChoice Roofing we are committed to providing honest pricing and optimal solutions for our clients. Your budget and peace of mind are our top priorities, which is why the inspection that comes first is 100% pressure free."
+      ],
+      "points": [
+        "A 100% pressure free inspection first",
+        "Expert leak repair",
+        "Residential, multi-family and commercial buildings",
+        "An honest read on repair versus replacement"
+      ]
+    },
+    {
+      "slug": "roof-replacement",
+      "group": "residential",
+      "title": "Residential Re-Roof",
+      "short": "A new roof with a manufacturer's warranty alongside a workmanship warranty.",
+      "text": "For the best results, get your roof installed by a certified contractor who provides a strong manufacturer's warranty. Rely on us for a roofing system that will keep water out for many years.",
+      "image": "/brands/smartchoiceroofing/replacement",
+      "imageAlt": "Roofers installing shingles on a residential roof with a lawn in the foreground",
+      "materials": true,
+      "body": [
+        "For the best results, get your roof installed by a certified contractor who provides a strong manufacturer's warranty. Your satisfaction is important to us, and SmartChoice uses quality materials on all jobs: products from reputable manufacturers chosen to withstand heat, wind and severe storms year-round.",
+        "We install Owens Corning, GAF and CertainTeed shingles to TWIA standards. Every residential re-roof comes with a manufacturer's warranty alongside a workmanship warranty, and your project manager keeps you informed throughout, addressing your concerns and making sure the work finishes on time."
+      ],
+      "points": [
+        "Owens Corning, CertainTeed, GAF and IKO shingles",
+        "Installed to TWIA standards",
+        "Manufacturer's warranty on every re-roof",
+        "Workmanship warranty alongside it",
+        "A project manager who keeps you informed throughout"
+      ]
+    },
+    {
+      "slug": "new-construction",
+      "group": "residential",
+      "title": "Residential New Construction",
+      "short": "Roofing for new homes across the Houston area.",
+      "text": "Roofing for new residential construction, installed with the same quality materials we put on every job.",
+      "image": "/brands/smartchoiceroofing/new-construction",
+      "imageAlt": "Wooden roof trusses under construction on a building with visible tools and cables",
+      "body": [
+        "SmartChoice uses quality materials for all jobs. Based in Houston, Texas, we prioritize the best products from reputable manufacturers to withstand heat, wind and severe storms year-round, and new construction is held to the same standard as a re-roof.",
+        "We pass inspections and maintain high standards for craftsmanship and safety. Safety is a priority: all project managers have OSHA-30 certification, and our teams keep the work area clean and accommodate any special requests."
+      ],
+      "points": [
+        "Quality materials from reputable manufacturers",
+        "OSHA-30 certified project managers",
+        "Inspections passed, with high standards for craftsmanship and safety",
+        "A clean work area and special requests accommodated"
+      ]
+    },
+    {
+      "slug": "roof-inspections",
+      "group": "residential",
+      "title": "Roof Inspections",
+      "short": "100% no strings attached.",
+      "text": "We offer 100% pressure free inspections. We assess your roof to help you make informed decisions, and your budget and peace of mind are our top priorities.",
+      "image": "/brands/smartchoiceroofing/inspection",
+      "imageAlt": "A gray shingle roof with a skylight and pipe vents seen from the ridge",
+      "body": [
+        "100% no strings attached roof inspections. We get on the roof, assess what is there and tell you what we find, so you can make an informed decision rather than a rushed one.",
+        "At SmartChoice Roofing we are committed to providing honest solutions for our clients. If the roof can be repaired we will say so, and if it needs replacing we will show you why."
+      ],
+      "points": [
+        "100% no strings attached",
+        "Residential, multi-family and commercial buildings",
+        "An honest assessment of repair versus replacement"
+      ]
+    },
+    {
+      "slug": "gutters",
+      "group": "residential",
+      "title": "Gutters",
+      "short": "Gutter repair and replacement.",
+      "text": "SmartChoice Roofing Solutions offers gutter repair and replacement services for residential, multi-family and commercial clients.",
+      "body": [
+        "SmartChoice Roofing Solutions offers gutter repair and replacement alongside our roofing and siding work, for residential, multi-family and commercial clients.",
+        "We assess what is there to help you make an informed decision, and the inspection that comes first is 100% pressure free."
+      ],
+      "points": ["Gutter repair", "Gutter replacement", "Residential, multi-family and commercial"]
+    },
+    {
+      "slug": "siding",
+      "group": "residential",
+      "title": "Siding and Carpentry",
+      "short": "James Hardie and LP Smart Siding, plus patio carpentry.",
+      "text": "Siding repair and replacement alongside the roof, with James Hardie and LP Smart Siding, and WPI-8 approved patios.",
+      "body": [
+        "SmartChoice Roofing Solutions offers siding repair and replacement alongside our roofing and gutter work, for residential, multi-family and commercial clients.",
+        "Our carpentry brands are James Hardie Siding, LP Smart Siding and WPI-8 Approved Patios."
+      ],
+      "points": [
+        "James Hardie Siding",
+        "LP Smart Siding",
+        "WPI-8 Approved Patios",
+        "Siding repair and replacement"
+      ]
+    },
+    {
+      "slug": "commercial-roofing",
+      "group": "commercial",
+      "title": "Commercial Roofing",
+      "short": "Installations, routine maintenance and 24/7 emergency repairs.",
+      "text": "At SCR Commercial Roofing, we provide expert commercial roofing services tailored to meet the needs of businesses of all sizes.",
+      "image": "/brands/smartchoiceroofing/commercial",
+      "imageAlt": "Roofing workers on a church roof with a steeple, beside materials marked Smart Choice Roofing",
+      "body": [
+        "At SCR Commercial Roofing, we provide expert commercial roofing services tailored to meet the needs of businesses of all sizes. Whether you require large-scale installations, routine maintenance, or fast 24/7 emergency repairs, our skilled team has the expertise to handle every project with precision and care.",
+        "With a focus on exceptional service, quality workmanship and honest pricing, we help safeguard your investment, so you can focus on what matters most - your business."
+      ],
+      "points": [
+        "TPO, PVC and EPDM single ply membranes",
+        "Modified and built-up roofing",
+        "Reflective roof coatings",
+        "Composition shingles",
+        "All metal roofing panels",
+        "Metal wall panel systems"
+      ]
+    },
+    {
+      "slug": "flat-roofing",
+      "group": "commercial",
+      "title": "Flat and Low-Slope Roofing",
+      "short": "Single ply, modified bitumen and reflective coatings.",
+      "text": "TPO, PVC and EPDM single ply membranes, modified and built-up roofing, and reflective roof coatings for flat and low-slope buildings.",
+      "image": "/brands/smartchoiceroofing/flat",
+      "imageAlt": "A rooftop with a single ply welding machine, buckets and crew working at dusk",
+      "body": [
+        "We cover TPO, PVC and EPDM single ply membranes, modified and built-up roofing, and reflective roof coatings, from roof replacements through to repairs.",
+        "At SCR Commercial Roofing the same skilled team handles large-scale installations, routine maintenance and fast 24/7 emergency repairs, with precision and care on every project."
+      ],
+      "points": [
+        "TPO, PVC and EPDM single ply membranes",
+        "Modified and built-up roofing",
+        "Reflective roof coatings",
+        "Routine maintenance",
+        "Fast 24/7 emergency repairs"
+      ]
+    },
+    {
+      "slug": "metal-roofing",
+      "group": "commercial",
+      "title": "Metal Roofing",
+      "short": "Metal roofing panels and metal wall panel systems.",
+      "text": "All metal roofing panels and metal wall panel systems for commercial buildings.",
+      "body": [
+        "We cover all metal roofing panels and metal wall panel systems for commercial buildings of all sizes.",
+        "SCR Commercial Roofing handles large-scale installations, routine maintenance and fast 24/7 emergency repairs, and metal is one of the systems we cover alongside single ply, modified and built-up roofing, reflective coatings and composition shingles."
+      ],
+      "points": [
+        "All metal roofing panels",
+        "Metal wall panel systems",
+        "Large-scale installations, routine maintenance and 24/7 emergency repairs"
+      ]
+    }
+  ],
+  "materials": {
+    "title": "Shingles we install",
+    "text": "We install Owens Corning, GAF and CertainTeed shingles to TWIA standards, and every re-roof carries a manufacturer's warranty alongside our workmanship warranty.",
+    "brands": ["Owens Corning", "CertainTeed", "GAF", "IKO"]
+  },
+  "about": {
+    "title": "Built by lifelong Houstonians",
+    "text": [
+      "SmartChoice Roofing was founded by lifelong residents of Houston with strong connections to our community. Although we now live in Friendswood, we view all of Houston as home. Our goal was to create a company that serves our neighbors how we would want to be served.",
+      "The SmartChoice team focuses on honesty, customer care, and commitment. Our mission is to be a trustworthy company for our community. We offer unmatched customer service and high-quality products.",
+      "As a locally owned business, we aim to give our customers the best experience from the first conversation through to the project's completion and beyond. We deeply value the relationships formed with every family we work with at SmartChoice."
+    ],
+    "image": "/brands/smartchoiceroofing/crew",
+    "imageAlt": "Two men standing beside a truck lettered Smart Choice Roofing in a wooded residential area",
+    "values": [
+      {
+        "title": "Exceptional service",
+        "text": "Project managers keep you informed throughout the process, addressing your concerns and ensuring timely project completion."
+      },
+      {
+        "title": "Quality craftsmanship",
+        "text": "We pass inspections and maintain high standards for craftsmanship and safety, and all project managers have OSHA-30 certification."
+      },
+      {
+        "title": "Honest pricing",
+        "text": "We assess your roof to help you make informed decisions. Your budget and peace of mind are our top priorities."
+      }
+    ]
+  },
+  "inspection": {
+    "title": "What happens when you book an inspection",
+    "steps": [
+      {
+        "title": "Send us your details",
+        "text": "Enter your contact information and a message, or call us during hours of operation."
+      },
+      {
+        "title": "Someone gets in touch",
+        "text": "Someone from our team will be in touch as soon as possible to set a time."
+      },
+      {
+        "title": "We assess the roof",
+        "text": "A 100% pressure free inspection, so you can make an informed decision about what comes next."
+      }
+    ]
+  },
+  "serviceArea": ["Friendswood", "Pearland", "Houston"],
+  "areasText": "Our office is on South Friendswood Drive, and the crews work across the Greater Houston area for residential, multi-family and commercial clients.",
+  "areasImage": "/brands/smartchoiceroofing/areas",
+  "areasImageAlt": "A roofing crew sitting on a roof with tools and materials and a lake in the background",
+  "contactImage": "/brands/smartchoiceroofing/contact",
+  "contactImageAlt": "Aerial view of a dark gray shingled roof on a residential house",
+  "facts": [
+    {
+      "heading": "Warranties",
+      "text": "Every residential re-roof comes with a manufacturer's warranty alongside a workmanship warranty."
+    },
+    {
+      "heading": "Safety and Standards",
+      "text": "All project managers hold OSHA-30 certification, and shingle roofs are installed to TWIA standards."
+    },
+    {
+      "heading": "Who We Work For",
+      "text": "Residential, multi-family and commercial clients across the Greater Houston area."
+    },
+    {
+      "heading": "Free Quotes",
+      "text": "Call or email for a free quote. Our re-roof pricing starts from a single story, one layer of shingles and felt, a walkable pitch, the minimum workmanship warranty and no upgraded manufacturer's warranty."
+    },
+    {
+      "heading": "Emergency Repairs",
+      "text": "Fast 24/7 emergency repairs on commercial roofs, alongside large-scale installations and routine maintenance."
+    },
+    {
+      "heading": "Commercial Brands",
+      "items": ["Mule-Hide", "IKO", "Berridge", "Mueller", "McElroy"]
+    },
+    {
+      "heading": "Carpentry Materials",
+      "items": ["James Hardie Siding", "LP Smart Siding", "WPI-8 Approved Patios"]
+    },
+    {
+      "heading": "Colorado Springs",
+      "text": "Our Colorado operation covers the Pikes Peak region, from our Friendswood office here in Texas. Taylor Cragin, originally from Friendswood, moved his family there in early 2024 and oversees all sales, estimating, vendor relations and project management."
+    },
+    {
+      "heading": "Find Us Online",
+      "items": ["facebook.com/SmartChoiceRoofingTX", "instagram.com/smartchoice_roofing", "x.com/smartchoicehtx"]
+    }
+  ]
+}

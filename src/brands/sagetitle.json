@@ -1,0 +1,257 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "title",
+  "name": "Sage Title Company",
+  "shortName": "Sage Title",
+  "tagline": "Redefining title insurance.",
+  "phone": "(832) 934-7820",
+  "email": "info@sagetitleco.com",
+  "address": "3000 Weslayan Street, Suite 305",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77027",
+  "license": "Escrow funds are deposited in an auditable escrow trust account, examined against escrow accounting procedures and internal controls promulgated by the Texas Department of Insurance.",
+  "cta": {
+    "label": "Get a Quote",
+    "text": "Reach out to us and we will be happy to help in any way we can."
+  },
+  "brand": {
+    "primary": "#103d35",
+    "primaryDeep": "#0b2a25",
+    "accent": "#3c8066",
+    "ink": "#1f2a26",
+    "muted": "#5b6660",
+    "surface": "#fdf7f1",
+    "cream": "#f3ece3",
+    "line": "#e4dcd1",
+    "heading": "'Alice', Georgia, serif",
+    "body": "'Jost', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Alice&family=Jost:wght@400;500;600;700&display=swap",
+    "logo": "/brands/sagetitle/logo.webp",
+    "logoWidth": 220
+  },
+  "hero": {
+    "eyebrow": "Title insurance in Houston, Texas",
+    "title": "Redefining title insurance.",
+    "lead": "Going above and beyond to solve challenges, close deals, and achieve our clients' goals.",
+    "image": "/brands/sagetitle/hero",
+    "imageAlt": "Downtown Houston high-rise buildings in afternoon light",
+    "points": [
+      "Commercial and residential closings",
+      "Title insurance services nationwide",
+      "Five national underwriters"
+    ]
+  },
+  "overview": {
+    "title": "Comprehensive title services you can rely on.",
+    "text": "With deep experience in all commercial and residential title insurance and closing services, we know how to make every transaction a successful one."
+  },
+  "services": [
+    {
+      "slug": "commercial-title-insurance",
+      "title": "Commercial Title Insurance",
+      "icon": "building",
+      "summary": "Retail, office, multi-family and industrial.",
+      "text": "Title insurance and closing services for commercial real estate transactions in all major market segments, including retail, office, multi-family and industrial.",
+      "lead": "We provide title insurance and closing services for commercial real estate transactions in all major market segments including retail, office, multi-family, and industrial. Our team has the skill and sophistication to seamlessly handle even the most complex commercial real estate transactions.",
+      "image": "/brands/sagetitle/commercial",
+      "imageAlt": "A glass-clad commercial office building against a blue sky",
+      "covers": [
+        { "title": "Retail", "text": "Title insurance and closing services for retail property transactions." },
+        { "title": "Office", "text": "Title insurance and closing services for office property transactions." },
+        { "title": "Multi-family", "text": "Title insurance and closing services for multi-family property transactions." },
+        { "title": "Industrial", "text": "Title insurance and closing services for industrial property transactions." }
+      ]
+    },
+    {
+      "slug": "residential-title-services",
+      "title": "Residential Title Services",
+      "icon": "house",
+      "summary": "Contract to close for buyers and sellers.",
+      "text": "A dedicated team of residential real estate professionals working with buyers, sellers, agents, brokers and lenders from contract to close.",
+      "lead": "Our dedicated team of residential real estate professionals understand how important the sale and purchase of a home is. We work closely with buyers, sellers, agents, brokers, and lenders to ensure that the real estate closing process - contract to close - is as smooth and efficient as possible.",
+      "image": "/brands/sagetitle/residential",
+      "imageAlt": "An overhead view of a residential neighborhood and its streets",
+      "covers": [
+        { "title": "Buyers and sellers", "text": "Closing the sale and purchase of a home, from contract to close." },
+        { "title": "Agents and brokers", "text": "Working alongside the agents and brokers on the transaction to keep the closing moving." },
+        { "title": "Lenders", "text": "Coordinating with the lender so the closing process stays smooth and efficient." },
+        { "title": "Coverage nationwide", "text": "Title insurance services nationwide to protect buyers from and navigate a range of property challenges." }
+      ]
+    },
+    {
+      "slug": "title-services",
+      "title": "Title Services",
+      "icon": "book",
+      "summary": "Non-insured searches and title reports.",
+      "text": "Non-insured title services that provide due diligence information and reports, used for property review and analysis.",
+      "lead": "We offer non-insured title services to provide due diligence information and reports to a variety of clients. These services are often used for property review and analysis, such as for the subdivision or platting process, in anticipation of a sale or refinance, or to facilitate a loan modification.",
+      "image": "/brands/sagetitle/title-services",
+      "imageAlt": "Stacks of property files and documents on a desk",
+      "covers": [
+        { "title": "Title information reports", "text": "A report on what the record shows about a property." },
+        { "title": "Ownership and encumbrance searches", "text": "Who holds title and what is recorded against it." },
+        { "title": "Lien searches", "text": "Liens of record against the property." },
+        { "title": "UCC searches", "text": "Financing statements filed under the Uniform Commercial Code." }
+      ]
+    },
+    {
+      "slug": "escrow-services",
+      "title": "Escrow Services",
+      "icon": "shield",
+      "summary": "Funds and documents held by a neutral party.",
+      "text": "We act as a neutral third party holding funds and related documents securely while the transaction is pending.",
+      "lead": "We are a neutral third party that holds funds and related documents in a secure manner during the pendency of the transaction. Funds are deposited in an auditable escrow trust account - regularly examined against escrow accounting procedures and internal controls promulgated by the Texas Department of Insurance. At closing, all funds are disbursed per closing disclosures and instructions.",
+      "image": "/brands/sagetitle/escrow",
+      "imageAlt": "A wall of safe deposit boxes",
+      "covers": [
+        { "title": "A neutral third party", "text": "Funds and related documents are held securely while the transaction is pending." },
+        { "title": "An auditable trust account", "text": "Escrow funds sit in an auditable escrow trust account that is regularly examined." },
+        { "title": "Texas Department of Insurance controls", "text": "Accounts are examined against escrow accounting procedures and internal controls promulgated by the Texas Department of Insurance." },
+        { "title": "Disbursement at closing", "text": "At closing, all funds are disbursed per the closing disclosures and instructions." }
+      ]
+    }
+  ],
+  "affiliations": {
+    "title": "Underwriters we write for",
+    "items": [
+      "First American Title",
+      "Chicago Title Insurance Company",
+      "Fidelity National Title",
+      "Title Resources Group",
+      "Texan Title Insurance Company"
+    ]
+  },
+  "about": {
+    "title": "A commitment to seamless transactions.",
+    "text": [
+      "As your partner for top-quality title insurance services, we do whatever it takes to deliver a smooth, stress-free experience for even the most complex and challenging deals. We work hard to gain - and keep - your trust, and we treat each transaction with the same respect and care.",
+      "Our team has more than two decades of title industry experience, so we know what steps to take to make sure that each closing is smooth, efficient, and successful. Whether you're interested in commercial or residential title insurance, we bring responsive, personalized service and careful attention to detail to every partnership.",
+      "We are a full-service title company providing comprehensive commercial and residential title insurance and closing services nationwide."
+    ],
+    "image": "/brands/sagetitle/about",
+    "imageAlt": "A historic Texas county courthouse",
+    "values": [
+      {
+        "title": "Whatever it takes",
+        "text": "We do whatever it takes to deliver a smooth, stress-free experience for even the most complex and challenging deals."
+      },
+      {
+        "title": "Two decades of title experience",
+        "text": "Our team has more than two decades of title industry experience, so we know what steps to take on each closing."
+      },
+      {
+        "title": "Responsive, personalized service",
+        "text": "Commercial or residential, we bring responsive, personalized service and careful attention to detail to every partnership."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Read Hammond",
+      "role": "Chief Executive Officer",
+      "bio": "Direct line 832.917.7419, read@sagetitleco.com.",
+      "image": "/brands/sagetitle/team-1",
+      "imageAlt": "Read Hammond"
+    },
+    {
+      "name": "Laina Hammond",
+      "role": "Chief Operating Officer",
+      "bio": "Sage Title's first Chief Operating Officer and a co-owner of the company with her husband, CEO Read Hammond, bringing more than two decades of legal and leadership experience to the role. Direct line 281.788.9535, laina@sagetitleco.com.",
+      "image": "/brands/sagetitle/team-2",
+      "imageAlt": "Laina Hammond"
+    }
+  ],
+  "resources": [
+    {
+      "title": "TLTA - Texas Land Title Association",
+      "text": "The state association for the Texas title insurance industry.",
+      "href": "https://www.tlta.com/"
+    },
+    {
+      "title": "TDI Texas Title Insurance Basic Manual",
+      "text": "The Texas Department of Insurance manual that governs title insurance in the state.",
+      "href": "https://www.tdi.texas.gov/title/titleman.html"
+    },
+    {
+      "title": "TREC - Texas Real Estate Commission",
+      "text": "Licence lookups, contract forms and consumer information.",
+      "href": "https://www.trec.texas.gov/"
+    },
+    {
+      "title": "HAR - Houston Association of Realtors",
+      "text": "Listings and market information for the Houston area.",
+      "href": "https://www.har.com/"
+    },
+    {
+      "title": "Texas Association of Realtors",
+      "text": "Statewide association resources for buyers, sellers and agents.",
+      "href": "https://www.texasrealestate.com/"
+    },
+    {
+      "title": "ALTA Forms and Documents",
+      "text": "American Land Title Association policy forms and endorsements.",
+      "href": "https://www.alta.org/policy-forms/"
+    },
+    {
+      "title": "ALTA Endorsement Guide",
+      "text": "The endorsement chart we publish for commercial transactions.",
+      "href": "https://www.sagetitleco.com/s/ALTA-Endorsement-Chart-v-17-07-01-2021.pdf"
+    },
+    {
+      "title": "National Secretary of State",
+      "text": "The directory of Secretary of State offices for entity searches in every state.",
+      "href": "https://www.coordinatedlegal.com/SecretaryOfState.html"
+    },
+    {
+      "title": "Texas County Appraisal Districts",
+      "text": "The county directory for property tax and appraisal records.",
+      "href": "https://comptroller.texas.gov/taxes/property-tax/county-directory/"
+    },
+    {
+      "title": "Texas Municipal Utility Districts - Map Viewer",
+      "text": "Look up the MUD a property sits in.",
+      "href": "https://tceq.maps.arcgis.com/apps/webappviewer/index.html?id=04bbf8b322b34d8abaea7b06996d3775"
+    },
+    {
+      "title": "GHBA - Greater Houston Builders Association",
+      "text": "The builders association for the Houston region.",
+      "href": "https://www.ghba.org/"
+    },
+    {
+      "title": "Texas Statutes",
+      "text": "The full text of Texas law, searchable by code.",
+      "href": "https://statutes.capitol.texas.gov/"
+    },
+    {
+      "title": "Zoccam",
+      "text": "The app we use for depositing earnest money.",
+      "href": "https://www.zoccam.com/"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Our office",
+      "items": [
+        "3000 Weslayan Street, Suite 305, Houston, Texas 77027",
+        "Phone: 832.934.7820",
+        "Fax: 832.234.9734",
+        "Email: info@sagetitleco.com",
+        "LinkedIn: linkedin.com/company/sage-title-company"
+      ]
+    },
+    {
+      "heading": "Opening an order",
+      "text": "Quotes and orders go through our client portal, and earnest money can be deposited through the Zoccam app."
+    },
+    {
+      "heading": "Five underwriters",
+      "text": "We are proud to partner with five top national underwriters to serve the diverse needs of our clients and maintain maximum flexibility in underwriting decisions."
+    },
+    {
+      "heading": "Where we close",
+      "text": "We are a full-service title company providing comprehensive commercial and residential title insurance and closing services nationwide."
+    }
+  ]
+}
