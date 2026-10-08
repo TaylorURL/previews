@@ -1,0 +1,380 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "All Star I&E, Inc.",
+  "shortName": "All Star I&E",
+  "summary": "Electrical construction, instrumentation and 24 hour electrical service and repair for oilfield, industrial and commercial customers, from the Houston office in Channelview.",
+  "phone": "(832) 694-3001",
+  "email": "allstar@allstarie.com",
+  "address": "16201 Market St",
+  "town": "Channelview",
+  "state": "TX",
+  "zip": "77530",
+  "since": 1990,
+  "hours": [["Mon – Fri", "8 AM – 4 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "brand": {
+    "primary": "#1a2674",
+    "primaryDeep": "#10184a",
+    "accent": "#ffc423",
+    "ink": "#11182b",
+    "muted": "#4a5569",
+    "surface": "#f1f3fb",
+    "line": "#dbe0ef",
+    "heading": "'Archivo', system-ui, sans-serif",
+    "body": "'Barlow', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap",
+    "logo": "/brands/allstarie/logo.webp",
+    "logoWidth": 64
+  },
+  "emergency": {
+    "title": "24 hour electrical service",
+    "text": "All Star has field service technicians that are able to offer 24 hour emergency service."
+  },
+  "hero": {
+    "eyebrow": "Electrical construction and instrumentation since 1990",
+    "title": "Oilfield, industrial and commercial electrical work,",
+    "titleAccent": "built around safety.",
+    "lead": "All Star I&E, Inc. specializes in electrical construction and electrical service and repair, with instrumentation, fiber optics and 24 hour service behind it. Our safety program is the heart of the organization.",
+    "image": "/brands/allstarie/hero",
+    "imageAlt": "An All Star technician at a control panel on a skid"
+  },
+  "groups": [
+    {
+      "slug": "oilfield-electrical",
+      "title": "Oilfield Electrical",
+      "icon": "zap",
+      "summary": "Drilling rig systems, production equipment and the controls that keep them safe.",
+      "intro": "All Star I&E, Inc. is an electrical contractor with over 25 years of experience in the oil and gas industry. In the past five years we have built over 150 complete drilling rig systems, as well as a multitude of individual components and equipment for customers in the drilling industry. We have also provided service and maintenance to an innumerable amount of drilling rigs all over the nation and abroad.",
+      "image": "/brands/allstarie/oilfield",
+      "imageAlt": "A drilling rig silhouetted against a sunset",
+      "services": [
+        {
+          "slug": "rig-electrical-wiring",
+          "title": "Rig and Production Wiring",
+          "icon": "zap",
+          "text": "Electrical wiring for drilling rigs, oil field production, production skids and the motors and drives that run them.",
+          "points": [
+            "AC drives, SCRs and generators, service and repair",
+            "Motor control centers, motor starters and motor controls",
+            "3-phase motors"
+          ]
+        },
+        {
+          "slug": "controls-and-safeties",
+          "title": "Electrical Controls and Safeties",
+          "icon": "shield",
+          "text": "Alarm, shutdown and detection systems wired and commissioned alongside the power they protect.",
+          "points": [
+            "Alarm, shutdown and automation panels",
+            "Fire detection and gas detection systems",
+            "Public address systems",
+            "DCS systems and programmable logic controllers"
+          ]
+        },
+        {
+          "slug": "commissioning-and-maintenance",
+          "title": "Commissioning and Maintenance",
+          "icon": "settings",
+          "text": "All Star installs, commissions, refurbishes and maintains electrical systems across a site.",
+          "points": [
+            "SCRs, generators, oil circuit breakers, air circuit breakers and automatic reclosures",
+            "Switchgear, motor control centers and motors",
+            "P.A. systems, control devices, receptacles and lighting systems",
+            "Fire alarm systems and gas alarm systems",
+            "Uninterrupted power supplies, batteries and battery chargers",
+            "Conduit, wire, bus duct, cable tray and grounding systems"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "industrial-and-instrumentation",
+      "title": "Industrial and Instrumentation",
+      "icon": "gauge",
+      "summary": "Plant electrical work and the instrumentation that is the nerve centre of a facility.",
+      "intro": "All Star I&E, Inc. offers customers all the advantages of a small electrical contractor, low overhead, consistent staffing, prompt and personal response, with the synergies of a large contractor, design-build capabilities, buying power, bond ability and experienced personnel. With our industrial and infrastructure experience, we can serve your electrical needs from service calls to design-build of multi-million dollar ground up facilities.",
+      "image": "/brands/allstarie/industrial",
+      "imageAlt": "Conduit and process piping inside a plant",
+      "services": [
+        {
+          "slug": "plant-electrical",
+          "title": "Plant Electrical",
+          "icon": "building",
+          "text": "Whether new construction, renovation, expansion or maintenance, our certified electrical contracting personnel work to specification and on schedule.",
+          "points": [
+            "Water and sewage plants",
+            "Fuel loading docks",
+            "Process plants",
+            "Plant maintenance"
+          ]
+        },
+        {
+          "slug": "instrumentation",
+          "title": "Instrumentation",
+          "icon": "gauge",
+          "text": "Instrumentation is the nerve center of a plant or facility. All Star specializes in electronic, pneumatic and process sensing systems, distributed control systems and peripherals, performing both the electrical and the pneumatic portions of the work.",
+          "points": [
+            "A cadre of qualified technicians for instrumentation, electrical and analyzer calibration",
+            "Loop check, commissioning and start-up",
+            "Maintenance of process controls and electrical systems",
+            "On-site electrical and instrumentation engineering",
+            "Inspection and customer acceptance services"
+          ]
+        },
+        {
+          "slug": "technical-personnel",
+          "title": "Engineers and Technicians",
+          "icon": "shield",
+          "text": "All Star offers engineers and technical personnel services to meet our client's needs. We will second the personnel to you under your supervision, provide you with supervision, or whatever fits your requirements and needs."
+        }
+      ]
+    },
+    {
+      "slug": "commercial-construction",
+      "title": "Commercial Electric Construction",
+      "icon": "building",
+      "summary": "New electrical construction and remodel work for customers all around the state of Texas.",
+      "intro": "All Star I&E, Inc. provides new electrical construction as well as remodel work, for our customers all around the state of Texas. From small offices to large warehouses, All Star will provide your company with excellent class of service around the clock to suit our customers' needs.",
+      "image": "/brands/allstarie/commercial",
+      "imageAlt": "New lighting installed in a commercial ceiling grid",
+      "services": [
+        {
+          "slug": "design-build",
+          "title": "Design Build Construction",
+          "icon": "settings",
+          "text": "In-house design and construction services that reduce your overall cost and allow a seamless transition from design through construction and ongoing service assistance.",
+          "points": [
+            "A detailed schematic drawn from your specifications",
+            "A design, budget and schedule once the schematic is approved",
+            "The electrical warranty on the finished product rests in our hands"
+          ]
+        },
+        {
+          "slug": "office-build-out",
+          "title": "Office Build Out and Remodels",
+          "icon": "building",
+          "text": "Office electrical alterations or a complete electrical build out. We can help you create a scope of works and drawings, or work from a sketch or plan you send us, then quote it and get underway promptly.",
+          "points": [
+            "Occupied offices kept clean and obstruction-free",
+            "Dust and noise kept down throughout the work"
+          ]
+        },
+        {
+          "slug": "food-service",
+          "title": "Food Service Electrical Construction",
+          "icon": "building",
+          "text": "Restaurant and food service electrical work, from submittals to final inspection, with qualified electricians and project coordination behind it."
+        },
+        {
+          "slug": "retail-construction",
+          "title": "Retail Construction",
+          "icon": "building",
+          "text": "Our field employees and project managers provide the expertise and installation flexibility that competitive retail projects require, at any size."
+        },
+        {
+          "slug": "warehouses",
+          "title": "Warehouses",
+          "icon": "building",
+          "text": "We install, maintain and upgrade the electrical power for your warehouse facility, and we are skilled at installing and maintaining industrial standby and emergency power generators.",
+          "points": [
+            "Power loads and machinery tested, inspected and regulated",
+            "Power and utility lines re-distributed through the space",
+            "Energy-efficient lighting and special control equipment"
+          ]
+        },
+        {
+          "slug": "site-and-exterior-lighting",
+          "title": "Site Work, Parking Lot and Exterior Lighting",
+          "icon": "lightbulb",
+          "text": "All Star has invested heavily into equipment for digging, trenching, pulling and lifting. Whether it is a new site or new work in an existing one, we are ready to complete any type of outdoor electrical project."
+        },
+        {
+          "slug": "service-and-repair",
+          "title": "Service and Repair",
+          "icon": "wrench",
+          "text": "The everyday electrical work a commercial building needs, with 24/7 emergency service behind it.",
+          "points": [
+            "Lighting installation and repair, panel replacement, additional circuits",
+            "Generator installation, cabling and power distribution",
+            "Wiring for access control, telecom and HVAC systems",
+            "Temperature controls, energy management systems and control wiring",
+            "Electronic time clocks and troubleshooting"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "panel-fabrication",
+      "title": "Panel Fabrication",
+      "icon": "circuit",
+      "summary": "A UL508a panel shop building custom control panels, from one-offs to mass runs.",
+      "intro": "A leader in custom control panels, All Star I&E, Inc. builds control panels and electrical equipment to fit the client's needs, and offers UL508a, UL689a NRBX and UL698a NNNY listing capabilities. Our UL508a panel shop provides local, national and global manufacturing capabilities for a variety of industries.",
+      "image": "/brands/allstarie/panel",
+      "imageAlt": "Electrical panels and conduit mounted on a block wall",
+      "services": [
+        {
+          "slug": "custom-control-panels",
+          "title": "Custom Control Panels",
+          "icon": "circuit",
+          "text": "Industrial control panels built for water processing including sewage and potable, conveyor systems, refineries and petrochemical plants, land based and offshore drilling and production, mixing, HVAC, refrigeration, solar and wind, desalination, electro-pneumatic systems, the medical and hospital industry, hydraulics machinery and booster pump systems.",
+          "points": [
+            "Duplex, triplex and quadplex systems",
+            "Class 1 Division 1 and Class 1 Division 2 applications",
+            "Type 1, 3R, 4, 4X, 7, 9, 12 and 13 enclosures"
+          ]
+        },
+        {
+          "slug": "panel-repair-and-upgrades",
+          "title": "Panel Repair, Upgrade and Field Listing",
+          "icon": "wrench",
+          "text": "Besides manufacturing, All Star can field repair, upgrade and modify your existing panels, which lets us provide a turn key solution with minimal downtime. Need a panel UL listed in the field? No problem, give us a call."
+        },
+        {
+          "slug": "controls-equipment",
+          "title": "Controls and Instrumentation Equipment",
+          "icon": "settings",
+          "text": "Our equipment knowledge covers the devices a control panel is built around.",
+          "points": [
+            "VFDs, PLCs and HMIs",
+            "Prox, inductive and ultrasonic sensors",
+            "Pressure and flow transducers, process meters",
+            "RTDs and thermocouples, 0-10v and 4-20ma",
+            "Safety curtains"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "audio-data-and-fiber",
+      "title": "Audio, Data and Fiber",
+      "icon": "cable",
+      "summary": "Communication systems, camera systems, networking and custom fiber optic builds.",
+      "intro": "All Star I&E, Inc. builds and creates communication systems that are suited for the needs of our customers. Communications is key to any workplace. It prevents injuries, creates a more fluid work environment, keeps people informed of operations and monitors your jobs in progress locally and remotely.",
+      "image": "/brands/allstarie/fiber",
+      "imageAlt": "Coiled fiber optic cables made up on a shop floor",
+      "services": [
+        {
+          "slug": "audio-and-data",
+          "title": "Audio and Data Communications",
+          "icon": "cable",
+          "text": "All Star provides camera systems, wired and wireless, developed to suit the needs of our customers, along with the systems that carry voice and data around a site.",
+          "points": [
+            "Public address systems and intercom systems",
+            "Audio solutions",
+            "Networking and server rack installation"
+          ]
+        },
+        {
+          "slug": "stentofon",
+          "title": "Stentofon Products and Installation",
+          "icon": "cable",
+          "text": "All Star I&E, Inc. is an authorized distributor and installer of official Stentofon communications equipment. We will work with your company to create a system made exactly for your needs.",
+          "points": [
+            "Stentofon certified All Star employees install the equipment",
+            "AlphaCom XE IP exchanges, with full backwards compatibility with the conventional analog range",
+            "On-shore repair at most locations"
+          ]
+        },
+        {
+          "slug": "fiber-optics",
+          "title": "Fiber Optics",
+          "icon": "cable",
+          "text": "We provide new build custom order fiber optics to meet our customers' requests, and can design a new fiber optic solution for the needs of your job.",
+          "points": [
+            "Certified Fiber Optic Installation Technicians (CFOIT) on staff",
+            "Diagnosis and repair of fiber optic cables, including TFOCA II 4-channel and 8-channel hybrid cables",
+            "Delivery time on cables averages 1 to 2 days after the start of build",
+            "A technician sent to your site when one is requested"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Founded in 1990 by two brothers who came up as master electricians.",
+    "text": [
+      "All Star I&E, Inc. was founded in 1990 by brothers William and Kenneth Stolte. We are a company that specializes in oil and gas, commercial and industrial electrical fields, also providing instrumentation, fiber optics, and 24 hour electrical service and repair.",
+      "William Stolte has been in the electrical industry for over 35 years working as an apprentice, journeyman and master electrician. Kenneth Stolte also has over 30 years experience in the electrical field in a career that led up to master electrician as well. Both started working in chemical plants, and since then they have worked offshore on production platforms and in the drilling industry.",
+      "All Star has provided excellent services for many customers, and will continue only to excel because we have the ingenuity, knowledge and technique to get the job done. Customer service is a company motto. The family that makes our company will go the extra mile to ensure that the job is done to the complete satisfaction of everyone involved. We stand out from the crowd because we build long-standing relationships with our customers, vendors and employees.",
+      "All Star I&E, Inc. has the corporate organization, financial resources, facilities, manpower, tools, equipment, management strength and technical expertise to staff and manage a complex construction effort requiring several hundred workers."
+    ],
+    "image": "/brands/allstarie/shop",
+    "imageAlt": "The All Star I&E panel fabrication building",
+    "values": [
+      {
+        "title": "Safety",
+        "text": "Our safety program is the heart of our organization. Personal injury, property damage and the resulting loss of production are not acceptable costs of doing business."
+      },
+      {
+        "title": "Quality",
+        "text": "Our QA/QC is the best in the industry. Through in house training, our personnel are educated that quality and safety have a higher priority than productivity."
+      },
+      {
+        "title": "Planning",
+        "text": "We use the critical path method of planning, scheduling and tracking our projects, so problem areas are foreseen and corrected before they become real."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "UL Listings",
+      "items": [
+        "UL508a panel shop, approved to manufacture industrial control panels",
+        "UL689a NRBX listing capability",
+        "UL698a NNNY listing capability"
+      ]
+    },
+    {
+      "heading": "Certifications",
+      "items": [
+        "Certified Fiber Optic Installation Technicians (CFOIT) on staff",
+        "Authorized Stentofon distributor and installer",
+        "Stentofon certified installation employees"
+      ]
+    },
+    {
+      "heading": "Where We Work",
+      "text": "Commercial electrical construction for customers all around the state of Texas, drilling rig service and maintenance all over the nation and abroad, and fiber optic services across the U.S."
+    },
+    {
+      "heading": "Corporate Office",
+      "items": [
+        "523 E. Oak Hill Dr., Spring, TX 77386",
+        "Office: 1-(877) 478-4605 or (281) 298-5757",
+        "Fax: (281) 298-6232"
+      ]
+    },
+    {
+      "heading": "Houston Office",
+      "items": [
+        "16201 Market St., Channelview, TX 77530",
+        "Office: (832) 694-3001",
+        "Fax: (281) 298-6232"
+      ]
+    },
+    {
+      "heading": "Who To Ask For",
+      "items": [
+        "William Stolte, President",
+        "Kenneth Stolte, Senior Vice President",
+        "Stacey Muster, Administration Manager, allstar@allstarie.com",
+        "Abel Colunga, Commercial Project Manager, abelcolunga@allstarie.com",
+        "Kyle Stillings, Fiber, Audio and Data Project Manager, kylestillings@allstarie.com",
+        "Melinda Checketts, Accounts Payable, accountspayable@allstarie.com"
+      ]
+    },
+    {
+      "heading": "Safety and Quality",
+      "text": "Every contractor and client owes the worker a safe work place, and we must all be partners in safety. For safety comments, concerns or to report an incident, email williamweimer@allstarie.com."
+    },
+    {
+      "heading": "Training",
+      "text": "Only with proper training can we grow and provide quality craftsmanship to our clients. We offer our employees in house training and on the job training."
+    },
+    {
+      "heading": "Employment",
+      "text": "For employment opportunities, fill out the application and send it by email to allstar@allstarie.com or by fax to 281-298-6232."
+    }
+  ]
+}
