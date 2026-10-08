@@ -1,0 +1,369 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "insurance",
+  "name": "Allsurance Agency",
+  "shortName": "Allsurance",
+  "tagline": "A division of Bowen, Miclette & Britt",
+  "phone": "(936) 257-1700",
+  "email": "info@bmbinc.com",
+  "address": "110 Sterling Ave",
+  "town": "Dayton",
+  "state": "TX",
+  "zip": "77535",
+  "hours": [["Mon – Fri", "8 AM – 4:30 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "cta": {
+    "label": "Get a Quote",
+    "text": "Send us a note about what you need covered and our team will be in touch to discuss your needs."
+  },
+  "brand": {
+    "primary": "#264431",
+    "primaryDeep": "#172c1f",
+    "accent": "#4a7a4f",
+    "ink": "#23282a",
+    "muted": "#5b6560",
+    "surface": "#f5f6f3",
+    "cream": "#e9ece6",
+    "line": "#dde1d9",
+    "heading": "'Merriweather', Georgia, serif",
+    "body": "'Fira Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Fira+Sans:wght@400;500;600;700&display=swap",
+    "logo": "/brands/allsuranceagency/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Insurance in Dayton, Texas",
+    "title": "Allsurance Agency has teamed up with Bowen, Miclette & Britt.",
+    "lead": "We are excited to continue providing Dayton and the surrounding communities with the knowledge, vision, accountability and service that BMB has exemplified for more than 40 years.",
+    "image": "/brands/allsuranceagency/hero",
+    "imageAlt": "A steel commercial building on a rural lot",
+    "points": [
+      "An office on Sterling Avenue in Dayton",
+      "Commercial, benefits, bonds and risk management",
+      "BMB's large-agency capabilities behind a local office"
+    ]
+  },
+  "overview": {
+    "title": "Coverage for businesses, families and the people who run them.",
+    "text": "We can help you navigate the complex world of commercial insurance products, employee benefits, surety bonds, human capital management and risk management."
+  },
+  "audiences": { "individuals": "Individuals & Families", "businesses": "Businesses" },
+  "services": [
+    {
+      "slug": "personal-insurance",
+      "title": "Personal Insurance",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Personal programs for individuals and families.",
+      "text": "Comprehensive personal insurance programs for individuals and families, including the design and service of complex programs for people with substantial assets.",
+      "lead": "Our personal insurance team is dedicated to developing comprehensive personal insurance programs for individuals and families, and to serving as your trusted advisor as your holdings change.",
+      "covers": [
+        { "title": "Customized personal programs", "text": "As a family's assets and financial holdings increase, its insurance arrangements may not respond to its increasingly sophisticated needs. We help develop solutions that do." },
+        { "title": "Coverage for high net worth individuals", "text": "Programs built for family offices, executives, entrepreneurs, legal and medical professionals and professional athletes." },
+        { "title": "Personal risk management", "text": "A comprehensive personal risk management program that completes an overall financial plan and protects against a catastrophic loss." },
+        { "title": "Personal lines", "text": "Personal lines coverage alongside the agency's commercial, benefits and bonding work." }
+      ]
+    },
+    {
+      "slug": "estate-and-business-planning",
+      "title": "Estate and Business Planning",
+      "audience": "individuals",
+      "icon": "landmark",
+      "summary": "Wealth transfer and business succession.",
+      "text": "Advanced planning and implementation in wealth transfer, business succession, personal risk planning, life audit and executive compensation.",
+      "lead": "BMB offers high-net-worth clients advanced financial planning strategies and implementation in the areas of wealth transfer, business succession, personal risk planning, life audit and executive compensation planning.",
+      "covers": [
+        { "title": "Wealth transfer planning", "text": "Implementing wealth transfer and business strategies with experience in financial and insurance products." },
+        { "title": "Business planning", "text": "Succession and continuity planning for owners and their companies." },
+        { "title": "Personal and family needs", "text": "Personal risk planning alongside the family's wider financial picture." },
+        { "title": "Life insurance audit", "text": "A review of existing life coverage, with financial and insurance product analysis to check that a recommended strategy is viable." }
+      ]
+    },
+    {
+      "slug": "small-business",
+      "title": "Small Business Insurance",
+      "audience": "businesses",
+      "icon": "store",
+      "summary": "Tailored coverage for small businesses.",
+      "text": "Property, liability and workers' compensation for small businesses, written to protect assets, control losses and lower the total cost of risk.",
+      "lead": "Small businesses are critical to local economies, and they need comprehensive coverages to protect their assets, control losses and build a foundation for success. Running a small business in a rural area can come with its own unique challenges.",
+      "image": "/brands/allsuranceagency/small-business",
+      "imageAlt": "A small storefront on a quiet street",
+      "covers": [
+        { "title": "General liability", "text": "Protects a business from bodily injuries, advertising injuries and customer property damage. Many commercial leases require it." },
+        { "title": "Commercial property", "text": "Safeguards a business's physical structure and its contents, including furniture, equipment and inventory." },
+        { "title": "Business Owner's Policy", "text": "A BOP bundles commercial property and general liability under one plan and can be a cost-effective option for a small business." },
+        { "title": "Business income", "text": "Also called business interruption insurance. It compensates for income lost because of property damage." },
+        { "title": "Workers' compensation", "text": "Addresses the costs when an employee becomes injured or ill on the job." },
+        { "title": "Cyber and professional liability", "text": "Cyber liability for a data breach, and errors and omissions coverage for claims about work performance." }
+      ],
+      "questions": [
+        { "q": "Why does a small business need these coverages?", "a": "Without insurance, owners may have to pay for damages out of pocket. Coverage matters for complying with government regulations or landlord policies, responding to workers' compensation claims, standing behind the business and its employees in a lawsuit, and managing costs after a natural disaster, vandalism or theft." },
+        { "q": "What does working with us look like?", "a": "We offer brokerage services to help small businesses mitigate risk and protect their assets, starting with a needs assessment and continuing with ongoing support." }
+      ]
+    },
+    {
+      "slug": "commercial-insurance",
+      "title": "Commercial Insurance",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Coverage plans built around your operations.",
+      "text": "Carrying the right commercial coverage reduces your total cost of risk. We work to understand all aspects of your business and place the program through the best markets available.",
+      "lead": "As a business owner in any industry, you face exposure to various hazards that can jeopardize your company. We strive to understand all aspects of your business, develop a coverage plan for all contingencies and find coverage through the best insurance markets available.",
+      "image": "/brands/allsuranceagency/commercial",
+      "imageAlt": "A white work truck parked behind a chain-link fence",
+      "covers": [
+        { "title": "General liability", "text": "Helps cover claims that may arise during normal business operations." },
+        { "title": "Workers' compensation", "text": "Pays claims resulting from workplace accidents and injuries." },
+        { "title": "Commercial auto", "text": "Covers the vehicles your business owns and operates." },
+        { "title": "Business owners policy", "text": "Combines general liability and commercial property coverage on one policy." },
+        { "title": "Commercial umbrella", "text": "Provides additional liability protection for claims exceeding the limits of a base policy." },
+        { "title": "Cyber insurance", "text": "Covers your business after a data breach involving private customer information, such as credit card numbers and health records." }
+      ]
+    },
+    {
+      "slug": "management-and-professional-liability",
+      "title": "Management and Professional Liability",
+      "audience": "businesses",
+      "icon": "scale",
+      "summary": "Cover for directors, officers and managers.",
+      "text": "Professional liability insurance helps protect a business and its directors, officers and managers from the wide range of exposures they face, whether the company is public, private or non-profit.",
+      "lead": "Whether your company is public, private or non-profit, the individuals in charge of its direction and performance make daily decisions that can adversely affect your company, regardless of intent. Professional liability insurance helps protect businesses and their directors, officers and managers from the wide range of exposures they face.",
+      "covers": [
+        { "title": "Directors and officers liability", "text": "Securities claims, wrongful acts and the defence costs that follow, which can be expensive on their own whether or not an individual is ultimately held liable." },
+        { "title": "Employment practices liability", "text": "Claims about wrongful employment practices, covering the cost to defend an employment claim." },
+        { "title": "Errors and omissions", "text": "Professional liability for claims about the work your company performed." },
+        { "title": "Fiduciary, crime and network risks", "text": "Fiduciary liability, crime and fidelity, kidnap and ransom, and privacy and network security." },
+        { "title": "Umbrella insurance", "text": "Additional liability insurance that provides coverage beyond standard policy limits, placed at competitive rates when those limits do not cover every risk." },
+        { "title": "Program design", "text": "We start with your business — its history, industry, customers, structure, ownership, management, products, services and financial picture — then work with underwriters to develop coverage options that fit." }
+      ],
+      "questions": [
+        { "q": "Is this risk already covered by our general liability or umbrella policy?", "a": "It is a common misconception that protection for this type of risk is found in other areas of a company's insurance program, such as general liability and umbrella policies. A management and professional liability program is designed and implemented separately." },
+        { "q": "Where do these claims come from?", "a": "Customers, competitors, suppliers, employees, shareholders and government regulators." }
+      ]
+    },
+    {
+      "slug": "international-insurance",
+      "title": "International Insurance",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Coverage for operations outside the US.",
+      "text": "Whether a US based company has a large multinational presence or is only considering expanding abroad, BMB can place coverage on current domestic operations and serve clients at an international level.",
+      "lead": "Whether your US based company has a large multinational presence, or is just considering the possibility of expanding operations abroad, BMB has the knowledge to not only place coverage on current domestic operations but also serve its clients at an international level.",
+      "covers": [
+        { "title": "Import and export", "text": "Imported and exported products, overseas sales offices and warehousing." },
+        { "title": "Foreign locations", "text": "Owned or operated foreign locations and foreign subsidiaries." },
+        { "title": "Joint ventures and contracts", "text": "Participation in international joint ventures, investment in mature and emerging markets, and involvement in foreign contractual relationships." },
+        { "title": "International risk services", "text": "Risk identification, total cost of risk valuation, and safety program evaluation and design, from risk management professionals with experience at the international level." },
+        { "title": "Underwriter relationships", "text": "The team's expertise, commitment to service and leverage with influential underwriters in the marketplace." }
+      ]
+    },
+    {
+      "slug": "employee-benefits",
+      "title": "Employee Benefits",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Benefits strategy, compliance and administration.",
+      "text": "A cost-effective employee benefits strategy that protects the health of your employees and complements their overall compensation formula.",
+      "lead": "Employers have a critical need for a cost-effective employee benefits insurance strategy that not only protects the health and well-being of valued employees but also works to complement their overall compensation formula.",
+      "covers": [
+        { "title": "Core coverages", "text": "The medical, dental, life and disability lines that make up the base of a benefits program." },
+        { "title": "Compliance", "text": "Employer compliance work on health and welfare benefits." },
+        { "title": "Wellness and productivity", "text": "Well-being and productivity management built into the program design." },
+        { "title": "Technological resources", "text": "Syncing insurance data with payroll systems such as ADP, Paylocity and Workday." }
+      ],
+      "questions": [
+        { "q": "How does an outside consultant help?", "a": "Aligning your firm with a benefits consulting expert who can guide you through a complete array of products and services positions your company to sustain growth, productivity and profitability." },
+        { "q": "What does the agency commit to?", "a": "A commitment to superior service and long-term client relationships, which also enables competitive program pricing." }
+      ]
+    },
+    {
+      "slug": "retirement-planning",
+      "title": "Retirement Planning",
+      "audience": "businesses",
+      "icon": "piggy-bank",
+      "summary": "401(k) plans and retirement consulting.",
+      "text": "Group 401(k) plans and retirement consulting for employers, with the compliance work managed and the administrative load on the employer reduced.",
+      "lead": "Offering 401(k) plans and retirement consulting for employees can be an excellent way to support employee welfare. The retirement planning process requires extensive foresight and an acute awareness of financial strategy, and relying on experienced consultants can help employers develop a comprehensive plan designed for risk mitigation and financial optimization.",
+      "covers": [
+        { "title": "Choosing a plan", "text": "Helping employers choose group 401(k) plans." },
+        { "title": "Compliance", "text": "Managing compliance for retirement benefits." },
+        { "title": "Strategy", "text": "Developing a strategy for employee retirement programs and mitigating the risks that come with them." },
+        { "title": "Administration", "text": "Reducing the administrative responsibilities an employer carries, with a needs assessment and a defined financial structure to start." }
+      ],
+      "questions": [
+        { "q": "What is a 401(k) plan?", "a": "A 401(k) is a retirement plan sponsored by an employer that employees can contribute to through a tax-free paycheck deduction, which the employer matches with a pre-tax contribution. Group 401(k) plans have higher contribution caps than other retirement funds." },
+        { "q": "Why is retirement planning worth offering?", "a": "For employees, long-term investing through a manageable payroll deduction secures a financial future. For employers, the benefit makes the company more competitive in the labor market and can improve morale and overall work performance." }
+      ]
+    },
+    {
+      "slug": "surety-bonds",
+      "title": "Surety Bonds",
+      "audience": "businesses",
+      "icon": "stamp",
+      "summary": "Bid, performance and commercial bonds.",
+      "text": "Securing the right surety bond program is critical to your success. We know how sureties evaluate a business, and we negotiate with underwriters on your terms and conditions.",
+      "lead": "When you are looking for a bonding company you can trust, our goal is to develop a personal relationship with each client and to understand your business from top to bottom. Our in-depth knowledge of how sureties evaluate your business and management puts us in a position to negotiate the best possible terms and conditions for your surety program.",
+      "image": "/brands/allsuranceagency/surety",
+      "imageAlt": "A tower crane seen from below against the sky",
+      "covers": [
+        { "title": "Bid and contract bonds", "text": "Bid bonds, performance and payment bonds, warranty bonds and bid or contract specification reviews." },
+        { "title": "Bonding capacity", "text": "Financial planning and analysis to maximize bonding capacity, plus job cost and accounting systems work." },
+        { "title": "Prequalification", "text": "General contractor, construction manager, subcontractor and project owner prequalification." },
+        { "title": "Commercial bonds", "text": "Oil and gas bonds, waste hauling and landfill, service and supply contracts, customs bonds, tax and licence or permit bonds, and court bonds." },
+        { "title": "Annual review", "text": "A yearly look at account rates, capacity needs and indemnity, alongside business continuity planning." }
+      ],
+      "questions": [
+        { "q": "How does a surety bond work?", "a": "A surety bond is a three-party guarantee. The principal is you or your business, promising to fulfill an obligation. The obligee is the entity that requires the bond. The surety is the insurance company that guarantees to the obligee that the principal will fulfill the obligation." },
+        { "q": "How do I get a surety bond in Texas?", "a": "Start by confirming the bond form, the required amount and the deadline, then submit your application and supporting information for underwriting." },
+        { "q": "How much does a surety bond cost?", "a": "You pay a premium, often a small percentage of the bond amount, rather than the full bond amount." },
+        { "q": "Is a surety bond the same as insurance?", "a": "No. If the surety pays a claim, the principal is ultimately responsible for reimbursing the surety for the amount paid." }
+      ]
+    },
+    {
+      "slug": "risk-management",
+      "title": "Risk Management",
+      "audience": "businesses",
+      "icon": "shield-check",
+      "summary": "Loss control, claims monitoring and ERM.",
+      "text": "Risk identification, assessment, control and transfer through BMBRisk, built to complement the risk management work you already do in house.",
+      "lead": "Businesses face legal liabilities, technology malfunctions, accidents, strategic miscalculations and natural disasters. Our BMBRisk division offers services to address your risk management needs regardless of company size or industry, with the goal of complementing existing internal efforts.",
+      "image": "/brands/allsuranceagency/risk",
+      "imageAlt": "Hard hats and high-visibility vests hanging on a wall",
+      "covers": [
+        { "title": "Identification", "text": "Uncovering and targeting the threats most likely to impact your organization." },
+        { "title": "Assessment", "text": "A thorough business risk assessment to determine how much of a threat an event poses." },
+        { "title": "Loss control", "text": "A cost-effective plan for containing or eliminating the risk, which helps reduce frequency, protect EMR and improve carrier appetite over time." },
+        { "title": "Transfer", "text": "A customized insurance program that moves most or all of the financial responsibility to the carrier." },
+        { "title": "Claims monitoring", "text": "Support through the claims process to minimize disruption to your operations." },
+        { "title": "Enterprise risk management", "text": "A top-down ERM framework across an entire organization, which produces strong results for larger businesses made up of multiple units." }
+      ],
+      "questions": [
+        { "q": "Why is a risk management plan worth having?", "a": "It can reduce the chances of severe injuries, protect business assets, keep the company operational after a loss, cover damage to property and include a response plan that shortens recovery time." },
+        { "q": "Which industries does BMBRisk work in?", "a": "Construction, real estate, manufacturing, transportation, energy, healthcare and many others." }
+      ]
+    },
+    {
+      "slug": "human-resource-outsourcing",
+      "title": "Human Resource Outsourcing",
+      "audience": "businesses",
+      "icon": "clipboard-check",
+      "summary": "HRO, ASO and PEO arrangements.",
+      "text": "Few companies have the experience or resources to perform their own HR functions in house. We compare providers and match your needs to the right one.",
+      "lead": "Whether you own a small company or are part of a large organization, outsourcing the parts of your business that specialists can do more efficiently is often a viable and more cost-effective option. Our knowledge of the industry lets us compare products to find a cost-effective service customized to your company.",
+      "covers": [
+        { "title": "HRO, ASO and PEO", "text": "Human Resource Outsourcing, Administrative Service Organization and Professional Employer Organization arrangements, or help deciding which fits." },
+        { "title": "Provider matching", "text": "We use our markets and an extensive provider database to align your needs with a provider that has experience, solid financial stability and the right core services." },
+        { "title": "HR functions", "text": "HR consulting, job descriptions, compensation planning, performance management, benefits administration, employee handbooks, recruiting and retention, and training." },
+        { "title": "Payroll and tracking", "text": "Certified payroll, general ledger interface, job costing, hand-held time tracking, OSHA manhour tracking, tools and property tracking, and paycards for payroll, per diems and expenses." }
+      ],
+      "questions": [
+        { "q": "We are already in a PEO or payroll outsourcing relationship. Can you help?", "a": "Yes. We can review your current program, make sure it is the most cost-effective way of doing business, and negotiate with your provider so every service is being accessed at the best pricing. If not, we can renegotiate or find the right provider for you." },
+        { "q": "Which services can be outsourced?", "a": "We have experience outsourcing a wide array of services, including payroll support, benefits and workers' compensation." }
+      ]
+    }
+  ],
+  "process": {
+    "title": "How we work",
+    "text": "The same approach whether you need one policy or a full program.",
+    "steps": [
+      { "title": "A needs assessment", "text": "We start by getting to know the business and its specific needs, so a policy can be tailored to the situation." },
+      { "title": "Understanding the operation", "text": "We work to understand all aspects of your business and develop a coverage plan for all contingencies." },
+      { "title": "The best markets available", "text": "We find coverage through the best insurance markets available, with the aim of lowering your total cost of risk." },
+      { "title": "Ongoing support", "text": "The relationship continues after the policy is bound, with continual interaction and management of your concerns." }
+    ]
+  },
+  "affiliations": {
+    "items": ["The Hartford"]
+  },
+  "about": {
+    "title": "Allsurance Agency, a division of Bowen, Miclette & Britt.",
+    "text": [
+      "Allsurance Agency has teamed up with Bowen, Miclette & Britt. We are excited to continue providing Dayton and the surrounding communities with the knowledge, vision, accountability and service that BMB has exemplified for more than 40 years.",
+      "At Allsurance Agency, a division of BMB, we understand the needs of small businesses in Texas and are committed to finding them the insurance coverage needed to lower their total cost of risk. We offer a wide range of insurance options, including property, liability and workers' compensation, to protect businesses from the unexpected.",
+      "One of the key benefits of working with Allsurance and BMB is our personalized approach to insurance. We take the time to get to know each business and their specific needs, so we can tailor a policy that fits their unique situation.",
+      "Recognized as one of the largest independent insurance agencies in America, BMB has large-agency capabilities while maintaining small-agency service and values. BMB's clients span all industries, including construction, energy, manufacturing and general industry."
+    ],
+    "image": "/brands/allsuranceagency/about",
+    "imageAlt": "An empty road running through open country",
+    "values": [
+      { "title": "Knowledge and vision", "text": "The values that built BMB are the same ones held today: knowledge, vision, accountability and service." },
+      { "title": "A personalized approach", "text": "Building a relationship combined with an understanding of a client's needs is the foundation for earning trust." },
+      { "title": "BMB's client retention", "text": "BMB reports a 95 percent client retention rate across the agency, and calls it the most satisfying way it measures success." }
+    ]
+  },
+  "faqs": [
+    { "q": "Does submitting an inquiry buy coverage?", "a": "No. Completion of a request for information does not constitute the purchase of insurance. No coverage may be added, changed or bound as a result of submitting a request for information or a quotation. All coverage must be confirmed by the agency in writing, subject to an acceptable signed application meeting the underwriting guidelines of the insurance company." },
+    { "q": "Where is the Dayton office?", "a": "Allsurance Agency is at 110 Sterling Ave, Dayton, TX 77535, the office number is 936-257-1700 and the fax is 936-257-1701." },
+    { "q": "What does BMB cover beyond insurance policies?", "a": "We can help you navigate commercial insurance products, employee benefits, surety bonds, human capital management and risk management." },
+    { "q": "Who do I reach after hours about a claim?", "a": "BMB publishes 24/7 emergency contacts for claims, including a claims manager and senior leadership, on its contact page." }
+  ],
+  "facts": [
+    {
+      "heading": "24/7 Emergency Contacts",
+      "items": [
+        "Sheryl Reynaud, Claims Manager — office 713-802-6108, mobile 832-362-9588",
+        "Paul Cerone, Chief Operating Officer — office 713-867-5330, mobile 713-876-6175",
+        "Ed Britt, President & CEO — office 713-880-7170"
+      ]
+    },
+    {
+      "heading": "Phone and Fax",
+      "items": [
+        "Dayton office — 936-257-1700",
+        "Dayton fax — 936-257-1701",
+        "BMB corporate office, Houston — 713-880-7100",
+        "BMB toll free — 800-966-5497"
+      ]
+    },
+    {
+      "heading": "About BMB",
+      "items": [
+        "Licensed as a broker in all 50 states",
+        "Named to the top 100 brokers list in the United States",
+        "Offices in Texas, Louisiana, Arkansas and Florida"
+      ]
+    },
+    {
+      "heading": "Industries We Serve",
+      "items": [
+        "Construction",
+        "Energy",
+        "Manufacturing",
+        "Marine",
+        "Transportation",
+        "Healthcare",
+        "Environmental",
+        "Real estate",
+        "Food and beverage",
+        "Technology",
+        "Public entities",
+        "Law firms"
+      ]
+    },
+    {
+      "heading": "BMB Offices",
+      "items": [
+        "Texas: Houston (headquarters), Dayton, Kingwood, San Antonio, The Woodlands",
+        "Arkansas: Fort Smith",
+        "Louisiana: New Orleans",
+        "Florida: Maitland, West Palm Beach, Panama City Beach"
+      ]
+    },
+    {
+      "heading": "Inquiry Disclaimer",
+      "text": "Completion of any request for information does not constitute the purchase of insurance. No coverage may be added, changed or bound as a result of submitting a request for information or quotation of insurance. All coverage must be confirmed by the agency in writing, subject to an acceptable signed application meeting the underwriting guidelines of the insurance company."
+    },
+    {
+      "heading": "Client Access",
+      "text": "BMB clients sign in through the client access area of bmbinc.com, where policy information can be managed and the team reached through the platform."
+    },
+    {
+      "heading": "Follow Us",
+      "items": [
+        "facebook.com/bowenmiclettebritt",
+        "linkedin.com/company/bowen-miclette-&-britt"
+      ]
+    }
+  ]
+}
