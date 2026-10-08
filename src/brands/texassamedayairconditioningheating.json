@@ -1,0 +1,614 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Texas Same-Day Air Conditioning, Heating & Plumbing",
+  "shortName": "Texas Same-Day",
+  "summary": "HVAC repair, air conditioning installation, heating service, indoor air quality, whole-home generators and plumbing for homes and businesses across Houston, Sugar Land and Southeast Texas.",
+  "phone": "(281) 742-9999",
+  "email": "info@txsameday.com",
+  "address": "1300 Bay Area Blvd Suite B256",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77058",
+  "hours": [["Mon – Sun", "Open 24 hours"]],
+  "brand": {
+    "primary": "#0d55a6",
+    "primaryDeep": "#042a66",
+    "accent": "#d62020",
+    "ink": "#0b1b2b",
+    "muted": "#50637a",
+    "surface": "#eef4fb",
+    "line": "#d7e3f0",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap",
+    "logo": "/brands/texassamedayairconditioningheating/logo.webp",
+    "logoWidth": 180
+  },
+  "emergency": {
+    "title": "24/7 emergency service",
+    "text": "Sudden cooling loss in extreme heat, a frozen system, a thermostat failure or an airflow problem, we answer around the clock, every day of the week."
+  },
+  "sameDay": "Same-day service is available, and every visit starts on time with a clear written estimate before work begins.",
+  "licenses": [
+    { "label": "Texas HVAC", "number": "TACLB135286E" }
+  ],
+  "financing": {
+    "text": "Financing for qualifying homeowners through Synchrony, with flexible terms, a quick approval process, options for all credit types and no prepayment penalties."
+  },
+  "hero": {
+    "eyebrow": "HVAC, heating, generators and plumbing in Houston",
+    "title": "Comfort restored",
+    "titleAccent": "the same day you call.",
+    "lead": "Licensed, insured technicians for air conditioning, heating, indoor air quality, whole-home generators and plumbing across Houston and Sugar Land, with upfront written pricing and a one-year workmanship guarantee.",
+    "image": "/brands/texassamedayairconditioningheating/hero",
+    "imageAlt": "An outdoor air conditioning condenser unit in full sun"
+  },
+  "groups": [
+    {
+      "slug": "air-conditioning",
+      "title": "Air Conditioning",
+      "icon": "snowflake",
+      "summary": "AC repair, replacement, maintenance and mini-split systems for the long Gulf Coast cooling season.",
+      "intro": "Reliable cooling becomes essential during Houston and Sugar Land summers, when HVAC systems run for extended periods under constant heat and humidity. We provide residential AC repair, installation, replacement, maintenance and emergency cooling service designed to improve comfort, airflow, efficiency and system reliability.",
+      "image": "/brands/texassamedayairconditioningheating/air-conditioning",
+      "imageAlt": "Outdoor air conditioning condenser units on concrete pads beside a house",
+      "services": [
+        {
+          "slug": "ac-repair",
+          "title": "AC Repair",
+          "icon": "wrench",
+          "text": "Air conditioning systems may struggle due to refrigerant issues, dirty coils, airflow restrictions, electrical failures, thermostat problems or compressor wear. Fast diagnosis restores cooling while reducing additional strain on the equipment during extreme summer temperatures.",
+          "points": [
+            "Low refrigerant, dirty evaporator coils and frozen components",
+            "Short cycling and systems that run but will not cool",
+            "Grinding, squealing, rattling or buzzing noises traced to the cause",
+            "Emergency same-day repair during summer heat",
+            "Capacitors, thermostats, drain lines, blower motors and refrigerant adjustments are often done in a few hours"
+          ]
+        },
+        {
+          "slug": "ac-replacement",
+          "title": "AC Replacement",
+          "icon": "air-vent",
+          "text": "Modern systems improve energy efficiency, humidity control, airflow consistency and overall comfort. Proper installation includes evaluating system sizing, airflow demand, insulation and duct performance to support long-term cooling efficiency.",
+          "points": [
+            "System sizing and load evaluation rather than a guess from the old label",
+            "Duct and airflow performance checked as part of the install",
+            "Financing available for qualifying homeowners",
+            "Free estimate, then professional installation by certified technicians",
+            "Most residential installations are completed within one day",
+            "Trane dealer"
+          ]
+        },
+        {
+          "slug": "ac-maintenance",
+          "title": "AC Maintenance",
+          "icon": "gauge",
+          "text": "Routine maintenance reduces unexpected breakdowns while improving efficiency and system lifespan. Seasonal inspections identify airflow restrictions, refrigerant issues, dirty components and wear caused by Houston's long cooling season.",
+          "points": [
+            "Most systems here should be serviced twice a year",
+            "Comprehensive inspection, filter and component cleaning, refrigerant levels checked and topped up",
+            "Performance and efficiency testing with a detailed maintenance report",
+            "Catches a worn part before it becomes a no-cool call"
+          ]
+        },
+        {
+          "slug": "mini-split-systems",
+          "title": "Mini-Split Systems",
+          "icon": "fan",
+          "text": "Mini-split installation and service throughout Houston, Sugar Land and Missouri City, for the rooms a central system never quite reaches.",
+          "points": [
+            "Home additions, garages, bonus rooms, converted attics and sunrooms",
+            "Older homes and detached workshops",
+            "Zoned temperature control, individual room controls and quiet operation",
+            "No major duct modifications needed",
+            "High energy efficiency and lower monthly energy costs"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "heating",
+      "title": "Heating",
+      "icon": "flame",
+      "summary": "Heating repair, replacement, maintenance and insulation for the short but real Southeast Texas winter.",
+      "intro": "Although Southeast Texas has a shorter heating season than much of the country, reliable heating still matters when colder weather arrives. We handle heating repair, furnace replacement, heat pump service and seasonal heating maintenance throughout Houston and Sugar Land.",
+      "image": "/brands/texassamedayairconditioningheating/heating",
+      "imageAlt": "A heat pump unit outside a modern house",
+      "services": [
+        {
+          "slug": "heating-repair",
+          "title": "Heating Repair",
+          "icon": "flame",
+          "text": "Heating systems commonly fail on ignition, heat unevenly, short cycle, lose efficiency or develop thermostat faults. We diagnose the cause and repair it.",
+          "points": [
+            "Ignition failures and uneven heating",
+            "Short cycling and thermostat problems",
+            "Dirty burners, blower motor failures and clogged filters"
+          ]
+        },
+        {
+          "slug": "heating-replacement",
+          "title": "Heating Replacement",
+          "icon": "heater",
+          "text": "Furnace and heat pump replacement matched to the home's ductwork and airflow, with financing available for qualifying homeowners.",
+          "points": [
+            "Furnace replacement, heat pump service and boiler installation",
+            "A wide selection of energy-efficient systems, with a full evaluation of the home's heating needs",
+            "Removal and disposal of the old equipment",
+            "Post-installation support and maintenance advice",
+            "Financing available on system upgrades"
+          ]
+        },
+        {
+          "slug": "heat-pumps",
+          "title": "Heat Pumps",
+          "icon": "thermometer",
+          "text": "Heat pumps are popular across Southeast Texas because they both heat and cool in a mild winter climate. Correct sizing and airflow balancing are what make one efficient over the long run.",
+          "points": [
+            "Heat pump installation and replacement",
+            "Year-round efficiency with better temperature consistency and humidity control",
+            "Sizing and airflow balanced at installation"
+          ]
+        },
+        {
+          "slug": "heating-maintenance",
+          "title": "Heating Maintenance",
+          "icon": "gauge",
+          "text": "Routine maintenance and system inspection improve heating reliability before colder temperatures arrive.",
+          "points": [
+            "Seasonal inspection ahead of the first cold front",
+            "Early detection of developing faults, better efficiency and lower utility bills",
+            "Priority service for maintenance plan members"
+          ]
+        },
+        {
+          "slug": "heating-insulation",
+          "title": "Insulation",
+          "icon": "shield",
+          "text": "Professional insulation installation improves a home's comfort and energy efficiency and keeps the HVAC system operating at peak efficiency.",
+          "points": [
+            "Comprehensive assessment of your current insulation",
+            "Recommendations tailored to your home",
+            "High-quality materials and a post-installation inspection"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "indoor-air-quality",
+      "title": "Indoor Air Quality",
+      "icon": "wind",
+      "summary": "Humidity control, duct work, filtration and UV air cleaners for a humid Houston house.",
+      "intro": "Indoor comfort depends on more than temperature alone. High humidity, poor airflow, airborne particles and ventilation problems all affect indoor air quality in Houston and Sugar Land homes. Many homeowners here have humidity trouble even while the AC appears to cool normally, and oversized systems, short cycling, duct leakage and airflow imbalance are the usual causes.",
+      "image": "/brands/texassamedayairconditioningheating/indoor-air-quality",
+      "imageAlt": "Metal ventilation ductwork branching from a central trunk",
+      "services": [
+        {
+          "slug": "air-quality-testing",
+          "title": "Air Quality Testing",
+          "icon": "filter",
+          "text": "Every indoor air quality job starts with testing and inspection rather than a product recommendation. We measure particulate levels, check the ductwork for leaks and buildup and assess humidity, then recommend what the findings actually call for.",
+          "points": [
+            "Particulate measurement, duct inspection and humidity assessment",
+            "High-efficiency air purifiers and upgraded home filtration systems",
+            "Hospital-grade filtration products and proven installation methods",
+            "Airflow balancing and smart thermostat integration"
+          ]
+        },
+        {
+          "slug": "dehumidifiers",
+          "title": "Whole-Home Dehumidifiers",
+          "icon": "droplets",
+          "text": "Dehumidifier installation that integrates with your existing HVAC system, in a range of sizes to suit different homes. Excess indoor moisture contributes to musty odors, mold growth, increased HVAC workload and poor indoor air quality.",
+          "points": [
+            "Reduces humidity levels effectively",
+            "Prevents mold and mildew growth",
+            "Enhances HVAC system efficiency"
+          ]
+        },
+        {
+          "slug": "uv-air-cleaner",
+          "title": "UV Air Cleaners",
+          "icon": "sun",
+          "text": "UV air cleaner installation that eliminates germs and viruses while controlling odors, and boosts the efficiency of your HVAC system. Same-day UV light installation is available.",
+          "points": [
+            "UV light systems and whole-home air cleaners",
+            "Filtration upgrades and IAQ system integration",
+            "Odor control and reduction of allergens and pollutants",
+            "Free estimate on UV air cleaner installation"
+          ]
+        },
+        {
+          "slug": "duct-cleaning",
+          "title": "Duct Cleaning",
+          "icon": "waves",
+          "text": "Residential air duct cleaning to improve indoor air quality and remove dust, debris and allergens, using advanced equipment so the HVAC system runs efficiently.",
+          "points": [
+            "Reduction in allergens and pollutants",
+            "Improved HVAC efficiency and equipment lifespan"
+          ]
+        },
+        {
+          "slug": "duct-replacement",
+          "title": "Duct Replacement",
+          "icon": "air-vent",
+          "text": "Many comfort problems are caused by ductwork rather than the HVAC equipment: hot and cold rooms, weak airflow, high utility bills, excessive dust and uneven temperatures. We assess the existing ductwork and replace or repair it.",
+          "points": [
+            "Comprehensive ductwork assessment",
+            "New duct installation, duct repair and repairs to existing runs",
+            "Post-installation inspection and testing"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "generators",
+      "title": "Generators",
+      "icon": "power",
+      "summary": "Generac whole-home standby generator installation, replacement and maintenance for storm season.",
+      "intro": "Power outages across Southeast Texas happen during hurricanes, severe storms, utility failures and extreme weather. As an authorized Generac dealer, we install backup power systems that restore power automatically within seconds of an outage, keeping air conditioning, refrigeration, lighting, internet and medical equipment running.",
+      "image": "/brands/texassamedayairconditioningheating/generators",
+      "imageAlt": "A standby generator installed outside a building",
+      "services": [
+        {
+          "slug": "generator-installation",
+          "title": "Generac Generator Installation",
+          "icon": "battery",
+          "text": "Whole-home standby systems connected directly to the home's electrical system, designed around each home's electrical demand and backup power goals. Most residential installations take one to several days.",
+          "points": [
+            "Concrete pad preparation and electrical panel integration",
+            "Gas line connections and transfer switch setup",
+            "Startup testing and system programming",
+            "Automatic outage detection, automatic weekly self-testing and mobile monitoring options",
+            "Quiet operation",
+            "Permitting handled"
+          ]
+        },
+        {
+          "slug": "generator-sizing",
+          "title": "Generator Sizing Evaluations",
+          "icon": "gauge",
+          "text": "Sizing depends on home size, electrical demand, HVAC equipment, appliance usage, medical equipment and how much of the property you want backed up. Some homeowners cover essential circuits only, others the whole property.",
+          "points": ["Essential circuits or whole-home coverage", "Sized to long-term power needs, not a rule of thumb"]
+        },
+        {
+          "slug": "generator-replacement",
+          "title": "Standby Generator Replacement",
+          "icon": "power",
+          "text": "Replacement of an aging standby generator and upgrades to an existing backup power system.",
+          "points": ["Transfer switch installation", "Backup power system upgrades"]
+        },
+        {
+          "slug": "generator-maintenance",
+          "title": "Generator Maintenance",
+          "icon": "settings",
+          "text": "Routine maintenance improves reliability during future outages. Most residential standby generators should be professionally serviced at least once a year.",
+          "points": [
+            "Oil changes, battery inspection and filter replacement",
+            "Transfer switch inspection and fuel system evaluation",
+            "Electrical testing"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "plumbing",
+      "title": "Plumbing",
+      "icon": "droplets",
+      "summary": "Licensed plumbing repair, drains, sewers, water heaters and fixtures in Missouri City and Sugar Land.",
+      "intro": "A clogged drain, a leaking pipe or a failing water heater can disrupt a whole day and, left alone, damage the house. Our licensed plumbing team handles everyday repairs through to major system upgrades, with upfront pricing and honest recommendations on every job.",
+      "image": "/brands/texassamedayairconditioningheating/plumbing",
+      "imageAlt": "Hands working with a tool on household plumbing pipes",
+      "services": [
+        {
+          "slug": "plumbing-repair",
+          "title": "Plumbing Repair and Emergencies",
+          "icon": "wrench",
+          "text": "Every visit begins with a thorough inspection and a clear diagnosis. Technicians arrive with the tools and parts to handle most repairs on the spot, whether it is low water pressure, slow drains, recurring clogs or a sudden emergency.",
+          "points": ["Upfront pricing before work starts", "Licensed, insured and trained on current plumbing codes"]
+        },
+        {
+          "slug": "drains-and-sewers",
+          "title": "Drains and Sewers",
+          "icon": "waves",
+          "text": "Drain cleaning, clog removal and full sewer repair including sewer line replacement, with an understanding of the clay soils, shifting foundations and aging sewer lines in older Missouri City neighborhoods.",
+          "points": ["Drain cleaning and clog removal", "Sewer repair and sewer line replacement"]
+        },
+        {
+          "slug": "water-heaters",
+          "title": "Water Heaters",
+          "icon": "thermometer",
+          "text": "Water heater repair and tankless water heater installation, servicing both traditional tank models and modern tankless systems so you have reliable hot water year-round.",
+          "points": ["Water heater repair", "Tankless water heater installation"]
+        },
+        {
+          "slug": "repiping-and-fixtures",
+          "title": "Repiping and Fixtures",
+          "icon": "plug",
+          "text": "Leak detection, whole-home repiping, garbage disposal repair, toilet repair, faucet replacement and fixture installation, with detailed estimates on the larger jobs and minimal disruption to the household.",
+          "points": [
+            "Leak detection and whole-home repiping",
+            "Garbage disposals, toilets, faucets and fixtures",
+            "Water filtration system installation"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "commercial-hvac",
+      "title": "Commercial HVAC",
+      "icon": "building",
+      "summary": "Installation, repair and maintenance for offices, retail, churches, warehouses and industrial property.",
+      "intro": "Whether you manage an office building, retail space, church, warehouse, municipal facility or industrial property, we deliver commercial HVAC solutions that keep the building operating efficiently. From new equipment installation to emergency repairs and scheduled maintenance, we help businesses minimize downtime.",
+      "image": "/brands/texassamedayairconditioningheating/commercial",
+      "imageAlt": "A commercial air conditioning unit on the roof of a building",
+      "services": [
+        {
+          "slug": "commercial-installation",
+          "title": "Commercial HVAC Installation",
+          "icon": "building",
+          "text": "Energy-efficient commercial systems sized for your facility, improving comfort, airflow and long-term operating costs.",
+          "points": ["Request a commercial estimate"]
+        },
+        {
+          "slug": "commercial-repair",
+          "title": "Commercial HVAC Repair",
+          "icon": "wrench",
+          "text": "Fast diagnosis and repair for rooftop units, package systems, split systems, controls, electrical issues and compressors."
+        },
+        {
+          "slug": "preventive-maintenance",
+          "title": "Preventive Maintenance",
+          "icon": "timer",
+          "text": "Scheduled inspections and maintenance programs that reduce costly breakdowns, extend equipment life and improve efficiency."
+        },
+        {
+          "slug": "rooftop-and-package-units",
+          "title": "Rooftop and Package Units",
+          "icon": "settings",
+          "text": "Installation, replacement, repair and maintenance for commercial rooftop units, plus complete service for package systems including seasonal maintenance."
+        },
+        {
+          "slug": "commercial-ductwork",
+          "title": "Ductwork and Air Distribution",
+          "icon": "air-vent",
+          "text": "Proper airflow is what makes a commercial building comfortable. We install, repair and optimize commercial duct systems for balanced air distribution."
+        },
+        {
+          "slug": "commercial-air-quality",
+          "title": "Commercial Indoor Air Quality",
+          "icon": "wind",
+          "text": "Filtration, ventilation, humidity control and indoor air quality solutions built for commercial facilities rather than scaled up from a house."
+        },
+        {
+          "slug": "controls-and-thermostats",
+          "title": "Controls and Thermostats",
+          "icon": "gauge",
+          "text": "Modern commercial controls and programmable thermostats that improve efficiency and make the building simpler to manage."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Leading the way in HVAC and plumbing services",
+    "text": [
+      "At Texas Same-Day Air Conditioning, Heating & Plumbing, we pride ourselves as the premier air-conditioning provider in the Houston area, setting the standard for heating and cooling services. Our history of delivering affordable HVAC solutions, with our dedication to prompt service, positions us as the top choice for both residential and commercial needs.",
+      "Our professionals are well-versed with leading brands such as Trane, Lennox and Generac, so your residential or commercial HVAC system is handled with care and expertise. Our solutions are designed to be effective and to improve your system's efficiency and longevity.",
+      "Our focus extends beyond providing technical services. We have been awarded a BBB+ rating, reflecting our commitment to customer service and quality workmanship, and our partnership with Synchrony offers easy financing options."
+    ],
+    "image": "/brands/texassamedayairconditioningheating/van",
+    "imageAlt": "The Texas Same-Day service van, lettered for air conditioning, heating and generators",
+    "values": [
+      {
+        "title": "Same-day service",
+        "text": "We arrive fast and on time, with no waiting and no wondering."
+      },
+      {
+        "title": "Upfront, honest pricing",
+        "text": "You get a clear written estimate before work begins. No surprises."
+      },
+      {
+        "title": "Total respect for your home",
+        "text": "Shoe covers, drop cloths and full cleanup. We treat your space like it is our own."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Why is my house humid even while the AC is running?",
+      "a": "Oversized HVAC systems, duct leakage, airflow imbalance and short cycling can prevent proper humidity removal even when indoor temperatures appear normal."
+    },
+    {
+      "q": "How often should HVAC systems be serviced?",
+      "a": "Most HVAC systems throughout Houston and Sugar Land should be professionally serviced twice per year due to heavy annual cooling demand and extended runtime during summer months."
+    },
+    {
+      "q": "What causes uneven cooling throughout a home?",
+      "a": "Uneven cooling may result from duct leakage, airflow restrictions, insulation deficiencies, attic heat buildup, thermostat placement or improperly balanced HVAC systems."
+    },
+    {
+      "q": "Should I repair or replace my HVAC system?",
+      "a": "The decision often depends on system age, repair frequency, efficiency, cooling performance, humidity control and overall operating costs. Most systems begin experiencing increased maintenance needs after 10 to 15 years."
+    },
+    {
+      "q": "Are high-efficiency HVAC systems worth it in Southeast Texas?",
+      "a": "High-efficiency systems are often beneficial throughout Houston and Sugar Land due to long cooling seasons, high humidity and extended HVAC runtime during summer months."
+    },
+    {
+      "q": "What size generator powers an entire home?",
+      "a": "Generator sizing depends on the number of appliances, HVAC equipment, electrical demand and essential systems homeowners want to power during outages."
+    },
+    {
+      "q": "Do whole-home generators turn on automatically?",
+      "a": "Yes. Standby generators automatically detect utility power loss and restore power without requiring manual startup, then shut down and transfer back once utility power returns."
+    },
+    {
+      "q": "Can a generator power my air conditioning system?",
+      "a": "Yes. A properly sized standby generator can support HVAC systems along with the other essential appliances and electrical systems in the home."
+    },
+    {
+      "q": "How long can a whole-home generator run?",
+      "a": "Runtime depends on generator size, fuel source, maintenance condition and electrical demand. Many standby systems are designed for extended operation during long outages."
+    },
+    {
+      "q": "How often should a generator be serviced?",
+      "a": "Most residential standby generators should be professionally serviced at least once per year to keep them reliable during future outages."
+    },
+    {
+      "q": "Do you offer maintenance agreements?",
+      "a": "Yes. Preventive maintenance programs reduce unexpected breakdowns and extend equipment life, and maintenance plan members get priority service."
+    },
+    {
+      "q": "Do you service commercial HVAC systems?",
+      "a": "Yes. We provide installation, repair, maintenance and replacement for many types of commercial HVAC equipment, including rooftop units throughout Greater Houston."
+    },
+    {
+      "q": "How long does AC installation take?",
+      "a": "Most residential installations are completed within one day. Homes needing duct modifications, airflow balancing, electrical upgrades or humidity control adjustments may take longer."
+    },
+    {
+      "q": "Why should I choose Texas Same-Day?",
+      "a": "We focus on fast response times, accurate diagnostics and quality workmanship, with the goal of resolving the problem quickly and with a solution that lasts."
+    },
+    {
+      "q": "Do you service areas outside of Houston?",
+      "a": "Yes, we provide reliable HVAC and generator services across Houston and the surrounding areas."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Sugar Land",
+    "Missouri City",
+    "Katy",
+    "The Heights",
+    "Midtown",
+    "Memorial",
+    "River Oaks",
+    "Tanglewood",
+    "West University Place",
+    "Bellaire",
+    "Clear Lake",
+    "Webster",
+    "Seabrook",
+    "League City",
+    "Friendswood",
+    "Pearland",
+    "Manvel",
+    "Alvin",
+    "Brookside Village",
+    "Sienna Plantation",
+    "Stafford",
+    "Deer Park",
+    "La Porte",
+    "Pasadena",
+    "Channelview",
+    "Cloverleaf",
+    "Baytown",
+    "Atascocita",
+    "Humble",
+    "Kingwood",
+    "Dickinson",
+    "Santa Fe",
+    "La Marque",
+    "Texas City",
+    "Lake Jackson",
+    "Richmond",
+    "Cypress",
+    "Spring",
+    "The Woodlands"
+  ],
+  "facts": [
+    {
+      "heading": "Licensed and insured",
+      "items": ["TDLR HVAC license TACLB135286E", "Technicians are background-checked and drug-tested"]
+    },
+    {
+      "heading": "Our guarantee",
+      "text": "The Platinum 100% Satisfaction Guarantee backs every job with a full one-year workmanship guarantee. If something is not right, we make it right at no extra cost, using quality parts and proven methods."
+    },
+    {
+      "heading": "Brands and dealerships",
+      "items": ["Trane dealer", "Authorized Generac dealer", "Lennox"]
+    },
+    {
+      "heading": "Accreditation",
+      "text": "Awarded a BBB+ rating, with a Better Business Bureau profile under Texas Same-Day Air Conditioning, Heating & Plumbing."
+    },
+    {
+      "heading": "Financing",
+      "items": [
+        "Financing partnership with Synchrony, with pre-approval available",
+        "Flexible payment terms and low-interest rates",
+        "Quick and easy approval process",
+        "Options for all credit types",
+        "No prepayment penalties",
+        "Covers air conditioning, heating, plumbing, generators and indoor air quality work"
+      ]
+    },
+    {
+      "heading": "Specials",
+      "items": [
+        "Up to $1,500 off an AC replacement",
+        "$100 off attic insulation",
+        "$100 off a 30-watt solar vent fan",
+        "A free UV light with an AC system purchase",
+        "A free AC diagnostic with a service call",
+        "A free 10-year generator warranty upgrade",
+        "Exclusive discounts on select services",
+        "Seasonal promotions",
+        "Referral bonuses for recommending friends",
+        "Loyalty rewards for repeat customers",
+        "Limited-time offers on new installations",
+        "Offers are updated regularly, so call to ask what is current"
+      ]
+    },
+    {
+      "heading": "Our locations",
+      "items": [
+        "1300 Bay Area Blvd Suite B256, Houston, TX 77058",
+        "2000 Crawford St Ste 819, Houston, TX 77002"
+      ]
+    },
+    {
+      "heading": "Booking and estimates",
+      "items": [
+        "Book online or call, 24 hours a day, every day",
+        "Free estimates on AC replacement and UV air cleaner installation",
+        "Free AC diagnostic with a service call",
+        "Detailed written estimates on commercial work and on larger plumbing jobs",
+        "Transparent pricing with no hidden fees"
+      ]
+    },
+    {
+      "heading": "Maintenance plans",
+      "items": [
+        "Maintenance membership plans for homeowners",
+        "Priority service for maintenance plan members",
+        "Preventive maintenance programs and maintenance agreements for commercial facilities"
+      ]
+    },
+    {
+      "heading": "Commercial facilities we serve",
+      "items": [
+        "Office buildings and property management companies",
+        "Retail centers and restaurants",
+        "Schools and churches",
+        "Warehouses and industrial facilities",
+        "Government and municipal facilities",
+        "General contractors"
+      ]
+    },
+    {
+      "heading": "Follow us",
+      "items": [
+        "Facebook: facebook.com/TexasSameDayHomeServices",
+        "Instagram: instagram.com/texassameday",
+        "LinkedIn: linkedin.com/company/texas-same-day-ac-heating",
+        "X: twitter.com/TexasSameDay"
+      ]
+    }
+  ]
+}
