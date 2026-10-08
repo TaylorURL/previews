@@ -1,0 +1,361 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Arnett Mechanical A/C & Heating",
+  "shortName": "Arnett Mechanical",
+  "summary": "Family-owned heating, air conditioning and refrigeration work for homes and businesses in Rosharon and the greater Houston area.",
+  "phone": "(713) 347-7796",
+  "email": "sales@arnettmechanical.com",
+  "address": "14018 Hwy 6, Ste. 5",
+  "town": "Rosharon",
+  "state": "TX",
+  "zip": "77583",
+  "rating": 4.9,
+  "reviewCount": 329,
+  "since": 2017,
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
+  "brand": {
+    "primary": "#1C86BE",
+    "primaryDeep": "#10597F",
+    "accent": "#EF382D",
+    "ink": "#16202B",
+    "muted": "#52657A",
+    "surface": "#EFF7FC",
+    "line": "#D7E5EF",
+    "heading": "'Oswald', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/arnettmechanical/logo.webp",
+    "logoWidth": 200
+  },
+  "emergency": {
+    "title": "24/7 emergency service available",
+    "text": "Air conditioning and heating emergencies do not keep business hours, so call any time, day or night, and we will be there to help."
+  },
+  "licenses": [
+    {
+      "label": "Texas HVAC Contracting License",
+      "number": "TACLA 86646C"
+    },
+    {
+      "label": "EPA Universal Certification",
+      "number": "P32F5F6B9914CBDE1"
+    }
+  ],
+  "financing": {
+    "text": "Financing is available for HVAC and refrigeration work through Service Finance Company, Synchrony, Wisetack, Okinus and BreezeLease."
+  },
+  "hero": {
+    "eyebrow": "Heating, cooling and refrigeration in Rosharon, TX",
+    "title": "Honest and reliable",
+    "titleAccent": "AC repair in Rosharon, TX.",
+    "lead": "Arnett Mechanical is a family-owned and operated business providing reliable, efficient and affordable HVAC solutions for your home or business, with transparent, upfront pricing and 24/7 emergency service.",
+    "image": "/brands/arnettmechanical/hero",
+    "imageAlt": "A technician's gauges and tools beside an outdoor air conditioning unit"
+  },
+  "groups": [
+    {
+      "slug": "air-conditioning",
+      "title": "Air Conditioning",
+      "icon": "snowflake",
+      "summary": "Residential AC repair, replacement, installation and maintenance across South Houston.",
+      "intro": "No matter what is wrong with your air conditioner, we have you covered. Our certified technicians work on all makes and models, and we provide a detailed estimate before any work begins so you know exactly what to expect.",
+      "image": "/brands/arnettmechanical/cooling",
+      "imageAlt": "Refrigerant gauges and a clamp meter reading on an air conditioning condenser",
+      "services": [
+        {
+          "slug": "ac-repair",
+          "title": "Air Conditioning Repair",
+          "icon": "wrench",
+          "text": "Fast, reliable and affordable residential AC repair. We know a broken AC is an emergency in a Texas summer, so we offer prompt service and work to get your system running again as quickly as possible.",
+          "points": [
+            "Diagnostic and troubleshooting",
+            "Refrigerant leak detection and repair",
+            "Compressor replacement",
+            "Fan motor repair or replacement",
+            "Thermostat calibration and repair",
+            "Ductwork repair and cleaning"
+          ]
+        },
+        {
+          "slug": "ac-replacement",
+          "title": "Air Conditioning Replacement",
+          "icon": "air-vent",
+          "text": "Has your air conditioner reached the end of its lifespan, or is it simply not keeping up with the heat? We work closely with you to find the system that fits your home's size, layout and budget.",
+          "points": [
+            "Consultation on your cooling needs and budget",
+            "Assessment of your home to determine the right AC size and type",
+            "A recommendation of the best options for you",
+            "Installation, then a follow-up to make sure it is working properly",
+            "Signs it is time: age over 10 to 15 years, frequent repairs, rising energy bills, uneven cooling, strange noises"
+          ]
+        },
+        {
+          "slug": "ac-installation",
+          "title": "Air Conditioning Installation",
+          "icon": "thermometer",
+          "text": "Building a new home, or replacing a unit on its last legs? We help you choose the right AC for your home's size and needs and make sure it is installed correctly for optimal performance and energy efficiency.",
+          "points": [
+            "A wide selection of energy-efficient air conditioners from leading brands",
+            "Technicians trained in the latest installation techniques",
+            "Upfront pricing with no hidden fees or surprises",
+            "Free consultation before you decide"
+          ]
+        },
+        {
+          "slug": "ac-maintenance",
+          "title": "AC Service and Maintenance",
+          "icon": "gauge",
+          "text": "Regular maintenance keeps your AC running at peak efficiency, lowers your monthly cooling costs and significantly extends the life of the system. We offer maintenance plans tailored to your needs and budget.",
+          "points": [
+            "Thorough cleaning of the coils, filters and other components",
+            "Comprehensive inspection of electrical connections, refrigerant levels and ductwork",
+            "Performance optimization so the system runs at peak efficiency",
+            "Preventative maintenance to help avoid breakdowns"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "heating",
+      "title": "Heating",
+      "icon": "flame",
+      "summary": "Repairs, maintenance, inspections and new installations for heating systems, boilers and furnaces.",
+      "intro": "Winters here in Texas may not be harsh, but when the temperature does drop it matters that your system is ready. When you call, we listen to your concerns and ask specific questions so we arrive fully equipped to diagnose and solve the problem, then keep you up to date every step of the way.",
+      "image": "/brands/arnettmechanical/heating",
+      "imageAlt": "A gas furnace installed in a utility space",
+      "services": [
+        {
+          "slug": "heating-repair",
+          "title": "Heating Repair and Inspections",
+          "icon": "flame",
+          "text": "Repairs, maintenance and inspections for all makes and models, including heating systems, boilers and furnaces, with 24/7 emergency repairs.",
+          "points": [
+            "All makes and models",
+            "Boilers and furnaces",
+            "24/7 emergency repairs"
+          ]
+        },
+        {
+          "slug": "system-maintenance",
+          "title": "System Maintenance",
+          "icon": "gauge",
+          "text": "Tune-ups and regular maintenance are essential to prolonging the lifespan of your heating system and making sure it is ready before the temperature drops."
+        },
+        {
+          "slug": "heating-installation",
+          "title": "New Heating Installation",
+          "icon": "heater",
+          "text": "New heating system installations and replacements, whether you are looking at systems for a new build or it is time to replace an aged one. We inspect the system, listen to your concerns and analyze your property to determine a reliable and affordable solution.",
+          "points": [
+            "Sometimes only the AC or the heat needs replacing, other times the entire system"
+          ]
+        },
+        {
+          "slug": "heat-pumps",
+          "title": "Heat Pumps",
+          "icon": "thermometer",
+          "text": "Rosharon can reach over 100 degrees in the summer and below freezing in the winter. A heat pump is a heating and cooling package solution with a reputation for being efficient and reliable, moving heat from one place to another rather than making it."
+        }
+      ]
+    },
+    {
+      "slug": "commercial-hvac",
+      "title": "Commercial HVAC",
+      "icon": "building",
+      "summary": "Design, installation, replacement, repair and maintenance for commercial, multi-family and industrial properties.",
+      "intro": "We offer a wide range of commercial services for all types of commercial HVAC systems. Your HVAC system is essential to the operation of your business, and we work to keep it running smoothly and efficiently.",
+      "image": "/brands/arnettmechanical/commercial",
+      "imageAlt": "Rooftop packaged HVAC units on a commercial building",
+      "services": [
+        {
+          "slug": "rooftop-package-units",
+          "title": "Rooftop or Package Units",
+          "icon": "building",
+          "text": "Rooftop packaged units are the most common HVAC systems for commercial businesses. They provide superior comfort control while remaining efficient, and installing on the roof saves space inside your property.",
+          "points": [
+            "Uses a duct system to disperse air all year long"
+          ]
+        },
+        {
+          "slug": "coolers-and-freezers",
+          "title": "Reach-In Coolers and Freezers",
+          "icon": "snowflake",
+          "text": "Refrigeration work for commercial properties, alongside split systems for properties with multiple offices, rooms or separate areas, where each unit is self-contained so one breaking down does not stop the others."
+        },
+        {
+          "slug": "mini-splits",
+          "title": "Mini Splits, Ductless and Ducted",
+          "icon": "fan",
+          "text": "We install both. A ducted system suits a property with existing ducts, a concern about humidity, a priority on maximum air flow or on appearance. A ductless system suits a property with no room for ducts, a specific application such as equipment, room additions or multiple cooling zones."
+        },
+        {
+          "slug": "design-and-installation",
+          "title": "Design, Installation and Maintenance",
+          "icon": "settings",
+          "text": "From design and installation through replacement, repair and maintenance, for commercial, multi-family, industrial and residential properties.",
+          "points": [
+            "Licensed and insured",
+            "Competitive rates",
+            "Member of the Better Business Bureau",
+            "100% satisfaction guarantee"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Current special",
+    "title": "$500 off a system replacement.",
+    "text": "Or a free UV light and whole home media filter. Not valid with any other offers, discounts prior sales or call out fee. Coupon required at time of service.",
+    "price": "$500",
+    "priceNote": "off a system replacement",
+    "image": "/brands/arnettmechanical/specials",
+    "imageAlt": "Replacement run capacitors and a meter on top of an air conditioning condenser"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Your comfort is our priority.",
+    "text": [
+      "Arnett Mechanical is a family-owned and operated HVAC company based in Rosharon, Texas. We are dedicated to providing our neighbors with reliable, efficient and affordable heating and cooling solutions. With years of experience serving the greater Houston area, we have built a reputation for quality workmanship, exceptional customer service and a commitment to exceeding expectations.",
+      "Our team of skilled technicians is equipped to handle all your HVAC needs, from routine maintenance and repairs to new system installations. We understand that a comfortable indoor environment is essential for your home or business, and we strive to deliver solutions that meet your specific requirements and budget.",
+      "Arnett Mechanical LLC is a minority-owned company founded in 2017. We are a small business providing HVAC services to commercial, multi-family, industrial and residential properties, and we are HUB, MBE and SBE certified."
+    ],
+    "image": "/brands/arnettmechanical/truck",
+    "imageAlt": "The Arnett Mechanical service truck",
+    "values": [
+      {
+        "title": "Expert technicians",
+        "text": "Our skilled technicians guarantee top-notch HVAC services for your home or business."
+      },
+      {
+        "title": "Customer satisfaction",
+        "text": "We focus on your needs, offering tailored HVAC solutions and great customer service for a smooth experience."
+      },
+      {
+        "title": "Reliable and prompt service",
+        "text": "Rely on us for HVAC services that keep you comfortable and worry-free 24/7."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "When is it time to replace my air conditioner rather than repair it?",
+      "a": "If your AC is over 10 to 15 years old it may be nearing the end of its useful life, and older units are less efficient and more prone to breakdowns. Frequent repairs, rising energy bills on the same usage habits, uneven cooling between rooms and strange noises such as grinding, rattling or squealing are the other signs."
+    },
+    {
+      "q": "Do you answer calls outside business hours?",
+      "a": "Yes. We are open 24 hours, Monday through Sunday, and we offer 24/7 emergency AC repair in Sienna, Rosharon, Pearland, Missouri City and the surrounding areas. Call any time, day or night."
+    },
+    {
+      "q": "How will I know the price before work starts?",
+      "a": "We believe in upfront and honest pricing, with no hidden fees or surprises. We provide you with a detailed estimate before any work begins, so you know exactly what to expect."
+    },
+    {
+      "q": "What does a maintenance visit include?",
+      "a": "A thorough cleaning of the coils, filters and other components, a comprehensive inspection covering electrical connections, refrigerant levels and ductwork, a performance tune-up, and preventative maintenance to help avoid breakdowns."
+    },
+    {
+      "q": "Do you offer financing?",
+      "a": "Yes. Financing is available for HVAC and refrigeration services through Service Finance Company, Synchrony, Wisetack, Okinus and BreezeLease."
+    },
+    {
+      "q": "Do you work on commercial buildings?",
+      "a": "Yes. We provide design, installation, replacement, repair and maintenance for commercial, multi-family and industrial properties, including rooftop package units, reach-in coolers and freezers, and mini splits."
+    }
+  ],
+  "serviceArea": [
+    "Rosharon",
+    "Pearland",
+    "Missouri City",
+    "Sienna",
+    "Manvel",
+    "Arcola",
+    "Houston"
+  ],
+  "facts": [
+    {
+      "heading": "Coupons and special offers",
+      "items": [
+        "$25 off a service call",
+        "$50 off any repair of $250 or more",
+        "$500 off a system replacement, or a free UV light and whole home media filter",
+        "10% discount for seniors, veterans, first responders and educators on new equipment install and service",
+        "Not valid with any other offers, discounts prior sales or call out fee. Coupon required at time of service."
+      ]
+    },
+    {
+      "heading": "Trusted partners",
+      "items": [
+        "Carrier",
+        "Trane",
+        "Goodman",
+        "Amana",
+        "Ruud",
+        "Day & Night"
+      ]
+    },
+    {
+      "heading": "Certifications",
+      "items": [
+        "HUB, MBE, SBE and DBE certified",
+        "Port of Houston",
+        "City of Houston",
+        "Section 3",
+        "HMSDC",
+        "Minority-owned, founded 2017"
+      ]
+    },
+    {
+      "heading": "Licensed and insured",
+      "items": [
+        "Texas HVAC Contracting License TACLA 86646C",
+        "EPA Universal Certification P32F5F6B9914CBDE1",
+        "Member of the Better Business Bureau",
+        "100% satisfaction guarantee"
+      ]
+    },
+    {
+      "heading": "Business and procurement details",
+      "items": [
+        "NAICS 238220 — Plumbing, Heating and Air-Conditioning Contractors",
+        "NAICS 811412 — Appliance Repair and Maintenance",
+        "NAICS 811310 — Commercial and Industrial Machinery and Equipment Repair and Maintenance",
+        "NIGP 911 36, 914 50, 931 07, 936 48, 936 67, 941 55, 992 47, 740 36",
+        "DUNS 113679909",
+        "SAM HL8YGN155XM9",
+        "Cage Code 99U63",
+        "References available upon request"
+      ]
+    },
+    {
+      "heading": "Financing and payment",
+      "items": [
+        "Service Finance Company, Synchrony, Wisetack, Okinus and BreezeLease",
+        "Cash, Visa, Mastercard, American Express, Discover, PayPal, Venmo and Apple Pay accepted"
+      ]
+    },
+    {
+      "heading": "Booking and quotes",
+      "items": [
+        "Book a service online, any time",
+        "Free quotes and free consultations",
+        "Open 24 hours, Monday through Sunday",
+        "Find us on Facebook, Instagram, LinkedIn and X"
+      ]
+    },
+    {
+      "heading": "Our team",
+      "items": [
+        "Anton Arnett and the Arnett Mechanical team",
+        "Certified technicians working on all makes and models",
+        "Now hiring HVAC experts in Rosharon"
+      ]
+    }
+  ]
+}

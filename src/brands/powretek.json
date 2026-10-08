@@ -1,0 +1,394 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Powre Tek Electrical Field Services, LLC",
+  "shortName": "Powre Tek",
+  "summary": "Electrical testing, commissioning and maintenance for low-, medium- and high-voltage systems and equipment, run out of Alvin, Texas.",
+  "phone": "(281) 752-6651",
+  "email": "j.guilmet@powretek.com",
+  "address": "19391 Highway 35",
+  "town": "Alvin",
+  "state": "TX",
+  "zip": "77511",
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
+  "brand": {
+    "primary": "#846a37",
+    "primaryDeep": "#5a4723",
+    "accent": "#ca9038",
+    "ink": "#161616",
+    "muted": "#5c564c",
+    "surface": "#faf6ec",
+    "line": "#e3dac6",
+    "heading": "'Commissioner', system-ui, sans-serif",
+    "body": "'Lato', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Commissioner:wght@600;700;800&family=Lato:wght@400;700&display=swap",
+    "logo": "/brands/powretek/logo.webp",
+    "logoWidth": 180
+  },
+  "hero": {
+    "eyebrow": "Electrical testing and commissioning field services",
+    "title": "Perfecting power",
+    "titleAccent": "with grace and style.",
+    "lead": "We specialize in advanced electrical testing, commissioning and maintenance services for low-, medium- and high-voltage electrical systems and equipment.",
+    "image": "/brands/powretek/hero",
+    "imageAlt": "High-voltage instrument transformers at a substation"
+  },
+  "groups": [
+    {
+      "slug": "transformer-testing",
+      "title": "Transformer Testing",
+      "icon": "power",
+      "summary": "Oil-filled and dry-type transformers, instrument transformers and field assembly.",
+      "intro": "Oil-filled and dry-type transformers get the same core set of checks: polarization index, turns ratio, winding resistance and a visual inspection. Oil-filled units add power factor, oil sample analysis and a mechanical inspection, and device testing is included where the transformer carries devices.",
+      "image": "/brands/powretek/transformer-testing",
+      "imageAlt": "A large power transformer set on its pad inside a shop building",
+      "services": [
+        {
+          "slug": "oil-filled-transformer-testing",
+          "title": "Oil-Filled Transformer Testing",
+          "icon": "power",
+          "text": "The full test set for oil-filled units, from the electrical measurements through to the oil itself.",
+          "points": [
+            "Polarization index",
+            "Power factor",
+            "Transformer turns ratio",
+            "Winding resistance",
+            "Oil sample analysis",
+            "Visual and mechanical inspection",
+            "Transformer device testing, if applicable"
+          ]
+        },
+        {
+          "slug": "dry-type-transformer-testing",
+          "title": "Dry Type Transformer Testing",
+          "icon": "gauge",
+          "text": "Dry type units tested on the measurements that matter without any oil work.",
+          "points": [
+            "Polarization index",
+            "Transformer turns ratio",
+            "Winding resistance",
+            "Visual inspection",
+            "Transformer device testing, if applicable"
+          ]
+        },
+        {
+          "slug": "instrument-transformer-testing",
+          "title": "Instrument Transformer Testing",
+          "icon": "circuit",
+          "text": "The smaller transformers that metering, protection and control depend on.",
+          "points": [
+            "Current transformer testing",
+            "Voltage transformer testing",
+            "Control power transformer testing"
+          ]
+        },
+        {
+          "slug": "transformer-assembly",
+          "title": "Transformer Assembly",
+          "icon": "settings",
+          "text": "Transformer assembly on site, one of the five areas of work we show in our gallery.",
+          "points": [
+            "Transformer assembly",
+            "VFD transformer replacement"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "switchgear-and-breakers",
+      "title": "Switchgear & Breakers",
+      "icon": "circuit",
+      "summary": "Circuit breakers, switches, switchgear, surge arrestors and busway, from low voltage to high.",
+      "intro": "We test the switching and protection side of a distribution system across all voltage levels. Contact resistance and insulation resistance run through every device, with dielectric withstand, fuse resistance, trip testing and the integrity checks each type of interrupter calls for.",
+      "image": "/brands/powretek/switchgear",
+      "imageAlt": "A line-up of switchgear and control panels at a plant",
+      "services": [
+        {
+          "slug": "circuit-breaker-testing",
+          "title": "Circuit Breaker Testing",
+          "icon": "zap",
+          "text": "Air, insulated-case and molded-case breakers tested on contact resistance, insulation resistance and a time overcurrent pick-up and trip test by primary or secondary injection, plus device testing and a visual inspection.",
+          "points": [
+            "Medium voltage air circuit breaker testing",
+            "Medium to high voltage oil circuit breaker testing",
+            "Medium voltage vacuum circuit breaker testing",
+            "Medium voltage SF₆ circuit breaker testing"
+          ]
+        },
+        {
+          "slug": "switch-testing",
+          "title": "Switch Testing",
+          "icon": "plug",
+          "text": "Every switch type we test takes contact resistance, insulation resistance and a visual inspection, with the integrity check its interrupter calls for: vacuum bottle, gas bottle, SF₆ gas sample or oil sample analysis.",
+          "points": [
+            "Low voltage air switch testing, with ground fault testing",
+            "Medium to high voltage air switch testing",
+            "Medium voltage oil switch testing",
+            "Medium voltage vacuum switch testing",
+            "Medium voltage SF₆ switch testing"
+          ]
+        },
+        {
+          "slug": "switchgear-and-surge-arrestors",
+          "title": "Switchgear & Surge Arrestors",
+          "icon": "shield",
+          "text": "Switchgear and the surge protection around it, at every voltage level.",
+          "points": [
+            "Low, medium and high voltage switchgear testing",
+            "Low, medium and high voltage surge arrestor testing"
+          ]
+        },
+        {
+          "slug": "busway-testing",
+          "title": "Metal Enclosed Busway Testing",
+          "icon": "cable",
+          "text": "Busway runs checked end to end before they carry load.",
+          "points": [
+            "Contact resistance",
+            "Insulation resistance",
+            "Dielectric withstand",
+            "Visual inspection"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cable-testing",
+      "title": "Cable Testing",
+      "icon": "cable",
+      "summary": "Medium and high voltage cable, and low voltage cable to 600V.",
+      "intro": "Cable faults are found before they find you. Medium and high voltage runs take very low frequency testing, either VLF withstand or VLF tan delta, together with continuity, insulation and partial discharge work. Low voltage cable takes the shorter set.",
+      "image": "/brands/powretek/cable-testing",
+      "imageAlt": "Shielded cable terminations landed inside an enclosure",
+      "services": [
+        {
+          "slug": "medium-and-high-voltage-cable-testing",
+          "title": "Medium to High Voltage Cable Testing",
+          "icon": "cable",
+          "text": "The full diagnostic set for medium and high voltage cable.",
+          "points": [
+            "Very low frequency testing, VLF withstand or VLF tan delta",
+            "Shield continuity",
+            "Insulation continuity",
+            "Insulation resistance",
+            "Partial discharge",
+            "Visual inspection"
+          ]
+        },
+        {
+          "slug": "low-voltage-cable-testing",
+          "title": "Low Voltage Cable Testing",
+          "icon": "plug",
+          "text": "Cable rated to 600V maximum, checked before it is energized.",
+          "points": [
+            "Insulation resistance",
+            "Cable continuity",
+            "Visual inspection"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "oil-processing",
+      "title": "Transformer Oil Processing",
+      "icon": "droplets",
+      "summary": "Vacuum filling, filtration, dehydration, degassing and hot-oil processing in the field.",
+      "intro": "Transformer oil is processed on site, on new installations and on units already in service. The work covers vacuum filling, filtration and purification, moisture and dissolved gas removal, circulation and heating, and the sampling and testing that says when it is done.",
+      "image": "/brands/powretek/oil-processing",
+      "imageAlt": "Oil processing equipment and totes alongside a unit being set by crane",
+      "services": [
+        {
+          "slug": "vacuum-filling-and-field-processing",
+          "title": "Vacuum Filling & Field Processing",
+          "icon": "droplets",
+          "text": "New transformers filled and processed in the field, and existing ones processed on maintenance.",
+          "points": [
+            "Vacuum filling of new transformers",
+            "Field processing for new installations",
+            "Maintenance processing for existing transformers"
+          ]
+        },
+        {
+          "slug": "filtration-and-dehydration",
+          "title": "Filtration & Dehydration",
+          "icon": "filter",
+          "text": "Contamination, moisture and dissolved gas taken out of the oil.",
+          "points": [
+            "Oil filtration and purification",
+            "Moisture removal and dehydration",
+            "Dissolved gas removal and degassing"
+          ]
+        },
+        {
+          "slug": "hot-oil-processing",
+          "title": "Hot-Oil Processing",
+          "icon": "waves",
+          "text": "Circulation, heating and transfer, with storage handled as part of the job.",
+          "points": [
+            "Oil circulation and heating",
+            "Hot-oil processing",
+            "Oil transfer and storage"
+          ]
+        },
+        {
+          "slug": "oil-sampling-and-testing",
+          "title": "Oil Sampling & Testing",
+          "icon": "gauge",
+          "text": "Transformer oil sampling and testing, so the condition of the oil is a reading rather than a guess."
+        }
+      ]
+    },
+    {
+      "slug": "commissioning-and-field-solutions",
+      "title": "Commissioning & Field Solutions",
+      "icon": "zap",
+      "summary": "Commissioning, maintenance testing, relay, battery and motor work, and field solutions for wildlife and strain relief.",
+      "intro": "Beyond the test set, we commission new installations and carry out the maintenance testing that keeps existing ones in service. The same crews handle protective relays, station batteries, motors and contactors, and the field solutions that protect equipment once it is running.",
+      "image": "/brands/powretek/commissioning",
+      "imageAlt": "A skid-mounted electrical building being lifted into place at site",
+      "services": [
+        {
+          "slug": "commissioning",
+          "title": "Commissioning",
+          "icon": "building",
+          "text": "Electrical testing and commissioning field services for oil and gas, midstream, major utilities and the chemical industry."
+        },
+        {
+          "slug": "maintenance-testing",
+          "title": "Maintenance Testing",
+          "icon": "timer",
+          "text": "Scheduled testing on equipment already in service, using industry-standard equipment and proven testing methods."
+        },
+        {
+          "slug": "relay-and-battery-testing",
+          "title": "Relay & Battery Testing",
+          "icon": "battery",
+          "text": "Protective relays and station batteries tested as part of the wider electrical scope.",
+          "points": [
+            "Relay testing",
+            "Battery testing"
+          ]
+        },
+        {
+          "slug": "motor-testing-and-alignment",
+          "title": "Motor Testing & Laser Alignment",
+          "icon": "settings",
+          "text": "Low and medium voltage motors tested and laser aligned, with contactor testing alongside.",
+          "points": [
+            "Motor testing and laser alignment, low and medium voltage",
+            "Contactor testing"
+          ]
+        },
+        {
+          "slug": "wildlife-preservation-solutions",
+          "title": "Wildlife Preservation Solutions",
+          "icon": "leaf",
+          "text": "Wildlife preservation solutions, one of the two field solutions we show in our gallery."
+        },
+        {
+          "slug": "strain-relief-solutions",
+          "title": "Strain Relief Solutions",
+          "icon": "wrench",
+          "text": "Strain relief solutions, the other field solution we show in our gallery."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "A new company, built on years already spent in the field.",
+    "text": [
+      "After years of dedication and hard work, a new venture has emerged in the electrical services industry. Powre Tek Electrical Field Services is the culmination of years spent honing skills and mastering the intricacies of electrical work. The founders, driven by a shared dream and passion, realized that it was time to turn their long-held vision into reality.",
+      "The founders bring a collective 35 years of experience in electrical services. That background covers a wide range of work, including electrical testing and inspections, with safety and efficiency prioritized at every step.",
+      "The company is based in Alvin, Texas, and the work travels. Depending on the role and the project, team members go throughout the United States and internationally."
+    ],
+    "image": "/brands/powretek/team",
+    "imageAlt": "The Powre Tek crew in front of a transformer at a job site",
+    "values": [
+      {
+        "title": "Every voltage level",
+        "text": "Low-, medium- and high-voltage electrical systems and equipment."
+      },
+      {
+        "title": "Turnkey scope",
+        "text": "Electrical, mechanical and construction requirements handled together."
+      },
+      {
+        "title": "Texas based, globally trusted",
+        "text": "Electrical field service delivered wherever you need it."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Electrical Testing & Maintenance",
+      "text": "We specialize in advanced electrical testing and diagnostics for transformers, switchgear and power distribution systems. Our certified technicians use industry-standard equipment and proven testing methods to ensure reliability, safety and compliance across all voltage levels."
+    },
+    {
+      "heading": "Industries We Serve",
+      "items": [
+        "Oil and gas",
+        "Midstream",
+        "Major utilities",
+        "Chemical industry"
+      ]
+    },
+    {
+      "heading": "Where We Work",
+      "text": "Texas based, globally trusted. Electrical field service delivered wherever you need it."
+    },
+    {
+      "heading": "Turnkey Services",
+      "text": "Don't see what you're looking for? We provide comprehensive turnkey services to meet all your electrical, mechanical and construction requirements. Just ask."
+    },
+    {
+      "heading": "In Our Gallery",
+      "items": [
+        "Commissioning",
+        "Maintenance testing",
+        "Oil processing",
+        "Transformer assembly",
+        "Field solutions"
+      ]
+    },
+    {
+      "heading": "Mailing Address",
+      "text": "PO Box 1000, Alvin, TX 77512."
+    },
+    {
+      "heading": "Current Job Openings",
+      "text": "All three roles are based in Alvin, TX.",
+      "items": [
+        "Senior Electrical Testing & Commissioning Technician",
+        "Gas Turbine Commissioning & Start-Up Technician",
+        "Field Service Protection Relay Specialist"
+      ]
+    },
+    {
+      "heading": "Employee Benefits",
+      "items": [
+        "Health insurance",
+        "Dental insurance",
+        "Life insurance",
+        "Paid time off",
+        "Competitive pay"
+      ]
+    },
+    {
+      "heading": "Applying",
+      "text": "Powering projects, building careers. Openings are posted on Indeed; to apply, email your resume to our Operations Manager at k.fox@powretek.com."
+    },
+    {
+      "heading": "Follow Us",
+      "items": [
+        "facebook.com/Powre-Tek-Electrical-Field-Services",
+        "linkedin.com/company/powre-tek-electrical-field-services"
+      ]
+    }
+  ]
+}

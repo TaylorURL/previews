@@ -1,0 +1,805 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Rahman CPA Tax & Accounting PLLC",
+  "shortName": "Rahman CPA",
+  "tagline": "Tax, accounting and assurance in Richardson, Texas",
+  "phone": "(214) 800-4404",
+  "email": "anis@rahmancpa.com",
+  "address": "801 E Campbell Rd, Ste 245C",
+  "town": "Richardson",
+  "state": "TX",
+  "zip": "75081",
+  "license": "Anisur Rahman holds a CPA license in Texas and in Connecticut. The firm is an IRS Certifying Acceptance Agent.",
+  "rating": 5.0,
+  "reviewCount": 84,
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 6 PM"
+    ],
+    [
+      "Saturday",
+      "8 AM – 6 PM"
+    ],
+    [
+      "Sunday",
+      "8 AM – 6 PM"
+    ]
+  ],
+  "cta": {
+    "label": "Free Consultation",
+    "text": "Call 214-800-4404 or send us a note and we will set up a free consultation to go through your situation."
+  },
+  "brand": {
+    "primary": "#004AAB",
+    "primaryDeep": "#00336F",
+    "accent": "#1F7AE0",
+    "ink": "#16202c",
+    "muted": "#55616f",
+    "surface": "#f5f7fb",
+    "cream": "#e9eff8",
+    "line": "#dde4ee",
+    "heading": "'Source Serif 4', Georgia, serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap",
+    "logo": "/brands/rahmancpa/logo.webp",
+    "logoWidth": 92
+  },
+  "hero": {
+    "eyebrow": "CPA firm in Richardson, Texas",
+    "title": "Accounting and tax services for individuals and businesses.",
+    "lead": "Our team of experienced professionals is here to help you with all of your tax and accounting needs. From tax returns and IRS audits to bookkeeping and payroll, we have you covered.",
+    "image": "/brands/rahmancpa/hero",
+    "imageAlt": "Financial charts, a calculator and a magnifying glass on a desk",
+    "points": [
+      "Free consultation before you commit",
+      "CPA licensed in Texas and Connecticut",
+      "IRS Certifying Acceptance Agent"
+    ]
+  },
+  "overview": {
+    "title": "Bookkeeping, tax returns, payroll and assurance work under one roof.",
+    "text": "Pick a service to see what it covers, or call 214-800-4404 and talk it through with our team."
+  },
+  "audiences": {
+    "individuals": "Individuals",
+    "businesses": "Businesses"
+  },
+  "services": [
+    {
+      "slug": "individual-income-tax",
+      "title": "Individual Income Tax",
+      "audience": "individuals",
+      "icon": "file-text",
+      "summary": "Personal returns prepared and filed.",
+      "text": "Personal tax returns prepared accurately and on time, whether you are a W-2 employee, self-employed or a small business owner, with deductions and credits reviewed so your liability is no higher than it has to be.",
+      "lead": "Tax season can be a stressful time. We prepare individual returns, take the time to understand your specific financial situation, and work to maximize your deductions and credits while minimizing your tax liability.",
+      "image": "/brands/rahmancpa/tax",
+      "imageAlt": "Tax forms and a pen on a desk",
+      "covers": [
+        {
+          "title": "Return preparation",
+          "text": "Federal returns prepared accurately and filed on time, whether your situation is simple or complex."
+        },
+        {
+          "title": "Deductions and credits",
+          "text": "A review of the deductions and credits available to you, so your liability is no higher than it needs to be."
+        },
+        {
+          "title": "Current with the law",
+          "text": "Our team stays up to date on the latest tax law changes and regulations."
+        },
+        {
+          "title": "Everything in one place",
+          "text": "Tax planning, bookkeeping, financial consulting and IRS representation sit alongside preparation, so your needs are met under one roof."
+        }
+      ]
+    },
+    {
+      "slug": "irs-audit",
+      "title": "IRS Audit Representation",
+      "audience": "individuals",
+      "icon": "shield-check",
+      "summary": "Representation when the IRS audits you.",
+      "text": "We represent individuals and businesses through an IRS audit, gathering the documentation, dealing with the IRS on your behalf and negotiating a resolution.",
+      "lead": "Facing an IRS audit can be stressful. When the IRS audits you it will review your financial records and tax returns to check that everything is accurate and in compliance with tax law. We take that work off your hands.",
+      "image": "/brands/rahmancpa/audit",
+      "imageAlt": "An accountant reviewing financial records",
+      "covers": [
+        {
+          "title": "Documentation",
+          "text": "We gather all the documentation the audit calls for so nothing is missing when the IRS asks."
+        },
+        {
+          "title": "Dealing with the IRS",
+          "text": "We communicate with the IRS on your behalf and negotiate a fair resolution to the audit findings."
+        },
+        {
+          "title": "Penalties",
+          "text": "We use our knowledge of tax law to minimize any penalties or fines that may be imposed."
+        }
+      ]
+    },
+    {
+      "slug": "itin",
+      "title": "ITIN Applications",
+      "audience": "individuals",
+      "icon": "stamp",
+      "summary": "ITIN applications for those without an SSN.",
+      "text": "Individual Taxpayer Identification Number services for people who are not eligible for a Social Security Number, handled by an IRS Certifying Acceptance Agent.",
+      "lead": "The ITIN is a tax processing number issued by the IRS so that people who cannot obtain a Social Security Number, including some nonresident aliens, can still file taxes in the United States.",
+      "covers": [
+        {
+          "title": "The application",
+          "text": "Applicants must submit a federal income tax return with certain required documentation. We make sure the forms and documents are completed accurately and submitted to the IRS."
+        },
+        {
+          "title": "Certifying Acceptance Agent",
+          "text": "As an IRS Certifying Acceptance Agent, we can help with your ITIN application whether you are a non-resident alien or a foreign national living in the United States."
+        }
+      ]
+    },
+    {
+      "slug": "extension",
+      "title": "Filing a Tax Extension",
+      "audience": "individuals",
+      "icon": "clipboard-check",
+      "summary": "Form 4868 when you need more time.",
+      "text": "If you need more time to file, we handle the extension and explain what it does and does not change about what you owe.",
+      "lead": "To request a tax extension you typically file Form 4868 with the IRS, which extends your filing deadline by six months, to October 15th instead of the usual April 15th deadline.",
+      "covers": [
+        {
+          "title": "What an extension does not do",
+          "text": "An extension grants more time to file, but not more time to pay. Any tax due must still be paid by the original deadline to avoid penalties and interest."
+        },
+        {
+          "title": "Getting it right",
+          "text": "We help you understand these nuances and make sure you meet all the requirements for an extension."
+        }
+      ]
+    },
+    {
+      "slug": "fbar",
+      "title": "FBAR Reporting",
+      "audience": "individuals",
+      "icon": "landmark",
+      "summary": "Foreign bank account reporting.",
+      "text": "FBAR is a mandatory annual report for anyone with foreign financial accounts exceeding $10,000 at any time during the year. We assess, file and keep you compliant.",
+      "lead": "FBAR stands for Foreign Bank and Financial Account Report. It is a mandatory annual report for U.S. citizens, residents and entities, including corporations, partnerships and trusts, that have financial interests in or signature authority over foreign financial accounts exceeding $10,000 at any time during the calendar year.",
+      "covers": [
+        {
+          "title": "Consultation and assessment",
+          "text": "A detailed assessment of your financial situation to determine your FBAR obligations, identifying all foreign accounts and their balances through the year."
+        },
+        {
+          "title": "Filing assistance",
+          "text": "Preparing and filing your FBAR electronically through FinCEN's BSA E-Filing System."
+        },
+        {
+          "title": "Compliance strategy",
+          "text": "Strategies to stay compliant year after year rather than scrambling each time."
+        },
+        {
+          "title": "Audit support",
+          "text": "Support and representation if your foreign account reporting is examined."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What happens if I do not file an FBAR?",
+          "a": "Non-willful violations can incur fines up to $10,000 per violation, and willful violations can attract steeper penalties, including criminal charges and fines up to $100,000 or 50% of the account balance."
+        }
+      ]
+    },
+    {
+      "slug": "estate",
+      "title": "Estate Planning",
+      "audience": "individuals",
+      "icon": "scale",
+      "summary": "Estate planning, and estate administration where we can take it on.",
+      "text": "Estate planning that takes account of your own circumstances and goals. We may also take on estate administration when an estate has to be settled.",
+      "lead": "Estate planning can be a complex process, as it often involves understanding various legal and financial concepts. We help guide clients through it, taking their unique circumstances and goals into account.",
+      "covers": [
+        {
+          "title": "Planning",
+          "text": "Drafting wills and trusts, establishing powers of attorney, and advice on tax planning strategies."
+        },
+        {
+          "title": "Estate administration, where we take it on",
+          "text": "Managing the affairs of a deceased person's estate, including paying debts, distributing assets to beneficiaries and filing the necessary tax returns."
+        }
+      ]
+    },
+    {
+      "slug": "accredited-investment-letter",
+      "title": "Accredited Investment Letter",
+      "audience": "individuals",
+      "icon": "pen-line",
+      "summary": "Verification of accredited investor status.",
+      "text": "We verify whether you meet the criteria and issue the Accredited Investment Letter that investment firms, hedge funds and private equity firms ask for as proof.",
+      "lead": "An Accredited Investment Letter serves as verification of your accredited investor status and can be presented to investment firms, hedge funds or private equity firms as proof.",
+      "covers": [
+        {
+          "title": "What you provide",
+          "text": "Certain financial documents, which may include tax returns, bank statements, brokerage statements and other relevant financial information."
+        },
+        {
+          "title": "What happens next",
+          "text": "Once your documents have been reviewed and your accredited investor status verified, your letter is prepared and sent to you."
+        }
+      ]
+    },
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping",
+      "audience": "businesses",
+      "icon": "book",
+      "summary": "Books kept in order and up to date.",
+      "text": "From managing accounts payable and receivable to reconciling bank statements and generating financial reports, we keep your books in order and up to date.",
+      "lead": "Our bookkeeping services are tailored to each client. Whether you are a startup looking to establish solid financial practices or an established business in need of streamlining your accounting processes, we have the expertise to help you succeed.",
+      "image": "/brands/rahmancpa/bookkeeping",
+      "imageAlt": "A ledger and calculator on a desk",
+      "covers": [
+        {
+          "title": "Accounts payable and receivable",
+          "text": "Tracking what you are owed and what you owe, so income and expenses stay visible."
+        },
+        {
+          "title": "Bank reconciliation",
+          "text": "Reconciling bank statements against your records to catch discrepancies and errors."
+        },
+        {
+          "title": "Financial reports",
+          "text": "Accurate and timely financial information you can run the business on."
+        },
+        {
+          "title": "Ongoing support",
+          "text": "Personalised service and ongoing support, so your records stay in good hands all year."
+        }
+      ]
+    },
+    {
+      "slug": "small-business-bookkeeping",
+      "title": "Small Business Bookkeeping",
+      "audience": "businesses",
+      "icon": "store",
+      "summary": "Full back office for a small business.",
+      "text": "Accounts, reconciliations, reporting, payroll and sales tax filing for small businesses, so owners can spend their time growing the business instead of managing the books.",
+      "lead": "Our Small Business Bookkeeping service is designed to help small businesses manage their financial records accurately and efficiently, so owners can focus more on growing the business and less on managing their finances.",
+      "covers": [
+        {
+          "title": "Accounts receivable and payable",
+          "text": "Sending invoices, collecting payments and paying bills on time."
+        },
+        {
+          "title": "Bank reconciliation",
+          "text": "Regular reconciliations so your bank statements match your financial records."
+        },
+        {
+          "title": "Financial reporting",
+          "text": "Income statements, balance sheets and cash flow statements, up to date and accurate."
+        },
+        {
+          "title": "Payroll",
+          "text": "Calculating wages, withholding taxes and preparing payroll tax returns."
+        },
+        {
+          "title": "Sales tax filing",
+          "text": "Preparing and filing your sales tax returns so you stay compliant with sales tax law."
+        }
+      ]
+    },
+    {
+      "slug": "healthcare-bookkeeping",
+      "title": "Healthcare Bookkeeping",
+      "audience": "businesses",
+      "icon": "stethoscope",
+      "summary": "Bookkeeping built for healthcare practices.",
+      "text": "Financial statement preparation, accounts payable and receivable, payroll processing and tax planning, tailored to the healthcare industry.",
+      "lead": "The healthcare industry presents unique challenges when it comes to bookkeeping, from complex billing and coding systems to strict regulatory compliance requirements. We have extensive experience navigating those complexities and keeping records accurate, current and compliant.",
+      "covers": [
+        {
+          "title": "Financial statement preparation",
+          "text": "Statements prepared to industry standards and regulations."
+        },
+        {
+          "title": "Accounts payable and receivable",
+          "text": "Day to day management of what the practice owes and is owed."
+        },
+        {
+          "title": "Payroll processing",
+          "text": "Payroll handled alongside the rest of the practice's books."
+        },
+        {
+          "title": "Tax planning and preparation",
+          "text": "Planning through the year rather than reacting at filing time."
+        }
+      ]
+    },
+    {
+      "slug": "quickbooks",
+      "title": "QuickBooks",
+      "audience": "businesses",
+      "icon": "calculator",
+      "summary": "Setup, data conversion, training and support.",
+      "text": "QuickBooks setup, data conversion, training and ongoing support, so the software is set up around your business rather than the other way round.",
+      "lead": "We offer a range of QuickBooks services to help businesses manage their finances effectively, from first setup through to ongoing support.",
+      "covers": [
+        {
+          "title": "Setup",
+          "text": "Setting up your company file, customising forms and configuring your chart of accounts so your financial data is tracked and reported accurately."
+        },
+        {
+          "title": "Data conversion",
+          "text": "Transferring financial data from your old accounting system to QuickBooks accurately and completely."
+        },
+        {
+          "title": "Training",
+          "text": "Sessions for you and your staff on entering transactions, generating reports and managing payroll."
+        },
+        {
+          "title": "Ongoing support",
+          "text": "Answering questions, troubleshooting issues and guidance on using QuickBooks to improve your financial management."
+        }
+      ]
+    },
+    {
+      "slug": "payroll",
+      "title": "Payroll",
+      "audience": "businesses",
+      "icon": "banknote",
+      "summary": "W2s, 1099s and the 940 and 941 filings.",
+      "text": "Payroll run and filed accurately and on time, with W2s issued to employees, 1099 forms to independent contractors and the 940 and 941 returns filed.",
+      "lead": "When it comes to payroll, we make sure all the necessary forms are filed accurately and on time. Outsourcing payroll saves the time and resources you would otherwise spend managing it in-house, so you can focus on your core operations.",
+      "image": "/brands/rahmancpa/payroll",
+      "imageAlt": "Payroll paperwork on a desk",
+      "covers": [
+        {
+          "title": "W2s and 1099s",
+          "text": "W2s issued to employees and 1099 forms provided to independent contractors."
+        },
+        {
+          "title": "Forms 940 and 941",
+          "text": "The 940 and 941 forms used to report federal income tax withholding and social security and Medicare taxes."
+        },
+        {
+          "title": "Time back",
+          "text": "Payroll off your desk, so your team can focus on running and growing the business."
+        }
+      ]
+    },
+    {
+      "slug": "corporate-tax",
+      "title": "Corporate Tax",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Business returns and year-round tax planning.",
+      "text": "Corporate tax preparation and planning for businesses of all sizes, from a small startup to a large corporation.",
+      "lead": "It can be overwhelming to keep up with ever-changing tax laws and regulations. We work closely with you to keep your business in compliance while maximizing your deductions and credits to minimize your tax liability.",
+      "image": "/brands/rahmancpa/accounting",
+      "imageAlt": "A business owner reviewing accounts",
+      "covers": [
+        {
+          "title": "Corporate tax preparation",
+          "text": "Returns prepared in compliance with tax law, with deductions and credits applied."
+        },
+        {
+          "title": "Tax planning",
+          "text": "Working with us through the year lets you plan for liabilities and take advantage of tax-saving opportunities, so there are no surprises at tax season."
+        },
+        {
+          "title": "Built around your business",
+          "text": "Every business is different, so we take the time to get to know yours and tailor our work to it."
+        }
+      ]
+    },
+    {
+      "slug": "not-for-profit",
+      "title": "Not For Profit",
+      "audience": "businesses",
+      "icon": "heart",
+      "summary": "Accounting and compliance for nonprofits.",
+      "text": "Financial statement preparation, audit and assurance, tax planning and compliance, and strategic planning for not-for-profit organizations.",
+      "lead": "We specialize in serving not-for-profit organizations and understand the unique challenges and opportunities they face. Our team is well-versed in the latest accounting standards and regulations.",
+      "covers": [
+        {
+          "title": "Financial statement preparation",
+          "text": "Statements prepared to the standards nonprofits are held to."
+        },
+        {
+          "title": "Audit and assurance",
+          "text": "Audit and assurance services for boards, funders and regulators."
+        },
+        {
+          "title": "Tax planning and compliance",
+          "text": "Keeping the organization compliant and planning ahead."
+        },
+        {
+          "title": "Strategic planning and consulting",
+          "text": "Customised solutions developed around your specific needs and goals."
+        }
+      ]
+    },
+    {
+      "slug": "new-business-formation",
+      "title": "New Business Formation & Dissolution",
+      "audience": "businesses",
+      "icon": "key",
+      "summary": "Setting a business up, and winding one down.",
+      "text": "Choosing a structure, filing the paperwork and setting up your books when you start, and winding operations down properly when you close.",
+      "lead": "Starting a new business can be overwhelming. We can help you with everything from choosing the right business structure to registering with the appropriate authorities, and we can assist with dissolution if you are closing a business down.",
+      "covers": [
+        {
+          "title": "Choosing a structure",
+          "text": "Sole proprietorship, partnership, corporation or LLC, decided on what fits your needs."
+        },
+        {
+          "title": "Filings, licenses and permits",
+          "text": "Preparing and filing the necessary paperwork with the appropriate state and local agencies, and obtaining any necessary licenses and permits."
+        },
+        {
+          "title": "Getting set up",
+          "text": "Guidance on setting up your accounting and bookkeeping systems and developing a business plan."
+        },
+        {
+          "title": "Dissolution",
+          "text": "Winding down operations, settling outstanding debts and obligations, filing the dissolution paperwork and understanding your tax obligations and potential liabilities."
+        }
+      ]
+    },
+    {
+      "slug": "fractional-cfo",
+      "title": "Fractional CFO",
+      "audience": "businesses",
+      "icon": "chart",
+      "summary": "CFO-level expertise part-time.",
+      "text": "CFO-level expertise on a part-time or contract basis, for businesses that need financial leadership without the cost of a full-time executive.",
+      "lead": "For many small and mid-sized businesses, hiring a full-time Chief Financial Officer is simply not practical. A Fractional CFO is a highly experienced financial executive who provides CFO-level expertise part-time, guiding your financial strategy, improving cash flow management and helping you make data-driven decisions.",
+      "image": "/brands/rahmancpa/cfo",
+      "imageAlt": "A financial dashboard and reports on a desk",
+      "covers": [
+        {
+          "title": "Strategic financial planning",
+          "text": "Financial strategies aligned to your goals, from budgeting to growth planning."
+        },
+        {
+          "title": "Cash flow management",
+          "text": "Tracking, forecasting and optimizing cash flow so you stay on top of expenses while preparing for what is next."
+        },
+        {
+          "title": "Forecasting and analysis",
+          "text": "Detailed financial modeling and forecasting to anticipate challenges and make better decisions."
+        },
+        {
+          "title": "KPI and performance monitoring",
+          "text": "Financial dashboards and key performance indicators so you can measure progress and adjust quickly."
+        },
+        {
+          "title": "Funding and investment guidance",
+          "text": "Preparing financial statements and strategies for bank financing, investors or private equity."
+        },
+        {
+          "title": "Risk management and compliance",
+          "text": "Keeping the business compliant while protecting assets and minimizing risk."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who is a Fractional CFO for?",
+          "a": "Startups looking to scale quickly, growing small and medium-sized businesses that need stronger financial systems, companies preparing for mergers, acquisitions or funding rounds, and owners who want accurate forecasting and long-term planning."
+        }
+      ]
+    },
+    {
+      "slug": "advisory",
+      "title": "Advisory",
+      "audience": "businesses",
+      "icon": "handshake",
+      "summary": "Valuation, planning, risk and transactions.",
+      "text": "Advisory work for businesses navigating complex financial situations: valuation, financial planning and analysis, risk management, mergers and acquisitions, and tax planning.",
+      "lead": "Our advisory services are designed to help businesses navigate complex financial situations, make informed decisions and achieve their strategic goals.",
+      "covers": [
+        {
+          "title": "Business valuation",
+          "text": "Estimating the economic value of a business, often required during transactions, mergers and acquisitions, tax planning and estate planning."
+        },
+        {
+          "title": "Financial planning and analysis",
+          "text": "Developing financial plans and conducting analysis to understand financial health, identify trends and make projections."
+        },
+        {
+          "title": "Risk management",
+          "text": "Identifying, assessing and prioritising the risks a business faces, and developing strategies to mitigate or manage them."
+        },
+        {
+          "title": "Mergers and acquisitions",
+          "text": "Guidance through the complex process so you can make informed decisions."
+        },
+        {
+          "title": "Tax planning and compliance",
+          "text": "Planning tax strategy and ensuring compliance with tax laws and regulations."
+        }
+      ]
+    },
+    {
+      "slug": "consultancy",
+      "title": "Consultancy",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Narrow, well-defined problems on a project basis.",
+      "text": "Consulting that solves narrow, well-defined problems on a project basis, from financial analysis and tax planning to forensic accounting and strategic planning.",
+      "lead": "Our consulting services are designed to help clients navigate complex financial issues and make informed decisions, with tailored solutions built around their business objectives.",
+      "covers": [
+        {
+          "title": "Financial analysis",
+          "text": "A thorough examination of financial statements to identify trends, opportunities and potential risks."
+        },
+        {
+          "title": "Tax planning",
+          "text": "Identifying tax-saving opportunities and developing strategies to maximize after-tax income."
+        },
+        {
+          "title": "Business valuation",
+          "text": "A range of valuation methods used to determine the fair market value of a business ahead of a merger, acquisition or sale."
+        },
+        {
+          "title": "Forensic accounting",
+          "text": "In cases of fraud, embezzlement or other financial irregularities, work to uncover what happened and take appropriate action."
+        },
+        {
+          "title": "Strategic planning",
+          "text": "Long-term plans that align with your business goals and vision."
+        }
+      ]
+    },
+    {
+      "slug": "boi",
+      "title": "Beneficial Ownership Information",
+      "audience": "businesses",
+      "icon": "shield",
+      "summary": "BOI collection, verification and reporting.",
+      "text": "Collecting, verifying and reporting the information that identifies who ultimately owns or controls a company, in line with federal and state regulations.",
+      "lead": "BOI refers to the data that identifies the individuals who ultimately own or control a company. It is central to regulatory compliance and to preventing financial crime, and accurate records build trust and credibility with stakeholders.",
+      "covers": [
+        {
+          "title": "Expert consultation",
+          "text": "Help understanding the specific BOI requirements that apply to your business."
+        },
+        {
+          "title": "Accurate data collection",
+          "text": "Thorough verification processes to collect and confirm beneficial ownership details, not just filling out forms."
+        },
+        {
+          "title": "Compliance reporting",
+          "text": "Reports submitted in compliance with the latest regulatory standards, on time, to avoid penalties and legal issues."
+        },
+        {
+          "title": "Ongoing support",
+          "text": "Regulations change and records have to stay current, so support continues after the first filing."
+        }
+      ]
+    },
+    {
+      "slug": "audit",
+      "title": "Audit",
+      "audience": "businesses",
+      "icon": "clipboard-check",
+      "summary": "Assurance that financial statements are reliable.",
+      "text": "An audit gives stakeholders assurance that your financial statements are reliable and free from material misstatement, and surfaces errors or fraud in the records.",
+      "lead": "An audit is a critical process for any business. It provides assurance to stakeholders that the financial statements are reliable and free from material misstatements, and it helps identify any potential errors or fraud within the financial records.",
+      "covers": [
+        {
+          "title": "Tailored approach",
+          "text": "Our auditors work closely with you to understand your business and its needs, and tailor the audit approach to your requirements."
+        },
+        {
+          "title": "A thorough review",
+          "text": "A thorough review of your financial records, identifying areas of concern and providing recommendations for improvement."
+        },
+        {
+          "title": "Delivered on time",
+          "text": "High-quality results delivered in a timely manner."
+        }
+      ]
+    },
+    {
+      "slug": "review",
+      "title": "Review",
+      "audience": "businesses",
+      "icon": "file-text",
+      "summary": "A lighter level of assurance than an audit.",
+      "text": "Financial reviews for businesses and individuals, checking that statements are accurate and compliant with the relevant regulations and standards.",
+      "lead": "Every client has specific needs when it comes to financial reviews. Whether you are a small business owner looking to review your financial statements or an individual in need of a personal financial review, we have the expertise to assist you.",
+      "covers": [
+        {
+          "title": "Businesses and individuals",
+          "text": "A small business owner reviewing financial statements and an individual needing a personal financial review are both work we take on."
+        },
+        {
+          "title": "Accurate and compliant",
+          "text": "We work closely with you to check that your financial statements are accurate and compliant with all relevant regulations and standards."
+        },
+        {
+          "title": "Tailored to your concerns",
+          "text": "We take the time to listen to your concerns and tailor the review to what you actually need from it."
+        }
+      ]
+    },
+    {
+      "slug": "compilation",
+      "title": "Compilation",
+      "audience": "businesses",
+      "icon": "receipt",
+      "summary": "Financial statements in a simplified format.",
+      "text": "A compilation presents a company's financial information in a simplified format, useful for small businesses that do not need a full audit but still have to show figures to lenders, investors or buyers.",
+      "lead": "A compilation is a type of financial statement that presents a company's financial information in a simplified format. This can be beneficial for small businesses that do not require a full audit but still need to present financial information to stakeholders, such as lenders, investors or potential buyers.",
+      "covers": [
+        {
+          "title": "Gathering the data",
+          "text": "We work closely with you to gather and organize financial data so the process is efficient and thorough."
+        },
+        {
+          "title": "Statements prepared",
+          "text": "Financial statements prepared in compliance with accounting standards, clear and easy to interpret."
+        }
+      ]
+    },
+    {
+      "slug": "aup",
+      "title": "Agreed Upon Procedures",
+      "audience": "businesses",
+      "icon": "award",
+      "summary": "AUP engagements built to your objectives.",
+      "text": "An agreed upon procedures engagement examines the financial records, procedures and controls you specify, and reports back on what it finds.",
+      "lead": "With years of experience in financial reporting and auditing, our team can help you navigate the complexities of AUP procedures. We work closely with your team to develop a customized AUP plan that meets your specific needs and objectives.",
+      "covers": [
+        {
+          "title": "The examination",
+          "text": "A thorough examination of your financial records, procedures and controls to identify any potential issues or discrepancies."
+        },
+        {
+          "title": "The report",
+          "text": "Comprehensive and accurate reports that help you make informed business decisions and comply with regulatory requirements."
+        }
+      ]
+    }
+  ],
+  "process": {
+    "title": "How we work",
+    "text": "The same approach whether you are an individual taxpayer or a small business owner.",
+    "steps": [
+      {
+        "title": "A free consultation",
+        "text": "Call 214-800-4404 and ask your questions. The first consultation is free."
+      },
+      {
+        "title": "We listen first",
+        "text": "We take the time to understand your specific situation, goals and concerns before recommending anything."
+      },
+      {
+        "title": "A plan built for you",
+        "text": "We develop a customized plan that fits your situation rather than a standard package."
+      },
+      {
+        "title": "We stay available",
+        "text": "We are always available to answer your questions, by phone or by email, and we keep you informed at every step."
+      }
+    ]
+  },
+  "affiliations": {
+    "title": "Credentials and memberships",
+    "items": [
+      "Certified Public Accountant, licensed in Texas",
+      "Certified Public Accountant, licensed in Connecticut",
+      "IRS Certifying Acceptance Agent",
+      "Connecticut Society of CPAs (CTCPA)",
+      "MBA"
+    ]
+  },
+  "about": {
+    "title": "A Richardson CPA firm led by its founder.",
+    "text": [
+      "Rahman CPA Tax & Accounting PLLC is a CPA firm in Richardson, Texas. Anisur Rahman is the managing principal and founder, and holds a CPA license in both Texas and Connecticut.",
+      "Over more than 10 years in the accounting industry, he has worked with a diverse range of clients, including healthcare organizations, nonprofits, government agencies, small businesses and big4 firms. That exposure to different sectors means each client's work is tailored to the challenges their own industry brings.",
+      "The firm covers auditing, tax preparation, financial consulting and more, so clients can get their accounting needs met in one place rather than across several providers."
+    ],
+    "image": "/brands/rahmancpa/about",
+    "imageAlt": "Accountants reviewing figures together at a table",
+    "values": [
+      {
+        "title": "Saving strategies",
+        "text": "We assist you in building saving strategies for your business or personal tax."
+      },
+      {
+        "title": "Affordable service",
+        "text": "Get your free consultation today and ask all your questions."
+      },
+      {
+        "title": "Reliable support",
+        "text": "We are always available to answer your questions. Call or send us your question via email."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Anisur Rahman",
+      "role": "Managing Principal and Founder",
+      "bio": "Holds a CPA license in both Texas and Connecticut and an MBA. More than 10 years in the accounting industry, working with healthcare organizations, nonprofits, government agencies, small businesses and big4 firms.",
+      "image": "/brands/rahmancpa/anisur-rahman",
+      "imageAlt": "Anisur Rahman"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do you charge for a first consultation?",
+      "a": "No. The first consultation is free. Call 214-800-4404 and ask all your questions."
+    },
+    {
+      "q": "Do you work with individuals as well as businesses?",
+      "a": "Yes. Whether you are an individual taxpayer or a small business owner, we have the expertise to meet your tax and accounting needs."
+    },
+    {
+      "q": "Can you represent me if the IRS audits me?",
+      "a": "Yes. We gather the documentation, communicate with the IRS on your behalf and negotiate a resolution to the audit findings."
+    },
+    {
+      "q": "Can you help me get an ITIN?",
+      "a": "Yes. We are an IRS Certifying Acceptance Agent and can help with the ITIN application process, whether you are a non-resident alien or a foreign national living in the United States."
+    },
+    {
+      "q": "Where is your office?",
+      "a": "801 E Campbell Rd, Suite 245C, Richardson, TX 75081. You are welcome to come and visit us."
+    },
+    {
+      "q": "Can I book a time rather than call?",
+      "a": "Yes. There is a Schedule Meeting page on the site, or call 214-800-4404 and we will find a time."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Where's My Refund",
+      "text": "Track the status of your federal refund directly with the IRS.",
+      "href": "https://sa.www4.irs.gov/wmr/"
+    },
+    {
+      "title": "Rahman CPA on Facebook",
+      "text": "Updates and announcements from the firm.",
+      "href": "https://www.facebook.com/profile.php?id=61557293472354"
+    }
+  ],
+  "serviceArea": [
+    "Richardson",
+    "Dallas",
+    "Plano",
+    "Garland",
+    "Allen",
+    "McKinney"
+  ],
+  "facts": [
+    {
+      "heading": "Industries we serve",
+      "items": [
+        "Healthcare: financial statement preparation, tax planning and compliance, operational efficiency consulting",
+        "Small businesses: bookkeeping, payroll and business advisory",
+        "Nonprofits: compliance issues, grant writing and fund accounting",
+        "Construction: job costing, percentage of completion accounting and contract review",
+        "Government entities: single audit, Yellow Book audit and grant compliance",
+        "We also work with clients in retail, manufacturing and professional services"
+      ]
+    },
+    {
+      "heading": "Where we work",
+      "text": "Our office is at 801 E Campbell Rd, Suite 245C in Richardson, and we work with clients across Richardson and the surrounding areas of Garland, Plano, Dallas, Allen and McKinney."
+    },
+    {
+      "heading": "Getting in touch",
+      "text": "Call 214-800-4404, email anis@rahmancpa.com, or pick a slot on the Schedule Meeting page and book it online. The first consultation is free, and you are welcome to come and visit the office."
+    },
+    {
+      "heading": "What it costs",
+      "text": "We know cost matters when you are choosing an accounting firm, so our pricing stays competitive and we offer affordable options. Ask on your free consultation and we will tell you what your work would cost."
+    }
+  ]
+}
