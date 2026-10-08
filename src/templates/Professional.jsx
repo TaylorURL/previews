@@ -14,6 +14,7 @@
  *   kind          "insurance" | "accounting" | "title". Sets the defaults below when a field is left out:
  *                 the call-to-action label (Get a Quote / Schedule a Consultation / Open a Title Order),
  *                 the affiliations heading, and who "talk it through with" names.
+ *   talk          optional. Overrides who "talk it through with" names, for a practice of one ("Matt").
  *   name          the business's full legal or trading name, as on its own site.
  *   shortName     the name used in running copy and when there is no logo.
  *   tagline       optional. One line under the logo in the footer and in the top bar on desktop.
@@ -1211,7 +1212,7 @@ function Footer({ b, nav, tel }) {
 /* -------------------------------------------------------------------- root */
 
 export default function Professional({ b, path = '' }) {
-  const k = KIND[b.kind] || KIND.insurance;
+  const k = { ...(KIND[b.kind] || KIND.insurance), ...(b.talk ? { talk: b.talk } : {}) };
   const ctaLabel = b.cta?.label || k.cta;
   const tel = telHref(b.phone);
   const groups = groupsOf(b);
