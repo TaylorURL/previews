@@ -169,11 +169,53 @@ export function ratingLine(b) {
   return `${Number(b.rating).toFixed(1)} from ${b.reviewCount.toLocaleString()} Google reviews`;
 }
 
+/** The relative luminance of a #rrggbb color, 0 for black to 1 for white. */
+export function luminance(hex = '#ffffff') {
+  const c = hex.replace('#', '');
+  const full = c.length === 3 ? c.replace(/./g, (x) => x + x) : c;
+  const [r, g, b] = [0, 2, 4].map((i) => {
+    const v = parseInt(full.slice(i, i + 2), 16) / 255;
+    return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
+  });
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+
+/**
+ * Whether the header is drawn dark: the logo was made for a dark or colored
+ * ground (logoGround, written by the logo step of the build), so the header
+ * takes that ground and its links turn light, rather than the mark sitting in
+ * a box on white.
+ */
+export function headDark(brand) {
+  return Boolean(brand?.logo && brand.logoGround && luminance(brand.logoGround) < 0.4);
+}
+
+/**
+ * The weights display type is set in: a serif face at its regular weight, a
+ * sans one bold, so a heading never reads thin at sixty pixels.
+ */
+export function displayVars(brand) {
+  const stack = String(brand?.heading || '');
+  const serif = /serif/.test(stack.replace(/sans-serif/g, ''));
+  return serif
+    ? { '--display-weight': 400, '--display-weight-2': 400, '--display-tracking': '-0.005em' }
+    : { '--display-weight': 700, '--display-weight-2': 600, '--display-tracking': '-0.022em' };
+}
+
 /** The brand's colors and fonts as custom properties on the template root. */
 export function brandVars(brand) {
   const vars = {};
   for (const [key, value] of Object.entries(brand)) {
     if (typeof value === 'string' && !['fonts', 'logo'].includes(key)) vars[`--${key}`] = value;
+  }
+  // The header's ground is the logo's own; a file without one keeps white.
+  if (brand.logo && brand.logoGround) {
+    const dark = headDark(brand);
+    vars['--head'] = brand.logoGround;
+    vars['--head-ink'] = dark ? '#ffffff' : 'var(--ink)';
+    vars['--head-soft'] = dark ? 'rgba(255,255,255,0.72)' : 'var(--muted, #5b6470)';
+    vars['--head-line'] = dark ? 'rgba(255,255,255,0.16)' : 'color-mix(in srgb, var(--ink) 10%, transparent)';
+    vars['--head-hover'] = dark ? 'rgba(255,255,255,0.78)' : 'var(--primary)';
   }
   return vars;
 }

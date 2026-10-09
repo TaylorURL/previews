@@ -9,27 +9,42 @@ tiny or the same as one already used is refused rather than shown.
 import colorsys
 import io
 import os
+import re
 import shutil
 import subprocess
 import tempfile
 
 from PIL import Image, ImageStat
 
-LOGO_DRAWN = 200
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 
 
-def open_image(data):
-    """Raster bytes as an image; an SVG is drawn with rsvg-convert when there is one."""
-    head = data[:600].lstrip().lower()
-    if head.startswith(b"<?xml") or b"<svg" in head:
-        tool = shutil.which("rsvg-convert")
-        if not tool:
-            raise ValueError("an SVG logo and no rsvg-convert to draw it")
+def _svg_to_png(data, width=1000):
+    """An SVG drawn to PNG bytes on nothing: rsvg-convert where there is one,
+    else the Chromium the layout check already uses."""
+    if not re.search(rb"<svg[^>]*xmlns=", data[:2000]):
+        data = re.sub(rb"<svg\b", b'<svg xmlns="http://www.w3.org/2000/svg"', data, count=1)
+    tool = shutil.which("rsvg-convert")
+    if tool:
         with tempfile.NamedTemporaryFile(suffix=".svg") as svg:
             svg.write(data)
             svg.flush()
-            out = subprocess.run([tool, "-w", "800", svg.name], capture_output=True, check=True).stdout
-        data = out
+            return subprocess.run([tool, "-w", str(width), svg.name], capture_output=True, check=True, timeout=60).stdout
+    with tempfile.TemporaryDirectory() as folder:
+        svg, png = os.path.join(folder, "in.svg"), os.path.join(folder, "out.png")
+        with open(svg, "wb") as handle:
+            handle.write(data)
+        subprocess.run(["node", os.path.join(ROOT, "scripts", "autobuild", "raster.mjs"), svg, png, str(width)],
+                       cwd=ROOT, capture_output=True, check=True, timeout=90, stdin=subprocess.DEVNULL)
+        with open(png, "rb") as handle:
+            return handle.read()
+
+
+def open_image(data):
+    """Raster bytes as an image; an SVG is drawn first."""
+    head = data[:600].lstrip().lower()
+    if head.startswith(b"<?xml") or b"<svg" in head:
+        data = _svg_to_png(data)
     image = Image.open(io.BytesIO(data))
     image.load()
     return image
@@ -52,7 +67,12 @@ def blank(image):
 
 
 def save_photo(image, folder, name):
-    """Writes the -800 and -1600 pair and returns the width it was given."""
+    """Writes the -800 and -1600 pair and returns the width it was given. A
+    picture with any transparency left is laid on white, never on black."""
+    if image.mode in ("RGBA", "LA", "P"):
+        rgba = image.convert("RGBA")
+        image = Image.new("RGB", rgba.size, (255, 255, 255))
+        image.paste(rgba, mask=rgba.getchannel("A"))
     image = image.convert("RGB")
     for width in (800, 1600):
         target = min(width, image.width)
@@ -60,24 +80,6 @@ def save_photo(image, folder, name):
             (target, round(image.height * target / image.width)), Image.LANCZOS)
         out.save(os.path.join(folder, f"{name}-{width}.webp"), "WEBP", quality=78, method=6)
     return image.width
-
-
-def save_logo(image, folder):
-    """The logo trimmed to its drawing, saved at about twice its drawn width."""
-    image = image.convert("RGBA")
-    box = image.getchannel("A").getbbox()
-    if box:
-        image = image.crop(box)
-    # A logo on a solid white or black ground keeps the ground; a transparent
-    # one keeps its transparency.
-    width = min(image.width, LOGO_DRAWN * 2)
-    if width != image.width:
-        image = image.resize((width, round(image.height * width / image.width)), Image.LANCZOS)
-    image.save(os.path.join(folder, "logo.webp"), "WEBP", quality=90, method=6)
-    ratio = image.width / max(image.height, 1)
-    # Drawn about 56px tall in the headers, capped so a long wordmark fits.
-    drawn = int(max(120, min(230, 56 * ratio)))
-    return drawn
 
 
 def _lum(rgb):
@@ -151,23 +153,30 @@ def logo_colors(image):
 
 
 def looks_like_logo(image):
-    """A real mark rather than an icon, a spacer or a sliver of one: wide
-    enough to read, with enough of it drawn."""
+    """A mark worth trying rather than an icon, a spacer or a sliver of one:
+    big enough to read, with enough of it drawn. logo.py decides the rest."""
     rgba = image.convert("RGBA")
     box = rgba.getchannel("A").getbbox()
     if box:
         rgba = rgba.crop(box)
-    if rgba.width < 120 or rgba.height < 28 or rgba.width / max(rgba.height, 1) < 0.8:
+    if rgba.width < 60 or rgba.height < 24:
         return False
     small = rgba.copy()
     small.thumbnail((200, 200))
     pixels = list(small.getdata())
-    drawn = [p for p in pixels if p[3] > 128 and min(p[:3]) < 235]
-    share = len(drawn) / max(len(pixels), 1)
-    if not 0.03 <= share <= 0.97 or blank(rgba.convert("RGB")):
-        return False
-    # A logo drawn for a dark header is white on nothing, and would vanish on
-    # the light headers the templates draw.
     opaque = [p for p in pixels if p[3] > 128]
-    light = sum(1 for p in opaque if min(p[:3]) > 215)
-    return light / max(len(opaque), 1) < 0.6
+    share = len(opaque) / max(len(pixels), 1)
+    return share >= 0.03 and not blank_mark(rgba)
+
+
+def blank_mark(image):
+    """Whether a logo shows nothing, judged as drawn: a one-color mark on
+    nothing is a shape once it sits on a ground, though its color channels
+    alone are flat."""
+    rgba = image.convert("RGBA")
+    for ground in ((255, 255, 255), (0, 0, 0)):
+        flat = Image.new("RGB", rgba.size, ground)
+        flat.paste(rgba, mask=rgba.getchannel("A"))
+        if not blank(flat):
+            return False
+    return True

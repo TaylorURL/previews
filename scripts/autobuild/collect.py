@@ -42,6 +42,28 @@ def fetch(url, timeout=20, binary=False):
         return response.geturl(), data.decode(charset, errors="replace")
 
 
+
+def parse_srcset(value):
+    """[(url, descriptor)] from a srcset. A URL runs to the next space, so one
+    with commas in it (an image service's resize options) stays whole."""
+    out, i, n = [], 0, len(value)
+    while i < n:
+        while i < n and (value[i].isspace() or value[i] == ","):
+            i += 1
+        j = i
+        while j < n and not value[j].isspace():
+            j += 1
+        url, i = value[i:j], j
+        if url.endswith(","):
+            url, descriptor = url.rstrip(","), ""
+        else:
+            k = value.find(",", i)
+            k = n if k < 0 else k
+            descriptor, i = value[i:k].strip(), k + 1
+        if url:
+            out.append((url, descriptor))
+    return out
+
 class Page(HTMLParser):
     """The parts of one page a brand is made from."""
 
@@ -96,17 +118,15 @@ class Page(HTMLParser):
             src = a.get("src") or a.get("data-src") or a.get("data-lazy-src") or ""
             srcset = a.get("srcset") or a.get("data-srcset") or ""
             if srcset:
-                best = sorted(
-                    (c.strip().split(" ") for c in srcset.split(",") if c.strip()),
-                    key=lambda c: int(re.sub(r"\D", "", c[1]) or 0) if len(c) > 1 else 0,
-                )
+                best = sorted(parse_srcset(srcset), key=lambda c: float(re.sub(r"[^\d.]", "", c[1]) or 0))
                 if best:
                     src = best[-1][0]
             if src and not src.startswith("data:"):
                 self.images.append({
                     "src": urllib.parse.urljoin(self.url, src),
                     "alt": a.get("alt", ""),
-                    "hint": " ".join([a.get("class", ""), a.get("id", ""), src.rsplit("/", 1)[-1]]).lower(),
+                    "hint": " ".join([a.get("class", ""), a.get("id", ""), a.get("data-aid", ""), a.get("data-ux", ""),
+                                      src.rsplit("/", 1)[-1]]).lower(),
                     "header": self._header > 0,
                     "width": int(re.sub(r"\D", "", a.get("width", "")) or 0),
                 })
@@ -162,6 +182,32 @@ def _title(html_text):
     return " ".join(html.unescape(m.group(1)).split()) if m else ""
 
 
+# An SVG drawn inline in the page's header, or just inside anything named a
+# logo: many sites draw their logo this way and never as a file.
+HEADER = re.compile(r"<header\b[\s\S]*?</header>", re.I)
+LOGO_TAG = re.compile(r"<(?:a|div|span|figure)\b[^>]*(?:class|id)=[\"'][^\"']*logo[^\"']*[\"'][^>]*>", re.I)
+SVG = re.compile(r"<svg\b[\s\S]*?</svg>", re.I)
+
+
+def inline_svgs(text):
+    found = []
+    for tag in LOGO_TAG.finditer(text):
+        near = text.find("<svg", tag.end(), tag.end() + 400)
+        if near >= 0:
+            m = SVG.match(text, near)
+            if m:
+                found.append(m.group(0))
+    header = HEADER.search(text)
+    if header:
+        found.extend(SVG.findall(header.group(0))[:2])
+    # A real mark carries some drawing; an icon is a line or two.
+    out = []
+    for svg in found:
+        if len(svg) >= 600 and svg not in out:
+            out.append(svg)
+    return out[:3]
+
+
 def read_page(url):
     final, text = fetch(url)
     page = Page(final)
@@ -170,6 +216,7 @@ def read_page(url):
     except Exception:
         pass
     page.title = _title(text)
+    page.svgs = inline_svgs(text)
     return page
 
 

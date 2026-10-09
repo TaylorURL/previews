@@ -26,6 +26,13 @@ export default {
         line: token('line'),
         panel: token('panel'),
         ground: token('bg'),
+        // The header's ground and text, from the logo's own ground (site.js);
+        // white and the brand's ink when a brand file gives none.
+        head: 'var(--head, #ffffff)',
+        'head-ink': 'var(--head-ink, var(--ink))',
+        'head-soft': 'var(--head-soft, var(--muted, #5b6470))',
+        'head-line': 'var(--head-line, color-mix(in srgb, var(--ink) 10%, transparent))',
+        'head-hover': 'var(--head-hover, var(--primary))',
         star: '#f5b921',
         paper: '#f4efe4',
       },
