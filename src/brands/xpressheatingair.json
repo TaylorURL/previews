@@ -1,0 +1,552 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Xpress Heating & Air",
+  "shortName": "Xpress",
+  "summary": "A family-owned, licensed HVAC contractor in Seabrook serving the Greater Houston Area with repair, replacement and installation for homes and commercial properties.",
+  "phone": "(713) 922-9756",
+  "email": "bids@xpressac.com",
+  "address": "2515 E NASA Pkwy Suite 200",
+  "town": "Seabrook",
+  "state": "TX",
+  "zip": "77586",
+  "rating": 4.8,
+  "reviewCount": 23,
+  "hours": [
+    ["Mon – Fri", "9 AM – 5 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#1565C0",
+    "primaryDeep": "#0D1B2A",
+    "accent": "#E8000D",
+    "ink": "#0D1B2A",
+    "muted": "#4a5a6a",
+    "surface": "#eef4fb",
+    "line": "#d6e2ef",
+    "heading": "'Barlow Condensed', system-ui, sans-serif",
+    "body": "'Nunito Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Nunito+Sans:wght@400;500;600;700&display=swap",
+    "logo": "/brands/xpressheatingair/logo.webp",
+    "logoWidth": 200
+  },
+  "emergency": {
+    "title": "After-hours emergency service",
+    "text": "Call (713) 922-9756 for after-hours service Monday to Friday, 5 PM to 9 PM; an onsite trip fee of $129 is collected for the visit."
+  },
+  "sameDay": "Same-day response on service calls across the Greater Houston Area.",
+  "licenses": [
+    { "label": "Texas HVAC contractor", "number": "TACLB00098400E" }
+  ],
+  "financing": {
+    "text": "Financing through Wisetack and Synchrony, with 0% interest plans for qualified customers and a soft credit check to pre-qualify."
+  },
+  "hero": {
+    "eyebrow": "Heating and cooling in the Greater Houston Area",
+    "title": "Texas heat doesn't wait —",
+    "titleAccent": "and neither do we.",
+    "lead": "Fast, reliable HVAC service at unbeatable prices. From our family to yours.",
+    "image": "/brands/xpressheatingair/hero",
+    "imageAlt": "Outdoor air conditioning condensing units lined up outside a building"
+  },
+  "groups": [
+    {
+      "slug": "cooling",
+      "title": "Cooling",
+      "icon": "snowflake",
+      "summary": "Air conditioning repair, replacement and installation for Texas homes and businesses.",
+      "intro": "From central air conditioning to ductless mini-splits, we install and service a full range of cooling solutions for Texas homes and businesses. Our team helps you choose the right system for your space, budget, and efficiency goals — then installs it right the first time.",
+      "image": "/brands/xpressheatingair/cooling",
+      "imageAlt": "A residential air conditioning condenser outside a home",
+      "services": [
+        {
+          "slug": "ac-repair-replacement",
+          "title": "AC Repair / Replacement",
+          "icon": "snowflake",
+          "text": "Fast, reliable air conditioning repair and full system replacements at unbeatable prices. We diagnose the problem and fix it right the first time.",
+          "points": [
+            "All major brands, all sizes",
+            "High SEER energy-efficient units",
+            "Variable speed compressors",
+            "Professional installation and warranty"
+          ]
+        },
+        {
+          "slug": "central-ac-units",
+          "title": "Central AC Units",
+          "icon": "home",
+          "text": "Full system replacements and new installs of central air conditioning systems, sized to your home's cooling load.",
+          "points": [
+            "Smart thermostat compatible",
+            "Indoor air handler replacements compatible with all major systems",
+            "All-in-one systems for mobile homes and space-constrained installs"
+          ]
+        },
+        {
+          "slug": "ductless-mini-split",
+          "title": "Ductless Mini Split",
+          "icon": "wind",
+          "text": "Wall-mounted head units deliver quiet, efficient cooling directly to individual rooms — perfect for additions, garages, or homes without existing ductwork."
+        },
+        {
+          "slug": "residential-condenser",
+          "title": "Residential Condenser",
+          "icon": "fan",
+          "text": "High-efficiency outdoor condensing units built for Texas heat. We install and service all major brands with proper sizing for your home's cooling load."
+        },
+        {
+          "slug": "evaporator-coil",
+          "title": "Evaporator Coil",
+          "icon": "waves",
+          "text": "The evaporator coil absorbs heat from indoor air to cool your home. We supply and install quality A-coils and cased coils matched to your system for peak efficiency."
+        },
+        {
+          "slug": "fan-motor-repair",
+          "title": "Fan Motor Repair / Replacement",
+          "icon": "fan",
+          "text": "Expert diagnosis and repair of fan motor issues to restore proper airflow and system efficiency. Fast turnaround so your comfort isn't compromised."
+        }
+      ]
+    },
+    {
+      "slug": "heating",
+      "title": "Heating",
+      "icon": "flame",
+      "summary": "Gas furnaces, heat pumps and electric heat for Texas winters.",
+      "intro": "While Texas winters are mild compared to the north, a reliable heating system is still essential. We install and service gas furnaces, heat pumps, and electric heating systems. Our experts will help you find the most efficient heating solution for your home's size and your family's comfort needs.",
+      "image": "/brands/xpressheatingair/heating",
+      "imageAlt": "A residential gas furnace installed in a utility space",
+      "services": [
+        {
+          "slug": "heater-repair-replacement",
+          "title": "Heater Repair / Replacement",
+          "icon": "flame",
+          "text": "Keep your home warm through Texas winters with our professional heating services. From furnace repairs to full system replacements, we've got you covered.",
+          "points": [
+            "High-efficiency AFUE ratings",
+            "Zoned heating options",
+            "Emergency heating service"
+          ]
+        },
+        {
+          "slug": "gas-furnace",
+          "title": "Gas Furnace",
+          "icon": "heater",
+          "text": "High-efficiency gas furnaces keep your home warm even on the coldest Texas nights. We install and service all major brands with proper sizing for your home's heating load."
+        },
+        {
+          "slug": "heat-pump",
+          "title": "Heat Pump Repair / Replacement",
+          "icon": "thermometer",
+          "text": "Efficient heat pump solutions for year-round comfort — cooling in summer, heating in winter. We install and service all major heat pump brands.",
+          "points": ["Dual-fuel systems available"]
+        },
+        {
+          "slug": "electric-heat-kit",
+          "title": "Electric Heat Kit",
+          "icon": "zap",
+          "text": "Electric heat kits (heat strips) install directly into your air handler to provide supplemental or primary electric heating — ideal for homes without gas lines."
+        }
+      ]
+    },
+    {
+      "slug": "ductwork",
+      "title": "Ductwork",
+      "icon": "air-vent",
+      "summary": "R-8 flexible duct and custom sheet metal, repaired, sealed and replaced.",
+      "intro": "The backbone of every HVAC system. Properly sized and sealed ductwork keeps your home comfortable and your energy bills low — and Xpress installs it right the first time. Our team will assess your home or building and recommend the best ducting solution for your system, budget, and layout — no guesswork, just honest advice.",
+      "image": "/brands/xpressheatingair/ductwork",
+      "imageAlt": "Sheet metal ventilation ducts branching out under a steel roof",
+      "services": [
+        {
+          "slug": "duct-repair-replacement",
+          "title": "Duct Repair / Replacement",
+          "icon": "wrench",
+          "text": "Seal and restore your ductwork for improved air quality and energy efficiency throughout your home. Leaky ducts waste energy — we fix them fast."
+        },
+        {
+          "slug": "r8-flexible-duct",
+          "title": "R-8 Flexible Duct",
+          "icon": "air-vent",
+          "text": "R-8 flexible duct is the most widely used residential ducting solution in the Greater Houston area. Its pre-insulated, double-layer construction meets and exceeds Texas energy code requirements, while its flexibility makes it ideal for navigating the tight attic spaces and complex framing found in most Houston-area homes.",
+          "points": [
+            "R-8 insulation rating — exceeds Texas energy code requirements",
+            "Flexible routing around framing, joists, and attic obstacles",
+            "Pre-insulated from the factory — no extra wrap needed",
+            "Lightweight and fast to install — lower labor cost",
+            "Ideal for residential attic and crawlspace runs",
+            "Available in standard diameters from 4\" to 20\"",
+            "Better thermal performance than older R-6 flex duct, reducing heat gain in hot attics"
+          ]
+        },
+        {
+          "slug": "sheet-metal-duct",
+          "title": "Sheet Metal Ductwork",
+          "icon": "building",
+          "text": "Custom fabricated from galvanized steel to the exact dimensions of your system, sheet metal maintains its shape permanently, delivering consistent, unrestricted airflow from the air handler to every register in the building. When properly sealed with mastic or foil tape, sheet metal ducts are virtually airtight.",
+          "points": [
+            "Custom fabricated to exact dimensions for your system",
+            "Maximum airflow efficiency — no compression or sag",
+            "Superior air sealing with mastic or foil tape",
+            "Extremely long lifespan — outlasts the HVAC equipment",
+            "Ideal for long straight runs and high-static systems",
+            "Required for many commercial and new construction builds"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "air-quality",
+      "title": "Air Quality Control",
+      "icon": "filter",
+      "summary": "Whole-home purifiers, UV light systems, HEPA filtration and humidity control.",
+      "intro": "Indoor air quality is critical for your family's health. Texas homes can suffer from dust, allergens, humidity issues, and more. We offer a complete range of air quality products including whole-home air purifiers, UV light systems, humidifiers, and high-efficiency filtration.",
+      "image": "/brands/xpressheatingair/air-quality",
+      "imageAlt": "A UV-C sanitization lamp of the kind fitted inside an HVAC system",
+      "services": [
+        {
+          "slug": "uv-light-sanitization",
+          "title": "UV Light Sanitization",
+          "icon": "shield",
+          "text": "UV-C light systems installed inside your HVAC unit kill bacteria, mold, and viruses as air circulates through your system — providing continuous, chemical-free air sanitization."
+        },
+        {
+          "slug": "hepa-filtration",
+          "title": "HEPA Filtration",
+          "icon": "filter",
+          "text": "True HEPA filters capture 99.97% of airborne particles as small as 0.3 microns — including dust, pollen, pet dander, and smoke — for dramatically cleaner indoor air."
+        },
+        {
+          "slug": "whole-home-purifier",
+          "title": "Whole-Home Air Purifier",
+          "icon": "wind",
+          "text": "Whole-home air purification systems integrate directly into your existing HVAC ductwork to clean every room in your house simultaneously, delivering cleaner air at every vent."
+        },
+        {
+          "slug": "humidity-control",
+          "title": "Humidity Control",
+          "icon": "droplets",
+          "text": "Humidifiers and humidity control systems that take the edge off Houston's damp air and keep indoor comfort steady year round."
+        }
+      ]
+    },
+    {
+      "slug": "thermostats",
+      "title": "Thermostats",
+      "icon": "thermometer",
+      "summary": "Smart and programmable thermostats, installed and set up.",
+      "intro": "Take control of your home comfort with intelligent thermostat technology. Modern smart thermostats can save you up to 23% on your energy bills by learning your schedule and preferences automatically. We install and program a full range of thermostats — from basic programmable models to advanced Wi-Fi smart thermostats that you can control from anywhere.",
+      "image": "/brands/xpressheatingair/thermostats",
+      "imageAlt": "A smart thermostat mounted on an interior wall",
+      "services": [
+        {
+          "slug": "ecobee-smart-thermostat",
+          "title": "Ecobee Smart Thermostat",
+          "icon": "gauge",
+          "text": "The Ecobee Smart Thermostat Premium features built-in air quality monitoring, a room sensor for balanced comfort, and Alexa built-in — all in a sleek, modern design."
+        },
+        {
+          "slug": "google-nest-thermostat",
+          "title": "Google Nest Thermostat",
+          "icon": "thermometer",
+          "text": "The Google Nest Thermostat learns your schedule, programs itself, and can be controlled from anywhere with the Google Home app — saving energy without sacrificing comfort."
+        },
+        {
+          "slug": "honeywell-home-thermostat",
+          "title": "Honeywell Home Thermostat",
+          "icon": "settings",
+          "text": "Honeywell Home smart thermostats offer a color touchscreen display, 7-day programmable scheduling, and Wi-Fi connectivity — a trusted name in home comfort for over 100 years.",
+          "points": [
+            "Wi-Fi enabled smart thermostats",
+            "Programmable 7-day scheduling",
+            "Remote control via smartphone",
+            "Energy usage reporting",
+            "Compatible with all major HVAC brands"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Fall and winter heating service",
+    "title": "Book your heating service before the first cold snap.",
+    "text": "A full heating tune-up covering combustion and venting, electrical and controls, airflow and a temperature-rise check — most take 60 to 90 minutes.",
+    "price": "$79",
+    "priceNote": "normally $169",
+    "image": "/brands/xpressheatingair/promo",
+    "imageAlt": "A technician cleaning an air conditioning unit"
+  },
+  "plan": {
+    "name": "Seasonal System Service",
+    "intro": "Seasonal maintenance packages to keep your HVAC running safely and efficiently all year long. Covers gas furnaces and heat pumps, and all major brands are serviced.",
+    "tiers": [
+      {
+        "name": "Spring AC Tune-Up",
+        "price": "$129",
+        "period": "normally $249",
+        "features": [
+          "Clean interior of condensing unit, remove debris",
+          "Clean outdoor condenser coil fins",
+          "Inspect & balance condenser fan blade",
+          "Test condenser fan motor amperage",
+          "Inspect compressor amperage vs. nameplate",
+          "Test capacitor performance to rating",
+          "Check & tighten all electrical connections",
+          "Inspect & clean blower assembly and wheel",
+          "Clean evaporator coil",
+          "Flush condensate drain with nitrogen",
+          "Install algaecide tablets in drain pan",
+          "Check refrigerant charge — superheat & subcooling",
+          "Measure temperature drop across indoor coil",
+          "Visual inspection for refrigerant leaks",
+          "Check, clean & test thermostat operation"
+        ]
+      },
+      {
+        "name": "Fall / Winter Heating Service",
+        "price": "$79",
+        "period": "normally $169",
+        "features": [
+          "Confirm furnace fires off safely at peak efficiency",
+          "Inspect heat exchanger integrity — verify no combustion gas crossover",
+          "Confirm all combustion gases venting properly outdoors",
+          "If condensing furnace: inspect condensate drain, trap & inlet screen",
+          "Inspect & tighten all high and low voltage heating circuits",
+          "Test igniter and flame sensor",
+          "Verify draft switch and pressure switch operation",
+          "Calibrate thermostat — verify accurate temperature control",
+          "Lubricate all moving parts to reduce wear",
+          "Assess ductwork for leaks or blockages",
+          "Measure temperature rise across heating assembly — confirm vs. manufacturer specs",
+          "Run full system test for optimal performance"
+        ]
+      }
+    ],
+    "note": "Refrigerant top-off is quoted separately if needed. Most visits take 60 to 90 minutes. Prices are per system. The AC tune-up is recommended before summer and the heating service before the first cold snap."
+  },
+  "about": {
+    "eyebrow": "Who we are",
+    "title": "A family you can trust.",
+    "text": [
+      "At Xpress Heating & Air, we're not just a business — we're a family. Everything we do is rooted in the same values we live by at home: honesty, hard work, and genuine care for the people around us.",
+      "We started Xpress Heating & Air because we believed the Greater Houston Area deserved an HVAC company that truly puts clients first. Not one that rushes through jobs or upsells unnecessary services — but one that listens, communicates clearly, and delivers real value every single time.",
+      "At Xpress Heating & Air, we understand just how vital a reliable AC is, especially here in Texas. That's why we're committed to providing you with the best value at an unbeatable price. Whether your project is big or small, you can count on Xpress Heating & Air to handle it all. From our family to yours, thank you for trusting us with your next AC project."
+    ],
+    "image": "/brands/xpressheatingair/about",
+    "imageAlt": "The Xpress Heating & Air family, a family-owned HVAC company serving Houston",
+    "values": [
+      {
+        "title": "Family first",
+        "text": "We treat every home we enter the way we'd want our own home treated — with care, respect, and attention to detail."
+      },
+      {
+        "title": "Client-centered service",
+        "text": "Your comfort and satisfaction come before everything else. We take the time to understand your needs and deliver solutions that truly fit your home and budget."
+      },
+      {
+        "title": "Honest and transparent",
+        "text": "No hidden fees, no upsells you don't need. We give you straight answers and fair pricing — because that's how we'd want to be treated."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How often should I service my AC unit?",
+      "a": "We recommend servicing your AC unit at least once a year, ideally in the spring before the cooling season begins. Regular maintenance helps prevent breakdowns, improves efficiency, and extends the life of your system."
+    },
+    {
+      "q": "What are signs that my AC needs repair?",
+      "a": "Common signs include: warm air blowing from vents, unusual noises (grinding, squealing), high humidity indoors, frequent cycling on/off, water leaks around the unit, and unusually high energy bills."
+    },
+    {
+      "q": "How long does an AC unit typically last?",
+      "a": "A well-maintained central air conditioning system typically lasts 15-20 years. Regular maintenance can significantly extend this lifespan, while neglect can shorten it considerably."
+    },
+    {
+      "q": "What size AC unit do I need?",
+      "a": "The right size depends on your home's square footage, insulation, ceiling height, and local climate. An undersized unit will run constantly without cooling properly, while an oversized unit will short-cycle. Our technicians will perform a proper load calculation."
+    },
+    {
+      "q": "Do you offer financing options?",
+      "a": "Yes! We work with several financing partners to help make your HVAC investment more manageable. Contact us to learn about current financing options and promotional rates."
+    },
+    {
+      "q": "What areas do you serve?",
+      "a": "We serve the Greater Houston Area including Seabrook, League City, Kemah, Friendswood, Pasadena, Pearland, and surrounding communities."
+    },
+    {
+      "q": "How quickly can you respond to an emergency?",
+      "a": "We understand that HVAC emergencies don't wait for business hours. Contact us immediately at 713-922-9756 and we'll do our best to get to you as quickly as possible."
+    },
+    {
+      "q": "What brands do you install and service?",
+      "a": "We work with all major HVAC brands including Goodman, Carrier, Trane, Lennox, and more. We particularly recommend Goodman systems for their excellent warranty coverage and reliability."
+    }
+  ],
+  "serviceArea": [
+    "Seabrook",
+    "League City",
+    "Friendswood",
+    "Pearland",
+    "Pasadena",
+    "La Porte",
+    "Deer Park",
+    "Clear Lake",
+    "Webster",
+    "Nassau Bay",
+    "Kemah",
+    "Galveston",
+    "Houston",
+    "Baytown",
+    "Dickinson",
+    "Alvin",
+    "Manvel"
+  ],
+  "facts": [
+    {
+      "heading": "License and insurance",
+      "text": "Licensed and insured in Texas under HVAC contractor license TACLB00098400E. A TACLB contractor license is not the same as a technician license — the difference is worth checking before you hire anyone."
+    },
+    {
+      "heading": "Residential and commercial",
+      "text": "Complete HVAC system overhauls and new installations for residential and commercial properties. Sheet metal ductwork is fabricated during the build phase for new construction and is required by code for many commercial and light industrial systems. Send bid requests to bids@xpressac.com."
+    },
+    {
+      "heading": "Brands we install",
+      "items": [
+        "Goodman — our primary recommended brand for residential installations",
+        "Carrier — premium systems with advanced technology and high efficiency ratings",
+        "Lennox — high-efficiency systems with innovative technology",
+        "Trane and other major manufacturers on request"
+      ]
+    },
+    {
+      "heading": "Trip fees",
+      "items": [
+        "Business hours, Monday to Friday 9 AM to 5 PM — $79",
+        "Emergency after-hours, Monday to Friday 5 PM to 9 PM — $129",
+        "If an inspection confirms a warrantable concern, 100% of the trip fee is posted as an account credit; otherwise 50% is posted as a credit toward future Xpress service or installation for one year"
+      ]
+    },
+    {
+      "heading": "Standard warranty",
+      "text": "One year of materials and labor coverage, unless otherwise stated in the customer proposal or estimate. Warranty requests get a response within 72 hours, and Xpress reserves a 30-day cure period per incident. Coverage provided by manufacturers or suppliers outside the standard warranty is remedied by them."
+    },
+    {
+      "heading": "Financing",
+      "items": [
+        "Wisetack — 0% interest on 3, 6, 12 and 24-month plans for qualified customers, soft credit check with no impact to your score, loan amounts from $500 to $25,000",
+        "Synchrony — 0% interest promotional financing on 6, 12, 24 and 60-month plans for qualified customers",
+        "Synchrony promotional financing is coming soon, with a decision in minutes once it opens",
+        "Both are subject to credit approval. See terms for details."
+      ]
+    },
+    {
+      "heading": "Payment methods",
+      "items": [
+        "Cash, personal or company check, cashier's check",
+        "Credit and debit card — a 2.75% to 3.75% processing fee may be charged at our discretion",
+        "Zelle and Venmo",
+        "Financing through Wisetack or Synchrony"
+      ]
+    },
+    {
+      "heading": "Reviews and referrals",
+      "items": [
+        "$25 gift card for a 5-star review, up to $50 in gift cards across platforms",
+        "Reviews count on Google and Facebook, and only 5-star ratings qualify for the gift card",
+        "Refer a friend and earn $100 when they complete a system repair, or up to $350 on a new unit install",
+        "Your friend gets an exclusive 50% off retail pricing offer on a new unit install"
+      ]
+    },
+    {
+      "heading": "How a project runs",
+      "items": [
+        "Xpress obtains all permits necessary for the work at its own expense",
+        "Work days begin between 8:30 AM and 12:30 PM unless otherwise communicated",
+        "All change orders are in writing and signed or approved by the owner",
+        "Progress is communicated at the end of each work day by text or email",
+        "The premises are left in broom clean condition",
+        "A change order extends the project deadline by at least one day, plus any delay in material availability",
+        "Mid-point and final inspections are carried out at Xpress's discretion, and any corrections they call for are made",
+        "One final punch list is compiled by the customer; further punch lists cost extra and sit outside final pay",
+        "All subcontractor communication goes through Xpress rather than directly to the subcontractor",
+        "Whoever signs or approves the work must be the property owner or someone authorized to change the property",
+        "An online approval through the software Xpress uses is as binding as a written signature"
+      ]
+    },
+    {
+      "heading": "Request a bid",
+      "text": "The Xpress Bid form asks about service type, number of units, home type and square footage, where the indoor unit sits, system age, ductwork condition, brand preference, financing interest and timing, so the team can come back to you with a quote."
+    },
+    {
+      "heading": "Careers",
+      "text": "Xpress is hiring HVAC technicians, install techs and apprentices across the Greater Houston Area. Applications are reviewed within 2 to 3 business days. The open roles are HVAC Technician, Install Technician and Apprentice / Helper, hiring out of League City, and the careers inbox is office@xpressac.com."
+    },
+    {
+      "heading": "The family behind Xpress",
+      "text": "Craig is the owner, and Sam and Emily are the team members customers deal with on service calls and installs. Calling Xpress reaches the family rather than a call center."
+    },
+    {
+      "heading": "Free estimates",
+      "text": "An Xpress Bid is a free estimate. The team reviews the request and calls or texts you with an estimated cost, typically within the same business day."
+    },
+    {
+      "heading": "What a warranty visit covers",
+      "items": [
+        "Primary components under review — compressor, condenser, furnace primary components, evaporator and air-handler primary components required for operation, subject to inspection and your written agreement",
+        "Secondary components not covered — contactors, capacitors, refrigerant recharges, drain pans, overflow switches, thermostats and similar auxiliary parts",
+        "Warranty requests are reserved for work Xpress completed; work another company did is handled as a new service request",
+        "Work performed by third-party contractors voids the warranty, and named or unnamed storms, damage, vandalism and other non-manufacture defects are excluded",
+        "A maintenance or tune-up visit is handled as a service request rather than a warranty claim"
+      ]
+    },
+    {
+      "heading": "Payment and billing",
+      "items": [
+        "Change orders are paid in full on approval, and work on them starts once payment is received",
+        "Xpress may apply up to a 48-hour payment processing period for funds and material verification, communicated by phone, text or email",
+        "A missed scheduled payment pauses all work, including correction work, until payment is received",
+        "Lien releases or waivers are provided on request once full and final payment is received",
+        "Unused or partially used materials bought for the job may be recovered by Xpress"
+      ]
+    },
+    {
+      "heading": "Disputes",
+      "text": "Disputes are resolved by binding arbitration under the rules of the American Arbitration Association, each side carries its own attorney fees unless a judge rules otherwise, and a mediator or arbiter brought in by the owner is paid for by the owner."
+    },
+    {
+      "heading": "Cancellation",
+      "text": "Letting Xpress begin the proposed service before the end of the three business day window forfeits the right to cancel the agreement, and the full amount in the agreement is owed on completion."
+    },
+    {
+      "heading": "Text messages",
+      "text": "Transactional and marketing text messages are sent only with your consent at the number you provide, message frequency varies, and replying STOP opts you out."
+    },
+    {
+      "heading": "Why ductwork matters",
+      "items": [
+        "Up to 30% of energy is lost through leaky or uninsulated ducts",
+        "Proper sizing ensures balanced airflow and consistent comfort room to room",
+        "Sealed ducts improve indoor air quality by keeping dust and allergens out"
+      ]
+    },
+    {
+      "heading": "Why seasonal maintenance matters",
+      "items": [
+        "Regular tune-ups can add years to an HVAC system's lifespan",
+        "A clean, calibrated system runs more efficiently, often cutting energy costs by 10 to 15%",
+        "Catching small issues before summer heat or winter cold avoids costly emergency calls",
+        "Many manufacturer warranties require documented annual maintenance to stay valid"
+      ]
+    },
+    {
+      "heading": "Follow along",
+      "items": [
+        "Facebook: facebook.com/xpressheatingandair",
+        "Subscribe for seasonal tips, exclusive promotions and HVAC articles — no spam, ever"
+      ]
+    }
+  ]
+}
