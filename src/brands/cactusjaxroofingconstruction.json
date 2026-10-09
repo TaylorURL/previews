@@ -1,0 +1,514 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "Cactus Jax Roofing & Construction",
+  "shortName": "Cactus Jax",
+  "phone": "(281) 694-4133",
+  "email": "sales@cactusjaxroofing.com",
+  "address": "1660 S Dairy Ashford Rd",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77077",
+  "rating": 5.0,
+  "reviewCount": 67,
+  "license": "Licensed and insured",
+  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "brand": {
+    "primary": "#4e8a1d",
+    "primaryDeep": "#2d5410",
+    "accent": "#8ec63f",
+    "ink": "#15181a",
+    "surface": "#f3f4f0",
+    "heading": "'Oswald', 'Arial Narrow', sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap",
+    "logo": "/brands/cactusjaxroofingconstruction/logo.webp",
+    "logoWidth": 170
+  },
+  "hero": {
+    "eyebrow": "Woman-owned Houston roofing contractor",
+    "title": "Quality craftsmanship",
+    "titleAccent": "on every roof we raise.",
+    "lead": "A woman-owned, family-operated general contractor in Houston, backed by nearly two decades of roofing experience. Free estimates within 24 hours, and a free inspection before anything is quoted.",
+    "image": "/brands/cactusjaxroofingconstruction/hero",
+    "imageAlt": "An aerial view of a Houston home with a new gray shingle roof"
+  },
+  "promises": ["Free inspections and 24-hour estimates", "10-year workmanship warranty", "Financing through Enhancify", "Licensed and insured"],
+  "services": [
+    {
+      "slug": "roof-repair",
+      "group": "residential",
+      "title": "Roof Repair",
+      "short": "Minor leaks through major storm damage, inspected first.",
+      "text": "Our team addresses all roof repair solutions you need, from minor leaks to major storm damage, starting with a thorough inspection.",
+      "image": "/brands/cactusjaxroofingconstruction/repair",
+      "imageAlt": "A roofer lifting damaged shingles to reach a leak",
+      "body": [
+        "We start by doing a thorough inspection and applying excellent repairs to make sure your roof is in good condition. A professional roof inspection is what tells us whether a repair is the right answer: isolated leaks and damaged shingles usually call for repairs, while widespread damage, multiple leaks or a roof aging past 20 years typically warrants replacement.",
+        "Most repairs are completed in hours. Repairs carry a 1-year warranty.",
+        "Residential roof repairs in Houston run $3 to $7 per square foot, depending on materials and the severity of the damage; roof type, slope and accessibility move the number too. We offer same-day residential roof repairs and 24/7 emergency availability, and we repair storm and wind damage, broken shingles, leaks, and flashing around chimneys, vents and skylights."
+      ],
+      "points": ["Thorough inspection before any repair", "Isolated leaks and damaged shingles", "Flashing and vent repairs around chimneys and skylights", "Same-day residential repairs, 24/7 emergency availability", "Honest assessment of repair against replacement", "Repairs run $3 to $7 per square foot", "1-year warranty on repairs"],
+      "faqs": [
+        { "q": "How do I know if I need a roof repair or full replacement?", "a": "A professional roof inspection is essential to determine the right solution. Minor issues like isolated leaks or damaged shingles often require repairs, while widespread damage, multiple leaks, aging beyond 20 years, or extensive storm damage typically warrant replacement." },
+        { "q": "How long does a repair take?", "a": "Repairs are often completed in hours. We communicate timeline expectations clearly throughout your project." }
+      ]
+    },
+    {
+      "slug": "roof-replacement",
+      "group": "residential",
+      "title": "Roof Replacement",
+      "short": "A full replacement in the material that suits your home.",
+      "text": "We offer full roof replacement services for your home or business, using quality materials and advanced methods for long-term protection and appeal.",
+      "image": "/brands/cactusjaxroofingconstruction/replacement",
+      "imageAlt": "A roof mid-replacement with new underlayment down and the crew working",
+      "materials": true,
+      "body": [
+        "Most residential roof replacements take 1 to 3 days, depending on size, complexity and weather. We coordinate carefully to minimize disruption to your daily routine and communicate timeline expectations clearly from start to final inspection.",
+        "Average roof replacement in Houston costs around $12,000, though prices vary based on size, materials, complexity and the extent of the damage; metal and tile roofs average $20,000. We provide free, detailed estimates within 24 hours, and our transparent pricing includes materials, labor, permits and cleanup."
+      ],
+      "points": ["Free detailed estimate within 24 hours", "1 to 3 days on most homes", "Asphalt, metal, tile and synthetic options", "10-year workmanship warranty", "Manufacturer product warranties up to 30 years"],
+      "faqs": [
+        { "q": "How long does a typical roof installation take?", "a": "Most residential roof replacements take 1-3 days, depending on size, complexity, and weather conditions. We work efficiently while maintaining quality standards." },
+        { "q": "What warranties cover my new roof?", "a": "We stand behind our work with a 10-year workmanship warranty on installations and a 1-year warranty on repairs. Manufacturer product warranties extend up to 30 years, depending on the materials selected." }
+      ]
+    },
+    {
+      "slug": "roof-inspections",
+      "group": "residential",
+      "title": "Roof Inspections",
+      "short": "Free 24-hour inspections, including drone inspections.",
+      "text": "Our extensive roof inspection services identify potential issues before they become severe problems, with a full assessment of the roof's condition.",
+      "image": "/brands/cactusjaxroofingconstruction/inspection",
+      "imageAlt": "An inspector marking hail hits on a shingle roof",
+      "body": [
+        "Annual inspections are recommended, especially after severe storms. Regular inspections identify minor issues before they become expensive problems, extend roof lifespan and maintain warranty coverage.",
+        "We offer free drone inspections, which give a comprehensive assessment without walking the roof surface. Our free 24-hour inspections provide honest assessments to help you make informed decisions about your home's protection.",
+        "An inspection covers the surface, for missing, cracked or curling shingles, discoloration, algae growth and granule loss; leak detection; the gutters and drainage; the flashing and seals around chimneys, vents and skylights; and the structural integrity of the framework. Every finding is documented with photos and detailed notes, and we never recommend a repair you do not need.",
+        "Beyond the annual inspection, Texas homeowners should schedule one at least twice a year, in spring and fall, with an additional inspection after any major storm."
+      ],
+      "points": ["Free inspections within 24 hours", "Free drone inspections", "Twice a year in spring and fall, and after any storm", "Surface, leaks, gutters, flashing and structure", "Findings documented with photos and notes", "Honest assessment, repair or replacement", "Preventative maintenance programs"],
+      "faqs": [
+        { "q": "How often should I have my roof inspected?", "a": "Annual inspections are recommended, especially after severe storms. Regular inspections identify minor issues before they become expensive problems, extend roof lifespan, and maintain warranty coverage." },
+        { "q": "How quickly can you provide a roofing estimate?", "a": "We provide free estimates within 24 hours. Contact us to schedule your inspection and our team will assess your roof thoroughly, answer questions, and deliver a detailed, transparent estimate." }
+      ]
+    },
+    {
+      "slug": "asphalt-shingles",
+      "group": "residential",
+      "title": "Asphalt Shingle Roofing",
+      "short": "The most affordable roof for Houston's climate.",
+      "text": "Asphalt shingle installation, the most affordable of the premium roofing materials we install, matched to your home's style and budget.",
+      "image": "/brands/cactusjaxroofingconstruction/shingles",
+      "imageAlt": "A roofer nailing down a new course of asphalt shingles",
+      "body": [
+        "Houston's heat, humidity and storm activity demand durable materials. Asphalt shingles are the most affordable of the premium materials we install, and our experience helps us recommend the right line for your budget, home style and long-term performance needs.",
+        "We are affiliated with industry-leading manufacturers, which gives us access to premium materials, better warranties and competitive pricing."
+      ],
+      "points": ["Premium asphalt shingle lines", "Matched to Houston's heat, humidity and storms", "Manufacturer warranties up to 30 years", "10-year workmanship warranty"]
+    },
+    {
+      "slug": "metal-roofing",
+      "group": "residential",
+      "title": "Metal Roofing",
+      "short": "Longevity and energy efficiency, for homes and businesses.",
+      "text": "Metal roofing installed for longevity and energy efficiency, including standing seam systems for homes and commercial buildings.",
+      "body": [
+        "Metal is the material we recommend when longevity and energy efficiency matter most. Metal and tile roofs average $20,000 in the Houston market, and we provide a free, detailed estimate within 24 hours so you can see the number before you decide.",
+        "We install standing seam metal roofing with hidden fasteners, corrugated metal roofing and metal roofing shingles in steel or aluminum. With proper installation, many metal roofs last 40 to 70 years.",
+        "We also install tile and synthetic materials such as Brava and Euroshield, and we are a certified Euroshield installer."
+      ],
+      "points": ["Standing seam metal roofing with hidden fasteners", "Corrugated metal roofing", "Metal roofing shingles in steel or aluminum", "Many metal roofs last 40 to 70 years", "Residential and commercial systems", "Free detailed estimate within 24 hours"]
+    },
+    {
+      "slug": "slate-roofing",
+      "group": "residential",
+      "title": "Slate Roofing",
+      "short": "Natural and synthetic slate, installed, replaced and repaired.",
+      "text": "Slate roofing installation, replacement and repair, in natural stone or synthetic slate, for homeowners who want exceptional longevity and timeless curb appeal.",
+      "body": [
+        "Natural slate resists fire, moisture, insects and severe weather while holding its appearance for generations, and routinely lasts 75 to 100 years or longer with proper installation and maintenance. The initial investment is higher than asphalt shingles, so the extended lifespan is what makes it cost-effective over the long term.",
+        "Every installation begins with a thorough roof evaluation to confirm your home's structure can support the system, because Houston's humidity and storm exposure put the flashing and underlayment details at the center of how a slate roof performs. Synthetic slate gives many of the same visual benefits at less weight and lower installation cost, and we will tell you which of the two suits your property.",
+        "We also replace cracked or broken slate tiles, repair flashing, address leaks and restore damaged sections. Slate requires specialized techniques that differ from standard roofing systems, which is why the installation method, flashing detail and structural requirement all get settled before the first tile goes down."
+      ],
+      "points": ["New natural slate roof installation", "Synthetic slate, lighter and lower cost", "Cracked and broken tile replacement", "Structural evaluation before installation", "75 to 100 years with proper maintenance", "Resists fire, mold, rot and UV exposure"]
+    },
+    {
+      "slug": "storm-damage-repair",
+      "group": "storm",
+      "title": "Storm Damage Repair",
+      "short": "Missing shingles through structural damage, restored.",
+      "text": "When a storm hits it can cause significant damage, from missing shingles to structural damage. Our team restores your roof's integrity and protects the property from further harm.",
+      "image": "/brands/cactusjaxroofingconstruction/storm",
+      "imageAlt": "A fallen tree resting across the roof of a house after a storm",
+      "claim": true,
+      "body": [
+        "We guide homeowners through the entire insurance process, from documentation to claim submission. Our team inspects the damage thoroughly, provides detailed reports and communicates directly with adjusters when needed.",
+        "With 20+ years of experience handling insurance claims, we help maximize your coverage and minimize out-of-pocket costs for storm damage restoration."
+      ],
+      "points": ["Thorough storm damage inspection", "Detailed damage reports for your insurer", "Direct communication with adjusters", "Temporary solutions to stop further damage", "Full restoration once the claim is approved"],
+      "faqs": [
+        { "q": "Do you help with insurance claims for roof damage?", "a": "Absolutely. We guide homeowners through the entire insurance process, from documentation to claim submission. Our team inspects damage thoroughly, provides detailed reports, and communicates directly with adjusters when needed." }
+      ]
+    },
+    {
+      "slug": "emergency-roof-repair",
+      "group": "storm",
+      "title": "Emergency Roof Repair",
+      "short": "Same-day for daytime calls, next morning for night calls.",
+      "text": "Storm damage, sudden leaks and urgent repairs cannot wait. We respond to roofing emergencies as quickly as possible.",
+      "image": "/brands/cactusjaxroofingconstruction/emergency",
+      "imageAlt": "A roofer prying up storm-damaged shingles during an urgent repair",
+      "body": [
+        "We respond same-day for daytime calls and the next morning for nighttime emergencies. Our rapid response team assesses damage immediately and implements temporary solutions to prevent further damage while planning permanent repairs.",
+        "We have 24/7 emergency availability. The work covers storm and wind damage, leak detection and water intrusion, flashing, seam and penetration repairs, and emergency tarping: secure, professional temporary protection that stops the water until the permanent repair can be done.",
+        "Call (281) 694-4133 and tell us what you are seeing. We will tell you what to do until we get there."
+      ],
+      "points": ["24/7 emergency availability", "Same-day response to daytime calls", "Next morning for nighttime emergencies", "Emergency tarping and temporary protection", "Leak detection and water intrusion repair", "Permanent repair planned from the same visit"],
+      "faqs": [
+        { "q": "Do you provide emergency roof repair services?", "a": "Yes. We respond to roofing emergencies as quickly as possible, same-day for daytime calls and next morning for nighttime emergencies." }
+      ]
+    },
+    {
+      "slug": "commercial-roofing",
+      "group": "commercial",
+      "title": "Commercial Roofing",
+      "short": "TPO, PVC, EPDM, modified bitumen, BUR and metal.",
+      "text": "We specialize in commercial and multifamily roofing: TPO, PVC, EPDM, modified bitumen, BUR, metal roofing and protective coatings.",
+      "image": "/brands/cactusjaxroofingconstruction/commercial",
+      "imageAlt": "An aerial view of a multifamily property with a newly coated white roof",
+      "body": [
+        "Our expertise extends to multi-family properties, steep slope, low slope and historical buildings. We minimize business disruption while delivering durable, code-compliant commercial roofing solutions with professional project management.",
+        "Our operational experience, supplier relationships and scalable project coordination help ensure efficient execution across commercial and multifamily projects."
+      ],
+      "points": ["TPO, PVC, EPDM, modified bitumen and BUR", "Commercial metal roofing", "Multi-family, steep slope, low slope and historical buildings", "Code-compliant and professionally managed", "Preventative maintenance programs"],
+      "faqs": [
+        { "q": "What commercial roofing services do you offer?", "a": "We specialize in commercial roof replacements and repairs including TPO, PVC, EPDM, modified bitumen, BUR, metal roofing, and protective coatings. Our expertise extends to multi-family properties, steep slope, low slope, and historical buildings." }
+      ]
+    },
+    {
+      "slug": "commercial-roof-repair",
+      "group": "commercial",
+      "title": "Commercial Roof Repair",
+      "short": "Fast repairs that keep the business open.",
+      "text": "We provide fast, reliable commercial roof repairs to minimize business disruption, handling all roofing systems with quality workmanship and quick response times.",
+      "image": "/brands/cactusjaxroofingconstruction/commercial-repair",
+      "imageAlt": "Crew rolling out membrane during a commercial roof repair",
+      "body": [
+        "Our experienced team handles all roofing systems with quality workmanship and quick response times, so a roof problem does not become a closed business.",
+        "Where a repair is one of a recurring set, we will show you the case for a preventative maintenance program instead: proactive inspection and maintenance designed to extend roof life, reduce repair costs and help prevent unexpected failures."
+      ],
+      "points": ["All commercial roofing systems", "Quick response times", "Minimal business disruption", "Preventative maintenance programs available"]
+    },
+    {
+      "slug": "commercial-roof-replacement",
+      "group": "commercial",
+      "title": "Commercial Roof Replacement",
+      "short": "Durable systems built for Houston's climate.",
+      "text": "We install durable commercial roofing systems designed for Houston's climate, from TPO to metal roofing, with minimal downtime and long-lasting protection.",
+      "image": "/brands/cactusjaxroofingconstruction/commercial-replacement",
+      "imageAlt": "A crew replacing a large low-slope commercial roof",
+      "body": [
+        "From TPO to metal roofing, we ensure minimal downtime and long-lasting protection for your business. Industry-leading roofing systems are installed with strict quality control, detailed documentation and long-term performance in mind.",
+        "Backed by nearly two decades of industry experience, we provide dependable commercial roofing solutions tailored to protect and enhance property investments."
+      ],
+      "points": ["TPO through commercial metal systems", "Strict quality control and detailed documentation", "Minimal downtime for your business", "Scalable coordination on multifamily projects"]
+    },
+    {
+      "slug": "commercial-roof-coatings",
+      "group": "commercial",
+      "title": "Commercial Roof Coatings",
+      "short": "Protective coatings that extend the roof you have.",
+      "text": "Protective roof coatings for commercial and multifamily properties, applied as part of our commercial roofing work.",
+      "image": "/brands/cactusjaxroofingconstruction/coatings",
+      "imageAlt": "A roller applying protective coating across a flat commercial roof",
+      "body": [
+        "Coatings are one of the commercial systems we specialize in, alongside TPO, PVC, EPDM, modified bitumen, BUR and metal roofing.",
+        "We are an affiliated Karnak installer, and coatings sit naturally inside our preventative maintenance programs: proactive inspection and maintenance designed to extend roof life and reduce repair costs before a failure reaches your property."
+      ],
+      "points": ["Protective coatings for low-slope roofs", "Extends the life of the existing roof", "Part of a preventative maintenance program", "Karnak affiliated"]
+    },
+    {
+      "slug": "seamless-gutters",
+      "group": "residential",
+      "title": "Seamless Gutters",
+      "short": "Custom-fit gutters, K-style gutters and gutter guards.",
+      "text": "We install and replace seamless gutters to protect your home or business from water damage, custom-fit to your property for proper drainage and fewer leaks.",
+      "image": "/brands/cactusjaxroofingconstruction/gutters",
+      "imageAlt": "A white seamless gutter and downspout along a roof edge",
+      "body": [
+        "Our systems are custom-fit for your property to ensure proper drainage, reduced leaks and long-term performance. We use high-quality materials and proven techniques so the water leaves the roof and the foundation alone.",
+        "We fabricate seamless gutters on site for a precise fit, which improves water flow and alignment and cuts the number of joints where leaks start. We also install sectional gutter systems, K-style profiles for high rainfall volume, and half-round and box gutters, which suit custom or historic buildings and large commercial roofs needing maximum capacity.",
+        "We install seamless gutters, K-style gutters, gutter guards and other gutter systems, averaging $2,500."
+      ],
+      "points": ["Seamless gutters, fabricated on site", "K-style gutters for high rainfall volume", "Sectional gutter systems", "Half-round and box gutters", "Gutter guards", "Installation and replacement", "Gutter systems average $2,500"],
+      "faqs": [
+        { "q": "Can you install gutters and siding?", "a": "Yes. Beyond roofing, we install seamless gutters, K-style gutters, gutter guards, and various gutter systems averaging $2,500. We also install vinyl, composite, stucco, wood, metal, fiber cement, Hardie Board, and LP SmartSide siding." }
+      ]
+    },
+    {
+      "slug": "attic-ventilation-and-solar",
+      "group": "residential",
+      "title": "Ventilation & Solar Power",
+      "short": "Solar-powered attic ventilation and solar installation.",
+      "text": "We install attic ventilation systems that improve airflow, reduce heat and moisture buildup, and support a more comfortable, efficient home.",
+      "image": "/brands/cactusjaxroofingconstruction/ventilation",
+      "imageAlt": "A solar-powered attic fan installed on a shingle roof",
+      "body": [
+        "Houston heat and humidity build up in an attic and shorten the life of the roof above it. Solar-powered attic ventilation moves that air without adding to your electricity bill.",
+        "A solar attic fan is a self-contained unit mounted on the roof or gable, with a built-in panel that powers the fan directly: no wiring, no added electric bill and no need for a full solar power system. We size the fan to your attic's square footage, position it for maximum sun exposure, and flash and seal each mounting point to manufacturer specification so the installation protects the roof rather than creating a new leak point.",
+        "We also evaluate the ridge, soffit and gable vents already on the roof, because a fan only works alongside proper intake airflow, and we check panel exposure, fan operation and seal integrity as part of a regular roof inspection. Cactus Jax does not install whole-home solar electric systems; our work is attic ventilation products that use solar power to move air."
+      ],
+      "points": ["Solar-powered attic fan installation", "No wiring and no added electric bill", "Fan sized to your attic and positioned for sun", "Ridge, soffit and gable vent evaluation", "Mounting points flashed to manufacturer spec", "Moisture and heat control"]
+    },
+    {
+      "slug": "exterior-paint-siding-and-windows",
+      "group": "residential",
+      "title": "Exterior Paint, Siding & Windows",
+      "short": "Painting, siding and window installation.",
+      "text": "Exterior painting, siding and window installation, for a clean, durable finish and better weather resistance across the whole exterior.",
+      "image": "/brands/cactusjaxroofingconstruction/exterior",
+      "imageAlt": "A painter on a ladder working on the exterior of a house",
+      "body": [
+        "We specialize in exterior painting to improve and protect your property's exterior, delivering a clean, durable finish that enhances curb appeal and long-term weather resistance.",
+        "We install vinyl, composite, stucco, wood, metal, fiber cement, Hardie Board and LP SmartSide siding, along with engineered wood and insulated siding systems, averaging $20,000 to $30,000. Windows are custom-fit to ensure a proper seal, better insulation and long-lasting performance in all seasons.",
+        "The window styles we install are double-hung, casement, awning, slider, picture and stationary, bay and bow, transom, and impact-resistant windows for storm-prone areas. Painting starts with preparation, because that is what the finish lasts on: power washing, scraping loose paint, sanding, replacing damaged trim, priming where needed and sealing cracks and gaps."
+      ],
+      "points": ["Exterior painting, with full surface preparation", "Vinyl, composite, stucco, wood and metal siding", "Fiber cement, Hardie Board and LP SmartSide", "Engineered wood and insulated siding systems", "Double-hung, casement, awning and slider windows", "Bay, bow, transom and impact-resistant windows", "Siding averages $20,000 to $30,000"]
+    },
+    {
+      "slug": "interior-remodeling",
+      "group": "residential",
+      "title": "Interior Remodeling",
+      "short": "Updates through full renovations, done clean.",
+      "text": "We handle interior remodeling projects that improve the look, function and comfort of your space, from updates to full renovations.",
+      "image": "/brands/cactusjaxroofingconstruction/remodeling",
+      "imageAlt": "An interior room part-way through a remodel",
+      "body": [
+        "As general contractors our expertise extends past roofing to full-scale construction, exterior restoration and custom solutions tailored to each property's needs.",
+        "We remodel kitchens, with custom cabinets and countertops, upgraded flooring, lighting and fixtures; bathrooms, with walk-in showers, tubs, vanities, tile and heated flooring; and bedrooms, with built-in storage, better lighting and insulation, custom flooring and accent walls. We also finish basements into a home theater, gym or guest suite, and open up living rooms into open-concept layouts.",
+        "We focus on quality workmanship and clean, reliable results, whether the job is an update or a full renovation."
+      ],
+      "points": ["Kitchen remodeling, cabinets through fixtures", "Bathroom remodeling, showers, tubs and vanities", "Bedroom renovations and built-in storage", "Basement finishing", "Living room and open-concept design", "Handled by a general contractor"]
+    },
+    {
+      "slug": "power-washing",
+      "group": "residential",
+      "title": "Power Washing",
+      "short": "Dirt, grime and buildup off exterior surfaces.",
+      "text": "Professional power washing to remove dirt, grime and buildup from exterior surfaces, restoring curb appeal and maintaining the property's condition.",
+      "image": "/brands/cactusjaxroofingconstruction/powerwash",
+      "imageAlt": "A power washer cleaning a weathered wooden deck",
+      "body": [
+        "Dirt and buildup do more than look bad: they hold moisture against the surfaces they sit on. Power washing clears it off and puts the exterior back in a condition you can maintain.",
+        "We wash driveways and walkways, decks and patios, wooden and vinyl fences, siding and exteriors, and roofs and gutters, using industry-leading equipment and eco-friendly cleaning solutions at the water pressure each surface can take.",
+        "Power washing is one of the services on our enquiry form, and we will quote it alongside roofing or exterior work on the same visit."
+      ],
+      "points": ["Driveways, walkways, decks and patios", "Wooden and vinyl fences", "Siding and exteriors", "Roofs and gutters", "Eco-friendly cleaning solutions", "Removes dirt, grime, mold and mildew", "Quoted alongside other exterior work"]
+    }
+  ],
+  "claim": {
+    "title": "How we handle your insurance claim",
+    "text": "With 20+ years of experience handling insurance claims, we help maximize your coverage and minimize out-of-pocket costs for storm damage restoration.",
+    "steps": [
+      { "title": "Free inspection", "text": "We inspect the damage thoroughly, within 24 hours of your call." },
+      { "title": "Documentation", "text": "You get a detailed report of what the storm did to the roof." },
+      { "title": "Claim submission", "text": "We guide you through the entire insurance process, from documentation to submission." },
+      { "title": "The adjuster", "text": "We communicate directly with your adjuster when it helps your claim." },
+      { "title": "Restoration", "text": "Our crew restores the roof's integrity and protects the property from further harm." }
+    ]
+  },
+  "materials": {
+    "title": "Manufacturers we are affiliated with",
+    "text": "These partnerships ensure access to premium materials, better warranties and competitive pricing. We match the right manufacturer and product to your needs, preferences and budget.",
+    "brands": ["Malarkey", "DaVinci", "Boral", "Brava", "Euroshield", "Karnak", "Garland", "Muller", "CW", "Westlake Shingles", "United Steel Shingles"]
+  },
+  "projects": [
+    {
+      "title": "Multifamily roof, coated and aerial-surveyed",
+      "town": "Houston",
+      "scope": "Commercial",
+      "service": "commercial-roofing",
+      "text": "A multifamily property's low-slope roof brought back to a clean, protective finish and documented from the air.",
+      "image": "/brands/cactusjaxroofingconstruction/commercial",
+      "imageAlt": "An aerial view of a multifamily property with a newly coated white roof"
+    },
+    {
+      "title": "Shingle replacement, crew on the roof",
+      "town": "Houston",
+      "scope": "Roof replacement",
+      "service": "roof-replacement",
+      "text": "A residential replacement part-way through, with the crew working across the slopes and the new underlayment down.",
+      "image": "/brands/cactusjaxroofingconstruction/project-crew",
+      "imageAlt": "An aerial view of a crew working across a house roof during a replacement"
+    },
+    {
+      "title": "Finished residential roof",
+      "town": "Houston",
+      "scope": "Roof replacement",
+      "service": "roof-replacement",
+      "text": "The same kind of job finished: new architectural shingles across every slope, the site cleared and the property closed back up.",
+      "image": "/brands/cactusjaxroofingconstruction/project-finished",
+      "imageAlt": "An aerial view of a finished dark shingle roof on a Houston home"
+    }
+  ],
+  "about": {
+    "title": "A woman-owned, family-operated contractor in Houston",
+    "text": [
+      "Located in Houston, TX, Cactus Jax Roofing & Construction is a woman-owned, family-operated general contractor specializing in commercial and multifamily roofing solutions. Backed by nearly two decades of industry experience, we are committed to delivering high-quality service with a focus on integrity, reliability and craftsmanship.",
+      "While we specialize in high-performance roofing systems, our expertise as general contractors extends to full-scale construction, exterior restoration and custom solutions tailored to each property's unique needs. From targeted repairs to large-scale renovations, we provide dependable service and efficient project execution designed to deliver lasting results and protect your investment.",
+      "Our journey began long before the company did, working hands-on in roles ranging from installation to project management. Founded with a vision to set a new standard in roofing, Cactus Jax was established on the principles of reliability, superior craftsmanship and unwavering customer care.",
+      "Our mission is to elevate the roofing industry by delivering unmatched quality, reliability and customer care. Your trust is our foundation, and we take pride in creating a sense of security for the people who choose us: when they hire us they are not just hiring a roofing contractor, they are partnering with a team that cares about their needs and concerns."
+    ],
+    "image": "/brands/cactusjaxroofingconstruction/about",
+    "imageAlt": "A Houston home with a new roof over the main house and the covered patio",
+    "values": [
+      { "title": "Quality assurance", "text": "Industry-leading roofing systems installed with strict quality control, detailed documentation and long-term performance in mind." },
+      { "title": "Commercial expertise", "text": "Nearly two decades of industry experience behind commercial roofing solutions tailored to protect and enhance property investments." },
+      { "title": "Efficient project execution", "text": "Operational experience, supplier relationships and scalable coordination across commercial and multifamily projects." }
+    ]
+  },
+  "inspection": {
+    "title": "What happens at a free inspection",
+    "steps": [
+      { "title": "You book a consultation", "text": "Schedule a free consultation to assess your needs, with no obligation." },
+      { "title": "We inspect the roof", "text": "A full assessment, on the roof or by drone, to find issues before they become severe problems." },
+      { "title": "You get the estimate", "text": "A free, detailed estimate within 24 hours, covering materials, labor, permits and cleanup." }
+    ]
+  },
+  "serviceArea": [
+    "Houston",
+    "The Woodlands",
+    "Conroe",
+    "Pasadena",
+    "Clear Lake City",
+    "Baytown",
+    "Cypress",
+    "Bellaire",
+    "Fulshear",
+    "Katy",
+    "Missouri City",
+    "Friendswood",
+    "La Porte",
+    "Dayton",
+    "Huffman",
+    "Webster",
+    "Spring",
+    "Richmond",
+    "League City",
+    "Seabrook",
+    "Liberty",
+    "Mont Belvieu",
+    "Texas City",
+    "Humble",
+    "Rosenberg",
+    "Deer Park",
+    "Alvin",
+    "Channelview",
+    "Highlands",
+    "Crosby"
+  ],
+  "areasText": "We are on S Dairy Ashford Rd in Houston and serve the greater Houston area. Our local presence means faster response times, an understanding of regional building codes, familiarity with Houston's climate, and established relationships with local insurance providers.",
+  "areasImage": "/brands/cactusjaxroofingconstruction/areas",
+  "areasImageAlt": "A brick Houston home with a steep shingle roof and dormer windows",
+  "contactImage": "/brands/cactusjaxroofingconstruction/contact",
+  "contactImageAlt": "An aerial view of a hip roof on a Houston home",
+  "facts": [
+    {
+      "heading": "Warranties",
+      "items": [
+        "10-year workmanship warranty on installations",
+        "1-year warranty on repairs",
+        "Manufacturer product warranties up to 30 years, depending on the materials selected",
+        "All warranty terms explained clearly before your project begins"
+      ]
+    },
+    {
+      "heading": "Financing",
+      "text": "We partner with Enhancify to offer flexible financing: promotional 0% APR options, rates starting at 7.99% APR, terms from 1 to 12 years, and no-money-down financing for qualified homeowners."
+    },
+    {
+      "heading": "Certifications and affiliations",
+      "items": [
+        "Certified Euroshield installer",
+        "Karnak affiliated",
+        "Certified roofers and installers",
+        "Licensed and insured"
+      ]
+    },
+    {
+      "heading": "What sets us apart",
+      "items": [
+        "Woman-owned and family-operated",
+        "Nearly 20 years of hands-on industry experience",
+        "Certified installers of premium, impact-resistant roofing systems",
+        "Proven success managing both residential and large commercial projects",
+        "Community-centered service inspired by healthcare roots and client care ethics",
+        "Track record of quality craftsmanship, transparency and lasting client relationships",
+        "A local business, licensed and insured",
+        "Customer satisfaction guarantee"
+      ]
+    },
+    {
+      "heading": "Estimates and response times",
+      "items": [
+        "Free estimates within 24 hours",
+        "Free inspections, including drone inspections",
+        "Emergencies: same-day for daytime calls, next morning for nighttime calls",
+        "24/7 emergency availability, and same-day residential roof repairs",
+        "Most repairs completed in hours; most replacements in 1 to 3 days"
+      ]
+    },
+    {
+      "heading": "Preventative maintenance programs",
+      "text": "Proactive inspection and maintenance programs designed to extend roof life, reduce repair costs, and help prevent unexpected failures before they impact your property."
+    },
+    {
+      "heading": "Materials we install",
+      "items": [
+        "Asphalt shingles, the most affordable option, in a range of colors and styles",
+        "Tile roofing in clay, concrete and composite, resistant to fire and rot",
+        "Metal roofing, lightweight and reflective, resistant to rust and corrosion",
+        "Flat roofing systems in TPO, PVC and EPDM, suited to solar panel installation",
+        "Euroshield, made from recycled rubber, impact-resistant and hail-resistant",
+        "Natural and synthetic slate, resistant to fire, mold and rot"
+      ]
+    },
+    {
+      "heading": "How we help you choose a material",
+      "items": [
+        "A detailed consultation to understand your goals and inspect the property",
+        "An overview of your options, with the benefits of each explained",
+        "Precise installation by our own experienced technicians",
+        "Post-installation support and maintenance guidance going forward"
+      ]
+    },
+    {
+      "heading": "What a project costs",
+      "items": [
+        "Transparent pricing: competitive rates with no hidden fees",
+        "Roof replacement averages around $12,000; metal and tile average $20,000",
+        "Residential roof repairs run $3 to $7 per square foot",
+        "Gutter systems average $2,500; siding averages $20,000 to $30,000",
+        "Every estimate includes materials, labor, permits and cleanup"
+      ]
+    },
+    {
+      "heading": "Permanent home lighting",
+      "text": "Permanent home lighting is available through Lights by Cactus Jax, alongside our roofing and construction work."
+    },
+    {
+      "heading": "Find us online",
+      "text": "We are on Instagram as @cactusjaxroofing, on Yelp, and on LinkedIn."
+    },
+    {
+      "heading": "Your information",
+      "items": [
+        "Consent to SMS messages about your home project is part of our enquiry form",
+        "Message and data rates may apply; reply STOP to opt out at any time",
+        "Your information is not used for marketing purposes",
+        "Your information is not shared with third parties"
+      ]
+    }
+  ]
+}

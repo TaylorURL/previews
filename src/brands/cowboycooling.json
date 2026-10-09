@@ -1,0 +1,214 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Cowboy Cooling & Home Services",
+  "shortName": "Cowboy Cooling",
+  "summary": "Heating and air conditioning repair, installation and preventive maintenance for homes in Santa Fe, Texas.",
+  "phone": "(281) 678-8488",
+  "email": "dispatch@cowboycoolingllc.com",
+  "address": "13311 33rd St",
+  "town": "Santa Fe",
+  "state": "TX",
+  "zip": "77510",
+  "rating": 4.8,
+  "reviewCount": 90,
+  "since": 2013,
+  "hours": [
+    ["Mon – Wed", "7 AM – 7 PM"],
+    ["Thursday", "9 AM – 7 PM"],
+    ["Fri – Sun", "7 AM – 7 PM"]
+  ],
+  "brand": {
+    "primary": "#8a1c1c",
+    "primaryDeep": "#5c1010",
+    "accent": "#2f7fb5",
+    "ink": "#1d1b1a",
+    "muted": "#5c5754",
+    "surface": "#f8f3f1",
+    "line": "#e4dad7",
+    "heading": "'Oswald', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/cowboycooling/logo.webp",
+    "logoWidth": 210
+  },
+  "emergency": {
+    "title": "24/7 emergency service",
+    "text": "We are always committed to you, so we offer 24/7 service in emergency situations."
+  },
+  "licenses": [
+    { "label": "Texas Air Conditioning/Refrigeration Contractor", "number": "TACLB85421E" }
+  ],
+  "financing": {
+    "text": "Financing applications are taken online through FTL Finance."
+  },
+  "hero": {
+    "eyebrow": "Heating and air conditioning in Santa Fe, Texas",
+    "title": "Restoring your family's comfort",
+    "titleAccent": "one degree at a time.",
+    "lead": "Certified technicians for repair, installation and preventive maintenance, with 24/7 service when it is an emergency.",
+    "image": "/brands/cowboycooling/hero",
+    "imageAlt": "Air conditioning units beside a house"
+  },
+  "groups": [
+    {
+      "slug": "repair",
+      "title": "Repair",
+      "icon": "wrench",
+      "summary": "Heating and air conditioning repair by certified technicians, with common parts on the truck.",
+      "intro": "Every one of our knowledgeable service technicians is certified. We have experience fixing all types of equipment, and our technicians install genuine factory authorized parts. We also carry many common replacement parts on our vehicles, which helps us get you comfortable faster.",
+      "image": "/brands/cowboycooling/repair",
+      "imageAlt": "A clamp meter and hand tools laid out beside wiring",
+      "services": [
+        {
+          "slug": "air-conditioning-repair",
+          "title": "Air Conditioning Repair",
+          "icon": "snowflake",
+          "text": "Certified technicians diagnose and repair home cooling equipment of all types.",
+          "points": [
+            "Certified service technicians",
+            "Genuine factory authorized parts",
+            "Common replacement parts carried on our vehicles"
+          ]
+        },
+        {
+          "slug": "heating-repair",
+          "title": "Heating Repair",
+          "icon": "flame",
+          "text": "The same crew that repairs your air conditioning repairs the heating side of the system.",
+          "points": [
+            "Experience fixing all types of equipment",
+            "Genuine factory authorized parts"
+          ]
+        },
+        {
+          "slug": "emergency-service",
+          "title": "Emergency Service",
+          "icon": "timer",
+          "text": "We are always committed to you, so we offer 24/7 service in emergency situations.",
+          "points": ["Available 24/7 in an emergency", "Office line answered at (281) 678-8488"]
+        }
+      ]
+    },
+    {
+      "slug": "installation",
+      "title": "Installation",
+      "icon": "air-vent",
+      "summary": "American Standard heating and air conditioning systems, installed properly room by room.",
+      "intro": "As an American Standard dealer, we provide the best quality product on the market today, backed by third party ConsumerReports. Your installation contractor has a large impact on energy costs, the longevity of your system, your air quality and your comfort.",
+      "image": "/brands/cowboycooling/installation",
+      "imageAlt": "An air conditioning unit mounted on a brick wall",
+      "services": [
+        {
+          "slug": "air-conditioning-installation",
+          "title": "Air Conditioning Installation",
+          "icon": "snowflake",
+          "text": "Our technicians install every AC system properly, so the right amount of conditioned air reaches each room in your home.",
+          "points": ["Installed so each room gets the conditioned air it needs", "Easier to hold a comfortable temperature all year"]
+        },
+        {
+          "slug": "heating-installation",
+          "title": "Heating Installation",
+          "icon": "heater",
+          "text": "Heating systems installed to the same standard, so the house holds its temperature through the winter.",
+          "points": ["Installed properly room by room", "Heating and cooling handled by one company"]
+        },
+        {
+          "slug": "american-standard-equipment",
+          "title": "American Standard Equipment",
+          "icon": "settings",
+          "text": "We are an American Standard dealer, and that is the equipment we put in.",
+          "points": ["American Standard dealer", "Backed by third party ConsumerReports"]
+        }
+      ]
+    },
+    {
+      "slug": "preventive-maintenance",
+      "title": "Preventive Maintenance",
+      "icon": "gauge",
+      "summary": "Superior Protection plans with a spring visit and a fall visit, so equipment does not fail unexpectedly.",
+      "intro": "The best way to prevent unexpected equipment failure and increase efficiency is to properly maintain your equipment with one of our affordable Superior Protection plans. A professional technician cleans, inspects, tests and adjusts your entire HVAC system.",
+      "image": "/brands/cowboycooling/maintenance",
+      "imageAlt": "A person opening a ceiling return air grille",
+      "services": [
+        {
+          "slug": "superior-protection-plans",
+          "title": "Superior Protection Plans",
+          "icon": "shield",
+          "text": "An affordable plan that keeps your equipment maintained rather than waiting for it to fail.",
+          "points": ["Two visits a year", "Your entire HVAC system cleaned, inspected, tested and adjusted"]
+        },
+        {
+          "slug": "spring-cooling-visit",
+          "title": "Spring Cooling Visit",
+          "icon": "sun",
+          "text": "One of our professional technicians visits during spring, before your AC is put to the test in the summer.",
+          "points": ["Booked ahead of the summer"]
+        },
+        {
+          "slug": "fall-heating-visit",
+          "title": "Fall Heating Visit",
+          "icon": "flame",
+          "text": "A second visit comes during fall, before you turn your furnace on.",
+          "points": ["Catches a problem before the first cold night"]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "An HVAC team that treats clients like family.",
+    "text": [
+      "We are an enthusiastic team of committed leaders in the HVAC industry. Our purpose is to treat our clients as family by providing proven options, world-class service, and peace of mind. We will do this with honesty, integrity, and loyalty for our company and the communities we serve.",
+      "Cowboy Cooling & Home Services was established in 2013 and works out of 13311 33rd Street in Santa Fe. We specialize in restoring your family's comfort needs one degree at a time, and we are here for you 24/7."
+    ],
+    "image": "/brands/cowboycooling/about",
+    "imageAlt": "A hand adjusting a thermostat on a wall",
+    "values": [
+      { "title": "Certified technicians", "text": "Every one of our knowledgeable service technicians is certified." },
+      { "title": "Genuine parts", "text": "Our technicians install genuine factory authorized parts, and we carry the common ones on our vehicles." },
+      { "title": "Here for you 24/7", "text": "We offer 24/7 service in emergency situations." }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "License",
+      "items": [
+        "Texas Air Conditioning/Refrigeration Contractor License #TACLB85421E",
+        "Regulated by the Texas Department of Licensing and Regulation, P.O. Box 12167, Austin, Texas 78711",
+        "TDLR: (800) 803-9202 and (512) 463-6599"
+      ]
+    },
+    {
+      "heading": "Equipment",
+      "text": "We are an American Standard dealer, backed by third party ConsumerReports, and our technicians install genuine factory authorized parts."
+    },
+    {
+      "heading": "Maintenance plans",
+      "text": "Superior Protection plans cover a spring visit before summer and a fall visit before you turn the furnace on."
+    },
+    {
+      "heading": "Financing",
+      "items": [
+        "Financing applications are taken online through FTL Finance.",
+        "FTL Finance application: apptracker.ftlfinance.com (dealer C18699)"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/CowboyCoolingLLC",
+        "Reviews on Google",
+        "Google review page: g.page/r/CXY1VQlJTG6zEAg/review"
+      ]
+    },
+    {
+      "heading": "Established",
+      "text": "Cowboy Cooling & Home Services has been in business since 2013."
+    },
+    {
+      "heading": "Business name",
+      "text": "The company also appears as Cowboy Cooling, LLC."
+    }
+  ]
+}
