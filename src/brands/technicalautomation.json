@@ -1,0 +1,485 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Technical Automation Services Company, LTD.",
+  "shortName": "TASC",
+  "summary": "Turn-key plant instrumentation, electrical and analyzer services for industrial facilities, from headquarters in Seabrook, Texas.",
+  "phone": "(281) 474-3232",
+  "email": "sales@tascorp.com",
+  "address": "2000 NASA Parkway",
+  "town": "Seabrook",
+  "state": "TX",
+  "zip": "77586",
+  "rating": 4.1,
+  "reviewCount": 12,
+  "since": 1990,
+  "hours": [
+    ["Mon – Fri", "8 AM – 4 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#0b6240",
+    "primaryDeep": "#073f29",
+    "accent": "#10623e",
+    "ink": "#112337",
+    "muted": "#55657a",
+    "surface": "#eff5f1",
+    "line": "#dbe3dd",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/technicalautomation/logo.webp",
+    "logoWidth": 72
+  },
+  "hero": {
+    "eyebrow": "Instrumentation, electrical and analyzer services",
+    "title": "Delivering innovative,",
+    "titleAccent": "custom-engineered solutions.",
+    "lead": "Since 1990, TASC has been a comprehensive provider of turn-key plant instrumentation, electrical and analyzer services, with the experience and manufacturer partnerships to apply the best fit technology to each project.",
+    "image": "/brands/technicalautomation/hero",
+    "imageAlt": "An industrial refinery complex at dusk"
+  },
+  "groups": [
+    {
+      "slug": "system-integration",
+      "title": "System Integration",
+      "icon": "circuit",
+      "summary": "Custom analyzer packages and RIE solutions, built with any brand of components.",
+      "intro": "TASC is a leading expert in custom system integration, offering tailored analyzer packages or RIE solutions to meet your specific requirements. As an independent provider, TASC can integrate any brand of components, and works with engineering and construction teams to manage complete project solutions.",
+      "image": "/brands/technicalautomation/integration",
+      "imageAlt": "An enclosure of circuit breakers and field wiring in a control panel",
+      "services": [
+        {
+          "slug": "analyzer-houses-and-shelters",
+          "title": "Analyzer Houses and Shelters",
+          "icon": "building",
+          "text": "Walk-in analyzer houses and shelters built to the requirements of the application rather than a catalogue model.",
+          "points": ["Analyzer houses", "3-sided analyzer shelters", "Remote instrument enclosures"]
+        },
+        {
+          "slug": "racks-cabinets-and-skids",
+          "title": "Racks, Cabinets and Skids",
+          "icon": "settings",
+          "text": "Racks, cabinets and skids for analyzers, cylinders and equipment, assembled and tested before they reach the site.",
+          "points": ["2-sided analyzer racks", "Analyzer cabinets", "Cylinder and equipment racks", "Equipment skids"]
+        },
+        {
+          "slug": "sample-systems",
+          "title": "Sample Systems",
+          "icon": "cable",
+          "text": "Custom sample systems and the lines, probes and recovery that go with them, designed around the stream being measured.",
+          "points": ["Custom sample systems", "Sample recovery systems", "Sample lines", "Sample probes"]
+        },
+        {
+          "slug": "standalone-analyzer-systems",
+          "title": "Standalone Analyzer Systems",
+          "icon": "gauge",
+          "text": "Standalone analyzer systems integrated as a single package, with any manufacturer's components."
+        }
+      ]
+    },
+    {
+      "slug": "field-and-construction",
+      "title": "Field and Construction Services",
+      "icon": "building",
+      "summary": "Turnarounds, maintenance, capital projects, commissioning and field installation crews.",
+      "intro": "TASC construction crews offer comprehensive, turnkey project support. The same teams are ready to support your field projects through our engineering or integration groups, or by stepping in to continue where others left off.",
+      "image": "/brands/technicalautomation/field",
+      "imageAlt": "Process towers and stacks at an industrial plant",
+      "services": [
+        {
+          "slug": "turnarounds",
+          "title": "Turnarounds",
+          "icon": "timer",
+          "text": "When time is critical, our experienced crews can ensure you are back up and running on schedule."
+        },
+        {
+          "slug": "maintenance",
+          "title": "Maintenance",
+          "icon": "wrench",
+          "text": "Embedded teams provide continuous, day-to-day support for ongoing maintenance activities."
+        },
+        {
+          "slug": "capital-projects",
+          "title": "Capital Projects",
+          "icon": "building",
+          "text": "TASC collaborates with your capital team or designated EPC to execute new installations or modifications, ensuring they meet industry standards and client specifications."
+        },
+        {
+          "slug": "commissioning",
+          "title": "Commissioning",
+          "icon": "shield",
+          "text": "TASC has specialized team members that will help your commissioning go smoothly."
+        },
+        {
+          "slug": "field-installation",
+          "title": "Field Installation",
+          "icon": "zap",
+          "text": "Installation and commissioning of systems, locally or with travel, including installation supervision and analyzer expertise for your onsite contractor.",
+          "points": [
+            "Installation of sample bundles",
+            "Cable and fiber pulls",
+            "Lighting and electrical service upgrades",
+            "Industrial Wi-Fi",
+            "Gas detection systems",
+            "Pole setting",
+            "Obsolescence improvements and upgrades"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "engineering-and-design",
+      "title": "Engineering and Design",
+      "icon": "settings",
+      "summary": "Engineering support for site personnel, from FEED through as-built drawings and obsolescence planning.",
+      "intro": "TASC offers valuable engineering and design support for site personnel. Our experienced engineering teams work alongside your staff on the documentation, modifications and planning that keep existing systems reliable for the long term.",
+      "image": "/brands/technicalautomation/engineering",
+      "imageAlt": "A caliper resting on a set of technical engineering drawings",
+      "services": [
+        {
+          "slug": "engineering-support",
+          "title": "Engineering Support",
+          "icon": "settings",
+          "text": "Experienced engineering teams that assist your site with evaluation, documentation and design work.",
+          "points": [
+            "Problem evaluation and technical documentation",
+            "FEED activities for future construction projects",
+            "Modifications to existing systems",
+            "As-built drawing support",
+            "Startup and commissioning support"
+          ]
+        },
+        {
+          "slug": "obsolescence-planning",
+          "title": "System Obsolescence Planning",
+          "icon": "timer",
+          "text": "Obsolescence planning that keeps existing systems reliable over the long term."
+        },
+        {
+          "slug": "analyzer-obsolescence",
+          "title": "Analyzer Obsolescence",
+          "icon": "gauge",
+          "text": "TASC makes implementing your analyzer obsolescence plan simple, working with you, your designated EPC, or handling the process independently.",
+          "points": [
+            "Written evaluations of the best technologies for your existing applications",
+            "Procurement and integration of new analyzer packages",
+            "Installation and system cutover",
+            "Startup and commissioning of the new system"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "technical-personnel",
+      "title": "Technical Personnel and Support",
+      "icon": "wrench",
+      "summary": "Skilled and specialized labor, on-call analyzer support and sample system training.",
+      "intro": "TASC can serve as your onsite contractor, providing skilled and specialized labor for short-term or long-term assignments, local, domestic and international travel, and on-call support.",
+      "image": "/brands/technicalautomation/personnel",
+      "imageAlt": "A pressure gauge mounted on process equipment",
+      "services": [
+        {
+          "slug": "industrial-manpower",
+          "title": "Industrial Manpower Solutions",
+          "icon": "wrench",
+          "text": "TASC can serve as your onsite contractor, providing skilled and specialized labor for maintenance, turnarounds and projects.",
+          "points": [
+            "Engineers",
+            "Project managers",
+            "Planner schedulers",
+            "Instrumentation technicians",
+            "Electricians",
+            "Analyzer technicians",
+            "Lab technicians",
+            "Fiber technicians"
+          ]
+        },
+        {
+          "slug": "call-out-support",
+          "title": "Call Out Support",
+          "icon": "timer",
+          "text": "On-call analyzer support, with industry-leading personnel available when you need them.",
+          "points": [
+            "Evaluation and repair of analyzer systems",
+            "Temporary staffing shortages, from vacations, unplanned illnesses or other reasons",
+            "Onsite hands-on training",
+            "Installation supervision",
+            "Commissioning support"
+          ]
+        },
+        {
+          "slug": "training",
+          "title": "Training",
+          "icon": "shield",
+          "text": "Analyzer training led by industry-leading experts. Contact us for schedules and availability.",
+          "points": [
+            "4-day in-depth sample system classes",
+            "2-day introduction to sample system classes",
+            "2-day advanced sample system classes",
+            "Sample system physics and chemistry"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "A comprehensive provider of turn-key instrumentation, electrical and analyzer services since 1990.",
+    "text": [
+      "Since 1990, Technical Automation Services has served as a comprehensive provider of turn-key plant instrumentation, electrical and analyzer services. TASC is dedicated to delivering high-quality products and services, ensuring everything is done correctly from the start and consistently thereafter.",
+      "Our team is made up of industry leaders who are ready and able to get the job done. At TASC, we take pride in our personnel and invest in their development to nurture the next generation of industry leaders. TASC treats their employees like family, because they are.",
+      "TASC is a flexible company that avoids a one-size-fits-all approach. We welcome innovative ideas and solutions to challenges. Since we work with various systems and industries, each operating in unique ways, our strategies must remain adaptable and responsive."
+    ],
+    "image": "/brands/technicalautomation/team",
+    "imageAlt": "Two workers in hard hats reviewing a drawing on site, one wearing a TASC hard hat",
+    "values": [
+      {
+        "title": "Safety is #1",
+        "text": "Safety is a core value in every service we provide, and a shared responsibility across every team member."
+      },
+      {
+        "title": "Flexible by design",
+        "text": "No one-size-fits-all approach; each system and industry works differently, so our strategies stay adaptable."
+      },
+      {
+        "title": "Independent integrator",
+        "text": "As an independent provider, TASC can integrate any brand of components and apply best fit technologies."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What industries does TASC work in?",
+      "a": "Oil and gas, chemical and petrochemical, power generation and renewables, along with refining, pharmaceutical and water treatment sectors."
+    },
+    {
+      "q": "Can TASC provide personnel for our site?",
+      "a": "Yes. TASC can serve as your onsite contractor with engineers, project managers, planner schedulers, instrumentation technicians, electricians, analyzer technicians, lab technicians and fiber technicians, for short-term or long-term assignments."
+    },
+    {
+      "q": "Are you tied to a particular analyzer manufacturer?",
+      "a": "No. As an independent provider, TASC can integrate any brand of components, and our work with numerous manufacturers lets us apply best fit technologies."
+    },
+    {
+      "q": "Will TASC travel to our facility?",
+      "a": "Yes. Our personnel are available for local, domestic and international travel, as well as on-call support."
+    },
+    {
+      "q": "How do I apply for a job at TASC?",
+      "a": "Send your resume and a TASC employment application to our Human Resources department by email at recruiter@tascorp.com or by fax at 281-474-3211."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Specialties",
+      "items": [
+        "Turn-key analyzer system integration",
+        "Electrical, technical and field services",
+        "Total plant technical support personnel",
+        "Analytical and system specific training services",
+        "Environmental testing and certification"
+      ]
+    },
+    {
+      "heading": "Industries served",
+      "items": [
+        "Oil and gas",
+        "Chemical and petrochemical",
+        "Power generation",
+        "Renewables",
+        "Refining, pharmaceutical and water treatment"
+      ]
+    },
+    {
+      "heading": "Safety record",
+      "items": [
+        "2023: 480,510 worked man hours, EMR 0.66",
+        "2022: 359,661 worked man hours, EMR 0.94",
+        "2021: 393,801 worked man hours, EMR 0.86",
+        "OSHA 300 log: 0 recordables, 0 lost workday cases, 0 restricted workday cases, 0 other recordables, 0 fatalities"
+      ]
+    },
+    {
+      "heading": "Safety program",
+      "items": [
+        "Comprehensive safety policies, procedures and training",
+        "A safety-first culture built on shared responsibility",
+        "Continuous training and education on hazard recognition",
+        "Regular safety audits and assessments",
+        "Compliance with all relevant safety laws and industry standards",
+        "Hazard identification, risk assessment and preventive measures, with employee involvement",
+        "A signed Commitment to Safety letter from the company"
+      ]
+    },
+    {
+      "heading": "Consortiums, safety councils and third parties",
+      "items": ["Avetta", "ISN", "DISA", "S2Verify", "NCMS", "ISTC", "BSC", "OSCA", "ICA", "Global Health"]
+    },
+    {
+      "heading": "Where we work",
+      "text": "Personnel are available for short-term or long-term assignments, local, domestic and international travel, and on-call support, from the company's headquarters in Seabrook, Texas."
+    },
+    {
+      "heading": "Contacts",
+      "items": [
+        "Sales inquiries: sales@tascorp.com",
+        "Job applications: recruiter@tascorp.com",
+        "Tel: 281-474-3232",
+        "Fax: 281-474-3211"
+      ]
+    },
+    {
+      "heading": "Careers",
+      "items": [
+        "Analyzer technicians with 5+ years of experience",
+        "I&E technicians with 5+ years of experience",
+        "Send a resume and a TASC employment application to recruiter@tascorp.com or fax 281-474-3211",
+        "TASC is always looking for experienced and talented people for all positions, with great potential for advancement",
+        "TASC describes itself as the fastest growing system integrator and service provider company in the world",
+        "Resumes are accepted in .doc, .docx, .rtf or .txt format, with an online form for name, email, choice of work and anything else we should know"
+      ]
+    },
+    {
+      "heading": "Positions we hire for",
+      "items": [
+        "Analyzer technician, and analyzer technician (entry level)",
+        "Electrical supervisor, electrician (maintenance), electrician (construction), electrical apprentice",
+        "Instrument supervisor, instrument technician (maintenance), instrument technician (project)",
+        "Instrument fitter (maintenance), instrument fitter (project)",
+        "Communication technician (fiber)",
+        "I/E planner, I/E scheduler, project controls technician, I/E estimator",
+        "Electrical engineer, instrument engineer, analyzer engineer",
+        "I/E designer, I/E drafter",
+        "Chemist, QA/QC technician, lab technician",
+        "Advanced rigger, intermediate rigger, equipment operator, general laborer",
+        "Safety technician",
+        "Administrative assistant, project coordinator, project manager, superintendent"
+      ]
+    },
+    {
+      "heading": "Community",
+      "text": "TASC is active in the community of Seabrook, Texas, as well as in the lives and charities of its employees, supporting Keels and Wheels, Men Who Cook benefiting the Seabrook Rotary, Men Who Cook benefiting the Baytown Chamber of Commerce, and the Pasadena Rodeo."
+    },
+    {
+      "heading": "Vision",
+      "text": "To create and deliver top-quality products and services that exceed customer expectations and drive sustainable growth for both the company and its employees, earning customers' trust through continuous improvement, integrity and innovation."
+    },
+    {
+      "heading": "Mission",
+      "text": "To lead the industrial services sector by delivering high-quality, cost-effective projects and services on schedule, supported by motivated, flexible and focused teams, with fairness and transparency toward employees, clients, vendors and partners."
+    },
+    {
+      "heading": "The TASC way",
+      "text": "TASC aims to be the leader in its sector by hiring top talent and continually seeking improvement; flexible methods and a collaborative environment develop exceptional personnel, and every job is completed correctly and within budget."
+    },
+    {
+      "heading": "Quality policy",
+      "items": [
+        "A Quality Management System based on ISO 9001",
+        "Products supplied to the desired quality in accordance with customer requirements and specifications",
+        "Safe, reliable, optimum cost products delivered on time",
+        "Quality problems identified and solved with speed, technical efficiency and economy",
+        "The organizational goal of right the first time, every time"
+      ]
+    },
+    {
+      "heading": "Leadership",
+      "text": "John Burkland is President of Technical Automation Services Company, LTD."
+    },
+    {
+      "heading": "How we design",
+      "text": "Experience across diverse industries and collaboration with numerous manufacturers allow TASC to apply best fit technologies, driving design and engineering toward the safest, highest performing, lowest cost of ownership and most robust analytical system solutions."
+    },
+    {
+      "heading": "Environmental services",
+      "items": [
+        "Title V air emission environmental services, using fully equipped mobile laboratories for EPA regulatory compliance testing and certification",
+        "CEMS and PEMS certification",
+        "Relative Accuracy Test Audit (RATA)",
+        "Quarterly Cylinder Gas Audit (CGA)",
+        "Performance Specification Test (PST)",
+        "Stack compliance testing",
+        "Preventative maintenance (PM) services and on-site data collection",
+        "Continuous compliance data collection using temporary CEMS",
+        "CEMS QA plan and SOP documentation services",
+        "Consulting, evaluation and technical support services",
+        "All equipment and procedures in accordance with US EPA Reference Methods, backed by a detailed QA/QC and preventive maintenance program on all testing equipment"
+      ]
+    },
+    {
+      "heading": "Marine services",
+      "items": [
+        "MARPOL Annex VI Regulation 13 and 14 emissions compliant testing and reporting",
+        "Turn-key continuous monitoring systems and turn-key MARPOL projects",
+        "Diesel flow management and metering systems for flow calculations and fuel consumption",
+        "Design, installation, commissioning and startup of environmental monitoring diesel systems",
+        "On board emissions testing and reporting for NOx, CO, NO, O2 and SOx",
+        "Data acquisition and reporting, including portable reporting",
+        "Quality process manuals and quality plan development",
+        "As-built documentation and drawings",
+        "CMS training, maintenance contracts and spare parts"
+      ]
+    },
+    {
+      "heading": "Turn-key analyzer integration services",
+      "items": [
+        "Turn-key project support, FEED support, design services, engineering and construction",
+        "Integration, QA/QC, factory acceptance tests and site acceptance tests",
+        "Startup, onsite training, maintenance contracts, troubleshooting and consulting",
+        "Shelters, cabinets, sample panels, environmental packaging and hazardous location packaging",
+        "In-house engineering evaluates current process or environmental conditions and recommends improvements to process conditions and EPA compliance",
+        "Applications include environmental reporting and systems, MARPOL and offshore, petrochemical, power and LNG"
+      ]
+    },
+    {
+      "heading": "Technical and field services",
+      "items": [
+        "Contract personnel in instrumentation, electrical and analyzer support services, specializing in project maintenance, inspection and turnaround support",
+        "Project management teams, administration and process operators",
+        "Instrument, electrical and analyzer engineers and designers",
+        "Instrument and analyzer technicians, instrument fitters, electricians and electrical helpers",
+        "Inspectors and QA/QC inspectors",
+        "Startup and commissioning, including DCS and PLC commissioning",
+        "I, E and A turnaround and shutdown services",
+        "Field survey and audit services, documentation upgrades, maintenance services and FEED studies"
+      ]
+    },
+    {
+      "heading": "Training programs",
+      "items": [
+        "Since 1993, TASC has provided over 300 training programs for customers around the world, at a fraction of the cost of factory training",
+        "Classroom training at the TASC training center in Seabrook, Texas, and onsite training at customer facilities",
+        "Video and CD training packages for process gas chromatographs and continuous analyzers",
+        "Industrial analysis training including physics, chemistry and chromatography",
+        "Specialty seminars taught by industry leaders, such as CEMS and environmental training",
+        "Custom training programs developed to meet customer needs",
+        "Instructors have years of experience in the classroom and hands-on in the field",
+        "Training enquiries: Britney Colonna, 281-474-3232, training@tascorp.com"
+      ]
+    },
+    {
+      "heading": "Industry support",
+      "items": [
+        "Oil and gas: manpower personnel for maintenance, turnarounds and projects, system integration, call out support and training",
+        "Chemical and petrochemical: manpower personnel and system integration, with access to the best technologies on the market to improve up time and control costs",
+        "Power generation: skilled personnel and system integration, with ways identified to reduce overall business costs",
+        "Renewables: engineering and design services, manpower personnel, system integration, call out support and training, for green field projects or reconfiguring an existing complex for new products"
+      ]
+    },
+    {
+      "heading": "Policies",
+      "items": [
+        "Terms and Conditions effective February 26, 2025, governed by the laws of Harris County",
+        "Opting into SMS from a web form means agreeing to receive SMS messages from TASC; message frequency varies, message and data rates may apply, HELP for help and STOP to opt out",
+        "Website content, trademarks and logos are the property of Technical Automation Services Corporation or its licensors",
+        "A privacy policy sets out what personal data is collected, how it is used and shared, how long it is retained, and how to correct or delete it"
+      ]
+    },
+    {
+      "heading": "Social",
+      "text": "Facebook: facebook.com/tascorp.tx"
+    }
+  ]
+}
