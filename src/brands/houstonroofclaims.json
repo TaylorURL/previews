@@ -1,0 +1,570 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "Houston Roof Claims",
+  "shortName": "Houston Roof Claims",
+  "phone": "(832) 536-6163",
+  "email": "claims@houstonroofclaims.com",
+  "address": "2705 Greenblade Ct",
+  "town": "Pearland",
+  "state": "TX",
+  "zip": "77584",
+  "rating": 5.0,
+  "reviewCount": 15,
+  "hours": [["Mon – Sun", "Open 24 hours"]],
+  "brand": {
+    "primary": "#00264d",
+    "primaryDeep": "#001830",
+    "accent": "#ffaa00",
+    "ink": "#13181f",
+    "surface": "#f2f0e8",
+    "heading": "'Montserrat', 'Helvetica Neue', sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap",
+    "logo": "/brands/houstonroofclaims/logo.webp",
+    "logoWidth": 190
+  },
+  "hero": {
+    "eyebrow": "Storm damage insurance claim specialists",
+    "title": "Your roof, restored.",
+    "titleAccent": "Your roof, documented.",
+    "lead": "Free professional roof inspections for Houston homeowners. We assess the damage, document everything, and guide you through the insurance process from start to finish.",
+    "image": "/brands/houstonroofclaims/hero",
+    "imageAlt": "A Houston Roof Claims ladder set against a single-story brick home during an inspection"
+  },
+  "promises": ["Free roof inspections", "Veteran-owned and Houston-based", "Written damage report for your insurer", "Workmanship warranty on every install"],
+  "services": [
+    {
+      "slug": "free-roof-inspection",
+      "group": "residential",
+      "title": "Free Roof Inspection",
+      "short": "A complete roof assessment at no cost to you.",
+      "text": "A trained inspector evaluates and documents your roof's condition, then explains the findings in plain language. No cost, no obligation.",
+      "image": "/brands/houstonroofclaims/inspection",
+      "imageAlt": "A close view of an architectural shingle slope and vent pipe during a roof inspection",
+      "body": [
+        "Every Houston homeowner knows the anxiety that follows a severe storm. Was the roof damaged? Will insurance cover the repairs? Our inspectors eliminate the guesswork with a thorough inspection that costs you nothing.",
+        "We inspect every inch of the roof system, photograph what we find, and prepare a written findings report you can submit to your insurer."
+      ],
+      "points": [
+        "Hail damage assessment: impact marks, granule loss and exposed mat",
+        "Wind damage evaluation: lifted, missing or torn shingles",
+        "Water intrusion points and active leak sources",
+        "Flashing, valleys, penetrations and edge details",
+        "Gutter and drainage check",
+        "Roof deck and structural integrity",
+        "Attic ventilation and moisture control",
+        "Complete photographic documentation for insurance claims"
+      ],
+      "faqs": [
+        { "q": "What does the inspection cost?", "a": "Nothing. The inspection is free and there is no obligation afterwards." },
+        { "q": "What do I get at the end?", "a": "A written findings report with photographs of the damage, explained in plain language, that you can send to your insurance company." }
+      ]
+    },
+    {
+      "slug": "storm-damage-insurance-claims",
+      "group": "storm",
+      "title": "Storm Damage Insurance Claims",
+      "short": "We document the damage and stand with you through the claim.",
+      "text": "Hail, wind and hurricane damage documented with photographs and a written report, with our team at the adjuster appointment to present what we found.",
+      "image": "/brands/houstonroofclaims/claim-documentation",
+      "imageAlt": "A garage door panel photographed as part of a written storm damage report",
+      "claim": true,
+      "body": [
+        "Navigating a roof insurance claim after storm damage can be overwhelming, especially after a hurricane or a severe hailstorm. We assist at each step: documenting the damage, attending the adjuster visit, and completing the installation once coverage is confirmed.",
+        "Coverage decisions are made by your insurance carrier. What we control is the evidence, and we make sure nothing on your roof goes unrecorded."
+      ],
+      "points": [
+        "Complete written damage report and photographic evidence prepared for you",
+        "Detailed inspection findings covering every item of storm damage",
+        "We attend the adjuster inspection at your home and present our written findings",
+        "Supplemental contractor scope and photos if further damage is identified",
+        "Re-inspection documentation if your carrier requests a second visit",
+        "Installation once coverage is confirmed"
+      ],
+      "faqs": [
+        { "q": "Do you decide whether my claim is covered?", "a": "No. Coverage decisions are made by your insurance carrier. We document the damage thoroughly so your claim submission is as complete as possible." },
+        { "q": "Will someone be there when the adjuster comes?", "a": "Yes. We attend the adjuster inspection at your home and present our documented scope in person so nothing is missed." }
+      ]
+    },
+    {
+      "slug": "emergency-roof-repair",
+      "group": "storm",
+      "title": "Emergency Roof Repair",
+      "short": "Tarping and temporary repairs to stop the water now.",
+      "text": "Storm damage does not wait for convenient timing. We prioritize urgent requests and secure the roof before water damage, mold and structural deterioration set in.",
+      "image": "/brands/houstonroofclaims/storm",
+      "imageAlt": "A storm cloud building over a house",
+      "body": [
+        "When severe weather strikes Houston, immediate action prevents water damage, mold growth and structural deterioration that can cost thousands more to repair.",
+        "We prioritize urgent inspection requests, provide emergency tarping where it is needed, and get a trained inspector on your roof before the damage has a chance to worsen."
+      ],
+      "points": [
+        "Emergency tarping and temporary repairs to stop water infiltration",
+        "Structural stabilization of damaged areas",
+        "Emergency board-up of compromised roof sections",
+        "Immediate damage assessment and documentation for your claim",
+        "Crews dispatched as quickly as possible after your call"
+      ]
+    },
+    {
+      "slug": "roof-replacement",
+      "group": "residential",
+      "title": "Roof Replacement",
+      "short": "A new roof from the manufacturers we install, with a workmanship warranty.",
+      "text": "Complete roof replacement using quality materials that meet Texas building codes, installed by our team and backed by a written workmanship warranty.",
+      "image": "/brands/houstonroofclaims/replacement",
+      "imageAlt": "Brown architectural shingles on a residential roof",
+      "materials": true,
+      "body": [
+        "We work with the top shingle manufacturers in the industry so your roof gets good materials, whether you want a great-value standard shingle or an impact-resistant upgrade.",
+        "Every roof we install comes backed by a workmanship warranty from Houston Roof Claims, in addition to the manufacturer's material warranty. Terms are confirmed in writing at contract."
+      ],
+      "points": [
+        "Standard 30-year architectural shingles from six manufacturers",
+        "Class 3 and Class 4 impact-resistant upgrades",
+        "Materials that meet Texas building codes",
+        "A dimensional look with rich color blends, and algae-resistant options on select shingles",
+        "Workmanship warranty in writing, plus the manufacturer's material warranty",
+        "Clear communication at every milestone through to the final walkthrough"
+      ],
+      "faqs": [
+        { "q": "Which shingle should I choose?", "a": "A standard 30-year architectural shingle is the common choice for value-minded homeowners and for insurance-covered replacements. Impact-resistant shingles cost more and may earn an insurance discount. We walk you through both at the inspection." },
+        { "q": "What warranty do I get?", "a": "A workmanship warranty from us on the installation, plus the manufacturer's material warranty on the shingles. Specific terms are confirmed in writing at contract." }
+      ]
+    },
+    {
+      "slug": "impact-resistant-shingles",
+      "group": "residential",
+      "title": "Impact-Resistant Shingles",
+      "short": "Class 3 and Class 4 shingles that may lower your premium.",
+      "text": "Class 3 and Class 4 impact-rated shingles under UL 2218, built for Houston hail and Gulf winds, and often eligible for an insurance discount.",
+      "image": "/brands/houstonroofclaims/impact-shingles",
+      "imageAlt": "Overlapping shingles laid across a roof slope",
+      "body": [
+        "Class 3 shingles withstand a 1.75-inch steel ball dropped from 20 feet under UL 2218. Class 4, the highest rating, withstands a 2-inch steel ball from the same height and uses SBS-modified polymer technology for flexibility in extreme temperatures.",
+        "Many Texas insurers offer premium discounts for Class 3 and Class 4 shingles. Check with your insurer for the specific discount available on your policy."
+      ],
+      "points": [
+        "Class 3: UL 2218 1.75-inch steel ball test",
+        "Class 4: UL 2218 2.0-inch steel ball test, the highest rating",
+        "Wind resistance ratings from 110 to 130 MPH",
+        "Class 4 lines from CertainTeed, Owens Corning, Atlas, IKO, Tamko and GAF",
+        "May qualify for a TWIA wind and hail premium discount",
+        "Houston averages 3 to 4 significant hailstorms a year",
+        "Class 4 shingles are designed to resist cracking and splitting from large hailstones"
+      ]
+    },
+    {
+      "slug": "gutter-installation",
+      "group": "residential",
+      "title": "Gutter Installation",
+      "short": "New gutters, replacements, repairs and guards. Free estimates.",
+      "text": "Professionally installed gutters that direct water away from your foundation and handle the rainfall Houston storms bring. Estimates are free.",
+      "image": "/brands/houstonroofclaims/gutters",
+      "imageAlt": "A white downspout running down the brick wall of a home",
+      "body": [
+        "Properly installed gutters direct water away from your foundation and prevent costly damage. Houston storms demand a reliable gutter system, so we install gutters built to handle heavy rainfall.",
+        "We assess what your home needs and give you an honest, competitive quote at no cost and with no obligation."
+      ],
+      "points": [
+        "New gutter installation",
+        "Gutter replacement",
+        "Gutter repair",
+        "Gutter guards and screens",
+        "Downspout repair and additions"
+      ]
+    },
+    {
+      "slug": "solar-detach-and-reset",
+      "group": "residential",
+      "title": "Solar Detach & Reset",
+      "short": "Panels off, new roof on, panels back and working.",
+      "text": "If you need a new roof and have solar panels, we handle the full detach and reset so the replacement goes smoothly and your system keeps working.",
+      "image": "/brands/houstonroofclaims/solar",
+      "imageAlt": "Solar panels mounted on the shingle roof of a brick home",
+      "body": [
+        "When your roof needs replacing but you have solar panels installed, the panels have to be carefully removed, the roof replaced, and the panels reinstalled. The process takes specialized expertise to keep your solar system working properly and your roof warranty intact.",
+        "We coordinate the detach and reset from scheduling through reinstallation. Estimates are free, with no obligation and no hidden fees."
+      ],
+      "points": [
+        "Detach: panels and racking safely removed from the existing roof",
+        "Replace: the new roof installed with quality materials",
+        "Reset: panels reinstalled and the system verified as fully operational",
+        "Roof replacement with solar detach and reset",
+        "Storm damage insurance claims involving solar",
+        "Solar detach only, or solar reset only",
+        "A consultation if you are not sure which you need"
+      ]
+    },
+    {
+      "slug": "twia-wpi8-windstorm-certificates",
+      "group": "storm",
+      "title": "TWIA WPI8 Compliance",
+      "short": "Roofs installed to the windstorm standard your certificate needs.",
+      "text": "We install every roof to TWIA windstorm standards so you can obtain or maintain the WPI8 certificate your wind and hail coverage depends on.",
+      "body": [
+        "A WPI8, the Windstorm Certificate of Compliance, verifies that your roof and structure meet Texas Department of Insurance building code requirements for windstorm resistance. It is required to obtain or maintain windstorm insurance through TWIA in designated coastal areas, which include parts of the Houston-Galveston region.",
+        "TWIA serves 14 counties and one part of Harris County along the Texas coast. In a designated catastrophe area, standard homeowner policies typically exclude wind and hail coverage, which makes TWIA the primary option."
+      ],
+      "points": [
+        "Roofs installed using TDI-approved methods and materials",
+        "A licensed TDI windstorm inspector conducts the on-site inspection",
+        "The inspector issues the WPI8 certificate when the roof passes",
+        "The certificate is filed with TWIA for your wind and hail coverage",
+        "Impact-resistant shingles can qualify you for a TWIA premium discount",
+        "Class 4 shingles can save up to 35% on your annual TWIA premium, and more alongside hurricane clips and sealed roof decking",
+        "Properties in Galveston, Brazoria, Chambers and parts of Harris County may fall in these zones",
+        "Help documenting wind and hail damage for a TWIA claim"
+      ],
+      "faqs": [
+        { "q": "Do I need a WPI8 certificate?", "a": "If your property sits in a TWIA-designated catastrophe area, you need a valid WPI8 to qualify for wind and hail insurance. Without it you may not be able to get coverage, or your premiums could be significantly higher." },
+        { "q": "Who issues the certificate?", "a": "A licensed TDI windstorm inspector, after an on-site inspection of the completed roof. Our part is installing to the standard the inspection checks." },
+        { "q": "How do I look up my certificate?", "a": "Search by property address or certificate number on the official TWIA certificate search portal at twia.org, which shows your current WPI8 windstorm certificate status." },
+        { "q": "How soon should I file a TWIA claim?", "a": "As soon as possible after wind or hail damage, because Texas law requires you to report damage promptly. We help document the damage and work with your adjuster. TWIA makes all coverage decisions independently." }
+      ]
+    }
+  ],
+  "claim": {
+    "title": "How a storm claim works",
+    "text": "We assist at each step. Coverage decisions are made by your insurance carrier.",
+    "steps": [
+      { "title": "Free inspection", "text": "A trained inspector evaluates your roof and photographs every item of damage." },
+      { "title": "Written damage report", "text": "You get a written findings report and photographic evidence to submit to your insurer." },
+      { "title": "You file the claim", "text": "You call your carrier with the report in hand, and we explain what it says." },
+      { "title": "Adjuster appointment", "text": "We attend the adjuster inspection at your home and present our documented scope in person." },
+      { "title": "Supplemental documentation", "text": "If further damage is identified, we provide an updated contractor scope and additional photos." },
+      { "title": "Build and updates", "text": "Once coverage is confirmed, we install the roof with clear communication at every milestone." }
+    ]
+  },
+  "materials": {
+    "title": "Shingles we install",
+    "text": "We work with the top shingle manufacturers in the industry, in both standard 30-year and Class 4 impact-resistant lines.",
+    "brands": ["CertainTeed", "Owens Corning", "Atlas Roofing", "IKO", "Tamko", "GAF"]
+  },
+  "projects": [
+    {
+      "title": "Hail damage to a new roof",
+      "town": "Pearland",
+      "scope": "Insurance claim",
+      "service": "storm-damage-insurance-claims",
+      "text": "Hail damage documented for the claim, then a complete replacement once coverage was confirmed.",
+      "image": "/brands/houstonroofclaims/project-pearland",
+      "imageAlt": "A single-story home in Pearland with a new gray shingle roof",
+      "before": "/brands/houstonroofclaims/project-pearland-before",
+      "beforeAlt": "An inspector crouched on the roof edge of the home before the replacement"
+    },
+    {
+      "title": "Storm damage to a complete replacement",
+      "town": "Sugar Land",
+      "scope": "Complete replacement",
+      "service": "roof-replacement",
+      "text": "Storm damage across the slopes of a two-story home, replaced top to bottom.",
+      "image": "/brands/houstonroofclaims/project-sugarland",
+      "imageAlt": "A two-story brick home in Sugar Land with a new dark shingle roof",
+      "before": "/brands/houstonroofclaims/project-sugarland-before",
+      "beforeAlt": "The worn roof of the home photographed from the ridge before the replacement"
+    }
+  ],
+  "about": {
+    "title": "Veteran-owned, Houston-based",
+    "text": [
+      "Houston Roof Claims was founded by a U.S. Army veteran on discipline, integrity and accountability, and it is built around one principle: every homeowner deserves honest guidance, fast action and clear communication from the first call through to the completed roof.",
+      "\"I founded Houston Roof Claims on the values I learned serving our country: integrity, dedication and taking care of people. Every homeowner deserves honest, quality work at a fair price.\" That is Tim Bridges, owner and founder.",
+      "We inspect thoroughly, photograph every item of damage, and prepare a written findings report you can submit to your insurer. We also attend the adjuster inspection and present our documented scope in person."
+    ],
+    "image": "/brands/houstonroofclaims/founder",
+    "imageAlt": "Tim Bridges, owner and founder of Houston Roof Claims",
+    "values": [
+      { "title": "We show up fast", "text": "Storm season does not wait. We prioritize urgent inspection requests and tarp where it is needed." },
+      { "title": "We document the damage", "text": "Photographs of every item and a written report you can hand to your insurer." },
+      { "title": "We communicate throughout", "text": "A real point of contact at every milestone. No silence, no surprises." }
+    ]
+  },
+  "inspection": {
+    "title": "From first call to finished roof",
+    "steps": [
+      { "title": "Request inspection", "text": "Tell us about your roof. It takes under a minute, and it is free with no obligation." },
+      { "title": "Appointment confirmed", "text": "We call or text to confirm a day and time that works for you." },
+      { "title": "Roof assessment", "text": "A trained inspector evaluates and documents your roof's condition." },
+      { "title": "Claim and project guidance", "text": "We explain the findings and walk you through your options in plain language." },
+      { "title": "Build and updates", "text": "Professional installation with clear communication at every milestone." }
+    ]
+  },
+  "serviceArea": ["Pearland", "Houston", "Katy", "Sugar Land", "The Woodlands", "Cypress", "Spring", "Humble", "Tomball", "Conroe", "Friendswood", "League City", "Pasadena", "Missouri City", "Stafford", "Richmond", "Rosenberg"],
+  "areasText": "Our office is on Greenblade Court in Pearland, and we cover Harris, Fort Bend, Montgomery, Brazoria and Galveston counties.",
+  "areasImage": "/brands/houstonroofclaims/areas",
+  "areasImageAlt": "The Houston skyline at sunset",
+  "facts": [
+    {
+      "heading": "Our leadership",
+      "items": [
+        "Tim Bridges, Owner and Founder, U.S. Army veteran",
+        "Dylan Polanco, General Manager and storm damage specialist",
+        "David Ligotti, Process Manager, operations and customer experience",
+        "Evangelina Ligotti, Controller, finance and operations management"
+      ]
+    },
+    {
+      "heading": "Project managers and specialists",
+      "items": [
+        "Rodrigo Medina, Project Manager, on-site crews, materials and quality",
+        "Terrence Baker, Project Manager, scheduling through completion",
+        "Aaron Koppel, Roofing Specialist, your options and what your home needs",
+        "Jose Navarro, Roofing Specialist, walks you through your options",
+        "Pete Salibian, Customer Relations and Roofing Specialist, your consistent point of contact"
+      ]
+    },
+    {
+      "heading": "Who helps you at each step",
+      "items": [
+        "First call and scheduling",
+        "Roof assessment and options",
+        "Scope review and project planning",
+        "Installation and coordination",
+        "Final walkthrough"
+      ]
+    },
+    {
+      "heading": "Roof financing",
+      "text": "Roof financing is available through Hearth. You can see your options and run the payment calculator on our site without any impact on your credit."
+    },
+    {
+      "heading": "Financing terms through Hearth",
+      "items": [
+        "Hearth works with multiple lenders, so you apply once instead of at several banks",
+        "Loan amounts from $1,000 to $100,000 and above",
+        "Repayment terms from 2 to 12 years, with fixed monthly payments",
+        "No prepayment penalties, so you can pay it off early",
+        "No hard credit pull for the initial rate check, and checking your rate does not affect your credit score",
+        "Rates and terms depend on your credit profile and the lender, and APR varies",
+        "Funds go directly to us and we schedule your installation",
+        "Financing can cover an insurance deductible or the gap on an upgrade to Class 4 shingles"
+      ]
+    },
+    {
+      "heading": "Services we provide",
+      "items": [
+        "Free roof inspections for storm damage assessment",
+        "Roof repair and full roof replacement",
+        "Insurance claim assistance and documentation",
+        "Emergency roof tarping and leak repair",
+        "Hail, wind and hurricane damage restoration",
+        "Residential and commercial roofing"
+      ]
+    },
+    {
+      "heading": "Free homeowner help center",
+      "items": [
+        "File a damage claim: carrier-specific checklists for State Farm, Allstate, USAA, Farmers, Nationwide and TWIA",
+        "Understand your loss statement: ACV, RCV, recoverable depreciation, holdback and line items",
+        "Review a roofing proposal: what each section means and what a fair proposal includes",
+        "Understand inspection findings: what hail and wind damage looks like in photographs",
+        "What happens after inspection: claim number, adjuster, loss statement, approval, build, walkthrough",
+        "Choose the right shingles: Class 3 against Class 4, warranty tiers and color selection"
+      ]
+    },
+    {
+      "heading": "Inspection appointment windows",
+      "items": ["Morning, 9 AM – 12 PM", "Afternoon, 12 PM – 3 PM", "Late afternoon, 3 PM – 6 PM"]
+    },
+    {
+      "heading": "Storm damage we fix",
+      "items": [
+        "Hail damage: granule loss, cracked shingles, dented gutters",
+        "Wind damage: missing shingles, exposed underlayment",
+        "Water leaks: interior stains, compromised structure",
+        "Storm impact: debris damage, structural compromise"
+      ]
+    },
+    {
+      "heading": "Counties we cover",
+      "text": "Harris, Fort Bend, Montgomery, Brazoria and Galveston counties."
+    },
+    {
+      "heading": "Shingle lines we install",
+      "items": [
+        "CertainTeed: Landmark and Landmark PRO, NorthGate SBS-modified Class 4, part of the Integrity Roof System",
+        "Owens Corning: Oakridge, the Duration series with SureNail Technology, Duration STORM Class 4 and TruDefinition Duration FLEX",
+        "Atlas Roofing: Pinnacle Pristine and Signature Select, StormMaster Shake and StormMaster Slate in Class 4, with Scotchgard Protector by 3M against algae streaks",
+        "IKO: Cambridge, Dynasty and Nordic in Class 4, with ArmourZone reinforced nailing for a 130 MPH wind rating",
+        "Tamko: Heritage and Heritage Vintage, Titan XT in Class 4 and StormFighter IR in Class 3",
+        "GAF: Timberline HDZ with LayerLock, Timberline UHDZ, Timberline AS II Armor Shield in Class 4, with WindProven coverage and the Golden Pledge limited warranty"
+      ]
+    },
+    {
+      "heading": "Pearland, our home base",
+      "text": "Our office is at 2705 Greenblade Ct in Pearland, where we live and work year-round rather than arriving as a national chain or an out-of-town company chasing storm season."
+    },
+    {
+      "heading": "Pearland neighborhoods we serve",
+      "items": [
+        "Shadow Creek Ranch",
+        "Silverlake",
+        "Southdown",
+        "Corrigan",
+        "Country Place",
+        "Kingsley Estates",
+        "Barry Rose",
+        "Broadway",
+        "ZIP codes 77581, 77584 and 77588"
+      ]
+    },
+    {
+      "heading": "Neighborhoods in the towns we serve",
+      "items": [
+        "Katy: Cinco Ranch, Grand Lakes, Seven Meadows, Firethorne, Woodcreek Reserve, Pine Mill Ranch, Cross Creek Ranch and Tamarron. ZIP codes 77449, 77450, 77494, 77493, 77084, 77491 and 77492",
+        "Sugar Land: First Colony, Riverstone, New Territory, Telfair, Sugar Creek, Greatwood, Sienna Plantation and Imperial. ZIP codes 77478, 77479, 77498 and 77496",
+        "The Woodlands: Creekside Park, Alden Bridge, Cochran's Crossing, Indian Springs, Panther Creek, Sterling Ridge, Grogan's Mill and Harper's Landing. ZIP codes 77380, 77381, 77382, 77384, 77385, 77386, 77387 and 77389",
+        "Cypress: Bridgeland, Towne Lake, Stone Gate, Cypress Creek Lakes, Longwood, Cypress Falls, Black Horse Ranch and Fairfield. ZIP codes 77429, 77433, 77095, 77065, 77070 and 77449",
+        "Spring: Klein, Gleannloch Farms, Louetta, Windrose, Augusta Pines, Birnam Wood, Legends Run and Champions. ZIP codes 77373, 77379, 77380, 77381, 77388, 77389, 77090 and 77068"
+      ]
+    },
+    {
+      "heading": "Houston areas in our project stories",
+      "items": ["Heights", "Midtown", "Montrose", "Memorial", "Meyerland", "Clear Lake", "Friendswood"]
+    },
+    {
+      "heading": "Storm events we work",
+      "items": ["April 2025 hail event", "May 2024 severe storms", "Hurricane Beryl 2024", "February 2023 ice storm"]
+    },
+    {
+      "heading": "What each project story includes",
+      "items": [
+        "The Houston neighborhood, never a full address",
+        "Verified storm event context",
+        "Before and after photos",
+        "The product installed: manufacturer, line and color",
+        "An approximate timeline",
+        "An approved customer review"
+      ]
+    },
+    {
+      "heading": "Your project portal",
+      "items": [
+        "Job status from inspection findings through final sign-off",
+        "Every inspection photo, organized and labeled",
+        "Claim progress through each milestone",
+        "Material selections to review and confirm",
+        "Build timeline with installation dates and crew assignments",
+        "Final documents: warranty certificate, final invoice and Roof Passport",
+        "Your project coordinator sends your access link after the inspection is complete"
+      ]
+    },
+    {
+      "heading": "Installation day",
+      "items": [
+        "A signed proposal is required before materials are ordered",
+        "Materials are usually delivered the morning of installation, and you do not need to be home for delivery or for the install",
+        "Cleanup is included, with a magnetic nail sweep of the yard and driveway",
+        "Your project manager gives you a specific schedule and performs quality checks throughout",
+        "A final walkthrough with you, and every punch-list item addressed before sign-off"
+      ]
+    },
+    {
+      "heading": "Loss statement review",
+      "text": "We compare your insurer's Explanation of Loss against our documented damage report, and prepare a supplemental claim with supporting evidence where covered items were missed or undervalued. Supplements are common and may take additional time, and the revised determination is your carrier's."
+    },
+    {
+      "heading": "What we are and are not",
+      "text": "Houston Roof Claims LLC is a roofing contractor, not an insurance company, a public adjuster or an attorney. We document damage and guide you through the process, and we do not guarantee claim outcomes: coverage and payment amounts are determined solely by your insurance carrier under your policy terms."
+    },
+    {
+      "heading": "What we ask when you book",
+      "items": [
+        "Your name, phone number and property address",
+        "Email is optional, for a confirmation",
+        "A preferred date and time slot, or tell us you are flexible",
+        "Your roof concern: hail damage, wind damage, leaks or missing shingles, a roof 10 or more years old, general storm damage, or not sure",
+        "Any specific areas you would like us to inspect",
+        "We respond as soon as possible after your request"
+      ]
+    },
+    {
+      "heading": "Your information",
+      "items": [
+        "We do not sell, rent, trade or share your personal information with third parties, marketing companies, data brokers or advertisers",
+        "Customer information stays in-house, reachable only by team members who need it to do the work",
+        "We use your phone number for marketing texts only if you explicitly opt in, and you can opt out of any future communications",
+        "Booking an inspection does not require marketing consent, and an inspection obligates you to nothing",
+        "Reply STOP to stop texts; message and data rates may apply",
+        "Call (832) 536-6163 or email claims@houstonroofclaims.com to exercise your privacy rights"
+      ]
+    },
+    {
+      "heading": "Storm damage checklist for homeowners",
+      "items": [
+        "Check for missing or damaged shingles after every storm",
+        "Look for granules in gutters and downspouts",
+        "Inspect the attic for water stains or daylight",
+        "Document any visible damage with photos",
+        "Check for dented gutters or downspouts",
+        "Look for cracked or damaged vent boots",
+        "Inspect flashing around chimneys and skylights",
+        "Check for sagging or uneven roof sections",
+        "Note any new interior water stains",
+        "Call us for a professional assessment"
+      ]
+    },
+    {
+      "heading": "Guides for homeowners",
+      "items": [
+        "How to read your roof insurance loss statement: RCV, ACV, depreciation, O and P, and holdback",
+        "ACV against RCV: what your roof claim actually pays, and how to recover the holdback",
+        "How to prepare for your adjuster appointment, and what not to agree to on the spot",
+        "How to report storm damage and file a claim in Texas, with carrier phone numbers and portal links",
+        "Hail and wind damage in Houston: how carriers assess it and common denial reasons",
+        "Does Texas homeowners insurance cover hail damage?",
+        "How to document storm damage in the first 24 hours",
+        "What a TWIA WPI-8 certificate is and why it matters",
+        "Roof financing with no money down",
+        "How long a storm damage claim takes in Texas"
+      ]
+    },
+    {
+      "heading": "Help center",
+      "text": "Our AI help center lets you upload your loss statement, describe your damage or walk through your inspection findings and get plain-language guidance, with no obligation and nothing gated."
+    },
+    {
+      "heading": "Referrals",
+      "text": "Referrals are the highest form of trust. Book a free inspection and mention your neighbor's name, and if you refer a neighbor who becomes a customer we say thank you."
+    },
+    {
+      "heading": "Join the team",
+      "items": [
+        "We hire motivated roofing sales professionals",
+        "Commission-based pay with no ceiling on your earnings",
+        "A comprehensive training and mentorship program, with no prior roofing experience needed",
+        "Apply with your name, phone, email and the city you live in",
+        "Careers: roofclaims.work"
+      ]
+    },
+    {
+      "heading": "Languages",
+      "text": "We take calls in English and Spanish."
+    },
+    {
+      "heading": "The company",
+      "text": "Houston Roof Claims LLC is a locally owned, veteran-owned, family-owned business invested in our community, serving homeowners throughout the Greater Houston metropolitan area."
+    },
+    {
+      "heading": "Warranty and materials terms",
+      "text": "Warranties for materials and workmanship are detailed in your individual project contract, and manufacturer warranties on materials are subject to the manufacturer's own terms. We stand behind our workmanship and address installation-related issues in line with the warranty terms in your project agreement."
+    },
+    {
+      "heading": "Terms and governing law",
+      "text": "Scope, pricing and the terms of each project are set out in a written agreement or estimate given to you before work starts. Our site terms are governed by Texas law, with disputes resolved in the courts of Harris County, Texas."
+    },
+    {
+      "heading": "Find us",
+      "items": [
+        "Instagram: @htxroofclaims",
+        "Google: read and leave a review for Houston Roof Claims",
+        "Emergency line: (832) 536-6163",
+        "Call or text: (832) 536-6163",
+        "Email: claims@houstonroofclaims.com",
+        "Office: 2705 Greenblade Ct, Pearland, TX 77584"
+      ]
+    }
+  ]
+}
