@@ -1,0 +1,496 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "A Phase Electric, LLC",
+  "shortName": "A Phase Electric",
+  "summary": "Residential and commercial electrical work by a licensed master electrician in Humble and the Greater Houston area.",
+  "phone": "(832) 990-4248",
+  "email": "jana@aphaselectric.com",
+  "address": "1931 Humble Pl Dr Ste 107",
+  "town": "Humble",
+  "state": "TX",
+  "zip": "77338",
+  "rating": 5.0,
+  "reviewCount": 449,
+  "hours": [["Mon – Sat", "8 AM – 5 PM"], ["Sunday", "Closed"], ["Emergencies", "24 hours a day"]],
+  "brand": {
+    "primary": "#21409a",
+    "primaryDeep": "#16306f",
+    "accent": "#fcb215",
+    "ink": "#161922",
+    "muted": "#545454",
+    "surface": "#eef2fb",
+    "line": "#dde3f0",
+    "heading": "'Barlow Condensed', system-ui, sans-serif",
+    "body": "'Barlow', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap",
+    "logo": "/brands/aphaseelectric/logo.webp",
+    "logoWidth": 170
+  },
+  "emergency": {
+    "title": "24-hour emergency electrician",
+    "text": "Burning smells, sparking outlets, lost power or a breaker that will not reset, call any time of day or night."
+  },
+  "sameDay": "Same-day and emergency service for the urgent, smaller problems too, like a tripped breaker or an outlet that has stopped working.",
+  "licenses": [
+    { "label": "Texas Master Electrician", "number": "TMEL 447620" },
+    { "label": "Texas Electrical Contractor", "number": "TECL 34091" }
+  ],
+  "hero": {
+    "eyebrow": "Your trusted electricians in Humble, TX",
+    "title": "Electrical work done",
+    "titleAccent": "right the first time.",
+    "lead": "When choosing an electrician for your home or business, don't settle. Over 20 years of real electrical experience, a licensed master electrician on every job, and an in-home estimate before the work starts.",
+    "image": "/brands/aphaseelectric/hero",
+    "imageAlt": "High-bay lights installed across a commercial warehouse ceiling"
+  },
+  "groups": [
+    {
+      "slug": "residential",
+      "title": "Residential",
+      "icon": "home",
+      "summary": "Repairs, inspections, breaker boxes, fans and lighting for homes across the Humble area.",
+      "intro": "We believe in putting our customers first and making sure their homes are completely safe and as energy-efficient as possible. Every job is handled by a licensed electrician, and there is no job too big or too small.",
+      "image": "/brands/aphaseelectric/residential",
+      "imageAlt": "A ceiling fan with a lit glass fixture installed in a tray ceiling",
+      "services": [
+        {
+          "slug": "electrical-repair",
+          "title": "Electrical Repair and Troubleshooting",
+          "icon": "wrench",
+          "text": "Recurring blown fuses, flickering lights, buzzing outlets and burning odors traced to the cause and repaired to code.",
+          "points": [
+            "Breaker boxes, control circuits and grounding checked",
+            "Surge protection analysis and GFCI and AFCI requirements",
+            "Power distribution, quality of supply and lighting circuitry",
+            "Smoke detector location and functionality"
+          ]
+        },
+        {
+          "slug": "emergency-electrician",
+          "title": "24-Hour Emergency Electrician",
+          "icon": "zap",
+          "text": "Electrical emergencies do not wait for business hours. A licensed electrician answers day or night across Humble, Atascocita, Kingwood and the surrounding communities.",
+          "points": [
+            "Burning or melting smells from outlets, switches or the panel",
+            "Outlets, switches or panels hot to the touch",
+            "Breakers that trip repeatedly or will not reset",
+            "Buzzing, crackling or popping from electrical components",
+            "Partial or sudden loss of power, or water near panels and wiring"
+          ]
+        },
+        {
+          "slug": "electrical-inspection",
+          "title": "Electrical Safety Inspection",
+          "icon": "shield",
+          "text": "A full assessment that shows whether your electrical system is up to code and working hazard-free, with the repairs or replacements it needs set out afterward.",
+          "points": [
+            "Switches, outlets and weather-rated outdoor outlets",
+            "GFCI protection, AFCI protection where required and gas line bonding",
+            "System grounding, breaker panels and shock hazards",
+            "Smoke detector functionality, loose devices and surge protection",
+            "Worth doing before buying a home, after a renovation or on a home over 25 years old"
+          ]
+        },
+        {
+          "slug": "breaker-box-repair-replacement",
+          "title": "Breaker Box Repair and Replacement",
+          "icon": "circuit",
+          "text": "Frequent trips, scorch marks, a warm panel or an outdated box assessed, then repaired or replaced by a master electrician.",
+          "points": [
+            "Breaker boxes typically last 25 to 40 years",
+            "Federal Pacific Stab-Lok panels are a known safety hazard",
+            "Panels upgraded to carry today's 200 amp loads",
+            "Repair or replace decided on an on-site assessment, not a guess"
+          ]
+        },
+        {
+          "slug": "ceiling-fan-installation",
+          "title": "Ceiling Fan Installation",
+          "icon": "fan",
+          "text": "Indoor and outdoor ceiling fans installed safely, including fan-rated boxes and locations with no existing power.",
+          "points": [
+            "Indoor and outdoor fans",
+            "Fan-rated boxes fitted where needed",
+            "New locations wired from scratch"
+          ]
+        },
+        {
+          "slug": "whole-home-surge-protection",
+          "title": "Whole-Home Surge Protection",
+          "icon": "plug",
+          "text": "A whole-home surge protector works like a power bar for the entire house, so a surge from lightning or the power station cannot reach any appliance, large or small.",
+          "points": [
+            "Protection across every circuit rather than one isolated appliance",
+            "Some generator models carry integrated whole-home surge protection"
+          ]
+        },
+        {
+          "slug": "outlets-switches-and-wiring",
+          "title": "Outlets, Switches and Wiring",
+          "icon": "plug",
+          "text": "Outlet wiring and repairs, switch and fixture replacement, dedicated circuits for equipment, and smart outlets and switches that stop vampire power loss.",
+          "points": [
+            "Outlet and switch replacement, and outlets that have stopped working",
+            "Dedicated circuit additions",
+            "Smart outlet and smart switch installation",
+            "Code corrections on existing or questionable wiring"
+          ]
+        },
+        {
+          "slug": "energy-efficiency-upgrades",
+          "title": "Energy Efficiency Upgrades",
+          "icon": "leaf",
+          "text": "A proactive look at the whole system to cut risk and the monthly utility bill, because swapping out old switches or fixtures alone can save hundreds of dollars a year.",
+          "points": [
+            "LED and recessed lighting",
+            "Ceiling fan upgrades that support HVAC efficiency year-round",
+            "Smart outlets and switches",
+            "Complete electrical system and breaker panel upgrades"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial",
+      "icon": "building",
+      "summary": "Service, repair, build-outs, remodels and panel upgrades for businesses.",
+      "intro": "Commercial electrical takes more than average home service. Our master electrician brings over 20 years of experience to the codes, standards and inspections a build-out has to meet, so the job does not cost you in delays or setbacks.",
+      "image": "/brands/aphaseelectric/commercial",
+      "imageAlt": "Conduit runs bending into a panel on a commercial build-out",
+      "services": [
+        {
+          "slug": "commercial-service-and-repair",
+          "title": "Commercial Servicing and Repair",
+          "icon": "wrench",
+          "text": "A complete analysis and inch-by-inch troubleshooting of the building's electrical system before any repair is made.",
+          "points": [
+            "Control circuits, grounding and weather-rated outdoor outlets",
+            "Loose or broken devices and surge protection",
+            "GFCI and AFCI requirements met",
+            "Power distribution, quality of supplied power and lighting circuitry",
+            "Smoke detector location and condition"
+          ]
+        },
+        {
+          "slug": "build-outs-and-remodels",
+          "title": "Build-Outs and Remodels",
+          "icon": "settings",
+          "text": "Electrical for small build-outs, remodels and other construction, done to the codes and standards the project has to clear the first time.",
+          "points": [
+            "Work that avoids project delays",
+            "Functionality, efficiency and safety",
+            "New construction and tenant build-outs",
+            "Office and retail wiring, rewiring and office renovations",
+            "Dedicated circuits for equipment"
+          ]
+        },
+        {
+          "slug": "commercial-breaker-box-upgrades",
+          "title": "Commercial Breaker Box Upgrades",
+          "icon": "circuit",
+          "text": "The panel sits at the center of the whole system, so it is checked and upgraded before it becomes the thing that stops the business.",
+          "points": [
+            "Rust, discoloring and burn spots",
+            "Recurring breaker trips and outdated equipment",
+            "Burning smells from the breaker box",
+            "Flickering lights, power surges and overheating equipment"
+          ]
+        },
+        {
+          "slug": "commercial-lighting",
+          "title": "Indoor and Outdoor Commercial Lighting",
+          "icon": "lightbulb",
+          "text": "New lighting installations and upgrades to older lighting, lit for ambiance, productivity and lower energy use across retail spaces and corporate offices alike.",
+          "points": [
+            "LED retrofit and completely new installations",
+            "Recessed can lighting and track lighting",
+            "Security lighting and parking lot lighting",
+            "Emergency and exit lighting installation"
+          ]
+        },
+        {
+          "slug": "commercial-maintenance-and-inspections",
+          "title": "Routine Maintenance and Code Inspections",
+          "icon": "shield",
+          "text": "Preventive maintenance, troubleshooting and inspections for code compliance, worked to keep downtime off the business.",
+          "points": [
+            "Routine inspections and preventive maintenance",
+            "Inspections for code compliance",
+            "Lighting retrofits and minor installations",
+            "Retail shops, offices, restaurants and commercial kitchens, medical and assisted living facilities, and warehouses"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "generators",
+      "title": "Generators",
+      "icon": "power",
+      "summary": "Standby generator installation and certified Generac maintenance for homes and businesses.",
+      "intro": "Outages from Texas storms and grid instability are no longer rare. We handle load calculations, permitting, automatic transfer switch installation and final inspection, then keep the system ready with certified maintenance.",
+      "image": "/brands/aphaseelectric/generators",
+      "imageAlt": "A Generac automatic transfer switch mounted beside the meter on a brick house",
+      "services": [
+        {
+          "slug": "generator-installation",
+          "title": "Generator Installation",
+          "icon": "battery",
+          "text": "Whole-home and commercial standby generators installed in full compliance with Texas electrical codes.",
+          "points": [
+            "Electrical load calculations to prevent overloads",
+            "Automatic transfer switch installation",
+            "Permit coordination and local inspections",
+            "Code-compliant grounding and bonding",
+            "Integration with existing panels or a service upgrade",
+            "Coordination with gas providers for fuel supply where it applies",
+            "Interlock kits for connecting a portable generator",
+            "On-site evaluation, generator selection, permits, installation, then load testing and final inspection"
+          ]
+        },
+        {
+          "slug": "generator-maintenance",
+          "title": "Generac Generator Maintenance",
+          "icon": "timer",
+          "text": "Certified Generac maintenance for homes and businesses, so the system starts when the power goes out rather than failing the one time it is asked.",
+          "points": [
+            "Visual inspection of the generator and its electrical connections",
+            "Battery testing and replacement recommendations",
+            "Load testing to confirm power output",
+            "Transfer switch inspection and functional testing",
+            "Oil, oil filter, air filter and spark plugs changed",
+            "Keeps manufacturer warranty coverage in place",
+            "A written summary of system condition and any recommended next steps"
+          ]
+        },
+        {
+          "slug": "generator-repair",
+          "title": "Generator Repair",
+          "icon": "wrench",
+          "text": "A generator that fails to start, shuts down, shows warning lights or error codes, or is not transferring power needs repair rather than maintenance, and a maintenance visit that turns up one carries straight on into the repair."
+        }
+      ]
+    },
+    {
+      "slug": "lighting",
+      "title": "Lighting",
+      "icon": "lightbulb",
+      "summary": "Recessed lighting, LED retrofits, security, garage, shop and new lighting installed.",
+      "intro": "Lighting upgrades should lower the bill rather than raise it. With over 20 years of experience, our master electrician works out what suits the space and installs it, from a single can light to a whole barn.",
+      "image": "/brands/aphaseelectric/lighting",
+      "imageAlt": "A large round chandelier hung in a two-storey entry with recessed lights around it",
+      "services": [
+        {
+          "slug": "recessed-lighting",
+          "title": "Recessed Lighting Installation",
+          "icon": "sun",
+          "text": "Can lights fitted flush into the ceiling so no clearance is lost and the room lights evenly. Roughly one can light per four to six square feet of ceiling, with the layout worked out for your space.",
+          "points": [
+            "Living rooms, halls, foyers, stairwells and game rooms",
+            "Under kitchen cabinets and above art or photo galleries",
+            "Offices, commercial buildings and low-ceilinged spaces",
+            "Waterproof solutions for bathrooms and shower stalls",
+            "Old fixtures removed and taken away"
+          ]
+        },
+        {
+          "slug": "led-retrofit",
+          "title": "LED Retrofit",
+          "icon": "leaf",
+          "text": "Older fixtures that give off little light converted to LED for a brighter room and lower energy use."
+        },
+        {
+          "slug": "new-lighting-installation",
+          "title": "New Lighting Installation",
+          "icon": "lightbulb",
+          "text": "Building or renovating a home or office, we help pick what works for the space and install it start to finish."
+        },
+        {
+          "slug": "security-and-outdoor-lighting",
+          "title": "Security Lighting",
+          "icon": "shield",
+          "text": "Exterior lighting placed and wired to keep the property lit through the night."
+        },
+        {
+          "slug": "garage-shop-and-barn-lighting",
+          "title": "Garage, Shop and Barn Lighting",
+          "icon": "building",
+          "text": "Brighter, more efficient lighting for a garage that doubles as a workshop, and the power and coverage a shop or barn needs.",
+          "points": ["Track lighting", "Direct lighting for a soft, even glow"]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Our quality of work will shock you",
+    "title": "Request your in-home estimate today.",
+    "text": "We begin every project with a free, on-site estimate and work closely with you to settle on the right solution before anything starts."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "A family-owned shop that works on referrals.",
+    "text": [
+      "With over 20 years of electrical experience, we bring not only knowledge to the table, but also dependability as well as the highest quality electrical services available. Our team maintains one of the best customer service ratings around, and we are proud of it.",
+      "We pride ourselves on over-delivering customer expectations. Whether it is offering a competitive price, showing up after hours, or coming up with a better plan to save our customers money, we always have our customer's best interests in mind.",
+      "There are no bigger compliments than referrals from loyal customers who know our quality of work is worth passing on, and we get a lot of them. Our business has always been primarily referral-based, and we believe that says something."
+    ],
+    "image": "/brands/aphaseelectric/about",
+    "imageAlt": "Two commercial electrical panels with conduit runs feeding them",
+    "values": [
+      { "title": "Locally owned", "text": "Our family-owned business comes with family-owned values." },
+      { "title": "Workmanship guarantee", "text": "All of our customers are 100% guaranteed the best result every single time." },
+      { "title": "Professional technicians", "text": "We only employ licensed, experienced and exceptionally skilled electricians." }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "When is it urgent to call a 24-hour emergency electrician?",
+      "a": "Call right away if you have to reset the breaker often, lights dim or flicker when appliances start, you smell electrical burning, the breaker box is hot or humming, or you have seen sparks, smoke or melted wiring."
+    },
+    {
+      "q": "How will I know when to replace my breaker box?",
+      "a": "Frequent breaker trips, an older home with an outdated system, melted or heavily worn wiring, strange noises from the panel, flickering lights, power surges when appliances start, or appliances that overheat. Contact us for an inspection and we will tell you which it is."
+    },
+    {
+      "q": "What is the lifespan of a breaker panel?",
+      "a": "According to the Consumer Product Safety Commission, a breaker panel's average lifespan is typically between 30 and 40 years, and humidity can shorten it."
+    },
+    {
+      "q": "How often should my electrical panel be inspected?",
+      "a": "Usually once every three to five years, though it depends on the age of the home and how much the system is being asked to supply."
+    },
+    {
+      "q": "Can I do the electrical work on my own?",
+      "a": "DIY electrical work is not recommended. There is a real risk of electrocution, improper work and fire, which is why electricians go through rigorous training and licensing first."
+    },
+    {
+      "q": "What parts of my home should be GFCI protected?",
+      "a": "GFCI equipment should be installed in all wet locations, including garages, around sinks, kitchens and bathrooms."
+    },
+    {
+      "q": "Do I need a surge protector?",
+      "a": "Yes. A surge from lightning or the power station enters the house without one, and it can destroy televisions, computers and anything else plugged in. A surge protector blocks the excess current or shorts it to ground."
+    },
+    {
+      "q": "What can I do to prevent electrical emergencies?",
+      "a": "Whole-home surge protection, a backup generator, GFCIs, regular maintenance by a licensed electrician, no damaged or indoor-rated extension cords outdoors, and nothing overloaded or left near water."
+    },
+    {
+      "q": "Is your work covered by a warranty?",
+      "a": "Most installations and electrical repairs come with a warranty, and we are always happy to go through the details specific to your project."
+    },
+    {
+      "q": "Do you take on small electrical jobs?",
+      "a": "Yes. No job is too small, from fixing an outlet to installing a new light switch."
+    },
+    {
+      "q": "What is a GFCI?",
+      "a": "A ground-fault circuit interrupter is a breaker built into an outlet, with test and reset buttons on its face. It cuts the power the moment it detects an improper flow of current, which is what stops a shock before it reaches you."
+    },
+    {
+      "q": "Is there a difference between my breaker panel and my old fuse panel?",
+      "a": "Yes. Both are designed to trip on an electrical overload, but a breaker panel can be reset while a fuse has to be replaced after every trip."
+    },
+    {
+      "q": "Why does my circuit breaker panel feel hot?",
+      "a": "Usually the panel is at its limit for current and needs upgrading, or it has gone bad and needs replacing. A hot panel with flickering lights often means a bad breaker, and it is common in a faulty brand like Federal Pacific Stab-Lok, so call the emergency electrician rather than waiting."
+    },
+    {
+      "q": "How do I reset my main breaker?",
+      "a": "Turn off each breaker switch in the panel one at a time, find the main breaker outside near the electric meter, flip the main switch off and back on twice and leave it on without touching the meter, then switch the breakers in the panel back on. If the power does not come back, contact us."
+    },
+    {
+      "q": "Do commercial electricians need unique licensing or certifications?",
+      "a": "In Texas an electrician is not required to hold any additional licensing or training to take on commercial work, which is exactly why experience and reputation matter so much when you choose one."
+    },
+    {
+      "q": "What is the difference between residential and commercial electrical?",
+      "a": "Residential work is done in someone's home and commercial work in an office or other professional setting, usually on a much larger scale. We do both, which gives us a fine-tuned understanding of each."
+    },
+    {
+      "q": "How can I prevent electrical fires?",
+      "a": "Have a licensed electrician inspect the home to find and repair any malfunction, and upgrade the electrical equipment when it is recommended."
+    },
+    {
+      "q": "Why is my breaker box making a buzzing or humming noise?",
+      "a": "Buzzing or humming from the breaker box points to a defective system. Get an electrician out quickly and have it replaced before the other electrical components take any harm."
+    }
+  ],
+  "serviceArea": [
+    "Humble",
+    "Kingwood",
+    "Atascocita",
+    "Crosby",
+    "Dayton",
+    "Huffman",
+    "Baytown",
+    "Channelview",
+    "Deer Park",
+    "La Porte",
+    "New Caney",
+    "Porter",
+    "Cleveland",
+    "Splendora",
+    "Spring",
+    "The Woodlands",
+    "Conroe",
+    "Tomball",
+    "Houston"
+  ],
+  "facts": [
+    {
+      "heading": "Licensing",
+      "items": ["Texas Master Electrician TMEL 447620", "Texas Electrical Contractor TECL 34091"]
+    },
+    {
+      "heading": "Experience",
+      "text": "Over 20 years of real electrical experience, with a licensed master electrician on residential and commercial work alike."
+    },
+    {
+      "heading": "Generac certified",
+      "text": "A Generac-certified electrician carries out generator maintenance to the manufacturer's requirements."
+    },
+    {
+      "heading": "Estimates",
+      "text": "Every project begins with a free, in-home estimate before any work is scheduled."
+    },
+    {
+      "heading": "Emergency service",
+      "text": "24-hour emergency electrician service, all year round, at (832) 990-4248."
+    },
+    {
+      "heading": "Licensed and insured",
+      "text": "Every job is handled by a licensed electrician who is fully insured and up to date on state and local electrical codes, and the technicians are background-checked."
+    },
+    {
+      "heading": "Guarantee and warranty",
+      "text": "Quality service, excellent customer care and 100% satisfaction guaranteed on every job, with most installations and repairs covered by a warranty."
+    },
+    {
+      "heading": "Pricing",
+      "text": "Honest, upfront estimates and detailed quotes with the costs explained before the work starts, so there are no surprises on the bill. We educate our customers rather than upselling them."
+    },
+    {
+      "heading": "Codes and compliance",
+      "text": "Work is brought up to code and held to safety standards including OSHA compliance, and permits, inspections and coordination with local authorities and utility providers are handled for you."
+    },
+    {
+      "heading": "Careers",
+      "items": [
+        "Experienced electricians can apply through the website",
+        "Applicants need at least a TDLR Apprentice License",
+        "Residential and commercial electrical experience required",
+        "The application asks for relevant work experience in detail and at least three professional references"
+      ]
+    },
+    {
+      "heading": "Text messages",
+      "text": "Submitting a form on the website consents to receiving SMS from A Phase Electric. Frequency may vary, message and data rates may apply, and replying STOP opts out."
+    },
+    {
+      "heading": "Find us",
+      "items": ["Facebook: facebook.com/Aphaselectric", "Google Business Profile reviews"]
+    }
+  ]
+}
