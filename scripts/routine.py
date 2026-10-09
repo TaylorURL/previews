@@ -30,7 +30,8 @@ Commands:
                                    letter can show the site
     send SLUG                      send the first letter through
                                    /api/outreach/previews
-    sent-today                     how many preview letters went out today
+    sent-today                     how many preview letters went out today,
+                                   less any a catch-up held
 """
 
 import json
@@ -275,15 +276,53 @@ def send(slug):
         sys.exit(1)
 
 
-def sent_today():
-    # The day is Houston's, so a letter sent at five in the afternoon counts
-    # toward that day and not toward the next morning's run.
+def instant(value):
+    """A timestamp the database wrote, as an aware datetime, or None."""
+    return datetime.fromisoformat(value.replace("Z", "+00:00")) if value else None
+
+
+def catch_up(settings, now=None):
+    """The outreach catch-up as the settings hold it: when it opened and
+    whether it is open now, or (None, False) when none is set.
+
+    It is the one set in taylorurl-com lib/outreach/sending/catch-up.js, read
+    from the same four columns. While it is open the letters it holds - sites
+    registered before it opened whose letter had not gone - go from its
+    opening rather than from 8:00, and outside the day's cap.
+    """
+    now = now or datetime.now(timezone.utc)
+    since, opened, until = (instant(settings.get(name)) for name in
+                            ("catch_up_held_since", "catch_up_from", "catch_up_until"))
+    if not (since and opened and until) or since >= opened:
+        return None, False
+    return opened, opened <= now < until
+
+
+def sent_today_count():
+    """Preview letters that went today, less the ones a catch-up held.
+
+    The day is Houston's, so a letter sent at five in the afternoon counts
+    toward that day and not toward the next morning's run. A catch-up's held
+    letters are left out on the day it opened, so the backlog does not spend
+    the cap the day's own letters are paced by.
+    """
     from zoneinfo import ZoneInfo
 
-    local = datetime.now(ZoneInfo("America/Chicago"))
+    houston = ZoneInfo("America/Chicago")
+    local = datetime.now(houston)
     start = local.replace(hour=0, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
-    rows = rest("GET", f"preview_sites?select=slug&sent_at=gte.{start.isoformat().replace('+00:00', 'Z')}")
-    print(len(rows or []))
+    rows = rest("GET", "preview_sites?select=slug,created_at,sent_at"
+                       f"&sent_at=gte.{start.isoformat().replace('+00:00', 'Z')}") or []
+    settings = rest("GET", "outreach_settings?select=catch_up_held_since,catch_up_from,catch_up_until&limit=1")
+    opened, _ = catch_up(settings[0] if settings else {})
+    if opened and opened.astimezone(houston).date() == local.date():
+        rows = [row for row in rows
+                if not (instant(row["created_at"]) < opened <= instant(row["sent_at"]))]
+    return len(rows)
+
+
+def sent_today():
+    print(sent_today_count())
 
 
 def main(argv):
