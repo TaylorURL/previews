@@ -1,0 +1,254 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "talk": "our team",
+  "name": "The ACTion group",
+  "shortName": "The ACTion group",
+  "tagline": "A vision today for tomorrow's journey.",
+  "phone": "(281) 452-9940",
+  "email": "info@theagcteam.com",
+  "address": "15201 E Freeway Service Rd, Suite 214",
+  "town": "Channelview",
+  "state": "TX",
+  "zip": "77530",
+  "since": 1999,
+  "hours": [["Mon – Fri", "8 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "cta": {
+    "label": "Get in Touch",
+    "text": "If you're interested in knowing more about our services, or how we can help you, drop us a line."
+  },
+  "brand": {
+    "primary": "#1b2bb5",
+    "primaryDeep": "#121c7a",
+    "accent": "#f0690d",
+    "ink": "#15181f",
+    "muted": "#565d6b",
+    "surface": "#f5f6f9",
+    "cream": "#e9ecf4",
+    "line": "#dde1ea",
+    "heading": "'Archivo', Helvetica, Arial, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/theactiongroup/logo.webp",
+    "logoWidth": 220
+  },
+  "hero": {
+    "eyebrow": "Regulatory compliance consulting since 1999",
+    "title": "A vision today for tomorrow's journey.",
+    "lead": "The ACTion group is a regulatory compliance consulting firm helping organizations achieve operational excellence, from the boardroom to the galley.",
+    "image": "/brands/theactiongroup/hero",
+    "imageAlt": "Mooring rope coiled over the deck rail of a working vessel",
+    "points": ["Advise, certify and train", "Maritime regulatory compliance", "Offices in Channelview, TX and Southbury, CT"]
+  },
+  "overview": {
+    "title": "Advise, Certify, and Train",
+    "text": "Pick a service to see what it covers, or call and talk it through with our team."
+  },
+  "services": [
+    {
+      "slug": "safety-management-systems",
+      "title": "Safety Management Systems",
+      "icon": "shield",
+      "summary": "Systems built to Sub Chapter M, TMSA, RCP and ISM.",
+      "text": "We develop, implement, and maintain Safety Management Systems in accordance to industry standards of excellence, Sub Chapter M, Tanker Management Self Assessment (TMSA), AWO - Responsible Carrier Program (RCP), and International Safety Management (ISM) Code.",
+      "lead": "We develop, implement, and maintain Safety Management Systems in accordance to industry standards of excellence.",
+      "covers": [
+        { "title": "Sub Chapter M", "text": "Safety management built to the Coast Guard's towing vessel inspection regulations." },
+        { "title": "Tanker Management Self Assessment", "text": "Systems developed and maintained against the TMSA standard." },
+        { "title": "AWO Responsible Carrier Program", "text": "Safety management written and maintained to the AWO RCP." },
+        { "title": "International Safety Management Code", "text": "Systems developed and maintained in accordance with the ISM Code." }
+      ]
+    },
+    {
+      "slug": "document-data-management",
+      "title": "Document and Data Management Solutions",
+      "icon": "book",
+      "summary": "Turn key document control as a Helm CONNECT partner.",
+      "text": "We are a Helm CONNECT official partner and can provide a turn key solution to your document control, data management, and regulatory compliance needs.",
+      "lead": "We are a Helm CONNECT official partner and can provide a turn key solution to your document control, data management, and regulatory compliance needs.",
+      "covers": [
+        { "title": "Document control", "text": "A single controlled home for the manuals, procedures and records your program depends on." },
+        { "title": "Data management", "text": "Compliance data organized so it can be found when an inspector or auditor asks for it." },
+        { "title": "Helm CONNECT", "text": "Implementation and support from an official Helm CONNECT partner." }
+      ]
+    },
+    {
+      "slug": "vendor-vetting",
+      "title": "Third-Party Vendor Vetting",
+      "icon": "handshake",
+      "summary": "Management vetting, vessel vetting and representation.",
+      "text": "Our vetting services include management vetting, vessel vetting, and company representation when you are being vetted.",
+      "lead": "Our vetting services include management vetting, vessel vetting, and company representation when you are being vetted.",
+      "covers": [
+        { "title": "Management vetting", "text": "A review of how the shoreside organization manages its obligations." },
+        { "title": "Vessel vetting", "text": "Vessels reviewed against the standard the vetting party is applying." },
+        { "title": "Company representation", "text": "We represent your company when you are the one being vetted." }
+      ]
+    },
+    {
+      "slug": "technical-writing",
+      "title": "Technical Writing",
+      "icon": "stamp",
+      "summary": "Response plans, transfer procedures and manuals.",
+      "text": "Our technical writing includes United States Coast Guard - Vessel Response Plans, Non-Tank Vessel Response Plans, Vessel Transfer Procedures, Facility Security Plans, Facility Operations Manuals, and Facility Response Plans.",
+      "lead": "Our technical writing includes United States Coast Guard plans, procedures and manuals, written to the form the regulation asks for.",
+      "covers": [
+        { "title": "Vessel Response Plans", "text": "United States Coast Guard Vessel Response Plans and Non-Tank Vessel Response Plans." },
+        { "title": "Vessel Transfer Procedures", "text": "Transfer procedures written for the vessel and the operation." },
+        { "title": "Facility Security Plans", "text": "Security plans written for the facility and its personnel." },
+        { "title": "Facility manuals and plans", "text": "Facility Operations Manuals and Facility Response Plans." }
+      ]
+    },
+    {
+      "slug": "other-services",
+      "title": "Other Services",
+      "icon": "briefcase",
+      "summary": "COI facilitation, analysis and project management.",
+      "text": "Our other services include the facilitation of Certificate of Inspection (COI) application process (from development to receipt of COI), hazard analysis, root cause analysis, incident investigations, and your project management needs.",
+      "lead": "Work that does not fall under one heading: the COI application process, analysis after an incident, and project management.",
+      "covers": [
+        { "title": "Certificate of Inspection", "text": "Facilitation of the COI application process, from development to receipt of the COI." },
+        { "title": "Hazard analysis", "text": "Hazards identified and analyzed for the operation as it runs." },
+        { "title": "Root cause analysis and incident investigation", "text": "Investigation of what happened and analysis of why it happened." },
+        { "title": "Project management", "text": "Your project management needs, handled alongside the compliance work." }
+      ]
+    },
+    {
+      "slug": "mtsa-security-audits",
+      "title": "Maritime Transportation Security Act",
+      "icon": "landmark",
+      "summary": "Vessel and facility MTSA security audits.",
+      "text": "We conduct vessel and facility MTSA security audits and can prepare you for a United States Coast Guard inspection.",
+      "lead": "We conduct vessel and facility MTSA security audits and can prepare you for a United States Coast Guard inspection.",
+      "covers": [
+        { "title": "Vessel security audits", "text": "Vessel audits conducted against the Maritime Transportation Security Act." },
+        { "title": "Facility security audits", "text": "Facility audits conducted against the Maritime Transportation Security Act." },
+        { "title": "Inspection preparation", "text": "Preparation for a United States Coast Guard inspection." }
+      ]
+    },
+    {
+      "slug": "audit",
+      "title": "Audit",
+      "icon": "scale",
+      "summary": "AWO RCP and Sub Chapter M audits.",
+      "text": "We can handle your AWO RCP/Sub Chapter M management and vessel audits.",
+      "lead": "We can handle your AWO RCP and Sub Chapter M management and vessel audits.",
+      "covers": [
+        { "title": "Management audits", "text": "Shoreside management audited against AWO RCP and Sub Chapter M." },
+        { "title": "Vessel audits", "text": "Vessel audits carried out under the same programs." }
+      ]
+    },
+    {
+      "slug": "survey",
+      "title": "Survey",
+      "icon": "anchor",
+      "summary": "Sub Chapter M internal and external surveys.",
+      "text": "We can handle your Sub Chapter M internal or external survey program.",
+      "lead": "We can handle your Sub Chapter M internal or external survey program.",
+      "covers": [
+        { "title": "Internal surveys", "text": "The internal side of a Sub Chapter M survey program." },
+        { "title": "External surveys", "text": "External surveys carried out under the same program." }
+      ]
+    },
+    {
+      "slug": "security-training",
+      "title": "Security Training",
+      "icon": "users",
+      "summary": "Instructor led or online, CSO through FSO.",
+      "text": "We offer instructor led or online security training for CSO, VSO, Crewmen with Security Duties, FSO, Facility Personnel with Security Duties and Facility Personnel without Security Duties.",
+      "lead": "We offer instructor led or online security training, for the shoreside and vessel roles the regulation names.",
+      "covers": [
+        { "title": "CSO and VSO", "text": "Company Security Officer and Vessel Security Officer training." },
+        { "title": "Crewmen with Security Duties", "text": "Training for crew who carry security duties aboard." },
+        { "title": "FSO and facility personnel", "text": "Facility Security Officer training, and facility personnel with and without security duties." }
+      ]
+    },
+    {
+      "slug": "learning-management-system",
+      "title": "Learning Management System",
+      "icon": "chart",
+      "summary": "A mobile learning platform with SCI.",
+      "text": "We have partnered with Seamen's Church Institute to provide a comprehensive mobile learning platform to meet your training needs.",
+      "lead": "We have partnered with Seamen's Church Institute to provide a comprehensive mobile learning platform to meet your training needs.",
+      "covers": [
+        { "title": "Mobile platform", "text": "Crew take the training wherever they are working." },
+        { "title": "Seamen's Church Institute", "text": "Delivered through our partnership with Seamen's Church Institute." }
+      ]
+    },
+    {
+      "slug": "instructor-training",
+      "title": "Instructor Training",
+      "icon": "award",
+      "summary": "Best-in-class training through ACTSafe Training.",
+      "text": "Through ACTSafe Training we offer a variety of the best-in-class training.",
+      "lead": "Through ACTSafe Training we offer a variety of the best-in-class training."
+    }
+  ],
+  "process": {
+    "title": "Areas of Focus",
+    "steps": [
+      { "title": "Advise", "text": "We work with clients to analyze current operations and make suggestions for improvements through process implementation." },
+      { "title": "Certify", "text": "We focus on those elements which must be reviewed and/or audited for compliance with a specific program, standard, or regulation." },
+      { "title": "Train", "text": "We draw from the other two aspects to develop and deliver effective training to our clients." }
+    ]
+  },
+  "affiliations": {
+    "title": "Partners",
+    "items": ["Helm CONNECT Official Partner", "Seamen's Church Institute", "ACTSafe Training"]
+  },
+  "about": {
+    "title": "Who we are",
+    "text": [
+      "The ACTion group is a regulatory compliance consulting firm helping organizations achieve operational excellence.",
+      "The ACTion group was established in April 1999 to provide key operational assessments, procedural development, and quality training that are specific to the customer's needs and requirements. Our goal is to enhance an organization through personnel and process development in order to achieve operational excellence from the boardroom to the galley.",
+      "We possess an understanding of the unique logistical conflicts inherent to the industry and provide great flexibility in our delivery methods."
+    ]
+  },
+  "team": [
+    {
+      "name": "D. Adam Foret, III",
+      "role": "President",
+      "bio": "Reachable at adamf@theagcteam.com or 281-452-9940."
+    },
+    {
+      "name": "Chris Kern",
+      "role": "Director of Compliance and Sustainability",
+      "bio": "Reachable at chrisk@theagcteam.com or 281-452-9940."
+    }
+  ],
+  "serviceArea": ["Channelview, Texas", "Southbury, Connecticut"],
+  "facts": [
+    {
+      "heading": "Offices",
+      "text": "15201 East Freeway, Suite 214, Channelview, TX 77530, and a New England office in Southbury, CT, opened in May 2024."
+    },
+    {
+      "heading": "Standards we work to",
+      "items": [
+        "Sub Chapter M",
+        "Tanker Management Self Assessment (TMSA)",
+        "AWO Responsible Carrier Program (RCP)",
+        "International Safety Management (ISM) Code",
+        "Maritime Transportation Security Act (MTSA)",
+        "United States Coast Guard Certificate of Inspection (COI)"
+      ]
+    },
+    {
+      "heading": "Our values",
+      "items": ["Integrity", "Innovation", "Customer Focus", "Value Based Drivers"]
+    },
+    {
+      "heading": "Who to contact",
+      "items": [
+        "D. Adam Foret, III, President — adamf@theagcteam.com",
+        "Chris Kern, Director of Compliance and Sustainability — chrisk@theagcteam.com",
+        "General inquiries — info@theagcteam.com"
+      ]
+    },
+    {
+      "heading": "Established",
+      "text": "The ACTion group was established in April 1999."
+    }
+  ]
+}

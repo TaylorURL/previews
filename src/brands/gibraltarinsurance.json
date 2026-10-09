@@ -1,0 +1,373 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "insurance",
+  "name": "Gibraltar Insurance Services",
+  "shortName": "Gibraltar Insurance",
+  "tagline": "For life's biggest decisions",
+  "phone": "(281) 902-5024",
+  "email": "insurance.sales@thegibraltargrp.com",
+  "address": "3272 E Broadway St",
+  "town": "Pearland",
+  "state": "TX",
+  "zip": "77581",
+  "since": 2001,
+  "license": "Mortgage affiliate: Gibraltar Group Mortgage, LLC, NMLS ID# 2610966, Equal Housing Opportunity. Registered Mortgage Company with the Texas Department of Savings and Mortgage Lending.",
+  "rating": 5.0,
+  "reviewCount": 6,
+  "hours": [
+    [
+      "Mon – Fri",
+      "8:00 AM – 5:00 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Request a Quote",
+    "text": "Tell us how we can help and one of our licensed agents will give you a call."
+  },
+  "brand": {
+    "primary": "#295881",
+    "primaryDeep": "#0e233d",
+    "accent": "#49acd2",
+    "ink": "#121c2d",
+    "muted": "#414957",
+    "surface": "#f7f8f9",
+    "cream": "#eef2f5",
+    "line": "#d8dfe2",
+    "heading": "'Montserrat Alternates', 'Montserrat', system-ui, sans-serif",
+    "body": "'Montserrat', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Montserrat+Alternates:wght@500;600;700&display=swap",
+    "logo": "/brands/gibraltarinsurance/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Independent insurance agency in Pearland",
+    "title": "For life's biggest decisions.",
+    "lead": "Your journey is uniquely yours, and at Gibraltar Insurance, we're here to safeguard you every step of the way. Let's explore personalized insurance solutions together, tailored to your exact needs.",
+    "image": "/brands/gibraltarinsurance/hero",
+    "imageAlt": "The front door of a house, seen from the porch",
+    "points": [
+      "Working as a group since 2001",
+      "Over 100 years of cumulative insurance experience",
+      "Over 11,000 clients touched per year"
+    ]
+  },
+  "overview": {
+    "title": "Tell us what you need to protect and we will find the right policy for you.",
+    "text": "Just by talking with us, we will help you truly understand and learn about how insurance can be customized to fit your exact needs, created for you, by you."
+  },
+  "audiences": {
+    "individuals": "Individuals & Families",
+    "businesses": "Businesses"
+  },
+  "services": [
+    {
+      "slug": "home-renters",
+      "title": "Home & Renters Insurance",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Homes, apartments, vacation and rental homes.",
+      "text": "Whether you are looking for coverage for your home or apartment, a vacation home, rental or secondary residence we have the policies that will fit your needs.",
+      "lead": "Whether you are looking for coverage for your home or apartment, a vacation home, rental or secondary residence we have the policies that will fit your needs.",
+      "covers": [
+        {
+          "title": "Homes and apartments",
+          "text": "Coverage for the home you own or the apartment you rent."
+        },
+        {
+          "title": "Vacation and secondary homes",
+          "text": "Policies for a second residence away from your primary address."
+        },
+        {
+          "title": "Rental property",
+          "text": "Coverage for a property you own and rent out."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Will a new policy prompt an inspection?",
+          "a": "Any new insurance policy will prompt a property inspection without exception."
+        },
+        {
+          "q": "Does a homeowners policy cover flooding?",
+          "a": "No. Flood is written as a separate policy, and we quote it through our flood agents."
+        }
+      ]
+    },
+    {
+      "slug": "auto",
+      "title": "Auto Insurance",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Quick, painless auto quotes from our agents.",
+      "text": "We make Auto Insurance quick and painless. Find out how our agents can quote you the best policy for the best price. Take the guess work out of picking a policy.",
+      "lead": "We make Auto Insurance quick and painless. Find out how our agents can quote you the best policy for the best price, and take the guess work out of picking a policy.",
+      "questions": [
+        {
+          "q": "Why has my auto premium gone up?",
+          "a": "A confluence of market trends is making auto claims much more expensive."
+        },
+        {
+          "q": "What should I do after an accident?",
+          "a": "After a car accident, move your car to a safe location then follow a car accident checklist. Our resource hub has one."
+        }
+      ]
+    },
+    {
+      "slug": "flood",
+      "title": "Flood Insurance",
+      "audience": "individuals",
+      "icon": "waves",
+      "summary": "Protection whether or not you are in a flood zone.",
+      "text": "Your peace of mind starts here. For less than $1.50 a day you can protect yourself from the unexpected. If you are in a high hazard flood zone, find out from one of our flood agents.",
+      "lead": "Your peace of mind starts here. For less than $1.50 a day you can protect yourself from the unexpected. If you are in a high hazard flood zone, find out from one of our flood agents.",
+      "covers": [
+        {
+          "title": "Federal flood policies",
+          "text": "Policies written through FEMA and the National Flood Insurance Program."
+        },
+        {
+          "title": "Private flood carriers",
+          "text": "Flood coverage through private markets we are appointed with, including Neptune, Swyfft and Beyond Floods."
+        }
+      ]
+    },
+    {
+      "slug": "life",
+      "title": "Life Insurance",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Protection that keeps your family's quality of life.",
+      "text": "Live life, we've got you covered. Give your family the protection they deserve with a life insurance policy that allows them to keep the quality of life you have worked so hard to give them.",
+      "lead": "Give your family the protection they deserve with a life insurance policy that allows them to keep the quality of life you have worked so hard to give them."
+    },
+    {
+      "slug": "medicare",
+      "title": "Medicare",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "A guided path through Medicare at 65 and after.",
+      "text": "Medicare is overwhelming, so we guide you through the process. We have your trusted agent ready to answer all your questions about Medicare.",
+      "lead": "Medicare is for people turning the age of 65 and older, and it has four parts. We find out whether you are eligible, go over your insurance needs, and make sure your doctors and medications are in-network with the plan you choose.",
+      "covers": [
+        {
+          "title": "Part A (Hospital Insurance)",
+          "text": "Part A helps cover inpatient care in hospitals, skilled nursing facility care, hospice care, and home health care."
+        },
+        {
+          "title": "Part B (Medical Insurance)",
+          "text": "Services from doctors and other health care providers, outpatient care, home health care, and durable medical equipment such as wheelchairs, walkers and hospital beds."
+        },
+        {
+          "title": "Part C (Medicare Advantage)",
+          "text": "A Medicare-approved plan from a private company that offers an alternative to Original Medicare. These bundled plans include Part A, Part B and usually Part D, and in most cases you will need to use doctors in the plan's network."
+        },
+        {
+          "title": "Part D (Drug Coverage)",
+          "text": "Part D helps cover the cost of prescription drugs, including many recommended shots or vaccines. You join a Medicare drug plan in addition to Original Medicare, or get it by joining a Medicare Advantage Plan with drug coverage."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who is Medicare for?",
+          "a": "Medicare is for people turning the age of 65 and older."
+        },
+        {
+          "q": "Which parts does the federal government manage?",
+          "a": "Parts A and B are managed by the federal government and are referred to as Original Medicare. Parts C and D are offered by private health insurance companies with an approved Medicare contract."
+        },
+        {
+          "q": "Are you affiliated with Medicare?",
+          "a": "No. We are not affiliated with any government agency including Medicare, and we do not offer every plan available in your area. You can contact Medicare.gov, 1-800-MEDICARE, or your local State Health Insurance Program to get information on all of your options."
+        }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial Insurance",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Cover your business, employees and property.",
+      "text": "Your company, your protection. Always keep the doors open with coverage for your business, employees and property with a comprehensive commercial policy.",
+      "lead": "Always keep the doors open with coverage for your business, employees and property with a comprehensive commercial policy."
+    }
+  ],
+  "process": {
+    "title": "How we work with Medicare clients",
+    "steps": [
+      {
+        "title": "Initial discussion",
+        "text": "Here we'll find out if a client is eligible for Medicare (turning 65, retiring soon, and other circumstances)."
+      },
+      {
+        "title": "Schedule meeting",
+        "text": "We go over the client's insurance needs, making sure doctors and medications are in-network with the plan that is chosen. An application is filled out and a file is created for them."
+      }
+    ]
+  },
+  "affiliations": {
+    "title": "Carriers we represent",
+    "items": [
+      "Allied Trust",
+      "Allstate",
+      "ASI / American Strategic",
+      "Bristol West",
+      "Centauri",
+      "Chubb",
+      "Columbia Lloyds",
+      "Encompass",
+      "FEMA",
+      "Foremost",
+      "Geico",
+      "Hagerty",
+      "Hartford",
+      "Homeowners of America",
+      "Jewelers Mutual",
+      "Mercury",
+      "Nationwide",
+      "Neptune",
+      "Progressive",
+      "Safeco",
+      "Sagesure",
+      "State Auto",
+      "Stillwater",
+      "Swyfft",
+      "Texas Fair Plan",
+      "Tower Hill",
+      "Travelers",
+      "TWIA",
+      "Universal North America",
+      "Wright Flood"
+    ]
+  },
+  "about": {
+    "title": "Wherever you are in life, some decisions need an expert's touch.",
+    "text": [
+      "The Gibraltar Group can singularly help you each step along the way, paving a smooth path for many of the most important decisions in your journey.",
+      "Whether you are insuring your first car or evaluating your insurance needs after the arrival of a newborn, we are there. Or you are newlyweds looking to finance the purchase of your first home, or several years later need room to grow and are looking at options, we are there.",
+      "For every life decision you make, we are there. We know each of these commitments is, at the time, likely one of the biggest you've ever had to make. Our promise is to always be present, offering expert guidance and helping you navigate a clear direction."
+    ],
+    "image": "/brands/gibraltarinsurance/about",
+    "imageAlt": "The Houston skyline on a clear day",
+    "values": [
+      {
+        "title": "Personal service",
+        "text": "Our team prides ourselves in our personal service. You are not a policy number or a loan number."
+      },
+      {
+        "title": "We connect first",
+        "text": "We like to connect and find out how you like to do business, and will respond in a timely manner."
+      },
+      {
+        "title": "Three services, one company",
+        "text": "Insurance, mortgage and title, providing seamless reliable crossover solutions at every stage of your life."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Devon Neely",
+      "role": "President - Gibraltar Insurance"
+    },
+    {
+      "name": "Chris Sizemore",
+      "role": "President - Gibraltar Mortgage"
+    },
+    {
+      "name": "Matt Woodroof",
+      "role": "President - Gibraltar Title"
+    },
+    {
+      "name": "Jason Volkert",
+      "role": "VP of Sales"
+    },
+    {
+      "name": "Jared Ewing",
+      "role": "Operations Manager - Gibraltar Title"
+    }
+  ],
+  "serviceArea": [
+    "Pearland",
+    "Houston",
+    "League City",
+    "Sugar Land",
+    "Katy",
+    "Cypress",
+    "Spring",
+    "Humble",
+    "The Woodlands",
+    "Magnolia",
+    "Montgomery",
+    "Willis",
+    "Galveston"
+  ],
+  "facts": [
+    {
+      "heading": "The group by the numbers",
+      "items": [
+        "Working as a group since 2001",
+        "Over 11,000 clients touched per year",
+        "25,000 families protected with The Gibraltar Group since 2001",
+        "Over 100 years of cumulative insurance experience on the team",
+        "Clients served in 390 counties and counting",
+        "Over 2 dozen awards received for client service, production and involvement in the industry"
+      ]
+    },
+    {
+      "heading": "Reaching our service team",
+      "items": [
+        "Text only: 281-667-0218",
+        "Email: clientrequests@thegibraltargrp.com",
+        "Phone: 281-681-0331",
+        "Available Monday through Friday, 8am to 5pm, and the team observes all major US holidays"
+      ]
+    },
+    {
+      "heading": "New insurance clients",
+      "items": [
+        "Email: insurance.sales@thegibraltargrp.com",
+        "Call: 281-738-3555"
+      ]
+    },
+    {
+      "heading": "Lender policy change requests",
+      "text": "If you are a lender and would like to request a change on an insurance policy, email processing@thegibraltargrp.com or fax 832-295-4148. All requests are processed in order of closing date."
+    },
+    {
+      "heading": "Filing a claim",
+      "text": "We recommend filing a claim directly with your insurance carrier, but if you need assistance with filing the claim, or figuring out whether you should file at all, we can help."
+    },
+    {
+      "heading": "Self-service options",
+      "text": "For self-service options, consider logging into our client portal and connecting to your carrier site for billing information, making a payment and obtaining an ID card."
+    },
+    {
+      "heading": "Insurance, mortgage and title",
+      "items": [
+        "Insurance Services is a partner you can rely on. Let us customize a policy for you.",
+        "As a lender, Gibraltar Mortgage will customize solutions with lightning fast-response times.",
+        "Gibraltar Title believes in relationships and delivers local hometown service, making it a Realtor preferred title company."
+      ]
+    },
+    {
+      "heading": "Offices across Greater Houston",
+      "text": "The Gibraltar Group has 18 offices, including Bay Area, League City, Downtown Houston, West Gray, Memorial, Memorial Green, Woodway, Katy, Cypress, Sugar Land, Champions, Magnolia, The Woodlands, Lake Houston, Lake Conroe North and South, and Galveston."
+    },
+    {
+      "heading": "Careers",
+      "text": "Our 3 branches offer positions in sales, customer service, administration, underwriting and more."
+    },
+    {
+      "heading": "Medicare disclosure",
+      "text": "Not affiliated with any government agency including Medicare. We do not offer every plan available in your area. Please contact Medicare.gov, 1-800-MEDICARE, or your local State Health Insurance Program (SHIP) to get information on all of your options."
+    }
+  ]
+}
