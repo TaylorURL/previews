@@ -1,0 +1,453 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Apex Electrical Solutions Inc.",
+  "shortName": "Apex Electrical Solutions",
+  "summary": "Master electricians in League City and Houston, handling residential and commercial electrical work, home generators and EV charging stations.",
+  "phone": "(409) 996-2739",
+  "email": "info@aes-hou.com",
+  "address": "2297 Ashley Falls Ln",
+  "town": "League City",
+  "state": "TX",
+  "zip": "77573",
+  "rating": 5.0,
+  "reviewCount": 218,
+  "since": 1995,
+  "hours": [
+    [
+      "Mon – Sun",
+      "8 AM – 5 PM"
+    ]
+  ],
+  "brand": {
+    "primary": "#0c6b80",
+    "primaryDeep": "#0a4354",
+    "accent": "#57b04a",
+    "ink": "#11242c",
+    "muted": "#4c626c",
+    "surface": "#eef6f8",
+    "line": "#d3e3e8",
+    "heading": "'Saira', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Saira:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/apexelectrical/logo.webp",
+    "logoWidth": 190
+  },
+  "licenses": [
+    {
+      "label": "Texas Master Electrician",
+      "number": "TMEL# 566066"
+    },
+    {
+      "label": "Texas Electrical Contractor",
+      "number": "TECL# 37045"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Expert electrical services in League City and Houston",
+    "title": "Keeping your home and business",
+    "titleAccent": "powered.",
+    "lead": "Apex Electrical Solutions is your premier Master Electrician serving League City, Houston and the surrounding areas, covering commercial and residential installations, repairs and maintenance. Call for a free estimate.",
+    "image": "/brands/apexelectrical/hero",
+    "imageAlt": "An Apex Electrical Solutions van parked beside a boom lift at a commercial job site"
+  },
+  "groups": [
+    {
+      "slug": "residential-electrical",
+      "title": "Residential Electrical",
+      "icon": "home",
+      "summary": "Lighting, wiring, panels and safety devices for homes in League City and Houston.",
+      "intro": "From lightbulb replacements to complete home rewiring, Apex Electrical Solutions offers a wide range of residential electrical services in League City, Houston and the surrounding areas. We handle new construction, code updates for older homes, ceiling fan installations, recessed lighting and more. Our commitment is to your family's safety and comfort.",
+      "image": "/brands/apexelectrical/residential",
+      "imageAlt": "Weatherproof exterior outlets and covers installed on the brick corner of a house",
+      "services": [
+        {
+          "slug": "panel-upgrades",
+          "title": "Panel Upgrades",
+          "icon": "circuit",
+          "text": "Panel upgrades, circuit breakers and whole-home surge protection so your electrical service keeps up with the house.",
+          "points": [
+            "Panel upgrades",
+            "Circuit breakers",
+            "Surge protectors throughout your whole home"
+          ]
+        },
+        {
+          "slug": "wiring-and-rewiring",
+          "title": "Wiring and Rewiring",
+          "icon": "plug",
+          "text": "Rewiring for homes and extensions, wire repair, new receptacles and GFCI outlets, including code updates for older homes.",
+          "points": [
+            "Rewiring homes and extensions",
+            "New circuits and switchboards",
+            "Electrical wire repair",
+            "Receptacles and GFCI outlets",
+            "Exhaust fans"
+          ]
+        },
+        {
+          "slug": "lighting",
+          "title": "Lighting Design and Installation",
+          "icon": "lightbulb",
+          "text": "Lighting design and installation for inside and outside the house, including LED upgrades, recessed lighting and ceiling fans.",
+          "points": [
+            "LED lighting",
+            "Recessed lighting",
+            "Outdoor lighting",
+            "Ceiling fan installations"
+          ]
+        },
+        {
+          "slug": "home-automation",
+          "title": "Home Automation",
+          "icon": "settings",
+          "text": "Home automation wired in and set up alongside the rest of your electrical system."
+        },
+        {
+          "slug": "safety-devices",
+          "title": "Safety Devices",
+          "icon": "shield",
+          "text": "Carbon monoxide and smoke detectors fitted and tested, with GFCI outlets where the code calls for them.",
+          "points": [
+            "Carbon monoxide and smoke detectors",
+            "GFCI outlets"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "commercial-electrical",
+      "title": "Commercial Electrical",
+      "icon": "building",
+      "summary": "Installations, upgrades, maintenance and emergency repairs for commercial and industrial properties.",
+      "intro": "Apex Electrical Solutions provides commercial electrical services to businesses in League City, Houston and the surrounding areas. From new installations and upgrades to maintenance and emergency repairs, we deliver solutions tailored to the needs of commercial properties. We are committed to timely work that minimizes business downtime.",
+      "image": "/brands/apexelectrical/commercial",
+      "imageAlt": "A commercial parking lot lit at night by newly upgraded LED pole lighting",
+      "services": [
+        {
+          "slug": "design-build",
+          "title": "Design Build and Engineering",
+          "icon": "settings",
+          "text": "Design build and engineering services for commercial and industrial construction projects."
+        },
+        {
+          "slug": "construction-wiring",
+          "title": "Commercial and Industrial Construction",
+          "icon": "building",
+          "text": "Electrical work for commercial and industrial construction, including institutional buildings and standby power for new sites.",
+          "points": [
+            "Industrial construction",
+            "Commercial construction generators",
+            "Schools and institutional wiring"
+          ]
+        },
+        {
+          "slug": "lighting-retrofits",
+          "title": "Lighting Retrofits and Site Lighting",
+          "icon": "lightbulb",
+          "text": "Lighting retrofits and upgrades across a site, from parking lot poles to landscape lighting, plus routine bulb replacement.",
+          "points": [
+            "Lighting retrofit and upgrade",
+            "Parking lot lighting and bulb replacement",
+            "Landscape and outdoor lighting",
+            "Site lighting"
+          ]
+        },
+        {
+          "slug": "power-distribution",
+          "title": "Power Distribution and Service Upgrades",
+          "icon": "power",
+          "text": "Power distribution, service conversions and service upgrades, with UPS systems and control wiring where a process cannot stop.",
+          "points": [
+            "Power distribution",
+            "Service conversions and service upgrades",
+            "UPS systems",
+            "Control wiring"
+          ]
+        },
+        {
+          "slug": "inspections-and-code",
+          "title": "Inspections and Code Corrections",
+          "icon": "shield",
+          "text": "Electrical system inspections, circuit tracing and code corrections, with emergency service when a fault stops the business.",
+          "points": [
+            "Electrical system inspections",
+            "Circuit tracing",
+            "Code corrections",
+            "Emergency service"
+          ]
+        },
+        {
+          "slug": "network-cabling",
+          "title": "Network Cabling Systems",
+          "icon": "cable",
+          "text": "Network cabling systems installed through a commercial building."
+        }
+      ]
+    },
+    {
+      "slug": "generators",
+      "title": "Generators",
+      "icon": "power",
+      "summary": "Certified Generac and Kohler dealer, installing and servicing home standby generators.",
+      "intro": "Apex Electrical Solutions is a certified dealer of Generac and Kohler generators. Our experienced technicians have extensive industry knowledge and hands-on expertise, so your generator runs smoothly all year round. Backup power keeps the refrigerator, water heater, air conditioning, heating, phone, internet and security systems running through an outage.",
+      "image": "/brands/apexelectrical/generators",
+      "imageAlt": "An open home standby generator being installed next to a transfer switch on a brick house",
+      "services": [
+        {
+          "slug": "generator-installation",
+          "title": "Generator Installation",
+          "icon": "power",
+          "text": "Home standby generators installed by certified Generac and Kohler technicians, sized to what you need to keep running.",
+          "points": [
+            "Certified Generac and Kohler dealer",
+            "Installation by certified technicians"
+          ]
+        },
+        {
+          "slug": "generator-maintenance",
+          "title": "Generator Maintenance",
+          "icon": "settings",
+          "text": "Routine maintenance that keeps the unit ready, including a valve adjustment, oil and filter change, fuel connections and a spark plug change.",
+          "points": [
+            "40 point inspection and report",
+            "Two in-person visits a year on the maintenance plan"
+          ]
+        },
+        {
+          "slug": "generator-repair",
+          "title": "Generator Repair and Diagnostics",
+          "icon": "wrench",
+          "text": "Repairs and advanced diagnostics: battery load test, spark plugs, air and oil filters, oil, compression, output voltage, transfer switch and battery charger checks.",
+          "points": [
+            "Warranty work",
+            "Year-round service"
+          ]
+        },
+        {
+          "slug": "remote-monitoring",
+          "title": "Remote Monitoring",
+          "icon": "timer",
+          "text": "24/7/365 remote monitoring on the generator maintenance agreement, with a propane fluid monitor available as an add-on."
+        }
+      ]
+    },
+    {
+      "slug": "ev-chargers",
+      "title": "EV Chargers",
+      "icon": "ev",
+      "summary": "EV charging station installation for homes, businesses and industrial properties.",
+      "intro": "Electric vehicles are the way of the future, but without a charging station at your home or business, charging is a hassle. Apex Electrical Solutions is your local expert for EV charging installation in League City and Houston, handling everything from site assessment and permitting to installation and testing.",
+      "image": "/brands/apexelectrical/ev-chargers",
+      "imageAlt": "A wall-mounted EV charging station in a garage beside a white electric car",
+      "services": [
+        {
+          "slug": "home-ev-charger",
+          "title": "Home EV Charger Installation",
+          "icon": "ev",
+          "text": "A charger installed in your garage by licensed electricians, for all vehicle makes and models.",
+          "points": [
+            "Site assessment and permitting",
+            "Installation and testing"
+          ]
+        },
+        {
+          "slug": "commercial-ev-charging",
+          "title": "Commercial EV Charging Stations",
+          "icon": "building",
+          "text": "Single or multiple charging stations for a business or industrial property, so customers and visitors always have somewhere to charge."
+        },
+        {
+          "slug": "ev-charger-troubleshooting",
+          "title": "EV Charger Troubleshooting",
+          "icon": "wrench",
+          "text": "If your charger is not working properly or the car is not fully charged in the morning, we diagnose whether it is the vehicle's battery system or the station itself.",
+          "points": [
+            "Free inspections"
+          ]
+        }
+      ]
+    }
+  ],
+  "plan": {
+    "name": "Electrical Maintenance Plans",
+    "intro": "An annual electrical inspection that catches a hazard before it becomes a repair. Ask us about the plans, or call 409-996-2739 to sign up.",
+    "tiers": [
+      {
+        "name": "Basic",
+        "price": "$159",
+        "period": "per year",
+        "features": [
+          "Annual inspection: tightening and securing of all main and sub-panel connections, GFCI outlets and HVAC disconnects",
+          "Detailed report and a quote for any recommended repairs",
+          "Annual coverage, so no immediate hazards go unnoticed"
+        ]
+      },
+      {
+        "name": "Standard",
+        "price": "$359",
+        "period": "per year, or $29.91 per month",
+        "featured": true,
+        "features": [
+          "Inspection and securing of all panel connections",
+          "Thermal imaging to detect overheating issues, with photo documentation",
+          "Annual smoke and carbon monoxide detector battery replacement, and smoke detector age checks",
+          "15% discount on recommended repairs",
+          "Monthly billing option"
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": "$659",
+        "period": "per year, or $54.91 per month",
+        "features": [
+          "Everything in Standard, plus meter analysis, advanced outlet testing and hot tub grounding checks",
+          "SureTest analysis for hidden wiring issues, thermal imaging and detailed reporting",
+          "15% discount on repairs",
+          "Priority scheduling"
+        ]
+      }
+    ],
+    "note": "Our generator preventative maintenance agreement is separate. Call 409-996-2739 for details."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Providing service since 1995.",
+    "text": [
+      "Apex Electrical Solutions is a family-owned provider of electrical services for League City, Houston and the surrounding areas. The company is led by a Master Electrician, and every job is done by a licensed and insured team.",
+      "Alongside the electrical work we are a Master Contractor, licensed to provide general contracting services throughout Texas and Oklahoma, and we offer home renovation services that improve how a house works as well as how it looks.",
+      "Whether you need residential, commercial or renovation work, we tailor what we do to what you need. Call 409-996-2739 for a free consultation."
+    ],
+    "image": "/brands/apexelectrical/team",
+    "imageAlt": "A car dealership lot in the evening after a pole lighting upgrade by Apex Electrical Solutions",
+    "values": [
+      {
+        "title": "Master Electrician",
+        "text": "Our team is fully licensed and insured, so all electrical work is performed safely and efficiently."
+      },
+      {
+        "title": "Master Contractor",
+        "text": "Licensed to provide general contracting services throughout the state of Texas and Oklahoma."
+      },
+      {
+        "title": "Customer focused",
+        "text": "We pride ourselves on reliability, professionalism and tailoring our services to your specific needs."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Do you charge for an estimate?",
+      "a": "No. Call 409-996-2739 or complete the form and we will give you a free estimate on your project."
+    },
+    {
+      "q": "Which generator brands do you install and service?",
+      "a": "We are a certified dealer of Generac and Kohler generators, and our certified technicians handle installation, repair and year-round service."
+    },
+    {
+      "q": "Are you licensed?",
+      "a": "Yes. We hold Texas Master Electrician License TMEL# 566066 and Texas Electrical Contractor License TECL# 37045, and we are a Master Contractor licensed for general contracting throughout Texas and Oklahoma."
+    },
+    {
+      "q": "My EV charger is not working properly. Can you look at it?",
+      "a": "Yes. We offer free inspections to find out whether the problem is the car's battery system or the charging station, and then resolve it."
+    },
+    {
+      "q": "Do you work on commercial buildings as well as homes?",
+      "a": "Yes. We cover residential and commercial electrical work, from new installations and upgrades to maintenance and emergency repairs."
+    }
+  ],
+  "serviceArea": [
+    "League City",
+    "Houston"
+  ],
+  "facts": [
+    {
+      "heading": "Licensing",
+      "items": [
+        "Texas Master Electrician License TMEL# 566066",
+        "Texas Electrical Contractor License TECL# 37045",
+        "Master Contractor, licensed for general contracting throughout Texas and Oklahoma",
+        "Fully licensed and insured"
+      ]
+    },
+    {
+      "heading": "Certifications",
+      "items": [
+        "Certified dealer of Generac generators",
+        "Certified dealer of Kohler generators",
+        "Service by certified Generac and Kohler technicians"
+      ]
+    },
+    {
+      "heading": "Phone",
+      "items": [
+        "League City: 409-996-2739",
+        "Houston: 346-559-2377"
+      ]
+    },
+    {
+      "heading": "After-hours service",
+      "text": "Emergency services are available after hours, and emergency service is part of what we cover for commercial customers."
+    },
+    {
+      "heading": "Payment",
+      "items": [
+        "Visa",
+        "Mastercard",
+        "American Express",
+        "Discover",
+        "Cash"
+      ]
+    },
+    {
+      "heading": "Estimates",
+      "text": "Free estimates on electrical projects, and free inspections to diagnose an EV charging station."
+    },
+    {
+      "heading": "Generator preventative maintenance plan",
+      "items": [
+        "Two in-person visits per year and 24/7/365 remote monitoring",
+        "Full maintenance: valve adjustment, oil and filter change, fuel connections, spark plug change, engine oil system, 40 point inspection and report",
+        "1 year maintenance agreement, 14-26KW air cooled: $550",
+        "1 year maintenance agreement, 20-100KW liquid cooled: $895",
+        "1 year 24/7 monitoring maintenance agreement: $100",
+        "Propane fluid monitor: $175 additional annual charge",
+        "Customer requested maintenance outside the schedule: $375"
+      ]
+    },
+    {
+      "heading": "Home renovation",
+      "text": "Alongside the electrical work we offer home renovation services that improve both the function and the look of a house."
+    },
+    {
+      "heading": "Generator warranty",
+      "text": "Generator support covers warranties, repairs and routine maintenance. Many generator manufacturers require proof of regular maintenance to keep the warranty valid, so staying on a preventative maintenance plan keeps a future claim covered."
+    },
+    {
+      "heading": "Signing up for the generator maintenance plan",
+      "text": "Call the office on 409-996-2739, or send your name, email, phone and the time of day you would like a call back - morning, mid-day, afternoon or evening."
+    },
+    {
+      "heading": "What backup power keeps running",
+      "items": [
+        "Refrigerator, water heater, air conditioner and heating",
+        "Phone, TV and internet connectivity",
+        "Lighting, security systems and registers"
+      ]
+    },
+    {
+      "heading": "Completed projects",
+      "items": [
+        "Honda of Clear Lake LED light pole lighting upgrade",
+        "Enhanced commercial lighting systems"
+      ]
+    },
+    {
+      "heading": "Follow us",
+      "items": [
+        "Facebook: facebook.com/profile.php?id=61580411657752"
+      ]
+    }
+  ]
+}

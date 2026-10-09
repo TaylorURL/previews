@@ -1,0 +1,647 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Accurate Air Solutions, LLC",
+  "shortName": "Accurate Air Solutions",
+  "summary": "A Texas mechanical, electrical and plumbing contractor in Abilene, with licensed HVAC, plumbing and electrical crews under one roof and our own sheet metal shop.",
+  "phone": "(325) 672-2966",
+  "email": "info@accurateairsolutionsllc.com",
+  "address": "6737 E Hwy 80",
+  "town": "Abilene",
+  "state": "TX",
+  "zip": "79601",
+  "since": 2013,
+  "hours": [["Mon – Sun", "Open 24 hours"]],
+  "brand": {
+    "primary": "#26408b",
+    "primaryDeep": "#0c1b56",
+    "accent": "#d2232a",
+    "ink": "#151d33",
+    "muted": "#5a6478",
+    "surface": "#f1f4fa",
+    "line": "#dde3ee",
+    "heading": "'Zilla Slab', Georgia, serif",
+    "body": "'Poppins', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap",
+    "logo": "/brands/accurateairsolutions/logo.webp",
+    "logoWidth": 64
+  },
+  "emergency": {
+    "title": "24/7 emergency service",
+    "text": "Call 888-811-3449 any hour and you get our office, not a call center — someone who can look at the board and dispatch a truck."
+  },
+  "sameDay": "Custom sheet metal comes out of our own Abilene shop, usually the same week and sometimes the same day.",
+  "licenses": [
+    { "label": "HVAC", "number": "TACLA53299C" },
+    { "label": "Electrical", "number": "TECL34064" },
+    { "label": "Master Plumber", "number": "M18761" },
+    { "label": "Irrigation", "number": "LI15280" }
+  ],
+  "financing": {
+    "text": "Finance equipment replacement and capital work through First Financial Bank, Member FDIC — the short application is hosted on the bank's own site, we never see your financial details, and applying does not commit you to the work."
+  },
+  "hero": {
+    "eyebrow": "Commercial and industrial MEP contractor in Abilene",
+    "title": "Mechanical. Electrical. Plumbing.",
+    "titleAccent": "One contractor.",
+    "lead": "Licensed HVAC, plumbing and electrical crews under one roof, plus our own sheet metal shop. We self-perform, so your schedule does not depend on three other companies showing up.",
+    "image": "/brands/accurateairsolutions/hero",
+    "imageAlt": "An Accurate Air Solutions technician in a hard hat and hi-vis vest at the rooftop units"
+  },
+  "groups": [
+    {
+      "slug": "commercial-hvac",
+      "title": "Commercial & Industrial HVAC",
+      "icon": "snowflake",
+      "summary": "Packaged rooftops, split systems, chillers, boilers, make-up air and process cooling, installed and kept running by crews that do this every day.",
+      "intro": "A rooftop failure in a restaurant, a clinic or a plant is not a comfort issue, it is a revenue issue. Product spoils, tenants call, production stops. We keep trucks stocked and techs on call so the first visit is a repair visit, not a diagnostic visit that ends in \"we'll order the part.\"",
+      "image": "/brands/accurateairsolutions/hvac",
+      "imageAlt": "A crane lifting rooftop equipment into place on a job site",
+      "services": [
+        {
+          "slug": "rooftop-and-packaged-units",
+          "title": "Rooftop and Packaged Units",
+          "icon": "building",
+          "text": "Repair, replacement and changeout of packaged rooftop equipment, on single buildings and across rooftop fleets on multi-tenant property.",
+          "points": [
+            "Rooftop and packaged unit repair, replacement and changeout",
+            "Rooftop fleets across multiple suites, with one point of contact"
+          ]
+        },
+        {
+          "slug": "chillers-boilers-and-process-cooling",
+          "title": "Chillers, Boilers and Process Cooling",
+          "icon": "flame",
+          "text": "Chiller, cooling tower and boiler service, plant utilities, and the process and equipment cooling that production depends on.",
+          "points": [
+            "Chiller, cooling tower and boiler service",
+            "Process and equipment cooling",
+            "Vessel, process and utility piping, including confined-space work in full PPE"
+          ]
+        },
+        {
+          "slug": "split-systems-and-ventilation",
+          "title": "Split Systems and Ventilation",
+          "icon": "wind",
+          "text": "Split systems, VRF and mini-split installs, plus the make-up air and exhaust that keep a kitchen or a plant working.",
+          "points": [
+            "Split systems, VRF and mini-split installs",
+            "Make-up air, exhaust and ventilation work"
+          ]
+        },
+        {
+          "slug": "controls-and-ductwork",
+          "title": "Controls and Ductwork",
+          "icon": "gauge",
+          "text": "Most airflow complaints are duct problems, not equipment problems. Because we fabricate our own sheet metal in Abilene, we build transitions, plenums and custom fittings to fit your building.",
+          "points": [
+            "Controls troubleshooting and thermostat or BAS integration",
+            "Ductwork repair and redesign, fabricated in our own shop",
+            "Emergency response, 24 hours a day"
+          ]
+        },
+        {
+          "slug": "repair-or-replace",
+          "title": "Repair or Replace",
+          "icon": "shield",
+          "text": "We will tell you which one we would do if we owned the building — age, refrigerant type, coil condition, compressor history, and what the next three years of repairs realistically cost, laid out plainly.",
+          "points": ["Heavy equipment sets by crane and helicopter lift, planned, permitted and worked in your window"]
+        }
+      ]
+    },
+    {
+      "slug": "refrigeration",
+      "title": "Commercial Refrigeration",
+      "icon": "thermometer",
+      "summary": "Walk-ins, reach-ins, prep tables, ice machines and rack systems for kitchens, grocery, convenience stores and cold storage.",
+      "intro": "A walk-in drifting out of range is a countdown on everything inside it, so refrigeration calls get triaged accordingly, including nights and weekends. Temperature swings, ice buildup on the coil, a compressor running longer than it should and rising power bills show up weeks before a hard failure. Regular maintenance is how you find them then instead of on a Saturday.",
+      "image": "/brands/accurateairsolutions/refrigeration",
+      "imageAlt": "Commercial refrigeration equipment being serviced",
+      "services": [
+        {
+          "slug": "walk-ins-and-coolers",
+          "title": "Walk-Ins and Coolers",
+          "icon": "snowflake",
+          "text": "Repair and service on walk-in coolers and freezers, and on the reach-ins, prep tables and display cases in front of them.",
+          "points": [
+            "Walk-in cooler and freezer repair",
+            "Reach-in, prep table and display case service"
+          ]
+        },
+        {
+          "slug": "racks-and-condensing-units",
+          "title": "Racks and Condensing Units",
+          "icon": "settings",
+          "text": "Refrigeration rack and condensing unit work for grocery, convenience stores and cold storage.",
+          "points": [
+            "Refrigeration rack and condensing unit work",
+            "Compressor and evaporator replacement"
+          ]
+        },
+        {
+          "slug": "ice-machines",
+          "title": "Ice Machines",
+          "icon": "droplets",
+          "text": "Ice machine repair and the preventive cleaning that keeps one from failing in the middle of service.",
+          "points": ["Ice machine repair and preventive cleaning"]
+        },
+        {
+          "slug": "leaks-and-controls",
+          "title": "Leaks and Controls",
+          "icon": "gauge",
+          "text": "Refrigerant leak detection and repair, and troubleshooting on the temperature and defrost controls that quietly put a load at risk.",
+          "points": [
+            "Refrigerant leak detection and repair",
+            "Temperature and defrost control troubleshooting",
+            "Scheduled maintenance to protect inventory"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "plumbing",
+      "title": "Commercial & Industrial Plumbing",
+      "icon": "droplets",
+      "summary": "Licensed plumbing for buildings and plants: supply and waste, process piping, gas, water heating, and the repairs that keep a facility open.",
+      "intro": "Plumbing work is performed under Texas Master Plumber license M18761, which matters for permitted work, inspections, and anything an insurer or a general contractor is going to ask about. Most plumbing problems in a commercial building touch something else, so having plumbing, HVAC and electrical under one roof means nobody is waiting on another contractor before work continues.",
+      "image": "/brands/accurateairsolutions/plumbing",
+      "imageAlt": "A crew fusing large-diameter pipe on a job site",
+      "services": [
+        {
+          "slug": "water-heating-and-piping",
+          "title": "Water Heating and Piping",
+          "icon": "flame",
+          "text": "Commercial water heater work and the process and utility piping that runs a plant.",
+          "points": [
+            "Commercial water heater repair and replacement",
+            "Process and utility piping"
+          ]
+        },
+        {
+          "slug": "drains-and-sewer",
+          "title": "Drains and Sewer",
+          "icon": "waves",
+          "text": "Drain, waste and vent repairs, with a camera on the line before anyone starts guessing.",
+          "points": [
+            "Drain, waste and vent repairs",
+            "Sewer camera inspection and line clearing"
+          ]
+        },
+        {
+          "slug": "gas-and-backflow",
+          "title": "Gas and Backflow",
+          "icon": "shield",
+          "text": "Gas piping and leak repair, and backflow prevention devices on the systems that have to carry them.",
+          "points": [
+            "Gas piping and leak repair",
+            "Backflow prevention devices"
+          ]
+        },
+        {
+          "slug": "fixtures-and-leak-location",
+          "title": "Fixtures and Leak Location",
+          "icon": "wrench",
+          "text": "Fixture, flush valve and trim work, plus slab and underground leak location when the water is going somewhere nobody can see.",
+          "points": [
+            "Fixture, flush valve and trim work",
+            "Slab and underground leak location"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "electrical",
+      "title": "Commercial & Industrial Electrical",
+      "icon": "zap",
+      "summary": "Service and distribution, motor controls, lighting, and the diagnostic work that finds the fault instead of replacing parts until it goes away.",
+      "intro": "Nuisance trips, intermittent faults and equipment that only fails under load are where most electrical money gets wasted. We meter it, load it and find it, rather than swapping components and hoping. All of it is performed under Texas Electrical Contractor license TECL34064, by licensed electricians, permitted where permits are required.",
+      "image": "/brands/accurateairsolutions/electrical",
+      "imageAlt": "An electrician working inside an electrical panel",
+      "services": [
+        {
+          "slug": "service-and-distribution",
+          "title": "Service and Distribution",
+          "icon": "power",
+          "text": "Panel, breaker and service upgrades, including the upgrade that has been blocking a tenant build-out.",
+          "points": ["Panel, breaker and service upgrades"]
+        },
+        {
+          "slug": "motor-controls",
+          "title": "Motor Controls",
+          "icon": "circuit",
+          "text": "Motor controls, starters and VFDs, plus equipment and machine wiring on the plant floor.",
+          "points": [
+            "Motor controls, starters and VFDs",
+            "Equipment and machine wiring"
+          ]
+        },
+        {
+          "slug": "lighting",
+          "title": "Lighting",
+          "icon": "lightbulb",
+          "text": "Lighting retrofits and repairs, interior and site, including high-bay lighting in warehousing and distribution.",
+          "points": ["Lighting retrofits and repairs, interior and site"]
+        },
+        {
+          "slug": "troubleshooting-and-generators",
+          "title": "Troubleshooting and Generators",
+          "icon": "plug",
+          "text": "Circuit troubleshooting and fault finding, generator and transfer switch wiring, and the code correction a punch list asks for.",
+          "points": [
+            "Circuit troubleshooting and fault finding",
+            "Generator and transfer switch wiring",
+            "Code correction and inspection punch lists",
+            "Emergency electrical response"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sheet-metal-fabrication",
+      "title": "Sheet Metal Fabrication",
+      "icon": "wrench",
+      "summary": "Our own shop in Abilene. Custom ductwork, transitions, plenums and fittings built to the dimensions of the building in front of us.",
+      "intro": "The shop crew has a name around here for a reason — the Tin Benders. When a job needs a fitting that does not exist in a catalog, it gets built, usually the same week and sometimes the same day, without waiting on a supplier's lead time. Outsourced duct is a lead time you cannot control and a dimension you cannot revise once it ships.",
+      "image": "/brands/accurateairsolutions/sheetmetal",
+      "imageAlt": "A fabrication bench in the Abilene sheet metal shop",
+      "services": [
+        {
+          "slug": "custom-duct",
+          "title": "Custom Duct",
+          "icon": "wind",
+          "text": "Custom duct, transitions and offsets built to field dimensions, so a change in the field does not cost a week.",
+          "points": [
+            "Custom duct, transitions and offsets",
+            "Spiral and rectangular duct fittings"
+          ]
+        },
+        {
+          "slug": "plenums-and-curbs",
+          "title": "Plenums and Curbs",
+          "icon": "building",
+          "text": "Plenums and equipment curbs fabricated to the equipment and the opening they are going on.",
+          "points": [
+            "Plenums and equipment curbs",
+            "Duct liner and insulated assemblies"
+          ]
+        },
+        {
+          "slug": "hoods",
+          "title": "Kitchen and Equipment Hoods",
+          "icon": "fan",
+          "text": "Kitchen and equipment hoods, built alongside the make-up air and exhaust that has to work with them.",
+          "points": ["Kitchen and equipment hoods"]
+        },
+        {
+          "slug": "outside-fabrication",
+          "title": "Fabrication for Other Contractors",
+          "icon": "settings",
+          "text": "If you are a mechanical contractor or a general contractor who needs duct or a custom part built to spec, the shop takes outside work. Send dimensions and we will quote it.",
+          "points": [
+            "Sheet metal repairs and one-off parts",
+            "Fabrication for our own installs and for other contractors"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "AccuStat",
+    "title": "Catch it before it fails.",
+    "text": "AccuStat is a smart thermostat we monitor, and your first one — a $349.99 thermostat, professionally installed — is included with a one-year maintenance agreement on eligible compatible systems.",
+    "image": "/brands/accurateairsolutions/accustat",
+    "imageAlt": "Two Accurate Air Solutions technicians at the rooftop units on a commercial building, with the service trucks parked below"
+  },
+  "plan": {
+    "name": "AccuStat Maintenance Agreements",
+    "intro": "Commercial and industrial agreements are built around your equipment rather than a package tier: we walk the equipment, then propose a scope and a frequency, and the price follows what we are covering. For homes in Lubbock and Dallas, the plans below are published rates, and every one of them includes an AccuStat smart thermostat with professional installation on eligible systems.",
+    "tiers": [
+      {
+        "name": "Essential",
+        "price": "$19.99",
+        "period": "per month",
+        "features": [
+          "AccuStat smart thermostat included on eligible systems",
+          "Professional installation included",
+          "App-based control",
+          "Continuous system monitoring",
+          "2 remote system diagnostics per year on compatible systems",
+          "Initial system inspection report",
+          "Repairs billed at standard rates"
+        ]
+      },
+      {
+        "name": "Plus",
+        "price": "$39.99",
+        "period": "per month",
+        "features": [
+          "Everything in Essential",
+          "Priority scheduling",
+          "1 annual maintenance visit",
+          "1 standard filter included",
+          "Full system inspection",
+          "Same-day service when available"
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": "$69.99",
+        "period": "per month",
+        "featured": true,
+        "features": [
+          "Everything in Plus",
+          "2 seasonal maintenance visits",
+          "2 standard filters included",
+          "Priority emergency scheduling",
+          "Covered capacitor and contactors under plan terms",
+          "No overtime fees",
+          "5% discount on HVAC and plumbing repairs",
+          "Annual plumbing inspection"
+        ]
+      },
+      {
+        "name": "Platinum",
+        "price": "$399",
+        "period": "per month, per unit",
+        "features": [
+          "Everything in Pro",
+          "Inspection and approval required",
+          "Approved covered repairs included",
+          "No diagnostic fee on covered repairs",
+          "No labor charge on covered repairs",
+          "No parts charge on covered repairs",
+          "First-in-line priority service",
+          "Up to $8,000 replacement credit",
+          "Age and condition restrictions apply"
+        ]
+      }
+    ],
+    "note": "Platinum is priced per unit; every other plan is a flat rate regardless of how many units you have. One-year service agreement, payments are non-refundable once billed, monthly auto-pay available by card on file or ACH bank draft. Thermostat compatibility required; communicating systems are excluded from smart thermostat installation but remain eligible for plan benefits. Residential plans cover homes in Lubbock and Dallas — our Abilene location runs commercial and industrial only."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "A Texas MEP contractor since 2013.",
+    "text": [
+      "Accurate Air Solutions, LLC has been working in Texas since 2013. We are a mechanical, electrical and plumbing contractor built around commercial and industrial work — facilities, plants, restaurants, retail, clinics, and the general contractors building them.",
+      "What makes the difference on a job site is that we self-perform. HVAC, plumbing and electrical are all in house and all licensed. So is the sheet metal, fabricated in our own Abilene shop. That means one contractor is accountable for the scope, and your schedule is not hostage to somebody else's lead time.",
+      "Abilene is home base, and where the fabrication shop lives; that location runs commercial and industrial only. Lubbock and Dallas run residential, commercial and industrial. Work is permitted where permits are required and inspected where inspections apply, and if a general contractor or an insurer needs documentation, we have it."
+    ],
+    "image": "/brands/accurateairsolutions/about",
+    "imageAlt": "An Accurate Air Solutions truck and a crane at a hospital dock, with new rooftop units on the trailer",
+    "values": [
+      {
+        "title": "Self-performing",
+        "text": "Three licensed trades and our own sheet metal shop, on one payroll, so crew size is a decision we make rather than one we wait on."
+      },
+      {
+        "title": "One point of contact",
+        "text": "One coordinator from quote through closeout, and one contractor accountable for the whole scope."
+      },
+      {
+        "title": "Documented work",
+        "text": "Permitted, inspected and documented, with condition reports and a priced deficiency list you can budget against."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Do you work on residential systems?",
+      "a": "In Lubbock and Dallas, yes — residential, commercial and industrial. In Abilene we run commercial and industrial only; residential there is handled by our own brands, Hawkins Air Conditioning for HVAC and Double R Plumbing for plumbing."
+    },
+    {
+      "q": "Are you licensed for all three trades?",
+      "a": "Yes. HVAC under TACLA53299C, electrical under TECL34064, and plumbing under Master Plumber license M18761 — all in house, not subcontracted."
+    },
+    {
+      "q": "Do you really fabricate your own ductwork?",
+      "a": "We do, in our own shop in Abilene. Custom transitions, plenums, hoods and fittings built to field dimensions, which keeps duct off the critical path on a schedule."
+    },
+    {
+      "q": "How fast can you respond to an emergency?",
+      "a": "We dispatch 24 hours a day. Response time depends on where you are and what is down, but you will talk to someone who can actually send a truck rather than take a message."
+    },
+    {
+      "q": "Do you handle multi-site facilities?",
+      "a": "Yes. One agreement, one point of contact, and consistent reporting across Abilene, Lubbock and Dallas."
+    },
+    {
+      "q": "How long will the work take?",
+      "a": "That depends on how many people we put on it. Because the crews are on our own payroll rather than a subcontractor's, crew size is a decision we make rather than one we wait on — so tell us the window you have and we will tell you what it takes to hit it."
+    },
+    {
+      "q": "What kind of work can be financed?",
+      "a": "Equipment replacement and larger repairs: rooftop and split-system changeouts, water heaters, panel and service upgrades, and full system replacements. Financing is available at all three locations, and all terms, rates and approval decisions are the lender's and subject to credit approval."
+    },
+    {
+      "q": "Are you bonded, and what are your insurance limits?",
+      "a": "Bonding capacity is in excess of $50 million, through Granite Re. On insurance, tell us the requirements on your project and we will meet them — certificates go out on request. Our experience modification rate is 0.82."
+    }
+  ],
+  "serviceArea": ["Abilene", "Sweetwater", "Cisco", "San Angelo", "Brownwood", "Midland", "Lubbock", "Dallas"],
+  "facts": [
+    {
+      "heading": "Bonding, insurance and safety",
+      "items": [
+        "Bonding capacity in excess of $50 million, payment and performance bonds through Granite Re, Inc.",
+        "Experience modification rate of 0.82 — 18% better than the industry baseline",
+        "Certificates of insurance on request — tell us your limits and we will match them",
+        "Every technician fingerprinted and background-screened where campus or facility access requires it"
+      ]
+    },
+    {
+      "heading": "Preventive maintenance agreements",
+      "items": [
+        "Scheduled visits sized to your equipment and season, on a schedule you approve",
+        "Documented condition reports after every visit",
+        "Filter, belt, coil and drain service",
+        "Refrigerant, amp draw and temperature-split readings logged",
+        "Electrical connections checked and torqued",
+        "Deficiency list with priorities and estimated cost, so capital planning is not a surprise every fiscal year",
+        "Priority scheduling when something does go down",
+        "Multi-site agreements across Abilene, Lubbock and Dallas — one agreement, one point of contact, consistent reporting"
+      ]
+    },
+    {
+      "heading": "Three Texas locations",
+      "items": [
+        "Abilene (HQ, commercial and industrial): 6737 E Hwy 80, Abilene, TX 79601 — (325) 672-2966",
+        "Lubbock (residential, commercial, industrial): 6104 45th St D, Lubbock, TX 79407 — (806) 686-0404",
+        "Dallas (residential, commercial, industrial): 10451 Markison Rd, Dallas, TX 75238 — (214) 833-9550",
+        "24/7 dispatch for all three: 888-811-3449"
+      ]
+    },
+    {
+      "heading": "Our brands",
+      "items": [
+        "Hawkins Air Conditioning & Refrigeration — DBA for residential and commercial HVAC-R in Abilene, est. 1976, license TACLA00001993C, (325) 692-3645, hawkinsac.com",
+        "Double R Plumbing — DBA for residential plumbing and backflow testing across Taylor, Callahan and Jones counties, license M-18761, (325) 864-5127, callrrplumbing.com"
+      ]
+    },
+    {
+      "heading": "Who runs the work",
+      "items": [
+        "Tony Phelps, Owner and CEO",
+        "Mike Hopkins, General Manager",
+        "Lynn Lovell, HVAC/R Department Manager — Abilene",
+        "Aaron Jennings, Plumbing Department Manager — Abilene",
+        "Ray Soto, Electrical Department Manager — Abilene",
+        "Ricky Willis, Regional General Manager — Lubbock",
+        "Roger Alexander, Sales Manager",
+        "Nichole Varela, Head of Human Resources"
+      ]
+    },
+    {
+      "heading": "Markets we work in",
+      "items": [
+        "Manufacturing and industrial, including process cooling and plant utilities",
+        "Food service and grocery",
+        "Healthcare and clinics",
+        "Education, K–12 and higher ed",
+        "Retail and multi-tenant property",
+        "Warehousing and distribution",
+        "Municipal and public facilities",
+        "General contractors, on new build and renovation"
+      ]
+    },
+    {
+      "heading": "Selected projects",
+      "items": [
+        "Angelo State University Central Plant — chilled-water mains in 16-inch seamless pipe, seven coil positions rebuilt, picks up to 165 tons, inside a plant that cannot go offline",
+        "San Angelo ISD — $5.2 million across all three trades, bonded, every technician background-checked before campus access, five-year warranty priced into the contract",
+        "Hendrick Medical Center — 280 invoices across nineteen-plus facilities, worked at four in the morning, on weekends, and in one case by freezing the pipe rather than draining the loop"
+      ]
+    },
+    {
+      "heading": "Who we already work for around Abilene",
+      "items": [
+        "Hendrick Medical Center — mechanical and plumbing across the hospital system",
+        "McMurry University — Campus Center, Cooke Building, Field House, Radford Auditorium, Hunt Dorm and the baseball field",
+        "City of Abilene — Northeast Water Treatment Plant, Rosepark Adaptive Center, Rose Park Gym, the Environmental Lab and the County Health Building",
+        "Rolling Plains Memorial Hospital in Sweetwater, and Cisco Junior College",
+        "A wallboard plant, a gas utility, a tire retread plant and a pet-food plant across the Big Country"
+      ]
+    },
+    {
+      "heading": "Angelo State University Central Plant, on the record",
+      "items": [
+        "$13.7 million mechanical contract, as mechanical contractor to Western Builders",
+        "Chilled-water mains replaced in 16-inch schedule-XH seamless A106, half-inch wall, with 16x14 concentric weld reducers, 14-inch gear-operated butterfly valves and short-radius weld ells in SA234 WPB",
+        "Seven coil positions rebuilt across three air handlers and four outside-air handlers — chilled water, hot water and preheat",
+        "Heaviest pick on a 165-ton all-terrain crane, every pick under a written lift plan with highway permits pulled where the route required them",
+        "$616,000 insulation package plus controls and wiring held under our own contract, with our own superintendent living in San Angelo for the duration",
+        "Fourteen change orders absorbed"
+      ]
+    },
+    {
+      "heading": "San Angelo ISD, on the record",
+      "items": [
+        "$5.2 million contract, with $2.43 million of it self-performed labor",
+        "All three trades self-performed — electrical journeymen and apprentices, journeyman plumbers and plumbing apprentices, and HVAC crews, all on our own payroll",
+        "Two new chillers installed to plans and specs, insulated to spec",
+        "Payment and performance bond through Granite Re, Inc. against the full contract value",
+        "Five years of labor and refrigerant warranty plus twelve months of preventive maintenance priced into the contract rather than sold afterward",
+        "Every technician fingerprinted and background-screened before setting foot on a campus",
+        "Our own lift equipment kept on site, including 10,000-lb telehandlers with 54-foot reach"
+      ]
+    },
+    {
+      "heading": "Hendrick Medical Center, on the record",
+      "items": [
+        "280 invoices and counting across nineteen-plus facilities — the main hospital, Hendrick Medical Center South, the emergency departments, surgery centers, the cath lab, imaging, dialysis and rehab",
+        "Isolation valves set on a fourth-floor condenser water system by freezing the lines rather than draining the loop, then flushing and cleaning the coil before restarting",
+        "An emergency department air handler coil cleaned at 4:00 a.m. so the unit was back in service before the department filled up",
+        "A boiler dropping out on low current traced to short-cycling, not the ignitor — a common water temperature sensor installed across both boilers and set to cascade",
+        "Readings on the ticket rather than opinions: 54°F supply air against thermostats set to 74°F, both cooling stages verified"
+      ]
+    },
+    {
+      "heading": "Work in our other markets",
+      "items": [
+        "Lubbock-Cooper ISD — high school campus mechanical work, out of our Lubbock branch"
+      ]
+    },
+    {
+      "heading": "What the AccuStat offer covers",
+      "items": [
+        "One complimentary AccuStat per one-year agreement, on eligible compatible systems confirmed at the walkthrough",
+        "No equipment purchase, no financing and no signup fee — the one-year maintenance agreement is the whole requirement",
+        "Installed on the first maintenance visit by our own licensed technicians, configured to your equipment rather than left on factory defaults",
+        "Every additional system gets an AccuStat at a discount that scales with system count and term, quoted in writing with the agreement",
+        "At the end of the year the thermostat is yours — it does not get pulled if you do not renew",
+        "Communicating systems and systems requiring proprietary manufacturer controls are excluded from thermostat installation but remain eligible for plan benefits; additional wiring or components may cost extra",
+        "Remote diagnostics require compatible equipment, Wi-Fi and approved smart thermostat access"
+      ]
+    },
+    {
+      "heading": "What the AccuStat shows you",
+      "items": [
+        "Dual setpoint — heat below the low number, cool above the high one, and a deadband in between where the equipment simply runs less",
+        "Setpoints, run status, indoor and outdoor temperature and humidity, from a phone or a browser",
+        "Scheduling, independent fan and system mode including Auto, and an air quality status chip",
+        "Connects over the building's Wi-Fi with no extra gateway on the wall; iOS and Android app with per-zone naming and alerts",
+        "Monitored by the same licensed crews who service the equipment, not a manufacturer's help line"
+      ]
+    },
+    {
+      "heading": "How a call goes",
+      "items": [
+        "You talk to a person — tell us the equipment, the symptoms and whether it is down, and we triage on the spot: emergencies get dispatched, everything else gets scheduled while you are on the phone",
+        "A licensed tech diagnoses it and gives you findings in plain language — what failed, why, and repair cost against replacement cost rather than one take-it-or-leave-it number",
+        "We do the work and document it, permitted and inspected where that applies, with readings and photos on the ticket for your files",
+        "On the form, a coordinator calls you back — usually within the hour during business hours"
+      ]
+    },
+    {
+      "heading": "Reaching a manager directly",
+      "items": [
+        "Tony Phelps, Owner and CEO — tonyp@accurateairsolutionsllc.com",
+        "Mike Hopkins, General Manager — mikeh@accurateairsolutionsllc.com",
+        "Lynn Lovell, HVAC/R Department Manager, Abilene — lynnl@accurateairsolutionsllc.com",
+        "Aaron Jennings, Plumbing Department Manager, Abilene — aaronj@accurateairsolutionsllc.com",
+        "Ray Soto, Electrical Department Manager, Abilene — rays@accurateairsolutionsllc.com",
+        "Ricky Willis, Regional General Manager, Lubbock — rickyw@accurateairsolutionsllc.com",
+        "Roger Alexander, Sales Manager — rogera@accurateairsolutionsllc.com",
+        "Nichole Varela, Head of Human Resources — nicholev@accurateairsolutionsllc.com"
+      ]
+    },
+    {
+      "heading": "Working here",
+      "items": [
+        "Usually hiring licensed trades across HVAC, electrical, plumbing and sheet metal in Abilene, Lubbock, Dallas, Brownwood and Midland, and under our Hawkins and Double R brands",
+        "Paid holidays from day one — New Year's Day, Memorial Day, Independence Day, Labor Day, Thanksgiving and Christmas",
+        "Full benefits package after 90 days: health insurance for you and your family, dental and vision, and workers' comp coverage on every job site",
+        "Paid time off accrues at 40 hours a year after one year and 80 hours a year after five",
+        "Monthly incentive pay on top of base wage, measured on a weekly MOI score across billed hours, gross profit, drive safe score and safety score — up to $900 a month for journeymen and $500 for apprentices, unlocked at a Good grade of 60% or better and subject to a department gross profit gate",
+        "Apprentice tool kit worth about $1,000 — hand tools, a multimeter, safety equipment and trade essentials — with full ownership transferring after 90 days of continuous employment, no documented disciplinary action and no unresolved tool loss",
+        "Tool account and wage deduction program for additional tools, so the kit gets built without the upfront cost",
+        "Company vehicle, phone and iPad provided for qualifying positions",
+        "Clear, merit-based path from apprentice to journeyman"
+      ]
+    },
+    {
+      "heading": "How we use AI, and where people stay in charge",
+      "text": "AI keeps our records accurate and our office fast — matching job, billing and cost information across three branches and flagging mismatches before they reach an invoice. Engineering and design, diagnosis in the field, pricing and proposals, and anything that changes your bill stay with licensed people who sign their names to it."
+    },
+    {
+      "heading": "How we handle your information",
+      "items": [
+        "Calls to our published numbers are recorded, transcribed and summarized, and we use them to dispatch, quote accurately and train coordinators — use the form or email instead if you would rather not be recorded",
+        "Text messages are optional, never required to get service, and stop on a reply of STOP; message and data rates may apply",
+        "We do not sell your personal information, and mobile numbers and text consent are never shared for anyone else's marketing",
+        "Ask us what we hold, correct it, delete it, export it or stop marketing, by emailing info@accurateairsolutionsllc.com with the subject \"Privacy Request\" or calling 888-811-3449 — we respond within 45 days"
+      ]
+    },
+    {
+      "heading": "The photographs",
+      "text": "Every photograph on this site is an actual Accurate Air Solutions job. No stock photography."
+    },
+    {
+      "heading": "The shop",
+      "text": "Our sheet metal crew — the Tin Benders, as they are known here — builds custom duct, transitions, plenums, hoods and one-off fittings to field dimensions, for our own installs and for other contractors who need a part built right and built soon."
+    },
+    {
+      "heading": "In the community",
+      "text": "Accurate Air Solutions is a Corporate Partner of Texas Tech Athletics, supported from our Lubbock branch."
+    }
+  ]
+}

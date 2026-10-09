@@ -1,0 +1,270 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "HARN Financial Group",
+  "shortName": "HARN Financial Group",
+  "tagline": "Tax consulting and filing in Friendswood since 2011",
+  "phone": "(281) 303-5585",
+  "email": "hnguyen@harnfin.com",
+  "address": "1560 W Bay Area Blvd, Ste 195",
+  "town": "Friendswood",
+  "state": "TX",
+  "zip": "77546",
+  "since": 2011,
+  "rating": 4.4,
+  "reviewCount": 34,
+  "hours": [
+    ["Mon – Fri", "10 AM – 8 PM"],
+    ["Saturday", "10 AM – 6 PM"],
+    ["Sunday", "Closed"]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Call the Friendswood office or send a note and we will set a time to sit down with you."
+  },
+  "brand": {
+    "primary": "#2b3038",
+    "primaryDeep": "#1b1f25",
+    "accent": "#937f5e",
+    "ink": "#1d2127",
+    "muted": "#5c6470",
+    "surface": "#f6f5f2",
+    "cream": "#ebe8e2",
+    "line": "#dedbd4",
+    "heading": "'Cormorant Garamond', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/harnfinancialgroup/logo.webp",
+    "logoWidth": 220
+  },
+  "hero": {
+    "eyebrow": "Tax and accounting in Friendswood",
+    "title": "Striving to better our clients' personal and business financial outlook.",
+    "lead": "Extensive experience and an individually tailored approach to the tax consulting and filing process, one client at a time.",
+    "image": "/brands/harnfinancialgroup/hero",
+    "imageAlt": "The HARN Financial Group name on the wall above the office seating area",
+    "points": [
+      "Face to face tax filing, not a drop-off",
+      "Personal and business returns",
+      "Serving the Greater Houston area since 2011"
+    ]
+  },
+  "overview": {
+    "title": "What we do for individuals and businesses.",
+    "text": "Pick a service to see what it covers, or call the office and talk it through with our team."
+  },
+  "audiences": { "individuals": "Individuals", "businesses": "Businesses" },
+  "services": [
+    {
+      "slug": "personal-tax-filing",
+      "title": "1040 Tax Filing",
+      "audience": "individuals",
+      "icon": "calculator",
+      "summary": "Personal returns, filed face to face.",
+      "text": "Personal 1040 returns prepared with you in the room, so you understand the filing rather than dropping off paperwork.",
+      "lead": "We believe our clients value an educational and friendly tax filing experience anchored by face to face interactions. Your personal return is prepared that way, with the time to explain what is on it.",
+      "covers": [
+        { "title": "Your 1040 return", "text": "Personal returns prepared and filed by our tax professionals." },
+        { "title": "A conversation, not a drop-off", "text": "We sit down with you, which gives an educational experience of greater benefit than dropping off your paperwork." },
+        { "title": "The same office each year", "text": "Clients come back to the same team in Friendswood, year after year." }
+      ]
+    },
+    {
+      "slug": "business-tax-filing",
+      "title": "Business Tax Filing",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "1065s, 1120s and C-Corp returns.",
+      "text": "Business returns including 1065 partnerships, 1120 S-Corp and C-Corp filings, prepared by tax professionals who work with small businesses all year.",
+      "lead": "Partnerships, S-Corps and C-Corps each file differently. We prepare the return your entity actually owes and walk you through it.",
+      "covers": [
+        { "title": "1065 partnerships", "text": "Partnership returns and the schedules that go with them." },
+        { "title": "1120 S-Corp", "text": "S-Corp returns for owners who have moved out of filing as a sole proprietor." },
+        { "title": "C-Corp", "text": "Corporate returns prepared to IRS rules and guidelines." }
+      ]
+    },
+    {
+      "slug": "business-entity-formation",
+      "title": "Business Entity Formation",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Setting up the entity you file under.",
+      "text": "Forming the entity your business files under, whether you are starting out or moving from self-employed into an LLC or a corporation.",
+      "lead": "The entity you file under changes what you owe and what you are exposed to. We help you form the one that fits where the business is now."
+    },
+    {
+      "slug": "business-accounting-and-payroll-setup",
+      "title": "Business Accounting and Payroll Setup",
+      "audience": "businesses",
+      "icon": "clipboard-check",
+      "summary": "Getting your books and payroll started.",
+      "text": "Setting up the accounting and payroll your business runs on, so the records are in order before the filing deadline arrives.",
+      "lead": "Accounting and payroll set up properly at the start saves the scramble later. Our accounting team gets the systems running and shows you how to keep them."
+    },
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping",
+      "audience": "businesses",
+      "icon": "calculator",
+      "summary": "Ongoing books for business clients.",
+      "text": "Bookkeeping for business clients, kept by our accounting team through the year. Call or write for more information on what it covers.",
+      "lead": "Quality financial reporting gives you line of sight on business performance and profitability, so you can make data-driven decisions. Call the office for more information on our bookkeeping service."
+    },
+    {
+      "slug": "business-consulting",
+      "title": "Business Consulting",
+      "audience": "businesses",
+      "icon": "chart",
+      "summary": "Advice on how the business is performing.",
+      "text": "Consulting for business owners who want line of sight on performance and profitability, backed by quality financial reporting.",
+      "lead": "Our accounting manager consults with clients to give them line of sight regarding their business performance and profitability, so they can make data-driven business decisions."
+    },
+    {
+      "slug": "audit-assistance",
+      "title": "Audit Assistance",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "Help when the IRS comes back to you.",
+      "text": "Help working through an IRS audit, from the first letter to the strategy for putting the matter behind you.",
+      "lead": "An IRS letter is easier to answer with somebody who files returns every day sitting beside you. We help clients work through audits and the questions that come with them."
+    }
+  ],
+  "affiliations": {
+    "title": "Credentials and recognition",
+    "items": [
+      "Best Rated Tax Professional 2015 – 2022, The National Directory of Registered Tax Return Preparers & Professionals"
+    ]
+  },
+  "about": {
+    "title": "A tax firm built on relationships.",
+    "text": [
+      "Hung Nguyen started HARN Financial Group in 2011 with the love and support of his family and friends, using his personal values to reach a professional goal: a company that differentiates itself by putting emphasis on building relationships and providing unparalleled service to the people of his community.",
+      "Our team strives to build relationships. We appreciate the trust our clients have granted us, which enables our professionals to deliver exceptional service, one client at a time.",
+      "We believe our clients value an educational and friendly tax filing experience anchored by face to face interactions. This inclusive approach provides an invaluable educational experience, of greater benefit than dropping off your paperwork."
+    ],
+    "values": [
+      { "title": "One client at a time", "text": "The trust our clients grant us is what lets our professionals deliver exceptional service." },
+      { "title": "Face to face", "text": "A filing appointment is a conversation, and you leave understanding the return you signed." },
+      { "title": "A family-like environment", "text": "We have grown in locations and staff for our clients' convenience while keeping that environment." }
+    ]
+  },
+  "team": [
+    {
+      "name": "Hung Nguyen",
+      "role": "President",
+      "bio": "Hung is a father, husband, and a native of the great city of Houston. He studied Finance and Marketing at the University of Houston and spent ten years in the retail service industry, where he held multiple leadership positions, before starting HARN Financial Group in 2011.",
+      "image": "/brands/harnfinancialgroup/team-hung",
+      "imageAlt": "Hung Nguyen, president of HARN Financial Group"
+    },
+    {
+      "name": "Rimpal Nguyen",
+      "role": "Chief Operating Officer",
+      "bio": "Rimpal is responsible for the daily operation of the company, and her management has helped establish HARN Financial Group as a respected and award winning firm with year-over-year growth. She was previously Chief Financial Officer for Pennep LLC, where she held various executive positions for eight years. Rimpal has been a resident of Texas for thirteen years, and under her management the firm achieves year-over-year growth by expanding its client base."
+    },
+    {
+      "name": "David Holland",
+      "role": "Senior Tax Manager",
+      "bio": "As Chief Development Officer, David leads the strategy, real estate development and growth of HARN Financial Group by fostering relationships with individuals, small businesses and corporations. He served in management for a Fortune 500 company for six years and was a collegiate level athlete while studying at Bethany University.",
+      "image": "/brands/harnfinancialgroup/team-david",
+      "imageAlt": "David Holland, senior tax manager at HARN Financial Group"
+    },
+    {
+      "name": "Daniel Paniagua",
+      "role": "Senior Tax Advisor and Director of Marketing",
+      "image": "/brands/harnfinancialgroup/team-daniel",
+      "imageAlt": "Daniel Paniagua, senior tax advisor at HARN Financial Group"
+    },
+    {
+      "name": "Ashley Gomez",
+      "role": "Accounting Manager",
+      "bio": "Ashley has over 15 years of administrative, accounting and customer service experience, and received her bachelor's degree in Finance and Accounting from the University of Houston in 2014. Before joining the firm she served in office management, accounting and financial services roles, and she was born and raised in the Houston area. She consults with clients to give them line of sight on business performance and profitability, so they can make decisions from quality financial reporting.",
+      "image": "/brands/harnfinancialgroup/team-ashley",
+      "imageAlt": "Ashley Gomez, accounting manager at HARN Financial Group"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How long should I hold on to my tax returns?",
+      "a": "The IRS advises keeping copies of your prior-year returns for at least three years. If you change tax software for the coming filing season you will also need the adjusted gross income from your prior-year return to file electronically, because the Electronic Filing PIN is no longer an option."
+    }
+  ],
+  "resources": [
+    {
+      "title": "IRS Get Ready",
+      "text": "The IRS page on what to have ready before you file.",
+      "href": "https://www.irs.gov/getready"
+    }
+  ],
+  "serviceArea": ["Friendswood", "Greater Houston metropolitan area"],
+  "facts": [
+    {
+      "heading": "What we've achieved",
+      "text": "Extensive growth in locations and staff to offer greater convenience to our clients, while maintaining a family-like environment. Comprehensive tax consulting and filing provided to over 20,000 clients in the Greater Houston metropolitan area."
+    },
+    {
+      "heading": "Recognition",
+      "text": "Selected as the Best Rated Tax Professional for 2015, 2016, 2017, 2018, 2019, 2020, 2021 and 2022 by The National Directory of Registered Tax Return Preparers & Professionals."
+    },
+    {
+      "heading": "Reach the office",
+      "items": [
+        "Friendswood office: 1560 W Bay Area Blvd, Ste 195, Friendswood, TX 77546",
+        "Phone: 281.303.5585",
+        "Hung Nguyen, President: hnguyen@harnfin.com",
+        "Rimpal Nguyen, Chief Operating Officer: rnguyen@harnfin.com",
+        "David Holland, Senior Tax Manager: dholland@harnfin.com, 281.481.1288",
+        "Daniel Paniagua, Senior Tax Advisor: dpaniagua@harnfin.com",
+        "Ashley Gomez, Accounting Manager: friendswood@harnfin.com"
+      ]
+    },
+    {
+      "heading": "Phone lines",
+      "items": [
+        "Houston 77089: 281.481.1288",
+        "Webster 77598: 281.303.5585",
+        "Friendswood 77546: 832.224.4598",
+        "Texas City 77590: 409.229.1392"
+      ]
+    },
+    {
+      "heading": "Client programs",
+      "items": [
+        "Refund advance programs, offered as part of our client care initiatives",
+        "$100 cash referral for a friend or family member you refer, and our services offered to them as well"
+      ]
+    },
+    {
+      "heading": "In our clients' words",
+      "items": [
+        "\"I was referred to Hung by a friend. His personality is awesome, but his tax skills and knowledge is even more awesome.\" - Kellie, Mont Belvieu",
+        "\"Mr. Holland has been my go-to tax preparer for several years now. His professionalism, work ethics and knowledge has helped me resolve several scenarios with my taxes.\" - Gris, Houston",
+        "\"Every year he sits down with me and helps me get all my available deductions. Not only do I get the best quality for filing my taxes, I get a great experience.\" - Derik, Austin",
+        "\"Year 1 he helped me get out of a tax situation from a prior tax person and filed my taxes the right way. Year 2 helped transition me from employee to self employed. He taught me about sales tax and protecting my business with an LLC. Year 3 became an S Corp.\" - Alessandra, Houston",
+        "\"I cannot thank you enough for helping me get out of the tax debt headache I created for myself. Because of your expertise, suggestions, capabilities and patience, you were able to formulate the best strategy to put the issues with the IRS completely behind me.\" - Sarah, Austin",
+        "\"It has been such a great experience to be a client for the last 7 years. I have had the pleasure of knowing that I will receive top of the line customer service, quick return, and more importantly accurate results with my tax evaluation.\" - Talybra, Houston",
+        "\"I have been using HARN for 3 years specifically dealing with Hung Nguyen. My experience has been nothing short of fantastic, professional, knowledgeable, high customer service is how I would describe this group.\" - Steve, Deer Park",
+        "\"For years I was using Turbo Tax for my tax returns and was getting little to no return. David was very helpful and professional and took the time to explain everything in an easy to understand manner.\" - Brett, Friendswood",
+        "\"No one likes having to do their taxes. With Hung's understanding and knowledge of the tax laws we have been very satisfied with our tax returns. Not only is he our accountant but we consider him a friend.\" - Tim and Val, Santa Fe",
+        "\"I was happy with the results and have been using him for years now. I have referred a lot friends and family and everyone loves him. He's an honest, trustworthy and straight to the point. Great businessman.\" - Kristin, Crosby"
+      ]
+    },
+    {
+      "heading": "Now hiring",
+      "items": [
+        "Accounting and Administrative Assistant, $15.00 to $22 per hour based on experience",
+        "Receptionist, hourly with the opportunity of a $1,500 performance bonus",
+        "Tax Professionals, hourly with the opportunity of a 10K performance bonus",
+        "Receptionist and Tax Professional roles are open part time or full time",
+        "Apply by email with your resume attached and the position named in the subject line"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/HARNfinancialGroup",
+        "Instagram: instagram.com/harn_financial"
+      ]
+    }
+  ]
+}

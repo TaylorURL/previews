@@ -1,0 +1,381 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "DoubleDown Roofing & Construction",
+  "shortName": "DoubleDown Roofing",
+  "phone": "(346) 222-7900",
+  "email": "support@doubledownroofing.com",
+  "address": "1001 W H St",
+  "town": "La Porte",
+  "state": "TX",
+  "zip": "77571",
+  "rating": 5.0,
+  "reviewCount": 5,
+  "license": "Licensed and insured for residential and commercial roofing in Texas",
+  "hours": [
+    ["Mon – Fri", "9 AM – 5 PM"],
+    ["Sat – Sun", "Closed"]
+  ],
+  "brand": {
+    "primary": "#2f3bae",
+    "primaryDeep": "#1e2778",
+    "accent": "#e03c2d",
+    "ink": "#17181d",
+    "surface": "#f2f3f9",
+    "heading": "'Oswald', 'Arial Narrow', sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/doubledownroofingconstruction/logo.webp",
+    "logoWidth": 150
+  },
+  "hero": {
+    "eyebrow": "La Porte roofing contractor",
+    "title": "We've got you",
+    "titleAccent": "covered.",
+    "lead": "Residential and commercial roofing, storm repair and insurance claim help around Houston and the surrounding area. Call to get a free inspection quote.",
+    "image": "/brands/doubledownroofingconstruction/roof-home",
+    "imageAlt": "Two-story brick home in Houston with a new shingle roof by DoubleDown Roofing"
+  },
+  "promises": [
+    "Free roof inspections",
+    "Emergency service 24/7",
+    "Satisfaction guarantee on all services",
+    "CertainTeed Select ShingleMaster"
+  ],
+  "services": [
+    {
+      "slug": "residential-roofing",
+      "group": "residential",
+      "title": "Residential Roofing",
+      "short": "Repairs, replacements and installation on homes of any size",
+      "text": "Texas weather is unpredictable, and your roof is your home's only protection from it. Our team identifies, assesses and analyzes every area of your roofing system so the work is done quickly and correctly.",
+      "image": "/brands/doubledownroofingconstruction/residential-roof",
+      "imageAlt": "Two-story home with a finished grey shingle roof",
+      "body": [
+        "Your home is a place where family and friends come to feel safe, share memories, and a place you call your own. Texas is notorious for its unpredictable weather, and when a storm hits, your roof is your home's only protection from harsh elements. Loose shingles and leaks pose huge risks of damage to your valuables, and expensive repairs, and a safety threat to your loved ones.",
+        "Whether the damage is hail, rain, wind, extreme heat, hurricanes, or anything in between, DoubleDown Roofing is here to take care of you and your loved ones. Our customers' safety is our top concern and you can trust our contractors to get the job done.",
+        "Our team of expert roofers brings integrity, professionalism and accuracy to hundreds of roofing projects, each with a unique home design and its own complexities. No matter how big or small the home, no project is too complex for our roofing team."
+      ],
+      "points": [
+        "Roof repair, replacement and new installation",
+        "Asphalt shingles, metal roofing and flat roofing",
+        "Thorough inspection of the whole roofing system",
+        "Full cleanup once the last nail is in"
+      ]
+    },
+    {
+      "slug": "roof-replacement",
+      "group": "residential",
+      "title": "Roof Replacement",
+      "short": "A full replacement installed as a CertainTeed Select ShingleMaster",
+      "text": "A roof replacement is not an easy task, and finding a legitimate roofing contractor can be tricky. As a CertainTeed Select ShingleMaster we install factory-sourced materials and register CertainTeed's highest warranties in your name.",
+      "image": "/brands/doubledownroofingconstruction/roof-replacement",
+      "imageAlt": "Roofing crew installing new shingles on a brick home",
+      "materials": true,
+      "body": [
+        "To ensure you are making the best decision for your home, CertainTeed created a professional certification program for contractors who meet strict requirements. It recognizes contractors who meet CertainTeed's highest standards for quality, professionalism and customer service, and only the top 1% of roofing contractors nationwide are certified as Select ShingleMasters. DoubleDown Roofing & Construction LLC is proud to be in that top 1%.",
+        "Our contractors only use materials sourced directly from the factory. There are no third-party warehouses, generic products or substitutions. From the first inspection through to after-install service, our team is here to answer any questions or concerns.",
+        "Every roofing project is unique, which is why we offer free quotes to all of our clients. Our team will work with you to understand your specific needs and provide a detailed estimate for your project."
+      ],
+      "points": [
+        "10-year workmanship warranty",
+        "4-star CertainTeed coverage up to 50 years",
+        "Non-prorated coverage for the full term",
+        "Materials and labor both covered",
+        "Tear-off and disposal costs covered"
+      ],
+      "faqs": [
+        {
+          "q": "Is your company certified with a shingle manufacturer?",
+          "a": "We are certified by CertainTeed as a Select ShingleMaster, a program only the top 1% of roofing contractors nationwide hold."
+        },
+        {
+          "q": "What types of roofing materials do you work with?",
+          "a": "We work with a variety of roofing materials including asphalt shingles, metal roofing and flat roofing."
+        }
+      ]
+    },
+    {
+      "slug": "emergency-roof-repair",
+      "group": "storm",
+      "title": "Emergency Service 24/7",
+      "short": "Fast response to leaks, missing shingles and storm damage",
+      "text": "Texas weather is unpredictable and major storms bring unexpected complications that require immediate attention. DoubleDown Roofing responds quickly to address any emergency work.",
+      "image": "/brands/doubledownroofingconstruction/emergency-repair",
+      "imageAlt": "Roof being torn off and prepared for new shingles after storm damage",
+      "body": [
+        "Whether you have a leaky roof or missing shingles, our team of roofing professionals can handle any repair job, big or small. We'll get your roof back to its best condition in no time.",
+        "We specialize in storm repair and restoration. From a swift and thorough inspection we can accurately assess your property's needs, so the work of restoring it to peak condition starts promptly."
+      ],
+      "points": [
+        "Leaks and missing shingles",
+        "Hail, wind and hurricane damage",
+        "Repairs on homes and commercial buildings",
+        "Storm restoration work"
+      ]
+    },
+    {
+      "slug": "insurance-claims",
+      "group": "storm",
+      "title": "Insurance Claim Specialists",
+      "short": "Texas all-lines specialists who handle the claim from first call to closing",
+      "text": "Hail, wind and storm damage is an insurance loss covered by your homeowner's policy. Our team handles the claim process for you, from calling in the new claim to closing it out.",
+      "image": "/brands/doubledownroofingconstruction/storm-claim",
+      "imageAlt": "Roofing crew working on a residential roof after storm damage",
+      "claim": true,
+      "body": [
+        "Most insurance companies are willing to foot the entire bill, minus your deductible, for the replacement of a damaged roof. The claim is classified as a natural disaster, which means it will not haunt you with future rate increases.",
+        "Navigating a claim is frustrating for anyone unfamiliar with the process, and it often leads to receiving less than you deserve. Our team includes dedicated Texas all-lines insurance claims specialists who understand the process and make sure your adjuster is fully informed and prepared to work on your behalf.",
+        "We act as your advocate with your homeowners insurance adjuster throughout. Our involvement means you will not end up with a settlement that falls short of covering your costs or, worse, a denial. We handle the detail with your insurance company and are available to meet your adjuster on request.",
+        "As part of our success in providing high-quality customer service, we have a longstanding relationship with Texas Windstorm Certification Inspectors to ensure your roof exceeds standard codes and regulations."
+      ],
+      "points": [
+        "Zero out-of-pocket expenses besides your deductible or work outside the claim",
+        "We meet the adjuster with you and advocate on your behalf",
+        "Your project manager reviews the loss statement for accuracy",
+        "Storm, hail, wind, fire and flood claims"
+      ],
+      "faqs": [
+        {
+          "q": "Is there a way to avoid paying my deductible?",
+          "a": "Legally there is no way to avoid paying your deductible. There are contractors willing to falsify documents and invoices, and doing so is insurance fraud that can result in felony charges for the roofing company and the property owner."
+        },
+        {
+          "q": "What does the claim cost me?",
+          "a": "Besides your insurance deductible or any work outside of the claim, you pay zero out-of-pocket expenses."
+        }
+      ]
+    },
+    {
+      "slug": "commercial-roofing",
+      "group": "commercial",
+      "title": "Commercial Roofing",
+      "short": "Roofing for businesses, from retail stores to restaurants",
+      "text": "We deliver roofing solutions that meet the needs of businesses across a range of industries, with an A+ rating from the Better Business Bureau behind the work.",
+      "image": "/brands/doubledownroofingconstruction/commercial-roof",
+      "imageAlt": "Flat rooftops on commercial buildings",
+      "body": [
+        "When tasked with roofing projects for industry leaders like Walmart and Saltgrass Steakhouse, we approached each job with dedication, meticulous craftsmanship and a commitment to excellence.",
+        "For Walmart, with its massive structures and bustling customer activity, we recognized the importance of precision. Every beam, nail and layer of roofing material was installed with care to ensure the integrity and strength of the structure.",
+        "With Saltgrass Steakhouse, we took special care to blend functionality with aesthetics. We made sure the structure could withstand weather challenges while upholding the health and safety standards that are critical in the foodservice industry.",
+        "Our job doesn't end once the last nail is hammered. We perform a thorough cleanup after each project so no debris is left behind, from removing stray nails to properly disposing of old materials."
+      ],
+      "points": [
+        "Retail, restaurant and industrial buildings",
+        "A+ rating from the Better Business Bureau",
+        "Thorough site cleanup after every project",
+        "Commercial roof repair, replacement and restoration"
+      ]
+    },
+    {
+      "slug": "gutter-systems",
+      "group": "residential",
+      "title": "Gutters",
+      "short": "New gutter systems and guards installed with your roof",
+      "text": "Old or damaged gutter systems can create costly expenses for your home's foundation, so it is best to have an efficient and up-to-date system.",
+      "image": "/brands/doubledownroofingconstruction/gutters",
+      "imageAlt": "Gutter running along the eaves of a house",
+      "body": [
+        "At DoubleDown Roofing we don't just do roofs. Along with roofing replacements and services, we install brand-new gutter systems for your home.",
+        "Let our contractors provide your home with high-quality gutter system replacements to protect your property during Houston storms."
+      ],
+      "points": [
+        "New gutter systems",
+        "Gutter and guard installation",
+        "Fitted alongside a roof replacement"
+      ]
+    },
+    {
+      "slug": "walls-and-siding",
+      "group": "residential",
+      "title": "Walls & Siding",
+      "short": "Exterior trim and siding that protects the house and suits it",
+      "text": "Who said you had to compromise safety to show your personality through your home? Our licensed professionals specialize in exterior trim and siding that protect the interior from rain, wind and sun.",
+      "image": "/brands/doubledownroofingconstruction/siding",
+      "imageAlt": "House exterior with dark roof and wooden trim",
+      "body": [
+        "Keep your home safe with designs that fit your home's aesthetic. Exterior trim and siding do the protective work, and they set the look of the house from the street.",
+        "Along with our sister company All-Star Construction Pros, DoubleDown Roofing has provided windows and glass solutions for the surrounding Houston area for the past decade."
+      ],
+      "points": [
+        "Exterior trim and siding",
+        "Windows and glass through All-Star Construction Pros"
+      ]
+    },
+    {
+      "slug": "construction-services",
+      "group": "residential",
+      "title": "Construction Services",
+      "short": "General contracting, from painting to outdoor living areas",
+      "text": "We are a full-service roofing and general contracting provider, so the work that comes with owning a property does not need a second contractor.",
+      "body": [
+        "Whether you're envisioning a charming pergola for your home or need major commercial roofing repairs, DoubleDown Roofing is dedicated to making sure you have everything necessary to get the job done seamlessly.",
+        "We offer an extensive range of professional services, including repair, replacement, installation and improvements. Whether you require residential roofing repairs and replacements, commercial roofing services, gutter and guard installations, painting or any other contracting work, we have you covered."
+      ],
+      "points": [
+        "Painting",
+        "Gutter and guard installation",
+        "Pergolas and outdoor living areas",
+        "General contracting on homes and businesses"
+      ]
+    }
+  ],
+  "claim": {
+    "title": "How a storm claim works",
+    "text": "We take the hassle out of the insurance claim process, from calling in the new claim to closing it out.",
+    "steps": [
+      {
+        "title": "Scheduling an inspection",
+        "text": "One of our home inspectors conducts a thorough 5-point multi-inspection, documents the damage and takes plenty of photographs and video for your claim."
+      },
+      {
+        "title": "Insurance adjustor meeting",
+        "text": "Let us know your appointment time. One of our team members meets you and the adjuster to answer questions and point out every area of damage."
+      },
+      {
+        "title": "The closing",
+        "text": "Our project manager reviews the adjuster's evaluation so all damage is fairly evaluated, then comes out for a shingle presentation and an overview of project expenses."
+      },
+      {
+        "title": "Paperwork and final payment",
+        "text": "We stand behind our work and offer a satisfaction guarantee on all of our services."
+      }
+    ]
+  },
+  "materials": {
+    "title": "Shingles we install",
+    "text": "We are a CertainTeed Select ShingleMaster, and our materials are sourced directly from the factory with no substitutions.",
+    "brands": ["CertainTeed"]
+  },
+  "about": {
+    "title": "Why DoubleDown Roofing",
+    "text": [
+      "Your go-to full-service roofing and general contracting services provider. We specialize in tackling the significant challenges and obstacles that come with owning both residential and commercial properties.",
+      "We have built a reputation for excellence in both residential and commercial roofing services. From roof repairs to complete roof replacements, we've got you covered, and that includes expert assistance in navigating the often complex insurance claims process.",
+      "DoubleDown Roofing has evolved beyond a simple contracting company to become one of the most trusted home and business support organizations. Whether you're dealing with a minor roof leak or seeking expert general contracting for a substantial outdoor living area, our team of property improvement specialists is here to meet and exceed your expectations.",
+      "DoubleDown Roofing LLC: built on hard work, held together by integrity."
+    ],
+    "image": "/brands/doubledownroofingconstruction/our-crew",
+    "imageAlt": "DoubleDown Roofing crew working on a residential roof",
+    "values": [
+      {
+        "title": "Client-centered service",
+        "text": "We prioritize your needs, timelines and budgets, so you feel supported throughout the roofing process."
+      },
+      {
+        "title": "Attention to detail",
+        "text": "From installation to cleanup, we leave no stone unturned on the safety, integrity and appearance of your property."
+      },
+      {
+        "title": "Honesty and transparency",
+        "text": "Clear estimates, honest timelines and open communication every step of the way."
+      }
+    ]
+  },
+  "inspection": {
+    "title": "What happens at a free inspection",
+    "steps": [
+      {
+        "title": "Call for a quote",
+        "text": "Call (346) 222-7900 and we set a time to come out to the property."
+      },
+      {
+        "title": "A 5-point inspection",
+        "text": "Our inspector documents the damage, assesses any future complications and takes plenty of photographs and video."
+      },
+      {
+        "title": "Your free estimate",
+        "text": "We work with you on what the roof needs and, where it is a claim, help you contact your insurance company and open it."
+      }
+    ]
+  },
+  "serviceArea": ["La Porte", "Houston"],
+  "areasText": "DoubleDown Roofing provides roofing solutions and services around Houston and the surrounding areas, from our office on West H Street in La Porte.",
+  "areasImage": "/brands/doubledownroofingconstruction/service-area",
+  "areasImageAlt": "Home with a newly finished roof on a quiet Houston-area street",
+  "contactImage": "/brands/doubledownroofingconstruction/contact-home",
+  "contactImageAlt": "Home with roofing work underway in the front yard",
+  "facts": [
+    {
+      "heading": "Certifications",
+      "items": [
+        "CertainTeed Select ShingleMaster, held by the top 1% of roofing contractors nationwide",
+        "Licensed and insured for residential and commercial roofs in Texas",
+        "We acquire the proper permits and documentation required for every project"
+      ]
+    },
+    {
+      "heading": "Better Business Bureau",
+      "text": "We hold an A+ rating from the Better Business Bureau and received the BBB Award of Excellence, one of the highest honors a company can receive from the BBB, which recognizes outstanding customer service, ethical business practices and exceptional work quality. Our accredited profile is listed under roofing contractors in La Porte, Texas."
+    },
+    {
+      "heading": "Warranties",
+      "items": [
+        "10-year workmanship warranty",
+        "CertainTeed 4-star coverage up to 50 years, non-prorated",
+        "Materials and labor both covered, including tear-off and disposal",
+        "CertainTeed SureStart: up to 50 years materials and labor, 25 years workmanship, an exclusive benefit available only to Select ShingleMasters",
+        "CertainTeed's Limited Asphalt Shingle Warranty on the shingles themselves",
+        "Satisfaction guarantee on all of our services",
+        "If there are any leaks in the new roof, we cover the repair cost to the roof and any damage caused by the leak"
+      ]
+    },
+    {
+      "heading": "Commercial Clients",
+      "text": "We have roofed buildings for industry leaders including Walmart and Saltgrass Steakhouse. Our thorough cleanup after each project leaves no debris behind, which protects the property from hazards and keeps the site compliant with health codes."
+    },
+    {
+      "heading": "Our Sister Company",
+      "text": "All-Star Construction Pros has provided windows and glass solutions for the surrounding Houston area for the past decade."
+    },
+    {
+      "heading": "The CertainTeed Select ShingleMaster Program",
+      "items": [
+        "CertainTeed's accreditations for residential and commercial roofers run Silver and Gold Star Contractors, ShingleMasters, then Select ShingleMasters",
+        "Certification requires 10 years of contractor services, passing exams, meeting insurance requirements and holding a good professional reputation",
+        "Certified contractors get enhanced marketing materials and access to CertainTeed's roofing expertise and support",
+        "CertainTeed was founded in 1904 as the General Roofing Manufacturing Company and is North America's leading brand of exterior and interior building products, from roofing and siding to insulation and ceilings"
+      ]
+    },
+    {
+      "heading": "What a Claim Can Cover",
+      "items": [
+        "Lightning damaging electronics",
+        "Hail impacting roofs, siding and windows",
+        "High winds sending debris into your property",
+        "Flooding from a plumbing issue or inadequate drainage support",
+        "Fire damage, where a general contractor renews the interior or exterior spaces"
+      ]
+    },
+    {
+      "heading": "Working With Us",
+      "items": [
+        "A free consultation when you suspect you have a valid roof claim",
+        "Insurance-related work and non-insurance jobs both taken on",
+        "Residential and commercial roof repair, replacement and restoration, plus exterior residential construction projects",
+        "Every claim completed precisely and accurately, to maximize the financial support you are entitled to"
+      ]
+    },
+    {
+      "heading": "How to Reach Us",
+      "items": [
+        "Call (346) 222-7900 for a free inspection quote",
+        "support@doubledownroofing.com for anything the FAQ does not answer",
+        "James@doubledownroofing.com for a free estimate",
+        "1001 West H Street, La Porte, Texas 77571 — visitors are welcome during normal business hours"
+      ]
+    },
+    {
+      "heading": "Our Motto",
+      "text": "DoubleDown Roofing: Beyond Bare Minimum."
+    },
+    {
+      "heading": "Find Us Online",
+      "items": [
+        "facebook.com/104282112729863",
+        "linkedin.com/company/doubledown-roofing-construction",
+        "Accredited business profile at bbb.org"
+      ]
+    }
+  ]
+}
