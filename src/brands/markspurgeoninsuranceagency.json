@@ -1,0 +1,935 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "insurance",
+  "name": "Mark Spurgeon Insurance Agency, Inc.",
+  "shortName": "Mark Spurgeon Insurance Agency",
+  "tagline": "Family owned and operated insurance agency in Texas City",
+  "phone": "(409) 945-5148",
+  "email": "service@spurgeonagency.com",
+  "address": "2929 Palmer Hwy",
+  "town": "Texas City",
+  "state": "TX",
+  "zip": "77590",
+  "since": 1995,
+  "rating": 5.0,
+  "reviewCount": 19,
+  "hours": [
+    [
+      "Mon – Fri",
+      "9:00 AM – 5:00 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Get a Quote",
+    "text": "Tell us what you need covered and we will get back to you. Any request made through this website is not legally binding until you receive a confirmation from our agency or directly from your insurance carrier."
+  },
+  "brand": {
+    "primary": "#00008b",
+    "primaryDeep": "#00006b",
+    "accent": "#265eb1",
+    "ink": "#15192c",
+    "muted": "#5a6072",
+    "surface": "#f6f7fa",
+    "cream": "#ebeef5",
+    "line": "#dde2ec",
+    "heading": "'Libre Baskerville', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/markspurgeoninsuranceagency/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Independent agency in Texas City",
+    "title": "We are in the business of helping people.",
+    "lead": "We help consumers save money, we help businesses reduce risk and we help families protect and preserve their financial future. How can we help you today?",
+    "image": "/brands/markspurgeoninsuranceagency/hero",
+    "imageAlt": "A Gulf Coast city seen from the air",
+    "points": [
+      "Offices in Texas City and The Woodlands",
+      "Dozens of carriers quoted",
+      "Online service center for claims and documents"
+    ]
+  },
+  "overview": {
+    "title": "Insurance products and services for households and businesses.",
+    "text": "Our agency provides a wide range of insurance products to assist customers with all their needs. Pick a line of coverage to read more, or call and talk it through with an agent."
+  },
+  "audiences": {
+    "individuals": "Individuals & Families",
+    "businesses": "Businesses"
+  },
+  "services": [
+    {
+      "slug": "auto",
+      "title": "Auto Insurance",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Liability, collision and comprehensive.",
+      "text": "Get an auto insurance quote from our agency and you may save thousands of dollars a year. It only takes a few minutes to find out how much we can save you.",
+      "lead": "Auto insurance provides financial protection against physical damage and bodily injury resulting from traffic collisions, and against liability that could arise from them. It may also protect against theft of the vehicle and damage sustained from things other than a collision.",
+      "image": "/brands/markspurgeoninsuranceagency/auto",
+      "imageAlt": "A pickup truck on an open highway",
+      "covers": [
+        {
+          "title": "Bodily injury liability",
+          "text": "For injuries the policyholder causes to someone else."
+        },
+        {
+          "title": "Medical payments or PIP",
+          "text": "For treatment of injuries to the driver and passengers of the policyholder's car."
+        },
+        {
+          "title": "Property damage liability",
+          "text": "For damage the policyholder causes to someone else's property."
+        },
+        {
+          "title": "Collision",
+          "text": "For damage to the policyholder's car from a collision."
+        },
+        {
+          "title": "Comprehensive",
+          "text": "For damage not involving a collision with another car, including fire, explosions, earthquakes, floods and riots, and theft."
+        },
+        {
+          "title": "Uninsured motorists coverage",
+          "text": "For costs resulting from an accident involving a hit-and-run driver or a driver who does not have insurance."
+        }
+      ]
+    },
+    {
+      "slug": "home",
+      "title": "Home Insurance",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Dwelling, contents and liability coverage.",
+      "text": "As your largest investment, it's important to make sure your home has the proper insurance coverage. We'll protect your home and everything in it for the lowest possible price.",
+      "lead": "Home insurance is a type of property insurance that covers a private residence. It combines personal insurance protections, which can include losses to the home, its contents, loss of use and personal possessions, along with liability for accidents at the home.",
+      "image": "/brands/markspurgeoninsuranceagency/home",
+      "imageAlt": "A single-story house with a dark metal roof",
+      "covers": [
+        {
+          "title": "Coverage A – Dwelling",
+          "text": "Covers the value of the dwelling itself, not including the land."
+        },
+        {
+          "title": "Coverage B – Other structures",
+          "text": "Covers other structures around the property that are not used for business, except as a private garage."
+        },
+        {
+          "title": "Coverage C – Personal property",
+          "text": "Covers personal property, with limits for theft and loss of particular classes of items."
+        },
+        {
+          "title": "Coverage D – Loss of use",
+          "text": "Covers additional living expenses and fair rental value if part of the residence was rented."
+        },
+        {
+          "title": "Coverage E – Personal liability",
+          "text": "Covers damages the insured is legally liable for and provides a legal defense at the insurer's expense."
+        },
+        {
+          "title": "Additional coverages",
+          "text": "Covers a variety of expenses such as debris removal, reasonable repairs, damage to trees and shrubs for certain named perils, fire department charges, removal of property, credit card and identity theft charges, loss assessment, collapse and landlord's furnishings. These vary depending on the form."
+        },
+        {
+          "title": "Exclusions",
+          "text": "An open perils policy states its exclusions, which generally include earth movement, water damage, power failure, neglect, war, nuclear hazard, septic tank back-up expenses, intentional loss and concurrent causation."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Does a home policy cover flooding?",
+          "a": "Flood damage is typically excluded under standard homeowners and renters policies. Flood coverage is available as a separate policy, both from the National Flood Insurance Program and from private insurers."
+        }
+      ]
+    },
+    {
+      "slug": "condo",
+      "title": "Condo Insurance",
+      "audience": "individuals",
+      "icon": "building",
+      "summary": "Contents and liability inside your unit.",
+      "text": "You won't believe how affordable our condo insurance rates are. Get a quote from our agency today and protect your belongings from fire, theft and other losses.",
+      "lead": "Condo insurance is designed for individuals who live in a unit structure owned and insured by a condo association, townhouse association cooperative, homeowner's association, planned community or other similar type of organization. The insurance the association provides only covers the outside dwelling, not the contents of your unit.",
+      "covers": [
+        {
+          "title": "Personal property",
+          "text": "Coverage for damage to personal property such as furniture, computer equipment and clothing."
+        },
+        {
+          "title": "Gaps in the master policy",
+          "text": "Fills in the gaps of the master insurance policy and covers losses under master policy deductibles."
+        },
+        {
+          "title": "Personal liability",
+          "text": "Personal liability coverage for claims against you."
+        },
+        {
+          "title": "Interior walls and floors",
+          "text": "Interior walls and floor coverings coverage."
+        },
+        {
+          "title": "Improvements and upgrades",
+          "text": "Coverage for improvements or upgrades, since most master insurance policies only cover the original condition and value of the unit."
+        },
+        {
+          "title": "A small deductible",
+          "text": "Condo coverage usually has a small deductible and is fairly inexpensive."
+        }
+      ]
+    },
+    {
+      "slug": "flood",
+      "title": "Flood Insurance",
+      "audience": "individuals",
+      "icon": "waves",
+      "summary": "Separate coverage for flood damage.",
+      "text": "It doesn't matter if you live in a flood plain, every property owner is susceptible to flood damage and your current insurance probably doesn't cover it. Let us give you a quote today.",
+      "lead": "Flood insurance is the specific insurance coverage against property loss from flooding. To determine risk factors for specific properties, insurers will often refer to topographical maps that denote lowlands, floodplains and floodways that are susceptible to flooding.",
+      "questions": [
+        {
+          "q": "What counts as a flood?",
+          "a": "The National Flood Insurance Program defines flooding as a general and temporary condition of partial or complete inundation of two or more acres of normally dry land, or two or more properties, from overflow of inland waters, unusual and rapid accumulation or runoff of surface water from any source, or mudflows."
+        },
+        {
+          "q": "Do most insurers cover flood?",
+          "a": "No. Nationwide, only 20% of American homes at risk for floods are actually covered by flood insurance, and most private insurers do not insure against the peril of flood due to adverse selection. A landslide, hurricane or earthquake can bring on flooding, and earthquake coverage may not cover floods that result from an earthquake."
+        }
+      ]
+    },
+    {
+      "slug": "life",
+      "title": "Life Insurance",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Term, whole and universal life.",
+      "text": "Life insurance is not complicated or expensive when you work with one of our licensed sales representatives. Let's explore options to protect your loved ones.",
+      "lead": "Life insurance pays out a sum of money either on the death of the insured person or after a set period of time.",
+      "image": "/brands/markspurgeoninsuranceagency/life",
+      "imageAlt": "A grandparent and grandchild walking together in a park",
+      "covers": [
+        {
+          "title": "Term life insurance",
+          "text": "Coverage at a fixed rate of payments for a limited period of time. It is the least expensive way to purchase a substantial death benefit per premium dollar over a specific period."
+        },
+        {
+          "title": "Whole life insurance",
+          "text": "A policy that remains in force for the insured's whole life and in most cases requires premiums to be paid every year into the policy."
+        },
+        {
+          "title": "Universal life insurance",
+          "text": "Permanent coverage where premium above the current cost of insurance is credited to the cash value of the policy and credited each month with interest."
+        },
+        {
+          "title": "Variable universal life",
+          "text": "Life insurance that builds a cash value which can be invested in a wide variety of separate accounts chosen by the contract owner."
+        }
+      ]
+    },
+    {
+      "slug": "health",
+      "title": "Health Insurance",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Plans for sickness, injury and disability.",
+      "text": "Having the proper health insurance coverage can literally be a matter of life or death. We'll make sure your family is properly covered with health insurance premiums you can afford.",
+      "lead": "Health insurance is coverage that provides for the payment of benefits as a result of sickness or injury. It includes insurance for losses from accident, medical expense, disability, or accidental death and dismemberment.",
+      "covers": [
+        {
+          "title": "HMOs and EPOs",
+          "text": "Health Maintenance Organizations and Exclusive Provider Organizations may limit coverage to providers inside their networks. HMO members usually have a primary care doctor and must get referrals to see specialists, which is generally not true for EPOs."
+        },
+        {
+          "title": "PPOs and POS plans",
+          "text": "Preferred Provider Organizations and Point-of-Service plans give you a choice of care within or outside a provider network, at a higher cost out of network. With a PPO you can visit any doctor without a referral; with a POS you need one to go out of network."
+        },
+        {
+          "title": "High Deductible Health Plans",
+          "text": "HDHPs typically feature lower premiums and higher deductibles than traditional plans, and can be paired with a health savings account or a health reimbursement arrangement for qualified out-of-pocket medical costs."
+        },
+        {
+          "title": "Catastrophic plans",
+          "text": "A catastrophic plan covers essential health benefits but has a very high deductible, providing safety-net coverage in case of an accident or serious illness. These plans usually do not cover services like prescription drugs or shots."
+        }
+      ]
+    },
+    {
+      "slug": "annuities",
+      "title": "Annuities",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "Guaranteed income for the rest of your life.",
+      "text": "Protect your future with guaranteed income for the rest of your life. Speak with our financial experts today to find the best options for your financial situation.",
+      "lead": "Annuities are contractually executed, relatively low-risk investment products. The insured pays a life insurance company a lump-sum premium at the start of the contract, and that money is paid back in fixed, incremental amounts over a future time period chosen by the insured.",
+      "covers": [
+        {
+          "title": "Immediate annuity",
+          "text": "An insurance policy which, in exchange for a sum of money, guarantees that the issuer will make a series of payments. These may be level or increasing periodic payments for a fixed term of years, or until the ending of a life or two lives, or whichever is longer."
+        },
+        {
+          "title": "Deferred annuity",
+          "text": "A contract that is chiefly a vehicle for accumulating savings, with a view to eventually distributing them either in the manner of an immediate annuity or as a lump-sum payment."
+        }
+      ]
+    },
+    {
+      "slug": "umbrella",
+      "title": "Umbrella Insurance",
+      "audience": "individuals",
+      "icon": "umbrella",
+      "summary": "Liability in excess of your other policies.",
+      "text": "Umbrella insurance offers the ultimate peace of mind. Eliminate the gaps and insufficient limits on all your policies. You'll be amazed at how affordable coverage can be.",
+      "lead": "Umbrella insurance refers to liability insurance that is in excess of specified other policies, and also potentially primary insurance for losses not covered by the other policies.",
+      "covers": [
+        {
+          "title": "Motor vehicle accidents",
+          "text": "Accidents with excessive physical damage, bodily injuries or death."
+        },
+        {
+          "title": "Accidents on your property",
+          "text": "Slip and fall accidents on your property, boating accidents and swimming pool accidents."
+        },
+        {
+          "title": "Damage or injury caused by your dog",
+          "text": "Physical damage or bodily injury caused by your dog."
+        },
+        {
+          "title": "Slander, libel and defamation",
+          "text": "Lawsuits brought over slander, libel and defamation."
+        },
+        {
+          "title": "Judgments above your limits",
+          "text": "Judgments that exceed the limits of your auto or home policies."
+        }
+      ]
+    },
+    {
+      "slug": "renters",
+      "title": "Renters Insurance",
+      "audience": "individuals",
+      "icon": "key",
+      "summary": "Belongings and liability for tenants.",
+      "text": "Could you afford to replace all your belongings if there were a fire, theft, or other major loss tomorrow? It only takes a few minutes to see how affordable renters coverage can be.",
+      "lead": "Renters' insurance provides most of the benefits of homeowners' insurance, including liability insurance. The tenant's personal property is covered against named perils such as fire, theft and vandalism. It does not include coverage for the dwelling or structure, with the exception of small alterations a tenant makes.",
+      "questions": [
+        {
+          "q": "How much renters insurance do I need?",
+          "a": "The cost and the amount of personal property coverage you need depend on what your property is worth. Ask yourself how much your belongings are worth, whether you could afford to buy it all back again if it were destroyed in a fire or stolen, and what you would do in the event of a liability lawsuit against you. If you have ever asked whether you need renters insurance, the answer is probably yes."
+        }
+      ]
+    },
+    {
+      "slug": "landlords",
+      "title": "Landlord Insurance",
+      "audience": "individuals",
+      "icon": "building",
+      "summary": "Cover for one rental property or hundreds.",
+      "text": "Whether you own hundreds of properties or just one, we'll help you find the best coverage and the most affordable rates. Let us give you a quote and start saving money today.",
+      "lead": "Landlords' insurance covers a property owner from financial losses connected with rental properties. The policy covers the building, with the option of insuring any contents that belong to the landlord inside it. Multi-property insurance covers two or more properties.",
+      "questions": [
+        {
+          "q": "What is usually covered with landlord insurance?",
+          "a": "A policy normally covers standard perils such as fire, lightning, explosion, earthquake, storm, flood, escape of water or oil, subsidence, theft and malicious damage. Optional coverage might include accidental damage, malicious damage by a tenant, terrorism, legal protection, alternative accommodation costs, contents insurance, rent guarantee insurance and liability insurance. Landlord policies typically do not cover personal property belonging to tenants."
+        }
+      ]
+    },
+    {
+      "slug": "motorcycle",
+      "title": "Motorcycle Insurance",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Coverage for the bike and the rider.",
+      "text": "For our clients motorcycles aren't just transportation, they're a way of life. We know motorcycle insurance because we love motorcycles too. Let us help you save money and protect your bike.",
+      "lead": "Motorcycle insurance provides financial protection against physical damage and bodily injury resulting from traffic collisions, and against liability that could arise from the actions of the motorcycle driver.",
+      "covers": [
+        {
+          "title": "Accessory coverage",
+          "text": "Covers loss, theft or damage to motorcycle accessories like saddlebags, custom handlebars and OEM electronics."
+        },
+        {
+          "title": "Comprehensive physical damage",
+          "text": "Covers physical damage or loss of the motorcycle that is not the direct result of a moving vehicle collision."
+        },
+        {
+          "title": "Collision",
+          "text": "Pays for damage to an insured motorcycle when it hits or is hit by another car or object, or if the motorcycle overturns."
+        },
+        {
+          "title": "Bodily injury liability",
+          "text": "Pays damages for bodily injury or death resulting from an accident you are at fault for, including passengers riding on your motorcycle, and provides a legal defense."
+        },
+        {
+          "title": "Property damage liability",
+          "text": "Pays damages for physical damage resulting from an accident you are at fault for and provides a legal defense."
+        },
+        {
+          "title": "Medical payments and PIP",
+          "text": "Pays medical expenses of the parties riding on the motorcycle. Personal Injury Protection is an extension available in some states that covers medical expenses and in some cases lost wages, paid without regard to legal liability."
+        },
+        {
+          "title": "Uninsured and underinsured motorist",
+          "text": "Pays the difference between what an uninsured or underinsured driver can pay and what the injured operator would be entitled to."
+        },
+        {
+          "title": "Motorcycle roadside assistance",
+          "text": "Assists operators whose motorcycle has suffered a mechanical failure that leaves them stranded."
+        }
+      ]
+    },
+    {
+      "slug": "atv",
+      "title": "ATV Insurance",
+      "audience": "individuals",
+      "icon": "truck",
+      "summary": "All terrain vehicle coverage.",
+      "text": "We love ATVs almost as much as we love helping our clients find great affordable coverage for them. Get a quote today to see how much we can save you.",
+      "lead": "All terrain vehicle insurance provides financial protection against physical damage and bodily injury resulting from collisions, and against liability that could arise from the use or storage of your ATV.",
+      "questions": [
+        {
+          "q": "What else can an ATV policy cover?",
+          "a": "Most people think of 4-wheelers, but in some cases an ATV policy can also cover snowmobiles, Segways, golf carts, tracked all terrain vehicles, amphibious vehicles, go carts and certain motorcycles."
+        }
+      ]
+    },
+    {
+      "slug": "boat",
+      "title": "Boat Insurance",
+      "audience": "individuals",
+      "icon": "waves",
+      "summary": "Cover for the boat, owner and passengers.",
+      "text": "When's the last time you reviewed your boat insurance policy? Let's take a few minutes to make sure you're covered for everything and have the most affordable boat insurance rates.",
+      "lead": "Boat insurance protects a boat, its owner and passengers in the event of a loss. It can include all motorized water vehicles, including fishing boats, pontoon boats, yachts and jet skis.",
+      "covers": [
+        {
+          "title": "Liability",
+          "text": "Pays for injuries and property damage to others as a result of a covered accident you are legally liable for. This may include pollution liability and wreckage removal depending on your policy."
+        },
+        {
+          "title": "Collision",
+          "text": "Pays for damage to your boat, motor, trolling motor and trailer along with permanent and some portable boating equipment, after a covered accident with another boat or object."
+        },
+        {
+          "title": "Comprehensive",
+          "text": "Covers damage from events other than collision, including fire, theft and storms."
+        },
+        {
+          "title": "Uninsured or underinsured boater",
+          "text": "Covers damages and bodily injury you and your passengers sustain in a covered accident involving an uninsured, underinsured or in some cases hit-and-run boater."
+        },
+        {
+          "title": "Medical payments",
+          "text": "Covers medical expenses for treatment of injuries incurred by you or your passengers while operating or occupying your boat."
+        },
+        {
+          "title": "On-water towing and labor",
+          "text": "Pays towing expenses and other emergency services up to pre-defined limits if your boat becomes disabled on the water."
+        },
+        {
+          "title": "Fishing equipment and personal effects",
+          "text": "Helps pay for damage to fishing equipment, and pays replacement cost for damage or loss of personal property, while onboard or being carried on or off your insured boat."
+        }
+      ]
+    },
+    {
+      "slug": "rv",
+      "title": "RV Insurance",
+      "audience": "individuals",
+      "icon": "truck",
+      "summary": "Motor homes, fifth wheels and campers.",
+      "text": "The only thing better than hitting the open road with the freedom to go anywhere is saving money in the process. Let us quote your RV insurance to see how much we can save you.",
+      "lead": "RV insurance coverage is designed for most recreational vehicles, including motor homes, fifth wheel trailers, Airstream travel trailers, mounted truck campers and more.",
+      "covers": [
+        {
+          "title": "Bodily injury liability",
+          "text": "For injuries the policyholder causes to someone else."
+        },
+        {
+          "title": "Medical payments or PIP",
+          "text": "For treatment of injuries to the driver and passengers."
+        },
+        {
+          "title": "Property damage liability",
+          "text": "For damage the policyholder causes to someone else's property."
+        },
+        {
+          "title": "Collision",
+          "text": "For damage to the vehicle from a collision."
+        },
+        {
+          "title": "Comprehensive",
+          "text": "For damage not involving a collision with another car, including fire, explosions, earthquakes, floods and riots, and theft."
+        },
+        {
+          "title": "Uninsured motorists coverage",
+          "text": "For costs resulting from an accident involving a hit-and-run driver or a driver who does not have insurance."
+        },
+        {
+          "title": "Contents coverage",
+          "text": "Covers damage or loss of the contents of the recreational vehicle, typically purchased at a set amount not to be exceeded in a claim payout."
+        }
+      ]
+    },
+    {
+      "slug": "classic-car",
+      "title": "Classic Car Insurance",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Coverage written for a collector vehicle.",
+      "text": "Your classic car needs great coverage from an insurance agency that loves cars as much as you do. It only takes a few minutes to find out how much money you can save.",
+      "lead": "Classic car insurance is very similar to standard auto insurance, written for a vehicle kept as a collector car rather than a daily driver.",
+      "questions": [
+        {
+          "q": "Which vehicles qualify for classic car insurance?",
+          "a": "Model year, annual miles driven and customizations all decide it. Vehicles that typically qualify include antique and classic cars, modern collector vehicles, modified vehicles, classic trucks and utility vehicles, motorsports vehicles, vintage motorcycles and scooters, retired commercial vehicles, collector trailers, vehicles under construction, classic military vehicles and antique tractors."
+        }
+      ]
+    },
+    {
+      "slug": "roadside-assistance",
+      "title": "Roadside Assistance",
+      "audience": "individuals",
+      "icon": "handshake",
+      "summary": "Help when a breakdown leaves you stranded.",
+      "text": "We offer roadside assistance because we care about the safety and security of your family. You'd be surprised how affordable our roadside assistance coverage is.",
+      "lead": "Roadside assistance and breakdown coverage are services that assist motorists, or bicyclists, whose vehicles have suffered a mechanical failure that leaves the operator stranded.",
+      "covers": [
+        {
+          "title": "Mechanical breakdown",
+          "text": "Help when a mechanical failure leaves you stranded."
+        },
+        {
+          "title": "Flat tire change",
+          "text": "A tire changed where you are."
+        },
+        {
+          "title": "Battery jump start",
+          "text": "A jump start for a dead battery."
+        },
+        {
+          "title": "Emergency fuel and fluid delivery",
+          "text": "Fuel and fluids brought out to you."
+        },
+        {
+          "title": "Locksmith service",
+          "text": "Locksmith help when you are locked out."
+        }
+      ]
+    },
+    {
+      "slug": "pet",
+      "title": "Pet Insurance",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Help with veterinary bills.",
+      "text": "Pet insurance covers animal medical costs and helps pet owners pay veterinary bills, from preventative care to treatment for diseases and accidents.",
+      "lead": "Pet insurance policies differ in terms of coverage and exclusions, so it is worth reviewing and comparing all of the options before choosing one. Call us and we will go through them with you."
+    },
+    {
+      "slug": "event",
+      "title": "Event Insurance",
+      "audience": "individuals",
+      "icon": "users",
+      "summary": "Liability cover for a planned event.",
+      "text": "Make sure the unexpected doesn't ruin your next planned event. We are insurance professionals who understand your risk and needs. Give us a call and get your event insured today.",
+      "lead": "Event insurance covers the legal liability you or your company may hold from certain types of claims arising from accidents taking place during an event you host.",
+      "questions": [
+        {
+          "q": "What does an event policy protect?",
+          "a": "Subject to the coverage terms, conditions and exclusions, it protects the host or honoree for damage to the facility caused by a guest or vendor, bodily injury to guests they are found liable for, and alcohol-related accidents they are found liable for."
+        },
+        {
+          "q": "Do you need event insurance?",
+          "a": "No matter the size of your event or how well prepared you are, you never know when the worst-case scenario could become your reality. It's the small things that cause the most problems if you're not properly covered, so even the most basic coverage policy could prove to be a big help in the long run."
+        }
+      ]
+    },
+    {
+      "slug": "business",
+      "title": "Business Insurance",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Packages built around how you operate.",
+      "text": "Having the proper business insurance coverage at an affordable rate can make the difference between the success and failure of your business. Allow our commercial insurance experts to help guide you to success.",
+      "lead": "Business insurance protects your investment by minimizing financial risks associated with unexpected events such as the death of a partner, an injured employee, a lawsuit or a natural disaster. It is a broad name for different coverages available to the business owner.",
+      "image": "/brands/markspurgeoninsuranceagency/business",
+      "imageAlt": "A small business owner at work in a workshop",
+      "covers": [
+        {
+          "title": "Commercial auto",
+          "text": "Cars, trucks, motorcycles and other road vehicles owned by or operated within a business."
+        },
+        {
+          "title": "Commercial umbrella",
+          "text": "Liability coverage in excess of specified other commercial policies, paying above the limits of the primary policies."
+        },
+        {
+          "title": "Professional liability",
+          "text": "Errors and omissions coverage that helps protect advice and service providers from the full cost of defending a negligence claim."
+        },
+        {
+          "title": "Group health, life and disability",
+          "text": "Employee benefit coverage purchased by an employer and offered to eligible employees."
+        },
+        {
+          "title": "Supplemental insurance",
+          "text": "Extra insurance that helps pay for services and out-of-pocket expenses regular insurance does not cover."
+        }
+      ]
+    },
+    {
+      "slug": "general-liability",
+      "title": "General Liability",
+      "audience": "businesses",
+      "icon": "shield",
+      "summary": "Bodily injury and property damage claims.",
+      "text": "General liability protects a business or individual against claims for bodily injury, property damage and personal injury arising from their operations, products or services.",
+      "lead": "General liability insurance typically covers legal costs and any settlements or judgments that may result from such claims. It is essential for businesses of all sizes as it helps protect against financial losses due to lawsuits and other liabilities.",
+      "covers": [
+        {
+          "title": "Bodily injury and property damage",
+          "text": "Protection against claims arising from your premises, operations, products and completed operations."
+        },
+        {
+          "title": "Advertising and personal injury",
+          "text": "Advertising and personal injury liability claims against the business."
+        }
+      ]
+    },
+    {
+      "slug": "commercial-property",
+      "title": "Commercial Property Insurance",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Buildings, inventory and machinery.",
+      "text": "Commercial property insurance pays for the expenses associated with repairing or replacing a business's tangible assets, such as inventory, machinery and buildings.",
+      "lead": "Commercial property insurance usually also covers liability and business disruption costs. Coverage can be provided on an all-risk or specific-perils basis.",
+      "covers": [
+        {
+          "title": "Buildings and personal property",
+          "text": "Covers risk of loss to an organization's buildings or personal property, including the personal property of the insured business or owner and personal property of others on site and in the insured's possession."
+        }
+      ]
+    },
+    {
+      "slug": "bop",
+      "title": "Business Owner's Package (BOP) Insurance",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Property and liability in one policy.",
+      "text": "Get all your business insurance needs covered under one Business Owner's Package policy. We'll get your business covered in the most affordable way.",
+      "lead": "A BOP combines protection from all major property and liability risks in one package, usually at a premium less than the total cost of the individual coverages. BOPs usually target small and medium-sized businesses and typically contain business interruption insurance.",
+      "covers": [
+        {
+          "title": "Property insurance",
+          "text": "Covers buildings and contents owned by the company. There are two forms, standard and special, with special providing more comprehensive coverage."
+        },
+        {
+          "title": "Business interruption insurance",
+          "text": "Covers the loss of income resulting from a fire or other catastrophe that disrupts the operation of the business, and can include the extra expense of operating out of a temporary location."
+        },
+        {
+          "title": "Liability protection",
+          "text": "Covers your company's legal responsibility for harm it may cause others through what you and your employees do or fail to do, including defective products, faulty installations and errors in services provided."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does a BOP not cover?",
+          "a": "In most cases a BOP does not cover professional liability, auto insurance, workers' compensation or health and disability insurance. You need separate policies for professional services, vehicles and your employees. A BOP can also be altered to your company's specific needs, and often includes vehicle coverage and crime insurance."
+        }
+      ]
+    },
+    {
+      "slug": "workers-compensation",
+      "title": "Workers Compensation",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Wage replacement and medical benefits.",
+      "text": "Let us help you make sure you're adequately covered for workers comp. We'll get you a great rate and keep your business going strong.",
+      "lead": "Workers' compensation is a form of insurance providing wage replacement and medical benefits to employees injured in the course of employment, in exchange for mandatory relinquishment of the employee's right to sue the employer for the tort of negligence.",
+      "questions": [
+        {
+          "q": "What does workers' comp pay?",
+          "a": "Plans differ among jurisdictions, but provision can be made for weekly payments in place of wages, compensation for past and future economic loss, reimbursement or payment of medical and like expenses, and benefits payable to the dependents of workers killed during employment. General damages for pain and suffering and punitive damages for employer negligence are generally not available, and negligence is generally not an issue in the case."
+        }
+      ]
+    },
+    {
+      "slug": "insurance-bonds",
+      "title": "Insurance Bonds",
+      "audience": "businesses",
+      "icon": "stamp",
+      "summary": "Bonds to bid on or take a job.",
+      "text": "If you need an insurance bond to bid on or get hired for a new job call us. We're insurance bond experts and we'll get it taken care of for you, fast.",
+      "lead": "An insurance bond ensures contract completion in the event of contractor default. Project owners typically require one when seeking a contractor to fulfill a contract, and the contractor obtains the bond so the insurance company is obliged to compensate the project owner for financial loss if the work is not completed.",
+      "covers": [
+        {
+          "title": "Bid bond",
+          "text": "Ensures the bidder on a contract will enter into the contract and furnish the required payment and performance bonds if awarded the contract."
+        },
+        {
+          "title": "Payment bond",
+          "text": "Ensures suppliers and subcontractors are paid for work performed under the contract."
+        },
+        {
+          "title": "Performance bond",
+          "text": "Ensures the contract will be completed in accordance with the terms and conditions of the contract."
+        },
+        {
+          "title": "Ancillary bond",
+          "text": "Ensures requirements integral to the contract, but not directly performance related, are performed."
+        }
+      ]
+    }
+  ],
+  "affiliations": {
+    "title": "Carriers we represent",
+    "items": [
+      "Ace Indemnity",
+      "AIG",
+      "Allied Trust Insurance Co",
+      "American Modern",
+      "Annex Risk",
+      "AonEdge Flood",
+      "ASI Lloyds",
+      "biBerk",
+      "Blue Cross Blue Shield",
+      "Bristol West",
+      "Chubb",
+      "CNA",
+      "Coterie Insurance",
+      "Dairyland Insurance",
+      "Elephant Insurance",
+      "E-Premium",
+      "Ethos Life",
+      "Foremost Insurance",
+      "FoxQuilt",
+      "Gainsco Auto Insurance",
+      "Geico",
+      "Grundy Insurance",
+      "Homeowners Ins Co of America",
+      "Infinity Auto Insurance",
+      "Jewelers Mutual",
+      "Liberty Mutual",
+      "Lloyds of London",
+      "Markel Marine",
+      "Mercury Insurance",
+      "National Flood Insurance Program",
+      "National General Insurance",
+      "Neptune Flood",
+      "NEXT Insurance",
+      "Pie Insurance",
+      "Progressive",
+      "RLI Surety",
+      "Safeco Insurance Co",
+      "SafePoint",
+      "SageSure",
+      "Scottsdale Insurance Co",
+      "Steadily",
+      "Swyfft",
+      "Texas FAIR Plan",
+      "Texas Windstorm Insurance Association",
+      "Texas Mutual",
+      "The Hartford",
+      "Thimble Insurance",
+      "Three - Berkshire Hathaway",
+      "Travelers",
+      "Wellington Insurance",
+      "Wright Flood"
+    ]
+  },
+  "about": {
+    "title": "Serving Texas City and the surrounding communities since 1995.",
+    "text": [
+      "Since 1995, Mark Spurgeon Insurance Agency, Inc. has served Texas City and the surrounding Texas communities by protecting the people we work with just like we protect our own family members.",
+      "In our agency, we take great pride in the quality of service we provide for our customers. Whether our clients need help filing a claim, processing a payment, or just understanding their insurance coverage, we'll always be there ready to help.",
+      "We know our clients and we know insurance, so our clients enjoy the peace of mind that comes with knowing their insurance agency can help them regardless of how big, small, unique or specific their insurance needs are. With the years of experience we bring to the table there isn't much we haven't seen before, and you never know when that's going to come in handy."
+    ],
+    "image": "/brands/markspurgeoninsuranceagency/about",
+    "imageAlt": "Two people going through policy paperwork at a table",
+    "values": [
+      {
+        "title": "Helping people",
+        "text": "We help consumers save money, we help businesses reduce risk and we help families protect and preserve their financial future."
+      },
+      {
+        "title": "The best carriers available",
+        "text": "We believe in providing top-notch insurance products and services, and that requires working with the best financial institutions available in today's market."
+      },
+      {
+        "title": "Service any time",
+        "text": "Our website is a resource to clients, with an online service center for claims, payments, policy changes and documents."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Mark Spurgeon",
+      "role": "Agency Owner"
+    },
+    {
+      "name": "Kimberley Spurgeon",
+      "role": "Insurance Agent"
+    },
+    {
+      "name": "Chelsea Hilden",
+      "role": "Insurance Agent"
+    },
+    {
+      "name": "Lisa Lopez",
+      "role": "Insurance Agent"
+    },
+    {
+      "name": "Leah Maldonado",
+      "role": "Insurance Agent"
+    },
+    {
+      "name": "Teri Hill",
+      "role": "Insurance Agent"
+    },
+    {
+      "name": "Mirela Bidulescu",
+      "role": "Insurance Agent"
+    },
+    {
+      "name": "Cheryl Robinson",
+      "role": "Insurance Agent"
+    },
+    {
+      "name": "Lori Thomas",
+      "role": "Customer Service Representative"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What can I do through the online service center?",
+      "a": "Report a claim, make a payment, request a policy review, make policy changes, update your contact information, request proof of insurance, reach the document library and book a free consultation."
+    },
+    {
+      "q": "Is a request made through the website binding?",
+      "a": "No. Any requests made through our website are not considered legally bound unless you receive a confirmation from our agency or directly from your insurance carrier."
+    },
+    {
+      "q": "What happens to the information I send you?",
+      "a": "Your private information is provided exclusively to our agency and will not be redistributed or sold to anyone else."
+    },
+    {
+      "q": "Do you have an office outside Texas City?",
+      "a": "Yes. We have a second office at 21 Waterway Avenue, Suite 300 in The Woodlands, open by appointment, on (936) 444-4854."
+    },
+    {
+      "q": "Can I compare what I already pay?",
+      "a": "Yes. Send us your current coverage and we will compare your rates. If you're not thrilled with your current insurance, contact us."
+    }
+  ],
+  "serviceArea": [
+    "Texas City",
+    "The Woodlands"
+  ],
+  "facts": [
+    {
+      "heading": "The Woodlands office",
+      "text": "21 Waterway Avenue, Suite 300, The Woodlands, TX 77380. Phone (936) 444-4854, fax (832) 379-7438. Agency hours by appointment only."
+    },
+    {
+      "heading": "Texas City office",
+      "text": "2929 Palmer Hwy, Texas City, TX 77590. Phone (409) 945-5148, fax (409) 945-2741. Agency hours Monday to Friday, 9:00 AM to 5:00 PM."
+    },
+    {
+      "heading": "Online service center",
+      "items": [
+        "Report a claim",
+        "Make a payment",
+        "Policy changes",
+        "Update contact info",
+        "Document library",
+        "Proof of insurance",
+        "Policy review",
+        "Free consultation"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "facebook.com/spurgeoninsuranceagency",
+        "linkedin.com/company/spurgeonagency",
+        "twitter.com/agencyspurgeon",
+        "youtube.com/@spurgeonagency"
+      ]
+    },
+    {
+      "heading": "Quotes we write",
+      "text": "Auto, ATV, boat, classic car, roadside assistance, motorcycle, RV, home, condo, flood, landlords, renters, life, annuity, umbrella, business, commercial property, general liability, BOP, insurance bonds, workers compensation, event and pet."
+    },
+    {
+      "heading": "Your information is secure",
+      "text": "Your private information is provided exclusively to our agency and will not be redistributed or sold to anyone else."
+    },
+    {
+      "heading": "Staff directory",
+      "items": [
+        "Mark Spurgeon, Agency Owner - (409) 945-5148 or (936) 444-4854, markspurgeon@spurgeonagency.com",
+        "Kimberley Spurgeon, Insurance Agent - (936) 444-4854, kimberleyspurgeon@spurgeonagency.com",
+        "Chelsea Hilden, Insurance Agent - (409) 945-5148, chelseah@spurgeonagency.com",
+        "Lisa Lopez, Insurance Agent - (409) 945-5148, lisalopez@spurgeonagency.com",
+        "Leah Maldonado, Insurance Agent - (409) 945-5148, leah_maldonado@spurgeonagency.com",
+        "Teri Hill, Insurance Agent - (409) 945-5148, thill@spurgeonagency.com",
+        "Mirela Bidulescu, Insurance Agent - (409) 945-5148, mirelab@spurgeonagency.com",
+        "Cheryl Robinson, Insurance Agent - (936) 444-4854, cheryl_robinson@spurgeonagency.com",
+        "Lori Thomas, Customer Service Representative - (409) 945-5148, lori_thomas@spurgeonagency.com"
+      ]
+    },
+    {
+      "heading": "Already insured? Compare your rates",
+      "text": "Run your own rate comparison through our online quoting system at secure.consumerratequotes.com, or get an instant auto insurance quote from the homepage."
+    },
+    {
+      "heading": "Claims and payments through your carrier",
+      "text": "You can file a claim or make a payment directly on your insurance carrier's own website from our claims and payment pages. If your carrier is not listed, contact us directly and we will handle it."
+    },
+    {
+      "heading": "Proof of insurance",
+      "items": [
+        "ID cards, certificates of insurance and declaration pages",
+        "Delivered by fax, email or mail, or picked up in the agency"
+      ]
+    },
+    {
+      "heading": "Free consultations and policy reviews",
+      "text": "A free consultation or a free policy review can be held by telephone or face-to-face, whichever suits you. Send us your current coverage and we will compare your rates."
+    },
+    {
+      "heading": "Refer a friend",
+      "text": "There is no greater compliment you could give us than referring a friend to our agency, and our website has a form for it. You can also leave us a review at reviewouragency.com/spurgeonagency."
+    },
+    {
+      "heading": "Other coverage we quote",
+      "text": "Beyond our main product lines we also quote critical illness, crop, dental, disability, earthquake, final expense, health, long term care, Medicare supplements, travel and vision insurance. If you need something else, ask."
+    },
+    {
+      "heading": "Coverage is bound in writing",
+      "text": "No coverage can be bound, and no changes made to a new or existing policy, unless you have received a written binder of insurance from our office. A form submitted from this website does not constitute a binding coverage agreement."
+    },
+    {
+      "heading": "Accessibility",
+      "text": "We make the UserWay Website Accessibility Widget available to improve this site's compliance with the Web Content Accessibility Guidelines (WCAG 2.1), and we scan the site regularly with UserWay's Accessibility Scanner. If you have difficulty with any content, contact us during normal business hours at service@spurgeonagency.com and we will be happy to assist."
+    },
+    {
+      "heading": "Privacy inquiries",
+      "text": "Write to Mark Spurgeon Insurance Agency, Inc., Attention: Privacy Inquiries, telephone (281) 332-9200, or email service@spurgeonagency.com. We do not seek or knowingly collect personal information from children under the age of 13."
+    },
+    {
+      "heading": "Agent login",
+      "text": "Agents reach the agency management system through the Agent Login link at spurgeonagency.com/login."
+    }
+  ]
+}
