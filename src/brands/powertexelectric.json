@@ -1,0 +1,631 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Powertex Electric",
+  "shortName": "Powertex Electric",
+  "summary": "Licensed and insured residential and commercial electricians serving Weatherford, Parker County and the greater DFW region.",
+  "phone": "(817) 565-5036",
+  "email": "power1@powertex-electric.com",
+  "address": "1025 Silver Sage Trl",
+  "town": "Weatherford",
+  "state": "TX",
+  "zip": "76085",
+  "rating": 5.0,
+  "reviewCount": 70,
+  "hours": [["Mon – Sun", "Open 24 hours"]],
+  "brand": {
+    "primary": "#bf5700",
+    "primaryDeep": "#8a3e00",
+    "accent": "#f2a516",
+    "ink": "#151a1a",
+    "muted": "#5b5753",
+    "surface": "#fdf4ec",
+    "line": "#e8dace",
+    "heading": "'Titillium Web', system-ui, sans-serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap",
+    "logo": "/brands/powertexelectric/logo.webp",
+    "logoWidth": 210
+  },
+  "emergency": {
+    "title": "24/7 emergency electrical service",
+    "text": "If you smell burning, see sparks, or have lost power to critical systems, call now — we prioritize make-safe situations."
+  },
+  "sameDay": "Same-day service is available; availability depends on call volume, but urgent issues are prioritized.",
+  "financing": {
+    "text": "12 month 0% financing, and financing options for qualifying generator and battery backup projects."
+  },
+  "hero": {
+    "eyebrow": "Electricians in Weatherford and Parker County",
+    "title": "Expert electrical solutions",
+    "titleAccent": "near you.",
+    "lead": "Powertex Electric is a licensed and insured Weatherford electrician handling service calls, troubleshooting, panel upgrades, EV chargers, generators and code-compliant repairs for homes and businesses. Free estimates and flat rate pricing.",
+    "image": "/brands/powertexelectric/hero",
+    "imageAlt": "A Powertex Electric electrician working on an exterior disconnect box at a brick home"
+  },
+  "groups": [
+    {
+      "slug": "service-call",
+      "title": "Service Calls",
+      "icon": "wrench",
+      "summary": "Diagnosing and fixing electrical problems in homes and businesses, with repair pricing before any work starts.",
+      "intro": "A service call is for diagnosing and fixing electrical problems, not quoting large projects. It covers on-site diagnosis and troubleshooting, testing circuits, panels, breakers and devices, identifying code or safety issues, professional recommendations, and repair pricing provided before any work starts.",
+      "image": "/brands/powertexelectric/service-call",
+      "imageAlt": "A Powertex Electric electrician fitting a ceiling light fixture",
+      "services": [
+        {
+          "slug": "troubleshooting",
+          "title": "Residential and Commercial Troubleshooting",
+          "icon": "zap",
+          "text": "Power outages, partial power loss and faults traced back to the circuit, panel or device causing them.",
+          "points": [
+            "Power outages and partial power loss",
+            "Tripping breakers and blown fuses",
+            "Flickering or dimming lights",
+            "Dead outlets and switches",
+            "GFCI and AFCI issues",
+            "Panel, breaker and circuit diagnostics",
+            "Equipment and appliance power issues"
+          ]
+        },
+        {
+          "slug": "emergency-service",
+          "title": "Emergency Service",
+          "icon": "shield",
+          "text": "Burning smells, buzzing, sparking or lost power to critical systems. Make-safe situations are prioritized, any time of day.",
+          "points": [
+            "No-power calls",
+            "Burning smells, buzzing or sparking",
+            "Overheated or burning panels",
+            "Tripped breakers that will not reset",
+            "Storm damage repair"
+          ]
+        },
+        {
+          "slug": "service-call-pricing",
+          "title": "Transparent Service Call Pricing",
+          "icon": "gauge",
+          "text": "Clear pricing with no surprises. The service call includes on-site diagnosis, a licensed electrician's evaluation, and clear repair options before work begins.",
+          "points": ["Repairs quoted before work starts", "No pressure and no hidden fees", "Permits and inspections handled when required"]
+        }
+      ]
+    },
+    {
+      "slug": "residential",
+      "title": "Residential",
+      "icon": "home",
+      "summary": "Panel upgrades, lighting, dedicated circuits and remodel wiring that keep a home safe and powered.",
+      "intro": "Dependable, high-quality residential electrical work designed to keep your home safe, efficient and powered for everyday life. Whether it is troubleshooting, a panel upgrade, lighting, an EV charger or wiring for a remodel, licensed technicians deliver precise, code-compliant work.",
+      "image": "/brands/powertexelectric/residential",
+      "imageAlt": "A Powertex Electric electrician installing a smart thermostat on an interior wall",
+      "services": [
+        {
+          "slug": "general-electrical",
+          "title": "General Electrical Services",
+          "icon": "wrench",
+          "text": "The everyday repairs and corrections that keep a house running.",
+          "points": [
+            "Troubleshooting and electrical diagnostics",
+            "Breaker replacement",
+            "Outlet and switch repair or replacement",
+            "Lighting repair and upgrades",
+            "Whole-home safety inspections",
+            "Code compliance corrections"
+          ]
+        },
+        {
+          "slug": "panel-upgrades",
+          "title": "Panel and Service Upgrades",
+          "icon": "circuit",
+          "text": "Older and undersized panels replaced so the house has the capacity it needs.",
+          "points": [
+            "Electrical panel replacement",
+            "100A to 150A to 200A to 400A service upgrades",
+            "Fuse box to breaker panel conversions",
+            "Sub-panel installations",
+            "Surge protection installation"
+          ]
+        },
+        {
+          "slug": "lighting-installation",
+          "title": "Lighting Installation",
+          "icon": "lightbulb",
+          "text": "Interior, exterior and smart lighting installed and wired to the right switch.",
+          "points": [
+            "Recessed lighting (LED can lights)",
+            "Under-cabinet lighting",
+            "Pendant lights and chandeliers",
+            "Exterior and landscape lighting",
+            "Security lighting installation",
+            "Smart lighting systems"
+          ]
+        },
+        {
+          "slug": "additions-and-renovations",
+          "title": "Home Additions and Renovations",
+          "icon": "building",
+          "text": "Wiring for remodels, additions and new construction, rough-in through trim-out.",
+          "points": [
+            "Kitchen remodel wiring",
+            "Bathroom remodel wiring",
+            "Garage, barn and shop wiring",
+            "Room additions",
+            "New construction rough-in and trim-out"
+          ]
+        },
+        {
+          "slug": "dedicated-circuits",
+          "title": "Dedicated Circuits",
+          "icon": "plug",
+          "text": "A circuit sized for the equipment that needs it, rather than a shared one that trips.",
+          "points": [
+            "Appliances (ovens, ranges, dryers)",
+            "HVAC units and heat pumps",
+            "Water heaters and tankless water heaters",
+            "Hot tubs, spas and pools",
+            "Welders and shop equipment"
+          ]
+        },
+        {
+          "slug": "smart-home",
+          "title": "Smart Home and Technology",
+          "icon": "settings",
+          "text": "Smart switches, panels and controls wired in and set up.",
+          "points": [
+            "Smart switches and dimmers",
+            "Smart panel installations",
+            "Doorbell cameras and security systems",
+            "Wi-Fi controlled lighting and thermostats"
+          ]
+        },
+        {
+          "slug": "outdoor-electrical",
+          "title": "Outdoor Electrical",
+          "icon": "sun",
+          "text": "Power and lighting outside the house, from the patio to the dock.",
+          "points": [
+            "Exterior outlets (GFCI)",
+            "Patio, pergola and porch lighting",
+            "RV hookups",
+            "Dock and boathouse wiring",
+            "Landscape transformers and low-voltage lighting"
+          ]
+        },
+        {
+          "slug": "safety-devices",
+          "title": "Safety Devices",
+          "icon": "shield",
+          "text": "The protection a modern code calls for, added to an older house.",
+          "points": [
+            "GFCI and AFCI protection",
+            "Smoke and CO detector installation",
+            "Whole-home surge protection",
+            "Grounding and bonding improvements"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial",
+      "icon": "building",
+      "summary": "Finish-outs, lighting systems, service upgrades and equipment power for offices, retail, restaurants and warehouses.",
+      "intro": "Comprehensive commercial electrical solutions built to support the demands of businesses, offices, retail spaces and industrial facilities throughout Parker County and the DFW region. From tenant finish-outs and lighting upgrades to new construction wiring, service upgrades and ongoing maintenance, every installation is precise and code-compliant.",
+      "image": "/brands/powertexelectric/commercial",
+      "imageAlt": "A Powertex Electric electrician fastening conduit to the ceiling of a commercial building",
+      "services": [
+        {
+          "slug": "commercial-troubleshooting",
+          "title": "Electrical Troubleshooting and Repairs",
+          "icon": "zap",
+          "text": "Failures, outages and intermittent issues found and corrected so the business keeps running.",
+          "points": [
+            "Diagnosis of electrical failures, outages or intermittent issues",
+            "Breaker and fuse replacement and overload correction",
+            "Repair of lighting circuits, outlets, switches and equipment power",
+            "Motor and equipment circuit troubleshooting",
+            "Parking lot lighting repair and replacement"
+          ]
+        },
+        {
+          "slug": "finish-out",
+          "title": "Tenant Finish-Out and Build-Out",
+          "icon": "building",
+          "text": "Complete electrical systems for a new tenant, from conduit routing to trim-out.",
+          "points": [
+            "Complete electrical systems for new tenants",
+            "Conduit routing, rough-in and trim-out",
+            "Lighting layout and installation",
+            "Power distribution for offices, restaurants, retail and warehouses",
+            "HVAC electrical connections"
+          ]
+        },
+        {
+          "slug": "commercial-lighting",
+          "title": "Commercial Lighting Systems",
+          "icon": "lightbulb",
+          "text": "LED retrofits and lighting systems that cut energy cost and meet code.",
+          "points": [
+            "LED upgrades and retrofits for energy savings",
+            "High-bay and low-bay lighting installation",
+            "Emergency and exit lighting systems",
+            "Parking lot pole lighting (install, repair and replacement)",
+            "Motion-activated and photocell-controlled lighting"
+          ]
+        },
+        {
+          "slug": "panels-and-service",
+          "title": "Panels, Breakers and Service Upgrades",
+          "icon": "circuit",
+          "text": "Service capacity raised and distribution rebuilt for the load a building actually carries.",
+          "points": [
+            "Main panel installation and replacement",
+            "Service capacity upgrades (200A – 1200A+)",
+            "Transformer installation (208V, 240V, 480V)",
+            "Sub-panels for office spaces, shops and warehouses",
+            "Load balancing and circuit optimization"
+          ]
+        },
+        {
+          "slug": "new-construction",
+          "title": "New Construction Electrical",
+          "icon": "cable",
+          "text": "Design and installation of the whole electrical system on a new build.",
+          "points": [
+            "Comprehensive electrical design and installation",
+            "Conduit, feeders, branch circuits and distribution systems",
+            "Lighting design support and fixture installation",
+            "Compliance with local, state and NEC standards"
+          ]
+        },
+        {
+          "slug": "equipment-power",
+          "title": "Dedicated Circuits and Equipment Power",
+          "icon": "plug",
+          "text": "Three-phase and single-phase power run to the machinery that needs it.",
+          "points": [
+            "Power for HVAC units, compressors, welders and machinery",
+            "Break room appliances and commercial kitchen equipment",
+            "3-phase equipment wiring (208V/480V)",
+            "Motor controls and disconnect installation"
+          ]
+        },
+        {
+          "slug": "commercial-backup-power",
+          "title": "Backup Power and Emergency Systems",
+          "icon": "power",
+          "text": "Generators, transfer switches and UPS equipment wired so critical systems stay up.",
+          "points": [
+            "Generator installation and hookup",
+            "Automatic transfer switch (ATS) installs",
+            "UPS system wiring and maintenance",
+            "Emergency outlet circuits for critical systems"
+          ]
+        },
+        {
+          "slug": "preventive-maintenance",
+          "title": "Preventive Maintenance Programs",
+          "icon": "timer",
+          "text": "Ongoing maintenance for a building's electrical systems alongside the installation work."
+        },
+        {
+          "slug": "energy-efficiency",
+          "title": "Energy Efficiency and Power Management",
+          "icon": "leaf",
+          "text": "Lighting and controls reworked to bring the power bill down.",
+          "points": [
+            "Energy audits and lighting cost-reduction plans",
+            "Smart lighting controls and occupancy sensors",
+            "Surge protection for sensitive equipment"
+          ]
+        },
+        {
+          "slug": "site-electrical",
+          "title": "Exterior and Site Electrical",
+          "icon": "sun",
+          "text": "Lighting, signs and power across the parking lot and the rest of the site.",
+          "points": [
+            "Parking lot poles and fixtures",
+            "Outdoor security lighting",
+            "Sign lighting and sign power circuits",
+            "EV charging stations for commercial properties",
+            "Exterior receptacles and power pedestals"
+          ]
+        },
+        {
+          "slug": "code-compliance",
+          "title": "Code Compliance and Safety",
+          "icon": "shield",
+          "text": "Corrections that clear a building inspection or an insurance requirement.",
+          "points": [
+            "NEC code correction",
+            "Building inspection corrections",
+            "Grounding and bonding upgrades",
+            "GFCI/AFCI protection installation",
+            "Safety system upgrades for insurance compliance"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ev-chargers",
+      "title": "EV Chargers",
+      "icon": "ev",
+      "summary": "Level 2 home and commercial EV charger installation by licensed electricians, permits and inspections included.",
+      "intro": "Charge your EV at home, fast and safe, installed by licensed electricians. A stage 2 hardwire install of an owner-provided charger is $675 and includes the load calculation, the dedicated circuit and breaker, and programming and calibration. Most installs run $850 to $2,500 depending on the job.",
+      "image": "/brands/powertexelectric/ev-charger",
+      "imageAlt": "A Powertex Electric electrician connecting a wall-mounted EV charger",
+      "services": [
+        {
+          "slug": "stage-2-install",
+          "title": "Stage 2 Charger Install",
+          "icon": "ev",
+          "text": "Hardwire install of an owner-provided charger, $675.",
+          "points": ["Load calculation included", "Dedicated circuit and breaker install", "Programming and calibration"]
+        },
+        {
+          "slug": "home-ev-charging",
+          "title": "Home EV Charging",
+          "icon": "car",
+          "text": "Level 2 chargers and Tesla Wall Connectors fitted in the garage or driveway on a circuit sized for them.",
+          "points": [
+            "Level 2 home EV charger installation",
+            "Tesla Wall Connector installation",
+            "Dedicated 50A and 60A circuits",
+            "Garage power upgrades",
+            "Charger options available if you do not have one"
+          ]
+        },
+        {
+          "slug": "ev-charger-cost",
+          "title": "What Installation Costs",
+          "icon": "gauge",
+          "text": "Most installs run $850 to $2,500. The final price depends on panel capacity, the distance from the panel, trenching or wall penetration, and utility requirements.",
+          "points": [
+            "Load management options may avoid a panel upgrade",
+            "Most homes can support a charger with little or no upgrade",
+            "Permits and inspections included"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "backup-power",
+      "title": "Backup Power",
+      "icon": "battery",
+      "summary": "Standby generators, transfer switches, interlock kits and battery backup systems, installed and commissioned.",
+      "intro": "A standby generator is permanently installed and connected to your electrical system, and the automatic transfer switch detects an outage and switches your power over automatically. Battery systems do the same thing silently with no fuel. Powertex is Tesla and Generac certified, and financing is available on residential and commercial systems.",
+      "image": "/brands/powertexelectric/generator",
+      "imageAlt": "A Powertex Electric electrician servicing a Generac standby generator in a back yard",
+      "services": [
+        {
+          "slug": "standby-generators",
+          "title": "Standby Generator Installation",
+          "icon": "power",
+          "text": "Automatic standby generators and transfer switches that restore power the moment the grid fails. No extension cords, no manual startup, running on natural gas or propane.",
+          "points": [
+            "Standby generator installation",
+            "Automatic transfer switch (ATS) installation",
+            "Generator replacement and upgrades",
+            "Load calculations and system design",
+            "Utility coordination and permits",
+            "Startup, testing and commissioning"
+          ]
+        },
+        {
+          "slug": "generator-interlock",
+          "title": "Portable Generator Interlock",
+          "icon": "shield",
+          "text": "A mechanical safety device on the main panel that stops the main breaker and the generator breaker being on at once. A code-compliant alternative to a transfer switch, operated manually.",
+          "points": [
+            "Generator interlock kit installation",
+            "Outdoor generator inlet box",
+            "Dedicated generator breaker",
+            "Electrical panel modifications",
+            "Permits and inspection where required",
+            "System testing and safety walkthrough"
+          ]
+        },
+        {
+          "slug": "battery-backup",
+          "title": "Battery Backup Systems",
+          "icon": "battery",
+          "text": "Battery systems that store electricity and supply power the instant the grid goes down, with no fuel, noise or exhaust, and safe to install indoors or in a garage.",
+          "points": [
+            "Battery system design and sizing",
+            "Load analysis and critical circuit setup",
+            "Electrical panel integration",
+            "Permits and inspections",
+            "System testing and commissioning",
+            "Optional hybrid generator integration"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Service call special",
+    "title": "Your first hour of service is free.",
+    "text": "One hour of labor credited toward approved recommended repair work; after the first complimentary hour, standard hourly rates apply, and the offer cannot be combined with other offers.",
+    "image": "/brands/powertexelectric/truck",
+    "imageAlt": "The Powertex Electric service truck"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "A Texas family-owned electrical contractor.",
+    "text": [
+      "Powertex Electric is a Texas family-owned electrical contracting company built on over 20 years of leadership and experience in the electrical industry. Powertex brings big-project expertise to homeowners, businesses and builders across Weatherford, Parker County and the greater DFW region.",
+      "Our background includes extensive work on large-scale commercial projects and high-rise residential construction, giving us a deep understanding of complex electrical systems, multi-phase scheduling, safety standards and precision installation. From hospitals and stadiums to luxury residential towers and major infrastructure projects, our experience ensures every job, big or small, is completed with the highest level of craftsmanship and professionalism.",
+      "At Powertex Electric we combine industry-leading knowledge with Texas values: honesty, reliability and pride in every detail. Whether we are upgrading a home, wiring a commercial space, installing a service panel or delivering a full design-build solution, our team is committed to code-compliant, long-lasting electrical work you can trust."
+    ],
+    "image": "/brands/powertexelectric/team",
+    "imageAlt": "A Powertex Electric electrician securing conduit to an exterior wall",
+    "values": [
+      { "title": "Master electrician led", "text": "Licensed and insured, with residential and commercial experience behind every job." },
+      { "title": "No upselling", "text": "We solve the problem safely and efficiently, and repairs are quoted before work starts." },
+      { "title": "Clean, professional work", "text": "We show up on time, protect your property, and leave the jobsite cleaner than we found it." }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Do you offer same-day service?",
+      "a": "Yes. Availability depends on call volume, but we prioritize urgent issues."
+    },
+    {
+      "q": "Can you fix the issue during the service call?",
+      "a": "In most cases, yes. If additional work is needed, we provide clear options."
+    },
+    {
+      "q": "Do you work on older electrical systems?",
+      "a": "Absolutely. We regularly service older panels, wiring and homes."
+    },
+    {
+      "q": "Do you handle permits if needed?",
+      "a": "Yes. Permits and inspections are handled when required."
+    },
+    {
+      "q": "Is the estimate really free?",
+      "a": "Yes, for qualifying install and upgrade projects. If your request is troubleshooting a problem, such as power out or a breaker tripping, that is a service call and we will quote it before dispatch."
+    },
+    {
+      "q": "How soon can you come out?",
+      "a": "Often the same week. Submit the form and we will confirm the earliest appointment."
+    },
+    {
+      "q": "Do you offer financing?",
+      "a": "Yes. Financing options may be available for qualifying projects, and we offer 12 month 0% financing."
+    }
+  ],
+  "serviceArea": [
+    "Weatherford",
+    "Hudson Oaks",
+    "Willow Park",
+    "Aledo",
+    "Brock",
+    "Millsap",
+    "Peaster",
+    "Poolville",
+    "Springtown",
+    "Sanctuary",
+    "Fort Worth",
+    "Azle",
+    "Lake Worth",
+    "Saginaw",
+    "Keller",
+    "Arlington",
+    "White Settlement",
+    "Roanoke",
+    "Trophy Club",
+    "Northlake",
+    "Argyle",
+    "Justin",
+    "Frisco",
+    "Decatur",
+    "Bridgeport",
+    "Boyd",
+    "Rhome",
+    "Granbury",
+    "Mineral Wells",
+    "Palo Pinto"
+  ],
+  "facts": [
+    {
+      "heading": "Free estimate",
+      "text": "A free on-site electrical estimate for qualifying install and upgrade projects: a walk-through with a licensed electrician, scope of work with good, better and best options where they apply, upfront pricing and a timeline, permit and code guidance where required, and documentation you can forward to your GC or PM."
+    },
+    {
+      "heading": "Counties served",
+      "items": ["Parker County", "Tarrant County", "Denton County", "Wise County", "Hood County", "Palo Pinto County"]
+    },
+    {
+      "heading": "Certified on",
+      "items": ["Tesla", "Generac"]
+    },
+    {
+      "heading": "How a free estimate works",
+      "items": [
+        "Tell us what you need on the one-minute form",
+        "We schedule your visit and confirm by text or call",
+        "You get pricing and a plan, the same day whenever possible"
+      ]
+    },
+    {
+      "heading": "How a generator or battery install works",
+      "items": [
+        "Free on-site evaluation",
+        "Load analysis and system sizing",
+        "Transfer switch, generator or battery installation",
+        "Inspection and system testing",
+        "Ongoing service and support"
+      ]
+    },
+    {
+      "heading": "Battery backup or a standby generator",
+      "text": "Batteries are silent and instant, need no fuel, and suit short to moderate outages. A standby generator runs longer on fuel and suits extended outages. Many customers choose a battery and generator hybrid system."
+    },
+    {
+      "heading": "Pricing",
+      "items": ["Free estimate", "Flat rate pricing", "12 month 0% financing", "Free first hour on a service call with approved repair"]
+    },
+    {
+      "heading": "Why Powertex Electric",
+      "items": [
+        "Master electrician led company",
+        "Licensed and insured",
+        "Residential and commercial experience",
+        "Permits and inspections included",
+        "Clean, professional installations",
+        "Local and trusted Texas company",
+        "No upselling — we solve the problem safely and efficiently"
+      ]
+    },
+    {
+      "heading": "EV charger facts",
+      "items": [
+        "Home charging is cheaper than public charging",
+        "Charging at home reduces wear from public fast charging",
+        "Level 2 chargers are up to 6 to 10 times faster",
+        "Most homes can support an EV charger with little or no upgrades",
+        "Load management options may avoid panel upgrades"
+      ]
+    },
+    {
+      "heading": "What a free estimate appointment includes",
+      "items": ["Same-week appointments", "Honest recommendations", "Code-compliant work", "Residential and commercial"]
+    },
+    {
+      "heading": "Residential work we estimate",
+      "items": [
+        "Panel upgrades and replacements",
+        "EV charger installation (Level 2)",
+        "Whole-home surge protection",
+        "Generator interlock and transfer equipment",
+        "Remodels and additions (new circuits, lighting, kitchen, bath)",
+        "Service and meter upgrades and exterior equipment"
+      ]
+    },
+    {
+      "heading": "Commercial work we estimate",
+      "items": [
+        "Tenant finish and buildouts",
+        "Panelboard upgrades and new feeders",
+        "Lighting upgrades (interior and exterior)",
+        "Dedicated circuits for equipment",
+        "Troubleshooting plans and corrective work, quoted after assessment",
+        "Code corrections for inspections or insurance"
+      ]
+    },
+    {
+      "heading": "Staying in touch",
+      "text": "Powertex Electric stays in constant communication with its customers until the job is done, and the office takes questions and special requests by phone or through the form."
+    },
+    {
+      "heading": "Book online",
+      "text": "Online booking is open at book.housecallpro.com/book/Powertex-Electric, and the office answers the phone any time, day or night."
+    },
+    {
+      "heading": "Find us online",
+      "items": ["facebook.com/811765095358189", "instagram.com/powertex_electric"]
+    }
+  ]
+}

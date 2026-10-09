@@ -1,0 +1,334 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "insurance",
+  "name": "The Water Girl Insurance",
+  "shortName": "The Water Girl",
+  "tagline": "Gulf Coast specialist for boat and yacht insurance",
+  "phone": "(832) 725-3621",
+  "email": "aj@water-girl.com",
+  "address": "1909 Capri Ln",
+  "town": "Seabrook",
+  "state": "TX",
+  "zip": "77586",
+  "license": "The Water Girl LLC. Insurance coverage, exclusions, limits and eligibility vary by policy and insurance carrier.",
+  "rating": 5.0,
+  "reviewCount": 53,
+  "hours": [
+    ["Mon – Fri", "9 AM – 5 PM"],
+    ["Saturday", "9 AM – 1 PM"],
+    ["Sunday", "Closed"]
+  ],
+  "cta": {
+    "label": "Get a Quote",
+    "text": "Compare live rates from multiple top carriers in a few minutes, or call if you would rather talk it through with someone."
+  },
+  "brand": {
+    "primary": "#093c58",
+    "primaryDeep": "#032233",
+    "accent": "#0079bf",
+    "ink": "#12232e",
+    "muted": "#56697a",
+    "surface": "#f4f8fa",
+    "cream": "#e4eef4",
+    "line": "#d8e4eb",
+    "heading": "'Playfair Display', Georgia, serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Roboto:wght@300;400;500;700&display=swap",
+    "logo": "/brands/thewatergirlinsurance/logo.webp",
+    "logoWidth": 190
+  },
+  "hero": {
+    "eyebrow": "Boat and yacht insurance in Seabrook, Texas",
+    "title": "Protect your boat. Protect your adventures.",
+    "lead": "We are the Gulf Coast's specialist for boat and yacht insurance, from center consoles to yachts, and we write auto, home, RV and motorcycle alongside it.",
+    "image": "/brands/thewatergirlinsurance/hero",
+    "imageAlt": "A sport fishing yacht running out through the channel",
+    "points": [
+      "Helping boat owners since 2007",
+      "Progressive, GEICO and American Modern",
+      "Live rates from multiple carriers"
+    ]
+  },
+  "overview": {
+    "title": "A full line of personal insurance, with marine as the specialty.",
+    "text": "Pick a line of coverage to see what it includes, or call and talk it through with an agent."
+  },
+  "services": [
+    {
+      "slug": "boat-and-yacht",
+      "title": "Boat & Yacht Insurance",
+      "icon": "anchor",
+      "summary": "Center consoles to yachts, bay and offshore.",
+      "text": "Our specialty. Coverage for the vessel, the equipment on it and the liability that comes with being on the water, written around the way you actually use the boat.",
+      "lead": "Your homeowners policy generally is not designed to provide the level of coverage a boat needs, particularly a larger or more valuable vessel. Boat insurance can protect the vessel, the equipment, your liability and other risks that come with being on the water, and the right coverage depends on your boat and how you use it.",
+      "image": "/brands/thewatergirlinsurance/boat",
+      "imageAlt": "A center console boat idling on calm water",
+      "covers": [
+        {
+          "title": "Vessels we insure",
+          "text": "Fishing boats, center consoles, bass boats, ski boats, cruisers, sailboats, yachts and other recreational watercraft. If you are not sure we can insure yours, call and we will discuss it."
+        },
+        {
+          "title": "Fishing equipment",
+          "text": "Coverage for rods, reels, electronics and tackle varies by policy and carrier, so tell us what you carry and we will help you decide whether additional coverage is appropriate."
+        },
+        {
+          "title": "Trailers",
+          "text": "Trailer coverage varies by policy. If the boat is transported on a trailer, say so while we are quoting so the trailer is properly addressed."
+        },
+        {
+          "title": "Storage",
+          "text": "Coverage can apply while the boat is stored, but what is covered depends on the policy. Let us know how and where you store it, particularly out of season."
+        },
+        {
+          "title": "Offshore navigation",
+          "text": "Policies can carry navigation limits or restrictions. Tell us where you plan to run the boat and we will look for coverage appropriate for that navigation."
+        },
+        {
+          "title": "Liability on the water",
+          "text": "Boat liability can help protect you if you are legally responsible for injuries or property damage from a covered boating accident. Limits and provisions vary, so we talk through how you boat first."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why do I need separate boat insurance?",
+          "a": "A homeowners policy generally is not designed to provide the level of coverage needed for a boat, particularly a larger or more valuable vessel. Boat insurance can cover the vessel, the equipment, liability and other risks of being on the water."
+        },
+        {
+          "q": "Do I need insurance if my boat is financed?",
+          "a": "Your lender will generally have its own insurance requirements, and those vary by lender and by boat. Even unfinanced, appropriate insurance helps protect the investment and provides liability protection."
+        },
+        {
+          "q": "Can you insure a boat I use for fishing tournaments?",
+          "a": "Absolutely. Fishing boats are one of our specialties. If you fish tournaments, run offshore regularly or use the boat for other specialized activities, tell us, because those details matter to the coverage."
+        },
+        {
+          "q": "What happens if I have an accident with another boat?",
+          "a": "Boat liability coverage can help protect you if you are legally responsible for injuries or property damage resulting from a covered boating accident. We go through your typical boating activities so you can select appropriate limits."
+        },
+        {
+          "q": "What do you need to quote a boat?",
+          "a": "Year, make and model, length, purchase price or current value, hull identification number, engine information, where the boat is kept and used, your boating experience, any prior losses, and whether the boat is financed."
+        }
+      ]
+    },
+    {
+      "slug": "auto",
+      "title": "Auto Insurance",
+      "icon": "car",
+      "summary": "Personal auto, quoted across carriers.",
+      "text": "Personal auto coverage compared across multiple top carriers, online in a few minutes or over the phone if you would rather talk it through.",
+      "lead": "Auto is part of the full line of personal insurance we write. Our comparative quoting form returns live rates from multiple participating carriers for eligible risks, and you can quote auto on its own or together with your home.",
+      "image": "/brands/thewatergirlinsurance/auto",
+      "imageAlt": "Traffic moving along a highway in daylight",
+      "questions": [
+        {
+          "q": "Can I get a quote even if I already have insurance?",
+          "a": "Absolutely. We can compare available options and help you decide whether another policy offers a better combination of coverage and price. There is no need to wait until your current policy expires."
+        }
+      ]
+    },
+    {
+      "slug": "home",
+      "title": "Home Insurance",
+      "icon": "house",
+      "summary": "Homeowners, quoted on its own or with auto.",
+      "text": "Homeowners coverage compared across the carriers we represent, and quoted alongside auto when you want to see both together.",
+      "lead": "Homeowners insurance is part of the full line of personal products we offer. The comparative quoting form on our site covers home, auto, or auto and home together, so you can see what each option costs before you choose.",
+      "image": "/brands/thewatergirlinsurance/home",
+      "imageAlt": "A white two-storey house with a wide driveway"
+    },
+    {
+      "slug": "rv",
+      "title": "RV Insurance",
+      "icon": "truck",
+      "summary": "Motorhomes and travel trailers.",
+      "text": "RV and travel trailer coverage, written through the same carriers and quoted the same way as the rest of your household policies.",
+      "lead": "RV and travel trailer insurance is one of the personal lines we write. Tell us what you tow or drive and how you use it, and we will compare the options available to you.",
+      "image": "/brands/thewatergirlinsurance/rv",
+      "imageAlt": "A travel trailer parked on open grassland"
+    },
+    {
+      "slug": "motorcycle",
+      "title": "Motorcycle Insurance",
+      "icon": "key",
+      "summary": "Coverage for what you ride.",
+      "text": "Motorcycle coverage, part of the full line of personal insurance we offer alongside boat, auto, home and RV.",
+      "lead": "Motorcycle insurance is one of the personal lines we write. Call or start a quote and we will gather what we need and compare the options available for your bike.",
+      "image": "/brands/thewatergirlinsurance/motorcycle",
+      "imageAlt": "A rider on a cruiser motorcycle on an open highway"
+    }
+  ],
+  "process": {
+    "title": "How a quote works",
+    "text": "Start online or call. Either way, the point is to understand what you are insuring before anybody quotes it.",
+    "steps": [
+      {
+        "title": "Start the quote",
+        "text": "Use the comparative quoting form for auto and home, or contact us directly if you would prefer to speak with someone."
+      },
+      {
+        "title": "Tell us how you use it",
+        "text": "We gather information about what you are looking to insure. For a boat that means where it is kept, where you run it, what equipment is aboard and whether it is financed."
+      },
+      {
+        "title": "Compare the options",
+        "text": "Our online quoting process can return live rates from multiple participating carriers in a few minutes for eligible risks, and we go through them with you."
+      }
+    ]
+  },
+  "affiliations": {
+    "title": "Carriers we represent",
+    "items": ["Progressive", "GEICO", "American Modern"]
+  },
+  "about": {
+    "title": "Based in Seabrook, in the heart of the Clear Lake boating community.",
+    "text": [
+      "The Water Girl Insurance is the Gulf Coast's trusted specialist for boat and yacht insurance. Based in Seabrook, Texas, we serve boat owners throughout the Gulf Coast and beyond, and as an authorized agency for Progressive, GEICO, American Modern and others we provide competitive coverage for everything from center consoles to yachts. Fishing boats, bass boats and ski boats, along with cruisers, sailboats and luxury yachts, are our specialty.",
+      "Since 2007, A.J. Laird has helped boat owners navigate the unique risks that come with life on the water. With extensive marine insurance knowledge and a genuine passion for the boating lifestyle, we understand that your boat is more than just a policy. It is an investment in your freedom, your family and your adventures.",
+      "Whether you are cruising the bay, fishing offshore, enjoying a weekend with family and friends or docking at your favorite marina, we work to provide coverage designed around the way you enjoy your boat. We are not just interested in selling you a policy, and our goal is to make insurance easy to understand while providing personalized service and expert guidance every step of the way.",
+      "With multiple trusted carrier options, we look forward to building a strong and lasting relationship with you, and we work hard to provide you with the best coverage at the best available price. Protect your boat, protect your adventures, and we will help keep you covered on and off the water."
+    ],
+    "image": "/brands/thewatergirlinsurance/about",
+    "imageAlt": "Boats moored in a Gulf Coast harbor",
+    "values": [
+      {
+        "title": "Independent",
+        "text": "An independent agency can compare coverage and pricing from multiple carriers rather than being tied to one company, and we work with several trusted carriers."
+      },
+      {
+        "title": "Marine experience",
+        "text": "Marine insurance is the specialty, and A.J. Laird has been helping boat owners navigate their insurance needs since 2007."
+      },
+      {
+        "title": "Plain language",
+        "text": "We want to understand how you actually use your boat and help you find coverage that makes sense, explained in terms that are easy to follow."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What types of insurance does The Water Girl Insurance offer?",
+      "a": "A full range of personal insurance products, including boat and yacht, auto, homeowners, RV and motorcycle insurance. Our specialty is marine insurance, and we have extensive experience helping boat owners find coverage that fits the way they use their vessels."
+    },
+    {
+      "q": "Do you only insure boats?",
+      "a": "No. While boat and yacht insurance is our specialty, we also offer auto, homeowners, RV and motorcycle insurance."
+    },
+    {
+      "q": "Why should I use an independent insurance agency?",
+      "a": "An independent agency can compare coverage and pricing from multiple insurance carriers rather than being tied to just one company. We work with multiple trusted carriers to help you find coverage that fits your needs and budget."
+    },
+    {
+      "q": "Can you help me compare insurance rates?",
+      "a": "Yes. Our online quoting process lets you compare insurance options from multiple carriers. You can start through the online quote form, or contact us directly if you would prefer to speak with someone."
+    },
+    {
+      "q": "How long does it take to get a quote?",
+      "a": "It varies with the type of insurance and the information needed. The online quoting process can return live rates from multiple participating carriers in just a few minutes for eligible risks."
+    },
+    {
+      "q": "Can I get a quote even if I already have insurance?",
+      "a": "Absolutely. We can compare available options and help you determine whether another policy may provide a better combination of coverage and price. There is no need to wait until your current policy expires."
+    },
+    {
+      "q": "Where are you located?",
+      "a": "Seabrook, Texas, in the heart of the Clear Lake and Gulf Coast boating community. We serve boat owners throughout the Gulf Coast and beyond."
+    },
+    {
+      "q": "How long have you been helping boat owners?",
+      "a": "A.J. Laird has been helping boat owners navigate their insurance needs since 2007. That experience with marine insurance gives us an understanding of the risks that come with owning and enjoying a boat."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Client center",
+      "text": "View your policies, print insurance ID cards, update your contact information and download documents.",
+      "href": "https://customerservice.agentinsure.com/EzlynxCustomerService/thewatergi/Account/LogIn"
+    },
+    {
+      "title": "Compare quotes online",
+      "text": "Our comparative quoting form for auto, home, or auto and home together. Live rates from multiple top carriers in a few minutes.",
+      "href": "https://www.agentinsure.com/compare/auto-insurance-home-insurance/thewatergi/quote.aspx"
+    }
+  ],
+  "serviceArea": [
+    "Seabrook",
+    "La Porte",
+    "Kemah",
+    "League City",
+    "Deer Park",
+    "Pasadena",
+    "Harris County",
+    "Galveston County"
+  ],
+  "facts": [
+    {
+      "heading": "Vessels we insure",
+      "items": [
+        "Fishing boats",
+        "Center consoles",
+        "Bass boats",
+        "Ski boats",
+        "Cruisers",
+        "Sailboats",
+        "Yachts",
+        "Other recreational watercraft"
+      ]
+    },
+    {
+      "heading": "What we need to quote a boat",
+      "items": [
+        "Year, make and model",
+        "Boat length",
+        "Purchase price or current value",
+        "Hull identification number",
+        "Engine information",
+        "Where the boat is kept",
+        "Where you typically use the boat",
+        "Your boating experience",
+        "Any prior claims or losses",
+        "Whether the boat is financed"
+      ]
+    },
+    {
+      "heading": "Client center",
+      "text": "Existing clients can view policies, print insurance ID cards, update contact information and download documents through our online client center."
+    },
+    {
+      "heading": "Lines we write",
+      "items": [
+        "Boat and yacht",
+        "Personal auto",
+        "Homeowners",
+        "RV",
+        "Motorcycle"
+      ]
+    },
+    {
+      "heading": "Marine experience",
+      "text": "A.J. Laird has been helping boat owners navigate their insurance needs since 2007."
+    },
+    {
+      "heading": "Find us online",
+      "text": "The Water Girl Insurance is on Facebook at facebook.com/ajlaird."
+    },
+    {
+      "heading": "Online quote form",
+      "text": "The comparative quoting form starts with the type of insurance you want quoted, auto, home, or auto and home together, and your zip code, and in a few minutes you have live rates from multiple top carriers to compare."
+    },
+    {
+      "heading": "Questions about coverage",
+      "text": "Insurance is not one-size-fits-all, so a question about your boat, auto, home, RV, motorcycle or another type of coverage is one we are happy to help with by phone or email."
+    },
+    {
+      "heading": "How to reach us",
+      "text": "Call 832-725-3621, email aj@water-girl.com, or visit us in Seabrook, Texas."
+    },
+    {
+      "heading": "Policy terms",
+      "text": "The information here is general. Insurance coverage, exclusions, limits and eligibility vary by policy and insurance carrier, and nothing here modifies or replaces the terms of an insurance policy."
+    }
+  ]
+}
