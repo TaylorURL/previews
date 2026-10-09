@@ -1,0 +1,433 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "insurance",
+  "name": "JAMCO Insurance",
+  "shortName": "JAMCO",
+  "tagline": "Texas insurance from your trusted neighbors",
+  "phone": "(832) 777-5260",
+  "email": "jamco@jamcoinsurance.com",
+  "address": "225 Preston Ave",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77503",
+  "since": 2001,
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 6 PM"
+    ]
+  ],
+  "cta": {
+    "label": "Get a Quote",
+    "text": "Tell us a little about what you need and a local agent will follow up with options tailored to your situation."
+  },
+  "brand": {
+    "primary": "#072a4f",
+    "primaryDeep": "#04203e",
+    "accent": "#5e605f",
+    "ink": "#15202c",
+    "muted": "#56606d",
+    "surface": "#f5f6f8",
+    "cream": "#e9edf2",
+    "line": "#dde3ea",
+    "heading": "'Playfair Display', Georgia, serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap",
+    "logo": "/brands/jamcoinsurance/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Independent agency in Pasadena, TX",
+    "title": "Texas insurance from your trusted neighbors.",
+    "lead": "Independent means we are not tied to one carrier. We compare 38 of them, explain what each policy actually covers, and help you pick the one that fits.",
+    "image": "/brands/jamcoinsurance/jose-medrano",
+    "imageAlt": "Jose Medrano, independent insurance agent at JAMCO Insurance",
+    "points": [
+      "Quotes compared across 38 carriers",
+      "A local office on Preston Avenue",
+      "English and Spanish spoken"
+    ]
+  },
+  "overview": {
+    "title": "From home insurance to business insurance, we have you covered.",
+    "text": "We are an independent agency, so we can quote your coverage with 38 carriers instead of one, and tell you what each of them costs and covers. Our agents work out of Pasadena and Houston."
+  },
+  "audiences": {
+    "individuals": "Personal Insurance",
+    "businesses": "Commercial Insurance"
+  },
+  "services": [
+    {
+      "slug": "personal-auto",
+      "title": "Personal Auto Insurance",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Protects your vehicle and covers liability.",
+      "text": "Protects your vehicle and covers liability on the road.",
+      "lead": "A fender bender on I-45 is the kind of thing auto coverage is for. We compare quotes from 38 carriers and explain your options in plain English."
+    },
+    {
+      "slug": "homeowners",
+      "title": "Homeowners Insurance",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Protection for your home and belongings.",
+      "text": "Comprehensive protection for your home and personal belongings.",
+      "lead": "A storm that damages your roof, a break-in that shakes your sense of security. When the unexpected happens, you need coverage that actually has your back."
+    },
+    {
+      "slug": "renters",
+      "title": "Renters Insurance",
+      "audience": "individuals",
+      "icon": "key",
+      "summary": "Belongings and liability cover for renters.",
+      "text": "Protects your belongings and provides liability coverage for renters."
+    },
+    {
+      "slug": "flood",
+      "title": "Flood Insurance",
+      "audience": "individuals",
+      "icon": "waves",
+      "summary": "Cover for flood damage to your property.",
+      "text": "Specialized coverage for flood damage to your property."
+    },
+    {
+      "slug": "umbrella",
+      "title": "Umbrella Insurance",
+      "audience": "individuals",
+      "icon": "umbrella",
+      "summary": "Liability beyond your standard policy limits.",
+      "text": "Additional liability protection beyond your standard policy limits."
+    },
+    {
+      "slug": "life",
+      "title": "Life Insurance",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Financial protection for your family.",
+      "text": "Financial protection for your family after your death."
+    },
+    {
+      "slug": "motorcycle",
+      "title": "Motorcycle Insurance",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "Cover for your motorcycle and liability.",
+      "text": "Coverage for your motorcycle and liability protection on road."
+    },
+    {
+      "slug": "rv",
+      "title": "RV Insurance",
+      "audience": "individuals",
+      "icon": "truck",
+      "summary": "Cover for your RV and belongings.",
+      "text": "Comprehensive coverage for your recreational vehicle and belongings."
+    },
+    {
+      "slug": "boat",
+      "title": "Boat Insurance",
+      "audience": "individuals",
+      "icon": "anchor",
+      "summary": "Protects your watercraft on the water.",
+      "text": "Protects your watercraft and provides liability on the water."
+    },
+    {
+      "slug": "mobile-home",
+      "title": "Mobile Home Insurance",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "For manufactured and mobile homes.",
+      "text": "Specialized coverage designed for manufactured and mobile homes."
+    },
+    {
+      "slug": "landlord",
+      "title": "Landlord Insurance",
+      "audience": "individuals",
+      "icon": "building",
+      "summary": "Rental properties and lost income.",
+      "text": "Specialized coverage for rental properties and lost income."
+    },
+    {
+      "slug": "jewelry",
+      "title": "Jewelry Insurance",
+      "audience": "individuals",
+      "icon": "gem",
+      "summary": "For valuable jewelry and precious items.",
+      "text": "Specialized protection for your valuable jewelry and precious items."
+    },
+    {
+      "slug": "sr-22-mexico",
+      "title": "SR-22 and Mexico Coverage",
+      "audience": "individuals",
+      "icon": "file-text",
+      "summary": "Required filings and specialized coverage.",
+      "text": "Required filings and specialized coverage for unique situations."
+    },
+    {
+      "slug": "commercial-property",
+      "title": "Commercial Property",
+      "audience": "businesses",
+      "icon": "factory",
+      "summary": "Buildings, equipment and inventory.",
+      "text": "Protects buildings, equipment, inventory, and other business physical assets.",
+      "lead": "You did not build your business overnight. We shop 38 carriers to find policies tailored to your industry and your budget."
+    },
+    {
+      "slug": "directors-and-officers",
+      "title": "Directors and Officers",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Personal liability for management decisions.",
+      "text": "Protects company leaders from personal liability for management decisions."
+    },
+    {
+      "slug": "cyber-liability",
+      "title": "Cyber Liability",
+      "audience": "businesses",
+      "icon": "shield-check",
+      "summary": "Data breaches and network failures.",
+      "text": "Covers data breaches, cyberattacks, and network security failures."
+    },
+    {
+      "slug": "inland-marine",
+      "title": "Inland Marine",
+      "audience": "businesses",
+      "icon": "truck",
+      "summary": "Mobile equipment in transit or off-site.",
+      "text": "Protects mobile equipment and property in transit or off-site."
+    },
+    {
+      "slug": "builders-risk",
+      "title": "Builder's Risk",
+      "audience": "businesses",
+      "icon": "hard-hat",
+      "summary": "Buildings and materials during construction.",
+      "text": "Covers buildings and materials during construction or renovation phases."
+    },
+    {
+      "slug": "commercial-umbrella",
+      "title": "Commercial Umbrella",
+      "audience": "businesses",
+      "icon": "umbrella",
+      "summary": "Liability above underlying policy limits.",
+      "text": "Provides additional liability coverage above underlying policy limits."
+    },
+    {
+      "slug": "crime-insurance",
+      "title": "Crime Insurance",
+      "audience": "businesses",
+      "icon": "shield",
+      "summary": "Employee theft, fraud and criminal acts.",
+      "text": "Protects against employee theft, fraud, and criminal acts."
+    },
+    {
+      "slug": "commercial-flood",
+      "title": "Commercial Flood",
+      "audience": "businesses",
+      "icon": "waves",
+      "summary": "Building and contents damage from flooding.",
+      "text": "Covers building and contents damage from flooding events."
+    },
+    {
+      "slug": "business-interruption",
+      "title": "Business Interruption",
+      "audience": "businesses",
+      "icon": "chart",
+      "summary": "Lost income during a covered closure.",
+      "text": "Replaces lost income when covered losses force temporary closure."
+    },
+    {
+      "slug": "hired-and-non-owned-auto",
+      "title": "Hired and Non-Owned Auto",
+      "audience": "businesses",
+      "icon": "car",
+      "summary": "Rental and employee-owned vehicles at work.",
+      "text": "Covers liability from rental and employee-owned vehicles used for business."
+    },
+    {
+      "slug": "liquor-liability",
+      "title": "Liquor Liability",
+      "audience": "businesses",
+      "icon": "store",
+      "summary": "For businesses that serve alcohol.",
+      "text": "Protects businesses serving alcohol from intoxication-related claims."
+    },
+    {
+      "slug": "surety-bonds",
+      "title": "Surety Bonds",
+      "audience": "businesses",
+      "icon": "stamp",
+      "summary": "Performance and contract compliance.",
+      "text": "Guarantees performance and compliance with contractual obligations."
+    },
+    {
+      "slug": "tenant-improvements",
+      "title": "Tenant Improvements",
+      "audience": "businesses",
+      "icon": "clipboard-check",
+      "summary": "Alterations to leased commercial space.",
+      "text": "Covers alterations and improvements made to leased commercial space."
+    },
+    {
+      "slug": "restaurant-insurance",
+      "title": "Restaurant Insurance",
+      "audience": "businesses",
+      "icon": "store",
+      "summary": "For dining and food service operations.",
+      "text": "Comprehensive coverage for dining establishments and food service operations."
+    },
+    {
+      "slug": "hospitality-insurance",
+      "title": "Hospitality Insurance",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Hotels, motels and lodging businesses.",
+      "text": "Specialized coverage for hotels, motels, and lodging businesses."
+    }
+  ],
+  "affiliations": {
+    "title": "Carriers we represent",
+    "items": [
+      "Aflac",
+      "Allstate",
+      "American Amicable",
+      "Attune",
+      "Bankers Fidelity",
+      "Berkshire Hathaway",
+      "Blue Cross Blue Shield Texas",
+      "Bristol West",
+      "Chubb",
+      "Cover Whale",
+      "Embark General",
+      "Encompass",
+      "Excellent Insurance",
+      "FEMA",
+      "Foremost",
+      "Gainsco",
+      "Hagerty",
+      "Hartford",
+      "Hiscox",
+      "Humana",
+      "Infinity",
+      "Jewelers Mutual",
+      "Liberty Mutual",
+      "National General",
+      "National Life Group",
+      "Neptune Flood",
+      "Next Insurance",
+      "Orchid",
+      "Principal",
+      "Progressive",
+      "Propeller Bonds",
+      "Selective Insurance",
+      "Swyfft",
+      "Tapco",
+      "Texas Mutual",
+      "Travelers",
+      "Wellington",
+      "Wright Flood"
+    ]
+  },
+  "about": {
+    "title": "How JAMCO got its start.",
+    "text": [
+      "JAMCO Insurance opened its doors in 2001 with a simple mission: make insurance personal again. Back then, we saw too many families and business owners stuck with one-size-fits-all policies from agents who did not take the time to listen. We knew there had to be a better way, so we built an agency that puts people first, where every client gets real guidance rather than a sales pitch.",
+      "Over the past 24 years, we have grown from a single office in Pasadena to serving communities across Greater Houston. Today, we work with 38 trusted carriers to bring our clients more choices and better rates. Our bilingual team is proud to serve Texas families in both English and Spanish. What has not changed is the reason we started: helping our neighbors protect what matters most."
+    ],
+    "values": [
+      {
+        "title": "Independence",
+        "text": "Since we are not limited to a single carrier, we explore the market and advocate for the best coverage options at the most competitive prices for you."
+      },
+      {
+        "title": "Guidance",
+        "text": "Insurance can be confusing. We are here to explain your options clearly, answer every question, and help you make confident decisions."
+      },
+      {
+        "title": "Relationships",
+        "text": "We treat every client like a neighbor, not a number. When you call, you will talk to someone who knows your name and your needs."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Jose Medrano",
+      "role": "Independent Insurance Agent",
+      "bio": "Jose has over 23 years of experience in private and public practice in insurance and financial planning, as well as over 5 years as a commercial real estate agent for JAMCO Insurance. He also consults on government contracting and business strategies. He holds a B.B.A. in Marketing and completed the Program for Excellence in Selling at the University of Houston Bauer College of Business."
+    }
+  ],
+  "serviceArea": [
+    "Pasadena",
+    "Houston",
+    "Greater Houston"
+  ],
+  "facts": [
+    {
+      "heading": "Service center",
+      "items": [
+        "File a claim",
+        "Online billing and payment",
+        "Request an ID card",
+        "Request a certificate",
+        "Policy changes",
+        "Policy review"
+      ]
+    },
+    {
+      "heading": "Our agents",
+      "items": [
+        "Brian Gutierrez, Independent Insurance Agent",
+        "Donald R. Idlebird, Independent Insurance Agent",
+        "Jamey Richardson, Independent Insurance Agent",
+        "Jose Medrano, Independent Insurance Agent",
+        "Raymond Garcia, Independent Insurance Agent",
+        "Rebeca Mata, Independent Insurance Agent",
+        "Robert Goodwin, Independent Insurance Agent",
+        "Ruth Desta, Independent Insurance Agent",
+        "Sirley Rendon, Insurance and Real Estate Agent",
+        "Tony DeLeon, Independent Insurance Agent"
+      ]
+    },
+    {
+      "heading": "Service team",
+      "items": [
+        "Romeo Ocampo, Personal Lines Account Manager",
+        "Jhester Sibug, Commercial Lines Account Manager",
+        "Elizabeth Mendez, Customer Service Representative",
+        "Lance Alcantara, Customer Service Representative",
+        "Patrick Pasohil, Customer Service Representative"
+      ]
+    },
+    {
+      "heading": "Languages",
+      "text": "Our bilingual team serves Texas families in both English and Spanish."
+    },
+    {
+      "heading": "Claims",
+      "text": "Fill in the claim form on our site and our team will help you report it, or file straight with your carrier and follow their process."
+    },
+    {
+      "heading": "Pasadena office",
+      "text": "225 Preston Ave, Pasadena, TX 77503. Phone (832) 777-5260, email jamco@jamcoinsurance.com, Monday to Friday 9 AM to 6 PM."
+    },
+    {
+      "heading": "Houston office",
+      "text": "6260 Westpark Drive, Suite 303b, Houston, TX 77057. Phone 713-589-9460, Monday to Friday 9 AM to 6 PM."
+    },
+    {
+      "heading": "24/7 quote line",
+      "text": "Kelly, our live agent line, answers day or night on (832) 981-1674 to start a quote, answer questions and book follow-ups."
+    },
+    {
+      "heading": "Careers",
+      "text": "We are hiring at JAMCO Insurance. Send us your resume through the form on our careers page."
+    },
+    {
+      "heading": "Find us",
+      "items": [
+        "Facebook: facebook.com/JAMCOINSURANCE"
+      ]
+    }
+  ]
+}
