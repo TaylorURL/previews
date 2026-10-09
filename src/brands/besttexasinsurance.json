@@ -1,0 +1,233 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "insurance",
+  "name": "Best Texas Insurance",
+  "shortName": "Best Texas Insurance",
+  "tagline": "Independent insurance for Texas homes, families and businesses",
+  "phone": "(832) 736-0883",
+  "email": "agent@thebesttexasinsurance.com",
+  "address": "16821 Buccaneer Ln Ste 200",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77058",
+  "rating": 4.8,
+  "reviewCount": 48,
+  "hours": [["Mon – Thu", "8:30 AM – 5:30 PM"], ["Friday", "9:00 AM – 5:00 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "cta": {
+    "label": "Get a Quote",
+    "text": "Call or click today for a free policy review. We do the shopping so that you can save."
+  },
+  "brand": {
+    "primary": "#28386f",
+    "primaryDeep": "#062143",
+    "accent": "#c22729",
+    "ink": "#1a1a1a",
+    "muted": "#55606f",
+    "surface": "#f6f7fa",
+    "cream": "#eceff5",
+    "line": "#dfe3ec",
+    "heading": "'Spectral', Georgia, serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Open+Sans:wght@400;500;600;700&display=swap",
+    "logo": "/brands/besttexasinsurance/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Independent agency in Houston",
+    "title": "Built to protect Texas homes, families, and businesses.",
+    "lead": "We are your local, independent insurance agency, helping Texas homeowners, drivers, and business owners find the right coverage at the best value. We take the time to explain your coverages, identify gaps, and build a policy that truly protects your assets.",
+    "image": "/brands/besttexasinsurance/hero",
+    "imageAlt": "Michelle Hinojosa going over an insurance policy with a client",
+    "points": ["We shop multiple carriers", "Free policy review", "Hablamos Español"]
+  },
+  "overview": {
+    "title": "Coverage for Texas households and the businesses they run.",
+    "text": "Pick a line of coverage to see what it includes, or call and talk it through with an agent."
+  },
+  "audiences": { "individuals": "Individuals & Families", "businesses": "Businesses" },
+  "services": [
+    {
+      "slug": "home",
+      "title": "Home Insurance",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Coverage for the house and what is in it.",
+      "text": "Homeowners coverage shopped across multiple carriers, with the coverages explained and the gaps pointed out before you sign.",
+      "lead": "Your home is likely the largest thing you own. We shop it through multiple top-rated carriers and walk you through what each policy actually covers.",
+      "covers": [
+        { "title": "The structure", "text": "Rebuilding the house itself after a covered loss." },
+        { "title": "Personal property", "text": "Furniture, clothing and the rest of what is inside the house." },
+        { "title": "Personal liability", "text": "Injuries and damage you are held responsible for." },
+        { "title": "A free policy review", "text": "We read the policy you have now and tell you where the gaps are." }
+      ]
+    },
+    {
+      "slug": "auto",
+      "title": "Auto Insurance",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Liability and full coverage for your vehicles.",
+      "text": "Auto coverage quoted across multiple carriers so you can compare what you pay against what you are actually protected for.",
+      "lead": "We quote your vehicles with more than one carrier, then go through the limits and deductibles with you so the price makes sense.",
+      "covers": [
+        { "title": "Liability", "text": "Injuries and damage you cause to other people and their property." },
+        { "title": "Collision and comprehensive", "text": "Repairs to your own vehicle after a wreck, hail, theft or flood water." },
+        { "title": "Uninsured motorist", "text": "Protection when the other driver carries no insurance or not enough of it." },
+        { "title": "Instant quotes", "text": "Start online with your zip code, or call and we will run it with you." }
+      ]
+    },
+    {
+      "slug": "renters",
+      "title": "Renters Insurance",
+      "audience": "individuals",
+      "icon": "key",
+      "summary": "Belongings and liability in a rental.",
+      "text": "Renters coverage for apartments and rental homes, written to protect your belongings and your liability rather than the building.",
+      "lead": "A landlord's policy covers the building, not what you keep inside it. Renters insurance covers your own property and the liability that comes with where you live.",
+      "covers": [
+        { "title": "Personal property", "text": "Furniture, electronics and clothing, wherever they are." },
+        { "title": "Personal liability", "text": "Injuries to guests and damage you are responsible for." },
+        { "title": "Lease requirements", "text": "Proof of coverage when a landlord or complex asks for it." }
+      ]
+    },
+    {
+      "slug": "flood",
+      "title": "Flood Insurance",
+      "audience": "individuals",
+      "icon": "waves",
+      "summary": "Flood cover a home policy leaves out.",
+      "text": "Flood coverage for Gulf Coast homes, written as its own policy because a standard homeowners policy does not pay for rising water.",
+      "lead": "Along the Texas Gulf Coast, flood is the gap people find out about after the water comes in. It is a separate policy, and we quote it alongside the home.",
+      "covers": [
+        { "title": "Building coverage", "text": "The structure itself, including what is built into it." },
+        { "title": "Contents coverage", "text": "Furniture, appliances and belongings, written as a separate limit." },
+        { "title": "Gaps in the home policy", "text": "We show you in writing where a homeowners policy stops and flood begins." }
+      ]
+    },
+    {
+      "slug": "life",
+      "title": "Life Insurance",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Cover for the people who rely on you.",
+      "text": "Life coverage shopped across multiple carriers and sized to what your family would actually need, with honest guidance rather than pressure.",
+      "lead": "Life insurance is about the people who depend on your income. We talk through how much is enough, then compare what the carriers will write.",
+      "covers": [
+        { "title": "Choosing an amount", "text": "Working out what your household would need, rather than a number picked for you." },
+        { "title": "Several carriers", "text": "Options from more than one top-rated company, compared side by side." },
+        { "title": "Policy reviews", "text": "A look at coverage you already hold through work or an older policy." }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial Insurance",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Cover for what you have built.",
+      "text": "Commercial coverage for Texas business owners, built around how the business actually operates and shopped through multiple carriers.",
+      "lead": "Business owners get the same approach as everyone else here: we learn how the business runs, find the gaps, and shop the market for coverage that fits it.",
+      "covers": [
+        { "title": "A policy built to the business", "text": "Coverage customized to your specific needs rather than a package off the shelf." },
+        { "title": "Multiple carriers", "text": "We shop through more than one company so price and protection can be compared." },
+        { "title": "A free policy review", "text": "Bring what you carry now and we will tell you where it leaves you exposed." }
+      ]
+    }
+  ],
+  "process": {
+    "title": "How we work",
+    "text": "Our approach is simple.",
+    "steps": [
+      { "title": "We take the time", "text": "We go through your home, vehicles, business or family and what you have in place now." },
+      { "title": "We identify gaps", "text": "You find out where your current coverage stops before a claim finds it for you." },
+      { "title": "We shop the carriers", "text": "Your details go to multiple top-rated carriers, and we bring back the options." },
+      { "title": "We advocate for you", "text": "As an independent agency we are not tied to one company, so we stay on your side of the table." }
+    ]
+  },
+  "affiliations": {
+    "items": [
+      "Hartford",
+      "The Hartford",
+      "National General",
+      "National General One Choice",
+      "National General Custom360",
+      "Progressive Insurance",
+      "Nationwide Insurance",
+      "Liberty Mutual (Formerly Safeco)",
+      "Travelers",
+      "GEICO",
+      "Homeowners of America Ins Co.",
+      "One Alliance North America",
+      "Wellington Standard",
+      "Wellington Select",
+      "Orion180 - Non-Admitted",
+      "Orion180 - Admitted"
+    ]
+  },
+  "about": {
+    "title": "An independent agency built on 15 years in the business.",
+    "text": [
+      "Hi, I'm Michelle Hinojosa, founder of Best Texas Insurance, an independent insurance agency proudly serving Houston, Pearland, League City, and surrounding Texas communities.",
+      "After 15 years in the insurance industry, I took a leap of faith and built my own insurance agency with one goal in mind: to give people real options and honest guidance when protecting what matters most. As an independent insurance agent, I'm not tied to just one company. That means I can shop multiple top-rated carriers to find the coverage that fits your home, vehicles, business, or life.",
+      "But insurance to me isn't just policies and premiums. It's about relationships, trust, and being there when life happens. If you're looking for a trusted local agent who will shop the market and advocate for you, I'd love the opportunity to help."
+    ],
+    "image": "/brands/besttexasinsurance/about",
+    "imageAlt": "Michelle Hinojosa on the phone with a client",
+    "values": [
+      { "title": "Real options", "text": "Not tied to one company, so the market gets shopped for you." },
+      { "title": "Honest guidance", "text": "Coverages explained and gaps identified before a policy is written." },
+      { "title": "Exceptional service", "text": "At Best Texas Insurance, exceptional service is at the heart of everything we do." }
+    ]
+  },
+  "team": [
+    {
+      "name": "Michelle Hinojosa",
+      "role": "Founder and Independent Insurance Agent",
+      "bio": "Founded Best Texas Insurance after 15 years in the insurance industry, and shops multiple top-rated carriers for homes, vehicles, businesses and life coverage.",
+      "image": "/brands/besttexasinsurance/team-1",
+      "imageAlt": "Michelle Hinojosa"
+    }
+  ],
+  "serviceArea": ["Houston", "Galveston", "League City", "Pasadena", "Baytown", "Texas City", "Pearland", "Friendswood"],
+  "facts": [
+    {
+      "heading": "Two offices, by appointment",
+      "items": [
+        "Houston: 16821 Buccaneer Ln Ste 200, Houston, TX 77058 — by appointment only",
+        "Pearland: 11200 Broadway St Ste 2743, Pearland, TX 77584 — by appointment only"
+      ]
+    },
+    {
+      "heading": "Service areas",
+      "text": "We proudly serve clients across Houston, Galveston, League City, Pasadena, Baytown, Texas City, Pearland, Friendswood and other Texas Gulf Coast communities."
+    },
+    {
+      "heading": "Online for clients",
+      "items": [
+        "Customer service center: view your policies, print ID cards, update your contact information and download documents",
+        "Compare quotes: run auto and home quotes online with your zip code",
+        "Hablamos Español",
+        "Customer service center: customerservice.agentinsure.com/EzlynxCustomerService/besttexas",
+        "Compare quotes: agentinsure.com/compare/auto-insurance-home-insurance/besttexas"
+      ]
+    },
+    {
+      "heading": "Quoting online",
+      "items": [
+        "Start instantly with your zip code and the type of insurance: Auto, Home or Both",
+        "The full quote form covers Auto, Home/Condo/Renters or Both, and asks whether the home is a mobile home",
+        "An insurance quote does not impact your credit score",
+        "A quote takes approximately 3-5 minutes to complete",
+        "We follow the highest industry standards to safeguard the confidentiality of your personal information and secure its transmission",
+        "We offer comparative quotes from several national and regional insurance companies"
+      ]
+    },
+    {
+      "heading": "Follow us",
+      "items": [
+        "Facebook: facebook.com/profile.php?id=61575795969599",
+        "Instagram: instagram.com/michellehinojosa_insagent"
+      ]
+    }
+  ]
+}
