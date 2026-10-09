@@ -1,0 +1,420 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Ramdas Accounting, LLC",
+  "shortName": "Ramdas Accounting",
+  "tagline": "Tax, audit and advisory for The Woodlands, Spring and Conroe",
+  "phone": "(281) 655-3297",
+  "email": "info@ramdasaccounting.com",
+  "address": "1790 Hughes Landing Blvd, Suite 400",
+  "town": "The Woodlands",
+  "state": "TX",
+  "zip": "77380",
+  "since": 2009,
+  "rating": 4.9,
+  "reviewCount": 32,
+  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Come and tell us what you need and we will let you know how we can help."
+  },
+  "brand": {
+    "primary": "#9b0312",
+    "primaryDeep": "#6d0210",
+    "accent": "#eb0029",
+    "ink": "#1a1c16",
+    "muted": "#5c6059",
+    "surface": "#f7f5f2",
+    "cream": "#efe9e3",
+    "line": "#e2dbd4",
+    "heading": "'Source Serif 4', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/ramdasaccounting/logo.webp",
+    "logoWidth": 155
+  },
+  "hero": {
+    "eyebrow": "CPA firm at Hughes Landing",
+    "title": "CPA and tax accounting firm serving The Woodlands, Spring and Conroe.",
+    "lead": "Ramdas Accounting is a Woodlands based CPA firm specializing in tax preparation for individuals and businesses. We also help with IRS representation, financial planning, audits, reviews, compilations and business development.",
+    "image": "/brands/ramdasaccounting/hero",
+    "imageAlt": "Two people shaking hands across a desk of financial reports",
+    "points": [
+      "Tax preparation for individuals and businesses",
+      "IRS representation and audit help",
+      "Quickbooks Certified bookkeeping staff"
+    ]
+  },
+  "overview": {
+    "title": "Tax, audit and advisory work for individuals, businesses and non-profits.",
+    "text": "Pick a service to see what it covers, or call and talk it through with our team."
+  },
+  "audiences": { "individuals": "Individuals", "businesses": "Businesses & Non-Profits" },
+  "services": [
+    {
+      "slug": "individual-tax",
+      "title": "Individual Tax",
+      "audience": "individuals",
+      "icon": "receipt",
+      "summary": "Personal income tax preparation and e-filing.",
+      "text": "Personal income tax preparation and e-filing, from a first return to small business income, rental property, stock options and expatriate returns.",
+      "lead": "Ramdas Accounting helps minimize tax liability for individuals and families with leading industry knowledge and practices. Whether you are a first time filer, need to amend your IRS return or have a more complex situation, we are here to help prepare and e-file your necessary forms.",
+      "image": "/brands/ramdasaccounting/individual-tax",
+      "imageAlt": "A calculator and a tax form on a desk",
+      "covers": [
+        { "title": "Tax preparation", "text": "One-on-one personalized assistance from a licensed tax professional rather than a computer program." },
+        { "title": "A wide range of situations", "text": "Small business income, rental properties, high net worth, stock options, partnership K-1's, and expatriate and international tax needs." },
+        { "title": "A tax organizer in January", "text": "Returning clients receive a tax organizer as a basic backbone of questions to get started. New clients receive everything needed as soon as they decide to come on." },
+        { "title": "Secure upload and e-filing", "text": "Upload and access your documents through the online portal instead of mailing them, and your filed return is uploaded there for your records." },
+        { "title": "Questions year round", "text": "Our staff is on hand whether you need help getting your taxes together, an extension, or tax planning help later in the year." }
+      ],
+      "questions": [
+        { "q": "What do I get to help me gather my documents?", "a": "In January we provide returning clients with a tax organizer to act as a basic backbone of questions to get you started. New clients receive everything needed as soon as they decide to come on." },
+        { "q": "Do I have to mail my documents in?", "a": "No. By signing up and using our online portal you can securely upload and access all of your tax documents without mailing them." }
+      ]
+    },
+    {
+      "slug": "irs-representation",
+      "title": "IRS Representation",
+      "audience": "individuals",
+      "icon": "shield-check",
+      "summary": "Help with IRS debt, levies, liens and audits.",
+      "text": "We will represent you in front of the IRS and work to develop a solution that is best for you, whether it is back returns, an audit, a lien or a levy.",
+      "lead": "At Ramdas Accounting we understand how overwhelming working with the IRS can be. With a reduced IRS staff and an increase in notices being mailed, we are here to be your advocate.",
+      "image": "/brands/ramdasaccounting/irs-representation",
+      "imageAlt": "A person at a desk holding a sign reading help",
+      "covers": [
+        { "title": "Failure to file", "text": "We gather your tax information and file your back returns. Until those are filed we cannot help minimize your back tax debt and penalties." },
+        { "title": "Audits", "text": "We handle all communication with the IRS so you can focus on your life. Send us the notice and we take care of it." },
+        { "title": "Liens and levies", "text": "A lien is a legal claim against your property to secure payment of your tax debt; a levy actually takes the property. Contact us immediately and we begin negotiating on your behalf." },
+        { "title": "Offer in Compromise", "text": "An agreement we write that negotiates with the IRS to settle your debt for less than what you owe." },
+        { "title": "Penalties and installment agreements", "text": "Where the tax owed cannot be lowered we negotiate lower penalties and interest, or an installment agreement that pays small portions over a set period." },
+        { "title": "The order of the notices", "text": "Notice CP14 arrives first, then the CP501 and CP503 reminders, then CP504 by certified mail as a notice of intent to levy that lets the IRS claim your state tax refund, and last the Notice of Intent to Levy and Notice of Your Right to a Hearing, also by certified mail." }
+      ],
+      "questions": [
+        { "q": "What should I do first if the IRS contacts me?", "a": "If you receive a notice by mail or phone, the first thing you need to do is contact us. Fighting the notices on your own can cost you more than the tax itself did." },
+        { "q": "How long before the IRS can seize anything?", "a": "The IRS legally cannot take anything from you until 30 days after the date of your final notice of intent to levy." }
+      ]
+    },
+    {
+      "slug": "tax-financial-planning",
+      "title": "Tax + Financial Planning",
+      "audience": "individuals",
+      "icon": "piggy-bank",
+      "summary": "Planning for retirement, education and goals.",
+      "text": "We help you plan for the future and achieve your goals in an ever-changing financial and regulatory environment with thorough analysis and creative solutions.",
+      "lead": "Many taxpayers know a CPA can prepare their personal income taxes, but as personal financial planners CPAs can also help you make an investment into your own future. Personal financial planning helps individuals at all income levels.",
+      "image": "/brands/ramdasaccounting/financial-planning",
+      "imageAlt": "A pile of United States coins",
+      "covers": [
+        { "title": "Three questions first", "text": "Where are you now, where do you want to be, and how are you going to get there." },
+        { "title": "Investment options explained", "text": "Mutual funds, certificates of deposit, real estate, bonds, stocks, investment and retirement funds, with the risks, liquidity and tax characteristics set out." },
+        { "title": "Retirement and pensions", "text": "How much to contribute to retirement accounts and an evaluation of your pension." },
+        { "title": "Budgeting and debt", "text": "Determining the amount of money you need to reach your goals, maintain your lifestyle or pay off debts." },
+        { "title": "A second opinion", "text": "An objective review of other advisors' recommendations." }
+      ],
+      "questions": [
+        { "q": "Do I need a certain income level for financial planning?", "a": "No. Personal financial planning can help individuals from all income levels." },
+        { "q": "Are you only available at tax time?", "a": "No. We are available year round. Pick up the phone, send an e-mail or schedule a meeting anytime if you have a question or would like to stop by." }
+      ]
+    },
+    {
+      "slug": "corporate-tax",
+      "title": "Corporate Tax",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Business returns, payroll filings and planning.",
+      "text": "We help businesses year round meet their tax and regulatory needs in a timely, professional manner, working alongside you and your staff to maximize deductions and reduce tax liability.",
+      "lead": "As a corporation you are subject to tax and must submit a tax return similarly to individuals. There are a few different kinds of corporate structures, each with its own forms, intricacies and due dates, and we keep up with the laws and the changes to them to keep your business paying the least income taxes possible.",
+      "covers": [
+        { "title": "Corporate returns", "text": "Federal and any or all state returns, personally prepared and reviewed by our CPA staff and filed electronically." },
+        { "title": "Payroll filings", "text": "W-2's, 1099's and 940's. Provide names and amounts paid and we do the rest." },
+        { "title": "Entity selection", "text": "We can help you determine whether your business is currently the best entity for tax minimization, and assist with filing for a change in corporate structure." },
+        { "title": "A predecessor accountant", "text": "We obtain all of your necessary information without any extra effort on your part so you can focus on your business and customers." },
+        { "title": "Tax planning", "text": "A tax strategy that benefits you all year and plans that change as the laws change." },
+        { "title": "An organizer and a document list", "text": "You receive a tax organizer as a basic backbone of questions, along with a list of the tax documents generally needed to complete the return." }
+      ],
+      "questions": [
+        { "q": "When are business filings due?", "a": "The due date for many payroll forms, including W-2's, 1099's and 940's, is January 31st. The corporate tax due date is March 15th." },
+        { "q": "What does it cost to talk it through first?", "a": "Our services start with a free consultation. Come and tell us what you need and we will let you know how we can help." }
+      ]
+    },
+    {
+      "slug": "audit-review-compilation",
+      "title": "Audit + Review + Compilation",
+      "audience": "businesses",
+      "icon": "clipboard-check",
+      "summary": "Three levels of financial statement assurance.",
+      "text": "Audits, reviews and compilations provide varying levels of assurance on your financial statements. Whether it is a stockholder, creditor, investor or bank, we provide the intended party a report with the requested level of assurance.",
+      "lead": "The purpose of financial statement assurance is to add credibility and assure the reliability of a company's financial statements. We view our role in the financial reporting process as an opportunity to provide constructive solutions for maximizing your company's profitability and efficiency.",
+      "image": "/brands/ramdasaccounting/audit-review",
+      "imageAlt": "One person handing a clipboard of documents to another",
+      "covers": [
+        { "title": "Compilation", "text": "The lowest level of assurance. The objective is to assist management in presenting financial statements, and the CPA's report will not express an opinion or provide assurance regarding them." },
+        { "title": "Review", "text": "The middle level. The objective is limited assurance that there are no material modifications needed for the statements to conform with GAAP, with all required footnotes and disclosures included." },
+        { "title": "Audit", "text": "The highest level of assurance available from independent CPAs, including confirming bank balances, verifying reconciliations and checks, and an assessment of internal control." },
+        { "title": "What a review looks at", "text": "At a minimum the accounting practices the organization uses, the procedures for recording and storing financial information, and the actions taken at stockholder or board meetings, with inquiries directed to the management responsible for financial and accounting matters." },
+        { "title": "What an audit report says", "text": "A report on whether the financial statements present fairly in all material respects and in conformity with GAAP, with a statement of changes in financial statements and detailed, referenced footnotes setting out accounting methods, policies and certain financial data." },
+        { "title": "Knowing your industry", "text": "Each assurance service requires we have the knowledge of your business and industry, so we can offer focused insight on your internal controls and operations." }
+      ],
+      "questions": [
+        { "q": "Which level of assurance do I need?", "a": "Audits are most often required by banks or lenders while others may be satisfied with a lesser level. Contact us and we will help determine which option is right for you." },
+        { "q": "What else comes out of an audit?", "a": "The CPA may become aware of weaknesses in internal controls or organizational systems and offer suggestions for improvement." }
+      ]
+    },
+    {
+      "slug": "advisory-business-development",
+      "title": "Advisory + Business Development",
+      "audience": "businesses",
+      "icon": "chart",
+      "summary": "Starting, growing or selling a business.",
+      "text": "Whether you would like to start a business, grow your current business or sell a business, we are here to help at every pivotal point in your business life cycle.",
+      "lead": "From great ideas on a notepad to established multimillion dollar corporations, we are experienced in helping business owners make the best decisions to improve their bottom lines and their businesses as a whole.",
+      "image": "/brands/ramdasaccounting/advisory",
+      "imageAlt": "People seated around a boardroom table during a presentation",
+      "covers": [
+        { "title": "Formation", "text": "Perfecting your business plan, determining your start-up capital requirements and helping you find sources of capital if necessary." },
+        { "title": "Business structure", "text": "Deciding what is best for you by weighing tax advantages, ease of operation and possible relocation, and legal exposure, then filing the state and federal paperwork." },
+        { "title": "Growth and management", "text": "Analyzing businesses and evaluating cost reductions, forecasting and strategizing growth, including whether a merger is right for you and your employees." },
+        { "title": "Virtual CFO and bookkeeping", "text": "Invoicing, budgeting, recording your daily transactions and closing your books." },
+        { "title": "Valuation and sale", "text": "An objective, skilled valuation for a merger, a sale or a dispute, aimed at the best possible sales price or payout terms." },
+        { "title": "Protocols, payroll and insurance", "text": "Once the business starts taking off we help set up your business protocol and procedures, from payroll start up to buying business insurance." }
+      ],
+      "questions": [
+        { "q": "Do you only work with established companies?", "a": "No. We work with businesses from great ideas on a notepad to established multimillion dollar corporations." },
+        { "q": "Can you just check over the books we already keep?", "a": "Yes. If you are doing just fine and want someone to check over your books, we can do that too." }
+      ]
+    },
+    {
+      "slug": "quickbooks-bookkeeping",
+      "title": "Quickbooks + Bookkeeping",
+      "audience": "businesses",
+      "icon": "calculator",
+      "summary": "Setup, clean up and ongoing bookkeeping.",
+      "text": "We specialize in Quickbooks and can manage all aspects of your bookkeeping, from a fresh set of books to monthly or quarterly review.",
+      "lead": "Is your business growing and your bookkeeping taking up more and more of your time, but still not enough to hire someone full time? Are your books hard to even look at? We are available to help you with any and all aspects of your bookkeeping needs.",
+      "covers": [
+        { "title": "Quickbooks set up", "text": "Our Certified Quickbooks ProAdvisor helps you determine what accounts you need, how to handle beginning balances, how to set up Quickbooks Payroll and how to link your bank accounts." },
+        { "title": "Quickbooks clean up", "text": "From accounts with confusing balances to far too many accounts, we clean your books up and get them current. Send us your documents and file." },
+        { "title": "Monthly or quarterly review", "text": "We reconcile your accounts and make sure transactions are entered, clean up your General Ledger, generate accurate company reports and provide ongoing consultation." },
+        { "title": "Quickbooks Online", "text": "Working online we help clients from around the world, in real time, from everyday bookkeeping to once a month reconciliations." },
+        { "title": "Training your staff", "text": "From training staff to do a few key transactions to fully taking on your books." }
+      ],
+      "questions": [
+        { "q": "Does the initial setup really matter?", "a": "Yes. Although Quickbooks has been designed to be easy to understand, the initial setup and framework of your books must be done correctly to ensure everything stays accurate." },
+        { "q": "Why do accurate reports matter?", "a": "Having accurate reports is the only way for you or your bank to analyze how your business is doing, whether you are looking for a loan or need to show new potential shareholders." }
+      ]
+    },
+    {
+      "slug": "non-profit-accounting",
+      "title": "Non-Profit Accounting",
+      "audience": "businesses",
+      "icon": "handshake",
+      "summary": "Form 990 and 501(c)(3) tax-exempt status.",
+      "text": "We help maintain your non-profit's 501(c)(3) federal tax-exempt status by handling all the IRS reporting for you, including Form 990.",
+      "lead": "Your focus running a non-profit is not the money, it is the mission. We understand the tax and financial needs of non-profit organizations through experience, and our current work with other non-profits lets us stay on top of changing industry regulations and issues.",
+      "image": "/brands/ramdasaccounting/non-profit",
+      "imageAlt": "Silhouettes of a line of people standing together",
+      "covers": [
+        { "title": "Form 990", "text": "The lengthy yearly return that reports your income and expenses to the IRS. The IRS makes it publicly available, so it is vital that it contains accurate information." },
+        { "title": "Schools and universities", "text": "We work with your members and governing body to properly account for and file the requisite tax forms at an affordable rate." },
+        { "title": "Budgets and forecasting", "text": "Help organizing and forming budgets and forecasting financial climates." },
+        { "title": "Everyday bookkeeping", "text": "One time services all the way up to full time support, whatever your income level or level of need." },
+        { "title": "IRS audits", "text": "We help your organization with IRS audits as well as its reporting." }
+      ],
+      "questions": [
+        { "q": "Do you only work with 501(c)(3) organizations?", "a": "No. We help 501(c)(3) clients and also religious institutions and even small clubs and associations." },
+        { "q": "Why does a non-profit need an accountant?", "a": "Most non-profits do not have an accountant on staff, and timely, accurate financial information and statements help your organization plan and move ahead." }
+      ]
+    },
+    {
+      "slug": "trust-estate-gift-tax",
+      "title": "Trust + Estate + Gift Tax",
+      "audience": "businesses",
+      "icon": "scale",
+      "summary": "Trust formation, estate returns and gift tax.",
+      "text": "We can assist you with the formation and tax filing for all types of trusts, estates and gifts, and work alongside your attorney and financial planners.",
+      "lead": "Having a will or trust is not everything estate planning is about. We aim to help make sure you have the appropriate tools in place to enable the transfer of your assets to your loved ones with as little difficulty, tax and time as possible.",
+      "image": "/brands/ramdasaccounting/trust-estate",
+      "imageAlt": "A last will and testament document with a pen resting on it",
+      "covers": [
+        { "title": "Estates", "text": "Estate tax return preparation at both the federal and state level, coordinated across all related returns of the decedent and beneficiaries." },
+        { "title": "Working with your advisors", "text": "Our staff works with your attorney to analyze your will, retirement plan, insurance policies and business succession plans to minimize estate taxes." },
+        { "title": "Trusts", "text": "Formation and tax filing for revocable, irrevocable, asset protection, discretionary, charitable, special needs, spendthrift, constructive and tax by-pass trusts, including the yearly Form 1041." },
+        { "title": "Gifts", "text": "If you gave a taxable gift during the year we help you account for it on Form 709 and calculate your lifetime exclusion." },
+        { "title": "What is excluded, and splitting a gift", "text": "Directly paid educational and medical expenses are excluded, and married individuals can combine their gift to one recipient, though doing so means filing a gift tax return." },
+        { "title": "How the tax is worked out", "text": "The tax on gifts over the yearly exclusion is added to the tax over the gift limit from previous years and applied against your lifetime exclusion; once that sum exceeds the lifetime exclusion, gift tax may be owed." }
+      ],
+      "questions": [
+        { "q": "I already have an estate plan. Is that enough?", "a": "With all of the changes in estate tax codes over the past few years, and more being predicted, we recommend a review of your plan to make sure you are covered." },
+        { "q": "Are gifts I give tax deductible?", "a": "No, this is the opposite of the truth. A gift tax return must be filed if you gift over the annual exclusion per recipient." }
+      ]
+    }
+  ],
+  "process": {
+    "title": "Our process",
+    "text": "The same four steps whether you are filing a personal return or running a company.",
+    "steps": [
+      { "title": "A customized tax organizer", "text": "Receive a customized tax organizer that will help you collect all of your necessary tax information." },
+      { "title": "Send it back your way", "text": "Return the organizer with pertinent tax documents to us by the method that is most convenient for you." },
+      { "title": "Ten business days", "text": "Expect your tax return to be prepared within ten business days for your review, signature, filing and payment." },
+      { "title": "All year, not just April", "text": "Consult with Ramdas Accounting throughout the year for all of your tax, financial, representation and planning needs." }
+    ]
+  },
+  "affiliations": {
+    "title": "Credentials on our team",
+    "items": ["CPA", "CFP®", "MST", "MBA", "Certified Quickbooks ProAdvisor"]
+  },
+  "about": {
+    "title": "A Woodlands CPA firm specializing in tax, audit and advisory services.",
+    "text": [
+      "Ramdas Accounting, LLC. is a Woodlands based CPA firm specializing in tax, audit and advisory services for individuals and business entities. We keep up to date on new laws and regulations and we provide our clients with the best industry knowledge and expertise.",
+      "Rahul Ramdas started his accounting career at Texas A&M in College Station. His very first clients were Aggie students just like him. After completing his CPA designation, he founded Ramdas Accounting in 2009 in Houston before expanding offices to The Woodlands. We have since merged with two other accounting firms to expand our client base and now have over 100 years combined CPA income tax preparation service experience.",
+      "Although we might seem local, we also serve clients well beyond the Woodlands and Greater Houston Area from all around the world. Whether it is working with a multi-million dollar firm to discuss their quarterly financials, a mid-sized corporation dealing with their corporate taxes, or a small business or startup setting up their books, Ramdas Accounting provides reliable, quality tax and financial services."
+    ],
+    "values": [
+      { "title": "Value-added accounting", "text": "A complete approach that covers individual tax, business tax, audit, accounting, bookkeeping and financial planning while saving time and money." },
+      { "title": "Reachable year round", "text": "We appreciate our clients and the trust they instill in us, and we make it a point to ensure that our clients can reach us anytime." },
+      { "title": "Personalized to you", "text": "We consistently exceed client expectations by personalizing our services to unique client needs and providing the highest level of quality service in our field." },
+      { "title": "Lasting relationships", "text": "Our purpose is to build lasting relationships with clients by providing the best tax and financial services possible, and meeting clients and getting to be a part of their everyday lives and work is what makes our job worth doing." },
+      { "title": "Pay less, preserve more", "text": "Hiring a CPA is one of the most financially important and beneficial investments you will ever make, and we work to ensure you pay less in taxes, preserve more of your wealth and plan for the unexpected." }
+    ]
+  },
+  "team": [
+    {
+      "name": "Rahul Ramdas, CPA, MST",
+      "role": "Owner/President",
+      "bio": "Rahul graduated from Texas A&M University with honors receiving a Bachelor of Science in Accounting and a Master of Science in Tax. Prior to founding Ramdas Accounting, Rahul worked for Deloitte Tax focusing on International Taxation along with Mergers and Acquisitions.",
+      "image": "/brands/ramdasaccounting/team-1",
+      "imageAlt": "Rahul Ramdas"
+    },
+    {
+      "name": "Rachael Knapp, CPA, CFP®, MBA",
+      "role": "Managing Partner",
+      "bio": "Rachael graduated from Sam Houston State University receiving a Bachelor of Business Administration and a Master of Business Administration with a concentration in accounting. After receiving her CPA license she went on to receive the Certified Financial Planner certificate to further assist clients with their financial goals.",
+      "image": "/brands/ramdasaccounting/team-2",
+      "imageAlt": "Rachael Knapp"
+    },
+    {
+      "name": "Monica Spencer, CPA",
+      "role": "Tax Associate",
+      "bio": "Monica graduated from Sam Houston State University receiving a Bachelor of Business Administration with an emphasis in accounting. She worked in the oil and gas industry for 16 years before joining Ramdas Accounting.",
+      "image": "/brands/ramdasaccounting/team-3",
+      "imageAlt": "Monica Spencer"
+    },
+    {
+      "name": "Yanying Amy Chen, CPA",
+      "role": "Tax Associate",
+      "bio": "Amy graduated from Louisiana State University with both a bachelor's and Master's degree in Accounting. She has experience in both public and private accounting and previously served as a Revenue Agent with the IRS.",
+      "image": "/brands/ramdasaccounting/team-4",
+      "imageAlt": "Yanying Amy Chen"
+    },
+    {
+      "name": "Lindsey Boggan",
+      "role": "Tax Associate",
+      "bio": "Lindsey graduated from Mississippi State University receiving a Bachelor of Business Administration with an emphasis in Finance as well as a Bachelor of Arts with an emphasis in Spanish. She worked in the oil and gas industry for 6 years before taking a hiatus to stay home with her children. Lindsey entered the world of Public Accounting in 2021 and joined the Ramdas Accounting team in 2023.",
+      "image": "/brands/ramdasaccounting/team-5",
+      "imageAlt": "Lindsey Boggan"
+    },
+    {
+      "name": "Samantha Schmidt",
+      "role": "Office Manager, Quickbooks Certified",
+      "bio": "Samantha attended Rice University and Johnson and Wales University before graduating in 2013. After working in kitchens across the country, she joined Ramdas Accounting in 2016 after deciding she was more satisfied working with people and numbers more than anything else.",
+      "image": "/brands/ramdasaccounting/team-6",
+      "imageAlt": "Samantha Schmidt"
+    },
+    {
+      "name": "Jenifer Bryan",
+      "role": "Administrator",
+      "bio": "Jenifer attended Texas State University-San Marcos and received bachelor's degrees in Fine Art Photography and Communication Design. She brings creativity to her role supporting the accounting team, and prides herself on building client relationships.",
+      "image": "/brands/ramdasaccounting/team-7",
+      "imageAlt": "Jenifer Bryan"
+    },
+    {
+      "name": "Paul Mugnier",
+      "role": "Of Counsel",
+      "bio": "Paul graduated from the University of Houston with a degree in accounting. After serving in the armed forces he worked for a local Houston based accounting firm before starting Paul Mugnier, P.C. in 1980. In 2010 that firm merged with Ramdas Accounting, bringing his 50 plus years of CPA experience along. Paul has formally retired from public accounting but still likes to stay current and catch up with clients.",
+      "image": "/brands/ramdasaccounting/team-8",
+      "imageAlt": "Paul Mugnier"
+    },
+    {
+      "name": "Lester O. Weison, Jr.",
+      "role": "Of Counsel",
+      "bio": "Lester Weison, Jr., CPA merged his accounting practice with Ramdas Accounting in 2015 after practicing public accounting for over 50 years. He enjoys staying in touch with former clients and friends.",
+      "image": "/brands/ramdasaccounting/team-9",
+      "imageAlt": "Lester O. Weison, Jr."
+    }
+  ],
+  "faqs": [
+    { "q": "How long will my return take?", "a": "Expect your tax return to be prepared within ten business days for your review, signature, filing and payment." },
+    { "q": "How do I get my documents to you?", "a": "Return your tax organizer and documents by whichever method is most convenient for you, or sign up for our online portal and upload them securely instead of mailing them." },
+    { "q": "Do you work with clients outside The Woodlands?", "a": "Yes. Although we might seem local, we also serve clients well beyond the Woodlands and Greater Houston Area from all around the world." },
+    { "q": "What happens at a first meeting?", "a": "Our services start with a free consultation. Come and tell us what you need and we will let you know how we can help." },
+    { "q": "I already have an accountant. Is switching a hassle?", "a": "No. If you have a predecessor accountant we will obtain all of your necessary information without any extra effort on your part so that you can focus on your business and customers." },
+    { "q": "Are you only available during tax season?", "a": "No. We are available year round. Pick up the phone, send an e-mail or schedule a meeting anytime if you have a question or would like to stop by." }
+  ],
+  "serviceArea": ["The Woodlands", "Spring", "Conroe", "Greater Houston"],
+  "facts": [
+    {
+      "heading": "Office locations",
+      "items": ["The Woodlands", "Sugar Land", "Town and Country", "Northwest Houston", "Galleria"]
+    },
+    {
+      "heading": "Awards",
+      "items": [
+        "Five Star Investment Professional Award winner 2023, 2024, 2025 and 2026, Rachael Knapp",
+        "Five Star Women in Wealth Award winner 2024, Rachael Knapp",
+        "Sam Houston 79 Award winner 2025, Rachael Knapp"
+      ]
+    },
+    {
+      "heading": "Client portal",
+      "text": "Clients register, log in and upload files through our secure online portal, and filed returns are uploaded there for your records."
+    },
+    {
+      "heading": "Businesses we work with",
+      "text": "Oil and gas, salons, architects, builders, doctors, ranchers, restaurateurs, lawyers, engineers, artists, investors, retail, internet vendors, truckers, utility companies, farmers, startups, S corporations, LLCs and partnerships."
+    },
+    {
+      "heading": "Two firms merged in",
+      "text": "Paul Mugnier, P.C. merged with Ramdas Accounting in 2010 and Lester O. Weison, Jr., CPA in 2015, bringing over 100 years of combined CPA income tax preparation experience."
+    },
+    {
+      "heading": "Areas of work we are asked about",
+      "items": [
+        "Tax management and e-file",
+        "Audits, reviews and compilations",
+        "Entity selection and restructuring",
+        "Financial projections and forecasts",
+        "Mergers, acquisitions and sales",
+        "Accounting and advisory",
+        "IRS representation",
+        "Cash flow and budgeting",
+        "Business valuation",
+        "International taxation"
+      ]
+    },
+    {
+      "heading": "Reasons people come to us for a financial plan",
+      "items": [
+        "You are concerned about retirement",
+        "You want to prepare for your children's education",
+        "You would like to own a business",
+        "You are anticipating an inheritance",
+        "Your family earnings depend on one wage earner",
+        "You have property in multiple states",
+        "Your debt is excessive",
+        "You would like to start budgeting"
+      ]
+    },
+    {
+      "heading": "The What's New blog",
+      "text": "We publish tax and financial articles, including the Tax Tuesday and Finance Friday series, on individual and business tax, financial planning, retirement, the child tax credit, student loans, withholding, sales tax, financial aid and tax reform."
+    },
+    {
+      "heading": "Find us online",
+      "items": ["facebook.com/RamdasAccounting", "x.com/RamdasTax"]
+    }
+  ]
+}

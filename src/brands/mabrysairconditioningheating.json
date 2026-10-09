@@ -1,0 +1,560 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Mabry's Air Conditioning & Heating, Inc.",
+  "shortName": "Mabry's",
+  "summary": "Residential air conditioning, heating and maintenance for homes in Alvin, Friendswood, Pearland and the greater Houston area.",
+  "phone": "(281) 331-5248",
+  "email": "office@mabryac.com",
+  "address": "2110 S Gordon St",
+  "town": "Alvin",
+  "state": "TX",
+  "zip": "77511",
+  "rating": 5.0,
+  "reviewCount": 91,
+  "since": 1986,
+  "hours": [
+    ["Mon – Fri", "7 AM – 7 PM"],
+    ["Saturday", "7 AM – 1 PM"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#16287A",
+    "primaryDeep": "#0B1550",
+    "accent": "#BC152E",
+    "ink": "#111A33",
+    "muted": "#4D5876",
+    "surface": "#F1F4FB",
+    "line": "#D8DFF0",
+    "heading": "'Archivo', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap",
+    "logo": "/brands/mabrysairconditioningheating/logo.webp",
+    "logoWidth": 200
+  },
+  "emergency": {
+    "title": "After-hours emergency service",
+    "text": "We are on call after hours for urgent AC and heating repairs, and there is no extra charge for evenings or weekends."
+  },
+  "sameDay": "Same-day service is often available, and a real person calls you back fast.",
+  "licenses": [{ "label": "Texas HVAC Contractor", "number": "TACLB12058E" }],
+  "financing": {
+    "text": "100% financing on a new system with approved credit through participating lenders, from as low as $38 a week."
+  },
+  "hero": {
+    "eyebrow": "Residential HVAC in Alvin, Friendswood and Pearland",
+    "title": "Full-service air conditioning and heating,",
+    "titleAccent": "done right since 1986.",
+    "lead": "Family-owned residential HVAC for the greater Houston area, with flat-rate pricing, no overtime charges and a $79 flat-rate service call that tells you exactly what is wrong before any work starts.",
+    "image": "/brands/mabrysairconditioningheating/hero",
+    "imageAlt": "An outdoor air conditioning condenser unit beside a home"
+  },
+  "groups": [
+    {
+      "slug": "ac-repair",
+      "title": "AC Repair",
+      "icon": "snowflake",
+      "summary": "Fast, flat-rate residential AC repair on all makes and models.",
+      "intro": "In the greater Houston area, a broken air conditioner during our 100°F-plus summers is more than uncomfortable. Our licensed technicians diagnose the problem for a $79 flat-rate service call and give you the price before any work begins. We fix every major residential brand.",
+      "image": "/brands/mabrysairconditioningheating/repair",
+      "imageAlt": "Refrigerant pressure gauges used to diagnose a cooling system",
+      "services": [
+        {
+          "slug": "diagnostics",
+          "title": "Diagnostics and Flat-Rate Service Calls",
+          "icon": "gauge",
+          "text": "We come out, diagnose the issue and walk you through the fix. The price we quote is the price you pay, with no hourly rates that add up.",
+          "points": [
+            "$79 flat-rate service call",
+            "No overtime charges for evenings or weekends",
+            "Same-day service often available"
+          ]
+        },
+        {
+          "slug": "cooling-faults",
+          "title": "No Cooling and Warm Air",
+          "icon": "thermometer",
+          "text": "A unit that will not turn on, keeps shutting off, blows warm air or makes a banging, squealing or clicking noise is traced to the part that caused it.",
+          "points": [
+            "Compressor problems and fan motor failure",
+            "Frozen evaporator coils",
+            "Thermostat malfunctions and wiring issues"
+          ]
+        },
+        {
+          "slug": "refrigerant-and-electrical",
+          "title": "Refrigerant and Electrical Faults",
+          "icon": "circuit",
+          "text": "Capacitor and contactor failures are the most common cause of an AC breakdown in a Houston summer, and refrigerant leaks are close behind.",
+          "points": [
+            "Refrigerant leaks on R-410A and legacy R-22 systems",
+            "Capacitor, contactor and electrical failures"
+          ]
+        },
+        {
+          "slug": "drainage",
+          "title": "Drainage and Condensate",
+          "icon": "droplets",
+          "text": "Gulf Coast humidity clogs condensate drains quickly, and an overflowing pan can cause water damage before you notice it.",
+          "points": ["Drainage clogs and condensate pan overflow cleared"]
+        }
+      ]
+    },
+    {
+      "slug": "heating-repair",
+      "title": "Heating Repair",
+      "icon": "flame",
+      "summary": "Furnace and heat pump repair for all makes and models, all winter.",
+      "intro": "Most homes around Alvin, Friendswood and Pearland use heat pumps or gas furnaces that sit dormant for most of the year, then all get called into action on the same cold front. We repair every type of residential heating system and every major brand.",
+      "image": "/brands/mabrysairconditioningheating/heating",
+      "imageAlt": "A heat pump unit outside a modern home",
+      "services": [
+        {
+          "slug": "gas-furnace-repair",
+          "title": "Gas Furnace Repair",
+          "icon": "flame",
+          "text": "Igniters, flame sensors, gas valves, draft inducers and control boards repaired and replaced, with a heat exchanger inspection on every visit.",
+          "points": [
+            "Igniter and flame sensor replacement",
+            "Heat exchanger inspection as a safety check",
+            "Gas valve, draft inducer and control board repair"
+          ]
+        },
+        {
+          "slug": "heat-pump-repair",
+          "title": "Heat Pump Repair",
+          "icon": "thermometer",
+          "text": "Heat pump reversing valve failures are one of the most common heating faults we see in this area, and we are set up to diagnose them quickly.",
+          "points": ["Heat pump repair and service", "Reversing valve diagnosis"]
+        },
+        {
+          "slug": "electric-heat",
+          "title": "Electric Air Handlers and Strip Heat",
+          "icon": "heater",
+          "text": "Electric air handler and strip heat repair for homes without a gas furnace.",
+          "points": ["All residential brands serviced"]
+        },
+        {
+          "slug": "thermostats-and-ducts",
+          "title": "Thermostats and Ductwork",
+          "icon": "settings",
+          "text": "Thermostat calibration and replacement, and ductwork inspection and repair when the heat is reaching some rooms and not others.",
+          "points": ["Thermostat calibration and replacement", "Ductwork inspection and repair"]
+        }
+      ]
+    },
+    {
+      "slug": "ac-installation",
+      "title": "AC Installation",
+      "icon": "air-vent",
+      "summary": "New energy-efficient systems sized properly and installed to code.",
+      "intro": "The wrong size unit or a poor installation means higher bills, uncomfortable rooms and more breakdowns. We perform a Manual J load calculation that accounts for your home's square footage, insulation, window exposure and ceiling height, then quote a flat rate before the work starts.",
+      "image": "/brands/mabrysairconditioningheating/install",
+      "imageAlt": "A newly installed air conditioning unit on the side of a house",
+      "services": [
+        {
+          "slug": "system-replacement",
+          "title": "Complete System Replacement",
+          "icon": "air-vent",
+          "text": "Complete AC and heating systems fully installed, starting at $12,114, with flat-rate pricing quoted before any work begins.",
+          "points": [
+            "RunTru by Trane from $12,114",
+            "Trane single-stage from $13,637",
+            "Trane TruComfort variable-speed from $18,272"
+          ]
+        },
+        {
+          "slug": "sizing",
+          "title": "Right-Sizing for the Gulf Coast",
+          "icon": "gauge",
+          "text": "An undersized unit runs constantly and never dehumidifies the house. An oversized one short-cycles and leaves it humid. We size for the climate we actually work in.",
+          "points": [
+            "Manual J load calculation on every install",
+            "Minimum 16 SEER2 recommended for Houston-area homes"
+          ]
+        },
+        {
+          "slug": "installation-process",
+          "title": "Our Installation Process",
+          "icon": "wrench",
+          "text": "A free in-home consultation, a load calculation, brand and efficiency options at several price points, then a licensed, permit-ready installation.",
+          "points": [
+            "Refrigerant line and ductwork check, not just an equipment swap",
+            "System testing and commissioning before we leave",
+            "A walkthrough so you know how to get the most from the system"
+          ]
+        },
+        {
+          "slug": "whats-included",
+          "title": "What Every Installation Includes",
+          "icon": "shield",
+          "text": "New equipment is attached to the existing plenums, ductwork, refrigerant lines, electrical, gas lines, drain lines and flue pipe as applicable.",
+          "points": [
+            "Basic digital thermostat",
+            "New emergency drain pan and safety float switch",
+            "Full manufacturer warranty"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ac-maintenance",
+      "title": "AC & Heating Maintenance",
+      "icon": "filter",
+      "summary": "Annual tune-ups that prevent breakdowns and keep bills down.",
+      "intro": "Your system works up to nine months a year here, harder than almost anywhere in the country. Annual maintenance is the single best thing you can do to avoid a breakdown on the hottest day of August, keep a manufacturer's warranty valid and add three to five years to the life of the equipment.",
+      "image": "/brands/mabrysairconditioningheating/maintenance",
+      "imageAlt": "A metal vent with ductwork attached",
+      "services": [
+        {
+          "slug": "ac-tune-up",
+          "title": "Spring AC Tune-Up",
+          "icon": "snowflake",
+          "text": "A full inspection of the cooling system before the summer heat arrives, covering the parts that fail first in this climate.",
+          "points": [
+            "Refrigerant level check and capacitor testing",
+            "Condenser coil cleaning and evaporator coil inspection",
+            "Condensate drain flush",
+            "Blower motor, thermostat and electrical checks"
+          ]
+        },
+        {
+          "slug": "heating-tune-up",
+          "title": "Fall Heating Tune-Up",
+          "icon": "flame",
+          "text": "A safety-first inspection that gets the heat ready before the first cold front, including the checks a gas furnace needs.",
+          "points": [
+            "Heat exchanger inspection and carbon monoxide safety check",
+            "Burner, igniter and flame sensor service",
+            "Gas valve and pressure check",
+            "Heat pump reversing valve check"
+          ]
+        },
+        {
+          "slug": "all-brands",
+          "title": "Every Brand in Your Home",
+          "icon": "settings",
+          "text": "We perform maintenance tune-ups on all residential equipment, whatever is already installed.",
+          "points": ["Trane, Carrier, Lennox, Rheem, Goodman, Amana, American Standard, York, Bryant and Daikin"]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Fall special",
+    "title": "Get your heat checked before winter arrives.",
+    "text": "A full heater tune-up covering the heat exchanger, burners, flame sensor, gas connections, thermostat, electrical, blower and a carbon monoxide safety check.",
+    "price": "$79",
+    "priceNote": "standard residential systems, through March 31, 2027",
+    "image": "/brands/mabrysairconditioningheating/tuneup",
+    "imageAlt": "A wall thermostat showing the indoor temperature"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Alvin's hometown HVAC company since 1986.",
+    "text": [
+      "Since 1986, Mabry's Air Conditioning & Heating, Inc. has been providing honest, reliable HVAC services to homeowners across the greater Houston area. We started in Friendswood and expanded to our current office and shop on South Gordon Street in Alvin, building nearly four decades of trust in both communities and the surrounding cities.",
+      "For nearly four decades we have built our reputation on doing things the right way: honest assessments, quality workmanship, and fair, flat-rate pricing with no hidden charges. We do not believe in surprise fees or upselling services you do not need.",
+      "As a residential-only company, we focus exclusively on homes, not commercial buildings. That specialization means our technicians are experts in the systems that keep your family comfortable, and many of our customers are second and third generation."
+    ],
+    "image": "/brands/mabrysairconditioningheating/about",
+    "imageAlt": "Hand tools laid out on a workbench",
+    "values": [
+      { "title": "Honest pricing", "text": "Flat-rate pricing with no hidden or surprise charges." },
+      { "title": "Quality work", "text": "We do the job right the first time, every time." },
+      { "title": "Prompt service", "text": "We respect your time and show up when promised." },
+      { "title": "Expert advice", "text": "We give you honest recommendations, not sales pitches." }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What areas do you serve?",
+      "a": "We serve Alvin, Friendswood, Pearland, Clear Lake, League City, Deer Park, Pasadena, Sienna, Angleton, Manvel, Rosharon, and the surrounding greater Houston area. Our office and shop is located at 2110 S Gordon St in Alvin (281-331-5248), and we have a dedicated service area covering Friendswood and the eastern territory (281-482-8400)."
+    },
+    {
+      "q": "Are you licensed and insured?",
+      "a": "Yes, we are a fully licensed Texas HVAC contractor (License TACLB12058E) and carry full insurance for your protection."
+    },
+    {
+      "q": "What does flat-rate pricing mean?",
+      "a": "Flat-rate pricing means you get a clear, upfront price before any work begins: no surprise charges, no hourly rates that add up, and no hidden fees. The price we quote is the price you pay."
+    },
+    {
+      "q": "Do you offer emergency HVAC service?",
+      "a": "Yes, we offer emergency service for urgent AC and heating repairs. Call our main line and we will do our best to help you as quickly as possible."
+    },
+    {
+      "q": "How long has Mabry's been in business?",
+      "a": "Mabry's Air Conditioning & Heating has been family-owned and operated since 1986, nearly 40 years of serving the Alvin and greater Houston area."
+    },
+    {
+      "q": "Do you work on commercial properties?",
+      "a": "No, we specialize exclusively in residential HVAC service. This focus allows our technicians to be true experts in home cooling and heating systems."
+    },
+    {
+      "q": "How often should I have my AC tuned up?",
+      "a": "Once per year at minimum, ideally in spring before the Houston summer heat kicks in. If you have both a cooling and heating system, an annual AC tune-up in spring and a heating tune-up in fall is the ideal schedule."
+    },
+    {
+      "q": "Do you service older R-22 AC systems?",
+      "a": "Yes. R-22 was phased out in 2020 and repairs on those systems can be costly, so we will tell you honestly when repair still makes sense and when replacement is the better value."
+    },
+    {
+      "q": "How much does AC repair cost in the Houston area?",
+      "a": "AC repair costs vary depending on the issue and the parts required. Common repairs like capacitor replacement, refrigerant recharge or thermostat replacement typically range from $150 to $500. You know the exact flat-rate cost before any work begins, with no hidden charges."
+    },
+    {
+      "q": "Why is my AC blowing warm air?",
+      "a": "Common causes are low refrigerant from a leak, a dirty air filter blocking airflow, frozen evaporator coils, a failed capacitor or a faulty compressor. In the Houston heat, low refrigerant and capacitor failures are especially common in summer."
+    },
+    {
+      "q": "How long does AC repair take?",
+      "a": "Most AC repairs are completed in a single visit, typically one to three hours. We keep common parts stocked for Trane, Carrier, Lennox, Rheem, Goodman and other major brands, and we tell you upfront if a less common part has to be ordered."
+    },
+    {
+      "q": "Should I repair or replace my AC unit?",
+      "a": "If your unit is 12 to 15 years or older and repairs are becoming frequent, replacement is often more cost-effective. We repair the vast majority of the units we are called out on and we never push an unnecessary replacement."
+    },
+    {
+      "q": "Why is my heater not producing heat?",
+      "a": "Common causes are a tripped breaker, a thermostat problem, a dirty filter restricting airflow, a failed igniter or flame sensor on a gas furnace, or a stuck reversing valve on a heat pump. Houston heating systems sit unused for months, so components often fail the first time they are called on."
+    },
+    {
+      "q": "How long do furnaces typically last in Houston?",
+      "a": "With proper annual maintenance, most gas furnaces last 18 to 25 years in Houston's climate, because they run fewer hours per year than in colder places. Heat pumps typically last 12 to 18 years."
+    },
+    {
+      "q": "What SEER rating should I get for a Houston home?",
+      "a": "For the Houston area's nine-month cooling season we recommend a minimum of 16 SEER2. Higher-efficiency systems at 18 to 21-plus SEER2 offer substantial long-term savings, and we calculate the payback period so you can decide."
+    },
+    {
+      "q": "How long does AC installation take?",
+      "a": "A standard residential AC installation typically takes one day. Projects that involve ductwork modifications may take longer, and we tell you upfront what to expect."
+    },
+    {
+      "q": "What size AC do I need for my home?",
+      "a": "Proper sizing requires a Manual J load calculation based on square footage, ceiling height, insulation, windows and other factors. In the Houston area humidity is critical, because the system has to both cool and dehumidify. We never guess on sizing."
+    },
+    {
+      "q": "Will maintenance help lower my energy bills?",
+      "a": "Yes. A dirty condenser coil, low refrigerant or impaired airflow can reduce efficiency by 10 to 25%, which shows up directly on your electric bill. In Houston, air conditioning can account for 50 to 60% of a summer electric bill."
+    },
+    {
+      "q": "Does annual maintenance keep my warranty valid?",
+      "a": "Many manufacturers require documented annual maintenance to keep the warranty valid, and skipping it can void coverage on a later warranty repair. We can provide a written service record for your files."
+    },
+    {
+      "q": "Do you service heat pumps and all system types?",
+      "a": "Yes. We perform maintenance on all residential system types including central air conditioning, heat pumps, gas furnaces, electric air handlers and mini-split systems, on all major brands."
+    },
+    {
+      "q": "Do you charge extra for evening or weekend service calls?",
+      "a": "No. Flat-rate pricing applies to all calls at all times, with no extra charge for evenings or weekends, ever. The price you are quoted is the price you pay regardless of when we come out."
+    },
+    {
+      "q": "Are you a local company or a national chain?",
+      "a": "We are your neighbors. Mabry's has been based at 2110 S Gordon St in Alvin since 1986, family-owned and operated, not a franchise or a national chain. When you call you talk to us, not a national call center."
+    },
+    {
+      "q": "What is your dedicated Friendswood phone number?",
+      "a": "Our dedicated Friendswood service line is 281-482-8400. That line is specifically for Friendswood and the Bay Area, so you get faster routing and someone familiar with your area."
+    }
+  ],
+  "serviceArea": [
+    "Alvin",
+    "Friendswood",
+    "Pearland",
+    "Clear Lake",
+    "Deer Park",
+    "League City",
+    "Pasadena",
+    "Sienna",
+    "Angleton",
+    "Manvel",
+    "Rosharon",
+    "Lake Jackson",
+    "Sugar Land",
+    "Missouri City",
+    "Houston"
+  ],
+  "facts": [
+    {
+      "heading": "Two numbers, one company",
+      "items": [
+        "Alvin office and shop, 2110 S Gordon St, Alvin, TX 77511 — 281-331-5248",
+        "Friendswood service area, Friendswood, TX 77546 — 281-482-8400",
+        "office@mabryac.com"
+      ]
+    },
+    {
+      "heading": "Awards and accreditation",
+      "items": [
+        "Voted Favorite AC Company — Alvin Sun & Advertiser",
+        "BBB A+ Accredited Business",
+        "Multiple BBB Gold Star Award winner",
+        "Authorized Trane® Dealer"
+      ]
+    },
+    {
+      "heading": "Upfront pricing",
+      "items": [
+        "$79 flat-rate service call to diagnose the problem",
+        "New AC and heating systems from $12,114, fully installed",
+        "No overtime charges for evenings or weekends"
+      ]
+    },
+    {
+      "heading": "Current offers",
+      "items": [
+        "$79 fall heater tune-up on standard residential systems, through March 31, 2027",
+        "10% off any AC or heating repair, repair services only, not valid on new equipment",
+        "Senior and veteran discounts — our way of saying thank you"
+      ]
+    },
+    {
+      "heading": "What the $79 heater tune-up covers",
+      "items": [
+        "Heat exchanger inspection and carbon monoxide safety check",
+        "Burner and ignition system check, flame sensor cleaning and test",
+        "Gas line and connections check",
+        "Thermostat calibration and test, electrical connections check",
+        "Blower motor and airflow check"
+      ]
+    },
+    {
+      "heading": "Offer terms",
+      "text": "Promotional pricing, special offers and discounts cannot be combined with rebates, coupons, other promotional offers, manufacturer incentives, promotional financing offers or other discounts unless stated in writing."
+    },
+    {
+      "heading": "Trane system tiers we install",
+      "items": [
+        "Value — RunTru by Trane, from $12,114, up to 15.2 SEER2",
+        "Choice — Trane single-stage, from $13,637, up to 16 SEER2, our most popular tier",
+        "Premier — Trane TruComfort® variable-speed, from $18,272, up to 18 SEER2",
+        "Every tier is a complete AC and heating system, fully installed, with the full manufacturer warranty"
+      ]
+    },
+    {
+      "heading": "Brand series we service",
+      "items": [
+        "Trane — XR, XL and Comfort series, gas furnaces, heat pumps and air handlers",
+        "Carrier — Infinity, Performance and Comfort series",
+        "Lennox — Elite, Merit and Dave Lennox Signature series",
+        "Rheem — Prestige, Classic Plus and Classic series",
+        "American Standard — Gold and Silver series",
+        "Goodman, Amana, York, Bryant, Daikin and all other residential brands"
+      ]
+    },
+    {
+      "heading": "Systems we maintain",
+      "text": "Central air conditioning, heat pumps, gas furnaces, electric air handlers and mini-split systems. We are brand-agnostic: if it is installed in your home, we can work on it, and we keep common parts stocked for the major brands."
+    },
+    {
+      "heading": "What typical work costs",
+      "items": [
+        "Common repairs such as a capacitor, refrigerant recharge or thermostat run $150 to $500",
+        "A maintenance tune-up runs $99 to $150 and catches most of what becomes an emergency call",
+        "Most repairs finish in one visit, typically one to three hours",
+        "A standard installation takes about one day"
+      ]
+    },
+    {
+      "heading": "Pricing published online",
+      "text": "Our full pricing is on the site — equipment installation costs and service and repair rates — along with a free interactive sizing estimator that needs no email and an online price tool for Trane, RunTru and repair work."
+    },
+    {
+      "heading": "Free in-home consultation",
+      "text": "One of our comfort advisors comes out at no cost for a quote, estimate or in-home evaluation, including the full Manual J load calculation that an online estimate cannot replace."
+    },
+    {
+      "heading": "How the financing works",
+      "items": [
+        "Apply online in a few minutes, get a fast decision, then we confirm your installation date",
+        "100% financing with approved credit and no money down, flexible terms to fit a monthly budget",
+        "A new system can be installed the same day or the next day",
+        "Financing applies to new equipment purchases and installations only"
+      ]
+    },
+    {
+      "heading": "Financing example",
+      "text": "Based on $11,500 financed at 9.99% APR over 120 months, a monthly payment of about $151.80, or $35.06 a week. Actual payment depends on the amount financed and the terms selected, standard rates apply, and terms are subject to change without notice."
+    },
+    {
+      "heading": "Permits and code",
+      "text": "Across nearly four decades we have built a first-time permit inspection pass rate near the top of the industry, because we do the job to code the first time. Where a city requires a mechanical permit, the fee is passed through at cost."
+    },
+    {
+      "heading": "Looking after elderly neighbors",
+      "text": "Extreme summer heat and hard winter cold carry real health risks for seniors, so whenever we can we move them up the schedule, and a senior discount and a veteran's discount can both apply to the same job."
+    },
+    {
+      "heading": "Repair before replace",
+      "text": "We fix far more systems than we replace. When a system really is worn out we say so and explain why a replacement is the smarter money, and when it is worth keeping we repair the part that failed."
+    },
+    {
+      "heading": "Coastal and salt-air homes",
+      "text": "Salt-laden air along Galveston Bay, Clear Lake and the Brazosport area accelerates corrosion on condenser coils, contactors and electrical components. We inspect for coastal-zone wear on maintenance visits and can recommend protective measures or coastal-rated equipment for waterfront installations."
+    },
+    {
+      "heading": "Zip codes we cover",
+      "items": [
+        "Alvin 77511, 77512 · Manvel 77578 · Rosharon 77583 · Angleton 77515, 77516 · Lake Jackson 77566",
+        "Pearland 77581, 77584, 77588 · Sienna 77459 · Sugar Land 77478, 77479, 77496, 77498",
+        "Friendswood 77546, 77549 · League City 77573, 77574 · Clear Lake and Southeast Houston 77058, 77059, 77062",
+        "Deer Park 77536 · South Pasadena 77504, 77505"
+      ]
+    },
+    {
+      "heading": "Bay Area communities we also cover",
+      "text": "Webster, Nassau Bay, Seabrook, Taylor Lake Village, El Lago and Kemah, along with Clear Lake City and the NASA-Johnson Space Center area of Southeast Houston."
+    },
+    {
+      "heading": "Neighborhoods we work in every week",
+      "items": [
+        "Pearland — Old Townsite, Country Place, Shadow Creek Ranch, Silverlake, Massey Ranch, Southern Trails and the Highway 288 corridor",
+        "League City — South Shore Harbour, Tuscan Lakes, Magnolia Creek, Marina Bay, Mar Bella and Westover Park",
+        "Sienna — Waters Lake, Sawmill Lake, Sienna Village, Lake Olympia and Camp Sienna",
+        "Manvel — Rodeo Palms and Pomona",
+        "Sugar Land — First Colony, Riverstone and Telfair",
+        "Friendswood — the historic downtown area and the FM 518 and FM 2351 corridors"
+      ]
+    },
+    {
+      "heading": "Brands we service and install",
+      "text": "Trane, Carrier, Lennox, Rheem, Goodman, Amana, American Standard, York, Bryant, Daikin and all other residential brands."
+    },
+    {
+      "heading": "Financing and payment",
+      "items": [
+        "100% financing available with approved credit through participating lenders",
+        "Service Finance Company, LLC | FHA Title I Lender",
+        "Visa, Mastercard, American Express and Discover accepted"
+      ]
+    },
+    {
+      "heading": "Residential only",
+      "text": "Homes are our only business. We do not take commercial work, which is why our technicians know residential cooling and heating systems inside out."
+    },
+    {
+      "heading": "What can change a quoted price",
+      "text": "Our published prices cover standard installations. Ductwork repairs, electrical upgrades in older homes, difficult attic or crawlspace access, and city mechanical permits are quoted upfront before work begins."
+    },
+    {
+      "heading": "Zip codes we cover from Alvin",
+      "text": "77511, 77512, 77578, 77581, 77584, 77459 and nearby."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: Mabry's Air Conditioning & Heating",
+        "Instagram: @mabryac",
+        "Yelp: listings for both Alvin and Friendswood",
+        "Nextdoor: Mabry's Air Conditioning & Heating, Alvin TX"
+      ]
+    },
+    {
+      "heading": "Texas licensing",
+      "text": "Texas HVAC License TACLB12058E. Regulated by the Texas Department of Licensing and Regulation, P.O. Box 12157, Austin, Texas 78711, 1-800-803-9202, 512-463-6599, www.tdlr.texas.gov."
+    }
+  ]
+}

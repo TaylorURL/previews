@@ -1,0 +1,248 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "insurance",
+  "name": "Trusted Insurance Group, LLC",
+  "shortName": "Trusted Insurance Group",
+  "tagline": "Insurance solutions you can hang your hat on",
+  "phone": "(281) 667-9327",
+  "email": "chelsey@trustedinsgroup.com",
+  "address": "20111 FM 2100, Ste. 209",
+  "town": "Crosby",
+  "state": "TX",
+  "zip": "77532",
+  "rating": 5.0,
+  "reviewCount": 153,
+  "hours": [["Mon – Fri", "8 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "cta": {
+    "label": "Get a Quote",
+    "text": "Get your insurance shopping off your to-do list. Give us a call today."
+  },
+  "brand": {
+    "primary": "#262626",
+    "primaryDeep": "#141414",
+    "accent": "#d49f2c",
+    "ink": "#1c1c1c",
+    "muted": "#5b5955",
+    "surface": "#faf7f0",
+    "cream": "#f3e9d6",
+    "line": "#e5ddcb",
+    "heading": "'Libre Baskerville', Georgia, serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;500;600;700&display=swap",
+    "logo": "/brands/trustedinsurancegroup/logo.webp",
+    "logoWidth": 160
+  },
+  "hero": {
+    "eyebrow": "Independent insurance agency in Crosby",
+    "title": "The uncommon independent insurance agency.",
+    "lead": "We have cut out the red tape in communication and give clients what they deserve: clear, understandable communication on their insurance for their personal assets, businesses and life.",
+    "image": "/brands/trustedinsurancegroup/hero",
+    "imageAlt": "Chelsey Carlson, Katie Blanscet and Crystal Egorushkin of Trusted Insurance Group",
+    "points": [
+      "Over 33 years of combined insurance experience",
+      "You speak directly with a licensed advisor",
+      "Auto, home and commercial coverage"
+    ]
+  },
+  "overview": {
+    "title": "Insurance can be a daunting task when you are faced with so many options and decisions to make.",
+    "text": "The good news is we are here to help. Pick a line of coverage to see what it includes, or call and talk it through with an agent."
+  },
+  "audiences": { "individuals": "Individuals", "businesses": "Businesses" },
+  "services": [
+    {
+      "slug": "auto",
+      "title": "Auto Insurance",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Collision, comprehensive, liability and medical.",
+      "text": "Many people have an insurance policy but do not exactly understand how they are covered. We go through the basic types of car insurance and find the coverage that fits your situation.",
+      "lead": "Auto insurance is a complicated matter. Many people have an insurance policy but do not exactly understand how they are covered or what they will do if they find themselves in the position of needing to utilize their insurance.",
+      "image": "/brands/trustedinsurancegroup/auto",
+      "imageAlt": "A set of car keys being handed from one person to another",
+      "covers": [
+        {
+          "title": "Collision coverage",
+          "text": "The basic insurance type that covers your vehicle if you collide into something. This covers collisions with other cars as well as if you were to run into a wall, barrier or bridge."
+        },
+        {
+          "title": "Comprehensive coverage",
+          "text": "Anything that may happen to your car that is not directly related to a collision, including theft, fire, hitting a deer or vandalism."
+        },
+        {
+          "title": "Liability coverage",
+          "text": "Covers the damages when you are at fault in an accident and you damage someone else's car or property. Liability coverage is often mandated by law, so it is important you carry an adequate amount."
+        },
+        {
+          "title": "Medical payments",
+          "text": "Also called PIP in some states. Medical payments pay for injuries to the driver or passengers that occur in an accident while you were driving. Medical payment insurance varies from state to state, so make certain you are covered as expected."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How do I find the right auto coverage for me?",
+          "a": "The best way is to work with an independent agency that will allow you to compare insurance quotes online. By doing this, you can rest assured you are getting the best deal as well as getting the personal attention you need."
+        }
+      ]
+    },
+    {
+      "slug": "home",
+      "title": "Home Insurance",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Homeowners, condo and renters policies.",
+      "text": "Homeowners, renters and condo insurance are all typically included within the category of home insurance. Whether you own your home or rent it short term, you need coverage to guard against disasters and losses.",
+      "lead": "When people shop for home insurance, they are actually seeking not just one type of coverage but possibly several different varieties. Homeowners insurance, renters insurance, and condo insurance are all typically included within the category of home insurance.",
+      "image": "/brands/trustedinsurancegroup/home",
+      "imageAlt": "A brick house with a covered patio and lawn",
+      "covers": [
+        {
+          "title": "Homeowners policies",
+          "text": "For people who own their own home, house or condominium. If you are making payments on the home with ownership as the end goal, you will need homeowners insurance. This type of policy covers both the outside of the home and all the contents of your home, and will allow you to replace or rebuild damaged property."
+        },
+        {
+          "title": "Natural disasters and theft",
+          "text": "A homeowners policy covers the majority of natural disasters, and certain events like earthquakes may be excluded but can be added for that specific purpose. If your home is broken into, it helps replace stolen items and pay for vandalism damage."
+        },
+        {
+          "title": "Renters policies",
+          "text": "The coverage includes the inner contents of the home, apartment or room that you are renting: break-ins, natural disasters, fires and other circumstances beyond your control."
+        },
+        {
+          "title": "Why renters coverage matters",
+          "text": "Even though your landlord will have a homeowners policy on the place you are living, it does not cover your own personal items as a renter, which is why renters insurance is essential."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Is it worth comparing home insurance quotes?",
+          "a": "You may be very surprised to see the range of prices you'll get in home insurance quotes. You can sometimes save hundreds of dollars, or even more, simply by choosing one company over another."
+        },
+        {
+          "q": "Why use an independent agent for home insurance?",
+          "a": "It is important that you get quotes only from reliable top carriers. Your local independent agent can accumulate multiple quotes from the top carriers for you online, so you can compare all the best policy options conveniently at home."
+        }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial Insurance",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Liability, property, auto and workers comp.",
+      "text": "From vehicles to property and the employees within the business, owners can safeguard their investment and lessen the risk of a scenario affecting its growth and presence.",
+      "lead": "Business owners should carefully consider their commercial insurance needs, which offer a range of vital protection related to the business. The following areas represent some of the primary commercial insurance needs that any business should approach.",
+      "image": "/brands/trustedinsurancegroup/commercial",
+      "imageAlt": "A business owner standing outside the front of his store",
+      "covers": [
+        {
+          "title": "Commercial auto insurance",
+          "text": "A vehicle that is used within the context of business must have its own policy; a personal car insurance policy is not enough, as it will not cover items that relate to business. If your business uses vehicles to perform routine or even occasional operations, a commercial auto policy is a must."
+        },
+        {
+          "title": "Commercial general liability (CGL)",
+          "text": "Bodily injury, property damage, personal injury and advertising injury are covered with a CGL policy. A convenient catch-all type of policy, many businesses use it as a starting point for their liability needs."
+        },
+        {
+          "title": "Commercial property insurance",
+          "text": "You will find similar covered items to a home policy, such as fire, theft and natural disasters that pertain to the business property. If your business has some type of physical location, it would require a property insurance policy."
+        },
+        {
+          "title": "Workers compensation",
+          "text": "Workers that are hurt on the job can rely on workers compensation for lost income and medical expenses. This coverage is commonly required by employers, and it often extends to temporary employees as well."
+        },
+        {
+          "title": "Business owner package (BOP)",
+          "text": "Small business owners can take care of many needs in a BOP policy. It often includes vehicle, property damage, business income, property and bodily injury, as well as other types of basic insurance needs."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Can I compare commercial quotes online?",
+          "a": "Business owners can compare quotes online using an independent agency. This is a valuable option that can save time and money, where owners can receive quotes from several top-tier insurance companies at once."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "title": "We are the uncommon independent insurance agency.",
+    "text": [
+      "With over 33 years of combined insurance experience, we have cut out the red tape in communication and give clients what they deserve: clear, understandable communication on their insurance for their personal assets, businesses and life.",
+      "At Trusted Insurance Group, you will speak directly with a licensed advisor who is devoted to answering your questions and making sure you are presented with insurance options, customized to your specific needs. We understand each client has different circumstances so we do not speak in generalities. We speak in specifics.",
+      "Each of us have lived in Texas our entire lives, so we understand all the markets that are appropriate for your location and circumstances. We will take you through a hands on process that allows you to feel comfortable knowing your most valuable assets are protected without feeling overwhelmed."
+    ],
+    "values": [
+      {
+        "title": "Clear communication",
+        "text": "We have cut out the red tape in communication and give clients what they deserve on their personal assets, businesses and life."
+      },
+      {
+        "title": "A licensed advisor",
+        "text": "You will speak directly with a licensed advisor who is devoted to answering your questions."
+      },
+      {
+        "title": "Specifics, not generalities",
+        "text": "Each client has different circumstances, so options are customized to your specific needs."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Chelsey Carlson",
+      "role": "Trusted Partner",
+      "bio": "A founding partner of Trusted Insurance Group. Her insurance career began in 2010, and she managed a local independent agency specializing in personal and commercial insurance before working for one of the top insurance brokers in the nation, specializing in high net-worth clientele. Chelsey and her husband, Alex, reside in Liberty, TX with their two boys, Keegan and Gatlin, and spend their spare time outdoors fishing and playing golf.",
+      "image": "/brands/trustedinsurancegroup/team-1",
+      "imageAlt": "Chelsey Carlson"
+    },
+    {
+      "name": "Katie Blanscet",
+      "role": "Trusted Partner",
+      "bio": "A founding partner with over 13 years of experience in the insurance industry. She was the top risk advisor for a local independent agency as well as for a nationally recognized brokerage, and serves clients in all areas of personal, commercial and life insurance. Katie resides in Crosby, TX with her husband, Austin, and their two children, Ella and Brooks, and they enjoy the outdoors and quality time with family.",
+      "image": "/brands/trustedinsurancegroup/team-2",
+      "imageAlt": "Katie Blanscet"
+    },
+    {
+      "name": "Crystal Egorushkin",
+      "role": "Trusted Partner",
+      "bio": "A founding partner who began her insurance career in 2010 while attending the University of Houston. Upon graduating in 2012 she accepted a position as a personal insurance advisor, and has since gained experience in personal, commercial and life insurance, and has also managed a successful independent agency. Crystal grew up in Crosby, TX and now resides in Kingwood with her husband, Anton, and their son, Kaz.",
+      "image": "/brands/trustedinsurancegroup/team-3",
+      "imageAlt": "Crystal Egorushkin"
+    }
+  ],
+  "resources": [
+    {
+      "title": "Customer Service Center",
+      "text": "View your insurance policies, print insurance ID cards, update your contact information, download documents and more.",
+      "href": "https://customerservice.agentinsure.com/EzlynxCustomerService/trustedins/Account/LogIn"
+    },
+    {
+      "title": "Compare Quotes Online",
+      "text": "Our secure live quoting page for auto and home insurance.",
+      "href": "https://www.agentinsure.com/compare/auto-insurance-home-insurance/trustedins/quote.aspx"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Office",
+      "items": [
+        "20111 FM 2100, Ste. 209, Crosby, TX 77532",
+        "Phone: 281-667-9327",
+        "Fax: 281-764-5762",
+        "chelsey@trustedinsgroup.com"
+      ]
+    },
+    {
+      "heading": "Experience",
+      "text": "Over 33 years of combined insurance experience across personal, commercial and life insurance."
+    },
+    {
+      "heading": "Customer service center",
+      "text": "Use our customer service center to view your insurance policies, print insurance ID cards, update your contact information, download documents and more."
+    },
+    {
+      "heading": "Compare quotes online",
+      "text": "Enter your zip code and choose auto, home or both to see how much you could save on our secure live quoting page."
+    }
+  ]
+}
