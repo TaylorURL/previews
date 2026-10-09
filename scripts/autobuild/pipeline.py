@@ -46,6 +46,7 @@ from .check import all_checks
 from .compose import AUTOMATED
 from .letter import letter_for
 from .slug import slug_for
+from . import visual
 
 spec = importlib.util.spec_from_file_location("routine", os.path.join(ROOT, "scripts", "routine.py"))
 routine = importlib.util.module_from_spec(spec)
@@ -99,16 +100,42 @@ def discard(slug):
             os.remove(path)
 
 
+SHOTS = os.path.join(ROOT, ".autobuild", "shots")
+
+
 def layout(slugs):
-    out = subprocess.run(["node", "scripts/autobuild/layout.mjs", "-", *slugs], cwd=ROOT, capture_output=True, text=True,
+    """Each built home page opened at desktop and phone size, and looked at:
+    {slug: problems}. The pictures it takes stay in .autobuild/shots."""
+    os.makedirs(SHOTS, exist_ok=True)
+    out = subprocess.run(["node", "scripts/autobuild/layout.mjs", SHOTS, *slugs], cwd=ROOT, capture_output=True, text=True,
                          stdin=subprocess.DEVNULL)
-    return json.loads(out.stdout or "{}")
+    seen = json.loads(out.stdout or "{}")
+    found = {}
+    for slug in slugs:
+        result = seen.get(slug)
+        if result is None:
+            found[slug] = [f"the layout check did not open it: {out.stderr.strip()[-200:]}"]
+            continue
+        found[slug] = result["problems"] + visual.look(result)
+        for note in result.get("notes", []):
+            log(slug, note)
+    return found
+
+
+# The time a batch needs after its last build: the site build, the look at
+# each page, landing, the deploy wait and the letters.
+LAND_MINUTES = 12
 
 
 def build_batch(rows):
-    """Builds and checks each business; returns the ones that passed and the parked ones."""
-    passed, parked = [], []
+    """Builds and checks each business; returns the ones that passed, the
+    parked ones, and the ones not reached before the batch had to land."""
+    passed, parked, unbuilt = [], [], []
     for row in rows:
+        if time.time() > deadline() - LAND_MINUTES * 60:
+            # Left due rather than parked, so the next run takes it first.
+            unbuilt.append(row)
+            continue
         # A site an earlier run landed and never registered is taken as it is
         # rather than built again under a second name.
         landed = os.path.join(ROOT, "src", "brands", f"{slug_for(row['name'], None, ROOT)}.json")
@@ -124,6 +151,8 @@ def build_batch(rows):
         try:
             brand, evidence = build(row, ROOT, slug)
             problems = all_checks(brand, evidence, ROOT, slug)
+            for note in evidence.get("notes", []):
+                log(slug, note)
         except Parked as reason:
             problems, brand = [str(reason)], None
         except Exception as error:
@@ -133,7 +162,7 @@ def build_batch(rows):
         log("built" if not problems else "parked", slug, "; ".join(problems))
     fresh = [p for p in passed if not p.get("landed")]
     if not fresh:
-        return passed, parked
+        return passed, parked, unbuilt
     drawn = render([p["slug"] for p in fresh])
     for item in list(passed):
         if drawn.get(item["slug"]):
@@ -152,7 +181,7 @@ def build_batch(rows):
                 parked.append(item)
     for item in parked:
         discard(item["slug"])
-    return passed, parked
+    return passed, parked, unbuilt
 
 
 def release():
@@ -319,7 +348,8 @@ def main(argv):
     while rows and time.time() < deadline() - reserve:
         batch, rows = rows[:args.batch], rows[args.batch:]
         n += 1
-        passed, parked = build_batch(batch)
+        passed, parked, unbuilt = build_batch(batch)
+        rows = unbuilt + rows
         report["parked"] += [{"slug": p["slug"], "name": p["row"]["name"], "why": "; ".join(p["problems"])} for p in parked]
         if args.dry:
             report["built"] += [p["slug"] for p in passed]

@@ -18,13 +18,15 @@
         var b = brands[slug];
         if (!b) return;
         document.title = b.title;
-        var img = document.createElement('link');
-        img.rel = 'preload';
-        img.as = 'image';
-        img.setAttribute('fetchpriority', 'high');
-        img.setAttribute('imagesrcset', b.hero);
-        img.setAttribute('imagesizes', b.sizes);
-        document.head.appendChild(img);
+        if (b.hero) {
+          var img = document.createElement('link');
+          img.rel = 'preload';
+          img.as = 'image';
+          img.setAttribute('fetchpriority', 'high');
+          img.setAttribute('imagesrcset', b.hero);
+          img.setAttribute('imagesizes', b.sizes);
+          document.head.appendChild(img);
+        }
         var css = document.createElement('link');
         css.rel = 'stylesheet';
         css.href = b.fonts;

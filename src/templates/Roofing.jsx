@@ -132,8 +132,8 @@ import {
   ShieldCheck,
   X,
 } from 'lucide-react';
-import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { EnquiryForm, Img, Stars, Facts } from './shared.jsx';
+import { brandVars, displayVars, mapsHref, ratingLine, telHref } from '../site.js';
+import { BrandLogo, EnquiryForm, Img, Stars, Facts } from './shared.jsx';
 import { onColor, townId } from './roofing/color.js';
 
 const GROUPS = [
@@ -184,20 +184,6 @@ function Eyebrow({ children, dark = false }) {
   );
 }
 
-function Mark({ b, className = '', textClass = '' }) {
-  if (b.brand.logo) {
-    return (
-      <img
-        className={`block h-auto max-w-[52vw] object-contain ${className}`}
-        src={b.brand.logo}
-        alt={b.name}
-        style={{ width: b.brand.logoWidth || 200 }}
-      />
-    );
-  }
-  return <span className={`block font-heading text-[26px] font-bold uppercase leading-none ${textClass}`}>{b.shortName}</span>;
-}
-
 /* ------------------------------------------------------------------ header */
 
 function UtilityBar({ b, tel }) {
@@ -220,12 +206,12 @@ function UtilityBar({ b, tel }) {
           )}
         </p>
         <div className="flex w-full items-center justify-between gap-4 md:w-auto md:justify-end">
-          <a href={tel} className="flex min-h-[44px] items-center gap-2 font-heading text-[18px] font-semibold tracking-[0.04em] text-white no-underline">
-            <Phone size={16} className="text-accent" aria-hidden="true" /> {b.phone}
+          <a href={tel} className="flex min-h-[44px] items-center gap-2 whitespace-nowrap font-heading text-[16px] font-semibold tracking-[0.03em] text-white no-underline sm:text-[18px]">
+            <Phone size={16} className="flex-none text-accent" aria-hidden="true" /> {b.phone}
           </a>
           <a
             href="/contact"
-            className="flex min-h-[48px] items-center bg-accent px-4 font-heading text-[15px] font-semibold uppercase tracking-[0.08em] text-[color:var(--on-accent)] no-underline transition hover:brightness-110 sm:px-5"
+            className="flex min-h-[48px] items-center whitespace-nowrap bg-accent px-3 font-heading text-[13px] font-semibold uppercase tracking-[0.06em] text-[color:var(--on-accent)] no-underline transition hover:brightness-110 sm:px-5 sm:text-[15px] sm:tracking-[0.08em]"
           >
             Free Inspection
           </a>
@@ -381,22 +367,22 @@ function Header({ b, tel }) {
         }
       }}
       className={`flex h-full cursor-pointer items-center gap-1.5 border-b-[3px] px-1 font-heading text-[17px] font-semibold uppercase tracking-[0.06em] transition ${
-        menu === name ? 'border-primary text-primary' : 'border-transparent text-ink hover:text-primary'
+        menu === name ? 'border-accent text-head-ink' : 'border-transparent text-head-ink hover:text-head-hover'
       }`}
     >
       {label}
       <ChevronDown size={16} className={`transition ${menu === name ? 'rotate-180' : ''}`} aria-hidden="true" />
     </button>
   );
-  const link = 'flex h-full items-center border-b-[3px] border-transparent px-1 font-heading text-[17px] font-semibold uppercase tracking-[0.06em] text-ink no-underline transition hover:text-primary';
+  const link = 'flex h-full items-center border-b-[3px] border-transparent px-1 font-heading text-[17px] font-semibold uppercase tracking-[0.06em] text-head-ink no-underline transition hover:text-head-hover';
   const towns = list(b.serviceArea);
   const services = servicesOf(b);
 
   return (
-    <header className={`sticky ${b.preview ? 'top-11' : 'top-0'} z-40 border-b border-ink/10 bg-white`}>
-      <div className={`${wrap} flex h-[72px] items-stretch gap-6 lg:h-[84px]`}>
-        <a href="/" className="flex min-w-0 flex-none items-center no-underline" aria-label={`${b.name} home`}>
-          <Mark b={b} className="max-h-[48px] lg:max-h-[56px]" textClass="text-ink" />
+    <header className={`sticky ${b.preview ? 'top-11' : 'top-0'} z-40 border-b border-head-line bg-head`}>
+      <div className={`${wrap} flex h-[76px] items-stretch gap-6 lg:h-[92px]`}>
+        <a href="/" className="flex min-w-0 flex-initial items-center no-underline lg:flex-none" aria-label={`${b.name} home`}>
+          <BrandLogo b={b} textClass="font-heading uppercase text-head-ink" />
         </a>
 
         <nav aria-label="Main" className="ml-auto hidden lg:block">
@@ -428,7 +414,7 @@ function Header({ b, tel }) {
           </a>
           <button
             type="button"
-            className="inline-flex h-12 cursor-pointer items-center gap-2 border-2 border-ink px-3.5 font-heading text-[16px] font-semibold uppercase tracking-[0.06em] text-ink lg:hidden"
+            className="inline-flex h-12 cursor-pointer items-center gap-2 border-2 border-head-ink/80 px-3.5 font-heading text-[16px] font-semibold uppercase tracking-[0.06em] text-head-ink lg:hidden"
             aria-expanded={mobile}
             aria-controls="site-menu"
             onClick={() => setMobile((v) => !v)}
@@ -558,23 +544,69 @@ function Promises({ items, dark = false }) {
   );
 }
 
+function HeroPanel({ b, tel, rating, promises }) {
+  const first = list(b.hours)[0];
+  return (
+    <div className="self-center border-t-4 border-accent bg-white p-7 text-ink shadow-[0_32px_64px_-32px_rgba(0,0,0,0.7)] sm:p-8">
+      <p className="font-heading text-[14px] font-semibold uppercase tracking-[0.16em] text-primary">Free Roof Inspection</p>
+      <a href={tel} className="mt-3 flex items-center gap-3 whitespace-nowrap font-heading text-[clamp(1.6rem,1.2rem+1.4vw,2rem)] font-bold tracking-[0.02em] text-ink no-underline">
+        <Phone size={24} className="flex-none text-primary" aria-hidden="true" /> {b.phone}
+      </a>
+      {first && (
+        <p className="mt-2 flex items-center gap-2 text-[15px] text-ink/70">
+          <Clock size={15} className="flex-none text-primary" aria-hidden="true" /> {first[0]} {first[1]}
+        </p>
+      )}
+      {rating && (
+        <div className="mt-6 flex items-center gap-4 border-t border-ink/10 pt-6">
+          <strong className="font-heading text-[48px] font-bold leading-none">{Number(b.rating).toFixed(1)}</strong>
+          <div className="grid gap-1.5">
+            <Stars value={b.rating} size={17} />
+            <span className="text-[15px] text-ink/70">{b.reviewCount.toLocaleString()} Google reviews</span>
+          </div>
+        </div>
+      )}
+      {promises.length > 0 && (
+        <div className="mt-6 border-t border-ink/10 pt-6">
+          <Promises items={promises} />
+        </div>
+      )}
+      <a href="/contact" className={`${solid} mt-7 w-full`}>
+        Book an Inspection <ArrowRight size={18} aria-hidden="true" />
+      </a>
+    </div>
+  );
+}
+
 function HomeHero({ b, tel, rating }) {
   const promises = list(b.promises).slice(0, 4);
   return (
     <section className={`relative isolate overflow-hidden bg-ink text-white ${heroClip}`}>
-      <Img
-        className="absolute inset-0 -z-20 h-full w-full object-cover object-[center_40%]"
-        src={b.hero.image}
-        alt={b.hero.imageAlt}
-        sizes="100vw"
-        eager
-      />
+      {b.hero.image ? (
+        <>
+          {/* On a phone the photo is shown whole above the words; from lg up it is the ground behind them. */}
+          <Img
+            className="relative block aspect-[16/10] w-full object-cover object-[center_40%] lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto lg:h-full"
+            src={b.hero.image}
+            alt={b.hero.imageAlt}
+            sizes="100vw"
+            eager
+            data-backdrop=""
+          />
+          <div
+            className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(100deg,color-mix(in_srgb,var(--ink)_94%,transparent)_0%,color-mix(in_srgb,var(--ink)_80%,transparent)_48%,color-mix(in_srgb,var(--ink)_25%,transparent)_100%)]"
+            aria-hidden="true"
+          />
+        </>
+      ) : (
+        // No photo strong enough to lead: the brand's own colors carry the band.
+        <div
+          className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_88%_12%,color-mix(in_srgb,var(--primary)_55%,transparent),transparent_58%),repeating-linear-gradient(135deg,rgba(255,255,255,0.035)_0_2px,transparent_2px_26px)]"
+          aria-hidden="true"
+        />
+      )}
       <div
-        className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,color-mix(in_srgb,var(--ink)_80%,transparent)_0%,color-mix(in_srgb,var(--ink)_88%,transparent)_100%)] lg:bg-[linear-gradient(100deg,color-mix(in_srgb,var(--ink)_94%,transparent)_0%,color-mix(in_srgb,var(--ink)_80%,transparent)_48%,color-mix(in_srgb,var(--ink)_25%,transparent)_100%)]"
-        aria-hidden="true"
-      />
-      <div
-        className={`${wrap} grid min-h-[min(88vh,800px)] items-end gap-10 pt-16 pb-[calc(clamp(28px,5vw,88px)+3.5rem)] lg:grid-cols-[minmax(0,1fr)_minmax(0,360px)] lg:gap-16 lg:pt-24`}
+        className={`${wrap} grid items-end gap-10 pt-10 pb-[calc(clamp(28px,5vw,88px)+3.5rem)] sm:pt-16 lg:min-h-[min(88vh,800px)] lg:grid-cols-[minmax(0,1fr)_minmax(0,380px)] lg:gap-16 lg:pt-24`}
       >
         <div className="min-w-0 self-center">
           <Eyebrow dark>{b.hero.eyebrow}</Eyebrow>
@@ -592,7 +624,9 @@ function HomeHero({ b, tel, rating }) {
             </a>
           </div>
         </div>
-        {(rating || promises.length > 0) && (
+        {!b.hero.image ? (
+          <HeroPanel b={b} tel={tel} rating={rating} promises={promises} />
+        ) : (rating || promises.length > 0) && (
           <div className="border-l-4 border-accent bg-[color-mix(in_srgb,var(--ink)_78%,transparent)] p-6 backdrop-blur-sm sm:p-7">
             {rating && (
               <div className="mb-6 flex items-center gap-4 border-b border-white/15 pb-6">
@@ -706,8 +740,8 @@ function ClaimStrip({ b, stormHref }) {
   );
 }
 
-function ServiceCard({ s }) {
-  const group = GROUPS.find(([key]) => key === groupOf(s))[1];
+function ServiceCard({ s, tagged = true }) {
+  const group = tagged ? GROUPS.find(([key]) => key === groupOf(s))[1] : null;
   return (
     <li className="min-w-0">
       <a href={`/services/${s.slug}`} className="group flex h-full flex-col bg-surface text-ink no-underline">
@@ -719,24 +753,81 @@ function ServiceCard({ s }) {
               alt={s.imageAlt || ''}
               sizes="(min-width: 1024px) 31vw, (min-width: 640px) 48vw, 100vw"
             />
-            <span className="absolute left-0 top-5 bg-ink px-3 py-1.5 font-heading text-[13px] font-semibold uppercase tracking-[0.14em] text-white">
-              {group}
-            </span>
+            {group && (
+              <span className="absolute left-0 top-5 bg-ink px-3 py-1.5 font-heading text-[13px] font-semibold uppercase tracking-[0.14em] text-white">
+                {group}
+              </span>
+            )}
           </div>
         ) : (
-          <span className="mx-6 mt-6 w-fit bg-ink px-3 py-1.5 font-heading text-[13px] font-semibold uppercase tracking-[0.14em] text-white">
-            {group}
-          </span>
+          group && (
+            <span className="mx-6 mt-6 w-fit bg-ink px-3 py-1.5 font-heading text-[13px] font-semibold uppercase tracking-[0.14em] text-white">
+              {group}
+            </span>
+          )
         )}
         <div className="flex flex-1 flex-col border-b-4 border-transparent px-6 pb-6 pt-4 transition group-hover:border-primary sm:px-7">
           <h3 className={`${h3} text-[25px]`}>{s.title}</h3>
-          <p className="mt-2.5 flex-1 leading-[1.6] text-ink/75">{s.text}</p>
+          {s.text ? <p className="mt-2.5 flex-1 leading-[1.6] text-ink/75">{s.text}</p> : <span className="flex-1" />}
           <span className="mt-5 inline-flex items-center gap-2 font-heading text-[15px] font-semibold uppercase tracking-[0.1em] text-primary">
             {s.title} <ArrowRight size={16} className="transition group-hover:translate-x-1" aria-hidden="true" />
           </span>
         </div>
       </a>
     </li>
+  );
+}
+
+function ServiceTile({ s }) {
+  return (
+    <li className="min-w-0">
+      <a
+        href={`/services/${s.slug}`}
+        className="group flex h-full min-h-[76px] items-center justify-between gap-4 border-l-4 border-primary bg-surface px-6 py-4 text-ink no-underline transition hover:bg-ink hover:text-white"
+      >
+        <span className={`${h3} text-[21px]`}>{s.title}</span>
+        <ArrowRight size={18} className="flex-none text-primary transition group-hover:translate-x-1 group-hover:text-white" aria-hidden="true" />
+      </a>
+    </li>
+  );
+}
+
+/**
+ * The services as cards when most of them carry words of their own, and as
+ * plain tiles when most do not, so no card stands empty beside a full one.
+ * Cards fill whole rows of three; any left over follow as tiles.
+ */
+function HomeServices({ services }) {
+  const tagged = new Set(services.map(groupOf)).size > 1;
+  const worded = services.filter((s) => s.text);
+  if (worded.length * 2 < services.length) {
+    return (
+      <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {services.map((s) => (
+          <ServiceTile key={s.slug} s={s} />
+        ))}
+      </ul>
+    );
+  }
+  const ordered = [...worded, ...services.filter((s) => !s.text)];
+  const whole = ordered.length >= 3 ? ordered.length - (ordered.length % 3) : ordered.length;
+  const cards = ordered.slice(0, whole);
+  const rest = ordered.slice(whole);
+  return (
+    <>
+      <ul className={`grid gap-5 sm:grid-cols-2 ${cards.length >= 3 ? 'lg:grid-cols-3' : ''}`}>
+        {cards.map((s) => (
+          <ServiceCard key={s.slug} s={s} tagged={tagged} />
+        ))}
+      </ul>
+      {rest.length > 0 && (
+        <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+          {rest.map((s) => (
+            <ServiceTile key={s.slug} s={s} />
+          ))}
+        </ul>
+      )}
+    </>
   );
 }
 
@@ -881,14 +972,16 @@ function AboutBand({ b }) {
   if (!a) return null;
   return (
     <section className={`bg-ink text-white ${topClip} pb-[clamp(4rem,9vw,7rem)] pt-[calc(clamp(28px,5vw,88px)+clamp(3.5rem,8vw,6rem))]`}>
-      <div className={`${wrap} grid items-center gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-20`}>
-        <Img
-          className="aspect-[4/3] w-full object-cover [clip-path:polygon(0_0,100%_0,100%_100%,8%_100%,0_92%)]"
-          src={a.image}
-          alt={a.imageAlt}
-          sizes="(min-width: 768px) 46vw, 100vw"
-        />
-        <div>
+      <div className={`${wrap} grid items-center gap-10 ${a.image ? 'md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]' : ''} lg:gap-20`}>
+        {a.image && (
+          <Img
+            className="aspect-[4/3] w-full object-cover [clip-path:polygon(0_0,100%_0,100%_100%,8%_100%,0_92%)]"
+            src={a.image}
+            alt={a.imageAlt}
+            sizes="(min-width: 768px) 46vw, 100vw"
+          />
+        )}
+        <div className={a.image ? '' : 'max-w-3xl'}>
           <Eyebrow dark>{b.since ? `Since ${b.since}` : 'About us'}</Eyebrow>
           <h2 className={h2}>{a.title}</h2>
           <p className="mt-5 text-[17px] leading-[1.65] text-white/80 sm:text-[18px]">{list(a.text)[0]}</p>
@@ -913,19 +1006,20 @@ function AboutBand({ b }) {
 
 function AreasBand({ b }) {
   const towns = list(b.serviceArea);
-  if (!towns.length) return null;
+  // The band is a list of towns; with one or two it would be a heading alone, and the hero names the home town.
+  if (towns.length < 3) return null;
   return (
     <section id="areas" className={`${anchor} bg-surface ${pad}`}>
       <div className={`${wrap} grid gap-10 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16`}>
         <div>
           <Eyebrow>Service areas</Eyebrow>
-          <h2 className={h2}>Roofing across {towns.length > 1 ? `${towns[0]} and nearby` : towns[0]}</h2>
+          <h2 className={h2}>Roofing across {towns[0]} and nearby</h2>
           {b.areasText && <p className="mt-5 text-[17px] leading-[1.6] text-ink/75 sm:text-[18px]">{b.areasText}</p>}
           <a href="/service-areas" className={`${solid} mt-8`}>
             All Service Areas
           </a>
         </div>
-        <ul className="grid grid-cols-2 border-l-2 border-t-2 border-ink sm:grid-cols-3">
+        <ul className="grid grid-cols-2 content-start self-start border-l-2 border-t-2 border-ink sm:grid-cols-3">
           {towns.map((t, i) => (
             <li key={t} className="border-b-2 border-r-2 border-ink bg-white">
               <a href={`/service-areas#${townId(t)}`} className="flex min-h-[64px] items-center gap-3 px-4 py-3 text-ink no-underline transition hover:bg-ink hover:text-white">
@@ -1080,13 +1174,7 @@ function Footer({ b, tel }) {
     <footer className={`bg-ink pb-24 text-white/75 md:pb-0 ${topClip} pt-[calc(clamp(28px,5vw,88px)+3.5rem)]`}>
       <div className={`${wrap} grid gap-10 pb-12 sm:grid-cols-2 lg:grid-cols-[1.25fr_0.9fr_1.25fr] lg:gap-12`}>
         <div className="grid content-start gap-5">
-          {b.brand.logo ? (
-            <span className="inline-flex w-fit bg-white px-4 py-3">
-              <Mark b={b} className="!max-w-[60vw]" />
-            </span>
-          ) : (
-            <Mark b={b} textClass="text-white" />
-          )}
+          <BrandLogo b={b} ground="#161a20" textClass="font-heading uppercase text-white" />
           <p className="max-w-xs leading-[1.6]">
             Roofing in {b.town}, {b.state}
             {b.since ? `, since ${b.since}` : ''}.
@@ -1171,11 +1259,7 @@ function HomePage({ b, tel, rating, stormHref }) {
               From a single leak to a new roof, across {b.town} and nearby.
             </p>
           </div>
-          <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((s) => (
-              <ServiceCard key={s.slug} s={s} />
-            ))}
-          </ul>
+          <HomeServices services={services} />
         </div>
       </section>
       <Materials b={b} />
@@ -1606,6 +1690,7 @@ export default function Roofing({ b, path = '' }) {
   const storm = services.find((s) => s.claim);
   const stormHref = storm ? `/services/${storm.slug}` : null;
   const vars = {
+    ...displayVars(b.brand),
     ...brandVars(b.brand),
     '--on-primary': onColor(b.brand.primary),
     '--on-accent': onColor(b.brand.accent),

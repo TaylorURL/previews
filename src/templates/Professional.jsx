@@ -64,8 +64,8 @@
  */
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, Check, ChevronDown, Clock, ExternalLink, Mail, MapPin, Menu, Phone, Plus, X } from 'lucide-react';
-import { brandVars, mapsHref, telHref } from '../site.js';
-import { EnquiryForm, Img, Stars, Facts } from './shared.jsx';
+import { brandVars, displayVars, mapsHref, telHref } from '../site.js';
+import { BrandLogo, EnquiryForm, Img, Stars, Facts } from './shared.jsx';
 import { iconFor } from './professional/icons.js';
 
 const KIND = {
@@ -76,15 +76,15 @@ const KIND = {
 
 const wrap = 'mx-auto w-full max-w-page px-gutter';
 const pad = 'py-[clamp(4rem,8vw,6.5rem)]';
-const h2 = 'font-heading text-[clamp(1.75rem,1.2rem+2vw,2.5rem)] font-normal leading-[1.22] text-ink [text-wrap:balance]';
+const h2 = 'font-heading font-display-2 text-[clamp(1.8rem,1.25rem+2vw,2.6rem)] leading-[1.14] text-ink [text-wrap:balance]';
 const lead = 'text-[17px] leading-[1.65] text-muted sm:text-lg';
 const btn =
-  'inline-flex min-h-[50px] items-center justify-center gap-2 rounded-full px-6 text-base font-semibold no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary';
+  'inline-flex min-h-[50px] items-center justify-center gap-2 rounded-md px-6 text-[15px] font-semibold tracking-[0.01em] no-underline transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary';
 const solid = `${btn} bg-primary text-white hover:bg-[color-mix(in_srgb,var(--primary)_84%,#000)]`;
 const line = `${btn} border-[1.5px] border-primary/35 text-primary hover:border-primary hover:bg-primary/[0.04]`;
 const white = `${btn} bg-white text-primary hover:bg-surface`;
 const ghost = `${btn} border-[1.5px] border-white/45 text-white hover:border-white hover:bg-white/10`;
-const cardLink = 'rounded-[20px] border border-line bg-white transition duration-200 hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-[0_22px_40px_-28px_rgba(15,30,50,0.45)]';
+const cardLink = 'rounded-lg border border-line bg-white transition duration-200 hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-[0_22px_40px_-28px_rgba(15,30,50,0.45)]';
 
 const GRID = { 1: '', 2: 'sm:grid-cols-2', 3: 'sm:grid-cols-2 lg:grid-cols-3', 4: 'sm:grid-cols-2 xl:grid-cols-4' };
 const STEPS = { 2: 'lg:grid-cols-2', 3: 'lg:grid-cols-3', 4: 'lg:grid-cols-4', 5: 'lg:grid-cols-5' };
@@ -92,23 +92,13 @@ const STEPS = { 2: 'lg:grid-cols-2', 3: 'lg:grid-cols-3', 4: 'lg:grid-cols-4', 5
 const list = (value) => (Array.isArray(value) ? value : []);
 const paras = (value) => (Array.isArray(value) ? value : value ? [value] : []);
 
-function Eyebrow({ children, className = '' }) {
-  return <p className={`mb-4 text-[13px] font-bold uppercase tracking-[0.16em] text-accent ${className}`}>{children}</p>;
-}
-
-/** The logo sized by height, so square, wide and stacked marks sit the same. */
-function Mark({ b, className = '' }) {
-  if (b.brand.logo) {
-    return (
-      <img
-        className={`block h-auto w-auto max-w-full object-contain object-left ${className}`}
-        src={b.brand.logo}
-        alt={b.name}
-        style={{ width: b.brand.logoWidth ? `${b.brand.logoWidth}px` : undefined }}
-      />
-    );
-  }
-  return <span className="block font-heading text-xl font-bold leading-tight text-ink sm:text-2xl">{b.shortName}</span>;
+function Eyebrow({ children, className = '', light = false }) {
+  return (
+    <p className={`mb-4 flex items-center gap-3 text-[12.5px] font-bold uppercase tracking-[0.18em] ${light ? 'text-white/85' : 'text-accent'} ${className}`}>
+      <span aria-hidden="true" className={`h-px w-7 flex-none ${light ? 'bg-white/60' : 'bg-accent'}`} />
+      <span className="min-w-0">{children}</span>
+    </p>
+  );
 }
 
 /** The service lines split by audience, in brand-file order. One unnamed group when none says. */
@@ -139,12 +129,12 @@ export function pages(b) {
 function TopBar({ b, tel }) {
   const first = list(b.hours)[0];
   return (
-    <div className="border-b border-line bg-surface text-sm text-muted">
+    <div className="bg-primary-deep text-sm text-white/75">
       <div className={`${wrap} flex min-h-10 items-center justify-between gap-4`}>
         {b.tagline && <p className="hidden min-w-0 truncate lg:block">{b.tagline}</p>}
         {first && (
           <p className="flex min-w-0 items-center gap-2 lg:hidden">
-            <Clock size={14} className="flex-none text-accent" aria-hidden="true" />
+            <Clock size={14} className="flex-none text-white/60" aria-hidden="true" />
             <span className="truncate">
               {first[0]} {first[1]}
             </span>
@@ -153,12 +143,12 @@ function TopBar({ b, tel }) {
         <div className="ml-auto flex flex-none items-center gap-7">
           {first && (
             <span className="hidden items-center gap-2 lg:flex">
-              <Clock size={15} className="text-accent" aria-hidden="true" />
+              <Clock size={15} className="text-white/60" aria-hidden="true" />
               {first[0]}&nbsp;&nbsp;{first[1]}
             </span>
           )}
-          <a href={tel} className="flex min-h-11 items-center gap-2 font-bold text-primary no-underline hover:underline">
-            <Phone size={14} className="text-accent" aria-hidden="true" />
+          <a href={tel} className="flex min-h-11 items-center gap-2 font-bold text-white no-underline hover:underline">
+            <Phone size={14} className="text-white/60" aria-hidden="true" />
             {b.phone}
           </a>
         </div>
@@ -171,7 +161,7 @@ function MegaMenu({ b, groups, path, k, open, id }) {
   return (
     <div id={id} hidden={!open} className="absolute inset-x-0 top-full pt-2">
       <div className={wrap}>
-        <div className="mx-auto grid max-w-[1100px] grid-cols-[minmax(0,1fr)_minmax(0,1fr)_250px] gap-8 rounded-[20px] border border-line bg-white p-8 shadow-[0_40px_80px_-40px_rgba(15,30,50,0.45)] xl:gap-10 xl:p-9">
+        <div className="mx-auto grid max-w-[1100px] grid-cols-[minmax(0,1fr)_minmax(0,1fr)_250px] gap-8 rounded-lg border border-line bg-white p-8 shadow-[0_40px_80px_-40px_rgba(15,30,50,0.45)] xl:gap-10 xl:p-9">
           {groups.map((g) => (
             <div key={g.key} className={groups.length === 1 ? 'col-span-2' : ''}>
               {g.label && <p className="mb-2 px-3 text-xs font-bold uppercase tracking-[0.16em] text-muted">{g.label}</p>}
@@ -198,7 +188,7 @@ function MegaMenu({ b, groups, path, k, open, id }) {
               </ul>
             </div>
           ))}
-          <div className="flex flex-col gap-3 self-start rounded-2xl bg-primary p-7 text-white">
+          <div className="flex flex-col gap-3 self-start rounded-lg bg-primary p-7 text-white">
             <p className="font-heading text-lg leading-snug">Not sure what you need?</p>
             <p className="text-[15px] leading-relaxed text-white/80">Call and talk it through with {k.talk}.</p>
             <a href={telHref(b.phone)} className="inline-flex min-h-11 items-center text-lg font-bold text-white no-underline hover:underline">
@@ -252,14 +242,14 @@ function Header({ b, path, k, groups, nav, tel, ctaLabel }) {
 
   const navLink = (here) =>
     `relative inline-flex min-h-11 min-w-11 items-center justify-center gap-1 whitespace-nowrap text-[15px] font-semibold no-underline transition-colors xl:text-base ${
-      here ? 'text-primary after:absolute after:inset-x-0 after:bottom-1.5 after:h-0.5 after:bg-accent' : 'text-ink hover:text-primary'
+      here ? 'text-head-ink after:absolute after:inset-x-0 after:bottom-1.5 after:h-0.5 after:bg-accent' : 'text-head-ink hover:text-head-hover'
     }`;
 
   return (
-    <header className={`sticky ${stick} z-40 border-b border-line bg-white`}>
-      <div className={`${wrap} flex h-[72px] items-center gap-4 lg:h-[84px] lg:gap-6`}>
-        <a href="/" className="flex min-h-11 min-w-0 max-w-[60vw] items-center no-underline sm:max-w-[260px] lg:max-w-[200px] xl:max-w-[240px]" aria-label={`${b.name} home`}>
-          <Mark b={b} className="max-h-10 lg:max-h-[50px]" />
+    <header className={`sticky ${stick} z-40 border-b border-head-line bg-head`}>
+      <div className={`${wrap} flex h-[76px] items-center gap-4 lg:h-[92px] lg:gap-6`}>
+        <a href="/" className="flex min-h-11 min-w-0 max-w-[62vw] flex-initial items-center no-underline lg:max-w-[280px] lg:flex-none" aria-label={`${b.name} home`}>
+          <BrandLogo b={b} textClass="text-head-ink" />
         </a>
 
         <nav aria-label="Main" className="ml-auto hidden self-stretch lg:block">
@@ -304,12 +294,12 @@ function Header({ b, path, k, groups, nav, tel, ctaLabel }) {
           <a href="/contact" className={`${solid} hidden lg:inline-flex`}>
             {ctaLabel}
           </a>
-          <a href={tel} aria-label={`Call ${b.phone}`} className="grid size-11 place-items-center rounded-full border border-line text-primary lg:hidden">
+          <a href={tel} aria-label={`Call ${b.phone}`} className="grid size-11 place-items-center rounded-md border border-head-line text-head-ink lg:hidden">
             <Phone size={19} aria-hidden="true" />
           </a>
           <button
             type="button"
-            className="inline-flex h-11 cursor-pointer items-center gap-2 rounded-full border border-line bg-white px-4 font-semibold text-ink lg:hidden"
+            className="inline-flex h-11 cursor-pointer items-center gap-2 rounded-md border border-head-line bg-transparent px-4 font-semibold text-head-ink lg:hidden"
             aria-expanded={menu}
             aria-controls="site-menu"
             onClick={() => setMenu((v) => !v)}
@@ -433,7 +423,7 @@ function PageHero({ eyebrow, title, text, trail, image, imageAlt, aside, childre
         <div className={`grid items-center gap-10 ${split ? 'lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:gap-20' : ''}`}>
           <div className="min-w-0 max-w-3xl">
             {eyebrow}
-            <h1 className="break-words font-heading text-[clamp(2.15rem,1.4rem+3vw,3.5rem)] font-normal leading-[1.15] text-ink [text-wrap:balance]">
+            <h1 className="break-words font-heading font-display text-[clamp(2.15rem,1.4rem+3vw,3.5rem)] leading-[1.1] text-ink [text-wrap:balance]">
               {title}
             </h1>
             {text && <p className={`mt-5 max-w-2xl ${lead}`}>{text}</p>}
@@ -441,7 +431,7 @@ function PageHero({ eyebrow, title, text, trail, image, imageAlt, aside, childre
           </div>
           {image && (
             <Img
-              className="aspect-[4/3] w-full rounded-[28px] object-cover lg:aspect-[11/8]"
+              className="aspect-[4/3] w-full rounded-lg object-cover lg:aspect-[3/2]"
               src={image}
               alt={imageAlt || ''}
               sizes="(max-width: 1024px) 100vw, 45vw"
@@ -455,66 +445,137 @@ function PageHero({ eyebrow, title, text, trail, image, imageAlt, aside, childre
   );
 }
 
+/** The office at a glance, for a hero with no photo: the call, the hours, the address. */
+function OfficePanel({ b, tel, ctaLabel }) {
+  const hours = list(b.hours);
+  return (
+    <aside className="rounded-lg bg-white p-6 text-ink shadow-[0_40px_80px_-40px_rgba(0,0,0,0.6)] sm:p-8">
+      <p className="text-[12.5px] font-bold uppercase tracking-[0.18em] text-accent">Call the office</p>
+      <a href={tel} className="mt-2 flex min-h-11 items-center gap-3 font-heading font-display-2 text-[1.7rem] text-primary no-underline hover:underline">
+        <Phone size={22} aria-hidden="true" /> {b.phone}
+      </a>
+      <a href={mapsHref(b)} className="mt-3 flex items-start gap-3 border-t border-line pt-4 text-[15px] leading-relaxed text-ink no-underline hover:text-primary">
+        <MapPin size={17} className="mt-1 flex-none text-accent" aria-hidden="true" />
+        <span>
+          {b.address}
+          <br />
+          {b.town}, {b.state} {b.zip}
+        </span>
+      </a>
+      {hours.length > 0 && (
+        <dl className="mt-4 grid gap-1.5 border-t border-line pt-4 text-[15px]">
+          {hours.map(([day, time]) => (
+            <div key={day} className="flex justify-between gap-4">
+              <dt className="text-muted">{day}</dt>
+              <dd className="m-0 text-right font-semibold text-ink">{time}</dd>
+            </div>
+          ))}
+        </dl>
+      )}
+      <a href="/contact" className={`${solid} mt-6 w-full`}>
+        {ctaLabel} <ArrowRight size={17} aria-hidden="true" />
+      </a>
+    </aside>
+  );
+}
+
+/**
+ * The home page's opening. With a photo good enough to lead (the build gives
+ * one only when it is wide and sharp enough), the photo fills the band under
+ * a wash of the brand's deep color. Without one, the band is that color alone
+ * and the office's own details stand where a photo would.
+ */
 function Hero({ b, tel, ctaLabel }) {
   const points = list(b.hero.points).slice(0, 3);
-  const rated = b.rating && b.reviewCount;
+  const image = b.hero.image;
   return (
-    <section className="bg-[linear-gradient(180deg,#fff_0%,var(--surface)_100%)]">
-      <div className={`${wrap} grid items-center gap-12 pb-16 pt-10 sm:pt-14 lg:grid-cols-[minmax(0,1.12fr)_minmax(0,0.88fr)] lg:gap-20 lg:pb-24 lg:pt-20`}>
-        <div className="min-w-0">
-          {b.hero.eyebrow && <Eyebrow>{b.hero.eyebrow}</Eyebrow>}
-          <h1 className="break-words font-heading text-[clamp(2.15rem,1.25rem+3.4vw,3.35rem)] font-normal leading-[1.16] text-ink [text-wrap:balance]">
+    <section className="relative isolate overflow-hidden bg-primary-deep text-white">
+      {image ? (
+        <>
+          {/* On a phone the photo is shown whole above the words; from lg up it is the ground behind them. */}
+          <Img
+            className="relative block aspect-[16/10] w-full object-cover object-[center_30%] lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto lg:h-full"
+            src={image}
+            alt={b.hero.imageAlt || ''}
+            sizes="100vw"
+            eager
+            data-backdrop=""
+          />
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_94%,#000)_0%,color-mix(in_srgb,var(--primaryDeep)_80%,transparent)_48%,color-mix(in_srgb,var(--primaryDeep)_20%,transparent)_100%)]"
+          />
+        </>
+      ) : (
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_85%_10%,color-mix(in_srgb,var(--primary)_55%,transparent),transparent_60%),linear-gradient(135deg,color-mix(in_srgb,var(--primaryDeep)_92%,#000),var(--primaryDeep))]"
+        />
+      )}
+      <div
+        className={`${wrap} grid items-center gap-12 py-12 sm:py-20 lg:py-28 ${
+          image ? 'lg:min-h-[min(660px,80vh)]' : 'lg:grid-cols-[minmax(0,1.3fr)_minmax(0,0.7fr)] lg:gap-20'
+        }`}
+      >
+        <div className="min-w-0 max-w-[44rem]">
+          {b.hero.eyebrow && <Eyebrow light>{b.hero.eyebrow}</Eyebrow>}
+          <h1 className="break-words font-heading font-display text-[clamp(2.3rem,1.3rem+3.6vw,4.1rem)] leading-[1.06] text-white [text-wrap:balance]">
             {b.hero.title}
           </h1>
-          <p className={`mt-6 max-w-[36rem] ${lead} sm:text-[19px]`}>{b.hero.lead}</p>
-          <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
-            <a href="/contact" className={solid}>
+          <p className="mt-6 max-w-[36rem] text-[17px] leading-[1.65] text-white/85 sm:text-[19px]">{b.hero.lead}</p>
+          <div className="mt-9 grid gap-3 sm:flex sm:flex-wrap">
+            <a href="/contact" className={white}>
               {ctaLabel} <ArrowRight size={18} aria-hidden="true" />
             </a>
-            <a href={tel} className={line}>
+            <a href={tel} className={ghost}>
               <Phone size={17} aria-hidden="true" /> {b.phone}
             </a>
           </div>
           {points.length > 0 && (
-            <ul className="mt-10 grid gap-3 border-t border-line pt-7 sm:grid-cols-3 sm:gap-5">
+            <ul className="mt-10 grid gap-3 border-t border-white/20 pt-7 sm:grid-cols-3 sm:gap-5">
               {points.map((p) => (
-                <li key={p} className="flex items-start gap-2.5 text-base font-semibold leading-snug text-ink sm:text-[15px]">
-                  <Check size={18} strokeWidth={2} className="mt-0.5 flex-none text-accent" aria-hidden="true" />
+                <li key={p} className="flex items-start gap-2.5 text-[15px] font-semibold leading-snug text-white">
+                  <Check size={18} strokeWidth={2.2} className="mt-0.5 flex-none text-white/70" aria-hidden="true" />
                   {p}
                 </li>
               ))}
             </ul>
           )}
         </div>
-        <div className="relative min-w-0">
-          <div className="relative pb-5 pr-5 lg:pb-8 lg:pr-8">
-            <span aria-hidden="true" className="absolute bottom-0 left-5 right-0 top-5 rounded-[32px] bg-cream lg:left-8 lg:top-8" />
-            <Img
-              className="relative aspect-[4/3] w-full rounded-[32px] object-cover sm:aspect-[5/4] lg:aspect-[5/6]"
-              src={b.hero.image}
-              alt={b.hero.imageAlt || ''}
-              sizes="(max-width: 1024px) 100vw, 44vw"
-              eager
-            />
+        {!image && (
+          <div className="min-w-0">
+            <OfficePanel b={b} tel={tel} ctaLabel={ctaLabel} />
           </div>
-          {(rated || b.since) && (
-            <div className="relative -mt-12 ml-4 flex w-fit max-w-[calc(100%-2rem)] items-center gap-3.5 rounded-2xl bg-white px-5 py-4 shadow-[0_24px_50px_-24px_rgba(15,30,50,0.4)] lg:absolute lg:-left-10 lg:bottom-20 lg:m-0">
-              {rated ? (
-                <>
-                  <strong className="font-heading text-[1.8rem] font-bold leading-none text-primary">{Number(b.rating).toFixed(1)}</strong>
-                  <span className="grid gap-1">
-                    <Stars value={b.rating} size={14} />
-                    <span className="text-sm text-muted">
-                      {b.reviewCount.toLocaleString('en-US')} Google reviews{b.since ? ` · Since ${b.since}` : ''}
-                    </span>
-                  </span>
-                </>
-              ) : (
-                <span className="text-[15px] font-semibold text-ink">Serving {b.town} since {b.since}</span>
-              )}
-            </div>
-          )}
-        </div>
+        )}
+      </div>
+    </section>
+  );
+}
+
+/** The few numbers that are true of the business, in a strip under the hero. */
+function Stats({ b }) {
+  const rated = b.rating && b.reviewCount;
+  const towns = list(b.serviceArea);
+  const items = [
+    rated && { value: Number(b.rating).toFixed(1), label: 'Google rating', stars: true },
+    rated && { value: b.reviewCount.toLocaleString('en-US'), label: 'Google reviews' },
+    b.since && { value: String(b.since), label: `Serving ${b.town} since` },
+    towns.length >= 3 && { value: String(towns.length), label: 'Towns served' },
+  ].filter(Boolean);
+  if (!items.length) return null;
+  const cols = ['', 'grid-cols-1', 'grid-cols-2', 'grid-cols-2 md:grid-cols-3', 'grid-cols-2 md:grid-cols-4'][items.length];
+  return (
+    <section aria-label={`${b.shortName} in numbers`} className="border-b border-line bg-white">
+      <div className={`${wrap}`}>
+        <ul className={`grid ${cols} border-x border-line`}>
+          {items.map((item, i) => (
+            <li key={item.label} className={`flex flex-col items-center justify-center gap-1.5 px-4 py-7 text-center ${i ? 'border-l border-line' : ''} ${i >= 2 ? 'max-md:border-t' : ''}`}>
+              <strong className="font-heading font-display text-[clamp(1.8rem,1.4rem+1.4vw,2.4rem)] leading-none text-primary">{item.value}</strong>
+              {item.stars && <Stars value={b.rating} size={14} />}
+              <span className="text-[12px] font-bold uppercase tracking-[0.16em] text-muted">{item.label}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
@@ -539,15 +600,26 @@ function Affiliations({ b, k, className = '' }) {
   );
 }
 
-function ServiceCard({ s }) {
+function ServiceCard({ s, compact = false }) {
   const Icon = iconFor(s.icon);
+  if (compact) {
+    return (
+      <a href={`/services/${s.slug}`} className={`group flex h-full items-center gap-4 p-5 text-ink no-underline ${cardLink}`}>
+        <span className="grid size-12 flex-none place-items-center rounded-md bg-primary/[0.07] text-primary">
+          <Icon size={24} strokeWidth={1.5} aria-hidden="true" />
+        </span>
+        <span className="min-w-0 flex-1 font-heading font-display-2 text-[1.15rem] leading-snug">{s.title}</span>
+        <ArrowRight size={18} className="flex-none text-primary transition-transform group-hover:translate-x-1" aria-hidden="true" />
+      </a>
+    );
+  }
   return (
     <a href={`/services/${s.slug}`} className={`group flex h-full gap-4 p-5 text-ink no-underline sm:flex-col sm:gap-0 sm:p-6 lg:p-7 ${cardLink}`}>
-      <span className="grid size-12 flex-none place-items-center rounded-full bg-surface text-primary sm:size-[52px]">
-        <Icon size={28} strokeWidth={1.25} aria-hidden="true" />
+      <span className="grid size-12 flex-none place-items-center rounded-md bg-primary/[0.07] text-primary sm:size-[52px]">
+        <Icon size={26} strokeWidth={1.5} aria-hidden="true" />
       </span>
       <span className="flex min-w-0 flex-1 flex-col">
-        <h3 className="mb-2 mt-2 font-heading text-xl font-normal leading-snug sm:mb-2.5 sm:mt-5">{s.title}</h3>
+        <h3 className="mb-2 mt-2 font-heading font-display-2 text-[1.2rem] leading-snug sm:mb-2.5 sm:mt-5">{s.title}</h3>
         <span className="mb-4 text-base leading-[1.6] text-muted sm:mb-5">{s.text}</span>
         <span className="mt-auto inline-flex items-center gap-1.5 font-bold text-primary">
           Learn More <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" aria-hidden="true" />
@@ -558,20 +630,24 @@ function ServiceCard({ s }) {
 }
 
 function ServiceGrid({ groups }) {
+  // Most lines with nothing to say beyond their name are drawn as a list of
+  // links rather than as cards with an empty middle.
+  const all = groups.flatMap((g) => g.items);
+  const compact = all.filter((s) => !s.text).length * 2 >= all.length;
   return (
     <div className="grid gap-12">
       {groups.map((g) => (
         <div key={g.key}>
           {g.label && (
             <div className="mb-5 flex items-center gap-4">
-              <h3 className="flex-none font-heading text-xl italic text-primary">{g.label}</h3>
+              <h3 className="flex-none text-[12.5px] font-bold uppercase tracking-[0.18em] text-primary">{g.label}</h3>
               <span aria-hidden="true" className="h-px flex-1 bg-line" />
             </div>
           )}
-          <ul className={`grid gap-4 lg:gap-5 ${GRID[Math.min(g.items.length, 4)]}`}>
+          <ul className={`grid gap-4 lg:gap-5 ${compact ? GRID[Math.min(g.items.length, 3)] : GRID[Math.min(g.items.length, 4)]}`}>
             {g.items.map((s) => (
               <li key={s.slug}>
-                <ServiceCard s={s} />
+                <ServiceCard s={s} compact={compact} />
               </li>
             ))}
           </ul>
@@ -623,7 +699,7 @@ function Process({ b }) {
                 {String(i + 1).padStart(2, '0')}
               </span>
               <div className="min-w-0 pt-2.5 lg:pt-6">
-                <h3 className="font-heading text-xl font-normal leading-snug text-ink">{s.title}</h3>
+                <h3 className="font-heading font-display-2 text-xl leading-snug text-ink">{s.title}</h3>
                 <p className="mt-2 text-base leading-[1.6] text-muted">{s.text}</p>
               </div>
             </li>
@@ -640,7 +716,7 @@ function Values({ values }) {
     <dl className="mt-8 border-b border-line">
       {values.map((v) => (
         <div key={v.title} className="grid gap-1 border-t border-line py-4 sm:grid-cols-[11rem_minmax(0,1fr)] sm:gap-6">
-          <dt className="font-heading text-[17px] text-ink">{v.title}</dt>
+          <dt className="font-heading font-display-2 text-[17px] text-ink">{v.title}</dt>
           <dd className="m-0 text-base leading-[1.6] text-muted">{v.text}</dd>
         </div>
       ))}
@@ -650,32 +726,66 @@ function Values({ values }) {
 
 function AboutTeaser({ b, hasTeam }) {
   const text = paras(b.about.text);
+  const towns = list(b.serviceArea);
+  const links = (
+    <div className="mt-9 grid gap-3 sm:flex sm:flex-wrap">
+      <a href="/about" className={line}>
+        About Us
+      </a>
+      {hasTeam && (
+        <a href="/team" className={line}>
+          Meet the Team
+        </a>
+      )}
+    </div>
+  );
+  if (!b.about.image) {
+    // No photo worth showing: the story beside the office's own facts, so
+    // neither half of the band is empty.
+    return (
+      <section className={`${pad} bg-surface`}>
+        <div className={`${wrap} grid gap-12 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.75fr)] lg:gap-20`}>
+          <div className="min-w-0">
+            <Eyebrow>About {b.shortName}</Eyebrow>
+            <h2 className={h2}>{b.about.title}</h2>
+            {text.slice(0, 2).map((t) => (
+              <p key={t} className={`mt-6 ${lead}`}>
+                {t}
+              </p>
+            ))}
+            <Values values={list(b.about.values)} />
+            {links}
+          </div>
+          <dl className="grid content-start gap-0 self-start rounded-lg border border-line bg-white px-6 py-2 sm:px-8">
+            {[
+              ['Office', `${b.address}, ${b.town}, ${b.state}${b.zip ? ` ${b.zip}` : ''}`],
+              ['Phone', b.phone],
+              b.since && ['Since', String(b.since)],
+              towns.length > 1 && ['Serving', towns.join(', ')],
+              b.license && ['License', b.license],
+            ]
+              .filter(Boolean)
+              .map(([label, value]) => (
+                <div key={label} className="grid gap-1 border-b border-line py-4 last:border-b-0">
+                  <dt className="text-[12px] font-bold uppercase tracking-[0.16em] text-muted">{label}</dt>
+                  <dd className="m-0 text-[16px] font-semibold leading-snug text-ink">{value}</dd>
+                </div>
+              ))}
+          </dl>
+        </div>
+      </section>
+    );
+  }
   return (
     <section className={pad}>
       <div className={`${wrap} grid items-center gap-12 lg:grid-cols-2 lg:gap-24`}>
-        {b.about.image && (
-          <Img
-            className="aspect-[4/3] w-full rounded-[32px] object-cover lg:aspect-[6/5]"
-            src={b.about.image}
-            alt={b.about.imageAlt || ''}
-            sizes="(max-width: 1024px) 100vw, 46vw"
-          />
-        )}
-        <div className={`min-w-0 ${b.about.image ? '' : 'lg:col-span-2 lg:max-w-3xl'}`}>
+        <Img className="aspect-[4/3] w-full rounded-lg object-cover" src={b.about.image} alt={b.about.imageAlt || ''} sizes="(max-width: 1024px) 100vw, 46vw" />
+        <div className="min-w-0">
           <Eyebrow>About {b.shortName}</Eyebrow>
           <h2 className={h2}>{b.about.title}</h2>
           {text[0] && <p className={`mt-6 ${lead}`}>{text[0]}</p>}
           <Values values={list(b.about.values)} />
-          <div className="mt-9 grid gap-3 sm:flex sm:flex-wrap">
-            <a href="/about" className={line}>
-              About Us
-            </a>
-            {hasTeam && (
-              <a href="/team" className={line}>
-                Meet the Team
-              </a>
-            )}
-          </div>
+          {links}
         </div>
       </div>
     </section>
@@ -685,18 +795,19 @@ function AboutTeaser({ b, hasTeam }) {
 function Reviews({ b, className = '' }) {
   const reviews = list(b.reviews);
   const rated = b.rating && b.reviewCount;
-  if (!reviews.length && !rated) return null;
+  // A rating with no words to quote is the stats strip's, not a panel of its own.
+  if (!reviews.length) return null;
   const [first, ...rest] = reviews;
   return (
     <section className={`pb-[clamp(4rem,8vw,6.5rem)] ${className}`}>
       <div className={wrap}>
-        <div className="grid gap-10 rounded-[28px] bg-surface px-6 py-10 sm:px-10 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-20 lg:p-16">
+        <div className="grid gap-10 rounded-lg bg-surface px-6 py-10 sm:px-10 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-20 lg:p-16">
           <div>
             <Eyebrow>Client reviews</Eyebrow>
             {rated ? (
               <>
                 <p className="flex items-center gap-4 lg:block">
-                  <strong className="font-heading text-[clamp(3rem,6vw,4.5rem)] font-normal leading-none text-primary">{Number(b.rating).toFixed(1)}</strong>
+                  <strong className="font-heading font-display text-[clamp(3rem,6vw,4.5rem)] leading-none text-primary">{Number(b.rating).toFixed(1)}</strong>
                   <span className="grid gap-1.5 lg:mt-4">
                     <Stars value={b.rating} size={18} />
                     <span className="text-base text-muted">from {b.reviewCount.toLocaleString('en-US')} Google reviews</span>
@@ -742,21 +853,23 @@ function Reviews({ b, className = '' }) {
 
 function Cta({ b, tel, ctaLabel, title = 'Ready to talk it through?' }) {
   return (
-    <section className="pb-[clamp(4rem,8vw,6.5rem)]">
-      <div className={wrap}>
-        <div className="flex flex-col gap-8 rounded-[28px] bg-primary px-6 py-10 text-white sm:px-10 lg:flex-row lg:items-center lg:justify-between lg:gap-12 lg:px-16 lg:py-14">
-          <div className="min-w-0 max-w-2xl">
-            <h2 className="font-heading text-[clamp(1.6rem,1.2rem+1.6vw,2.3rem)] font-normal leading-tight [text-wrap:balance]">{title}</h2>
-            {b.cta?.text && <p className="mt-3 text-[17px] leading-[1.6] text-white/80 sm:text-lg">{b.cta.text}</p>}
-          </div>
-          <div className="grid flex-none gap-3 sm:flex sm:flex-wrap">
-            <a href="/contact" className={white}>
-              {ctaLabel} <ArrowRight size={18} aria-hidden="true" />
-            </a>
-            <a href={tel} className={ghost}>
-              <Phone size={17} aria-hidden="true" /> {b.phone}
-            </a>
-          </div>
+    <section className="relative isolate overflow-hidden bg-primary-deep text-white">
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_100%_0%,color-mix(in_srgb,var(--primary)_60%,transparent),transparent_55%)]"
+      />
+      <div className={`${wrap} flex flex-col gap-8 py-14 lg:flex-row lg:items-center lg:justify-between lg:gap-12 lg:py-20`}>
+        <div className="min-w-0 max-w-2xl">
+          <h2 className="font-heading font-display-2 text-[clamp(1.7rem,1.2rem+1.8vw,2.5rem)] leading-tight [text-wrap:balance]">{title}</h2>
+          {b.cta?.text && <p className="mt-3 text-[17px] leading-[1.6] text-white/80 sm:text-lg">{b.cta.text}</p>}
+        </div>
+        <div className="grid flex-none gap-3 sm:flex sm:flex-wrap">
+          <a href="/contact" className={white}>
+            {ctaLabel} <ArrowRight size={18} aria-hidden="true" />
+          </a>
+          <a href={tel} className={ghost}>
+            <Phone size={17} aria-hidden="true" /> {b.phone}
+          </a>
         </div>
       </div>
     </section>
@@ -782,7 +895,7 @@ function Faq({ items, className = '' }) {
 function OfficeCard({ b, tel, ctaLabel, k }) {
   const hours = list(b.hours);
   return (
-    <aside className="rounded-[24px] border border-line bg-white p-6 sm:p-8">
+    <aside className="rounded-lg border border-line bg-white p-6 sm:p-8">
       <p className="font-heading text-xl text-ink">Talk it through with {k.talk}</p>
       <a href={tel} className="mt-4 flex min-h-11 items-center gap-3 font-bold text-primary no-underline hover:underline">
         <Phone size={18} className="text-accent" aria-hidden="true" /> {b.phone}
@@ -811,6 +924,7 @@ function HomePage(props) {
   return (
     <>
       <Hero {...props} />
+      <Stats b={b} />
       <Affiliations b={b} k={k} />
       <Services b={b} groups={groups} />
       <Process b={b} />
@@ -879,12 +993,12 @@ function ServicePage(props) {
             </div>
             <ul className="grid gap-4 md:grid-cols-2 lg:gap-5">
               {covers.map((c) => (
-                <li key={c.title} className="flex gap-4 rounded-[20px] border border-line p-6 lg:p-7">
+                <li key={c.title} className="flex gap-4 rounded-lg border border-line p-6 lg:p-7">
                   <span className="grid size-9 flex-none place-items-center rounded-full bg-surface text-accent">
                     <Check size={18} strokeWidth={2} aria-hidden="true" />
                   </span>
                   <div className="min-w-0">
-                    <h3 className="font-heading text-lg font-normal leading-snug text-ink sm:text-xl">{c.title}</h3>
+                    <h3 className="font-heading font-display-2 text-lg leading-snug text-ink sm:text-xl">{c.title}</h3>
                     <p className="mt-1.5 text-base leading-[1.6] text-muted">{c.text}</p>
                   </div>
                 </li>
@@ -909,7 +1023,7 @@ function ServicePage(props) {
       {related.length > 0 && (
         <section className={pad}>
           <div className={wrap}>
-            <h2 className="mb-7 font-heading text-[clamp(1.4rem,1.1rem+1vw,1.75rem)] font-normal text-ink">
+            <h2 className="mb-7 font-heading font-display-2 text-[clamp(1.4rem,1.1rem+1vw,1.75rem)] text-ink">
               {group?.label ? `More for ${group.label.toLowerCase()}` : 'More services'}
             </h2>
             <ul className="grid gap-4 md:grid-cols-3 lg:gap-5">
@@ -918,7 +1032,7 @@ function ServicePage(props) {
                 return (
                   <li key={o.slug}>
                     <a href={`/services/${o.slug}`} className={`group flex h-full items-center gap-4 p-5 text-ink no-underline ${cardLink}`}>
-                      <span className="grid size-12 flex-none place-items-center rounded-full bg-surface text-primary">
+                      <span className="grid size-12 flex-none place-items-center rounded-md bg-surface text-primary">
                         <RIcon size={24} strokeWidth={1.25} aria-hidden="true" />
                       </span>
                       <span className="grid min-w-0 flex-1 gap-0.5">
@@ -959,13 +1073,13 @@ function TeamPage(props) {
           {team.map((p) => (
             <li key={p.name} className="min-w-0">
               {p.image ? (
-                <Img className="aspect-[4/5] w-full rounded-[24px] bg-surface object-cover object-top" src={p.image} alt={p.imageAlt || p.name} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+                <Img className="aspect-[4/5] w-full rounded-lg bg-surface object-cover object-top" src={p.image} alt={p.imageAlt || p.name} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
               ) : (
-                <span aria-hidden="true" className="grid aspect-[4/5] w-full place-items-center rounded-[24px] bg-surface font-heading text-6xl text-primary/70">
+                <span aria-hidden="true" className="grid aspect-[4/5] w-full place-items-center rounded-lg bg-surface font-heading text-6xl text-primary/70">
                   {initials(p.name)}
                 </span>
               )}
-              <h2 className="mt-5 font-heading text-[1.35rem] font-normal leading-snug text-ink">{p.name}</h2>
+              <h2 className="mt-5 font-heading font-display-2 text-[1.35rem] leading-snug text-ink">{p.name}</h2>
               <p className="mt-1 text-[13px] font-bold uppercase tracking-[0.14em] text-accent">{p.role}</p>
               {p.bio && <p className="mt-3 text-base leading-[1.6] text-muted">{p.bio}</p>}
             </li>
@@ -1000,11 +1114,11 @@ function AboutPage(props) {
             ))}
           </div>
           <div className="min-w-0">
-            {list(b.about.values).length > 0 && <h2 className="font-heading text-2xl font-normal text-ink">What to expect</h2>}
+            {list(b.about.values).length > 0 && <h2 className="font-heading font-display-2 text-2xl text-ink">What to expect</h2>}
             <Values values={list(b.about.values)} />
             {area.length > 0 && (
               <div className="mt-10">
-                <h2 className="mb-4 font-heading text-2xl font-normal text-ink">Where we work</h2>
+                <h2 className="mb-4 font-heading font-display-2 text-2xl text-ink">Where we work</h2>
                 <ul className="flex flex-wrap gap-2.5">
                   {area.map((t) => (
                     <li key={t} className="flex items-center gap-1.5 rounded-full bg-surface px-4 py-2 text-[15px] font-semibold text-ink">
@@ -1085,8 +1199,8 @@ function ContactPage(props) {
       <PageHero trail={[['/', 'Home'], [null, 'Contact']]} eyebrow={<Eyebrow>Contact</Eyebrow>} title={`Contact ${b.shortName}`} text={b.cta?.text} />
       <section className={pad}>
         <div className={`${wrap} grid gap-10 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.75fr)] lg:gap-16`}>
-          <div className="min-w-0 rounded-[28px] border border-line p-5 sm:p-8 lg:p-10">
-            <h2 className="mb-6 font-heading text-2xl font-normal text-ink">{ctaLabel}</h2>
+          <div className="min-w-0 rounded-lg border border-line p-5 sm:p-8 lg:p-10">
+            <h2 className="mb-6 font-heading font-display-2 text-2xl text-ink">{ctaLabel}</h2>
             <EnquiryForm
               b={b}
               submitLabel={ctaLabel}
@@ -1122,7 +1236,7 @@ function ContactPage(props) {
               ))}
             </ul>
             {hours.length > 0 && (
-              <div className="mt-8 rounded-[20px] bg-surface p-6">
+              <div className="mt-8 rounded-lg bg-surface p-6">
                 <h2 className="mb-3 text-[13px] font-bold uppercase tracking-[0.16em] text-muted">Office Hours</h2>
                 <dl className="grid gap-2 text-base">
                   {hours.map(([day, time]) => (
@@ -1158,8 +1272,8 @@ function Footer({ b, nav, tel }) {
         className={`${wrap} grid gap-10 pb-10 pt-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_repeat(2,minmax(0,1fr))] lg:gap-10 lg:pt-20`}
       >
         <div className="min-w-0 sm:col-span-2 lg:col-span-1">
-          <a href="/" className="inline-flex min-h-11 max-w-[240px] items-center no-underline" aria-label={`${b.name} home`}>
-            <Mark b={b} className="max-h-12" />
+          <a href="/" className="inline-flex min-h-11 max-w-full items-center no-underline" aria-label={`${b.name} home`}>
+            <BrandLogo b={b} ground="#f5f6f8" textClass="text-ink" />
           </a>
           {b.tagline && <p className="mt-4 max-w-xs leading-relaxed text-muted">{b.tagline}</p>}
           <p className="mt-4 leading-relaxed text-ink">
@@ -1237,6 +1351,8 @@ export default function Professional({ b, path = '' }) {
         '--muted': 'color-mix(in srgb, var(--ink) 70%, #fff)',
         '--cream': 'var(--surface)',
         '--line': 'color-mix(in srgb, var(--ink) 12%, #fff)',
+        '--primaryDeep': 'color-mix(in srgb, var(--primary) 72%, #000)',
+        ...displayVars(b.brand),
         ...brandVars(b.brand),
       }}
     >
