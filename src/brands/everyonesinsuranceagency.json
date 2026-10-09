@@ -1,0 +1,211 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "insurance",
+  "name": "Everyone's Insurance Agency, Inc.",
+  "shortName": "Everyone's Insurance",
+  "tagline": "Multiple companies competing for your business",
+  "phone": "(281) 640-1684",
+  "email": "service@everyonesinsurance.com",
+  "address": "651 N Egret Bay Blvd, Suite K",
+  "town": "League City",
+  "state": "TX",
+  "zip": "77573",
+  "since": 2010,
+  "rating": 4.8,
+  "reviewCount": 260,
+  "hours": [["Mon – Sat", "9 AM – 9 PM"], ["Sunday", "Closed"]],
+  "cta": {
+    "label": "Get a Quote",
+    "text": "Stop by, give us a call, or complete the quote request form and we will begin the quoting process."
+  },
+  "brand": {
+    "primary": "#081359",
+    "primaryDeep": "#050b2e",
+    "accent": "#c2432d",
+    "ink": "#161a27",
+    "muted": "#565d6e",
+    "surface": "#f6f6f8",
+    "cream": "#eceef4",
+    "line": "#dcdfe8",
+    "heading": "'Jost', 'Futura', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/everyonesinsuranceagency/logo.webp",
+    "logoWidth": 190
+  },
+  "hero": {
+    "eyebrow": "League City since 2010",
+    "title": "Why another insurance company?",
+    "lead": "We started Everyone's Insurance in 2010 because we felt that there was a better way. We have longer hours, we represent multiple companies that all compete for your business, and our staff is handpicked and empowered to treat you as they would want to be treated.",
+    "image": "/brands/everyonesinsuranceagency/hero",
+    "imageAlt": "A row of closed doors along a patterned wall",
+    "points": ["Multiple companies competing", "Sales open until 9 PM, Monday to Saturday", "Serving all of Texas"]
+  },
+  "overview": {
+    "title": "The types of insurance you can request a quote on.",
+    "text": "Pick the coverage you need, or call the office and talk it through with an agent."
+  },
+  "audiences": { "individuals": "Individuals & Families", "businesses": "Businesses & Property" },
+  "services": [
+    {
+      "slug": "auto",
+      "title": "Auto Insurance",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Quoted across the companies we represent.",
+      "text": "Auto is one of the types of insurance you can ask us to quote. We represent multiple companies and let them compete for your business.",
+      "lead": "Tell us you need auto coverage, by phone, in the office or on the quote request form, and we begin the quoting process with the companies we represent.",
+      "image": "/brands/everyonesinsuranceagency/auto",
+      "imageAlt": "A car key resting on the body of a car"
+    },
+    {
+      "slug": "home",
+      "title": "Home Insurance",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Quoted across the companies we represent.",
+      "text": "Home is one of the types of insurance you can ask us to quote, with more than one company competing on the price.",
+      "lead": "Ask for a home quote by phone, in the office or on the quote request form, and we shop it among the companies we represent.",
+      "image": "/brands/everyonesinsuranceagency/home",
+      "imageAlt": "A single-storey house with a car parked in front of it"
+    },
+    {
+      "slug": "renters",
+      "title": "Renters Insurance",
+      "audience": "individuals",
+      "icon": "key",
+      "summary": "Quoted across the companies we represent.",
+      "text": "Renters coverage is one of the types of insurance you can check on our quote request form.",
+      "lead": "Renting rather than buying still leaves you with belongings and liability to cover. Tell us and we will quote it."
+    },
+    {
+      "slug": "life",
+      "title": "Life Insurance",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Quoted across the companies we represent.",
+      "text": "Life is one of the types of insurance you can ask us to quote, from the companies we are appointed with.",
+      "lead": "Ask about life coverage by phone, in the office or on the quote request form, and we begin the quoting process."
+    },
+    {
+      "slug": "health",
+      "title": "Health Insurance",
+      "audience": "individuals",
+      "icon": "stethoscope",
+      "summary": "Quoted across the companies we represent.",
+      "text": "Health is one of the types of insurance listed on our quote request form.",
+      "lead": "Tell us you are looking at health coverage and we will take it from there, in the office or over the phone."
+    },
+    {
+      "slug": "motorcycle",
+      "title": "Motorcycle Insurance",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "Quoted across the companies we represent.",
+      "text": "Motorcycle is one of the types of insurance you can check on our quote request form.",
+      "lead": "Ask us to quote the bike the same way you would a car, by phone, in the office or on the form.",
+      "image": "/brands/everyonesinsuranceagency/motorcycle",
+      "imageAlt": "A rider on a cruiser motorcycle on an open highway"
+    },
+    {
+      "slug": "rv-atv-boat",
+      "title": "RV, ATV and Boat",
+      "audience": "individuals",
+      "icon": "anchor",
+      "summary": "Quoted across the companies we represent.",
+      "text": "RV, ATV and boat coverage is one of the options on our quote request form.",
+      "lead": "Recreational vehicles and watercraft are quoted the same way as everything else we write, with the companies competing."
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial and Business",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Quoted across the companies we represent.",
+      "text": "Commercial and business insurance is one of the types you can request a quote on.",
+      "lead": "Tell us what the business does and what needs covering, and we begin the quoting process with the companies we represent.",
+      "image": "/brands/everyonesinsuranceagency/commercial",
+      "imageAlt": "A shop owner turning the open sign in the window"
+    },
+    {
+      "slug": "rental-property",
+      "title": "Rental Property",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Quoted across the companies we represent.",
+      "text": "Rental property is one of the types of insurance listed on our quote request form.",
+      "lead": "A property you rent out is quoted differently from the home you live in. Tell us about it and we will shop it."
+    }
+  ],
+  "process": {
+    "title": "How to start",
+    "text": "Three ways in, and the same quoting process behind all of them.",
+    "steps": [
+      { "title": "Stop by, call or write", "text": "Come to the office Monday to Friday, call (281) 640-1684, or complete the quote request form." },
+      { "title": "We begin the quoting process", "text": "Tell us the type of insurance you need along with your name, address, email, phone and date of birth." },
+      { "title": "The companies compete", "text": "We represent multiple companies that all compete for your business." }
+    ]
+  },
+  "about": {
+    "title": "Why another insurance company?",
+    "text": [
+      "We started Everyone's Insurance in 2010 because we felt that there was a better way. We aimed to give the lowest prices, provide great customer service, and be an advocate for the customer. Yeah, we had heard that before, too.",
+      "So we set out to be driven by a simple question: with what kind of insurance company would we want to do business, and how far could we go to be that company?",
+      "Everything we do, from the inside out, is about redefining how insurance is approached in a more customer driven model. We have longer hours. We represent multiple companies that all compete for your business. We always give the lowest price among the best companies available. Our amazing staff is handpicked and empowered to treat you as they would want to be treated.",
+      "Since we all have heard this before, we know that the only way to be different is to actually prove it every day. This is who we are and this is why Everyone's Insurance was created."
+    ],
+    "values": [
+      { "title": "Longer hours", "text": "Sales takes calls Monday through Saturday until 9 PM, well past the hour most offices close." },
+      { "title": "Multiple companies", "text": "We represent multiple companies that all compete for your business." },
+      { "title": "Handpicked staff", "text": "Our staff is handpicked and empowered to treat you as they would want to be treated." }
+    ]
+  },
+  "faqs": [
+    { "q": "When can I reach you?", "a": "Call Monday through Saturday. We are available 9 AM to 5 PM for customer service and 9 AM to 9 PM for sales." },
+    { "q": "Can I come to the office?", "a": "Yes. Please feel free to stop by Monday through Friday, 9 AM to 5 PM, at 651 N Egret Bay Blvd, Suite K in League City." },
+    { "q": "Do you only cover League City?", "a": "No. We serve all of Texas. League City is where our physical location is." },
+    { "q": "How do I start a quote?", "a": "Stop by, give us a call, or complete the quote request form and we will begin the quoting process." },
+    { "q": "What do you need from me for a quote?", "a": "The type of insurance you are asking about, along with your name, address, email, phone and date of birth." }
+  ],
+  "facts": [
+    {
+      "heading": "Hours",
+      "items": [
+        "Sales: Monday – Saturday, 9 AM – 9 PM",
+        "Customer service: Monday – Saturday, 9 AM – 5 PM",
+        "Office visits: Monday – Friday, 9 AM – 5 PM"
+      ]
+    },
+    {
+      "heading": "Reaching the office",
+      "items": [
+        "Phone: (281) 640-1684",
+        "Fax: (281) 617-3751",
+        "Email: service@everyonesinsurance.com",
+        "651 N Egret Bay Blvd, Suite K, League City, Texas 77573"
+      ]
+    },
+    {
+      "heading": "Where we write",
+      "text": "While we serve all of Texas, our physical location is in League City."
+    },
+    {
+      "heading": "Types of insurance we quote",
+      "text": "Auto, home, renters, rental property, commercial and business, life, health, motorcycle, and RV, ATV and boat."
+    },
+    {
+      "heading": "What the quote request form asks for",
+      "items": [
+        "The type of insurance requested: auto, home, renters, rental property, commercial and business, life, health, motorcycle, RV, ATV and boat, or other",
+        "Your name, address, email address, phone and date of birth",
+        "A message about what you need covered",
+        "Every field on the form is required"
+      ]
+    },
+    {
+      "heading": "Something else to insure",
+      "text": "The quote request form carries an other option, so a type of insurance not on the list is still something to ask us about."
+    }
+  ]
+}

@@ -1,0 +1,421 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Liberty Hill Bookkeeping & Tax Services",
+  "shortName": "Liberty Hill Bookkeeping & Tax",
+  "tagline": "Payroll, bookkeeping and tax for Liberty Hill businesses and families",
+  "phone": "(512) 548-6535",
+  "email": "info@lhbts.com",
+  "address": "925 Main Street",
+  "town": "Liberty Hill",
+  "state": "TX",
+  "zip": "78642",
+  "since": 2011,
+  "license": "The Blessing Junkie, LLC",
+  "rating": 4.4,
+  "reviewCount": 47,
+  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Tell us what you need help with and we will set up a time to go through it with you."
+  },
+  "brand": {
+    "primary": "#1e2a38",
+    "primaryDeep": "#121a24",
+    "accent": "#9a7b3c",
+    "ink": "#18212b",
+    "muted": "#5a6472",
+    "surface": "#f7f5f0",
+    "cream": "#efeae0",
+    "line": "#e3ddd1",
+    "heading": "'EB Garamond', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/libertyhillbookkeepingtax/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Liberty Hill, Texas",
+    "title": "Accounting done right. The first time.",
+    "lead": "Whether you are a business or an individual with too much on your plate, we handle your finances, taxes and much more so you can focus on growing.",
+    "image": "/brands/libertyhillbookkeepingtax/team-office",
+    "imageAlt": "The Liberty Hill Bookkeeping & Tax Services team together in the office",
+    "points": ["Locally owned and operated since 2011", "Open year round, not only at tax time", "Small and medium sized business specialists"]
+  },
+  "overview": {
+    "title": "Payroll, bookkeeping and tax, handled by one local team.",
+    "text": "Pick a service to see what it covers and what it starts at, or call and talk it through with our team."
+  },
+  "audiences": { "individuals": "Individuals", "businesses": "Businesses" },
+  "services": [
+    {
+      "slug": "individual-tax-returns",
+      "title": "Individual Tax Returns",
+      "audience": "individuals",
+      "icon": "receipt",
+      "summary": "1040s, Schedule C returns and extensions.",
+      "text": "Individual returns prepared by tax professionals who stay current on state, federal and local tax, including returns with a Schedule C.",
+      "lead": "Our tax pros are experienced in every tax situation, and they work through your return looking for every credit and deduction you are entitled to.",
+      "image": "/brands/libertyhillbookkeepingtax/ledger",
+      "imageAlt": "A spreadsheet of figures beside a calculator and a pen",
+      "covers": [
+        { "title": "Individual returns", "text": "Starting at $300 for an individual return." },
+        { "title": "Returns with a Schedule C", "text": "Starting at $500 where you are reporting self employment or sole proprietor income." },
+        { "title": "Tax extensions", "text": "A tax extension is $25." },
+        { "title": "Individual tax estimates", "text": "An individual tax estimate is $250 per return." }
+      ],
+      "questions": [
+        { "q": "Who do I contact about an individual return?", "a": "Prices vary depending on your individual needs. Reach out to taxdepartment@lhbts.com for inquiries." },
+        { "q": "Can I send my documents before I come in?", "a": "Yes. The contact form on our site lets you upload source or tax documents ahead of time." }
+      ]
+    },
+    {
+      "slug": "financial-and-planning-advice",
+      "title": "Financial & Planning Advice",
+      "audience": "individuals",
+      "icon": "chart",
+      "summary": "401(k)s, HSAs, LLCs and what fits you.",
+      "text": "With our numerous years of experience, we are well versed in what is best for you, from 401(k)s and LLCs to HSAs and much more.",
+      "lead": "Decisions about retirement accounts, health savings and how you hold your business all land on the same tax return, so we look at them together rather than one at a time.",
+      "covers": [
+        { "title": "Retirement accounts", "text": "What a 401(k) means for you and how it sits alongside the rest of your finances." },
+        { "title": "Health savings accounts", "text": "How an HSA works and where it fits." },
+        { "title": "How you hold your business", "text": "Whether an LLC is the right structure for what you are doing." },
+        { "title": "Year round access", "text": "We are here outside of tax season, so you are not waiting until filing time to ask." }
+      ]
+    },
+    {
+      "slug": "notary-services",
+      "title": "Notary Services",
+      "audience": "individuals",
+      "icon": "stamp",
+      "summary": "Notarised signatures at the Main Street office.",
+      "text": "Notary services at our Main Street office, charged at $6 per signature.",
+      "lead": "Bring the document and your identification to the office on Main Street and we will notarise it while you wait.",
+      "covers": [
+        { "title": "Per signature", "text": "$6 per signature." },
+        { "title": "At the office", "text": "Handled at 925 Main Street during our open hours, Monday to Friday, 9 AM to 5 PM." }
+      ]
+    },
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping",
+      "audience": "businesses",
+      "icon": "book",
+      "summary": "Posting and reconciling, on your schedule.",
+      "text": "Weekly, monthly, quarterly, whatever your business needs. We post and reconcile all business bank accounts, loans, HUDs and assets, and close every month with a profit and loss statement.",
+      "lead": "We keep your books in tip top shape by posting and reconciling them, paying special attention to write offs, distributions and even fraudulent charges.",
+      "image": "/brands/libertyhillbookkeepingtax/office",
+      "imageAlt": "The Liberty Hill Bookkeeping & Tax Services storefront on Main Street",
+      "covers": [
+        { "title": "On your schedule", "text": "Weekly, monthly or quarterly, whatever your business needs." },
+        { "title": "Accounts reconciled", "text": "All business bank accounts, loans, HUDs and assets posted and reconciled." },
+        { "title": "A monthly statement", "text": "At the end of every month we provide you with a profit and loss statement." },
+        { "title": "What we watch for", "text": "Write offs, distributions and fraudulent charges as we work through the books." },
+        { "title": "Rate", "text": "$100 per hour." }
+      ]
+    },
+    {
+      "slug": "payroll",
+      "title": "Payroll",
+      "audience": "businesses",
+      "icon": "banknote",
+      "summary": "Payroll run and payroll taxes paid in.",
+      "text": "No matter your company's size, we run your payroll, pay in your federal and state taxes and handle contributions such as a 401(k).",
+      "lead": "Payroll is run for companies of any size, with the federal and state tax paid in on your behalf and the quarterly and annual reports filed when they fall due.",
+      "covers": [
+        { "title": "Running payroll", "text": "Starting at $100 a month, with prices varying depending on company size." },
+        { "title": "Quarterly reports", "text": "941 reports are $50 per quarter and TWC reports are $50 per quarter." },
+        { "title": "Annual reports", "text": "940 reports are $75 per year." },
+        { "title": "W-2s, W-3s and 1099s", "text": "An $80 fee plus $5 each." },
+        { "title": "Contributions", "text": "Contributions such as a 401(k) handled as part of the payroll run." }
+      ]
+    },
+    {
+      "slug": "corporate-tax-returns",
+      "title": "Corporate Tax Returns",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "1120s, 1099s and corporate estimates.",
+      "text": "Our team of tax specialists can handle it all. 1040s, 1120s, 1099s, you name it, we have you covered, and we use our expertise to get you the best possible scenario.",
+      "lead": "With the help of our small business tax professionals you get insight into your business's financial status and how it can become more tax efficient, working closely with your tax professional and account executive to decide which actions are best for your business.",
+      "covers": [
+        { "title": "Corporate returns", "text": "Starting at $1,000 per return. Please request a quote." },
+        { "title": "Corporate tax estimates", "text": "Starting at $350 per return." },
+        { "title": "The forms", "text": "1040s, 1120s, 1099s and the rest of what a business files." },
+        { "title": "A department of its own", "text": "Corporate tax is run as its own department under Emi McFeron." }
+      ]
+    },
+    {
+      "slug": "sales-tax-and-use",
+      "title": "Sales Tax & Use",
+      "audience": "businesses",
+      "icon": "store",
+      "summary": "Certificate applied for, reports filed.",
+      "text": "We will happily apply for your sales tax and use certificate, file your sales tax and use reports to the Texas Comptroller, and pay in the tax owed on your behalf.",
+      "lead": "From the certificate through to the filing and the payment, sales tax and use is handled end to end so nothing is missed against a Comptroller deadline.",
+      "covers": [
+        { "title": "The certificate", "text": "We apply for your sales tax and use certificate." },
+        { "title": "The filing", "text": "Reports filed to the Texas Comptroller." },
+        { "title": "The payment", "text": "We pay in the tax owed on your behalf." },
+        { "title": "Rate", "text": "$50 per return." }
+      ]
+    },
+    {
+      "slug": "texas-franchise-returns",
+      "title": "Texas Franchise Returns",
+      "audience": "businesses",
+      "icon": "landmark",
+      "summary": "Filed annually with the Comptroller.",
+      "text": "They are due annually. We file your business's Texas Franchise Return with the Texas Comptroller.",
+      "lead": "The Texas Franchise Return comes around every year, and we file yours with the Texas Comptroller on the short or long form, whichever your business needs.",
+      "covers": [
+        { "title": "Short form", "text": "$100 per return." },
+        { "title": "Long form", "text": "$150 per return." },
+        { "title": "Extension", "text": "$25 per extension." }
+      ]
+    },
+    {
+      "slug": "llc-set-up",
+      "title": "Limited Liability Company Set Up",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Filed with the state, EIN and agreement.",
+      "text": "Protect yourself by setting up an LLC. We take care of setting it up with the state, obtaining an Employer Identification Number and providing you with a complete Company Agreement.",
+      "lead": "Setting up an LLC is handled as one piece of work, from the filing with the state through to the paperwork you keep, so you are not chasing three separate things at once.",
+      "covers": [
+        { "title": "Filed with the state", "text": "We set up your LLC with the state of Texas." },
+        { "title": "Employer Identification Number", "text": "We obtain the EIN for the new entity." },
+        { "title": "Company Agreement", "text": "You are provided with a complete Company Agreement." },
+        { "title": "Price", "text": "$1,250, which includes the mandatory BOI Report. $1,300 with a DBA." }
+      ]
+    },
+    {
+      "slug": "llc-changes-and-updates",
+      "title": "LLC Changes & Updates",
+      "audience": "businesses",
+      "icon": "key",
+      "summary": "Members, addresses, entity type, names.",
+      "text": "Need to add or remove a member from your LLC, change your address, update your entity type or change your name? Whatever changes you need to make to your LLC, we can do it.",
+      "lead": "An LLC rarely stays exactly as it was filed. Members come and go, addresses move and names change, and each of those is a filing somebody has to make.",
+      "covers": [
+        { "title": "Members", "text": "Adding or removing a member from the LLC." },
+        { "title": "Address", "text": "Changing the address the state holds for the entity." },
+        { "title": "Entity type", "text": "Updating the entity type." },
+        { "title": "Name", "text": "Changing the name of the company." }
+      ],
+      "questions": [
+        { "q": "What does a change cost?", "a": "Prices vary depending on what you may need. Please reach out to sidney@lhbts.com for a detailed estimate." }
+      ]
+    },
+    {
+      "slug": "reinstatements-and-dissolutions",
+      "title": "Entity Reinstatements & Dissolutions",
+      "audience": "businesses",
+      "icon": "scale",
+      "summary": "Back in good standing, or closed properly.",
+      "text": "We are happy to reinstate or dissolve your entity, whichever your situation calls for.",
+      "lead": "Whether the entity needs bringing back into good standing or closing down properly, the filings are handled for you.",
+      "covers": [
+        { "title": "Reinstatement", "text": "Starting at $600." },
+        { "title": "Dissolution", "text": "Starting at $600." },
+        { "title": "What moves the price", "text": "Prices vary depending on what needs to be done to get your business in good standing." }
+      ]
+    },
+    {
+      "slug": "registered-agent",
+      "title": "Registered Agent Services",
+      "audience": "businesses",
+      "icon": "shield",
+      "summary": "We receive your notices and tell you.",
+      "text": "Did you know you are required to have a registered agent? We receive all correspondence on your behalf and notify you of any significant notices.",
+      "lead": "Texas requires every entity to name a registered agent. We act as yours, take in the correspondence and tell you when something significant arrives.",
+      "covers": [
+        { "title": "Set up", "text": "$126 to set up." },
+        { "title": "Annual renewal", "text": "$50 a year." },
+        { "title": "Your correspondence", "text": "We receive all correspondence on your behalf and notify you of anything significant." }
+      ]
+    },
+    {
+      "slug": "business-consultations",
+      "title": "Business Consultations",
+      "audience": "businesses",
+      "icon": "handshake",
+      "summary": "Advice built on where you stand now.",
+      "text": "Based on your business's current standing, our professionals advise, provide information and give you insight and recommendations to help you reach your goals.",
+      "lead": "Our small business experts can handle anything you can throw at us, and if it is something we have not seen before, we are going to figure it out.",
+      "covers": [
+        { "title": "Where you stand", "text": "The conversation starts from your business's current standing rather than a template." },
+        { "title": "Insight and recommendations", "text": "Information, insight and recommendations aimed at the goals you have set." },
+        { "title": "Rate", "text": "$100 per hour." }
+      ]
+    }
+  ],
+  "about": {
+    "title": "What we do is who we are",
+    "text": [
+      "Howdy. Liberty Hill Bookkeeping & Tax Services is a team of payroll, bookkeeping and tax professionals. We specialize in small to medium sized businesses, and our goal is to empower business owners and entrepreneurs to better manage the financial components of their business with our services.",
+      "We have been proudly serving Liberty Hill and surrounding areas since our establishment in 2011. We pride ourselves on being locally owned and operated. Our community is why we have been able to grow to the scale that we have.",
+      "Liberty Hill Bookkeeping & Tax Services was founded on the mission to serve our local businesses and individuals. After over a decade of service to our community, we are proud to say that we are still locally owned and operated, by Teri Reeves.",
+      "Our mission is to give each and every client the peace of mind they deserve."
+    ],
+    "image": "/brands/libertyhillbookkeepingtax/liberty-hill",
+    "imageAlt": "The Welcome to Liberty Hill, Texas mural",
+    "values": [
+      { "title": "Accuracy Guarantee", "text": "We commit 110% to each and every client. We aim for accuracy on your taxes, bookkeeping and payroll." },
+      { "title": "Grow Your Bottom Line", "text": "Our tax professionals help grow your bottom line by identifying every available credit and deduction, while ensuring accuracy in expense reporting." },
+      { "title": "Specialized in Small Business", "text": "Our small business experts can handle anything you can throw at us. If it is something we have not seen before, we are going to figure it out." },
+      { "title": "Year-Round Help", "text": "We are available year round so you can focus on your business's future. We are here and ready to help with whatever needs you may have." }
+    ]
+  },
+  "team": [
+    {
+      "name": "Teri Reeves",
+      "role": "Managing Member",
+      "bio": "Teri is the owner of the firm, which she opened in 2012. She discovered accounting in high school when she got her first job as a bookkeeper for a family friend, and what made her fall in love with accounting and tax work was the idea of helping people. She and her two children moved to Liberty Hill in 2006 and quickly realised they were home.",
+      "image": "/brands/libertyhillbookkeepingtax/teri",
+      "imageAlt": "Teri Reeves, Managing Member"
+    },
+    {
+      "name": "Jeff Reeves",
+      "role": "Manager",
+      "image": "/brands/libertyhillbookkeepingtax/jeff",
+      "imageAlt": "Jeff Reeves, Manager"
+    },
+    {
+      "name": "Emi McFeron",
+      "role": "Corporate Tax Department Manager",
+      "bio": "Emi was born and raised in Texas and graduated high school here in Liberty Hill. She started with the firm in 2015, grew into her responsibilities and fell in love with the job and with working with the clients, who have truly become her extended family. She is now the manager of the corporate tax department.",
+      "image": "/brands/libertyhillbookkeepingtax/emi",
+      "imageAlt": "Emi McFeron, Corporate Tax Department Manager"
+    },
+    {
+      "name": "Sidney Barcuch",
+      "role": "Account Executive, Special Projects & H.R. Manager",
+      "bio": "Sidney oversees Special Projects, which covers LLCs, and Human Resources, and is also an Account Executive. She graduated from the University of Texas at Austin in the fall of 2021 with a Bachelor's degree in Human Dimensions of Organizations and a minor in Business Administration, and she enjoys problem solving and providing catered solutions to issues the firm and its clients may have.",
+      "image": "/brands/libertyhillbookkeepingtax/sidney",
+      "imageAlt": "Sidney Barcuch, Account Executive and Special Projects and H.R. Manager"
+    },
+    {
+      "name": "Andrea Ogren",
+      "role": "Account Executive",
+      "bio": "Andrea does bookkeeping, runs payroll and prepares payroll and sales tax returns. She stepped in with very little experience in June of 2021 and has increased her speed, accuracy and knowledge in a very short time. She takes great pride in doing a job to the best of her ability with little or no mistakes.",
+      "image": "/brands/libertyhillbookkeepingtax/andrea",
+      "imageAlt": "Andrea Ogren, Account Executive"
+    },
+    {
+      "name": "Jessie Pritchett",
+      "role": "Account Executive",
+      "bio": "Jessie graduated from the University of Colorado, Colorado Springs in 2020 with a degree in History and an emphasis in elementary education, and spent three years teaching first grade before joining the team. She loves learning about your business and how she can help, and takes joy in helping you with your finances."
+    },
+    {
+      "name": "Liza Schnell",
+      "role": "Account Executive",
+      "bio": "Liza grew up in the Houston area and moved to Liberty Hill around 2012. She has worked in a variety of office roles, and bookkeeping and accounting have always interested her. She made a career of it in October of 2024 by joining the firm."
+    },
+    {
+      "name": "Jo Leen Simon",
+      "role": "Account Executive",
+      "bio": "Jo Leen joined the firm in 2025, bringing over 15 years of experience from a CPA firm in Austin where she specialized in office management, bookkeeping and tax preparation. That background gives her a strong foundation in helping individuals and small businesses stay financially organized and tax ready year round. She moved to Liberty Hill in 2020."
+    },
+    {
+      "name": "Josh Denning",
+      "role": "Account Executive",
+      "bio": "Josh joined the firm in 2025. He previously served as a General Manager for several businesses, where he focused on team development, operational efficiency and managing behind the scenes administrative functions. He holds both a Bachelor of Science and a Master of Arts in Theology. He enjoys building relationships, solving problems and helping businesses stay organized, compliant and financially informed."
+    },
+    {
+      "name": "Brandon Reeves",
+      "role": "Account Executive",
+      "bio": "Brandon comes from a background in retail and warehouse operations, where he developed strong organizational skills, attention to detail and a hands on approach. He applies that experience to supporting clients and keeping financial records accurate and organized."
+    },
+    {
+      "name": "Janetsa Hernandez",
+      "role": "Administrative Assistant",
+      "bio": "Janetsa joined the firm in July 2026. She earned her Master of Social Work from Aurora University and is a licensed mental health therapist, and before that she worked as an administrative assistant at the Graduate Admissions Office at the University of Texas at Tyler. She helps clients navigate their work with the firm, and being bilingual she assists the firm's Spanish speaking clients."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "What makes our tax professionals special",
+      "items": [
+        "Up to date on state, federal and local taxes",
+        "Specialized training in small business and individual taxes",
+        "Year-round access to our professional advice and assistance"
+      ]
+    },
+    {
+      "heading": "Who to email",
+      "items": [
+        "General enquiries: info@lhbts.com",
+        "Individual tax enquiries: taxdepartment@lhbts.com",
+        "LLC changes and updates: sidney@lhbts.com"
+      ]
+    },
+    {
+      "heading": "Reaching your account executive directly",
+      "items": [
+        "Teri Reeves, Managing Member: teri@lhbts.com",
+        "Jeff Reeves, Manager: jeff@lhbts.com",
+        "Emi McFeron, Corporate Tax Department Manager: emi@lhbts.com, ext. 111",
+        "Sidney Barcuch, Special Projects & H.R.: sidney@lhbts.com, ext. 106",
+        "Andrea Ogren: andrea@lhbts.com, ext. 103",
+        "Jessie Pritchett: jessie@lhbts.com, ext. 107",
+        "Liza Schnell: liza@lhbts.com, ext. 114",
+        "Jo Leen Simon: joleen@lhbts.com, ext. 117",
+        "Josh Denning: josh@lhbts.com, ext. 118",
+        "Brandon Reeves: brandon@lhbts.com, ext. 119",
+        "Janetsa Hernandez, Administrative Assistant: janetsa@lhbts.com, ext. 101"
+      ]
+    },
+    {
+      "heading": "About our prices",
+      "text": "The prices shown on our service pages are generally our starting prices, and they are not a comprehensive list. Should you choose to seek out services with us, please keep in mind that your invoiced amount may vary."
+    },
+    {
+      "heading": "Sending us documents",
+      "text": "If you would like to upload source or tax documents before we speak, the contact form on our site takes them."
+    },
+    {
+      "heading": "Se habla español",
+      "text": "Our site carries a Spanish page, and Janetsa Hernandez assists the firm's Spanish speaking clients."
+    },
+    {
+      "heading": "Your information",
+      "text": "We will not share or sell your information, including the phone number you give for SMS consent, to any third parties, affiliates or partners under any circumstances. Our privacy policy took effect on July 10, 2024."
+    },
+    {
+      "heading": "Text messages",
+      "text": "Clients may consent to text messages through our contact form, by verbal agreement, by email or in writing, and can opt out at any time by replying STOP."
+    },
+    {
+      "heading": "Seeing and correcting what we hold",
+      "text": "On request we will tell you whether we hold your personal information and give you reasonable access to update it, once we have verified your identity. Email info@lhbts.com or send a written request to the office."
+    },
+    {
+      "heading": "Equal service either way",
+      "text": "You have the right to receive equal service and pricing from us even if you exercise the privacy rights set out in our policy."
+    },
+    {
+      "heading": "Removing your data",
+      "text": "We honour client requests to remove data such as personal, account and billing information, taking it out of our production databases and shredding it through a trusted disposal service."
+    },
+    {
+      "heading": "How your information is kept safe",
+      "text": "We maintain administrative, technical and physical safeguards against loss, alteration and unauthorised access, and anything we collect from third party sources stays confidential within the firm. No transmission over the internet is completely secure, so absolute security cannot be guaranteed."
+    },
+    {
+      "heading": "The information we need from you",
+      "text": "Without the necessary information we cannot effectively provide our services, and a client who declines to provide it is still billed for the time spent on that client or project."
+    },
+    {
+      "heading": "Where we work",
+      "text": "Liberty Hill and the surrounding areas, from our office at 925 Main Street, since 2011."
+    },
+    {
+      "heading": "Hours of operation",
+      "text": "9 AM to 5 PM, Monday to Friday. Holidays may affect these hours."
+    }
+  ],
+  "serviceArea": ["Liberty Hill"]
+}
