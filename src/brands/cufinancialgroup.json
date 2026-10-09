@@ -1,0 +1,281 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "insurance",
+  "name": "CU Financial Group LLC",
+  "shortName": "CU Financial Group",
+  "tagline": "Insurance for credit unions and the members they serve",
+  "phone": "(800) 581-2428",
+  "email": "service@cufinancialgroup.com",
+  "address": "1095 W League City Pkwy",
+  "town": "League City",
+  "state": "TX",
+  "zip": "77573",
+  "since": 2004,
+  "hours": [["Mon – Sat", "7 AM – 8 PM"], ["Sunday", "Closed"]],
+  "cta": {
+    "label": "Get a Quote",
+    "text": "Call 800-581-2428 or email events@cufinancialgroup.com to talk through how CUFG can work with your credit union."
+  },
+  "brand": {
+    "primary": "#3c5e74",
+    "primaryDeep": "#2a4556",
+    "accent": "#f68d2d",
+    "ink": "#1c2730",
+    "muted": "#5c6973",
+    "surface": "#f5f7f8",
+    "cream": "#e9eef1",
+    "line": "#dde4e8",
+    "heading": "'Source Serif 4', Georgia, serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap",
+    "logo": "/brands/cufinancialgroup/logo.webp",
+    "logoWidth": 120
+  },
+  "hero": {
+    "eyebrow": "A credit union service organization",
+    "title": "Premium insurance products for credit union members, at competitive rates.",
+    "lead": "CU Financial Group was founded in 2004 to bring members auto, home, life and health insurance through carriers that, like credit unions, are dedicated to member service.",
+    "image": "/brands/cufinancialgroup/christian-marrder",
+    "imageAlt": "Christian Marrder, Principal and VP of Sales and Operations at CU Financial Group",
+    "points": [
+      "Founded in 2004",
+      "More than 19 top-rated carriers",
+      "Agency and Direct program models"
+    ]
+  },
+  "overview": {
+    "title": "Two insurance platform models, and the service center behind both.",
+    "text": "No two credit unions are the same, so CUFG works one on one with each partner credit union to craft a program with its members in mind."
+  },
+  "audiences": { "individuals": "Members", "businesses": "Credit Unions" },
+  "services": [
+    {
+      "slug": "agency-model",
+      "title": "Agency Model",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "For credit unions forming a CUSO.",
+      "text": "For credit unions that prefer to form a CUSO, hire an insurance agent, become licensed, and provide the facilities and training to implement the service.",
+      "lead": "The Agency Model works well for an organization that has a strong cross-selling culture and is ready to take the next big step in offering more services to its members.",
+      "covers": [
+        { "title": "What the credit union provides", "text": "Office space, equipment and licensed staff, and the opportunities to cross-sell insurance to members." },
+        { "title": "Income and the book of business", "text": "The credit union shares commission income and owns the insurance book of business." },
+        { "title": "What CUFG provides", "text": "A state-of-the-art insurance service center for insurance service needs, training and development of staff, and customized monthly reports." },
+        { "title": "Tools and carriers", "text": "Quoting tools, insurance platform software, online marketing materials, an agent CE credit platform, and relationships with more than 19 nationally top-rated insurance carriers." }
+      ]
+    },
+    {
+      "slug": "direct-model",
+      "title": "Direct Model",
+      "audience": "businesses",
+      "icon": "handshake",
+      "summary": "No cost to the credit union.",
+      "text": "The ideal model for a credit union that wants to offer additional products to its members quickly, at no cost to the credit union.",
+      "lead": "This model works well for a credit union that wants to offer additional value to its members quickly. A program can be implemented within 30 to 90 days.",
+      "covers": [
+        { "title": "What the credit union provides", "text": "An insurance link on the credit union website and quarterly data of credit union members." },
+        { "title": "Marketing compensation", "text": "The credit union is eligible to receive marketing compensation." },
+        { "title": "Who contacts the members", "text": "CUFG's professional insurance team contacts your members to offer insurance quotes." },
+        { "title": "What CUFG provides", "text": "A state-of-the-art insurance service center, customized monthly reports, and relationships with more than 19 nationally top-rated insurance carriers." }
+      ]
+    },
+    {
+      "slug": "insurance-service-center",
+      "title": "Insurance Service Center",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Quoting, service and monthly reporting.",
+      "text": "A state-of-the-art insurance service center handles the insurance service needs of the credit unions in the CUFG network.",
+      "lead": "Member offerings include in-person, phone and web services.",
+      "covers": [
+        { "title": "Training and development", "text": "Training and development of credit union staff working the insurance program." },
+        { "title": "Quoting and platform software", "text": "Quoting tools, insurance platform software and online marketing materials." },
+        { "title": "Monthly reporting", "text": "Customized monthly reports on the credit union's program." },
+        { "title": "Agent CE credits", "text": "An agent CE credit platform for licensed staff." }
+      ]
+    },
+    {
+      "slug": "life",
+      "title": "Life Insurance",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Term, whole and universal life.",
+      "text": "Quote and apply for life insurance from several highly rated companies, with plans for every budget and life stage.",
+      "lead": "The Quote and Apply tool lets you shop and compare the rates of several highly rated companies at your leisure, without pressure from salespeople. Once you have selected the plan that is right for you, complete and sign the application.",
+      "covers": [
+        { "title": "Term life", "text": "Protects you and your family for flexible periods of time from one to twenty years, with flexible premium payment options according to the time frames you choose." },
+        { "title": "Whole life", "text": "Lasts your entire lifetime as long as the premiums are paid, with set premium periods, and can build cash value." },
+        { "title": "Universal life", "text": "Lasts your lifetime, with premiums that can have flexible time periods and amounts, and cash value that can change but will not fall below a certain rate." },
+        { "title": "Policy check-ups", "text": "Our seasoned staff recognizes when it is time to get a check-up on your life insurance. When life changes, so do insurance policies, from marriage or divorce to paying for a child or grandchild's education." }
+      ],
+      "questions": [
+        { "q": "Is a medical exam required?", "a": "Plans are available with or without a medical exam." },
+        { "q": "Can I speak to someone instead of applying online?", "a": "Yes. If you prefer, contact a licensed professional at any time." }
+      ]
+    },
+    {
+      "slug": "policy-service",
+      "title": "Policy Service and Claims",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "View policies and print ID cards.",
+      "text": "The secure customer service center is where members view policies, print ID cards, update their details and download documents.",
+      "lead": "Use the customer service center to view your insurance policies, print insurance ID cards, update your contact information, download documents, and more.",
+      "covers": [
+        { "title": "Policies and documents", "text": "View your insurance policies and download documents." },
+        { "title": "Insurance ID cards", "text": "Print insurance ID cards when you need them." },
+        { "title": "Your contact details", "text": "Update your contact information on file." }
+      ],
+      "questions": [
+        { "q": "Where do I start a claim?", "a": "The Claims Center opens the same secure customer service center, and every carrier CUFG represents also has its own claims line." }
+      ]
+    }
+  ],
+  "affiliations": {
+    "title": "Carriers we represent",
+    "items": [
+      "Allstate",
+      "ASI",
+      "Blue Cross Blue Shield",
+      "Encompass",
+      "Foremost",
+      "GeoVera",
+      "Hagerty",
+      "Homeowners of America",
+      "Mercury",
+      "MetLife",
+      "Progressive",
+      "Safeco",
+      "SageSure",
+      "The Hartford",
+      "Tower Hill",
+      "Travelers",
+      "Wellington"
+    ]
+  },
+  "about": {
+    "title": "About CU Financial Group",
+    "text": [
+      "CU Financial Group, LLC was founded in 2004 with the vision of offering premium insurance products to members at competitive rates. CUFG works hard to establish productive relationships with 'A Rated' insurance carriers who, like credit unions, are dedicated to member service.",
+      "With the benefit of combined credit union portfolios, we are able to negotiate the most competitive of rates for the members of credit unions in the CUFG Network.",
+      "As a credit union service organization, we are knowledgeable in credit union operations, service expectations, and financial strategies. We work with each credit union in our network to tailor their insurance program to fit their individual member needs.",
+      "Every credit union is unique. That is why CUFG works one on one with our partner credit unions to craft an insurance program with your members in mind. Our member offerings include in-person, phone, and web services."
+    ],
+    "image": "/brands/cufinancialgroup/network-map",
+    "imageAlt": "Map marking CU Financial Group network locations in Denton, Fort Worth, Longview, San Antonio and Houston",
+    "values": [
+      { "title": "Non-Interest Income", "text": "With tighter net interest margins than ever before, many credit unions are turning to non-interest income. Offering insurance products delivers more member-friendly services while improving the bottom line." },
+      { "title": "One-Stop Shop", "text": "Credit unions create insurance customers every day and then send them away to find insurance on their own. CUFG enables members to purchase their insurance without ever having to leave their credit union." },
+      { "title": "Trusted Advisor", "text": "As a credit union you provide trusted financial advice to your members. They trust you with their money and their loans. Why not offer them in-house insurance services that complement the loans you provide." }
+    ]
+  },
+  "team": [
+    {
+      "name": "Christian Marrder",
+      "role": "Principal and VP of Sales and Operations",
+      "bio": "Christian Marrder joined CUFG in 2013 and is responsible for the day to day operations of our Insurance Service Center, where he has been instrumental in expanding capabilities and positioning the Center for future growth. Before joining CUFG, Christian was an agency owner and District trainer for reserve insurance agents in Salt Lake City, UT. He brings more than 16 years of insurance services experience and currently resides in Houston, TX."
+    },
+    {
+      "name": "Charis Pollard",
+      "role": "Chief Operating Officer",
+      "image": "/brands/cufinancialgroup/charis-pollard",
+      "imageAlt": "Charis Pollard, Chief Operating Officer"
+    },
+    {
+      "name": "Jack Click",
+      "role": "Strategic Partnership Specialist",
+      "image": "/brands/cufinancialgroup/jack-click",
+      "imageAlt": "Jack Click, Strategic Partnership Specialist"
+    },
+    {
+      "name": "Eric Goins",
+      "role": "Marketing Manager",
+      "image": "/brands/cufinancialgroup/eric-goins",
+      "imageAlt": "Eric Goins, Marketing Manager"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why insurance for credit union members?",
+      "a": "As a credit union you provide trusted financial advice to your members. They trust you with their money and their loans. If you offer other value-added benefits like auto or home insurance, these same members will trust you to provide them with a good product. The only financial product credit union members are guaranteed to buy, every year, is insurance."
+    },
+    {
+      "q": "Why send your members elsewhere?",
+      "a": "Credit unions offer competitive deposit and lending products. By becoming a member of the CU Financial Group network you will be able to provide your members with access to top rated auto, home, life, and health insurance."
+    },
+    {
+      "q": "How long does a program take to set up?",
+      "a": "A Direct Model program can be implemented within 30 to 90 days."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Customer Service Center",
+      "text": "View policies, print ID cards, update your contact information and download documents.",
+      "href": "https://customerservice.agentinsure.com/EzLynxCustomerService/etpcu1/Account/LogIn"
+    },
+    {
+      "title": "Request a Quote",
+      "text": "The online quote request form for insurance through CUFG.",
+      "href": "https://acutx-hmcwt.formstack.com/forms/insurance_cufgwebsite"
+    }
+  ],
+  "serviceArea": ["League City", "Houston", "San Antonio", "Fort Worth", "Denton", "Longview"],
+  "facts": [
+    {
+      "heading": "Insurance options",
+      "items": [
+        "Auto",
+        "Home",
+        "Life",
+        "Health",
+        "Motorcycle",
+        "ATV / Boat",
+        "Flood",
+        "Renters",
+        "Mobile Home",
+        "Umbrella",
+        "Business Liability",
+        "Credit Union Liability Bond"
+      ]
+    },
+    {
+      "heading": "Mailing address",
+      "text": "PO Box 9004, League City, TX 77574"
+    },
+    {
+      "heading": "Email",
+      "items": [
+        "service@cufinancialgroup.com for customer service",
+        "events@cufinancialgroup.com for credit union programs"
+      ]
+    },
+    {
+      "heading": "Agency partners",
+      "items": [
+        "ACU Insurance Services",
+        "City Credit Union",
+        "East Texas Professional Credit Union",
+        "Energy Capital",
+        "Gulf Coast Educators Federal Credit Union",
+        "Texas Bay Credit Union"
+      ]
+    },
+    {
+      "heading": "Direct partners",
+      "items": [
+        "Capitol Credit Union",
+        "Coastal Community Federal Credit Union",
+        "Cochran County Schools Federal Credit Union",
+        "Galveston Government Employees Credit Union",
+        "FocusOne",
+        "Telco Plus Credit Union"
+      ]
+    },
+    {
+      "heading": "CU Alliance",
+      "items": ["Texas Bridge Credit Union", "United Community Credit Union"]
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Cisco & Associates Group LLC",
+  "shortName": "Cisco & Associates Group",
+  "tagline": "Tax and accounting services, specializing in small businesses",
+  "phone": "(281) 962-9004",
+  "email": "cisco@cnagroupllc.com",
+  "address": "4806 W Walnut St, Suite 100",
+  "town": "Pearland",
+  "state": "TX",
+  "zip": "77584",
+  "rating": 4.3,
+  "reviewCount": 7,
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Dedicated professionals who can help your business continue to grow and thrive."
+  },
+  "brand": {
+    "primary": "#004984",
+    "primaryDeep": "#003461",
+    "accent": "#0f6cab",
+    "ink": "#080912",
+    "muted": "#56606d",
+    "surface": "#f8f6f7",
+    "cream": "#edf1f5",
+    "line": "#dde4ea",
+    "heading": "'Archivo Narrow', Arial Narrow, sans-serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap",
+    "logo": "/brands/ciscoassociatesgroup/logo.webp",
+    "logoWidth": 200
+  },
+  "hero": {
+    "eyebrow": "Accounting and tax office in Pearland",
+    "title": "Tax and accounting services, specializing in small businesses.",
+    "lead": "The personal assistance your business deserves, to help manage your small business tax and accounting needs. You are busy running a business, and we'll help you make the most of your valuable time.",
+    "image": "/brands/ciscoassociatesgroup/cisco",
+    "imageAlt": "Cisco Trevino, managing member of Cisco & Associates Group LLC",
+    "points": [
+      "Specializing in small businesses",
+      "Individual and business tax returns",
+      "Secure client portal for file sharing"
+    ]
+  },
+  "overview": {
+    "title": "Services you can trust, so you can focus on the bigger picture.",
+    "text": "Explore our service areas and product line, or call and talk it through with our team."
+  },
+  "audiences": {
+    "individuals": "Individuals",
+    "businesses": "Businesses"
+  },
+  "services": [
+    {
+      "slug": "individual-tax-returns",
+      "title": "Individual Tax Returns",
+      "audience": "individuals",
+      "icon": "file-text",
+      "summary": "Form 1040 returns and filing instructions.",
+      "text": "Tax returns and filing instructions have been prepared for 1000's of individual clients each year.",
+      "lead": "Tax returns and filing instructions have been prepared for 1000's of individual clients each year. We handle the 1040 and the schedules that go with it.",
+      "covers": [
+        {
+          "title": "Form 1040",
+          "text": "The individual return prepared from the documents you bring in or send through the client portal."
+        },
+        {
+          "title": "Schedule C",
+          "text": "The return for a sole proprietor or single-member business filed alongside the 1040."
+        },
+        {
+          "title": "Filing instructions",
+          "text": "Written instructions prepared with the finished return."
+        }
+      ]
+    },
+    {
+      "slug": "tax-planning",
+      "title": "Tax Planning",
+      "audience": "individuals",
+      "icon": "clipboard-check",
+      "summary": "Annual, mid-year and long term planning.",
+      "text": "Long term, annual and mid-year tax planning and tax forecasting services.",
+      "lead": "Long term, annual and mid-year tax planning and tax forecasting services. Tax return filing and tax planning for individuals is one of the areas our company specializes in.",
+      "covers": [
+        {
+          "title": "Annual planning",
+          "text": "A look at the year ahead, worked through before the year closes."
+        },
+        {
+          "title": "Mid-year review",
+          "text": "A check partway through the year on how the return is shaping up."
+        },
+        {
+          "title": "Tax forecasting",
+          "text": "An estimate of what is owed, worked out in advance rather than at filing time."
+        }
+      ]
+    },
+    {
+      "slug": "financial-planning",
+      "title": "Financial Planning",
+      "audience": "individuals",
+      "icon": "chart",
+      "summary": "Full service planning for future goals.",
+      "text": "Full service Financial Planning for future goals.",
+      "lead": "Full service financial planning for future goals. Our online office brings financial services directly into your home or business, enabling you to more actively participate in your financial management.",
+      "covers": [
+        {
+          "title": "Goals and budgets",
+          "text": "Planning around the future goals you are working toward, with budgets set against them."
+        },
+        {
+          "title": "Financial calculators",
+          "text": "Calculators to assist you in budgeting, financial planning, or determining loan payments."
+        }
+      ]
+    },
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping",
+      "audience": "businesses",
+      "icon": "book",
+      "summary": "Complete bookkeeping for small businesses.",
+      "text": "Complete bookkeeping services for small businesses, including the financial statements that come out of the books.",
+      "lead": "Complete bookkeeping services for small businesses. We set up the bookkeeping structure and keep the books, and the financial statements come out of them.",
+      "covers": [
+        {
+          "title": "Bookkeeping structure",
+          "text": "Setting the books up to match how the business runs."
+        },
+        {
+          "title": "Financial statements",
+          "text": "Bookkeeping and financial statements for small businesses, one of the areas our company specializes in."
+        }
+      ]
+    },
+    {
+      "slug": "payroll",
+      "title": "Payroll Services",
+      "audience": "businesses",
+      "icon": "banknote",
+      "summary": "Total payroll for small business clients.",
+      "text": "Total payroll services for small business clients.",
+      "lead": "Total payroll services for small business clients.",
+      "covers": [
+        {
+          "title": "Running payroll",
+          "text": "Pay runs handled for small business clients."
+        },
+        {
+          "title": "Payroll and the books",
+          "text": "Payroll handled by the same office that keeps the bookkeeping."
+        }
+      ]
+    },
+    {
+      "slug": "business-tax-returns",
+      "title": "Business Tax Returns",
+      "audience": "businesses",
+      "icon": "receipt",
+      "summary": "1120, 1120S, 1065 and Schedule C.",
+      "text": "A variety of small business tax returns are prepared each year, including corporate returns.",
+      "lead": "A variety of small business tax returns are prepared each year. Corporate tax return filing is one of the areas our company specializes in, and the filings we handle run from a Schedule C through to corporate and partnership returns.",
+      "covers": [
+        {
+          "title": "Form 1120",
+          "text": "The corporate return."
+        },
+        {
+          "title": "Form 1120S",
+          "text": "The return for an S corporation."
+        },
+        {
+          "title": "Form 1065",
+          "text": "The partnership return."
+        },
+        {
+          "title": "Schedule C",
+          "text": "The return for a business filed with the owner's 1040."
+        }
+      ]
+    },
+    {
+      "slug": "business-consulting",
+      "title": "Business Consulting & Formation",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Business consults and business formation.",
+      "text": "Business consults and business formation for owners starting out or restructuring what they already have.",
+      "lead": "Starting a business is not easy. We sit down with owners for a business consult, and we handle business formation for those ready to incorporate, with the aim of empowering small businesses for financial, accounting and taxation literacy.",
+      "covers": [
+        {
+          "title": "Business consult",
+          "text": "A conversation about how the business is set up and what it needs next."
+        },
+        {
+          "title": "Business formation",
+          "text": "Incorporating small businesses, one of the services the firm lists."
+        },
+        {
+          "title": "Budgets and control",
+          "text": "Educating owners to establish and run their small business with budgets and control."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "title": "Accounting and tax preparation for a wide variety of clients.",
+    "text": [
+      "Our company specializes in accounting and tax preparation services for a wide variety of clients: tax return filing and tax planning for individuals, bookkeeping and financial statements for small businesses, and corporate tax return filing.",
+      "Annual participation in Continuing Professional Education courses offered by local chapters of national accounting and tax associations keeps our firm on the leading edge of ever-changing tax laws and accounting methods. Computerized offices and internet access ensures clients accurate, efficient, state-of-the-art service at a competitive price.",
+      "Feel free to contact the office anytime. We're here to help."
+    ],
+    "image": "/brands/ciscoassociatesgroup/cisco",
+    "imageAlt": "Cisco Trevino, managing member of Cisco & Associates Group LLC",
+    "values": [
+      {
+        "title": "Mission",
+        "text": "To provide great service to individuals and businesses, and to educate the public and clients to establish and run their small business with budgets and control."
+      },
+      {
+        "title": "Vision",
+        "text": "Incorporate small businesses and empower them for financial, accounting and taxation literacy."
+      },
+      {
+        "title": "Values",
+        "text": "We treat every consumer and potential client with integrity, honesty and respect. We conduct a full disclosure policy, and we are fully transparent through each transaction."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Cisco Trevino",
+      "role": "Managing Member",
+      "bio": "Born in Houston, Texas. As any business embarks into their journey, they tend to foresee their fruits of labor. Starting a business is not easy. I have been in the field of accounting, taxation and finance for 12 years and running, establishing great resources and meeting great people throughout my journey. Here at Cisco & Associates Group LLC we strive to provide quality service.",
+      "image": "/brands/ciscoassociatesgroup/cisco",
+      "imageAlt": "Cisco Trevino"
+    }
+  ],
+  "resources": [
+    {
+      "title": "Client Portal",
+      "text": "Secure file sharing for sending documents to the office and getting finished returns back.",
+      "href": "https://cnagroupllc.myfirmfiles.com"
+    },
+    {
+      "title": "Where's My Refund?",
+      "text": "Check the status of a federal refund directly with the IRS.",
+      "href": "https://www.irs.gov/Refunds"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Level of Services",
+      "items": [
+        "Business consult",
+        "Business formation",
+        "Tax filings: 1040, Schedule C, 1120, 1120S and 1065",
+        "Bookkeeping structure"
+      ]
+    },
+    {
+      "heading": "Continuing education",
+      "text": "Annual participation in Continuing Professional Education courses offered by local chapters of national accounting and tax associations."
+    },
+    {
+      "heading": "Client resources",
+      "items": [
+        "Client portal for secure file sharing",
+        "Tax and financial calculators",
+        "Client newsletter, updated monthly",
+        "Tax tips and tax videos",
+        "Events calendar of important dates and deadlines"
+      ]
+    },
+    {
+      "heading": "Office",
+      "text": "Computerized offices and internet access ensures clients accurate, efficient, state-of-the-art service at a competitive price."
+    },
+    {
+      "heading": "Connect",
+      "items": [
+        "X / Twitter: @CiscoT21"
+      ]
+    },
+    {
+      "heading": "Terms of use",
+      "text": "This website is made available as a service to our clients and others for informational purposes only. These materials should not be considered as, or a substitute for, accounting, tax or financial advice."
+    }
+  ]
+}
