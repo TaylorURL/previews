@@ -350,9 +350,12 @@ def font_block(found, sample):
         return {k: sample["brand"][k] for k in ("heading", "body", "fonts")}
     heading = found[0]
     body = found[1] if len(found) > 1 else found[0]
+    serif = {"Merriweather", "Playfair Display", "Libre Baskerville", "Lora", "Source Serif 4", "Cormorant Garamond", "EB Garamond", "Crimson Text"}
+    if body in serif and heading not in serif:
+        # A serif paired with a sans sets the headings and the sans the text.
+        heading, body = body, heading
     fams = [heading] if heading == body else [heading, body]
     query = "&".join(f"family={urllib.parse.quote_plus(f)}:wght@400;600;700" for f in fams)
-    serif = {"Merriweather", "Playfair Display", "Libre Baskerville", "Lora", "Source Serif 4", "Cormorant Garamond", "EB Garamond", "Crimson Text"}
     stack = lambda f: f"'{f}', {'Georgia, serif' if f in serif else 'system-ui, sans-serif'}"
     return {"heading": stack(heading), "body": stack(body), "fonts": f"https://fonts.googleapis.com/css2?{query}&display=swap"}
 
@@ -395,3 +398,32 @@ def colors_of(logo_inks, css, template):
     if template == "professional":
         out["cream"] = images.hexof(images.mix((255, 252, 246), inks[0], 0.03))
     return out
+
+
+# A service named only for the trade or the firm ("Roofing Services", "Our
+# Contractors") says nothing a headline can use.
+GENERIC_SERVICE = re.compile(
+    r"^(?:(?:roofing|roof|hvac|heating and air|heating|air conditioning|electrical|insurance|accounting|tax|title|"
+    r"bookkeeping|cpa)\s+)?(?:services?|contractors?|company|solutions|specialists?|experts?)$", re.I)
+
+
+def hero_line(services, town, label):
+    """The headline a template draws under the name: the business's own two
+    leading services and its town, worded once ("Auto and home insurance in
+    Baytown", "Roof repair and roof replacement in Tomball"). With no two
+    services worth naming it is the trade and the town."""
+    named = [s["title"] for s in services if not GENERIC_SERVICE.match(s["title"])][:2]
+    lower = [" ".join(w if (w.isupper() and len(w) > 1) or w.upper() in ACRONYMS else w.lower() for w in t.split()) for t in named]
+    if len(lower) == 2:
+        a, b = lower
+        tail_a, tail_b = a.rsplit(" ", 1), b.rsplit(" ", 1)
+        # "Auto insurance and home insurance" reads as "auto and home insurance".
+        if len(tail_a) == 2 and len(tail_b) == 2 and tail_a[1].lower() == tail_b[1].lower():
+            what = f"{tail_a[0]} and {b}"
+        else:
+            what = f"{a} and {b}"
+    elif lower:
+        what = lower[0]
+    else:
+        what = label.lower()
+    return f"{what[:1].upper()}{what[1:]} in {town}"

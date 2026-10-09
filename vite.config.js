@@ -13,10 +13,13 @@ function brandBoot() {
       const map = {};
       for (const file of readdirSync('src/brands')) {
         const brand = JSON.parse(readFileSync(`src/brands/${file}`, 'utf8'));
-        const hero = brand.hero.image;
-        const srcset = hero.startsWith('https://images.unsplash.com/')
-          ? [640, 1000, 1400, 2000].map((w) => `${hero}?auto=format&fit=crop&q=65&w=${w} ${w}w`).join(', ')
-          : `${hero}-800.webp 800w, ${hero}-1600.webp 1600w`;
+        // A page drawn without a hero photo has nothing to preload.
+        const hero = brand.hero?.image;
+        const srcset = !hero
+          ? null
+          : hero.startsWith('https://images.unsplash.com/')
+            ? [640, 1000, 1400, 2000].map((w) => `${hero}?auto=format&fit=crop&q=65&w=${w} ${w}w`).join(', ')
+            : `${hero}-800.webp 800w, ${hero}-1600.webp 1600w`;
         const sizes = {
           plumbing: '(max-width: 1024px) 100vw, 50vw',
           barber: '(max-width: 768px) 100vw, 45vw',

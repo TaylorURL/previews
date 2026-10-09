@@ -14,11 +14,17 @@ anywhere but its source cannot be proved word for word, so the page shows the
 stored rating and count alone, which is true.
 """
 
+import colorsys
+import glob
 import json
 import os
 import re
+import shutil
+import tempfile
 
-from . import collect, compose, images
+from PIL import Image
+
+from . import collect, compose, images, logo, quality, vision
 
 TOWNS = [
     "Baytown", "Houston", "Pasadena", "Deer Park", "La Porte", "Mont Belvieu", "League City", "Pearland", "Channelview",
@@ -39,71 +45,181 @@ def _sample(root, template):
         return json.load(handle)
 
 
-def _logo(pages, business):
-    """The logo, from the business's own structured data or the header of its site."""
+SKIP_LOGO = re.compile(r"google|review|badge|bbb|yelp|facebook|award|seal|angi|homeadvisor|nextdoor|thumbtack|houzz|"
+                       r"certified|partner", re.I)
+SKIP_PHOTO = re.compile(
+    r"logo|icon|badge|seal|avatar|sprite|award|bbb|google|facebook|yelp|angi|homeadvisor|\.svg|certif|"
+    r"accredit|member|partner|warranty|craftsman|certainteed|gaf|owens|malarkey|atlas|carrier|trane|lennox|"
+    r"rheem|goodman|banner|coupon|offer|financ|map|qr|flyer|promo|special|deal|sale|graphic|infographic|"
+    r"placeholder|blank|spacer|loader|pixel|emoji|stars?\b|rating|testimonial|headshot", re.I)
+PHOTO_DOWNLOADS = 24
+
+
+def _logo_sheet(image, placement, folder):
+    """The prepared logo on its ground at the header's size and twice that, for the vision check."""
+    from PIL import Image as PILImage
+    ground = images.rgbof(placement["logoGround"])
+    paths = []
+    for scale in (1, 2):
+        w, h = placement["logoWidth"] * scale, placement["logoHeight"] * scale
+        mark = image.copy()
+        mark.thumbnail((w, h), PILImage.LANCZOS)
+        strip = PILImage.new("RGB", (w + 48 * scale, h + 32 * scale), ground)
+        strip.paste(mark, (24 * scale, 16 * scale), mark)
+        path = os.path.join(folder, f"logo-check-{scale}x.png")
+        strip.save(path)
+        paths.append(path)
+    return paths
+
+
+def _logo(pages, business, scratch, notes):
+    """The logo, from the business's own structured data, a file named for it,
+    an SVG drawn in its header, or the header's pictures: the first that sits
+    cleanly once its ground is cut away or matched."""
     candidates = []
-    logo = business.get("logo")
-    if isinstance(logo, dict):
-        logo = logo.get("url")
-    if isinstance(logo, str):
-        candidates.append(logo)
+    found = business.get("logo")
+    if isinstance(found, dict):
+        found = found.get("url")
+    if isinstance(found, str):
+        candidates.append(("url", found))
     home = pages[0]
     for img in home.images:
         if "logo" in img["hint"] or "logo" in img["alt"].lower():
-            candidates.append(img["src"])
+            candidates.append(("url", img["src"]))
+    for svg in getattr(home, "svgs", []):
+        candidates.append(("svg", svg))
     for img in home.images:
         if img["header"]:
-            candidates.append(img["src"])
-    for src in dict.fromkeys(candidates):
-        if re.search(r"google|review|badge|bbb|yelp|facebook|award|seal|angi|homeadvisor|nextdoor|thumbtack|houzz|certified|partner", src, re.I):
+            candidates.append(("url", img["src"]))
+    refused = []
+    seen = set()
+    for kind, value in candidates:
+        if value in seen or (kind == "url" and SKIP_LOGO.search(value)):
             continue
+        seen.add(value)
         try:
-            image = images.open_image(collect.fetch(src, binary=True)[1])
+            data = value.encode() if kind == "svg" else collect.fetch(value, binary=True)[1]
+            image = images.open_image(data)
         except Exception:
             continue
         if not images.looks_like_logo(image):
             continue
-        return image, src
-    return None, None
+        try:
+            prepared, placement = logo.prepare(image)
+        except logo.Unfit as reason:
+            refused.append(str(reason))
+            continue
+        look = vision.judge_logo(_logo_sheet(prepared, placement, scratch)) if vision.available() else None
+        if look is None and vision.available():
+            notes.append(f"the logo was not looked at: {vision.last_error}")
+        if look is not None and not look["ok"]:
+            refused.append("the logo did not pass the look: " + "; ".join(look["problems"])[:200])
+            continue
+        if look is not None and not look["has_name"]:
+            # A mark with no name in it is drawn with the name set beside it.
+            placement["logoName"] = True
+        source = "inline SVG on their home page" if kind == "svg" else value
+        return prepared, placement, source, image
+    if refused:
+        raise Parked("no logo on their website sits cleanly: " + "; ".join(dict.fromkeys(refused))[:300])
+    raise Parked("no usable logo on their website")
 
 
-def _photos(pages, logo_src, limit=6):
-    """Their own photos: the large pictures on their own site."""
-    found = []
-    hashes = []
-
-    def keep(image, source):
-        if image.width < 700 or image.height < 380:
-            return
-        ratio = image.width / image.height
-        if not 0.6 <= ratio <= 2.6 or images.blank(image):
-            return
-        h = images.ahash(image)
-        if any(images.distance(h, o) < 6 for o in hashes):
-            return
-        hashes.append(h)
-        found.append((image.convert("RGB"), source))
-
-    def order(item):
-        # A wide photograph leads, since it becomes the hero; a square one is
-        # as likely to be a badge or a graphic and goes last.
-        ratio = item[0].width / item[0].height
-        return (0 if 1.3 <= ratio <= 2.3 else 1 if ratio > 1.05 else 2, -item[0].width)
-
-    for page in pages[:4]:
+def _photo_candidates(pages, logo_src):
+    urls = []
+    for page in pages:
+        og = page.meta.get("og:image")
         for img in page.images:
-            if len(found) >= limit:
-                break
-            if img["src"] == logo_src or re.search(
-                r"logo|icon|badge|seal|avatar|sprite|award|bbb|google|facebook|yelp|angi|homeadvisor|\.svg|certif|"
-                r"accredit|member|partner|warranty|craftsman|certainteed|gaf|owens|malarkey|atlas|carrier|trane|lennox|"
-                r"rheem|goodman|banner|coupon|offer|financ|map|qr", img["hint"] + img["alt"].lower() + img["src"].lower()):
+            text = img["hint"] + " " + img["alt"].lower() + " " + img["src"].lower()
+            if img["src"] == logo_src or SKIP_PHOTO.search(text):
                 continue
+            urls.append(img["src"])
+        if og and not SKIP_PHOTO.search(og.lower()):
+            urls.append(og)
+    return list(dict.fromkeys(urls))
+
+
+_shown = None
+
+
+def _shown_elsewhere(root, slug):
+    """The fingerprint of every photo already on another business's preview."""
+    global _shown
+    if _shown is None:
+        _shown = []
+        for path in glob.glob(os.path.join(root, "public", "brands", "*", "*-800.webp")):
             try:
-                keep(images.open_image(collect.fetch(img["src"], binary=True)[1]), "site")
+                with Image.open(path) as image:
+                    _shown.append((path.replace(os.sep, "/"), images.ahash(image)))
             except Exception:
                 continue
-    return sorted(found, key=order)
+    return [h for path, h in _shown if f"/brands/{slug}/" not in path]
+
+
+def _photos(pages, logo_src, logo_image, scratch, notes, root, slug):
+    """Their own photos, each judged by its pixels and then by the look, best first.
+
+    Returns [{"image", "source", "metrics", "score", "look"}] of the photos
+    worth showing, the strongest first. Anything blurry, enlarged, crushed by
+    compression, flat like a graphic, a cut-out, a duplicate or the logo again
+    is left out, as is anything the vision check refuses.
+    """
+    logo_prints = quality.fingerprints(logo_image.convert("RGB")) if logo_image is not None else None
+    shown = _shown_elsewhere(root, slug)
+    kept, refused = [], []
+    for url in _photo_candidates(pages, logo_src)[:PHOTO_DOWNLOADS]:
+        try:
+            image = images.open_image(collect.fetch(url, binary=True)[1])
+        except Exception:
+            continue
+        if image.width < 700 or image.height < 400:
+            continue
+        m = quality.metrics(image)
+        why = quality.problems(m)
+        if why:
+            refused.append(f"{url.rsplit('/', 1)[-1][:40]}: {why[0]}")
+            continue
+        stamp = images.ahash(image)
+        # A stock photo another preview already shows. The check allows two
+        # bits between the saved files; the source before saving drifts a
+        # little further, so this is looser to stay ahead of it.
+        if any(images.distance(stamp, h) <= 4 for h in shown):
+            refused.append(f"{url.rsplit('/', 1)[-1][:40]}: already on another preview")
+            continue
+        prints = quality.fingerprints(image.convert("RGB"))
+        if logo_prints and quality.same_picture(prints, logo_prints, limit=8):
+            continue
+        twin = next((k for k in kept if quality.same_picture(prints, k["prints"])), None)
+        item = {"image": image, "source": url, "metrics": m, "score": quality.score(m), "prints": prints, "look": None}
+        if twin:
+            if item["score"] > twin["score"]:
+                kept[kept.index(twin)] = item
+            continue
+        kept.append(item)
+    if kept and vision.available():
+        paths = []
+        for i, item in enumerate(kept):
+            path = os.path.join(scratch, f"candidate-{i:02d}.png")
+            copy = item["image"].convert("RGB")
+            copy.thumbnail((1400, 1400))
+            copy.save(path)
+            paths.append(path)
+        looks = vision.screen_photos(paths)
+        if looks is None:
+            notes.append(f"the photos were not looked at: {vision.last_error}")
+        else:
+            for item, path in zip(list(kept), paths):
+                item["look"] = looks.get(path)
+                if not item["look"] or not item["look"]["ok"]:
+                    refused.append(f"{item['source'].rsplit('/', 1)[-1][:40]}: {(item['look'] or {}).get('why', 'no verdict')}")
+                    kept.remove(item)
+    # The look's score leads; the pixels break ties.
+    kept.sort(key=lambda k: ((k["look"] or {}).get("score", 3), k["score"]), reverse=True)
+    return kept, refused
+
+
+def _fits(item, slot):
+    return not quality.problems(item["metrics"], slot)
 
 
 def build(prospect, root, slug):
@@ -128,23 +244,38 @@ def build(prospect, root, slug):
 
     folder = os.path.join(root, "public", "brands", slug)
     os.makedirs(folder, exist_ok=True)
+    notes = []
+    scratch = tempfile.mkdtemp(prefix=f"preview-{slug}-")
+    try:
+        mark, placement, logo_src, logo_raw = _logo(pages, business, scratch, notes)
+        logo.save(mark, os.path.join(folder, "logo.webp"))
+        inks = images.logo_colors(mark)
+        # A mark cut from a colored ground keeps that color as the brand's own.
+        ground = images.rgbof(placement["logoGround"])
+        h_, l_, s_ = colorsys.rgb_to_hls(*(v / 255 for v in ground))
+        if s_ >= 0.22 and 0.12 < l_ < 0.85:
+            inks = [ground] + inks
+        colors = compose.colors_of(inks, css, template)
+        if not colors:
+            raise Parked("no brand color in the logo or the site's stylesheet")
+        photos, refused = _photos(pages, logo_src, logo_raw, scratch, notes, root, slug)
+    finally:
+        shutil.rmtree(scratch, ignore_errors=True)
 
-    logo, logo_src = _logo(pages, business)
-    if logo is None:
-        raise Parked("no usable logo on their website")
-    logo_width = images.save_logo(logo, folder)
-    inks = images.logo_colors(logo)
-    colors = compose.colors_of(inks, css, template)
-    if not colors:
-        raise Parked("no brand color in the logo or the site's stylesheet")
-
-    photos = _photos(pages, logo_src)
-    if not photos:
-        raise Parked("no usable photo on their website")
+    # The hero takes the strongest photo wide and sharp enough for it; the
+    # rest go where a card-sized picture is drawn. Too few good ones and the
+    # page is drawn without them rather than with weak ones.
+    hero_pick = next((p for p in photos if _fits(p, "hero")), None)
+    cards = [p for p in photos if p is not hero_pick and _fits(p, "card")][:5]
     names = []
-    for i, (image, source) in enumerate(photos, 1):
-        images.save_photo(image, folder, f"photo{i}")
-        names.append((f"/brands/{slug}/photo{i}", source))
+    for i, item in enumerate(([hero_pick] if hero_pick else []) + cards, 1):
+        images.save_photo(item["image"], folder, f"photo{i}")
+        names.append((f"/brands/{slug}/photo{i}", item))
+        if _shown is not None:
+            # Taken now, so the next business in the same run cannot take it too.
+            _shown.append((os.path.join(folder, f"photo{i}-800.webp").replace(os.sep, "/"), images.ahash(item["image"])))
+    hero_image = names[0][0] if hero_pick else None
+    spare = [n for n, _ in (names[1:] if hero_pick else names)]
 
     kind = compose.KIND.get(prospect["trade"])
     vocab_key = kind or template
@@ -190,26 +321,39 @@ def build(prospect, root, slug):
         **colors,
         **compose.font_block(compose.fonts_of(css), sample),
         "logo": f"/brands/{slug}/logo.webp",
-        "logoWidth": logo_width,
+        **{k: placement[k] for k in ("logoWidth", "logoHeight", "logoRatio", "logoGround", "logoName") if k in placement},
     }
-    hero_image = names[0][0]
     brand["hero"] = {
         "eyebrow": f"{label} in {town}",
         "title": short,
         "lead": lead,
-        "image": hero_image,
-        "imageAlt": f"A photo of {short}" if names[0][1] == "site" else f"A photo from {short}'s Google listing",
     }
+    if hero_image:
+        brand["hero"]["image"] = hero_image
+        brand["hero"]["imageAlt"] = f"A photo of {short}"
+    line = compose.hero_line(services, town, label)
     if template in ("roofing", "hvac"):
-        brand["hero"]["titleAccent"] = f"{main} in {town}."
+        # The name leads in small type; the work is the headline and the town
+        # its accent, so a long business name never fills the hero.
+        what, _, where = line.rpartition(f" in {town}")
+        brand["hero"]["eyebrow"] = short
+        brand["hero"]["title"] = what or line
+        if what:
+            brand["hero"]["titleAccent"] = f"in {town}"
     else:
-        what = " and ".join(t if t.isupper() else t.lower() for t in [x["title"] for x in services[:2]])
-        brand["hero"]["title"] = f"{what[:1].upper()}{what[1:]} in {town} from {short}"
+        brand["hero"]["eyebrow"] = short
+        brand["hero"]["title"] = line
 
     brand["serviceArea"] = areas
 
-    spare = [n for n, _ in names[1:]]
-    about_image = spare[0] if spare else hero_image
+    about_image = spare[0] if spare else None
+
+    def about_block(**extra):
+        block = {**extra, "title": f"About {short}", "text": about}
+        if about_image:
+            block["image"] = about_image
+            block["imageAlt"] = f"A photo of {short}"
+        return block
 
     if template == "professional":
         brand["kind"] = kind
@@ -225,7 +369,7 @@ def build(prospect, root, slug):
         brand["services"] = items
         if not about:
             raise Parked("no about text on their website")
-        brand["about"] = {"title": f"About {short}", "text": about, "image": about_image, "imageAlt": f"A photo of {short}"}
+        brand["about"] = about_block()
 
     elif template == "roofing":
         brand["services"] = [
@@ -234,7 +378,7 @@ def build(prospect, root, slug):
         ]
         if not about:
             raise Parked("no about text on their website")
-        brand["about"] = {"title": f"About {short}", "text": about, "image": about_image, "imageAlt": f"A photo of {short}"}
+        brand["about"] = about_block()
 
     elif template == "hvac":
         brand["summary"] = lead
@@ -244,15 +388,17 @@ def build(prospect, root, slug):
                 continue
             icon = next((k for k, p in compose.ICONS["hvac"] if re.search(p, s["title"], re.I)), "wrench")
             group = {"slug": compose.slugify(s["title"]), "title": s["title"], "icon": icon, "summary": compose.trim(s["text"], 140) or s["text"], "intro": s["text"]}
-            if i + 1 < len(spare):
-                group["image"] = spare[i + 1]
+            # The about section takes the first spare photo; each group after
+            # it one of its own, and none shares a picture.
+            if len(groups) + 1 < len(spare):
+                group["image"] = spare[len(groups) + 1]
                 group["imageAlt"] = f"A photo of {short}"
             groups.append(group)
         if len(groups) < 2:
             raise Parked("fewer than two services described on their website")
         brand["groups"] = groups
         if about:
-            brand["about"] = {"eyebrow": "About us", "title": f"About {short}", "text": about, "image": about_image, "imageAlt": f"A photo of {short}"}
+            brand["about"] = about_block(eyebrow="About us")
 
     evidence = {
         "phone": phone,
@@ -261,7 +407,11 @@ def build(prospect, root, slug):
         "reviewCount": count,
         "lead_source": lead_source,
         "text": text,
-        "photos": [s for _, s in names],
+        "photos": [item["source"] for _, item in names],
+        "photo_looks": {path: (item["look"] or {}).get("why") for path, item in names},
+        "photos_refused": refused,
+        "logo_source": logo_src,
+        "notes": notes,
     }
     with open(os.path.join(root, "src", "brands", f"{slug}.json"), "w") as handle:
         json.dump(brand, handle, indent=2, ensure_ascii=False)

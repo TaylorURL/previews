@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { pic } from '../site.js';
+import { headDark, luminance, pic } from '../site.js';
 
 export function Stars({ value = 5, size = 16, className = 'text-star' }) {
   const full = Math.round(value);
@@ -20,10 +20,11 @@ export function Stars({ value = 5, size = 16, className = 'text-star' }) {
 }
 
 /** A responsive image from a brand file path or an Unsplash URL. */
-export function Img({ src, alt = '', sizes = '100vw', className, eager = false }) {
+export function Img({ src, alt = '', sizes = '100vw', className, eager = false, ...rest }) {
   const { src: url, srcSet } = pic(src);
   return (
     <img
+      {...rest}
       className={className}
       src={url}
       srcSet={srcSet}
@@ -35,6 +36,68 @@ export function Img({ src, alt = '', sizes = '100vw', className, eager = false }
     />
   );
 }
+
+/**
+ * The logo, sized by its shape rather than squeezed into a box: the build
+ * writes logoHeight (and logoWidth, logoRatio) from the file, so a badge is
+ * drawn taller than a long wordmark and neither is centered inside empty
+ * space. A brand file from before that keeps its width as a ceiling. The
+ * header is 82% of the size on a phone.
+ *
+ * `ground` is the color behind the mark where it is drawn. When that is not
+ * the logo's own ground (a dark footer under a logo made for white), the
+ * name is set in type there instead of boxing the logo. A mark with no name
+ * in it (logoName) carries the name beside it.
+ */
+export function BrandLogo({ b, className = '', textClass = '', scale = 1, ground = null }) {
+  const brand = b.brand;
+  if (!brand.logo) {
+    return <span className={`block font-heading text-[22px] font-bold leading-tight ${textClass}`}>{b.shortName}</span>;
+  }
+  let img;
+  if (brand.logoHeight) {
+    const h = Math.round(brand.logoHeight * scale);
+    img = (
+      <img
+        data-logo=""
+        className={`block h-[calc(var(--logo-h)*0.82)] w-auto max-w-[min(48vw,100%)] object-contain object-left sm:max-w-[min(62vw,100%)] lg:h-[var(--logo-h)] ${className}`}
+        style={{ '--logo-h': `${h}px` }}
+        src={brand.logo}
+        alt={b.name}
+        width={Math.round(brand.logoWidth * scale)}
+        height={h}
+      />
+    );
+  } else {
+    img = (
+      <img
+        data-logo=""
+        className={`block h-auto max-h-[44px] w-auto object-contain object-left lg:max-h-[56px] ${className}`}
+        style={{ maxWidth: `min(${Math.round((brand.logoWidth || 200) * scale)}px, 62vw)` }}
+        src={brand.logo}
+        alt={b.name}
+      />
+    );
+  }
+  const own = brand.logoGround || '#ffffff';
+  if (ground && Math.abs(luminance(ground) - luminance(own)) > 0.25) {
+    // A logo made for another ground is never boxed onto this one: the name is set in type.
+    return <span className={`block font-heading text-[22px] font-bold leading-tight ${textClass}`}>{b.shortName}</span>;
+  }
+  const mark = img;
+  if (!brand.logoName) return mark;
+  // A symbol with no name in it carries the name beside it, set in type.
+  return (
+    <span className="flex w-fit min-w-0 items-center gap-3">
+      <span className="flex-none">{mark}</span>
+      <span className={`block max-w-[15ch] font-heading text-[17px] font-bold leading-[1.1] sm:max-w-none lg:text-[21px] ${textClass}`}>
+        {b.shortName}
+      </span>
+    </span>
+  );
+}
+
+export { headDark };
 
 /** The logo when the business has one, its name set in type when it does not. */
 export function Logo({ b, className = '', textClass = '' }) {

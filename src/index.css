@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Display type weighted for its face: a serif heading reads at its regular
+   weight, a sans one needs its bold to carry at display sizes. The template
+   root sets the two variables from the brand's heading font. */
+@layer utilities {
+  .font-display {
+    font-weight: var(--display-weight, 700);
+    letter-spacing: var(--display-tracking, -0.02em);
+  }
+  .font-display-2 {
+    font-weight: var(--display-weight-2, 600);
+    letter-spacing: var(--display-tracking, -0.02em);
+  }
+}

@@ -10,16 +10,17 @@ import json
 import os
 import re
 
+import numpy as np
 from PIL import Image
 
-from . import compose, images
+from . import compose, images, logo, quality
 
 REQUIRED = {
     "professional": ["name", "shortName", "phone", "email", "address", "town", "state", "brand", "hero", "services", "about"],
     "roofing": ["name", "shortName", "phone", "address", "town", "state", "brand", "hero", "services", "about", "serviceArea"],
     "hvac": ["name", "shortName", "summary", "phone", "address", "town", "state", "brand", "hero", "groups"],
 }
-HERO = ["title", "lead", "image", "imageAlt"]
+HERO = ["title", "lead"]
 BRAND = ["primary", "heading", "body", "fonts"]
 PLACEHOLDER = re.compile(r"lorem|ipsum|sample-|example\.com|555-01|\bTODO\b|\bTBD\b|xxx|placeholder", re.I)
 
@@ -32,6 +33,8 @@ def shape(brand):
     for key in HERO:
         if not brand.get("hero", {}).get(key):
             problems.append(f"hero.{key} is missing")
+    if brand.get("hero", {}).get("image") and not brand["hero"].get("imageAlt"):
+        problems.append("hero.imageAlt is missing")
     for key in BRAND:
         if not brand.get("brand", {}).get(key):
             problems.append(f"brand.{key} is missing")
@@ -57,10 +60,59 @@ def facts(brand, evidence):
     return problems
 
 
+def _slots(brand):
+    """Every photo the brand draws and the slot it fills: the hero's is drawn
+    wide, every other one at card size."""
+    out = {}
+    hero = (brand.get("hero") or {}).get("image")
+    if hero:
+        out[hero] = "hero"
+    for section in ("about",):
+        image = (brand.get(section) or {}).get("image")
+        if image and image not in out:
+            out[image] = "card"
+    for item in (brand.get("services") or []) + (brand.get("groups") or []):
+        if item.get("image") and item["image"] not in out:
+            out[item["image"]] = "card"
+    return out
+
+
+def logo_problems(brand, root):
+    """Whether the logo file sits cleanly on the header color the brand gives it."""
+    b = brand.get("brand", {})
+    if not b.get("logo"):
+        return ["the brand has no logo"]
+    path = os.path.join(root, "public") + b["logo"]
+    if not os.path.exists(path):
+        return [f"{b['logo']} does not exist"]
+    if not b.get("logoGround") or not b.get("logoHeight"):
+        return ["the logo has no logoGround or logoHeight: prepare it with python3 -m scripts.autobuild.gate logo"]
+    with Image.open(path) as image:
+        arr = np.asarray(image.convert("RGBA"))
+    problems = []
+    ground = images.rgbof(b["logoGround"])
+    kind, color = logo.ground_of(arr)
+    if kind == "solid" and np.sqrt(sum((a - c) ** 2 for a, c in zip(color, ground))) > 30:
+        problems.append(f"the logo sits in a box of {logo.hexof(color)} on a {b['logoGround']} header")
+    if kind == "busy":
+        problems.append("the logo carries a picture or pattern behind it")
+    share = logo.legibility(arr, ground)
+    if share < logo.LEGIBLE_SHARE:
+        problems.append(f"too little of the logo stands out from its {b['logoGround']} header ({share:.0%})")
+    h, w = arr.shape[:2]
+    if w < b.get("logoWidth", 0) * logo.SOURCE_OVER_DRAWN or h < b.get("logoHeight", 0) * logo.SOURCE_OVER_DRAWN:
+        problems.append(f"the logo file is {w}x{h}px, too small for the {b.get('logoWidth')}x{b.get('logoHeight')} it is drawn")
+    sharp = logo.edge_sharpness(arr, ground, int(b["logoHeight"]) * 2)
+    if sharp < logo.EDGE_MIN:
+        problems.append(f"the logo's edges are soft ({sharp:.2f})")
+    return problems
+
+
 def pictures(brand, root, slug):
     problems = []
     folder = os.path.join(root, "public")
     refs = set(re.findall(rf"/brands/{re.escape(slug)}/[a-z0-9-]+(?:\.webp)?", json.dumps(brand)))
+    slots = _slots(brand)
     mine = {}
     for ref in refs:
         files = [ref] if ref.endswith(".webp") else [f"{ref}-800.webp", f"{ref}-1600.webp"]
@@ -70,12 +122,14 @@ def pictures(brand, root, slug):
                 problems.append(f"{f} does not exist")
                 continue
             with Image.open(path) as image:
-                if images.blank(image.convert("RGB")):
+                if images.blank_mark(image) if f.endswith("logo.webp") else images.blank(image.convert("RGB")):
                     problems.append(f"{f} is blank")
-                if not f.endswith("logo.webp") and image.width < 700 and f.endswith("-1600.webp"):
-                    problems.append(f"{f} is too small")
+                if f.endswith("-1600.webp") and ref in slots:
+                    for why in quality.problems(quality.metrics(image), slots[ref]):
+                        problems.append(f"{ref}: {why}")
                 if f.endswith("-800.webp") or f.endswith("logo.webp"):
                     mine[f] = images.ahash(image)
+    problems += logo_problems(brand, root)
     # No picture may be one already shown on another business's preview.
     for other in glob.glob(os.path.join(folder, "brands", "*", "*-800.webp")):
         if f"/brands/{slug}/" in other.replace(os.sep, "/"):
@@ -88,6 +142,12 @@ def pictures(brand, root, slug):
         for f, mh in mine.items():
             if images.distance(h, mh) <= 2:
                 problems.append(f"{f} is the same picture as {os.path.relpath(other, folder)}")
+    # Nor may one photo fill two places on this one.
+    used = [(brand.get("hero") or {}).get("image"), (brand.get("about") or {}).get("image")]
+    used += [item.get("image") for item in (brand.get("services") or []) + (brand.get("groups") or [])]
+    used = [u for u in used if u]
+    if len(used) != len(set(used)):
+        problems.append("one photo is used in two places")
     return problems
 
 

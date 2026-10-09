@@ -164,8 +164,8 @@ import {
   X,
   Zap,
 } from 'lucide-react';
-import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { EnquiryForm, Img, Stars, Facts } from './shared.jsx';
+import { brandVars, displayVars, mapsHref, ratingLine, telHref } from '../site.js';
+import { BrandLogo, EnquiryForm, Img, Stars, Facts } from './shared.jsx';
 import { onColor } from './hvac/color.js';
 
 const ICONS = {
@@ -218,7 +218,7 @@ const h2 =
   'font-heading text-[clamp(1.9rem,1.35rem+2.1vw,2.85rem)] font-extrabold leading-[1.08] tracking-[-0.025em] text-ink [text-wrap:balance] break-words';
 const lead = 'text-[17px] leading-[1.65] text-muted sm:text-[18px]';
 const btn =
-  'inline-flex min-h-[52px] items-center justify-center gap-2 rounded-xl px-6 font-heading text-[16px] font-bold no-underline transition duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary';
+  'inline-flex min-h-[52px] items-center justify-center gap-2 rounded-lg px-6 font-heading text-[16px] font-bold no-underline transition duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary';
 const btnPrimary = `${btn} bg-primary text-[color:var(--on-primary)] hover:bg-primary-deep hover:text-white`;
 const btnOutline = `${btn} border border-line bg-white text-ink hover:border-primary hover:text-[color:var(--pt)]`;
 const btnAccent = `${btn} bg-accent text-[color:var(--on-accent)] hover:brightness-105`;
@@ -236,17 +236,6 @@ function Eyebrow({ children, light = false }) {
       <span className={`h-1.5 w-1.5 flex-none rounded-full ${light ? 'bg-accent' : 'bg-primary'}`} aria-hidden="true" />
       <span className="min-w-0">{children}</span>
     </p>
-  );
-}
-
-function Mark({ b, className = '', light = false }) {
-  if (b.brand.logo) {
-    return <img className={`block w-auto max-w-[46vw] object-contain ${className}`} src={b.brand.logo} alt={b.name} />;
-  }
-  return (
-    <span className={`block truncate font-heading text-[19px] font-extrabold leading-tight tracking-[-0.02em] sm:text-[22px] ${light ? 'text-white' : 'text-ink'}`}>
-      {b.shortName}
-    </span>
   );
 }
 
@@ -332,8 +321,8 @@ function MegaMenu({ b, groups, tel, current }) {
       <button
         ref={button}
         type="button"
-        className={`flex h-[76px] cursor-pointer items-center gap-1.5 px-1 text-[16px] md:text-[15px] font-semibold transition hover:text-[color:var(--pt)] ${
-          open || groups.some((g) => g.slug === current) ? 'text-[color:var(--pt)]' : 'text-ink'
+        className={`flex h-[84px] cursor-pointer items-center gap-1.5 px-1 text-[16px] md:text-[15px] font-semibold text-head-ink transition hover:text-head-hover ${
+          open || groups.some((g) => g.slug === current) ? 'underline decoration-accent decoration-2 underline-offset-[10px]' : ''
         }`}
         aria-expanded={open}
         aria-controls="mega-menu"
@@ -479,10 +468,10 @@ function Header({ b, groups, tel, current }) {
   }, [open]);
 
   return (
-    <header className={`sticky ${stick} z-40 border-b border-line bg-white/95 backdrop-blur-md`}>
-      <div className={`${wrap} flex h-[68px] items-center gap-5 lg:h-[76px]`}>
-        <a href="/" className={`flex min-h-[44px] min-w-0 items-center ${b.brand.logo ? 'flex-none' : 'flex-1 lg:flex-none'}`} aria-label={`${b.name} home`}>
-          <Mark b={b} className="h-10 lg:h-11" />
+    <header className={`sticky ${stick} z-40 border-b border-head-line bg-head`}>
+      <div className={`${wrap} flex h-[76px] items-center gap-5 lg:h-[92px]`}>
+        <a href="/" className={`flex min-h-[44px] min-w-0 items-center ${b.brand.logo ? 'flex-initial lg:flex-none' : 'flex-1 lg:flex-none'}`} aria-label={`${b.name} home`}>
+          <BrandLogo b={b} textClass="truncate font-extrabold tracking-[-0.02em] text-head-ink" />
         </a>
 
         <nav aria-label="Main" className="mx-auto hidden lg:block">
@@ -493,8 +482,8 @@ function Header({ b, groups, tel, current }) {
                 <a
                   href={href}
                   aria-current={href.slice(1) === current ? 'page' : undefined}
-                  className={`flex h-[76px] items-center whitespace-nowrap px-2 text-[15px] font-semibold no-underline transition hover:text-[color:var(--pt)] ${
-                    href.slice(1) === current ? 'text-[color:var(--pt)]' : 'text-ink'
+                  className={`flex h-[84px] items-center whitespace-nowrap px-2 text-[15px] font-semibold text-head-ink no-underline transition hover:text-head-hover ${
+                    href.slice(1) === current ? 'underline decoration-accent decoration-2 underline-offset-[10px]' : ''
                   }`}
                 >
                   {label}
@@ -505,12 +494,12 @@ function Header({ b, groups, tel, current }) {
         </nav>
 
         <div className="ml-auto flex flex-none items-center gap-2 sm:gap-3 lg:ml-0">
-          <a href={tel} className="hidden min-h-[44px] items-center gap-3 pr-2 text-ink no-underline xl:flex">
+          <a href={tel} className="hidden min-h-[44px] items-center gap-3 pr-2 text-head-ink no-underline xl:flex">
             <span className="grid h-10 w-10 place-items-center rounded-full bg-surface text-[color:var(--pt)]">
               <Phone size={17} aria-hidden="true" />
             </span>
             <span className="grid leading-tight">
-              <span className="text-[12px] font-medium text-muted">{b.emergency ? 'Call 24/7' : 'Call Us'}</span>
+              <span className="text-[12px] font-medium text-head-soft">{b.emergency ? 'Call 24/7' : 'Call Us'}</span>
               <strong className="whitespace-nowrap font-heading text-[17px] font-bold">{b.phone}</strong>
             </span>
           </a>
@@ -522,7 +511,7 @@ function Header({ b, groups, tel, current }) {
           </a>
           <button
             type="button"
-            className="inline-flex h-11 cursor-pointer items-center gap-2 rounded-xl border border-line px-3.5 font-semibold text-ink lg:hidden"
+            className="inline-flex h-11 cursor-pointer items-center gap-2 rounded-lg border border-head-line px-3.5 font-semibold text-head-ink lg:hidden"
             aria-expanded={open}
             aria-controls="site-menu"
             onClick={() => setOpen((v) => !v)}
@@ -702,7 +691,7 @@ function ClosingBand({ b, tel, title, text, flush = false }) {
   return (
     <section className={`bg-white pb-[clamp(4rem,8vw,6.5rem)] ${flush ? '' : 'pt-[clamp(2.5rem,5vw,4rem)]'}`}>
       <div className={wrap}>
-        <div className="relative isolate overflow-hidden rounded-[28px] bg-primary-deep px-6 py-12 text-white sm:px-10 lg:px-14 lg:py-16">
+        <div className="relative isolate overflow-hidden rounded-xl bg-primary-deep px-6 py-12 text-white sm:px-10 lg:px-14 lg:py-16">
           <div className={`absolute inset-0 -z-10 opacity-60 ${gridBg} [mask-image:linear-gradient(90deg,transparent,black)]`} aria-hidden="true" />
           <div
             className="absolute -right-24 -top-24 -z-10 h-80 w-80 rounded-full bg-primary opacity-60 blur-3xl"
@@ -814,7 +803,7 @@ function Footer({ b, groups, tel }) {
       <div className={`${wrap} grid grid-cols-2 gap-x-6 gap-y-10 pb-12 pt-14 lg:grid-cols-[1.4fr_1fr_1.2fr] lg:gap-12`}>
         <div className="col-span-2 grid content-start gap-4 lg:col-span-1">
           <a href="/" className="flex min-h-[44px] w-fit max-w-full items-center" aria-label={`${b.name} home`}>
-            <Mark b={b} className="h-12" />
+            <BrandLogo b={b} ground="#f4f7fb" textClass="font-extrabold text-ink" />
           </a>
           {licenses.length > 0 && (
             <ul className="grid gap-1 text-[14px]">
@@ -903,38 +892,53 @@ function Home({ b, groups, tel }) {
   const firstTier = list(b.plan?.tiers)[0];
   return (
     <>
-      <section className="relative isolate overflow-hidden bg-white">
-        <div className={`absolute inset-0 -z-10 ${gridBg} [mask-image:radial-gradient(ellipse_at_top_left,black,transparent_65%)]`} aria-hidden="true" />
-        <div className={`${wrap} grid gap-10 pb-14 pt-10 sm:pt-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-center lg:gap-14 lg:pb-20 lg:pt-16 xl:gap-20`}>
+      <section className="relative isolate overflow-hidden bg-primary-deep text-white">
+        {b.hero.image ? (
+          <>
+            {/* On a phone the photo is shown whole above the words; from lg up it is the ground behind them. */}
+            <Img
+              className="relative block aspect-[16/10] w-full object-cover lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto lg:h-full"
+              src={b.hero.image}
+              alt={b.hero.imageAlt || ''}
+              sizes="100vw"
+              eager
+              data-backdrop=""
+            />
+            <div
+              className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_94%,#000)_0%,color-mix(in_srgb,var(--primaryDeep)_78%,transparent)_50%,color-mix(in_srgb,var(--primaryDeep)_30%,transparent)_100%)]"
+              aria-hidden="true"
+            />
+          </>
+        ) : (
+          // No photo strong enough to lead: the brand's own color, with the grid it draws elsewhere.
+          <div
+            className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_90%_0%,color-mix(in_srgb,var(--primary)_70%,transparent),transparent_60%)]"
+            aria-hidden="true"
+          />
+        )}
+        <div className={`${wrap} grid gap-10 py-10 sm:py-16 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:items-center lg:gap-16 lg:py-24 xl:gap-24`}>
           <div className="min-w-0">
-            <p className="mb-6 inline-flex max-w-full items-center gap-2 rounded-full border border-line bg-white py-1.5 pl-1.5 pr-4 text-[14px] font-medium text-ink shadow-[0_8px_20px_-14px_rgba(11,27,43,0.4)]">
-              <span className="grid h-7 w-7 flex-none place-items-center rounded-full bg-primary text-[color:var(--on-primary)]">
-                <GroupIcon name={groups[0]?.icon} size={14} />
-              </span>
-              <span className="min-w-0 truncate">{b.hero.eyebrow}</span>
-            </p>
-            <h1 className="font-heading text-[clamp(2.4rem,1.2rem+4.2vw,4.4rem)] font-extrabold leading-[1.02] tracking-[-0.035em] text-ink [text-wrap:balance] break-words">
-              {b.hero.title} {b.hero.titleAccent && <span className="text-[color:var(--pt)]">{b.hero.titleAccent}</span>}
+            <Eyebrow light>{b.hero.eyebrow}</Eyebrow>
+            <h1 className="font-heading font-display text-[clamp(2.4rem,1.2rem+4vw,4.3rem)] leading-[1.03] text-white [text-wrap:balance] break-words">
+              {b.hero.title} {b.hero.titleAccent && <span className="text-white/75">{b.hero.titleAccent}</span>}
             </h1>
-            <p className={`mt-6 max-w-[34rem] ${lead}`}>{b.hero.lead}</p>
-            <CtaPair b={b} tel={tel} />
+            <p className="mt-6 max-w-[34rem] text-[17px] leading-[1.65] text-white/85 sm:text-[18px]">{b.hero.lead}</p>
+            <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
+              <a href="/contact" className={`${btn} bg-white text-[color:var(--pt)] hover:bg-surface`}>
+                Schedule Service <ArrowRight size={18} aria-hidden="true" />
+              </a>
+              <a href={tel} className={`${btn} border border-white/40 text-white hover:bg-white/10`}>
+                <Phone size={17} aria-hidden="true" /> {b.phone}
+              </a>
+            </div>
             {rating && (
-              <p className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-1 text-[16px] md:text-[15px] font-medium text-muted">
+              <p className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-1 text-[16px] font-medium text-white/85 md:text-[15px]">
                 <Stars value={b.rating} size={16} /> <span>{rating}</span>
               </p>
             )}
           </div>
-          <div className="relative min-w-0">
-            <Img
-              className="aspect-[16/11] w-full rounded-[28px] object-cover lg:aspect-[4/5] lg:max-h-[640px]"
-              src={b.hero.image}
-              alt={b.hero.imageAlt}
-              sizes="(min-width: 1024px) 48vw, 100vw"
-              eager
-            />
-            <div className="relative -mt-16 px-3 sm:-mt-24 sm:px-10 lg:absolute lg:bottom-8 lg:left-auto lg:right-8 lg:mt-0 lg:w-[min(400px,calc(100%-4rem))] lg:px-0 xl:-left-14 xl:right-auto">
-              <BookingCard b={b} groups={groups} />
-            </div>
+          <div className="min-w-0 text-ink lg:justify-self-end lg:w-full lg:max-w-[420px]">
+            <BookingCard b={b} groups={groups} />
           </div>
         </div>
       </section>
@@ -1039,10 +1043,11 @@ function Home({ b, groups, tel }) {
 
       {b.about && (
         <section className={`${pad} bg-surface`}>
-          <div className={`${wrap} grid items-center gap-10 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-20`}>
+          <div className={`${wrap} grid items-center gap-10 ${b.about.image ? 'md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]' : ''} lg:gap-20`}>
+            {b.about.image && (
             <div className="relative">
               <Img
-                className="aspect-[4/3] w-full rounded-[24px] object-cover md:aspect-[4/5]"
+                className="aspect-[4/3] w-full rounded-xl object-cover"
                 src={b.about.image}
                 alt={b.about.imageAlt}
                 sizes="(min-width: 768px) 42vw, 100vw"
@@ -1054,7 +1059,8 @@ function Home({ b, groups, tel }) {
                 </p>
               )}
             </div>
-            <div>
+            )}
+            <div className={b.about.image ? '' : 'max-w-3xl'}>
               <Eyebrow>{b.about.eyebrow || 'About us'}</Eyebrow>
               <h2 className={h2}>{b.about.title}</h2>
               <p className={`mt-5 ${lead}`}>{list(b.about.text)[0]}</p>
@@ -1489,6 +1495,7 @@ export default function Hvac({ b, path = '' }) {
     '--muted': 'color-mix(in srgb, var(--ink) 72%, #fff)',
     '--surface': 'color-mix(in srgb, var(--primary) 6%, #fff)',
     '--line': 'color-mix(in srgb, var(--ink) 13%, #fff)',
+    ...displayVars(b.brand),
     ...brandVars(b.brand),
     '--on-primary': onColor(b.brand.primary),
     '--pt': onColor(b.brand.primary) === '#fff' ? 'var(--primary)' : 'var(--primaryDeep)',
