@@ -1,0 +1,326 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Kelm Home Services LLC",
+  "shortName": "Kelm Home Services",
+  "summary": "Generator, electrical and plumbing services for homes in Santa Fe, Houston and the surrounding area.",
+  "phone": "(409) 316-9834",
+  "email": "clintkelm@kelmserv.com",
+  "address": "4118 Jackson St",
+  "town": "Santa Fe",
+  "state": "TX",
+  "zip": "77517",
+  "rating": 4.9,
+  "reviewCount": 76,
+  "hours": [
+    ["Mon – Fri", "8 AM – 5 PM"],
+    ["Saturday", "8 AM – 5 PM"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#272a7c",
+    "primaryDeep": "#171a52",
+    "accent": "#f0a51e",
+    "ink": "#15161d",
+    "muted": "#55596b",
+    "surface": "#f2f3fa",
+    "line": "#dcdeea",
+    "heading": "'Archivo', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/kelmhome/logo.webp",
+    "logoWidth": 200
+  },
+  "licenses": [
+    { "label": "Master Electrician", "number": "TECL 21849" },
+    { "label": "Master Plumber", "number": "MPL 41051" },
+    { "label": "TMEL", "number": "510665" },
+    { "label": "RMP", "number": "41051" }
+  ],
+  "financing": {
+    "text": "Pay over time with the Synchrony Project Card, with no monthly interest when the balance is paid in full in 18 months."
+  },
+  "hero": {
+    "eyebrow": "Generator, electrical and plumbing services in Santa Fe",
+    "title": "Keep the power on",
+    "titleAccent": "when the grid goes down.",
+    "lead": "Protect your home from the risks caused by sudden power outages with a generator from Generac, installed by the factory-trained technicians at Kelm Home Services.",
+    "image": "/brands/kelmhome/hero",
+    "imageAlt": "A Generac home standby generator installed on a raised stand in a fenced back yard"
+  },
+  "groups": [
+    {
+      "slug": "home-standby-generators",
+      "title": "Home Standby Generators",
+      "icon": "power",
+      "summary": "Generac standby generators that start automatically within seconds of an outage.",
+      "intro": "In the event of a power failure, these reliable systems automatically start up, supplying electricity to your home until the local power utility restores service. Power returns in seconds, even if you are not home, and there is no fuel to go and find in an emergency.",
+      "image": "/brands/kelmhome/standby",
+      "imageAlt": "A raised coastal home with standby equipment installed beneath the deck",
+      "services": [
+        {
+          "slug": "generac-standby-generators",
+          "title": "Generac Standby Generators",
+          "icon": "power",
+          "text": "Generac home standby generators, supplied and installed by an authorized Generac dealer.",
+          "points": [
+            "Automatically senses and responds to power outages in seconds",
+            "No refueling needed",
+            "24/7 remote monitoring from your connected devices"
+          ]
+        },
+        {
+          "slug": "automatic-transfer-switches",
+          "title": "Automatic Transfer Switches",
+          "icon": "circuit",
+          "text": "The transfer switch is what hands the house over to the generator and back again. We supply and install service entrance rated switches alongside the generator.",
+          "points": ["100A, 200A and 400A service entrance rated switches"]
+        },
+        {
+          "slug": "free-estimates",
+          "title": "Free Estimates",
+          "icon": "home",
+          "text": "Get a free estimate from Kelm Home Services and discover how effortless power outage protection can be."
+        }
+      ]
+    },
+    {
+      "slug": "generator-installation",
+      "title": "Generator Installation",
+      "icon": "settings",
+      "summary": "Site prep, fuel line, transfer switch and every electrical connection, handled by one crew.",
+      "intro": "Permanent installation of a standby generator is not a do-it-yourself project. Kelm Home Services will prepare the installation site outside your home, place the generator, run the natural gas or LP fuel line, install the transfer switch, and make all of the necessary electrical connections.",
+      "image": "/brands/kelmhome/installation",
+      "imageAlt": "A newly installed standby generator and transfer switch on a raised stand beside a house",
+      "services": [
+        {
+          "slug": "site-preparation",
+          "title": "Site Preparation",
+          "icon": "home",
+          "text": "We prepare the installation site outside your home and set the generator in place.",
+          "points": [
+            "A site survey determines the best location, typically close to the fuel source",
+            "Site selection and preparation follow the guidelines in the installation manual"
+          ]
+        },
+        {
+          "slug": "fuel-line",
+          "title": "Fuel Line",
+          "icon": "flame",
+          "text": "The natural gas or LP fuel line is run to the generator as part of the installation."
+        },
+        {
+          "slug": "transfer-switch-installation",
+          "title": "Transfer Switch Installation",
+          "icon": "circuit",
+          "text": "The transfer switch goes in so the generator picks the house up on its own when the utility drops."
+        },
+        {
+          "slug": "electrical-connections",
+          "title": "Electrical Connections",
+          "icon": "zap",
+          "text": "All of the necessary electrical connections are made by a licensed electrician."
+        },
+        {
+          "slug": "start-up-and-testing",
+          "title": "Start-Up and Testing",
+          "icon": "gauge",
+          "text": "We make sure that your backup generator runs properly, and is ready for its first power outage."
+        }
+      ]
+    },
+    {
+      "slug": "repair-and-warranty",
+      "title": "Repair and Warranty",
+      "icon": "wrench",
+      "summary": "Annual service and factory-trained repair for Generac home backup generators.",
+      "intro": "You invested in a Generac automatic home backup generator, and now you are never without power. But just like a car, air-cooled backup generators need to be properly maintained to perform as intended. Our factory-trained technicians are available to handle all your Generac servicing needs.",
+      "image": "/brands/kelmhome/service",
+      "imageAlt": "A technician on a ladder servicing a standby generator on a raised stand",
+      "services": [
+        {
+          "slug": "annual-service",
+          "title": "Annual Service",
+          "icon": "timer",
+          "text": "We recommend you have your unit serviced annually so it performs as intended on the night you need it."
+        },
+        {
+          "slug": "generator-repair",
+          "title": "Generator Repair",
+          "icon": "wrench",
+          "text": "Factory-trained technicians who meet Generac's high standards for service and customer satisfaction.",
+          "points": [
+            "We dispatch technicians quickly",
+            "Our team is equipped to resolve most repairs right then and there"
+          ]
+        },
+        {
+          "slug": "warranty-support",
+          "title": "Warranty Support",
+          "icon": "shield",
+          "text": "Our service professionals meet warranty conditions and ensure safe and proper operation.",
+          "points": [
+            "Warranty questions go to Generac directly at 888-436-3722",
+            "Register your equipment at register.generac.com",
+            "Owner's manuals through Generac's online product support lookup"
+          ]
+        },
+        {
+          "slug": "emergency-assistance",
+          "title": "Emergency Assistance",
+          "icon": "battery",
+          "text": "Our service professionals are always here to provide emergency assistance."
+        }
+      ]
+    },
+    {
+      "slug": "electrical-and-plumbing",
+      "title": "Electrical and Plumbing",
+      "icon": "zap",
+      "summary": "Licensed electrical and plumbing work by a master electrician and master plumber.",
+      "intro": "Kelm Home Services is not generators alone. The owner is a master plumber and a master electrician, experienced and understanding of all your home's needs, so the wiring and the pipework stay with the same company that put the generator in.",
+      "image": "/brands/kelmhome/electrical",
+      "imageAlt": "A circuit breaker mounted inside an electrical panel",
+      "services": [
+        {
+          "slug": "electrical-service",
+          "title": "Electrical Service",
+          "icon": "zap",
+          "text": "Electrical work carried out by a master electrician.",
+          "points": ["Master electrician, Lic.# TECL 21849"]
+        },
+        {
+          "slug": "plumbing-service",
+          "title": "Plumbing Service",
+          "icon": "droplets",
+          "text": "Plumbing work carried out by a master plumber.",
+          "points": ["Master plumber, Lic.# MPL 41051"]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Flexible financing",
+    "title": "Purchase a Generac unit with no monthly interest if paid in full in 18 months.",
+    "text": "The Synchrony Project Card offers a variety of financing options for your home generator system purchase, with a dedicated credit limit, $0 fraud liability and fast credit decisions."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "A Santa Fe shop run by a master electrician and master plumber.",
+    "text": [
+      "Protect your home from the risks caused by sudden power outages with a generator from Generac, the industry leader, installed by the experts at Kelm Home Services. In the event of a power failure, these reliable systems automatically start up, supplying electricity to your home until the local power utility restores service.",
+      "Permanent installation of a standby generator is not a do-it-yourself project. Kelm Home Services has factory-trained technicians who meet Generac's high standards for service and customer satisfaction. Our service professionals meet warranty conditions, ensure safe and proper operation, and are always here to provide emergency assistance.",
+      "The Kelm Services owner is a master plumber (Lic.# MPL41051) and master electrician (Lic.# TECL21849), experienced and understanding of all your home's needs."
+    ],
+    "image": "/brands/kelmhome/about",
+    "imageAlt": "The Kelm Home Services sign showing plumbing, generators and electrical work and the license numbers",
+    "values": [
+      {
+        "title": "Factory-trained technicians",
+        "text": "Our technicians meet Generac's high standards for service and customer satisfaction."
+      },
+      {
+        "title": "Most repairs on the spot",
+        "text": "We dispatch technicians quickly, and our team is equipped to resolve most repairs right then and there."
+      },
+      {
+        "title": "Warranty conditions met",
+        "text": "Our service professionals meet warranty conditions and ensure safe and proper operation."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What size generator do I need for my home?",
+      "a": "Many factors affect generator sizing and your home's power needs, including how often you expect an outage. Kelm Home Services determines which home standby generator suits your home, and a free quote includes sizing options and price."
+    },
+    {
+      "q": "Where can a generator be placed or installed?",
+      "a": "Outside your home, typically close to the fuel source, whether that is a propane tank or a natural gas meter. We also carry out a site survey to settle on the best location, following the site selection and preparation guidelines in the installation manual."
+    },
+    {
+      "q": "Can I install a home standby generator myself?",
+      "a": "Permanent installation of a standby generator is not a do-it-yourself project. Kelm Home Services has factory-trained technicians who meet Generac's high standards for service and customer satisfaction."
+    },
+    {
+      "q": "How often should my generator be serviced?",
+      "a": "Once a year. Just like a car, air-cooled backup generators need to be properly maintained to perform as intended, and our factory-trained technicians handle all Generac servicing needs."
+    },
+    {
+      "q": "Where do I find the owner's manual for my generator?",
+      "a": "Use the online product support lookup on the Generac.com website. You can find your manual with your model number or your serial number."
+    },
+    {
+      "q": "Who do I ask about my Generac warranty?",
+      "a": "Contact Generac directly at 888-GENERAC (888-436-3722). To ensure accurate warranty coverage, make sure your equipment is registered at register.generac.com, which also gives you proof of purchase in the event of an insurance loss such as fire, flood or theft."
+    },
+    {
+      "q": "Do you offer financing?",
+      "a": "Yes. The Synchrony Project Card carries no monthly interest if the promotional balance is paid in full within 18 months. Minimum monthly payments are required, and a $29 account activation fee may apply."
+    }
+  ],
+  "serviceArea": ["Santa Fe", "Houston and surrounding areas"],
+  "facts": [
+    {
+      "heading": "Brands We Install",
+      "items": ["Generac, as an authorized dealer", "Kohler"]
+    },
+    {
+      "heading": "Equipment We Supply",
+      "items": [
+        "Generac home standby generators",
+        "Automatic transfer switches, 100A to 400A, service entrance rated",
+        "Diesel standby generators up to 50 kW, single phase"
+      ]
+    },
+    {
+      "heading": "Financing",
+      "items": [
+        "Synchrony Project Card, with a dedicated credit limit for future home improvement projects",
+        "No monthly interest if paid in full in 18 months",
+        "$0 money down options available",
+        "$0 fraud liability and fast credit decisions",
+        "Minimum monthly payments required and a $29 account activation fee may apply",
+        "Promotional financing with convenient monthly payments",
+        "Apply or check whether you prequalify online through Synchrony, and current cardholders pay a bill or update their account there too",
+        "The finance offer itself comes from Generac's partners rather than from us"
+      ]
+    },
+    {
+      "heading": "Maintenance",
+      "items": [
+        "All generators need periodic maintenance, such as oil and filter changes, for maximum performance and reliable service",
+        "Scheduled maintenance kits are available",
+        "Many authorized dealers offer annual maintenance contracts"
+      ]
+    },
+    {
+      "heading": "Current Generac Offer",
+      "items": [
+        "A qualifying air-cooled home standby generator, 10 kW to 28 kW, comes with a free 10-year extended limited warranty, a $1,035 value",
+        "Purchases must be made 17 August 2026 to 27 September 2026, and the unit installed and activated by 1 January 2027",
+        "Limit one per household, refurbished products excluded, and all redemptions are subject to Generac's review and approval"
+      ]
+    },
+    {
+      "heading": "Quotes",
+      "text": "A free home standby generator quote is requested online or by phone, and it covers sizing options and price."
+    },
+    {
+      "heading": "Booking",
+      "text": "Visits can be booked online through our Housecall Pro booking page as well as by phone."
+    },
+    {
+      "heading": "Emergency Assistance",
+      "text": "Our service professionals are always here to provide emergency assistance. We dispatch technicians quickly, and our team is equipped to resolve most repairs right then and there."
+    },
+    {
+      "heading": "Preparedness Guides",
+      "text": "Generac's hurricane preparedness and cold weather preparedness guides are available to download from us, with tips on getting your family and home ready before a storm season."
+    },
+    {
+      "heading": "Find Us",
+      "text": "We are on Facebook as Kelm Home Services LLC."
+    }
+  ]
+}

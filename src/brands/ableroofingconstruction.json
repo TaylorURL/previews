@@ -1,0 +1,374 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "Able Roofing & Construction",
+  "shortName": "Able Roofing",
+  "phone": "(409) 948-1033",
+  "email": "jobs@ableroofingtx.com",
+  "address": "1450 Texas Ave",
+  "town": "Texas City",
+  "state": "TX",
+  "zip": "77590",
+  "rating": 4.5,
+  "reviewCount": 41,
+  "since": 1962,
+  "license": "Fully licensed and insured, GAF Certified roofing contractor",
+  "hours": [
+    [
+      "Mon – Fri",
+      "7:30 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#d81e26",
+    "primaryDeep": "#8f1016",
+    "accent": "#3b9ae1",
+    "ink": "#1b1c1e",
+    "surface": "#f4f2ef",
+    "heading": "'Oswald', 'Arial Narrow', sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/ableroofingconstruction/logo.webp",
+    "logoWidth": 220
+  },
+  "hero": {
+    "eyebrow": "Texas City roofing and remodeling contractor",
+    "title": "Keeping your",
+    "titleAccent": "family covered.",
+    "lead": "A family-owned general contractor in Texas City since 1962, roofing and remodeling homes and businesses across Galveston County. Call for a free consultation and estimate.",
+    "image": "/brands/ableroofingconstruction/hero",
+    "imageAlt": "Shingle roofs and gables on a two-story home"
+  },
+  "promises": [
+    "Free consultation and estimate",
+    "GAF Certified roofing contractor",
+    "Workmanship warranty on our labor",
+    "24/7 emergency service"
+  ],
+  "services": [
+    {
+      "slug": "roof-replacement",
+      "group": "residential",
+      "title": "Roof Replacement",
+      "short": "New roofs and re-roofs, installed since 1962.",
+      "text": "New roof installation, tear-off and re-roofing for homes, businesses and new construction, in asphalt shingle, wood, metal or flat roofing.",
+      "image": "/brands/ableroofingconstruction/replacement",
+      "imageAlt": "A new asphalt shingle roof on a house",
+      "materials": true,
+      "body": [
+        "Able Roofing & Construction has been building and replacing roofs for Texas customers since 1962. We have provided hundreds of property owners with new roofs, and we would love to do the same for you.",
+        "We install roofing materials from all of the leading manufacturers, including GAF, CertainTeed, TAMKO and Owens Corning. Whether you want traditional asphalt shingles or something more unique, such as wood or metal, we can handle it. We also work with general contractors and other property owners to build new roofs for new-construction jobs."
+      ],
+      "points": [
+        "Roofing installation",
+        "Roofing tear-off and re-roofing",
+        "Laminated and architectural shingles",
+        "Asphalt 3-tab shingles",
+        "Wood shingles, metal roofing and flat roofing",
+        "Workmanship warranty on our labor"
+      ],
+      "faqs": [
+        {
+          "q": "Which shingles do you install?",
+          "a": "Our most popular choices are laminated or architectural shingles and asphalt 3-tab shingles. We also install wood shingles, metal roofing and flat roofing."
+        },
+        {
+          "q": "What does your labor warranty cover?",
+          "a": "We offer three workmanship warranty programs: a 25-year labor warranty on 3-tab standard roofing, a 40-year labor warranty on laminated or architectural shingle roofing with a 5-year service warranty, and a 50-year comprehensive, non-prorated, transferrable warranty covering 100% of labor and material."
+        }
+      ]
+    },
+    {
+      "slug": "roof-repair",
+      "group": "residential",
+      "title": "Roof Repair",
+      "short": "Leaks, shingle damage, fascia and soffit.",
+      "text": "From roof leaks to minor shingle damage, we take care of all roof repair needs, with restoration you can rely on.",
+      "image": "/brands/ableroofingconstruction/repair",
+      "imageAlt": "Damaged shingles being removed from a residential roof",
+      "body": [
+        "Your roof plays an important role in protecting the structure and the people inside, so it is important to call for repairs as soon as you notice significant damage.",
+        "After over 50 years in business we are familiar with even the most uncommon roof problems, and we have the expertise and skills to give you a roof that lasts for decades. It is our job to give you peace of mind knowing that Able Roofing & Construction will restore your roof to peak performance."
+      ],
+      "points": [
+        "Roof leak repair",
+        "Shingle repair and replacement",
+        "Fascia and soffit repair",
+        "Flat roof repair",
+        "Restoration after storm or weather damage"
+      ]
+    },
+    {
+      "slug": "gutters",
+      "group": "residential",
+      "title": "Gutters",
+      "short": "Seamless gutters, downspouts and guards.",
+      "text": "New gutter installation, repair and gutter guards to move rainwater away from the structure and protect the property from water damage.",
+      "image": "/brands/ableroofingconstruction/gutters",
+      "imageAlt": "A gutter running along the edge of a house roof",
+      "body": [
+        "As part of our complete roofing services, we can provide new gutter installation to protect your home or commercial property from water damage.",
+        "We install new downspouts and seamless gutters to move rainwater away from the structure, protecting the roof, siding, foundation and everything in between."
+      ],
+      "points": [
+        "Gutter installation",
+        "Gutter repair",
+        "Gutter guard installation",
+        "Seamless gutters and downspouts"
+      ]
+    },
+    {
+      "slug": "painting-and-siding",
+      "group": "residential",
+      "title": "Painting and Siding",
+      "short": "Interior and exterior painting, siding installation.",
+      "text": "Professional painting and siding for homes and businesses, including James Hardie fiber cement and vinyl siding, inside and out.",
+      "image": "/brands/ableroofingconstruction/painting-siding",
+      "imageAlt": "Freshly painted exterior siding on a house",
+      "body": [
+        "Without durable siding, your property is at risk for a whole host of problems, such as water damage and insect penetration. We specialize in installing various types of siding, including James Hardie fiber cement siding as well as vinyl. We can remove your old, damaged siding and complete a replacement job to make sure your home or commercial property is protected, and we also perform siding installation for new-construction projects.",
+        "Our painters are available to paint any surface of your home or business, including interior walls and ceilings as well as your property's exterior. We use only the best paint brands along with professional equipment, prepare all surfaces properly, and keep the job site clean and tidy from beginning to end."
+      ],
+      "points": [
+        "New siding installation and replacement",
+        "James Hardie fiber cement siding",
+        "Vinyl siding",
+        "Interior painting",
+        "Exterior painting",
+        "Siding for new construction"
+      ]
+    },
+    {
+      "slug": "home-additions",
+      "group": "residential",
+      "title": "Home Additions",
+      "short": "More living space, designed and built.",
+      "text": "Create more living space, add value to your home and live more comfortably with a home addition designed and built by our own crews.",
+      "image": "/brands/ableroofingconstruction/home-additions",
+      "imageAlt": "A framed home addition under construction",
+      "body": [
+        "Since 1962 our construction company has been building rooms for homeowners throughout south Texas. We specialize in listening to our customers' ideas and turning them into home additions that look as if they were always part of the home.",
+        "Planning and constructing a new space is no small task, and we approach your project with meticulous care. We start by visiting your home to discuss your needs and assess the existing space, and we answer the questions that decide the job: whether to build up or out, the best location for the addition, whether an attic or unused garage can be transformed, any zoning restrictions, and where the electrical and plumbing lines run."
+      ],
+      "points": [
+        "Bathrooms and bedrooms",
+        "Guest houses and guest suites",
+        "Garage conversions",
+        "Game and rec rooms",
+        "Pool houses",
+        "Home theaters and man caves"
+      ]
+    },
+    {
+      "slug": "kitchen-remodeling",
+      "group": "residential",
+      "title": "Kitchen Remodeling",
+      "short": "New cabinets through a full kitchen makeover.",
+      "text": "New cabinets, countertops and flooring through to a complete kitchen makeover, handled from beginning to end by our own team.",
+      "image": "/brands/ableroofingconstruction/kitchen",
+      "imageAlt": "A remodeled kitchen with new cabinets and countertops",
+      "body": [
+        "Since 1962 we have remodeled thousands of kitchens in Galveston County and surrounding areas, and we can give you the same results on your next kitchen renovation.",
+        "As a family-owned company, we promise to listen carefully and make sure you get everything you want in your new kitchen. Our team is fully trained and experienced in kitchen construction, and we handle the project from beginning to end. We are not happy with the results until you are."
+      ],
+      "points": [
+        "Cabinetry",
+        "Countertops",
+        "Flooring",
+        "Plumbing and electrical",
+        "Lights and backsplash",
+        "Sinks, faucets and islands"
+      ]
+    },
+    {
+      "slug": "bathroom-remodeling",
+      "group": "residential",
+      "title": "Bathroom Remodeling",
+      "short": "Simple updates through full bathroom makeovers.",
+      "text": "A simple update or a complete makeover, from tub-to-shower conversions and new flooring to fixtures, plumbing and electrical.",
+      "image": "/brands/ableroofingconstruction/bathroom",
+      "imageAlt": "A remodeled bathroom with a tiled shower",
+      "body": [
+        "We have served as local bathroom remodeling contractors for customers throughout south Texas since 1962, and we would love to give you the new bathroom you are dreaming of.",
+        "We treat every project as if it were our own home. We understand that hiring a contractor to work on your house can feel daunting, and we want you to be confident that your expectations will be met. From the initial design to the final touches, we are here to make your bathroom remodel a happy experience."
+      ],
+      "points": [
+        "Flooring replacement",
+        "Tub-to-shower conversions",
+        "New tub and shower installation",
+        "Plumbing and electrical",
+        "Lights and fixture installation",
+        "Sinks, faucets and bathroom fans"
+      ]
+    },
+    {
+      "slug": "commercial-construction",
+      "group": "commercial",
+      "title": "Commercial Construction",
+      "short": "Tenant finishes and commercial remodeling.",
+      "text": "Tenant finishes, commercial remodeling and commercial roofing for businesses throughout Galveston County and the surrounding area.",
+      "image": "/brands/ableroofingconstruction/commercial",
+      "imageAlt": "A commercial building under construction",
+      "body": [
+        "Able Roofing & Construction is available to complete tenant finishes and other commercial remodeling services for businesses throughout the area. We perform construction services for a variety of business types, including retail stores, office buildings, restaurants and more.",
+        "Our roofing services cover commercial buildings as well, including flat roofing and the materials that keep a flat-roofed property watertight. Contact us for a free bid on your project."
+      ],
+      "points": [
+        "Tenant finishes",
+        "Commercial remodeling",
+        "Retail stores, offices and restaurants",
+        "Commercial roofing and flat roofing",
+        "Commercial painting and siding",
+        "Free bid on your project"
+      ]
+    }
+  ],
+  "materials": {
+    "title": "Manufacturers we install",
+    "text": "We source materials from the leading roofing manufacturers, and we have been a GAF Certified roofing contractor since 2009.",
+    "brands": [
+      "GAF",
+      "CertainTeed",
+      "TAMKO",
+      "Owens Corning"
+    ]
+  },
+  "about": {
+    "title": "A family company in Texas City since 1962",
+    "text": [
+      "Able Roofing & Construction is a full-service general contractor that specializes in roofing and remodeling. We serve homeowners and business owners throughout all of Galveston County and surrounding areas, and we are proud of our reputation in the local community for being an honest and reliable company.",
+      "This company was founded in 1962 by our late beloved father, Daniel J. Scheumack. Today his son, Joe Scheumack, Joe's wife, Billie, and their son, Danny, continue to provide our Texas neighbors with trustworthy, top-quality roofing and remodeling services.",
+      "Our president and owner, Joe, is a highly skilled general contractor who brings strong family values to the business. It is his goal to make sure every customer we serve is happy with our service. It has been that way for over 50 years since his dad ran the company, and we do not intend to change it."
+    ],
+    "image": "/brands/ableroofingconstruction/crew",
+    "imageAlt": "The Able Roofing & Construction team in front of their trucks and office in Texas City",
+    "values": [
+      {
+        "title": "Family-owned",
+        "text": "Three generations of the Scheumack family, dedicated to honest family values."
+      },
+      {
+        "title": "GAF Certified",
+        "text": "Our skills have been tested and approved by the leading roofing manufacturer."
+      },
+      {
+        "title": "One-stop source",
+        "text": "From small roof repairs to complete home additions and tenant finishes."
+      }
+    ]
+  },
+  "inspection": {
+    "title": "How a free estimate works",
+    "steps": [
+      {
+        "title": "Call or send the form",
+        "text": "Call (409) 948-1033 or fill out the form on this page with what you need."
+      },
+      {
+        "title": "We get back to you",
+        "text": "We respond within the next business day or sooner to set a time."
+      },
+      {
+        "title": "Free consultation and estimate",
+        "text": "We listen to your ideas and give you a free estimate for the work."
+      }
+    ]
+  },
+  "serviceArea": [
+    "Texas City",
+    "Galveston",
+    "Houston",
+    "Dickinson",
+    "League City",
+    "Pearland",
+    "Alvin",
+    "Pasadena",
+    "La Porte",
+    "Baytown",
+    "Angleton",
+    "Sugar Land",
+    "Damon"
+  ],
+  "areasText": "From our office on Texas Avenue in Texas City, we serve customers throughout all of Galveston County and surrounding areas.",
+  "areasImage": "/brands/ableroofingconstruction/areas",
+  "areasImageAlt": "An aerial view of a residential neighborhood",
+  "contactImage": "/brands/ableroofingconstruction/contact",
+  "contactImageAlt": "A tile roof against a clear blue sky",
+  "facts": [
+    {
+      "heading": "Workmanship warranty programs",
+      "items": [
+        "Good: 25-year labor warranty for 3-tab standard roofing",
+        "Better: 40-year labor warranty for laminated or architectural shingle roofing, including a 5-year service warranty",
+        "Best: 50-year comprehensive warranty for laminated or architectural shingle roofing, non-prorated, transferrable, covering 100% labor and material"
+      ]
+    },
+    {
+      "heading": "Appointments and emergencies",
+      "text": "We offer scheduled appointments as well as 24/7 emergency service, and we respond to enquiries within the next business day or sooner."
+    },
+    {
+      "heading": "GAF Certification",
+      "text": "We have been a GAF Certified roofing contractor since 2009. Certification means our skills have been tested and approved by the leading roofing manufacturer in the industry, and the GAF certification program is known as the gold standard in roofing services."
+    },
+    {
+      "heading": "Roofing materials we work with",
+      "items": [
+        "Laminated and architectural shingles",
+        "Asphalt 3-tab shingles",
+        "Wood shingles",
+        "Metal roofing",
+        "Flat roofing"
+      ]
+    },
+    {
+      "heading": "The family behind the company",
+      "items": [
+        "Founded in 1962 by Daniel J. Scheumack",
+        "Joe Scheumack, president and owner",
+        "Billie Scheumack",
+        "Danny Scheumack"
+      ]
+    },
+    {
+      "heading": "Our top construction services",
+      "items": [
+        "Roof replacement",
+        "Roof repairs",
+        "New roofing",
+        "Painting",
+        "Siding",
+        "Decks",
+        "Home additions",
+        "Kitchen remodeling",
+        "Bathroom remodeling",
+        "Commercial construction"
+      ]
+    },
+    {
+      "heading": "Planning a home addition",
+      "items": [
+        "We visit your home to discuss your needs and assess the existing space",
+        "We answer whether to build up or out, the best location for the addition, whether an attic or unused garage can be transformed, any zoning restrictions and where the electrical and plumbing lines run",
+        "We confirm whether those lines support a new addition or new lines are needed, how much the addition will cost and whether it will increase your home's value",
+        "We design the addition, pull any needed permits and start preparing to build"
+      ]
+    },
+    {
+      "heading": "Satisfaction guaranteed",
+      "text": "We provide reliable remodeling services at affordable rates, and your satisfaction is guaranteed. No job is too big or too small."
+    },
+    {
+      "heading": "Find us on Facebook",
+      "text": "facebook.com/ableroofingandconstructioninc"
+    }
+  ]
+}

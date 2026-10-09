@@ -1,0 +1,508 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "insurance",
+  "name": "Helix Insurance Group",
+  "shortName": "Helix Insurance",
+  "tagline": "Real people, real coverage",
+  "phone": "(409) 797-4040",
+  "email": "adam.rust@helixinsurancegroup.com",
+  "address": "101 Tiki Dr, Suite 202",
+  "town": "Galveston",
+  "state": "TX",
+  "zip": "77554",
+  "rating": 4.9,
+  "reviewCount": 686,
+  "hours": [
+    [
+      "Mon – Fri",
+      "8:30 AM – 6 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Get a Quote",
+    "text": "Select the product you need and get started, or call and talk it through with an agent."
+  },
+  "brand": {
+    "primary": "#1d2328",
+    "primaryDeep": "#0f1317",
+    "accent": "#c8161b",
+    "ink": "#15191d",
+    "muted": "#5b6470",
+    "surface": "#f7f6f4",
+    "cream": "#efeceb",
+    "line": "#e2dedb",
+    "heading": "'Raleway', system-ui, sans-serif",
+    "body": "'Hind', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Hind:wght@300;400;500;600;700&display=swap",
+    "logo": "/brands/helixinsurancegroup/logo.webp",
+    "logoWidth": 210
+  },
+  "hero": {
+    "eyebrow": "Independent insurance agency",
+    "title": "Real people, real coverage.",
+    "lead": "It is about making new connections, providing the right products or services, rethinking the customer experience and enhancing the overall insurance process in a new and innovating way. We provide smart, simple solutions for all of our customers.",
+    "image": "/brands/helixinsurancegroup/hero",
+    "imageAlt": "A couple going over their coverage together",
+    "points": [
+      "Quotes from several carriers",
+      "Personal and commercial lines",
+      "An advisor for every customer"
+    ]
+  },
+  "overview": {
+    "title": "What we offer, for individuals and for business.",
+    "text": "Helix Insurance Group has the ability to shop among the most financially stable and reliable insurance companies to find the right insurance policy that meets your needs, coverage, and budget today."
+  },
+  "audiences": {
+    "individuals": "For Individual",
+    "businesses": "For Business"
+  },
+  "services": [
+    {
+      "slug": "auto",
+      "title": "Auto",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Liability, collision and uninsured motorist.",
+      "text": "Feel confident when driving is what we provide. So steer your way to confidence and savings.",
+      "lead": "Auto insurance is something we all must have in the State of Texas, by law, so make sure you are covered adequately when you need it. Buying more than the state's minimum requirement will protect your assets if you get into an accident.",
+      "image": "/brands/helixinsurancegroup/auto",
+      "imageAlt": "A car on an open road",
+      "covers": [
+        {
+          "title": "Bodily Injury Liability",
+          "text": "Covers the designated driver or policyholder if they injure others. Family members listed on your policy are also covered if driving another person's vehicle with their permission. Be careful with the minimum liability coverage, because the amount you buy may not cover you completely in a serious accident or if you are served with a lawsuit."
+        },
+        {
+          "title": "Medical Payments",
+          "text": "Pays for the care of injuries to the driver and passengers of the policyholder's car in the event of an accident, and depending on the amount of coverage you choose can cover medical costs, lost wages and possible funeral costs."
+        },
+        {
+          "title": "Property Damage Liability",
+          "text": "Covers the damage you, or someone driving your car with your permission, does to another person's property, such as lamp posts, telephone poles, buildings and fences."
+        },
+        {
+          "title": "Collision",
+          "text": "Covers damage to your car that results from a collision with another vehicle or object, including potholes or if it flips over. A higher deductible will result in a lower premium."
+        },
+        {
+          "title": "Comprehensive",
+          "text": "Covers your car when it is stolen or damaged by something other than a collision, such as fire, falling objects, explosions, hail or vandalism, and reimburses you if your windshield is cracked or shattered. Some companies offer glass coverage with or without a deductible."
+        },
+        {
+          "title": "Uninsured and Underinsured Motorist",
+          "text": "Reimburses you, a family member or a designated driver when you are hit by an uninsured driver or a hit and run, or when an at-fault driver does not carry enough insurance. It can also apply if you are hit as a pedestrian."
+        }
+      ]
+    },
+    {
+      "slug": "home",
+      "title": "Home",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Dwelling, contents, liability and endorsements.",
+      "text": "Owning a home is one of the biggest investments you will ever make, let us help you protect it.",
+      "lead": "Unlike auto insurance, homeowners insurance has many components involved that determine the quality of coverage. In most cases our houses will be the largest investment we will ever make, which is why it is important to make sure your investment is properly covered.",
+      "image": "/brands/helixinsurancegroup/home",
+      "imageAlt": "A family home with a covered porch",
+      "covers": [
+        {
+          "title": "Coverage A – Dwelling",
+          "text": "Applies to the primary structure of the home and may include structures attached to it, such as an attached garage, carport or deck. It is critically important that your policy is 100 percent replacement."
+        },
+        {
+          "title": "Coverage B – Other Structures",
+          "text": "Anything detached or separated from the home that is damaged, such as a detached garage, shed, pool or outdoor storage."
+        },
+        {
+          "title": "Coverage C – Personal Property",
+          "text": "Property owned by the insured or a family member residing at the residence. If you flipped your house upside down, everything that would fall out counts: appliances, clothing, furniture."
+        },
+        {
+          "title": "Coverage D – Loss of Use",
+          "text": "Pays out for additional living expenses incurred because you are unable to reside in your home."
+        },
+        {
+          "title": "Coverage E – Personal Liability",
+          "text": "Covers claims or suits brought against an insured because of bodily injury or damages while on your property."
+        },
+        {
+          "title": "Endorsements and additional coverages",
+          "text": "Scheduled jewelry, firearms and fine arts; pipe burst; extension to a secondary residence; water back-up of sewer or drains; mold limited fungi coverage; watercraft and jet ski options."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Should somebody look over the policy I have now?",
+          "a": "It is a good practice to have a reliable agent review your policy to ensure your coverage is suitable to your possible risks."
+        }
+      ]
+    },
+    {
+      "slug": "life",
+      "title": "Life",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Term, universal and whole life.",
+      "text": "The most important part of buying life insurance is determining how much you need and we can help.",
+      "lead": "Life insurance is a crucial step in planning for your future and the future of your loved ones. It can fulfill promises made to your family if you are no longer around by providing a death benefit to your beneficiaries, and it can also provide benefits while you are living.",
+      "image": "/brands/helixinsurancegroup/life",
+      "imageAlt": "A family walking together outdoors",
+      "covers": [
+        {
+          "title": "Term life insurance",
+          "text": "Protection for a specified period of time, generally less expensive than permanent life insurance, available in varying terms with fixed premiums from one year to a 20-year level term. It can sometimes be converted to permanent coverage."
+        },
+        {
+          "title": "Universal life insurance",
+          "text": "Permanent coverage characterized by flexible premiums, flexible face amounts and unbundled pricing. It can build cash value, which earns an interest rate that may adjust but is usually guaranteed not to fall below a certain percentage."
+        },
+        {
+          "title": "Whole life insurance",
+          "text": "Permanent coverage that remains in force during the insured person's lifetime, provided the premiums are paid as specified in the policy, and that can build cash value."
+        },
+        {
+          "title": "Living benefits",
+          "text": "Loans or withdrawals can be taken against the cash value of a permanent policy to help with expenses, such as college tuition or the down payment on a home."
+        },
+        {
+          "title": "Death benefits",
+          "text": "Income tax-free money to your named beneficiaries for funeral expenses, debt, tuition or estate taxes, and business security that enables partners to buy out a deceased partner's interest and prevent a forced liquidation."
+        },
+        {
+          "title": "Policy reviews",
+          "text": "A look at your coverage once a year, because when changes in your life happen you want to make sure you and your loved ones are well prepared."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How do I determine how much life insurance I need?",
+          "a": "The value should be on average 8 to 10 times your income. We can assist you in determining an appropriate coverage amount and help you decide which type of life insurance is right for you."
+        },
+        {
+          "q": "What should I weigh when assessing my needs?",
+          "a": "A spouse, dependent children, aging parents or a physically challenged relative who depends on you, retirement savings that are not sufficient for your spouse's future, a sizable estate, and a business."
+        }
+      ]
+    },
+    {
+      "slug": "recreational",
+      "title": "Recreational",
+      "audience": "individuals",
+      "icon": "anchor",
+      "summary": "Motorcycles, boats and watercraft.",
+      "text": "Selecting your motorcycle is a big decision. Protecting your motorcycle is easy.",
+      "lead": "Whether you are a weekend warrior, a casual rider or a hardcore motorcyclist, our motorcycle insurance policy offers protection for you, your bike and your accessories. The policy is designed to meet the personal and financial needs of most motorcycle owners.",
+      "image": "/brands/helixinsurancegroup/recreational",
+      "imageAlt": "A motorcycle parked on a coastal road",
+      "covers": [
+        {
+          "title": "Coverage and deductibles you pick",
+          "text": "All you need to do is choose the type of coverage and deductibles that best cover your motorcycle and your lifestyle, and we will do the rest."
+        },
+        {
+          "title": "Competitive prices and payment plans",
+          "text": "We offer competitive prices plus convenient payment plans."
+        },
+        {
+          "title": "A carrier that will be there",
+          "text": "We place your coverage with a company that has the financial stability to be there when you need them most."
+        },
+        {
+          "title": "Discounts",
+          "text": "No doubt you will qualify for some of our discounts that will make your motorcycle insurance premiums even lower."
+        },
+        {
+          "title": "Boats, umbrella and more",
+          "text": "Our agents also write boats, recreational life and umbrella coverage alongside your other policies."
+        }
+      ]
+    },
+    {
+      "slug": "business-owners",
+      "title": "Business Owners",
+      "audience": "businesses",
+      "icon": "store",
+      "summary": "A BOP bundle for small businesses.",
+      "text": "When you have to have it, we can deliver. Call us to protect your business and future.",
+      "lead": "A business owners policy, or BOP insurance, provides a bundle of basic coverages for small businesses. We offer a competitive product portfolio with coverages that include the following.",
+      "image": "/brands/helixinsurancegroup/business-owners",
+      "imageAlt": "The counter of a small business",
+      "covers": [
+        {
+          "title": "Building and structures",
+          "text": "The building your business works out of and the structures that go with it."
+        },
+        {
+          "title": "Newly acquired or constructed buildings",
+          "text": "Buildings added to the business after the policy is written."
+        },
+        {
+          "title": "Business income and extra expense",
+          "text": "Income lost and the extra costs carried while the business recovers."
+        },
+        {
+          "title": "Glass breakage",
+          "text": "Storefront and interior glass."
+        },
+        {
+          "title": "Backup of sewers and drains",
+          "text": "Damage from water backing up through sewers and drains."
+        },
+        {
+          "title": "Outdoor property and more",
+          "text": "Outdoor property on the premises, and further coverages in the portfolio."
+        }
+      ]
+    },
+    {
+      "slug": "commercial-auto",
+      "title": "Commercial Auto",
+      "audience": "businesses",
+      "icon": "truck",
+      "summary": "Work vehicles, hired and non-owned autos.",
+      "text": "Auto insurance is something we all must have in the State of Texas, by law, so make sure you are covered adequately when you need it.",
+      "lead": "We understand how difficult it could be for a business if one of the commercial vehicles is out of service for repair or replacement. Our commercial auto coverage aims to provide prompt, responsive and fair service to help minimize business disruption by getting vehicles back on the road as quickly as possible.",
+      "image": "/brands/helixinsurancegroup/commercial-auto",
+      "imageAlt": "A work van parked at a job site",
+      "covers": [
+        {
+          "title": "Liability and physical damage",
+          "text": "Liability insurance, comprehensive, collision, uninsured motorist and medical payments."
+        },
+        {
+          "title": "Non-ownership insurance",
+          "text": "Liability protection when an employee occasionally has to drive his or her personally owned vehicle for business purposes."
+        },
+        {
+          "title": "Hired auto coverage",
+          "text": "Liability protection when a customer leases, hires, rents or borrows autos on a temporary basis."
+        }
+      ]
+    },
+    {
+      "slug": "general-liability",
+      "title": "General Liability",
+      "audience": "businesses",
+      "icon": "shield",
+      "summary": "Coverage built for trade contractors.",
+      "text": "Trade contractors know their craft and need insurance that covers the things that matter.",
+      "lead": "Whether a contractor, plumber or flooring specialist, Helix Insurance Group has coverages to protect trade contractors so they can focus on the job at hand.",
+      "image": "/brands/helixinsurancegroup/general-liability",
+      "imageAlt": "A tradesman at work on a site",
+      "covers": [
+        {
+          "title": "Additional insureds",
+          "text": "Coverage for up to eight types of additional insureds, eliminating the need for separate endorsements or additional premium, such as engineers, architects, surveyors and lessors of equipment."
+        },
+        {
+          "title": "Limited care, custody and control",
+          "text": "Protection covering the property of others in the care, custody or control of the insureds."
+        },
+        {
+          "title": "Limited pollution liability",
+          "text": "Pollution coverage for job site accidents, including site assessment, clean-up and legal fees up to $100,000 per occurrence and $100,000 aggregate with a $250 deductible."
+        },
+        {
+          "title": "Extension of property damage",
+          "text": "Coverage up to the policy limits for damage to the insured's completed work. This coverage must be requested."
+        },
+        {
+          "title": "Installation coverage",
+          "text": "Coverage for materials to be installed by the contractor in a building undergoing renovation. $2,500 is automatically included and can be increased up to $100,000."
+        },
+        {
+          "title": "Tools and equipment",
+          "text": "$2,500 for equipment that is owned or borrowed and $5,000 for rented or leased equipment, available up to $100,000 for owned or borrowed and $300,000 for rented or leased."
+        }
+      ]
+    },
+    {
+      "slug": "workers-comp",
+      "title": "Workers Comp",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Cover for work-related injuries.",
+      "text": "It is not for you, it is for them. Workers' compensation coverage protects employees for work-related injuries.",
+      "lead": "Workers' compensation coverage protects employees for work-related injuries and includes access to a wide network of claims professionals and fraud investigators.",
+      "image": "/brands/helixinsurancegroup/workers-comp",
+      "imageAlt": "A crew working on a job site",
+      "covers": [
+        {
+          "title": "Statutory benefits",
+          "text": "Though benefits vary by state, statutory coverage provides compensation for disability or death, medical benefits, temporary partial or total disability and permanent partial or total disability."
+        },
+        {
+          "title": "Claims network",
+          "text": "Access to a wide network of claims professionals and fraud investigators."
+        },
+        {
+          "title": "Medical management",
+          "text": "Registered nurses who coordinate care and medical bill review specialists who make sure payment for services is at the lowest available rates, so injured employees receive quality care while the medical costs that affect premium come down."
+        },
+        {
+          "title": "Return-to-work programs",
+          "text": "Programs to get employees back to the job as soon as it is medically appropriate."
+        },
+        {
+          "title": "MySafetyPoint",
+          "text": "An online comprehensive risk management tool that provides strategies to help manage common risks for a wide range of business classes, to help minimize the potential for a workplace injury or illness."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does workers' compensation pay for?",
+          "a": "Compensation for disability or death, medical benefits, and temporary or permanent partial or total disability, though benefits vary by state."
+        }
+      ]
+    }
+  ],
+  "affiliations": {
+    "title": "Carriers we represent",
+    "items": [
+      "Velocity",
+      "Lighthouse",
+      "Safeco",
+      "Homeowners of America",
+      "MetLife"
+    ]
+  },
+  "about": {
+    "title": "We are experts, and a 360 degree service for all your protection needs.",
+    "text": [
+      "Helix Insurance Group is a 360 degree service for all your protection needs. We understand the complexities that exist in the insurance world when choosing proper coverage for your residential, commercial, and life planning needs.",
+      "Our approach is simple; we connect all of our customers with a professional insurance advisor whose primary aim is to exceed their expectations by offering the best coverages at the most competitive prices available. At our best, we are dedicated consultants assisting you in the decision making process. We take our job serious! We pledge to do our best to earn your business and promise to maintain a high sense of professionalism while doing so.",
+      "We all have experiences throughout our life that are worth sharing, such as childhood adventures, driving your first car, graduating from college, or purchasing your first home. Our purpose is to become great story tellers by educating and connecting with real people, because we believe that every person has a story to tell and it is our mission to protect it."
+    ],
+    "image": "/brands/helixinsurancegroup/about",
+    "imageAlt": "A family sharing a moment worth protecting"
+  },
+  "team": [
+    {
+      "name": "Adam Rust",
+      "role": "Managing Partner & Director of Sales",
+      "bio": "BBA, LUTCF. Adam handles personal line sales and can be reached at Adam.Rust@HelixInsuranceGroup.com.",
+      "image": "/brands/helixinsurancegroup/team-adam",
+      "imageAlt": "Adam Rust"
+    },
+    {
+      "name": "Emily Rust",
+      "role": "Managing Partner and CEO",
+      "bio": "BS, LUTCF.",
+      "image": "/brands/helixinsurancegroup/team-emily",
+      "imageAlt": "Emily Rust"
+    },
+    {
+      "name": "Jeanna Bumpas",
+      "role": "Personal & Commercial Lines",
+      "bio": "Auto, home, boats, recreational life, umbrella and more. Jeanna graduated with a BBA from LeTourneau University and an MBA from Rice University, and she has 30 years and more in customer service. She really enjoys educating our clients so that they can make the best decisions for their family, and she feels the key to her success is really listening to the needs of her clients to provide appropriate solutions. Jeanna is married to her husband Chris, has 4 children and 9 grandchildren, and also cares for her parents. In her free time she enjoys dipping her toes in the sand and soaking up the sun.",
+      "image": "/brands/helixinsurancegroup/team-jeanna",
+      "imageAlt": "Jeanna Bumpas"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Who will I be working with?",
+      "a": "We connect all of our customers with a professional insurance advisor whose primary aim is to exceed their expectations by offering the best coverages at the most competitive prices available."
+    },
+    {
+      "q": "How often should I review my policy?",
+      "a": "It is a good practice to review your life insurance policy once every year. When changes in your life happen, you want to make sure you and your loved ones are well prepared."
+    },
+    {
+      "q": "How do you find the right policy?",
+      "a": "Helix Insurance Group has the ability to shop among the most financially stable and reliable insurance companies to find the right insurance policy that meets your needs, coverage, and budget today."
+    },
+    {
+      "q": "Do your agents cover both personal and commercial lines?",
+      "a": "Yes. We write personal lines including auto, home, life and recreational, and commercial lines including business owners policies, commercial auto, general liability and workers' compensation."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Phone Lines",
+      "items": [
+        "Main: 281-415-2635",
+        "Sales: 409-797-4040",
+        "Alternate: 832-442-5015"
+      ]
+    },
+    {
+      "heading": "Email The Right Desk",
+      "items": [
+        "General: info@HelixInsuranceGroup.com",
+        "Service: Service@HelixInsuranceGroup.com",
+        "Personal line sales: Adam.Rust@HelixInsuranceGroup.com",
+        "Commercial line sales: Bree@HelixInsuranceGroup.com",
+        "Jeanna Bumpas: JBumpas@HelixInsuranceGroup.com, cell 832-527-8402"
+      ]
+    },
+    {
+      "heading": "What We Stand For",
+      "items": [
+        "Education",
+        "Protection",
+        "Integrity",
+        "Trust",
+        "Reliability"
+      ]
+    },
+    {
+      "heading": "Our Stories",
+      "items": [
+        "The Best Offer at the Right Time",
+        "The Right Tool for the Right Job",
+        "Peace of Mind",
+        "Teachers of the World",
+        "Taking Care of Children Now Saves the Future",
+        "Travel with Peace of Mind",
+        "Ride Hard, Ride Free",
+        "Business Personal Property",
+        "Planning for the Future"
+      ]
+    },
+    {
+      "heading": "Our Agents",
+      "text": "Our agents have all the experience and knowledge to assist you with your needs in the most professional way, often from your own neighborhood."
+    },
+    {
+      "heading": "Our Offices",
+      "items": [
+        "101 Tiki Dr., Suite 202, Tiki Island, TX 77554",
+        "22503 Katy Fwy, Suite 66, Katy, TX 77450"
+      ]
+    },
+    {
+      "heading": "Other Coverages We Place",
+      "items": [
+        "Renters",
+        "Flood",
+        "Personal umbrella and excess umbrella",
+        "Disability income",
+        "Index universal life with a critical illness rider",
+        "Long term care",
+        "Secondary, beach and rental home policies",
+        "Classic and collector autos insured at stated value by appraisal",
+        "Business personal property, extended to all locations in use",
+        "Inland marine attached to a commercial vehicle policy"
+      ]
+    },
+    {
+      "heading": "Online Quotes",
+      "text": "Auto and home quotes can be started and compared online from the Get Quote page, or you can pick the product you need and call an agent."
+    },
+    {
+      "heading": "Your Information",
+      "text": "We collect your information during the quoting, application and claims handling processes, we will not sell it to third parties, and our Privacy Policy and Terms of Use are published on the site."
+    }
+  ]
+}
