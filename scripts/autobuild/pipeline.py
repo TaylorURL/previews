@@ -6,7 +6,7 @@ preview session builds only those.
     ~/.claude/tools/with-credential.py \\
       supabase-service-role-sunday=SUPABASE_SERVICE_ROLE_KEY \\
       taylorurl-cron-secret=CRON_SECRET \\
-      -- python3 -m scripts.autobuild.pipeline [--dry] [--send] [--batch N] [--limit N]
+      -- python3 -m scripts.autobuild.pipeline [--dry] [--send] [--catch-up] [--batch N] [--limit N]
 
 Run from a worktree of the previews repository cut from origin/develop. It
 works the due list oldest first, a batch at a time, and stops starting batches
@@ -16,6 +16,13 @@ when the deadline is near, so whatever is left heads the next run's list.
 nothing. --send sends the letters of the sites it proved live, within the
 day's ceiling; without it a live site is registered and waits for a run that
 sends.
+
+While the outreach catch-up is open (taylorurl-com
+lib/outreach/sending/catch-up.js), the letters it holds - sites registered
+before it opened whose letter had not gone - go from its opening rather than
+from 8:00, outside the day's ceiling, and ahead of anything built. --catch-up
+sends those and nothing else and builds nothing, which is how the 7:00 session
+sends them before its turn while it holds the lock this script runs under.
 """
 
 import os
@@ -25,6 +32,7 @@ os.environ.setdefault("no_proxy", "*")
 import argparse
 import importlib.util
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -206,32 +214,59 @@ def call(*args):
     return done.returncode, (done.stdout + done.stderr).strip()
 
 
-def ceiling():
+def settings():
+    return routine.rest(
+        "GET",
+        "outreach_settings?select=daily_cap,sending_enabled,catch_up_held_since,catch_up_from,catch_up_until&limit=1",
+    )[0]
+
+
+def ceiling(row):
     """How many first preview letters may go today: the outreach machine's own daily cap."""
-    settings = routine.rest("GET", "outreach_settings?select=daily_cap,sending_enabled&limit=1")[0]
-    return settings["daily_cap"] if settings["sending_enabled"] else 0
-
-
-def sent_today():
-    local = datetime.now(HOUSTON).replace(hour=0, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
-    rows = routine.rest("GET", f"preview_sites?select=slug&sent_at=gte.{local.isoformat().replace('+00:00', 'Z')}")
-    return len(rows or [])
+    return row["daily_cap"] if row["sending_enabled"] else 0
 
 
 def unsent():
     """Registered, live sites whose letter has not gone, oldest first."""
-    return routine.rest("GET", "preview_sites?select=slug,prospect_id&sent_at=is.null&prospect_id=not.is.null&order=created_at") or []
+    return routine.rest(
+        "GET",
+        "preview_sites?select=slug,prospect_id,created_at&sent_at=is.null&prospect_id=not.is.null&order=created_at",
+    ) or []
 
 
-def send_waiting(report):
+def catching_up():
+    return routine.catch_up(settings())[1]
+
+
+def send_waiting(report, held_only=False):
+    """Sends the registered sites whose letter has not gone.
+
+    A catch-up's held letters go first and outside the ceiling, from the
+    catch-up's opening. The rest go inside the window and within what the
+    ceiling has left, which the held letters do not spend. held_only sends the
+    held letters alone.
+    """
     now = datetime.now(HOUSTON)
-    if now.hour not in SEND_HOURS or now.weekday() == 6:
+    row = settings()
+    opened, active = routine.catch_up(row)
+    if not row["sending_enabled"]:
+        report["notes"].append("sending is switched off, so no letter went")
+        return
+    # The catch-up moves the opening forward for its held letters alone; the
+    # day's own keep the normal hours.
+    own_open = now.weekday() != 6 and now.hour in SEND_HOURS
+    held_open = active and now.weekday() != 6 and now.hour < SEND_HOURS.stop
+    if not (own_open or held_open):
         report["notes"].append("outside sending hours, so no letter went")
         return
-    room = ceiling() - sent_today()
+    room = ceiling(row) - routine.sent_today_count()
+    sites = unsent()
+    held = [site for site in sites if held_open and routine.instant(site["created_at"]) < opened]
+    own = [site for site in sites if site not in held] if own_open and not held_only else []
     first = True
-    for site in unsent():
-        if room <= 0 or time.time() > deadline() - 120:
+    for site in held + own:
+        back = site in held
+        if (not back and room <= 0) or time.time() > deadline() - 120:
             break
         if not first:
             time.sleep(SPACING)
@@ -240,20 +275,38 @@ def send_waiting(report):
         log("send", site["slug"], out[-200:])
         if code == 0:
             report["sent"].append(site["slug"])
-            room -= 1
+            if not back:
+                room -= 1
         else:
             report["not_sent"].append({"slug": site["slug"], "why": out[-200:]})
+            # A 502 is the send job failing outright, which is the mail path
+            # refusing rather than anything about this letter. In a catch-up the
+            # site's endpoint closes the catch-up on that refusal, and nothing
+            # more is offered to the mailbox from this run.
+            if active and re.search(r": 502 ", out):
+                report["notes"].append("the mail server refused a letter during the catch-up, so no further letter went")
+                break
 
 
 def main(argv):
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry", action="store_true")
     parser.add_argument("--send", action="store_true")
+    parser.add_argument("--catch-up", action="store_true")
     parser.add_argument("--batch", type=int, default=10)
     parser.add_argument("--limit", type=int, default=0)
     args = parser.parse_args(argv)
 
     report = {"built": [], "parked": [], "sent": [], "not_sent": [], "not_live": [], "notes": []}
+    if args.catch_up:
+        if not args.dry and catching_up():
+            send_waiting(report, held_only=True)
+        print("<pipeline_report>" + json.dumps(report) + "</pipeline_report>")
+        return
+    # An open catch-up's held letters go before anything is built, since a
+    # build batch takes a quarter of an hour and the backlog is already late.
+    if args.send and not args.dry and catching_up():
+        send_waiting(report, held_only=True)
     rows = [r for r in routine.due() if not r.get("parked_at") and r["industry"] in AUTOMATED]
     if args.limit:
         rows = rows[:args.limit]
