@@ -1,0 +1,228 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Electric Diesel Solutions, LLC",
+  "shortName": "Electric Diesel Solutions",
+  "summary": "Diesel electrical, datalink and engine repair for trucks and equipment, from a 6,000 square foot shop in Dayton, Texas.",
+  "phone": "(832) 727-1133",
+  "email": "info@electricdieselsolutions.com",
+  "address": "1537 Hatcherville Rd",
+  "town": "Dayton",
+  "state": "TX",
+  "zip": "77535",
+  "rating": 5.0,
+  "reviewCount": 228,
+  "hours": [
+    ["Mon – Fri", "9 AM – 6 PM"],
+    ["Saturday", "9 AM – 2 PM"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#c0212a",
+    "primaryDeep": "#8b141a",
+    "ink": "#1b1d21",
+    "muted": "#5b6068",
+    "surface": "#f7f4f4",
+    "line": "#e2dcdc",
+    "heading": "'Montserrat', system-ui, sans-serif",
+    "body": "'Lato', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Lato:wght@400;700&display=swap",
+    "logo": "/brands/electricdieselsolutions/logo.webp",
+    "logoWidth": 170
+  },
+  "hero": {
+    "eyebrow": "Diesel electrical and engine repair in Dayton, Texas",
+    "title": "Get it done right,",
+    "titleAccent": "the first time.",
+    "lead": "Datalink, engine electrical and wiring are what we do, and we take no shortcuts fixing them. Our team gets the job done in a timely manner so you are back on the road as soon as possible.",
+    "image": "/brands/electricdieselsolutions/hero",
+    "imageAlt": "A diesel engine pulled for repair"
+  },
+  "groups": [
+    {
+      "slug": "electrical-and-datalink",
+      "title": "Electrical And Datalink",
+      "icon": "circuit",
+      "summary": "Datalink faults, engine electrical and wiring problems diagnosed and repaired.",
+      "intro": "Datalink, engine electrical and wiring issues are our specialty. We chase the fault down rather than throwing parts at it, and we build our own harnesses when a repair calls for one.",
+      "image": "/brands/electricdieselsolutions/electrical",
+      "imageAlt": "A technician testing a truck circuit with a clamp meter",
+      "services": [
+        {
+          "slug": "datalink-diagnostics",
+          "title": "Datalink Diagnostics",
+          "icon": "cable",
+          "text": "Datalink faults traced through the truck until the cause is found, not guessed at.",
+          "points": ["Our specialty, alongside engine electrical and wiring", "Diagnosis before any parts go on"]
+        },
+        {
+          "slug": "engine-electrical",
+          "title": "Engine Electrical",
+          "icon": "zap",
+          "text": "Engine electrical problems across Detroit, CAT, Cummins, Maxx Force, DT Navistar, Mack, Volvo, Renault and Paccar.",
+          "points": ["90-day warranty on repairs", "Both worlds covered, mechanical and electrical"]
+        },
+        {
+          "slug": "wiring-repair",
+          "title": "Wiring Repair",
+          "icon": "plug",
+          "text": "Damaged, chafed and corroded wiring repaired so the fault stays fixed.",
+          "points": ["From a fuse change to a full rewire", "90-day warranty on repairs"]
+        },
+        {
+          "slug": "harness-fabrication",
+          "title": "Harness Fabrication",
+          "icon": "settings",
+          "text": "We fabricate our own harnesses in the shop when a repair needs one built rather than bought.",
+          "points": ["Built in house", "Over 6,000 sq ft of working area"]
+        },
+        {
+          "slug": "remote-assistance",
+          "title": "Remote Assistance",
+          "icon": "gauge",
+          "text": "We assist remotely and help numerous dealerships and shops throughout Houston and its surroundings.",
+          "points": ["Dealerships and independent shops", "Houston and the surrounding area"]
+        }
+      ]
+    },
+    {
+      "slug": "engine-repair",
+      "title": "Engine Repair",
+      "icon": "wrench",
+      "summary": "Misfires, cylinder imbalance, fuel trims, overhauls and engine swaps.",
+      "intro": "Whether you need a fuse change or an engine swap, E.D.S. is your one stop shop. We diagnose the engine with live data before the wrenches come out, and engine overhauls carry a one-year unlimited mileage warranty.",
+      "image": "/brands/electricdieselsolutions/engine",
+      "imageAlt": "A diesel engine on the bench during a repair",
+      "services": [
+        {
+          "slug": "misfire-diagnosis",
+          "title": "Misfire Diagnosis",
+          "icon": "flame",
+          "text": "Misfires and cylinder imbalance diagnosed on Cummins and other diesel engines.",
+          "points": ["Cylinder imbalance testing", "Cause found before parts are replaced"]
+        },
+        {
+          "slug": "fuel-trim-tuning",
+          "title": "Fuel Trim Tuning",
+          "icon": "gauge",
+          "text": "We chase fuel trims for maximum performance and fuel economy, monitoring air and fuel live rather than assuming the engine is running well.",
+          "points": ["Live air and fuel monitoring", "Performance and fuel economy"]
+        },
+        {
+          "slug": "engine-overhaul",
+          "title": "Engine Overhaul",
+          "icon": "settings",
+          "text": "Full overhauls done in the shop, with a one-year unlimited mileage warranty.",
+          "points": ["One year, unlimited miles", "Over 6,000 sq ft of working area"]
+        },
+        {
+          "slug": "counterbore-service",
+          "title": "Counterbore Service",
+          "icon": "wrench",
+          "text": "Counterbore service on diesel engine blocks, done in the shop.",
+          "points": ["Over 6,000 sq ft of working area", "90-day warranty on repairs"]
+        },
+        {
+          "slug": "engine-swap",
+          "title": "Engine Swap",
+          "icon": "power",
+          "text": "Engine swaps handled start to finish, mechanical and electrical both.",
+          "points": ["One stop shop for mechanical and electrical", "Quick turnaround"]
+        }
+      ]
+    },
+    {
+      "slug": "mobile-repair",
+      "title": "Mobile Repair",
+      "icon": "car",
+      "summary": "Minor repairs and maintenance done on-site instead of in the shop.",
+      "intro": "We offer mobile repair services for minor repairs and maintenance tasks that can be done on-site. Larger jobs come into the shop in Dayton, where there is room to work on them properly.",
+      "services": [
+        {
+          "slug": "mobile-service",
+          "title": "Mobile Service",
+          "icon": "car",
+          "text": "Minor repairs and maintenance handled where the truck sits, when the job can be done on-site.",
+          "points": ["Minor repairs and maintenance", "Houston and its surroundings"]
+        },
+        {
+          "slug": "shop-support",
+          "title": "Dealership And Shop Support",
+          "icon": "building",
+          "text": "We help numerous dealerships and shops throughout Houston and its surroundings, in person and remotely.",
+          "points": ["Datalink and electrical specialists", "Bilingual team"]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Solutions, not excuses.",
+    "text": [
+      "Here at Electric Diesel Solutions, we strive for perfection and excellence to ensure we deliver the best quality product and service to our customers. We understand that time is money, so we take no shortcuts in fixing your vehicle's problems. The E.D.S. team guarantees the job will be completed in a timely manner in order to get you back on the road as soon as possible.",
+      "We got caught up in the middle of both worlds, mechanical and electrical. Whether you need a fuse change or an engine swap, E.D.S. is your one stop shop, working out of over 6,000 square feet in Dayton.",
+      "Dedication is our minimum, providing results for the present, while establishing optimal resolutions for the future."
+    ],
+    "image": "/brands/electricdieselsolutions/shop",
+    "imageAlt": "The Electric Diesel Solutions shop in Dayton, Texas",
+    "values": [
+      { "title": "Bilingual", "text": "Ya esta arreglado. The shop works in English and Spanish." },
+      { "title": "Quick Turnaround", "text": "Time is money, so the job is done in a timely manner to get you back on the road." },
+      { "title": "Quality Work", "text": "No shortcuts, and solutions rather than excuses." }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What do you specialize in?",
+      "a": "We specialize in datalink, engine electrical, and wiring issues. Additionally, we fabricate our own harness, assist remotely and help numerous dealerships and shops throughout Houston and its surroundings."
+    },
+    {
+      "q": "What engines do you work on?",
+      "a": "We work on Detroit, CAT, Cummins, Maxx Force, DT Navistar, Mack/Volvo, Renault/Mack, Paccar."
+    },
+    {
+      "q": "Do you offer mobile repair services?",
+      "a": "Yes, we offer mobile repair services for minor repairs and maintenance tasks that can be done on-site."
+    },
+    {
+      "q": "What is your warranty on repairs?",
+      "a": "We offer a 90-day warranty on all repairs performed by our skilled technicians. Engine overhauls, one-year unlimited miles."
+    }
+  ],
+  "serviceArea": ["Dayton", "Houston"],
+  "facts": [
+    {
+      "heading": "Engines We Work On",
+      "items": ["Detroit", "CAT", "Cummins", "Maxx Force", "DT Navistar", "Mack / Volvo", "Renault / Mack", "Paccar"]
+    },
+    {
+      "heading": "Our Work",
+      "items": [
+        "Cummins 870 misfire, diagnosing cylinder imbalance",
+        "Cummins 2350, diagnosing a misfire",
+        "Counterbore service",
+        "Chasing fuel trims for maximum efficiency and fuel economy"
+      ]
+    },
+    {
+      "heading": "Warranty",
+      "text": "A 90-day warranty on all repairs performed by our technicians, and one year with unlimited miles on engine overhauls."
+    },
+    {
+      "heading": "Why Electric Diesel Solutions",
+      "items": ["Bilingual", "Customer service", "Reputation", "Quick turnaround", "Quality work", "Responsible", "Over 6,000 sq ft of working area", "Solutions, not excuses"]
+    },
+    {
+      "heading": "Visiting The Shop",
+      "text": "We love our customers, so feel free to visit during normal business hours. Shop visits are by appointment, and we are closed on major holidays."
+    },
+    {
+      "heading": "Diagrams And Tech Tips",
+      "text": "Our site carries free downloads for the trade: a 60 Series decoder, the DD15 engine workshop manual, an MX13 fuel system diagram, a Freightliner air manifold diagram, the 1990s KW serial port, and Kenworth MX13 EPA 13."
+    },
+    {
+      "heading": "Follow Us",
+      "items": ["Facebook", "Instagram @electricdieselsolutions", "TikTok @electricdieselsolutions"]
+    }
+  ]
+}

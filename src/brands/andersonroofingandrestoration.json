@@ -1,0 +1,332 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "Anderson Roofing and Restoration LLC",
+  "shortName": "Anderson Roofing",
+  "phone": "(713) 898-7496",
+  "email": "info@andersonroofingandrestoration.com",
+  "address": "3222 Abbott Lakes Dr",
+  "town": "Spring",
+  "state": "TX",
+  "zip": "77386",
+  "rating": 4.9,
+  "reviewCount": 241,
+  "license": "Certificate of liability insurance available for you to view",
+  "hours": [["Monday – Sunday", "Open 24 hours"], ["Emergency repairs", "24 hours a day, 7 days a week"]],
+  "brand": {
+    "primary": "#d83337",
+    "primaryDeep": "#8f1d20",
+    "accent": "#ffe800",
+    "ink": "#121212",
+    "surface": "#f4f3ef",
+    "heading": "'Roboto Slab', Georgia, serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap",
+    "logo": "/brands/andersonroofingandrestoration/logo.webp",
+    "logoWidth": 220
+  },
+  "hero": {
+    "eyebrow": "Spring, Texas roofing contractor",
+    "title": "Let us help you get",
+    "titleAccent": "what you deserve.",
+    "lead": "Wind and hail claim specialists for Spring, The Woodlands, Conroe and the Houston area. We will assist and walk you through filing an insurance claim, and the roof inspection is free. Call for a free inspection today.",
+    "image": "/brands/andersonroofingandrestoration/hero",
+    "imageAlt": "Roofers working on a house roof with a ladder set against the eave"
+  },
+  "promises": [
+    "Free roof inspections",
+    "Free estimates",
+    "24 hour emergency repairs, 7 days a week",
+    "GAF Master Elite roofer"
+  ],
+  "services": [
+    {
+      "slug": "roof-replacement",
+      "group": "residential",
+      "title": "Roof Replacement",
+      "short": "A new GAF roofing system, installed by a Master Elite roofer.",
+      "text": "Replacement roofs installed with quality materials and the GAF warranty system that fits your home.",
+      "image": "/brands/andersonroofingandrestoration/replacement",
+      "imageAlt": "A roofer laying new shingles across a house roof",
+      "materials": true,
+      "body": [
+        "We believe in using the highest quality materials in the industry and have the most experienced contractors. As a Master Elite GAF contractor, Anderson Roofing and Restoration knows the best roofing system and warranty for each homeowner.",
+        "Having overseen hundreds of roofing projects in Houston and the surrounding areas, we know what system best fits your home's roof, whether that is meeting the required roofing standards for your subdivision or making sure your new roof has the proper ventilation to be as energy efficient as possible and to increase the longevity of your roof."
+      ],
+      "points": [
+        "GAF System Plus, Gold Pledge and Silver Pledge lifetime warranties",
+        "Ventilation checked and upgraded with the new roof",
+        "Subdivision roofing standards met",
+        "Free estimate before any work starts",
+        "0% interest financing for up to 60 months through Wells Fargo"
+      ],
+      "faqs": [
+        {
+          "q": "Why a GAF Master Elite contractor?",
+          "a": "GAF is North America's largest roofing manufacturer. Because of GAF's stringent standards, only qualified roofing contractors who have met credit checks, background checks and valid liability insurance are able to offer GAF's lifetime warranty systems."
+        },
+        {
+          "q": "Do I definitely need a new roof?",
+          "a": "Not all roofs need replacement. After a complete free roof inspection we find most roofs only need affordable repairs, and we will tell you that."
+        }
+      ]
+    },
+    {
+      "slug": "roof-repair",
+      "group": "residential",
+      "title": "Roof Repair",
+      "short": "Leaks, damaged shingles, vents and flashing, repaired.",
+      "text": "Repairs to leaks and to damage from wind, hail and trees, so the water stops before it reaches your ceiling.",
+      "image": "/brands/andersonroofingandrestoration/repair",
+      "imageAlt": "A plumbing vent and new shingles on a finished roof",
+      "body": [
+        "Most roofs we look at need an affordable repair rather than a replacement. We find the source of the leak, show you what we found and quote the repair.",
+        "Don't wait until you see stains on your ceiling. Roof repairs also cover the damage left behind inside: interior sheetrock repair from prior leak damage, and paint to match."
+      ],
+      "points": [
+        "Leak repairs",
+        "Wind, hail and tree damage",
+        "Shingles, vents and nail pops",
+        "Interior sheetrock repair from leak damage, painted to match",
+        "Free roof repair estimate"
+      ]
+    },
+    {
+      "slug": "roof-inspections",
+      "group": "residential",
+      "title": "Roof Inspections",
+      "short": "A complete free roof inspection, and the maintenance program.",
+      "text": "Not all roofs need replacement. After a complete free roof inspection we help you decide what your roof actually needs.",
+      "image": "/brands/andersonroofingandrestoration/inspection",
+      "imageAlt": "A finished shingle roof with roof vents, seen close up",
+      "body": [
+        "After a complete free roof inspection we help you decide if you need repairs, a replacement, or should file a claim with your insurance carrier for weather related damage to your roof.",
+        "We also offer roof maintenance inspections and repairs to keep you from getting those damaging leaks. Don't wait until you see stains on your ceiling: you need to have your roof inspected every three to five years. Ask about our roof maintenance program."
+      ],
+      "points": [
+        "Complete free roof inspection",
+        "Repair, replace or file a claim, decided with you",
+        "Roof maintenance inspections and repairs",
+        "Roof maintenance program",
+        "An inspection every three to five years"
+      ]
+    },
+    {
+      "slug": "insurance-claims",
+      "group": "storm",
+      "title": "Insurance Claims",
+      "short": "Wind and hail claim specialists, with a licensed adjuster.",
+      "text": "We work closely with your insurance company on wind and hail damage, saving you hours of precious time.",
+      "image": "/brands/andersonroofingandrestoration/claim",
+      "imageAlt": "Underlayment laid across a roof deck during a re-roof",
+      "claim": true,
+      "body": [
+        "Susan and Clint have worked hail storms across Spring, Montgomery County, Conroe, Oakridge and The Woodlands. We will assist and walk you through filing an insurance claim from wind and hail damage, and make sure you get what you deserve from your insurance carrier.",
+        "We have a licensed insurance adjuster who will help ensure you get what you deserve, and we work with all insurance carriers. Let us help you get your new roof paid for."
+      ],
+      "points": [
+        "Wind and hail claim specialists",
+        "Damage from wind, hail, trees and leaks",
+        "A licensed insurance adjuster on your side",
+        "We work with all insurance carriers",
+        "Free inspection before you file"
+      ]
+    },
+    {
+      "slug": "emergency-repairs",
+      "group": "storm",
+      "title": "Emergency Repairs",
+      "short": "24 hour emergency repairs, seven days a week.",
+      "text": "We offer 24 hour, 7 days a week emergency repairs for leaks and damage to your roof.",
+      "image": "/brands/andersonroofingandrestoration/emergency",
+      "imageAlt": "A crew working at the front of a house with materials and tarps on the lawn",
+      "body": [
+        "A leak or storm damage does not wait for business hours. We offer 24 hour emergency repair services, seven days a week, for leaks and damage to your roof.",
+        "Call the office at 713-898-7496 or the cell at 832-740-2916 and we will get the roof covered before more water gets in."
+      ],
+      "points": [
+        "24 hours a day, 7 days a week",
+        "Storm and leak call-outs",
+        "Wind, hail and tree damage",
+        "Office 713-898-7496, cell 832-740-2916"
+      ]
+    },
+    {
+      "slug": "gutters",
+      "group": "residential",
+      "title": "Gutters",
+      "short": "Gutters installed, with a free gutter estimate.",
+      "text": "Gutters to carry the water off the new roof and away from the house, quoted with a free gutter estimate.",
+      "image": "/brands/andersonroofingandrestoration/gutters",
+      "imageAlt": "A gutter and downspout running along the edge of a house roof",
+      "body": [
+        "Gutters are part of the same system as the roof, and we install them alongside replacement roofs and repairs.",
+        "We make it easy to budget with a free gutter estimate, the same as we do for repairs, siding, painting and patio covers."
+      ],
+      "points": ["Gutter installation", "Fitted with a replacement roof or on their own", "Free gutter estimate"]
+    },
+    {
+      "slug": "attic-ventilation",
+      "group": "residential",
+      "title": "Attic Ventilation",
+      "short": "Ventilation that lowers utility bills and lengthens roof life.",
+      "text": "Let us help you update your ventilation to lower utility bills and help your roof last longer.",
+      "image": "/brands/andersonroofingandrestoration/ventilation",
+      "imageAlt": "Ridge vent and roof vent materials on a driveway before installation",
+      "body": [
+        "Proper ventilation is part of making sure a new roof is as energy efficient as possible and increases the longevity of your roof.",
+        "We check the ventilation when we inspect a roof, and update it with a replacement or on its own."
+      ],
+      "points": [
+        "Ventilation updated to lower utility bills",
+        "Ridge vents and roof vents",
+        "Checked on every replacement roof",
+        "Longer roof life"
+      ]
+    },
+    {
+      "slug": "painting",
+      "group": "residential",
+      "title": "Exterior and Interior Painting",
+      "short": "Exterior paint, and interior repair and paint after a leak.",
+      "text": "Let us make the outside of your home look brand new with a fresh coat of paint, and put the inside right after a leak.",
+      "image": "/brands/andersonroofingandrestoration/painting",
+      "imageAlt": "A paint roller putting fresh paint on a wall",
+      "body": [
+        "Let us make the outside of your home look brand new with a fresh coat of paint.",
+        "Inside, we handle sheetrock repair from prior leak damage and paint to match, or paint the interior to update it or just for a color change."
+      ],
+      "points": [
+        "Exterior painting",
+        "Interior painting",
+        "Sheetrock repair from prior leak damage",
+        "Paint matched to the existing color",
+        "Free painting estimate"
+      ]
+    }
+  ],
+  "claim": {
+    "title": "How we handle your claim",
+    "text": "We are wind and hail claim specialists, and we work with all insurance carriers.",
+    "steps": [
+      {
+        "title": "Free inspection",
+        "text": "A complete free roof inspection tells you whether you need a repair, a replacement, or a claim."
+      },
+      {
+        "title": "We work with your carrier",
+        "text": "We work closely with your insurance company, which saves you hours of precious time."
+      },
+      {
+        "title": "A licensed adjuster",
+        "text": "We have a licensed insurance adjuster who will help ensure you get what you deserve."
+      },
+      {
+        "title": "Your new roof",
+        "text": "Let us help you get your new roof paid for, installed as a GAF Master Elite contractor."
+      }
+    ]
+  },
+  "materials": {
+    "title": "Materials we install",
+    "text": "We are a GAF Master Elite roofer offering System Plus, Gold and Silver Pledge lifetime warranties on your new roof. We use only quality materials, and we stand behind GAF roofing products, which are the highest quality the industry offers.",
+    "brands": ["GAF", "GAF Timberline HD", "GAF Cobra Ridge Vent"]
+  },
+  "about": {
+    "title": "Locally owned and operated in Spring, Texas",
+    "text": [
+      "Anderson Roofing and Restoration of Spring, Texas is a locally owned and operated business. We were created to assist homeowners with the high cost of roofing repairs and replacements.",
+      "Susan and Clint are both native Houstonians with combined 35 plus years of experience in the roofing and insurance industry, and have sold over 800 roof replacements. We will assist and walk you through filing an insurance claim from wind or hail damage, and make sure you get what you deserve from your insurance carrier.",
+      "As a Master Elite GAF contractor, we know the best roofing system and warranty for each homeowner. GAF is North America's largest roofing manufacturer, and because of GAF's stringent standards only qualified roofing contractors that have met credit checks, background checks and valid liability insurance are able to offer GAF's lifetime warranty systems.",
+      "We pride ourselves on being honest and upfront with our customers, offering a quality job done with integrity and knowledge of the roofing industry. Your roof is such an important part of your home, protecting everything inside."
+    ],
+    "image": "/brands/andersonroofingandrestoration/truck",
+    "imageAlt": "The Anderson Roofing and Restoration truck parked outside a house",
+    "values": [
+      { "title": "Honest and upfront", "text": "We pride ourselves on being honest and upfront with our customers." },
+      { "title": "Quality materials", "text": "We believe in using the highest quality materials in the industry." },
+      { "title": "Customer satisfaction", "text": "Customer satisfaction is our number one goal, from a repair to a full replacement." }
+    ]
+  },
+  "inspection": {
+    "title": "What happens at a free inspection",
+    "steps": [
+      {
+        "title": "Call or send the form",
+        "text": "Office 713-898-7496, cell 832-740-2916. Emergency repairs are answered 24 hours a day, seven days a week."
+      },
+      {
+        "title": "A complete free roof inspection",
+        "text": "We look over the whole roof, free, and show you everything we find."
+      },
+      {
+        "title": "Repairs, replacement or a claim",
+        "text": "We help you decide if you need repairs, a replacement, or should file a claim with your insurance carrier for weather related damage."
+      }
+    ]
+  },
+  "serviceArea": ["Spring", "The Woodlands", "Conroe", "Montgomery County", "Houston"],
+  "areasText": "We have overseen hundreds of roofing projects in Spring, The Woodlands, Conroe and the Houston area, and have worked hail storms across Montgomery County.",
+  "areasImage": "/brands/andersonroofingandrestoration/areas",
+  "areasImageAlt": "A two-story stucco home with a finished shingle roof",
+  "contactImage": "/brands/andersonroofingandrestoration/contact",
+  "contactImageAlt": "A house with the Anderson Roofing and Restoration truck in the driveway",
+  "facts": [
+    {
+      "heading": "Certifications",
+      "items": [
+        "GAF Factory Certified Master Elite roofing contractor",
+        "GAF System Plus, Gold Pledge and Silver Pledge lifetime warranties available on a new roof",
+        "Licensed insurance adjuster on staff"
+      ]
+    },
+    {
+      "heading": "Insurance",
+      "text": "Certificate of liability insurance available for you to view. GAF Master Elite status requires credit checks, background checks and valid liability insurance."
+    },
+    {
+      "heading": "Financing",
+      "text": "A Wells Fargo home improvement plan with 0% interest for up to 60 months."
+    },
+    {
+      "heading": "Memberships and Reviews",
+      "items": [
+        "Member of the BBB with an A+ rating",
+        "5 star rated on Google, Yelp and Nextdoor",
+        "Also reviewed on Angi and HomeAdvisor"
+      ]
+    },
+    {
+      "heading": "Free Estimates",
+      "items": ["Roof repair", "Gutters", "Siding", "Exterior and interior painting", "Patio covers"]
+    },
+    {
+      "heading": "Phone Numbers",
+      "items": ["Office: 713-898-7496", "Cell: 832-740-2916"]
+    },
+    {
+      "heading": "Emergency Repairs",
+      "text": "24 hour emergency repair services offered seven days a week, for leaks and damage to your roof."
+    },
+    {
+      "heading": "Roof Maintenance Program",
+      "text": "Roof maintenance inspections and repairs keep you from getting those damaging leaks. Have your roof inspected every three to five years, and ask about our roof maintenance program."
+    },
+    {
+      "heading": "Who You Deal With",
+      "text": "Susan and Clint Anderson, both native Houstonians, with combined 35 plus years of experience in the roofing and insurance industry and over 800 roof replacements sold."
+    },
+    {
+      "heading": "Storm Work",
+      "text": "Several hail storms worked in Spring, Montgomery County, Conroe, Oakridge and The Woodlands over the past six years."
+    },
+    {
+      "heading": "Roofing and Remodeling",
+      "text": "For all your roofing and remodeling needs, committed to quality and customer satisfaction. We install replacement roofs, roof repairs, gutters, interior and exterior painting and more."
+    },
+    {
+      "heading": "Shingle Colors We Have Installed",
+      "items": ["GAF Weatherwood", "GAF Barkwood", "GAF Hunter Green", "Charcoal"]
+    }
+  ]
+}
