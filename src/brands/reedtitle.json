@@ -1,0 +1,71 @@
+{
+  "template": "professional",
+  "preview": true,
+  "name": "Reed Title Company",
+  "shortName": "Reed Title Company",
+  "phone": "(281) 519-7603",
+  "email": "info@reedtitle.com",
+  "address": "12234 Shadow Creek Pkwy",
+  "town": "Pearland",
+  "state": "TX",
+  "zip": "77584",
+  "brand": {
+    "primary": "#916c1f",
+    "primaryDeep": "#654c16",
+    "accent": "#dcb35b",
+    "ink": "#202120",
+    "surface": "#fcf9f2",
+    "muted": "#5b6470",
+    "line": "#e0e0e0",
+    "cream": "#fdf9f0",
+    "heading": "'Roboto', system-ui, sans-serif",
+    "body": "'Noto Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap",
+    "logo": "/brands/reedtitle/logo.webp",
+    "logoWidth": 112,
+    "logoHeight": 58,
+    "logoRatio": 1.927,
+    "logoGround": "#ffffff"
+  },
+  "hero": {
+    "eyebrow": "Reed Title Company",
+    "title": "Commercial and residential in Pearland",
+    "lead": "Reed Title Company specialise in providing mortgage & property title insurance services for property owners in Pearland, Manvel, Alvin, Texas. Contact us today!"
+  },
+  "serviceArea": [
+    "Pearland",
+    "Houston",
+    "Spring"
+  ],
+  "kind": "title",
+  "services": [
+    {
+      "slug": "commercial",
+      "title": "Commercial",
+      "summary": "Commercial",
+      "text": "",
+      "icon": "briefcase"
+    },
+    {
+      "slug": "residential",
+      "title": "Residential",
+      "summary": "Buying or selling a home is not a routine event.",
+      "text": "Buying or selling a home is not a routine event. This may be one of the largest transactions a consumer will ever experience.",
+      "lead": "Buying or selling a home is not a routine event. This may be one of the largest transactions a consumer will ever experience.",
+      "icon": "house"
+    },
+    {
+      "slug": "home-title-insurance",
+      "title": "Home Title Insurance",
+      "summary": "Home Title Insurance",
+      "text": "",
+      "icon": "house"
+    }
+  ],
+  "about": {
+    "title": "About Reed Title Company",
+    "text": [
+      "Reed Title Company headquartered in Spring, Texas is a leading provider of title insurance services. Reed Title currently operates multiple locations in the Houston Metropolitan area and is licensed to operate in 38 counties in Texas. We are local, we are independent, and we know Texas. Reed Title Company believes it is crucial to be local. Our strength lies in collective wisdom, industry insight, and a company of resources with experience embedded in local knowledge."
+    ]
+  }
+}
