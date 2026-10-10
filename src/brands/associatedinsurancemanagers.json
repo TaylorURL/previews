@@ -1,0 +1,104 @@
+{
+  "template": "professional",
+  "preview": true,
+  "name": "Associated Insurance Managers",
+  "shortName": "Associated Insurance Managers",
+  "phone": "(713) 365-8400",
+  "email": "info@aimins.net",
+  "address": "11111 Katy Fwy #120",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77079",
+  "rating": 5,
+  "reviewCount": 172,
+  "brand": {
+    "primary": "#9b1c22",
+    "primaryDeep": "#6c1418",
+    "accent": "#de484f",
+    "ink": "#211a20",
+    "surface": "#f9f1f2",
+    "muted": "#5b6470",
+    "line": "#e0dfe0",
+    "cream": "#fcf5f0",
+    "heading": "'Roboto', system-ui, sans-serif",
+    "body": "'Lato', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&family=Lato:wght@400;600;700&display=swap",
+    "logo": "/brands/associatedinsurancemanagers/logo.webp",
+    "logoWidth": 170,
+    "logoHeight": 48,
+    "logoRatio": 3.55,
+    "logoGround": "#ffffff"
+  },
+  "hero": {
+    "eyebrow": "Associated Insurance Managers",
+    "title": "Home owners and auto in Houston",
+    "lead": "Based in Houston, but serving All of Texas. From Homes in Austin to your Business in Dallas, we can even insure your Ranch in San Antonio."
+  },
+  "serviceArea": [
+    "Houston",
+    "Katy"
+  ],
+  "kind": "insurance",
+  "services": [
+    {
+      "slug": "home-owners",
+      "title": "Home Owners",
+      "summary": "Home Owners",
+      "text": "",
+      "icon": "house"
+    },
+    {
+      "slug": "auto",
+      "title": "Auto",
+      "summary": "Auto",
+      "text": "",
+      "icon": "car"
+    },
+    {
+      "slug": "home-auto-insurance-bundle",
+      "title": "Home & Auto Insurance Bundle",
+      "summary": "Home & Auto Insurance Bundle",
+      "text": "",
+      "icon": "car"
+    },
+    {
+      "slug": "personal-umbrella",
+      "title": "Personal Umbrella",
+      "summary": "Personal Umbrella",
+      "text": ""
+    },
+    {
+      "slug": "flood-insurance",
+      "title": "Flood Insurance",
+      "summary": "Flood Insurance",
+      "text": ""
+    },
+    {
+      "slug": "tornado-insurance",
+      "title": "Tornado Insurance",
+      "summary": "Tornado Insurance",
+      "text": ""
+    },
+    {
+      "slug": "pet-insurance",
+      "title": "Pet Insurance",
+      "summary": "Pet Insurance",
+      "text": ""
+    },
+    {
+      "slug": "renters-insurance",
+      "title": "Renters Insurance",
+      "summary": "Renters Insurance",
+      "text": "",
+      "icon": "house"
+    }
+  ],
+  "about": {
+    "title": "About Associated Insurance Managers",
+    "text": [
+      "Learn about the multiple advantages our commercial insurances policies and how they can help your business.",
+      "Over the years, we have found that a team approach can be an effective method of helping clients with a wide variety of needs as they navigate the complex world of insurance.",
+      "Our goal is to service each client in the manner in which they choose to be served. We have multiple technologies that support a broad range of service capabilities. From traditional face-to-face service to extensive online self-service capabilities via our client portal, you can be assured we have the right service model for you."
+    ]
+  }
+}
