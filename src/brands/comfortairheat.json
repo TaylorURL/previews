@@ -1,0 +1,75 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Comfort Air & Heat LLC",
+  "shortName": "Comfort Air & Heat",
+  "phone": "(281) 485-1940",
+  "email": "info@comfortairandheat.com",
+  "address": "3600 E Walnut St",
+  "town": "Pearland",
+  "state": "TX",
+  "zip": "77581",
+  "rating": 4.9,
+  "reviewCount": 43,
+  "brand": {
+    "primary": "#000ca8",
+    "primaryDeep": "#000876",
+    "accent": "#ff0505",
+    "ink": "#14192b",
+    "surface": "#f0f0fa",
+    "muted": "#5b6470",
+    "line": "#dedfe1",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Poppins', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap",
+    "logo": "/brands/comfortairheat/logo.webp",
+    "logoWidth": 160,
+    "logoHeight": 58,
+    "logoRatio": 2.765,
+    "logoGround": "#ffffff"
+  },
+  "hero": {
+    "eyebrow": "Comfort Air & Heat",
+    "title": "Residential and installation & inspection",
+    "lead": "Don't let small problems become big problems. Call Comfort Air & Heat for an inspection today.",
+    "titleAccent": "in Pearland"
+  },
+  "serviceArea": [
+    "Pearland",
+    "Houston",
+    "Galveston"
+  ],
+  "summary": "Don't let small problems become big problems. Call Comfort Air & Heat for an inspection today.",
+  "groups": [
+    {
+      "slug": "installation-inspection",
+      "title": "Installation & Inspection",
+      "icon": "wrench",
+      "summary": "Conducting routine maintenance on your unit not only extends the life of it but lowers the cost of your energy usage by making sure the unit is running as efficiently as possible.",
+      "intro": "Conducting routine maintenance on your unit not only extends the life of it but lowers the cost of your energy usage by making sure the unit is running as efficiently as possible."
+    },
+    {
+      "slug": "repair-maintenance",
+      "title": "Repair & Maintenance",
+      "icon": "wrench",
+      "summary": "An air purification system is the most effective way to improve the air quality in your home.",
+      "intro": "An air purification system is the most effective way to improve the air quality in your home. Comfort Air & Heat installs whole-home air filters to catch more pollutants than traditional air filters."
+    },
+    {
+      "slug": "preventive-maintenance",
+      "title": "Preventive Maintenance",
+      "icon": "wrench",
+      "summary": "Comfort Air & Heat provides businesses with the maintenance and service necessary to operate at peak performance.",
+      "intro": "Comfort Air & Heat provides businesses with the maintenance and service necessary to operate at peak performance."
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "About Comfort Air & Heat",
+    "text": [
+      "Don't let small problems become big problems. Call Comfort Air & Heat for an inspection today.",
+      "No project is too big or too small. We design and build custom solutions for a variety of businesses.",
+      "With the help of products like Nest and Honeywell thermostats, Comfort Air & Heat gives you the ability to control your home's temperature from anywhere in the world."
+    ]
+  }
+}
