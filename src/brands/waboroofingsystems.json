@@ -1,0 +1,497 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "WABO Roofing Systems",
+  "shortName": "WABO Roofing",
+  "phone": "(832) 464-7182",
+  "email": "wilsonb@waboroofing.com",
+  "address": "100 E NASA Pkwy Ste 103",
+  "town": "Webster",
+  "state": "TX",
+  "zip": "77598",
+  "rating": 4.8,
+  "reviewCount": 436,
+  "since": 2016,
+  "license": "Fully licensed, insured and bonded. A+ rated accredited company with the Better Business Bureau.",
+  "hours": [
+    ["Mon – Sat", "9 AM – 5 PM"],
+    ["Sun", "Closed"]
+  ],
+  "brand": {
+    "primary": "#4f7d22",
+    "primaryDeep": "#35561a",
+    "accent": "#8ac44c",
+    "ink": "#22252a",
+    "surface": "#f3f4ef",
+    "heading": "'Barlow Condensed', 'Arial Narrow', sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/waboroofingsystems/logo.webp",
+    "logoWidth": 158,
+    "logoHeight": 58,
+    "logoRatio": 2.718,
+    "logoGround": "#ffffff"
+  },
+  "hero": {
+    "eyebrow": "Roofing contractor in Webster, TX",
+    "title": "Roofing built for the",
+    "titleAccent": "Gulf Coast",
+    "lead": "WABO Roofing Systems inspects, repairs, replaces and maintains residential and commercial roofs across the Greater Houston area. Call us and we will come out and perform a free inspection.",
+    "image": "/brands/waboroofingsystems/hero",
+    "imageAlt": "A WABO Roofing Systems crew working on a shingle roof"
+  },
+  "promises": [
+    "Free roof inspections",
+    "Licensed, insured and bonded",
+    "24/7 emergency roofing service",
+    "Financing with approved credit"
+  ],
+  "services": [
+    {
+      "slug": "roof-inspection",
+      "group": "residential",
+      "title": "Roof Inspection",
+      "short": "A full sweep of the roof, the attic and every penetration.",
+      "text": "A thorough roof inspection that gives you a complete picture of your system's condition, then a clear plan for what it needs.",
+      "image": "/brands/waboroofingsystems/inspection",
+      "imageAlt": "A roofer checking shingles and flashing during a roof inspection",
+      "body": [
+        "A strong report starts with a full sweep of your roof system. We check decking for soft spots, test ventilation, and study flashing around chimneys and vents. Then we walk penetrations, valleys, and the attic to spot hidden moisture.",
+        "After hail or high winds, we offer a free roof inspection to spot storm damage quickly. This complimentary visual check costs you nothing, helping us flag lifted shingles or dented flashing before leaks start.",
+        "Buying or selling? Our paid inspections dig deeper for real-estate deals. A careful inspection measures remaining life and lists every needed fix, so both sides know the true condition before closing."
+      ],
+      "points": [
+        "Decking checked for soft spots",
+        "Ventilation tested",
+        "Flashing around chimneys and vents",
+        "Penetrations, valleys and the attic walked",
+        "Free storm assessment after hail or high wind"
+      ],
+      "faqs": [
+        {
+          "q": "Does an inspection cost anything?",
+          "a": "A storm assessment after hail or high winds is a free visual check. Detailed inspections for a real-estate sale are paid, because they measure remaining roof life and list every needed fix."
+        },
+        {
+          "q": "How often should a roof be inspected?",
+          "a": "Regular visits let us catch decay, rot and moss early, which saves time and money. We schedule routine maintenance checks for owners who want the roof looked at on a set cycle."
+        }
+      ]
+    },
+    {
+      "slug": "roof-installation",
+      "group": "residential",
+      "title": "Roof Installation",
+      "short": "A new roofing system installed start to finish.",
+      "text": "A flawless installation sets the foundation for a highly durable roof, and we manage the whole process so the result stands the test of time.",
+      "body": [
+        "If you are seeking a fresh start, our roof installation service brings you top-quality materials and professional workmanship. We install new roofing systems efficiently and with close attention to detail, so they hold up for decades.",
+        "We install high-performance systems designed to boost curb appeal and stand up to the elements. Our specialized teams cover the whole job, from the first inspection, damage report and estimate through product selection, financing and install.",
+        "You get a written proposal before anything starts. We explain the roofing materials and the warranty choices, keep you posted during the project, and finish with a quality check on the completed work."
+      ],
+      "points": [
+        "The whole process managed from inspection to final check",
+        "Product selection and financing handled with you",
+        "A written proposal before work starts",
+        "Materials and warranty options explained",
+        "A final quality check on the finished roof"
+      ]
+    },
+    {
+      "slug": "roof-repair",
+      "group": "residential",
+      "title": "Roof Repair",
+      "short": "Leaks, lifted shingles and failed flashing, traced and fixed.",
+      "text": "Dependable roof repair that protects your home or business, with high-quality materials so the job is done right the first time.",
+      "image": "/brands/waboroofingsystems/repair",
+      "imageAlt": "Hail-damaged asphalt shingles on a residential roof",
+      "body": [
+        "A damaged roof requires immediate attention from professionals who understand local conditions. We offer prompt, reliable roof leak repair to prevent water damage from spreading and causing more serious issues.",
+        "As your roofing repair contractor we believe in transparency. Our process begins with a detailed inspection to identify all areas of concern, from obvious damage to hidden weak spots. We give you a clear explanation of our findings and a straightforward repair plan, so you know exactly what to expect.",
+        "We focus on cost-effective repair solutions without compromising on quality. The goal is to fix the immediate problem while strengthening your roof against future issues, so the repair is built to last."
+      ],
+      "points": [
+        "Roof leak repair",
+        "Comprehensive damage assessment",
+        "Residential roof repair",
+        "Hidden weak spots identified, not just visible damage",
+        "A written repair plan before work starts"
+      ]
+    },
+    {
+      "slug": "roof-replacement",
+      "group": "residential",
+      "title": "Roof Replacement",
+      "short": "A full tear-off to the deck, fresh underlayment and new roof.",
+      "text": "A full replacement rebuilds the whole protective system above your head, from decking to underlayment to the top layer.",
+      "image": "/brands/waboroofingsystems/replacement",
+      "imageAlt": "New asphalt shingles installed on a steep residential roof",
+      "materials": true,
+      "body": [
+        "A worn-out roof in a Gulf Coast climate is a real problem, and it rarely fixes itself. Between spring hail, summer heat that blisters shingles, and hurricane season stress, older roofs give out fast around here.",
+        "Our replacement starts with a complete tear-off down to the deck. We inspect every board for rot, moisture or weak spots and replace damaged decking before anything new goes on. We lay fresh underlayment and seal valleys, vents and chimneys with ice-and-water shields to block heavy, wind-driven Gulf rain.",
+        "We install quality materials for both residential and commercial jobs, including asphalt shingles, metal and tile. We also pull the required county permits and help with any HOA approvals. Most jobs take one to three days, scheduled in advance."
+      ],
+      "points": [
+        "Complete tear-off down to the deck",
+        "Damaged decking replaced before anything new goes on",
+        "Fresh underlayment, with ice-and-water shields at valleys, vents and chimneys",
+        "Asphalt shingles, metal and tile",
+        "Permits pulled and HOA approvals handled"
+      ],
+      "faqs": [
+        {
+          "q": "When is replacement the better call than repair?",
+          "a": "When the roof is near the end of its life, you spot heavy granule loss in the gutters, decking has soft or rotted spots, or leaks keep coming back after every storm."
+        },
+        {
+          "q": "How long does a replacement take?",
+          "a": "Most jobs take one to three days, fully scheduled in advance."
+        }
+      ]
+    },
+    {
+      "slug": "roof-maintenance",
+      "group": "residential",
+      "title": "Roof Maintenance",
+      "short": "Scheduled care that catches small problems before they grow.",
+      "text": "Proactive maintenance that extends the life of your roof and helps you avoid unexpected costly repairs down the road.",
+      "image": "/brands/waboroofingsystems/maintenance",
+      "imageAlt": "A pitched asphalt shingle roof seen from the ridge",
+      "body": [
+        "A well-maintained roof is your first line of defense against the elements, and our proactive approach keeps it performing at its best. We identify and address minor issues before they escalate into major headaches, such as leaks and water damage.",
+        "Our process starts with scheduling a convenient time for our team to visit your property and perform a thorough evaluation. We then provide a clear, detailed report and recommend the best course of action.",
+        "Through regular inspections our team can spot loose shingles, clogged gutters or damaged flashing. Addressing those early helps you avoid expensive repairs and prevents structural damage. We handle everything from debris removal to sealing minor cracks."
+      ],
+      "points": [
+        "Thorough property evaluation and a detailed written report",
+        "Loose shingles, clogged gutters and damaged flashing caught early",
+        "Debris removal",
+        "Minor cracks sealed",
+        "Customized maintenance plans for Texas homeowners"
+      ]
+    },
+    {
+      "slug": "storm-damage",
+      "group": "storm",
+      "title": "Storm And Hail Damage",
+      "short": "Hail, wind and driven rain, assessed and documented fast.",
+      "text": "When a named storm rolls off the Gulf, your roof takes the first hit, and the damage often hides until the next downpour finds it.",
+      "image": "/brands/waboroofingsystems/storm",
+      "imageAlt": "Storm-damaged roof shingles lifted and torn by high wind",
+      "claim": true,
+      "body": [
+        "We built our storm response around Gulf Coast reality. From March hail to late-season hurricanes, we know how weather events batter local roofs and how quickly small breaches turn into interior leaks. Our team acts fast to stop water, secure your home, and set up lasting repairs.",
+        "Wind, hail and driven rain each leave different marks. On shingles, look for bruising and lost granules from hail. Tile cracks or slips under wind. Metal dents and seams loosen. The fix has to match the material, not just patch the most visible spot.",
+        "Move fast once the winds die down. We tarp exposed sections, document every hit with photos, and control water intrusion before it soaks decking or drywall. Quick action limits interior loss and strengthens your claim, and we dispatch a crew the same day when possible."
+      ],
+      "points": [
+        "Same-day crew when possible",
+        "Exposed sections tarped",
+        "Every hit documented with photos",
+        "Roof, flashing and penetrations inspected",
+        "Repairs matched to the roof material"
+      ]
+    },
+    {
+      "slug": "emergency-roof-repair",
+      "group": "storm",
+      "title": "Emergency Roof Repair",
+      "short": "24/7 response: tarp the breach, then plan the lasting fix.",
+      "text": "When a storm rips through the Gulf Coast, water starts finding its way inside within minutes. We stabilize your home first, then plan the lasting fix.",
+      "body": [
+        "Our emergency work runs in two clear stages. First we tarp the breach, seal exposed areas, and stop water from spreading into your walls, insulation and belongings. Once conditions clear, we return for permanent repairs, replacing damaged shingles, flashing and decking so the roof withstands the next storm.",
+        "Not every leak needs a midnight visit, but some do. Call us when you see active dripping, sagging decking or exposed rafters. Fallen limbs, missing shingles and sudden water intrusion all signal an emergency.",
+        "Water rarely enters where it drips. We trace stains and moisture back to the real source, whether that is a lifted flashing or a punctured shingle, so the repair lands on the actual opening rather than a guess."
+      ],
+      "points": [
+        "Emergency line answered 24/7 on (832) 280-1690",
+        "Heavy-duty tarping anchored to sound decking",
+        "Water traced back to the true entry point",
+        "Damaged shingles, flashing and decking replaced",
+        "Every step photographed and logged for your insurance claim"
+      ]
+    },
+    {
+      "slug": "commercial-roofing",
+      "group": "commercial",
+      "title": "Commercial Roofing",
+      "short": "Single-ply, modified bitumen, metal and silicone restoration.",
+      "text": "Install, repair and replacement across a full range of commercial roofing materials, with full insurance, bonding and warranty options behind the work.",
+      "body": [
+        "WABO Roofing Systems aims to be the Greater Houston area's first choice for commercial roofing services, and has evolved into one of the most versatile roofing contractors in the region. Our experience and the relationships we have formed with our clients are the most important factors in our success.",
+        "We know how important it is to keep a commercial roof in good condition, and how costly it can be to make unnecessary repairs or deal with premature replacement. Our contractors help you make an educated decision about your commercial roof project.",
+        "In any economy, roof restoration makes sense. A silicone roof coating extends the service life of your existing roof and avoids the cost and inconvenience of replacement. These highly reflective coatings have been used to restore millions of square feet of commercial and industrial roofing."
+      ],
+      "points": [
+        "Single-ply membrane systems (TPO, EPDM)",
+        "Torch-down and modified bitumen",
+        "Asphalt shingles",
+        "Metal roofing (standing seam, R-panel)",
+        "Silicone coatings and roof restoration",
+        "Full insurance, secure bonding and warranty options"
+      ]
+    }
+  ],
+  "claim": {
+    "title": "How a storm claim works",
+    "text": "Filing a claim takes detailed documentation from a trusted roofer, and putting that together is part of the job.",
+    "steps": [
+      {
+        "title": "Free inspection",
+        "text": "We come out and perform a free inspection, documenting and photographing any damage we find on your structure."
+      },
+      {
+        "title": "Tarp and dry-in",
+        "text": "We tarp the breach, seal exposed areas and control water intrusion before it soaks decking or drywall."
+      },
+      {
+        "title": "Documentation for your insurer",
+        "text": "We look for missing or damaged shingles, sagging gutters, mold formation and damaged flashing, then photograph and log every step."
+      },
+      {
+        "title": "Repair or replacement",
+        "text": "If the damage is substantial, our experts perform the necessary upgrades and assist you through the claims process."
+      }
+    ]
+  },
+  "materials": {
+    "title": "Shingles we install",
+    "text": "WABO Roofing is a GAF Master Elite Contractor and a Master Shingle Applicator through CertainTeed.",
+    "brands": ["GAF", "CertainTeed"]
+  },
+  "about": {
+    "title": "Know More About Your Most Trusted TX Home Improvement Contractor",
+    "text": [
+      "When local residents have problems with their homes or commercial buildings, they turn to WABO Roofing because of our unwavering dedication to provide them with the highest quality home improvement and roofing services.",
+      "WABO Roofing opened its doors in 2016, and since then have committed to being one of Texas' most reputable contractors that offers roofing, windows, gutters, siding and patio installation in Houston and the surrounding areas.",
+      "Here at WABO Roofing, integrity is one of our core values, and it serves as a competitive advantage. Our reputation for ethical business practices is one of the main reasons our clients and suppliers value their relationship with us.",
+      "A company founded on integrity and customer excellence, WABO Roofing is an A+ rated accredited company with the Better Business Bureau and a Master Shingle Applicator through CertainTeed, and a GAF Master Elite Contractor. We are fully licensed, insured and bonded, adding multiple layers of protection to you and your investment."
+    ],
+    "image": "/brands/waboroofingsystems/team",
+    "imageAlt": "The WABO Roofing Systems team",
+    "values": [
+      {
+        "title": "Reasonable Pricing",
+        "text": "Reasonable and competitive pricing, with reliable business practices behind it."
+      },
+      {
+        "title": "Superior Craftsmanship",
+        "text": "Superior craftsmanship on every structure we are given the honor of improving."
+      },
+      {
+        "title": "Start To Finish",
+        "text": "Professional assistance from start to finish, and customer loyalty earned rather than assumed."
+      }
+    ]
+  },
+  "inspection": {
+    "title": "Our roofing process",
+    "steps": [
+      {
+        "title": "Consultation",
+        "text": "We meet with you to inspect your roof, understand its challenges and discuss your project goals."
+      },
+      {
+        "title": "Proposal",
+        "text": "After the inspection we provide a clear proposal detailing the work, materials, timeline and costs."
+      },
+      {
+        "title": "Installation",
+        "text": "Our skilled team installs your roof efficiently and safely, using high-quality materials with minimal disruption."
+      },
+      {
+        "title": "Inspection",
+        "text": "We finish with a thorough inspection to ensure everything meets our standards and that you are satisfied."
+      }
+    ]
+  },
+  "serviceArea": [
+    "Webster",
+    "League City",
+    "Seabrook",
+    "Friendswood",
+    "Pearland",
+    "Alvin",
+    "Deer Park",
+    "La Porte",
+    "Pasadena",
+    "Shoreacres",
+    "Texas City",
+    "Galveston",
+    "Baytown",
+    "Houston",
+    "South Houston",
+    "Bellaire",
+    "West University Place",
+    "Missouri City",
+    "Stafford",
+    "Sugar Land",
+    "Richmond",
+    "Rosenberg",
+    "Cypress",
+    "Katy",
+    "Tomball",
+    "Humble",
+    "Conroe",
+    "The Woodlands",
+    "Clear Lake",
+    "Nassau Bay",
+    "Taylor Lake Village",
+    "El Lago",
+    "Kemah",
+    "Clear Lake Shores",
+    "Bacliff",
+    "Dickinson",
+    "La Marque",
+    "Santa Fe",
+    "Hitchcock",
+    "Manvel",
+    "Iowa Colony",
+    "Brookside Village",
+    "Bonney",
+    "Angleton",
+    "Lake Jackson",
+    "Clute",
+    "Freeport",
+    "West Columbia",
+    "Baileys Prairie",
+    "Brazoria",
+    "Beach City",
+    "Southside Place",
+    "Hilshire Village",
+    "Bunker Hill Village",
+    "Hunters Creek Village",
+    "Piney Point Village",
+    "Spring Valley Village",
+    "Brookshire"
+  ],
+  "areasText": "Our crews work across Galveston County, Brazoria County and southeast Harris County, with a core area of Webster, League City, Clear Lake, Friendswood and Pearland, out to Katy and Cypress and north to Conroe and The Woodlands.",
+  "facts": [
+    {
+      "heading": "Certifications and accreditations",
+      "items": [
+        "GAF Master Elite Contractor",
+        "Master Shingle Applicator through CertainTeed",
+        "A+ rated accredited company with the Better Business Bureau",
+        "Fully licensed, insured and bonded"
+      ]
+    },
+    {
+      "heading": "Phone numbers",
+      "items": [
+        "Main: (832) 464-7182",
+        "Toll free: (855) 557-6634",
+        "Emergency roofing service 24/7: (832) 280-1690"
+      ]
+    },
+    {
+      "heading": "Financing",
+      "text": "Several financing options are available and designed to fit the needs of your project, provided with approved credit. You can get pre-approved before the work is scheduled, or call (855) 557-6634 to speak with a sales representative."
+    },
+    {
+      "heading": "Payment accepted",
+      "text": "Cash, credit card, check and insurance."
+    },
+    {
+      "heading": "Commercial roofing systems",
+      "items": [
+        "Single-ply membrane (TPO, EPDM)",
+        "Torch-down",
+        "Modified bitumen",
+        "Asphalt shingles",
+        "Metal roofing (standing seam, R-panel)",
+        "Silicone coatings"
+      ]
+    },
+    {
+      "heading": "Other services we offer",
+      "items": [
+        "New construction",
+        "Siding",
+        "Windows",
+        "Gutter services",
+        "Patios",
+        "Painting",
+        "Power washing",
+        "Flooring",
+        "Drywall and sheetrock",
+        "Ventilation repair",
+        "Solar panel installation"
+      ]
+    },
+    {
+      "heading": "Our team",
+      "text": "Brian Wilson, Operations Manager."
+    },
+    {
+      "heading": "In the community",
+      "text": "We are proud to support Habitat for Humanity, and have provided GAF roofing systems on new Houston Habitat homes given to deserving families in our community."
+    },
+    {
+      "heading": "Insurance claims",
+      "text": "Keep in mind that not all insurance claims cover the entire cost of the repair, and policies vary. Talk to your insurance company so you are fully informed about what your claim needs and how much they will cover."
+    },
+    {
+      "heading": "Referral program",
+      "text": "Send us a referral and you earn $50 once our representative meets them and gives them a free proposal, with no strings attached. If they hire us, you earn a bonus on top once the project is complete and paid in full: $25 under $1,000, $50 from $1,000 to $4,999, $100 from $5,000 to $9,999, $150 from $10,000 to $14,999, $200 from $15,000 to $19,999, $250 from $20,000 to $24,999, and 1% of the selling price over $25,000. Email wilsonb@waboroofing.com with their name, address, email, cell number and the service they need, along with your own contact details and address so we can send the check."
+    },
+    {
+      "heading": "Quotes and proposals",
+      "text": "Call us or fill out the form and we will set up a time to meet you at your home or business for a free, no-obligation quote. You can also request an instant estimate for a new roof. Every proposal is written, and it details the work, the materials, the timeline and the cost."
+    },
+    {
+      "heading": "Roofing materials and systems",
+      "items": [
+        "GAF Timberline HDZ shingles",
+        "GAF Z-Ridge caps",
+        "GAF LayerLock shingles for WindProven coverage",
+        "Class 3 impact-resistant shingles, hand-nailed",
+        "CertainTeed Landmark shingles",
+        "CertainTeed Integrity Roof System",
+        "Work completed to applicable Texas coastal windstorm requirements"
+      ]
+    },
+    {
+      "heading": "GAF warranty options",
+      "text": "GAF offers Shingle & Accessory, Roofing System, System Plus, Silver Pledge and Golden Pledge limited warranties, and coverage depends on the products, the property type and the warranty selected. Silver Pledge and Golden Pledge include specified misapplication coverage, which standard product warranties do not. Qualifying LayerLock-labeled shingles can carry a 15-year WindProven limited wind warranty with no maximum wind-speed limit, when the specified GAF accessories and installation are used. We will name the exact warranty in your proposal and handle the registration."
+    },
+    {
+      "heading": "CertainTeed warranty options",
+      "text": "CertainTeed covers manufacturing defects, with SureStart as the initial non-prorated period. Its current chart lists Landmark with 110 mph standard wind coverage and a conditional 160 mph upgrade, and 25-year algae coverage with qualifying algae-resistant hip and ridge accessories, otherwise ten years. SureStart PLUS adds extended protection on eligible systems installed by credentialed contractors, and the materials, labor, tear-off, disposal and workmanship covered differ by plan."
+    },
+    {
+      "heading": "Our record",
+      "text": "Our team has completed more than 500 roof projects across the Houston area since 2016."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/WABOroofing",
+        "YouTube: WABO Roofing Systems"
+      ]
+    },
+    {
+      "heading": "Careers",
+      "text": "We are hiring a full-time Sales Representative in Houston, TX, paying $75,000 to $140,000. The job comes with full medical benefits, a company vehicle, continued education and training, branded gear and apparel, and team building trips and events."
+    },
+    {
+      "heading": "How we contact you",
+      "text": "When you submit the form you authorize us to contact you by phone and email about your enquiry and the follow-ups, including by AI assistant on a recorded line. Text messages cover your enquiry, follow-ups and appointment reminders, message and data rates may apply, and you can reply STOP to opt out at any time or HELP for assistance."
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Tim Manchester",
+      "text": "Experience couldn't have been better! From the customers service when calling to inquire, to the crew that came out to inspect and make my repairs to the easy of billing! Great overall, highly recommend Wabo!"
+    },
+    {
+      "author": "Buster Caballero",
+      "text": "Enjoyed working with WABO and Brian tremendously. Took his time to review my whole roof and my concerns. When the quote was ready he walked through the whole findings and remedy."
+    },
+    {
+      "author": "Brittany Morgan",
+      "text": "Working with Brian and Debbie was a pleasure! They are very thorough and communicate well. The work was done without a hitch and in the time frame they said it would be."
+    }
+  ]
+}

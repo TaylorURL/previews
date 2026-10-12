@@ -1,0 +1,454 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "MVP Plumbing LLC",
+  "shortName": "MVP Plumbing",
+  "summary": "Residential and commercial plumbing service and repair across Baytown, Mont Belvieu and the Houston area, under Master Plumber License MPL 38224.",
+  "phone": "(832) 334-2836",
+  "email": "admin@mvpplumbingllc.com",
+  "address": "8015 Sugar Cane Dr",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77523",
+  "rating": 5.0,
+  "reviewCount": 161,
+  "since": 2018,
+  "hours": [["Monday – Sunday", "Open 24 hours"]],
+  "brand": {
+    "primary": "#08086b",
+    "primaryDeep": "#050540",
+    "accent": "#6ebe59",
+    "ink": "#191a22",
+    "muted": "#6b6e7e",
+    "surface": "#f5f6fb",
+    "line": "#e2e4ee",
+    "heading": "'Barlow Condensed', 'Arial Narrow', system-ui, sans-serif",
+    "body": "'Barlow', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap",
+    "logo": "/brands/mvpplumbing/logo.webp",
+    "logoWidth": 90,
+    "logoHeight": 74,
+    "logoRatio": 1.216,
+    "logoGround": "#ffffff"
+  },
+  "emergency": {
+    "title": "24-hour emergency plumbing",
+    "text": "Burst pipes, sewage backing up or no water at all, call 832-334-2836 and we will walk you through shutting the water off while we are on the way."
+  },
+  "licenses": [{ "label": "Texas Master Plumber", "number": "MPL 38224" }],
+  "financing": {
+    "text": "Financing through Acorn Finance, built into the estimate we send you, with a soft credit check that does not affect your score."
+  },
+  "hero": {
+    "eyebrow": "Licensed master plumber in Baytown, Texas",
+    "title": "The plumber who tells you",
+    "titleAccent": "what the job actually needs.",
+    "lead": "Residential and commercial plumbing service and repair across Baytown, Mont Belvieu and the Houston area since 2018, under Master Plumber License MPL 38224. We answer 24 hours.",
+    "image": "/brands/mvpplumbing/hero",
+    "imageAlt": "An MVP Plumbing technician gluing fittings on a new drain line in a tunnel under a slab"
+  },
+  "groups": [
+    {
+      "slug": "water-heaters",
+      "title": "Water Heaters",
+      "icon": "flame",
+      "summary": "Tank and tankless heaters repaired, replaced and installed, including attic installs.",
+      "intro": "Around here a water heater lasts ten to twelve years. We repair and replace tank heaters, and we sell, install and service tankless units. When a tankless unit is still under manufacturer warranty, we make the warranty call so you do not sit on hold describing a fault you cannot see.",
+      "image": "/brands/mvpplumbing/water-heaters",
+      "imageAlt": "A finished tankless water heater installation in an attic",
+      "services": [
+        {
+          "slug": "water-heater-repair-replacement",
+          "title": "Water Heater Repair and Replacement",
+          "icon": "flame",
+          "text": "Tank heaters repaired and replaced, including attic installs with a new pan, flex connectors and a properly run T&P line.",
+          "points": [
+            "Attic installs with a new pan and drain",
+            "Around here a heater lasts ten to twelve years",
+            "We install State ProLine heaters"
+          ]
+        },
+        {
+          "slug": "tankless-water-heaters",
+          "title": "Tankless Water Heaters",
+          "icon": "gauge",
+          "text": "We sell and install State, Navien and Noritz, and we service other brands.",
+          "points": [
+            "We handle the manufacturer warranty call for you",
+            "Gas and venting work sized for the unit",
+            "Repairs on gas and electric tankless units"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "drains-and-sewers",
+      "title": "Drains and Sewers",
+      "icon": "waves",
+      "summary": "Drain cleaning, jetting, camera inspection, sewer line repair and tunnelling under the slab.",
+      "intro": "A blockage and a broken pipe look identical from the fixture, so we clear the line first and watch how the machine behaves. We run a camera when something warrants it rather than on every job, because you should not pay for a picture of a working pipe.",
+      "image": "/brands/mvpplumbing/drains",
+      "imageAlt": "A hydro jetter hose running into a cleanout during a drain cleaning",
+      "services": [
+        {
+          "slug": "drain-cleaning",
+          "title": "Drain Cleaning",
+          "icon": "wrench",
+          "text": "Three machines sized to the line, for tubs and lavatories, for kitchen and laundry, and for the main sewer.",
+          "points": [
+            "Running the wrong machine damages the pipe or does nothing at all",
+            "Cleared from the outside cleanout where the line allows it"
+          ]
+        },
+        {
+          "slug": "hydro-jetting",
+          "title": "Hydro Jetting",
+          "icon": "droplets",
+          "text": "4000 PSI at 9 GPM on lines from two inch to six inch. A cable clears a path; jetting cleans the pipe wall so the problem stops coming back.",
+          "points": ["Two inch to six inch lines", "Restaurant grease lines on a schedule"]
+        },
+        {
+          "slug": "sewer-camera-inspection",
+          "title": "Sewer Camera Inspection",
+          "icon": "filter",
+          "text": "Run when something warrants it, not on every job as standard. It is also the right call before buying an older house.",
+          "points": ["Answers the one question that matters: blockage or pipe"]
+        },
+        {
+          "slug": "sewer-line-repair-replacement",
+          "title": "Sewer Line Repair and Replacement",
+          "icon": "waves",
+          "text": "Under-slab and yard sewer lines repaired and replaced, with new pipe anchored into the slab so the backfill cannot create a new belly.",
+          "points": ["Trenched yard line replacement", "New pipe anchored against a new belly"]
+        },
+        {
+          "slug": "tunneling-under-slab-drain-repair",
+          "title": "Tunneling and Under-Slab Drain Repair",
+          "icon": "wrench",
+          "text": "We dig under the foundation from outside and repair the broken line from below, so nobody breaks through your floor.",
+          "points": [
+            "Saves your flooring in a house",
+            "Keeps a care home, restaurant or office open during the work"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pipes-and-water",
+      "title": "Pipes and Water",
+      "icon": "wind",
+      "summary": "Repiping, water line repair, leak detection, fixtures, toilets and water treatment.",
+      "intro": "On copper we use Viega MegaPress, a cold mechanical joint made with a press tool rather than a flame, which matters in an attic packed with timber and insulation. Every above-ground water line repair goes back with a working shutoff valve and insulation, because those two things are what cause the next emergency.",
+      "image": "/brands/mvpplumbing/pipes",
+      "imageAlt": "Copper pipe joined with press fittings beside attic timber",
+      "services": [
+        {
+          "slug": "repiping",
+          "title": "Whole House Repiping",
+          "icon": "wrench",
+          "text": "Water and drain line repipes in Uponor PEX-a and copper. Apartment buildings done one unit at a time on tenant turnover.",
+          "points": ["Uponor PEX-a and copper", "Apartments done on turnover"]
+        },
+        {
+          "slug": "water-line-repair",
+          "title": "Water Line Repair",
+          "icon": "droplets",
+          "text": "Water lines repaired and always returned with a working shutoff valve and insulation on the repair.",
+          "points": ["Press fittings instead of an open flame where it matters"]
+        },
+        {
+          "slug": "leak-detection",
+          "title": "Leak Detection",
+          "icon": "filter",
+          "text": "We work out what kind of leak it is before opening a ceiling, so the opening is a twelve-inch square instead of half a room.",
+          "points": ["Slab leaks located before any concrete is cut"]
+        },
+        {
+          "slug": "fixtures-valves-toilets",
+          "title": "Fixtures, Valves and Toilets",
+          "icon": "wrench",
+          "text": "Faucets, tub and shower valves, toilets, flange repairs, tank rebuilds and commercial flushometer rebuilds on the first visit because we carry the kits.",
+          "points": [
+            "Valves cut in from the front through tile where the valve allows it",
+            "An access panel fitted from the closet side rather than a patch"
+          ]
+        },
+        {
+          "slug": "water-treatment",
+          "title": "Water Filtration and Softeners",
+          "icon": "droplets",
+          "text": "Whole-house conditioners, traditional salt softeners, and reverse osmosis for drinking water. Three different problems with three different answers.",
+          "points": ["Isolation valves fitted so it can be serviced without cutting pipe"]
+        }
+      ]
+    },
+    {
+      "slug": "gas-line-services",
+      "title": "Gas Lines",
+      "icon": "flame",
+      "summary": "Gas line repair and replacement, pressure testing and meter lock-off resolution.",
+      "intro": "Gas work is permitted and inspected under Master Plumber License MPL 38224. We repair and replace gas lines, run pressure tests and resolve CenterPoint meter lock-offs, and we handle the permit and the city inspection.",
+      "services": [
+        {
+          "slug": "gas-line-repair",
+          "title": "Gas Line Repair and Replacement",
+          "icon": "flame",
+          "text": "Gas line repair, replacement and CenterPoint meter lock-off resolution, with permits and city inspection handled under our license.",
+          "points": ["Yard lines and risers", "Permit and inspection handled"]
+        },
+        {
+          "slug": "gas-pressure-testing",
+          "title": "Gas Pressure Testing",
+          "icon": "gauge",
+          "text": "Annual testing and certification for daycares, multifamily complexes and commercial properties, with the paperwork your inspector wants.",
+          "points": ["Annual certification for licensed daycares", "Paperwork the inspector asks for"]
+        }
+      ]
+    },
+    {
+      "slug": "commercial-plumbing",
+      "title": "Commercial",
+      "icon": "circuit",
+      "summary": "Restaurants, daycares, care facilities, churches, schools and property managers across the Houston area.",
+      "intro": "A steady part of what we do is work that other contractors and in-house maintenance teams cannot legally sign off on: permits, gas tests, city inspections and meter relocations. We are a service and repair company, and we will tell you when a job is outside what we take on.",
+      "image": "/brands/mvpplumbing/commercial",
+      "imageAlt": "A deep trench opened for a commercial water main repair",
+      "services": [
+        {
+          "slug": "commercial-service-repair",
+          "title": "Commercial Plumbing",
+          "icon": "circuit",
+          "text": "Restaurants, daycares, care facilities, churches, schools, offices, apartment buildings and facility management companies across the Houston area.",
+          "points": ["Work that keeps the building open", "We answer 24 hours"]
+        },
+        {
+          "slug": "grease-line-jetting",
+          "title": "Restaurant Grease Line Jetting",
+          "icon": "droplets",
+          "text": "Emergency backups, or a schedule that stops the emergency happening. Quarterly or twice a year depending on volume.",
+          "points": ["Quarterly or twice-yearly schedules"]
+        },
+        {
+          "slug": "drinking-fountains",
+          "title": "Drinking Fountains and Bottle Fillers",
+          "icon": "filter",
+          "text": "ADA bi-level units for churches, schools, gyms and offices, including the supply, the drain and the fixture.",
+          "points": ["ADA bi-level units supplied and fitted"]
+        },
+        {
+          "slug": "master-plumber-for-contractors",
+          "title": "Master Plumber for Contractors",
+          "icon": "wrench",
+          "text": "For general contractors, remodelers and maintenance teams who hit the boundary of what they can legally sign off. We pull the permit and pass the inspection.",
+          "points": ["Permits, gas tests and city inspections", "Water meter relocations"]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "A licensed master plumber in Baytown since 2018.",
+    "text": [
+      "MVP Plumbing LLC is a licensed master plumbing company in Baytown, Texas. Justin Hughes started it in 2018. We do residential and commercial service and repair across Baytown, Mont Belvieu and the surrounding area, under Master Plumber License MPL 38224.",
+      "We are not the biggest plumbing outfit around here and we are not trying to be. What we offer is a licensed master plumber who will look at your problem, tell you plainly what is wrong, and tell you what we would do if it were our own house. That last part includes the times when the answer is that it does not need fixing yet.",
+      "We try to leave houses easier to work on than we found them. In a lot of Baytown houses the tub or shower valve backs onto a closet, so we cut the sheetrock from the closet side and fit an access panel rather than patching it. It costs nothing extra now, and next time anything needs doing back there the plumber opens a panel instead of cutting your wall again.",
+      "The same thinking runs through the rest of it: isolation valves on water treatment equipment so it can be serviced without cutting pipe, new sewer pipe anchored into the slab so the backfill cannot create a new belly, and a working shutoff valve and insulation on every above-ground water line repair."
+    ],
+    "image": "/brands/mvpplumbing/team",
+    "imageAlt": "An MVP Plumbing technician cutting into a ceiling with a dust extractor to reach a leak",
+    "values": [
+      {
+        "title": "We tell you when you do not need the work",
+        "text": "We offered a Chambers County customer a camera inspection and then told them that if it were our house we would not bother, because nothing about the job pointed to a bigger problem."
+      },
+      {
+        "title": "We price the situation, not the part",
+        "text": "Two customers with the same brand of fixture got opposite recommendations in the same month, because one had a remodel coming and the other did not."
+      },
+      {
+        "title": "We answer 24 hours",
+        "text": "Call 832-334-2836 at any hour and you will be talking to the people who do the work."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What is the fastest way to reach you?",
+      "a": "Call 832-334-2836. We answer 24 hours. For anything urgent, water you cannot stop, sewage backing up or no water, call rather than texting or filling in a form. A text and a form both wait for someone to read them; the phone does not."
+    },
+    {
+      "q": "Can I text you instead of calling?",
+      "a": "Yes. It is a cell phone, so texts come through on the same number, 832-334-2836, and it is a good way to send a photo of what you are looking at. What we will not do is promise a text gets answered as fast as a call, so if it is urgent, ring us."
+    },
+    {
+      "q": "Do you charge for an estimate?",
+      "a": "Call and describe the job and we will tell you what we need to see. For most work we come out, look at it, and give you a bid before anything is taken apart."
+    },
+    {
+      "q": "Can you give me a price over the phone?",
+      "a": "For some straightforward work, roughly. For anything involving what is behind a wall or under a slab, no, and anyone who does is guessing. We would rather look at it and give you a real number."
+    },
+    {
+      "q": "Do you offer financing?",
+      "a": "Yes, through Acorn Finance. The financing option appears on the estimate we send you, so the first step is asking for a quote."
+    },
+    {
+      "q": "Do you do new construction?",
+      "a": "No. We are a service and repair company, residential and commercial. That includes remodel plumbing, rough-ins, moving supply and drain lines and tub-to-shower conversions, but not ground-up new builds."
+    },
+    {
+      "q": "Are you insured?",
+      "a": "Yes. If you need certificates for a commercial job or a property manager's file, ask when you call and we will send them over."
+    },
+    {
+      "q": "Who will actually turn up?",
+      "a": "We are a small company. When you call, you are talking to the people who do the work, not a call centre passing a job to whoever is nearest."
+    },
+    {
+      "q": "What should I have ready when I call?",
+      "a": "What is happening, how long it has been happening, and where you are. If a fixture is involved, which one. If it has been worked on before, what was done. That tells us which machine or part to bring, which often saves a second trip."
+    },
+    {
+      "q": "Do you charge extra for travel?",
+      "a": "Ask when you call and we will be straight with you about it. Baytown and Mont Belvieu are home. The further out a job is, the more the travel matters, and we would rather tell you that up front than surprise you on an invoice."
+    },
+    {
+      "q": "What areas do you cover?",
+      "a": "Baytown and Mont Belvieu are home. We work across Chambers County, the east side of Harris County and the bay area, and we travel further for commercial work."
+    },
+    {
+      "q": "What if I am not happy with the work?",
+      "a": "Call us before you write anything. Most problems are fixable, and we would rather fix them. Warranty terms for parts and labor are on your invoice or estimate."
+    }
+  ],
+  "serviceArea": [
+    "Baytown",
+    "Mont Belvieu",
+    "Beach City",
+    "Anahuac",
+    "Highlands",
+    "Crosby",
+    "Dayton",
+    "Liberty",
+    "La Porte",
+    "Clear Lake",
+    "League City",
+    "Humble",
+    "Atascocita"
+  ],
+  "reviews": [
+    {
+      "author": "Daniel C.",
+      "text": "Extremely top of line customer service, top quality work, promptness and pricing. I had a water pipe leak on my side of the water meter, so time was of the essence to avoid an extremely high water bill due to the leak. They showed up same day and fixed the leak with higher quality piping than originally installed."
+    },
+    {
+      "author": "Tony G.",
+      "text": "Justin and his crew are my go-to guys! They are quick to respond and communicate efficiently, never disappointing. They recently responded to my call and gave the simplest fix, and did not charge me. I really appreciate these guys for all they do, and highly recommend!"
+    },
+    {
+      "author": "Margie R.",
+      "text": "The gentleman that came out was very professional and unclogged my drain in the kitchen also gave me tips in the future. I will definitely call MVP with all my plumbing needs"
+    },
+    {
+      "author": "Kevin K.",
+      "text": "Great company, excellent response. I will use them again."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "License and permits",
+      "text": "All work is performed under Texas Master Plumber License MPL 38224. Permits, gas pressure tests, city inspections and water meter relocations are pulled and passed under that license."
+    },
+    {
+      "heading": "What we do not do",
+      "items": [
+        "New construction. We are service, repair and remodel.",
+        "Lend our license. A permit pulled under MPL 38224 means we did the work. Contractors ask; the answer is no.",
+        "Sell you a camera inspection to prove a pipe works.",
+        "Publish an APR. Financing rates and lender criteria change, and a stale number is worse than no number."
+      ]
+    },
+    {
+      "heading": "Other work we also do",
+      "items": [
+        "Remodel plumbing: rough-ins, moving supply and drain lines, tub-to-shower conversions, fixture sets and coordinating with the other trades",
+        "Garbage disposals",
+        "Hose bibs with their own shutoff, insulated for winter",
+        "Circulator pumps swapped as a component repair rather than a heater replacement",
+        "Sprinkler backflow and double-check assemblies, wrapped for winter"
+      ]
+    },
+    {
+      "heading": "Equipment and materials we work with",
+      "items": [
+        "State, Navien and Noritz tankless water heaters, with other brands serviced",
+        "We will service a Rinnai somebody else installed, though parts for it come from further out, about three days rather than one",
+        "State ProLine tank heaters, including six-year-warranty units",
+        "Uponor PEX-a and copper for repipes, with CPVC where the repair calls for it",
+        "Viega MegaPress and ProPress cold press fittings on copper, so there is no open flame in an attic",
+        "Watts valves on commercial mains",
+        "HALO whole-house water conditioners as our standard line, with AquaArmor filtration and traditional salt softeners on request",
+        "Elkay bi-level drinking fountains with bottle fillers",
+        "A jetter running 4000 PSI at 9 GPM on two inch to six inch lines",
+        "Three drain machines sized to the line: tubs and lavatories, kitchen and laundry, main sewer"
+      ]
+    },
+    {
+      "heading": "Insurance and certificates",
+      "text": "We are insured. If you need certificates for a commercial job or a property manager's file, ask when you call and we will send them over."
+    },
+    {
+      "heading": "Warranty",
+      "text": "Warranty terms for parts and labor are stated on your invoice or estimate. Manufacturer warranties on equipment we install come from the manufacturer, and warranties do not cover damage from misuse, neglect, freezing, work performed by others or conditions outside our control."
+    },
+    {
+      "heading": "Estimates and payment",
+      "items": [
+        "Calling or sending the form is a request for service, not a booking. We come back to you to confirm.",
+        "Work begins once we have given you an estimate or scope of work and you have approved it.",
+        "An estimate is based on what is visible and known at the time. If the scope changes we discuss it and get your approval before going on.",
+        "Payment is due as stated on your invoice unless other terms are agreed in writing."
+      ]
+    },
+    {
+      "heading": "Financing through Acorn Finance",
+      "items": [
+        "Loans from $1,000 up to $100,000",
+        "Terms up to 20 years",
+        "Pre-qualify in about 60 seconds with a soft credit check that does not affect your score",
+        "MVP Plumbing never handles your financial information; it goes straight through Acorn",
+        "The financing option appears on the estimate we send you, so the first step is asking for a quote"
+      ]
+    },
+    {
+      "heading": "If you smell gas",
+      "text": "Leave the building, do not switch anything on or off including light switches, and call CenterPoint or 911 from outside first. We come in once the situation is safe."
+    },
+    {
+      "heading": "What happens next",
+      "items": [
+        "We talk. You describe what is happening and we ask the questions that decide what comes off the truck.",
+        "We look at it. For most work we come out and see the job before quoting.",
+        "You get a bid before anything is taken apart, with the financing option on it if you want it.",
+        "We do the work and tell you what we found, including anything we think is coming."
+      ]
+    },
+    {
+      "heading": "Where we work",
+      "text": "Baytown and Mont Belvieu are home. We work across Chambers County, the east side of Harris County and the bay area, we also serve Humble and Atascocita, and we travel further for commercial work. Baytown, TX 77523, a service-area business with no walk-in shop."
+    },
+    {
+      "heading": "Updates by text",
+      "text": "If you would rather have appointment confirmations, arrival notices, estimates and invoices come to your phone than chase them down, ask us to text them. It is not advertising, consent is not a condition of purchase, and you can stop any time by replying STOP."
+    },
+    {
+      "heading": "Where to find us",
+      "items": [
+        "Facebook: facebook.com/mvpplumbingllc",
+        "Instagram: instagram.com/mvpplumbingllc",
+        "TikTok: tiktok.com/@mvpplumbertx",
+        "YouTube: youtube.com/@mvpplumbingtx"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,378 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Chiller Services, Inc",
+  "shortName": "Chiller Services",
+  "summary": "Commercial and industrial HVAC service, sales and installation out of Pasadena, specializing in centrifugal chillers and chilled water systems for Houston building owners, property managers and plants.",
+  "phone": "(713) 869-4861",
+  "email": "ed@chillerservice.com",
+  "address": "3705 Allen Genoa Rd",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77504",
+  "since": 1987,
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ],
+    [
+      "Emergencies",
+      "24 hours, 7 days"
+    ]
+  ],
+  "brand": {
+    "primary": "#010a7d",
+    "primaryDeep": "#00063f",
+    "accent": "#f5a524",
+    "ink": "#0c1322",
+    "muted": "#50596e",
+    "surface": "#f1f3fb",
+    "line": "#dadff0",
+    "heading": "'Archivo', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/chillerservices/logo.webp",
+    "logoWidth": 207,
+    "logoHeight": 48,
+    "logoRatio": 4.305,
+    "logoGround": "#ffffff"
+  },
+  "emergency": {
+    "title": "24 hour emergency service",
+    "text": "Twenty-four hours a day, seven days a week including holidays, normally on site within two hours."
+  },
+  "licenses": [
+    {
+      "label": "Texas HVAC License",
+      "number": "TACLA016920C"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Commercial and industrial HVAC in Houston",
+    "title": "Centrifugal chiller specialists",
+    "titleAccent": "Houston has relied on for decades.",
+    "lead": "Major and minor chiller service, rebuilds, retrofits and installation, backed by some of the best centrifugal mechanics in the business and emergency response twenty-four hours a day.",
+    "image": "/brands/chillerservices/hero",
+    "imageAlt": "An industrial complex with elevated walkways and cooling towers"
+  },
+  "groups": [
+    {
+      "slug": "chiller-services",
+      "title": "Centrifugal Chillers",
+      "icon": "snowflake",
+      "summary": "Centrifugal chiller service, rebuilds, re-tubes and installation, with diagnostics to match.",
+      "intro": "Centrifugal chillers are the work this company was built on. Major and minor services, rebuilds, overhauls, teardowns and retrofits are handled in-house, and many of Houston's largest building owners and property managers have depended on that crew for decades.",
+      "image": "/brands/chillerservices/chillers",
+      "imageAlt": "Industrial pipes and machinery inside a plant room",
+      "services": [
+        {
+          "slug": "centrifugal-chiller-service",
+          "title": "Centrifugal Chiller Service",
+          "icon": "snowflake",
+          "text": "Major and minor services on centrifugal machines, from routine work through to a full teardown.",
+          "points": [
+            "Rebuilds, overhauls and teardowns",
+            "Retrofits on existing machines",
+            "Chiller repair, re-tube, installation and maintenance"
+          ]
+        },
+        {
+          "slug": "preventative-maintenance",
+          "title": "Preventative Maintenance",
+          "icon": "timer",
+          "text": "Scheduled inspections on the interval that suits the machine and the building.",
+          "points": [
+            "Annual",
+            "Semi-annual",
+            "Quarterly",
+            "Monthly"
+          ]
+        },
+        {
+          "slug": "diagnostics-and-testing",
+          "title": "Diagnostics and Testing",
+          "icon": "gauge",
+          "text": "State of the art diagnostic equipment is used for preventative maintenance and troubleshooting.",
+          "points": [
+            "Oil sampling with laboratory analysis",
+            "Vibration analysis",
+            "Non-destructive Eddy current tube testing"
+          ]
+        },
+        {
+          "slug": "chilled-water-systems",
+          "title": "Chilled Water Systems",
+          "icon": "droplets",
+          "text": "Water cooled and air cooled chillers, and the chilled water and DX air handling units they feed.",
+          "points": [
+            "Water and air cooled chillers",
+            "Chilled water and DX air handling units"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "commercial-hvac",
+      "title": "Commercial HVAC",
+      "icon": "building",
+      "summary": "Service, maintenance and equipment sales for commercial buildings across Houston.",
+      "intro": "Beyond the chiller itself, the plant has towers, pumps and air handlers that have to keep pace with it. Chiller Services maintains all of them on all major brands, and sells and installs the replacement equipment when a machine has reached the end of its life.",
+      "image": "/brands/chillerservices/commercial",
+      "imageAlt": "Industrial cooling fans mounted on a building rooftop",
+      "services": [
+        {
+          "slug": "equipment-service",
+          "title": "Equipment Service",
+          "icon": "wrench",
+          "text": "Service and maintenance of all major brands of plant and rooftop equipment.",
+          "points": [
+            "Cooling towers",
+            "Pumps",
+            "Rooftop package units",
+            "Air handling units",
+            "Fans"
+          ]
+        },
+        {
+          "slug": "equipment-sales-and-installation",
+          "title": "Equipment Sales and Installation",
+          "icon": "settings",
+          "text": "New HVAC equipment supplied and installed, sized and selected for the building it goes into.",
+          "points": [
+            "Chillers, water and air cooled",
+            "Cooling towers and pumps",
+            "Air handling units, chilled water and DX",
+            "Rooftop package units"
+          ]
+        },
+        {
+          "slug": "parts-and-brands",
+          "title": "Parts and Brands",
+          "icon": "shield",
+          "text": "All major brands of HVAC equipment and service parts are carried, with more available through an extensive network of suppliers.",
+          "points": [
+            "Trane",
+            "Carrier",
+            "York",
+            "McQuay"
+          ]
+        },
+        {
+          "slug": "emergency-service",
+          "title": "Emergency Service",
+          "icon": "timer",
+          "text": "Twenty-four hours, seven days a week, including holidays. Work is performed by expert technicians with special emergency response as required, normally within two hours.",
+          "points": [
+            "Technicians on call every day of the year",
+            "Two hour response where required"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "industrial-hvac",
+      "title": "Industrial HVAC",
+      "icon": "zap",
+      "summary": "SCR, VFD and MCC room air conditioning, classified area systems and living quarters.",
+      "intro": "Chiller Services has a unique understanding of the HVAC needs of SCR, VFD and MCC rooms. Off the shelf solutions from the major manufacturers, custom modifications or complete custom systems are all available, because the company is not tied to a specific brand and uses what is right for the job.",
+      "image": "/brands/chillerservices/industrial",
+      "imageAlt": "Industrial air conditioning units lined up outside a building",
+      "services": [
+        {
+          "slug": "scr-vfd-mcc-rooms",
+          "title": "SCR, VFD and MCC Rooms",
+          "icon": "circuit",
+          "text": "Air conditioning systems for the electrical rooms that cannot be allowed to run hot.",
+          "points": [
+            "SCR room AC systems",
+            "VFD room AC systems",
+            "MCC room AC systems"
+          ]
+        },
+        {
+          "slug": "classified-area-systems",
+          "title": "Classified Area Systems",
+          "icon": "shield",
+          "text": "Air conditioning systems and equipment built for classified areas.",
+          "points": [
+            "Classified area air conditioning systems",
+            "Equipment for classified areas"
+          ]
+        },
+        {
+          "slug": "living-quarters",
+          "title": "Living Quarters",
+          "icon": "home",
+          "text": "Air conditioning and heating for living quarters on industrial sites.",
+          "points": [
+            "Living quarters air conditioning and heating"
+          ]
+        },
+        {
+          "slug": "custom-and-turnkey-systems",
+          "title": "Custom and Turnkey Systems",
+          "icon": "settings",
+          "text": "Custom systems built through a network of custom build manufacturers, or a combination of custom and off the shelf.",
+          "points": [
+            "Turnkey retrofit packages ready to install",
+            "Custom modifications to standard equipment",
+            "Not tied to a single brand"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "manufacturing-and-process",
+      "title": "Manufacturing and Process",
+      "icon": "filter",
+      "summary": "Process chillers, cooling towers, heat exchangers, insulation and air distribution.",
+      "intro": "Process cooling has to hold a temperature, and extreme ambient temperatures make that harder. Chiller Services handles the process side of a plant, including units built for extreme ambient temperatures, and coordinates custom process chillers across multiple vendors.",
+      "image": "/brands/chillerservices/process",
+      "imageAlt": "Stainless steel process equipment inside a manufacturing plant",
+      "services": [
+        {
+          "slug": "process-cooling",
+          "title": "Process Cooling",
+          "icon": "droplets",
+          "text": "The cooling equipment a process depends on, specified, supplied and serviced.",
+          "points": [
+            "Process chillers",
+            "Process cooling towers",
+            "Process heat exchangers"
+          ]
+        },
+        {
+          "slug": "extreme-ambient-units",
+          "title": "Extreme Ambient Units",
+          "icon": "sun",
+          "text": "Units for extreme ambient temperatures, where standard equipment will not hold up.",
+          "points": [
+            "Units built for extreme ambient temperatures",
+            "CSI HA-120 high ambient HVAC system",
+            "Systems top mounted on a VFD building"
+          ]
+        },
+        {
+          "slug": "insulation",
+          "title": "Insulation",
+          "icon": "leaf",
+          "text": "Temperature and sound insulation on the equipment and the rooms around it.",
+          "points": [
+            "Temperature insulation",
+            "Engine room sound insulation"
+          ]
+        },
+        {
+          "slug": "ventilation-and-air-distribution",
+          "title": "Ventilation and Air Distribution",
+          "icon": "wind",
+          "text": "Ventilation and air distribution designed around the plant it has to serve.",
+          "points": [
+            "Ventilation",
+            "Air distribution"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Decades of centrifugal work in Houston.",
+    "text": [
+      "Chiller Services, Inc. has been a commercial and industrial HVAC contractor out of Pasadena since 1987, specializing in HVAC sales, service and installation.",
+      "The company has years of experience and some of the best centrifugal mechanics in the business, and many of Houston's largest building owners and property managers have depended on it for decades.",
+      "On the industrial side the company is not tied to a specific brand. Off the shelf equipment from the major manufacturers, a custom modification or a complete custom build are all available, and the choice is whatever is right for the job."
+    ],
+    "image": "/brands/chillerservices/shop",
+    "imageAlt": "Machinery inside an industrial workshop",
+    "values": [
+      {
+        "title": "Centrifugal expertise",
+        "text": "Rebuilds, overhauls, teardowns and retrofits, handled by some of the best centrifugal mechanics in the business."
+      },
+      {
+        "title": "Emergency response",
+        "text": "Twenty-four hours a day, seven days a week, including holidays, normally within two hours where required."
+      },
+      {
+        "title": "Brand independent",
+        "text": "All major brands serviced and carried, and the equipment is whatever is right for the job rather than one brand."
+      }
+    ]
+  },
+  "serviceArea": [
+    "Houston",
+    "Pasadena"
+  ],
+  "facts": [
+    {
+      "heading": "Equipment Brands Carried",
+      "items": [
+        "Trane",
+        "Carrier",
+        "York",
+        "McQuay",
+        "And many more through an extensive supplier network"
+      ]
+    },
+    {
+      "heading": "Texas HVAC License",
+      "text": "TACLA016920C."
+    },
+    {
+      "heading": "Phone and Fax",
+      "items": [
+        "Phone: 713.869.4861",
+        "Fax: 713.869.0512"
+      ]
+    },
+    {
+      "heading": "Mailing Address",
+      "text": "PO Box 34210, Houston, Texas 77234. The shop is at 3705 Allen Genoa Rd, Pasadena, Texas 77504."
+    },
+    {
+      "heading": "Who to Contact",
+      "items": [
+        "Ed Cunningham, ed@chillerservice.com",
+        "Don Cunningham, dwc@chillerservice.com",
+        "Lee Cunningham, lee@chillerservice.com",
+        "Paula Cunningham, paula@chillerservice.com",
+        "General enquiries, info@chillerservice.com"
+      ]
+    },
+    {
+      "heading": "Preventative Maintenance Intervals",
+      "items": [
+        "Annual",
+        "Semi-annual",
+        "Quarterly",
+        "Monthly"
+      ]
+    },
+    {
+      "heading": "Diagnostic Methods",
+      "items": [
+        "Oil sampling with laboratory analysis",
+        "Vibration analysis",
+        "Non-destructive Eddy current tube testing"
+      ]
+    },
+    {
+      "heading": "CSI HA-120 High Ambient System",
+      "text": "The CSI HA-120 is a high ambient HVAC system built for extreme ambient temperatures, and it is installed top mounted on a VFD building."
+    },
+    {
+      "heading": "Emergency Service",
+      "text": "Twenty-four hours, seven days a week, including holidays. Work is performed by expert technicians, with special emergency response as required, normally within two hours."
+    }
+  ]
+}
