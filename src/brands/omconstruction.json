@@ -1,0 +1,631 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "O&M Construction Services LLC",
+  "shortName": "O&M Construction",
+  "phone": "(713) 234-7518",
+  "email": "contact@omconstructionhtx.com",
+  "address": "12847 Capricorn Street",
+  "town": "Stafford",
+  "state": "TX",
+  "zip": "77477",
+  "rating": 4.9,
+  "reviewCount": 128,
+  "since": 2013,
+  "license": "Licensed and insured crews. Licensed through the Roofing Contractors Association of Texas, A+ rated with the Better Business Bureau and Google Guaranteed.",
+  "hours": [
+    ["Mon – Fri", "9 AM – 5 PM Central"],
+    ["Customer Service", "24 hours, 7 days"]
+  ],
+  "brand": {
+    "primary": "#d32f2f",
+    "primaryDeep": "#8f1717",
+    "accent": "#f0a818",
+    "ink": "#1b1c1e",
+    "surface": "#f5f2ef",
+    "heading": "'Oswald', 'Arial Narrow', sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/omconstruction/logo.webp",
+    "logoWidth": 63,
+    "logoHeight": 74,
+    "logoRatio": 0.858,
+    "logoGround": "#ffffff"
+  },
+  "hero": {
+    "eyebrow": "Roofing contractor in Stafford, TX",
+    "title": "Roofing and construction",
+    "titleAccent": "done right the first time",
+    "lead": "O&M Construction Services inspects, repairs and replaces residential and commercial roofs across Stafford and the Greater Houston area, and handles the insurance claim with you from beginning to end. Your inspection is free.",
+    "image": "/brands/omconstruction/hero",
+    "imageAlt": "A roofing crew installing shingles on a two-story home"
+  },
+  "promises": [
+    "Free roof inspections, no obligation",
+    "Licensed and insured crews",
+    "24/7 customer service",
+    "Financing available"
+  ],
+  "services": [
+    {
+      "slug": "roof-inspection",
+      "group": "residential",
+      "title": "Roof Inspection",
+      "short": "A free, no-obligation look at the whole roof, with photos and video.",
+      "text": "A thorough assessment of your roof with a detailed report that includes photos, videos and a personal consultation. The inspection costs nothing.",
+      "image": "/brands/omconstruction/inspection",
+      "imageAlt": "Vents and pipe boots on a shingle roof",
+      "body": [
+        "Do not let another year pass without checking the safety and integrity of your roof. Our experienced professionals carry out a thorough assessment and give you a detailed report with photos, videos and a consultation, so you can see what we saw rather than take our word for it.",
+        "The inspection is 100% free. No hidden fees, no contract to sign and no obligation from you. If we inspect your roof and you decide to work with someone else, that is no problem at all.",
+        "If the roof has storm damage, the same visit starts the claim. We look for the damage, help you submit the claim and speak to the adjuster on your behalf."
+      ],
+      "points": [
+        "A full assessment of the roof's condition",
+        "A detailed report with photos and video",
+        "A personal consultation on what the roof needs",
+        "Free, with no contract and no obligation",
+        "Insurance claim help from beginning to end"
+      ],
+      "faqs": [
+        {
+          "q": "Are your roof inspections really free?",
+          "a": "Yes, 100% free. We will not charge you a dime for a roof inspection. That means no hidden fees, no contracts to sign and no obligations from you."
+        },
+        {
+          "q": "What kinds of roofs do you inspect?",
+          "a": "All of them, residential and commercial. If you do not know what kind of roof you have, that is no problem. We will inspect it, tell you what you have and give you a consultation free of charge."
+        },
+        {
+          "q": "How do I know it is time for an inspection?",
+          "a": "Stains on a ceiling or a wall, hail or high winds that have been through, bare spots or cracked shingles, or a roof that is simply getting on. Most roofs last 20 to 25 years, so if yours is older than that it is worth a look."
+        },
+        {
+          "q": "How often should I have the roof inspected?",
+          "a": "At least once a year. For an older roof, or one that takes the worst of the weather, twice a year is better and catches problems early."
+        }
+      ]
+    },
+    {
+      "slug": "roof-replacement",
+      "group": "residential",
+      "title": "Roof Replacement",
+      "short": "A new roof installed quickly, thoroughly and efficiently.",
+      "text": "We use top-tier materials to install a durable new roof that protects your Stafford home for decades, and most replacements take only one to two days.",
+      "image": "/brands/omconstruction/replacement",
+      "imageAlt": "An aerial view of a shingle roof on a large single-family home",
+      "materials": true,
+      "body": [
+        "O&M was started on the idea that every shingle project should be done quickly, thoroughly and efficiently. That is still how a replacement runs: we vet our subcontractors for quality workmanship, document the progress with photos and videos, and keep every project manager in-house.",
+        "Most roof replacements take only one to two days, although weather and the size of your roof can stretch that a little. You get a detailed, no-obligation estimate before anything starts, and a final walkthrough once the crew has cleaned up.",
+        "We offer a variety of roofing materials, from shingles, slates, shakes and metal and more. Asphalt shingles, stone-coated metal and roof coatings are all installed by our own crews, and financing is available if you would rather spread the cost."
+      ],
+      "points": [
+        "Free inspection and a detailed, no-obligation proposal",
+        "Most replacements finished in one to two days",
+        "Progress documented with photos and video",
+        "In-house project managers, vetted subcontractors",
+        "A final walkthrough with the site left clean"
+      ],
+      "faqs": [
+        {
+          "q": "How long will a roof replacement take?",
+          "a": "We take pride in doing the job thoroughly but quickly. Most roof replacements take only one to two days, though weather and the size of your roof may stretch the process a little."
+        },
+        {
+          "q": "Can I get a new roof for free?",
+          "a": "No. A lot of roofing companies will tell you they can replace your roof for free, but that is not true in most cases. On most insurance plans you still pay your deductible, and O&M will fight to make sure that is all you pay."
+        }
+      ]
+    },
+    {
+      "slug": "roof-repair",
+      "group": "residential",
+      "title": "Roof Repair",
+      "short": "Leaks, missing shingles and storm damage, fixed fast.",
+      "text": "Fast, effective repairs for leaks, storm damage and ordinary wear that extend the life of your roof before a small problem turns into a large one.",
+      "image": "/brands/omconstruction/repair",
+      "imageAlt": "Two roofers working on a tile roof",
+      "body": [
+        "Stains on a ceiling or a wall are a clear sign of a compromised roof, and bare spots or cracked shingles leave the house open to the weather. We trace the leak, show you what we found and repair it rather than cover it up.",
+        "If your roof is leaking and you need it fixed now, call Omar on his direct line at (832) 969-2246. Our customer service team is on call 24 hours a day, seven days a week for emergency repairs.",
+        "One thing we will not do is put a crew on a wet roof. Roofing is already among the ten most dangerous jobs, and the danger rises sharply when a roof is slick. Repairs wait until the rain stops, and we are back up there as soon as it is safe."
+      ],
+      "points": [
+        "Leak repair, storm damage and worn or missing shingles",
+        "Direct line for emergency leaks: (832) 969-2246",
+        "24/7 customer service",
+        "Findings shown to you with photos and video",
+        "Repairs backed by material and labor warranties"
+      ],
+      "faqs": [
+        {
+          "q": "It is raining and my roof is leaking. Can you fix it right now?",
+          "a": "Your satisfaction is our top priority, but the safety of our roofers comes first. Roofing work has to wait until the rain stops, and we will be back up there as soon as it is safe."
+        }
+      ]
+    },
+    {
+      "slug": "metal-roofing",
+      "group": "residential",
+      "title": "Metal Roofing",
+      "short": "Standing seam and stone-coated metal that stands up to Texas weather.",
+      "text": "A long-lasting, energy-efficient metal roof that holds up to the harshest Texas weather, installed in standing seam, modular and stone-coated systems.",
+      "image": "/brands/omconstruction/metal",
+      "imageAlt": "A dark standing seam metal roof on a house",
+      "body": [
+        "Metal is the longest-lived roof we install, and it suits the Gulf Coast: it sheds driven rain, resists wind and reflects a good deal of the summer heat that otherwise ends up in your attic.",
+        "We install Novatik stone-coated and painted modular metal roofs and Worthouse metal roofing, alongside standing seam and corrugated panels. Each system has its own look, so we bring samples and show you what the finished roof will look like on your own house.",
+        "A metal roof is also a sensible pairing with solar-powered attic ventilation. We install Attic Breeze solar ventilation, which moves hot air out of the attic without adding to your power bill."
+      ],
+      "points": [
+        "Standing seam and corrugated metal",
+        "Novatik stone-coated and painted modular metal roofs",
+        "Worthouse metal roofing",
+        "Attic Breeze solar-powered attic ventilation",
+        "Financing available"
+      ]
+    },
+    {
+      "slug": "preventive-maintenance",
+      "group": "residential",
+      "title": "Preventive Maintenance",
+      "short": "Scheduled visits that catch small problems before they cost money.",
+      "text": "Just like your car, your roof needs regular check-ups. A maintenance plan catches minor issues before they turn into emergency repairs, water damage or a premature replacement.",
+      "body": [
+        "A preventive maintenance plan from O&M is a proactive investment that saves money, extends the life of the roof and gives you peace of mind. Our plans are tailored to your specific roofing system, residential or commercial.",
+        "Each visit includes a detailed visual inspection of the whole roof surface, the flashing, the penetrations and the drainage, so nothing is missed.",
+        "After each visit you receive a comprehensive report with photos of what we found, what we did and anything worth watching before the next visit."
+      ],
+      "points": [
+        "A detailed inspection of the surface, flashing, penetrations and drainage",
+        "Debris cleared from the roof and the gutters",
+        "Small cracks sealed and loose flashing re-secured on the spot",
+        "A written report with photos after every visit",
+        "Plans for commercial and residential roofs of every type"
+      ],
+      "faqs": [
+        {
+          "q": "Is a maintenance plan better than calling for a repair?",
+          "a": "A plan is proactive, so it heads off costly damage before it happens. Reactive repairs usually cost more, and a plan saves you money and stress in the long run."
+        },
+        {
+          "q": "What happens if you find a major problem during an inspection?",
+          "a": "We document it on the spot with photos and give you a detailed report and a clear, honest estimate for the repairs it needs. We never carry out major work without your approval."
+        },
+        {
+          "q": "Do you service commercial and residential properties?",
+          "a": "Both, across the Greater Houston area, and on roofing systems of every type. Commercial programs run on quarterly or twice-yearly inspection schedules, whichever suits the building."
+        }
+      ]
+    },
+    {
+      "slug": "gutters",
+      "group": "residential",
+      "title": "Gutter Services",
+      "short": "Seamless aluminum, copper and LeafGuard systems.",
+      "text": "We install and service aluminum, copper and LeafGuard gutter systems that improve drainage and protect your property from water damage.",
+      "image": "/brands/omconstruction/gutters",
+      "imageAlt": "A seamless gutter being fitted along a roof edge",
+      "body": [
+        "Gutters direct rainwater away from the roof and the foundation, which is what prevents water damage, erosion, mold and structural problems. We evaluate the layout of your home and the roofline and recommend the system that fits it.",
+        "Aluminum is lightweight, corrosion-resistant and the usual choice for a cost-effective, low-maintenance system. Copper adds decades of life and a patina that suits an upscale property. LeafGuard keeps leaves, debris and pests out so the gutters need clearing far less often.",
+        "Seamless gutters have fewer joints, so they leak less and need less maintenance, and they look cleaner from the street. We offer a wide range of colors to match the rest of your exterior."
+      ],
+      "points": [
+        "Seamless and sectional systems in a range of sizes and finishes",
+        "Aluminum, copper and custom gutter systems",
+        "LeafGuard and gutter guard installation",
+        "Colors matched to your exterior",
+        "Most residential installations finished in a day"
+      ],
+      "faqs": [
+        {
+          "q": "How often should I clean my gutters?",
+          "a": "At least twice a year, typically in spring and fall. If you have many nearby trees, more frequent cleaning may be necessary."
+        },
+        {
+          "q": "What are the signs my gutters need repair or replacement?",
+          "a": "Sagging, rust, cracks, peeling paint, water spilling over the edge or pooling around the foundation. Any of those is worth a professional look."
+        },
+        {
+          "q": "Are seamless gutters better than traditional ones?",
+          "a": "Yes. Seamless gutters have fewer joints, which reduces the risk of leaks and the maintenance they need, and they look cleaner."
+        },
+        {
+          "q": "Do you offer warranties on gutter installation?",
+          "a": "Yes, we stand by our work with material and labor warranties. Ask us for the specific coverage on the gutter system you choose."
+        }
+      ]
+    },
+    {
+      "slug": "siding",
+      "group": "residential",
+      "title": "Siding",
+      "short": "LP SmartSide, James Hardie, Tando composite, vinyl and wood.",
+      "text": "Professional siding installation for homes and commercial buildings, with materials matched to your style, your budget and the way Texas weather treats an exterior.",
+      "image": "/brands/omconstruction/siding",
+      "imageAlt": "Composite siding with a stone finish on a house exterior",
+      "body": [
+        "We help homeowners and business owners choose the material that fits. LP SmartSide is engineered wood with a real-wood look and good impact resistance. James Hardie fiber cement is highly fire-resistant and holds its baked-on color with very little upkeep. Vinyl is the budget-conscious choice and never needs painting.",
+        "Wood siding has a timeless look and insulates well, at the cost of regular maintenance. Metal and aluminum are fire-resistant, pest-proof and long-lived, though they dent. We also install Tando composite, which carries a stone or shake appearance without the weight.",
+        "Exterior painting is part of the same conversation. A fresh coat protects the siding from the weather and lifts the look of the whole property, and we can handle it with the siding work or on its own."
+      ],
+      "points": [
+        "LP SmartSide engineered wood",
+        "James Hardie fiber cement",
+        "Tando composite siding",
+        "Vinyl, wood and metal or aluminum siding",
+        "Exterior painting"
+      ]
+    },
+    {
+      "slug": "windows-and-doors",
+      "group": "residential",
+      "title": "Windows And Doors",
+      "short": "Energy-efficient vinyl, fiberglass, wood-clad and aluminum.",
+      "text": "Custom window and door installation that improves insulation, lowers energy bills and brings the front of the house up to date.",
+      "body": [
+        "Vinyl windows are the popular, cost-effective choice: energy-efficient, weather-resistant and available in a wide range of styles and finishes. Fiberglass costs more and gives you more, resisting warping, rotting and fading, with thermal performance that suits Houston's heat.",
+        "Wood and wood-clad windows pair a natural wood interior with a low-maintenance clad exterior, in custom styles and stains. Aluminum gives you a strong, lightweight, corrosion-resistant frame and a sleek modern line.",
+        "Every window is installed by our own certified crews, and financing is available on window and door projects along with the rest of our work."
+      ],
+      "points": [
+        "Vinyl windows",
+        "Fiberglass windows",
+        "Wood and wood-clad windows",
+        "Aluminum windows",
+        "Free estimates and financing available"
+      ]
+    },
+    {
+      "slug": "storm-damage-and-insurance-claims",
+      "group": "storm",
+      "title": "Storm Damage And Insurance Claims",
+      "short": "Hail and wind damage documented, and the claim handled with you.",
+      "text": "Hail and high winds cause damage that is easy to miss from the ground. We find it, document it, and work the claim with your insurer from beginning to end.",
+      "claim": true,
+      "body": [
+        "Storm damage is what we respond to fastest. Our team gets out to the property, assesses what the wind and hail did, and stops the damage spreading before the next round of weather finds the opening.",
+        "We accept all forms of insurance. So long as your roof is covered under your homeowner's policy, we will help you file that claim free of charge, and we speak to the adjuster on your behalf.",
+        "Insurers do not always make it easy. Some set the bar for sufficient damage unreasonably high, and O&M will fight to get your claim approved. If it is denied, paying out of pocket is the remaining route, and we offer financing through Hearth, GreenSky, Sunlight Financial and Synchrony."
+      ],
+      "points": [
+        "Fast response to storm and hail damage",
+        "Damage documented with photos and video",
+        "All forms of insurance accepted",
+        "We speak to the adjuster on your behalf, free of charge",
+        "Financing if the claim is denied"
+      ],
+      "faqs": [
+        {
+          "q": "What happens if my roof does not qualify for a claim?",
+          "a": "Many insurers try hard to deny claims or set the requirements for sufficient damage unreasonably high. O&M will fight for you to get the claim approved, and if it is denied your remaining route is to pay out of pocket, which is where our financing partners come in."
+        },
+        {
+          "q": "What type of insurance do you accept?",
+          "a": "We accept all forms of insurance. So long as your roof is covered under your homeowner's insurance, we will help you file that claim free of charge."
+        }
+      ]
+    },
+    {
+      "slug": "commercial-roof-restoration",
+      "group": "commercial",
+      "title": "Commercial Roof Restoration",
+      "short": "Conklin coatings that extend the roof instead of replacing it.",
+      "text": "If your roof qualifies for a restoration, it costs several times less than a replacement, cuts the air conditioning bill and goes back under warranty.",
+      "image": "/brands/omconstruction/commercial-restoration",
+      "imageAlt": "A restored white single-ply commercial roof",
+      "body": [
+        "We use Conklin coatings on all of our roof restorations. They have a long track record of durable coating systems, and a restored roof can carry a warranty of up to 18 years.",
+        "Metal restoration seals standing seam, corrugated panels, structural metal decking and industrial metal systems. Membrane restoration covers TPO, PVC, modified bitumen, EPDM and BUR roofs. Fabric reinforced systems go over the problem areas, the seams, the penetrations and any critical waterproofing zone.",
+        "Spray foam and coating systems add insulation and waterproofing in one seamless application. A restoration may also qualify for a full tax write-off, so ask us about the tax code and whether your roof qualifies."
+      ],
+      "points": [
+        "Conklin coating systems, with warranties up to 18 years",
+        "Metal restoration for standing seam, corrugated and structural decking",
+        "Membrane restoration for TPO, PVC, modified bitumen, EPDM and BUR",
+        "Fabric reinforced systems for seams and penetrations",
+        "Spray foam and coating for insulation and waterproofing"
+      ],
+      "faqs": [
+        {
+          "q": "Why restore rather than replace?",
+          "a": "If your roof qualifies, restoration costs several times less than a replacement. You save money upfront and again on cooling costs, and the roof goes under a warranty that lasts up to 18 years. It may also qualify for a full tax write-off."
+        }
+      ]
+    },
+    {
+      "slug": "commercial-roofing",
+      "group": "commercial",
+      "title": "Commercial Roofing",
+      "short": "Single-ply, metal, modified bitumen, EPDM and BUR systems.",
+      "text": "Install, repair and maintenance across every commercial roof type, for businesses in Stafford and across the Greater Houston area.",
+      "image": "/brands/omconstruction/commercial-membrane",
+      "imageAlt": "A white coated flat commercial roof",
+      "body": [
+        "We service all kinds of commercial roofs: metal, TPO, PVC, EPDM, modified bitumen and built-up roofs. If you do not know what kind of roof you have, that is no problem. We will inspect it, tell you what is up there and give you a consultation free of charge.",
+        "Single-ply membranes suit the Houston climate. TPO stands up to UV and reflects enough heat to cut cooling costs noticeably, and it is light enough to spare the structure. PVC resists grease, oils and industrial chemicals, which makes it the usual answer for restaurants, commercial kitchens and processing plants.",
+        "If you have a material or a brand you prefer, tell us and we will lay out the best options currently available. Financing is available on commercial projects."
+      ],
+      "points": [
+        "TPO and PVC single-ply membrane systems",
+        "Metal, modified bitumen, EPDM and built-up roofs",
+        "Free inspection and consultation, whatever the system",
+        "Emergency response for commercial leaks",
+        "Financing available"
+      ]
+    }
+  ],
+  "claim": {
+    "title": "How an insurance claim works",
+    "text": "We help you file the claim free of charge and speak to the adjuster on your behalf.",
+    "steps": [
+      {
+        "title": "Schedule an inspection",
+        "text": "Call us or fill in the form and we come out at a time that suits you. The inspection is free."
+      },
+      {
+        "title": "We look for damage",
+        "text": "One of our pros goes over the roof and documents what the storm did with photos and video."
+      },
+      {
+        "title": "We help you file",
+        "text": "We help you submit the claim and speak on your behalf to the adjuster."
+      },
+      {
+        "title": "The insurer pays out",
+        "text": "If the claim is approved, the insurance company mails you a check for the cost of repairs minus your deductible, usually within a week or two."
+      },
+      {
+        "title": "We fix the roof",
+        "text": "Once the check arrives we come out and repair or replace the roof at your convenience."
+      }
+    ]
+  },
+  "materials": {
+    "title": "Brands we install",
+    "text": "We are a licensed and preferred vendor for the manufacturers we install, and we only use products that are time-tested and built to last.",
+    "brands": [
+      "Atlas Roofing",
+      "CertainTeed",
+      "Brava Roof Tile",
+      "Novatik",
+      "Worthouse",
+      "Conklin",
+      "LP SmartSide",
+      "James Hardie",
+      "Tando Composite",
+      "Attic Breeze",
+      "Generac"
+    ]
+  },
+  "about": {
+    "title": "Quality construction at an affordable price",
+    "text": [
+      "Quality construction work is hard to come by these days. You either find a contractor who cuts corners, or you spend far too much on a simple job and the result still might be sub-par. Seeing that, Omar and Mamie Alghali started O&M in 2013 with the mission of making sure every shingle project is done quickly, thoroughly and efficiently.",
+      "To achieve it we vet our subcontractors for quality workmanship, document project progress with photos and videos, and keep all of our project managers in-house. Transparency and accountability are the point: you see what we see, at every phase.",
+      "Omar is the O of O&M. He has travelled from Alexandria, Virginia to Reading, England before reaching Houston nearly two decades ago, and has since started a family here, started this construction company and come to love this city. Mamie is the M, and she manages most of our home service projects, hundreds of them since O&M began.",
+      "As a general contractor and a roofing contractor we cover residential and commercial roofing, siding, doors and windows, gutters and preventive maintenance. We are locally based in Stafford, customer-focused, down-to-earth people who want to do good business."
+    ],
+    "image": "/brands/omconstruction/about",
+    "imageAlt": "A shingle roof on a home in the Houston area",
+    "values": [
+      {
+        "title": "Vetted Crews",
+        "text": "We vet our subcontractors for quality workmanship and keep every project manager in-house."
+      },
+      {
+        "title": "Documented Work",
+        "text": "Every phase of a project is documented with photos and videos, so you can see what we did."
+      },
+      {
+        "title": "Transparent Pricing",
+        "text": "Upfront, transparent quotes with no surprises, and financing when you want to spread the cost."
+      }
+    ]
+  },
+  "inspection": {
+    "title": "Our simple, stress-free process",
+    "steps": [
+      {
+        "title": "Free inspection",
+        "text": "We carry out a thorough assessment of your roof's condition and show you the photos and video."
+      },
+      {
+        "title": "Custom proposal",
+        "text": "You receive a detailed, no-obligation estimate tailored to what the roof actually needs."
+      },
+      {
+        "title": "Expert installation",
+        "text": "Our crew does the work with precision and care, and most roof replacements take one to two days."
+      },
+      {
+        "title": "Final walkthrough",
+        "text": "We check the finished work with you and leave the property clean."
+      }
+    ]
+  },
+  "serviceArea": [
+    "Stafford",
+    "Houston",
+    "Sugar Land",
+    "Missouri City",
+    "Richmond",
+    "Katy",
+    "La Porte",
+    "Angleton",
+    "Pearland",
+    "Cypress",
+    "Fort Bend County"
+  ],
+  "areasText": "We are based in Stafford and work across the Greater Houston area, including Sugar Land, Missouri City, Richmond, Katy, Pearland, Cypress, La Porte, Angleton and the rest of Fort Bend County. If you live outside our service area we may be able to refer you to another contractor we trust, so give us a call either way.",
+  "areasImage": "/brands/omconstruction/commercial-aerial",
+  "areasImageAlt": "An aerial view of a commercial building with a coated flat roof",
+  "facts": [
+    {
+      "heading": "Certifications and memberships",
+      "items": [
+        "National Roofing Contractors Association member since 2014",
+        "CertainTeed Master Shingle Applicator",
+        "Better Business Bureau A+ rating, held by staying above 97 out of 100 in the BBB's business confidence system",
+        "Atlas Shingles certified",
+        "Licensed through the Roofing Contractors Association of Texas",
+        "Google Guaranteed",
+        "Certified Atlas roofing installation specialists",
+        "Certified LP SmartSide installation crew, with 30 years of combined experience in exterior renovation",
+        "Authorized Novatik stone-coated metal installer",
+        "Certified pilots for commercial roof drone surveys"
+      ]
+    },
+    {
+      "heading": "Phone numbers",
+      "items": [
+        "Office: (713) 234-7518",
+        "Omar's direct line for emergencies: (832) 969-2246",
+        "Fax: (832) 201-9230"
+      ]
+    },
+    {
+      "heading": "Financing",
+      "text": "We offer financing on all of our construction projects through your choice of Hearth, GreenSky, Sunlight Financial or Synchrony, and HFS Financial is our preferred home improvement lending partner. A cash-out refinance, a personal loan or a credit card are other routes, and we offer in-house financing on approved projects."
+    },
+    {
+      "heading": "What financing covers",
+      "items": [
+        "Roofing, windows, gutters and siding projects",
+        "A simple application with a fast credit decision",
+        "Unsecured revolving credit lines and flexible payment plans",
+        "Online account access",
+        "Lifetime warranty support",
+        "Insurance-covered work, with financing for the remaining portion"
+      ]
+    },
+    {
+      "heading": "Our team",
+      "text": "Omar Alghali, co-founder and CEO. Mamie Alghali, co-founder and CEO, who manages most home service projects."
+    },
+    {
+      "heading": "Customer service",
+      "text": "Our team is on call 24 hours a day, seven days a week, for an emergency repair or a simple question. The office is open Monday to Friday, 9 AM to 5 PM Central."
+    },
+    {
+      "heading": "Emergency and after-hours service",
+      "text": "Storm damage, a leak or an urgent roofing problem gets a response 24 hours a day, residential or commercial. Call Omar on his direct line at (832) 969-2246, and we aim to be in touch within the hour. Same-day service is often available, and temporary tarping and weatherproofing go on first so the damage stops spreading."
+    },
+    {
+      "heading": "Other services we offer",
+      "items": [
+        "Home remodeling and additions",
+        "Generac generator installation",
+        "Exterior painting",
+        "Fences",
+        "Installation services",
+        "Commercial roof drone inspections",
+        "Roof MRI moisture detection",
+        "Roof leak detection",
+        "Redry vents and moisture removal",
+        "Multi-family roofing"
+      ]
+    },
+    {
+      "heading": "What we do not do",
+      "text": "New home construction is pretty much the only service we do not offer. If that is what you need, we can recommend another contractor."
+    },
+    {
+      "heading": "Commercial roofs we service",
+      "items": [
+        "Metal",
+        "TPO",
+        "PVC",
+        "EPDM",
+        "Modified bitumen",
+        "Built-up roof (BUR)"
+      ]
+    },
+    {
+      "heading": "Warranties",
+      "text": "Our work is backed by material and labor warranties, including a lifetime workmanship warranty on roof repair, and the materials we install carry manufacturer-backed warranties of their own. A Conklin commercial roof restoration can be placed under a warranty that lasts up to 18 years."
+    },
+    {
+      "heading": "Manufacturer warranties on what we install",
+      "items": [
+        "Atlas shingles: lifetime limited warranty",
+        "Brava roof tile: 50 years, covering material defects, color retention and impact resistance",
+        "Novatik stone-coated metal: coverage up to 60 years",
+        "Worthouse metal roofing: lifetime warranty, transferable to the next owner",
+        "LP SmartSide: 5/50-year limited manufacturer warranty",
+        "Attic Breeze solar ventilation: lifetime warranty",
+        "Conklin Rapid Roof metal restoration: 10 years",
+        "Conklin Benchmark membrane restoration: 12 years",
+        "Conklin Puma XL spray foam and coating: 20 years",
+        "Outpost TPO: 20-year manufacturer's warranty",
+        "Flexion 2.0 PVC: 25-year manufacturer's warranty"
+      ]
+    },
+    {
+      "heading": "Product lines we install",
+      "items": [
+        "Atlas shingles with Scotchgard Protector algae resistance, Core4 enhanced polymer and the HP42 wide nailing area",
+        "Brava Roof Tile in Old World Slate, Spanish Barrel Tile and Cedar Shake",
+        "Novatik NATURA stone-coated metal in Slate, Classic, Roman and Wood profiles",
+        "Worthouse metal in the Supre standing seam, Ulta shingle, Dura panel and Como tile series",
+        "Attic Breeze solar vents in ridge mount, curb mount, sloped roof and wall mount, with the Breeze Mate control system",
+        "Tando Beach House Shake composite shingles and TandoStone composite stone",
+        "LP SmartSide engineered wood in 16 prefinished colors",
+        "Conklin Rapid Roof, Benchmark and Puma XL coating systems",
+        "Outpost TPO and Flexion 2.0 PVC single-ply membranes"
+      ]
+    },
+    {
+      "heading": "Texas Department of Insurance approval",
+      "text": "Brava roof tiles carry a Class 4 impact rating and are approved by the Texas Department of Insurance for impact resistance, wind uplift and fire safety. That approval may qualify you for a discount on your homeowner's insurance, and we can send you the approval documents."
+    },
+    {
+      "heading": "Commercial roof diagnostics",
+      "items": [
+        "Drone surveys with 4K imaging, thermal analysis and 3D mapping, flown by certified pilots",
+        "Infrared thermal imaging to find moisture under the surface",
+        "Electronic leak detection, which pinpoints a leak without exploratory cuts",
+        "Nuclear moisture scanning and core sampling for a full moisture map",
+        "Roof MRI moisture scanning before we bid, so the scope is settled before you sign",
+        "ReDry vents, which actively pull trapped moisture out of the roof assembly",
+        "Inspection results back in hours rather than days",
+        "The first moisture scan or assessment is free"
+      ]
+    },
+    {
+      "heading": "Careers",
+      "text": "We are looking for driven sales representatives, and there is a place here for skilled trades, project management and support roles. Call (713) 234-7518 or fill in the job interest form to start the conversation."
+    },
+    {
+      "heading": "InsureChex",
+      "text": "InsureChex is our insurance verification platform. It handles claims assistance, inspections and documentation, and verifies policies against multiple databases so your compliance stays current. Call (713) 234-7518 or visit InsureChex.com."
+    },
+    {
+      "heading": "Your information",
+      "text": "We do not share your information, and we do not contact you without your permission. Giving us your phone number means you agree to receive text messages from us."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: @OMConstructionHTX",
+        "Instagram: @omconstructionhtx",
+        "Twitter: @omconstructhtx",
+        "YouTube: O&M Construction Services",
+        "Yelp and LinkedIn",
+        "Better Business Bureau Accredited Business"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Jessica R., Stafford, TX",
+      "text": "OM Construction did an amazing job on our roof replacement. The crew was professional, fast, and the cleanup was perfect. Highly recommend!"
+    },
+    {
+      "author": "Mark T., Sugar Land, TX",
+      "text": "After the hail storm, they were out the next day for an inspection and handled everything with our insurance. A true lifesaver!"
+    }
+  ]
+}
