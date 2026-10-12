@@ -1,0 +1,272 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Plumbers Pearland TX",
+  "shortName": "Plumbers Pearland",
+  "summary": "Licensed residential and commercial plumbing in Pearland, Texas, open every day from 6 AM to 10 PM with 24/7 mobile emergency service.",
+  "phone": "(346) 291-6038",
+  "email": "service@plumberspearland.com",
+  "address": "6614 W Broadway St",
+  "town": "Pearland",
+  "state": "TX",
+  "zip": "77581",
+  "hours": [
+    [
+      "Every day",
+      "6 AM – 10 PM"
+    ]
+  ],
+  "brand": {
+    "primary": "#187e90",
+    "primaryDeep": "#12616f",
+    "accent": "#c6943b",
+    "ink": "#333333",
+    "muted": "#5f6a72",
+    "surface": "#eef7f8",
+    "line": "#d5e4e7",
+    "heading": "'Oswald', 'Arial Narrow', system-ui, sans-serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap",
+    "logo": "/brands/plumberspearland/logo.webp",
+    "logoWidth": 171,
+    "logoHeight": 57,
+    "logoRatio": 3.0,
+    "logoGround": "#32495d"
+  },
+  "emergency": {
+    "title": "24/7 mobile emergency service",
+    "text": "Open every day from 6 AM to 10 PM, with the mobile service answering around the clock."
+  },
+  "hero": {
+    "eyebrow": "Licensed plumbers in Pearland, Texas",
+    "title": "Plumbing done once,",
+    "titleAccent": "so it stays done.",
+    "lead": "Residential and commercial plumbing in Pearland: drains, sewer lines, water heaters, pipes, toilets and waste disposal units. Open every day from 6 AM to 10 PM, with 24/7 mobile emergency service.",
+    "image": "/brands/plumberspearland/hero",
+    "imageAlt": "Hands working on the supply fittings under a fixture"
+  },
+  "groups": [
+    {
+      "slug": "drains-and-sewers",
+      "title": "Drains and Sewers",
+      "icon": "waves",
+      "summary": "Drain cleaning, drain camera inspection and sewer line repair for homes and businesses.",
+      "intro": "A slow drain and a broken sewer line look the same from the sink, so we find out which one you have before we quote the work. We can reach the deepest parts of a line with a drain camera, and we repair the sewer line when the camera shows the pipe itself is the problem.",
+      "image": "/brands/plumberspearland/drains",
+      "imageAlt": "A close view of a metal sink drain",
+      "services": [
+        {
+          "slug": "drain-cleaning",
+          "title": "Drain Cleaning",
+          "icon": "waves",
+          "text": "Blocked sinks, tubs, showers and main lines cleared for homes and businesses when the plunger and the tools you have in the house have not shifted it.",
+          "points": [
+            "Residential and commercial drains",
+            "Cleared properly so waste flows again rather than backing up next week"
+          ]
+        },
+        {
+          "slug": "drain-camera-inspection",
+          "title": "Drain Camera Inspection",
+          "icon": "filter",
+          "text": "We send a camera into the line to find and identify the obstruction, so the repair is aimed at the right place instead of guessed at.",
+          "points": [
+            "Reaches the deepest parts of the pipeline",
+            "Shows whether the trouble is a blockage or the pipe itself"
+          ]
+        },
+        {
+          "slug": "sewer-line-repair",
+          "title": "Sewer Line Repair",
+          "icon": "wrench",
+          "text": "Sewer lines repaired with equipment built for the job, for the blockages and breaks that household tools cannot touch.",
+          "points": [
+            "For lines no household tool will clear",
+            "Residential and commercial sewer lines"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "water-heaters",
+      "title": "Water Heaters",
+      "icon": "flame",
+      "summary": "Water heater repair, replacement and installation, done fast and advised on honestly.",
+      "intro": "We repair, replace and install water heating units, and we will tell you plainly which of the three your unit needs. Ask us before you buy anything, because which of the three you need is the part most people get wrong.",
+      "imageAlt": "A water heating system installed in a basement",
+      "services": [
+        {
+          "slug": "water-heater-repair",
+          "title": "Water Heater Repair",
+          "icon": "flame",
+          "text": "No hot water, not enough of it, or a unit that has started leaking. We look at the unit you have before we talk about a new one.",
+          "points": [
+            "Advice on repair against replacement, given straight"
+          ]
+        },
+        {
+          "slug": "water-heater-replacement",
+          "title": "Water Heater Replacement",
+          "icon": "heater",
+          "text": "Water heater replacement done fast and efficiently, so a household is not left waiting days for hot water.",
+          "points": [
+            "$90 off installing a water heater with our online coupon"
+          ]
+        },
+        {
+          "slug": "water-heater-installation",
+          "title": "Water Heater Installation",
+          "icon": "gauge",
+          "text": "New units installed, with accurate and reliable advice on what to install before you commit to it.",
+          "points": [
+            "Residential and commercial units"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pipes-and-leaks",
+      "title": "Pipes and Leaks",
+      "icon": "droplets",
+      "summary": "Single pipe repairs through to complete pipe replacement, and water leak repair.",
+      "intro": "Whether you need a single pipe fixed or the whole run replaced, that is the work we do. Leaks get found and repaired rather than patched, because a repair that does not solve the original problem is a job you end up paying for twice.",
+      "image": "/brands/plumberspearland/pipes",
+      "imageAlt": "A worker inspecting a run of PVC water pipe",
+      "services": [
+        {
+          "slug": "pipe-repair",
+          "title": "Pipe Repair",
+          "icon": "wrench",
+          "text": "A single pipe repaired properly, by a licensed plumber, so the work does not have to be done again.",
+          "points": [
+            "Residential and commercial pipework"
+          ]
+        },
+        {
+          "slug": "pipe-replacement",
+          "title": "Complete Pipe Replacement",
+          "icon": "droplets",
+          "text": "Complete pipe replacement when repairing the run no longer makes sense, with quality work that lasts rather than the cheapest fix available.",
+          "points": [
+            "$100 off any service of $1000 with our online coupon"
+          ]
+        },
+        {
+          "slug": "water-leak-repair",
+          "title": "Water Leak Repair",
+          "icon": "filter",
+          "text": "Water leaks found and repaired, from a dripping joint to a line losing water where you cannot see it.",
+          "points": [
+            "$40 off any water leak repair with our online coupon"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "fixtures-and-disposals",
+      "title": "Fixtures and Disposals",
+      "icon": "wrench",
+      "summary": "Toilet repair and waste disposal unit repair or replacement.",
+      "intro": "Toilet leaks and waste disposal units are the two calls we get most, and we have a methodical approach to both: find what is actually wrong, fix that, and make sure the leak has stopped before we leave.",
+      "image": "/brands/plumberspearland/fixtures",
+      "imageAlt": "A bathroom with a toilet and a sink",
+      "services": [
+        {
+          "slug": "toilet-repair",
+          "title": "Toilet Repair",
+          "icon": "droplets",
+          "text": "Toilet leaks addressed properly and solved adequately, so the leak stops instead of slowing down.",
+          "points": [
+            "A methodical approach to finding where it is leaking from"
+          ]
+        },
+        {
+          "slug": "garbage-disposal",
+          "title": "Waste Disposal Units",
+          "icon": "settings",
+          "text": "Waste disposal units repaired or replaced, with advice on which of the two your unit is worth.",
+          "points": [
+            "Repair or replace, whichever the unit warrants"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Online coupons",
+    "title": "Our coupons come off the job before you pay.",
+    "text": "Save on any service of $250, $500 or $1000, on water leak repair, and on installing a water heater.",
+    "price": "$100",
+    "priceNote": "off any service of $1000"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "A licensed plumber in Pearland, for homes and businesses.",
+    "text": [
+      "One of the keys to getting quality plumbing services is hiring a provider with a good reputation, and one that is rated highly by the customers who came before you. Plumbers Pearland goes a step further than that to satisfy its customers, residential and commercial.",
+      "Hiring a licensed plumber does more than give you peace of mind. It avoids having the work repeated because the first attempt did not solve the original problem, and the superior quality means your dollars go further, because the repair lasts.",
+      "We have built up a level of experience that lets us handle whatever a customer brings us. We can reach the deepest parts of your pipelines to identify and remove an obstruction using our drain camera inspection, and we have the technology for the sewer line repairs that household tools will not touch. Whatever the problem is, let us know how we can help."
+    ],
+    "image": "/brands/plumberspearland/about",
+    "imageAlt": "An assortment of plumbing tools laid out together",
+    "values": [
+      {
+        "title": "Licensed plumbers",
+        "text": "The work is done by licensed plumbers, which is what stops a job having to be repeated."
+      },
+      {
+        "title": "Open every day",
+        "text": "Six in the morning to ten at night, every day, with 24/7 mobile emergency service beyond that."
+      },
+      {
+        "title": "A straight answer",
+        "text": "Highly accurate and reliable advice when you ask whether to repair, replace or install."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "When are you open?",
+      "a": "Every day from 6 AM to 10 PM. Outside those hours our mobile emergency service runs 24/7."
+    },
+    {
+      "q": "Do you work on commercial properties?",
+      "a": "Yes. We take residential and commercial plumbing work in Pearland."
+    },
+    {
+      "q": "How do you find a blockage I cannot see?",
+      "a": "With a drain camera inspection. It reaches the deepest parts of the pipeline, identifies the obstruction and shows us whether the trouble is a blockage or the pipe itself."
+    },
+    {
+      "q": "How do I book a visit?",
+      "a": "Call 346-291-6038 or send us the service request form with the day and the time window that suits you, and we will confirm the appointment."
+    }
+  ],
+  "serviceArea": [
+    "Pearland"
+  ],
+  "facts": [
+    {
+      "heading": "Online coupons",
+      "items": [
+        "$25 off any service of $250",
+        "$50 off any service of $500",
+        "$100 off any service of $1000",
+        "$40 off any water leak repair",
+        "$90 off installing a water heater"
+      ]
+    },
+    {
+      "heading": "Hours and emergency service",
+      "text": "Store hours are 6 AM to 10 PM, all days. Our mobile emergency service runs 24/7 on 346-291-6038."
+    },
+    {
+      "heading": "Booking an appointment",
+      "text": "Our service request form takes your address, the day and the time window you want, from 9 AM through to a 5 PM to 7 PM slot, and a description of the work. Someone from the team gets back to you shortly to confirm the appointment, and if you need help before then, call the office on 346-291-6038."
+    },
+    {
+      "heading": "Licensing",
+      "text": "Plumbers Pearland TX is a licensed plumbing provider. Using a licensed plumber is what keeps a job from being repeated because the first attempt did not solve the original problem."
+    }
+  ]
+}
