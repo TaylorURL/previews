@@ -994,9 +994,22 @@ function MobileBar({ b, tel }) {
 
 /* ------------------------------------------------------------------- pages */
 
+/**
+ * The width of each of `n` home service cards: across three or four from lg
+ * up, whichever leaves the last row fullest, as columns() in Professional.jsx.
+ * The cards grow, so a short last row is filled by its own cards, not a blank.
+ */
+function cardBasis(n) {
+  const half = 'md:basis-[calc(50%-0.625rem)]';
+  if (n <= 2) return n === 2 ? half : '';
+  if (n === 3) return 'md:basis-[calc((100%-2.5rem)/3)]';
+  const gap = (c) => (c - (n % c)) % c;
+  return gap(3) < gap(4) ? `${half} lg:basis-[calc((100%-2.5rem)/3)]` : `${half} xl:basis-[calc((100%-3.75rem)/4)]`;
+}
+
 function Home({ b, groups, tel }) {
   const rating = ratingLine(b);
-  const cols = groups.length >= 4 ? 'md:grid-cols-2 xl:grid-cols-4' : groups.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2';
+  const basis = cardBasis(groups.length);
   const firstTier = list(b.plan?.tiers)[0];
   return (
     <>
@@ -1062,11 +1075,11 @@ function Home({ b, groups, tel }) {
             </div>
             <p className={lead}>{b.summary}</p>
           </div>
-          <div className={`grid gap-5 ${cols}`}>
+          <div className="flex flex-wrap gap-5">
             {groups.map((g) => (
               <article
                 key={g.slug}
-                className="group relative flex flex-col rounded-2xl border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-[0_24px_50px_-30px_rgba(11,27,43,0.4)] sm:p-7"
+                className={`group relative flex min-w-0 grow basis-full flex-col rounded-2xl border border-line bg-white p-6 transition hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-[0_24px_50px_-30px_rgba(11,27,43,0.4)] sm:p-7 ${basis}`}
               >
                 <span className={`${iconTile} h-14 w-14 transition group-hover:bg-primary group-hover:text-[color:var(--on-primary)]`}>
                   <GroupIcon name={g.icon} size={26} />
@@ -1076,15 +1089,17 @@ function Home({ b, groups, tel }) {
                     {g.title}
                   </a>
                 </h3>
-                <p className="mt-2 text-[16px] leading-[1.6] text-muted">{g.summary}</p>
-                <ul className="mb-6 mt-5 grid gap-2 border-t border-line pt-5">
-                  {list(g.services).map((s) => (
-                    <li key={s.slug} className="flex items-center gap-2.5 text-[16px] md:text-[15px] font-medium text-ink">
-                      <GroupIcon name={s.icon || g.icon} size={15} className="flex-none text-[color:var(--pt)]" />
-                      <span className="min-w-0">{s.title}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="mb-6 mt-2 text-[16px] leading-[1.6] text-muted">{g.summary}</p>
+                {list(g.services).length > 0 && (
+                  <ul className="mb-6 grid gap-2 border-t border-line pt-5">
+                    {list(g.services).map((s) => (
+                      <li key={s.slug} className="flex items-center gap-2.5 text-[16px] md:text-[15px] font-medium text-ink">
+                        <GroupIcon name={s.icon || g.icon} size={15} className="flex-none text-[color:var(--pt)]" />
+                        <span className="min-w-0">{s.title}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
                 <span className="mt-auto inline-flex items-center gap-1.5 font-heading text-[16px] md:text-[15px] font-bold text-[color:var(--pt)]">
                   See {g.title} <ArrowRight size={16} className="transition group-hover:translate-x-1" aria-hidden="true" />
                 </span>
@@ -1168,26 +1183,31 @@ function Home({ b, groups, tel }) {
               )}
             </div>
             )}
-            <div className={b.about.image ? '' : 'max-w-3xl'}>
-              <Eyebrow>{b.about.eyebrow || 'About us'}</Eyebrow>
-              <h2 className={h2}>{b.about.title}</h2>
-              <p className={`mt-5 ${lead}`}>{list(b.about.text)[0]}</p>
-              {list(b.about.values).length > 0 && (
-                <ul className="mt-8 grid gap-3">
-                  {list(b.about.values).map((v) => (
-                    <li key={v.title} className="flex gap-4 rounded-2xl bg-white p-5">
-                      <Check size={18} className="mt-0.5 flex-none text-[color:var(--pt)]" strokeWidth={2.5} aria-hidden="true" />
-                      <div className="min-w-0">
-                        <p className="font-heading text-[16px] font-bold text-ink">{v.title}</p>
-                        <p className="mt-1 text-[16px] md:text-[15px] leading-[1.5] text-muted">{v.text}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              )}
-              <a href="/about" className="mt-8 inline-flex min-h-[44px] items-center gap-1.5 font-heading text-[16px] font-bold text-[color:var(--pt)] no-underline hover:underline">
-                About {b.shortName} <ArrowRight size={17} aria-hidden="true" />
-              </a>
+            {/* With no photo the heading takes the photo's side and the words stand beside it, so neither half is bare. */}
+            <div className={b.about.image ? '' : 'grid gap-x-20 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]'}>
+              <div>
+                <Eyebrow>{b.about.eyebrow || 'About us'}</Eyebrow>
+                <h2 className={h2}>{b.about.title}</h2>
+              </div>
+              <div>
+                <p className={`mt-5 ${b.about.image ? '' : 'lg:mt-10'} ${lead}`}>{list(b.about.text)[0]}</p>
+                {list(b.about.values).length > 0 && (
+                  <ul className="mt-8 grid gap-3">
+                    {list(b.about.values).map((v) => (
+                      <li key={v.title} className="flex gap-4 rounded-2xl bg-white p-5">
+                        <Check size={18} className="mt-0.5 flex-none text-[color:var(--pt)]" strokeWidth={2.5} aria-hidden="true" />
+                        <div className="min-w-0">
+                          <p className="font-heading text-[16px] font-bold text-ink">{v.title}</p>
+                          <p className="mt-1 text-[16px] md:text-[15px] leading-[1.5] text-muted">{v.text}</p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                <a href="/about" className="mt-8 inline-flex min-h-[44px] items-center gap-1.5 font-heading text-[16px] font-bold text-[color:var(--pt)] no-underline hover:underline">
+                  About {b.shortName} <ArrowRight size={17} aria-hidden="true" />
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -1206,23 +1226,47 @@ function Home({ b, groups, tel }) {
   );
 }
 
+/** A group page's heading: a group that holds services is called its services, unless its name already says so; one that is a single service is named as it is. */
+function groupTitle(group, town) {
+  const services = list(group.services).length > 0 && !/\bservices?$/i.test(group.title);
+  return `${group.title}${services ? ' services' : ''} in ${town}`;
+}
+
 function GroupPage({ b, groups, group, tel }) {
   const services = list(group.services);
   const others = groups.filter((g) => g.slug !== group.slug);
   const stickTop = b.preview ? 'lg:top-[148px]' : 'lg:top-[104px]';
   const anchor = b.preview ? 'scroll-mt-[140px]' : 'scroll-mt-[96px]';
+  const booking = (
+    <>
+      <BookingCard b={b} groups={groups} title={`${askOf(b).item} ${group.title}`} service={group.title} />
+      {b.emergency && (
+        <a href={tel} className="flex gap-4 rounded-2xl bg-accent p-5 text-[color:var(--on-accent)] no-underline">
+          <Siren size={22} className="mt-0.5 flex-none" aria-hidden="true" />
+          <span className="min-w-0">
+            <strong className="block font-heading text-[17px]">{b.emergency.title}</strong>
+            <span className="mt-1 block text-[16px] md:text-[15px] leading-[1.5] opacity-90">{b.emergency.text}</span>
+            <span className="mt-2 block font-bold">{b.phone}</span>
+          </span>
+        </a>
+      )}
+    </>
+  );
   return (
     <>
       <PageHero
         b={b}
         crumbs={[group.title]}
         icon={group.icon}
-        title={`${group.title} services in ${b.town}`}
+        title={groupTitle(group, b.town)}
         text={group.intro}
         image={group.image}
         imageAlt={group.imageAlt}
         panel={
-          services.length > 1 && (
+          // A group that is one service with no list of its own has nothing to set beside the form, so the form stands in the hero.
+          services.length === 0 ? (
+            <div className="grid content-start gap-5 text-ink lg:w-full lg:max-w-[420px] lg:justify-self-end">{booking}</div>
+          ) : services.length > 1 && (
             <div className="hidden rounded-[24px] border border-line bg-white p-6 shadow-[0_30px_60px_-35px_rgba(11,27,43,0.55)] sm:p-8 lg:block">
               <p className="font-heading text-[13px] font-bold uppercase tracking-[0.14em] text-muted">What we cover</p>
               <ul className="mt-4 grid">
@@ -1266,6 +1310,7 @@ function GroupPage({ b, groups, group, tel }) {
         </nav>
       )}
 
+      {services.length > 0 && (
       <section className={`${pad} bg-white`}>
         <div className={`${wrap} grid gap-12 lg:grid-cols-[minmax(0,1fr)_380px] lg:gap-16`}>
           <div className="grid gap-5">
@@ -1308,28 +1353,17 @@ function GroupPage({ b, groups, group, tel }) {
               </article>
             ))}
           </div>
-          <aside className={`grid content-start gap-5 lg:sticky lg:self-start ${stickTop}`}>
-            <BookingCard b={b} groups={groups} title={`${askOf(b).item} ${group.title}`} service={group.title} />
-            {b.emergency && (
-              <a href={tel} className="flex gap-4 rounded-2xl bg-accent p-5 text-[color:var(--on-accent)] no-underline">
-                <Siren size={22} className="mt-0.5 flex-none" aria-hidden="true" />
-                <span className="min-w-0">
-                  <strong className="block font-heading text-[17px]">{b.emergency.title}</strong>
-                  <span className="mt-1 block text-[16px] md:text-[15px] leading-[1.5] opacity-90">{b.emergency.text}</span>
-                  <span className="mt-2 block font-bold">{b.phone}</span>
-                </span>
-              </a>
-            )}
-          </aside>
+          <aside className={`grid content-start gap-5 lg:sticky lg:self-start ${stickTop}`}>{booking}</aside>
         </div>
       </section>
+      )}
 
       {others.length > 0 && (
         <section className={`${pad} bg-surface`}>
           <div className={wrap}>
             <Eyebrow>More services</Eyebrow>
             <h2 className={`${h2} mb-10`}>Other ways we can help</h2>
-            <div className={`grid gap-4 ${others.length >= 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'}`}>
+            <div className={`grid gap-4 ${others.length === 1 ? '' : others.length >= 3 && others.length !== 4 ? 'md:grid-cols-3' : 'md:grid-cols-2'}`}>
               {others.map((g) => (
                 <a
                   key={g.slug}
@@ -1355,7 +1389,7 @@ function GroupPage({ b, groups, group, tel }) {
       <ClosingBand
         b={b}
         tel={tel}
-        title={`Need ${group.title.toLowerCase()} service?`}
+        title={`Need ${group.title.toLowerCase()}${/\bservices?$/i.test(group.title) ? '' : ' service'}?`}
         text="Send a request or call, and we will set up a time that works for you."
       />
     </>

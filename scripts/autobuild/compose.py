@@ -215,13 +215,17 @@ def sentences(text):
 
 
 def trim(text, limit):
-    """Their words, cut at a sentence boundary and never mid-sentence."""
-    out = ""
-    for sentence in sentences(text):
-        if len(out) + len(sentence) + 1 > limit:
+    """Their words, cut at a sentence boundary and never mid-sentence. A space
+    their page leaves before a comma or stop is closed up, and a last sentence
+    that stops on a comma, a list their page cut off, is left out."""
+    out = []
+    for sentence in sentences(re.sub(r"\s+([,.;:!?])", r"\1", plain(text))):
+        if len(" ".join(out + [sentence])) > limit:
             break
-        out = f"{out} {sentence}".strip()
-    return out
+        out.append(sentence)
+    while out and re.search(r"[,;:–—-]$", out[-1]):
+        out.pop()
+    return " ".join(out)
 
 
 def slugify(text):
@@ -420,6 +424,9 @@ def about_of(pages, name):
             if not is_about and not re.search(rf"\b(we|our|{re.escape(short)})\b", text, re.I):
                 continue
             if not re.match(r"[A-Z0-9\"'\u201c]", text) or "\u2026" in text or "..." in text:
+                continue
+            # A customer's review quoted on their page ("5 Stars - ...") is not their description of themselves.
+            if re.fullmatch(r"[\"\u201c].*[\"\u201d]", text, re.S) or re.search(r"\b[1-5]\s*stars?\b|\u2605", text, re.I):
                 continue
             cut = trim(text, 600)
             if cut and cut not in chosen:
