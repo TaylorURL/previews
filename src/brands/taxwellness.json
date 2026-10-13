@@ -1,0 +1,350 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Tax Wellness, LLC",
+  "shortName": "Tax Wellness",
+  "tagline": "Professionals you can trust",
+  "phone": "(855) 277-4448",
+  "email": "info@tax-wellness.com",
+  "address": "3007 Caroline Street",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77004",
+  "license": "Tax Wellness, LLC is CPA-owned, but is not a CPA firm registered with the Texas State Board of Public Accountancy (TSBPA). Authority: 22 Tex. Admin. Code § 501.83",
+  "hours": [
+    [
+      "Mon – Fri",
+      "8:30 AM – 5:30 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Tell us what the IRS or the State has sent you, and we will look at it with you."
+  },
+  "brand": {
+    "primary": "#366092",
+    "primaryDeep": "#24456e",
+    "accent": "#b07a3f",
+    "ink": "#17212d",
+    "muted": "#58626f",
+    "surface": "#f5f6f8",
+    "cream": "#e9edf3",
+    "line": "#dde3ea",
+    "heading": "'Libre Baskerville', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/taxwellness/logo.webp",
+    "logoWidth": 260,
+    "logoHeight": 34,
+    "logoRatio": 7.536,
+    "logoGround": "#ffffff"
+  },
+  "hero": {
+    "eyebrow": "Experienced tax practitioners",
+    "title": "We are here to help you turn stress into wellness.",
+    "lead": "Tax Wellness advises individuals and businesses on utilizing the Internal Revenue Code properly, from planning the year ahead to standing between you and the IRS when a notice arrives.",
+    "image": "/brands/taxwellness/hero",
+    "imageAlt": "A couple reading through tax paperwork at a table with a laptop",
+    "points": [
+      "Licensed CPAs and attorneys",
+      "Planning, filing and IRS resolution",
+      "A virtual firm serving clients nationwide"
+    ]
+  },
+  "overview": {
+    "title": "Services offered",
+    "text": "Pick a practice area to see what it covers, or call and talk it through with our team."
+  },
+  "services": [
+    {
+      "slug": "tax-planning",
+      "title": "Tax Planning",
+      "icon": "chart",
+      "summary": "Plan the year before the return is written.",
+      "text": "Schedule a consultation with us to ensure you are not leaving any tax savings on the table.",
+      "lead": "At our firm, we provide comprehensive tax planning services tailored to the individual needs of our clients. Our experienced team of certified public accountants can create personalized solutions for individuals and businesses, helping them to maximize their savings and stay compliant with the latest Federal and State tax regulations. We strive to make tax planning as stress-free as possible, so you can focus on what matters most.",
+      "image": "/brands/taxwellness/planning",
+      "imageAlt": "Tax forms laid out with a calculator and a pen",
+      "covers": [
+        {
+          "title": "A look back at prior filings",
+          "text": "Reviewing prior tax filings for missed opportunities."
+        },
+        {
+          "title": "Your facts and circumstances",
+          "text": "Understanding the facts and circumstances behind your individual or business return."
+        },
+        {
+          "title": "Deductions and credits",
+          "text": "Taking advantage of deductions and credits available to you."
+        },
+        {
+          "title": "Timing of income",
+          "text": "Deferring income where possible to future years to be taxed at lower rates."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why plan ahead instead of waiting for the return?",
+          "a": "Strategic tax planning is usually the only opportunity taxpayers have to control (within the boundaries of the law) the amount of income taxes they'll pay in a given year. You can decide how, when and where to invest or spend money in the future, but you cannot change the results of the past: a tax return is simply a receipt of transactions that have already occurred."
+        }
+      ]
+    },
+    {
+      "slug": "tax-preparation",
+      "title": "Tax Preparation",
+      "icon": "file-text",
+      "summary": "Individual and business returns, filed right.",
+      "text": "Engage our licensed professionals to take care of your individual and business tax filing needs.",
+      "lead": "Our firm offers comprehensive tax preparation services for individuals and businesses (Sole-Proprietors, Partnerships, LLCs, S-Corps, and Corporations), alike. We specialize in navigating the complexities of the tax code to ensure our client's returns are in the best position possible. Our team of experienced tax professionals are here to help you with all your individual and business tax needs.",
+      "covers": [
+        {
+          "title": "Form 1040",
+          "text": "US Individual Income Tax Return."
+        },
+        {
+          "title": "Form 1065",
+          "text": "US Return of Partnership Income."
+        },
+        {
+          "title": "Form 1120-S",
+          "text": "Income Tax Return for an S Corporation."
+        },
+        {
+          "title": "Form 1120",
+          "text": "US Corporation Income Tax Return."
+        },
+        {
+          "title": "Form 1041",
+          "text": "US Income Tax Return for Estates and Trusts."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who actually prepares the return?",
+          "a": "We offer tax preparation services from licensed CPAs and Attorneys who have formal training in accounting and real-world experience in large CPA firms."
+        }
+      ]
+    },
+    {
+      "slug": "business-consulting",
+      "title": "Business Consulting",
+      "icon": "briefcase",
+      "summary": "Entity selection, formation and financing.",
+      "text": "Get assistance on selecting your business structure and filing the appropriate documents, along with guidance on securing financing to operate or expand your business.",
+      "lead": "We provide comprehensive business consulting services, beginning with entity selection through the actual formation. Our understanding of applying the tax code combined with your vision for the business assists us in guiding you to select the ideal entity structure. Once your business is formed, we can consult you on securing financing to operate or expand it.",
+      "image": "/brands/taxwellness/consulting",
+      "imageAlt": "Looking up through a glass canopy at office towers",
+      "covers": [
+        {
+          "title": "Choosing a structure",
+          "text": "What type of entity structure is best for your business."
+        },
+        {
+          "title": "Forming the entity",
+          "text": "Filing the appropriate documents once you have settled on a structure."
+        },
+        {
+          "title": "Securing financing",
+          "text": "How do you secure financing to operate and expand your business?"
+        },
+        {
+          "title": "Selling the business",
+          "text": "What to do when you're ready to sell your business."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Is my industry too unusual for this?",
+          "a": "Starting a new business can be exciting and scary at the same time, but no matter if you sell apples or airplanes, businesses all go through the same challenges of how to start, grow, and conclude. Take the guess work out of these questions by engaging us as consultants, and focus on delivering the best service or product to your customers."
+        }
+      ]
+    },
+    {
+      "slug": "tax-debt-resolution",
+      "title": "Tax Debt Resolution",
+      "icon": "scale",
+      "summary": "Settle a balance and stop the letters.",
+      "text": "Contact us today to help eliminate the stress of dealing with the IRS alone.",
+      "lead": "Our Tax Debt Resolution Service offers customized solutions to help you manage and resolve your tax debt. We can negotiate with the IRS or State on your behalf to settle your debt for a reduced amount (if you qualify) and we can provide guidance on how to avoid future tax debt.",
+      "covers": [
+        {
+          "title": "Threatening notices",
+          "text": "Have you received threatening letters from the IRS or State yet?"
+        },
+        {
+          "title": "Unfiled returns",
+          "text": "Do you have unfiled individual or business tax returns?"
+        },
+        {
+          "title": "Payroll tax issues",
+          "text": "Are you facing payroll tax issues?"
+        },
+        {
+          "title": "A balance you cannot pay",
+          "text": "Not sure how you're going to pay the balance that the IRS or State claims you owe?"
+        }
+      ],
+      "questions": [
+        {
+          "q": "How long do I have to respond?",
+          "a": "Tax debt resolution is an urgent matter, as the IRS or State only allows a specified amount of time to respond to various tax notices prior to taking further actions. Most individuals and businesses end up facing large tax balances because they did not have a licensed tax professional to help them avoid these pitfalls."
+        }
+      ]
+    },
+    {
+      "slug": "levy-lien-penalty",
+      "title": "Levy, Lien, and Penalty",
+      "icon": "shield",
+      "summary": "Protect your bank account, wages and home.",
+      "text": "Hire our firm to protect your rights against levies, liens, wage garnishments, and/ or penalties.",
+      "lead": "Our levy, lien, and penalty relief service is designed to help taxpayers who have received urgent notices from the IRS. Our team of CPAs and attorneys have the experience and knowledge to help you understand your options and work to resolve any levies, liens, or penalties you may be facing.",
+      "covers": [
+        {
+          "title": "Bank levies",
+          "text": "Has the IRS or State levied your bank account for an outstanding tax balance?"
+        },
+        {
+          "title": "Liens on property",
+          "text": "Did you receive a letter stating that your home or business has a lien against it?"
+        },
+        {
+          "title": "Penalties and interest",
+          "text": "Were you charged penalties and interest from the IRS that nearly doubled the amount you owed?"
+        },
+        {
+          "title": "Payment terms",
+          "text": "We help you take every action possible to get your money back and setup payment terms that work best for you, not the IRS."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why are levies and liens so urgent?",
+          "a": "Levies and liens are the most time sensitive issues you can face from the IRS or State. Imagine getting an alert from your bank stating your savings has been wiped out by the IRS, or planning to use your entire paycheck but the IRS has taken 25% of it. These IRS enforcement actions usually happen unannounced and are painful."
+        }
+      ]
+    },
+    {
+      "slug": "audit-representation",
+      "title": "Audit Representation",
+      "icon": "clipboard-check",
+      "summary": "Someone in the room when the IRS examines.",
+      "text": "Retain us and give yourself the peace of mind that you'll have an expert fighting for you against the IRS or State.",
+      "lead": "Our IRS Audit Representation service ensures that you have the best chance of success when facing an IRS audit. We provide expertise and experience to help you navigate the complexities of the audit process and provide strategies for mitigating any potential penalties. Our team of certified public accountants will work closely with you to ensure you are fully prepared and represented throughout the audit.",
+      "image": "/brands/taxwellness/audit",
+      "imageAlt": "Internal Revenue Service carved into the stone of a government building",
+      "covers": [
+        {
+          "title": "An individual audit",
+          "text": "Is the IRS auditing your individual return?"
+        },
+        {
+          "title": "A business audit",
+          "text": "Have you received letters stating that your business will be audited?"
+        },
+        {
+          "title": "A return you prepared",
+          "text": "Did you prepare the return that the IRS or State wants to audit?"
+        },
+        {
+          "title": "After the audit",
+          "text": "Has the IRS audit concluded and you've been assessed additional penalties and interest?"
+        }
+      ],
+      "questions": [
+        {
+          "q": "What can an audit actually change?",
+          "a": "The IRS has the power to disallow deductions and credits, while increasing your income as a part of the audit process, leaving you responsible to pay any additional taxes, penalties, and interest as a result of their adjustments. Retaining our experienced professionals makes sure the IRS isn't conveniently forgetting to apply sections of the tax code that will work to your benefit."
+        }
+      ]
+    }
+  ],
+  "affiliations": {
+    "title": "Credentials and memberships",
+    "items": [
+      "American Institute of Certified Public Accountants"
+    ]
+  },
+  "about": {
+    "title": "Our vision",
+    "text": [
+      "At our firm, we strive to provide the highest quality service to our clients by utilizing experienced professionals and a client-focused approach. Our mission is to provide superior services tailored to meet the specific needs of each individual or business and relieve the stress burden of various taxation issues.",
+      "We strive to create an environment of trust and respect between our team and our clients. We prioritize communication and transparency to ensure the best possible service for our clients. Our goal is to provide the guidance and resources needed to help clients make the best decisions for their financial future. We are committed to building strong, long-term relationships with our clients and providing exemplary service."
+    ],
+    "image": "/brands/taxwellness/about",
+    "imageAlt": "A person going through tax documents beside a calculator and a laptop",
+    "values": [
+      {
+        "title": "Experienced professionals",
+        "text": "Licensed CPAs and attorneys with formal training in accounting and real-world experience in large CPA firms."
+      },
+      {
+        "title": "Communication and transparency",
+        "text": "We prioritize communication and transparency to ensure the best possible service for our clients."
+      },
+      {
+        "title": "Stress into wellness",
+        "text": "Relieving the stress burden of various taxation issues is the point of the work."
+      }
+    ]
+  },
+  "resources": [
+    {
+      "title": "Make a payment",
+      "text": "Pay an invoice online through our CPACharge page.",
+      "href": "https://secure.cpacharge.com/pages/taxwellness/payments"
+    },
+    {
+      "title": "Submit documents",
+      "text": "Send tax documents to us through our Dropbox file request.",
+      "href": "https://www.dropbox.com/request/pxHI1yKMd96XuOvgXT71"
+    },
+    {
+      "title": "22 Tex. Admin. Code § 501.83",
+      "text": "The Texas rule behind the notice in our footer, at the Cornell Legal Information Institute.",
+      "href": "https://www.law.cornell.edu/regulations/texas/22-Tex-Admin-Code-SS-501-83"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "A virtual firm",
+      "text": "In 2022, the firm transitioned to a virtual format to better serve clients throughout the country. Mail reaches us at 3007 Caroline Street, Houston, TX 77004."
+    },
+    {
+      "heading": "Member of",
+      "text": "American Institute of Certified Public Accountants."
+    },
+    {
+      "heading": "What we ask when you get in touch",
+      "items": [
+        "A tax planning request asks for your taxpayer type, how your business is treated for tax purposes, your previous year's income tax expense, your current tax advisor and the topic of interest or concern.",
+        "A tax debt request asks for the type of tax debt, roughly how much you owe and a description of the tax problem.",
+        "A general enquiry asks for your name, email, phone, the subject of concern and a description of the issue."
+      ]
+    },
+    {
+      "heading": "Businesses we prepare returns for",
+      "text": "Sole proprietors, partnerships, LLCs, S-corps and corporations, alongside individual returns and returns for estates and trusts."
+    },
+    {
+      "heading": "Paying and sending documents",
+      "items": [
+        "Payments are taken online through our CPACharge page.",
+        "Tax documents can be sent to us through our Dropbox file request."
+      ]
+    },
+    {
+      "heading": "Texas notice (TSBPA)",
+      "text": "Tax Wellness, LLC is CPA-owned, but is not a CPA firm registered with the Texas State Board of Public Accountancy (TSBPA). Authority: 22 Tex. Admin. Code § 501.83."
+    }
+  ]
+}
