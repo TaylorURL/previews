@@ -412,16 +412,13 @@ function Header({ b, path, k, groups, nav, tel, ctaLabel }) {
 /* ---------------------------------------------------------------- sections */
 
 function Crumbs({ trail }) {
+  // The "/" closes the crumb before it, so a trail that wraps on a phone
+  // ends its first line with the separator instead of opening the next one.
   return (
     <nav aria-label="Breadcrumb" className="mb-6 lg:mb-8">
       <ol className="flex flex-wrap items-center gap-x-2 text-[15px] text-muted">
         {trail.map(([href, label], i) => (
           <li key={label} className="flex items-center gap-2">
-            {i > 0 && (
-              <span aria-hidden="true" className="text-line">
-                /
-              </span>
-            )}
             {href ? (
               <a href={href} className="inline-flex min-h-11 min-w-11 items-center text-muted no-underline hover:text-primary hover:underline">
                 {label}
@@ -429,6 +426,11 @@ function Crumbs({ trail }) {
             ) : (
               <span aria-current="page" className="font-semibold text-ink">
                 {label}
+              </span>
+            )}
+            {i < trail.length - 1 && (
+              <span aria-hidden="true" className="text-line">
+                /
               </span>
             )}
           </li>
