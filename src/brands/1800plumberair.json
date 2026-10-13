@@ -1,0 +1,562 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "1-800-PLUMBER +AIR of Pearland",
+  "shortName": "1-800-PLUMBER +AIR",
+  "summary": "Plumbing, cooling, heating and 24/7 emergency service for homes and businesses in Pearland and the surrounding communities.",
+  "phone": "(281) 412-4284",
+  "email": "info@1800plumber.com",
+  "address": "1331 Broadway St, Ste A",
+  "town": "Pearland",
+  "state": "TX",
+  "zip": "77581",
+  "rating": 4.8,
+  "reviewCount": 1355,
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 4 PM"
+    ],
+    [
+      "Saturday",
+      "8 AM – 12 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#253A7F",
+    "primaryDeep": "#051F5D",
+    "accent": "#FCB61A",
+    "ink": "#0B1430",
+    "muted": "#4C5878",
+    "surface": "#F2F5FB",
+    "line": "#DCE2F0",
+    "heading": "'Manrope', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/1800plumberair/logo.webp",
+    "logoWidth": 184,
+    "logoHeight": 58,
+    "logoRatio": 3.169,
+    "logoGround": "#ffffff"
+  },
+  "emergency": {
+    "title": "24/7 emergency service",
+    "text": "Available 24 hours a day, 7 days a week, at a price set by the job."
+  },
+  "licenses": [
+    {
+      "label": "TX Plumbing License",
+      "number": "MPL42240"
+    },
+    {
+      "label": "TDLR",
+      "number": "TACLB22374E"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Plumbing, cooling and heating in Pearland",
+    "title": "24/7 AC repair and plumbing services in Pearland.",
+    "titleAccent": "Our name is our number.",
+    "lead": "A team of licensed, insured plumbers and HVAC technicians, with no surprise costs at the end of the job and a price set by the job rather than by the hour.",
+    "image": "/brands/1800plumberair/hero",
+    "imageAlt": "Gloved hands turning a screwdriver on a wall-mounted boiler"
+  },
+  "groups": [
+    {
+      "slug": "plumbing",
+      "title": "Plumbing",
+      "icon": "droplets",
+      "summary": "Full-service residential and commercial plumbing, from a slow drain to a whole-house repipe.",
+      "intro": "When you need first-rate plumbing services, look no further than 1-800-PLUMBER +AIR. We are always ready to handle your residential and commercial plumbing needs, and our professionals also do regular checks and inspections so that your plumbing system keeps running smoothly.",
+      "image": "/brands/1800plumberair/plumbing",
+      "imageAlt": "A plumber working on the supply pipes behind a bathroom wall panel",
+      "services": [
+        {
+          "slug": "drain-cleaning",
+          "title": "Drain Cleaning",
+          "icon": "waves",
+          "text": "If your sink is always clogging, slow to drain and smelling strange, it is most likely time for a cleaning. If standing water is a regular sight, our technicians will have your drains flowing again.",
+          "points": [
+            "Every drain in the home cleaned",
+            "Emergency drain cleaning available"
+          ]
+        },
+        {
+          "slug": "water-heaters",
+          "title": "Water Heaters",
+          "icon": "flame",
+          "text": "Whether there is water leaking from the bottom of your water heater, your water will not heat up or stay hot, or your water pressure is low, our plumbing team can help.",
+          "points": [
+            "Repair and replacement",
+            "$100 off any new water heater"
+          ]
+        },
+        {
+          "slug": "tankless-water-heater",
+          "title": "Tankless Water Heater",
+          "icon": "gauge",
+          "text": "Tankless water heaters installed, repaired and maintained for homes that want hot water without a storage tank."
+        },
+        {
+          "slug": "water-leaks",
+          "title": "Water Leaks",
+          "icon": "droplets",
+          "text": "Water damage on your floors and walls, puddles around your sinks and appliances and high water bills are all signs of a leak. Leaks can be small and easy to find, or in the pipes beneath your home.",
+          "points": [
+            "Expert leak detection and repair",
+            "Caught early before the damage spreads"
+          ]
+        },
+        {
+          "slug": "sewer-services",
+          "title": "Sewer Services",
+          "icon": "waves",
+          "text": "Cracks around your foundation, slow draining toilets or strange smells can mean a damaged sewer line, whether from tree roots or a buildup of objects in the line.",
+          "points": [
+            "Sewer line repair",
+            "A sewer emergency can happen at any time"
+          ]
+        },
+        {
+          "slug": "water-treatment",
+          "title": "Water Treatment",
+          "icon": "filter",
+          "text": "Treating your water at home is better for your family's health, your appliances and the environment. Talk to a technician about an activated carbon water filter or a reverse osmosis filter in your home.",
+          "points": [
+            "Filters out chlorine, microplastics and pesticides",
+            "Activated carbon filters, reverse osmosis systems and water softeners",
+            "$300 off a water treatment system"
+          ]
+        },
+        {
+          "slug": "gas-lines",
+          "title": "Gas Lines",
+          "icon": "flame",
+          "text": "Gas piping work, including replacing gas or water lines to restore your plumbing or HVAC system."
+        },
+        {
+          "slug": "bathroom-plumbing",
+          "title": "Bathroom Plumbing",
+          "icon": "droplets",
+          "text": "Installation and maintenance of the fixtures in your bathroom, including the shower, toilet, sink and tub."
+        },
+        {
+          "slug": "kitchen-plumbing",
+          "title": "Kitchen Plumbing",
+          "icon": "settings",
+          "text": "Installation and maintenance of kitchen and utility plumbing, including the sink, dishwasher and laundry machine."
+        },
+        {
+          "slug": "repipes",
+          "title": "Repipes",
+          "icon": "cable",
+          "text": "Repiping for homes whose supply lines have reached the end of their service life."
+        },
+        {
+          "slug": "commercial-plumbing",
+          "title": "Commercial Plumbing",
+          "icon": "building",
+          "text": "From installing and repairing plumbing systems to maintaining commercial water heaters and addressing complex drain issues, our team keeps your operations running.",
+          "points": [
+            "Small repairs through large-scale projects",
+            "Work planned to minimise disruption to your business",
+            "Available 24/7 so your business keeps serving its customers",
+            "Repiping water and sewer lines with pipe-bursting technology, through two small access holes",
+            "Commercial water heaters installed, and building drains cleaned of debris and odours"
+          ]
+        },
+        {
+          "slug": "backflow-testing",
+          "title": "Backflow Testing and Repair",
+          "icon": "shield",
+          "text": "Backflow testing and repair, along with repair of your backup pump."
+        }
+      ]
+    },
+    {
+      "slug": "cooling",
+      "title": "Cooling (A/C)",
+      "icon": "snowflake",
+      "summary": "AC repair, maintenance and installation, plus thermostats, mini splits and indoor air quality.",
+      "intro": "Nothing leaves you with greater peace of mind like routine maintenance and a tune-up from a professional to ensure that your AC is working properly. Our fully trained, licensed and insured HVAC contractors service any and all units, whether you need installation, maintenance or repair.",
+      "image": "/brands/1800plumberair/cooling",
+      "imageAlt": "A technician going over the outdoor air conditioning unit with a homeowner",
+      "services": [
+        {
+          "slug": "air-conditioning-repair",
+          "title": "Air Conditioning Repair",
+          "icon": "wrench",
+          "text": "A malfunctioning air conditioner will leave you exposed when extreme weather conditions strike. Our professional and speedy repair service deals with the common issues.",
+          "points": [
+            "Poor airflow",
+            "Vents blowing hot air",
+            "Low refrigerant",
+            "Leaks",
+            "Loud banging noises",
+            "Dirty air filters"
+          ]
+        },
+        {
+          "slug": "air-conditioning-maintenance",
+          "title": "Air Conditioning Maintenance",
+          "icon": "gauge",
+          "text": "Regular preventive maintenance for your HVAC system, making it more efficient and extending its service life.",
+          "points": [
+            "Check the drain line for blockages",
+            "Change the air filters",
+            "Replace any faulty parts",
+            "Clean any dirty sections",
+            "Ascertain that the electrical system is in proper working condition"
+          ]
+        },
+        {
+          "slug": "air-conditioning-installation",
+          "title": "Air Conditioning Installation",
+          "icon": "air-vent",
+          "text": "Whether you are installing a central air conditioner in a new home or replacing an old unit, we know that each home is different, so we offer installation care and maintenance that keeps your conditioner efficient and reliable.",
+          "points": [
+            "It has consistently failed to keep your home cool",
+            "It has been operational for 10-15 years",
+            "It is no longer functioning efficiently",
+            "You have to schedule frequent AC repairs"
+          ]
+        },
+        {
+          "slug": "ductless-mini-splits",
+          "title": "Ductless Mini Splits",
+          "icon": "fan",
+          "text": "A ductless mini-split system cools your home without ductwork, using blower units that distribute heated or cooled air directly into the rooms.",
+          "points": [
+            "Install, repair, replace and tune up",
+            "Energy-efficient cooling for the summer heat"
+          ]
+        },
+        {
+          "slug": "thermostat",
+          "title": "Thermostat",
+          "icon": "thermometer",
+          "text": "The thermostat is the central brain of your heating and cooling system, and it should always be accurate to keep your home comfortable and energy efficient.",
+          "points": [
+            "Manual, programmable and smart thermostats",
+            "Our technicians handle the installation"
+          ]
+        },
+        {
+          "slug": "indoor-air-quality",
+          "title": "Indoor Air Quality",
+          "icon": "wind",
+          "text": "A tightly insulated home traps allergens such as smoke and dust in couches, bedding and carpeting, which can exacerbate allergies and make the house stuffy.",
+          "points": [
+            "Indoor air quality testing and measurement",
+            "A better air filter fitted to your HVAC system, or a thorough duct cleaning",
+            "Humidity, dust, ventilation and pet dander all assessed"
+          ]
+        },
+        {
+          "slug": "commercial-cooling",
+          "title": "Commercial Cooling",
+          "icon": "building",
+          "text": "Commercial AC repair, installation, maintenance and thermostat service, sized and fit to the demands of your business so your building stays comfortable year-round.",
+          "points": [
+            "Refrigerant problems, short cycling and dirty filters diagnosed",
+            "Comprehensive maintenance plans for commercial units",
+            "A new unit lowers energy bills and improves indoor air quality"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "heating",
+      "title": "Heating",
+      "icon": "flame",
+      "summary": "Furnace and heater repair, replacement and maintenance, heat pumps and boilers.",
+      "intro": "We will help get you through the cold winter months with ease. Heaters can break down at any time of year, but when it is cold outside and your home is freezing you need someone on call who can come out right away. Our heating specialists are licensed plumbers and heating repair professionals, and we offer 24/7 emergency service.",
+      "image": "/brands/1800plumberair/heating",
+      "imageAlt": "An outdoor heat pump unit standing on the lawn beside a house",
+      "services": [
+        {
+          "slug": "heater-furnace-repair",
+          "title": "Heater & Furnace Repair",
+          "icon": "flame",
+          "text": "If your heater is broken, our team of experts can help you get it fixed quickly and efficiently. We have licensed plumbers and heating specialists who know how to handle any heating or furnace problem.",
+          "points": [
+            "24/7 emergency service",
+            "We work with you to find the best solution for your needs"
+          ]
+        },
+        {
+          "slug": "heater-furnace-replacement",
+          "title": "Heater & Furnace Replacement",
+          "icon": "heater",
+          "text": "If you are in the market for a new heater, there are a variety of different heaters to choose from. We will work with you to figure out what size and type is best for your home, and then take care of the installation.",
+          "points": [
+            "Sized and matched to your home",
+            "Installed before the next cold season"
+          ]
+        },
+        {
+          "slug": "heater-maintenance",
+          "title": "Heater Maintenance",
+          "icon": "gauge",
+          "text": "Regular maintenance catches problems with your heater before they turn into bigger issues, and it keeps the system running efficiently, which can save you money on your energy bill.",
+          "points": [
+            "Fall inspection",
+            "Heat exchanger inspected"
+          ]
+        },
+        {
+          "slug": "heat-pump-services",
+          "title": "Heat Pump Services",
+          "icon": "thermometer",
+          "text": "Heat pump systems installed, repaired and maintained for homes that heat and cool from one system."
+        },
+        {
+          "slug": "boilers",
+          "title": "Boilers",
+          "icon": "flame",
+          "text": "Boiler service and repair by technicians who are licensed plumbers as well as heating professionals."
+        },
+        {
+          "slug": "commercial-heating",
+          "title": "Commercial Heating",
+          "icon": "building",
+          "text": "Commercial heating installation, maintenance, troubleshooting and emergency repair, so your employees and customers stay comfortable through a cold snap.",
+          "points": [
+            "Installation and maintenance",
+            "Emergency repairs for commercial systems"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "emergency-services",
+      "title": "Emergency Services",
+      "icon": "shield",
+      "summary": "Available 24 hours a day, 7 days a week, with no extra charge for nights, weekends or holidays.",
+      "intro": "We are available 24 hours a day, 7 days a week. We are a team of licensed, insured technicians, and no matter the time of day, if you call us in the middle of the night a trustworthy plumber or HVAC technician will be at your door. We know emergency plumbing, heating and cooling issues are stressful, so we charge by the job and not by the time.",
+      "image": "/brands/1800plumberair/emergency",
+      "imageAlt": "A run of metal pipes in a mechanical room",
+      "services": [
+        {
+          "slug": "emergency-plumbing",
+          "title": "Emergency Plumbing",
+          "icon": "droplets",
+          "text": "Water leaks, frozen pipes and blocked toilets are the calls we take most often, and leaks that are not properly addressed only worsen the damage.",
+          "points": [
+            "Burst and cracked pipes",
+            "Blocked toilets, 24 hours a day",
+            "Flooding attended to as soon as possible"
+          ]
+        },
+        {
+          "slug": "emergency-cooling",
+          "title": "Emergency Cooling",
+          "icon": "snowflake",
+          "text": "An air conditioner that is not blowing cold air, or a thermostat that is not working, leaves your system running inefficiently and the house uncomfortable.",
+          "points": [
+            "Prompt thermostat repair",
+            "Any and all units serviced"
+          ]
+        },
+        {
+          "slug": "emergency-heating",
+          "title": "Emergency Heating",
+          "icon": "flame",
+          "text": "A gas leak is one of the most dangerous things your heating system can experience, and it needs a professional as quickly as possible.",
+          "points": [
+            "Gas and water lines replaced",
+            "No-heat calls answered any hour"
+          ]
+        },
+        {
+          "slug": "emergency-drain-cleaning",
+          "title": "Emergency Drain Cleaning",
+          "icon": "waves",
+          "text": "A drain that backs up usually has an underlying issue, and we look to resolve it rather than clear it and leave."
+        },
+        {
+          "slug": "emergency-commercial-plumbing",
+          "title": "Emergency Commercial Plumbing",
+          "icon": "building",
+          "text": "Emergency plumbing and HVAC repairs for commercial properties, with the skills and tools for a small repair or a large-scale problem."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "The 1-800-PLUMBER +AIR difference in Pearland",
+    "title": "Your home town professional.",
+    "text": [
+      "1-800-Plumber +Air is located in Pearland, TX and is focused on being the BEST. It is not about being better than everyone else; instead our focus is on providing you with the fast, dependable plumbing and emergency services when you need it most. Our goal is to give you the BEST experience you have ever received from a service based business.",
+      "In 1999 the 1-800-PLUMBER name and phone number was secured, leading to the well-known \"Our Name is Our Number!\" slogan. In 2010 Mark Collins joined the brand as a franchisee, and in April 2015 they purchased the 1-800-PLUMBER brand and created the foundation needed to grow it into a household name throughout the country.",
+      "Our goal is simply to be the BEST. When we finish a job, we want our customers to say, Wow, that was the BEST experience I have ever had. - Mark and Mike Collins",
+      "The 1-800-Plumber +Air team has the expertise to meet your needs with an easy to remember name and phone number, so call us today for help with all your Pearland home or business plumbing, drain cleaning, and heating and cooling needs."
+    ],
+    "image": "/brands/1800plumberair/team",
+    "imageAlt": "A technician talking a homeowner through the work at her bathroom sink",
+    "values": [
+      {
+        "title": "24/7 availability",
+        "text": "We work nights and weekends, and we are always available, 24/7."
+      },
+      {
+        "title": "No surprise costs",
+        "text": "Prices by the job, not by the hour, with no price surprises at the end of a job."
+      },
+      {
+        "title": "On time",
+        "text": "Committed to arriving on time, and we call to confirm the arrival time."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Are you available outside business hours?",
+      "a": "Yes. We are available 24 hours a day, 7 days a week, and we do not up-charge services for nights, weekends or holidays."
+    },
+    {
+      "q": "How are your prices set?",
+      "a": "Prices are by the job, not by the hour, and there are no price surprises at the end of a job. We can also answer questions about costs, licensing and how long a job will take before we start."
+    },
+    {
+      "q": "When should I replace my air conditioner rather than repair it?",
+      "a": "We recommend replacement if it has consistently failed to keep your home cool, it has been operational for 10 to 15 years, it is no longer efficient, or you have to schedule frequent repairs."
+    },
+    {
+      "q": "What counts as an emergency?",
+      "a": "Water leaks, frozen or burst pipes, blocked toilets, a gas leak, a thermostat that is not working and an air conditioner that is not blowing cold air are the calls we see most. If you are experiencing flooding, contact us as soon as possible."
+    },
+    {
+      "q": "How does booking work?",
+      "a": "Select the day and time you would prefer and we will contact you to confirm the appointment. You can also call us directly at (281) 412-4284."
+    },
+    {
+      "q": "Is your work guaranteed?",
+      "a": "All work is guaranteed, and we will never sell a customer something that is not needed."
+    }
+  ],
+  "serviceArea": [
+    "Pearland",
+    "Friendswood",
+    "League City",
+    "Sugar Land",
+    "Missouri City",
+    "Richmond"
+  ],
+  "reviews": [
+    {
+      "author": "Charles Hoffpauir",
+      "text": "Chris did a fine job with our water heater replacements."
+    },
+    {
+      "author": "Jalisa King",
+      "text": "Joshua D was friendly, fast and knowledgeable. He is top notch and I would personally request him again for any other plumbing/air services."
+    },
+    {
+      "author": "michael morris",
+      "text": "Good technician. Explained what he was going to do kept me updated throughout the day."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Licenses",
+      "items": [
+        "TX Plumbing License #MPL42240 - Mark Collins, Master Plumber",
+        "TACLB22374E, Texas Department of Licensing and Regulation",
+        "A team of licensed, insured plumbers and HVAC technicians"
+      ]
+    },
+    {
+      "heading": "Current Pearland specials",
+      "items": [
+        "$100 off any new water heater - upgrade to a new energy efficient model",
+        "$25 off any repair - not to be combined with any other offer",
+        "$300 off a water treatment system - not to be combined with any other offer"
+      ]
+    },
+    {
+      "heading": "How we charge",
+      "text": "Prices by the job, not by the hour. We will not up-charge services for nights, weekends or holidays, and there are no surprise costs at the end of the job. All work is guaranteed. Transparent upfront pricing, courteous service and lasting repairs."
+    },
+    {
+      "heading": "Our core values",
+      "items": [
+        "Quality - highly trained technicians using the latest technology in the industry",
+        "Value - priced by the job, and the serviced area left clean and orderly",
+        "Convenience - nights and weekends, on-time arrival, an easy booking process",
+        "Integrity - delivers on promises, never sells a customer something that is not needed"
+      ]
+    },
+    {
+      "heading": "Licensing boards",
+      "items": [
+        "Texas State Board of Plumbing Examiners, 7915 Cameron Road, Austin, TX 78754, (800) 845-6584",
+        "Texas Department of Licensing and Regulation, PO Box 12157, Austin, TX 78711-2157, 1-800-803-9202"
+      ]
+    },
+    {
+      "heading": "Careers",
+      "items": [
+        "Opportunity for advancement, paid training and competitive pay",
+        "Competitive benefits, free uniforms for technicians and industry-leading technology",
+        "A team-oriented environment and high customer satisfaction",
+        "The Win/Win/Win model: the customer wins, you win, and the company wins",
+        "Call or contact us to see what positions we have available"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "facebook.com/1800plumberpearland",
+        "instagram.com/1800plumberair",
+        "youtube.com/user/1800plumber",
+        "twitter.com/1800plumber"
+      ]
+    },
+    {
+      "heading": "Our mission",
+      "text": "To become the highest quality brand in the industry through honesty and integrity, professionalism and craftsmanship, by doing what we say we will, always telling the truth, training our team members to conduct themselves in a professional manner, and only using skilled craftsmen in the industry."
+    },
+    {
+      "heading": "Our vision",
+      "text": "To be the strongest brand in the plumbing and HVAC industry throughout the United States, through customer satisfaction, and to become the most unforgettable brand in it."
+    },
+    {
+      "heading": "Commercial services",
+      "items": [
+        "Commercial plumbing, cooling, heating, drain cleaning and water heater service",
+        "Available 24/7 with quick repairs and long-term solutions that minimise downtime",
+        "Installing or replacing water pipes, fixtures, equipment and sewage pipes",
+        "Contact us to schedule a free upfront consultation"
+      ]
+    },
+    {
+      "heading": "Part of a national brand",
+      "text": "Each 1-800-PLUMBER +AIR location is independently owned and operated by a franchisee, and locations can be found across the US. Franchise opportunities are at 1800plumberfranchise.com."
+    },
+    {
+      "heading": "Appointment texts",
+      "text": "Sign up for texts and you consent to marketing messages at the number given, covering your request, appointment and service updates, and promotions, including messages sent by autodialer. Consent is not a condition of purchase, message and data rates may apply, and replying STOP unsubscribes at any time."
+    },
+    {
+      "heading": "We listen",
+      "text": "Our technicians listen to what you need and come up with a practical, lasting solution. We encourage questions, explain our proposals thoroughly and keep you informed at every step."
+    },
+    {
+      "heading": "Home Guard Membership",
+      "text": "Just as your car requires regular preventative maintenance, so do the plumbing and HVAC systems in your home. Preventative maintenance avoids costly repairs and ultimately saves you money.",
+      "items": [
+        "Plumbing: annual safety inspection of all plumbing",
+        "Plumbing: flush water heater",
+        "Plumbing: hard water test",
+        "Heating and cooling, spring inspection: check freon levels, clean outside condenser, perform 15 point inspection",
+        "Heating and cooling, fall inspection: inspect heat exchanger, clean outside condenser, perform 15 point inspection",
+        "Priority service and discount pricing on all repairs (not including replacements)"
+      ]
+    }
+  ]
+}

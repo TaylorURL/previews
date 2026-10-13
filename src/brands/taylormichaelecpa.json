@@ -1,0 +1,281 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Rutherford Taylor & Company P.C.",
+  "shortName": "Rutherford Taylor",
+  "tagline": "Certified Public Accountants, Greenville, Texas",
+  "phone": "(903) 455-6252",
+  "email": "Mtaylor@rutherfordtaylor.com",
+  "address": "3500 Joe Ramsey Blvd. E.",
+  "town": "Greenville",
+  "state": "TX",
+  "zip": "75401",
+  "since": 1980,
+  "license": "Licensed to practice in the State of Texas.",
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Lunch",
+      "Closed 12 – 1 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Book an Appointment",
+    "text": "Call the office and you will get a person, not a phone tree. New clients are welcome year-round, not just in the spring."
+  },
+  "brand": {
+    "primary": "#585858",
+    "primaryDeep": "#2f2f2f",
+    "accent": "#c9a64f",
+    "ink": "#33322f",
+    "muted": "#4c4a46",
+    "surface": "#fafaf9",
+    "cream": "#f1f1ef",
+    "line": "#d3d3cf",
+    "heading": "'PT Serif', 'Century Schoolbook', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/taylormichaelecpa/logo.webp",
+    "logoWidth": 100,
+    "logoHeight": 74,
+    "logoRatio": 1.355,
+    "logoGround": "#ffffff",
+    "logoName": true
+  },
+  "hero": {
+    "eyebrow": "Certified public accountants in Greenville",
+    "title": "Numbers, in order, since 1980.",
+    "lead": "Rutherford Taylor & Company is a certified public accounting firm in Greenville, Texas. Tax preparation, bookkeeping and financial consulting for individuals and small businesses across North Texas.",
+    "image": "/brands/taylormichaelecpa/hero",
+    "imageAlt": "Printed tax forms, a pen and a calculator on a desk",
+    "points": [
+      "Established 1980",
+      "Open Monday to Friday, 8am to 5pm",
+      "Handled in the Greenville office by a CPA"
+    ]
+  },
+  "overview": {
+    "title": "Tax, bookkeeping and consulting for individuals and small businesses.",
+    "text": "Everything is handled in the Greenville office by a CPA, not routed somewhere else."
+  },
+  "services": [
+    {
+      "slug": "individual-tax-returns",
+      "title": "Individual Tax Returns",
+      "icon": "file-text",
+      "summary": "Federal returns for individuals and families.",
+      "text": "Federal returns for individuals and families, prepared, reviewed and filed by a certified public accountant.",
+      "lead": "A personal return is Form 1040, prepared, reviewed and filed by a certified public accountant in the Greenville office.",
+      "image": "/brands/taylormichaelecpa/individual-tax-returns",
+      "imageAlt": "A hand signing a printed form with a fountain pen",
+      "covers": [
+        {
+          "title": "Taxpayer and spouse details",
+          "text": "The intake sheet collects the details for both filers before the first appointment."
+        },
+        {
+          "title": "Dependents",
+          "text": "Who is claimed on the return, listed on the intake sheet."
+        },
+        {
+          "title": "Direct deposit information",
+          "text": "Bank details for a refund, which is why the sheet is brought or faxed to the office rather than emailed."
+        },
+        {
+          "title": "Contact details and addresses",
+          "text": "Physical and mailing addresses, cell, home and work phones and a primary email, all collected on the one sheet."
+        },
+        {
+          "title": "A new child",
+          "text": "If you have a new child we will need a copy of their Social Security card, so bring it along with the sheet."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What should I bring to a first appointment?",
+          "a": "The Individual Client Information sheet, filled in. Bring it to your first appointment and we can get straight to the work."
+        },
+        {
+          "q": "Can I email the intake sheet?",
+          "a": "No. It asks for Social Security and bank account numbers, and ordinary email is not a safe way to send those. Bring or fax the finished sheet to the office."
+        }
+      ]
+    },
+    {
+      "slug": "business-tax-returns",
+      "title": "Business Tax Returns",
+      "icon": "briefcase",
+      "summary": "Returns for LLCs and closely held companies.",
+      "text": "Returns tailored to sole proprietorships, LLCs and closely held companies, with the schedules each one needs.",
+      "lead": "An entity return turns on how the business is classified and which filings it already handles. The business intake sheet covers both before the work starts.",
+      "image": "/brands/taylormichaelecpa/business-tax-returns",
+      "imageAlt": "Hands holding printed tax forms beside a calculator and a laptop",
+      "covers": [
+        {
+          "title": "Corporation, S-corp, partnership or non-profit",
+          "text": "The return that follows from how the entity is classified: 1120 for a corporation, 1120-S for an S-corporation, 1065 for a partnership and 990 for a non-profit."
+        },
+        {
+          "title": "Single member LLC or sole proprietor",
+          "text": "An owner-operated business is filed on a 1040 with the schedules it needs."
+        },
+        {
+          "title": "Payroll, 1099 and sales tax",
+          "text": "Which of these filings the business already handles, so nothing is filed twice or missed."
+        },
+        {
+          "title": "Prior filings and formation documents",
+          "text": "A business that has filed a federal return before brings a copy of that prior filing, and a newly established one brings copies of its formation documents."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Which form do I fill in for a business?",
+          "a": "The New Business Client Information sheet. It covers how the business is classified and which filings it already handles."
+        },
+        {
+          "q": "Do you take on new businesses outside filing season?",
+          "a": "Yes. New clients are welcome year-round, not just in the spring."
+        },
+        {
+          "q": "Can you handle payroll and sales tax as well as the return?",
+          "a": "Yes. The business intake sheet has a space to request additional services alongside the return, such as bookkeeping, payroll and sales tax filings."
+        }
+      ]
+    },
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping",
+      "icon": "book",
+      "summary": "Records kept current through the year.",
+      "text": "General bookkeeping that keeps your records current through the year, so filing season is not a scramble.",
+      "lead": "General bookkeeping kept up through the year, so the records are ready when the return is due rather than rebuilt in the spring.",
+      "image": "/brands/taylormichaelecpa/bookkeeping",
+      "imageAlt": "A calculator and a pen resting on a page of figures"
+    },
+    {
+      "slug": "financial-statements",
+      "title": "Financial Statements",
+      "icon": "chart",
+      "summary": "Income statements and period-end reporting.",
+      "text": "Income statement preparation and period-end reporting you can hand to a bank, a partner or a buyer.",
+      "lead": "Income statement preparation and period-end reporting, put together so it can go straight to a bank, a partner or a buyer.",
+      "image": "/brands/taylormichaelecpa/financial-statements",
+      "imageAlt": "A printed report of bar and pie charts beside a binder on a desk"
+    },
+    {
+      "slug": "tax-consulting",
+      "title": "Tax Consulting",
+      "icon": "calculator",
+      "summary": "Planning around tax law as it shifts.",
+      "text": "Planning around tax law as it shifts, and making sure you claim the deductions you are entitled to.",
+      "lead": "Tax law moves, and planning around it is the difference between a return that is correct and one that is also right for you. We make sure you claim the deductions you are entitled to."
+    }
+  ],
+  "about": {
+    "title": "A certified public accounting firm in Greenville since 1980.",
+    "text": [
+      "Rutherford Taylor & Company opened in Greenville in 1980 and has served individuals and businesses here ever since. Most of our work comes from clients who have been with us for years, and from the people they send our way.",
+      "The approach has not changed much: personal attention, accurate work, and an explanation you can actually follow. You will know who is handling your return, and you can reach them directly."
+    ],
+    "values": [
+      {
+        "title": "Personal attention",
+        "text": "You will know who is handling your return, and you can reach them directly."
+      },
+      {
+        "title": "Work done here",
+        "text": "Everything is handled in the Greenville office by a CPA, not routed somewhere else."
+      },
+      {
+        "title": "An explanation you can follow",
+        "text": "The work comes back with an explanation you can actually follow."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Michael E. Taylor, CPA",
+      "role": "Managing Partner and Owner"
+    },
+    {
+      "name": "Robert K. Lake, CPA",
+      "role": "Partner and Owner"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are you taking new clients?",
+      "a": "Yes. New clients are welcome year-round, not just in the spring."
+    },
+    {
+      "q": "Who will handle my return?",
+      "a": "A certified public accountant in the Greenville office. Everything is handled here rather than routed somewhere else, and you can reach the person doing the work directly."
+    },
+    {
+      "q": "Can I email the new client forms?",
+      "a": "No. They ask for Social Security and bank account numbers, and ordinary email is not a safe way to send those. Type into the PDF, save a copy, and bring or fax the finished sheet to the office."
+    },
+    {
+      "q": "When can I reach the office?",
+      "a": "Someone answers the phone between 8am and 5pm, Monday through Friday. The office closes for lunch from noon to 1pm, and is closed Saturday and Sunday."
+    },
+    {
+      "q": "Can I fax paperwork instead?",
+      "a": "Yes. The office fax is (903) 455-6667."
+    }
+  ],
+  "resources": [
+    {
+      "title": "New Individual Client Information",
+      "text": "The intake sheet for a personal return, Form 1040. A fillable PDF: type into it, save a copy, and bring or fax the finished sheet.",
+      "href": "https://rutherfordtaylor.com/forms/New-Individual-Client-Information.pdf"
+    },
+    {
+      "title": "New Business Client Information",
+      "text": "The intake sheet for an entity return. It covers how the business is classified and which filings it already handles.",
+      "href": "https://rutherfordtaylor.com/forms/New-Business-Client-Information.pdf"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "New client forms",
+      "text": "Both intake sheets are fillable PDFs. Type into them on your computer, save a copy, and bring or fax the finished sheet to the office. Please do not email them: they ask for Social Security and bank account numbers, and ordinary email is not a safe way to send those."
+    },
+    {
+      "heading": "Additional services requested on the business sheet",
+      "items": [
+        "Bookkeeping",
+        "Payroll",
+        "Sales tax filings"
+      ]
+    },
+    {
+      "heading": "Write to a partner directly",
+      "items": [
+        "Michael E. Taylor, CPA — Mtaylor@rutherfordtaylor.com",
+        "Robert K. Lake, CPA — Rlake@rutherfordtaylor.com"
+      ]
+    },
+    {
+      "heading": "Fax",
+      "text": "(903) 455-6667"
+    },
+    {
+      "heading": "New clients",
+      "text": "New clients are welcome year-round, not just in the spring. Call the office and you will get a person, not a phone tree."
+    }
+  ]
+}

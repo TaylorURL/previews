@@ -1,0 +1,299 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Barrett Cooper Accounting, P.C.",
+  "shortName": "Barrett Cooper Accounting",
+  "tagline": "Accounting for the past; advising for the future",
+  "phone": "(210) 659-6677",
+  "email": "customerservice@barrettcoopercpa.com",
+  "address": "204 Mill St",
+  "town": "Schertz",
+  "state": "TX",
+  "zip": "78154",
+  "rating": 4.0,
+  "reviewCount": 8,
+  "hours": [
+    ["Mon – Fri", "9 AM – 5 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Call the office or send us a note, and we will set up a time to go through your accounts and your return."
+  },
+  "brand": {
+    "primary": "#122d50",
+    "primaryDeep": "#0c1f38",
+    "accent": "#009549",
+    "ink": "#141b26",
+    "muted": "#56606f",
+    "surface": "#f5f6f4",
+    "cream": "#e9ece7",
+    "line": "#dde1dc",
+    "heading": "'Source Serif 4', Georgia, serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Open+Sans:wght@400;500;600;700&display=swap",
+    "logo": "/brands/barrettcooperaccounting/logo.webp",
+    "logoWidth": 157,
+    "logoHeight": 48,
+    "logoRatio": 3.277,
+    "logoGround": "#ffffff"
+  },
+  "hero": {
+    "eyebrow": "Full-service accounting firm in Schertz",
+    "title": "We'll help you get growing.",
+    "lead": "Barrett Cooper Accounting, P.C. is dedicated to providing our clients with intelligent solutions to successfully resolve their accounting and business concerns, whether you are an individual or a business.",
+    "image": "/brands/barrettcooperaccounting/hero",
+    "imageAlt": "A desk with a calculator, financial charts and binders",
+    "points": [
+      "Accounting, tax and financial consulting",
+      "Serving the San Antonio and Austin area",
+      "More than 35 years of guidance"
+    ]
+  },
+  "overview": {
+    "title": "A wide range of services for individuals and businesses in a variety of industries.",
+    "text": "We strive to meet each client's specific needs in planning for the future and achieving their goals in an ever-changing financial and regulatory environment."
+  },
+  "process": {
+    "title": "How we work with you",
+    "text": "We work with proactive people who want to take control of their financial ambitions and turn them into success.",
+    "steps": [
+      {
+        "title": "Focus",
+        "text": "We focus on your goals and ambitions, and build a close client relationship that adds long-term value."
+      },
+      {
+        "title": "Strategize",
+        "text": "We strategize to help you become tax efficient."
+      },
+      {
+        "title": "Advise",
+        "text": "We provide proactive advice rather than waiting for the question."
+      },
+      {
+        "title": "Build",
+        "text": "We build your tax and accounting strategy."
+      },
+      {
+        "title": "Maintain",
+        "text": "We customize a plan to maintain progress on your strategy."
+      }
+    ]
+  },
+  "services": [
+    {
+      "slug": "business-advisory",
+      "title": "Business Advisory",
+      "icon": "handshake",
+      "summary": "Strategy and planning for growing businesses.",
+      "text": "We work with proactive people who want to take control of their financial ambitions and turn them into success, building the tax and accounting strategy that gets them there.",
+      "lead": "We work with proactive people who want to take control of their financial ambitions and turn them into success. Our goal is to develop a long-lasting and mutually beneficial partnership to help you achieve your goals.",
+      "image": "/brands/barrettcooperaccounting/advisory",
+      "imageAlt": "A desk with a calculator, glasses, charts and office supplies",
+      "covers": [
+        {
+          "title": "Advisory services",
+          "text": "Evaluating financial procedures, producing strategies for business planning and execution, providing objective analysis to assist in controlling costs and increasing efficiency, and implementing new technologies and procedures that take advantage of changes in the marketplace, accounting standards and tax law."
+        },
+        {
+          "title": "Cash flow and budgeting analysis",
+          "text": "Good cash management can improve a company's liquidity, reduce costs, and increase profitability. We help you maintain optimal cash flow levels by tracking sources and uses, forecasting, and budgeting accordingly. We analyze your spending and re-balance your budget and debts for optimal cash flow, then revisit the plan whenever your business structure changes."
+        },
+        {
+          "title": "Employee benefit, pension and profit-sharing plans",
+          "text": "We help you develop, implement and administer benefit, retirement and profit-sharing plans that reward your employees, reach your company's goals and maximize your tax advantages."
+        },
+        {
+          "title": "Entity selection and restructuring",
+          "text": "Your business entity has a large impact on your taxes and other liabilities. From your company's inception through its growth and development, we advise you on choosing an entity type and later restructuring if beneficial."
+        },
+        {
+          "title": "Software, forecasts and succession",
+          "text": "Accounting software selection, implementation and support; compilations, financial projections and forecasts; and business succession planning."
+        }
+      ]
+    },
+    {
+      "slug": "tax-services",
+      "title": "Tax Services",
+      "icon": "receipt",
+      "summary": "Tax planning, preparation and IRS representation.",
+      "text": "We guide our clients through a full range of tax planning and preparation decisions, and we stay knowledgeable and up to date on the tax laws so you don't have to.",
+      "lead": "Our expertise, experience, analysis and thorough research allows us to optimize your financial outcomes while staying compliant with tax laws.",
+      "image": "/brands/barrettcooperaccounting/tax",
+      "imageAlt": "A calculator and a mechanical pencil on a page of worked figures",
+      "covers": [
+        {
+          "title": "Tax planning and preparation",
+          "text": "Effective tax management helps minimize your tax liability, maximize your tax goals and keep you on track to meet your financial goals."
+        },
+        {
+          "title": "IRS representation",
+          "text": "Professional representation can be vital during an audit, and our experience with tax authorities enables us to guide you in your dealings with federal and state agencies. If you have been chosen for an audit, we represent you and answer the questions the IRS asks of you."
+        },
+        {
+          "title": "Corporate returns",
+          "text": "Corporate tax planning and return preparation, alongside the financial statements and records the return is built from."
+        },
+        {
+          "title": "Non-profit returns",
+          "text": "Non-profit tax returns and pre-audit preparation."
+        }
+      ]
+    },
+    {
+      "slug": "accounting-services",
+      "title": "Accounting Services",
+      "icon": "calculator",
+      "summary": "Record-keeping, reporting and system setup.",
+      "text": "From start-ups to established enterprises, we provide accurate record-keeping and reporting, system setup, cost-containment, tax planning, investments, and employee benefit and profit-sharing plans.",
+      "lead": "From start-ups to established enterprises, we provide accurate record-keeping and reporting, system setup, cost-containment, tax planning, investments, and employee benefit and profit-sharing plans.",
+      "image": "/brands/barrettcooperaccounting/accounting",
+      "imageAlt": "A desk with papers, glasses, a calculator and office supplies",
+      "covers": [
+        {
+          "title": "Financial statements",
+          "text": "Business prepared financial statements and personal prepared financial statements."
+        },
+        {
+          "title": "Accounting system setup and support",
+          "text": "Setting up the accounts and the reporting a business runs on, then supporting it as the business changes."
+        },
+        {
+          "title": "Budgeting and forecasting",
+          "text": "Cash flow budgeting and forecasting, so you can see what the next quarter looks like before it arrives."
+        },
+        {
+          "title": "Compilations",
+          "text": "Compilations are usually requested for internal purposes and are based upon information provided by a company's management. They do not offer assurance but may involve some adjustment to accounting records."
+        }
+      ]
+    },
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping",
+      "icon": "book",
+      "summary": "Monthly, quarterly or semi-annual books.",
+      "text": "Accurate record-keeping is essential to a successful business but can be complicated and time consuming. We help with the organization and day-to-day tasks of bookkeeping so that you can focus on your core business.",
+      "lead": "Accurate record-keeping is essential to a successful business but can be complicated and time consuming. We can help you with the organization and day-to-day tasks of bookkeeping so that you can focus on your core business.",
+      "image": "/brands/barrettcooperaccounting/bookkeeping",
+      "imageAlt": "A ring binder full of records on a wooden desk",
+      "covers": [
+        {
+          "title": "General bookkeeping",
+          "text": "General bookkeeping services on a monthly, quarterly or semi-annual basis."
+        },
+        {
+          "title": "QuickBooks training",
+          "text": "Personal training for new QuickBooks users and help improving the setup an existing user already has."
+        },
+        {
+          "title": "Review for accuracy",
+          "text": "Reviewing your transactions, accounts and reports for accuracy."
+        },
+        {
+          "title": "End of year reporting",
+          "text": "End of year reporting such as 1099s and 1096."
+        }
+      ]
+    },
+    {
+      "slug": "payroll-services",
+      "title": "Payroll Services",
+      "icon": "wallet",
+      "summary": "Periodic payroll, filings and year-end forms.",
+      "text": "We can prepare your periodic payroll, from processing and the timely payment of taxes through the federal and state returns that follow.",
+      "lead": "We can prepare your periodic payroll, so the people who work for you are paid on time and the filings behind it are made on time too.",
+      "covers": [
+        {
+          "title": "Payroll processing",
+          "text": "Preparing your periodic payroll and the timely payment of taxes."
+        },
+        {
+          "title": "Payroll tax returns",
+          "text": "Preparation of tax returns including 941s, 940, and all other federal and state unemployment forms."
+        },
+        {
+          "title": "Year-end forms",
+          "text": "End of year preparation and reporting of W-2s, W-3 and the rest."
+        },
+        {
+          "title": "Audits and plan deposits",
+          "text": "Assistance with worker's compensation audits, and with retirement plan deposits and annual census reports."
+        }
+      ]
+    }
+  ],
+  "affiliations": {
+    "title": "Credentials and memberships",
+    "items": ["Certified Public Accountants", "QuickBooks ProAdvisor", "Notary Public"]
+  },
+  "about": {
+    "title": "Quality, personalized financial guidance for more than 35 years.",
+    "text": [
+      "Barrett Cooper Accounting, P.C. has been providing quality, personalized financial guidance to individuals and businesses for more than 35 years. Our expertise ranges from basic tax management and accounting services to more in-depth services such as financial statements, financial planning, and business advisory.",
+      "As a full-service accounting firm serving clients throughout the San Antonio, I-H 35 Corridor and Austin area, we offer a wide variety of accounting, tax, financial consulting, and financial services. Our mission is accounting for the past; advising for the future to plan, protect, and help clients prosper."
+    ],
+    "image": "/brands/barrettcooperaccounting/about",
+    "imageAlt": "A hand writing on a document beside a keyboard"
+  },
+  "team": [
+    {
+      "name": "Shirley J. Bennett",
+      "role": "Co-Owner, Certified Public Accountant",
+      "bio": "QuickBooks Pro Advisor with a heavy concentration in taxation and more than 30 years of general accounting experience."
+    },
+    {
+      "name": "James Huston",
+      "role": "Co-Owner, Certified Public Accountant",
+      "bio": "Fifteen years of concentration in taxation."
+    },
+    {
+      "name": "Kim Landrum",
+      "role": "Office Administrator",
+      "bio": "Notary Public."
+    },
+    {
+      "name": "Carolyn Myers",
+      "role": "Accountant",
+      "bio": "Forty-plus years in accounting and auditing."
+    },
+    { "name": "Kyli Thomas", "role": "Staff Accountant", "bio": "Tax specialist." },
+    { "name": "Nevin Ricondo", "role": "Staff Accountant", "bio": "Tax specialist." },
+    { "name": "April Iruegas", "role": "Bookkeeping Manager" },
+    { "name": "Mary Jonas", "role": "Staff Accountant" }
+  ],
+  "serviceArea": ["Schertz", "San Antonio", "I-H 35 Corridor", "Austin"],
+  "facts": [
+    {
+      "heading": "Lunch",
+      "text": "The office is closed from noon to 1 PM."
+    },
+    {
+      "heading": "Tax season hours",
+      "text": "February 15 to April 15, extended hours are provided. The rest of the year the office is open Monday to Friday, 9 AM to 5 PM, closed from noon to 1 PM."
+    },
+    {
+      "heading": "Client portals",
+      "text": "MyBCA, the firm's client portal, is at Barrettcooper.taxdome.com, and a secure document portal is at securefirmportal.com."
+    },
+    {
+      "heading": "Fax",
+      "text": "(210) 659-6678"
+    },
+    {
+      "heading": "Mission",
+      "text": "Accounting for the past; advising for the future to plan, protect, and help clients prosper."
+    },
+    {
+      "heading": "Core values",
+      "items": ["Hardworking", "Responsible", "Knowledgeable", "Helpfulness", "Integrity"]
+    },
+    {
+      "heading": "Follow the firm",
+      "items": ["facebook.com/barrettcoopercpa", "linkedin.com/company/barrett-cooper-accounting-pc"]
+    }
+  ]
+}
