@@ -1,0 +1,370 @@
+{
+  "template": "restaurant",
+  "name": "Casa Marea Kitchen",
+  "shortName": "Casa Marea",
+  "cuisine": "Tex-Mex and Gulf seafood",
+  "phone": "(281) 555-0172",
+  "email": "hola@casamarea.example",
+  "address": "1820 Bayway Dr",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77520",
+  "rating": 4.7,
+  "reviewCount": 812,
+  "since": 2009,
+  "hours": [
+    [
+      "Tue – Thu",
+      "11 AM – 9 PM"
+    ],
+    [
+      "Fri – Sat",
+      "11 AM – 10 PM"
+    ],
+    [
+      "Sunday",
+      "10 AM – 8 PM"
+    ],
+    [
+      "Monday",
+      "Closed"
+    ]
+  ],
+  "orderUrl": "https://casamarea.example/order",
+  "reservationsUrl": "https://casamarea.example/reservations",
+  "deliveryLinks": [
+    {
+      "label": "DoorDash",
+      "href": "https://www.doordash.com/store/casa-marea-kitchen-baytown"
+    },
+    {
+      "label": "Uber Eats",
+      "href": "https://www.ubereats.com/store/casa-marea-kitchen-baytown"
+    }
+  ],
+  "serviceOptions": {
+    "dineIn": true,
+    "takeout": true,
+    "delivery": true,
+    "catering": true
+  },
+  "catering": {
+    "title": "Catering for groups of 20 to 200",
+    "text": "Taco bars, fajita trays and shrimp boils for offices, weddings and church suppers, picked up or delivered and set up within 20 miles of Baytown."
+  },
+  "band": {
+    "title": "Come hungry",
+    "text": "Open Tuesday through Sunday on Bayway Drive. Order ahead online, or call and we will have it ready when you pull in."
+  },
+  "brand": {
+    "primary": "#b4432a",
+    "primaryDeep": "#6e2416",
+    "accent": "#e8a33d",
+    "ink": "#2a1b14",
+    "muted": "#6b5548",
+    "bg": "#fbf6ee",
+    "surface": "#f4e9d8",
+    "line": "#e6d6bf",
+    "heading": "'Fraunces', Georgia, serif",
+    "body": "'Figtree', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&display=swap",
+    "logo": "/brands/sample-restaurant/logo.webp",
+    "logoMono": "/brands/sample-restaurant/logo-mono.webp",
+    "logoWidth": 74,
+    "logoHeight": 74,
+    "logoRatio": 1.0,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.657,
+      0.551,
+      0.446,
+      0.348,
+      0.323,
+      0.389,
+      0.487,
+      0.604,
+      0.735,
+      0.87,
+      1.0
+    ],
+    "logoName": true
+  },
+  "hero": {
+    "eyebrow": "Tex-Mex and Gulf seafood · Bayway Drive, Baytown",
+    "title": "Gulf seafood and Tex-Mex, made from scratch",
+    "lead": "Shrimp, fish tacos and fajitas from a family kitchen on Bayway Drive, with tortillas pressed every morning.",
+    "image": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c",
+    "imageAlt": "Warm queso poured over beef tacos on a dark plate"
+  },
+  "menu": [
+    {
+      "slug": "starters",
+      "title": "Starters",
+      "items": [
+        {
+          "name": "Queso Blanco",
+          "description": "White queso with roasted poblano and pico de gallo, with warm chips.",
+          "price": "$9",
+          "tags": [
+            "Vegetarian"
+          ]
+        },
+        {
+          "name": "Fajita Nachos",
+          "description": "Chips layered with beef or chicken fajita, refried beans, queso, jalapeños and pico.",
+          "price": "$14",
+          "featured": true,
+          "image": "https://images.unsplash.com/photo-1582169296194-e4d644c48063",
+          "imageAlt": "A skillet of nachos topped with melted cheese, beans, pico de gallo and jalapeños"
+        },
+        {
+          "name": "Gulf Shrimp Ceviche",
+          "description": "Shrimp cured in lime with tomato, cucumber, red onion, cilantro and avocado.",
+          "price": "$13",
+          "tags": [
+            "Gluten-free"
+          ]
+        },
+        {
+          "name": "Guacamole",
+          "description": "Made to order with lime, onion, cilantro and serrano.",
+          "price": "$10",
+          "tags": [
+            "Vegan",
+            "Gluten-free"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "tacos",
+      "title": "Tacos",
+      "note": "Three to an order on corn or flour tortillas, with Mexican rice and charro beans.",
+      "items": [
+        {
+          "name": "Gulf Fish Tacos",
+          "description": "Blackened Gulf fish, cabbage slaw, avocado and chipotle crema.",
+          "price": "$16",
+          "featured": true,
+          "image": "https://images.unsplash.com/photo-1624300629298-e9de39c13be5",
+          "imageAlt": "Fish tacos with avocado, cilantro and a squeeze of lime"
+        },
+        {
+          "name": "Barbacoa Tacos",
+          "description": "Slow-braised beef with onion, cilantro and salsa verde.",
+          "price": "$15",
+          "featured": true,
+          "image": "https://images.unsplash.com/photo-1599974579688-8dbdd335c77f",
+          "imageAlt": "A row of beef tacos topped with chopped onion and cilantro"
+        },
+        {
+          "name": "Queso Beef Tacos",
+          "description": "Seasoned ground beef, cilantro and cheddar, finished with warm queso.",
+          "price": "$14"
+        },
+        {
+          "name": "Roasted Vegetable Tacos",
+          "description": "Sweet potato, chickpeas, avocado and pickled red onion.",
+          "price": "$13",
+          "tags": [
+            "Vegan"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "from-the-gulf",
+      "title": "From the Gulf",
+      "note": "Served with Mexican rice and a side salad unless noted.",
+      "items": [
+        {
+          "name": "Garlic Butter Shrimp",
+          "description": "A dozen Gulf shrimp sautéed in garlic butter and fresh herbs.",
+          "price": "$22",
+          "tags": [
+            "Gluten-free"
+          ],
+          "featured": true,
+          "image": "https://images.unsplash.com/photo-1625943553852-781c6dd46faa",
+          "imageAlt": "Shrimp sautéed in garlic butter and herbs in a cast iron skillet"
+        },
+        {
+          "name": "Shrimp Étouffée",
+          "description": "Gulf shrimp in a dark roux with onion, celery and bell pepper, over white rice.",
+          "price": "$19",
+          "featured": true,
+          "image": "https://images.unsplash.com/photo-1559847844-5315695dadae",
+          "imageAlt": "A bowl of shrimp stew with white rice and fresh herbs"
+        },
+        {
+          "name": "Fried Catfish Plate",
+          "description": "Cornmeal-crusted catfish with fries, hush puppies and tartar sauce.",
+          "price": "$17"
+        },
+        {
+          "name": "Grilled Redfish",
+          "description": "Redfish on the half shell, grilled with lemon butter, with charro beans.",
+          "price": "Market price",
+          "tags": [
+            "Gluten-free"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "plates",
+      "title": "Plates",
+      "items": [
+        {
+          "name": "Beef Fajitas",
+          "description": "Grilled skirt steak with peppers and onions, flour tortillas, guacamole and pico.",
+          "price": "For one $19 / For two $34"
+        },
+        {
+          "name": "Cheese Enchiladas",
+          "description": "Three cheddar enchiladas under chili con carne, with rice and beans.",
+          "price": "$13"
+        },
+        {
+          "name": "Chicken Flautas",
+          "description": "Four crisp flautas with lettuce, crema and guacamole.",
+          "price": "$13"
+        }
+      ]
+    },
+    {
+      "slug": "sides",
+      "title": "Sides",
+      "note": "Each $4.",
+      "items": [
+        "Mexican rice",
+        "Charro beans",
+        "Refried beans",
+        "Hush puppies",
+        "Fries",
+        "Side salad"
+      ]
+    },
+    {
+      "slug": "drinks",
+      "title": "Drinks",
+      "items": [
+        {
+          "name": "House Margarita",
+          "description": "Frozen or on the rocks, with fresh lime.",
+          "price": "$9"
+        },
+        {
+          "name": "Strawberry Margarita",
+          "description": "Frozen, with a salted rim.",
+          "price": "$10",
+          "featured": true,
+          "image": "https://images.unsplash.com/photo-1556855810-ac404aa91e85",
+          "imageAlt": "A strawberry margarita with a salted rim and a lime wheel"
+        },
+        {
+          "name": "Mexican Beer",
+          "description": "Ask for today's list.",
+          "price": "$5"
+        },
+        {
+          "name": "Agua Fresca",
+          "description": "Horchata, jamaica or watermelon.",
+          "price": "$4"
+        }
+      ]
+    }
+  ],
+  "menuNote": "Consuming raw or undercooked meats, poultry or seafood may increase your risk of foodborne illness. Market prices change with the catch; ask your server.",
+  "about": {
+    "eyebrow": "Our story",
+    "title": "A family kitchen on Bayway Drive",
+    "text": [
+      "Ray Tran and Elena Garza met working the line at a seafood house in Kemah. In 2009 they opened Casa Marea in a former bait shop on Bayway Drive, with eight tables and a menu that fit on one chalkboard.",
+      "The menu is bigger now, but the cooking has not changed: Gulf shrimp and fish bought off the docks each week, tortillas pressed by hand every morning, and salsas made in small batches through the day."
+    ],
+    "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9",
+    "imageAlt": "The dining room, with leather chairs, wooden tables and pendant lights"
+  },
+  "team": [
+    {
+      "name": "Ray Tran",
+      "role": "Chef and co-owner",
+      "bio": "Ray runs the kitchen and buys the seafood. The étouffée is his grandmother's recipe from Port Arthur.",
+      "image": "https://images.unsplash.com/photo-1583394293214-28ded15ee548",
+      "imageAlt": "Ray Tran in a white chef's shirt and apron, arms crossed, in the kitchen"
+    },
+    {
+      "name": "Elena Garza",
+      "role": "Co-owner",
+      "bio": "Elena runs the dining room and the catering side, and makes every batch of salsa verde."
+    }
+  ],
+  "gallery": [
+    {
+      "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b",
+      "imageAlt": "The bar, with chalkboard menus and pendant lights above it"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5",
+      "imageAlt": "Wooden tables and pendant lamps in a bright dining room"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1528605248644-14dd04022da1",
+      "imageAlt": "Friends sharing plates and drinks at a long table"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47",
+      "imageAlt": "Tacos with avocado, roasted vegetables and cilantro, with lime squeezed over them"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b",
+      "imageAlt": "A plate of three tacos on a pale blue wooden table"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Danielle R.",
+      "text": "The garlic butter shrimp is the best plate in Baytown, and the margaritas are made with real lime. We drive over from La Porte every couple of weeks."
+    },
+    {
+      "author": "Marcus T.",
+      "text": "They catered our office party for 60 people. The fajita trays showed up hot and on time, and Elena set everything up herself."
+    },
+    {
+      "author": "Priya S.",
+      "text": "Small, busy and friendly. The fish tacos and the étouffée are worth the wait on a Friday night."
+    }
+  ],
+  "social": {
+    "instagram": "https://www.instagram.com/casamarea.baytown",
+    "facebook": "https://www.facebook.com/casamarea.baytown",
+    "tiktok": "https://www.tiktok.com/@casamarea.baytown",
+    "yelp": "https://www.yelp.com/biz/casa-marea-kitchen-baytown"
+  },
+  "serviceArea": [
+    "Baytown",
+    "Mont Belvieu",
+    "La Porte",
+    "Highlands",
+    "Channelview",
+    "Crosby"
+  ],
+  "facts": [
+    {
+      "heading": "Happy Hour",
+      "text": "Tuesday through Friday, 3 to 6 PM: $6 house margaritas and half-price queso."
+    },
+    {
+      "heading": "Payment",
+      "items": [
+        "Cash and all major cards",
+        "Apple Pay and Google Pay"
+      ]
+    },
+    {
+      "heading": "Parking",
+      "text": "A free lot behind the building, with more spaces along Bayway Drive."
+    }
+  ]
+}

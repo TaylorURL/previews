@@ -21,7 +21,10 @@ Commands:
                                    business, so it stops being offered
     register SLUG PROSPECT_ID LETTER_JSON
                                    file the preview and its letter; the
-                                   industry and name come from the prospect
+                                   industry and name come from the prospect.
+                                   Refused until the review has passed the
+                                   site as its brand file stands
+                                   (python3 -m scripts.autobuild.review SLUG)
     live SLUG                      exit 0 when SLUG.taylorurl.com serves the
                                    business's own page
     shot SLUG                      capture the live preview at desktop and
@@ -34,6 +37,7 @@ Commands:
                                    less any a catch-up held
 """
 
+import hashlib
 import json
 import os
 import re
@@ -62,6 +66,25 @@ INDUSTRY = {
     "insurance agency": "professional",
     "accountant": "professional",
     "title company": "professional",
+    "law firm": "professional",
+    "dentist": "professional",
+    "chiropractor": "professional",
+    "pool service": "hvac",
+    "landscaping": "hvac",
+    "painting contractor": "hvac",
+    "concrete contractor": "hvac",
+    "pest control": "hvac",
+    "fencing contractor": "hvac",
+    "tree service": "hvac",
+    "welding": "hvac",
+    "machine shop": "hvac",
+    "industrial contractor": "hvac",
+    "marine services": "hvac",
+    "towing service": "hvac",
+    "storage": "hvac",
+    "restaurant": "restaurant",
+    "youth sports": "recreation",
+    "go kart track": "recreation",
 }
 
 
@@ -132,9 +155,27 @@ def skip(prospect_id, reason):
     print(f"skipped {found[0]['name']}: {reason}")
 
 
+def reviewed(slug):
+    """Whether the review passed this site as its brand file now stands: the
+    stamp review.py writes names the brand file it looked at."""
+    root = os.path.dirname(HERE)
+    try:
+        with open(os.path.join(root, ".autobuild", f"{slug}.review.json")) as handle:
+            mark = json.load(handle)
+        with open(os.path.join(root, "src", "brands", f"{slug}.json"), "rb") as handle:
+            now = hashlib.sha256(handle.read()).hexdigest()
+    except (OSError, ValueError):
+        return False
+    return bool(mark.get("ok")) and mark.get("brand") == now
+
+
 def register(slug, prospect_id, letter_path):
     if not re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", slug):
         sys.exit(f"{slug} is not a valid subdomain label")
+    # No letter may point at a preview the review has not passed.
+    if not reviewed(slug):
+        sys.exit(f"the review has not passed {slug} as it stands: run npm run build, then "
+                 f"python3 -m scripts.autobuild.review {slug}")
     with open(letter_path) as handle:
         letter = json.load(handle)
     if not letter.get("subject") or len(letter.get("paragraphs") or []) < 2:

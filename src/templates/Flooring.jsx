@@ -361,15 +361,9 @@ function Footer({ b }) {
     <footer className="bg-primary-deep text-white/80">
       <div className={`${wrap} grid gap-12 pb-12 pt-16 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1.25fr] lg:gap-12`}>
         <div className="grid content-start gap-5">
-          {b.brand.logo ? (
-            <a href="/" className="inline-flex w-fit bg-cream px-4 py-3" aria-label={`${b.name} home`}>
-              <BrandMark b={b} className="max-h-12" />
-            </a>
-          ) : (
-            <a href="/" className="flex min-h-11 items-center no-underline" aria-label={`${b.name} home`}>
-              <BrandMark b={b} light />
-            </a>
-          )}
+          <a href="/" className="flex min-h-11 w-fit items-center no-underline" aria-label={`${b.name} home`}>
+            <BrandMark b={b} light />
+          </a>
           {b.tagline && <p className="m-0 max-w-[22rem] text-[16px] leading-[1.65]">{b.tagline}</p>}
         </div>
         <div>

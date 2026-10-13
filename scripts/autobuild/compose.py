@@ -21,7 +21,57 @@ from . import collect, images
 # Templates this file can fill. Any other is parked for a person or a session.
 AUTOMATED = {"professional", "roofing", "hvac"}
 
-KIND = {"insurance agency": "insurance", "accountant": "accounting", "title company": "title"}
+# The trades a template is drawn for beyond its own, each under a kind that
+# names its vocabulary, its label and its icons. The template itself comes from
+# the prospect's industry, which preview_candidates() works out from the trade.
+KIND = {
+    "insurance agency": "insurance",
+    "accountant": "accounting",
+    "title company": "title",
+    "law firm": "legal",
+    "dentist": "dental",
+    "chiropractor": "chiropractic",
+    "pool service": "pool",
+    "landscaping": "landscaping",
+    "painting contractor": "painting",
+    "concrete contractor": "concrete",
+    "pest control": "pest",
+    "fencing contractor": "fencing",
+    "tree service": "tree",
+    "welding": "welding",
+    "machine shop": "machining",
+    "industrial contractor": "industrial",
+    "marine services": "marine",
+    "towing service": "towing",
+    "storage": "storage",
+}
+
+# What the hvac template asks a visitor to do, where the trade does not book a
+# visit: work priced before it starts takes a request for a quote, and storage
+# takes a reservation. A kind not named here books service.
+ASK = {
+    "landscaping": "quote",
+    "painting": "quote",
+    "concrete": "quote",
+    "fencing": "quote",
+    "tree": "quote",
+    "welding": "quote",
+    "machining": "quote",
+    "industrial": "quote",
+    "marine": "quote",
+    "storage": "reserve",
+}
+
+# A business filed under storage that rents no units of its own - a mover with
+# a warehouse - is asked for a quote rather than a reservation.
+RENTS_UNITS = re.compile(r"\bunits?\b|climate|drive.?up|self.?storage|\brv\b|boat|vehicle|parking", re.I)
+
+
+def ask_of(kind, services):
+    ask = ASK.get(kind)
+    if ask == "reserve" and not any(RENTS_UNITS.search(s["title"]) for s in services):
+        return "quote"
+    return ask
 
 TRADE_LABEL = {
     "roofing": "Roofing",
@@ -29,6 +79,22 @@ TRADE_LABEL = {
     "insurance": "Insurance",
     "accounting": "Accounting and tax",
     "title": "Title and closing",
+    "legal": "Legal services",
+    "dental": "Dentistry",
+    "chiropractic": "Chiropractic care",
+    "pool": "Pool service",
+    "landscaping": "Lawn and landscape",
+    "painting": "Painting",
+    "concrete": "Concrete work",
+    "pest": "Pest control",
+    "fencing": "Fencing",
+    "tree": "Tree service",
+    "welding": "Welding and fabrication",
+    "machining": "Machining",
+    "industrial": "Industrial services",
+    "marine": "Marine services",
+    "towing": "Towing",
+    "storage": "Storage",
 }
 
 VOCAB = {
@@ -38,10 +104,60 @@ VOCAB = {
     "accounting": r"tax|bookkeeping|payroll|audit|advisory|planning|accounting|irs|consult|quickbooks|cfo|estate|financial statement|business formation|compilation|review",
     # A bare "title" names every company in the trade, so only the services do.
     "title": r"title (?:insurance|search|polic|commitment|exam|transfer)|closing|escrow|refinanc|residential|commercial|1031|owner'?s polic|lender'?s polic|notary|curative",
+    "legal": r"\blaw\b|legal|injury|accident|divorce|family|custody|child support|criminal|defense|\bdwi\b|\bdui\b|estate|probate|\bwills?\b|trusts?|immigration|bankruptcy|employment|litigation|wrongful|workers|contracts?|guardianship|adoption|mediation|appeals?|traffic|expunction|landlord|tenant|real estate|business",
+    "dental": r"dent|teeth|tooth|cleaning|whitening|implant|crown|bridge|veneer|invisalign|aligner|braces|orthodont|root canal|extraction|filling|cosmetic|pediatric|emergency|periodont|\bgum|oral|sedation|exam|sealant|bonding|smile",
+    "chiropractic": r"chiropract|adjust|spinal|spine|back pain|neck pain|sciatica|massage|decompression|rehab|physical therapy|therapy|injur|accident|headache|migraine|posture|sports|wellness|acupuncture|dry needling|alignment|whiplash|\bpain\b",
+    "pool": r"pool|\bspa\b|hot tub|cleaning|maintenance|repair|resurfac|plaster|tile|pump|filter|heater|leak|equipment|opening|closing|chemical|acid wash|remodel|renovat|construction|automation|salt",
+    "landscaping": r"landscap|lawn|mow|irrigation|sprinkler|\bsod\b|tree|shrub|hardscap|patio|retaining|drainage|mulch|garden|flower|outdoor lighting|trimming|pruning|maintenance|clean.?up|turf|xeriscap|pavers?|leaf|landscape design|installation",
+    "painting": r"paint|interior|exterior|cabinet|stain|drywall|texture|wallpaper|pressure wash|power wash|epoxy|coating|commercial|residential|popcorn|trim",
+    "concrete": r"concrete|driveway|patio|sidewalk|foundation|\bslab|stamped|decorative|flatwork|retaining|curb|parking|leveling|lifting|resurfac|epoxy|pavers?|demolition|excavat|\bsteps\b|commercial|residential",
+    "pest": r"pest|termite|rodent|\bmice\b|\brats?\b|roach|\bants?\b|bed bug|mosquito|spider|flea|\bticks?\b|wildlife|\bbees?\b|wasp|scorpion|inspection|treatment|exterminat|fumigat|prevention|weed|commercial|residential",
+    "fencing": r"fenc|\bgates?\b|cedar|vinyl|chain.?link|wrought iron|iron|aluminum|privacy|pipe|ranch|farm|staining|automatic|operator|access control|commercial|residential|repair",
+    "tree": r"tree|trimming|pruning|removal|stump|grinding|land clearing|lot clearing|storm|emergency|arborist|cabling|bracing|brush|limb|crane|planting",
+    "welding": r"weld|fabricat|steel|metal|aluminum|stainless|pipe|structural|mobile|portable|custom|\bgates?\b|railing|trailer|\btig\b|\bmig\b|plasma|cutting|ornamental|tanks?|repair",
+    "machining": r"machin|\bcnc\b|turning|milling|lathe|grinding|fabricat|weld|manufactur|prototyp|production|precision|\bedm\b|boring|threading|assembly|reverse engineering|inspection|valves?|pumps?|shafts?|gears?|repair",
+    "industrial": r"industrial|construction|maintenance|mechanical|electrical|instrument|piping|\bpipe|fabricat|weld|scaffold|insulation|coating|blasting|civil|excavat|demolition|turnaround|shutdown|millwright|rigging|crane|structural|steel|tanks?|valves?|environmental|hydro|vacuum|cleaning",
+    "marine": r"marine|boat|yacht|vessel|outboard|inboard|engine|motor|detailing|storage|haul|launch|bottom paint|fiberglass|gelcoat|electrical|electronics|rigging|canvas|upholstery|\bdock|\blift|survey|winteriz|propeller|trailer|repair|maintenance",
+    "towing": r"\btow|wrecker|roadside|jump start|lockout|tire change|fuel delivery|winch|recovery|flatbed|heavy duty|light duty|medium duty|accident|transport|motorcycle|impound|private property|junk car|car removal|equipment",
+    "storage": r"storage|\bunits?\b|climate|drive.?up|\brv\b|boat|vehicle|parking|indoor|outdoor|covered|wine|records|moving|boxes|packing|truck rental|\blocks?\b",
 }
 
 ICONS = {
     "roofing": {},
+    # The hvac template's keys, for the trades drawn on it. The last pattern of
+    # each list is the one every other service takes.
+    "pool": [("droplets", r"leak|water|chemi|acid"), ("filter", r"filter|pump"), ("thermometer", r"heat"),
+             ("settings", r"equipment|automation"), ("waves", r".")],
+    "landscaping": [("droplets", r"irrigat|sprinkler|drain"), ("lightbulb", r"light"),
+                    ("home", r"patio|hardscap|paver|retaining"), ("leaf", r".")],
+    "painting": [("building", r"commercial"), ("droplets", r"pressure|power wash"), ("shield", r"coating|epoxy|stain|seal"),
+                 ("home", r".")],
+    "concrete": [("building", r"commercial|parking|foundation|slab"), ("shield", r"seal|epoxy|coating|resurfac"),
+                 ("home", r"driveway|patio|sidewalk|residential|steps"), ("settings", r".")],
+    "pest": [("building", r"commercial"), ("leaf", r"lawn|weed|mosquito"), ("home", r"termite|inspection|residential"),
+             ("shield", r".")],
+    "fencing": [("building", r"commercial|industrial"), ("settings", r"gate|operator|automatic|access"),
+                ("home", r"wood|cedar|privacy|vinyl|residential"), ("shield", r".")],
+    "tree": [("zap", r"storm|emergency"), ("leaf", r".")],
+    "welding": [("zap", r"plasma|cutting"), ("building", r"structural|steel"), ("car", r"trailer"),
+                ("flame", r"weld|tig|mig"), ("settings", r".")],
+    "machining": [("gauge", r"precision|inspection"), ("flame", r"weld|fabricat"), ("settings", r"cnc|machin|mill|turn|lathe"),
+                  ("wrench", r".")],
+    "industrial": [("flame", r"weld|fabricat"), ("zap", r"electric|instrument"), ("shield", r"safety|environment|coating|insulation"),
+                   ("building", r"construction|civil|structural|steel"), ("chart", r"model|optimi|simulat|stud(y|ies)|analys"),
+                   ("compass", r"design|drafting|\bfeed\b|engineer"), ("clipboard", r"project manag|planning|documentation|permit"),
+                   ("settings", r".")],
+    "marine": [("settings", r"engine|motor|outboard|inboard|propeller"), ("zap", r"electr"), ("car", r"trailer"), ("waves", r".")],
+    "towing": [("battery", r"jump"), ("timer", r"roadside|emergency|24"), ("car", r".")],
+    "storage": [("thermometer", r"climate"), ("car", r"\brv\b|boat|vehicle|parking"), ("shield", r"secur|lock"),
+                ("building", r".")],
+    # The professional template's keys, for the practices drawn on it.
+    "legal": [("users", r"family|divorce|custody|adoption|child"), ("house", r"real estate|landlord|tenant|estate|probate|wills?|trust"),
+              ("briefcase", r"business|employment|contract"), ("car", r"\bauto|accident|injury|wrongful"), ("scale", r".")],
+    "dental": [("users", r"family|pediatric|children|kids"), ("shield", r"emergency"), ("stethoscope", r"exam|periodont|gum|oral|sedation"),
+               ("smile", r".")],
+    "chiropractic": [("car", r"\bauto|accident|whiplash"), ("heart", r"wellness|massage"), ("stethoscope", r"therapy|rehab|acupuncture|needling"),
+                     ("bone", r".")],
     "hvac": [("snowflake", r"cool|air cond|\bac\b|a/c"), ("flame", r"heat|furnace"), ("zap", r"electric|panel|wiring|generator"),
              ("wind", r"duct|air quality|ventilat|indoor"), ("wrench", r".")],
     "professional": [("car", r"auto|vehicle|car"), ("house", r"home|homeowner|residential|renters|landlord"),
@@ -51,7 +167,7 @@ ICONS = {
 
 SINCE = re.compile(r"\b(?:since|established|founded|est\.?|serving [^.]{0,40} since)\s+((?:19|20)\d\d)\b", re.I)
 LICENSE = re.compile(r"\b((?:TDLR|TACLA|TECL|TDI|NPN|License|Lic\.)\s*(?:No\.?|#|Number)\s*:?\s*[A-Z]{0,6}-?\d[\w-]{3,})", re.I)
-NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how to|why|what|when|your|schedule|consult|consultation|request|checklist|estimator|calculator|types of|our |blog|news|faq|cost|price|pricing|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|office|branch|powered|serving|products|vice president|vp|agents?|industry|page|companies|finance a)\b", re.I)
+NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|your|schedule|consult|consultation|request|checklist|estimator|calculator|types of|our |blog|news|faq|cost|price|pricing|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|office|branch|powered|serving|products|vice president|vp|agents?|industry|page|companies|finance a)\b", re.I)
 ACRONYMS = {"IRS", "CFO", "CPA", "CPAS", "HVAC", "AC", "A/C", "TPO", "LLC", "QB", "EPDM", "UV", "HOA", "1031", "S-CORP"}
 # A business's own name, or anything carrying a corporate suffix, is never
 # one of its services.
@@ -231,8 +347,14 @@ def page_text(pages):
     return "\n".join(t for p in pages for _, t, _ in p.blocks)
 
 
-def services_of(pages, vocab, own=None, town=None):
-    """Their own service names, with their own description where the site gives one."""
+def services_of(pages, vocab, own=None, town=None, described_first=False):
+    """Their own service names, with their own description where the site gives one.
+
+    A menu lists a site's services before any page describes them, so the
+    first eight found are often names alone. A template that draws a service
+    only with its description asks for the described ones first, so a site
+    that describes its work further down is not parked for describing none.
+    """
     pattern = re.compile(vocab, re.I)
     # "Houston Bookkeeping" and "Tax Preparation (Houston)" are pages written
     # for a search engine; the service under them is listed on its own.
@@ -278,6 +400,8 @@ def services_of(pages, vocab, own=None, town=None):
         for href, text in page.links:
             if "service" in href.lower() or pattern.search(href):
                 add(text)
+    if described_first:
+        order.sort(key=lambda k: found[k]["text"] is None)
     return [found[k] for k in order][:8]
 
 
@@ -404,7 +528,9 @@ def colors_of(logo_inks, css, template):
 # Contractors") says nothing a headline can use.
 GENERIC_SERVICE = re.compile(
     r"^(?:(?:roofing|roof|hvac|heating and air|heating|air conditioning|electrical|insurance|accounting|tax|title|"
-    r"bookkeeping|cpa)\s+)?(?:services?|contractors?|company|solutions|specialists?|experts?)$", re.I)
+    r"bookkeeping|cpa|legal|law|dental|chiropractic|pool|landscaping|landscape|lawn|painting|concrete|pest control|pest|"
+    r"fencing|fence|tree|welding|machining|machine shop|industrial|marine|towing|storage)\s+)?"
+    r"(?:services?|contractors?|company|solutions|specialists?|experts?|care|work)$", re.I)
 
 
 def hero_line(services, town, label):

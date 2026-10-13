@@ -11,7 +11,20 @@
   "zip": "77532",
   "since": 2001,
   "license": "Fully insured and certified by leading manufacturers",
-  "hours": [["Mon – Fri", "7 AM – 7 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "7 AM – 7 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "brand": {
     "primary": "#1eae4b",
     "primaryDeep": "#126b2e",
@@ -22,7 +35,24 @@
     "body": "'Roboto', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap",
     "logo": "/brands/elkroofing/logo.webp",
-    "logoWidth": 210
+    "logoMono": "/brands/elkroofing/logo-mono.webp",
+    "logoWidth": 182,
+    "logoHeight": 48,
+    "logoRatio": 3.792,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.348,
+      0.309,
+      0.341,
+      0.396,
+      0.473,
+      0.563,
+      0.647,
+      0.734,
+      0.824,
+      0.914,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Residential and commercial roofing company",
@@ -223,7 +253,13 @@
   "materials": {
     "title": "Certified by leading manufacturers",
     "text": "ELK Roofing is fully insured and backed by certifications from leading manufacturers in the industry.",
-    "brands": ["GAF Certified", "GAF Master Elite", "Atlas Pro Gold Select", "Owens Corning Preferred Contractor", "James Hardie"]
+    "brands": [
+      "GAF Certified",
+      "GAF Master Elite",
+      "Atlas Pro Gold Select",
+      "Owens Corning Preferred Contractor",
+      "James Hardie"
+    ]
   },
   "about": {
     "title": "Built on legacy. Driven by service. Committed to quality.",

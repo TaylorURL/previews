@@ -1,4 +1,4 @@
-import { Facts, StudioCredit } from './shared.jsx';
+import { BrandLogo, Facts, hexOr, mixHex, StudioCredit } from './shared.jsx';
 /**
  * FITNESS - a gym or group-training studio, drawn dark: a near-black ground,
  * the brand color as the one bright accent, oversized condensed capitals.
@@ -139,16 +139,11 @@ function navFor(b, tiers) {
   ].filter(Boolean);
 }
 
-function Mark({ b, className = '' }) {
+/** The logo on the page's dark ground, or on the footer's darker one. */
+function Mark({ b, className = '', footer = false }) {
+  const bg = hexOr(b.brand.bg, DARK.bg);
   if (b.brand.logo) {
-    return (
-      <img
-        className={`block h-auto max-h-14 ${className}`}
-        src={b.brand.logo}
-        alt={b.name}
-        style={{ width: `min(${b.brand.logoWidth || 150}px, 100%)` }}
-      />
-    );
+    return <BrandLogo b={b} ground={footer ? mixHex(bg, '#000000', 0.3) : bg} className={className} textClass="text-[1.9rem] uppercase leading-none" />;
   }
   return <span className={`block font-heading text-[1.9rem] uppercase leading-none ${className}`}>{b.shortName}</span>;
 }
@@ -317,7 +312,7 @@ function Footer({ b, nav, ctx }) {
             className="flex min-h-11 max-w-[60vw] items-center text-ink no-underline sm:max-w-none"
             aria-label={`${b.name} home`}
           >
-            <Mark b={b} />
+            <Mark b={b} footer />
           </a>
           <a href={mapsHref(b)} className="text-base leading-relaxed text-muted no-underline hover:text-ink">
             {b.address}

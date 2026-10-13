@@ -12,7 +12,12 @@
   "rating": 5.0,
   "reviewCount": 79,
   "license": "Licensed residential contractor",
-  "hours": [["Mon – Sun", "Open 24 hours"]],
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
   "brand": {
     "primary": "#06356b",
     "primaryDeep": "#032955",
@@ -23,7 +28,24 @@
     "body": "'Roboto', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap",
     "logo": "/brands/htownroofconstructions/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/htownroofconstructions/logo-mono.webp",
+    "logoWidth": 121,
+    "logoHeight": 58,
+    "logoRatio": 2.086,
+    "logoGround": "#14181f",
+    "logoReads": [
+      0.999,
+      0.991,
+      0.892,
+      0.8,
+      0.707,
+      0.617,
+      0.537,
+      0.459,
+      0.382,
+      0.316,
+      0.299
+    ]
   },
   "hero": {
     "eyebrow": "Houston roofing and construction",
@@ -174,7 +196,11 @@
   "materials": {
     "title": "Shingles we install",
     "text": "We are experienced in the top shingle brands.",
-    "brands": ["GAF", "Owens Corning", "CertainTeed"]
+    "brands": [
+      "GAF",
+      "Owens Corning",
+      "CertainTeed"
+    ]
   },
   "about": {
     "title": "A family-owned Houston contractor",
@@ -200,7 +226,10 @@
       }
     ]
   },
-  "serviceArea": ["Houston", "Katy"],
+  "serviceArea": [
+    "Houston",
+    "Katy"
+  ],
   "areasText": "Our office is on Old Katy Road in Houston, and we work Houston, Katy and all the surrounding communities.",
   "facts": [
     {

@@ -14,7 +14,16 @@
   "since": 2010,
   "rating": 4.8,
   "reviewCount": 260,
-  "hours": [["Mon – Sat", "9 AM – 9 PM"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Sat",
+      "9 AM – 9 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "cta": {
     "label": "Get a Quote",
     "text": "Stop by, give us a call, or complete the quote request form and we will begin the quoting process."
@@ -32,7 +41,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/everyonesinsuranceagency/logo.webp",
-    "logoWidth": 190
+    "logoMono": "/brands/everyonesinsuranceagency/logo-mono.webp",
+    "logoWidth": 182,
+    "logoHeight": 58,
+    "logoRatio": 3.138,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.124,
+      0.169,
+      0.238,
+      0.32,
+      0.412,
+      0.509,
+      0.603,
+      0.699,
+      0.8,
+      0.902,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "League City since 2010",
@@ -40,13 +66,20 @@
     "lead": "We started Everyone's Insurance in 2010 because we felt that there was a better way. We have longer hours, we represent multiple companies that all compete for your business, and our staff is handpicked and empowered to treat you as they would want to be treated.",
     "image": "/brands/everyonesinsuranceagency/hero",
     "imageAlt": "A row of closed doors along a patterned wall",
-    "points": ["Multiple companies competing", "Sales open until 9 PM, Monday to Saturday", "Serving all of Texas"]
+    "points": [
+      "Multiple companies competing",
+      "Sales open until 9 PM, Monday to Saturday",
+      "Serving all of Texas"
+    ]
   },
   "overview": {
     "title": "The types of insurance you can request a quote on.",
     "text": "Pick the coverage you need, or call the office and talk it through with an agent."
   },
-  "audiences": { "individuals": "Individuals & Families", "businesses": "Businesses & Property" },
+  "audiences": {
+    "individuals": "Individuals & Families",
+    "businesses": "Businesses & Property"
+  },
   "services": [
     {
       "slug": "auto",
@@ -142,9 +175,18 @@
     "title": "How to start",
     "text": "Three ways in, and the same quoting process behind all of them.",
     "steps": [
-      { "title": "Stop by, call or write", "text": "Come to the office Monday to Friday, call (281) 640-1684, or complete the quote request form." },
-      { "title": "We begin the quoting process", "text": "Tell us the type of insurance you need along with your name, address, email, phone and date of birth." },
-      { "title": "The companies compete", "text": "We represent multiple companies that all compete for your business." }
+      {
+        "title": "Stop by, call or write",
+        "text": "Come to the office Monday to Friday, call (281) 640-1684, or complete the quote request form."
+      },
+      {
+        "title": "We begin the quoting process",
+        "text": "Tell us the type of insurance you need along with your name, address, email, phone and date of birth."
+      },
+      {
+        "title": "The companies compete",
+        "text": "We represent multiple companies that all compete for your business."
+      }
     ]
   },
   "about": {
@@ -156,17 +198,41 @@
       "Since we all have heard this before, we know that the only way to be different is to actually prove it every day. This is who we are and this is why Everyone's Insurance was created."
     ],
     "values": [
-      { "title": "Longer hours", "text": "Sales takes calls Monday through Saturday until 9 PM, well past the hour most offices close." },
-      { "title": "Multiple companies", "text": "We represent multiple companies that all compete for your business." },
-      { "title": "Handpicked staff", "text": "Our staff is handpicked and empowered to treat you as they would want to be treated." }
+      {
+        "title": "Longer hours",
+        "text": "Sales takes calls Monday through Saturday until 9 PM, well past the hour most offices close."
+      },
+      {
+        "title": "Multiple companies",
+        "text": "We represent multiple companies that all compete for your business."
+      },
+      {
+        "title": "Handpicked staff",
+        "text": "Our staff is handpicked and empowered to treat you as they would want to be treated."
+      }
     ]
   },
   "faqs": [
-    { "q": "When can I reach you?", "a": "Call Monday through Saturday. We are available 9 AM to 5 PM for customer service and 9 AM to 9 PM for sales." },
-    { "q": "Can I come to the office?", "a": "Yes. Please feel free to stop by Monday through Friday, 9 AM to 5 PM, at 651 N Egret Bay Blvd, Suite K in League City." },
-    { "q": "Do you only cover League City?", "a": "No. We serve all of Texas. League City is where our physical location is." },
-    { "q": "How do I start a quote?", "a": "Stop by, give us a call, or complete the quote request form and we will begin the quoting process." },
-    { "q": "What do you need from me for a quote?", "a": "The type of insurance you are asking about, along with your name, address, email, phone and date of birth." }
+    {
+      "q": "When can I reach you?",
+      "a": "Call Monday through Saturday. We are available 9 AM to 5 PM for customer service and 9 AM to 9 PM for sales."
+    },
+    {
+      "q": "Can I come to the office?",
+      "a": "Yes. Please feel free to stop by Monday through Friday, 9 AM to 5 PM, at 651 N Egret Bay Blvd, Suite K in League City."
+    },
+    {
+      "q": "Do you only cover League City?",
+      "a": "No. We serve all of Texas. League City is where our physical location is."
+    },
+    {
+      "q": "How do I start a quote?",
+      "a": "Stop by, give us a call, or complete the quote request form and we will begin the quoting process."
+    },
+    {
+      "q": "What do you need from me for a quote?",
+      "a": "The type of insurance you are asking about, along with your name, address, email, phone and date of birth."
+    }
   ],
   "facts": [
     {

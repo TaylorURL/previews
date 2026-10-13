@@ -10,7 +10,12 @@
   "town": "Houston",
   "state": "TX",
   "zip": "77058",
-  "hours": [["Mon – Sun", "Open 24 hours"]],
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
   "brand": {
     "primary": "#0d55a6",
     "primaryDeep": "#042a66",
@@ -23,7 +28,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap",
     "logo": "/brands/texassamedayairconditioningheating/logo.webp",
-    "logoWidth": 180
+    "logoMono": "/brands/texassamedayairconditioningheating/logo-mono.webp",
+    "logoWidth": 108,
+    "logoHeight": 58,
+    "logoRatio": 1.861,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.322,
+      0.21,
+      0.141,
+      0.159,
+      0.252,
+      0.375,
+      0.497,
+      0.62,
+      0.748,
+      0.878,
+      1.0
+    ]
   },
   "emergency": {
     "title": "24/7 emergency service",
@@ -31,7 +53,10 @@
   },
   "sameDay": "Same-day service is available, and every visit starts on time with a clear written estimate before work begins.",
   "licenses": [
-    { "label": "Texas HVAC", "number": "TACLB135286E" }
+    {
+      "label": "Texas HVAC",
+      "number": "TACLB135286E"
+    }
   ],
   "financing": {
     "text": "Financing for qualifying homeowners through Synchrony, with flexible terms, a quick approval process, options for all credit types and no prepayment penalties."
@@ -271,14 +296,20 @@
           "title": "Generator Sizing Evaluations",
           "icon": "gauge",
           "text": "Sizing depends on home size, electrical demand, HVAC equipment, appliance usage, medical equipment and how much of the property you want backed up. Some homeowners cover essential circuits only, others the whole property.",
-          "points": ["Essential circuits or whole-home coverage", "Sized to long-term power needs, not a rule of thumb"]
+          "points": [
+            "Essential circuits or whole-home coverage",
+            "Sized to long-term power needs, not a rule of thumb"
+          ]
         },
         {
           "slug": "generator-replacement",
           "title": "Standby Generator Replacement",
           "icon": "power",
           "text": "Replacement of an aging standby generator and upgrades to an existing backup power system.",
-          "points": ["Transfer switch installation", "Backup power system upgrades"]
+          "points": [
+            "Transfer switch installation",
+            "Backup power system upgrades"
+          ]
         },
         {
           "slug": "generator-maintenance",
@@ -307,21 +338,30 @@
           "title": "Plumbing Repair and Emergencies",
           "icon": "wrench",
           "text": "Every visit begins with a thorough inspection and a clear diagnosis. Technicians arrive with the tools and parts to handle most repairs on the spot, whether it is low water pressure, slow drains, recurring clogs or a sudden emergency.",
-          "points": ["Upfront pricing before work starts", "Licensed, insured and trained on current plumbing codes"]
+          "points": [
+            "Upfront pricing before work starts",
+            "Licensed, insured and trained on current plumbing codes"
+          ]
         },
         {
           "slug": "drains-and-sewers",
           "title": "Drains and Sewers",
           "icon": "waves",
           "text": "Drain cleaning, clog removal and full sewer repair including sewer line replacement, with an understanding of the clay soils, shifting foundations and aging sewer lines in older Missouri City neighborhoods.",
-          "points": ["Drain cleaning and clog removal", "Sewer repair and sewer line replacement"]
+          "points": [
+            "Drain cleaning and clog removal",
+            "Sewer repair and sewer line replacement"
+          ]
         },
         {
           "slug": "water-heaters",
           "title": "Water Heaters",
           "icon": "thermometer",
           "text": "Water heater repair and tankless water heater installation, servicing both traditional tank models and modern tankless systems so you have reliable hot water year-round.",
-          "points": ["Water heater repair", "Tankless water heater installation"]
+          "points": [
+            "Water heater repair",
+            "Tankless water heater installation"
+          ]
         },
         {
           "slug": "repiping-and-fixtures",
@@ -350,7 +390,9 @@
           "title": "Commercial HVAC Installation",
           "icon": "building",
           "text": "Energy-efficient commercial systems sized for your facility, improving comfort, airflow and long-term operating costs.",
-          "points": ["Request a commercial estimate"]
+          "points": [
+            "Request a commercial estimate"
+          ]
         },
         {
           "slug": "commercial-repair",
@@ -523,7 +565,10 @@
   "facts": [
     {
       "heading": "Licensed and insured",
-      "items": ["TDLR HVAC license TACLB135286E", "Technicians are background-checked and drug-tested"]
+      "items": [
+        "TDLR HVAC license TACLB135286E",
+        "Technicians are background-checked and drug-tested"
+      ]
     },
     {
       "heading": "Our guarantee",
@@ -531,7 +576,11 @@
     },
     {
       "heading": "Brands and dealerships",
-      "items": ["Trane dealer", "Authorized Generac dealer", "Lennox"]
+      "items": [
+        "Trane dealer",
+        "Authorized Generac dealer",
+        "Lennox"
+      ]
     },
     {
       "heading": "Accreditation",

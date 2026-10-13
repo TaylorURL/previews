@@ -14,7 +14,20 @@
   "since": 2017,
   "rating": 5.0,
   "reviewCount": 53,
-  "hours": [["Mon – Fri", "9:00 AM – 5:00 PM CT"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "9:00 AM – 5:00 PM CT"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "cta": {
     "label": "Schedule a Free Consultation",
     "text": "Tell us where your books and taxes stand and we will set up a free, no-pressure consultation to walk through it together."
@@ -32,7 +45,24 @@
     "body": "'Montserrat', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap",
     "logo": "/brands/georgecpafirm/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/georgecpafirm/logo-mono.webp",
+    "logoWidth": 129,
+    "logoHeight": 58,
+    "logoRatio": 2.224,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.814,
+      0.659,
+      0.489,
+      0.319,
+      0.204,
+      0.147,
+      0.29,
+      0.46,
+      0.641,
+      0.827,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Houston CPA firm for service businesses",
@@ -40,13 +70,20 @@
     "lead": "George CPA Firm handles the bookkeeping, tax, payroll and CFO work for service-based businesses in Houston, so you keep more of what you earn and worry less about your business's financial future.",
     "image": "/brands/georgecpafirm/hero",
     "imageAlt": "The George CPA Firm team",
-    "points": ["Flat, predictable monthly fee", "A committed account manager", "Free consultation to start"]
+    "points": [
+      "Flat, predictable monthly fee",
+      "A committed account manager",
+      "Free consultation to start"
+    ]
   },
   "overview": {
     "title": "Comprehensive financial support to empower you.",
     "text": "We assess where you stand financially, then craft and implement solutions that fit. Pick a service to see what it covers, or call and talk it through with our team."
   },
-  "audiences": { "individuals": "For Individuals", "businesses": "For Businesses" },
+  "audiences": {
+    "individuals": "For Individuals",
+    "businesses": "For Businesses"
+  },
   "services": [
     {
       "slug": "bookkeeping",
@@ -57,14 +94,32 @@
       "text": "Our bookkeeping goes beyond data entry. We maintain accurate records, deliver real-time insights and support informed decisions to keep your cash flow strong.",
       "lead": "Struggling to open QuickBooks and make sense of it all? Overwhelmed with the changing interface and all the to-dos to get your financial statements correct? Our bookkeeping services go beyond data entry.",
       "covers": [
-        { "title": "Transactions and reconciliations", "text": "We meticulously record your transactions and reconcile accounts, including daily bank and credit card reconciliation at our Premier level." },
-        { "title": "Clear financial statements", "text": "Monthly financial statements that give you a precise understanding of your business's financial health." },
-        { "title": "Systems that scale", "text": "Streamlined systems and processes that scale with your operations, so your reporting is robust enough to support strategic planning or secure funding." },
-        { "title": "Cleanup and historical data", "text": "Transforming messy QuickBooks into organized, accurate records, including wrangling historical data into streamlined reporting." }
+        {
+          "title": "Transactions and reconciliations",
+          "text": "We meticulously record your transactions and reconcile accounts, including daily bank and credit card reconciliation at our Premier level."
+        },
+        {
+          "title": "Clear financial statements",
+          "text": "Monthly financial statements that give you a precise understanding of your business's financial health."
+        },
+        {
+          "title": "Systems that scale",
+          "text": "Streamlined systems and processes that scale with your operations, so your reporting is robust enough to support strategic planning or secure funding."
+        },
+        {
+          "title": "Cleanup and historical data",
+          "text": "Transforming messy QuickBooks into organized, accurate records, including wrangling historical data into streamlined reporting."
+        }
       ],
       "questions": [
-        { "q": "What software do you work in?", "a": "We work in QuickBooks Online and Xero, and we provide QuickBooks support as part of every package." },
-        { "q": "Can I use the financials with my banker?", "a": "Yes. Whether you need accurate financials to give to your banker, file your tax return or make a decision, we will support you to get the correct end result." }
+        {
+          "q": "What software do you work in?",
+          "a": "We work in QuickBooks Online and Xero, and we provide QuickBooks support as part of every package."
+        },
+        {
+          "q": "Can I use the financials with my banker?",
+          "a": "Yes. Whether you need accurate financials to give to your banker, file your tax return or make a decision, we will support you to get the correct end result."
+        }
       ]
     },
     {
@@ -76,14 +131,32 @@
       "text": "Our team optimizes your financial records and tax strategies to maximize earnings and reduce your tax burden, with accurate, proactive work that supports effective planning.",
       "lead": "Navigating tax filing is complex. We go beyond basic compliance, developing tax strategies designed for growing service companies and identifying opportunities to maximize deductions and minimize liabilities.",
       "covers": [
-        { "title": "Business tax preparation", "text": "Business and personal tax returns prepared on meticulous financial records, so filing is straightforward." },
-        { "title": "Proactive planning", "text": "Quarterly tax projections and planning for the tax implications of new hires, expanded services or geographical diversification." },
-        { "title": "Deductions and credits", "text": "We work to identify eligible deductions and credits so you keep more of what you earn." },
-        { "title": "Filings and forms", "text": "1099 preparation and filing, payroll tax reconciliation, and sales tax filings available on request." }
+        {
+          "title": "Business tax preparation",
+          "text": "Business and personal tax returns prepared on meticulous financial records, so filing is straightforward."
+        },
+        {
+          "title": "Proactive planning",
+          "text": "Quarterly tax projections and planning for the tax implications of new hires, expanded services or geographical diversification."
+        },
+        {
+          "title": "Deductions and credits",
+          "text": "We work to identify eligible deductions and credits so you keep more of what you earn."
+        },
+        {
+          "title": "Filings and forms",
+          "text": "1099 preparation and filing, payroll tax reconciliation, and sales tax filings available on request."
+        }
       ],
       "questions": [
-        { "q": "Do you handle both the business and the owner's return?", "a": "Yes. Business and personal tax preparation are both included in our packages, because an owner's personal return is usually intertwined with the company's financials." },
-        { "q": "Can you represent me before the IRS?", "a": "IRS representation is available as an additional service on request." }
+        {
+          "q": "Do you handle both the business and the owner's return?",
+          "a": "Yes. Business and personal tax preparation are both included in our packages, because an owner's personal return is usually intertwined with the company's financials."
+        },
+        {
+          "q": "Can you represent me before the IRS?",
+          "a": "IRS representation is available as an additional service on request."
+        }
       ]
     },
     {
@@ -95,13 +168,28 @@
       "text": "Different pay cycles, payroll deposits, payroll tax filings, year-end forms. We remove the friction from payroll tax processing and filing, which keeps you safe from IRS penalties.",
       "lead": "Your team is central to your growth, and keeping them paid accurately and on time is non-negotiable. We take the burden of payroll off your shoulders.",
       "covers": [
-        { "title": "Pay cycles and deposits", "text": "Pay cycles and direct deposits handled so your employees are always treated like the key team members they are." },
-        { "title": "Payroll tax filings", "text": "Federal and state payroll tax filings, with full compliance that helps you avoid costly penalties." },
-        { "title": "Year-end reporting", "text": "Year-end forms and reporting prepared alongside the rest of your financial records." },
-        { "title": "Part of the wider picture", "text": "Payroll integrated into your broader financial strategy rather than run as a separate chore." }
+        {
+          "title": "Pay cycles and deposits",
+          "text": "Pay cycles and direct deposits handled so your employees are always treated like the key team members they are."
+        },
+        {
+          "title": "Payroll tax filings",
+          "text": "Federal and state payroll tax filings, with full compliance that helps you avoid costly penalties."
+        },
+        {
+          "title": "Year-end reporting",
+          "text": "Year-end forms and reporting prepared alongside the rest of your financial records."
+        },
+        {
+          "title": "Part of the wider picture",
+          "text": "Payroll integrated into your broader financial strategy rather than run as a separate chore."
+        }
       ],
       "questions": [
-        { "q": "Is payroll processing included in a package?", "a": "Payroll processing is available as an additional service on request, and payroll tax reconciliation is included from our Essential level up." }
+        {
+          "q": "Is payroll processing included in a package?",
+          "a": "Payroll processing is available as an additional service on request, and payroll tax reconciliation is included from our Essential level up."
+        }
       ]
     },
     {
@@ -113,13 +201,28 @@
       "text": "For growing businesses that need strategic financial leadership without the cost of a full-time executive, we provide high-level oversight, strategic planning and performance analysis.",
       "lead": "As your business grows, the need for executive-level financial guidance becomes critical, but a full-time CFO might not yet be viable. Our fractional CFO services bridge that gap.",
       "covers": [
-        { "title": "Financial oversight", "text": "High-level oversight of your numbers, so you can interpret the metrics that actually move the business." },
-        { "title": "Forecasting and budgets", "text": "Goal setting, budget preparation and budget to actual variance analysis." },
-        { "title": "Profitability analysis", "text": "Performance analysis that identifies areas for improved profitability and efficiency." },
-        { "title": "Business advisory", "text": "Quarterly or monthly business and tax advisory, depending on the level of support you choose." }
+        {
+          "title": "Financial oversight",
+          "text": "High-level oversight of your numbers, so you can interpret the metrics that actually move the business."
+        },
+        {
+          "title": "Forecasting and budgets",
+          "text": "Goal setting, budget preparation and budget to actual variance analysis."
+        },
+        {
+          "title": "Profitability analysis",
+          "text": "Performance analysis that identifies areas for improved profitability and efficiency."
+        },
+        {
+          "title": "Business advisory",
+          "text": "Quarterly or monthly business and tax advisory, depending on the level of support you choose."
+        }
       ],
       "questions": [
-        { "q": "Who is this for?", "a": "Established service businesses that require strategic financial leadership to scale confidently, typically at our Premier level." }
+        {
+          "q": "Who is this for?",
+          "a": "Established service businesses that require strategic financial leadership to scale confidently, typically at our Premier level."
+        }
       ]
     },
     {
@@ -133,10 +236,22 @@
       "image": "/brands/georgecpafirm/consulting",
       "imageAlt": "A business owner in an office",
       "covers": [
-        { "title": "Financial systems", "text": "Setting up new financial systems and refining the internal processes behind them." },
-        { "title": "Reading your reports", "text": "Understanding what your financial reports are telling you about the business." },
-        { "title": "Technology and transitions", "text": "Advice on technology integration and preparing for significant business transitions." },
-        { "title": "Growth engagements", "text": "Value Builder growth-focused engagements and reasonable salary compensation studies at our Premier level." }
+        {
+          "title": "Financial systems",
+          "text": "Setting up new financial systems and refining the internal processes behind them."
+        },
+        {
+          "title": "Reading your reports",
+          "text": "Understanding what your financial reports are telling you about the business."
+        },
+        {
+          "title": "Technology and transitions",
+          "text": "Advice on technology integration and preparing for significant business transitions."
+        },
+        {
+          "title": "Growth engagements",
+          "text": "Value Builder growth-focused engagements and reasonable salary compensation studies at our Premier level."
+        }
       ]
     },
     {
@@ -148,12 +263,24 @@
       "text": "We specialize in meticulous personal tax preparation, applying the deductions and credits relevant to your entrepreneurial income and investments.",
       "lead": "As a business owner your personal tax situation can be complex and is often intertwined with your company's financials. We take the stress out of filing so you can confidently meet your obligations.",
       "covers": [
-        { "title": "Return preparation", "text": "Personal returns prepared with the same precision and insight you expect for your business." },
-        { "title": "Deductions and credits", "text": "Deductions and credits relevant to entrepreneurial income and investments, properly applied." },
-        { "title": "Proactive planning", "text": "Planning tailored to your financial goals and business earnings, so you can anticipate future tax implications." }
+        {
+          "title": "Return preparation",
+          "text": "Personal returns prepared with the same precision and insight you expect for your business."
+        },
+        {
+          "title": "Deductions and credits",
+          "text": "Deductions and credits relevant to entrepreneurial income and investments, properly applied."
+        },
+        {
+          "title": "Proactive planning",
+          "text": "Planning tailored to your financial goals and business earnings, so you can anticipate future tax implications."
+        }
       ],
       "questions": [
-        { "q": "Do I have to be a business client?", "a": "No. We also support individuals who require expert tax preparation and financial advisory services." }
+        {
+          "q": "Do I have to be a business client?",
+          "a": "No. We also support individuals who require expert tax preparation and financial advisory services."
+        }
       ]
     },
     {
@@ -165,8 +292,14 @@
       "text": "The same solution-oriented guidance you appreciate for your company, applied to your personal wealth, in clear and easy-to-understand terms.",
       "lead": "You're a leader in your business, but navigating personal financial decisions can still feel overwhelming. We help you gain clarity around your financial goals and chart a course for success.",
       "covers": [
-        { "title": "Financial goals", "text": "Clear advice to help you gain clarity around your goals and the decisions in front of you." },
-        { "title": "Life events", "text": "Support when you are planning for significant life events or seeking to grow your personal assets." }
+        {
+          "title": "Financial goals",
+          "text": "Clear advice to help you gain clarity around your goals and the decisions in front of you."
+        },
+        {
+          "title": "Life events",
+          "text": "Support when you are planning for significant life events or seeking to grow your personal assets."
+        }
       ]
     }
   ],
@@ -174,10 +307,22 @@
     "title": "Why George CPA Firm works for you",
     "text": "We understand that every business is different, so we don't offer cookie-cutter solutions.",
     "steps": [
-      { "title": "We get to know your numbers", "text": "First we assess where you stand financially." },
-      { "title": "We build the strategy", "text": "Then we create smart, personalized strategies to help you keep more of what you earn." },
-      { "title": "We take care of the details", "text": "We handle the financial details so you can focus on running your business." },
-      { "title": "We stay your partner", "text": "A reliable and supportive partner, helping you grow with less stress and more clarity." }
+      {
+        "title": "We get to know your numbers",
+        "text": "First we assess where you stand financially."
+      },
+      {
+        "title": "We build the strategy",
+        "text": "Then we create smart, personalized strategies to help you keep more of what you earn."
+      },
+      {
+        "title": "We take care of the details",
+        "text": "We handle the financial details so you can focus on running your business."
+      },
+      {
+        "title": "We stay your partner",
+        "text": "A reliable and supportive partner, helping you grow with less stress and more clarity."
+      }
     ]
   },
   "affiliations": {
@@ -203,11 +348,26 @@
     "image": "/brands/georgecpafirm/about",
     "imageAlt": "The George CPA Firm team",
     "values": [
-      { "title": "Focused", "text": "On igniting the potential of our clients." },
-      { "title": "Always Learning", "text": "Always growing." },
-      { "title": "Integrity", "text": "We're truthful in all our interactions." },
-      { "title": "Time", "text": "We deliver when we say we will." },
-      { "title": "Honor", "text": "We value every relationship within our ecosystem." }
+      {
+        "title": "Focused",
+        "text": "On igniting the potential of our clients."
+      },
+      {
+        "title": "Always Learning",
+        "text": "Always growing."
+      },
+      {
+        "title": "Integrity",
+        "text": "We're truthful in all our interactions."
+      },
+      {
+        "title": "Time",
+        "text": "We deliver when we say we will."
+      },
+      {
+        "title": "Honor",
+        "text": "We value every relationship within our ecosystem."
+      }
     ]
   },
   "team": [
@@ -288,15 +448,45 @@
     }
   ],
   "resources": [
-    { "title": "Make a Payment to George CPA Firm", "text": "Pay your invoice securely through CPACharge.", "href": "https://secure.cpacharge.com/pages/georgecpafirm/payments" },
-    { "title": "Where's My Refund?", "text": "Check the status of your federal refund with the IRS.", "href": "https://www.irs.gov/wheres-my-refund" },
-    { "title": "Make a Payment to the IRS", "text": "Pay a federal tax bill directly through IRS.gov.", "href": "https://www.irs.gov/payments" },
-    { "title": "TWC Employer Resources", "text": "Texas Workforce Commission resources for employers.", "href": "https://www.twc.texas.gov/employer-resources" },
-    { "title": "QuickBooks Online Sign In", "text": "Sign in to your Intuit account.", "href": "https://accounts.intuit.com/app/sign-in" },
-    { "title": "Xero Sign In", "text": "Sign in to your Xero organisation.", "href": "https://www.xero.com/us/login/" },
-    { "title": "Client Portal", "text": "Share documents and sign engagement paperwork in our TaxDome portal.", "href": "https://portal.georgecpafirm.com/" }
+    {
+      "title": "Make a Payment to George CPA Firm",
+      "text": "Pay your invoice securely through CPACharge.",
+      "href": "https://secure.cpacharge.com/pages/georgecpafirm/payments"
+    },
+    {
+      "title": "Where's My Refund?",
+      "text": "Check the status of your federal refund with the IRS.",
+      "href": "https://www.irs.gov/wheres-my-refund"
+    },
+    {
+      "title": "Make a Payment to the IRS",
+      "text": "Pay a federal tax bill directly through IRS.gov.",
+      "href": "https://www.irs.gov/payments"
+    },
+    {
+      "title": "TWC Employer Resources",
+      "text": "Texas Workforce Commission resources for employers.",
+      "href": "https://www.twc.texas.gov/employer-resources"
+    },
+    {
+      "title": "QuickBooks Online Sign In",
+      "text": "Sign in to your Intuit account.",
+      "href": "https://accounts.intuit.com/app/sign-in"
+    },
+    {
+      "title": "Xero Sign In",
+      "text": "Sign in to your Xero organisation.",
+      "href": "https://www.xero.com/us/login/"
+    },
+    {
+      "title": "Client Portal",
+      "text": "Share documents and sign engagement paperwork in our TaxDome portal.",
+      "href": "https://portal.georgecpafirm.com/"
+    }
   ],
-  "serviceArea": ["Houston"],
+  "serviceArea": [
+    "Houston"
+  ],
   "facts": [
     {
       "heading": "Why George CPA Firm",
@@ -321,7 +511,12 @@
     },
     {
       "heading": "Software we work in",
-      "items": ["QuickBooks Online", "Xero", "Gusto", "CPACharge for client payments"]
+      "items": [
+        "QuickBooks Online",
+        "Xero",
+        "Gusto",
+        "CPACharge for client payments"
+      ]
     },
     {
       "heading": "Ownership",

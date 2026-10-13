@@ -12,7 +12,20 @@
   "rating": 5.0,
   "reviewCount": 67,
   "license": "Licensed and insured",
-  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "brand": {
     "primary": "#4e8a1d",
     "primaryDeep": "#2d5410",
@@ -23,7 +36,24 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap",
     "logo": "/brands/cactusjaxroofingconstruction/logo.webp",
-    "logoWidth": 170
+    "logoMono": "/brands/cactusjaxroofingconstruction/logo-mono.webp",
+    "logoWidth": 76,
+    "logoHeight": 74,
+    "logoRatio": 1.027,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.977,
+      0.968,
+      0.957,
+      0.946,
+      0.939,
+      0.94,
+      0.949,
+      0.961,
+      0.974,
+      0.987,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Woman-owned Houston roofing contractor",
@@ -33,7 +63,12 @@
     "image": "/brands/cactusjaxroofingconstruction/hero",
     "imageAlt": "An aerial view of a Houston home with a new gray shingle roof"
   },
-  "promises": ["Free inspections and 24-hour estimates", "10-year workmanship warranty", "Financing through Enhancify", "Licensed and insured"],
+  "promises": [
+    "Free inspections and 24-hour estimates",
+    "10-year workmanship warranty",
+    "Financing through Enhancify",
+    "Licensed and insured"
+  ],
   "services": [
     {
       "slug": "roof-repair",
@@ -48,10 +83,24 @@
         "Most repairs are completed in hours. Repairs carry a 1-year warranty.",
         "Residential roof repairs in Houston run $3 to $7 per square foot, depending on materials and the severity of the damage; roof type, slope and accessibility move the number too. We offer same-day residential roof repairs and 24/7 emergency availability, and we repair storm and wind damage, broken shingles, leaks, and flashing around chimneys, vents and skylights."
       ],
-      "points": ["Thorough inspection before any repair", "Isolated leaks and damaged shingles", "Flashing and vent repairs around chimneys and skylights", "Same-day residential repairs, 24/7 emergency availability", "Honest assessment of repair against replacement", "Repairs run $3 to $7 per square foot", "1-year warranty on repairs"],
+      "points": [
+        "Thorough inspection before any repair",
+        "Isolated leaks and damaged shingles",
+        "Flashing and vent repairs around chimneys and skylights",
+        "Same-day residential repairs, 24/7 emergency availability",
+        "Honest assessment of repair against replacement",
+        "Repairs run $3 to $7 per square foot",
+        "1-year warranty on repairs"
+      ],
       "faqs": [
-        { "q": "How do I know if I need a roof repair or full replacement?", "a": "A professional roof inspection is essential to determine the right solution. Minor issues like isolated leaks or damaged shingles often require repairs, while widespread damage, multiple leaks, aging beyond 20 years, or extensive storm damage typically warrant replacement." },
-        { "q": "How long does a repair take?", "a": "Repairs are often completed in hours. We communicate timeline expectations clearly throughout your project." }
+        {
+          "q": "How do I know if I need a roof repair or full replacement?",
+          "a": "A professional roof inspection is essential to determine the right solution. Minor issues like isolated leaks or damaged shingles often require repairs, while widespread damage, multiple leaks, aging beyond 20 years, or extensive storm damage typically warrant replacement."
+        },
+        {
+          "q": "How long does a repair take?",
+          "a": "Repairs are often completed in hours. We communicate timeline expectations clearly throughout your project."
+        }
       ]
     },
     {
@@ -67,10 +116,22 @@
         "Most residential roof replacements take 1 to 3 days, depending on size, complexity and weather. We coordinate carefully to minimize disruption to your daily routine and communicate timeline expectations clearly from start to final inspection.",
         "Average roof replacement in Houston costs around $12,000, though prices vary based on size, materials, complexity and the extent of the damage; metal and tile roofs average $20,000. We provide free, detailed estimates within 24 hours, and our transparent pricing includes materials, labor, permits and cleanup."
       ],
-      "points": ["Free detailed estimate within 24 hours", "1 to 3 days on most homes", "Asphalt, metal, tile and synthetic options", "10-year workmanship warranty", "Manufacturer product warranties up to 30 years"],
+      "points": [
+        "Free detailed estimate within 24 hours",
+        "1 to 3 days on most homes",
+        "Asphalt, metal, tile and synthetic options",
+        "10-year workmanship warranty",
+        "Manufacturer product warranties up to 30 years"
+      ],
       "faqs": [
-        { "q": "How long does a typical roof installation take?", "a": "Most residential roof replacements take 1-3 days, depending on size, complexity, and weather conditions. We work efficiently while maintaining quality standards." },
-        { "q": "What warranties cover my new roof?", "a": "We stand behind our work with a 10-year workmanship warranty on installations and a 1-year warranty on repairs. Manufacturer product warranties extend up to 30 years, depending on the materials selected." }
+        {
+          "q": "How long does a typical roof installation take?",
+          "a": "Most residential roof replacements take 1-3 days, depending on size, complexity, and weather conditions. We work efficiently while maintaining quality standards."
+        },
+        {
+          "q": "What warranties cover my new roof?",
+          "a": "We stand behind our work with a 10-year workmanship warranty on installations and a 1-year warranty on repairs. Manufacturer product warranties extend up to 30 years, depending on the materials selected."
+        }
       ]
     },
     {
@@ -87,10 +148,24 @@
         "An inspection covers the surface, for missing, cracked or curling shingles, discoloration, algae growth and granule loss; leak detection; the gutters and drainage; the flashing and seals around chimneys, vents and skylights; and the structural integrity of the framework. Every finding is documented with photos and detailed notes, and we never recommend a repair you do not need.",
         "Beyond the annual inspection, Texas homeowners should schedule one at least twice a year, in spring and fall, with an additional inspection after any major storm."
       ],
-      "points": ["Free inspections within 24 hours", "Free drone inspections", "Twice a year in spring and fall, and after any storm", "Surface, leaks, gutters, flashing and structure", "Findings documented with photos and notes", "Honest assessment, repair or replacement", "Preventative maintenance programs"],
+      "points": [
+        "Free inspections within 24 hours",
+        "Free drone inspections",
+        "Twice a year in spring and fall, and after any storm",
+        "Surface, leaks, gutters, flashing and structure",
+        "Findings documented with photos and notes",
+        "Honest assessment, repair or replacement",
+        "Preventative maintenance programs"
+      ],
       "faqs": [
-        { "q": "How often should I have my roof inspected?", "a": "Annual inspections are recommended, especially after severe storms. Regular inspections identify minor issues before they become expensive problems, extend roof lifespan, and maintain warranty coverage." },
-        { "q": "How quickly can you provide a roofing estimate?", "a": "We provide free estimates within 24 hours. Contact us to schedule your inspection and our team will assess your roof thoroughly, answer questions, and deliver a detailed, transparent estimate." }
+        {
+          "q": "How often should I have my roof inspected?",
+          "a": "Annual inspections are recommended, especially after severe storms. Regular inspections identify minor issues before they become expensive problems, extend roof lifespan, and maintain warranty coverage."
+        },
+        {
+          "q": "How quickly can you provide a roofing estimate?",
+          "a": "We provide free estimates within 24 hours. Contact us to schedule your inspection and our team will assess your roof thoroughly, answer questions, and deliver a detailed, transparent estimate."
+        }
       ]
     },
     {
@@ -105,7 +180,12 @@
         "Houston's heat, humidity and storm activity demand durable materials. Asphalt shingles are the most affordable of the premium materials we install, and our experience helps us recommend the right line for your budget, home style and long-term performance needs.",
         "We are affiliated with industry-leading manufacturers, which gives us access to premium materials, better warranties and competitive pricing."
       ],
-      "points": ["Premium asphalt shingle lines", "Matched to Houston's heat, humidity and storms", "Manufacturer warranties up to 30 years", "10-year workmanship warranty"]
+      "points": [
+        "Premium asphalt shingle lines",
+        "Matched to Houston's heat, humidity and storms",
+        "Manufacturer warranties up to 30 years",
+        "10-year workmanship warranty"
+      ]
     },
     {
       "slug": "metal-roofing",
@@ -118,7 +198,14 @@
         "We install standing seam metal roofing with hidden fasteners, corrugated metal roofing and metal roofing shingles in steel or aluminum. With proper installation, many metal roofs last 40 to 70 years.",
         "We also install tile and synthetic materials such as Brava and Euroshield, and we are a certified Euroshield installer."
       ],
-      "points": ["Standing seam metal roofing with hidden fasteners", "Corrugated metal roofing", "Metal roofing shingles in steel or aluminum", "Many metal roofs last 40 to 70 years", "Residential and commercial systems", "Free detailed estimate within 24 hours"]
+      "points": [
+        "Standing seam metal roofing with hidden fasteners",
+        "Corrugated metal roofing",
+        "Metal roofing shingles in steel or aluminum",
+        "Many metal roofs last 40 to 70 years",
+        "Residential and commercial systems",
+        "Free detailed estimate within 24 hours"
+      ]
     },
     {
       "slug": "slate-roofing",
@@ -131,7 +218,14 @@
         "Every installation begins with a thorough roof evaluation to confirm your home's structure can support the system, because Houston's humidity and storm exposure put the flashing and underlayment details at the center of how a slate roof performs. Synthetic slate gives many of the same visual benefits at less weight and lower installation cost, and we will tell you which of the two suits your property.",
         "We also replace cracked or broken slate tiles, repair flashing, address leaks and restore damaged sections. Slate requires specialized techniques that differ from standard roofing systems, which is why the installation method, flashing detail and structural requirement all get settled before the first tile goes down."
       ],
-      "points": ["New natural slate roof installation", "Synthetic slate, lighter and lower cost", "Cracked and broken tile replacement", "Structural evaluation before installation", "75 to 100 years with proper maintenance", "Resists fire, mold, rot and UV exposure"]
+      "points": [
+        "New natural slate roof installation",
+        "Synthetic slate, lighter and lower cost",
+        "Cracked and broken tile replacement",
+        "Structural evaluation before installation",
+        "75 to 100 years with proper maintenance",
+        "Resists fire, mold, rot and UV exposure"
+      ]
     },
     {
       "slug": "storm-damage-repair",
@@ -146,9 +240,18 @@
         "We guide homeowners through the entire insurance process, from documentation to claim submission. Our team inspects the damage thoroughly, provides detailed reports and communicates directly with adjusters when needed.",
         "With 20+ years of experience handling insurance claims, we help maximize your coverage and minimize out-of-pocket costs for storm damage restoration."
       ],
-      "points": ["Thorough storm damage inspection", "Detailed damage reports for your insurer", "Direct communication with adjusters", "Temporary solutions to stop further damage", "Full restoration once the claim is approved"],
+      "points": [
+        "Thorough storm damage inspection",
+        "Detailed damage reports for your insurer",
+        "Direct communication with adjusters",
+        "Temporary solutions to stop further damage",
+        "Full restoration once the claim is approved"
+      ],
       "faqs": [
-        { "q": "Do you help with insurance claims for roof damage?", "a": "Absolutely. We guide homeowners through the entire insurance process, from documentation to claim submission. Our team inspects damage thoroughly, provides detailed reports, and communicates directly with adjusters when needed." }
+        {
+          "q": "Do you help with insurance claims for roof damage?",
+          "a": "Absolutely. We guide homeowners through the entire insurance process, from documentation to claim submission. Our team inspects damage thoroughly, provides detailed reports, and communicates directly with adjusters when needed."
+        }
       ]
     },
     {
@@ -164,9 +267,19 @@
         "We have 24/7 emergency availability. The work covers storm and wind damage, leak detection and water intrusion, flashing, seam and penetration repairs, and emergency tarping: secure, professional temporary protection that stops the water until the permanent repair can be done.",
         "Call (281) 694-4133 and tell us what you are seeing. We will tell you what to do until we get there."
       ],
-      "points": ["24/7 emergency availability", "Same-day response to daytime calls", "Next morning for nighttime emergencies", "Emergency tarping and temporary protection", "Leak detection and water intrusion repair", "Permanent repair planned from the same visit"],
+      "points": [
+        "24/7 emergency availability",
+        "Same-day response to daytime calls",
+        "Next morning for nighttime emergencies",
+        "Emergency tarping and temporary protection",
+        "Leak detection and water intrusion repair",
+        "Permanent repair planned from the same visit"
+      ],
       "faqs": [
-        { "q": "Do you provide emergency roof repair services?", "a": "Yes. We respond to roofing emergencies as quickly as possible, same-day for daytime calls and next morning for nighttime emergencies." }
+        {
+          "q": "Do you provide emergency roof repair services?",
+          "a": "Yes. We respond to roofing emergencies as quickly as possible, same-day for daytime calls and next morning for nighttime emergencies."
+        }
       ]
     },
     {
@@ -181,9 +294,18 @@
         "Our expertise extends to multi-family properties, steep slope, low slope and historical buildings. We minimize business disruption while delivering durable, code-compliant commercial roofing solutions with professional project management.",
         "Our operational experience, supplier relationships and scalable project coordination help ensure efficient execution across commercial and multifamily projects."
       ],
-      "points": ["TPO, PVC, EPDM, modified bitumen and BUR", "Commercial metal roofing", "Multi-family, steep slope, low slope and historical buildings", "Code-compliant and professionally managed", "Preventative maintenance programs"],
+      "points": [
+        "TPO, PVC, EPDM, modified bitumen and BUR",
+        "Commercial metal roofing",
+        "Multi-family, steep slope, low slope and historical buildings",
+        "Code-compliant and professionally managed",
+        "Preventative maintenance programs"
+      ],
       "faqs": [
-        { "q": "What commercial roofing services do you offer?", "a": "We specialize in commercial roof replacements and repairs including TPO, PVC, EPDM, modified bitumen, BUR, metal roofing, and protective coatings. Our expertise extends to multi-family properties, steep slope, low slope, and historical buildings." }
+        {
+          "q": "What commercial roofing services do you offer?",
+          "a": "We specialize in commercial roof replacements and repairs including TPO, PVC, EPDM, modified bitumen, BUR, metal roofing, and protective coatings. Our expertise extends to multi-family properties, steep slope, low slope, and historical buildings."
+        }
       ]
     },
     {
@@ -198,7 +320,12 @@
         "Our experienced team handles all roofing systems with quality workmanship and quick response times, so a roof problem does not become a closed business.",
         "Where a repair is one of a recurring set, we will show you the case for a preventative maintenance program instead: proactive inspection and maintenance designed to extend roof life, reduce repair costs and help prevent unexpected failures."
       ],
-      "points": ["All commercial roofing systems", "Quick response times", "Minimal business disruption", "Preventative maintenance programs available"]
+      "points": [
+        "All commercial roofing systems",
+        "Quick response times",
+        "Minimal business disruption",
+        "Preventative maintenance programs available"
+      ]
     },
     {
       "slug": "commercial-roof-replacement",
@@ -212,7 +339,12 @@
         "From TPO to metal roofing, we ensure minimal downtime and long-lasting protection for your business. Industry-leading roofing systems are installed with strict quality control, detailed documentation and long-term performance in mind.",
         "Backed by nearly two decades of industry experience, we provide dependable commercial roofing solutions tailored to protect and enhance property investments."
       ],
-      "points": ["TPO through commercial metal systems", "Strict quality control and detailed documentation", "Minimal downtime for your business", "Scalable coordination on multifamily projects"]
+      "points": [
+        "TPO through commercial metal systems",
+        "Strict quality control and detailed documentation",
+        "Minimal downtime for your business",
+        "Scalable coordination on multifamily projects"
+      ]
     },
     {
       "slug": "commercial-roof-coatings",
@@ -226,7 +358,12 @@
         "Coatings are one of the commercial systems we specialize in, alongside TPO, PVC, EPDM, modified bitumen, BUR and metal roofing.",
         "We are an affiliated Karnak installer, and coatings sit naturally inside our preventative maintenance programs: proactive inspection and maintenance designed to extend roof life and reduce repair costs before a failure reaches your property."
       ],
-      "points": ["Protective coatings for low-slope roofs", "Extends the life of the existing roof", "Part of a preventative maintenance program", "Karnak affiliated"]
+      "points": [
+        "Protective coatings for low-slope roofs",
+        "Extends the life of the existing roof",
+        "Part of a preventative maintenance program",
+        "Karnak affiliated"
+      ]
     },
     {
       "slug": "seamless-gutters",
@@ -241,9 +378,20 @@
         "We fabricate seamless gutters on site for a precise fit, which improves water flow and alignment and cuts the number of joints where leaks start. We also install sectional gutter systems, K-style profiles for high rainfall volume, and half-round and box gutters, which suit custom or historic buildings and large commercial roofs needing maximum capacity.",
         "We install seamless gutters, K-style gutters, gutter guards and other gutter systems, averaging $2,500."
       ],
-      "points": ["Seamless gutters, fabricated on site", "K-style gutters for high rainfall volume", "Sectional gutter systems", "Half-round and box gutters", "Gutter guards", "Installation and replacement", "Gutter systems average $2,500"],
+      "points": [
+        "Seamless gutters, fabricated on site",
+        "K-style gutters for high rainfall volume",
+        "Sectional gutter systems",
+        "Half-round and box gutters",
+        "Gutter guards",
+        "Installation and replacement",
+        "Gutter systems average $2,500"
+      ],
       "faqs": [
-        { "q": "Can you install gutters and siding?", "a": "Yes. Beyond roofing, we install seamless gutters, K-style gutters, gutter guards, and various gutter systems averaging $2,500. We also install vinyl, composite, stucco, wood, metal, fiber cement, Hardie Board, and LP SmartSide siding." }
+        {
+          "q": "Can you install gutters and siding?",
+          "a": "Yes. Beyond roofing, we install seamless gutters, K-style gutters, gutter guards, and various gutter systems averaging $2,500. We also install vinyl, composite, stucco, wood, metal, fiber cement, Hardie Board, and LP SmartSide siding."
+        }
       ]
     },
     {
@@ -259,7 +407,14 @@
         "A solar attic fan is a self-contained unit mounted on the roof or gable, with a built-in panel that powers the fan directly: no wiring, no added electric bill and no need for a full solar power system. We size the fan to your attic's square footage, position it for maximum sun exposure, and flash and seal each mounting point to manufacturer specification so the installation protects the roof rather than creating a new leak point.",
         "We also evaluate the ridge, soffit and gable vents already on the roof, because a fan only works alongside proper intake airflow, and we check panel exposure, fan operation and seal integrity as part of a regular roof inspection. Cactus Jax does not install whole-home solar electric systems; our work is attic ventilation products that use solar power to move air."
       ],
-      "points": ["Solar-powered attic fan installation", "No wiring and no added electric bill", "Fan sized to your attic and positioned for sun", "Ridge, soffit and gable vent evaluation", "Mounting points flashed to manufacturer spec", "Moisture and heat control"]
+      "points": [
+        "Solar-powered attic fan installation",
+        "No wiring and no added electric bill",
+        "Fan sized to your attic and positioned for sun",
+        "Ridge, soffit and gable vent evaluation",
+        "Mounting points flashed to manufacturer spec",
+        "Moisture and heat control"
+      ]
     },
     {
       "slug": "exterior-paint-siding-and-windows",
@@ -274,7 +429,15 @@
         "We install vinyl, composite, stucco, wood, metal, fiber cement, Hardie Board and LP SmartSide siding, along with engineered wood and insulated siding systems, averaging $20,000 to $30,000. Windows are custom-fit to ensure a proper seal, better insulation and long-lasting performance in all seasons.",
         "The window styles we install are double-hung, casement, awning, slider, picture and stationary, bay and bow, transom, and impact-resistant windows for storm-prone areas. Painting starts with preparation, because that is what the finish lasts on: power washing, scraping loose paint, sanding, replacing damaged trim, priming where needed and sealing cracks and gaps."
       ],
-      "points": ["Exterior painting, with full surface preparation", "Vinyl, composite, stucco, wood and metal siding", "Fiber cement, Hardie Board and LP SmartSide", "Engineered wood and insulated siding systems", "Double-hung, casement, awning and slider windows", "Bay, bow, transom and impact-resistant windows", "Siding averages $20,000 to $30,000"]
+      "points": [
+        "Exterior painting, with full surface preparation",
+        "Vinyl, composite, stucco, wood and metal siding",
+        "Fiber cement, Hardie Board and LP SmartSide",
+        "Engineered wood and insulated siding systems",
+        "Double-hung, casement, awning and slider windows",
+        "Bay, bow, transom and impact-resistant windows",
+        "Siding averages $20,000 to $30,000"
+      ]
     },
     {
       "slug": "interior-remodeling",
@@ -289,7 +452,14 @@
         "We remodel kitchens, with custom cabinets and countertops, upgraded flooring, lighting and fixtures; bathrooms, with walk-in showers, tubs, vanities, tile and heated flooring; and bedrooms, with built-in storage, better lighting and insulation, custom flooring and accent walls. We also finish basements into a home theater, gym or guest suite, and open up living rooms into open-concept layouts.",
         "We focus on quality workmanship and clean, reliable results, whether the job is an update or a full renovation."
       ],
-      "points": ["Kitchen remodeling, cabinets through fixtures", "Bathroom remodeling, showers, tubs and vanities", "Bedroom renovations and built-in storage", "Basement finishing", "Living room and open-concept design", "Handled by a general contractor"]
+      "points": [
+        "Kitchen remodeling, cabinets through fixtures",
+        "Bathroom remodeling, showers, tubs and vanities",
+        "Bedroom renovations and built-in storage",
+        "Basement finishing",
+        "Living room and open-concept design",
+        "Handled by a general contractor"
+      ]
     },
     {
       "slug": "power-washing",
@@ -304,24 +474,59 @@
         "We wash driveways and walkways, decks and patios, wooden and vinyl fences, siding and exteriors, and roofs and gutters, using industry-leading equipment and eco-friendly cleaning solutions at the water pressure each surface can take.",
         "Power washing is one of the services on our enquiry form, and we will quote it alongside roofing or exterior work on the same visit."
       ],
-      "points": ["Driveways, walkways, decks and patios", "Wooden and vinyl fences", "Siding and exteriors", "Roofs and gutters", "Eco-friendly cleaning solutions", "Removes dirt, grime, mold and mildew", "Quoted alongside other exterior work"]
+      "points": [
+        "Driveways, walkways, decks and patios",
+        "Wooden and vinyl fences",
+        "Siding and exteriors",
+        "Roofs and gutters",
+        "Eco-friendly cleaning solutions",
+        "Removes dirt, grime, mold and mildew",
+        "Quoted alongside other exterior work"
+      ]
     }
   ],
   "claim": {
     "title": "How we handle your insurance claim",
     "text": "With 20+ years of experience handling insurance claims, we help maximize your coverage and minimize out-of-pocket costs for storm damage restoration.",
     "steps": [
-      { "title": "Free inspection", "text": "We inspect the damage thoroughly, within 24 hours of your call." },
-      { "title": "Documentation", "text": "You get a detailed report of what the storm did to the roof." },
-      { "title": "Claim submission", "text": "We guide you through the entire insurance process, from documentation to submission." },
-      { "title": "The adjuster", "text": "We communicate directly with your adjuster when it helps your claim." },
-      { "title": "Restoration", "text": "Our crew restores the roof's integrity and protects the property from further harm." }
+      {
+        "title": "Free inspection",
+        "text": "We inspect the damage thoroughly, within 24 hours of your call."
+      },
+      {
+        "title": "Documentation",
+        "text": "You get a detailed report of what the storm did to the roof."
+      },
+      {
+        "title": "Claim submission",
+        "text": "We guide you through the entire insurance process, from documentation to submission."
+      },
+      {
+        "title": "The adjuster",
+        "text": "We communicate directly with your adjuster when it helps your claim."
+      },
+      {
+        "title": "Restoration",
+        "text": "Our crew restores the roof's integrity and protects the property from further harm."
+      }
     ]
   },
   "materials": {
     "title": "Manufacturers we are affiliated with",
     "text": "These partnerships ensure access to premium materials, better warranties and competitive pricing. We match the right manufacturer and product to your needs, preferences and budget.",
-    "brands": ["Malarkey", "DaVinci", "Boral", "Brava", "Euroshield", "Karnak", "Garland", "Muller", "CW", "Westlake Shingles", "United Steel Shingles"]
+    "brands": [
+      "Malarkey",
+      "DaVinci",
+      "Boral",
+      "Brava",
+      "Euroshield",
+      "Karnak",
+      "Garland",
+      "Muller",
+      "CW",
+      "Westlake Shingles",
+      "United Steel Shingles"
+    ]
   },
   "projects": [
     {
@@ -363,17 +568,35 @@
     "image": "/brands/cactusjaxroofingconstruction/about",
     "imageAlt": "A Houston home with a new roof over the main house and the covered patio",
     "values": [
-      { "title": "Quality assurance", "text": "Industry-leading roofing systems installed with strict quality control, detailed documentation and long-term performance in mind." },
-      { "title": "Commercial expertise", "text": "Nearly two decades of industry experience behind commercial roofing solutions tailored to protect and enhance property investments." },
-      { "title": "Efficient project execution", "text": "Operational experience, supplier relationships and scalable coordination across commercial and multifamily projects." }
+      {
+        "title": "Quality assurance",
+        "text": "Industry-leading roofing systems installed with strict quality control, detailed documentation and long-term performance in mind."
+      },
+      {
+        "title": "Commercial expertise",
+        "text": "Nearly two decades of industry experience behind commercial roofing solutions tailored to protect and enhance property investments."
+      },
+      {
+        "title": "Efficient project execution",
+        "text": "Operational experience, supplier relationships and scalable coordination across commercial and multifamily projects."
+      }
     ]
   },
   "inspection": {
     "title": "What happens at a free inspection",
     "steps": [
-      { "title": "You book a consultation", "text": "Schedule a free consultation to assess your needs, with no obligation." },
-      { "title": "We inspect the roof", "text": "A full assessment, on the roof or by drone, to find issues before they become severe problems." },
-      { "title": "You get the estimate", "text": "A free, detailed estimate within 24 hours, covering materials, labor, permits and cleanup." }
+      {
+        "title": "You book a consultation",
+        "text": "Schedule a free consultation to assess your needs, with no obligation."
+      },
+      {
+        "title": "We inspect the roof",
+        "text": "A full assessment, on the roof or by drone, to find issues before they become severe problems."
+      },
+      {
+        "title": "You get the estimate",
+        "text": "A free, detailed estimate within 24 hours, covering materials, labor, permits and cleanup."
+      }
     ]
   },
   "serviceArea": [

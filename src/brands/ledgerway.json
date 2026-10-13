@@ -14,7 +14,20 @@
   "license": "LedgerWay, Inc. provides tax, bookkeeping, client accounting, advisory and CFO services and is not a licensed CPA firm. Services requiring CPA licensure are performed by AMS CPAs, a licensed independent CPA firm.",
   "rating": 5.0,
   "reviewCount": 7,
-  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "cta": {
     "label": "Schedule a Consultation",
     "text": "Schedule a consultation to get a custom quote, talk through where your business is and what it needs, and find out whether LedgerWay is the right fit."
@@ -32,10 +45,24 @@
     "body": "'Archivo', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap",
     "logo": "/brands/ledgerway/logo.webp",
+    "logoMono": "/brands/ledgerway/logo-mono.webp",
     "logoWidth": 70,
     "logoHeight": 74,
-    "logoRatio": 0.941,
+    "logoRatio": 0.94,
     "logoGround": "#ffffff",
+    "logoReads": [
+      0.463,
+      0.321,
+      0.184,
+      0.103,
+      0.162,
+      0.297,
+      0.432,
+      0.572,
+      0.717,
+      0.863,
+      1.0
+    ],
     "logoName": true
   },
   "hero": {
@@ -44,13 +71,20 @@
     "lead": "We work alongside Houston's small businesses as they grow. The right expertise, at the right time, for wherever you're headed.",
     "image": "/brands/ledgerway/hero",
     "imageAlt": "A bright open-plan office with people working at long wooden desks",
-    "points": ["Replies within one business day", "Tax, books and CFO advice in one firm", "Remote and in-person availability"]
+    "points": [
+      "Replies within one business day",
+      "Tax, books and CFO advice in one firm",
+      "Remote and in-person availability"
+    ]
   },
   "overview": {
     "title": "Tax, accounting and CFO advisory in one relationship.",
     "text": "One relationship for all your numbers, so your taxes, books and decisions are always working toward your goal. Pick a service to see what it covers, or call and talk it through with our team."
   },
-  "audiences": { "individuals": "Individuals", "businesses": "Businesses" },
+  "audiences": {
+    "individuals": "Individuals",
+    "businesses": "Businesses"
+  },
   "services": [
     {
       "slug": "tax-planning",
@@ -63,17 +97,44 @@
       "image": "/brands/ledgerway/tax",
       "imageAlt": "Printed tax withholding forms on a desk beside a pen, a calculator and a mug of coffee",
       "covers": [
-        { "title": "Entity structure review", "text": "Whether the way your business is set up still fits, including S corporation elections and entity elections that reduce what you owe." },
-        { "title": "Texas taxes", "text": "Smart handling of the Texas franchise tax and Harris County property tax as part of year-round planning." },
-        { "title": "Owner compensation", "text": "How you pay yourself, and what that choice costs or saves at the end of the year." },
-        { "title": "Quarterly estimates", "text": "Estimated payments calculated so you are not short in April and not overpaying all year." },
-        { "title": "Multi-state planning", "text": "Texas tax law and the complexities of selling into other states, handled before they become surprise bills." },
-        { "title": "A 12 to 18 month tax blueprint", "text": "A review of your last three years of personal and business returns, then a documented roadmap of 5 to 10 strategies with the savings each one is projected to produce, which we can implement with you." },
-        { "title": "Relocating to Texas", "text": "Owners moving a business here often still owe filings or carry nexus in their former state, and we close those out while the new structure is set up." }
+        {
+          "title": "Entity structure review",
+          "text": "Whether the way your business is set up still fits, including S corporation elections and entity elections that reduce what you owe."
+        },
+        {
+          "title": "Texas taxes",
+          "text": "Smart handling of the Texas franchise tax and Harris County property tax as part of year-round planning."
+        },
+        {
+          "title": "Owner compensation",
+          "text": "How you pay yourself, and what that choice costs or saves at the end of the year."
+        },
+        {
+          "title": "Quarterly estimates",
+          "text": "Estimated payments calculated so you are not short in April and not overpaying all year."
+        },
+        {
+          "title": "Multi-state planning",
+          "text": "Texas tax law and the complexities of selling into other states, handled before they become surprise bills."
+        },
+        {
+          "title": "A 12 to 18 month tax blueprint",
+          "text": "A review of your last three years of personal and business returns, then a documented roadmap of 5 to 10 strategies with the savings each one is projected to produce, which we can implement with you."
+        },
+        {
+          "title": "Relocating to Texas",
+          "text": "Owners moving a business here often still owe filings or carry nexus in their former state, and we close those out while the new structure is set up."
+        }
       ],
       "questions": [
-        { "q": "How do you help Houston consulting agencies and professional service firms structure their taxes?", "a": "We frequently work with consultants, agencies and service firms. We help you navigate decisions like owner compensation, S corporation elections, and understanding exactly what the numbers dictate when it is time to hire or expand." },
-        { "q": "My business operates in Texas, but we sell to other states. Do you handle multi-state tax compliance?", "a": "Yes. We have a deep understanding of Texas tax laws and the complexities of operating across state lines, and we manage your multi-state compliance so you never have to worry about surprise tax bills, penalties or filing errors." }
+        {
+          "q": "How do you help Houston consulting agencies and professional service firms structure their taxes?",
+          "a": "We frequently work with consultants, agencies and service firms. We help you navigate decisions like owner compensation, S corporation elections, and understanding exactly what the numbers dictate when it is time to hire or expand."
+        },
+        {
+          "q": "My business operates in Texas, but we sell to other states. Do you handle multi-state tax compliance?",
+          "a": "Yes. We have a deep understanding of Texas tax laws and the complexities of operating across state lines, and we manage your multi-state compliance so you never have to worry about surprise tax bills, penalties or filing errors."
+        }
       ]
     },
     {
@@ -87,15 +148,36 @@
       "image": "/brands/ledgerway/bookkeeping",
       "imageAlt": "A desk with a desktop calculator, ring binders, a squared notepad and reading glasses",
       "covers": [
-        { "title": "Monthly reconciliation and reporting", "text": "Monthly, quarterly or annual accounting with a balance sheet, profit and loss, and general ledger maintenance." },
-        { "title": "Payables, receivables and payroll", "text": "Accounts payable and receivable, payroll recording and sales tax, handled as part of the monthly close." },
-        { "title": "Catch-up and cleanup", "text": "Books that are behind or that you do not trust are brought current as a separate engagement before monthly service starts." },
-        { "title": "QuickBooks Online conversion", "text": "A bookkeeping assessment and conversion onto QuickBooks Online, with Ramp and Gusto integrated where you use them." }
+        {
+          "title": "Monthly reconciliation and reporting",
+          "text": "Monthly, quarterly or annual accounting with a balance sheet, profit and loss, and general ledger maintenance."
+        },
+        {
+          "title": "Payables, receivables and payroll",
+          "text": "Accounts payable and receivable, payroll recording and sales tax, handled as part of the monthly close."
+        },
+        {
+          "title": "Catch-up and cleanup",
+          "text": "Books that are behind or that you do not trust are brought current as a separate engagement before monthly service starts."
+        },
+        {
+          "title": "QuickBooks Online conversion",
+          "text": "A bookkeeping assessment and conversion onto QuickBooks Online, with Ramp and Gusto integrated where you use them."
+        }
       ],
       "questions": [
-        { "q": "Do I need a CPA or a bookkeeper?", "a": "A bookkeeper keeps your records accurate and current. A CPA handles tax strategy, filing and higher-level financial decisions. Most growing businesses need both, and here your bookkeeping team works alongside our tax team so nothing falls through the cracks." },
-        { "q": "What if my books are already a mess?", "a": "That is more common than you would think. We offer catch-up and cleanup bookkeeping as a separate engagement to get your books in order before we move to monthly service, and we assess what is needed on your first call." },
-        { "q": "Will I work with the same person every time?", "a": "Yes. Every client has a named bookkeeping team rather than a rotating staff pool. The same people handle your account, know your business, and are the ones you reach out to with questions." }
+        {
+          "q": "Do I need a CPA or a bookkeeper?",
+          "a": "A bookkeeper keeps your records accurate and current. A CPA handles tax strategy, filing and higher-level financial decisions. Most growing businesses need both, and here your bookkeeping team works alongside our tax team so nothing falls through the cracks."
+        },
+        {
+          "q": "What if my books are already a mess?",
+          "a": "That is more common than you would think. We offer catch-up and cleanup bookkeeping as a separate engagement to get your books in order before we move to monthly service, and we assess what is needed on your first call."
+        },
+        {
+          "q": "Will I work with the same person every time?",
+          "a": "Yes. Every client has a named bookkeeping team rather than a rotating staff pool. The same people handle your account, know your business, and are the ones you reach out to with questions."
+        }
       ]
     },
     {
@@ -109,17 +191,44 @@
       "image": "/brands/ledgerway/cfo",
       "imageAlt": "Hands working a desktop calculator over an open notebook, with a printed bar chart and a laptop alongside",
       "covers": [
-        { "title": "Monthly financial reporting", "text": "Management financial statements with variance commentary, and monthly close oversight and sign-off." },
-        { "title": "Cash flow forecasting", "text": "A 13-week rolling cash forecast maintained and reviewed, so you know what happens if revenue dips." },
-        { "title": "Growth and hiring decisions", "text": "A hiring plan and capacity model aligned with finance, plus decision support on pricing, expansion and acquisitions." },
-        { "title": "Lending and investor preparation", "text": "Board and investor reporting packages, fundraising support, and coordination with bankers and lenders on covenants." },
-        { "title": "Controller-level oversight", "text": "GAAP review of revenue recognition, accruals and deferrals, chart of accounts governance, accounting policy memos such as ASC 606 and ASC 842, and an annual audit-readiness review." },
-        { "title": "Advisory add-ons", "text": "Budget and forecast builds, KPI dashboards and management reporting, cash flow management, business valuation, financial modelling and M&A due diligence." }
+        {
+          "title": "Monthly financial reporting",
+          "text": "Management financial statements with variance commentary, and monthly close oversight and sign-off."
+        },
+        {
+          "title": "Cash flow forecasting",
+          "text": "A 13-week rolling cash forecast maintained and reviewed, so you know what happens if revenue dips."
+        },
+        {
+          "title": "Growth and hiring decisions",
+          "text": "A hiring plan and capacity model aligned with finance, plus decision support on pricing, expansion and acquisitions."
+        },
+        {
+          "title": "Lending and investor preparation",
+          "text": "Board and investor reporting packages, fundraising support, and coordination with bankers and lenders on covenants."
+        },
+        {
+          "title": "Controller-level oversight",
+          "text": "GAAP review of revenue recognition, accruals and deferrals, chart of accounts governance, accounting policy memos such as ASC 606 and ASC 842, and an annual audit-readiness review."
+        },
+        {
+          "title": "Advisory add-ons",
+          "text": "Budget and forecast builds, KPI dashboards and management reporting, cash flow management, business valuation, financial modelling and M&A due diligence."
+        }
       ],
       "questions": [
-        { "q": "What is a fractional CFO?", "a": "A senior financial strategist who works with your business on a part-time or ongoing basis, giving you CFO-level guidance without the cost of a full-time executive hire. Here your fractional CFO is part of the same team as your accountant and tax advisor." },
-        { "q": "How much does a fractional CFO cost?", "a": "Our fractional CFO services start at a flat fee for eight-hour blocks, while controller services are a flat monthly fee that varies with your needs and complexity. You can add hours, ramp up or ramp down as the business changes." },
-        { "q": "Do I have to use you for bookkeeping to get CFO advisory?", "a": "No. If you have a bookkeeping setup you trust, we can work with it, though the advisory work is most effective when it is built on accurate, current books." }
+        {
+          "q": "What is a fractional CFO?",
+          "a": "A senior financial strategist who works with your business on a part-time or ongoing basis, giving you CFO-level guidance without the cost of a full-time executive hire. Here your fractional CFO is part of the same team as your accountant and tax advisor."
+        },
+        {
+          "q": "How much does a fractional CFO cost?",
+          "a": "Our fractional CFO services start at a flat fee for eight-hour blocks, while controller services are a flat monthly fee that varies with your needs and complexity. You can add hours, ramp up or ramp down as the business changes."
+        },
+        {
+          "q": "Do I have to use you for bookkeeping to get CFO advisory?",
+          "a": "No. If you have a bookkeeping setup you trust, we can work with it, though the advisory work is most effective when it is built on accurate, current books."
+        }
       ]
     },
     {
@@ -131,15 +240,36 @@
       "text": "Growth isn't a solo journey. When you're ready for what's next, we have the relationships, resources and expertise to support that too, from access to funding to buying or selling a business.",
       "lead": "Small businesses deserve a real financial partner, one who knows their business, answers when they call, and can help them make the right moves as they scale. That is what we mean by being your partner on the way up.",
       "covers": [
-        { "title": "Access to growth capital", "text": "Flexible growth capital, investor introductions and investment-ready financials, so you show up prepared for funding conversations." },
-        { "title": "Fund-ready financials", "text": "Clean, lender-ready statements, reporting that builds credibility, and projections and documentation." },
-        { "title": "Buying or selling a business", "text": "Pre-LOI financial review of the target, quality of earnings support and EBITDA analysis, and lender-ready deal funding packages." },
-        { "title": "After the deal closes", "text": "Post-close entity setup, accounting integration, and the payroll and systems transition." },
-        { "title": "Tech stack recommendations", "text": "Building and optimizing a stack that reduces manual work and improves visibility, including QuickBooks Online, Ramp, Brightwell and Gusto." }
+        {
+          "title": "Access to growth capital",
+          "text": "Flexible growth capital, investor introductions and investment-ready financials, so you show up prepared for funding conversations."
+        },
+        {
+          "title": "Fund-ready financials",
+          "text": "Clean, lender-ready statements, reporting that builds credibility, and projections and documentation."
+        },
+        {
+          "title": "Buying or selling a business",
+          "text": "Pre-LOI financial review of the target, quality of earnings support and EBITDA analysis, and lender-ready deal funding packages."
+        },
+        {
+          "title": "After the deal closes",
+          "text": "Post-close entity setup, accounting integration, and the payroll and systems transition."
+        },
+        {
+          "title": "Tech stack recommendations",
+          "text": "Building and optimizing a stack that reduces manual work and improves visibility, including QuickBooks Online, Ramp, Brightwell and Gusto."
+        }
       ],
       "questions": [
-        { "q": "Can you help my business secure funding?", "a": "Yes. We make sure your financial statements are clean, accurate and ready for lenders to review so you can confidently secure the growth capital you need." },
-        { "q": "What is Homegrown capital?", "a": "Homegrown is a flexible funding solution for established businesses ready to expand, offering brick and mortar expansion loans, funding for new locations and tenant improvement bridge financing with no personal guarantees or equity, and our clients receive discounts on it." }
+        {
+          "q": "Can you help my business secure funding?",
+          "a": "Yes. We make sure your financial statements are clean, accurate and ready for lenders to review so you can confidently secure the growth capital you need."
+        },
+        {
+          "q": "What is Homegrown capital?",
+          "a": "Homegrown is a flexible funding solution for established businesses ready to expand, offering brick and mortar expansion loans, funding for new locations and tenant improvement bridge financing with no personal guarantees or equity, and our clients receive discounts on it."
+        }
       ]
     },
     {
@@ -151,12 +281,30 @@
       "text": "Tax preparation and filing handled by CPAs and Enrolled Agents, who have helped thousands of small businesses file accurately, on time, and with every deduction they have earned.",
       "lead": "Whether you are a sole proprietor or have a complex multi-entity structure, a licensed CPA or Enrolled Agent prepares and reviews your return and flags anything worth discussing before it is filed.",
       "covers": [
-        { "title": "Business entity returns", "text": "S corporations (1120-S), partnerships (1065), LLCs, sole proprietors (Schedule C) and rental properties (Schedule E), filed accurately and on time every year." },
-        { "title": "Multi-state filing", "text": "Nexus analysis, apportionment and every applicable state filing." },
-        { "title": "Owner personal returns", "text": "Filing your business and personal taxes with the same team means nothing falls through the gap." },
-        { "title": "Prior year amendments", "text": "Errors or missed opportunities in previous filings are amended and refiled." },
-        { "title": "Real estate investments", "text": "Rental properties and portfolios, depreciation schedules and passive loss tracking." },
-        { "title": "Audit protection coverage", "text": "Coverage for up to $1,000,000 of tax representation fees in the event of an IRS audit or notice." }
+        {
+          "title": "Business entity returns",
+          "text": "S corporations (1120-S), partnerships (1065), LLCs, sole proprietors (Schedule C) and rental properties (Schedule E), filed accurately and on time every year."
+        },
+        {
+          "title": "Multi-state filing",
+          "text": "Nexus analysis, apportionment and every applicable state filing."
+        },
+        {
+          "title": "Owner personal returns",
+          "text": "Filing your business and personal taxes with the same team means nothing falls through the gap."
+        },
+        {
+          "title": "Prior year amendments",
+          "text": "Errors or missed opportunities in previous filings are amended and refiled."
+        },
+        {
+          "title": "Real estate investments",
+          "text": "Rental properties and portfolios, depreciation schedules and passive loss tracking."
+        },
+        {
+          "title": "Audit protection coverage",
+          "text": "Coverage for up to $1,000,000 of tax representation fees in the event of an IRS audit or notice."
+        }
       ]
     },
     {
@@ -168,11 +316,26 @@
       "text": "Individual tax preparation for real estate investors, 1099 earners and solopreneurs, prepared by licensed CPAs and Enrolled Agents with flat-fee pricing agreed before the work starts.",
       "lead": "If you have ever walked away from tax season feeling confused, overcharged or just plain stressed, you are not alone. We quote a flat fee up front and carry a 30-business-day delivery guarantee on individual returns.",
       "covers": [
-        { "title": "Federal and state returns", "text": "Full preparation and filing including all applicable schedules (C, D, E, SE) and every state you owe in." },
-        { "title": "Rental and real estate schedules", "text": "Schedule E prepared with full depreciation tracking, expense deductions and passive activity analysis." },
-        { "title": "Self-employment and 1099 income", "text": "Schedule C filed with every deduction identified, and self-employment tax calculated and reduced where the tax code allows." },
-        { "title": "Quarterly estimated payments", "text": "We calculate what you owe each quarter so you are not caught short in April and not overpaying through the year." },
-        { "title": "Prior year review and amendments", "text": "We review past returns when we onboard new clients and amend them if we find errors or missed deductions worth recovering." }
+        {
+          "title": "Federal and state returns",
+          "text": "Full preparation and filing including all applicable schedules (C, D, E, SE) and every state you owe in."
+        },
+        {
+          "title": "Rental and real estate schedules",
+          "text": "Schedule E prepared with full depreciation tracking, expense deductions and passive activity analysis."
+        },
+        {
+          "title": "Self-employment and 1099 income",
+          "text": "Schedule C filed with every deduction identified, and self-employment tax calculated and reduced where the tax code allows."
+        },
+        {
+          "title": "Quarterly estimated payments",
+          "text": "We calculate what you owe each quarter so you are not caught short in April and not overpaying through the year."
+        },
+        {
+          "title": "Prior year review and amendments",
+          "text": "We review past returns when we onboard new clients and amend them if we find errors or missed deductions worth recovering."
+        }
       ]
     },
     {
@@ -186,16 +349,40 @@
       "image": "/brands/ledgerway/audit",
       "imageAlt": "Four people leaning over a white table, reading a printed spreadsheet together",
       "covers": [
-        { "title": "End-to-end support", "text": "From the first notice through final resolution, we help manage the audit process." },
-        { "title": "Direct IRS communication", "text": "We serve as your representative with the IRS, helping reduce stress and avoid missteps." },
-        { "title": "Documentation and case preparation", "text": "We review your records, organize supporting documents and respond to IRS questions." },
-        { "title": "Strategic audit defense", "text": "We identify risk areas and work to minimize penalties, liabilities and unnecessary exposure." },
-        { "title": "Penalty abatement and correspondence", "text": "Penalty abatement support and ongoing management of IRS correspondence, including notices and correspondence exams." }
+        {
+          "title": "End-to-end support",
+          "text": "From the first notice through final resolution, we help manage the audit process."
+        },
+        {
+          "title": "Direct IRS communication",
+          "text": "We serve as your representative with the IRS, helping reduce stress and avoid missteps."
+        },
+        {
+          "title": "Documentation and case preparation",
+          "text": "We review your records, organize supporting documents and respond to IRS questions."
+        },
+        {
+          "title": "Strategic audit defense",
+          "text": "We identify risk areas and work to minimize penalties, liabilities and unnecessary exposure."
+        },
+        {
+          "title": "Penalty abatement and correspondence",
+          "text": "Penalty abatement support and ongoing management of IRS correspondence, including notices and correspondence exams."
+        }
       ],
       "questions": [
-        { "q": "Can a CPA represent me during an IRS audit?", "a": "Yes. A CPA can represent taxpayers before the IRS and help manage audit communication, documentation requests and responses." },
-        { "q": "Do I need a CPA or a tax attorney?", "a": "For most small business audits and correspondence exams, a CPA or Enrolled Agent is exactly what you need. Our team is authorized to represent you before the IRS and will advise if a tax attorney is warranted." },
-        { "q": "What should I do if I receive an IRS audit letter?", "a": "Do not ignore it. Review the notice carefully and speak with a tax professional as soon as possible to understand deadlines, documentation requirements and your response options." }
+        {
+          "q": "Can a CPA represent me during an IRS audit?",
+          "a": "Yes. A CPA can represent taxpayers before the IRS and help manage audit communication, documentation requests and responses."
+        },
+        {
+          "q": "Do I need a CPA or a tax attorney?",
+          "a": "For most small business audits and correspondence exams, a CPA or Enrolled Agent is exactly what you need. Our team is authorized to represent you before the IRS and will advise if a tax attorney is warranted."
+        },
+        {
+          "q": "What should I do if I receive an IRS audit letter?",
+          "a": "Do not ignore it. Review the notice carefully and speak with a tax professional as soon as possible to understand deadlines, documentation requirements and your response options."
+        }
       ]
     }
   ],
@@ -203,15 +390,37 @@
     "title": "How it works",
     "text": "We keep it simple, so your tax preparation is clear, predictable and stress-free.",
     "steps": [
-      { "title": "Get a quote", "text": "Schedule a consultation to get clear, transparent pricing before moving forward." },
-      { "title": "Upload your documents", "text": "You get a secure, easy-to-use portal to upload documents and manage your filings with your team." },
-      { "title": "We prepare and review your return", "text": "A licensed CPA or Enrolled Agent handles your return, and we flag anything worth discussing before filing." },
-      { "title": "Sign and start", "text": "Once you sign up you meet your team and go through a simple onboarding process." }
+      {
+        "title": "Get a quote",
+        "text": "Schedule a consultation to get clear, transparent pricing before moving forward."
+      },
+      {
+        "title": "Upload your documents",
+        "text": "You get a secure, easy-to-use portal to upload documents and manage your filings with your team."
+      },
+      {
+        "title": "We prepare and review your return",
+        "text": "A licensed CPA or Enrolled Agent handles your return, and we flag anything worth discussing before filing."
+      },
+      {
+        "title": "Sign and start",
+        "text": "Once you sign up you meet your team and go through a simple onboarding process."
+      }
     ]
   },
   "affiliations": {
     "title": "Credentials and partners",
-    "items": ["Certified Intuit ProAdvisor, Elite tier", "Dave Ramsey Endorsed Local Provider", "Texas Society of CPAs (TXCPA) member", "QuickBooks Online", "Gusto Online HR Services", "Brightwell cross-border payments", "Ramp", "Alternative Payments", "Homegrown expansion loans"]
+    "items": [
+      "Certified Intuit ProAdvisor, Elite tier",
+      "Dave Ramsey Endorsed Local Provider",
+      "Texas Society of CPAs (TXCPA) member",
+      "QuickBooks Online",
+      "Gusto Online HR Services",
+      "Brightwell cross-border payments",
+      "Ramp",
+      "Alternative Payments",
+      "Homegrown expansion loans"
+    ]
   },
   "about": {
     "title": "Your partner on the way up.",
@@ -227,33 +436,107 @@
     "image": "/brands/ledgerway/about",
     "imageAlt": "A meeting room with a long light-wood table, white chairs and a whiteboard",
     "values": [
-      { "title": "Proactive communication", "text": "We flag opportunities and issues before you have to ask us about them." },
-      { "title": "Same team every time", "text": "You work with a named team rather than someone new every year." },
-      { "title": "Year-round support", "text": "Tax strategy, cash flow planning and opportunity spotting whenever it is needed, not only in April." },
-      { "title": "Small business obsessed", "text": "From your first complex tax year through to CFO-level guidance and getting funded." },
-      { "title": "Your goals are our goals", "text": "More revenue, better cash flow and more time off: we work for what you are building." }
+      {
+        "title": "Proactive communication",
+        "text": "We flag opportunities and issues before you have to ask us about them."
+      },
+      {
+        "title": "Same team every time",
+        "text": "You work with a named team rather than someone new every year."
+      },
+      {
+        "title": "Year-round support",
+        "text": "Tax strategy, cash flow planning and opportunity spotting whenever it is needed, not only in April."
+      },
+      {
+        "title": "Small business obsessed",
+        "text": "From your first complex tax year through to CFO-level guidance and getting funded."
+      },
+      {
+        "title": "Your goals are our goals",
+        "text": "More revenue, better cash flow and more time off: we work for what you are building."
+      }
     ]
   },
   "faqs": [
-    { "q": "I am searching for a CPA in Houston who actually responds to emails. How is your communication different?", "a": "One of the most common complaints we hear is that owners never hear from their accountant until April. You get a dedicated partner who provides timely answers and proactive advice year-round, and your team will typically get back to you within one business day, or two if it is tax season." },
-    { "q": "My side hustle is growing, and my taxes are too complicated for do-it-yourself software. When should I hire a professional?", "a": "If you have a new entity, a rental property or a side income that is taking off, standard tax software is no longer enough. We also recommend that anyone with $60-80k or more in business income talk to a CPA about options to reduce their tax burden." },
-    { "q": "I need a business loan soon. Can your team help me prepare the financial statements the bank will ask for?", "a": "Yes. Before an investor conversation or applying for a line of credit, your financials need to be perfectly clean. We provide accurate monthly bookkeeping so your business always has the lender-ready records needed to secure financing and demonstrate profitability." },
-    { "q": "Does LedgerWay offer ongoing financial advice, or do you just file taxes in April?", "a": "We are your partner in success year-round, combining tax strategy, accurate bookkeeping and chief financial officer advisory into one relationship. We do not provide personal financial recommendations for investments, but we can recommend a financial advisor or work with yours." },
-    { "q": "Can I work with your accounting team remotely, or do I need to visit an office in Houston?", "a": "Whichever works best for your schedule. We combine modern technology with the personal touch of a traditional firm, offering both fully remote collaboration and in-person availability for local Houston clients." },
-    { "q": "How do I know if my business has outgrown its current tax solution?", "a": "If you are making real decisions about hiring, expanding or financing and do not have current, accurate monthly financials to guide you, it is time for a change. If your current accountant is slow to respond or offers no proactive advice, we are here to provide full-service support." },
-    { "q": "Do you work with businesses outside the Houston area?", "a": "Yes. We work with service-based businesses across the US and currently serve clients across 47 states and territories. Everything is managed through our secure client portal, and your team is a message away regardless of location." },
-    { "q": "What software do you use?", "a": "We work in QuickBooks Online, and we integrate with Ramp for expense management and Gusto for payroll. If you are already using these tools we plug in, and if you are not we will help you set up a stack that fits." },
-    { "q": "Do you offer chief financial officer advisory for businesses that are ready to scale?", "a": "Yes. Our chief financial officer advisory provides ongoing financial strategy so you can make proactive decisions based on accurate data and forecasting rather than only looking at what happened last month." },
-    { "q": "My business makes under $2 million a year. Do I still need to file anything for the Texas franchise tax?", "a": "Yes. Most entities owe nothing under the state's $2.65 million no-tax-due threshold, but you are still legally required to file a Public Information Report every year by May 15. Miss it and the state can forfeit your entity's right to do business in Texas." },
-    { "q": "What is a Houston MUD tax, and how does it affect my rental property or real estate investment?", "a": "Many Houston-area properties sit inside a Municipal Utility District, which adds a separate tax line that funds water, sewer and drainage. It can significantly change the operating math on a rental or investment property, so we factor it into your year-round tax planning." },
-    { "q": "What is the Texas business personal property exemption, and when is the deadline in Harris County?", "a": "Texas raised the exemption for business equipment and inventory to $125,000, and renditions are due to the Harris County Appraisal District by April 15. Above that threshold a full rendition is due, and at or below it you still file a rendition statement rather than a full report." },
-    { "q": "What do I need to get started?", "a": "Usually prior tax returns, business financials, payroll records, bookkeeping access, entity documents and any IRS or state notices. For the first call you only need a clear picture of where the business is and where you need the most support." },
-    { "q": "Can I customise the services I need, or do I have to buy a set package?", "a": "You select and pay for the bookkeeping, tax planning and advisory services you need right now, and add more support later. Tax preparation and planning is flat-fee, accounting is a flat monthly fee, and project work such as catch-up accounting is quoted on its own." },
-    { "q": "What payment methods do you accept?", "a": "We accept credit and debit cards, bank transfers and standard electronic invoicing, and invoices can be paid online through Bill Pay." },
-    { "q": "Is my financial data kept secure?", "a": "Yes. Documents and messages run through a secure client portal backed by encryption, secure cloud storage and strict access controls, in line with industry standards." },
-    { "q": "Why hire an outsourced firm instead of an in-house accountant?", "a": "You get a full team of senior accountants, tax consultants and CFO-level advisors for a fraction of the cost of a full-time hire, and the engagement scales as the business grows." }
+    {
+      "q": "I am searching for a CPA in Houston who actually responds to emails. How is your communication different?",
+      "a": "One of the most common complaints we hear is that owners never hear from their accountant until April. You get a dedicated partner who provides timely answers and proactive advice year-round, and your team will typically get back to you within one business day, or two if it is tax season."
+    },
+    {
+      "q": "My side hustle is growing, and my taxes are too complicated for do-it-yourself software. When should I hire a professional?",
+      "a": "If you have a new entity, a rental property or a side income that is taking off, standard tax software is no longer enough. We also recommend that anyone with $60-80k or more in business income talk to a CPA about options to reduce their tax burden."
+    },
+    {
+      "q": "I need a business loan soon. Can your team help me prepare the financial statements the bank will ask for?",
+      "a": "Yes. Before an investor conversation or applying for a line of credit, your financials need to be perfectly clean. We provide accurate monthly bookkeeping so your business always has the lender-ready records needed to secure financing and demonstrate profitability."
+    },
+    {
+      "q": "Does LedgerWay offer ongoing financial advice, or do you just file taxes in April?",
+      "a": "We are your partner in success year-round, combining tax strategy, accurate bookkeeping and chief financial officer advisory into one relationship. We do not provide personal financial recommendations for investments, but we can recommend a financial advisor or work with yours."
+    },
+    {
+      "q": "Can I work with your accounting team remotely, or do I need to visit an office in Houston?",
+      "a": "Whichever works best for your schedule. We combine modern technology with the personal touch of a traditional firm, offering both fully remote collaboration and in-person availability for local Houston clients."
+    },
+    {
+      "q": "How do I know if my business has outgrown its current tax solution?",
+      "a": "If you are making real decisions about hiring, expanding or financing and do not have current, accurate monthly financials to guide you, it is time for a change. If your current accountant is slow to respond or offers no proactive advice, we are here to provide full-service support."
+    },
+    {
+      "q": "Do you work with businesses outside the Houston area?",
+      "a": "Yes. We work with service-based businesses across the US and currently serve clients across 47 states and territories. Everything is managed through our secure client portal, and your team is a message away regardless of location."
+    },
+    {
+      "q": "What software do you use?",
+      "a": "We work in QuickBooks Online, and we integrate with Ramp for expense management and Gusto for payroll. If you are already using these tools we plug in, and if you are not we will help you set up a stack that fits."
+    },
+    {
+      "q": "Do you offer chief financial officer advisory for businesses that are ready to scale?",
+      "a": "Yes. Our chief financial officer advisory provides ongoing financial strategy so you can make proactive decisions based on accurate data and forecasting rather than only looking at what happened last month."
+    },
+    {
+      "q": "My business makes under $2 million a year. Do I still need to file anything for the Texas franchise tax?",
+      "a": "Yes. Most entities owe nothing under the state's $2.65 million no-tax-due threshold, but you are still legally required to file a Public Information Report every year by May 15. Miss it and the state can forfeit your entity's right to do business in Texas."
+    },
+    {
+      "q": "What is a Houston MUD tax, and how does it affect my rental property or real estate investment?",
+      "a": "Many Houston-area properties sit inside a Municipal Utility District, which adds a separate tax line that funds water, sewer and drainage. It can significantly change the operating math on a rental or investment property, so we factor it into your year-round tax planning."
+    },
+    {
+      "q": "What is the Texas business personal property exemption, and when is the deadline in Harris County?",
+      "a": "Texas raised the exemption for business equipment and inventory to $125,000, and renditions are due to the Harris County Appraisal District by April 15. Above that threshold a full rendition is due, and at or below it you still file a rendition statement rather than a full report."
+    },
+    {
+      "q": "What do I need to get started?",
+      "a": "Usually prior tax returns, business financials, payroll records, bookkeeping access, entity documents and any IRS or state notices. For the first call you only need a clear picture of where the business is and where you need the most support."
+    },
+    {
+      "q": "Can I customise the services I need, or do I have to buy a set package?",
+      "a": "You select and pay for the bookkeeping, tax planning and advisory services you need right now, and add more support later. Tax preparation and planning is flat-fee, accounting is a flat monthly fee, and project work such as catch-up accounting is quoted on its own."
+    },
+    {
+      "q": "What payment methods do you accept?",
+      "a": "We accept credit and debit cards, bank transfers and standard electronic invoicing, and invoices can be paid online through Bill Pay."
+    },
+    {
+      "q": "Is my financial data kept secure?",
+      "a": "Yes. Documents and messages run through a secure client portal backed by encryption, secure cloud storage and strict access controls, in line with industry standards."
+    },
+    {
+      "q": "Why hire an outsourced firm instead of an in-house accountant?",
+      "a": "You get a full team of senior accountants, tax consultants and CFO-level advisors for a fraction of the cost of a full-time hire, and the engagement scales as the business grows."
+    }
   ],
-  "serviceArea": ["Houston", "Midtown", "The Heights", "Montrose", "Katy", "Sugar Land", "The Woodlands"],
+  "serviceArea": [
+    "Houston",
+    "Midtown",
+    "The Heights",
+    "Montrose",
+    "Katy",
+    "Sugar Land",
+    "The Woodlands"
+  ],
   "facts": [
     {
       "heading": "Who we work with",
@@ -261,15 +544,31 @@
     },
     {
       "heading": "Industries we see most in Houston",
-      "items": ["Professional services: marketing and creative agencies, law firms, financial services, management consultants, IT firms and staffing firms", "Contractors and home services, including HVAC project managers, groundskeepers, custodial work and sanitation technicians", "Energy consulting and technology, including utility consultants, landmen, energy analysts and infrastructure consultants", "Niche and specialty businesses, from aviation managers and irrigation specialists to event photographers", "Retail, healthcare, real estate, transport, logistics and construction"]
+      "items": [
+        "Professional services: marketing and creative agencies, law firms, financial services, management consultants, IT firms and staffing firms",
+        "Contractors and home services, including HVAC project managers, groundskeepers, custodial work and sanitation technicians",
+        "Energy consulting and technology, including utility consultants, landmen, energy analysts and infrastructure consultants",
+        "Niche and specialty businesses, from aviation managers and irrigation specialists to event photographers",
+        "Retail, healthcare, real estate, transport, logistics and construction"
+      ]
     },
     {
       "heading": "By the numbers",
-      "items": ["50+ years serving small businesses", "5,100+ active clients", "52+ industries served", "Clients across 47 states and territories"]
+      "items": [
+        "50+ years serving small businesses",
+        "5,100+ active clients",
+        "52+ industries served",
+        "Clients across 47 states and territories"
+      ]
     },
     {
       "heading": "What we guarantee",
-      "items": ["Replies within one business day, and within two business days during tax season", "A 30-business-day delivery guarantee from receiving your files, with clean documents", "Savings found on a tax planning engagement of at least what the engagement costs, or the difference is refunded", "The savings guarantee is available to clients who have not implemented a tax advisory plan in the last two years"]
+      "items": [
+        "Replies within one business day, and within two business days during tax season",
+        "A 30-business-day delivery guarantee from receiving your files, with clean documents",
+        "Savings found on a tax planning engagement of at least what the engagement costs, or the difference is refunded",
+        "The savings guarantee is available to clients who have not implemented a tax advisory plan in the last two years"
+      ]
     },
     {
       "heading": "Audit Protection Plan",
@@ -277,19 +576,45 @@
     },
     {
       "heading": "Pricing",
-      "items": ["Flat-fee pricing, quoted before the work starts, with monthly flat fees for accounting and project pricing for work such as catch-up accounting", "Individual returns, Essentials: from $1,050", "Individual returns for real estate investors, sole proprietors and multi-partnership investors, Enhanced: from $1,850", "Business returns for LLCs, C corporations, S corporations and multi-entity owners: from $2,400", "Houston tax preparation and planning, Getting Started: from $2,500", "Houston tax preparation and planning, Growing Business: from $4,995", "High-net-worth advisory for owners with multiple entities or real estate partnerships: from $9,995", "Fractional CFO work starts at a flat fee for eight-hour blocks; controller work is a flat monthly fee", "Add-ons include financial clean-up, cryptocurrency, equity compensation, additional entities, non-profits and audit protection"]
+      "items": [
+        "Flat-fee pricing, quoted before the work starts, with monthly flat fees for accounting and project pricing for work such as catch-up accounting",
+        "Individual returns, Essentials: from $1,050",
+        "Individual returns for real estate investors, sole proprietors and multi-partnership investors, Enhanced: from $1,850",
+        "Business returns for LLCs, C corporations, S corporations and multi-entity owners: from $2,400",
+        "Houston tax preparation and planning, Getting Started: from $2,500",
+        "Houston tax preparation and planning, Growing Business: from $4,995",
+        "High-net-worth advisory for owners with multiple entities or real estate partnerships: from $9,995",
+        "Fractional CFO work starts at a flat fee for eight-hour blocks; controller work is a flat monthly fee",
+        "Add-ons include financial clean-up, cryptocurrency, equity compensation, additional entities, non-profits and audit protection"
+      ]
     },
     {
       "heading": "Texas and Houston tax rules we handle",
-      "items": ["Texas taxes neither personal nor business income, but franchise tax, sales tax and property tax all still apply", "The franchise tax no-tax-due threshold is $2.65 million, and a Public Information Report is due every year by May 15", "The business personal property exemption is $125,000, with renditions due to the Harris County Appraisal District by April 15", "Many Houston-area properties sit inside a Municipal Utility District, which adds a separate tax line for water, sewer and drainage", "Harris County property tax and multi-state nexus, apportionment and filings"]
+      "items": [
+        "Texas taxes neither personal nor business income, but franchise tax, sales tax and property tax all still apply",
+        "The franchise tax no-tax-due threshold is $2.65 million, and a Public Information Report is due every year by May 15",
+        "The business personal property exemption is $125,000, with renditions due to the Harris County Appraisal District by April 15",
+        "Many Houston-area properties sit inside a Municipal Utility District, which adds a separate tax line for water, sewer and drainage",
+        "Harris County property tax and multi-state nexus, apportionment and filings"
+      ]
     },
     {
       "heading": "Results clients have seen",
-      "items": ["A septic company at $1M in revenue saved $25,000 a year in tax and funded a 401(k) for 12 employees", "A beer tap service business converted to an S corporation and found vehicle depreciation worth $30,000 in savings, which bought a second vehicle and a new hire", "A two-partner film production company restructured into separate S corporations within a partnership and put $56,000 back into the business", "A specialty flooring contractor had a nearly $500,000 IRS bill eliminated after we disputed the IRS-prepared form and filed an amended return"]
+      "items": [
+        "A septic company at $1M in revenue saved $25,000 a year in tax and funded a 401(k) for 12 employees",
+        "A beer tap service business converted to an S corporation and found vehicle depreciation worth $30,000 in savings, which bought a second vehicle and a new hire",
+        "A two-partner film production company restructured into separate S corporations within a partnership and put $56,000 back into the business",
+        "A specialty flooring contractor had a nearly $500,000 IRS bill eliminated after we disputed the IRS-prepared form and filed an amended return"
+      ]
     },
     {
       "heading": "Billing and data security",
-      "items": ["Credit and debit cards, bank transfers and standard electronic invoicing", "Invoices paid online through Bill Pay", "Documents and messages run through a secure client portal", "Encryption, secure cloud storage and strict access controls"]
+      "items": [
+        "Credit and debit cards, bank transfers and standard electronic invoicing",
+        "Invoices paid online through Bill Pay",
+        "Documents and messages run through a secure client portal",
+        "Encryption, secure cloud storage and strict access controls"
+      ]
     },
     {
       "heading": "The consultation",
@@ -297,11 +622,24 @@
     },
     {
       "heading": "Awards and recognition",
-      "items": ["Accounting Business of the Year, Global 100, 2026", "Inc. Regionals Southwest, 2024", "Inc. Regionals Southwest, 2022", "Inc. 5000 Regionals Texas, 2021", "Inc. 5000 fastest-growing companies in Texas, 2020", "Certified Intuit ProAdvisor, Elite tier", "Dave Ramsey Endorsed Local Provider", "Member, Texas Society of CPAs"]
+      "items": [
+        "Accounting Business of the Year, Global 100, 2026",
+        "Inc. Regionals Southwest, 2024",
+        "Inc. Regionals Southwest, 2022",
+        "Inc. 5000 Regionals Texas, 2021",
+        "Inc. 5000 fastest-growing companies in Texas, 2020",
+        "Certified Intuit ProAdvisor, Elite tier",
+        "Dave Ramsey Endorsed Local Provider",
+        "Member, Texas Society of CPAs"
+      ]
     },
     {
       "heading": "Our Houston team",
-      "items": ["Abbie Weller, CPA", "Alfred Gates", "Branka Pusonjic"]
+      "items": [
+        "Abbie Weller, CPA",
+        "Alfred Gates",
+        "Branka Pusonjic"
+      ]
     },
     {
       "heading": "Office hours",
@@ -313,7 +651,11 @@
     },
     {
       "heading": "Find us online",
-      "items": ["facebook.com/LedgerWayInc", "instagram.com/ledgerwayinc", "linkedin.com/company/ledgerway"]
+      "items": [
+        "facebook.com/LedgerWayInc",
+        "instagram.com/ledgerwayinc",
+        "linkedin.com/company/ledgerway"
+      ]
     }
   ]
 }

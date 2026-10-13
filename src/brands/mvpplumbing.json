@@ -13,7 +13,12 @@
   "rating": 5.0,
   "reviewCount": 161,
   "since": 2018,
-  "hours": [["Monday – Sunday", "Open 24 hours"]],
+  "hours": [
+    [
+      "Monday – Sunday",
+      "Open 24 hours"
+    ]
+  ],
   "brand": {
     "primary": "#08086b",
     "primaryDeep": "#050540",
@@ -26,16 +31,35 @@
     "body": "'Barlow', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap",
     "logo": "/brands/mvpplumbing/logo.webp",
+    "logoMono": "/brands/mvpplumbing/logo-mono.webp",
     "logoWidth": 90,
     "logoHeight": 74,
     "logoRatio": 1.216,
-    "logoGround": "#ffffff"
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.396,
+      0.359,
+      0.405,
+      0.47,
+      0.542,
+      0.616,
+      0.687,
+      0.76,
+      0.837,
+      0.916,
+      1.0
+    ]
   },
   "emergency": {
     "title": "24-hour emergency plumbing",
     "text": "Burst pipes, sewage backing up or no water at all, call 832-334-2836 and we will walk you through shutting the water off while we are on the way."
   },
-  "licenses": [{ "label": "Texas Master Plumber", "number": "MPL 38224" }],
+  "licenses": [
+    {
+      "label": "Texas Master Plumber",
+      "number": "MPL 38224"
+    }
+  ],
   "financing": {
     "text": "Financing through Acorn Finance, built into the estimate we send you, with a soft credit check that does not affect your score."
   },
@@ -105,21 +129,29 @@
           "title": "Hydro Jetting",
           "icon": "droplets",
           "text": "4000 PSI at 9 GPM on lines from two inch to six inch. A cable clears a path; jetting cleans the pipe wall so the problem stops coming back.",
-          "points": ["Two inch to six inch lines", "Restaurant grease lines on a schedule"]
+          "points": [
+            "Two inch to six inch lines",
+            "Restaurant grease lines on a schedule"
+          ]
         },
         {
           "slug": "sewer-camera-inspection",
           "title": "Sewer Camera Inspection",
           "icon": "filter",
           "text": "Run when something warrants it, not on every job as standard. It is also the right call before buying an older house.",
-          "points": ["Answers the one question that matters: blockage or pipe"]
+          "points": [
+            "Answers the one question that matters: blockage or pipe"
+          ]
         },
         {
           "slug": "sewer-line-repair-replacement",
           "title": "Sewer Line Repair and Replacement",
           "icon": "waves",
           "text": "Under-slab and yard sewer lines repaired and replaced, with new pipe anchored into the slab so the backfill cannot create a new belly.",
-          "points": ["Trenched yard line replacement", "New pipe anchored against a new belly"]
+          "points": [
+            "Trenched yard line replacement",
+            "New pipe anchored against a new belly"
+          ]
         },
         {
           "slug": "tunneling-under-slab-drain-repair",
@@ -147,21 +179,28 @@
           "title": "Whole House Repiping",
           "icon": "wrench",
           "text": "Water and drain line repipes in Uponor PEX-a and copper. Apartment buildings done one unit at a time on tenant turnover.",
-          "points": ["Uponor PEX-a and copper", "Apartments done on turnover"]
+          "points": [
+            "Uponor PEX-a and copper",
+            "Apartments done on turnover"
+          ]
         },
         {
           "slug": "water-line-repair",
           "title": "Water Line Repair",
           "icon": "droplets",
           "text": "Water lines repaired and always returned with a working shutoff valve and insulation on the repair.",
-          "points": ["Press fittings instead of an open flame where it matters"]
+          "points": [
+            "Press fittings instead of an open flame where it matters"
+          ]
         },
         {
           "slug": "leak-detection",
           "title": "Leak Detection",
           "icon": "filter",
           "text": "We work out what kind of leak it is before opening a ceiling, so the opening is a twelve-inch square instead of half a room.",
-          "points": ["Slab leaks located before any concrete is cut"]
+          "points": [
+            "Slab leaks located before any concrete is cut"
+          ]
         },
         {
           "slug": "fixtures-valves-toilets",
@@ -178,7 +217,9 @@
           "title": "Water Filtration and Softeners",
           "icon": "droplets",
           "text": "Whole-house conditioners, traditional salt softeners, and reverse osmosis for drinking water. Three different problems with three different answers.",
-          "points": ["Isolation valves fitted so it can be serviced without cutting pipe"]
+          "points": [
+            "Isolation valves fitted so it can be serviced without cutting pipe"
+          ]
         }
       ]
     },
@@ -194,14 +235,20 @@
           "title": "Gas Line Repair and Replacement",
           "icon": "flame",
           "text": "Gas line repair, replacement and CenterPoint meter lock-off resolution, with permits and city inspection handled under our license.",
-          "points": ["Yard lines and risers", "Permit and inspection handled"]
+          "points": [
+            "Yard lines and risers",
+            "Permit and inspection handled"
+          ]
         },
         {
           "slug": "gas-pressure-testing",
           "title": "Gas Pressure Testing",
           "icon": "gauge",
           "text": "Annual testing and certification for daycares, multifamily complexes and commercial properties, with the paperwork your inspector wants.",
-          "points": ["Annual certification for licensed daycares", "Paperwork the inspector asks for"]
+          "points": [
+            "Annual certification for licensed daycares",
+            "Paperwork the inspector asks for"
+          ]
         }
       ]
     },
@@ -219,28 +266,38 @@
           "title": "Commercial Plumbing",
           "icon": "circuit",
           "text": "Restaurants, daycares, care facilities, churches, schools, offices, apartment buildings and facility management companies across the Houston area.",
-          "points": ["Work that keeps the building open", "We answer 24 hours"]
+          "points": [
+            "Work that keeps the building open",
+            "We answer 24 hours"
+          ]
         },
         {
           "slug": "grease-line-jetting",
           "title": "Restaurant Grease Line Jetting",
           "icon": "droplets",
           "text": "Emergency backups, or a schedule that stops the emergency happening. Quarterly or twice a year depending on volume.",
-          "points": ["Quarterly or twice-yearly schedules"]
+          "points": [
+            "Quarterly or twice-yearly schedules"
+          ]
         },
         {
           "slug": "drinking-fountains",
           "title": "Drinking Fountains and Bottle Fillers",
           "icon": "filter",
           "text": "ADA bi-level units for churches, schools, gyms and offices, including the supply, the drain and the fixture.",
-          "points": ["ADA bi-level units supplied and fitted"]
+          "points": [
+            "ADA bi-level units supplied and fitted"
+          ]
         },
         {
           "slug": "master-plumber-for-contractors",
           "title": "Master Plumber for Contractors",
           "icon": "wrench",
           "text": "For general contractors, remodelers and maintenance teams who hit the boundary of what they can legally sign off. We pull the permit and pass the inspection.",
-          "points": ["Permits, gas tests and city inspections", "Water meter relocations"]
+          "points": [
+            "Permits, gas tests and city inspections",
+            "Water meter relocations"
+          ]
         }
       ]
     }

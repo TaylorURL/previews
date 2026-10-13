@@ -11,7 +11,20 @@
   "state": "TX",
   "zip": "77530",
   "since": 1990,
-  "hours": [["Mon – Fri", "8 AM – 4 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 4 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "brand": {
     "primary": "#1a2674",
     "primaryDeep": "#10184a",
@@ -24,7 +37,24 @@
     "body": "'Barlow', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap",
     "logo": "/brands/allstarie/logo.webp",
-    "logoWidth": 64
+    "logoMono": "/brands/allstarie/logo-mono.webp",
+    "logoWidth": 74,
+    "logoHeight": 74,
+    "logoRatio": 1.0,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.863,
+      0.842,
+      0.832,
+      0.852,
+      0.873,
+      0.895,
+      0.915,
+      0.936,
+      0.957,
+      0.979,
+      1.0
+    ]
   },
   "emergency": {
     "title": "24 hour electrical service",

@@ -13,7 +13,20 @@
   "rating": 5.0,
   "reviewCount": 181,
   "since": 1982,
-  "hours": [["Mon – Fri", "9:30 AM – 5:30 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "9:30 AM – 5:30 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "brand": {
     "primary": "#04558a",
     "primaryDeep": "#033b61",
@@ -26,14 +39,36 @@
     "body": "'Questrial', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;600;700&family=Questrial&display=swap",
     "logo": "/brands/tricityacheat/logo.webp",
-    "logoWidth": 160
+    "logoMono": "/brands/tricityacheat/logo-mono.webp",
+    "logoWidth": 55,
+    "logoHeight": 74,
+    "logoRatio": 0.738,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.45,
+      0.321,
+      0.21,
+      0.156,
+      0.207,
+      0.314,
+      0.443,
+      0.578,
+      0.72,
+      0.864,
+      1.0
+    ]
   },
   "emergency": {
     "title": "24/7 emergency service",
     "text": "HVAC systems rarely break down at a convenient hour, so emergency service is available when your heating or cooling quits."
   },
   "sameDay": "Same-day estimates are available on new system installations and replacements.",
-  "licenses": [{ "label": "TDLR HVAC", "number": "TACLB23630E" }],
+  "licenses": [
+    {
+      "label": "TDLR HVAC",
+      "number": "TACLB23630E"
+    }
+  ],
   "financing": {
     "text": "Fixed-interest financing on new systems and repairs, with predictable monthly payments and no surprise rate hikes."
   },
@@ -60,14 +95,22 @@
           "title": "Central AC Installation",
           "icon": "air-vent",
           "text": "Central air conditioning installed with efficiency in mind, with a free estimate on any new system or replacement.",
-          "points": ["Free estimates on new systems and replacements", "Same-day estimates available", "Financing available"]
+          "points": [
+            "Free estimates on new systems and replacements",
+            "Same-day estimates available",
+            "Financing available"
+          ]
         },
         {
           "slug": "ac-repair",
           "title": "AC Repair and Maintenance",
           "icon": "wrench",
           "text": "Our certified technicians use advanced diagnostic tools to find problems others miss, then explain the issue in detail before any repair.",
-          "points": ["All makes and models serviced", "All manufacturer warranties honored", "Emergency AC repair available"]
+          "points": [
+            "All makes and models serviced",
+            "All manufacturer warranties honored",
+            "Emergency AC repair available"
+          ]
         },
         {
           "slug": "ductless-mini-splits",
@@ -80,7 +123,10 @@
           "title": "Preventative Maintenance Plans",
           "icon": "gauge",
           "text": "Regular inspections, cleaning and tune-ups that extend equipment life and hold efficiency where it should be.",
-          "points": ["Two visits a year, heating and cooling", "25-point precision system tune-up"]
+          "points": [
+            "Two visits a year, heating and cooling",
+            "25-point precision system tune-up"
+          ]
         },
         {
           "slug": "duct-work",
@@ -104,7 +150,10 @@
           "title": "Furnace Installation",
           "icon": "heater",
           "text": "Furnaces installed and replaced, with a free estimate before the work is scheduled.",
-          "points": ["Free estimates on new systems and replacements", "Financing available"]
+          "points": [
+            "Free estimates on new systems and replacements",
+            "Financing available"
+          ]
         },
         {
           "slug": "heat-pump-systems",
@@ -123,7 +172,10 @@
           "title": "Heating Repair and Maintenance",
           "icon": "wrench",
           "text": "Repairs and maintenance on furnaces, heat pumps and boilers, on all makes and models.",
-          "points": ["All manufacturer warranties honored", "Emergency services available"]
+          "points": [
+            "All manufacturer warranties honored",
+            "Emergency services available"
+          ]
         },
         {
           "slug": "heating-maintenance-plans",
@@ -171,7 +223,10 @@
           "title": "Emergency Repairs",
           "icon": "timer",
           "text": "Emergency repairs when a commercial system goes down outside business hours.",
-          "points": ["Sell, service and replace commercial systems", "Over 40 years of experience"]
+          "points": [
+            "Sell, service and replace commercial systems",
+            "Over 40 years of experience"
+          ]
         }
       ]
     },
@@ -189,14 +244,18 @@
           "title": "Air Filters and Thermostats",
           "icon": "filter",
           "text": "Air filters for clean air and thermostats for precise temperature control.",
-          "points": ["Genuine parts for all major brands"]
+          "points": [
+            "Genuine parts for all major brands"
+          ]
         },
         {
           "slug": "motors-and-capacitors",
           "title": "Motors and Capacitors",
           "icon": "settings",
           "text": "Indoor blower motors for efficient airflow, plus fan motors and capacitors.",
-          "points": ["Fan blades and installation supplies"]
+          "points": [
+            "Fan blades and installation supplies"
+          ]
         },
         {
           "slug": "heating-components",
@@ -209,7 +268,11 @@
           "title": "Pick-Up, Delivery and Shipping",
           "icon": "car",
           "text": "Collect parts at the counter on Pasadena Fwy, or have them delivered or shipped.",
-          "points": ["In-store parts sales Mon – Fri, 9:30 AM – 5:30 PM", "Shipping available on all orders", "Expert installation if you would rather we fit it"]
+          "points": [
+            "In-store parts sales Mon – Fri, 9:30 AM – 5:30 PM",
+            "Shipping available on all orders",
+            "Expert installation if you would rather we fit it"
+          ]
         }
       ]
     }
@@ -256,9 +319,18 @@
     "image": "/brands/tricityacheat/team",
     "imageAlt": "Tri City technicians working on rooftop condensing units",
     "values": [
-      { "title": "Repair before replace", "text": "We always strive to fix the issue before considering a replacement." },
-      { "title": "Free estimates", "text": "Free estimates on new system installations and replacements, available the same day." },
-      { "title": "Any make, any model", "text": "Our technicians work on all makes and models, and we honor all manufacturer warranties." }
+      {
+        "title": "Repair before replace",
+        "text": "We always strive to fix the issue before considering a replacement."
+      },
+      {
+        "title": "Free estimates",
+        "text": "Free estimates on new system installations and replacements, available the same day."
+      },
+      {
+        "title": "Any make, any model",
+        "text": "Our technicians work on all makes and models, and we honor all manufacturer warranties."
+      }
     ]
   },
   "faqs": [
@@ -275,11 +347,27 @@
       "a": "Yes. We sell, service, and replace residential and commercial HVAC systems."
     }
   ],
-  "serviceArea": ["Pasadena", "Deer Park", "La Porte", "Friendswood", "League City", "Houston", "Humble", "Manvel"],
+  "serviceArea": [
+    "Pasadena",
+    "Deer Park",
+    "La Porte",
+    "Friendswood",
+    "League City",
+    "Houston",
+    "Humble",
+    "Manvel"
+  ],
   "facts": [
     {
       "heading": "Brands We Service",
-      "items": ["Trane", "RUUD", "Coleman", "Amana", "Mitsubishi Electric", "Daikin"]
+      "items": [
+        "Trane",
+        "RUUD",
+        "Coleman",
+        "Amana",
+        "Mitsubishi Electric",
+        "Daikin"
+      ]
     },
     {
       "heading": "Accreditation",
@@ -300,7 +388,10 @@
     },
     {
       "heading": "Phone",
-      "items": ["Main: (713) 740-9500", "Alternate: (713) 999-4285"]
+      "items": [
+        "Main: (713) 740-9500",
+        "Alternate: (713) 999-4285"
+      ]
     },
     {
       "heading": "Parts Counter",
@@ -308,11 +399,20 @@
     },
     {
       "heading": "Languages",
-      "items": ["English", "Spanish"]
+      "items": [
+        "English",
+        "Spanish"
+      ]
     },
     {
       "heading": "Payment Methods",
-      "items": ["American Express", "Discover", "MasterCard", "Visa", "Financing"]
+      "items": [
+        "American Express",
+        "Discover",
+        "MasterCard",
+        "Visa",
+        "Financing"
+      ]
     },
     {
       "heading": "Preventative Maintenance Benefits",
@@ -320,7 +420,11 @@
     },
     {
       "heading": "Find Us Online",
-      "items": ["facebook.com/tricityacheating", "instagram.com/tricityacheat", "linkedin.com/company/tri-city-ac-heat"]
+      "items": [
+        "facebook.com/tricityacheating",
+        "instagram.com/tricityacheat",
+        "linkedin.com/company/tri-city-ac-heat"
+      ]
     }
   ]
 }

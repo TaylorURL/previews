@@ -12,7 +12,12 @@
   "zip": "77554",
   "rating": 5.0,
   "reviewCount": 7,
-  "hours": [["Every day", "Open 24 hours"]],
+  "hours": [
+    [
+      "Every day",
+      "Open 24 hours"
+    ]
+  ],
   "brand": {
     "primary": "#1b7cb8",
     "primaryDeep": "#0f4c73",
@@ -25,13 +30,35 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
     "logo": "/brands/kovichacheating/logo.webp",
-    "logoWidth": 220
+    "logoMono": "/brands/kovichacheating/logo-mono.webp",
+    "logoWidth": 174,
+    "logoHeight": 58,
+    "logoRatio": 3.0,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.729,
+      0.564,
+      0.402,
+      0.243,
+      0.097,
+      0.173,
+      0.331,
+      0.492,
+      0.663,
+      0.837,
+      1.0
+    ]
   },
   "emergency": {
     "title": "Available 24/7",
     "text": "Our technicians are available 24/7 for all your heating, cooling and indoor air quality needs."
   },
-  "licenses": [{ "label": "TDLR HVAC", "number": "TACLB105022E" }],
+  "licenses": [
+    {
+      "label": "TDLR HVAC",
+      "number": "TACLB105022E"
+    }
+  ],
   "hero": {
     "eyebrow": "Residential • Commercial • Repairs • Installations",
     "title": "Let the professionals",
@@ -55,7 +82,10 @@
           "title": "A/C Repair",
           "icon": "wrench",
           "text": "Fast and affordable air conditioning repair for homes and businesses across Galveston County, with technicians available 24/7.",
-          "points": ["Residential and commercial", "Available 24 hours a day, every day"]
+          "points": [
+            "Residential and commercial",
+            "Available 24 hours a day, every day"
+          ]
         },
         {
           "slug": "ac-installation",
@@ -72,7 +102,9 @@
           "title": "Routine Maintenance",
           "icon": "gauge",
           "text": "Routine maintenance on the system you already have, so a problem is found before the hottest part of the summer.",
-          "points": ["Residential and commercial"]
+          "points": [
+            "Residential and commercial"
+          ]
         }
       ]
     },
@@ -90,7 +122,10 @@
           "title": "Heating Repair",
           "icon": "flame",
           "text": "No heat on the first cold night is a 24/7 call here. A technician comes out and gets the system running again.",
-          "points": ["Residential and commercial", "Available 24 hours a day, every day"]
+          "points": [
+            "Residential and commercial",
+            "Available 24 hours a day, every day"
+          ]
         },
         {
           "slug": "heating-installation",
@@ -107,7 +142,9 @@
           "title": "Routine Maintenance",
           "icon": "gauge",
           "text": "Routine maintenance that catches a worn part on a system that has sat unused since last winter.",
-          "points": ["Residential and commercial"]
+          "points": [
+            "Residential and commercial"
+          ]
         }
       ]
     },
@@ -125,7 +162,10 @@
           "title": "Indoor Air Quality",
           "icon": "wind",
           "text": "Indoor air quality work for homes and businesses, by technicians who are available 24 hours a day, every day of the year.",
-          "points": ["Residential and commercial", "Available 24 hours a day, every day"]
+          "points": [
+            "Residential and commercial",
+            "Available 24 hours a day, every day"
+          ]
         }
       ]
     }
@@ -201,11 +241,23 @@
   "facts": [
     {
       "heading": "Preferred Brands and Manufacturers",
-      "items": ["Luxaire", "American Standard", "Rheem"]
+      "items": [
+        "Luxaire",
+        "American Standard",
+        "Rheem"
+      ]
     },
     {
       "heading": "Payment Methods",
-      "items": ["American Express", "Visa", "MasterCard", "Discover", "Apple Pay", "Check", "Cash"]
+      "items": [
+        "American Express",
+        "Visa",
+        "MasterCard",
+        "Discover",
+        "Apple Pay",
+        "Check",
+        "Cash"
+      ]
     },
     {
       "heading": "Service Area",
@@ -213,7 +265,12 @@
     },
     {
       "heading": "What We Cover",
-      "items": ["Residential", "Commercial", "Repairs", "Installations"]
+      "items": [
+        "Residential",
+        "Commercial",
+        "Repairs",
+        "Installations"
+      ]
     },
     {
       "heading": "License",

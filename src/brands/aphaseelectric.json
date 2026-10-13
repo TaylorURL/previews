@@ -12,7 +12,20 @@
   "zip": "77338",
   "rating": 5.0,
   "reviewCount": 449,
-  "hours": [["Mon – Sat", "8 AM – 5 PM"], ["Sunday", "Closed"], ["Emergencies", "24 hours a day"]],
+  "hours": [
+    [
+      "Mon – Sat",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ],
+    [
+      "Emergencies",
+      "24 hours a day"
+    ]
+  ],
   "brand": {
     "primary": "#21409a",
     "primaryDeep": "#16306f",
@@ -25,7 +38,24 @@
     "body": "'Barlow', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap",
     "logo": "/brands/aphaseelectric/logo.webp",
-    "logoWidth": 170
+    "logoMono": "/brands/aphaseelectric/logo-mono.webp",
+    "logoWidth": 166,
+    "logoHeight": 58,
+    "logoRatio": 2.859,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.22,
+      0.197,
+      0.251,
+      0.331,
+      0.421,
+      0.513,
+      0.604,
+      0.697,
+      0.797,
+      0.9,
+      1.0
+    ]
   },
   "emergency": {
     "title": "24-hour emergency electrician",
@@ -33,8 +63,14 @@
   },
   "sameDay": "Same-day and emergency service for the urgent, smaller problems too, like a tripped breaker or an outlet that has stopped working.",
   "licenses": [
-    { "label": "Texas Master Electrician", "number": "TMEL 447620" },
-    { "label": "Texas Electrical Contractor", "number": "TECL 34091" }
+    {
+      "label": "Texas Master Electrician",
+      "number": "TMEL 447620"
+    },
+    {
+      "label": "Texas Electrical Contractor",
+      "number": "TECL 34091"
+    }
   ],
   "hero": {
     "eyebrow": "Your trusted electricians in Humble, TX",
@@ -317,7 +353,10 @@
           "title": "Garage, Shop and Barn Lighting",
           "icon": "building",
           "text": "Brighter, more efficient lighting for a garage that doubles as a workshop, and the power and coverage a shop or barn needs.",
-          "points": ["Track lighting", "Direct lighting for a soft, even glow"]
+          "points": [
+            "Track lighting",
+            "Direct lighting for a soft, even glow"
+          ]
         }
       ]
     }
@@ -338,9 +377,18 @@
     "image": "/brands/aphaseelectric/about",
     "imageAlt": "Two commercial electrical panels with conduit runs feeding them",
     "values": [
-      { "title": "Locally owned", "text": "Our family-owned business comes with family-owned values." },
-      { "title": "Workmanship guarantee", "text": "All of our customers are 100% guaranteed the best result every single time." },
-      { "title": "Professional technicians", "text": "We only employ licensed, experienced and exceptionally skilled electricians." }
+      {
+        "title": "Locally owned",
+        "text": "Our family-owned business comes with family-owned values."
+      },
+      {
+        "title": "Workmanship guarantee",
+        "text": "All of our customers are 100% guaranteed the best result every single time."
+      },
+      {
+        "title": "Professional technicians",
+        "text": "We only employ licensed, experienced and exceptionally skilled electricians."
+      }
     ]
   },
   "faqs": [
@@ -441,7 +489,10 @@
   "facts": [
     {
       "heading": "Licensing",
-      "items": ["Texas Master Electrician TMEL 447620", "Texas Electrical Contractor TECL 34091"]
+      "items": [
+        "Texas Master Electrician TMEL 447620",
+        "Texas Electrical Contractor TECL 34091"
+      ]
     },
     {
       "heading": "Experience",
@@ -490,7 +541,10 @@
     },
     {
       "heading": "Find us",
-      "items": ["Facebook: facebook.com/Aphaselectric", "Google Business Profile reviews"]
+      "items": [
+        "Facebook: facebook.com/Aphaselectric",
+        "Google Business Profile reviews"
+      ]
     }
   ]
 }

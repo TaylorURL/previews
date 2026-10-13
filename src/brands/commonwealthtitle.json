@@ -15,7 +15,20 @@
   "license": "Title insurance underwritten by Commonwealth Land Title Insurance Company. Closings handled with the Law Office of Jerel J. Hill, Approved Attorney.",
   "rating": 5.0,
   "reviewCount": 7,
-  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "cta": {
     "label": "Open an Order",
     "text": "Send us your name, the buyer and seller names and the property address, along with a photograph of the first page of the purchase agreement. We will verify receipt, open the order and follow up with you on the next steps."
@@ -33,7 +46,24 @@
     "body": "'Droid Sans', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Droid+Sans&family=Noticia+Text:wght@400;700&display=swap",
     "logo": "/brands/commonwealthtitle/logo.webp",
-    "logoWidth": 160
+    "logoMono": "/brands/commonwealthtitle/logo-mono.webp",
+    "logoWidth": 203,
+    "logoHeight": 48,
+    "logoRatio": 4.225,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.24,
+      0.114,
+      0.065,
+      0.132,
+      0.258,
+      0.384,
+      0.505,
+      0.627,
+      0.753,
+      0.879,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Title and escrow in Memorial Park, Houston",
@@ -41,13 +71,20 @@
     "lead": "Commonwealth Title of Houston serves the residential and commercial real estate industry. Our Houston-based professionals work in all facets of the real estate industry, alongside the real estate professionals, lenders, builders and industry partners that work with them.",
     "image": "/brands/commonwealthtitle/hero",
     "imageAlt": "The Houston skyline at dusk seen from Buffalo Bayou",
-    "points": ["A team of professionals", "The service you expect and trust", "A wealth of experience"]
+    "points": [
+      "A team of professionals",
+      "The service you expect and trust",
+      "A wealth of experience"
+    ]
   },
   "overview": {
     "title": "We offer statewide and local Houston services.",
     "text": "Choose a service to see what it covers, or call the Westcott Street office and talk it through with our closing team."
   },
-  "audiences": { "individuals": "Buyers & Sellers", "businesses": "Industry Partners" },
+  "audiences": {
+    "individuals": "Buyers & Sellers",
+    "businesses": "Industry Partners"
+  },
   "services": [
     {
       "slug": "title-insurance",
@@ -60,18 +97,48 @@
       "image": "/brands/commonwealthtitle/title-insurance",
       "imageAlt": "Aerial view of downtown Houston in late afternoon light",
       "covers": [
-        { "title": "The title search", "text": "We conduct a diligent search of the public records for the documents associated with the property." },
-        { "title": "Examination", "text": "Those recorded documents are examined to determine whether any rights or claims may have an impact upon the title." },
-        { "title": "What a search can turn up", "text": "Unpaid taxes, unsatisfied mortgages, judgments and tax liens against current or past owners, easements, restrictions and court actions." },
-        { "title": "Clearing before closing", "text": "Recorded defects, liens and encumbrances are reported to you before the purchase, so they can be accepted, resolved or extinguished before the transaction closes." },
-        { "title": "Policy issuance", "text": "Policies are underwritten by Commonwealth Land Title Insurance Company, with title clearance and policy issuance across the U.S." }
+        {
+          "title": "The title search",
+          "text": "We conduct a diligent search of the public records for the documents associated with the property."
+        },
+        {
+          "title": "Examination",
+          "text": "Those recorded documents are examined to determine whether any rights or claims may have an impact upon the title."
+        },
+        {
+          "title": "What a search can turn up",
+          "text": "Unpaid taxes, unsatisfied mortgages, judgments and tax liens against current or past owners, easements, restrictions and court actions."
+        },
+        {
+          "title": "Clearing before closing",
+          "text": "Recorded defects, liens and encumbrances are reported to you before the purchase, so they can be accepted, resolved or extinguished before the transaction closes."
+        },
+        {
+          "title": "Policy issuance",
+          "text": "Policies are underwritten by Commonwealth Land Title Insurance Company, with title clearance and policy issuance across the U.S."
+        }
       ],
       "questions": [
-        { "q": "Why is title insurance different from other insurance?", "a": "Most insurance pays for a future loss caused by a future event. Title insurance covers future claims and losses that come from a defect created by a past event, before you acquired the property." },
-        { "q": "How do you find out what claims exist?", "a": "We search the public records for the documents associated with the property, then examine them for rights or claims that could affect the title, and report what we find to you before you buy." },
-        { "q": "What about claims a search cannot find?", "a": "Hidden risks are matters not shown by the public records and so not discoverable by a search of them - forgery, incompetency or incapacity of the parties, fraudulent impersonation and unknown errors in the records. The policy covers those claims too, which is the second benefit you receive from title insurance." },
-        { "q": "What does the policy actually do if a claim is made?", "a": "Commonwealth Title defends your title, in court if necessary, at no cost to you, and bears the cost of settling the case if the claim proves valid, so your title and your possession of the property are maintained." },
-        { "q": "How often do I pay the premium?", "a": "Once. Unlike other forms of insurance, the original premium is your only cost for as long as you own the property. There are no annual payments to keep an Owner's Title Insurance Policy in force." }
+        {
+          "q": "Why is title insurance different from other insurance?",
+          "a": "Most insurance pays for a future loss caused by a future event. Title insurance covers future claims and losses that come from a defect created by a past event, before you acquired the property."
+        },
+        {
+          "q": "How do you find out what claims exist?",
+          "a": "We search the public records for the documents associated with the property, then examine them for rights or claims that could affect the title, and report what we find to you before you buy."
+        },
+        {
+          "q": "What about claims a search cannot find?",
+          "a": "Hidden risks are matters not shown by the public records and so not discoverable by a search of them - forgery, incompetency or incapacity of the parties, fraudulent impersonation and unknown errors in the records. The policy covers those claims too, which is the second benefit you receive from title insurance."
+        },
+        {
+          "q": "What does the policy actually do if a claim is made?",
+          "a": "Commonwealth Title defends your title, in court if necessary, at no cost to you, and bears the cost of settling the case if the claim proves valid, so your title and your possession of the property are maintained."
+        },
+        {
+          "q": "How often do I pay the premium?",
+          "a": "Once. Unlike other forms of insurance, the original premium is your only cost for as long as you own the property. There are no annual payments to keep an Owner's Title Insurance Policy in force."
+        }
       ]
     },
     {
@@ -83,17 +150,44 @@
       "text": "Competent funds disbursements, purchase contract execution and seamless property ownership transfer are the keys to our successful closings.",
       "lead": "An escrow is an arrangement in which a disinterested third party, called an escrow holder or settlement agent, holds legal documents and funds on behalf of a buyer and seller, and distributes them according to the buyer's and seller's instructions.",
       "covers": [
-        { "title": "The impartial stake-holder", "text": "Acting as the depository of documents and funds, and keeping all parties informed of progress on the escrow." },
-        { "title": "Documents and funds", "text": "Processing and coordinating the flow of documents and funds, and responding to the lender's requirements." },
-        { "title": "Prorations and adjustments", "text": "Prorating and adjusting insurance, taxes and rents between the parties." },
-        { "title": "Recording", "text": "Recording the deed and loan documents, and maintaining security and accountability of monies owed and owing." },
-        { "title": "The policy", "text": "Securing a title insurance policy and obtaining approvals of reports and documents from the parties as required." },
-        { "title": "The residential closing, start to finish", "text": "Preparing the Loan Estimate and Closing Disclosure, distributing funds, recording documents and arranging home warranty." }
+        {
+          "title": "The impartial stake-holder",
+          "text": "Acting as the depository of documents and funds, and keeping all parties informed of progress on the escrow."
+        },
+        {
+          "title": "Documents and funds",
+          "text": "Processing and coordinating the flow of documents and funds, and responding to the lender's requirements."
+        },
+        {
+          "title": "Prorations and adjustments",
+          "text": "Prorating and adjusting insurance, taxes and rents between the parties."
+        },
+        {
+          "title": "Recording",
+          "text": "Recording the deed and loan documents, and maintaining security and accountability of monies owed and owing."
+        },
+        {
+          "title": "The policy",
+          "text": "Securing a title insurance policy and obtaining approvals of reports and documents from the parties as required."
+        },
+        {
+          "title": "The residential closing, start to finish",
+          "text": "Preparing the Loan Estimate and Closing Disclosure, distributing funds, recording documents and arranging home warranty."
+        }
       ],
       "questions": [
-        { "q": "How are prorations worked out?", "a": "The settlement agent allocates each party's proportionate share of an obligation paid or due, such as property taxes or homeowners association dues, calculated per day from the date of closing. On semi-annual property taxes of $665.05 prepaid by the seller to July 1st and a closing on June 15, 15 days are due back to the seller at $3.69 a day, a credit of $55.35 to the seller and a charge of $55.35 to the buyer." },
-        { "q": "What happens at closing?", "a": "Once all the terms and conditions of both parties' instructions have been fulfilled and the closing conditions satisfied, the escrow is closed and the transfer of property and money is accomplished." },
-        { "q": "Who pays which charges?", "a": "The method of dividing the charges varies from place to place. Unless the buyer and seller agree otherwise, local custom generally decides how the title premium, escrow settlement fee, transfer taxes, recording fees and loan costs are split." }
+        {
+          "q": "How are prorations worked out?",
+          "a": "The settlement agent allocates each party's proportionate share of an obligation paid or due, such as property taxes or homeowners association dues, calculated per day from the date of closing. On semi-annual property taxes of $665.05 prepaid by the seller to July 1st and a closing on June 15, 15 days are due back to the seller at $3.69 a day, a credit of $55.35 to the seller and a charge of $55.35 to the buyer."
+        },
+        {
+          "q": "What happens at closing?",
+          "a": "Once all the terms and conditions of both parties' instructions have been fulfilled and the closing conditions satisfied, the escrow is closed and the transfer of property and money is accomplished."
+        },
+        {
+          "q": "Who pays which charges?",
+          "a": "The method of dividing the charges varies from place to place. Unless the buyer and seller agree otherwise, local custom generally decides how the title premium, escrow settlement fee, transfer taxes, recording fees and loan costs are split."
+        }
       ]
     },
     {
@@ -105,12 +199,24 @@
       "text": "Our title and escrow staff can guide you through the process of selling your own home, and our FSBO guidebook gives you tips on how to make the process painless.",
       "lead": "For Sale By Owner is the process of selling real estate without the representation of a real estate broker or agent. Homeowners may use marketing or online listing companies, or market the property themselves, but they pay no commission and represent themselves throughout the sale.",
       "covers": [
-        { "title": "Think like a real estate professional", "text": "What the process asks of you once you are representing yourself." },
-        { "title": "Market your home to sell", "text": "Getting the property in front of buyers without a listing agent." },
-        { "title": "Close the sale", "text": "Our title and escrow staff handle the closing itself." }
+        {
+          "title": "Think like a real estate professional",
+          "text": "What the process asks of you once you are representing yourself."
+        },
+        {
+          "title": "Market your home to sell",
+          "text": "Getting the property in front of buyers without a listing agent."
+        },
+        {
+          "title": "Close the sale",
+          "text": "Our title and escrow staff handle the closing itself."
+        }
       ],
       "questions": [
-        { "q": "Is selling without an agent harder?", "a": "According to the National Association of Real Estate Professionals, 89% of homeowners are assisted by a real estate agent when selling, and 70% of FSBOs say they have significant difficulty selling. If that is you, contact us and we can help you find a real estate professional." }
+        {
+          "q": "Is selling without an agent harder?",
+          "a": "According to the National Association of Real Estate Professionals, 89% of homeowners are assisted by a real estate agent when selling, and 70% of FSBOs say they have significant difficulty selling. If that is you, contact us and we can help you find a real estate professional."
+        }
       ]
     },
     {
@@ -122,15 +228,36 @@
       "text": "Our document signing service offers vendors and individuals the benefit of a professional closing with an experienced closer when the need arises.",
       "lead": "Beyond settlement services, we can offer other vendors and individuals - out of state title companies, lenders, buyers and sellers - a professional closing with an experienced closer. We can schedule your closing and sign you, or your clients, in our office or possibly another location.",
       "covers": [
-        { "title": "In our office", "text": "Notary signing in our office, including download, printing and copying, starting at $150." },
-        { "title": "Mobile, nights and weekends", "text": "Mobile notary, nights, weekends and holidays within 20 miles of Houston, starting at $250." },
-        { "title": "A single document", "text": "A single document signing, such as a warranty deed, in our office, $100." },
-        { "title": "How we work", "text": "Single document and signer or multiple party closings, digital, paper copy and shipping services available, and mobile notary service in the Harris County, TX area." },
-        { "title": "Who signs you", "text": "Experienced, licensed notaries at competitive rates, in professional dress and a professional office environment, with night, weekend and holiday signings available." }
+        {
+          "title": "In our office",
+          "text": "Notary signing in our office, including download, printing and copying, starting at $150."
+        },
+        {
+          "title": "Mobile, nights and weekends",
+          "text": "Mobile notary, nights, weekends and holidays within 20 miles of Houston, starting at $250."
+        },
+        {
+          "title": "A single document",
+          "text": "A single document signing, such as a warranty deed, in our office, $100."
+        },
+        {
+          "title": "How we work",
+          "text": "Single document and signer or multiple party closings, digital, paper copy and shipping services available, and mobile notary service in the Harris County, TX area."
+        },
+        {
+          "title": "Who signs you",
+          "text": "Experienced, licensed notaries at competitive rates, in professional dress and a professional office environment, with night, weekend and holiday signings available."
+        }
       ],
       "questions": [
-        { "q": "What sets your notary service apart?", "a": "We understand the typical loan package and know what to do to get it where it is supposed to be with the least delay. We take our time so the client is comfortable and understands what he or she is signing." },
-        { "q": "When are the fees paid?", "a": "The fees assume a single closing event at a single location, and a signing that takes more than 90 minutes may be charged at a higher rate. Services may be paid at the time of closing, at the time of funding, or on net terms upon pre-approval. Notary services are paid directly to the notary." }
+        {
+          "q": "What sets your notary service apart?",
+          "a": "We understand the typical loan package and know what to do to get it where it is supposed to be with the least delay. We take our time so the client is comfortable and understands what he or she is signing."
+        },
+        {
+          "q": "When are the fees paid?",
+          "a": "The fees assume a single closing event at a single location, and a signing that takes more than 90 minutes may be charged at a higher rate. Services may be paid at the time of closing, at the time of funding, or on net terms upon pre-approval. Notary services are paid directly to the notary."
+        }
       ]
     },
     {
@@ -142,15 +269,36 @@
       "text": "We facilitate tax deferred exchanges, the strategy that involves exchanging one like-kind property for another for deferred tax gain treatment.",
       "lead": "In addition to traditional buy and sell transactions, we facilitate and support 1031 Exchanges of investment properties for tax deferral and to maximize investment dollars.",
       "covers": [
-        { "title": "What a 1031 Exchange does", "text": "A properly structured tax deferred exchange under Internal Revenue Code section 1031 allows businesses and individuals to defer the recognition of capital gains and other taxes associated with a sale." },
-        { "title": "Like-kind property", "text": "In general, any type of US real property held for productive use in a trade or business, or for investment purposes, can be exchanged for more real property as long as the properties are of like kind." },
-        { "title": "The Qualified Intermediary", "text": "To complete an exchange, clients must engage a professional Qualified Intermediary. Exchange solutions are provided through Investment Property Exchange Services, Inc. (IPX1031)." },
-        { "title": "Services offered", "text": "IPX1031 covers Real Estate, Personal Property, Multiple Asset and Aircraft exchanges, through to the more complicated Reverse and Improvement and Master Like-Kind Exchange Programs." },
-        { "title": "How exchange funds are secured", "text": "To secure a client's exchange funds, IPX1031 carries a $100 million fidelity bond, a $50 million written performance guarantee and $30 million in errors and omissions professional liability insurance." }
+        {
+          "title": "What a 1031 Exchange does",
+          "text": "A properly structured tax deferred exchange under Internal Revenue Code section 1031 allows businesses and individuals to defer the recognition of capital gains and other taxes associated with a sale."
+        },
+        {
+          "title": "Like-kind property",
+          "text": "In general, any type of US real property held for productive use in a trade or business, or for investment purposes, can be exchanged for more real property as long as the properties are of like kind."
+        },
+        {
+          "title": "The Qualified Intermediary",
+          "text": "To complete an exchange, clients must engage a professional Qualified Intermediary. Exchange solutions are provided through Investment Property Exchange Services, Inc. (IPX1031)."
+        },
+        {
+          "title": "Services offered",
+          "text": "IPX1031 covers Real Estate, Personal Property, Multiple Asset and Aircraft exchanges, through to the more complicated Reverse and Improvement and Master Like-Kind Exchange Programs."
+        },
+        {
+          "title": "How exchange funds are secured",
+          "text": "To secure a client's exchange funds, IPX1031 carries a $100 million fidelity bond, a $50 million written performance guarantee and $30 million in errors and omissions professional liability insurance."
+        }
       ],
       "questions": [
-        { "q": "How do I start an exchange?", "a": "Call us, or go to ipx1031.com or call 888-771-1031 for more information or to initiate a 1031 Exchange." },
-        { "q": "Can I learn more first?", "a": "Yes. IPX1031 runs complimentary online 1031 Introduction and Advanced webinars you can register for at ipx1031.com." }
+        {
+          "q": "How do I start an exchange?",
+          "a": "Call us, or go to ipx1031.com or call 888-771-1031 for more information or to initiate a 1031 Exchange."
+        },
+        {
+          "q": "Can I learn more first?",
+          "a": "Yes. IPX1031 runs complimentary online 1031 Introduction and Advanced webinars you can register for at ipx1031.com."
+        }
       ]
     },
     {
@@ -162,13 +310,28 @@
       "text": "Legal document recording, search projects and foreclosure proceedings are a few of the ancillary services we provide to ensure long-term security through our title solutions.",
       "lead": "Legal document recording, national search projects, foreclosure proceedings, REOs and short sales are a few of the ancillary services we provide to add value to the traditional title insurance product line. We are equipped to assist with post-closing services through the life of the loan and residency.",
       "covers": [
-        { "title": "Document retrieval and search", "text": "Last deed of record, name, address, mortgage, deed and parcel identification number searches, with copies of previously recorded documents and certified copies when desired." },
-        { "title": "Accommodation recording", "text": "One document or one thousand, recorded through our network of local offices and web-based electronic recording, with document tracking, retrieval and feedback on rejected documents." },
-        { "title": "Proceedings and necessary party exams", "text": "Help through the residential foreclosure process: necessary parties examination, complaint procedures, after judgment, sale and issuance of the Sheriff's deed." },
-        { "title": "Non-record claimants", "text": "Affidavit and publication notice work to identify unknown parties - the affidavit filed with the court clerk after the notice of foreclosure is recorded, and the publication notice at least 30 days before a judgment of foreclosure is entered - so a property forecloses on schedule without later claims, followed by a title commitment once judgment is issued." }
+        {
+          "title": "Document retrieval and search",
+          "text": "Last deed of record, name, address, mortgage, deed and parcel identification number searches, with copies of previously recorded documents and certified copies when desired."
+        },
+        {
+          "title": "Accommodation recording",
+          "text": "One document or one thousand, recorded through our network of local offices and web-based electronic recording, with document tracking, retrieval and feedback on rejected documents."
+        },
+        {
+          "title": "Proceedings and necessary party exams",
+          "text": "Help through the residential foreclosure process: necessary parties examination, complaint procedures, after judgment, sale and issuance of the Sheriff's deed."
+        },
+        {
+          "title": "Non-record claimants",
+          "text": "Affidavit and publication notice work to identify unknown parties - the affidavit filed with the court clerk after the notice of foreclosure is recorded, and the publication notice at least 30 days before a judgment of foreclosure is entered - so a property forecloses on schedule without later claims, followed by a title commitment once judgment is issued."
+        }
       ],
       "questions": [
-        { "q": "Can you search outside Harris County?", "a": "Yes. Searches and recordings can be handled at the county level nationwide through our single point of contact." }
+        {
+          "q": "Can you search outside Harris County?",
+          "a": "Yes. Searches and recordings can be handled at the county level nationwide through our single point of contact."
+        }
       ]
     }
   ],
@@ -176,10 +339,22 @@
     "title": "How an order moves",
     "text": "At your desktop, or on the road.",
     "steps": [
-      { "title": "Open the order", "text": "Send your name, the buyer and seller names and the property address, with a photograph of the first page of the purchase agreement." },
-      { "title": "We confirm it", "text": "You receive a follow up email or phone call from one of our specialists to confirm the order." },
-      { "title": "Request the closing", "text": "Send the property address with your date and time preference. We verify receipt and confirm the date, or follow up with an alternative." },
-      { "title": "Close and record", "text": "Funds are disbursed, the deed and loan documents are recorded, and the title policy is issued." }
+      {
+        "title": "Open the order",
+        "text": "Send your name, the buyer and seller names and the property address, with a photograph of the first page of the purchase agreement."
+      },
+      {
+        "title": "We confirm it",
+        "text": "You receive a follow up email or phone call from one of our specialists to confirm the order."
+      },
+      {
+        "title": "Request the closing",
+        "text": "Send the property address with your date and time preference. We verify receipt and confirm the date, or follow up with an alternative."
+      },
+      {
+        "title": "Close and record",
+        "text": "Funds are disbursed, the deed and loan documents are recorded, and the title policy is issued."
+      }
     ]
   },
   "affiliations": {
@@ -201,9 +376,18 @@
     "image": "/brands/commonwealthtitle/about",
     "imageAlt": "A row of townhomes on a Houston street",
     "values": [
-      { "title": "A single point of contact", "text": "Searches, recordings and closings handled through one point of contact, backed by a nationwide network." },
-      { "title": "Examiners and underwriters", "text": "A well maintained relationship with title examiners and underwriters is the key to the success of the Westcott office." },
-      { "title": "The service you expect and trust", "text": "A team of professionals with a wealth of experience, in all facets of the real estate industry." }
+      {
+        "title": "A single point of contact",
+        "text": "Searches, recordings and closings handled through one point of contact, backed by a nationwide network."
+      },
+      {
+        "title": "Examiners and underwriters",
+        "text": "A well maintained relationship with title examiners and underwriters is the key to the success of the Westcott office."
+      },
+      {
+        "title": "The service you expect and trust",
+        "text": "A team of professionals with a wealth of experience, in all facets of the real estate industry."
+      }
     ]
   },
   "team": [
@@ -236,26 +420,90 @@
     }
   ],
   "faqs": [
-    { "q": "How do I open a title or escrow order?", "a": "Open a title or escrow order direct from your office or the field. Send us your name, the buyer and seller names and the property address, along with a photograph of the first page of the purchase agreement, and you will receive a follow up email or phone call from one of our specialists to confirm it." },
-    { "q": "How do I request a closing date?", "a": "Send the property address with your date and time preference for closing. We verify receipt and confirm the closing date, or follow up with an alternative." },
-    { "q": "Can I send confidential information through the website?", "a": "No. The site is not designed for the transmission of highly confidential customer, non-public personal information, and should not be used to enter or transmit data such as Social Security numbers or driver's license numbers." },
-    { "q": "Do you offer mobile notary service?", "a": "Yes. Mobile notary service is available in the Harris County, TX area, and night, weekend and holiday signings are available." },
-    { "q": "Do you work outside Houston?", "a": "Yes. We offer statewide and local Houston services, whether your next deal is a single property in Houston or multiple locations across the state." }
+    {
+      "q": "How do I open a title or escrow order?",
+      "a": "Open a title or escrow order direct from your office or the field. Send us your name, the buyer and seller names and the property address, along with a photograph of the first page of the purchase agreement, and you will receive a follow up email or phone call from one of our specialists to confirm it."
+    },
+    {
+      "q": "How do I request a closing date?",
+      "a": "Send the property address with your date and time preference for closing. We verify receipt and confirm the closing date, or follow up with an alternative."
+    },
+    {
+      "q": "Can I send confidential information through the website?",
+      "a": "No. The site is not designed for the transmission of highly confidential customer, non-public personal information, and should not be used to enter or transmit data such as Social Security numbers or driver's license numbers."
+    },
+    {
+      "q": "Do you offer mobile notary service?",
+      "a": "Yes. Mobile notary service is available in the Harris County, TX area, and night, weekend and holiday signings are available."
+    },
+    {
+      "q": "Do you work outside Houston?",
+      "a": "Yes. We offer statewide and local Houston services, whether your next deal is a single property in Houston or multiple locations across the state."
+    }
   ],
   "resources": [
-    { "title": "WireSafe", "text": "Real estate wire fraud is real. Learn how to be WireSafe before you send funds.", "href": "https://wiresafe.cltic.com/wiresafe" },
-    { "title": "IPX1031", "text": "Investment Property Exchange Services, Inc., the Qualified Intermediary for 1031 Exchanges. 888-771-1031.", "href": "https://www.ipx1031.com" },
-    { "title": "National Rate Calculator", "text": "Estimate the settlement related costs of a residential transaction and print the estimate. All rate quotes are subject to the terms and conditions set out there.", "href": "https://www.rates.fntg.com/?brand=commonwealth" },
-    { "title": "Harris County Appraisal District", "text": "Property records and appraised values for Harris County.", "href": "https://hcad.org/" },
-    { "title": "Fort Bend Central Appraisal District", "text": "Property records and the interactive parcel map for Fort Bend County.", "href": "https://www.fbcad.org/interactive-map/" },
-    { "title": "Galveston Central Appraisal District", "text": "Property records and appraised values for Galveston County.", "href": "https://galvestoncad.org/" },
-    { "title": "Montgomery Central Appraisal District", "text": "Property records and appraised values for Montgomery County.", "href": "https://mcad-tx.org/" },
-    { "title": "Houston Association of Realtors", "text": "Listings and market data for the Houston area.", "href": "https://www.har.com/" },
-    { "title": "Texas Land Title Association", "text": "The state association for the Texas title industry.", "href": "https://www.tlta.com/" },
-    { "title": "Texas Real Estate Commission", "text": "The promulgated contract forms and addenda used in Texas transactions.", "href": "https://www.trec.texas.gov/agency-information/contracts" },
-    { "title": "Zillow", "text": "Property listings and value estimates.", "href": "https://www.zillow.com/" }
+    {
+      "title": "WireSafe",
+      "text": "Real estate wire fraud is real. Learn how to be WireSafe before you send funds.",
+      "href": "https://wiresafe.cltic.com/wiresafe"
+    },
+    {
+      "title": "IPX1031",
+      "text": "Investment Property Exchange Services, Inc., the Qualified Intermediary for 1031 Exchanges. 888-771-1031.",
+      "href": "https://www.ipx1031.com"
+    },
+    {
+      "title": "National Rate Calculator",
+      "text": "Estimate the settlement related costs of a residential transaction and print the estimate. All rate quotes are subject to the terms and conditions set out there.",
+      "href": "https://www.rates.fntg.com/?brand=commonwealth"
+    },
+    {
+      "title": "Harris County Appraisal District",
+      "text": "Property records and appraised values for Harris County.",
+      "href": "https://hcad.org/"
+    },
+    {
+      "title": "Fort Bend Central Appraisal District",
+      "text": "Property records and the interactive parcel map for Fort Bend County.",
+      "href": "https://www.fbcad.org/interactive-map/"
+    },
+    {
+      "title": "Galveston Central Appraisal District",
+      "text": "Property records and appraised values for Galveston County.",
+      "href": "https://galvestoncad.org/"
+    },
+    {
+      "title": "Montgomery Central Appraisal District",
+      "text": "Property records and appraised values for Montgomery County.",
+      "href": "https://mcad-tx.org/"
+    },
+    {
+      "title": "Houston Association of Realtors",
+      "text": "Listings and market data for the Houston area.",
+      "href": "https://www.har.com/"
+    },
+    {
+      "title": "Texas Land Title Association",
+      "text": "The state association for the Texas title industry.",
+      "href": "https://www.tlta.com/"
+    },
+    {
+      "title": "Texas Real Estate Commission",
+      "text": "The promulgated contract forms and addenda used in Texas transactions.",
+      "href": "https://www.trec.texas.gov/agency-information/contracts"
+    },
+    {
+      "title": "Zillow",
+      "text": "Property listings and value estimates.",
+      "href": "https://www.zillow.com/"
+    }
   ],
-  "serviceArea": ["Houston", "Memorial Park", "Harris County", "Statewide across Texas"],
+  "serviceArea": [
+    "Houston",
+    "Memorial Park",
+    "Harris County",
+    "Statewide across Texas"
+  ],
   "facts": [
     {
       "heading": "Wire fraud alert",

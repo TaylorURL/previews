@@ -10,7 +10,12 @@
   "state": "TX",
   "zip": "77017",
   "since": 1982,
-  "hours": [["Mon – Fri", "8:00am – 5:00pm"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "8:00am – 5:00pm"
+    ]
+  ],
   "brand": {
     "primary": "#2e3192",
     "primaryDeep": "#1b1d5c",
@@ -21,10 +26,24 @@
     "body": "'Work Sans', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap",
     "logo": "/brands/seabreezeroofing/logo.webp",
+    "logoMono": "/brands/seabreezeroofing/logo-mono.webp",
     "logoWidth": 113,
     "logoHeight": 74,
-    "logoRatio": 1.53,
-    "logoGround": "#ffffff"
+    "logoRatio": 1.527,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.327,
+      0.193,
+      0.065,
+      0.076,
+      0.207,
+      0.344,
+      0.473,
+      0.602,
+      0.736,
+      0.872,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Houston roofing contractor",
@@ -57,9 +76,7 @@
       "points": [
         "Certified installer for over 12 major manufacturers",
         "Commercial, industrial and institutional buildings",
-        "K-12 building roof maintenance, re-roofing and waterproofing",
-        "School districts and universities",
-        "Commercial and industrial property owners"
+        "K-12 building roof maintenance, re-roofing and waterproofing"
       ]
     },
     {
@@ -76,8 +93,6 @@
       ],
       "points": [
         "Leaks and other roof related issues",
-        "School districts and universities",
-        "Commercial and industrial property owners",
         "Routine repair work on buildings we already know"
       ]
     },
@@ -142,7 +157,13 @@
       }
     ]
   },
-  "serviceArea": ["Houston"],
+  "serviceArea": [
+    "Houston",
+    "Corpus Christi",
+    "Victoria",
+    "Beaumont",
+    "Huntsville"
+  ],
   "areasText": "Our office and yard are at 1927 Ahrens Street in Houston, and the crews work commercial, industrial and institutional roofs across the city. Our Choice Partners contract is approved for the whole of Texas, with Education Service Center Regions 2, 3, 4, 5 and 6 as the primary regional centers.",
   "facts": [
     {

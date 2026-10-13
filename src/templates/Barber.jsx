@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ArrowUpRight, Clock, Mail, MapPin, Menu, Phone, X } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { Img, Logo, Stars, Facts, StudioCredit } from './shared.jsx';
+import { Img, Logo, Stars, Facts, hexOr, StudioCredit } from './shared.jsx';
 import { onColor } from './barber/color.js';
 
 /** Primary pulled toward the ink color, so it stays readable as text on the dark ground. */
@@ -142,7 +142,7 @@ export default function Barber({ b }) {
             onClick={() => setOpen(false)}
           >
             <span className="block max-w-[38vw] sm:max-w-none">
-              <Logo b={b} className="!max-w-full" />
+              <Logo b={b} ground={hexOr(b.brand.bg, '#0e0d0c')} />
             </span>
           </a>
           <nav aria-label="Main" className="mx-auto hidden gap-9 lg:flex">
@@ -485,7 +485,7 @@ export default function Barber({ b }) {
         >
           <div className="grid content-start gap-4">
             <span className="block max-w-[44vw] sm:max-w-none">
-              <Logo b={b} className="!max-w-full" />
+              <Logo b={b} ground={hexOr(b.brand.panel, '#171513')} />
             </span>
             <p className="m-0 font-heading text-xl">{b.name}</p>
             <p className="m-0 text-base leading-relaxed text-muted">

@@ -14,9 +14,18 @@
   "reviewCount": 90,
   "since": 2013,
   "hours": [
-    ["Mon – Wed", "7 AM – 7 PM"],
-    ["Thursday", "9 AM – 7 PM"],
-    ["Fri – Sun", "7 AM – 7 PM"]
+    [
+      "Mon – Wed",
+      "7 AM – 7 PM"
+    ],
+    [
+      "Thursday",
+      "9 AM – 7 PM"
+    ],
+    [
+      "Fri – Sun",
+      "7 AM – 7 PM"
+    ]
   ],
   "brand": {
     "primary": "#8a1c1c",
@@ -30,14 +39,34 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap",
     "logo": "/brands/cowboycooling/logo.webp",
-    "logoWidth": 210
+    "logoMono": "/brands/cowboycooling/logo-mono.webp",
+    "logoWidth": 110,
+    "logoHeight": 58,
+    "logoRatio": 1.897,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.478,
+      0.424,
+      0.431,
+      0.476,
+      0.534,
+      0.601,
+      0.671,
+      0.746,
+      0.829,
+      0.915,
+      1.0
+    ]
   },
   "emergency": {
     "title": "24/7 emergency service",
     "text": "We are always committed to you, so we offer 24/7 service in emergency situations."
   },
   "licenses": [
-    { "label": "Texas Air Conditioning/Refrigeration Contractor", "number": "TACLB85421E" }
+    {
+      "label": "Texas Air Conditioning/Refrigeration Contractor",
+      "number": "TACLB85421E"
+    }
   ],
   "financing": {
     "text": "Financing applications are taken online through FTL Finance."
@@ -86,7 +115,10 @@
           "title": "Emergency Service",
           "icon": "timer",
           "text": "We are always committed to you, so we offer 24/7 service in emergency situations.",
-          "points": ["Available 24/7 in an emergency", "Office line answered at (281) 678-8488"]
+          "points": [
+            "Available 24/7 in an emergency",
+            "Office line answered at (281) 678-8488"
+          ]
         }
       ]
     },
@@ -104,21 +136,30 @@
           "title": "Air Conditioning Installation",
           "icon": "snowflake",
           "text": "Our technicians install every AC system properly, so the right amount of conditioned air reaches each room in your home.",
-          "points": ["Installed so each room gets the conditioned air it needs", "Easier to hold a comfortable temperature all year"]
+          "points": [
+            "Installed so each room gets the conditioned air it needs",
+            "Easier to hold a comfortable temperature all year"
+          ]
         },
         {
           "slug": "heating-installation",
           "title": "Heating Installation",
           "icon": "heater",
           "text": "Heating systems installed to the same standard, so the house holds its temperature through the winter.",
-          "points": ["Installed properly room by room", "Heating and cooling handled by one company"]
+          "points": [
+            "Installed properly room by room",
+            "Heating and cooling handled by one company"
+          ]
         },
         {
           "slug": "american-standard-equipment",
           "title": "American Standard Equipment",
           "icon": "settings",
           "text": "We are an American Standard dealer, and that is the equipment we put in.",
-          "points": ["American Standard dealer", "Backed by third party ConsumerReports"]
+          "points": [
+            "American Standard dealer",
+            "Backed by third party ConsumerReports"
+          ]
         }
       ]
     },
@@ -136,21 +177,28 @@
           "title": "Superior Protection Plans",
           "icon": "shield",
           "text": "An affordable plan that keeps your equipment maintained rather than waiting for it to fail.",
-          "points": ["Two visits a year", "Your entire HVAC system cleaned, inspected, tested and adjusted"]
+          "points": [
+            "Two visits a year",
+            "Your entire HVAC system cleaned, inspected, tested and adjusted"
+          ]
         },
         {
           "slug": "spring-cooling-visit",
           "title": "Spring Cooling Visit",
           "icon": "sun",
           "text": "One of our professional technicians visits during spring, before your AC is put to the test in the summer.",
-          "points": ["Booked ahead of the summer"]
+          "points": [
+            "Booked ahead of the summer"
+          ]
         },
         {
           "slug": "fall-heating-visit",
           "title": "Fall Heating Visit",
           "icon": "flame",
           "text": "A second visit comes during fall, before you turn your furnace on.",
-          "points": ["Catches a problem before the first cold night"]
+          "points": [
+            "Catches a problem before the first cold night"
+          ]
         }
       ]
     }
@@ -165,9 +213,18 @@
     "image": "/brands/cowboycooling/about",
     "imageAlt": "A hand adjusting a thermostat on a wall",
     "values": [
-      { "title": "Certified technicians", "text": "Every one of our knowledgeable service technicians is certified." },
-      { "title": "Genuine parts", "text": "Our technicians install genuine factory authorized parts, and we carry the common ones on our vehicles." },
-      { "title": "Here for you 24/7", "text": "We offer 24/7 service in emergency situations." }
+      {
+        "title": "Certified technicians",
+        "text": "Every one of our knowledgeable service technicians is certified."
+      },
+      {
+        "title": "Genuine parts",
+        "text": "Our technicians install genuine factory authorized parts, and we carry the common ones on our vehicles."
+      },
+      {
+        "title": "Here for you 24/7",
+        "text": "We offer 24/7 service in emergency situations."
+      }
     ]
   },
   "facts": [

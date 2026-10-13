@@ -13,7 +13,20 @@
   "zip": "77504",
   "rating": 5.0,
   "reviewCount": 36,
-  "hours": [["Mon – Fri", "10 AM – 5 PM"], ["Saturday", "By appointment"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "10 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "By appointment"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "cta": {
     "label": "Schedule a Consultation",
     "text": "Call the office or book a consultation, and remember that tax preparation fees can be paid out of your refund rather than upfront."
@@ -31,7 +44,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/worldtaxcenter/logo.webp",
-    "logoWidth": 190
+    "logoMono": "/brands/worldtaxcenter/logo-mono.webp",
+    "logoWidth": 85,
+    "logoHeight": 74,
+    "logoRatio": 1.143,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.938,
+      0.932,
+      0.926,
+      0.92,
+      0.917,
+      0.918,
+      0.923,
+      0.934,
+      0.95,
+      0.973,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Income tax and bookkeeping in Pasadena",
@@ -49,7 +79,10 @@
     "title": "Tax work for individuals, and the back office for a business.",
     "text": "Pick a service to see what it covers, or call the Burke Road office and talk it through with our team."
   },
-  "audiences": { "individuals": "Individuals", "businesses": "Businesses" },
+  "audiences": {
+    "individuals": "Individuals",
+    "businesses": "Businesses"
+  },
   "services": [
     {
       "slug": "tax-preparation",
@@ -62,12 +95,24 @@
       "image": "/brands/worldtaxcenter/tax-preparation",
       "imageAlt": "A return being checked against a calculator on a desk",
       "covers": [
-        { "title": "Reliable and accurate filing", "text": "Your return prepared by a tax professional and reviewed before it goes to the IRS." },
-        { "title": "Fees from the refund", "text": "Preparation fees can be paid out of the refund, so there is nothing to pay upfront." }
+        {
+          "title": "Reliable and accurate filing",
+          "text": "Your return prepared by a tax professional and reviewed before it goes to the IRS."
+        },
+        {
+          "title": "Fees from the refund",
+          "text": "Preparation fees can be paid out of the refund, so there is nothing to pay upfront."
+        }
       ],
       "questions": [
-        { "q": "Do I have to pay the preparation fee upfront?", "a": "No. Tax preparation fees can be paid from your refund, so there is nothing to pay when we file." },
-        { "q": "When is the office open during tax season?", "a": "We keep extended hours in tax season. Outside of it the office is open Monday to Friday from 10 AM to 5 PM, with Saturdays by appointment." }
+        {
+          "q": "Do I have to pay the preparation fee upfront?",
+          "a": "No. Tax preparation fees can be paid from your refund, so there is nothing to pay when we file."
+        },
+        {
+          "q": "When is the office open during tax season?",
+          "a": "We keep extended hours in tax season. Outside of it the office is open Monday to Friday from 10 AM to 5 PM, with Saturdays by appointment."
+        }
       ]
     },
     {
@@ -139,11 +184,26 @@
       "text": "Register an LLC through our office. Fill in the details for the new company and we review them and come back with any questions.",
       "lead": "You can register an LLC through our office using the form on our site. Once we have the details we review the information and contact you if we have any additional questions.",
       "covers": [
-        { "title": "Applicant details", "text": "Full name, email and phone for the person registering the company." },
-        { "title": "Two company names", "text": "The two names you would like for the company, in order of preference." },
-        { "title": "Partners", "text": "The name and address of each partner, where the company has them." },
-        { "title": "The business and its start date", "text": "What kind of business it will be, and the date you want to open it, from today up to 90 days out." },
-        { "title": "Identification", "text": "IDs and a Social Security number or ITIN for the people on the registration." }
+        {
+          "title": "Applicant details",
+          "text": "Full name, email and phone for the person registering the company."
+        },
+        {
+          "title": "Two company names",
+          "text": "The two names you would like for the company, in order of preference."
+        },
+        {
+          "title": "Partners",
+          "text": "The name and address of each partner, where the company has them."
+        },
+        {
+          "title": "The business and its start date",
+          "text": "What kind of business it will be, and the date you want to open it, from today up to 90 days out."
+        },
+        {
+          "title": "Identification",
+          "text": "IDs and a Social Security number or ITIN for the people on the registration."
+        }
       ]
     }
   ],
@@ -157,23 +217,63 @@
     "image": "/brands/worldtaxcenter/about",
     "imageAlt": "A U.S. individual income tax return on a desk with a pen and glasses",
     "values": [
-      { "title": "No fees upfront", "text": "Tax preparation fees can be paid from the refund, so there is nothing to pay when we file." },
-      { "title": "Individuals and businesses", "text": "The return and the bookkeeping, payroll and sales tax filing behind a business, in one office." },
-      { "title": "English and Spanish", "text": "Our forms and the tax updates we publish are written in both English and Spanish." }
+      {
+        "title": "No fees upfront",
+        "text": "Tax preparation fees can be paid from the refund, so there is nothing to pay when we file."
+      },
+      {
+        "title": "Individuals and businesses",
+        "text": "The return and the bookkeeping, payroll and sales tax filing behind a business, in one office."
+      },
+      {
+        "title": "English and Spanish",
+        "text": "Our forms and the tax updates we publish are written in both English and Spanish."
+      }
     ]
   },
   "faqs": [
-    { "q": "Do I pay tax preparation fees upfront?", "a": "No. We know sometimes you need money for projects or emergencies, so tax preparation fees can be paid from the refund. There is nothing to pay upfront." },
-    { "q": "What can you do for my business beyond the return?", "a": "We provide more solutions for your business, including bookkeeping, payroll and sales tax filing. You can also register an LLC through our office." },
-    { "q": "Can I just come to the office?", "a": "Yes. We love our customers, so feel free to visit during normal business hours, which are Monday to Friday from 10 AM to 5 PM. Saturdays are by appointment and we are closed on major holidays." },
-    { "q": "Are your hours different during tax season?", "a": "Yes. We keep extended hours in tax season." },
-    { "q": "Do you work in Spanish?", "a": "Yes. Our registration forms and the tax updates we publish are in both English and Spanish." }
+    {
+      "q": "Do I pay tax preparation fees upfront?",
+      "a": "No. We know sometimes you need money for projects or emergencies, so tax preparation fees can be paid from the refund. There is nothing to pay upfront."
+    },
+    {
+      "q": "What can you do for my business beyond the return?",
+      "a": "We provide more solutions for your business, including bookkeeping, payroll and sales tax filing. You can also register an LLC through our office."
+    },
+    {
+      "q": "Can I just come to the office?",
+      "a": "Yes. We love our customers, so feel free to visit during normal business hours, which are Monday to Friday from 10 AM to 5 PM. Saturdays are by appointment and we are closed on major holidays."
+    },
+    {
+      "q": "Are your hours different during tax season?",
+      "a": "Yes. We keep extended hours in tax season."
+    },
+    {
+      "q": "Do you work in Spanish?",
+      "a": "Yes. Our registration forms and the tax updates we publish are in both English and Spanish."
+    }
   ],
   "resources": [
-    { "title": "Book a consultation", "text": "Pick a time on the office calendar and schedule a consultation online.", "href": "https://link.faarmdigital.com/widget/booking/CgjisShj85r9h8TkJ3B9" },
-    { "title": "Client portal", "text": "Sign in to the portal to reach your documents and messages from the office.", "href": "https://theworldtaxcenter.app.clientclub.net/" },
-    { "title": "IRS new deadlines for natural disaster victims", "text": "Our write-up of the filing deadlines the IRS moved for people in a declared disaster area.", "href": "https://theworldtaxcenter.com/post/irs-new-deadlines-for-natural-disaster-victims" },
-    { "title": "Nuevos plazos del IRS para las víctimas de desastres naturales", "text": "The same update in Spanish.", "href": "https://theworldtaxcenter.com/post/nuevos-plazos-del-irs-para-las-vctimas-de-desastres-naturales" }
+    {
+      "title": "Book a consultation",
+      "text": "Pick a time on the office calendar and schedule a consultation online.",
+      "href": "https://link.faarmdigital.com/widget/booking/CgjisShj85r9h8TkJ3B9"
+    },
+    {
+      "title": "Client portal",
+      "text": "Sign in to the portal to reach your documents and messages from the office.",
+      "href": "https://theworldtaxcenter.app.clientclub.net/"
+    },
+    {
+      "title": "IRS new deadlines for natural disaster victims",
+      "text": "Our write-up of the filing deadlines the IRS moved for people in a declared disaster area.",
+      "href": "https://theworldtaxcenter.com/post/irs-new-deadlines-for-natural-disaster-victims"
+    },
+    {
+      "title": "Nuevos plazos del IRS para las víctimas de desastres naturales",
+      "text": "The same update in Spanish.",
+      "href": "https://theworldtaxcenter.com/post/nuevos-plazos-del-irs-para-las-vctimas-de-desastres-naturales"
+    }
   ],
   "facts": [
     {

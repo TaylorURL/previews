@@ -12,9 +12,18 @@
   "state": "TX",
   "zip": "77532",
   "hours": [
-    ["Mon – Fri", "9 AM – 5 PM"],
-    ["Saturday", "By appointment"],
-    ["Sunday", "Closed"]
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "By appointment"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
   ],
   "cta": {
     "label": "Open a Title Order",
@@ -33,7 +42,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/millennialtitle/logo.webp",
-    "logoWidth": 220
+    "logoMono": "/brands/millennialtitle/logo-mono.webp",
+    "logoWidth": 240,
+    "logoHeight": 48,
+    "logoRatio": 5.0,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.867,
+      0.858,
+      0.851,
+      0.843,
+      0.837,
+      0.838,
+      0.845,
+      0.863,
+      0.892,
+      0.929,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Title and closing in Crosby",
@@ -65,14 +91,32 @@
       "text": "When you buy title insurance for your property, a title company searches the public records to find, and remedy if possible, several types of ownership issues.",
       "lead": "When you buy title insurance for your property, a title company searches these records to find - and remedy, if possible - several types of ownership issues. First, the title company searches public records to determine the property's ownership status. After this search, the underwriter will determine the insurability of the title.",
       "covers": [
-        { "title": "The records search", "text": "The title company searches public records to determine the property's ownership status." },
-        { "title": "Ownership issues", "text": "The search is there to find, and remedy if possible, several types of ownership issues on the property." },
-        { "title": "The underwriter's call", "text": "After the search, the underwriter determines the insurability of the title." },
-        { "title": "The policy", "text": "Once the searching is finished, a title insurance policy is issued that helps protect you from a variety of issues that might be uncovered later." }
+        {
+          "title": "The records search",
+          "text": "The title company searches public records to determine the property's ownership status."
+        },
+        {
+          "title": "Ownership issues",
+          "text": "The search is there to find, and remedy if possible, several types of ownership issues on the property."
+        },
+        {
+          "title": "The underwriter's call",
+          "text": "After the search, the underwriter determines the insurability of the title."
+        },
+        {
+          "title": "The policy",
+          "text": "Once the searching is finished, a title insurance policy is issued that helps protect you from a variety of issues that might be uncovered later."
+        }
       ],
       "questions": [
-        { "q": "What does the title company look at first?", "a": "Public records, to determine the property's ownership status." },
-        { "q": "Who decides whether the title can be insured?", "a": "After the search, the underwriter determines the insurability of the title." }
+        {
+          "q": "What does the title company look at first?",
+          "a": "Public records, to determine the property's ownership status."
+        },
+        {
+          "q": "Who decides whether the title can be insured?",
+          "a": "After the search, the underwriter determines the insurability of the title."
+        }
       ]
     },
     {
@@ -86,13 +130,28 @@
       "image": "/brands/millennialtitle/about",
       "imageAlt": "Two people signing paperwork across a desk",
       "covers": [
-        { "title": "Licensed title agents", "text": "The people reading the file and clearing it are licensed title agents." },
-        { "title": "Processors", "text": "Processors move the file along between contract and the closing table." },
-        { "title": "Customer service", "text": "Customer service representatives committed to a smooth closing experience for all parties involved." },
-        { "title": "On time", "text": "The whole point of the way we work is keeping closings as simple as possible and on time." }
+        {
+          "title": "Licensed title agents",
+          "text": "The people reading the file and clearing it are licensed title agents."
+        },
+        {
+          "title": "Processors",
+          "text": "Processors move the file along between contract and the closing table."
+        },
+        {
+          "title": "Customer service",
+          "text": "Customer service representatives committed to a smooth closing experience for all parties involved."
+        },
+        {
+          "title": "On time",
+          "text": "The whole point of the way we work is keeping closings as simple as possible and on time."
+        }
       ],
       "questions": [
-        { "q": "Who is actually on my file?", "a": "Licensed title agents, processors and customer service representatives, all of them committed to a smooth closing experience for every party involved." }
+        {
+          "q": "Who is actually on my file?",
+          "a": "Licensed title agents, processors and customer service representatives, all of them committed to a smooth closing experience for every party involved."
+        }
       ]
     },
     {
@@ -136,11 +195,26 @@
     "title": "How a title file moves",
     "text": "What happens between the contract reaching us and the policy being issued.",
     "steps": [
-      { "title": "The records search", "text": "The title company searches public records to determine the property's ownership status." },
-      { "title": "Finding the issues", "text": "The search is there to find, and remedy if possible, several types of ownership issues." },
-      { "title": "The underwriter", "text": "After the search, the underwriter determines the insurability of the title." },
-      { "title": "The closing", "text": "Licensed title agents, processors and customer service representatives keep the closing as simple as possible and on time." },
-      { "title": "The policy", "text": "A title insurance policy is issued that helps protect you from a variety of issues that might be uncovered later." }
+      {
+        "title": "The records search",
+        "text": "The title company searches public records to determine the property's ownership status."
+      },
+      {
+        "title": "Finding the issues",
+        "text": "The search is there to find, and remedy if possible, several types of ownership issues."
+      },
+      {
+        "title": "The underwriter",
+        "text": "After the search, the underwriter determines the insurability of the title."
+      },
+      {
+        "title": "The closing",
+        "text": "Licensed title agents, processors and customer service representatives keep the closing as simple as possible and on time."
+      },
+      {
+        "title": "The policy",
+        "text": "A title insurance policy is issued that helps protect you from a variety of issues that might be uncovered later."
+      }
     ]
   },
   "about": {
@@ -153,10 +227,22 @@
     "image": "/brands/millennialtitle/about",
     "imageAlt": "Two people signing paperwork across a desk",
     "values": [
-      { "title": "Technology focused", "text": "A modern, technology focused title company providing innovative solutions for the real estate industry." },
-      { "title": "Time efficient closings", "text": "Our buyers, sellers, investors and realtor partners experience much more time efficient closings." },
-      { "title": "Simple and on time", "text": "We work hard to keep closings as simple as possible and on time." },
-      { "title": "Hablamos Español", "text": "The office takes clients in Spanish as well as English." }
+      {
+        "title": "Technology focused",
+        "text": "A modern, technology focused title company providing innovative solutions for the real estate industry."
+      },
+      {
+        "title": "Time efficient closings",
+        "text": "Our buyers, sellers, investors and realtor partners experience much more time efficient closings."
+      },
+      {
+        "title": "Simple and on time",
+        "text": "We work hard to keep closings as simple as possible and on time."
+      },
+      {
+        "title": "Hablamos Español",
+        "text": "The office takes clients in Spanish as well as English."
+      }
     ]
   },
   "team": [
@@ -195,7 +281,9 @@
       "a": "Yes. Hablamos Español."
     }
   ],
-  "serviceArea": ["Crosby"],
+  "serviceArea": [
+    "Crosby"
+  ],
   "facts": [
     {
       "heading": "The Crosby office",
@@ -215,7 +303,12 @@
     },
     {
       "heading": "Files we take",
-      "items": ["Residential property", "Commercial property", "Short sales", "Foreclosures"]
+      "items": [
+        "Residential property",
+        "Commercial property",
+        "Short sales",
+        "Foreclosures"
+      ]
     },
     {
       "heading": "Hablamos Español",

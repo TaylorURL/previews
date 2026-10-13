@@ -13,10 +13,22 @@
   "zip": "77565",
   "license": "An independent insurance agency licensed in Texas, representing multiple insurance carriers.",
   "hours": [
-    ["Mon – Thu", "9 AM – 4 PM"],
-    ["Friday", "9 AM – 12:30 PM"],
-    ["Saturday", "Closed"],
-    ["Sunday", "Closed"]
+    [
+      "Mon – Thu",
+      "9 AM – 4 PM"
+    ],
+    [
+      "Friday",
+      "9 AM – 12:30 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
   ],
   "cta": {
     "label": "Get a Quote",
@@ -35,7 +47,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/alberinsuranceagency/logo.webp",
-    "logoWidth": 118
+    "logoMono": "/brands/alberinsuranceagency/logo-mono.webp",
+    "logoWidth": 74,
+    "logoHeight": 74,
+    "logoRatio": 1.0,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.638,
+      0.623,
+      0.615,
+      0.614,
+      0.619,
+      0.633,
+      0.653,
+      0.697,
+      0.764,
+      0.789,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Family-operated independent agency",
@@ -43,7 +72,11 @@
     "lead": "Alber Insurance Agency represents multiple insurance carriers rather than one company, so we can compare policies and match the coverage to what you actually need.",
     "image": "/brands/alberinsuranceagency/hero",
     "imageAlt": "Homes along a canal in a Texas coastal marshland, seen from the air",
-    "points": ["Multiple carriers compared", "Family operated", "Homes, vehicles and watercraft"]
+    "points": [
+      "Multiple carriers compared",
+      "Family operated",
+      "Homes, vehicles and watercraft"
+    ]
   },
   "overview": {
     "title": "Personal lines written across Texas, from the roof over your head to the cart in the driveway.",
@@ -60,16 +93,40 @@
       "image": "/brands/alberinsuranceagency/home",
       "imageAlt": "A white house with a wrap-around porch under a blue sky",
       "covers": [
-        { "title": "Dwelling (Coverage A)", "text": "Pays to repair or rebuild the physical structure of your home — roof, walls, foundation — and attached structures like a garage." },
-        { "title": "Other Structures (Coverage B)", "text": "Covers detached structures on your property, including fences, sheds and detached garages." },
-        { "title": "Personal Property (Coverage C)", "text": "Protects your belongings, such as furniture, clothing and electronics, even if they are damaged or stolen while you are away from home." },
-        { "title": "Loss of Use (Coverage D)", "text": "Pays for temporary housing, food and other essential costs if a covered disaster makes your home uninhabitable during repairs." },
-        { "title": "Personal Liability (Coverage E)", "text": "Provides legal defense and payment if you are held responsible for accidentally injuring someone else or damaging their property." },
-        { "title": "Medical Payments (Coverage F)", "text": "Pays medical bills for people other than household members who are accidentally hurt on your property." }
+        {
+          "title": "Dwelling (Coverage A)",
+          "text": "Pays to repair or rebuild the physical structure of your home — roof, walls, foundation — and attached structures like a garage."
+        },
+        {
+          "title": "Other Structures (Coverage B)",
+          "text": "Covers detached structures on your property, including fences, sheds and detached garages."
+        },
+        {
+          "title": "Personal Property (Coverage C)",
+          "text": "Protects your belongings, such as furniture, clothing and electronics, even if they are damaged or stolen while you are away from home."
+        },
+        {
+          "title": "Loss of Use (Coverage D)",
+          "text": "Pays for temporary housing, food and other essential costs if a covered disaster makes your home uninhabitable during repairs."
+        },
+        {
+          "title": "Personal Liability (Coverage E)",
+          "text": "Provides legal defense and payment if you are held responsible for accidentally injuring someone else or damaging their property."
+        },
+        {
+          "title": "Medical Payments (Coverage F)",
+          "text": "Pays medical bills for people other than household members who are accidentally hurt on your property."
+        }
       ],
       "questions": [
-        { "q": "Does a homeowners policy cover flood damage?", "a": "No. Flood is a separate policy in Texas, and we usually quote the two together." },
-        { "q": "Is wind and hail included?", "a": "In most of Texas it is part of the homeowners policy, but along the coast it is often excluded and has to be bought separately." }
+        {
+          "q": "Does a homeowners policy cover flood damage?",
+          "a": "No. Flood is a separate policy in Texas, and we usually quote the two together."
+        },
+        {
+          "q": "Is wind and hail included?",
+          "a": "In most of Texas it is part of the homeowners policy, but along the coast it is often excluded and has to be bought separately."
+        }
       ]
     },
     {
@@ -80,18 +137,48 @@
       "text": "An HO-6 policy covers the walls-in portion of your unit, your belongings and your liability, filling the gaps the HOA master policy leaves.",
       "lead": "Owning a condo or townhome comes with its own responsibilities. While your Homeowners Association master policy generally protects the building's exterior and common areas, your personal HO-6 policy fills the gaps for everything inside your unit.",
       "covers": [
-        { "title": "Building property (walls-in)", "text": "Protects the interior structure of your unit, including drywall, flooring, cabinetry, countertops and built-in appliances." },
-        { "title": "Personal property", "text": "Covers belongings such as furniture, electronics, clothing and kitchenware against fire, theft or vandalism." },
-        { "title": "Personal liability", "text": "Financial protection if a guest is injured inside your condo, or if you accidentally damage a neighbor's property — a leak from your unit, for example." },
-        { "title": "Additional living expenses", "text": "Pays for hotel stays, meals and other costs if a covered event makes your condo uninhabitable during repairs." },
-        { "title": "Loss assessment", "text": "Helps cover your portion of special assessments charged by the HOA when communal damage exceeds the master policy's limits." },
-        { "title": "What the HOA master policy leaves you", "text": "How much you need depends on the master policy type. Bare walls means you insure everything inside, including the fixtures. Single entity covers the original fixtures, so you insure your upgrades and belongings. All-in covers most structural items and improvements, leaving personal property as your main concern." }
+        {
+          "title": "Building property (walls-in)",
+          "text": "Protects the interior structure of your unit, including drywall, flooring, cabinetry, countertops and built-in appliances."
+        },
+        {
+          "title": "Personal property",
+          "text": "Covers belongings such as furniture, electronics, clothing and kitchenware against fire, theft or vandalism."
+        },
+        {
+          "title": "Personal liability",
+          "text": "Financial protection if a guest is injured inside your condo, or if you accidentally damage a neighbor's property — a leak from your unit, for example."
+        },
+        {
+          "title": "Additional living expenses",
+          "text": "Pays for hotel stays, meals and other costs if a covered event makes your condo uninhabitable during repairs."
+        },
+        {
+          "title": "Loss assessment",
+          "text": "Helps cover your portion of special assessments charged by the HOA when communal damage exceeds the master policy's limits."
+        },
+        {
+          "title": "What the HOA master policy leaves you",
+          "text": "How much you need depends on the master policy type. Bare walls means you insure everything inside, including the fixtures. Single entity covers the original fixtures, so you insure your upgrades and belongings. All-in covers most structural items and improvements, leaving personal property as your main concern."
+        }
       ],
       "questions": [
-        { "q": "What weather does an HO-6 policy cover in Texas?", "a": "Policies typically cover damage from fire, windstorms, hail and lightning." },
-        { "q": "Is flooding included?", "a": "No. Standard condo policies in Texas do not cover flood damage, so it has to be written separately, and that matters most in a high-risk area like the Gulf Coast." },
-        { "q": "Is there a separate deductible for wind and hail?", "a": "Many Texas policies carry a separate deductible for wind and hail damage, often a percentage rather than a flat figure, because of how often severe storms hit the state." },
-        { "q": "What add-ons are worth looking at?", "a": "Water backup, which covers sewage and drain backups that base policies usually exclude; replacement cost coverage, so you are paid what a new item costs rather than a depreciated value; and valuable items floaters for jewelry, art or specialized equipment above the standard limits." }
+        {
+          "q": "What weather does an HO-6 policy cover in Texas?",
+          "a": "Policies typically cover damage from fire, windstorms, hail and lightning."
+        },
+        {
+          "q": "Is flooding included?",
+          "a": "No. Standard condo policies in Texas do not cover flood damage, so it has to be written separately, and that matters most in a high-risk area like the Gulf Coast."
+        },
+        {
+          "q": "Is there a separate deductible for wind and hail?",
+          "a": "Many Texas policies carry a separate deductible for wind and hail damage, often a percentage rather than a flat figure, because of how often severe storms hit the state."
+        },
+        {
+          "q": "What add-ons are worth looking at?",
+          "a": "Water backup, which covers sewage and drain backups that base policies usually exclude; replacement cost coverage, so you are paid what a new item costs rather than a depreciated value; and valuable items floaters for jewelry, art or specialized equipment above the standard limits."
+        }
       ]
     },
     {
@@ -102,16 +189,40 @@
       "text": "Renters insurance covers personal property, liability and additional living expenses if a rental becomes uninhabitable. The state does not require it, but many landlords do.",
       "lead": "Renters insurance in Texas covers your personal property, your liability and your additional living expenses if a rental becomes uninhabitable. It is not required by state law, but many landlords mandate it. Policies typically cover theft, fire, smoke, vandalism and water damage, though flood insurance is usually separate.",
       "covers": [
-        { "title": "Personal property protection", "text": "Replaces belongings — a laptop, clothes — if they are stolen or damaged, even outside the home." },
-        { "title": "Liability coverage", "text": "Protects you if you accidentally cause damage to the property or to someone else's property." },
-        { "title": "Medical payments", "text": "Covers medical bills if a guest is injured at your place." },
-        { "title": "Additional living expenses", "text": "Covers hotel, rent or food costs if you have to move out temporarily after a covered loss such as a fire." }
+        {
+          "title": "Personal property protection",
+          "text": "Replaces belongings — a laptop, clothes — if they are stolen or damaged, even outside the home."
+        },
+        {
+          "title": "Liability coverage",
+          "text": "Protects you if you accidentally cause damage to the property or to someone else's property."
+        },
+        {
+          "title": "Medical payments",
+          "text": "Covers medical bills if a guest is injured at your place."
+        },
+        {
+          "title": "Additional living expenses",
+          "text": "Covers hotel, rent or food costs if you have to move out temporarily after a covered loss such as a fire."
+        }
       ],
       "questions": [
-        { "q": "Does my landlord's insurance cover my things?", "a": "No. Landlord insurance does not cover your personal belongings." },
-        { "q": "Should I choose replacement cost or actual cash value?", "a": "Opt for replacement cost value over actual cash value, so you get the cost of buying new items rather than their depreciated value. Document what you own with photos or video to speed up a claim." },
-        { "q": "Are my roommates covered?", "a": "Some policies cover roommates and some do not, so check before you assume they are included." },
-        { "q": "Are there discounts on a renters policy?", "a": "You may get one for a security system or fire alarms, or for bundling the policy with your auto insurance." }
+        {
+          "q": "Does my landlord's insurance cover my things?",
+          "a": "No. Landlord insurance does not cover your personal belongings."
+        },
+        {
+          "q": "Should I choose replacement cost or actual cash value?",
+          "a": "Opt for replacement cost value over actual cash value, so you get the cost of buying new items rather than their depreciated value. Document what you own with photos or video to speed up a claim."
+        },
+        {
+          "q": "Are my roommates covered?",
+          "a": "Some policies cover roommates and some do not, so check before you assume they are included."
+        },
+        {
+          "q": "Are there discounts on a renters policy?",
+          "a": "You may get one for a security system or fire alarms, or for bundling the policy with your auto insurance."
+        }
       ]
     },
     {
@@ -124,15 +235,36 @@
       "image": "/brands/alberinsuranceagency/windstorm",
       "imageAlt": "A storm shelf cloud moving in over the ocean",
       "covers": [
-        { "title": "The Texas Windstorm Insurance Association", "text": "TWIA is the state's insurer of last resort, providing wind and hail coverage for coastal property owners who cannot get it from private companies. TWIA policies cover wind and hail only — not fire, theft or flood." },
-        { "title": "Who qualifies", "text": "You must have been denied coverage by at least one private insurer, be located in one of the 14 designated coastal counties or eastern Harris County, and hold a Windstorm Certificate of Compliance (WPI-8 or WPI-8E)." },
-        { "title": "First-tier counties", "text": "Aransas, Brazoria, Calhoun, Cameron, Chambers, Galveston, Jefferson, Kenedy, Kleberg, Matagorda, Nueces, Refugio, San Patricio and Willacy, plus the portion of Harris County east of Highway 146." },
-        { "title": "What it costs", "text": "Property value, location and the deductible you choose all affect the rate." }
+        {
+          "title": "The Texas Windstorm Insurance Association",
+          "text": "TWIA is the state's insurer of last resort, providing wind and hail coverage for coastal property owners who cannot get it from private companies. TWIA policies cover wind and hail only — not fire, theft or flood."
+        },
+        {
+          "title": "Who qualifies",
+          "text": "You must have been denied coverage by at least one private insurer, be located in one of the 14 designated coastal counties or eastern Harris County, and hold a Windstorm Certificate of Compliance (WPI-8 or WPI-8E)."
+        },
+        {
+          "title": "First-tier counties",
+          "text": "Aransas, Brazoria, Calhoun, Cameron, Chambers, Galveston, Jefferson, Kenedy, Kleberg, Matagorda, Nueces, Refugio, San Patricio and Willacy, plus the portion of Harris County east of Highway 146."
+        },
+        {
+          "title": "What it costs",
+          "text": "Property value, location and the deductible you choose all affect the rate."
+        }
       ],
       "questions": [
-        { "q": "Can I buy a TWIA policy directly?", "a": "No. You have to apply through a Texas-licensed insurance agent." },
-        { "q": "Can I get a policy once a hurricane is coming?", "a": "No. You cannot purchase or change a TWIA policy once a hurricane has entered the Gulf of Mexico." },
-        { "q": "Does windstorm cover flooding?", "a": "No. Neither a standard homeowners policy nor a TWIA policy typically covers flood damage. That needs a separate policy, usually through the National Flood Insurance Program." }
+        {
+          "q": "Can I buy a TWIA policy directly?",
+          "a": "No. You have to apply through a Texas-licensed insurance agent."
+        },
+        {
+          "q": "Can I get a policy once a hurricane is coming?",
+          "a": "No. You cannot purchase or change a TWIA policy once a hurricane has entered the Gulf of Mexico."
+        },
+        {
+          "q": "Does windstorm cover flooding?",
+          "a": "No. Neither a standard homeowners policy nor a TWIA policy typically covers flood damage. That needs a separate policy, usually through the National Flood Insurance Program."
+        }
       ]
     },
     {
@@ -145,14 +277,32 @@
       "image": "/brands/alberinsuranceagency/flood",
       "imageAlt": "A flooded residential street with water up around a house",
       "covers": [
-        { "title": "National Flood Insurance Program", "text": "Managed by FEMA. NFIP policies offer up to $250,000 for the building and $100,000 for contents, and generally carry a 30-day waiting period." },
-        { "title": "Private flood insurance", "text": "Often provides higher limits — up to around $7 million — shorter waiting periods of around 10 to 14 days, and extras such as loss of use coverage for temporary living expenses." },
-        { "title": "The TWIA requirement", "text": "If you carry TWIA coverage and your home was built or altered after September 1, 2009 in a high-risk zone, you must also have flood insurance." },
-        { "title": "Renters", "text": "Texas law (HB 531) requires landlords to disclose whether a property sits in a 100-year floodplain or has flooded in the past five years. Renters are encouraged to buy contents-only policies." }
+        {
+          "title": "National Flood Insurance Program",
+          "text": "Managed by FEMA. NFIP policies offer up to $250,000 for the building and $100,000 for contents, and generally carry a 30-day waiting period."
+        },
+        {
+          "title": "Private flood insurance",
+          "text": "Often provides higher limits — up to around $7 million — shorter waiting periods of around 10 to 14 days, and extras such as loss of use coverage for temporary living expenses."
+        },
+        {
+          "title": "The TWIA requirement",
+          "text": "If you carry TWIA coverage and your home was built or altered after September 1, 2009 in a high-risk zone, you must also have flood insurance."
+        },
+        {
+          "title": "Renters",
+          "text": "Texas law (HB 531) requires landlords to disclose whether a property sits in a 100-year floodplain or has flooded in the past five years. Renters are encouraged to buy contents-only policies."
+        }
       ],
       "questions": [
-        { "q": "How long before a flood policy takes effect?", "a": "Most policies have a 10- to 30-day waiting period before they become active, so do not wait until a storm is in the forecast." },
-        { "q": "How do I find out my flood risk?", "a": "You can look up your property's specific risk using the FEMA Flood Map Service Center." }
+        {
+          "q": "How long before a flood policy takes effect?",
+          "a": "Most policies have a 10- to 30-day waiting period before they become active, so do not wait until a storm is in the forecast."
+        },
+        {
+          "q": "How do I find out my flood risk?",
+          "a": "You can look up your property's specific risk using the FEMA Flood Map Service Center."
+        }
       ]
     },
     {
@@ -165,16 +315,40 @@
       "image": "/brands/alberinsuranceagency/auto",
       "imageAlt": "Elevated highway overpasses on the Texas Gulf Coast",
       "covers": [
-        { "title": "Liability coverage", "text": "Required. Pays for damages and injuries you cause to others, at the 30/60/25 minimum or above." },
-        { "title": "Collision coverage", "text": "Pays for repairs to your car regardless of who caused the accident." },
-        { "title": "Comprehensive coverage", "text": "Covers damage from non-collision events such as theft, fire, hail or vandalism." },
-        { "title": "Personal injury protection", "text": "Covers medical bills, lost wages and caregiver costs for you and your passengers, regardless of fault." },
-        { "title": "Uninsured and underinsured motorist", "text": "Pays for injuries or damage when the other driver has no insurance or not enough of it." }
+        {
+          "title": "Liability coverage",
+          "text": "Required. Pays for damages and injuries you cause to others, at the 30/60/25 minimum or above."
+        },
+        {
+          "title": "Collision coverage",
+          "text": "Pays for repairs to your car regardless of who caused the accident."
+        },
+        {
+          "title": "Comprehensive coverage",
+          "text": "Covers damage from non-collision events such as theft, fire, hail or vandalism."
+        },
+        {
+          "title": "Personal injury protection",
+          "text": "Covers medical bills, lost wages and caregiver costs for you and your passengers, regardless of fault."
+        },
+        {
+          "title": "Uninsured and underinsured motorist",
+          "text": "Pays for injuries or damage when the other driver has no insurance or not enough of it."
+        }
       ],
       "questions": [
-        { "q": "Do I have to take uninsured motorist coverage?", "a": "It is not legally required, but insurers must offer it and you have to reject it in writing if you do not want it." },
-        { "q": "What does my lender require?", "a": "If you are leasing or financing a car, lenders usually require both collision and comprehensive coverage." },
-        { "q": "Do I need to carry proof of insurance?", "a": "Yes. You must be able to show proof of insurance when law enforcement asks for it." }
+        {
+          "q": "Do I have to take uninsured motorist coverage?",
+          "a": "It is not legally required, but insurers must offer it and you have to reject it in writing if you do not want it."
+        },
+        {
+          "q": "What does my lender require?",
+          "a": "If you are leasing or financing a car, lenders usually require both collision and comprehensive coverage."
+        },
+        {
+          "q": "Do I need to carry proof of insurance?",
+          "a": "Yes. You must be able to show proof of insurance when law enforcement asks for it."
+        }
       ]
     },
     {
@@ -187,15 +361,36 @@
       "image": "/brands/alberinsuranceagency/boat",
       "imageAlt": "Boats docked at a pier on the water at sunset",
       "covers": [
-        { "title": "Liability coverage", "text": "Protects you if you cause bodily injury or property damage to others." },
-        { "title": "Hull and physical damage", "text": "Covers repairs or replacement of your vessel after an accident, fire, theft or storm." },
-        { "title": "Medical payments", "text": "Pays medical bills for you or your passengers if someone is injured in an accident." },
-        { "title": "Towing and roadside assistance", "text": "Help if your boat breaks down on the water, or if the trailer has trouble on the road." },
-        { "title": "Uninsured and underinsured boater", "text": "Covers your injuries if you are hit by a boater who does not have adequate insurance." }
+        {
+          "title": "Liability coverage",
+          "text": "Protects you if you cause bodily injury or property damage to others."
+        },
+        {
+          "title": "Hull and physical damage",
+          "text": "Covers repairs or replacement of your vessel after an accident, fire, theft or storm."
+        },
+        {
+          "title": "Medical payments",
+          "text": "Pays medical bills for you or your passengers if someone is injured in an accident."
+        },
+        {
+          "title": "Towing and roadside assistance",
+          "text": "Help if your boat breaks down on the water, or if the trailer has trouble on the road."
+        },
+        {
+          "title": "Uninsured and underinsured boater",
+          "text": "Covers your injuries if you are hit by a boater who does not have adequate insurance."
+        }
       ],
       "questions": [
-        { "q": "What does a PWC policy cost?", "a": "Liability-only policies for Jet Skis can start around $100 to $150 a year, while full coverage typically runs $200 to $600 depending on the craft's performance and value." },
-        { "q": "What does boat insurance cost in Texas?", "a": "The average annual cost in Texas was about $640 in 2024, though simple liability-only policies can be found for as low as $100 a year. A rule of thumb is roughly 1.5 percent of the boat's value." }
+        {
+          "q": "What does a PWC policy cost?",
+          "a": "Liability-only policies for Jet Skis can start around $100 to $150 a year, while full coverage typically runs $200 to $600 depending on the craft's performance and value."
+        },
+        {
+          "q": "What does boat insurance cost in Texas?",
+          "a": "The average annual cost in Texas was about $640 in 2024, though simple liability-only policies can be found for as low as $100 a year. A rule of thumb is roughly 1.5 percent of the boat's value."
+        }
       ]
     },
     {
@@ -206,16 +401,40 @@
       "text": "Texas requires riders to carry the same minimum liability limits as drivers, with collision, comprehensive and custom parts coverage available on top.",
       "lead": "Texas requires motorcycle riders to carry minimum liability insurance, often called the 30/60/25 rule: $30,000 for bodily injury per person, $60,000 for bodily injury per accident and $25,000 for property damage. Uninsured and underinsured motorist coverage must also be offered to you.",
       "covers": [
-        { "title": "Minimum liability", "text": "$30,000 per person, $60,000 per accident and $25,000 for property damage, which is what proves financial responsibility." },
-        { "title": "Collision", "text": "Covers damage to your bike from an accident." },
-        { "title": "Comprehensive", "text": "Covers non-collision damage such as theft, fire and vandalism." },
-        { "title": "Custom parts and equipment", "text": "Protects specialized add-ons that a standard policy would not cover." },
-        { "title": "Mopeds and scooters", "text": "Motor-driven cycles with smaller engines need the same liability coverage as motorcycles." }
+        {
+          "title": "Minimum liability",
+          "text": "$30,000 per person, $60,000 per accident and $25,000 for property damage, which is what proves financial responsibility."
+        },
+        {
+          "title": "Collision",
+          "text": "Covers damage to your bike from an accident."
+        },
+        {
+          "title": "Comprehensive",
+          "text": "Covers non-collision damage such as theft, fire and vandalism."
+        },
+        {
+          "title": "Custom parts and equipment",
+          "text": "Protects specialized add-ons that a standard policy would not cover."
+        },
+        {
+          "title": "Mopeds and scooters",
+          "text": "Motor-driven cycles with smaller engines need the same liability coverage as motorcycles."
+        }
       ],
       "questions": [
-        { "q": "What affects the premium?", "a": "Age, driving record, riding experience, location and the type of bike. Many insurers also discount for completing a safety course, bundling policies or belonging to a riders' association." },
-        { "q": "What happens if I ride uninsured?", "a": "Riding without insurance in Texas is illegal and carries penalties similar to driving a car uninsured. You have to carry proof of insurance while riding, and failing to produce it can mean fines, license suspension or impoundment." },
-        { "q": "Do I have to take uninsured motorist and PIP?", "a": "Texas law requires insurers to offer, and in some cases include, uninsured and underinsured motorist coverage and personal injury protection, so you have to reject them in writing if you do not want them." }
+        {
+          "q": "What affects the premium?",
+          "a": "Age, driving record, riding experience, location and the type of bike. Many insurers also discount for completing a safety course, bundling policies or belonging to a riders' association."
+        },
+        {
+          "q": "What happens if I ride uninsured?",
+          "a": "Riding without insurance in Texas is illegal and carries penalties similar to driving a car uninsured. You have to carry proof of insurance while riding, and failing to produce it can mean fines, license suspension or impoundment."
+        },
+        {
+          "q": "Do I have to take uninsured motorist and PIP?",
+          "a": "Texas law requires insurers to offer, and in some cases include, uninsured and underinsured motorist coverage and personal injury protection, so you have to reject them in writing if you do not want them."
+        }
       ]
     },
     {
@@ -226,15 +445,36 @@
       "text": "What Texas requires depends on whether the RV is motorized or towable. Motorhomes need 30/60/25 liability; towable trailers do not need their own policy, but your tow vehicle will not cover damage to them.",
       "lead": "In Texas, RV insurance requirements depend strictly on whether your vehicle is motorized or towable. Self-propelled motorhomes must meet the same minimum liability standards as cars, while towable trailers like fifth wheels generally do not require a separate state-mandated policy.",
       "covers": [
-        { "title": "Motorhomes (Class A, B or C)", "text": "Legally required to carry 30/60/25 liability to operate on public roads. Texas law also requires insurers to offer at least $2,500 in personal injury protection, and many RV policies offer more. A financed motorhome usually needs collision and comprehensive too." },
-        { "title": "Towable RVs", "text": "Not legally required to carry separate insurance in Texas. Your tow vehicle's liability often extends to the trailer while it is attached, but that does not cover damage to the trailer itself or its contents." },
-        { "title": "Comprehensive coverage", "text": "Strongly worth having in Texas because of hail risk. Covers non-collision events like fire, theft and storm damage." },
-        { "title": "Vacation liability", "text": "Covers accidents that happen at your campsite while the RV is parked and being used as a residence." },
-        { "title": "Full-timer's coverage", "text": "For people who live in the RV year-round, combining personal liability and property protection much like a homeowners policy." },
-        { "title": "Personal effects coverage", "text": "Protects the belongings inside the RV, such as gear and electronics." }
+        {
+          "title": "Motorhomes (Class A, B or C)",
+          "text": "Legally required to carry 30/60/25 liability to operate on public roads. Texas law also requires insurers to offer at least $2,500 in personal injury protection, and many RV policies offer more. A financed motorhome usually needs collision and comprehensive too."
+        },
+        {
+          "title": "Towable RVs",
+          "text": "Not legally required to carry separate insurance in Texas. Your tow vehicle's liability often extends to the trailer while it is attached, but that does not cover damage to the trailer itself or its contents."
+        },
+        {
+          "title": "Comprehensive coverage",
+          "text": "Strongly worth having in Texas because of hail risk. Covers non-collision events like fire, theft and storm damage."
+        },
+        {
+          "title": "Vacation liability",
+          "text": "Covers accidents that happen at your campsite while the RV is parked and being used as a residence."
+        },
+        {
+          "title": "Full-timer's coverage",
+          "text": "For people who live in the RV year-round, combining personal liability and property protection much like a homeowners policy."
+        },
+        {
+          "title": "Personal effects coverage",
+          "text": "Protects the belongings inside the RV, such as gear and electronics."
+        }
       ],
       "questions": [
-        { "q": "My travel trailer is not required to be insured. Should I insure it anyway?", "a": "Your tow vehicle's liability covers what the trailer does to others while attached, but nothing that happens to the trailer or what is inside it. A separate policy is what covers that." }
+        {
+          "q": "My travel trailer is not required to be insured. Should I insure it anyway?",
+          "a": "Your tow vehicle's liability covers what the trailer does to others while attached, but nothing that happens to the trailer or what is inside it. A separate policy is what covers that."
+        }
       ]
     },
     {
@@ -245,16 +485,40 @@
       "text": "Texas does not require ATV insurance on private property, but public riding areas, lenders and the limits of your homeowners policy all push toward a dedicated policy.",
       "lead": "In Texas, ATV insurance is not legally required by state law for operation on private property. Liability insurance is often mandatory, though, if you plan to ride in state parks, national forests or other designated public riding areas.",
       "covers": [
-        { "title": "Liability coverage", "text": "Covers bodily injury and property damage you cause to others. Recommended limits are often higher than standard auto policies because of the injury risk." },
-        { "title": "Collision coverage", "text": "Pays for repairs to your ATV after an accident, regardless of who is at fault." },
-        { "title": "Comprehensive coverage", "text": "Protects against theft, fire, vandalism, and damage from natural disasters or animals." },
-        { "title": "Uninsured and underinsured motorist", "text": "Protects you if you are hit by another rider who does not have adequate insurance." },
-        { "title": "Medical payments", "text": "Covers medical expenses for you and your passengers after an accident." }
+        {
+          "title": "Liability coverage",
+          "text": "Covers bodily injury and property damage you cause to others. Recommended limits are often higher than standard auto policies because of the injury risk."
+        },
+        {
+          "title": "Collision coverage",
+          "text": "Pays for repairs to your ATV after an accident, regardless of who is at fault."
+        },
+        {
+          "title": "Comprehensive coverage",
+          "text": "Protects against theft, fire, vandalism, and damage from natural disasters or animals."
+        },
+        {
+          "title": "Uninsured and underinsured motorist",
+          "text": "Protects you if you are hit by another rider who does not have adequate insurance."
+        },
+        {
+          "title": "Medical payments",
+          "text": "Covers medical expenses for you and your passengers after an accident."
+        }
       ],
       "questions": [
-        { "q": "Does my homeowners policy cover my ATV?", "a": "Most standard homeowners policies offer very limited coverage, or none at all, once the ATV leaves your private property." },
-        { "q": "Do I still need a title in Texas?", "a": "Yes. Texas no longer requires ATV registration at county tax offices, but you are still required to have a title for the vehicle." },
-        { "q": "Does a lender require coverage?", "a": "If the ATV is financed or leased, lenders typically require you to carry collision and comprehensive coverage for as long as the loan runs." }
+        {
+          "q": "Does my homeowners policy cover my ATV?",
+          "a": "Most standard homeowners policies offer very limited coverage, or none at all, once the ATV leaves your private property."
+        },
+        {
+          "q": "Do I still need a title in Texas?",
+          "a": "Yes. Texas no longer requires ATV registration at county tax offices, but you are still required to have a title for the vehicle."
+        },
+        {
+          "q": "Does a lender require coverage?",
+          "a": "If the ATV is financed or leased, lenders typically require you to carry collision and comprehensive coverage for as long as the loan runs."
+        }
       ]
     },
     {
@@ -265,14 +529,32 @@
       "text": "Whether you need coverage depends on where you drive. On public streets under a local ordinance, the state's minimum liability limits apply.",
       "lead": "In Texas, golf cart insurance requirements depend primarily on where you drive. There is no statewide mandate for insurance on private property, but coverage is generally required by law if you operate your cart on public roads under a local ordinance, typically streets with speed limits of 35 mph or less.",
       "covers": [
-        { "title": "Minimum liability on public streets", "text": "$30,000 for bodily injury per person, $60,000 for total bodily injury per accident and $25,000 for property damage." },
-        { "title": "Low-speed vehicles", "text": "If your vehicle is registered as a Low-Speed Vehicle rather than a standard golf cart, insurance is strictly mandatory and you must carry proof of it along with your driver's license." },
-        { "title": "Collision", "text": "Repairs your cart after an accident, regardless of fault." },
-        { "title": "Comprehensive", "text": "Protects against theft, vandalism and Texas weather such as hail and hurricanes." },
-        { "title": "Medical payments and uninsured motorist", "text": "Helps with medical bills for you and your passengers, and protects you if you are hit by someone without insurance." }
+        {
+          "title": "Minimum liability on public streets",
+          "text": "$30,000 for bodily injury per person, $60,000 for total bodily injury per accident and $25,000 for property damage."
+        },
+        {
+          "title": "Low-speed vehicles",
+          "text": "If your vehicle is registered as a Low-Speed Vehicle rather than a standard golf cart, insurance is strictly mandatory and you must carry proof of it along with your driver's license."
+        },
+        {
+          "title": "Collision",
+          "text": "Repairs your cart after an accident, regardless of fault."
+        },
+        {
+          "title": "Comprehensive",
+          "text": "Protects against theft, vandalism and Texas weather such as hail and hurricanes."
+        },
+        {
+          "title": "Medical payments and uninsured motorist",
+          "text": "Helps with medical bills for you and your passengers, and protects you if you are hit by someone without insurance."
+        }
       ],
       "questions": [
-        { "q": "Will my home or auto policy cover the cart?", "a": "Most standard home or auto policies offer very limited protection once the cart leaves your property." }
+        {
+          "q": "Will my home or auto policy cover the cart?",
+          "a": "Most standard home or auto policies offer very limited protection once the cart leaves your property."
+        }
       ]
     },
     {
@@ -283,16 +565,40 @@
       "text": "Umbrella insurance picks up after your auto or homeowners liability limits are exhausted, usually starting at $1 million.",
       "lead": "Umbrella insurance in Texas acts as an extra layer of liability protection that kicks in after your primary auto or homeowners limits are exhausted. It is not required by state law, but it is worth looking at for Texans with significant assets, high income potential or specific risks such as pools and teenage drivers.",
       "covers": [
-        { "title": "Excess liability", "text": "Pays for medical bills, property damage and legal settlements when costs exceed your standard policy limits, often starting at $1 million." },
-        { "title": "Legal defense", "text": "Covers attorney fees and court costs, even if a lawsuit is groundless." },
-        { "title": "Expanded protection", "text": "Covers incidents typically excluded by standard policies, such as libel, slander, false arrest and invasion of privacy." },
-        { "title": "Worldwide coverage", "text": "Most policies protect you for incidents that occur anywhere in the world, not just in Texas." }
+        {
+          "title": "Excess liability",
+          "text": "Pays for medical bills, property damage and legal settlements when costs exceed your standard policy limits, often starting at $1 million."
+        },
+        {
+          "title": "Legal defense",
+          "text": "Covers attorney fees and court costs, even if a lawsuit is groundless."
+        },
+        {
+          "title": "Expanded protection",
+          "text": "Covers incidents typically excluded by standard policies, such as libel, slander, false arrest and invasion of privacy."
+        },
+        {
+          "title": "Worldwide coverage",
+          "text": "Most policies protect you for incidents that occur anywhere in the world, not just in Texas."
+        }
       ],
       "questions": [
-        { "q": "What does it cost?", "a": "Estimated annual premiums in Texas run between $150 and $400 for the first $1 million in coverage. Each additional $1 million increment typically costs between $50 and $100 more per year." },
-        { "q": "Who should consider it?", "a": "People who own a home or rental property, have risky amenities such as a swimming pool, a trampoline or certain dog breeds, have teenage drivers on the policy, drive a great deal, or want to protect future earnings from being garnished after a judgment that exceeds their policy limits." },
-        { "q": "Do my other policies need higher limits first?", "a": "Usually, yes. Most Texas insurers require you to carry high liability limits on the underlying policies — $250,000 and $500,000 on auto, for example — before they will issue an umbrella policy over the top." },
-        { "q": "What does an umbrella policy not cover?", "a": "Your own injuries, damage to your own property, intentional criminal acts, and business-related liabilities, which need a commercial umbrella policy instead." }
+        {
+          "q": "What does it cost?",
+          "a": "Estimated annual premiums in Texas run between $150 and $400 for the first $1 million in coverage. Each additional $1 million increment typically costs between $50 and $100 more per year."
+        },
+        {
+          "q": "Who should consider it?",
+          "a": "People who own a home or rental property, have risky amenities such as a swimming pool, a trampoline or certain dog breeds, have teenage drivers on the policy, drive a great deal, or want to protect future earnings from being garnished after a judgment that exceeds their policy limits."
+        },
+        {
+          "q": "Do my other policies need higher limits first?",
+          "a": "Usually, yes. Most Texas insurers require you to carry high liability limits on the underlying policies — $250,000 and $500,000 on auto, for example — before they will issue an umbrella policy over the top."
+        },
+        {
+          "q": "What does an umbrella policy not cover?",
+          "a": "Your own injuries, damage to your own property, intentional criminal acts, and business-related liabilities, which need a commercial umbrella policy instead."
+        }
       ]
     }
   ],
@@ -306,10 +612,22 @@
     "image": "/brands/alberinsuranceagency/about",
     "imageAlt": "Boats docked at a pier on the water",
     "values": [
-      { "title": "Personalized service", "text": "We listen to your situation first and build the coverage around it, rather than fitting you into one company's products." },
-      { "title": "Several carriers", "text": "We represent multiple insurance carriers, so policies and rates can be compared before you commit to one." },
-      { "title": "Honesty and integrity", "text": "Our commitment to honesty and integrity is what makes sure you get the right coverage and the support behind it." },
-      { "title": "Competitive rates", "text": "Because we can compare across the carriers we represent, the policy you end up with is priced competitively rather than quoted from one company's book." }
+      {
+        "title": "Personalized service",
+        "text": "We listen to your situation first and build the coverage around it, rather than fitting you into one company's products."
+      },
+      {
+        "title": "Several carriers",
+        "text": "We represent multiple insurance carriers, so policies and rates can be compared before you commit to one."
+      },
+      {
+        "title": "Honesty and integrity",
+        "text": "Our commitment to honesty and integrity is what makes sure you get the right coverage and the support behind it."
+      },
+      {
+        "title": "Competitive rates",
+        "text": "Because we can compare across the carriers we represent, the policy you end up with is priced competitively rather than quoted from one company's book."
+      }
     ]
   },
   "team": [
@@ -325,17 +643,47 @@
     }
   ],
   "faqs": [
-    { "q": "What does an independent agency do differently?", "a": "Unlike captive agents who represent a single insurance company, independent agents work with multiple insurers. That lets us compare policies and prices and find the option that fits you." },
-    { "q": "Does my homeowners policy cover flooding?", "a": "No. Standard homeowners and renters insurance in Texas does not cover damage from rising water. Flood is always a separate policy." },
-    { "q": "Do I need a separate windstorm policy?", "a": "In most of Texas wind and hail sit inside the homeowners policy. In the 14 coastal counties and parts of Harris County they are often excluded and have to be purchased separately, frequently through TWIA." },
-    { "q": "How long before a flood policy takes effect?", "a": "NFIP policies generally have a 30-day waiting period, and private flood policies often 10 to 14 days. Do not wait for a storm to be in the forecast." },
-    { "q": "What are the minimum auto liability limits in Texas?", "a": "30/60/25 — $30,000 for injuries per person, $60,000 for total injuries per accident, and $25,000 for property damage." },
-    { "q": "Can I come in outside office hours?", "a": "Yes. The office is open Monday to Thursday from 9 AM to 4 PM and Friday morning, and we also see clients by appointment." }
+    {
+      "q": "What does an independent agency do differently?",
+      "a": "Unlike captive agents who represent a single insurance company, independent agents work with multiple insurers. That lets us compare policies and prices and find the option that fits you."
+    },
+    {
+      "q": "Does my homeowners policy cover flooding?",
+      "a": "No. Standard homeowners and renters insurance in Texas does not cover damage from rising water. Flood is always a separate policy."
+    },
+    {
+      "q": "Do I need a separate windstorm policy?",
+      "a": "In most of Texas wind and hail sit inside the homeowners policy. In the 14 coastal counties and parts of Harris County they are often excluded and have to be purchased separately, frequently through TWIA."
+    },
+    {
+      "q": "How long before a flood policy takes effect?",
+      "a": "NFIP policies generally have a 30-day waiting period, and private flood policies often 10 to 14 days. Do not wait for a storm to be in the forecast."
+    },
+    {
+      "q": "What are the minimum auto liability limits in Texas?",
+      "a": "30/60/25 — $30,000 for injuries per person, $60,000 for total injuries per accident, and $25,000 for property damage."
+    },
+    {
+      "q": "Can I come in outside office hours?",
+      "a": "Yes. The office is open Monday to Thursday from 9 AM to 4 PM and Friday morning, and we also see clients by appointment."
+    }
   ],
   "resources": [
-    { "title": "Texas Department of Insurance", "text": "Consumer guides, agent license lookups and complaint help for Texas policyholders.", "href": "https://www.tdi.texas.gov" },
-    { "title": "FEMA Flood Map Service Center", "text": "Look up the specific flood risk for your property before you buy or renew.", "href": "https://msc.fema.gov/portal/home" },
-    { "title": "Texas Windstorm Insurance Association", "text": "Wind and hail coverage for coastal property owners who cannot get it from a private carrier.", "href": "https://www.twia.org" }
+    {
+      "title": "Texas Department of Insurance",
+      "text": "Consumer guides, agent license lookups and complaint help for Texas policyholders.",
+      "href": "https://www.tdi.texas.gov"
+    },
+    {
+      "title": "FEMA Flood Map Service Center",
+      "text": "Look up the specific flood risk for your property before you buy or renew.",
+      "href": "https://msc.fema.gov/portal/home"
+    },
+    {
+      "title": "Texas Windstorm Insurance Association",
+      "text": "Wind and hail coverage for coastal property owners who cannot get it from a private carrier.",
+      "href": "https://www.twia.org"
+    }
   ],
   "facts": [
     {
@@ -348,7 +696,11 @@
     },
     {
       "heading": "Office hours",
-      "items": ["Monday to Thursday, 9 AM to 4 PM", "Friday, 9 AM to 12:30 PM", "Or by appointment"]
+      "items": [
+        "Monday to Thursday, 9 AM to 4 PM",
+        "Friday, 9 AM to 12:30 PM",
+        "Or by appointment"
+      ]
     },
     {
       "heading": "Lines we write",
@@ -370,7 +722,11 @@
     },
     {
       "heading": "Get in touch",
-      "items": ["Telephone: (281) 480-8132", "Email: insurance@alberinsurance.com", "Or send a message through the form on this page"]
+      "items": [
+        "Telephone: (281) 480-8132",
+        "Email: insurance@alberinsurance.com",
+        "Or send a message through the form on this page"
+      ]
     }
   ]
 }

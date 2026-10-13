@@ -12,7 +12,16 @@
   "rating": 5.0,
   "reviewCount": 76,
   "license": "Licensed, bonded and insured, A+ rated and accredited by the BBB",
-  "hours": [["Mon – Sat", "9 AM – 5 PM"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Sat",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "brand": {
     "primary": "#1e1a54",
     "primaryDeep": "#141135",
@@ -23,7 +32,24 @@
     "body": "'Open Sans', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap",
     "logo": "/brands/frostroofingrenovations/logo.webp",
-    "logoWidth": 190
+    "logoMono": "/brands/frostroofingrenovations/logo-mono.webp",
+    "logoWidth": 110,
+    "logoHeight": 58,
+    "logoRatio": 1.897,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.409,
+      0.329,
+      0.351,
+      0.356,
+      0.361,
+      0.366,
+      0.389,
+      0.535,
+      0.692,
+      0.85,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "League City roofing and renovation contractor",
@@ -62,8 +88,14 @@
         "Shingle and metal residential roofing"
       ],
       "faqs": [
-        { "q": "When should a roof be replaced instead of repaired?", "a": "We inspect the whole roof first and tell you plainly what we find. Where the damage is isolated we repair it; where the roof is worn through, a replacement is the better buy and we will show you why." },
-        { "q": "Can storm damage be hidden?", "a": "Yes. Hail and wind damage is often invisible from the ground, which is why we inspect after a storm and document what is there before anything is filed." }
+        {
+          "q": "When should a roof be replaced instead of repaired?",
+          "a": "We inspect the whole roof first and tell you plainly what we find. Where the damage is isolated we repair it; where the roof is worn through, a replacement is the better buy and we will show you why."
+        },
+        {
+          "q": "Can storm damage be hidden?",
+          "a": "Yes. Hail and wind damage is often invisible from the ground, which is why we inspect after a storm and document what is there before anything is filed."
+        }
       ]
     },
     {
@@ -89,8 +121,14 @@
         "The Catch-All System protecting your home, AC unit and landscaping"
       ],
       "faqs": [
-        { "q": "What does reroofing mean?", "a": "The old roof is removed and a new roofing system is installed in its place, rather than new material being laid over the old." },
-        { "q": "What do you leave behind when the job is done?", "a": "A Shingle Tomb, with complimentary shingles matched to your roof's exact batch and brand, detailed roof measurements and our contact information. If you ever need us again, everything is right there." }
+        {
+          "q": "What does reroofing mean?",
+          "a": "The old roof is removed and a new roofing system is installed in its place, rather than new material being laid over the old."
+        },
+        {
+          "q": "What do you leave behind when the job is done?",
+          "a": "A Shingle Tomb, with complimentary shingles matched to your roof's exact batch and brand, detailed roof measurements and our contact information. If you ever need us again, everything is right there."
+        }
       ]
     },
     {
@@ -115,8 +153,14 @@
         "Metal gutter systems"
       ],
       "faqs": [
-        { "q": "Does metal roofing improve energy efficiency?", "a": "Metal reflects rather than absorbs a large share of the sun's heat, which is one of the reasons Texas property owners choose it." },
-        { "q": "Are metal roofs good for homes and businesses?", "a": "Both. We install metal roofing on houses and on commercial buildings, and the profile we recommend depends on the slope and the look you want." }
+        {
+          "q": "Does metal roofing improve energy efficiency?",
+          "a": "Metal reflects rather than absorbs a large share of the sun's heat, which is one of the reasons Texas property owners choose it."
+        },
+        {
+          "q": "Are metal roofs good for homes and businesses?",
+          "a": "Both. We install metal roofing on houses and on commercial buildings, and the profile we recommend depends on the slope and the look you want."
+        }
       ]
     },
     {
@@ -140,8 +184,14 @@
         "Roof inspection and repair"
       ],
       "faqs": [
-        { "q": "Can repairs extend roof life?", "a": "Yes. Catching a leak or a failed detail early keeps water out of the decking and insulation, and that is what buys a roof its remaining years." },
-        { "q": "Do you repair homes and businesses?", "a": "Both. We work on residential roofs and on commercial and industrial buildings across Greater Houston." }
+        {
+          "q": "Can repairs extend roof life?",
+          "a": "Yes. Catching a leak or a failed detail early keeps water out of the decking and insulation, and that is what buys a roof its remaining years."
+        },
+        {
+          "q": "Do you repair homes and businesses?",
+          "a": "Both. We work on residential roofs and on commercial and industrial buildings across Greater Houston."
+        }
       ]
     },
     {
@@ -166,8 +216,14 @@
         "Downspout installation"
       ],
       "faqs": [
-        { "q": "Are seamless gutters worth installing?", "a": "Fewer joints means fewer places for a run to leak, which is why seamless is what we fit on most homes." },
-        { "q": "Can damaged gutters affect indoor areas?", "a": "Yes. Water that overflows a failed gutter runs behind the fascia and into the soffit, and from there it reaches ceilings and walls." }
+        {
+          "q": "Are seamless gutters worth installing?",
+          "a": "Fewer joints means fewer places for a run to leak, which is why seamless is what we fit on most homes."
+        },
+        {
+          "q": "Can damaged gutters affect indoor areas?",
+          "a": "Yes. Water that overflows a failed gutter runs behind the fascia and into the soffit, and from there it reaches ceilings and walls."
+        }
       ]
     },
     {
@@ -192,8 +248,14 @@
         "Insurance-related repairs and restoration after Houston's storms"
       ],
       "faqs": [
-        { "q": "Do you help with insurance claims and storm damage?", "a": "Yes. We help with storm damage repairs and guide homeowners through the insurance process, handling all paperwork and filing." },
-        { "q": "Does Frost Roofing & Renovations only handle claims, or also the repairs?", "a": "Both. We document the damage, work the claim with you and then carry out the repair or replacement once it is approved." }
+        {
+          "q": "Do you help with insurance claims and storm damage?",
+          "a": "Yes. We help with storm damage repairs and guide homeowners through the insurance process, handling all paperwork and filing."
+        },
+        {
+          "q": "Does Frost Roofing & Renovations only handle claims, or also the repairs?",
+          "a": "Both. We document the damage, work the claim with you and then carry out the repair or replacement once it is approved."
+        }
       ]
     },
     {
@@ -219,8 +281,14 @@
         "Commercial roofing maintenance"
       ],
       "faqs": [
-        { "q": "How often should a commercial roof be checked?", "a": "Regularly, and after every significant storm. Damage on a low-slope roof is rarely visible from the ground and the first sign is usually a leak inside." },
-        { "q": "Is metal roofing good for Texas businesses?", "a": "It holds up well to heat and wind and is one of the systems we install most often on commercial buildings here." }
+        {
+          "q": "How often should a commercial roof be checked?",
+          "a": "Regularly, and after every significant storm. Damage on a low-slope roof is rarely visible from the ground and the first sign is usually a leak inside."
+        },
+        {
+          "q": "Is metal roofing good for Texas businesses?",
+          "a": "It holds up well to heat and wind and is one of the systems we install most often on commercial buildings here."
+        }
       ]
     },
     {
@@ -265,8 +333,14 @@
         "Fascia in vinyl, wood and aluminium"
       ],
       "faqs": [
-        { "q": "What is fascia and why is it important?", "a": "It is the board that runs along the edge of the roof and carries the gutters. It closes the roof edge off, and when it fails water reaches the decking and the soffit behind it." },
-        { "q": "What happens if fascia damage is ignored?", "a": "The rot spreads into the roof edge and the soffit, the gutters lose what they are fixed to, and a board replacement turns into a roofline repair." }
+        {
+          "q": "What is fascia and why is it important?",
+          "a": "It is the board that runs along the edge of the roof and carries the gutters. It closes the roof edge off, and when it fails water reaches the decking and the soffit behind it."
+        },
+        {
+          "q": "What happens if fascia damage is ignored?",
+          "a": "The rot spreads into the roof edge and the soffit, the gutters lose what they are fixed to, and a board replacement turns into a roofline repair."
+        }
       ]
     },
     {
@@ -379,17 +453,37 @@
     "title": "We make insurance claims easier",
     "text": "Storm damage is stressful enough. We guide you from the first inspection through to the final cleanup, so you are not navigating it alone.",
     "steps": [
-      { "title": "Free inspection", "text": "We look at the roof and the rest of the exterior for free, and tell you what we find." },
-      { "title": "Damage documented", "text": "We record the storm, hail, wind or water damage so there is evidence behind the claim." },
-      { "title": "Paperwork and filing", "text": "We handle the insurance-related paperwork and the filing, and guide you through the process." },
-      { "title": "Repair or replacement", "text": "Once the claim is settled, our own install team carries out the work." },
-      { "title": "Final cleanup", "text": "We finish the job and clean the site before we leave." }
+      {
+        "title": "Free inspection",
+        "text": "We look at the roof and the rest of the exterior for free, and tell you what we find."
+      },
+      {
+        "title": "Damage documented",
+        "text": "We record the storm, hail, wind or water damage so there is evidence behind the claim."
+      },
+      {
+        "title": "Paperwork and filing",
+        "text": "We handle the insurance-related paperwork and the filing, and guide you through the process."
+      },
+      {
+        "title": "Repair or replacement",
+        "text": "Once the claim is settled, our own install team carries out the work."
+      },
+      {
+        "title": "Final cleanup",
+        "text": "We finish the job and clean the site before we leave."
+      }
     ]
   },
   "materials": {
     "title": "What we install",
     "text": "We are proudly preferred contractors for Owens Corning and Worthouse Metal Roofing, and we install roofing systems engineered for performance, appearance and long-term coverage.",
-    "brands": ["Owens Corning", "Owens Corning Duration", "RizerRidge", "Worthouse Metal Roofing"]
+    "brands": [
+      "Owens Corning",
+      "Owens Corning Duration",
+      "RizerRidge",
+      "Worthouse Metal Roofing"
+    ]
   },
   "about": {
     "title": "A decade of trusted roofing and renovation",
@@ -401,18 +495,39 @@
     "image": "/brands/frostroofingrenovations/about",
     "imageAlt": "A roofer on scaffolding working along the roof of a brick home",
     "values": [
-      { "title": "The Catch-All System", "text": "We protect your home, AC unit and landscaping before the first shingle comes off." },
-      { "title": "Two project managers", "text": "Every re-roof gets two, so someone is always on site watching your home and your project." },
-      { "title": "The Shingle Tomb", "text": "We leave matching shingles, your roof measurements and our details behind when we finish." }
+      {
+        "title": "The Catch-All System",
+        "text": "We protect your home, AC unit and landscaping before the first shingle comes off."
+      },
+      {
+        "title": "Two project managers",
+        "text": "Every re-roof gets two, so someone is always on site watching your home and your project."
+      },
+      {
+        "title": "The Shingle Tomb",
+        "text": "We leave matching shingles, your roof measurements and our details behind when we finish."
+      }
     ]
   },
   "inspection": {
     "title": "What happens when you get in touch",
     "steps": [
-      { "title": "You reach out", "text": "Call, email or fill in the form. We are always just a step away." },
-      { "title": "Free consultation or inspection", "text": "We schedule it at a time that works best for you, free, with no obligation." },
-      { "title": "Clear recommendations", "text": "We tell you what we found and what we would do about it." },
-      { "title": "A no-obligation estimate", "text": "You get the numbers in writing, so you know exactly what to expect." }
+      {
+        "title": "You reach out",
+        "text": "Call, email or fill in the form. We are always just a step away."
+      },
+      {
+        "title": "Free consultation or inspection",
+        "text": "We schedule it at a time that works best for you, free, with no obligation."
+      },
+      {
+        "title": "Clear recommendations",
+        "text": "We tell you what we found and what we would do about it."
+      },
+      {
+        "title": "A no-obligation estimate",
+        "text": "You get the numbers in writing, so you know exactly what to expect."
+      }
     ]
   },
   "serviceArea": [

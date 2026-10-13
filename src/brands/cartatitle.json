@@ -14,7 +14,20 @@
   "license": "A title company licensed and regulated by the state of Texas to handle and conduct closings.",
   "rating": 5.0,
   "reviewCount": 7,
-  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "cta": {
     "label": "Order Title",
     "text": "Let us know how we can help make your real estate transaction a done deal."
@@ -32,7 +45,24 @@
     "body": "'Open Sans', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap",
     "logo": "/brands/cartatitle/logo.webp",
-    "logoWidth": 182
+    "logoMono": "/brands/cartatitle/logo-mono.webp",
+    "logoWidth": 160,
+    "logoHeight": 58,
+    "logoRatio": 2.759,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.423,
+      0.283,
+      0.154,
+      0.063,
+      0.164,
+      0.307,
+      0.442,
+      0.578,
+      0.721,
+      0.864,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Title and real estate settlement in Houston",
@@ -50,7 +80,10 @@
     "title": "An extensive list of services for all of your real estate closing needs.",
     "text": "Pick the part of the closing you want to read about, or call and talk it through with our closing team."
   },
-  "audiences": { "individuals": "Buyers & Sellers", "businesses": "Realtors, Lenders & Commercial" },
+  "audiences": {
+    "individuals": "Buyers & Sellers",
+    "businesses": "Realtors, Lenders & Commercial"
+  },
   "services": [
     {
       "slug": "title-insurance",
@@ -63,16 +96,40 @@
       "image": "/brands/cartatitle/title-insurance",
       "imageAlt": "A closing file and a model house on a desk during a signing",
       "covers": [
-        { "title": "Owner's policy", "text": "Protects your ownership rights, and lasts as long as you or your heirs own the property with no changes on title." },
-        { "title": "Lender's policy", "text": "Protects the mortgage lender's interest in the property, and ends when the loan is paid off." },
-        { "title": "Paid once", "text": "The cost is minimal and is only paid once. There are no renewal premiums and no expiration date on the policy." },
-        { "title": "Rates set by the state", "text": "In Texas, title insurance rates are fixed and regulated by the state of Texas." }
+        {
+          "title": "Owner's policy",
+          "text": "Protects your ownership rights, and lasts as long as you or your heirs own the property with no changes on title."
+        },
+        {
+          "title": "Lender's policy",
+          "text": "Protects the mortgage lender's interest in the property, and ends when the loan is paid off."
+        },
+        {
+          "title": "Paid once",
+          "text": "The cost is minimal and is only paid once. There are no renewal premiums and no expiration date on the policy."
+        },
+        {
+          "title": "Rates set by the state",
+          "text": "In Texas, title insurance rates are fixed and regulated by the state of Texas."
+        }
       ],
       "questions": [
-        { "q": "Why is title insurance necessary?", "a": "Even with a thorough title search, hidden issues can arise later. Title insurance gives you peace of mind that you're protected from covered claims." },
-        { "q": "Who pays for title insurance?", "a": "It depends on local custom or contract negotiation. In some areas the buyer pays; in others the seller does. Generally, the seller pays for the title insurance as it guarantees no title defects for the benefit of the buyer." },
-        { "q": "Can title insurance be transferred to a new owner?", "a": "No, title insurance is not transferable. Each new buyer typically needs a new policy." },
-        { "q": "Can I shop for title insurance?", "a": "Yes, buyers have the right to choose their title company or closing agent." }
+        {
+          "q": "Why is title insurance necessary?",
+          "a": "Even with a thorough title search, hidden issues can arise later. Title insurance gives you peace of mind that you're protected from covered claims."
+        },
+        {
+          "q": "Who pays for title insurance?",
+          "a": "It depends on local custom or contract negotiation. In some areas the buyer pays; in others the seller does. Generally, the seller pays for the title insurance as it guarantees no title defects for the benefit of the buyer."
+        },
+        {
+          "q": "Can title insurance be transferred to a new owner?",
+          "a": "No, title insurance is not transferable. Each new buyer typically needs a new policy."
+        },
+        {
+          "q": "Can I shop for title insurance?",
+          "a": "Yes, buyers have the right to choose their title company or closing agent."
+        }
       ]
     },
     {
@@ -86,15 +143,36 @@
       "image": "/brands/cartatitle/title-search",
       "imageAlt": "Aerial view of a Houston corridor of homes and commercial buildings",
       "covers": [
-        { "title": "Ownership history", "text": "Confirming the seller has legal ownership of the property and the right to transfer it." },
-        { "title": "Liens and judgments", "text": "Uncovering liens, judgments or restrictions recorded against the property." },
-        { "title": "Title commitment", "text": "A document that outlines the conditions under which the title company will issue title insurance once all requirements are satisfied." },
-        { "title": "Clearing issues", "text": "Where something is found, we work with the parties involved to resolve or clear the issue before closing." }
+        {
+          "title": "Ownership history",
+          "text": "Confirming the seller has legal ownership of the property and the right to transfer it."
+        },
+        {
+          "title": "Liens and judgments",
+          "text": "Uncovering liens, judgments or restrictions recorded against the property."
+        },
+        {
+          "title": "Title commitment",
+          "text": "A document that outlines the conditions under which the title company will issue title insurance once all requirements are satisfied."
+        },
+        {
+          "title": "Clearing issues",
+          "text": "Where something is found, we work with the parties involved to resolve or clear the issue before closing."
+        }
       ],
       "questions": [
-        { "q": "What does \"clear title\" mean?", "a": "It means the property is free from any liens, claims, or legal issues that could affect ownership." },
-        { "q": "What if there's a lien or issue on the title?", "a": "The title company will work with the parties involved to resolve or clear the issue before closing." },
-        { "q": "Why do I need a title company when buying a property?", "a": "A title company ensures the seller has legal ownership of the property and that there are no hidden issues that could affect your rights as the new owner." }
+        {
+          "q": "What does \"clear title\" mean?",
+          "a": "It means the property is free from any liens, claims, or legal issues that could affect ownership."
+        },
+        {
+          "q": "What if there's a lien or issue on the title?",
+          "a": "The title company will work with the parties involved to resolve or clear the issue before closing."
+        },
+        {
+          "q": "Why do I need a title company when buying a property?",
+          "a": "A title company ensures the seller has legal ownership of the property and that there are no hidden issues that could affect your rights as the new owner."
+        }
       ]
     },
     {
@@ -108,15 +186,36 @@
       "image": "/brands/cartatitle/escrow",
       "imageAlt": "A family being handed the keys beside their moving boxes",
       "covers": [
-        { "title": "The escrow account", "text": "Funds and documents held until all conditions of the transaction are met." },
-        { "title": "The closing agent", "text": "Coordinates document signing, collects and disburses funds, records necessary documents, and ensures all legal requirements are fulfilled." },
-        { "title": "Verified wiring", "text": "Verified communication channels, secure applications, encryption and verbal confirmation protocols so funds are securely transferred." },
-        { "title": "Settlement statement", "text": "Payment for title services is typically made at closing and reflected on your closing disclosure or settlement statement." }
+        {
+          "title": "The escrow account",
+          "text": "Funds and documents held until all conditions of the transaction are met."
+        },
+        {
+          "title": "The closing agent",
+          "text": "Coordinates document signing, collects and disburses funds, records necessary documents, and ensures all legal requirements are fulfilled."
+        },
+        {
+          "title": "Verified wiring",
+          "text": "Verified communication channels, secure applications, encryption and verbal confirmation protocols so funds are securely transferred."
+        },
+        {
+          "title": "Settlement statement",
+          "text": "Payment for title services is typically made at closing and reflected on your closing disclosure or settlement statement."
+        }
       ],
       "questions": [
-        { "q": "What should I bring to closing?", "a": "A valid photo ID, any required funds (typically via wire transfer or certified check), and any additional documents requested by your title or escrow officer." },
-        { "q": "How can I verify wiring instructions are legitimate?", "a": "Always call your escrow officer at a verified phone number before initiating any wire transfer." },
-        { "q": "How can I contact my escrow or title officer?", "a": "You'll receive direct contact information after your file is opened. You can also reach us through our contact page or the main office line at (713) 623-1804." }
+        {
+          "q": "What should I bring to closing?",
+          "a": "A valid photo ID, any required funds (typically via wire transfer or certified check), and any additional documents requested by your title or escrow officer."
+        },
+        {
+          "q": "How can I verify wiring instructions are legitimate?",
+          "a": "Always call your escrow officer at a verified phone number before initiating any wire transfer."
+        },
+        {
+          "q": "How can I contact my escrow or title officer?",
+          "a": "You'll receive direct contact information after your file is opened. You can also reach us through our contact page or the main office line at (713) 623-1804."
+        }
       ]
     },
     {
@@ -130,15 +229,36 @@
       "image": "/brands/cartatitle/residential-closings",
       "imageAlt": "A couple at home holding cut-out house shapes",
       "covers": [
-        { "title": "Buyers", "text": "A comprehensive title search and an owner's policy, with updates throughout the process, a clear breakdown of costs and guidance through each step of closing." },
-        { "title": "Sellers", "text": "We work with you to satisfy any liens and prepare all the necessary closing documentation to make the transaction as smooth as possible for you and the buyer, at competitive rates." },
-        { "title": "Investment property and land", "text": "Residential homes, investment property, commercial buildings and vacant land are all handled by the same staff." },
-        { "title": "Remote and mobile closings", "text": "We offer remote or mobile closings for convenience." }
+        {
+          "title": "Buyers",
+          "text": "A comprehensive title search and an owner's policy, with updates throughout the process, a clear breakdown of costs and guidance through each step of closing."
+        },
+        {
+          "title": "Sellers",
+          "text": "We work with you to satisfy any liens and prepare all the necessary closing documentation to make the transaction as smooth as possible for you and the buyer, at competitive rates."
+        },
+        {
+          "title": "Investment property and land",
+          "text": "Residential homes, investment property, commercial buildings and vacant land are all handled by the same staff."
+        },
+        {
+          "title": "Remote and mobile closings",
+          "text": "We offer remote or mobile closings for convenience."
+        }
       ],
       "questions": [
-        { "q": "How long does closing take?", "a": "The process typically takes 30 to 45 days, but timelines can vary based on financing and property conditions." },
-        { "q": "Can I close remotely?", "a": "Yes. We now offer remote or mobile closings for convenience." },
-        { "q": "As a seller, why do I need a title company?", "a": "The title company helps ensure your property can be legally transferred and that you receive your sale proceeds promptly." }
+        {
+          "q": "How long does closing take?",
+          "a": "The process typically takes 30 to 45 days, but timelines can vary based on financing and property conditions."
+        },
+        {
+          "q": "Can I close remotely?",
+          "a": "Yes. We now offer remote or mobile closings for convenience."
+        },
+        {
+          "q": "As a seller, why do I need a title company?",
+          "a": "The title company helps ensure your property can be legally transferred and that you receive your sale proceeds promptly."
+        }
       ]
     },
     {
@@ -152,14 +272,32 @@
       "image": "/brands/cartatitle/document-preparation",
       "imageAlt": "The Houston skyline at sunset",
       "covers": [
-        { "title": "Closing documentation", "text": "All the necessary closing documentation prepared so the transaction is as smooth as possible for both sides." },
-        { "title": "Recording the deed", "text": "After closing, the title company records the deed with the county." },
-        { "title": "Paying off liens", "text": "Existing liens are paid off out of the closing funds." },
-        { "title": "Policies and copies", "text": "The title policy is issued and all parties receive their respective documents." }
+        {
+          "title": "Closing documentation",
+          "text": "All the necessary closing documentation prepared so the transaction is as smooth as possible for both sides."
+        },
+        {
+          "title": "Recording the deed",
+          "text": "After closing, the title company records the deed with the county."
+        },
+        {
+          "title": "Paying off liens",
+          "text": "Existing liens are paid off out of the closing funds."
+        },
+        {
+          "title": "Policies and copies",
+          "text": "The title policy is issued and all parties receive their respective documents."
+        }
       ],
       "questions": [
-        { "q": "What happens after closing?", "a": "The title company records the deed, pays off any existing liens, issues the title policy, and ensures all parties receive their respective documents." },
-        { "q": "What should I do if I have questions after closing?", "a": "Contact your escrow officer directly. We're happy to help clarify any post-closing questions." }
+        {
+          "q": "What happens after closing?",
+          "a": "The title company records the deed, pays off any existing liens, issues the title policy, and ensures all parties receive their respective documents."
+        },
+        {
+          "q": "What should I do if I have questions after closing?",
+          "a": "Contact your escrow officer directly. We're happy to help clarify any post-closing questions."
+        }
       ]
     },
     {
@@ -173,10 +311,22 @@
       "image": "/brands/cartatitle/realtors",
       "imageAlt": "Two people shaking hands in an office",
       "covers": [
-        { "title": "One single point of contact", "text": "The same person on your file from the contract through to funding." },
-        { "title": "Full service on every transaction", "text": "Every file gets the same treatment, whatever the price point." },
-        { "title": "Timely and accurate title commitments", "text": "Commitments that arrive when you need them and say what they should." },
-        { "title": "Contract upload or drop off", "text": "Upload the contract through our order form, or drop it off at the Shepherd Drive office." }
+        {
+          "title": "One single point of contact",
+          "text": "The same person on your file from the contract through to funding."
+        },
+        {
+          "title": "Full service on every transaction",
+          "text": "Every file gets the same treatment, whatever the price point."
+        },
+        {
+          "title": "Timely and accurate title commitments",
+          "text": "Commitments that arrive when you need them and say what they should."
+        },
+        {
+          "title": "Contract upload or drop off",
+          "text": "Upload the contract through our order form, or drop it off at the Shepherd Drive office."
+        }
       ]
     },
     {
@@ -190,10 +340,22 @@
       "image": "/brands/cartatitle/lenders",
       "imageAlt": "A downtown Houston street beside an office building",
       "covers": [
-        { "title": "Fully TRID compliant", "text": "Disclosures and timelines handled to the standard your compliance team has to answer for." },
-        { "title": "Protecting your interest", "text": "We protect your interest against any title defects by carefully reviewing your instructions to ensure that all documents are executed in a timely fashion." },
-        { "title": "National underwriters", "text": "Carta Title Company works with First American Title and Alliant National Title." },
-        { "title": "Superior communication", "text": "One single point of contact, knowledgeable and professional staff, and full service on every transaction." }
+        {
+          "title": "Fully TRID compliant",
+          "text": "Disclosures and timelines handled to the standard your compliance team has to answer for."
+        },
+        {
+          "title": "Protecting your interest",
+          "text": "We protect your interest against any title defects by carefully reviewing your instructions to ensure that all documents are executed in a timely fashion."
+        },
+        {
+          "title": "National underwriters",
+          "text": "Carta Title Company works with First American Title and Alliant National Title."
+        },
+        {
+          "title": "Superior communication",
+          "text": "One single point of contact, knowledgeable and professional staff, and full service on every transaction."
+        }
       ]
     },
     {
@@ -207,13 +369,28 @@
       "image": "/brands/cartatitle/commercial",
       "imageAlt": "Mid-rise commercial buildings in Houston",
       "covers": [
-        { "title": "Office and retail", "text": "Commercial office buildings and shopping centers closed around Houston." },
-        { "title": "Hotels and multi-family", "text": "Hotels, multi-family units and restaurants among the transactions we have handled." },
-        { "title": "Current on the law", "text": "We stay on top of commercial real estate laws and regulation changes, so our commercial clients close on their properties on time." },
-        { "title": "Portfolio and land", "text": "Commercial, residential, multi-family, land and portfolio transactions, among others." }
+        {
+          "title": "Office and retail",
+          "text": "Commercial office buildings and shopping centers closed around Houston."
+        },
+        {
+          "title": "Hotels and multi-family",
+          "text": "Hotels, multi-family units and restaurants among the transactions we have handled."
+        },
+        {
+          "title": "Current on the law",
+          "text": "We stay on top of commercial real estate laws and regulation changes, so our commercial clients close on their properties on time."
+        },
+        {
+          "title": "Portfolio and land",
+          "text": "Commercial, residential, multi-family, land and portfolio transactions, among others."
+        }
       ],
       "questions": [
-        { "q": "What types of investment transactions do you handle?", "a": "Commercial, residential, multi-family, land, and portfolio transactions, among others." }
+        {
+          "q": "What types of investment transactions do you handle?",
+          "a": "Commercial, residential, multi-family, land, and portfolio transactions, among others."
+        }
       ]
     }
   ],
@@ -221,15 +398,33 @@
     "title": "How a closing works",
     "text": "The process typically takes 30 to 45 days, but timelines can vary based on financing and property conditions.",
     "steps": [
-      { "title": "Open the file", "text": "Upload the contract through our order form or drop it off. You'll receive direct contact information once your file is opened." },
-      { "title": "Search and commitment", "text": "We review the public records to confirm ownership and uncover any liens, judgments or restrictions, then issue the title commitment." },
-      { "title": "Clear the title", "text": "If a lien or other issue turns up, we work with the parties involved to resolve or clear it before closing." },
-      { "title": "Closing day", "text": "The closing agent coordinates signing, collects and disburses funds and records the documents. Remote and mobile closings are available." },
-      { "title": "After closing", "text": "We record the deed, pay off any existing liens, issue the title policy and make sure all parties receive their documents." }
+      {
+        "title": "Open the file",
+        "text": "Upload the contract through our order form or drop it off. You'll receive direct contact information once your file is opened."
+      },
+      {
+        "title": "Search and commitment",
+        "text": "We review the public records to confirm ownership and uncover any liens, judgments or restrictions, then issue the title commitment."
+      },
+      {
+        "title": "Clear the title",
+        "text": "If a lien or other issue turns up, we work with the parties involved to resolve or clear it before closing."
+      },
+      {
+        "title": "Closing day",
+        "text": "The closing agent coordinates signing, collects and disburses funds and records the documents. Remote and mobile closings are available."
+      },
+      {
+        "title": "After closing",
+        "text": "We record the deed, pay off any existing liens, issue the title policy and make sure all parties receive their documents."
+      }
     ]
   },
   "affiliations": {
-    "items": ["First American Title", "Alliant National Title"]
+    "items": [
+      "First American Title",
+      "Alliant National Title"
+    ]
   },
   "about": {
     "title": "A full-service title and real estate settlement provider in Houston.",
@@ -241,26 +436,73 @@
     "image": "/brands/cartatitle/about",
     "imageAlt": "Aerial view of Houston neighborhoods and streets",
     "values": [
-      { "title": "One single point of contact", "text": "The same person stays on your file, so you are never explaining the transaction twice." },
-      { "title": "Superior communication", "text": "Updates through the process and a clear breakdown of costs, from knowledgeable and professional staff." },
-      { "title": "Full service on every transaction", "text": "Timely and accurate title commitments, whether the file is a first home or a shopping center." }
+      {
+        "title": "One single point of contact",
+        "text": "The same person stays on your file, so you are never explaining the transaction twice."
+      },
+      {
+        "title": "Superior communication",
+        "text": "Updates through the process and a clear breakdown of costs, from knowledgeable and professional staff."
+      },
+      {
+        "title": "Full service on every transaction",
+        "text": "Timely and accurate title commitments, whether the file is a first home or a shopping center."
+      }
     ]
   },
   "faqs": [
-    { "q": "What is a title company and what do you do?", "a": "A title company verifies property ownership, identifies any liens or issues, facilitates the closing process, and issues title insurance to protect both buyer and lender from potential title defects." },
-    { "q": "What's the difference between a title company and a real estate attorney?", "a": "A title company handles the research, insurance, and closing logistics, while an attorney may provide legal advice or representation on a matter, but cannot offer title insurance. A title company is licensed and regulated by the state of Texas to handle and conduct closings." },
-    { "q": "What fees are associated with title and closing services?", "a": "Typical fees include title search, settlement and escrow fees, recording fees, and title insurance premiums." },
-    { "q": "Are title premiums negotiable?", "a": "In Texas, title insurance rates are fixed and regulated by the state of Texas." },
-    { "q": "What is wire fraud in real estate?", "a": "Criminals sometimes attempt to trick buyers or agents into wiring funds to fraudulent accounts by impersonating title or escrow agents." },
-    { "q": "How do you protect against wire fraud?", "a": "We use verified communication channels, secure applications, encryption, and verbal confirmation protocols to ensure funds are securely transferred." },
-    { "q": "Can a title company help with a 1031 exchange?", "a": "Yes. While Carta Title Company doesn't serve as the Qualified Intermediary, we work closely with Equicap 1031 Exchange to ensure proper handling of exchange funds and documentation." },
-    { "q": "Do you offer bilingual or multilingual services?", "a": "Yes, we offer assistance in multiple languages to ensure a smooth experience for all clients." },
-    { "q": "When will I get my check from the title company?", "a": "We make every effort to pay all of the parties involved quickly, often the same day the transaction closes, though that varies with the day and the time of day the closing happens. Net proceeds on a sale and a Realtor's commission are usually cut the same or the next business day; if you are out of town the check is mailed, so allow an extra day or two. A Monday to Thursday closing date is a good idea if you want the funds quickly." },
-    { "q": "Is a wire transfer faster than a paper check?", "a": "Not always. Wire transfers sometimes require more verification and approvals because of cyber fraud, and as a result may even take an extra 24 hours." }
+    {
+      "q": "What is a title company and what do you do?",
+      "a": "A title company verifies property ownership, identifies any liens or issues, facilitates the closing process, and issues title insurance to protect both buyer and lender from potential title defects."
+    },
+    {
+      "q": "What's the difference between a title company and a real estate attorney?",
+      "a": "A title company handles the research, insurance, and closing logistics, while an attorney may provide legal advice or representation on a matter, but cannot offer title insurance. A title company is licensed and regulated by the state of Texas to handle and conduct closings."
+    },
+    {
+      "q": "What fees are associated with title and closing services?",
+      "a": "Typical fees include title search, settlement and escrow fees, recording fees, and title insurance premiums."
+    },
+    {
+      "q": "Are title premiums negotiable?",
+      "a": "In Texas, title insurance rates are fixed and regulated by the state of Texas."
+    },
+    {
+      "q": "What is wire fraud in real estate?",
+      "a": "Criminals sometimes attempt to trick buyers or agents into wiring funds to fraudulent accounts by impersonating title or escrow agents."
+    },
+    {
+      "q": "How do you protect against wire fraud?",
+      "a": "We use verified communication channels, secure applications, encryption, and verbal confirmation protocols to ensure funds are securely transferred."
+    },
+    {
+      "q": "Can a title company help with a 1031 exchange?",
+      "a": "Yes. While Carta Title Company doesn't serve as the Qualified Intermediary, we work closely with Equicap 1031 Exchange to ensure proper handling of exchange funds and documentation."
+    },
+    {
+      "q": "Do you offer bilingual or multilingual services?",
+      "a": "Yes, we offer assistance in multiple languages to ensure a smooth experience for all clients."
+    },
+    {
+      "q": "When will I get my check from the title company?",
+      "a": "We make every effort to pay all of the parties involved quickly, often the same day the transaction closes, though that varies with the day and the time of day the closing happens. Net proceeds on a sale and a Realtor's commission are usually cut the same or the next business day; if you are out of town the check is mailed, so allow an extra day or two. A Monday to Thursday closing date is a good idea if you want the funds quickly."
+    },
+    {
+      "q": "Is a wire transfer faster than a paper check?",
+      "a": "Not always. Wire transfers sometimes require more verification and approvals because of cyber fraud, and as a result may even take an extra 24 hours."
+    }
   ],
   "resources": [
-    { "title": "Net Sheet Calculator", "text": "Estimate the seller's proceeds or a buyer's costs before the contract is written.", "href": "https://app.netsheetcalc.com/company/index.php?appid=650" },
-    { "title": "Equicap 1031 Exchange", "text": "The Qualified Intermediary we work with on exchange funds and documentation. Reach them on (713) 333-1031.", "href": "https://cartatitle.com/1031-exchange/" }
+    {
+      "title": "Net Sheet Calculator",
+      "text": "Estimate the seller's proceeds or a buyer's costs before the contract is written.",
+      "href": "https://app.netsheetcalc.com/company/index.php?appid=650"
+    },
+    {
+      "title": "Equicap 1031 Exchange",
+      "text": "The Qualified Intermediary we work with on exchange funds and documentation. Reach them on (713) 333-1031.",
+      "href": "https://cartatitle.com/1031-exchange/"
+    }
   ],
   "facts": [
     {

@@ -1,15 +1,23 @@
 /**
- * HVAC and electrical: one template for heating and air contractors,
- * electricians, and shops that do both. A site of several pages: home, one
- * page per service group, a maintenance-plan page when the business sells a
- * plan, about, and contact. The header carries a mega menu with a column per
- * service group.
+ * Trade services: one template for every business whose work is a set of
+ * services grouped by kind - heating and air contractors and electricians,
+ * where it began, and pool, lawn and landscape, painting, concrete, fencing,
+ * tree, pest control, towing, welding, machine shop, industrial, marine and
+ * storage businesses. A site of several pages: home, one page per service
+ * group, a maintenance-plan page when the business sells a plan, about, and
+ * contact. The header carries a mega menu with a column per service group.
  *
  * Brand file shape (src/brands/<slug>.json). Required fields are marked (req);
  * every other field is optional and its section is left out when it is absent.
  *
  *   template     (req) "hvac"
  *   preview            true on a prospect's preview; leave it out on a sample
+ *   ask                What the site asks a visitor to do, which sets every
+ *                      button, the booking card and the contact form:
+ *                      "service" (the default: Schedule Service, a visit
+ *                      booked by ZIP code), "quote" (Request a Quote, for
+ *                      work priced before it starts) or "reserve" (Reserve a
+ *                      Unit, for storage)
  *   name         (req) Full business name, used in the footer and the title
  *   shortName    (req) The name as people say it; used in copy and buttons
  *   summary      (req) One sentence on what the business does and where. Shown
@@ -126,12 +134,15 @@ import {
   Cable,
   CalendarCheck,
   Car,
+  ChartLine,
   Check,
   ChevronDown,
   ChevronRight,
   CircuitBoard,
+  ClipboardList,
   Clock3,
   CreditCard,
+  DraftingCompass,
   Droplets,
   Fan,
   Filter,
@@ -144,6 +155,7 @@ import {
   Mail,
   MapPin,
   Menu,
+  PencilRuler,
   Phone,
   Plug,
   PlugZap,
@@ -197,10 +209,86 @@ const ICONS = {
   battery: BatteryCharging,
   car: Car,
   timer: Timer,
+  // Engineering and project work: design, drawings, models and the plan.
+  compass: DraftingCompass,
+  ruler: PencilRuler,
+  chart: ChartLine,
+  clipboard: ClipboardList,
 };
 
 const list = (v) => (Array.isArray(v) ? v : []);
 const groupsOf = (b) => list(b.groups).filter((g) => g?.slug && g?.title);
+
+/**
+ * What the site asks a visitor to do, by how the business takes on work. One
+ * that comes out to the customer books a visit; one whose work is priced
+ * before it starts takes a request for a quote; one that rents out space takes
+ * a reservation. `ask` on the brand picks one, and a brand without it books
+ * service.
+ */
+const ASKS = {
+  service: {
+    act: 'Schedule Service',
+    book: 'Book Service',
+    item: 'Book',
+    withName: 'Book with',
+    card: 'Book a Visit',
+    cardText: 'Choose a service and we will call to confirm a time.',
+    check: 'Check Availability',
+    field: 'Service Type',
+    eyebrow: 'Schedule service',
+    form: 'Request Service',
+    time: 'Best Time to Visit',
+    times: ['First available', 'Morning', 'Afternoon'],
+    details: 'What Is Going On?',
+    closing: 'Book service with',
+    closingText: 'Send a request or call, and we will set up a time that works for you.',
+    contactTitle: 'Tell us what is going on',
+    contactText: 'Send a request and we will call to confirm a time, or pick up the phone and talk to us now.',
+    zip: true,
+  },
+  quote: {
+    act: 'Request a Quote',
+    book: 'Get a Quote',
+    item: 'Ask About',
+    withName: 'A quote from',
+    card: 'Request a Quote',
+    cardText: 'Choose the work you need and we will call to talk it through.',
+    check: 'Request a Quote',
+    field: 'Type of Work',
+    eyebrow: 'Request a quote',
+    form: 'Request a Quote',
+    time: 'Best Time to Call',
+    times: ['Any time', 'Morning', 'Afternoon'],
+    details: 'Tell Us About the Job',
+    closing: 'Get a quote from',
+    closingText: 'Send the details or call, and we will get back to you about the job.',
+    contactTitle: 'Tell us about the job',
+    contactText: 'Send the details and we will call to talk it through, or pick up the phone and talk to us now.',
+    zip: true,
+  },
+  reserve: {
+    act: 'Reserve a Unit',
+    book: 'Reserve a Unit',
+    item: 'Ask About',
+    withName: 'Reserve with',
+    card: 'Reserve a Unit',
+    cardText: 'Choose what you need and we will call to confirm what is open.',
+    check: 'Check Availability',
+    field: 'Unit Type',
+    eyebrow: 'Reserve a unit',
+    form: 'Reserve a Unit',
+    time: 'When Do You Need It?',
+    times: ['As soon as possible', 'Within a month', 'Just looking'],
+    details: 'Anything We Should Know?',
+    closing: 'Reserve a unit with',
+    closingText: 'Send a request or call, and we will help you find a unit that fits.',
+    contactTitle: 'Tell us what you need',
+    contactText: 'Send a request and we will call to confirm what is open, or pick up the phone and talk to us now.',
+    zip: false,
+  },
+};
+const askOf = (b) => ASKS[b?.ask] || ASKS.service;
 
 /** The pages beyond home: one per service group, the plan, about, contact. */
 export function pages(b) {
@@ -372,13 +460,13 @@ function MegaMenu({ b, groups, tel, current }) {
           <div className="hidden flex-col justify-between gap-5 rounded-2xl bg-surface p-6 xl:flex">
             <div>
               <p className="font-heading text-[18px] font-bold leading-snug text-ink">
-                {b.emergency ? b.emergency.title : `Book with ${b.shortName}`}
+                {b.emergency ? b.emergency.title : `${askOf(b).withName} ${b.shortName}`}
               </p>
               <p className="mt-2 text-[16px] md:text-[15px] leading-[1.55] text-muted">{b.emergency ? b.emergency.text : b.summary}</p>
             </div>
             <div className="grid gap-2.5">
               <a href="/contact" className={`${btnPrimary} min-h-[48px] text-[16px] md:text-[15px]`}>
-                Schedule Service
+                {askOf(b).act}
               </a>
               <a href={tel} className={`${btnOutline} min-h-[48px] text-[16px] md:text-[15px]`}>
                 <Phone size={16} aria-hidden="true" /> {b.phone}
@@ -443,7 +531,7 @@ function MobileMenu({ b, groups, tel, links, onClose }) {
       </ul>
       <div className="mt-6 grid gap-3 sm:grid-cols-2">
         <a href="/contact" onClick={onClose} className={btnPrimary}>
-          Schedule Service
+          {askOf(b).act}
         </a>
         <a href={tel} className={btnOutline}>
           <Phone size={17} aria-hidden="true" /> {b.phone}
@@ -504,7 +592,7 @@ function Header({ b, groups, tel, current }) {
             </span>
           </a>
           <a href="/contact" className={`${btnPrimary} hidden min-h-[46px] px-5 text-[16px] md:text-[15px] md:inline-flex`}>
-            <CalendarCheck size={17} aria-hidden="true" /> Book Service
+            <CalendarCheck size={17} aria-hidden="true" /> {askOf(b).book}
           </a>
           <a href={tel} className="grid h-11 w-11 place-items-center rounded-xl bg-primary text-[color:var(--on-primary)] md:hidden" aria-label={`Call ${b.phone}`}>
             <Phone size={19} aria-hidden="true" />
@@ -535,16 +623,17 @@ function Header({ b, groups, tel, current }) {
 
 /* ------------------------------------------------------------- shared bits */
 
-function BookingCard({ b, groups, heading = 'h2', title = 'Book a Visit', service }) {
+function BookingCard({ b, groups, heading = 'h2', title, service }) {
   const H = heading;
+  const w = askOf(b);
   const options = [...groups.flatMap((g) => list(g.services).map((s) => s.title)), 'Something else'];
   return (
     <div className="rounded-2xl border border-line bg-white p-5 shadow-[0_30px_60px_-30px_rgba(11,27,43,0.45)] sm:p-7">
       <div className="mb-5 flex items-start justify-between gap-4">
         <div className="min-w-0">
-          <H className="font-heading text-[22px] font-extrabold leading-tight tracking-[-0.02em] text-ink">{title}</H>
+          <H className="font-heading text-[22px] font-extrabold leading-tight tracking-[-0.02em] text-ink">{title || w.card}</H>
           <p className="mt-1.5 text-[16px] md:text-[15px] leading-[1.5] text-muted">
-            {service ? `Tell us about your ${service.toLowerCase()} job.` : 'Choose a service and we will call to confirm a time.'}
+            {service ? `Tell us about your ${service.toLowerCase()} job.` : w.cardText}
           </p>
         </div>
         <span className={`${iconTile} h-11 w-11`}>
@@ -553,7 +642,7 @@ function BookingCard({ b, groups, heading = 'h2', title = 'Book a Visit', servic
       </div>
       <EnquiryForm
         b={b}
-        submitLabel="Check Availability"
+        submitLabel={w.check}
         styles={{
           form: 'gap-3.5',
           label: 'text-[14px] font-semibold text-ink',
@@ -564,10 +653,10 @@ function BookingCard({ b, groups, heading = 'h2', title = 'Book a Visit', servic
           done: 'rounded-xl bg-surface p-4 text-[16px] md:text-[15px] text-ink',
         }}
         fields={[
-          { name: 'service', label: 'Service Type', type: 'select', required: true, wide: true, options },
-          { name: 'zip', label: 'ZIP Code', required: true, autoComplete: 'postal-code' },
-          { name: 'phone', label: 'Phone', type: 'tel', required: true, autoComplete: 'tel' },
-        ]}
+          { name: 'service', label: w.field, type: 'select', required: true, wide: true, options },
+          w.zip && { name: 'zip', label: 'ZIP Code', required: true, autoComplete: 'postal-code' },
+          { name: 'phone', label: 'Phone', type: 'tel', required: true, autoComplete: 'tel', wide: !w.zip },
+        ].filter(Boolean)}
       />
       <p className="mt-4 border-t border-line pt-4 text-center text-[16px] md:text-[15px] text-muted">
         Rather talk?{' '}
@@ -699,7 +788,7 @@ function ClosingBand({ b, tel, title, text, flush = false }) {
           />
           <div className="grid gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:items-end">
             <div>
-              <Eyebrow light>{b.emergency ? b.emergency.title : 'Schedule service'}</Eyebrow>
+              <Eyebrow light>{b.emergency ? b.emergency.title : askOf(b).eyebrow}</Eyebrow>
               <h2 className="font-heading text-[clamp(1.9rem,1.35rem+2.1vw,2.85rem)] font-extrabold leading-[1.08] tracking-[-0.025em] [text-wrap:balance]">
                 {title}
               </h2>
@@ -716,7 +805,7 @@ function ClosingBand({ b, tel, title, text, flush = false }) {
             </div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
               <a href="/contact" className={btnAccent}>
-                Schedule Service <ArrowRight size={18} aria-hidden="true" />
+                {askOf(b).act} <ArrowRight size={18} aria-hidden="true" />
               </a>
               <a href={tel} className={`${btn} border border-white/30 text-white hover:bg-white/10`}>
                 <Phone size={17} aria-hidden="true" /> {b.phone}
@@ -729,12 +818,13 @@ function ClosingBand({ b, tel, title, text, flush = false }) {
   );
 }
 
-function PageHero({ b, crumbs, eyebrow, title, text, image, imageAlt, icon, children }) {
+/** A page's opening. `panel` stands where the photo would when there is none, so the half beside the words is not left bare. */
+function PageHero({ b, crumbs, eyebrow, title, text, image, imageAlt, icon, panel, children }) {
   return (
     <section className="relative isolate overflow-hidden border-b border-line bg-surface">
       <div className={`absolute inset-0 -z-10 ${gridBg} [mask-image:radial-gradient(ellipse_at_top_right,black,transparent_70%)]`} aria-hidden="true" />
       <div
-        className={`${wrap} grid gap-10 py-12 sm:py-14 lg:py-20 ${image ? 'lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center lg:gap-16' : ''}`}
+        className={`${wrap} grid gap-10 py-12 sm:py-14 lg:py-20 ${image || panel ? 'lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center lg:gap-16' : ''}`}
       >
         <div className="min-w-0">
           <nav aria-label="Breadcrumb" className="mb-6">
@@ -767,7 +857,7 @@ function PageHero({ b, crumbs, eyebrow, title, text, image, imageAlt, icon, chil
           {text && <p className={`mt-5 max-w-[38rem] ${lead}`}>{text}</p>}
           {children}
         </div>
-        {image && (
+        {image ? (
           <Img
             className="aspect-[16/11] w-full rounded-[24px] object-cover shadow-[0_30px_60px_-35px_rgba(11,27,43,0.55)]"
             src={image}
@@ -775,6 +865,8 @@ function PageHero({ b, crumbs, eyebrow, title, text, image, imageAlt, icon, chil
             sizes="(min-width: 1024px) 45vw, 100vw"
             eager
           />
+        ) : (
+          panel
         )}
       </div>
     </section>
@@ -785,7 +877,7 @@ function CtaPair({ b, tel, className = '' }) {
   return (
     <div className={`mt-8 grid gap-3 sm:flex sm:flex-wrap ${className}`}>
       <a href="/contact" className={btnPrimary}>
-        Schedule Service <ArrowRight size={18} aria-hidden="true" />
+        {askOf(b).act} <ArrowRight size={18} aria-hidden="true" />
       </a>
       <a href={tel} className={btnOutline}>
         <Phone size={17} aria-hidden="true" /> {b.phone}
@@ -867,9 +959,24 @@ function Footer({ b, groups, tel }) {
   );
 }
 
+/**
+ * The phone's call and book bar. The first screen already carries both
+ * buttons, so the bar waits until the visitor scrolls past it rather than
+ * floating over the opening words.
+ */
 function MobileBar({ b, tel }) {
+  const [shown, setShown] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setShown(window.scrollY > window.innerHeight * 0.8);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
   return (
-    <div className="fixed inset-x-3 bottom-3 z-40 md:hidden" style={{ marginBottom: 'env(safe-area-inset-bottom, 0px)' }}>
+    <div
+      className={`fixed inset-x-3 bottom-3 z-40 transition duration-200 md:hidden ${shown ? '' : 'invisible translate-y-4 opacity-0'}`}
+      style={{ marginBottom: 'env(safe-area-inset-bottom, 0px)' }}
+    >
       <div className="grid grid-cols-[auto_1fr] gap-2 rounded-2xl bg-ink p-2 shadow-[0_18px_40px_-12px_rgba(11,27,43,0.6)]">
         <a href={tel} className="flex min-h-[48px] items-center justify-center gap-2 rounded-xl px-4 text-[16px] font-semibold text-white no-underline">
           <Phone size={18} className="flex-none" aria-hidden="true" /> Call
@@ -878,7 +985,7 @@ function MobileBar({ b, tel }) {
           href="/contact"
           className="flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-primary px-3 font-heading text-[16px] font-bold text-[color:var(--on-primary)] no-underline"
         >
-          <CalendarCheck size={18} className="flex-none" aria-hidden="true" /> Book Service
+          <CalendarCheck size={18} className="flex-none" aria-hidden="true" /> {askOf(b).book}
         </a>
       </div>
     </div>
@@ -926,7 +1033,7 @@ function Home({ b, groups, tel }) {
             <p className="mt-6 max-w-[34rem] text-[17px] leading-[1.65] text-white/85 sm:text-[18px]">{b.hero.lead}</p>
             <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
               <a href="/contact" className={`${btn} bg-white text-[color:var(--pt)] hover:bg-surface`}>
-                Schedule Service <ArrowRight size={18} aria-hidden="true" />
+                {askOf(b).act} <ArrowRight size={18} aria-hidden="true" />
               </a>
               <a href={tel} className={`${btn} border border-white/40 text-white hover:bg-white/10`}>
                 <Phone size={17} aria-hidden="true" /> {b.phone}
@@ -1066,12 +1173,14 @@ function Home({ b, groups, tel }) {
               <h2 className={h2}>{b.about.title}</h2>
               <p className={`mt-5 ${lead}`}>{list(b.about.text)[0]}</p>
               {list(b.about.values).length > 0 && (
-                <ul className="mt-8 grid gap-4 sm:grid-cols-3">
+                <ul className="mt-8 grid gap-3">
                   {list(b.about.values).map((v) => (
-                    <li key={v.title} className="rounded-2xl bg-white p-5">
-                      <Check size={18} className="text-[color:var(--pt)]" strokeWidth={2.5} aria-hidden="true" />
-                      <p className="mt-3 font-heading text-[16px] font-bold text-ink">{v.title}</p>
-                      <p className="mt-1 text-[16px] md:text-[15px] leading-[1.5] text-muted">{v.text}</p>
+                    <li key={v.title} className="flex gap-4 rounded-2xl bg-white p-5">
+                      <Check size={18} className="mt-0.5 flex-none text-[color:var(--pt)]" strokeWidth={2.5} aria-hidden="true" />
+                      <div className="min-w-0">
+                        <p className="font-heading text-[16px] font-bold text-ink">{v.title}</p>
+                        <p className="mt-1 text-[16px] md:text-[15px] leading-[1.5] text-muted">{v.text}</p>
+                      </div>
                     </li>
                   ))}
                 </ul>
@@ -1090,8 +1199,8 @@ function Home({ b, groups, tel }) {
         b={b}
         tel={tel}
         flush={list(b.faqs).length > 0}
-        title={`Book service with ${b.shortName}`}
-        text="Send a request or call, and we will set up a time that works for you."
+        title={`${askOf(b).closing} ${b.shortName}`}
+        text={askOf(b).closingText}
       />
     </>
   );
@@ -1112,13 +1221,37 @@ function GroupPage({ b, groups, group, tel }) {
         text={group.intro}
         image={group.image}
         imageAlt={group.imageAlt}
+        panel={
+          services.length > 1 && (
+            <div className="hidden rounded-[24px] border border-line bg-white p-6 shadow-[0_30px_60px_-35px_rgba(11,27,43,0.55)] sm:p-8 lg:block">
+              <p className="font-heading text-[13px] font-bold uppercase tracking-[0.14em] text-muted">What we cover</p>
+              <ul className="mt-4 grid">
+                {services.map((s) => (
+                  <li key={s.slug} className="border-t border-line first:border-0">
+                    <a
+                      href={`#${s.slug}`}
+                      className="flex min-h-[56px] items-center gap-3.5 py-2.5 font-heading text-[17px] font-bold text-ink no-underline hover:text-[color:var(--pt)]"
+                    >
+                      <span className={`${iconTile} h-10 w-10`}>
+                        <GroupIcon name={s.icon || group.icon} size={19} />
+                      </span>
+                      <span className="min-w-0 flex-1">{s.title}</span>
+                      <ChevronRight size={17} className="flex-none text-[color:var(--pt)]" aria-hidden="true" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
       >
         <CtaPair b={b} tel={tel} />
       </PageHero>
 
       {services.length > 1 && (
         <nav aria-label={`${group.title} services`} className="border-b border-line bg-white">
-          <ul className={`${wrap} flex gap-2 overflow-x-auto py-3 [scrollbar-width:none]`}>
+          {/* A phone scrolls the strip; from md up every chip wraps into view rather than being cut at the edge. */}
+          <ul className={`${wrap} flex gap-2 overflow-x-auto py-3 [scrollbar-width:none] md:flex-wrap md:overflow-visible`}>
             {services.map((s) => (
               <li key={s.slug} className="flex-none">
                 <a
@@ -1162,11 +1295,13 @@ function GroupPage({ b, groups, group, tel }) {
                         ))}
                       </ul>
                     )}
+                    {/* Inline, so a title that wraps keeps the arrow at the end of its last line. */}
                     <a
                       href="/contact"
-                      className="mt-6 inline-flex min-h-[44px] items-center gap-1.5 font-heading text-[16px] md:text-[15px] font-bold text-[color:var(--pt)] no-underline hover:underline"
+                      className="mt-4 inline-block min-h-[44px] py-2.5 font-heading text-[16px] md:text-[15px] font-bold text-[color:var(--pt)] no-underline hover:underline"
                     >
-                      Book {s.title} <ArrowRight size={16} aria-hidden="true" />
+                      {askOf(b).item} {s.title}
+                      <ArrowRight size={16} className="ml-1.5 inline align-[-3px]" aria-hidden="true" />
                     </a>
                   </div>
                 </div>
@@ -1174,7 +1309,7 @@ function GroupPage({ b, groups, group, tel }) {
             ))}
           </div>
           <aside className={`grid content-start gap-5 lg:sticky lg:self-start ${stickTop}`}>
-            <BookingCard b={b} groups={groups} title={`Book ${group.title}`} service={group.title} />
+            <BookingCard b={b} groups={groups} title={`${askOf(b).item} ${group.title}`} service={group.title} />
             {b.emergency && (
               <a href={tel} className="flex gap-4 rounded-2xl bg-accent p-5 text-[color:var(--on-accent)] no-underline">
                 <Siren size={22} className="mt-0.5 flex-none" aria-hidden="true" />
@@ -1313,8 +1448,11 @@ function AboutPage({ b, tel }) {
                   {p}
                 </p>
               ))}
+          </div>
+          {/* The promises stand beside the words with the licenses, so the side column is not one card over a blank. */}
+          <aside className="grid content-start gap-4">
             {values.length > 0 && (
-              <ol className="mt-10 grid gap-4">
+              <ol className="grid gap-4">
                 {values.map((v, i) => (
                   <li key={v.title} className="flex gap-5 rounded-2xl border border-line p-5 sm:p-6">
                     <span className="font-heading text-[28px] font-extrabold leading-none tracking-[-0.03em] text-[color:var(--pt)]">
@@ -1328,8 +1466,6 @@ function AboutPage({ b, tel }) {
                 ))}
               </ol>
             )}
-          </div>
-          <aside className="grid content-start gap-4">
             {(b.since || rating) && (
               <div className="grid grid-cols-2 gap-4">
                 {b.since && (
@@ -1373,7 +1509,7 @@ function AboutPage({ b, tel }) {
         </div>
       </section>
       <Reviews b={b} surface />
-      <ClosingBand b={b} tel={tel} title={`Book service with ${b.shortName}`} text="Send a request or call, and we will set up a time that works for you." />
+      <ClosingBand b={b} tel={tel} title={`${askOf(b).closing} ${b.shortName}`} text={askOf(b).closingText} />
     </>
   );
 }
@@ -1382,19 +1518,14 @@ function ContactPage({ b, groups, tel }) {
   const hours = list(b.hours);
   const full = `${b.address}, ${b.town}, ${b.state}${b.zip ? ` ${b.zip}` : ''}`;
   const options = [...groups.flatMap((g) => list(g.services).map((s) => s.title)), 'Something else'];
+  const w = askOf(b);
   return (
     <>
-      <PageHero
-        b={b}
-        crumbs={['Contact']}
-        eyebrow="Schedule service"
-        title="Tell us what is going on"
-        text="Send a request and we will call to confirm a time, or pick up the phone and talk to us now."
-      />
+      <PageHero b={b} crumbs={['Contact']} eyebrow={w.eyebrow} title={w.contactTitle} text={w.contactText} />
       <section className={`${pad} bg-white`}>
         <div className={`${wrap} grid items-start gap-10 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.75fr)] lg:gap-14`}>
           <div className="rounded-[24px] border border-line p-5 sm:p-8 lg:p-10">
-            <h2 className="mb-6 font-heading text-[24px] font-extrabold tracking-[-0.02em] text-ink">Request Service</h2>
+            <h2 className="mb-6 font-heading text-[24px] font-extrabold tracking-[-0.02em] text-ink">{w.form}</h2>
             <EnquiryForm
               b={b}
               submitLabel="Send Request"
@@ -1410,12 +1541,12 @@ function ContactPage({ b, groups, tel }) {
               fields={[
                 { name: 'name', label: 'Name', required: true, autoComplete: 'name' },
                 { name: 'phone', label: 'Phone', type: 'tel', required: true, autoComplete: 'tel' },
-                { name: 'email', label: 'Email', type: 'email', autoComplete: 'email' },
-                { name: 'zip', label: 'ZIP Code', required: true, autoComplete: 'postal-code' },
-                { name: 'service', label: 'Service Type', type: 'select', required: true, wide: true, options },
-                { name: 'time', label: 'Best Time to Visit', type: 'select', wide: true, options: ['First available', 'Morning', 'Afternoon'] },
-                { name: 'details', label: 'What Is Going On?', type: 'textarea', wide: true },
-              ]}
+                { name: 'email', label: 'Email', type: 'email', autoComplete: 'email', wide: !w.zip },
+                w.zip &&{ name: 'zip', label: 'ZIP Code', required: true, autoComplete: 'postal-code' },
+                { name: 'service', label: w.field, type: 'select', required: true, wide: true, options },
+                { name: 'time', label: w.time, type: 'select', wide: true, options: w.times },
+                { name: 'details', label: w.details, type: 'textarea', wide: true },
+              ].filter(Boolean)}
             />
           </div>
           <aside className="grid gap-4">

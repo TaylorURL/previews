@@ -14,7 +14,20 @@
   "since": 2009,
   "rating": 4.5,
   "reviewCount": 22,
-  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "cta": {
     "label": "Request a Quote",
     "text": "Contact us to discuss your insurance needs. We are just a call or a click away."
@@ -32,7 +45,24 @@
     "body": "'Nunito Sans', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Nunito+Sans:wght@400;500;600;700&display=swap",
     "logo": "/brands/robertsfamilyinsurance/logo.webp",
-    "logoWidth": 210
+    "logoMono": "/brands/robertsfamilyinsurance/logo-mono.webp",
+    "logoWidth": 178,
+    "logoHeight": 58,
+    "logoRatio": 3.069,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.797,
+      0.772,
+      0.744,
+      0.718,
+      0.703,
+      0.699,
+      0.708,
+      0.74,
+      0.798,
+      0.887,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Insurance agents in Friendswood, TX",
@@ -40,13 +70,20 @@
     "lead": "Finding the right insurance can be overwhelming, but we are here to simplify the process. We offer customized insurance solutions for the people of Friendswood, whether you are a homeowner, a business owner, or an individual seeking comprehensive coverage.",
     "image": "/brands/robertsfamilyinsurance/hero",
     "imageAlt": "A woman at home reading her phone on the sofa",
-    "points": ["A local office on S Friendswood Dr", "Policies written across Texas", "Quotes compared for you"]
+    "points": [
+      "A local office on S Friendswood Dr",
+      "Policies written across Texas",
+      "Quotes compared for you"
+    ]
   },
   "overview": {
     "title": "Coverage for Friendswood households and businesses.",
     "text": "Pick a line of coverage to see what it includes, or call and talk it through with an agent."
   },
-  "audiences": { "individuals": "Individuals & Families", "businesses": "Businesses" },
+  "audiences": {
+    "individuals": "Individuals & Families",
+    "businesses": "Businesses"
+  },
   "services": [
     {
       "slug": "auto",
@@ -59,15 +96,36 @@
       "image": "/brands/robertsfamilyinsurance/auto",
       "imageAlt": "A driver standing beside her car on a hillside road",
       "covers": [
-        { "title": "Liability", "text": "Legally required in Texas. It covers medical and funeral expenses in addition to lost wages in the event of a severe accident, and it also covers property damage." },
-        { "title": "Collision", "text": "Covers damage to your vehicle if you are still actively paying for it following an accident with another vehicle." },
-        { "title": "Comprehensive", "text": "Covers damage to your vehicle if you are still actively paying for it following damage from an object, vandalism, storms and the like." },
-        { "title": "Uninsured and underinsured", "text": "Covers medical and property damage expenses if you are involved in an accident with a driver who does not have insurance." },
-        { "title": "Roadside assistance", "text": "Helps if you are stranded on the side of the road. It offers fuel delivery, flat tire changes and more." }
+        {
+          "title": "Liability",
+          "text": "Legally required in Texas. It covers medical and funeral expenses in addition to lost wages in the event of a severe accident, and it also covers property damage."
+        },
+        {
+          "title": "Collision",
+          "text": "Covers damage to your vehicle if you are still actively paying for it following an accident with another vehicle."
+        },
+        {
+          "title": "Comprehensive",
+          "text": "Covers damage to your vehicle if you are still actively paying for it following damage from an object, vandalism, storms and the like."
+        },
+        {
+          "title": "Uninsured and underinsured",
+          "text": "Covers medical and property damage expenses if you are involved in an accident with a driver who does not have insurance."
+        },
+        {
+          "title": "Roadside assistance",
+          "text": "Helps if you are stranded on the side of the road. It offers fuel delivery, flat tire changes and more."
+        }
       ],
       "questions": [
-        { "q": "What auto insurance does Texas require?", "a": "Texas requires all drivers to obtain auto insurance and to meet the minimum liability limits: bodily injury coverage of $30,000 for each person, $60,000 for each accident, and property damage coverage of $25,000." },
-        { "q": "What happens if I drive without insurance?", "a": "If you are caught without auto insurance and are involved in an accident, the fines and consequences can be pretty extreme." }
+        {
+          "q": "What auto insurance does Texas require?",
+          "a": "Texas requires all drivers to obtain auto insurance and to meet the minimum liability limits: bodily injury coverage of $30,000 for each person, $60,000 for each accident, and property damage coverage of $25,000."
+        },
+        {
+          "q": "What happens if I drive without insurance?",
+          "a": "If you are caught without auto insurance and are involved in an accident, the fines and consequences can be pretty extreme."
+        }
       ]
     },
     {
@@ -81,15 +139,36 @@
       "image": "/brands/robertsfamilyinsurance/home",
       "imageAlt": "A white house with a wraparound porch under a blue sky",
       "covers": [
-        { "title": "Dwelling", "text": "Covers repair or rebuilding expenses if your home becomes damaged, including repairing damaged structures attached to your home." },
-        { "title": "Other structures", "text": "Covers repair or rebuilding expenses for structures on your property that are not permanently attached to your home, such as a guest house, fence or detached garage." },
-        { "title": "Personal property", "text": "If your furniture, appliances or electronics become damaged or stolen, this covers replacing them, depending on your policy limits." },
-        { "title": "Loss of use", "text": "If you need to temporarily live elsewhere while your home is being repaired, this covers restaurant meals, hotel stays and the like." },
-        { "title": "Personal liability", "text": "If you cause injuries to another person, this covers their medical bills and legal fees." },
-        { "title": "Medical payments to others", "text": "Covers another party's medical bills if they sustain minor injuries, no matter who is liable." }
+        {
+          "title": "Dwelling",
+          "text": "Covers repair or rebuilding expenses if your home becomes damaged, including repairing damaged structures attached to your home."
+        },
+        {
+          "title": "Other structures",
+          "text": "Covers repair or rebuilding expenses for structures on your property that are not permanently attached to your home, such as a guest house, fence or detached garage."
+        },
+        {
+          "title": "Personal property",
+          "text": "If your furniture, appliances or electronics become damaged or stolen, this covers replacing them, depending on your policy limits."
+        },
+        {
+          "title": "Loss of use",
+          "text": "If you need to temporarily live elsewhere while your home is being repaired, this covers restaurant meals, hotel stays and the like."
+        },
+        {
+          "title": "Personal liability",
+          "text": "If you cause injuries to another person, this covers their medical bills and legal fees."
+        },
+        {
+          "title": "Medical payments to others",
+          "text": "Covers another party's medical bills if they sustain minor injuries, no matter who is liable."
+        }
       ],
       "questions": [
-        { "q": "Is home insurance required in Texas?", "a": "Home insurance is not mandatory in the state of Texas. However, your lender can require you to purchase it, especially if you still owe money on your home." }
+        {
+          "q": "Is home insurance required in Texas?",
+          "a": "Home insurance is not mandatory in the state of Texas. However, your lender can require you to purchase it, especially if you still owe money on your home."
+        }
       ]
     },
     {
@@ -103,13 +182,28 @@
       "image": "/brands/robertsfamilyinsurance/flood",
       "imageAlt": "A flooded residential street beside a white fence",
       "covers": [
-        { "title": "Building coverage", "text": "Electrical and plumbing systems, water heaters, furnaces, attached cabinets, bookcases and paneling, carpet, built-in appliances, window blinds, foundation walls and staircases, detached garages, fuel tanks, water tanks and pumps, and solar energy equipment." },
-        { "title": "Content coverage", "text": "Personal belongings, washer and dryer, curtains, microwave, valuable items and portable air conditioners." },
-        { "title": "Other coverage", "text": "Temporary housing and living expenses, other property outside of the building, business interruption, valuable papers, currency and precious metals, cars and their parts, and personal property kept in basements." }
+        {
+          "title": "Building coverage",
+          "text": "Electrical and plumbing systems, water heaters, furnaces, attached cabinets, bookcases and paneling, carpet, built-in appliances, window blinds, foundation walls and staircases, detached garages, fuel tanks, water tanks and pumps, and solar energy equipment."
+        },
+        {
+          "title": "Content coverage",
+          "text": "Personal belongings, washer and dryer, curtains, microwave, valuable items and portable air conditioners."
+        },
+        {
+          "title": "Other coverage",
+          "text": "Temporary housing and living expenses, other property outside of the building, business interruption, valuable papers, currency and precious metals, cars and their parts, and personal property kept in basements."
+        }
       ],
       "questions": [
-        { "q": "Is flood insurance required?", "a": "It is not a state requirement, but if you live in a high flood area there is a chance that your lender will require flood insurance as well as home insurance." },
-        { "q": "Is there anything flood insurance does not cover?", "a": "Although flood insurance covers many things, it does not include damage from sewer backups." }
+        {
+          "q": "Is flood insurance required?",
+          "a": "It is not a state requirement, but if you live in a high flood area there is a chance that your lender will require flood insurance as well as home insurance."
+        },
+        {
+          "q": "Is there anything flood insurance does not cover?",
+          "a": "Although flood insurance covers many things, it does not include damage from sewer backups."
+        }
       ]
     },
     {
@@ -121,12 +215,24 @@
       "text": "You pay a premium to ensure your loved ones or beneficiaries are paid a certain amount when you die. There are two types of life insurance policies: term life insurance and permanent life insurance.",
       "lead": "Life insurance helps pay for your funeral and burial costs, pays your debt, helps send your kids to college, and takes care of your family's other financial needs after you die.",
       "covers": [
-        { "title": "Term", "text": "Term life insurance expires and only lasts for a predetermined time. You can get a 10-year, 20-year or 30-year policy, and you can also have a policy that converts to a permanent policy." },
-        { "title": "Permanent", "text": "Permanent life insurance covers you from when you buy your policy until you die or stop paying your premium. It has a cash value option that you can take out and use for loans, paying debts and paying policy premiums." }
+        {
+          "title": "Term",
+          "text": "Term life insurance expires and only lasts for a predetermined time. You can get a 10-year, 20-year or 30-year policy, and you can also have a policy that converts to a permanent policy."
+        },
+        {
+          "title": "Permanent",
+          "text": "Permanent life insurance covers you from when you buy your policy until you die or stop paying your premium. It has a cash value option that you can take out and use for loans, paying debts and paying policy premiums."
+        }
       ],
       "questions": [
-        { "q": "Who receives the benefit?", "a": "Unlike other types of insurance, you do not receive your life insurance benefits. The money goes to your loved ones as a death benefit." },
-        { "q": "How does life insurance benefit me?", "a": "Having life insurance can give you peace of mind. You do not have to worry about how much your family might struggle financially after you are gone." }
+        {
+          "q": "Who receives the benefit?",
+          "a": "Unlike other types of insurance, you do not receive your life insurance benefits. The money goes to your loved ones as a death benefit."
+        },
+        {
+          "q": "How does life insurance benefit me?",
+          "a": "Having life insurance can give you peace of mind. You do not have to worry about how much your family might struggle financially after you are gone."
+        }
       ]
     },
     {
@@ -138,7 +244,10 @@
       "text": "Umbrella insurance takes over where other types of insurance cap out, so that an expensive lawsuit does not leave your assets at risk.",
       "lead": "Home, auto and other types of insurance have limitations, and you will only be covered up to a certain maximum amount. Your net worth could be much higher than these maximum coverage amounts. With umbrella insurance, you can enjoy complete financial protection of your full net worth.",
       "questions": [
-        { "q": "How do I choose an umbrella policy?", "a": "Make sure you are fully informed about umbrella coverage, then request quotes so you can see the options available and make an informed choice." }
+        {
+          "q": "How do I choose an umbrella policy?",
+          "a": "Make sure you are fully informed about umbrella coverage, then request quotes so you can see the options available and make an informed choice."
+        }
       ]
     },
     {
@@ -150,11 +259,20 @@
       "text": "An individual condo insurance policy typically covers personal property, personal liability, and the walls and fixtures within an individual condo unit.",
       "lead": "Condo insurance can be a bit complicated because both individual condo owners and condo communities carry insurance. Consumers who own condos need to understand what condo insurance covers and what their condo association's policy covers.",
       "covers": [
-        { "title": "Your unit", "text": "Personal property, personal liability, and the walls and fixtures within an individual condo unit." },
-        { "title": "Association coverage", "text": "Condo association coverage usually covers shared parts of a condominium structure, which is a separate policy from your own." }
+        {
+          "title": "Your unit",
+          "text": "Personal property, personal liability, and the walls and fixtures within an individual condo unit."
+        },
+        {
+          "title": "Association coverage",
+          "text": "Condo association coverage usually covers shared parts of a condominium structure, which is a separate policy from your own."
+        }
       ],
       "questions": [
-        { "q": "Why carry condo insurance?", "a": "It protects the personal belongings of a condo owner and protects their assets through the liability coverage it includes. It is also often required by lenders that finance the purchase of a condo." }
+        {
+          "q": "Why carry condo insurance?",
+          "a": "It protects the personal belongings of a condo owner and protects their assets through the liability coverage it includes. It is also often required by lenders that finance the purchase of a condo."
+        }
       ]
     },
     {
@@ -166,9 +284,18 @@
       "text": "We offer coverage for boat owners in Texas. You need to understand your boat insurance options to get a policy that will offer you financial protection.",
       "lead": "The most crucial reason boat owners should have boat insurance coverage is to protect themselves financially. Marinas often require boat insurance, and lenders require it on boat loans.",
       "covers": [
-        { "title": "Liability for property damage", "text": "If your boating activities damage another party's property, you could be held liable and therefore need property damage coverage." },
-        { "title": "Liability for bodily injury", "text": "Boat accidents could lead to bodily injury expenses. Boat insurance can cover this expense." },
-        { "title": "Collision and comprehensive", "text": "With these types of coverage, you will be compensated for damages to your own boat or watercraft." }
+        {
+          "title": "Liability for property damage",
+          "text": "If your boating activities damage another party's property, you could be held liable and therefore need property damage coverage."
+        },
+        {
+          "title": "Liability for bodily injury",
+          "text": "Boat accidents could lead to bodily injury expenses. Boat insurance can cover this expense."
+        },
+        {
+          "title": "Collision and comprehensive",
+          "text": "With these types of coverage, you will be compensated for damages to your own boat or watercraft."
+        }
       ]
     },
     {
@@ -180,8 +307,14 @@
       "text": "Classic cars tend to have unique insurance needs, so it is best to take out a policy explicitly geared toward classic car coverage.",
       "lead": "Classic cars may be worth more than standard automobiles, and at the same time might not be used as frequently as a car you drive every day. That is why you need a policy specifically designed for classic car coverage.",
       "covers": [
-        { "title": "Agreed value", "text": "Classic car policies are often agreed-value policies, which means you pay for a certain amount of coverage that will not be affected by depreciation in your vehicle's value." },
-        { "title": "Usage restrictions", "text": "Classic car insurance usually has usage restrictions, which is why you cannot take out a classic car policy on your daily commuting vehicle." }
+        {
+          "title": "Agreed value",
+          "text": "Classic car policies are often agreed-value policies, which means you pay for a certain amount of coverage that will not be affected by depreciation in your vehicle's value."
+        },
+        {
+          "title": "Usage restrictions",
+          "text": "Classic car insurance usually has usage restrictions, which is why you cannot take out a classic car policy on your daily commuting vehicle."
+        }
       ]
     },
     {
@@ -193,13 +326,28 @@
       "text": "Motorcycle insurance includes a variety of options for coverage such as property damage, bodily injury, comprehensive and more. We can help you find a policy that meets your needs.",
       "lead": "Owning a motorcycle is like owning any other vehicle. You have to make sure that you protect your investment by purchasing an insurance policy.",
       "covers": [
-        { "title": "Collision and comprehensive", "text": "Both are considered full coverage. Collision covers your repair costs or the costs to replace your motorcycle; comprehensive covers your bike when it is stolen, vandalized or damaged by storms. Full coverage will only cover standard or factory parts." },
-        { "title": "Total loss", "text": "If your motorcycle is totaled following an accident, this covers the retail value of your bike towards its replacement. It may only be available for several years of your bike's life." },
-        { "title": "Personal belongings and carried contents", "text": "Covers possessions you carry with you while riding, such as cell phones and bike gear, if they are stolen or damaged." },
-        { "title": "Roadside assistance", "text": "If you are stranded, this covers battery failure, flat tires, fuel delivery and more." }
+        {
+          "title": "Collision and comprehensive",
+          "text": "Both are considered full coverage. Collision covers your repair costs or the costs to replace your motorcycle; comprehensive covers your bike when it is stolen, vandalized or damaged by storms. Full coverage will only cover standard or factory parts."
+        },
+        {
+          "title": "Total loss",
+          "text": "If your motorcycle is totaled following an accident, this covers the retail value of your bike towards its replacement. It may only be available for several years of your bike's life."
+        },
+        {
+          "title": "Personal belongings and carried contents",
+          "text": "Covers possessions you carry with you while riding, such as cell phones and bike gear, if they are stolen or damaged."
+        },
+        {
+          "title": "Roadside assistance",
+          "text": "If you are stranded, this covers battery failure, flat tires, fuel delivery and more."
+        }
       ],
       "questions": [
-        { "q": "What does Texas require for a motorcycle?", "a": "All drivers are legally required to have motorcycle insurance in Texas. The minimums are bodily injury coverage of $30,000 for each person, $60,000 for each accident, and property damage coverage of $25,000." }
+        {
+          "q": "What does Texas require for a motorcycle?",
+          "a": "All drivers are legally required to have motorcycle insurance in Texas. The minimums are bodily injury coverage of $30,000 for each person, $60,000 for each accident, and property damage coverage of $25,000."
+        }
       ]
     },
     {
@@ -211,12 +359,24 @@
       "text": "Pet insurance is essentially a type of health insurance for animals. Some insurance companies cover things that others do not, so it is crucial to determine what your company covers before signing up for a policy.",
       "lead": "While pet insurance is good to have, there will still be some out-of-pocket costs. Most policies have a maximum limit for the year, and there is still a deductible to pay, so it is best to check your policy to know the limit and keep track of what you have already used.",
       "covers": [
-        { "title": "What most policies cover", "text": "Unexpected accidents and injuries, illnesses, medications, surgery, emergency exams, and tests and diagnostics." },
-        { "title": "What some policies add", "text": "Behavior modification, alternative therapies, lost pet advertising and rewards, hospital boarding, chiropractic, hydrotherapy, acupuncture, and nursing and whelping." },
-        { "title": "What most policies do not cover", "text": "Conditions that existed before the policy, routine wellness exams, preventative care, vaccinations, and spay or neuter." }
+        {
+          "title": "What most policies cover",
+          "text": "Unexpected accidents and injuries, illnesses, medications, surgery, emergency exams, and tests and diagnostics."
+        },
+        {
+          "title": "What some policies add",
+          "text": "Behavior modification, alternative therapies, lost pet advertising and rewards, hospital boarding, chiropractic, hydrotherapy, acupuncture, and nursing and whelping."
+        },
+        {
+          "title": "What most policies do not cover",
+          "text": "Conditions that existed before the policy, routine wellness exams, preventative care, vaccinations, and spay or neuter."
+        }
       ],
       "questions": [
-        { "q": "How does a pet insurance claim work?", "a": "When your pet goes to the vet, you are responsible for paying the vet. You file a claim with your insurance company, and they reimburse you after investigating the claim." }
+        {
+          "q": "How does a pet insurance claim work?",
+          "a": "When your pet goes to the vet, you are responsible for paying the vet. You file a claim with your insurance company, and they reimburse you after investigating the claim."
+        }
       ]
     },
     {
@@ -228,15 +388,36 @@
       "text": "Commercial insurance helps protect businesses and companies from loss, and is a great way to stop yourself and your company from falling into substantial financial losses.",
       "lead": "Although Texas does not require liability insurance or worker's compensation, it is wise to have commercial insurance for your business. Without insurance, your business is in danger of going under or suffering financial damage.",
       "covers": [
-        { "title": "General liability", "text": "When accidents occur, liability insurance compensates for injury or damage to a customer's property. In a lawsuit, the insurance company pays for the legal costs." },
-        { "title": "Worker's compensation", "text": "If your employee gets hurt doing their job, worker's compensation can cover their financial needs and medical bills until they can return to work." },
-        { "title": "Property insurance", "text": "Protects against damage that might occur to the physical property of your business from fire, theft, vandalism or weather-related causes." },
-        { "title": "Business interruption insurance", "text": "If a fire or a natural disaster stops you from running your business, this can help with the income you would otherwise lose." },
-        { "title": "Commercial auto insurance", "text": "Covers your company vehicles and the employees driving them." },
-        { "title": "Cyber liability insurance", "text": "A lot of businesses hold important records online, which can make them targets of cybercrime. Cyber insurance can help protect you against damage from cyber criminals." }
+        {
+          "title": "General liability",
+          "text": "When accidents occur, liability insurance compensates for injury or damage to a customer's property. In a lawsuit, the insurance company pays for the legal costs."
+        },
+        {
+          "title": "Worker's compensation",
+          "text": "If your employee gets hurt doing their job, worker's compensation can cover their financial needs and medical bills until they can return to work."
+        },
+        {
+          "title": "Property insurance",
+          "text": "Protects against damage that might occur to the physical property of your business from fire, theft, vandalism or weather-related causes."
+        },
+        {
+          "title": "Business interruption insurance",
+          "text": "If a fire or a natural disaster stops you from running your business, this can help with the income you would otherwise lose."
+        },
+        {
+          "title": "Commercial auto insurance",
+          "text": "Covers your company vehicles and the employees driving them."
+        },
+        {
+          "title": "Cyber liability insurance",
+          "text": "A lot of businesses hold important records online, which can make them targets of cybercrime. Cyber insurance can help protect you against damage from cyber criminals."
+        }
       ],
       "questions": [
-        { "q": "Is commercial insurance required in Texas?", "a": "Texas does not require liability insurance or worker's compensation, but it is wise to have commercial insurance for your business." }
+        {
+          "q": "Is commercial insurance required in Texas?",
+          "a": "Texas does not require liability insurance or worker's compensation, but it is wise to have commercial insurance for your business."
+        }
       ]
     }
   ],
@@ -288,13 +469,25 @@
     }
   ],
   "resources": [
-    { "title": "FEMA Flood Map Service Center", "text": "Look up the flood zone for any address in Friendswood before you buy or renew.", "href": "https://msc.fema.gov/portal/home" },
-    { "title": "Texas Department of Insurance", "text": "Consumer guides, agent license lookups and complaint help.", "href": "https://www.tdi.texas.gov" }
+    {
+      "title": "FEMA Flood Map Service Center",
+      "text": "Look up the flood zone for any address in Friendswood before you buy or renew.",
+      "href": "https://msc.fema.gov/portal/home"
+    },
+    {
+      "title": "Texas Department of Insurance",
+      "text": "Consumer guides, agent license lookups and complaint help.",
+      "href": "https://www.tdi.texas.gov"
+    }
   ],
   "facts": [
     {
       "heading": "Other ways to reach the office",
-      "items": ["Text: 281-519-3740", "Fax: 281-991-1647", "Email: diann@robertsfamilyinsurance.net"]
+      "items": [
+        "Text: 281-519-3740",
+        "Fax: 281-991-1647",
+        "Email: diann@robertsfamilyinsurance.net"
+      ]
     },
     {
       "heading": "Client center",
@@ -320,7 +513,10 @@
     },
     {
       "heading": "Find us online",
-      "items": ["facebook.com/people/Roberts-Family-Insurance", "linkedin.com/in/diann-hill-roberts"]
+      "items": [
+        "facebook.com/people/Roberts-Family-Insurance",
+        "linkedin.com/in/diann-hill-roberts"
+      ]
     }
   ]
 }

@@ -1,5 +1,7 @@
 /** Small pieces every page of the flooring template shares. */
 
+import { BrandLogo, hexOr, mixHex } from '../shared.jsx';
+
 export const wrap = 'mx-auto w-full max-w-page px-gutter';
 export const pad = 'py-[clamp(4rem,9vw,7.5rem)]';
 export const h2 =
@@ -23,17 +25,13 @@ export function Eyebrow({ children, dark = false }) {
   );
 }
 
-/** The logo sized by height, so wide and stacked marks sit the same in the bar. */
+/** The logo on the cream bar, or on the deep footer, sized by its shape. */
 export function BrandMark({ b, className = '', light: onDark = false }) {
   if (b.brand.logo) {
-    return (
-      <img
-        className={`block h-auto w-auto object-contain ${className}`}
-        src={b.brand.logo}
-        alt={b.name}
-        style={{ maxWidth: `min(${b.brand.logoWidth || 200}px, 52vw)` }}
-      />
-    );
+    const ground = onDark
+      ? hexOr(b.brand.primaryDeep, mixHex(hexOr(b.brand.primary, '#7a4a2b'), '#000000', 0.55))
+      : hexOr(b.brand.cream, '#f8f4ec');
+    return <BrandLogo b={b} ground={ground} className={className} />;
   }
   return (
     <span className={`block font-heading text-[24px] leading-none sm:text-[28px] ${onDark ? 'text-white' : 'text-ink'}`}>

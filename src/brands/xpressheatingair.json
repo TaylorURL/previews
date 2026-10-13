@@ -13,9 +13,18 @@
   "rating": 4.8,
   "reviewCount": 23,
   "hours": [
-    ["Mon – Fri", "9 AM – 5 PM"],
-    ["Saturday", "Closed"],
-    ["Sunday", "Closed"]
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
   ],
   "brand": {
     "primary": "#1565C0",
@@ -29,7 +38,24 @@
     "body": "'Nunito Sans', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Nunito+Sans:wght@400;500;600;700&display=swap",
     "logo": "/brands/xpressheatingair/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/xpressheatingair/logo-mono.webp",
+    "logoWidth": 84,
+    "logoHeight": 74,
+    "logoRatio": 1.135,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.886,
+      0.879,
+      0.881,
+      0.89,
+      0.903,
+      0.919,
+      0.934,
+      0.95,
+      0.967,
+      0.984,
+      1.0
+    ]
   },
   "emergency": {
     "title": "After-hours emergency service",
@@ -37,7 +63,10 @@
   },
   "sameDay": "Same-day response on service calls across the Greater Houston Area.",
   "licenses": [
-    { "label": "Texas HVAC contractor", "number": "TACLB00098400E" }
+    {
+      "label": "Texas HVAC contractor",
+      "number": "TACLB00098400E"
+    }
   ],
   "financing": {
     "text": "Financing through Wisetack and Synchrony, with 0% interest plans for qualified customers and a soft credit check to pre-qualify."
@@ -140,7 +169,9 @@
           "title": "Heat Pump Repair / Replacement",
           "icon": "thermometer",
           "text": "Efficient heat pump solutions for year-round comfort — cooling in summer, heating in winter. We install and service all major heat pump brands.",
-          "points": ["Dual-fuel systems available"]
+          "points": [
+            "Dual-fuel systems available"
+          ]
         },
         {
           "slug": "electric-heat-kit",

@@ -11,7 +11,16 @@
   "zip": "77536",
   "rating": 4.1,
   "reviewCount": 17,
-  "hours": [["Mon – Sat", "8 AM – 5 PM"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Sat",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "brand": {
     "primary": "#c03d38",
     "primaryDeep": "#8a2824",
@@ -22,7 +31,24 @@
     "body": "'Heebo', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Heebo:wght@400;500;600;700&display=swap",
     "logo": "/brands/extremeroofingremodeling/logo.webp",
-    "logoWidth": 170
+    "logoMono": "/brands/extremeroofingremodeling/logo-mono.webp",
+    "logoWidth": 184,
+    "logoHeight": 48,
+    "logoRatio": 3.836,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.196,
+      0.219,
+      0.284,
+      0.362,
+      0.448,
+      0.537,
+      0.625,
+      0.714,
+      0.809,
+      0.906,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Deer Park roofer and general contractor",
@@ -32,7 +58,12 @@
     "image": "/brands/extremeroofingremodeling/hero",
     "imageAlt": "A roofer working on a residential shingle roof"
   },
-  "promises": ["Free estimates", "24/7 emergency repairs", "Warranties with our work", "Family owned and operated"],
+  "promises": [
+    "Free estimates",
+    "24/7 emergency repairs",
+    "Warranties with our work",
+    "Family owned and operated"
+  ],
   "services": [
     {
       "slug": "roof-installation-and-replacement",
@@ -54,8 +85,14 @@
         "Warranties on our work"
       ],
       "faqs": [
-        { "q": "Do I have to replace gutters and downspouts?", "a": "As long as they are in good shape and are not in need of fixing or replacing, then we can work around them." },
-        { "q": "What if my newly installed roof leaks?", "a": "We stand by our work, so if there are any leaks in the new roof, we cover the repair cost to the roof and any damage caused by the leak." }
+        {
+          "q": "Do I have to replace gutters and downspouts?",
+          "a": "As long as they are in good shape and are not in need of fixing or replacing, then we can work around them."
+        },
+        {
+          "q": "What if my newly installed roof leaks?",
+          "a": "We stand by our work, so if there are any leaks in the new roof, we cover the repair cost to the roof and any damage caused by the leak."
+        }
       ]
     },
     {
@@ -90,7 +127,11 @@
         "Storms and sudden damage do not wait for business hours. We offer 24/7 emergency repairs, so when water is coming in there is somebody to call.",
         "We will fix your roof expertly and professionally, and get you back to comfort as quickly as possible. Call (409) 354-2135."
       ],
-      "points": ["24/7 emergency repair calls", "Expert, professional repairs", "Back to comfort as quickly as possible"]
+      "points": [
+        "24/7 emergency repair calls",
+        "Expert, professional repairs",
+        "Back to comfort as quickly as possible"
+      ]
     },
     {
       "slug": "insurance-roof-inspection",
@@ -104,9 +145,16 @@
         "If a storm has been through and you need a thorough, professional roof inspection to file your insurance claim, we will go over the roof in detail and document what we find.",
         "The inspection is $75. Filing the paperwork directly with your insurance company is an additional cost, and we will tell you what that is before we do it."
       ],
-      "points": ["Detailed storm damage inspection, $75", "Documentation for your insurance claim", "Paperwork filed directly with your insurer at an additional cost"],
+      "points": [
+        "Detailed storm damage inspection, $75",
+        "Documentation for your insurance claim",
+        "Paperwork filed directly with your insurer at an additional cost"
+      ],
       "faqs": [
-        { "q": "Do you provide homeowners insurance inspections?", "a": "Yes, we provide a detailed inspection for $75 with an additional cost to file the paperwork directly with your insurance company." }
+        {
+          "q": "Do you provide homeowners insurance inspections?",
+          "a": "Yes, we provide a detailed inspection for $75 with an additional cost to file the paperwork directly with your insurance company."
+        }
       ]
     },
     {
@@ -144,7 +192,11 @@
         "Pergolas are outdoor garden features that form shaded walkways and sitting areas. They usually consist of vertical posts or pillars supporting cross-beams and an open lattice that vines can grow on.",
         "Unlike gazebos, which provide full coverage from the sun, pergolas allow some sunlight to shine through their slatted roofs, making for a charming, airy and cozy relaxation spot. Extend your living space and add one to your home."
       ],
-      "points": ["Posts, cross-beams and open lattice", "Shaded walkways and sitting areas", "A lattice vines can grow on"]
+      "points": [
+        "Posts, cross-beams and open lattice",
+        "Shaded walkways and sitting areas",
+        "A lattice vines can grow on"
+      ]
     },
     {
       "slug": "stairs",
@@ -158,7 +210,11 @@
         "Beyond their function of connecting lower and higher levels, stairs are a great way to add beauty and personality to your home.",
         "Choose from a variety of materials and shapes, and from our range of modern, traditional and custom stairs. If you are looking to remodel your porch stairs, give us a call."
       ],
-      "points": ["Porch and deck stairs", "Modern, traditional and custom designs", "A variety of materials and shapes"]
+      "points": [
+        "Porch and deck stairs",
+        "Modern, traditional and custom designs",
+        "A variety of materials and shapes"
+      ]
     },
     {
       "slug": "fencing",
@@ -172,7 +228,11 @@
         "Fences are perfect for demarcating your property's boundaries, enhancing privacy and keeping your property secure.",
         "A well-constructed fence keeps your kids and pets from running outside, and adds beauty to the exterior landscape of your house. Tell us what the fence needs to do and we will help you construct it."
       ],
-      "points": ["Property boundary fencing", "Privacy and security fencing", "Keeps kids and pets in the yard"]
+      "points": [
+        "Property boundary fencing",
+        "Privacy and security fencing",
+        "Keeps kids and pets in the yard"
+      ]
     }
   ],
   "about": {
@@ -184,12 +244,32 @@
     "image": "/brands/extremeroofingremodeling/about",
     "imageAlt": "A completed residential shingle roof on a Deer Park home",
     "values": [
-      { "title": "Family owned", "text": "Brothers Nick and Michael McIntyre run it, as third-generation tradesmen." },
-      { "title": "Over 15 years", "text": "Roofing and remodeling in Deer Park and the communities around it." },
-      { "title": "We stand by our work", "text": "If a roof we installed leaks, we cover the repair and the damage the leak caused." }
+      {
+        "title": "Family owned",
+        "text": "Brothers Nick and Michael McIntyre run it, as third-generation tradesmen."
+      },
+      {
+        "title": "Over 15 years",
+        "text": "Roofing and remodeling in Deer Park and the communities around it."
+      },
+      {
+        "title": "We stand by our work",
+        "text": "If a roof we installed leaks, we cover the repair and the damage the leak caused."
+      }
     ]
   },
-  "serviceArea": ["Deer Park", "La Porte", "Pasadena", "South Houston", "Morgans Point", "Channelview", "Shoreacres", "Cloverleaf", "Galena Park", "Taylor Lake Village"],
+  "serviceArea": [
+    "Deer Park",
+    "La Porte",
+    "Pasadena",
+    "South Houston",
+    "Morgans Point",
+    "Channelview",
+    "Shoreacres",
+    "Cloverleaf",
+    "Galena Park",
+    "Taylor Lake Village"
+  ],
   "areasText": "We work out of Filmore Lane in Deer Park, and these are the communities we service most often.",
   "areasImage": "/brands/extremeroofingremodeling/areas",
   "areasImageAlt": "A residential street of single-family homes",
@@ -206,7 +286,14 @@
     },
     {
       "heading": "Roofing Systems We Work On",
-      "items": ["Asphalt shingles", "Tile", "Slate", "Membrane", "Wood", "Metal"]
+      "items": [
+        "Asphalt shingles",
+        "Tile",
+        "Slate",
+        "Membrane",
+        "Wood",
+        "Metal"
+      ]
     },
     {
       "heading": "Warranties",
@@ -222,7 +309,13 @@
     },
     {
       "heading": "Remodeling Services",
-      "items": ["Stairs", "Decks", "Patios", "Pergolas", "Fences"]
+      "items": [
+        "Stairs",
+        "Decks",
+        "Patios",
+        "Pergolas",
+        "Fences"
+      ]
     },
     {
       "heading": "Residential and Commercial",
@@ -246,7 +339,10 @@
     },
     {
       "heading": "Follow Us",
-      "items": ["facebook.com/extremeroofinghouston", "instagram.com/extremeroofing"]
+      "items": [
+        "facebook.com/extremeroofinghouston",
+        "instagram.com/extremeroofing"
+      ]
     }
   ]
 }

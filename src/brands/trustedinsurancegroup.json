@@ -13,7 +13,20 @@
   "zip": "77532",
   "rating": 5.0,
   "reviewCount": 153,
-  "hours": [["Mon – Fri", "8 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "cta": {
     "label": "Get a Quote",
     "text": "Get your insurance shopping off your to-do list. Give us a call today."
@@ -31,7 +44,24 @@
     "body": "'Open Sans', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;500;600;700&display=swap",
     "logo": "/brands/trustedinsurancegroup/logo.webp",
-    "logoWidth": 160
+    "logoMono": "/brands/trustedinsurancegroup/logo-mono.webp",
+    "logoWidth": 102,
+    "logoHeight": 74,
+    "logoRatio": 1.378,
+    "logoGround": "#14181f",
+    "logoReads": [
+      0.999,
+      0.991,
+      0.882,
+      0.773,
+      0.663,
+      0.551,
+      0.449,
+      0.354,
+      0.265,
+      0.207,
+      0.213
+    ]
   },
   "hero": {
     "eyebrow": "Independent insurance agency in Crosby",
@@ -49,7 +79,10 @@
     "title": "Insurance can be a daunting task when you are faced with so many options and decisions to make.",
     "text": "The good news is we are here to help. Pick a line of coverage to see what it includes, or call and talk it through with an agent."
   },
-  "audiences": { "individuals": "Individuals", "businesses": "Businesses" },
+  "audiences": {
+    "individuals": "Individuals",
+    "businesses": "Businesses"
+  },
   "services": [
     {
       "slug": "auto",

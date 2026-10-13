@@ -11,7 +11,12 @@
   "zip": "77584",
   "rating": 5.0,
   "reviewCount": 15,
-  "hours": [["Mon – Sun", "Open 24 hours"]],
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
   "brand": {
     "primary": "#00264d",
     "primaryDeep": "#001830",
@@ -22,7 +27,24 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap",
     "logo": "/brands/houstonroofclaims/logo.webp",
-    "logoWidth": 190
+    "logoMono": "/brands/houstonroofclaims/logo-mono.webp",
+    "logoWidth": 92,
+    "logoHeight": 74,
+    "logoRatio": 1.243,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.66,
+      0.627,
+      0.601,
+      0.582,
+      0.572,
+      0.582,
+      0.607,
+      0.66,
+      0.752,
+      0.871,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Storm damage insurance claim specialists",
@@ -32,7 +54,12 @@
     "image": "/brands/houstonroofclaims/hero",
     "imageAlt": "A Houston Roof Claims ladder set against a single-story brick home during an inspection"
   },
-  "promises": ["Free roof inspections", "Veteran-owned and Houston-based", "Written damage report for your insurer", "Workmanship warranty on every install"],
+  "promises": [
+    "Free roof inspections",
+    "Veteran-owned and Houston-based",
+    "Written damage report for your insurer",
+    "Workmanship warranty on every install"
+  ],
   "services": [
     {
       "slug": "free-roof-inspection",
@@ -57,8 +84,14 @@
         "Complete photographic documentation for insurance claims"
       ],
       "faqs": [
-        { "q": "What does the inspection cost?", "a": "Nothing. The inspection is free and there is no obligation afterwards." },
-        { "q": "What do I get at the end?", "a": "A written findings report with photographs of the damage, explained in plain language, that you can send to your insurance company." }
+        {
+          "q": "What does the inspection cost?",
+          "a": "Nothing. The inspection is free and there is no obligation afterwards."
+        },
+        {
+          "q": "What do I get at the end?",
+          "a": "A written findings report with photographs of the damage, explained in plain language, that you can send to your insurance company."
+        }
       ]
     },
     {
@@ -83,8 +116,14 @@
         "Installation once coverage is confirmed"
       ],
       "faqs": [
-        { "q": "Do you decide whether my claim is covered?", "a": "No. Coverage decisions are made by your insurance carrier. We document the damage thoroughly so your claim submission is as complete as possible." },
-        { "q": "Will someone be there when the adjuster comes?", "a": "Yes. We attend the adjuster inspection at your home and present our documented scope in person so nothing is missed." }
+        {
+          "q": "Do you decide whether my claim is covered?",
+          "a": "No. Coverage decisions are made by your insurance carrier. We document the damage thoroughly so your claim submission is as complete as possible."
+        },
+        {
+          "q": "Will someone be there when the adjuster comes?",
+          "a": "Yes. We attend the adjuster inspection at your home and present our documented scope in person so nothing is missed."
+        }
       ]
     },
     {
@@ -129,8 +168,14 @@
         "Clear communication at every milestone through to the final walkthrough"
       ],
       "faqs": [
-        { "q": "Which shingle should I choose?", "a": "A standard 30-year architectural shingle is the common choice for value-minded homeowners and for insurance-covered replacements. Impact-resistant shingles cost more and may earn an insurance discount. We walk you through both at the inspection." },
-        { "q": "What warranty do I get?", "a": "A workmanship warranty from us on the installation, plus the manufacturer's material warranty on the shingles. Specific terms are confirmed in writing at contract." }
+        {
+          "q": "Which shingle should I choose?",
+          "a": "A standard 30-year architectural shingle is the common choice for value-minded homeowners and for insurance-covered replacements. Impact-resistant shingles cost more and may earn an insurance discount. We walk you through both at the inspection."
+        },
+        {
+          "q": "What warranty do I get?",
+          "a": "A workmanship warranty from us on the installation, plus the manufacturer's material warranty on the shingles. Specific terms are confirmed in writing at contract."
+        }
       ]
     },
     {
@@ -218,10 +263,22 @@
         "Help documenting wind and hail damage for a TWIA claim"
       ],
       "faqs": [
-        { "q": "Do I need a WPI8 certificate?", "a": "If your property sits in a TWIA-designated catastrophe area, you need a valid WPI8 to qualify for wind and hail insurance. Without it you may not be able to get coverage, or your premiums could be significantly higher." },
-        { "q": "Who issues the certificate?", "a": "A licensed TDI windstorm inspector, after an on-site inspection of the completed roof. Our part is installing to the standard the inspection checks." },
-        { "q": "How do I look up my certificate?", "a": "Search by property address or certificate number on the official TWIA certificate search portal at twia.org, which shows your current WPI8 windstorm certificate status." },
-        { "q": "How soon should I file a TWIA claim?", "a": "As soon as possible after wind or hail damage, because Texas law requires you to report damage promptly. We help document the damage and work with your adjuster. TWIA makes all coverage decisions independently." }
+        {
+          "q": "Do I need a WPI8 certificate?",
+          "a": "If your property sits in a TWIA-designated catastrophe area, you need a valid WPI8 to qualify for wind and hail insurance. Without it you may not be able to get coverage, or your premiums could be significantly higher."
+        },
+        {
+          "q": "Who issues the certificate?",
+          "a": "A licensed TDI windstorm inspector, after an on-site inspection of the completed roof. Our part is installing to the standard the inspection checks."
+        },
+        {
+          "q": "How do I look up my certificate?",
+          "a": "Search by property address or certificate number on the official TWIA certificate search portal at twia.org, which shows your current WPI8 windstorm certificate status."
+        },
+        {
+          "q": "How soon should I file a TWIA claim?",
+          "a": "As soon as possible after wind or hail damage, because Texas law requires you to report damage promptly. We help document the damage and work with your adjuster. TWIA makes all coverage decisions independently."
+        }
       ]
     }
   ],
@@ -229,18 +286,43 @@
     "title": "How a storm claim works",
     "text": "We assist at each step. Coverage decisions are made by your insurance carrier.",
     "steps": [
-      { "title": "Free inspection", "text": "A trained inspector evaluates your roof and photographs every item of damage." },
-      { "title": "Written damage report", "text": "You get a written findings report and photographic evidence to submit to your insurer." },
-      { "title": "You file the claim", "text": "You call your carrier with the report in hand, and we explain what it says." },
-      { "title": "Adjuster appointment", "text": "We attend the adjuster inspection at your home and present our documented scope in person." },
-      { "title": "Supplemental documentation", "text": "If further damage is identified, we provide an updated contractor scope and additional photos." },
-      { "title": "Build and updates", "text": "Once coverage is confirmed, we install the roof with clear communication at every milestone." }
+      {
+        "title": "Free inspection",
+        "text": "A trained inspector evaluates your roof and photographs every item of damage."
+      },
+      {
+        "title": "Written damage report",
+        "text": "You get a written findings report and photographic evidence to submit to your insurer."
+      },
+      {
+        "title": "You file the claim",
+        "text": "You call your carrier with the report in hand, and we explain what it says."
+      },
+      {
+        "title": "Adjuster appointment",
+        "text": "We attend the adjuster inspection at your home and present our documented scope in person."
+      },
+      {
+        "title": "Supplemental documentation",
+        "text": "If further damage is identified, we provide an updated contractor scope and additional photos."
+      },
+      {
+        "title": "Build and updates",
+        "text": "Once coverage is confirmed, we install the roof with clear communication at every milestone."
+      }
     ]
   },
   "materials": {
     "title": "Shingles we install",
     "text": "We work with the top shingle manufacturers in the industry, in both standard 30-year and Class 4 impact-resistant lines.",
-    "brands": ["CertainTeed", "Owens Corning", "Atlas Roofing", "IKO", "Tamko", "GAF"]
+    "brands": [
+      "CertainTeed",
+      "Owens Corning",
+      "Atlas Roofing",
+      "IKO",
+      "Tamko",
+      "GAF"
+    ]
   },
   "projects": [
     {
@@ -276,22 +358,64 @@
     "image": "/brands/houstonroofclaims/founder",
     "imageAlt": "Tim Bridges, owner and founder of Houston Roof Claims",
     "values": [
-      { "title": "We show up fast", "text": "Storm season does not wait. We prioritize urgent inspection requests and tarp where it is needed." },
-      { "title": "We document the damage", "text": "Photographs of every item and a written report you can hand to your insurer." },
-      { "title": "We communicate throughout", "text": "A real point of contact at every milestone. No silence, no surprises." }
+      {
+        "title": "We show up fast",
+        "text": "Storm season does not wait. We prioritize urgent inspection requests and tarp where it is needed."
+      },
+      {
+        "title": "We document the damage",
+        "text": "Photographs of every item and a written report you can hand to your insurer."
+      },
+      {
+        "title": "We communicate throughout",
+        "text": "A real point of contact at every milestone. No silence, no surprises."
+      }
     ]
   },
   "inspection": {
     "title": "From first call to finished roof",
     "steps": [
-      { "title": "Request inspection", "text": "Tell us about your roof. It takes under a minute, and it is free with no obligation." },
-      { "title": "Appointment confirmed", "text": "We call or text to confirm a day and time that works for you." },
-      { "title": "Roof assessment", "text": "A trained inspector evaluates and documents your roof's condition." },
-      { "title": "Claim and project guidance", "text": "We explain the findings and walk you through your options in plain language." },
-      { "title": "Build and updates", "text": "Professional installation with clear communication at every milestone." }
+      {
+        "title": "Request inspection",
+        "text": "Tell us about your roof. It takes under a minute, and it is free with no obligation."
+      },
+      {
+        "title": "Appointment confirmed",
+        "text": "We call or text to confirm a day and time that works for you."
+      },
+      {
+        "title": "Roof assessment",
+        "text": "A trained inspector evaluates and documents your roof's condition."
+      },
+      {
+        "title": "Claim and project guidance",
+        "text": "We explain the findings and walk you through your options in plain language."
+      },
+      {
+        "title": "Build and updates",
+        "text": "Professional installation with clear communication at every milestone."
+      }
     ]
   },
-  "serviceArea": ["Pearland", "Houston", "Katy", "Sugar Land", "The Woodlands", "Cypress", "Spring", "Humble", "Tomball", "Conroe", "Friendswood", "League City", "Pasadena", "Missouri City", "Stafford", "Richmond", "Rosenberg"],
+  "serviceArea": [
+    "Pearland",
+    "Houston",
+    "Katy",
+    "Sugar Land",
+    "The Woodlands",
+    "Cypress",
+    "Spring",
+    "Humble",
+    "Tomball",
+    "Conroe",
+    "Friendswood",
+    "League City",
+    "Pasadena",
+    "Missouri City",
+    "Stafford",
+    "Richmond",
+    "Rosenberg"
+  ],
   "areasText": "Our office is on Greenblade Court in Pearland, and we cover Harris, Fort Bend, Montgomery, Brazoria and Galveston counties.",
   "areasImage": "/brands/houstonroofclaims/areas",
   "areasImageAlt": "The Houston skyline at sunset",
@@ -366,7 +490,11 @@
     },
     {
       "heading": "Inspection appointment windows",
-      "items": ["Morning, 9 AM – 12 PM", "Afternoon, 12 PM – 3 PM", "Late afternoon, 3 PM – 6 PM"]
+      "items": [
+        "Morning, 9 AM – 12 PM",
+        "Afternoon, 12 PM – 3 PM",
+        "Late afternoon, 3 PM – 6 PM"
+      ]
     },
     {
       "heading": "Storm damage we fix",
@@ -422,11 +550,24 @@
     },
     {
       "heading": "Houston areas in our project stories",
-      "items": ["Heights", "Midtown", "Montrose", "Memorial", "Meyerland", "Clear Lake", "Friendswood"]
+      "items": [
+        "Heights",
+        "Midtown",
+        "Montrose",
+        "Memorial",
+        "Meyerland",
+        "Clear Lake",
+        "Friendswood"
+      ]
     },
     {
       "heading": "Storm events we work",
-      "items": ["April 2025 hail event", "May 2024 severe storms", "Hurricane Beryl 2024", "February 2023 ice storm"]
+      "items": [
+        "April 2025 hail event",
+        "May 2024 severe storms",
+        "Hurricane Beryl 2024",
+        "February 2023 ice storm"
+      ]
     },
     {
       "heading": "What each project story includes",

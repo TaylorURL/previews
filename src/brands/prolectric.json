@@ -14,7 +14,10 @@
   "reviewCount": 228,
   "since": 2009,
   "hours": [
-    ["Mon – Fri", "7:30 AM – 6 PM"]
+    [
+      "Mon – Fri",
+      "7:30 AM – 6 PM"
+    ]
   ],
   "brand": {
     "primary": "#0d0b4d",
@@ -28,12 +31,35 @@
     "body": "'Assistant', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Assistant:wght@400;500;600&display=swap",
     "logo": "/brands/prolectric/logo.webp",
-    "logoWidth": 210
+    "logoMono": "/brands/prolectric/logo-mono.webp",
+    "logoWidth": 159,
+    "logoHeight": 48,
+    "logoRatio": 3.312,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.37,
+      0.368,
+      0.399,
+      0.43,
+      0.46,
+      0.512,
+      0.588,
+      0.68,
+      0.785,
+      0.894,
+      1.0
+    ]
   },
   "sameDay": "Our phones are answered live by really nice people, and same day service is usually available.",
   "licenses": [
-    { "label": "Electrical Contractor", "number": "TECL 25741" },
-    { "label": "Master Electrician", "number": "183206" }
+    {
+      "label": "Electrical Contractor",
+      "number": "TECL 25741"
+    },
+    {
+      "label": "Master Electrician",
+      "number": "183206"
+    }
   ],
   "hero": {
     "eyebrow": "Electricians in Dickinson, Texas",
@@ -93,7 +119,11 @@
           "title": "Service Riser Repair",
           "icon": "wrench",
           "text": "Service mast and riser repair for homes in Dickinson and the surrounding area, including the electric service poles and temporary power poles that go with new work.",
-          "points": ["Electric service poles", "Temporary power poles", "Sub panels and breaker change outs"]
+          "points": [
+            "Electric service poles",
+            "Temporary power poles",
+            "Sub panels and breaker change outs"
+          ]
         },
         {
           "slug": "whole-house-surge-protection",
@@ -122,7 +152,10 @@
           "title": "Power Restoration & Permitting",
           "icon": "plug",
           "text": "If you have no power, our electricians can replace your electrical panel today and in most cases have you back up and running the very same day. We handle the permits the work needs.",
-          "points": ["Same day panel replacement in most cases", "Permits pulled and inspections met"]
+          "points": [
+            "Same day panel replacement in most cases",
+            "Permits pulled and inspections met"
+          ]
         }
       ]
     },
@@ -140,42 +173,64 @@
           "title": "Electrical Repair & Troubleshooting",
           "icon": "wrench",
           "text": "Diagnostic work on the circuit itself rather than an estimate, with a clear, upfront flat-rate price before any repair begins.",
-          "points": ["Circuits tested and wiring traced", "Outlets, switches and breakers inspected", "The problem and the cost of repairing it explained before we start"]
+          "points": [
+            "Circuits tested and wiring traced",
+            "Outlets, switches and breakers inspected",
+            "The problem and the cost of repairing it explained before we start"
+          ]
         },
         {
           "slug": "breaker-tripping",
           "title": "Tripping Breakers",
           "icon": "power",
           "text": "A tripping breaker is a safety mechanism, usually caused by an overloaded circuit, a short circuit or a ground fault. If yours trips repeatedly, do not keep resetting it — have the circuit inspected.",
-          "points": ["Breaker change outs", "Load evaluated before new circuits are added"]
+          "points": [
+            "Breaker change outs",
+            "Load evaluated before new circuits are added"
+          ]
         },
         {
           "slug": "gfci-and-arc-fault-protection",
           "title": "GFCI & Arc Fault Protection",
           "icon": "shield",
           "text": "If a GFCI outlet will not reset it is usually a ground fault, where electricity is escaping the circuit, or the outlet itself has failed. We replace failed devices and add the protection modern code requires.",
-          "points": ["GFCI protection", "Arc fault protection"]
+          "points": [
+            "GFCI protection",
+            "Arc fault protection"
+          ]
         },
         {
           "slug": "outlets-and-circuits",
           "title": "Outlets & Dedicated Circuits",
           "icon": "plug",
           "text": "New outlets can usually be added to an existing circuit, but only once the load has been checked. Our master electricians evaluate your current load and install to current building codes.",
-          "points": ["New outlets and receptacles", "Dedicated circuits", "Flat screen TV circuits", "Cable TV outlets and phone jacks"]
+          "points": [
+            "New outlets and receptacles",
+            "Dedicated circuits",
+            "Flat screen TV circuits",
+            "Cable TV outlets and phone jacks"
+          ]
         },
         {
           "slug": "smoke-detector-replacement",
           "title": "Smoke Detector Replacement",
           "icon": "shield",
           "text": "Hardwired smoke detectors replaced throughout the home, along with bath fan and vent hood wire-ups.",
-          "points": ["Smoke detector replacement", "Vent hood wire up", "Ballast replacement"]
+          "points": [
+            "Smoke detector replacement",
+            "Vent hood wire up",
+            "Ballast replacement"
+          ]
         },
         {
           "slug": "home-electrical-inspections",
           "title": "Home Electrical Inspections",
           "icon": "settings",
           "text": "Pre-purchase electrical inspections for a home you are buying, and general home electrical inspections for one you already own.",
-          "points": ["Pre-purchase home electrical inspections", "Home electrical inspections"]
+          "points": [
+            "Pre-purchase home electrical inspections",
+            "Home electrical inspections"
+          ]
         },
         {
           "slug": "commercial-electrical-service",
@@ -205,35 +260,53 @@
           "title": "Ceiling Fan Installation",
           "icon": "fan",
           "text": "Ceiling fans installed and replaced, including the boxes and circuits that support them.",
-          "points": ["New fan installation", "Replacement of an existing fan"]
+          "points": [
+            "New fan installation",
+            "Replacement of an existing fan"
+          ]
         },
         {
           "slug": "chandelier-installation",
           "title": "Chandelier & Fixture Installation",
           "icon": "lightbulb",
           "text": "Chandeliers, pendants and lighting fixtures hung and wired, including high entryway work.",
-          "points": ["Chandelier installations", "Lighting fixture installation", "Ballast replacement"]
+          "points": [
+            "Chandelier installations",
+            "Lighting fixture installation",
+            "Ballast replacement"
+          ]
         },
         {
           "slug": "recessed-and-under-counter-lighting",
           "title": "Recessed & Under Counter Lighting",
           "icon": "sun",
           "text": "Recessed lighting laid out and installed room by room, with under counter and under cabinet lighting in kitchens.",
-          "points": ["Recess lighting", "Under counter lighting", "Bath fan and lighting"]
+          "points": [
+            "Recess lighting",
+            "Under counter lighting",
+            "Bath fan and lighting"
+          ]
         },
         {
           "slug": "landscape-lighting",
           "title": "LED Landscape Lighting",
           "icon": "leaf",
           "text": "LED landscape lighting and low voltage lighting designed around the yard and the house.",
-          "points": ["LED landscape lighting", "Low voltage lighting"]
+          "points": [
+            "LED landscape lighting",
+            "Low voltage lighting"
+          ]
         },
         {
           "slug": "outdoor-and-security-lighting",
           "title": "Outdoor & Security Lighting",
           "icon": "shield",
           "text": "Outdoor lighting for the drive, the yard and the waterfront, including barn lights and security lighting.",
-          "points": ["Outdoor lighting and barn lights", "Security lighting", "Boat dock lighting and circuits"]
+          "points": [
+            "Outdoor lighting and barn lights",
+            "Security lighting",
+            "Boat dock lighting and circuits"
+          ]
         }
       ]
     },
@@ -263,14 +336,22 @@
           "title": "Tesla Wall Connector Installation",
           "icon": "car",
           "text": "As a Tesla Wall Connector Approved Electrician, we evaluate your panel, available capacity, wiring run and charger location, then install the connector and the electrical equipment a safe, code-compliant installation needs.",
-          "points": ["New Tesla Wall Connector installation", "Relocating an existing charger", "Panel capacity and load evaluated first"]
+          "points": [
+            "New Tesla Wall Connector installation",
+            "Relocating an existing charger",
+            "Panel capacity and load evaluated first"
+          ]
         },
         {
           "slug": "commercial-ev-charging",
           "title": "Commercial EV Charging Stations",
           "icon": "building",
           "text": "Level 2 commercial charging for offices, retail centers, apartments and commercial properties, with the panel upgrades and disconnects that go with them.",
-          "points": ["Panel upgrades, dedicated circuits and disconnects", "Load evaluations", "Permits handled where required"]
+          "points": [
+            "Panel upgrades, dedicated circuits and disconnects",
+            "Load evaluations",
+            "Permits handled where required"
+          ]
         },
         {
           "slug": "generator-interlock-installation",
@@ -303,7 +384,11 @@
           "title": "RV & Garage Circuits",
           "icon": "plug",
           "text": "RV electrical hookups, garage circuits and hot tub or spa circuits, sized and run for the load they have to carry.",
-          "points": ["RV circuits and electrical hookups", "Garage circuits", "Sub panels"]
+          "points": [
+            "RV circuits and electrical hookups",
+            "Garage circuits",
+            "Sub panels"
+          ]
         }
       ]
     }

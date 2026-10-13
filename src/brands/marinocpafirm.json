@@ -43,17 +43,31 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/marinocpafirm/logo.webp",
+    "logoMono": "/brands/marinocpafirm/logo-mono.webp",
     "logoWidth": 237,
     "logoHeight": 48,
     "logoRatio": 4.938,
-    "logoGround": "#14181f"
+    "logoGround": "#14181f",
+    "logoReads": [
+      1.0,
+      0.991,
+      0.881,
+      0.773,
+      0.661,
+      0.547,
+      0.44,
+      0.333,
+      0.221,
+      0.108,
+      0.026
+    ]
   },
   "hero": {
     "eyebrow": "Houston and Beaumont, Texas",
     "title": "Proactive accounting strategies and year-round support for building a smarter, stronger business.",
     "lead": "Marino CPA offers comprehensive accounting, audit and tax services in Houston and Beaumont. Let's put the right strategies to work for your business today.",
-    "image": "/brands/marinocpafirm/hero",
-    "imageAlt": "An accountant reviewing a bound financial report at a desk",
+    "image": "/brands/marinocpafirm/tax",
+    "imageAlt": "A calculator and firm envelopes on a desk beside a laptop",
     "points": [
       "More time back",
       "Confidence in compliance",
@@ -106,8 +120,8 @@
       "summary": "Year-round planning, not just April.",
       "text": "Make tax season a breeze—and a smart move. We help you avoid surprises and find savings with proactive planning, and we work with you year-round, not just in April.",
       "lead": "Tax work at Marino CPA starts well before a return is due, because most of what changes the outcome has to be decided while the year is still open.",
-      "image": "/brands/marinocpafirm/tax",
-      "imageAlt": "A calculator and firm envelopes on a desk beside a laptop",
+      "image": "/brands/marinocpafirm/hero",
+      "imageAlt": "An accountant reviewing a bound financial report at a desk",
       "covers": [
         {
           "title": "Planning and return preparation",

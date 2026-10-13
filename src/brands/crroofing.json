@@ -9,7 +9,20 @@
   "town": "Pasadena",
   "state": "TX",
   "zip": "77503",
-  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "brand": {
     "primary": "#c20105",
     "primaryDeep": "#8a0104",
@@ -20,10 +33,24 @@
     "body": "'Montserrat', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap",
     "logo": "/brands/crroofing/logo.webp",
+    "logoMono": "/brands/crroofing/logo-mono.webp",
     "logoWidth": 133,
     "logoHeight": 58,
-    "logoRatio": 2.285,
-    "logoGround": "#ffffff"
+    "logoRatio": 2.293,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.038,
+      0.133,
+      0.228,
+      0.323,
+      0.421,
+      0.521,
+      0.614,
+      0.708,
+      0.807,
+      0.907,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Pasadena roofing contractor",
@@ -101,7 +128,10 @@
       "body": [
         "Retrofit roofing is the process of installing a new roofing system over an already existing roof. This usually involves putting a single-ply roofing system over a standing seam roof."
       ],
-      "points": ["A new roofing system over an existing roof", "Single-ply over a standing seam roof"]
+      "points": [
+        "A new roofing system over an existing roof",
+        "Single-ply over a standing seam roof"
+      ]
     },
     {
       "slug": "wall-and-soffit-panels",
@@ -115,7 +145,11 @@
         "C & R Roofing Services has put on wall and soffit panels for many different buildings. The purpose of wall panels is mainly for making your building a little more appealing.",
         "Soffit panels can be used for ventilation purposes or for aesthetics."
       ],
-      "points": ["Wall panels on any kind of building", "Soffit panels for ventilation", "Soffit panels for aesthetics"]
+      "points": [
+        "Wall panels on any kind of building",
+        "Soffit panels for ventilation",
+        "Soffit panels for aesthetics"
+      ]
     },
     {
       "slug": "balcony-systems",
@@ -127,7 +161,11 @@
         "C & R Roofing Services has done small balconies and roofs. Either the roof is damaged or the client wants something new and more durable.",
         "There is no roof too big, or in this case too small, that C & R Roofing Services can't do."
       ],
-      "points": ["Small balconies and roofs", "Damaged balcony roofs", "Something new and more durable"]
+      "points": [
+        "Small balconies and roofs",
+        "Damaged balcony roofs",
+        "Something new and more durable"
+      ]
     },
     {
       "slug": "paver-systems",
@@ -141,7 +179,11 @@
         "C & R Roofing Services are very experienced with pavers. Pavers are aesthetically pleasing, while serving the purpose of walking on them.",
         "They're heavy duty and durable, and there are many different types of pavers depending on what kind of look the client wants."
       ],
-      "points": ["Walkable paver surfaces", "Heavy duty and durable", "Many different types of pavers"]
+      "points": [
+        "Walkable paver surfaces",
+        "Heavy duty and durable",
+        "Many different types of pavers"
+      ]
     },
     {
       "slug": "shingle-roofing",
@@ -173,17 +215,31 @@
     "image": "/brands/crroofing/about",
     "imageAlt": "A white building with a green standing seam metal roof",
     "values": [
-      { "title": "Integrity", "text": "We stand on a foundation built with integrity, earning your trust today and into the future." },
-      { "title": "Valued Engineering", "text": "We construct and engineer the system the building needs, down to tapering a flat roof so the water runs off it." },
-      { "title": "Customer Service", "text": "Our commitment to a positive customer experience makes us the roofing partner you can trust with your next project." }
+      {
+        "title": "Integrity",
+        "text": "We stand on a foundation built with integrity, earning your trust today and into the future."
+      },
+      {
+        "title": "Valued Engineering",
+        "text": "We construct and engineer the system the building needs, down to tapering a flat roof so the water runs off it."
+      },
+      {
+        "title": "Customer Service",
+        "text": "Our commitment to a positive customer experience makes us the roofing partner you can trust with your next project."
+      }
     ]
   },
   "materials": {
     "title": "The manufacturer we build with",
     "text": "C & R Roofing is part of the Versico team.",
-    "brands": ["Versico"]
+    "brands": [
+      "Versico"
+    ]
   },
-  "serviceArea": ["Pasadena", "Houston"],
+  "serviceArea": [
+    "Pasadena",
+    "Houston"
+  ],
   "areasText": "Our office is on Lilac Street in Pasadena, and with a Texas wide presence our goal is to handle any commercial or industrial roof repair in most surrounding cities. Our crews also work in Louisiana, Tennessee and Florida.",
   "facts": [
     {
@@ -192,19 +248,34 @@
     },
     {
       "heading": "Awards",
-      "items": ["Versico 2024 Excaliber Award", "Versico VIP Versifleece Award"]
+      "items": [
+        "Versico 2024 Excaliber Award",
+        "Versico VIP Versifleece Award"
+      ]
     },
     {
       "heading": "States We Work In",
-      "items": ["Texas", "Louisiana", "Tennessee", "Florida"]
+      "items": [
+        "Texas",
+        "Louisiana",
+        "Tennessee",
+        "Florida"
+      ]
     },
     {
       "heading": "Roofing Estimators",
-      "items": ["Ruben Cantu III", "ruben.cantu3@crroofingservices.com", "281-979-7784"]
+      "items": [
+        "Ruben Cantu III",
+        "ruben.cantu3@crroofingservices.com",
+        "281-979-7784"
+      ]
     },
     {
       "heading": "Email Us",
-      "items": ["ruben.cantu3@crroofingservices.com", "anthony.almodovar@crroofingservices.com"]
+      "items": [
+        "ruben.cantu3@crroofingservices.com",
+        "anthony.almodovar@crroofingservices.com"
+      ]
     },
     {
       "heading": "Find Us Online",
