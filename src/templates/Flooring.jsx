@@ -90,7 +90,7 @@
 import { useState } from 'react';
 import { ArrowRight, ArrowUpRight, Check, Clock, Mail, MapPin, Phone } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { EnquiryForm, Img, Stars, Facts } from './shared.jsx';
+import { EnquiryForm, Img, Stars, Facts, StudioCredit } from './shared.jsx';
 import Header from './flooring/Header.jsx';
 import { BrandMark, Eyebrow, MASONRY, h2, light, outline, pad, solid, wrap } from './flooring/parts.jsx';
 
@@ -416,6 +416,7 @@ function Footer({ b }) {
       <div className={wrap}>
         <p className="m-0 border-t border-white/10 py-6 text-[14px] text-white/55">
           &copy; {new Date().getFullYear()} {b.name}
+          <StudioCredit b={b} />
         </p>
       </div>
     </footer>

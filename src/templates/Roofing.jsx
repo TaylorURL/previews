@@ -133,7 +133,7 @@ import {
   X,
 } from 'lucide-react';
 import { brandVars, displayVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { BrandLogo, EnquiryForm, Img, Stars, Facts } from './shared.jsx';
+import { BrandLogo, EnquiryForm, Img, Stars, Facts, StudioCredit } from './shared.jsx';
 import { onColor, townId } from './roofing/color.js';
 
 const GROUPS = [
@@ -1232,6 +1232,7 @@ function Footer({ b, tel }) {
       <div className={wrap}>
         <p className="border-t border-white/10 py-6 text-[14px] text-white/50">
           &copy; {new Date().getFullYear()} {b.name}
+          <StudioCredit b={b} />
         </p>
       </div>
     </footer>
