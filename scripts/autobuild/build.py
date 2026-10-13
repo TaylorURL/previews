@@ -282,8 +282,8 @@ def build(prospect, root, slug):
     services = compose.services_of(pages, compose.VOCAB[vocab_key], name, town, described_first=template == "hvac")
     if len(services) < 2:
         raise Parked("fewer than two services named on their website")
-    about = compose.about_of(pages, name)
-    lead, lead_source = compose.lead_of(pages, about)
+    about = compose.about_of(pages, name, vocab_key)
+    lead, lead_source = compose.lead_of(pages, about, vocab_key)
     if not lead:
         raise Parked("no description of the business in its own words")
     areas = compose.areas_of(text, town, TOWNS)
