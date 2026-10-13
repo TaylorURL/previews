@@ -1,0 +1,499 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Silver Accounting Group, LLC",
+  "shortName": "Silver Accounting Group",
+  "tagline": "Accounting, tax and wealth management in Humble, Texas",
+  "phone": "(281) 446-5959",
+  "email": "info@silveraccountinggroup.com",
+  "address": "1420 FM 1960 Bypass Rd E, Suite 108",
+  "town": "Humble",
+  "state": "TX",
+  "zip": "77338",
+  "since": 2019,
+  "license": "Securities offered through Cetera Wealth Services LLC, member FINRA/SIPC. Investment advisory services offered through Cetera Investment Advisers LLC.",
+  "hours": [
+    [
+      "Mon – Thu",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Friday",
+      "8 AM – 12 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Send us a quick email or call the office. We would welcome the opportunity to speak with you."
+  },
+  "brand": {
+    "primary": "#0b4a72",
+    "primaryDeep": "#083553",
+    "accent": "#1b8ab5",
+    "ink": "#15222e",
+    "muted": "#56626f",
+    "surface": "#f5f7f9",
+    "cream": "#e8eef3",
+    "line": "#dde5ec",
+    "heading": "'Source Serif 4', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/silveraccountinggroup/logo.webp",
+    "logoWidth": 260,
+    "logoHeight": 34,
+    "logoRatio": 7.612,
+    "logoGround": "#ffffff"
+  },
+  "hero": {
+    "eyebrow": "CPA firm in Humble, Texas",
+    "title": "Your goals. Our strategies.",
+    "lead": "A full range of wealth management, tax, accounting, bookkeeping, consulting, payroll and business services, handled in the Humble office or remotely.",
+    "image": "/brands/silveraccountinggroup/hero",
+    "imageAlt": "An overhead view of a 1040 tax return being filled in beside a calculator, notepad and laptop",
+    "points": [
+      "Accounting, tax and wealth management",
+      "Remote and online work available",
+      "Founded by a CPA in 2019"
+    ]
+  },
+  "overview": {
+    "title": "Discover an array of services for all your financial needs.",
+    "text": "Pick a service to see what it covers, or call the office and talk it through with our team."
+  },
+  "audiences": {
+    "individuals": "Individuals & Families",
+    "businesses": "Businesses"
+  },
+  "services": [
+    {
+      "slug": "tax-preparation",
+      "title": "Tax Preparation",
+      "audience": "individuals",
+      "icon": "receipt",
+      "summary": "Individual, gift and estate tax returns.",
+      "text": "Individual, business, gift and estate tax returns prepared by a CPA firm, with a quote up front and no hidden fees.",
+      "lead": "Tax preparation on your own can be extremely difficult with today's complex tax code. We prepare the return accurately and plan ahead so that less is owed next time.",
+      "covers": [
+        {
+          "title": "Individual tax preparation",
+          "text": "Personal returns prepared and filed, with the planning that reduces the liability on the next one."
+        },
+        {
+          "title": "Business tax return preparation",
+          "text": "Returns for the business alongside the owner's personal filing."
+        },
+        {
+          "title": "Gift and estate tax returns",
+          "text": "Gift and estate tax return preparation when a transfer or an estate calls for one."
+        },
+        {
+          "title": "Estate and succession planning",
+          "text": "Planning how a business or an estate passes on, before it has to."
+        },
+        {
+          "title": "Business start-ups",
+          "text": "Getting a new business set up correctly for tax from the first day it trades."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How do I choose a tax preparer?",
+          "a": "Look for credentials such as a CPA, an attorney or an enrolled agent, and verify them with the state licensing board or the IRS. Many big-box preparers are seasonal workers without an accounting background."
+        },
+        {
+          "q": "What will a return cost?",
+          "a": "Ask for a quote up front. Prices vary with how complex the return is, the location and the preparer's experience. We have no hidden fees."
+        },
+        {
+          "q": "What should I check before I sign?",
+          "a": "Review the return before signing it, and make sure the preparer signs it too and includes a Preparer Tax Identification Number."
+        }
+      ]
+    },
+    {
+      "slug": "tax-planning",
+      "title": "Tax Planning",
+      "audience": "individuals",
+      "icon": "file-pen",
+      "summary": "Year-round strategies to lower what you owe.",
+      "text": "Professional tax planning services and tax reduction strategies, so tax is managed through the year instead of reacted to at filing time.",
+      "lead": "We keep taxes at the forefront of every financial plan we build. Advisors meet with you early in the year to look at your finances and set the strategies, then adjust them as circumstances change.",
+      "covers": [
+        {
+          "title": "An annual review",
+          "text": "A meeting early in the year to assess your finances and set the strategies for it."
+        },
+        {
+          "title": "Tax-deductible contributions",
+          "text": "Which retirement accounts to open, which to fund first, and how to reach the annual contribution limits."
+        },
+        {
+          "title": "Retirement income planning",
+          "text": "A tax-conscious retirement income plan: which income is taxable, and how withdrawals change the bill."
+        },
+        {
+          "title": "Tax-first financial planning",
+          "text": "Tax sits at the front of the plan rather than being handled after the fact."
+        }
+      ]
+    },
+    {
+      "slug": "wealth-management",
+      "title": "Wealth Management",
+      "audience": "individuals",
+      "icon": "chart",
+      "summary": "Customized portfolios, reviewed as you go.",
+      "text": "Customized investment plans built around your risk tolerance, priorities and retirement goals. No prebuilt wealth management strategies or one-size-fits-all solutions.",
+      "lead": "We specialize in working with affluent clients to protect and preserve wealth while providing steady, reliable growth of your investments, under a fiduciary obligation and an assets under management fee structure.",
+      "covers": [
+        {
+          "title": "A planning meeting",
+          "text": "The plan starts with a meeting about risk tolerance, financial priorities and retirement goals."
+        },
+        {
+          "title": "A measured approach",
+          "text": "A measured, conservative approach to investment management, mixing higher-risk, higher-yield options with lower-risk ones."
+        },
+        {
+          "title": "Open reporting",
+          "text": "Detailed reports on portfolio growth and on the strategy changes we recommend."
+        },
+        {
+          "title": "Portfolio review",
+          "text": "A look through what you already hold for underperforming investments and unnecessary risk."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How are you paid?",
+          "a": "Through an assets under management fee structure, and we have a fiduciary obligation to you."
+        }
+      ]
+    },
+    {
+      "slug": "401k-strategies",
+      "title": "401(k) Strategies",
+      "audience": "individuals",
+      "icon": "piggy-bank",
+      "summary": "Active management of your 401(k) funds.",
+      "text": "We actively manage how your 401k funds are invested, adjusting the mix as markets move rather than leaving it to sit.",
+      "lead": "The greatest key to the success of your 401k is consistent and ongoing contributions. We work to minimize your losses in a bear market and maximize your growth as the market rebounds.",
+      "covers": [
+        {
+          "title": "Active management",
+          "text": "How the funds are invested is adjusted as markets change, instead of being left static."
+        },
+        {
+          "title": "Downturns",
+          "text": "Shifting into cash-like holdings when the market falls can lock in the loss. We manage the decline rather than react to it."
+        },
+        {
+          "title": "Contributions",
+          "text": "Keep contributing through a downturn. Buying at lower prices can help the account recover."
+        },
+        {
+          "title": "Asset allocation",
+          "text": "The right mix depends on when you retire and more. A 60% stock and 40% bond split is a common balanced starting point, tailored to your individual needs."
+        },
+        {
+          "title": "Retirement income",
+          "text": "A tax-conscious retirement income plan for which withdrawals to take and when."
+        }
+      ]
+    },
+    {
+      "slug": "accounting-bookkeeping",
+      "title": "Accounting and Bookkeeping",
+      "audience": "businesses",
+      "icon": "calculator",
+      "summary": "Bookkeeping, payroll and reporting.",
+      "text": "Bookkeeping, payroll, budget preparation and audit assistance for small businesses, in the office or worked remotely and online.",
+      "lead": "Silver Accounting Group provides a full range of accounting, bookkeeping, payroll and business services, and the work can be done online as readily as in the Humble office.",
+      "covers": [
+        {
+          "title": "Bookkeeping",
+          "text": "The books kept current, so the numbers are there when a decision or a return needs them."
+        },
+        {
+          "title": "Payroll",
+          "text": "Payroll run for the business alongside the rest of the accounting."
+        },
+        {
+          "title": "Budget preparation",
+          "text": "A budget built from what the business actually does, rather than from last year's guess."
+        },
+        {
+          "title": "Audit assistance",
+          "text": "Support through an audit, with the records and reporting behind it."
+        },
+        {
+          "title": "Remote and online",
+          "text": "Accounting and bookkeeping handled remotely for businesses that would rather not come in."
+        },
+        {
+          "title": "Accounts payable and receivable",
+          "text": "Suppliers paid on time, customers invoiced correctly, depreciation monitored, and bank and credit card accounts reconciled."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Which industries do you work with?",
+          "a": "A wide range of industries and business models, including food service, health care, real estate and insurance, whether you run a factory or sell fashion jewelry."
+        },
+        {
+          "q": "Do you handle sales tax and payroll tax?",
+          "a": "Yes. Sales tax and payroll taxes can get a business in trouble if they are not paid correctly, so they are handled alongside the books."
+        },
+        {
+          "q": "Why use an outside bookkeeper?",
+          "a": "Accounting no longer requires in-house staff and the overhead behind it. Accurate, professionally prepared financial documents also give creditors and banks the information they need."
+        }
+      ]
+    },
+    {
+      "slug": "business-consulting",
+      "title": "Business Consulting",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Start-up help, pricing and fractional CFO.",
+      "text": "Business planning, finance, operations and profit planning for start-ups and established businesses. Having a fractional CFO can be a game-changer.",
+      "lead": "From an entrepreneur taking a business plan to launch, to an established business that needs a new model, we act as the trusted advisor on planning, finance, operations and profit.",
+      "image": "/brands/silveraccountinggroup/consulting",
+      "imageAlt": "Two people talking over figures at a table",
+      "covers": [
+        {
+          "title": "Clarity and objectivity around goals",
+          "text": "An outside perspective that tests the idea and finds the blind spots."
+        },
+        {
+          "title": "Knowledge and expertise",
+          "text": "Advisor support that fills the gaps in an owner's own knowledge."
+        },
+        {
+          "title": "Financial reporting",
+          "text": "Accurate reporting and key performance indicators. Knowing your numbers is your navigational road map to success."
+        },
+        {
+          "title": "Pricing for profits",
+          "text": "Prices that are sustainable and competitive, and the break-even point underneath them."
+        },
+        {
+          "title": "Scaling for growth",
+          "text": "Don't confuse growth with scale. Scale is revenue rising faster than the costs behind it."
+        },
+        {
+          "title": "Start-up consulting",
+          "text": "Start-up costs, compliance requirements and the early mistakes that cost the most to undo."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What else does consulting cover?",
+          "a": "Strategic planning, feasibility studies, information systems evaluation, outsourcing evaluation, estate planning, and mergers and acquisitions."
+        }
+      ]
+    }
+  ],
+  "process": {
+    "title": "How we work",
+    "text": "The same four steps, whether the work is a return or a portfolio.",
+    "steps": [
+      {
+        "title": "A first meeting",
+        "text": "We start by talking through your risk tolerance, your financial priorities and your retirement goals."
+      },
+      {
+        "title": "A plan built for you",
+        "text": "No prebuilt strategies and no one-size-fits-all solutions. The plan is customized to what you told us."
+      },
+      {
+        "title": "We put it to work",
+        "text": "The strategy is implemented across the accounts and the services it touches."
+      },
+      {
+        "title": "Reports and adjustments",
+        "text": "We monitor progress, report on portfolio growth, and change the plan as your circumstances do."
+      }
+    ]
+  },
+  "affiliations": {
+    "title": "Credentials and memberships",
+    "items": [
+      "Certified Public Accountant",
+      "Platinum Member, Greater East Montgomery County Chamber of Commerce",
+      "Lake Houston Partnership",
+      "Greater Tomball Area Chamber of Commerce",
+      "An Avantax community within Cetera Wealth Services LLC"
+    ]
+  },
+  "about": {
+    "title": "A CPA firm built around the small businesses of northeast Harris County.",
+    "text": [
+      "Silver Accounting Group, LLC and SG Wealth LLC provide a full range of wealth management, tax, accounting, bookkeeping, consulting, payroll and business services. The work is done in the Humble office or remotely and online, whichever suits you.",
+      "Brian Silver founded the firm in 2019, when he transitioned from corporate management to public accounting. Financial controls, security and compliance were key responsibilities as a senior executive and consultant to Fortune 500 companies, and he brought that work to the firms on this side of Houston.",
+      "We serve the Humble area, northeast Harris County and Montgomery County along the 59, 99 and 249 corridors. There are over 28 million small businesses in the United States, and supporting them supports the country's financial infrastructure. When small business wins, everyone wins."
+    ],
+    "image": "/brands/silveraccountinggroup/about",
+    "imageAlt": "A quiet office workspace with a desk and paperwork",
+    "values": [
+      {
+        "title": "Tax at the front",
+        "text": "We keep taxes at the forefront of every financial plan we build."
+      },
+      {
+        "title": "Nothing prebuilt",
+        "text": "No prebuilt wealth management strategies or one-size-fits-all solutions."
+      },
+      {
+        "title": "No hidden fees",
+        "text": "A quote up front, because the price of a return varies with how complex it is."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Brian Silver",
+      "role": "Founder & CEO",
+      "bio": "A Certified Public Accountant with an MBA from Oklahoma City University. Financial controls, security and compliance were key responsibilities as a senior executive and consultant to Fortune 500 companies, before he transitioned from corporate management to public accounting in 2019."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Can you work with me remotely?",
+      "a": "Yes. Accounting, bookkeeping and tax work can be provided securely anywhere in the world, whether you live overseas or simply prefer to work remotely, and you can reach your financial information and business files online at any time. The service online is the same as sitting in the Humble office."
+    },
+    {
+      "q": "How do I sign in to my accounts?",
+      "a": "Client Login opens three portals: TaxDome for accounting and tax documents, Avantax for investment accounts, and ADP Run for payroll."
+    },
+    {
+      "q": "Do you have another office?",
+      "a": "Yes. There is a Tomball office at 1431 Graham Drive, Suite 252, open Monday to Thursday from 9 AM to 5 PM and Friday from 9 AM to 12 PM. The number there is (832) 639-3139."
+    },
+    {
+      "q": "What should I look for in a tax preparer?",
+      "a": "Credentials such as a CPA, an attorney or an enrolled agent, verified with the state licensing board or the IRS, and a signature with a Preparer Tax Identification Number on the finished return."
+    },
+    {
+      "q": "What should I do when the market falls?",
+      "a": "Keep contributing. Moving into cash-like holdings during a decline can lock in the loss, and consistent contributions buy at lower prices on the way back up."
+    },
+    {
+      "q": "Who do you work with?",
+      "a": "Individuals and families on tax, retirement and investments, and small businesses on accounting, payroll and consulting, across the Humble area, northeast Harris County and Montgomery County."
+    },
+    {
+      "q": "What does wealth management cost?",
+      "a": "It runs on an assets under management fee structure, and the firm has a fiduciary obligation to you."
+    }
+  ],
+  "resources": [
+    {
+      "title": "FINRA BrokerCheck",
+      "text": "Check the background of a firm or an investment professional before you work with them.",
+      "href": "https://brokercheck.finra.org/"
+    },
+    {
+      "title": "FINRA",
+      "text": "The Financial Industry Regulatory Authority, which oversees the firms that sell securities.",
+      "href": "https://www.finra.org/"
+    },
+    {
+      "title": "SIPC",
+      "text": "The Securities Investor Protection Corporation, which protects customers of a failed brokerage.",
+      "href": "https://www.sipc.org/"
+    }
+  ],
+  "serviceArea": [
+    "Humble",
+    "Tomball",
+    "Northeast Harris County",
+    "Montgomery County"
+  ],
+  "facts": [
+    {
+      "heading": "Tomball office",
+      "text": "1431 Graham Drive, Suite 252, Tomball, TX 77375, on (832) 639-3139. Open Monday to Thursday from 9 AM to 5 PM and Friday from 9 AM to 12 PM."
+    },
+    {
+      "heading": "Reaching Brian Silver",
+      "text": "Brian Silver is on (281) 446-5959 extension 108, or at brian@silveraccountinggroup.com."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/SilverAGLLC",
+        "LinkedIn: linkedin.com/in/brian-silver-cpa"
+      ]
+    },
+    {
+      "heading": "Services we provide",
+      "items": [
+        "Wealth Management",
+        "Financial Planning",
+        "Tax Preparation and Advising",
+        "Online Bookkeeping",
+        "Remote Accounting",
+        "Review of Financial Statement Chart of Accounts",
+        "Business Transaction Process Flow",
+        "Review of Management Prepared Financial Statements",
+        "Management Analysis of Financial Statements Compilations",
+        "Audit Assistance",
+        "Budget Preparation"
+      ]
+    },
+    {
+      "heading": "Featured bookkeeping services",
+      "items": [
+        "Paying Suppliers",
+        "Billing for Services",
+        "Invoicing Customers",
+        "Monitoring Depreciation",
+        "Bank and Credit Card Reconciliation"
+      ]
+    },
+    {
+      "heading": "Retirement and money management",
+      "text": "The firm specializes in helping individuals develop sound retirement strategies, with personalized, hands-on service that takes the mystery out of investing, insurance, estate conservation and preserving wealth. We focus on money management and on the concern many retirees name first, outliving their money."
+    },
+    {
+      "heading": "Where we can do business",
+      "text": "The site is published for residents of the United States only, and financial professionals of Cetera Wealth Services, LLC may only conduct business with residents of the states and jurisdictions in which they are properly registered. Cetera Wealth Services, LLC does insurance business in California as CFGAN Insurance Agency LLC, and Cetera is under separate ownership from any other named entity."
+    },
+    {
+      "heading": "Financial planning",
+      "items": [
+        "Retirement Plans",
+        "Tax Plans",
+        "401(k) Planning",
+        "403(b) Planning",
+        "College Plans",
+        "Estate Plans",
+        "Money Purchasing Plans",
+        "Profit Sharing Plans"
+      ]
+    },
+    {
+      "heading": "Investments",
+      "items": [
+        "Bonds",
+        "Common Stock",
+        "Educational IRA",
+        "Traditional IRA",
+        "Roth IRA",
+        "SEP IRA",
+        "Simple IRA",
+        "Brokerage Accounts",
+        "Treasury Bills",
+        "Government Securities",
+        "Treasury Notes",
+        "Variable Annuity"
+      ]
+    }
+  ]
+}
