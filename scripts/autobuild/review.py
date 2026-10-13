@@ -360,7 +360,8 @@ def dispatch(template, findings, budget):
         "claude", "-p", "--model", FIX_MODEL, "--permission-mode", "acceptEdits",
         "--tools", "Read,Edit,Write,Glob,Grep,Bash",
         "--allowedTools", "Read", "Edit", "Write", "Glob", "Grep", "Bash(npm run build)",
-        "Bash(node scripts/autobuild/shoot.mjs:*)", "Bash(git diff:*)", "Bash(git status:*)",
+        "Bash(node scripts/autobuild/shoot.mjs:*)", "Bash(node scripts/autobuild/layout.mjs:*)", "Bash(git diff:*)",
+        "Bash(git status:*)",
         "--setting-sources", "", "--no-session-persistence", "--output-format", "json",
         "--json-schema", json.dumps(FIX_SCHEMA), prompt,
     ]
@@ -383,6 +384,12 @@ def dispatch(template, findings, budget):
 
 
 def _build():
+    """Whether the site still builds and the builder still loads: a fix in
+    compose.py or build.py that no longer imports would stop the next run."""
+    done = subprocess.run([sys.executable, "-c", "import scripts.autobuild.pipeline, scripts.autobuild.gate, scripts.routine"],
+                          cwd=ROOT, capture_output=True, text=True, stdin=subprocess.DEVNULL)
+    if done.returncode != 0:
+        return False, done.stderr[-400:]
     done = subprocess.run(["npm", "run", "build"], cwd=ROOT, capture_output=True, text=True, stdin=subprocess.DEVNULL)
     return done.returncode == 0, done.stderr[-400:]
 
