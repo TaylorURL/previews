@@ -13,7 +13,16 @@
   "zip": "77546",
   "rating": 4.7,
   "reviewCount": 6,
-  "hours": [["Mon – Fri", "9:00 AM – 5:00 PM"], ["Sat – Sun", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "9:00 AM – 5:00 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
   "cta": {
     "label": "Get a Quote",
     "text": "Call 281-464-3443 or send us your details and we will come back with a free quote."
@@ -31,7 +40,24 @@
     "body": "'Roboto', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Roboto:wght@400;500;700&display=swap",
     "logo": "/brands/genglerinsurancefriendswood/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/genglerinsurancefriendswood/logo-mono.webp",
+    "logoWidth": 112,
+    "logoHeight": 58,
+    "logoRatio": 1.931,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.473,
+      0.36,
+      0.262,
+      0.194,
+      0.225,
+      0.322,
+      0.447,
+      0.579,
+      0.72,
+      0.863,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Insurance agency in Friendswood, TX",
@@ -49,7 +75,10 @@
     "title": "Coverage for your home, your vehicles, your family and your business.",
     "text": "Pick a line of coverage to see what it includes, or call 281-464-3443 and talk it through with an agent."
   },
-  "audiences": { "individuals": "Individuals & Families", "businesses": "Businesses" },
+  "audiences": {
+    "individuals": "Individuals & Families",
+    "businesses": "Businesses"
+  },
   "services": [
     {
       "slug": "auto",
@@ -62,14 +91,32 @@
       "image": "/brands/genglerinsurancefriendswood/auto",
       "imageAlt": "Elevated highway overpasses in Texas",
       "covers": [
-        { "title": "Auto coverage", "text": "Coverage for the vehicles you drive every day, quoted across our group of national partners." },
-        { "title": "Discounts", "text": "Safe driver, multi-car, multi-policy, good grades and a dozen others we check for you before quoting." },
-        { "title": "Boats and jet skis", "text": "Policies for the things you use to travel on the water as well as on the road." },
-        { "title": "Motorcycles and ATVs", "text": "Motorcycle and ATV coverage, bundled with the rest so you make one payment on all your property." }
+        {
+          "title": "Auto coverage",
+          "text": "Coverage for the vehicles you drive every day, quoted across our group of national partners."
+        },
+        {
+          "title": "Discounts",
+          "text": "Safe driver, multi-car, multi-policy, good grades and a dozen others we check for you before quoting."
+        },
+        {
+          "title": "Boats and jet skis",
+          "text": "Policies for the things you use to travel on the water as well as on the road."
+        },
+        {
+          "title": "Motorcycles and ATVs",
+          "text": "Motorcycle and ATV coverage, bundled with the rest so you make one payment on all your property."
+        }
       ],
       "questions": [
-        { "q": "What auto insurance discounts can I get?", "a": "The discounts we have available include anti-theft devices, anti-lock brakes, multi-policy, multi-car, longevity, payment plan, safe driver, youthful driver, college student, driver training, an auto accident prevention course, reduced usage, passive restraints and age 55 or over." },
-        { "q": "Can I insure a boat or a motorcycle with you?", "a": "Yes. We quote ATVs, boats, motorcycles and jet skis. Bundling everything saves you money and lets you make one payment on all your property." }
+        {
+          "q": "What auto insurance discounts can I get?",
+          "a": "The discounts we have available include anti-theft devices, anti-lock brakes, multi-policy, multi-car, longevity, payment plan, safe driver, youthful driver, college student, driver training, an auto accident prevention course, reduced usage, passive restraints and age 55 or over."
+        },
+        {
+          "q": "Can I insure a boat or a motorcycle with you?",
+          "a": "Yes. We quote ATVs, boats, motorcycles and jet skis. Bundling everything saves you money and lets you make one payment on all your property."
+        }
       ]
     },
     {
@@ -83,14 +130,32 @@
       "image": "/brands/genglerinsurancefriendswood/home",
       "imageAlt": "A two-story house with black shutters",
       "covers": [
-        { "title": "Fire and lightning", "text": "Damage from fire, lightning and explosions to the house and what is inside it." },
-        { "title": "Hail and theft", "text": "Hail damage and theft, among the other tragedies a homeowner's policy is written to cover." },
-        { "title": "Renter's and condo", "text": "If you are not a homeowner quite yet, renter's insurance covers your belongings at your apartment, and we write condo policies as well." },
-        { "title": "Mobile homes", "text": "Mobile home policies that can include physical damage, personal liability, theft, flood and more." }
+        {
+          "title": "Fire and lightning",
+          "text": "Damage from fire, lightning and explosions to the house and what is inside it."
+        },
+        {
+          "title": "Hail and theft",
+          "text": "Hail damage and theft, among the other tragedies a homeowner's policy is written to cover."
+        },
+        {
+          "title": "Renter's and condo",
+          "text": "If you are not a homeowner quite yet, renter's insurance covers your belongings at your apartment, and we write condo policies as well."
+        },
+        {
+          "title": "Mobile homes",
+          "text": "Mobile home policies that can include physical damage, personal liability, theft, flood and more."
+        }
       ],
       "questions": [
-        { "q": "Does my homeowner's policy cover flooding?", "a": "No. Flooding needs a separate policy in addition to your home insurance. See our flood page or call 281-464-3443." },
-        { "q": "Do you cover mobile homes?", "a": "Yes. Homes come in all shapes and sizes, and we have various options available for mobile homes. We will show you all your options so you can make the best decision for your needs." }
+        {
+          "q": "Does my homeowner's policy cover flooding?",
+          "a": "No. Flooding needs a separate policy in addition to your home insurance. See our flood page or call 281-464-3443."
+        },
+        {
+          "q": "Do you cover mobile homes?",
+          "a": "Yes. Homes come in all shapes and sizes, and we have various options available for mobile homes. We will show you all your options so you can make the best decision for your needs."
+        }
       ]
     },
     {
@@ -104,14 +169,32 @@
       "image": "/brands/genglerinsurancefriendswood/flood",
       "imageAlt": "A flooded street with a road sign standing in the water",
       "covers": [
-        { "title": "NFIP policies", "text": "Flood coverage written through the National Flood Insurance Program." },
-        { "title": "Policies through our partners", "text": "Flood coverage through one of our many national insurance partners." },
-        { "title": "24/7 claims support", "text": "Nationwide claims support and assistance around the clock." },
-        { "title": "A dedicated agent", "text": "An agent who can help you understand your flood coverage, and help finding discounts to maximize your savings." }
+        {
+          "title": "NFIP policies",
+          "text": "Flood coverage written through the National Flood Insurance Program."
+        },
+        {
+          "title": "Policies through our partners",
+          "text": "Flood coverage through one of our many national insurance partners."
+        },
+        {
+          "title": "24/7 claims support",
+          "text": "Nationwide claims support and assistance around the clock."
+        },
+        {
+          "title": "A dedicated agent",
+          "text": "An agent who can help you understand your flood coverage, and help finding discounts to maximize your savings."
+        }
       ],
       "questions": [
-        { "q": "Does flood insurance cover backed up water?", "a": "Not all flood policies cover backed up water, for example water that backs up from sewers or drains. We want to make sure you understand all of your options and all aspects of your coverage." },
-        { "q": "Do I need a property policy with you to buy flood insurance?", "a": "No. Though the government determines flood insurance coverage and premiums, you can still purchase your flood policy through our agency even if you do not have an existing property policy with us." }
+        {
+          "q": "Does flood insurance cover backed up water?",
+          "a": "Not all flood policies cover backed up water, for example water that backs up from sewers or drains. We want to make sure you understand all of your options and all aspects of your coverage."
+        },
+        {
+          "q": "Do I need a property policy with you to buy flood insurance?",
+          "a": "No. Though the government determines flood insurance coverage and premiums, you can still purchase your flood policy through our agency even if you do not have an existing property policy with us."
+        }
       ]
     },
     {
@@ -125,14 +208,32 @@
       "image": "/brands/genglerinsurancefriendswood/life",
       "imageAlt": "An older woman and a young boy standing together at a table",
       "covers": [
-        { "title": "Term life", "text": "The simplest form of life insurance. It pays only if death occurs during the term of the policy, usually from one to 30 years." },
-        { "title": "Level term", "text": "The death benefit stays the same throughout the duration of the policy." },
-        { "title": "Decreasing term", "text": "The death benefit drops, usually in one-year increments, over the course of the policy's term." },
-        { "title": "Whole and permanent life", "text": "Pays a death benefit whenever you die, even if you live to 100, with both the benefit and the premium designed to stay level." }
+        {
+          "title": "Term life",
+          "text": "The simplest form of life insurance. It pays only if death occurs during the term of the policy, usually from one to 30 years."
+        },
+        {
+          "title": "Level term",
+          "text": "The death benefit stays the same throughout the duration of the policy."
+        },
+        {
+          "title": "Decreasing term",
+          "text": "The death benefit drops, usually in one-year increments, over the course of the policy's term."
+        },
+        {
+          "title": "Whole and permanent life",
+          "text": "Pays a death benefit whenever you die, even if you live to 100, with both the benefit and the premium designed to stay level."
+        }
       ],
       "questions": [
-        { "q": "What is the cash value on a whole life policy?", "a": "A whole life premium is held level by charging more than is needed in the early years and investing it. By law, once those overpayments reach a certain amount they must be available to you as a cash value if you decide not to continue with the original plan. It is an alternative benefit under the policy rather than an additional one." },
-        { "q": "Why buy life insurance at all?", "a": "So your family does not have to uproot their lives and change their living standards in the event of a premature or unexpected death." }
+        {
+          "q": "What is the cash value on a whole life policy?",
+          "a": "A whole life premium is held level by charging more than is needed in the early years and investing it. By law, once those overpayments reach a certain amount they must be available to you as a cash value if you decide not to continue with the original plan. It is an alternative benefit under the policy rather than an additional one."
+        },
+        {
+          "q": "Why buy life insurance at all?",
+          "a": "So your family does not have to uproot their lives and change their living standards in the event of a premature or unexpected death."
+        }
       ]
     },
     {
@@ -146,13 +247,28 @@
       "image": "/brands/genglerinsurancefriendswood/health",
       "imageAlt": "A stethoscope held in a clinician's hands",
       "covers": [
-        { "title": "Preparing for the unexpected", "text": "If you need medical attention, testing or surgery unexpectedly, the cost could be extremely expensive. You never know when you will need medical help." },
-        { "title": "Preventive services", "text": "Many preventive services, like physical exams or checkups, are covered at 100%." },
-        { "title": "Medicare", "text": "If you are 65 or over, or a person with certain disabilities, we can help you understand your options as you transition from employer insurance onto Medicare." }
+        {
+          "title": "Preparing for the unexpected",
+          "text": "If you need medical attention, testing or surgery unexpectedly, the cost could be extremely expensive. You never know when you will need medical help."
+        },
+        {
+          "title": "Preventive services",
+          "text": "Many preventive services, like physical exams or checkups, are covered at 100%."
+        },
+        {
+          "title": "Medicare",
+          "text": "If you are 65 or over, or a person with certain disabilities, we can help you understand your options as you transition from employer insurance onto Medicare."
+        }
       ],
       "questions": [
-        { "q": "Can you help me work out which Medicare program I qualify for?", "a": "Yes. If you have questions about the different Medicare programs and whether or not you qualify, contact our office at 281-464-3443." },
-        { "q": "Why own health insurance if I am healthy?", "a": "One reason is to prepare for the unexpected, and another is to stay healthy, since many preventive services like checkups are covered at 100%." }
+        {
+          "q": "Can you help me work out which Medicare program I qualify for?",
+          "a": "Yes. If you have questions about the different Medicare programs and whether or not you qualify, contact our office at 281-464-3443."
+        },
+        {
+          "q": "Why own health insurance if I am healthy?",
+          "a": "One reason is to prepare for the unexpected, and another is to stay healthy, since many preventive services like checkups are covered at 100%."
+        }
       ]
     },
     {
@@ -166,15 +282,36 @@
       "image": "/brands/genglerinsurancefriendswood/business",
       "imageAlt": "Racks of clothing in a retail shop",
       "covers": [
-        { "title": "General liability", "text": "Protection against the things that happen to a business, from a slip and fall to a burglary." },
-        { "title": "Property and contents", "text": "Your building and what is in it, including fire, water and freezing, hail and strong wind damage." },
-        { "title": "Worker's comp", "text": "Coverage for your employees when something happens on the job." },
-        { "title": "Business auto", "text": "The vehicles used for business purposes, written on a commercial policy rather than a personal one." },
-        { "title": "Business interruption", "text": "Cover for the income lost while your business is unable to trade." }
+        {
+          "title": "General liability",
+          "text": "Protection against the things that happen to a business, from a slip and fall to a burglary."
+        },
+        {
+          "title": "Property and contents",
+          "text": "Your building and what is in it, including fire, water and freezing, hail and strong wind damage."
+        },
+        {
+          "title": "Worker's comp",
+          "text": "Coverage for your employees when something happens on the job."
+        },
+        {
+          "title": "Business auto",
+          "text": "The vehicles used for business purposes, written on a commercial policy rather than a personal one."
+        },
+        {
+          "title": "Business interruption",
+          "text": "Cover for the income lost while your business is unable to trade."
+        }
       ],
       "questions": [
-        { "q": "What kinds of businesses do you write?", "a": "We provide custom coverage for many different types of businesses, including construction, manufacturing, moving companies, Main Street retail and office, restaurants, trucking, churches and non-emergency medical transportation." },
-        { "q": "Can you help with bonds?", "a": "If you have questions about commercial insurance or bonds, call the office at 281-464-3443." }
+        {
+          "q": "What kinds of businesses do you write?",
+          "a": "We provide custom coverage for many different types of businesses, including construction, manufacturing, moving companies, Main Street retail and office, restaurants, trucking, churches and non-emergency medical transportation."
+        },
+        {
+          "q": "Can you help with bonds?",
+          "a": "If you have questions about commercial insurance or bonds, call the office at 281-464-3443."
+        }
       ]
     }
   ],
@@ -207,25 +344,71 @@
       "We have been servicing our customers across the country for over 45 years. Finding the best quote takes time and energy that you may not have, so we have done the hard work for you. Call our Friendswood office at 281-464-3443 for a free quote."
     ],
     "values": [
-      { "title": "A personalized bundle", "text": "We work with you to build coverage around your needs and your budget rather than selling one package to everybody." },
-      { "title": "An extensive list of partners", "text": "We partner with a long list of insurance companies, so your quote is not limited to one carrier's products." },
-      { "title": "A free quote", "text": "Call 281-464-3443 and we will quote your coverage for free." }
+      {
+        "title": "A personalized bundle",
+        "text": "We work with you to build coverage around your needs and your budget rather than selling one package to everybody."
+      },
+      {
+        "title": "An extensive list of partners",
+        "text": "We partner with a long list of insurance companies, so your quote is not limited to one carrier's products."
+      },
+      {
+        "title": "A free quote",
+        "text": "Call 281-464-3443 and we will quote your coverage for free."
+      }
     ]
   },
   "faqs": [
-    { "q": "How do I get a quote?", "a": "Call 281-464-3443 or send us your name, contact details, address, the type of insurance you need and how you would prefer to be contacted, and we will get back to you as soon as possible." },
-    { "q": "What does a quote cost?", "a": "Nothing. Call our Friendswood location at 281-464-3443 for a free consultation and a free quote." },
-    { "q": "What kinds of insurance do you write?", "a": "Business, auto, homeowner's, flood, life and health, along with boats, motorcycles, ATVs, jet skis, mobile homes, renter's and condo policies." },
-    { "q": "Which card payments do you accept?", "a": "Visa, MasterCard, American Express and Discover." },
-    { "q": "When is the office open?", "a": "Monday through Friday, 9:00 am to 5:00 pm. We are closed Saturday and Sunday." },
-    { "q": "Where is your office?", "a": "211 E Parkwood Dr, Suite 205, Friendswood, TX 77546." }
+    {
+      "q": "How do I get a quote?",
+      "a": "Call 281-464-3443 or send us your name, contact details, address, the type of insurance you need and how you would prefer to be contacted, and we will get back to you as soon as possible."
+    },
+    {
+      "q": "What does a quote cost?",
+      "a": "Nothing. Call our Friendswood location at 281-464-3443 for a free consultation and a free quote."
+    },
+    {
+      "q": "What kinds of insurance do you write?",
+      "a": "Business, auto, homeowner's, flood, life and health, along with boats, motorcycles, ATVs, jet skis, mobile homes, renter's and condo policies."
+    },
+    {
+      "q": "Which card payments do you accept?",
+      "a": "Visa, MasterCard, American Express and Discover."
+    },
+    {
+      "q": "When is the office open?",
+      "a": "Monday through Friday, 9:00 am to 5:00 pm. We are closed Saturday and Sunday."
+    },
+    {
+      "q": "Where is your office?",
+      "a": "211 E Parkwood Dr, Suite 205, Friendswood, TX 77546."
+    }
   ],
   "resources": [
-    { "title": "National Flood Insurance Program", "text": "How federal flood coverage works, and what a policy does and does not pay for.", "href": "https://www.floodsmart.gov" },
-    { "title": "FEMA Flood Map Service Center", "text": "Look up the flood zone for any address before you buy or renew.", "href": "https://msc.fema.gov/portal/home" },
-    { "title": "Texas Department of Insurance", "text": "Consumer guides, agent license lookups and complaint help.", "href": "https://www.tdi.texas.gov" }
+    {
+      "title": "National Flood Insurance Program",
+      "text": "How federal flood coverage works, and what a policy does and does not pay for.",
+      "href": "https://www.floodsmart.gov"
+    },
+    {
+      "title": "FEMA Flood Map Service Center",
+      "text": "Look up the flood zone for any address before you buy or renew.",
+      "href": "https://msc.fema.gov/portal/home"
+    },
+    {
+      "title": "Texas Department of Insurance",
+      "text": "Consumer guides, agent license lookups and complaint help.",
+      "href": "https://www.tdi.texas.gov"
+    }
   ],
-  "serviceArea": ["Friendswood", "League City", "Webster", "South Shore", "Pearland", "Houston"],
+  "serviceArea": [
+    "Friendswood",
+    "League City",
+    "Webster",
+    "South Shore",
+    "Pearland",
+    "Houston"
+  ],
   "facts": [
     {
       "heading": "Auto insurance discounts",

@@ -14,7 +14,20 @@
   "license": "Accounting in a Box is a registered trademark of AFT Consulting, LLC, registered and protected in the United States, United Kingdom and Australia.",
   "rating": 5.0,
   "reviewCount": 8,
-  "hours": [["Mon – Fri", "9 AM – 6 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 6 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "cta": {
     "label": "Request Info",
     "text": "Send your inquiry and include your company name and website in the message, and we will point you to the right member firm."
@@ -32,10 +45,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/accountinginabox/logo.webp",
+    "logoMono": "/brands/accountinginabox/logo-mono.webp",
     "logoWidth": 260,
     "logoHeight": 42,
     "logoRatio": 6.138,
-    "logoGround": "#ffffff"
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.367,
+      0.248,
+      0.17,
+      0.181,
+      0.271,
+      0.378,
+      0.489,
+      0.61,
+      0.741,
+      0.872,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Houston, Austin and Dallas",
@@ -53,7 +80,10 @@
     "title": "Accounting and advisory services, reached through one network.",
     "text": "Services rendered by our members cover a wide range of accounting and advisory work including tax, audit, review, CFO, capital advisory, business valuation and bookkeeping. If you do not see what you need, send us an email."
   },
-  "audiences": { "individuals": "Individuals", "businesses": "Businesses & Non-Profits" },
+  "audiences": {
+    "individuals": "Individuals",
+    "businesses": "Businesses & Non-Profits"
+  },
   "services": [
     {
       "slug": "income-tax",
@@ -66,10 +96,22 @@
       "image": "/brands/accountinginabox/tax",
       "imageAlt": "An open notebook, pens and a mug on a white desk",
       "covers": [
-        { "title": "Preparation and filing", "text": "Returns prepared and filed for the federal and state forms your situation calls for." },
-        { "title": "Projections and estimates", "text": "Tax projections and estimated payments worked out before the amount is due." },
-        { "title": "Tax consultation", "text": "Questions answered as they come up rather than only at filing time." },
-        { "title": "Audit representation", "text": "Representation when the IRS examines a return that has been filed." }
+        {
+          "title": "Preparation and filing",
+          "text": "Returns prepared and filed for the federal and state forms your situation calls for."
+        },
+        {
+          "title": "Projections and estimates",
+          "text": "Tax projections and estimated payments worked out before the amount is due."
+        },
+        {
+          "title": "Tax consultation",
+          "text": "Questions answered as they come up rather than only at filing time."
+        },
+        {
+          "title": "Audit representation",
+          "text": "Representation when the IRS examines a return that has been filed."
+        }
       ]
     },
     {
@@ -101,11 +143,26 @@
       "image": "/brands/accountinginabox/bookkeeping",
       "imageAlt": "A laptop and a mug on a desk in a bright office",
       "covers": [
-        { "title": "Transactions and bill payments", "text": "Recording and categorizing transactions and processing bill payments as they come through." },
-        { "title": "Reconciliations", "text": "Bank, loan and equity reconciliations kept current through the year." },
-        { "title": "Sales tax filing", "text": "Sales tax returns prepared and filed on the schedule your business is on." },
-        { "title": "Industry specific features", "text": "Job costing, time and billing, DCAA reports for government contractors, and fund accounting for homeowners associations and condos." },
-        { "title": "Payroll and entity administration", "text": "Separate services available upon request alongside the bookkeeping work." }
+        {
+          "title": "Transactions and bill payments",
+          "text": "Recording and categorizing transactions and processing bill payments as they come through."
+        },
+        {
+          "title": "Reconciliations",
+          "text": "Bank, loan and equity reconciliations kept current through the year."
+        },
+        {
+          "title": "Sales tax filing",
+          "text": "Sales tax returns prepared and filed on the schedule your business is on."
+        },
+        {
+          "title": "Industry specific features",
+          "text": "Job costing, time and billing, DCAA reports for government contractors, and fund accounting for homeowners associations and condos."
+        },
+        {
+          "title": "Payroll and entity administration",
+          "text": "Separate services available upon request alongside the bookkeeping work."
+        }
       ]
     },
     {
@@ -117,10 +174,22 @@
       "text": "Audit, review, compilation and agreed upon procedures are part of assurance or attestation services, and are often required to be performed by an independent Certified Public Accountant.",
       "lead": "Audit, review, compilation, or agreed upon procedures are part of assurance services or attestation services. These services are often required to be performed by an independent Certified Public Accountant. Assurance engagements can be time consuming, so the sooner you contact us, the better.",
       "covers": [
-        { "title": "Audit", "text": "A full assurance engagement performed by an independent Certified Public Accountant." },
-        { "title": "Review and compilation", "text": "Lighter forms of assurance where a full audit is not what the lender or board asks for." },
-        { "title": "Agreed upon procedures", "text": "Specific procedures carried out and reported on where only part of the picture is in question." },
-        { "title": "A plan before the work starts", "text": "We work with you to understand your current needs, expectations and systems, and tailor our approach to develop a plan for an efficient engagement." }
+        {
+          "title": "Audit",
+          "text": "A full assurance engagement performed by an independent Certified Public Accountant."
+        },
+        {
+          "title": "Review and compilation",
+          "text": "Lighter forms of assurance where a full audit is not what the lender or board asks for."
+        },
+        {
+          "title": "Agreed upon procedures",
+          "text": "Specific procedures carried out and reported on where only part of the picture is in question."
+        },
+        {
+          "title": "A plan before the work starts",
+          "text": "We work with you to understand your current needs, expectations and systems, and tailor our approach to develop a plan for an efficient engagement."
+        }
       ]
     },
     {
@@ -132,11 +201,26 @@
       "text": "Part-time CFO services generally include financial reporting, budgeting, developing financial strategy, financial forecast and interpreting financial reports for essential business decisions.",
       "lead": "Part-time CFO services generally include financial reporting, budgeting, developing financial strategy, financial forecast, and interpreting financial reports for essential business decisions.",
       "covers": [
-        { "title": "Reporting and budgeting", "text": "Financial reporting, budgeting and forecasting, with the reports interpreted for the decisions in front of you." },
-        { "title": "Financial strategy", "text": "Developing the financial strategy the business is going to run on." },
-        { "title": "Lenders and investors", "text": "Serving as liaison with potential lenders, investors and other outside financing sources." },
-        { "title": "Capital and cash flow", "text": "Assisting in structuring capital that is ideal for your organization, and cash flow management." },
-        { "title": "Mergers and acquisitions", "text": "Facilitating mergers and acquisitions alongside the rest of the finance function." }
+        {
+          "title": "Reporting and budgeting",
+          "text": "Financial reporting, budgeting and forecasting, with the reports interpreted for the decisions in front of you."
+        },
+        {
+          "title": "Financial strategy",
+          "text": "Developing the financial strategy the business is going to run on."
+        },
+        {
+          "title": "Lenders and investors",
+          "text": "Serving as liaison with potential lenders, investors and other outside financing sources."
+        },
+        {
+          "title": "Capital and cash flow",
+          "text": "Assisting in structuring capital that is ideal for your organization, and cash flow management."
+        },
+        {
+          "title": "Mergers and acquisitions",
+          "text": "Facilitating mergers and acquisitions alongside the rest of the finance function."
+        }
       ]
     },
     {
@@ -148,10 +232,22 @@
       "text": "Research and Development tax credits can be used to lower federal and state income tax liabilities or offset a portion of payroll taxes.",
       "lead": "Research and Development (R&D) tax credits can be used to lower federal and state income tax liabilities or offset a portion of payroll taxes.",
       "covers": [
-        { "title": "Wages", "text": "Wages paid for qualified research and development activities may count as a qualified expense." },
-        { "title": "Material costs", "text": "Materials consumed in qualified research and development activities may count as a qualified expense." },
-        { "title": "Contractor payments", "text": "Payments to contractors for qualified research and development work may count as a qualified expense." },
-        { "title": "Qualified education institutions", "text": "Payments to qualified education institutions may count as a qualified expense." }
+        {
+          "title": "Wages",
+          "text": "Wages paid for qualified research and development activities may count as a qualified expense."
+        },
+        {
+          "title": "Material costs",
+          "text": "Materials consumed in qualified research and development activities may count as a qualified expense."
+        },
+        {
+          "title": "Contractor payments",
+          "text": "Payments to contractors for qualified research and development work may count as a qualified expense."
+        },
+        {
+          "title": "Qualified education institutions",
+          "text": "Payments to qualified education institutions may count as a qualified expense."
+        }
       ]
     },
     {
@@ -163,9 +259,18 @@
       "text": "The Employee Retention Tax Credit was designed to help employers whose operations were suspended by a government order due to COVID-19, or who had a significant decline in gross receipts.",
       "lead": "Employee Retention Tax Credit (ERC) was designed to help employers whose operations were suspended, either partially or fully, by a government order due to COVID-19, OR had a significant decline in gross receipts, OR began carrying on business after February 15, 2020.",
       "covers": [
-        { "title": "2020 credit", "text": "ERC provides up to $5,000 per employee, per year for 2020." },
-        { "title": "2021 credit", "text": "ERC provides up to $7,000 per employee, per quarter for the first three quarters of 2021." },
-        { "title": "Eligibility", "text": "Whether your business is a stand-alone business or part of a group, a member firm can help you determine your eligibility for the ERC." }
+        {
+          "title": "2020 credit",
+          "text": "ERC provides up to $5,000 per employee, per year for 2020."
+        },
+        {
+          "title": "2021 credit",
+          "text": "ERC provides up to $7,000 per employee, per quarter for the first three quarters of 2021."
+        },
+        {
+          "title": "Eligibility",
+          "text": "Whether your business is a stand-alone business or part of a group, a member firm can help you determine your eligibility for the ERC."
+        }
       ]
     },
     {
@@ -177,10 +282,22 @@
       "text": "Business valuation services are often requested by business owners, attorneys and accountants to assist with exit strategy, retirement planning, estate planning or legal disputes.",
       "lead": "Business valuation services are often requested by business owners, attorneys, and accountants to assist with exit strategy, retirement planning, estate planning, or legal disputes including, but not limited to, marital dissolution, ownership changes, business sales, independent tax compliance and ESOP.",
       "covers": [
-        { "title": "Exit and retirement planning", "text": "A valuation to work from when an owner is planning an exit or a retirement." },
-        { "title": "Estate planning", "text": "A valuation for estate planning and the tax compliance that comes with it." },
-        { "title": "Legal disputes", "text": "Marital dissolution, ownership changes and business sales, including expert reports for litigation." },
-        { "title": "Financial reporting", "text": "Valuation work for M&A transactions, income tax and financial reporting purposes." }
+        {
+          "title": "Exit and retirement planning",
+          "text": "A valuation to work from when an owner is planning an exit or a retirement."
+        },
+        {
+          "title": "Estate planning",
+          "text": "A valuation for estate planning and the tax compliance that comes with it."
+        },
+        {
+          "title": "Legal disputes",
+          "text": "Marital dissolution, ownership changes and business sales, including expert reports for litigation."
+        },
+        {
+          "title": "Financial reporting",
+          "text": "Valuation work for M&A transactions, income tax and financial reporting purposes."
+        }
       ]
     },
     {
@@ -192,10 +309,22 @@
       "text": "If you plan to buy or sell a small business, our member firms can assist with due diligence, post-transaction integration and optimizing tax structure. This is not a brokerage service.",
       "lead": "If you plan to buy or sell a small business, contact us for M&A advisory services. Our M&A member firms can assist you with due diligence, post-transaction integration, and optimizing tax structure. This is not a brokerage service.",
       "covers": [
-        { "title": "Due diligence", "text": "Analyzing the financials so a buyer understands what is actually being bought." },
-        { "title": "Accounting and tax implications", "text": "Helping buyers understand the accounting and tax implications of the acquisition." },
-        { "title": "Post-transaction integration", "text": "Guidance for a smooth transition after closing, once the two businesses have to run as one." },
-        { "title": "Tax structure", "text": "Optimizing the tax structure of the transaction before it is signed." }
+        {
+          "title": "Due diligence",
+          "text": "Analyzing the financials so a buyer understands what is actually being bought."
+        },
+        {
+          "title": "Accounting and tax implications",
+          "text": "Helping buyers understand the accounting and tax implications of the acquisition."
+        },
+        {
+          "title": "Post-transaction integration",
+          "text": "Guidance for a smooth transition after closing, once the two businesses have to run as one."
+        },
+        {
+          "title": "Tax structure",
+          "text": "Optimizing the tax structure of the transaction before it is signed."
+        }
       ]
     },
     {
@@ -212,9 +341,18 @@
     "title": "How to find a provider",
     "text": "The provider directory is the starting point, and an email covers anything it does not list.",
     "steps": [
-      { "title": "Browse the directory", "text": "Look through the provider directory of current member firms." },
-      { "title": "Filter to what you need", "text": "Filter by your location, industry, revenue size and service specialty." },
-      { "title": "Or ask us", "text": "If the service you need is not listed, send an email or fill out the request form and we will find a service provider for you." }
+      {
+        "title": "Browse the directory",
+        "text": "Look through the provider directory of current member firms."
+      },
+      {
+        "title": "Filter to what you need",
+        "text": "Filter by your location, industry, revenue size and service specialty."
+      },
+      {
+        "title": "Or ask us",
+        "text": "If the service you need is not listed, send an email or fill out the request form and we will find a service provider for you."
+      }
     ]
   },
   "affiliations": {
@@ -238,9 +376,18 @@
     "image": "/brands/accountinginabox/about",
     "imageAlt": "A team meeting around a long table seen from above, with laptops and notebooks",
     "values": [
-      { "title": "A hub, not a single firm", "text": "An array of accounting and consulting services traditionally only available together at national or multi-national firms." },
-      { "title": "The agility of a smaller office", "text": "Member firms keep the agility, responsiveness and personalized services that are often seen at smaller firms." },
-      { "title": "Client-focused and reasonable fees", "text": "Our members are known for client-focused work and reasonable fees." }
+      {
+        "title": "A hub, not a single firm",
+        "text": "An array of accounting and consulting services traditionally only available together at national or multi-national firms."
+      },
+      {
+        "title": "The agility of a smaller office",
+        "text": "Member firms keep the agility, responsiveness and personalized services that are often seen at smaller firms."
+      },
+      {
+        "title": "Client-focused and reasonable fees",
+        "text": "Our members are known for client-focused work and reasonable fees."
+      }
     ]
   },
   "faqs": [
@@ -280,7 +427,11 @@
       "href": "https://www.irs.gov/payments"
     }
   ],
-  "serviceArea": ["Houston", "Austin", "Dallas"],
+  "serviceArea": [
+    "Houston",
+    "Austin",
+    "Dallas"
+  ],
   "facts": [
     {
       "heading": "Who we serve",
@@ -313,7 +464,12 @@
     },
     {
       "heading": "Revenue sizes in the directory",
-      "items": ["Under $10M", "$10M – $50M", "$50M – $200M", "Over $200M"]
+      "items": [
+        "Under $10M",
+        "$10M – $50M",
+        "$50M – $200M",
+        "Over $200M"
+      ]
     },
     {
       "heading": "Member firms",
@@ -354,7 +510,10 @@
     },
     {
       "heading": "Find us online",
-      "items": ["facebook.com/accountinginabox", "linkedin.com/company/accounting-in-a-box"]
+      "items": [
+        "facebook.com/accountinginabox",
+        "linkedin.com/company/accounting-in-a-box"
+      ]
     },
     {
       "heading": "Joining the network",

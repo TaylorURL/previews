@@ -11,7 +11,12 @@
   "state": "TX",
   "zip": "77017",
   "since": 2006,
-  "hours": [["Monday – Sunday", "Open 24 hours"]],
+  "hours": [
+    [
+      "Monday – Sunday",
+      "Open 24 hours"
+    ]
+  ],
   "brand": {
     "primary": "#000462",
     "primaryDeep": "#000238",
@@ -24,15 +29,38 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
     "logo": "/brands/lumenselectric/logo.webp",
-    "logoWidth": 210
+    "logoMono": "/brands/lumenselectric/logo-mono.webp",
+    "logoWidth": 163,
+    "logoHeight": 48,
+    "logoRatio": 3.396,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.626,
+      0.582,
+      0.566,
+      0.561,
+      0.591,
+      0.645,
+      0.707,
+      0.774,
+      0.85,
+      0.927,
+      1.0
+    ]
   },
   "emergency": {
     "title": "24/7 emergency service",
     "text": "Electrical emergencies do not wait for a convenient time, so our licensed electricians are on call 24/7 and respond anywhere in the Houston area."
   },
   "licenses": [
-    { "label": "Eaton", "number": "Certified Electrical Contractor" },
-    { "label": "Lutron", "number": "PRO Residential" }
+    {
+      "label": "Eaton",
+      "number": "Certified Electrical Contractor"
+    },
+    {
+      "label": "Lutron",
+      "number": "PRO Residential"
+    }
   ],
   "financing": {
     "text": "Financing is available through GreenSky."
@@ -272,9 +300,18 @@
     "image": "/brands/lumenselectric/team",
     "imageAlt": "Two Lumens Electric service trucks with ladder racks parked on a job",
     "values": [
-      { "title": "On time", "text": "Your time is valuable, so we are committed to being on time to our appointments." },
-      { "title": "Knowledgeable", "text": "We take the time to fully understand what you are trying to accomplish, and offer advice when we see fit." },
-      { "title": "Up front pricing", "text": "Work starts only once you understand, in writing, the service we will provide and the total cost." }
+      {
+        "title": "On time",
+        "text": "Your time is valuable, so we are committed to being on time to our appointments."
+      },
+      {
+        "title": "Knowledgeable",
+        "text": "We take the time to fully understand what you are trying to accomplish, and offer advice when we see fit."
+      },
+      {
+        "title": "Up front pricing",
+        "text": "Work starts only once you understand, in writing, the service we will provide and the total cost."
+      }
     ]
   },
   "faqs": [

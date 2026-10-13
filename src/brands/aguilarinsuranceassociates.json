@@ -14,7 +14,20 @@
   "since": 2008,
   "rating": 4.8,
   "reviewCount": 91,
-  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "cta": {
     "label": "Get a Quote",
     "text": "Tell us what you need covered and we will come back to you with a quote and more information."
@@ -32,7 +45,24 @@
     "body": "'Roboto', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap",
     "logo": "/brands/aguilarinsuranceassociates/logo.webp",
-    "logoWidth": 170
+    "logoMono": "/brands/aguilarinsuranceassociates/logo-mono.webp",
+    "logoWidth": 89,
+    "logoHeight": 74,
+    "logoRatio": 1.203,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.453,
+      0.443,
+      0.466,
+      0.486,
+      0.498,
+      0.504,
+      0.513,
+      0.562,
+      0.681,
+      0.837,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Independent insurance broker in Houston",
@@ -40,13 +70,20 @@
     "lead": "As a fully independent insurance broker, we can help you find the most cost-effective and comprehensive auto, home, and commercial insurance coverage on the market. We work with a variety of insurance companies to help you get the best fitting and most affordable plan, no matter your situation.",
     "image": "/brands/aguilarinsuranceassociates/hero",
     "imageAlt": "An insurance agent going through policy options with a couple at a desk",
-    "points": ["Fully independent broker", "Se habla español", "Family owned since 2008"]
+    "points": [
+      "Fully independent broker",
+      "Se habla español",
+      "Family owned since 2008"
+    ]
   },
   "overview": {
     "title": "We offer knowledge, service, and experience.",
     "text": "Pick a line of coverage to see what it includes, or call and talk it through with an agent."
   },
-  "audiences": { "individuals": "Individuals & Families", "businesses": "Businesses" },
+  "audiences": {
+    "individuals": "Individuals & Families",
+    "businesses": "Businesses"
+  },
   "services": [
     {
       "slug": "auto",
@@ -59,17 +96,44 @@
       "image": "/brands/aguilarinsuranceassociates/auto",
       "imageAlt": "A small yellow car parked at the kerb on a residential street",
       "covers": [
-        { "title": "Collision coverage", "text": "Covers damage to your vehicle in the event of a collision with another vehicle or object." },
-        { "title": "Comprehensive coverage", "text": "Covers damage to your vehicle caused by events other than a collision, such as theft, fire, getting hit by a running deer, or vandalism." },
-        { "title": "Liability coverage", "text": "Covers any legal costs and damages you may be liable for if you cause an accident." },
-        { "title": "Medical payments coverage", "text": "Covers medical expenses for you and your passengers if you are involved in an accident." },
-        { "title": "Uninsured and underinsured motorist", "text": "Covers you if you are hit by an uninsured or underinsured driver." },
-        { "title": "Rental car coverage", "text": "Covers the cost of a rental car if your vehicle is damaged in an accident." }
+        {
+          "title": "Collision coverage",
+          "text": "Covers damage to your vehicle in the event of a collision with another vehicle or object."
+        },
+        {
+          "title": "Comprehensive coverage",
+          "text": "Covers damage to your vehicle caused by events other than a collision, such as theft, fire, getting hit by a running deer, or vandalism."
+        },
+        {
+          "title": "Liability coverage",
+          "text": "Covers any legal costs and damages you may be liable for if you cause an accident."
+        },
+        {
+          "title": "Medical payments coverage",
+          "text": "Covers medical expenses for you and your passengers if you are involved in an accident."
+        },
+        {
+          "title": "Uninsured and underinsured motorist",
+          "text": "Covers you if you are hit by an uninsured or underinsured driver."
+        },
+        {
+          "title": "Rental car coverage",
+          "text": "Covers the cost of a rental car if your vehicle is damaged in an accident."
+        }
       ],
       "questions": [
-        { "q": "How much auto liability does Texas require?", "a": "According to state law, Texas drivers need minimum coverage of $30,000 per injured person, up to at least $60,000 per accident, and coverage for property damage of at least $25,000." },
-        { "q": "What is personal injury protection?", "a": "It covers medical expenses, lost wages, and other costs associated with an injury sustained in an accident. We can quote it alongside the rest of your policy." },
-        { "q": "Will you push me into coverage I do not need?", "a": "No. We will help you navigate what you need and what you do not, and plans can be tailored to your vehicles and lifestyle." }
+        {
+          "q": "How much auto liability does Texas require?",
+          "a": "According to state law, Texas drivers need minimum coverage of $30,000 per injured person, up to at least $60,000 per accident, and coverage for property damage of at least $25,000."
+        },
+        {
+          "q": "What is personal injury protection?",
+          "a": "It covers medical expenses, lost wages, and other costs associated with an injury sustained in an accident. We can quote it alongside the rest of your policy."
+        },
+        {
+          "q": "Will you push me into coverage I do not need?",
+          "a": "No. We will help you navigate what you need and what you do not, and plans can be tailored to your vehicles and lifestyle."
+        }
       ]
     },
     {
@@ -83,16 +147,40 @@
       "image": "/brands/aguilarinsuranceassociates/home",
       "imageAlt": "A bright kitchen with a central island in a family home",
       "covers": [
-        { "title": "Dwelling coverage", "text": "Covers damage to the physical structure of the home and usually attached garages, detached garages, and sheds. Small farms and properties with larger out-buildings and more acreage may need a farmowners policy instead." },
-        { "title": "Personal property coverage", "text": "Covers the cost of replacing personal belongings that are damaged or stolen, including vehicles and property in garages or sheds." },
-        { "title": "Liability coverage", "text": "Covers liability for accidents or injuries that occur on the property and involve other people or other people's property." },
-        { "title": "Additional living expenses", "text": "Covers the cost of additional living expenses incurred due to a covered loss, when the home is damaged to the point you cannot live there for a time." }
+        {
+          "title": "Dwelling coverage",
+          "text": "Covers damage to the physical structure of the home and usually attached garages, detached garages, and sheds. Small farms and properties with larger out-buildings and more acreage may need a farmowners policy instead."
+        },
+        {
+          "title": "Personal property coverage",
+          "text": "Covers the cost of replacing personal belongings that are damaged or stolen, including vehicles and property in garages or sheds."
+        },
+        {
+          "title": "Liability coverage",
+          "text": "Covers liability for accidents or injuries that occur on the property and involve other people or other people's property."
+        },
+        {
+          "title": "Additional living expenses",
+          "text": "Covers the cost of additional living expenses incurred due to a covered loss, when the home is damaged to the point you cannot live there for a time."
+        }
       ],
       "questions": [
-        { "q": "What does a homeowners policy usually cover?", "a": "Policies typically cover damage or loss caused by fire, lightning, windstorms, hail, and other natural disasters, and a good plan can also cover theft, vandalism, and other types of unexpected losses." },
-        { "q": "Can you write a policy for a rental property?", "a": "Yes. We can help you get a policy for your home, your rental, or other property." },
-        { "q": "Why go through an independent broker for home insurance?", "a": "We are not tied to any particular insurance company, so we shop around for the best prices and coverage, and we can offer a wide range of products to fit your needs." },
-        { "q": "Do I need homeowners insurance if I have a mortgage?", "a": "Mortgage providers require homeowners insurance, and there is a good reason for it: a home is the biggest investment most people have." }
+        {
+          "q": "What does a homeowners policy usually cover?",
+          "a": "Policies typically cover damage or loss caused by fire, lightning, windstorms, hail, and other natural disasters, and a good plan can also cover theft, vandalism, and other types of unexpected losses."
+        },
+        {
+          "q": "Can you write a policy for a rental property?",
+          "a": "Yes. We can help you get a policy for your home, your rental, or other property."
+        },
+        {
+          "q": "Why go through an independent broker for home insurance?",
+          "a": "We are not tied to any particular insurance company, so we shop around for the best prices and coverage, and we can offer a wide range of products to fit your needs."
+        },
+        {
+          "q": "Do I need homeowners insurance if I have a mortgage?",
+          "a": "Mortgage providers require homeowners insurance, and there is a good reason for it: a home is the biggest investment most people have."
+        }
       ]
     },
     {
@@ -106,12 +194,24 @@
       "image": "/brands/aguilarinsuranceassociates/life",
       "imageAlt": "A family walking together along a tree-lined street",
       "covers": [
-        { "title": "Term life", "text": "Coverage for a set number of years, often matched to the years your family depends on your income." },
-        { "title": "Whole life", "text": "Permanent coverage that stays in force for life and builds value over time." },
-        { "title": "Universal life", "text": "Permanent coverage with flexibility in the premium and the death benefit as your circumstances change." }
+        {
+          "title": "Term life",
+          "text": "Coverage for a set number of years, often matched to the years your family depends on your income."
+        },
+        {
+          "title": "Whole life",
+          "text": "Permanent coverage that stays in force for life and builds value over time."
+        },
+        {
+          "title": "Universal life",
+          "text": "Permanent coverage with flexibility in the premium and the death benefit as your circumstances change."
+        }
       ],
       "questions": [
-        { "q": "How do I know how much coverage I need?", "a": "We offer a one-on-one advising approach, so we work through it with you rather than handing you a number." }
+        {
+          "q": "How do I know how much coverage I need?",
+          "a": "We offer a one-on-one advising approach, so we work through it with you rather than handing you a number."
+        }
       ]
     },
     {
@@ -123,7 +223,10 @@
       "text": "Mexico insurance is one of the lines we write. Call the office and an agent will go through what you need.",
       "lead": "Mexico insurance is one of the lines we write for our clients. Call, email, or stop by the office on Wallisville Road and an agent will go through what you need and what it costs.",
       "questions": [
-        { "q": "How do I get a quote for Mexico insurance?", "a": "Call, email, or stop by. We will talk through what you need, shop it with our carriers, and come back to you with your options." }
+        {
+          "q": "How do I get a quote for Mexico insurance?",
+          "a": "Call, email, or stop by. We will talk through what you need, shop it with our carriers, and come back to you with your options."
+        }
       ]
     },
     {
@@ -137,18 +240,48 @@
       "image": "/brands/aguilarinsuranceassociates/commercial",
       "imageAlt": "A small team working together around a laptop in an office",
       "covers": [
-        { "title": "General liability", "text": "Protection against claims that arise in the course of normal business operations, including the cost of legal fees and damages." },
-        { "title": "Business owners policy", "text": "A package that brings the core coverages a small business needs together in one policy." },
-        { "title": "Commercial property", "text": "Your building, equipment and inventory against damage and theft, including natural disaster and fire damage." },
-        { "title": "Commercial auto", "text": "Liability and damage coverage for the vehicles your business runs on." },
-        { "title": "Workers compensation", "text": "Coverage for employee injuries that happen on the job." },
-        { "title": "Cyber and professional liability", "text": "Cyber liability, professional liability, product liability and errors and omissions, for the risks that do not show up on a balance sheet." }
+        {
+          "title": "General liability",
+          "text": "Protection against claims that arise in the course of normal business operations, including the cost of legal fees and damages."
+        },
+        {
+          "title": "Business owners policy",
+          "text": "A package that brings the core coverages a small business needs together in one policy."
+        },
+        {
+          "title": "Commercial property",
+          "text": "Your building, equipment and inventory against damage and theft, including natural disaster and fire damage."
+        },
+        {
+          "title": "Commercial auto",
+          "text": "Liability and damage coverage for the vehicles your business runs on."
+        },
+        {
+          "title": "Workers compensation",
+          "text": "Coverage for employee injuries that happen on the job."
+        },
+        {
+          "title": "Cyber and professional liability",
+          "text": "Cyber liability, professional liability, product liability and errors and omissions, for the risks that do not show up on a balance sheet."
+        }
       ],
       "questions": [
-        { "q": "How quickly can my business be covered?", "a": "Within days, we can have most businesses fully insured and ready for anything." },
-        { "q": "Is my business too small for a commercial policy?", "a": "No matter how complex or simple your business, from a 30-person accounting firm to a one-person landscaping company, we can help you protect what matters most: your family and your income." },
-        { "q": "What does commercial insurance protect against?", "a": "It helps mitigate the financial risks of running a business, such as lawsuits, property damage, and employee injuries, and it can be built to cover loss of income due to natural disasters or other unexpected events." },
-        { "q": "Does a commercial policy cover lost income?", "a": "Commercial policies may also cover loss of income and profits, as well as business interruption, and in the case of a lawsuit they can cover the cost of legal fees and damages." }
+        {
+          "q": "How quickly can my business be covered?",
+          "a": "Within days, we can have most businesses fully insured and ready for anything."
+        },
+        {
+          "q": "Is my business too small for a commercial policy?",
+          "a": "No matter how complex or simple your business, from a 30-person accounting firm to a one-person landscaping company, we can help you protect what matters most: your family and your income."
+        },
+        {
+          "q": "What does commercial insurance protect against?",
+          "a": "It helps mitigate the financial risks of running a business, such as lawsuits, property damage, and employee injuries, and it can be built to cover loss of income due to natural disasters or other unexpected events."
+        },
+        {
+          "q": "Does a commercial policy cover lost income?",
+          "a": "Commercial policies may also cover loss of income and profits, as well as business interruption, and in the case of a lawsuit they can cover the cost of legal fees and damages."
+        }
       ]
     },
     {
@@ -162,8 +295,14 @@
       "image": "/brands/aguilarinsuranceassociates/commercial-auto",
       "imageAlt": "A driver at the wheel of a vehicle, seen from the passenger side",
       "questions": [
-        { "q": "Why insure a work vehicle commercially?", "a": "A vehicle collision could create untold liabilities if someone else is injured. Commercial coverage is built for the way the vehicle is actually used." },
-        { "q": "Can you cover more than one vehicle?", "a": "Yes. Call, email, or stop by and we will put together coverage around how your business operates." }
+        {
+          "q": "Why insure a work vehicle commercially?",
+          "a": "A vehicle collision could create untold liabilities if someone else is injured. Commercial coverage is built for the way the vehicle is actually used."
+        },
+        {
+          "q": "Can you cover more than one vehicle?",
+          "a": "Yes. Call, email, or stop by and we will put together coverage around how your business operates."
+        }
       ]
     }
   ],
@@ -171,9 +310,18 @@
     "title": "How it works",
     "text": "The same three steps whether you are insuring one car or a whole business.",
     "steps": [
-      { "title": "Call, email, or stop by", "text": "Schedule an appointment, call us directly, or stop by the office to discuss your options." },
-      { "title": "Get a quote", "text": "We will help you understand your liabilities and risks, then come up with coverage that makes sense for your goals. We get a variety of quotes from the carriers and present your options." },
-      { "title": "Get great coverage", "text": "You get covered. Within days, we can have most businesses fully insured and ready for anything." }
+      {
+        "title": "Call, email, or stop by",
+        "text": "Schedule an appointment, call us directly, or stop by the office to discuss your options."
+      },
+      {
+        "title": "Get a quote",
+        "text": "We will help you understand your liabilities and risks, then come up with coverage that makes sense for your goals. We get a variety of quotes from the carriers and present your options."
+      },
+      {
+        "title": "Get great coverage",
+        "text": "You get covered. Within days, we can have most businesses fully insured and ready for anything."
+      }
     ]
   },
   "about": {
@@ -186,25 +334,63 @@
     "image": "/brands/aguilarinsuranceassociates/about",
     "imageAlt": "Two people shaking hands across a desk after a meeting",
     "values": [
-      { "title": "More competitive rates", "text": "We are not tied to any particular insurance company, which allows us to shop around for the best prices and coverage for our customers." },
-      { "title": "Personalized service", "text": "We are not tied to a large corporate structure, so we can give tailored coverage and advice from our familia to yours." },
-      { "title": "Choice of products", "text": "A wide range of products to meet the unique needs of our customers, so you get the right coverage: nothing more and nothing less." },
-      { "title": "Expertise", "text": "Years in the industry mean we have seen many types of damage and liability come up, and we have the expertise to get you just what you need." }
+      {
+        "title": "More competitive rates",
+        "text": "We are not tied to any particular insurance company, which allows us to shop around for the best prices and coverage for our customers."
+      },
+      {
+        "title": "Personalized service",
+        "text": "We are not tied to a large corporate structure, so we can give tailored coverage and advice from our familia to yours."
+      },
+      {
+        "title": "Choice of products",
+        "text": "A wide range of products to meet the unique needs of our customers, so you get the right coverage: nothing more and nothing less."
+      },
+      {
+        "title": "Expertise",
+        "text": "Years in the industry mean we have seen many types of damage and liability come up, and we have the expertise to get you just what you need."
+      }
     ]
   },
   "team": [
-    { "name": "Manuel Aguilar", "role": "Co-founder" },
-    { "name": "Griselda Aguilar", "role": "Co-founder" }
+    {
+      "name": "Manuel Aguilar",
+      "role": "Co-founder"
+    },
+    {
+      "name": "Griselda Aguilar",
+      "role": "Co-founder"
+    }
   ],
   "faqs": [
-    { "q": "What does being a fully independent broker mean?", "a": "We work with a variety of insurance companies rather than one, so we can shop your coverage around and find the best fitting and most affordable plan." },
-    { "q": "Do you speak Spanish?", "a": "Se habla español." },
-    { "q": "Is auto insurance required in Texas?", "a": "Yes. Without auto insurance, state law prohibits you from driving a car on public roads, and the state mandates the coverage amounts." },
-    { "q": "How do I renew a policy?", "a": "There is a policy renewal form on our site, or call the office on (281) 915-3008 and we will take care of it with you." },
-    { "q": "Can you text me about my policy?", "a": "Yes, once you opt in through our text message consent form. Carrier message and data rates may apply, up to 10 messages a month, reply HELP for help or STOP to opt out, and consent is not required as a condition of buying anything." },
-    { "q": "What does a quote cost?", "a": "Nothing. Call, email, or stop by, and we will come back to you with a quote and more information." }
+    {
+      "q": "What does being a fully independent broker mean?",
+      "a": "We work with a variety of insurance companies rather than one, so we can shop your coverage around and find the best fitting and most affordable plan."
+    },
+    {
+      "q": "Do you speak Spanish?",
+      "a": "Se habla español."
+    },
+    {
+      "q": "Is auto insurance required in Texas?",
+      "a": "Yes. Without auto insurance, state law prohibits you from driving a car on public roads, and the state mandates the coverage amounts."
+    },
+    {
+      "q": "How do I renew a policy?",
+      "a": "There is a policy renewal form on our site, or call the office on (281) 915-3008 and we will take care of it with you."
+    },
+    {
+      "q": "Can you text me about my policy?",
+      "a": "Yes, once you opt in through our text message consent form. Carrier message and data rates may apply, up to 10 messages a month, reply HELP for help or STOP to opt out, and consent is not required as a condition of buying anything."
+    },
+    {
+      "q": "What does a quote cost?",
+      "a": "Nothing. Call, email, or stop by, and we will come back to you with a quote and more information."
+    }
   ],
-  "serviceArea": ["Houston"],
+  "serviceArea": [
+    "Houston"
+  ],
   "facts": [
     {
       "heading": "Se habla español",
@@ -239,7 +425,10 @@
     },
     {
       "heading": "Office hours",
-      "items": ["Monday to Friday, 9 AM to 5 PM", "Saturday and Sunday, closed"]
+      "items": [
+        "Monday to Friday, 9 AM to 5 PM",
+        "Saturday and Sunday, closed"
+      ]
     },
     {
       "heading": "Other coverage we can quote",

@@ -13,7 +13,20 @@
   "state": "TX",
   "zip": "77573",
   "license": "Licensed CPA, licensed residential loan officer (NMLS # 1166198) and licensed life and health insurance agent.",
-  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "cta": {
     "label": "Book Today",
     "text": "Call (713) 909-0103 or email Linh to set a time at the League City office or over Zoom."
@@ -31,7 +44,24 @@
     "body": "'Cabin', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&family=Cabin:wght@400;500;600;700&display=swap",
     "logo": "/brands/tranbusinesscpa/logo.webp",
-    "logoWidth": 120
+    "logoMono": "/brands/tranbusinesscpa/logo-mono.webp",
+    "logoWidth": 74,
+    "logoHeight": 74,
+    "logoRatio": 0.993,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.099,
+      0.141,
+      0.222,
+      0.303,
+      0.389,
+      0.48,
+      0.58,
+      0.683,
+      0.789,
+      0.899,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "CPA in League City",
@@ -39,13 +69,20 @@
     "lead": "At Tran Business Services, your success is our mission. We are dedicated to being your long term partner and helping you grow in your business endeavors.",
     "image": "/brands/tranbusinesscpa/hero",
     "imageAlt": "Linh Tran, CPA, of Tran Business Services",
-    "points": ["Medical practice startup services", "Financial and accounting support", "Tax planning"]
+    "points": [
+      "Medical practice startup services",
+      "Financial and accounting support",
+      "Tax planning"
+    ]
   },
   "overview": {
     "title": "Tax, accounting, lending and insurance, handled in one office.",
     "text": "Pick a service to see what it covers, or call and talk it through with Linh."
   },
-  "audiences": { "individuals": "Individuals", "businesses": "Businesses" },
+  "audiences": {
+    "individuals": "Individuals",
+    "businesses": "Businesses"
+  },
   "services": [
     {
       "slug": "tax-preparation",
@@ -56,9 +93,18 @@
       "text": "Personal tax returns prepared by a licensed CPA, with the legally required documentation put together alongside them.",
       "lead": "Your return is prepared by a licensed CPA who also handles the planning behind it, so the year being filed and the year ahead are looked at together.",
       "covers": [
-        { "title": "Personal returns", "text": "Returns for individuals and families, prepared and filed by a licensed CPA." },
-        { "title": "Tax planning", "text": "Looking at the year ahead rather than only at the return in front of you." },
-        { "title": "Required documentation", "text": "The records and schedules a return has to carry, assembled before it is filed." }
+        {
+          "title": "Personal returns",
+          "text": "Returns for individuals and families, prepared and filed by a licensed CPA."
+        },
+        {
+          "title": "Tax planning",
+          "text": "Looking at the year ahead rather than only at the return in front of you."
+        },
+        {
+          "title": "Required documentation",
+          "text": "The records and schedules a return has to carry, assembled before it is filed."
+        }
       ]
     },
     {
@@ -70,9 +116,18 @@
       "text": "Linh is a licensed residential loan officer, NMLS # 1166198, handling FHA loans, conventional loans and mortgage brokerage assistance.",
       "lead": "Lending sits in the same office as the accounting, so the figures on your return and the figures a lender asks for are put together by the same person.",
       "covers": [
-        { "title": "FHA loans", "text": "Residential FHA financing, arranged by a licensed loan officer." },
-        { "title": "Conventional loans", "text": "Conventional residential financing for a purchase or a refinance." },
-        { "title": "Mortgage brokerage assistance", "text": "Help working through a mortgage brokerage application and the paperwork behind it." }
+        {
+          "title": "FHA loans",
+          "text": "Residential FHA financing, arranged by a licensed loan officer."
+        },
+        {
+          "title": "Conventional loans",
+          "text": "Conventional residential financing for a purchase or a refinance."
+        },
+        {
+          "title": "Mortgage brokerage assistance",
+          "text": "Help working through a mortgage brokerage application and the paperwork behind it."
+        }
       ]
     },
     {
@@ -84,8 +139,14 @@
       "text": "Linh is a licensed life and health insurance agent, so cover can be arranged alongside the tax and accounting work rather than somewhere else.",
       "lead": "Life and health cover placed by a licensed agent who already knows your financial picture, so the two are decided together.",
       "covers": [
-        { "title": "Life insurance", "text": "Life cover placed by a licensed life and health insurance agent." },
-        { "title": "Health insurance", "text": "Health cover placed through the same office that handles your accounting." }
+        {
+          "title": "Life insurance",
+          "text": "Life cover placed by a licensed life and health insurance agent."
+        },
+        {
+          "title": "Health insurance",
+          "text": "Health cover placed through the same office that handles your accounting."
+        }
       ]
     },
     {
@@ -97,9 +158,18 @@
       "text": "Business tax returns, knowledgeable audit preparation and the legally required documentation, handled by a licensed CPA.",
       "lead": "Business returns and the records behind them, prepared by a licensed CPA with real world experience in quantitative and statistical analysis, budgeting, forecasting and auditing.",
       "covers": [
-        { "title": "Business returns", "text": "Tax returns for the business, prepared and filed by a licensed CPA." },
-        { "title": "Audit preparation", "text": "Getting the books and the supporting records ready before an audit begins." },
-        { "title": "Required documentation", "text": "The documentation the law requires a business to hold and produce." }
+        {
+          "title": "Business returns",
+          "text": "Tax returns for the business, prepared and filed by a licensed CPA."
+        },
+        {
+          "title": "Audit preparation",
+          "text": "Getting the books and the supporting records ready before an audit begins."
+        },
+        {
+          "title": "Required documentation",
+          "text": "The documentation the law requires a business to hold and produce."
+        }
       ]
     },
     {
@@ -111,10 +181,22 @@
       "text": "Accounting and bookkeeping with financial reporting and advice that supports growth and helps directors make informed decisions.",
       "lead": "The books kept month to month, and reporting that tells the directors what the numbers actually mean before the next decision is taken.",
       "covers": [
-        { "title": "Bookkeeping", "text": "The day to day books kept current, so nothing is reconstructed at year end." },
-        { "title": "Financial reporting", "text": "Reporting drawn from the books rather than assembled once a year." },
-        { "title": "Advice for directors", "text": "Reporting and advice to support growth and help directors make informed decisions." },
-        { "title": "Budgeting and forecasting", "text": "Budgets and forecasts built on quantitative and statistical analysis." }
+        {
+          "title": "Bookkeeping",
+          "text": "The day to day books kept current, so nothing is reconstructed at year end."
+        },
+        {
+          "title": "Financial reporting",
+          "text": "Reporting drawn from the books rather than assembled once a year."
+        },
+        {
+          "title": "Advice for directors",
+          "text": "Reporting and advice to support growth and help directors make informed decisions."
+        },
+        {
+          "title": "Budgeting and forecasting",
+          "text": "Budgets and forecasts built on quantitative and statistical analysis."
+        }
       ]
     },
     {
@@ -126,8 +208,14 @@
       "text": "Grant accounting and management, including the reporting a funded program has to produce for whoever is funding it.",
       "lead": "Grant money is accounted for separately and reported on terms somebody else sets. This is the bookkeeping and the reporting that keeps a funded program in good standing.",
       "covers": [
-        { "title": "Grant accounting", "text": "Grant funds tracked apart from the rest of the books." },
-        { "title": "Grant management", "text": "The reporting and the records a grant carries with it." }
+        {
+          "title": "Grant accounting",
+          "text": "Grant funds tracked apart from the rest of the books."
+        },
+        {
+          "title": "Grant management",
+          "text": "The reporting and the records a grant carries with it."
+        }
       ]
     },
     {
@@ -139,10 +227,22 @@
       "text": "Medical practice startup services and practice development, with the financial and accounting support a new practice needs behind it.",
       "lead": "Planning a practice from startup through to growth, with the accounting, the reporting and the tax planning set up at the beginning rather than bolted on later.",
       "covers": [
-        { "title": "Practice startup", "text": "Planning the practice from startup to growth." },
-        { "title": "Practice development", "text": "Working on the practice once it is open and seeing patients." },
-        { "title": "Financial and accounting support", "text": "The books, the reporting and the advice behind the practice." },
-        { "title": "Tax planning", "text": "The tax position of the practice looked at ahead of the filing." }
+        {
+          "title": "Practice startup",
+          "text": "Planning the practice from startup to growth."
+        },
+        {
+          "title": "Practice development",
+          "text": "Working on the practice once it is open and seeing patients."
+        },
+        {
+          "title": "Financial and accounting support",
+          "text": "The books, the reporting and the advice behind the practice."
+        },
+        {
+          "title": "Tax planning",
+          "text": "The tax position of the practice looked at ahead of the filing."
+        }
       ]
     },
     {
@@ -157,7 +257,14 @@
   ],
   "affiliations": {
     "title": "Credentials and memberships",
-    "items": ["CPA", "CMPE", "CHA", "CIFHA", "MS", "NMLS # 1166198"]
+    "items": [
+      "CPA",
+      "CMPE",
+      "CHA",
+      "CIFHA",
+      "MS",
+      "NMLS # 1166198"
+    ]
   },
   "about": {
     "title": "Serving the Houston community from League City.",
@@ -167,9 +274,18 @@
       "Our accounting service has been serving the Houston community for the last several years. Our expert CPA services and dedicated support are here to provide sound personal and professional financial services."
     ],
     "values": [
-      { "title": "A long term partner", "text": "Your success is our mission, and we are dedicated to being your long term partner as you grow." },
-      { "title": "Several licenses, one office", "text": "CPA, residential loan officer and life and health insurance agent, so the tax, the lending and the cover are not three separate conversations." },
-      { "title": "In person or over Zoom", "text": "Come to the office on Gulf Freeway, or meet virtually over Zoom when that is quicker." }
+      {
+        "title": "A long term partner",
+        "text": "Your success is our mission, and we are dedicated to being your long term partner as you grow."
+      },
+      {
+        "title": "Several licenses, one office",
+        "text": "CPA, residential loan officer and life and health insurance agent, so the tax, the lending and the cover are not three separate conversations."
+      },
+      {
+        "title": "In person or over Zoom",
+        "text": "Come to the office on Gulf Freeway, or meet virtually over Zoom when that is quicker."
+      }
     ]
   },
   "team": [
@@ -181,7 +297,10 @@
       "imageAlt": "Linh Tran, CPA"
     }
   ],
-  "serviceArea": ["League City", "Houston"],
+  "serviceArea": [
+    "League City",
+    "Houston"
+  ],
   "facts": [
     {
       "heading": "Licenses held",
@@ -205,11 +324,17 @@
     },
     {
       "heading": "Partner offering",
-      "items": ["Americare Concierge, powered by MyCHN", "americare.health"]
+      "items": [
+        "Americare Concierge, powered by MyCHN",
+        "americare.health"
+      ]
     },
     {
       "heading": "Find us online",
-      "items": ["facebook.com/106040174362480", "linkedin.com/in/linhtrancpa"]
+      "items": [
+        "facebook.com/106040174362480",
+        "linkedin.com/in/linhtrancpa"
+      ]
     }
   ]
 }

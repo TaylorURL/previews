@@ -12,9 +12,18 @@
   "rating": 4.9,
   "reviewCount": 917,
   "hours": [
-    ["Mon – Fri", "6:00 am – 10:00 pm"],
-    ["Sat – Sun", "6:00 am – 6:00 pm"],
-    ["After hours", "24-hour answering available"]
+    [
+      "Mon – Fri",
+      "6:00 am – 10:00 pm"
+    ],
+    [
+      "Sat – Sun",
+      "6:00 am – 6:00 pm"
+    ],
+    [
+      "After hours",
+      "24-hour answering available"
+    ]
   ],
   "brand": {
     "primary": "#1193bd",
@@ -22,11 +31,28 @@
     "accent": "#f0921f",
     "ink": "#11222c",
     "surface": "#edf6fa",
-    "logo": "/brands/santanabros/logo.webp",
-    "logoWidth": 196,
     "heading": "'Archivo', 'Helvetica Neue', sans-serif",
     "body": "'Inter', system-ui, sans-serif",
-    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap",
+    "logo": "/brands/santanabros/logo.webp",
+    "logoMono": "/brands/santanabros/logo-mono.webp",
+    "logoWidth": 176,
+    "logoHeight": 48,
+    "logoRatio": 3.667,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.995,
+      0.985,
+      0.94,
+      0.849,
+      0.635,
+      0.393,
+      0.201,
+      0.245,
+      0.486,
+      0.749,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "24/7 emergency plumbing · Pearland, TX",

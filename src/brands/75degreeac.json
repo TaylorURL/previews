@@ -1,573 +1,599 @@
 {
- "template": "hvac",
- "preview": true,
- "name": "75 Degree AC",
- "shortName": "75 Degree AC",
- "summary": "Air conditioning, heating and full HVAC system service for homes and light commercial properties across Houston, TX, from a locally operated company founded in 2016.",
- "phone": "(713) 598-2737",
- "email": "info@75degreeac.com",
- "address": "4800 W 34th St, Ste C50F",
- "town": "Houston",
- "state": "TX",
- "zip": "77092",
- "rating": 5.0,
- "reviewCount": 261,
- "since": 2016,
- "hours": [
-  ["Mon – Fri", "7:00 AM – 9:00 PM"],
-  ["Saturday", "8:00 AM – 8:00 PM"],
-  ["Sunday", "8:00 AM – 5:00 PM"]
- ],
- "brand": {
-  "primary": "#1f4e9c",
-  "primaryDeep": "#15376f",
-  "accent": "#e23b32",
-  "ink": "#16202c",
-  "muted": "#53647a",
-  "surface": "#eef3fa",
-  "line": "#d5e0ed",
-  "heading": "'Montserrat', system-ui, sans-serif",
-  "body": "'Inter', system-ui, sans-serif",
-  "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
-  "logo": "/brands/75degreeac/logo.webp",
-  "logoWidth": 200
- },
- "emergency": {
-  "title": "24/7 emergency service",
-  "text": "Cooling and heating failures are answered around the clock, and urgent calls are prioritized over scheduled work."
- },
- "sameDay": "Calls received before 2 PM Monday to Saturday are dispatched the same day across Houston and the surrounding area, depending on call volume.",
- "licenses": [
-  {
-   "label": "TACLA Class A",
-   "number": "TACLA72152E"
-  },
-  {
-   "label": "EPA Section 608",
-   "number": "Universal certification"
-  }
- ],
- "financing": {
-  "text": "Financing on new system installations through several lenders, with payment plans and current promotions confirmed when you call."
- },
- "hero": {
-  "eyebrow": "HVAC contractor in Houston, TX",
-  "title": "Same-day AC repair, heating service and",
-  "titleAccent": "24/7 emergency response",
-  "lead": "When your house is stuck at 82 degrees on a July afternoon in Houston, you are not looking for a vague promise. You need someone who answers the phone, shows up the same day, diagnoses the real problem, and tells you the price before work starts.",
-  "image": "/brands/75degreeac/hero",
-  "imageAlt": "A newly installed outdoor air conditioning condenser beside a Houston home, with service gauges on the grass"
- },
- "groups": [
-  {
-   "slug": "cooling",
-   "title": "Cooling",
-   "icon": "snowflake",
-   "summary": "AC repair, installation, replacement and maintenance for systems that run most of the year.",
-   "intro": "Air conditioning systems in Houston run for extended hours, which makes correct sizing, airflow and component condition the things that decide whether a system lasts. Cooling work here covers diagnosis, repair, replacement and seasonal maintenance, with a written quote before anything is started. One thing worth knowing: the expensive-sounding symptom is not always the expensive repair, and every summer homeowners call panicking about a dead compressor when the real problem is a capacitor or a contactor.",
-   "image": "/brands/75degreeac/cooling",
-   "imageAlt": "A 75 Degree AC technician connecting service gauges at two outdoor condensers in a back garden",
-   "services": [
-    {
-     "slug": "emergency-ac-repair",
-     "title": "Emergency AC Repair",
-     "icon": "timer",
-     "text": "When the AC stops cooling in Houston heat, response time matters more than anything else. Emergency calls are answered around the clock and prioritized ahead of scheduled work.",
-     "points": [
-      "Answered 24 hours a day",
-      "Urgent cooling failures prioritized whenever possible"
-     ]
-    },
-    {
-     "slug": "air-conditioning-repair",
-     "title": "Air Conditioning Repair",
-     "icon": "wrench",
-     "text": "A system that runs but will not cool is usually airflow restriction, low refrigerant, dirty coils or an electrical component struggling under heat load. The diagnosis comes before the price, and the price comes before the work.",
-     "points": [
-      "$89 flat diagnostic, waived when you approve the repair",
-      "Written quote before any work starts",
-      "Electrical testing, capacitor checks, airflow evaluation, thermostat verification, drain inspection and refrigerant analysis"
-     ]
-    },
-    {
-     "slug": "ac-compressor-repair",
-     "title": "AC Compressor Repair",
-     "icon": "settings",
-     "text": "Compressor and core component work on systems that have lost cooling capacity rather than lost power altogether.",
-     "points": []
-    },
-    {
-     "slug": "ac-leak-repair",
-     "title": "AC Leak Repair",
-     "icon": "droplets",
-     "text": "Water around the indoor unit and refrigerant loss are two different faults with two different fixes. Both get traced to the cause rather than topped up.",
-     "points": []
-    },
-    {
-     "slug": "ac-heat-pump-repair",
-     "title": "Heat Pump Repair",
-     "icon": "sun",
-     "text": "Heat pump repair for systems that carry both the cooling and the heating season.",
-     "points": []
-    },
-    {
-     "slug": "air-conditioning-installation",
-     "title": "Air Conditioning Installation",
-     "icon": "air-vent",
-     "text": "Houston homes punish oversized and undersized systems in different ways. An oversized unit short-cycles and leaves humidity behind; an undersized one runs constantly and still cannot keep up. Sizing is settled by a load calculation, not by square footage alone.",
-     "points": [
-      "Load calculation covers square footage, insulation, ceiling height and window count",
-      "Most residential replacements complete in 4 to 8 hours",
-      "Free written replacement estimate within 24 hours"
-     ]
-    },
-    {
-     "slug": "central-ac-installation",
-     "title": "Central AC Installation",
-     "icon": "wind",
-     "text": "Central system installation for whole-home cooling, with the old equipment removed, the new system tested and operation verified before the job is closed.",
-     "points": []
-    },
-    {
-     "slug": "mini-split-ac-installation",
-     "title": "Mini-Split And Ductless Installation",
-     "icon": "fan",
-     "text": "Mini-split and ductless installation for rooms, additions and spaces where running ductwork does not make sense.",
-     "points": []
-    },
-    {
-     "slug": "air-conditioning-replacement",
-     "title": "AC Replacement",
-     "icon": "home",
-     "text": "Replacement makes sense when cooling is inconsistent, repairs are frequent, or the system cannot handle a Houston summer. The repair-versus-replace numbers are broken out side by side so the math is visible.",
-     "points": [
-      "Free estimates on system replacement, no obligation",
-      "A high-efficiency system can cut cooling costs by 20 to 50 percent"
-     ]
-    },
-    {
-     "slug": "ac-tune-up-and-maintenance",
-     "title": "AC Tune-Up And Maintenance",
-     "icon": "gauge",
-     "text": "Most Houston systems run long enough each year that maintenance is not optional if you want to avoid preventable summer failures.",
-     "points": [
-      "Filters cleaned or replaced, coils inspected and cleaned, refrigerant levels checked",
-      "Thermostat calibration tested, moving parts lubricated, electrical connections tightened",
-      "Ductwork inspected for leaks, airflow measured and system performance tested"
-     ]
-    },
-    {
-     "slug": "ac-troubleshooting-diagnosis",
-     "title": "Troubleshooting And Diagnosis",
-     "icon": "thermometer",
-     "text": "Uneven cooling between rooms is usually ductwork, airflow imbalance, insulation gaps or sizing rather than the unit itself. Diagnosis separates the two before anyone quotes a part.",
-     "points": []
-    },
-    {
-     "slug": "commercial-ac-service",
-     "title": "Commercial AC Service",
-     "icon": "building",
-     "text": "Commercial AC repair, installation and maintenance for offices, retail spaces, restaurants and other light commercial properties, scheduled around how the business actually trades.",
-     "points": [
-      "After-hours and weekend scheduling available"
-     ]
-    }
-   ]
-  },
-  {
-   "slug": "heating",
-   "title": "Heating",
-   "icon": "flame",
-   "summary": "Furnace and heat pump repair, installation and replacement for short, sharp Houston cold snaps.",
-   "intro": "Houston heating problems show up fast during short cold snaps, because many homeowners do not run the heat for months at a time and the fault is only found the night it is needed. Heating systems here have to operate safely and consistently after long periods of standing idle, so the work focuses on reliability, airflow balance and proper heat output across the house.",
-   "image": "/brands/75degreeac/heating",
-   "imageAlt": "A technician working on an indoor gas furnace and air handler with the access panel removed",
-   "services": [
-    {
-     "slug": "emergency-heating-repair",
-     "title": "Emergency Heating Repair",
-     "icon": "timer",
-     "text": "No heat during a Houston freeze is answered the same way a July cooling failure is: around the clock.",
-     "points": [
-      "Answered 24 hours a day"
-     ]
-    },
-    {
-     "slug": "heating-repair-and-maintenance",
-     "title": "Heating Repair And Maintenance",
-     "icon": "wrench",
-     "text": "Repair and seasonal maintenance across furnaces and heat pumps, with heat output and airflow checked room by room rather than at the thermostat alone.",
-     "points": [
-      "Maintenance recommended in the fall, before the heating season starts"
-     ]
-    },
-    {
-     "slug": "furnace-repair",
-     "title": "Furnace Repair",
-     "icon": "flame",
-     "text": "Gas and electric furnace repair, including control board, burner and blower faults. Carbon monoxide safety is part of the inspection on any gas furnace, not an extra.",
-     "points": []
-    },
-    {
-     "slug": "furnace-installation",
-     "title": "Furnace Installation",
-     "icon": "heater",
-     "text": "Furnace installation sized to the house and commissioned before the call is closed.",
-     "points": []
-    },
-    {
-     "slug": "furnace-replacement",
-     "title": "Furnace Replacement",
-     "icon": "home",
-     "text": "Replacement for furnaces that have moved into repeat-failure territory, with the repair-versus-replace case set out before you decide.",
-     "points": [
-      "Free estimates on system replacement"
-     ]
-    },
-    {
-     "slug": "heat-pumps",
-     "title": "Heat Pump Service",
-     "icon": "sun",
-     "text": "Heat pump repair, installation, replacement and maintenance for a system that has to carry both seasons.",
-     "points": []
-    },
-    {
-     "slug": "thermostats",
-     "title": "Thermostat Repair And Installation",
-     "icon": "thermometer",
-     "text": "Thermostat repair and replacement, including verification that the thermostat is actually the fault rather than the symptom.",
-     "points": []
-    },
-    {
-     "slug": "commercial-heating-service",
-     "title": "Commercial Heating Service",
-     "icon": "building",
-     "text": "Heating service for offices, retail spaces and light commercial buildings across Houston.",
-     "points": []
-    }
-   ]
-  },
-  {
-   "slug": "hvac",
-   "title": "HVAC Systems",
-   "icon": "settings",
-   "summary": "Whole-system diagnostics, inspection, replacement and maintenance plans, residential and light commercial.",
-   "intro": "When a system shows ongoing performance problems rather than one clear fault, a full evaluation is what identifies the right answer. HVAC work here covers complete system diagnostics, repair and replacement based on equipment condition and measured performance, for single-family homes, apartments, offices, retail units, restaurants and medical clinics across Greater Houston.",
-   "image": "/brands/75degreeac/hvac",
-   "imageAlt": "A rooftop package HVAC unit on a light commercial building with the service panels open",
-   "services": [
-    {
-     "slug": "hvac-repair",
-     "title": "HVAC Repair",
-     "icon": "wrench",
-     "text": "The call starts with what the system is doing, when it started, and whether the problem is cooling, heating, airflow, leaking, noise or a total no-start. The repair is tested before the visit is closed, not just switched back on.",
-     "points": [
-      "Cooling or heating performance, airflow, controls and final operating condition all verified before the technician leaves"
-     ]
-    },
-    {
-     "slug": "emergency-hvac-repair",
-     "title": "Emergency HVAC Repair",
-     "icon": "timer",
-     "text": "Round-the-clock emergency response for total system failures in homes and businesses.",
-     "points": [
-      "Answered 24 hours a day"
-     ]
-    },
-    {
-     "slug": "hvac-installation",
-     "title": "HVAC Installation",
-     "icon": "air-vent",
-     "text": "Full system installation, with the equipment matched to a load calculation and commissioned on site.",
-     "points": []
-    },
-    {
-     "slug": "hvac-replacement",
-     "title": "HVAC Replacement",
-     "icon": "home",
-     "text": "Replacement when a system has moved past the point where repairs make financial sense, with the alternative priced alongside the repair rather than instead of it.",
-     "points": [
-      "Written replacement quote within 24 hours, no obligation"
-     ]
-    },
-    {
-     "slug": "hvac-maintenance",
-     "title": "HVAC Maintenance Plans",
-     "icon": "gauge",
-     "text": "Maintenance plans covering scheduled visits twice a year, once in spring before the cooling season and once in fall before the heating season.",
-     "points": [
-      "Priority scheduling",
-      "Discounts on repairs",
-      "Comprehensive system inspections"
-     ]
-    },
-    {
-     "slug": "hvac-inspection",
-     "title": "HVAC Inspection",
-     "icon": "shield",
-     "text": "A full system inspection for a property you are buying, a system you have inherited, or one you suspect is underperforming without an obvious fault.",
-     "points": []
-    },
-    {
-     "slug": "commercial-hvac",
-     "title": "Commercial HVAC Services",
-     "icon": "building",
-     "text": "Rooftop units, split systems, package units, heat pumps and the controls around them, serviced for offices, retail, restaurants and warehouses.",
-     "points": [
-      "Flexible scheduling, including after-hours and weekends",
-      "Tailored preventive maintenance programs built around your equipment and usage"
-     ]
-    },
-    {
-     "slug": "residential-hvac",
-     "title": "Residential HVAC Services",
-     "icon": "home",
-     "text": "Residential HVAC service for Houston homes, built around the long cooling season and the system sizing and airflow balance that go with it.",
-     "points": []
-    }
-   ]
-  },
-  {
-   "slug": "air-quality",
-   "title": "Air Quality & Systems",
-   "icon": "filter",
-   "summary": "Testing, filtration, purification, ventilation and humidity control for the air the system is actually moving.",
-   "intro": "A system can hold temperature and still be moving air you would rather not breathe. Indoor air work covers testing first, then the filtration, purification, ventilation and humidity control that the test result actually calls for. Filters are the starting point: a clogged filter is one of the most common causes of AC failure in Houston homes, because restricted airflow freezes the evaporator coil and shuts the system down.",
-   "image": "/brands/75degreeac/airquality",
-   "imageAlt": "A wall-mounted mini-split indoor unit with the filter panel open for cleaning",
-   "services": [
-    {
-     "slug": "indoor-air-quality-testing",
-     "title": "Indoor Air Quality Testing",
-     "icon": "gauge",
-     "text": "Testing that establishes what is actually in the air before anything is specified to treat it.",
-     "points": []
-    },
-    {
-     "slug": "air-purifier-installation",
-     "title": "Air Purifier Installation",
-     "icon": "leaf",
-     "text": "Whole-home air purifier installation, fitted into the existing system rather than run as a separate appliance.",
-     "points": []
-    },
-    {
-     "slug": "uv-light-installation",
-     "title": "UV Light Installation",
-     "icon": "lightbulb",
-     "text": "UV light installation at the coil and air handler, where moisture and darkness let growth take hold.",
-     "points": []
-    },
-    {
-     "slug": "hepa-filtration",
-     "title": "HEPA Filtration",
-     "icon": "filter",
-     "text": "HEPA filtration for homes where a standard one-inch filter is not doing enough. Filters are best changed every one to three months through Houston's long cooling season.",
-     "points": []
-    },
-    {
-     "slug": "ventilation-system",
-     "title": "Ventilation Systems",
-     "icon": "wind",
-     "text": "Ventilation work for houses that are sealed well enough to trap what is inside them.",
-     "points": []
-    },
-    {
-     "slug": "humidifier-installation",
-     "title": "Humidifier Installation",
-     "icon": "droplets",
-     "text": "Humidifier installation for rooms that stay dry through the heating season.",
-     "points": []
-    },
-    {
-     "slug": "dehumidifier-installation",
-     "title": "Dehumidifier Installation",
-     "icon": "waves",
-     "text": "Whole-home dehumidification for Houston humidity the cooling system alone cannot pull down, especially on an oversized unit that short-cycles.",
-     "points": []
-    }
-   ]
-  }
- ],
- "promo": {
-  "eyebrow": "Diagnostic pricing",
-  "title": "A flat diagnostic fee, removed when you go ahead",
-  "text": "The visit covers a licensed technician, a full system evaluation and a written quote, and the fee comes off the final invoice when you approve the repair, so you are never paying for the diagnosis and the repair stacked on top of each other.",
-  "price": "$89",
-  "priceNote": "waived with an approved repair",
-  "image": "/brands/75degreeac/tuneup",
-  "imageAlt": "Refrigerant service gauges connected to an outdoor air conditioning unit during a diagnostic"
- },
- "about": {
-  "eyebrow": "About us",
-  "title": "Your locally operated heating and cooling company since 2016",
-  "text": [
-   "75 Degree AC was founded in 2016 with a clear mission: to deliver reliable, efficient, high-quality HVAC work for homeowners and businesses across the Houston, TX area. From the start the focus has been on doing the work correctly, communicating clearly, and standing behind every service call.",
-   "The company is independently owned and operated out of Houston rather than run as a franchise, so every call, quote and follow-up comes from the local team. Lead technician Kenny Ho handles installations and major repairs personally.",
-   "Technicians carry EPA Section 608 universal certification and train on every major brand, including Carrier, Trane, Lennox, Goodman, Rheem, Daikin and Mitsubishi. The work covers residential and light-commercial systems: single-family homes, apartments, offices, retail units, restaurants and medical clinics across Greater Houston.",
-   "Growth has come from repeat customers and referrals, built on consistent service, honest recommendations and accountability for the work performed."
+  "template": "hvac",
+  "preview": true,
+  "name": "75 Degree AC",
+  "shortName": "75 Degree AC",
+  "summary": "Air conditioning, heating and full HVAC system service for homes and light commercial properties across Houston, TX, from a locally operated company founded in 2016.",
+  "phone": "(713) 598-2737",
+  "email": "info@75degreeac.com",
+  "address": "4800 W 34th St, Ste C50F",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77092",
+  "rating": 5.0,
+  "reviewCount": 261,
+  "since": 2016,
+  "hours": [
+    [
+      "Mon – Fri",
+      "7:00 AM – 9:00 PM"
+    ],
+    [
+      "Saturday",
+      "8:00 AM – 8:00 PM"
+    ],
+    [
+      "Sunday",
+      "8:00 AM – 5:00 PM"
+    ]
   ],
-  "image": "/brands/75degreeac/team",
-  "imageAlt": "An outdoor air conditioning condenser with service gauges and tools connected during a maintenance visit",
-  "values": [
-   {
-    "title": "Transparent Pricing",
-    "text": "An $89 flat diagnostic covers a licensed technician and a written quote, and it is waived when you approve the repair. No vague pricing and no charge added after the fact."
-   },
-   {
-    "title": "Licensed And Insured",
-    "text": "TACLA Class A licensed, license number TACLA72152E, with EPA Section 608 certified technicians and full insurance coverage."
-   },
-   {
-    "title": "Quick Response",
-    "text": "Calls received before 2 PM Monday to Saturday are dispatched the same day across Greater Houston, and emergencies are answered around the clock."
-   }
+  "brand": {
+    "primary": "#1f4e9c",
+    "primaryDeep": "#15376f",
+    "accent": "#e23b32",
+    "ink": "#16202c",
+    "muted": "#53647a",
+    "surface": "#eef3fa",
+    "line": "#d5e0ed",
+    "heading": "'Montserrat', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/75degreeac/logo.webp",
+    "logoMono": "/brands/75degreeac/logo-mono.webp",
+    "logoWidth": 113,
+    "logoHeight": 58,
+    "logoRatio": 1.948,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.798,
+      0.663,
+      0.517,
+      0.361,
+      0.224,
+      0.21,
+      0.307,
+      0.452,
+      0.634,
+      0.822,
+      1.0
+    ]
+  },
+  "emergency": {
+    "title": "24/7 emergency service",
+    "text": "Cooling and heating failures are answered around the clock, and urgent calls are prioritized over scheduled work."
+  },
+  "sameDay": "Calls received before 2 PM Monday to Saturday are dispatched the same day across Houston and the surrounding area, depending on call volume.",
+  "licenses": [
+    {
+      "label": "TACLA Class A",
+      "number": "TACLA72152E"
+    },
+    {
+      "label": "EPA Section 608",
+      "number": "Universal certification"
+    }
+  ],
+  "financing": {
+    "text": "Financing on new system installations through several lenders, with payment plans and current promotions confirmed when you call."
+  },
+  "hero": {
+    "eyebrow": "HVAC contractor in Houston, TX",
+    "title": "Same-day AC repair, heating service and",
+    "titleAccent": "24/7 emergency response",
+    "lead": "When your house is stuck at 82 degrees on a July afternoon in Houston, you are not looking for a vague promise. You need someone who answers the phone, shows up the same day, diagnoses the real problem, and tells you the price before work starts.",
+    "image": "/brands/75degreeac/hero",
+    "imageAlt": "A newly installed outdoor air conditioning condenser beside a Houston home, with service gauges on the grass"
+  },
+  "groups": [
+    {
+      "slug": "cooling",
+      "title": "Cooling",
+      "icon": "snowflake",
+      "summary": "AC repair, installation, replacement and maintenance for systems that run most of the year.",
+      "intro": "Air conditioning systems in Houston run for extended hours, which makes correct sizing, airflow and component condition the things that decide whether a system lasts. Cooling work here covers diagnosis, repair, replacement and seasonal maintenance, with a written quote before anything is started. One thing worth knowing: the expensive-sounding symptom is not always the expensive repair, and every summer homeowners call panicking about a dead compressor when the real problem is a capacitor or a contactor.",
+      "image": "/brands/75degreeac/cooling",
+      "imageAlt": "A 75 Degree AC technician connecting service gauges at two outdoor condensers in a back garden",
+      "services": [
+        {
+          "slug": "emergency-ac-repair",
+          "title": "Emergency AC Repair",
+          "icon": "timer",
+          "text": "When the AC stops cooling in Houston heat, response time matters more than anything else. Emergency calls are answered around the clock and prioritized ahead of scheduled work.",
+          "points": [
+            "Answered 24 hours a day",
+            "Urgent cooling failures prioritized whenever possible"
+          ]
+        },
+        {
+          "slug": "air-conditioning-repair",
+          "title": "Air Conditioning Repair",
+          "icon": "wrench",
+          "text": "A system that runs but will not cool is usually airflow restriction, low refrigerant, dirty coils or an electrical component struggling under heat load. The diagnosis comes before the price, and the price comes before the work.",
+          "points": [
+            "$89 flat diagnostic, waived when you approve the repair",
+            "Written quote before any work starts",
+            "Electrical testing, capacitor checks, airflow evaluation, thermostat verification, drain inspection and refrigerant analysis"
+          ]
+        },
+        {
+          "slug": "ac-compressor-repair",
+          "title": "AC Compressor Repair",
+          "icon": "settings",
+          "text": "Compressor and core component work on systems that have lost cooling capacity rather than lost power altogether.",
+          "points": []
+        },
+        {
+          "slug": "ac-leak-repair",
+          "title": "AC Leak Repair",
+          "icon": "droplets",
+          "text": "Water around the indoor unit and refrigerant loss are two different faults with two different fixes. Both get traced to the cause rather than topped up.",
+          "points": []
+        },
+        {
+          "slug": "ac-heat-pump-repair",
+          "title": "Heat Pump Repair",
+          "icon": "sun",
+          "text": "Heat pump repair for systems that carry both the cooling and the heating season.",
+          "points": []
+        },
+        {
+          "slug": "air-conditioning-installation",
+          "title": "Air Conditioning Installation",
+          "icon": "air-vent",
+          "text": "Houston homes punish oversized and undersized systems in different ways. An oversized unit short-cycles and leaves humidity behind; an undersized one runs constantly and still cannot keep up. Sizing is settled by a load calculation, not by square footage alone.",
+          "points": [
+            "Load calculation covers square footage, insulation, ceiling height and window count",
+            "Most residential replacements complete in 4 to 8 hours",
+            "Free written replacement estimate within 24 hours"
+          ]
+        },
+        {
+          "slug": "central-ac-installation",
+          "title": "Central AC Installation",
+          "icon": "wind",
+          "text": "Central system installation for whole-home cooling, with the old equipment removed, the new system tested and operation verified before the job is closed.",
+          "points": []
+        },
+        {
+          "slug": "mini-split-ac-installation",
+          "title": "Mini-Split And Ductless Installation",
+          "icon": "fan",
+          "text": "Mini-split and ductless installation for rooms, additions and spaces where running ductwork does not make sense.",
+          "points": []
+        },
+        {
+          "slug": "air-conditioning-replacement",
+          "title": "AC Replacement",
+          "icon": "home",
+          "text": "Replacement makes sense when cooling is inconsistent, repairs are frequent, or the system cannot handle a Houston summer. The repair-versus-replace numbers are broken out side by side so the math is visible.",
+          "points": [
+            "Free estimates on system replacement, no obligation",
+            "A high-efficiency system can cut cooling costs by 20 to 50 percent"
+          ]
+        },
+        {
+          "slug": "ac-tune-up-and-maintenance",
+          "title": "AC Tune-Up And Maintenance",
+          "icon": "gauge",
+          "text": "Most Houston systems run long enough each year that maintenance is not optional if you want to avoid preventable summer failures.",
+          "points": [
+            "Filters cleaned or replaced, coils inspected and cleaned, refrigerant levels checked",
+            "Thermostat calibration tested, moving parts lubricated, electrical connections tightened",
+            "Ductwork inspected for leaks, airflow measured and system performance tested"
+          ]
+        },
+        {
+          "slug": "ac-troubleshooting-diagnosis",
+          "title": "Troubleshooting And Diagnosis",
+          "icon": "thermometer",
+          "text": "Uneven cooling between rooms is usually ductwork, airflow imbalance, insulation gaps or sizing rather than the unit itself. Diagnosis separates the two before anyone quotes a part.",
+          "points": []
+        },
+        {
+          "slug": "commercial-ac-service",
+          "title": "Commercial AC Service",
+          "icon": "building",
+          "text": "Commercial AC repair, installation and maintenance for offices, retail spaces, restaurants and other light commercial properties, scheduled around how the business actually trades.",
+          "points": [
+            "After-hours and weekend scheduling available"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "heating",
+      "title": "Heating",
+      "icon": "flame",
+      "summary": "Furnace and heat pump repair, installation and replacement for short, sharp Houston cold snaps.",
+      "intro": "Houston heating problems show up fast during short cold snaps, because many homeowners do not run the heat for months at a time and the fault is only found the night it is needed. Heating systems here have to operate safely and consistently after long periods of standing idle, so the work focuses on reliability, airflow balance and proper heat output across the house.",
+      "image": "/brands/75degreeac/heating",
+      "imageAlt": "A technician working on an indoor gas furnace and air handler with the access panel removed",
+      "services": [
+        {
+          "slug": "emergency-heating-repair",
+          "title": "Emergency Heating Repair",
+          "icon": "timer",
+          "text": "No heat during a Houston freeze is answered the same way a July cooling failure is: around the clock.",
+          "points": [
+            "Answered 24 hours a day"
+          ]
+        },
+        {
+          "slug": "heating-repair-and-maintenance",
+          "title": "Heating Repair And Maintenance",
+          "icon": "wrench",
+          "text": "Repair and seasonal maintenance across furnaces and heat pumps, with heat output and airflow checked room by room rather than at the thermostat alone.",
+          "points": [
+            "Maintenance recommended in the fall, before the heating season starts"
+          ]
+        },
+        {
+          "slug": "furnace-repair",
+          "title": "Furnace Repair",
+          "icon": "flame",
+          "text": "Gas and electric furnace repair, including control board, burner and blower faults. Carbon monoxide safety is part of the inspection on any gas furnace, not an extra.",
+          "points": []
+        },
+        {
+          "slug": "furnace-installation",
+          "title": "Furnace Installation",
+          "icon": "heater",
+          "text": "Furnace installation sized to the house and commissioned before the call is closed.",
+          "points": []
+        },
+        {
+          "slug": "furnace-replacement",
+          "title": "Furnace Replacement",
+          "icon": "home",
+          "text": "Replacement for furnaces that have moved into repeat-failure territory, with the repair-versus-replace case set out before you decide.",
+          "points": [
+            "Free estimates on system replacement"
+          ]
+        },
+        {
+          "slug": "heat-pumps",
+          "title": "Heat Pump Service",
+          "icon": "sun",
+          "text": "Heat pump repair, installation, replacement and maintenance for a system that has to carry both seasons.",
+          "points": []
+        },
+        {
+          "slug": "thermostats",
+          "title": "Thermostat Repair And Installation",
+          "icon": "thermometer",
+          "text": "Thermostat repair and replacement, including verification that the thermostat is actually the fault rather than the symptom.",
+          "points": []
+        },
+        {
+          "slug": "commercial-heating-service",
+          "title": "Commercial Heating Service",
+          "icon": "building",
+          "text": "Heating service for offices, retail spaces and light commercial buildings across Houston.",
+          "points": []
+        }
+      ]
+    },
+    {
+      "slug": "hvac",
+      "title": "HVAC Systems",
+      "icon": "settings",
+      "summary": "Whole-system diagnostics, inspection, replacement and maintenance plans, residential and light commercial.",
+      "intro": "When a system shows ongoing performance problems rather than one clear fault, a full evaluation is what identifies the right answer. HVAC work here covers complete system diagnostics, repair and replacement based on equipment condition and measured performance, for single-family homes, apartments, offices, retail units, restaurants and medical clinics across Greater Houston.",
+      "image": "/brands/75degreeac/hvac",
+      "imageAlt": "A rooftop package HVAC unit on a light commercial building with the service panels open",
+      "services": [
+        {
+          "slug": "hvac-repair",
+          "title": "HVAC Repair",
+          "icon": "wrench",
+          "text": "The call starts with what the system is doing, when it started, and whether the problem is cooling, heating, airflow, leaking, noise or a total no-start. The repair is tested before the visit is closed, not just switched back on.",
+          "points": [
+            "Cooling or heating performance, airflow, controls and final operating condition all verified before the technician leaves"
+          ]
+        },
+        {
+          "slug": "emergency-hvac-repair",
+          "title": "Emergency HVAC Repair",
+          "icon": "timer",
+          "text": "Round-the-clock emergency response for total system failures in homes and businesses.",
+          "points": [
+            "Answered 24 hours a day"
+          ]
+        },
+        {
+          "slug": "hvac-installation",
+          "title": "HVAC Installation",
+          "icon": "air-vent",
+          "text": "Full system installation, with the equipment matched to a load calculation and commissioned on site.",
+          "points": []
+        },
+        {
+          "slug": "hvac-replacement",
+          "title": "HVAC Replacement",
+          "icon": "home",
+          "text": "Replacement when a system has moved past the point where repairs make financial sense, with the alternative priced alongside the repair rather than instead of it.",
+          "points": [
+            "Written replacement quote within 24 hours, no obligation"
+          ]
+        },
+        {
+          "slug": "hvac-maintenance",
+          "title": "HVAC Maintenance Plans",
+          "icon": "gauge",
+          "text": "Maintenance plans covering scheduled visits twice a year, once in spring before the cooling season and once in fall before the heating season.",
+          "points": [
+            "Priority scheduling",
+            "Discounts on repairs",
+            "Comprehensive system inspections"
+          ]
+        },
+        {
+          "slug": "hvac-inspection",
+          "title": "HVAC Inspection",
+          "icon": "shield",
+          "text": "A full system inspection for a property you are buying, a system you have inherited, or one you suspect is underperforming without an obvious fault.",
+          "points": []
+        },
+        {
+          "slug": "commercial-hvac",
+          "title": "Commercial HVAC Services",
+          "icon": "building",
+          "text": "Rooftop units, split systems, package units, heat pumps and the controls around them, serviced for offices, retail, restaurants and warehouses.",
+          "points": [
+            "Flexible scheduling, including after-hours and weekends",
+            "Tailored preventive maintenance programs built around your equipment and usage"
+          ]
+        },
+        {
+          "slug": "residential-hvac",
+          "title": "Residential HVAC Services",
+          "icon": "home",
+          "text": "Residential HVAC service for Houston homes, built around the long cooling season and the system sizing and airflow balance that go with it.",
+          "points": []
+        }
+      ]
+    },
+    {
+      "slug": "air-quality",
+      "title": "Air Quality & Systems",
+      "icon": "filter",
+      "summary": "Testing, filtration, purification, ventilation and humidity control for the air the system is actually moving.",
+      "intro": "A system can hold temperature and still be moving air you would rather not breathe. Indoor air work covers testing first, then the filtration, purification, ventilation and humidity control that the test result actually calls for. Filters are the starting point: a clogged filter is one of the most common causes of AC failure in Houston homes, because restricted airflow freezes the evaporator coil and shuts the system down.",
+      "image": "/brands/75degreeac/airquality",
+      "imageAlt": "A wall-mounted mini-split indoor unit with the filter panel open for cleaning",
+      "services": [
+        {
+          "slug": "indoor-air-quality-testing",
+          "title": "Indoor Air Quality Testing",
+          "icon": "gauge",
+          "text": "Testing that establishes what is actually in the air before anything is specified to treat it.",
+          "points": []
+        },
+        {
+          "slug": "air-purifier-installation",
+          "title": "Air Purifier Installation",
+          "icon": "leaf",
+          "text": "Whole-home air purifier installation, fitted into the existing system rather than run as a separate appliance.",
+          "points": []
+        },
+        {
+          "slug": "uv-light-installation",
+          "title": "UV Light Installation",
+          "icon": "lightbulb",
+          "text": "UV light installation at the coil and air handler, where moisture and darkness let growth take hold.",
+          "points": []
+        },
+        {
+          "slug": "hepa-filtration",
+          "title": "HEPA Filtration",
+          "icon": "filter",
+          "text": "HEPA filtration for homes where a standard one-inch filter is not doing enough. Filters are best changed every one to three months through Houston's long cooling season.",
+          "points": []
+        },
+        {
+          "slug": "ventilation-system",
+          "title": "Ventilation Systems",
+          "icon": "wind",
+          "text": "Ventilation work for houses that are sealed well enough to trap what is inside them.",
+          "points": []
+        },
+        {
+          "slug": "humidifier-installation",
+          "title": "Humidifier Installation",
+          "icon": "droplets",
+          "text": "Humidifier installation for rooms that stay dry through the heating season.",
+          "points": []
+        },
+        {
+          "slug": "dehumidifier-installation",
+          "title": "Dehumidifier Installation",
+          "icon": "waves",
+          "text": "Whole-home dehumidification for Houston humidity the cooling system alone cannot pull down, especially on an oversized unit that short-cycles.",
+          "points": []
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Diagnostic pricing",
+    "title": "A flat diagnostic fee, removed when you go ahead",
+    "text": "The visit covers a licensed technician, a full system evaluation and a written quote, and the fee comes off the final invoice when you approve the repair, so you are never paying for the diagnosis and the repair stacked on top of each other.",
+    "price": "$89",
+    "priceNote": "waived with an approved repair",
+    "image": "/brands/75degreeac/tuneup",
+    "imageAlt": "Refrigerant service gauges connected to an outdoor air conditioning unit during a diagnostic"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Your locally operated heating and cooling company since 2016",
+    "text": [
+      "75 Degree AC was founded in 2016 with a clear mission: to deliver reliable, efficient, high-quality HVAC work for homeowners and businesses across the Houston, TX area. From the start the focus has been on doing the work correctly, communicating clearly, and standing behind every service call.",
+      "The company is independently owned and operated out of Houston rather than run as a franchise, so every call, quote and follow-up comes from the local team. Lead technician Kenny Ho handles installations and major repairs personally.",
+      "Technicians carry EPA Section 608 universal certification and train on every major brand, including Carrier, Trane, Lennox, Goodman, Rheem, Daikin and Mitsubishi. The work covers residential and light-commercial systems: single-family homes, apartments, offices, retail units, restaurants and medical clinics across Greater Houston.",
+      "Growth has come from repeat customers and referrals, built on consistent service, honest recommendations and accountability for the work performed."
+    ],
+    "image": "/brands/75degreeac/team",
+    "imageAlt": "An outdoor air conditioning condenser with service gauges and tools connected during a maintenance visit",
+    "values": [
+      {
+        "title": "Transparent Pricing",
+        "text": "An $89 flat diagnostic covers a licensed technician and a written quote, and it is waived when you approve the repair. No vague pricing and no charge added after the fact."
+      },
+      {
+        "title": "Licensed And Insured",
+        "text": "TACLA Class A licensed, license number TACLA72152E, with EPA Section 608 certified technicians and full insurance coverage."
+      },
+      {
+        "title": "Quick Response",
+        "text": "Calls received before 2 PM Monday to Saturday are dispatched the same day across Greater Houston, and emergencies are answered around the clock."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How much does an HVAC service call cost in Houston?",
+      "a": "The standard diagnostic fee is $89, and that fee is waived when you approve the recommended repair. Replacement estimates are free. Repair pricing depends on the failed part, the system type, the age of the equipment, how accessible it is, and whether the issue is isolated or tied to a larger performance problem. A capacitor replacement is a very different call from a blower motor failure or a refrigerant leak."
+    },
+    {
+      "q": "Why is my AC running but not cooling my home?",
+      "a": "In Houston, long run times put extra stress on air conditioning systems. Common causes are airflow restrictions, low refrigerant, dirty coils, or electrical components struggling under heat load. A proper system diagnostic identifies the real issue before it turns into a larger failure."
+    },
+    {
+      "q": "Do you offer same-day AC repair in Houston?",
+      "a": "Calls received before 2 PM Monday to Saturday are dispatched the same day across Houston and the surrounding area. Response time depends on call volume and system condition, but urgent cooling issues are prioritized whenever possible, and emergency service is available 24/7."
+    },
+    {
+      "q": "How do I know if I need AC repair or a full replacement?",
+      "a": "If the system still cools but struggles to keep up, cycles frequently, or needs repeated repairs, repair may still make sense. Replacement becomes the better option when cooling is inconsistent, repairs are frequent, or the system cannot handle Houston's summer demand. As a rule, a system over 10 to 15 years old whose repair cost exceeds half the value of a new one is usually better replaced."
+    },
+    {
+      "q": "What causes uneven cooling in Houston homes?",
+      "a": "Uneven temperatures are common here and are usually linked to ductwork issues, airflow imbalance, insulation gaps or system sizing. Even a working AC system struggles if air distribution is uneven, so addressing airflow often improves comfort quickly."
+    },
+    {
+      "q": "What size AC unit do I need for my home?",
+      "a": "Sizing depends on square footage, insulation quality, ceiling height, the number of windows and Houston's specific climate conditions. An oversized unit cycles on and off too often and leaves humidity behind; an undersized one runs constantly without cooling effectively. A detailed load calculation settles it before anything is recommended."
+    },
+    {
+      "q": "Which AC brands do you install?",
+      "a": "Carrier, Trane, Lennox, Goodman, Rheem, American Standard, Daikin and Mitsubishi, among others. Each offers different features and price points, and the recommendation is made against your home and budget rather than against a brand quota."
+    },
+    {
+      "q": "How long does a new AC installation take?",
+      "a": "Most residential system replacements take between four and eight hours. New construction or more complex installations can take one to two days. The old equipment is removed, the new system installed, every component tested, and operation verified before anyone leaves."
+    },
+    {
+      "q": "Is there financing available for a new system?",
+      "a": "Yes. We work with several lenders to offer payment plans with a range of rates and terms. Ask about current financing options when you call."
+    },
+    {
+      "q": "Can a dirty air filter really stop my AC working?",
+      "a": "Yes. A clogged filter is one of the most common causes of AC failure in Houston homes. Restricted airflow makes the system work harder, which can freeze the evaporator coil and shut the system down. Filters are best changed every one to three months, especially through the long cooling season."
+    },
+    {
+      "q": "How often should I schedule HVAC maintenance?",
+      "a": "Twice a year: once in spring before the cooling season and once in fall before heating season. Houston systems run longer than in most regions, so routine maintenance reduces breakdowns, improves airflow, and lets small problems be corrected before extreme heat exposes them."
+    },
+    {
+      "q": "What is included in a tune-up?",
+      "a": "Cleaning or replacing air filters, inspecting and cleaning coils, checking refrigerant levels, testing thermostat calibration, lubricating moving parts, tightening electrical connections, inspecting ductwork for leaks, measuring airflow and testing system performance."
+    },
+    {
+      "q": "Do you service commercial properties?",
+      "a": "Yes, across Houston and the surrounding areas: offices, retail stores, restaurants, warehouses, apartments and medical clinics. Scheduling is flexible, including after-hours and weekend service, so your business is not interrupted."
+    },
+    {
+      "q": "Is there a discount for senior customers?",
+      "a": "Yes. A 5% discount is available for senior customers on qualifying HVAC services."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Katy",
+    "Richmond",
+    "Sugar Land",
+    "Cypress",
+    "Spring",
+    "Tomball",
+    "Pearland",
+    "Missouri City",
+    "Rosenberg",
+    "Stafford",
+    "Fulshear",
+    "Bellaire",
+    "Pasadena",
+    "Baytown",
+    "The Woodlands"
+  ],
+  "facts": [
+    {
+      "heading": "License and certification",
+      "items": [
+        "TACLA Class A, license number TACLA72152E",
+        "Technicians hold EPA Section 608 universal certification",
+        "Fully insured",
+        "Independently owned and operated in Houston since 2016, not a franchise"
+      ]
+    },
+    {
+      "heading": "What it costs",
+      "items": [
+        "$89 flat diagnostic, covering a licensed technician and a written quote",
+        "The diagnostic fee is removed from the final invoice when you approve the repair",
+        "Free estimates on system replacement, with a written quote within 24 hours and no obligation",
+        "Repair and replacement numbers broken out side by side",
+        "5% discount for senior customers on qualifying HVAC services"
+      ]
+    },
+    {
+      "heading": "Response times",
+      "items": [
+        "Calls received before 2 PM Monday to Saturday are dispatched the same day",
+        "24/7 emergency service for cooling and heating failures",
+        "Commercial clients on a maintenance agreement get priority emergency response"
+      ]
+    },
+    {
+      "heading": "Brands we work on",
+      "text": "Carrier, Trane, Lennox, Goodman, Rheem, American Standard, Daikin and Mitsubishi, along with the other major residential and light commercial brands."
+    },
+    {
+      "heading": "How a call runs",
+      "items": [
+        "You call and describe what the system is doing and when it started",
+        "We schedule the earliest practical service window",
+        "The system is inspected and the cause diagnosed: electrical testing, capacitor checks, airflow evaluation, thermostat verification, drain inspection, refrigerant analysis and performance testing",
+        "You get a written quote before work starts",
+        "We complete the repair, or set out the replacement path if the system has moved into repeat-failure territory",
+        "Cooling or heating performance, airflow and controls are tested before the call is closed"
+      ]
+    },
+    {
+      "heading": "Properties we cover",
+      "text": "Residential and light commercial across Greater Houston: single-family homes, apartments, offices, retail units, restaurants and medical clinics. Commercial equipment includes rooftop units, split systems, package units, heat pumps and building management systems."
+    },
+    {
+      "heading": "Houston neighborhoods served",
+      "items": [
+        "Downtown, East Downtown (EaDo), Midtown and Third Ward",
+        "Montrose, River Oaks, Memorial and The Heights",
+        "Lazybrook / Timbergrove, Spring Branch Central and Spring Branch East",
+        "Meyerland, Westbury, Westwood, Gulfton and University Place",
+        "Eastwood, Harrisburg / Manchester and Trinity / Houston Gardens",
+        "South Belt / Ellington and Clear Lake"
+      ]
+    },
+    {
+      "heading": "Beyond the city limits",
+      "text": "Cypress, Tomball, Sugar Land, Pearland, Missouri City, Rosenberg, Stafford, Fulshear, Bellaire, Katy and Richmond. Several of these run out of the Richmond location, which keeps same-day calls realistic across Fort Bend County."
+    },
+    {
+      "heading": "Maintenance plans",
+      "text": "Plans cover scheduled visits twice a year, priority scheduling, discounts on repairs and comprehensive system inspections. Commercial programs are built around your equipment, usage patterns and budget, and include detailed service reports and discounted repair rates."
+    },
+    {
+      "heading": "Booking",
+      "text": "Call (713) 598-2737 or book online, and the appointment is confirmed back to you. Email info@75degreeac.com. The office is at 4800 W 34th St, Ste C50F, Houston, TX 77092."
+    }
   ]
- },
- "faqs": [
-  {
-   "q": "How much does an HVAC service call cost in Houston?",
-   "a": "The standard diagnostic fee is $89, and that fee is waived when you approve the recommended repair. Replacement estimates are free. Repair pricing depends on the failed part, the system type, the age of the equipment, how accessible it is, and whether the issue is isolated or tied to a larger performance problem. A capacitor replacement is a very different call from a blower motor failure or a refrigerant leak."
-  },
-  {
-   "q": "Why is my AC running but not cooling my home?",
-   "a": "In Houston, long run times put extra stress on air conditioning systems. Common causes are airflow restrictions, low refrigerant, dirty coils, or electrical components struggling under heat load. A proper system diagnostic identifies the real issue before it turns into a larger failure."
-  },
-  {
-   "q": "Do you offer same-day AC repair in Houston?",
-   "a": "Calls received before 2 PM Monday to Saturday are dispatched the same day across Houston and the surrounding area. Response time depends on call volume and system condition, but urgent cooling issues are prioritized whenever possible, and emergency service is available 24/7."
-  },
-  {
-   "q": "How do I know if I need AC repair or a full replacement?",
-   "a": "If the system still cools but struggles to keep up, cycles frequently, or needs repeated repairs, repair may still make sense. Replacement becomes the better option when cooling is inconsistent, repairs are frequent, or the system cannot handle Houston's summer demand. As a rule, a system over 10 to 15 years old whose repair cost exceeds half the value of a new one is usually better replaced."
-  },
-  {
-   "q": "What causes uneven cooling in Houston homes?",
-   "a": "Uneven temperatures are common here and are usually linked to ductwork issues, airflow imbalance, insulation gaps or system sizing. Even a working AC system struggles if air distribution is uneven, so addressing airflow often improves comfort quickly."
-  },
-  {
-   "q": "What size AC unit do I need for my home?",
-   "a": "Sizing depends on square footage, insulation quality, ceiling height, the number of windows and Houston's specific climate conditions. An oversized unit cycles on and off too often and leaves humidity behind; an undersized one runs constantly without cooling effectively. A detailed load calculation settles it before anything is recommended."
-  },
-  {
-   "q": "Which AC brands do you install?",
-   "a": "Carrier, Trane, Lennox, Goodman, Rheem, American Standard, Daikin and Mitsubishi, among others. Each offers different features and price points, and the recommendation is made against your home and budget rather than against a brand quota."
-  },
-  {
-   "q": "How long does a new AC installation take?",
-   "a": "Most residential system replacements take between four and eight hours. New construction or more complex installations can take one to two days. The old equipment is removed, the new system installed, every component tested, and operation verified before anyone leaves."
-  },
-  {
-   "q": "Is there financing available for a new system?",
-   "a": "Yes. We work with several lenders to offer payment plans with a range of rates and terms. Ask about current financing options when you call."
-  },
-  {
-   "q": "Can a dirty air filter really stop my AC working?",
-   "a": "Yes. A clogged filter is one of the most common causes of AC failure in Houston homes. Restricted airflow makes the system work harder, which can freeze the evaporator coil and shut the system down. Filters are best changed every one to three months, especially through the long cooling season."
-  },
-  {
-   "q": "How often should I schedule HVAC maintenance?",
-   "a": "Twice a year: once in spring before the cooling season and once in fall before heating season. Houston systems run longer than in most regions, so routine maintenance reduces breakdowns, improves airflow, and lets small problems be corrected before extreme heat exposes them."
-  },
-  {
-   "q": "What is included in a tune-up?",
-   "a": "Cleaning or replacing air filters, inspecting and cleaning coils, checking refrigerant levels, testing thermostat calibration, lubricating moving parts, tightening electrical connections, inspecting ductwork for leaks, measuring airflow and testing system performance."
-  },
-  {
-   "q": "Do you service commercial properties?",
-   "a": "Yes, across Houston and the surrounding areas: offices, retail stores, restaurants, warehouses, apartments and medical clinics. Scheduling is flexible, including after-hours and weekend service, so your business is not interrupted."
-  },
-  {
-   "q": "Is there a discount for senior customers?",
-   "a": "Yes. A 5% discount is available for senior customers on qualifying HVAC services."
-  }
- ],
- "serviceArea": [
-  "Houston",
-  "Katy",
-  "Richmond",
-  "Sugar Land",
-  "Cypress",
-  "Spring",
-  "Tomball",
-  "Pearland",
-  "Missouri City",
-  "Rosenberg",
-  "Stafford",
-  "Fulshear",
-  "Bellaire",
-  "Pasadena",
-  "Baytown",
-  "The Woodlands"
- ],
- "facts": [
-  {
-   "heading": "License and certification",
-   "items": [
-    "TACLA Class A, license number TACLA72152E",
-    "Technicians hold EPA Section 608 universal certification",
-    "Fully insured",
-    "Independently owned and operated in Houston since 2016, not a franchise"
-   ]
-  },
-  {
-   "heading": "What it costs",
-   "items": [
-    "$89 flat diagnostic, covering a licensed technician and a written quote",
-    "The diagnostic fee is removed from the final invoice when you approve the repair",
-    "Free estimates on system replacement, with a written quote within 24 hours and no obligation",
-    "Repair and replacement numbers broken out side by side",
-    "5% discount for senior customers on qualifying HVAC services"
-   ]
-  },
-  {
-   "heading": "Response times",
-   "items": [
-    "Calls received before 2 PM Monday to Saturday are dispatched the same day",
-    "24/7 emergency service for cooling and heating failures",
-    "Commercial clients on a maintenance agreement get priority emergency response"
-   ]
-  },
-  {
-   "heading": "Brands we work on",
-   "text": "Carrier, Trane, Lennox, Goodman, Rheem, American Standard, Daikin and Mitsubishi, along with the other major residential and light commercial brands."
-  },
-  {
-   "heading": "How a call runs",
-   "items": [
-    "You call and describe what the system is doing and when it started",
-    "We schedule the earliest practical service window",
-    "The system is inspected and the cause diagnosed: electrical testing, capacitor checks, airflow evaluation, thermostat verification, drain inspection, refrigerant analysis and performance testing",
-    "You get a written quote before work starts",
-    "We complete the repair, or set out the replacement path if the system has moved into repeat-failure territory",
-    "Cooling or heating performance, airflow and controls are tested before the call is closed"
-   ]
-  },
-  {
-   "heading": "Properties we cover",
-   "text": "Residential and light commercial across Greater Houston: single-family homes, apartments, offices, retail units, restaurants and medical clinics. Commercial equipment includes rooftop units, split systems, package units, heat pumps and building management systems."
-  },
-  {
-   "heading": "Houston neighborhoods served",
-   "items": [
-    "Downtown, East Downtown (EaDo), Midtown and Third Ward",
-    "Montrose, River Oaks, Memorial and The Heights",
-    "Lazybrook / Timbergrove, Spring Branch Central and Spring Branch East",
-    "Meyerland, Westbury, Westwood, Gulfton and University Place",
-    "Eastwood, Harrisburg / Manchester and Trinity / Houston Gardens",
-    "South Belt / Ellington and Clear Lake"
-   ]
-  },
-  {
-   "heading": "Beyond the city limits",
-   "text": "Cypress, Tomball, Sugar Land, Pearland, Missouri City, Rosenberg, Stafford, Fulshear, Bellaire, Katy and Richmond. Several of these run out of the Richmond location, which keeps same-day calls realistic across Fort Bend County."
-  },
-  {
-   "heading": "Maintenance plans",
-   "text": "Plans cover scheduled visits twice a year, priority scheduling, discounts on repairs and comprehensive system inspections. Commercial programs are built around your equipment, usage patterns and budget, and include detailed service reports and discounted repair rates."
-  },
-  {
-   "heading": "Booking",
-   "text": "Call (713) 598-2737 or book online, and the appointment is confirmed back to you. Email info@75degreeac.com. The office is at 4800 W 34th St, Ste C50F, Houston, TX 77092."
-  }
- ]
 }

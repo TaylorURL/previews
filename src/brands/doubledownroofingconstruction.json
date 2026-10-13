@@ -13,8 +13,14 @@
   "reviewCount": 5,
   "license": "Licensed and insured for residential and commercial roofing in Texas",
   "hours": [
-    ["Mon – Fri", "9 AM – 5 PM"],
-    ["Sat – Sun", "Closed"]
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
   ],
   "brand": {
     "primary": "#2f3bae",
@@ -26,7 +32,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/doubledownroofingconstruction/logo.webp",
-    "logoWidth": 150
+    "logoMono": "/brands/doubledownroofingconstruction/logo-mono.webp",
+    "logoWidth": 117,
+    "logoHeight": 74,
+    "logoRatio": 1.581,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.332,
+      0.305,
+      0.322,
+      0.364,
+      0.426,
+      0.502,
+      0.582,
+      0.672,
+      0.776,
+      0.886,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "La Porte roofing contractor",
@@ -245,7 +268,9 @@
   "materials": {
     "title": "Shingles we install",
     "text": "We are a CertainTeed Select ShingleMaster, and our materials are sourced directly from the factory with no substitutions.",
-    "brands": ["CertainTeed"]
+    "brands": [
+      "CertainTeed"
+    ]
   },
   "about": {
     "title": "Why DoubleDown Roofing",
@@ -289,7 +314,10 @@
       }
     ]
   },
-  "serviceArea": ["La Porte", "Houston"],
+  "serviceArea": [
+    "La Porte",
+    "Houston"
+  ],
   "areasText": "DoubleDown Roofing provides roofing solutions and services around Houston and the surrounding areas, from our office on West H Street in La Porte.",
   "areasImage": "/brands/doubledownroofingconstruction/service-area",
   "areasImageAlt": "Home with a newly finished roof on a quiet Houston-area street",

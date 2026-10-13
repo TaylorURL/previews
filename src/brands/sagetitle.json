@@ -29,7 +29,24 @@
     "body": "'Jost', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Alice&family=Jost:wght@400;500;600;700&display=swap",
     "logo": "/brands/sagetitle/logo.webp",
-    "logoWidth": 220
+    "logoMono": "/brands/sagetitle/logo-mono.webp",
+    "logoWidth": 258,
+    "logoHeight": 48,
+    "logoRatio": 5.366,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.329,
+      0.197,
+      0.072,
+      0.133,
+      0.224,
+      0.348,
+      0.475,
+      0.603,
+      0.738,
+      0.873,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Title insurance in Houston, Texas",
@@ -58,10 +75,22 @@
       "image": "/brands/sagetitle/commercial",
       "imageAlt": "A glass-clad commercial office building against a blue sky",
       "covers": [
-        { "title": "Retail", "text": "Title insurance and closing services for retail property transactions." },
-        { "title": "Office", "text": "Title insurance and closing services for office property transactions." },
-        { "title": "Multi-family", "text": "Title insurance and closing services for multi-family property transactions." },
-        { "title": "Industrial", "text": "Title insurance and closing services for industrial property transactions." }
+        {
+          "title": "Retail",
+          "text": "Title insurance and closing services for retail property transactions."
+        },
+        {
+          "title": "Office",
+          "text": "Title insurance and closing services for office property transactions."
+        },
+        {
+          "title": "Multi-family",
+          "text": "Title insurance and closing services for multi-family property transactions."
+        },
+        {
+          "title": "Industrial",
+          "text": "Title insurance and closing services for industrial property transactions."
+        }
       ]
     },
     {
@@ -74,10 +103,22 @@
       "image": "/brands/sagetitle/residential",
       "imageAlt": "An overhead view of a residential neighborhood and its streets",
       "covers": [
-        { "title": "Buyers and sellers", "text": "Closing the sale and purchase of a home, from contract to close." },
-        { "title": "Agents and brokers", "text": "Working alongside the agents and brokers on the transaction to keep the closing moving." },
-        { "title": "Lenders", "text": "Coordinating with the lender so the closing process stays smooth and efficient." },
-        { "title": "Coverage nationwide", "text": "Title insurance services nationwide to protect buyers from and navigate a range of property challenges." }
+        {
+          "title": "Buyers and sellers",
+          "text": "Closing the sale and purchase of a home, from contract to close."
+        },
+        {
+          "title": "Agents and brokers",
+          "text": "Working alongside the agents and brokers on the transaction to keep the closing moving."
+        },
+        {
+          "title": "Lenders",
+          "text": "Coordinating with the lender so the closing process stays smooth and efficient."
+        },
+        {
+          "title": "Coverage nationwide",
+          "text": "Title insurance services nationwide to protect buyers from and navigate a range of property challenges."
+        }
       ]
     },
     {
@@ -90,10 +131,22 @@
       "image": "/brands/sagetitle/title-services",
       "imageAlt": "Stacks of property files and documents on a desk",
       "covers": [
-        { "title": "Title information reports", "text": "A report on what the record shows about a property." },
-        { "title": "Ownership and encumbrance searches", "text": "Who holds title and what is recorded against it." },
-        { "title": "Lien searches", "text": "Liens of record against the property." },
-        { "title": "UCC searches", "text": "Financing statements filed under the Uniform Commercial Code." }
+        {
+          "title": "Title information reports",
+          "text": "A report on what the record shows about a property."
+        },
+        {
+          "title": "Ownership and encumbrance searches",
+          "text": "Who holds title and what is recorded against it."
+        },
+        {
+          "title": "Lien searches",
+          "text": "Liens of record against the property."
+        },
+        {
+          "title": "UCC searches",
+          "text": "Financing statements filed under the Uniform Commercial Code."
+        }
       ]
     },
     {
@@ -106,10 +159,22 @@
       "image": "/brands/sagetitle/escrow",
       "imageAlt": "A wall of safe deposit boxes",
       "covers": [
-        { "title": "A neutral third party", "text": "Funds and related documents are held securely while the transaction is pending." },
-        { "title": "An auditable trust account", "text": "Escrow funds sit in an auditable escrow trust account that is regularly examined." },
-        { "title": "Texas Department of Insurance controls", "text": "Accounts are examined against escrow accounting procedures and internal controls promulgated by the Texas Department of Insurance." },
-        { "title": "Disbursement at closing", "text": "At closing, all funds are disbursed per the closing disclosures and instructions." }
+        {
+          "title": "A neutral third party",
+          "text": "Funds and related documents are held securely while the transaction is pending."
+        },
+        {
+          "title": "An auditable trust account",
+          "text": "Escrow funds sit in an auditable escrow trust account that is regularly examined."
+        },
+        {
+          "title": "Texas Department of Insurance controls",
+          "text": "Accounts are examined against escrow accounting procedures and internal controls promulgated by the Texas Department of Insurance."
+        },
+        {
+          "title": "Disbursement at closing",
+          "text": "At closing, all funds are disbursed per the closing disclosures and instructions."
+        }
       ]
     }
   ],

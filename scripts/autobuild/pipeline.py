@@ -1,7 +1,12 @@
 """The scripted preview run: every prospect whose third letter is due, built,
-checked, landed, proved live and - when sending is on - sent, with no model in
-the loop. A business that fails any check is parked with the reason, and the
-preview session builds only those.
+checked, reviewed, landed, proved live and - when sending is on - sent. A
+business that fails any check is parked with the reason, and the preview
+session builds only those.
+
+The review (review.py) looks at every page of each built site and sends an
+agent to fix what it finds in the template or the builder, where the fault
+comes from, before anything lands; a site it has not passed is never
+registered, so its letter never goes.
 
     ~/.claude/tools/with-credential.py \\
       supabase-service-role-sunday=SUPABASE_SERVICE_ROLE_KEY \\
@@ -46,7 +51,7 @@ from .check import all_checks
 from .compose import AUTOMATED
 from .letter import letter_for
 from .slug import slug_for
-from . import visual
+from . import review, visual
 
 spec = importlib.util.spec_from_file_location("routine", os.path.join(ROOT, "scripts", "routine.py"))
 routine = importlib.util.module_from_spec(spec)
@@ -116,7 +121,9 @@ def layout(slugs):
         if result is None:
             found[slug] = [f"the layout check did not open it: {out.stderr.strip()[-200:]}"]
             continue
-        found[slug] = result["problems"] + visual.look(result)
+        # The pages are looked at by the review, every one of them; this is the
+        # arithmetic on how the logo sits.
+        found[slug] = result["problems"] + visual.look(result, ask_vision=False)
         for note in result.get("notes", []):
             log(slug, note)
     return found
@@ -125,12 +132,16 @@ def layout(slugs):
 # The time a batch needs after its last build: the site build, the look at
 # each page, landing, the deploy wait and the letters.
 LAND_MINUTES = 12
+# The time the review's second look needs, after its fixes.
+REVIEW_MINUTES = 6
 
 
 def build_batch(rows):
-    """Builds and checks each business; returns the ones that passed, the
-    parked ones, and the ones not reached before the batch had to land."""
+    """Builds, checks and reviews each business; returns the ones that passed,
+    the parked ones, the ones not reached before the batch had to land, and
+    what the review fixed: {"fixes": [sentences], "changed": [paths]}."""
     passed, parked, unbuilt = [], [], []
+    fixed = {"fixes": [], "changed": []}
     for row in rows:
         if time.time() > deadline() - LAND_MINUTES * 60:
             # Left due rather than parked, so the next run takes it first.
@@ -161,8 +172,8 @@ def build_batch(rows):
         (parked if problems else passed).append(item)
         log("built" if not problems else "parked", slug, "; ".join(problems))
     fresh = [p for p in passed if not p.get("landed")]
-    if not fresh:
-        return passed, parked, unbuilt
+    if not fresh and all(review.passed(p["slug"]) for p in passed):
+        return passed, parked, unbuilt, fixed
     drawn = render([p["slug"] for p in fresh])
     for item in list(passed):
         if drawn.get(item["slug"]):
@@ -179,9 +190,21 @@ def build_batch(rows):
                 item["problems"] = seen[item["slug"]]
                 passed.remove(item)
                 parked.append(item)
+    unreviewed = [p["slug"] for p in passed if not review.passed(p["slug"])]
+    if unreviewed:
+        verdict = review.run(unreviewed, deadline=deadline() - (LAND_MINUTES + REVIEW_MINUTES) * 60)
+        fixed = {"fixes": verdict["fixes"], "changed": verdict["changed"]}
+        for line in verdict["fixes"]:
+            log("review fixed", line)
+        for item in list(passed):
+            if verdict["problems"].get(item["slug"]):
+                item["problems"] = verdict["problems"][item["slug"]]
+                passed.remove(item)
+                parked.append(item)
     for item in parked:
-        discard(item["slug"])
-    return passed, parked, unbuilt
+        if not item.get("landed"):
+            discard(item["slug"])
+    return passed, parked, unbuilt, fixed
 
 
 def release():
@@ -196,24 +219,35 @@ def release():
     git("fetch", "origin")
 
 
-def land(passed, branch):
+def land(passed, branch, fixed=None):
+    """Lands the new sites and whatever the review fixed, in one pull request."""
+    fixed = fixed or {"fixes": [], "changed": []}
     passed = [p for p in passed if not p.get("landed")]
-    if not passed:
+    if not passed and not fixed["changed"]:
         release()
         return
     names = [p["row"]["name"] for p in passed]
     git("checkout", "-B", branch, "origin/develop")
     for p in passed:
         git("add", f"src/brands/{p['slug']}.json", f"public/brands/{p['slug']}")
-    listed = ", ".join(names[:-1]) + (f" and {names[-1]}" if len(names) > 1 else names[0])
-    subject = f"Add preview sites for {listed}"
-    if len(subject) > 200:
-        subject = f"Add preview sites for {len(names)} businesses"
-    git("commit", "-m", subject, "-m", "\n".join(f"- {n}" for n in names))
+    for path in fixed["changed"]:
+        git("add", "--all", "--", path)
+    if names:
+        listed = ", ".join(names[:-1]) + (f" and {names[-1]}" if len(names) > 1 else names[0])
+        subject = f"Add preview sites for {listed}"
+        if len(subject) > 200:
+            subject = f"Add preview sites for {len(names)} businesses"
+    else:
+        subject = "Fix what the preview review found"
+    # Each fix is named on a line of its own, which is how the review reads
+    # back what it has fixed before.
+    body = "\n".join([f"- {n}" for n in names] + [f"Review fix: {line}" for line in fixed["fixes"]])
+    git("commit", "-m", subject, "-m", body or subject)
     git("push", "-u", "origin", branch)
     url = gh("pr", "create", "--base", "develop", "--head", branch, "--title", subject, "--body",
              "Brand files and pictures built by the scripted preview run, each from the business's own website and "
-             "Google listing, each past the checks before it was added.")
+             "Google listing, each past the checks and the review before it was added."
+             + ("\n\nThe review fixed:\n" + "\n".join(f"- {line}" for line in fixed["fixes"]) if fixed["fixes"] else ""))
     # The merge is asked of GitHub alone: gh's own branch cleanup tries to
     # check out develop here, which the primary checkout already holds.
     gh("pr", "merge", url, "--squash")
@@ -322,7 +356,7 @@ def main(argv):
     parser.add_argument("--dry", action="store_true")
     parser.add_argument("--send", action="store_true")
     parser.add_argument("--catch-up", action="store_true")
-    parser.add_argument("--batch", type=int, default=10)
+    parser.add_argument("--batch", type=int, default=4)
     parser.add_argument("--limit", type=int, default=0)
     args = parser.parse_args(argv)
 
@@ -342,13 +376,14 @@ def main(argv):
     log(f"{len(rows)} due for a scripted build")
     stamp = datetime.now(HOUSTON).strftime("%Y%m%d-%H%M")
     n = 0
-    # A batch of ten takes about fifteen minutes from its first build to its
-    # last registration, the deploy wait included, so none starts later than that.
-    reserve = int(os.environ.get("PIPELINE_BATCH_MINUTES") or 15) * 60
+    # A batch of four takes about forty minutes from its first build to its
+    # last registration when the review sends for a fix, the deploy wait
+    # included, so none starts later than that.
+    reserve = int(os.environ.get("PIPELINE_BATCH_MINUTES") or 40) * 60
     while rows and time.time() < deadline() - reserve:
         batch, rows = rows[:args.batch], rows[args.batch:]
         n += 1
-        passed, parked, unbuilt = build_batch(batch)
+        passed, parked, unbuilt, fixed = build_batch(batch)
         rows = unbuilt + rows
         report["parked"] += [{"slug": p["slug"], "name": p["row"]["name"], "why": "; ".join(p["problems"])} for p in parked]
         if args.dry:
@@ -356,9 +391,9 @@ def main(argv):
             continue
         for p in parked:
             park(p["row"], "; ".join(p["problems"]))
-        if not passed:
+        if not passed and not fixed["changed"]:
             continue
-        land(passed, f"previews-auto-{stamp}-{n}")
+        land(passed, f"previews-auto-{stamp}-{n}", fixed)
         live, missing = wait_live([p["slug"] for p in passed])
         report["not_live"] += missing
         for p in passed:

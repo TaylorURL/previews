@@ -15,10 +15,22 @@
   "rating": 4.8,
   "reviewCount": 199,
   "hours": [
-    ["Mon – Thu", "8 AM – 6 PM"],
-    ["Friday", "8 AM – 4 PM"],
-    ["Saturday", "Closed"],
-    ["Sunday", "Closed"]
+    [
+      "Mon – Thu",
+      "8 AM – 6 PM"
+    ],
+    [
+      "Friday",
+      "8 AM – 4 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
   ],
   "cta": {
     "label": "Get a Free Bond Quote",
@@ -37,7 +49,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/texasgulfcoastautotitle/logo.webp",
-    "logoWidth": 210
+    "logoMono": "/brands/texasgulfcoastautotitle/logo-mono.webp",
+    "logoWidth": 108,
+    "logoHeight": 58,
+    "logoRatio": 1.862,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.291,
+      0.162,
+      0.084,
+      0.127,
+      0.233,
+      0.364,
+      0.488,
+      0.612,
+      0.743,
+      0.876,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Auto title service in South Houston",
@@ -45,7 +74,11 @@
     "lead": "We simplify the bonded title process and make it easy to understand and complete. Title transfers, registration renewals, duplicate titles and more, handled at the counter on Houston Blvd.",
     "image": "/brands/texasgulfcoastautotitle/hero",
     "imageAlt": "A set of car keys being handed over beside a vehicle",
-    "points": ["Over 30 years experience", "Low prices", "Call or text 713-946-0006"]
+    "points": [
+      "Over 30 years experience",
+      "Low prices",
+      "Call or text 713-946-0006"
+    ]
   },
   "overview": {
     "title": "Which service do you need?",
@@ -62,12 +95,24 @@
       "image": "/brands/texasgulfcoastautotitle/title-transfers",
       "imageAlt": "A car seller and buyer shaking hands over a sale",
       "covers": [
-        { "title": "Buying or selling", "text": "The transfer that follows a private sale, so the title moves into the buyer's name." },
-        { "title": "Gifting a vehicle", "text": "A car given to a family member or another person still goes through a transfer." },
-        { "title": "Name changes", "text": "A change of name on a car title is handled as a transfer as well." }
+        {
+          "title": "Buying or selling",
+          "text": "The transfer that follows a private sale, so the title moves into the buyer's name."
+        },
+        {
+          "title": "Gifting a vehicle",
+          "text": "A car given to a family member or another person still goes through a transfer."
+        },
+        {
+          "title": "Name changes",
+          "text": "A change of name on a car title is handled as a transfer as well."
+        }
       ],
       "questions": [
-        { "q": "Do I owe sales tax on a private sale?", "a": "Texans who buy a used vehicle from anyone other than a licensed vehicle dealer are required to pay motor vehicle sales tax of 6.25 percent on the purchase price or standard presumptive value." }
+        {
+          "q": "Do I owe sales tax on a private sale?",
+          "a": "Texans who buy a used vehicle from anyone other than a licensed vehicle dealer are required to pay motor vehicle sales tax of 6.25 percent on the purchase price or standard presumptive value."
+        }
       ]
     },
     {
@@ -80,8 +125,14 @@
       "image": "/brands/texasgulfcoastautotitle/registration-renewal",
       "imageAlt": "Close-up of the rear of a car showing its plate area",
       "covers": [
-        { "title": "Annual renewal", "text": "The yearly renewal the Texas DMV requires of all residents." },
-        { "title": "Renewing on time", "text": "Renewing before the deadline is what keeps you clear of fines." }
+        {
+          "title": "Annual renewal",
+          "text": "The yearly renewal the Texas DMV requires of all residents."
+        },
+        {
+          "title": "Renewing on time",
+          "text": "Renewing before the deadline is what keeps you clear of fines."
+        }
       ]
     },
     {
@@ -94,8 +145,14 @@
       "image": "/brands/texasgulfcoastautotitle/duplicate-titles",
       "imageAlt": "A stack of paper files and a pen on an office table",
       "covers": [
-        { "title": "Lost titles", "text": "A Texas title that has gone missing is replaced with a duplicate." },
-        { "title": "Stolen or destroyed", "text": "A title taken or ruined is replaced the same way, and it should be done right away." }
+        {
+          "title": "Lost titles",
+          "text": "A Texas title that has gone missing is replaced with a duplicate."
+        },
+        {
+          "title": "Stolen or destroyed",
+          "text": "A title taken or ruined is replaced the same way, and it should be done right away."
+        }
       ]
     },
     {
@@ -108,14 +165,32 @@
       "image": "/brands/texasgulfcoastautotitle/bonded-titles",
       "imageAlt": "An older pickup truck parked outside",
       "covers": [
-        { "title": "Vehicles with no title", "text": "A route to ownership when the vehicle came to you without a title." },
-        { "title": "Titles with errors", "text": "An option where the existing title carries errors that block a transfer." },
-        { "title": "The bond amount", "text": "If your documents are approved, you will be issued a letter stating the amount of the bond equal to 1½ times the value of the vehicle." },
-        { "title": "A free quote first", "text": "We quote the bond free of charge before you commit to anything." }
+        {
+          "title": "Vehicles with no title",
+          "text": "A route to ownership when the vehicle came to you without a title."
+        },
+        {
+          "title": "Titles with errors",
+          "text": "An option where the existing title carries errors that block a transfer."
+        },
+        {
+          "title": "The bond amount",
+          "text": "If your documents are approved, you will be issued a letter stating the amount of the bond equal to 1½ times the value of the vehicle."
+        },
+        {
+          "title": "A free quote first",
+          "text": "We quote the bond free of charge before you commit to anything."
+        }
       ],
       "questions": [
-        { "q": "What is a title bond?", "a": "A bonded title is just a title with a \"bonded\" brand. It implies there is a surety bond attached to the title, and it promises you own your vehicle." },
-        { "q": "How is the bond amount decided?", "a": "The department will determine the value of the vehicle, and the bond is equal to 1½ times that value. The Standard Presumptive Value from the Texas DMV website is the primary source." }
+        {
+          "q": "What is a title bond?",
+          "a": "A bonded title is just a title with a \"bonded\" brand. It implies there is a surety bond attached to the title, and it promises you own your vehicle."
+        },
+        {
+          "q": "How is the bond amount decided?",
+          "a": "The department will determine the value of the vehicle, and the bond is equal to 1½ times that value. The Standard Presumptive Value from the Texas DMV website is the primary source."
+        }
       ]
     },
     {
@@ -128,7 +203,10 @@
       "image": "/brands/texasgulfcoastautotitle/temp-tags",
       "imageAlt": "The view through a car windshield on an open road",
       "covers": [
-        { "title": "30-day registration", "text": "Temporary registration issued for personal vehicles subject to Texas registration laws." }
+        {
+          "title": "30-day registration",
+          "text": "Temporary registration issued for personal vehicles subject to Texas registration laws."
+        }
       ]
     },
     {
@@ -141,8 +219,14 @@
       "image": "/brands/texasgulfcoastautotitle/mechanic-liens",
       "imageAlt": "A mechanic working on a car engine",
       "covers": [
-        { "title": "Labor supplied", "text": "A security interest for those who have supplied labor that improves the property." },
-        { "title": "Materials supplied", "text": "The same interest covers materials put into the vehicle." }
+        {
+          "title": "Labor supplied",
+          "text": "A security interest for those who have supplied labor that improves the property."
+        },
+        {
+          "title": "Materials supplied",
+          "text": "The same interest covers materials put into the vehicle."
+        }
       ]
     },
     {
@@ -155,9 +239,18 @@
       "image": "/brands/texasgulfcoastautotitle/spv-appraisals",
       "imageAlt": "Rows of cars parked in a large lot",
       "covers": [
-        { "title": "6.25 percent sales tax", "text": "Motor vehicle sales tax of 6.25 percent is due on the purchase price or the standard presumptive value." },
-        { "title": "In Texas or out of state", "text": "SPV applies wherever you buy the vehicle, in Texas or out of state." },
-        { "title": "Where the value comes from", "text": "The Standard Presumptive Value from the Texas DMV website is the primary source." }
+        {
+          "title": "6.25 percent sales tax",
+          "text": "Motor vehicle sales tax of 6.25 percent is due on the purchase price or the standard presumptive value."
+        },
+        {
+          "title": "In Texas or out of state",
+          "text": "SPV applies wherever you buy the vehicle, in Texas or out of state."
+        },
+        {
+          "title": "Where the value comes from",
+          "text": "The Standard Presumptive Value from the Texas DMV website is the primary source."
+        }
       ]
     }
   ],
@@ -170,23 +263,62 @@
     "image": "/brands/texasgulfcoastautotitle/about",
     "imageAlt": "A Texas interstate highway in afternoon sun",
     "values": [
-      { "title": "Over 30 years experience", "text": "With more than 30 years experience, your satisfaction is guaranteed." },
-      { "title": "Unbeatable prices", "text": "Fast friendly service at a low price is the goal we set ourselves." },
-      { "title": "Professionally qualified", "text": "High quality service on titles, registration and the bonded title process." }
+      {
+        "title": "Over 30 years experience",
+        "text": "With more than 30 years experience, your satisfaction is guaranteed."
+      },
+      {
+        "title": "Unbeatable prices",
+        "text": "Fast friendly service at a low price is the goal we set ourselves."
+      },
+      {
+        "title": "Professionally qualified",
+        "text": "High quality service on titles, registration and the bonded title process."
+      }
     ]
   },
   "faqs": [
-    { "q": "What is a title bond?", "a": "A bonded title is just a title with a \"bonded\" brand. It implies there is a surety bond attached to the title. A bonded title promises you own your vehicle, and can be an option for people who have a vehicle with no title or a title with errors." },
-    { "q": "How much is the bond?", "a": "If your documents are approved, you will be issued a letter stating the amount of the bond equal to 1½ times the value of the vehicle. The department will determine the value of the vehicle." },
-    { "q": "How is my vehicle's value decided?", "a": "The Standard Presumptive Value (SPV) from the Texas DMV website is used as the primary source." },
-    { "q": "Does a bond quote cost anything?", "a": "No. The bond quote is free. Call or text 713-946-0006 and we will quote it." },
-    { "q": "Can I reach you by text?", "a": "Yes. The same number takes calls and texts: 713-946-0006." },
-    { "q": "How often does Texas registration have to be renewed?", "a": "The Texas Department of Motor Vehicles requires all residents to renew their vehicle registration annually, and renewing on time is what avoids fines." }
+    {
+      "q": "What is a title bond?",
+      "a": "A bonded title is just a title with a \"bonded\" brand. It implies there is a surety bond attached to the title. A bonded title promises you own your vehicle, and can be an option for people who have a vehicle with no title or a title with errors."
+    },
+    {
+      "q": "How much is the bond?",
+      "a": "If your documents are approved, you will be issued a letter stating the amount of the bond equal to 1½ times the value of the vehicle. The department will determine the value of the vehicle."
+    },
+    {
+      "q": "How is my vehicle's value decided?",
+      "a": "The Standard Presumptive Value (SPV) from the Texas DMV website is used as the primary source."
+    },
+    {
+      "q": "Does a bond quote cost anything?",
+      "a": "No. The bond quote is free. Call or text 713-946-0006 and we will quote it."
+    },
+    {
+      "q": "Can I reach you by text?",
+      "a": "Yes. The same number takes calls and texts: 713-946-0006."
+    },
+    {
+      "q": "How often does Texas registration have to be renewed?",
+      "a": "The Texas Department of Motor Vehicles requires all residents to renew their vehicle registration annually, and renewing on time is what avoids fines."
+    }
   ],
   "resources": [
-    { "title": "Texas DMV Standard Presumptive Value calculator", "text": "Look up the standard presumptive value Texas uses to work out sales tax on a used vehicle.", "href": "https://www.txdmv.gov/standard-presumptive-calculator" },
-    { "title": "Calculate taxes and fees", "text": "Our own calculator for working out what a title and registration will cost.", "href": "https://vehicletaxcalculator.lovable.app" },
-    { "title": "Free bond quote", "text": "Send us the details of your vehicle and we will quote the title bond at no cost.", "href": "https://quote.registermycar.com/" }
+    {
+      "title": "Texas DMV Standard Presumptive Value calculator",
+      "text": "Look up the standard presumptive value Texas uses to work out sales tax on a used vehicle.",
+      "href": "https://www.txdmv.gov/standard-presumptive-calculator"
+    },
+    {
+      "title": "Calculate taxes and fees",
+      "text": "Our own calculator for working out what a title and registration will cost.",
+      "href": "https://vehicletaxcalculator.lovable.app"
+    },
+    {
+      "title": "Free bond quote",
+      "text": "Send us the details of your vehicle and we will quote the title bond at no cost.",
+      "href": "https://quote.registermycar.com/"
+    }
   ],
   "facts": [
     {
@@ -211,11 +343,21 @@
     },
     {
       "heading": "Positive facts",
-      "items": ["Over 30 Yrs Experience", "5 Star Reviews", "Low Prices", "High Quality Service"]
+      "items": [
+        "Over 30 Yrs Experience",
+        "5 Star Reviews",
+        "Low Prices",
+        "High Quality Service"
+      ]
     },
     {
       "heading": "Our promise",
-      "items": ["Always Open For You", "Free Bond Quote", "Professionally Qualified", "Unbeatable Prices"]
+      "items": [
+        "Always Open For You",
+        "Free Bond Quote",
+        "Professionally Qualified",
+        "Unbeatable Prices"
+      ]
     },
     {
       "heading": "Vehicle values",

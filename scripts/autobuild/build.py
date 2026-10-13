@@ -248,7 +248,7 @@ def build(prospect, root, slug):
     scratch = tempfile.mkdtemp(prefix=f"preview-{slug}-")
     try:
         mark, placement, logo_src, logo_raw = _logo(pages, business, scratch, notes)
-        logo.save(mark, os.path.join(folder, "logo.webp"))
+        logo_fields = logo.write(mark, placement, folder, slug)
         inks = images.logo_colors(mark)
         # A mark cut from a colored ground keeps that color as the brand's own.
         ground = images.rgbof(placement["logoGround"])
@@ -279,7 +279,7 @@ def build(prospect, root, slug):
 
     kind = compose.KIND.get(prospect["trade"])
     vocab_key = kind or template
-    services = compose.services_of(pages, compose.VOCAB[vocab_key], name, town)
+    services = compose.services_of(pages, compose.VOCAB[vocab_key], name, town, described_first=template == "hvac")
     if len(services) < 2:
         raise Parked("fewer than two services named on their website")
     about = compose.about_of(pages, name)
@@ -320,8 +320,7 @@ def build(prospect, root, slug):
     brand["brand"] = {
         **colors,
         **compose.font_block(compose.fonts_of(css), sample),
-        "logo": f"/brands/{slug}/logo.webp",
-        **{k: placement[k] for k in ("logoWidth", "logoHeight", "logoRatio", "logoGround", "logoName") if k in placement},
+        **logo_fields,
     }
     brand["hero"] = {
         "eyebrow": f"{label} in {town}",
@@ -359,7 +358,7 @@ def build(prospect, root, slug):
         brand["kind"] = kind
         items = []
         for s in services:
-            icon = next((k for k, p in compose.ICONS["professional"] if re.search(p, s["title"], re.I)), None)
+            icon = next((k for k, p in compose.ICONS.get(kind) or compose.ICONS["professional"] if re.search(p, s["title"], re.I)), None)
             item = {"slug": compose.slugify(s["title"]), "title": s["title"], "summary": compose.trim(s["text"], 50) or s["title"], "text": compose.trim(s["text"], 170) or ""}
             if s["text"]:
                 item["lead"] = s["text"]
@@ -381,17 +380,24 @@ def build(prospect, root, slug):
         brand["about"] = about_block()
 
     elif template == "hvac":
+        ask = compose.ask_of(kind, services)
+        if ask:
+            brand["ask"] = ask
         brand["summary"] = lead
         groups = []
+        # The about section takes the first spare photo; each group after it
+        # one of its own, and none shares a picture. A group page draws its
+        # photo beside the heading at near half the page, so only one sharp
+        # enough for a wide slot goes there; a group without one shows its
+        # services in that place instead.
+        wide = [n for n, item in names if n in spare[1:] and _fits(item, "wide")]
         for i, s in enumerate(services[:5]):
             if not s["text"]:
                 continue
-            icon = next((k for k, p in compose.ICONS["hvac"] if re.search(p, s["title"], re.I)), "wrench")
+            icon = next((k for k, p in compose.ICONS.get(kind) or compose.ICONS["hvac"] if re.search(p, s["title"], re.I)), "wrench")
             group = {"slug": compose.slugify(s["title"]), "title": s["title"], "icon": icon, "summary": compose.trim(s["text"], 140) or s["text"], "intro": s["text"]}
-            # The about section takes the first spare photo; each group after
-            # it one of its own, and none shares a picture.
-            if len(groups) + 1 < len(spare):
-                group["image"] = spare[len(groups) + 1]
+            if wide:
+                group["image"] = wide.pop(0)
                 group["imageAlt"] = f"A photo of {short}"
             groups.append(group)
         if len(groups) < 2:

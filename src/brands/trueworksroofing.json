@@ -13,7 +13,12 @@
   "reviewCount": 288,
   "since": 2020,
   "license": "RCAT licensed, Fortified certified, A+ rated with the BBB",
-  "hours": [["Monday – Sunday", "Open 24 hours"]],
+  "hours": [
+    [
+      "Monday – Sunday",
+      "Open 24 hours"
+    ]
+  ],
   "brand": {
     "primary": "#6DBE47",
     "primaryDeep": "#3C7A26",
@@ -24,7 +29,24 @@
     "body": "'Barlow', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap",
     "logo": "/brands/trueworksroofing/logo.webp",
-    "logoWidth": 190
+    "logoMono": "/brands/trueworksroofing/logo-mono.webp",
+    "logoWidth": 182,
+    "logoHeight": 48,
+    "logoRatio": 3.789,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.148,
+      0.031,
+      0.08,
+      0.196,
+      0.312,
+      0.426,
+      0.538,
+      0.654,
+      0.771,
+      0.887,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Houston roofing contractor",

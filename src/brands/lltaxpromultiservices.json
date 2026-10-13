@@ -13,7 +13,16 @@
   "zip": "77058",
   "rating": 4.9,
   "reviewCount": 53,
-  "hours": [["Mon – Sat", "11 AM – 5 PM"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Sat",
+      "11 AM – 5 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "cta": {
     "label": "Schedule a Consultation",
     "text": "In-person visits are by appointment. Call or email the office and we will set a time."
@@ -31,7 +40,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/lltaxpromultiservices/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/lltaxpromultiservices/logo-mono.webp",
+    "logoWidth": 165,
+    "logoHeight": 48,
+    "logoRatio": 3.44,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.651,
+      0.605,
+      0.598,
+      0.628,
+      0.673,
+      0.722,
+      0.772,
+      0.822,
+      0.872,
+      0.919,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Houston, Texas",
@@ -39,13 +65,20 @@
     "lead": "We are here to serve you with a wide range of reliable and affordable financial services, in English and Spanish. Tax service is available in all 50 states.",
     "image": "/brands/lltaxpromultiservices/hero",
     "imageAlt": "A Form 1040 tax return, a calculator and a folder on a desk",
-    "points": ["Tax service in all 50 states", "Notary public on site", "Se habla español"]
+    "points": [
+      "Tax service in all 50 states",
+      "Notary public on site",
+      "Se habla español"
+    ]
   },
   "overview": {
     "title": "A multiservices office for families and small businesses.",
     "text": "Pick a service to see what it covers, or call and talk it through with our team."
   },
-  "audiences": { "individuals": "Individuals & Families", "businesses": "Businesses" },
+  "audiences": {
+    "individuals": "Individuals & Families",
+    "businesses": "Businesses"
+  },
   "services": [
     {
       "slug": "tax-preparation",
@@ -56,15 +89,36 @@
       "text": "Personal, business and corporate tax returns prepared by our team in English or Spanish. Tax service is available in all 50 states.",
       "lead": "Tax preparation is the heart of what the office does. We prepare personal, business and corporate returns for individuals, families and small businesses across Harris, Galveston and Brazoria counties, and our tax service is available in all 50 states.",
       "covers": [
-        { "title": "Individual returns", "text": "Your return prepared in person at the office by appointment, in English or Spanish." },
-        { "title": "Business and corporate returns", "text": "Returns for small businesses and corporations, prepared to keep you compliant with the IRS." },
-        { "title": "Eligible deductions", "text": "We work through the deductions you are eligible for while keeping the return compliant." },
-        { "title": "All 50 states", "text": "Tax service is available in all 50 states, so you do not have to be in Houston to work with us." },
-        { "title": "Help with your IRS account", "text": "We point you to the IRS tools for your account and for checking where your refund is." }
+        {
+          "title": "Individual returns",
+          "text": "Your return prepared in person at the office by appointment, in English or Spanish."
+        },
+        {
+          "title": "Business and corporate returns",
+          "text": "Returns for small businesses and corporations, prepared to keep you compliant with the IRS."
+        },
+        {
+          "title": "Eligible deductions",
+          "text": "We work through the deductions you are eligible for while keeping the return compliant."
+        },
+        {
+          "title": "All 50 states",
+          "text": "Tax service is available in all 50 states, so you do not have to be in Houston to work with us."
+        },
+        {
+          "title": "Help with your IRS account",
+          "text": "We point you to the IRS tools for your account and for checking where your refund is."
+        }
       ],
       "questions": [
-        { "q": "Do I need an appointment?", "a": "Yes. In-person visits are by appointment. Call (832) 453-2496 or email laura@lltaxpro.com to set a time." },
-        { "q": "Can you prepare my return if I live outside Texas?", "a": "Yes. Our tax service is available in all 50 states." }
+        {
+          "q": "Do I need an appointment?",
+          "a": "Yes. In-person visits are by appointment. Call (832) 453-2496 or email laura@lltaxpro.com to set a time."
+        },
+        {
+          "q": "Can you prepare my return if I live outside Texas?",
+          "a": "Yes. Our tax service is available in all 50 states."
+        }
       ]
     },
     {
@@ -76,10 +130,22 @@
       "text": "Certified notary service for legal and business documents, with apostille processing for documents going abroad.",
       "lead": "Our team includes notaries public at the Houston office and at our second location in Brownsville, so documents can be notarized where you are. We also process apostilles for documents that have to be recognised in another country.",
       "covers": [
-        { "title": "Houston office", "text": "Notary service at 17300 El Camino Real, by appointment." },
-        { "title": "Brownsville", "text": "Notary service with Teresa Sanchez in Brownsville and the surrounding cities." },
-        { "title": "Legal and business documents", "text": "Certified notary signatures and document certifications for personal and business paperwork." },
-        { "title": "Apostille processing", "text": "Apostille and authentication processing for documents that have to be recognised internationally." }
+        {
+          "title": "Houston office",
+          "text": "Notary service at 17300 El Camino Real, by appointment."
+        },
+        {
+          "title": "Brownsville",
+          "text": "Notary service with Teresa Sanchez in Brownsville and the surrounding cities."
+        },
+        {
+          "title": "Legal and business documents",
+          "text": "Certified notary signatures and document certifications for personal and business paperwork."
+        },
+        {
+          "title": "Apostille processing",
+          "text": "Apostille and authentication processing for documents that have to be recognised internationally."
+        }
       ]
     },
     {
@@ -109,9 +175,18 @@
       "text": "Life, health, auto, home and commercial insurance, arranged through our office and explained so you understand what you are buying.",
       "lead": "We help families look at insurance alongside the rest of their finances, and we explain the options in English or Spanish before you decide.",
       "covers": [
-        { "title": "Life and health", "text": "Cover for the people who depend on you, and health cover alongside it." },
-        { "title": "Auto and home", "text": "Cover for the car and the house, looked at together rather than one policy at a time." },
-        { "title": "Commercial", "text": "Commercial liability cover for a small business." }
+        {
+          "title": "Life and health",
+          "text": "Cover for the people who depend on you, and health cover alongside it."
+        },
+        {
+          "title": "Auto and home",
+          "text": "Cover for the car and the house, looked at together rather than one policy at a time."
+        },
+        {
+          "title": "Commercial",
+          "text": "Commercial liability cover for a small business."
+        }
       ]
     },
     {
@@ -132,8 +207,14 @@
       "text": "Help filling in and preparing documents, including immigration paperwork, with customer support from our team while it is in progress.",
       "lead": "Paperwork is easier with someone beside you. Our team helps you work through forms and documents, in English or Spanish.",
       "covers": [
-        { "title": "Immigration paperwork", "text": "Document preparation and procedural help with immigration files, applications and forms. This is document assistance, not legal advice." },
-        { "title": "Organising a file", "text": "We help put the documents a submission asks for in order before it goes in." }
+        {
+          "title": "Immigration paperwork",
+          "text": "Document preparation and procedural help with immigration files, applications and forms. This is document assistance, not legal advice."
+        },
+        {
+          "title": "Organising a file",
+          "text": "We help put the documents a submission asks for in order before it goes in."
+        }
       ]
     },
     {
@@ -154,9 +235,18 @@
       "text": "Complete startup help: LLC formation, EIN registration and guidance on staying compliant from the first day.",
       "lead": "We help entrepreneurs create lasting income opportunities, starting with getting the business properly formed.",
       "covers": [
-        { "title": "LLC formation", "text": "Your LLC set up and filed so the business exists properly." },
-        { "title": "EIN registration", "text": "The employer identification number the business needs to open accounts and file." },
-        { "title": "Compliance guidance", "text": "What the new business has to keep up with once it is formed." }
+        {
+          "title": "LLC formation",
+          "text": "Your LLC set up and filed so the business exists properly."
+        },
+        {
+          "title": "EIN registration",
+          "text": "The employer identification number the business needs to open accounts and file."
+        },
+        {
+          "title": "Compliance guidance",
+          "text": "What the new business has to keep up with once it is formed."
+        }
       ]
     },
     {
@@ -168,16 +258,40 @@
       "text": "Learn to become a tax preparer, build your business, help families and work from home.",
       "lead": "If you would rather build something of your own, we teach you to become a tax preparer. Build your business, help families and work from home. The work is commission-based, full time or part time, on your own hours, with training and mentorship from our team.",
       "covers": [
-        { "title": "Tax preparer", "text": "Learn to prepare taxes with training and step-by-step support, and a path to your own tax business." },
-        { "title": "Life insurance agent", "text": "Earn commission helping families protect what matters most. We guide you through the licensing pathway and provide training and mentorship." },
-        { "title": "Investments license", "text": "Guidance on the pathway to an investments license and on supporting clients with retirement and financial strategies through approved partners." },
-        { "title": "Mortgage license", "text": "Support and guidance on the steps to pursue a mortgage license and build a professional path in the mortgage industry." }
+        {
+          "title": "Tax preparer",
+          "text": "Learn to prepare taxes with training and step-by-step support, and a path to your own tax business."
+        },
+        {
+          "title": "Life insurance agent",
+          "text": "Earn commission helping families protect what matters most. We guide you through the licensing pathway and provide training and mentorship."
+        },
+        {
+          "title": "Investments license",
+          "text": "Guidance on the pathway to an investments license and on supporting clients with retirement and financial strategies through approved partners."
+        },
+        {
+          "title": "Mortgage license",
+          "text": "Support and guidance on the steps to pursue a mortgage license and build a professional path in the mortgage industry."
+        }
       ],
       "questions": [
-        { "q": "How do I join the team?", "a": "Call or text (832) 453-2496, email laura@lltaxpro.com, or fill in the recruitment application form." },
-        { "q": "Do I need experience?", "a": "No. We provide the training. We are looking for motivated, coachable people who want to learn, serve clients professionally and build long-term income." },
-        { "q": "How does the pay work?", "a": "The opportunities are commission-based. You work your own hours and set your own schedule, full time or part time." },
-        { "q": "Do I need a license?", "a": "It depends on the role. Licensing requirements and availability vary by role and by state, and we guide you through the pathway where one is needed." }
+        {
+          "q": "How do I join the team?",
+          "a": "Call or text (832) 453-2496, email laura@lltaxpro.com, or fill in the recruitment application form."
+        },
+        {
+          "q": "Do I need experience?",
+          "a": "No. We provide the training. We are looking for motivated, coachable people who want to learn, serve clients professionally and build long-term income."
+        },
+        {
+          "q": "How does the pay work?",
+          "a": "The opportunities are commission-based. You work your own hours and set your own schedule, full time or part time."
+        },
+        {
+          "q": "Do I need a license?",
+          "a": "It depends on the role. Licensing requirements and availability vary by role and by state, and we guide you through the pathway where one is needed."
+        }
       ]
     }
   ],
@@ -191,9 +305,18 @@
     "image": "/brands/lltaxpromultiservices/about",
     "imageAlt": "Two people going through tax paperwork together at a table",
     "values": [
-      { "title": "Faith and integrity", "text": "We serve our community with honesty, compassion and excellence." },
-      { "title": "Education", "text": "We educate and guide families so they can make informed financial decisions." },
-      { "title": "Community service", "text": "Professionalism and service to the community are what the office is built on." }
+      {
+        "title": "Faith and integrity",
+        "text": "We serve our community with honesty, compassion and excellence."
+      },
+      {
+        "title": "Education",
+        "text": "We educate and guide families so they can make informed financial decisions."
+      },
+      {
+        "title": "Community service",
+        "text": "Professionalism and service to the community are what the office is built on."
+      }
     ]
   },
   "team": [
@@ -227,11 +350,31 @@
     }
   ],
   "resources": [
-    { "title": "Your IRS account", "text": "Sign in to the IRS to see your balance, payment history and tax records.", "href": "https://www.irs.gov/your-account" },
-    { "title": "Where's My Refund", "text": "Check the status of a refund on the IRS site.", "href": "https://www.irs.gov/wheres-my-refund" },
-    { "title": "Recruitment application form", "text": "Apply to join the team. Commission-based opportunities with flexible hours.", "href": "https://0m8x3sii.forms.app/recruitment-application-form" }
+    {
+      "title": "Your IRS account",
+      "text": "Sign in to the IRS to see your balance, payment history and tax records.",
+      "href": "https://www.irs.gov/your-account"
+    },
+    {
+      "title": "Where's My Refund",
+      "text": "Check the status of a refund on the IRS site.",
+      "href": "https://www.irs.gov/wheres-my-refund"
+    },
+    {
+      "title": "Recruitment application form",
+      "text": "Apply to join the team. Commission-based opportunities with flexible hours.",
+      "href": "https://0m8x3sii.forms.app/recruitment-application-form"
+    }
   ],
-  "serviceArea": ["Houston", "Galveston", "Harris County", "Galveston County", "Brazoria County", "Brownsville", "Rio Grande Valley"],
+  "serviceArea": [
+    "Houston",
+    "Galveston",
+    "Harris County",
+    "Galveston County",
+    "Brazoria County",
+    "Brownsville",
+    "Rio Grande Valley"
+  ],
   "facts": [
     {
       "heading": "English and Spanish",
@@ -247,11 +390,22 @@
     },
     {
       "heading": "The two markets we serve",
-      "items": ["Houston, Galveston and the surrounding cities", "Brownsville and the Rio Grande Valley"]
+      "items": [
+        "Houston, Galveston and the surrounding cities",
+        "Brownsville and the Rio Grande Valley"
+      ]
     },
     {
       "heading": "Other ways to reach us",
-      "items": ["Phone: (832) 453-2496", "Phone: (713) 516-5383", "Email: laura@lltaxpro.com", "Email: laurasilva@lltaxpro.com", "Email: lauraensilva1@gmail.com", "WhatsApp", "In person by appointment"]
+      "items": [
+        "Phone: (832) 453-2496",
+        "Phone: (713) 516-5383",
+        "Email: laura@lltaxpro.com",
+        "Email: laurasilva@lltaxpro.com",
+        "Email: lauraensilva1@gmail.com",
+        "WhatsApp",
+        "In person by appointment"
+      ]
     },
     {
       "heading": "Who to ask for",
@@ -284,7 +438,13 @@
     },
     {
       "heading": "What we are built on",
-      "items": ["Faith", "Integrity", "Education", "Professionalism", "Community Service"]
+      "items": [
+        "Faith",
+        "Integrity",
+        "Education",
+        "Professionalism",
+        "Community Service"
+      ]
     },
     {
       "heading": "Our mission",

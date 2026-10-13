@@ -12,7 +12,16 @@
   "rating": 4.9,
   "reviewCount": 241,
   "license": "Certificate of liability insurance available for you to view",
-  "hours": [["Monday – Sunday", "Open 24 hours"], ["Emergency repairs", "24 hours a day, 7 days a week"]],
+  "hours": [
+    [
+      "Monday – Sunday",
+      "Open 24 hours"
+    ],
+    [
+      "Emergency repairs",
+      "24 hours a day, 7 days a week"
+    ]
+  ],
   "brand": {
     "primary": "#d83337",
     "primaryDeep": "#8f1d20",
@@ -23,7 +32,24 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap",
     "logo": "/brands/andersonroofingandrestoration/logo.webp",
-    "logoWidth": 220
+    "logoMono": "/brands/andersonroofingandrestoration/logo-mono.webp",
+    "logoWidth": 122,
+    "logoHeight": 58,
+    "logoRatio": 2.103,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.686,
+      0.699,
+      0.719,
+      0.746,
+      0.777,
+      0.81,
+      0.845,
+      0.881,
+      0.921,
+      0.958,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Spring, Texas roofing contractor",
@@ -163,7 +189,11 @@
         "Gutters are part of the same system as the roof, and we install them alongside replacement roofs and repairs.",
         "We make it easy to budget with a free gutter estimate, the same as we do for repairs, siding, painting and patio covers."
       ],
-      "points": ["Gutter installation", "Fitted with a replacement roof or on their own", "Free gutter estimate"]
+      "points": [
+        "Gutter installation",
+        "Fitted with a replacement roof or on their own",
+        "Free gutter estimate"
+      ]
     },
     {
       "slug": "attic-ventilation",
@@ -230,7 +260,11 @@
   "materials": {
     "title": "Materials we install",
     "text": "We are a GAF Master Elite roofer offering System Plus, Gold and Silver Pledge lifetime warranties on your new roof. We use only quality materials, and we stand behind GAF roofing products, which are the highest quality the industry offers.",
-    "brands": ["GAF", "GAF Timberline HD", "GAF Cobra Ridge Vent"]
+    "brands": [
+      "GAF",
+      "GAF Timberline HD",
+      "GAF Cobra Ridge Vent"
+    ]
   },
   "about": {
     "title": "Locally owned and operated in Spring, Texas",
@@ -243,9 +277,18 @@
     "image": "/brands/andersonroofingandrestoration/truck",
     "imageAlt": "The Anderson Roofing and Restoration truck parked outside a house",
     "values": [
-      { "title": "Honest and upfront", "text": "We pride ourselves on being honest and upfront with our customers." },
-      { "title": "Quality materials", "text": "We believe in using the highest quality materials in the industry." },
-      { "title": "Customer satisfaction", "text": "Customer satisfaction is our number one goal, from a repair to a full replacement." }
+      {
+        "title": "Honest and upfront",
+        "text": "We pride ourselves on being honest and upfront with our customers."
+      },
+      {
+        "title": "Quality materials",
+        "text": "We believe in using the highest quality materials in the industry."
+      },
+      {
+        "title": "Customer satisfaction",
+        "text": "Customer satisfaction is our number one goal, from a repair to a full replacement."
+      }
     ]
   },
   "inspection": {
@@ -265,7 +308,13 @@
       }
     ]
   },
-  "serviceArea": ["Spring", "The Woodlands", "Conroe", "Montgomery County", "Houston"],
+  "serviceArea": [
+    "Spring",
+    "The Woodlands",
+    "Conroe",
+    "Montgomery County",
+    "Houston"
+  ],
   "areasText": "We have overseen hundreds of roofing projects in Spring, The Woodlands, Conroe and the Houston area, and have worked hail storms across Montgomery County.",
   "areasImage": "/brands/andersonroofingandrestoration/areas",
   "areasImageAlt": "A two-story stucco home with a finished shingle roof",
@@ -298,11 +347,20 @@
     },
     {
       "heading": "Free Estimates",
-      "items": ["Roof repair", "Gutters", "Siding", "Exterior and interior painting", "Patio covers"]
+      "items": [
+        "Roof repair",
+        "Gutters",
+        "Siding",
+        "Exterior and interior painting",
+        "Patio covers"
+      ]
     },
     {
       "heading": "Phone Numbers",
-      "items": ["Office: 713-898-7496", "Cell: 832-740-2916"]
+      "items": [
+        "Office: 713-898-7496",
+        "Cell: 832-740-2916"
+      ]
     },
     {
       "heading": "Emergency Repairs",
@@ -326,7 +384,12 @@
     },
     {
       "heading": "Shingle Colors We Have Installed",
-      "items": ["GAF Weatherwood", "GAF Barkwood", "GAF Hunter Green", "Charcoal"]
+      "items": [
+        "GAF Weatherwood",
+        "GAF Barkwood",
+        "GAF Hunter Green",
+        "Charcoal"
+      ]
     }
   ]
 }

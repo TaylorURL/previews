@@ -1,9 +1,10 @@
 """The quality gate, for a preview built by hand as much as by the pipeline.
 
     python3 -m scripts.autobuild.gate logo <url-or-file> <slug>
-        Cuts the logo's ground away or matches it, refuses one that cannot sit
-        cleanly, writes public/brands/<slug>/logo.webp and prints the fields
-        that go in the brand file's "brand" block.
+        Cuts the logo's ground away, refuses one that cannot sit cleanly,
+        writes public/brands/<slug>/logo.webp and its one-color cut
+        logo-mono.webp, and prints the fields that go in the brand file's
+        "brand" block.
 
     python3 -m scripts.autobuild.gate photo [--slot hero|card] <url-or-file>...
         Says of each picture whether it can be shown, and in that slot.
@@ -11,8 +12,10 @@
     python3 -m scripts.autobuild.gate check <slug>...
         Every check a brand file must pass before it lands: its facts' shape,
         its pictures and logo, every page drawn by the server build, and the
-        built home page opened at desktop and phone size and looked at. Needs
-        `npm run build` first. Exits 1 when any business has a problem.
+        built home page opened at desktop and phone size and measured. Needs
+        `npm run build` first. Exits 1 when any business has a problem. How
+        the pages look is the review's to judge (scripts.autobuild.review),
+        which photographs every page and fixes what it finds at the source.
 
 The vision check runs wherever the `claude` command does; PREVIEW_VISION=off
 leaves it out.
@@ -53,11 +56,9 @@ def cmd_logo(source, slug):
         return 1
     target = os.path.join(ROOT, "public", "brands", slug)
     os.makedirs(target, exist_ok=True)
-    logo.save(mark, os.path.join(target, "logo.webp"))
     if look is not None and not look["has_name"]:
         placement["logoName"] = True
-    fields = {"logo": f"/brands/{slug}/logo.webp",
-              **{k: placement[k] for k in ("logoWidth", "logoHeight", "logoRatio", "logoGround", "logoName") if k in placement}}
+    fields = logo.write(mark, placement, target, slug)
     print(json.dumps(fields, indent=2))
     if look is None:
         print(f"(not looked at: {vision.last_error})")
@@ -118,7 +119,7 @@ def cmd_check(slugs):
         if result is None:
             found[slug].append(f"the layout check did not open it: {out.stderr.strip()[-200:]}")
             continue
-        found[slug] += result["problems"] + visual.look(result)
+        found[slug] += result["problems"] + visual.look(result, ask_vision=False)
         for note in result.get("notes", []):
             print(f"{slug}: ({note})")
     bad = 0

@@ -22,7 +22,24 @@
     "body": "'Open Sans', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap",
     "logo": "/brands/drroofingandconstruction/logo.webp",
-    "logoWidth": 220
+    "logoMono": "/brands/drroofingandconstruction/logo-mono.webp",
+    "logoWidth": 124,
+    "logoHeight": 58,
+    "logoRatio": 2.138,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.059,
+      0.104,
+      0.197,
+      0.296,
+      0.396,
+      0.498,
+      0.596,
+      0.694,
+      0.799,
+      0.902,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "League City roofing and remodeling",
@@ -158,7 +175,12 @@
         "DR Roofing and Construction is your one stop shop for your roofing and remodeling needs, and gutters are part of the same job as the roof above them. We fit them alongside drip edges, fascia board and soffit board so the water leaves the roof and keeps going.",
         "We serve all of Greater Houston and the surrounding areas from two offices, so wherever you have the need, we are just around the corner."
       ],
-      "points": ["Gutters", "Drip edges", "Fascia board", "Soffit board"]
+      "points": [
+        "Gutters",
+        "Drip edges",
+        "Fascia board",
+        "Soffit board"
+      ]
     },
     {
       "slug": "siding",

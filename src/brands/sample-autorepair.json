@@ -11,7 +11,20 @@
   "since": 2004,
   "rating": 4.8,
   "reviewCount": 167,
-  "hours": [["Mon – Fri", "7:30 AM – 6 PM"], ["Saturday", "8 AM – 2 PM"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "7:30 AM – 6 PM"
+    ],
+    [
+      "Saturday",
+      "8 AM – 2 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "brand": {
     "primary": "#d7261e",
     "primaryDeep": "#9e1a14",
@@ -25,7 +38,24 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap",
     "logo": "/brands/sample-autorepair/logo.webp",
-    "logoWidth": 190
+    "logoMono": "/brands/sample-autorepair/logo-mono.webp",
+    "logoWidth": 257,
+    "logoHeight": 48,
+    "logoRatio": 5.354,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.286,
+      0.178,
+      0.2,
+      0.227,
+      0.302,
+      0.419,
+      0.532,
+      0.645,
+      0.766,
+      0.886,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Baytown auto repair since 2004",
@@ -40,8 +70,14 @@
     "text": "Parts and labor on every repair we make, in writing on your invoice."
   },
   "certifications": [
-    { "title": "ASE Certified", "text": "Technicians tested and certified by the National Institute for Automotive Service Excellence." },
-    { "title": "State Inspection Station", "text": "Texas vehicle safety inspections while you wait." }
+    {
+      "title": "ASE Certified",
+      "text": "Technicians tested and certified by the National Institute for Automotive Service Excellence."
+    },
+    {
+      "title": "State Inspection Station",
+      "text": "Texas vehicle safety inspections while you wait."
+    }
   ],
   "services": [
     {
@@ -53,11 +89,26 @@
       "image": "/brands/sample-autorepair/maintenance",
       "imageAlt": "A technician checking the engine bay of a car under an open hood",
       "items": [
-        { "title": "Oil and Filter Change", "text": "Conventional, blend or full synthetic to your engine's spec, with a sticker for the next one." },
-        { "title": "Factory Scheduled Service", "text": "The 30, 60 and 90 thousand mile services from your owner's manual, without the dealer's markup." },
-        { "title": "Fluid Flushes", "text": "Coolant, transmission, power steering and differential fluid tested and changed when it is worn out." },
-        { "title": "Belts and Hoses", "text": "Serpentine belts, tensioners and radiator hoses checked for cracks and replaced before they leave you stranded." },
-        { "title": "Filters and Wipers", "text": "Engine air, cabin air and fuel filters, and wiper blades sized for your windshield." }
+        {
+          "title": "Oil and Filter Change",
+          "text": "Conventional, blend or full synthetic to your engine's spec, with a sticker for the next one."
+        },
+        {
+          "title": "Factory Scheduled Service",
+          "text": "The 30, 60 and 90 thousand mile services from your owner's manual, without the dealer's markup."
+        },
+        {
+          "title": "Fluid Flushes",
+          "text": "Coolant, transmission, power steering and differential fluid tested and changed when it is worn out."
+        },
+        {
+          "title": "Belts and Hoses",
+          "text": "Serpentine belts, tensioners and radiator hoses checked for cracks and replaced before they leave you stranded."
+        },
+        {
+          "title": "Filters and Wipers",
+          "text": "Engine air, cabin air and fuel filters, and wiper blades sized for your windshield."
+        }
       ]
     },
     {
@@ -69,11 +120,26 @@
       "image": "/brands/sample-autorepair/brakes",
       "imageAlt": "A brake rotor and caliper on a car hub with the wheel removed",
       "items": [
-        { "title": "Pads and Rotors", "text": "Pads replaced in axle sets, rotors measured against the minimum thickness and resurfaced or replaced." },
-        { "title": "Calipers and Brake Lines", "text": "Sticking calipers rebuilt or replaced, and rusted hard lines bent and flared to fit." },
-        { "title": "Brake Fluid Flush", "text": "Old fluid absorbs water and boils sooner. We test it and flush the whole system." },
-        { "title": "ABS Diagnostics", "text": "ABS and traction lights scanned down to the sensor or module that set them." },
-        { "title": "Parking Brake", "text": "Cables, shoes and electronic parking brakes adjusted or repaired." }
+        {
+          "title": "Pads and Rotors",
+          "text": "Pads replaced in axle sets, rotors measured against the minimum thickness and resurfaced or replaced."
+        },
+        {
+          "title": "Calipers and Brake Lines",
+          "text": "Sticking calipers rebuilt or replaced, and rusted hard lines bent and flared to fit."
+        },
+        {
+          "title": "Brake Fluid Flush",
+          "text": "Old fluid absorbs water and boils sooner. We test it and flush the whole system."
+        },
+        {
+          "title": "ABS Diagnostics",
+          "text": "ABS and traction lights scanned down to the sensor or module that set them."
+        },
+        {
+          "title": "Parking Brake",
+          "text": "Cables, shoes and electronic parking brakes adjusted or repaired."
+        }
       ]
     },
     {
@@ -85,11 +151,26 @@
       "image": "/brands/sample-autorepair/diagnostics",
       "imageAlt": "A technician holding a diagnostic scan tool beside a car in the shop",
       "items": [
-        { "title": "Check Engine Light", "text": "Codes read, freeze-frame data reviewed and the fault confirmed with a test, not a guess." },
-        { "title": "Engine Performance", "text": "Misfires, rough idle, stalling and poor fuel mileage traced to plugs, coils, injectors or sensors." },
-        { "title": "Timing Belts and Chains", "text": "Replaced on schedule with the water pump and tensioners that wear alongside them." },
-        { "title": "Cooling System", "text": "Overheating chased to the radiator, thermostat, water pump or a leaking head gasket." },
-        { "title": "Emissions Repair", "text": "Oxygen sensors, catalytic converters and EVAP leaks fixed so the car passes inspection." }
+        {
+          "title": "Check Engine Light",
+          "text": "Codes read, freeze-frame data reviewed and the fault confirmed with a test, not a guess."
+        },
+        {
+          "title": "Engine Performance",
+          "text": "Misfires, rough idle, stalling and poor fuel mileage traced to plugs, coils, injectors or sensors."
+        },
+        {
+          "title": "Timing Belts and Chains",
+          "text": "Replaced on schedule with the water pump and tensioners that wear alongside them."
+        },
+        {
+          "title": "Cooling System",
+          "text": "Overheating chased to the radiator, thermostat, water pump or a leaking head gasket."
+        },
+        {
+          "title": "Emissions Repair",
+          "text": "Oxygen sensors, catalytic converters and EVAP leaks fixed so the car passes inspection."
+        }
       ]
     },
     {
@@ -101,10 +182,22 @@
       "image": "/brands/sample-autorepair/climate",
       "imageAlt": "Round dashboard air vents in a car interior",
       "items": [
-        { "title": "AC Recharge and Leak Test", "text": "System evacuated, leak tested under vacuum and recharged to the factory refrigerant weight." },
-        { "title": "Compressors and Condensers", "text": "Failed compressors, clutches and condensers replaced, with the system flushed and a new drier." },
-        { "title": "Blower Motors", "text": "Fans that only work on high, or not at all, fixed at the resistor, motor or control head." },
-        { "title": "Heater Cores and Blend Doors", "text": "No heat, a sweet smell or fog on the glass traced to the core or the door that mixes the air." }
+        {
+          "title": "AC Recharge and Leak Test",
+          "text": "System evacuated, leak tested under vacuum and recharged to the factory refrigerant weight."
+        },
+        {
+          "title": "Compressors and Condensers",
+          "text": "Failed compressors, clutches and condensers replaced, with the system flushed and a new drier."
+        },
+        {
+          "title": "Blower Motors",
+          "text": "Fans that only work on high, or not at all, fixed at the resistor, motor or control head."
+        },
+        {
+          "title": "Heater Cores and Blend Doors",
+          "text": "No heat, a sweet smell or fog on the glass traced to the core or the door that mixes the air."
+        }
       ]
     },
     {
@@ -116,11 +209,26 @@
       "image": "/brands/sample-autorepair/tires",
       "imageAlt": "A technician in gloves fitting a tire onto a car",
       "items": [
-        { "title": "Tire Sales and Mounting", "text": "Major brands ordered to your size and mounted, balanced and torqued to spec." },
-        { "title": "Rotation and Balance", "text": "Rotated every other oil change and balanced when a vibration shows up at highway speed." },
-        { "title": "Four-Wheel Alignment", "text": "Set to factory specs, with a before and after printout." },
-        { "title": "Flat Repair", "text": "Punctures in the tread plugged and patched from the inside, the way the tire makers want it done." },
-        { "title": "Suspension and Steering", "text": "Shocks, struts, ball joints and tie rods replaced when they are worn past spec." }
+        {
+          "title": "Tire Sales and Mounting",
+          "text": "Major brands ordered to your size and mounted, balanced and torqued to spec."
+        },
+        {
+          "title": "Rotation and Balance",
+          "text": "Rotated every other oil change and balanced when a vibration shows up at highway speed."
+        },
+        {
+          "title": "Four-Wheel Alignment",
+          "text": "Set to factory specs, with a before and after printout."
+        },
+        {
+          "title": "Flat Repair",
+          "text": "Punctures in the tread plugged and patched from the inside, the way the tire makers want it done."
+        },
+        {
+          "title": "Suspension and Steering",
+          "text": "Shocks, struts, ball joints and tie rods replaced when they are worn past spec."
+        }
       ]
     },
     {
@@ -132,20 +240,61 @@
       "image": "/brands/sample-autorepair/electrical",
       "imageAlt": "A technician testing a fuse box under the hood of a car",
       "items": [
-        { "title": "Battery Test and Replacement", "text": "Load tested in the bay, and replaced with a battery sized for your vehicle." },
-        { "title": "Alternators and Starters", "text": "Charging output measured and the starter draw tested before either one is replaced." },
-        { "title": "Battery Drain", "text": "Parasitic draws tracked circuit by circuit to whatever is staying awake with the key off." },
-        { "title": "Lighting and Wiring", "text": "Headlights, tail lights and wiring repaired, including rodent damage." },
-        { "title": "Power Windows and Locks", "text": "Window regulators, motors and lock actuators repaired or replaced." }
+        {
+          "title": "Battery Test and Replacement",
+          "text": "Load tested in the bay, and replaced with a battery sized for your vehicle."
+        },
+        {
+          "title": "Alternators and Starters",
+          "text": "Charging output measured and the starter draw tested before either one is replaced."
+        },
+        {
+          "title": "Battery Drain",
+          "text": "Parasitic draws tracked circuit by circuit to whatever is staying awake with the key off."
+        },
+        {
+          "title": "Lighting and Wiring",
+          "text": "Headlights, tail lights and wiring repaired, including rodent damage."
+        },
+        {
+          "title": "Power Windows and Locks",
+          "text": "Window regulators, motors and lock actuators repaired or replaced."
+        }
       ]
     }
   ],
   "expect": [
-    { "title": "Drop it off or wait", "text": "Bring it in at 7:30 or book a time. Coffee and Wi-Fi in the lobby if you stay." },
-    { "title": "We call before we fix", "text": "A technician inspects it and calls with what is wrong, what can wait, and the price." },
-    { "title": "Drive away covered", "text": "You pay what you approved. The repair carries our 24-month, 24,000-mile warranty." }
+    {
+      "title": "Drop it off or wait",
+      "text": "Bring it in at 7:30 or book a time. Coffee and Wi-Fi in the lobby if you stay."
+    },
+    {
+      "title": "We call before we fix",
+      "text": "A technician inspects it and calls with what is wrong, what can wait, and the price."
+    },
+    {
+      "title": "Drive away covered",
+      "text": "You pay what you approved. The repair carries our 24-month, 24,000-mile warranty."
+    }
   ],
-  "makes": ["Ford", "Chevrolet", "GMC", "Ram", "Dodge", "Jeep", "Chrysler", "Toyota", "Honda", "Nissan", "Hyundai", "Kia", "Subaru", "Mazda", "Volkswagen", "Lexus"],
+  "makes": [
+    "Ford",
+    "Chevrolet",
+    "GMC",
+    "Ram",
+    "Dodge",
+    "Jeep",
+    "Chrysler",
+    "Toyota",
+    "Honda",
+    "Nissan",
+    "Hyundai",
+    "Kia",
+    "Subaru",
+    "Mazda",
+    "Volkswagen",
+    "Lexus"
+  ],
   "makesText": "Domestic and import cars, light trucks and SUVs, gas and hybrid. If it is not on the list, call and ask. The answer is usually yes.",
   "about": {
     "eyebrow": "About the shop",
@@ -156,20 +305,50 @@
     ],
     "image": "/brands/sample-autorepair/shop",
     "imageAlt": "A technician working at a bench in a clean auto repair shop",
-    "points": ["Six service bays", "Dealer-level scan tools", "Shuttle rides within Baytown", "Coffee and Wi-Fi in the lobby"],
+    "points": [
+      "Six service bays",
+      "Dealer-level scan tools",
+      "Shuttle rides within Baytown",
+      "Coffee and Wi-Fi in the lobby"
+    ],
     "gallery": [
-      { "image": "/brands/sample-autorepair/lift", "alt": "A red classic car raised on a lift above a cluttered workbench" },
-      { "image": "/brands/sample-autorepair/underside", "alt": "A technician working under a raised vehicle on a floor jack" }
+      {
+        "image": "/brands/sample-autorepair/lift",
+        "alt": "A red classic car raised on a lift above a cluttered workbench"
+      },
+      {
+        "image": "/brands/sample-autorepair/underside",
+        "alt": "A technician working under a raised vehicle on a floor jack"
+      }
     ]
   },
   "band": {
     "title": "Check engine light on?",
     "text": "Bring it by. A diagnosis tells you what it is before you spend a dollar fixing it."
   },
-  "serviceArea": ["Baytown", "Mont Belvieu", "La Porte", "Highlands", "Crosby", "Channelview"],
+  "serviceArea": [
+    "Baytown",
+    "Mont Belvieu",
+    "La Porte",
+    "Highlands",
+    "Crosby",
+    "Channelview"
+  ],
   "reviews": [
-    { "author": "Truck owner, Baytown", "vehicle": "2015 F-150", "text": "Check engine light had two other shops guessing. They found a cracked vacuum hose in an hour and charged me for an hour." },
-    { "author": "Commuter, Mont Belvieu", "vehicle": "2019 Camry", "text": "Called me with the brake price before touching anything, and it came in exactly at that number. Car was ready by 3." },
-    { "author": "Parent of three, La Porte", "vehicle": "2012 Tahoe", "text": "AC blowing warm in July. Leak test, new condenser, cold the same afternoon. They showed me the old part without me asking." }
+    {
+      "author": "Truck owner, Baytown",
+      "vehicle": "2015 F-150",
+      "text": "Check engine light had two other shops guessing. They found a cracked vacuum hose in an hour and charged me for an hour."
+    },
+    {
+      "author": "Commuter, Mont Belvieu",
+      "vehicle": "2019 Camry",
+      "text": "Called me with the brake price before touching anything, and it came in exactly at that number. Car was ready by 3."
+    },
+    {
+      "author": "Parent of three, La Porte",
+      "vehicle": "2012 Tahoe",
+      "text": "AC blowing warm in July. Leak test, new condenser, cold the same afternoon. They showed me the old part without me asking."
+    }
   ]
 }

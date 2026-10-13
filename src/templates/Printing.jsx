@@ -149,7 +149,7 @@ import {
   X,
 } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { EnquiryForm, Img, Stars, Facts, StudioCredit } from './shared.jsx';
+import { BrandLogo, EnquiryForm, Img, Stars, Facts, hexOr, StudioCredit } from './shared.jsx';
 import { onColor } from './printing/color.js';
 
 const CATEGORY_ICONS = {
@@ -255,20 +255,6 @@ function Eyebrow({ children, dark = false }) {
   );
 }
 
-/** The logo sized by height, or the name in type when there is none. */
-function Mark({ b, className = '', textClass = '' }) {
-  if (b.brand.logo) {
-    return (
-      <img
-        className={`block h-auto max-w-[52vw] object-contain ${className}`}
-        src={b.brand.logo}
-        alt={b.name}
-        style={{ width: b.brand.logoWidth || 190 }}
-      />
-    );
-  }
-  return <span className={`block font-heading text-[22px] font-bold leading-none tracking-[-0.02em] ${textClass}`}>{b.shortName}</span>;
-}
 
 /** A product's photo on its tint, or a spec tile when it has none. */
 function ProductVisual({ product, category, index, sizes, eager = false, className = '' }) {
@@ -465,7 +451,7 @@ function Header({ b, cats, tel, current }) {
     <header className={`sticky ${stick} z-40 border-b border-line bg-white`}>
       <div className={`${wrap} flex min-h-[64px] items-center gap-4 py-2 lg:min-h-[78px] lg:gap-8`}>
         <a href="/" className="flex min-h-[44px] min-w-0 flex-none items-center" aria-label={`${b.name} home`}>
-          <Mark b={b} className="max-h-[40px] lg:max-h-[46px]" textClass="text-ink" />
+          <BrandLogo b={b} ground="#ffffff" textClass="leading-none tracking-[-0.02em] text-ink" />
         </a>
         <SearchLink className="hidden max-w-[560px] flex-1 lg:flex" />
         <div className="ml-auto flex flex-none items-center gap-2 sm:gap-3">
@@ -900,13 +886,7 @@ function Footer({ b, tel }) {
     <footer className="bg-ink text-white/75">
       <div className={`${wrap} grid gap-10 pb-12 pt-14 sm:grid-cols-2 lg:grid-cols-[1.4fr_0.8fr_1.1fr] lg:gap-12`}>
         <div className="grid content-start gap-5">
-          {b.brand.logo ? (
-            <span className="inline-flex w-fit rounded-xl bg-white px-4 py-3">
-              <Mark b={b} className="max-h-[44px]" />
-            </span>
-          ) : (
-            <Mark b={b} textClass="text-white" />
-          )}
+          <BrandLogo b={b} ground={hexOr(b.brand.ink, '#121620')} textClass="leading-none tracking-[-0.02em] text-white" />
           <p className="max-w-sm leading-[1.6]">
             A print shop in {b.town}, {b.state}
             {b.since ? `, since ${b.since}` : ''}.

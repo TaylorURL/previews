@@ -14,8 +14,24 @@
   "license": "Ann Thomas CPA, PC is a certified public accounting firm in Houston, Texas.",
   "rating": 4.4,
   "reviewCount": 7,
-  "hours": [["Mon – Thu", "9 AM – 5 PM"], ["Friday", "Closed"], ["Sat – Sun", "Closed"]],
-  "cta": { "label": "Schedule a Consultation", "text": "Fill out the form and we can schedule a consultation to determine how we can best serve you." },
+  "hours": [
+    [
+      "Mon – Thu",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Friday",
+      "Closed"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Fill out the form and we can schedule a consultation to determine how we can best serve you."
+  },
   "brand": {
     "primary": "#2f3454",
     "primaryDeep": "#1f2239",
@@ -29,7 +45,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/annthomascpa/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/annthomascpa/logo-mono.webp",
+    "logoWidth": 260,
+    "logoHeight": 40,
+    "logoRatio": 6.508,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.274,
+      0.145,
+      0.02,
+      0.105,
+      0.235,
+      0.365,
+      0.49,
+      0.615,
+      0.745,
+      0.875,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "CPA firm on East NASA Parkway",
@@ -37,13 +70,20 @@
     "lead": "We are a local accounting firm providing quality financial guidance and personalized service to individuals and businesses throughout League City, Galveston County, Southeast Houston and surrounding communities.",
     "image": "/brands/annthomascpa/hero",
     "imageAlt": "The downtown Houston skyline at dusk",
-    "points": ["Tailored plans for every situation", "Services for individuals and businesses", "Year-round assistance"]
+    "points": [
+      "Tailored plans for every situation",
+      "Services for individuals and businesses",
+      "Year-round assistance"
+    ]
   },
   "overview": {
     "title": "Tailored financial and tax services.",
     "text": "Our firm offers a full range of services that deliver reliable results and value at reasonable rates. Pick a service to see what it covers, or call and talk it through with our team."
   },
-  "audiences": { "individuals": "Services For Individuals", "businesses": "Business Services" },
+  "audiences": {
+    "individuals": "Services For Individuals",
+    "businesses": "Business Services"
+  },
   "services": [
     {
       "slug": "tax-preparation",
@@ -54,13 +94,28 @@
       "text": "Accurate and timely filing for individuals and businesses to help you stay compliant and make the most of available deductions.",
       "lead": "Every year, Congress promises to simplify the tax code, but every year the tax code seems to become more complicated than ever. If you have tried tax preparation software and found it confusing, you are not alone.",
       "covers": [
-        { "title": "Individual returns", "text": "Accurate and timely filing to help you stay compliant and make the most of available deductions." },
-        { "title": "Returns for businesses", "text": "Preparation for the business alongside the owner's personal return." },
-        { "title": "Tax planning", "text": "Planning through the year rather than only at filing time." }
+        {
+          "title": "Individual returns",
+          "text": "Accurate and timely filing to help you stay compliant and make the most of available deductions."
+        },
+        {
+          "title": "Returns for businesses",
+          "text": "Preparation for the business alongside the owner's personal return."
+        },
+        {
+          "title": "Tax planning",
+          "text": "Planning through the year rather than only at filing time."
+        }
       ],
       "questions": [
-        { "q": "Why not use tax preparation software?", "a": "As the tax code becomes more complex, so does tax preparation software, and you might not be getting all of the tax breaks you are entitled to." },
-        { "q": "Who is liable if the IRS audits my return?", "a": "When you use tax software, your tax preparation software is not liable. You are." }
+        {
+          "q": "Why not use tax preparation software?",
+          "a": "As the tax code becomes more complex, so does tax preparation software, and you might not be getting all of the tax breaks you are entitled to."
+        },
+        {
+          "q": "Who is liable if the IRS audits my return?",
+          "a": "When you use tax software, your tax preparation software is not liable. You are."
+        }
       ]
     },
     {
@@ -72,7 +127,10 @@
       "text": "You get one-on-one guidance and a comprehensive financial plan that helps manage risk, improve performance, and ensure the growth and longevity of your wealth.",
       "lead": "You get one-on-one guidance and a comprehensive financial plan that helps manage risk, improve performance, and ensure the growth and longevity of your wealth.",
       "questions": [
-        { "q": "I need help planning my family's financial future.", "a": "We offer one-on-one guidance and a comprehensive financial plan that helps manage risk, improve performance, and ensure the growth and longevity of your wealth." }
+        {
+          "q": "I need help planning my family's financial future.",
+          "a": "We offer one-on-one guidance and a comprehensive financial plan that helps manage risk, improve performance, and ensure the growth and longevity of your wealth."
+        }
       ]
     },
     {
@@ -93,8 +151,14 @@
       "text": "Thoughtful strategies to help you manage and protect your assets for future generations.",
       "lead": "The hassles and red tape associated with estate planning can be daunting, but you don't need to do it alone. Our team is waiting to assist you through every step of the process.",
       "covers": [
-        { "title": "Estate planning", "text": "Thoughtful strategies to help you manage and protect your assets for future generations." },
-        { "title": "Estate and trust tax services", "text": "Tax work for estates and trusts alongside the plan itself." }
+        {
+          "title": "Estate planning",
+          "text": "Thoughtful strategies to help you manage and protect your assets for future generations."
+        },
+        {
+          "title": "Estate and trust tax services",
+          "text": "Tax work for estates and trusts alongside the plan itself."
+        }
       ]
     },
     {
@@ -115,15 +179,36 @@
       "text": "We're here to help you resolve your tax problems and put an end to the misery that the IRS can put you through.",
       "lead": "We're here to help you resolve your tax problems and put an end to the misery that the IRS can put you through.",
       "covers": [
-        { "title": "IRS audit representation", "text": "Representation when the IRS examines a return." },
-        { "title": "Non-filed returns and back taxes", "text": "Getting unfiled years caught up and addressing back taxes owed." },
-        { "title": "Liens, levies, garnishment and seizures", "text": "Help with IRS liens, levies, wage garnishment and seizures." },
-        { "title": "Payment plans and offer in compromise", "text": "IRS payment plans and offers in compromise where they apply." },
-        { "title": "Payroll tax problems", "text": "Help with payroll tax problems for employers." },
-        { "title": "Innocent spouse relief", "text": "Innocent spouse relief, and getting a copy of your IRS file." }
+        {
+          "title": "IRS audit representation",
+          "text": "Representation when the IRS examines a return."
+        },
+        {
+          "title": "Non-filed returns and back taxes",
+          "text": "Getting unfiled years caught up and addressing back taxes owed."
+        },
+        {
+          "title": "Liens, levies, garnishment and seizures",
+          "text": "Help with IRS liens, levies, wage garnishment and seizures."
+        },
+        {
+          "title": "Payment plans and offer in compromise",
+          "text": "IRS payment plans and offers in compromise where they apply."
+        },
+        {
+          "title": "Payroll tax problems",
+          "text": "Help with payroll tax problems for employers."
+        },
+        {
+          "title": "Innocent spouse relief",
+          "text": "Innocent spouse relief, and getting a copy of your IRS file."
+        }
       ],
       "questions": [
-        { "q": "I made a mistake on my taxes.", "a": "We're here to help you resolve your tax problems and put an end to the misery that the IRS can put you through." }
+        {
+          "q": "I made a mistake on my taxes.",
+          "a": "We're here to help you resolve your tax problems and put an end to the misery that the IRS can put you through."
+        }
       ]
     },
     {
@@ -135,8 +220,14 @@
       "text": "As a small business owner, you have more important things to do than to keep your own books. We take care of your books for you, so you can get back to the job of running your business and generating profits.",
       "lead": "We offer support for local business owners with budgeting, payroll, and financial reporting to promote sustainable growth.",
       "questions": [
-        { "q": "My company's books are a nightmare. I don't even know where to start.", "a": "We take care of your books for you, so you can get back to the job of running your business and generating profits." },
-        { "q": "I'm spending all my time managing payroll for my employees.", "a": "We offer payroll solutions that meet your business's needs and enable you to spend time doing what you do best, running your company." }
+        {
+          "q": "My company's books are a nightmare. I don't even know where to start.",
+          "a": "We take care of your books for you, so you can get back to the job of running your business and generating profits."
+        },
+        {
+          "q": "I'm spending all my time managing payroll for my employees.",
+          "a": "We offer payroll solutions that meet your business's needs and enable you to spend time doing what you do best, running your company."
+        }
       ]
     },
     {
@@ -238,13 +329,28 @@
       "text": "We offer a variety of services to help make sure that you are taking full advantage of QuickBooks' many features.",
       "lead": "If you use QuickBooks but are not sure you are getting the most out of the software, we offer a variety of services to help make sure that you are taking full advantage of QuickBooks' many features.",
       "covers": [
-        { "title": "Why QuickBooks", "text": "Whether QuickBooks is the right fit for how your business keeps its books." },
-        { "title": "Setup", "text": "Setting the file up so the reports come out right from the start." },
-        { "title": "Training", "text": "Training for you and your staff on the parts of QuickBooks you actually use." },
-        { "title": "Tune-up", "text": "A tune-up for a file that has drifted, plus answers to QuickBooks questions and tips for users." }
+        {
+          "title": "Why QuickBooks",
+          "text": "Whether QuickBooks is the right fit for how your business keeps its books."
+        },
+        {
+          "title": "Setup",
+          "text": "Setting the file up so the reports come out right from the start."
+        },
+        {
+          "title": "Training",
+          "text": "Training for you and your staff on the parts of QuickBooks you actually use."
+        },
+        {
+          "title": "Tune-up",
+          "text": "A tune-up for a file that has drifted, plus answers to QuickBooks questions and tips for users."
+        }
       ],
       "questions": [
-        { "q": "I use QuickBooks, but I'm not sure I'm getting the most out of the software.", "a": "We offer a variety of services to help make sure that you are taking full advantage of QuickBooks' many features." }
+        {
+          "q": "I use QuickBooks, but I'm not sure I'm getting the most out of the software.",
+          "a": "We offer a variety of services to help make sure that you are taking full advantage of QuickBooks' many features."
+        }
       ]
     }
   ],
@@ -256,25 +362,68 @@
       "We value relationships built on trust, accuracy, and personal attention. We work closely with you to deliver solutions that align with your goals and needs, whether you are an individual planning for the future or a small business owner looking to streamline your finances."
     ],
     "values": [
-      { "title": "Professionalism", "text": "By combining our expertise, experience, and the energy of our staff, each client receives close personal and professional attention. We make sure that every client is served by the expertise of our whole firm." },
-      { "title": "Responsiveness", "text": "Companies who choose our firm rely on competent advice and fast, accurate personnel. We provide total financial services to individuals, large and small businesses, and other agencies." },
-      { "title": "Quality", "text": "Our primary goal as a trusted advisor is to be available and to provide insightful advice to enable our clients to make informed financial decisions. We feel it is extremely important to continually professionally educate ourselves to improve our technical expertise, financial knowledge and service to our clients." }
+      {
+        "title": "Professionalism",
+        "text": "By combining our expertise, experience, and the energy of our staff, each client receives close personal and professional attention. We make sure that every client is served by the expertise of our whole firm."
+      },
+      {
+        "title": "Responsiveness",
+        "text": "Companies who choose our firm rely on competent advice and fast, accurate personnel. We provide total financial services to individuals, large and small businesses, and other agencies."
+      },
+      {
+        "title": "Quality",
+        "text": "Our primary goal as a trusted advisor is to be available and to provide insightful advice to enable our clients to make informed financial decisions. We feel it is extremely important to continually professionally educate ourselves to improve our technical expertise, financial knowledge and service to our clients."
+      }
     ]
   },
   "faqs": [
-    { "q": "My company's books are a nightmare. I don't even know where to start.", "a": "We take care of your books for you, so you can get back to the job of running your business and generating profits." },
-    { "q": "I'm spending all my time managing payroll for my employees.", "a": "We offer payroll solutions that meet your business's needs and enable you to spend time doing what you do best, running your company." },
-    { "q": "I use QuickBooks, but I'm not sure I'm getting the most out of the software.", "a": "We offer a variety of services to help make sure that you are taking full advantage of QuickBooks' many features." },
-    { "q": "I made a mistake on my taxes.", "a": "We're here to help you resolve your tax problems and put an end to the misery that the IRS can put you through." },
-    { "q": "I need help planning my family's financial future.", "a": "We offer one-on-one guidance and a comprehensive financial plan that helps manage risk, improve performance, and ensure the growth and longevity of your wealth." },
-    { "q": "Do you work with individuals as well as businesses?", "a": "Yes. As a full-service CPA firm, we offer year-round assistance for individuals and businesses throughout the area." }
+    {
+      "q": "My company's books are a nightmare. I don't even know where to start.",
+      "a": "We take care of your books for you, so you can get back to the job of running your business and generating profits."
+    },
+    {
+      "q": "I'm spending all my time managing payroll for my employees.",
+      "a": "We offer payroll solutions that meet your business's needs and enable you to spend time doing what you do best, running your company."
+    },
+    {
+      "q": "I use QuickBooks, but I'm not sure I'm getting the most out of the software.",
+      "a": "We offer a variety of services to help make sure that you are taking full advantage of QuickBooks' many features."
+    },
+    {
+      "q": "I made a mistake on my taxes.",
+      "a": "We're here to help you resolve your tax problems and put an end to the misery that the IRS can put you through."
+    },
+    {
+      "q": "I need help planning my family's financial future.",
+      "a": "We offer one-on-one guidance and a comprehensive financial plan that helps manage risk, improve performance, and ensure the growth and longevity of your wealth."
+    },
+    {
+      "q": "Do you work with individuals as well as businesses?",
+      "a": "Yes. As a full-service CPA firm, we offer year-round assistance for individuals and businesses throughout the area."
+    }
   ],
   "resources": [
-    { "title": "ClientAxcess", "text": "Our client center, where you can sign in to reach your documents.", "href": "https://www.clientaxcess.com/#/user/login" },
-    { "title": "Client Portal", "text": "Our secure firm portal for registering an account and sending files to us.", "href": "https://portal.secure256.com/Public/Register.aspx?intDomainID=56616" },
-    { "title": "Pay Your Invoice", "text": "Pay a firm invoice online through CPACharge.", "href": "https://secure.cpacharge.com/pages/annthomascpa/payments" }
+    {
+      "title": "ClientAxcess",
+      "text": "Our client center, where you can sign in to reach your documents.",
+      "href": "https://www.clientaxcess.com/#/user/login"
+    },
+    {
+      "title": "Client Portal",
+      "text": "Our secure firm portal for registering an account and sending files to us.",
+      "href": "https://portal.secure256.com/Public/Register.aspx?intDomainID=56616"
+    },
+    {
+      "title": "Pay Your Invoice",
+      "text": "Pay a firm invoice online through CPACharge.",
+      "href": "https://secure.cpacharge.com/pages/annthomascpa/payments"
+    }
   ],
-  "serviceArea": ["League City", "Galveston County", "Southeast Houston"],
+  "serviceArea": [
+    "League City",
+    "Galveston County",
+    "Southeast Houston"
+  ],
   "facts": [
     {
       "heading": "Industries We Serve",
@@ -290,11 +439,27 @@
     },
     {
       "heading": "Tax Center",
-      "items": ["Track Your Refund", "Tax Due Dates", "Tax Rates", "IRS Tax Forms and Publications", "Record Retention Guide", "State Tax Forms"]
+      "items": [
+        "Track Your Refund",
+        "Tax Due Dates",
+        "Tax Rates",
+        "IRS Tax Forms and Publications",
+        "Record Retention Guide",
+        "State Tax Forms"
+      ]
     },
     {
       "heading": "Guides And Resources",
-      "items": ["Life Events", "Business Strategies", "Investment Strategies", "Tax Strategies for Business Owners", "Tax Strategies for Individuals", "Over 500 everyday financial questions answered", "Financial Calculators", "Internet Links"]
+      "items": [
+        "Life Events",
+        "Business Strategies",
+        "Investment Strategies",
+        "Tax Strategies for Business Owners",
+        "Tax Strategies for Individuals",
+        "Over 500 everyday financial questions answered",
+        "Financial Calculators",
+        "Internet Links"
+      ]
     },
     {
       "heading": "Client Tools",

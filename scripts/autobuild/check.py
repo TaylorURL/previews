@@ -19,6 +19,8 @@ REQUIRED = {
     "professional": ["name", "shortName", "phone", "email", "address", "town", "state", "brand", "hero", "services", "about"],
     "roofing": ["name", "shortName", "phone", "address", "town", "state", "brand", "hero", "services", "about", "serviceArea"],
     "hvac": ["name", "shortName", "summary", "phone", "address", "town", "state", "brand", "hero", "groups"],
+    "restaurant": ["name", "shortName", "cuisine", "phone", "address", "town", "state", "hours", "brand", "hero"],
+    "recreation": ["kind", "name", "shortName", "phone", "address", "town", "state", "hours", "brand", "hero", "programs"],
 }
 HERO = ["title", "lead"]
 BRAND = ["primary", "heading", "body", "fonts"]
@@ -78,22 +80,28 @@ def _slots(brand):
 
 
 def logo_problems(brand, root):
-    """Whether the logo file sits cleanly on the header color the brand gives it."""
+    """Whether the logo file is a clean cut-out of the mark, with what the page
+    needs to draw it on any ground."""
     b = brand.get("brand", {})
     if not b.get("logo"):
         return ["the brand has no logo"]
     path = os.path.join(root, "public") + b["logo"]
     if not os.path.exists(path):
         return [f"{b['logo']} does not exist"]
-    if not b.get("logoGround") or not b.get("logoHeight"):
-        return ["the logo has no logoGround or logoHeight: prepare it with python3 -m scripts.autobuild.gate logo"]
+    if not b.get("logoGround") or not b.get("logoHeight") or len(b.get("logoReads") or []) != logo.READ_LEVELS:
+        return ["the logo has no logoGround, logoHeight or logoReads: prepare it with python3 -m scripts.autobuild.gate logo"]
+    if b.get("logoMono") and not os.path.exists(os.path.join(root, "public") + b["logoMono"]):
+        problems_early = [f"{b['logoMono']} does not exist"]
+    else:
+        problems_early = []
     with Image.open(path) as image:
         arr = np.asarray(image.convert("RGBA"))
-    problems = []
+    problems = problems_early
     ground = images.rgbof(b["logoGround"])
     kind, color = logo.ground_of(arr)
-    if kind == "solid" and np.sqrt(sum((a - c) ** 2 for a, c in zip(color, ground))) > 30:
-        problems.append(f"the logo sits in a box of {logo.hexof(color)} on a {b['logoGround']} header")
+    if kind == "solid":
+        # The page sets the mark on its own grounds, so the file carries none.
+        problems.append(f"the logo still carries its own {logo.hexof(color)} background: cut it with python3 -m scripts.autobuild.gate logo")
     if kind == "busy":
         problems.append("the logo carries a picture or pattern behind it")
     share = logo.legibility(arr, ground)
@@ -122,7 +130,7 @@ def pictures(brand, root, slug):
                 problems.append(f"{f} does not exist")
                 continue
             with Image.open(path) as image:
-                if images.blank_mark(image) if f.endswith("logo.webp") else images.blank(image.convert("RGB")):
+                if images.blank_mark(image) if f.endswith(("logo.webp", "logo-mono.webp")) else images.blank(image.convert("RGB")):
                     problems.append(f"{f} is blank")
                 if f.endswith("-1600.webp") and ref in slots:
                     for why in quality.problems(quality.metrics(image), slots[ref]):

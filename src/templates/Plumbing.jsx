@@ -22,7 +22,7 @@ import {
   Zap,
 } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { EnquiryForm, Img, Stars, Facts, StudioCredit } from './shared.jsx';
+import { BrandLogo, EnquiryForm, Img, Stars, Facts, hexOr, mixHex, StudioCredit } from './shared.jsx';
 
 const ICONS = {
   flame: Flame,
@@ -72,13 +72,6 @@ function Eyebrow({ children, dark = false }) {
   );
 }
 
-/** The logo sized by height so tall and wide marks sit the same in the bar. */
-function Mark({ b, className = '', textClass = '' }) {
-  if (b.brand.logo) {
-    return <img className={`block w-auto max-w-[46vw] object-contain ${className}`} src={b.brand.logo} alt={b.name} />;
-  }
-  return <span className={`block font-heading text-2xl font-extrabold leading-none ${textClass}`}>{b.shortName}</span>;
-}
 
 function Header({ b, tel }) {
   const [open, setOpen] = useState(false);
@@ -95,7 +88,7 @@ function Header({ b, tel }) {
     <header className={`sticky ${stick} z-30 border-b border-ink/10 bg-white`}>
       <div className={`${wrap} flex min-h-[68px] items-center gap-6 py-2.5 lg:min-h-[84px]`}>
         <a href="#top" className="flex min-h-[44px] flex-none items-center" aria-label={`${b.name} home`} onClick={() => setOpen(false)}>
-          <Mark b={b} className="h-11 sm:h-12 lg:h-16" textClass="text-primary-deep" />
+          <BrandLogo b={b} ground="#ffffff" textClass="text-2xl font-extrabold leading-none text-primary-deep" />
         </a>
 
         <nav aria-label="Main" className="mx-auto hidden items-center gap-6 lg:flex xl:gap-8">
@@ -483,13 +476,7 @@ export default function Plumbing({ b }) {
       <footer className="bg-primary-deep pb-24 text-white/75 md:pb-0">
         <div className={`${wrap} grid gap-10 pb-12 pt-14 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:gap-12`}>
           <div className="grid content-start gap-4">
-            {b.brand.logo ? (
-              <span className="inline-flex w-fit rounded-lg bg-white px-3 py-2">
-                <Mark b={b} className="h-14" />
-              </span>
-            ) : (
-              <Mark b={b} textClass="text-white" />
-            )}
+            <BrandLogo b={b} ground={hexOr(b.brand.primaryDeep, mixHex(b.brand.primary, '#000000', 0.55))} textClass="text-2xl font-extrabold leading-none text-white" />
             <p className="max-w-xs leading-[1.6]">
               Plumbing in {b.town}, {b.state} and the communities around it.
             </p>

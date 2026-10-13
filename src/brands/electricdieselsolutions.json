@@ -13,9 +13,18 @@
   "rating": 5.0,
   "reviewCount": 228,
   "hours": [
-    ["Mon – Fri", "9 AM – 6 PM"],
-    ["Saturday", "9 AM – 2 PM"],
-    ["Sunday", "Closed"]
+    [
+      "Mon – Fri",
+      "9 AM – 6 PM"
+    ],
+    [
+      "Saturday",
+      "9 AM – 2 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
   ],
   "brand": {
     "primary": "#c0212a",
@@ -28,7 +37,24 @@
     "body": "'Lato', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Lato:wght@400;700&display=swap",
     "logo": "/brands/electricdieselsolutions/logo.webp",
-    "logoWidth": 170
+    "logoMono": "/brands/electricdieselsolutions/logo-mono.webp",
+    "logoWidth": 123,
+    "logoHeight": 58,
+    "logoRatio": 2.121,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.904,
+      0.89,
+      0.873,
+      0.856,
+      0.838,
+      0.828,
+      0.828,
+      0.844,
+      0.879,
+      0.927,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Diesel electrical and engine repair in Dayton, Texas",
@@ -53,35 +79,50 @@
           "title": "Datalink Diagnostics",
           "icon": "cable",
           "text": "Datalink faults traced through the truck until the cause is found, not guessed at.",
-          "points": ["Our specialty, alongside engine electrical and wiring", "Diagnosis before any parts go on"]
+          "points": [
+            "Our specialty, alongside engine electrical and wiring",
+            "Diagnosis before any parts go on"
+          ]
         },
         {
           "slug": "engine-electrical",
           "title": "Engine Electrical",
           "icon": "zap",
           "text": "Engine electrical problems across Detroit, CAT, Cummins, Maxx Force, DT Navistar, Mack, Volvo, Renault and Paccar.",
-          "points": ["90-day warranty on repairs", "Both worlds covered, mechanical and electrical"]
+          "points": [
+            "90-day warranty on repairs",
+            "Both worlds covered, mechanical and electrical"
+          ]
         },
         {
           "slug": "wiring-repair",
           "title": "Wiring Repair",
           "icon": "plug",
           "text": "Damaged, chafed and corroded wiring repaired so the fault stays fixed.",
-          "points": ["From a fuse change to a full rewire", "90-day warranty on repairs"]
+          "points": [
+            "From a fuse change to a full rewire",
+            "90-day warranty on repairs"
+          ]
         },
         {
           "slug": "harness-fabrication",
           "title": "Harness Fabrication",
           "icon": "settings",
           "text": "We fabricate our own harnesses in the shop when a repair needs one built rather than bought.",
-          "points": ["Built in house", "Over 6,000 sq ft of working area"]
+          "points": [
+            "Built in house",
+            "Over 6,000 sq ft of working area"
+          ]
         },
         {
           "slug": "remote-assistance",
           "title": "Remote Assistance",
           "icon": "gauge",
           "text": "We assist remotely and help numerous dealerships and shops throughout Houston and its surroundings.",
-          "points": ["Dealerships and independent shops", "Houston and the surrounding area"]
+          "points": [
+            "Dealerships and independent shops",
+            "Houston and the surrounding area"
+          ]
         }
       ]
     },
@@ -99,35 +140,50 @@
           "title": "Misfire Diagnosis",
           "icon": "flame",
           "text": "Misfires and cylinder imbalance diagnosed on Cummins and other diesel engines.",
-          "points": ["Cylinder imbalance testing", "Cause found before parts are replaced"]
+          "points": [
+            "Cylinder imbalance testing",
+            "Cause found before parts are replaced"
+          ]
         },
         {
           "slug": "fuel-trim-tuning",
           "title": "Fuel Trim Tuning",
           "icon": "gauge",
           "text": "We chase fuel trims for maximum performance and fuel economy, monitoring air and fuel live rather than assuming the engine is running well.",
-          "points": ["Live air and fuel monitoring", "Performance and fuel economy"]
+          "points": [
+            "Live air and fuel monitoring",
+            "Performance and fuel economy"
+          ]
         },
         {
           "slug": "engine-overhaul",
           "title": "Engine Overhaul",
           "icon": "settings",
           "text": "Full overhauls done in the shop, with a one-year unlimited mileage warranty.",
-          "points": ["One year, unlimited miles", "Over 6,000 sq ft of working area"]
+          "points": [
+            "One year, unlimited miles",
+            "Over 6,000 sq ft of working area"
+          ]
         },
         {
           "slug": "counterbore-service",
           "title": "Counterbore Service",
           "icon": "wrench",
           "text": "Counterbore service on diesel engine blocks, done in the shop.",
-          "points": ["Over 6,000 sq ft of working area", "90-day warranty on repairs"]
+          "points": [
+            "Over 6,000 sq ft of working area",
+            "90-day warranty on repairs"
+          ]
         },
         {
           "slug": "engine-swap",
           "title": "Engine Swap",
           "icon": "power",
           "text": "Engine swaps handled start to finish, mechanical and electrical both.",
-          "points": ["One stop shop for mechanical and electrical", "Quick turnaround"]
+          "points": [
+            "One stop shop for mechanical and electrical",
+            "Quick turnaround"
+          ]
         }
       ]
     },
@@ -143,14 +199,20 @@
           "title": "Mobile Service",
           "icon": "car",
           "text": "Minor repairs and maintenance handled where the truck sits, when the job can be done on-site.",
-          "points": ["Minor repairs and maintenance", "Houston and its surroundings"]
+          "points": [
+            "Minor repairs and maintenance",
+            "Houston and its surroundings"
+          ]
         },
         {
           "slug": "shop-support",
           "title": "Dealership And Shop Support",
           "icon": "building",
           "text": "We help numerous dealerships and shops throughout Houston and its surroundings, in person and remotely.",
-          "points": ["Datalink and electrical specialists", "Bilingual team"]
+          "points": [
+            "Datalink and electrical specialists",
+            "Bilingual team"
+          ]
         }
       ]
     }
@@ -166,9 +228,18 @@
     "image": "/brands/electricdieselsolutions/shop",
     "imageAlt": "The Electric Diesel Solutions shop in Dayton, Texas",
     "values": [
-      { "title": "Bilingual", "text": "Ya esta arreglado. The shop works in English and Spanish." },
-      { "title": "Quick Turnaround", "text": "Time is money, so the job is done in a timely manner to get you back on the road." },
-      { "title": "Quality Work", "text": "No shortcuts, and solutions rather than excuses." }
+      {
+        "title": "Bilingual",
+        "text": "Ya esta arreglado. The shop works in English and Spanish."
+      },
+      {
+        "title": "Quick Turnaround",
+        "text": "Time is money, so the job is done in a timely manner to get you back on the road."
+      },
+      {
+        "title": "Quality Work",
+        "text": "No shortcuts, and solutions rather than excuses."
+      }
     ]
   },
   "faqs": [
@@ -189,11 +260,23 @@
       "a": "We offer a 90-day warranty on all repairs performed by our skilled technicians. Engine overhauls, one-year unlimited miles."
     }
   ],
-  "serviceArea": ["Dayton", "Houston"],
+  "serviceArea": [
+    "Dayton",
+    "Houston"
+  ],
   "facts": [
     {
       "heading": "Engines We Work On",
-      "items": ["Detroit", "CAT", "Cummins", "Maxx Force", "DT Navistar", "Mack / Volvo", "Renault / Mack", "Paccar"]
+      "items": [
+        "Detroit",
+        "CAT",
+        "Cummins",
+        "Maxx Force",
+        "DT Navistar",
+        "Mack / Volvo",
+        "Renault / Mack",
+        "Paccar"
+      ]
     },
     {
       "heading": "Our Work",
@@ -210,7 +293,16 @@
     },
     {
       "heading": "Why Electric Diesel Solutions",
-      "items": ["Bilingual", "Customer service", "Reputation", "Quick turnaround", "Quality work", "Responsible", "Over 6,000 sq ft of working area", "Solutions, not excuses"]
+      "items": [
+        "Bilingual",
+        "Customer service",
+        "Reputation",
+        "Quick turnaround",
+        "Quality work",
+        "Responsible",
+        "Over 6,000 sq ft of working area",
+        "Solutions, not excuses"
+      ]
     },
     {
       "heading": "Visiting The Shop",
@@ -222,7 +314,11 @@
     },
     {
       "heading": "Follow Us",
-      "items": ["Facebook", "Instagram @electricdieselsolutions", "TikTok @electricdieselsolutions"]
+      "items": [
+        "Facebook",
+        "Instagram @electricdieselsolutions",
+        "TikTok @electricdieselsolutions"
+      ]
     }
   ]
 }

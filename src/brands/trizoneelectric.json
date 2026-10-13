@@ -13,8 +13,14 @@
   "rating": 4.9,
   "reviewCount": 76,
   "hours": [
-    ["Mon – Fri", "8 AM – 5 PM"],
-    ["Sat – Sun", "Emergency only"]
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Emergency only"
+    ]
   ],
   "brand": {
     "primary": "#4e4c61",
@@ -28,7 +34,24 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
     "logo": "/brands/trizoneelectric/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/trizoneelectric/logo-mono.webp",
+    "logoWidth": 246,
+    "logoHeight": 48,
+    "logoRatio": 5.117,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.508,
+      0.359,
+      0.213,
+      0.072,
+      0.124,
+      0.262,
+      0.407,
+      0.552,
+      0.703,
+      0.856,
+      1.0
+    ]
   },
   "emergency": {
     "title": "24-hour emergency electrical service",

@@ -14,9 +14,18 @@
   "reviewCount": 12,
   "since": 1990,
   "hours": [
-    ["Mon – Fri", "8 AM – 4 PM"],
-    ["Saturday", "Closed"],
-    ["Sunday", "Closed"]
+    [
+      "Mon – Fri",
+      "8 AM – 4 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
   ],
   "brand": {
     "primary": "#0b6240",
@@ -30,7 +39,24 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
     "logo": "/brands/technicalautomation/logo.webp",
-    "logoWidth": 72
+    "logoMono": "/brands/technicalautomation/logo-mono.webp",
+    "logoWidth": 93,
+    "logoHeight": 58,
+    "logoRatio": 1.607,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.385,
+      0.254,
+      0.14,
+      0.11,
+      0.204,
+      0.334,
+      0.464,
+      0.594,
+      0.731,
+      0.869,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Instrumentation, electrical and analyzer services",
@@ -55,21 +81,35 @@
           "title": "Analyzer Houses and Shelters",
           "icon": "building",
           "text": "Walk-in analyzer houses and shelters built to the requirements of the application rather than a catalogue model.",
-          "points": ["Analyzer houses", "3-sided analyzer shelters", "Remote instrument enclosures"]
+          "points": [
+            "Analyzer houses",
+            "3-sided analyzer shelters",
+            "Remote instrument enclosures"
+          ]
         },
         {
           "slug": "racks-cabinets-and-skids",
           "title": "Racks, Cabinets and Skids",
           "icon": "settings",
           "text": "Racks, cabinets and skids for analyzers, cylinders and equipment, assembled and tested before they reach the site.",
-          "points": ["2-sided analyzer racks", "Analyzer cabinets", "Cylinder and equipment racks", "Equipment skids"]
+          "points": [
+            "2-sided analyzer racks",
+            "Analyzer cabinets",
+            "Cylinder and equipment racks",
+            "Equipment skids"
+          ]
         },
         {
           "slug": "sample-systems",
           "title": "Sample Systems",
           "icon": "cable",
           "text": "Custom sample systems and the lines, probes and recovery that go with them, designed around the stream being measured.",
-          "points": ["Custom sample systems", "Sample recovery systems", "Sample lines", "Sample probes"]
+          "points": [
+            "Custom sample systems",
+            "Sample recovery systems",
+            "Sample lines",
+            "Sample probes"
+          ]
         },
         {
           "slug": "standalone-analyzer-systems",
@@ -315,7 +355,18 @@
     },
     {
       "heading": "Consortiums, safety councils and third parties",
-      "items": ["Avetta", "ISN", "DISA", "S2Verify", "NCMS", "ISTC", "BSC", "OSCA", "ICA", "Global Health"]
+      "items": [
+        "Avetta",
+        "ISN",
+        "DISA",
+        "S2Verify",
+        "NCMS",
+        "ISTC",
+        "BSC",
+        "OSCA",
+        "ICA",
+        "Global Health"
+      ]
     },
     {
       "heading": "Where we work",

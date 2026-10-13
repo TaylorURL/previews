@@ -13,10 +13,22 @@
   "rating": 5.0,
   "reviewCount": 533,
   "hours": [
-    ["Monday", "7 AM – 11:30 PM"],
-    ["Tue – Fri", "7:30 AM – 11:30 PM"],
-    ["Saturday", "Open 24 hours"],
-    ["Sunday", "7:30 AM – 11:30 PM"]
+    [
+      "Monday",
+      "7 AM – 11:30 PM"
+    ],
+    [
+      "Tue – Fri",
+      "7:30 AM – 11:30 PM"
+    ],
+    [
+      "Saturday",
+      "Open 24 hours"
+    ],
+    [
+      "Sunday",
+      "7:30 AM – 11:30 PM"
+    ]
   ],
   "brand": {
     "primary": "#193388",
@@ -30,7 +42,24 @@
     "body": "'Karla', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Karla:wght@400;500;600;700&display=swap",
     "logo": "/brands/grandslamplumbing/logo.webp",
-    "logoWidth": 180
+    "logoMono": "/brands/grandslamplumbing/logo-mono.webp",
+    "logoWidth": 75,
+    "logoHeight": 74,
+    "logoRatio": 1.014,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.943,
+      0.81,
+      0.635,
+      0.452,
+      0.264,
+      0.124,
+      0.23,
+      0.412,
+      0.608,
+      0.809,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Family owned and operated plumbing",
@@ -41,7 +70,12 @@
     "imageAlt": "The Grand Slam Plumbing van parked in a driveway"
   },
   "sameDay": "We look over the day's schedule to see where we can put you in line, and get the job done the same day wherever we can.",
-  "licenses": [{ "label": "Responsible Master Plumber", "number": "Joshua Fasske, RMP #42025" }],
+  "licenses": [
+    {
+      "label": "Responsible Master Plumber",
+      "number": "Joshua Fasske, RMP #42025"
+    }
+  ],
   "groups": [
     {
       "slug": "water-heaters",
@@ -57,14 +91,21 @@
           "title": "Water Heater Repair",
           "icon": "wrench",
           "text": "No hot water, not enough hot water or a leak at the tank, looked at and repaired.",
-          "points": ["Gas and electric tanks", "Tank flushes", "Options and pricing before we start"]
+          "points": [
+            "Gas and electric tanks",
+            "Tank flushes",
+            "Options and pricing before we start"
+          ]
         },
         {
           "slug": "water-heater-installation",
           "title": "Water Heater Installation",
           "icon": "flame",
           "text": "A new tank water heater installed, with the old one and its parts taken away.",
-          "points": ["Work completed in a timely manner", "The best materials possible"]
+          "points": [
+            "Work completed in a timely manner",
+            "The best materials possible"
+          ]
         },
         {
           "slug": "tankless-water-heaters",
@@ -93,7 +134,9 @@
           "title": "Drain Cleaning",
           "icon": "waves",
           "text": "Kitchen, bath and main line drains cleared and left running the way they should.",
-          "points": ["Same-day work where the schedule allows"]
+          "points": [
+            "Same-day work where the schedule allows"
+          ]
         },
         {
           "slug": "water-lines",
@@ -123,21 +166,27 @@
           "title": "Faucets",
           "icon": "droplets",
           "text": "Kitchen, bath and outdoor faucets repaired or swapped for a new one.",
-          "points": ["Repairs and installs both"]
+          "points": [
+            "Repairs and installs both"
+          ]
         },
         {
           "slug": "toilets",
           "title": "Toilets",
           "icon": "wrench",
           "text": "Running, leaking and rocking toilets repaired, and new ones set on a sound flange.",
-          "points": ["Flange repairs done properly, not shimmed"]
+          "points": [
+            "Flange repairs done properly, not shimmed"
+          ]
         },
         {
           "slug": "garbage-disposals",
           "title": "Garbage Disposals",
           "icon": "settings",
           "text": "Jammed and leaking disposals repaired, and new units fitted under the sink.",
-          "points": ["Drain checked while we are under there"]
+          "points": [
+            "Drain checked while we are under there"
+          ]
         }
       ]
     },
@@ -155,14 +204,19 @@
           "title": "Bathroom Remodels",
           "icon": "droplets",
           "text": "Tub and shower installs, valves, drains and the fixtures that finish the room.",
-          "points": ["Tub and shower installs", "Fixtures set straight and level"]
+          "points": [
+            "Tub and shower installs",
+            "Fixtures set straight and level"
+          ]
         },
         {
           "slug": "kitchen-remodels",
           "title": "Kitchen Remodels",
           "icon": "home",
           "text": "Sink, faucet, disposal and supply work for a kitchen that is being rebuilt.",
-          "points": ["Repairs and installs, we do it all"]
+          "points": [
+            "Repairs and installs, we do it all"
+          ]
         }
       ]
     },
@@ -178,14 +232,18 @@
           "title": "Gas Line Installation",
           "icon": "flame",
           "text": "New natural gas lines run to appliances inside the house and out on the patio.",
-          "points": ["Licensed master plumber on the job"]
+          "points": [
+            "Licensed master plumber on the job"
+          ]
         },
         {
           "slug": "gas-line-repair",
           "title": "Gas Line Repair",
           "icon": "wrench",
           "text": "Leaking and damaged natural gas lines located, repaired and tested.",
-          "points": ["The best materials possible"]
+          "points": [
+            "The best materials possible"
+          ]
         }
       ]
     }
@@ -312,7 +370,11 @@
     },
     {
       "heading": "Big Blue",
-      "items": ["Smoke-free trucks", "Fully stocked", "Designed to arrive professional and clean"]
+      "items": [
+        "Smoke-free trucks",
+        "Fully stocked",
+        "Designed to arrive professional and clean"
+      ]
     },
     {
       "heading": "Licensing",

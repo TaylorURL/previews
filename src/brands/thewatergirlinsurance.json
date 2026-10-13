@@ -15,9 +15,18 @@
   "rating": 5.0,
   "reviewCount": 53,
   "hours": [
-    ["Mon – Fri", "9 AM – 5 PM"],
-    ["Saturday", "9 AM – 1 PM"],
-    ["Sunday", "Closed"]
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "9 AM – 1 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
   ],
   "cta": {
     "label": "Get a Quote",
@@ -36,7 +45,24 @@
     "body": "'Roboto', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Roboto:wght@300;400;500;700&display=swap",
     "logo": "/brands/thewatergirlinsurance/logo.webp",
-    "logoWidth": 190
+    "logoMono": "/brands/thewatergirlinsurance/logo-mono.webp",
+    "logoWidth": 109,
+    "logoHeight": 58,
+    "logoRatio": 1.879,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.311,
+      0.263,
+      0.26,
+      0.274,
+      0.313,
+      0.394,
+      0.504,
+      0.623,
+      0.749,
+      0.877,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Boat and yacht insurance in Seabrook, Texas",
@@ -180,7 +206,11 @@
   },
   "affiliations": {
     "title": "Carriers we represent",
-    "items": ["Progressive", "GEICO", "American Modern"]
+    "items": [
+      "Progressive",
+      "GEICO",
+      "American Modern"
+    ]
   },
   "about": {
     "title": "Based in Seabrook, in the heart of the Clear Lake boating community.",

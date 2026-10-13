@@ -14,9 +14,18 @@
   "rating": 5.0,
   "reviewCount": 55,
   "hours": [
-    ["Mon – Fri", "10:30 AM – 7 PM"],
-    ["Saturday", "10:30 AM – 5:30 PM"],
-    ["Sunday", "10:30 AM – 4:30 PM"]
+    [
+      "Mon – Fri",
+      "10:30 AM – 7 PM"
+    ],
+    [
+      "Saturday",
+      "10:30 AM – 5:30 PM"
+    ],
+    [
+      "Sunday",
+      "10:30 AM – 4:30 PM"
+    ]
   ],
   "cta": {
     "label": "Contact Us",
@@ -35,7 +44,24 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap",
     "logo": "/brands/abtaxfirmmultiservice/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/abtaxfirmmultiservice/logo-mono.webp",
+    "logoWidth": 260,
+    "logoHeight": 38,
+    "logoRatio": 6.897,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.542,
+      0.436,
+      0.335,
+      0.284,
+      0.32,
+      0.372,
+      0.432,
+      0.526,
+      0.673,
+      0.837,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Tax firm in Pasadena, Texas",
@@ -64,10 +90,22 @@
       "image": "/brands/abtaxfirmmultiservice/tax-preparation",
       "imageAlt": "A laptop and phone showing figures on a desk",
       "covers": [
-        { "title": "Federal returns", "text": "Federal tax returns prepared and filed for the year in question." },
-        { "title": "State returns", "text": "State returns prepared for all 50 states, not only Texas." },
-        { "title": "Individuals", "text": "Personal returns prepared accurately and filed on time." },
-        { "title": "Businesses", "text": "Business returns handled with the same preparation and filing." }
+        {
+          "title": "Federal returns",
+          "text": "Federal tax returns prepared and filed for the year in question."
+        },
+        {
+          "title": "State returns",
+          "text": "State returns prepared for all 50 states, not only Texas."
+        },
+        {
+          "title": "Individuals",
+          "text": "Personal returns prepared accurately and filed on time."
+        },
+        {
+          "title": "Businesses",
+          "text": "Business returns handled with the same preparation and filing."
+        }
       ]
     },
     {
@@ -80,9 +118,18 @@
       "image": "/brands/abtaxfirmmultiservice/tax-planning",
       "imageAlt": "Banded stacks of United States currency",
       "covers": [
-        { "title": "Minimizing liabilities", "text": "Planning your taxes strategically so your liability is as low as it can be." },
-        { "title": "Maximizing deductions", "text": "Making sure the deductions you qualify for are the ones claimed." },
-        { "title": "State and federal", "text": "Planning that covers your state return as well as the federal one." }
+        {
+          "title": "Minimizing liabilities",
+          "text": "Planning your taxes strategically so your liability is as low as it can be."
+        },
+        {
+          "title": "Maximizing deductions",
+          "text": "Making sure the deductions you qualify for are the ones claimed."
+        },
+        {
+          "title": "State and federal",
+          "text": "Planning that covers your state return as well as the federal one."
+        }
       ]
     },
     {
@@ -95,8 +142,14 @@
       "image": "/brands/abtaxfirmmultiservice/itin-process",
       "imageAlt": "Passports from several countries laid out together",
       "covers": [
-        { "title": "The ITIN process", "text": "Assistance working through the ITIN process from start to finish." },
-        { "title": "ITIN renewal", "text": "Assistance renewing an ITIN so it can be used on a return again." }
+        {
+          "title": "The ITIN process",
+          "text": "Assistance working through the ITIN process from start to finish."
+        },
+        {
+          "title": "ITIN renewal",
+          "text": "Assistance renewing an ITIN so it can be used on a return again."
+        }
       ]
     }
   ],

@@ -11,7 +11,20 @@
   "town": "League City",
   "state": "TX",
   "zip": "77573",
-  "hours": [["Mon – Fri", "8 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "cta": {
     "label": "Schedule a Consultation",
     "text": "Reach out by phone, text or email and we will talk through the services that fit, then send a proposal and price plan built around them."
@@ -29,7 +42,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/dmsassociates/logo.webp",
-    "logoWidth": 170
+    "logoMono": "/brands/dmsassociates/logo-mono.webp",
+    "logoWidth": 105,
+    "logoHeight": 58,
+    "logoRatio": 1.81,
+    "logoGround": "#14181f",
+    "logoReads": [
+      1.0,
+      0.989,
+      0.855,
+      0.72,
+      0.583,
+      0.443,
+      0.321,
+      0.203,
+      0.098,
+      0.185,
+      0.3
+    ]
   },
   "hero": {
     "eyebrow": "Virtual accounting, tax and CFO support",
@@ -47,7 +77,10 @@
     "title": "Business finance, tax services and family office support under one roof.",
     "text": "Pick a service to see what it covers, or call or text and talk it through with our team."
   },
-  "audiences": { "individuals": "Family Office", "businesses": "Business Finance" },
+  "audiences": {
+    "individuals": "Family Office",
+    "businesses": "Business Finance"
+  },
   "services": [
     {
       "slug": "accounting-support",
@@ -58,9 +91,18 @@
       "text": "As a business owner you have more important things to do than manage payroll, pay bills, create invoicing and reconcile bank accounts. We take care of all aspects of your business accounting.",
       "lead": "We take care of all aspects of your business accounting so you can get back to the job of running your business and generating profits.",
       "covers": [
-        { "title": "Bank reconciliation", "text": "Accounts reconciled as part of full service accounting support, so your records stay current." },
-        { "title": "Invoicing and bill payment", "text": "Invoices created and bills paid on the schedule your business works to." },
-        { "title": "Real-time records", "text": "Clients have access to an updated view of their financial reports within 24 hours of receipt of accounting documentation." }
+        {
+          "title": "Bank reconciliation",
+          "text": "Accounts reconciled as part of full service accounting support, so your records stay current."
+        },
+        {
+          "title": "Invoicing and bill payment",
+          "text": "Invoices created and bills paid on the schedule your business works to."
+        },
+        {
+          "title": "Real-time records",
+          "text": "Clients have access to an updated view of their financial reports within 24 hours of receipt of accounting documentation."
+        }
       ]
     },
     {
@@ -72,9 +114,18 @@
       "text": "We handle all aspects of accounts payable from payment of bills, vendor tracking, processing of W9s, 1099 reporting and compliance.",
       "lead": "You choose your level of input, from viewing and approving every bill payment to being completely hands-off, and we'll make sure your payables are handled professionally.",
       "covers": [
-        { "title": "Bill payment", "text": "Payment of bills on your schedule, with as much or as little approval from you as you want." },
-        { "title": "Vendor tracking", "text": "Vendor records kept current so payments and reporting line up." },
-        { "title": "W9s and 1099s", "text": "Processing of W9s, 1099 reporting and compliance." }
+        {
+          "title": "Bill payment",
+          "text": "Payment of bills on your schedule, with as much or as little approval from you as you want."
+        },
+        {
+          "title": "Vendor tracking",
+          "text": "Vendor records kept current so payments and reporting line up."
+        },
+        {
+          "title": "W9s and 1099s",
+          "text": "Processing of W9s, 1099 reporting and compliance."
+        }
       ]
     },
     {
@@ -86,9 +137,18 @@
       "text": "No matter your size or process, we can help with accounts receivable from start to finish, whether that is complex contracts and proposals, job costing or straight customer invoicing.",
       "lead": "We can brand your A/R and carry it over the finish line as your outsourced finance department.",
       "covers": [
-        { "title": "Customer invoicing", "text": "Straight invoicing or complex billing, branded as your own finance department." },
-        { "title": "Contracts and proposals", "text": "Receivables managed against complex contracts and proposals." },
-        { "title": "Job costing", "text": "Tracking what each job earns and what it costs to deliver." }
+        {
+          "title": "Customer invoicing",
+          "text": "Straight invoicing or complex billing, branded as your own finance department."
+        },
+        {
+          "title": "Contracts and proposals",
+          "text": "Receivables managed against complex contracts and proposals."
+        },
+        {
+          "title": "Job costing",
+          "text": "Tracking what each job earns and what it costs to deliver."
+        }
       ]
     },
     {
@@ -100,9 +160,18 @@
       "text": "We offer payroll solutions that meet your business' needs and enable you to spend time doing what you do best, functioning as your outsourced human resources office.",
       "lead": "We handle anything from complex commission calculations, wage garnishments and multiple payroll schedules in addition to establishing standard procedures and employee handbooks.",
       "covers": [
-        { "title": "Payroll processing", "text": "Multiple payroll schedules, complex commission calculations and wage garnishments." },
-        { "title": "Tax reporting and withholdings", "text": "Payroll handled for all U.S. states including all required tax reporting, withholdings, garnishments and vendor 1099 reporting." },
-        { "title": "Outsourced H/R", "text": "Standard procedures and employee handbooks established alongside the payroll work." }
+        {
+          "title": "Payroll processing",
+          "text": "Multiple payroll schedules, complex commission calculations and wage garnishments."
+        },
+        {
+          "title": "Tax reporting and withholdings",
+          "text": "Payroll handled for all U.S. states including all required tax reporting, withholdings, garnishments and vendor 1099 reporting."
+        },
+        {
+          "title": "Outsourced H/R",
+          "text": "Standard procedures and employee handbooks established alongside the payroll work."
+        }
       ]
     },
     {
@@ -114,9 +183,18 @@
       "text": "Collection on open A/R is a business owner's biggest nightmare. Our staff has a track record for collecting in the stickiest of situations.",
       "lead": "We get your invoice on the priority payment list and handle collections in a professional and timely manner while keeping you informed every step of the way.",
       "covers": [
-        { "title": "Priority payment", "text": "Getting your invoice onto the customer's priority payment list." },
-        { "title": "Professional handling", "text": "Collections carried out in a professional and timely manner, with the customer relationship intact." },
-        { "title": "Kept informed", "text": "You are kept informed every step of the way." }
+        {
+          "title": "Priority payment",
+          "text": "Getting your invoice onto the customer's priority payment list."
+        },
+        {
+          "title": "Professional handling",
+          "text": "Collections carried out in a professional and timely manner, with the customer relationship intact."
+        },
+        {
+          "title": "Kept informed",
+          "text": "You are kept informed every step of the way."
+        }
       ]
     },
     {
@@ -128,9 +206,18 @@
       "text": "From custom commission reporting, complex job tracking, weekly payables check-ins or standard financial reports, our team can generate or custom-create any report needed.",
       "lead": "Always know where you stand financially with our quick response team and reporting options customized to your own business, on the real-time schedule you desire.",
       "covers": [
-        { "title": "Standard financial reports", "text": "The reports you expect, produced on the schedule you ask for." },
-        { "title": "Custom reporting", "text": "Custom commission reporting, complex job tracking and weekly payables check-ins." },
-        { "title": "Proactive KPI tracking", "text": "KPI tracking and executive financial reports, so nothing waits until year-end to surface." }
+        {
+          "title": "Standard financial reports",
+          "text": "The reports you expect, produced on the schedule you ask for."
+        },
+        {
+          "title": "Custom reporting",
+          "text": "Custom commission reporting, complex job tracking and weekly payables check-ins."
+        },
+        {
+          "title": "Proactive KPI tracking",
+          "text": "KPI tracking and executive financial reports, so nothing waits until year-end to surface."
+        }
       ]
     },
     {
@@ -142,9 +229,18 @@
       "text": "Our CFO Services mean you can have your own finance department at your fingertips. Your clients don't have to know that your CFO is not on-site.",
       "lead": "DMS offers a boutique, concierge type accounting, business management and CFO/Controller support service, with direct communication at the level your own clients expect.",
       "covers": [
-        { "title": "CFO and controller support", "text": "Senior financial oversight without a full-time hire on the payroll." },
-        { "title": "Executive reporting", "text": "Proactive KPI tracking and executive financial reports to steer decisions." },
-        { "title": "Client-facing work", "text": "Direct communication with your customers at the highest level, in your name." }
+        {
+          "title": "CFO and controller support",
+          "text": "Senior financial oversight without a full-time hire on the payroll."
+        },
+        {
+          "title": "Executive reporting",
+          "text": "Proactive KPI tracking and executive financial reports to steer decisions."
+        },
+        {
+          "title": "Client-facing work",
+          "text": "Direct communication with your customers at the highest level, in your name."
+        }
       ]
     },
     {
@@ -156,10 +252,22 @@
       "text": "Your business tax return should be a reflection of well-maintained financial records and thoughtful planning throughout the year. We prepare and file returns while coordinating the tax process with your accounting.",
       "lead": "By understanding the complete financial picture, we can help ensure that your tax filings are accurate, timely, and supported by reliable financial information.",
       "covers": [
-        { "title": "Business returns", "text": "Federal and state business tax returns, including partnership, corporate and S-Corporation returns." },
-        { "title": "Documents and compliance", "text": "Tax document review and organization, plus tax compliance and filing support." },
-        { "title": "Coordinated with your books", "text": "Coordination of tax information with your accounting records and year-end reporting." },
-        { "title": "Who it is for", "text": "We offer our full tax portfolio of services to existing accounting and bookkeeping clients." }
+        {
+          "title": "Business returns",
+          "text": "Federal and state business tax returns, including partnership, corporate and S-Corporation returns."
+        },
+        {
+          "title": "Documents and compliance",
+          "text": "Tax document review and organization, plus tax compliance and filing support."
+        },
+        {
+          "title": "Coordinated with your books",
+          "text": "Coordination of tax information with your accounting records and year-end reporting."
+        },
+        {
+          "title": "Who it is for",
+          "text": "We offer our full tax portfolio of services to existing accounting and bookkeeping clients."
+        }
       ]
     },
     {
@@ -171,9 +279,18 @@
       "text": "The best time to think about taxes is before the tax return is due. Tax planning is an ongoing process, and changes in income, investments, ownership structure or major purchases all have tax consequences.",
       "lead": "We work with clients throughout the year to help identify tax considerations before decisions are finalized, looking beyond the current return to how today's decisions affect your future tax position.",
       "covers": [
-        { "title": "Year-round analysis", "text": "With over 30 years of tax preparation experience, we provide year-round analysis to reduce tax liability." },
-        { "title": "Business decisions", "text": "Reviewing business structure, income, expenses, distributions and retirement planning." },
-        { "title": "Ahead of the decision", "text": "Tax considerations raised before a purchase, sale or structure change is finalized." }
+        {
+          "title": "Year-round analysis",
+          "text": "With over 30 years of tax preparation experience, we provide year-round analysis to reduce tax liability."
+        },
+        {
+          "title": "Business decisions",
+          "text": "Reviewing business structure, income, expenses, distributions and retirement planning."
+        },
+        {
+          "title": "Ahead of the decision",
+          "text": "Tax considerations raised before a purchase, sale or structure change is finalized."
+        }
       ]
     },
     {
@@ -185,10 +302,22 @@
       "text": "Alongside the accounting, DMS helps with the decisions around it: forming a new entity, projecting cash flow, winning work with professional proposals and supporting you in litigation.",
       "lead": "Full service financial strategies to maximize profits and accelerate growth, from the day the entity is formed onward.",
       "covers": [
-        { "title": "New business formation", "text": "A strong plan of action for a new venture, avoiding the common pitfalls many owners make when setting up a new business entity." },
-        { "title": "Cash flow management", "text": "Cash flow projections to get you on track, then support for your efforts as you move forward." },
-        { "title": "Proposals and contracts", "text": "Professional presentation software and our expertise in winning proposals, with electronic signatures and automatic invoicing." },
-        { "title": "Litigation support", "text": "The expertise of an experienced accountant to assist with documentation and backup that supports your position." }
+        {
+          "title": "New business formation",
+          "text": "A strong plan of action for a new venture, avoiding the common pitfalls many owners make when setting up a new business entity."
+        },
+        {
+          "title": "Cash flow management",
+          "text": "Cash flow projections to get you on track, then support for your efforts as you move forward."
+        },
+        {
+          "title": "Proposals and contracts",
+          "text": "Professional presentation software and our expertise in winning proposals, with electronic signatures and automatic invoicing."
+        },
+        {
+          "title": "Litigation support",
+          "text": "The expertise of an experienced accountant to assist with documentation and backup that supports your position."
+        }
       ]
     },
     {
@@ -200,9 +329,18 @@
       "text": "Occupational crime is most often committed by the most tenured, loyal and reliable employees, the very employees business owners trust with everything.",
       "lead": "DMS brings decades of experience in helping our clients uncover deeply embedded internal fraud and embezzlement, and in closing the gaps that let it happen.",
       "covers": [
-        { "title": "Internal controls", "text": "We assess your internal control systems for efficiency and effectiveness, then recommend changes that make the company less vulnerable to fraudulent activity." },
-        { "title": "Forensic accounting", "text": "Decades of experience uncovering deeply embedded internal fraud and embezzlement." },
-        { "title": "Privacy and confidentiality", "text": "The fierce protection of our client's confidentiality and the security of their records is at the very top of our priority list." }
+        {
+          "title": "Internal controls",
+          "text": "We assess your internal control systems for efficiency and effectiveness, then recommend changes that make the company less vulnerable to fraudulent activity."
+        },
+        {
+          "title": "Forensic accounting",
+          "text": "Decades of experience uncovering deeply embedded internal fraud and embezzlement."
+        },
+        {
+          "title": "Privacy and confidentiality",
+          "text": "The fierce protection of our client's confidentiality and the security of their records is at the very top of our priority list."
+        }
       ]
     },
     {
@@ -214,10 +352,22 @@
       "text": "Personal taxes can become increasingly complicated as your financial life grows. We prepare individual returns in a way that is organized, efficient and as straightforward as possible.",
       "lead": "We take the time to understand your financial circumstances and ensure that the information supporting your return is complete and accurate.",
       "covers": [
-        { "title": "Individual returns", "text": "Individual federal and state tax returns, including returns for business owners." },
-        { "title": "Income reporting", "text": "Investment and other income reporting, and rental and real estate tax reporting." },
-        { "title": "Organization and review", "text": "Tax document organization and review ahead of filing." },
-        { "title": "Planning", "text": "Year-end tax planning and coordination of personal and business tax considerations." }
+        {
+          "title": "Individual returns",
+          "text": "Individual federal and state tax returns, including returns for business owners."
+        },
+        {
+          "title": "Income reporting",
+          "text": "Investment and other income reporting, and rental and real estate tax reporting."
+        },
+        {
+          "title": "Organization and review",
+          "text": "Tax document organization and review ahead of filing."
+        },
+        {
+          "title": "Planning",
+          "text": "Year-end tax planning and coordination of personal and business tax considerations."
+        }
       ]
     },
     {
@@ -229,10 +379,22 @@
       "text": "Our range of accounting support services include reconciliation of all income and expenses, cash flow management and reporting to a client-facing dashboard for full transparency of records and cash status.",
       "lead": "A full suite of family office services from a team who values security and confidentiality above all else.",
       "covers": [
-        { "title": "Accounting and bookkeeping", "text": "Reconciliation of all income and expenses, cash flow management and reporting to a client-facing dashboard." },
-        { "title": "Payroll processing", "text": "From a handful of household assistants to large groups of corporate employees, payroll for all U.S. states with the required tax reporting and withholdings." },
-        { "title": "Tax planning with your preparer", "text": "Should you have a tax preparer you wish to continue working with, we assist with income tax planning by preparing all financial records in coordination with them." },
-        { "title": "Tax services", "text": "Our full tax portfolio is available to existing Family Office clients only; we do not offer it as a standalone service." }
+        {
+          "title": "Accounting and bookkeeping",
+          "text": "Reconciliation of all income and expenses, cash flow management and reporting to a client-facing dashboard."
+        },
+        {
+          "title": "Payroll processing",
+          "text": "From a handful of household assistants to large groups of corporate employees, payroll for all U.S. states with the required tax reporting and withholdings."
+        },
+        {
+          "title": "Tax planning with your preparer",
+          "text": "Should you have a tax preparer you wish to continue working with, we assist with income tax planning by preparing all financial records in coordination with them."
+        },
+        {
+          "title": "Tax services",
+          "text": "Our full tax portfolio is available to existing Family Office clients only; we do not offer it as a standalone service."
+        }
       ]
     },
     {
@@ -244,9 +406,18 @@
       "text": "Our accounting support team handles the tracking and collection of income and receivables, timely deposit of payments and a detailed system to monitor income, advances and recoupments.",
       "lead": "Coordinating family financial, investment and lifestyle needs, down to the daily record keeping.",
       "covers": [
-        { "title": "Income management", "text": "Tracking and collection of income and receivables, timely deposits, and monitoring of income, advances and recoupments." },
-        { "title": "Bill payments", "text": "Payment of all personal, household and business expenses with daily record keeping on a client-facing dashboard showing open, paid and disputed bills." },
-        { "title": "Royalty review and auditing", "text": "Our team is well versed in royalty agreements and reviews statements to ensure payments arrive on time and in full and that contractual obligations are met." }
+        {
+          "title": "Income management",
+          "text": "Tracking and collection of income and receivables, timely deposits, and monitoring of income, advances and recoupments."
+        },
+        {
+          "title": "Bill payments",
+          "text": "Payment of all personal, household and business expenses with daily record keeping on a client-facing dashboard showing open, paid and disputed bills."
+        },
+        {
+          "title": "Royalty review and auditing",
+          "text": "Our team is well versed in royalty agreements and reviews statements to ensure payments arrive on time and in full and that contractual obligations are met."
+        }
       ]
     },
     {
@@ -258,11 +429,26 @@
       "text": "Using our proven methodology, we work closely with your financial advisors to establish a budget that meets your day-to-day lifestyle spending needs and sustains your wealth.",
       "lead": "Allowing you the peace of mind to truly enjoy what you've created.",
       "covers": [
-        { "title": "Lifestyle budgeting", "text": "A budget built with your financial advisors that covers day-to-day spending and manages wealth over the long run." },
-        { "title": "Cash flow management", "text": "Analysis of cash inflow and outflow against budgeted goals, with regular reporting to your investment or professional consultants." },
-        { "title": "Contract review and SAG-AFTRA negotiations", "text": "Years of experience reviewing SAG-AFTRA contracts and working with agencies to secure the most favorable terms." },
-        { "title": "Union and guild declarations", "text": "Monthly union reporting, guild audits and the day-to-day paperwork that keeps licenses, memberships and contractual obligations current." },
-        { "title": "Structuring of entities", "text": "Setup and filing of personally held and business entities in any US state, with structuring analysed for best tax practice alongside your legal counsel." }
+        {
+          "title": "Lifestyle budgeting",
+          "text": "A budget built with your financial advisors that covers day-to-day spending and manages wealth over the long run."
+        },
+        {
+          "title": "Cash flow management",
+          "text": "Analysis of cash inflow and outflow against budgeted goals, with regular reporting to your investment or professional consultants."
+        },
+        {
+          "title": "Contract review and SAG-AFTRA negotiations",
+          "text": "Years of experience reviewing SAG-AFTRA contracts and working with agencies to secure the most favorable terms."
+        },
+        {
+          "title": "Union and guild declarations",
+          "text": "Monthly union reporting, guild audits and the day-to-day paperwork that keeps licenses, memberships and contractual obligations current."
+        },
+        {
+          "title": "Structuring of entities",
+          "text": "Setup and filing of personally held and business entities in any US state, with structuring analysed for best tax practice alongside your legal counsel."
+        }
       ]
     },
     {
@@ -274,8 +460,14 @@
       "text": "Confidentiality and the protection of our client's personal and financial resources is of utmost importance.",
       "lead": "Through our diligence in accounting and intimate knowledge of our client's spending habits, financial issues surface promptly and are resolved quickly, leading to immediate recognition of potential security risks, fraudulent activity or breaches of any kind.",
       "covers": [
-        { "title": "Fraud prevention", "text": "Close knowledge of day-to-day spending means anything out of pattern is seen and dealt with quickly." },
-        { "title": "VIP threat protection", "text": "Clients with status in the entertainment and corporate industries handle highly valuable information. We provide a variety of security solutions to keep clients and their teams safe online." }
+        {
+          "title": "Fraud prevention",
+          "text": "Close knowledge of day-to-day spending means anything out of pattern is seen and dealt with quickly."
+        },
+        {
+          "title": "VIP threat protection",
+          "text": "Clients with status in the entertainment and corporate industries handle highly valuable information. We provide a variety of security solutions to keep clients and their teams safe online."
+        }
       ]
     }
   ],
@@ -283,10 +475,22 @@
     "title": "Becoming our client",
     "text": "Our business financial onboarding, from a first look at your records to systems that run themselves.",
     "steps": [
-      { "title": "Establish", "text": "A solid foundation, with a review and tightening up of your current accounting records so our team can manage your basic accounting support going forward." },
-      { "title": "Determine", "text": "Which services you wish to implement, one, some or all. We set forth a comprehensive proposal and price plan tailored to your needs, signed electronically." },
-      { "title": "Move forward", "text": "At your own pace. When you are ready, our team provides step-by-step direction managed by our detailed CRM tracking software." },
-      { "title": "Dive in", "text": "In Phase II we take a deep dive into understanding your workflow and implementing systems of AI for ongoing support and maintenance." }
+      {
+        "title": "Establish",
+        "text": "A solid foundation, with a review and tightening up of your current accounting records so our team can manage your basic accounting support going forward."
+      },
+      {
+        "title": "Determine",
+        "text": "Which services you wish to implement, one, some or all. We set forth a comprehensive proposal and price plan tailored to your needs, signed electronically."
+      },
+      {
+        "title": "Move forward",
+        "text": "At your own pace. When you are ready, our team provides step-by-step direction managed by our detailed CRM tracking software."
+      },
+      {
+        "title": "Dive in",
+        "text": "In Phase II we take a deep dive into understanding your workflow and implementing systems of AI for ongoing support and maintenance."
+      }
     ]
   },
   "about": {
@@ -300,9 +504,18 @@
     "image": "/brands/dmsassociates/about",
     "imageAlt": "Financial paperwork and a pen laid out on a desk",
     "values": [
-      { "title": "Integrity, enthusiasm and persistence", "text": "The marked values of our team members and the driving force behind our successful client relationships." },
-      { "title": "Technology first", "text": "Organize, automate, monitor. We stay on the cutting edge of the software that runs a finance department." },
-      { "title": "Confidentiality above all", "text": "The fierce protection of our client's confidentiality and the security of their records sits at the top of our priority list." }
+      {
+        "title": "Integrity, enthusiasm and persistence",
+        "text": "The marked values of our team members and the driving force behind our successful client relationships."
+      },
+      {
+        "title": "Technology first",
+        "text": "Organize, automate, monitor. We stay on the cutting edge of the software that runs a finance department."
+      },
+      {
+        "title": "Confidentiality above all",
+        "text": "The fierce protection of our client's confidentiality and the security of their records sits at the top of our priority list."
+      }
     ]
   },
   "team": [
@@ -399,7 +612,11 @@
     },
     {
       "heading": "Find us online",
-      "items": ["Facebook", "Instagram: @dmsandassoc", "LinkedIn: DMS & Associates"]
+      "items": [
+        "Facebook",
+        "Instagram: @dmsandassoc",
+        "LinkedIn: DMS & Associates"
+      ]
     },
     {
       "heading": "Working at DMS",

@@ -12,7 +12,20 @@
   "rating": 4.9,
   "reviewCount": 318,
   "since": 2009,
-  "hours": [["Mon – Fri", "7 AM – 6 PM"], ["Saturday", "8 AM – 2 PM"], ["Sunday", "Emergency calls only"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "7 AM – 6 PM"
+    ],
+    [
+      "Saturday",
+      "8 AM – 2 PM"
+    ],
+    [
+      "Sunday",
+      "Emergency calls only"
+    ]
+  ],
   "brand": {
     "primary": "#0369a1",
     "primaryDeep": "#0b2f4d",
@@ -25,7 +38,24 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
     "logo": "/brands/sample-hvac/logo.webp",
-    "logoWidth": 150
+    "logoMono": "/brands/sample-hvac/logo-mono.webp",
+    "logoWidth": 162,
+    "logoHeight": 48,
+    "logoRatio": 3.375,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.365,
+      0.26,
+      0.253,
+      0.251,
+      0.327,
+      0.441,
+      0.549,
+      0.659,
+      0.774,
+      0.891,
+      1.0
+    ]
   },
   "emergency": {
     "title": "24/7 emergency service",
@@ -33,8 +63,14 @@
   },
   "sameDay": "Call before noon and a technician is usually at your door the same afternoon.",
   "licenses": [
-    { "label": "TDLR HVAC", "number": "TACLA 00045821C" },
-    { "label": "TDLR Electrical", "number": "TECL 31274" }
+    {
+      "label": "TDLR HVAC",
+      "number": "TACLA 00045821C"
+    },
+    {
+      "label": "TDLR Electrical",
+      "number": "TECL 31274"
+    }
   ],
   "financing": {
     "text": "Monthly payments on new systems and panel upgrades, with approval on the spot."
@@ -62,28 +98,42 @@
           "title": "AC Repair",
           "icon": "wrench",
           "text": "Warm air, short cycling, frozen coils and noisy fans diagnosed and fixed, most on the first visit.",
-          "points": ["Trucks stocked with common parts", "Refrigerant leaks found and sealed", "Repairs guaranteed for a year"]
+          "points": [
+            "Trucks stocked with common parts",
+            "Refrigerant leaks found and sealed",
+            "Repairs guaranteed for a year"
+          ]
         },
         {
           "slug": "ac-installation",
           "title": "AC Installation",
           "icon": "air-vent",
           "text": "New systems sized to your home with a load calculation, not a guess from the old unit's label.",
-          "points": ["High-efficiency and variable-speed options", "Old equipment hauled away", "Permit and inspection handled"]
+          "points": [
+            "High-efficiency and variable-speed options",
+            "Old equipment hauled away",
+            "Permit and inspection handled"
+          ]
         },
         {
           "slug": "heat-pumps",
           "title": "Heat Pumps",
           "icon": "thermometer",
           "text": "One system that cools all summer and heats through a mild Texas winter, installed and serviced.",
-          "points": ["Repair on all major brands", "Ducted and ductless systems"]
+          "points": [
+            "Repair on all major brands",
+            "Ducted and ductless systems"
+          ]
         },
         {
           "slug": "ductless-mini-splits",
           "title": "Ductless Mini-Splits",
           "icon": "fan",
           "text": "Quiet cooling for garages, additions and rooms the main system never quite reaches.",
-          "points": ["Single and multi-zone setups", "Clean wall-mounted installs"]
+          "points": [
+            "Single and multi-zone setups",
+            "Clean wall-mounted installs"
+          ]
         }
       ]
     },
@@ -101,21 +151,30 @@
           "title": "Furnace Repair",
           "icon": "flame",
           "text": "Igniters, flame sensors, blower motors and control boards replaced on gas and electric furnaces.",
-          "points": ["Carbon monoxide test on every gas visit", "Upfront written pricing"]
+          "points": [
+            "Carbon monoxide test on every gas visit",
+            "Upfront written pricing"
+          ]
         },
         {
           "slug": "furnace-installation",
           "title": "Furnace Installation",
           "icon": "heater",
           "text": "Replacement furnaces matched to your ductwork and your existing air conditioner.",
-          "points": ["Gas line and venting checked", "Manufacturer warranty registered for you"]
+          "points": [
+            "Gas line and venting checked",
+            "Manufacturer warranty registered for you"
+          ]
         },
         {
           "slug": "heating-tune-ups",
           "title": "Heating Tune-Ups",
           "icon": "gauge",
           "text": "A fall inspection and cleaning that catches a worn part before it becomes a no-heat call.",
-          "points": ["Burners and heat exchanger inspected", "Filter changed while we are there"]
+          "points": [
+            "Burners and heat exchanger inspected",
+            "Filter changed while we are there"
+          ]
         }
       ]
     },
@@ -133,21 +192,27 @@
           "title": "Air Filtration",
           "icon": "filter",
           "text": "Whole-home media filters and air purifiers installed right at the air handler.",
-          "points": ["MERV-rated filters sized to your system"]
+          "points": [
+            "MERV-rated filters sized to your system"
+          ]
         },
         {
           "slug": "dehumidifiers",
           "title": "Whole-Home Dehumidifiers",
           "icon": "droplets",
           "text": "Takes the sticky feel out of a coastal house and keeps mildew out of closets.",
-          "points": ["Ducted units tied into your system"]
+          "points": [
+            "Ducted units tied into your system"
+          ]
         },
         {
           "slug": "duct-repair",
           "title": "Duct Sealing and Repair",
           "icon": "waves",
           "text": "Leaky, crushed and disconnected ducts found in the attic and sealed or replaced.",
-          "points": ["Airflow measured before and after"]
+          "points": [
+            "Airflow measured before and after"
+          ]
         }
       ]
     },
@@ -165,28 +230,39 @@
           "title": "Panel Upgrades",
           "icon": "circuit",
           "text": "Older and undersized panels replaced so a new AC, EV charger or addition has the power it needs.",
-          "points": ["100 to 200 amp service upgrades", "Utility and permit coordination"]
+          "points": [
+            "100 to 200 amp service upgrades",
+            "Utility and permit coordination"
+          ]
         },
         {
           "slug": "wiring-and-repairs",
           "title": "Wiring and Repairs",
           "icon": "plug",
           "text": "Dead outlets, tripping breakers, flickering lights and new circuits traced and fixed safely.",
-          "points": ["GFCI and AFCI protection added", "Whole-home safety inspections"]
+          "points": [
+            "GFCI and AFCI protection added",
+            "Whole-home safety inspections"
+          ]
         },
         {
           "slug": "generators",
           "title": "Standby Generators",
           "icon": "power",
           "text": "Automatic home generators that keep the lights and the AC on through hurricane season.",
-          "points": ["Transfer switch installation", "Yearly maintenance visits"]
+          "points": [
+            "Transfer switch installation",
+            "Yearly maintenance visits"
+          ]
         },
         {
           "slug": "ev-chargers",
           "title": "EV Chargers",
           "icon": "ev",
           "text": "Level 2 chargers installed in the garage or driveway on a dedicated circuit.",
-          "points": ["Load check on your panel first"]
+          "points": [
+            "Load check on your panel first"
+          ]
         },
         {
           "slug": "lighting",
@@ -214,20 +290,35 @@
         "name": "Cooling",
         "price": "$12",
         "period": "per month",
-        "features": ["One spring AC tune-up", "Priority scheduling", "10% off repairs"]
+        "features": [
+          "One spring AC tune-up",
+          "Priority scheduling",
+          "10% off repairs"
+        ]
       },
       {
         "name": "Comfort",
         "price": "$19",
         "period": "per month",
         "featured": true,
-        "features": ["Spring AC and fall heating tune-ups", "Priority scheduling", "15% off repairs", "No overtime charges"]
+        "features": [
+          "Spring AC and fall heating tune-ups",
+          "Priority scheduling",
+          "15% off repairs",
+          "No overtime charges"
+        ]
       },
       {
         "name": "Whole Home",
         "price": "$29",
         "period": "per month",
-        "features": ["Both tune-ups", "Yearly electrical safety inspection", "Generator check", "15% off repairs", "No overtime charges"]
+        "features": [
+          "Both tune-ups",
+          "Yearly electrical safety inspection",
+          "Generator check",
+          "15% off repairs",
+          "No overtime charges"
+        ]
       }
     ],
     "note": "Billed monthly. Cancel any time with a phone call."
@@ -242,9 +333,18 @@
     "image": "/brands/sample-hvac/team",
     "imageAlt": "A smiling technician in a company jacket",
     "values": [
-      { "title": "Written prices", "text": "You see the full price on paper before any work begins." },
-      { "title": "On-time arrivals", "text": "A two-hour window and a text when the technician is on the way." },
-      { "title": "Clean work", "text": "Shoe covers inside and every work area left the way we found it." }
+      {
+        "title": "Written prices",
+        "text": "You see the full price on paper before any work begins."
+      },
+      {
+        "title": "On-time arrivals",
+        "text": "A two-hour window and a text when the technician is on the way."
+      },
+      {
+        "title": "Clean work",
+        "text": "Shoe covers inside and every work area left the way we found it."
+      }
     ]
   },
   "faqs": [
@@ -269,7 +369,16 @@
       "a": "Yes, on new systems and panel upgrades. Ask for the options when you book the estimate."
     }
   ],
-  "serviceArea": ["Baytown", "Mont Belvieu", "La Porte", "Highlands", "Crosby", "Channelview", "Deer Park", "Dayton"],
+  "serviceArea": [
+    "Baytown",
+    "Mont Belvieu",
+    "La Porte",
+    "Highlands",
+    "Crosby",
+    "Channelview",
+    "Deer Park",
+    "Dayton"
+  ],
   "reviews": [
     {
       "author": "Homeowner in Baytown",

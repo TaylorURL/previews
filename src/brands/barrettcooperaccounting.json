@@ -14,9 +14,18 @@
   "rating": 4.0,
   "reviewCount": 8,
   "hours": [
-    ["Mon – Fri", "9 AM – 5 PM"],
-    ["Saturday", "Closed"],
-    ["Sunday", "Closed"]
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
   ],
   "cta": {
     "label": "Schedule a Consultation",
@@ -35,10 +44,24 @@
     "body": "'Open Sans', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Open+Sans:wght@400;500;600;700&display=swap",
     "logo": "/brands/barrettcooperaccounting/logo.webp",
+    "logoMono": "/brands/barrettcooperaccounting/logo-mono.webp",
     "logoWidth": 157,
     "logoHeight": 48,
-    "logoRatio": 3.277,
-    "logoGround": "#ffffff"
+    "logoRatio": 3.271,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.274,
+      0.146,
+      0.092,
+      0.159,
+      0.243,
+      0.37,
+      0.493,
+      0.617,
+      0.746,
+      0.877,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Full-service accounting firm in Schertz",
@@ -228,7 +251,11 @@
   ],
   "affiliations": {
     "title": "Credentials and memberships",
-    "items": ["Certified Public Accountants", "QuickBooks ProAdvisor", "Notary Public"]
+    "items": [
+      "Certified Public Accountants",
+      "QuickBooks ProAdvisor",
+      "Notary Public"
+    ]
   },
   "about": {
     "title": "Quality, personalized financial guidance for more than 35 years.",
@@ -260,12 +287,31 @@
       "role": "Accountant",
       "bio": "Forty-plus years in accounting and auditing."
     },
-    { "name": "Kyli Thomas", "role": "Staff Accountant", "bio": "Tax specialist." },
-    { "name": "Nevin Ricondo", "role": "Staff Accountant", "bio": "Tax specialist." },
-    { "name": "April Iruegas", "role": "Bookkeeping Manager" },
-    { "name": "Mary Jonas", "role": "Staff Accountant" }
+    {
+      "name": "Kyli Thomas",
+      "role": "Staff Accountant",
+      "bio": "Tax specialist."
+    },
+    {
+      "name": "Nevin Ricondo",
+      "role": "Staff Accountant",
+      "bio": "Tax specialist."
+    },
+    {
+      "name": "April Iruegas",
+      "role": "Bookkeeping Manager"
+    },
+    {
+      "name": "Mary Jonas",
+      "role": "Staff Accountant"
+    }
   ],
-  "serviceArea": ["Schertz", "San Antonio", "I-H 35 Corridor", "Austin"],
+  "serviceArea": [
+    "Schertz",
+    "San Antonio",
+    "I-H 35 Corridor",
+    "Austin"
+  ],
   "facts": [
     {
       "heading": "Lunch",
@@ -289,11 +335,20 @@
     },
     {
       "heading": "Core values",
-      "items": ["Hardworking", "Responsible", "Knowledgeable", "Helpfulness", "Integrity"]
+      "items": [
+        "Hardworking",
+        "Responsible",
+        "Knowledgeable",
+        "Helpfulness",
+        "Integrity"
+      ]
     },
     {
       "heading": "Follow the firm",
-      "items": ["facebook.com/barrettcoopercpa", "linkedin.com/company/barrett-cooper-accounting-pc"]
+      "items": [
+        "facebook.com/barrettcoopercpa",
+        "linkedin.com/company/barrett-cooper-accounting-pc"
+      ]
     }
   ]
 }

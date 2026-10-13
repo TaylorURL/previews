@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, ChevronDown, Mail, MapPin, Menu, Phone, X } from 'lucide-react';
 import { mapsHref } from '../../site.js';
-import { StudioCredit } from '../shared.jsx';
+import { BrandLogo, hexOr, StudioCredit } from '../shared.jsx';
 import { DAY_NAMES, daysOf, hoursOn, isClosed, todayInHouston } from './hours.js';
 import { Eyebrow, cardTitle, edgeL, edgeLlg, edgeR, ghostDark, href, iconFor, solid, wrap } from './ui.jsx';
 
@@ -12,10 +12,10 @@ export function useToday() {
   return today;
 }
 
-/** The logo sized by height, so wide and stacked marks sit the same in the plate. */
+/** The logo on the white plate the header and footer set it on, sized by its shape. */
 export function Mark({ b, className = '' }) {
   if (b.brand.logo) {
-    return <img className={`block w-auto object-contain ${className}`} src={b.brand.logo} alt={b.name} />;
+    return <BrandLogo b={b} ground="#ffffff" className={className} />;
   }
   return <span className="block font-heading text-[22px] font-bold uppercase leading-none tracking-[0.02em] text-ink sm:text-[26px]">{b.shortName}</span>;
 }
@@ -174,7 +174,7 @@ export function Header({ b, section, today, tel }) {
           className={`flex min-w-0 flex-none items-center bg-white pr-9 [clip-path:polygon(0_0,100%_0,calc(100%_-_18px)_100%,0_100%)] lg:pr-12 ${edgeL}`}
           onClick={() => setOpen(false)}
         >
-          <Mark b={b} className="h-9 max-w-[44vw] sm:h-10 lg:h-12 lg:max-w-[230px]" />
+          <Mark b={b} className="max-h-9 max-w-[44vw] sm:max-h-10 lg:max-h-12 lg:max-w-[230px]" />
         </a>
 
         <nav aria-label="Main" className="ml-7 hidden items-stretch gap-6 lg:flex xl:ml-10 xl:gap-8">
@@ -436,9 +436,11 @@ export function Footer({ b, tel, today }) {
       <div className="border-t border-white/10">
         <div className={`${wrap} grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr]`}>
           <div className="min-w-0">
-            <span className="inline-flex bg-white px-4 py-3 [clip-path:polygon(0_0,100%_0,calc(100%_-_12px)_100%,0_100%)] pr-8">
-              <Mark b={b} className="h-10 max-w-[220px]" />
-            </span>
+            {b.brand.logo ? (
+              <BrandLogo b={b} ground={hexOr(b.brand.panel, '#1f262d')} className="max-h-12 max-w-[220px]" />
+            ) : (
+              <span className="block font-heading text-[22px] font-bold uppercase leading-none tracking-[0.02em] text-white sm:text-[26px]">{b.shortName}</span>
+            )}
             <p className="mt-5 max-w-xs leading-[1.6] text-white/70">
               Auto repair in {b.town}, {b.state}
               {b.since ? `, since ${b.since}` : ''}.

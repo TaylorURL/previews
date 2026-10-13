@@ -13,9 +13,18 @@
   "rating": 4.9,
   "reviewCount": 43,
   "hours": [
-    ["Mon – Fri", "Open 24 hours"],
-    ["Saturday", "Open 24 hours"],
-    ["Sunday", "Open 24 hours"]
+    [
+      "Mon – Fri",
+      "Open 24 hours"
+    ],
+    [
+      "Saturday",
+      "Open 24 hours"
+    ],
+    [
+      "Sunday",
+      "Open 24 hours"
+    ]
   ],
   "brand": {
     "primary": "#3D4045",
@@ -29,7 +38,24 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap",
     "logo": "/brands/durrelectric/logo.webp",
-    "logoWidth": 220
+    "logoMono": "/brands/durrelectric/logo-mono.webp",
+    "logoWidth": 159,
+    "logoHeight": 48,
+    "logoRatio": 3.312,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.637,
+      0.56,
+      0.489,
+      0.459,
+      0.457,
+      0.47,
+      0.478,
+      0.559,
+      0.702,
+      0.854,
+      1.0
+    ]
   },
   "emergency": {
     "title": "24/7 emergency service",
@@ -58,14 +84,20 @@
           "title": "Electric Wiring",
           "icon": "cable",
           "text": "Residential wiring throughout the house, done by a state-licensed Alvin, TX, electrician with references available throughout the community.",
-          "points": ["Free estimates", "Lifetime guarantee on all labor"]
+          "points": [
+            "Free estimates",
+            "Lifetime guarantee on all labor"
+          ]
         },
         {
           "slug": "panel-install-repair-upgrade",
           "title": "Electric Panel Install, Repair and Upgrade",
           "icon": "circuit",
           "text": "Electric panel repair, installation and upgrades, including circuit breaker installation.",
-          "points": ["Panel repair", "Circuit breaker installation"]
+          "points": [
+            "Panel repair",
+            "Circuit breaker installation"
+          ]
         },
         {
           "slug": "ceiling-fan-installation",
@@ -163,7 +195,9 @@
           "title": "24/7 Emergency Electrical Repair",
           "icon": "zap",
           "text": "Emergency electrical repair, day or night, any day of the week.",
-          "points": ["Staff available seven days a week"]
+          "points": [
+            "Staff available seven days a week"
+          ]
         },
         {
           "slug": "panel-repair",
@@ -185,9 +219,18 @@
     "image": "/brands/durrelectric/about",
     "imageAlt": "An electrical panel part-built, with breakers and wiring in place",
     "values": [
-      { "title": "Lifetime guarantee", "text": "A lifetime guarantee on all labor." },
-      { "title": "Free estimates", "text": "Estimates are free, so you know the job before it starts." },
-      { "title": "State-licensed", "text": "A state-licensed electrician, with a master electrician on staff." }
+      {
+        "title": "Lifetime guarantee",
+        "text": "A lifetime guarantee on all labor."
+      },
+      {
+        "title": "Free estimates",
+        "text": "Estimates are free, so you know the job before it starts."
+      },
+      {
+        "title": "State-licensed",
+        "text": "A state-licensed electrician, with a master electrician on staff."
+      }
     ]
   },
   "facts": [

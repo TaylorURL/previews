@@ -11,7 +11,20 @@
   "zip": "77546",
   "rating": 5.0,
   "reviewCount": 73,
-  "hours": [["Mon – Fri", "8 AM – 5 PM"], ["Saturday", "8 AM – 2 PM"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "8 AM – 2 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "brand": {
     "primary": "#2168b3",
     "primaryDeep": "#17497d",
@@ -22,7 +35,24 @@
     "body": "'Barlow', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap",
     "logo": "/brands/smartchoiceroofing/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/smartchoiceroofing/logo-mono.webp",
+    "logoWidth": 204,
+    "logoHeight": 48,
+    "logoRatio": 4.258,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.526,
+      0.375,
+      0.227,
+      0.084,
+      0.106,
+      0.254,
+      0.401,
+      0.547,
+      0.699,
+      0.854,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Friendswood roofing contractor",
@@ -126,7 +156,11 @@
         "SmartChoice Roofing Solutions offers gutter repair and replacement alongside our roofing and siding work, for residential, multi-family and commercial clients.",
         "We assess what is there to help you make an informed decision, and the inspection that comes first is 100% pressure free."
       ],
-      "points": ["Gutter repair", "Gutter replacement", "Residential, multi-family and commercial"]
+      "points": [
+        "Gutter repair",
+        "Gutter replacement",
+        "Residential, multi-family and commercial"
+      ]
     },
     {
       "slug": "siding",
@@ -206,7 +240,12 @@
   "materials": {
     "title": "Shingles we install",
     "text": "We install Owens Corning, GAF and CertainTeed shingles to TWIA standards, and every re-roof carries a manufacturer's warranty alongside our workmanship warranty.",
-    "brands": ["Owens Corning", "CertainTeed", "GAF", "IKO"]
+    "brands": [
+      "Owens Corning",
+      "CertainTeed",
+      "GAF",
+      "IKO"
+    ]
   },
   "about": {
     "title": "Built by lifelong Houstonians",
@@ -249,7 +288,11 @@
       }
     ]
   },
-  "serviceArea": ["Friendswood", "Pearland", "Houston"],
+  "serviceArea": [
+    "Friendswood",
+    "Pearland",
+    "Houston"
+  ],
   "areasText": "Our office is on South Friendswood Drive, and the crews work across the Greater Houston area for residential, multi-family and commercial clients.",
   "areasImage": "/brands/smartchoiceroofing/areas",
   "areasImageAlt": "A roofing crew sitting on a roof with tools and materials and a lake in the background",
@@ -278,11 +321,21 @@
     },
     {
       "heading": "Commercial Brands",
-      "items": ["Mule-Hide", "IKO", "Berridge", "Mueller", "McElroy"]
+      "items": [
+        "Mule-Hide",
+        "IKO",
+        "Berridge",
+        "Mueller",
+        "McElroy"
+      ]
     },
     {
       "heading": "Carpentry Materials",
-      "items": ["James Hardie Siding", "LP Smart Siding", "WPI-8 Approved Patios"]
+      "items": [
+        "James Hardie Siding",
+        "LP Smart Siding",
+        "WPI-8 Approved Patios"
+      ]
     },
     {
       "heading": "Colorado Springs",
@@ -290,7 +343,11 @@
     },
     {
       "heading": "Find Us Online",
-      "items": ["facebook.com/SmartChoiceRoofingTX", "instagram.com/smartchoice_roofing", "x.com/smartchoicehtx"]
+      "items": [
+        "facebook.com/SmartChoiceRoofingTX",
+        "instagram.com/smartchoice_roofing",
+        "x.com/smartchoicehtx"
+      ]
     }
   ]
 }

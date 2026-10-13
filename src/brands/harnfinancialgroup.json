@@ -15,9 +15,18 @@
   "rating": 4.4,
   "reviewCount": 34,
   "hours": [
-    ["Mon – Fri", "10 AM – 8 PM"],
-    ["Saturday", "10 AM – 6 PM"],
-    ["Sunday", "Closed"]
+    [
+      "Mon – Fri",
+      "10 AM – 8 PM"
+    ],
+    [
+      "Saturday",
+      "10 AM – 6 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
   ],
   "cta": {
     "label": "Schedule a Consultation",
@@ -36,7 +45,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/harnfinancialgroup/logo.webp",
-    "logoWidth": 220
+    "logoMono": "/brands/harnfinancialgroup/logo-mono.webp",
+    "logoWidth": 220,
+    "logoHeight": 48,
+    "logoRatio": 4.585,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.234,
+      0.113,
+      0.028,
+      0.143,
+      0.265,
+      0.392,
+      0.512,
+      0.631,
+      0.757,
+      0.882,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Tax and accounting in Friendswood",
@@ -54,7 +80,10 @@
     "title": "What we do for individuals and businesses.",
     "text": "Pick a service to see what it covers, or call the office and talk it through with our team."
   },
-  "audiences": { "individuals": "Individuals", "businesses": "Businesses" },
+  "audiences": {
+    "individuals": "Individuals",
+    "businesses": "Businesses"
+  },
   "services": [
     {
       "slug": "personal-tax-filing",
@@ -65,9 +94,18 @@
       "text": "Personal 1040 returns prepared with you in the room, so you understand the filing rather than dropping off paperwork.",
       "lead": "We believe our clients value an educational and friendly tax filing experience anchored by face to face interactions. Your personal return is prepared that way, with the time to explain what is on it.",
       "covers": [
-        { "title": "Your 1040 return", "text": "Personal returns prepared and filed by our tax professionals." },
-        { "title": "A conversation, not a drop-off", "text": "We sit down with you, which gives an educational experience of greater benefit than dropping off your paperwork." },
-        { "title": "The same office each year", "text": "Clients come back to the same team in Friendswood, year after year." }
+        {
+          "title": "Your 1040 return",
+          "text": "Personal returns prepared and filed by our tax professionals."
+        },
+        {
+          "title": "A conversation, not a drop-off",
+          "text": "We sit down with you, which gives an educational experience of greater benefit than dropping off your paperwork."
+        },
+        {
+          "title": "The same office each year",
+          "text": "Clients come back to the same team in Friendswood, year after year."
+        }
       ]
     },
     {
@@ -79,9 +117,18 @@
       "text": "Business returns including 1065 partnerships, 1120 S-Corp and C-Corp filings, prepared by tax professionals who work with small businesses all year.",
       "lead": "Partnerships, S-Corps and C-Corps each file differently. We prepare the return your entity actually owes and walk you through it.",
       "covers": [
-        { "title": "1065 partnerships", "text": "Partnership returns and the schedules that go with them." },
-        { "title": "1120 S-Corp", "text": "S-Corp returns for owners who have moved out of filing as a sole proprietor." },
-        { "title": "C-Corp", "text": "Corporate returns prepared to IRS rules and guidelines." }
+        {
+          "title": "1065 partnerships",
+          "text": "Partnership returns and the schedules that go with them."
+        },
+        {
+          "title": "1120 S-Corp",
+          "text": "S-Corp returns for owners who have moved out of filing as a sole proprietor."
+        },
+        {
+          "title": "C-Corp",
+          "text": "Corporate returns prepared to IRS rules and guidelines."
+        }
       ]
     },
     {
@@ -144,9 +191,18 @@
       "We believe our clients value an educational and friendly tax filing experience anchored by face to face interactions. This inclusive approach provides an invaluable educational experience, of greater benefit than dropping off your paperwork."
     ],
     "values": [
-      { "title": "One client at a time", "text": "The trust our clients grant us is what lets our professionals deliver exceptional service." },
-      { "title": "Face to face", "text": "A filing appointment is a conversation, and you leave understanding the return you signed." },
-      { "title": "A family-like environment", "text": "We have grown in locations and staff for our clients' convenience while keeping that environment." }
+      {
+        "title": "One client at a time",
+        "text": "The trust our clients grant us is what lets our professionals deliver exceptional service."
+      },
+      {
+        "title": "Face to face",
+        "text": "A filing appointment is a conversation, and you leave understanding the return you signed."
+      },
+      {
+        "title": "A family-like environment",
+        "text": "We have grown in locations and staff for our clients' convenience while keeping that environment."
+      }
     ]
   },
   "team": [
@@ -196,7 +252,10 @@
       "href": "https://www.irs.gov/getready"
     }
   ],
-  "serviceArea": ["Friendswood", "Greater Houston metropolitan area"],
+  "serviceArea": [
+    "Friendswood",
+    "Greater Houston metropolitan area"
+  ],
   "facts": [
     {
       "heading": "What we've achieved",

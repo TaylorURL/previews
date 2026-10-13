@@ -12,7 +12,20 @@
   "reviewCount": 187,
   "since": 2009,
   "license": "Licensed and insured in Texas",
-  "hours": [["Mon – Fri", "7 AM – 6 PM"], ["Saturday", "8 AM – 2 PM"], ["Sunday", "Storm calls only"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "7 AM – 6 PM"
+    ],
+    [
+      "Saturday",
+      "8 AM – 2 PM"
+    ],
+    [
+      "Sunday",
+      "Storm calls only"
+    ]
+  ],
   "brand": {
     "primary": "#c2410c",
     "primaryDeep": "#7c2d12",
@@ -23,7 +36,24 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap",
     "logo": "/brands/sample-roofing/logo.webp",
-    "logoWidth": 210
+    "logoMono": "/brands/sample-roofing/logo-mono.webp",
+    "logoWidth": 227,
+    "logoHeight": 48,
+    "logoRatio": 4.729,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.322,
+      0.191,
+      0.185,
+      0.197,
+      0.228,
+      0.351,
+      0.476,
+      0.604,
+      0.738,
+      0.873,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Baytown roofing contractor",
@@ -33,7 +63,12 @@
     "image": "/brands/sample-roofing/hero",
     "imageAlt": "Two roofers in safety harnesses working on a dark shingle roof"
   },
-  "promises": ["Free roof inspections", "Written price before work starts", "Photos of every problem we find", "Workmanship warranty in writing"],
+  "promises": [
+    "Free roof inspections",
+    "Written price before work starts",
+    "Photos of every problem we find",
+    "Workmanship warranty in writing"
+  ],
   "services": [
     {
       "slug": "roof-repair",
@@ -47,10 +82,22 @@
         "Most leaks start somewhere small: a cracked pipe boot, a nail that backed out, flashing that let go around a chimney. We trace the water from the attic to where it gets in, so the fix lands in the right spot the first time.",
         "You get photos of what we found and a written price before we touch anything. Most repairs are done the same week, and many on the day of the inspection."
       ],
-      "points": ["Leak tracing from the attic up", "Shingle and ridge cap replacement", "Flashing around chimneys, walls and skylights", "Pipe boots and roof vents", "Tarping when a storm is still coming"],
+      "points": [
+        "Leak tracing from the attic up",
+        "Shingle and ridge cap replacement",
+        "Flashing around chimneys, walls and skylights",
+        "Pipe boots and roof vents",
+        "Tarping when a storm is still coming"
+      ],
       "faqs": [
-        { "q": "Can you match my existing shingles?", "a": "Usually, yes. We carry the common colors from the major manufacturers and bring a sample when the shingle is older or discontinued." },
-        { "q": "Is a repair or a new roof the better buy?", "a": "If the roof is under fifteen years old and the damage is in one area, a repair almost always makes sense. We will tell you plainly when it does not." }
+        {
+          "q": "Can you match my existing shingles?",
+          "a": "Usually, yes. We carry the common colors from the major manufacturers and bring a sample when the shingle is older or discontinued."
+        },
+        {
+          "q": "Is a repair or a new roof the better buy?",
+          "a": "If the roof is under fifteen years old and the damage is in one area, a repair almost always makes sense. We will tell you plainly when it does not."
+        }
       ]
     },
     {
@@ -66,10 +113,22 @@
         "A new roof is a big purchase, so we walk you through it before anything is ordered: the shingle line, the color, the ventilation and the warranty, all written into one price.",
         "On install day the crew tears off down to the deck, replaces any soft decking at the rate quoted, and has the new roof on before dark on most homes. Magnets sweep the yard and driveway for nails before we leave."
       ],
-      "points": ["Tear-off down to the deck", "Soft decking replaced at a quoted rate", "Synthetic underlayment and ice and water shield in the valleys", "Ridge vents and attic ventilation checked", "Yard and driveway swept for nails"],
+      "points": [
+        "Tear-off down to the deck",
+        "Soft decking replaced at a quoted rate",
+        "Synthetic underlayment and ice and water shield in the valleys",
+        "Ridge vents and attic ventilation checked",
+        "Yard and driveway swept for nails"
+      ],
       "faqs": [
-        { "q": "How long does a replacement take?", "a": "Most homes are done in one day. Larger or steeper roofs can take two, and we tell you that when we quote." },
-        { "q": "Do I need to be home?", "a": "No. We need access to an outdoor outlet and the driveway, and we send photos when the job is finished." }
+        {
+          "q": "How long does a replacement take?",
+          "a": "Most homes are done in one day. Larger or steeper roofs can take two, and we tell you that when we quote."
+        },
+        {
+          "q": "Do I need to be home?",
+          "a": "No. We need access to an outdoor outlet and the driveway, and we send photos when the job is finished."
+        }
       ]
     },
     {
@@ -85,10 +144,22 @@
         "Hail damage is hard to see from the ground, and wind-creased shingles often look fine until the next storm lifts them. We get on the roof, mark every hit, and photograph it so you know what is there before you call your insurance company.",
         "If the damage is worth a claim, we meet your adjuster on the roof and point out what we found. If it is not, we say so and quote the repair."
       ],
-      "points": ["Hail and wind damage inspection", "Photo report you can send your insurer", "Meeting your adjuster on the roof", "Emergency tarping after a storm", "Repair or replacement once the claim is approved"],
+      "points": [
+        "Hail and wind damage inspection",
+        "Photo report you can send your insurer",
+        "Meeting your adjuster on the roof",
+        "Emergency tarping after a storm",
+        "Repair or replacement once the claim is approved"
+      ],
       "faqs": [
-        { "q": "Will filing a claim raise my premium?", "a": "Storm claims are usually treated as acts of nature, but every policy is different. Ask your agent before you file; we will give you the photos either way." },
-        { "q": "Do I have to pay my deductible?", "a": "Yes. Texas law requires the homeowner to pay their deductible, and a contractor who offers to cover it is breaking that law." }
+        {
+          "q": "Will filing a claim raise my premium?",
+          "a": "Storm claims are usually treated as acts of nature, but every policy is different. Ask your agent before you file; we will give you the photos either way."
+        },
+        {
+          "q": "Do I have to pay my deductible?",
+          "a": "Yes. Texas law requires the homeowner to pay their deductible, and a contractor who offers to cover it is breaking that law."
+        }
       ]
     },
     {
@@ -103,7 +174,13 @@
         "An inspection takes about forty-five minutes. We walk the roof, check the attic for daylight and water stains, and send you a photo report the same day.",
         "Home buyers and sellers use the same report for a closing, and many owners book one every spring before hurricane season."
       ],
-      "points": ["Full walk of the roof surface", "Flashing, vents and pipe boots", "Attic check for leaks and ventilation", "Same-day photo report", "Real estate and pre-hurricane inspections"]
+      "points": [
+        "Full walk of the roof surface",
+        "Flashing, vents and pipe boots",
+        "Attic check for leaks and ventilation",
+        "Same-day photo report",
+        "Real estate and pre-hurricane inspections"
+      ]
     },
     {
       "slug": "gutters",
@@ -117,7 +194,12 @@
         "Gutters do most of their work in the few heavy storms each year, and a clogged or undersized run sends that water into the fascia and against the foundation.",
         "We form seamless gutters on site to the length of each run, so there are fewer joints to leak, and pitch them so they drain."
       ],
-      "points": ["Seamless aluminum gutters", "Leaf guards", "Downspouts and extensions", "Fascia repair behind old gutters"]
+      "points": [
+        "Seamless aluminum gutters",
+        "Leaf guards",
+        "Downspouts and extensions",
+        "Fascia repair behind old gutters"
+      ]
     },
     {
       "slug": "commercial-roofing",
@@ -131,24 +213,52 @@
         "We work on low-slope roofs for small businesses, churches and light industrial buildings across the area, and schedule around your hours so the doors stay open.",
         "A maintenance plan puts someone on the roof twice a year to clear drains, reseal penetrations and catch problems while they are still cheap."
       ],
-      "points": ["TPO single-ply roofing", "Modified bitumen", "Metal roof repair and coatings", "Drain and penetration maintenance", "Twice-yearly maintenance plans"]
+      "points": [
+        "TPO single-ply roofing",
+        "Modified bitumen",
+        "Metal roof repair and coatings",
+        "Drain and penetration maintenance",
+        "Twice-yearly maintenance plans"
+      ]
     }
   ],
   "claim": {
     "title": "How a storm claim works",
     "text": "Most homeowners file one roof claim in their life. Here is how it goes when we are on your side of it.",
     "steps": [
-      { "title": "Free inspection", "text": "We check the roof and photograph every hail hit and lifted shingle." },
-      { "title": "You file the claim", "text": "If the damage is there, you call your insurer with our photo report in hand." },
-      { "title": "Adjuster meeting", "text": "We meet the adjuster on the roof and point out what we found." },
-      { "title": "Approval and install", "text": "Once the claim is approved, our crew replaces the roof, usually in a day." },
-      { "title": "Final paperwork", "text": "We send the invoice and completion photos your insurer needs to release the last payment." }
+      {
+        "title": "Free inspection",
+        "text": "We check the roof and photograph every hail hit and lifted shingle."
+      },
+      {
+        "title": "You file the claim",
+        "text": "If the damage is there, you call your insurer with our photo report in hand."
+      },
+      {
+        "title": "Adjuster meeting",
+        "text": "We meet the adjuster on the roof and point out what we found."
+      },
+      {
+        "title": "Approval and install",
+        "text": "Once the claim is approved, our crew replaces the roof, usually in a day."
+      },
+      {
+        "title": "Final paperwork",
+        "text": "We send the invoice and completion photos your insurer needs to release the last payment."
+      }
     ]
   },
   "materials": {
     "title": "Shingles we install",
     "text": "We install the major manufacturers' lines and register the warranty in your name.",
-    "brands": ["GAF", "Owens Corning", "CertainTeed", "Atlas", "Malarkey", "IKO"]
+    "brands": [
+      "GAF",
+      "Owens Corning",
+      "CertainTeed",
+      "Atlas",
+      "Malarkey",
+      "IKO"
+    ]
   },
   "projects": [
     {
@@ -192,28 +302,68 @@
     "image": "/brands/sample-roofing/crew",
     "imageAlt": "Two roofers installing shingles on a steep roof",
     "values": [
-      { "title": "Our own crews", "text": "No day-labor subcontractors on your roof." },
-      { "title": "Photos, not pressure", "text": "You see what we see before you decide anything." },
-      { "title": "One written price", "text": "The number you sign is the number you pay." }
+      {
+        "title": "Our own crews",
+        "text": "No day-labor subcontractors on your roof."
+      },
+      {
+        "title": "Photos, not pressure",
+        "text": "You see what we see before you decide anything."
+      },
+      {
+        "title": "One written price",
+        "text": "The number you sign is the number you pay."
+      }
     ]
   },
   "inspection": {
     "title": "What happens at a free inspection",
     "steps": [
-      { "title": "We call you back", "text": "Usually the same day, to set a time that works." },
-      { "title": "We check the roof", "text": "About forty-five minutes on the roof and in the attic." },
-      { "title": "You get the photos", "text": "A photo report and, if work is needed, a written price." }
+      {
+        "title": "We call you back",
+        "text": "Usually the same day, to set a time that works."
+      },
+      {
+        "title": "We check the roof",
+        "text": "About forty-five minutes on the roof and in the attic."
+      },
+      {
+        "title": "You get the photos",
+        "text": "A photo report and, if work is needed, a written price."
+      }
     ]
   },
-  "serviceArea": ["Baytown", "Mont Belvieu", "La Porte", "Highlands", "Crosby", "Channelview", "Deer Park", "Pasadena", "Seabrook", "Anahuac", "Dayton", "Huffman"],
+  "serviceArea": [
+    "Baytown",
+    "Mont Belvieu",
+    "La Porte",
+    "Highlands",
+    "Crosby",
+    "Channelview",
+    "Deer Park",
+    "Pasadena",
+    "Seabrook",
+    "Anahuac",
+    "Dayton",
+    "Huffman"
+  ],
   "areasText": "Our yard is on Garth Road in Baytown, and the crews work east Harris and Chambers counties every day.",
   "contactImage": "/brands/sample-roofing/contact",
   "contactImageAlt": "A roofer carrying a bundle of shingles across a roof",
   "areasImage": "/brands/sample-roofing/areas",
   "areasImageAlt": "An aerial view of a suburban neighborhood",
   "reviews": [
-    { "author": "Homeowner in Baytown", "text": "They found hail damage I never would have seen from the yard, met the adjuster, and had the new roof on in one day. The yard was cleaner than before they came." },
-    { "author": "Homeowner in Mont Belvieu", "text": "Had a leak over the kitchen for months. They traced it to a cracked pipe boot and fixed it the same afternoon for less than I expected." },
-    { "author": "Business owner in La Porte", "text": "Our shop roof ponded water every rain. They cleared the drains, patched the seams and now come out twice a year. No more buckets." }
+    {
+      "author": "Homeowner in Baytown",
+      "text": "They found hail damage I never would have seen from the yard, met the adjuster, and had the new roof on in one day. The yard was cleaner than before they came."
+    },
+    {
+      "author": "Homeowner in Mont Belvieu",
+      "text": "Had a leak over the kitchen for months. They traced it to a cracked pipe boot and fixed it the same afternoon for less than I expected."
+    },
+    {
+      "author": "Business owner in La Porte",
+      "text": "Our shop roof ponded water every rain. They cleared the drains, patched the seams and now come out twice a year. No more buckets."
+    }
   ]
 }

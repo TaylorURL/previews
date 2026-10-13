@@ -12,7 +12,12 @@
   "rating": 4.9,
   "reviewCount": 259,
   "since": 2017,
-  "hours": [["Mon – Sun", "Open 24 hours"]],
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
   "brand": {
     "primary": "#0b2a63",
     "primaryDeep": "#061a40",
@@ -23,7 +28,24 @@
     "body": "'Lato', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Lato:wght@400;700&display=swap",
     "logo": "/brands/tcbelitefleet/logo.webp",
-    "logoWidth": 210
+    "logoMono": "/brands/tcbelitefleet/logo-mono.webp",
+    "logoWidth": 260,
+    "logoHeight": 45,
+    "logoRatio": 5.773,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.363,
+      0.277,
+      0.281,
+      0.338,
+      0.426,
+      0.517,
+      0.608,
+      0.7,
+      0.8,
+      0.901,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Mont Belvieu roofing contractor",
@@ -33,7 +55,12 @@
     "image": "/brands/tcbelitefleet/hero",
     "imageAlt": "A home with steep gabled shingle roofs"
   },
-  "promises": ["Free roof inspections", "Free estimates", "24/7 emergency service", "Financing available"],
+  "promises": [
+    "Free roof inspections",
+    "Free estimates",
+    "24/7 emergency service",
+    "Financing available"
+  ],
   "services": [
     {
       "slug": "residential-roofing",
@@ -206,20 +233,45 @@
     "image": "/brands/tcbelitefleet/about",
     "imageAlt": "A two-story brick home with a new dark shingle roof",
     "values": [
-      { "title": "Family owned and operated", "text": "A family-owned and operated roofing company serving the Houston area." },
-      { "title": "A+ rating with the BBB", "text": "Our A+ rating with the Better Business Bureau reflects how we deal with people." },
-      { "title": "No job too big or small", "text": "From a single repair to a complete commercial roof installation." }
+      {
+        "title": "Family owned and operated",
+        "text": "A family-owned and operated roofing company serving the Houston area."
+      },
+      {
+        "title": "A+ rating with the BBB",
+        "text": "Our A+ rating with the Better Business Bureau reflects how we deal with people."
+      },
+      {
+        "title": "No job too big or small",
+        "text": "From a single repair to a complete commercial roof installation."
+      }
     ]
   },
   "inspection": {
     "title": "What happens at a free roof inspection",
     "steps": [
-      { "title": "You get in touch", "text": "Fill out the form or call, and a TCB Elite Fleet representative will contact you shortly to schedule it." },
-      { "title": "We inspect the roof", "text": "A complimentary roof inspection, at no cost and with no obligation." },
-      { "title": "You see the photos", "text": "If we find any concerns, we take photos and show them to you, and tell you if insurance will cover it." }
+      {
+        "title": "You get in touch",
+        "text": "Fill out the form or call, and a TCB Elite Fleet representative will contact you shortly to schedule it."
+      },
+      {
+        "title": "We inspect the roof",
+        "text": "A complimentary roof inspection, at no cost and with no obligation."
+      },
+      {
+        "title": "You see the photos",
+        "text": "If we find any concerns, we take photos and show them to you, and tell you if insurance will cover it."
+      }
     ]
   },
-  "serviceArea": ["Mont Belvieu", "Baytown", "Anahuac", "Dayton", "Houston", "Katy"],
+  "serviceArea": [
+    "Mont Belvieu",
+    "Baytown",
+    "Anahuac",
+    "Dayton",
+    "Houston",
+    "Katy"
+  ],
   "areasText": "Our office is on I-10 in Mont Belvieu, and we serve Baytown, Mont Belvieu, Anahuac, Dayton, Houston, Katy and the surrounding areas.",
   "areasImage": "/brands/tcbelitefleet/areas",
   "areasImageAlt": "An aerial view of a brick ranch home with a new shingle roof",
@@ -257,7 +309,10 @@
     },
     {
       "heading": "Payment Methods",
-      "items": ["Cash", "Check"]
+      "items": [
+        "Cash",
+        "Check"
+      ]
     },
     {
       "heading": "Associations",

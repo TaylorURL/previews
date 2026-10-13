@@ -11,7 +11,20 @@
   "rating": 4.8,
   "reviewCount": 187,
   "since": 2009,
-  "hours": [["Mon – Fri", "8 AM – 6 PM"], ["Saturday", "9 AM – 1 PM"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 6 PM"
+    ],
+    [
+      "Saturday",
+      "9 AM – 1 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "brand": {
     "primary": "#0874b3",
     "primaryDeep": "#0b2540",
@@ -25,7 +38,24 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap",
     "logo": "/brands/sample-printing/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/sample-printing/logo-mono.webp",
+    "logoWidth": 260,
+    "logoHeight": 46,
+    "logoRatio": 5.652,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.229,
+      0.132,
+      0.171,
+      0.212,
+      0.282,
+      0.403,
+      0.517,
+      0.629,
+      0.751,
+      0.879,
+      1.0
+    ]
   },
   "announcement": {
     "text": "Business cards ordered by noon are ready the next business day.",
@@ -41,10 +71,26 @@
     "imageAlt": "A wide-format printer running a long pink banner in the shop"
   },
   "highlights": [
-    { "icon": "clock", "title": "Next-day turnaround", "text": "On cards, flyers and banners approved by noon." },
-    { "icon": "printer", "title": "Printed in-house", "text": "Digital, wide-format, screen print and embroidery under one roof." },
-    { "icon": "truck", "title": "Pickup or delivery", "text": "Pick up on Alexander Drive or have it dropped off across east Harris County." },
-    { "icon": "palette", "title": "Design help", "text": "No file yet? Our designer sets it up and sends a proof first." }
+    {
+      "icon": "clock",
+      "title": "Next-day turnaround",
+      "text": "On cards, flyers and banners approved by noon."
+    },
+    {
+      "icon": "printer",
+      "title": "Printed in-house",
+      "text": "Digital, wide-format, screen print and embroidery under one roof."
+    },
+    {
+      "icon": "truck",
+      "title": "Pickup or delivery",
+      "text": "Pick up on Alexander Drive or have it dropped off across east Harris County."
+    },
+    {
+      "icon": "palette",
+      "title": "Design help",
+      "text": "No file yet? Our designer sets it up and sends a proof first."
+    }
   ],
   "categories": [
     {
@@ -61,7 +107,12 @@
           "name": "Standard Business Cards",
           "code": "BC-14",
           "text": "A sturdy 14pt card in matte or gloss, printed one or both sides. The card most businesses reorder.",
-          "details": ["14pt matte or gloss", "One or both sides", "Boxes of 250 to 5,000", "Square or rounded corners"],
+          "details": [
+            "14pt matte or gloss",
+            "One or both sides",
+            "Boxes of 250 to 5,000",
+            "Square or rounded corners"
+          ],
           "turnaround": "Next business day",
           "featured": true,
           "image": "/brands/sample-printing/standard-cards",
@@ -72,7 +123,12 @@
           "name": "Thick and Soft-Touch Cards",
           "code": "BC-32",
           "text": "Heavy 32pt stock with a velvet soft-touch coat, with gold or silver foil and spot gloss on top if you want them.",
-          "details": ["16pt and 32pt stocks", "Soft-touch or uncoated", "Foil and spot gloss", "Painted edges"],
+          "details": [
+            "16pt and 32pt stocks",
+            "Soft-touch or uncoated",
+            "Foil and spot gloss",
+            "Painted edges"
+          ],
           "turnaround": "3 to 5 business days",
           "image": "/brands/sample-printing/thick-cards",
           "imageAlt": "A thick black business card with a debossed name"
@@ -82,7 +138,12 @@
           "name": "Invitations and Announcements",
           "code": "IN-5X7",
           "text": "Wedding, shower and grand opening invitations printed full color on heavy card, with envelopes to match.",
-          "details": ["5x7 and 4x6 flat cards", "Pearl, linen or matte stock", "Envelopes included", "Foil on request"],
+          "details": [
+            "5x7 and 4x6 flat cards",
+            "Pearl, linen or matte stock",
+            "Envelopes included",
+            "Foil on request"
+          ],
           "turnaround": "3 business days",
           "image": "/brands/sample-printing/invitations",
           "imageAlt": "Navy wedding invitations with rose gold line art"
@@ -92,7 +153,12 @@
           "name": "Letterhead and Envelopes",
           "code": "ST-70",
           "text": "Letterhead, #10 envelopes and notepads printed on 70lb text stock to match your cards.",
-          "details": ["70lb text letterhead", "#10 and window envelopes", "Notepads of 50 sheets", "Matched to your cards"],
+          "details": [
+            "70lb text letterhead",
+            "#10 and window envelopes",
+            "Notepads of 50 sheets",
+            "Matched to your cards"
+          ],
           "turnaround": "2 to 3 business days",
           "image": "/brands/sample-printing/letterhead",
           "imageAlt": "Blank letterhead sheets beside a brown envelope"
@@ -113,7 +179,12 @@
           "name": "Vinyl Banners",
           "code": "VB-13",
           "text": "Weatherproof 13oz vinyl, hemmed and grommeted, in any size up to 10 feet tall and as long as you need.",
-          "details": ["13oz and 18oz vinyl", "Hemmed with grommets", "Pole pockets available", "Indoor or outdoor"],
+          "details": [
+            "13oz and 18oz vinyl",
+            "Hemmed with grommets",
+            "Pole pockets available",
+            "Indoor or outdoor"
+          ],
           "turnaround": "Next business day",
           "featured": true,
           "image": "/brands/sample-printing/vinyl-banners",
@@ -124,7 +195,12 @@
           "name": "Yard Signs",
           "code": "YS-4MM",
           "text": "Corrugated plastic signs printed one or two sides, with wire stakes for campaigns, open houses and job sites.",
-          "details": ["4mm coroplast", "18x24 and 24x36", "H-stakes included", "Bulk pricing from 10"],
+          "details": [
+            "4mm coroplast",
+            "18x24 and 24x36",
+            "H-stakes included",
+            "Bulk pricing from 10"
+          ],
           "turnaround": "2 business days",
           "image": "/brands/sample-printing/yard-signs",
           "imageAlt": "A blue printed sign fixed to a wooden pole"
@@ -134,7 +210,12 @@
           "name": "A-Frame Sidewalk Signs",
           "code": "AF-24",
           "text": "Double-sided sidewalk signs with swappable printed inserts, so the special can change without a new frame.",
-          "details": ["24x36 inserts", "Plastic or metal frame", "Both sides printed", "Spare inserts on request"],
+          "details": [
+            "24x36 inserts",
+            "Plastic or metal frame",
+            "Both sides printed",
+            "Spare inserts on request"
+          ],
           "turnaround": "3 business days",
           "image": "/brands/sample-printing/a-frame",
           "imageAlt": "A chalkboard style sidewalk sign outside a coffee shop"
@@ -144,7 +225,12 @@
           "name": "Retractable Banner Stands",
           "code": "RB-33",
           "text": "Pull-up stands for trade shows and lobbies that set up in a minute and pack into a carry bag.",
-          "details": ["33x81 standard size", "Carry bag included", "Replacement prints", "Anti-curl film"],
+          "details": [
+            "33x81 standard size",
+            "Carry bag included",
+            "Replacement prints",
+            "Anti-curl film"
+          ],
           "turnaround": "2 business days"
         },
         {
@@ -152,7 +238,12 @@
           "name": "Aluminum and Rigid Signs",
           "code": "AL-040",
           "text": "Long-life outdoor signs on aluminum composite for parking, safety and property signage.",
-          "details": ["3mm aluminum composite", "UV laminated", "Drilled or with posts", "Reflective vinyl option"],
+          "details": [
+            "3mm aluminum composite",
+            "UV laminated",
+            "Drilled or with posts",
+            "Reflective vinyl option"
+          ],
           "turnaround": "3 to 5 business days",
           "image": "/brands/sample-printing/aluminum-signs",
           "imageAlt": "A yellow caution sign mounted on a red metal wall"
@@ -173,7 +264,12 @@
           "name": "Screen Printed Shirts",
           "code": "SP-6C",
           "text": "Bold, long-lasting color for larger runs, from a one-color logo to a six-color front and back.",
-          "details": ["Up to 6 ink colors", "Front, back and sleeve", "Orders from 24 pieces", "Youth to 5XL"],
+          "details": [
+            "Up to 6 ink colors",
+            "Front, back and sleeve",
+            "Orders from 24 pieces",
+            "Youth to 5XL"
+          ],
           "turnaround": "7 to 10 business days",
           "featured": true,
           "image": "/brands/sample-printing/screen-tees",
@@ -184,7 +280,12 @@
           "name": "Full-Color DTF Shirts",
           "code": "DTF-FC",
           "text": "Photos, gradients and small runs printed full color with direct-to-film transfers. One shirt is fine.",
-          "details": ["No color limit", "No minimum order", "Cotton and blends", "Soft, stretchy finish"],
+          "details": [
+            "No color limit",
+            "No minimum order",
+            "Cotton and blends",
+            "Soft, stretchy finish"
+          ],
           "turnaround": "2 to 3 business days",
           "image": "/brands/sample-printing/dtf-shirts",
           "imageAlt": "A plain white t-shirt on a hanger against a concrete wall"
@@ -194,7 +295,12 @@
           "name": "Embroidered Polos and Uniforms",
           "code": "EM-12K",
           "text": "Your logo stitched on polos, work shirts and jackets, so the crew looks the same on every job.",
-          "details": ["Left chest or sleeve", "Name personalization", "Thread matched to your brand", "Reorders kept on file"],
+          "details": [
+            "Left chest or sleeve",
+            "Name personalization",
+            "Thread matched to your brand",
+            "Reorders kept on file"
+          ],
           "turnaround": "5 to 7 business days",
           "image": "/brands/sample-printing/polos",
           "imageAlt": "A white polo shirt hanging on a wooden ladder rack"
@@ -204,7 +310,12 @@
           "name": "Custom Hats",
           "code": "HT-3D",
           "text": "Caps and beanies with flat or raised 3D embroidery, or a printed patch.",
-          "details": ["Flat or 3D puff", "Leather and woven patches", "Snapback and fitted", "Orders from 12"],
+          "details": [
+            "Flat or 3D puff",
+            "Leather and woven patches",
+            "Snapback and fitted",
+            "Orders from 12"
+          ],
           "turnaround": "7 business days",
           "image": "/brands/sample-printing/hats",
           "imageAlt": "A plain white baseball cap on a grey background"
@@ -225,7 +336,12 @@
           "name": "Full and Partial Wraps",
           "code": "VW-3M",
           "text": "Cast vinyl wraps with a protective laminate, designed to the exact vehicle and installed by our crew.",
-          "details": ["Cast vinyl and laminate", "Full, half or quarter", "Designed to your vehicle", "Installed in our bay"],
+          "details": [
+            "Cast vinyl and laminate",
+            "Full, half or quarter",
+            "Designed to your vehicle",
+            "Installed in our bay"
+          ],
           "turnaround": "Quoted per vehicle",
           "featured": true,
           "image": "/brands/sample-printing/wraps",
@@ -236,7 +352,12 @@
           "name": "Fleet Graphics",
           "code": "FL-KIT",
           "text": "One layout applied the same way on every van and truck, with the files kept here for the next vehicle you add.",
-          "details": ["Matched across vehicles", "Unit numbers", "DOT numbers", "Files kept for reorders"],
+          "details": [
+            "Matched across vehicles",
+            "Unit numbers",
+            "DOT numbers",
+            "Files kept for reorders"
+          ],
           "turnaround": "Scheduled by fleet",
           "image": "/brands/sample-printing/fleet",
           "imageAlt": "A row of white work vans parked in a lot"
@@ -246,7 +367,12 @@
           "name": "Door Lettering and Decals",
           "code": "DL-CUT",
           "text": "Cut vinyl lettering with your name, phone and license number, the fastest way to mark a work truck.",
-          "details": ["Cut vinyl lettering", "DOT and license numbers", "Any color vinyl", "Installed while you wait"],
+          "details": [
+            "Cut vinyl lettering",
+            "DOT and license numbers",
+            "Any color vinyl",
+            "Installed while you wait"
+          ],
           "turnaround": "1 to 2 business days"
         },
         {
@@ -254,7 +380,12 @@
           "name": "Vehicle Magnets",
           "code": "MG-30",
           "text": "Removable door magnets for personal trucks that work during the week and go home on the weekend.",
-          "details": ["30mil magnetic sheet", "12x18 and 18x24", "Rounded corners", "Sold in pairs"],
+          "details": [
+            "30mil magnetic sheet",
+            "12x18 and 18x24",
+            "Rounded corners",
+            "Sold in pairs"
+          ],
           "turnaround": "Next business day",
           "image": "/brands/sample-printing/magnets",
           "imageAlt": "A white van parked on a city street"
@@ -275,7 +406,12 @@
           "name": "Stickers and Labels",
           "code": "ST-DC",
           "text": "Die-cut stickers and roll labels on weatherproof vinyl, cut to the shape of your design.",
-          "details": ["Die-cut or kiss-cut", "Gloss, matte or clear", "Sheets or rolls", "Dishwasher safe vinyl"],
+          "details": [
+            "Die-cut or kiss-cut",
+            "Gloss, matte or clear",
+            "Sheets or rolls",
+            "Dishwasher safe vinyl"
+          ],
           "turnaround": "3 business days",
           "featured": true,
           "image": "/brands/sample-printing/stickers",
@@ -286,7 +422,12 @@
           "name": "Tote Bags",
           "code": "TB-CAN",
           "text": "Canvas and non-woven totes printed with your logo, for events, shops and welcome kits.",
-          "details": ["Canvas and non-woven", "One or two sides", "Orders from 25", "Natural, black and colors"],
+          "details": [
+            "Canvas and non-woven",
+            "One or two sides",
+            "Orders from 25",
+            "Natural, black and colors"
+          ],
           "turnaround": "5 to 7 business days",
           "image": "/brands/sample-printing/totes",
           "imageAlt": "A plain canvas tote bag on a grey surface"
@@ -296,7 +437,12 @@
           "name": "Mugs and Drinkware",
           "code": "DW-11",
           "text": "Ceramic mugs and insulated tumblers printed or laser engraved with your mark.",
-          "details": ["11oz and 15oz mugs", "Insulated tumblers", "Printed or engraved", "Gift boxes available"],
+          "details": [
+            "11oz and 15oz mugs",
+            "Insulated tumblers",
+            "Printed or engraved",
+            "Gift boxes available"
+          ],
           "turnaround": "5 business days",
           "image": "/brands/sample-printing/drinkware",
           "imageAlt": "A white ceramic mug on a cork coaster"
@@ -306,7 +452,12 @@
           "name": "Pens and Giveaways",
           "code": "PG-MIX",
           "text": "Pens, magnets, koozies and keychains for the table at a trade show or the bowl by the register.",
-          "details": ["Pens and highlighters", "Calendar magnets", "Can koozies", "Orders from 100"],
+          "details": [
+            "Pens and highlighters",
+            "Calendar magnets",
+            "Can koozies",
+            "Orders from 100"
+          ],
           "turnaround": "7 to 10 business days"
         }
       ]
@@ -325,7 +476,12 @@
           "name": "Posters and Prints",
           "code": "PS-2436",
           "text": "Sharp, full-color posters on satin or gloss photo paper, from 11x17 up to 36x48.",
-          "details": ["11x17 to 36x48", "Satin or gloss paper", "Lamination available", "Single copies welcome"],
+          "details": [
+            "11x17 to 36x48",
+            "Satin or gloss paper",
+            "Lamination available",
+            "Single copies welcome"
+          ],
           "turnaround": "Same or next day",
           "image": "/brands/sample-printing/posters",
           "imageAlt": "A framed typography poster on a white wall"
@@ -335,7 +491,12 @@
           "name": "Window Graphics",
           "code": "WG-PERF",
           "text": "Storefront lettering, hours and see-through perforated window film, installed by us.",
-          "details": ["Cut vinyl lettering", "Perforated window film", "Frosted privacy film", "Installation included"],
+          "details": [
+            "Cut vinyl lettering",
+            "Perforated window film",
+            "Frosted privacy film",
+            "Installation included"
+          ],
           "turnaround": "3 to 5 business days",
           "image": "/brands/sample-printing/window",
           "imageAlt": "Reflective lettering on a dark storefront window"
@@ -345,7 +506,12 @@
           "name": "Wall Murals",
           "code": "WM-TEX",
           "text": "Printed wallcovering for lobbies, classrooms and break rooms, measured on site and hung in panels.",
-          "details": ["Textured or smooth", "Measured on site", "Removable options", "Installed in panels"],
+          "details": [
+            "Textured or smooth",
+            "Measured on site",
+            "Removable options",
+            "Installed in panels"
+          ],
           "turnaround": "Quoted per wall"
         },
         {
@@ -353,7 +519,12 @@
           "name": "Foam Board and Mounted Prints",
           "code": "FB-3/16",
           "text": "Prints mounted to foam board or PVC for presentations, easels, menus and event signs.",
-          "details": ["3/16 and 1/2 inch foam", "PVC and gatorboard", "Easel backs", "Cut to shape"],
+          "details": [
+            "3/16 and 1/2 inch foam",
+            "PVC and gatorboard",
+            "Easel backs",
+            "Cut to shape"
+          ],
           "turnaround": "Next business day",
           "image": "/brands/sample-printing/mounted",
           "imageAlt": "A large print feeding out of a wide-format printer"
@@ -371,10 +542,22 @@
     "href": "/quote"
   },
   "process": [
-    { "title": "Send the details", "text": "Tell us what you need on the quote form, or call and talk it through." },
-    { "title": "Approve a proof", "text": "You get a digital proof and a price. Nothing prints until you say so." },
-    { "title": "We print it here", "text": "Your job runs on our own equipment and gets checked before it is packed." },
-    { "title": "Pick up or delivery", "text": "Collect it at the counter or have it dropped off at your door." }
+    {
+      "title": "Send the details",
+      "text": "Tell us what you need on the quote form, or call and talk it through."
+    },
+    {
+      "title": "Approve a proof",
+      "text": "You get a digital proof and a price. Nothing prints until you say so."
+    },
+    {
+      "title": "We print it here",
+      "text": "Your job runs on our own equipment and gets checked before it is packed."
+    },
+    {
+      "title": "Pick up or delivery",
+      "text": "Collect it at the counter or have it dropped off at your door."
+    }
   ],
   "about": {
     "eyebrow": "About the shop",
@@ -386,16 +569,50 @@
     "image": "/brands/sample-printing/about",
     "imageAlt": "A screen printing press in the production room",
     "points": [
-      { "title": "One shop, every job", "text": "Cards, signs, shirts and wraps without being passed to another vendor." },
-      { "title": "Files kept on hand", "text": "Reorders print from the file we already have." },
-      { "title": "Real proofs", "text": "A digital proof on every order, a printed one when color matters." }
+      {
+        "title": "One shop, every job",
+        "text": "Cards, signs, shirts and wraps without being passed to another vendor."
+      },
+      {
+        "title": "Files kept on hand",
+        "text": "Reorders print from the file we already have."
+      },
+      {
+        "title": "Real proofs",
+        "text": "A digital proof on every order, a printed one when color matters."
+      }
     ]
   },
-  "serviceArea": ["Baytown", "Mont Belvieu", "La Porte", "Highlands", "Crosby", "Channelview", "Deer Park", "Pasadena"],
+  "serviceArea": [
+    "Baytown",
+    "Mont Belvieu",
+    "La Porte",
+    "Highlands",
+    "Crosby",
+    "Channelview",
+    "Deer Park",
+    "Pasadena"
+  ],
   "reviews": [
-    { "author": "Local restaurant owner", "product": "Menus and window graphics", "text": "They redid our menus and the front windows in the same week. Colors matched our logo exactly and the install crew was in and out before lunch." },
-    { "author": "Youth league coach", "product": "Team shirts", "text": "Ordered 60 shirts for the league on a Monday and picked them up the next Friday. Every size was right and the print has held up through a whole season." },
-    { "author": "Roofing contractor", "product": "Truck lettering", "text": "Lettered two trucks while I waited. Simple, clean and people call off the doors now." },
-    { "author": "Realtor", "product": "Yard signs", "text": "I reorder signs all the time and they always have my file. Call in the morning, pick up the next day." }
+    {
+      "author": "Local restaurant owner",
+      "product": "Menus and window graphics",
+      "text": "They redid our menus and the front windows in the same week. Colors matched our logo exactly and the install crew was in and out before lunch."
+    },
+    {
+      "author": "Youth league coach",
+      "product": "Team shirts",
+      "text": "Ordered 60 shirts for the league on a Monday and picked them up the next Friday. Every size was right and the print has held up through a whole season."
+    },
+    {
+      "author": "Roofing contractor",
+      "product": "Truck lettering",
+      "text": "Lettered two trucks while I waited. Simple, clean and people call off the doors now."
+    },
+    {
+      "author": "Realtor",
+      "product": "Yard signs",
+      "text": "I reorder signs all the time and they always have my file. Call in the morning, pick up the next day."
+    }
   ]
 }

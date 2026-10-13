@@ -14,9 +14,18 @@
   "reviewCount": 3213,
   "since": 2012,
   "hours": [
-    ["Mon – Fri", "Open 24 hours"],
-    ["Saturday", "Open 24 hours"],
-    ["Sunday", "Open 24 hours"]
+    [
+      "Mon – Fri",
+      "Open 24 hours"
+    ],
+    [
+      "Saturday",
+      "Open 24 hours"
+    ],
+    [
+      "Sunday",
+      "Open 24 hours"
+    ]
   ],
   "brand": {
     "primary": "#00383e",
@@ -30,7 +39,24 @@
     "body": "'Open Sans', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap",
     "logo": "/brands/airtechofhumbleelitecomfort/logo.webp",
-    "logoWidth": 210
+    "logoMono": "/brands/airtechofhumbleelitecomfort/logo-mono.webp",
+    "logoWidth": 183,
+    "logoHeight": 48,
+    "logoRatio": 3.812,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.444,
+      0.359,
+      0.323,
+      0.38,
+      0.441,
+      0.504,
+      0.579,
+      0.679,
+      0.788,
+      0.896,
+      1.0
+    ]
   },
   "emergency": {
     "title": "24/7 emergency service",
@@ -38,9 +64,18 @@
   },
   "sameDay": "Trucks are stocked so most repairs are completed on the spot, and same-day service is available throughout the service area.",
   "licenses": [
-    { "label": "TDLR HVAC", "number": "TACLA00021907C" },
-    { "label": "TSBPE Plumbing", "number": "RMP44203" },
-    { "label": "TDLR Electrical", "number": "592546; 39145" }
+    {
+      "label": "TDLR HVAC",
+      "number": "TACLA00021907C"
+    },
+    {
+      "label": "TSBPE Plumbing",
+      "number": "RMP44203"
+    },
+    {
+      "label": "TDLR Electrical",
+      "number": "592546; 39145"
+    }
   ],
   "financing": {
     "text": "Financing on repairs and system replacements through Synchrony, Wells Fargo Home Projects and Service Finance, with applications completed directly with each lender and subject to credit approval."
@@ -245,7 +280,9 @@
           "title": "Sewer and Gas Lines",
           "icon": "cable",
           "text": "Sewer and gas line repairs and inspections by licensed plumbers.",
-          "points": ["Free camera inspection on trenchless plumbing services"]
+          "points": [
+            "Free camera inspection on trenchless plumbing services"
+          ]
         },
         {
           "slug": "commercial-plumbing",
@@ -269,14 +306,18 @@
           "title": "Electrical Repairs",
           "icon": "wrench",
           "text": "Fast, reliable electrical repairs for your home or business, including troubleshooting the faults that are hard to pin down.",
-          "points": ["Circuit breaker faults, ceiling fans and new circuits"]
+          "points": [
+            "Circuit breaker faults, ceiling fans and new circuits"
+          ]
         },
         {
           "slug": "electrical-panels",
           "title": "Electrical Panels",
           "icon": "circuit",
           "text": "Panel upgrades and replacements done safely and to code, for homes whose demand has outgrown the original service.",
-          "points": ["$99 panel maintenance"]
+          "points": [
+            "$99 panel maintenance"
+          ]
         },
         {
           "slug": "electrical-inspections",
@@ -307,14 +348,18 @@
           "title": "Whole Home Surge Protection",
           "icon": "power",
           "text": "Shield the electronics and appliances in the house from a surge coming in off the grid.",
-          "points": ["$100 off whole-home surge protectors"]
+          "points": [
+            "$100 off whole-home surge protectors"
+          ]
         },
         {
           "slug": "ev-charger-installation",
           "title": "EV Charger Installation",
           "icon": "ev",
           "text": "Home EV charger installation by our licensed team, including the circuit the charger needs.",
-          "points": ["10% off EV chargers"]
+          "points": [
+            "10% off EV chargers"
+          ]
         },
         {
           "slug": "lighting",
@@ -362,7 +407,9 @@
           "title": "Generator Installation",
           "icon": "battery",
           "text": "System sizing and installation for a whole-home standby generator, matched to what the house actually needs to keep running.",
-          "points": ["Free estimates on new whole-home generator installations"]
+          "points": [
+            "Free estimates on new whole-home generator installations"
+          ]
         },
         {
           "slug": "generator-maintenance",

@@ -26,8 +26,9 @@ export default {
         line: token('line'),
         panel: token('panel'),
         ground: token('bg'),
-        // The header's ground and text, from the logo's own ground (site.js);
-        // white and the brand's ink when a brand file gives none.
+        // The header's ground and text: white and the brand's ink unless a
+        // template sets its own. A logo never changes them; it is drawn to
+        // suit the header (BrandLogo in templates/shared.jsx).
         head: 'var(--head, #ffffff)',
         'head-ink': 'var(--head-ink, var(--ink))',
         'head-soft': 'var(--head-soft, var(--muted, #5b6470))',

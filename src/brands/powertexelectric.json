@@ -12,7 +12,12 @@
   "zip": "76085",
   "rating": 5.0,
   "reviewCount": 70,
-  "hours": [["Mon – Sun", "Open 24 hours"]],
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
   "brand": {
     "primary": "#bf5700",
     "primaryDeep": "#8a3e00",
@@ -25,7 +30,24 @@
     "body": "'Open Sans', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap",
     "logo": "/brands/powertexelectric/logo.webp",
-    "logoWidth": 210
+    "logoMono": "/brands/powertexelectric/logo-mono.webp",
+    "logoWidth": 114,
+    "logoHeight": 58,
+    "logoRatio": 1.966,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.347,
+      0.295,
+      0.297,
+      0.321,
+      0.367,
+      0.453,
+      0.554,
+      0.661,
+      0.776,
+      0.89,
+      1.0
+    ]
   },
   "emergency": {
     "title": "24/7 emergency electrical service",
@@ -86,7 +108,11 @@
           "title": "Transparent Service Call Pricing",
           "icon": "gauge",
           "text": "Clear pricing with no surprises. The service call includes on-site diagnosis, a licensed electrician's evaluation, and clear repair options before work begins.",
-          "points": ["Repairs quoted before work starts", "No pressure and no hidden fees", "Permits and inspections handled when required"]
+          "points": [
+            "Repairs quoted before work starts",
+            "No pressure and no hidden fees",
+            "Permits and inspections handled when required"
+          ]
         }
       ]
     },
@@ -361,7 +387,11 @@
           "title": "Stage 2 Charger Install",
           "icon": "ev",
           "text": "Hardwire install of an owner-provided charger, $675.",
-          "points": ["Load calculation included", "Dedicated circuit and breaker install", "Programming and calibration"]
+          "points": [
+            "Load calculation included",
+            "Dedicated circuit and breaker install",
+            "Programming and calibration"
+          ]
         },
         {
           "slug": "home-ev-charging",
@@ -461,9 +491,18 @@
     "image": "/brands/powertexelectric/team",
     "imageAlt": "A Powertex Electric electrician securing conduit to an exterior wall",
     "values": [
-      { "title": "Master electrician led", "text": "Licensed and insured, with residential and commercial experience behind every job." },
-      { "title": "No upselling", "text": "We solve the problem safely and efficiently, and repairs are quoted before work starts." },
-      { "title": "Clean, professional work", "text": "We show up on time, protect your property, and leave the jobsite cleaner than we found it." }
+      {
+        "title": "Master electrician led",
+        "text": "Licensed and insured, with residential and commercial experience behind every job."
+      },
+      {
+        "title": "No upselling",
+        "text": "We solve the problem safely and efficiently, and repairs are quoted before work starts."
+      },
+      {
+        "title": "Clean, professional work",
+        "text": "We show up on time, protect your property, and leave the jobsite cleaner than we found it."
+      }
     ]
   },
   "faqs": [
@@ -535,11 +574,21 @@
     },
     {
       "heading": "Counties served",
-      "items": ["Parker County", "Tarrant County", "Denton County", "Wise County", "Hood County", "Palo Pinto County"]
+      "items": [
+        "Parker County",
+        "Tarrant County",
+        "Denton County",
+        "Wise County",
+        "Hood County",
+        "Palo Pinto County"
+      ]
     },
     {
       "heading": "Certified on",
-      "items": ["Tesla", "Generac"]
+      "items": [
+        "Tesla",
+        "Generac"
+      ]
     },
     {
       "heading": "How a free estimate works",
@@ -565,7 +614,12 @@
     },
     {
       "heading": "Pricing",
-      "items": ["Free estimate", "Flat rate pricing", "12 month 0% financing", "Free first hour on a service call with approved repair"]
+      "items": [
+        "Free estimate",
+        "Flat rate pricing",
+        "12 month 0% financing",
+        "Free first hour on a service call with approved repair"
+      ]
     },
     {
       "heading": "Why Powertex Electric",
@@ -591,7 +645,12 @@
     },
     {
       "heading": "What a free estimate appointment includes",
-      "items": ["Same-week appointments", "Honest recommendations", "Code-compliant work", "Residential and commercial"]
+      "items": [
+        "Same-week appointments",
+        "Honest recommendations",
+        "Code-compliant work",
+        "Residential and commercial"
+      ]
     },
     {
       "heading": "Residential work we estimate",
@@ -625,7 +684,10 @@
     },
     {
       "heading": "Find us online",
-      "items": ["facebook.com/811765095358189", "instagram.com/powertex_electric"]
+      "items": [
+        "facebook.com/811765095358189",
+        "instagram.com/powertex_electric"
+      ]
     }
   ]
 }

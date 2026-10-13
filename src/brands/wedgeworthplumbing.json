@@ -11,7 +11,20 @@
   "zip": "77055",
   "rating": 4.9,
   "reviewCount": 647,
-  "hours": [["Mon – Fri", "7 AM – 7 PM"], ["Saturday", "8 AM – 5 PM"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "7 AM – 7 PM"
+    ],
+    [
+      "Saturday",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "brand": {
     "primary": "#0c9547",
     "primaryDeep": "#06572a",
@@ -22,7 +35,24 @@
     "body": "'Barlow', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,800&family=Barlow:wght@400;500;600;700&display=swap",
     "logo": "/brands/wedgeworthplumbing/logo.webp",
-    "logoWidth": 210
+    "logoMono": "/brands/wedgeworthplumbing/logo-mono.webp",
+    "logoWidth": 175,
+    "logoHeight": 58,
+    "logoRatio": 3.017,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.927,
+      0.92,
+      0.925,
+      0.932,
+      0.94,
+      0.95,
+      0.959,
+      0.969,
+      0.979,
+      0.99,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Houston plumbers",
@@ -34,30 +64,96 @@
     "mascot": "/brands/wedgeworthplumbing/wolfman.webp",
     "mascotLine": "So good, it's scary."
   },
-  "promises": ["Up-front pricing", "Experienced techs only", "Strong warranties", "Financing available"],
+  "promises": [
+    "Up-front pricing",
+    "Experienced techs only",
+    "Strong warranties",
+    "Financing available"
+  ],
   "services": [
-    { "title": "Water Heaters", "icon": "flame", "text": "Repairs and full replacements, gas or electric, usually the same day." },
-    { "title": "Tankless Water Heaters", "icon": "zap", "text": "Endless hot water and a smaller utility bill, sized and installed right." },
-    { "title": "Drain and Toilet Clogs", "icon": "droplets", "text": "Kitchen, bath and main lines cleared, and the cause found so it stays clear." },
-    { "title": "Hydro Jetting", "icon": "waves", "text": "High-pressure water scours grease and roots out of the line, wall to wall." },
-    { "title": "Sewer Repair and Replacement", "icon": "construction", "text": "Camera inspection first, then the repair, with the yard put back after." },
-    { "title": "Slab Leaks and Leak Detection", "icon": "search", "text": "Leaks pinpointed electronically, so the floor opens in one spot, not five." },
-    { "title": "Repiping", "icon": "wrench", "text": "Old galvanized and polybutylene pipe swapped for PEX or copper." },
-    { "title": "Gas Lines", "icon": "gauge", "text": "New lines, repairs and pressure testing, permitted and inspected." },
-    { "title": "Garbage Disposals", "icon": "cog", "text": "Jammed, leaking or worn out, repaired or replaced in one visit." },
-    { "title": "Water Filtration", "icon": "filter", "text": "Whole-home and under-sink systems for cleaner, better-tasting water." },
-    { "title": "Bathroom Remodels and Showers", "icon": "shower", "text": "New showers, tubs and fixtures, plumbed properly from the rough-in up." },
-    { "title": "Commercial Plumbing", "icon": "building", "text": "Restaurants, offices and retail, scheduled around your business hours." },
-    { "title": "A/C Condensate Drain Clearing", "icon": "droplets", "text": "Clogged air conditioner condensate lines cleared, in the attic, garage or closet, before they leak." }
+    {
+      "title": "Water Heaters",
+      "icon": "flame",
+      "text": "Repairs and full replacements, gas or electric, usually the same day."
+    },
+    {
+      "title": "Tankless Water Heaters",
+      "icon": "zap",
+      "text": "Endless hot water and a smaller utility bill, sized and installed right."
+    },
+    {
+      "title": "Drain and Toilet Clogs",
+      "icon": "droplets",
+      "text": "Kitchen, bath and main lines cleared, and the cause found so it stays clear."
+    },
+    {
+      "title": "Hydro Jetting",
+      "icon": "waves",
+      "text": "High-pressure water scours grease and roots out of the line, wall to wall."
+    },
+    {
+      "title": "Sewer Repair and Replacement",
+      "icon": "construction",
+      "text": "Camera inspection first, then the repair, with the yard put back after."
+    },
+    {
+      "title": "Slab Leaks and Leak Detection",
+      "icon": "search",
+      "text": "Leaks pinpointed electronically, so the floor opens in one spot, not five."
+    },
+    {
+      "title": "Repiping",
+      "icon": "wrench",
+      "text": "Old galvanized and polybutylene pipe swapped for PEX or copper."
+    },
+    {
+      "title": "Gas Lines",
+      "icon": "gauge",
+      "text": "New lines, repairs and pressure testing, permitted and inspected."
+    },
+    {
+      "title": "Garbage Disposals",
+      "icon": "cog",
+      "text": "Jammed, leaking or worn out, repaired or replaced in one visit."
+    },
+    {
+      "title": "Water Filtration",
+      "icon": "filter",
+      "text": "Whole-home and under-sink systems for cleaner, better-tasting water."
+    },
+    {
+      "title": "Bathroom Remodels and Showers",
+      "icon": "shower",
+      "text": "New showers, tubs and fixtures, plumbed properly from the rough-in up."
+    },
+    {
+      "title": "Commercial Plumbing",
+      "icon": "building",
+      "text": "Restaurants, offices and retail, scheduled around your business hours."
+    },
+    {
+      "title": "A/C Condensate Drain Clearing",
+      "icon": "droplets",
+      "text": "Clogged air conditioner condensate lines cleared, in the attic, garage or closet, before they leak."
+    }
   ],
   "crew": {
     "eyebrow": "The Wedgeworth difference",
     "title": "Only experienced plumbers come to your door.",
     "text": "Every call goes to an experienced, trained technician. They diagnose the problem, give you the price, and do the work only after you approve it.",
     "points": [
-      { "title": "Price first", "text": "You see the full price before a wrench comes out." },
-      { "title": "On time", "text": "A call when the tech is on the way, inside the window you were given." },
-      { "title": "Warrantied", "text": "Work backed by some of the best warranties in the business." }
+      {
+        "title": "Price first",
+        "text": "You see the full price before a wrench comes out."
+      },
+      {
+        "title": "On time",
+        "text": "A call when the tech is on the way, inside the window you were given."
+      },
+      {
+        "title": "Warrantied",
+        "text": "Work backed by some of the best warranties in the business."
+      }
     ],
     "image": "/brands/wedgeworthplumbing/toilet",
     "imageAlt": "A Wedgeworth plumber repairing a toilet"
@@ -68,22 +164,96 @@
     "image": "/brands/wedgeworthplumbing/truck",
     "imageAlt": "A green Wedgeworth Plumbing service van"
   },
-  "serviceArea": ["Houston", "Bellaire", "West University Place", "Hunters Creek Village", "Piney Point Village", "Bunker Hill Village", "Hedwig Village", "Webster", "League City", "Seabrook", "Kemah", "Clear Lake Shores", "Spring", "Katy", "Baytown"],
+  "serviceArea": [
+    "Houston",
+    "Bellaire",
+    "West University Place",
+    "Hunters Creek Village",
+    "Piney Point Village",
+    "Bunker Hill Village",
+    "Hedwig Village",
+    "Webster",
+    "League City",
+    "Seabrook",
+    "Kemah",
+    "Clear Lake Shores",
+    "Spring",
+    "Katy",
+    "Baytown"
+  ],
   "reviews": [
-    { "author": "Matt Malinsky", "text": "Very professional and timely service. TJ came during assigned window, clearly explained what he found and what he proposed to do and made the repair. Highly recommend." },
-    { "author": "Penny McQueen", "text": "Prompt with very competitive pricing. James was great! They replaced the entire main sewage line with minimal impact to my deck and back yard. Great work!" },
-    { "author": "Lacey Harris", "text": "Highly recommend. James was AWESOME. He was polite and professional, and gave me honest feedback on the problems we were having. He arrived right on time and took care of things in a timely manner." }
+    {
+      "author": "Matt Malinsky",
+      "text": "Very professional and timely service. TJ came during assigned window, clearly explained what he found and what he proposed to do and made the repair. Highly recommend."
+    },
+    {
+      "author": "Penny McQueen",
+      "text": "Prompt with very competitive pricing. James was great! They replaced the entire main sewage line with minimal impact to my deck and back yard. Great work!"
+    },
+    {
+      "author": "Lacey Harris",
+      "text": "Highly recommend. James was AWESOME. He was polite and professional, and gave me honest feedback on the problems we were having. He arrived right on time and took care of things in a timely manner."
+    }
   ],
   "facts": [
-    {"heading": "Family owned since 1978", "text": "Wedgeworth Plumbing is a family owned company that has served Houston since 1978. We train our own plumbers and send only experienced technicians to your door."},
-    {"heading": "Water heater guarantee", "text": "Water heater installations carry a full 6 or 10 year guarantee covering the tank, labor and parts. We service every brand, size and model, install any brand you choose, and suggest energy-efficient State models for replacements."},
-    {"heading": "Guaranteed work", "text": "We guarantee all of our products and workmanship, with warranties on labor, parts and equipment."},
-    {"heading": "Water softeners and treatment", "text": "We install and repair water softeners, reverse osmosis drinking water systems, hot water filters, and whole-house carbon and sediment filters for any size home."},
-    {"heading": "Water softener brands we service", "items": ["Culligan", "Sears and Kenmore", "EcoWater", "Kinetico", "Rheem", "Kleck", "GE", "H2O Harmony", "Surge Water", "Water Boss", "Northstar"]},
-    {"heading": "Sewer and slab leak repair", "text": "Sewer lines are repaired trenchless where the line allows and by trench where it does not, using SDR 26 pipe that meets current plumbing code. Slab leaks are found with hydrostatic and pressure testing, camera inspection and acoustic listening equipment, then fixed by rerouting through the walls and attic, tunneling, epoxy lining or a direct repair, with permits pulled and the lines tested when we finish."},
-    {"heading": "Payment and financing", "text": "Pay by cash, check, credit card or debit card when the job is finished. Financing is available on approved credit for major repairs and equipment upgrades."},
-    {"heading": "Quotes and specials", "text": "Call (832) 867-5309 for a quote or to ask about our current specials."},
-    {"heading": "Associations", "items": ["Plumbing-Heating-Cooling Contractors Association (PHCC)", "Better Business Bureau"]},
-    {"heading": "Follow along", "items": ["Facebook: facebook.com/wedgeworthplumbingsean", "Instagram: @wedgeworthplumbing", "Yelp: Wedgeworth Plumbing, Houston"]}
+    {
+      "heading": "Family owned since 1978",
+      "text": "Wedgeworth Plumbing is a family owned company that has served Houston since 1978. We train our own plumbers and send only experienced technicians to your door."
+    },
+    {
+      "heading": "Water heater guarantee",
+      "text": "Water heater installations carry a full 6 or 10 year guarantee covering the tank, labor and parts. We service every brand, size and model, install any brand you choose, and suggest energy-efficient State models for replacements."
+    },
+    {
+      "heading": "Guaranteed work",
+      "text": "We guarantee all of our products and workmanship, with warranties on labor, parts and equipment."
+    },
+    {
+      "heading": "Water softeners and treatment",
+      "text": "We install and repair water softeners, reverse osmosis drinking water systems, hot water filters, and whole-house carbon and sediment filters for any size home."
+    },
+    {
+      "heading": "Water softener brands we service",
+      "items": [
+        "Culligan",
+        "Sears and Kenmore",
+        "EcoWater",
+        "Kinetico",
+        "Rheem",
+        "Kleck",
+        "GE",
+        "H2O Harmony",
+        "Surge Water",
+        "Water Boss",
+        "Northstar"
+      ]
+    },
+    {
+      "heading": "Sewer and slab leak repair",
+      "text": "Sewer lines are repaired trenchless where the line allows and by trench where it does not, using SDR 26 pipe that meets current plumbing code. Slab leaks are found with hydrostatic and pressure testing, camera inspection and acoustic listening equipment, then fixed by rerouting through the walls and attic, tunneling, epoxy lining or a direct repair, with permits pulled and the lines tested when we finish."
+    },
+    {
+      "heading": "Payment and financing",
+      "text": "Pay by cash, check, credit card or debit card when the job is finished. Financing is available on approved credit for major repairs and equipment upgrades."
+    },
+    {
+      "heading": "Quotes and specials",
+      "text": "Call (832) 867-5309 for a quote or to ask about our current specials."
+    },
+    {
+      "heading": "Associations",
+      "items": [
+        "Plumbing-Heating-Cooling Contractors Association (PHCC)",
+        "Better Business Bureau"
+      ]
+    },
+    {
+      "heading": "Follow along",
+      "items": [
+        "Facebook: facebook.com/wedgeworthplumbingsean",
+        "Instagram: @wedgeworthplumbing",
+        "Yelp: Wedgeworth Plumbing, Houston"
+      ]
+    }
   ]
 }
