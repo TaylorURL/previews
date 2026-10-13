@@ -1,0 +1,349 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "ATI Energy Group, LLC.",
+  "shortName": "ATI Energy",
+  "summary": "Industrial electrical and instrumentation construction, engineering, maintenance and renewable energy projects, run out of Baytown, Texas.",
+  "phone": "(281) 839-7601",
+  "email": "contact@atiegroup.com",
+  "address": "5514 Decker Dr",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77520",
+  "hours": [
+    [
+      "Mon – Thu",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Friday",
+      "8 AM – 12 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
+  "licenses": [
+    {
+      "label": "US DOL Apprenticeship Registration",
+      "number": "5489436-2024-TX-127905"
+    }
+  ],
+  "brand": {
+    "primary": "#143967",
+    "primaryDeep": "#0d2546",
+    "accent": "#e07a1f",
+    "ink": "#0e1c2e",
+    "muted": "#4a5b70",
+    "surface": "#eef2f8",
+    "line": "#d6dee8",
+    "heading": "'Manrope', system-ui, sans-serif",
+    "body": "'Poppins', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap",
+    "logo": "/brands/atienergygroup/logo.webp",
+    "logoWidth": 96,
+    "logoHeight": 58,
+    "logoRatio": 1.657,
+    "logoGround": "#ffffff",
+    "logoName": true
+  },
+  "hero": {
+    "eyebrow": "Engineering, procurement and construction in Baytown",
+    "title": "Industrial electrical and instrumentation,",
+    "titleAccent": "delivered safely and on schedule.",
+    "lead": "ATI Energy Group offers specialized electrical and instrumentation services, from design and construction to maintenance and renewable energy projects. We prioritize safety, quality, and efficiency in every solution.",
+    "image": "/brands/atienergygroup/hero",
+    "imageAlt": "An industrial process plant with pipe racks, cable trays and switch racks"
+  },
+  "groups": [
+    {
+      "slug": "construction",
+      "title": "I&E Construction",
+      "icon": "zap",
+      "summary": "Instrument and electrical construction for petrochemical, pipeline, utility and general industrial plants.",
+      "intro": "Our team are experts in instrument and electrical construction with over 30 years of experience across many industries. Our experience in optimizing I&E designs and managing complex industrial installations underpins our high velocity and high quality delivery. The scope runs from cable and switchgear through to commissioning and start-up.",
+      "image": "/brands/atienergygroup/construction",
+      "imageAlt": "A process skid with instrument transmitters, tubing and conduit runs",
+      "services": [
+        {
+          "slug": "power-distribution",
+          "title": "Power Distribution and Switchgear",
+          "icon": "power",
+          "text": "General electrical construction covering transformation, switch gear, motor control centers, panel boards, motors and devices. We install and terminate power distribution systems at 35 kV and below.",
+          "points": [
+            "Switchgear and MCC installation",
+            "35 kV and below power distribution",
+            "Medium voltage terminations",
+            "High voltage switch installation"
+          ]
+        },
+        {
+          "slug": "cable-tray-and-conduit",
+          "title": "Cable, Tray and Conduit",
+          "icon": "cable",
+          "text": "Cable installation from 35 kV down to 24 VDC, with the cable tray, conduit and grounding that carries it. Pole line distribution where the service runs overhead.",
+          "points": [
+            "Cable installation 35 kV to 24 VDC",
+            "Cable tray and conduit installations",
+            "Grounding grid installation",
+            "Pole line distribution"
+          ]
+        },
+        {
+          "slug": "field-instrumentation",
+          "title": "Field Instrumentation",
+          "icon": "gauge",
+          "text": "Field instrumentation installations, then calibration and loop check to prove every loop before start-up. Hi-pot and VLF testing on the cable that feeds it.",
+          "points": [
+            "Field calibration and loop check",
+            "Hi-pot and VLF testing",
+            "Calibration, loop check and sell-off of instrumentation systems"
+          ]
+        },
+        {
+          "slug": "automation-systems",
+          "title": "SCADA, PLC and DCS",
+          "icon": "settings",
+          "text": "Installation of SCADA, PLC and DCS systems, and the automation of instrument control systems that run the plant. Fiber optic cable installed and terminated where the network needs it.",
+          "points": [
+            "SCADA, PLC and DCS installation",
+            "Fiber optics installation and termination",
+            "Automation of instrument control systems",
+            "Point to point systems commissioning and testing"
+          ]
+        },
+        {
+          "slug": "lighting",
+          "title": "Project Lighting",
+          "icon": "lightbulb",
+          "text": "Project lighting installation across plants, terminals and station sites, wired and supported as part of the wider electrical scope."
+        },
+        {
+          "slug": "commissioning",
+          "title": "Commissioning and Start-Up",
+          "icon": "timer",
+          "text": "Commissioning and start-up to hand the plant over running. Our project controls team covers planning and scheduling, cost and progress reporting, and the quality documentation that comes with it.",
+          "points": [
+            "Project planning and scheduling",
+            "Cost and progress controls and reporting",
+            "Quality control and quality assurance"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "engineering",
+      "title": "Engineering",
+      "icon": "circuit",
+      "summary": "Pre-FEED, interconnection support, modeling and project management across solar, wind and BESS.",
+      "intro": "Our project management team has 20+ years experience in the renewables space. They place a strong emphasis on system integration to optimize renewable power generation, enhance grid operations, and bolster system reliability. We now also offer Pre-FEED and engineering services to help clients at every stage of the project.",
+      "services": [
+        {
+          "slug": "pre-feed",
+          "title": "Preliminary Design (Pre-FEED)",
+          "icon": "building",
+          "text": "Preliminary design work at the front of a project, where decisions about design, constructability and maintainability still cost nothing to change."
+        },
+        {
+          "slug": "interconnection-support",
+          "title": "Interconnection Support",
+          "icon": "power",
+          "text": "Support through the interconnection process, with the emphasis on system integration that keeps grid operations and system reliability in good order."
+        },
+        {
+          "slug": "modeling",
+          "title": "Modeling",
+          "icon": "settings",
+          "text": "Modeling across solar, wind and battery energy storage systems to optimize renewable power generation before anything is built."
+        },
+        {
+          "slug": "design-optimization",
+          "title": "Design Optimization",
+          "icon": "wrench",
+          "text": "Our expertise translates into quality, reliability, and cost-efficiency for our clients through collaborative design optimization."
+        },
+        {
+          "slug": "civil-and-structural",
+          "title": "Civil and Structural Engineering",
+          "icon": "building",
+          "text": "Civil and structural engineering carried out by ATex alongside our own I&E scope, so one team covers the project."
+        },
+        {
+          "slug": "project-management",
+          "title": "Project Management",
+          "icon": "shield",
+          "text": "Detailed project management and advisement on project planning, with standard's generation for the work that follows.",
+          "points": [
+            "Detailed project management",
+            "Advisement on project planning",
+            "Standard's generation"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "maintenance",
+      "title": "I&E Maintenance",
+      "icon": "wrench",
+      "summary": "Embedded teams supporting long-term plant automation, instrumentation and electrical maintenance.",
+      "intro": "Our clients partner with us to support their long term plant and process automation, instrumentation, and electrical maintenance needs with our embedded team programs. Our strong safety track record and deep technical capability make us a trusted partner of choice for long term maintenance needs.",
+      "image": "/brands/atienergygroup/maintenance",
+      "imageAlt": "A control valve and positioner in a pipe rack inside a process plant",
+      "services": [
+        {
+          "slug": "embedded-teams",
+          "title": "Embedded Team Programs",
+          "icon": "home",
+          "text": "A team placed on site for the long term, carrying the plant's instrumentation and electrical maintenance rather than arriving fresh for each outage."
+        },
+        {
+          "slug": "process-automation",
+          "title": "Plant and Process Automation",
+          "icon": "settings",
+          "text": "Ongoing support for plant and process automation, instrumentation and electrical systems, backed by the same technical capability that builds them."
+        },
+        {
+          "slug": "site-safety",
+          "title": "Site Safety and Documentation",
+          "icon": "shield",
+          "text": "Site safety management and documentation on every job, with quality control and quality assurance recorded as the work is done.",
+          "points": [
+            "Site safety management and documentation",
+            "Quality control and quality assurance"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "renewables",
+      "title": "Renewables",
+      "icon": "sun",
+      "summary": "Solar farms, battery energy storage and wind energy facilities, from engineering through construction.",
+      "intro": "The energy transition is underway and our team is excited to be a part of that transition. Our deep automation, instrumentation, and electrical expertise combined with our core engineering experience in the renewable space uniquely positions us to safely and competitively deliver solar energy and BESS solutions for our clients.",
+      "image": "/brands/atienergygroup/renewables",
+      "imageAlt": "A worker wiring modules beneath a ground-mount solar array",
+      "services": [
+        {
+          "slug": "solar-farms",
+          "title": "Solar Farms",
+          "icon": "sun",
+          "text": "Ground mount arrays and the supporting electrical equipment infrastructure, including distributed-generation systems that offset peak of the day usage and hold up through grid instability."
+        },
+        {
+          "slug": "battery-energy-storage",
+          "title": "Battery Energy Storage (BESS)",
+          "icon": "battery",
+          "text": "Renewable energy installations including BESS units, delivered with the same instrumentation and electrical capability we bring to industrial plants."
+        },
+        {
+          "slug": "wind-energy",
+          "title": "Wind Energy Facilities",
+          "icon": "wind",
+          "text": "Instrument and electrical construction on wind energy facilities, one of the three renewable areas our engineering capability spans."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Proven experts in renewables and industrial instrumentation and electrical.",
+    "text": [
+      "Since the 1980s, our team has made significant contributions to the industrial development of our clients facilities around the country. We have extensive experience across many industries safely, efficiently, and dependably delivering I&E projects. We are proud of our well established reputation and our significant contribution to our industry partners.",
+      "ATI has built its reputation and long-term success based on on-going relationships with satisfied clients. Due to our size and the special nature of our services, we can work with our clients to design and implement delivery and execution systems tailored specifically for each client's particular needs.",
+      "We will work closely with our clients during the early stages of project development and budget preparation. The earlier we become involved in the process of project development the more we can be of assistance in terms of design, constructability, and maintainability issues. We view each and every project as an opportunity to build a relationship based on performance and trust.",
+      "We are located in Baytown, the heart of Houston's Petrochemical industry."
+    ],
+    "image": "/brands/atienergygroup/about",
+    "imageAlt": "A substation transformer with high voltage bushings, pipework and cabling",
+    "values": [
+      {
+        "title": "Safety",
+        "text": "Safety is our top priority and integrated in everything we do. We have our own safety programs."
+      },
+      {
+        "title": "Our people",
+        "text": "Our people's deep knowledge and experience in industrial instrument and electrical is the cornerstone of our excellence."
+      },
+      {
+        "title": "Relationships",
+        "text": "Our team is renowned for our collaborative relationships with our suppliers, clients, technical teams, and contractors. With 30 years of experience, we have built a network of trusted partners."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Full-service EPC",
+      "text": "We deliver engineering, procurement and construction from concept to completion for renewable energy, oil and gas, mining and general industrial sectors. Our engineering team designs optimized solutions, our procurement experts secure cost-effective materials and our construction team delivers the work safely.",
+      "items": [
+        "Engineering",
+        "Procurement",
+        "Construction",
+        "Project development",
+        "Interconnection support",
+        "Owners engineering"
+      ]
+    },
+    {
+      "heading": "Certifications and registrations",
+      "items": [
+        "ISNetworld member contractor",
+        "NCMS Contractor Monitoring & Compliance",
+        "Veriforce",
+        "Avetta"
+      ]
+    },
+    {
+      "heading": "Safety",
+      "text": "Safety is our highest priority and integrated into everything we do, with our own internal safety protocols, drug and alcohol testing, and diligent bridging to our clients' safety plans. Our internal safety team helps us rapidly adopt leading edge safety practices, and our full time safety team oversees every project and job site."
+    },
+    {
+      "heading": "Experience",
+      "text": "Over 30 years of experience safely and successfully providing electrical and instrument construction services across a diverse industrial client base. Our I&E construction team brings over 100 cumulative years of experience, and our engineering team 50+ years."
+    },
+    {
+      "heading": "Leadership",
+      "items": [
+        "Eric Politte, P.E., CEO and President. 40 years of experience owning and leading high performing companies across industries and services.",
+        "Milton Mason, VP of Operations. With ATI and its predecessors since 1985 and instrumental in its success.",
+        "Jay Davidson, Director of Engineering",
+        "Mark Mason, Construction Manager. Over 30 years in electrical construction, leading our on-site construction and maintenance operations."
+      ]
+    },
+    {
+      "heading": "Licensing",
+      "text": "Our V.P. Operations and General Manager is licensed to do work in numerous states, with over thirty-five years of experience in electrical and instrumentation construction."
+    },
+    {
+      "heading": "Apprenticeships",
+      "text": "We offer an apprenticeship program certificated under the US Department of Labor."
+    },
+    {
+      "heading": "Industries served",
+      "items": [
+        "Air separation units",
+        "Mining",
+        "Oil and gas pipelines, production and terminals",
+        "Chemical manufacturing and petrochemical",
+        "Pulp processing and paper manufacturing",
+        "Municipal utilities, water and sewage treatment",
+        "Methane recovery and battery energy storage",
+        "Renewable energy and consumer products"
+      ]
+    },
+    {
+      "heading": "Supply and procurement",
+      "text": "With our decades of experience, we have the unique capability and relationships to procure equipment and supplies at highly competitive prices."
+    },
+    {
+      "heading": "Recent projects",
+      "items": [
+        "Pipeline from the Permian to the Gulf Coast for a major independent oil and gas company: I&E on valve and pumping stations including solar panels, motor-operated valves and instrumentation, over 65 stations along 300 miles, delivered on time and on budget in less than 4 months",
+        "Gulf Coast export terminal: end-to-end I&E on an 8 tank terminal, with PLCs and DCS, power and control systems throughout, instrumentation and electrical for each tank and pump, and procurement and installation of electrical switch racks, $3M+ of electrical work in under 18 months",
+        "Next generation air separation unit for a major chemical manufacturer: control system including the DCS, I&E on cold boxes and compressors, and instrumentation and electrical across the plant",
+        "Solar farm for a Central Texas ranching operation after the February 2021 Texas Freeze: ground mount array and supporting electrical equipment infrastructure, cutting grid reliance and giving energy security through grid instability",
+        "Water treatment plant for a Texas municipality: turn-key construction, commissioning and start-up of the instrument and electrical systems, procurement and installation of the automation system including the MCC and DCS, and operator training"
+      ]
+    }
+  ]
+}
