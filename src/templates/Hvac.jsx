@@ -1597,7 +1597,7 @@ function ContactPage({ b, groups, tel }) {
             <ul className="grid gap-1 rounded-2xl border border-line p-3">
               {[
                 [Phone, tel, b.phone],
-                b.email && [Mail, `mailto:${b.email}`, b.email],
+                b.email && [Mail, `mailto:${b.email}`, b.email.split('@').flatMap((p, i) => (i ? ['@', <wbr key={i} />, p] : [p]))],
                 [MapPin, mapsHref(b), full],
               ]
                 .filter(Boolean)
@@ -1607,7 +1607,7 @@ function ContactPage({ b, groups, tel }) {
                       <span className={`${iconTile} h-10 w-10`}>
                         <Icon size={18} aria-hidden="true" />
                       </span>
-                      <span className="min-w-0 break-words">{label}</span>
+                      <span className="min-w-0 [overflow-wrap:anywhere]">{label}</span>
                     </a>
                   </li>
                 ))}

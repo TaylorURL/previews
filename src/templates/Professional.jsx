@@ -576,8 +576,9 @@ function Stats({ b }) {
     b.since && { value: String(b.since), label: `Serving ${b.town} since` },
     towns.length >= 3 && { value: String(towns.length), label: 'Towns served' },
   ].filter(Boolean);
-  if (!items.length) return null;
-  const cols = ['', 'grid-cols-1', 'grid-cols-2', 'grid-cols-2 md:grid-cols-3', 'grid-cols-2 md:grid-cols-4'][items.length];
+  // A lone figure is no strip: it would sit in a wide box of its own.
+  if (items.length < 2) return null;
+  const cols = ['', '', 'grid-cols-2', 'grid-cols-2 md:grid-cols-3', 'grid-cols-2 md:grid-cols-4'][items.length];
   return (
     <section aria-label={`${b.shortName} in numbers`} className="border-b border-line bg-white">
       <div className={`${wrap}`}>

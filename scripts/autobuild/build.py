@@ -282,6 +282,14 @@ def build(prospect, root, slug):
     services = compose.services_of(pages, compose.VOCAB[vocab_key], name, town, described_first=template == "hvac")
     if len(services) < 2:
         raise Parked("fewer than two services named on their website")
+    if template == "professional":
+        # Where most services are described the grid draws cards with their
+        # words, so a service named alone is left out rather than drawn as a
+        # card and a page with nothing in them; where most are named alone
+        # the grid draws them all as a list of links.
+        described = [s for s in services if s["text"]]
+        if len(described) * 2 > len(services):
+            services = described
     about = compose.about_of(pages, name, vocab_key)
     lead, lead_source = compose.lead_of(pages, about, vocab_key)
     if not lead:
