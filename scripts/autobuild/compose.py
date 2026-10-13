@@ -165,6 +165,43 @@ ICONS = {
                      ("calculator", r"tax|bookkeeping|payroll|accounting|audit"), ("file", r"title|closing|escrow")],
 }
 
+# The words that name each trade as a business would of itself. A site built on
+# a theme for another trade can keep the theme's copy ("a team of 30 plumbing
+# professionals" on a pool cleaner's site), so a paragraph that sells another
+# trade's services and never names its own is the theme's, not theirs.
+TRADE_WORDS = {
+    "roofing": r"\broof",
+    "hvac": r"\bhvac\b|air condition|heating|furnace|cooling|mechanical|plumb|electric",
+    "insurance": r"insur",
+    "accounting": r"account|\btax|bookkeep|\bcpas?\b",
+    "title": r"\btitle\b|escrow|closing",
+    "legal": r"\blaw\b|lawyer|attorney|legal",
+    "dental": r"\bdent",
+    "chiropractic": r"chiropract",
+    "pool": r"\bpools?\b|\bspas?\b|hot tub",
+    "landscaping": r"landscap|\blawn|irrigat|\btrees?\b",
+    "painting": r"\bpaint",
+    "concrete": r"concrete",
+    "pest": r"\bpest|extermin|termite",
+    "fencing": r"\bfenc",
+    "tree": r"\btrees?\b|arborist|landscap",
+    "welding": r"\bweld|fabricat|machin",
+    "machining": r"machin|\bcnc\b|weld|fabricat",
+    "industrial": r"industrial|weld|fabricat|machin|electric|instrument|piping|mechanical",
+    "marine": r"marine|\bboats?\b|yacht",
+    "towing": r"\btow|wrecker",
+    "storage": r"storage",
+    "plumbing": r"plumb",
+}
+TRADE_SOLD = re.compile(rf"\b(?:{'|'.join(TRADE_WORDS.values())})\w*\s+(?:services?|professionals?|solutions?|compan(?:y|ies)|contractors?|experts?|specialists?)\b", re.I)
+
+
+def other_trade(text, trade):
+    """True when the words sell another trade's services and never name this one."""
+    own = TRADE_WORDS.get(trade)
+    return bool(own) and not re.search(own, text, re.I) and bool(TRADE_SOLD.search(text))
+
+
 SINCE = re.compile(r"\b(?:since|established|founded|est\.?|serving [^.]{0,40} since)\s+((?:19|20)\d\d)\b", re.I)
 LICENSE = re.compile(r"\b((?:TDLR|TACLA|TECL|TDI|NPN|License|Lic\.)\s*(?:No\.?|#|Number)\s*:?\s*[A-Z]{0,6}-?\d[\w-]{3,})", re.I)
 NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|your|schedule|consult|consultation|request|checklist|estimator|calculator|types of|our |blog|news|faq|cost|price|pricing|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|office|branch|powered|serving|products|vice president|vp|agents?|industry|page|companies|finance a)\b", re.I)
@@ -409,7 +446,7 @@ def services_of(pages, vocab, own=None, town=None, described_first=False):
     return [found[k] for k in order][:8]
 
 
-def about_of(pages, name):
+def about_of(pages, name, trade=None):
     """Their own about text: the about page first, then the home page's own paragraphs about them."""
     chosen = []
     ordered = sorted(pages, key=lambda p: 0 if re.search(r"about|story|who-we", p.url, re.I) else 1)
@@ -428,6 +465,8 @@ def about_of(pages, name):
             # A customer's review quoted on their page ("5 Stars - ...") is not their description of themselves.
             if re.fullmatch(r"[\"\u201c].*[\"\u201d]", text, re.S) or re.search(r"\b[1-5]\s*stars?\b|\u2605", text, re.I):
                 continue
+            if other_trade(text, trade):
+                continue
             cut = trim(text, 600)
             if cut and cut not in chosen:
                 chosen.append(cut)
@@ -438,10 +477,12 @@ def about_of(pages, name):
     return chosen
 
 
-def lead_of(pages, about):
+def lead_of(pages, about, trade=None):
     for page in pages[:1]:
         for key in ("og:description", "description"):
             text = trim(page.meta.get(key, ""), 220)
+            if other_trade(text, trade):
+                continue
             if len(text) >= 60 and re.match(r"[A-Z]", text) and not re.search(r"cookie|javascript|\||near me|call us|\u2026|\.\.\.", text, re.I):
                 return text, f"{page.url} meta {key}"
     if about:
