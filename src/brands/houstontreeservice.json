@@ -1,0 +1,118 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Houston Tree Service",
+  "shortName": "Houston Tree Service",
+  "phone": "(346) 523-8371",
+  "email": "info@houston-tree-service.com",
+  "address": "1405 Sylvester Rd Unit 362",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77009",
+  "since": 2018,
+  "hours": [
+    [
+      "Mon – Sun",
+      "12 AM – 11:59 PM"
+    ]
+  ],
+  "brand": {
+    "primary": "#986630",
+    "primaryDeep": "#6b4722",
+    "accent": "#51a170",
+    "ink": "#202021",
+    "surface": "#faf7f3",
+    "muted": "#5b6470",
+    "line": "#e0e0e0",
+    "heading": "'Inter', system-ui, sans-serif",
+    "body": "'Outfit', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@400;600;700&display=swap",
+    "logo": "/brands/houstontreeservice/logo.webp",
+    "logoMono": "/brands/houstontreeservice/logo-mono.webp",
+    "logoWidth": 74,
+    "logoHeight": 74,
+    "logoRatio": 1.0,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.694,
+      0.649,
+      0.604,
+      0.563,
+      0.532,
+      0.524,
+      0.546,
+      0.611,
+      0.72,
+      0.857,
+      1.0
+    ],
+    "logoName": true
+  },
+  "hero": {
+    "eyebrow": "Houston Tree Service",
+    "title": "Tree removal and tree trimming & pruning",
+    "lead": "Professional tree service in Houston. Licensed & Insured, free estimate within 24h. 56 verified Google reviews.",
+    "image": "/brands/houstontreeservice/photo1",
+    "imageAlt": "A photo of Houston Tree Service",
+    "titleAccent": "in Houston"
+  },
+  "serviceArea": [
+    "Houston",
+    "Pearland",
+    "Katy",
+    "Sugar Land",
+    "Spring",
+    "Bellaire",
+    "South Houston",
+    "Galena Park",
+    "Jacinto City"
+  ],
+  "ask": "quote",
+  "summary": "Professional tree service in Houston. Licensed & Insured, free estimate within 24h. 56 verified Google reviews.",
+  "groups": [
+    {
+      "slug": "tree-removal",
+      "title": "Tree Removal",
+      "icon": "leaf",
+      "summary": "Safe, complete removal of any tree: trunk, branches, and full haul-away included.",
+      "intro": "Safe, complete removal of any tree: trunk, branches, and full haul-away included."
+    },
+    {
+      "slug": "tree-trimming-pruning",
+      "title": "Tree Trimming & Pruning",
+      "icon": "leaf",
+      "summary": "Expert pruning to keep your trees healthy, safe, and looking their best year-round.",
+      "intro": "Expert pruning to keep your trees healthy, safe, and looking their best year-round."
+    },
+    {
+      "slug": "stump-grinding",
+      "title": "Stump Grinding",
+      "icon": "leaf",
+      "summary": "Stump ground below grade; reclaim your yard without a trace.",
+      "intro": "Stump ground below grade; reclaim your yard without a trace."
+    },
+    {
+      "slug": "emergency-tree-service",
+      "title": "Emergency Tree Service",
+      "icon": "zap",
+      "summary": "Storm damage, fallen trees, hanging limbs: fast response to protect your property.",
+      "intro": "Storm damage, fallen trees, hanging limbs: fast response to protect your property."
+    },
+    {
+      "slug": "hedge-trimming-shrub-care",
+      "title": "Hedge Trimming & Shrub Care",
+      "icon": "leaf",
+      "summary": "Clean, healthy hedges and shrubs shaped to your property line and style.",
+      "intro": "Clean, healthy hedges and shrubs shaped to your property line and style."
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "About Houston Tree Service",
+    "text": [
+      "Licensed & Insured, in Houston and surrounding areas. Tree Removal · Tree Trimming & Pruning · Stump Grinding.",
+      "Reach us by phone at (346) 523-8371 or fill out the estimate form. We get back to you within 24 hours, no commitment required.",
+      "Our Certified Arborist visits your property, evaluates the project, and provides a written quote before any work begins."
+    ]
+  }
+}

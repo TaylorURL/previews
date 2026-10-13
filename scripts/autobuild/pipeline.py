@@ -231,7 +231,10 @@ def land(passed, branch, fixed=None):
     for p in passed:
         git("add", f"src/brands/{p['slug']}.json", f"public/brands/{p['slug']}")
     for path in fixed["changed"]:
-        git("add", "--all", "--", path)
+        # A brand file the review touched for a site it then parked went with
+        # the site, so there is nothing of it left to add.
+        if os.path.exists(os.path.join(ROOT, path)) or git("ls-files", "--", path).stdout.strip():
+            git("add", "--all", "--", path)
     if names:
         listed = ", ".join(names[:-1]) + (f" and {names[-1]}" if len(names) > 1 else names[0])
         subject = f"Add preview sites for {listed}"

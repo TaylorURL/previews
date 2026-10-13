@@ -136,11 +136,12 @@ export function BrandLogo({ b, className = '', textClass = '', scale = 1, ground
     );
   }
   if (!brand.logoName) return mark;
-  // A symbol with no name in it carries the name beside it, set in type.
+  // A symbol with no name in it carries the name beside it, set in type. On a
+  // phone the name wraps onto a second line rather than being cut short.
   return (
     <span className="flex w-fit min-w-0 items-center gap-3">
       <span className="flex-none">{mark}</span>
-      <span className={`block max-w-[15ch] font-heading text-[17px] font-bold leading-[1.1] sm:max-w-none lg:text-[21px] ${textClass}`}>
+      <span className={`block max-w-[15ch] font-heading text-[17px] font-bold leading-[1.1] sm:max-w-none lg:text-[21px] ${textClass} whitespace-normal`}>
         {b.shortName}
       </span>
     </span>
