@@ -207,7 +207,7 @@ def other_trade(text, trade):
 
 SINCE = re.compile(r"\b(?:since|established|founded|est\.?|serving [^.]{0,40} since)\s+((?:19|20)\d\d)\b", re.I)
 LICENSE = re.compile(r"\b((?:TDLR|TACLA|TECL|TDI|NPN|License|Lic\.)\s*(?:No\.?|#|Number)\s*:?\s*[A-Z]{0,6}-?\d[\w-]{3,})", re.I)
-NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|your|schedule|consult|consultation|request|checklist|estimator|calculator|types of|our |blog|news|faq|cost|price|pricing|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|office|branch|powered|serving|products|vice president|vp|agents?|assistants?|hygienists?|receptionists?|coordinators?|managers?|industry|page|companies|finance a)\b", re.I)
+NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|your|schedule|consult|consultation|request|checklist|estimator|calculator|types of|our |blog|news|faq|cost|price|pricing|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|office|branch|powered|serving|products|vice president|vp|agents?|assistants?|hygienists?|receptionists?|coordinators?|managers?|industry|page|companies|finance a|overview|dangers?)\b", re.I)
 ACRONYMS = {"IRS", "CFO", "CPA", "CPAS", "HVAC", "AC", "A/C", "TPO", "LLC", "QB", "EPDM", "UV", "HOA", "1031", "S-CORP"}
 # A business's own name, or anything carrying a corporate suffix, is never
 # one of its services.
@@ -493,17 +493,25 @@ def about_of(pages, name, trade=None):
     return chosen
 
 
+# A description made from a page's text can run its heading into the first
+# sentence ("Meet Shane Pellerin I am Attorney..."); the heading is left off.
+HEADING_RUN_IN = re.compile(r"^(?:Meet|Welcome to|About)\s[^.!?,:;]*?\s(?=(?:I|We|Our)\s)")
+# A description that stops without a full stop was cut off by the page or the
+# search snippet ("...that has defined our Houston").
+FINISHED = re.compile(r"[.!?][\"'”)]?$")
+
+
 def lead_of(pages, about, trade=None):
     for page in pages[:1]:
         for key in ("og:description", "description"):
-            text = trim(page.meta.get(key, ""), 220)
-            if other_trade(text, trade):
+            text = trim(HEADING_RUN_IN.sub("", plain(page.meta.get(key, ""))), 220)
+            if other_trade(text, trade) or not FINISHED.search(text):
                 continue
             if len(text) >= 60 and re.match(r"[A-Z]", text) and not re.search(r"cookie|javascript|\||near me|call us|\u2026|\.\.\.", text, re.I):
                 return text, f"{page.url} meta {key}"
     if about:
         text = trim(about[0], 220)
-        if len(text) >= 60:
+        if len(text) >= 60 and FINISHED.search(text):
             return text, "about text"
     return None, None
 
