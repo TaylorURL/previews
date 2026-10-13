@@ -793,7 +793,8 @@ function AboutTeaser({ b, hasTeam }) {
   return (
     <section className={pad}>
       <div className={`${wrap} grid items-center gap-12 lg:grid-cols-2 lg:gap-24`}>
-        <Img className="aspect-[4/3] w-full rounded-lg object-cover" src={b.about.image} alt={b.about.imageAlt || ''} sizes="(max-width: 1024px) 100vw, 46vw" />
+        {/* Drawn in its own shape, so a wide team photo keeps the people at its edges. */}
+        <Img className="max-h-[34rem] w-full rounded-lg object-cover" src={b.about.image} alt={b.about.imageAlt || ''} sizes="(max-width: 1024px) 100vw, 46vw" />
         <div className="min-w-0">
           <Eyebrow>About {b.shortName}</Eyebrow>
           <h2 className={h2}>{b.about.title}</h2>
