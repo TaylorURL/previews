@@ -1,0 +1,528 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "HG Tax & Financial Services",
+  "shortName": "HG Tax",
+  "tagline": "Bookkeeping and Tax Done Right, Done for You.",
+  "phone": "(281) 446-8002",
+  "email": "info@hgtaxservice.com",
+  "address": "700 Rockmead Drive, Suite 213",
+  "town": "Kingwood",
+  "state": "TX",
+  "zip": "77339",
+  "hours": [
+    [
+      "Mon – Thu",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Friday",
+      "9 AM – 1 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Call (281) 446-8002 or email info@hgtaxservice.com for a free consultation."
+  },
+  "brand": {
+    "primary": "#5c1269",
+    "primaryDeep": "#32093c",
+    "accent": "#b23cc4",
+    "ink": "#1d1420",
+    "muted": "#5e5566",
+    "surface": "#faf6fa",
+    "cream": "#f3eaf4",
+    "line": "#e5d9e8",
+    "heading": "'Source Serif 4', Georgia, serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap",
+    "logo": "/brands/hgtaxfinancial/logo.webp",
+    "logoWidth": 158,
+    "logoHeight": 58,
+    "logoRatio": 2.732,
+    "logoGround": "#14181f",
+    "logoName": true
+  },
+  "hero": {
+    "eyebrow": "Bookkeeping and tax in Kingwood",
+    "title": "Leave your back office to us.",
+    "lead": "A full range of bookkeeping, consulting, outsourcing, payroll and business services, provided either in your facility or at our location, for companies of all sizes.",
+    "image": "/brands/hgtaxfinancial/hero",
+    "imageAlt": "An oval wooden conference table and chairs in an empty meeting room",
+    "points": [
+      "Certified QuickBooks ProAdvisor",
+      "Work with us in the office or remotely",
+      "Free consultation to start"
+    ]
+  },
+  "overview": {
+    "title": "Areas of practice, from a single tax return to a full back office.",
+    "text": "Pick a service to see what it covers, or call (281) 446-8002 and talk it through."
+  },
+  "audiences": {
+    "individuals": "Individuals",
+    "businesses": "Businesses"
+  },
+  "services": [
+    {
+      "slug": "tax-preparation-and-planning",
+      "title": "Tax Preparation and Planning",
+      "audience": "individuals",
+      "icon": "file-text",
+      "summary": "Individual, business, gift and estate returns.",
+      "image": "/brands/hgtaxfinancial/tax-preparation-and-planning",
+      "imageAlt": "Printed tax paperwork beside a keyboard on a white desk",
+      "text": "Preparing and planning for taxes is often a stressful and complicated endeavor. We file your returns and plan ahead so your tax liability stays as low as the law allows.",
+      "lead": "Preparing your own tax return can be extremely difficult with today's complex tax code, and the rules may change from year to year, so it is easy to overlook a change or miss a deduction. We have the expertise needed to file your returns while helping you minimize your tax liability with careful planning.",
+      "covers": [
+        {
+          "title": "Individual tax preparation",
+          "text": "Returns for individuals and families, including out-of-state returns."
+        },
+        {
+          "title": "Business and corporate returns",
+          "text": "Business, partnership and corporate tax return preparation, including new business start-ups."
+        },
+        {
+          "title": "Gift and estate returns",
+          "text": "Gift and estate tax return preparation, alongside estate and succession planning."
+        },
+        {
+          "title": "Tax planning and education",
+          "text": "Tax saving strategies that maximize your after-tax income, for start-ups as well as established businesses."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does tax planning actually do for me?",
+          "a": "It defers income so you pay less later, and lowers tax on your income, your estate and gifts, and your investments and retirement distributions. We also give you a complete list of the most commonly overlooked deductions so you can limit next year's liability."
+        },
+        {
+          "q": "Can you file a return for another state?",
+          "a": "Yes. Out-of-state returns are part of our tax preparation services."
+        }
+      ]
+    },
+    {
+      "slug": "financial-planning",
+      "title": "Financial Planning",
+      "audience": "individuals",
+      "icon": "chart",
+      "summary": "Savings, retirement and estate planning.",
+      "text": "Our trained team of financial planners helps grow your assets in the best way possible, so you can get back to enjoying them the way you always wanted.",
+      "lead": "Having assets is one thing; maintaining them and allowing them to grow and evolve over time is something else entirely. We help you set priorities, wade through an overabundance of information, and come up with not just goals but an actionable plan for reaching them, covering savings and investments, planning for retirement, estate and succession planning, planning for major purchases and insurance planning.",
+      "questions": [
+        {
+          "q": "Where do we start?",
+          "a": "With priorities. We cut through the noise to agree what matters first, then build the plan around it."
+        }
+      ]
+    },
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping",
+      "audience": "businesses",
+      "icon": "book",
+      "summary": "Reconciliation, payables, receivables and reports.",
+      "image": "/brands/hgtaxfinancial/bookkeeping",
+      "imageAlt": "Open ledger books with handwritten entries on a wooden table",
+      "text": "Efficient bookkeeping for a wide range of industries and business models, provided in a way that suits your schedule and budget.",
+      "lead": "Many business owners find themselves struggling with their bookkeeping: no time, not enough knowledge, or they simply do not enjoy it. We start with a conversation, one-on-one, to make sure we know which tasks you want us to work on. Some clients ask us to assume all of their bookkeeping, while others need help with only the more complex and time-consuming parts.",
+      "covers": [
+        {
+          "title": "Reconciliation and data entry",
+          "text": "Bank and credit card reconciliation, with data entry kept current."
+        },
+        {
+          "title": "Payables and receivables",
+          "text": "Accounts receivable and payable, with aging and vendor reports."
+        },
+        {
+          "title": "Financial statements",
+          "text": "Balance sheets and profit and loss sheets that show the health of the business and give banks and creditors what they need."
+        },
+        {
+          "title": "Sales tax and 1099s",
+          "text": "Sales tax service and 1099 service as part of the monthly work."
+        },
+        {
+          "title": "Secure data exchange",
+          "text": "Documents exchanged through a secure portal rather than loose email attachments."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Which industries have you worked with?",
+          "a": "A wide range, including food service, health care, real estate and insurance. Whether you run a factory or sell fashion jewelry, we know the services you need."
+        },
+        {
+          "q": "Is outsourcing cheaper than hiring someone?",
+          "a": "Outsourcing to our team gives you high quality, meticulous bookkeeping for far less than the cost of hiring an in-house professional."
+        }
+      ]
+    },
+    {
+      "slug": "payroll-services",
+      "title": "Payroll Services",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Checks, deposits, filings and year-end forms.",
+      "text": "We work with companies of all sizes. You provide the employee data and the hours worked, and we handle the rest of the payroll.",
+      "lead": "Managing payroll may not seem like a critical task until something goes wrong. It requires a good knowledge of the tax laws and deposit rules, and correcting a problem afterwards is time-consuming. Our payroll service is built to be a comprehensive solution for the whole duty.",
+      "covers": [
+        {
+          "title": "Pay runs",
+          "text": "Checks or direct deposit for your employees, with customized payroll reports."
+        },
+        {
+          "title": "Tax liabilities",
+          "text": "Federal, state, local and unemployment tax liabilities, with tax deposit services."
+        },
+        {
+          "title": "Forms and filings",
+          "text": "Quarterly tax forms, year-end tax forms, W-2s and 1099s."
+        },
+        {
+          "title": "Security and compliance",
+          "text": "We adhere to the data security regulations required by federal compliance agencies, and monitor the federal, state and local law changes that affect your filings."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What do we have to send you each pay period?",
+          "a": "Employee data such as the hours that have been worked and employee address information. Once we receive it, we handle the rest."
+        },
+        {
+          "q": "We already run payroll. Can you take it over?",
+          "a": "Yes. Whether you are just starting out or want to switch to a better system for payroll processing, we can provide the service."
+        }
+      ]
+    },
+    {
+      "slug": "quickbooks",
+      "title": "QuickBooks Setup and Training",
+      "audience": "businesses",
+      "icon": "calculator",
+      "summary": "Set-up, training and tune-ups.",
+      "text": "We are a member of the Certified QuickBooks ProAdvisor program and set up, train and support QuickBooks for small and mid-sized businesses.",
+      "lead": "A QuickBooks system can be put in place for your business quickly and easily. We take a consultative approach, looking at every nuance of how you work, from the everyday tasks to the long-term financial objectives, and then set up a system customized to fit your operation.",
+      "covers": [
+        {
+          "title": "QuickBooks set-up",
+          "text": "Set-up that saves you hours of trying to work out the initial installation for yourself."
+        },
+        {
+          "title": "QuickBooks training",
+          "text": "Training that helps you and your employees operate all of the program's functions and take advantage of its benefits."
+        },
+        {
+          "title": "QuickAnswers",
+          "text": "We are a phone call or email away, ready to answer your bookkeeping department's questions."
+        },
+        {
+          "title": "QuickTuneup",
+          "text": "Help with problem areas, whether you are getting ready for tax time, going through a financial review or have hit another challenge."
+        },
+        {
+          "title": "QuickBook Tips",
+          "text": "A collection of shortcuts and hints that help you make the most of the program."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Can QuickBooks be set up around how we already work?",
+          "a": "Yes. One of its advantages is that it can be customized to your particular business needs, which is what the consultative set-up is for."
+        },
+        {
+          "q": "Do you support the system afterwards?",
+          "a": "Yes. We are with you from the first consultation through installation and training, and then provide support and ongoing maintenance."
+        }
+      ]
+    },
+    {
+      "slug": "business-entity-selection",
+      "title": "Business Entity Selection",
+      "audience": "businesses",
+      "icon": "landmark",
+      "summary": "Sole proprietor, partnership, corporation or LLC.",
+      "text": "Selecting the right entity can give you the best protection and tax benefits, and we help you set up the company and stay compliant from day one.",
+      "lead": "One of the most important decisions you make when starting a new business is the choice of entity. We look at sole proprietorship, partnership, corporation including S corporation, and limited liability company, and determine which legal structure will best suit your business, whether it is your first or one of many.",
+      "questions": [
+        {
+          "q": "Does the entity choice change my taxes?",
+          "a": "Yes. The right entity is what provides the best protection and tax benefits, which is why it is worth getting right the first time."
+        }
+      ]
+    },
+    {
+      "slug": "cash-flow-management",
+      "title": "Cash Flow Management",
+      "audience": "businesses",
+      "icon": "banknote",
+      "summary": "Projections, collections and credit lines.",
+      "text": "Keep on top of your business finances with short and long term projections, so you can anticipate cash needs from week to week.",
+      "lead": "Every business has creditors and expenses, and positive cash flow is not always a given. More cash flowing out than in causes more than stress: it can mean angry creditors and suppliers. If you have ever had to borrow money to make payroll, this is the service for you.",
+      "covers": [
+        {
+          "title": "Cash flow projections",
+          "text": "Short term and long term projections, from week to week up to five years into the future."
+        },
+        {
+          "title": "Historical statements",
+          "text": "Statements prepared from past periods so you can see where the money has gone and learn from it."
+        },
+        {
+          "title": "Lines of credit",
+          "text": "Help obtaining reliable and reputable lines of credit."
+        },
+        {
+          "title": "Collections and payment policy",
+          "text": "Accelerating your cash collection techniques, and a payment schedule and policy that works for your business."
+        },
+        {
+          "title": "Idle cash",
+          "text": "Making the most of cash that is sitting idle."
+        }
+      ]
+    },
+    {
+      "slug": "business-valuation",
+      "title": "Business Valuation",
+      "audience": "businesses",
+      "icon": "scale",
+      "summary": "Valuations for sales, disputes and financing.",
+      "text": "An objective, in-depth assessment of what your business is worth, documented so the valuation opinion is easy to understand and fully defensible.",
+      "lead": "Valuation comes into play when taking on new shareholders or negotiating a liability question. Merger discussions, estate planning, marital dissolution and shareholder equity are all situations where under or overvaluing your business makes a world of difference. We gather the relevant information from both current day operations and your historical financial data.",
+      "covers": [
+        {
+          "title": "Sales and buyouts",
+          "text": "Management buyouts, leveraged buyout transactions, and the purchase or sale of closely held businesses or business interests."
+        },
+        {
+          "title": "Financing and restructuring",
+          "text": "Bank financing applications, restructuring and recapitalization, and analysis of pending purchase offers."
+        },
+        {
+          "title": "Disputes and litigation",
+          "text": "Court-appointed dispute resolution, mediation, binding arbitration, minority shareholder disputes and litigation consulting."
+        },
+        {
+          "title": "Estates, divorce and bankruptcy",
+          "text": "Equitable distribution in divorce, bankruptcy, solvency analysis, and disputes with the Internal Revenue Service."
+        },
+        {
+          "title": "Employee stock ownership plans",
+          "text": "Determining the value of employee stock ownership plans, subsidiaries, joint ventures and divisions."
+        }
+      ]
+    },
+    {
+      "slug": "business-consulting",
+      "title": "Business Consulting",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Start-ups, operations and profit planning.",
+      "text": "We act as a trusted advisor on the issues of critical importance to your business: new start-ups, finance, operations and profit planning.",
+      "lead": "If you want an objective opinion based on years of helping businesses similar to yours, our experience covers strategic planning, feasibility studies, information systems evaluation, outsourcing opportunity evaluations, estate planning, and mergers and acquisitions. The point is to help you make logical decisions and avoid the pitfalls your business can do without.",
+      "questions": [
+        {
+          "q": "What kind of businesses do you advise?",
+          "a": "Small businesses, including new start-ups, that want to operate more efficiently and stay compliant in a rapidly changing environment."
+        }
+      ]
+    },
+    {
+      "slug": "debt-and-finance-advising",
+      "title": "Debt and Finance Advising",
+      "audience": "businesses",
+      "icon": "handshake",
+      "summary": "Loan proposals lenders can say yes to.",
+      "text": "If your business needs additional funding to grow, we assemble the loan application the way lenders want to see it, which increases your chances of securing it.",
+      "lead": "Disorganization or missing documentation tells a lender that you are a risky investment. We understand what lenders are looking for and prepare your loan proposal from their perspective, in a format that tells the bank exactly what it wants to know.",
+      "covers": [
+        {
+          "title": "Executive summary",
+          "text": "Why you need additional funding, how much you need, what the loan is for and how it will be used."
+        },
+        {
+          "title": "Financial statements",
+          "text": "Your data and assumptions in a format bankers understand, with pro-forma cash budgets that give substance to the request."
+        },
+        {
+          "title": "Owners' personal statements",
+          "text": "Personal financial statements, personal tax returns from the previous three years, and the collateral offered for the bank's security."
+        },
+        {
+          "title": "Representation at the bank",
+          "text": "In-person presentation of your material, justifying and explaining your position and your needs."
+        }
+      ]
+    }
+  ],
+  "process": {
+    "title": "How we work",
+    "text": "The same start whether you need one return filed or the whole back office run.",
+    "steps": [
+      {
+        "title": "A conversation first",
+        "text": "We speak with you one-on-one to make sure we know which tasks you want us to work on."
+      },
+      {
+        "title": "A solution built for you",
+        "text": "We create a custom bookkeeping, document management and storage solution to fit your business, in your facility or at our location."
+      },
+      {
+        "title": "We take it from there",
+        "text": "You send the data, we keep the records accurate, and we stay available for your questions and ongoing tax planning."
+      }
+    ]
+  },
+  "affiliations": {
+    "title": "Credentials and memberships",
+    "items": [
+      "Certified QuickBooks ProAdvisor"
+    ]
+  },
+  "about": {
+    "title": "A bookkeeping and tax office on Rockmead Drive.",
+    "text": [
+      "We provide a full range of bookkeeping, consulting, outsourcing, payroll and business services, either in your facility or at our location. Our bookkeepers can also set up and train your staff on the financial systems you use, such as QuickBooks or other legacy systems, and we work with you so that your personal or business processes keep ongoing integrity in your financial transactions.",
+      "Bookkeeping no longer requires in-house staff and all the accompanying overhead expenses and hassles. We have developed a system that makes it quick and easy to file your taxes, so whether you live overseas or simply prefer to work with us remotely, you can access your financial information and business files online, anytime, for a fraction of the cost of in-house bookkeeping."
+    ],
+    "values": [
+      {
+        "title": "No cookie cutter approach",
+        "text": "Each business has unique needs, so the bookkeeping, document management and storage solution is built around yours."
+      },
+      {
+        "title": "Absolute confidentiality",
+        "text": "This office guarantees the confidentiality of client information. Your personal, financial and tax data is not shared with anyone else."
+      },
+      {
+        "title": "Available between filings",
+        "text": "We are available to answer your questions and help with ongoing tax planning and changing business needs."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Heather Garza",
+      "role": "Owner and Operator",
+      "bio": "Heather began preparing taxes while attending college in 1999 and graduated Cum Laude with a Bachelor's of Business Administration in 2004. She brings 20 years of experience to all her clientele and works with clients big and small to help them minimize their tax liability through good tax planning, accurate financial reporting, and federal and local tax compliance. Away from work, she is usually relaxing with a good book or singing karaoke."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do we have to come into the office?",
+      "a": "No. We provide the same level of service online that you would receive sitting in our office, and the work can be done in your facility or at our location."
+    },
+    {
+      "q": "Is there a charge for the first conversation?",
+      "a": "No. Call (281) 446-8002 or email info@hgtaxservice.com for a free consultation."
+    },
+    {
+      "q": "Will my information stay private?",
+      "a": "Yes. This office guarantees the confidentiality of client information, and your personal, financial and tax data is not shared with anyone else."
+    },
+    {
+      "q": "Which tasks can you take over?",
+      "a": "Online bookkeeping, review of the financial statement chart of accounts, business transaction process flow, review of management prepared financial statements, compilations, financial planning, tax preparation and advising, audit assistance, budget preparation, job costing and QuickBooks set-up."
+    },
+    {
+      "q": "Can you work with a business outside Texas?",
+      "a": "Yes. Advances in technology let us provide bookkeeping securely anywhere in the world, and out-of-state returns are part of our tax preparation work."
+    },
+    {
+      "q": "Can you train our own staff instead?",
+      "a": "Yes. Our bookkeepers can set up and train your staff on the financial systems that you might be using or installing, such as QuickBooks or other legacy systems."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Appointment Scheduling",
+      "text": "Book a time with the office online.",
+      "href": "https://hgtaxservice.as.me/"
+    },
+    {
+      "title": "Client Document Exchange",
+      "text": "Send and collect documents through the secure client portal.",
+      "href": "https://hgtaxservice.securefilepro.com/"
+    },
+    {
+      "title": "E-Sign Portal",
+      "text": "Sign documents online without coming into the office.",
+      "href": "https://hgtaxservice.smartvault.com/"
+    },
+    {
+      "title": "Texas Comptroller: Taxes",
+      "text": "State tax information for Texas businesses.",
+      "href": "https://comptroller.texas.gov/taxes/"
+    },
+    {
+      "title": "IRS: Tax Information for Individuals",
+      "text": "Federal filing information, forms and refund status for individuals.",
+      "href": "https://www.irs.gov/individuals"
+    },
+    {
+      "title": "IRS: Business Taxes",
+      "text": "Federal tax information for businesses and the self-employed.",
+      "href": "https://www.irs.gov/businesses"
+    }
+  ],
+  "serviceArea": [
+    "Kingwood",
+    "Humble"
+  ],
+  "facts": [
+    {
+      "heading": "Offices",
+      "items": [
+        "700 Rockmead Drive, Suite 213, Kingwood, TX 77339",
+        "19506 Highway 59 N, Ste 330, Humble, TX 77338",
+        "Work is done at either location or in your facility"
+      ]
+    },
+    {
+      "heading": "Phone and email",
+      "items": [
+        "Main: (281) 446-8002",
+        "Second line: (281) 446-8003",
+        "info@hgtaxservice.com"
+      ]
+    },
+    {
+      "heading": "Client tools",
+      "items": [
+        "Online appointment scheduling",
+        "Secure document exchange and e-sign",
+        "Payroll and QuickBooks logins"
+      ]
+    },
+    {
+      "heading": "Industries served",
+      "text": "A wide range of industries and business models, including food service, health care, real estate and insurance."
+    },
+    {
+      "heading": "Working remotely",
+      "text": "The same level of service online that you would receive sitting in our office, using secure methods of transmitting private information."
+    },
+    {
+      "heading": "Referrals",
+      "text": "This firm relies on satisfied clients as its primary source of new business, so referrals are welcome and sincerely appreciated. Anyone you refer is handled in the same professional manner, and your own business matters are never discussed with them."
+    },
+    {
+      "heading": "Follow along",
+      "items": [
+        "facebook.com/hgtaxandfinancialservices",
+        "X: @hg_tax",
+        "LinkedIn: Heather Garza",
+        "TaxBuzz: Heather Garza, Humble TX"
+      ]
+    }
+  ]
+}

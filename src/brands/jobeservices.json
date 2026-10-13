@@ -1,0 +1,477 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "talk": "our team",
+  "name": "JOBE Services Inc",
+  "shortName": "JOBE Services",
+  "tagline": "When cash flows, work happens.",
+  "phone": "(281) 540-7601",
+  "email": "customerservice@jsifactoring.com",
+  "address": "19747 US-59 #425",
+  "town": "Humble",
+  "state": "TX",
+  "zip": "77338",
+  "since": 1996,
+  "rating": 5,
+  "reviewCount": 8,
+  "hours": [
+    [
+      "Mon - Fri",
+      "8:30 AM - 4:30 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Apply Now",
+    "text": "Our team is here to guide you through the process. No pressure, just answers."
+  },
+  "brand": {
+    "primary": "#1f2a35",
+    "primaryDeep": "#14181f",
+    "accent": "#f23801",
+    "ink": "#14181f",
+    "muted": "#5d6c7b",
+    "surface": "#f7f2ea",
+    "cream": "#f7e4d6",
+    "line": "#e4ddd2",
+    "heading": "'Source Serif 4', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/jobeservices/logo.webp",
+    "logoWidth": 157,
+    "logoHeight": 58,
+    "logoRatio": 2.714,
+    "logoGround": "#ffffff"
+  },
+  "hero": {
+    "eyebrow": "Your cash flow partner",
+    "title": "Keeping your business in motion",
+    "lead": "Fast, flexible and fair funding that keeps your cash flowing when you need it most. JOBE Services provides non-recourse invoice factoring, giving businesses access to cash flow without taking on debt.",
+    "image": "/brands/jobeservices/hero",
+    "imageAlt": "A line of work trucks on the road at the start of the day",
+    "points": [
+      "No hidden fees",
+      "Funding in as little as 24 hours",
+      "Transparent contracts and flexible terms"
+    ]
+  },
+  "overview": {
+    "title": "Flexible cash flow options to keep your business moving",
+    "text": "JOBE Services offers fast, fair and flexible cash flow solutions, with no hidden fees. Pick a solution to see what it covers, or call and talk it through with our team."
+  },
+  "audiences": {
+    "individuals": "Cash Flow Solutions",
+    "businesses": "Done-For-You Services"
+  },
+  "services": [
+    {
+      "slug": "non-recourse-factoring",
+      "title": "Non-Recourse Factoring",
+      "audience": "individuals",
+      "icon": "shield-check",
+      "summary": "Get paid upfront without the risk.",
+      "text": "Built for businesses that want to secure funding while minimizing liability. JOBE Services assumes responsibility if your customer does not pay, protecting you from bad debt.",
+      "lead": "Non-recourse factoring is built for businesses that want to secure funding while minimizing liability. JOBE Services assumes responsibility if your customer does not pay, protecting you from bad debt.",
+      "covers": [
+        {
+          "title": "Protection against customer non-payment",
+          "text": "JOBE Services assumes responsibility if your customer does not pay, so bad debt does not land on your balance sheet."
+        },
+        {
+          "title": "No personal guarantees required",
+          "text": "Funding is based on your customers' credit rather than yours, so no personal guarantee is asked for."
+        },
+        {
+          "title": "Fast funding with flexible terms",
+          "text": "Transparent contracts, no hidden fees and flexible terms that work fast and work with you, not against you."
+        },
+        {
+          "title": "No debt on the balance sheet",
+          "text": "Unlike a loan, factoring does not add debt or require long-term repayments. It converts your accounts receivable into immediate cash."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Does factoring help businesses expand without taking on debt?",
+          "a": "Absolutely. Unlike a loan, factoring doesn't add debt to your balance sheet or require long-term repayments. Instead, it converts your accounts receivable into immediate cash, giving you financial flexibility while keeping your business financially healthy."
+        },
+        {
+          "q": "How does factoring compare to traditional business loans for funding growth?",
+          "a": "Factoring is faster, more flexible, and doesn't require collateral like a traditional loan. There's no long approval process, no monthly payments, and no restrictions on how you use the funds. Plus, because approval is based on your customers' credit, factoring is accessible to businesses that may not qualify for traditional financing."
+        }
+      ]
+    },
+    {
+      "slug": "recourse-factoring",
+      "title": "Recourse Factoring",
+      "audience": "individuals",
+      "icon": "banknote",
+      "summary": "Lower rates, more control.",
+      "text": "Built for businesses with reliable customers looking for cost-effective funding. You get upfront cash for your invoices but remain responsible if your customer does not pay.",
+      "lead": "Recourse factoring is built for businesses with reliable customers looking for cost-effective funding. JOBE Services gives you upfront cash for your invoices, and you remain responsible if your customer does not pay.",
+      "covers": [
+        {
+          "title": "Lower fees and rates",
+          "text": "Because you carry the risk of non-payment, the cost of funding is lower than non-recourse factoring."
+        },
+        {
+          "title": "A wider range of customers",
+          "text": "Factor invoices from a wider range of customers than non-recourse terms allow."
+        },
+        {
+          "title": "Responsibility for unpaid invoices",
+          "text": "You retain responsibility for invoices your customers do not pay."
+        },
+        {
+          "title": "Same fast approvals",
+          "text": "Create an account and submit invoices within minutes, with quick approvals on transparent terms."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What if my business is growing fast - can factoring scale with me?",
+          "a": "Yes. Factoring is one of the most scalable funding solutions available. As your business grows and you generate more invoices, your access to funding grows too. There's no need to renegotiate credit limits or wait for approvals - you get funding as soon as your invoices are submitted."
+        }
+      ]
+    },
+    {
+      "slug": "asset-based-lending",
+      "title": "Asset-Based Lending",
+      "audience": "individuals",
+      "icon": "landmark",
+      "summary": "Leverage your assets for working capital.",
+      "text": "Built for growing companies with valuable assets to leverage. Borrow against your accounts receivable, inventory or equipment to secure funding, with larger credit lines for businesses looking to scale.",
+      "lead": "Need more than invoice factoring? Asset-based lending lets you leverage your receivables, inventory and equipment to secure higher credit limits, so you get the flexibility to scale, invest and grow on your terms.",
+      "covers": [
+        {
+          "title": "Higher credit limits",
+          "text": "Larger credit lines than invoice factoring alone, suited to companies looking to scale."
+        },
+        {
+          "title": "Funds tied to business assets",
+          "text": "Borrowing is backed by your accounts receivable, inventory or equipment rather than your credit score."
+        },
+        {
+          "title": "Scalable financing for expansion",
+          "text": "Capital that grows with the business as it takes on larger contracts and bigger customers."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Can I use factoring to invest in new equipment or hire more employees?",
+          "a": "Yes. Many businesses use factoring to fund essential growth investments, whether it's upgrading equipment, expanding operations, or hiring new staff. Since factoring provides fast, flexible cash flow, you can scale your workforce and infrastructure without taking on traditional loans."
+        }
+      ]
+    },
+    {
+      "slug": "capital",
+      "title": "Capital",
+      "audience": "businesses",
+      "icon": "wallet",
+      "summary": "Fast funding to keep operations on track.",
+      "text": "Working capital is the backbone of your business. JOBE Services provides fast, reliable funding so you can cover expenses, invest in new opportunities and keep operations running smoothly.",
+      "lead": "Working capital is the backbone of your business. We provide fast, reliable funding so you can cover expenses, invest in new opportunities and keep operations running smoothly.",
+      "image": "/brands/jobeservices/capital",
+      "imageAlt": "A business owner reviewing figures at a desk",
+      "covers": [
+        {
+          "title": "Immediate access to funds",
+          "text": "Submit invoices and get the cash to cover payroll, fuel, rent and the costs that will not wait."
+        },
+        {
+          "title": "Stronger cash flow",
+          "text": "Steady, predictable funding rather than waiting out a customer's payment terms."
+        },
+        {
+          "title": "Scalability for growth",
+          "text": "Funding that grows alongside the invoices your business generates."
+        }
+      ]
+    },
+    {
+      "slug": "billing",
+      "title": "Billing",
+      "audience": "businesses",
+      "icon": "receipt",
+      "summary": "We handle invoicing so you can work.",
+      "text": "Stay focused on your business while we handle invoicing. JOBE Services makes sure your bills go out accurately and on time, reducing errors and saving you valuable time.",
+      "lead": "Stay focused on your business while we handle invoicing. We make sure your bills go out accurately and on time, reducing errors and saving you valuable time.",
+      "image": "/brands/jobeservices/billing",
+      "imageAlt": "An invoice being prepared on a desk",
+      "covers": [
+        {
+          "title": "Accurate and timely invoicing",
+          "text": "Bills go out correctly and on schedule, so payment is not held up by paperwork."
+        },
+        {
+          "title": "Reduced administrative workload",
+          "text": "The back-office work moves off your desk and onto ours."
+        },
+        {
+          "title": "More time to focus on growth",
+          "text": "Time spent on billing goes back into the work that earns."
+        }
+      ]
+    },
+    {
+      "slug": "collections",
+      "title": "Collections",
+      "audience": "businesses",
+      "icon": "clipboard-check",
+      "summary": "We chase payment so you get paid faster.",
+      "text": "No more chasing payments. JOBE Services manages collections of key customer relationships for you, ensuring predictable cash flow and fewer outstanding invoices.",
+      "lead": "No more chasing payments. We manage collections of key customer relationships for you, so cash flow stays predictable and fewer invoices sit outstanding.",
+      "image": "/brands/jobeservices/collections",
+      "imageAlt": "A member of staff on the phone at the office",
+      "covers": [
+        {
+          "title": "Faster payments",
+          "text": "Professional follow-ups on outstanding invoices, handled on your behalf."
+        },
+        {
+          "title": "Less stress on overdue accounts",
+          "text": "The work of managing overdue accounts comes off your plate."
+        },
+        {
+          "title": "Improved cash flow consistency",
+          "text": "Fewer outstanding invoices and a steadier picture month to month."
+        }
+      ]
+    },
+    {
+      "slug": "credit-checks",
+      "title": "Credit Checks",
+      "audience": "businesses",
+      "icon": "shield",
+      "summary": "Know who you are working with.",
+      "text": "Make smarter decisions with confidence. JOBE Services conducts thorough credit checks of your customers, helping you minimize risk and work with reliable partners.",
+      "lead": "As a customer you get free access to credit checks on potential customers before you commit, so you know who you are working with and can minimize risk.",
+      "covers": [
+        {
+          "title": "Free for customers",
+          "text": "Credit checks are free for JOBE Services customers, including checks on brokers and shippers before you accept a load."
+        },
+        {
+          "title": "Know who you're working with",
+          "text": "Real-time insights into a broker's or customer's payment history and reliability."
+        },
+        {
+          "title": "Reduce risk, protect your cash flow",
+          "text": "Avoid slow payers and bad debt before the work is taken on."
+        },
+        {
+          "title": "Work with confidence",
+          "text": "Focus on the work, not the worry of whether an invoice will be paid."
+        }
+      ]
+    }
+  ],
+  "process": {
+    "title": "How it works",
+    "text": "Three steps, whether you are factoring one invoice or a month of them.",
+    "steps": [
+      {
+        "title": "Apply",
+        "text": "Create an account and submit invoices within minutes."
+      },
+      {
+        "title": "Approve",
+        "text": "Get quick approvals with transparent terms."
+      },
+      {
+        "title": "Flow",
+        "text": "Get the cash flow you need to get back to doing what you do best - work."
+      }
+    ]
+  },
+  "affiliations": {
+    "title": "Built on trust, backed by industry standards",
+    "items": [
+      "International Factoring Association",
+      "American Factoring Association"
+    ]
+  },
+  "about": {
+    "title": "From Humble beginnings",
+    "text": [
+      "Jobe provides non-recourse invoice factoring, giving businesses fast, flexible and fair access to cash flow without taking on debt.",
+      "We help businesses cover payroll, manage expenses, and seize growth opportunities—without waiting on slow payments.",
+      "With transparent terms, no hidden fees, and a straightforward onboarding process, Jobe makes capital, billing, collections and credit simple.",
+      "Our flexible solutions adapt to each business’s needs, and our team offers hands-on support, from insurance payments to industry connections.",
+      "At Jobe, we do more than factoring—we keep businesses moving so they can focus on what matters. When cash flows, work happens."
+    ],
+    "values": [
+      {
+        "title": "Built for confidence",
+        "text": "A reputation for fairness and a proven track record of funding businesses."
+      },
+      {
+        "title": "Speed and simplicity at the core",
+        "text": "Apply in minutes, get approved fast, and keep your business moving."
+      },
+      {
+        "title": "Transparency and clarity",
+        "text": "No hidden fees, no delays - just straightforward funding solutions."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Jonathon Tupper",
+      "role": "President"
+    },
+    {
+      "name": "Brad Lefevre",
+      "role": "Senior Vice President, Head of Business Development"
+    },
+    {
+      "name": "Pam Lawson",
+      "role": "Vice President, Operations"
+    },
+    {
+      "name": "Desiree Isaacks",
+      "role": "Co-General Manager"
+    },
+    {
+      "name": "Meagan Weirich",
+      "role": "Co-General Manager"
+    },
+    {
+      "name": "Melissa Bolanos",
+      "role": "Senior Account Manager"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How can factoring help my business grow?",
+      "a": "Factoring gives you immediate access to cash from unpaid invoices, allowing you to reinvest in your business without waiting for customers to pay. Whether you need to hire more staff, expand your services, or take on bigger contracts, factoring ensures you have the working capital to scale confidently."
+    },
+    {
+      "q": "Can I use factoring to take on larger contracts or new customers?",
+      "a": "Yes. A major challenge for growing businesses is waiting on payments while taking on bigger projects. Factoring bridges that gap, ensuring you have the funds to cover upfront costs, payroll, and materials - so you can confidently pursue new opportunities without cash flow concerns."
+    },
+    {
+      "q": "How fast can funding come through?",
+      "a": "Approvals are fast and funding can come through in as little as 24 hours. Same-day funding is available."
+    },
+    {
+      "q": "Will factoring improve my ability to negotiate better terms with suppliers and customers?",
+      "a": "Yes. With steady cash flow from factoring, you can pay suppliers on time - or even early - giving you leverage to negotiate better pricing and terms. Customers may also be more willing to work with you when they see you have the financial stability to support larger orders or longer payment cycles."
+    },
+    {
+      "q": "How quickly can I get set up and start factoring my invoices?",
+      "a": "Most businesses are set up in under 24 hours. You complete an online application, provide basic business documents, and start submitting invoices."
+    },
+    {
+      "q": "How are fees and pricing determined?",
+      "a": "Pricing is based on your invoice volume, the creditworthiness of your customers, and whether the agreement is recourse or non-recourse. There are no hidden fees."
+    },
+    {
+      "q": "Do I have to factor all of my invoices once I have signed a contract?",
+      "a": "No. You choose which invoices to factor, as long as they meet the eligibility criteria."
+    },
+    {
+      "q": "Can I work with multiple factoring companies at the same time?",
+      "a": "No. Factoring with JOBE Services is exclusive for the invoices you submit to us."
+    },
+    {
+      "q": "Does factoring require a personal or business credit check?",
+      "a": "Approval depends mainly on the creditworthiness of your customers, though your business history may be reviewed as part of setting up the account."
+    },
+    {
+      "q": "How do you interact with my customers to collect payment?",
+      "a": "We communicate with your customers professionally, much as your own billing department would, and we follow up on invoices that are slow to pay."
+    },
+    {
+      "q": "What happens if my customer does not pay their invoice?",
+      "a": "Under a recourse agreement you buy back or replace the invoice. Under non-recourse, we typically absorb the loss, including where the customer becomes insolvent."
+    },
+    {
+      "q": "Does factoring work if my revenue is seasonal?",
+      "a": "Yes. You can factor heavily through your peak season and scale back when demand drops - it is flexible, so you can use it regularly or only when cash flow is tight."
+    },
+    {
+      "q": "Do I need to pay taxes on the receivables I factor?",
+      "a": "Receivables are taxed as revenue when they are earned, and factoring itself creates no extra tax obligation. Check the details with your accountant."
+    },
+    {
+      "q": "What happens if I have a question or need support with my account?",
+      "a": "You get direct access to a dedicated account manager rather than a call centre."
+    }
+  ],
+  "serviceArea": [
+    "Humble",
+    "Houston",
+    "Texas"
+  ],
+  "facts": [
+    {
+      "heading": "From Humble beginnings",
+      "text": "Founded in 1996 in Humble, Texas, Jobe has spent three decades helping businesses stay in motion. From its roots serving trucking, oil and gas, and other industries across Texas and neighboring states, it has built a reputation for personalized service and reliability. When the founding family retired, CEO Jonathon Tupper acquired Jobe and the same trusted team remained in place."
+    },
+    {
+      "heading": "Who we serve",
+      "items": [
+        "Trucking and logistics",
+        "Oil and gas",
+        "Manufacturing",
+        "Machine shops",
+        "Fleet maintenance",
+        "Commercial cleaning and maintenance",
+        "Staffing",
+        "Distribution",
+        "Professional services",
+        "Small to medium-sized businesses",
+        "Startups"
+      ]
+    },
+    {
+      "heading": "Where we work",
+      "text": "Based in Humble, Texas, with roots serving trucking, oil and gas and other industries across Texas and neighboring states. Today JOBE Services funds businesses nationwide."
+    },
+    {
+      "heading": "By the numbers",
+      "items": [
+        "30+ years in business, founded 1996",
+        "90% of customers with a 10-plus year relationship",
+        "43% of clients have stayed 10+ years; 30% have stayed 5-10 years",
+        "$833 million in purchases since inception",
+        "Zero hidden fees"
+      ]
+    },
+    {
+      "heading": "For freight",
+      "items": [
+        "Load board access, with priority access to high-paying loads across the country",
+        "Fuel cards and discounts, with fuel advances and savings at key stops",
+        "Insurance down payments, so cover does not strain cash flow",
+        "Most of the invoice advanced upfront for fuel, maintenance, repairs and wages",
+        "Same-day or next-day funding once an invoice is approved and the paperwork is right",
+        "Invoices factored from freight brokers and direct shippers that meet our credit criteria",
+        "Non-recourse protection if a broker or shipper becomes insolvent"
+      ]
+    },
+    {
+      "heading": "Other ways to reach us",
+      "items": [
+        "Fax: (281) 540-7614",
+        "Apply online at jobe.roxwrite.com/application",
+        "Jobe Access app on the Apple App Store and Google Play",
+        "Client portal for submitting invoices and tracking your account",
+        "Facebook, X (@JobeFactoring) and LinkedIn (jobeservicesinc)"
+      ]
+    },
+    {
+      "heading": "Account support",
+      "text": "Dedicated account managers you can reach directly, plus hands-on help that runs from insurance payments to industry connections."
+    }
+  ]
+}
