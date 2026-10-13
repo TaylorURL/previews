@@ -12,7 +12,20 @@
   "rating": 5.0,
   "reviewCount": 377,
   "license": "Family-owned, insured and bonded. GAF Master Elite roofer.",
-  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "brand": {
     "primary": "#205baf",
     "primaryDeep": "#16437f",
@@ -23,7 +36,24 @@
     "body": "'Manrope', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap",
     "logo": "/brands/priorityroofing/logo.webp",
-    "logoWidth": 170
+    "logoMono": "/brands/priorityroofing/logo-mono.webp",
+    "logoWidth": 154,
+    "logoHeight": 48,
+    "logoRatio": 3.208,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.343,
+      0.264,
+      0.188,
+      0.112,
+      0.198,
+      0.334,
+      0.465,
+      0.596,
+      0.732,
+      0.869,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Houston roofing contractor",
@@ -256,7 +286,14 @@
   "materials": {
     "title": "Materials and manufacturers",
     "text": "Priority Roofing is a GAF Master Elite roofer and an Owens Corning Preferred Contractor.",
-    "brands": ["GAF", "Owens Corning", "DaVinci Roofscapes", "Brava", "EuroShield", "CeDUR"]
+    "brands": [
+      "GAF",
+      "Owens Corning",
+      "DaVinci Roofscapes",
+      "Brava",
+      "EuroShield",
+      "CeDUR"
+    ]
   },
   "about": {
     "title": "Your trusted local roofer in Houston",

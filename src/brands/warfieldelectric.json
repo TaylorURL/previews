@@ -12,7 +12,20 @@
   "zip": "77581",
   "rating": 4.8,
   "reviewCount": 37,
-  "hours": [["Mon – Fri", "8 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "brand": {
     "primary": "#10508f",
     "primaryDeep": "#0a3563",
@@ -25,10 +38,32 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
     "logo": "/brands/warfieldelectric/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/warfieldelectric/logo-mono.webp",
+    "logoWidth": 219,
+    "logoHeight": 48,
+    "logoRatio": 4.556,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.878,
+      0.855,
+      0.832,
+      0.807,
+      0.792,
+      0.785,
+      0.783,
+      0.795,
+      0.828,
+      0.894,
+      1.0
+    ]
   },
   "sameDay": "Many electrical service calls can be made the same day.",
-  "licenses": [{ "label": "Texas Electrical Contractor", "number": "TECL 26384" }],
+  "licenses": [
+    {
+      "label": "Texas Electrical Contractor",
+      "number": "TECL 26384"
+    }
+  ],
   "hero": {
     "eyebrow": "Electricians in Pearland, Friendswood and Clear Lake",
     "title": "Looking for an electrician",
@@ -52,28 +87,47 @@
           "title": "Panels and Breakers",
           "icon": "circuit",
           "text": "Panel change outs, circuit breaker upgrades and breaker replacement and installation.",
-          "points": ["Panels and breakers", "Circuit breaker upgrades", "Arc fault breakers"]
+          "points": [
+            "Panels and breakers",
+            "Circuit breaker upgrades",
+            "Arc fault breakers"
+          ]
         },
         {
           "slug": "troubleshooting",
           "title": "Troubleshooting and Inspections",
           "icon": "wrench",
           "text": "Electrical troubleshooting, electrical inspections and code violations corrected.",
-          "points": ["Troubleshooting", "Electrical inspections", "Code violations corrected", "GFCI replacement", "Grounding systems"]
+          "points": [
+            "Troubleshooting",
+            "Electrical inspections",
+            "Code violations corrected",
+            "GFCI replacement",
+            "Grounding systems"
+          ]
         },
         {
           "slug": "outlets-switches-and-lighting",
           "title": "Outlets, Switches and Lighting",
           "icon": "lightbulb",
           "text": "Outlets, switches and fixtures, lighting fixtures and ceiling fan installation.",
-          "points": ["Outlets, switches and fixtures", "Lighting fixtures", "Ceiling fan installation"]
+          "points": [
+            "Outlets, switches and fixtures",
+            "Lighting fixtures",
+            "Ceiling fan installation"
+          ]
         },
         {
           "slug": "wiring-and-circuits",
           "title": "Wiring and Circuits",
           "icon": "cable",
           "text": "Old house wiring, underground cables, 220 V plugs and dedicated circuits.",
-          "points": ["Old house wiring", "Underground cables", "220 V plugs", "Dedicated circuits"]
+          "points": [
+            "Old house wiring",
+            "Underground cables",
+            "220 V plugs",
+            "Dedicated circuits"
+          ]
         }
       ]
     },
@@ -91,14 +145,21 @@
           "title": "New Construction and Build-Outs",
           "icon": "building",
           "text": "New construction buildout, design and build, remodel, new tenant build-outs and lease spaces.",
-          "points": ["New construction buildout", "Design and build", "Remodel"]
+          "points": [
+            "New construction buildout",
+            "Design and build",
+            "Remodel"
+          ]
         },
         {
           "slug": "commercial-lighting",
           "title": "Commercial Lighting",
           "icon": "lightbulb",
           "text": "Commercial lighting services, including parking lot lights.",
-          "points": ["Lighting", "Parking lot lights"]
+          "points": [
+            "Lighting",
+            "Parking lot lights"
+          ]
         },
         {
           "slug": "service-and-troubleshooting",
@@ -128,7 +189,11 @@
           "title": "Standby Generators",
           "icon": "power",
           "text": "Standby generators run on natural gas or propane and turn on and off by themselves, with unlimited running time. They must be installed by a professional electrician.",
-          "points": ["20,000 to 45,000 watts", "Natural gas or propane", "Turns on and off by itself"]
+          "points": [
+            "20,000 to 45,000 watts",
+            "Natural gas or propane",
+            "Turns on and off by itself"
+          ]
         },
         {
           "slug": "generator-installation",
@@ -158,7 +223,10 @@
           "title": "Boat House Lighting and Receptacles",
           "icon": "lightbulb",
           "text": "Lighting, receptacles and GFCIs for boat houses and docks.",
-          "points": ["Boat house lighting and receptacles", "GFCIs"]
+          "points": [
+            "Boat house lighting and receptacles",
+            "GFCIs"
+          ]
         },
         {
           "slug": "pvc-conduit",
@@ -171,7 +239,10 @@
           "title": "Underwater Green Lights",
           "icon": "droplets",
           "text": "Also known as green lights, underwater fishing lights, dock lights and fish lights. We can help you customize the lighting around your home, boat dock and canal or lake frontage, and if you are out of state we can ship it to you. Call for pricing and installation information.",
-          "points": ["Installed or shipped out of state", "Call for pricing and installation information"]
+          "points": [
+            "Installed or shipped out of state",
+            "Call for pricing and installation information"
+          ]
         }
       ]
     },
@@ -294,7 +365,10 @@
     },
     {
       "heading": "Generator Brands",
-      "items": ["Generac standby generators", "Kohler standby generators"]
+      "items": [
+        "Generac standby generators",
+        "Kohler standby generators"
+      ]
     },
     {
       "heading": "Panels Worth Checking",

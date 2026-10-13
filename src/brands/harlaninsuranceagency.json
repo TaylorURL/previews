@@ -45,7 +45,24 @@
     "body": "'Red Hat Text', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&family=Red+Hat+Text:wght@400;500;600;700&display=swap",
     "logo": "/brands/harlaninsuranceagency/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/harlaninsuranceagency/logo-mono.webp",
+    "logoWidth": 192,
+    "logoHeight": 48,
+    "logoRatio": 4.0,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.001,
+      0.101,
+      0.199,
+      0.298,
+      0.4,
+      0.503,
+      0.6,
+      0.698,
+      0.8,
+      0.903,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Independent agency in Deer Park",

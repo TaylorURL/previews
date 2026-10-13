@@ -14,7 +14,20 @@
   "license": "Akif CPA, PLLC — CPAs, CA and advisors.",
   "rating": 5.0,
   "reviewCount": 243,
-  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "cta": {
     "label": "Schedule a Consultation",
     "text": "Tell us what you or your business needs and our team will get back to you by phone or email."
@@ -32,7 +45,24 @@
     "body": "'Roboto', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap",
     "logo": "/brands/akifcpa/logo.webp",
-    "logoWidth": 215
+    "logoMono": "/brands/akifcpa/logo-mono.webp",
+    "logoWidth": 255,
+    "logoHeight": 48,
+    "logoRatio": 5.316,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.177,
+      0.059,
+      0.067,
+      0.179,
+      0.297,
+      0.416,
+      0.532,
+      0.646,
+      0.765,
+      0.886,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Accounting firm on the Southwest Freeway",
@@ -40,13 +70,20 @@
     "lead": "We support businesses with their accounting needs, with a focus on customer service and a standard of work that outperforms the rest.",
     "image": "/brands/akifcpa/hero",
     "imageAlt": "The Akif CPA founders at the firm's Houston office",
-    "points": ["Virtual meetings or in person", "An online portal for your documents", "Offices in Houston and Toronto"]
+    "points": [
+      "Virtual meetings or in person",
+      "An online portal for your documents",
+      "Offices in Houston and Toronto"
+    ]
   },
   "overview": {
     "title": "Business support designed to scale.",
     "text": "Our services are customized to your needs to ensure you get the accounting support you need at the highest standard."
   },
-  "audiences": { "individuals": "Individuals & Cross-Border", "businesses": "Businesses" },
+  "audiences": {
+    "individuals": "Individuals & Cross-Border",
+    "businesses": "Businesses"
+  },
   "services": [
     {
       "slug": "tax-preparation",
@@ -59,16 +96,40 @@
       "image": "/brands/akifcpa/tax",
       "imageAlt": "Tax forms, a calculator and a pen on a desk",
       "covers": [
-        { "title": "Send documents online", "text": "Our online portal makes it easy to send in your documents, and you can also drop hard copies by our office." },
-        { "title": "E-filing for faster refunds", "text": "We submit taxes through an e-filing system, which typically results in faster processing of your tax forms and speedier returns." },
-        { "title": "Audit risk reduction", "text": "Our team offers strategic advice and framework for how to claim deductions and credits, qualified incentives, and more. IRS alerts and regulation changes are monitored so we can adjust our clients' strategies accordingly." },
-        { "title": "Keeping as much money as possible", "text": "Debt management, tax-loss harvesting, year-end planning and income redistribution, with deductions and credits targeted at the federal and state level." },
-        { "title": "IRS disputes and audits", "text": "As CPAs we represent our clients in IRS disputes and audits, handling the documentation, communication and navigation of IRS letters on your behalf." },
-        { "title": "Extensions and back filing", "text": "Unforeseen issues can delay filing. Extensions, delayed filing and back-filing taxes are straightforward with our team." }
+        {
+          "title": "Send documents online",
+          "text": "Our online portal makes it easy to send in your documents, and you can also drop hard copies by our office."
+        },
+        {
+          "title": "E-filing for faster refunds",
+          "text": "We submit taxes through an e-filing system, which typically results in faster processing of your tax forms and speedier returns."
+        },
+        {
+          "title": "Audit risk reduction",
+          "text": "Our team offers strategic advice and framework for how to claim deductions and credits, qualified incentives, and more. IRS alerts and regulation changes are monitored so we can adjust our clients' strategies accordingly."
+        },
+        {
+          "title": "Keeping as much money as possible",
+          "text": "Debt management, tax-loss harvesting, year-end planning and income redistribution, with deductions and credits targeted at the federal and state level."
+        },
+        {
+          "title": "IRS disputes and audits",
+          "text": "As CPAs we represent our clients in IRS disputes and audits, handling the documentation, communication and navigation of IRS letters on your behalf."
+        },
+        {
+          "title": "Extensions and back filing",
+          "text": "Unforeseen issues can delay filing. Extensions, delayed filing and back-filing taxes are straightforward with our team."
+        }
       ],
       "questions": [
-        { "q": "Can you file for an extension or go back and file previous years?", "a": "Yes. Extensions, delayed filing and back-filing taxes are straightforward, and our team can help when times are tough and you need a CPA in your corner." },
-        { "q": "What happens if the IRS writes to me?", "a": "As CPAs we represent our clients in IRS disputes and audits, so the documentation, communication and navigation of IRS issues, letters and audits can be handled by our team on your behalf." }
+        {
+          "q": "Can you file for an extension or go back and file previous years?",
+          "a": "Yes. Extensions, delayed filing and back-filing taxes are straightforward, and our team can help when times are tough and you need a CPA in your corner."
+        },
+        {
+          "q": "What happens if the IRS writes to me?",
+          "a": "As CPAs we represent our clients in IRS disputes and audits, so the documentation, communication and navigation of IRS issues, letters and audits can be handled by our team on your behalf."
+        }
       ]
     },
     {
@@ -80,20 +141,56 @@
       "text": "US international tax accountants with over 10 years of experience helping individuals and entities with US cross-border tax, including filing and compliance with both the IRS and the CRA.",
       "lead": "Whether you are a US citizen, US resident or green card holder living abroad, a non-resident, a Canadian citizen working or living in the US, or a Canadian corporation doing business in the US, we can help you with tax filing and compliance with both the IRS and the CRA.",
       "covers": [
-        { "title": "US expats and citizens living abroad", "text": "United States tax services for Americans living abroad." },
-        { "title": "US tax for Canadians in the US", "text": "United States tax services and filing for non-natives living in the United States." },
-        { "title": "US tax for Americans in Canada", "text": "United States tax services and filing for Americans living in Canada." },
-        { "title": "US tax for Canadian corporations in the US", "text": "Filing and compliance for Canadian corporations doing business in the United States." },
-        { "title": "E-commerce for Canadian shops selling in the US", "text": "CPA services for Canadian shops selling into the United States." },
-        { "title": "Cross-border CFO services", "text": "Finance leadership for companies working on both sides of the border." }
+        {
+          "title": "US expats and citizens living abroad",
+          "text": "United States tax services for Americans living abroad."
+        },
+        {
+          "title": "US tax for Canadians in the US",
+          "text": "United States tax services and filing for non-natives living in the United States."
+        },
+        {
+          "title": "US tax for Americans in Canada",
+          "text": "United States tax services and filing for Americans living in Canada."
+        },
+        {
+          "title": "US tax for Canadian corporations in the US",
+          "text": "Filing and compliance for Canadian corporations doing business in the United States."
+        },
+        {
+          "title": "E-commerce for Canadian shops selling in the US",
+          "text": "CPA services for Canadian shops selling into the United States."
+        },
+        {
+          "title": "Cross-border CFO services",
+          "text": "Finance leadership for companies working on both sides of the border."
+        }
       ],
       "questions": [
-        { "q": "Which US forms do you file for someone living in Canada?", "a": "Commonly Form 1040 along with Forms 2555, 1116, 8938, 8621 and 8833, plus FinCEN Report 114 for the FBAR. A non-resident files Form 1040NR, and Form 8233 covers an exemption from withholding on personal services income." },
-        { "q": "Do I have to pay tax in both the US and Canada?", "a": "Usually yes, and a Canadian resident who is a US citizen files with both the IRS and the CRA. Tax treaties and the foreign tax credit are what relieve the double tax, and the credit cannot exceed the tax paid in the other country." },
-        { "q": "Is a TFSA tax-free to the IRS?", "a": "No. The IRS does not treat a TFSA as tax-free, so the income is taxable in the current year and reported on Form 1040. An RRSP is the equivalent of a traditional IRA, and a 401k and an RRSP both defer tax but differ on early withdrawal penalties and rollovers." },
-        { "q": "Who has to report under FATCA?", "a": "US taxpayers whose foreign assets pass the $50,000 threshold, reported on Form 8938." },
-        { "q": "How does Canadian departure tax work?", "a": "It turns on whether you have ceased to be a resident, which exemptions apply and the type of asset involved. Rental property, mutual funds, TFSAs and RRSPs are each treated differently when you move to the US, so we work it through case by case." },
-        { "q": "Does the FBAR apply to a company?", "a": "Yes. It applies to corporations, LLCs, partnerships, trusts and estates, and covers checking and savings accounts, securities and brokerage accounts and other financial institution accounts." }
+        {
+          "q": "Which US forms do you file for someone living in Canada?",
+          "a": "Commonly Form 1040 along with Forms 2555, 1116, 8938, 8621 and 8833, plus FinCEN Report 114 for the FBAR. A non-resident files Form 1040NR, and Form 8233 covers an exemption from withholding on personal services income."
+        },
+        {
+          "q": "Do I have to pay tax in both the US and Canada?",
+          "a": "Usually yes, and a Canadian resident who is a US citizen files with both the IRS and the CRA. Tax treaties and the foreign tax credit are what relieve the double tax, and the credit cannot exceed the tax paid in the other country."
+        },
+        {
+          "q": "Is a TFSA tax-free to the IRS?",
+          "a": "No. The IRS does not treat a TFSA as tax-free, so the income is taxable in the current year and reported on Form 1040. An RRSP is the equivalent of a traditional IRA, and a 401k and an RRSP both defer tax but differ on early withdrawal penalties and rollovers."
+        },
+        {
+          "q": "Who has to report under FATCA?",
+          "a": "US taxpayers whose foreign assets pass the $50,000 threshold, reported on Form 8938."
+        },
+        {
+          "q": "How does Canadian departure tax work?",
+          "a": "It turns on whether you have ceased to be a resident, which exemptions apply and the type of asset involved. Rental property, mutual funds, TFSAs and RRSPs are each treated differently when you move to the US, so we work it through case by case."
+        },
+        {
+          "q": "Does the FBAR apply to a company?",
+          "a": "Yes. It applies to corporations, LLCs, partnerships, trusts and estates, and covers checking and savings accounts, securities and brokerage accounts and other financial institution accounts."
+        }
       ]
     },
     {
@@ -105,9 +202,18 @@
       "text": "Moving from Canada to the United States on an E-2 visa is an exciting opportunity for entrepreneurs and investors, but it also comes with complex tax and financial reporting obligations on both sides of the border.",
       "lead": "As a cross-border CPA firm specializing in Canadian-to-US transitions, we help E-2 visa holders structure their move properly, stay compliant, and avoid unnecessary tax costs during every stage of the transition.",
       "covers": [
-        { "title": "Dual-country tax filing", "text": "Dual-country tax filing obligations require you to file and coordinate both Canadian and US tax returns to ensure full compliance and avoid double taxation." },
-        { "title": "Determining US tax status", "text": "Determining US tax residency status involves analyzing rules like the Substantial Presence Test to establish when and how your worldwide income becomes taxable in the United States." },
-        { "title": "Structuring your business", "text": "Structuring business ownership and compensation is essential for optimizing tax efficiency by choosing the right entity type and properly balancing salary, dividends, or distributions." }
+        {
+          "title": "Dual-country tax filing",
+          "text": "Dual-country tax filing obligations require you to file and coordinate both Canadian and US tax returns to ensure full compliance and avoid double taxation."
+        },
+        {
+          "title": "Determining US tax status",
+          "text": "Determining US tax residency status involves analyzing rules like the Substantial Presence Test to establish when and how your worldwide income becomes taxable in the United States."
+        },
+        {
+          "title": "Structuring your business",
+          "text": "Structuring business ownership and compensation is essential for optimizing tax efficiency by choosing the right entity type and properly balancing salary, dividends, or distributions."
+        }
       ]
     },
     {
@@ -121,18 +227,48 @@
       "image": "/brands/akifcpa/crypto",
       "imageAlt": "A candlestick price chart on a dark screen",
       "covers": [
-        { "title": "Reporting, accounting and taxes", "text": "Cost-basis issues, purchase history and fair market value worked out across exchanges and wallets." },
-        { "title": "Tax strategy and optimization", "text": "Planning built around how the IRS treats your holdings, trades and mining income." },
-        { "title": "Crypto businesses and individuals", "text": "CPA services for crypto businesses as well as individual traders, miners and investors." },
-        { "title": "Emerging assets", "text": "Our experts understand the unique needs of participants working with established and emerging blockchains, exchanges and marketplaces, including DeFi, NFTs, stablecoins and altcoins." }
+        {
+          "title": "Reporting, accounting and taxes",
+          "text": "Cost-basis issues, purchase history and fair market value worked out across exchanges and wallets."
+        },
+        {
+          "title": "Tax strategy and optimization",
+          "text": "Planning built around how the IRS treats your holdings, trades and mining income."
+        },
+        {
+          "title": "Crypto businesses and individuals",
+          "text": "CPA services for crypto businesses as well as individual traders, miners and investors."
+        },
+        {
+          "title": "Emerging assets",
+          "text": "Our experts understand the unique needs of participants working with established and emerging blockchains, exchanges and marketplaces, including DeFi, NFTs, stablecoins and altcoins."
+        }
       ],
       "questions": [
-        { "q": "Do IRS rules for crypto keep changing?", "a": "Yes. IRS rules and tax laws are rapidly evolving to catch up with blockchain finance technology, and our experts track those obligations as they change." },
-        { "q": "How does the IRS treat cryptocurrency?", "a": "As property. A gain on a coin that has risen in price is a taxable capital event in the same way as a physical asset, and a coin held for more than a year qualifies for the long-term rates of 0, 15 or 20 percent." },
-        { "q": "What do you need to work out a year of trading?", "a": "All of your wallet and exchange data. Connecting your wallets to coin tracking software such as Koinly or CoinTracking records the cost basis of every transaction, and we reconcile deposits, withdrawals and income from there. We do not have a favourite platform and will work in whichever one you use." },
-        { "q": "Is staking or mining income taxed like a trade?", "a": "No. Staking, yield and mining come in as ordinary income at fair market value on the day you receive them, and the capital gain is worked out from that point. Mining also brings self-employment tax and hardware write-offs." },
-        { "q": "Are NFTs taxed the same as other crypto?", "a": "Not always. An NFT may be treated as a collectible, which carries a different capital gains rate, so we look at them separately." },
-        { "q": "Is swapping one token for a wrapped version a taxable event?", "a": "Yes. Converting ETH to wrapped ETH qualifies as a taxable event under IRS rules, and gas fees may be deductible where the activity is structured as an LLC." }
+        {
+          "q": "Do IRS rules for crypto keep changing?",
+          "a": "Yes. IRS rules and tax laws are rapidly evolving to catch up with blockchain finance technology, and our experts track those obligations as they change."
+        },
+        {
+          "q": "How does the IRS treat cryptocurrency?",
+          "a": "As property. A gain on a coin that has risen in price is a taxable capital event in the same way as a physical asset, and a coin held for more than a year qualifies for the long-term rates of 0, 15 or 20 percent."
+        },
+        {
+          "q": "What do you need to work out a year of trading?",
+          "a": "All of your wallet and exchange data. Connecting your wallets to coin tracking software such as Koinly or CoinTracking records the cost basis of every transaction, and we reconcile deposits, withdrawals and income from there. We do not have a favourite platform and will work in whichever one you use."
+        },
+        {
+          "q": "Is staking or mining income taxed like a trade?",
+          "a": "No. Staking, yield and mining come in as ordinary income at fair market value on the day you receive them, and the capital gain is worked out from that point. Mining also brings self-employment tax and hardware write-offs."
+        },
+        {
+          "q": "Are NFTs taxed the same as other crypto?",
+          "a": "Not always. An NFT may be treated as a collectible, which carries a different capital gains rate, so we look at them separately."
+        },
+        {
+          "q": "Is swapping one token for a wrapped version a taxable event?",
+          "a": "Yes. Converting ETH to wrapped ETH qualifies as a taxable event under IRS rules, and gas fees may be deductible where the activity is structured as an LLC."
+        }
       ]
     },
     {
@@ -146,14 +282,32 @@
       "image": "/brands/akifcpa/accounting",
       "imageAlt": "A laptop showing financial charts on a desk",
       "covers": [
-        { "title": "Double entry accounting", "text": "Detailed and accurate data entry with a focus on identifying errors, discrepancies and inaccuracies through regular reconciliation, keeping assets equal to liability plus equity." },
-        { "title": "Financial statements and reports", "text": "Regular reports on the balance sheet, income statement, cash flow, and accounts payable and receivable, plus comparative reports on budget against actual spend, expense tracking and inventory costs." },
-        { "title": "Inventory tracking and management", "text": "Inventory audits, valuation methods, cost analysis and vendor evaluation so you can track performance and make critical decisions." },
-        { "title": "Invoicing, payable and receivable", "text": "Client, vendor and supplier setup in your accounting system, timely invoice processing, payment policies and reports on invoicing's impact on cash flow." },
-        { "title": "Monthly, quarterly and annual reports", "text": "Regular reports ensure you get the oversight you need to be comfortable, without being involved in the day-to-day." }
+        {
+          "title": "Double entry accounting",
+          "text": "Detailed and accurate data entry with a focus on identifying errors, discrepancies and inaccuracies through regular reconciliation, keeping assets equal to liability plus equity."
+        },
+        {
+          "title": "Financial statements and reports",
+          "text": "Regular reports on the balance sheet, income statement, cash flow, and accounts payable and receivable, plus comparative reports on budget against actual spend, expense tracking and inventory costs."
+        },
+        {
+          "title": "Inventory tracking and management",
+          "text": "Inventory audits, valuation methods, cost analysis and vendor evaluation so you can track performance and make critical decisions."
+        },
+        {
+          "title": "Invoicing, payable and receivable",
+          "text": "Client, vendor and supplier setup in your accounting system, timely invoice processing, payment policies and reports on invoicing's impact on cash flow."
+        },
+        {
+          "title": "Monthly, quarterly and annual reports",
+          "text": "Regular reports ensure you get the oversight you need to be comfortable, without being involved in the day-to-day."
+        }
       ],
       "questions": [
-        { "q": "How do I get documents to you?", "a": "Easily submit any documents remotely through our secure online portal, and we will take it from there." }
+        {
+          "q": "How do I get documents to you?",
+          "a": "Easily submit any documents remotely through our secure online portal, and we will take it from there."
+        }
       ]
     },
     {
@@ -167,10 +321,22 @@
       "image": "/brands/akifcpa/bookkeeping",
       "imageAlt": "A notepad with a hand-drawn growth chart, a pen and a ruler",
       "covers": [
-        { "title": "Stress-free and accurate", "text": "Our team works to ensure you do not spend valuable time worrying about the state and accuracy of your books, so you can turn your focus to other business needs." },
-        { "title": "CPA oversight", "text": "Our bookkeepers work side by side with our CPAs, receiving guidance throughout every step of the bookkeeping process." },
-        { "title": "Service and consultation", "text": "When your needs expand beyond data entry and reporting, our consultants can step in with software cleanup and migration, audit preparation, tax reporting and spending strategy." },
-        { "title": "Reports that work for you", "text": "Easy-to-digest charts, data points and key performance indicators that aid in budgeting, forecasting, evaluating labor costs and expansion strategy." }
+        {
+          "title": "Stress-free and accurate",
+          "text": "Our team works to ensure you do not spend valuable time worrying about the state and accuracy of your books, so you can turn your focus to other business needs."
+        },
+        {
+          "title": "CPA oversight",
+          "text": "Our bookkeepers work side by side with our CPAs, receiving guidance throughout every step of the bookkeeping process."
+        },
+        {
+          "title": "Service and consultation",
+          "text": "When your needs expand beyond data entry and reporting, our consultants can step in with software cleanup and migration, audit preparation, tax reporting and spending strategy."
+        },
+        {
+          "title": "Reports that work for you",
+          "text": "Easy-to-digest charts, data points and key performance indicators that aid in budgeting, forecasting, evaluating labor costs and expansion strategy."
+        }
       ]
     },
     {
@@ -184,15 +350,36 @@
       "image": "/brands/akifcpa/payroll",
       "imageAlt": "Payroll paperwork and a calculator on a table",
       "covers": [
-        { "title": "Accurate pay, on time", "text": "Wage calculations that account for hours, overtime, commissions, bonuses, deductions and owner distributions, with third-party oversight on hours, attendance and vacation accrual." },
-        { "title": "Employee contribution adjustments", "text": "Employer portions of insurance, retirement and 401k handled alongside employee withholding, reimbursements for tuition, phone and internet plans, and benefit plan audits." },
-        { "title": "Expense reporting and tracking", "text": "An expense report system that integrates with payroll and accounting software, with categorization, compliance checks, timely reimbursement and data on spending patterns." },
-        { "title": "Direct deposit setup and management", "text": "Direct deposit with detailed pay stubs, varying compensation for employees and contractors, commission structures, bonuses and distributions." },
-        { "title": "Reports with the details you need", "text": "Payroll reports on wage costs, trends, staff numbers and seasonality, plus turnover and retention rates useful for budget allocation and long-term planning." },
-        { "title": "All the required forms", "text": "W-2 and 1099 forms prepared and issued within the required timeline, with tax withholdings, retirement contributions, insurance premiums and state and local forms." }
+        {
+          "title": "Accurate pay, on time",
+          "text": "Wage calculations that account for hours, overtime, commissions, bonuses, deductions and owner distributions, with third-party oversight on hours, attendance and vacation accrual."
+        },
+        {
+          "title": "Employee contribution adjustments",
+          "text": "Employer portions of insurance, retirement and 401k handled alongside employee withholding, reimbursements for tuition, phone and internet plans, and benefit plan audits."
+        },
+        {
+          "title": "Expense reporting and tracking",
+          "text": "An expense report system that integrates with payroll and accounting software, with categorization, compliance checks, timely reimbursement and data on spending patterns."
+        },
+        {
+          "title": "Direct deposit setup and management",
+          "text": "Direct deposit with detailed pay stubs, varying compensation for employees and contractors, commission structures, bonuses and distributions."
+        },
+        {
+          "title": "Reports with the details you need",
+          "text": "Payroll reports on wage costs, trends, staff numbers and seasonality, plus turnover and retention rates useful for budget allocation and long-term planning."
+        },
+        {
+          "title": "All the required forms",
+          "text": "W-2 and 1099 forms prepared and issued within the required timeline, with tax withholdings, retirement contributions, insurance premiums and state and local forms."
+        }
       ],
       "questions": [
-        { "q": "Why outsource payroll rather than keep it in house?", "a": "Businesses that outsource payroll are much less likely to be the victims of fraud and false expense reporting, and third-party oversight means anomalies and inconsistencies on timesheets get spotted." }
+        {
+          "q": "Why outsource payroll rather than keep it in house?",
+          "a": "Businesses that outsource payroll are much less likely to be the victims of fraud and false expense reporting, and third-party oversight means anomalies and inconsistencies on timesheets get spotted."
+        }
       ]
     },
     {
@@ -206,15 +393,36 @@
       "image": "/brands/akifcpa/cfo",
       "imageAlt": "A financial dashboard of charts on a dark screen",
       "covers": [
-        { "title": "Industry expertise", "text": "Analysis of industry-specific data to establish market size and growth rates, benchmarks and comparison data, with tracking of emerging technologies and market gaps." },
-        { "title": "Third-party oversight", "text": "Clear delineation of roles, segregation of duties, checks and balances, and internal controls that safeguard company assets from fraud." },
-        { "title": "Budgets and projections", "text": "Analysis of historical financial data and trends, financial goals and detailed budgets, revenue forecasting, performance targets and KPIs." },
-        { "title": "Regulatory compliance and audits", "text": "Internal audits of financial policies, procedures and controls, with ongoing risk assessment against relevant financial laws, regulations and accounting standards." },
-        { "title": "Stakeholder communications", "text": "Earnings calls, performance reports and presentations on forecast and results, with transparent financial disclosures and crisis guidance." },
-        { "title": "Expertise at a lower cost", "text": "A full-time CFO is expensive and often more than a business needs. A CFO service brings financial leadership without the full-time employee price tag." }
+        {
+          "title": "Industry expertise",
+          "text": "Analysis of industry-specific data to establish market size and growth rates, benchmarks and comparison data, with tracking of emerging technologies and market gaps."
+        },
+        {
+          "title": "Third-party oversight",
+          "text": "Clear delineation of roles, segregation of duties, checks and balances, and internal controls that safeguard company assets from fraud."
+        },
+        {
+          "title": "Budgets and projections",
+          "text": "Analysis of historical financial data and trends, financial goals and detailed budgets, revenue forecasting, performance targets and KPIs."
+        },
+        {
+          "title": "Regulatory compliance and audits",
+          "text": "Internal audits of financial policies, procedures and controls, with ongoing risk assessment against relevant financial laws, regulations and accounting standards."
+        },
+        {
+          "title": "Stakeholder communications",
+          "text": "Earnings calls, performance reports and presentations on forecast and results, with transparent financial disclosures and crisis guidance."
+        },
+        {
+          "title": "Expertise at a lower cost",
+          "text": "A full-time CFO is expensive and often more than a business needs. A CFO service brings financial leadership without the full-time employee price tag."
+        }
       ],
       "questions": [
-        { "q": "Can you work alongside our in-house accounting team?", "a": "Yes. We provide a framework that integrates with your existing accounting department, including oversight, KPIs and accountability." }
+        {
+          "q": "Can you work alongside our in-house accounting team?",
+          "a": "Yes. We provide a framework that integrates with your existing accounting department, including oversight, KPIs and accountability."
+        }
       ]
     },
     {
@@ -228,11 +436,26 @@
       "image": "/brands/akifcpa/advisory",
       "imageAlt": "A hand writing notes on a document at a desk",
       "covers": [
-        { "title": "Broad strategy and the details", "text": "Insight at every level of business, from entity structure and spending strategy aligned with your goals to the granular reporting processes that guide the business in future." },
-        { "title": "Business formation and entity setup", "text": "Help choosing and setting up the entity structure that fits, including restructuring as the business changes." },
-        { "title": "Acquisitions, sales and valuations", "text": "Consulting through buying, selling and valuing a business." },
-        { "title": "Long and short-term consulting", "text": "Our CPA consultants work on a specific problem to tackle or provide ongoing professional guidance." },
-        { "title": "Virtual and in person meetings", "text": "We work with remote-only firms, traditional in-office firms, and anything in between." }
+        {
+          "title": "Broad strategy and the details",
+          "text": "Insight at every level of business, from entity structure and spending strategy aligned with your goals to the granular reporting processes that guide the business in future."
+        },
+        {
+          "title": "Business formation and entity setup",
+          "text": "Help choosing and setting up the entity structure that fits, including restructuring as the business changes."
+        },
+        {
+          "title": "Acquisitions, sales and valuations",
+          "text": "Consulting through buying, selling and valuing a business."
+        },
+        {
+          "title": "Long and short-term consulting",
+          "text": "Our CPA consultants work on a specific problem to tackle or provide ongoing professional guidance."
+        },
+        {
+          "title": "Virtual and in person meetings",
+          "text": "We work with remote-only firms, traditional in-office firms, and anything in between."
+        }
       ]
     },
     {
@@ -244,13 +467,34 @@
       "text": "Maximize business potential with an accounting software system that works for your needs. Our CPAs and accounting software experts offer recommendations, integration, migration and training for market-leading platforms.",
       "lead": "Discover accounting software selected for your business's unique needs, as we determine together what the best platform is based on your needs, budget and team size.",
       "covers": [
-        { "title": "Recommendations, pros and cons", "text": "Tell us exactly what you need and we find the software that fits, with a look at your options, how they work, and the pros and cons in the context of your business." },
-        { "title": "Cloud-based options", "text": "Automated backups, remote uploads and downloads, integration with other software systems, and one-click report generation." },
-        { "title": "Setup and migration", "text": "From data preparation through migration, setup, automation and report design, our team manages every step of the process." },
-        { "title": "Cleanup and training", "text": "Examination of your current software and a cleanup plan, including removing erroneous data, setting up the chart of accounts, and hands-on training." },
-        { "title": "Customization and integration", "text": "Software customized to your business, including automating repetitive tasks, report design, system audits, and integration with existing HR or POS platforms." },
-        { "title": "The platforms we work in", "text": "QuickBooks, Xero, Wave, FreshBooks, Zoho and Sage, along with the HR software, CRMs, ERPs and POS systems they need to talk to." },
-        { "title": "Cleanup on a flat fee", "text": "A QuickBooks or other software cleanup is quoted as a flat fee, covering workflow and data entry guidance, bank, credit card and balance sheet reconciliation, profit and loss statements and the reports that come off them." }
+        {
+          "title": "Recommendations, pros and cons",
+          "text": "Tell us exactly what you need and we find the software that fits, with a look at your options, how they work, and the pros and cons in the context of your business."
+        },
+        {
+          "title": "Cloud-based options",
+          "text": "Automated backups, remote uploads and downloads, integration with other software systems, and one-click report generation."
+        },
+        {
+          "title": "Setup and migration",
+          "text": "From data preparation through migration, setup, automation and report design, our team manages every step of the process."
+        },
+        {
+          "title": "Cleanup and training",
+          "text": "Examination of your current software and a cleanup plan, including removing erroneous data, setting up the chart of accounts, and hands-on training."
+        },
+        {
+          "title": "Customization and integration",
+          "text": "Software customized to your business, including automating repetitive tasks, report design, system audits, and integration with existing HR or POS platforms."
+        },
+        {
+          "title": "The platforms we work in",
+          "text": "QuickBooks, Xero, Wave, FreshBooks, Zoho and Sage, along with the HR software, CRMs, ERPs and POS systems they need to talk to."
+        },
+        {
+          "title": "Cleanup on a flat fee",
+          "text": "A QuickBooks or other software cleanup is quoted as a flat fee, covering workflow and data entry guidance, bank, credit card and balance sheet reconciliation, profit and loss statements and the reports that come off them."
+        }
       ]
     },
     {
@@ -262,11 +506,26 @@
       "text": "The Bank Secrecy Act requires a money service business to maintain an effective anti-money laundering program, and the review of it has to be carried out by a third party. We are ACAMS certified and have extensive experience in anti-money laundering business services.",
       "lead": "We read the policy you have in place, assess the risk in the business, test your internal controls and name where the program falls short, then help you write and implement what is missing.",
       "covers": [
-        { "title": "Policy and procedure review", "text": "An independent review of your existing anti-money laundering policy and procedures, with the gaps and deficiencies identified." },
-        { "title": "Risk assessment and due diligence", "text": "A risk assessment of the business, a due-diligence evaluation and an analysis of the transaction cycle for BSA and AML risk." },
-        { "title": "Internal controls and training", "text": "A review of internal controls and of the training documents you use, checked against what the regulations require." },
-        { "title": "Policy development and implementation", "text": "Where a program is missing or incomplete, we develop the policy and help put it in place." },
-        { "title": "Monitoring, interviews and board review", "text": "Employee interviews, a Board of Directors review and ongoing monitoring once the program is running." }
+        {
+          "title": "Policy and procedure review",
+          "text": "An independent review of your existing anti-money laundering policy and procedures, with the gaps and deficiencies identified."
+        },
+        {
+          "title": "Risk assessment and due diligence",
+          "text": "A risk assessment of the business, a due-diligence evaluation and an analysis of the transaction cycle for BSA and AML risk."
+        },
+        {
+          "title": "Internal controls and training",
+          "text": "A review of internal controls and of the training documents you use, checked against what the regulations require."
+        },
+        {
+          "title": "Policy development and implementation",
+          "text": "Where a program is missing or incomplete, we develop the policy and help put it in place."
+        },
+        {
+          "title": "Monitoring, interviews and board review",
+          "text": "Employee interviews, a Board of Directors review and ongoing monitoring once the program is running."
+        }
       ]
     }
   ],
@@ -274,15 +533,33 @@
     "title": "No one size fits all approach",
     "text": "We work very closely with our clients to really get an understanding of their financial needs, because a solid foundation is the key to the best relationships.",
     "steps": [
-      { "title": "We match you to the right experts", "text": "We match every client with the specialized services and experts they need in order to find success." },
-      { "title": "We learn the business", "text": "We spend time with our clients to understand their business, family and personal needs to determine the best financial solutions." },
-      { "title": "We become experts in your industry", "text": "We take the extra time to become experts in each client's area of business, which is where the entity structuring and deduction knowledge comes from." },
-      { "title": "We stay your year-round adviser", "text": "As your year-round adviser we stay focused on the challenges you face and the resources needed to meet them, no matter how complex the situation." }
+      {
+        "title": "We match you to the right experts",
+        "text": "We match every client with the specialized services and experts they need in order to find success."
+      },
+      {
+        "title": "We learn the business",
+        "text": "We spend time with our clients to understand their business, family and personal needs to determine the best financial solutions."
+      },
+      {
+        "title": "We become experts in your industry",
+        "text": "We take the extra time to become experts in each client's area of business, which is where the entity structuring and deduction knowledge comes from."
+      },
+      {
+        "title": "We stay your year-round adviser",
+        "text": "As your year-round adviser we stay focused on the challenges you face and the resources needed to meet them, no matter how complex the situation."
+      }
     ]
   },
   "affiliations": {
     "title": "Credentials on our team",
-    "items": ["Certified Public Accountant (CPA)", "Chartered Professional Accountant, Ontario", "Chartered Financial Analyst (CFA)", "Certified Anti-Money Laundering Specialist (CAMS)", "Realtor"]
+    "items": [
+      "Certified Public Accountant (CPA)",
+      "Chartered Professional Accountant, Ontario",
+      "Chartered Financial Analyst (CFA)",
+      "Certified Anti-Money Laundering Specialist (CAMS)",
+      "Realtor"
+    ]
   },
   "about": {
     "title": "Your partners in business success.",
@@ -294,9 +571,18 @@
     "image": "/brands/akifcpa/about",
     "imageAlt": "Office towers seen from street level",
     "values": [
-      { "title": "No one size fits all approach", "text": "We match every client with the specialized services and experts they need in order to find success." },
-      { "title": "Solutions for you", "text": "We spend time with our clients to understand their business, family and personal needs to determine the best financial solutions." },
-      { "title": "Professionalism and ethics", "text": "We are a professional team with decades of experience, a strong code of ethics, clear vision, and a passion and commitment to your success." }
+      {
+        "title": "No one size fits all approach",
+        "text": "We match every client with the specialized services and experts they need in order to find success."
+      },
+      {
+        "title": "Solutions for you",
+        "text": "We spend time with our clients to understand their business, family and personal needs to determine the best financial solutions."
+      },
+      {
+        "title": "Professionalism and ethics",
+        "text": "We are a professional team with decades of experience, a strong code of ethics, clear vision, and a passion and commitment to your success."
+      }
     ]
   },
   "team": [
@@ -327,29 +613,78 @@
     }
   ],
   "faqs": [
-    { "q": "Who do you work with?", "a": "Small businesses, mid-sized businesses, enterprise firms and individuals. We will help a small business establish accounting best practices, recommend an entity structure and develop growth strategies, while more established businesses benefit from software integration and cleanup, bookkeeping, training and advanced reporting." },
-    { "q": "Do I have to come to the office?", "a": "No. You can connect through our video teleconferencing platform for virtual meetings, and we work with clients remotely, in the office, and anything in between." },
-    { "q": "How do I send you documents?", "a": "Upload documents, receipts and paperwork through our online portal, or drop hard copies by the office." },
-    { "q": "Can I pay online?", "a": "Yes. You can submit electronic payments for our services through our online payment platform." },
-    { "q": "Which industries do you specialize in?", "a": "Cross-border tax and accounting, cryptocurrency, real estate, digital creators, e-commerce, medical practices, transportation, distribution companies and salons. We take the extra time to become experts in each client's area of business." },
-    { "q": "What if the service I need is not listed?", "a": "Just ask. We offer everything from granular data-entry support to high level accounting strategy, and we add tailored services as clients need them." }
+    {
+      "q": "Who do you work with?",
+      "a": "Small businesses, mid-sized businesses, enterprise firms and individuals. We will help a small business establish accounting best practices, recommend an entity structure and develop growth strategies, while more established businesses benefit from software integration and cleanup, bookkeeping, training and advanced reporting."
+    },
+    {
+      "q": "Do I have to come to the office?",
+      "a": "No. You can connect through our video teleconferencing platform for virtual meetings, and we work with clients remotely, in the office, and anything in between."
+    },
+    {
+      "q": "How do I send you documents?",
+      "a": "Upload documents, receipts and paperwork through our online portal, or drop hard copies by the office."
+    },
+    {
+      "q": "Can I pay online?",
+      "a": "Yes. You can submit electronic payments for our services through our online payment platform."
+    },
+    {
+      "q": "Which industries do you specialize in?",
+      "a": "Cross-border tax and accounting, cryptocurrency, real estate, digital creators, e-commerce, medical practices, transportation, distribution companies and salons. We take the extra time to become experts in each client's area of business."
+    },
+    {
+      "q": "What if the service I need is not listed?",
+      "a": "Just ask. We offer everything from granular data-entry support to high level accounting strategy, and we add tailored services as clients need them."
+    }
   ],
   "facts": [
     {
       "heading": "Industry specialties",
-      "items": ["Cross-border tax and accounting", "Cryptocurrency", "Real estate and construction", "Digital creators and online brands", "E-commerce", "Medical practices and healthcare providers", "Transportation and trucking", "Distribution companies", "Nail and hair salons"]
+      "items": [
+        "Cross-border tax and accounting",
+        "Cryptocurrency",
+        "Real estate and construction",
+        "Digital creators and online brands",
+        "E-commerce",
+        "Medical practices and healthcare providers",
+        "Transportation and trucking",
+        "Distribution companies",
+        "Nail and hair salons"
+      ]
     },
     {
       "heading": "Who we work with",
-      "items": ["Small businesses", "Mid-sized businesses", "Enterprise", "Individuals and families"]
+      "items": [
+        "Small businesses",
+        "Mid-sized businesses",
+        "Enterprise",
+        "Individuals and families"
+      ]
     },
     {
       "heading": "Also offered",
-      "items": ["Reasonable compensation report for S-Corp", "Business entity setup and restructuring", "Budgeting and forecasting", "Outsourced bookkeeping", "Small business accounting", "Virtual CPA services", "Compilation and review services", "Sales tax audit", "Financial planning", "Additional tailored services"]
+      "items": [
+        "Reasonable compensation report for S-Corp",
+        "Business entity setup and restructuring",
+        "Budgeting and forecasting",
+        "Outsourced bookkeeping",
+        "Small business accounting",
+        "Virtual CPA services",
+        "Compilation and review services",
+        "Sales tax audit",
+        "Financial planning",
+        "Additional tailored services"
+      ]
     },
     {
       "heading": "Meeting and payment options",
-      "items": ["Virtual meetings by video teleconference", "Online portal for documents and receipts", "Online payment platform", "In-person at the Houston office"]
+      "items": [
+        "Virtual meetings by video teleconference",
+        "Online portal for documents and receipts",
+        "Online payment platform",
+        "In-person at the Houston office"
+      ]
     },
     {
       "heading": "Our other office",
@@ -377,7 +712,12 @@
     },
     {
       "heading": "Find us online",
-      "items": ["Facebook: facebook.com/akifcpa", "Twitter: twitter.com/akifcpa", "LinkedIn: linkedin.com/company/akif-cpa-pllc", "YouTube: youtube.com/channel/UCPJrZWI7aB19_dMgSN6HbQw"]
+      "items": [
+        "Facebook: facebook.com/akifcpa",
+        "Twitter: twitter.com/akifcpa",
+        "LinkedIn: linkedin.com/company/akif-cpa-pllc",
+        "YouTube: youtube.com/channel/UCPJrZWI7aB19_dMgSN6HbQw"
+      ]
     }
   ]
 }

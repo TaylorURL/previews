@@ -14,8 +14,14 @@
   "since": 2013,
   "license": "Licensed and insured crews. Licensed through the Roofing Contractors Association of Texas, A+ rated with the Better Business Bureau and Google Guaranteed.",
   "hours": [
-    ["Mon – Fri", "9 AM – 5 PM Central"],
-    ["Customer Service", "24 hours, 7 days"]
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM Central"
+    ],
+    [
+      "Customer Service",
+      "24 hours, 7 days"
+    ]
   ],
   "brand": {
     "primary": "#d32f2f",
@@ -27,10 +33,24 @@
     "body": "'Roboto', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap",
     "logo": "/brands/omconstruction/logo.webp",
+    "logoMono": "/brands/omconstruction/logo-mono.webp",
     "logoWidth": 63,
     "logoHeight": 74,
-    "logoRatio": 0.858,
-    "logoGround": "#ffffff"
+    "logoRatio": 0.857,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.602,
+      0.598,
+      0.596,
+      0.594,
+      0.611,
+      0.668,
+      0.719,
+      0.77,
+      0.84,
+      0.922,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Roofing contractor in Stafford, TX",

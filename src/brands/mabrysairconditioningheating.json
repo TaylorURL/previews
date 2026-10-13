@@ -14,9 +14,18 @@
   "reviewCount": 91,
   "since": 1986,
   "hours": [
-    ["Mon – Fri", "7 AM – 7 PM"],
-    ["Saturday", "7 AM – 1 PM"],
-    ["Sunday", "Closed"]
+    [
+      "Mon – Fri",
+      "7 AM – 7 PM"
+    ],
+    [
+      "Saturday",
+      "7 AM – 1 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
   ],
   "brand": {
     "primary": "#16287A",
@@ -30,14 +39,36 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap",
     "logo": "/brands/mabrysairconditioningheating/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/mabrysairconditioningheating/logo-mono.webp",
+    "logoWidth": 124,
+    "logoHeight": 58,
+    "logoRatio": 2.138,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.182,
+      0.131,
+      0.167,
+      0.241,
+      0.339,
+      0.447,
+      0.553,
+      0.661,
+      0.775,
+      0.89,
+      1.0
+    ]
   },
   "emergency": {
     "title": "After-hours emergency service",
     "text": "We are on call after hours for urgent AC and heating repairs, and there is no extra charge for evenings or weekends."
   },
   "sameDay": "Same-day service is often available, and a real person calls you back fast.",
-  "licenses": [{ "label": "Texas HVAC Contractor", "number": "TACLB12058E" }],
+  "licenses": [
+    {
+      "label": "Texas HVAC Contractor",
+      "number": "TACLB12058E"
+    }
+  ],
   "financing": {
     "text": "100% financing on a new system with approved credit through participating lenders, from as low as $38 a week."
   },
@@ -96,7 +127,9 @@
           "title": "Drainage and Condensate",
           "icon": "droplets",
           "text": "Gulf Coast humidity clogs condensate drains quickly, and an overflowing pan can cause water damage before you notice it.",
-          "points": ["Drainage clogs and condensate pan overflow cleared"]
+          "points": [
+            "Drainage clogs and condensate pan overflow cleared"
+          ]
         }
       ]
     },
@@ -125,21 +158,29 @@
           "title": "Heat Pump Repair",
           "icon": "thermometer",
           "text": "Heat pump reversing valve failures are one of the most common heating faults we see in this area, and we are set up to diagnose them quickly.",
-          "points": ["Heat pump repair and service", "Reversing valve diagnosis"]
+          "points": [
+            "Heat pump repair and service",
+            "Reversing valve diagnosis"
+          ]
         },
         {
           "slug": "electric-heat",
           "title": "Electric Air Handlers and Strip Heat",
           "icon": "heater",
           "text": "Electric air handler and strip heat repair for homes without a gas furnace.",
-          "points": ["All residential brands serviced"]
+          "points": [
+            "All residential brands serviced"
+          ]
         },
         {
           "slug": "thermostats-and-ducts",
           "title": "Thermostats and Ductwork",
           "icon": "settings",
           "text": "Thermostat calibration and replacement, and ductwork inspection and repair when the heat is reaching some rooms and not others.",
-          "points": ["Thermostat calibration and replacement", "Ductwork inspection and repair"]
+          "points": [
+            "Thermostat calibration and replacement",
+            "Ductwork inspection and repair"
+          ]
         }
       ]
     },
@@ -235,7 +276,9 @@
           "title": "Every Brand in Your Home",
           "icon": "settings",
           "text": "We perform maintenance tune-ups on all residential equipment, whatever is already installed.",
-          "points": ["Trane, Carrier, Lennox, Rheem, Goodman, Amana, American Standard, York, Bryant and Daikin"]
+          "points": [
+            "Trane, Carrier, Lennox, Rheem, Goodman, Amana, American Standard, York, Bryant and Daikin"
+          ]
         }
       ]
     }
@@ -260,10 +303,22 @@
     "image": "/brands/mabrysairconditioningheating/about",
     "imageAlt": "Hand tools laid out on a workbench",
     "values": [
-      { "title": "Honest pricing", "text": "Flat-rate pricing with no hidden or surprise charges." },
-      { "title": "Quality work", "text": "We do the job right the first time, every time." },
-      { "title": "Prompt service", "text": "We respect your time and show up when promised." },
-      { "title": "Expert advice", "text": "We give you honest recommendations, not sales pitches." }
+      {
+        "title": "Honest pricing",
+        "text": "Flat-rate pricing with no hidden or surprise charges."
+      },
+      {
+        "title": "Quality work",
+        "text": "We do the job right the first time, every time."
+      },
+      {
+        "title": "Prompt service",
+        "text": "We respect your time and show up when promised."
+      },
+      {
+        "title": "Expert advice",
+        "text": "We give you honest recommendations, not sales pitches."
+      }
     ]
   },
   "faqs": [

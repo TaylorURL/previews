@@ -13,7 +13,12 @@
   "reviewCount": 715,
   "since": 2015,
   "license": "Insured, and a CertainTeed Select ShingleMaster",
-  "hours": [["Mon – Sun", "Open 24 hours"]],
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
   "brand": {
     "primary": "#ed1f24",
     "primaryDeep": "#9e1115",
@@ -24,7 +29,24 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap",
     "logo": "/brands/mossroofinghouston/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/mossroofinghouston/logo-mono.webp",
+    "logoWidth": 124,
+    "logoHeight": 58,
+    "logoRatio": 2.138,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.378,
+      0.24,
+      0.181,
+      0.157,
+      0.182,
+      0.319,
+      0.452,
+      0.586,
+      0.726,
+      0.866,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Houston roofing company since 2015",
@@ -274,7 +296,12 @@
   "materials": {
     "title": "Materials and manufacturers we work with",
     "text": "We take pride in only partnering with companies whose quality of materials we wholeheartedly believe in. As a CertainTeed Select ShingleMaster, we install the Integrity Roof System on most of our projects, and the CertainTeed Landmark shingle is the product we feature.",
-    "brands": ["CertainTeed", "ABC Supply Co.", "SRS", "KARNAK"]
+    "brands": [
+      "CertainTeed",
+      "ABC Supply Co.",
+      "SRS",
+      "KARNAK"
+    ]
   },
   "about": {
     "title": "A Houston roofing contractor, founded here in 2015",

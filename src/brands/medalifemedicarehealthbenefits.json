@@ -13,9 +13,18 @@
   "zip": "77586",
   "license": "We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options.",
   "hours": [
-    ["Mon – Fri", "9 AM – 5 PM"],
-    ["Sat", "Closed"],
-    ["Sun", "Closed"]
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Sat",
+      "Closed"
+    ],
+    [
+      "Sun",
+      "Closed"
+    ]
   ],
   "cta": {
     "label": "Get a Quote",
@@ -34,7 +43,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/medalifemedicarehealthbenefits/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/medalifemedicarehealthbenefits/logo-mono.webp",
+    "logoWidth": 260,
+    "logoHeight": 32,
+    "logoRatio": 8.0,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.595,
+      0.501,
+      0.418,
+      0.392,
+      0.42,
+      0.464,
+      0.497,
+      0.549,
+      0.668,
+      0.833,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Medicare resource center in Seabrook",
@@ -160,7 +186,12 @@
   },
   "affiliations": {
     "title": "Carriers we represent",
-    "items": ["UnitedHealthcare", "Humana", "Aetna", "Cigna Healthsprings"]
+    "items": [
+      "UnitedHealthcare",
+      "Humana",
+      "Aetna",
+      "Cigna Healthsprings"
+    ]
   },
   "about": {
     "title": "A Medicare resource center on NASA Parkway.",
@@ -218,7 +249,11 @@
       "href": "https://www.medicare.gov/"
     }
   ],
-  "serviceArea": ["Seabrook", "El Lago", "Taylor Lake Village"],
+  "serviceArea": [
+    "Seabrook",
+    "El Lago",
+    "Taylor Lake Village"
+  ],
   "facts": [
     {
       "heading": "Medicare solicitation notice",

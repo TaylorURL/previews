@@ -81,7 +81,7 @@
 import { useEffect, useState } from 'react';
 import { ArrowRight, ArrowUpRight, CalendarDays, Clock, Mail, MapPin, Menu, MessageCircle, Phone, X } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { Img, Stars, Facts } from './shared.jsx';
+import { BrandLogo, Img, Stars, Facts, hexOr, mixHex, StudioCredit } from './shared.jsx';
 import { onColor } from './salon/color.js';
 import { SOCIAL } from './salon/icons.jsx';
 
@@ -115,15 +115,10 @@ export function pages(b) {
 /** The salon's own wordmark: its logo, or its short name set in the heading face. */
 function Wordmark({ b, size = 'header' }) {
   if (b.brand.logo) {
-    const w = b.brand.logoWidth || 160;
-    return (
-      <img
-        className="block h-auto max-h-14 max-w-[52vw] object-contain lg:max-h-16"
-        src={b.brand.logo}
-        alt={b.name}
-        style={{ width: size === 'footer' ? Math.round(w * 1.15) : w }}
-      />
-    );
+    // The header sits on the page's own ground and the footer on its panel.
+    const bg = hexOr(b.brand.bg, '#ffffff');
+    const ground = size === 'footer' ? hexOr(b.brand.panel, mixHex(bg, hexOr(b.brand.primary, bg), 0.08)) : bg;
+    return <BrandLogo b={b} ground={ground} scale={size === 'footer' ? 1.15 : 1} textClass="text-ink" />;
   }
   const long = b.shortName.length > 16;
   return (
@@ -409,6 +404,7 @@ export default function Salon({ b, path = '' }) {
       <div className={`${wrap} pb-28 md:pb-10`}>
         <p className="m-0 border-t border-line pt-6 text-center text-[13px] text-muted">
           &copy; {new Date().getFullYear()} {b.name}
+          <StudioCredit b={b} />
         </p>
       </div>
     </footer>

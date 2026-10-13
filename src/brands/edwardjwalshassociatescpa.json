@@ -14,9 +14,18 @@
   "since": 1932,
   "license": "Certified Public Accountants. Edward J. Walsh was granted Certificate Number 376 by the Texas State Board of Public Accountancy on January 9, 1932.",
   "hours": [
-    ["Mon – Fri", "8 AM – 5 PM"],
-    ["Saturday", "Closed"],
-    ["Sunday", "Closed"]
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
   ],
   "cta": {
     "label": "Schedule a Consultation",
@@ -35,7 +44,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/edwardjwalshassociatescpa/logo.webp",
-    "logoWidth": 50
+    "logoMono": "/brands/edwardjwalshassociatescpa/logo-mono.webp",
+    "logoWidth": 74,
+    "logoHeight": 74,
+    "logoRatio": 1.0,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.34,
+      0.254,
+      0.255,
+      0.32,
+      0.404,
+      0.49,
+      0.576,
+      0.668,
+      0.772,
+      0.884,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Certified Public Accountants in Galveston",
@@ -43,13 +69,20 @@
     "lead": "Edward J. Walsh & Associates provides unparalleled personalized accounting services to a broad range of clients. As full-service CPAs serving clients since 1932, we specialize in personal and business income tax, financial consulting, estate planning, bookkeeping, payroll and more. For three generations, the Walsh family has served clients with distinction and care.",
     "image": "/brands/edwardjwalshassociatescpa/hero",
     "imageAlt": "An open accounting ledger on a desk",
-    "points": ["Established 1932", "Three generations of the Walsh family", "An office in the Moody National Bank Tower"]
+    "points": [
+      "Established 1932",
+      "Three generations of the Walsh family",
+      "An office in the Moody National Bank Tower"
+    ]
   },
   "overview": {
     "title": "We offer a wide range of services to meet your specific personal or business needs.",
     "text": "Pick a service to see what it covers, or call the office and talk it through with our team."
   },
-  "audiences": { "individuals": "Individuals and Families", "businesses": "Businesses" },
+  "audiences": {
+    "individuals": "Individuals and Families",
+    "businesses": "Businesses"
+  },
   "services": [
     {
       "slug": "tax-accounting",
@@ -62,9 +95,18 @@
       "image": "/brands/edwardjwalshassociatescpa/tax",
       "imageAlt": "Tax forms and a pen on a desk",
       "covers": [
-        { "title": "Tax accounting", "text": "Personal and business income tax work, prepared from your records." },
-        { "title": "Tax consulting", "text": "Advice on the financial decisions that shape what you owe, taken before the year closes." },
-        { "title": "Tax compliance", "text": "Returns and filings kept current for individuals and for businesses." }
+        {
+          "title": "Tax accounting",
+          "text": "Personal and business income tax work, prepared from your records."
+        },
+        {
+          "title": "Tax consulting",
+          "text": "Advice on the financial decisions that shape what you owe, taken before the year closes."
+        },
+        {
+          "title": "Tax compliance",
+          "text": "Returns and filings kept current for individuals and for businesses."
+        }
       ]
     },
     {
@@ -76,8 +118,14 @@
       "text": "Expatriate and international U.S. tax accounting and compliance for clients whose income or residence crosses a border.",
       "lead": "A U.S. filing obligation does not end at the border. We handle the accounting and the compliance for expatriate and international U.S. tax matters.",
       "covers": [
-        { "title": "Expatriate tax accounting", "text": "U.S. tax work for clients living or working outside the country." },
-        { "title": "International compliance", "text": "The U.S. filings that come with income, accounts or interests abroad." }
+        {
+          "title": "Expatriate tax accounting",
+          "text": "U.S. tax work for clients living or working outside the country."
+        },
+        {
+          "title": "International compliance",
+          "text": "The U.S. filings that come with income, accounts or interests abroad."
+        }
       ]
     },
     {
@@ -89,8 +137,14 @@
       "text": "Trust and estate tax work alongside estate planning, so what you leave behind is handled the way you intended.",
       "lead": "Trusts and estates carry their own returns and their own decisions. We prepare the tax work and advise on the planning that sits behind it.",
       "covers": [
-        { "title": "Trust and estate tax", "text": "Returns and tax accounting for trusts and for estates." },
-        { "title": "Estate planning", "text": "Planning the financial side of an estate, with your interests in mind." }
+        {
+          "title": "Trust and estate tax",
+          "text": "Returns and tax accounting for trusts and for estates."
+        },
+        {
+          "title": "Estate planning",
+          "text": "Planning the financial side of an estate, with your interests in mind."
+        }
       ]
     },
     {
@@ -102,9 +156,18 @@
       "text": "Retirement planning, plan formation, accounting and compliance, from setting a plan up to keeping it filed.",
       "lead": "A retirement plan has to be formed, accounted for and kept compliant year after year. We take on all three.",
       "covers": [
-        { "title": "Planning and formation", "text": "Setting up a retirement plan and the decisions that go into it." },
-        { "title": "Plan accounting", "text": "The accounting a plan needs once it is running." },
-        { "title": "Compliance", "text": "Keeping the plan's filings current." }
+        {
+          "title": "Planning and formation",
+          "text": "Setting up a retirement plan and the decisions that go into it."
+        },
+        {
+          "title": "Plan accounting",
+          "text": "The accounting a plan needs once it is running."
+        },
+        {
+          "title": "Compliance",
+          "text": "Keeping the plan's filings current."
+        }
       ]
     },
     {
@@ -116,8 +179,14 @@
       "text": "Payroll services and payroll tax preparation, so your staff are paid and the filings behind them are done on time.",
       "lead": "Payroll is a deadline every pay period and a filing every quarter. We run the payroll and prepare the payroll tax that follows it.",
       "covers": [
-        { "title": "Payroll services", "text": "Running payroll for your employees." },
-        { "title": "Payroll tax preparation", "text": "Preparing the payroll tax filings that come with it." }
+        {
+          "title": "Payroll services",
+          "text": "Running payroll for your employees."
+        },
+        {
+          "title": "Payroll tax preparation",
+          "text": "Preparing the payroll tax filings that come with it."
+        }
       ]
     },
     {
@@ -131,8 +200,14 @@
       "image": "/brands/edwardjwalshassociatescpa/bookkeeping",
       "imageAlt": "A calculator and printed statements on a desk",
       "covers": [
-        { "title": "Bookkeeping", "text": "Your records kept current rather than reconstructed at year end." },
-        { "title": "Reconciliation and reporting", "text": "Accounts reconciled and the figures reported back to you." }
+        {
+          "title": "Bookkeeping",
+          "text": "Your records kept current rather than reconstructed at year end."
+        },
+        {
+          "title": "Reconciliation and reporting",
+          "text": "Accounts reconciled and the figures reported back to you."
+        }
       ]
     },
     {
@@ -146,8 +221,14 @@
       "image": "/brands/edwardjwalshassociatescpa/hoa",
       "imageAlt": "An aerial view of a residential neighborhood",
       "covers": [
-        { "title": "HOA accounting", "text": "Accounts receivable and accounts payable managed for local homeowner association clients." },
-        { "title": "HOA consulting", "text": "Advice on the association's accounting as questions come up." }
+        {
+          "title": "HOA accounting",
+          "text": "Accounts receivable and accounts payable managed for local homeowner association clients."
+        },
+        {
+          "title": "HOA consulting",
+          "text": "Advice on the association's accounting as questions come up."
+        }
       ]
     }
   ],
@@ -162,10 +243,22 @@
     "image": "/brands/edwardjwalshassociatescpa/about",
     "imageAlt": "A pier and waterfront homes on the Texas Gulf Coast",
     "values": [
-      { "title": "Personalized service", "text": "Unparalleled personalized accounting services to a broad range of clients." },
-      { "title": "Your best interests", "text": "We are here to ensure that all of your financial decisions are made carefully and with your best interests in mind." },
-      { "title": "Individualized attention", "text": "Our team works diligently and collaboratively to bring you individualized attention and effective, timely financial management solutions." },
-      { "title": "We love what we do", "text": "At Edward J. Walsh & Associates, we love what we do, which translates into positive client experiences." }
+      {
+        "title": "Personalized service",
+        "text": "Unparalleled personalized accounting services to a broad range of clients."
+      },
+      {
+        "title": "Your best interests",
+        "text": "We are here to ensure that all of your financial decisions are made carefully and with your best interests in mind."
+      },
+      {
+        "title": "Individualized attention",
+        "text": "Our team works diligently and collaboratively to bring you individualized attention and effective, timely financial management solutions."
+      },
+      {
+        "title": "We love what we do",
+        "text": "At Edward J. Walsh & Associates, we love what we do, which translates into positive client experiences."
+      }
     ]
   },
   "team": [

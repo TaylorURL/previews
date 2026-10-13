@@ -14,9 +14,18 @@
   "rating": 4.2,
   "reviewCount": 5,
   "hours": [
-    ["Mon – Fri", "9 AM – 5 PM"],
-    ["Saturday", "Closed"],
-    ["Sunday", "Closed"]
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
   ],
   "cta": {
     "label": "Schedule a Consultation",
@@ -35,7 +44,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/hopeehartmancpapllc/logo.webp",
-    "logoWidth": 220
+    "logoMono": "/brands/hopeehartmancpapllc/logo-mono.webp",
+    "logoWidth": 97,
+    "logoHeight": 58,
+    "logoRatio": 1.672,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.433,
+      0.287,
+      0.148,
+      0.014,
+      0.143,
+      0.293,
+      0.431,
+      0.57,
+      0.718,
+      0.863,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "CPA office in Crosby, Texas",
@@ -53,7 +79,10 @@
     "title": "Areas of practice.",
     "text": "Pick an area to see what it covers, or call the office and talk it through with our team. Please contact us if you do not see what you are looking for and we will see if we can accommodate you."
   },
-  "audiences": { "individuals": "Individuals", "businesses": "Businesses" },
+  "audiences": {
+    "individuals": "Individuals",
+    "businesses": "Businesses"
+  },
   "services": [
     {
       "slug": "tax",
@@ -66,16 +95,40 @@
       "image": "/brands/hopeehartmancpapllc/tax",
       "imageAlt": "IRS tax forms, a pen and a calculator laid out on a desk",
       "covers": [
-        { "title": "Individual returns", "text": "Personal returns prepared and filed for households in Crosby, Huffman, Humble and Atascocita." },
-        { "title": "Business returns", "text": "Returns for businesses, prepared alongside the books and the payroll reporting when you need both." },
-        { "title": "Estate returns", "text": "Estate returns prepared as part of the office's tax practice." },
-        { "title": "Non-profit returns", "text": "Returns for non-profit organizations." },
-        { "title": "IRS notices", "text": "Help reading and answering a notice from the IRS." },
-        { "title": "Payroll and state reporting", "text": "Payroll reporting and state reporting filed with the returns." }
+        {
+          "title": "Individual returns",
+          "text": "Personal returns prepared and filed for households in Crosby, Huffman, Humble and Atascocita."
+        },
+        {
+          "title": "Business returns",
+          "text": "Returns for businesses, prepared alongside the books and the payroll reporting when you need both."
+        },
+        {
+          "title": "Estate returns",
+          "text": "Estate returns prepared as part of the office's tax practice."
+        },
+        {
+          "title": "Non-profit returns",
+          "text": "Returns for non-profit organizations."
+        },
+        {
+          "title": "IRS notices",
+          "text": "Help reading and answering a notice from the IRS."
+        },
+        {
+          "title": "Payroll and state reporting",
+          "text": "Payroll reporting and state reporting filed with the returns."
+        }
       ],
       "questions": [
-        { "q": "Can I send my tax documents in without coming by?", "a": "Yes. The office uses Intuit Link, and there is an upload link on our site for current clients." },
-        { "q": "I do not see what I need listed.", "a": "Please contact us if you do not see what you are looking for and we will see if we can accommodate you." }
+        {
+          "q": "Can I send my tax documents in without coming by?",
+          "a": "Yes. The office uses Intuit Link, and there is an upload link on our site for current clients."
+        },
+        {
+          "q": "I do not see what I need listed.",
+          "a": "Please contact us if you do not see what you are looking for and we will see if we can accommodate you."
+        }
       ]
     },
     {
@@ -87,9 +140,18 @@
       "text": "No matter what software you use, we can help. Sometimes it is easier and more efficient to outsource your accounting needs.",
       "lead": "No matter what software you use, we can help. Sometimes it is easier and more efficient to outsource your accounting needs. With over 17 years of experience, whatever your needs, we can meet them.",
       "covers": [
-        { "title": "Any software", "text": "We work in whatever package your books already sit in rather than asking you to move." },
-        { "title": "Outsourced accounting", "text": "The day-to-day bookkeeping handled here when it is easier and more efficient than keeping it in house." },
-        { "title": "QuickBooks", "text": "Hope has 19 plus years using QuickBooks and is listed with QuickBooks as a ProAdvisor." }
+        {
+          "title": "Any software",
+          "text": "We work in whatever package your books already sit in rather than asking you to move."
+        },
+        {
+          "title": "Outsourced accounting",
+          "text": "The day-to-day bookkeeping handled here when it is easier and more efficient than keeping it in house."
+        },
+        {
+          "title": "QuickBooks",
+          "text": "Hope has 19 plus years using QuickBooks and is listed with QuickBooks as a ProAdvisor."
+        }
       ]
     },
     {
@@ -101,8 +163,14 @@
       "text": "We can help you prepare and report payroll in multiple states. Call us for your specific needs.",
       "lead": "We can help you prepare and report payroll in multiple states. Call us for your specific needs.",
       "covers": [
-        { "title": "Payroll preparation", "text": "Payroll prepared for the pay periods your business runs." },
-        { "title": "Multi-state reporting", "text": "Reporting filed in more than one state when your people work across state lines." }
+        {
+          "title": "Payroll preparation",
+          "text": "Payroll prepared for the pay periods your business runs."
+        },
+        {
+          "title": "Multi-state reporting",
+          "text": "Reporting filed in more than one state when your people work across state lines."
+        }
       ]
     },
     {
@@ -114,8 +182,14 @@
       "text": "Always just a click or a call away during business hours. We pride ourselves in returning calls and emails promptly.",
       "lead": "Always just a click or a call away during business hours. We pride ourselves in returning calls and emails promptly.",
       "covers": [
-        { "title": "Questions as they come up", "text": "A call or an email during business hours rather than waiting for year end." },
-        { "title": "Prompt replies", "text": "We pride ourselves in returning calls and emails promptly." }
+        {
+          "title": "Questions as they come up",
+          "text": "A call or an email during business hours rather than waiting for year end."
+        },
+        {
+          "title": "Prompt replies",
+          "text": "We pride ourselves in returning calls and emails promptly."
+        }
       ]
     },
     {
@@ -127,9 +201,18 @@
       "text": "From collections, to handling, to management of cash, to a cash flow analysis, we got you covered.",
       "lead": "From collections, to handling, to management of cash, to a cash flow analysis, we got you covered.",
       "covers": [
-        { "title": "Collections", "text": "Getting what you are owed in, as part of how the cash is managed." },
-        { "title": "Cash handling", "text": "How cash moves through the business day to day." },
-        { "title": "Cash flow analysis", "text": "A look at what comes in and what goes out, and when." }
+        {
+          "title": "Collections",
+          "text": "Getting what you are owed in, as part of how the cash is managed."
+        },
+        {
+          "title": "Cash handling",
+          "text": "How cash moves through the business day to day."
+        },
+        {
+          "title": "Cash flow analysis",
+          "text": "A look at what comes in and what goes out, and when."
+        }
       ]
     },
     {
@@ -159,9 +242,18 @@
       "text": "Help opening a business and help closing one down, including entity selection.",
       "lead": "Help opening a business and help closing one down. Hope has worked with new start ups and can help diagnose errors in start ups, and has experience in closing down companies as well.",
       "covers": [
-        { "title": "Entity selection", "text": "Choosing the entity the business will be set up as." },
-        { "title": "New start ups", "text": "Hope has worked with new start ups and can help diagnose errors in start ups." },
-        { "title": "Closures", "text": "Experience in closing down companies as well." }
+        {
+          "title": "Entity selection",
+          "text": "Choosing the entity the business will be set up as."
+        },
+        {
+          "title": "New start ups",
+          "text": "Hope has worked with new start ups and can help diagnose errors in start ups."
+        },
+        {
+          "title": "Closures",
+          "text": "Experience in closing down companies as well."
+        }
       ]
     },
     {
@@ -191,9 +283,18 @@
     "image": "/brands/hopeehartmancpapllc/about",
     "imageAlt": "A quiet office with a desk and chair beside a window",
     "values": [
-      { "title": "Your success is our success", "text": "Our mission statement, and the way the office works: helping the community one client at a time." },
-      { "title": "Oil and gas accounting", "text": "Hope has 14 years plus experience in O&G accounting, five of them in OGSYS, and works in JIBs, severance tax and rendition reporting and revenue accounting." },
-      { "title": "QuickBooks ProAdvisor", "text": "Hope has 19 plus years experience using QuickBooks and is listed with QuickBooks as a ProAdvisor. No matter your business, she can help." }
+      {
+        "title": "Your success is our success",
+        "text": "Our mission statement, and the way the office works: helping the community one client at a time."
+      },
+      {
+        "title": "Oil and gas accounting",
+        "text": "Hope has 14 years plus experience in O&G accounting, five of them in OGSYS, and works in JIBs, severance tax and rendition reporting and revenue accounting."
+      },
+      {
+        "title": "QuickBooks ProAdvisor",
+        "text": "Hope has 19 plus years experience using QuickBooks and is listed with QuickBooks as a ProAdvisor. No matter your business, she can help."
+      }
     ]
   },
   "team": [
@@ -218,18 +319,50 @@
     }
   ],
   "faqs": [
-    { "q": "Where is the office?", "a": "20111 FM 2100 Rd, Suite 102, Crosby, Texas 77532. Mail can go to PO Box 1267, Huffman, Texas 77336." },
-    { "q": "How do I send in my tax documents?", "a": "Current clients upload documents through Intuit Link. There is an upload link on our site, or call the office and we will point you to it." },
-    { "q": "Are you taking new clients?", "a": "Yes. We are actively seeking new clients in the Crosby, Huffman, Humble and Atascocita, Texas area." },
-    { "q": "What if I need something that is not listed?", "a": "Please contact us if you do not see what you are looking for and we will see if we can accommodate you." },
-    { "q": "How quickly will I hear back?", "a": "We are always just a click or a call away during business hours, and we pride ourselves in returning calls and emails promptly." }
+    {
+      "q": "Where is the office?",
+      "a": "20111 FM 2100 Rd, Suite 102, Crosby, Texas 77532. Mail can go to PO Box 1267, Huffman, Texas 77336."
+    },
+    {
+      "q": "How do I send in my tax documents?",
+      "a": "Current clients upload documents through Intuit Link. There is an upload link on our site, or call the office and we will point you to it."
+    },
+    {
+      "q": "Are you taking new clients?",
+      "a": "Yes. We are actively seeking new clients in the Crosby, Huffman, Humble and Atascocita, Texas area."
+    },
+    {
+      "q": "What if I need something that is not listed?",
+      "a": "Please contact us if you do not see what you are looking for and we will see if we can accommodate you."
+    },
+    {
+      "q": "How quickly will I hear back?",
+      "a": "We are always just a click or a call away during business hours, and we pride ourselves in returning calls and emails promptly."
+    }
   ],
   "resources": [
-    { "title": "Intuit Link", "text": "Current clients upload tax documents here.", "href": "https://link.intuit.com/home/#/landing" },
-    { "title": "Journal of Accountancy", "text": "Daily updates and publications we point clients to.", "href": "http://www.journalofaccountancy.com" },
-    { "title": "Crosby Huffman Chamber of Commerce", "text": "The chamber for Crosby and Huffman.", "href": "http://crosbyhuffmancc.org/wordpress/?page_id=1092" }
+    {
+      "title": "Intuit Link",
+      "text": "Current clients upload tax documents here.",
+      "href": "https://link.intuit.com/home/#/landing"
+    },
+    {
+      "title": "Journal of Accountancy",
+      "text": "Daily updates and publications we point clients to.",
+      "href": "http://www.journalofaccountancy.com"
+    },
+    {
+      "title": "Crosby Huffman Chamber of Commerce",
+      "text": "The chamber for Crosby and Huffman.",
+      "href": "http://crosbyhuffmancc.org/wordpress/?page_id=1092"
+    }
   ],
-  "serviceArea": ["Crosby", "Huffman", "Humble", "Atascocita"],
+  "serviceArea": [
+    "Crosby",
+    "Huffman",
+    "Humble",
+    "Atascocita"
+  ],
   "facts": [
     {
       "heading": "Contact the office",

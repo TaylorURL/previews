@@ -1,0 +1,383 @@
+{
+  "template": "recreation",
+  "kind": "sports",
+  "name": "Sunfield Youth Sports Academy",
+  "shortName": "Sunfield Sports",
+  "tagline": "Baseball, softball, soccer and volleyball for Baytown kids and teens.",
+  "phone": "(281) 555-0148",
+  "email": "hello@sunfieldsports.example",
+  "address": "6215 Bayway Dr, Suite 100",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77520",
+  "rating": 4.9,
+  "reviewCount": 212,
+  "since": 2012,
+  "hours": [
+    [
+      "Mon – Fri",
+      "3:30 PM – 9 PM"
+    ],
+    [
+      "Saturday",
+      "8 AM – 6 PM"
+    ],
+    [
+      "Sunday",
+      "1 PM – 6 PM"
+    ]
+  ],
+  "ages": "4 to 18",
+  "activities": [
+    "Baseball",
+    "Softball",
+    "Soccer",
+    "Volleyball",
+    "Summer camp"
+  ],
+  "action": {
+    "label": "Register Now"
+  },
+  "band": {
+    "title": "Fall registration is open",
+    "text": "Call Sunfield Sports at (281) 555-0148, or send a question and a coach will help you pick the right program."
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/",
+    "facebook": "https://www.facebook.com/",
+    "tiktok": "https://www.tiktok.com/",
+    "youtube": "https://www.youtube.com/"
+  },
+  "serviceArea": [
+    "Baytown",
+    "Mont Belvieu",
+    "La Porte",
+    "Highlands",
+    "Crosby"
+  ],
+  "brand": {
+    "primary": "#1f4fd8",
+    "primaryDeep": "#16389c",
+    "accent": "#ffc233",
+    "ink": "#14213d",
+    "muted": "#4a5670",
+    "surface": "#eef3ff",
+    "line": "#dbe3f2",
+    "heading": "'Fredoka', 'Nunito', system-ui, sans-serif",
+    "body": "'Nunito Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap",
+    "logo": "/brands/sample-recreation/logo.webp",
+    "logoMono": "/brands/sample-recreation/logo-mono.webp",
+    "logoWidth": 178,
+    "logoHeight": 48,
+    "logoRatio": 3.708,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.433,
+      0.329,
+      0.292,
+      0.306,
+      0.381,
+      0.486,
+      0.586,
+      0.687,
+      0.792,
+      0.899,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Baseball, softball, soccer and volleyball in Baytown",
+    "title": "Where Baytown kids learn to love the game",
+    "lead": "Teams, leagues, clinics and summer camp for ages 4 to 18, coached by people who teach the fundamentals first and keep it fun all season.",
+    "image": "https://images.unsplash.com/photo-1526232761682-d26e03ac148e",
+    "imageAlt": "A coach talking with a young soccer team in red and white kits on a turf field",
+    "position": "center 40%"
+  },
+  "programs": [
+    {
+      "slug": "select-baseball",
+      "title": "Select Baseball",
+      "summary": "Tournament teams from 8U to 14U, with two practices a week and a coach for every twelve players.",
+      "text": [
+        "Select teams are for players who want more than a rec season: a full fall schedule of weekend tournaments across the Houston area, and practices built around hitting, fielding and throwing the right way.",
+        "We hold tryouts each July. Every player who tries out gets written feedback from the coaching staff, whether or not they make a roster."
+      ],
+      "ages": "8U – 14U",
+      "season": "Fall: August – November",
+      "schedule": "Mon and Wed, 5:30 – 7:30 PM, plus weekend tournaments",
+      "price": "$1,450 per season",
+      "priceNote": "Uniform and tournament fees included",
+      "points": [
+        "Two practices a week on our own fields",
+        "Six to eight weekend tournaments",
+        "Hitting and pitching sessions in the cages",
+        "Written player feedback at mid-season"
+      ],
+      "rules": [
+        "Tryout required",
+        "Players supply their own glove, bat and cleats"
+      ],
+      "image": "https://images.unsplash.com/photo-1490326149782-dd42fa59bd9f",
+      "imageAlt": "A young batter in a blue jersey swinging at a pitch in front of the catcher"
+    },
+    {
+      "slug": "softball-skills-clinic",
+      "title": "Softball Skills Clinic",
+      "summary": "Saturday morning clinics for girls who want sharper fielding, hitting and catching.",
+      "text": "Each clinic covers one part of the game in depth, with small groups so every player gets plenty of reps. Come to one or come to all of them.",
+      "ages": "9 to 16",
+      "season": "September – May",
+      "schedule": "Saturdays, 9 – 11 AM",
+      "price": "$35 per clinic",
+      "points": [
+        "Groups of eight or fewer per coach",
+        "A different skill each week",
+        "Catcher and pitcher stations"
+      ],
+      "image": "https://images.unsplash.com/photo-1590502160462-58b41354f588",
+      "imageAlt": "A ball held in a worn leather fielding glove"
+    },
+    {
+      "slug": "rec-soccer-league",
+      "title": "Rec Soccer League",
+      "summary": "A friendly spring league where every player plays at least half of every game.",
+      "text": "We balance teams by age and skill. Each team practices once a week and plays one game on Saturdays. The focus is on touches on the ball, teamwork and having a good time.",
+      "ages": "4 to 12",
+      "season": "Spring: February – May",
+      "schedule": "One weeknight practice, Saturday games",
+      "price": "$165 per player",
+      "priceNote": "Jersey and socks included",
+      "points": [
+        "Every player plays half of every game",
+        "Small-sided games for the youngest players",
+        "Parent coaches trained by our staff"
+      ],
+      "rules": [
+        "Shin guards and cleats required"
+      ],
+      "image": "https://images.unsplash.com/photo-1680024436315-fb06267264b2",
+      "imageAlt": "Young soccer players in orange jerseys chasing the ball on a grass field"
+    },
+    {
+      "slug": "volleyball-academy",
+      "title": "Volleyball Academy",
+      "summary": "Year-round training for middle and high school players, from first serves to club tryouts.",
+      "text": "We group players by skill as well as age, and they move up as they improve. Sessions mix drills, conditioning and scrimmage play in our indoor gym.",
+      "ages": "10 to 17",
+      "season": "Year round, in eight-week sessions",
+      "schedule": "Tue and Thu, 6 – 8 PM",
+      "price": "$120 per month",
+      "points": [
+        "Skill groups from beginner to club level",
+        "Video review of serves and approaches",
+        "Indoor courts with a climate-controlled gym"
+      ],
+      "image": "https://images.unsplash.com/photo-1547347298-4074fc3086f0",
+      "imageAlt": "High school volleyball players celebrating a point on an indoor court"
+    },
+    {
+      "slug": "summer-sports-camp",
+      "title": "Summer Sports Camp",
+      "summary": "Weekly day camp with a different sport every day, plus water games on Fridays.",
+      "text": "Campers rotate through baseball, soccer, volleyball and field games, with breaks in the shade and a long lunch. Sign up for one week or the whole summer.",
+      "ages": "6 to 12",
+      "season": "June 8 – July 31",
+      "schedule": "Mon – Fri, 8 AM – 3 PM",
+      "price": "$215 per week",
+      "priceNote": "Before and after care available",
+      "points": [
+        "A new sport every day",
+        "Counselors trained in first aid",
+        "Water games every Friday"
+      ],
+      "rules": [
+        "Campers bring a lunch and a refillable water bottle"
+      ],
+      "image": "https://images.unsplash.com/photo-1622659097972-68f1d8c1829f",
+      "imageAlt": "A boy kicking a blue soccer ball across a grass field while other kids watch"
+    },
+    {
+      "slug": "private-lessons",
+      "title": "Private Lessons",
+      "summary": "One-on-one hitting, pitching and fielding lessons with a Sunfield coach.",
+      "ages": "7 to 18",
+      "schedule": "By appointment",
+      "price": "$60 per 50 minutes",
+      "image": "https://images.unsplash.com/photo-1508344928928-7165b67de128",
+      "imageAlt": "A young hitter in a batting helmet holding a bat"
+    }
+  ],
+  "programsIntro": "Teams, leagues, clinics, lessons and camp, from first-time players to tournament rosters. Not sure where your child fits? Call and a coach will help.",
+  "schedule": {
+    "title": "The fall season at a glance",
+    "text": "Fall registration is open for Select Baseball and the Volleyball Academy. Spots on each team are limited.",
+    "rows": [
+      [
+        "Registration opens",
+        "July 1"
+      ],
+      [
+        "Baseball tryouts",
+        "July 19 and 20"
+      ],
+      [
+        "First practice",
+        "August 11"
+      ],
+      [
+        "Season ends",
+        "November 22"
+      ]
+    ]
+  },
+  "parties": {
+    "label": "Parties & Events",
+    "title": "Birthday parties on the field",
+    "text": "Our coaches run the games, and there is a party room for cake and presents. You do not have to set up or clean anything.",
+    "image": "https://images.unsplash.com/photo-1509666537727-9154b6962292",
+    "imageAlt": "Two girls in party hats laughing with a purple balloon",
+    "packages": [
+      {
+        "name": "Rookie Party",
+        "price": "$275",
+        "priceNote": "Up to 12 kids",
+        "includes": [
+          "One hour on the field with a coach",
+          "Forty-five minutes in the party room",
+          "Tables, chairs and paper goods"
+        ]
+      },
+      {
+        "name": "All-Star Party",
+        "price": "$395",
+        "priceNote": "Up to 20 kids",
+        "includes": [
+          "Ninety minutes on the field with two coaches",
+          "One hour in the party room",
+          "A Sunfield ball for the birthday child",
+          "Tables, chairs and paper goods"
+        ]
+      },
+      {
+        "name": "Team Event",
+        "price": "From $450",
+        "priceNote": "Teams, schools and church groups",
+        "includes": [
+          "Field or court time for your group",
+          "A coach-run skills session",
+          "Use of the party room"
+        ]
+      }
+    ],
+    "note": "Pay a $100 deposit to hold your date, and we take it off the final price. Parties run Saturdays and Sundays.",
+    "action": "Book a Party"
+  },
+  "about": {
+    "title": "Fundamentals first, and fun the whole way",
+    "text": [
+      "Sunfield started in 2012 with one baseball field, a borrowed batting cage and twenty players. Today it is a six-acre complex on Bayway Drive with two lighted fields, an indoor gym and cages that stay busy every evening.",
+      "The idea has not changed. Kids learn the fundamentals from coaches who know how to teach them, play a lot, and leave every practice wanting to come back."
+    ],
+    "image": "https://images.unsplash.com/photo-1508802449768-a389d1acbfcd",
+    "imageAlt": "A youth baseball game seen from behind home plate under a blue sky",
+    "points": [
+      "Two lighted fields",
+      "Indoor gym with two volleyball courts",
+      "Four batting cages",
+      "Covered seating for parents"
+    ]
+  },
+  "staff": [
+    {
+      "name": "Ray Delgado",
+      "role": "Founder and Baseball Director",
+      "bio": "Ray played college baseball and has coached youth teams in Baytown for more than fifteen years. He still runs the 12U select practices himself.",
+      "image": "https://images.unsplash.com/photo-1665822814047-6ef8249da90e",
+      "imageAlt": "Ray Delgado in a cap and team sweatshirt at the field"
+    },
+    {
+      "name": "Kendra Ellis",
+      "role": "Volleyball Director",
+      "bio": "Kendra coached high school volleyball for eight years before starting the Sunfield Volleyball Academy. Footwork and serving are her favorite things to teach.",
+      "image": "https://images.unsplash.com/photo-1571732154690-f6d1c3e5178a",
+      "imageAlt": "Kendra Ellis coaching a player through a squat in the training room"
+    },
+    {
+      "name": "Luis Ortega",
+      "role": "Soccer and Camp Coordinator",
+      "bio": "Luis runs the rec soccer league and summer camp, and trains every parent coach before the season starts.",
+      "image": "https://images.unsplash.com/photo-1585757318177-0570a997dc3a",
+      "imageAlt": "Luis Ortega holding a tactics board at the edge of the field"
+    }
+  ],
+  "staffTitle": "Meet the coaches",
+  "gallery": [
+    {
+      "image": "https://images.unsplash.com/photo-1548077880-656c402b344e",
+      "imageAlt": "A row of young players in green and maroon jerseys lined up in the gym"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1528024719646-5360a944bd74",
+      "imageAlt": "A girls soccer team in blue jerseys sitting together on the bench"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1518974906971-fedc85ade525",
+      "imageAlt": "A young batter running toward first base during a game"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1728971124391-ba9d41ea5c16",
+      "imageAlt": "Young volleyball players going up for a block at the net"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "My child has never played before. Is there a program for beginners?",
+      "a": "Yes. The Rec Soccer League, the Softball Skills Clinic and Summer Sports Camp all welcome first-time players, and coaches group kids by skill as well as age."
+    },
+    {
+      "q": "What should my child bring to the first practice?",
+      "a": "Athletic shoes or cleats, a water bottle and any gear listed for the program. We have loaner gloves and helmets for anyone who needs one."
+    },
+    {
+      "q": "Do you offer sibling discounts?",
+      "a": "Yes. The second child in a family gets $20 off any league or camp week, and each child after that gets $30 off."
+    },
+    {
+      "q": "What happens when it rains?",
+      "a": "We move outdoor practices to the indoor gym when we can. When we cannot, we text every family by 3 PM."
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Rec soccer parent",
+      "text": "My daughter was nervous to play her first season and her coach made her feel like part of the team from day one. She is already asking about spring."
+    },
+    {
+      "author": "Select baseball family",
+      "text": "The coaching is the real thing. My son's swing changed completely in one fall, and the written feedback at mid-season was a nice surprise."
+    },
+    {
+      "author": "Summer camp parent",
+      "text": "Two kids, four weeks of camp, and they came home tired and happy every single day. Friday water games were the highlight."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Safety",
+      "items": [
+        "Every coach passes a background check",
+        "Coaches hold current CPR and first aid certification",
+        "An athletic trainer on site for select tournaments"
+      ]
+    },
+    {
+      "heading": "Payment",
+      "text": "Card, cash or check. League and season fees can be split into three monthly payments."
+    },
+    {
+      "heading": "Scholarships",
+      "text": "Need-based scholarships cover part or all of a season. Ask at the front desk for an application."
+    }
+  ]
+}

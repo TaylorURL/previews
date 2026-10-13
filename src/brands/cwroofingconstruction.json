@@ -12,7 +12,20 @@
   "rating": 5.0,
   "reviewCount": 27,
   "license": "Fully insured · GAF Certified · Owens Corning Preferred Contractor",
-  "hours": [["Mon – Fri", "7 AM – 6 PM"], ["Saturday", "8 AM – 2 PM"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "7 AM – 6 PM"
+    ],
+    [
+      "Saturday",
+      "8 AM – 2 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "brand": {
     "primary": "#5abd28",
     "primaryDeep": "#36701a",
@@ -23,7 +36,24 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap",
     "logo": "/brands/cwroofingconstruction/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/cwroofingconstruction/logo-mono.webp",
+    "logoWidth": 98,
+    "logoHeight": 74,
+    "logoRatio": 1.32,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.873,
+      0.877,
+      0.885,
+      0.895,
+      0.906,
+      0.92,
+      0.934,
+      0.949,
+      0.966,
+      0.983,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Protect what matters",
@@ -33,7 +63,12 @@
     "image": "/brands/cwroofingconstruction/hero",
     "imageAlt": "Architectural shingle roof with dormers on a residential home"
   },
-  "promises": ["Fully Insured", "Manufacturer-Backed Warranties", "Code-Compliant Installations", "24/7 Emergency Service"],
+  "promises": [
+    "Fully Insured",
+    "Manufacturer-Backed Warranties",
+    "Code-Compliant Installations",
+    "24/7 Emergency Service"
+  ],
   "services": [
     {
       "slug": "roof-replacement",
@@ -57,8 +92,14 @@
         "Manufacturer-backed warranties"
       ],
       "faqs": [
-        { "q": "How long does a roof replacement take?", "a": "Most residential roof replacements can be completed in 1-3 days depending on the size and complexity of the roof. We'll provide an accurate timeline after our initial inspection." },
-        { "q": "What types of roofs do you install?", "a": "We install architectural shingles, designer shingles, standing seam metal, TPO, PVC, R-Panel, Mod Bit, synthetic slate, and tile roofing systems. We work with all major roofing materials." }
+        {
+          "q": "How long does a roof replacement take?",
+          "a": "Most residential roof replacements can be completed in 1-3 days depending on the size and complexity of the roof. We'll provide an accurate timeline after our initial inspection."
+        },
+        {
+          "q": "What types of roofs do you install?",
+          "a": "We install architectural shingles, designer shingles, standing seam metal, TPO, PVC, R-Panel, Mod Bit, synthetic slate, and tile roofing systems. We work with all major roofing materials."
+        }
       ]
     },
     {
@@ -73,7 +114,12 @@
         "Metal is one of the roofing systems we install most, and the two we carry are standing seam and R-Panel or PBR panel. Which one fits depends on the slope, the span and how the building is used.",
         "We inspect and document before a scope is written, so the panel, the fastening and the flashing details are decided on the roof rather than guessed at."
       ],
-      "points": ["Standing seam metal", "R-Panel and PBR panel", "Residential and commercial", "Code-compliant installations"]
+      "points": [
+        "Standing seam metal",
+        "R-Panel and PBR panel",
+        "Residential and commercial",
+        "Code-compliant installations"
+      ]
     },
     {
       "slug": "roof-repairs",
@@ -85,7 +131,12 @@
         "A small leak around flashing or a penetration rarely stays small. We find where the water is getting in, document it, and give you a scope for the fix rather than a guess.",
         "Repairs and maintenance are how a roof reaches the end of the life it was built for. Where a repair is no longer the right call, we say so."
       ],
-      "points": ["Leak repairs", "Flashing repairs", "Roof maintenance", "Residential and commercial roofs"]
+      "points": [
+        "Leak repairs",
+        "Flashing repairs",
+        "Roof maintenance",
+        "Residential and commercial roofs"
+      ]
     },
     {
       "slug": "roof-inspections",
@@ -97,7 +148,12 @@
         "We use advanced inspection technology and detailed reporting, so what comes back to you is a record of the roof's condition rather than an opinion about it.",
         "A comprehensive property evaluation is the first step on every project we take on, whether the work turns out to be a repair, a replacement or nothing at all."
       ],
-      "points": ["Comprehensive property evaluation", "Detailed condition reporting", "Advanced inspection technology", "Residential and commercial properties"]
+      "points": [
+        "Comprehensive property evaluation",
+        "Detailed condition reporting",
+        "Advanced inspection technology",
+        "Residential and commercial properties"
+      ]
     },
     {
       "slug": "exterior-solutions",
@@ -109,7 +165,12 @@
         "A roof works with everything around it. Siding, gutters, soffit and fascia all move water away from the structure, and a roof replacement is usually the moment to put them right.",
         "We take the exterior on as part of the same project, so there is one scope and one crew rather than a second contractor to chase."
       ],
-      "points": ["Siding", "Gutters", "Soffit", "Fascia"]
+      "points": [
+        "Siding",
+        "Gutters",
+        "Soffit",
+        "Fascia"
+      ]
     },
     {
       "slug": "remodels-and-additions",
@@ -121,9 +182,16 @@
         "We are a roofing and construction company, and the construction side takes on kitchen remodels, bath remodels and home additions.",
         "Planning comes first: the scope is set around how the space is actually used, so the finished room works rather than just looks finished."
       ],
-      "points": ["Kitchen remodels", "Bath remodels", "Home additions"],
+      "points": [
+        "Kitchen remodels",
+        "Bath remodels",
+        "Home additions"
+      ],
       "faqs": [
-        { "q": "Do you do construction work beyond roofing?", "a": "Yes. We also take on siding, gutters, soffit, fascia, kitchen and bath remodels, additions, wood and metal fencing, metal shops, barns, carports, and custom metal fabrication." }
+        {
+          "q": "Do you do construction work beyond roofing?",
+          "a": "Yes. We also take on siding, gutters, soffit, fascia, kitchen and bath remodels, additions, wood and metal fencing, metal shops, barns, carports, and custom metal fabrication."
+        }
       ]
     },
     {
@@ -136,7 +204,12 @@
         "We build wood and metal fencing for homes and for businesses, and we take on custom fence projects that a fence company working from a catalogue will not.",
         "Because we fabricate metal in house, a custom gate or a run that has to fit an awkward boundary is a drawing rather than a problem."
       ],
-      "points": ["Wood fencing", "Metal fencing", "Custom fence projects", "Residential and commercial"]
+      "points": [
+        "Wood fencing",
+        "Metal fencing",
+        "Custom fence projects",
+        "Residential and commercial"
+      ]
     },
     {
       "slug": "storm-damage-repair",
@@ -173,7 +246,10 @@
         "Your insurer determines coverage"
       ],
       "faqs": [
-        { "q": "Can you document storm damage for an insurance claim?", "a": "Yes, we can inspect and document roof conditions and provide a repair estimate. Your insurance company determines coverage and handles the claim." }
+        {
+          "q": "Can you document storm damage for an insurance claim?",
+          "a": "Yes, we can inspect and document roof conditions and provide a repair estimate. Your insurance company determines coverage and handles the claim."
+        }
       ]
     },
     {
@@ -186,9 +262,16 @@
         "We offer 24/7 emergency roofing repair for storm damage and urgent situations. Call (281) 925-7663 any time you need immediate assistance.",
         "If you are making the property safe yourself, avoid damaged areas and use temporary measures only when they can be completed safely. Keep receipts for emergency work."
       ],
-      "points": ["Available 24 hours a day, 7 days a week", "Storm damage response", "Urgent leak and roof repairs"],
+      "points": [
+        "Available 24 hours a day, 7 days a week",
+        "Storm damage response",
+        "Urgent leak and roof repairs"
+      ],
       "faqs": [
-        { "q": "Do you offer emergency repair services?", "a": "Yes, we offer 24/7 emergency roofing repair services for storm damage and urgent situations. Call (281) 925-ROOF any time you need immediate assistance." }
+        {
+          "q": "Do you offer emergency repair services?",
+          "a": "Yes, we offer 24/7 emergency roofing repair services for storm damage and urgent situations. Call (281) 925-ROOF any time you need immediate assistance."
+        }
       ]
     },
     {
@@ -203,7 +286,13 @@
         "On the commercial side we install TPO, PVC and Mod Bit for low-slope roofs, and R-Panel where a metal roof is the right system. Commercial property managers, industrial facilities, HOAs and developers are all regular clients.",
         "Every installation is code-compliant and manufacturer-backed, and the inspection and reporting that precede it are the same ones we run on a house."
       ],
-      "points": ["TPO single-ply", "PVC roofing", "Mod Bit", "R-Panel and PBR panel", "Commercial and industrial properties"]
+      "points": [
+        "TPO single-ply",
+        "PVC roofing",
+        "Mod Bit",
+        "R-Panel and PBR panel",
+        "Commercial and industrial properties"
+      ]
     },
     {
       "slug": "metal-buildings",
@@ -217,7 +306,12 @@
         "We put up metal shops, barns and carports for homeowners and for businesses, using the same panel systems we roof with.",
         "Because the fabrication is ours, a building that has to fit a particular footprint or carry a particular opening is a drawing rather than a special order."
       ],
-      "points": ["Metal shops", "Barns", "Carports", "Residential and commercial"]
+      "points": [
+        "Metal shops",
+        "Barns",
+        "Carports",
+        "Residential and commercial"
+      ]
     },
     {
       "slug": "metal-fabrication",
@@ -229,24 +323,47 @@
         "Custom metal fabrication is its own line of work for us, and it is what lets the fencing, the metal buildings and the trickier roof details come out right.",
         "Smaller specialty projects are welcome. Tell us what the piece has to do and where it has to fit."
       ],
-      "points": ["Custom metal fabrication", "Specialty projects", "Fencing and gate components", "Metal building components"]
+      "points": [
+        "Custom metal fabrication",
+        "Specialty projects",
+        "Fencing and gate components",
+        "Metal building components"
+      ]
     }
   ],
   "claim": {
     "title": "How a roof insurance claim works",
     "text": "A practical process for Texas property owners, from the first signs of wind or hail damage through inspection and repair planning.",
     "steps": [
-      { "title": "Make the property safe", "text": "Avoid damaged areas and use temporary measures only when they can be completed safely. Keep receipts for emergency work." },
-      { "title": "Document visible damage", "text": "Photograph the roof from the ground, exterior damage, interior leaks, and affected belongings. Note the storm date and time." },
-      { "title": "Review your policy", "text": "Check your wind and hail deductible, coverage limits, exclusions, and deadlines. Your insurer decides what the policy covers." },
-      { "title": "Notify your insurer", "text": "Report the loss promptly and keep your claim number, adjuster details, emails, estimates, and receipts together." },
-      { "title": "Schedule a roof inspection", "text": "A professional inspection can identify and document storm-related conditions so you can discuss the findings with your adjuster." }
+      {
+        "title": "Make the property safe",
+        "text": "Avoid damaged areas and use temporary measures only when they can be completed safely. Keep receipts for emergency work."
+      },
+      {
+        "title": "Document visible damage",
+        "text": "Photograph the roof from the ground, exterior damage, interior leaks, and affected belongings. Note the storm date and time."
+      },
+      {
+        "title": "Review your policy",
+        "text": "Check your wind and hail deductible, coverage limits, exclusions, and deadlines. Your insurer decides what the policy covers."
+      },
+      {
+        "title": "Notify your insurer",
+        "text": "Report the loss promptly and keep your claim number, adjuster details, emails, estimates, and receipts together."
+      },
+      {
+        "title": "Schedule a roof inspection",
+        "text": "A professional inspection can identify and document storm-related conditions so you can discuss the findings with your adjuster."
+      }
     ]
   },
   "materials": {
     "title": "Manufacturers we install",
     "text": "We hold manufacturer certifications for the roofing systems we install, and every installation is manufacturer-backed.",
-    "brands": ["GAF", "Owens Corning"]
+    "brands": [
+      "GAF",
+      "Owens Corning"
+    ]
   },
   "projects": [
     {
@@ -273,27 +390,79 @@
     "image": "/brands/cwroofingconstruction/about",
     "imageAlt": "A completed tile roof on a large two-story home",
     "values": [
-      { "title": "No shortcuts, no surprises", "text": "Anyone can install shingles. Very few operate with a defined standard. Every project follows a proven process designed to eliminate surprises." },
-      { "title": "Clear communication", "text": "No confusion. No disappearing contractors. No cut corners, from start to finish." },
-      { "title": "Quality materials", "text": "We use only premium roofing materials and proven installation techniques, backed by manufacturer warranties." }
+      {
+        "title": "No shortcuts, no surprises",
+        "text": "Anyone can install shingles. Very few operate with a defined standard. Every project follows a proven process designed to eliminate surprises."
+      },
+      {
+        "title": "Clear communication",
+        "text": "No confusion. No disappearing contractors. No cut corners, from start to finish."
+      },
+      {
+        "title": "Quality materials",
+        "text": "We use only premium roofing materials and proven installation techniques, backed by manufacturer warranties."
+      }
     ]
   },
   "inspection": {
     "title": "How a project runs",
     "steps": [
-      { "title": "Comprehensive property evaluation", "text": "We inspect and document the condition of the roof and the property rather than guess at it." },
-      { "title": "Clear, professional communication", "text": "No confusion, no disappearing contractors, no cut corners." },
-      { "title": "Transparent scope of work", "text": "A written scope, so you can see what the project includes before it starts." },
-      { "title": "Skilled installation crews", "text": "Premium materials and proven installation techniques, installed to code." },
-      { "title": "Thorough final inspection", "text": "A final inspection of the finished work before the project is closed out." }
+      {
+        "title": "Comprehensive property evaluation",
+        "text": "We inspect and document the condition of the roof and the property rather than guess at it."
+      },
+      {
+        "title": "Clear, professional communication",
+        "text": "No confusion, no disappearing contractors, no cut corners."
+      },
+      {
+        "title": "Transparent scope of work",
+        "text": "A written scope, so you can see what the project includes before it starts."
+      },
+      {
+        "title": "Skilled installation crews",
+        "text": "Premium materials and proven installation techniques, installed to code."
+      },
+      {
+        "title": "Thorough final inspection",
+        "text": "A final inspection of the finished work before the project is closed out."
+      }
     ]
   },
   "serviceArea": [
-    "Baytown", "Houston", "Mont Belvieu", "La Porte", "Kemah", "Seabrook", "Anahuac", "Dayton",
-    "Liberty", "Deer Park", "Pasadena", "Pearland", "League City", "Cove", "Beach City", "Crosby",
-    "Highlands", "Channelview", "Old River-Winfree", "Hankamer", "Wallisville", "San Leon",
-    "Dickinson", "Friendswood", "South Houston", "Galena Park", "Galveston", "Crystal Beach",
-    "Sheldon", "Winnie", "Huffman", "Lake Houston", "Beaumont"
+    "Baytown",
+    "Houston",
+    "Mont Belvieu",
+    "La Porte",
+    "Kemah",
+    "Seabrook",
+    "Anahuac",
+    "Dayton",
+    "Liberty",
+    "Deer Park",
+    "Pasadena",
+    "Pearland",
+    "League City",
+    "Cove",
+    "Beach City",
+    "Crosby",
+    "Highlands",
+    "Channelview",
+    "Old River-Winfree",
+    "Hankamer",
+    "Wallisville",
+    "San Leon",
+    "Dickinson",
+    "Friendswood",
+    "South Houston",
+    "Galena Park",
+    "Galveston",
+    "Crystal Beach",
+    "Sheldon",
+    "Winnie",
+    "Huffman",
+    "Lake Houston",
+    "Beaumont"
   ],
   "areasText": "We take on residential and commercial roofing and construction projects across Southeast Texas. The communities below are examples, not a boundary. If your location isn't listed, contact us with your project details to check availability.",
   "facts": [
@@ -310,7 +479,12 @@
     },
     {
       "heading": "Financing",
-      "items": ["Flexible financing available", "Low monthly payments", "Quick approval", "Multiple plan options"]
+      "items": [
+        "Flexible financing available",
+        "Low monthly payments",
+        "Quick approval",
+        "Multiple plan options"
+      ]
     },
     {
       "heading": "Emergency service",

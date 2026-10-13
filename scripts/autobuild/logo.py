@@ -17,8 +17,16 @@ from the ground it would sit on. A business with no logo that passes is parked
 rather than shown with a bad one.
 
 `placement` is what the brand file carries: logoWidth and logoHeight (the size
-the header draws it, in CSS px), logoRatio, and logoGround (the header color it
-sits on).
+the header draws it, in CSS px), logoRatio, logoGround (the ground the mark was
+drawn for), and logoReads (how much of the mark survives on grays from black
+to white).
+
+A logo is never boxed and never decides the page's colors. The template keeps
+its own header and footer, and the site draws the mark on whatever ground it
+lands on: in its own colors where enough of it survives there (logoReads lets
+the page work that out for any ground), and otherwise as a one-color cut of it
+(logo-mono.webp, written by `write`) painted in the ink of that spot, white on
+a dark footer and the page's own ink on a light header.
 """
 
 import numpy as np
@@ -85,8 +93,14 @@ def ground_of(arr):
     if len(opaque) < 0.5 * len(border):
         return "busy", None
     middle = np.median(opaque, axis=0)
-    near = np.sqrt(((opaque - middle) ** 2).sum(axis=1)) <= 28
+    dist = np.sqrt(((opaque - middle) ** 2).sum(axis=1))
+    near = dist <= 28
     if near.mean() >= 0.8:
+        return "solid", tuple(float(v) for v in middle)
+    # A flat ground the mark runs out to the edge of (a black roofline across
+    # a yellow square): most of the edge is the ground, and the rest is ink
+    # far from it rather than the in-between colors a photograph's edge has.
+    if near.mean() >= 0.55 and ((dist > 28) & (dist < 90)).mean() < 0.08:
         return "solid", tuple(float(v) for v in middle)
     return "busy", None
 
@@ -155,6 +169,14 @@ def _luminance(rgb):
     return 0.2126 * c[..., 0] + 0.7152 * c[..., 1] + 0.0722 * c[..., 2]
 
 
+def _outline(ink):
+    """The mark's own edge: its pixels next to anything that is not mark,
+    the edge of the picture included, so a badge cropped to its frame has
+    the frame for an outline."""
+    padded = np.pad(ink, 1, constant_values=False)
+    return (padded & _grow(~padded))[1:-1, 1:-1]
+
+
 def legibility(arr, ground):
     """The share of the mark's outline that stands out from the ground, by contrast ratio."""
     alpha = arr[..., 3].astype(np.float32) / 255
@@ -164,7 +186,7 @@ def legibility(arr, ground):
     lum = _luminance(arr[..., :3].astype(np.float32))
     g = float(_luminance(np.array(ground, dtype=np.float32)))
     stands = (np.maximum(lum, g) + 0.05) / (np.minimum(lum, g) + 0.05) >= LEGIBLE_RATIO
-    outline = ink & _grow(~ink)
+    outline = _outline(ink)
     # The better of the outline and the whole mark: a white keyline round
     # black letters reads on white by its letters.
     shares = [float(stands[ink].mean())]
@@ -198,6 +220,233 @@ def edge_sharpness(arr, ground, height):
     if span < 20:
         return 0.0
     return float(np.percentile(grad, 99.5) / span)
+
+
+# The grounds a mark is tried on: grays from black to white, evenly spaced in
+# lightness. A colored ground reads as the gray of its own lightness.
+READ_LEVELS = 11
+
+
+def _edges(arr, ground):
+    """How sharply lightness changes at each pixel of the mark drawn on `ground`."""
+    level = np.asarray(on_ground(arr, ground).convert("L"), dtype=np.float32)
+    across = np.zeros_like(level)
+    down = np.zeros_like(level)
+    across[:, 1:] = np.abs(np.diff(level, axis=1))
+    down[1:] = np.abs(np.diff(level, axis=0))
+    return np.maximum(across, down)
+
+
+def reads(arr, native):
+    """How much of the mark survives on each of READ_LEVELS gray grounds, black
+    to white: the share of the edges it shows on the ground it was drawn for
+    that it still shows there, from 0 (gone, a white name on white) to 1 (all
+    of it). The page reads this to decide, for whatever ground a logo lands on,
+    whether to draw it in its own colors or as its one-color cut."""
+    own = _edges(arr, native)
+    total = float(own.sum())
+    out = []
+    for i in range(READ_LEVELS):
+        gray = round(255 * i / (READ_LEVELS - 1))
+        there = _edges(arr, (gray, gray, gray))
+        out.append(round(float(np.minimum(own, there).sum()) / total, 3) if total else 0.0)
+    return out
+
+
+# How far, in RGB distance from the ground the mark was drawn for, a pixel has
+# to stand before it is ink in the one-color cut: under the first it is ground
+# showing through, past the second it is solid ink.
+MONO_FROM = 24.0
+MONO_FULL = 110.0
+# The share of the mark that has to survive into the one-color cut for it to
+# be worth drawing: a mark drawn in tints of its own ground has nothing to cut.
+MONO_KEEPS = 0.3
+
+
+# A mark drawn as one ink set inside another far apart from it in lightness
+# (yellow letters on a navy block, a white name across a red badge, a black elk
+# on a green square) keeps them apart in the cut: the outer ink is drawn and
+# each shape of the inner one that lies inside it is cut through, as a
+# one-color version of such a logo is drawn by hand, while a shape of the inner
+# ink outside it (a name set beside the badge) is drawn. Two inks closer than
+# this, or one of them a sliver of the mark, are drawn as one ink.
+SPLIT_RATIO = 3.0
+SPLIT_SHARE = 0.12
+
+
+# A region of the outer ink this full of its own bounds is a block (a badge, a
+# square, a bar), and what lies in its bounds lies in it, even where the inner
+# shape runs to its edge as an elk's legs run to the foot of its square.
+BLOCK_FILL = 0.45
+# Each inner shape is cut through, or drawn, whole: one that lies this much
+# inside the outer ink is cut through, so a letter is never sliced in two.
+WHOLE_INSIDE = 0.8
+# The masks are read at no more than this many pixels across.
+READ_WIDTH = 240
+
+
+def _filled(mask):
+    """The mask with every region it encloses filled in: whatever the outside
+    cannot reach through the gaps in it."""
+    outside = np.zeros_like(mask)
+    free = ~mask
+    outside[0], outside[-1], outside[:, 0], outside[:, -1] = free[0], free[-1], free[:, 0], free[:, -1]
+    count = -1
+    while True:
+        outside = _grow(outside) & free
+        now = int(outside.sum())
+        if now == count:
+            break
+        count = now
+    return ~outside
+
+
+def _regions(mask):
+    """The connected regions of a small mask, as a label per pixel (0 for none)."""
+    h, w = mask.shape
+    labels = np.zeros((h, w), dtype=np.int32)
+    parent = [0]
+
+    def root(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    for y in range(h):
+        for x in range(w):
+            if not mask[y, x]:
+                continue
+            up = labels[y - 1, x] if y else 0
+            left = labels[y, x - 1] if x else 0
+            if up and left:
+                a, b = root(up), root(left)
+                labels[y, x] = min(a, b)
+                parent[max(a, b)] = min(a, b)
+            elif up or left:
+                labels[y, x] = up or left
+            else:
+                parent.append(len(parent))
+                labels[y, x] = len(parent) - 1
+    return np.array([root(i) for i in range(len(parent))], dtype=np.int32)[labels]
+
+
+def _held(inner, outer):
+    """The shapes of the inner ink that lie inside the outer one, as a mask at
+    full size: inside a region it encloses, or inside the bounds of one of its
+    blocks."""
+    step = max(1, int(np.ceil(inner.shape[1] / READ_WIDTH)))
+    small_in, small_out = inner[::step, ::step], outer[::step, ::step]
+    within = _filled(small_out)
+    labels = _regions(small_out)
+    total = max(1, int(small_out.sum()))
+    for label in np.unique(labels[labels > 0]):
+        ys, xs = np.nonzero(labels == label)
+        if len(ys) < 0.02 * total:
+            continue
+        box = (ys.max() - ys.min() + 1) * (xs.max() - xs.min() + 1)
+        if len(ys) / box >= BLOCK_FILL:
+            within[ys.min():ys.max() + 1, xs.min():xs.max() + 1] = True
+    shapes = _regions(small_in)
+    held = np.zeros_like(small_in)
+    for label in np.unique(shapes[shapes > 0]):
+        shape = shapes == label
+        if within[shape].mean() >= WHOLE_INSIDE:
+            held |= shape
+    full = np.repeat(np.repeat(held, step, axis=0), step, axis=1)[:inner.shape[0], :inner.shape[1]]
+    # Out to the soft edge of each shape, which the reading at a coarser
+    # size can leave just outside it.
+    for _ in range(step + 1):
+        full = _grow(full)
+    return full
+
+
+def _split(level, weight):
+    """The lightness (log luminance) that best divides the mark's ink in two,
+    the light and dark means either side of it, and the share of the ink on the
+    light side: Otsu's threshold over a weighted histogram."""
+    bins = np.linspace(level.min(), level.max() + 1e-6, 65)
+    hist, _ = np.histogram(level, bins=bins, weights=weight)
+    mids = (bins[:-1] + bins[1:]) / 2
+    total = hist.sum()
+    best, cut = -1.0, mids[0]
+    for i in range(1, len(hist)):
+        w0, w1 = hist[:i].sum(), hist[i:].sum()
+        if not w0 or not w1:
+            continue
+        m0 = (hist[:i] * mids[:i]).sum() / w0
+        m1 = (hist[i:] * mids[i:]).sum() / w1
+        between = w0 * w1 * (m1 - m0) ** 2
+        if between > best:
+            best, cut = between, bins[i]
+    low, high = level < cut, level >= cut
+    m0 = np.average(level[low], weights=weight[low]) if weight[low].sum() else cut
+    m1 = np.average(level[high], weights=weight[high]) if weight[high].sum() else cut
+    return cut, m0, m1, weight[high].sum() / total
+
+
+def mono(arr, ground):
+    """The mark in one color, as white with an alpha, for a ground its own
+    colors do not read on. Each pixel is as opaque as it stands apart from the
+    ground the mark was drawn for, so a white name inside a navy badge drawn for
+    white becomes a hole in a solid badge; and a mark in two inks far apart in
+    lightness keeps only the one further from that ground, the other cut
+    through. None when too little of the mark survives the cut."""
+    rgb = arr[..., :3].astype(np.float32)
+    native = np.array(ground, dtype=np.float32)
+    dist = np.sqrt(((rgb - native) ** 2).sum(axis=-1))
+    stands = np.clip((dist - MONO_FROM) / (MONO_FULL - MONO_FROM), 0, 1)
+    alpha = arr[..., 3].astype(np.float32) / 255
+    ink = (alpha > 0.5) & (stands > 0.5)
+    if not ink.any():
+        return None
+    level = np.log(_luminance(rgb) + 0.05)
+    keep = np.ones(alpha.shape, dtype=np.float32)
+    if ink.sum() >= 60:
+        cut, m0, m1, light = _split(level[ink], (alpha * stands)[ink])
+        if np.exp(m1 - m0) >= SPLIT_RATIO and SPLIT_SHARE <= light <= 1 - SPLIT_SHARE:
+            dark, bright = ink & (level < cut), ink & (level >= cut)
+            # Each ink keeps the holes the other cuts in it: the elk through
+            # its green square and the name through the dark bar beneath.
+            # Half a stop either side of the threshold is drawn part-way, so
+            # the edge between the two inks stays as smooth as the art's.
+            # A shape that is itself cut through holds nothing: the red inside
+            # a white O on a red badge is badge, not a hole in a hole.
+            bright_in_dark, dark_in_bright = _held(bright, dark), _held(dark, bright)
+            bright_in_dark, dark_in_bright = _held(bright, dark & ~dark_in_bright), _held(dark, bright & ~bright_in_dark)
+            keep = np.where(bright_in_dark, np.clip((cut - level) / 0.5 + 0.5, 0, 1), keep)
+            keep = np.minimum(keep, np.where(dark_in_bright, np.clip((level - cut) / 0.5 + 0.5, 0, 1), 1))
+    opacity = alpha * stands * keep
+    marked = alpha > 0.5
+    if (opacity[marked] > 0.5).mean() < MONO_KEEPS * (1 if keep.min() == 1 else 0.5):
+        return None
+    out = np.full(arr.shape, 255, dtype=np.uint8)
+    out[..., 3] = np.clip(opacity * 255, 0, 255).astype(np.uint8)
+    return Image.fromarray(out, "RGBA")
+
+
+def write(mark, placement, folder, slug):
+    """Saves the mark and its one-color cut into the brand's folder and returns
+    the fields the brand file carries for them."""
+    import os
+    save(mark, os.path.join(folder, "logo.webp"))
+    fields = {"logo": f"/brands/{slug}/logo.webp"}
+    cut = mono(np.asarray(mark.convert("RGBA")), _rgb(placement["logoGround"]))
+    mono_path = os.path.join(folder, "logo-mono.webp")
+    if cut is not None:
+        save(cut, mono_path)
+        fields["logoMono"] = f"/brands/{slug}/logo-mono.webp"
+    elif os.path.exists(mono_path):
+        os.remove(mono_path)
+    for key in ("logoWidth", "logoHeight", "logoRatio", "logoGround", "logoReads", "logoName"):
+        if key in placement:
+            fields[key] = placement[key]
+    return fields
+
+
+def _rgb(value):
+    value = value.lstrip("#")
+    return tuple(int(value[i:i + 2], 16) for i in (0, 2, 4))
 
 
 def hexof(rgb):
@@ -249,10 +498,43 @@ def prepare(image):
         "logoHeight": height,
         "logoRatio": round(ratio, 3),
         "logoGround": hexof(best),
+        "logoReads": reads(np.asarray(out), best),
         "logoSharpness": round(sharp, 3),
         "logoLegible": round(best_share, 3),
     }
     return out, placement
+
+
+def rework(image):
+    """A logo already on a preview, brought up to what `prepare` makes now,
+    without refusing it: its flat ground cut away if it still carries one,
+    trimmed, and placed again. A mark on no flat ground (a badge cropped to its
+    own edge) keeps what it was drawn on."""
+    arr = _rgba(image)
+    kind, ground = ground_of(arr)
+    # A badge cropped to its own edge, or a mark on a picture, keeps what it
+    # was drawn on: there is no flat ground to take away.
+    if kind == "solid":
+        arr = cut_ground(arr, ground)
+        native = WHITE if min(ground) >= 238 else ground
+    arr = trim(arr)
+    if kind != "solid":
+        on_white, on_dark = legibility(arr, WHITE), legibility(arr, DARK_GROUND)
+        native = WHITE if on_white >= LEGIBLE_SHARE or on_white >= on_dark else DARK_GROUND
+    h, w = arr.shape[:2]
+    width, height = drawn_size(w / h)
+    out = Image.fromarray(arr, "RGBA")
+    keep = min(out.width, width * 2)
+    if keep < out.width:
+        out = out.resize((keep, max(1, round(out.height * keep / out.width))), Image.LANCZOS)
+    placement = {
+        "logoWidth": width,
+        "logoHeight": height,
+        "logoRatio": round(w / h, 3),
+        "logoGround": hexof(native),
+        "logoReads": reads(np.asarray(out), native),
+    }
+    return out, placement, kind
 
 
 def save(image, path):

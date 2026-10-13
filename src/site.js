@@ -181,16 +181,6 @@ export function luminance(hex = '#ffffff') {
 }
 
 /**
- * Whether the header is drawn dark: the logo was made for a dark or colored
- * ground (logoGround, written by the logo step of the build), so the header
- * takes that ground and its links turn light, rather than the mark sitting in
- * a box on white.
- */
-export function headDark(brand) {
-  return Boolean(brand?.logo && brand.logoGround && luminance(brand.logoGround) < 0.4);
-}
-
-/**
  * The weights display type is set in: a serif face at its regular weight, a
  * sans one bold, so a heading never reads thin at sixty pixels.
  */
@@ -207,15 +197,6 @@ export function brandVars(brand) {
   const vars = {};
   for (const [key, value] of Object.entries(brand)) {
     if (typeof value === 'string' && !['fonts', 'logo'].includes(key)) vars[`--${key}`] = value;
-  }
-  // The header's ground is the logo's own; a file without one keeps white.
-  if (brand.logo && brand.logoGround) {
-    const dark = headDark(brand);
-    vars['--head'] = brand.logoGround;
-    vars['--head-ink'] = dark ? '#ffffff' : 'var(--ink)';
-    vars['--head-soft'] = dark ? 'rgba(255,255,255,0.72)' : 'var(--muted, #5b6470)';
-    vars['--head-line'] = dark ? 'rgba(255,255,255,0.16)' : 'color-mix(in srgb, var(--ink) 10%, transparent)';
-    vars['--head-hover'] = dark ? 'rgba(255,255,255,0.78)' : 'var(--primary)';
   }
   return vars;
 }

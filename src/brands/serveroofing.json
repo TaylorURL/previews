@@ -12,8 +12,12 @@
   "rating": 5.0,
   "reviewCount": 61,
   "license": "Licensed and insured, and accredited with an A+ rating by the BBB",
-  "hours": [["Monday – Sunday", "Open 24 hours"]],
-
+  "hours": [
+    [
+      "Monday – Sunday",
+      "Open 24 hours"
+    ]
+  ],
   "brand": {
     "primary": "#15809f",
     "primaryDeep": "#0b5168",
@@ -24,9 +28,25 @@
     "body": "'Roboto', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap",
     "logo": "/brands/serveroofing/logo.webp",
-    "logoWidth": 158
+    "logoMono": "/brands/serveroofing/logo-mono.webp",
+    "logoWidth": 87,
+    "logoHeight": 74,
+    "logoRatio": 1.181,
+    "logoGround": "#14181f",
+    "logoReads": [
+      0.999,
+      0.99,
+      0.884,
+      0.776,
+      0.665,
+      0.552,
+      0.448,
+      0.344,
+      0.236,
+      0.143,
+      0.09
+    ]
   },
-
   "hero": {
     "eyebrow": "Roofing contractor in Tomball, TX",
     "title": "Roof repair, replacement",
@@ -35,14 +55,12 @@
     "image": "/brands/serveroofing/hero",
     "imageAlt": "A house part-way through a re-roof, with one slope stripped back to the decking"
   },
-
   "promises": [
     "Free roof inspections",
     "GAF factory-certified crews",
     "0% interest financing available",
     "Transferable workmanship warranty"
   ],
-
   "services": [
     {
       "slug": "roof-replacement",
@@ -318,7 +336,6 @@
       ]
     }
   ],
-
   "claim": {
     "title": "How a storm claim works",
     "text": "We help homeowners find hail and wind damage, get through the insurance process, and get the roof replaced.",
@@ -345,13 +362,16 @@
       }
     ]
   },
-
   "materials": {
     "title": "Shingles we install",
     "text": "Our crews are factory-trained by the manufacturers we install, and we offer extended manufacturer warranties on their materials.",
-    "brands": ["GAF", "CertainTeed", "Owens Corning", "Tamko"]
+    "brands": [
+      "GAF",
+      "CertainTeed",
+      "Owens Corning",
+      "Tamko"
+    ]
   },
-
   "about": {
     "title": "A Tomball crew, on Greater Houston roofs",
     "text": [
@@ -376,7 +396,6 @@
       }
     ]
   },
-
   "inspection": {
     "title": "What happens at a free inspection",
     "steps": [
@@ -394,7 +413,6 @@
       }
     ]
   },
-
   "serviceArea": [
     "Tomball",
     "Magnolia",
@@ -422,7 +440,6 @@
   "areasImageAlt": "An aerial view of a Greater Houston home with a new shingle roof",
   "contactImage": "/brands/serveroofing/contact",
   "contactImageAlt": "A close view of new black shingles on a finished roof",
-
   "facts": [
     {
       "heading": "Our warranty",

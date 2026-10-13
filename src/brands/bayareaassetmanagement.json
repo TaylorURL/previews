@@ -12,9 +12,18 @@
   "state": "TX",
   "zip": "77520",
   "hours": [
-    ["Mon – Fri", "9 AM – 4 PM"],
-    ["Saturday", "Closed"],
-    ["Sunday", "Closed"]
+    [
+      "Mon – Fri",
+      "9 AM – 4 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
   ],
   "cta": {
     "label": "Schedule a Consultation",
@@ -33,10 +42,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/bayareaassetmanagement/logo.webp",
+    "logoMono": "/brands/bayareaassetmanagement/logo-mono.webp",
     "logoWidth": 74,
     "logoHeight": 74,
     "logoRatio": 1.0,
     "logoGround": "#ffffff",
+    "logoReads": [
+      0.802,
+      0.778,
+      0.757,
+      0.741,
+      0.733,
+      0.739,
+      0.762,
+      0.804,
+      0.863,
+      0.93,
+      1.0
+    ],
     "logoName": true
   },
   "hero": {
@@ -55,7 +78,10 @@
     "title": "Comprehensive tax and bookkeeping solutions.",
     "text": "Choose a service to see what it covers, or call the office and we will point you to the right one."
   },
-  "audiences": { "individuals": "Individuals & Estates", "businesses": "Businesses" },
+  "audiences": {
+    "individuals": "Individuals & Estates",
+    "businesses": "Businesses"
+  },
   "services": [
     {
       "slug": "individual-tax",
@@ -68,9 +94,18 @@
       "image": "/brands/bayareaassetmanagement/individual-tax",
       "imageAlt": "A calculator and reading glasses resting on printed tax papers",
       "covers": [
-        { "title": "Tax preparation", "text": "Your personal return prepared for you, tailored to your own situation rather than run through a template." },
-        { "title": "Tax planning", "text": "Planning ahead of the filing deadline so your return is set up to maximize what comes back to you." },
-        { "title": "Staying compliant", "text": "Keeping your personal filings in line with the regulations that apply to them." }
+        {
+          "title": "Tax preparation",
+          "text": "Your personal return prepared for you, tailored to your own situation rather than run through a template."
+        },
+        {
+          "title": "Tax planning",
+          "text": "Planning ahead of the filing deadline so your return is set up to maximize what comes back to you."
+        },
+        {
+          "title": "Staying compliant",
+          "text": "Keeping your personal filings in line with the regulations that apply to them."
+        }
       ]
     },
     {
@@ -84,9 +119,18 @@
       "image": "/brands/bayareaassetmanagement/business-bookkeeping",
       "imageAlt": "A hand writing in a notebook beside a calculator",
       "covers": [
-        { "title": "Business tax services", "text": "Comprehensive tax work for the business, from a startup's first filing to an established company's return." },
-        { "title": "Bookkeeping", "text": "The day-to-day records kept accurate and up to date, so the numbers are there when you need them." },
-        { "title": "Financial analysis", "text": "A read on what the figures are telling you about the business, beyond keeping the books straight." }
+        {
+          "title": "Business tax services",
+          "text": "Comprehensive tax work for the business, from a startup's first filing to an established company's return."
+        },
+        {
+          "title": "Bookkeeping",
+          "text": "The day-to-day records kept accurate and up to date, so the numbers are there when you need them."
+        },
+        {
+          "title": "Financial analysis",
+          "text": "A read on what the figures are telling you about the business, beyond keeping the books straight."
+        }
       ]
     },
     {
@@ -100,9 +144,18 @@
       "image": "/brands/bayareaassetmanagement/estate-trust-planning",
       "imageAlt": "A person writing on a document with a pen",
       "covers": [
-        { "title": "Estate taxation", "text": "The tax side of an estate handled by someone who works on estates regularly." },
-        { "title": "Trust management", "text": "Specialized guidance on trusts and the taxation that comes with holding and distributing them." },
-        { "title": "Outcomes for beneficiaries", "text": "Compliance kept, with the financial outcome for the people who inherit kept in view." }
+        {
+          "title": "Estate taxation",
+          "text": "The tax side of an estate handled by someone who works on estates regularly."
+        },
+        {
+          "title": "Trust management",
+          "text": "Specialized guidance on trusts and the taxation that comes with holding and distributing them."
+        },
+        {
+          "title": "Outcomes for beneficiaries",
+          "text": "Compliance kept, with the financial outcome for the people who inherit kept in view."
+        }
       ]
     }
   ],
@@ -115,14 +168,36 @@
     "image": "/brands/bayareaassetmanagement/about",
     "imageAlt": "A calculator, reading glasses and pens laid out on a desk",
     "values": [
-      { "title": "Attention to detail", "text": "The detail in a return and in a set of books is where the firm puts its pride." },
-      { "title": "Your financial success", "text": "A commitment to the financial success of every client, not just to filing on time." },
-      { "title": "Compliance and strategy", "text": "Compliance kept and tax strategy optimized for the situation in front of us." }
+      {
+        "title": "Attention to detail",
+        "text": "The detail in a return and in a set of books is where the firm puts its pride."
+      },
+      {
+        "title": "Your financial success",
+        "text": "A commitment to the financial success of every client, not just to filing on time."
+      },
+      {
+        "title": "Compliance and strategy",
+        "text": "Compliance kept and tax strategy optimized for the situation in front of us."
+      }
     ]
   },
   "facts": [
-    { "heading": "Experience", "text": "Over 25 years of expertise handling individual, business and estate tax needs." },
-    { "heading": "Who we work with", "items": ["Individuals", "Businesses", "Estates and trusts"] },
-    { "heading": "Who you work with", "text": "Tom Badgett." }
+    {
+      "heading": "Experience",
+      "text": "Over 25 years of expertise handling individual, business and estate tax needs."
+    },
+    {
+      "heading": "Who we work with",
+      "items": [
+        "Individuals",
+        "Businesses",
+        "Estates and trusts"
+      ]
+    },
+    {
+      "heading": "Who you work with",
+      "text": "Tom Badgett."
+    }
   ]
 }

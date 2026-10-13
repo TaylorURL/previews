@@ -1,6 +1,7 @@
 /**
- * Professional services: insurance agencies, accounting firms and title
- * companies. A site of several pages, each prerendered at its own address.
+ * Professional services: insurance agencies, accounting firms, title
+ * companies, law firms, dental offices and chiropractors. A site of several
+ * pages, each prerendered at its own address.
  *
  * Pages: '' (home), 'services', 'services/<slug>' for every service line,
  * 'team' (only when the brand lists people), 'about', 'resources' (only when
@@ -11,8 +12,9 @@
  *
  *   template      "professional"
  *   preview       optional. true on a prospect's preview (shows the preview bar); left out on a sample.
- *   kind          "insurance" | "accounting" | "title". Sets the defaults below when a field is left out:
- *                 the call-to-action label (Get a Quote / Schedule a Consultation / Open a Title Order),
+ *   kind          "insurance" | "accounting" | "title" | "legal" | "dental" | "chiropractic". Sets the defaults
+ *                 below when a field is left out: the call-to-action label (Get a Quote / Schedule a Consultation /
+ *                 Open a Title Order / Request an Appointment),
  *                 the affiliations heading, and who "talk it through with" names.
  *   talk          optional. Overrides who "talk it through with" names, for a practice of one ("Matt").
  *   name          the business's full legal or trading name, as on its own site.
@@ -65,13 +67,16 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, Check, ChevronDown, Clock, ExternalLink, Mail, MapPin, Menu, Phone, Plus, X } from 'lucide-react';
 import { brandVars, displayVars, mapsHref, telHref } from '../site.js';
-import { BrandLogo, EnquiryForm, Img, Stars, Facts } from './shared.jsx';
+import { BrandLogo, EnquiryForm, Img, Stars, Facts, StudioCredit } from './shared.jsx';
 import { iconFor } from './professional/icons.js';
 
 const KIND = {
   insurance: { cta: 'Get a Quote', affiliations: 'Carriers we represent', talk: 'an agent' },
   accounting: { cta: 'Schedule a Consultation', affiliations: 'Credentials and memberships', talk: 'our team' },
   title: { cta: 'Open a Title Order', affiliations: 'Underwriters we write for', talk: 'our closing team' },
+  legal: { cta: 'Schedule a Consultation', affiliations: 'Bar admissions and memberships', talk: 'an attorney' },
+  dental: { cta: 'Request an Appointment', affiliations: 'Memberships and credentials', talk: 'our front desk' },
+  chiropractic: { cta: 'Request an Appointment', affiliations: 'Memberships and credentials', talk: 'our front desk' },
 };
 
 const wrap = 'mx-auto w-full max-w-page px-gutter';
@@ -88,6 +93,15 @@ const cardLink = 'rounded-lg border border-line bg-white transition duration-200
 
 const GRID = { 1: '', 2: 'sm:grid-cols-2', 3: 'sm:grid-cols-2 lg:grid-cols-3', 4: 'sm:grid-cols-2 xl:grid-cols-4' };
 const STEPS = { 2: 'lg:grid-cols-2', 3: 'lg:grid-cols-3', 4: 'lg:grid-cols-4', 5: 'lg:grid-cols-5' };
+
+/** The columns, up to `most`, that leave the last row of `n` cards fullest: six cards sit three and three, not four and two. */
+function columns(n, most) {
+  if (n <= most) return n;
+  const gap = (c) => (c - (n % c)) % c;
+  let best = most;
+  for (let c = most - 1; c >= 3; c--) if (gap(c) < gap(best)) best = c;
+  return best;
+}
 
 const list = (value) => (Array.isArray(value) ? value : []);
 const paras = (value) => (Array.isArray(value) ? value : value ? [value] : []);
@@ -644,7 +658,7 @@ function ServiceGrid({ groups }) {
               <span aria-hidden="true" className="h-px flex-1 bg-line" />
             </div>
           )}
-          <ul className={`grid gap-4 lg:gap-5 ${compact ? GRID[Math.min(g.items.length, 3)] : GRID[Math.min(g.items.length, 4)]}`}>
+          <ul className={`grid gap-4 lg:gap-5 ${GRID[columns(g.items.length, compact ? 3 : 4)]}`}>
             {g.items.map((s) => (
               <li key={s.slug}>
                 <ServiceCard s={s} compact={compact} />
@@ -1065,21 +1079,27 @@ function initials(name) {
 function TeamPage(props) {
   const { b } = props;
   const team = list(b.team);
+  // With no one's photo to show, the people are drawn as their names and
+  // words alone; a wall of grey boxes with initials reads as placeholders.
+  // Initials stand in only beside colleagues who do have a photo.
+  const photos = team.some((p) => p.image);
   return (
     <>
       <PageHero trail={[['/', 'Home'], [null, 'Our Team']]} eyebrow={<Eyebrow>Our team</Eyebrow>} title={`The people behind ${b.shortName}`} text={b.tagline} />
       <section className={pad}>
-        <ul className={`${wrap} grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3`}>
+        <ul className={`${wrap} grid gap-x-6 sm:grid-cols-2 lg:grid-cols-3 ${photos ? 'gap-y-12' : 'gap-y-10'}`}>
           {team.map((p) => (
-            <li key={p.name} className="min-w-0">
+            <li key={p.name} className={`min-w-0 ${photos ? '' : 'border-t-2 border-accent pt-6'}`}>
               {p.image ? (
                 <Img className="aspect-[4/5] w-full rounded-lg bg-surface object-cover object-top" src={p.image} alt={p.imageAlt || p.name} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
               ) : (
-                <span aria-hidden="true" className="grid aspect-[4/5] w-full place-items-center rounded-lg bg-surface font-heading text-6xl text-primary/70">
-                  {initials(p.name)}
-                </span>
+                photos && (
+                  <span aria-hidden="true" className="grid aspect-[4/5] w-full place-items-center rounded-lg bg-surface font-heading text-6xl text-primary/70">
+                    {initials(p.name)}
+                  </span>
+                )
               )}
-              <h2 className="mt-5 font-heading font-display-2 text-[1.35rem] leading-snug text-ink">{p.name}</h2>
+              <h2 className={`${photos ? 'mt-5' : ''} font-heading font-display-2 text-[1.35rem] leading-snug text-ink`}>{p.name}</h2>
               <p className="mt-1 text-[13px] font-bold uppercase tracking-[0.14em] text-accent">{p.role}</p>
               {p.bio && <p className="mt-3 text-base leading-[1.6] text-muted">{p.bio}</p>}
             </li>
@@ -1315,6 +1335,7 @@ function Footer({ b, nav, tel }) {
         <div className="flex flex-col gap-2 border-t border-line py-6 text-base text-muted sm:text-sm md:flex-row md:justify-between md:gap-8">
           <p>
             &copy; {new Date().getFullYear()} {b.name}
+            <StudioCredit b={b} />
           </p>
           {b.license && <p className="md:text-right">{b.license}</p>}
         </div>

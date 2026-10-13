@@ -15,7 +15,20 @@
   "license": "The Blessing Junkie, LLC",
   "rating": 4.4,
   "reviewCount": 47,
-  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "cta": {
     "label": "Schedule a Consultation",
     "text": "Tell us what you need help with and we will set up a time to go through it with you."
@@ -33,7 +46,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/libertyhillbookkeepingtax/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/libertyhillbookkeepingtax/logo-mono.webp",
+    "logoWidth": 89,
+    "logoHeight": 74,
+    "logoRatio": 1.203,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.002,
+      0.101,
+      0.199,
+      0.298,
+      0.399,
+      0.502,
+      0.6,
+      0.697,
+      0.8,
+      0.903,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Liberty Hill, Texas",
@@ -41,13 +71,20 @@
     "lead": "Whether you are a business or an individual with too much on your plate, we handle your finances, taxes and much more so you can focus on growing.",
     "image": "/brands/libertyhillbookkeepingtax/team-office",
     "imageAlt": "The Liberty Hill Bookkeeping & Tax Services team together in the office",
-    "points": ["Locally owned and operated since 2011", "Open year round, not only at tax time", "Small and medium sized business specialists"]
+    "points": [
+      "Locally owned and operated since 2011",
+      "Open year round, not only at tax time",
+      "Small and medium sized business specialists"
+    ]
   },
   "overview": {
     "title": "Payroll, bookkeeping and tax, handled by one local team.",
     "text": "Pick a service to see what it covers and what it starts at, or call and talk it through with our team."
   },
-  "audiences": { "individuals": "Individuals", "businesses": "Businesses" },
+  "audiences": {
+    "individuals": "Individuals",
+    "businesses": "Businesses"
+  },
   "services": [
     {
       "slug": "individual-tax-returns",
@@ -60,14 +97,32 @@
       "image": "/brands/libertyhillbookkeepingtax/ledger",
       "imageAlt": "A spreadsheet of figures beside a calculator and a pen",
       "covers": [
-        { "title": "Individual returns", "text": "Starting at $300 for an individual return." },
-        { "title": "Returns with a Schedule C", "text": "Starting at $500 where you are reporting self employment or sole proprietor income." },
-        { "title": "Tax extensions", "text": "A tax extension is $25." },
-        { "title": "Individual tax estimates", "text": "An individual tax estimate is $250 per return." }
+        {
+          "title": "Individual returns",
+          "text": "Starting at $300 for an individual return."
+        },
+        {
+          "title": "Returns with a Schedule C",
+          "text": "Starting at $500 where you are reporting self employment or sole proprietor income."
+        },
+        {
+          "title": "Tax extensions",
+          "text": "A tax extension is $25."
+        },
+        {
+          "title": "Individual tax estimates",
+          "text": "An individual tax estimate is $250 per return."
+        }
       ],
       "questions": [
-        { "q": "Who do I contact about an individual return?", "a": "Prices vary depending on your individual needs. Reach out to taxdepartment@lhbts.com for inquiries." },
-        { "q": "Can I send my documents before I come in?", "a": "Yes. The contact form on our site lets you upload source or tax documents ahead of time." }
+        {
+          "q": "Who do I contact about an individual return?",
+          "a": "Prices vary depending on your individual needs. Reach out to taxdepartment@lhbts.com for inquiries."
+        },
+        {
+          "q": "Can I send my documents before I come in?",
+          "a": "Yes. The contact form on our site lets you upload source or tax documents ahead of time."
+        }
       ]
     },
     {
@@ -79,10 +134,22 @@
       "text": "With our numerous years of experience, we are well versed in what is best for you, from 401(k)s and LLCs to HSAs and much more.",
       "lead": "Decisions about retirement accounts, health savings and how you hold your business all land on the same tax return, so we look at them together rather than one at a time.",
       "covers": [
-        { "title": "Retirement accounts", "text": "What a 401(k) means for you and how it sits alongside the rest of your finances." },
-        { "title": "Health savings accounts", "text": "How an HSA works and where it fits." },
-        { "title": "How you hold your business", "text": "Whether an LLC is the right structure for what you are doing." },
-        { "title": "Year round access", "text": "We are here outside of tax season, so you are not waiting until filing time to ask." }
+        {
+          "title": "Retirement accounts",
+          "text": "What a 401(k) means for you and how it sits alongside the rest of your finances."
+        },
+        {
+          "title": "Health savings accounts",
+          "text": "How an HSA works and where it fits."
+        },
+        {
+          "title": "How you hold your business",
+          "text": "Whether an LLC is the right structure for what you are doing."
+        },
+        {
+          "title": "Year round access",
+          "text": "We are here outside of tax season, so you are not waiting until filing time to ask."
+        }
       ]
     },
     {
@@ -94,8 +161,14 @@
       "text": "Notary services at our Main Street office, charged at $6 per signature.",
       "lead": "Bring the document and your identification to the office on Main Street and we will notarise it while you wait.",
       "covers": [
-        { "title": "Per signature", "text": "$6 per signature." },
-        { "title": "At the office", "text": "Handled at 925 Main Street during our open hours, Monday to Friday, 9 AM to 5 PM." }
+        {
+          "title": "Per signature",
+          "text": "$6 per signature."
+        },
+        {
+          "title": "At the office",
+          "text": "Handled at 925 Main Street during our open hours, Monday to Friday, 9 AM to 5 PM."
+        }
       ]
     },
     {
@@ -109,11 +182,26 @@
       "image": "/brands/libertyhillbookkeepingtax/office",
       "imageAlt": "The Liberty Hill Bookkeeping & Tax Services storefront on Main Street",
       "covers": [
-        { "title": "On your schedule", "text": "Weekly, monthly or quarterly, whatever your business needs." },
-        { "title": "Accounts reconciled", "text": "All business bank accounts, loans, HUDs and assets posted and reconciled." },
-        { "title": "A monthly statement", "text": "At the end of every month we provide you with a profit and loss statement." },
-        { "title": "What we watch for", "text": "Write offs, distributions and fraudulent charges as we work through the books." },
-        { "title": "Rate", "text": "$100 per hour." }
+        {
+          "title": "On your schedule",
+          "text": "Weekly, monthly or quarterly, whatever your business needs."
+        },
+        {
+          "title": "Accounts reconciled",
+          "text": "All business bank accounts, loans, HUDs and assets posted and reconciled."
+        },
+        {
+          "title": "A monthly statement",
+          "text": "At the end of every month we provide you with a profit and loss statement."
+        },
+        {
+          "title": "What we watch for",
+          "text": "Write offs, distributions and fraudulent charges as we work through the books."
+        },
+        {
+          "title": "Rate",
+          "text": "$100 per hour."
+        }
       ]
     },
     {
@@ -125,11 +213,26 @@
       "text": "No matter your company's size, we run your payroll, pay in your federal and state taxes and handle contributions such as a 401(k).",
       "lead": "Payroll is run for companies of any size, with the federal and state tax paid in on your behalf and the quarterly and annual reports filed when they fall due.",
       "covers": [
-        { "title": "Running payroll", "text": "Starting at $100 a month, with prices varying depending on company size." },
-        { "title": "Quarterly reports", "text": "941 reports are $50 per quarter and TWC reports are $50 per quarter." },
-        { "title": "Annual reports", "text": "940 reports are $75 per year." },
-        { "title": "W-2s, W-3s and 1099s", "text": "An $80 fee plus $5 each." },
-        { "title": "Contributions", "text": "Contributions such as a 401(k) handled as part of the payroll run." }
+        {
+          "title": "Running payroll",
+          "text": "Starting at $100 a month, with prices varying depending on company size."
+        },
+        {
+          "title": "Quarterly reports",
+          "text": "941 reports are $50 per quarter and TWC reports are $50 per quarter."
+        },
+        {
+          "title": "Annual reports",
+          "text": "940 reports are $75 per year."
+        },
+        {
+          "title": "W-2s, W-3s and 1099s",
+          "text": "An $80 fee plus $5 each."
+        },
+        {
+          "title": "Contributions",
+          "text": "Contributions such as a 401(k) handled as part of the payroll run."
+        }
       ]
     },
     {
@@ -141,10 +244,22 @@
       "text": "Our team of tax specialists can handle it all. 1040s, 1120s, 1099s, you name it, we have you covered, and we use our expertise to get you the best possible scenario.",
       "lead": "With the help of our small business tax professionals you get insight into your business's financial status and how it can become more tax efficient, working closely with your tax professional and account executive to decide which actions are best for your business.",
       "covers": [
-        { "title": "Corporate returns", "text": "Starting at $1,000 per return. Please request a quote." },
-        { "title": "Corporate tax estimates", "text": "Starting at $350 per return." },
-        { "title": "The forms", "text": "1040s, 1120s, 1099s and the rest of what a business files." },
-        { "title": "A department of its own", "text": "Corporate tax is run as its own department under Emi McFeron." }
+        {
+          "title": "Corporate returns",
+          "text": "Starting at $1,000 per return. Please request a quote."
+        },
+        {
+          "title": "Corporate tax estimates",
+          "text": "Starting at $350 per return."
+        },
+        {
+          "title": "The forms",
+          "text": "1040s, 1120s, 1099s and the rest of what a business files."
+        },
+        {
+          "title": "A department of its own",
+          "text": "Corporate tax is run as its own department under Emi McFeron."
+        }
       ]
     },
     {
@@ -156,10 +271,22 @@
       "text": "We will happily apply for your sales tax and use certificate, file your sales tax and use reports to the Texas Comptroller, and pay in the tax owed on your behalf.",
       "lead": "From the certificate through to the filing and the payment, sales tax and use is handled end to end so nothing is missed against a Comptroller deadline.",
       "covers": [
-        { "title": "The certificate", "text": "We apply for your sales tax and use certificate." },
-        { "title": "The filing", "text": "Reports filed to the Texas Comptroller." },
-        { "title": "The payment", "text": "We pay in the tax owed on your behalf." },
-        { "title": "Rate", "text": "$50 per return." }
+        {
+          "title": "The certificate",
+          "text": "We apply for your sales tax and use certificate."
+        },
+        {
+          "title": "The filing",
+          "text": "Reports filed to the Texas Comptroller."
+        },
+        {
+          "title": "The payment",
+          "text": "We pay in the tax owed on your behalf."
+        },
+        {
+          "title": "Rate",
+          "text": "$50 per return."
+        }
       ]
     },
     {
@@ -171,9 +298,18 @@
       "text": "They are due annually. We file your business's Texas Franchise Return with the Texas Comptroller.",
       "lead": "The Texas Franchise Return comes around every year, and we file yours with the Texas Comptroller on the short or long form, whichever your business needs.",
       "covers": [
-        { "title": "Short form", "text": "$100 per return." },
-        { "title": "Long form", "text": "$150 per return." },
-        { "title": "Extension", "text": "$25 per extension." }
+        {
+          "title": "Short form",
+          "text": "$100 per return."
+        },
+        {
+          "title": "Long form",
+          "text": "$150 per return."
+        },
+        {
+          "title": "Extension",
+          "text": "$25 per extension."
+        }
       ]
     },
     {
@@ -185,10 +321,22 @@
       "text": "Protect yourself by setting up an LLC. We take care of setting it up with the state, obtaining an Employer Identification Number and providing you with a complete Company Agreement.",
       "lead": "Setting up an LLC is handled as one piece of work, from the filing with the state through to the paperwork you keep, so you are not chasing three separate things at once.",
       "covers": [
-        { "title": "Filed with the state", "text": "We set up your LLC with the state of Texas." },
-        { "title": "Employer Identification Number", "text": "We obtain the EIN for the new entity." },
-        { "title": "Company Agreement", "text": "You are provided with a complete Company Agreement." },
-        { "title": "Price", "text": "$1,250, which includes the mandatory BOI Report. $1,300 with a DBA." }
+        {
+          "title": "Filed with the state",
+          "text": "We set up your LLC with the state of Texas."
+        },
+        {
+          "title": "Employer Identification Number",
+          "text": "We obtain the EIN for the new entity."
+        },
+        {
+          "title": "Company Agreement",
+          "text": "You are provided with a complete Company Agreement."
+        },
+        {
+          "title": "Price",
+          "text": "$1,250, which includes the mandatory BOI Report. $1,300 with a DBA."
+        }
       ]
     },
     {
@@ -200,13 +348,28 @@
       "text": "Need to add or remove a member from your LLC, change your address, update your entity type or change your name? Whatever changes you need to make to your LLC, we can do it.",
       "lead": "An LLC rarely stays exactly as it was filed. Members come and go, addresses move and names change, and each of those is a filing somebody has to make.",
       "covers": [
-        { "title": "Members", "text": "Adding or removing a member from the LLC." },
-        { "title": "Address", "text": "Changing the address the state holds for the entity." },
-        { "title": "Entity type", "text": "Updating the entity type." },
-        { "title": "Name", "text": "Changing the name of the company." }
+        {
+          "title": "Members",
+          "text": "Adding or removing a member from the LLC."
+        },
+        {
+          "title": "Address",
+          "text": "Changing the address the state holds for the entity."
+        },
+        {
+          "title": "Entity type",
+          "text": "Updating the entity type."
+        },
+        {
+          "title": "Name",
+          "text": "Changing the name of the company."
+        }
       ],
       "questions": [
-        { "q": "What does a change cost?", "a": "Prices vary depending on what you may need. Please reach out to sidney@lhbts.com for a detailed estimate." }
+        {
+          "q": "What does a change cost?",
+          "a": "Prices vary depending on what you may need. Please reach out to sidney@lhbts.com for a detailed estimate."
+        }
       ]
     },
     {
@@ -218,9 +381,18 @@
       "text": "We are happy to reinstate or dissolve your entity, whichever your situation calls for.",
       "lead": "Whether the entity needs bringing back into good standing or closing down properly, the filings are handled for you.",
       "covers": [
-        { "title": "Reinstatement", "text": "Starting at $600." },
-        { "title": "Dissolution", "text": "Starting at $600." },
-        { "title": "What moves the price", "text": "Prices vary depending on what needs to be done to get your business in good standing." }
+        {
+          "title": "Reinstatement",
+          "text": "Starting at $600."
+        },
+        {
+          "title": "Dissolution",
+          "text": "Starting at $600."
+        },
+        {
+          "title": "What moves the price",
+          "text": "Prices vary depending on what needs to be done to get your business in good standing."
+        }
       ]
     },
     {
@@ -232,9 +404,18 @@
       "text": "Did you know you are required to have a registered agent? We receive all correspondence on your behalf and notify you of any significant notices.",
       "lead": "Texas requires every entity to name a registered agent. We act as yours, take in the correspondence and tell you when something significant arrives.",
       "covers": [
-        { "title": "Set up", "text": "$126 to set up." },
-        { "title": "Annual renewal", "text": "$50 a year." },
-        { "title": "Your correspondence", "text": "We receive all correspondence on your behalf and notify you of anything significant." }
+        {
+          "title": "Set up",
+          "text": "$126 to set up."
+        },
+        {
+          "title": "Annual renewal",
+          "text": "$50 a year."
+        },
+        {
+          "title": "Your correspondence",
+          "text": "We receive all correspondence on your behalf and notify you of anything significant."
+        }
       ]
     },
     {
@@ -246,9 +427,18 @@
       "text": "Based on your business's current standing, our professionals advise, provide information and give you insight and recommendations to help you reach your goals.",
       "lead": "Our small business experts can handle anything you can throw at us, and if it is something we have not seen before, we are going to figure it out.",
       "covers": [
-        { "title": "Where you stand", "text": "The conversation starts from your business's current standing rather than a template." },
-        { "title": "Insight and recommendations", "text": "Information, insight and recommendations aimed at the goals you have set." },
-        { "title": "Rate", "text": "$100 per hour." }
+        {
+          "title": "Where you stand",
+          "text": "The conversation starts from your business's current standing rather than a template."
+        },
+        {
+          "title": "Insight and recommendations",
+          "text": "Information, insight and recommendations aimed at the goals you have set."
+        },
+        {
+          "title": "Rate",
+          "text": "$100 per hour."
+        }
       ]
     }
   ],
@@ -263,10 +453,22 @@
     "image": "/brands/libertyhillbookkeepingtax/liberty-hill",
     "imageAlt": "The Welcome to Liberty Hill, Texas mural",
     "values": [
-      { "title": "Accuracy Guarantee", "text": "We commit 110% to each and every client. We aim for accuracy on your taxes, bookkeeping and payroll." },
-      { "title": "Grow Your Bottom Line", "text": "Our tax professionals help grow your bottom line by identifying every available credit and deduction, while ensuring accuracy in expense reporting." },
-      { "title": "Specialized in Small Business", "text": "Our small business experts can handle anything you can throw at us. If it is something we have not seen before, we are going to figure it out." },
-      { "title": "Year-Round Help", "text": "We are available year round so you can focus on your business's future. We are here and ready to help with whatever needs you may have." }
+      {
+        "title": "Accuracy Guarantee",
+        "text": "We commit 110% to each and every client. We aim for accuracy on your taxes, bookkeeping and payroll."
+      },
+      {
+        "title": "Grow Your Bottom Line",
+        "text": "Our tax professionals help grow your bottom line by identifying every available credit and deduction, while ensuring accuracy in expense reporting."
+      },
+      {
+        "title": "Specialized in Small Business",
+        "text": "Our small business experts can handle anything you can throw at us. If it is something we have not seen before, we are going to figure it out."
+      },
+      {
+        "title": "Year-Round Help",
+        "text": "We are available year round so you can focus on your business's future. We are here and ready to help with whatever needs you may have."
+      }
     ]
   },
   "team": [
@@ -417,5 +619,7 @@
       "text": "9 AM to 5 PM, Monday to Friday. Holidays may affect these hours."
     }
   ],
-  "serviceArea": ["Liberty Hill"]
+  "serviceArea": [
+    "Liberty Hill"
+  ]
 }

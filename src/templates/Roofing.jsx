@@ -133,7 +133,7 @@ import {
   X,
 } from 'lucide-react';
 import { brandVars, displayVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { BrandLogo, EnquiryForm, Img, Stars, Facts } from './shared.jsx';
+import { BrandLogo, EnquiryForm, Img, Stars, Facts, StudioCredit } from './shared.jsx';
 import { onColor, townId } from './roofing/color.js';
 
 const GROUPS = [
@@ -1232,6 +1232,7 @@ function Footer({ b, tel }) {
       <div className={wrap}>
         <p className="border-t border-white/10 py-6 text-[14px] text-white/50">
           &copy; {new Date().getFullYear()} {b.name}
+          <StudioCredit b={b} />
         </p>
       </div>
     </footer>
@@ -1368,12 +1369,11 @@ function ServicePage({ b, tel, s }) {
                 <h2 className={`${h3} mb-5 text-[26px]`}>What&apos;s included</h2>
                 <ul className="grid gap-px border-2 border-ink bg-ink sm:grid-cols-2">
                   {list(s.points).map((p) => (
-                    <li key={p} className="flex items-start gap-3 bg-white p-5 text-[16px] font-medium leading-snug">
+                    <li key={p} className="flex items-start gap-3 bg-white p-5 text-[16px] font-medium leading-snug sm:last:odd:col-span-2">
                       <Check size={20} strokeWidth={3} className="mt-0.5 flex-none text-primary" aria-hidden="true" />
                       {p}
                     </li>
                   ))}
-                  {list(s.points).length % 2 === 1 && <li className="hidden bg-white sm:block" aria-hidden="true" />}
                 </ul>
               </div>
             )}

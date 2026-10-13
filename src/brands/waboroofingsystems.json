@@ -14,8 +14,14 @@
   "since": 2016,
   "license": "Fully licensed, insured and bonded. A+ rated accredited company with the Better Business Bureau.",
   "hours": [
-    ["Mon – Sat", "9 AM – 5 PM"],
-    ["Sun", "Closed"]
+    [
+      "Mon – Sat",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Sun",
+      "Closed"
+    ]
   ],
   "brand": {
     "primary": "#4f7d22",
@@ -27,10 +33,24 @@
     "body": "'Roboto', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap",
     "logo": "/brands/waboroofingsystems/logo.webp",
+    "logoMono": "/brands/waboroofingsystems/logo-mono.webp",
     "logoWidth": 158,
     "logoHeight": 58,
-    "logoRatio": 2.718,
-    "logoGround": "#ffffff"
+    "logoRatio": 2.724,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.99,
+      0.918,
+      0.799,
+      0.662,
+      0.46,
+      0.25,
+      0.221,
+      0.33,
+      0.544,
+      0.777,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Roofing contractor in Webster, TX",
@@ -258,7 +278,10 @@
   "materials": {
     "title": "Shingles we install",
     "text": "WABO Roofing is a GAF Master Elite Contractor and a Master Shingle Applicator through CertainTeed.",
-    "brands": ["GAF", "CertainTeed"]
+    "brands": [
+      "GAF",
+      "CertainTeed"
+    ]
   },
   "about": {
     "title": "Know More About Your Most Trusted TX Home Improvement Contractor",

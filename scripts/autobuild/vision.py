@@ -165,9 +165,9 @@ LOGO_PROMPT = (
     "tagline, a slogan, a trademark sign or a license number, is meant to be small at header size: it fails only "
     "when it is blurry or pixelated at twice the size, never for being small or thin. A logo whose own background "
     "is the same color as the ground around it is not in a box. problems: a few plain words for each, empty when ok. "
-    "has_name: true only when the business's name is written out in the logo large enough to read in the first "
-    "picture; false when the logo is a symbol, a picture or initials alone, or when its name is too small to read "
-    "there (the site then sets the name in type beside it)."
+    "has_name: true when the logo has words in it, the business's name or any part of it, however small; false only "
+    "when the logo is a symbol or a picture with no words at all (the site then sets the name in type beside it, "
+    "so a mark that already carries its name would show it twice)."
 )
 
 LOGO_SCHEMA = {

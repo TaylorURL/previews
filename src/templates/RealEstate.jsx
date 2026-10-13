@@ -21,7 +21,7 @@ import {
   X,
 } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { EnquiryForm, Img, Stars, Facts } from './shared.jsx';
+import { BrandLogo, EnquiryForm, Img, Stars, Facts, hexOr, mixHex, StudioCredit } from './shared.jsx';
 
 const U = 'https://images.unsplash.com/';
 const SAMPLE_LISTINGS = [
@@ -66,19 +66,17 @@ function Eyebrow({ children, dark = false }) {
   );
 }
 
-/** The logo sized by height, so square, wide and stacked marks all sit the same in the bar. */
-function BrandMark({ b, className = '' }) {
-  if (b.brand.logo) {
-    return (
-      <img
-        className={`block h-auto w-auto ${className}`}
-        src={b.brand.logo}
-        alt={b.name}
-        style={{ maxWidth: `min(${b.brand.logoWidth || 220}px, 100%)` }}
-      />
-    );
-  }
-  return <span className="block font-heading text-xl font-semibold leading-tight text-white sm:text-2xl">{b.shortName}</span>;
+/** The logo on the brand-colored bar, or on the deeper footer. */
+function BrandMark({ b, className = '', footer = false }) {
+  const primary = hexOr(b.brand.primary, '#1f3b33');
+  return (
+    <BrandLogo
+      b={b}
+      ground={footer ? mixHex(primary, '#000000', 0.22) : primary}
+      className={className}
+      textClass="text-xl font-semibold text-white sm:text-2xl"
+    />
+  );
 }
 
 export default function RealEstate({ b }) {
@@ -138,7 +136,7 @@ export default function RealEstate({ b }) {
       <header className={`sticky ${b.preview ? 'top-11' : 'top-0'} z-40 border-b border-white/10 bg-primary text-white`}>
         <div className={`${wrap} flex h-[72px] items-center gap-4 lg:h-20 lg:gap-8`}>
           <a href="#top" className="flex min-h-12 min-w-0 max-w-[58vw] items-center no-underline sm:max-w-[260px]" aria-label={`${b.name} home`}>
-            <BrandMark b={b} className="max-h-11 lg:max-h-[52px]" />
+            <BrandMark b={b} className="max-h-[52px] lg:max-h-[60px]" />
           </a>
           <nav aria-label="Main" className="ml-auto hidden items-center gap-6 lg:flex xl:gap-8">
             {nav.map(([href, label]) => (
@@ -583,7 +581,7 @@ export default function RealEstate({ b }) {
         <div className={`${wrap} grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1.2fr_1.3fr] lg:gap-12`}>
           <div className="min-w-0">
             <a href="#top" className="inline-flex max-w-[240px] no-underline" aria-label={`${b.name} home`}>
-              <BrandMark b={b} className="max-h-14" />
+              <BrandMark b={b} footer />
             </a>
             {b.strapline && <p className="mt-5 font-semibold text-white">{b.strapline}</p>}
             <p className="mt-2 leading-relaxed">
@@ -638,6 +636,7 @@ export default function RealEstate({ b }) {
             <p>
               &copy; {new Date().getFullYear()} {b.name}
               {b.mlsId ? ` · MLS ID #${b.mlsId}` : ''}
+              <StudioCredit b={b} />
             </p>
             <p>Equal Housing Opportunity</p>
           </div>

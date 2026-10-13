@@ -11,7 +11,20 @@
   "zip": "77546",
   "rating": 5.0,
   "reviewCount": 409,
-  "hours": [["Mon – Fri", "Open 24 hours"], ["Saturday", "8 AM – 2 PM"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "Open 24 hours"
+    ],
+    [
+      "Saturday",
+      "8 AM – 2 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "brand": {
     "primary": "#0d2989",
     "primaryDeep": "#0b1738",
@@ -22,7 +35,24 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,600;0,700;0,800;1,800&family=Inter:wght@400;500;600;700&display=swap",
     "logo": "/brands/texasbestplumbing/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/texasbestplumbing/logo-mono.webp",
+    "logoWidth": 110,
+    "logoHeight": 58,
+    "logoRatio": 1.897,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.881,
+      0.88,
+      0.887,
+      0.898,
+      0.912,
+      0.926,
+      0.94,
+      0.954,
+      0.969,
+      0.985,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Friendswood plumbers",
@@ -32,29 +62,91 @@
     "image": "/brands/texasbestplumbing/truck",
     "imageAlt": "A Texas Best Plumbing service van parked in a Friendswood driveway"
   },
-  "promises": ["Locally Owned And Operated", "Emergency Service Available", "Licensed And Certified", "Upfront, Honest Pricing"],
+  "promises": [
+    "Locally Owned And Operated",
+    "Emergency Service Available",
+    "Licensed And Certified",
+    "Upfront, Honest Pricing"
+  ],
   "services": [
-    { "title": "Whole House Repiping", "icon": "wrench", "text": "Precise whole-house repiping with trusted, high-quality parts and components." },
-    { "title": "Water Heaters", "icon": "flame", "text": "Repairs and replacements, handled on time and at an outstanding value." },
-    { "title": "Drain Cleaning", "icon": "droplets", "text": "Kitchen, bath and main line drains cleared, big problems or small." },
-    { "title": "Sewer Drain Cleaning", "icon": "waves", "text": "Sewer drains cleaned with industry-leading tools and methods." },
-    { "title": "Sewer Repair", "icon": "construction", "text": "Sewer line repair and re-routes, with minimal disruption to your home." },
-    { "title": "Leak Detection And Repair", "icon": "search", "text": "Electronic leak detection finds the water leak before anything opens up." },
-    { "title": "Gas Lines", "icon": "gauge", "text": "Gas line replacement and repair by licensed, certified plumbers." },
-    { "title": "Sump Pumps", "icon": "zap", "text": "Sump pump repair and replacement, so the water goes where it should." },
-    { "title": "Kitchen Faucets", "icon": "filter", "text": "Faucets repaired or replaced, fitted properly the first time." },
-    { "title": "Garbage Disposals", "icon": "cog", "text": "Jammed, leaking or worn out disposals repaired or replaced." },
-    { "title": "Showers And Tubs", "icon": "shower", "text": "Showers and tubs plumbed and repaired to a high standard of craftsmanship." },
-    { "title": "Commercial Plumbing", "icon": "building", "text": "On time and efficient, because time your business spends closed is money lost." }
+    {
+      "title": "Whole House Repiping",
+      "icon": "wrench",
+      "text": "Precise whole-house repiping with trusted, high-quality parts and components."
+    },
+    {
+      "title": "Water Heaters",
+      "icon": "flame",
+      "text": "Repairs and replacements, handled on time and at an outstanding value."
+    },
+    {
+      "title": "Drain Cleaning",
+      "icon": "droplets",
+      "text": "Kitchen, bath and main line drains cleared, big problems or small."
+    },
+    {
+      "title": "Sewer Drain Cleaning",
+      "icon": "waves",
+      "text": "Sewer drains cleaned with industry-leading tools and methods."
+    },
+    {
+      "title": "Sewer Repair",
+      "icon": "construction",
+      "text": "Sewer line repair and re-routes, with minimal disruption to your home."
+    },
+    {
+      "title": "Leak Detection And Repair",
+      "icon": "search",
+      "text": "Electronic leak detection finds the water leak before anything opens up."
+    },
+    {
+      "title": "Gas Lines",
+      "icon": "gauge",
+      "text": "Gas line replacement and repair by licensed, certified plumbers."
+    },
+    {
+      "title": "Sump Pumps",
+      "icon": "zap",
+      "text": "Sump pump repair and replacement, so the water goes where it should."
+    },
+    {
+      "title": "Kitchen Faucets",
+      "icon": "filter",
+      "text": "Faucets repaired or replaced, fitted properly the first time."
+    },
+    {
+      "title": "Garbage Disposals",
+      "icon": "cog",
+      "text": "Jammed, leaking or worn out disposals repaired or replaced."
+    },
+    {
+      "title": "Showers And Tubs",
+      "icon": "shower",
+      "text": "Showers and tubs plumbed and repaired to a high standard of craftsmanship."
+    },
+    {
+      "title": "Commercial Plumbing",
+      "icon": "building",
+      "text": "On time and efficient, because time your business spends closed is money lost."
+    }
   ],
   "crew": {
     "eyebrow": "Why choose Texas Best Plumbing",
     "title": "A family business, more than 20 years in.",
     "text": "We are a family business with years of certified experience. Our team has been providing expert quality and certified service in the Greater Houston area with more than 20 years experience, and we strive to build long-term relationships with our clients.",
     "points": [
-      { "title": "Licensed, certified plumbers", "text": "Fully licensed and certified, with years of hands-on experience and current on the latest techniques." },
-      { "title": "Upfront, honest pricing", "text": "Clear, detailed pricing before we begin any work. What we quote is what you pay." },
-      { "title": "Quality workmanship", "text": "We never cut corners and only use trusted, high-quality parts. We do not rush, because we care about doing the job right." }
+      {
+        "title": "Licensed, certified plumbers",
+        "text": "Fully licensed and certified, with years of hands-on experience and current on the latest techniques."
+      },
+      {
+        "title": "Upfront, honest pricing",
+        "text": "Clear, detailed pricing before we begin any work. What we quote is what you pay."
+      },
+      {
+        "title": "Quality workmanship",
+        "text": "We never cut corners and only use trusted, high-quality parts. We do not rush, because we care about doing the job right."
+      }
     ],
     "image": "/brands/texasbestplumbing/fixtures",
     "imageAlt": "A chrome tub faucet and fittings"
@@ -65,22 +157,112 @@
     "image": "/brands/texasbestplumbing/neighborhood",
     "imageAlt": "A suburban Texas neighborhood of houses seen from above"
   },
-  "serviceArea": ["Friendswood", "League City", "Alvin", "Clear Lake", "Houston", "Kemah", "La Porte", "Nassau Bay", "Pasadena", "Pearland", "Santa Fe", "Seabrook", "South Houston", "Texas City", "Webster", "Deer Park"],
+  "serviceArea": [
+    "Friendswood",
+    "League City",
+    "Alvin",
+    "Clear Lake",
+    "Houston",
+    "Kemah",
+    "La Porte",
+    "Nassau Bay",
+    "Pasadena",
+    "Pearland",
+    "Santa Fe",
+    "Seabrook",
+    "South Houston",
+    "Texas City",
+    "Webster",
+    "Deer Park"
+  ],
   "reviews": [
-    { "author": "Mary Arce", "text": "Chris was very professional and took care of our plumbing issues immediately! We had a backed up bathtub and sink and he took care of them both for a very reasonable price. I was very pleased and I highly recommend Texas Best Plumbing and Services LLC for your plumbing needs." },
-    { "author": "Jenny Knotts", "text": "Chris is wonderful! We came home from vacation and had water leaking into the bathroom. Chris already had a busy schedule, but worked us in to make sure we were taken care of quickly to prevent any more damage. He was very friendly and took time to explain what he was doing." },
-    { "author": "Cliff McCarra", "text": "A huge shout out to Chris and Texas Best Plumbing. I called late on a Friday with an emergency - Grandma's 90th birthday party and a houseful of guests with a backed up kitchen sink. Chris came out and quickly cleared the line and put our kitchen back in business." }
+    {
+      "author": "Mary Arce",
+      "text": "Chris was very professional and took care of our plumbing issues immediately! We had a backed up bathtub and sink and he took care of them both for a very reasonable price. I was very pleased and I highly recommend Texas Best Plumbing and Services LLC for your plumbing needs."
+    },
+    {
+      "author": "Jenny Knotts",
+      "text": "Chris is wonderful! We came home from vacation and had water leaking into the bathroom. Chris already had a busy schedule, but worked us in to make sure we were taken care of quickly to prevent any more damage. He was very friendly and took time to explain what he was doing."
+    },
+    {
+      "author": "Cliff McCarra",
+      "text": "A huge shout out to Chris and Texas Best Plumbing. I called late on a Friday with an emergency - Grandma's 90th birthday party and a houseful of guests with a backed up kitchen sink. Chris came out and quickly cleared the line and put our kitchen back in business."
+    }
   ],
   "facts": [
-    {"heading": "Owner and master plumber", "text": "Chris Miller, business owner and master plumber, founded Texas Best Plumbing in 2015. He brings more than 30 years of plumbing experience across Southeast Texas and the Greater Houston area."},
-    {"heading": "License", "text": "Texas plumbing license RMP38921."},
-    {"heading": "Coupons", "text": "Limit one coupon per service request. Show the coupon or your submission email at the appointment.", "items": ["$30 off any service for new customers, $100 service minimum", "$95 drain special with an approved cleanout", "$100 off a new water heater installed", "$200 off a whole house repipe"]},
-    {"heading": "Financing", "text": "Financing is available through Synchrony."},
-    {"heading": "Drains we clear", "items": ["Kitchen and bathroom sinks", "Shower and tub drains", "Laundry drains", "Floor drains", "Exterior and roof drains", "Pool drains", "Grease stoppages", "Sewer line drains"]},
-    {"heading": "More of what we do", "items": ["Tankless water heaters", "Water heaters connected to gas or electric, with permits and inspections arranged for you", "Gas leak location and repair, city or state permits handled, and gas leak monitors installed", "Video sewer inspections, sewer cleaning, and conventional trenched sewer replacement", "Drywall patching, texture and painting after a repipe or sewer repair", "Shower and tub repair for free-standing, drop-in, alcove and corner tubs"]},
-    {"heading": "Our work", "text": "Our work is guaranteed. Plumbers arrive on time, in uniform and wearing a badge, and serve residential and light commercial properties."},
-    {"heading": "Community partners and accreditations", "items": ["Friendswood Chamber of Commerce", "League City Chamber of Commerce", "Better Business Bureau", "Expertise.com", "Nextdoor"]},
-    {"heading": "Request an appointment", "text": "Request service online at texasbestplumbing.com/request-an-appointment or call (713) 429-5454."},
-    {"heading": "Follow along", "items": ["Facebook", "YouTube", "Yelp", "Angi", "Nextdoor"]}
+    {
+      "heading": "Owner and master plumber",
+      "text": "Chris Miller, business owner and master plumber, founded Texas Best Plumbing in 2015. He brings more than 30 years of plumbing experience across Southeast Texas and the Greater Houston area."
+    },
+    {
+      "heading": "License",
+      "text": "Texas plumbing license RMP38921."
+    },
+    {
+      "heading": "Coupons",
+      "text": "Limit one coupon per service request. Show the coupon or your submission email at the appointment.",
+      "items": [
+        "$30 off any service for new customers, $100 service minimum",
+        "$95 drain special with an approved cleanout",
+        "$100 off a new water heater installed",
+        "$200 off a whole house repipe"
+      ]
+    },
+    {
+      "heading": "Financing",
+      "text": "Financing is available through Synchrony."
+    },
+    {
+      "heading": "Drains we clear",
+      "items": [
+        "Kitchen and bathroom sinks",
+        "Shower and tub drains",
+        "Laundry drains",
+        "Floor drains",
+        "Exterior and roof drains",
+        "Pool drains",
+        "Grease stoppages",
+        "Sewer line drains"
+      ]
+    },
+    {
+      "heading": "More of what we do",
+      "items": [
+        "Tankless water heaters",
+        "Water heaters connected to gas or electric, with permits and inspections arranged for you",
+        "Gas leak location and repair, city or state permits handled, and gas leak monitors installed",
+        "Video sewer inspections, sewer cleaning, and conventional trenched sewer replacement",
+        "Drywall patching, texture and painting after a repipe or sewer repair",
+        "Shower and tub repair for free-standing, drop-in, alcove and corner tubs"
+      ]
+    },
+    {
+      "heading": "Our work",
+      "text": "Our work is guaranteed. Plumbers arrive on time, in uniform and wearing a badge, and serve residential and light commercial properties."
+    },
+    {
+      "heading": "Community partners and accreditations",
+      "items": [
+        "Friendswood Chamber of Commerce",
+        "League City Chamber of Commerce",
+        "Better Business Bureau",
+        "Expertise.com",
+        "Nextdoor"
+      ]
+    },
+    {
+      "heading": "Request an appointment",
+      "text": "Request service online at texasbestplumbing.com/request-an-appointment or call (713) 429-5454."
+    },
+    {
+      "heading": "Follow along",
+      "items": [
+        "Facebook",
+        "YouTube",
+        "Yelp",
+        "Angi",
+        "Nextdoor"
+      ]
+    }
   ]
 }

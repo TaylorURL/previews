@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { headDark, luminance, pic } from '../site.js';
+import { luminance, pic } from '../site.js';
 
 export function Stars({ value = 5, size = 16, className = 'text-star' }) {
   const full = Math.round(value);
@@ -37,6 +37,42 @@ export function Img({ src, alt = '', sizes = '100vw', className, eager = false, 
   );
 }
 
+/** `value` when it is a #rrggbb color, `fallback` when it is not. */
+export function hexOr(value, fallback) {
+  return /^#[0-9a-f]{6}$/i.test(String(value || '').trim()) ? String(value).trim() : fallback;
+}
+
+/** `hex` moved toward `target` by `share` (0 to 1), as CSS color-mix would draw it. */
+export function mixHex(hex, target, share) {
+  const parse = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+  const a = parse(hexOr(hex, '#ffffff'));
+  const t = parse(hexOr(target, '#000000'));
+  return `#${a.map((v, i) => Math.round(v + (t[i] - v) * share).toString(16).padStart(2, '0')).join('')}`;
+}
+
+// How much of a mark has to survive on a ground for it to be drawn there in its
+// own colors; below this it is drawn as its one-color cut.
+const READS = 0.75;
+
+/**
+ * How much of the logo survives on `ground`, from 0 to 1, read off logoReads:
+ * what the build measured on grays from black to white, taken at the gray as
+ * light as this ground. A brand file from before it reads only on a ground
+ * close to the one it was made for.
+ */
+export function logoStands(brand, ground) {
+  const level = brand.logoReads;
+  if (!Array.isArray(level) || level.length < 2) {
+    return Math.abs(luminance(ground) - luminance(hexOr(brand.logoGround, '#ffffff'))) <= 0.25 ? 1 : 0;
+  }
+  // The ground as the gray the build tried the mark on: its luma, as an image
+  // library turns a color picture gray.
+  const [r, g, b] = [1, 3, 5].map((i) => parseInt(hexOr(ground, '#ffffff').slice(i, i + 2), 16) / 255);
+  const at = (0.299 * r + 0.587 * g + 0.114 * b) * (level.length - 1);
+  const i = Math.min(level.length - 2, Math.floor(at));
+  return level[i] + (level[i + 1] - level[i]) * (at - i);
+}
+
 /**
  * The logo, sized by its shape rather than squeezed into a box: the build
  * writes logoHeight (and logoWidth, logoRatio) from the file, so a badge is
@@ -44,47 +80,61 @@ export function Img({ src, alt = '', sizes = '100vw', className, eager = false, 
  * space. A brand file from before that keeps its width as a ceiling. The
  * header is 82% of the size on a phone.
  *
- * `ground` is the color behind the mark where it is drawn. When that is not
- * the logo's own ground (a dark footer under a logo made for white), the
- * name is set in type there instead of boxing the logo. A mark with no name
- * in it (logoName) carries the name beside it.
+ * The logo never brings a box or a ground of its own: the build cuts its
+ * background away, and the template's header and footer keep their own
+ * colors. `ground` is the color behind the mark where it is drawn. Where
+ * enough of the mark stands out from it, the mark is drawn in its own colors;
+ * where it does not (a dark mark on a dark footer, a white mark on a white
+ * header), its one-color cut (logoMono) is painted in the ink of that spot,
+ * white on a dark ground and the brand's ink on a light one, unless `ink`
+ * names another. A mark with no name in it (logoName) carries the name beside
+ * it.
  */
-export function BrandLogo({ b, className = '', textClass = '', scale = 1, ground = null }) {
+export function BrandLogo({ b, className = '', textClass = '', scale = 1, ground = '#ffffff', ink = null }) {
   const brand = b.brand;
-  if (!brand.logo) {
-    return <span className={`block font-heading text-[22px] font-bold leading-tight ${textClass}`}>{b.shortName}</span>;
-  }
-  let img;
+  const name = <span className={`block font-heading text-[22px] font-bold leading-tight ${textClass}`}>{b.shortName}</span>;
+  if (!brand.logo) return name;
+  const backdrop = hexOr(ground, '#ffffff');
+  const own = logoStands(brand, backdrop) >= READS;
+  if (!own && !brand.logoMono) return name;
+  const src = own ? brand.logo : brand.logoMono;
+  const hidden = own ? '' : 'opacity-0';
+  let mark;
   if (brand.logoHeight) {
     const h = Math.round(brand.logoHeight * scale);
-    img = (
+    mark = (
       <img
         data-logo=""
-        className={`block h-[calc(var(--logo-h)*0.82)] w-auto max-w-[min(48vw,100%)] object-contain object-left sm:max-w-[min(62vw,100%)] lg:h-[var(--logo-h)] ${className}`}
+        className={`block h-[calc(var(--logo-h)*0.82)] w-auto max-w-[min(48vw,100%)] object-contain object-left sm:max-w-[min(62vw,100%)] lg:h-[var(--logo-h)] ${hidden} ${className}`}
         style={{ '--logo-h': `${h}px` }}
-        src={brand.logo}
+        src={src}
         alt={b.name}
         width={Math.round(brand.logoWidth * scale)}
         height={h}
       />
     );
   } else {
-    img = (
+    mark = (
       <img
         data-logo=""
-        className={`block h-auto max-h-[44px] w-auto object-contain object-left lg:max-h-[56px] ${className}`}
+        className={`block h-auto max-h-[44px] w-auto object-contain object-left lg:max-h-[56px] ${hidden} ${className}`}
         style={{ maxWidth: `min(${Math.round((brand.logoWidth || 200) * scale)}px, 62vw)` }}
-        src={brand.logo}
+        src={src}
         alt={b.name}
       />
     );
   }
-  const own = brand.logoGround || '#ffffff';
-  if (ground && Math.abs(luminance(ground) - luminance(own)) > 0.25) {
-    // A logo made for another ground is never boxed onto this one: the name is set in type.
-    return <span className={`block font-heading text-[22px] font-bold leading-tight ${textClass}`}>{b.shortName}</span>;
+  if (!own) {
+    // The cut sizes the box as the logo would and is hidden; the box is
+    // painted in the ink and shows only through the cut's shape.
+    const paint = ink || (luminance(backdrop) < 0.4 ? '#ffffff' : hexOr(brand.ink, '#14181f'));
+    const cut = `url(${brand.logoMono}) center / contain no-repeat`;
+    mark = (
+      <span data-logo-cut="" className="block w-fit max-w-full" style={{ WebkitMask: cut, mask: cut, backgroundColor: paint }}>
+        {mark}
+      </span>
+    );
   }
-  const mark = img;
   if (!brand.logoName) return mark;
   // A symbol with no name in it carries the name beside it, set in type.
   return (
@@ -97,21 +147,9 @@ export function BrandLogo({ b, className = '', textClass = '', scale = 1, ground
   );
 }
 
-export { headDark };
-
 /** The logo when the business has one, its name set in type when it does not. */
-export function Logo({ b, className = '', textClass = '' }) {
-  if (b.brand.logo) {
-    return (
-      <img
-        className={`block h-auto max-w-[44vw] ${className}`}
-        src={b.brand.logo}
-        alt={b.name}
-        style={{ width: b.brand.logoWidth }}
-      />
-    );
-  }
-  return <span className={`font-heading text-2xl font-bold ${textClass}`}>{b.shortName}</span>;
+export function Logo({ b, className = '', textClass = '', ground = '#ffffff' }) {
+  return <BrandLogo b={b} className={className} textClass={`font-heading text-2xl ${textClass}`} ground={ground} />;
 }
 
 /**
@@ -184,6 +222,10 @@ export function EnquiryForm({ b, fields, submitLabel, styles }) {
  * It is a section of its own on the home page, just above the footer, in the
  * page's own colors. The footer stays the short list a local business needs:
  * name, contact, hours, a few links and the copyright line.
+ *
+ * The facts run down columns one after another, as a newspaper sets them, so a
+ * long one and a short one side by side leave no hole under the short one.
+ * Each sits behind a rule of its own and its items are marked as a list.
  */
 export function Facts({ b }) {
   const facts = (b.facts ?? []).filter((fact) => fact?.heading && (fact.text || fact.items?.length));
@@ -191,13 +233,13 @@ export function Facts({ b }) {
   const rule = { borderColor: 'color-mix(in srgb, currentColor 18%, transparent)' };
   return (
     <section aria-label={`About ${b.name}`} className="mx-auto w-full max-w-7xl px-5 sm:px-8">
-      <div className="grid gap-x-10 gap-y-7 border-t py-12 sm:grid-cols-2 lg:grid-cols-3" style={rule}>
+      <div className="gap-x-10 border-t pb-5 pt-12 sm:columns-2 lg:columns-3" style={rule}>
         {facts.map((fact) => (
-          <div key={fact.heading} className="min-w-0">
+          <div key={fact.heading} className="mb-7 min-w-0 break-inside-avoid border-l-2 pl-4" style={rule}>
             <h2 className="font-heading text-[17px] font-semibold opacity-100">{fact.heading}</h2>
             {fact.text && <p className="mt-2 text-[16px] leading-relaxed opacity-85">{fact.text}</p>}
             {fact.items?.length > 0 && (
-              <ul className="mt-2 space-y-1.5 text-[16px] leading-relaxed opacity-85">
+              <ul className="mt-2 list-disc space-y-1.5 pl-5 text-[16px] leading-relaxed opacity-85">
                 {fact.items.map((item) => (
                   <li key={item} className="break-words">
                     {item}
@@ -209,5 +251,55 @@ export function Facts({ b }) {
         ))}
       </div>
     </section>
+  );
+}
+
+/**
+ * Where the studio posts, as taylorurl.com holds them: the Facebook Page in
+ * src/app/data/reputation/facebook.js and the Instagram account beside the
+ * menu in src/app/constants/navigation.js. They are written again here rather
+ * than imported, since this repo builds on its own, so a page that moves there
+ * moves here too.
+ *
+ * Each carries the tags that say a visit came off a preview's footer, added to
+ * whatever query the address already has: the Page is a numbered profile, and
+ * its `?id=` has to survive the tagging.
+ */
+const STUDIO_FOLLOW = [
+  { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61591005089902' },
+  { label: 'Instagram', href: 'https://www.instagram.com/taylorwebdev/' },
+].map(({ label, href }) => {
+  const url = new URL(href);
+  url.searchParams.set('utm_source', 'preview');
+  url.searchParams.set('utm_medium', 'footer');
+  url.searchParams.set('utm_campaign', 'follow');
+  return { label, href: url.toString() };
+});
+
+/**
+ * The studio's credit under a preview's copyright line, with the two places
+ * an owner can follow its work.
+ *
+ * It sits on the copyright line rather than in a section of its own because
+ * the footer is the business's, and the credit is the one line in it that is
+ * not. It takes the line's own size and ink, so it reads as part of whichever
+ * footer it lands in, and draws nothing on a page that is not a preview: a
+ * template's sample, or a site that has gone live in its owner's name, carries
+ * no credit.
+ */
+export function StudioCredit({ b }) {
+  if (!b.preview) return null;
+  return (
+    <span className="mt-1 block">
+      Designed by TaylorURL
+      {STUDIO_FOLLOW.map(({ label, href }) => (
+        <span key={label}>
+          {' · '}
+          <a href={href} target="_blank" rel="noopener" className="underline underline-offset-2">
+            {label}
+          </a>
+        </span>
+      ))}
+    </span>
   );
 }

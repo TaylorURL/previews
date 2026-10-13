@@ -14,9 +14,18 @@
   "reviewCount": 211,
   "since": 2015,
   "hours": [
-    ["Mon – Sat", "7:30 AM – 8:00 PM"],
-    ["Sunday", "Closed"],
-    ["Online booking", "Mon – Sat, 24 hours"]
+    [
+      "Mon – Sat",
+      "7:30 AM – 8:00 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ],
+    [
+      "Online booking",
+      "Mon – Sat, 24 hours"
+    ]
   ],
   "brand": {
     "primary": "#214698",
@@ -30,14 +39,36 @@
     "body": "'Poppins', 'Segoe UI', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
     "logo": "/brands/acecomfort/logo.webp",
-    "logoWidth": 48
+    "logoMono": "/brands/acecomfort/logo-mono.webp",
+    "logoWidth": 74,
+    "logoHeight": 74,
+    "logoRatio": 1.0,
+    "logoGround": "#14181f",
+    "logoReads": [
+      1.0,
+      0.998,
+      0.975,
+      0.953,
+      0.93,
+      0.906,
+      0.884,
+      0.862,
+      0.838,
+      0.814,
+      0.793
+    ]
   },
   "emergency": {
     "title": "24/7 emergency HVAC service",
     "text": "An AC or heating breakdown should not wait for the next business day, so we answer emergency calls around the clock, 365 days a year."
   },
   "sameDay": "If your system is not cooling properly, our technician will work to restore it the same day.",
-  "licenses": [{ "label": "TDLR HVAC", "number": "TACLB64349E" }],
+  "licenses": [
+    {
+      "label": "TDLR HVAC",
+      "number": "TACLB64349E"
+    }
+  ],
   "financing": {
     "text": "0% interest plans on replacements and repairs, with an online application and a decision in minutes."
   },

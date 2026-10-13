@@ -11,7 +11,12 @@
   "state": "TX",
   "zip": "79601",
   "since": 2013,
-  "hours": [["Mon – Sun", "Open 24 hours"]],
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
   "brand": {
     "primary": "#26408b",
     "primaryDeep": "#0c1b56",
@@ -24,7 +29,24 @@
     "body": "'Poppins', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap",
     "logo": "/brands/accurateairsolutions/logo.webp",
-    "logoWidth": 64
+    "logoMono": "/brands/accurateairsolutions/logo-mono.webp",
+    "logoWidth": 74,
+    "logoHeight": 74,
+    "logoRatio": 1.0,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.996,
+      0.996,
+      0.996,
+      0.995,
+      0.994,
+      0.993,
+      0.992,
+      0.991,
+      0.992,
+      0.995,
+      1.0
+    ]
   },
   "emergency": {
     "title": "24/7 emergency service",
@@ -32,10 +54,22 @@
   },
   "sameDay": "Custom sheet metal comes out of our own Abilene shop, usually the same week and sometimes the same day.",
   "licenses": [
-    { "label": "HVAC", "number": "TACLA53299C" },
-    { "label": "Electrical", "number": "TECL34064" },
-    { "label": "Master Plumber", "number": "M18761" },
-    { "label": "Irrigation", "number": "LI15280" }
+    {
+      "label": "HVAC",
+      "number": "TACLA53299C"
+    },
+    {
+      "label": "Electrical",
+      "number": "TECL34064"
+    },
+    {
+      "label": "Master Plumber",
+      "number": "M18761"
+    },
+    {
+      "label": "Irrigation",
+      "number": "LI15280"
+    }
   ],
   "financing": {
     "text": "Finance equipment replacement and capital work through First Financial Bank, Member FDIC — the short application is hosted on the bank's own site, we never see your financial details, and applying does not commit you to the work."
@@ -105,7 +139,9 @@
           "title": "Repair or Replace",
           "icon": "shield",
           "text": "We will tell you which one we would do if we owned the building — age, refrigerant type, coil condition, compressor history, and what the next three years of repairs realistically cost, laid out plainly.",
-          "points": ["Heavy equipment sets by crane and helicopter lift, planned, permitted and worked in your window"]
+          "points": [
+            "Heavy equipment sets by crane and helicopter lift, planned, permitted and worked in your window"
+          ]
         }
       ]
     },
@@ -143,7 +179,9 @@
           "title": "Ice Machines",
           "icon": "droplets",
           "text": "Ice machine repair and the preventive cleaning that keeps one from failing in the middle of service.",
-          "points": ["Ice machine repair and preventive cleaning"]
+          "points": [
+            "Ice machine repair and preventive cleaning"
+          ]
         },
         {
           "slug": "leaks-and-controls",
@@ -223,7 +261,9 @@
           "title": "Service and Distribution",
           "icon": "power",
           "text": "Panel, breaker and service upgrades, including the upgrade that has been blocking a tenant build-out.",
-          "points": ["Panel, breaker and service upgrades"]
+          "points": [
+            "Panel, breaker and service upgrades"
+          ]
         },
         {
           "slug": "motor-controls",
@@ -240,7 +280,9 @@
           "title": "Lighting",
           "icon": "lightbulb",
           "text": "Lighting retrofits and repairs, interior and site, including high-bay lighting in warehousing and distribution.",
-          "points": ["Lighting retrofits and repairs, interior and site"]
+          "points": [
+            "Lighting retrofits and repairs, interior and site"
+          ]
         },
         {
           "slug": "troubleshooting-and-generators",
@@ -290,7 +332,9 @@
           "title": "Kitchen and Equipment Hoods",
           "icon": "fan",
           "text": "Kitchen and equipment hoods, built alongside the make-up air and exhaust that has to work with them.",
-          "points": ["Kitchen and equipment hoods"]
+          "points": [
+            "Kitchen and equipment hoods"
+          ]
         },
         {
           "slug": "outside-fabrication",
@@ -437,7 +481,16 @@
       "a": "Bonding capacity is in excess of $50 million, through Granite Re. On insurance, tell us the requirements on your project and we will meet them — certificates go out on request. Our experience modification rate is 0.82."
     }
   ],
-  "serviceArea": ["Abilene", "Sweetwater", "Cisco", "San Angelo", "Brownwood", "Midland", "Lubbock", "Dallas"],
+  "serviceArea": [
+    "Abilene",
+    "Sweetwater",
+    "Cisco",
+    "San Angelo",
+    "Brownwood",
+    "Midland",
+    "Lubbock",
+    "Dallas"
+  ],
   "facts": [
     {
       "heading": "Bonding, insurance and safety",

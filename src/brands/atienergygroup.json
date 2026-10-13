@@ -1,6 +1,7 @@
 {
   "template": "hvac",
   "preview": true,
+  "ask": "quote",
   "name": "ATI Energy Group, LLC.",
   "shortName": "ATI Energy",
   "summary": "Industrial electrical and instrumentation construction, engineering, maintenance and renewable energy projects, run out of Baytown, Texas.",
@@ -42,11 +43,24 @@
     "body": "'Poppins', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap",
     "logo": "/brands/atienergygroup/logo.webp",
+    "logoMono": "/brands/atienergygroup/logo-mono.webp",
     "logoWidth": 96,
     "logoHeight": 58,
-    "logoRatio": 1.657,
+    "logoRatio": 1.655,
     "logoGround": "#ffffff",
-    "logoName": true
+    "logoReads": [
+      0.258,
+      0.138,
+      0.049,
+      0.137,
+      0.261,
+      0.388,
+      0.506,
+      0.628,
+      0.752,
+      0.88,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Engineering, procurement and construction in Baytown",
@@ -63,8 +77,6 @@
       "icon": "zap",
       "summary": "Instrument and electrical construction for petrochemical, pipeline, utility and general industrial plants.",
       "intro": "Our team are experts in instrument and electrical construction with over 30 years of experience across many industries. Our experience in optimizing I&E designs and managing complex industrial installations underpins our high velocity and high quality delivery. The scope runs from cable and switchgear through to commissioning and start-up.",
-      "image": "/brands/atienergygroup/construction",
-      "imageAlt": "A process skid with instrument transmitters, tubing and conduit runs",
       "services": [
         {
           "slug": "power-distribution",
@@ -135,14 +147,14 @@
     {
       "slug": "engineering",
       "title": "Engineering",
-      "icon": "circuit",
+      "icon": "compass",
       "summary": "Pre-FEED, interconnection support, modeling and project management across solar, wind and BESS.",
       "intro": "Our project management team has 20+ years experience in the renewables space. They place a strong emphasis on system integration to optimize renewable power generation, enhance grid operations, and bolster system reliability. We now also offer Pre-FEED and engineering services to help clients at every stage of the project.",
       "services": [
         {
           "slug": "pre-feed",
           "title": "Preliminary Design (Pre-FEED)",
-          "icon": "building",
+          "icon": "compass",
           "text": "Preliminary design work at the front of a project, where decisions about design, constructability and maintainability still cost nothing to change."
         },
         {
@@ -154,13 +166,13 @@
         {
           "slug": "modeling",
           "title": "Modeling",
-          "icon": "settings",
+          "icon": "chart",
           "text": "Modeling across solar, wind and battery energy storage systems to optimize renewable power generation before anything is built."
         },
         {
           "slug": "design-optimization",
           "title": "Design Optimization",
-          "icon": "wrench",
+          "icon": "ruler",
           "text": "Our expertise translates into quality, reliability, and cost-efficiency for our clients through collaborative design optimization."
         },
         {
@@ -172,7 +184,7 @@
         {
           "slug": "project-management",
           "title": "Project Management",
-          "icon": "shield",
+          "icon": "clipboard",
           "text": "Detailed project management and advisement on project planning, with standard's generation for the work that follows.",
           "points": [
             "Detailed project management",

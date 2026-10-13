@@ -31,7 +31,24 @@
     "body": "'Inter Tight', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter+Tight:wght@400;500;600;700&display=swap",
     "logo": "/brands/standleebleifeld/logo.webp",
-    "logoWidth": 220
+    "logoMono": "/brands/standleebleifeld/logo-mono.webp",
+    "logoWidth": 105,
+    "logoHeight": 58,
+    "logoRatio": 1.81,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.069,
+      0.122,
+      0.198,
+      0.289,
+      0.388,
+      0.49,
+      0.589,
+      0.688,
+      0.793,
+      0.899,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "CPAs in Houston and South Texas",
@@ -49,7 +66,10 @@
     "title": "Areas of practice",
     "text": "We are not the largest firm in Texas, but we think it is one of the best. Pick an area to see how we work in it, or call and talk it through with Brian or DeeAnn."
   },
-  "audiences": { "individuals": "Individuals", "businesses": "Businesses" },
+  "audiences": {
+    "individuals": "Individuals",
+    "businesses": "Businesses"
+  },
   "services": [
     {
       "slug": "tax-resolution",
@@ -62,11 +82,26 @@
       "image": "/brands/standleebleifeld/tax-resolution",
       "imageAlt": "A letter from the IRS being read at a desk",
       "covers": [
-        { "title": "FIRPTA withholding", "text": "Recovering money the IRS owes you from FIRPTA withholding on a property sale." },
-        { "title": "Notices of Deficiency", "text": "Reading what the notice actually claims and answering it before the deadline runs." },
-        { "title": "Civil penalty letters", "text": "Defending against unreasonable penalties rather than paying them by default." },
-        { "title": "Agency errors", "text": "Correcting mistakes the IRS has made on your tax account." },
-        { "title": "Balances you cannot pay", "text": "Working out what to do about a large balance owed to the IRS or your state." }
+        {
+          "title": "FIRPTA withholding",
+          "text": "Recovering money the IRS owes you from FIRPTA withholding on a property sale."
+        },
+        {
+          "title": "Notices of Deficiency",
+          "text": "Reading what the notice actually claims and answering it before the deadline runs."
+        },
+        {
+          "title": "Civil penalty letters",
+          "text": "Defending against unreasonable penalties rather than paying them by default."
+        },
+        {
+          "title": "Agency errors",
+          "text": "Correcting mistakes the IRS has made on your tax account."
+        },
+        {
+          "title": "Balances you cannot pay",
+          "text": "Working out what to do about a large balance owed to the IRS or your state."
+        }
       ]
     },
     {
@@ -78,9 +113,18 @@
       "text": "US tax compliance for expats and immigrants, including US taxpayers with foreign income or accounts and nonresidents who own property or other assets here.",
       "lead": "Living or earning across a border changes what the United States asks of you at tax time. DeeAnn Standlee's practice is built on US tax compliance for expats and immigrants, and on the reporting that foreign income, accounts and assets bring with them.",
       "covers": [
-        { "title": "Foreign income and accounts", "text": "Reporting for a US taxpayer with income or accounts outside the United States." },
-        { "title": "Nonresident property owners", "text": "US filing for a nonresident who owns real property or other assets here." },
-        { "title": "Minimizing US tax liability", "text": "Keeping the US liability as low as the rules allow while staying compliant." }
+        {
+          "title": "Foreign income and accounts",
+          "text": "Reporting for a US taxpayer with income or accounts outside the United States."
+        },
+        {
+          "title": "Nonresident property owners",
+          "text": "US filing for a nonresident who owns real property or other assets here."
+        },
+        {
+          "title": "Minimizing US tax liability",
+          "text": "Keeping the US liability as low as the rules allow while staying compliant."
+        }
       ]
     },
     {
@@ -94,13 +138,28 @@
       "image": "/brands/standleebleifeld/real-estate",
       "imageAlt": "Homes, an office building and a Texas field of bluebonnets",
       "covers": [
-        { "title": "Tax planning", "text": "Planning before a property is under contract rather than after, so the structure is right from the start." },
-        { "title": "Tax preparation", "text": "Returns for investors, rehabbers, flippers and developers." },
-        { "title": "Tax matters resolution", "text": "Handling the notices and disputes that come out of a real estate position." },
-        { "title": "Rentals, development and land", "text": "Commercial and residential rentals, development, BRRRR and land flipping." }
+        {
+          "title": "Tax planning",
+          "text": "Planning before a property is under contract rather than after, so the structure is right from the start."
+        },
+        {
+          "title": "Tax preparation",
+          "text": "Returns for investors, rehabbers, flippers and developers."
+        },
+        {
+          "title": "Tax matters resolution",
+          "text": "Handling the notices and disputes that come out of a real estate position."
+        },
+        {
+          "title": "Rentals, development and land",
+          "text": "Commercial and residential rentals, development, BRRRR and land flipping."
+        }
       ],
       "questions": [
-        { "q": "When should I start tax planning on a deal?", "a": "Do not wait to start tax planning until you have a property under contract. Schedule a consultation today." }
+        {
+          "q": "When should I start tax planning on a deal?",
+          "a": "Do not wait to start tax planning until you have a property under contract. Schedule a consultation today."
+        }
       ]
     },
     {
@@ -112,10 +171,22 @@
       "text": "International accounts, businesses, properties and trusts create special reporting and tax requirements that do not apply to domestic businesses. Failure to comply can lead to stiff penalties.",
       "lead": "At Standlee & Bleifeld CPAs PLLC, you will find professionals with the knowledge and skills to confidently manage your international tax compliance and minimize your US tax liability.",
       "covers": [
-        { "title": "Foreign entities in the US", "text": "A foreign entity doing business in the United States." },
-        { "title": "US entities abroad", "text": "A US entity doing business outside the United States." },
-        { "title": "Foreign income and accounts", "text": "A US taxpayer with foreign income or accounts." },
-        { "title": "US assets held by nonresidents", "text": "A nonresident who owns real property or other assets in the US." }
+        {
+          "title": "Foreign entities in the US",
+          "text": "A foreign entity doing business in the United States."
+        },
+        {
+          "title": "US entities abroad",
+          "text": "A US entity doing business outside the United States."
+        },
+        {
+          "title": "Foreign income and accounts",
+          "text": "A US taxpayer with foreign income or accounts."
+        },
+        {
+          "title": "US assets held by nonresidents",
+          "text": "A nonresident who owns real property or other assets in the US."
+        }
       ]
     },
     {
@@ -129,8 +200,14 @@
       "image": "/brands/standleebleifeld/restaurants-bars",
       "imageAlt": "A bartender, a steak on the grill and a bar at service",
       "covers": [
-        { "title": "Bars and restaurants", "text": "Accounting and tax for a trade with its own margins, its own payroll and its own reporting." },
-        { "title": "Distillers, brewers and vintners", "text": "Producers whose accounting carries requirements the dining room does not." }
+        {
+          "title": "Bars and restaurants",
+          "text": "Accounting and tax for a trade with its own margins, its own payroll and its own reporting."
+        },
+        {
+          "title": "Distillers, brewers and vintners",
+          "text": "Producers whose accounting carries requirements the dining room does not."
+        }
       ]
     },
     {
@@ -144,11 +221,26 @@
       "image": "/brands/standleebleifeld/influencers",
       "imageAlt": "A microphone resting on banknotes",
       "covers": [
-        { "title": "Influencer deductions", "text": "The necessary and ordinary expenses that too often go unclaimed." },
-        { "title": "1099s and withholding", "text": "Managing the forms that arrive and the tax withheld against them." },
-        { "title": "Minimizing tax liability", "text": "Keeping the bill down on referral fees, gifted product and sponsorship income." },
-        { "title": "Records and payroll", "text": "Maintaining financial records, and payroll if you need it." },
-        { "title": "Staying current", "text": "How to avoid getting behind on your tax compliance." }
+        {
+          "title": "Influencer deductions",
+          "text": "The necessary and ordinary expenses that too often go unclaimed."
+        },
+        {
+          "title": "1099s and withholding",
+          "text": "Managing the forms that arrive and the tax withheld against them."
+        },
+        {
+          "title": "Minimizing tax liability",
+          "text": "Keeping the bill down on referral fees, gifted product and sponsorship income."
+        },
+        {
+          "title": "Records and payroll",
+          "text": "Maintaining financial records, and payroll if you need it."
+        },
+        {
+          "title": "Staying current",
+          "text": "How to avoid getting behind on your tax compliance."
+        }
       ]
     }
   ],
@@ -160,9 +252,18 @@
       "Our individual fields complement each other in surprising, and what turned out to be inseparable, ways. Our firm is destined to become one of the most sought-after corporate firms for complex small- to medium-sized businesses."
     ],
     "values": [
-      { "title": "Relationships that last", "text": "Our client relationships span decades, not years." },
-      { "title": "Small enough to care", "text": "We are smart enough to serve you and small enough to care." },
-      { "title": "Current with the technology", "text": "As technology has changed, many CPAs have not evolved with the times. DeeAnn and Brian are always on the cutting edge of technology in order to provide exceptional service to their clients." }
+      {
+        "title": "Relationships that last",
+        "text": "Our client relationships span decades, not years."
+      },
+      {
+        "title": "Small enough to care",
+        "text": "We are smart enough to serve you and small enough to care."
+      },
+      {
+        "title": "Current with the technology",
+        "text": "As technology has changed, many CPAs have not evolved with the times. DeeAnn and Brian are always on the cutting edge of technology in order to provide exceptional service to their clients."
+      }
     ]
   },
   "team": [
@@ -181,7 +282,10 @@
       "imageAlt": "Brian Bleifeld, CPA"
     }
   ],
-  "serviceArea": ["Houston", "South Texas"],
+  "serviceArea": [
+    "Houston",
+    "South Texas"
+  ],
   "facts": [
     {
       "heading": "Offices in Houston and South Texas",

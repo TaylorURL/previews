@@ -13,7 +13,20 @@
   "state": "TX",
   "zip": "77530",
   "since": 1999,
-  "hours": [["Mon – Fri", "8 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "cta": {
     "label": "Get in Touch",
     "text": "If you're interested in knowing more about our services, or how we can help you, drop us a line."
@@ -31,7 +44,24 @@
     "body": "'Source Sans 3', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/theactiongroup/logo.webp",
-    "logoWidth": 220
+    "logoMono": "/brands/theactiongroup/logo-mono.webp",
+    "logoWidth": 112,
+    "logoHeight": 58,
+    "logoRatio": 1.931,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.221,
+      0.219,
+      0.236,
+      0.275,
+      0.336,
+      0.416,
+      0.514,
+      0.632,
+      0.756,
+      0.881,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Regulatory compliance consulting since 1999",
@@ -39,7 +69,11 @@
     "lead": "The ACTion group is a regulatory compliance consulting firm helping organizations achieve operational excellence, from the boardroom to the galley.",
     "image": "/brands/theactiongroup/hero",
     "imageAlt": "Mooring rope coiled over the deck rail of a working vessel",
-    "points": ["Advise, certify and train", "Maritime regulatory compliance", "Offices in Channelview, TX and Southbury, CT"]
+    "points": [
+      "Advise, certify and train",
+      "Maritime regulatory compliance",
+      "Offices in Channelview, TX and Southbury, CT"
+    ]
   },
   "overview": {
     "title": "Advise, Certify, and Train",
@@ -54,10 +88,22 @@
       "text": "We develop, implement, and maintain Safety Management Systems in accordance to industry standards of excellence, Sub Chapter M, Tanker Management Self Assessment (TMSA), AWO - Responsible Carrier Program (RCP), and International Safety Management (ISM) Code.",
       "lead": "We develop, implement, and maintain Safety Management Systems in accordance to industry standards of excellence.",
       "covers": [
-        { "title": "Sub Chapter M", "text": "Safety management built to the Coast Guard's towing vessel inspection regulations." },
-        { "title": "Tanker Management Self Assessment", "text": "Systems developed and maintained against the TMSA standard." },
-        { "title": "AWO Responsible Carrier Program", "text": "Safety management written and maintained to the AWO RCP." },
-        { "title": "International Safety Management Code", "text": "Systems developed and maintained in accordance with the ISM Code." }
+        {
+          "title": "Sub Chapter M",
+          "text": "Safety management built to the Coast Guard's towing vessel inspection regulations."
+        },
+        {
+          "title": "Tanker Management Self Assessment",
+          "text": "Systems developed and maintained against the TMSA standard."
+        },
+        {
+          "title": "AWO Responsible Carrier Program",
+          "text": "Safety management written and maintained to the AWO RCP."
+        },
+        {
+          "title": "International Safety Management Code",
+          "text": "Systems developed and maintained in accordance with the ISM Code."
+        }
       ]
     },
     {
@@ -68,9 +114,18 @@
       "text": "We are a Helm CONNECT official partner and can provide a turn key solution to your document control, data management, and regulatory compliance needs.",
       "lead": "We are a Helm CONNECT official partner and can provide a turn key solution to your document control, data management, and regulatory compliance needs.",
       "covers": [
-        { "title": "Document control", "text": "A single controlled home for the manuals, procedures and records your program depends on." },
-        { "title": "Data management", "text": "Compliance data organized so it can be found when an inspector or auditor asks for it." },
-        { "title": "Helm CONNECT", "text": "Implementation and support from an official Helm CONNECT partner." }
+        {
+          "title": "Document control",
+          "text": "A single controlled home for the manuals, procedures and records your program depends on."
+        },
+        {
+          "title": "Data management",
+          "text": "Compliance data organized so it can be found when an inspector or auditor asks for it."
+        },
+        {
+          "title": "Helm CONNECT",
+          "text": "Implementation and support from an official Helm CONNECT partner."
+        }
       ]
     },
     {
@@ -81,9 +136,18 @@
       "text": "Our vetting services include management vetting, vessel vetting, and company representation when you are being vetted.",
       "lead": "Our vetting services include management vetting, vessel vetting, and company representation when you are being vetted.",
       "covers": [
-        { "title": "Management vetting", "text": "A review of how the shoreside organization manages its obligations." },
-        { "title": "Vessel vetting", "text": "Vessels reviewed against the standard the vetting party is applying." },
-        { "title": "Company representation", "text": "We represent your company when you are the one being vetted." }
+        {
+          "title": "Management vetting",
+          "text": "A review of how the shoreside organization manages its obligations."
+        },
+        {
+          "title": "Vessel vetting",
+          "text": "Vessels reviewed against the standard the vetting party is applying."
+        },
+        {
+          "title": "Company representation",
+          "text": "We represent your company when you are the one being vetted."
+        }
       ]
     },
     {
@@ -94,10 +158,22 @@
       "text": "Our technical writing includes United States Coast Guard - Vessel Response Plans, Non-Tank Vessel Response Plans, Vessel Transfer Procedures, Facility Security Plans, Facility Operations Manuals, and Facility Response Plans.",
       "lead": "Our technical writing includes United States Coast Guard plans, procedures and manuals, written to the form the regulation asks for.",
       "covers": [
-        { "title": "Vessel Response Plans", "text": "United States Coast Guard Vessel Response Plans and Non-Tank Vessel Response Plans." },
-        { "title": "Vessel Transfer Procedures", "text": "Transfer procedures written for the vessel and the operation." },
-        { "title": "Facility Security Plans", "text": "Security plans written for the facility and its personnel." },
-        { "title": "Facility manuals and plans", "text": "Facility Operations Manuals and Facility Response Plans." }
+        {
+          "title": "Vessel Response Plans",
+          "text": "United States Coast Guard Vessel Response Plans and Non-Tank Vessel Response Plans."
+        },
+        {
+          "title": "Vessel Transfer Procedures",
+          "text": "Transfer procedures written for the vessel and the operation."
+        },
+        {
+          "title": "Facility Security Plans",
+          "text": "Security plans written for the facility and its personnel."
+        },
+        {
+          "title": "Facility manuals and plans",
+          "text": "Facility Operations Manuals and Facility Response Plans."
+        }
       ]
     },
     {
@@ -108,10 +184,22 @@
       "text": "Our other services include the facilitation of Certificate of Inspection (COI) application process (from development to receipt of COI), hazard analysis, root cause analysis, incident investigations, and your project management needs.",
       "lead": "Work that does not fall under one heading: the COI application process, analysis after an incident, and project management.",
       "covers": [
-        { "title": "Certificate of Inspection", "text": "Facilitation of the COI application process, from development to receipt of the COI." },
-        { "title": "Hazard analysis", "text": "Hazards identified and analyzed for the operation as it runs." },
-        { "title": "Root cause analysis and incident investigation", "text": "Investigation of what happened and analysis of why it happened." },
-        { "title": "Project management", "text": "Your project management needs, handled alongside the compliance work." }
+        {
+          "title": "Certificate of Inspection",
+          "text": "Facilitation of the COI application process, from development to receipt of the COI."
+        },
+        {
+          "title": "Hazard analysis",
+          "text": "Hazards identified and analyzed for the operation as it runs."
+        },
+        {
+          "title": "Root cause analysis and incident investigation",
+          "text": "Investigation of what happened and analysis of why it happened."
+        },
+        {
+          "title": "Project management",
+          "text": "Your project management needs, handled alongside the compliance work."
+        }
       ]
     },
     {
@@ -122,9 +210,18 @@
       "text": "We conduct vessel and facility MTSA security audits and can prepare you for a United States Coast Guard inspection.",
       "lead": "We conduct vessel and facility MTSA security audits and can prepare you for a United States Coast Guard inspection.",
       "covers": [
-        { "title": "Vessel security audits", "text": "Vessel audits conducted against the Maritime Transportation Security Act." },
-        { "title": "Facility security audits", "text": "Facility audits conducted against the Maritime Transportation Security Act." },
-        { "title": "Inspection preparation", "text": "Preparation for a United States Coast Guard inspection." }
+        {
+          "title": "Vessel security audits",
+          "text": "Vessel audits conducted against the Maritime Transportation Security Act."
+        },
+        {
+          "title": "Facility security audits",
+          "text": "Facility audits conducted against the Maritime Transportation Security Act."
+        },
+        {
+          "title": "Inspection preparation",
+          "text": "Preparation for a United States Coast Guard inspection."
+        }
       ]
     },
     {
@@ -135,8 +232,14 @@
       "text": "We can handle your AWO RCP/Sub Chapter M management and vessel audits.",
       "lead": "We can handle your AWO RCP and Sub Chapter M management and vessel audits.",
       "covers": [
-        { "title": "Management audits", "text": "Shoreside management audited against AWO RCP and Sub Chapter M." },
-        { "title": "Vessel audits", "text": "Vessel audits carried out under the same programs." }
+        {
+          "title": "Management audits",
+          "text": "Shoreside management audited against AWO RCP and Sub Chapter M."
+        },
+        {
+          "title": "Vessel audits",
+          "text": "Vessel audits carried out under the same programs."
+        }
       ]
     },
     {
@@ -147,8 +250,14 @@
       "text": "We can handle your Sub Chapter M internal or external survey program.",
       "lead": "We can handle your Sub Chapter M internal or external survey program.",
       "covers": [
-        { "title": "Internal surveys", "text": "The internal side of a Sub Chapter M survey program." },
-        { "title": "External surveys", "text": "External surveys carried out under the same program." }
+        {
+          "title": "Internal surveys",
+          "text": "The internal side of a Sub Chapter M survey program."
+        },
+        {
+          "title": "External surveys",
+          "text": "External surveys carried out under the same program."
+        }
       ]
     },
     {
@@ -159,9 +268,18 @@
       "text": "We offer instructor led or online security training for CSO, VSO, Crewmen with Security Duties, FSO, Facility Personnel with Security Duties and Facility Personnel without Security Duties.",
       "lead": "We offer instructor led or online security training, for the shoreside and vessel roles the regulation names.",
       "covers": [
-        { "title": "CSO and VSO", "text": "Company Security Officer and Vessel Security Officer training." },
-        { "title": "Crewmen with Security Duties", "text": "Training for crew who carry security duties aboard." },
-        { "title": "FSO and facility personnel", "text": "Facility Security Officer training, and facility personnel with and without security duties." }
+        {
+          "title": "CSO and VSO",
+          "text": "Company Security Officer and Vessel Security Officer training."
+        },
+        {
+          "title": "Crewmen with Security Duties",
+          "text": "Training for crew who carry security duties aboard."
+        },
+        {
+          "title": "FSO and facility personnel",
+          "text": "Facility Security Officer training, and facility personnel with and without security duties."
+        }
       ]
     },
     {
@@ -172,8 +290,14 @@
       "text": "We have partnered with Seamen's Church Institute to provide a comprehensive mobile learning platform to meet your training needs.",
       "lead": "We have partnered with Seamen's Church Institute to provide a comprehensive mobile learning platform to meet your training needs.",
       "covers": [
-        { "title": "Mobile platform", "text": "Crew take the training wherever they are working." },
-        { "title": "Seamen's Church Institute", "text": "Delivered through our partnership with Seamen's Church Institute." }
+        {
+          "title": "Mobile platform",
+          "text": "Crew take the training wherever they are working."
+        },
+        {
+          "title": "Seamen's Church Institute",
+          "text": "Delivered through our partnership with Seamen's Church Institute."
+        }
       ]
     },
     {
@@ -188,14 +312,27 @@
   "process": {
     "title": "Areas of Focus",
     "steps": [
-      { "title": "Advise", "text": "We work with clients to analyze current operations and make suggestions for improvements through process implementation." },
-      { "title": "Certify", "text": "We focus on those elements which must be reviewed and/or audited for compliance with a specific program, standard, or regulation." },
-      { "title": "Train", "text": "We draw from the other two aspects to develop and deliver effective training to our clients." }
+      {
+        "title": "Advise",
+        "text": "We work with clients to analyze current operations and make suggestions for improvements through process implementation."
+      },
+      {
+        "title": "Certify",
+        "text": "We focus on those elements which must be reviewed and/or audited for compliance with a specific program, standard, or regulation."
+      },
+      {
+        "title": "Train",
+        "text": "We draw from the other two aspects to develop and deliver effective training to our clients."
+      }
     ]
   },
   "affiliations": {
     "title": "Partners",
-    "items": ["Helm CONNECT Official Partner", "Seamen's Church Institute", "ACTSafe Training"]
+    "items": [
+      "Helm CONNECT Official Partner",
+      "Seamen's Church Institute",
+      "ACTSafe Training"
+    ]
   },
   "about": {
     "title": "Who we are",
@@ -217,7 +354,10 @@
       "bio": "Reachable at chrisk@theagcteam.com or 281-452-9940."
     }
   ],
-  "serviceArea": ["Channelview, Texas", "Southbury, Connecticut"],
+  "serviceArea": [
+    "Channelview, Texas",
+    "Southbury, Connecticut"
+  ],
   "facts": [
     {
       "heading": "Offices",
@@ -236,7 +376,12 @@
     },
     {
       "heading": "Our values",
-      "items": ["Integrity", "Innovation", "Customer Focus", "Value Based Drivers"]
+      "items": [
+        "Integrity",
+        "Innovation",
+        "Customer Focus",
+        "Value Based Drivers"
+      ]
     },
     {
       "heading": "Who to contact",

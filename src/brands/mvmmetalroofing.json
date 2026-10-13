@@ -9,7 +9,20 @@
   "town": "Pearland",
   "state": "TX",
   "zip": "77581",
-  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "9 AM – 4 PM"], ["Sunday", "Closed"]],
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "9 AM – 4 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
   "brand": {
     "primary": "#58585a",
     "primaryDeep": "#3a3a3c",
@@ -20,7 +33,24 @@
     "body": "'Open Sans', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap",
     "logo": "/brands/mvmmetalroofing/logo.webp",
-    "logoWidth": 210
+    "logoMono": "/brands/mvmmetalroofing/logo-mono.webp",
+    "logoWidth": 181,
+    "logoHeight": 58,
+    "logoRatio": 3.122,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.58,
+      0.433,
+      0.289,
+      0.144,
+      0.116,
+      0.247,
+      0.384,
+      0.531,
+      0.689,
+      0.848,
+      1.0
+    ]
   },
   "hero": {
     "eyebrow": "Metal roofing in Pearland and Houston",
@@ -196,9 +226,18 @@
     "image": "/brands/mvmmetalroofing/crew",
     "imageAlt": "A worker on a ladder against a home with a new metal roof",
     "values": [
-      { "title": "Family values", "text": "Expertise from our leader meets family values in the roofing industry." },
-      { "title": "Built for our climate", "text": "Roofs put together for what Houston weather does to them." },
-      { "title": "We support our community", "text": "We support other businesses within our community who help make everything happen." }
+      {
+        "title": "Family values",
+        "text": "Expertise from our leader meets family values in the roofing industry."
+      },
+      {
+        "title": "Built for our climate",
+        "text": "Roofs put together for what Houston weather does to them."
+      },
+      {
+        "title": "We support our community",
+        "text": "We support other businesses within our community who help make everything happen."
+      }
     ]
   },
   "facts": [
@@ -207,7 +246,10 @@
       "text": "In event of an emergency please contact us, 24/7, at (713) 256-4697."
     }
   ],
-  "serviceArea": ["Pearland", "Houston"],
+  "serviceArea": [
+    "Pearland",
+    "Houston"
+  ],
   "areasText": "Happily servicing Houston and surrounding areas, from our address on Sunbrook Drive in Pearland.",
   "areasImage": "/brands/mvmmetalroofing/areas",
   "areasImageAlt": "A long metal roof seen from the ridge over a neighborhood street",

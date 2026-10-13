@@ -13,9 +13,18 @@
   "rating": 4.9,
   "reviewCount": 76,
   "hours": [
-    ["Mon – Fri", "8 AM – 5 PM"],
-    ["Saturday", "8 AM – 5 PM"],
-    ["Sunday", "Closed"]
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
   ],
   "brand": {
     "primary": "#272a7c",
@@ -29,13 +38,42 @@
     "body": "'Inter', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
     "logo": "/brands/kelmhome/logo.webp",
-    "logoWidth": 200
+    "logoMono": "/brands/kelmhome/logo-mono.webp",
+    "logoWidth": 164,
+    "logoHeight": 58,
+    "logoRatio": 2.828,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.163,
+      0.18,
+      0.238,
+      0.311,
+      0.398,
+      0.493,
+      0.588,
+      0.686,
+      0.791,
+      0.897,
+      1.0
+    ]
   },
   "licenses": [
-    { "label": "Master Electrician", "number": "TECL 21849" },
-    { "label": "Master Plumber", "number": "MPL 41051" },
-    { "label": "TMEL", "number": "510665" },
-    { "label": "RMP", "number": "41051" }
+    {
+      "label": "Master Electrician",
+      "number": "TECL 21849"
+    },
+    {
+      "label": "Master Plumber",
+      "number": "MPL 41051"
+    },
+    {
+      "label": "TMEL",
+      "number": "510665"
+    },
+    {
+      "label": "RMP",
+      "number": "41051"
+    }
   ],
   "financing": {
     "text": "Pay over time with the Synchrony Project Card, with no monthly interest when the balance is paid in full in 18 months."
@@ -74,7 +112,9 @@
           "title": "Automatic Transfer Switches",
           "icon": "circuit",
           "text": "The transfer switch is what hands the house over to the generator and back again. We supply and install service entrance rated switches alongside the generator.",
-          "points": ["100A, 200A and 400A service entrance rated switches"]
+          "points": [
+            "100A, 200A and 400A service entrance rated switches"
+          ]
         },
         {
           "slug": "free-estimates",
@@ -187,14 +227,18 @@
           "title": "Electrical Service",
           "icon": "zap",
           "text": "Electrical work carried out by a master electrician.",
-          "points": ["Master electrician, Lic.# TECL 21849"]
+          "points": [
+            "Master electrician, Lic.# TECL 21849"
+          ]
         },
         {
           "slug": "plumbing-service",
           "title": "Plumbing Service",
           "icon": "droplets",
           "text": "Plumbing work carried out by a master plumber.",
-          "points": ["Master plumber, Lic.# MPL 41051"]
+          "points": [
+            "Master plumber, Lic.# MPL 41051"
+          ]
         }
       ]
     }
@@ -259,11 +303,17 @@
       "a": "Yes. The Synchrony Project Card carries no monthly interest if the promotional balance is paid in full within 18 months. Minimum monthly payments are required, and a $29 account activation fee may apply."
     }
   ],
-  "serviceArea": ["Santa Fe", "Houston and surrounding areas"],
+  "serviceArea": [
+    "Santa Fe",
+    "Houston and surrounding areas"
+  ],
   "facts": [
     {
       "heading": "Brands We Install",
-      "items": ["Generac, as an authorized dealer", "Kohler"]
+      "items": [
+        "Generac, as an authorized dealer",
+        "Kohler"
+      ]
     },
     {
       "heading": "Equipment We Supply",
