@@ -3,7 +3,7 @@
  * companies, law firms, dental offices and chiropractors. A site of several
  * pages, each prerendered at its own address.
  *
- * Pages: '' (home), 'services', 'services/<slug>' for every service line,
+ * Pages: '' (home), 'services', 'services/<slug>' for every service line with words of its own,
  * 'team' (only when the brand lists people), 'about', 'resources' (only when
  * the brand has faqs or resources) and 'contact'. Services opens a mega menu
  * grouped by audience on desktop and an accordion in the mobile menu.
@@ -47,7 +47,8 @@
  *                   icon      optional. A key from src/templates/professional/icons.js ("car", "house", "calculator"...).
  *                   summary   one short line for the mega menu, under 50 characters.
  *                   text      one or two sentences for the service card.
- *                   lead      optional. The opening paragraph of the service's own page. Falls back to text, then to a line naming the business and its town.
+ *                   lead      optional. The opening paragraph of the service's own page. Falls back to text. A service with
+ *                             no lead, text, covers or questions has no page of its own and is listed by name.
  *                   image     optional. Photo for the service page hero; without one the hero shows a contact card.
  *                   imageAlt  optional, with image.
  *                   covers    optional. [{ title, text }] what the service includes, two to six.
@@ -106,6 +107,15 @@ function columns(n, most) {
 const list = (value) => (Array.isArray(value) ? value : []);
 const paras = (value) => (Array.isArray(value) ? value : value ? [value] : []);
 
+/** A service their site only names has no page of its own, which would say nothing under its heading; it is listed by name. */
+const hasPage = (s) => Boolean(s.lead || s.text || list(s.covers).length || list(s.questions).length);
+
+/** A link to the service's page, or its name alone where it has none. */
+function ServiceLink({ s, ...rest }) {
+  if (hasPage(s)) return <a href={`/services/${s.slug}`} {...rest} />;
+  return <span className={rest.className}>{rest.children}</span>;
+}
+
 function Eyebrow({ children, className = '', light = false }) {
   return (
     <p className={`mb-4 flex items-center gap-3 text-[12.5px] font-bold uppercase tracking-[0.18em] ${light ? 'text-white/85' : 'text-accent'} ${className}`}>
@@ -130,7 +140,7 @@ function groupsOf(b) {
 }
 
 export function pages(b) {
-  const out = ['services', ...list(b.services).map((s) => `services/${s.slug}`)];
+  const out = ['services', ...list(b.services).filter(hasPage).map((s) => `services/${s.slug}`)];
   if (list(b.team).length) out.push('team');
   out.push('about');
   if (list(b.faqs).length || list(b.resources).length) out.push('resources');
@@ -185,17 +195,17 @@ function MegaMenu({ b, groups, path, k, open, id }) {
                   const here = path === `services/${s.slug}`;
                   return (
                     <li key={s.slug}>
-                      <a
-                        href={`/services/${s.slug}`}
+                      <ServiceLink
+                        s={s}
                         aria-current={here ? 'page' : undefined}
-                        className={`flex gap-3.5 rounded-xl p-3 no-underline transition-colors hover:bg-surface focus-visible:bg-surface ${here ? 'bg-surface' : ''}`}
+                        className={`flex gap-3.5 rounded-xl p-3 no-underline transition-colors ${hasPage(s) ? 'hover:bg-surface focus-visible:bg-surface' : ''} ${here ? 'bg-surface' : ''}`}
                       >
                         <Icon size={24} strokeWidth={1.25} className="mt-0.5 flex-none text-primary" aria-hidden="true" />
                         <span className="grid gap-0.5">
                           <span className="font-semibold text-ink">{s.title}</span>
                           {s.summary && <span className="text-sm leading-snug text-muted">{s.summary}</span>}
                         </span>
-                      </a>
+                      </ServiceLink>
                     </li>
                   );
                 })}
@@ -353,14 +363,14 @@ function Header({ b, path, k, groups, nav, tel, ctaLabel }) {
                       const Icon = iconFor(s.icon);
                       return (
                         <li key={s.slug}>
-                          <a
-                            href={`/services/${s.slug}`}
-                            className="flex min-h-12 items-center gap-3 rounded-xl px-2 text-base font-semibold text-ink no-underline hover:bg-surface"
+                          <ServiceLink
+                            s={s}
+                            className={`flex min-h-12 items-center gap-3 rounded-xl px-2 text-base font-semibold text-ink no-underline ${hasPage(s) ? 'hover:bg-surface' : ''}`}
                             aria-current={path === `services/${s.slug}` ? 'page' : undefined}
                           >
                             <Icon size={22} strokeWidth={1.25} className="flex-none text-primary" aria-hidden="true" />
                             {s.title}
-                          </a>
+                          </ServiceLink>
                         </li>
                       );
                     })}
@@ -619,36 +629,39 @@ function Affiliations({ b, k, className = '' }) {
 
 function ServiceCard({ s, compact = false }) {
   const Icon = iconFor(s.icon);
+  const box = hasPage(s) ? cardLink : 'rounded-lg border border-line bg-white';
   if (compact) {
     return (
-      <a href={`/services/${s.slug}`} className={`group flex h-full items-center gap-4 p-5 text-ink no-underline ${cardLink}`}>
+      <ServiceLink s={s} className={`group flex h-full items-center gap-4 p-5 text-ink no-underline ${box}`}>
         <span className="grid size-12 flex-none place-items-center rounded-md bg-primary/[0.07] text-primary">
           <Icon size={24} strokeWidth={1.5} aria-hidden="true" />
         </span>
         <span className="min-w-0 flex-1 font-heading font-display-2 text-[1.15rem] leading-snug">{s.title}</span>
-        <ArrowRight size={18} className="flex-none text-primary transition-transform group-hover:translate-x-1" aria-hidden="true" />
-      </a>
+        {hasPage(s) && <ArrowRight size={18} className="flex-none text-primary transition-transform group-hover:translate-x-1" aria-hidden="true" />}
+      </ServiceLink>
     );
   }
   return (
-    <a href={`/services/${s.slug}`} className={`group flex h-full gap-4 p-5 text-ink no-underline sm:flex-col sm:gap-0 sm:p-6 lg:p-7 ${cardLink}`}>
+    <ServiceLink s={s} className={`group flex h-full gap-4 p-5 text-ink no-underline sm:flex-col sm:gap-0 sm:p-6 lg:p-7 ${box}`}>
       <span className="grid size-12 flex-none place-items-center rounded-md bg-primary/[0.07] text-primary sm:size-[52px]">
         <Icon size={26} strokeWidth={1.5} aria-hidden="true" />
       </span>
       <span className="flex min-w-0 flex-1 flex-col">
         <h3 className="mb-2 mt-2 font-heading font-display-2 text-[1.2rem] leading-snug sm:mb-2.5 sm:mt-5">{s.title}</h3>
         <span className="mb-4 text-base leading-[1.6] text-muted sm:mb-5">{s.text}</span>
-        <span className="mt-auto inline-flex items-center gap-1.5 font-bold text-primary">
-          Learn More <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" aria-hidden="true" />
-        </span>
+        {hasPage(s) && (
+          <span className="mt-auto inline-flex items-center gap-1.5 font-bold text-primary">
+            Learn More <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" aria-hidden="true" />
+          </span>
+        )}
       </span>
-    </a>
+    </ServiceLink>
   );
 }
 
 function ServiceGrid({ groups }) {
-  // Most lines with nothing to say beyond their name are drawn as a list of
-  // links rather than as cards with an empty middle.
+  // Most lines with nothing to say beyond their name are drawn as a list
+  // rather than as cards with an empty middle.
   const all = groups.flatMap((g) => g.items);
   const compact = all.filter((s) => !s.text).length * 2 >= all.length;
   return (
@@ -973,7 +986,7 @@ function ServicePage(props) {
   const covers = list(s.covers);
   const questions = list(s.questions);
   const group = groups.find((g) => g.items.includes(s));
-  const related = [...(group?.items || []), ...list(b.services)].filter((o, i, all) => o !== s && all.indexOf(o) === i).slice(0, 3);
+  const related = [...(group?.items || []), ...list(b.services)].filter((o, i, all) => o !== s && hasPage(o) && all.indexOf(o) === i).slice(0, 3);
   return (
     <>
       <PageHero
@@ -987,8 +1000,7 @@ function ServicePage(props) {
           </p>
         }
         title={s.title}
-        // A service their site only names still says under its heading who offers it and where.
-        text={s.lead || s.text || `${b.shortName} offers ${s.title.toLowerCase()} in ${b.town}. Ask ${k.talk} about it when you call or write.`}
+        text={s.lead || s.text}
         image={s.image}
         imageAlt={s.imageAlt}
         aside={<OfficeCard b={b} tel={tel} ctaLabel={ctaLabel} k={k} />}
@@ -1360,7 +1372,7 @@ export default function Professional({ b, path = '' }) {
   const hasTeam = list(b.team).length > 0;
   const hasResources = list(b.faqs).length > 0 || list(b.resources).length > 0;
   const nav = [hasTeam && ['team', 'Our Team'], ['about', 'About'], hasResources && ['resources', 'Resources'], ['contact', 'Contact']].filter(Boolean);
-  const service = path.startsWith('services/') ? list(b.services).find((s) => `services/${s.slug}` === path) : null;
+  const service = path.startsWith('services/') ? list(b.services).find((s) => hasPage(s) && `services/${s.slug}` === path) : null;
   const props = { b, k, path, tel, ctaLabel, groups, nav, hasTeam };
 
   let page = <HomePage {...props} />;
