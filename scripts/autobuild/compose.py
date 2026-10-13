@@ -580,6 +580,13 @@ def colors_of(logo_inks, css, template):
     while images.contrast(accent, ink) < 4 and tries < 40:
         accent = images.shade(accent, 1.12)
         tries += 1
+    if template == "professional":
+        # The professional template draws the accent as small labels on white,
+        # so it is darkened again until it reads there, as far as it still
+        # reads on the dark grounds.
+        while images.contrast(accent, (255, 255, 255)) < 4.5 and images.contrast(images.shade(accent, 0.92), ink) >= 3 and tries < 80:
+            accent = images.shade(accent, 0.92)
+            tries += 1
     surface = images.mix((255, 255, 255), inks[0], 0.06)
     out = {
         "primary": images.hexof(primary),
