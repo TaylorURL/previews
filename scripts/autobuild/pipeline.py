@@ -28,6 +28,13 @@ before it opened whose letter had not gone - go from its opening rather than
 from 8:00, outside the day's ceiling, and ahead of anything built. --catch-up
 sends those and nothing else and builds nothing, which is how the 7:00 session
 sends them before its turn while it holds the lock this script runs under.
+
+A business the studio holds a number for and no address is built for ahead of
+the letters' businesses while fewer than forty of their sites wait to be sent,
+and its site is sent by text rather than by letter
+(taylorurl-com lib/outreach/sending/texts.js): only once texting is switched on
+and its start has passed, 9:00 to 17:00 Houston time Monday to Saturday, and
+within the text line's own daily cap. Texts spend none of the letters' ceiling.
 """
 
 import os
@@ -61,6 +68,9 @@ HOUSTON = ZoneInfo("America/Chicago")
 # The outreach machine's own window (taylorurl-com lib/outreach/sending/schedule.js):
 # 8:00 to 17:00 Houston time, Monday to Saturday.
 SEND_HOURS = range(8, 17)
+# The text line's window (taylorurl-com lib/outreach/sending/texts.js): 9:00 to
+# 17:00 Houston time, Monday to Saturday.
+TEXT_HOURS = range(9, 17)
 SPACING = 20
 
 
@@ -283,7 +293,8 @@ def call(*args):
 def settings():
     return routine.rest(
         "GET",
-        "outreach_settings?select=daily_cap,sending_enabled,catch_up_held_since,catch_up_from,catch_up_until&limit=1",
+        "outreach_settings?select=daily_cap,sending_enabled,catch_up_held_since,catch_up_from,catch_up_until,"
+        "texting_enabled,texting_starts_at,text_daily_cap&limit=1",
     )[0]
 
 
@@ -293,11 +304,16 @@ def ceiling(row):
 
 
 def unsent():
-    """Registered, live sites whose letter has not gone, oldest first."""
-    return routine.rest(
+    """Registered, live sites whose letter or text has not gone, oldest first.
+    A business the text line has refused is left out: its number cannot take
+    the text, and asking again would only be refused again."""
+    rows = routine.rest(
         "GET",
-        "preview_sites?select=slug,prospect_id,created_at&sent_at=is.null&prospect_id=not.is.null&order=created_at",
+        "preview_sites?select=slug,prospect_id,created_at,channel,outreach_prospects(preview_skipped_at)"
+        "&sent_at=is.null&prospect_id=not.is.null&order=created_at",
     ) or []
+    return [row for row in rows
+            if row["channel"] != "text" or not (row.get("outreach_prospects") or {}).get("preview_skipped_at")]
 
 
 def catching_up():
@@ -305,6 +321,53 @@ def catching_up():
 
 
 def send_waiting(report, held_only=False):
+    """Sends the registered sites whose letter or text has not gone: the
+    letters, then the texts. held_only sends a catch-up's held letters alone."""
+    row = settings()
+    if not row["sending_enabled"]:
+        report["notes"].append("sending is switched off, so no letter or text went")
+        return
+    sites = unsent()
+    send_letters(report, row, [site for site in sites if site["channel"] != "text"], held_only)
+    if not held_only:
+        send_texts(report, row, [site for site in sites if site["channel"] == "text"])
+
+
+def send_texts(report, row, sites):
+    """Sends the first text of each site filed to go by text.
+
+    Only while the text line is open: texting switched on, its start passed,
+    inside its hours and within its daily cap, which follow-ups spend too. The
+    endpoint holds the same line and answers 503 when it is shut, so this only
+    keeps the run from asking when the answer is already known.
+    """
+    if not sites:
+        return
+    now = datetime.now(HOUSTON)
+    starts = routine.instant(row.get("texting_starts_at"))
+    if not row.get("texting_enabled") or not starts or starts > now:
+        report["notes"].append(f"{len(sites)} text previews wait for the text line to open")
+        return
+    if now.weekday() == 6 or now.hour not in TEXT_HOURS:
+        report["notes"].append("outside texting hours, so no text went")
+        return
+    room = (row.get("text_daily_cap") or 0) - routine.texts_sent_today()
+    for site in sites:
+        if room <= 0 or time.time() > deadline() - 120:
+            break
+        code, out = call("send", site["slug"])
+        log("text", site["slug"], out[-200:])
+        if code == 0:
+            report["sent"].append(site["slug"])
+            room -= 1
+            continue
+        report["not_sent"].append({"slug": site["slug"], "why": out[-200:]})
+        # A 503 is the line itself shut, which no later site would find open.
+        if re.search(r": 503 ", out):
+            break
+
+
+def send_letters(report, row, sites, held_only):
     """Sends the registered sites whose letter has not gone.
 
     A catch-up's held letters go first and outside the ceiling, from the
@@ -313,11 +376,7 @@ def send_waiting(report, held_only=False):
     held letters alone.
     """
     now = datetime.now(HOUSTON)
-    row = settings()
     opened, active = routine.catch_up(row)
-    if not row["sending_enabled"]:
-        report["notes"].append("sending is switched off, so no letter went")
-        return
     # The catch-up moves the opening forward for its held letters alone; the
     # day's own keep the normal hours.
     own_open = now.weekday() != 6 and now.hour in SEND_HOURS
@@ -326,7 +385,6 @@ def send_waiting(report, held_only=False):
         report["notes"].append("outside sending hours, so no letter went")
         return
     room = ceiling(row) - routine.sent_today_count()
-    sites = unsent()
     held = [site for site in sites if held_open and routine.instant(site["created_at"]) < opened]
     own = [site for site in sites if site not in held] if own_open and not held_only else []
     first = True

@@ -12,16 +12,20 @@ environment and nowhere else.
       -- scripts/routine.py <command> ...
 
 Commands:
-    candidates [N]                 every prospect whose third letter (the
-                                   preview) is due, oldest due first, as
-                                   JSON; N caps the list for a look, and the
-                                   routine passes none
+    candidates [N]                 the businesses owed a preview by text,
+                                   while few of their sites wait, then every
+                                   prospect whose third letter (the preview)
+                                   is due, oldest due first, as JSON; N caps
+                                   the list for a look, and the routine
+                                   passes none
     waiting                        how many prospects are due a site now
     skip PROSPECT_ID REASON        record that no site can be built for this
                                    business, so it stops being offered
     register SLUG PROSPECT_ID LETTER_JSON
                                    file the preview and its letter; the
-                                   industry and name come from the prospect.
+                                   industry and name come from the prospect,
+                                   and a prospect with no address is filed to
+                                   go by text.
                                    Refused until the review has passed the
                                    site as its brand file stands
                                    (python3 -m scripts.autobuild.review SLUG)
@@ -31,10 +35,11 @@ Commands:
                                    phone size, compose one image, store it and
                                    file its address on the preview, so the
                                    letter can show the site
-    send SLUG                      send the first letter through
-                                   /api/outreach/previews
+    send SLUG                      send the first letter, or the first
+                                   text, through /api/outreach/previews
     sent-today                     how many preview letters went out today,
                                    less any a catch-up held
+    texts-today                    how many texts the text line sent today
 """
 
 import hashlib
@@ -51,6 +56,9 @@ from datetime import datetime, timedelta, timezone
 
 SUPABASE = "https://gujgtjqqurildqurpffh.supabase.co"
 SEND = "https://www.taylorurl.com/api/outreach/previews"
+# The most text previews built ahead of the text line: sites wait for it to
+# open, and a draft built months before its text goes is a draft gone stale.
+TEXT_BACKLOG = 40
 INDUSTRY = {
     "plumber": "plumbing",
     "barber shop": "barber",
@@ -125,7 +133,20 @@ def due():
     # The database hands back the whole list, oldest due first, so whatever one
     # run cannot reach is at the head of the next run's list.
     ready = templates()
-    rows = rest("POST", "rpc/preview_candidates", {}) or []
+    # The businesses the studio can only text go first, but only as many as
+    # keep TEXT_BACKLOG sites waiting on the text line, so the letters behind
+    # them wait on a handful of builds and never on the whole list. The
+    # professional template shows the business's address, which none of these
+    # has, so it never draws one.
+    rows = []
+    backlog = len(rest("GET", "preview_sites?select=id,outreach_prospects!inner(preview_skipped_at)"
+                              "&channel=eq.text&sent_at=is.null"
+                              "&outreach_prospects.preview_skipped_at=is.null") or [])
+    if backlog < TEXT_BACKLOG:
+        texts = [row for row in rest("POST", "rpc/preview_text_candidates", {}) or []
+                 if row["industry"] in ready and row["industry"] != "professional" and not row.get("parked_at")]
+        rows += texts[:TEXT_BACKLOG - backlog]
+    rows += [dict(row, channel="email") for row in rest("POST", "rpc/preview_candidates", {}) or []]
     return [row for row in rows if row["industry"] in ready]
 
 
@@ -182,7 +203,7 @@ def register(slug, prospect_id, letter_path):
         sys.exit("the letter needs a subject and at least two paragraphs")
     if not any("{url}" in p for p in letter["paragraphs"]):
         sys.exit("the letter never gives the preview's address; write {url} where it goes")
-    found = rest("GET", f"outreach_prospects?id=eq.{prospect_id}&select=id,name,trade")
+    found = rest("GET", f"outreach_prospects?id=eq.{prospect_id}&select=id,name,trade,email")
     if not found:
         sys.exit(f"no prospect {prospect_id}")
     prospect = found[0]
@@ -196,9 +217,11 @@ def register(slug, prospect_id, letter_path):
         "name": prospect["name"],
         "business": {"source": "src/brands/" + slug + ".json"},
         "letter": letter,
+        # A business with no address on file is sent its preview by text.
+        "channel": "email" if prospect.get("email") else "text",
     }
     rest("POST", "preview_sites?on_conflict=slug", row, prefer="resolution=merge-duplicates,return=minimal")
-    print(f"registered {slug} for {prospect['name']}")
+    print(f"registered {slug} for {prospect['name']}{'' if prospect.get('email') else ', to go by text'}")
 
 
 def live(slug):
@@ -301,9 +324,15 @@ def send(slug):
     secret = os.environ.get("CRON_SECRET")
     if not secret:
         sys.exit("CRON_SECRET is not set; run under with-credential.py")
+    # A preview filed to go by text says so, so the endpoint sends it down the
+    # text line without asking the mailbox.
+    filed = rest("GET", f"preview_sites?slug=eq.{slug}&select=channel")
+    body = {"slug": slug}
+    if filed and filed[0].get("channel") == "text":
+        body["channel"] = "text"
     request = urllib.request.Request(
         SEND,
-        data=json.dumps({"slug": slug}).encode(),
+        data=json.dumps(body).encode(),
         method="POST",
         headers={"Authorization": f"Bearer {secret}", "Content-Type": "application/json"},
     )
@@ -339,21 +368,28 @@ def catch_up(settings, now=None):
     return opened, opened <= now < until
 
 
+def day_start():
+    """When Houston's day began, as Houston's local time and as the UTC
+    instant PostgREST is asked about."""
+    from zoneinfo import ZoneInfo
+
+    local = datetime.now(ZoneInfo("America/Chicago"))
+    start = local.replace(hour=0, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
+    return local, start.isoformat().replace("+00:00", "Z")
+
+
 def sent_today_count():
     """Preview letters that went today, less the ones a catch-up held.
 
     The day is Houston's, so a letter sent at five in the afternoon counts
     toward that day and not toward the next morning's run. A catch-up's held
     letters are left out on the day it opened, so the backlog does not spend
-    the cap the day's own letters are paced by.
+    the cap the day's own letters are paced by. A preview sent by text is not
+    a letter and spends none of it.
     """
-    from zoneinfo import ZoneInfo
-
-    houston = ZoneInfo("America/Chicago")
-    local = datetime.now(houston)
-    start = local.replace(hour=0, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
-    rows = rest("GET", "preview_sites?select=slug,created_at,sent_at"
-                       f"&sent_at=gte.{start.isoformat().replace('+00:00', 'Z')}") or []
+    local, start = day_start()
+    houston = local.tzinfo
+    rows = rest("GET", f"preview_sites?select=slug,created_at,sent_at&channel=eq.email&sent_at=gte.{start}") or []
     settings = rest("GET", "outreach_settings?select=catch_up_held_since,catch_up_from,catch_up_until&limit=1")
     opened, _ = catch_up(settings[0] if settings else {})
     if opened and opened.astimezone(houston).date() == local.date():
@@ -364,6 +400,13 @@ def sent_today_count():
 
 def sent_today():
     print(sent_today_count())
+
+
+def texts_sent_today():
+    """Texts the text line sent today, Houston's day, first texts and
+    follow-ups alike: the count the line's own daily cap is held to."""
+    _, start = day_start()
+    return len(rest("GET", f"outreach_texts?select=id&direction=eq.outbound&sent_at=gte.{start}") or [])
 
 
 def main(argv):
@@ -386,6 +429,8 @@ def main(argv):
         send(rest_args[0])
     elif command == "sent-today":
         sent_today()
+    elif command == "texts-today":
+        print(texts_sent_today())
     else:
         sys.exit(__doc__)
 
