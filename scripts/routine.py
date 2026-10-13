@@ -12,11 +12,12 @@ environment and nowhere else.
       -- scripts/routine.py <command> ...
 
 Commands:
-    candidates [N]                 every prospect whose third letter (the
-                                   preview) is due, oldest due first, then
-                                   the businesses owed a preview by text, as
-                                   JSON; N caps the list for a look, and the
-                                   routine passes none
+    candidates [N]                 the businesses owed a preview by text,
+                                   while few of their sites wait, then every
+                                   prospect whose third letter (the preview)
+                                   is due, oldest due first, as JSON; N caps
+                                   the list for a look, and the routine
+                                   passes none
     waiting                        how many prospects are due a site now
     skip PROSPECT_ID REASON        record that no site can be built for this
                                    business, so it stops being offered
@@ -132,18 +133,20 @@ def due():
     # The database hands back the whole list, oldest due first, so whatever one
     # run cannot reach is at the head of the next run's list.
     ready = templates()
-    rows = [dict(row, channel="email") for row in rest("POST", "rpc/preview_candidates", {}) or []]
-    # The businesses the studio can only text come after every letter, and only
-    # as many as keep TEXT_BACKLOG sites waiting on the text line. The
+    # The businesses the studio can only text go first, but only as many as
+    # keep TEXT_BACKLOG sites waiting on the text line, so the letters behind
+    # them wait on a handful of builds and never on the whole list. The
     # professional template shows the business's address, which none of these
     # has, so it never draws one.
+    rows = []
     backlog = len(rest("GET", "preview_sites?select=id,outreach_prospects!inner(preview_skipped_at)"
                               "&channel=eq.text&sent_at=is.null"
                               "&outreach_prospects.preview_skipped_at=is.null") or [])
     if backlog < TEXT_BACKLOG:
         texts = [row for row in rest("POST", "rpc/preview_text_candidates", {}) or []
-                 if row["industry"] != "professional" and not row.get("parked_at")]
+                 if row["industry"] in ready and row["industry"] != "professional" and not row.get("parked_at")]
         rows += texts[:TEXT_BACKLOG - backlog]
+    rows += [dict(row, channel="email") for row in rest("POST", "rpc/preview_candidates", {}) or []]
     return [row for row in rows if row["industry"] in ready]
 
 

@@ -29,8 +29,9 @@ from 8:00, outside the day's ceiling, and ahead of anything built. --catch-up
 sends those and nothing else and builds nothing, which is how the 7:00 session
 sends them before its turn while it holds the lock this script runs under.
 
-A business the studio holds a number for and no address is built for after
-every letter's business, and its site is sent by text rather than by letter
+A business the studio holds a number for and no address is built for ahead of
+the letters' businesses while fewer than forty of their sites wait to be sent,
+and its site is sent by text rather than by letter
 (taylorurl-com lib/outreach/sending/texts.js): only once texting is switched on
 and its start has passed, 9:00 to 17:00 Houston time Monday to Saturday, and
 within the text line's own daily cap. Texts spend none of the letters' ceiling.
