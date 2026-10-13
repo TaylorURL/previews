@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ArrowUpRight, Clock, Mail, MapPin, Menu, Phone, X } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { Img, Logo, Stars, Facts } from './shared.jsx';
+import { Img, Logo, Stars, Facts, StudioCredit } from './shared.jsx';
 import { onColor } from './barber/color.js';
 
 /** Primary pulled toward the ink color, so it stays readable as text on the dark ground. */
@@ -548,6 +548,7 @@ export default function Barber({ b }) {
         <div className={`${wrap} pb-28 md:pb-10`}>
           <p className="m-0 border-t border-line pt-6 text-[13px] text-muted">
             &copy; {new Date().getFullYear()} {b.name}
+            <StudioCredit b={b} />
           </p>
         </div>
       </footer>

@@ -149,7 +149,7 @@ import {
   X,
 } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { EnquiryForm, Img, Stars, Facts } from './shared.jsx';
+import { EnquiryForm, Img, Stars, Facts, StudioCredit } from './shared.jsx';
 import { onColor } from './printing/color.js';
 
 const CATEGORY_ICONS = {
@@ -960,6 +960,7 @@ function Footer({ b, tel }) {
         <p className="flex flex-wrap items-center justify-between gap-3 border-t border-white/10 py-6 text-[15px] text-white/50">
           <span>
             &copy; {new Date().getFullYear()} {b.name}
+            <StudioCredit b={b} />
           </span>
           <Reg className="h-4 w-4" />
         </p>

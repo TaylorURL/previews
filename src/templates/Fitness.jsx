@@ -1,4 +1,4 @@
-import { Facts } from './shared.jsx';
+import { Facts, StudioCredit } from './shared.jsx';
 /**
  * FITNESS - a gym or group-training studio, drawn dark: a near-black ground,
  * the brand color as the one bright accent, oversized condensed capitals.
@@ -392,6 +392,7 @@ function Footer({ b, nav, ctx }) {
       <div className={`${wrap} pb-8`}>
         <p className="m-0 border-t border-line pt-6 text-[13px] text-muted">
           &copy; {new Date().getFullYear()} {b.name}
+          <StudioCredit b={b} />
         </p>
       </div>
     </footer>

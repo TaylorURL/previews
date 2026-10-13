@@ -211,3 +211,53 @@ export function Facts({ b }) {
     </section>
   );
 }
+
+/**
+ * Where the studio posts, as taylorurl.com holds them: the Facebook Page in
+ * src/app/data/reputation/facebook.js and the Instagram account beside the
+ * menu in src/app/constants/navigation.js. They are written again here rather
+ * than imported, since this repo builds on its own, so a page that moves there
+ * moves here too.
+ *
+ * Each carries the tags that say a visit came off a preview's footer, added to
+ * whatever query the address already has: the Page is a numbered profile, and
+ * its `?id=` has to survive the tagging.
+ */
+const STUDIO_FOLLOW = [
+  { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61591005089902' },
+  { label: 'Instagram', href: 'https://www.instagram.com/taylorwebdev/' },
+].map(({ label, href }) => {
+  const url = new URL(href);
+  url.searchParams.set('utm_source', 'preview');
+  url.searchParams.set('utm_medium', 'footer');
+  url.searchParams.set('utm_campaign', 'follow');
+  return { label, href: url.toString() };
+});
+
+/**
+ * The studio's credit under a preview's copyright line, with the two places
+ * an owner can follow its work.
+ *
+ * It sits on the copyright line rather than in a section of its own because
+ * the footer is the business's, and the credit is the one line in it that is
+ * not. It takes the line's own size and ink, so it reads as part of whichever
+ * footer it lands in, and draws nothing on a page that is not a preview: a
+ * template's sample, or a site that has gone live in its owner's name, carries
+ * no credit.
+ */
+export function StudioCredit({ b }) {
+  if (!b.preview) return null;
+  return (
+    <span className="mt-1 block">
+      Designed by TaylorURL
+      {STUDIO_FOLLOW.map(({ label, href }) => (
+        <span key={label}>
+          {' · '}
+          <a href={href} target="_blank" rel="noopener" className="underline underline-offset-2">
+            {label}
+          </a>
+        </span>
+      ))}
+    </span>
+  );
+}

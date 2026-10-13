@@ -165,7 +165,7 @@ import {
   Zap,
 } from 'lucide-react';
 import { brandVars, displayVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { BrandLogo, EnquiryForm, Img, Stars, Facts } from './shared.jsx';
+import { BrandLogo, EnquiryForm, Img, Stars, Facts, StudioCredit } from './shared.jsx';
 import { onColor } from './hvac/color.js';
 
 const ICONS = {
@@ -860,6 +860,7 @@ function Footer({ b, groups, tel }) {
       <div className={wrap}>
         <p className="border-t border-line py-6 text-[16px] md:text-[14px]">
           &copy; {new Date().getFullYear()} {b.name}
+          <StudioCredit b={b} />
         </p>
       </div>
     </footer>

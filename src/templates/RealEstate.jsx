@@ -21,7 +21,7 @@ import {
   X,
 } from 'lucide-react';
 import { brandVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { EnquiryForm, Img, Stars, Facts } from './shared.jsx';
+import { EnquiryForm, Img, Stars, Facts, StudioCredit } from './shared.jsx';
 
 const U = 'https://images.unsplash.com/';
 const SAMPLE_LISTINGS = [
@@ -638,6 +638,7 @@ export default function RealEstate({ b }) {
             <p>
               &copy; {new Date().getFullYear()} {b.name}
               {b.mlsId ? ` · MLS ID #${b.mlsId}` : ''}
+              <StudioCredit b={b} />
             </p>
             <p>Equal Housing Opportunity</p>
           </div>

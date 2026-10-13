@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, ChevronDown, Mail, MapPin, Menu, Phone, X } from 'lucide-react';
 import { mapsHref } from '../../site.js';
+import { StudioCredit } from '../shared.jsx';
 import { DAY_NAMES, daysOf, hoursOn, isClosed, todayInHouston } from './hours.js';
 import { Eyebrow, cardTitle, edgeL, edgeLlg, edgeR, ghostDark, href, iconFor, solid, wrap } from './ui.jsx';
 
@@ -459,6 +460,7 @@ export function Footer({ b, tel, today }) {
         <div className={wrap}>
           <p className="border-t border-white/10 py-6 text-[14px] text-white/55">
             &copy; {new Date().getFullYear()} {b.name}
+            <StudioCredit b={b} />
           </p>
         </div>
       </div>

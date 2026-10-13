@@ -65,7 +65,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, Check, ChevronDown, Clock, ExternalLink, Mail, MapPin, Menu, Phone, Plus, X } from 'lucide-react';
 import { brandVars, displayVars, mapsHref, telHref } from '../site.js';
-import { BrandLogo, EnquiryForm, Img, Stars, Facts } from './shared.jsx';
+import { BrandLogo, EnquiryForm, Img, Stars, Facts, StudioCredit } from './shared.jsx';
 import { iconFor } from './professional/icons.js';
 
 const KIND = {
@@ -1315,6 +1315,7 @@ function Footer({ b, nav, tel }) {
         <div className="flex flex-col gap-2 border-t border-line py-6 text-base text-muted sm:text-sm md:flex-row md:justify-between md:gap-8">
           <p>
             &copy; {new Date().getFullYear()} {b.name}
+            <StudioCredit b={b} />
           </p>
           {b.license && <p className="md:text-right">{b.license}</p>}
         </div>
