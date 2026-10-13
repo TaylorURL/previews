@@ -207,7 +207,7 @@ def other_trade(text, trade):
 
 SINCE = re.compile(r"\b(?:since|established|founded|est\.?|serving [^.]{0,40} since)\s+((?:19|20)\d\d)\b", re.I)
 LICENSE = re.compile(r"\b((?:TDLR|TACLA|TECL|TDI|NPN|License|Lic\.)\s*(?:No\.?|#|Number)\s*:?\s*[A-Z]{0,6}-?\d[\w-]{3,})", re.I)
-NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|your|schedule|consult|consultation|request|checklist|estimator|calculator|types of|our |blog|news|faq|cost|price|pricing|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|office|branch|powered|serving|products|vice president|vp|agents?|industry|page|companies|finance a)\b", re.I)
+NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|your|schedule|consult|consultation|request|checklist|estimator|calculator|types of|our |blog|news|faq|cost|price|pricing|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|office|branch|powered|serving|products|vice president|vp|agents?|assistants?|hygienists?|receptionists?|coordinators?|managers?|industry|page|companies|finance a)\b", re.I)
 ACRONYMS = {"IRS", "CFO", "CPA", "CPAS", "HVAC", "AC", "A/C", "TPO", "LLC", "QB", "EPDM", "UV", "HOA", "1031", "S-CORP"}
 # A business's own name, or anything carrying a corporate suffix, is never
 # one of its services.
@@ -470,6 +470,9 @@ def about_of(pages, name, trade=None):
             if tag != "p" or header or len(text) < 90:
                 continue
             if re.search(r"cookie|javascript|copyright|all rights reserved|privacy|©|% off|\$\d|off any|coupon|call (us|now|today)|click here", text, re.I):
+                continue
+            # Their contact form's own instructions ("Use the form to request an appointment") are not about them.
+            if re.search(r"\b(?:use|fill (?:out|in)|complete|submit) (?:the|our|this) form\b", text, re.I):
                 continue
             if not is_about and not re.search(rf"\b(we|our|{re.escape(short)})\b", text, re.I):
                 continue
