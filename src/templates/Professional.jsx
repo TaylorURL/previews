@@ -47,7 +47,7 @@
  *                   icon      optional. A key from src/templates/professional/icons.js ("car", "house", "calculator"...).
  *                   summary   one short line for the mega menu, under 50 characters.
  *                   text      one or two sentences for the service card.
- *                   lead      optional. The opening paragraph of the service's own page. Falls back to text.
+ *                   lead      optional. The opening paragraph of the service's own page. Falls back to text, then to a line naming the business and its town.
  *                   image     optional. Photo for the service page hero; without one the hero shows a contact card.
  *                   imageAlt  optional, with image.
  *                   covers    optional. [{ title, text }] what the service includes, two to six.
@@ -443,9 +443,10 @@ function PageHero({ eyebrow, title, text, trail, image, imageAlt, aside, childre
             {text && <p className={`mt-5 max-w-2xl ${lead}`}>{text}</p>}
             {children}
           </div>
+          {/* Drawn in its own shape and no taller than the band, so a portrait keeps the head and is not blown up to the column's width. */}
           {image && (
             <Img
-              className="aspect-[4/3] w-full rounded-lg object-cover lg:aspect-[3/2]"
+              className="h-auto max-h-[30rem] w-auto max-w-full justify-self-center rounded-lg lg:justify-self-end"
               src={image}
               alt={imageAlt || ''}
               sizes="(max-width: 1024px) 100vw, 45vw"
@@ -506,9 +507,10 @@ function Hero({ b, tel, ctaLabel }) {
     <section className="relative isolate overflow-hidden bg-primary-deep text-white">
       {image ? (
         <>
-          {/* On a phone the photo is shown whole above the words; from lg up it is the ground behind them. */}
+          {/* On a phone the photo is shown whole above the words; from lg up it fills the band's right part and
+              fades into the brand's color, so the words stand on that color rather than over the people in it. */}
           <Img
-            className="relative block aspect-[16/10] w-full object-cover object-[center_30%] lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto lg:h-full"
+            className="relative block aspect-[16/10] w-full object-cover object-[center_30%] lg:absolute lg:inset-y-0 lg:right-0 lg:-z-20 lg:aspect-auto lg:h-full lg:w-[56%]"
             src={image}
             alt={b.hero.imageAlt || ''}
             sizes="100vw"
@@ -517,7 +519,7 @@ function Hero({ b, tel, ctaLabel }) {
           />
           <div
             aria-hidden="true"
-            className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_94%,#000)_0%,color-mix(in_srgb,var(--primaryDeep)_80%,transparent)_48%,color-mix(in_srgb,var(--primaryDeep)_20%,transparent)_100%)]"
+            className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_94%,#000)_0%,var(--primaryDeep)_44%,color-mix(in_srgb,var(--primaryDeep)_30%,transparent)_62%,transparent_80%)]"
           />
         </>
       ) : (
@@ -985,7 +987,8 @@ function ServicePage(props) {
           </p>
         }
         title={s.title}
-        text={s.lead || s.text}
+        // A service their site only names still says under its heading who offers it and where.
+        text={s.lead || s.text || `${b.shortName} offers ${s.title.toLowerCase()} in ${b.town}. Ask ${k.talk} about it when you call or write.`}
         image={s.image}
         imageAlt={s.imageAlt}
         aside={<OfficeCard b={b} tel={tel} ctaLabel={ctaLabel} k={k} />}
@@ -1247,7 +1250,8 @@ function ContactPage(props) {
             <ul className="border-t border-line">
               {[
                 [Phone, tel, b.phone],
-                [Mail, `mailto:${b.email}`, b.email],
+                // A break point after the '@', so a long address wraps whole at its domain rather than mid-word.
+                [Mail, `mailto:${b.email}`, (b.email || '').split('@').flatMap((p, i) => (i ? ['@', <wbr key={i} />, p] : [p]))],
                 [MapPin, mapsHref(b), address],
               ].map(([Icon, href, label]) => (
                 <li key={href} className="border-b border-line">
