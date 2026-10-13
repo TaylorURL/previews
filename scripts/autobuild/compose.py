@@ -153,7 +153,10 @@ ICONS = {
                 ("building", r".")],
     # The professional template's keys, for the practices drawn on it.
     "legal": [("users", r"family|divorce|custody|adoption|child"), ("house", r"real estate|landlord|tenant|estate|probate|wills?|trust"),
-              ("briefcase", r"business|employment|contract"), ("car", r"\bauto|accident|injury|wrongful"), ("scale", r".")],
+              ("plane", r"aviation|plane|aircraft|helicopter"), ("anchor", r"maritime|offshore|jones act|boat|vessel"),
+              ("truck", r"truck|18.?wheeler|commercial vehicle"), ("motorbike", r"motorcycle"), ("footprints", r"pedestrian"),
+              ("hard-hat", r"workplace|construction|oilfield|industrial|workers"), ("briefcase", r"business|employment|contract"),
+              ("heart", r"wrongful"), ("car", r"\bauto|accident|injury"), ("scale", r".")],
     "dental": [("users", r"family|pediatric|children|kids"), ("shield", r"emergency"), ("stethoscope", r"exam|periodont|gum|oral|sedation"),
                ("smile", r".")],
     "chiropractic": [("car", r"\bauto|accident|whiplash"), ("heart", r"wellness|massage"), ("stethoscope", r"therapy|rehab|acupuncture|needling"),
@@ -263,6 +266,16 @@ def trim(text, limit):
     while out and re.search(r"[,;:–—-]$", out[-1]):
         out.pop()
     return " ".join(out)
+
+
+def gist(text, limit):
+    """trim() for a card's line: when even the first sentence is too long, its
+    opening clause, if it reads as a sentence of its own, stands for it."""
+    cut = trim(text, limit)
+    if cut or not sentences(text):
+        return cut
+    head = re.split(r"[,;:–—]\s", sentences(text)[0])[0].rstrip(".!? ")
+    return head + "." if len(head.split()) >= 4 and len(head) < limit else ""
 
 
 def slugify(text):
@@ -588,7 +601,11 @@ def hero_line(services, town, label):
     services worth naming it is the trade and the town."""
     named = [s["title"] for s in services if not GENERIC_SERVICE.match(s["title"])][:2]
     lower = [" ".join(w if (w.isupper() and len(w) > 1) or w.upper() in ACRONYMS else w.lower() for w in t.split()) for t in named]
-    if len(lower) == 2:
+    # A name that is a phrase of its own ("Storage for moving & life changes")
+    # can't be joined to another with "and"; the trade stands for the two.
+    if len(lower) == 2 and any(re.search(r"&|\b(?:and|or|for|of|with|to)\b", t, re.I) for t in lower):
+        what = label.lower()
+    elif len(lower) == 2:
         a, b = lower
         tail_a, tail_b = a.rsplit(" ", 1), b.rsplit(" ", 1)
         # "Auto insurance and home insurance" reads as "auto and home insurance".

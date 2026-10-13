@@ -1501,7 +1501,7 @@ function AboutPage({ b, tel }) {
               </ol>
             )}
             {(b.since || rating) && (
-              <div className="grid grid-cols-2 gap-4">
+              <div className={`grid gap-4 ${b.since && rating ? 'grid-cols-2' : ''}`}>
                 {b.since && (
                   <div className="rounded-2xl bg-surface p-5">
                     <p className="text-[14px] text-muted">Established</p>

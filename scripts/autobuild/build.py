@@ -359,7 +359,7 @@ def build(prospect, root, slug):
         items = []
         for s in services:
             icon = next((k for k, p in compose.ICONS.get(kind) or compose.ICONS["professional"] if re.search(p, s["title"], re.I)), None)
-            item = {"slug": compose.slugify(s["title"]), "title": s["title"], "summary": compose.trim(s["text"], 50) or s["title"], "text": compose.trim(s["text"], 170) or ""}
+            item = {"slug": compose.slugify(s["title"]), "title": s["title"], "summary": compose.gist(s["text"], 50), "text": compose.gist(s["text"], 170)}
             if s["text"]:
                 item["lead"] = s["text"]
             if icon:
