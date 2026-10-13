@@ -1,0 +1,365 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Hollis Lewis & Company PLLC",
+  "shortName": "Hollis Lewis",
+  "tagline": "Certified public accounting firm serving Houston and The Woodlands",
+  "phone": "(281) 364-8888",
+  "email": "mark@hollislewiscpa.com",
+  "address": "2202 Timberloch Place, STE 112",
+  "town": "The Woodlands",
+  "state": "TX",
+  "zip": "77380",
+  "since": 1947,
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Tell us what you need and the firm will call you back to set up a time to talk it through."
+  },
+  "brand": {
+    "primary": "#14402c",
+    "primaryDeep": "#0d2e1f",
+    "accent": "#96702d",
+    "ink": "#16211c",
+    "muted": "#56635c",
+    "surface": "#f5f4f0",
+    "cream": "#ebe9e1",
+    "line": "#dedbd1",
+    "heading": "'Libre Baskerville', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/hollislewis/logo.webp",
+    "logoWidth": 61,
+    "logoHeight": 74,
+    "logoRatio": 0.818,
+    "logoGround": "#ffffff",
+    "logoName": true
+  },
+  "hero": {
+    "eyebrow": "Certified public accounting firm",
+    "title": "Professional, personalized tax and accounting for Houston and The Woodlands.",
+    "lead": "The firm is dedicated to providing clients with professional, personalized services and guidance in a wide range of financial and business needs.",
+    "image": "/brands/hollislewis/hero",
+    "imageAlt": "Hands reviewing financial charts on a phone and a laptop at a desk",
+    "points": [
+      "Tax preparation and planning",
+      "Small business accounting and payroll",
+      "Practising since 1947"
+    ]
+  },
+  "overview": {
+    "title": "Tax and accounting work for individuals, families and businesses.",
+    "text": "Pick a service to see what it covers, or call the office and talk it through with our team."
+  },
+  "audiences": {
+    "individuals": "Individuals & Families",
+    "businesses": "Businesses"
+  },
+  "services": [
+    {
+      "slug": "individual-tax",
+      "title": "Individual Tax Returns",
+      "audience": "individuals",
+      "icon": "receipt",
+      "summary": "Preparation and planning for personal returns.",
+      "text": "Preparation and planning for individual returns, including help understanding recent tax changes and resolving other tax issues you might have.",
+      "lead": "Hollis Lewis prepares and files individual returns for clients in Houston, The Woodlands and the surrounding areas, and plans ahead for the year to come.",
+      "covers": [
+        {
+          "title": "Return preparation",
+          "text": "Your individual return prepared and filed for the year."
+        },
+        {
+          "title": "Tax planning",
+          "text": "Planning through the year rather than only at filing time."
+        },
+        {
+          "title": "Recent tax changes",
+          "text": "An explanation of the tax changes that affect your return."
+        },
+        {
+          "title": "Other tax issues",
+          "text": "Help resolving other tax issues you might have."
+        }
+      ]
+    },
+    {
+      "slug": "estate-trust",
+      "title": "Estate & Trust Returns",
+      "audience": "individuals",
+      "icon": "landmark",
+      "summary": "Returns for estates and trusts.",
+      "text": "Tax preparation and planning for estates and trusts, handled by the same firm that prepares the family's individual returns.",
+      "lead": "Estates and trusts file their own returns. Hollis Lewis prepares them alongside the individual returns of the people involved.",
+      "covers": [
+        {
+          "title": "Estate returns",
+          "text": "Preparation and filing of the estate's own tax return."
+        },
+        {
+          "title": "Trust returns",
+          "text": "Annual returns for trusts the family has set up."
+        },
+        {
+          "title": "Planning",
+          "text": "Tax planning for the years ahead, not just the year being filed."
+        }
+      ]
+    },
+    {
+      "slug": "gift",
+      "title": "Gift Tax Returns",
+      "audience": "individuals",
+      "icon": "gem",
+      "summary": "Gift tax preparation and planning.",
+      "text": "Gift tax returns prepared and filed, with planning for gifts made during the year and the ones being considered.",
+      "lead": "A gift above the annual limit has to be reported. Hollis Lewis prepares the return and plans the timing of what comes next.",
+      "covers": [
+        {
+          "title": "Return preparation",
+          "text": "The gift tax return prepared and filed for the year."
+        },
+        {
+          "title": "Planning",
+          "text": "A look at gifts being considered before they are made."
+        }
+      ]
+    },
+    {
+      "slug": "business-tax",
+      "title": "Business Tax Returns",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Partnership, S-corp and corporate returns.",
+      "text": "Tax preparation and planning for partnerships, S-corporations and corporations, with the recent tax changes explained as they land.",
+      "lead": "Hollis Lewis prepares business returns for partnerships, S-corporations and corporations, and plans the year so the filing holds no surprises.",
+      "covers": [
+        {
+          "title": "Business partnership",
+          "text": "Partnership returns and the schedules the partners need."
+        },
+        {
+          "title": "S-corp",
+          "text": "Returns for S-corporations and their shareholders."
+        },
+        {
+          "title": "Corporate",
+          "text": "Corporate tax returns prepared and filed."
+        },
+        {
+          "title": "Tax planning",
+          "text": "Planning the year's position rather than reporting it afterwards."
+        }
+      ]
+    },
+    {
+      "slug": "non-profit",
+      "title": "Non-Profit Returns",
+      "audience": "businesses",
+      "icon": "heart",
+      "summary": "Annual returns for non-profit bodies.",
+      "text": "Tax preparation and planning for non-profit organizations, filed on the schedule the organization has to keep.",
+      "lead": "Non-profit organizations file annual returns of their own. Hollis Lewis prepares them and plans for the year ahead.",
+      "covers": [
+        {
+          "title": "Annual return",
+          "text": "The organization's yearly return prepared and filed."
+        },
+        {
+          "title": "Planning",
+          "text": "Tax planning for the organization through the year."
+        }
+      ]
+    },
+    {
+      "slug": "business-accounting",
+      "title": "Small Business Accounting",
+      "audience": "businesses",
+      "icon": "calculator",
+      "summary": "Accounting, payroll and cash flow.",
+      "text": "Small business accounting, payroll and cash flow management for small and medium sized businesses, including 1099 preparation.",
+      "lead": "The firm offers a wide range of business services to small and medium sized businesses, from the monthly books through to payroll and the year's 1099s.",
+      "covers": [
+        {
+          "title": "Small business accounting",
+          "text": "The books kept for small and medium sized businesses."
+        },
+        {
+          "title": "Payroll",
+          "text": "Payroll run for your employees."
+        },
+        {
+          "title": "Cash flow management",
+          "text": "A view of the money coming in and going out."
+        },
+        {
+          "title": "1099 preparation",
+          "text": "The 1099s your business has to issue, prepared and filed."
+        }
+      ]
+    },
+    {
+      "slug": "quickbooks",
+      "title": "QuickBooks Support",
+      "audience": "businesses",
+      "icon": "clipboard-check",
+      "summary": "QuickBooks help for your own books.",
+      "text": "QuickBooks support for businesses that keep their own books, so the file the firm works from is the one you use every day.",
+      "lead": "Hollis Lewis works in QuickBooks with businesses that keep their own records, so the accounting and the tax work start from the same file.",
+      "covers": [
+        {
+          "title": "Setup",
+          "text": "The file set up for the way your business works."
+        },
+        {
+          "title": "Ongoing support",
+          "text": "Questions answered as they come up through the year."
+        }
+      ]
+    },
+    {
+      "slug": "business-consulting",
+      "title": "Business Consulting",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "New business formation and succession.",
+      "text": "Business consulting for small and medium sized businesses, covering new business formation and succession planning.",
+      "lead": "Starting a business and handing one on are both decisions with tax attached. Hollis Lewis works through them with the owner.",
+      "image": "/brands/hollislewis/consulting",
+      "imageAlt": "Two people going over figures on a laptop at a meeting table",
+      "covers": [
+        {
+          "title": "New business formation",
+          "text": "Help setting up the business and choosing how it is structured."
+        },
+        {
+          "title": "Succession planning",
+          "text": "Planning the handover of a business to the next owner."
+        }
+      ]
+    },
+    {
+      "slug": "cost-segregation",
+      "title": "Cost Segregation Studies",
+      "audience": "businesses",
+      "icon": "house",
+      "summary": "Cost segregation on property you own.",
+      "text": "Cost segregation studies for business property, separating out the parts of a building that are written off over a shorter life.",
+      "lead": "A building is not one single asset for tax purposes. A cost segregation study separates out the parts that depreciate faster.",
+      "covers": [
+        {
+          "title": "The study",
+          "text": "The property's costs separated into their depreciation lives."
+        },
+        {
+          "title": "The return",
+          "text": "The result carried through to the business return the firm prepares."
+        }
+      ]
+    },
+    {
+      "slug": "research-development-credits",
+      "title": "Research & Development Credits",
+      "audience": "businesses",
+      "icon": "chart",
+      "summary": "R&D credits claimed on your return.",
+      "text": "Research and development credits worked out and claimed for businesses whose work qualifies for them.",
+      "lead": "Businesses that develop or improve products and processes may qualify for research and development credits. Hollis Lewis works out the claim and files it.",
+      "covers": [
+        {
+          "title": "Qualifying work",
+          "text": "A look at which of your activities count towards the credit."
+        },
+        {
+          "title": "The claim",
+          "text": "The credit calculated and claimed on the business return."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "title": "A tax and accounting practice since 1947.",
+    "text": [
+      "Hollis Lewis & Company PLLC was founded in 1947 by Fox H. Hollis, Jr. to provide tax and accounting services to the Southeast Harris County, Texas area. Mark E. Hollis joined the firm in 1977 as the practice expanded to include the Houston area.",
+      "Gordon A. Lewis merged his Woodlands accounting practice into the Hollis firm in 2002, creating Hollis Lewis & Company PLLC. Together Mark and Gordon have over 90 years of experience providing tax and accounting services."
+    ],
+    "image": "/brands/hollislewis/about",
+    "imageAlt": "An adviser shaking hands with a couple across a desk",
+    "values": [
+      {
+        "title": "Accurate and timely",
+        "text": "The firm is committed to providing clients with accurate, timely and exceptional tax services."
+      },
+      {
+        "title": "Personalized guidance",
+        "text": "Personalized services give clients the insight to navigate a wide range of financial and business needs."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Mark E. Hollis",
+      "role": "CPA",
+      "bio": "Joined the firm in 1977 as the practice expanded to include the Houston area. Reachable at mark@hollislewiscpa.com."
+    },
+    {
+      "name": "Gordon A. Lewis",
+      "role": "CPA",
+      "bio": "Merged his Woodlands accounting practice into the Hollis firm in 2002. Reachable at gordon@hollislewiscpa.com."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Firm Portal",
+      "text": "The client portal the firm links from every page of its own site.",
+      "href": "https://hollislewiscpa.firmportal.com"
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "The Woodlands",
+    "Southeast Harris County"
+  ],
+  "facts": [
+    {
+      "heading": "Industries served",
+      "items": [
+        "Construction",
+        "Healthcare",
+        "Physicians",
+        "Veterinarians",
+        "Hospitality",
+        "Law firms",
+        "Manufacturing",
+        "Real estate",
+        "Retail"
+      ]
+    },
+    {
+      "heading": "Who to email",
+      "items": [
+        "Mark E. Hollis, CPA – mark@hollislewiscpa.com",
+        "Kyle J. Lewis – kyle@hollislewiscpa.com",
+        "Gordon A. Lewis, CPA – gordon@hollislewiscpa.com"
+      ]
+    },
+    {
+      "heading": "Firm portal",
+      "text": "Clients send and collect documents through the firm portal at hollislewiscpa.firmportal.com."
+    }
+  ]
+}

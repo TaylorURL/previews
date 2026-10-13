@@ -1,0 +1,301 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Amy Davis, CPA, PC",
+  "shortName": "Amy Davis",
+  "tagline": "Lighting the Way In Tax Solutions",
+  "phone": "(281) 570-2247",
+  "email": "support@lakehoustoncpas.com",
+  "address": "25708 FM 2100 Rd, Ste B",
+  "town": "Huffman",
+  "state": "TX",
+  "zip": "77336",
+  "license": "A full-service CPA firm licensed in Texas.",
+  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Call us today and we will be happy to offer you a free initial consultation."
+  },
+  "brand": {
+    "primary": "#16365c",
+    "primaryDeep": "#0f2440",
+    "accent": "#9a7b3f",
+    "ink": "#16202b",
+    "muted": "#56606e",
+    "surface": "#f6f5f1",
+    "cream": "#eceae2",
+    "line": "#e0ddd3",
+    "heading": "'Libre Baskerville', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/amydaviscpa/logo.webp",
+    "logoWidth": 256,
+    "logoHeight": 48,
+    "logoRatio": 5.343,
+    "logoGround": "#2f3236"
+  },
+  "hero": {
+    "eyebrow": "CPA firm licensed in Huffman, TX",
+    "title": "A full-service CPA firm for business owners, executives and independent professionals.",
+    "lead": "Amy Davis, CPA, PC is a full-service tax, accounting and business consulting firm in Huffman. By combining our expertise, experience and the energy of our staff, each client receives close personal and professional attention.",
+    "image": "/brands/amydaviscpa/hero",
+    "imageAlt": "Advisors going through paperwork together around a table",
+    "points": ["Free initial consultation", "Affordable, experienced and friendly", "Tax, accounting and QuickBooks under one roof"]
+  },
+  "overview": {
+    "title": "Tax, accounting and business consulting from one office in Huffman.",
+    "text": "Pick a service to see what it covers, or call and talk it through with our team."
+  },
+  "audiences": { "individuals": "Individuals", "businesses": "Businesses" },
+  "services": [
+    {
+      "slug": "tax-preparation",
+      "title": "Tax Preparation",
+      "audience": "individuals",
+      "icon": "file-text",
+      "summary": "Returns prepared, rechecked and e-filed.",
+      "text": "We prepare your return, check it against the points the IRS looks at most closely, and file it electronically so a refund comes back quicker.",
+      "lead": "Today's tax laws are complicated enough that filing a relatively simple return can be confusing, and it is easy to overlook deductions and credits you are entitled to. Even with a software program, there is no substitute for an experienced tax professional.",
+      "covers": [
+        { "title": "Checked and rechecked", "text": "Your return is run through our software to identify potential problems the IRS may look at more closely, and the math is reviewed to limit IRS contacts." },
+        { "title": "Electronic filing", "text": "Your return can be filed electronically, so a refund comes back to you quicker." },
+        { "title": "Withholding adjustments", "text": "We show you how to adjust your payroll withholding to get more money back each week, rather than giving the IRS an interest free loan for up to 16 months." },
+        { "title": "Deductions for next year", "text": "We point out deductions that limit your liability next year, and give you a sheet of commonly overlooked deductions for the year after." },
+        { "title": "Books a mess? No problem", "text": "If you own a small business and have not kept up the bookkeeping, we prepare the year's books, a full Schedule C and your personal return, then set up an easy system you can keep up with." }
+      ],
+      "questions": [
+        { "q": "My bookkeeping is behind. Can you still file for me?", "a": "Yes. We prepare the bookkeeping for the year, then the Schedule C and your personal income tax return, and set up a system that keeps your books in shape next year." }
+      ]
+    },
+    {
+      "slug": "tax-planning",
+      "title": "Tax Planning",
+      "audience": "individuals",
+      "icon": "chart",
+      "summary": "Strategies that lower the bill legally.",
+      "text": "Planning is the key to successfully and legally reducing your tax liability. We go beyond compliance and recommend tax saving strategies that maximize your after-tax income.",
+      "lead": "We look for ways to minimize your taxes throughout the year, not just at the end of it, so businesses and individuals pay the lowest amount allowable by law. We keep up with current tax law, the tax code and new regulations by attending frequent tax seminars.",
+      "covers": [
+        { "title": "Deferring income", "text": "Deferring income and tax liabilities through pension plans, contributions and similar choices, so you keep your money now and pay less later." },
+        { "title": "Income splitting", "text": "Splitting income among several family members or legal entities so more of it is taxed in a lower bracket." },
+        { "title": "Timing income and expenses", "text": "Shifting income or expenses from one year to another so they fall where they will be taxed at a lower rate." },
+        { "title": "Tax exempt income", "text": "Using certain investments to produce income that is exempt from federal or state tax, or from both." },
+        { "title": "Estate and gift taxes", "text": "Reducing the tax on your estate and on your gifts, so your family keeps more of what you have made and you can give more." },
+        { "title": "Retirement distributions", "text": "Reducing the tax on retirement distributions and on investments, so assets grow faster and retirement income goes further." }
+      ],
+      "questions": [
+        { "q": "Is the planning worth the fee?", "a": "Many of our clients save several times the fee in reduced tax liability through careful planning and legitimate tax strategies." }
+      ]
+    },
+    {
+      "slug": "tax-problems",
+      "title": "Tax Problems",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "Audits, back taxes, liens, levies and plans.",
+      "text": "We help you resolve problems with the IRS, efficiently, affordably and discreetly. Penalties and interest are added each day, so these problems do not go away on their own.",
+      "lead": "If you owe the IRS, you have a serious problem. It may take them several years to catch up to you, but they are relentless in collecting what is owed, and once collection starts it affects every part of your life. Rarely do our clients have to talk with the IRS themselves.",
+      "covers": [
+        { "title": "IRS audit representation", "text": "We handle the bureaucracy and the paperwork for you, so you need not take time off work to deal with the IRS." },
+        { "title": "Non-filed tax returns", "text": "Failing to file can be prosecuted and punished with potential jail time, one year for each year not filed. We get the returns filed." },
+        { "title": "Back taxes owed", "text": "Penalties and interest add up fast. We offer several options for resolving unpaid taxes, starting with a free consultation." },
+        { "title": "Problems with payroll taxes", "text": "The IRS treats unpaid payroll taxes as the most serious kind of delinquency, because much of the money is your employees' withholdings." },
+        { "title": "Liens, levies and garnishment", "text": "Liens show up on your credit report and can stop you borrowing against your home. We are often able to get levies released, and a payment plan we negotiate is always more favorable than a wage garnishment." },
+        { "title": "Innocent spouse relief", "text": "Relief designed for situations where one spouse was clearly the victim of fraud by their spouse or ex-spouse." }
+      ],
+      "questions": [
+        { "q": "Can I find out what the IRS has on file about me?", "a": "Yes. Most people are surprised how much the IRS knows about them, and obtaining a copy of your IRS file is critical in working out which options are open to you." },
+        { "q": "What if I do not qualify for an Offer in Compromise?", "a": "A payment plan may be the way to resolve it, and we negotiate that for you." }
+      ]
+    },
+    {
+      "slug": "small-business-accounting",
+      "title": "Small Business Accounting",
+      "audience": "businesses",
+      "icon": "calculator",
+      "summary": "Monthly or quarterly books kept for you.",
+      "text": "We take care of your books for you, so you can get back to running your business. Each month or quarter we reconcile the bank account, produce an income statement and balance sheet, and clean up the general ledger.",
+      "lead": "As a small business owner you have more important things to do than keep your own books. These tasks form the solid foundation of a small business accounting system, and you can customize the package by adding payroll, tax planning or tax preparation.",
+      "image": "/brands/amydaviscpa/small-business-accounting",
+      "imageAlt": "A business owner working through her accounts on a laptop",
+      "covers": [
+        { "title": "Bank reconciliation", "text": "Reconciling your checking account each month keeps the account, the accounting and the taxes up to date, and catches lost checks, unauthorized transactions and unjustified bank charges." },
+        { "title": "Income statement", "text": "An itemized list of revenues less expenses, so you can see operating performance, what is over or under budget, and your income tax liability." },
+        { "title": "Balance sheet", "text": "A snapshot of the business at a moment in time, which shows trends in receivables and payables and whether you are in a position to expand." },
+        { "title": "A clean general ledger", "text": "We review the ledger each month, hunt down discrepancies such as double billings or unrecorded payments, and fix them so the books stay accurate." },
+        { "title": "Unlimited consultations", "text": "Consultations are already included in the price, so call whenever you have a question about the figures we give you." }
+      ],
+      "questions": [
+        { "q": "Can I add other services to the monthly package?", "a": "Yes. Payroll, tax planning, tax preparation or any of our other services can be added to the package you receive." }
+      ]
+    },
+    {
+      "slug": "payroll",
+      "title": "Payroll",
+      "audience": "businesses",
+      "icon": "banknote",
+      "summary": "Three payroll options, taxes filed for you.",
+      "text": "Small business owners spend an average of eight hours a month on payroll. We offer three payroll processing options so that time goes back into running the company.",
+      "lead": "Laws and the IRS have made payroll a time consuming job for a small business owner, and federal, state and local payroll tax rules keep changing. We handle the calculating, the filing and the reporting, and you get a wide range of accurate payroll reports.",
+      "covers": [
+        { "title": "Comprehensive payroll services", "text": "We take care of all the processing: checks prepared and laser printed on blank stock on time, free direct deposits, IRS and state tax reporting, EFTPS deposits, and W-2, W-3 and 1099 forms." },
+        { "title": "After-the-fact payroll", "text": "We take your manually prepared payroll records, post them to our data files, and produce the monthly, quarterly and annual tax reports and forms from them." },
+        { "title": "Online payroll processing", "text": "You enter employee hours and earnings securely online, print payroll checks on your own printer, and get free direct deposits with the tax reporting handled." },
+        { "title": "Reports and accruals", "text": "Monthly, quarterly and annual payroll tax reports, detailed vacation, sick and personal day accruals, and the required new hire reports created and filed." },
+        { "title": "Custom payroll reports", "text": "Workers' compensation audits, unemployment claims, social security and child support audits, W-2 and W-3 processing, 1099 and 1096 processing, and help with federal and state registration forms." }
+      ],
+      "questions": [
+        { "q": "What does payroll processing cost?", "a": "It depends on your business and which services you want, so we quote it after a free consultation. Our prices are very affordable." },
+        { "q": "Can you produce union and certified payroll reports?", "a": "Yes. Union reports, certified payroll and workers' compensation reports are included for a nominal fee." }
+      ]
+    },
+    {
+      "slug": "part-time-cfo",
+      "title": "Part-Time CFO Services",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "A financial manager without the full-time cost.",
+      "text": "Growing businesses often need professional financial advice before they can afford a full-time CFO. Our part-time CFO service gives you an experienced financial manager at a small fraction of that cost.",
+      "lead": "Hiring a full-time CFO can range from $60,000 to over $100,000 a year plus bonuses and benefits. This service gives you the same oversight, a sounding board for difficult decisions, and a clearer view of the money, without carrying that salary.",
+      "covers": [
+        { "title": "Budgets and reporting", "text": "Budget preparation and monitoring, improved quality and timeliness of financial information, and profitability analysis by service or product line." },
+        { "title": "Financial controls", "text": "Strong financial controls established in the business to reduce employee theft and increase profits, along with company accounting procedure manuals." },
+        { "title": "Planning and analysis", "text": "Trend analysis, cash management, long-range plans with goals quantified, and analysis of equipment purchases and expansions." },
+        { "title": "Financing and negotiations", "text": "Assistance obtaining finance from banks, including the negotiations, and liaison with bankers, attorneys, vendors and insurance agents." },
+        { "title": "Your accounting staff", "text": "Training and managing the accounting staff you already have, so the day-to-day work is done properly." },
+        { "title": "Tax saving strategies", "text": "Tax saving strategies applied as part of the financial management, rather than left to the end of the year." }
+      ]
+    },
+    {
+      "slug": "strategic-business-planning",
+      "title": "Strategic Business Planning",
+      "audience": "businesses",
+      "icon": "clipboard-check",
+      "summary": "A plan that clarifies the company's direction.",
+      "text": "A strategic business plan is much more than a tool for obtaining finance. It clarifies your company's direction, gets your key leaders on the same page, and keeps management and staff focused.",
+      "lead": "A plan is often needed when you are starting a new venture, product or service, expanding an existing one, buying a business, or turning around a declining one. It describes the company, its products, the competitive environment, the management team, the financial health and the business risks.",
+      "covers": [
+        { "title": "The customer and the need", "text": "Identifying the target customer profile and the features, advantages and benefits of the venture, and researching the need it fills so the plan is credible." },
+        { "title": "Marketing plans", "text": "Targeted promotional campaigns with implementation timelines, market conditions, the nature of your customers and competitors, and projected results." },
+        { "title": "Staffing and management plans", "text": "The key players, skills and expertise needed to build the venture, with management systems and timelines for putting them in place." },
+        { "title": "Financial plans", "text": "Projected startup costs, operating costs, revenue, profits and break-even analysis for the first three to five years, which most lenders and private investors expect before they will talk to you." },
+        { "title": "Buildings and equipment", "text": "Building and equipment needs identified, with vendors and cost estimates." },
+        { "title": "Company milestones", "text": "Milestones formulated with timelines for the products and services still in development." }
+      ]
+    },
+    {
+      "slug": "succession-planning",
+      "title": "Succession Planning",
+      "audience": "businesses",
+      "icon": "handshake",
+      "summary": "Passing on a family business, planned.",
+      "text": "If you own a family business, retirement is not simply a matter of deciding not to go into the office anymore. We help you plan who runs it, who owns it, and what the transfer costs in tax.",
+      "lead": "More than seven out of ten family-owned businesses fail to survive the transition from founder to second generation, typically falling prey to estate taxes or family discord, or both. A well-designed succession plan is essential to the survival of the business from one generation to the next.",
+      "covers": [
+        { "title": "Keeping it in the family", "text": "Whether to pass the business to your family or sell to a third party, with the advantages and disadvantages of each weighed up." },
+        { "title": "Who runs it", "text": "Management and ownership are not the same thing. You may transfer management to one of your children and equal shares of ownership to all of them." },
+        { "title": "Minimizing the tax bite", "text": "The tax burden on transition can be significant, and a family business is not generally a liquid asset even though tax is typically due when ownership transfers." },
+        { "title": "Making it fair", "text": "We talk with each family member so they feel they are getting an equitable and fair share." },
+        { "title": "Valuation and restructuring", "text": "Business valuation and business restructuring, worked out as part of the plan rather than after it." },
+        { "title": "Retirement and tax projections", "text": "Retirement projections and tax projections, so you know whether you will have enough money to retire." }
+      ]
+    },
+    {
+      "slug": "new-business-formation",
+      "title": "New Business Formation",
+      "audience": "businesses",
+      "icon": "store",
+      "summary": "Getting a new business started properly.",
+      "text": "Opening your own business is exciting, and it is everything that comes after the excitement that decides whether it makes it. We help you avoid the common pitfalls new owners run into.",
+      "lead": "A methodical plan of action is needed to fulfill the goal of being your own boss and running a successful business. We work through the plan, the money, the structure and the filings with you before the doors open.",
+      "covers": [
+        { "title": "Business plan and capital", "text": "An initial business plan that clarifies your marketing, management and financial plans, your start-up capital needs, sources of capital and backup sources, and how much you could borrow if needed." },
+        { "title": "Choosing a structure", "text": "A business structure selected by weighing tax advantages, legal exposure, ease of operation and portability should you need to relocate." },
+        { "title": "Cash flow and controls", "text": "A cash flow budget so you know what the business needs each month for the first few years, billing and collection procedures, and procedures to monitor and control costs." },
+        { "title": "Licenses and filings", "text": "Required state and local licenses and permits prepared and filed, along with your application for a Federal Employer Identification Number." },
+        { "title": "Software and the home office", "text": "The right accounting software chosen for your budget, needs and hardware, and a home office set up so your deductions are maximized." },
+        { "title": "Employees and agreements", "text": "Payroll and payroll tax filing when you bring on your first employee, compliance with employment laws, your business insurance needs identified, and a solid partnership agreement where there are partners." }
+      ]
+    },
+    {
+      "slug": "non-profit-organizations",
+      "title": "Non-Profit Organizations",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "Form 990 filings and tax-exempt status.",
+      "text": "We help you set up and maintain your organization's tax-exempt status by handling the IRS reporting, including the Form 990 and the statements that go with it.",
+      "lead": "The IRS uses very specific revenue and expense classifications to decide whether an organization keeps its tax-exempt status, so it matters that the accounting system is built around those classifications from the start.",
+      "covers": [
+        { "title": "Form 990 and 990T", "text": "Prepared and filed, with the income statement, balance sheet, functional expense statement, individual program expense statements and revenue support schedules the IRS requires." },
+        { "title": "Statements and systems", "text": "Your financial statements reviewed and compiled, and your accounting system designed, installed and maintained around the required classifications." },
+        { "title": "Payroll", "text": "Weekly, bi-weekly or monthly payroll preparation, with payroll tax preparation and deposits." },
+        { "title": "Training", "text": "Training for your accounting personnel, and training for your board on using non-profit financial statements and effective budgeting." },
+        { "title": "501(c)(3) applications", "text": "For a new not-for-profit, we prepare the 501(c)(3) application for tax-exempt status, the start-up documentation, the FEIN and the payroll setup with federal and state agencies." },
+        { "title": "Churches", "text": "We prepare the pastoral housing allowance and the other benefit documentation that meets the dual status of ministers." }
+      ]
+    },
+    {
+      "slug": "internal-controls",
+      "title": "Internal Controls",
+      "audience": "businesses",
+      "icon": "shield-check",
+      "summary": "An outside look at how money is handled.",
+      "text": "We assess your internal control systems to judge how efficient and effective your operating procedures are, then recommend corrections where we find weaknesses.",
+      "lead": "At times you need a trained outside professional to evaluate how the company operates, to confirm the right controls are in place for the proper handling of resources and to protect you from employee theft.",
+      "covers": [
+        { "title": "Segregation of duties", "text": "Duties divided among different people to reduce the risk of error or inappropriate actions, so no one person controls every part of a financial transaction." },
+        { "title": "Authorization", "text": "Transactions authorized by a person with delegated approval authority, when they are consistent with policy and funds are available." },
+        { "title": "Review and reconciliation", "text": "Records routinely reviewed and reconciled by someone other than the person who prepared or made the transaction." },
+        { "title": "Physical safeguards", "text": "Equipment, inventories, cash and other property secured physically, counted periodically and compared with the control records." },
+        { "title": "Training and documentation", "text": "Staff given the training, direction and supervision they need, and policies and procedures documented and made accessible so duties continue through absences and turnover." },
+        { "title": "Operational review", "text": "Operations reviewed to see whether the results match the objectives and goals set, and whether the work is being carried out as planned." }
+      ]
+    },
+    {
+      "slug": "quickbooks",
+      "title": "QuickBooks Services",
+      "audience": "businesses",
+      "icon": "file-pen",
+      "summary": "Setup, training and tune-ups for QuickBooks.",
+      "text": "QuickBooks is the ideal accounting software for small to mid-sized businesses, but the initial setup can be tricky. We set it up, train the people who use it, and clean it up when it drifts.",
+      "lead": "Although QuickBooks is designed for the layman to understand, installing and setting it up correctly saves hours of frustration later. Once it is working properly, we train you or your employees to operate it for your particular business.",
+      "covers": [
+        { "title": "QuickBooks setup", "text": "The initial setup and installation done correctly, so the file is built around how your business actually works." },
+        { "title": "QuickBooks training", "text": "One-on-one training for you or your employees, at your own location, focused on the issues facing your business rather than features that do not affect it." },
+        { "title": "QuickAnswers", "text": "Questions called in, left on voice mail, faxed or emailed at $20 per question, answered by a Certified Professional Advisor who specializes in QuickBooks, usually within 24 hours." },
+        { "title": "QuickTune-up", "text": "A complete tune-up to prepare the books for tax time or a financial review, or to clean up problem areas and get the file running smoothly again." }
+      ],
+      "questions": [
+        { "q": "What does QuickBooks setup cost?", "a": "We want to find out more about your business and your accounting records before quoting an exact price, and our rates are designed to fit the budgets of the small business owners we work with." },
+        { "q": "What if a QuickAnswers question is not resolved?", "a": "If we cannot adequately resolve your problem or question, your money is refunded 100 percent, guaranteed." }
+      ]
+    }
+  ],
+  "about": {
+    "title": "A CPA firm built on professionalism, responsiveness and quality.",
+    "text": [
+      "Amy Davis, CPA, PC is a full-service CPA firm licensed in Texas, offering a broad range of services for business owners, executives and independent professionals. We are affordable, experienced and friendly.",
+      "Our firm is one of the leading firms in the area. By combining our expertise, experience and the energy of our staff, each client receives close personal and professional attention. Because we get new business from the people who know us best, client referrals have fueled our growth.",
+      "Our primary goal as a trusted advisor is to be available and to give insightful advice, so our clients can make informed financial decisions. We continually educate ourselves to improve our technical expertise, financial knowledge and service, and we will answer all of your questions as they affect both your tax and your financial situation."
+    ],
+    "image": "/brands/amydaviscpa/about",
+    "imageAlt": "An accountant working through a client's paperwork at a desk",
+    "values": [
+      { "title": "Professionalism", "text": "High standards, service and specialized staff, with every client served by the expertise of the whole firm." },
+      { "title": "Responsiveness", "text": "Competent advice and fast, accurate personnel, with total financial services for individuals, large and small businesses and other agencies." },
+      { "title": "Quality", "text": "An accounting firm is known for the quality of its service, and our reputation reflects the high standards we demand of ourselves." }
+    ]
+  },
+  "facts": [
+    { "heading": "Free Initial Consultation", "text": "Call us today and we will be happy to offer you a free initial consultation before you commit to anything." },
+    { "heading": "Office and Fax", "items": ["Phone: (281) 570-2247", "Fax: (281) 310-5253", "Email: support@lakehoustoncpas.com"] },
+    { "heading": "Paying an Invoice", "text": "Invoices can be paid online from the Pay Now page by entering the client name, the amount due and the invoice ID." },
+    { "heading": "Client Portals", "items": ["A TaxDome client login for documents and messages", "A secure firm portal for exchanging files", "SecureSend, which delivers a file straight to a member of the firm, who is notified once the upload finishes"] },
+    { "heading": "Preferred Partners", "items": ["ADP Small Business Services, Houston, for payroll, through Jaime Sellman on (214) 886-1301", "The Randolph Law Firm, PLLC, 800 Rockmead Dr., Suite 163, Kingwood, Texas 77339, on (281) 973-5243"] },
+    { "heading": "Working Here", "text": "We hire licensed CPAs with at least four years of experience, along with small business accountants and administrative staff, and ask for independence, integrity, objectivity, competence and due care." },
+    { "heading": "Applying for a Job", "text": "Fax a resume and references to (281) 310-5253, email them to support@lakehoustoncpas.com, or mail them to the office in Huffman." },
+    { "heading": "Find Us Online", "items": ["Facebook", "LinkedIn", "Twitter at @lakehoustoncpa"] }
+  ],
+  "serviceArea": ["Huffman", "Humble"]
+}
