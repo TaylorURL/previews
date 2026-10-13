@@ -250,8 +250,8 @@ const ASKS = {
   quote: {
     act: 'Request a Quote',
     book: 'Get a Quote',
-    item: 'Ask About',
-    withName: 'A quote from',
+    item: 'Get a Quote for',
+    withName: 'Get a Quote from',
     card: 'Request a Quote',
     cardText: 'Choose the work you need and we will call to talk it through.',
     check: 'Request a Quote',
