@@ -1474,7 +1474,8 @@ function AboutPage({ b, tel }) {
       <section className={`${pad} bg-white`}>
         <div className={`${wrap} grid gap-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-20`}>
           <div>
-            <h2 className={h2}>How we work</h2>
+            {/* The rest of the about text is whatever the business wrote about itself, often the owner's own story, not a process. */}
+            <h2 className={h2}>Our story</h2>
             {list(b.about.text)
               .slice(1)
               .map((p) => (
