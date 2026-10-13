@@ -1,0 +1,491 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Emerald Standard Services",
+  "shortName": "Emerald Standard",
+  "summary": "A Houston-based electrical contractor building reliable electrical infrastructure for new construction and major renovations of critical operations facilities across Southeast Texas.",
+  "phone": "(713) 473-1000",
+  "email": "info@emerald-standard.com",
+  "address": "520 Preston Ave",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77503",
+  "rating": 4.6,
+  "reviewCount": 9,
+  "since": 2001,
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 3:30 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#0b6e3c",
+    "primaryDeep": "#07492a",
+    "accent": "#6cbe45",
+    "ink": "#0f1f17",
+    "muted": "#4f6358",
+    "surface": "#f1f7f2",
+    "line": "#dbe7de",
+    "heading": "'Plus Jakarta Sans', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/emeraldstandard/logo.webp",
+    "logoWidth": 247,
+    "logoHeight": 48,
+    "logoRatio": 5.146,
+    "logoGround": "#ffffff"
+  },
+  "hero": {
+    "eyebrow": "Electrical contractors and engineers in Houston",
+    "title": "Electrical infrastructure",
+    "titleAccent": "you can trust.",
+    "lead": "We build reliable electrical infrastructure for Houston's most complex and unique projects, from airports and hospitals to water plants and secure government facilities.",
+    "image": "/brands/emeraldstandard/hero",
+    "imageAlt": "A water purification plant site where new electrical service and distribution were installed"
+  },
+  "groups": [
+    {
+      "slug": "electrical-construction",
+      "title": "Electrical Construction",
+      "icon": "building",
+      "summary": "Full electrical scope for new construction and major renovations of critical operations facilities.",
+      "intro": "We are the electrical partner for new construction and major renovations of critical operations facilities: hospitals, airports, government and secure buildings, water and wastewater systems, universities, data centers and manufacturing. The work is self-performed, in active buildings, where safety, continuity and coordination cannot be compromised.",
+      "image": "/brands/emeraldstandard/construction",
+      "imageAlt": "The front of a new public facility built with a complete electrical package",
+      "services": [
+        {
+          "slug": "new-construction",
+          "title": "New Construction",
+          "icon": "building",
+          "text": "Complete electrical packages for new buildings, from the service and gear through lighting, fire alarm and lightning protection.",
+          "points": [
+            "A 52,310 sq ft police station with a 1,600A service and 43 pieces of gear",
+            "780 LED fixtures, lightning protection and a complete fire alarm system",
+            "Delivered on time for emergency use after Hurricane Harvey hit at 85% complete",
+            "A 37,300 sq ft county administration building and service center with a 1,200A service and a 600kW backup generator",
+            "A 60,000 sq ft university basketball development center with all electrical, fire alarm and IT systems"
+          ]
+        },
+        {
+          "slug": "renovations",
+          "title": "Major Renovations",
+          "icon": "wrench",
+          "text": "Phased renovation work in buildings that have to keep running, with shutdowns planned around the facility rather than the crew.",
+          "points": [
+            "Emergency department renovations on an active hospital campus",
+            "MD Anderson Diagnostic Imaging, Area A, Level 3 renovation",
+            "A seven-level air traffic control tower replacing a 50-year-old facility",
+            "Shutdowns executed inside tight weekend windows"
+          ]
+        },
+        {
+          "slug": "interior-fit-outs",
+          "title": "Interior Fit-Outs",
+          "icon": "lightbulb",
+          "text": "Design-driven interiors where the electrical work is tied to the architecture, installed to the finish standard the space was drawn to.",
+          "points": [
+            "A 12,000 sq ft executive suite buildout at TMC3 Helix Park",
+            "Architecturally integrated lighting, cove lighting and specialty decorative pendants",
+            "Close coordination with the architectural design team",
+            "Presentation, exhibition, executive office, reception and hospitality spaces on Level 4 of the TMC3 Collaborative Building",
+            "A 24,839 sq ft medical plaza fit-out with 733 light fixtures and 15 panelboards and transformers"
+          ]
+        },
+        {
+          "slug": "service-and-distribution",
+          "title": "Service and Distribution",
+          "icon": "circuit",
+          "text": "New services, switchgear, panelboards and transformers sized and installed for the building's full load.",
+          "points": [
+            "Services from 400A through 2,000A at 480V",
+            "An 800A, 480V service and 38 pieces of gear at an air traffic control tower",
+            "56 pieces of electrical gear, 1,266 LED fixtures and lightning protection on a seven-level, 318,600 sq ft hospital parking garage",
+            "Modifications at a site's existing main electrical service"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "design-build",
+      "title": "Design-Build and Engineering",
+      "icon": "settings",
+      "summary": "A licensed electrical contractor with licensed engineering capability, so problems get solved before they reach the field.",
+      "intro": "What makes us different is the way we bring engineering thinking into construction. As a licensed electrical contractor with licensed engineering capability, we do more than install systems; we help solve difficult problems before they disrupt the job. That shows up as thoughtful planning, disciplined execution and fewer surprises in the field.",
+      "services": [
+        {
+          "slug": "design-build-delivery",
+          "title": "Design-Build Delivery",
+          "icon": "settings",
+          "text": "We take projects as prime contractor and self-perform them end to end, including the design.",
+          "points": [
+            "Prime contractor on a fully self-performed design-build for the City of Houston",
+            "Ten facilities delivered under one program",
+            "Utility-related work coordinated directly with CenterPoint crews",
+            "Transfer switches and quick-connects at 10 Health Department service centers across Houston"
+          ]
+        },
+        {
+          "slug": "engineering-support",
+          "title": "Engineering Support",
+          "icon": "gauge",
+          "text": "Engineering expertise is integrated into project execution rather than handed off, so technical questions are answered in-house.",
+          "points": [
+            "Licensed Texas engineering firm",
+            "Technical depth that solves problems before they become delays",
+            "Sound technical judgment on complex electrical challenges"
+          ]
+        },
+        {
+          "slug": "bim-coordination",
+          "title": "BIM Coordination",
+          "icon": "cable",
+          "text": "Model-based coordination and clash detection on large institutional buildings, so the install goes in once.",
+          "points": [
+            "A six-story, 178,000 sq ft university library coordinated through our BIM capabilities",
+            "Clash detection and execution discipline on complex buildings"
+          ]
+        },
+        {
+          "slug": "planning-and-phasing",
+          "title": "Planning and Phasing",
+          "icon": "timer",
+          "text": "Disciplined planning, coordination and early stakeholder input, so projects move forward with fewer surprises and better outcomes.",
+          "points": [
+            "A transit center rebuilt in three phases while staying fully open to the public",
+            "Planning that reduces rework and protects schedule",
+            "Clear communication and proactive coordination"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "medium-voltage-and-underground",
+      "title": "Medium-Voltage and Underground",
+      "icon": "cable",
+      "summary": "Duct bank, 15kV distribution, padmount gear and energized cutovers on live campuses and bases.",
+      "intro": "Heavy electrical infrastructure is where we started and where a lot of our work still is. We install medium-voltage distribution, build underground duct bank systems, and switch live facilities over to new networks without taking them out of service.",
+      "image": "/brands/emeraldstandard/medium-voltage",
+      "imageAlt": "A boom truck setting pad-mounted transformers on a project site",
+      "services": [
+        {
+          "slug": "medium-voltage-distribution",
+          "title": "Medium-Voltage Distribution",
+          "icon": "zap",
+          "text": "Overhead systems replaced with underground networks serving an entire installation, self-performed in phases.",
+          "points": [
+            "More than 45,000 feet of 15kV cable on a joint reserve base",
+            "36 padmounted switches and 16 pad-mounted transformers",
+            "Hundreds of 15kV terminations",
+            "A 12.47kV overhead system replaced across two contracts in two phases",
+            "New 15kV overhead and underground distribution on a water purification plant expansion"
+          ]
+        },
+        {
+          "slug": "duct-bank",
+          "title": "Duct Bank and Manholes",
+          "icon": "waves",
+          "text": "Concrete-encased power and telecom duct bank with the manhole structures that go with it, on large site packages.",
+          "points": [
+            "More than 3,200 feet of power duct bank and 8,850 feet of telecom duct bank",
+            "Nine large CenterPoint manholes and sixteen telecom precast manholes",
+            "Built for a 37-acre life-science research campus"
+          ]
+        },
+        {
+          "slug": "energized-cutovers",
+          "title": "Energized Cutovers",
+          "icon": "power",
+          "text": "Buildings switched over to new distribution and the retired system removed, with sequencing planned around continuous operations.",
+          "points": [
+            "Coordinated switchover of buildings across an active military installation",
+            "Demolition of retired poles and overhead lines",
+            "More than 9,600 linear feet of existing overhead power line removed on a water plant expansion"
+          ]
+        },
+        {
+          "slug": "service-yards",
+          "title": "Electrical Service Yards",
+          "icon": "shield",
+          "text": "New 15kV service yards with padmount transformers, primary distribution panels and lighting control, including inside secure perimeters.",
+          "points": [
+            "Two new 15kV service yards at a correctional facility",
+            "Underground duct bank systems and drill-shaft foundations",
+            "Strict coordination and safety requirements on secure sites"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "emergency-power",
+      "title": "Emergency Power",
+      "icon": "power",
+      "summary": "Generators, automatic transfer switches and quick-connect systems that keep essential facilities running.",
+      "intro": "Mission-critical buildings have to stay powered when the grid does not. We install and tie in standby generation, transfer equipment and emergency distribution at hospitals, airports, police stations and public health facilities.",
+      "services": [
+        {
+          "slug": "standby-generators",
+          "title": "Standby Generators",
+          "icon": "battery",
+          "text": "Diesel and natural gas generators installed and connected, from a few hundred kilowatts up to a megawatt.",
+          "points": [
+            "A 1,000kW generator for an airport vehicle maintenance facility",
+            "A 600kW natural gas emergency generator and ATS at a police station",
+            "A 400kW diesel backup generator at an air traffic control tower",
+            "Dual 150kW diesel generator backup at a secure state facility",
+            "A 600kW backup generator at a county administration building",
+            "A 1,000kW emergency backup generator on a water purification plant expansion"
+          ]
+        },
+        {
+          "slug": "transfer-switches",
+          "title": "Transfer Switches and Quick-Connects",
+          "icon": "plug",
+          "text": "Transfer switches and generator quick-connect systems that let a facility take temporary power without rewiring.",
+          "points": [
+            "Transfer switches and quick-connects at 10 city health department service centers",
+            "Installed to improve electrical resilience at essential public facilities",
+            "Each site kept functional throughout the work"
+          ]
+        },
+        {
+          "slug": "emergency-power-systems",
+          "title": "Emergency Power Systems",
+          "icon": "shield",
+          "text": "Emergency branch distribution for healthcare and other facilities where a loss of power is not an option.",
+          "points": [
+            "Emergency power and generator systems for an outpatient surgical center",
+            "Eight operating rooms and recovery areas served",
+            "Built for mission-sensitive environments"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "lighting-and-building-systems",
+      "title": "Lighting and Building Systems",
+      "icon": "lightbulb",
+      "summary": "Site, high-mast and architectural lighting, plus fire alarm, telecom and building controls.",
+      "intro": "Beyond power, we install the systems that make a building usable: lighting inside and out, fire alarm, data and telecommunications, lightning protection, and the controls that run the mechanical plant. On most projects these are part of the same self-performed scope.",
+      "image": "/brands/emeraldstandard/lighting",
+      "imageAlt": "A new university athletics facility fitted with its lighting, fire alarm and telecom systems",
+      "services": [
+        {
+          "slug": "site-lighting",
+          "title": "Site and Roadway Lighting",
+          "icon": "sun",
+          "text": "Fixtures, poles and controls across large sites, laid out and installed with the underground that feeds them.",
+          "points": [
+            "542 LED fixtures and 51 light poles across an 18-acre airport site",
+            "256 LED fixtures and 26 new light poles covering 12 acres at a transit center",
+            "Site and park lighting on a county administration campus",
+            "10 acres of site lighting at a police station and vehicle maintenance facility",
+            "Roadway lighting and temporary construction power for 56 office trailers on a water plant expansion"
+          ]
+        },
+        {
+          "slug": "high-mast-lighting",
+          "title": "High-Mast Lighting",
+          "icon": "building",
+          "text": "High-mast poles and the deep foundations they stand on, furnished and installed as prime contractor.",
+          "points": [
+            "Thirty-one 120-ft high mast lighting poles at a state correctional unit",
+            "35-ft deep, 60-inch diameter drill-shaft concrete foundations",
+            "Lighting control systems included"
+          ]
+        },
+        {
+          "slug": "architectural-lighting",
+          "title": "Architectural Lighting",
+          "icon": "lightbulb",
+          "text": "Lighting that is part of the architecture: cove detail, integrated fixtures and specialty pendants in presentation and hospitality spaces.",
+          "points": [
+            "Architecturally integrated lighting and cove lighting",
+            "Specialty decorative pendants and high-end finish elements",
+            "Close coordination with the architectural design"
+          ]
+        },
+        {
+          "slug": "fire-alarm",
+          "title": "Fire Alarm",
+          "icon": "shield",
+          "text": "Complete fire alarm systems installed throughout hospitals, garages, control towers and athletic facilities.",
+          "points": [
+            "Complete fire alarm systems on a seven-level parking garage and a medical plaza",
+            "Fire alarm throughout a new air traffic control tower and utility building"
+          ]
+        },
+        {
+          "slug": "data-and-telecom",
+          "title": "Data and Telecommunications",
+          "icon": "cable",
+          "text": "IT, data and telecom infrastructure run alongside the power, from building backbone to Cat6 drops.",
+          "points": [
+            "Full IT, data and telecom infrastructure for a 60,000 sq ft athletics facility",
+            "Data and telecommunications systems throughout an air traffic control tower",
+            "Cat6 network cabling across a multi-building corporate campus"
+          ]
+        },
+        {
+          "slug": "building-automation",
+          "title": "HVAC and Building Automation",
+          "icon": "settings",
+          "text": "Conduit, low-voltage control wiring, devices and control panels for HVAC and building automation systems.",
+          "points": [
+            "Controls installed across a central plant, ten office buildings, a wellness center and an energy center",
+            "Delivered on a 385-acre, roughly 3 million sq ft corporate campus",
+            "Lightning protection installed where the project calls for it"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Built for complex work.",
+    "text": [
+      "Emerald Standard is a Houston-based electrical contractor built for complex work. Since 2001, we have delivered electrical construction, design-build, and technically demanding installations for some of Southeast Texas's most important facilities, including airports, healthcare campuses, higher education, transportation, government, and other mission-critical environments. From the beginning, the company has been shaped by a rare combination of engineering depth, field resourcefulness and entrepreneurial grit.",
+      "That spirit began with our founder's journey. Roy Pombrol came to the United States from Cuba as a refugee in 1966, built a new life through hard work and perseverance, earned his electrical engineering degree, and went on to lead major electrical construction operations over a long career. When changing political conditions forced another fresh start, he and his son, Roger, founded the company together.",
+      "What makes us different is the way we bring engineering thinking into construction. As a licensed electrical contractor with licensed engineering capability, we do more than install systems. We help solve difficult problems before they disrupt the job.",
+      "For our clients, that means a partner who can think ahead, coordinate effectively and execute with fewer surprises in the field. For our people, it means working in an environment where planning, accountability and respect are more than words; they shape the way the job gets done every day.",
+      "Our story is rooted in perseverance, technical excellence, and respect for the people we serve. We aim to be the electrical contractor clients trust when the work is complex, the stakes are high, and reliable execution matters most."
+    ],
+    "image": "/brands/emeraldstandard/about",
+    "imageAlt": "A healthcare building where the complete electrical scope was self-performed",
+    "values": [
+      {
+        "title": "Trusted Advisors",
+        "text": "Clients trust us to bring clarity, options, and sound judgment to complex electrical challenges. We don't pass problems upstream, we solve them."
+      },
+      {
+        "title": "Thoughtful Planners",
+        "text": "We plan before we start and adjust as conditions change, so projects move forward with fewer surprises and better outcomes."
+      },
+      {
+        "title": "Tenacious Professionals",
+        "text": "We hold ourselves to the highest standards of ethics, craftsmanship, and code compliance, with quality that never gets compromised."
+      }
+    ]
+  },
+  "serviceArea": [
+    "Houston",
+    "Pasadena",
+    "Spring",
+    "League City",
+    "Cypress",
+    "Tennessee Colony"
+  ],
+  "facts": [
+    {
+      "heading": "Licenses and Certifications",
+      "items": [
+        "TDLR licensed electrical contractor",
+        "Licensed Texas engineering firm",
+        "Accredited Quality Contractor",
+        "STEP Diamond safety rating",
+        "Houston Area Safety Council (HASC)",
+        "Construction Career Collaborative (C3)",
+        "Registered apprenticeship program with the U.S. Department of Labor"
+      ]
+    },
+    {
+      "heading": "Facilities We Build For",
+      "items": [
+        "Hospitals and healthcare campuses",
+        "Airports and transportation infrastructure",
+        "Government and secure facilities",
+        "Water and wastewater systems",
+        "Universities and research facilities",
+        "Corporate spaces and data centers",
+        "Manufacturing and logistics"
+      ]
+    },
+    {
+      "heading": "How We Work",
+      "items": [
+        "Clear communication and proactive coordination",
+        "Planning that reduces rework and protects schedule",
+        "Technical depth that solves problems before they become delays",
+        "Proven self-perform execution in active, high-stakes environments"
+      ]
+    },
+    {
+      "heading": "Safety and Quality",
+      "items": [
+        "Structured safety training and field leadership",
+        "Disciplined planning and risk mitigation",
+        "Engineering expertise integrated into project execution",
+        "Continuous improvement and accountability",
+        "Safer jobsites, stronger teams, reliable installations and fewer disruptions, which mean more predictable outcomes for clients"
+      ]
+    },
+    {
+      "heading": "Our Core Values",
+      "items": [
+        "Trusted Advisors: we deliver the innovative solutions our customers count on",
+        "Thoughtful Planners: we plan before we start and adjust as conditions change",
+        "Tenacious Professionals: we do what's right and don't stop until it's done",
+        "Servant Leaders: we care for each other and what we need to succeed",
+        "Joyful Builders: we love what we do, and it shows",
+        "Safety at our Core: safety is at the center of everything we do"
+      ]
+    },
+    {
+      "heading": "Project Experience",
+      "items": [
+        "Intuitive Machines aerospace manufacturing and mission operations facility",
+        "TMC3 Helix Park underground power and telecom infrastructure on a 37-acre life-science campus",
+        "MD Anderson Allison Suite buildout at TMC3 Helix Park",
+        "MD Anderson Diagnostic Imaging, Area A, Level 3 renovation",
+        "IAH Vehicle Maintenance Facility and ICC Integrated Control Center at Bush Airport",
+        "Ellington Field new Air Traffic Control Tower and Utility Building",
+        "Ellington Field JRB medium-voltage distribution renovation",
+        "METRO Northwest Transit Center Reconfiguration 1B at the I-10 and 610 interchange",
+        "Northeast Water Purification Plant expansion early work package",
+        "HPD Southwest Police Station and vehicle maintenance and fueling facility",
+        "Houston Health Department transfer switches and generator quick-connects at 10 service centers",
+        "TSU New Library and Learning Center, six stories and 178,000 sq ft",
+        "University of Houston Basketball Practice Facility",
+        "HCA North Cypress Surgical Center",
+        "UTMB League City parking garage, Medical Plaza I and emergency room",
+        "TDCJ Coffield Unit high-mast pole lighting in Tennessee Colony",
+        "ExxonMobil Project Delta campus in Spring, Texas",
+        "Harris County Precinct 1 Administration Building and Service Center",
+        "Buffalo Bayou Partnership Turkey Bend"
+      ]
+    },
+    {
+      "heading": "What Our Clients Say",
+      "items": [
+        "Tellepsen Builders points to relationship building, persistence and commitment to operational excellence on the Turkey Bend Warehouse project",
+        "CED Houston calls the team knowledgeable and easy to work with, with professionalism and attention to detail that set it apart in Houston",
+        "Morganti Texas describes flawless execution on a mission-critical, 24/7 active command center at Bush Airport under extreme coordination and schedule pressure",
+        "Clients and partners consistently point to the same strengths: communication, professionalism, technical execution and reliability under pressure"
+      ]
+    },
+    {
+      "heading": "Clients and Project Partners",
+      "items": [
+        "City of Houston, Houston Health Department and the Houston Police Department",
+        "Houston Airport System, the Texas Air National Guard and Clark Construction",
+        "METRO, Harris County Precinct 1 and Buffalo Bayou Partnership",
+        "MD Anderson, UTMB, HCA, Texas Southern University and the University of Houston",
+        "ExxonMobil, Johnson Controls and the Gilbane Harvey joint venture",
+        "Tellepsen Builders, Morganti Texas, CED Houston and Intuitive Machines",
+        "CenterPoint Energy on utility-related work, and TDCJ on secure-site projects"
+      ]
+    },
+    {
+      "heading": "Careers",
+      "text": "Electricians join us for mission-critical and technically challenging work, clear career paths and ongoing training, growth, development and long-term opportunity, a culture built on trust and respect, organized work with strong field support, and safety, planning and craftsmanship valued every day. Apply through the form with a resume in PDF or DOC format, or call the office. Submitting an application does not guarantee employment or an offer of employment."
+    }
+  ]
+}

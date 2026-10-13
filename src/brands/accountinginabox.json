@@ -1,0 +1,364 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Accounting-in-a-Box",
+  "shortName": "Accounting-in-a-Box",
+  "tagline": "Trusted CPA and advisory firms",
+  "phone": "(713) 380-2248",
+  "email": "info@accountinginabox.com",
+  "address": "2004 Sul Ross St Ste 200",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77098",
+  "license": "Accounting in a Box is a registered trademark of AFT Consulting, LLC, registered and protected in the United States, United Kingdom and Australia.",
+  "rating": 5.0,
+  "reviewCount": 8,
+  "hours": [["Mon – Fri", "9 AM – 6 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "cta": {
+    "label": "Request Info",
+    "text": "Send your inquiry and include your company name and website in the message, and we will point you to the right member firm."
+  },
+  "brand": {
+    "primary": "#21265a",
+    "primaryDeep": "#171b43",
+    "accent": "#dc1e30",
+    "ink": "#16192e",
+    "muted": "#565c75",
+    "surface": "#f6f6f9",
+    "cream": "#ebedf4",
+    "line": "#dde0ea",
+    "heading": "'Montserrat', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/accountinginabox/logo.webp",
+    "logoWidth": 260,
+    "logoHeight": 42,
+    "logoRatio": 6.138,
+    "logoGround": "#ffffff"
+  },
+  "hero": {
+    "eyebrow": "Houston, Austin and Dallas",
+    "title": "A network of CPA and advisory firms for small and midsize businesses.",
+    "lead": "Accounting-in-a-Box is a leading network of CPA and advisory firms that focus on small and midsize businesses, high-net-worth individuals and not-for-profit organizations.",
+    "image": "/brands/accountinginabox/hero",
+    "imageAlt": "Two people working across a small table with laptops and a tablet",
+    "points": [
+      "Tax, audit, bookkeeping, CFO and valuation",
+      "Member firms in Houston, Austin and Dallas",
+      "Client-focused and reasonable fees"
+    ]
+  },
+  "overview": {
+    "title": "Accounting and advisory services, reached through one network.",
+    "text": "Services rendered by our members cover a wide range of accounting and advisory work including tax, audit, review, CFO, capital advisory, business valuation and bookkeeping. If you do not see what you need, send us an email."
+  },
+  "audiences": { "individuals": "Individuals", "businesses": "Businesses & Non-Profits" },
+  "services": [
+    {
+      "slug": "income-tax",
+      "title": "Income Tax",
+      "audience": "individuals",
+      "icon": "receipt",
+      "summary": "Preparation, filing, projections and estimates.",
+      "text": "Income tax services include tax preparation, tax filing, tax projection, tax estimates, tax consultation and tax audit representation.",
+      "lead": "Income tax services generally include tax preparation, tax filing, tax projection, tax estimates, tax consultation and tax audit representation.",
+      "image": "/brands/accountinginabox/tax",
+      "imageAlt": "An open notebook, pens and a mug on a white desk",
+      "covers": [
+        { "title": "Preparation and filing", "text": "Returns prepared and filed for the federal and state forms your situation calls for." },
+        { "title": "Projections and estimates", "text": "Tax projections and estimated payments worked out before the amount is due." },
+        { "title": "Tax consultation", "text": "Questions answered as they come up rather than only at filing time." },
+        { "title": "Audit representation", "text": "Representation when the IRS examines a return that has been filed." }
+      ]
+    },
+    {
+      "slug": "trust-and-estate-tax",
+      "title": "Trust & Estate Tax",
+      "audience": "individuals",
+      "icon": "landmark",
+      "summary": "Trust, estate and family office taxation.",
+      "text": "As an individual with high net worth, you will want to work with an accountant who has experience with trust and estate taxation, family offices and succession planning.",
+      "lead": "As an individual with high net worth, you will want to work with an accountant who has experience with trust and estate taxation, family offices, succession planning, and developing financial, estate and philanthropic-giving plans."
+    },
+    {
+      "slug": "financial-planning",
+      "title": "Financial Planning",
+      "audience": "individuals",
+      "icon": "piggy-bank",
+      "summary": "Building and preserving wealth for retirement.",
+      "text": "Financial planning and advisory services generally include developing a strategy customized for you to build and preserve your wealth, and to address your retirement income objectives.",
+      "lead": "Financial planning and advisory services generally include developing a strategy customized for you to build and preserve your wealth, and to address your retirement income objectives. You can expect your financial advisor to walk you through a step-by-step process that will give you clarity and help you feel confident in your decisions."
+    },
+    {
+      "slug": "bookkeeping",
+      "title": "Bookkeeping",
+      "audience": "businesses",
+      "icon": "book",
+      "summary": "Transactions, reconciliations and sales tax.",
+      "text": "Bookkeeping services include recording and categorizing transactions, processing bill payments, sales tax filing, and bank, loan and equity reconciliations.",
+      "lead": "Bookkeeping services generally include recording and categorizing transactions, processing bill payments, sales tax filing, bank reconciliations, loan reconciliations and equity reconciliations. Payroll and entity administration are separate services available upon request.",
+      "image": "/brands/accountinginabox/bookkeeping",
+      "imageAlt": "A laptop and a mug on a desk in a bright office",
+      "covers": [
+        { "title": "Transactions and bill payments", "text": "Recording and categorizing transactions and processing bill payments as they come through." },
+        { "title": "Reconciliations", "text": "Bank, loan and equity reconciliations kept current through the year." },
+        { "title": "Sales tax filing", "text": "Sales tax returns prepared and filed on the schedule your business is on." },
+        { "title": "Industry specific features", "text": "Job costing, time and billing, DCAA reports for government contractors, and fund accounting for homeowners associations and condos." },
+        { "title": "Payroll and entity administration", "text": "Separate services available upon request alongside the bookkeeping work." }
+      ]
+    },
+    {
+      "slug": "audit",
+      "title": "Audit",
+      "audience": "businesses",
+      "icon": "clipboard-check",
+      "summary": "Audit, review and compilation engagements.",
+      "text": "Audit, review, compilation and agreed upon procedures are part of assurance or attestation services, and are often required to be performed by an independent Certified Public Accountant.",
+      "lead": "Audit, review, compilation, or agreed upon procedures are part of assurance services or attestation services. These services are often required to be performed by an independent Certified Public Accountant. Assurance engagements can be time consuming, so the sooner you contact us, the better.",
+      "covers": [
+        { "title": "Audit", "text": "A full assurance engagement performed by an independent Certified Public Accountant." },
+        { "title": "Review and compilation", "text": "Lighter forms of assurance where a full audit is not what the lender or board asks for." },
+        { "title": "Agreed upon procedures", "text": "Specific procedures carried out and reported on where only part of the picture is in question." },
+        { "title": "A plan before the work starts", "text": "We work with you to understand your current needs, expectations and systems, and tailor our approach to develop a plan for an efficient engagement." }
+      ]
+    },
+    {
+      "slug": "part-time-cfo",
+      "title": "Part-Time CFO",
+      "audience": "businesses",
+      "icon": "chart",
+      "summary": "Fractional CFO and controller support.",
+      "text": "Part-time CFO services generally include financial reporting, budgeting, developing financial strategy, financial forecast and interpreting financial reports for essential business decisions.",
+      "lead": "Part-time CFO services generally include financial reporting, budgeting, developing financial strategy, financial forecast, and interpreting financial reports for essential business decisions.",
+      "covers": [
+        { "title": "Reporting and budgeting", "text": "Financial reporting, budgeting and forecasting, with the reports interpreted for the decisions in front of you." },
+        { "title": "Financial strategy", "text": "Developing the financial strategy the business is going to run on." },
+        { "title": "Lenders and investors", "text": "Serving as liaison with potential lenders, investors and other outside financing sources." },
+        { "title": "Capital and cash flow", "text": "Assisting in structuring capital that is ideal for your organization, and cash flow management." },
+        { "title": "Mergers and acquisitions", "text": "Facilitating mergers and acquisitions alongside the rest of the finance function." }
+      ]
+    },
+    {
+      "slug": "rd-tax-credit",
+      "title": "R&D Tax Credit",
+      "audience": "businesses",
+      "icon": "gem",
+      "summary": "Credits against income or payroll tax.",
+      "text": "Research and Development tax credits can be used to lower federal and state income tax liabilities or offset a portion of payroll taxes.",
+      "lead": "Research and Development (R&D) tax credits can be used to lower federal and state income tax liabilities or offset a portion of payroll taxes.",
+      "covers": [
+        { "title": "Wages", "text": "Wages paid for qualified research and development activities may count as a qualified expense." },
+        { "title": "Material costs", "text": "Materials consumed in qualified research and development activities may count as a qualified expense." },
+        { "title": "Contractor payments", "text": "Payments to contractors for qualified research and development work may count as a qualified expense." },
+        { "title": "Qualified education institutions", "text": "Payments to qualified education institutions may count as a qualified expense." }
+      ]
+    },
+    {
+      "slug": "employee-retention-credit",
+      "title": "Employee Retention Credit",
+      "audience": "businesses",
+      "icon": "users",
+      "summary": "The COVID-era credit and whether you qualify.",
+      "text": "The Employee Retention Tax Credit was designed to help employers whose operations were suspended by a government order due to COVID-19, or who had a significant decline in gross receipts.",
+      "lead": "Employee Retention Tax Credit (ERC) was designed to help employers whose operations were suspended, either partially or fully, by a government order due to COVID-19, OR had a significant decline in gross receipts, OR began carrying on business after February 15, 2020.",
+      "covers": [
+        { "title": "2020 credit", "text": "ERC provides up to $5,000 per employee, per year for 2020." },
+        { "title": "2021 credit", "text": "ERC provides up to $7,000 per employee, per quarter for the first three quarters of 2021." },
+        { "title": "Eligibility", "text": "Whether your business is a stand-alone business or part of a group, a member firm can help you determine your eligibility for the ERC." }
+      ]
+    },
+    {
+      "slug": "business-valuation",
+      "title": "Business Valuation",
+      "audience": "businesses",
+      "icon": "scale",
+      "summary": "Valuations for exits, estates and disputes.",
+      "text": "Business valuation services are often requested by business owners, attorneys and accountants to assist with exit strategy, retirement planning, estate planning or legal disputes.",
+      "lead": "Business valuation services are often requested by business owners, attorneys, and accountants to assist with exit strategy, retirement planning, estate planning, or legal disputes including, but not limited to, marital dissolution, ownership changes, business sales, independent tax compliance and ESOP.",
+      "covers": [
+        { "title": "Exit and retirement planning", "text": "A valuation to work from when an owner is planning an exit or a retirement." },
+        { "title": "Estate planning", "text": "A valuation for estate planning and the tax compliance that comes with it." },
+        { "title": "Legal disputes", "text": "Marital dissolution, ownership changes and business sales, including expert reports for litigation." },
+        { "title": "Financial reporting", "text": "Valuation work for M&A transactions, income tax and financial reporting purposes." }
+      ]
+    },
+    {
+      "slug": "ma-advisory",
+      "title": "M&A Advisory",
+      "audience": "businesses",
+      "icon": "handshake",
+      "summary": "Due diligence and post-transaction work.",
+      "text": "If you plan to buy or sell a small business, our member firms can assist with due diligence, post-transaction integration and optimizing tax structure. This is not a brokerage service.",
+      "lead": "If you plan to buy or sell a small business, contact us for M&A advisory services. Our M&A member firms can assist you with due diligence, post-transaction integration, and optimizing tax structure. This is not a brokerage service.",
+      "covers": [
+        { "title": "Due diligence", "text": "Analyzing the financials so a buyer understands what is actually being bought." },
+        { "title": "Accounting and tax implications", "text": "Helping buyers understand the accounting and tax implications of the acquisition." },
+        { "title": "Post-transaction integration", "text": "Guidance for a smooth transition after closing, once the two businesses have to run as one." },
+        { "title": "Tax structure", "text": "Optimizing the tax structure of the transaction before it is signed." }
+      ]
+    },
+    {
+      "slug": "property-tax",
+      "title": "Property Tax",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Reducing liabilities on commercial property.",
+      "text": "Property tax consulting services provide tax reduction solutions that minimize taxpayer liabilities, with a focus on industrial and commercial properties.",
+      "lead": "Property tax consulting services provide tax reduction solutions that minimize taxpayer liabilities. Our property tax consultants have in-depth knowledge and extensive experience with a focus on industrial and commercial properties. Property tax consulting fees are generally contingent upon tax savings."
+    }
+  ],
+  "process": {
+    "title": "How to find a provider",
+    "text": "The provider directory is the starting point, and an email covers anything it does not list.",
+    "steps": [
+      { "title": "Browse the directory", "text": "Look through the provider directory of current member firms." },
+      { "title": "Filter to what you need", "text": "Filter by your location, industry, revenue size and service specialty." },
+      { "title": "Or ask us", "text": "If the service you need is not listed, send an email or fill out the request form and we will find a service provider for you." }
+    ]
+  },
+  "affiliations": {
+    "title": "Professional licenses and accreditation among our members",
+    "items": [
+      "Certified Public Accountant (CPA)",
+      "Accreditation in Business Valuation (ABV)",
+      "Certified Manager of Community Associations (CMCA)",
+      "Chartered Accountant (CA)",
+      "Chartered Professional Accountant (CPA)",
+      "Chartered Business Valuator (CBV)"
+    ]
+  },
+  "about": {
+    "title": "A network of boutique CPA and advisory firms with varying specialties.",
+    "text": [
+      "Accounting-in-a-Box offers a hub for an array of accounting and consulting services that are traditionally only available together at national or multi-national firms, while keeping the agility, responsiveness and personalized services that are often seen at smaller firms.",
+      "Services that our members render include audit, tax, R&D tax credits, tax incentives, bookkeeping, business valuation, part-time CFO, M&A advisory and more. With a focus on small and midsize businesses and business owners, our professionals know firsthand the challenges that small and midsize businesses face daily, and have served as their trusted partners for a number of years. We are known for client-focused and reasonable fees.",
+      "Browse the provider directory and filter by your location, industry, revenue size and service specialty. If the service you need is not listed, send us an email and we will find a service provider for you. Come back to see our new members as well, because we are growing."
+    ],
+    "image": "/brands/accountinginabox/about",
+    "imageAlt": "A team meeting around a long table seen from above, with laptops and notebooks",
+    "values": [
+      { "title": "A hub, not a single firm", "text": "An array of accounting and consulting services traditionally only available together at national or multi-national firms." },
+      { "title": "The agility of a smaller office", "text": "Member firms keep the agility, responsiveness and personalized services that are often seen at smaller firms." },
+      { "title": "Client-focused and reasonable fees", "text": "Our members are known for client-focused work and reasonable fees." }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Can I extend the deadline to file my individual income tax return without filing a form?",
+      "a": "Yes. You can extend the deadline to file your individual income tax return to October 15 simply by making a tax payment on the IRS website at irs.gov/payments. Select Form 1040 and then choose Extension as the reason for payment."
+    },
+    {
+      "q": "How long does the IRS have to audit a return?",
+      "a": "The IRS generally has three years from the due date of the return or the date it was filed, whichever is later, to audit and adjust it. That stretches to six years if a person fails to report over 25% of gross income."
+    },
+    {
+      "q": "How long should I keep tax returns and supporting documents?",
+      "a": "Keep them at least as long as the IRS has to audit the return, which is generally three years from the later of the due date or the filing date, and six years where over 25% of gross income went unreported."
+    },
+    {
+      "q": "How often should a business valuation be updated?",
+      "a": "Any private company that issues equity-based compensation to U.S. employees and advisors has to comply with Section 409A of the Internal Revenue Code, which requires that stock options and other equity incentives are not priced below fair market value when issued."
+    },
+    {
+      "q": "What is an earn-out when selling a business?",
+      "a": "An earn-out is a contingent portion of the purchase price of an acquisition, determined after closing based on the target company's performance against contractually defined criteria or benchmarks. Part of the price is paid at closing and the rest follows."
+    },
+    {
+      "q": "Does the IRS pay interest on refunds?",
+      "a": "Normally the IRS is required to pay interest on a refund if the refund is issued after a statutory period. By law the interest rate on both overpayment and underpayment of tax is adjusted quarterly."
+    },
+    {
+      "q": "What if the service I need is not in the provider directory?",
+      "a": "Send an email or fill out the request form with your company name and website, and we will find a service provider for you. Financial planning and property tax enquiries are routed the same way."
+    }
+  ],
+  "resources": [
+    {
+      "title": "IRS Payments",
+      "text": "You can extend the deadline to file your individual income tax return to October 15 simply by making a tax payment here. Select Form 1040 and then choose Extension as the reason for payment.",
+      "href": "https://www.irs.gov/payments"
+    }
+  ],
+  "serviceArea": ["Houston", "Austin", "Dallas"],
+  "facts": [
+    {
+      "heading": "Who we serve",
+      "text": "Small and midsize businesses, high-net-worth individuals and not-for-profit organizations, together with the business owners behind them."
+    },
+    {
+      "heading": "Industries",
+      "items": [
+        "Auto Dealers",
+        "Bars & Restaurants",
+        "Commodity Trading",
+        "Construction",
+        "Government Contractors",
+        "Healthcare",
+        "HOA",
+        "Import/Export",
+        "Manufacturing",
+        "Newspapers, Radio and TV",
+        "Non-Profit",
+        "Oil & Gas Services",
+        "Professional Services",
+        "Retailers",
+        "Real Estate",
+        "Technology",
+        "Transportation",
+        "Utilities",
+        "Wholesale/Distribution",
+        "Others"
+      ]
+    },
+    {
+      "heading": "Revenue sizes in the directory",
+      "items": ["Under $10M", "$10M – $50M", "$50M – $200M", "Over $200M"]
+    },
+    {
+      "heading": "Member firms",
+      "items": [
+        "Dao CPA, P.C. — a full suite of bookkeeping, payroll, accounting, tax and advisory services, including part-time CFO and controller work and M&A advisory, serving start-up, small and mid-sized businesses. The firm states it has assisted start-up, small and midsize businesses with accounting, tax and advice beyond tax since 2006, and is known for its integrity and valuable advice to clients.",
+        "Dao CPA, P.C. — the majority of its clients are U.S. businesses in Houston and adjacent areas, and it has assisted a number of subsidiaries of multinational companies, particularly Australian and British companies. The firm states it is 100% US based with all work done in Houston, and that it was one of the first few CPA firms in Houston to write about the pros and cons of the Employee Retention Tax Credit.",
+        "BrooksWatson & Co., PLLC — audit and consulting services throughout Texas and the Gulf Coast region. The firm states that audit services can be provided efficiently while still being cost effective and maintained on a personal level, with experienced professionals performing each step of the audit and direct access to its highest level of expertise.",
+        "Aspen Valuations Inc — a boutique, full-service business valuation and consulting firm with offices in Calgary and Vancouver, covering M&A transactions, litigation-related matters, income tax and financial reporting valuation."
+      ]
+    },
+    {
+      "heading": "Clients with ties to Canada",
+      "text": "Canada-based Aspen Valuations Inc joined the network in 2020, which allows for enhanced services to U.S. clients with subsidiaries and operations in Canada, especially within the energy sector."
+    },
+    {
+      "heading": "Professional designations",
+      "text": "CPA, ABV and CMCA are US professional designations. CA, Chartered Professional Accountant and CBV are Canadian professional designations."
+    },
+    {
+      "heading": "How membership works",
+      "text": "Accounting and advisory services are rendered via Accounting-in-a-Box's member firms, and membership includes both CPA firms and non-CPA firms. In order to use the mark, a firm must be a current member, and members are required to maintain certain standards. Only the firms listed on accountinginabox.com are current members, and member firms are independent from each other."
+    },
+    {
+      "heading": "What clients say",
+      "items": [
+        "“She made my bookkeeping and taxes so much easier. Tu and her team are very knowledgeable, responsive, and professional. I would recommend her to anyone needing a trustworthy, dependable and efficient CPA.” — dental office in Houston, on bookkeeping, payroll and tax",
+        "“When I see receipts from all of the Federal and State forms that you have filed for Apogee, I always stop and say ‘thank you’ in my mind for having found your wonderful company over 10 years ago.” — Apogee Engineering, on tax services",
+        "“I first came across Dao CPA / Accounting in a Box whilst looking to outsource my US accounting function. The quality of service and technical knowledge I experienced whilst working with Dao CPA were exemplary.” — UK corporation",
+        "“Tu Dao guided us as we purchased a manufacturer's representative business in 2012. Since that time, her team has taken care of our bookkeeping, our payroll, and our taxes, and advised us each step of the way.” — oil and gas equipment business, on M&A advisory",
+        "“I heard about Accounting in a Box via my local NPR station. The entire team responds quickly and best of all, is friendly and honors my lack of knowledge, making me feel empowered. They are also proactive in communicating.” — software implementation business",
+        "“Aspen Valuations recently completed a valuation report for a company that I owned to facilitate the sale of my shares. The valuation performed by Yen and her team was precise, thorough and defensible, not to mention at a very reasonable cost and a quick turnaround.” — utility equipment agency, Alberta, Canada",
+        "“I recently retained Aspen Valuations to perform an expert report for litigation purposes. The report was very thorough and Yen was highly professional in her role as an objective expert witness.” — distribution company, Alberta, Canada, on litigation support"
+      ]
+    },
+    {
+      "heading": "Articles and news",
+      "text": "We publish articles on filing deadlines, IRS audits and taxpayer rights, tax credits, disaster-related tax relief, earn-outs in selling a business, record retention, accounting software for construction contractors and business valuation."
+    },
+    {
+      "heading": "Find us online",
+      "items": ["facebook.com/accountinginabox", "linkedin.com/company/accounting-in-a-box"]
+    },
+    {
+      "heading": "Joining the network",
+      "text": "Professional service firms interested in joining the network can send an inquiry with the firm's name and website."
+    }
+  ]
+}

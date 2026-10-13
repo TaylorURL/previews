@@ -1,0 +1,433 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "accounting",
+  "name": "Marino CPA Firm",
+  "shortName": "Marino CPA",
+  "tagline": "Accounting, audit and tax for Houston and Beaumont businesses",
+  "phone": "(713) 636-9966",
+  "email": "info@marinocpafirm.com",
+  "address": "3642 University Blvd, Suite #201",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77005",
+  "license": "A Texas-based CPA firm serving the Houston and Beaumont communities.",
+  "hours": [
+    [
+      "Mon – Thu",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Friday",
+      "Closed"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Get Started",
+    "text": "Give us a few details about your business and we will be in touch to talk about your needs and see if we are a good fit."
+  },
+  "brand": {
+    "primary": "#1b2f4b",
+    "primaryDeep": "#132a45",
+    "accent": "#a8762f",
+    "ink": "#16202c",
+    "muted": "#5b6775",
+    "surface": "#f6f5f1",
+    "cream": "#ece9e2",
+    "line": "#dfdbd2",
+    "heading": "'Libre Baskerville', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/marinocpafirm/logo.webp",
+    "logoWidth": 237,
+    "logoHeight": 48,
+    "logoRatio": 4.938,
+    "logoGround": "#14181f"
+  },
+  "hero": {
+    "eyebrow": "Houston and Beaumont, Texas",
+    "title": "Proactive accounting strategies and year-round support for building a smarter, stronger business.",
+    "lead": "Marino CPA offers comprehensive accounting, audit and tax services in Houston and Beaumont. Let's put the right strategies to work for your business today.",
+    "image": "/brands/marinocpafirm/hero",
+    "imageAlt": "An accountant reviewing a bound financial report at a desk",
+    "points": [
+      "More time back",
+      "Confidence in compliance",
+      "Strategic growth support"
+    ]
+  },
+  "overview": {
+    "title": "Accounting that's actually useful.",
+    "text": "From tracking your finances and uncovering growth opportunities to giving you clear, practical guidance, we're the partner in your corner so you can focus on doing what you do best—running your business."
+  },
+  "services": [
+    {
+      "slug": "small-business-accounting",
+      "title": "Small Business Accounting & Bookkeeping",
+      "icon": "calculator",
+      "summary": "Monthly books, statements and payroll.",
+      "text": "Stay organized and in control. We handle your monthly bookkeeping, reconciliations, financial statements and payroll, so everything stays clean, clear and ready to review.",
+      "lead": "Marino CPA keeps the day-to-day books in order so the numbers are there when you need them, not scrambled together at year end.",
+      "covers": [
+        {
+          "title": "QuickBooks accounting setup",
+          "text": "Getting the file built properly from the start, so the reports that come out of it mean something."
+        },
+        {
+          "title": "Bookkeeping and journal entries",
+          "text": "Weekly, monthly or quarterly, at whatever rhythm your business actually runs on."
+        },
+        {
+          "title": "Income statement and balance sheet",
+          "text": "Prepared so you can see where the business stands rather than guessing at it."
+        },
+        {
+          "title": "Reconciling bank statements",
+          "text": "The bank and the books tied out, every period, before anything is reported on."
+        },
+        {
+          "title": "Tracking payments and receivables",
+          "text": "Knowing what has come in, what is still owed and who you need to chase."
+        },
+        {
+          "title": "Virtual controllership",
+          "text": "A full accounting team on call when you are not ready to hire one in-house."
+        }
+      ]
+    },
+    {
+      "slug": "tax-planning",
+      "title": "Strategic Tax Planning & Filing",
+      "icon": "receipt",
+      "summary": "Year-round planning, not just April.",
+      "text": "Make tax season a breeze—and a smart move. We help you avoid surprises and find savings with proactive planning, and we work with you year-round, not just in April.",
+      "lead": "Tax work at Marino CPA starts well before a return is due, because most of what changes the outcome has to be decided while the year is still open.",
+      "image": "/brands/marinocpafirm/tax",
+      "imageAlt": "A calculator and firm envelopes on a desk beside a laptop",
+      "covers": [
+        {
+          "title": "Planning and return preparation",
+          "text": "For individuals, corporations, partnerships and estates and trusts."
+        },
+        {
+          "title": "IRS representation",
+          "text": "We stand in for you in the event of an IRS notice or audit."
+        },
+        {
+          "title": "Payroll and sales tax reporting",
+          "text": "Payroll, sales and use-tax reporting kept current and filed on time."
+        },
+        {
+          "title": "Franchise tax submissions",
+          "text": "Texas franchise tax handled alongside the rest of your filings."
+        }
+      ]
+    },
+    {
+      "slug": "audits-assurance",
+      "title": "Audits & Assurance",
+      "icon": "clipboard-check",
+      "summary": "Independent assurance for Texas organizations.",
+      "text": "Our audit department provides reliable, independent assurance services designed to strengthen confidence in your financial information, for local governments, nonprofits and privately held organizations.",
+      "lead": "As a Texas-based CPA firm, we understand the regulatory environment, reporting standards and practical challenges faced by local governments, nonprofits and privately held organizations. We go beyond compliance by delivering audits that are efficient, transparent and tailored to your organization. We are committed to integrity, technical excellence and responsive service, with the goal of assurance you can rely on and insights that help your organization move forward with confidence.",
+      "covers": [
+        {
+          "title": "Financial statement audits, reviews and compilations",
+          "text": "The level of assurance matched to what your lenders, board or funders actually require."
+        },
+        {
+          "title": "Governmental and single audits",
+          "text": "Audits performed under Uniform Guidance for entities spending federal awards."
+        },
+        {
+          "title": "Nonprofit organization audits",
+          "text": "Audits built around how a nonprofit is funded, governed and reported on."
+        },
+        {
+          "title": "Agreed-upon procedures",
+          "text": "A defined set of procedures on the specific area you need looked at."
+        },
+        {
+          "title": "Internal control and compliance assessments",
+          "text": "A look at how controls are working in practice and where they leave gaps."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How does the audit team keep us informed?",
+          "a": "Our experienced professionals apply a risk-based approach and maintain open communication throughout the engagement, so you understand not only the results of the audit but the story behind the numbers."
+        },
+        {
+          "q": "Who do we contact about an audit engagement?",
+          "a": "The audit department can be reached directly at audit@marinocpafirm.com."
+        }
+      ]
+    },
+    {
+      "slug": "financial-consulting",
+      "title": "Financial Consulting & Advisory",
+      "icon": "chart",
+      "summary": "Cash flow, budgets and forecasting.",
+      "text": "For when you need a financial strategist—not just a bookkeeper. We provide guidance on cash flow, budgets, forecasting and strategic decision-making, all tailored to your growth.",
+      "lead": "This is the work Marino CPA does alongside you between filings: looking at where the money is going, what the next year looks like and which decisions are worth making now.",
+      "image": "/brands/marinocpafirm/advisory",
+      "imageAlt": "A partner talking a client through a plan across his desk",
+      "covers": [
+        {
+          "title": "Virtual CFO services",
+          "text": "Senior financial thinking on your side of the table without a full-time salary attached."
+        },
+        {
+          "title": "New business formation and planning",
+          "text": "Setting a new entity up and planning around it, as part of the wider advisory work."
+        },
+        {
+          "title": "Income and cash flow strategies",
+          "text": "Working out what the business can afford and when, rather than finding out after the fact."
+        },
+        {
+          "title": "Budgeting, forecasting and analysis",
+          "text": "A plan for the year with the numbers behind it, revisited as things change."
+        },
+        {
+          "title": "Business valuation",
+          "text": "What the business is worth, for a sale, a partner change or a succession plan."
+        },
+        {
+          "title": "Internal control advising",
+          "text": "Where money and information move through the business, and where that needs tightening."
+        },
+        {
+          "title": "Succession and retirement planning",
+          "text": "Planning the hand-over long before it has to happen, including assistance with bank financing and litigation support."
+        }
+      ]
+    },
+    {
+      "slug": "startup-advisory",
+      "title": "Startup & Entrepreneur Advisory",
+      "icon": "building",
+      "summary": "Formation, registration and system setup.",
+      "text": "Starting something new? We've got your back. From business formation to choosing the right accounting tools, we're with you from idea to execution.",
+      "lead": "Marino CPA gets a new business set up the right way at the start, so the structure, the registrations and the books are not something you have to unpick later.",
+      "covers": [
+        {
+          "title": "Entity selection and structuring",
+          "text": "Sole proprietorship, LLC, S-Corp or C-Corp, chosen for how you actually intend to operate."
+        },
+        {
+          "title": "Business registration support",
+          "text": "EIN, state and local tax registrations and sales tax permits."
+        },
+        {
+          "title": "Payroll tax setup",
+          "text": "Payroll registered and set up correctly before the first employee is paid."
+        },
+        {
+          "title": "Accounting system setup",
+          "text": "The right accounting tools chosen and configured for the business you are building."
+        },
+        {
+          "title": "Additional services by industry",
+          "text": "Further support added based on the industry you are in and the structure you have chosen."
+        }
+      ]
+    },
+    {
+      "slug": "tailored-financial-solutions",
+      "title": "Tailored Financial Solutions",
+      "icon": "briefcase",
+      "summary": "Custom packages built around your business.",
+      "text": "We offer custom and comprehensive financial services and business packages to suit your business's specific needs, so you get reliable numbers and an accurate business prognosis every step of the way.",
+      "lead": "No two businesses are alike, so we take the time to understand your goals, challenges and opportunities before putting a financial plan together.",
+      "covers": [
+        {
+          "title": "A plan built for your business",
+          "text": "Strategies aligned to your own needs rather than a package pulled off a shelf."
+        },
+        {
+          "title": "Stronger cash flow",
+          "text": "Solutions aimed at improving cash flow and strengthening how decisions get made."
+        },
+        {
+          "title": "Reliable numbers",
+          "text": "An accurate business prognosis at every stage, so you know where you stand."
+        },
+        {
+          "title": "Room to focus",
+          "text": "Clarity, confidence and the freedom to focus on what you do best."
+        }
+      ]
+    }
+  ],
+  "process": {
+    "title": "How we work",
+    "text": "The same start for a first-year business and a long-standing one.",
+    "steps": [
+      {
+        "title": "Fill out the interest form",
+        "text": "Give us a few details about your business to get the process started."
+      },
+      {
+        "title": "A follow-up call or email",
+        "text": "We get in touch to talk about your needs and see if we are a good fit."
+      },
+      {
+        "title": "A plan tailored to you",
+        "text": "We take the time to understand your goals, challenges and opportunities before creating a financial plan."
+      },
+      {
+        "title": "Year-round support",
+        "text": "We don't just show up at tax time. We stay in it with you for the long haul."
+      }
+    ]
+  },
+  "affiliations": {
+    "title": "Credentials and memberships",
+    "items": [
+      "American Institute of Certified Public Accountants",
+      "Texas Society of Certified Public Accountants",
+      "Southeast Texas CPA Society"
+    ]
+  },
+  "about": {
+    "title": "We see you and we understand.",
+    "text": [
+      "At Marino CPA, we don't just crunch numbers — we see you. We understand the pressures, the goals and the grit it takes to run a business. That's why we become more than your accountant — we become your ally, focused on unlocking your full potential.",
+      "At the heart of everything we do are two simple values: clear communication and personal attention. We believe accounting shouldn't be confusing—or impersonal. That's why we take the time to explain things in plain language, keep you informed at every step, and ensure you always know where you stand.",
+      "You're never just a file or a number to us. We listen, we respond, and we tailor our services to your unique needs. We have proudly served clients in the Houston and Beaumont communities for over 35 years.",
+      "We value working with people who are passionate about their business, because that passion is contagious and it attracts what the business needs. Our client relationships are collaborative, and we recognize the impact small businesses have on a community through drive, cultivation and innovation."
+    ],
+    "image": "/brands/marinocpafirm/about",
+    "imageAlt": "The firm's sign and framed mark on the office wall",
+    "values": [
+      {
+        "title": "Proactive communication",
+        "text": "We don't disappear after tax season. You'll hear from us all year long."
+      },
+      {
+        "title": "Straightforward advice",
+        "text": "No jargon. Just smart, simple insights you can act on."
+      },
+      {
+        "title": "Relationship-focused",
+        "text": "Our clients stick with us for years, not quarters."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Jeff Marino, CPA",
+      "role": "Partner",
+      "bio": "A Certified Public Accountant and shareholder with over 20 years of experience providing strategic financial guidance to privately held businesses and entrepreneurs. He is licensed in Texas and is an active member of the American Institute of Certified Public Accountants, the Texas Society of Certified Public Accountants and the Southeast Texas CPA Society. He earned his Bachelor of Business Administration in Accounting from Texas State University in 1998, followed by a Master of Accountancy in 2000. He has a strong focus on companies in the home building industry, and his areas of expertise include business and personal tax preparation, tax planning, cash flow management, financial statement analysis and succession planning. He has also guided clients through venture capital funding, mergers and acquisitions and budget optimization."
+    },
+    {
+      "name": "Lori Hastings",
+      "role": "Partner",
+      "bio": "A Partner specializing in tax, financial statement preparation and payroll services. Known for her approachable nature and commitment to client success, she helps individuals and businesses navigate financial challenges with clarity and confidence. She earned her Bachelor of Business Administration in Accounting from Lamar University."
+    },
+    {
+      "name": "Roger Croley, CPA",
+      "role": "Partner",
+      "bio": "A shareholder with over 20 years of experience helping clients with their financial and business needs, with an emphasis in audit, review and compilations. He is also well-versed in preparing both business and personal tax returns. He started his career in industry accounting for a publicly traded company, and he is licensed in the state of Texas and a member of the Texas Society of Certified Public Accountants."
+    },
+    {
+      "name": "Judy Lehner",
+      "role": "Firm Administrator",
+      "bio": "Office Manager, where she keeps the office running smoothly and handles key responsibilities such as filing tax returns, managing billings and overseeing franchise tax submissions. She joined the firm in 2017 and has over eight years of experience in the accounting environment, after 34 years in public education, and she holds both a bachelor's and a master's degree in education."
+    },
+    {
+      "name": "Tamra Basye",
+      "role": "Executive Assistant",
+      "bio": "Brings four years of experience in client communications, workflow processes, document organization and schedule coordination, and makes sure every client receives personalized attention and efficient service. She holds a bachelor's degree in technology with an emphasis on Business Education from the University of Houston, and retired from education after 28 years of teaching."
+    },
+    {
+      "name": "Linda Bahnsen",
+      "role": "Accounting Services Manager / Senior Tax Associate",
+      "bio": "Specializes in financial reporting and process improvements, with thirty years across private accounting, corporate manufacturing accounting, inventory management and purchasing management. She graduated from Lamar University in 1995 with a B.B.A. in Accounting and is working on an Enrolled Agent certificate through the IRS."
+    },
+    {
+      "name": "Jessica Kline",
+      "role": "Senior Tax Associate / Accounting Specialist",
+      "bio": "A Senior Accountant with over 12 years of experience turning complex financial data into clear, actionable insights, from preparing accurate reports and ensuring compliance to streamlining processes for greater efficiency."
+    },
+    {
+      "name": "Christy Simmons",
+      "role": "Tax Associate / Accounting Associate",
+      "bio": "With over 15 years of accounting experience, Christy has strong expertise in bookkeeping, payroll, payroll reporting and financial organization, and in managing day-to-day financial operations. She works with individuals, small businesses and corporate clients."
+    },
+    {
+      "name": "Darlene Calfee",
+      "role": "Accounting Specialist",
+      "bio": "Brings over thirty years of accounting experience spanning banking and financial institutions, private and public corporations and non-profit organizations, having served as a mortgage accounting specialist, an office manager and an administrative manager."
+    },
+    {
+      "name": "Weston Hodge",
+      "role": "Administrative Assistant",
+      "bio": "The first point of contact for several clients, overseeing document control and front office operations so that each client's visit and enquiry goes smoothly from start to finish. He brings six years of experience working with the public, holds a bachelor's degree in computer science from the University of Houston, and spent several years as a mathematics teacher and a licensed life insurance agent."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Client Portal",
+      "text": "Sign in to the secure portal to send and collect documents.",
+      "href": "https://secure.netlinksolution.com/nextgen/#/"
+    },
+    {
+      "title": "On the Blog",
+      "text": "Articles on accounting, finance and running a business.",
+      "href": "https://blog.marinocpafirm.com/blog"
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Beaumont"
+  ],
+  "facts": [
+    {
+      "heading": "Houston office",
+      "text": "3642 University Blvd, Suite #201, Houston, TX 77005. Phone (713) 636-9966."
+    },
+    {
+      "heading": "Beaumont office",
+      "text": "2396 Eastex Freeway, Beaumont, TX 77703. Phone (409) 898-8777."
+    },
+    {
+      "heading": "Email",
+      "items": [
+        "info@marinocpafirm.com for general enquiries",
+        "audit@marinocpafirm.com for the audit department"
+      ]
+    },
+    {
+      "heading": "Who we work with",
+      "items": [
+        "Small and mid-market businesses",
+        "Business owners",
+        "Individual tax clients"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/p/Marino-CPA-Firm-100063680974401",
+        "LinkedIn: linkedin.com/company/marino-cpa-firm"
+      ]
+    },
+    {
+      "heading": "Newsletter",
+      "text": "Sign up for the monthly newsletter to get accounting and financial resources, tax updates and more."
+    },
+    {
+      "heading": "Engagement and privacy",
+      "items": [
+        "A formal engagement letter is required to establish a client relationship; using the website alone does not create one.",
+        "Marino CPA does not sell your personal information, and a request to access, correct or delete your data can be sent to info@marinocpafirm.com."
+      ]
+    }
+  ]
+}
