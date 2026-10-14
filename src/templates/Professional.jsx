@@ -1165,7 +1165,7 @@ function AboutPage(props) {
             {list(b.about.values).length > 0 && <h2 className="font-heading font-display-2 text-2xl text-ink">What to expect</h2>}
             <Values values={list(b.about.values)} />
             {area.length > 0 && (
-              <div className="mt-10">
+              <div className="mt-10 first:mt-0">
                 <h2 className="mb-4 font-heading font-display-2 text-2xl text-ink">Where we work</h2>
                 <ul className="flex flex-wrap gap-2.5">
                   {area.map((t) => (
