@@ -57,11 +57,31 @@ class Unfit(Exception):
     """A logo that cannot be shown cleanly, and why."""
 
 
-def drawn_size(ratio):
+# A strip of words set apart above or below the rest of the mark (a tagline
+# under the name) is drawn at least this tall, so its letters read, up to the
+# height a badge is drawn at. A run of rows thinner than RULE_SHARE of the mark
+# is a rule, not words.
+STRIP_MIN = 14
+STRIP_MOST = 74
+RULE_SHARE = 0.05
+
+
+def strip_share(arr):
+    """The share of the mark's height its thinnest strip of words takes, where
+    clear rows part the mark into strips; 1 for a mark in one piece."""
+    rows = (arr[..., 3] > 32).any(axis=1)
+    edges = np.flatnonzero(np.diff(np.concatenate([[False], rows, [False]]).astype(np.int8)))
+    runs = [end - start for start, end in zip(edges[::2], edges[1::2]) if end - start >= RULE_SHARE * len(rows)]
+    return min(runs) / len(rows) if len(runs) > 1 else 1.0
+
+
+def drawn_size(ratio, strip=1.0, most=None):
     """The size the header draws a logo of this shape, in CSS px: wordmarks
-    lower and wider, badges taller so the name inside them reads, nothing
-    past 260 across."""
+    lower and wider, badges taller so the name inside them reads, a mark with
+    a thin strip of words taller so the strip reads (never past `most`, the
+    file's own height), nothing past 260 across."""
     height = 48 if ratio >= 3.2 else 58 if ratio >= 1.6 else 74
+    height = max(height, min(STRIP_MIN / strip, STRIP_MOST, most or STRIP_MOST))
     width = height * ratio
     if width > 260:
         width, height = 260, 260 / ratio
@@ -482,7 +502,7 @@ def prepare(image):
     if best_share < LEGIBLE_SHARE:
         raise Unfit(f"too little of the logo stands out from its ground ({best_share:.0%} of it)")
 
-    width, height = drawn_size(ratio)
+    width, height = drawn_size(ratio, strip_share(arr), h / SOURCE_OVER_DRAWN)
     if w < width * SOURCE_OVER_DRAWN or h < height * SOURCE_OVER_DRAWN:
         raise Unfit(f"the logo is only {w}x{h}px, too small to draw {width}x{height} without enlarging it")
     sharp = edge_sharpness(arr, best, height * 2)
@@ -522,7 +542,7 @@ def rework(image):
         on_white, on_dark = legibility(arr, WHITE), legibility(arr, DARK_GROUND)
         native = WHITE if on_white >= LEGIBLE_SHARE or on_white >= on_dark else DARK_GROUND
     h, w = arr.shape[:2]
-    width, height = drawn_size(w / h)
+    width, height = drawn_size(w / h, strip_share(arr), h / SOURCE_OVER_DRAWN)
     out = Image.fromarray(arr, "RGBA")
     keep = min(out.width, width * 2)
     if keep < out.width:
