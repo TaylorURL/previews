@@ -1515,7 +1515,7 @@ function PlanPage({ b, tel }) {
   );
 }
 
-function AboutPage({ b, tel }) {
+function AboutPage({ b, groups, tel }) {
   const licenses = list(b.licenses);
   const values = list(b.about.values);
   const rating = ratingLine(b);
@@ -1529,6 +1529,30 @@ function AboutPage({ b, tel }) {
         text={list(b.about.text)[0]}
         image={b.about.image}
         imageAlt={b.about.imageAlt}
+        panel={
+          // With no photo of the business, what it does stands beside its story rather than a bare half of grid.
+          groups.length > 0 && (
+            <div className="hidden rounded-[24px] border border-line bg-white p-6 shadow-[0_30px_60px_-35px_rgba(11,27,43,0.55)] sm:p-8 lg:block lg:w-full lg:max-w-[420px] lg:justify-self-end">
+              <p className="font-heading text-[13px] font-bold uppercase tracking-[0.14em] text-muted">What we do</p>
+              <ul className="mt-4 grid">
+                {groups.map((g) => (
+                  <li key={g.slug} className="border-t border-line first:border-0">
+                    <a
+                      href={`/${g.slug}`}
+                      className="flex min-h-[56px] items-center gap-3.5 py-2.5 font-heading text-[17px] font-bold text-ink no-underline hover:text-[color:var(--pt)]"
+                    >
+                      <span className={`${iconTile} h-10 w-10`}>
+                        <GroupIcon name={g.icon} size={19} />
+                      </span>
+                      <span className="min-w-0 flex-1">{g.title}</span>
+                      <ChevronRight size={17} className="flex-none text-[color:var(--pt)]" aria-hidden="true" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
       >
         <CtaPair b={b} tel={tel} />
       </PageHero>
@@ -1764,7 +1788,7 @@ export default function Hvac({ b, path = '' }) {
         {page === 'home' && <Home b={b} groups={groups} tel={tel} />}
         {page === 'group' && <GroupPage b={b} groups={groups} group={group} tel={tel} />}
         {page === 'plan' && <PlanPage b={b} tel={tel} />}
-        {page === 'about' && <AboutPage b={b} tel={tel} />}
+        {page === 'about' && <AboutPage b={b} groups={groups} tel={tel} />}
         {page === 'contact' && <ContactPage b={b} groups={groups} tel={tel} />}
       </main>
       {!path && <Facts b={b} />}
