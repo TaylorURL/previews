@@ -1,0 +1,394 @@
+{
+ "template": "hvac",
+ "preview": true,
+ "ask": "service",
+ "name": "Houston Welding Academy LLC",
+ "shortName": "Houston Welding Academy",
+ "summary": "Hands-on welding courses in Pasadena, Texas, with day and night classes in structural, pipe and specialty welding.",
+ "phone": "(832) 729-3322",
+ "email": "info@houstonweldingacademy.com",
+ "address": "1522 Preston Ave",
+ "town": "Pasadena",
+ "state": "TX",
+ "zip": "77503",
+ "rating": 5.0,
+ "reviewCount": 87,
+ "hours": [
+  [
+   "Day shift, Mon – Fri",
+   "8 AM – 12 PM"
+  ],
+  [
+   "Night shift, Mon – Fri",
+   "6 PM – 10 PM"
+  ],
+  [
+   "Sat – Sun",
+   "Closed"
+  ]
+ ],
+ "brand": {
+  "primary": "#0229ef",
+  "primaryDeep": "#0b1a94",
+  "ink": "#111318",
+  "muted": "#55596b",
+  "surface": "#eef1fe",
+  "line": "#dde1f2",
+  "heading": "'Oswald', system-ui, sans-serif",
+  "body": "'Lato', system-ui, sans-serif",
+  "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Lato:wght@400;700&display=swap",
+  "logo": "/brands/houstonweldingacademy/logo.webp",
+  "logoMono": "/brands/houstonweldingacademy/logo-mono.webp",
+  "logoWidth": 74,
+  "logoHeight": 74,
+  "logoRatio": 1.0,
+  "logoGround": "#ffffff",
+  "logoReads": [
+   0.916,
+   0.923,
+   0.932,
+   0.94,
+   0.949,
+   0.957,
+   0.966,
+   0.974,
+   0.983,
+   0.992,
+   1.0
+  ]
+ },
+ "financing": {
+  "text": "Tuition is paid out of pocket, with a private student loan or scholarship, or on a payment plan."
+ },
+ "hero": {
+  "eyebrow": "Accredited trade school in Pasadena, TX",
+  "title": "Elevating welding",
+  "titleAccent": "standards.",
+  "lead": "One of the most affordable accredited welding programs in the Houston area, with 100% hands-on training and no tools required to start.",
+  "image": "/brands/houstonweldingacademy/hero",
+  "imageAlt": "A gloved hand running an arc along a steel joint as sparks fly"
+ },
+ "groups": [
+  {
+   "slug": "structural-welding",
+   "title": "Structural Welding",
+   "icon": "flame",
+   "summary": "Plate courses that prepare you for entry-level structural work in construction and industry.",
+   "intro": "Structural courses are built around carbon steel plate. You learn the arc process itself alongside welding and cutting safety, metal preparation, weld quality, weld symbols and detail drawings, and employment readiness. On completion a graduate should be able to start work as an entry-level structural welder in the construction or industrial field.",
+   "image": "/brands/houstonweldingacademy/structural",
+   "imageAlt": "A welder running a bead on flat steel at a bench, blue sparks around the arc",
+   "services": [
+    {
+     "slug": "smaw-plate",
+     "title": "SMAW Plate",
+     "icon": "zap",
+     "text": "Shielded Metal Arc Welding on carbon steel plate, designed for the beginner welder or the welder with some experience preparing for structural or industrial work.",
+     "points": [
+      "120 hours over 6 weeks",
+      "Oxyfuel, plasma arc and air carbon arc cutting",
+      "Weld symbols and detail drawings"
+     ]
+    },
+    {
+     "slug": "fcaw-gmaw-plate",
+     "title": "FCAW & GMAW Plate Combo",
+     "icon": "zap",
+     "text": "The flux core arc welding and gas metal arc welding processes on plate, including all three modes of transfer: short arc, pulse and spray arc.",
+     "points": [
+      "120 hours over 6 weeks",
+      "Arc welding safety and proper technique",
+      "Metal preparation and weld quality"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "pipe-welding",
+   "title": "Pipe Welding",
+   "icon": "waves",
+   "summary": "Pipe courses in the 2G, 5G and 6G positions, taught to ASME welding code.",
+   "intro": "Pipe work is where the positions get harder and the money follows. These courses cover electrode and process selection, welding safety and proper technique for pipe in the 2G, 5G and 6G positions. The SMAW pipe course is taught to meet ASME welding code.",
+   "image": "/brands/houstonweldingacademy/pipe",
+   "imageAlt": "A welder in a helmet striking an arc with a stick electrode on a length of round pipe",
+   "services": [
+    {
+     "slug": "smaw-pipe",
+     "title": "SMAW Pipe",
+     "icon": "zap",
+     "text": "Welding safety, proper technique and electrode selection for the Shielded Metal Arc Welding process on pipe in the 2G, 5G and 6G positions, to meet ASME welding code.",
+     "points": [
+      "120 hours over 6 weeks",
+      "Taught to ASME welding code"
+     ]
+    },
+    {
+     "slug": "gtaw-tig",
+     "title": "GTAW (TIG)",
+     "icon": "zap",
+     "text": "The gas tungsten arc welding process from arc welding safety through proper technique, metal preparation and weld quality.",
+     "points": [
+      "120 hours over 6 weeks",
+      "Weld symbols and detail drawings",
+      "Employment readiness"
+     ]
+    },
+    {
+     "slug": "fcaw-gmaw-pipe",
+     "title": "FCAW & GMAW Pipe Combo",
+     "icon": "zap",
+     "text": "The flux core arc welding and gas metal arc welding processes on pipe, with short arc, pulse and spray arc transfer.",
+     "points": [
+      "120 hours over 6 weeks",
+      "Cutting, metal preparation and weld quality"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "specialty-welding",
+   "title": "Specialty Welding",
+   "icon": "shield",
+   "summary": "Longer combination courses and stainless steel, for welders who want the widest range of work.",
+   "intro": "The combination courses put plate and pipe together in one program, so a graduate leaves with a certificate of completion and more than one process behind them. Plate and pipe welders can seek work at commercial construction companies, towers, nuclear energy plants, refineries, pipe yards and fabrication companies.",
+   "image": "/brands/houstonweldingacademy/specialty",
+   "imageAlt": "A worker cutting steel tube with an oxyfuel torch, sparks pouring off the cut",
+   "services": [
+    {
+     "slug": "combination-welder",
+     "title": "Combination Welder",
+     "icon": "settings",
+     "text": "Plate SMAW, pipe SMAW and pipe GTAW in one course. Hands-on plate work in 2G, 3G and 4G, and pipe work in 2G, 5G and 6G.",
+     "points": [
+      "Certificate of completion",
+      "Two manual arc processes, consumable and non-consumable electrode"
+     ]
+    },
+    {
+     "slug": "stainless-steel",
+     "title": "Stainless Steel Welding",
+     "icon": "shield",
+     "text": "An introduction to welding on stainless steel: how the process works, its advantages and disadvantages, and the techniques that improve a weld.",
+     "points": [
+      "Joints and positions in stainless",
+      "Correct temperatures for the alloy",
+      "Tools, cleaning and safe machine operation"
+     ]
+    },
+    {
+     "slug": "pipe-specialty-welder",
+     "title": "Pipe Specialty Welder",
+     "icon": "gauge",
+     "text": "The combination course plus stainless steel welding: plate SMAW, pipe SMAW, pipe GTAW and stainless in 2G, 5G and 6G.",
+     "points": [
+      "480 hours over 24 weeks",
+      "Certificate of completion",
+      "Stainless welders can seek work at sanitary and petrochemical facilities"
+     ]
+    }
+   ]
+  }
+ ],
+ "promo": {
+  "eyebrow": "Enrollment special",
+  "title": "2 extra weeks free on the combo course.",
+  "text": "Mention this offer at the time of enrollment."
+ },
+ "about": {
+  "eyebrow": "About HWA",
+  "title": "Hands-on training, start immediately.",
+  "text": [
+   "HWA is a welding academy full of opportunities with one of the most affordable accredited welding programs in the Houston area. Our mission is that every student who gets certified by HWA is highly trained and field ready to fill any vacant job position in the welding industry.",
+   "Training is 100% hands on and no tools are required to start. Between flexible scheduling, personalized training and job placement assistance, the journey towards becoming a skilled welder begins here.",
+   "Classes run two shifts, Monday to Friday, at the shop on Preston Avenue in Pasadena. Hablamos español."
+  ],
+  "image": "/brands/houstonweldingacademy/shop",
+  "imageAlt": "Red and blue welding screens hung along the booth row inside the Houston Welding Academy shop",
+  "values": [
+   {
+    "title": "Certified instructors",
+    "text": "Certified welding instructors keep the teaching current with industry knowledge, practical skills and safety standards."
+   },
+   {
+    "title": "1-on-1 training",
+    "text": "One-to-one sessions, pre-test practice, pre-job testing and one to four hours in the booth."
+   },
+   {
+    "title": "Flexible scheduling",
+    "text": "A day shift in the morning and a night shift in the evening, Monday through Friday."
+   }
+  ]
+ },
+ "faqs": [
+  {
+   "q": "How old do I have to be to enroll?",
+   "a": "All students must be at least 17 to be considered or accepted for any course at HWA. Students under 18 must have parental or guardian consent to enroll."
+  },
+  {
+   "q": "Do I need a high school diploma?",
+   "a": "A high school diploma or GED is needed. If you do not have one there is an on-site 4th grade assessment test. We encourage all students to finish high school."
+  },
+  {
+   "q": "When are classes?",
+   "a": "Day shift runs Monday to Friday, 8 AM to 12 PM. Night shift runs Monday to Friday, 6 PM to 10 PM."
+  },
+  {
+   "q": "Do I need my own tools or gear?",
+   "a": "No tools are required to start. Before your start date HWA highly recommends you have your proper PPE."
+  },
+  {
+   "q": "Do you teach in Spanish?",
+   "a": "Hablamos español."
+  },
+  {
+   "q": "How do I enroll?",
+   "a": "Start the online application, or book a tour of the academy and come see the booths first."
+  }
+ ],
+ "facts": [
+  {
+   "heading": "Course Tuition",
+   "text": "Prices as listed in the Houston Welding Academy course shop.",
+   "items": [
+    "SMAW Plate, 120 hours / 6 weeks: $500 – $2,500",
+    "FCAW & GMAW Plate Combo, 120 hours / 6 weeks: $500 – $2,500",
+    "GTAW (TIG), 120 hours / 6 weeks: $500 – $2,500",
+    "SMAW Pipe, 120 hours / 6 weeks: $500 – $2,500",
+    "FCAW & GMAW Pipe Combo, 120 hours / 6 weeks: $500 – $2,500",
+    "Combination Welder, full course, 360 hours / 18 weeks: $500 – $7,500",
+    "Stainless Steel Welding, 80 hours / 4 weeks: $500 – $2,000",
+    "Pipe Specialty Welder, full course plus stainless, 480 hours / 24 weeks: $500 – $10,000"
+   ]
+  },
+  {
+   "heading": "Enrollment Requirements",
+   "items": [
+    "At least 17 years of age; under 18 needs parental or guardian consent",
+    "High school diploma or GED, or an on-site 4th grade assessment test",
+    "Proper PPE is highly recommended before your start date"
+   ]
+  },
+  {
+   "heading": "Paying for Tuition",
+   "items": [
+    "Out of pocket by cash, check or money order",
+    "A private student loan or scholarship",
+    "A payment plan"
+   ]
+  },
+  {
+   "heading": "Core Values",
+   "items": [
+    "Safety",
+    "Integrity",
+    "Performance",
+    "Stewardship"
+   ]
+  },
+  {
+   "heading": "Safety Training",
+   "items": [
+    "Hazard awareness",
+    "Weekly discussions",
+    "Safety meetings",
+    "Group discussion",
+    "QA and QC inspection",
+    "Challenging environment",
+    "Positive mindsets"
+   ]
+  },
+  {
+   "heading": "Student Portal",
+   "items": [
+    "Track student progress",
+    "Track your hours",
+    "Track payments"
+   ]
+  },
+  {
+   "heading": "Booth Rental",
+   "text": "Daily and weekly booth rentals for welders who want time on the machines. Call the academy for current rental options."
+  },
+  {
+   "heading": "Hablamos Español",
+   "text": "Spanish is spoken at the academy, and the courses can be followed in Spanish."
+  },
+  {
+   "heading": "One-on-One Training",
+   "items": [
+    "Special hours",
+    "Accredited programs",
+    "1:1 sessions",
+    "Pre-test practice",
+    "Pre-job testing",
+    "One to four hours in the booth",
+    "QA and QC available"
+   ]
+  },
+  {
+   "heading": "Field Simulators",
+   "text": "Scaffold welding simulators let students master essential skills in a safe, controlled environment, bridging the gap between theory and real-world application."
+  },
+  {
+   "heading": "Processes Taught",
+   "items": [
+    "TIG welding",
+    "Stick welding",
+    "MIG and flux welding",
+    "Stainless welding"
+   ]
+  },
+  {
+   "heading": "Enrollment Options",
+   "items": [
+    "Online application",
+    "On-site tour",
+    "Workshop events"
+   ]
+  },
+  {
+   "heading": "Tour Times",
+   "text": "Day tours run 8 AM to 12 PM and night tours 6 PM to 9 PM, booked as a personal tour of the academy."
+  },
+  {
+   "heading": "Course Choices On The Application",
+   "items": [
+    "Tig and Stick",
+    "Tig, Mig and Flux",
+    "Stick, Mig and Flux",
+    "1-on-1 training"
+   ]
+  },
+  {
+   "heading": "Refund And Cancellation Policy",
+   "items": [
+    "A full refund for any student who cancels the enrollment contract within 72 hours of signing it",
+    "A full refund for any student who cancels within the first five scheduled class days, the trial enrollment period, except that the school may retain no more than $100 in administrative fees and the cost of items of extra expense necessary for the portion of the program attended",
+    "After the cancellation period, the minimum refund is the pro rata portion of tuition and fees for the hours remaining, and no refund is due once 75 percent or more of the charged hours are completed",
+    "A full refund of all tuition where an enrollee is not accepted, a course is discontinued, enrollment was procured through misrepresentation, or the student withdraws during the trial enrollment period",
+    "A student called to active military duty may choose a pro rata refund, a grade of incomplete marked withdrawn-military with the right to re-enroll, or a final grade where at least 90 percent of the coursework is complete",
+    "Books, tools and supplies are refunded separately, and no refund is made once those materials are purchased",
+    "Refunds are completed within 60 days after the effective date of termination"
+   ]
+  },
+  {
+   "heading": "Student Records",
+   "items": [
+    "HWA follows the Family Educational Rights and Privacy Act of 1974, and student records are kept in locked cabinets and shredded when destroyed",
+    "Records are kept at least five years after graduation or the end of the class, and academic records are kept permanently",
+    "A graduate can obtain a copy of their academic records by contacting the school director",
+    "Education records can include class lists, grade rosters, student schedules, welding tests and NCCER documentation",
+    "A current or former student can inspect their records on written request, made available within 30 days",
+    "Transcripts are not issued to a student who is delinquent on school charges or behind on financial loan repayments",
+    "HWA does not recognize any previous education, training or experience"
+   ]
+  },
+  {
+   "heading": "Student Complaints",
+   "text": "A student with a concern is encouraged to schedule a conference with the school director. A formal written complaint gets a written response by the 10th business day after it is received, and a student who is dissatisfied with the response can file with the Texas Workforce Commission, Career Schools and Colleges, Room 226T, 101 East 15th Street, Austin, Texas 78778-0001, (512) 936-3100."
+  },
+  {
+   "heading": "Follow HWA",
+   "text": "The academy posts student work on Instagram at @houstonweldingacademy and on its Facebook page."
+  }
+ ]
+}

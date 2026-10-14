@@ -233,10 +233,15 @@ export function Facts({ b }) {
   if (!facts.length) return null;
   const rule = { borderColor: 'color-mix(in srgb, currentColor 18%, transparent)' };
   return (
-    <section aria-label={`About ${b.name}`} className="mx-auto w-full max-w-7xl px-5 sm:px-8">
-      <div className="gap-x-10 border-t pb-5 pt-12 sm:columns-2 lg:columns-3" style={rule}>
+    // The same container every template sets its own sections in, so the
+    // rules down the left of each block stand on the page's margin rather
+    // than outside it.
+    <section aria-label={`About ${b.name}`} className="mx-auto w-full max-w-page px-gutter">
+      {/* A grid rather than a column flow: a long list no longer drags the
+          blocks beside it out of line, and each row starts level. */}
+      <div className="grid gap-x-10 gap-y-7 border-t pb-5 pt-12 sm:grid-cols-2 lg:grid-cols-3" style={rule}>
         {facts.map((fact) => (
-          <div key={fact.heading} className="mb-7 min-w-0 break-inside-avoid border-l-2 pl-4" style={rule}>
+          <div key={fact.heading} className="min-w-0 self-start border-l-2 pl-4" style={rule}>
             <h2 className="font-heading text-[17px] font-semibold opacity-100">{fact.heading}</h2>
             {fact.text && <p className="mt-2 text-[16px] leading-relaxed opacity-85">{fact.text}</p>}
             {fact.items?.length > 0 && (
