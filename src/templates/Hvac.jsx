@@ -345,7 +345,8 @@ function EmergencyStrip({ b, tel }) {
       <div className={`${wrap} flex min-h-[44px] items-center justify-between gap-4 py-1.5 text-[14px]`}>
         <p className="flex min-w-0 items-center gap-2.5 font-semibold">
           <Siren size={17} className="flex-none" aria-hidden="true" />
-          <span className="truncate">
+          {/* Wraps rather than truncates, so a long message is read whole instead of stopping mid-word. */}
+          <span className="min-w-0 leading-[1.4]">
             {b.emergency.title}
             <span className="hidden font-normal opacity-85 xl:inline"> &middot; {b.emergency.text}</span>
           </span>
@@ -790,7 +791,10 @@ function ClosingBand({ b, tel, title, text, flush = false }) {
             className="absolute -right-24 -top-24 -z-10 h-80 w-80 rounded-full bg-primary opacity-60 blur-3xl"
             aria-hidden="true"
           />
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:items-end">
+          {/* The buttons sit level with the heading, not at the foot of the
+              band: against a long service-area list they would otherwise drop
+              to the bottom and leave the top right an empty colored block. */}
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:items-start">
             <div>
               <Eyebrow light>{b.emergency ? b.emergency.title : askOf(b).eyebrow}</Eyebrow>
               <h2 className="font-heading text-[clamp(1.9rem,1.35rem+2.1vw,2.85rem)] font-extrabold leading-[1.08] tracking-[-0.025em] [text-wrap:balance]">
@@ -1046,7 +1050,8 @@ function Home({ b, groups, tel }) {
           <div className="min-w-0">
             <Eyebrow light>{b.hero.eyebrow}</Eyebrow>
             <h1 className="font-heading font-display text-[clamp(2.4rem,1.2rem+4vw,4.3rem)] leading-[1.03] text-white [text-wrap:balance] break-words">
-              {b.hero.title} {b.hero.titleAccent && <span className="text-white/75">{b.hero.titleAccent}</span>}
+              {/* The second half is solid white too: a see-through white turns grey over a busy photo and reads weaker than the first. */}
+              {b.hero.title} {b.hero.titleAccent && <span className="text-white">{b.hero.titleAccent}</span>}
             </h1>
             <p className="mt-6 max-w-[34rem] text-[17px] leading-[1.65] text-white/85 sm:text-[18px]">{b.hero.lead}</p>
             <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
@@ -1178,7 +1183,8 @@ function Home({ b, groups, tel }) {
 
       {b.about && (
         <section className={`${pad} bg-surface`}>
-          <div className={`${wrap} grid items-center gap-10 ${b.about.image ? 'md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]' : ''} lg:gap-20`}>
+          {/* The photo stands level with the heading, so words that run longer than it never leave a bare block above it. */}
+          <div className={`${wrap} grid items-start gap-10 ${b.about.image ? 'md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]' : ''} lg:gap-20`}>
             {b.about.image && (
             <div className="relative">
               <Img
@@ -1254,9 +1260,9 @@ function Home({ b, groups, tel }) {
   );
 }
 
-/** A group page's heading: a group that holds services is called its services, unless its name already says so; one that is a single service is named as it is. */
-function groupTitle(group, town) {
-  const services = list(group.services).length > 0 && !/\bservices?$/i.test(group.title);
+/** A group page's heading: a group that holds services is called its services, unless its name already says so; one that is a single service is named as it is. A business that rents space out does no services at all, so its groups are named as the things they are. */
+function groupTitle(group, town, ask) {
+  const services = list(group.services).length > 0 && !ask.rents && !/\bservices?$/i.test(group.title);
   return `${group.title}${services ? ' services' : ''} in ${town}`;
 }
 
@@ -1286,7 +1292,7 @@ function GroupPage({ b, groups, group, tel }) {
         b={b}
         crumbs={[group.title]}
         icon={group.icon}
-        title={groupTitle(group, b.town)}
+        title={groupTitle(group, b.town, askOf(b))}
         text={group.intro}
         image={group.image}
         imageAlt={group.imageAlt}
@@ -1322,13 +1328,13 @@ function GroupPage({ b, groups, group, tel }) {
 
       {services.length > 1 && (
         <nav aria-label={`${group.title} services`} className="border-b border-line bg-white">
-          {/* A phone scrolls the strip; from md up every chip wraps into view rather than being cut at the edge. */}
-          <ul className={`${wrap} flex gap-2 overflow-x-auto py-3 [scrollbar-width:none] md:flex-wrap md:overflow-visible`}>
+          {/* Every chip wraps into view, on a phone too, rather than being cut at the edge. */}
+          <ul className={`${wrap} flex flex-wrap gap-2 py-3`}>
             {services.map((s) => (
-              <li key={s.slug} className="flex-none">
+              <li key={s.slug} className="max-w-full flex-none">
                 <a
                   href={`#${s.slug}`}
-                  className="inline-flex min-h-[44px] items-center gap-2 whitespace-nowrap rounded-full border border-line px-4 text-[16px] md:text-[15px] font-medium text-ink no-underline hover:border-primary hover:text-[color:var(--pt)]"
+                  className="inline-flex min-h-[44px] items-center gap-2 rounded-full border border-line px-4 text-[16px] md:text-[15px] font-medium text-ink no-underline hover:border-primary hover:text-[color:var(--pt)]"
                 >
                   <GroupIcon name={s.icon || group.icon} size={15} className="text-[color:var(--pt)]" /> {s.title}
                 </a>
@@ -1341,7 +1347,8 @@ function GroupPage({ b, groups, group, tel }) {
       {services.length > 0 && (
       <section className={`${pad} bg-white`}>
         <div className={`${wrap} grid gap-12 lg:grid-cols-[minmax(0,1fr)_380px] lg:gap-16`}>
-          <div className="grid gap-5">
+          {/* content-start, so a short list keeps its cards their own height rather than stretching them to the form's. */}
+          <div className="grid content-start gap-5">
             {services.map((s, i) => (
               <article key={s.slug} id={s.slug} className={`${anchor} rounded-2xl border border-line p-6 sm:p-8`}>
                 <div className="flex items-start gap-4 sm:gap-5">
@@ -1584,7 +1591,33 @@ function ContactPage({ b, groups, tel }) {
   const w = askOf(b);
   return (
     <>
-      <PageHero b={b} crumbs={['Contact']} eyebrow={w.eyebrow} title={w.contactTitle} text={w.contactText} />
+      <PageHero
+        b={b}
+        crumbs={['Contact']}
+        eyebrow={w.eyebrow}
+        title={w.contactTitle}
+        text={w.contactText}
+        panel={
+          // The hero asks the visitor to pick up the phone, so the number stands beside it rather than a bare half of grid.
+          <a
+            href={tel}
+            className="hidden rounded-[24px] border border-line bg-white p-6 text-ink no-underline shadow-[0_30px_60px_-35px_rgba(11,27,43,0.55)] sm:p-8 lg:block lg:w-full lg:max-w-[420px] lg:justify-self-end"
+          >
+            <span className="flex items-center gap-4">
+              <span className={`${iconTile} h-14 w-14`}>
+                <Phone size={24} aria-hidden="true" />
+              </span>
+              <span className="min-w-0">
+                <span className="block font-heading text-[13px] font-bold uppercase tracking-[0.14em] text-muted">Call us now</span>
+                <span className="mt-1 block font-heading text-[28px] font-extrabold tracking-[-0.02em]">{b.phone}</span>
+              </span>
+            </span>
+            <span className="mt-5 block border-t border-line pt-5 text-[15px] leading-[1.6] text-muted">
+              {b.address ? full : `${b.town}, ${b.state}`}
+            </span>
+          </a>
+        }
+      />
       <section className={`${pad} bg-white`}>
         <div className={`${wrap} grid items-start gap-10 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.75fr)] lg:gap-14`}>
           <div className="rounded-[24px] border border-line p-5 sm:p-8 lg:p-10">

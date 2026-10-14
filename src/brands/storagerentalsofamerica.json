@@ -1,0 +1,479 @@
+{
+ "template": "hvac",
+ "preview": true,
+ "ask": "reserve",
+ "name": "Storage Rentals of America",
+ "shortName": "SROA",
+ "summary": "Rent storage units in Houston, Texas. Climate-controlled storage, RV storage, and flexible month-to-month leasing on West 34th Street.",
+ "phone": "(346) 474-6110",
+ "email": "L617@sroa.com",
+ "address": "4100 W 34th St",
+ "town": "Houston",
+ "state": "TX",
+ "zip": "77092",
+ "rating": 4.9,
+ "reviewCount": 986,
+ "hours": [
+  [
+   "Mon – Tue",
+   "9:30 AM – 5:30 PM"
+  ],
+  [
+   "Wednesday",
+   "Closed"
+  ],
+  [
+   "Thu – Fri",
+   "9:30 AM – 5:30 PM"
+  ],
+  [
+   "Saturday",
+   "9 AM – 5 PM"
+  ],
+  [
+   "Sunday",
+   "Closed"
+  ]
+ ],
+ "brand": {
+  "primary": "#263c84",
+  "primaryDeep": "#1a2a5e",
+  "accent": "#ba3335",
+  "ink": "#0a0b09",
+  "muted": "#565653",
+  "surface": "#f1f3fa",
+  "line": "#dfe2ec",
+  "heading": "'Montserrat', system-ui, sans-serif",
+  "body": "'Inter', system-ui, sans-serif",
+  "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap",
+  "logo": "/brands/storagerentalsofamerica/logo.webp",
+  "logoMono": "/brands/storagerentalsofamerica/logo-mono.webp",
+  "logoWidth": 96,
+  "logoHeight": 58,
+  "logoRatio": 1.663,
+  "logoGround": "#ffffff",
+  "logoReads": [
+   0.42,
+   0.307,
+   0.213,
+   0.148,
+   0.17,
+   0.305,
+   0.439,
+   0.576,
+   0.718,
+   0.864,
+   1.0
+  ]
+ },
+ "hero": {
+  "eyebrow": "Self storage on West 34th St",
+  "title": "Climate-controlled and drive-up storage",
+  "titleAccent": "in Houston",
+  "lead": "Climate-controlled units, drive-up units and outdoor parking on West 34th Street, on month-to-month leases with no deposit required. Move in online, over the phone or at the office.",
+  "image": "/brands/storagerentalsofamerica/hero",
+  "imageAlt": "A corridor of storage unit doors with padlocks"
+ },
+ "promo": {
+  "eyebrow": "Move-in special",
+  "title": "50% off your first 3 months",
+  "text": "Every size at 4100 West 34th St is listed with 50% off the first 3 months applied, and the online move-in rate is lower than the standard rate."
+ },
+ "serviceArea": [
+  "Houston",
+  "Harris County"
+ ],
+ "groups": [
+  {
+   "slug": "climate-controlled-units",
+   "title": "Climate-Controlled Units",
+   "icon": "thermometer",
+   "summary": "Units held between 55 and 80 degrees, for electronics, instruments, documents, photographs and furniture.",
+   "intro": "This Houston location includes climate-controlled storage units that maintain consistent temperature and humidity levels, protecting sensitive belongings from Texas's hot summers and mild winters. They are kept between 55 and 80 degrees, which suits electronics, musical instruments, documents, photographs and furniture that moisture or extreme temperatures could damage. All of them are ground-floor, indoor units.",
+   "services": [
+    {
+     "slug": "5x5-climate-controlled",
+     "title": "5x5 Climate Controlled",
+     "text": "25 sq ft on the ground floor, about a closet's worth of boxes and seasonal decorations.",
+     "points": [
+      "$7 a month online",
+      "$14 a month standard rate",
+      "50% off first 3 months"
+     ]
+    },
+    {
+     "slug": "5x10-climate-controlled",
+     "title": "5x10 Climate Controlled",
+     "text": "50 sq ft on the ground floor, with a standard 3-foot door.",
+     "points": [
+      "$14 a month online",
+      "$28 a month standard rate",
+      "50% off first 3 months"
+     ]
+    },
+    {
+     "slug": "5x15-climate-controlled",
+     "title": "5x15 Climate Controlled",
+     "text": "75 sq ft on the ground floor, with a standard 3-foot door.",
+     "points": [
+      "$24 a month online",
+      "$48 a month standard rate",
+      "50% off first 3 months"
+     ]
+    },
+    {
+     "slug": "10x10-climate-controlled",
+     "title": "10x10 Climate Controlled",
+     "text": "100 sq ft on the ground floor, with a standard 8-foot door like a garage.",
+     "points": [
+      "$26 a month online",
+      "$51 a month standard rate",
+      "50% off first 3 months"
+     ]
+    },
+    {
+     "slug": "10x15-climate-controlled",
+     "title": "10x15 Climate Controlled",
+     "text": "150 sq ft on the ground floor. Many customers find a unit around 10x15 works well for typical household storage.",
+     "points": [
+      "$34 a month online",
+      "$67 a month standard rate",
+      "50% off first 3 months"
+     ]
+    },
+    {
+     "slug": "15x10-climate-controlled",
+     "title": "15x10 Climate Controlled",
+     "text": "150 sq ft on the ground floor, laid out wider than deep.",
+     "points": [
+      "$42 a month online",
+      "$84 a month standard rate",
+      "50% off first 3 months"
+     ]
+    },
+    {
+     "slug": "20x10-climate-controlled",
+     "title": "20x10 Climate Controlled",
+     "text": "200 sq ft on the ground floor, enough for several rooms of furniture.",
+     "points": [
+      "$72 a month online",
+      "$144 a month standard rate",
+      "50% off first 3 months"
+     ]
+    },
+    {
+     "slug": "10x20-climate-controlled",
+     "title": "10x20 Climate Controlled",
+     "text": "200 sq ft on the ground floor, for entire household contents or business inventory.",
+     "points": [
+      "$90 a month online",
+      "$180 a month standard rate",
+      "50% off first 3 months"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "drive-up-units",
+   "title": "Drive-Up Units",
+   "icon": "car",
+   "summary": "Pull your vehicle up to the door for loading and unloading, from 5x10 up to 20x20.",
+   "intro": "Drive-up access is available for many of our units, so you can drive your car up to your storage unit for easy loading and unloading. Every drive-up unit here is on the ground floor, and sizes run from 5x10 up to 20x20. Units from 10x10 up have a standard 8-foot door, like a garage.",
+   "services": [
+    {
+     "slug": "5x10-drive-up",
+     "title": "5x10 Drive Up Access",
+     "text": "50 sq ft with drive-up access and a standard 3-foot door.",
+     "points": [
+      "$20 a month online",
+      "$39 a month standard rate",
+      "50% off first 3 months"
+     ]
+    },
+    {
+     "slug": "8x10-drive-up",
+     "title": "8x10 Drive Up Access",
+     "text": "80 sq ft with drive-up access on the ground floor.",
+     "points": [
+      "$21 a month online",
+      "$42 a month standard rate",
+      "50% off first 3 months"
+     ]
+    },
+    {
+     "slug": "5x15-drive-up",
+     "title": "5x15 Drive Up Access",
+     "text": "75 sq ft with drive-up access and a standard 3-foot door.",
+     "points": [
+      "$30 a month online",
+      "$59 a month standard rate",
+      "50% off first 3 months"
+     ]
+    },
+    {
+     "slug": "10x10-drive-up",
+     "title": "10x10 Drive Up Access",
+     "text": "100 sq ft with drive-up access and a standard 8-foot door.",
+     "points": [
+      "$27 a month online",
+      "$54 a month standard rate",
+      "50% off first 3 months"
+     ]
+    },
+    {
+     "slug": "10x15-drive-up",
+     "title": "10x15 Drive Up Access",
+     "text": "150 sq ft with drive-up access, a common size for household storage.",
+     "points": [
+      "$32 a month online",
+      "$64 a month standard rate",
+      "50% off first 3 months"
+     ]
+    },
+    {
+     "slug": "15x15-drive-up",
+     "title": "15x15 Drive Up Access",
+     "text": "225 sq ft with drive-up access on the ground floor.",
+     "points": [
+      "$39 a month online",
+      "$77 a month standard rate",
+      "50% off first 3 months"
+     ]
+    },
+    {
+     "slug": "20x10-drive-up",
+     "title": "20x10 Drive Up Access",
+     "text": "200 sq ft with drive-up access, laid out wider than deep.",
+     "points": [
+      "$66 a month online",
+      "$132 a month standard rate",
+      "50% off first 3 months"
+     ]
+    },
+    {
+     "slug": "10x25-drive-up",
+     "title": "10x25 Drive Up Access",
+     "text": "250 sq ft with drive-up access, for multiple rooms of furniture or business inventory.",
+     "points": [
+      "$95 a month online",
+      "$189 a month standard rate",
+      "50% off first 3 months"
+     ]
+    },
+    {
+     "slug": "20x20-drive-up",
+     "title": "20x20 Drive Up Access",
+     "text": "400 sq ft with drive-up access, the largest unit at this location.",
+     "points": [
+      "$141 a month online",
+      "$282 a month standard rate",
+      "50% off first 3 months"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "vehicle-and-boat-parking",
+   "title": "Vehicle and Boat Parking",
+   "icon": "car",
+   "summary": "Outdoor spaces for cars, trailers, RVs and boats behind the gate.",
+   "intro": "Outdoor parking spaces at this location take cars, trailers, RVs and boats. RV storage spaces are available for recreational vehicles that need secure parking during the off-season or when not in use. Standard vehicles typically fit a 20-foot space, and a space is approximately 10 feet wide unless stated otherwise.",
+   "services": [
+    {
+     "slug": "10x10-parking",
+     "title": "10x10 Parking Space",
+     "text": "An outdoor space of about 100 sq ft.",
+     "points": [
+      "$35 a month online",
+      "$69 a month standard rate",
+      "50% off first 3 months"
+     ]
+    },
+    {
+     "slug": "10x20-parking",
+     "title": "10x20 Parking Space",
+     "text": "An outdoor space of about 200 sq ft, the size most cars, trucks and boats fit.",
+     "points": [
+      "$56 a month online",
+      "$112 a month standard rate",
+      "50% off first 3 months"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "moving-supplies",
+   "title": "Moving Supplies",
+   "icon": "clipboard",
+   "summary": "Locks and moving supplies are available at the office when you move in.",
+   "intro": "Moving supplies are available at this location, so you can pick up what you need when you come to move in. A lock is required on your storage unit at move-in, for everyone's safety, and our office locations sell them.",
+   "services": [
+    {
+     "slug": "locks",
+     "title": "Locks",
+     "text": "We require a lock on your storage unit when you move in. Our office locations sell locks, and no one will have a key except for you."
+    }
+   ]
+  }
+ ],
+ "about": {
+  "eyebrow": "About us",
+  "title": "Self storage on West 34th Street",
+  "text": [
+   "Our Houston storage facility on West 34th Street offers convenient access for residents throughout the city and surrounding Harris County communities. This location serves homeowners, renters, students and local businesses looking for accessible storage solutions.",
+   "The facility provides a range of storage unit sizes to accommodate various storage needs, from compact units suitable for seasonal items to spacious units that can store entire household contents or business inventory. Our staff can assist you in selecting the appropriate unit size based on what you plan to store.",
+   "People in Houston use storage units for home moves, job relocations, seasonal storage and life transitions. Families often rent storage when relocating within the area or preparing for long-distance moves, homeowners use storage during renovations or when downsizing, and families appreciate having extra space for seasonal items like holiday decorations or outdoor equipment.",
+   "Storage Rentals of America is proud to serve Houston and the surrounding community with secure, accessible storage options and flexible month-to-month leasing."
+  ],
+  "image": "/brands/storagerentalsofamerica/about",
+  "imageAlt": "Boxes packed and ready to move out of a room",
+  "values": [
+   {
+    "title": "Month-to-month leases",
+    "text": "Flexible month-to-month leases — storage without the long-term commitment."
+   },
+   {
+    "title": "No deposit required",
+    "text": "There is no deposit to pay when you move in, and the lease is prorated for the first month only."
+   },
+   {
+    "title": "Easy move-in",
+    "text": "Move in over the phone, online or at our office. We want to make storage rentals as easy as possible."
+   }
+  ]
+ },
+ "facts": [
+  {
+   "heading": "Access hours",
+   "text": "Tenants can reach their units seven days a week from 6:00 AM to 10:00 PM through the electronic gate. The leasing office is open Monday, Tuesday, Thursday and Friday 9:30 AM to 5:30 PM and Saturday 9:00 AM to 5:00 PM, and closed Wednesday and Sunday."
+  },
+  {
+   "heading": "Reserving and renting hours",
+   "text": "Prices and rentals are handled Monday to Friday 8:00 AM to 8:00 PM and Saturday and Sunday 9:00 AM to 5:30 PM, Central time, which is wider than the leasing office hours."
+  },
+  {
+   "heading": "Picking a unit",
+   "items": [
+    "Filter by size: small, medium, large, x-large or parking",
+    "Climate Controlled, Drive Up Access and Parking are the three types here",
+    "Every unit is marked First Floor; parking spaces are marked Outdoor",
+    "Each size is offered as an Economy, Best Value or Premium package",
+    "Some packages are priced for being near or closest to the store entrance",
+    "Remaining availability is shown on each unit"
+   ]
+  },
+  {
+   "heading": "Unit features",
+   "items": [
+    "Climate-controlled storage units",
+    "Drive-up storage units",
+    "Indoor storage units",
+    "Ground floor storage units",
+    "Moving supplies available"
+   ]
+  },
+  {
+   "heading": "Access and security",
+   "items": [
+    "Electronic gate access",
+    "Drive-up access units",
+    "Fully fenced facility",
+    "Video surveillance",
+    "Well lit facility"
+   ]
+  },
+  {
+   "heading": "Renting and paying",
+   "items": [
+    "Month-to-month leases",
+    "No deposit required",
+    "Tenant protection plans available",
+    "Pay online, with AutoPay available",
+    "Online move-in discount"
+   ]
+  },
+  {
+   "heading": "Payment methods",
+   "text": "Cash, check, Visa, Mastercard, American Express, Discover, online payment and auto-payment."
+  },
+  {
+   "heading": "Parking spaces",
+   "items": [
+    "Car storage",
+    "Trailer storage",
+    "RV storage",
+    "Boat storage",
+    "Standard vehicles typically fit a 20-foot space",
+    "Spaces are approximately 10 feet wide unless stated otherwise"
+   ]
+  },
+  {
+   "heading": "Unit measurements",
+   "items": [
+    "Inside height is usually 8 to 9 feet",
+    "Door clearance is typically 6½ to 7 feet",
+    "5x5 to 5x15 units usually have a standard 3-foot door, like your home front door",
+    "10x10 and larger units typically have a standard 8-foot door, like a garage",
+    "All unit and parking space sizes and measurements are approximate"
+   ]
+  },
+  {
+   "heading": "The small print on specials",
+   "text": "Rates are based on current availability and may change without notice, and all fees are non-refundable. Special and discount pricing is offered on selected units only, subject to availability, for new customers only, and is not available on transfers or additional spaces; it applies to the rental fee alone and requires a reservation and paid reservation fee to guarantee the price. Other restrictions, taxes, tenant protection and fees, including an administrative fee, apply, and the lease is month to month, prorated the first month only, with the final month running until the last day of the month. Online pricing is available only for online reservations and rentals, and actual unit sizes may vary from the approximate estimate on the website, so please inspect any unit before renting."
+  },
+  {
+   "heading": "Moving a vehicle in",
+   "text": "Our call center can only reserve parking spots. All vehicles must be insured, registered and in running condition, and that information is provided at the facility office at the time of move-in.",
+   "items": [
+    "Measure your vehicle so it fits its designated space",
+    "Car, trailer, RV and boat storage"
+   ]
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What is the easiest way I can rent a storage unit?",
+   "a": "Move-in over the phone, online, or at our office! We want to make storage rentals as easy as possible."
+  },
+  {
+   "q": "Can I tour your storage facility before moving in?",
+   "a": "Of course! While you do not need to call ahead, we recommend calling so we can better assist your unique storage situation when you arrive. Our team is eager to help!"
+  },
+  {
+   "q": "Do I need a lock on my storage unit?",
+   "a": "Yes, for everyone's safety we require a lock on your storage unit when you move-in. All of our office locations sell locks and no one will have a key except for you."
+  },
+  {
+   "q": "How long can I rent a storage unit?",
+   "a": "As long (or as short) as you like! We offer month-to-month leases with no long-term commitments in order to make the rental process as simple as possible."
+  },
+  {
+   "q": "What is the difference between climate controlled storage units and drive up storage units?",
+   "a": "Climate controlled units are kept between 55 and 80 degrees to protect your valuables against harsh temperatures. Many drive up units allow you to drive your car up to your storage unit for easy loading and unloading."
+  },
+  {
+   "q": "What are the benefits of climate controlled storage units?",
+   "a": "Climate controlled units are great for protecting items of great monetary or sentimental value as they are kept between 55 and 80 degrees."
+  },
+  {
+   "q": "What parking size space will I need?",
+   "a": "Standard vehicles will typically fit into a 20-foot space (most cars, trucks and boats). The width of a parking space is approximately 10 feet unless stated otherwise."
+  },
+  {
+   "q": "Can I move into a parking space online or over the phone?",
+   "a": "Our call center can only reserve parking spots. All vehicles MUST be insured, registered, and in running condition. Information will have to be provided to the storage facility office at time of move in."
+  },
+  {
+   "q": "How accurate are the storage unit sizes?",
+   "a": "We try to get the most accurate numbers for all of our storage units. All storage unit and parking space sizes and measurements are approximate."
+  },
+  {
+   "q": "Do you have a parking space big enough for my vehicle?",
+   "a": "We have parking spaces of all sizes. For the consideration of our other tenants, we ask that you measure your vehicle to ensure it will fit in your designated parking space."
+  },
+  {
+   "q": "What documentation is required to store a vehicle?",
+   "a": "A government issued ID like a driver's license or passport, vehicle registration, and proof of insurance. Check with your insurance provider to see if your policy covers storing your car in long term storage and bring in a copy."
+  }
+ ]
+}

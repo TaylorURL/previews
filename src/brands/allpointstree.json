@@ -1,0 +1,425 @@
+{
+ "template": "hvac",
+ "preview": true,
+ "ask": "quote",
+ "name": "All Points Tree Service",
+ "shortName": "All Points Tree Service",
+ "summary": "Fully insured tree removal, trimming, stump grinding, lot clearing, planting and root feeding for homes and businesses within approximately 40 miles of San Leon, Texas.",
+ "phone": "(832) 493-5219",
+ "email": "info@allpointstreeservices.com",
+ "address": "531 16th St",
+ "town": "San Leon",
+ "state": "TX",
+ "zip": "77539",
+ "rating": 5.0,
+ "reviewCount": 36,
+ "since": 2007,
+ "hours": [
+  [
+   "Mon – Sun",
+   "Open 24 hours"
+  ]
+ ],
+ "brand": {
+  "primary": "#1a5226",
+  "primaryDeep": "#13401c",
+  "accent": "#e8710a",
+  "ink": "#0a1a0c",
+  "muted": "#4a5e4b",
+  "surface": "#eef2ee",
+  "line": "#d0dcd0",
+  "heading": "'Oswald', 'Arial Narrow', sans-serif",
+  "body": "'Inter', 'Helvetica Neue', sans-serif",
+  "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap",
+  "logo": "/brands/allpointstree/logo.webp",
+  "logoMono": "/brands/allpointstree/logo-mono.webp",
+  "logoWidth": 145,
+  "logoHeight": 58,
+  "logoRatio": 2.493,
+  "logoGround": "#ffffff",
+  "logoReads": [
+   0.636,
+   0.533,
+   0.417,
+   0.244,
+   0.226,
+   0.25,
+   0.292,
+   0.465,
+   0.646,
+   0.827,
+   1.0
+  ]
+ },
+ "emergency": {
+  "title": "24/7 emergency service",
+  "text": "Storm damage does not wait. Emergency crews respond around the clock across Dickinson, League City, Friendswood, Houston and Galveston County."
+ },
+ "hero": {
+  "eyebrow": "Trusted since 2007 · San Leon, TX",
+  "title": "Expert tree care",
+  "titleAccent": "you can trust.",
+  "lead": "Professional residential and commercial tree care backed by approximately 25 years of industry experience. Free estimates and fast response.",
+  "image": "/brands/allpointstree/hero",
+  "imageAlt": "All Points Tree Service branded truck and professional tree equipment"
+ },
+ "groups": [
+  {
+   "slug": "tree-trimming",
+   "title": "Tree Trimming & Pruning",
+   "icon": "leaf",
+   "summary": "Professional trimming by an experienced crew, including tall palms and difficult terrain.",
+   "intro": "Careful crown shaping, canopy lifting and structural pruning help keep trees healthy, safe and attractive. Few companies in the area will trim 70-foot palms; our climbers do it with bucket trucks and technical rigging.",
+   "image": "/brands/allpointstree/trimming",
+   "imageAlt": "All Points Tree Service crew trimming tall residential palm trees",
+   "services": [
+    {
+     "slug": "crown-work",
+     "title": "Crown Thinning, Lifting & Reduction",
+     "icon": "leaf",
+     "text": "Structural pruning that opens a canopy, lifts it clear of a roof or drive and brings an overgrown crown back into shape.",
+     "points": [
+      "Crown thinning, lifting and reduction",
+      "Vista pruning and clearance cuts"
+     ]
+    },
+    {
+     "slug": "palm-trimming",
+     "title": "70-Foot Palm Trimming",
+     "icon": "sun",
+     "text": "One of our most requested specialties, done safely from bucket trucks and with technical rigging, as on a 70-foot palm job in Friendswood.",
+     "points": [
+      "70-foot palm trimming specialists",
+      "Climbers for difficult terrain"
+     ]
+    },
+    {
+     "slug": "deadwood-removal",
+     "title": "Deadwood & Hazard Branch Removal",
+     "icon": "wrench",
+     "text": "Dead, hanging and split limbs taken out before they come down on a fence, a roof or a driveway.",
+     "points": [
+      "Deadwood and hazard branch removal",
+      "Storm damage pruning and repair"
+     ]
+    },
+    {
+     "slug": "corrective-pruning",
+     "title": "Corrective Pruning",
+     "icon": "ruler",
+     "text": "Pruning that corrects poor structure or earlier bad cuts so a tree grows the right way from here on."
+    }
+   ]
+  },
+  {
+   "slug": "tree-removal",
+   "title": "Dangerous Tree Removal",
+   "icon": "shield",
+   "summary": "Storm-damaged, diseased or hazardous trees removed safely with proper rigging.",
+   "intro": "Our dangerous tree specialty separates us from local competition. We remove storm-damaged, diseased, dead or structurally compromised trees using conventional and technical rigging, safely and efficiently regardless of terrain, proximity to structures or tree size.",
+   "image": "/brands/allpointstree/removal",
+   "imageAlt": "All Points Tree Service truck at a residential tree worksite",
+   "services": [
+    {
+     "slug": "storm-damage-response",
+     "title": "Storm Damage Emergency Response",
+     "icon": "wind",
+     "text": "Fallen and leaning trees cleared around the clock after a storm, across the Houston and Gulf Coast communities.",
+     "points": [
+      "Emergency response, 24/7",
+      "Trees cleared from fences, roofs and access routes"
+     ]
+    },
+    {
+     "slug": "hazard-tree-removal",
+     "title": "Diseased & Dead Tree Removal",
+     "icon": "shield",
+     "text": "Dead, diseased and structurally compromised trees taken down before they fail on their own.",
+     "points": [
+      "Diseased and dead tree removal",
+      "Root ball excavation available"
+     ]
+    },
+    {
+     "slug": "technical-rigging",
+     "title": "Technical Rigging & Sectional Dismantling",
+     "icon": "cable",
+     "text": "A large storm-damaged oak leaning over a residential fence in League City came down in sections on rope rigging, with no property damage.",
+     "points": [
+      "Sectional dismantling and rope rigging",
+      "Tight-access and near-structure removal",
+      "Full debris cleanup included"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "stump-grinding",
+   "title": "Stump Grinding",
+   "icon": "settings",
+   "summary": "Heavy-duty stump grinders remove stumps completely and the yard is left spotless.",
+   "intro": "We use heavy-duty machines with a toothed disk that spins and tears into your stump swiftly, eliminating it completely below grade. No more tripping hazards, unsightly stumps or unwanted regrowth, and the yard is left clean and ready for replanting or landscaping.",
+   "image": "/brands/allpointstree/stump",
+   "imageAlt": "Stump grinding work in progress on a residential lawn",
+   "services": [
+    {
+     "slug": "below-grade-grinding",
+     "title": "Below-Grade Stump Removal",
+     "icon": "settings",
+     "text": "Any size stump, residential or commercial, ground out below grade so it cannot sprout again.",
+     "points": [
+      "Heavy-duty toothed-disk grinder",
+      "Below-grade removal stops regrowth",
+      "Any size stump, residential and commercial"
+     ]
+    },
+    {
+     "slug": "multi-stump-jobs",
+     "title": "Multi-Stump Jobs",
+     "icon": "clipboard",
+     "text": "After a lot clearing job in Dickinson the homeowner had eleven stumps of various sizes, and every one came out below grade level.",
+     "points": [
+      "Wood chip cleanup always included"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "lot-clearing",
+   "title": "Lot Clearing",
+   "icon": "building",
+   "summary": "Full land preparation: removal, mulch clearing, stump grinding and site readying.",
+   "intro": "Lot clearing requires arborists, heavy machinery and a coordinated workforce. We handle complete site preparation for residential and commercial properties, and the site is left clean and construction-ready.",
+   "services": [
+    {
+     "slug": "site-preparation",
+     "title": "Site Preparation",
+     "icon": "building",
+     "text": "A two-acre commercial lot in Texas City was cleared for new construction and ready in two days.",
+     "points": [
+      "Residential and commercial lots",
+      "Site preparation for construction",
+      "Stump grinding and mulch removal"
+     ]
+    },
+    {
+     "slug": "debris-hauling",
+     "title": "Debris Removal & Hauling",
+     "icon": "car",
+     "text": "Cut material chipped or hauled away as part of the job, so nothing is left behind for you to deal with.",
+     "points": [
+      "Full debris removal and hauling included",
+      "Chipping service available by the hour"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "tree-health",
+   "title": "Tree Health & Planting",
+   "icon": "droplets",
+   "summary": "Deep root feeding and planting chosen for Houston-area climate and Gulf Coast soil.",
+   "intro": "Keeping a tree healthy is cheaper than removing it. We feed established trees below the surface where the root hairs are, and we help select and plant new trees suited to local climate and soil.",
+   "image": "/brands/allpointstree/planting",
+   "imageAlt": "Residential property after planting and landscape restoration",
+   "services": [
+    {
+     "slug": "root-feeding",
+     "title": "Root Feeding",
+     "icon": "droplets",
+     "text": "Deep root feeding places nutrients below the surface where root hairs can easily absorb essential elements and minerals, which matters in the Texas heat and Gulf Coast climate.",
+     "points": [
+      "Deep root injection below the surface",
+      "Macro and micronutrient treatment",
+      "Disease resistance improvement",
+      "Seasonal programs available",
+      "Applied by experienced tree care professionals"
+     ]
+    },
+    {
+     "slug": "planting-service",
+     "title": "Planting Service",
+     "icon": "leaf",
+     "text": "Based on local climate and soil conditions, our experienced team helps select trees suited to the Houston area and Gulf Coast soil, then plants them for long-term success.",
+     "points": [
+      "Species selection for local climate and soil",
+      "Proper planting depth and spacing",
+      "Texas Gulf Coast climate expertise",
+      "Post-planting care guidance"
+     ]
+    },
+    {
+     "slug": "arborist-consulting",
+     "title": "Arborist Consulting",
+     "icon": "clipboard",
+     "text": "An experienced crew looks at what you have, names the visible hazards and recommends the trimming or removal that is actually needed."
+    }
+   ]
+  }
+ ],
+ "promo": {
+  "eyebrow": "Hurricane season · June 1 – November 30",
+  "title": "Prepare your property before the storm.",
+  "text": "Address dead limbs, weakened trees and branches near structures well before tropical-storm conditions arrive."
+ },
+ "about": {
+  "eyebrow": "About us",
+  "title": "Based in San Leon, working the Gulf Coast since 2007.",
+  "text": [
+   "All Points Tree Service is a family-owned, community-focused company founded in San Leon, Texas in 2007, with an experienced crew ready for challenging tree work and approximately 25 years of industry experience. Work runs from a San Leon base out to properties within roughly 40 miles.",
+   "The work covers residential and commercial tree care: trimming and pruning, dangerous tree removal, stump grinding, lot clearing, root feeding and planting, with 24/7 emergency response for storm damage and hazardous trees."
+  ],
+  "image": "/brands/allpointstree/team",
+  "imageAlt": "All Points Tree Service crew with a branded truck and chipper",
+  "values": [
+   {
+    "title": "Fully insured",
+    "text": "Fully insured service helps protect your property and our team from start to finish."
+   },
+   {
+    "title": "Spotless cleanup",
+    "text": "We leave every job site looking as if the tree was never there."
+   },
+   {
+    "title": "Fair pricing",
+    "text": "Honest, transparent quotes with no surprises."
+   }
+  ]
+ },
+ "serviceArea": [
+  "San Leon",
+  "Dickinson",
+  "League City",
+  "Friendswood",
+  "Pearland",
+  "Texas City",
+  "La Marque",
+  "Santa Fe",
+  "Galveston",
+  "Kemah",
+  "Seabrook",
+  "Nassau Bay",
+  "El Lago",
+  "Shoreacres",
+  "Clear Lake City",
+  "Houston",
+  "Pasadena",
+  "La Porte",
+  "Deer Park",
+  "Alvin",
+  "Manvel",
+  "Baytown",
+  "Mont Belvieu"
+ ],
+ "facts": [
+  {
+   "heading": "Service Radius",
+   "text": "Residential, commercial and rural properties within an approximately 40-mile radius of San Leon. Coverage is approximate, so call to confirm availability for your address."
+  },
+  {
+   "heading": "Insurance",
+   "text": "100% fully insured service, with professional equipment and a safety-focused approach on every job."
+  },
+  {
+   "heading": "Experience",
+   "text": "Serving the area since 2007, with approximately 25 years of industry experience and professional arborists on the crew."
+  },
+  {
+   "heading": "Estimates",
+   "text": "Free, no-obligation estimates, with honest written quotes at no cost. Requests through the contact form typically get an answer within a few hours."
+  },
+  {
+   "heading": "Scheduling",
+   "text": "Call to schedule. Emergency service is available 24 hours a day."
+  },
+  {
+   "heading": "Also Available",
+   "items": [
+    "Tree Topping",
+    "Chipping Service (by the hour)",
+    "Debris Hauling",
+    "24/7 Emergency Tree Service",
+    "Arborist Consulting",
+    "Corrective Pruning",
+    "Anything not listed, assessed free on request"
+   ]
+  },
+  {
+   "heading": "Hurricane Preparedness",
+   "text": "Atlantic hurricane season runs June 1 through November 30, and property work is safest completed well before a storm enters the Gulf. Official evacuation and preparedness resources are gathered in one guide: City of Galveston hurricane evacuation, Houston Office of Emergency Management, TxDOT hurricane preparation and routes, Texas Division of Emergency Management and NOAA hurricane information."
+  },
+  {
+   "heading": "Storm Safety Notice",
+   "items": [
+    "All Points Tree Service is not an emergency-management agency",
+    "Conditions, evacuation zones and routes may change",
+    "Always follow current instructions from local and state officials",
+    "Call 911 for life-threatening emergencies",
+    "Keep people away from fallen trees and any nearby power lines",
+    "Do not attempt tree work during severe weather, and wait for safe conditions afterwards"
+   ]
+  },
+  {
+   "heading": "Find Us Online",
+   "items": [
+    "Facebook: facebook.com/APTreeService",
+    "Google: reviews and map listing",
+    "5-star rated on Google"
+   ]
+  },
+  {
+   "heading": "Our People",
+   "items": [
+    "Emilio, Lead Arborist and Owner, known for honest estimates and professional execution",
+    "Joanna, Office Manager, handles scheduling, customer service and crew coordination",
+    "The crew: experienced tree surgeons, climbers and ground crew specialists, ready for trees of any size or complexity"
+   ]
+  },
+  {
+   "heading": "Family Owned",
+   "text": "A family-owned, community-focused tree care company based in San Leon, Texas, serving residential and commercial properties since 2007."
+  },
+  {
+   "heading": "Our Mission",
+   "text": "To provide fast, efficient and safety-focused tree care that protects our customers, their properties and the trees that should be preserved."
+  },
+  {
+   "heading": "Our Vision",
+   "text": "To remain a trusted choice for residential and commercial tree service in San Leon and surrounding Gulf Coast communities."
+  },
+  {
+   "heading": "Why Choose Us",
+   "text": "Customers choose us for experienced crews, professional equipment, honest estimates, careful work, responsive communication and thorough cleanup."
+  },
+  {
+   "heading": "Coverage",
+   "items": [
+    "Approximately 40-mile service radius from San Leon",
+    "More than 22 cities served",
+    "Four counties: Galveston, Harris, Brazoria and Chambers",
+    "Based in San Leon, Texas, in south Galveston County"
+   ]
+  },
+  {
+   "heading": "Local Expertise",
+   "items": [
+    "Gulf Coast climate experts, from Texas heat and humidity to Gulf storms",
+    "24/7 storm response, because Galveston County is no stranger to hurricane damage",
+    "Approximately 25 years of industry experience in Gulf Coast conditions"
+   ]
+  },
+  {
+   "heading": "Project Work",
+   "items": [
+    "Storm-damaged oak over a residential fence in League City, removed by sectional dismantling with no property damage",
+    "70-foot palm trimming in Friendswood, a specialty few companies in the area will take on",
+    "Eleven stumps of various sizes in Dickinson, all ground below grade level",
+    "A two-acre commercial lot in Texas City cleared and construction-ready in two days"
+   ]
+  },
+  {
+   "heading": "Privacy",
+   "text": "Quote requests collect only a name, phone number, email address, city, requested service and the project details given, and that information is never sold or shared beyond the providers that host the site and deliver email, or where the law requires it."
+  }
+ ]
+}

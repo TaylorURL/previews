@@ -183,7 +183,9 @@ def words(brand, root, slug):
             continue
         for key in ("name", "shortName"):
             name = (other.get(key) or "").strip()
-            if len(name) >= 6 and name.lower() not in own and name.lower() in text.lower():
+            # Whole words only: "Xpress" inside "American Express" and "Next
+            # Step" inside "next steps" name nobody.
+            if len(name) >= 6 and name.lower() not in own and re.search(rf"\b{re.escape(name)}\b", text, re.I):
                 problems.append(f"names another business: {name}")
     return problems
 

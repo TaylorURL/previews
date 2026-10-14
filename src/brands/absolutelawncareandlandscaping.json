@@ -1,0 +1,537 @@
+{
+ "template": "hvac",
+ "preview": true,
+ "ask": "quote",
+ "name": "Absolute Lawn Care and Landscaping",
+ "shortName": "Absolute Lawn Care",
+ "summary": "Residential and commercial landscaping, lawn care and hardscaping across Houston, TX.",
+ "phone": "(281) 713-4600",
+ "email": "office@absolute-landscape.com",
+ "address": "2221 Silver St",
+ "town": "Houston",
+ "state": "TX",
+ "zip": "77007",
+ "rating": 4.8,
+ "reviewCount": 311,
+ "hours": [
+  [
+   "Mon – Fri",
+   "8 AM – 5 PM"
+  ],
+  [
+   "Saturday",
+   "8 AM – 12 PM"
+  ],
+  [
+   "Sunday",
+   "Closed"
+  ]
+ ],
+ "brand": {
+  "primary": "#275c56",
+  "primaryDeep": "#1b423e",
+  "accent": "#90be5a",
+  "ink": "#1f1f1f",
+  "muted": "#5a6b5e",
+  "surface": "#e8eee0",
+  "line": "#becfbc",
+  "heading": "'Titillium Web', system-ui, sans-serif",
+  "body": "'Titillium Web', system-ui, sans-serif",
+  "fonts": "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap",
+  "logo": "/brands/absolutelawncareandlandscaping/logo.webp",
+  "logoMono": "/brands/absolutelawncareandlandscaping/logo-mono.webp",
+  "logoWidth": 131,
+  "logoHeight": 58,
+  "logoRatio": 2.258,
+  "logoGround": "#ffffff",
+  "logoReads": [
+   0.982,
+   0.979,
+   0.975,
+   0.971,
+   0.966,
+   0.962,
+   0.958,
+   0.957,
+   0.963,
+   0.978,
+   1.0
+  ]
+ },
+ "sameDay": "Contact us for a free quote and a same-day consultation.",
+ "financing": {
+  "text": "Financing through our third-party partner Hearth, with fast pre-approval, no home equity required and a simple online application that does not affect your credit score when you check your options."
+ },
+ "hero": {
+  "eyebrow": "Landscaping and lawn care in Houston, TX",
+  "title": "Your property deserves more",
+  "titleAccent": "than basic lawn care.",
+  "lead": "Our team has decades of combined experience turning ordinary yards into standout outdoor spaces that thrive in Texas' weather, for homeowners and property managers across Houston.",
+  "image": "/brands/absolutelawncareandlandscaping/hero",
+  "imageAlt": "A planted backyard with a shaded table and chairs"
+ },
+ "groups": [
+  {
+   "slug": "lawn-care",
+   "title": "Lawn Care and Maintenance",
+   "icon": "leaf",
+   "summary": "Mowing, edging, trimming, fertilization and seasonal cleanup on a schedule you can count on.",
+   "intro": "Keeping a Houston lawn green, full and healthy can feel like a full-time job. We handle the whole routine, from the weekly cut to the treatments that deal with clay soil and summer heat, and we tailor the plan to your grass type and your property.",
+   "image": "/brands/absolutelawncareandlandscaping/lawn",
+   "imageAlt": "A mowed lawn in front of a brick home shaded by tall trees",
+   "services": [
+    {
+     "slug": "lawn-mowing",
+     "title": "Lawn Mowing",
+     "icon": "leaf",
+     "text": "Regular, reliable cuts at the right height to keep your grass healthy and hold weeds back.",
+     "points": [
+      "Mowing, edging and trimming on each visit",
+      "Scheduled around you and kept through the season"
+     ]
+    },
+    {
+     "slug": "lawn-care",
+     "title": "Lawn Care Programs",
+     "icon": "gauge",
+     "text": "Fertilization, weed control and ongoing monitoring matched to your grass type and soil conditions.",
+     "points": [
+      "Aeration, pre and post emergents and fertilization treatments",
+      "Insecticides and quarterly irrigation audits on the yearly plan",
+      "Plans tailored to what your lawn needs"
+     ]
+    },
+    {
+     "slug": "fertilization",
+     "title": "Fertilization",
+     "icon": "droplets",
+     "text": "Treatments that answer the nutrient deficiencies common in Houston soil and push stronger, greener growth."
+    },
+    {
+     "slug": "shrubs-hedges",
+     "title": "Shrubs and Hedges",
+     "icon": "leaf",
+     "text": "Trimming that keeps plants healthy and beds looking clean rather than uneven."
+    },
+    {
+     "slug": "mulching",
+     "title": "Mulching",
+     "icon": "leaf",
+     "text": "Mulch that protects plant roots, holds moisture in the soil and gives your beds a neat finish.",
+     "points": [
+      "Beds, tree rings and pathways, in premium materials",
+      "Regulates soil temperature, holds moisture and suppresses weeds"
+     ]
+    },
+    {
+     "slug": "landscape-maintenance",
+     "title": "Landscape Maintenance",
+     "icon": "clipboard",
+     "text": "Proactive maintenance programs covering precision mowing and pruning, fertilization and debris removal.",
+     "points": [
+      "Seasonal cleanups and tree trimming",
+      "Simple refreshes such as mulch, rock borders and new plantings",
+      "Leaf removal, debris clearing and yard cleanups that keep beds and walkways presentable"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "landscape-design",
+   "title": "Landscape Design and Installation",
+   "icon": "compass",
+   "summary": "Custom design and build work, from a front bed refresh to a full backyard makeover.",
+   "intro": "We take the time to understand how you use your outdoor space before anything goes on paper. Our team can create a 3D rendering of your design, showing how new hardscape structures will look and where each plant variety goes, so you see the yard before we build it.",
+   "image": "/brands/absolutelawncareandlandscaping/design",
+   "imageAlt": "A planted front bed with flowers and trimmed hedges at a brick house",
+   "services": [
+    {
+     "slug": "landscape-design",
+     "title": "Landscape Design",
+     "icon": "compass",
+     "text": "Design that balances how a yard looks with how it works, using plants and materials suited to Houston's climate.",
+     "points": [
+      "3D rendering of the design before work starts",
+      "Plant placement, hardscape features and lighting shown together"
+     ]
+    },
+    {
+     "slug": "backyard-makeover",
+     "title": "Backyard Makeover",
+     "icon": "home",
+     "text": "A full redesign of the back of the house, planned around how your family actually uses it."
+    },
+    {
+     "slug": "front-yard-makeover",
+     "title": "Front Yard Makeover",
+     "icon": "home",
+     "text": "New plantings, borders and beds that change the first thing anyone sees of your property."
+    },
+    {
+     "slug": "sodding",
+     "title": "Sodding",
+     "icon": "leaf",
+     "text": "Fast turf installation for new lawns or bare patches, in grass types that take the Houston heat.",
+     "points": [
+      "Premium sod varieties suited to Houston's climate",
+      "An established lawn in a single day once the soil is prepared"
+     ]
+    },
+    {
+     "slug": "artificial-turf",
+     "title": "Artificial Turf",
+     "icon": "leaf",
+     "text": "Synthetic grass where real grass will not grow, green year-round and close to maintenance free.",
+     "points": [
+      "Residential and high-traffic commercial areas",
+      "Play areas, pet zones and water-conscious properties"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "hardscaping",
+   "title": "Hardscaping and Outdoor Living",
+   "icon": "ruler",
+   "summary": "Pavers, walls, concrete, decks and the structures that make a yard somewhere to sit.",
+   "intro": "Hardscaping gives a yard its structure, and it is the part that has to be built right the first time. We lay pavers and concrete, build walls and pillars, and install the decks, pergolas, kitchens and fireplaces that turn a back yard into a room.",
+   "image": "/brands/absolutelawncareandlandscaping/hardscape",
+   "imageAlt": "A stone waterfall feature running into a pond among planted beds",
+   "services": [
+    {
+     "slug": "pavers",
+     "title": "Pavers",
+     "icon": "ruler",
+     "text": "Paver walkways, patios and driveway expansions laid to hold up in Houston's soil."
+    },
+    {
+     "slug": "walls-pillars",
+     "title": "Walls and Pillars",
+     "icon": "building",
+     "text": "Retaining walls and entry pillars that add structure to a property and hold a grade in place.",
+     "points": [
+      "Natural stone, concrete block or timber",
+      "Prevents erosion and creates level planting areas on a slope"
+     ]
+    },
+    {
+     "slug": "concrete",
+     "title": "Concrete Additions and Design",
+     "icon": "ruler",
+     "text": "New concrete work designed as part of the landscape rather than dropped in beside it.",
+     "points": [
+      "Poured, finished and sealed in a range of textures and colors",
+      "Stamped concrete that replicates the look of stone or brick"
+     ]
+    },
+    {
+     "slug": "decks",
+     "title": "Deck Installation",
+     "icon": "ruler",
+     "text": "Wood and composite wood decks built to the shape of your yard.",
+     "points": [
+      "Composite wood decking for lower upkeep"
+     ]
+    },
+    {
+     "slug": "pergolas",
+     "title": "Pergolas",
+     "icon": "home",
+     "text": "Shade structures that make an open yard usable through a Texas summer."
+    },
+    {
+     "slug": "outdoor-kitchens",
+     "title": "Outdoor Kitchens and Fireplaces",
+     "icon": "flame",
+     "text": "Built-in outdoor kitchens and fireplaces that give the back yard a place to gather."
+    },
+    {
+     "slug": "pools",
+     "title": "Pool Installation and Pool Landscaping",
+     "icon": "waves",
+     "text": "Custom pool installation, and landscape design around an existing pool so it sits in the yard properly.",
+     "points": [
+      "Pool area designs that add privacy, shade and planting around the water"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "irrigation-drainage-lighting",
+   "title": "Irrigation, Drainage and Lighting",
+   "icon": "droplets",
+   "summary": "Sprinklers, yard drainage and outdoor lighting, including holiday lights.",
+   "intro": "Houston's rain and clay soil mean standing water is a common problem, and the fix is drainage rather than more mowing. We install and repair sprinkler systems, solve yard drainage, and light the yard once it works.",
+   "image": "/brands/absolutelawncareandlandscaping/irrigation",
+   "imageAlt": "A level green lawn with a yard drain set into the grass beside a stone fountain",
+   "services": [
+    {
+     "slug": "sprinkler-systems",
+     "title": "Sprinkler Systems",
+     "icon": "droplets",
+     "text": "Sprinkler installation and repair that keeps a lawn watered without wasting it.",
+     "points": [
+      "Quarterly irrigation audits for leaks and seasonal runtimes",
+      "Installed by our certified team with neat trenching and code-compliant wiring",
+      "Audit first to pinpoint coverage gaps, leaks and inefficiencies"
+     ]
+    },
+    {
+     "slug": "irrigation-solutions",
+     "title": "Irrigation Solutions",
+     "icon": "droplets",
+     "text": "System design and adjustment for properties where the existing setup is not reaching everything.",
+     "points": [
+      "Drip systems for garden beds",
+      "Smart controllers that adjust watering to the weather"
+     ]
+    },
+    {
+     "slug": "drainage",
+     "title": "Drainage Solutions",
+     "icon": "waves",
+     "text": "Yard and landscape drainage that moves standing water off the property instead of around it.",
+     "points": [
+      "French drains, catch basins and grading to move water away from structures"
+     ]
+    },
+    {
+     "slug": "outdoor-lighting",
+     "title": "Outdoor Lighting",
+     "icon": "lightbulb",
+     "text": "Landscape lighting that extends the hours you can use the yard and lifts curb appeal after dark."
+    },
+    {
+     "slug": "christmas-lights",
+     "title": "Christmas Lights",
+     "icon": "sun",
+     "text": "Professional holiday lighting, installed for the season and taken down afterwards.",
+     "points": [
+      "Design, installation, maintenance through the season and removal",
+      "Roofline lighting and custom displays"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "commercial",
+   "title": "Commercial Landscaping",
+   "icon": "building",
+   "summary": "Grounds maintenance and design for retail centers, office parks and HOAs.",
+   "intro": "Business properties need a different approach than homes, and timing matters when you have customers coming and going. We schedule commercial work around your hours, finishing noisy work before you open or after you close, and our crews move quickly so a project does not drag on.",
+   "image": "/brands/absolutelawncareandlandscaping/commercial",
+   "imageAlt": "A commercial office building with a maintained lawn and walkway at dusk",
+   "services": [
+    {
+     "slug": "commercial-lawn-maintenance",
+     "title": "Commercial Lawn Maintenance",
+     "icon": "clipboard",
+     "text": "Regular mowing, edging, trimming and cleanup on a reliable schedule, with clear communication on what was done and when.",
+     "points": [
+      "Mowing and edging on a scheduled basis",
+      "Fertilization and weed control programs",
+      "Seasonal aeration and overseeding",
+      "Debris removal and leaf cleanup",
+      "Turf health monitoring and treatment"
+     ]
+    },
+    {
+     "slug": "commercial-landscape-design",
+     "title": "Commercial Landscape Design",
+     "icon": "compass",
+     "text": "Design for retail centers, office parks and HOAs, focused on curb appeal, safety and plantings that last.",
+     "points": [
+      "Pedestrian traffic flow, parking lot landscaping and entryway features",
+      "Site analysis, concept development, 3D rendering, plant selection and hardscape planning"
+     ]
+    },
+    {
+     "slug": "commercial-garden-design",
+     "title": "Commercial Garden Design",
+     "icon": "leaf",
+     "text": "Planting plans for entrances and courtyards that carry the standard of your brand."
+    },
+    {
+     "slug": "commercial-landscape-clean-up",
+     "title": "Commercial Landscape Clean-Up",
+     "icon": "clipboard",
+     "text": "Seasonal and one-off cleanups that put a neglected property back to a professional standard."
+    },
+    {
+     "slug": "commercial-artificial-turf",
+     "title": "Commercial Artificial Turf",
+     "icon": "leaf",
+     "text": "Professional-grade synthetic turf for high-traffic commercial areas."
+    }
+   ]
+  }
+ ],
+ "about": {
+  "eyebrow": "About us",
+  "title": "A locally owned Houston crew you can always reach.",
+  "text": [
+   "Absolute Lawn Care and Landscaping is a team of horticulturalists, designers and maintenance specialists. We are a locally owned landscaping company serving Houston residents and businesses, and our small crew has grown into a full-service team while the commitment stayed the same: show up on time, do the job right and treat every property with care.",
+   "Our goal is to deliver high-quality landscaping with personal attention you will not find at bigger companies. You will always know who is handling your project, we are fully licensed and insured, and we make sure you can always reach us.",
+   "We have spent years learning what works in Houston's climate. We know how to handle caliche clay, treat lawns stressed by summer heat, manage drainage in flood-prone areas and choose grass types that hold up through the seasons.",
+   "Our mission is to provide the top landscaping service in the region by consistently exceeding client expectations through quality, integrity and proactive communication, and we want every outdoor space we touch, from a private backyard to a corporate campus, to stand as a testament to beauty and sustainability."
+  ],
+  "image": "/brands/absolutelawncareandlandscaping/about",
+  "imageAlt": "Freshly mulched planting beds along the front of a stone-faced home",
+  "values": [
+   {
+    "title": "3D design visualization",
+    "text": "Our 3D rendering technology lets you see your design, including plant placement, hardscape features and lighting, before we start building."
+   },
+   {
+    "title": "Licensed, insured and accountable",
+    "text": "We are fully licensed and insured to protect you from anything that may go wrong."
+   },
+   {
+    "title": "Quality guarantee",
+    "text": "We stand behind the work. Our maintenance guarantee means that if an issue arises, we make it right promptly."
+   }
+  ]
+ },
+ "facts": [
+  {
+   "heading": "By the numbers",
+   "items": [
+    "10+ years of service",
+    "2,000,541 sq. ft. of grass installed",
+    "5,000+ thrilled clients",
+    "100% customer satisfaction"
+   ]
+  },
+  {
+   "heading": "What a project costs",
+   "text": "Cost depends on the size of the property, the scope of the project, the materials and plants used and the irrigation, lighting and drainage required. We have completed projects ranging from $2,500 for basic installations to $2,000,000+ for full landscape transformations, and we offer monthly maintenance plans to keep a yard looking right year-round."
+  },
+  {
+   "heading": "Yearly lawn care plan",
+   "items": [
+    "Aeration",
+    "Pre and post emergents",
+    "Fertilization treatments",
+    "Insecticides",
+    "Quarterly irrigation audits"
+   ]
+  },
+  {
+   "heading": "Financing through Hearth",
+   "text": "Quick approvals, competitive rates, flexible terms, no hidden fees, and options available for nearly all project sizes. Our team will guide you through the process and help you pick the option that fits your budget and project goals. You apply online through Hearth's pre-qualification form."
+  },
+  {
+   "heading": "How a project runs",
+   "items": [
+    "Initial consultation, often the same day you call",
+    "Site assessment and professional recommendations",
+    "A clear, itemized proposal, and every quote is free",
+    "Design and 3D rendering, revised until you are happy with the plan",
+    "Work typically starting within three weeks of approval",
+    "Final walkthrough together, then ongoing maintenance and follow-up"
+   ]
+  },
+  {
+   "heading": "Why customers choose us",
+   "items": [
+    "Professional expertise, from local soil chemistry to complex drainage",
+    "Reliable scheduling, with punctual and consistent service windows",
+    "Customized solutions built around your goals and budget",
+    "Quality guarantee, with high-quality materials and quality control",
+    "Locally owned and operated in Houston",
+    "Fully licensed and insured"
+   ]
+  },
+  {
+   "heading": "Properties we maintain",
+   "items": [
+    "Homes, from small urban yards to expansive suburban lawns",
+    "Office parks and retail centers",
+    "Apartment complexes and hotels",
+    "Industrial sites and HOAs"
+   ]
+  },
+  {
+   "heading": "Find us online",
+   "items": [
+    "Facebook: facebook.com/AbsoluteLawnandLandscape",
+    "Instagram: instagram.com/landscapingnerd",
+    "YouTube: youtube.com/@AbsoluteLawncareLandscaping"
+   ]
+  }
+ ],
+ "faqs": [
+  {
+   "q": "How much does landscaping cost?",
+   "a": "It depends on the size of the property, the scope and complexity of the project, the materials and plants used, and the irrigation, lighting and drainage required. We have completed projects ranging from $2,500 for basic installations to $2,000,000+ for full landscape transformations."
+  },
+  {
+   "q": "Can I customize my maintenance plan?",
+   "a": "Yes. We tailor your plan to fit your lawn's needs, from mowing and trimming to seasonal fertilization, weed control and irrigation tune-ups."
+  },
+  {
+   "q": "What is included in your yearly lawn care plan?",
+   "a": "Aeration, pre and post emergents, fertilization treatments, insecticides, and quarterly irrigation audits to check for leaks, adjust runtimes and keep the system efficient through the seasons."
+  },
+  {
+   "q": "What happens if it rains on my scheduled service day?",
+   "a": "We will reschedule your visit as soon as possible to keep your lawn on track without damage or delay."
+  },
+  {
+   "q": "How do irrigation audits work?",
+   "a": "We inspect your irrigation system each quarter, adjusting for seasonal weather and making sure there are no leaks or wasted water."
+  },
+  {
+   "q": "Is fertilization really necessary in Houston?",
+   "a": "Yes. Fertilization answers the soil nutrient deficiencies common in Houston lawns and promotes stronger, greener growth year-round."
+  },
+  {
+   "q": "Can you help redesign my entire yard?",
+   "a": "Yes. Our team can create a custom landscape design based on your vision, your property layout and your plant preferences."
+  },
+  {
+   "q": "What if I only need a few updates like new plants or mulch?",
+   "a": "We handle everything from full transformations to simple refreshes like mulch, rock borders, new plantings or tree trimming."
+  },
+  {
+   "q": "Do you offer financing?",
+   "a": "Yes. We offer financing through a trusted third-party partner, Hearth, with monthly payment plans at rates based on your credit profile. Checking your options does not affect your credit score."
+  },
+  {
+   "q": "Do you offer residential and commercial landscaping?",
+   "a": "Yes. We serve both homeowners and commercial properties across the Houston area."
+  },
+  {
+   "q": "How often do you come out for maintenance?",
+   "a": "Recurring maintenance clients are usually visited weekly or bi-weekly depending on the season and the plan, and fertilization and weed control are typically done quarterly or seasonally."
+  },
+  {
+   "q": "Do you offer eco-friendly lawn care options?",
+   "a": "Yes. We can build a lawn care plan around environmentally conscious products and practices that are safe for your family, your pets and the surrounding environment."
+  },
+  {
+   "q": "Can you handle large residential properties?",
+   "a": "Yes. We work with properties of all sizes, from small urban yards to expansive suburban lawns, and we have the equipment and the crew to manage large lawns efficiently."
+  },
+  {
+   "q": "What happens if I skip seasonal treatments?",
+   "a": "Skipping seasonal treatments leaves a lawn open to weeds, pests and nutrient deficiencies, which over time means thinning grass, bare spots and higher maintenance costs."
+  }
+ ],
+ "serviceArea": [
+  "Houston",
+  "River Oaks",
+  "Bellaire",
+  "West University Place",
+  "Spring Valley",
+  "Tanglewood",
+  "Piney Point",
+  "Hunter Creek Village",
+  "Heights",
+  "Spring Branch",
+  "Sugar Land",
+  "Katy",
+  "Cypress",
+  "The Woodlands"
+ ]
+}
