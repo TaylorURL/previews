@@ -72,10 +72,32 @@ def _logo_sheet(image, placement, folder):
     return paths
 
 
-def _logo(pages, business, scratch, notes):
-    """The logo, from the business's own structured data, a file named for it,
-    an SVG drawn in its header, or the header's pictures: the first that sits
-    cleanly once its ground is cut away or matched."""
+# The words a logo's file name or alt text carries that say nothing of whose
+# logo it is.
+LOGO_FILLER = {"logo", "logos", "img", "image", "final", "main", "site", "header", "footer", "web", "new", "color",
+               "colour", "white", "black", "dark", "light", "full", "small", "large", "retina", "default", "primary",
+               "horizontal", "vertical", "transparent", "copy", "scaled", "cropped", "min", "png", "jpg", "jpeg",
+               "webp", "svg", "gif", "asset", "artboard", "untitled", "design", "group", "mark", "brand", "icon", "wp",
+               "mobile", "sticky", "top", "home", "of", "and", "for", "the", "a"}
+
+
+def _names_another(img, name):
+    """True when a picture's alt text or file name names someone other than the
+    business: a membership or training mark ('LVI', 'Las Vegas Institute')."""
+    own = compose.bare_name(name).split()
+    joined = "".join(own)
+    initials = {"".join(w[0] for w in own), "t" + "".join(w[0] for w in own)}
+    stem = img["src"].rsplit("/", 1)[-1].rsplit(".", 1)[0]
+    words = [w for w in re.split(r"[^a-z0-9]+", f"{img['alt']} {stem}".lower())
+             if w and w not in LOGO_FILLER and not re.fullmatch(r"\d+|\d+x\d+|v\d+", w)]
+    return bool(words) and not any(w in own or (len(w) >= 4 and w in joined) or w in initials for w in words)
+
+
+def _logo(pages, business, name, scratch, notes):
+    """The logo, from the business's own structured data, a file named for it
+    in its header, an SVG drawn in its header, the header's pictures, or a file
+    named for it elsewhere on the page that names no one else: the first that
+    sits cleanly once its ground is cut away or matched."""
     candidates = []
     found = business.get("logo")
     if isinstance(found, dict):
@@ -83,13 +105,21 @@ def _logo(pages, business, scratch, notes):
     if isinstance(found, str):
         candidates.append(("url", found))
     home = pages[0]
-    for img in home.images:
-        if "logo" in img["hint"] or "logo" in img["alt"].lower():
+    # A picture named a logo is as often a mark the business shows for a body
+    # it trained with or belongs to, so one whose name says it is someone
+    # else's is never tried, and one below the header is tried last.
+    named = [img for img in home.images if "logo" in img["hint"] or "logo" in img["alt"].lower()]
+    others = {img["src"] for img in named if _names_another(img, name)}
+    for img in named:
+        if img["header"] and img["src"] not in others:
             candidates.append(("url", img["src"]))
     for svg in getattr(home, "svgs", []):
         candidates.append(("svg", svg))
     for img in home.images:
-        if img["header"]:
+        if img["header"] and img["src"] not in others:
+            candidates.append(("url", img["src"]))
+    for img in named:
+        if not img["header"] and img["src"] not in others:
             candidates.append(("url", img["src"]))
     refused = []
     seen = set()
@@ -247,7 +277,7 @@ def build(prospect, root, slug):
     notes = []
     scratch = tempfile.mkdtemp(prefix=f"preview-{slug}-")
     try:
-        mark, placement, logo_src, logo_raw = _logo(pages, business, scratch, notes)
+        mark, placement, logo_src, logo_raw = _logo(pages, business, name, scratch, notes)
         logo_fields = logo.write(mark, placement, folder, slug)
         inks = images.logo_colors(mark)
         # A mark cut from a colored ground keeps that color as the brand's own.
@@ -306,7 +336,7 @@ def build(prospect, root, slug):
         "name": name,
         "shortName": short,
         "phone": phone,
-        "email": prospect.get("email"),
+        "email": compose.email_of(prospect.get("email"), pages, business),
         "address": street,
         "town": town,
         "state": state,

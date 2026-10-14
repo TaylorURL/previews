@@ -235,6 +235,28 @@ def names_the_business(title, own):
     return f" {lead} " in f" {bare_name(title)} " and (len(own) > 1 or len(lead) >= 4)
 
 
+# An address at one of these is a person's own, not another business's.
+FREE_MAIL = re.compile(r"@(gmail|yahoo|hotmail|outlook|live|msn|aol|icloud|me|att|sbcglobal|comcast|bellsouth|ymail|protonmail)\.", re.I)
+MAILTO = re.compile(r"^mailto:([^?\s]+@[^?\s]+)", re.I)
+
+
+def email_of(stored, pages, business):
+    """The email the contact page lists: the one stored from the listing where
+    it is at their own website's domain, a free mail address, or one their own
+    pages list, and otherwise the first their pages list at their own domain.
+    An address at another business's domain (a listing that carries the email
+    of a practice they share a building or an owner with) is never shown."""
+    host = urllib.parse.urlparse(pages[0].url).netloc.lower().replace("www.", "")
+    listed = [m.group(1).lower() for page in pages for href, _ in page.links if (m := MAILTO.match(href.strip()))]
+    if isinstance(business.get("email"), str):
+        listed.append(business["email"].lower().removeprefix("mailto:"))
+    own = lambda e: e.rsplit("@", 1)[-1] == host
+    stored = plain(stored).lower()
+    if stored and (own(stored) or FREE_MAIL.search(stored) or stored in listed):
+        return stored
+    return next((e for e in listed if own(e)), None)
+
+
 GENERIC_NAV = re.compile(r"^(home|about( us)?|contact( us)?|services|our services|blog|faq|reviews|gallery|careers|menu|get a quote|request a quote|free estimate|call now|learn more|read more|more|portal|login|pay online|resources|team|our team|testimonials)$", re.I)
 
 FONTS = [

@@ -21,7 +21,7 @@
  *   shortName     the name used in running copy and when there is no logo.
  *   tagline       optional. One line under the logo in the footer and in the top bar on desktop.
  *   phone         "(281) 555-0163" form. Every call button dials it.
- *   email         the office address the contact page lists.
+ *   email         optional. The office address the contact page lists.
  *   address       street line, with suite. town, state: "Baytown", "TX". zip: optional.
  *   since         optional. Year founded, shown beside the rating in the hero.
  *   license       optional. One line of license or regulatory text for the footer.
@@ -1274,9 +1274,9 @@ function ContactPage(props) {
               {[
                 [Phone, tel, b.phone],
                 // A break point after the '@', so a long address wraps whole at its domain rather than mid-word.
-                [Mail, `mailto:${b.email}`, (b.email || '').split('@').flatMap((p, i) => (i ? ['@', <wbr key={i} />, p] : [p]))],
+                b.email && [Mail, `mailto:${b.email}`, b.email.split('@').flatMap((p, i) => (i ? ['@', <wbr key={i} />, p] : [p]))],
                 [MapPin, mapsHref(b), address],
-              ].map(([Icon, href, label]) => (
+              ].filter(Boolean).map(([Icon, href, label]) => (
                 <li key={href} className="border-b border-line">
                   <a href={href} className="flex min-h-14 items-center gap-3.5 py-3 font-semibold text-primary no-underline [overflow-wrap:anywhere] hover:underline">
                     <Icon size={19} className="flex-none text-accent" aria-hidden="true" /> {label}
