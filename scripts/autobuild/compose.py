@@ -495,6 +495,10 @@ def about_of(pages, name, trade=None):
                 continue
             if not re.match(r"[A-Z0-9\"'\u201c]", text) or "\u2026" in text or "..." in text:
                 continue
+            # A numbered step of how they work ("1. Walkthrough and measurements
+            # We review...") is a process with its heading run in, not their story.
+            if re.match(r"(?:step\s*)?\d{1,2}[.):]\s", text, re.I):
+                continue
             # A customer's review quoted on their page ("5 Stars - ...") is not their description of themselves.
             if re.fullmatch(r"[\"\u201c].*[\"\u201d]", text, re.S) or re.search(r"\b[1-5]\s*stars?\b|\u2605", text, re.I):
                 continue

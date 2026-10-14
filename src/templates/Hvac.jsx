@@ -1518,6 +1518,7 @@ function PlanPage({ b, tel }) {
 function AboutPage({ b, groups, tel }) {
   const licenses = list(b.licenses);
   const values = list(b.about.values);
+  const story = list(b.about.text).slice(1);
   const rating = ratingLine(b);
   return (
     <>
@@ -1557,20 +1558,21 @@ function AboutPage({ b, groups, tel }) {
         <CtaPair b={b} tel={tel} />
       </PageHero>
       <section className={`${pad} bg-white`}>
-        <div className={`${wrap} grid gap-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-20`}>
-          <div>
-            {/* The rest of the about text is whatever the business wrote about itself, often the owner's own story, not a process. */}
-            <h2 className={h2}>Our story</h2>
-            {list(b.about.text)
-              .slice(1)
-              .map((p) => (
+        <div className={`${wrap} grid gap-12 ${story.length > 0 ? 'lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]' : ''} lg:gap-20`}>
+          {/* The rest of the about text is whatever the business wrote about itself, often the owner's own story, not a process. */}
+          {story.length > 0 && (
+            <div>
+              <h2 className={h2}>Our story</h2>
+              {story.map((p) => (
                 <p key={p} className={`mt-5 ${lead}`}>
                   {p}
                 </p>
               ))}
-          </div>
+            </div>
+          )}
           {/* The promises stand beside the words with the licenses, so the side column is not one card over a blank. */}
-          <aside className="grid content-start gap-4">
+          {/* With no story beside them, the cards share the row rather than stacking down one side. */}
+          <aside className={`grid content-start gap-4 ${story.length > 0 ? '' : 'md:grid-cols-2'}`}>
             {values.length > 0 && (
               <ol className="grid gap-4">
                 {values.map((v, i) => (
