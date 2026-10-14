@@ -1110,8 +1110,14 @@ function Home({ b, groups, tel }) {
                     ))}
                   </ul>
                 )}
-                <span className="mt-auto inline-flex items-center gap-1.5 font-heading text-[16px] md:text-[15px] font-bold text-[color:var(--pt)]">
-                  See {g.title} <ArrowRight size={16} className="transition group-hover:translate-x-1" aria-hidden="true" />
+                {/* Inline, so a title that wraps keeps the arrow at the end of its last line,
+                    held to the last word. */}
+                <span className="mt-auto font-heading text-[16px] md:text-[15px] font-bold text-[color:var(--pt)]">
+                  See {g.title.trim().replace(/\S+$/, '')}
+                  <span className="whitespace-nowrap">
+                    {g.title.trim().split(/\s+/).pop()}
+                    <ArrowRight size={16} className="ml-1.5 inline-block align-[-3px] transition group-hover:translate-x-1" aria-hidden="true" />
+                  </span>
                 </span>
               </article>
             ))}
