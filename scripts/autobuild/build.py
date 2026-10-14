@@ -421,7 +421,6 @@ def build(prospect, root, slug):
         ask = compose.ask_of(kind, services)
         if ask:
             brand["ask"] = ask
-        brand["summary"] = lead
         groups = []
         # The about section takes the first spare photo; each group after it
         # one of its own, and none shares a picture. A group page draws its
@@ -440,6 +439,9 @@ def build(prospect, root, slug):
             groups.append(group)
         if len(groups) < 2:
             raise Parked("fewer than two services described on their website")
+        # The services heading's line names the services and the towns; the
+        # lead, their description of themselves, is the hero's alone.
+        brand["summary"] = compose.summary_line(groups, short, areas or [town])
         brand["groups"] = groups
         if about:
             brand["about"] = about_block(eyebrow="About us")
