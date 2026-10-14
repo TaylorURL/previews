@@ -435,6 +435,9 @@ def hours_of(business):
     return [[DAYS[a] if a == b else f"{DAYS[a]} – {DAYS[b]}", t] for a, b, t in rows]
 
 
+CONTACT_LINE = re.compile(r"[\w.+-]+@[\w-]+\.\w|\bwww\.[\w-]+\.\w", re.I)
+
+
 def page_text(pages):
     return "\n".join(t for p in pages for _, t, _ in p.blocks)
 
@@ -490,6 +493,11 @@ def services_of(pages, vocab, own=None, town=None, described_first=False):
             if tag in ("h2", "h3", "h4") and not header:
                 desc = None
                 for nxt_tag, nxt, _ in blocks[i + 1:i + 3]:
+                    # A contact line under the heading ("kmllc@gmail.com Brian
+                    # Knight 832-221-3003 www.knightsmarinellc.com") is who to
+                    # call, not what the service is.
+                    if nxt_tag == "p" and CONTACT_LINE.search(nxt):
+                        continue
                     if nxt_tag == "p" and 60 <= len(nxt) <= 700:
                         desc = trim(nxt, 360)
                         break
