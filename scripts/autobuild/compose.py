@@ -282,6 +282,9 @@ def sentences(text):
 FRAGMENT = re.compile(r"(?:as|because|although|though|whereas|while|unless|whether)\b[^,;:–—]*$", re.I)
 
 
+SHORTENED = {"etc", "vs", "approx", "incl", "est", "ft", "sq", "no", "st", "dr", "mr", "mrs", "ms", "jr", "sr", "inc", "co", "ltd", "llc", "ave", "rd", "blvd", "hwy", "ste"}
+
+
 def trim(text, limit):
     """Their words, cut at a sentence boundary and never mid-sentence. A space
     their page leaves before a comma or stop is closed up, one it leaves out
@@ -293,6 +296,10 @@ def trim(text, limit):
     # A web address ("pools.com") and a figure ("1,200") keep theirs: a stop
     # opens up only before a capital, and either only after a word.
     text = re.sub(r"(?<=[a-z]{2})(,|[.!?](?=[A-Z][a-z]))(?=[A-Za-z])", r"\1 ", text)
+    # A sentence their page opens in lowercase ("for over 30 years. call
+    # Rainforest Dental") takes its capital, unless the stop ends a shortening.
+    text = re.sub(r"\b([A-Za-z]{2,})([.!?] )([a-z])",
+                  lambda m: m.group(0) if m.group(1).lower() in SHORTENED else m.group(1) + m.group(2) + m.group(3).upper(), text)
     out = []
     for sentence in sentences(text):
         if len(" ".join(out + [sentence])) > limit:
