@@ -704,3 +704,17 @@ def hero_line(services, town, label):
     else:
         what = label.lower()
     return f"{what[:1].upper()}{what[1:]} in {town}"
+
+
+def summary_line(groups, short, areas):
+    """The line under the home services heading: the services by their own
+    names and the towns they cover ("Aaron's offers panel upgrades and
+    generators across Houston, Katy and Cypress"), so it never repeats the
+    hero's lead, which is their own description of themselves."""
+    named = [" ".join(w if (w.isupper() and len(w) > 1) or w.upper() in ACRONYMS else w.lower() for w in g["title"].split()) for g in groups[:3]]
+    # A name with its own "and" ("Repair and Upgrades") keeps the list apart with a comma.
+    join = ", and " if any(re.search(r"\band\b|&", t) for t in named) else " and "
+    what = join.join([", ".join(named[:-1]), named[-1]]) if len(named) > 1 else named[0]
+    towns = areas[:3]
+    where = f"across {', '.join(towns[:-1])} and {towns[-1]}" if len(towns) > 1 else f"in and around {towns[0]}"
+    return f"{short} offers {what} {where}."
