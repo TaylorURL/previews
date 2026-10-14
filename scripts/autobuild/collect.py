@@ -171,6 +171,11 @@ class Page(HTMLParser):
         if self._style:
             self.styles.append(data)
             return
+        # Text split by a tag, a lowercase word on one side and a capital on
+        # the other ("Outdoor Lighting for<span>Houston Homes</span>" set on
+        # two lines by their stylesheet), is two words, not one run together.
+        if self._text and re.search(r"[a-z]$", self._text[-1]) and re.match(r"[A-Z]", data):
+            data = " " + data
         if self._link is not None:
             self._link[1].append(data)
         self._text.append(data)

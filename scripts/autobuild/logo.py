@@ -172,7 +172,32 @@ def cut_ground(arr, ground):
     return out.astype(np.uint8)
 
 
+# A line no thicker than this along the picture's edge, set apart from the mark
+# by clear rows or columns, is a seam the ground was cropped or scaled with (a
+# lighter edge row on a navy square), not ink, and is cut away with the ground.
+SEAM = 3
+
+
+def _seams(arr):
+    """The logo without a seam along any of its four edges."""
+    arr = arr.copy()
+    for axis in (0, 1):
+        n = arr.shape[axis]
+        for order in (list(range(n)), list(range(n - 1, -1, -1))):
+            lines = (arr[..., 3] > 8).any(axis=1 - axis)[order]
+            start = int(np.argmax(lines)) if lines.any() else n
+            stop = start + int(np.argmin(lines[start:])) if not lines[start:].all() else n
+            if start < SEAM and stop - start <= SEAM and lines[stop:].any():
+                cut = order[start:stop]
+                if axis == 0:
+                    arr[cut, :, 3] = 0
+                else:
+                    arr[:, cut, 3] = 0
+    return arr
+
+
 def trim(arr, pad=2):
+    arr = _seams(arr)
     alpha = arr[..., 3]
     rows = np.where((alpha > 8).any(axis=1))[0]
     cols = np.where((alpha > 8).any(axis=0))[0]
