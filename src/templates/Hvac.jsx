@@ -1263,7 +1263,21 @@ function Home({ b, groups, tel }) {
 /** A group page's heading: a group that holds services is called its services, unless its name already says so; one that is a single service is named as it is. A business that rents space out does no services at all, so its groups are named as the things they are. */
 function groupTitle(group, town, ask) {
   const services = list(group.services).length > 0 && !ask.rents && !/\bservices?$/i.test(group.title);
-  return `${group.title}${services ? ' services' : ''} in ${town}`;
+  // A group that already names the town ("Outdoor Lighting For Houston Homes")
+  // is not given it twice.
+  const named = town && townWords(town).test(group.title);
+  return `${group.title}${services ? ' services' : ''}${named ? '' : ` in ${town}`}`;
+}
+
+/** The town as whole words in any case, to find it inside a name. */
+function townWords(town) {
+  return new RegExp(`\\b${town.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'gi');
+}
+
+/** A name lowered to run inside a sentence, the town in it keeping its capitals. */
+function lowerName(title, town) {
+  const lower = title.toLowerCase();
+  return town ? lower.replace(townWords(town), town) : lower;
 }
 
 function GroupPage({ b, groups, group, tel }) {
@@ -1428,7 +1442,7 @@ function GroupPage({ b, groups, group, tel }) {
       <ClosingBand
         b={b}
         tel={tel}
-        title={`Need ${group.title.toLowerCase()}${askOf(b).rents || /\bservices?$/i.test(group.title) ? '' : ' service'}?`}
+        title={`Need ${lowerName(group.title, b.town)}${askOf(b).rents || /\bservices?$/i.test(group.title) ? '' : ' service'}?`}
         text="Send a request or call, and we will set up a time that works for you."
       />
     </>
