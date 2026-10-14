@@ -1025,9 +1025,10 @@ function Home({ b, groups, tel }) {
       <section className="relative isolate overflow-hidden bg-primary-deep text-white">
         {b.hero.image ? (
           <>
-            {/* On a phone the photo is shown whole above the words; from lg up it is the ground behind them. */}
+            {/* On a phone the photo is shown whole above the words; from lg up it is the ground behind them,
+                held by its top edge so a wide hero trims the floor rather than a person's head. */}
             <Img
-              className="relative block aspect-[16/10] w-full object-cover lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto lg:h-full"
+              className="relative block aspect-[16/10] w-full object-cover lg:absolute lg:object-top lg:inset-0 lg:-z-20 lg:aspect-auto lg:h-full"
               src={b.hero.image}
               alt={b.hero.imageAlt || ''}
               sizes="100vw"
