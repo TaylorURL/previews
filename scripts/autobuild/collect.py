@@ -86,6 +86,7 @@ class Page(HTMLParser):
         self._script = None
         self._style = False
         self._link = None
+        self._edge = False
         self._header = 0
         self._skip = 0
 
@@ -114,6 +115,7 @@ class Page(HTMLParser):
                 self.icons.append((a.get("sizes", ""), urllib.parse.urljoin(self.url, a["href"])))
         elif tag == "a":
             self._link = [a.get("href", ""), []]
+            self._edge = True
         elif tag == "img":
             src = a.get("src") or a.get("data-src") or a.get("data-lazy-src") or ""
             srcset = a.get("srcset") or a.get("data-srcset") or ""
@@ -152,6 +154,7 @@ class Page(HTMLParser):
         if tag == "a" and self._link:
             self.links.append((self._link[0], " ".join("".join(self._link[1]).split())))
             self._link = None
+            self._edge = True
         if tag in self.BLOCK and not self._skip:
             text = " ".join("".join(self._text).split())
             if text:
@@ -176,6 +179,11 @@ class Page(HTMLParser):
         # two lines by their stylesheet), is two words, not one run together.
         if self._text and re.search(r"[a-z]$", self._text[-1]) and re.match(r"[A-Z]", data):
             data = " " + data
+        # So is text running straight into or out of a link ("contact
+        # <a>us</a>today"): a link is its own word or words, not half of one.
+        elif self._edge and self._text and re.search(r"[A-Za-z]$", self._text[-1]) and re.match(r"[A-Za-z]", data):
+            data = " " + data
+        self._edge = False
         if self._link is not None:
             self._link[1].append(data)
         self._text.append(data)
