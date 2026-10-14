@@ -1375,13 +1375,17 @@ function GroupPage({ b, groups, group, tel }) {
                         ))}
                       </ul>
                     )}
-                    {/* Inline, so a title that wraps keeps the arrow at the end of its last line. */}
+                    {/* Inline, so a title that wraps keeps the arrow at the end of its last line;
+                        a line may break beside an icon, so the last word and the arrow are held together. */}
                     <a
                       href="/contact"
                       className="mt-4 inline-block min-h-[44px] py-2.5 font-heading text-[16px] md:text-[15px] font-bold text-[color:var(--pt)] no-underline hover:underline"
                     >
-                      {askOf(b).item} {s.title}
-                      <ArrowRight size={16} className="ml-1.5 inline align-[-3px]" aria-hidden="true" />
+                      {askOf(b).item} {s.title.trim().replace(/\S+$/, '')}
+                      <span className="whitespace-nowrap">
+                        {s.title.trim().split(/\s+/).pop()}
+                        <ArrowRight size={16} className="ml-1.5 inline align-[-3px]" aria-hidden="true" />
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -1436,7 +1440,29 @@ function PlanPage({ b, tel }) {
   const cols = tiers.length >= 3 ? 'lg:grid-cols-3' : tiers.length === 2 ? 'md:grid-cols-2' : '';
   return (
     <>
-      <PageHero b={b} crumbs={['Maintenance Plan']} eyebrow="Maintenance plan" title={b.plan.name} text={b.plan.intro} />
+      <PageHero
+        b={b}
+        crumbs={['Maintenance Plan']}
+        eyebrow="Maintenance plan"
+        title={b.plan.name}
+        text={b.plan.intro}
+        panel={
+          // The plan has no photo of its own, so what the plan is made of
+          // stands beside the heading rather than a bare half of grid.
+          <div className="hidden rounded-[24px] border border-line bg-white p-6 text-ink sm:p-8 lg:block lg:w-full lg:max-w-[420px] lg:justify-self-end shadow-[0_30px_60px_-35px_rgba(11,27,43,0.55)]">
+            <p className="font-heading text-[13px] font-bold uppercase tracking-[0.14em] text-muted">What the plan covers</p>
+            <ul className="mt-5 grid gap-3">
+              {list((tiers.find((t) => t.featured) || tiers[0])?.features)
+                .slice(0, 5)
+                .map((f) => (
+                  <li key={f} className="flex gap-3 text-[15px] leading-[1.55]">
+                    <Check size={18} className="mt-0.5 flex-none text-primary" aria-hidden="true" /> {f}
+                  </li>
+                ))}
+            </ul>
+          </div>
+        }
+      />
       <section className={`${pad} bg-white`}>
         <div className={wrap}>
           <div className={`mx-auto grid max-w-[68rem] items-stretch gap-5 ${cols}`}>

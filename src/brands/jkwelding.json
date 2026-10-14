@@ -1,0 +1,418 @@
+{
+ "template": "hvac",
+ "preview": true,
+ "ask": "quote",
+ "name": "JK Welding, LLC",
+ "shortName": "JK Welding",
+ "summary": "Custom metal fabrication and welding in aluminum, stainless and steel, built in-house at our Cypress shop for commercial and industrial projects across Texas.",
+ "phone": "(281) 550-1008",
+ "email": "sales@jkwelding.net",
+ "address": "18433 FM 529",
+ "town": "Cypress",
+ "state": "TX",
+ "zip": "77433",
+ "rating": 4.7,
+ "reviewCount": 100,
+ "since": 2005,
+ "hours": [
+  [
+   "Mon – Thu",
+   "7 AM – 4 PM"
+  ],
+  [
+   "Friday",
+   "7 AM – 12 PM"
+  ],
+  [
+   "Sat – Sun",
+   "Closed"
+  ]
+ ],
+ "brand": {
+  "primary": "#1b3a6b",
+  "primaryDeep": "#102445",
+  "accent": "#ef4458",
+  "ink": "#15202e",
+  "muted": "#55657a",
+  "surface": "#eef3f9",
+  "line": "#d7e0ea",
+  "heading": "'Barlow Condensed', system-ui, sans-serif",
+  "body": "'Barlow', system-ui, sans-serif",
+  "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap",
+  "logo": "/brands/jkwelding/logo.webp",
+  "logoMono": "/brands/jkwelding/logo-mono.webp",
+  "logoWidth": 81,
+  "logoHeight": 74,
+  "logoRatio": 1.1,
+  "logoGround": "#ffffff",
+  "logoReads": [
+   0.786,
+   0.801,
+   0.821,
+   0.842,
+   0.864,
+   0.887,
+   0.909,
+   0.931,
+   0.954,
+   0.978,
+   1.0
+  ]
+ },
+ "hero": {
+  "eyebrow": "Houston metal fabrication and welding",
+  "title": "Houston metal fabrication and welding",
+  "titleAccent": "built in-house.",
+  "lead": "Tight tolerances, clean welds and dependable schedules, with cutting, forming, welding and finishing all under one roof in Cypress.",
+  "image": "/brands/jkwelding/hero",
+  "imageAlt": "An industrial fiber laser cutter working across a metal sheet"
+ },
+ "groups": [
+  {
+   "slug": "custom-fabrication",
+   "title": "Custom Fabrication",
+   "icon": "wrench",
+   "summary": "One-off prototypes through production runs in aluminum, stainless and steel, fabricated in-house with documented quality.",
+   "intro": "If you are searching for custom metal fabrication Houston, you want tight tolerances, clean welds, and dependable schedules. We fabricate aluminum, stainless steel, and steel with precise fit-up, consistent quality, and fast coordination between cutting, forming, welding, and finishing. Bring drawings or an idea and our team will help you finalize details for fabrication.",
+   "services": [
+    {
+     "slug": "custom-metal-fabrication",
+     "title": "Custom Metal Fabrication",
+     "icon": "wrench",
+     "text": "Frames and bases, brackets and fixtures, guards and covers, enclosures and panels, cabinets, architectural elements, signage components, prototypes, and short-run or production parts.",
+     "points": [
+      "Machine guarding and enclosures",
+      "Dolly frames and trailers",
+      "Pipe bollards and lighting fixtures",
+      "Fencing"
+     ]
+    },
+    {
+     "slug": "aluminum-fabrication",
+     "title": "Aluminum Fabrication",
+     "icon": "ruler",
+     "text": "There are very few companies around that can provide quality aluminum welding and fabrication services. This is due to the level of difficulty and skill required to TIG (tungsten inert gas) weld aluminum.",
+     "points": [
+      "Signage and rack systems",
+      "Display hardware and ramps",
+      "Industrial equipment"
+     ]
+    },
+    {
+     "slug": "platforms-and-railings",
+     "title": "Platforms and Railings",
+     "icon": "building",
+     "text": "Sturdy, precise platform and railing fabrication for industrial and public works projects across Texas, all built in our shop."
+    },
+    {
+     "slug": "laser-cutting",
+     "title": "CNC Laser Cutting",
+     "icon": "zap",
+     "text": "CNC fiber laser cutting from our Cypress, Texas facility, with clean edges, accurate holes and repeatable parts ready for welding, forming or finishing.",
+     "points": [
+      "Carbon steel, stainless steel and aluminum",
+      "Brackets, tabs, gussets and base plates",
+      "Panels, covers and equipment guards",
+      "Logos, signage and architectural details",
+      "DXF or DWG preferred for the quickest quote"
+     ]
+    },
+    {
+     "slug": "cnc-plasma-cutting",
+     "title": "CNC Plasma Cutting",
+     "icon": "settings",
+     "text": "High-value cutting for thicker material and larger formats, produced in-house and ready for downstream fabrication."
+    }
+   ]
+  },
+  {
+   "slug": "stainless-steel-fabrication",
+   "title": "Stainless Steel Fabrication",
+   "icon": "shield",
+   "summary": "Precision sheet and plate stainless projects from design support to finished parts, completed in-house to protect geometry and finish.",
+   "intro": "If you are searching for stainless steel fabrication Houston, you need tight tolerances, clean welds, and dependable schedules. Our certified team fabricates stainless sheet and plate with precise fit-up, repeatable quality, and fast coordination between cutting, forming, welding, and finishing. Send drawings or a concept and we will help you finalize details for fabrication.",
+   "image": "/brands/jkwelding/stainless-steel",
+   "imageAlt": "A large industrial metal shearing machine in a fabrication shop",
+   "services": [
+    {
+     "slug": "custom-stainless-fabrication",
+     "title": "Custom Stainless Fabrication",
+     "icon": "shield",
+     "text": "Enclosures and panels, frames and bases, guards and covers, platforms and components, brackets and fixtures, architectural elements, signage components, and custom one-offs.",
+     "points": [
+      "Architecture",
+      "Food service industry",
+      "Water features",
+      "Hospitals and laboratories",
+      "Furniture and fixtures",
+      "Outdoor decor"
+     ]
+    },
+    {
+     "slug": "stainless-cutting-welding-finishing",
+     "title": "Stainless Cutting, Welding and Finishing",
+     "icon": "settings",
+     "text": "Cutting and prep, welding, forming and fixturing, and finishing, all handled in our shop.",
+     "points": [
+      "Cutting and prep: laser cutting, saw cutting, deburr, fit-up",
+      "Welding: TIG for fine detail, MIG for production speed where appropriate",
+      "Forming and fixturing: press brake, jigs, and in-process inspection for repeatability",
+      "Finishes: brushed, polished, and paint or coating coordination when required"
+     ]
+    },
+    {
+     "slug": "segregated-stainless-area",
+     "title": "Segregated Stainless and Aluminum Area",
+     "icon": "filter",
+     "text": "We maintain a dedicated segregated area for stainless steel and aluminum welding that prevents any cross-contamination from carbon steel."
+    }
+   ]
+  },
+  {
+   "slug": "sheet-metal-fabrication",
+   "title": "Sheet Metal Fabrication",
+   "icon": "ruler",
+   "summary": "From brackets to enclosures, our in-house team delivers precise fit-up and repeatable quality, on time and on budget.",
+   "intro": "JK Welding provides a wide array of sheet metal fabrication services. Our team of experts can assist with all aspects of your fabrication needs and our dedication to precision delivery, on time and on budget, provides tremendous value no matter what the scope of your job may be.",
+   "image": "/brands/jkwelding/sheet-metal",
+   "imageAlt": "A CNC machine cutting a flat metal sheet",
+   "services": [
+    {
+     "slug": "sheet-metal-services",
+     "title": "Sheet Metal Services",
+     "icon": "ruler",
+     "text": "We provide services relating to galvanized, carbon and stainless steel, aluminum and other metal fabrication, and can deliver any product you require to your exact specifications.",
+     "points": [
+      "Consultation, design, fabrication and assembly",
+      "Galvanized, carbon and stainless steel",
+      "Aluminum and other metals"
+     ]
+    },
+    {
+     "slug": "forming-and-fixturing",
+     "title": "Forming and Fixturing",
+     "icon": "compass",
+     "text": "Press brake forming and jigs with in-process inspection, so a short run and a production run come out the same."
+    },
+    {
+     "slug": "finishing",
+     "title": "Finishing and Coating",
+     "icon": "droplets",
+     "text": "Surface preparation and application of protective coatings or paint for a durable, quality finish."
+    }
+   ]
+  },
+  {
+   "slug": "pipe-fabrication",
+   "title": "Pipe Fabrication",
+   "icon": "waves",
+   "summary": "Automated and manual processes for complex pipe work. Every weld is inspected so you get strong, consistent results.",
+   "intro": "JK Welding has only the best welding equipment to complete all of our projects. We also have top of the line automatic welding machines to complete intricate pipe fabrication jobs. Every job completed by us is inspected so our clients get the best quality and the strongest welds possible.",
+   "services": [
+    {
+     "slug": "oil-and-gas-pipe-work",
+     "title": "Oil and Gas Pipe Work",
+     "icon": "waves",
+     "text": "Our pipe fitters specialize in gas and oil pipeline metal fabrication. We are able to adapt to projects that are outside of the box, but we do commonly see the following piping materials.",
+     "points": [
+      "Exotic alloys",
+      "Stainless steel alloys",
+      "Carbon steel \"X\" grades through 100,000-psi yield"
+     ]
+    },
+    {
+     "slug": "welding-processes",
+     "title": "Welding Processes",
+     "icon": "zap",
+     "text": "We offer a wide variety of specialized and standard fabrication and welding techniques.",
+     "points": [
+      "Gas Tungsten Arc Welding (GTAW)",
+      "Shield Metal Arc Welding (SMAW)",
+      "Gas Metal Arc Welding (GMAW)",
+      "Flux Cored Arc Welding (FCAW)",
+      "Submerged Metal Arc Welding (SMAW)",
+      "Plasma cutting"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "skid-packages",
+   "title": "Skid Packages and Oilfield",
+   "icon": "chart",
+   "summary": "Custom-built skids engineered for durability and safety, fabricated in-house to your spec and schedule.",
+   "intro": "JK Welding is a full service metal fabricator serving the Oil and Gas Industry. During this period we have worked closely with the oil industry and one of our most proven products, designed specifically for the oil industry, is the manufacturing of oil field skids. The oil field skids designed by our company are built to the rigorous standards of the oil industry.",
+   "image": "/brands/jkwelding/skid-packages",
+   "imageAlt": "A steel oilfield skid frame fabricated at the JK Welding shop",
+   "services": [
+    {
+     "slug": "oilfield-skids",
+     "title": "Oilfield Skids",
+     "icon": "chart",
+     "text": "Our skids are custom built for each specific need and is durable and safe. Our manufacturing facility has the capacity to make the quantity and customized designed skids that your job requires.",
+     "points": [
+      "Built to the weight load that is required",
+      "Onshore and offshore oil field use",
+      "Configured for wireline and logging equipment, oil and mud tanks, control rooms and pressure valves",
+      "Powder coat or wet paint finishes"
+     ]
+    },
+    {
+     "slug": "drilling-rig-fabrication",
+     "title": "Drilling Rig Fabrication",
+     "icon": "settings",
+     "text": "Heavy-duty components fabricated for reliability in demanding conditions, with shop controls that protect quality at scale."
+    }
+   ]
+  }
+ ],
+ "about": {
+  "eyebrow": "About us",
+  "title": "A Houston shop that keeps the whole job under one roof.",
+  "text": [
+   "JK Welding is a locally owned and operated Houston shop specializing in aluminum, stainless, and steel fabrication for commercial and industrial projects across Texas. From design support and cutting to welding and finishing, we complete work in-house for precision, consistency, and faster turnarounds.",
+   "Keeping nearly everything under one roof reduces handoffs, protects surface quality, and shortens lead times. You get a single point of accountability from drawings to finished parts and a team that collaborates daily on geometry, fixtures, and inspection."
+  ],
+  "image": "/brands/jkwelding/about",
+  "imageAlt": "A fabricated steel platform and railing assembly built by JK Welding",
+  "values": [
+   {
+    "title": "Punctual delivery time",
+    "text": "We plan the work in-house so your parts move from cutting to welding to finish without delays."
+   },
+   {
+    "title": "Excellent safety record",
+    "text": "JK Welding proudly maintains an excellent safety record with Texas Mutual and disciplined in-shop procedures."
+   },
+   {
+    "title": "Top quality service",
+    "text": "Tight tolerances, clean welds, and dependable lead times."
+   }
+  ]
+ },
+ "serviceArea": [
+  "Houston",
+  "Cypress",
+  "Katy",
+  "Spring",
+  "Tomball",
+  "San Antonio",
+  "Austin",
+  "Dallas"
+ ],
+ "facts": [
+  {
+   "heading": "Welder Certifications",
+   "text": "Our welders are AWS, DNV, and Section IV certified and follow controlled procedures matched to your specification. We inspect at the right stages so parts arrive consistent and ready to use."
+  },
+  {
+   "heading": "Materials We Work With",
+   "items": [
+    "Aluminum",
+    "Stainless steel",
+    "Carbon steel",
+    "Galvanized steel",
+    "Exotic alloys"
+   ]
+  },
+  {
+   "heading": "Processes We Run In-House",
+   "items": [
+    "Cutting: fiber laser, CNC plasma, saw cutting, part prep and deburr",
+    "Forming and fixturing: press brake, jigs, in-process inspection for repeatability",
+    "Welding: TIG for fine detail, MIG for production strength",
+    "Finishing: brushed and polished stainless, paint or coating coordination as required",
+    "Assembly and QC: documented checkpoints to keep geometry and finish on spec"
+   ]
+  },
+  {
+   "heading": "Industries We Serve",
+   "text": "Oil and gas, industrial and OEM, medical, commercial, and architectural projects across Texas. We also fabricate for food service, building, manufacturing, and public works projects."
+  },
+  {
+   "heading": "What To Send With A Quote Request",
+   "items": [
+    "Drawings or photos",
+    "Material and thickness",
+    "Quantities and tolerances",
+    "Desired finish",
+    "Target date"
+   ]
+  },
+  {
+   "heading": "From Prototype To Production",
+   "items": [
+    "Prototype builds for new designs",
+    "Short runs for custom fabrication",
+    "High volume production runs for repeat orders"
+   ]
+  },
+  {
+   "heading": "Shop Tours",
+   "text": "Visit us for a tour of our facility."
+  },
+  {
+   "heading": "Founded In 2005 By John King",
+   "text": "Founded in 2005 by John King, JK Welding has grown from a one-man operation into a trusted one-stop shop for welding and fabrication in Texas. Our welding fabricators, metalworkers, and professional metal artists have decades of combined experience and technical skill."
+  },
+  {
+   "heading": "Meet The Team",
+   "items": [
+    "John King, Owner and Founder",
+    "Brian Meier, Operations Manager",
+    "Cesar Avila, Shop Manager",
+    "Derrick Goodrum, Project Manager",
+    "Ian Morgan, Project Manager",
+    "Chris Koonce, CNC CAD Department Head",
+    "Arturo Castillo, Expeditor",
+    "Rosa Alecio, Accounting and HR",
+    "Katie Klentz, Office Administrator",
+    "Andrew J. Sosa, Marketing and Promotions Manager"
+   ]
+  },
+  {
+   "heading": "Field Service At Your Site",
+   "text": "JK Welding also provides full-service welding and fabrication field service at your site, serving a wide range of industries with both in-shop fabrication and mobile field welding, including on-site installation and emergency repair work."
+  },
+  {
+   "heading": "From Design To Delivery",
+   "items": [
+    "Design and engineering: your concept turned into detailed plans and specifications ready for fabrication",
+    "Cutting and fabrication: precision cutting of materials and expert welding assembly of all components",
+    "Finishing and coating: surface preparation and protective coatings or paint for a durable finish",
+    "Delivery: the completed product delivered at your site",
+    "Our engineering team reviews every design submitted to the office for structural soundness and ease of installation"
+   ]
+  },
+  {
+   "heading": "Tough And Unusual Projects",
+   "text": "Tough, complex, or unusual projects are welcome, and we have a reputation for accepting the larger, harder, and bigger projects. Bring a CAD file, a drawing or just a description, and our design team can work up a first draft and offer concepts and ideas."
+  },
+  {
+   "heading": "Landmark Projects",
+   "items": [
+    "The Singing Ringing Tree, a 17-foot-tall, 20-ton wind-powered sculpture on display outside Austin, Texas",
+    "A 50-foot steel cross fabricated and installed for a church in Katy, TX",
+    "A large custom-fabricated steel cross built and installed by the JK Welding team"
+   ]
+  },
+  {
+   "heading": "Free Consultation And Quotes",
+   "text": "Call or email for a free consultation on your upcoming project, or call the office for an initial estimate and a proposed budget. We get back to you quickly with a quote you will find competitive and fair."
+  },
+  {
+   "heading": "Pickup And Delivery",
+   "text": "JK Welding serves Houston, Cypress, Katy, Spring, Tomball, and all around Texas with pickup and delivery options."
+  },
+  {
+   "heading": "Find Us Online",
+   "items": [
+    "Facebook: facebook.com/jkweldinghtx",
+    "Instagram: instagram.com/jkwelding",
+    "LinkedIn: linkedin.com/company/jk-welding-llc",
+    "TikTok: tiktok.com/@jkwelding_",
+    "YouTube: JK Welding, LLC"
+   ]
+  }
+ ]
+}
