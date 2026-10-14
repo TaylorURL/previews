@@ -1,0 +1,366 @@
+{
+ "template": "hvac",
+ "preview": true,
+ "ask": "quote",
+ "name": "PCL Industrial Construction Co.",
+ "shortName": "PCL Industrial",
+ "summary": "A diversified, full-service heavy industrial contractor working the Gulf Coast from offices and training centers in Deer Park, Katy, Port Lavaca and Lake Charles.",
+ "phone": "(281) 241-3936",
+ "email": "webinquiries@pcl.com",
+ "address": "1718 Center St",
+ "town": "Deer Park",
+ "state": "TX",
+ "zip": "77536",
+ "rating": 4.2,
+ "reviewCount": 39,
+ "hours": [
+  [
+   "Mon – Fri",
+   "7:30 AM – 3:30 PM"
+  ],
+  [
+   "Saturday",
+   "Closed"
+  ],
+  [
+   "Sunday",
+   "Closed"
+  ]
+ ],
+ "brand": {
+  "primary": "#005696",
+  "primaryDeep": "#00365f",
+  "accent": "#f0a500",
+  "ink": "#11202e",
+  "muted": "#4d6274",
+  "surface": "#eff5fa",
+  "line": "#d6e2ec",
+  "heading": "'Barlow Condensed', system-ui, sans-serif",
+  "body": "'Barlow', system-ui, sans-serif",
+  "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap",
+  "logo": "/brands/pclindustrialconstruction/logo.webp",
+  "logoMono": "/brands/pclindustrialconstruction/logo-mono.webp",
+  "logoWidth": 108,
+  "logoHeight": 74,
+  "logoRatio": 1.46,
+  "logoGround": "#ffffff",
+  "logoReads": [
+   0.8,
+   0.768,
+   0.74,
+   0.762,
+   0.795,
+   0.83,
+   0.863,
+   0.897,
+   0.931,
+   0.967,
+   1.0
+  ]
+ },
+ "hero": {
+  "eyebrow": "Heavy industrial construction on the Texas Gulf Coast",
+  "title": "We are your partner for industrial projects",
+  "titleAccent": "across the United States.",
+  "lead": "A self-perform general contractor for brownfield and greenfield plants: civil and foundations, structural steel erection, process equipment installation, piping, electrical and instrumentation, run out of Deer Park and the Gulf Coast district.",
+  "image": "/brands/pclindustrialconstruction/hero",
+  "imageAlt": "A petrochemical supermodule under construction on the Texas Gulf Coast"
+ },
+ "groups": [
+  {
+   "slug": "petrochemical",
+   "title": "Petrochemical",
+   "icon": "building",
+   "summary": "Grassroots units, expansions and tie-ins inside operating petrochemical plants along the Houston Ship Channel.",
+   "intro": "Petrochemical work is the heart of the Gulf Coast district. PCL executes most of the scope with its own crews, from the foundations up through the pipe racks, process equipment and the instrumentation that brings a unit online. Working brownfield inside a running plant is the normal condition rather than the exception.",
+   "image": "/brands/pclindustrialconstruction/petrochemical",
+   "imageAlt": "A petrochemical processing unit with pipe racks and steel structure",
+   "services": [
+    {
+     "slug": "civil-and-foundations",
+     "title": "Civil and Foundations",
+     "icon": "ruler",
+     "text": "Site civil work and the concrete foundations under process units, tanks, compressors and pipe racks, self-performed by PCL crews.",
+     "points": [
+      "Brownfield and greenfield sites",
+      "Self-performed rather than subcontracted"
+     ]
+    },
+    {
+     "slug": "structural-steel",
+     "title": "Structural Steel Erection",
+     "icon": "compass",
+     "text": "Structural steel erection for process structures, pipe racks and equipment supports.",
+     "points": [
+      "Erected by PCL's own ironworkers"
+     ]
+    },
+    {
+     "slug": "piping",
+     "title": "Piping",
+     "icon": "waves",
+     "text": "Process and utility piping installed and welded in the field, backed by more than 600 welding procedures developed in-house.",
+     "points": [
+      "Weld repair rate consistently below the industry average",
+      "Quality experts partnered with the site execution team"
+     ]
+    },
+    {
+     "slug": "process-equipment",
+     "title": "Process Equipment Installation",
+     "icon": "settings",
+     "text": "Setting and aligning towers, vessels, exchangers, compressors and rotating equipment."
+    },
+    {
+     "slug": "electrical-and-instrumentation",
+     "title": "Electrical and Instrumentation",
+     "icon": "zap",
+     "text": "Power distribution, cable, terminations and instrumentation through to loop checks, so a unit is handed over ready to run.",
+     "points": [
+      "Part of the same self-perform scope as the mechanical work"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "oil-and-gas",
+   "title": "Oil and Gas",
+   "icon": "droplets",
+   "summary": "Refineries, gas processing, terminals and pipeline facilities built and expanded by self-perform crews.",
+   "intro": "PCL brings its construction expertise to refining, gas processing and midstream facilities across North American brownfield and greenfield environments. The Gulf Coast district carries the work from preconstruction planning through field execution with the same team.",
+   "image": "/brands/pclindustrialconstruction/oil-and-gas",
+   "imageAlt": "A refinery process unit with towers and piping at dusk",
+   "services": [
+    {
+     "slug": "refinery-projects",
+     "title": "Refinery Projects",
+     "icon": "building",
+     "text": "Capital projects, revamps and unit additions inside operating refineries.",
+     "points": [
+      "Executed alongside ongoing plant operations"
+     ]
+    },
+    {
+     "slug": "gas-processing",
+     "title": "Gas Processing and Midstream",
+     "icon": "gauge",
+     "text": "Gas processing plants, compressor stations and terminal facilities, including the civil, mechanical and E&I scope."
+    },
+    {
+     "slug": "module-assembly",
+     "title": "Module Assembly",
+     "icon": "clipboard",
+     "text": "Work moved off the critical path by assembling modules and skids away from the congested plant, then setting them in place.",
+     "points": [
+      "Prefabrication and modular construction"
+     ]
+    },
+    {
+     "slug": "fabrication",
+     "title": "Industrial Fabrication",
+     "icon": "wrench",
+     "text": "Pipe spools and structural fabrication produced in PCL's own U.S. fabrication operation.",
+     "points": [
+      "More than 600 in-house welding procedures"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "power",
+   "title": "Power and Cogeneration",
+   "icon": "power",
+   "summary": "Combined cycle plants, cogeneration units, boilers and emissions retrofits.",
+   "intro": "PCL's industrial group has built combined cycle and cogeneration plants, set HRSGs and completed emissions retrofits on operating units. The scope runs from the foundations and steel through the mechanical installation and the electrical and instrumentation work.",
+   "image": "/brands/pclindustrialconstruction/power",
+   "imageAlt": "A combined cycle power plant with stacks and switchyard",
+   "services": [
+    {
+     "slug": "combined-cycle",
+     "title": "Combined Cycle and Cogeneration",
+     "icon": "power",
+     "text": "Turbine and generator installation, heat recovery steam generators, balance of plant piping and electrical."
+    },
+    {
+     "slug": "plant-retrofits",
+     "title": "Retrofits and Upgrades",
+     "icon": "settings",
+     "text": "Emissions control retrofits and equipment upgrades on operating generating units.",
+     "points": [
+      "Planned around the unit's own outage window"
+     ]
+    },
+    {
+     "slug": "renewable-energy",
+     "title": "Alternative and Renewable Energy",
+     "icon": "leaf",
+     "text": "Alternative and renewable energy facilities, one of the markets the industrial group serves."
+    }
+   ]
+  },
+  {
+   "slug": "manufacturing-and-minerals",
+   "title": "Manufacturing and Minerals",
+   "icon": "chart",
+   "summary": "Advanced manufacturing plants, agriculture chemicals, and minerals and mining facilities.",
+   "intro": "Advanced manufacturing clients depend upon their processing and production facilities to produce high quality technical componentry to meet customer and supplier needs. Whether the process is forming, etching, cleaning or packaging, PCL's advanced manufacturing construction experts work on the next capital project, using project execution tools and systems developed over decades.",
+   "image": "/brands/pclindustrialconstruction/manufacturing",
+   "imageAlt": "The interior of an industrial manufacturing plant with process equipment",
+   "services": [
+    {
+     "slug": "advanced-manufacturing",
+     "title": "Advanced Manufacturing",
+     "icon": "settings",
+     "text": "Capital projects at processing and production facilities, whether the process is forming, etching, cleaning or packaging.",
+     "points": [
+      "Integrated project execution tools and systems"
+     ]
+    },
+    {
+     "slug": "agriculture-chemicals",
+     "title": "Agriculture Chemicals",
+     "icon": "leaf",
+     "text": "Fertilizer and agricultural chemical plants, one of the markets the industrial group serves."
+    },
+    {
+     "slug": "minerals-and-mining",
+     "title": "Minerals and Mining",
+     "icon": "building",
+     "text": "Processing plants and facilities for the minerals and mining market."
+    }
+   ]
+  },
+  {
+   "slug": "maintenance-and-turnarounds",
+   "title": "Maintenance and Turnarounds",
+   "icon": "timer",
+   "summary": "General maintenance that keeps a plant running, and turnarounds completed in 30 to 45 days.",
+   "intro": "Integrated general maintenance teams keep a plant running effectively and efficiently, and PCL has provided mechanical maintenance to major clients across numerous sectors. Turnarounds are a different pace again: a high-paced, short-duration environment that demands experienced professionals and trades to complete an optimized scope safely and quickly.",
+   "image": "/brands/pclindustrialconstruction/maintenance",
+   "imageAlt": "Construction crews working inside an operating process plant",
+   "services": [
+    {
+     "slug": "general-maintenance",
+     "title": "General Maintenance",
+     "icon": "wrench",
+     "text": "The benefits of preventive maintenance include ensuring the integrity of components, extending the life of the equipment, and eliminating unplanned shutdowns.",
+     "points": [
+      "Mechanical maintenance across numerous sectors"
+     ]
+    },
+    {
+     "slug": "turnarounds",
+     "title": "Turnarounds",
+     "icon": "timer",
+     "text": "PCL typically completes turnarounds in 30 to 45 days, with some extending past 50 days and a peak manpower of 800 multi-discipline trades.",
+     "points": [
+      "Management and staffing expertise for time-critical events",
+      "Peak manpower of 800 multi-discipline trades"
+     ]
+    },
+    {
+     "slug": "emergency-response",
+     "title": "Emergency Response",
+     "icon": "shield",
+     "text": "PCL can help preserve an asset and restore functionality, allowing a return to full operation quickly, safely and with confidence in the restoration.",
+     "points": [
+      "Crews mobilized across North America at a moment's notice",
+      "Self-perform capability streamlines the timeline"
+     ]
+    }
+   ]
+  }
+ ],
+ "about": {
+  "eyebrow": "Who we are",
+  "title": "A self-perform heavy industrial contractor, with Deer Park on the Gulf Coast.",
+  "text": [
+   "PCL Industrial Construction Co. focuses on the heavy industrial market across the United States. We are a diversified, full-service heavy industrial contractor focused on safety, quality and excellence. We self-perform 85% of our work to consistently deliver predictable outcomes for our clients. Our offices and training centers are strategically located in Katy, Deer Park, Port Lavaca and Lake Charles to better serve our clients and capitalize on the availability of experienced staff and craft labor forces.",
+   "We bring our construction expertise to a wide spectrum of industrial and manufacturing facilities across North American brownfield and greenfield environments. As a self-perform general contractor, PCL executes most of our work, including civil/foundations, structural steel erection, process equipment installation, piping, electrical, and instrumentation."
+  ],
+  "image": "/brands/pclindustrialconstruction/team",
+  "imageAlt": "A Gulf Coast industrial plant project under construction",
+  "values": [
+   {
+    "title": "Build it Right, Build it Once",
+    "text": "PCL's quality mantra, and the reason quality experts sit with the site execution team rather than apart from it."
+   },
+   {
+    "title": "85% self-performed",
+    "text": "Most of the work is executed by PCL's own crews, which is how outcomes stay predictable."
+   },
+   {
+    "title": "Safety, quality and excellence",
+    "text": "The three things the industrial group is built around, on every brownfield and greenfield site."
+   }
+  ]
+ },
+ "serviceArea": [
+  "Deer Park",
+  "Katy",
+  "Port Lavaca",
+  "Lake Charles"
+ ],
+ "facts": [
+  {
+   "heading": "Experience",
+   "text": "With almost 80 years of experience, PCL can safely and successfully construct projects of any size, and the company has a 50-year history of dependability as a trusted construction partner for the oil and gas sector."
+  },
+  {
+   "heading": "Self-perform scope",
+   "items": [
+    "Civil and foundations",
+    "Structural steel erection",
+    "Process equipment installation",
+    "Piping",
+    "Electrical",
+    "Instrumentation"
+   ]
+  },
+  {
+   "heading": "Quality",
+   "text": "PCL's quality mantra, 'Build it Right, Build it Once', embodies our focus on delivering quality projects for our clients. More than 600 welding procedures have been developed in-house, and the weld repair rate is consistently below 1.5%, below the industry average. Quality experts partner with the on-site project execution team so client specifications and industry standards are met or exceeded throughout the project's lifecycle."
+  },
+  {
+   "heading": "Project sizes",
+   "text": "Oil and gas work is executed on projects from less than a million to multiple billions of dollars, with construction solutions tailored to match what a client needs."
+  },
+  {
+   "heading": "Planning and modular construction",
+   "text": "PCL optimizes front-end constructability, modularization, budgeting and scheduling, and its patented, award-winning HeviLift planning suite gives owners a detailed look into project planning and the optimization of the heavy lift program. As a North American modular construction leader, PCL works with clients to maximize offsite construction, reduce congestion and lower costs."
+  },
+  {
+   "heading": "Training programs",
+   "text": "PCL offers award-winning training programs to develop employees to succeed in their careers, through Frontline Supervisory Training, NCCER Training and the PCL Certified Craft Program."
+  },
+  {
+   "heading": "Offices and training centers",
+   "items": [
+    "Deer Park, TX",
+    "Katy, TX",
+    "Port Lavaca, TX",
+    "Lake Charles, LA"
+   ]
+  },
+  {
+   "heading": "Awards and accolades",
+   "items": [
+    "CMEF Workforce Development Industry Impact Award (Industry Community Leader), 2022 and 2019",
+    "ABC Step Platinum & Diamond Award, 2011 – 2022",
+    "ABC National Excellence in Construction Eagle Award, 2020 and 2018",
+    "ABC of Greater Houston Excellence in Construction Award (Sooner), 2021",
+    "ABC of Greater Houston Diversity Excellence Award, 2021",
+    "ENR's Best Project List (Enterprise), 2020"
+   ]
+  },
+  {
+   "heading": "Ways to reach us",
+   "items": [
+    "Deer Park office: (281) 241-3936",
+    "General inquiries: (281) 249-8001",
+    "Web inquiries: webinquiries@pcl.com",
+    "Industrial inquiries: IndustrialInquiries@pcl.com"
+   ]
+  }
+ ]
+}
