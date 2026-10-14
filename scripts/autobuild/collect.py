@@ -132,6 +132,10 @@ class Page(HTMLParser):
                 })
         if tag in self.BLOCK:
             self._text = []
+        elif tag in ("br", "div"):
+            # A heading their page sets on two lines ("Residential<br>Chain
+            # Link Fencing") is two words, not one run together.
+            self.handle_data(" ")
         if a.get("style"):
             self.styles.append(a["style"])
 

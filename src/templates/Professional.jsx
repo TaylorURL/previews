@@ -1102,15 +1102,21 @@ function TeamPage(props) {
   // words alone; a wall of grey boxes with initials reads as placeholders.
   // Initials stand in only beside colleagues who do have a photo.
   const photos = team.some((p) => p.image);
+  // One person alone spans the row, the photo or name beside the words, so a
+  // single card does not sit at the left of an empty band.
+  const alone = team.length === 1;
+  const row = photos
+    ? 'sm:grid sm:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] sm:items-center sm:gap-x-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]'
+    : 'lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] lg:gap-x-12';
   return (
     <>
       <PageHero trail={[['/', 'Home'], [null, 'Our Team']]} eyebrow={<Eyebrow>Our team</Eyebrow>} title={`The people behind ${b.shortName}`} text={b.tagline} />
       <section className={pad}>
-        <ul className={`${wrap} grid gap-x-6 sm:grid-cols-2 lg:grid-cols-3 ${photos ? 'gap-y-12' : 'gap-y-10'}`}>
+        <ul className={`${wrap} grid gap-x-6 ${alone ? '' : 'sm:grid-cols-2 lg:grid-cols-3'} ${photos ? 'gap-y-12' : 'gap-y-10'}`}>
           {team.map((p) => (
-            <li key={p.name} className={`min-w-0 ${photos ? '' : 'border-t-2 border-accent pt-6'}`}>
+            <li key={p.name} className={`min-w-0 ${photos ? '' : 'border-t-2 border-accent pt-6'} ${alone ? row : ''}`}>
               {p.image ? (
-                <Img className="aspect-[4/5] w-full rounded-lg bg-surface object-cover object-top" src={p.image} alt={p.imageAlt || p.name} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+                <Img className="aspect-[4/5] w-full rounded-lg bg-surface object-cover object-top" src={p.image} alt={p.imageAlt || p.name} sizes={alone ? '(max-width: 640px) 100vw, 40vw' : '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'} />
               ) : (
                 photos && (
                   <span aria-hidden="true" className="grid aspect-[4/5] w-full place-items-center rounded-lg bg-surface font-heading text-6xl text-primary/70">
@@ -1118,9 +1124,12 @@ function TeamPage(props) {
                   </span>
                 )
               )}
-              <h2 className={`${photos ? 'mt-5' : ''} font-heading font-display-2 text-[1.35rem] leading-snug text-ink`}>{p.name}</h2>
-              <p className="mt-1 text-[13px] font-bold uppercase tracking-[0.14em] text-accent">{p.role}</p>
-              {p.bio && <p className="mt-3 text-base leading-[1.6] text-muted">{p.bio}</p>}
+              <div className="min-w-0">
+                <h2 className={`${photos ? 'mt-5' : ''} ${alone && photos ? 'sm:mt-0' : ''} font-heading font-display-2 text-[1.35rem] leading-snug text-ink`}>{p.name}</h2>
+                <p className="mt-1 text-[13px] font-bold uppercase tracking-[0.14em] text-accent">{p.role}</p>
+                {p.bio && photos && <p className="mt-3 text-base leading-[1.6] text-muted">{p.bio}</p>}
+              </div>
+              {p.bio && !photos && <p className={`mt-3 text-base leading-[1.6] text-muted ${alone ? 'lg:mt-0 lg:text-lg' : ''}`}>{p.bio}</p>}
             </li>
           ))}
         </ul>

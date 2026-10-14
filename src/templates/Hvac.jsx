@@ -274,6 +274,10 @@ const ASKS = {
     withName: 'Reserve with',
     card: 'Reserve a Unit',
     cardText: 'Choose what you need and we will call to confirm what is open.',
+    // A unit is rented, not a job done: a service page asks what is to be
+    // stored, and its closing band names the storage without 'service'.
+    itemText: 'Tell us what you need to store and when.',
+    rents: true,
     check: 'Check Availability',
     field: 'Unit Type',
     eyebrow: 'Reserve a unit',
@@ -633,7 +637,7 @@ function BookingCard({ b, groups, heading = 'h2', title, service }) {
         <div className="min-w-0">
           <H className="font-heading text-[22px] font-extrabold leading-tight tracking-[-0.02em] text-ink">{title || w.card}</H>
           <p className="mt-1.5 text-[16px] md:text-[15px] leading-[1.5] text-muted">
-            {service ? `Tell us about your ${service.toLowerCase()} job.` : w.cardText}
+            {service ? w.itemText || `Tell us about your ${service.toLowerCase()} job.` : w.cardText}
           </p>
         </div>
         <span className={`${iconTile} h-11 w-11`}>
@@ -913,9 +917,9 @@ function Footer({ b, groups, tel }) {
         <div>
           <h2 className={head}>Services</h2>
           <ul className="grid">
-            {groups.slice(0, 4).map((g) => (
+            {groups.map((g) => (
               <li key={g.slug}>
-                <a href={`/${g.slug}`} className="flex min-h-[44px] items-center text-muted no-underline hover:text-[color:var(--pt)]">
+                <a href={`/${g.slug}`} className="flex min-h-[44px] items-center py-2.5 leading-snug text-muted no-underline hover:text-[color:var(--pt)]">
                   {g.title}
                 </a>
               </li>
@@ -1011,6 +1015,7 @@ function Home({ b, groups, tel }) {
   const rating = ratingLine(b);
   const basis = cardBasis(groups.length);
   const firstTier = list(b.plan?.tiers)[0];
+  const aboutFacts = !b.about?.image && (b.since || rating);
   return (
     <>
       <section className="relative isolate overflow-hidden bg-primary-deep text-white">
@@ -1129,25 +1134,32 @@ function Home({ b, groups, tel }) {
       {b.promo && (
         <section aria-label={b.promo.eyebrow} className="bg-white pb-[clamp(4rem,8vw,6.5rem)]">
           <div className={wrap}>
-            <div className="grid overflow-hidden rounded-[28px] bg-primary text-[color:var(--on-primary)] lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]">
-              <div className="relative isolate px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-16">
+            {/* Without a photo the banner is one column, and from lg up its
+                button stands to the right of the words rather than leaving
+                the right half bare. */}
+            <div className={`grid overflow-hidden rounded-[28px] bg-primary text-[color:var(--on-primary)] ${b.promo.image ? 'lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]' : ''}`}>
+              <div className={`relative isolate px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-16 ${b.promo.image ? '' : 'lg:flex lg:items-center lg:gap-12'}`}>
                 <div className={`absolute inset-0 -z-10 opacity-40 ${gridBg} [mask-image:linear-gradient(120deg,black,transparent_70%)]`} aria-hidden="true" />
-                <p className="mb-5 inline-flex items-center gap-2 rounded-full bg-accent px-3.5 py-1.5 font-heading text-[13px] font-bold uppercase tracking-[0.12em] text-[color:var(--on-accent)]">
-                  <Sun size={15} aria-hidden="true" /> {b.promo.eyebrow}
-                </p>
-                <h2 className="font-heading text-[clamp(1.9rem,1.35rem+2.1vw,2.85rem)] font-extrabold leading-[1.08] tracking-[-0.025em] [text-wrap:balance]">
-                  {b.promo.title}
-                </h2>
-                <p className="mt-4 max-w-xl text-[17px] leading-[1.65] opacity-85 sm:text-[18px]">{b.promo.text}</p>
-                <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:items-center">
+                <div className="min-w-0 lg:flex-1">
+                  <p className="mb-5 inline-flex items-center gap-2 rounded-full bg-accent px-3.5 py-1.5 font-heading text-[13px] font-bold uppercase tracking-[0.12em] text-[color:var(--on-accent)]">
+                    <Sun size={15} aria-hidden="true" /> {b.promo.eyebrow}
+                  </p>
+                  <h2 className="font-heading text-[clamp(1.9rem,1.35rem+2.1vw,2.85rem)] font-extrabold leading-[1.08] tracking-[-0.025em] [text-wrap:balance]">
+                    {b.promo.title}
+                  </h2>
+                  <p className="mt-4 max-w-xl text-[17px] leading-[1.65] opacity-85 sm:text-[18px]">{b.promo.text}</p>
+                </div>
+                <div className={`mt-8 flex flex-col gap-6 sm:flex-row sm:items-center ${b.promo.image ? '' : 'lg:mt-0 lg:flex-none'}`}>
                   {b.promo.price && (
                     <p className="flex items-baseline gap-2">
                       <strong className="font-heading text-[52px] font-extrabold leading-none tracking-[-0.04em]">{b.promo.price}</strong>
                       {b.promo.priceNote && <span className="text-[16px] md:text-[15px] opacity-80">{b.promo.priceNote}</span>}
                     </p>
                   )}
-                  <a href="/contact" className={`${btn} bg-white text-[color:var(--pt)] hover:bg-surface sm:ml-auto lg:ml-4`}>
-                    Book a Tune-Up <ArrowRight size={18} aria-hidden="true" />
+                  {/* The button asks for what the business does, the same as
+                      the hero's, not for a tune-up every trade lacks. */}
+                  <a href="/contact" className={`${btn} bg-white text-[color:var(--pt)] hover:bg-surface ${b.promo.price ? 'sm:ml-auto lg:ml-4' : ''}`}>
+                    {askOf(b).act} <ArrowRight size={18} aria-hidden="true" />
                   </a>
                 </div>
               </div>
@@ -1183,11 +1195,27 @@ function Home({ b, groups, tel }) {
               )}
             </div>
             )}
-            {/* With no photo the heading takes the photo's side and the words stand beside it, so neither half is bare. */}
+            {/* With no photo the heading takes the photo's side, with the year and rating under it, and the words stand beside it, so neither half is bare. */}
             <div className={b.about.image ? '' : 'grid gap-x-20 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]'}>
               <div>
                 <Eyebrow>{b.about.eyebrow || 'About us'}</Eyebrow>
                 <h2 className={h2}>{b.about.title}</h2>
+                {aboutFacts && (
+                  <div className={`mt-8 grid gap-4 ${b.since && rating ? 'grid-cols-2' : ''}`}>
+                    {b.since && (
+                      <div className="rounded-2xl bg-white p-5">
+                        <p className="text-[14px] text-muted">Serving {b.town} since</p>
+                        <p className="mt-1 font-heading text-[30px] font-extrabold tracking-[-0.03em] text-ink">{b.since}</p>
+                      </div>
+                    )}
+                    {rating && (
+                      <div className="rounded-2xl bg-white p-5">
+                        <p className="text-[14px] text-muted">Google rating</p>
+                        <p className="mt-1 font-heading text-[30px] font-extrabold tracking-[-0.03em] text-ink">{Number(b.rating).toFixed(1)}</p>
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
               <div>
                 <p className={`mt-5 ${b.about.image ? '' : 'lg:mt-10'} ${lead}`}>{list(b.about.text)[0]}</p>
@@ -1389,7 +1417,7 @@ function GroupPage({ b, groups, group, tel }) {
       <ClosingBand
         b={b}
         tel={tel}
-        title={`Need ${group.title.toLowerCase()}${/\bservices?$/i.test(group.title) ? '' : ' service'}?`}
+        title={`Need ${group.title.toLowerCase()}${askOf(b).rents || /\bservices?$/i.test(group.title) ? '' : ' service'}?`}
         text="Send a request or call, and we will set up a time that works for you."
       />
     </>

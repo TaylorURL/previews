@@ -1,0 +1,494 @@
+{
+ "template": "hvac",
+ "preview": true,
+ "name": "Burke Self Storage",
+ "shortName": "Burke Self Storage",
+ "phone": "(713) 477-7637",
+ "email": "burkeselfstorage@rightmovestorage.com",
+ "address": "1009 Burke Rd",
+ "town": "Pasadena",
+ "state": "TX",
+ "zip": "77506",
+ "rating": 3.9,
+ "reviewCount": 102,
+ "hours": [
+  [
+   "Mon – Fri",
+   "9 AM – 6 PM"
+  ],
+  [
+   "Saturday",
+   "9 AM – 5 PM"
+  ],
+  [
+   "Sunday",
+   "Closed"
+  ]
+ ],
+ "brand": {
+  "primary": "#e1081c",
+  "primaryDeep": "#9e0613",
+  "accent": "#f84656",
+  "ink": "#261920",
+  "surface": "#fef0f2",
+  "muted": "#5b6470",
+  "line": "#e1dfe0",
+  "heading": "'Montserrat', system-ui, sans-serif",
+  "body": "'Open Sans', system-ui, sans-serif",
+  "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap",
+  "logo": "/brands/burkeselfstorage/logo.webp",
+  "logoMono": "/brands/burkeselfstorage/logo-mono.webp",
+  "logoWidth": 113,
+  "logoHeight": 74,
+  "logoRatio": 1.524,
+  "logoGround": "#ffffff",
+  "logoReads": [
+   0.44,
+   0.4,
+   0.389,
+   0.406,
+   0.447,
+   0.516,
+   0.598,
+   0.69,
+   0.791,
+   0.897,
+   1.0
+  ]
+ },
+ "hero": {
+  "eyebrow": "Burke Self Storage",
+  "title": "Climate-controlled and vehicle storage",
+  "lead": "Affordable storage units in Pasadena, TX with secure access, multiple sizes, and convenient rentals. Get your 1st month FREE. Book today!",
+  "titleAccent": "in Pasadena"
+ },
+ "serviceArea": [
+  "Pasadena",
+  "Baytown",
+  "Houston",
+  "Channelview",
+  "Webster",
+  "Alvin",
+  "Humble",
+  "Katy",
+  "Spring",
+  "Richmond",
+  "Angleton",
+  "Brookshire"
+ ],
+ "ask": "reserve",
+ "summary": "Affordable storage units in Pasadena, TX with secure access, multiple sizes, and convenient rentals. Get your 1st month FREE. Book today!",
+ "promo": {
+  "eyebrow": "Limited-time deal",
+  "title": "1 month free rent on every unit",
+  "text": "Every size at Burke Road is listed with 1 month free rent, and the web rate is lower than the in-store rate when you rent online."
+ },
+ "groups": [
+  {
+   "slug": "climate-controlled-storage",
+   "title": "Climate-Controlled Storage",
+   "icon": "thermometer",
+   "summary": "Maintain a more stable environment for sensitive belongings in Pasadena's intense heat and humidity.",
+   "intro": "Maintain a more stable environment for sensitive belongings in Pasadena's intense heat and humidity. Great for electronics, furniture, documents, and more. Climate-controlled units hold a temperature between 55 and 80°F year-round.",
+   "services": [
+    {
+     "slug": "5x5-climate-controlled",
+     "title": "5' x 5' Climate-Controlled",
+     "icon": "thermometer",
+     "text": "25 sq ft, a closet's worth of items. Smart unit.",
+     "points": [
+      "$12 a month web rate",
+      "$13 a month in-store rate",
+      "1 month free rent"
+     ]
+    },
+    {
+     "slug": "5x10-climate-controlled",
+     "title": "5' x 10' Climate-Controlled",
+     "icon": "thermometer",
+     "text": "50 sq ft. Smart unit.",
+     "points": [
+      "$27 a month web rate",
+      "$30 a month in-store rate",
+      "1 month free rent"
+     ]
+    },
+    {
+     "slug": "10x10-climate-controlled",
+     "title": "10' x 10' Climate-Controlled",
+     "icon": "thermometer",
+     "text": "100 sq ft, roughly half a standard garage and about a one-bedroom home. Smart unit.",
+     "points": [
+      "$54 a month web rate",
+      "$59 a month in-store rate",
+      "1 month free rent"
+     ]
+    },
+    {
+     "slug": "10x15-climate-controlled",
+     "title": "10' x 15' Climate-Controlled",
+     "icon": "thermometer",
+     "text": "150 sq ft. Smart unit, currently on the waitlist — join it and we let you know when one opens.",
+     "points": [
+      "$113 a month web rate",
+      "$124 a month in-store rate"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "drive-up-storage",
+   "title": "Drive-Up Storage",
+   "icon": "car",
+   "summary": "Pull your vehicle directly up to your unit for fast, easy loading and unloading.",
+   "intro": "Pull your vehicle directly up to your unit for fast, easy loading and unloading. Our Pasadena drive-up units are ideal for frequent access and bulky items, and they run from 5' x 10' up to 20' x 20'.",
+   "services": [
+    {
+     "slug": "5x10-drive-up",
+     "title": "5' x 10' Drive-Up",
+     "text": "50 sq ft. Smart unit with drive-up access.",
+     "points": [
+      "$18 a month web rate",
+      "$20 a month in-store rate",
+      "1 month free rent"
+     ]
+    },
+    {
+     "slug": "8x8-drive-up",
+     "title": "8' x 8' Drive-Up",
+     "text": "64 sq ft. Smart unit with drive-up access.",
+     "points": [
+      "$23 a month web rate",
+      "$25 a month in-store rate",
+      "1 month free rent"
+     ]
+    },
+    {
+     "slug": "10x10-drive-up",
+     "title": "10' x 10' Drive-Up",
+     "text": "100 sq ft. Smart unit with drive-up access.",
+     "points": [
+      "$37 a month web rate",
+      "$41 a month in-store rate",
+      "1 month free rent"
+     ]
+    },
+    {
+     "slug": "8x16-drive-up",
+     "title": "8' x 16' Drive-Up",
+     "text": "128 sq ft. Smart unit with drive-up access.",
+     "points": [
+      "$62 a month web rate",
+      "$68 a month in-store rate",
+      "1 month free rent"
+     ]
+    },
+    {
+     "slug": "8x18-drive-up",
+     "title": "8' x 18' Drive-Up",
+     "text": "144 sq ft. Smart unit with drive-up access.",
+     "points": [
+      "$79 a month web rate",
+      "$87 a month in-store rate",
+      "1 month free rent"
+     ]
+    },
+    {
+     "slug": "10x20-drive-up",
+     "title": "10' x 20' Drive-Up",
+     "text": "200 sq ft, about the size of a one-car garage. Smart unit with drive-up access.",
+     "points": [
+      "$104 a month web rate",
+      "$114 a month in-store rate",
+      "1 month free rent"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "indoor-storage",
+   "title": "Indoor Storage",
+   "icon": "building",
+   "summary": "Indoor units offer an extra layer of protection from the elements with hallway and ground-floor access.",
+   "intro": "Indoor units in Pasadena offer an extra layer of protection from the elements with convenient hallway and ground-floor access. An elevator serves the upper floor, and ground-floor units are available.",
+   "services": [
+    {
+     "slug": "8x8-hallway",
+     "title": "8' x 8' Hallway Unit",
+     "text": "64 sq ft. Smart unit reached from an interior hallway.",
+     "points": [
+      "$20 a month web rate",
+      "$22 a month in-store rate",
+      "1 month free rent"
+     ]
+    },
+    {
+     "slug": "8x16-hallway",
+     "title": "8' x 16' Hallway Unit",
+     "text": "128 sq ft. Smart unit reached from an interior hallway, currently on the waitlist.",
+     "points": [
+      "$56 a month web rate",
+      "$62 a month in-store rate"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "vehicle-storage",
+   "title": "Vehicle Storage",
+   "icon": "car",
+   "summary": "Park your car, truck, trailer, boat, motorcycle, or RV at our Pasadena facility.",
+   "intro": "Park your car, truck, trailer, boat, motorcycle, or RV at our Pasadena facility. Flexible uncovered parking keeps your vehicles close and accessible, on open gravel spaces behind the code gate.",
+   "services": [
+    {
+     "slug": "10x20-uncovered-parking",
+     "title": "10' x 20' Uncovered Parking",
+     "icon": "car",
+     "text": "200 sq ft of open parking on gravel.",
+     "points": [
+      "$239 a month web rate",
+      "$263 a month in-store rate",
+      "1 month free rent"
+     ]
+    },
+    {
+     "slug": "10x15-uncovered-parking",
+     "title": "10' x 15' Uncovered Parking",
+     "icon": "car",
+     "text": "150 sq ft of open parking on gravel, currently on the waitlist.",
+     "points": [
+      "$151 a month web rate",
+      "$166 a month in-store rate"
+     ]
+    },
+    {
+     "slug": "8x15-uncovered-parking",
+     "title": "8' x 15' Uncovered Parking",
+     "icon": "car",
+     "text": "120 sq ft of open parking on gravel, currently on the waitlist.",
+     "points": [
+      "$102 a month web rate",
+      "$112 a month in-store rate"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "military-storage",
+   "title": "Military Storage",
+   "icon": "building",
+   "summary": "We proudly support active-duty service members and veterans near Ellington Field with secure storage while you focus on what matters most.",
+   "intro": "We proudly support active-duty service members and veterans near Ellington Field with secure storage while you focus on what matters most. Every unit is rented month to month, so a posting or a deployment does not tie you to a long contract, and you can pay online or set up autopay from anywhere and designate someone else to reach your unit while you are away."
+  },
+  {
+   "slug": "small-storage-units",
+   "title": "Small Storage Units",
+   "icon": "building",
+   "summary": "Similar to a closet. Ideal for sports equipment, seasonal items, and extra boxes.",
+   "intro": "Similar to a closet. Ideal for sports equipment, seasonal items, and extra boxes. Small units at Burke Road run from 5' x 5' to 8' x 8'.",
+   "services": [
+    {
+     "slug": "5x5",
+     "title": "5' x 5'",
+     "text": "25 sq ft, climate controlled. Web rate $12 a month, in-store rate $13."
+    },
+    {
+     "slug": "5x10",
+     "title": "5' x 10'",
+     "text": "50 sq ft, drive-up from $18 a month web rate or climate controlled from $27 a month web rate."
+    },
+    {
+     "slug": "8x8",
+     "title": "8' x 8'",
+     "text": "64 sq ft, hallway access from $20 a month web rate or drive-up from $23 a month web rate."
+    }
+   ]
+  },
+  {
+   "slug": "medium-storage-units",
+   "title": "Medium Storage Units",
+   "icon": "building",
+   "summary": "Similar to a small room. Ideal for a studio apartment or office suite.",
+   "intro": "Similar to a small room. Ideal for a studio apartment or office suite. Medium units at Burke Road run from 10' x 10' to 10' x 20'.",
+   "services": [
+    {
+     "slug": "10x10",
+     "title": "10' x 10'",
+     "text": "100 sq ft, about half a standard garage and enough for a one-bedroom home. Drive-up from $37 a month web rate, climate controlled from $54."
+    },
+    {
+     "slug": "8x16-8x18",
+     "title": "8' x 16' and 8' x 18'",
+     "text": "128 and 144 sq ft with drive-up access, $62 and $79 a month web rate."
+    },
+    {
+     "slug": "10x20",
+     "title": "10' x 20'",
+     "text": "200 sq ft, about a one-car garage and typically a three- to four-bedroom home. Drive-up, $104 a month web rate."
+    }
+   ]
+  },
+  {
+   "slug": "large-storage-units",
+   "title": "Large Storage Units",
+   "icon": "building",
+   "summary": "Similar to a one-car garage. Ideal for a multi-bedroom home or business inventory.",
+   "intro": "Similar to a one-car garage. Ideal for a multi-bedroom home or business inventory. Large units at Burke Road run from 8' x 36' to 20' x 20'.",
+   "services": [
+    {
+     "slug": "8x36",
+     "title": "8' x 36'",
+     "text": "288 sq ft with drive-up access.",
+     "points": [
+      "$172 a month web rate",
+      "$189 a month in-store rate",
+      "1 month free rent"
+     ]
+    },
+    {
+     "slug": "20x20",
+     "title": "20' x 20'",
+     "text": "400 sq ft with drive-up access. Units of 250 sq ft and larger may have an electrical outlet — ask the office.",
+     "points": [
+      "$254 a month web rate",
+      "$279 a month in-store rate",
+      "1 month free rent"
+     ]
+    }
+   ]
+  }
+ ],
+ "about": {
+  "eyebrow": "About us",
+  "title": "About Burke Self Storage",
+  "text": [
+   "A 5x5 fits a closet's worth of items, a 10x10 holds a one-bedroom apartment, and a 10x20 fits a 3-bedroom home. Our team can help you size it right in under a minute — call or stop by.",
+   "Burke Self Storage on Burke Road, near Red Bluff Road, offers a wide range of unit sizes alongside smart units, climate-controlled space, and convenient drive-up access for Pasadena residents and businesses.",
+   "At Burke Self Storage, we make it easy to find dependable self storage and vehicle parking near your home, business, or neighborhood in Pasadena, TX. With flexible month-to-month leasing, simple online account management, and a convenient Burke Road location, getting organized has never been more straightforward.",
+   "Our facility sits on Burke Road near Red Bluff Road, directly across from Pomeroy Elementary School and just a short drive from the Pasadena Central Public Library and the Sam Houston Tollway. We sit just off Red Bluff Road and Southmore Avenue, a short drive from Southmore Intermediate School, and we proudly serve Pasadena and the surrounding Harris County area."
+  ],
+  "image": "/brands/burkeselfstorage/photo1",
+  "imageAlt": "A photo of Burke Self Storage"
+ },
+ "facts": [
+  {
+   "heading": "Access hours",
+   "text": "Gate access is open Monday to Sunday, 6:00 AM to 9:00 PM, using your personal gate code. The office is open Monday to Friday 9:30 AM to 6:00 PM and Saturday 9:00 AM to 4:00 PM, and closed Sunday."
+  },
+  {
+   "heading": "Features and amenities",
+   "items": [
+    "Smart units with phone alerts",
+    "Climate-controlled units",
+    "Drive-up access units",
+    "Code gate entry",
+    "Security fencing",
+    "Vehicle, RV, and boat parking",
+    "Elevator access",
+    "On-site moving and packing supplies",
+    "U-Haul truck rentals",
+    "Online payments and autopay",
+    "Month-to-month leases",
+    "Ground-floor units"
+   ]
+  },
+  {
+   "heading": "Smart units",
+   "text": "Smart units at Burke Road are powered by Storage Defender, which watches your individual unit around the clock, sends real-time alerts to your phone by text rather than an app, and sounds a noise deterrent. Reply Yes or No to an alert and Storage Defender handles the rest."
+  },
+  {
+   "heading": "How the facility is secured",
+   "text": "The property is monitored by 24/7 HD video surveillance, perimeter fencing, individually coded gate access, bright LED lighting, and motion sensors on every hallway."
+  },
+  {
+   "heading": "Renting and moving out",
+   "text": "Rent online in a few minutes, or reserve a unit with no credit card required and switch sizes before you move in. All units are rented month-to-month, and you can move out any time with 10 days written notice — there are no long-term contracts or early termination fees."
+  },
+  {
+   "heading": "Paying your rent",
+   "text": "Pay online through your tenant portal, by phone, in person at the office, or set up autopay with a credit card or bank account. Autopay tenants receive a small monthly discount, and we accept major credit cards in person."
+  },
+  {
+   "heading": "Insurance on stored items",
+   "text": "Renters are required to have insurance for stored items, and we offer coverage through a third-party provider for convenience."
+  },
+  {
+   "heading": "Moving and packing supplies",
+   "items": [
+    "Locks",
+    "Boxes, tape, and labels",
+    "Bubble wrap, packing paper, and shrink wrap",
+    "Moving blankets and mattress covers",
+    "Bundled sets that cost less than buying each item on its own",
+    "U-Haul moving truck rentals arranged through the office"
+   ]
+  },
+  {
+   "heading": "What you cannot store",
+   "items": [
+    "Flammable liquids such as propane and gas",
+    "Firearms, ammunition, or explosives",
+    "Toxic or hazardous materials",
+    "Tires",
+    "Perishable food or liquids",
+    "Plants, animals, or people",
+    "Anything wet, which invites mold",
+    "Irreplaceable or high-value items such as important documents or jewelry"
+   ]
+  },
+  {
+   "heading": "Who can reach your unit",
+   "text": "You can designate other people to access your unit or keep access to yourself. If you forget your gate code, come by the office during business hours with proof of identity and we will help. A unit is for storing items only, not for working, exercising, or spending time inside."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What are your access hours?",
+   "a": "Tenants can access their units seven days a week from 6:00 AM to 9:00 PM using their personal gate code."
+  },
+  {
+   "q": "Do I need to sign a long-term contract?",
+   "a": "No. All units are rented month-to-month. You can move out anytime with 10 days written notice — there are no long-term contracts or early termination fees."
+  },
+  {
+   "q": "How do I pay my monthly rent?",
+   "a": "You can pay online through your tenant portal, by phone, in person at the office, or set up autopay with a credit card or bank account. Autopay tenants receive a small monthly discount."
+  },
+  {
+   "q": "What size unit do I need?",
+   "a": "A 5x5 fits a closet's worth of items, a 10x10 holds a one-bedroom apartment, and a 10x20 fits a 3-bedroom home. Our team can help you size it right in under a minute — call or stop by."
+  },
+  {
+   "q": "What size storage units are available in Pasadena, TX?",
+   "a": "Our Pasadena facility on Burke Road offers a wide range of unit sizes, from compact 5x5 units ideal for boxes and small items up to large 20x20 units that can hold the contents of a multi-bedroom home. We also offer uncovered vehicle parking for cars, trailers, boats, and RVs."
+  },
+  {
+   "q": "Are climate-controlled units available?",
+   "a": "Yes. Climate-controlled units maintain a temperature between 55-80°F year-round, protecting electronics, wood furniture, documents, and other sensitive items from heat and humidity."
+  },
+  {
+   "q": "Is the facility secure?",
+   "a": "The property is monitored by 24/7 HD video surveillance, perimeter fencing, individually coded gate access, bright LED lighting, and motion sensors on every hallway."
+  },
+  {
+   "q": "Does your Pasadena, TX, facility offer vehicle and RV parking?",
+   "a": "Yes. Our Pasadena facility provides uncovered parking spaces for a variety of vehicles, including cars, motorcycles, trucks, trailers, boats, and RVs, giving you a convenient place to keep them close to home."
+  },
+  {
+   "q": "Do I need storage insurance when renting a unit?",
+   "a": "Yes, renters are required to have insurance for stored items. For convenience, we offer coverage through a third-party provider."
+  },
+  {
+   "q": "How do I rent a moving truck?",
+   "a": "Contact the Burke Road office to arrange a U-Haul moving truck rental."
+  },
+  {
+   "q": "Do your storage units have electrical outlets?",
+   "a": "Most smaller units do not include outlets. Units 250 square feet or larger may have them. Contact the office for details."
+  },
+  {
+   "q": "What cannot be stored in self storage at our Pasadena, TX, facility?",
+   "a": "Certain items are not allowed in storage units, including living things like plants or pets, perishable goods, and hazardous materials such as flammable liquids, chemicals, or explosives. Illegal items, firearms, and ammunition are also prohibited. It's best to avoid storing anything wet to prevent mold, as well as irreplaceable or high-value items like important documents or jewelry."
+  }
+ ]
+}
