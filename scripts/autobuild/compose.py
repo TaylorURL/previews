@@ -284,11 +284,17 @@ FRAGMENT = re.compile(r"(?:as|because|although|though|whereas|while|unless|wheth
 
 def trim(text, limit):
     """Their words, cut at a sentence boundary and never mid-sentence. A space
-    their page leaves before a comma or stop is closed up, and a last sentence
-    that stops on a comma, a list their page cut off, is left out, as is one
-    that is only a leading clause the cut parted from its point."""
+    their page leaves before a comma or stop is closed up, one it leaves out
+    after them ("pool service.Innovative Pools", "service,maintenance") is put
+    in, and a last sentence that stops on a comma, a list their page cut off,
+    is left out, as is one that is only a leading clause the cut parted from
+    its point."""
+    text = re.sub(r"\s+([,.;:!?])", r"\1", plain(text))
+    # A web address ("pools.com") and a figure ("1,200") keep theirs: a stop
+    # opens up only before a capital, and either only after a word.
+    text = re.sub(r"(?<=[a-z]{2})(,|[.!?](?=[A-Z][a-z]))(?=[A-Za-z])", r"\1 ", text)
     out = []
-    for sentence in sentences(re.sub(r"\s+([,.;:!?])", r"\1", plain(text))):
+    for sentence in sentences(text):
         if len(" ".join(out + [sentence])) > limit:
             break
         out.append(sentence)
