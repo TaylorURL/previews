@@ -207,7 +207,7 @@ def other_trade(text, trade):
 
 SINCE = re.compile(r"\b(?:since|established|founded|est\.?|serving [^.]{0,40} since)\s+((?:19|20)\d\d)\b", re.I)
 LICENSE = re.compile(r"\b((?:TDLR|TACLA|TECL|TDI|NPN|License|Lic\.)\s*(?:No\.?|#|Number)\s*:?\s*[A-Z]{0,6}-?\d[\w-]{3,})", re.I)
-NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|your|schedule|consult|consultation|request|checklist|estimator|calculator|types of|signs of|our |blog|news|faq|cost|price|pricing|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|office|branch|powered|serving|products|vice president|vp|agents?|assistants?|hygienists?|receptionists?|coordinators?|managers?|industry|page|companies|finance a|overview|dangers?)\b", re.I)
+NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|where|your|schedule|consult|consultation|request|checklist|estimator|calculator|types of|signs of|our |blog|news|faq|cost|price|pricing|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|office|branch|powered|serving|products|vice president|vp|agents?|assistants?|hygienists?|receptionists?|coordinators?|managers?|industry|page|companies|contractors?|finance a|overview|dangers?)\b", re.I)
 ACRONYMS = {"IRS", "CFO", "CPA", "CPAS", "HVAC", "AC", "A/C", "TPO", "LLC", "QB", "EPDM", "UV", "HOA", "1031", "S-CORP"}
 # A business's own name, or anything carrying a corporate suffix, is never
 # one of its services.
@@ -254,16 +254,23 @@ def sentences(text):
     return [s.strip() for s in re.split(r"(?<=[.!?])\s+(?=[A-Z0-9\"'])", plain(text)) if s.strip()]
 
 
+# A sentence that opens on a subordinating word and never reaches a comma is a
+# leading clause whose point was in the next one ("As patients are becoming
+# aware... health. They have their parameters...").
+FRAGMENT = re.compile(r"(?:as|because|although|though|whereas|while|unless|whether)\b[^,;:–—]*$", re.I)
+
+
 def trim(text, limit):
     """Their words, cut at a sentence boundary and never mid-sentence. A space
     their page leaves before a comma or stop is closed up, and a last sentence
-    that stops on a comma, a list their page cut off, is left out."""
+    that stops on a comma, a list their page cut off, is left out, as is one
+    that is only a leading clause the cut parted from its point."""
     out = []
     for sentence in sentences(re.sub(r"\s+([,.;:!?])", r"\1", plain(text))):
         if len(" ".join(out + [sentence])) > limit:
             break
         out.append(sentence)
-    while out and re.search(r"[,;:–—-]$", out[-1]):
+    while out and (re.search(r"[,;:–—-]$", out[-1]) or (len(out) > 1 and FRAGMENT.match(out[-1]))):
         out.pop()
     return " ".join(out)
 
@@ -340,6 +347,7 @@ def listing_rating(prospect):
 DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 DAY_CODES = {"mo": 0, "tu": 1, "we": 2, "th": 3, "fr": 4, "sa": 5, "su": 6, "monday": 0, "tuesday": 1, "wednesday": 2,
              "thursday": 3, "friday": 4, "saturday": 5, "sunday": 6}
+WHOLE_DAY = {"12 AM – 11:59 PM", "12 AM – 12 AM"}
 
 
 def _clock(text):
@@ -384,7 +392,9 @@ def hours_of(business):
             return []
         for d in range(first, last + 1):
             week[d] = f"{opens} – {closes}"
-    if not week:
+    # Midnight to midnight on every day is a site builder's default, not hours
+    # anyone keeps ("12 AM – 11:59 PM").
+    if not week or all(t in WHOLE_DAY for t in week.values()):
         return []
     # Only the days their data names: a day it leaves out is not called closed.
     rows = []
@@ -421,6 +431,13 @@ def services_of(pages, vocab, own=None, town=None, described_first=False):
         if not (3 <= len(name) <= 42) or len(name.split()) > 6 or GENERIC_NAV.match(name):
             return
         if not pattern.search(name) or re.search(r"[?!@]|\d{3}", name) or NOT_A_SERVICE.search(name) or re.match(r"(on|for|with|to|in|at|from|and|i|my|we)\b", name, re.I):
+            return
+        # A heading that opens on a bidding verb ("Find Storage", "Rent a Unit",
+        # "Select a Fence Style") is a call to action, not a service, and one
+        # that names a warranty ("Warranty on Fence Materials") is a promise.
+        if re.match(r"(find|rent|reserve|book|get|browse|shop)\b|(select|choose) (a|an|the|your)\b", name, re.I):
+            return
+        if re.search(r"\b(warrant(y|ies)|guarantees?) (on|for)\b", name, re.I):
             return
         if NOT_A_SERVICE_SHAPE.search(name) or (own and names_the_business(name, own)) or (local and local.search(name)):
             return
@@ -481,8 +498,27 @@ def about_of(pages, name, trade=None):
             # A customer's review quoted on their page ("5 Stars - ...") is not their description of themselves.
             if re.fullmatch(r"[\"\u201c].*[\"\u201d]", text, re.S) or re.search(r"\b[1-5]\s*stars?\b|\u2605", text, re.I):
                 continue
+            # Nor is one pasted without quotes, told in the first person about
+            # them ("I needed a unit... would recommend them to anyone").
+            if re.search(r"\b(?:I|my|me)\b", text) and re.search(r"\brecommend(?:ed)? (?:them|him|her|this (?:place|company|business)|these guys)\b", text, re.I):
+                continue
+            # Or one that speaks of them as "they" or of their staff helping
+            # the writer ("They fix pain fast! I had accepted...", "Dr. Barlas
+            # helped... He showed me"), with no "we" or "our" of their own.
+            if re.search(r"\b(?:I|my|me)\b", text) and not re.search(r"\b(?:we|our|us)\b", text, re.I) and (
+                re.match(r"(?:they|these guys)\b", text, re.I)
+                or re.search(r"\b(?:helped|showed|treated|fixed|taught|walked|took care of|got) me\b", text, re.I)
+            ):
+                continue
+            # Nor is their reply to one ("Hi, Tom. We must have done something
+            # right...", "Thank you so much for your kind words, Tonya!").
+            if re.match(r"(?:hi|hello|hey|dear)\b", text, re.I) or re.search(r"\b(?:thank you|thanks)\b[^.!?]{0,40}\b(?:kind words|review|rating|feedback)\b|\brat(?:e|ing) us\b", text, re.I):
+                continue
             if other_trade(text, trade):
                 continue
+            # A sentence written around a search phrase ("searching for highly
+            # rated Deer Park dentists near me") is left out of the paragraph.
+            text = " ".join(s for s in sentences(text) if not re.search(r"\bnear me\b", s, re.I))
             cut = trim(text, 600)
             if cut and cut not in chosen:
                 chosen.append(cut)
