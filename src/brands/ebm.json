@@ -1,0 +1,87 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "EBM & Company",
+  "shortName": "EBM & Company",
+  "phone": "(713) 730-9445",
+  "email": "info@ebmandcompany.com",
+  "address": "1905 Lawrence Rd Ste 400",
+  "town": "Kemah",
+  "state": "TX",
+  "zip": "77565",
+  "brand": {
+    "primary": "#bc4c09",
+    "primaryDeep": "#843507",
+    "accent": "#f89e69",
+    "ink": "#231e1e",
+    "surface": "#fef7f3",
+    "muted": "#5b6470",
+    "line": "#e0e0e0",
+    "heading": "'Roboto', system-ui, sans-serif",
+    "body": "'Fira Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&family=Fira+Sans:wght@400;600;700&display=swap",
+    "logo": "/brands/ebm/logo.webp",
+    "logoMono": "/brands/ebm/logo-mono.webp",
+    "logoWidth": 236,
+    "logoHeight": 48,
+    "logoRatio": 4.921,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.152,
+      0.207,
+      0.296,
+      0.37,
+      0.442,
+      0.515,
+      0.583,
+      0.68,
+      0.786,
+      0.897,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "EBM & Company",
+    "title": "Kitting & assembly",
+    "lead": "Houston, Texas USA-based cut & sew contract manufacturer serving medical, commercial, bags, pet, marine, construction, sports & OEM markets. Request your quote today.",
+    "titleAccent": "in Kemah"
+  },
+  "serviceArea": [
+    "Kemah",
+    "Houston"
+  ],
+  "ask": "quote",
+  "summary": "EBM & Company offers kitting & assembly, manufacturing, and prototyping & hardware development across Kemah and Houston.",
+  "groups": [
+    {
+      "slug": "kitting-assembly",
+      "title": "Kitting & Assembly",
+      "icon": "wrench",
+      "summary": "Our kitting and assembly services organize, prepare, and package components exactly to your requirements.",
+      "intro": "Our kitting and assembly services organize, prepare, and package components exactly to your requirements. We handle parts, labeling, and presentation with accuracy, streamlining the process so your products move efficiently to market."
+    },
+    {
+      "slug": "manufacturing",
+      "title": "Manufacturing",
+      "icon": "wrench",
+      "summary": "Our comprehensive manufacturing services encompass cutting, sewing, textile printing and decoration, and 3D printing with Berry-compliant sourcing and MIL-SPEC materials available, providing a one-stop solution for all your production needs.",
+      "intro": "Our comprehensive manufacturing services encompass cutting, sewing, textile printing and decoration, and 3D printing with Berry-compliant sourcing and MIL-SPEC materials available, providing a one-stop solution for all your production needs."
+    },
+    {
+      "slug": "prototyping-hardware-development",
+      "title": "Prototyping & Hardware Development",
+      "icon": "wrench",
+      "summary": "3D Printing (FDM & Resin Prototyping) – rapid prototyping of new hardware, buckles, or components.",
+      "intro": "3D Printing (FDM & Resin Prototyping) – rapid prototyping of new hardware, buckles, or components."
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "About EBM & Company",
+    "text": [
+      "Our design and development services transform your concepts into reality, offering comprehensive solutions such as pattern design, CAD modeling, and graphic design to support your product development journey.",
+      "Our comprehensive manufacturing services encompass cutting, sewing, textile printing and decoration, and 3D printing with Berry-compliant sourcing and MIL-SPEC materials available, providing a one-stop solution for all your production needs.",
+      "Our kitting and assembly services organize, prepare, and package components exactly to your requirements. We handle parts, labeling, and presentation with accuracy, streamlining the process so your products move efficiently to market."
+    ]
+  }
+}
