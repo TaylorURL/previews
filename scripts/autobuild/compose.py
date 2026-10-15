@@ -484,9 +484,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False):
         if not pattern.search(name) or re.search(r"[?!@]|\d{3}", name) or NOT_A_SERVICE.search(name) or re.match(r"(on|for|with|to|in|at|from|and|i|my|we)\b", name, re.I):
             return
         # A heading that opens on a bidding verb ("Find Storage", "Rent a Unit",
-        # "Select a Fence Style") is a call to action, not a service, and one
-        # that names a warranty ("Warranty on Fence Materials") is a promise.
-        if re.match(r"(find|rent|reserve|book|get|browse|shop)\b|(select|choose) (a|an|the|your)\b", name, re.I):
+        # "Select a Fence Style", "Keep the Wheels Turning") is a call to action
+        # or a slogan, not a service, and one that names a warranty ("Warranty
+        # on Fence Materials") is a promise.
+        if re.match(r"(find|rent|reserve|book|get|browse|shop|keep|let|stay)\b|(select|choose) (a|an|the|your)\b", name, re.I):
             return
         if re.search(r"\b(warrant(y|ies)|guarantees?) (on|for)\b", name, re.I):
             return
@@ -527,6 +528,13 @@ def services_of(pages, vocab, own=None, town=None, described_first=False):
         for href, text in page.links:
             if "service" in href.lower() or pattern.search(href):
                 add(text)
+    # One paragraph under several headings ("ICC Machining offers assembly
+    # services..." under Reverse Engineering, Fabrication and Welding) is the
+    # site's filler, and describes none of them.
+    texts = [found[k]["text"] for k in order if found[k]["text"]]
+    for k in order:
+        if texts.count(found[k]["text"]) > 1:
+            found[k]["text"] = None
     if described_first:
         order.sort(key=lambda k: found[k]["text"] is None)
     return [found[k] for k in order][:8]
