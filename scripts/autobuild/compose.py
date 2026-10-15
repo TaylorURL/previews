@@ -596,6 +596,24 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
     for k in order:
         if texts.count(found[k]["text"]) > 1:
             found[k]["text"] = None
+    # A page that sets each card's words between its heading and the next
+    # gives a heading the next card's words ("Successful termite treatments..."
+    # under Mosquito and Wasp Control). Words that name another service and
+    # not their own heading's are that service's, and go to it where its own
+    # do not name it.
+    stems = lambda t: {w[:5] for w in re.findall(r"[a-z]{4,}", t.lower())} - {"servi", "repai", "contr"}
+    named = {k: stems(found[k]["title"]) for k in order}
+    moved = {}
+    for k in order:
+        text = found[k]["text"]
+        if text and not named[k] & stems(text):
+            other = next((o for o in order if o != k and named[o] & stems(text)), None)
+            if other:
+                moved.setdefault(other, text)
+                found[k]["text"] = None
+    for k, text in moved.items():
+        if not (found[k]["text"] and named[k] & stems(found[k]["text"])):
+            found[k]["text"] = text
     if described_first:
         order.sort(key=lambda k: found[k]["text"] is None)
     return [found[k] for k in order][:8]
@@ -846,10 +864,12 @@ def hero_line(services, town, label):
     # can't be joined to another with "and"; the trade stands for the two,
     # where their services name it. A listing filed under another trade
     # ("Painting" for a builder of lighting and fences) gives way to their
-    # first service alone.
+    # first service alone. One that lists the trade itself among its
+    # services ("Pest Control" beside "Mosquito and Wasp Control") is filed
+    # under its own.
     if len(lower) == 2 and any(re.search(r"&|\b(?:and|or|for|of|with|to)\b", t, re.I) for t in lower):
         trade = label.lower().split()[0]
-        what = label.lower() if any(re.search(rf"\b{re.escape(trade)}", t, re.I) for t in lower) else lower[0]
+        what = label.lower() if any(re.search(rf"\b{re.escape(trade)}", s["title"], re.I) for s in services) else lower[0]
     elif len(lower) == 2:
         a, b = lower
         tail_a, tail_b = a.rsplit(" ", 1), b.rsplit(" ", 1)
