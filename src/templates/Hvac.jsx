@@ -1269,13 +1269,12 @@ function Home({ b, groups, tel }) {
   );
 }
 
-/** A group page's heading: a group that holds services is called its services, unless its name already says so; one that is a single service is named as it is. A business that rents space out does no services at all, so its groups are named as the things they are. */
-function groupTitle(group, town, ask) {
-  const services = list(group.services).length > 0 && !ask.rents && !/\bservices?\b/i.test(group.title);
+/** A group page's heading: the group named as it is, in the town. Adding 'services' after it read wrong for a group named for its goods ('Wood Fences services'). */
+function groupTitle(group, town) {
   // A group that already names the town ("Outdoor Lighting For Houston Homes")
   // is not given it twice.
   const named = town && townWords(town).test(group.title);
-  return `${group.title}${services ? ' services' : ''}${named ? '' : ` in ${town}`}`;
+  return `${group.title}${named ? '' : ` in ${town}`}`;
 }
 
 /** The town as whole words in any case, to find it inside a name. */
@@ -1338,7 +1337,7 @@ function GroupPage({ b, groups, group, tel }) {
         b={b}
         crumbs={[group.title]}
         icon={group.icon}
-        title={groupTitle(group, b.town, askOf(b))}
+        title={groupTitle(group, b.town)}
         text={group.intro}
         image={group.image}
         imageAlt={group.imageAlt}

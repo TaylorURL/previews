@@ -1119,6 +1119,9 @@ function TeamPage(props) {
   // One person alone spans the row, the photo or name beside the words, so a
   // single card does not sit at the left of an empty band.
   const alone = team.length === 1;
+  // The row takes as many columns as there are people, up to three, so a team of two
+  // fills its band rather than leaving a third of it blank where a card would be.
+  const cols = alone ? '' : team.length === 2 ? 'sm:grid-cols-2' : 'sm:grid-cols-2 lg:grid-cols-3';
   const row = photos
     ? 'sm:grid sm:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] sm:items-center sm:gap-x-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]'
     : 'lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] lg:gap-x-12';
@@ -1126,11 +1129,13 @@ function TeamPage(props) {
     <>
       <PageHero trail={[['/', 'Home'], [null, 'Our Team']]} eyebrow={<Eyebrow>Our team</Eyebrow>} title={`The people behind ${b.shortName}`} text={b.tagline} />
       <section className={pad}>
-        <ul className={`${wrap} grid gap-x-6 ${alone ? '' : 'sm:grid-cols-2 lg:grid-cols-3'} ${photos ? 'gap-y-12' : 'gap-y-10'}`}>
+        <ul className={`${wrap} grid gap-x-6 ${cols} ${photos ? 'gap-y-12' : 'gap-y-10'}`}>
           {team.map((p) => (
             <li key={p.name} className={`min-w-0 ${photos ? '' : 'border-t-2 border-accent pt-6'} ${alone ? row : ''}`}>
+              {/* Framed by a hairline, so a portrait whose edge is near-white (a door frame, a studio
+                  backdrop) keeps a clean edge against the white page instead of fading into it. */}
               {p.image ? (
-                <Img className="aspect-[4/5] w-full rounded-lg bg-surface object-cover object-top" src={p.image} alt={p.imageAlt || p.name} sizes={alone ? '(max-width: 640px) 100vw, 40vw' : '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'} />
+                <Img className="aspect-[4/5] w-full rounded-lg border border-line bg-surface object-cover object-top" src={p.image} alt={p.imageAlt || p.name} sizes={alone ? '(max-width: 640px) 100vw, 40vw' : team.length === 2 ? '(max-width: 640px) 100vw, 50vw' : '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'} />
               ) : (
                 photos && (
                   <span aria-hidden="true" className="grid aspect-[4/5] w-full place-items-center rounded-lg bg-surface font-heading text-6xl text-primary/70">

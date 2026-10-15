@@ -1,0 +1,449 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Green Country Pest Control",
+  "shortName": "Green Country",
+  "summary": "A local, family-run pest control company serving Alvin, Houston and the surrounding areas, with a Pest Free Guarantee behind every treatment.",
+  "phone": "(281) 888-8605",
+  "email": "info@greencountrypest.com",
+  "address": "1600 E Hwy 6 Ste 401",
+  "town": "Alvin",
+  "state": "TX",
+  "zip": "77511",
+  "rating": 4.8,
+  "reviewCount": 865,
+  "since": 2015,
+  "hours": [["Monday – Sunday", "Open 24 hours"]],
+  "brand": {
+    "primary": "#115c2d",
+    "primaryDeep": "#0b3f1e",
+    "accent": "#81bd3a",
+    "ink": "#17241c",
+    "muted": "#53655a",
+    "surface": "#f1f7f1",
+    "line": "#d9e5da",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/greencountrypestcontrol/logo.webp",
+    "logoMono": "/brands/greencountrypestcontrol/logo-mono.webp",
+    "logoWidth": 185,
+    "logoHeight": 48,
+    "logoRatio": 3.849,
+    "logoGround": "#ffffff",
+    "logoReads": [0.494, 0.388, 0.284, 0.238, 0.292, 0.344, 0.393, 0.517, 0.678, 0.844, 1.0]
+  },
+  "emergency": {
+    "title": "Open 24 hours a day, 7 days a week",
+    "text": "Our office hours are 24 hours a day, seven days a week, so give us a call whenever a pest problem starts."
+  },
+  "sameDay": "It's our policy to start treatment within five days or less, and if pests turn up between your regular visits the return visit is typically same day or the next business day.",
+  "licenses": [
+    { "label": "Texas Pest Control License", "number": "TPCL #0733301" }
+  ],
+  "financing": {
+    "text": "When you need pest control, it's not always convenient timing, which is why we have helpful payment plans that can accommodate anyone's unique situation."
+  },
+  "hero": {
+    "eyebrow": "Pest control in Alvin and the Houston area",
+    "title": "Pest Control with a",
+    "titleAccent": "Promise.",
+    "lead": "We are committed to protecting homes and families in Houston and the surrounding areas. Give us a call today and feel peace of mind with our exclusive Pest Free Guarantee.",
+    "image": "/brands/greencountrypestcontrol/hero",
+    "imageAlt": "A Green Country Pest Control technician standing beside a branded service van"
+  },
+  "groups": [
+    {
+      "slug": "residential-pest-control",
+      "title": "Residential Pest Control",
+      "icon": "home",
+      "summary": "Protection for your home from spiders, ants, wasps, earwigs, rodents and the rest of what Houston has to offer.",
+      "intro": "A pest infestation can be a major inconvenience and health hazard. We offer comprehensive residential pest control services to protect your home from a wide range of pests. With our pest guarantee, we come back for any additional treatments that are needed.",
+      "image": "/brands/greencountrypestcontrol/webs",
+      "imageAlt": "A Green Country Pest Control technician clearing spider webs and wasp nests from the eaves of a home",
+      "services": [
+        {
+          "slug": "general-pest-control",
+          "title": "General Pest Control",
+          "icon": "shield",
+          "text": "Best for control of spiders, ants, wasps, and other occasional invaders. We pride ourselves in our training and professionalism.",
+          "points": [
+            "Clean spider webs and wasp nests, which also reduces the population",
+            "Treat the foundation to create a barrier between your home and the rest of your property",
+            "Yard treatment to take bugs out at their source"
+          ]
+        },
+        {
+          "slug": "regular-inspections",
+          "title": "Regular Inspections",
+          "icon": "clipboard",
+          "text": "Our technicians conduct regular inspections to identify potential pest problems and monitor treatment effectiveness."
+        },
+        {
+          "slug": "targeted-treatments",
+          "title": "Targeted Treatments",
+          "icon": "droplets",
+          "text": "We use a variety of targeted treatments to eliminate pests, including bait stations to attract and eliminate pests, as well as applying insecticides to specific areas to kill pests on contact."
+        },
+        {
+          "slug": "integrated-pest-management",
+          "title": "Integrated Pest Management",
+          "icon": "leaf",
+          "text": "We employ an integrated pest management approach that combines multiple methods to control pests while minimizing environmental impact."
+        },
+        {
+          "slug": "mosquito-control",
+          "title": "Mosquito Control",
+          "icon": "waves",
+          "text": "When we think of dangerous creatures, we rarely remember that mosquitoes cause the most deaths of all. Protect your family and keep these nuisances away. Mosquito control is offered as a specialty service, and treatment timing matters most from spring through the first cool front of fall.",
+          "points": [
+            "Treatment of the resting areas where adults shelter in the day - dense shrubs, fence lines and shaded ground cover",
+            "An assessment of the breeding sites around the property, from gutters holding debris to low yard spots that stay wet after a storm"
+          ]
+        },
+        {
+          "slug": "ant-control",
+          "title": "Ant Control",
+          "icon": "shield",
+          "text": "Ants generate more service calls in Brazoria County than any other pest. Fire ants own the open ground here and rebuild fast after rain, so quarterly yard granulation keeps mound counts down far better than treating mounds one at a time.",
+          "points": [
+            "Perimeter spray on the exterior of the home to attack the root of the problem",
+            "Baits placed around the framework to lure ants out and keep them from heading in",
+            "Granular insecticide where it's needed to stop pests reaching the house",
+            "Carpenter ants nest in moisture-damaged wood, and odorous house, crazy, acrobat and pharaoh ants are baited rather than sprayed, since spraying scatters a colony"
+          ]
+        },
+        {
+          "slug": "spider-control",
+          "title": "Spider Control",
+          "icon": "shield",
+          "text": "Most spiders around a house are harmless, but black widows favor garage corners, meter boxes and woodpiles, and brown recluse spiders prefer quiet interior storage. Web sweeping at each visit removes egg sacs before they hatch.",
+          "points": [
+            "Exterior treatment to create a barrier and keep spiders away from the home",
+            "Granular bait or insecticide to control the insects spiders feed on"
+          ]
+        },
+        {
+          "slug": "wasp-and-stinging-insect-control",
+          "title": "Wasps and Stinging Insects",
+          "icon": "shield",
+          "text": "Paper wasps build under eaves and porch ceilings, mud daubers claim garage corners, and yellowjackets nest in ground voids and wall cavities. Nest sweeping is part of every general service visit, and an established colony inside a wall calls for direct treatment."
+        },
+        {
+          "slug": "flea-and-tick-control",
+          "title": "Fleas and Ticks",
+          "icon": "droplets",
+          "text": "Pets moving between the yard and the house carry both. Fleas complete their life cycle in carpet fibers and pet bedding, so yard treatment paired with interior service works better than either alone, and ticks concentrate along tall grass, fence lines and the shaded edges where a yard meets brush."
+        },
+        {
+          "slug": "new-construction-pest-control",
+          "title": "New Construction",
+          "icon": "home",
+          "text": "A new home is not a pest-free slate - the lot was disturbed throughout the build. Setting up protection before or shortly after move-in lets us treat the full interior floor perimeter and baseboards before the furniture arrives."
+        }
+      ]
+    },
+    {
+      "slug": "commercial-pest-control",
+      "title": "Commercial Pest Control",
+      "icon": "building",
+      "summary": "Our business is to help your business become pest free and keep it that way.",
+      "intro": "A pest infestation can damage your business's reputation and bottom line. We offer comprehensive commercial pest control services to protect your business from a wide range of pests. Don't let your profits suffer because of pest problems.",
+      "image": "/brands/greencountrypestcontrol/service-call",
+      "imageAlt": "A Green Country Pest Control technician walking a property with treatment equipment",
+      "services": [
+        {
+          "slug": "commercial-inspections",
+          "title": "Regular Inspections",
+          "icon": "clipboard",
+          "text": "Our technicians conduct regular inspections to identify potential pest problems and monitor treatment effectiveness."
+        },
+        {
+          "slug": "commercial-treatments",
+          "title": "Targeted Treatments",
+          "icon": "droplets",
+          "text": "We use a variety of targeted treatments to eliminate pests, including bait stations to attract and eliminate pests, as well as applying insecticides to specific areas to kill pests on contact."
+        },
+        {
+          "slug": "commercial-ipm",
+          "title": "Integrated Pest Management",
+          "icon": "leaf",
+          "text": "We employ an integrated pest management approach that combines multiple methods to control pests while minimizing environmental impact."
+        }
+      ]
+    },
+    {
+      "slug": "rodent-control",
+      "title": "Rodent Control",
+      "icon": "shield",
+      "summary": "The sight of a rodent can be jarring. We have the tools and training to kick them out - for good.",
+      "intro": "Rodents can quickly infest homes and businesses, causing damage to property and posing health risks. We offer effective rodent control solutions to keep your property safe and clean. Mice, rats and yard rodents are prolific here, so you can trust Green Country for all your rodent control needs.",
+      "image": "/brands/greencountrypestcontrol/yard",
+      "imageAlt": "A Green Country Pest Control technician treating the exterior of a home with a backpack mist blower",
+      "services": [
+        {
+          "slug": "rodent-inspection",
+          "title": "Rodent Inspection",
+          "icon": "clipboard",
+          "text": "We note any conducive conditions for rodents on the property and create a plan to tackle the issues."
+        },
+        {
+          "slug": "rodent-targeted-baiting",
+          "title": "Rodent Targeted Baiting",
+          "icon": "shield",
+          "text": "We use specially formulated baits that are attractive to rodents and place them in tamper-proof containers. Stations are family and pet friendly, and follow-up treatments are scheduled out where they're needed."
+        },
+        {
+          "slug": "rodent-exclusion",
+          "title": "Exclusion and Monitoring",
+          "icon": "wrench",
+          "text": "Sealing entry points matters more than trapping alone, since an unsealed structure simply refills. We inspect the structure for entry points, recommend exclusion for gaps around soffits and garage door corners, and monitor on later visits."
+        }
+      ]
+    },
+    {
+      "slug": "termite-treatment",
+      "title": "Termite Treatment",
+      "icon": "clipboard",
+      "summary": "Termites cause billions of dollars of damage every year. Protect your greatest investment with Green Country's termite services.",
+      "intro": "Termites, often referred to as silent destroyers, can cause significant damage to your home without any outwardly visible signs. In Houston, particularly, subterranean termites are the most common type, living in underground colonies and feeding on wood and cellulose materials.",
+      "services": [
+        {
+          "slug": "treatment-inspection",
+          "title": "Treatment Inspection",
+          "icon": "clipboard",
+          "text": "We live in termite country, so having regular inspections and monitoring systems are the best way to protect your investment."
+        },
+        {
+          "slug": "liquid-treatment",
+          "title": "Liquid Treatment",
+          "icon": "droplets",
+          "text": "One of the termite treatment options we offer as part of a comprehensive termite inspection and treatment plan."
+        },
+        {
+          "slug": "baiting-and-monitoring",
+          "title": "Baiting and Monitoring",
+          "icon": "gauge",
+          "text": "Even when you've eliminated the termites currently on your property, you need a monitoring system to stop them in their tracks for years to come."
+        },
+        {
+          "slug": "real-estate-termite-inspections",
+          "title": "Real Estate Termite Inspections",
+          "icon": "clipboard",
+          "text": "If you're buying or selling, a termite inspection protects the transaction. We check soil grade against slab height, moisture around the foundation, wood-to-ground contact along fences and decking, and conducive conditions such as mulch stacked against siding."
+        }
+      ]
+    },
+    {
+      "slug": "cockroach-treatment",
+      "title": "Cockroach Treatment",
+      "icon": "droplets",
+      "summary": "Cockroaches are not only creepy pests but also potential carriers of diseases.",
+      "intro": "We offer effective roach control solutions to rid your home or business of these unwanted intruders. We employ a combination of methods to effectively eliminate cockroach infestations.",
+      "services": [
+        {
+          "slug": "spray-treatments",
+          "title": "Spray Treatments",
+          "icon": "droplets",
+          "text": "We use targeted spray treatments to kill roaches on contact and to treat areas where they hide."
+        },
+        {
+          "slug": "gel-bait",
+          "title": "Gel Bait",
+          "icon": "shield",
+          "text": "We apply small amounts of gel bait to areas where cockroaches are commonly found, such as cracks and crevices. The bait is attractive to roaches and is slow-acting so they carry it back to the nest, eliminating the entire colony."
+        },
+        {
+          "slug": "full-inspection",
+          "title": "Full Inspection",
+          "icon": "clipboard",
+          "text": "A thorough inspection of the property to identify signs of roach activity before we treat.",
+          "points": [
+            "German roaches: a small light brown roach with two dark stripes behind its head that infests kitchens and reproduces rapidly indoors",
+            "American cockroaches: the largest common roach in Houston, reddish brown and often found in sewers, crawl spaces and damp areas inside homes",
+            "Smokybrown cockroaches: a dark mahogany colored flying roach common in Houston yards and attics that is strongly attracted to lights and moisture"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Fall special",
+    "title": "50% off your initial service",
+    "text": "New customers get 50% off their initial pest control service.",
+    "image": "/brands/greencountrypestcontrol/perimeter",
+    "imageAlt": "A Green Country Pest Control technician treating the perimeter of a brick home"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "A local, family-run pest control company",
+    "text": [
+      "Green Country Pest Control is committed to helping homeowners gain peace of mind by protecting them against pests, both inside and outside. We are a local business and will do whatever it takes to make you happy. With over 100 years of combined experience, our expert team will ensure that your home and family are protected.",
+      "Read Flake founded the company after a 22 year career working for big corporations such as United Airlines. Having experienced poor and inconsistent service from several area pest control companies, Read saw an opportunity to provide a high-quality, customer-focused service at a reasonable price. Read, his wife VaNae, and their kids make their home in Alvin.",
+      "We're not a big national company, and therefore we intimately understand the area, the pests, and the people. We started small and now service all of the South Houston area. Our goal is to help families live better lives. Whether it's preventative treatments on your home or business, or an infestation that you need taken care of quick, our family is here for your family."
+    ],
+    "image": "/brands/greencountrypestcontrol/team",
+    "imageAlt": "The Green Country Pest Control team outside the shop with their branded service vans",
+    "values": [
+      {
+        "title": "Local",
+        "text": "With so many big national companies, Green Country Pest Control provides a breath of fresh air - we're local."
+      },
+      {
+        "title": "Safe",
+        "text": "Providing an effective and safe service is our number one priority. No worries around pets and children."
+      },
+      {
+        "title": "Guaranteed",
+        "text": "If you need additional service in between our regular treatments, just give us a call. We'll come back for free."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How much does pest control cost?",
+      "a": "Our pricing varies depending on the type of service needed, the size of the property, and the severity of the pest problem. We offer free inspections and estimates to determine the scope of the problem and provide an accurate quote."
+    },
+    {
+      "q": "Is pest control worth it?",
+      "a": "Pest infestations can cause significant damage to properties, pose health risks to humans, and create a nuisance. Our services not only eliminate pests but also provide preventative measures to ensure long-term pest control."
+    },
+    {
+      "q": "Is DIY pest control cheaper?",
+      "a": "While it may seem cheaper to do your own pest control, it can actually be more costly in the long run. DIY methods may only provide temporary relief and may not address the root cause of the infestation."
+    },
+    {
+      "q": "How often should pest control be done?",
+      "a": "As a general rule, we recommend scheduling pest control services on a regular basis, such as quarterly services, to prevent pest problems from occurring. For properties with a history of pest problems, more frequent services may be necessary."
+    },
+    {
+      "q": "What does pest control include?",
+      "a": "A thorough inspection of the property to identify signs of pest activity, treatments to eliminate pests, preventative measures to reduce the risk of future infestations, and follow-up visits to ensure that the problem has been fully resolved."
+    }
+  ],
+  "serviceArea": [
+    "Alvin",
+    "Angleton",
+    "Baytown",
+    "Conroe",
+    "Cypress",
+    "Dickinson",
+    "Friendswood",
+    "Galveston",
+    "Houston",
+    "Humble",
+    "Iowa Colony",
+    "Katy",
+    "Lake Jackson",
+    "League City",
+    "Manvel",
+    "Missouri City",
+    "New Caney",
+    "Pasadena",
+    "Pearland",
+    "Richmond",
+    "Rosenburg",
+    "Santa Fe",
+    "Sienna",
+    "Spring",
+    "Sugar Land",
+    "Texas City",
+    "The Woodlands",
+    "Tomball",
+    "Webster"
+  ],
+  "facts": [
+    {
+      "heading": "Our Promise",
+      "text": "We offer a Pest Free Guarantee. If you ever need additional services in between your regular treatments, give us a call - we're happy to come back to your home or business and take care of it for free."
+    },
+    {
+      "heading": "How It Works",
+      "items": [
+        "Contact us online or give us a call",
+        "Describe your situation and we create a plan",
+        "Choose when you would like the service",
+        "Your technician arrives, answers any questions and begins service",
+        "Ongoing treatments, backed by the Pest Free Guarantee"
+      ]
+    },
+    {
+      "heading": "What a Service Visit Includes",
+      "items": [
+        "Exterior perimeter treatment around the full foundation",
+        "Web sweeping and wasp nest removal along eaves, porches and soffits",
+        "Foundation treatment at entry points, weep holes and utility penetrations",
+        "Yard granulation or yard spray for surface-active pests",
+        "Rodent station checks where stations are in place",
+        "Interior treatment and spot service on request"
+      ]
+    },
+    {
+      "heading": "Scheduling and Agreements",
+      "items": [
+        "Free inspections and estimates, and we can often quote a service over the phone",
+        "It's our policy to start treatment within five days or less",
+        "A detailed inspection and initial treatment, then a follow-up treatment within a month to clear anything remaining",
+        "Most homes run on a quarterly schedule, which lines up with how quickly Gulf Coast populations rebound",
+        "You don't need to be home for a visit, so there's no rearranging your schedule around treatments",
+        "Agreements generally run one year, and questions about terms are handled on the phone with our office rather than buried in fine print"
+      ]
+    },
+    {
+      "heading": "What the Guarantee Covers",
+      "text": "The Pest Free Guarantee applies to general service plan customers and covers the household pests included in your plan, not only the pest from your last treatment. Termite treatments carry their own warranty terms and mosquito service is separate; regular treatment programs carry a 30 day warranty and maintenance services a 60 day warranty."
+    },
+    {
+      "heading": "Treatments and Safety",
+      "text": "We prioritize exterior treatments that create a protective barrier around the home without damaging your garden and lawn. The products are eco-friendly and leave no foul odors or mess, and bait stations are family and pet friendly."
+    },
+    {
+      "heading": "Pests We Treat",
+      "items": [
+        "Ants, including fire ants, carpenter ants and the odorous house, crazy, acrobat and pharaoh ants",
+        "Spiders, including black widows and brown recluse",
+        "Cockroaches, termites and earwigs",
+        "Wasps, hornets, yellowjackets and mud daubers",
+        "Fleas, ticks and mosquitoes",
+        "Rodents - we handle commensal rodents such as roof rats, Norway rats and house mice, and do not provide wildlife services"
+      ]
+    },
+    {
+      "heading": "Termite Season on the Gulf Coast",
+      "text": "Subterranean termite pressure in Brazoria County runs year round, and both the eastern and Formosan subterranean termite are present. Swarm season usually begins with the first warm, humid stretch after a rain, often February through May, so discarded wings on a windowsill or mud tubes up a slab edge are worth a call."
+    },
+    {
+      "heading": "Certifications and Compliance",
+      "text": "We operate with full licensing through the State of Texas and strictly follow all local, state, and federal pest control regulations. Our technicians invest in ongoing training to stay up to date on the latest products, safety standards, and industry best practices."
+    },
+    {
+      "heading": "Our Team",
+      "items": [
+        "Read Flake - Owner and President",
+        "Colin Blanks - Operations Manager",
+        "Crystal - Office Manager"
+      ]
+    },
+    {
+      "heading": "Full Service",
+      "text": "Whether you have spiders and ants, or even termites, we have the solutions for your situation, big or small."
+    },
+    {
+      "heading": "Customer Portal",
+      "text": "Existing customers sign in at greencountry.pestportals.com to view past service reports, see when the next visit is scheduled, manage payment methods and request service, without waiting for office hours. The service history there prints as a record of every visit, the products applied and the findings noted, which helps in a real estate transaction or an insurance inquiry."
+    },
+    {
+      "heading": "Refer a Friend",
+      "text": "Customers can refer a neighbor, friend or family member through our referral page at refergreencountry.com."
+    },
+    {
+      "heading": "What Customers Say",
+      "text": "\"I appreciate Green Country Pest so much! Trenton Moody was my guy on this one and I haven't seen a single living pest in the weeks following.\" - Art T., Alvin, TX"
+    },
+    {
+      "heading": "Find Us",
+      "text": "Green Country Pest Control is on Facebook at facebook.com/greencountrypest."
+    }
+  ]
+}
