@@ -686,11 +686,24 @@ HEADING_RUN_IN = re.compile(r"^(?:Meet|Welcome to|About)\s[^.!?,:;]*?\s(?=(?:I|W
 FINISHED = re.compile(r"[.!?][\"'”)]?$")
 
 
-def lead_of(pages, about, trade=None):
+def names_a_service(text, services):
+    """True when the words name one of the services found, by the stem of any
+    word of its title ("coatings" names "Surface Preparation and Coating")."""
+    stems = {w[:5] for s in services for w in re.findall(r"[a-z]{4,}", s["title"].lower()) if w not in ("service", "services", "repair")}
+    return any(w[:5] in stems for w in re.findall(r"[a-z]{4,}", text.lower()))
+
+
+def lead_of(pages, about, trade=None, services=()):
     for page in pages[:1]:
         for key in ("og:description", "description"):
             text = trim(HEADING_RUN_IN.sub("", plain(page.meta.get(key, ""))), 220)
             if other_trade(text, trade) or not FINISHED.search(text):
+                continue
+            # A description left from the theme or another company's site
+            # ("industrial machinery, tools, and engineering services" on a
+            # scaffolding and coating contractor's) names none of their
+            # services; their own about text says what they do.
+            if services and not names_a_service(text, services):
                 continue
             # A description the site filled from its contact form ("Contact Us
             # ... parts@... Name(Required) First Last Email(Required)...") is

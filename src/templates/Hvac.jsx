@@ -1610,6 +1610,8 @@ function AboutPage({ b, groups, tel }) {
       >
         <CtaPair b={b} tel={tel} />
       </PageHero>
+      {/* A service area with nothing else to stand beside is left to the closing band's chips, not drawn as one card over a blank. */}
+      {(story.length > 0 || values.length > 0 || b.since || rating || licenses.length > 0) && (
       <section className={`${pad} bg-white`}>
         <div className={`${wrap} grid gap-12 ${story.length > 0 ? 'lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]' : ''} lg:gap-20`}>
           {/* The rest of the about text is whatever the business wrote about itself, often the owner's own story, not a process. */}
@@ -1683,6 +1685,7 @@ function AboutPage({ b, groups, tel }) {
           </aside>
         </div>
       </section>
+      )}
       <Reviews b={b} surface />
       <ClosingBand b={b} tel={tel} title={`${askOf(b).closing} ${b.shortName}`} text={askOf(b).closingText} />
     </>
