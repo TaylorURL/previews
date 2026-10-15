@@ -116,6 +116,28 @@ def _border(arr, width=2):
     ])
 
 
+# A pattern drawn in tints of its ground (contour lines across a navy square)
+# leaves most of the edge the ground's color, but its faint lines cross the
+# edge again and again, where a mark run out to the edge crosses it a few times
+# and in solid ink. Past this many faint crossings the ground is a pattern.
+PATTERN_CROSSINGS = 8
+
+
+def _faint_crossings(arr, ground):
+    """How many times a faint line, a tint of the ground that never reaches
+    solid ink, crosses the picture's outermost ring of pixels."""
+    ring = np.concatenate([arr[0], arr[1:, -1], arr[-1, -2::-1], arr[-2:0:-1, 0]])[:, :3].astype(np.float32)
+    dist = np.sqrt(((ring - ground) ** 2).sum(axis=1))
+    off = dist > 28
+    if off.all() or not off.any():
+        return 0
+    # The walk round the ring starts on the ground, so no line is split in two.
+    start = int(np.argmin(off))
+    off, dist = np.roll(off, -start), np.roll(dist, -start)
+    edges = np.flatnonzero(np.diff(np.concatenate([[False], off, [False]]).astype(np.int8)))
+    return sum(1 for a, b in zip(edges[::2], edges[1::2]) if dist[a:b].max() < 90)
+
+
 def ground_of(arr):
     """('transparent', None), ('solid', rgb) or ('busy', None) for the ground a logo was drawn on."""
     # Drawn on nothing: real transparency anywhere, even when the mark is
@@ -128,6 +150,8 @@ def ground_of(arr):
     if len(opaque) < 0.5 * len(border):
         return "busy", None
     middle = np.median(opaque, axis=0)
+    if _faint_crossings(arr, middle) > PATTERN_CROSSINGS:
+        return "busy", None
     dist = np.sqrt(((opaque - middle) ** 2).sum(axis=1))
     near = dist <= 28
     if near.mean() >= 0.8:
