@@ -1342,10 +1342,11 @@ function GroupPage({ b, groups, group, tel }) {
         image={group.image}
         imageAlt={group.imageAlt}
         panel={
-          // A group that is one service with no list of its own has nothing to set beside the form, so the form stands in the hero.
-          services.length === 0 ? (
+          // A group with no list of its own, or a list of one, has nothing to set beside the form without
+          // passing a service's own selling points off as services, so the form stands in the hero instead.
+          services.length <= 1 ? (
             <div className="grid content-start gap-5 text-ink lg:w-full lg:max-w-[420px] lg:justify-self-end">{booking}</div>
-          ) : services.length > 1 && (
+          ) : (
             <div className="hidden rounded-[24px] border border-line bg-white p-6 shadow-[0_30px_60px_-35px_rgba(11,27,43,0.55)] sm:p-8 lg:block">
               <p className="font-heading text-[13px] font-bold uppercase tracking-[0.14em] text-muted">What we cover</p>
               <ul className="mt-4 grid">
@@ -1391,7 +1392,8 @@ function GroupPage({ b, groups, group, tel }) {
 
       {services.length > 0 && (
       <section className={`${pad} bg-white`}>
-        <div className={`${wrap} grid gap-12 lg:grid-cols-[minmax(0,1fr)_380px] lg:gap-16`}>
+        {/* A list of one has its form in the hero already, so its card stands alone rather than beside the form again. */}
+        <div className={`${wrap} grid gap-12 ${services.length > 1 ? 'lg:grid-cols-[minmax(0,1fr)_380px] lg:gap-16' : ''}`}>
           {/* content-start, so a short list keeps its cards their own height rather than stretching them to the form's. */}
           <div className="grid content-start gap-5">
             {services.map((s, i) => (
@@ -1437,7 +1439,7 @@ function GroupPage({ b, groups, group, tel }) {
               </article>
             ))}
           </div>
-          <aside className={`grid content-start gap-5 lg:sticky lg:self-start ${stickTop}`}>{booking}</aside>
+          {services.length > 1 && <aside className={`grid content-start gap-5 lg:sticky lg:self-start ${stickTop}`}>{booking}</aside>}
         </div>
       </section>
       )}
@@ -1640,7 +1642,7 @@ function AboutPage({ b, groups, tel }) {
               </ol>
             )}
             {(b.since || rating) && (
-              <div className={`grid gap-4 ${b.since && rating ? 'grid-cols-2' : ''}`}>
+              <div className={`grid self-start gap-4 ${b.since && rating ? 'grid-cols-2' : ''}`}>
                 {b.since && (
                   <div className="rounded-2xl bg-surface p-5">
                     <p className="text-[14px] text-muted">Established</p>
