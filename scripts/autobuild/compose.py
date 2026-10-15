@@ -459,7 +459,7 @@ def page_text(pages):
     return "\n".join(t for p in pages for _, t, _ in p.blocks)
 
 
-def services_of(pages, vocab, own=None, town=None, described_first=False):
+def services_of(pages, vocab, own=None, town=None, described_first=False, towns=()):
     """Their own service names, with their own description where the site gives one.
 
     A menu lists a site's services before any page describes them, so the
@@ -471,6 +471,11 @@ def services_of(pages, vocab, own=None, town=None, described_first=False):
     # "Houston Bookkeeping" and "Tax Preparation (Houston)" are pages written
     # for a search engine; the service under them is listed on its own.
     local = re.compile(rf"\b{re.escape(town)}\b", re.I) if town else None
+    # A description's sentence that sets the work in another town ("...brings
+    # your dreams to life in Kingwood") was written for that town's page, and
+    # is left out. A town that opens a sentence ("Spring is...") is a word.
+    others = [t for t in towns if t != town]
+    elsewhere = re.compile(rf"(?<=\s)(?:{'|'.join(re.escape(t) for t in others)})\b") if others else None
     found = {}
     order = []
 
@@ -491,10 +496,15 @@ def services_of(pages, vocab, own=None, town=None, described_first=False):
             return
         if re.search(r"\b(warrant(y|ies)|guarantees?) (on|for)\b", name, re.I):
             return
+        # One that opens on a claim made of them ("Fits All Vehicles", "Keeps
+        # Your Home Cool") is a selling point, not a service.
+        if re.match(r"(fits|keeps|suits|offers|provides|protects|helps|makes|saves|gives|delivers|lets)\b", name, re.I):
+            return
         # A heading that opens on an article or a comparison ("A Tradition of
-        # Quality Construction", "Better Decisions Before Construction"), or
-        # that speaks of their history, is a slogan, not a service.
-        if re.match(r"(a|an|better|smarter|faster)\s", name, re.I) or re.search(r"\b(traditions?|legacy|decisions?)\b", name, re.I):
+        # Quality Construction", "The Need for Commercial Storage", "Better
+        # Decisions Before Construction"), or that speaks of their history, is
+        # a slogan, not a service.
+        if re.match(r"(a|an|the|better|smarter|faster)\s", name, re.I) or re.search(r"\b(traditions?|legacy|decisions?)\b", name, re.I):
             return
         if NOT_A_SERVICE_SHAPE.search(name) or (own and names_the_business(name, own)) or (local and local.search(name)):
             return
@@ -525,7 +535,7 @@ def services_of(pages, vocab, own=None, town=None, described_first=False):
                     if nxt_tag == "p" and CONTACT_LINE.search(nxt):
                         continue
                     if nxt_tag == "p" and 60 <= len(nxt) <= 700:
-                        desc = trim(nxt, 360)
+                        desc = trim(" ".join(s for s in sentences(nxt) if not (elsewhere and elsewhere.search(s))), 360)
                         break
                     if nxt_tag.startswith("h"):
                         break
@@ -599,7 +609,20 @@ def about_of(pages, name, trade=None):
                 continue
             # A sentence written around a search phrase ("searching for highly
             # rated Deer Park dentists near me") is left out of the paragraph.
-            text = " ".join(s for s in sentences(text) if not re.search(r"\bnear me\b", s, re.I))
+            # A sentence their page set apart in a link or in bold is lost from
+            # the paragraph's text or left bare in it ("Did you know" gone
+            # before "Express Pool Plastering expanded our business...?", "Check
+            # out our custom pool and spa builds" with no stop), and is left
+            # out, as is one that leans on the one before it ("We also
+            # build...") once it opens the paragraph.
+            kept = [
+                s for s in sentences(text)
+                if not re.search(r"\bnear me\b", s, re.I) and FINISHED.search(s)
+                and not (s.endswith("?") and re.match(rf"(?:we|our|i|{re.escape(short)})\b", s, re.I))
+            ]
+            while kept and re.match(r"\w+ also\b", kept[0], re.I):
+                kept.pop(0)
+            text = " ".join(kept)
             cut = trim(text, 600)
             if cut and cut not in chosen:
                 chosen.append(cut)

@@ -1740,8 +1740,9 @@ function ContactPage({ b, groups, tel }) {
             <ul className="grid gap-1 rounded-2xl border border-line p-3">
               {[
                 [Phone, tel, b.phone],
-                // A long address may break after the @ and before each dot of its domain, never mid-word.
-                b.email && [Mail, `mailto:${b.email}`, b.email.split(/(?=\.)|(?<=@)/).flatMap((p, i) => (i ? [<wbr key={i} />, p] : [p]))],
+                // A long address may break after the @ and before each dot of its domain but the last, never mid-word,
+                // so '.com' never drops onto a line of its own.
+                b.email && [Mail, `mailto:${b.email}`, b.email.split(/(?=\.[^.]*\.)|(?<=@)/).flatMap((p, i) => (i ? [<wbr key={i} />, p] : [p]))],
                 [MapPin, mapsHref(b), full],
               ]
                 .filter(Boolean)
