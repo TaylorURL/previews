@@ -300,7 +300,7 @@ LEADING = re.compile(r"(?:at|in|on|for|with|from|by|through|throughout|since|aft
 ANNOUNCES = re.compile(r"\b(?:two|three|four|five|six|seven|several|a few|the following)\s+(?:\w+\s+)?(?:aspects|things|reasons|ways|steps|principles|values|pillars|parts|goals|points|qualities)[.:]?$", re.I)
 
 # Misspellings their page makes of a common word, put right.
-MISSPELT = {r"\bverity of\b": "variety of", r"\bVerity of\b": "Variety of"}
+MISSPELT = {r"\bverity of\b": "variety of", r"\bVerity of\b": "Variety of", r"\blazer\b": "laser", r"\bLazer\b": "Laser"}
 
 
 SHORTENED = {"etc", "vs", "approx", "incl", "est", "ft", "sq", "no", "st", "dr", "mr", "mrs", "ms", "jr", "sr", "inc", "co", "ltd", "llc", "ave", "rd", "blvd", "hwy", "ste"}

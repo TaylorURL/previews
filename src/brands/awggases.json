@@ -1,0 +1,479 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "AWG, Gases & Welding Supplies",
+  "shortName": "AWG",
+  "summary": "Industrial, medical, specialty and beverage gases with welding and safety supplies, from the AWG store on West Main Street in Baytown.",
+  "phone": "(281) 422-9418",
+  "email": "customerservice@awggases.com",
+  "address": "1205 W Main St",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77520",
+  "rating": 4.1,
+  "reviewCount": 28,
+  "since": 1949,
+  "hours": [
+    [
+      "Mon – Fri",
+      "7:30 AM – 5 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#0d467b",
+    "primaryDeep": "#0a3560",
+    "accent": "#d93a42",
+    "ink": "#17202b",
+    "muted": "#53626f",
+    "surface": "#eff4f9",
+    "line": "#d7e0e9",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap",
+    "logo": "/brands/awggases/logo.webp",
+    "logoMono": "/brands/awggases/logo-mono.webp",
+    "logoWidth": 131,
+    "logoHeight": 58,
+    "logoRatio": 2.251,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.456,
+      0.354,
+      0.272,
+      0.293,
+      0.392,
+      0.495,
+      0.592,
+      0.691,
+      0.794,
+      0.899,
+      1.0
+    ]
+  },
+  "financing": {
+    "text": "Business accounts are opened by credit application, so gas and supplies can go on account instead of card by card."
+  },
+  "hero": {
+    "eyebrow": "Gases and welding supplies in Baytown",
+    "title": "Gas, filler metal and safety gear,",
+    "titleAccent": "on the shelf and on the truck.",
+    "lead": "Cylinder and bulk gases, welding and cutting machines, consumables, abrasives and personal protective equipment, backed by a company fleet of more than 250 route trucks and a network of 22 fill plants."
+  },
+  "groups": [
+    {
+      "slug": "cylinder-gases",
+      "title": "Cylinder Gases",
+      "icon": "gauge",
+      "summary": "Cylinder gases in every size, refilled and delivered from a network of fill plants.",
+      "intro": "AWG delivers thousands of cylinders each week through a company owned fleet of more than 250 route trucks and vehicles. An infrastructure of fill plants inside the distribution network keeps product on hand for day to day use and for spikes in demand. The full range of cylinder sizes is stocked, and staff help pick the size that fits the job.",
+      "services": [
+        {
+          "slug": "industrial-gases",
+          "title": "Industrial Gases",
+          "icon": "gauge",
+          "text": "A complete industrial gas program, from lecture-sized cylinders through to bulk tanks, mixed and packaged by AWG.",
+          "points": [
+            "Acetylene, air, argon, carbon dioxide, helium, hydrogen, nitrogen, oxygen and propane",
+            "Shielding mix 75/25 and multi-component mixtures",
+            "Several supply sources behind each gas, to reduce the risk of running short",
+            "Quality checked through AWG laboratories and production plants in Indianapolis, IN and Beaumont, TX"
+          ]
+        },
+        {
+          "slug": "cylinder-refills",
+          "title": "Cylinder Refills and Delivery",
+          "icon": "timer",
+          "text": "Fill scheduling, counter pickup and route delivery, so a cylinder comes back full before the work stops.",
+          "points": [
+            "Thousands of cylinders delivered each week on AWG's own route trucks",
+            "Fill plants placed across the distribution network hold reserve stock",
+            "Full range of cylinder sizes, with help choosing the right one"
+          ]
+        },
+        {
+          "slug": "propane",
+          "title": "Propane",
+          "icon": "flame",
+          "text": "Portable cylinder refills at the store and bulk propane delivered by AWG's own propane truck fleet.",
+          "points": [
+            "20 to 100 pound portable cylinders filled at the store",
+            "Bulk tanks of 500 gallons and larger filled by propane truck",
+            "Customer-operated pump stations on site, for refilling cylinders in house",
+            "Turnkey pump station program, installed with procedure and safety training by AWG staff"
+          ]
+        },
+        {
+          "slug": "dry-ice",
+          "title": "Dry Ice",
+          "icon": "snowflake",
+          "text": "Solid carbon dioxide in block and pellet form, which holds a load colder for longer than wet ice.",
+          "points": [
+            "Block and pellet forms, with bulk quantities on request",
+            "Used for food storage through an outage, dry ice blasting, cleaning, mosquito traps and hauling trophy game or fish",
+            "Handled with protective clothing, gloves and eyewear, and kept away from children",
+            "Availability varies by location, so check with the store"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "bulk-gases",
+      "title": "Bulk Gas Systems",
+      "icon": "building",
+      "summary": "Bulk tanks engineered, installed, monitored by telemetry and refilled before they run low.",
+      "intro": "AWG application engineers and bulk technicians design the bulk supply system, handle the installation and the permits, and leave room for the site to grow. Telemetry sensors on the tank report pressure or liquid level back to AWG, so stock is watched and reordered before it runs down. A multi-site supply chain and supplier partnerships keep product moving through regional and national shortages.",
+      "image": "/brands/awggases/bulk-gases",
+      "imageAlt": "A bulk gas tank installation at a customer site",
+      "services": [
+        {
+          "slug": "bulk-supply-systems",
+          "title": "Bulk Supply Systems",
+          "icon": "compass",
+          "text": "Engineering, installation and permitting for a bulk tank sized to the site's use, with room to expand later.",
+          "points": [
+            "Argon, carbon dioxide, helium, hydrogen, nitrogen, oxygen and propane",
+            "Designed by AWG application engineers and bulk technicians",
+            "Installation and permits handled by AWG",
+            "No cylinder handling and no cylinder rental once bulk is in"
+          ]
+        },
+        {
+          "slug": "telemetry-monitoring",
+          "title": "Telemetry and Auto-Reordering",
+          "icon": "chart",
+          "text": "Sensors on the tank report pressure or liquid level to AWG, which reorders ahead of a shortfall.",
+          "points": [
+            "Vendor-managed supply, so the tank is watched rather than counted",
+            "Usage reports by month, by day or by hour",
+            "Fewer deliveries and fewer invoices to process",
+            "AWG states cost savings of up to 25 percent"
+          ]
+        },
+        {
+          "slug": "cryogenic-delivery",
+          "title": "Cryogenic Tanker Delivery",
+          "icon": "car",
+          "text": "Cryogenic tankers carry oxygen, nitrogen, argon and carbon dioxide out to bulk tanks on site.",
+          "points": [
+            "Part of a fleet of more than 250 trucks and trailers",
+            "Palletized cylinder trucks, cryogenic tankers and tube trailers",
+            "Supply drawn from more than one source to hold availability"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "specialty-medical-gases",
+      "title": "Specialty and Medical Gases",
+      "icon": "filter",
+      "summary": "High purity gases, calibration standards, medical grades and beverage carbon dioxide.",
+      "intro": "AWG Specialty Gas is an independent producer of high purity gases and mixtures for laboratory, manufacturing, research and environmental work. Its two manufacturing sites, in Indianapolis, Indiana and Beaumont, Texas, are accredited to ISO/IEC 17025:2017 and ISO 17034:2016, and the company also runs an ISO 17025 laboratory in Lexington, KY. Medical and beverage grades are packaged in cylinders or supplied as bulk liquid.",
+      "services": [
+        {
+          "slug": "specialty-gases",
+          "title": "Specialty Gases",
+          "icon": "filter",
+          "text": "Ultra high purity and research grade pure gases, precision blends and calibration standards for laboratory and environmental work.",
+          "points": [
+            "EPA Protocol mixtures, hydrocarbon mixtures and precision blended gases",
+            "Refinery and fuel gas calibration standards, custody transfer standards and VOC mixes",
+            "Research grade, pre-purified, zero grade, extra dry, hydrocarbon free and instrument gases",
+            "Laser and rare gas laser mixtures, and mixtures down to parts per billion"
+          ]
+        },
+        {
+          "slug": "medical-gases",
+          "title": "Medical Gases",
+          "icon": "shield",
+          "text": "Certified high purity medical gases for clinical laboratories, hospitals, EMS and homecare providers, produced under FDA and GMP regulation.",
+          "points": [
+            "Oxygen, nitrous oxide and nitrogen, plus clinical blood gas and medical laser mixtures",
+            "U.S.P. grade liquid oxygen and gaseous oxygen for homecare",
+            "Quality documentation and traceability on every package",
+            "Bulk liquid oxygen storage designed, installed and maintained to NFPA standards and municipal codes"
+          ]
+        },
+        {
+          "slug": "beverage-gases",
+          "title": "Beverage Gases",
+          "icon": "droplets",
+          "text": "Beverage grade carbon dioxide and nitrogen blends for breweries, restaurants and taverns, with bulk systems to replace cylinder changes.",
+          "points": [
+            "99 percent pure beverage grade carbon dioxide, clean and tasteless",
+            "Carbon dioxide and nitrogen mixtures for pouring dark beers",
+            "MVE Carbo-Mizer bulk carbon dioxide systems, Carbo-Series vessels and the Sure-Fill tank filling option",
+            "Bulk carbon dioxide and bulk syrup systems, beer pumps, dispensers, blenders and leak detection",
+            "Liquid nitrogen and liquid carbon dioxide for freezing, and modified atmosphere packaging blends"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "welding-cutting-equipment",
+      "title": "Welding and Cutting Equipment",
+      "icon": "zap",
+      "summary": "Welding machines, plasma and oxy/fuel cutting outfits, and the apparatus that feeds them gas.",
+      "intro": "AWG carries welding and cutting machines and accessories from the major manufacturers, for the hobbyist bench and for industrial production alike. Oxy/fuel outfits need no electricity, travel easily and change over to welding or brazing tips; plasma cutters drive an arc through a jet of ionised gas to cut conductive metal quickly and cleanly. Gas apparatus is put together as a custom system, from one cylinder feeding one welder up to bulk storage serving several points.",
+      "image": "/brands/awggases/cutting",
+      "imageAlt": "An operator cutting steel plate with a torch",
+      "services": [
+        {
+          "slug": "welding-machines",
+          "title": "Welding Machines",
+          "icon": "zap",
+          "text": "MIG, TIG, stick and flux-cored machines, with the wire feeders and shielding gas to run them.",
+          "points": [
+            "MIG, TIG and stick welders, multi-process and multi-operator machines",
+            "Engine drives, spot welders, submerged arc welders and wire feeders",
+            "Shielding gas to match the process: argon, carbon dioxide, 75/25 mix, helium and argon/helium blends",
+            "Brands including Lincoln Electric, Miller Electric and Hobart"
+          ]
+        },
+        {
+          "slug": "cutting-equipment",
+          "title": "Cutting Equipment",
+          "icon": "flame",
+          "text": "Plasma cutters and oxy/fuel torch outfits for cutting plate, pipe and structural steel.",
+          "points": [
+            "Plasma cutters for electrically conductive metal, cut fast and to a fine line",
+            "Oxy/fuel torches that need no power supply and change over to welding or brazing tips",
+            "Fuel gases including acetylene, propane and HGX alternate fuel",
+            "Brands including Hypertherm, ESAB Thermal Dynamics, Victor, Harris and Smith Equipment"
+          ]
+        },
+        {
+          "slug": "gas-apparatus",
+          "title": "Gas Apparatus",
+          "icon": "settings",
+          "text": "The equipment that stores, carries, regulates and uses compressed and liquefied gas, specified as one system.",
+          "points": [
+            "Storage tanks, cylinders, regulators, flowmeters, hoses, pipes and manifolds",
+            "Cutting and welding torches and the tips that go with them",
+            "Built from a single cylinder feeding a welder up to bulk storage serving several end points",
+            "Specified for efficient gas use, balanced cost and the least residual loss"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "consumables-safety",
+      "title": "Consumables, Abrasives and Safety",
+      "icon": "shield",
+      "summary": "Filler metals, torch and gun consumables, abrasives and head-to-toe protective equipment.",
+      "intro": "The consumable side of the counter is where a job is kept moving. AWG stocks filler metals for every welding process in sizes from a one pound sample pack up to a pallet load, OEM and third party consumables for oxy/fuel, welding and plasma, abrasives from the known manufacturers, and personal protective equipment from head to toe. Staff help pick the product that suits the work and the budget.",
+      "image": "/brands/awggases/filler-metals",
+      "imageAlt": "Spools and coils of welding filler metal on the shelf",
+      "services": [
+        {
+          "slug": "filler-metals",
+          "title": "Filler Metals",
+          "icon": "cable",
+          "text": "Stick electrodes, MIG wire, TIG rods, hardfacing and specialty wire, in top-tier and economy lines.",
+          "points": [
+            "Stick electrodes, hardfacing electrodes, MIG wire, specialty wire and TIG rods",
+            "Top-tier brands for critical and specialty welding, economy brands where cost leads",
+            "One pound sample packs, spools from 1 lb to 60 lb coils, wire drums and pallet loads",
+            "Brands including Lincoln Electric, Hobart, ESAB, Inweld, Weldcote and Washington Alloy"
+          ]
+        },
+        {
+          "slug": "consumables",
+          "title": "Welding and Cutting Consumables",
+          "icon": "wrench",
+          "text": "OEM and third party consumables for oxy/fuel, welding and plasma, to meet the specification and the budget.",
+          "points": [
+            "Oxy/fuel: cutting tips, welding and brazing tips, O-rings, check valves and flashback arrestors",
+            "Welding: contact tips, liners, nozzles, tungsten, cups, collets and drive rolls",
+            "Plasma: electrodes, nozzles, swirl rings and gas shields"
+          ]
+        },
+        {
+          "slug": "abrasives",
+          "title": "Abrasives",
+          "icon": "ruler",
+          "text": "Coated, bonded and surface conditioning abrasives, with staff help choosing the one that cuts cleanest.",
+          "points": [
+            "Coated: flap discs, resin fiber and sanding discs, flap wheels, shop rolls, belts and backup pads",
+            "Surface conditioning: unitized and convolute wheels, strip wheels, hand pads and quick change discs",
+            "Bonded: grinding wheels, cut-off wheels, resin cones, plugs and cup wheels",
+            "Diamond wheels, vitrified grinding wheels, carbide burs and wire brushes",
+            "Brands including Pearl Abrasives, Norton, Flexovit, United Abrasives and Camel Grinding Wheels"
+          ]
+        },
+        {
+          "slug": "safety-ppe",
+          "title": "Safety and PPE",
+          "icon": "shield",
+          "text": "Personal protective equipment from head to toe, from manufacturers AWG partners with for the purpose.",
+          "points": [
+            "Welding helmets, safety goggles and glasses",
+            "Welding jackets, gloves, aprons, bibs and spats",
+            "Hearing protection, respiratory protection, hard hats and safety vests",
+            "Brands including Black Stallion, John Tillman and Protective Industrial Products"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About AWG",
+    "title": "A gas and welding supply house with roots in 1949",
+    "text": [
+      "American Welding & Gas is a family and teammate owned company headquartered in Raleigh, North Carolina. It traces its history to Valley Welders Supply in Billings, Montana and the Scott-Gross Company in Lexington, Kentucky, both founded in 1949, and has grown since then both organically and by acquisition.",
+      "Today AWG runs more than 100 retail locations and 22 gas fill plants across 22 states, from Montana to Pennsylvania and south through Texas and Florida, with more than 800 employees serving customers in over 30 states and Canada. A fleet of more than 250 trucks and trailers carries the product: palletized cylinder delivery trucks, cryogenic tankers and tube trailers.",
+      "The line runs from bulk cryogenic gases to packaged cylinders, taking in industrial, medical, specialty and beverage gases alongside welding and safety supplies. The Baytown store on West Main Street is one of those locations."
+    ],
+    "image": "/brands/awggases/automation",
+    "imageAlt": "A robotic welding cell of the kind AWG builds for automation customers",
+    "values": [
+      {
+        "title": "Supply that holds",
+        "text": "Several sources sit behind each gas and fill plants are spread through the distribution network, so a regional shortage does not stop a customer."
+      },
+      {
+        "title": "Accredited product",
+        "text": "AWG Specialty Gas manufactures to ISO/IEC 17025:2017 and ISO 17034:2016 accreditation at Indianapolis, Indiana and Beaumont, Texas."
+      },
+      {
+        "title": "Advice at the counter",
+        "text": "Staff help pick the cylinder size, the filler metal and the abrasive that suit the job and the budget."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "The AWG Network",
+      "items": [
+        "Over 100 retail locations and 22 gas fill plants across 22 states",
+        "More than 800 employees, serving customers in over 30 states and Canada",
+        "Fleet of more than 250 trucks and trailers: palletized cylinder trucks, cryogenic tankers and tube trailers",
+        "Family and teammate owned, headquartered in Raleigh, North Carolina",
+        "Roots in Valley Welders Supply of Billings, MT and the Scott-Gross Company of Lexington, KY, both founded in 1949"
+      ]
+    },
+    {
+      "heading": "Accreditations",
+      "items": [
+        "AWG Specialty Gas manufacturing sites in Indianapolis, IN and Beaumont, TX accredited to ISO/IEC 17025:2017 and ISO 17034:2016",
+        "ISO 17025 laboratory in Lexington, KY",
+        "Medical gases produced under FDA and GMP regulation, to FDA Board of Pharmacy requirements",
+        "Bulk liquid oxygen storage designed to NFPA standards and municipal codes",
+        "Gas production and laboratories at Indianapolis, IN and Beaumont, TX run to C.G.M.P. and industry standards",
+        "EPA Protocol gas mixtures made to EPA specification and analysed against NIST-traceable standards",
+        "Analytical accuracy of plus or minus 2 percent, the EPA minimum, and plus or minus 1 percent for Relative Accuracy Test Audits",
+        "Continuous emission monitor standards meeting the calibration and audit requirements of 40CFR60 and 40CFR75"
+      ]
+    },
+    {
+      "heading": "Companies Under AWG",
+      "items": [
+        "AWG Specialty Gas, an independent producer of high purity gases and mixtures",
+        "Silvertip Propane, 12 locations in Montana and Wyoming, with residential and commercial propane delivery, tank installation, leasing and sales",
+        "Thoroughbred Industrial Cylinder Exchange, a cylinder exchange program at over 800 locations across the United States"
+      ]
+    },
+    {
+      "heading": "Brands Carried",
+      "items": [
+        "Welding and cutting: Lincoln Electric, Miller Electric, Hobart, ESAB, Hypertherm, Victor, Thermal Dynamics, Harris Equipment, Smith Equipment",
+        "Filler metals: Lincoln Electric, Hobart, ESAB, Inweld, Weldcote, Washington Alloy",
+        "Abrasives: Pearl Abrasives, Norton, Flexovit, United Abrasives, Camel Grinding Wheels, CGW",
+        "Safety and accessories: Black Stallion, John Tillman, Protective Industrial Products, CK Worldwide"
+      ]
+    },
+    {
+      "heading": "Industries Served",
+      "items": [
+        "Industrial",
+        "Medical",
+        "Research",
+        "Mining",
+        "Natural gas",
+        "Power generation",
+        "Biofuel"
+      ]
+    },
+    {
+      "heading": "What Each Industry Gets",
+      "items": [
+        "Industrial: gases mixed, packaged and delivered for factories, farms, laboratories and job shops, with multi-year supply agreements behind each gas",
+        "Medical: oxygen, medical air, nitrogen, helium, nitrous oxide, carbon dioxide and heliox for healthcare, homecare providers, university research and pharmaceutical companies",
+        "Research: PurityPlus specialty gases, custom calibration mixtures and lab gas delivery systems for analytical laboratories and product development teams",
+        "Mining: certified standard gases for calibrating the monitors that detect toxic gas, combustible gas and oxygen deficiency or enrichment",
+        "Natural gas: multi-component hydrocarbon mixtures, with five, ten or twenty components routine, and liquid hydrocarbon standards",
+        "Power generation: EPA Protocol environmental compliance standards for continuous emission monitors",
+        "Biofuel: air, argon, helium, hydrogen and oxygen, plus EPA Protocol and certified standard CEMS gases"
+      ]
+    },
+    {
+      "heading": "Service and Support",
+      "items": [
+        "24-hour emergency repair and technical service on gas equipment",
+        "Installation and maintenance of gas delivery and bulk systems",
+        "Gas and cylinder safety training",
+        "A sales representative helps choose the product, the cylinder size, the delivery method and the delivery time",
+        "Cryogenic bulk trailers run weekly year-round, with AWG managing the pickup, delivery and fill schedule",
+        "A delivery program built with the end user in place of common carrier cylinder shipping and removal, which shortens lead times",
+        "Lab gas delivery systems designed from a simple cylinder manifold up to a complex bulk system"
+      ]
+    },
+    {
+      "heading": "Cylinders and Packaging",
+      "items": [
+        "Returnable high-pressure cylinders in a range of sizes, and small transportable nonreturnable cylinders for many specialty gases",
+        "Aluminium cylinders where the longest shelf life matters",
+        "Pure and mixed gases to grade 5.5 purity, 99.9995 percent",
+        "Liquid hydrocarbon standards in refillable low-pressure cylinders with dual valves and full-length eductor tubes, holding supply pressure constant to limit fractionation",
+        "Those standards supply up to 3,600 PSI working pressure using nitrogen on the gas side"
+      ]
+    },
+    {
+      "heading": "Gas Handling and Medical Equipment",
+      "items": [
+        "OPA Series oxygen regulators in CGA-870 and CGA-540, with click-style control",
+        "M1 Series medical regulators, single and two stage, assembled and tested in full, with manifold control units reading cylinder bank and line pressure",
+        "OxyTOTE all-in-one oxygen regulator and cylinder system, 0 to 25 LPM, with or without a 50 PSI DISS outlet",
+        "Flowmeters for oxygen, air, heliox and carbon dioxide, and suction regulators in continuous and intermittent designs",
+        "High purity single and dual stage regulators, high accuracy mass flowmeters, gas purifiers and filters",
+        "Complete high purity gas handling and alarm systems, manifolds included"
+      ]
+    },
+    {
+      "heading": "Terms of Sale",
+      "items": [
+        "Invoices are payable net 30 days unless otherwise agreed in writing",
+        "A late balance carries interest of 1.5 percent per month, 18 percent per annum",
+        "A return needs AWG's written permission, and a handling charge may be made on it",
+        "Specially ordered or manufactured products cannot be returned",
+        "Cylinders are leased, rented or loaned rather than sold, at AWG's standard published rate per cylinder",
+        "Responsibility for cylinder damage or loss sits with the customer from receipt until return"
+      ]
+    },
+    {
+      "heading": "Ordering and Accounts",
+      "items": [
+        "Order online at shop.awggases.com, with account login and order history",
+        "Business accounts opened by credit application",
+        "An account is requested at shop.awggases.com/request-account, and sign-in runs through two step login and account selection",
+        "The credit application is downloaded as a PDF from awggases.com/credit-application",
+        "A collection branch is chosen for counter pickup",
+        "An item priced on request shows Call for Price and a Quote Me button",
+        "Live chat on the AWG site beside the phone and the email",
+        "A user guide for the ordering platform is published as a PDF",
+        "Toll-free customer service on 1-800-967-6874, beside the Baytown store line",
+        "Safety Data Sheets for every product, through the AWG online SDS binder",
+        "Informational brochures and videos published for customers",
+        "Store locator covering 93 American Welding & Gas branches, 13 Silvertip Propane locations and 1,189 Thoroughbred cylinder exchange points"
+      ]
+    },
+    {
+      "heading": "Automation and Consulting",
+      "text": "AWG designs and builds custom welding and cutting robotic and hard automation systems, and consults on the gas package and delivery method that suit a plant's production."
+    }
+  ]
+}
