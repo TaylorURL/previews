@@ -61,6 +61,21 @@ def distance(a, b):
     return sum(x != y for x, y in zip(a, b))
 
 
+def palette(image):
+    """The share of a photo in each of 512 coarse colors."""
+    small = image.convert("RGB").resize((64, 48))
+    counts = [0] * 512
+    for r, g, b in small.getdata():
+        counts[(r >> 5) * 64 + (g >> 5) * 8 + (b >> 5)] += 1
+    return [c / (64 * 48) for c in counts]
+
+
+def same_scene(a, b, share=0.6):
+    """True when two photos are mostly the same colors: two shots of one pool
+    or one room from another angle, which the fingerprints call two pictures."""
+    return sum(min(x, y) for x, y in zip(palette(a), palette(b))) >= share
+
+
 def blank(image):
     stat = ImageStat.Stat(image.convert("L"))
     return stat.stddev[0] < 8

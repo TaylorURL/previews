@@ -639,7 +639,7 @@ function BookingCard({ b, groups, heading = 'h2', title, service }) {
         <div className="min-w-0">
           <H className="font-heading text-[22px] font-extrabold leading-tight tracking-[-0.02em] text-ink">{title || w.card}</H>
           <p className="mt-1.5 text-[16px] md:text-[15px] leading-[1.5] text-muted">
-            {service ? w.itemText || `Tell us about your ${service.toLowerCase()} job.` : w.cardText}
+            {service ? w.itemText || `Tell us about your ${lowerName(service, b.town, groups.find((g) => g.title === service)?.intro)} job.` : w.cardText}
           </p>
         </div>
         <span className={`${iconTile} h-11 w-11`}>
@@ -1271,7 +1271,7 @@ function Home({ b, groups, tel }) {
 
 /** A group page's heading: a group that holds services is called its services, unless its name already says so; one that is a single service is named as it is. A business that rents space out does no services at all, so its groups are named as the things they are. */
 function groupTitle(group, town, ask) {
-  const services = list(group.services).length > 0 && !ask.rents && !/\bservices?$/i.test(group.title);
+  const services = list(group.services).length > 0 && !ask.rents && !/\bservices?\b/i.test(group.title);
   // A group that already names the town ("Outdoor Lighting For Houston Homes")
   // is not given it twice.
   const named = town && townWords(town).test(group.title);
@@ -1283,9 +1283,24 @@ function townWords(town) {
   return new RegExp(`\\b${town.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'gi');
 }
 
-/** A name lowered to run inside a sentence, the town in it keeping its capitals. */
-function lowerName(title, town) {
-  const lower = title.toLowerCase();
+/** The words a text capitalises inside its sentences: names such as a maker's ('your Polaris pool cleaner'). */
+function namedWords(text) {
+  const named = new Set();
+  for (const sentence of String(text || '').split(/[.!?]\s+/)) {
+    for (const word of sentence.split(/\s+/).slice(1)) {
+      if (/^[A-Z]/.test(word.replace(/^\W+/, ''))) named.add(word.replace(/^\W+|\W+$/g, '').toLowerCase());
+    }
+  }
+  return named;
+}
+
+/** A name lowered to run inside a sentence, the town in it and any word its own text writes as a name keeping their capitals. */
+function lowerName(title, town, text) {
+  const named = namedWords(text);
+  const lower = title
+    .split(/(\s+)/)
+    .map((word) => (named.has(word.replace(/^\W+|\W+$/g, '').toLowerCase()) ? word : word.toLowerCase()))
+    .join('');
   return town ? lower.replace(townWords(town), town) : lower;
 }
 
@@ -1457,7 +1472,7 @@ function GroupPage({ b, groups, group, tel }) {
       <ClosingBand
         b={b}
         tel={tel}
-        title={`Need ${lowerName(group.title, b.town)}${askOf(b).rents || /\bservices?$/i.test(group.title) ? '' : ' service'}?`}
+        title={`Need ${lowerName(group.title, b.town, group.intro)}${askOf(b).rents || /\bservices?\b/i.test(group.title) ? '' : ' service'}?`}
         text="Send a request or call, and we will set up a time that works for you."
       />
     </>
