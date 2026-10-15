@@ -294,6 +294,13 @@ FRAGMENT = re.compile(r"(?:as|because|although|though|whereas|while|unless|wheth
 # A clause that opens on one of these leads into a sentence rather than being one.
 LEADING = re.compile(r"(?:at|in|on|for|with|from|by|through|throughout|since|after|before|during|when|whenever|if|once|as|because|although|though|whereas|while|unless|whether|to|whatever)\b", re.I)
 
+# A sentence that announces a list ("We centered our company around three
+# major aspects.") has its point in the sentences after it.
+ANNOUNCES = re.compile(r"\b(?:two|three|four|five|six|seven|several|a few|the following)\s+(?:\w+\s+)?(?:aspects|things|reasons|ways|steps|principles|values|pillars|parts|goals|points|qualities)[.:]?$", re.I)
+
+# Misspellings their page makes of a common word, put right.
+MISSPELT = {r"\bverity of\b": "variety of", r"\bVerity of\b": "Variety of"}
+
 
 SHORTENED = {"etc", "vs", "approx", "incl", "est", "ft", "sq", "no", "st", "dr", "mr", "mrs", "ms", "jr", "sr", "inc", "co", "ltd", "llc", "ave", "rd", "blvd", "hwy", "ste"}
 
@@ -303,8 +310,8 @@ def trim(text, limit):
     their page leaves before a comma or stop is closed up, one it leaves out
     after them ("pool service.Innovative Pools", "service,maintenance") is put
     in, and a last sentence that stops on a comma, a list their page cut off,
-    is left out, as is one that is only a leading clause the cut parted from
-    its point."""
+    is left out, as is one that is only a leading clause or the announcement
+    of a list the cut parted from its point."""
     text = re.sub(r"\s+([,.;:!?])", r"\1", plain(text))
     # A web address ("pools.com") and a figure ("1,200") keep theirs: a stop
     # opens up only before a capital, and either only after a word.
@@ -313,12 +320,14 @@ def trim(text, limit):
     # Rainforest Dental") takes its capital, unless the stop ends a shortening.
     text = re.sub(r"\b([A-Za-z]{2,})([.!?] )([a-z])",
                   lambda m: m.group(0) if m.group(1).lower() in SHORTENED else m.group(1) + m.group(2) + m.group(3).upper(), text)
+    for wrong, right in MISSPELT.items():
+        text = re.sub(wrong, right, text)
     out = []
     for sentence in sentences(text):
         if len(" ".join(out + [sentence])) > limit:
             break
         out.append(sentence)
-    while out and (re.search(r"[,;:–—-]$", out[-1]) or (len(out) > 1 and FRAGMENT.match(out[-1]))):
+    while out and (re.search(r"[,;:–—-]$", out[-1]) or (len(out) > 1 and (FRAGMENT.match(out[-1]) or ANNOUNCES.search(out[-1])))):
         out.pop()
     return " ".join(out)
 
@@ -487,6 +496,9 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
     # link below for details"), which the preview does not have, and one left
     # without its full stop where that link was cut away.
     pointer = re.compile(r"\bclick\b|\b(?:link|button|form)s? (?:below|above)\b", re.I)
+    # A sentence under a label ("Color: They are brown with black...") is a
+    # line of a fact sheet about the subject, not a description of the work.
+    label = re.compile(r"^[A-Z][a-z]+(?: [a-z]+)?:\s")
     found = {}
     order = []
 
@@ -549,7 +561,7 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
                     if nxt_tag == "p" and 60 <= len(nxt) <= 700:
                         desc = trim(" ".join(
                             s for s in sentences(nxt)
-                            if not (elsewhere and elsewhere.search(s)) and not pointer.search(s) and FINISHED.search(s)
+                            if not (elsewhere and elsewhere.search(s)) and not pointer.search(s) and not label.match(s) and FINISHED.search(s)
                         ), 360)
                         break
                     if nxt_tag.startswith("h"):
