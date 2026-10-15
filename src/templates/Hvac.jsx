@@ -1024,33 +1024,28 @@ function Home({ b, groups, tel }) {
   const aboutFacts = !b.about?.image && (b.since || rating);
   return (
     <>
-      <section className="relative isolate overflow-hidden bg-primary-deep text-white">
-        {b.hero.image ? (
-          <>
-            {/* On a phone the photo is shown whole above the words; from lg up it is the ground behind them,
-                held by its top edge so a wide hero trims the floor rather than a person's head. The shade stays
-                all but solid as far as the words reach, so lettering or a figure in the photo never shows through them. */}
+      <section className="relative isolate flex flex-col overflow-hidden bg-primary-deep text-white">
+        {/* The brand's own color, with the grid it draws elsewhere, behind the words and the booking card. */}
+        <div
+          className={`absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_90%_0%,color-mix(in_srgb,var(--primary)_70%,transparent),transparent_60%)] ${b.hero.image ? 'hidden lg:block' : ''}`}
+          aria-hidden="true"
+        />
+        {b.hero.image && (
+          // On a phone the photo is shown whole above the words; from lg up it is framed whole below them. Laid
+          // behind the words and the card, its subject (mostly in the middle) was shaded out or hidden by the card.
+          <div className="lg:order-last lg:mx-auto lg:w-full lg:max-w-page lg:px-gutter lg:pb-24">
             <Img
-              className="relative block aspect-[16/10] w-full object-cover lg:absolute lg:object-top lg:inset-0 lg:-z-20 lg:aspect-auto lg:h-full"
+              className="block aspect-[16/10] w-full object-cover lg:aspect-[2/1] lg:rounded-[24px] lg:object-top lg:shadow-[0_30px_60px_-35px_rgba(0,0,0,0.6)]"
               src={b.hero.image}
               alt={b.hero.imageAlt || ''}
-              sizes="100vw"
+              sizes="(min-width: 1024px) 1320px, 100vw"
               eager
-              data-backdrop=""
             />
-            <div
-              className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_94%,#000)_0%,color-mix(in_srgb,var(--primaryDeep)_92%,transparent)_55%,color-mix(in_srgb,var(--primaryDeep)_30%,transparent)_100%)]"
-              aria-hidden="true"
-            />
-          </>
-        ) : (
-          // No photo strong enough to lead: the brand's own color, with the grid it draws elsewhere.
-          <div
-            className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_90%_0%,color-mix(in_srgb,var(--primary)_70%,transparent),transparent_60%)]"
-            aria-hidden="true"
-          />
+          </div>
         )}
-        <div className={`${wrap} grid gap-10 py-10 sm:py-16 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:items-center lg:gap-16 lg:py-24 xl:gap-24`}>
+        <div
+          className={`${wrap} grid gap-10 py-10 sm:py-16 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:items-center lg:gap-16 lg:py-24 xl:gap-24 ${b.hero.image ? 'lg:pb-16' : ''}`}
+        >
           <div className="min-w-0">
             <Eyebrow light>{b.hero.eyebrow}</Eyebrow>
             <h1 className="font-heading font-display text-[clamp(2.4rem,1.2rem+4vw,4.3rem)] leading-[1.03] text-white [text-wrap:balance] break-words">
