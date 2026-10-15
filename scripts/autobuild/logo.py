@@ -66,13 +66,28 @@ STRIP_MOST = 74
 RULE_SHARE = 0.05
 
 
+def _runs(ink):
+    """The heights of the runs of inked rows, rules left out."""
+    rows = ink.any(axis=1)
+    edges = np.flatnonzero(np.diff(np.concatenate([[False], rows, [False]]).astype(np.int8)))
+    return [end - start for start, end in zip(edges[::2], edges[1::2]) if end - start >= RULE_SHARE * len(rows)]
+
+
 def strip_share(arr):
     """The share of the mark's height its thinnest strip of words takes, where
-    clear rows part the mark into strips; 1 for a mark in one piece."""
-    rows = (arr[..., 3] > 32).any(axis=1)
-    edges = np.flatnonzero(np.diff(np.concatenate([[False], rows, [False]]).astype(np.int8)))
-    runs = [end - start for start, end in zip(edges[::2], edges[1::2]) if end - start >= RULE_SHARE * len(rows)]
-    return min(runs) / len(rows) if len(runs) > 1 else 1.0
+    clear rows part the mark into strips; 1 for a mark in one piece. Lines of
+    words stacked beside a symbol (a tagline under the name, next to a badge)
+    are parted only on their own side, so each half of the mark is read too,
+    where it stacks three strips or more (not one word and the dot of an i)."""
+    ink = arr[..., 3] > 32
+    half = ink.shape[1] // 2
+    runs = _runs(ink)
+    shares = [min(runs) / len(ink)] if len(runs) > 1 else []
+    for side in (ink[:, :half], ink[:, half:]):
+        runs = _runs(side)
+        if len(runs) > 2:
+            shares.append(min(runs) / len(ink))
+    return min(shares, default=1.0)
 
 
 def drawn_size(ratio, strip=1.0, most=None):
