@@ -639,7 +639,7 @@ function BookingCard({ b, groups, heading = 'h2', title, service }) {
         <div className="min-w-0">
           <H className="font-heading text-[22px] font-extrabold leading-tight tracking-[-0.02em] text-ink">{title || w.card}</H>
           <p className="mt-1.5 text-[16px] md:text-[15px] leading-[1.5] text-muted">
-            {service ? w.itemText || `Tell us about your ${lowerName(service, b.town, groups.find((g) => g.title === service)?.intro)} job.` : w.cardText}
+            {service ? w.itemText || `Tell us about your ${lowerName(service, townsOf(b), groups.find((g) => g.title === service)?.intro)} job.` : w.cardText}
           </p>
         </div>
         <span className={`${iconTile} h-11 w-11`}>
@@ -1296,19 +1296,24 @@ function namedWords(text) {
   return named;
 }
 
-/** A name lowered to run inside a sentence, the town in it and any word its own text writes as a name keeping their capitals. */
-function lowerName(title, town, text) {
+/** A name lowered to run inside a sentence, the towns in it and any word its own text writes as a name keeping their capitals. */
+function lowerName(title, towns, text) {
   const named = namedWords(text);
   const lower = title
     .split(/(\s+)/)
     .map((word) => (named.has(word.replace(/^\W+|\W+$/g, '').toLowerCase()) ? word : word.toLowerCase()))
     .join('');
-  return town ? lower.replace(townWords(town), town) : lower;
+  return [towns].flat().filter(Boolean).reduce((name, town) => name.replace(townWords(town), town), lower);
+}
+
+/** The business's town and the towns it serves, which keep their capitals inside a sentence ('Houston weather'). */
+function townsOf(b) {
+  return [b.town, ...(b.serviceArea || [])];
 }
 
 /** What the closing band asks if they need: the goods of a sale ('Marine Equipment Sales' is 'marine equipment'), else the work as a service. */
 function needOf(b, group) {
-  const name = lowerName(group.title, b.town, group.intro);
+  const name = lowerName(group.title, townsOf(b), group.intro);
   const goods = name.replace(/\s+(?:sales|supply|supplies)$/i, '');
   if (goods !== name) return goods;
   return `${name}${askOf(b).rents || /\bservices?\b/i.test(group.title) ? '' : ' service'}`;
