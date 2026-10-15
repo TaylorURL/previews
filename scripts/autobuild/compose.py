@@ -503,8 +503,9 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # A heading that opens on an article or a comparison ("A Tradition of
         # Quality Construction", "The Need for Commercial Storage", "Better
         # Decisions Before Construction"), or that speaks of their history, is
-        # a slogan, not a service.
-        if re.match(r"(a|an|the|better|smarter|faster)\s", name, re.I) or re.search(r"\b(traditions?|legacy|decisions?)\b", name, re.I):
+        # a slogan, not a service. So is one that sells the fit of their work
+        # ("Premium Pool Services Tailored for Austin").
+        if re.match(r"(a|an|the|better|smarter|faster)\s", name, re.I) or re.search(r"\b(traditions?|legacy|decisions?|tailored)\b", name, re.I):
             return
         if NOT_A_SERVICE_SHAPE.search(name) or (own and names_the_business(name, own)) or (local and local.search(name)):
             return
@@ -628,6 +629,11 @@ def about_of(pages, name, trade=None):
             ]
             while kept and re.match(r"\w+ also\b", kept[0], re.I):
                 kept.pop(0)
+            # A lone sentence that opens a story it never tells ("...was born
+            # from a simple frustration and an entrepreneurial spark that
+            # changed everything") is a teaser for a page we don't have.
+            if len(kept) == 1 and re.search(r"\b(?:was born (?:from|out of)|it all (?:started|began)|changed everything)\b", kept[0], re.I):
+                continue
             text = " ".join(kept)
             cut = trim(text, 600)
             if cut and cut not in chosen:
@@ -670,7 +676,12 @@ def lead_of(pages, about, trade=None):
 def areas_of(text, town, towns):
     found = [town] if town else []
     for t in towns:
-        if t != town and re.search(rf"\b{re.escape(t)}\b", text):
+        # "Liberty" in "Liberty Hill" is the longer town's name, not a second town.
+        rest = text
+        for longer in [town, *towns]:
+            if longer and longer != t and re.search(rf"\b{re.escape(t)}\b", longer):
+                rest = re.sub(rf"\b{re.escape(longer)}\b", "", rest)
+        if t != town and re.search(rf"\b{re.escape(t)}\b", rest):
             found.append(t)
     return found[:12]
 
