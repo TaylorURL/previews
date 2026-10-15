@@ -1,0 +1,80 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Old Reliable Pest Control",
+  "shortName": "Old Reliable Pest Control",
+  "phone": "(713) 597-2101",
+  "email": "contact@oldreliablepest.com",
+  "address": "3223 Same Way",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77339",
+  "rating": 5,
+  "reviewCount": 120,
+  "brand": {
+    "primary": "#807025",
+    "primaryDeep": "#594e1a",
+    "accent": "#f4f0db",
+    "ink": "#1e2120",
+    "surface": "#fefefc",
+    "muted": "#5b6470",
+    "line": "#e0e0e0",
+    "heading": "'Inter', system-ui, sans-serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap",
+    "logo": "/brands/oldreliablepestcontrol/logo.webp",
+    "logoMono": "/brands/oldreliablepestcontrol/logo-mono.webp",
+    "logoWidth": 74,
+    "logoHeight": 74,
+    "logoRatio": 1.006,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.659,
+      0.673,
+      0.698,
+      0.727,
+      0.761,
+      0.798,
+      0.836,
+      0.874,
+      0.916,
+      0.959,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Old Reliable Pest Control",
+    "title": "Pest control",
+    "lead": "Old Reliable Pest Control offers safe, effective, eco-friendly services for pest, rodent, mosquito, bedbug, termites, roaches, ants, bats in North Houston area.",
+    "titleAccent": "in Houston"
+  },
+  "serviceArea": [
+    "Houston",
+    "Crosby",
+    "Humble",
+    "Kingwood",
+    "Spring",
+    "The Woodlands",
+    "Atascocita",
+    "Huffman"
+  ],
+  "summary": "Old Reliable Pest Control offers mosquito and wasp control, and termite control across Houston, Crosby and Humble.",
+  "groups": [
+    {
+      "slug": "mosquito-and-wasp-control",
+      "title": "Mosquito and Wasp Control",
+      "icon": "leaf",
+      "summary": "Keep your outdoor spaces comfortable with our Mosquito and Wasp services.",
+      "intro": "Keep your outdoor spaces comfortable with our Mosquito and Wasp services.",
+      "image": "/brands/oldreliablepestcontrol/photo2",
+      "imageAlt": "A photo of Old Reliable Pest Control"
+    },
+    {
+      "slug": "termite-control",
+      "title": "Termite Control",
+      "icon": "home",
+      "summary": "Successful termite treatments to protect your property from damage.",
+      "intro": "Successful termite treatments to protect your property from damage."
+    }
+  ]
+}
