@@ -616,6 +616,11 @@ def lead_of(pages, about, trade=None):
             text = trim(HEADING_RUN_IN.sub("", plain(page.meta.get(key, ""))), 220)
             if other_trade(text, trade) or not FINISHED.search(text):
                 continue
+            # A description the site filled from its contact form ("Contact Us
+            # ... parts@... Name(Required) First Last Email(Required)...") is
+            # the form's labels, not what they do.
+            if CONTACT_LINE.search(text) or re.search(r"\(required\)", text, re.I):
+                continue
             if len(text) >= 60 and re.match(r"[A-Z]", text) and not re.search(r"cookie|javascript|\||near me|call us|\u2026|\.\.\.", text, re.I):
                 return text, f"{page.url} meta {key}"
     if about:
