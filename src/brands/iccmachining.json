@@ -1,0 +1,81 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "ICC Machining",
+  "shortName": "ICC Machining",
+  "phone": "(281) 331-1252",
+  "email": "sales@iccmachining.com",
+  "address": "301 E Hwy 6",
+  "town": "Alvin",
+  "state": "TX",
+  "zip": "77511",
+  "rating": 5,
+  "reviewCount": 5,
+  "brand": {
+    "primary": "#1235be",
+    "primaryDeep": "#0d2585",
+    "accent": "#5f7cf0",
+    "ink": "#161c2d",
+    "surface": "#f1f3fb",
+    "muted": "#5b6470",
+    "line": "#dedfe2",
+    "heading": "'Roboto', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap",
+    "logo": "/brands/iccmachining/logo.webp",
+    "logoMono": "/brands/iccmachining/logo-mono.webp",
+    "logoWidth": 260,
+    "logoHeight": 44,
+    "logoRatio": 5.908,
+    "logoGround": "#14181f",
+    "logoReads": [
+      1.0,
+      0.989,
+      0.86,
+      0.759,
+      0.664,
+      0.551,
+      0.448,
+      0.343,
+      0.241,
+      0.142,
+      0.054
+    ]
+  },
+  "hero": {
+    "eyebrow": "ICC Machining",
+    "title": "Reverse engineering and fabrication",
+    "lead": "Expert CNC machining and custom fabrication services to meet your needs.",
+    "titleAccent": "in Alvin"
+  },
+  "serviceArea": [
+    "Alvin"
+  ],
+  "ask": "quote",
+  "summary": "ICC Machining offers pump repair and reverse engineering in and around Alvin.",
+  "groups": [
+    {
+      "slug": "pump-repair",
+      "title": "Pump Repair",
+      "icon": "settings",
+      "summary": "A well-maintained pump isn’t just about avoiding downtime—it’s about efficiency and cost savings.",
+      "intro": "A well-maintained pump isn’t just about avoiding downtime—it’s about efficiency and cost savings. A leaking centrifugal pump wastes fluid and energy, while a failing positive displacement pump can disrupt precise processes like chemical dosing. In industries where every minute counts, proactive repair keeps the wheels (or fluids) turning."
+    },
+    {
+      "slug": "reverse-engineering",
+      "title": "Reverse Engineering",
+      "icon": "wrench",
+      "summary": "In addition to our custom manufacturing services, we offer valuable reverse engineering solutions.",
+      "intro": "In addition to our custom manufacturing services, we offer valuable reverse engineering solutions. These enable us to analyze and recreate parts based on samples submitted by our customers, ensuring they receive exactly what they need for their projects."
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "About ICC Machining",
+    "text": [
+      "At ICC Machining, we are committed to precision manufacturing custom components designed to meet our customers' specific drawings and specifications. Our dedicated team utilizes state-of-the-art technology to ensure that each part we produce exemplifies quality and accuracy.",
+      "In addition to our custom manufacturing services, we offer valuable reverse engineering solutions. These enable us to analyze and recreate parts based on samples submitted by our customers, ensuring they receive exactly what they need for their projects.",
+      "It’s important to emphasize that we do not adhere to a traditional product line. Instead, our focus is on developing tailored solutions that address our clients' unique requirements. At ICC Machining, we work collaboratively with our customers to transform their ideas into high-quality precision components, driving innovation and excellence in every project we undertake."
+    ]
+  }
+}
