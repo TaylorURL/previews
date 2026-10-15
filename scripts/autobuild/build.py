@@ -309,7 +309,7 @@ def build(prospect, root, slug):
 
     kind = compose.KIND.get(prospect["trade"])
     vocab_key = kind or template
-    services = compose.services_of(pages, compose.VOCAB[vocab_key], name, town, described_first=template == "hvac")
+    services = compose.services_of(pages, compose.VOCAB[vocab_key], name, town, described_first=template == "hvac", towns=TOWNS)
     if len(services) < 2:
         raise Parked("fewer than two services named on their website")
     if template == "professional":
