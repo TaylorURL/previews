@@ -278,8 +278,9 @@ def sentences(text):
         s = s.strip()
         if not s:
             continue
-        # A stop after a shortening ("Dr. Revel, and Dr. Lowery") ends no sentence.
-        if out and (last := re.search(r"\b([A-Za-z]+)\.$", out[-1])) and last.group(1).lower() in SHORTENED:
+        # A stop after a shortening ("Dr. Revel, and Dr. Lowery") or an
+        # initial ("G.B. Industry") ends no sentence.
+        if out and (last := re.search(r"\b([A-Za-z]+)\.$", out[-1])) and (last.group(1).lower() in SHORTENED or len(last.group(1)) == 1):
             out[-1] += " " + s
         else:
             out.append(s)
@@ -597,7 +598,8 @@ def about_of(pages, name, trade=None):
         for tag, text, header in page.blocks:
             if tag != "p" or header or len(text) < 90:
                 continue
-            if re.search(r"cookie|javascript|copyright|all rights reserved|privacy|©|% off|\$\d|off any|coupon|call (us|now|today)|click here", text, re.I):
+            # Nor is the site's notice to an old browser ("You are currently using Internet Explorer 7/8/9, which is not supported by our site").
+            if re.search(r"cookie|javascript|internet explorer|\bbrowsers?\b|copyright|all rights reserved|privacy|©|% off|\$\d|off any|coupon|call (us|now|today)|click here", text, re.I):
                 continue
             # Their contact form's own instructions ("Use the form to request an appointment") are not about them.
             # Nor is its fine print ("By submitting, you agree... Do not upload payment-card information").
@@ -695,10 +697,12 @@ def lead_of(pages, about, trade=None):
             # the form's labels, not what they do.
             if CONTACT_LINE.search(text) or re.search(r"\(required\)", text, re.I):
                 continue
-            if len(text) >= 60 and re.match(r"[A-Z]", text) and not re.search(r"cookie|javascript|\||near me|call us|\u2026|\.\.\.", text, re.I):
+            if len(text) >= 60 and re.match(r"[A-Z]", text) and not re.search(r"cookie|javascript|internet explorer|\bbrowsers?\b|\||near me|call us|\u2026|\.\.\.", text, re.I):
                 return text, f"{page.url} meta {key}"
-    if about:
-        text = trim(about[0], 220)
+    # A paragraph that opens on a sentence too long for the hero gives way to
+    # the next.
+    for paragraph in about:
+        text = trim(paragraph, 220)
         if len(text) >= 60 and FINISHED.search(text):
             return text, "about text"
     return None, None
