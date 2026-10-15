@@ -542,7 +542,8 @@ def about_of(pages, name, trade=None):
             if re.search(r"cookie|javascript|copyright|all rights reserved|privacy|©|% off|\$\d|off any|coupon|call (us|now|today)|click here", text, re.I):
                 continue
             # Their contact form's own instructions ("Use the form to request an appointment") are not about them.
-            if re.search(r"\b(?:use|fill (?:out|in)|complete|submit) (?:the|our|this) form\b", text, re.I):
+            # Nor is its fine print ("By submitting, you agree... Do not upload payment-card information").
+            if re.search(r"\b(?:use|fill (?:out|in)|complete|submit) (?:the|our|this) form\b|\bby submitting\b|\bdo not (?:upload|submit|send|include)\b", text, re.I):
                 continue
             if not is_about and not re.search(rf"\b(we|our|{re.escape(short)})\b", text, re.I):
                 continue
@@ -554,6 +555,10 @@ def about_of(pages, name, trade=None):
                 continue
             # A customer's review quoted on their page ("5 Stars - ...") is not their description of themselves.
             if re.fullmatch(r"[\"\u201c].*[\"\u201d]", text, re.S) or re.search(r"\b[1-5]\s*stars?\b|\u2605", text, re.I):
+                continue
+            # Or one whose opening quote was lost and only the closing one is
+            # left ("...and our pool looks great!\"").
+            if re.search(r"[.!?][\"\u201d]$", text) and text.count('"') == 1 and "\u201c" not in text:
                 continue
             # Nor is one pasted without quotes, told in the first person about
             # them ("I needed a unit... would recommend them to anyone").
@@ -713,9 +718,13 @@ def hero_line(services, town, label):
     named = [s["title"] for s in services if not GENERIC_SERVICE.match(s["title"])][:2]
     lower = [" ".join(w if (w.isupper() and len(w) > 1) or w.upper() in ACRONYMS else w.lower() for w in t.split()) for t in named]
     # A name that is a phrase of its own ("Storage for moving & life changes")
-    # can't be joined to another with "and"; the trade stands for the two.
+    # can't be joined to another with "and"; the trade stands for the two,
+    # where their services name it. A listing filed under another trade
+    # ("Painting" for a builder of lighting and fences) gives way to their
+    # first service alone.
     if len(lower) == 2 and any(re.search(r"&|\b(?:and|or|for|of|with|to)\b", t, re.I) for t in lower):
-        what = label.lower()
+        trade = label.lower().split()[0]
+        what = label.lower() if any(re.search(rf"\b{re.escape(trade)}", t, re.I) for t in lower) else lower[0]
     elif len(lower) == 2:
         a, b = lower
         tail_a, tail_b = a.rsplit(" ", 1), b.rsplit(" ", 1)
