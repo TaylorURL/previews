@@ -1434,8 +1434,14 @@ function GroupPage({ b, groups, group, tel }) {
                     <GroupIcon name={g.icon} size={22} />
                   </span>
                   <span className="min-w-0 flex-1">
-                    <span className="flex items-center gap-1.5 font-heading text-[18px] font-bold text-ink group-hover:text-[color:var(--pt)]">
-                      {g.title} <ArrowRight size={16} className="transition group-hover:translate-x-1" aria-hidden="true" />
+                    {/* Inline, so a title that wraps keeps the arrow at the end of its last line,
+                        held to the last word. */}
+                    <span className="block font-heading text-[18px] font-bold text-ink group-hover:text-[color:var(--pt)]">
+                      {g.title.trim().replace(/\S+$/, '')}
+                      <span className="whitespace-nowrap">
+                        {g.title.trim().split(/\s+/).pop()}
+                        <ArrowRight size={16} className="ml-1.5 inline-block align-[-2px] transition group-hover:translate-x-1" aria-hidden="true" />
+                      </span>
                     </span>
                     <span className="mt-1.5 block text-[16px] md:text-[15px] leading-[1.55] text-muted">{g.summary}</span>
                   </span>
