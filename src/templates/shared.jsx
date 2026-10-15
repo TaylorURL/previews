@@ -98,7 +98,11 @@ export function BrandLogo({ b, className = '', textClass = '', scale = 1, ground
   const own = logoStands(brand, backdrop) >= READS;
   if (!own && !brand.logoMono) return name;
   const src = own ? brand.logo : brand.logoMono;
-  const hidden = own ? '' : 'opacity-0';
+  // On a pale tint, the white a mark carries at its rim (a keyline drawn for
+  // a dark ground, a patch left from its own) is multiplied into the ground
+  // rather than standing off it as a fringe; on white it is drawn as it is.
+  const pale = luminance(backdrop) >= 0.8 && backdrop.toLowerCase() !== '#ffffff';
+  const hidden = own ? (pale ? 'mix-blend-multiply' : '') : 'opacity-0';
   let mark;
   if (brand.logoHeight) {
     const h = Math.round(brand.logoHeight * scale);
