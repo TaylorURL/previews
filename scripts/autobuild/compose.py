@@ -273,7 +273,17 @@ def plain(text):
 
 
 def sentences(text):
-    return [s.strip() for s in re.split(r"(?<=[.!?])\s+(?=[A-Z0-9\"'])", plain(text)) if s.strip()]
+    out = []
+    for s in re.split(r"(?<=[.!?])\s+(?=[A-Z0-9\"'])", plain(text)):
+        s = s.strip()
+        if not s:
+            continue
+        # A stop after a shortening ("Dr. Revel, and Dr. Lowery") ends no sentence.
+        if out and (last := re.search(r"\b([A-Za-z]+)\.$", out[-1])) and last.group(1).lower() in SHORTENED:
+            out[-1] += " " + s
+        else:
+            out.append(s)
+    return out
 
 
 # A sentence that opens on a subordinating word and never reaches a comma is a
