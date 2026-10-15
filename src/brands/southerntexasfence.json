@@ -1,0 +1,283 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Southern Texas Fence",
+  "shortName": "Southern Texas Fence",
+  "summary": "Wood, chain link and wrought iron fences, custom gates, access control, repairs and staining for homes and businesses throughout the Greater Houston area.",
+  "phone": "(346) 288-9422",
+  "email": "Quotes@SouthernTexasFence.com",
+  "address": "6801 Baneway Drive",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77072",
+  "rating": 5.0,
+  "reviewCount": 31,
+  "hours": [
+    ["Mon – Sat", "6 AM – 8 PM"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#161b21",
+    "primaryDeep": "#0a0d11",
+    "accent": "#dcb75c",
+    "ink": "#15191e",
+    "muted": "#55606c",
+    "surface": "#f4f5f7",
+    "line": "#dde0e4",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+3:wght@400;500;600&display=swap",
+    "logo": "/brands/southerntexasfence/logo.webp",
+    "logoMono": "/brands/southerntexasfence/logo-mono.webp",
+    "logoWidth": 69,
+    "logoHeight": 74,
+    "logoRatio": 0.928,
+    "logoGround": "#ffffff",
+    "logoReads": [0.017, 0.099, 0.197, 0.295, 0.397, 0.5, 0.598, 0.697, 0.799, 0.902, 1.0]
+  },
+  "sameDay": "You get your quote the same day.",
+  "hero": {
+    "eyebrow": "Residential and commercial fencing in the Greater Houston area",
+    "title": "Built strong.",
+    "titleAccent": "Built right.",
+    "lead": "Wood, chain link and wrought iron fences, custom gates and access systems, built by experienced crews using quality materials. Free estimates, honest pricing, insured and bonded.",
+    "image": "/brands/southerntexasfence/hero",
+    "imageAlt": "A new wood privacy fence along the back of a Houston yard"
+  },
+  "groups": [
+    {
+      "slug": "wood-fences",
+      "title": "Wood Fences",
+      "icon": "home",
+      "summary": "Privacy and picket fences built from quality materials with proven installation techniques.",
+      "intro": "Whether you are looking for added privacy, improved security or a beautiful new fence to enhance your property's curb appeal, our experienced team has the knowledge and skills to get the job done right. Every project is built using quality materials and proven installation techniques to ensure long-lasting durability.",
+      "image": "/brands/southerntexasfence/wood-fence",
+      "imageAlt": "A long wood privacy fence running the length of a back yard",
+      "services": [
+        {
+          "slug": "privacy-fences",
+          "title": "Privacy Fences",
+          "icon": "home",
+          "text": "Wood privacy fencing for homeowners who want their yard closed in, built to last and finished the way it was drawn.",
+          "points": [
+            "Western red cedar, built 6 ft 6 in or 7 ft tall",
+            "Three rails, with cap and trim on the 7 ft for more privacy",
+            "Quality materials",
+            "Experienced installation crews",
+            "Free estimates"
+          ]
+        },
+        {
+          "slug": "picket-fences",
+          "title": "Picket Fences",
+          "icon": "ruler",
+          "text": "Decorative picket fencing that complements your property and enhances your outdoor living space.",
+          "points": [
+            "Western red cedar pickets from the USA",
+            "Designed around your property",
+            "Expert advice on materials and styles"
+          ]
+        },
+        {
+          "slug": "custom-fence-design",
+          "title": "Custom Fence Design",
+          "icon": "compass",
+          "text": "We work with you to create a custom fence design that meets your needs and complements your property. Our experienced team will provide expert advice on the best materials and styles for your project.",
+          "points": ["Free consultation", "Expert advice on materials and styles"]
+        },
+        {
+          "slug": "professional-installation",
+          "title": "Professional Installation",
+          "icon": "wrench",
+          "text": "Our skilled team will install your fence with precision and care, ensuring that it is built to last. We use only the highest-quality materials and follow industry best practices to ensure a flawless installation.",
+          "points": ["Industry best practices", "Highest-quality materials"]
+        }
+      ]
+    },
+    {
+      "slug": "chain-link-and-wrought-iron",
+      "title": "Chain Link & Wrought Iron",
+      "icon": "shield",
+      "summary": "Chain link and wrought iron fencing for security, boundaries and curb appeal.",
+      "intro": "Not every property calls for wood. We build chain link and wrought iron fencing for homes and businesses across the Greater Houston area, using quality materials and proven installation techniques.",
+      "services": [
+        {
+          "slug": "chain-link-fences",
+          "title": "Chain Link Fences",
+          "icon": "shield",
+          "text": "Chain link fencing for yards, lots and commercial sites, installed with precision and care.",
+          "points": ["Residential and commercial", "Free estimates"]
+        },
+        {
+          "slug": "wrought-iron-fences",
+          "title": "Wrought Iron Fences",
+          "icon": "building",
+          "text": "Wrought iron fencing for security and curb appeal, with expert advice on the best materials and styles for your project.",
+          "points": ["Designed around your property", "Quality materials"]
+        }
+      ]
+    },
+    {
+      "slug": "gates-and-access-systems",
+      "title": "Gates & Access Systems",
+      "icon": "power",
+      "summary": "Custom gates, gate operators and access control systems for homes and businesses.",
+      "intro": "A fence is only as good as the way you get through it. We build custom gates to suit the fence and the opening, and we install the operators and access control that go with them.",
+      "image": "/brands/southerntexasfence/gates",
+      "imageAlt": "A custom double wood gate beside a garage",
+      "services": [
+        {
+          "slug": "custom-gates",
+          "title": "Custom Gates",
+          "icon": "ruler",
+          "text": "Custom gates built to match your fence and your opening, in wood or iron.",
+          "points": ["Built to the opening", "Matched to the fence"]
+        },
+        {
+          "slug": "gate-operators-and-access-control",
+          "title": "Gate Operators & Access Control Systems",
+          "icon": "power",
+          "text": "Gate operators and access control systems installed for residential driveways and commercial entrances.",
+          "points": ["Residential and commercial", "Installed with the gate or added to an existing one"]
+        }
+      ]
+    },
+    {
+      "slug": "repairs-and-staining",
+      "title": "Repairs & Staining",
+      "icon": "settings",
+      "summary": "Comprehensive repair and maintenance for all types of fences, plus fence staining.",
+      "intro": "We offer comprehensive repair and maintenance services for all types of fences. Whether you need a minor repair or a major overhaul, our team will get the job done quickly and efficiently.",
+      "image": "/brands/southerntexasfence/staining",
+      "imageAlt": "A wood fence with an arbor gate along the edge of a yard",
+      "services": [
+        {
+          "slug": "fence-repairs",
+          "title": "Fence Repairs",
+          "icon": "wrench",
+          "text": "From a minor repair to a major overhaul, on any type of fence, handled quickly and efficiently.",
+          "points": ["All types of fences", "Small residential repairs to large commercial work"]
+        },
+        {
+          "slug": "fence-staining",
+          "title": "Fence Staining",
+          "icon": "droplets",
+          "text": "Staining to protect a wood fence and keep it looking the way it did the week it went up.",
+          "points": ["Free estimates", "Residential and commercial"]
+        }
+      ]
+    },
+    {
+      "slug": "residential-and-commercial",
+      "title": "Residential & Commercial",
+      "icon": "building",
+      "summary": "From small residential repairs to large commercial installations, across the Greater Houston area.",
+      "intro": "From small residential repairs to large commercial installations, Southern Texas Fence is your trusted local fencing contractor. No matter the size of your project, we are committed to exceeding your expectations with professional workmanship and attention to detail.",
+      "image": "/brands/southerntexasfence/residential",
+      "imageAlt": "A new wood fence running along the back of a residential lot",
+      "services": [
+        {
+          "slug": "residential-fencing",
+          "title": "Residential Fencing",
+          "icon": "home",
+          "text": "We offer a wide range of residential fencing solutions to meet your needs, from privacy fences to decorative picket fences. Our team will work with you to design and install a fence that complements your property and enhances your outdoor living space.",
+          "points": ["Privacy and picket fences", "Designed around your property"]
+        },
+        {
+          "slug": "commercial-fencing",
+          "title": "Commercial Fencing",
+          "icon": "building",
+          "text": "We specialize in providing commercial fencing solutions for businesses of all sizes. Our team will work with you to design and install a fence that meets your specific needs, whether it's for security, privacy, or aesthetic purposes.",
+          "points": ["Businesses of all sizes", "Security, privacy or appearance"]
+        },
+        {
+          "slug": "free-consultation",
+          "title": "Free Consultation",
+          "icon": "clipboard",
+          "text": "Contact us today to schedule a free consultation. Our team will work with you to understand your needs and provide expert advice on the best fence solutions for your property.",
+          "points": ["Free estimates", "Same day quotes"]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Building strong fences. Building lasting relationships.",
+    "text": [
+      "At Southern Texas Fence (STF), we take pride in providing high-quality fencing solutions for homeowners and businesses throughout the Greater Houston area. Our mission is simple: deliver exceptional craftsmanship, honest pricing, and customer service you can depend on from the first phone call to the final walkthrough.",
+      "Whether you're looking for added privacy, improved security, or a beautiful new fence to enhance your property's curb appeal, our experienced team has the knowledge and skills to get the job done right. Every project is built using quality materials and proven installation techniques to ensure long-lasting durability.",
+      "At STF, we believe that every customer deserves reliable service, clear communication, and a fence built to last. No matter the size of your project, we're committed to exceeding your expectations with professional workmanship and attention to detail."
+    ],
+    "image": "/brands/southerntexasfence/about",
+    "imageAlt": "A finished cedar privacy fence along a landscaped back patio",
+    "values": [
+      {
+        "title": "Free estimates",
+        "text": "Estimates cost you nothing, and you get your quote the same day."
+      },
+      {
+        "title": "Insured and bonded",
+        "text": "Insured and bonded on every residential and commercial job."
+      },
+      {
+        "title": "Honest pricing",
+        "text": "Honest, competitive pricing and clear communication from the first phone call to the final walkthrough."
+      }
+    ]
+  },
+  "serviceArea": ["Houston", "Alief"],
+  "facts": [
+    {
+      "heading": "Why Choose Us",
+      "items": [
+        "Quality materials",
+        "Experienced installation crews",
+        "Free estimates",
+        "Residential and commercial services",
+        "Insured and bonded",
+        "Honest, competitive pricing",
+        "Customer satisfaction is our priority"
+      ]
+    },
+    {
+      "heading": "We Specialize In",
+      "items": [
+        "Wood fences",
+        "Chain link fences",
+        "Wrought iron fences",
+        "Custom gates",
+        "Gate operators and access control systems",
+        "Fence repairs",
+        "Fence staining",
+        "Residential and commercial fencing"
+      ]
+    },
+    {
+      "heading": "Where We Work",
+      "text": "Homeowners and businesses throughout the Greater Houston area, from the shop at 6801 Baneway Drive in Houston."
+    },
+    {
+      "heading": "Our Team",
+      "text": "Bryan Rivas, contractor."
+    },
+    {
+      "heading": "Good Work Isn't Cheap",
+      "text": "Cheap work isn't good. Building strong fences. Building lasting relationships."
+    },
+    {
+      "heading": "In God We Trust",
+      "text": "“The Lord is my shepherd; I shall not want. He maketh me to lie down in green pastures: he leadeth me beside the still waters.” Psalm 23:1-2."
+    },
+    {
+      "heading": "Find Us",
+      "items": [
+        "Facebook: facebook.com/347473682400038",
+        "Instagram: instagram.com/Southerntexasfence",
+        "TikTok: tiktok.com/@southerntexasfence",
+        "YouTube: youtube.com/@SouthernTexasFence",
+        "Yelp: yelp.com/biz/southerntexasfence"
+      ]
+    }
+  ]
+}

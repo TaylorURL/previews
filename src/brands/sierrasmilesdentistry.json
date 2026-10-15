@@ -1,0 +1,329 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "dental",
+  "name": "Sierra Smiles Dentistry of Pasadena",
+  "shortName": "Sierra Smiles",
+  "tagline": "Family, cosmetic and implant dentistry in Pasadena, TX",
+  "phone": "(713) 903-7018",
+  "email": "business@sierrasmiles4u.com",
+  "address": "4221 Vista Road",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77504",
+  "license": "Sierra Dental Group PLLC. Dr. Christopher Sierra, DDS and Dr. Linda Sierra, DDS.",
+  "hours": [
+    ["Monday", "8 AM – 4 PM"],
+    ["Tuesday – Thursday", "8 AM – 5 PM"],
+    ["Friday", "By appointment"],
+    ["Saturday – Sunday", "Closed"]
+  ],
+  "cta": {
+    "label": "Request an Appointment",
+    "text": "New patients and dental emergencies are welcome. Call the office and we will find you a time."
+  },
+  "brand": {
+    "primary": "#89565a",
+    "primaryDeep": "#5f3a3e",
+    "accent": "#bf9529",
+    "ink": "#2e2f30",
+    "muted": "#6b6460",
+    "surface": "#faf7f2",
+    "cream": "#eee3d2",
+    "line": "#e3d9c8",
+    "heading": "'Playfair Display', Georgia, serif",
+    "body": "'Nunito Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap",
+    "logo": "/brands/sierrasmilesdentistry/logo.webp",
+    "logoMono": "/brands/sierrasmilesdentistry/logo-mono.webp",
+    "logoWidth": 147,
+    "logoHeight": 58,
+    "logoRatio": 2.53,
+    "logoGround": "#ffffff",
+    "logoReads": [0.209, 0.204, 0.221, 0.255, 0.294, 0.406, 0.52, 0.638, 0.76, 0.884, 1.0]
+  },
+  "hero": {
+    "eyebrow": "Dentist in Pasadena, TX",
+    "title": "Keeping families smiling for over 45 years.",
+    "lead": "One practice for the whole family, from cleanings and fillings to implants, Invisalign and same-day crowns. New patients and dental emergencies are welcome.",
+    "image": "/brands/sierrasmilesdentistry/hero",
+    "imageAlt": "The Sierra Smiles Dentistry of Pasadena team outside the office",
+    "points": [
+      "English and Español",
+      "Same-day emergency appointments",
+      "In-house savings plan for patients without insurance"
+    ]
+  },
+  "overview": {
+    "title": "Comprehensive dentistry for the whole family in Pasadena.",
+    "text": "There is no longer a need to have a general dentist for the parents and a pediatric dentist for the kids. All of your family's dental needs can be met conveniently under one roof."
+  },
+  "services": [
+    {
+      "slug": "general-dentistry",
+      "title": "General Dentistry",
+      "icon": "stethoscope",
+      "summary": "Cleanings, fillings and the care that keeps teeth healthy.",
+      "text": "Routine care for every age, from cleanings and sealants to extractions, gum treatment and guards made to fit.",
+      "lead": "General dentistry is the everyday care that keeps a smile healthy, and it is where most visits to Sierra Smiles begin.",
+      "covers": [
+        { "title": "Dental cleanings", "text": "Routine hygiene visits for the whole family. We recommend a cleaning and exam every six months so plaque is removed from the places a brush cannot reach and problems are caught early." },
+        { "title": "Extractions and wisdom teeth", "text": "Simple extractions and wisdom tooth removal in the office." },
+        { "title": "Periodontal (gum) treatments", "text": "Treatment for gum disease and the care that follows it." },
+        { "title": "Mouth guards and night guards", "text": "Guards made to fit for sport and for grinding at night." },
+        { "title": "Sealants", "text": "A protective coating on the chewing surfaces of back teeth." },
+        { "title": "Sleep apnea and TMJ treatment", "text": "Appliances and treatment for sleep apnea and jaw joint pain." }
+      ]
+    },
+    {
+      "slug": "cosmetic-dentistry",
+      "title": "Cosmetic Dentistry",
+      "icon": "gem",
+      "summary": "Bonding, whitening, veneers and clear aligners.",
+      "text": "Dental bonding, in-office and take-home whitening, veneers, Six Month Smiles and Invisalign.",
+      "lead": "The cosmetic work at Sierra Smiles covers everything from a single chipped tooth to straightening a whole smile.",
+      "covers": [
+        { "title": "Dental bonding", "text": "Tooth-colored material shaped to repair a chip or close a gap." },
+        { "title": "Zoom! teeth whitening", "text": "Professional whitening done entirely in the office, with the Zoom! light activating the gel and the shade checked every twenty minutes. Most patients see results up to ten shades brighter in about an hour." },
+        { "title": "Veneers", "text": "Thin facings bonded to the front of the teeth." },
+        { "title": "Six Month Smiles", "text": "Tooth-coloured brackets and clear wires that straighten the front teeth in about six to nine months, with 3 to 7 adjustment visits and a retainer afterwards. It suits patients 15 and older with no gum disease, periodontal problems, cavities or major bite issues." },
+        { "title": "Invisalign", "text": "Clear aligners instead of metal brackets and wires." }
+      ]
+    },
+    {
+      "slug": "restorative-dentistry",
+      "title": "Restorative Dentistry",
+      "icon": "shield",
+      "summary": "Crowns, bridges, fillings, dentures and implants.",
+      "text": "Every smile picks up some damage. Dr. Sierra restores it with fillings, crowns, bridges, dentures and implants.",
+      "lead": "It is true that every smile will likely encounter a little damage at some point in life. Regular hygiene and trips to a general dentist help keep decay, damage, infection and tooth loss at bay, but so many factors affect the health of your smile that you cannot control all of them. That is why you should not be embarrassed if you find yourself needing restorative dental care.",
+      "covers": [
+        { "title": "Dental crowns and bridges", "text": "Crowns to rebuild a damaged tooth and bridges to span a gap. A crown can be made of porcelain, ceramic, gold or zirconia, and with good hygiene and regular checkups it lasts 10 to 20 years." },
+        { "title": "Dental fillings", "text": "Repairs for decay and small fractures." },
+        { "title": "Dentures and partial dentures", "text": "Full and partial dentures, including implant-supported dentures." },
+        { "title": "Root canals", "text": "Removing infection and debris from inside the tooth so it can be saved." },
+        { "title": "Implant placement and restorations", "text": "The post, the healing and the crown that finishes it." }
+      ]
+    },
+    {
+      "slug": "dental-implants",
+      "title": "Dental Implants",
+      "icon": "bone",
+      "summary": "A replacement root and a crown that feels like a tooth.",
+      "text": "A titanium post takes the place of the root, and the crown on top looks, acts and feels like a natural tooth.",
+      "lead": "There is a reason dental implants are quickly becoming the most popular treatment for missing teeth, and that is because the results are stunning. At Sierra Smiles Dentistry of Pasadena we carefully diagnose and plan every implant procedure so each one results in a natural-looking and comfortably fitting restoration.",
+      "covers": [
+        { "title": "How it works", "text": "A metal post is positioned in the jaw to act as a permanent root. Once the surrounding bone and tissue have healed, a crown completes the restoration." },
+        { "title": "What implants do", "text": "They improve eating and speaking, minimise bone loss, spare the healthy teeth beside them and remove the discomfort of removable dentures." },
+        { "title": "Free consultation or second opinion", "text": "A free implant consultation or second opinion with free 3D x-rays taken on the practice's cone beam CT scanner." },
+        { "title": "Experienced hands", "text": "Our dentists have been placing implants successfully for nearly 40 years and handle both simple and complex cases." },
+        { "title": "What to expect", "text": "Implants are oral surgery and usually take several visits: removing the damaged tooth, preparing the jawbone, then placing the implant, abutment and tooth with healing time in between. We explain the whole timeline before treatment begins and share post-procedure tips afterwards." },
+        { "title": "Implant-supported dentures", "text": "Implants used to hold a denture steady instead of a single crown." }
+      ],
+      "questions": [
+        { "q": "Are dental implants covered by insurance?", "a": "Coverage varies by plan. Some policies cover a portion of the cost and others do not include implants at all. Review your plan details or contact the office to find out what yours covers." }
+      ]
+    },
+    {
+      "slug": "invisalign",
+      "title": "Invisalign",
+      "icon": "smile",
+      "summary": "Clear aligners, scanned with the iTero 3D scanner.",
+      "text": "Clear plastic aligners that straighten teeth without metal brackets or wires, and come out while you eat.",
+      "lead": "If you think straighter teeth can only be achieved by wearing metal braces, you will be happy to know that is not the case anymore. With Invisalign our team can work with you on a treatment plan that shows results quicker than traditional braces.",
+      "covers": [
+        { "title": "Invisible and comfortable", "text": "Clear aligners customised to your teeth, with no metal brackets or wires to irritate your gums, cheeks and tongue." },
+        { "title": "Faster results", "text": "Each case is different, but Invisalign gives the result you want in no more than 18 months." },
+        { "title": "Convenient and flexible", "text": "The aligners come out while you eat and go back in once you have brushed or rinsed, so no food is off limits." },
+        { "title": "Minimal discomfort", "text": "There are no wires to tighten, so the only discomfort is when you change to the next set of aligners and it passes quickly. You come in as instructed for a short checkup on your progress." },
+        { "title": "The iTero 3D scanner", "text": "A 3D image of your teeth in minutes, with no impression material, and an outcome simulator that shows the new smile before treatment starts." }
+      ],
+      "questions": [
+        { "q": "Does dental insurance cover Invisalign?", "a": "Many plans offer partial coverage for orthodontic treatment, including Invisalign, but the level varies widely. Check your policy or ask the office to look at your benefits." }
+      ]
+    },
+    {
+      "slug": "same-day-crowns",
+      "title": "CEREC Same-Day Crowns",
+      "icon": "award",
+      "summary": "A ceramic crown designed and milled in one visit.",
+      "text": "CEREC designs and mills a ceramic crown in the office, so one appointment replaces several weeks of waiting.",
+      "lead": "CEREC stands for Chairside Economical Restoration of Esthetic Ceramics. It restores damaged teeth with custom ceramic crowns in a single visit, removing the need for several appointments over a few weeks.",
+      "covers": [
+        { "title": "How it works", "text": "An intraoral camera photographs the tooth, CAD software turns the picture into a three-dimensional model, and a milling machine cuts the restoration." },
+        { "title": "What it can make", "text": "Crowns, inlays, onlays and veneers." },
+        { "title": "Metal-free", "text": "CEREC crowns are metal-free and have been used for more than 20 years." }
+      ]
+    },
+    {
+      "slug": "sedation-dentistry",
+      "title": "Sedation Dentistry",
+      "icon": "waves",
+      "summary": "Nitrous oxide and oral sedation for anxious patients.",
+      "text": "Dental anxiety keeps many people from the care they need. Nitrous oxide and oral sedation make the visit manageable.",
+      "lead": "Does the thought of going to the dentist put butterflies in your stomach? You are not alone. Dental anxiety keeps many patients from seeking essential care every year, and sedation dentistry makes getting that care possible.",
+      "covers": [
+        { "title": "Nitrous oxide", "text": "A gas breathed through a mask for the length of the procedure. It works quickly, suits mild to moderate anxiety, and wears off quickly so you can get on with your day." },
+        { "title": "Oral sedation", "text": "A prescription taken before the procedure, sometimes alongside nitrous oxide. The effects take time to wear off, so someone will need to drive you home." }
+      ]
+    },
+    {
+      "slug": "dental-emergency",
+      "title": "Dental Emergency",
+      "icon": "heart",
+      "summary": "Same-day care for a knocked-out or painful tooth.",
+      "text": "Call right away. We strive to see patients the same day they call, and can talk you through managing it until you arrive.",
+      "lead": "While you never know when a dental emergency will strike, you can be prepared for one simply by knowing where to turn for help. Give us a call right away. We always strive to see patients the same day they call, especially if the emergency is serious, and we can offer tips for managing it until we can see you.",
+      "covers": [
+        { "title": "The most common emergencies", "text": "A knocked-out tooth, a cracked or fractured tooth, a broken temporary, a severe toothache and damaged dentures." },
+        { "title": "A knocked-out tooth", "text": "Touch only the crown and not the root, rinse the tooth in clear water, and if there is not too much bleeding try to place it back in the socket. If that is not possible, bring it in a container of milk or mild saline." },
+        { "title": "A severe toothache", "text": "Pain can signal an infected tooth, which needs the infection and debris removed from inside it during a root canal." },
+        { "title": "When to go to the emergency room first", "text": "A possibly broken jaw, or a cut to the tongue or lip that will not stop bleeding, should be seen at an emergency room first. We will happily address the dental issues that follow." }
+      ]
+    }
+  ],
+  "process": {
+    "title": "What a consultation or second opinion includes",
+    "text": "Implant and treatment consultations at Sierra Smiles follow the same three steps, and the consultation or second opinion itself is free.",
+    "steps": [
+      { "title": "One-on-one patient education", "text": "We explain the details of your oral health in plain terms, walk through the whole treatment process and answer every question you have." },
+      { "title": "Customised treatment planning", "text": "Your treatment is designed around your own needs, timeline and budget, and we review pricing and financial options with you." },
+      { "title": "Intraoral exam", "text": "A thorough exam of your mouth before any planning, including 3D x-rays taken on our cone beam CT scanner so we can assess the condition properly." }
+    ]
+  },
+  "affiliations": {
+    "title": "Memberships and credentials",
+    "items": [
+      "American Dental Association",
+      "Texas Dental Association",
+      "Academy of General Dentistry",
+      "Greater Houston Dental Society",
+      "American Association of Implant Dentists",
+      "International Academy of Dentistry",
+      "International College of Dentistry",
+      "Spears Study Club",
+      "Invisalign certified",
+      "CEREC certified"
+    ]
+  },
+  "about": {
+    "title": "A Pasadena practice carrying on a legacy of exceptional care.",
+    "text": [
+      "Sierra Smiles Dentistry of Pasadena opened over 45 years ago with a commitment to providing the most high-quality, personalized dental experience for every patient, and that is a legacy we are proud to continue. By connecting with our patients on a personal level, we are able to better understand your individual needs and customize your care to fit.",
+      "We are not an insurance-controlled corporate office that treats patients like a number. Our patients tell us how much they love our friendly team and gentle care, and because we understand that dental visits can be difficult for some people, we take the time to listen and to get to know you personally."
+    ],
+    "values": [
+      { "title": "We connect with patients on a personal level", "text": "Understanding your individual needs is what lets us customize your care to fit." },
+      { "title": "We stay up to date with the latest technology", "text": "Digital x-rays, intraoral scanners, 3D imaging, lasers and same-day milling make for a safer, more accurate and more comfortable visit." },
+      { "title": "Our work is honest and reliable", "text": "We explain your options thoroughly, answer questions in plain terms, and never push unnecessary treatment." },
+      { "title": "We value quality dental care", "text": "Every member of the team is held to a high standard of care. We never cut corners or settle, and the treatment is thorough so the result lasts." },
+      { "title": "We take a conservative approach", "text": "We treat a damaged tooth with the least dental work it needs, and we only recommend treatment that benefits you, which keeps your costs down." },
+      { "title": "We put dental fears to rest", "text": "Friendly service, thorough education and several sedation options turn an anxious visit into a comfortable one." }
+    ]
+  },
+  "team": [
+    {
+      "name": "Dr. Christopher Sierra",
+      "role": "DDS",
+      "bio": "A graduate of St. Mary's University in San Antonio who went on to receive his Doctor of Dental Surgery from The University of Texas School of Dentistry in Houston. Dr. Chris holds oral conscious sedation, Invisalign and CEREC certifications and completed a year-long implant certification course with hands-on training in complex surgical procedures. He takes a gentle approach, listens to understand what you need and eases any concerns with plain patient education. He was born in Pasadena and grew up in the Clear Lake area."
+    },
+    {
+      "name": "Dr. Linda Sierra",
+      "role": "DDS",
+      "bio": "A native of Corpus Christi and a graduate of Incarnate Word Academy, Dr. Linda earned her AA from Del Mar Junior College and her BA in Biology from The University of Texas at Austin, then completed her Doctor of Dental Surgery at The University of Texas School of Dentistry at Houston. She completes hours of continuing education every year and is certified in oral conscious and nitrous oxide sedation, Invisalign and CEREC, has completed training in implant placement and restorations, and sits on the board of directors for the Greater Houston Dental Society, where she also serves as liaison for the judicial and peer review committees. Dr. Linda and her team have cared for Pasadena families for over 45 years."
+    }
+  ],
+  "faqs": [
+    { "q": "How can I find out what dental insurance benefits I have?", "a": "Start by reviewing your policy documents or contacting your insurance provider directly. Our team can also help you verify your benefits and explain what is covered." },
+    { "q": "What is the difference between in-network and out-of-network providers?", "a": "In-network providers have agreements with your insurance company to offer services at reduced rates, which lowers your out-of-pocket cost. Out-of-network providers do not have these agreements, which can mean higher costs and less coverage." },
+    { "q": "How does dental insurance work?", "a": "You pay a monthly premium and the plan covers a percentage of the cost of preventive, restorative and sometimes orthodontic treatment, according to your plan's benefits." },
+    { "q": "What is PPO dental insurance?", "a": "A Preferred Provider Organization plan gives you flexibility in choosing a dentist. It pays part of the cost with an out-of-network provider and gives you greater benefits with an in-network dentist who has agreed to reduced fees." },
+    { "q": "How many cleanings and exams does dental insurance cover each year?", "a": "Most plans cover two cleanings and two exams a year as preventive care. Check your plan for the specifics." },
+    { "q": "What services are typically covered by dental insurance?", "a": "Generally preventive services such as cleanings and exams, restorative treatment such as fillings and crowns, and sometimes orthodontics. Coverage varies, so it is best to review your plan or ask us to look at it." },
+    { "q": "Is dental insurance different from medical insurance?", "a": "Yes. Dental plans focus on preventive and restorative care for oral health, while medical insurance covers a broader range of healthcare including hospital visits and surgeries." },
+    { "q": "Do you take new patients and emergencies?", "a": "Yes. New patients and emergency appointments are welcome, and we strive to see emergency patients the same day they call." }
+  ],
+  "facts": [
+    {
+      "heading": "Insurance we accept",
+      "items": ["Aetna", "Careington", "Cigna", "Delta Dental", "United Healthcare"]
+    },
+    {
+      "heading": "In-network plans",
+      "text": "We are in-network care providers for Cigna, Aetna and Delta, and in-network with many PPO plans. We stay out of network with a few plans whose negotiated rates would not let us use the materials and products we want to use."
+    },
+    {
+      "heading": "Insurance billing",
+      "text": "We work with a wide range of dental plans and handle the billing process for you. We file claims for every PPO plan, and we will process and file a claim with any provider, including the ones we are out of network with, as a courtesy. If you have questions about your coverage, call the office and we will check it."
+    },
+    {
+      "heading": "What your plan does not cover",
+      "text": "Your policy is a contract between you and your insurance company, and there are no guarantees of benefits. Anything your insurance does not reimburse is yours to pay, whatever the initial estimate said, and we will work with you to get the most out of the coverage you have."
+    },
+    {
+      "heading": "In-house savings plan",
+      "text": "An alternative to dental insurance for individuals and families, at one annual membership fee of $99 for individuals and $179 for families. It carries 50% off all preventive services including exams, radiographs, emergency visits, routine cleanings, periodontal therapy, fluoride varnish and oral cancer screenings, and 20% off all other dental procedures including cosmetic, with no deductibles, waiting periods or maximums."
+    },
+    {
+      "heading": "Ways to pay",
+      "items": ["Any major credit card", "Cash", "Local checks"]
+    },
+    {
+      "heading": "Payment and financing",
+      "items": [
+        "Sunbit: monthly payments with 30-second approval, no paperwork and no hard credit check, and 85% of applicants approved",
+        "0% APR for those who qualify, over 6, 12, 18 or 24 monthly payments",
+        "CareCredit",
+        "Lending Club"
+      ]
+    },
+    {
+      "heading": "Languages",
+      "items": ["English", "Español"]
+    },
+    {
+      "heading": "Technology in the office",
+      "items": [
+        "CEREC same-day crowns",
+        "Cone beam CT scanning",
+        "iTero 3D scanner",
+        "DIAGNOdent cavity detection",
+        "Digital x-rays",
+        "Panoramic x-rays",
+        "Intraoral camera",
+        "Laser dentistry",
+        "Oral cancer screenings",
+        "Zoom! teeth whitening",
+        "Telescopic loupes",
+        "Paperless charting",
+        "Electronic claims",
+        "Automatic appointment reminders",
+        "Patient education"
+      ]
+    },
+    {
+      "heading": "New patients and emergencies",
+      "text": "New patients and emergency appointments are welcome. We strive to see emergency patients the same day they call."
+    },
+    {
+      "heading": "Booking an appointment",
+      "text": "Call the office or book online through our scheduling page at schedule.jarvisanalytics.com. Appointments are required for a consultation."
+    },
+    {
+      "heading": "New patient forms",
+      "text": "Adult and child patient forms can be filled in before you come in, so your first visit does not start with a clipboard. Ask the front desk and we will send them over."
+    },
+    {
+      "heading": "A family practice, led by a family",
+      "text": "Dr. Linda Sierra works side by side with her sons every day, so the practice that looks after Pasadena families is run by one. All ages are seen under one roof, so there is no need for a separate pediatric dentist for the children."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "facebook.com/SierraSmilesDentistryofPasadena",
+        "instagram.com/sierra_smiles_",
+        "yelp.com/biz/sierra-smiles-family-cosmetic-and-implant-dentistry-pasadena-4"
+      ]
+    }
+  ]
+}
