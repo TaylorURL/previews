@@ -291,6 +291,9 @@ def sentences(text):
 # aware... health. They have their parameters...").
 FRAGMENT = re.compile(r"(?:as|because|although|though|whereas|while|unless|whether)\b[^,;:–—]*$", re.I)
 
+# A clause that opens on one of these leads into a sentence rather than being one.
+LEADING = re.compile(r"(?:at|in|on|for|with|from|by|through|throughout|since|after|before|during|when|whenever|if|once|as|because|although|though|whereas|while|unless|whether|to|whatever)\b", re.I)
+
 
 SHORTENED = {"etc", "vs", "approx", "incl", "est", "ft", "sq", "no", "st", "dr", "mr", "mrs", "ms", "jr", "sr", "inc", "co", "ltd", "llc", "ave", "rd", "blvd", "hwy", "ste"}
 
@@ -322,11 +325,15 @@ def trim(text, limit):
 
 def gist(text, limit):
     """trim() for a card's line: when even the first sentence is too long, its
-    opening clause, if it reads as a sentence of its own, stands for it."""
+    opening clause, if it reads as a sentence of its own, stands for it. One
+    that opens on a preposition or a subordinating word ("At our chiropractic
+    clinic, we offer...") only sets the scene for the sentence, so it doesn't."""
     cut = trim(text, limit)
     if cut or not sentences(text):
         return cut
     head = re.split(r"[,;:–—]\s", sentences(text)[0])[0].rstrip(".!? ")
+    if LEADING.match(head):
+        return ""
     return head + "." if len(head.split()) >= 4 and len(head) < limit else ""
 
 
