@@ -514,6 +514,9 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # "Exterior Painting Across North Houston" is the service with the
         # area it covers tacked on; the area is already theirs to list.
         name = re.sub(r"\s+(?:across|throughout)\s+.*$", "", name, flags=re.I)
+        # "Finishing the Job with Stump Grinding" is a line about the work
+        # with the service at its end; the service is what it is done with.
+        name = re.sub(r"^\w+ing (?:the|your|our|a|an|every) .+? (?:with|by|through) ", "", name, flags=re.I)
         if not (3 <= len(name) <= 42) or len(name.split()) > 6 or GENERIC_NAV.match(name):
             return
         if not pattern.search(name) or re.search(r"[?!@]|\d{3}", name) or NOT_A_SERVICE.search(name) or re.match(r"(on|for|with|to|in|at|from|and|i|my|we)\b", name, re.I):
