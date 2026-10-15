@@ -491,6 +491,11 @@ def services_of(pages, vocab, own=None, town=None, described_first=False):
             return
         if re.search(r"\b(warrant(y|ies)|guarantees?) (on|for)\b", name, re.I):
             return
+        # A heading that opens on an article or a comparison ("A Tradition of
+        # Quality Construction", "Better Decisions Before Construction"), or
+        # that speaks of their history, is a slogan, not a service.
+        if re.match(r"(a|an|better|smarter|faster)\s", name, re.I) or re.search(r"\b(traditions?|legacy|decisions?)\b", name, re.I):
+            return
         if NOT_A_SERVICE_SHAPE.search(name) or (own and names_the_business(name, own)) or (local and local.search(name)):
             return
 
@@ -555,6 +560,9 @@ def about_of(pages, name, trade=None):
             # Their contact form's own instructions ("Use the form to request an appointment") are not about them.
             # Nor is its fine print ("By submitting, you agree... Do not upload payment-card information").
             if re.search(r"\b(?:use|fill (?:out|in)|complete|submit) (?:the|our|this) form\b|\bby submitting\b|\bdo not (?:upload|submit|send|include)\b", text, re.I):
+                continue
+            # Their call for job seekers ("Join a team... View our list of open positions") is a careers page, not their story.
+            if re.search(r"\bopen positions\b|\bjob openings\b|\bnow hiring\b|\bjoin (?:a|our|the) (?:team|family)\b|\bapply to (?:be|join)\b", text, re.I):
                 continue
             if not is_about and not re.search(rf"\b(we|our|{re.escape(short)})\b", text, re.I):
                 continue
