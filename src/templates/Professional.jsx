@@ -107,6 +107,20 @@ function columns(n, most) {
 const list = (value) => (Array.isArray(value) ? value : []);
 const paras = (value) => (Array.isArray(value) ? value : value ? [value] : []);
 
+/**
+ * A title lowered to run inside a sentence. Names keep their capitals: an
+ * initialism ("IRS"), the town, and an honorific with the name after it
+ * ("Dr. Kwak's approach").
+ */
+function lowerName(title, town) {
+  const honorific = /^(Dr|Mr|Mrs|Ms|Mx)\.?$/;
+  const words = title.split(' ');
+  const lower = words
+    .map((w, i) => (honorific.test(w) || honorific.test(words[i - 1] || '') || /[A-Z].*[A-Z]/.test(w) ? w : w.toLowerCase()))
+    .join(' ');
+  return town ? lower.replace(new RegExp(`\\b${town.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'gi'), town) : lower;
+}
+
 /** A service their site only names has no page of its own, which would say nothing under its heading; it is listed by name. */
 const hasPage = (s) => Boolean(s.lead || s.text || list(s.covers).length || list(s.questions).length);
 
@@ -412,13 +426,13 @@ function Header({ b, path, k, groups, nav, tel, ctaLabel }) {
 /* ---------------------------------------------------------------- sections */
 
 function Crumbs({ trail }) {
-  // The "/" closes the crumb before it, so a trail that wraps on a phone
-  // ends its first line with the separator instead of opening the next one.
+  // The trail keeps to one line: a long page title wraps in its own place
+  // beside the links, so no "/" is left hanging at the end of a line.
   return (
     <nav aria-label="Breadcrumb" className="mb-6 lg:mb-8">
-      <ol className="flex flex-wrap items-center gap-x-2 text-[15px] text-muted">
+      <ol className="flex items-center gap-x-2 text-[15px] text-muted">
         {trail.map(([href, label], i) => (
-          <li key={label} className="flex items-center gap-2">
+          <li key={label} className={`flex items-center gap-2 ${href ? 'flex-none' : 'min-w-0'}`}>
             {href ? (
               <a href={href} className="inline-flex min-h-11 min-w-11 items-center text-muted no-underline hover:text-primary hover:underline">
                 {label}
@@ -1022,7 +1036,7 @@ function ServicePage(props) {
           <div className={wrap}>
             <div className="mb-10 max-w-3xl">
               <Eyebrow>What it covers</Eyebrow>
-              <h2 className={h2}>What {s.title.toLowerCase()} from {b.shortName} includes.</h2>
+              <h2 className={h2}>What {lowerName(s.title, b.town)} from {b.shortName} includes.</h2>
             </div>
             <ul className="grid gap-4 md:grid-cols-2 lg:gap-5">
               {covers.map((c) => (
@@ -1057,7 +1071,7 @@ function ServicePage(props) {
         <section className={pad}>
           <div className={wrap}>
             <h2 className="mb-7 font-heading font-display-2 text-[clamp(1.4rem,1.1rem+1vw,1.75rem)] text-ink">
-              {group?.label ? `More for ${group.label.toLowerCase()}` : 'More services'}
+              {group?.label ? `More for ${lowerName(group.label, b.town)}` : 'More services'}
             </h2>
             <ul className="grid gap-4 md:grid-cols-3 lg:gap-5">
               {related.map((o) => {
@@ -1081,7 +1095,7 @@ function ServicePage(props) {
           </div>
         </section>
       )}
-      <Cta {...props} title={`Questions about ${s.title.toLowerCase()}?`} />
+      <Cta {...props} title={`Questions about ${lowerName(s.title, b.town)}?`} />
     </>
   );
 }
