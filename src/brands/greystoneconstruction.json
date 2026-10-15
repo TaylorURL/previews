@@ -1,0 +1,90 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Greystone Construction Company",
+  "shortName": "Greystone Construction Company",
+  "phone": "(512) 348-1038",
+  "email": null,
+  "address": "405 S Austin Ave Ste 202",
+  "town": "Georgetown",
+  "state": "TX",
+  "zip": "78626",
+  "since": 1987,
+  "brand": {
+    "primary": "#006b3f",
+    "primaryDeep": "#004b2c",
+    "accent": "#00d07a",
+    "ink": "#142022",
+    "surface": "#f0f6f3",
+    "muted": "#5b6470",
+    "line": "#dee0e0",
+    "heading": "'Oswald', system-ui, sans-serif",
+    "body": "'Oswald', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap",
+    "logo": "/brands/greystoneconstruction/logo.webp",
+    "logoMono": "/brands/greystoneconstruction/logo-mono.webp",
+    "logoWidth": 136,
+    "logoHeight": 74,
+    "logoRatio": 1.832,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.408,
+      0.281,
+      0.159,
+      0.128,
+      0.254,
+      0.379,
+      0.469,
+      0.559,
+      0.686,
+      0.846,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Greystone Construction Company",
+    "title": "Construction services",
+    "lead": "Established in 1987, Greystone Construction is a versatile general contractor serving the commercial, industrial, multifamily, senior housing, and agribusiness markets.",
+    "titleAccent": "in Georgetown"
+  },
+  "serviceArea": [
+    "Georgetown",
+    "Houston",
+    "Liberty",
+    "Spring",
+    "Richmond"
+  ],
+  "ask": "quote",
+  "summary": "Greystone Construction Company offers construction services, construction management and pre-construction phase across Georgetown, Houston and Liberty.",
+  "groups": [
+    {
+      "slug": "construction-services",
+      "title": "Construction Services",
+      "icon": "building",
+      "summary": "Greystone’s team of professionals can assist you at any stage of your construction project from project planning and budgeting to ongoing facility maintenance.",
+      "intro": "Greystone’s team of professionals can assist you at any stage of your construction project from project planning and budgeting to ongoing facility maintenance."
+    },
+    {
+      "slug": "construction-management",
+      "title": "Construction Management",
+      "icon": "building",
+      "summary": "Greystone Construction Company is capable of performing as Construction Manager (CM) for projects in any industry.",
+      "intro": "Greystone Construction Company is capable of performing as Construction Manager (CM) for projects in any industry."
+    },
+    {
+      "slug": "pre-construction-phase",
+      "title": "Pre-Construction Phase",
+      "icon": "building",
+      "summary": "Pre-construction is critical for a successful project outcome.",
+      "intro": "Pre-construction is critical for a successful project outcome. Our team works closely with the owner and the architect to ensure that all understand the entire scope of the project and define project success. We provide accurate budgets and project schedules early on so our clients can make well-informed decisions."
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "About Greystone Construction Company",
+    "text": [
+      "Since 1987, Greystone has provided commercial, industrial, agricultural, general construction and design-build services across the United States.",
+      "Our highly skilled and dedicated craft professionals take great pride in their work. Our ability to self-perform specialty trade services provides many advantages to our clients in terms of schedule, budget, quality, and safety."
+    ]
+  }
+}

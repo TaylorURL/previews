@@ -1060,7 +1060,8 @@ function Home({ b, groups, tel }) {
               <a href="/contact" className={`${btn} bg-white text-[color:var(--pt)] hover:bg-surface`}>
                 {askOf(b).act} <ArrowRight size={18} aria-hidden="true" />
               </a>
-              <a href={tel} className={`${btn} border border-white/40 text-white hover:bg-white/10`}>
+              {/* Filled with the brand's deep color so lettering in the photo behind (a sign, a truck's door) never shows through the number. */}
+              <a href={tel} className={`${btn} border border-white/40 bg-[color-mix(in_srgb,var(--primaryDeep)_88%,#000)] text-white hover:bg-primary-deep`}>
                 <Phone size={17} aria-hidden="true" /> {b.phone}
               </a>
             </div>
