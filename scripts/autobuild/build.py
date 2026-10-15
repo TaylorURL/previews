@@ -383,7 +383,10 @@ def build(prospect, root, slug):
 
     brand["serviceArea"] = areas
 
-    about_image = spare[0] if spare else None
+    # The about section is drawn on the home page under the hero, so it takes
+    # the first spare photo that is not another shot of the hero's scene.
+    pictures = dict(names)
+    about_image = next((n for n in spare if not (hero_pick and images.same_scene(pictures[n]["image"], hero_pick["image"]))), None)
 
     def about_block(**extra):
         block = {**extra, "title": f"About {short}", "text": about}
@@ -422,12 +425,12 @@ def build(prospect, root, slug):
         if ask:
             brand["ask"] = ask
         groups = []
-        # The about section takes the first spare photo; each group after it
-        # one of its own, and none shares a picture. A group page draws its
+        # The about section takes its spare photo; each group one of the others
+        # of its own, and none shares a picture. A group page draws its
         # photo beside the heading at near half the page, so only one sharp
         # enough for a wide slot goes there; a group without one shows its
         # services in that place instead.
-        wide = [n for n, item in names if n in spare[1:] and _fits(item, "wide")]
+        wide = [n for n, item in names if n in spare and n != about_image and _fits(item, "wide")]
         for i, s in enumerate(services[:5]):
             if not s["text"]:
                 continue

@@ -483,6 +483,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
     # is left out. A town that opens a sentence ("Spring is...") is a word.
     others = [t for t in towns if t != town]
     elsewhere = re.compile(rf"(?<=\s)(?:{'|'.join(re.escape(t) for t in others)})\b") if others else None
+    # So is one that sends the reader to a link of their page ("Click the
+    # link below for details"), which the preview does not have, and one left
+    # without its full stop where that link was cut away.
+    pointer = re.compile(r"\bclick\b|\b(?:link|button|form)s? (?:below|above)\b", re.I)
     found = {}
     order = []
 
@@ -543,7 +547,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
                     if nxt_tag == "p" and CONTACT_LINE.search(nxt):
                         continue
                     if nxt_tag == "p" and 60 <= len(nxt) <= 700:
-                        desc = trim(" ".join(s for s in sentences(nxt) if not (elsewhere and elsewhere.search(s))), 360)
+                        desc = trim(" ".join(
+                            s for s in sentences(nxt)
+                            if not (elsewhere and elsewhere.search(s)) and not pointer.search(s) and FINISHED.search(s)
+                        ), 360)
                         break
                     if nxt_tag.startswith("h"):
                         break
