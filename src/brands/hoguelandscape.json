@@ -1,0 +1,508 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Hogue Landscape Services",
+  "shortName": "Hogue Landscape Services",
+  "summary": "A design-build-maintain landscape firm handling design, installation and maintenance for homes and businesses across Houston and the surrounding area.",
+  "phone": "(713) 360-6924",
+  "email": "Info@HogueLS.com",
+  "address": "2210 W 34th St",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77018",
+  "rating": 4.8,
+  "reviewCount": 277,
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#00633f",
+    "primaryDeep": "#004a2f",
+    "accent": "#b2d234",
+    "ink": "#16231c",
+    "muted": "#5a6b60",
+    "surface": "#f2f7f1",
+    "line": "#dbe5da",
+    "heading": "'Bodoni Moda', Georgia, serif",
+    "body": "'Poppins', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700;6..96,800;6..96,900&family=Poppins:wght@400;500;600&display=swap",
+    "logo": "/brands/hoguelandscape/logo.webp",
+    "logoMono": "/brands/hoguelandscape/logo-mono.webp",
+    "logoWidth": 201,
+    "logoHeight": 74,
+    "logoRatio": 2.722,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.636,
+      0.553,
+      0.421,
+      0.323,
+      0.316,
+      0.308,
+      0.348,
+      0.481,
+      0.647,
+      0.829,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Landscape design, installation and maintenance in Houston",
+    "title": "Houston's award-winning landscape experts,",
+    "titleAccent": "designing outdoor spaces that feel like home.",
+    "lead": "Hogue Landscape Services brings more than two decades of expertise to transforming outdoor spaces in Houston. Design, installation and maintenance come together under one roof.",
+    "image": "/brands/hoguelandscape/hero",
+    "imageAlt": "A large Houston home behind a deep green lawn and mature oaks"
+  },
+  "groups": [
+    {
+      "slug": "landscape-design",
+      "title": "Landscape Design",
+      "icon": "compass",
+      "summary": "High-end landscape architecture, from conceptual drawings to a finished master plan.",
+      "intro": "As a design-build-maintain firm, Hogue creates outdoor spaces from concept to reality. Our expert team specializes in crafting stunning outdoor spaces that will enhance the beauty and value of your property, working to a client-centric design philosophy focused on making your outdoor spaces somewhere you want to create memories for years to come.",
+      "image": "/brands/hoguelandscape/design",
+      "imageAlt": "A front garden with clipped hedges, seasonal planting and a stone path",
+      "services": [
+        {
+          "slug": "landscape-architecture",
+          "title": "Landscape Architecture",
+          "icon": "ruler",
+          "text": "Licensed landscape architects and certified landscape designers plan the whole property rather than one bed at a time.",
+          "points": [
+            "Licensed landscape architects",
+            "Certified landscape designers",
+            "Conceptual drawings, construction drawings and master plans"
+          ]
+        },
+        {
+          "slug": "engineering-services",
+          "title": "Engineering Services",
+          "icon": "clipboard",
+          "text": "Licensed engineering services in-house for the parts of a landscape that have to hold something up or hold water back.",
+          "points": [
+            "Licensed structural engineering services",
+            "Licensed civil engineering services"
+          ]
+        },
+        {
+          "slug": "installation",
+          "title": "Installation",
+          "icon": "settings",
+          "text": "Expert in-house crews carry out the work, whether the drawings are ours or yours.",
+          "points": [
+            "Expert in-house crews for seamless execution",
+            "Installation services for our designs or yours",
+            "In-house project management for efficient workflows",
+            "Collaborative partnerships with fellow landscape professionals",
+            "Warranty options available when maintenance is performed by Hogue Landscape Services"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "landscape-maintenance",
+      "title": "Landscape Maintenance",
+      "icon": "leaf",
+      "summary": "Weekly through quarterly programs that keep a finished landscape looking the way it did on day one.",
+      "intro": "Experience the epitome of landscape maintenance with Hogue Landscape Services in Houston. Programs run weekly, bi-monthly, monthly and quarterly, and every visit is performed in-house by experienced crews.",
+      "image": "/brands/hoguelandscape/maintenance",
+      "imageAlt": "A maintained Houston garden with layered planting beds and a mown lawn",
+      "services": [
+        {
+          "slug": "maintenance-programs",
+          "title": "Maintenance Programs",
+          "icon": "timer",
+          "text": "Weekly, bi-monthly, monthly and quarterly programs, performed in-house by experienced crews.",
+          "points": [
+            "Weekly, bi-monthly, monthly and quarterly schedules",
+            "Landscape maintenance services start at $500"
+          ]
+        },
+        {
+          "slug": "plant-health",
+          "title": "Plant Health Programs",
+          "icon": "shield",
+          "text": "Insect and disease control and fertilization programs, planned across the year rather than called in once something goes wrong. Our plant health care team evaluates visible symptoms and site conditions, then recommends care based on what the property needs.",
+          "points": [
+            "Insect and disease control programs",
+            "Fertilization programs",
+            "Lawn disease assessment",
+            "Fire ant control and preventative options",
+            "Merit and Safari preventative insect treatments where appropriate",
+            "Seasonal watering guidance"
+          ]
+        },
+        {
+          "slug": "root-zone-fertilization",
+          "title": "Root Zone Fertilization",
+          "icon": "droplets",
+          "text": "Root zone fertilization places a measured nutrient solution into the active soil area around trees and shrubs, so nutrients are available where the roots can reach them.",
+          "points": [
+            "Professional root zone fertilization service starting at $149",
+            "Pricing varies by plant size, quantity and the treatment recommended",
+            "Trees and shrubs identified by evaluation before anything is applied"
+          ]
+        },
+        {
+          "slug": "seasonal-color",
+          "title": "Seasonal Color",
+          "icon": "sun",
+          "text": "Seasonal color designed and installed so the beds change with the year, including winter plantings chosen to hold through the holidays.",
+          "points": [
+            "Seasonal flowers for beds, entry beds, walkways and containers",
+            "Mulch refresh for planting beds",
+            "Winter blooms such as cyclamen and snapdragons, plus holiday lighting"
+          ]
+        },
+        {
+          "slug": "seasonal-displays",
+          "title": "Front Door Seasonal Displays",
+          "icon": "home",
+          "text": "Fall porch displays designed, delivered and installed by our own crews, built from curated pumpkins, seasonal flowers and layered natural textures chosen to suit the architecture of the house.",
+          "points": [
+            "Fall installations start at $500, on limited dates",
+            "Packages run from $500 to $3,000 and up: Harvest Accent, Classic Autumn, Signature Harvest, Estate Collection and Premier Estate Showcase",
+            "Sourcing, delivery, styling and cleanup handled for you",
+            "Post-season removal after Thanksgiving, removal and disposal $150 – $300",
+            "Available in selected Houston-area neighborhoods"
+          ]
+        },
+        {
+          "slug": "soil-and-turf-care",
+          "title": "Soil and Turf Care",
+          "icon": "leaf",
+          "text": "The work that happens below the surface, plus cover for the nights Houston drops below freezing.",
+          "points": [
+            "Core aeration, compost and mulch programs",
+            "Winter freeze protection"
+          ]
+        },
+        {
+          "slug": "power-washing",
+          "title": "Power Washing",
+          "icon": "droplets",
+          "text": "Ground level and vertical surfaces power washed as part of the maintenance program."
+        }
+      ]
+    },
+    {
+      "slug": "synthetic-turf",
+      "title": "Synthetic Turf and Putting Greens",
+      "icon": "sun",
+      "summary": "Artificial turf and custom residential putting greens, installed as part of the wider landscape.",
+      "intro": "Artificial turf can be a smart solution for Houston homeowners who want a clean, durable lawn without the constant maintenance of natural grass. Because turf is often only one part of a larger outdoor environment, we consider how it works with the rest of the property: drainage, planting, hardscape, irrigation, pools and outdoor living areas.",
+      "image": "/brands/hoguelandscape/turf",
+      "imageAlt": "A backyard putting green with cups and planting beds along its edge",
+      "services": [
+        {
+          "slug": "artificial-turf",
+          "title": "Artificial Turf Installation",
+          "icon": "leaf",
+          "text": "Low-maintenance, real-looking lawns for high-traffic and shaded areas, with pet-friendly turf that carries built-in antimicrobial protection.",
+          "points": [
+            "Backyards and family-use areas",
+            "Pet-friendly spaces",
+            "Shaded areas where grass struggles",
+            "Pool surrounds and narrow side yards",
+            "Areas between hardscape or stepping stones"
+          ]
+        },
+        {
+          "slug": "putting-greens",
+          "title": "Custom Putting Greens",
+          "icon": "compass",
+          "text": "Synthetic putting greens designed around your property, your playing preferences and the way you use the space, from a compact practice area to a larger green built into a backyard renovation.",
+          "points": [
+            "Multiple cup locations and different approach angles",
+            "Contoured putting surfaces",
+            "Fringe or chipping areas",
+            "Lighting for evening use",
+            "Synthetic lawn areas surrounding the green"
+          ]
+        },
+        {
+          "slug": "base-and-drainage",
+          "title": "Base, Grading and Drainage",
+          "icon": "waves",
+          "text": "The finished turf is only part of a successful installation. Proper excavation, base preparation, grading, drainage, edging and seams all affect how the turf looks and performs over time.",
+          "points": [
+            "Existing conditions evaluated before any turf is laid",
+            "Drainage improvements addressed as part of the project rather than covered up",
+            "Final detailing of edges, transitions, infill and grooming"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "irrigation-and-drainage",
+      "title": "Irrigation and Drainage",
+      "icon": "droplets",
+      "summary": "Getting water to the planting that needs it and away from the house that does not.",
+      "intro": "We install and service irrigation systems, and we design drainage that channels rainwater away from foundations, driveways and planting. A well-designed drainage system is more than just a pipe in the ground.",
+      "image": "/brands/hoguelandscape/irrigation",
+      "imageAlt": "A crew member checking an irrigation controller mounted outside a house",
+      "services": [
+        {
+          "slug": "irrigation-systems",
+          "title": "Irrigation Systems",
+          "icon": "droplets",
+          "text": "New irrigation systems and modifications to the one already in the ground, including laser drip systems.",
+          "points": [
+            "New irrigation systems",
+            "Laser drip systems",
+            "Modifications to existing systems"
+          ]
+        },
+        {
+          "slug": "irrigation-repairs",
+          "title": "Repairs, Audits and Controllers",
+          "icon": "wrench",
+          "text": "Repairs and audits on an existing system, and controllers updated to the newest technology.",
+          "points": [
+            "Repairs and audits",
+            "Updating controllers to newest technology"
+          ]
+        },
+        {
+          "slug": "drainage-systems",
+          "title": "Drainage Systems",
+          "icon": "waves",
+          "text": "Whether you are dealing with a sudden puddle after last night's downpour or you have battled standing water in your yard for years, the right drainage system can resolve both fresh and ongoing water problems.",
+          "points": [
+            "French drains",
+            "Channel drains and dry wells",
+            "Catch basins",
+            "Grading that puts gravity to work",
+            "Curb cuts and repairs",
+            "Downspout tie-ins"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pools-and-spas",
+      "title": "Pools and Spas",
+      "icon": "waves",
+      "summary": "Pools and spas built as part of the landscape around them, not dropped into the middle of it.",
+      "intro": "Hogue builds pools and spas in Houston, from lap pools to one-of-a-kind custom designs. Because the same team handles design, drainage, irrigation, planting, hardscape and lighting, the water and everything around it are planned together.",
+      "image": "/brands/hoguelandscape/pools",
+      "imageAlt": "A rectangular pool bordered by lawn and planting behind a Houston home",
+      "services": [
+        {
+          "slug": "pool-design-and-construction",
+          "title": "Pool Design and Construction",
+          "icon": "waves",
+          "text": "Pools designed and built to suit the property and the way the family swims.",
+          "points": [
+            "Lap pools",
+            "Free form",
+            "ADA compliant",
+            "Custom designed one of a kind"
+          ]
+        },
+        {
+          "slug": "pools-in-the-landscape",
+          "title": "Pools Within the Wider Landscape",
+          "icon": "home",
+          "text": "Our team works across landscape design, construction, drainage, irrigation, planting, hardscape, lighting, pools and outdoor living, so a pool project can take in the patio, the planting and the drainage at the same time."
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Turf fundraiser program",
+    "title": "A new turf lawn that also gives to a Houston elementary school.",
+    "text": "For every square foot of turf purchased from us at $11.05, we proudly pledge to donate $1 per square foot directly to the participating elementary school.",
+    "price": "$1",
+    "priceNote": "per square foot",
+    "image": "/brands/hoguelandscape/fundraiser",
+    "imageAlt": "A strip of synthetic lawn running between planting and a paved edge"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Design. Build. Maintain.",
+    "text": [
+      "The Hogue Landscape Services team brings decades of expertise, transforming outdoor spaces in Houston and the surrounding area. We are not just about creating landscapes, we're about crafting experiences. From simple backyard updates to full-service custom landscape architecture, we can assist with design, installation, and maintenance.",
+      "As a design-build-maintain firm, we create stunning outdoor spaces transforming your vision from concept to reality. We employ a client-centric design philosophy focused on making your outdoor spaces somewhere you want to create memories for years to come.",
+      "Matthew Hogue is President and CEO. He was elected to the board of directors of the Houston Livestock Show and Rodeo in 2024 and has been a Silver Spur member since 2020, and he serves on the Rodeo's International, Calf Scramble and School Art Auction committees."
+    ],
+    "image": "/brands/hoguelandscape/about",
+    "imageAlt": "A courtyard garden with a stone patio, container planting and a dining table",
+    "values": [
+      {
+        "title": "One roof",
+        "text": "Design, installation and maintenance handled by the same firm, on one schedule."
+      },
+      {
+        "title": "In-house crews",
+        "text": "The work is carried out by our own experienced crews, with in-house project management."
+      },
+      {
+        "title": "Rooted in community",
+        "text": "Time, funds and resources given to local charities, non-profits and grassroots initiatives across Houston."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Is artificial turf good for Houston?",
+      "a": "Artificial turf can work very well in Houston, particularly in high-traffic, shaded, pet-use, and difficult-to-maintain areas. Proper drainage, product selection, and installation are especially important in Houston's climate."
+    },
+    {
+      "q": "Does artificial turf require maintenance?",
+      "a": "Yes, although considerably less than natural grass. Turf may require periodic rinsing, debris removal, brushing, infill maintenance, and additional cleaning in pet areas."
+    },
+    {
+      "q": "Can dogs use artificial turf?",
+      "a": "Yes. Pet-specific turf systems can be designed for durability, drainage, and easier cleaning."
+    },
+    {
+      "q": "Can weeds grow through artificial turf?",
+      "a": "Proper preparation dramatically reduces weed growth, although occasional weeds may develop around edges or from organic material collecting on the surface."
+    },
+    {
+      "q": "Can artificial turf be installed over an existing lawn?",
+      "a": "A professional installation normally requires removal and proper preparation of the existing surface rather than simply placing synthetic turf over living grass."
+    },
+    {
+      "q": "Will artificial turf solve my drainage problem?",
+      "a": "Not necessarily. Turf can allow water to drain through its surface, but existing grading or drainage problems may still need to be corrected."
+    },
+    {
+      "q": "Can artificial turf be combined with landscape beds?",
+      "a": "Absolutely. Some of the best-looking installations combine synthetic lawn with natural planting, trees, hardscape, and other landscape elements."
+    },
+    {
+      "q": "What is Plant Health Care?",
+      "a": "Plant Health Care, or PHC, is a focused approach to assessing and caring for the health of your landscape. Recommendations depend on the plants, symptoms and growing conditions on your property."
+    },
+    {
+      "q": "Is every brown patch in my lawn a disease?",
+      "a": "No. Similar symptoms can have different causes. An evaluation helps determine whether disease, watering, pests or another condition may be involved."
+    },
+    {
+      "q": "How is plant health care different from root zone fertilization?",
+      "a": "Root zone fertilization addresses nutrient needs around the roots of trees and shrubs. Plant health care considers a broader range of concerns, including pests, disease and site conditions. Fertilization may be part of a recommendation when appropriate."
+    },
+    {
+      "q": "How much does a fall installation cost?",
+      "a": "Custom installations start at $500. Final pricing depends on the size of the entrance, the amount and type of seasonal material selected and the overall complexity of the design."
+    },
+    {
+      "q": "Is removal of a fall display included?",
+      "a": "Post-season removal after Thanksgiving is included when specified in your approved installation package."
+    }
+  ],
+  "serviceArea": [
+    "River Oaks",
+    "Memorial",
+    "Museum District",
+    "Garden Oaks / Oak Forest",
+    "Montrose",
+    "Bellaire",
+    "The Heights",
+    "West University",
+    "Tanglewood",
+    "Briar Forest",
+    "Spring Valley",
+    "The Woodlands"
+  ],
+  "facts": [
+    {
+      "heading": "Experience",
+      "text": "Over 20 years of experience in high-end landscape design, installation and maintenance across Houston."
+    },
+    {
+      "heading": "Design credentials",
+      "items": [
+        "Licensed landscape architects",
+        "Certified landscape designers",
+        "Licensed engineering services – structural and civil",
+        "In-house project management"
+      ]
+    },
+    {
+      "heading": "Warranty",
+      "text": "Warranty options are available when maintenance is performed by Hogue Landscape Services."
+    },
+    {
+      "heading": "Awards",
+      "items": [
+        "Two Honorable Mentions at the 2026 PaperCity Design Awards Houston, one in residential landscape design and one in commercial",
+        "Reserve Grand Champion at the Houston Livestock Show and Rodeo",
+        "Named a finalist for the Houston Business Journal's Fastest Growing Companies in Houston, part of its Fast 50 Awards, in 2025",
+        "Ranked in the top 25 of the Cougar 100, which honors the fastest-growing companies led by University of Houston alumni",
+        "Matthew Hogue named Young Leader of the Year by the Texas Nursery and Landscape Association",
+        "Houston Mayor John Whitmire proclaimed May 15, 2025 as Matt Hogue Day in recognition of Matthew Hogue's business and community work"
+      ]
+    },
+    {
+      "heading": "Associations and development",
+      "items": [
+        "Member of the Texas Nursery and Landscape Association",
+        "Two team members selected for the TNLA Leadership Bootcamp, a statewide program that takes 20 participants a year",
+        "Matthew Hogue holds a BBA from the University of Houston's C.T. Bauer College of Business, where he was named one of the top 27 graduating seniors, and is a member of the Ezekiel W. Cullen Society and the Cougar Pride Corbin J. Robertson Society"
+      ]
+    },
+    {
+      "heading": "The team",
+      "items": [
+        "Matthew Hogue, President and CEO",
+        "Yazayra Figueroa, Project Estimator, a graduate of the TNLA Leadership Bootcamp and the program's first female graduation speaker"
+      ]
+    },
+    {
+      "heading": "In the news",
+      "items": [
+        "Heat-safety practices highlighted by KHOU 11 News in its coverage of how Houston businesses keep workers safe in extreme summer temperatures",
+        "Featured in Lawn & Landscape in an article on fleet branding and vehicle wrap design"
+      ]
+    },
+    {
+      "heading": "Community involvement",
+      "items": [
+        "Over $2,000,000 donated to local programs",
+        "More than 80 Houston-based local initiatives supported",
+        "Over 5,000 volunteer hours donated",
+        "Houston Children's Charity among the organizations supported",
+        "Key sponsor of the Oaks Dads' Club, including the Hogue Landscape Ball Park, in Garden Oaks where our offices are",
+        "Houston Livestock Show and Rodeo School Art Auction supported each year"
+      ]
+    },
+    {
+      "heading": "Notable projects",
+      "items": [
+        "Rienzi, the Museum of Fine Arts Houston's house museum, where the full installation was completed in four days ahead of Houston's Azalea Trail",
+        "A bayou-side landscape reset, cleaned and reestablished after flooding displaced whole sections of planting, with invasive species carried in by floodwater eradicated and replaced"
+      ]
+    },
+    {
+      "heading": "Commercial work",
+      "text": "Tailored landscape design, installation and maintenance for businesses and institutions of all sizes, alongside the residential side of the firm."
+    },
+    {
+      "heading": "Careers",
+      "items": [
+        "Now hiring landscape designers, installation experts, maintenance crew members and administrative support",
+        "Apply by calling (713) 360-6924 or emailing Info@HogueLS.com"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "text": "Hogue Landscape Services is on Facebook, Instagram and TikTok as Hogue Landscape."
+    }
+  ]
+}

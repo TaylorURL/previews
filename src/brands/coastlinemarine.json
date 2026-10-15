@@ -1,0 +1,310 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "service",
+  "name": "Coastline Marine Service Center",
+  "shortName": "Coastline Marine",
+  "summary": "Marine service, rigging, custom aluminum and parts for boats around Kemah, Clear Lake and Galveston Bay.",
+  "phone": "(281) 291-0101",
+  "email": "cole@coastlinemarine.net",
+  "address": "1008 Delesandri Ln",
+  "town": "Kemah",
+  "state": "TX",
+  "zip": "77565",
+  "rating": 4.8,
+  "reviewCount": 33,
+  "since": 2008,
+  "hours": [["Mon – Fri", "9 AM – 5 PM"], ["Saturday", "Closed"], ["Sunday", "Closed"]],
+  "brand": {
+    "primary": "#0b3254",
+    "primaryDeep": "#071f36",
+    "accent": "#d00100",
+    "ink": "#11161c",
+    "muted": "#4a5a6a",
+    "surface": "#eef3f8",
+    "line": "#d6e0ea",
+    "heading": "'Oswald', system-ui, sans-serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap",
+    "logo": "/brands/coastlinemarine/logo.webp",
+    "logoMono": "/brands/coastlinemarine/logo-mono.webp",
+    "logoWidth": 197,
+    "logoHeight": 72,
+    "logoRatio": 2.724,
+    "logoGround": "#14181f",
+    "logoReads": [1.0, 0.99, 0.875, 0.759, 0.639, 0.518, 0.403, 0.287, 0.167, 0.046, 0.07]
+  },
+  "hero": {
+    "eyebrow": "Marine service in Kemah, Texas",
+    "title": "Trained technicians for your boat",
+    "titleAccent": "and the outboard on the back of it.",
+    "lead": "Our shop on Delesandri Lane handles maintenance, repair and warranty work, with certified techs for Yamaha, Suzuki, Evinrude and Mercury. Call us and we will get you in and out in an efficient and timely manner."
+  },
+  "groups": [
+    {
+      "slug": "engine-service",
+      "title": "Engine Service",
+      "icon": "settings",
+      "summary": "Maintenance, repair and warranty work on boats and outboards by certified techs.",
+      "intro": "When you are invested in making sure your watercraft stays in great working order for years to come, you need knowledge and skill you can count on. Our technicians maintain and service your boat and outboard, and the shop is set up with the equipment and experience to get a boat in prime shape, whether the goal is fishing, cruising or tow sports.",
+      "services": [
+        {
+          "slug": "outboard-service",
+          "title": "Outboard Service",
+          "icon": "gauge",
+          "text": "Service and repair on the outboard, carried out by techs certified by the engine makers we are set up for.",
+          "points": [
+            "Certified for Yamaha, Suzuki, Evinrude and Mercury",
+            "Repair, maintenance and service work",
+            "Parts ordered in when they are not on the shelf"
+          ]
+        },
+        {
+          "slug": "boat-maintenance",
+          "title": "Boat Maintenance",
+          "icon": "wrench",
+          "text": "Routine work that keeps a boat ready for the water, booked by phone or through a service appointment request.",
+          "points": [
+            "Work on the boat and the engine in one visit",
+            "Come talk to us about how to best maintain your investment"
+          ]
+        },
+        {
+          "slug": "warranty-work",
+          "title": "Warranty Work",
+          "icon": "shield",
+          "text": "Warranty repairs on the engine lines our technicians are certified for, handled at our own service center.",
+          "points": [
+            "A state of the art service center built for the work",
+            "Yamaha, Suzuki, Evinrude and Mercury"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "mobile-service",
+      "title": "Mobile Service",
+      "icon": "car",
+      "summary": "Our service truck comes to your boat for the same hourly service cost as the shop.",
+      "intro": "Do not fight the traffic, trailer your boat or make the commute. Our mobile service truck can come to your boat storage, boat dock or home to service your watercraft, and all for the same hourly service cost as work done at the shop.",
+      "services": [
+        {
+          "slug": "mobile-service-call",
+          "title": "Mobile Service Call",
+          "icon": "car",
+          "text": "We meet you where your boat is, at a dock, a storage yard or your driveway.",
+          "points": [
+            "The same hourly service cost as the shop",
+            "Storage, dock or home",
+            "Ask about mobile service when you call"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rigging-and-electronics",
+      "title": "Rigging And Electronics",
+      "icon": "cable",
+      "summary": "Rigging with the vendors and components we trust, and the electronics and accessories we are an authorized dealer for.",
+      "intro": "We pride ourselves on making sure that when it comes to your boat's rigging we use the best vendors and components to keep you on the water. We are an authorized dealer for the electronics, audio, shallow water anchors and trolling motors that go with that work, so the gear and the install come from the same place.",
+      "services": [
+        {
+          "slug": "rigging",
+          "title": "Rigging",
+          "icon": "cable",
+          "text": "Rigging work on your boat using the vendors and components we have picked to keep you on the water.",
+          "points": [
+            "Best vendors and components",
+            "Rigging and accessory fitting in the same shop"
+          ]
+        },
+        {
+          "slug": "marine-electronics",
+          "title": "Marine Electronics",
+          "icon": "circuit",
+          "text": "Authorized dealer for Garmin, Lowrance and Simrad, so a new display or sounder is sold and fitted here.",
+          "points": ["Garmin", "Lowrance", "Simrad"]
+        },
+        {
+          "slug": "audio-and-lighting",
+          "title": "Audio And Lighting",
+          "icon": "waves",
+          "text": "Authorized dealer for JL Audio, Wet Sounds and Plash Lights.",
+          "points": ["JL Audio", "Wet Sounds", "Plash Lights"]
+        },
+        {
+          "slug": "shallow-water-gear",
+          "title": "Shallow Water Gear",
+          "icon": "droplets",
+          "text": "Authorized dealer for Power Pole shallow water anchors and Minn Kota trolling motors.",
+          "points": ["Power Pole", "Minn Kota"]
+        }
+      ]
+    },
+    {
+      "slug": "custom-aluminum",
+      "title": "Custom Aluminum",
+      "icon": "ruler",
+      "summary": "A high end custom aluminum shop that fabricates marine aluminum accessories in house.",
+      "intro": "We have a high end custom aluminum shop where we fabricate in house all marine aluminum accessories. The work runs under the same roof as the service side, so a fabricated piece and the rigging it needs are handled by the same crew.",
+      "services": [
+        {
+          "slug": "aluminum-fabrication",
+          "title": "Aluminum Fabrication",
+          "icon": "ruler",
+          "text": "Marine aluminum accessories fabricated in house at our own aluminum shop.",
+          "points": [
+            "All fabrication done in house",
+            "Our products are shown on our custom aluminum website"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "parts",
+      "title": "Parts",
+      "icon": "filter",
+      "summary": "A wide selection of parts and accessories, with anything out of stock ordered in for you.",
+      "intro": "Whether you need repairs or maintenance, or you are looking to customize your boat, we carry a wide selection of parts and accessories so you can maintain your boat and make it your own. If we do not have it in stock, we are happy to order it for you.",
+      "services": [
+        {
+          "slug": "parts-counter",
+          "title": "Parts Counter",
+          "icon": "filter",
+          "text": "Our parts staff helps you find the right parts and accessories to keep your watercraft running in optimal condition.",
+          "points": [
+            "A wide selection in stock",
+            "Anything else ordered in",
+            "Call (281) 291-0101 or come on in"
+          ]
+        },
+        {
+          "slug": "parts-request",
+          "title": "Parts Request",
+          "icon": "clipboard",
+          "text": "Send us what you need and the parts staff tracks it down, then calls you back about it.",
+          "points": ["By phone, at the counter or by a parts request", "Fitting handled by the service side"]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "A Kemah service center behind a Seabrook boat dealership.",
+    "text": [
+      "Coastline Marine was founded in 2008. We have a simple goal: Provide the Highest quality product and craftsmanship while maintaining superior customer satisfaction."
+    ],
+    "values": [
+      {
+        "title": "Certified techs",
+        "text": "Our service center has certified techs for Yamaha, Suzuki, Evinrude and Mercury."
+      },
+      {
+        "title": "We come to you",
+        "text": "Mobile service brings the truck to your dock, storage or home for the same hourly service cost."
+      },
+      {
+        "title": "In and out",
+        "text": "Give us a call and we will get you in and out of the shop in an efficient and timely manner."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Can you service my boat where it is kept?",
+      "a": "Yes. Our mobile service truck can come to your boat storage, boat dock or home, and the hourly service cost is the same as work done at the shop."
+    },
+    {
+      "q": "Which engines are your technicians certified for?",
+      "a": "Our service center has certified techs for Yamaha, Suzuki, Evinrude and Mercury."
+    },
+    {
+      "q": "How do I book service?",
+      "a": "Call us at (281) 291-0101 and we will help you over the phone or set up an appointment, or send a service appointment request."
+    },
+    {
+      "q": "What if a part is not in stock?",
+      "a": "If we do not have it in stock, we are happy to order it for you. Call, come in, or send us a parts request."
+    },
+    {
+      "q": "Where is the service center?",
+      "a": "At 1008 Delesandri Ln in Kemah, open Monday to Friday, 9 AM to 5 PM. The boat dealership is at 2321 NASA Road One in Seabrook."
+    }
+  ],
+  "serviceArea": [
+    "Kemah",
+    "Seabrook",
+    "San Leon",
+    "Clear Lake",
+    "League City",
+    "La Porte",
+    "Pasadena",
+    "Baytown",
+    "Pearland",
+    "Texas City",
+    "Galveston"
+  ],
+  "facts": [
+    {
+      "heading": "Engine Brands We Are Certified For",
+      "items": ["Yamaha", "Suzuki", "Evinrude", "Mercury"]
+    },
+    {
+      "heading": "Authorized Dealer For",
+      "items": ["Power Pole", "JL Audio", "Wet Sounds", "Garmin", "Lowrance", "Simrad", "Minn Kota", "Plash Lights"]
+    },
+    {
+      "heading": "Mobile Service",
+      "text": "Our mobile service truck comes to your boat storage, boat dock or home to service your watercraft, for the same hourly service cost as the shop."
+    },
+    {
+      "heading": "Booking A Service Appointment",
+      "text": "A service appointment request asks for the make, model and year of the vessel, its HIN and hours, the service needed, the date you want and whether we have worked on the boat before."
+    },
+    {
+      "heading": "Ordering Parts",
+      "text": "To get the parts you need, call (281) 291-0101, come on in, or send a parts request. Anything not in stock we are happy to order for you."
+    },
+    {
+      "heading": "Our Boat Dealership",
+      "text": "New and pre-owned boat sales, trade-in valuations and boat financing are handled at Coastline Marine, 2321 NASA Road One, Seabrook, TX 77586, on the same phone number."
+    },
+    {
+      "heading": "Boat Lines At The Dealership",
+      "items": [
+        "Shallow Sport Boats, exclusive Houston area dealer",
+        "SCB Boats, exclusive Houston area dealer",
+        "Sea Hunt Boats, South Houston dealer",
+        "Hewes",
+        "Maverick",
+        "Monterey"
+      ]
+    },
+    {
+      "heading": "Win Your Boat",
+      "items": [
+        "Buy any new or pre-owned boat and get one swing on our Full Swing golf simulator",
+        "Hole in one wins your boat for free",
+        "Inside three feet wins $10,000 cash",
+        "Inside ten feet wins a Power Pole",
+        "On the green wins your first outboard service free"
+      ]
+    },
+    {
+      "heading": "Service Areas",
+      "text": "We serve the Houston area, including Seabrook, Kemah, San Leon, Clear Lake, Pearland, Baytown, La Porte, Pasadena, League City, Texas City and Galveston. Other areas are available as well, so call us for more information."
+    },
+    {
+      "heading": "Email Us",
+      "text": "Email reaches us at cole@coastlinemarine.net or greg@coastlinemarine.net."
+    },
+    {
+      "heading": "Find Us Online",
+      "items": [
+        "facebook.com/coastlinemarinetx",
+        "instagram.com/coastline_marine",
+        "Tag us or use #coastlinemarinetx and we will share your photos"
+      ]
+    }
+  ]
+}

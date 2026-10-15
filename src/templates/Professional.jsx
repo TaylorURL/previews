@@ -1078,7 +1078,8 @@ function ServicePage(props) {
                 const RIcon = iconFor(o.icon);
                 return (
                   <li key={o.slug}>
-                    <a href={`/services/${o.slug}`} className={`group flex h-full items-center gap-4 p-5 text-ink no-underline ${cardLink}`}>
+                    {/* Top-aligned, so a one-line card's title sits level with its neighbours' rather than centred against them. */}
+                    <a href={`/services/${o.slug}`} className={`group flex h-full items-start gap-4 p-5 text-ink no-underline ${cardLink}`}>
                       <span className="grid size-12 flex-none place-items-center rounded-md bg-surface text-primary">
                         <RIcon size={24} strokeWidth={1.25} aria-hidden="true" />
                       </span>
@@ -1111,7 +1112,12 @@ function initials(name) {
 
 function TeamPage(props) {
   const { b } = props;
-  const team = list(b.team);
+  const all = list(b.team);
+  // People the site gives only a name and role for are listed together under the
+  // full cards, so their cards do not stand empty beside a colleague's bio or photo.
+  const full = all.filter((p) => p.bio || p.image);
+  const named = full.length ? all.filter((p) => !p.bio && !p.image) : [];
+  const team = full.length ? full : all;
   // With no one's photo to show, the people are drawn as their names and
   // words alone; a wall of grey boxes with initials reads as placeholders.
   // Initials stand in only beside colleagues who do have a photo.
@@ -1120,8 +1126,11 @@ function TeamPage(props) {
   // single card does not sit at the left of an empty band.
   const alone = team.length === 1;
   // The row takes as many columns as there are people, up to three, so a team of two
-  // fills its band rather than leaving a third of it blank where a card would be.
-  const cols = alone ? '' : team.length === 2 ? 'sm:grid-cols-2' : 'sm:grid-cols-2 lg:grid-cols-3';
+  // fills its band rather than leaving a third of it blank where a card would be. Where three
+  // would leave one card alone on the last row and two come out even (four sit two and two),
+  // the row takes two, so no card stands by itself beside an empty gap.
+  const lone = team.length % 3 === 1 && team.length % 2 === 0;
+  const cols = alone ? '' : team.length === 2 || lone ? 'sm:grid-cols-2' : 'sm:grid-cols-2 lg:grid-cols-3';
   const row = photos
     ? 'sm:grid sm:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] sm:items-center sm:gap-x-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]'
     : 'lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] lg:gap-x-12';
@@ -1135,7 +1144,7 @@ function TeamPage(props) {
               {/* Framed by a hairline, so a portrait whose edge is near-white (a door frame, a studio
                   backdrop) keeps a clean edge against the white page instead of fading into it. */}
               {p.image ? (
-                <Img className="aspect-[4/5] w-full rounded-lg border border-line bg-surface object-cover object-top" src={p.image} alt={p.imageAlt || p.name} sizes={alone ? '(max-width: 640px) 100vw, 40vw' : team.length === 2 ? '(max-width: 640px) 100vw, 50vw' : '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'} />
+                <Img className="aspect-[4/5] w-full rounded-lg border border-line bg-surface object-cover object-top" src={p.image} alt={p.imageAlt || p.name} sizes={alone ? '(max-width: 640px) 100vw, 40vw' : team.length === 2 || lone ?'(max-width: 640px) 100vw, 50vw' : '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'} />
               ) : (
                 photos && (
                   <span aria-hidden="true" className="grid aspect-[4/5] w-full place-items-center rounded-lg bg-surface font-heading text-6xl text-primary/70">
@@ -1152,6 +1161,16 @@ function TeamPage(props) {
             </li>
           ))}
         </ul>
+        {named.length > 0 && (
+          <ul className={`${wrap} mt-16 grid gap-x-6 gap-y-6 sm:grid-cols-2 lg:grid-cols-3`}>
+            {named.map((p) => (
+              <li key={p.name} className="min-w-0 border-t border-line pt-4">
+                <h2 className="font-heading font-display-2 text-lg leading-snug text-ink">{p.name}</h2>
+                <p className="mt-1 text-[13px] font-bold uppercase tracking-[0.14em] text-accent">{p.role}</p>
+              </li>
+            ))}
+          </ul>
+        )}
       </section>
       <Cta {...props} />
     </>

@@ -260,19 +260,25 @@ export function Facts({ b }) {
     <section aria-label={`About ${b.name}`} className="mx-auto w-full max-w-page px-gutter">
       {/* A grid rather than a column flow: a long list no longer drags the
           blocks beside it out of line, and each row starts level. */}
-      <div className="grid gap-x-10 gap-y-7 border-t pb-5 pt-12 sm:grid-cols-2 lg:grid-cols-3" style={rule}>
+      {/* Each block is a card on a wash of the ground it sits on, so the section reads as laid out
+          rather than as loose text: no default bullets, and a list marked with its own rule. */}
+      <div className="grid gap-5 border-t pb-5 pt-12 sm:grid-cols-2 lg:grid-cols-3" style={rule}>
         {facts.map((fact) => (
-          <div key={fact.heading} className="min-w-0 self-start border-l-2 pl-4" style={rule}>
-            <h2 className="font-heading text-[17px] font-semibold opacity-100">{fact.heading}</h2>
-            {fact.text && <p className="mt-2 text-[16px] leading-relaxed opacity-85">{fact.text}</p>}
+          <div
+            key={fact.heading}
+            className="min-w-0 self-start rounded-2xl border p-5"
+            style={{ ...rule, backgroundColor: 'color-mix(in srgb, currentColor 4%, transparent)' }}
+          >
+            <h2 className="font-heading text-[15px] font-bold uppercase tracking-[0.1em] opacity-100">{fact.heading}</h2>
+            {fact.text && <p className="mt-2.5 text-[16px] leading-relaxed opacity-80">{fact.text}</p>}
             {fact.items?.length > 0 && (
-              <ul className="mt-2 list-disc space-y-1.5 pl-5 text-[16px] leading-relaxed opacity-85">
+              <ul className="mt-2.5 grid text-[16px] leading-relaxed opacity-80">
                 {fact.items.map((item) => {
                   const page = pageOf(item);
                   return (
-                    <li key={item} className="break-words">
+                    <li key={item} className="break-words border-t py-1.5 first:border-0 first:pt-0 last:pb-0" style={rule}>
                       {page ? (
-                        <a href={page.href} className="underline underline-offset-2 hover:opacity-100" rel="noopener">
+                        <a href={page.href} className="no-underline hover:underline hover:opacity-100" rel="noopener">
                           {page.label}
                         </a>
                       ) : (
