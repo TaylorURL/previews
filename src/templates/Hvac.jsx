@@ -564,7 +564,7 @@ function Header({ b, groups, tel, current }) {
     <header className={`sticky ${stick} z-40 border-b border-head-line bg-head`}>
       <div className={`${wrap} flex h-[76px] items-center gap-5 lg:h-[92px]`}>
         <a href="/" className={`flex min-h-[44px] min-w-0 items-center ${b.brand.logo ? 'flex-initial lg:flex-none' : 'flex-1 lg:flex-none'}`} aria-label={`${b.name} home`}>
-          <BrandLogo b={b} textClass="truncate font-extrabold tracking-[-0.02em] text-head-ink" />
+          <BrandLogo b={b} textClass="font-extrabold tracking-[-0.02em] text-head-ink" />
         </a>
 
         <nav aria-label="Main" className="mx-auto hidden lg:block">
@@ -610,7 +610,8 @@ function Header({ b, groups, tel, current }) {
             onClick={() => setOpen((v) => !v)}
           >
             {open ? <X size={19} aria-hidden="true" /> : <Menu size={19} aria-hidden="true" />}
-            <span>{open ? 'Close' : 'Menu'}</span>
+            {/* On a phone the button is its icon alone, leaving the room to the business name. */}
+            <span className="sr-only sm:not-sr-only">{open ? 'Close' : 'Menu'}</span>
           </button>
         </div>
       </div>
@@ -1738,7 +1739,8 @@ function ContactPage({ b, groups, tel }) {
             <ul className="grid gap-1 rounded-2xl border border-line p-3">
               {[
                 [Phone, tel, b.phone],
-                b.email && [Mail, `mailto:${b.email}`, b.email.split('@').flatMap((p, i) => (i ? ['@', <wbr key={i} />, p] : [p]))],
+                // A long address may break after the @ and before each dot of its domain, never mid-word.
+                b.email && [Mail, `mailto:${b.email}`, b.email.split(/(?=\.)|(?<=@)/).flatMap((p, i) => (i ? [<wbr key={i} />, p] : [p]))],
                 [MapPin, mapsHref(b), full],
               ]
                 .filter(Boolean)
