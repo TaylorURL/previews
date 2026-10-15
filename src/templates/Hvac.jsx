@@ -1304,6 +1304,14 @@ function lowerName(title, town, text) {
   return town ? lower.replace(townWords(town), town) : lower;
 }
 
+/** What the closing band asks if they need: the goods of a sale ('Marine Equipment Sales' is 'marine equipment'), else the work as a service. */
+function needOf(b, group) {
+  const name = lowerName(group.title, b.town, group.intro);
+  const goods = name.replace(/\s+(?:sales|supply|supplies)$/i, '');
+  if (goods !== name) return goods;
+  return `${name}${askOf(b).rents || /\bservices?\b/i.test(group.title) ? '' : ' service'}`;
+}
+
 function GroupPage({ b, groups, group, tel }) {
   const services = list(group.services);
   const others = groups.filter((g) => g.slug !== group.slug);
@@ -1472,7 +1480,7 @@ function GroupPage({ b, groups, group, tel }) {
       <ClosingBand
         b={b}
         tel={tel}
-        title={`Need ${lowerName(group.title, b.town, group.intro)}${askOf(b).rents || /\bservices?\b/i.test(group.title) ? '' : ' service'}?`}
+        title={`Need ${needOf(b, group)}?`}
         text="Send a request or call, and we will set up a time that works for you."
       />
     </>

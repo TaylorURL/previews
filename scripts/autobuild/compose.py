@@ -530,10 +530,15 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # ("Premium Pool Services Tailored for Austin").
         if re.match(r"(a|an|the|better|smarter|faster)\s", name, re.I) or re.search(r"\b(traditions?|legacy|decisions?|tailored)\b", name, re.I):
             return
+        # So is one that says how things ought to be ("Boating Should Be Fun,
+        # Not Stressful"), or sets one thing against another (", Not").
+        if re.search(r"\b(should|must|ought|deserves?)\b|,\s*not\b", name, re.I):
+            return
         if NOT_A_SERVICE_SHAPE.search(name) or (own and names_the_business(name, own)) or (local and local.search(name)):
             return
 
-        key = re.sub(r"[^a-z0-9 ]", "", name.lower())
+        # "Marine Equipment & Sales" is "Marine Equipment Sales" said again.
+        key = " ".join(w for w in re.sub(r"[^a-z0-9 ]", " ", name.lower()).split() if w != "and")
         stem = lambda k: re.sub(r"s\b", "", k)
         if any(stem(key).startswith(stem(k)) or stem(k).startswith(stem(key)) for k in found if k != key):
             return
