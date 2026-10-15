@@ -212,6 +212,23 @@ export function EnquiryForm({ b, fields, submitLabel, styles }) {
   );
 }
 
+/** Sites whose names are not written as their address is. */
+const SITE_NAMES = { linkedin: 'LinkedIn', youtube: 'YouTube', tiktok: 'TikTok' };
+
+/**
+ * An item that only names where a page is ('Facebook: facebook.com/…'), as the
+ * link it stands for under its own label, so it is not set out as a bare
+ * address. A bare address ('facebook.com/SierraSmilesDentistryofPasadena') is
+ * named for its site, as a long one would otherwise break mid-word.
+ */
+function pageOf(item) {
+  const m = String(item).match(/^(?:([^:]{1,40}):\s*)?((?:https?:\/\/)?(?:www\.)?([\w-]+)(?:\.[\w-]+)+\/\S*)$/i);
+  if (!m) return null;
+  const site = m[3].toLowerCase();
+  const label = m[1]?.trim() || SITE_NAMES[site] || site[0].toUpperCase() + site.slice(1);
+  return { label, href: /^https?:\/\//i.test(m[2]) ? m[2] : `https://${m[2]}` };
+}
+
 /**
  * What the business's own website says that no section of the template has a
  * place for: license numbers, certifications, affiliations, payment methods,
@@ -250,11 +267,20 @@ export function Facts({ b }) {
             {fact.text && <p className="mt-2 text-[16px] leading-relaxed opacity-85">{fact.text}</p>}
             {fact.items?.length > 0 && (
               <ul className="mt-2 list-disc space-y-1.5 pl-5 text-[16px] leading-relaxed opacity-85">
-                {fact.items.map((item) => (
-                  <li key={item} className="break-words">
-                    {item}
-                  </li>
-                ))}
+                {fact.items.map((item) => {
+                  const page = pageOf(item);
+                  return (
+                    <li key={item} className="break-words">
+                      {page ? (
+                        <a href={page.href} className="underline underline-offset-2 hover:opacity-100" rel="noopener">
+                          {page.label}
+                        </a>
+                      ) : (
+                        item
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             )}
           </div>
