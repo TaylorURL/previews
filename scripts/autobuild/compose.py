@@ -316,7 +316,9 @@ def trim(text, limit):
     text = re.sub(r"\s+([,.;:!?])", r"\1", plain(text))
     # A web address ("pools.com") and a figure ("1,200") keep theirs: a stop
     # opens up only before a capital, and either only after a word.
-    text = re.sub(r"(?<=[a-z]{2})(,|[.!?](?=[A-Z][a-z]))(?=[A-Za-z])", r"\1 ", text)
+    text = re.sub(r"(?<=[a-z]{2})(,|:|[.!?](?=[A-Z][a-z]))(?=[A-Za-z])", r"\1 ", text)
+    # A year their page set apart runs into the next word ("in 2019and is").
+    text = re.sub(r"\b((?:19|20)\d\d)(?=[a-z]{2,})", r"\1 ", text)
     # A sentence their page opens in lowercase ("for over 30 years. call
     # Rainforest Dental") takes its capital, unless the stop ends a shortening.
     text = re.sub(r"\b([A-Za-z]{2,})([.!?] )([a-z])",
@@ -486,8 +488,11 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
     """
     pattern = re.compile(vocab, re.I)
     # "Houston Bookkeeping" and "Tax Preparation (Houston)" are pages written
-    # for a search engine; the service under them is listed on its own.
-    local = re.compile(rf"\b{re.escape(town)}\b", re.I) if town else None
+    # for a search engine, and "Houston Weather and Commercial Exteriors" an
+    # article about the area; the service under them is listed on its own. A
+    # town whose name is a word ("Spring Cleanup") is left to the word.
+    near = [t for t in [town, *towns] if t and t not in ("Spring", "Liberty", "Highlands", "Humble", "Cove")]
+    local = re.compile(rf"\b(?:{'|'.join(re.escape(t) for t in near)})\b", re.I) if near else None
     # A description's sentence that sets the work in another town ("...brings
     # your dreams to life in Kingwood") was written for that town's page, and
     # is left out. A town that opens a sentence ("Spring is...") is a word.
@@ -499,7 +504,8 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
     pointer = re.compile(r"\bclick\b|\b(?:link|button|form)s? (?:below|above)\b", re.I)
     # A sentence under a label ("Color: They are brown with black...") is a
     # line of a fact sheet about the subject, not a description of the work.
-    label = re.compile(r"^[A-Z][a-z]+(?: [a-z]+)?:\s")
+    # Their page can drop the space after it ("Primer:drywall primer over...").
+    label = re.compile(r"^[A-Z][a-z]+(?: [a-z]+)?:\s?")
     found = {}
     order = []
 
@@ -534,6 +540,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # So is one that says how things ought to be ("Boating Should Be Fun,
         # Not Stressful"), or sets one thing against another (", Not").
         if re.search(r"\b(should|must|ought|deserves?)\b|,\s*not\b", name, re.I):
+            return
+        # One in their own voice ("Paints We Use") heads a page about how they
+        # work, not a service.
+        if re.search(r"\b(we|us)\b", name, re.I):
             return
         if NOT_A_SERVICE_SHAPE.search(name) or (own and names_the_business(name, own)) or (local and local.search(name)):
             return
@@ -857,7 +867,7 @@ def summary_line(groups, short, areas):
     names and the towns they cover ("Aaron's offers panel upgrades and
     generators across Houston, Katy and Cypress"), so it never repeats the
     hero's lead, which is their own description of themselves."""
-    named = [" ".join(w if (w.isupper() and len(w) > 1) or w.upper() in ACRONYMS else w.lower() for w in g["title"].split()) for g in groups[:3]]
+    named = [" ".join(w if (w.isupper() and len(w) > 1) or w.upper() in ACRONYMS or w in areas else w.lower() for w in g["title"].split()) for g in groups[:3]]
     # A name with its own "and" ("Repair and Upgrades") keeps the list apart with a comma.
     join = ", and " if any(re.search(r"\band\b|&", t) for t in named) else " and "
     what = join.join([", ".join(named[:-1]), named[-1]]) if len(named) > 1 else named[0]
