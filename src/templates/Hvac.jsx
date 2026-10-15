@@ -867,8 +867,9 @@ function PageHero({ b, crumbs, eyebrow, title, text, image, imageAlt, icon, pane
           {children}
         </div>
         {image ? (
+          // Held by its top edge, so a portrait cut to this frame keeps the person's head.
           <Img
-            className="aspect-[16/11] w-full rounded-[24px] object-cover shadow-[0_30px_60px_-35px_rgba(11,27,43,0.55)]"
+            className="aspect-[16/11] w-full rounded-[24px] object-cover object-top shadow-[0_30px_60px_-35px_rgba(11,27,43,0.55)]"
             src={image}
             alt={imageAlt}
             sizes="(min-width: 1024px) 45vw, 100vw"
@@ -1027,7 +1028,8 @@ function Home({ b, groups, tel }) {
         {b.hero.image ? (
           <>
             {/* On a phone the photo is shown whole above the words; from lg up it is the ground behind them,
-                held by its top edge so a wide hero trims the floor rather than a person's head. */}
+                held by its top edge so a wide hero trims the floor rather than a person's head. The shade stays
+                all but solid as far as the words reach, so lettering or a figure in the photo never shows through them. */}
             <Img
               className="relative block aspect-[16/10] w-full object-cover lg:absolute lg:object-top lg:inset-0 lg:-z-20 lg:aspect-auto lg:h-full"
               src={b.hero.image}
@@ -1037,7 +1039,7 @@ function Home({ b, groups, tel }) {
               data-backdrop=""
             />
             <div
-              className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_94%,#000)_0%,color-mix(in_srgb,var(--primaryDeep)_78%,transparent)_50%,color-mix(in_srgb,var(--primaryDeep)_30%,transparent)_100%)]"
+              className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_94%,#000)_0%,color-mix(in_srgb,var(--primaryDeep)_92%,transparent)_55%,color-mix(in_srgb,var(--primaryDeep)_30%,transparent)_100%)]"
               aria-hidden="true"
             />
           </>
@@ -1192,12 +1194,13 @@ function Home({ b, groups, tel }) {
 
       {b.about && (
         <section className={`${pad} bg-surface`}>
-          {/* The photo stands level with the heading, so words that run longer than it never leave a bare block above it. */}
+          {/* The photo stands level with the heading, so words that run longer than it never leave a bare block above it.
+              It is held by its top edge, so a portrait cut to the frame keeps the person's head. */}
           <div className={`${wrap} grid items-start gap-10 ${b.about.image ? 'md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]' : ''} lg:gap-20`}>
             {b.about.image && (
             <div className="relative">
               <Img
-                className="aspect-[4/3] w-full rounded-xl object-cover"
+                className="aspect-[4/3] w-full rounded-xl object-cover object-top"
                 src={b.about.image}
                 alt={b.about.imageAlt}
                 sizes="(min-width: 768px) 42vw, 100vw"
