@@ -207,7 +207,7 @@ def other_trade(text, trade):
 
 SINCE = re.compile(r"\b(?:since|established|founded|est\.?|serving [^.]{0,40} since)\s+((?:19|20)\d\d)\b", re.I)
 LICENSE = re.compile(r"\b((?:TDLR|TACLA|TECL|TDI|NPN|License|Lic\.)\s*(?:No\.?|#|Number)\s*:?\s*[A-Z]{0,6}-?\d[\w-]{3,})", re.I)
-NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|where|your|schedule|consult|consultation|request|checklist|estimator|calculator|types of|signs of|our |blog|news|faq|cost|price|pricing|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|crews?|staff|professionals?|pros|painters?|technicians?|office|branch|powered|serving|products|vice president|vp|agents?|assistants?|hygienists?|dentists?|orthodontists?|periodontists?|endodontists?|prosthodontists?|surgeons?|physicians?|receptionists?|coordinators?|managers?|industry|page|companies|contractors?|finance a|overview|dangers?)\b", re.I)
+NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|where|your|schedule|consult|consultation|request|checklist|estimator|calculator|types of|signs of|our |blog|news|faq|costs?|prices?|pricing|understanding|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|crews?|staff|professionals?|pros|painters?|technicians?|office|branch|powered|serving|products|vice president|vp|agents?|assistants?|hygienists?|dentists?|orthodontists?|periodontists?|endodontists?|prosthodontists?|surgeons?|physicians?|receptionists?|coordinators?|managers?|industry|page|companies|contractors?|finance a|overview|dangers?)\b", re.I)
 ACRONYMS = {"IRS", "CFO", "CPA", "CPAS", "HVAC", "AC", "A/C", "TPO", "LLC", "QB", "EPDM", "UV", "HOA", "1031", "S-CORP"}
 # A business's own name, or anything carrying a corporate suffix, is never
 # one of its services.
@@ -570,6 +570,12 @@ def about_of(pages, name, trade=None):
             # Their contact form's own instructions ("Use the form to request an appointment") are not about them.
             # Nor is its fine print ("By submitting, you agree... Do not upload payment-card information").
             if re.search(r"\b(?:use|fill (?:out|in)|complete|submit) (?:the|our|this) form\b|\bby submitting\b|\bdo not (?:upload|submit|send|include)\b", text, re.I):
+                continue
+            # Nor are its fields scraped as a paragraph ("Full Name * Phone Number * ... If you are human, leave this field blank.").
+            if re.search(r"\b(?:name|e-?mail|phone(?: number)?|message)\s*\*|\bleave this field (?:blank|empty)\b", text, re.I):
+                continue
+            # An article's byline ("Written by Roman Torres... Reviewed and published by... Last updated") says who wrote the page, not who they are.
+            if re.search(r"\b(?:written|reviewed|published|posted) by\b|\blast updated\b", text, re.I):
                 continue
             # Their call for job seekers ("Join a team... View our list of open positions") is a careers page, not their story.
             if re.search(r"\bopen positions\b|\bjob openings\b|\bnow hiring\b|\bjoin (?:a|our|the) (?:team|family)\b|\bapply to (?:be|join)\b", text, re.I):
