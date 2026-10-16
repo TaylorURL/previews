@@ -435,19 +435,35 @@ def _edges(arr, ground):
     return np.maximum(across, down)
 
 
+def _stands(arr, ground):
+    """Which of the mark's inked pixels stand out from `ground`, by contrast ratio."""
+    lum = _luminance(arr[..., :3].astype(np.float32))[arr[..., 3] > 127]
+    g = float(_luminance(np.array(ground, dtype=np.float32)))
+    return (np.maximum(lum, g) + 0.05) / (np.minimum(lum, g) + 0.05) >= LEGIBLE_RATIO
+
+
 def reads(arr, native):
     """How much of the mark survives on each of READ_LEVELS gray grounds, black
     to white: the share of the edges it shows on the ground it was drawn for
     that it still shows there, from 0 (gone, a white name on white) to 1 (all
     of it). The page reads this to decide, for whatever ground a logo lands on,
-    whether to draw it in its own colors or as its one-color cut."""
+    whether to draw it in its own colors or as its one-color cut.
+
+    Edges alone overrate a mark whose letters are filled with an ink close to
+    the ground and outlined in another (black letters in a blue keyline on a
+    navy footer): the keyline keeps its edges while the letters sink into the
+    ground. So each level is also no more than the share of the ink standing
+    out on the native ground that still stands out there."""
     own = _edges(arr, native)
     total = float(own.sum())
+    ink = _stands(arr, native)
     out = []
     for i in range(READ_LEVELS):
         gray = round(255 * i / (READ_LEVELS - 1))
         there = _edges(arr, (gray, gray, gray))
-        out.append(round(float(np.minimum(own, there).sum()) / total, 3) if total else 0.0)
+        edges = float(np.minimum(own, there).sum()) / total if total else 0.0
+        kept = float((ink & _stands(arr, (gray, gray, gray))).sum()) / ink.sum() if ink.any() else 0.0
+        out.append(round(min(edges, kept), 3))
     return out
 
 
