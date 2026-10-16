@@ -212,15 +212,16 @@ def other_trade(text, trade):
 
 SINCE = re.compile(r"\b(?:since|established|founded|est\.?|serving [^.]{0,40} since)\s+((?:19|20)\d\d)\b", re.I)
 LICENSE = re.compile(r"\b((?:TDLR|TACLA|TECL|TDI|NPN|License|Lic\.)\s*(?:No\.?|#|Number)\s*:?\s*[A-Z]{0,6}-?\d[\w-]{3,})", re.I)
-NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|where|your|schedule|consult|consultation|request|checklist|estimator|calculator|types of|signs (?:of|that|you)|(?:benefits?|advantages|importance) of|our|blog|news|faq|costs?|prices?|pricing|understanding|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|crews?|staff|professionals?|pros|painters?|technicians?|office|branch|powered|serving|products|vice president|vp|agents?|assistants?|hygienists?|dentists?|orthodontists?|periodontists?|endodontists?|prosthodontists?|surgeons?|physicians?|receptionists?|coordinators?|managers?|industry|page|companies|contractors?|finance a|overview|dangers?)\b", re.I)
+NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|where|your|schedule|consult|consultation|request|checklist|estimator|calculator|types of|signs (?:of|that|you)|(?:benefits?|advantages|importance) of|our|blog|news|faqs?|costs?|prices?|pricing|understanding|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|crews?|staff|professionals?|pros|painters?|technicians?|office|branch|powered|serving|products|vice president|vp|agents?|assistants?|hygienists?|dentists?|orthodontists?|periodontists?|endodontists?|prosthodontists?|surgeons?|physicians?|receptionists?|coordinators?|managers?|industry|page|companies|contractors?|finance a|overview|dangers?)\b", re.I)
 ACRONYMS = {"IRS", "CFO", "CPA", "CPAS", "HVAC", "AC", "A/C", "TPO", "LLC", "QB", "EPDM", "UV", "HOA", "1031", "S-CORP"}
 # A business's own name, or anything carrying a corporate suffix, is never
 # one of its services.
 CORPORATE = re.compile(r"\b(llc|l\.l\.c|inc|incorporated|corp|corporation|ltd|pllc|co|company)\b", re.I)
 # A numbered step, an emoji or a trademark sign, a page aimed at a town
-# ("... Houston, TX", "... in Pasadena"), and a product's one-word brand name
-# ("ClosingLock") are headings on their site, not services they sell.
-NOT_A_SERVICE_SHAPE = re.compile(r"^\d+\.\s|[^\w\s&'\u2019,./()\-\u2013+]|,\s*[A-Za-z]{2}$|\b(?i:tx|texas)$|\bin [A-Z][a-z]|^[A-Z][a-z]+[A-Z]\w*$")
+# ("... Houston, TX", "... in Pasadena"), a product's one-word brand name
+# ("ClosingLock") and a person's name with its initial ("Nicholas M. Wills")
+# are headings on their site, not services they sell.
+NOT_A_SERVICE_SHAPE = re.compile(r"^\d+\.\s|[^\w\s&'\u2019,./()\-\u2013+]|,\s*[A-Za-z]{2}$|\b(?i:tx|texas)$|\bin [A-Z][a-z]|^[A-Z][a-z]+[A-Z]\w*$|^[A-Z][a-z]+ [A-Z]\. [A-Z][a-z]+$")
 NAME_FILLER = {"the", "llc", "inc", "co", "company", "corp", "ltd", "pllc", "agency", "group"}
 
 
@@ -546,7 +547,11 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # "Select a Fence Style", "Keep the Wheels Turning") is a call to action
         # or a slogan, not a service, and one that names a warranty ("Warranty
         # on Fence Materials") is a promise.
-        if re.match(r"(find|rent|reserve|book|get|browse|shop|keep|let|stay)\b|(select|choose) (a|an|the|your)\b", name, re.I):
+        if re.match(r"(find|rent|reserve|book|get|browse|shop|keep|let|stay|click|tap)\b|(select|choose) (a|an|the|your)\b", name, re.I):
+            return
+        # One that ends on a full stop ("Click shingles to compare roof
+        # colors.") is a sentence of their page, not the name of a service.
+        if re.search(r"[a-z]{2}\.$", name, re.I):
             return
         if re.search(r"\b(warrant(y|ies)|guarantees?) (on|for)\b", name, re.I):
             return
@@ -639,14 +644,18 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
     # gives a heading the next card's words ("Successful termite treatments..."
     # under Mosquito and Wasp Control). Words that name another service and
     # not their own heading's are that service's, and go to it where its own
-    # do not name it.
+    # do not name it. Words that only pass by another service ("A self-sealing
+    # membrane installed in valleys to stop water from getting under
+    # shingles...", under Leak Barrier) are still their own heading's; the
+    # card that belongs elsewhere names its service in its opening words.
     stems = lambda t: {w[:5] for w in re.findall(r"[a-z]{4,}", t.lower())} - {"servi", "repai", "contr"}
     named = {k: stems(found[k]["title"]) for k in order}
     moved = {}
     for k in order:
         text = found[k]["text"]
         if text and not named[k] & stems(text):
-            other = next((o for o in order if o != k and named[o] & stems(text)), None)
+            opening = stems(" ".join(text.split()[:6]))
+            other = next((o for o in order if o != k and named[o] & opening), None)
             if other:
                 moved.setdefault(other, text)
                 found[k]["text"] = None

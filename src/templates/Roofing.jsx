@@ -99,8 +99,9 @@
  *   about         required  the about page, and a band on the home page
  *     title       required
  *     text        required  paragraphs: ["...", "..."]
- *     image       required
- *     imageAlt    required
+ *     image       optional  photo for the home band and the about page hero
+ *                           (else hero.image on the about page)
+ *     imageAlt    optional  required when image is set
  *     values      optional  three of { "title", "text" }
  *
  *   inspection    optional  what happens at a free inspection, on the contact
@@ -989,9 +990,30 @@ function Reviews({ b, className = '' }) {
 function AboutBand({ b }) {
   const a = b.about;
   if (!a) return null;
+  const words = (
+    <>
+      <p className={`mt-5 text-[17px] leading-[1.65] text-white/80 sm:text-[18px] ${a.image ? '' : 'lg:mt-0'}`}>{list(a.text)[0]}</p>
+      {list(a.values).length > 0 && (
+        <ul className="mt-8 grid gap-5 sm:grid-cols-3">
+          {list(a.values).map((v) => (
+            <li key={v.title} className="border-t-2 border-accent pt-4">
+              <h3 className={`${h3} text-[18px]`}>{v.title}</h3>
+              <p className="mt-1.5 text-[16px] leading-[1.55] text-white/70 lg:text-[15px]">{v.text}</p>
+            </li>
+          ))}
+        </ul>
+      )}
+      <a href="/about" className={`${ghostDark} mt-9`}>
+        About {b.shortName} <ArrowRight size={18} aria-hidden="true" />
+      </a>
+    </>
+  );
   return (
     <section className={`bg-ink text-white ${topClip} pb-[clamp(4rem,9vw,7rem)] pt-[calc(clamp(28px,5vw,88px)+clamp(3.5rem,8vw,6rem))]`}>
-      <div className={`${wrap} grid items-center gap-10 ${a.image ? 'md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]' : ''} lg:gap-20`}>
+      {/* Without a photo the heading takes the left half and the words the right, so neither half is left empty. */}
+      <div
+        className={`${wrap} grid items-center ${a.image ? 'gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]' : 'lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]'} lg:gap-20`}
+      >
         {a.image && (
           <Img
             className="aspect-[4/3] w-full object-cover [clip-path:polygon(0_0,100%_0,100%_100%,8%_100%,0_92%)]"
@@ -1000,24 +1022,12 @@ function AboutBand({ b }) {
             sizes="(min-width: 768px) 46vw, 100vw"
           />
         )}
-        <div className={a.image ? '' : 'max-w-3xl'}>
+        <div>
           <Eyebrow dark>{b.since ? `Since ${b.since}` : 'About us'}</Eyebrow>
           <h2 className={h2}>{a.title}</h2>
-          <p className="mt-5 text-[17px] leading-[1.65] text-white/80 sm:text-[18px]">{list(a.text)[0]}</p>
-          {list(a.values).length > 0 && (
-            <ul className="mt-8 grid gap-5 sm:grid-cols-3">
-              {list(a.values).map((v) => (
-                <li key={v.title} className="border-t-2 border-accent pt-4">
-                  <h3 className={`${h3} text-[18px]`}>{v.title}</h3>
-                  <p className="mt-1.5 text-[16px] leading-[1.55] text-white/70 lg:text-[15px]">{v.text}</p>
-                </li>
-              ))}
-            </ul>
-          )}
-          <a href="/about" className={`${ghostDark} mt-9`}>
-            About {b.shortName} <ArrowRight size={18} aria-hidden="true" />
-          </a>
+          {a.image && words}
         </div>
+        {!a.image && <div>{words}</div>}
       </div>
     </section>
   );
@@ -1568,8 +1578,8 @@ function AboutPage({ b, tel }) {
         eyebrow={b.since ? `Since ${b.since}` : `About ${b.shortName}`}
         title={a.title}
         lead={list(a.text)[0]}
-        image={a.image}
-        imageAlt={a.imageAlt}
+        image={a.image || b.hero.image}
+        imageAlt={a.image ? a.imageAlt : b.hero.imageAlt}
       />
       <section className={pad}>
         <div className={`${wrap} grid gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-20`}>
