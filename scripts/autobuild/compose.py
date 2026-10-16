@@ -509,6 +509,11 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
     # line of a fact sheet about the subject, not a description of the work.
     # Their page can drop the space after it ("Primer:drywall primer over...").
     label = re.compile(r"^[A-Z][a-z]+(?: [a-z]+)?:\s?")
+    # A sentence that hands the work to a named company ("With Aquatic
+    # Service, you don't have to!") was copied from that company's site
+    # unless the name is their own.
+    credit = re.compile(r"^(?i:with|at|call|choose|trust)\s+((?:[A-Z][\w'’&]*\s?){1,5}),\s*(?:you|we)\b")
+    stranger = lambda s: bool(own) and bool(credit.match(s)) and not names_the_business(credit.match(s).group(1), own)
     found = {}
     order = []
 
@@ -540,8 +545,9 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # Quality Construction", "The Need for Commercial Storage", "Better
         # Decisions Before Construction"), or that speaks of their history, is
         # a slogan, not a service. So is one that sells the fit of their work
-        # ("Premium Pool Services Tailored for Austin").
-        if re.match(r"(a|an|the|better|smarter|faster)\s", name, re.I) or re.search(r"\b(traditions?|legacy|decisions?|tailored)\b", name, re.I):
+        # ("Premium Pool Services Tailored for Austin") or measures it against
+        # before ("Making Pools Look Better Than Ever").
+        if re.match(r"(a|an|the|better|smarter|faster)\s", name, re.I) or re.search(r"\b(traditions?|legacy|decisions?|tailored|than ever)\b|\w+er than\b", name, re.I):
             return
         # So is one that says how things ought to be ("Boating Should Be Fun,
         # Not Stressful"), or sets one thing against another (", Not").
@@ -583,7 +589,7 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
                     if nxt_tag == "p" and 60 <= len(nxt) <= 700:
                         desc = trim(" ".join(
                             s for s in sentences(nxt)
-                            if not (elsewhere and elsewhere.search(s)) and not pointer.search(s) and not slogan.match(s) and not label.match(s) and FINISHED.search(s)
+                            if not (elsewhere and elsewhere.search(s)) and not pointer.search(s) and not slogan.match(s) and not label.match(s) and not stranger(s) and FINISHED.search(s)
                         ), 360)
                         break
                     if nxt_tag.startswith("h"):
