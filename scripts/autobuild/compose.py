@@ -550,8 +550,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         if re.match(r"(a|an|the|better|smarter|faster)\s", name, re.I) or re.search(r"\b(traditions?|legacy|decisions?|tailored|than ever)\b|\w+er than\b", name, re.I):
             return
         # So is one that says how things ought to be ("Boating Should Be Fun,
-        # Not Stressful"), or sets one thing against another (", Not").
-        if re.search(r"\b(should|must|ought|deserves?)\b|,\s*not\b", name, re.I):
+        # Not Stressful"), or sets one thing against another (", Not"), or
+        # says after a comma how the work comes ("Modern Equipment, Standard",
+        # "Quality Work, Guaranteed").
+        if re.search(r"\b(should|must|ought|deserves?)\b|,\s*not\b|,\s*(?:standard|included|guaranteed|built[- ]in|\w+ed)$", name, re.I):
             return
         # One in their own voice ("Paints We Use") heads a page about how they
         # work, not a service.
