@@ -162,6 +162,8 @@ const ghostLight = `${btn} border-2 border-ink/20 text-ink hover:border-ink`;
 
 const list = (value) => (Array.isArray(value) ? value : []);
 const pad2 = (n) => String(n).padStart(2, '0');
+// Letters in the longest word, which a heading or cell must hold on one line.
+const longest = (...texts) => Math.max(0, ...texts.flatMap((t) => String(t || '').split(/\s+/)).map((w) => w.length));
 const groupOf = (s) => (GROUPS.some(([key]) => key === s.group) ? s.group : 'residential');
 const servicesOf = (b) => list(b.services).filter((s) => s && s.slug && s.title);
 // A short line that only says the title again is left out under it.
@@ -374,7 +376,7 @@ function Header({ b, tel }) {
           setMenu(name);
         }
       }}
-      className={`flex h-full cursor-pointer items-center gap-1.5 border-b-[3px] px-1 font-heading text-[17px] font-semibold uppercase tracking-[0.06em] transition ${
+      className={`flex h-full cursor-pointer items-center gap-1.5 whitespace-nowrap border-b-[3px] px-1 font-heading text-[17px] font-semibold uppercase tracking-[0.06em] transition ${
         menu === name ? 'border-accent text-head-ink' : 'border-transparent text-head-ink hover:text-head-hover'
       }`}
     >
@@ -382,14 +384,15 @@ function Header({ b, tel }) {
       <ChevronDown size={16} className={`transition ${menu === name ? 'rotate-180' : ''}`} aria-hidden="true" />
     </button>
   );
-  const link = 'flex h-full items-center border-b-[3px] border-transparent px-1 font-heading text-[17px] font-semibold uppercase tracking-[0.06em] text-head-ink no-underline transition hover:text-head-hover';
+  const link = 'flex h-full items-center whitespace-nowrap border-b-[3px] border-transparent px-1 font-heading text-[17px] font-semibold uppercase tracking-[0.06em] text-head-ink no-underline transition hover:text-head-hover';
   const towns = list(b.serviceArea);
   const services = servicesOf(b);
 
   return (
     <header className={`sticky ${b.preview ? 'top-11' : 'top-0'} z-40 border-b border-head-line bg-head`}>
       <div className={`${wrap} flex h-[76px] items-stretch gap-6 lg:h-[92px]`}>
-        <a href="/" className="flex min-w-0 flex-initial items-center no-underline lg:flex-none" aria-label={`${b.name} home`}>
+        {/* The menu items keep to one line; when the bar is tight the name beside the logo wraps instead. */}
+        <a href="/" className="flex min-w-0 flex-initial items-center no-underline" aria-label={`${b.name} home`}>
           <BrandLogo b={b} textClass="font-heading uppercase text-head-ink" />
         </a>
 
@@ -693,9 +696,15 @@ function PageHero({ b, tel, crumbs, eyebrow, title, lead, image, imageAlt }) {
             ))}
           </ol>
         </nav>
-        <div className="max-w-[40rem] lg:max-w-[46%]">
+        <div className="max-w-[40rem] [container-type:inline-size] lg:max-w-[46%]">
           <Eyebrow dark>{eyebrow}</Eyebrow>
-          <h1 className={`${h1} !text-[clamp(2.4rem,1.4rem+3.8vw,4.5rem)]`}>{title}</h1>
+          {/* A long word ('Construction') is set smaller until it fits the column whole, rather than broken. */}
+          <h1
+            className={`${h1} !text-[min(clamp(2.4rem,1.4rem+3.8vw,4.5rem),var(--fit))]`}
+            style={{ '--fit': `${(100 / (Math.max(longest(title), 1) * 0.78)).toFixed(2)}cqi` }}
+          >
+            {title}
+          </h1>
           {lead && <p className="mt-6 text-[17px] leading-[1.6] text-white/85 sm:text-[19px]">{lead}</p>}
           <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
             <a href="/contact" className={solid}>
@@ -1029,7 +1038,8 @@ function AreasBand({ b }) {
             All Service Areas
           </a>
         </div>
-        <ul className="grid grid-cols-2 content-start self-start border-l-2 border-t-2 border-ink sm:grid-cols-3">
+        {/* On a phone a half-width cell holds a word of seven letters; a longer town name takes the full width, so it is never broken. */}
+        <ul className={`grid ${longest(...towns) > 7 ? 'grid-cols-1' : 'grid-cols-2'} content-start self-start border-l-2 border-t-2 border-ink sm:grid-cols-3`}>
           {towns.map((t, i) => (
             <li key={t} className="border-b-2 border-r-2 border-ink bg-white">
               <a href={`/service-areas#${townId(t)}`} className="flex min-h-[64px] items-center gap-3 px-4 py-3 text-ink no-underline transition hover:bg-ink hover:text-white">
