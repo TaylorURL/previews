@@ -1040,9 +1040,10 @@ function Home({ b, groups, tel }) {
         {b.hero.image && (
           // On a phone the photo is shown whole above the words; from lg up it is framed whole below them. Laid
           // behind the words and the card, its subject (mostly in the middle) was shaded out or hidden by the card.
+          // Cropped about the middle, not the top: a top-anchored band kept the sky and cut the work off at the waist.
           <div className="lg:order-last lg:mx-auto lg:w-full lg:max-w-page lg:px-gutter lg:pb-24">
             <Img
-              className="block aspect-[16/10] w-full object-cover lg:aspect-[2/1] lg:rounded-[24px] lg:object-top lg:shadow-[0_30px_60px_-35px_rgba(0,0,0,0.6)]"
+              className="block aspect-[16/10] w-full object-cover lg:aspect-[16/9] lg:rounded-[24px] lg:shadow-[0_30px_60px_-35px_rgba(0,0,0,0.6)]"
               src={b.hero.image}
               alt={b.hero.imageAlt || ''}
               sizes="(min-width: 1024px) 1320px, 100vw"
