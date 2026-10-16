@@ -571,6 +571,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # Bathrooms or Doorways") is a sign to look for, not a service.
         if re.search(r"\bnear\b", name, re.I):
             return
+        # One named only for the trade ("Insurance Services", "Roofing
+        # Solutions") is the heading over their services, not one of them.
+        if GENERIC_SERVICE.match(name) and re.search(r"\b(?:services|solutions)$", name, re.I):
+            return
         if NOT_A_SERVICE_SHAPE.search(name) or (own and names_the_business(name, own)) or (local and local.search(name)):
             return
 
