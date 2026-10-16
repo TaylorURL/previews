@@ -60,7 +60,7 @@
  *     title       required  Title Case name, "Roof Repair"
  *     short       required  one-line description for the mega menu
  *     text        required  one or two sentences for cards and the page lead
- *     image       optional  photo for the card and the page hero
+ *     image       optional  photo for the card and the page hero (else hero.image)
  *     imageAlt    optional  required when image is set
  *     body        optional  paragraphs for the service page: ["...", "..."]
  *     points      optional  what the service includes, a checklist
@@ -164,6 +164,8 @@ const list = (value) => (Array.isArray(value) ? value : []);
 const pad2 = (n) => String(n).padStart(2, '0');
 const groupOf = (s) => (GROUPS.some(([key]) => key === s.group) ? s.group : 'residential');
 const servicesOf = (b) => list(b.services).filter((s) => s && s.slug && s.title);
+// A short line that only says the title again is left out under it.
+const shortOf = (s) => (s.short && s.short.trim().toLowerCase() !== s.title.trim().toLowerCase() ? s.short : null);
 const STEP_COLS = { 3: 'lg:grid-cols-3', 4: 'lg:grid-cols-4', 5: 'lg:grid-cols-5', 6: 'lg:grid-cols-6' };
 
 /** The extra pages this business's site has, from its services. */
@@ -247,7 +249,7 @@ function MegaServices({ b, id, onPick }) {
                         {s.title}
                         <ArrowRight size={15} className="opacity-0 transition group-hover/item:opacity-100" aria-hidden="true" />
                       </span>
-                      <span className="mt-0.5 block text-[15px] leading-snug text-ink/65">{s.short}</span>
+                      {shortOf(s) && <span className="mt-0.5 block text-[15px] leading-snug text-ink/65">{shortOf(s)}</span>}
                     </a>
                   </li>
                 ))}
@@ -463,7 +465,7 @@ function Header({ b, tel }) {
                                 <li key={s.slug}>
                                   <a href={`/services/${s.slug}`} className="block border-l-[3px] border-primary/30 py-2.5 pl-4 text-ink no-underline">
                                     <span className="block text-[17px] font-semibold">{s.title}</span>
-                                    <span className="block text-[15px] leading-snug text-ink/65">{s.short}</span>
+                                    {shortOf(s) && <span className="block text-[15px] leading-snug text-ink/65">{shortOf(s)}</span>}
                                   </a>
                                 </li>
                               ))}
@@ -629,7 +631,7 @@ function HomeHero({ b, tel, rating }) {
         ) : (rating || promises.length > 0) && (
           <div className="border-l-4 border-accent bg-[color-mix(in_srgb,var(--ink)_78%,transparent)] p-6 backdrop-blur-sm sm:p-7">
             {rating && (
-              <div className="mb-6 flex items-center gap-4 border-b border-white/15 pb-6">
+              <div className={`flex items-center gap-4 ${promises.length > 0 ? 'mb-6 border-b border-white/15 pb-6' : ''}`}>
                 <strong className="font-heading text-[56px] font-bold leading-none">{Number(b.rating).toFixed(1)}</strong>
                 <div className="grid gap-1.5">
                   <Stars value={b.rating} size={18} />
@@ -1354,8 +1356,8 @@ function ServicePage({ b, tel, s }) {
         eyebrow={group}
         title={s.title}
         lead={s.text}
-        image={s.image}
-        imageAlt={s.imageAlt}
+        image={s.image || b.hero.image}
+        imageAlt={s.image ? s.imageAlt : b.hero.imageAlt}
       />
       <section className={pad}>
         <div className={`${wrap} grid items-start gap-12 ${said ? 'lg:grid-cols-[minmax(0,1fr)_380px]' : ''} lg:gap-16`}>
@@ -1451,7 +1453,7 @@ function ServicePage({ b, tel, s }) {
                     <span className="font-heading text-[15px] font-semibold text-primary">{pad2(i + 1)}</span>
                     <span className="min-w-0 flex-1">
                       <span className={`${h3} block text-[21px] group-hover:text-primary`}>{o.title}</span>
-                      <span className="mt-1 block text-[15px] leading-snug text-ink/65">{o.short}</span>
+                      {shortOf(o) && <span className="mt-1 block text-[15px] leading-snug text-ink/65">{shortOf(o)}</span>}
                     </span>
                     <ArrowRight size={18} className="flex-none text-primary transition group-hover:translate-x-1" aria-hidden="true" />
                   </a>
@@ -1480,30 +1482,37 @@ function AreasPage({ b, tel }) {
         image={b.areasImage || b.hero.image}
         imageAlt={b.areasImage ? b.areasImageAlt : b.hero.imageAlt}
       />
-      <section className={pad}>
-        <div className={wrap}>
-          <h2 className={`${h2} mb-10`}>Towns we serve</h2>
-          <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {towns.map((t, i) => (
-              <li
-                key={t}
-                id={townId(t)}
-                className={`${anchor} flex min-h-[132px] flex-col justify-between border-2 border-ink p-6 target:border-primary target:bg-surface`}
-              >
-                <span className="font-heading text-[15px] font-semibold text-primary">{pad2(i + 1)}</span>
-                <span>
-                  <span className={`${h3} block text-[28px]`}>{t}</span>
-                  <span className="mt-1 block text-[15px] text-ink/65">
-                    {t}, {b.state}
-                    {t === b.town ? ' · home base' : ''}
+      {/* One town would be a lone card in an empty row; the hero and the address below already name it. */}
+      {towns.length > 1 && (
+        <section className={pad}>
+          <div className={wrap}>
+            <h2 className={`${h2} mb-10`}>Towns we serve</h2>
+            <ul className={`grid gap-4 sm:grid-cols-2 ${towns.length > 2 ? 'lg:grid-cols-3' : ''}`}>
+              {towns.map((t, i) => (
+                <li
+                  key={t}
+                  id={townId(t)}
+                  className={`${anchor} flex min-h-[132px] flex-col justify-between border-2 border-ink p-6 target:border-primary target:bg-surface`}
+                >
+                  <span className="font-heading text-[15px] font-semibold text-primary">{pad2(i + 1)}</span>
+                  <span>
+                    <span className={`${h3} block text-[28px]`}>{t}</span>
+                    <span className="mt-1 block text-[15px] text-ink/65">
+                      {t}, {b.state}
+                      {t === b.town ? ' · home base' : ''}
+                    </span>
                   </span>
-                </span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-      <section className={`bg-surface ${pad}`}>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+      {/* The menu's link to a lone town lands on the address. */}
+      <section
+        id={towns.length > 1 ? undefined : townId(towns[0] || b.town)}
+        className={`${towns.length > 1 ? '' : anchor} bg-surface ${pad}`}
+      >
         <div className={`${wrap} grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16`}>
           <div>
             <Eyebrow>Find us</Eyebrow>
