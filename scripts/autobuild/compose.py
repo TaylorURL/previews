@@ -304,6 +304,11 @@ LEADING = re.compile(r"(?:at|in|on|for|with|from|by|through|throughout|since|aft
 # major aspects.") has its point in the sentences after it.
 ANNOUNCES = re.compile(r"\b(?:two|three|four|five|six|seven|several|a few|the following)\s+(?:\w+\s+)?(?:aspects|things|reasons|ways|steps|principles|values|pillars|parts|goals|points|qualities)[.:]?$", re.I)
 
+# A paragraph that opens on its block's headline, run in without a stop ("Give
+# Your Roof a New Lease on Life Your roof has always..."), starts its sentence
+# where a capitalised opener meets a lowercase word; the headline is cut away.
+RUN_IN = re.compile(r"^(?:(?:[A-Z][\w'’-]*,?|a|an|the|and|or|of|on|in|for|to|with|at|by|&)\s+){3,}[A-Z][\w'’-]*\s+(?=(?:Your|Our|We|You|At|When|If|This|It|Whether|With)\s+[a-z])")
+
 # Misspellings their page makes of a common word, put right.
 MISSPELT = {r"\bverity of\b": "variety of", r"\bVerity of\b": "Variety of", r"\blazer\b": "laser", r"\bLazer\b": "Laser"}
 
@@ -612,7 +617,7 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
                         continue
                     if nxt_tag == "p" and 60 <= len(nxt) <= 700:
                         desc = trim(" ".join(
-                            s for s in sentences(nxt)
+                            s for s in sentences(RUN_IN.sub("", plain(nxt)))
                             if not (elsewhere and elsewhere.search(s)) and not pointer.search(s) and not slogan.match(s) and not label.match(s) and not stranger(s) and FINISHED.search(s)
                         ), 360)
                         break
