@@ -207,7 +207,7 @@ def other_trade(text, trade):
 
 SINCE = re.compile(r"\b(?:since|established|founded|est\.?|serving [^.]{0,40} since)\s+((?:19|20)\d\d)\b", re.I)
 LICENSE = re.compile(r"\b((?:TDLR|TACLA|TECL|TDI|NPN|License|Lic\.)\s*(?:No\.?|#|Number)\s*:?\s*[A-Z]{0,6}-?\d[\w-]{3,})", re.I)
-NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|where|your|schedule|consult|consultation|request|checklist|estimator|calculator|types of|signs of|our |blog|news|faq|costs?|prices?|pricing|understanding|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|crews?|staff|professionals?|pros|painters?|technicians?|office|branch|powered|serving|products|vice president|vp|agents?|assistants?|hygienists?|dentists?|orthodontists?|periodontists?|endodontists?|prosthodontists?|surgeons?|physicians?|receptionists?|coordinators?|managers?|industry|page|companies|contractors?|finance a|overview|dangers?)\b", re.I)
+NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|where|your|schedule|consult|consultation|request|checklist|estimator|calculator|types of|signs (?:of|that|you)|our|blog|news|faq|costs?|prices?|pricing|understanding|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|crews?|staff|professionals?|pros|painters?|technicians?|office|branch|powered|serving|products|vice president|vp|agents?|assistants?|hygienists?|dentists?|orthodontists?|periodontists?|endodontists?|prosthodontists?|surgeons?|physicians?|receptionists?|coordinators?|managers?|industry|page|companies|contractors?|finance a|overview|dangers?)\b", re.I)
 ACRONYMS = {"IRS", "CFO", "CPA", "CPAS", "HVAC", "AC", "A/C", "TPO", "LLC", "QB", "EPDM", "UV", "HOA", "1031", "S-CORP"}
 # A business's own name, or anything carrying a corporate suffix, is never
 # one of its services.
@@ -676,8 +676,10 @@ def about_of(pages, name, trade=None):
             if not re.match(r"[A-Z0-9\"'\u201c]", text) or "\u2026" in text or "..." in text:
                 continue
             # A numbered step of how they work ("1. Walkthrough and measurements
-            # We review...") is a process with its heading run in, not their story.
-            if re.match(r"(?:step\s*)?\d{1,2}[.):]\s", text, re.I):
+            # We review...") is a process with its heading run in, not their story,
+            # as is a numbered item of a list of their services, its space lost
+            # ("3.Siding & Trim Installation: Enhance your home's...").
+            if re.match(r"(?:step\s*)?\d{1,2}[.):](?:\s|[A-Z])", text, re.I):
                 continue
             # A customer's review quoted on their page ("5 Stars - ...") is not their description of themselves.
             if re.fullmatch(r"[\"\u201c].*[\"\u201d]", text, re.S) or re.search(r"\b[1-5]\s*stars?\b|\u2605", text, re.I):
