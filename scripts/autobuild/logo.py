@@ -64,6 +64,10 @@ class Unfit(Exception):
 STRIP_MIN = 14
 STRIP_MOST = 74
 RULE_SHARE = 0.05
+# A badge's name is set small inside it, often over its picture (a red name
+# across a map and a skyline), so it is drawn up to this tall where its file
+# holds the pixels, and never under 74.
+BADGE_MOST = 84
 
 
 def _runs(ink):
@@ -95,7 +99,7 @@ def drawn_size(ratio, strip=1.0, most=None):
     lower and wider, badges taller so the name inside them reads, a mark with
     a thin strip of words taller so the strip reads (never past `most`, the
     file's own height), nothing past 260 across."""
-    height = 48 if ratio >= 3.2 else 58 if ratio >= 1.6 else 74
+    height = 48 if ratio >= 3.2 else 58 if ratio >= 1.6 else max(74, min(BADGE_MOST, most or BADGE_MOST))
     height = max(height, min(STRIP_MIN / strip, STRIP_MOST, most or STRIP_MOST))
     width = height * ratio
     if width > 260:
