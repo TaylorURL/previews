@@ -1213,8 +1213,9 @@ function Home({ b, groups, tel }) {
               <div>
                 <Eyebrow>{b.about.eyebrow || 'About us'}</Eyebrow>
                 <h2 className={h2}>{b.about.title}</h2>
+                {/* A lone card is drawn to its own width with the stars and the review count, not stretched into a bare white strip. */}
                 {aboutFacts && (
-                  <div className={`mt-8 grid gap-4 ${b.since && rating ? 'grid-cols-2' : ''}`}>
+                  <div className={`mt-8 grid gap-4 ${b.since && rating ? 'grid-cols-2' : 'justify-items-start'}`}>
                     {b.since && (
                       <div className="rounded-2xl bg-white p-5">
                         <p className="text-[14px] text-muted">Serving {b.town} since</p>
@@ -1224,7 +1225,10 @@ function Home({ b, groups, tel }) {
                     {rating && (
                       <div className="rounded-2xl bg-white p-5">
                         <p className="text-[14px] text-muted">Google rating</p>
-                        <p className="mt-1 font-heading text-[30px] font-extrabold tracking-[-0.03em] text-ink">{Number(b.rating).toFixed(1)}</p>
+                        <p className="mt-1 flex flex-wrap items-center gap-x-3 font-heading text-[30px] font-extrabold tracking-[-0.03em] text-ink">
+                          {Number(b.rating).toFixed(1)} <Stars value={b.rating} size={18} />
+                        </p>
+                        <p className="mt-1 text-[14px] text-muted">From {b.reviewCount.toLocaleString()} customer reviews</p>
                       </div>
                     )}
                   </div>
@@ -1657,7 +1661,10 @@ function AboutPage({ b, groups, tel }) {
                 {rating && (
                   <div className="rounded-2xl bg-surface p-5">
                     <p className="text-[14px] text-muted">Google rating</p>
-                    <p className="mt-1 font-heading text-[30px] font-extrabold tracking-[-0.03em] text-ink">{Number(b.rating).toFixed(1)}</p>
+                    <p className="mt-1 flex flex-wrap items-center gap-x-3 font-heading text-[30px] font-extrabold tracking-[-0.03em] text-ink">
+                      {Number(b.rating).toFixed(1)} <Stars value={b.rating} size={18} />
+                    </p>
+                    <p className="mt-1 text-[14px] text-muted">From {b.reviewCount.toLocaleString()} customer reviews</p>
                   </div>
                 )}
               </div>

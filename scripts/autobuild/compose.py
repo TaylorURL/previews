@@ -550,11 +550,12 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
             return
         # A heading that opens on an article or a comparison ("A Tradition of
         # Quality Construction", "The Need for Commercial Storage", "Better
-        # Decisions Before Construction"), or that speaks of their history, is
-        # a slogan, not a service. So is one that sells the fit of their work
+        # Decisions Before Construction"), or on every one of a thing ("Every
+        # Fence Tells a Story"), or that speaks of their history, is a slogan,
+        # not a service. So is one that sells the fit of their work
         # ("Premium Pool Services Tailored for Austin") or measures it against
         # before ("Making Pools Look Better Than Ever").
-        if re.match(r"(a|an|the|better|smarter|faster)\s", name, re.I) or re.search(r"\b(traditions?|legacy|decisions?|tailored|than ever)\b|\w+er than\b", name, re.I):
+        if re.match(r"(a|an|the|every|each|better|smarter|faster)\s", name, re.I) or re.search(r"\b(traditions?|legacy|decisions?|tailored|than ever)\b|\w+er than\b", name, re.I):
             return
         # So is one that says how things ought to be ("Boating Should Be Fun,
         # Not Stressful"), or sets one thing against another (", Not"), or
@@ -664,6 +665,9 @@ def about_of(pages, name, trade=None):
             # An article's byline ("Written by Roman Torres... Reviewed and published by... Last updated") says who wrote the page, not who they are.
             if re.search(r"\b(?:written|reviewed|published|posted) by\b|\blast updated\b", text, re.I):
                 continue
+            # A draft they never filled in ("backed by [warranty terms], in writing") is a template's words, not theirs.
+            if re.search(r"\[[^\]]{2,40}\]", text):
+                continue
             # Their call for job seekers ("Join a team... View our list of open positions") is a careers page, not their story.
             if re.search(r"\bopen positions\b|\bjob openings\b|\bnow hiring\b|\bjoin (?:a|our|the) (?:team|family)\b|\bapply to (?:be|join)\b", text, re.I):
                 continue
@@ -741,8 +745,10 @@ def about_of(pages, name, trade=None):
 # sentence ("Meet Shane Pellerin I am Attorney..."); the heading is left off.
 HEADING_RUN_IN = re.compile(r"^(?:Meet|Welcome to|About)\s[^.!?,:;]*?\s(?=(?:I|We|Our)\s)")
 # A description that stops without a full stop was cut off by the page or the
-# search snippet ("...that has defined our Houston").
-FINISHED = re.compile(r"[.!?][\"'”)]?$")
+# search snippet ("...that has defined our Houston"), as was one that trails off
+# ("Why Commercial Fences Matter for Every Business Every..."), an article's
+# teaser for a page we don't have.
+FINISHED = re.compile(r"(?<!\.\.)[.!?][\"'”)]?$")
 
 
 def names_a_service(text, services):
