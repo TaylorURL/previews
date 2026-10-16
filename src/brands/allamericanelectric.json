@@ -1,0 +1,90 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "All American Electric LLC",
+  "shortName": "All American Electric",
+  "phone": "(713) 999-3531",
+  "email": "info@all-americanelectric.com",
+  "address": "9230 Keough Rd #100",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77040",
+  "rating": 4.8,
+  "reviewCount": 33,
+  "license": "TECL #37743",
+  "brand": {
+    "primary": "#18194a",
+    "primaryDeep": "#111134",
+    "accent": "#d65053",
+    "ink": "#161a23",
+    "surface": "#f1f1f4",
+    "muted": "#5b6470",
+    "line": "#dedfe0",
+    "heading": "'Barlow Condensed', system-ui, sans-serif",
+    "body": "'Barlow Condensed', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&display=swap",
+    "logo": "/brands/allamericanelectric/logo.webp",
+    "logoMono": "/brands/allamericanelectric/logo-mono.webp",
+    "logoWidth": 122,
+    "logoHeight": 84,
+    "logoRatio": 1.449,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.227,
+      0.102,
+      0.123,
+      0.17,
+      0.264,
+      0.389,
+      0.509,
+      0.629,
+      0.754,
+      0.88,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "All American Electric",
+    "title": "Generators and everything electrical, under one roof",
+    "lead": "Licensed Houston electrical contractor for residential, commercial, generators, EV charging and 24/7 emergency service across Greater Houston.",
+    "titleAccent": "in Houston"
+  },
+  "serviceArea": [
+    "Houston",
+    "Humble",
+    "Katy",
+    "Sugar Land",
+    "Spring",
+    "The Woodlands",
+    "Cypress",
+    "Tomball",
+    "Bellaire",
+    "Missouri City"
+  ],
+  "summary": "All American Electric offers generators and panels & service upgrades across Houston, Humble and Katy.",
+  "groups": [
+    {
+      "slug": "generators",
+      "title": "Generators",
+      "icon": "zap",
+      "summary": "Standby generators — installation, service, interlocks and backup power solutions.",
+      "intro": "Standby generators — installation, service, interlocks and backup power solutions."
+    },
+    {
+      "slug": "panels-service-upgrades",
+      "title": "Panels & Service Upgrades",
+      "icon": "zap",
+      "summary": "Panel replacements, breaker work, service upgrades and load-related work.",
+      "intro": "Panel replacements, breaker work, service upgrades and load-related work."
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "About All American Electric",
+    "text": [
+      "General contractors, property managers and owners across Greater Houston count on our crews for tenant build-outs, retail and restaurant work, and commercial service calls — on bid, on schedule, on budget.",
+      "When the Texas grid goes down, your lights stay on. As an authorized Generac dealer we size, install, service and maintain standby generators for homes and businesses — and we install and service Cummins, Kohler and Briggs & Stratton units too — including the pad, gas line, transfer switch, permits and startup.",
+      "You approve a written price before we start. No hourly surprises, no hidden fees, no \"while we're here\" upsells."
+    ]
+  }
+}

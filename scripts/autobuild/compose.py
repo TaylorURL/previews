@@ -561,12 +561,13 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # A heading that opens on an article or a comparison ("A Tradition of
         # Quality Construction", "The Need for Commercial Storage", "Better
         # Decisions Before Construction"), or on every one of a thing ("Every
-        # Fence Tells a Story"), or that speaks of their history, is a slogan,
-        # not a service. So is one that sells the fit of their work
+        # Fence Tells a Story"), or on all of the trade ("Everything
+        # Electrical, Under One Roof"), or that speaks of their history, is a
+        # slogan, not a service. So is one that sells the fit of their work
         # ("Premium Pool Services Tailored for Austin", "Effective Treatments
         # for Every Texas Pest") or measures it against before ("Making Pools
         # Look Better Than Ever").
-        if re.match(r"(a|an|the|every|each|better|smarter|faster)\s", name, re.I) or re.search(r"\b(traditions?|legacy|decisions?|tailored|than ever|for (?:every|each))\b|\w+er than\b", name, re.I):
+        if re.match(r"(a|an|the|every|everything|each|better|smarter|faster)\s", name, re.I) or re.search(r"\b(traditions?|legacy|decisions?|tailored|than ever|for (?:every|each)|under one roof)\b|\w+er than\b", name, re.I):
             return
         # So is one that says how things ought to be ("Boating Should Be Fun,
         # Not Stressful"), or sets one thing against another (", Not"), or
@@ -718,6 +719,14 @@ def about_of(pages, name, trade=None):
                 or re.search(r"\b(?:helped|showed|treated|fixed|taught|walked|took care of|got) me\b", text, re.I)
             ):
                 continue
+            # Or one a customer signs as "we", of the owner as "he" or "she"
+            # ("We've known Scott with Highland Roofing for almost 10 years...
+            # he consistently checked on our roof").
+            if re.search(r"\bwe(?:'ve|’ve| have) (?:known|used|hired|trusted) [A-Z]", text) or (
+                re.search(r"\b(?:he|she)\b", text, re.I)
+                and re.search(r"\b(?:on|to|at) (?:our|my) (?:roof|home|house|property|yard|pool)\b|\bset (?:him|her|them) apart\b|\bgave (?:us|me) peace of mind\b", text, re.I)
+            ):
+                continue
             # Nor is their reply to one ("Hi, Tom. We must have done something
             # right...", "Thank you so much for your kind words, Tonya!").
             if re.match(r"(?:hi|hello|hey|dear)\b", text, re.I) or re.search(r"\b(?:thank you|thanks)\b[^.!?]{0,40}\b(?:kind words|review|rating|feedback)\b|\brat(?:e|ing) us\b", text, re.I):
@@ -739,6 +748,13 @@ def about_of(pages, name, trade=None):
             ]
             while kept and re.match(r"\w+ also\b", kept[0], re.I):
                 kept.pop(0)
+            # A sentence a paragraph already told says again with a word or two
+            # changed ("KleeCo specializes in advising and finding the right
+            # insurance coverage..." over "KleeCo Insurance specializes in
+            # advising and finding insurance coverage...") is told once.
+            words = lambda t: set(re.findall(r"[a-z]+", t.lower()))
+            told = [words(s) for c in chosen for s in sentences(c)]
+            kept = [s for s in kept if not any(min(len(words(s)), len(t)) >= 8 and len(words(s) & t) >= 0.8 * min(len(words(s)), len(t)) for t in told)]
             # A lone sentence that opens a story it never tells ("...was born
             # from a simple frustration and an entrepreneurial spark that
             # changed everything") is a teaser for a page we don't have.
@@ -749,7 +765,6 @@ def about_of(pages, name, trade=None):
             # A paragraph their site repeats with a word or two changed
             # ("the team at Alex Pools Service" on one page, "Alex Pools" on
             # another) is the same paragraph, and is told once.
-            words = lambda t: set(re.findall(r"[a-z]+", t.lower()))
             if cut and any(len(words(cut) & words(c)) >= 0.8 * min(len(words(cut)), len(words(c))) for c in chosen):
                 continue
             if cut and cut not in chosen:
@@ -804,6 +819,11 @@ def lead_of(pages, about, trade=None, services=()):
             # ... parts@... Name(Required) First Last Email(Required)...") is
             # the form's labels, not what they do.
             if CONTACT_LINE.search(text) or re.search(r"\(required\)", text, re.I):
+                continue
+            # A description whose list names the same place twice ("to Deer
+            # Park, TX, and TX, AZ, ME, TN, and CO") was pieced together by the
+            # site's settings, not written; their own about text says it.
+            if re.search(r"\b(\w+), and \1\b", text):
                 continue
             if len(text) >= 60 and re.match(r"[A-Z]", text) and not re.search(r"cookie|javascript|internet explorer|\bbrowsers?\b|\||near me|call us|\u2026|\.\.\.", text, re.I):
                 return text, f"{page.url} meta {key}"
