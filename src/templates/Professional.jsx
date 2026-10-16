@@ -606,13 +606,13 @@ function Stats({ b }) {
   ].filter(Boolean);
   // A lone figure is no strip: it would sit in a wide box of its own.
   if (items.length < 2) return null;
-  const cols = ['', '', 'grid-cols-2', 'grid-cols-2 md:grid-cols-3', 'grid-cols-2 md:grid-cols-4'][items.length];
+  const cols = ['', '', 'grid-cols-2', 'grid-cols-3', 'grid-cols-2 md:grid-cols-4'][items.length];
   return (
     <section aria-label={`${b.shortName} in numbers`} className="border-b border-line bg-white">
       <div className={`${wrap}`}>
         <ul className={`grid ${cols} border-x border-line`}>
           {items.map((item, i) => (
-            <li key={item.label} className={`flex flex-col items-center justify-start gap-1.5 px-4 py-7 text-center ${i ? 'border-l border-line' : ''} ${i >= 2 ? 'max-md:border-t' : ''}`}>
+            <li key={item.label} className={`flex flex-col items-center justify-start gap-1.5 px-4 py-7 text-center ${i ? 'border-l border-line' : ''} ${i >= 2 && items.length > 3 ? 'max-md:border-t' : ''}`}>
               <strong className="font-heading font-display text-[clamp(1.8rem,1.4rem+1.4vw,2.4rem)] leading-none text-primary">{item.value}</strong>
               {item.stars && <Stars value={b.rating} size={14} />}
               <span className="text-[12px] font-bold uppercase tracking-[0.16em] text-muted">{item.label}</span>
