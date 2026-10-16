@@ -502,6 +502,9 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
     # link below for details"), which the preview does not have, and one left
     # without its full stop where that link was cut away.
     pointer = re.compile(r"\bclick\b|\b(?:link|button|form)s? (?:below|above)\b", re.I)
+    # A short sentence that only promises to bring the reader's vision to life
+    # ("AJ's will bring you vision to life.") is a slogan that names no work.
+    slogan = re.compile(r"^(?:\S+\s){0,5}brings? (?:your?|the) (?:visions?|dreams?|ideas?) to life\b[^.!?]{0,20}[.!?]$", re.I)
     # A sentence under a label ("Color: They are brown with black...") is a
     # line of a fact sheet about the subject, not a description of the work.
     # Their page can drop the space after it ("Primer:drywall primer over...").
@@ -580,7 +583,7 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
                     if nxt_tag == "p" and 60 <= len(nxt) <= 700:
                         desc = trim(" ".join(
                             s for s in sentences(nxt)
-                            if not (elsewhere and elsewhere.search(s)) and not pointer.search(s) and not label.match(s) and FINISHED.search(s)
+                            if not (elsewhere and elsewhere.search(s)) and not pointer.search(s) and not slogan.match(s) and not label.match(s) and FINISHED.search(s)
                         ), 360)
                         break
                     if nxt_tag.startswith("h"):
@@ -744,10 +747,18 @@ def lead_of(pages, about, trade=None, services=()):
             if len(text) >= 60 and re.match(r"[A-Z]", text) and not re.search(r"cookie|javascript|internet explorer|\bbrowsers?\b|\||near me|call us|\u2026|\.\.\.", text, re.I):
                 return text, f"{page.url} meta {key}"
     # A paragraph that opens on a sentence too long for the hero gives way to
-    # the next.
-    for paragraph in about:
+    # the next. One that asks a question ("Who is A.J. Benys? He is a native
+    # Houstonian...") or tells of one person ("...operated his fledgling
+    # business") is about the owner, not what the business does.
+    told = [p for p in about if not re.search(r"\?|\b(?:He|She)\s", p) and not (re.search(r"\b(?:his|her)\b", p, re.I) and not re.search(r"\b(?:we|our|us)\b", p, re.I))]
+    for paragraph in told:
         text = trim(paragraph, 220)
         if len(text) >= 60 and FINISHED.search(text):
+            return text, "about text"
+    # Failing those, a paragraph's own sentences after its too-long opener.
+    for paragraph in about:
+        text = trim(" ".join(sentences(paragraph)[1:]), 220)
+        if len(text) >= 60 and FINISHED.search(text) and not re.search(r"\?|\b(?:He|She|his|her)\b", text):
             return text, "about text"
     return None, None
 
