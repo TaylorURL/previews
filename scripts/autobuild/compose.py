@@ -544,6 +544,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # Your Home Cool") is a selling point, not a service.
         if re.match(r"(fits|keeps|suits|offers|provides|protects|helps|makes|saves|gives|delivers|lets)\b", name, re.I):
             return
+        # So is one that praises what they work with ("High-Quality Materials
+        # and Equipment", "Quality Parts and Equipment"); it sells the job.
+        if re.match(r"(?:(?:high|top|premium|best)[- ]?quality|quality|premium|durable|reliable) (?:materials?|parts|equipment|tools|supplies|products)\b", name, re.I):
+            return
         # A heading that opens on an article or a comparison ("A Tradition of
         # Quality Construction", "The Need for Commercial Storage", "Better
         # Decisions Before Construction"), or that speaks of their history, is
@@ -718,6 +722,12 @@ def about_of(pages, name, trade=None):
                 continue
             text = " ".join(kept)
             cut = trim(text, 600)
+            # A paragraph their site repeats with a word or two changed
+            # ("the team at Alex Pools Service" on one page, "Alex Pools" on
+            # another) is the same paragraph, and is told once.
+            words = lambda t: set(re.findall(r"[a-z]+", t.lower()))
+            if cut and any(len(words(cut) & words(c)) >= 0.8 * min(len(words(cut)), len(words(c))) for c in chosen):
+                continue
             if cut and cut not in chosen:
                 chosen.append(cut)
             if len(chosen) == 3:
