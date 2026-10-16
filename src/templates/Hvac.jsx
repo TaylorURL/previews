@@ -637,7 +637,7 @@ function BookingCard({ b, groups, heading = 'h2', title, service }) {
     <div className="rounded-2xl border border-line bg-white p-5 shadow-[0_30px_60px_-30px_rgba(11,27,43,0.45)] sm:p-7">
       <div className="mb-5 flex items-start justify-between gap-4">
         <div className="min-w-0">
-          <H className="font-heading text-[22px] font-extrabold leading-tight tracking-[-0.02em] text-ink">{title || w.card}</H>
+          <H className="font-heading text-[22px] font-extrabold leading-tight tracking-[-0.02em] text-ink">{unbroken(title || w.card)}</H>
           <p className="mt-1.5 text-[16px] md:text-[15px] leading-[1.5] text-muted">
             {service ? w.itemText || `Tell us about your ${lowerName(service, townsOf(b), groups.find((g) => g.title === service)?.intro)} job.` : w.cardText}
           </p>
@@ -781,6 +781,13 @@ function Faqs({ b, tel }) {
   );
 }
 
+/** A heading with each hyphenated word held whole, so 'Tune-Up' never breaks at its hyphen and leaves 'Up' alone on the next line. */
+function unbroken(title) {
+  return String(title || '')
+    .split(/(\S+-\S+)/)
+    .map((part, i) => (i % 2 ? <span key={i} className="whitespace-nowrap">{part}</span> : part));
+}
+
 function ClosingBand({ b, tel, title, text, flush = false }) {
   const area = list(b.serviceArea);
   return (
@@ -799,7 +806,7 @@ function ClosingBand({ b, tel, title, text, flush = false }) {
             <div>
               <Eyebrow light>{b.emergency ? b.emergency.title : askOf(b).eyebrow}</Eyebrow>
               <h2 className="font-heading text-[clamp(1.9rem,1.35rem+2.1vw,2.85rem)] font-extrabold leading-[1.08] tracking-[-0.025em] [text-wrap:balance]">
-                {title}
+                {unbroken(title)}
               </h2>
               <p className="mt-4 max-w-xl text-[17px] leading-[1.65] text-white/80 sm:text-[18px]">{text}</p>
               {area.length > 0 && (
@@ -861,7 +868,7 @@ function PageHero({ b, crumbs, eyebrow, title, text, image, imageAlt, icon, pane
             eyebrow && <Eyebrow>{eyebrow}</Eyebrow>
           )}
           <h1 className="font-heading text-[clamp(2.2rem,1.3rem+3.2vw,3.6rem)] font-extrabold leading-[1.04] tracking-[-0.03em] text-ink [text-wrap:balance] break-words">
-            {title}
+            {unbroken(title)}
           </h1>
           {text && <p className={`mt-5 max-w-[38rem] ${lead}`}>{text}</p>}
           {children}
