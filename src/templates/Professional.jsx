@@ -1079,16 +1079,18 @@ function ServicePage(props) {
                 const RIcon = iconFor(o.icon);
                 return (
                   <li key={o.slug}>
-                    {/* Top-aligned, so a one-line card's title sits level with its neighbours' rather than centred against them. */}
+                    {/* Top-aligned, so a card with a summary keeps its title level with its neighbours'; a title alone is centred on the icon's height, and the arrow sits level with the icon. */}
                     <a href={`/services/${o.slug}`} className={`group flex h-full items-start gap-4 p-5 text-ink no-underline ${cardLink}`}>
                       <span className="grid size-12 flex-none place-items-center rounded-md bg-surface text-primary">
                         <RIcon size={24} strokeWidth={1.25} aria-hidden="true" />
                       </span>
-                      <span className="grid min-w-0 flex-1 gap-0.5">
+                      <span className="grid min-h-12 min-w-0 flex-1 content-center gap-0.5">
                         <span className="font-heading text-lg leading-snug">{o.title}</span>
                         {o.summary && <span className="text-base leading-snug text-muted sm:text-[15px]">{o.summary}</span>}
                       </span>
-                      <ArrowRight size={18} className="flex-none text-primary transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                      <span className="grid h-12 flex-none place-items-center">
+                        <ArrowRight size={18} className="text-primary transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                      </span>
                     </a>
                   </li>
                 );

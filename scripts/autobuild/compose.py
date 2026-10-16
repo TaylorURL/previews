@@ -168,6 +168,11 @@ ICONS = {
                      ("calculator", r"tax|bookkeeping|payroll|accounting|audit"), ("file", r"title|closing|escrow")],
 }
 
+# The roofing template's menu columns, each the label over its list on the
+# services page and the eyebrow of its pages. A service whose title names
+# neither is a residential one.
+ROOF_GROUPS = [("commercial", r"commercial|industrial"), ("storm", r"storm|hail|insurance|claim|emergency")]
+
 # The words that name each trade as a business would of itself. A site built on
 # a theme for another trade can keep the theme's copy ("a team of 30 plumbing
 # professionals" on a pool cleaner's site), so a paragraph that sells another
@@ -663,6 +668,9 @@ def about_of(pages, name, trade=None):
             # Their contact form's own instructions ("Use the form to request an appointment") are not about them.
             # Nor is its fine print ("By submitting, you agree... Do not upload payment-card information").
             if re.search(r"\b(?:use|fill (?:out|in)|complete|submit) (?:the|our|this) form\b|\bby submitting\b|\bdo not (?:upload|submit|send|include)\b", text, re.I):
+                continue
+            # Nor is the site's legal disclaimer ("Attorney Advertising. This website is designed for general information only... not be construed to be formal legal advice").
+            if re.search(r"\battorney advertising\b|\bgeneral information(?:al)? (?:only|purposes)\b|\bnot (?:be )?construed\b|\b(?:lawyer|attorney)[/-]client relationship\b|\bdoes not constitute\b", text, re.I):
                 continue
             # Nor are its fields scraped as a paragraph ("Full Name * Phone Number * ... If you are human, leave this field blank.").
             if re.search(r"\b(?:name|e-?mail|phone(?: number)?|message)\s*\*|\bleave this field (?:blank|empty)\b", text, re.I):
