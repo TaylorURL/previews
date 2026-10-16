@@ -1,0 +1,105 @@
+{
+  "template": "professional",
+  "preview": true,
+  "name": "NMW Law Firm",
+  "shortName": "NMW Law Firm",
+  "phone": "(713) 999-6216",
+  "email": "intake@nmwlawfirm.com",
+  "address": "3 E Greenway Plaza #1575",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77046",
+  "brand": {
+    "primary": "#0d2d5c",
+    "primaryDeep": "#092040",
+    "accent": "#1f6cdd",
+    "ink": "#151c25",
+    "surface": "#f0f2f5",
+    "muted": "#5b6470",
+    "line": "#dedfe0",
+    "cream": "#f8f6f1",
+    "heading": "'EB Garamond', Georgia, serif",
+    "body": "'Manrope', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Manrope:wght@400;600;700&display=swap",
+    "logo": "/brands/nmwlawfirm/logo.webp",
+    "logoMono": "/brands/nmwlawfirm/logo-mono.webp",
+    "logoWidth": 260,
+    "logoHeight": 50,
+    "logoRatio": 5.224,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.191,
+      0.07,
+      0.047,
+      0.163,
+      0.285,
+      0.406,
+      0.523,
+      0.64,
+      0.762,
+      0.883,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "NMW Law Firm",
+    "title": "Car and truck accidents in Houston",
+    "lead": "The NMW Law Firm Personal Injury Lawyers serving Houston and El Paso TX."
+  },
+  "serviceArea": [
+    "Houston"
+  ],
+  "kind": "legal",
+  "services": [
+    {
+      "slug": "car-accidents",
+      "title": "Car Accidents",
+      "summary": "",
+      "text": "",
+      "icon": "car"
+    },
+    {
+      "slug": "truck-accidents",
+      "title": "Truck Accidents",
+      "summary": "",
+      "text": "",
+      "icon": "truck"
+    },
+    {
+      "slug": "motorcycle-accidents",
+      "title": "Motorcycle Accidents",
+      "summary": "",
+      "text": "",
+      "icon": "motorbike"
+    },
+    {
+      "slug": "rideshare-accidents",
+      "title": "Rideshare Accidents",
+      "summary": "",
+      "text": "",
+      "icon": "car"
+    },
+    {
+      "slug": "wrongful-death",
+      "title": "Wrongful Death",
+      "summary": "",
+      "text": "",
+      "icon": "heart"
+    },
+    {
+      "slug": "construction-accidents",
+      "title": "Construction Accidents",
+      "summary": "",
+      "text": "",
+      "icon": "hard-hat"
+    }
+  ],
+  "about": {
+    "title": "About NMW Law Firm",
+    "text": [
+      "When you’ve been injured, everything in your life suddenly feels uncertain. Your health, your work, your peace of mind — all interrupted. You shouldn’t have to navigate that alone.",
+      "At NMW Law, we handle the legal, insurance, and logistical details so you can focus on getting better. We guide you through recovery with clarity, compassion, and unwavering support.",
+      "Every client who walks through our doors is carrying more than an injury — they’re carrying stress, fear, and the weight of the unknown."
+    ]
+  }
+}
