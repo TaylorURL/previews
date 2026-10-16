@@ -239,8 +239,47 @@ def _seams(arr):
     return arr
 
 
+# A dotted or dashed line drawn round the whole mark, no thicker than SEAM and
+# set apart from it by clear rows and columns, is the box a page editor draws
+# round a picture of a name, not ink: it is cut away with the faint patch it
+# held, so the mark is trimmed to itself. A side inked along more than
+# FRAME_BROKEN of its length is a solid frame, the design's own, and is kept;
+# one inked along less than FRAME_SPAN is not a line.
+FRAME_SPAN = 0.3
+FRAME_BROKEN = 0.9
+
+
+def _frame(arr):
+    """The logo without a broken box drawn round it."""
+    solid = arr[..., 3] > 127
+    rows, cols = np.flatnonzero(solid.any(axis=1)), np.flatnonzero(solid.any(axis=0))
+    if len(rows) <= 4 * SEAM or len(cols) <= 4 * SEAM:
+        return arr
+    top, bottom, left, right = rows[0], rows[-1] + 1, cols[0], cols[-1] + 1
+    box = solid[top:bottom, left:right]
+    # Each side's line is measured inside the other sides' lines, so they do
+    # not join it, and must be followed by a clear line before the mark.
+    widths = []
+    for lines in (box[:, SEAM:-SEAM].any(axis=1), box[SEAM:-SEAM].any(axis=0)):
+        for run in (lines, lines[::-1]):
+            thick = int(np.argmin(run))
+            if not 1 <= thick <= SEAM or not run[thick:].any():
+                return arr
+            widths.append(thick)
+    t, b, l, r = widths
+    spans = [box[:t].any(axis=0), box[-b:].any(axis=0), box[:, :l].any(axis=1), box[:, -r:].any(axis=1)]
+    if not all(FRAME_SPAN <= span.mean() < FRAME_BROKEN for span in spans):
+        return arr
+    arr = arr.copy()
+    lines = arr[top:bottom, left:right, 3]
+    lines[:t], lines[-b:], lines[:, :l], lines[:, -r:] = 0, 0, 0, 0
+    # The patch: anything faint further than two pixels from the mark's ink.
+    arr[..., 3][~_grow(_grow(arr[..., 3] > 127))] = 0
+    return arr
+
+
 def trim(arr, pad=2):
-    arr = _seams(arr)
+    arr = _frame(_seams(arr))
     alpha = arr[..., 3]
     rows = np.where((alpha > 8).any(axis=1))[0]
     cols = np.where((alpha > 8).any(axis=0))[0]
