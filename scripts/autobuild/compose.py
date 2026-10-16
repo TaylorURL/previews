@@ -362,6 +362,9 @@ def title_case(text):
             continue
         if w.isupper():
             w = w.lower()
+        # A capital held one letter too long ("INterior") is put right.
+        if re.fullmatch(r"[A-Z]{2}[a-z]{2,}", w):
+            w = w[0] + w[1:].lower()
         out.append(w.lower() if i and w.lower() in small else w[:1].upper() + w[1:])
     return " ".join(out)
 
@@ -559,6 +562,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # work, not a service.
         if re.search(r"\b(we|us)\b", name, re.I):
             return
+        # One that says where the trouble is seen ("Termite Swarms Near
+        # Bathrooms or Doorways") is a sign to look for, not a service.
+        if re.search(r"\bnear\b", name, re.I):
+            return
         if NOT_A_SERVICE_SHAPE.search(name) or (own and names_the_business(name, own)) or (local and local.search(name)):
             return
 
@@ -735,10 +742,20 @@ def names_a_service(text, services):
     return any(w[:5] in stems for w in re.findall(r"[a-z]{4,}", text.lower()))
 
 
+# A sentence that gives a number to call ("Call (832) 893-2847.") can give
+# another office's; the page shows their own number beside the lead.
+PHONE = re.compile(r"\(?\b\d{3}\)?[\s.-]*\d{3}[\s.-]\d{4}\b")
+
+
+def unphoned(text):
+    return " ".join(s for s in sentences(text) if not PHONE.search(s))
+
+
 def lead_of(pages, about, trade=None, services=()):
+    about = [unphoned(p) for p in about]
     for page in pages[:1]:
         for key in ("og:description", "description"):
-            text = trim(HEADING_RUN_IN.sub("", plain(page.meta.get(key, ""))), 220)
+            text = trim(unphoned(HEADING_RUN_IN.sub("", plain(page.meta.get(key, "")))), 220)
             if other_trade(text, trade) or not FINISHED.search(text):
                 continue
             # A description left from the theme or another company's site
