@@ -1,0 +1,115 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "Highland Roofing Co.",
+  "shortName": "Highland Roofing",
+  "phone": "(877) 766-3852",
+  "email": "info@highlandroofing.co",
+  "address": "3111 Bryson Ln",
+  "town": "Midlothian",
+  "state": "TX",
+  "zip": "76065",
+  "rating": 5,
+  "reviewCount": 141,
+  "brand": {
+    "primary": "#e90001",
+    "primaryDeep": "#a30001",
+    "accent": "#ff2f30",
+    "ink": "#27181e",
+    "surface": "#fef0f0",
+    "heading": "'Roboto', system-ui, sans-serif",
+    "body": "'Oswald', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&family=Oswald:wght@400;600;700&display=swap",
+    "logo": "/brands/highlandroofing/logo.webp",
+    "logoMono": "/brands/highlandroofing/logo-mono.webp",
+    "logoWidth": 121,
+    "logoHeight": 84,
+    "logoRatio": 1.435,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.858,
+      0.825,
+      0.792,
+      0.771,
+      0.801,
+      0.834,
+      0.866,
+      0.899,
+      0.933,
+      0.968,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Highland Roofing",
+    "title": "Residential roofing and roof replacement",
+    "lead": "Roofing company in Midlothian, TX providing expert roof repair, replacement, and storm damage services across the Dallas-Fort Worth area.",
+    "titleAccent": "in Midlothian"
+  },
+  "serviceArea": [
+    "Midlothian"
+  ],
+  "services": [
+    {
+      "slug": "residential-roofing",
+      "title": "Residential Roofing",
+      "short": "Residential Roofing",
+      "text": ""
+    },
+    {
+      "slug": "roof-replacement",
+      "title": "Roof Replacement",
+      "short": "Roof Replacement",
+      "text": ""
+    },
+    {
+      "slug": "roof-repairs",
+      "title": "Roof Repairs",
+      "short": "Roof Repairs",
+      "text": ""
+    },
+    {
+      "slug": "roof-insurance-claims",
+      "title": "Roof Insurance Claims",
+      "group": "storm",
+      "short": "Roof Insurance Claims",
+      "text": ""
+    },
+    {
+      "slug": "roof-maintenance",
+      "title": "Roof Maintenance",
+      "short": "Roof Maintenance",
+      "text": ""
+    },
+    {
+      "slug": "emergency-roof-services",
+      "title": "Emergency Roof Services",
+      "group": "storm",
+      "short": "Emergency Roof Services",
+      "text": ""
+    },
+    {
+      "slug": "storm-damage-roof-repair",
+      "title": "Storm Damage Roof Repair",
+      "group": "storm",
+      "short": "Storm Damage Roof Repair",
+      "text": ""
+    },
+    {
+      "slug": "hail-damage-roof-repair",
+      "title": "Hail Damage Roof Repair",
+      "group": "storm",
+      "short": "Hail Damage Roof Repair",
+      "text": ""
+    }
+  ],
+  "about": {
+    "title": "About Highland Roofing",
+    "text": [
+      "Highland Roofing Co. is a trusted roofing company in Midlothian, TX providing residential and commercial roofing services, including roof repair, replacement, and storm damage restoration.",
+      "As a trusted roofing company in Midlothian, TX, we take pride in serving homeowners across the Dallas-Fort Worth area with reliable roofing services."
+    ],
+    "image": "/brands/highlandroofing/photo1",
+    "imageAlt": "A photo of Highland Roofing"
+  }
+}

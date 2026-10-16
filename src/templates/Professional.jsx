@@ -772,7 +772,8 @@ function Values({ values }) {
 }
 
 function AboutTeaser({ b, hasTeam }) {
-  const text = paras(b.about.text);
+  // A paragraph the hero already leads with is not told twice on one page.
+  const text = paras(b.about.text).filter((t) => t !== b.hero.lead);
   const towns = list(b.serviceArea);
   const links = (
     <div className="mt-9 grid gap-3 sm:flex sm:flex-wrap">

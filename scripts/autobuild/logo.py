@@ -243,10 +243,49 @@ def _seams(arr):
 # set apart from it by clear rows and columns, is the box a page editor draws
 # round a picture of a name, not ink: it is cut away with the faint patch it
 # held, so the mark is trimmed to itself. A side inked along more than
-# FRAME_BROKEN of its length is a solid frame, the design's own, and is kept;
-# one inked along less than FRAME_SPAN is not a line.
+# FRAME_BROKEN of its length is a solid frame, and is left to _keyline; one
+# inked along less than FRAME_SPAN is not a line.
 FRAME_SPAN = 0.3
 FRAME_BROKEN = 0.9
+
+
+def _keyline(arr):
+    """The logo without a thin box drawn round it in one line. A line no
+    thicker than SEAM (twice that with its soft edges) running round the whole
+    mark in one piece, clear of it, sits the mark in a box on the header rather
+    than on it, solid or broken where a word is set into a side (INSURANCE in
+    the foot of the box), so long as each side runs FRAME_SPAN of its length.
+    A frame thicker than that is the design's own, and is kept."""
+    ink = arr[..., 3] > 8
+    rows, cols = np.flatnonzero(ink.any(axis=1)), np.flatnonzero(ink.any(axis=0))
+    if len(rows) <= 4 * SEAM or len(cols) <= 4 * SEAM:
+        return arr
+    # The line is followed from the mark's top row through the ink it touches.
+    line = np.zeros_like(ink)
+    line[rows[0]] = ink[rows[0]]
+    count = -1
+    while True:
+        line = _grow(line) & ink
+        now = int(line.sum())
+        if now == count:
+            break
+        count = now
+    ys, xs = np.nonzero(line)
+    top, bottom, left, right = ys.min(), ys.max() + 1, xs.min(), xs.max() + 1
+    edge = 2 * SEAM
+    if bottom - top <= 2 * edge or left > cols[0] or right < cols[-1] + 1:
+        return arr
+    box = line[top:bottom, left:right]
+    inside = np.zeros_like(box)
+    inside[edge:-edge, edge:-edge] = True
+    if (box & inside).any() or not ink[top:bottom, left:right][inside].any():
+        return arr
+    spans = [box[:edge].any(axis=0), box[-edge:].any(axis=0), box[:, :edge].any(axis=1), box[:, -edge:].any(axis=1)]
+    if not all(span.mean() >= FRAME_SPAN for span in spans):
+        return arr
+    arr = arr.copy()
+    arr[..., 3][line] = 0
+    return arr
 
 
 def _frame(arr):
@@ -279,7 +318,7 @@ def _frame(arr):
 
 
 def trim(arr, pad=2):
-    arr = _frame(_seams(arr))
+    arr = _frame(_seams(_keyline(arr)))
     alpha = arr[..., 3]
     rows = np.where((alpha > 8).any(axis=1))[0]
     cols = np.where((alpha > 8).any(axis=0))[0]

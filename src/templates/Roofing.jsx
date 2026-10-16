@@ -658,15 +658,16 @@ function PageHero({ b, tel, crumbs, eyebrow, title, lead, image, imageAlt }) {
     <section className={`relative isolate overflow-hidden bg-ink text-white ${heroClip}`}>
       {image && (
         <>
+          {/* On a phone the photo is shown whole above the words; from lg up it fills the right half behind them. */}
           <Img
-            className="absolute inset-0 -z-20 h-full w-full object-cover lg:left-auto lg:w-[52%] lg:[clip-path:polygon(18%_0,100%_0,100%_100%,0_100%)]"
+            className="relative block aspect-[16/10] w-full object-cover lg:absolute lg:inset-0 lg:left-auto lg:-z-20 lg:aspect-auto lg:h-full lg:w-[52%] lg:[clip-path:polygon(18%_0,100%_0,100%_100%,0_100%)]"
             src={image}
             alt={imageAlt || ''}
             sizes="(min-width: 1024px) 52vw, 100vw"
             eager
           />
           <div
-            className="absolute inset-0 -z-10 bg-[color-mix(in_srgb,var(--ink)_84%,transparent)] lg:bg-transparent lg:bg-[linear-gradient(90deg,var(--ink)_0%,var(--ink)_47%,color-mix(in_srgb,var(--ink)_35%,transparent)_60%,transparent_78%)]"
+            className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,var(--ink)_0%,var(--ink)_47%,color-mix(in_srgb,var(--ink)_35%,transparent)_60%,transparent_78%)]"
             aria-hidden="true"
           />
         </>
