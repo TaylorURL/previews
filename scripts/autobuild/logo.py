@@ -296,6 +296,38 @@ def _luminance(rgb):
     return 0.2126 * c[..., 0] + 0.7152 * c[..., 1] + 0.0722 * c[..., 2]
 
 
+# A strip of words set apart by clear rows at the top or foot of the mark (a
+# tagline in pale gray under the name) whose strongest ink stands less than this
+# contrast ratio from the ground it was drawn for cannot be read at the size a
+# header draws it, and is cut away, so the mark is trimmed and sized without it.
+FAINT_RATIO = 3.0
+
+
+def _faint_strips(arr, ground):
+    """The logo without a faint strip of words at its top or foot."""
+    alpha = arr[..., 3]
+    rows = (alpha > 8).any(axis=1)
+    edges = np.flatnonzero(np.diff(np.concatenate([[False], rows, [False]]).astype(np.int8)))
+    runs = list(zip(edges[::2], edges[1::2]))
+    if len(runs) < 2:
+        return arr
+    a = alpha[..., None].astype(np.float32) / 255
+    bg = np.array(ground, dtype=np.float32)
+    lum = _luminance(arr[..., :3].astype(np.float32) * a + bg * (1 - a))
+    g = float(_luminance(bg))
+    contrast = (np.maximum(lum, g) + 0.05) / (np.minimum(lum, g) + 0.05)
+    faint = [np.percentile(contrast[start:stop][alpha[start:stop] > 8], 95) < FAINT_RATIO for start, stop in runs]
+    # The mark itself is never cut away, only a strip beside one that reads.
+    if all(faint):
+        return arr
+    arr = arr.copy()
+    for i in {0, len(runs) - 1}:
+        start, stop = runs[i]
+        if faint[i] and stop - start < 0.5 * len(rows):
+            arr[start:stop, :, 3] = 0
+    return arr
+
+
 def _outline(ink):
     """The mark's own edge: its pixels next to anything that is not mark,
     the edge of the picture included, so a badge cropped to its frame has
@@ -594,8 +626,6 @@ def prepare(image):
             ground_for_header = ground
         arr = cut_ground(arr, ground)
     arr = trim(arr)
-    h, w = arr.shape[:2]
-    ratio = w / h
 
     if kind == "solid":
         grounds = [ground_for_header]
@@ -609,6 +639,9 @@ def prepare(image):
     if best_share < LEGIBLE_SHARE:
         raise Unfit(f"too little of the logo stands out from its ground ({best_share:.0%} of it)")
 
+    arr = trim(_faint_strips(arr, best))
+    h, w = arr.shape[:2]
+    ratio = w / h
     width, height = drawn_size(ratio, strip_share(arr), h / SOURCE_OVER_DRAWN)
     if w < width * SOURCE_OVER_DRAWN or h < height * SOURCE_OVER_DRAWN:
         raise Unfit(f"the logo is only {w}x{h}px, too small to draw {width}x{height} without enlarging it")
@@ -648,6 +681,7 @@ def rework(image):
     if kind != "solid":
         on_white, on_dark = legibility(arr, WHITE), legibility(arr, DARK_GROUND)
         native = WHITE if on_white >= LEGIBLE_SHARE or on_white >= on_dark else DARK_GROUND
+    arr = trim(_faint_strips(arr, native))
     h, w = arr.shape[:2]
     width, height = drawn_size(w / h, strip_share(arr), h / SOURCE_OVER_DRAWN)
     out = Image.fromarray(arr, "RGBA")
