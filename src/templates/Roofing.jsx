@@ -166,6 +166,12 @@ const groupOf = (s) => (GROUPS.some(([key]) => key === s.group) ? s.group : 'res
 const servicesOf = (b) => list(b.services).filter((s) => s && s.slug && s.title);
 // A short line that only says the title again is left out under it.
 const shortOf = (s) => (s.short && s.short.trim().toLowerCase() !== s.title.trim().toLowerCase() ? s.short : null);
+// The work a free inspection is offered for, without the "free" or the
+// "inspection" its title already says ("Roof Inspections" is a roof one).
+const inspected = (title) => {
+  const what = title.trim().toLowerCase().replace(/^free\s+/, '').replace(/\s*\binspections?$/, '');
+  return what ? `${what} ` : '';
+};
 const STEP_COLS = { 3: 'lg:grid-cols-3', 4: 'lg:grid-cols-4', 5: 'lg:grid-cols-5', 6: 'lg:grid-cols-6' };
 
 /** The extra pages this business's site has, from its services. */
@@ -797,7 +803,8 @@ function ServiceTile({ s }) {
 /**
  * The services as cards when most of them carry words of their own, and as
  * plain tiles when most do not, so no card stands empty beside a full one.
- * Cards fill whole rows of three; any left over follow as tiles.
+ * Worded services fill whole rows of three cards; any left over, and every
+ * service without words, follow as tiles.
  */
 function HomeServices({ services }) {
   const tagged = new Set(services.map(groupOf)).size > 1;
@@ -812,7 +819,7 @@ function HomeServices({ services }) {
     );
   }
   const ordered = [...worded, ...services.filter((s) => !s.text)];
-  const whole = ordered.length >= 3 ? ordered.length - (ordered.length % 3) : ordered.length;
+  const whole = worded.length >= 3 ? worded.length - (worded.length % 3) : worded.length;
   const cards = ordered.slice(0, whole);
   const rest = ordered.slice(whole);
   return (
@@ -1400,7 +1407,7 @@ function ServicePage({ b, tel, s }) {
               said ? `lg:sticky ${b.preview ? 'lg:top-[150px]' : 'lg:top-[108px]'}` : 'lg:grid lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:gap-x-12'
             }`}
           >
-            <p className={`${h3} text-[24px]`}>Free {s.title.toLowerCase()} inspection</p>
+            <p className={`${h3} text-[24px]`}>Free {inspected(s.title)}inspection</p>
             <a href={tel} className="mt-4 flex min-h-[48px] items-center gap-3 font-heading text-[28px] font-semibold tracking-[0.03em] text-accent no-underline">
               <Phone size={22} aria-hidden="true" /> {b.phone}
             </a>
