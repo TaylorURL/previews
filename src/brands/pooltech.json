@@ -1,0 +1,103 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Pool Tech",
+  "shortName": "Pool Tech",
+  "phone": "(972) 222-7000",
+  "email": "tom@pooltechpools.com",
+  "address": "617 W Kearney St #303",
+  "town": "Mesquite",
+  "state": "TX",
+  "zip": "75149",
+  "rating": 4.9,
+  "reviewCount": 502,
+  "brand": {
+    "primary": "#007a94",
+    "primaryDeep": "#005668",
+    "accent": "#4783f2",
+    "ink": "#142229",
+    "surface": "#f0fcfe",
+    "muted": "#5b6470",
+    "line": "#dee0e1",
+    "heading": "'DM Sans', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Roboto:wght@400;600;700&display=swap",
+    "logo": "/brands/pooltech/logo.webp",
+    "logoMono": "/brands/pooltech/logo-mono.webp",
+    "logoWidth": 122,
+    "logoHeight": 84,
+    "logoRatio": 1.45,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.536,
+      0.512,
+      0.517,
+      0.55,
+      0.6,
+      0.658,
+      0.718,
+      0.783,
+      0.854,
+      0.928,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Pool Tech",
+    "title": "Pool repair and pool equipment installation",
+    "lead": "Family-owned pool service in Mesquite, TX. Weekly cleaning, repair, equipment installation, pump repair, and leak detection.",
+    "titleAccent": "in Mesquite"
+  },
+  "serviceArea": [
+    "Mesquite"
+  ],
+  "summary": "Pool Tech offers pool repair, pool equipment installation and pool pump repair in and around Mesquite.",
+  "groups": [
+    {
+      "slug": "pool-repair",
+      "title": "Pool Repair",
+      "icon": "waves",
+      "summary": "Diagnosis and repair for filters, heaters, lights, automation, valves, timers, salt systems, and pool plumbing.",
+      "intro": "Diagnosis and repair for filters, heaters, lights, automation, valves, timers, salt systems, and pool plumbing."
+    },
+    {
+      "slug": "pool-equipment-installation",
+      "title": "Pool Equipment Installation",
+      "icon": "settings",
+      "summary": "Filters, heaters, lights, automation, salt systems, chillers, and fountain coolers installed with compatibility and efficiency in mind.",
+      "intro": "Filters, heaters, lights, automation, salt systems, chillers, and fountain coolers installed with compatibility and efficiency in mind."
+    },
+    {
+      "slug": "pool-pump-repair",
+      "title": "Pool Pump Repair",
+      "icon": "filter",
+      "summary": "Pump and motor diagnosis, repair, replacement, and variable-speed upgrades.",
+      "intro": "Pump and motor diagnosis, repair, replacement, and variable-speed upgrades."
+    },
+    {
+      "slug": "pool-leak-detection",
+      "title": "Pool Leak Detection",
+      "icon": "droplets",
+      "summary": "Pressure testing for plumbing and checks around shell penetrations, followed by repair options for the confirmed leak source.",
+      "intro": "Pressure testing for plumbing and checks around shell penetrations, followed by repair options for the confirmed leak source."
+    },
+    {
+      "slug": "weekly-pool-service",
+      "title": "Weekly Pool Service",
+      "icon": "waves",
+      "summary": "Recurring cleaning, chemistry care, and equipment checks that keep your pool swim-ready all season.",
+      "intro": "Recurring cleaning, chemistry care, and equipment checks that keep your pool swim-ready all season."
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "About Pool Tech",
+    "text": [
+      "We are a family-owned pool maintenance, leak detection, equipment repair, and pool equipment installation company. Our focus is relationship-first service that helps you make informed decisions about your pool.",
+      "Honesty and integrity guide every job. We explain what we find and help you choose what makes sense for your pool and your budget.",
+      "Our work is backed by a one-year workmanship warranty plus applicable manufacturer warranties."
+    ],
+    "image": "/brands/pooltech/photo1",
+    "imageAlt": "A photo of Pool Tech"
+  }
+}
