@@ -553,9 +553,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # Decisions Before Construction"), or on every one of a thing ("Every
         # Fence Tells a Story"), or that speaks of their history, is a slogan,
         # not a service. So is one that sells the fit of their work
-        # ("Premium Pool Services Tailored for Austin") or measures it against
-        # before ("Making Pools Look Better Than Ever").
-        if re.match(r"(a|an|the|every|each|better|smarter|faster)\s", name, re.I) or re.search(r"\b(traditions?|legacy|decisions?|tailored|than ever)\b|\w+er than\b", name, re.I):
+        # ("Premium Pool Services Tailored for Austin", "Effective Treatments
+        # for Every Texas Pest") or measures it against before ("Making Pools
+        # Look Better Than Ever").
+        if re.match(r"(a|an|the|every|each|better|smarter|faster)\s", name, re.I) or re.search(r"\b(traditions?|legacy|decisions?|tailored|than ever|for (?:every|each))\b|\w+er than\b", name, re.I):
             return
         # So is one that says how things ought to be ("Boating Should Be Fun,
         # Not Stressful"), or sets one thing against another (", Not"), or
