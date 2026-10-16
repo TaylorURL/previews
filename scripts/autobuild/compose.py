@@ -749,10 +749,15 @@ def about_of(pages, name, trade=None):
             # before "Express Pool Plastering expanded our business...?", "Check
             # out our custom pool and spa builds" with no stop), and is left
             # out, as is one that leans on the one before it ("We also
-            # build...") once it opens the paragraph.
+            # build...") once it opens the paragraph. So is a search phrase set
+            # down as a sentence, the trade run straight into a town ("Air
+            # Conditioning & Heating Company Alvin.") or into a list of towns
+            # ("Cooling tech services, Manvel, Pearland, and Houston, Texas.").
             kept = [
                 s for s in sentences(text)
                 if not re.search(r"\bnear me\b", s, re.I) and FINISHED.search(s)
+                and not re.search(r"\b(?i:company|contractors?|services?|repairs?)\s+[A-Z][a-z]+(?:\s[A-Z][a-z]+)?\.$", s)
+                and not re.match(r"[^,]*\b(?i:services?|repairs?),(?:\s*(?:and\s+)?[A-Z][a-z]+(?:\s[A-Z][a-z]+)?,?)+\.$", s)
                 and not (s.endswith("?") and re.match(rf"(?:we|our|i|{re.escape(short)})\b", s, re.I))
             ]
             while kept and re.match(r"\w+ also\b", kept[0], re.I):
