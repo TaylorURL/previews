@@ -1301,21 +1301,19 @@ function ServicesIndex({ b, tel, stormHref }) {
                   <li key={s.slug} className="border-b border-ink/10">
                     <a
                       href={`/services/${s.slug}`}
-                      className="group grid items-center gap-5 py-6 text-ink no-underline sm:grid-cols-[180px_minmax(0,1fr)_auto] sm:gap-8"
+                      className={`group grid items-center gap-5 py-6 text-ink no-underline sm:gap-8 ${s.image ? 'sm:grid-cols-[180px_minmax(0,1fr)_auto]' : 'sm:grid-cols-[minmax(0,1fr)_auto]'}`}
                     >
-                      {s.image ? (
+                      {s.image && (
                         <Img
                           className="aspect-[16/10] w-full object-cover [clip-path:polygon(0_0,100%_0,90%_100%,0_100%)]"
                           src={s.image}
                           alt=""
                           sizes="(min-width: 640px) 180px, 100vw"
                         />
-                      ) : (
-                        <span className="hidden sm:block" />
                       )}
                       <span className="min-w-0">
                         <span className={`${h3} block text-[clamp(1.5rem,1.2rem+1vw,2rem)] group-hover:text-primary`}>{s.title}</span>
-                        <span className="mt-2 block max-w-[46rem] leading-[1.6] text-ink/75">{s.text}</span>
+                        {s.text && <span className="mt-2 block max-w-[46rem] leading-[1.6] text-ink/75">{s.text}</span>}
                       </span>
                       <span className="hidden h-12 w-12 place-items-center border-2 border-ink transition group-hover:bg-ink group-hover:text-white sm:grid">
                         <ArrowRight size={20} aria-hidden="true" />
@@ -1341,6 +1339,9 @@ function ServicePage({ b, tel, s }) {
   const steps = list(b.claim?.steps);
   const promises = list(b.promises);
   const group = GROUPS.find(([key]) => key === groupOf(s))[1];
+  // A service their site only names has no words for its page; the
+  // inspection card then runs across the page instead of beside an empty column.
+  const said = list(s.body).length > 0 || list(s.points).length > 0 || list(s.faqs).length > 0;
   return (
     <>
       <PageHero
@@ -1357,8 +1358,8 @@ function ServicePage({ b, tel, s }) {
         imageAlt={s.imageAlt}
       />
       <section className={pad}>
-        <div className={`${wrap} grid items-start gap-12 lg:grid-cols-[minmax(0,1fr)_380px] lg:gap-16`}>
-          <div className="min-w-0">
+        <div className={`${wrap} grid items-start gap-12 ${said ? 'lg:grid-cols-[minmax(0,1fr)_380px]' : ''} lg:gap-16`}>
+          <div className={said ? 'min-w-0' : 'hidden'}>
             {list(s.body).map((para) => (
               <p key={para.slice(0, 40)} className="mb-5 max-w-[44rem] text-[17px] leading-[1.7] text-ink/85 sm:text-[19px]">
                 {para}
@@ -1392,16 +1393,20 @@ function ServicePage({ b, tel, s }) {
               </div>
             )}
           </div>
-          <aside className={`bg-ink p-7 text-white sm:p-8 lg:sticky ${b.preview ? 'lg:top-[150px]' : 'lg:top-[108px]'}`}>
+          <aside
+            className={`bg-ink p-7 text-white sm:p-8 ${
+              said ? `lg:sticky ${b.preview ? 'lg:top-[150px]' : 'lg:top-[108px]'}` : 'lg:grid lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:gap-x-12'
+            }`}
+          >
             <p className={`${h3} text-[24px]`}>Free {s.title.toLowerCase()} inspection</p>
             <a href={tel} className="mt-4 flex min-h-[48px] items-center gap-3 font-heading text-[28px] font-semibold tracking-[0.03em] text-accent no-underline">
               <Phone size={22} aria-hidden="true" /> {b.phone}
             </a>
-            <a href="/contact" className={`${hot} mt-4 w-full`}>
+            <a href="/contact" className={`${hot} mt-4 w-full ${said ? '' : 'lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:mt-0 lg:w-auto'}`}>
               Book an Inspection
             </a>
             {promises.length > 0 && (
-              <div className="mt-7 border-t border-white/15 pt-7">
+              <div className={`mt-7 border-t border-white/15 pt-7 ${said ? '' : 'lg:col-span-2'}`}>
                 <Promises items={promises} dark />
               </div>
             )}
@@ -1501,7 +1506,7 @@ function AreasPage({ b, tel }) {
       <section className={`bg-surface ${pad}`}>
         <div className={`${wrap} grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16`}>
           <div>
-            <Eyebrow>Our yard</Eyebrow>
+            <Eyebrow>Find us</Eyebrow>
             <h2 className={h2}>
               {b.address}, {b.town}
             </h2>
@@ -1587,9 +1592,9 @@ function AboutPage({ b, tel }) {
                   </li>
                 )}
                 <li className="flex justify-between gap-4">
-                  <span className="text-white/65">Yard</span>
+                  <span className="text-white/65">Address</span>
                   <strong className="text-right">
-                    {b.address}, {b.town}
+                    {b.address}, {b.town}, {b.state} {b.zip}
                   </strong>
                 </li>
               </ul>
