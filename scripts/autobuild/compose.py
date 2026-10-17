@@ -553,6 +553,11 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # colors.") is a sentence of their page, not the name of a service.
         if re.search(r"[a-z]{2}\.$", name, re.I):
             return
+        # One that opens on its place in their process ("Step Three
+        # Construction and Remodeling", "Phase 2: Design") is a stage of the
+        # job, not a service.
+        if re.match(r"(?:step|phase|stage)\s+(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten)\b", name, re.I):
+            return
         if re.search(r"\b(warrant(y|ies)|guarantees?) (on|for)\b", name, re.I):
             return
         # One that opens on a claim made of them ("Fits All Vehicles", "Keeps

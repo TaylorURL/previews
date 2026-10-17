@@ -1,0 +1,87 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Global Ship Services",
+  "shortName": "Global Ship Services",
+  "phone": "(713) 589-2282",
+  "email": "usa@globalshipservices.us",
+  "address": "9139 Wallisville Rd",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77029",
+  "rating": 4.3,
+  "reviewCount": 11,
+  "brand": {
+    "primary": "#01004f",
+    "primaryDeep": "#010037",
+    "accent": "#6b69ff",
+    "ink": "#141824",
+    "surface": "#f0f0f4",
+    "muted": "#5b6470",
+    "line": "#dedfe0",
+    "heading": "'Inter', system-ui, sans-serif",
+    "body": "'Plus Jakarta Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap",
+    "logo": "/brands/globalship/logo.webp",
+    "logoMono": "/brands/globalship/logo-mono.webp",
+    "logoWidth": 130,
+    "logoHeight": 74,
+    "logoRatio": 1.754,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.314,
+      0.262,
+      0.196,
+      0.738,
+      0.791,
+      0.828,
+      0.857,
+      0.893,
+      0.929,
+      0.965,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Global Ship Services",
+    "title": "Deck & engine supplies",
+    "lead": "Your trusted partner in marine supplies, spare parts, and global technical ship services. Reliable solutions to keep vessels running worldwide.",
+    "image": "/brands/globalship/photo1",
+    "imageAlt": "A photo of Global Ship Services",
+    "titleAccent": "in Houston"
+  },
+  "serviceArea": [
+    "Houston"
+  ],
+  "ask": "quote",
+  "summary": "Global Ship Services offers deck & engine supplies, and ship repairs & maintenance in and around Houston.",
+  "groups": [
+    {
+      "slug": "deck-engine-supplies",
+      "title": "Deck & Engine Supplies",
+      "icon": "settings",
+      "summary": "Professional technical assistance, repairs, and support to ensure smooth vessel operations.",
+      "intro": "Professional technical assistance, repairs, and support to ensure smooth vessel operations.",
+      "image": "/brands/globalship/photo3",
+      "imageAlt": "A photo of Global Ship Services"
+    },
+    {
+      "slug": "ship-repairs-maintenance",
+      "title": "Ship Repairs & Maintenance",
+      "icon": "waves",
+      "summary": "Professional repairs and maintenance support to keep your vessel safe, efficient, and compliant.",
+      "intro": "Professional repairs and maintenance support to keep your vessel safe, efficient, and compliant."
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "About Global Ship Services",
+    "text": [
+      "We are a well-reputed Ship Chandler based in the U.S. and Global with 50 years of industry experience. With warehouses across the U.S. Gulf Coast and Middle East. We proudly serve thousands of vessels every year.",
+      "Global Ship Services operates in major U.S. ports including Houston, New Orleans, and Corpus Christi, Jeddah, Fujairah, we also maintaining a strong international presence with our partner in South America, Asia and partners across Africa and many more.",
+      "We provide comprehensive marine solutions including Ship Provisions & Stores, Bonded Stores, Deck & Engine Supplies, Ship Repairs & Maintenance, and Cash to Master (CTM) services."
+    ],
+    "image": "/brands/globalship/photo2",
+    "imageAlt": "A photo of Global Ship Services"
+  }
+}

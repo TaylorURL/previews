@@ -844,16 +844,16 @@ function PageHero({ b, crumbs, eyebrow, title, text, image, imageAlt, icon, pane
       >
         <div className="min-w-0">
           <nav aria-label="Breadcrumb" className="mb-6">
-            <ol className="flex flex-wrap items-center gap-1.5 text-[14px] text-muted">
-              <li>
+            <ol className="flex items-start gap-1.5 text-[14px] text-muted">
+              <li className="flex-none">
                 <a href="/" className="inline-flex min-h-[32px] items-center text-muted no-underline hover:text-[color:var(--pt)]">
                   Home
                 </a>
               </li>
               {crumbs.map((c) => (
-                <li key={c} className="flex items-center gap-1.5">
-                  <ChevronRight size={14} aria-hidden="true" />
-                  <span aria-current="page" className="font-medium text-ink">
+                <li key={c} className="flex min-w-0 items-start gap-1.5">
+                  <ChevronRight size={14} className="mt-[9px] flex-none" aria-hidden="true" />
+                  <span aria-current="page" className="flex min-h-[32px] items-center font-medium text-ink">
                     {c}
                   </span>
                 </li>
