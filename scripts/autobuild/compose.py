@@ -163,7 +163,7 @@ ICONS = {
                      ("bone", r".")],
     "hvac": [("snowflake", r"cool|air cond|\bac\b|a/c"), ("flame", r"heat|furnace"), ("zap", r"electric|panel|wiring|generator"),
              ("wind", r"duct|air quality|ventilat|indoor"), ("wrench", r".")],
-    "professional": [("car", r"auto|vehicle|car"), ("house", r"home|homeowner|residential|renters|landlord"),
+    "professional": [("car", r"\bauto|vehicle|\bcars?\b"),("house", r"home|homeowner|residential|renters|landlord"),
                      ("heart", r"life|health|medicare"), ("briefcase", r"business|commercial|liability|workers"),
                      ("calculator", r"tax|bookkeeping|payroll|accounting|audit"), ("file", r"title|closing|escrow")],
 }
