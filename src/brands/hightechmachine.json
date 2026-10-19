@@ -1,0 +1,355 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "High Tech Machine",
+  "shortName": "HTM",
+  "summary": "A family-owned precision machine shop in Houston, producing prototypes, complicated parts and production runs for the oil and gas, aerospace, mining and marine industries.",
+  "phone": "(832) 467-2806",
+  "email": "info@hightechmach.com",
+  "address": "6518 Wesco Way",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77041",
+  "rating": 5.0,
+  "reviewCount": 7,
+  "since": 1995,
+  "hours": [
+    ["Mon – Fri", "6 AM – 4:30 PM"],
+    ["Saturday", "6 AM – 12 PM"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#232a33",
+    "primaryDeep": "#13181f",
+    "accent": "#dd3333",
+    "ink": "#15181f",
+    "muted": "#5b6572",
+    "surface": "#f3f5f7",
+    "line": "#dde1e7",
+    "heading": "'Heebo', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Heebo:wght@500;700;800&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/hightechmachine/logo.webp",
+    "logoMono": "/brands/hightechmachine/logo-mono.webp",
+    "logoWidth": 84,
+    "logoHeight": 84,
+    "logoRatio": 0.994,
+    "logoGround": "#ffffff",
+    "logoReads": [0.583, 0.522, 0.4, 0.601, 0.6, 0.638, 0.7, 0.795, 0.884, 0.952, 1.0]
+  },
+  "hero": {
+    "eyebrow": "Precision machining in Houston, Texas",
+    "title": "Delivering superior quality",
+    "titleAccent": "every time.",
+    "lead": "High Tech Machine has the industry knowledge and expertise to deliver your machining job right the first time. We machine high-end prototypes, tackle unique setups and produce complicated parts for clients at home and overseas.",
+    "image": "/brands/hightechmachine/hero",
+    "imageAlt": "A machinist measuring a large machined part with a portable inspection arm"
+  },
+  "groups": [
+    {
+      "slug": "turning",
+      "title": "Turning and Lathe Work",
+      "icon": "settings",
+      "summary": "Manual and CNC turning up to 40 inches in diameter and 120 inches between centers.",
+      "intro": "HTM's floor is laid out with CNC machining centers and lathes surrounded by complementary manual machines. That mix lets one job run as a single R&D piece and the next run as a large production batch, without moving shops.",
+      "image": "/brands/hightechmachine/turning",
+      "imageAlt": "A heavy-duty engine lathe on the High Tech Machine shop floor",
+      "services": [
+        {
+          "slug": "cnc-turning",
+          "title": "CNC Turning",
+          "icon": "settings",
+          "text": "CNC horizontal and vertical lathes for repeatable parts, from a first article through a full production run.",
+          "points": ["Up to 40\" outside diameter", "Up to 120\" long bed lengths", "Horizontal and vertical CNC lathes"]
+        },
+        {
+          "slug": "manual-turning",
+          "title": "Manual Turning",
+          "icon": "wrench",
+          "text": "Manual lathes alongside the CNC machines, for one-off work, rework and setups that are quicker done by hand.",
+          "points": ["One-piece production for prototyping", "Unique and awkward setups"]
+        },
+        {
+          "slug": "downhole-tooling",
+          "title": "Subsea and Downhole Components",
+          "icon": "gauge",
+          "text": "HTM specializes in projects for subsea and land-based downhole tools, where tolerance and material certification both matter.",
+          "points": ["Oil and gas components", "Inconel, duplex and stainless work"]
+        }
+      ]
+    },
+    {
+      "slug": "milling",
+      "title": "Milling",
+      "icon": "ruler",
+      "summary": "Manual and CNC milling, including four and five-axis programming and machining.",
+      "intro": "Complex milling is handled both manually and on CNC. HTM offers four and five-axis programming as well as five-axis machining, so a part with features on several faces can be cut in fewer setups.",
+      "image": "/brands/hightechmachine/milling",
+      "imageAlt": "A part fixtured on the rotary table of a CNC vertical machining center",
+      "services": [
+        {
+          "slug": "cnc-milling",
+          "title": "CNC Milling",
+          "icon": "ruler",
+          "text": "CNC machining centers for complex milled parts, run from programs written in-house.",
+          "points": ["3, 4 and 5 axis", "Four and five-axis programming", "Five-axis machining"]
+        },
+        {
+          "slug": "manual-milling",
+          "title": "Manual Milling",
+          "icon": "wrench",
+          "text": "Manual mills for fixtures, modifications and short work that does not justify a program.",
+          "points": ["Complementary to the CNC centers"]
+        },
+        {
+          "slug": "custom-components",
+          "title": "Custom Components",
+          "icon": "compass",
+          "text": "From start to finish, HTM creates and fabricates custom components to a customer's drawings and specifications.",
+          "points": ["Built to customer print", "Complicated parts and unique setups"]
+        }
+      ]
+    },
+    {
+      "slug": "inspection-and-finishing",
+      "title": "Inspection and Finishing",
+      "icon": "gauge",
+      "summary": "CMM and Romer arm inspection, with an in-house phosphate tank for small parts.",
+      "intro": "Quality is checked before manufacturing begins and again at the end. Final inspection and testing use calibrated tools, logged and calibrated to NIST standards, so a part leaves only once it meets the requirements set at the start.",
+      "image": "/brands/hightechmachine/inspection",
+      "imageAlt": "Rows of finished machined aluminum components",
+      "services": [
+        {
+          "slug": "cmm-inspection",
+          "title": "CMM Inspection",
+          "icon": "gauge",
+          "text": "Coordinate measuring machine inspection against the customer's part specification.",
+          "points": ["Tools calibrated to NIST standards", "Results logged against the job router"]
+        },
+        {
+          "slug": "romer-arm",
+          "title": "Romer Arm Inspection",
+          "icon": "compass",
+          "text": "Portable arm inspection for large parts and features that cannot be brought to a fixed machine.",
+          "points": ["Measurement on the machine or the bench"]
+        },
+        {
+          "slug": "phosphate",
+          "title": "Phosphate Coating",
+          "icon": "shield",
+          "text": "A small-part phosphate tank in-house, so light finishing does not have to leave the building.",
+          "points": ["In-house tank for small parts"]
+        }
+      ]
+    },
+    {
+      "slug": "prototyping-and-production",
+      "title": "Prototyping and Production",
+      "icon": "compass",
+      "summary": "R&D prototypes and full production runs out of the same shop, with no second learning curve.",
+      "intro": "The floor is arranged so a single piece for R&D prototyping and a large production run can both be executed. Customers can go straight from prototype to production while skipping the learning curve of a new machine shop.",
+      "image": "/brands/hightechmachine/production",
+      "imageAlt": "A component being machined with chips cleared to one side",
+      "services": [
+        {
+          "slug": "prototyping",
+          "title": "Prototyping and R&D",
+          "icon": "compass",
+          "text": "HTM has earned its reputation machining high-end prototypes, tackling unique setups and producing complicated parts.",
+          "points": ["One-piece production for R&D", "Unique and difficult setups"]
+        },
+        {
+          "slug": "production-runs",
+          "title": "Production Runs",
+          "icon": "chart",
+          "text": "Capacity for large quality production machining once a design is settled.",
+          "points": ["Prototype to production in one shop", "Cost and efficiency benefits from staying put"]
+        },
+        {
+          "slug": "project-management",
+          "title": "Project Review and Routing",
+          "icon": "clipboard",
+          "text": "Every accepted job is entered into the system with a unique identification number and a job router that sets the order of operations, customer requirements and quality checks.",
+          "points": ["Requirements agreed upfront", "Every step monitored", "Quality control reviews the router before cutting starts"]
+        }
+      ]
+    },
+    {
+      "slug": "turnkey-services",
+      "title": "Turnkey Services",
+      "icon": "clipboard",
+      "summary": "Material procurement and outside processes managed by HTM, so one shop handles the whole part.",
+      "intro": "HTM has extensive experience procuring and working with a wide variety of material, and the ability to turnkey or outsource the processes a part needs along the way. Outside services come from approved suppliers whose quality and on-time delivery are continuously monitored and recorded.",
+      "image": "/brands/hightechmachine/materials",
+      "imageAlt": "Lengths of bar and tube stock strapped on a pallet in the shop",
+      "services": [
+        {
+          "slug": "material-procurement",
+          "title": "Material Procurement",
+          "icon": "building",
+          "text": "HTM sources the stock a job needs rather than waiting on a customer to supply it.",
+          "points": ["Inconel, chrome, stainless and carbon steel", "Brass, copper, bronze, beryllium and aluminum", "Forgings and duplex"]
+        },
+        {
+          "slug": "outside-processes",
+          "title": "Outside Processes",
+          "icon": "flame",
+          "text": "Coatings, honing, NDE, EDM, heat treating and welding managed through approved suppliers as part of the job.",
+          "points": ["Supplier quality and delivery monitored", "Incorporated into the manufacturing process"]
+        },
+        {
+          "slug": "packaging-and-delivery",
+          "title": "Packaging and Delivery",
+          "icon": "shield",
+          "text": "Parts are packaged and wrapped to customer specifications for safe delivery.",
+          "points": ["Packed to the customer's spec"]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "The HTM legacy",
+    "title": "Quality machining is in our blood.",
+    "text": [
+      "HTM has been a family owned and operated machine shop since 1995. Owners Gary and Melinda Bodukoglu joined Melinda's parents, Rick and Linda Jones, shortly after the company was founded, and together they worked to establish and grow a thriving machine shop. In 2011 Gary and Melinda assumed sole ownership and have continued to invest in innovation and in industry education and training.",
+      "Operations are headquartered in a 20,000-plus square foot building in Houston, Texas. Situated on several acres of land, HTM is poised for the future growth and expansion needed to serve its customers.",
+      "The team is talented and dedicated. HTM recruits experienced machinists and also invests in its current employees: many started as a shop helper, delivery driver or in deburr and worked their way up to first class machinist, lead man and CNC programmer. More than 40% of employees have been with the company ten years or more.",
+      "Customer collaboration and satisfaction are paramount. From the first engagement with engineers through to the way HTM works with its vendors, a high level of teamwork and collaboration runs through the whole machining process, and that is what lets HTM minimize risk, improve performance and reduce costs while ensuring a safe and productive working environment."
+    ],
+    "image": "/brands/hightechmachine/team",
+    "imageAlt": "The High Tech Machine team gathered on the shop floor",
+    "values": [
+      {
+        "title": "ISO 9001:2015 certified",
+        "text": "Quality is the top priority, backed by a certified management system and a focus on continual improvement."
+      },
+      {
+        "title": "Family owned and operated",
+        "text": "The same family has run the shop since 1995, and Gary and Melinda Bodukoglu have owned it outright since 2011."
+      },
+      {
+        "title": "Machinists who stay",
+        "text": "More than 40% of the team has been with HTM ten years or more, and training keeps them moving up the ranks."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What industries does HTM machine for?",
+      "a": "Oil and gas, aerospace, mining and marine, along with many others, both domestically and internationally. HTM specializes in subsea and land-based downhole tools."
+    },
+    {
+      "q": "How large a part can you turn?",
+      "a": "Up to 40 inches outside diameter on manual and CNC lathes, and up to 120 inches of bed length."
+    },
+    {
+      "q": "What materials do you work with?",
+      "a": "Inconel, chrome, stainless, carbon steel, forgings, brass, copper, bronze, beryllium, aluminum and duplex. HTM procures the material as part of the job."
+    },
+    {
+      "q": "Can you take a part from prototype through to production?",
+      "a": "Yes. The shop is set up for both one-piece R&D prototyping and large production machining, so customers can move from prototype to production without starting over with a new shop."
+    },
+    {
+      "q": "Are you certified?",
+      "a": "HTM is ISO 9001:2015 certified and an accredited Better Business Bureau business. Final inspection uses tools logged and calibrated to NIST standards."
+    },
+    {
+      "q": "Do you handle processes you do not do in-house?",
+      "a": "Yes. Coatings, honing, NDE, EDM, heat treating and welding are turnkeyed through approved suppliers whose quality and on-time delivery are continuously monitored."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Industries Served",
+      "items": ["Oil and gas", "Aerospace", "Mining", "Marine", "And many others, domestically and internationally"]
+    },
+    {
+      "heading": "Machining Capacity",
+      "items": [
+        "Turning up to 40\" outside diameter, manual and CNC",
+        "Up to 120\" long bed lengths",
+        "CNC horizontal and vertical lathes",
+        "Milling, manual and CNC, in 3, 4 and 5 axis",
+        "Four and five-axis programming and five-axis machining",
+        "CMM and Romer arm inspection",
+        "Small part in-house phosphate tank"
+      ]
+    },
+    {
+      "heading": "Materials",
+      "items": ["Inconel", "Chrome", "Stainless", "Carbon steel", "Forgings", "Brass", "Copper", "Bronze", "Beryllium", "Aluminum", "Duplex"]
+    },
+    {
+      "heading": "Turnkey and Outsourced Services",
+      "text": "HTM maintains strategic relationships and partnerships so the processes a part needs outside the shop stay part of one streamlined process.",
+      "items": ["Forgings", "Coatings", "Honing", "NDE", "EDM", "Heat treating", "Welding"]
+    },
+    {
+      "heading": "How a Job Runs",
+      "items": [
+        "Project review: requirements and expectations established upfront",
+        "System entry: the job gets a unique identification number so every step is monitored",
+        "Router creation: a job router sets the order of operations, customer requirements and quality checks",
+        "Accuracy check: quality control reviews routers and part specifications before manufacturing begins",
+        "Execution: the project moves through departments as the requirements specify",
+        "Inspection: final inspection and testing with tools logged and calibrated to NIST standards",
+        "Delivery: parts packaged and wrapped to customer specifications"
+      ]
+    },
+    {
+      "heading": "The Facility",
+      "text": "HTM operations are headquartered in a 20,000-plus square foot building in Houston, Texas, situated on several acres of land with room for future growth."
+    },
+    {
+      "heading": "Certification and Accreditation",
+      "text": "ISO 9001:2015 certified and an accredited Better Business Bureau business.",
+      "items": [
+        "ISO 9001:2015 Certificate: hightechmach.com/wp-content/uploads/2025/10/High-Tech-Machine-Certification-1.pdf",
+        "BBB Profile: bbb.org/us/tx/jersey-vlg/profile/industrial-manufacturers/high-tech-machine-ii-co-llc-0915-90053121"
+      ]
+    },
+    {
+      "heading": "Equipment List",
+      "text": "HTM publishes the full list of the machines on its floor.",
+      "items": ["Full Equipment List: hightechmach.com/wp-content/uploads/2019/05/EQUIPMENT-LIST-08-2017.pdf"]
+    },
+    {
+      "heading": "What HTM Commits To",
+      "text": "High-quality products, unparalleled service and timely delivery, for clients domestically and internationally. HTM has the industry knowledge, experience and expertise to get a project done right the first time."
+    },
+    {
+      "heading": "Quality Statement",
+      "text": "To produce products and services that meet or exceed our customer's requirements and comply with all statutory and regulatory requirements by adhering to our Management System, Quality Objectives and Operational Methods."
+    },
+    {
+      "heading": "Safety Statement",
+      "text": "Safety and health are a top priority at High Tech Machine. HTM is committed to working with its employees to provide a safe, accident-free and healthy work environment. The safety policies are based on past experience and current standards, are an integral part of company personnel policy, and compliance with them is a condition of employment."
+    },
+    {
+      "heading": "Environmental Statement",
+      "text": "HTM accepts its environmental responsibilities and recognizes its obligation to contribute to the resolution of local environmental issues by reducing its environmental impacts. As a manufacturer HTM also takes a leading role in promoting environmental good practice, and so will:",
+      "items": [
+        "Continue to comply with all relevant legislation and codes of practice",
+        "Continually seek to improve our environmental performance",
+        "Integrate environmental concerns into planning, design, maintenance and management decisions",
+        "Improve employee environmental awareness and understanding",
+        "Encourage all employees to apply the environmental values we operate by"
+      ]
+    },
+    {
+      "heading": "Reach HTM",
+      "items": ["Phone: (832) 467-2806", "Fax: (832) 467-2891", "Email: info@hightechmach.com", "6518 Wesco Way, Houston, TX 77041"]
+    },
+    {
+      "heading": "Follow HTM",
+      "items": [
+        "Facebook: facebook.com/HighTechMachineHouston",
+        "LinkedIn: linkedin.com/company/high-tech-machine-co-llc",
+        "YouTube: youtube.com/channel/UCWLH3sv-Pz14ujV5kOHR47Q",
+        "Twitter: twitter.com/GaryBodukoglu"
+      ]
+    }
+  ]
+}
