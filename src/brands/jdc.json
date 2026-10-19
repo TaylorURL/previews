@@ -1,0 +1,491 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Joshua Dade Contractors",
+  "shortName": "JDC",
+  "summary": "Turnkey industrial construction, maintenance and specialty services for government and private entities, run out of Deer Park with field offices in Mount Belvieu and Cypress.",
+  "phone": "(832) 741-0424",
+  "email": "info@jdincorp.com",
+  "address": "121 E San Augustine St, Suite 100",
+  "town": "Deer Park",
+  "state": "TX",
+  "zip": "77536",
+  "hours": [
+    ["Mon – Fri", "6 AM – 5:30 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#1f3c56",
+    "primaryDeep": "#13273a",
+    "accent": "#b4530a",
+    "ink": "#11202c",
+    "muted": "#4a5d6d",
+    "surface": "#f1f5f8",
+    "line": "#d7e0e7",
+    "heading": "'Archivo', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/jdc/logo.webp",
+    "logoMono": "/brands/jdc/logo-mono.webp",
+    "logoWidth": 116,
+    "logoHeight": 58,
+    "logoRatio": 2.004,
+    "logoGround": "#ffffff",
+    "logoReads": [0.0, 0.0, 0.0, 0.298, 0.401, 0.504, 0.599, 0.698, 0.799, 0.904, 1.0]
+  },
+  "hero": {
+    "eyebrow": "Industrial construction and specialty services on the Texas Gulf Coast",
+    "title": "Quality construction, maintenance",
+    "titleAccent": "and specialty services.",
+    "lead": "Turnkey industrial construction, maintenance and specialty services for government and private entities. Our management team has over 30 years of experience. Safety. Quality. Integrity. Performance.",
+    "image": "/brands/jdc/hero",
+    "imageAlt": "An industrial process plant at dusk with piping and lit structures"
+  },
+  "groups": [
+    {
+      "slug": "industrial-construction",
+      "title": "Industrial Construction",
+      "icon": "building",
+      "summary": "Engineering, procurement, construction and commissioning for the energy, petrochemical and manufacturing sectors.",
+      "intro": "JDC provides comprehensive industrial construction services for the energy, petrochemical and manufacturing sectors. Our experienced crews handle every phase of your project with a relentless focus on safety and quality. From first steel to final commissioning, we cover the whole scope rather than handing it between contractors.",
+      "image": "/brands/jdc/industrial-construction",
+      "imageAlt": "An aerial view of a Gulf Coast refinery and its process units",
+      "services": [
+        {
+          "slug": "structural-and-mechanical",
+          "title": "Structural & Mechanical",
+          "icon": "building",
+          "text": "Structural steel and mechanical installation across process units, pipe racks and platforms.",
+          "points": [
+            "Steel erection, rigging and heavy lifts",
+            "Equipment setting and alignment",
+            "Pipe racks, platforms and structural modifications"
+          ]
+        },
+        {
+          "slug": "piping-and-process-systems",
+          "title": "Piping & Process Systems",
+          "icon": "settings",
+          "text": "Process piping, pressure vessels and mechanical systems built and tied in to refinery and petrochemical standards.",
+          "points": [
+            "Process piping installation",
+            "Heat exchanger and vessel tie-ins",
+            "Pressure testing"
+          ]
+        },
+        {
+          "slug": "civil-construction",
+          "icon": "ruler",
+          "title": "Civil Construction",
+          "text": "The civil scope that comes with an industrial project, handled by the same contractor rather than passed to another one.",
+          "points": [
+            "Foundations, slabs and pads",
+            "Site prep ahead of mechanical work",
+            "Earthwork, drainage and underground utilities"
+          ]
+        },
+        {
+          "slug": "turnarounds-and-shutdowns",
+          "title": "Turnarounds & Shutdowns",
+          "icon": "timer",
+          "text": "Full-scope turnaround work on a compressed schedule, with mechanical, piping, civil and I&E crews running at once to limit downtime.",
+          "points": [
+            "Mechanical, piping, civil and I&E in one scope",
+            "Multi-unit execution to shorten the outage",
+            "Planning and scope development before the window opens"
+          ]
+        },
+        {
+          "slug": "maintenance-services",
+          "title": "Maintenance Services",
+          "icon": "wrench",
+          "text": "Ongoing maintenance for facilities that need a long-term partner rather than a contractor for one job.",
+          "points": [
+            "Routine and preventive maintenance",
+            "Equipment repairs and rerates",
+            "Long-term maintenance agreements"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "fire-suppression",
+      "title": "Fire Suppression",
+      "icon": "flame",
+      "summary": "Firewater and fire suppression systems designed, installed and maintained to NFPA standards.",
+      "intro": "JDC designs, installs and maintains firewater and fire suppression systems for industrial facilities, from firewater distribution piping and deluge systems to foam suppression and hydrant networks. Our crews are experienced in NFPA-compliant installations across refineries, petrochemical plants and offshore facilities.",
+      "image": "/brands/jdc/fire-suppression",
+      "imageAlt": "Firewater piping and a hydrant monitor at an industrial facility",
+      "services": [
+        {
+          "slug": "firewater-distribution-piping",
+          "title": "Firewater Distribution Piping",
+          "icon": "droplets",
+          "text": "Underground and above-ground firewater mains and distribution loops installed across a plant site.",
+          "points": ["New loops and extensions", "Tie-ins to existing mains", "Pressure testing and flushing"]
+        },
+        {
+          "slug": "deluge-and-sprinkler-systems",
+          "title": "Deluge & Sprinkler Systems",
+          "icon": "waves",
+          "text": "Deluge and sprinkler systems installed over process units, transformers and storage areas.",
+          "points": ["NFPA-compliant installation", "Detection and release tie-ins"]
+        },
+        {
+          "slug": "foam-suppression-systems",
+          "title": "Foam Suppression Systems",
+          "icon": "filter",
+          "text": "Foam suppression for tank farms and areas where water alone will not put a fire down.",
+          "points": ["Proportioning skids and bladder tanks", "Tank rim and subsurface injection"]
+        },
+        {
+          "slug": "hydrant-and-monitor-networks",
+          "title": "Fire Hydrant & Monitor Networks",
+          "icon": "shield",
+          "text": "Hydrant and monitor coverage laid out and installed across the site.",
+          "points": ["Hydrants, monitors and hose houses", "Coverage checked against the layout"]
+        },
+        {
+          "slug": "pump-station-installation",
+          "title": "Pump Station Installation",
+          "icon": "gauge",
+          "text": "Firewater pump stations installed complete, from the foundation and the pump to the controls.",
+          "points": ["Diesel and electric fire pumps", "Suction and discharge piping", "Controller and power tie-ins"]
+        },
+        {
+          "slug": "system-testing-and-commissioning",
+          "title": "System Testing & Commissioning",
+          "icon": "clipboard",
+          "text": "Systems tested, commissioned and documented before they are handed over.",
+          "points": ["Flow and pressure testing", "Functional and trip testing", "Turnover documentation"]
+        },
+        {
+          "slug": "inspection-and-maintenance",
+          "title": "Inspection & Maintenance",
+          "icon": "wrench",
+          "text": "Scheduled inspection and maintenance that keeps a fire system ready between projects.",
+          "points": ["Periodic inspection and testing", "Repairs and component replacement"]
+        }
+      ]
+    },
+    {
+      "slug": "ie-automation",
+      "title": "I&E / Automation",
+      "icon": "circuit",
+      "summary": "Complete instrumentation, electrical and automation work, from high voltage to DCS and PLC commissioning.",
+      "intro": "Our I&E teams deliver complete instrumentation, electrical and automation solutions, from high-voltage installations through to DCS and PLC commissioning. The same crews that pull the wire also check the loops and support start-up, so the facility runs safely and efficiently when it comes back on line.",
+      "image": "/brands/jdc/ie-automation",
+      "imageAlt": "An open industrial electrical control panel with wiring and modules",
+      "services": [
+        {
+          "slug": "high-and-low-voltage",
+          "title": "High & Low Voltage",
+          "icon": "zap",
+          "text": "High and low voltage installation across substations, switchgear, motors and lighting.",
+          "points": ["Conduit, cable tray and wire pull", "Terminations and testing", "Motor and switchgear hook-up"]
+        },
+        {
+          "slug": "instrumentation",
+          "title": "Instrumentation",
+          "icon": "gauge",
+          "text": "Field instrumentation installed, calibrated and loop checked.",
+          "points": ["Transmitters, valves and switches", "Calibration and loop checks"]
+        },
+        {
+          "slug": "analyzers",
+          "title": "Analyzers",
+          "icon": "chart",
+          "text": "Analyzer installation and the shelters, sample systems and tubing that go with them.",
+          "points": ["Analyzer houses and sample systems", "Installation and start-up support"]
+        },
+        {
+          "slug": "fiber-and-communication",
+          "title": "Fiber & Communication",
+          "icon": "cable",
+          "text": "Fiber and communication infrastructure run across a plant site and terminated.",
+          "points": ["Fiber pulling, splicing and testing", "Communication and network cabinets"]
+        },
+        {
+          "slug": "dcs-and-plc-design",
+          "title": "DCS & PLC Design",
+          "icon": "compass",
+          "text": "Control system design, drawings and configuration ahead of the field work.",
+          "points": ["Control narratives and I/O lists", "Panel and cabinet design"]
+        },
+        {
+          "slug": "dcs-and-plc-commissioning",
+          "title": "DCS & PLC Commissioning",
+          "icon": "settings",
+          "text": "Control systems commissioned point by point, with every loop proved before start-up.",
+          "points": ["Point-to-point and loop checks", "Functional testing"]
+        },
+        {
+          "slug": "integration-and-start-up",
+          "title": "Integration & Start-Up",
+          "icon": "power",
+          "text": "Integration and start-up support that stays on site until the unit is running the way it should.",
+          "points": ["Start-up and troubleshooting support", "Punch list closeout"]
+        }
+      ]
+    },
+    {
+      "slug": "fabrication",
+      "title": "Fabrication",
+      "icon": "ruler",
+      "summary": "ASME code fabrication and custom work out of a 10,000 sq ft shop with 20-ton crane capacity.",
+      "intro": "Our 10,000 sq ft fabrication facility with 20-ton crane capacity produces ASME code-stamped vessels, API tanks, structural steel and custom process equipment built to the highest industry standards. JDC holds ASME U and R stamps, so a vessel can be built new or repaired in the same shop.",
+      "image": "/brands/jdc/fabrication",
+      "imageAlt": "A stainless steel shell and tube heat exchanger in a fabrication shop",
+      "services": [
+        {
+          "slug": "asme-code-fabrication",
+          "title": "ASME Code Fabrication",
+          "icon": "shield",
+          "text": "Pressure vessels fabricated and repaired under ASME U and R stamps.",
+          "points": ["ASME U stamp for new vessel fabrication", "ASME R stamp for vessel repair"]
+        },
+        {
+          "slug": "api-tank-fabrication",
+          "title": "API Tank Fabrication",
+          "icon": "building",
+          "text": "Above-ground storage tanks fabricated to API standards.",
+          "points": ["Shop and field-erected tanks", "API above-ground storage tank work"]
+        },
+        {
+          "slug": "structural-and-pipe-fabrication",
+          "title": "Structural & Pipe Fabrication",
+          "icon": "ruler",
+          "text": "Structural steel and pipe spools fabricated in the shop and shipped ready to set.",
+          "points": ["Pipe spools and skids", "Pipe racks, platforms and supports"]
+        },
+        {
+          "slug": "duct-work",
+          "title": "Duct Work",
+          "icon": "wind",
+          "text": "Industrial duct work fabricated to drawing and installed.",
+          "points": ["Heavy-gauge industrial duct", "Transitions, dampers and supports"]
+        },
+        {
+          "slug": "equipment-repairs-and-rerates",
+          "title": "Equipment Repairs / Rerates",
+          "icon": "wrench",
+          "text": "Existing equipment repaired, re-rated and returned to service rather than replaced.",
+          "points": ["Code repairs under the R stamp", "Rerates and modifications"]
+        },
+        {
+          "slug": "custom-process-equipment",
+          "title": "Custom Process Equipment",
+          "icon": "settings",
+          "text": "One-off process equipment built to your drawings or developed with our shop.",
+          "points": ["Built to drawing or to spec", "Shop assembly and fit-up before delivery"]
+        }
+      ]
+    },
+    {
+      "slug": "civil-and-specialty-services",
+      "title": "Civil & Specialty Services",
+      "icon": "waves",
+      "summary": "Site development, commercial diving and technical field services, the specialty scopes most contractors subcontract out.",
+      "intro": "Beyond construction and fabrication, JDC keeps three specialty capabilities in house: full civil site development, certified commercial diving, and technical and field services teams that bring specialized expertise straight to your facility. That means a scope touching the ground, the water and the equipment stays with one contractor.",
+      "image": "/brands/jdc/civil-specialty",
+      "imageAlt": "An excavator loading soil into a dump truck on a construction site",
+      "services": [
+        {
+          "slug": "civil-services",
+          "title": "Civil Services",
+          "icon": "building",
+          "text": "Full-service civil construction and site development, from the first demolition through drainage, utilities and erosion control.",
+          "points": [
+            "Site demolition",
+            "Earthwork and grading",
+            "Roads and parking lots",
+            "Drainage and ponds",
+            "Underground utilities",
+            "Erosion and sediment control"
+          ]
+        },
+        {
+          "slug": "commercial-diving",
+          "title": "Commercial Diving",
+          "icon": "waves",
+          "text": "Certified commercial diving teams for underwater inspection, repair and construction on marine structures, pipelines and offshore facilities.",
+          "points": [
+            "Underwater inspection",
+            "Underwater welding and cutting",
+            "Pipeline repair",
+            "Marine structure maintenance",
+            "Offshore support"
+          ]
+        },
+        {
+          "slug": "technical-and-field-services",
+          "title": "Technical & Field Services",
+          "icon": "clipboard",
+          "text": "Specialized expertise on site for complex industrial problems, equipment troubleshooting and project execution.",
+          "points": [
+            "Field engineering support",
+            "Equipment troubleshooting",
+            "Technical consulting",
+            "On-site project management",
+            "Specialty craft labor"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "Who we are",
+    "title": "Built on experience. Driven by integrity.",
+    "text": [
+      "For over 30 years, Joshua Dade Contractors has delivered safe, high-quality industrial construction and specialty services to clients across the Gulf Coast and beyond.",
+      "JDC was founded with a simple but powerful commitment: to provide commercial construction, maintenance and specialty services that clients can depend on, delivered safely, on schedule and to the highest standards of quality.",
+      "Over three decades, JDC has grown from a regional contractor into a full-service industrial firm with the manpower, equipment and expertise to handle the most complex projects in the energy, petrochemical and manufacturing sectors.",
+      "Our management team brings over 30 years of combined industry experience to every project. That depth of knowledge, paired with a culture built on safety, quality, integrity and performance, is what sets JDC apart and keeps our clients coming back."
+    ],
+    "image": "/brands/jdc/team",
+    "imageAlt": "Craft workers in hard hats and high-visibility gear on an industrial job site",
+    "values": [
+      {
+        "title": "Safety",
+        "text": "Safety is the first priority on every project, every day, and every team member is held to the same standard."
+      },
+      {
+        "title": "Quality",
+        "text": "Work that meets and exceeds client expectations, backed by ASME certifications and experienced craftsmen."
+      },
+      {
+        "title": "Integrity",
+        "text": "We do what we say. Clients trust us because we are consistent in our estimates, our timelines and our work."
+      },
+      {
+        "title": "Performance",
+        "text": "The right people, equipment and processes on every project, to deliver on time, on budget and to spec."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What kind of work does JDC take on?",
+      "a": "Industrial construction, fire suppression, I&E and automation, ASME code fabrication, civil site development, commercial diving and technical field services, for government and private clients in the energy, petrochemical and manufacturing sectors."
+    },
+    {
+      "q": "Where does JDC work?",
+      "a": "We operate from three Gulf Coast locations: the main office and fabrication shop in Deer Park, and field offices in Mount Belvieu and Cypress, covering the Houston Ship Channel corridor, the Baytown and Chambers County area, northwest Houston and the wider Gulf Coast."
+    },
+    {
+      "q": "What can your fabrication shop handle?",
+      "a": "The shop is 10,000 sq ft with 20-ton crane capacity, and we hold ASME U and R stamps along with API tank fabrication capability, for pressure vessels, tanks, structural steel, pipe, duct work and custom process equipment."
+    },
+    {
+      "q": "How quickly do you respond to a bid request?",
+      "a": "We follow up on a bid request within one business day."
+    },
+    {
+      "q": "Can you run a turnaround with multiple crafts at once?",
+      "a": "Yes. On a turnaround we run mechanical, piping, civil and I&E scopes at the same time across multiple units, to keep the outage as short as possible."
+    },
+    {
+      "q": "What safety credentials does JDC hold?",
+      "a": "We are ISNetworld certified and Avetta approved, maintain a full OSHA safety program across every job site and facility, and every employee is empowered to stop work if something is not right."
+    }
+  ],
+  "serviceArea": [
+    "Deer Park",
+    "Mount Belvieu",
+    "Cypress",
+    "Houston Ship Channel",
+    "Baytown",
+    "Chambers County",
+    "Houston",
+    "Texas Gulf Coast"
+  ],
+  "facts": [
+    {
+      "heading": "Certifications and Safety",
+      "items": [
+        "ASME U stamp — pressure vessel fabrication",
+        "ASME R stamp — pressure vessel repair",
+        "API tank fabrication — above-ground storage tanks",
+        "OSHA compliant — full OSHA safety program",
+        "OSHA certifications held across the workforce",
+        "ISNetworld — contractor safety management",
+        "Avetta — supply chain risk management"
+      ]
+    },
+    {
+      "heading": "Fabrication Shop",
+      "items": [
+        "10,000 sq ft fabrication facility",
+        "20-ton crane capacity",
+        "Located at the Deer Park main office"
+      ]
+    },
+    {
+      "heading": "Track Record",
+      "items": ["Over 30 years in business", "More than 3,000 projects completed", "Management team with over 30 years of combined industry experience"]
+    },
+    {
+      "heading": "Industries Served",
+      "items": [
+        "Energy and refining",
+        "Petrochemical and chemical",
+        "Manufacturing",
+        "Infrastructure",
+        "Midstream and pipeline",
+        "Power generation",
+        "Marine and offshore",
+        "Government and private entities"
+      ]
+    },
+    {
+      "heading": "Our Locations",
+      "items": [
+        "Deer Park, TX — main office and fabrication facility, serving the greater Houston Ship Channel corridor",
+        "Mount Belvieu, TX — field office for the Barbers Hill and Baytown corridor, serving the petrochemical, midstream and pipeline sectors",
+        "Cypress, TX — field office serving commercial and industrial clients across northwest Houston and the greater Houston region"
+      ]
+    },
+    {
+      "heading": "Our Mission",
+      "text": "To safely deliver exceptional construction, maintenance and specialty services, building lasting partnerships through experienced people, proven processes and a relentless commitment to quality."
+    },
+    {
+      "heading": "Safety Culture",
+      "text": "Safety is a culture rather than a program. Every employee is empowered to stop work if something is not right, JDC maintains a comprehensive safety program across all job sites and facilities, and the commitment to zero incidents is non-negotiable for our people, our clients and the communities we work in."
+    },
+    {
+      "heading": "Selected Projects",
+      "items": [
+        "Gulf Coast refinery expansion — Beaumont, TX: process piping, vessel installation and heat exchanger tie-ins across multiple process units",
+        "Combined cycle power plant — Midland, TX: full electrical and instrumentation scope, DCS commissioning and start-up support",
+        "Midstream pipeline tie-in — Corpus Christi, TX: hot-tap and tie-in on an active corridor, completed on a compressed schedule with zero incidents",
+        "Steel fabrication facility upgrade — Houston, TX: ASME code fabrication, structural erection, pipe racks and platforms",
+        "Chemical plant turnaround — Baton Rouge, LA: mechanical, piping, civil and I&E executed simultaneously across multiple units"
+      ]
+    },
+    {
+      "heading": "Bids and Contact",
+      "items": [
+        "Bid requests answered within one business day",
+        "Email: info@jdincorp.com",
+        "Fax: (877) 822-0408",
+        "Resumes: careers@jdcindustrial.com",
+        "Office hours: Monday to Friday, 6 AM to 5:30 PM"
+      ]
+    },
+    {
+      "heading": "Trades We Hire",
+      "items": [
+        "Welders — structural, pipe and specialty: SMAW, GTAW, FCAW, with ASME and API experience a plus",
+        "Pipefitters — process piping, pressure vessels and mechanical systems",
+        "Electricians — industrial installation, conduit, instrumentation and controls",
+        "Ironworkers — structural steel erection, rigging and heavy lifts",
+        "Instrumentation technicians — loop checks, calibration and DCS/PLC commissioning",
+        "Equipment operators, general laborers and craft helpers",
+        "Competitive wages and consistent work on major industrial projects"
+      ]
+    }
+  ]
+}

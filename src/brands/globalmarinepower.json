@@ -1,0 +1,406 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Global Marine Power LLC",
+  "shortName": "Global Marine Power",
+  "summary": "Marine engine spare parts, turbocharger service and rental power from a stocked warehouse in Houston, for marine, offshore, power generation and railway operators.",
+  "phone": "(281) 646-1870",
+  "email": "sales@globalmarinepower.com",
+  "address": "3501 Bacor Rd",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77084",
+  "rating": 4.3,
+  "reviewCount": 7,
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#063180",
+    "primaryDeep": "#001f54",
+    "accent": "#e9a24f",
+    "ink": "#0d1726",
+    "muted": "#4a5a6e",
+    "surface": "#eef3fa",
+    "line": "#d7e0ec",
+    "heading": "'Montserrat', system-ui, sans-serif",
+    "body": "'Raleway', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&family=Raleway:wght@400;500;700&display=swap",
+    "logo": "/brands/globalmarinepower/logo.webp",
+    "logoMono": "/brands/globalmarinepower/logo-mono.webp",
+    "logoWidth": 44,
+    "logoHeight": 84,
+    "logoRatio": 0.529,
+    "logoGround": "#14181f",
+    "logoReads": [
+      1.0,
+      0.99,
+      0.881,
+      0.772,
+      0.658,
+      0.545,
+      0.438,
+      0.332,
+      0.0,
+      0.001,
+      0.024
+    ],
+    "logoName": true
+  },
+  "hero": {
+    "eyebrow": "Marine engine spares and turbocharger service in Houston",
+    "title": "Spares on the shelf in Houston,",
+    "titleAccent": "shipped to 150 ports.",
+    "lead": "Global Marine Power is an authorized distributor and premier stockist for the leading main European original equipment manufacturers for spare parts, with around 5,000 items held for Bergen, Wärtsilä, MAN B&W, Himsen and MAK engines.",
+    "image": "/brands/globalmarinepower/hero",
+    "imageAlt": "Tankers moored side by side, seen from above"
+  },
+  "groups": [
+    {
+      "slug": "marine-engines",
+      "title": "Marine Engines",
+      "icon": "waves",
+      "summary": "Spare parts for the medium-speed engines that run ships, offshore vessels and gensets.",
+      "intro": "We hold stock of Goetze, L'Orange, Bosch, MHW, Mahle, Daido, Miba and more makers from Europe. The engine families below are the ones Global Marine Power supports. If you do not see what you are looking for, email or call us with your request and we will be glad to assist you.",
+      "image": "/brands/globalmarinepower/marine-engines",
+      "imageAlt": "Machinery and motor pumps inside a vessel's engine room",
+      "services": [
+        {
+          "slug": "bergen-engines",
+          "title": "Bergen Engines",
+          "icon": "gauge",
+          "text": "Parts for the Bergen L, K, B and C engine families, diesel and gas burning.",
+          "points": [
+            "L-Series: LDG, LDM",
+            "K-Series diesel and gas burning: KRM, KRG, KVM, KVG",
+            "B-Series: BRG, BRM, BVG, BVM",
+            "B 32:40 and C 25:33"
+          ]
+        },
+        {
+          "slug": "wartsila-engines",
+          "title": "Wärtsilä Engines",
+          "icon": "settings",
+          "text": "Spares for the Wärtsilä and Vasa ranges, including dual-fuel and spark-gas variants.",
+          "points": [
+            "W20 and W26",
+            "Vasa 32, W32 and W34SG",
+            "W46 and W50DF"
+          ]
+        },
+        {
+          "slug": "man-bw-engines",
+          "title": "MAN B&W Engines",
+          "icon": "settings",
+          "text": "Parts for MAN B&W four-stroke medium-speed engines.",
+          "points": [
+            "28/32",
+            "32/40",
+            "48/60"
+          ]
+        },
+        {
+          "slug": "himsen-engines",
+          "title": "Hyundai Himsen Engines",
+          "icon": "settings",
+          "text": "Spares for the Hyundai Himsen engine range.",
+          "points": [
+            "21/32",
+            "25/33",
+            "32/40"
+          ]
+        },
+        {
+          "slug": "mak-engines",
+          "title": "MAK Engines",
+          "icon": "settings",
+          "text": "Parts for the MAK M-series medium-speed engines.",
+          "points": [
+            "M20 and M25",
+            "M32",
+            "M43 and M46"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "spares",
+      "title": "Spares",
+      "icon": "settings",
+      "summary": "European-made engine spares held in Houston, plus overhauled exchange sets.",
+      "intro": "We keep a large inventory in Houston. All spares are very high quality and in stock or available within a short lead time, and our prices are competitive enough that you will benefit from a significant reduction in procurement expenses. We can help with many other engine and turbocharger requisitions as well.",
+      "image": "/brands/globalmarinepower/spares",
+      "imageAlt": "Engine machinery with pipework and wiring in a workshop",
+      "services": [
+        {
+          "slug": "engine-spares",
+          "title": "Engine Spares",
+          "icon": "settings",
+          "text": "We carry stock of Goetze, L'Orange, Bosch, MHW, Mahle, Daido, Miba and more makers from Europe.",
+          "points": [
+            "In stock or on a short lead time",
+            "Sourced from European makers"
+          ]
+        },
+        {
+          "slug": "exchange-program",
+          "title": "Swing Sets and Exchange Program",
+          "icon": "clipboard",
+          "text": "For selected engines we ship out completely overhauled sets of parts in exchange for cores from your engines, which cuts both cost and down time and gets the engine back in service on a planned operation.",
+          "points": [
+            "Overhauled sets shipped against your cores",
+            "Complete reports and certificates if required"
+          ]
+        },
+        {
+          "slug": "reconditioning",
+          "title": "Reconditioning of Landed Parts",
+          "icon": "wrench",
+          "text": "Aside from engine and turbo spares, we recondition landed engine parts.",
+          "points": [
+            "Landed parts reconditioned in the workshop"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "turbochargers",
+      "title": "Turbochargers",
+      "icon": "fan",
+      "summary": "A large turbocharger parts inventory, with servicing on board the vessel and in the workshop.",
+      "intro": "Global Marine Power carries a large spare parts inventory for turbochargers and offers complete turbocharger servicing on board the vessel and in the workshop. We hold parts for ABB, MAN B&W, IHI, Mitsubishi, KBB and Napier units.",
+      "image": "/brands/globalmarinepower/turbochargers",
+      "imageAlt": "A close view of turbine blades inside a turbomachine",
+      "services": [
+        {
+          "slug": "turbocharger-spares",
+          "title": "Turbocharger Spares",
+          "icon": "fan",
+          "text": "Complete units and the parts that go inside them, held as turbo stock.",
+          "points": [
+            "Turbocharger complete unit",
+            "Casings, rotor shaft assemblies, impeller and inducer, turbine blades",
+            "Nozzle rings, shroud rings, fasteners",
+            "Gas inlet and gas outlet casings",
+            "Repair kits"
+          ]
+        },
+        {
+          "slug": "turbocharger-service",
+          "title": "On Board and Workshop Service",
+          "icon": "wrench",
+          "text": "Complete turbocharger servicing, carried out on board the vessel or in the workshop.",
+          "points": [
+            "On board services",
+            "Workshop service"
+          ]
+        },
+        {
+          "slug": "turbocharger-repair",
+          "title": "Repairs, Retrofit and Troubleshooting",
+          "icon": "gauge",
+          "text": "Complete repairs, retrofits and troubleshooting on turbocharger units.",
+          "points": [
+            "Complete repairs",
+            "Retrofit and troubleshooting"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "power-plants",
+      "title": "Power Plants",
+      "icon": "power",
+      "summary": "Engine and turbo spares for power plants, with control, electrical and consulting support.",
+      "intro": "Besides engines and turbo spares for power plants, Global Marine Power offers a wide range of control and electrical equipment, consulting and scheduled maintenance. We carry stock of Goetze, L'Orange, Bosch, MHW, Mahle, Daido, Miba and more makers from Europe.",
+      "image": "/brands/globalmarinepower/power-plants",
+      "imageAlt": "A power plant on the edge of a city",
+      "services": [
+        {
+          "slug": "plant-spares",
+          "title": "Engine and Turbo Spares",
+          "icon": "settings",
+          "text": "The same engine and turbocharger inventory, supplied for land-based power plants.",
+          "points": [
+            "Bergen K and B cylinder heads held in stock"
+          ]
+        },
+        {
+          "slug": "control-monitoring",
+          "title": "Control and Monitoring Equipment",
+          "icon": "circuit",
+          "text": "Control and monitoring equipment for power plant engines."
+        },
+        {
+          "slug": "electrical-equipment",
+          "title": "Electrical Equipment",
+          "icon": "zap",
+          "text": "Electrical equipment supplied alongside the engine and turbo spares."
+        },
+        {
+          "slug": "consulting-services",
+          "title": "Consulting Services",
+          "icon": "clipboard",
+          "text": "Consulting on power plant engines and the parts they run on."
+        },
+        {
+          "slug": "scheduled-maintenance",
+          "title": "Scheduled Maintenance and Spares Deliveries",
+          "icon": "timer",
+          "text": "Scheduled maintenance services and spares deliveries planned around your run hours."
+        }
+      ]
+    },
+    {
+      "slug": "power-rentals",
+      "title": "Power Rentals",
+      "icon": "plug",
+      "summary": "Caterpillar and Cummins mobile generators from 100 kW to 2.5 MW, available from stock in Houston.",
+      "intro": "Caterpillar and Cummins units from 100 kW to 2500 kW, mobile diesel and natural gas generators, containerized or on a double axle chassis and sound attenuated. Readily available from stock in Houston, TX.",
+      "services": [
+        {
+          "slug": "mobile-generators",
+          "title": "Mobile Generators",
+          "icon": "battery",
+          "text": "Mobile diesel and natural gas generators from 100 kW to 2500 kW, containerized, on a double axle chassis and sound attenuated.",
+          "points": [
+            "XQ500, standby 500 kW",
+            "XQ1000, standby 1000 kW",
+            "XQ1250, standby 1250 kW",
+            "XQ1500, standby 1500 kW",
+            "XQ1750, standby 1750 kW",
+            "XQ2000, standby 2000 kW"
+          ]
+        },
+        {
+          "slug": "site-installation",
+          "title": "Site Installation and Removal",
+          "icon": "wrench",
+          "text": "We install the unit on site and remove it when the job is done."
+        },
+        {
+          "slug": "rental-repair",
+          "title": "24/7 Repair Service Calls",
+          "icon": "timer",
+          "text": "Repair service calls on rental units are answered 24/7."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "The inventory, and the people who know what is in it.",
+    "text": [
+      "Global Marine Power supports marine, offshore, power generation and railway industries. High quality and a large inventory of spares, technical service, faster response and quick delivery are the basic services we provide.",
+      "We are continually expanding and developing our warehouse to help our customers in a more efficient way. We fully understand the needs of our customers and the urgency that is so often required in getting their engine back in service.",
+      "We are a provider of comprehensive solutions for the refurbishment and maintenance of ship engines. With decades of experience, our team of skilled engineers and technicians is dedicated to seeing every project completed with precision and attention to detail, and our commitment to quality, safety and environmental responsibility is at the core of everything we do.",
+      "We take pride in a reputation for delivering reliable solutions that meet the needs of ship owners, operators and management companies, and we build long-term relationships based on trust, integrity and service."
+    ],
+    "values": [
+      {
+        "title": "Large inventory",
+        "text": "We keep a large inventory in Houston, and spares are in stock or available within a short lead time."
+      },
+      {
+        "title": "Consistent quality",
+        "text": "Exchange parts are accompanied by complete reports and certificates where they are required."
+      },
+      {
+        "title": "Prompt deliveries",
+        "text": "We understand the urgency so often required in getting an engine back in service."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Industries Served",
+      "items": [
+        "Marine",
+        "Offshore",
+        "Power generation",
+        "Railway"
+      ]
+    },
+    {
+      "heading": "Count On GMP For",
+      "items": [
+        "Large inventory",
+        "Consistent quality",
+        "Prompt deliveries",
+        "Competitive prices",
+        "Technical support"
+      ]
+    },
+    {
+      "heading": "By the Numbers",
+      "items": [
+        "5,000 items in stock",
+        "Deliveries to 150 ports"
+      ]
+    },
+    {
+      "heading": "Parts Makers Stocked",
+      "items": [
+        "Goetze",
+        "L'Orange",
+        "Bosch",
+        "MHW",
+        "Mahle",
+        "Daido",
+        "Miba"
+      ]
+    },
+    {
+      "heading": "Authorized Distributor",
+      "items": [
+        "Woodward L'Orange",
+        "DUAP"
+      ]
+    },
+    {
+      "heading": "Partners",
+      "items": [
+        "Bosch",
+        "Eibach",
+        "Maridis",
+        "Zexel",
+        "CMR Group"
+      ]
+    },
+    {
+      "heading": "Turbocharger Makers Supported",
+      "items": [
+        "ABB",
+        "MAN B&W",
+        "IHI",
+        "Mitsubishi",
+        "KBB",
+        "Napier"
+      ]
+    },
+    {
+      "heading": "Rental Power From Stock",
+      "text": "Caterpillar and Cummins mobile generators, 100 kW to 2500 kW, containerized or on a double axle chassis and sound attenuated, with site installation and removal and 24/7 repair service calls. Readily available from stock in Houston, TX."
+    },
+    {
+      "heading": "Part Of",
+      "text": "Global Marine Power is part of Grid Ready Rentals, at gridreadyrentals.com."
+    },
+    {
+      "heading": "Disclaimer",
+      "text": "Manufacturers' names, numbers, symbols and descriptions are used solely for reference purposes. Global Marine Power is in no way affiliated to the engine makers or manufacturers."
+    }
+  ]
+}
