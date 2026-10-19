@@ -181,7 +181,10 @@ class Page(HTMLParser):
             data = " " + data
         # So is text running straight into or out of a link ("contact
         # <a>us</a>today"): a link is its own word or words, not half of one.
-        elif self._edge and self._text and re.search(r"[A-Za-z]$", self._text[-1]) and re.match(r"[A-Za-z]", data):
+        # An address their link cut short ("<a>sales@jrhengineering.ne</a>t")
+        # is still one address, and runs on.
+        elif self._edge and self._text and re.search(r"[A-Za-z]$", self._text[-1]) and re.match(r"[A-Za-z]", data) \
+                and not re.search(r"\w[@.][\w.-]*$", "".join(self._text)):
             data = " " + data
         self._edge = False
         if self._link is not None:
