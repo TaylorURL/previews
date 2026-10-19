@@ -1,0 +1,301 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Noble Painters and Contractors, LLC",
+  "shortName": "Noble Painters & Contractors",
+  "summary": "Residential and commercial painting, remodels and new builds for Kerrville and the Texas Hill Country.",
+  "phone": "(830) 377-5396",
+  "email": "info@noblepainters-contractors.com",
+  "address": "420 Water St, Ste 104",
+  "town": "Kerrville",
+  "state": "TX",
+  "zip": "78028",
+  "rating": 5.0,
+  "reviewCount": 32,
+  "hours": [
+    [
+      "Mon – Sat",
+      "7 AM – 5 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#78471D",
+    "primaryDeep": "#3C230F",
+    "accent": "#B46A2C",
+    "ink": "#1E1E1E",
+    "muted": "#565656",
+    "surface": "#F5F5F5",
+    "line": "#DBDBDB",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/noblepaintersandcontractors/logo.webp",
+    "logoMono": "/brands/noblepaintersandcontractors/logo-mono.webp",
+    "logoWidth": 84,
+    "logoHeight": 84,
+    "logoRatio": 1.005,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.011,
+      0.009,
+      0.007,
+      0.336,
+      0.431,
+      0.528,
+      0.62,
+      0.712,
+      0.81,
+      0.907,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Painting and construction in Kerrville",
+    "title": "Painting and construction with",
+    "titleAccent": "honest superior quality.",
+    "lead": "Residential and commercial painting, remodels and new builds across Kerrville and the Hill Country. Tell us about the project and we will come out and give you a free estimate.",
+    "image": "/brands/noblepaintersandcontractors/hero",
+    "imageAlt": "A freshly painted front porch with a dark front door and a porch swing"
+  },
+  "groups": [
+    {
+      "slug": "painting",
+      "title": "Painting",
+      "icon": "home",
+      "summary": "Exterior, interior and cabinet painting for homes and commercial buildings.",
+      "intro": "Painting is where the company started and it is still the largest part of what we do. Every job starts with surface preparation, because that is what decides whether a finish lasts. We work on houses, on commercial buildings and on the cabinets inside them.",
+      "image": "/brands/noblepaintersandcontractors/painting",
+      "imageAlt": "An open living room and kitchen with freshly painted walls and ceilings",
+      "services": [
+        {
+          "slug": "exterior-painting",
+          "title": "Exterior Painting",
+          "icon": "sun",
+          "text": "Whether residential or industrial, we can give your structure more curb appeal.",
+          "points": [
+            "Houses and commercial buildings",
+            "Preparation before the first coat"
+          ]
+        },
+        {
+          "slug": "interior-painting",
+          "title": "Interior Painting",
+          "icon": "home",
+          "text": "Brighten and modernize your interior with a fresh coat of paint. We handle everything from walls and ceilings to trim and doors.",
+          "points": [
+            "Walls, ceilings, trim and doors",
+            "Surface preparation for clean lines and durable finishes",
+            "Floors, furniture and belongings protected while we work",
+            "A single room or the whole house"
+          ]
+        },
+        {
+          "slug": "cabinet-painting",
+          "title": "Cabinet Painting",
+          "icon": "ruler",
+          "text": "We utilize the latest technology ALKYD paints and spraying systems for a smooth, furniture-like finish.",
+          "points": [
+            "ALKYD paints",
+            "Sprayed, not brushed"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "surfaces-and-finishes",
+      "title": "Surfaces and Finishes",
+      "icon": "waves",
+      "summary": "Deck re-finishing and concrete acid staining for the outside of the house.",
+      "intro": "A Hill Country deck and a concrete patio take the same sun all year, and both come back with the right process rather than another coat over the top. We strip, prepare and finish them so the result holds up outdoors.",
+      "image": "/brands/noblepaintersandcontractors/surfaces",
+      "imageAlt": "A covered outdoor patio with a stained deck and a fireplace",
+      "services": [
+        {
+          "slug": "deck-re-finishing",
+          "title": "Deck Re-Finishing",
+          "icon": "leaf",
+          "text": "We have a thorough process to take decks from dingy and worn to warm and inviting.",
+          "points": [
+            "A full process, not a coat over the top"
+          ]
+        },
+        {
+          "slug": "concrete-acid-staining",
+          "title": "Concrete Acid Staining",
+          "icon": "droplets",
+          "text": "Give your concrete a refined look that is both durable and UV resistant.",
+          "points": [
+            "Durable and UV resistant"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "carpentry",
+      "title": "Carpentry",
+      "icon": "ruler",
+      "summary": "Rough framing for remodels and the finish work that closes a room out.",
+      "intro": "The same crew that paints a room can build it. Rough carpentry opens a floor plan up or puts a new wall in, and finish carpentry is the trim and molding that makes the room look finished.",
+      "image": "/brands/noblepaintersandcontractors/carpentry",
+      "imageAlt": "A carpenter nailing a length of trim to a bench",
+      "services": [
+        {
+          "slug": "rough-carpentry",
+          "title": "Rough Carpentry",
+          "icon": "compass",
+          "text": "Rough framing for open concept remodels, new wall partitions and similar work.",
+          "points": [
+            "Open concept remodels",
+            "New wall partitions"
+          ]
+        },
+        {
+          "slug": "finish-carpentry",
+          "title": "Finish Carpentry",
+          "icon": "ruler",
+          "text": "Window trim, door trim, baseboards, crown molding and many other finishing touches.",
+          "points": [
+            "Window and door trim",
+            "Baseboards",
+            "Crown molding"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "walls-and-floors",
+      "title": "Walls and Floors",
+      "icon": "wrench",
+      "summary": "Drywall and texture work, and tile, wood and vinyl plank flooring.",
+      "intro": "The two jobs that change a room the most once the framing is up. We finish walls in the texture you want and lay the floor underneath them.",
+      "image": "/brands/noblepaintersandcontractors/floors",
+      "imageAlt": "A newly laid wood plank floor",
+      "services": [
+        {
+          "slug": "drywall-and-texture",
+          "title": "Drywall and Texture",
+          "icon": "building",
+          "text": "Finish your walls with anything from a classic texture to a more modern knock-down type texture.",
+          "points": [
+            "Classic texture",
+            "Knock-down texture"
+          ]
+        },
+        {
+          "slug": "flooring-installation",
+          "title": "Flooring Installation",
+          "icon": "settings",
+          "text": "We install tile, wood, and vinyl plank flooring to give your room a stunning new look.",
+          "points": [
+            "Tile",
+            "Wood",
+            "Vinyl plank"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "remodels-and-new-builds",
+      "title": "Remodels and New Builds",
+      "icon": "building",
+      "summary": "Full remodels and new builds, residential and commercial.",
+      "intro": "A full remodel is more than one trade, so we run the whole job rather than part of it. That can be as simple as some wall re-painting or as complex as a ground up, open-concept home remodel. We take on new builds as well, residential and commercial.",
+      "services": [
+        {
+          "slug": "full-remodels",
+          "title": "Full Remodels",
+          "icon": "home",
+          "text": "From wall re-painting through to a ground up, open-concept home remodel, handled by one full service painting and construction team.",
+          "points": [
+            "Ground up, open-concept home remodels",
+            "Residential and commercial"
+          ]
+        },
+        {
+          "slug": "new-builds",
+          "title": "New Builds",
+          "icon": "compass",
+          "text": "New residential and commercial builds, alongside our painting and remodeling work.",
+          "points": [
+            "Residential and commercial"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "A full service painting and construction team.",
+    "text": [
+      "Noble Painters and Contractors, LLC is a full service painting and construction team dedicated to turning your dream into reality. Whether you desire something as simple as some wall re-painting, or something as complex as a ground up, open-concept home remodel, we are delighted to provide our customers with honest superior quality.",
+      "As a locally owned company, Noble Painters & Contractors understands the unique needs of Hill Country homes. We take pride in delivering dependable service, honest pricing, and craftsmanship that stands the test of time.",
+      "We stand behind our work 100%."
+    ],
+    "image": "/brands/noblepaintersandcontractors/about",
+    "imageAlt": "A repainted house exterior with white window trim",
+    "values": [
+      {
+        "title": "Free, at-home consultations",
+        "text": "We will determine your exact project specifications and give you a detailed free estimate."
+      },
+      {
+        "title": "Highly rated service",
+        "text": "We are known for our customer service. Check our reviews on Angi, Facebook and Google to see for yourself."
+      },
+      {
+        "title": "Licensed and insured",
+        "text": "We follow all applicable safety standards and are fully insured for your peace of mind."
+      }
+    ]
+  },
+  "serviceArea": [
+    "Kerrville",
+    "Boerne",
+    "Fredericksburg",
+    "Bandera"
+  ],
+  "facts": [
+    {
+      "heading": "What customers say",
+      "items": [
+        "\"The quote was spot on, the crew came and worked diligently and cleaned up after themselves, they were on task for getting the job done, and their work was impeccable. We will definitely be hiring them again for future jobs.\" - Stephanie C.",
+        "\"Excellent experience from start to finish for my shower remodel. Project manager communicated everyday and provided daily pictures of progress. Pricing was very reasonable and the final product is beautiful.\" - Dana W.",
+        "\"Everything went well, good workers who focused on the job at hand. I was very pleased.\" - Jan P."
+      ]
+    },
+    {
+      "heading": "Our process",
+      "items": [
+        "Pre-project consultation and design: we meet you at the project site to gather all necessary specifications and dimensions.",
+        "Project estimate: based on your specifications, we draft a proposal to meet your expectations and budget.",
+        "Project progress updates: once work has begun, we keep you apprised of the progress and answer any questions that arise.",
+        "The finishing touches: once work has completed, we do an on-site walkthrough with you to make sure every facet of the project meets or exceeds your expectations."
+      ]
+    },
+    {
+      "heading": "Paint and tools we use",
+      "items": [
+        "Sherwin-Williams",
+        "Benjamin Moore",
+        "Purdy"
+      ]
+    },
+    {
+      "heading": "Service area",
+      "text": "Kerrville, Boerne, Fredericksburg, Bandera and many other Hill Country locales."
+    },
+    {
+      "heading": "Ways To Reach Us",
+      "text": "Call (830) 377-5396, or email info@noblepainters-contractors.com or noblepainters.contractors.tx@gmail.com."
+    },
+    {
+      "heading": "Find us online",
+      "text": "Our work and our reviews are on Facebook at facebook.com/NoblePaintersandContractors, and on Angi and Google."
+    }
+  ]
+}

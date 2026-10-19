@@ -1,0 +1,286 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "service",
+  "name": "Houston Texas Towing",
+  "shortName": "Houston Texas Towing",
+  "summary": "Private property towing, roadside assistance, recovery and parking management for the greater Houston area.",
+  "phone": "(832) 396-3272",
+  "email": "help@houstontexastowing.net",
+  "address": "7200 Eldridge Pkwy, Suite B",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77083",
+  "since": 2008,
+  "hours": [
+    ["Mon – Sun", "Open 24 hours"],
+    ["Office, Mon – Fri", "10 AM – 5 PM"]
+  ],
+  "brand": {
+    "primary": "#c42026",
+    "primaryDeep": "#8c1418",
+    "accent": "#ffc800",
+    "ink": "#14181f",
+    "muted": "#5b6472",
+    "surface": "#f7f3f3",
+    "line": "#e2dcdc",
+    "heading": "'Montserrat', system-ui, sans-serif",
+    "body": "'Roboto Slab', Georgia, serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto+Slab:wght@400;500;600&display=swap",
+    "logo": "/brands/privatepropertytowingroadsideassistancerepossession/logo.webp",
+    "logoMono": "/brands/privatepropertytowingroadsideassistancerepossession/logo-mono.webp",
+    "logoWidth": 108,
+    "logoHeight": 58,
+    "logoRatio": 1.866,
+    "logoGround": "#14181f",
+    "logoReads": [0.999, 0.993, 0.917, 0.843, 0.621, 0.519, 0.452, 0.295, 0.415, 0.492, 0.561]
+  },
+  "emergency": {
+    "title": "Towing and dispatch, 24 hours",
+    "text": "The towing line, (281) 498-1738, is answered 24 hours a day, Monday through Sunday."
+  },
+  "hero": {
+    "eyebrow": "Towing and parking management in Houston",
+    "title": "Towing and roadside help,",
+    "titleAccent": "any hour of the day.",
+    "lead": "Houston Texas Towing has worked the greater Houston area since 2008. Private property towing, roadside assistance, recovery and parking management, handled with modern equipment and trained crews.",
+    "image": "/brands/privatepropertytowingroadsideassistancerepossession/hero",
+    "imageAlt": "A car on a Houston street with the downtown skyline behind it"
+  },
+  "groups": [
+    {
+      "slug": "private-property-towing",
+      "title": "Private Property Towing",
+      "icon": "car",
+      "summary": "Removal of unauthorized vehicles and junk or abandoned vehicles from the property you manage.",
+      "intro": "A lot that fills up with vehicles nobody authorized stops working for the people who live or shop there. We remove them, and every vehicle we tow can be traced afterwards so the owner is not left guessing.",
+      "image": "/brands/privatepropertytowingroadsideassistancerepossession/private-property-towing",
+      "imageAlt": "A no parking sign with a tow truck symbol on it",
+      "services": [
+        {
+          "slug": "unauthorized-vehicle-removal",
+          "title": "Unauthorized Vehicle Removal",
+          "icon": "car",
+          "text": "Vehicles parked on private property without authorization are removed and taken to a storage yard.",
+          "points": [
+            "Towed vehicles can be found with our Find My Vehicle tool",
+            "Storage yard and phone number given for every tow"
+          ]
+        },
+        {
+          "slug": "abandoned-vehicle-removal",
+          "title": "Junk and Abandoned Vehicles",
+          "icon": "wrench",
+          "text": "Junk and abandoned vehicles cleared off the lot so the spaces go back to the people who should be using them."
+        }
+      ]
+    },
+    {
+      "slug": "roadside-assistance",
+      "title": "Roadside Assistance",
+      "icon": "wrench",
+      "summary": "Help at the roadside when a tire or a locked door is all that is stopping you.",
+      "intro": "Not every call needs a tow. When the problem can be fixed where the vehicle is sitting, we come out and get you back on the road instead.",
+      "image": "/brands/privatepropertytowingroadsideassistancerepossession/roadside-assistance",
+      "imageAlt": "A close-up of a car tire and wheel rim",
+      "services": [
+        {
+          "slug": "tire-change",
+          "title": "Tire Change",
+          "icon": "settings",
+          "text": "A flat changed where the vehicle sits, so you are back on the road rather than waiting on a tow."
+        },
+        {
+          "slug": "lockouts",
+          "title": "Lockouts",
+          "icon": "shield",
+          "text": "Keys shut inside the car are a short wait rather than a long one. We handle lockout situations and get you back in."
+        }
+      ]
+    },
+    {
+      "slug": "repossession-and-recovery",
+      "title": "Repossession and Recovery",
+      "icon": "shield",
+      "summary": "Vehicle repossession and recovery, handled quietly and by the book.",
+      "intro": "Recovery work asks for equipment and for people who have done it before. We assist with vehicle repossessions and with recovering vehicles that have to be brought back in.",
+      "image": "/brands/privatepropertytowingroadsideassistancerepossession/repossession",
+      "imageAlt": "A row of cars parked in an outdoor lot",
+      "services": [
+        {
+          "slug": "vehicle-repossession",
+          "title": "Vehicle Repossession",
+          "icon": "clipboard",
+          "text": "We assist with vehicle repossessions, with the same equipment and crews that handle our towing work."
+        },
+        {
+          "slug": "vehicle-recovery",
+          "title": "Vehicle Recovery",
+          "icon": "car",
+          "text": "Recovery of vehicles that have to be moved from where they are sitting and brought back in."
+        }
+      ]
+    },
+    {
+      "slug": "parking-management",
+      "title": "Parking Management",
+      "icon": "building",
+      "summary": "Permits, striping and an online system that keeps resident and visitor parking in order.",
+      "intro": "The other half of the work is making sure a tow is not needed in the first place. Residents keep their vehicles registered, guests are authorized before they arrive, and the lot itself stays marked and readable.",
+      "services": [
+        {
+          "slug": "virtual-parking",
+          "title": "Virtual Parking",
+          "icon": "clipboard",
+          "text": "An online parking system with permits available, so residents and their guests are registered without paper in a drawer.",
+          "points": [
+            "Residents add and update vehicles in one place",
+            "Visitors authorized in advance or in real time",
+            "Push notifications about resident parking status"
+          ]
+        },
+        {
+          "slug": "parking-lot-striping",
+          "title": "Parking Lot Striping",
+          "icon": "ruler",
+          "text": "We restore parking lot striping to excellent condition, so the spaces and the fire lanes read clearly again."
+        },
+        {
+          "slug": "resident-app",
+          "title": "Resident App",
+          "icon": "timer",
+          "text": "The Houston Texas Towing app, on the App Store and on Google Play, for registering vehicles and guests from a phone.",
+          "points": [
+            "Resident and management logins",
+            "Visitor registration from anywhere",
+            "Instant notifications"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "A Houston towing company since 2008.",
+    "text": [
+      "Houston Texas Towing has been providing towing services in the greater Houston area since 2008. State of the art towing equipment and highly trained professionals make for a smooth towing experience.",
+      "The work now covers both sides of a parking problem: the tow itself, and the permits, striping and online registration that keep a property's parking in order before a tow is needed."
+    ],
+    "image": "/brands/privatepropertytowingroadsideassistancerepossession/about",
+    "imageAlt": "The downtown Houston skyline lit at night",
+    "values": [
+      {
+        "title": "Answered around the clock",
+        "text": "The towing line takes calls 24 hours a day, Monday through Sunday."
+      },
+      {
+        "title": "Trained crews",
+        "text": "State of the art towing equipment and highly trained professionals on every call."
+      },
+      {
+        "title": "Vehicles easy to find",
+        "text": "A towed vehicle can be located with our Find My Vehicle tool or through the storage yard holding it."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "My vehicle was towed. How do I find it?",
+      "a": "Use our Find My Vehicle tool, searching either on the full VIN or on the license plate with the make and model. You can also search at findmytowedcar.com, or call the storage yard holding it: Area 5 Vehicle Storage on (713) 988-7600, Midwest Auto Storage on (281) 933-4441, or Highway 3 Storage on (713) 943-2856."
+    },
+    {
+      "q": "¿Vehículo remolcado?",
+      "a": "Si cree que su vehículo fue remolcado por nosotros, puede buscar la ubicación de su vehículo con nuestra herramienta Encuentra Mi Vehículo."
+    },
+    {
+      "q": "What do I need to log in to the resident portal?",
+      "a": "Log in with your email address and the resident code your leasing office gave you, typed with any symbols such as # included. A forgotten code is sent to your email once you enter your email address and unit number."
+    },
+    {
+      "q": "How do I register a guest's vehicle?",
+      "a": "Residents register vehicles and authorize visitors in the Houston Texas Towing app or through visitor registration on our site. Guests can be authorized in advance or in real time."
+    },
+    {
+      "q": "What hours can I reach you?",
+      "a": "The towing line, (281) 498-1738, is answered 24 hours a day, Monday through Sunday. The office line, (832) 396-3272, is answered 10 AM to 5 PM, Monday to Friday."
+    },
+    {
+      "q": "Will I get text messages?",
+      "a": "If you give a mobile number when you register a vehicle, you will get texts about permit renewals, parking status and towing alerts. Reply STOP to any message to unsubscribe, or HELP for support. Message and data rates may apply."
+    },
+    {
+      "q": "What happens to the information I register?",
+      "a": "Vehicle and contact details are used for parking management only, and are not shared with third parties for marketing or promotional purposes."
+    }
+  ],
+  "serviceArea": ["Greater Houston"],
+  "facts": [
+    {
+      "heading": "Phone Lines",
+      "items": [
+        "Towing and dispatch: (281) 498-1738, 24 hours, Mon – Sun",
+        "Office: (832) 396-3272, 10 AM – 5 PM, Mon – Fri"
+      ]
+    },
+    {
+      "heading": "Email",
+      "items": ["help@houstontexastowing.net", "houstontxtowing@gmail.com"]
+    },
+    {
+      "heading": "Vehicle Storage Yards",
+      "items": [
+        "Area 5 Vehicle Storage — (713) 988-7600",
+        "Midwest Auto Storage — (281) 933-4441",
+        "Highway 3 Storage — (713) 943-2856"
+      ]
+    },
+    {
+      "heading": "Find a Towed Vehicle",
+      "text": "Search with our Find My Vehicle tool on the full VIN, or on the license plate with the make and model. You can also search at findmytowedcar.com or call the storage yard holding the vehicle."
+    },
+    {
+      "heading": "Portals",
+      "items": ["Resident login", "Management login", "Visitor registration"]
+    },
+    {
+      "heading": "Resident Logins",
+      "text": "Residents log in with their email address and the resident code from the leasing office, typed with symbols such as # included. A forgotten code is emailed back after the email address and unit number are entered."
+    },
+    {
+      "heading": "Visitor Parking",
+      "text": "Visitor parking starts by finding the property, searched by street number and name only, and management logs in with an email address and password."
+    },
+    {
+      "heading": "What We Register",
+      "text": "A registration holds a full name, mobile number and email address, the vehicle's make, model, year, color, VIN and license plate, and encrypted login details."
+    },
+    {
+      "heading": "Keeping An Account Current",
+      "text": "Residents keep the vehicles on their account accurate and up to date, and contact the leasing office or us about any account problem. Details can be read and updated in the portal at any time, and an account and its data are deleted on request."
+    },
+    {
+      "heading": "Our App",
+      "text": "The Houston Texas Towing app is on the App Store and on Google Play, with instant notifications and a simple way to register guests."
+    },
+    {
+      "heading": "Languages",
+      "text": "Vehicle search and visitor parking are available in English and Spanish."
+    },
+    {
+      "heading": "Text Messages",
+      "text": "Texts cover permit renewals, parking status, violation warnings and towing alerts, and how often they arrive follows the activity on the account. Reply STOP to unsubscribe and one last text confirms it, HELP for support, and message and data rates may apply."
+    },
+    {
+      "heading": "Your Data",
+      "text": "Vehicle and contact details are used for parking management only, and are never shared with third parties for marketing. Information is encrypted in transit and reaches authorized property management and towing staff alone."
+    },
+    {
+      "heading": "Online",
+      "items": [
+        "Instagram: instagram.com/houstontxtowing",
+        "Facebook: Houston Texas Towing",
+        "Google: Houston Texas Towing on Google Maps"
+      ]
+    }
+  ]
+}

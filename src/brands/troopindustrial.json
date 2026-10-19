@@ -1,0 +1,525 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Troop Industrial",
+  "shortName": "Troop Industrial",
+  "summary": "An industrial fastener and construction supply house stocking stud bolts, gaskets, structural fasteners, flanges and civil materials for projects across the Texas and Louisiana Gulf Coast.",
+  "phone": "(713) 475-6100",
+  "email": "sales@troopindustrial.com",
+  "address": "921 West Pasadena Fwy # A",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77506",
+  "rating": 4.5,
+  "reviewCount": 10,
+  "since": 1999,
+  "hours": [
+    ["Mon – Fri", "7:30 AM – 4:30 PM"],
+    ["Sat – Sun", "Closed"]
+  ],
+  "brand": {
+    "primary": "#0a1e59",
+    "primaryDeep": "#061337",
+    "accent": "#e32c2b",
+    "ink": "#1b1b1f",
+    "muted": "#555566",
+    "surface": "#f1f4fb",
+    "line": "#d7dde9",
+    "heading": "'Roboto Condensed', 'Arial Narrow', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600;700;800&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap",
+    "logo": "/brands/troopindustrial/logo.webp",
+    "logoMono": "/brands/troopindustrial/logo-mono.webp",
+    "logoWidth": 134,
+    "logoHeight": 84,
+    "logoRatio": 1.595,
+    "logoGround": "#ffffff",
+    "logoReads": [0.441, 0.352, 0.181, 0.483, 0.552, 0.626, 0.698, 0.771, 0.848, 0.926, 1.0]
+  },
+  "emergency": {
+    "title": "On call 24 hours",
+    "text": "For emergency orders or after hours, call 713-475-6100 in Pasadena, 409-727-7384 in Groves or 337-270-8283 in Cameron, Louisiana."
+  },
+  "sameDay": "Troop will do whatever we can to ship same-day on all of our stock items.",
+  "financing": {
+    "text": "Net 30 payment terms are available on approved credit, counted 30 days from the shipping date, once a credit application is submitted."
+  },
+  "hero": {
+    "eyebrow": "Industrial supply in Pasadena, Texas",
+    "title": "Stud bolts, gaskets, fasteners and fittings,",
+    "titleAccent": "in stock and ready to ship.",
+    "lead": "A full line stocking distributor of bolting, gaskets, structural hardware and civil materials for capital projects, turnarounds, fabrication shops and MRO facilities. Three locations on the Texas and Louisiana Gulf Coast, on call 24 hours.",
+    "image": "/brands/troopindustrial/hero",
+    "imageAlt": "A network of industrial metal pipes and valves inside a plant"
+  },
+  "groups": [
+    {
+      "slug": "stud-bolts",
+      "title": "Stud Bolts",
+      "icon": "wrench",
+      "summary": "B7, B8, B8M, B16, L7, L7M and 660 stud bolts in the industry standard coatings.",
+      "intro": "Stud bolts are where Troop started and they are still what we stock deepest. Grades run from A193 B7 and B7M through the stainless and alloy grades, in cadmium, Teflon, zinc or plain. When a grade or a length is not on the shelf, we can have it made to print.",
+      "image": "/brands/troopindustrial/stud-bolts",
+      "imageAlt": "Stainless steel bolts and threaded hardware in a bin",
+      "services": [
+        {
+          "slug": "astm-stud-bolts",
+          "title": "ASTM Stud Bolts",
+          "icon": "wrench",
+          "text": "Stud bolts stocked across the grades a bolt-up calls for, with nuts to match.",
+          "points": [
+            "ASTM A193 Grade B7/B7M",
+            "ASTM A193 Grade B8/B8M",
+            "ASTM A193 Grade B16",
+            "ASTM A320 Grade B8/B8M",
+            "ASTM A320 Grade L7/L7M",
+            "ASTM A453 Grade 660B"
+          ]
+        },
+        {
+          "slug": "coatings",
+          "title": "Industry Standard Coatings",
+          "icon": "shield",
+          "text": "Coated stock on the shelf, so a coating requirement does not add a lead time.",
+          "points": ["Cadmium", "Teflon", "Zinc", "Plain"]
+        },
+        {
+          "slug": "custom-manufacturing",
+          "title": "Custom Manufacturing to Print",
+          "icon": "compass",
+          "text": "Rapid response custom manufacturing to print, available in a wide variety of materials."
+        },
+        {
+          "slug": "anchor-bolts",
+          "title": "Bolts and Anchors",
+          "icon": "wrench",
+          "text": "Beyond stud bolts we carry the anchoring that goes with them.",
+          "points": [
+            "Anchor bolts and tie rods",
+            "Wedge anchors, L-anchors and J-bolts",
+            "U-bolts and all thread rod",
+            "Grade 5 and Grade 8 cap screws, A307 hex bolts"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gaskets",
+      "title": "Gaskets and Sealing",
+      "icon": "waves",
+      "summary": "Full lines of Lamons, Leader and Garlock gaskets, plus flange isolation kits.",
+      "intro": "We stock and distribute Lamons and Leader gaskets, with Garlock sheet and PTFE beside them. Spiral wound, ring joint, Kammprofile, corrugated metal and heat exchanger gaskets are on the shelf, and non-asbestos gaskets can be made to print.",
+      "image": "/brands/troopindustrial/gaskets",
+      "imageAlt": "A close-up of steel pipe ends and sealing faces",
+      "services": [
+        {
+          "slug": "spiral-wound-gaskets",
+          "title": "Spiral Wound Gaskets",
+          "icon": "waves",
+          "text": "Available with or without an inner ring, in the materials a service calls for.",
+          "points": [
+            "304 and 316 stainless, other materials on demand",
+            "Low stress type",
+            "Outer or centering ring in carbon steel, stainless or other materials on demand"
+          ]
+        },
+        {
+          "slug": "metal-gaskets",
+          "title": "Metal and High Temperature Gaskets",
+          "icon": "flame",
+          "text": "Metal-bodied gaskets for high temperature and high pressure joints.",
+          "points": [
+            "Ring joint gaskets",
+            "High temperature gaskets",
+            "Kammprofile gaskets",
+            "Corrugated metal gaskets",
+            "Heat exchanger gaskets"
+          ]
+        },
+        {
+          "slug": "sheet-and-ptfe",
+          "title": "Sheet, PTFE and Graphite",
+          "icon": "filter",
+          "text": "Garlock gaskets and soft goods, cut to ring type, full face or custom to print.",
+          "points": [
+            "PTFE",
+            "Flexible graphite",
+            "Compressed sheet",
+            "Non-asbestos gaskets in ring type, full face or made to print"
+          ]
+        },
+        {
+          "slug": "flange-isolation-kits",
+          "title": "Flange Isolation Kits",
+          "icon": "shield",
+          "text": "Isotek Isoguard sealing kits with G10 retainers, Teflon sealing, G10 sleeves and washers."
+        }
+      ]
+    },
+    {
+      "slug": "structural-fasteners",
+      "title": "Structural Fasteners",
+      "icon": "settings",
+      "summary": "A325 and A490 heavy hex bolts, F436 washers, DTIs, nuts, screws and electrical fasteners.",
+      "intro": "Structural steel work needs bolts, nuts and washers that match a published standard, and it needs them in quantity. We stock A325 and A490 heavy hex bolts with the A563 and A194 nuts and F436 washers that go with them, including direct tension indicators for checking tension in the field.",
+      "image": "/brands/troopindustrial/fasteners",
+      "imageAlt": "Assorted steel bolts and fasteners laid out on a dark bench",
+      "services": [
+        {
+          "slug": "structural-bolts",
+          "title": "Structural Bolts",
+          "icon": "settings",
+          "text": "Heat treated heavy hex structural bolts to the ASTM standards inspectors look for.",
+          "points": [
+            "ASTM A325 heavy hex bolts, steel, heat treated, 120/105 ksi minimum tensile strength",
+            "ASTM A490 heavy hex bolts, alloy steel, heat treated, 150 ksi minimum tensile strength"
+          ]
+        },
+        {
+          "slug": "washers-and-dtis",
+          "title": "Washers and Tension Indicators",
+          "icon": "gauge",
+          "text": "Hardened washers and direct tension indicators for checking a bolt is tensioned correctly.",
+          "points": [
+            "ASTM F436 hardened steel flat washers",
+            "ASTM F959 direct tension indicators, read with a feeler gauge",
+            "Squirter DTIs and DuraSquirt DTIs, with orange silicone as a visual indicator",
+            "Hot dip galvanized, Teflon coated, zinc and Nord-Lock locking washers"
+          ]
+        },
+        {
+          "slug": "nuts",
+          "title": "Nuts",
+          "icon": "settings",
+          "text": "Structural and service nuts across grades, sizes and finishes.",
+          "points": [
+            "A563 Grade DH heavy hex nuts, carbon steel",
+            "A194 Grade 2H heavy hex nuts, an acceptable substitute for A563 Grade DH",
+            "Rod coupling, finished hex, low carbon, nylon insert locknuts, spring, wing, square and machine screw nuts"
+          ]
+        },
+        {
+          "slug": "screws",
+          "title": "Screws",
+          "icon": "wrench",
+          "text": "Deck, sheet metal, lag, machine and self-drilling (TEK) screws, plus Titen HD concrete screws."
+        },
+        {
+          "slug": "electrical-fasteners",
+          "title": "Electrical Fasteners",
+          "icon": "circuit",
+          "text": "A range of electrical fasteners in 304SS, 316SS, hot dip galvanized and zinc plated, including hex cap screws, all thread rod, U-bolts, wedge anchors, machine screws and matching nuts and washers."
+        },
+        {
+          "slug": "fluids-and-chemicals",
+          "title": "Fluids and Chemicals",
+          "icon": "droplets",
+          "text": "Thread sealant, oils, cold galv, spray and marking paint, Corrosion-X, lubricants, epoxy, cleaners, cutting fluids, fuels, GP grease, wasp spray and bug spray."
+        }
+      ]
+    },
+    {
+      "slug": "flanges-fittings",
+      "title": "Flanges and Fittings",
+      "icon": "waves",
+      "summary": "Blind flanges, elbows, tees, couplings and pipe plugs, plus I-Rod and Nu-Bolt pipe supports.",
+      "intro": "Pipe work needs the fitting in hand before the crew can move on. We carry flanges and fittings in a wide variety of materials, and we are the only stocking distributor in Texas of Deepwater's I-Rod and Nu-Bolt pipe support products.",
+      "services": [
+        {
+          "slug": "flanges-and-fittings",
+          "title": "Flanges and Fittings",
+          "icon": "waves",
+          "text": "A wide variety of materials, with custom orders and fast delivery available.",
+          "points": [
+            "Blind flanges and pipe plugs",
+            "Elbows, tees, crosses and caps",
+            "Couplings, reducers and nipples",
+            "Unions"
+          ]
+        },
+        {
+          "slug": "i-rod-nu-bolt",
+          "title": "I-Rod and Nu-Bolt Pipe Supports",
+          "icon": "shield",
+          "text": "Troop is the only stocking distributor of I-Rod and Nu-Bolt products in the state of Texas, in stock and ready for immediate delivery. I-Rod material has a high compressive strength and is subject to very little creep over time, so it can last up to 20 years in the field.",
+          "points": [
+            "Half-round I-Rod material supplied in lengths, or cut and drilled to fit any size pipe U-bolt",
+            "I-Rod HT Clips and I-Rod PEEK Clips",
+            "Imitation products are common; get it right the first time"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "civil-materials",
+      "title": "Civil Materials",
+      "icon": "building",
+      "summary": "Grout, anchoring, post-tensioning, concrete accessories and geotextiles, in stock and ready to ship.",
+      "intro": "Civil engineering is a high-stakes industry, and you do your best work when you have the materials you need. We distribute the name brand civil product lines in stock, with same day and next-day shipping on construction materials.",
+      "image": "/brands/troopindustrial/civil",
+      "imageAlt": "Fresh concrete being poured and worked on a construction site",
+      "services": [
+        {
+          "slug": "grout-and-sealants",
+          "title": "Grout and Sealants",
+          "icon": "building",
+          "text": "Master Builders Solutions and SIKA lines for grouting, curing, patching and sealing.",
+          "points": [
+            "Masterflow 648 epoxy grout, 678 deep pour epoxy grout, 928 cementitious grout, 110-AN",
+            "MasterKure 300SB, MasterEmaco N 425, MasterSeal NP-1",
+            "SIKA Anchorfix 5001 and 3001, SIKAflex 1C SL and 1A, Sika G-Seal, SIKA Waterstop",
+            "QUIKRETE Concrete Mix (No. 1101)"
+          ]
+        },
+        {
+          "slug": "anchoring",
+          "title": "Anchoring Systems",
+          "icon": "wrench",
+          "text": "Adhesive and mechanical anchoring from Simpson Strong-Tie, and DYWIDAG products for geotechnical and post-tensioning systems.",
+          "points": [
+            "Epoxy and acrylic adhesive anchoring",
+            "Screw, wedge and sleeve anchors",
+            "DYWIDAG anchor bolts and tie rods",
+            "Epoxy and cementitious grout, concrete anchors, masonry drill bits"
+          ]
+        },
+        {
+          "slug": "concrete-accessories",
+          "title": "Concrete Accessories",
+          "icon": "ruler",
+          "text": "Dayton Superior engineered products for forming and finishing concrete.",
+          "points": [
+            "Top Cast products and in-form retarders",
+            "Bar Lock accessories and wall ties",
+            "Epoxy coated chairs",
+            "Tie wire, silicone caulk and all thread rod"
+          ]
+        },
+        {
+          "slug": "geotextiles-and-site-supplies",
+          "title": "Geotextiles and Site Supplies",
+          "icon": "leaf",
+          "text": "MarMac and US Fabrics civil engineering fabrics, with the consumables a site runs through.",
+          "points": [
+            "US Fabrics US 200, US 250, US 270 and US 315",
+            "MarMac civil engineering products",
+            "Safety fence, poly sheeting, flagging and duct tape",
+            "Gloves, visors, face masks, hard hats and safety supplies"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "material-management",
+      "title": "Material Management",
+      "icon": "clipboard",
+      "summary": "The Projexx Group tracks and monitors project material on the cloud, with on-site storage and delivery.",
+      "intro": "The Projexx Group is our special ops team for tracking and monitoring materials in real time. Cloud-based material management means on-site and off-site inventories can be read any time from anywhere a browser is available, so a project moves ahead instead of waiting on material.",
+      "image": "/brands/troopindustrial/warehouse",
+      "imageAlt": "Industrial warehouse racking stocked with steel material",
+      "services": [
+        {
+          "slug": "projexx-group",
+          "title": "Projexx Group",
+          "icon": "chart",
+          "text": "Track and monitor PODs, FMRs, MTRs and project spend in real time, from pre-construction through to the end of the job.",
+          "points": [
+            "Real-time status updates and order acknowledgments",
+            "Mill test reports (MTRs) and proof of delivery (PODs)",
+            "Field material requisitions (FMRs) and invoice status",
+            "Current material spend and KPIs for job performance, efficiency and budget tracking",
+            "Consolidated billing",
+            "Proactive alerts when a project will need material that has not been ordered yet",
+            "Material waiting on you instead of you waiting on material",
+            "Reduced material cost, reduced manpower cost and improved profit margins",
+            "Improved timeline and improved morale"
+          ]
+        },
+        {
+          "slug": "work-packs",
+          "title": "Work Pack Execution",
+          "icon": "clipboard",
+          "text": "We know the value of properly executed Construction Work Packs. We can perform off-site or on-site, executing Installation Work Packs by release, and provide cloud-based information that is critical for planning and scheduling."
+        },
+        {
+          "slug": "on-site-storage",
+          "title": "On-Site Storage",
+          "icon": "building",
+          "text": "On-site storage is available through 40 ft containers or large semi trailers. All of our on-site storage containers have lighting, industrial shelving, work counters, courtesy receptacles and air conditioning. Mobile warehousing is available for remote job sites."
+        },
+        {
+          "slug": "delivery",
+          "title": "Delivery and Logistics",
+          "icon": "car",
+          "text": "Troop Industrial ships via hot shot, LTL, UPS, FedEx, our truck for local deliveries, or will call. We ship all over the United States and abroad."
+        },
+        {
+          "slug": "renewable-energy-support",
+          "title": "Renewable Energy Project Support",
+          "icon": "sun",
+          "text": "Materials and support for solar and wind, biodiesel plants, carbon capture and battery storage, including custom project-based quotes and mobile warehousing that keeps material secure on remote job sites."
+        },
+        {
+          "slug": "green-sheet-fire-foam",
+          "title": "Green Sheet Fire Foam",
+          "icon": "flame",
+          "text": "Troop Industrial is an official distributor of Green Sheet Fluorine Free Fire Foam, a fire suppressant manufactured in the USA for fire professionals, forest services and fire departments.",
+          "points": [
+            "Uses half the product in half the time of other fluorine free fire foams",
+            "Keeps working after the fire is out, preventing flare ups",
+            "No need to increase storage capacity",
+            "No harmful effects on humans, animals or the environment",
+            "Proven from forest fires to industrial storage tanks",
+            "Safety data, certificate of compliance, toxicity report and SWRI test results available"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Founded in 1999, out of a portable building and an enclosed trailer.",
+    "text": [
+      "Troop Industrial started out as a small fastener supplier working out of a portable building at the owner's house, pulling an enclosed trailer from job to job. Through hard work and perseverance, Troop Industrial has grown to a thriving industrial fastener supply house with three locations covering the industrial Texas and Louisiana Gulf Coast.",
+      "We have become a reliable supplier of stud bolts in a myriad of grades and coatings, gaskets of all types, structural bolts and related hardware, wire rope, chain, safety supplies, tape, flagging, chemicals, degreasers, drill bits and anything else a customer would need at a job site, capital project, fabrication facility or machine shop.",
+      "It is no coincidence that Troop is the name of our business. Our President and CEO, Brian Swindel, is a U.S. Marine Corps combat veteran, and his pride for our nation's veterans and armed services is at the core of our team values. We are a veteran-owned business in Texas and Louisiana, and we support veteran based non-profits every month and throughout the year.",
+      "For over 20 years, Troop has earned the trust of steel fabricators, industrial contractors, EPC contractors, MRO facilities and engineers who rely on quality in products and performance. We serve the industrial Gulf Coast and all of North America."
+    ],
+    "image": "/brands/troopindustrial/about",
+    "imageAlt": "Steel pipe and material stacked in an industrial setting",
+    "values": [
+      {
+        "title": "An extension of your team",
+        "text": "Our approach is that we are an extension of your team and we are all in it together to help you drive projects forward."
+      },
+      {
+        "title": "Name brand material",
+        "text": "We supply only the best name brand materials in construction and petrochem expansions."
+      },
+      {
+        "title": "Never say quit",
+        "text": "We differentiate ourselves with a relentless commitment to service and a never-say-quit attitude."
+      }
+    ]
+  },
+  "serviceArea": [
+    "Pasadena",
+    "Groves",
+    "Cameron, LA",
+    "Texas Gulf Coast",
+    "Louisiana Gulf Coast",
+    "North America"
+  ],
+  "facts": [
+    {
+      "heading": "Our Locations",
+      "items": [
+        "Pasadena, Texas: 921 W Pasadena Fwy #A, Pasadena, TX 77506 — 713-475-6100",
+        "Groves, Texas: 4330 N Link St, Ste A, Groves, TX 77619 — 409-727-7384",
+        "Cameron, Louisiana: 517 Marshall Street, Cameron, LA 70631 — 337-270-8283"
+      ]
+    },
+    {
+      "heading": "Certifications",
+      "items": ["SHUBP — HUB (Historically Underutilized Business)", "SDVOSB — SBA (Service-Disabled Veteran-Owned Small Business)"]
+    },
+    {
+      "heading": "Veteran Owned",
+      "text": "A proud, veteran-owned business in Texas and Louisiana, run by a combat Marine, supporting veteran based non-profits every month and throughout the year."
+    },
+    {
+      "heading": "Payment Terms",
+      "text": "Apply for a Net 30 account by submitting a credit application and get cleared for payment terms 30 days from the shipping date with approved credit.",
+      "items": [
+        "Credit Application: https://www.troopindustrial.com/hubfs/Troop%20Forms/TROOP%20INDUSTRIAL%20CREDIT%20APPLICATION%202026.pdf"
+      ]
+    },
+    {
+      "heading": "Shipping and Delivery",
+      "items": [
+        "Hot shot, LTL, UPS, FedEx, our own truck for local deliveries, or will call",
+        "Shipping all over the United States and abroad",
+        "Same-day shipping on stock items wherever we can",
+        "Same day and next-day shipping on civil construction materials"
+      ]
+    },
+    {
+      "heading": "Brands We Stock",
+      "items": [
+        "Lamons, Leader and Garlock gaskets",
+        "Isotek Isoguard flange isolation",
+        "Deepwater I-Rod and Nu-Bolt pipe supports",
+        "Nucor, Infasco and Superlok",
+        "Nord-Lock, Irwin Tools and Simpson Strong-Tie",
+        "Master Builders Solutions, SIKA, DYWIDAG, Dayton Superior and QUIKRETE",
+        "MarMac and US Fabrics",
+        "Green Sheet Fire Foam"
+      ]
+    },
+    {
+      "heading": "Who We Serve",
+      "items": [
+        "Engineering, Procurement and Construction (EPC) companies",
+        "Industrial contractors on capital projects, turnarounds and maintenance",
+        "Pipe and steel fabricators",
+        "Maintenance and Repair Operations (MRO) facilities",
+        "Electrical and instrumentation contractors",
+        "Suppliers and Original Equipment Manufacturers (OEM)"
+      ]
+    },
+    {
+      "heading": "Technical Resources",
+      "items": [
+        "Fastener specifications: ASTM A193, A307, A320, A325, A449, A453, A490, A540 and SAE J429",
+        "Flange bolt-up charts for ASME B16.5 flanges, Class 150 through 2500",
+        "Flange bolt-up charts for ASME B16.47 large flanges, Series A and Series B, Class 150 through 900",
+        "Gasket temperature ranges and dimensions for ring type, full face and spiral wound gaskets",
+        "U-bolt dimensions for standard and FIG 137 long models, and J-bolt dimensions, customisable to requirement",
+        "Thread pitch chart for UNC and UNF forms, 0.06 inch through 4 inch diameter"
+      ]
+    },
+    {
+      "heading": "Projects We Have Supplied",
+      "items": [
+        "LNG EPC projects in Sabine Pass, Texas and in Louisiana",
+        "The Kearl Oil Sands EPC project in Canada",
+        "An EPC refinery expansion in Colombia",
+        "DCU and HCU expansion projects along the Texas and Louisiana Gulf Coast",
+        "Ethylene EPC projects in Louisiana and Corpus Christi, Texas",
+        "Pipelines from Texas to Canada, and shipments to Pennsylvania, North Dakota and Wyoming",
+        "Multiple skid jobs and numerous plant shutdowns",
+        "South Texas compressor stations, shale projects, Canadian oil sands and offshore rigs in the Gulf of Mexico"
+      ]
+    },
+    {
+      "heading": "Also In Stock",
+      "items": [
+        "Tools and hardware in the brand names you trust",
+        "Wire rope, chain, grating clips and strut",
+        "304, 316 and 410 stainless screws, silicone bronze and brass",
+        "Galvanized and zinc plated fasteners",
+        "Nails, chalk, wire brushes and masonry drill bits",
+        "Hard hats, gloves, visors, face masks and safety supplies",
+        "Tape, flagging, duct tape, poly sheeting and safety fence",
+        "Degreasers, coolers and Gatorade for the job site"
+      ]
+    },
+    {
+      "heading": "Our Experience",
+      "text": "Over 20 years in the business, with more than 100 years of combined experience on the team, working the Gulf Coast from pre-construction through to the end of a job."
+    },
+    {
+      "heading": "Join Our Team",
+      "text": "Troop is always looking for skilled, motivated professionals who share our values of integrity, teamwork and relentless service. Get in touch if you are ready to bring your expertise to the team."
+    },
+    {
+      "heading": "Find Us Online",
+      "items": [
+        "Facebook: facebook.com/TroopIndustrial",
+        "LinkedIn: linkedin.com/company/troop-industrial",
+        "Instagram: instagram.com/troopindustrial"
+      ]
+    }
+  ]
+}
