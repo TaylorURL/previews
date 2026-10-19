@@ -304,7 +304,7 @@ function MegaAreas({ b, id, onPick }) {
                   onClick={onPick}
                   className="flex min-h-[44px] items-center gap-3 border-b border-ink/10 text-[16px] font-medium text-ink no-underline hover:text-primary"
                 >
-                  <span className="font-heading text-[13px] font-semibold text-primary">{pad2(i + 1)}</span>
+                  <span className="w-[1.5em] flex-none font-heading text-[13px] font-semibold tabular-nums text-primary">{pad2(i + 1)}</span>
                   {t}
                 </a>
               </li>
@@ -1053,7 +1053,7 @@ function AreasBand({ b }) {
           {towns.map((t, i) => (
             <li key={t} className="border-b-2 border-r-2 border-ink bg-white">
               <a href={`/service-areas#${townId(t)}`} className="flex min-h-[64px] items-center gap-3 px-4 py-3 text-ink no-underline transition hover:bg-ink hover:text-white">
-                <span className="font-heading text-[13px] font-semibold text-primary">{pad2(i + 1)}</span>
+                <span className="w-[1.5em] flex-none font-heading text-[13px] font-semibold tabular-nums text-primary">{pad2(i + 1)}</span>
                 <span className="min-w-0 break-words font-heading text-[18px] font-semibold uppercase tracking-[0.03em]">{t}</span>
               </a>
             </li>
@@ -1478,7 +1478,7 @@ function ServicePage({ b, tel, s }) {
               {others.map((o, i) => (
                 <li key={o.slug} className="border-b border-ink/10">
                   <a href={`/services/${o.slug}`} className="group flex min-h-[72px] items-center gap-5 py-4 text-ink no-underline">
-                    <span className="font-heading text-[15px] font-semibold text-primary">{pad2(i + 1)}</span>
+                    <span className="w-[1.5em] flex-none font-heading text-[15px] font-semibold tabular-nums text-primary">{pad2(i + 1)}</span>
                     <span className="min-w-0 flex-1">
                       <span className={`${h3} block text-[21px] group-hover:text-primary`}>{o.title}</span>
                       {shortOf(o) && <span className="mt-1 block text-[15px] leading-snug text-ink/65">{shortOf(o)}</span>}
@@ -1596,7 +1596,7 @@ function AboutPage({ b, tel }) {
               <ol className="mt-10 grid gap-0">
                 {list(a.values).map((v, i) => (
                   <li key={v.title} className="flex gap-5 border-t-2 border-ink py-6">
-                    <span className="font-heading text-[32px] font-bold leading-none text-primary">{pad2(i + 1)}</span>
+                    <span className="w-[1.5em] flex-none font-heading text-[32px] font-bold leading-none tabular-nums text-primary">{pad2(i + 1)}</span>
                     <div>
                       <h3 className={`${h3} text-[22px]`}>{v.title}</h3>
                       <p className="mt-1.5 text-[17px] leading-[1.6] text-ink/75">{v.text}</p>
@@ -1680,7 +1680,7 @@ function ContactPage({ b, tel }) {
                 <ol className="grid gap-5">
                   {steps.map((st, i) => (
                     <li key={st.title} className="flex gap-4">
-                      <span className="font-heading text-[26px] font-bold leading-none text-accent">{pad2(i + 1)}</span>
+                      <span className="w-[1.5em] flex-none font-heading text-[26px] font-bold leading-none tabular-nums text-accent">{pad2(i + 1)}</span>
                       <div>
                         <h3 className="text-[17px] font-semibold">{st.title}</h3>
                         <p className="mt-1 text-[16px] leading-[1.55] text-white/70">{st.text}</p>
