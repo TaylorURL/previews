@@ -1,0 +1,499 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Green Dynasty Corp.",
+  "shortName": "Green Dynasty",
+  "summary": "A family-owned collective of construction, estimating, packout and real estate companies serving La Porte and the Houston Bay Area.",
+  "phone": "(281) 840-3455",
+  "email": "info@greendynastygroup.com",
+  "address": "10903 Pecan Dr",
+  "town": "La Porte",
+  "state": "TX",
+  "zip": "77571",
+  "rating": 5.0,
+  "reviewCount": 20,
+  "hours": [
+    [
+      "Mon – Sat",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#294207",
+    "primaryDeep": "#1b2d04",
+    "accent": "#b37e10",
+    "ink": "#1b2110",
+    "muted": "#5b6650",
+    "surface": "#f4f7ee",
+    "line": "#dee4d3",
+    "heading": "'Roboto Slab', Georgia, serif",
+    "body": "'Poppins', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap",
+    "logo": "/brands/greendynastycorp/logo.webp",
+    "logoMono": "/brands/greendynastycorp/logo-mono.webp",
+    "logoWidth": 81,
+    "logoHeight": 84,
+    "logoRatio": 0.96,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.762,
+      0.686,
+      0.59,
+      0.519,
+      0.468,
+      0.291,
+      0.313,
+      0.428,
+      0.694,
+      0.848,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Construction and remodeling in La Porte, TX",
+    "title": "We treat every property like our own,",
+    "titleAccent": "and every client like family.",
+    "lead": "Remodels, custom homes, roofing and commercial renovations across La Porte and the Houston Bay Area, with one team handling the project from the first walkthrough to the final detail.",
+    "image": "/brands/greendynastycorp/hero",
+    "imageAlt": "Timber roof framing going up over a house under construction"
+  },
+  "groups": [
+    {
+      "slug": "construction",
+      "title": "Construction",
+      "icon": "home",
+      "summary": "General contracting, custom homes, roofing and structural repairs for homes and businesses.",
+      "intro": "Green Dynasty Construction handles residential and commercial projects across Texas, from concept to completion. Sherry Green leads the division, and every stage is managed with attention to detail, safety and clear communication.",
+      "image": "/brands/greendynastycorp/construction",
+      "imageAlt": "A newly built two-storey home seen from the garden",
+      "services": [
+        {
+          "slug": "general-contracting",
+          "title": "General Contracting",
+          "icon": "clipboard",
+          "text": "End-to-end project coordination ensuring timely delivery and top-quality construction standards.",
+          "points": [
+            "Full-service contracting for homes and businesses",
+            "Permits through to completion",
+            "One point of contact for the whole job"
+          ]
+        },
+        {
+          "slug": "custom-home-builds",
+          "title": "Custom Home Builds",
+          "icon": "home",
+          "text": "Bringing dream homes to life with personalized designs and expert project management.",
+          "points": [
+            "Planning and design through final construction",
+            "Built across La Porte and the Houston area"
+          ]
+        },
+        {
+          "slug": "roofing-structural-repairs",
+          "title": "Roofing & Structural Repairs",
+          "icon": "shield",
+          "text": "Reliable roofing, framing, and foundational work that protects and strengthens your property.",
+          "points": [
+            "Roof repairs and replacements",
+            "Framing and foundation work",
+            "Residential and commercial buildings"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "remodeling",
+      "title": "Remodeling",
+      "icon": "wrench",
+      "summary": "Kitchens, bathrooms, whole-home remodels and commercial renovations.",
+      "intro": "Remodeling is the work we are asked for most, in houses across La Porte, Deer Park, Pasadena and the Bay Area. Each project is approached with meticulous attention to detail, professional project management and a written scope before anything is opened up.",
+      "image": "/brands/greendynastycorp/remodeling",
+      "imageAlt": "A house mid-renovation with the roof stripped back and materials on site",
+      "services": [
+        {
+          "slug": "residential-remodeling",
+          "title": "Residential Remodeling",
+          "icon": "home",
+          "text": "Transforming kitchens, bathrooms, and living spaces with precision craftsmanship and modern design.",
+          "points": [
+            "Single rooms through to whole-home remodels",
+            "Experienced crews on every project"
+          ]
+        },
+        {
+          "slug": "kitchen-remodeling",
+          "title": "Kitchen Remodeling",
+          "icon": "ruler",
+          "text": "Kitchen remodels for La Porte and Houston homes, planned and built by the same team that manages the rest of the project."
+        },
+        {
+          "slug": "bathroom-remodeling",
+          "title": "Bathroom Remodeling",
+          "icon": "droplets",
+          "text": "Bathroom remodels handled end to end, from the layout through to the finishes."
+        },
+        {
+          "slug": "commercial-renovations",
+          "title": "Commercial Renovations",
+          "icon": "building",
+          "text": "Upgrading business interiors and exteriors to enhance appearance, efficiency, and long-term value.",
+          "points": [
+            "Office upgrades and retail remodels",
+            "Planned around minimal disruption to your business"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "estimating",
+      "title": "Estimating",
+      "icon": "chart",
+      "summary": "Itemized construction estimates for residential and commercial projects, written after an on-site walkthrough.",
+      "intro": "Our estimator writes itemized estimates for homes, offices, retail spaces and multi-unit properties. Every estimate starts with an on-site walkthrough, and the scope is written in Xactimate on our own subscription so the format and line items are familiar to everyone reviewing it.",
+      "image": "/brands/greendynastycorp/estimating",
+      "imageAlt": "An estimator working through a set of drawings at a desk with a calculator",
+      "services": [
+        {
+          "slug": "construction-estimating",
+          "title": "Construction Estimating",
+          "icon": "clipboard",
+          "text": "Itemized estimates for residential and commercial projects, based on what we document during an on-site walkthrough.",
+          "points": [
+            "Kitchens, bathrooms, flooring, drywall, paint, cabinets, trim and whole-home interior work",
+            "Offices, retail spaces and multi-unit buildings, each unit and common area kept separate in one file",
+            "Measured and written in the order a crew would build it, from protection and detach-and-reset to final cleanup",
+            "You receive both the editable ESX file and a PDF",
+            "The estimate is yours to use"
+          ]
+        },
+        {
+          "slug": "insurance-claim-estimates",
+          "title": "Insurance Claim Estimates",
+          "icon": "clipboard",
+          "text": "Estimates written in Xactimate, the estimating software widely used across the insurance industry, so the format and line items are familiar to everyone reviewing them.",
+          "points": [
+            "The estimate is yours to share with your insurance company or anyone helping with the repairs",
+            "We are a construction company, not a public adjuster, and we do not negotiate claims or interpret coverage"
+          ]
+        },
+        {
+          "slug": "estimate-review",
+          "title": "Estimate Review",
+          "icon": "ruler",
+          "text": "We compare an estimate you already have against the conditions documented on site and write any supported differences, with notes explaining each item."
+        },
+        {
+          "slug": "estimating-support-for-contractors",
+          "title": "Estimating Support for Contractors",
+          "icon": "ruler",
+          "text": "For crews with nobody on staff who writes in Xactimate, our estimator walks the property and writes the itemized scope so your team can stay on the work."
+        }
+      ]
+    },
+    {
+      "slug": "packouts",
+      "title": "Packouts",
+      "icon": "building",
+      "summary": "Green Dynasty Vault packs, inventories, stores and returns your belongings while the work is done.",
+      "intro": "Green Dynasty Vault is our packout company. It packs and inventories your belongings, moves them out and keeps them in secure storage so your home is clear for a remodel or project. When the work is done, we bring everything back.",
+      "image": "/brands/greendynastycorp/packouts",
+      "imageAlt": "Aisles of shelving in a storage warehouse",
+      "services": [
+        {
+          "slug": "packout-and-inventory",
+          "title": "Packout & Inventory",
+          "icon": "clipboard",
+          "text": "A professional team packs up the contents of your home, or specific rooms, and documents everything before it is moved.",
+          "points": [
+            "A single room, a few rooms, or the entire home",
+            "An inventory of your contents on every packout",
+            "Common during remodels, moves and home sales"
+          ]
+        },
+        {
+          "slug": "remodel-and-moving-packouts",
+          "title": "Remodel & Moving Packouts",
+          "icon": "wrench",
+          "text": "We pack up the rooms being worked on, or the whole house, so your contractors have a clear space and your belongings stay out of the dust and foot traffic. For a move, we can hold everything until your next place is ready.",
+          "points": [
+            "Remodel and renovation packouts",
+            "Moving and relocation packouts, including a gap between homes"
+          ]
+        },
+        {
+          "slug": "staging-estate-and-downsizing",
+          "title": "Staging, Estate & Downsizing Packouts",
+          "icon": "home",
+          "text": "Clearing extra furniture, personal items and clutter so a home shows its best, and helping families pack, organize and store contents during an estate transition or a move to a smaller home.",
+          "points": [
+            "Items stay in storage until after closing",
+            "Decisions made at a comfortable pace"
+          ]
+        },
+        {
+          "slug": "secure-storage",
+          "title": "Secure Storage",
+          "icon": "shield",
+          "text": "Your belongings stay in secure storage for as long as the project runs, whether that is a short remodel or a longer gap between homes."
+        },
+        {
+          "slug": "pack-back",
+          "title": "Pack-Back",
+          "icon": "home",
+          "text": "Our pack-back service returns your belongings to your home and helps place items in the rooms where they belong."
+        }
+      ]
+    },
+    {
+      "slug": "real-estate",
+      "title": "Real Estate",
+      "icon": "chart",
+      "summary": "Pre-purchase walkthroughs, investment guidance and flips, backed by construction experience.",
+      "intro": "Green Dynasty Real Estate combines construction expertise with strategic investing to uncover the potential in properties across Texas. We go beyond traditional real estate with hands-on guidance, renovation insight and value-focused solutions, whether you are buying, selling or flipping.",
+      "image": "/brands/greendynastycorp/real-estate",
+      "imageAlt": "A brick family home with a wide front lawn",
+      "services": [
+        {
+          "slug": "pre-purchase-walkthroughs",
+          "title": "Pre-Purchase Contractor Walkthroughs",
+          "icon": "compass",
+          "text": "Helping buyers identify potential property issues before closing to make informed decisions.",
+          "points": [
+            "Visible property conditions assessed before you buy",
+            "Structural red flags flagged and remodeling costs estimated"
+          ]
+        },
+        {
+          "slug": "investment-property-acquisition",
+          "title": "Investment Property Acquisition",
+          "icon": "chart",
+          "text": "Strategic purchasing guidance for investors seeking high-return opportunities in Texas markets."
+        },
+        {
+          "slug": "property-flipping",
+          "title": "Property Flipping & Renovation",
+          "icon": "wrench",
+          "text": "Reviving undervalued properties into profitable investments through expert construction insight."
+        },
+        {
+          "slug": "real-estate-consulting",
+          "title": "Real Estate Consulting",
+          "icon": "clipboard",
+          "text": "Offering expert advice on remodeling value, property improvement, and post-purchase upgrades."
+        },
+        {
+          "slug": "collaborative-development",
+          "title": "Collaborative Development Projects",
+          "icon": "building",
+          "text": "Partnering with investors and homeowners to develop innovative residential and commercial spaces."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "A family-owned collective of companies",
+    "text": [
+      "Green Dynasty is a proudly family-owned and operated collective of companies based in Texas, committed to delivering high-quality construction and real estate services to our community. Founded on integrity, transparency and exceptional customer care, every client is treated like family and every project is handled with meticulous attention to detail.",
+      "Our journey began with Bobby and Sherry Green, a husband-and-wife team dedicated to creating solutions that simplify life for families and businesses. Sherry Green, a proud Brazilian-American leader, guides the construction division, which is known for quality workmanship, innovative solutions and a focus on long-term value.",
+      "Each branch of the group shares the same mission. Green Dynasty Construction builds and remodels, Green Dynasty Real Estate provides investor-focused services and pre-purchase contractor walkthroughs, and Green Dynasty Vault handles packouts and secure storage while the work is under way."
+    ],
+    "image": "/brands/greendynastycorp/about",
+    "imageAlt": "An office interior with shelving, a desk and a reading chair",
+    "values": [
+      {
+        "title": "Expertise",
+        "text": "Decades of combined experience delivering high-quality construction."
+      },
+      {
+        "title": "Trust",
+        "text": "We treat every client like family and every project like our own."
+      },
+      {
+        "title": "Reliability",
+        "text": "Timely execution and clear communication from start to finish."
+      },
+      {
+        "title": "Excellence",
+        "text": "Commitment to superior craftsmanship and attention to every detail."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Can you estimate from photos?",
+      "a": "No. Every estimate starts with an on-site walkthrough. Photos and existing estimates help us prepare, but they don't replace the visit."
+    },
+    {
+      "q": "What estimating software do you use?",
+      "a": "We estimate in Xactimate using our own subscription. You receive both the editable ESX file and a PDF."
+    },
+    {
+      "q": "Do you estimate new construction from plans?",
+      "a": "No. We don't do new-construction takeoffs or bid packages from plans or blueprints. Our estimates are based on an on-site walkthrough of an existing home or building."
+    },
+    {
+      "q": "What is a packout?",
+      "a": "A packout is when a professional team packs up the contents of your home, or specific rooms, documents everything, moves it to secure storage, and returns it later. It's a common choice during remodels, moves, and home sales."
+    },
+    {
+      "q": "Do I need to pack the whole house?",
+      "a": "No. We can pack a single room, a few rooms, or the entire home. During a kitchen or bathroom remodel, for example, many homeowners only need nearby rooms cleared."
+    },
+    {
+      "q": "Will you put everything back when the project is done?",
+      "a": "Yes. Our pack-back service returns your belongings to your home and helps place items in the rooms where they belong."
+    },
+    {
+      "q": "Do you estimate residential and commercial projects?",
+      "a": "Yes. We write itemized estimates for homes, offices, retail spaces and multi-unit properties."
+    },
+    {
+      "q": "Can I use your estimate for an insurance claim?",
+      "a": "Yes. The estimate is yours, and you can share it with your insurance company, contractor or anyone helping with the project. We don't represent you with the insurance company or negotiate your claim."
+    },
+    {
+      "q": "Can you review an estimate I already have?",
+      "a": "Yes. We'll compare it against the conditions documented on site and write any supported differences, with notes explaining each item."
+    },
+    {
+      "q": "How much does an estimate cost?",
+      "a": "Talking through your project is free, and if you hire Green Dynasty Construction to do the work your estimate is free. For an estimate only, our fee is 2% of the completed Xactimate estimate with a $450 minimum, and we go over it before we schedule."
+    },
+    {
+      "q": "How long does an estimate take?",
+      "a": "Most estimates are ready within 3 business days of the walkthrough."
+    },
+    {
+      "q": "How do I know what was packed?",
+      "a": "We create an inventory of your contents as part of every packout, so you have a record of what left your home and what's coming back."
+    },
+    {
+      "q": "How long can my belongings stay in storage?",
+      "a": "It depends on your needs. Whether it's a short remodel or a longer gap between homes, we'll work with you on a timeline that fits your plans."
+    },
+    {
+      "q": "How do I get started on a packout?",
+      "a": "Give us a call. We'll talk through your project, your timeline and what needs to be packed, then schedule a walkthrough."
+    }
+  ],
+  "serviceArea": [
+    "La Porte",
+    "Deer Park",
+    "Pasadena",
+    "Baytown",
+    "Shoreacres",
+    "Morgan's Point",
+    "Seabrook",
+    "Kemah",
+    "Clear Lake",
+    "Webster",
+    "Nassau Bay",
+    "League City",
+    "Friendswood",
+    "Pearland",
+    "Dickinson",
+    "Alvin",
+    "South Houston",
+    "Galveston",
+    "Houston"
+  ],
+  "facts": [
+    {
+      "heading": "Certifications",
+      "items": [
+        "City of Houston Office of Business Opportunity certified MBE, WBE and SBE"
+      ]
+    },
+    {
+      "heading": "Ownership",
+      "text": "Family-owned and operated, and 100% female- and minority-owned. The construction division is led by Sherry Green."
+    },
+    {
+      "heading": "Founders",
+      "text": "Bobby and Sherry Green, a husband-and-wife team."
+    },
+    {
+      "heading": "The companies",
+      "items": [
+        "Green Dynasty Construction, for building and remodeling",
+        "Green Dynasty Real Estate, for walkthroughs, investing and consulting",
+        "Green Dynasty Vault, for packouts and secure storage"
+      ]
+    },
+    {
+      "heading": "Legal name",
+      "text": "Green Dynasty Construction LLC, trading as Green Dynasty Group."
+    },
+    {
+      "heading": "Estimates",
+      "text": "Written in Xactimate on our own subscription and handed over as both an editable ESX file and a PDF. The estimate is yours."
+    },
+    {
+      "heading": "What an estimate package includes",
+      "items": [
+        "Xactimate estimate: an editable ESX file and a PDF, organized room by room with quantities, units and notes",
+        "Property sketch with the room layout and measurements behind every quantity",
+        "Labeled photos, named by room and condition, so each line item traces back to what we saw",
+        "A 3D walkthrough scan your team can revisit while reviewing the scope"
+      ]
+    },
+    {
+      "heading": "Estimate pricing",
+      "text": "Talking through your project is free, and the estimate is free if you hire Green Dynasty Construction to do the work. For an estimate only, the fee is 2% of the completed Xactimate estimate with a $450 minimum, gone over before anything is scheduled."
+    },
+    {
+      "heading": "Estimate turnaround",
+      "text": "Most estimates are ready within 3 business days of the on-site walkthrough."
+    },
+    {
+      "heading": "Languages",
+      "text": "Our estimator speaks Spanish. ¿Habla español?"
+    },
+    {
+      "heading": "What we do, and what we don't",
+      "items": [
+        "We document conditions and price the repair or construction work",
+        "We are a construction company, not a public adjuster or insurance adjuster, so we don't negotiate claims, interpret coverage or promise what a claim will pay",
+        "We don't write photo-only remote estimates, and we don't do new-construction takeoffs or bid packages from plans",
+        "A pre-purchase walkthrough is contractor guidance on likely repairs and costs, not an inspection by a TREC-licensed home inspector"
+      ]
+    },
+    {
+      "heading": "Permits",
+      "text": "We prepare and file the permit paperwork with the city, and we confirm which jurisdiction and code edition a property falls under before pricing the work."
+    },
+    {
+      "heading": "Where we work",
+      "text": "We focus on La Porte and the Bay Area, and we can estimate projects anywhere in Texas. Send us the address and we'll confirm availability."
+    },
+    {
+      "heading": "Our mission",
+      "text": "Deliver excellence and build lasting trust: high-quality construction and real estate services with integrity, care and professionalism, client-focused on every project."
+    },
+    {
+      "heading": "Our vision",
+      "text": "To be Texas' most trusted service partner, setting the standard for professionalism and excellence in construction, remodeling and real estate."
+    },
+    {
+      "heading": "Our objective",
+      "items": [
+        "Provide client-centered, tailored solutions",
+        "Maintain high standards of excellence",
+        "Enhance community safety and value",
+        "Embrace modern techniques and innovation"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "LinkedIn: linkedin.com/company/green-dynasty-construction-llc"
+      ]
+    }
+  ]
+}

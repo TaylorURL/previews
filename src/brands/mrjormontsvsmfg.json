@@ -1,0 +1,388 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "M&R Jormont SVS MFG LLC",
+  "shortName": "M&R Jormont",
+  "summary": "Custom-made removable thermal insulation blankets, designed, manufactured and installed from our own shop in Pearland, Texas.",
+  "phone": "(832) 940-0670",
+  "email": "jramos@mrjormont.com",
+  "address": "2213 Garden Rd",
+  "town": "Pearland",
+  "state": "TX",
+  "zip": "77581",
+  "rating": 5.0,
+  "reviewCount": 5,
+  "since": 2008,
+  "hours": [
+    ["Mon – Fri", "7 AM – 5:30 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#0078b7",
+    "primaryDeep": "#02567f",
+    "accent": "#e74b1b",
+    "ink": "#111c25",
+    "muted": "#53646f",
+    "surface": "#eef6fb",
+    "line": "#d6e3ec",
+    "heading": "'Archivo', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/mrjormontsvsmfg/logo.webp",
+    "logoMono": "/brands/mrjormontsvsmfg/logo-mono.webp",
+    "logoWidth": 132,
+    "logoHeight": 84,
+    "logoRatio": 1.57,
+    "logoGround": "#ffffff",
+    "logoReads": [0.318, 0.27, 0.267, 0.29, 0.345, 0.267, 0.331, 0.628, 0.69, 0.881, 1.0]
+  },
+  "hero": {
+    "eyebrow": "Reusable thermal insulation blankets",
+    "title": "Custom insulation blankets,",
+    "titleAccent": "measured and made to fit.",
+    "lead": "Removable, flexible and reusable blankets for pipes, valves, turbines and exhaust systems. Our field designers measure your equipment on site, our shop in Pearland builds the blankets, and our crews install them.",
+    "image": "/brands/mrjormontsvsmfg/hero",
+    "imageAlt": "A removable insulation blanket strapped around a valve and pipework"
+  },
+  "groups": [
+    {
+      "slug": "insulation-blankets",
+      "title": "Insulation Blankets",
+      "icon": "thermometer",
+      "summary": "Removable, reusable blankets custom-made to the size and shape of your equipment.",
+      "intro": "Our core work is the custom blanket. Every one is designed around the equipment it covers, so it fits valves, flanges, pumps and expansion joints as closely as it fits a straight run of pipe. Because they come off and go back on without special tools, equipment that needs regular inspection stays insulated between visits.",
+      "image": "/brands/mrjormontsvsmfg/pipework",
+      "imageAlt": "Pipework and process towers at a refinery",
+      "services": [
+        {
+          "slug": "pipe-insulation",
+          "title": "Pipe Insulation",
+          "icon": "waves",
+          "text": "Blankets made to cover pipes of any size or shape, for hot water pipes, steam lines and chemical processing systems.",
+          "points": [
+            "Cuts heat loss and energy consumption",
+            "Removable and reusable for inspection",
+            "Used in power plants, refineries and chemical plants"
+          ]
+        },
+        {
+          "slug": "blanket-insulation",
+          "title": "Blanket Insulation",
+          "icon": "shield",
+          "text": "Flexible thermal protection for valves, flanges, pumps, expansion joints and exhaust systems, large or small.",
+          "points": [
+            "Custom-designed to your exact specifications",
+            "Easy to install and remove, which keeps downtime short"
+          ]
+        },
+        {
+          "slug": "board-insulation-covers",
+          "title": "Board Insulation Covers",
+          "icon": "clipboard",
+          "text": "Rigid covers for heat exchangers, flanges and valves that still leave the equipment open for maintenance and inspection.",
+          "points": [
+            "Made to fit a wide variety of shapes and sizes",
+            "Durable and reusable"
+          ]
+        },
+        {
+          "slug": "custom-made-blankets",
+          "title": "Custom-Made Blankets",
+          "icon": "ruler",
+          "text": "When standard insulation will not fit, we design and manufacture to the dimensions of the equipment in front of us.",
+          "points": [
+            "Unusual shapes, sizes and environments",
+            "Built from your measurements or ours"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "turbine-and-heat-conservation",
+      "title": "Turbine and Heat Conservation",
+      "icon": "flame",
+      "summary": "Insulation for turbines, boilers, heat exchangers and exhaust systems that run hot.",
+      "intro": "Steam and gas turbines lose heat and efficiency when they are left bare. We build high-temperature blankets that keep the heat where it belongs, hold operating temperatures steady and take the burn risk out of the walkway beside them.",
+      "image": "/brands/mrjormontsvsmfg/power-plant",
+      "imageAlt": "A coastal power generation plant with tall stacks",
+      "services": [
+        {
+          "slug": "steam-and-gas-turbine-insulation",
+          "title": "Steam and Gas Turbine Insulation",
+          "icon": "gauge",
+          "text": "Blankets engineered for turbines in power generation and industrial process work, made from high-temperature-resistant materials.",
+          "points": [
+            "Reduces heat loss and fuel consumption",
+            "Built for the temperatures found around a turbine",
+            "Adds a protective layer for anyone working nearby"
+          ]
+        },
+        {
+          "slug": "heat-conservation-blankets",
+          "title": "Heat Conservation Blankets",
+          "icon": "flame",
+          "text": "For boilers, heat exchangers, valves and anything else that has to hold a high operating temperature.",
+          "points": [
+            "Less energy needed to hold temperature",
+            "Steadier, more consistent process temperatures",
+            "Heat-resistant materials built to last"
+          ]
+        },
+        {
+          "slug": "exhaust-systems",
+          "title": "Exhaust Systems",
+          "icon": "heater",
+          "text": "A protective barrier over exhaust runs that cuts heat loss and makes the space around them safer to work in.",
+          "points": ["Designed to the run, not to a catalogue size"]
+        },
+        {
+          "slug": "heat-exchangers",
+          "title": "Heat Exchangers",
+          "icon": "settings",
+          "text": "Insulation covers that keep exchangers running efficiently while still coming off for inspection.",
+          "points": ["Holds temperature and cuts wasted energy"]
+        }
+      ]
+    },
+    {
+      "slug": "fire-and-acoustic-blankets",
+      "title": "Fire and Acoustic Blankets",
+      "icon": "shield",
+      "summary": "Fire-resistant barriers and sound-dampening blankets for high-risk, high-noise plants.",
+      "intro": "Two problems that live in the same buildings as the heat. Fire blankets put a flame-resistant barrier between the equipment and everything around it; acoustic blankets take the noise out of a plant where machinery, pumps and turbines run all day.",
+      "image": "/brands/mrjormontsvsmfg/high-heat",
+      "imageAlt": "Molten metal pouring from a furnace inside a heavy industrial plant",
+      "services": [
+        {
+          "slug": "fire-blankets",
+          "title": "Fire Blankets",
+          "icon": "flame",
+          "text": "Fire-resistant insulation blankets that withstand extreme temperatures and help stop a fire spreading.",
+          "points": [
+            "For power plants, refineries and manufacturing facilities",
+            "Removable and reusable, no special tools needed"
+          ]
+        },
+        {
+          "slug": "acoustic-blankets",
+          "title": "Acoustic Blankets",
+          "icon": "waves",
+          "text": "Blankets that absorb and dampen the sound coming off machinery, pumps and turbines.",
+          "points": [
+            "Lowers noise levels across the workspace",
+            "Helps a plant meet noise regulations"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "marine-insulation",
+      "title": "Marine Insulation",
+      "icon": "waves",
+      "summary": "Thermal blankets for ships, offshore platforms and shipboard equipment.",
+      "intro": "Marine work has its own problem: saltwater and humidity attack the insulation as hard as the heat does. Our marine blankets are built to survive that, and we have fitted them on vessels and offshore platforms at home and overseas.",
+      "image": "/brands/mrjormontsvsmfg/marine",
+      "imageAlt": "An offshore drilling platform in dock beside harbour cranes",
+      "services": [
+        {
+          "slug": "marine-blankets",
+          "title": "Marine Blankets",
+          "icon": "waves",
+          "text": "Thermal protection for ships, oil rigs and other maritime equipment, made to resist corrosion from saltwater and high humidity.",
+          "points": [
+            "Built for harsh marine conditions",
+            "Cuts heat loss and energy use on board"
+          ]
+        },
+        {
+          "slug": "shipboard-piping-and-exhaust",
+          "title": "Shipboard Piping and Exhaust",
+          "icon": "heater",
+          "text": "Blankets for pipes, valves, turbines and exhaust systems in the confined spaces of a vessel.",
+          "points": ["Protects crew working close to hot surfaces"]
+        }
+      ]
+    },
+    {
+      "slug": "field-services",
+      "title": "Design, Manufacturing and Field Services",
+      "icon": "compass",
+      "summary": "Field measuring, in-house manufacturing, on-site installation and ongoing support.",
+      "intro": "We handle a job end to end rather than dropping a box of blankets at the gate. A field designer measures the equipment, the shop in Pearland builds to those measurements, and our own crews fit the blankets and come back to look after them.",
+      "image": "/brands/mrjormontsvsmfg/shop-floor",
+      "imageAlt": "A manufacturing plant floor lined with production machinery",
+      "services": [
+        {
+          "slug": "field-design",
+          "title": "Field Design",
+          "icon": "compass",
+          "text": "Our field designers take custom measurements on site so the blankets fit your equipment rather than something like it.",
+          "points": [
+            "On-site measuring for pipes, turbines and components",
+            "We also work from your own engineering models or prints"
+          ]
+        },
+        {
+          "slug": "manufacturing",
+          "title": "Manufacturing",
+          "icon": "settings",
+          "text": "Every blanket is made in house at our facility in Pearland, using traditional sewing alongside automated equipment.",
+          "points": [
+            "20,000 square feet of manufacturing space",
+            "Quality control checks through design and manufacturing"
+          ]
+        },
+        {
+          "slug": "installation",
+          "title": "Installation",
+          "icon": "wrench",
+          "text": "Our own crews fit the blankets on site, from power plants to marine equipment, with as little interruption as we can manage.",
+          "points": [
+            "Trained installation crews",
+            "Scheduled to keep your downtime short"
+          ]
+        },
+        {
+          "slug": "maintenance-and-support",
+          "title": "Maintenance and Support",
+          "icon": "clipboard",
+          "text": "Inspections, repairs and replacements that keep the blankets doing their job for as long as possible.",
+          "points": ["Ongoing support after the install"]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "A family-owned shop in Pearland, insulating industry since 2008.",
+    "text": [
+      "M&R Jormont SVS MFG LLC was founded in Pearland, Texas in 2008 to make one thing well: custom thermal insulation blankets that are removable, flexible and reusable. The company started small and grew on the back of work that fitted properly the first time.",
+      "Today we work out of a 20,000 square-foot manufacturing facility with another 4,000 square feet of office, and a team of 22 designers, field managers, manufacturing specialists and installers. The people who lead that team bring more than 37 years of experience in thermal insulation design and manufacturing.",
+      "We are based south of Houston but the work is not. Projects have taken us to Alabama, Georgia, Idaho and across Texas, and overseas to Australia, Costa Rica and Venezuela."
+    ],
+    "image": "/brands/mrjormontsvsmfg/work",
+    "imageAlt": "Removable insulation jackets fitted over valves and flanges on a process skid",
+    "values": [
+      {
+        "title": "Integrity",
+        "text": "We do business honestly, and every product we deliver meets the same standard of quality and performance."
+      },
+      {
+        "title": "Excellence",
+        "text": "From design and manufacturing to installation and customer service, we hold the same bar across the whole job."
+      },
+      {
+        "title": "Customer focus",
+        "text": "We work closely with each client to understand what they actually need before we design anything."
+      },
+      {
+        "title": "Safety",
+        "text": "Our blankets are designed to protect workers from hazardous heat applications, on your site and on ours."
+      },
+      {
+        "title": "Sustainability",
+        "text": "Products that help businesses conserve energy, reduce waste and lower their environmental impact."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Are the blankets removable and reusable?",
+      "a": "Yes. They are designed to be installed and removed without special tools or skills, which suits equipment that needs regular inspection or maintenance, and they can be reused rather than replaced each time."
+    },
+    {
+      "q": "Can you work from our own drawings?",
+      "a": "Yes. We work with clients who supply their own engineering models or prints, and translate those specifications into a custom insulation design."
+    },
+    {
+      "q": "Who takes the measurements?",
+      "a": "Our field designers do, on site. They measure the equipment directly so that the finished blanket fits the pipe, turbine or component it was made for."
+    },
+    {
+      "q": "Where are the blankets made?",
+      "a": "In house, at our facility in Pearland, Texas, using a combination of traditional sewing and automated equipment."
+    },
+    {
+      "q": "Do you install them as well?",
+      "a": "Yes. Our own installation crews fit the blankets on site, and we provide inspections, repairs and replacements afterwards."
+    },
+    {
+      "q": "Do you work outside Texas?",
+      "a": "Yes. We serve clients across the United States and internationally, with completed projects in Mobile, Newnan and Boise, and in Australia, Costa Rica and Venezuela."
+    }
+  ],
+  "serviceArea": ["Pasadena", "Brookshire", "McKinney", "Houston area"],
+  "facts": [
+    {
+      "heading": "Industries we serve",
+      "items": [
+        "Power generation",
+        "Oil and gas",
+        "Marine",
+        "Manufacturing",
+        "Chemical processing",
+        "Refineries",
+        "Petrochemical",
+        "HVAC systems"
+      ]
+    },
+    {
+      "heading": "Equipment we insulate",
+      "items": [
+        "Pipes and steam lines",
+        "Pipelines",
+        "Valves and flanges",
+        "Pumps and expansion joints",
+        "Steam and gas turbines",
+        "Heat exchangers",
+        "Boilers",
+        "Exhaust systems"
+      ]
+    },
+    {
+      "heading": "Our facility",
+      "text": "A 20,000 square-foot manufacturing facility with a further 4,000 square feet of office space, at 2213 Garden Road in Pearland, Texas."
+    },
+    {
+      "heading": "Our team",
+      "text": "22 skilled professionals from a range of backgrounds, including designers, field managers, manufacturing specialists and installers. More than 60% of our employees are women."
+    },
+    {
+      "heading": "Projects completed",
+      "items": [
+        "Mobile, AL: chemical processing plant, piping systems and steam turbines, with blankets fitted on over 100 pipe sections",
+        "Newnan, GA: power generation facility, steam turbines and heat exchangers",
+        "Boise, ID: manufacturing plant, exhaust systems and process piping",
+        "Brookshire, TX: oil refinery, pipes, valves and gas turbines",
+        "McKinney, TX: manufacturing facility, a series of heat exchangers",
+        "Pasadena, TX: chemical plant, steam turbines and piping systems",
+        "Gladstone, Australia: power generation plant, turbines and heat exchangers, managed from design through installation",
+        "Costa Rica: marine vessel company, shipboard exhaust systems, piping and turbines",
+        "Falcon, Venezuela: refinery, pipes, valves and steam turbines",
+        "Jose, Venezuela: petrochemical facility, piping, heat exchangers and gas turbines"
+      ]
+    },
+    {
+      "heading": "How the blankets work",
+      "items": [
+        "Energy conservation: minimizing heat loss cuts the energy needed to hold operating temperatures, and with it the energy bill",
+        "Safety: insulating hot surfaces puts a protective barrier between workers and the heat, reducing the risk of burns and other heat-related injuries",
+        "Durability and reusability: built to withstand extreme conditions, with a long service life that cuts replacements and maintenance costs",
+        "Ease of installation and removal: on and off without special tools or skills, which suits equipment that needs periodic maintenance or inspection"
+      ]
+    },
+    {
+      "heading": "Our mission",
+      "text": "To keep growing the business while holding to the integrity that has been a cornerstone of our success, driven by customer satisfaction, safety, energy conservation and innovation."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "https://linkedin.com/in/juan-j-ramos-492b2a66",
+        "https://youtube.com/@juanramos7779"
+      ]
+    }
+  ]
+}
