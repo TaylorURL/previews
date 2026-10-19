@@ -1395,9 +1395,9 @@ function GroupPage({ b, groups, group, tel }) {
               <li key={s.slug} className="max-w-full flex-none">
                 <a
                   href={`#${s.slug}`}
-                  className="inline-flex min-h-[44px] items-center gap-2 rounded-full border border-line px-4 text-[16px] md:text-[15px] font-medium text-ink no-underline hover:border-primary hover:text-[color:var(--pt)]"
+                  className="inline-flex min-h-[44px] items-center gap-2 rounded-[22px] border border-line px-4 py-2 text-[16px] leading-snug md:text-[15px] font-medium text-ink no-underline hover:border-primary hover:text-[color:var(--pt)]"
                 >
-                  <GroupIcon name={s.icon || group.icon} size={15} className="text-[color:var(--pt)]" /> {s.title}
+                  <GroupIcon name={s.icon || group.icon} size={15} className="flex-none text-[color:var(--pt)]" /> {s.title}
                 </a>
               </li>
             ))}

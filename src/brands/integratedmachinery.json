@@ -1,0 +1,394 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Integrated Machinery Services",
+  "shortName": "IMS",
+  "summary": "Rotating equipment repair, machining, welding and field service for manufacturing plants, from a shop in Deer Park, Texas.",
+  "phone": "(346) 499-7066",
+  "email": "charrington@imshtx.com",
+  "address": "920 Seaco Ave",
+  "town": "Deer Park",
+  "state": "TX",
+  "zip": "77536",
+  "hours": [
+    ["Mon – Fri", "7:30 AM – 5 PM"]
+  ],
+  "brand": {
+    "primary": "#0c4da2",
+    "primaryDeep": "#15284b",
+    "ink": "#111c2e",
+    "muted": "#4a5a72",
+    "surface": "#eef3f9",
+    "line": "#d6e0ec",
+    "heading": "'Archivo', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/integratedmachinery/logo.webp",
+    "logoMono": "/brands/integratedmachinery/logo-mono.webp",
+    "logoWidth": 208,
+    "logoHeight": 72,
+    "logoRatio": 2.891,
+    "logoGround": "#ffffff",
+    "logoReads": [0.104, 0.082, 0.0, 0.0, 0.282, 0.405, 0.521, 0.638, 0.76, 0.883, 1.0]
+  },
+  "hero": {
+    "eyebrow": "Rotating equipment repair in Deer Park, Texas",
+    "title": "Reliable solutions that keep your operations",
+    "titleAccent": "running smoothly.",
+    "lead": "IMS repairs extrusion equipment, gearboxes, turbines, pumps, blowers, fans, rotary airlocks and valves, with machining, welding and field service under one roof. We provide the resources and solutions to get the job done right and on time.",
+    "image": "/brands/integratedmachinery/hero",
+    "imageAlt": "A machined rotor assembly resting on stands in the IMS shop"
+  },
+  "groups": [
+    {
+      "slug": "shop-repair",
+      "title": "Shop Repair",
+      "icon": "settings",
+      "summary": "Rotating equipment stripped, inspected, machined and rebuilt in our Deer Park shop.",
+      "intro": "Send the equipment to us and the diagnosis, the repair and the machining all happen in one place. Extrusion equipment, gearboxes, turbines, pumps, blowers, fans, rotary airlocks and valves come through the same shop, with quality controls documented at every step.",
+      "image": "/brands/integratedmachinery/shop-repair",
+      "imageAlt": "A rebuilt industrial gearbox sitting on a pallet after repair",
+      "services": [
+        {
+          "slug": "extrusion-equipment",
+          "title": "Extrusion Equipment",
+          "icon": "settings",
+          "text": "First class service to the injection molding and extrusion industry, from worn screws to complete remanufacturing.",
+          "points": [
+            "Pressing screws from barrels that have seized together",
+            "Complete repair and remanufacturing services"
+          ]
+        },
+        {
+          "slug": "gearboxes",
+          "title": "Gearboxes",
+          "icon": "circuit",
+          "text": "Gearboxes torn down, inspected and rebuilt, with the case and housing work done in our own shop.",
+          "points": [
+            "Cases and bearing housings mill and line bored",
+            "Gearbox machining and shaft manufacturing in-house"
+          ]
+        },
+        {
+          "slug": "turbines-and-pumps",
+          "title": "Turbines and Pumps",
+          "icon": "gauge",
+          "text": "Turbines and pumps diagnosed, repaired and returned to service, no matter how big or small the job.",
+          "points": [
+            "Repairs to any worn surface on any metallic part",
+            "Rapid turnaround on worn parts"
+          ]
+        },
+        {
+          "slug": "blowers-and-fans",
+          "title": "Blowers and Fans (ID/FD)",
+          "icon": "fan",
+          "text": "Blowers and induced and forced draft fans repaired and rebuilt, with shaft manufacturing handled here rather than sent out."
+        },
+        {
+          "slug": "rotary-airlocks-and-valves",
+          "title": "Rotary Airlocks and Valves",
+          "icon": "filter",
+          "text": "Rotary airlocks and valves repaired, machined and put back together ready to run.",
+          "points": [
+            "Valve machining",
+            "Removal of broken valves"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "machining",
+      "title": "Machining",
+      "icon": "ruler",
+      "summary": "Turning, milling, boring, grinding and press work on horizontal boring mills, lathes and a vertical turret lathe.",
+      "intro": "Comprehensive in-house machining and engineering give you a single source for finished working components. If it is made out of metal and comes out of a piece of machinery, we know how to manufacture or fix it.",
+      "image": "/brands/integratedmachinery/machining",
+      "imageAlt": "Machined gear shafts laid out on a bench in the machine shop",
+      "services": [
+        {
+          "slug": "parts-manufacturing",
+          "title": "Parts Manufacturing",
+          "icon": "ruler",
+          "text": "Parts made here from the material up, with personal focused attention on every part we make.",
+          "points": [
+            "Turning, milling, grinding, resurfacing and press work",
+            "Repairs to any worn surface on any metallic part"
+          ]
+        },
+        {
+          "slug": "shaft-manufacturing",
+          "title": "Shaft Manufacturing",
+          "icon": "settings",
+          "text": "New shafts manufactured for the gearboxes, pumps, fans and extrusion equipment that come through the shop."
+        },
+        {
+          "slug": "mill-and-line-boring",
+          "title": "Mill and Line Boring",
+          "icon": "compass",
+          "text": "Cases and bearing housings mill and line bored back to size.",
+          "points": [
+            "5\" and 4\" horizontal boring mills"
+          ]
+        },
+        {
+          "slug": "valve-and-gearbox-machining",
+          "title": "Valve and Gearbox Machining",
+          "icon": "gauge",
+          "text": "Valve and gearbox machining handled alongside the repair, so the work never leaves the building."
+        },
+        {
+          "slug": "couplings",
+          "title": "Couplings, Bore and Key",
+          "icon": "circuit",
+          "text": "Couplings bored and keyed to the shaft they are going on."
+        }
+      ]
+    },
+    {
+      "slug": "welding-and-fabrication",
+      "title": "Welding and Fabrication",
+      "icon": "flame",
+      "summary": "MIG, TIG and stick welding for weld repairs, fabrication and equipment skid building.",
+      "intro": "Welding sits next to the machines, so a repair that needs metal added and then cut back to size is one job in one shop. We weld MIG, TIG and stick.",
+      "image": "/brands/integratedmachinery/welding",
+      "imageAlt": "A fabricated equipment base loaded on a flatbed trailer",
+      "services": [
+        {
+          "slug": "weld-repairs",
+          "title": "Weld Repairs",
+          "icon": "flame",
+          "text": "Worn and damaged metal built back up and machined to finish in the same shop.",
+          "points": [
+            "MIG, TIG and stick welding",
+            "Repairs to any worn surface on any metallic part"
+          ]
+        },
+        {
+          "slug": "fabrication",
+          "title": "Fabrication",
+          "icon": "ruler",
+          "text": "Parts and assemblies fabricated to suit the equipment they belong to."
+        },
+        {
+          "slug": "skid-and-base-manufacturing",
+          "title": "Equipment Skid and Base Manufacturing",
+          "icon": "building",
+          "text": "Skids and bases built for equipment heading back into a plant, and machined here as well.",
+          "points": [
+            "Skid and base machining in the same shop"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "field-service",
+      "title": "Field Service",
+      "icon": "wrench",
+      "summary": "Overhauls, installation, alignment, balancing and machining carried out at your plant.",
+      "intro": "Some work cannot leave the plant. Our field crews take on turnkey push and pull projects, overhauls and installations, and bring alignment, balancing and machining to the equipment where it stands.",
+      "image": "/brands/integratedmachinery/field-service",
+      "imageAlt": "Process equipment strapped to a flatbed trailer outside the shop",
+      "services": [
+        {
+          "slug": "turnkey-projects",
+          "title": "Turnkey Push and Pull Projects",
+          "icon": "clipboard",
+          "text": "The old equipment comes out, the work gets done and the replacement goes back in, with personal attention from the first contact to the completion of your project."
+        },
+        {
+          "slug": "equipment-overhauls",
+          "title": "Equipment Overhauls",
+          "icon": "settings",
+          "text": "Full overhauls carried out on site when the equipment cannot come to the shop."
+        },
+        {
+          "slug": "equipment-installation",
+          "title": "Equipment Installation",
+          "icon": "wrench",
+          "text": "New and rebuilt equipment set in place and put into service."
+        },
+        {
+          "slug": "alignments",
+          "title": "Alignments",
+          "icon": "compass",
+          "text": "Alignment of installed rotating equipment before it is handed back over."
+        },
+        {
+          "slug": "field-balancing",
+          "title": "Field Balancing",
+          "icon": "gauge",
+          "text": "Rotors balanced in place, so a fan or a blower runs smooth without coming out of the plant."
+        },
+        {
+          "slug": "field-machining",
+          "title": "Field Machining",
+          "icon": "ruler",
+          "text": "Machining done in place on equipment too large or too fixed to move."
+        }
+      ]
+    },
+    {
+      "slug": "parts-and-equipment",
+      "title": "Parts and Equipment",
+      "icon": "chart",
+      "summary": "Replacement parts for the equipment we repair, and extrusion machinery through Extruder Line.",
+      "intro": "Alongside the repair work, IMS supplies the parts and the equipment that go with it. Extruder Line is the side of the business built around extrusion machinery, and its team works closely with you to understand what you need rather than selling off a list.",
+      "image": "/brands/integratedmachinery/parts",
+      "imageAlt": "Gears and bearing housings laid out on a pallet in the shop",
+      "services": [
+        {
+          "slug": "replacement-parts",
+          "title": "Replacement Parts",
+          "icon": "settings",
+          "text": "Parts for the rotating equipment we repair, manufactured in our own shop.",
+          "points": [
+            "Rapid turnaround on worn parts",
+            "Repairs to any worn surface on any metallic part"
+          ]
+        },
+        {
+          "slug": "extruder-line",
+          "title": "Extruder Line",
+          "icon": "chart",
+          "text": "Machinery and equipment for extrusion, from a team that works with you to understand your requirements and fit the equipment to them.",
+          "points": [
+            "Over 180 years of combined experience in extrusion technology",
+            "Support and maintenance through the life of the asset"
+          ]
+        },
+        {
+          "slug": "finished-components",
+          "title": "Finished Working Components",
+          "icon": "compass",
+          "text": "In-house machining and engineering together, so a component reaches you finished rather than part-made."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Who is IMS?",
+    "text": [
+      "Integrated Machinery Services is a dynamic and innovative company dedicated to delivering exceptional customer service and top-tier rotating equipment repair solutions. From diagnosis to repair and maintenance, our team of skilled professionals makes sure every job is carried out with precision and delivered on time.",
+      "With nearly a century of serving the manufacturing industry, we are ready to apply our expertise to the repair needs no matter how big or small. If it is made out of metal and comes out of a piece of machinery, we know how to manufacture or fix it.",
+      "The shop is on Seaco Avenue in Deer Park, with machining, welding and engineering under one roof and field crews who go out to the plant when the equipment cannot come to us."
+    ],
+    "image": "/brands/integratedmachinery/shop",
+    "imageAlt": "A large fabricated housing standing in the IMS shop",
+    "values": [
+      {
+        "title": "Commitment to Excellence",
+        "text": "We hold ourselves to the highest standards in all that we do, from the first consultation to the completion of a project."
+      },
+      {
+        "title": "Superior Customer Service",
+        "text": "Personalized, responsive and attentive service, so every client feels valued and supported."
+      },
+      {
+        "title": "Quality Control",
+        "text": "Rigorous quality control at every stage, from materials selection to final inspections."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How quickly will someone get back to me?",
+      "a": "Call or fill out the contact form and IMS staff will contact you within 24 to 48 hours."
+    },
+    {
+      "q": "Can I email instead of calling?",
+      "a": "Yes. You can also reach us by email if you have a general inquiry."
+    },
+    {
+      "q": "Who answers when I call?",
+      "a": "When you call you will be connected directly to our expert service technicians."
+    },
+    {
+      "q": "Can I come by the shop?",
+      "a": "Please reach out to us before visiting so we can schedule an appointment."
+    },
+    {
+      "q": "What equipment do you repair?",
+      "a": "Extrusion equipment, gearboxes, turbines, pumps, blowers, induced and forced draft fans, rotary airlocks and valves."
+    },
+    {
+      "q": "Do you only work in the shop?",
+      "a": "No. Shop repairs come to Deer Park, and our field service crews handle overhauls, installation, alignments, balancing and machining at your plant."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Shop Equipment",
+      "items": [
+        "5\" horizontal boring mill",
+        "4\" horizontal boring mill",
+        "62\" VTL",
+        "30 x 120\" lathe",
+        "20\" x 80\" lathe",
+        "Vertical milling center",
+        "Welding (MIG, TIG, stick)"
+      ]
+    },
+    {
+      "heading": "Equipment We Repair",
+      "items": [
+        "Extrusion equipment",
+        "Gearboxes",
+        "Turbines",
+        "Pumps",
+        "Blowers",
+        "Fans (ID/FD)",
+        "Rotary airlocks",
+        "Valves"
+      ]
+    },
+    {
+      "heading": "Value-Added Services",
+      "items": [
+        "Repairs to any worn surface on any metallic part",
+        "On-site inspections",
+        "Removal of broken valves",
+        "Rapid turnaround on worn parts",
+        "Pressing screws from barrels that have seized together"
+      ]
+    },
+    {
+      "heading": "A One-Stop Machine Shop",
+      "items": [
+        "Turning, milling, grinding, welding, resurfacing and press work",
+        "First class service to the injection molding and extrusion industry",
+        "Personal attention from the first contact to the completion of your project",
+        "Complete repair and remanufacturing services",
+        "Comprehensive in-house machining and engineering for finished working components",
+        "On-site inspection for every process",
+        "Extensive quality controls implemented and documented at every step"
+      ]
+    },
+    {
+      "heading": "How We Work",
+      "items": [
+        "Continuous improvement: new technologies, techniques and best practices to raise the efficiency and value of our services",
+        "Safety and environment: strict safety protocols and environmental regulations on every job",
+        "Solutions driven: creativity, resourcefulness and determination applied to every challenge"
+      ]
+    },
+    {
+      "heading": "Experience",
+      "text": "Nearly a century of serving the manufacturing industry, and a team with over 180 years of combined experience in extrusion technology."
+    },
+    {
+      "heading": "Extruder Line",
+      "items": [
+        "Experienced staff: from concept to execution, the team works to get your equipment repaired and back online as soon as possible",
+        "Collaboration: whether you want to raise productivity, improve product performance or explore new possibilities in design, the team works closely with you to understand your requirements",
+        "Customer satisfaction: comprehensive support and maintenance services, so your assets keep operating throughout their lifecycle"
+      ]
+    },
+    {
+      "heading": "Visiting the Shop",
+      "text": "920 Seaco Ave is our main office and headquarters. Please reach out to us prior to visiting so we can schedule an appointment."
+    }
+  ]
+}
