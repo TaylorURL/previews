@@ -60,10 +60,20 @@ try {
         try {
           await page.goto(`http://127.0.0.1:${port}${path}?staff`, { waitUntil: 'networkidle', timeout: 45000 });
           await page.evaluate(() => document.fonts.ready);
-          // Every lazy picture is brought into view once, so each one is drawn.
+          // Every lazy picture is brought into view once, so each one is drawn,
+          // and then every picture on the page is waited for. Without the wait
+          // a picture low on a long page is still decoding when the shot is
+          // taken, and the review sees an empty panel that a reader never does.
           await page.evaluate(async () => {
             for (let y = 0; y < document.body.scrollHeight; y += 600) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 50)); }
             window.scrollTo(0, 0);
+          });
+          await page.evaluate(async () => {
+            const waits = [...document.images].map((img) =>
+              img.complete && img.naturalWidth
+                ? Promise.resolve()
+                : img.decode().catch(() => {}));
+            await Promise.race([Promise.all(waits), new Promise((r) => setTimeout(r, 15000))]);
           });
           await page.waitForTimeout(500);
           const file = join(folder, `${key}-${name}.png`);
