@@ -178,7 +178,7 @@ import {
 } from 'lucide-react';
 import { brandVars, displayVars, mapsHref, ratingLine, telHref } from '../site.js';
 import { BrandLogo, EnquiryForm, Img, Stars, Facts, StudioCredit } from './shared.jsx';
-import { onColor } from './hvac/color.js';
+import { fillOf, labelOf, onColor } from './hvac/color.js';
 
 const ICONS = {
   snowflake: Snowflake,
@@ -313,7 +313,7 @@ const btn =
   'inline-flex min-h-[52px] items-center justify-center gap-2 rounded-lg px-6 font-heading text-[16px] font-bold no-underline transition duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary';
 const btnPrimary = `${btn} bg-primary text-[color:var(--on-primary)] hover:bg-primary-deep hover:text-white`;
 const btnOutline = `${btn} border border-line bg-white text-ink hover:border-primary hover:text-[color:var(--pt)]`;
-const btnAccent = `${btn} bg-accent text-[color:var(--on-accent)] hover:brightness-105`;
+const btnAccent = `${btn} bg-[color:var(--accent-fill)] text-[color:var(--on-accent)] hover:brightness-105`;
 const iconTile = 'grid flex-none place-items-center rounded-xl bg-primary/10 text-[color:var(--pt)]';
 const gridBg =
   'bg-[linear-gradient(to_right,color-mix(in_srgb,var(--primary)_9%,transparent)_1px,transparent_1px),linear-gradient(to_bottom,color-mix(in_srgb,var(--primary)_9%,transparent)_1px,transparent_1px)] bg-[size:44px_44px]';
@@ -341,7 +341,7 @@ function GroupIcon({ name, fallback = Wrench, size = 22, className = '' }) {
 function EmergencyStrip({ b, tel }) {
   if (!b.emergency) return null;
   return (
-    <div className="bg-accent text-[color:var(--on-accent)]">
+    <div className="bg-[color:var(--accent-fill)] text-[color:var(--on-accent)]">
       <div className={`${wrap} flex min-h-[44px] items-center justify-between gap-4 py-1.5 text-[14px]`}>
         <p className="flex min-w-0 items-center gap-2.5 font-semibold">
           <Siren size={17} className="flex-none" aria-hidden="true" />
@@ -1160,7 +1160,7 @@ function Home({ b, groups, tel }) {
               <div className={`relative isolate px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-16 ${b.promo.image ? '' : 'lg:flex lg:items-center lg:gap-12'}`}>
                 <div className={`absolute inset-0 -z-10 opacity-40 ${gridBg} [mask-image:linear-gradient(120deg,black,transparent_70%)]`} aria-hidden="true" />
                 <div className="min-w-0 lg:flex-1">
-                  <p className="mb-5 inline-flex items-center gap-2 rounded-full bg-accent px-3.5 py-1.5 font-heading text-[13px] font-bold uppercase tracking-[0.12em] text-[color:var(--on-accent)]">
+                  <p className="mb-5 inline-flex items-center gap-2 rounded-full bg-[color:var(--accent-fill)] px-3.5 py-1.5 font-heading text-[13px] font-bold uppercase tracking-[0.12em] text-[color:var(--on-accent)]">
                     <Sun size={15} aria-hidden="true" /> {b.promo.eyebrow}
                   </p>
                   <h2 className="font-heading text-[clamp(1.9rem,1.35rem+2.1vw,2.85rem)] font-extrabold leading-[1.08] tracking-[-0.025em] [text-wrap:balance]">
@@ -1335,7 +1335,7 @@ function GroupPage({ b, groups, group, tel }) {
     <>
       <BookingCard b={b} groups={groups} title={`${askOf(b).item} ${group.title}`} service={group.title} />
       {b.emergency && (
-        <a href={tel} className="flex gap-4 rounded-2xl bg-accent p-5 text-[color:var(--on-accent)] no-underline">
+        <a href={tel} className="flex gap-4 rounded-2xl bg-[color:var(--accent-fill)] p-5 text-[color:var(--on-accent)] no-underline">
           <Siren size={22} className="mt-0.5 flex-none" aria-hidden="true" />
           <span className="min-w-0">
             <strong className="block font-heading text-[17px]">{b.emergency.title}</strong>
@@ -1547,7 +1547,7 @@ function PlanPage({ b, tel }) {
                 }`}
               >
                 {t.featured && (
-                  <p className="absolute right-6 top-6 rounded-full bg-accent px-3 py-1 font-heading text-[12px] font-bold uppercase tracking-[0.1em] text-[color:var(--on-accent)]">
+                  <p className="absolute right-6 top-6 rounded-full bg-[color:var(--accent-fill)] px-3 py-1 font-heading text-[12px] font-bold uppercase tracking-[0.1em] text-[color:var(--on-accent)]">
                     Recommended
                   </p>
                 )}
@@ -1776,7 +1776,7 @@ function ContactPage({ b, groups, tel }) {
           </div>
           <aside className="grid gap-4">
             {b.emergency && (
-              <a href={tel} className="flex gap-4 rounded-2xl bg-accent p-6 text-[color:var(--on-accent)] no-underline">
+              <a href={tel} className="flex gap-4 rounded-2xl bg-[color:var(--accent-fill)] p-6 text-[color:var(--on-accent)] no-underline">
                 <Siren size={24} className="mt-0.5 flex-none" aria-hidden="true" />
                 <span className="min-w-0">
                   <strong className="block font-heading text-[18px]">{b.emergency.title}</strong>
@@ -1858,7 +1858,8 @@ export default function Hvac({ b, path = '' }) {
     ...brandVars(b.brand),
     '--on-primary': onColor(b.brand.primary),
     '--pt': onColor(b.brand.primary) === '#fff' ? 'var(--primary)' : 'var(--primaryDeep)',
-    '--on-accent': b.brand.accent ? onColor(b.brand.accent) : onColor(b.brand.primary),
+    '--on-accent': labelOf(b.brand.accent || b.brand.primary),
+    '--accent-fill': fillOf(b.brand.accent || b.brand.primary),
   };
 
   return (
