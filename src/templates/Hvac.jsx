@@ -835,7 +835,7 @@ function ClosingBand({ b, tel, title, text, flush = false }) {
 }
 
 /** A page's opening. `panel` stands where the photo would when there is none, so the half beside the words is not left bare. */
-function PageHero({ b, crumbs, eyebrow, title, text, image, imageAlt, icon, panel, children }) {
+function PageHero({ b, crumbs, eyebrow, title, text, image, imageAlt, imageHold = 'object-top', icon, panel, children }) {
   return (
     <section className="relative isolate overflow-hidden border-b border-line bg-surface">
       <div className={`absolute inset-0 -z-10 ${gridBg} [mask-image:radial-gradient(ellipse_at_top_right,black,transparent_70%)]`} aria-hidden="true" />
@@ -874,9 +874,9 @@ function PageHero({ b, crumbs, eyebrow, title, text, image, imageAlt, icon, pane
           {children}
         </div>
         {image ? (
-          // Held by its top edge, so a portrait cut to this frame keeps the person's head.
+          // Held by its top edge unless the page says otherwise, so a portrait cut to this frame keeps the person's head.
           <Img
-            className="aspect-[16/11] w-full rounded-[24px] object-cover object-top shadow-[0_30px_60px_-35px_rgba(11,27,43,0.55)]"
+            className={`aspect-[16/11] w-full rounded-[24px] object-cover ${imageHold} shadow-[0_30px_60px_-35px_rgba(11,27,43,0.55)]`}
             src={image}
             alt={imageAlt}
             sizes="(min-width: 1024px) 45vw, 100vw"
@@ -1356,6 +1356,9 @@ function GroupPage({ b, groups, group, tel }) {
         text={group.intro}
         image={group.image}
         imageAlt={group.imageAlt}
+        // A photo of the work has it standing on the ground, a van, a unit or a panel, with sky or wall above,
+        // so the frame keeps the lower part and cuts from the top.
+        imageHold="object-[center_80%]"
         panel={
           // A group with no list of its own, or a list of one, has nothing to set beside the form without
           // passing a service's own selling points off as services, so the form stands in the hero instead.
