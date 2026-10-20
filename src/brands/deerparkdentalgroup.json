@@ -1,0 +1,467 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "dental",
+  "name": "Deer Park Dental Group",
+  "shortName": "Deer Park Dental Group",
+  "tagline": "Caring for the community through dentistry",
+  "phone": "(281) 930-8744",
+  "email": "info@dpdgsmiles.com",
+  "address": "401 W San Augustine St",
+  "town": "Deer Park",
+  "state": "TX",
+  "zip": "77536",
+  "hours": [
+    ["Mon – Fri", "8 AM – 5 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "cta": {
+    "label": "Request an Appointment",
+    "text": "Call the office at (281) 930-8744 or send the form and one of our staff will get back to you."
+  },
+  "brand": {
+    "primary": "#35582b",
+    "primaryDeep": "#233c1d",
+    "accent": "#92ba4f",
+    "ink": "#112337",
+    "muted": "#5a6472",
+    "surface": "#f6f7f1",
+    "cream": "#eaeee2",
+    "line": "#dfe4d6",
+    "heading": "'Libre Baskerville', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/deerparkdentalgroup/logo.webp",
+    "logoMono": "/brands/deerparkdentalgroup/logo-mono.webp",
+    "logoWidth": 164,
+    "logoHeight": 74,
+    "logoRatio": 2.221,
+    "logoGround": "#ffffff",
+    "logoReads": [0.625, 0.534, 0.083, 0.067, 0.055, 0.534, 0.614, 0.699, 0.795, 0.9, 1.0]
+  },
+  "hero": {
+    "eyebrow": "Dentists in Deer Park, TX",
+    "title": "Caring for the community through dentistry.",
+    "lead": "Dr. Rushi Dave and Dr. Mili Shah see new and returning patients of all ages for general, cosmetic and implant dentistry, in one office on West San Augustine Street.",
+    "image": "/brands/deerparkdentalgroup/hero",
+    "imageAlt": "A boy in glasses having a retainer fitted by a gloved dental team member",
+    "points": [
+      "All major PPO insurances accepted",
+      "Same-day emergency appointments",
+      "Open Monday to Friday, 8 AM to 5 PM"
+    ]
+  },
+  "overview": {
+    "title": "General, cosmetic and implant dentistry for the whole family.",
+    "text": "Pick a treatment to see what it involves, or call and talk it through with our front desk."
+  },
+  "services": [
+    {
+      "slug": "family-dentistry",
+      "title": "Family Dentistry",
+      "icon": "users",
+      "summary": "One office for children, teens and adults.",
+      "text": "Children, teenagers and adults are all seen here, so a household can keep its dental appointments in one place.",
+      "lead": "Deer Park Dental Group treats patients of all ages, from a child's first cleaning to restorative work for adults and seniors, all under one roof.",
+      "image": "/brands/deerparkdentalgroup/family-dentistry",
+      "imageAlt": "A young boy in the dental chair during a check-up",
+      "covers": [
+        { "title": "Fillings and sealants", "text": "Protective sealants over the grooves of back molars, to keep decay-causing bacteria and food particles out." },
+        { "title": "Fluoride treatments", "text": "A quick topical application that strengthens young enamel against the acid that causes decay." },
+        { "title": "Mouthguards", "text": "Custom-fitted athletic mouthguards that protect teeth from trauma during contact sports." },
+        { "title": "Gentle extractions", "text": "Careful removal of a baby tooth that will not come out on its own or is crowding the permanent teeth." }
+      ],
+      "questions": [
+        { "q": "Do you accept young children?", "a": "Yes. Deer Park Dental Group welcomes children, teenagers and adults, and the staff works to make a first visit a gentle one." },
+        { "q": "How often should my family come in?", "a": "At least once every six months. Patients with existing oral health issues may be asked to come more often so progress can be tracked." }
+      ]
+    },
+    {
+      "slug": "general-dentistry",
+      "title": "General Dentistry",
+      "icon": "smile",
+      "summary": "Exams, fillings, extractions and gum care.",
+      "text": "The everyday care that keeps a smile working: cleanings and exams, fillings and sealants, mouthguards, extractions and gum treatment.",
+      "lead": "Regular check-ups are the first line of defence against cavities, gum disease and decay. Catching a problem early keeps the treatment smaller.",
+      "image": "/brands/deerparkdentalgroup/general-dentistry",
+      "imageAlt": "A dentist examining a patient's teeth during a routine visit",
+      "covers": [
+        { "title": "Cleanings and exams", "text": "Routine cleanings that remove plaque and tartar, with a thorough examination each visit." },
+        { "title": "Fillings and sealants", "text": "Cavities repaired and healthy teeth protected from future decay." },
+        { "title": "Mouthguards", "text": "Custom-fitted for athletes and for patients who grind their teeth." },
+        { "title": "Snoring and sleep apnea", "text": "Treatment options aimed at improving sleep quality." },
+        { "title": "Tooth extraction", "text": "Simple and surgical removal, including impacted and angulated wisdom teeth." },
+        { "title": "Periodontics", "text": "Treatment for gum disease so the teeth it supports can be kept." }
+      ],
+      "questions": [
+        { "q": "How often should I schedule a cleaning?", "a": "The American Dental Association recommends a professional cleaning every six months." },
+        { "q": "What does a routine check-up cost?", "a": "It depends on what you need. Call the office and we will give you an estimate, and we accept most major insurance plans and offer financing." }
+      ]
+    },
+    {
+      "slug": "dental-cleanings-and-exams",
+      "title": "Dental Cleanings and Exams",
+      "icon": "clipboard-check",
+      "summary": "A cleaning, an exam and a cancer screening.",
+      "text": "A visit every six months: a review of your history, an oral examination, x-rays where they are needed, and a professional cleaning.",
+      "lead": "At-home brushing misses things. Twice-yearly cleanings and exams let us find cavities, gum disease or oral cancer while they are still small.",
+      "image": "/brands/deerparkdentalgroup/cleanings-and-exams",
+      "imageAlt": "A hygienist cleaning a patient's teeth",
+      "covers": [
+        { "title": "Dental history review", "text": "Your medical and dental history, any concerns you have, and what has changed since the last visit." },
+        { "title": "Oral examination", "text": "Teeth, gums, tongue and other oral tissue checked for decay, gum disease, bite issues and abnormalities." },
+        { "title": "X-rays", "text": "Digital images of the teeth, roots and jawbone where your history and needs call for them." },
+        { "title": "Professional cleaning", "text": "Plaque and hardened tartar removed, teeth polished, and advice on your routine at home." },
+        { "title": "Oral cancer screening", "text": "Part of every routine exam, using OralID fluorescence technology." }
+      ],
+      "questions": [
+        { "q": "How should I prepare for the visit?", "a": "Bring a list of your current medications, conditions and allergies, write down any questions, and arrive a few minutes early for paperwork." }
+      ]
+    },
+    {
+      "slug": "cosmetic-dentistry",
+      "title": "Cosmetic Dentistry",
+      "icon": "gem",
+      "summary": "Whitening, veneers, bonding and contouring.",
+      "text": "Treatment aimed at the look of your teeth and gums: whitening, veneers, bonding, enamel and gum contouring, Invisalign and full smile makeovers.",
+      "lead": "Cosmetic dentistry works on the colour, shape, alignment and size of your teeth. Here it is planned alongside your oral health rather than apart from it.",
+      "image": "/brands/deerparkdentalgroup/cosmetic-dentistry",
+      "imageAlt": "A patient's smile being matched against a shade guide",
+      "covers": [
+        { "title": "Dental bonding", "text": "An affordable repair for minor chips and imperfections, lasting five to ten years with good hygiene." },
+        { "title": "Dental veneers", "text": "Custom shells bonded to the front of the teeth, lasting ten to fifteen years or more with good care." },
+        { "title": "Enamel contouring", "text": "Subtle reshaping of the teeth for better symmetry across the smile." },
+        { "title": "Gum contouring", "text": "Sculpting the gum line, with results that can last a lifetime with proper care." },
+        { "title": "Smile makeovers", "text": "Several treatments planned together as one customised plan." },
+        { "title": "Teeth whitening", "text": "Professional whitening that typically holds for six to twelve months with touch-ups." }
+      ],
+      "questions": [
+        { "q": "What problems can cosmetic dentistry fix?", "a": "Discoloured or stained teeth, chips and cracks, gaps, misaligned or uneven teeth, worn enamel and missing teeth." },
+        { "q": "Does insurance cover it?", "a": "Coverage varies. Most cosmetic treatment is elective, though crowns and Invisalign may be partly covered where they address a functional problem. We help you work through your plan." }
+      ]
+    },
+    {
+      "slug": "dental-implants",
+      "title": "Dental Implants",
+      "icon": "shield-check",
+      "summary": "Titanium posts topped with a crown or bridge.",
+      "text": "A titanium post set into the jaw, an abutment and a custom restoration, replacing a missing tooth from the root up.",
+      "lead": "Implants are made of three parts: the post that fuses to your jawbone, the abutment that connects it, and the custom restoration that replaces the tooth.",
+      "image": "/brands/deerparkdentalgroup/dental-implants",
+      "imageAlt": "A patient in the chair during a dental examination",
+      "covers": [
+        { "title": "Initial consultation", "text": "An examination with digital x-rays, a review of your medical history, a talk about cost, and whether implants are right for you." },
+        { "title": "Bone grafting", "text": "Bone tissue transplanted into the jaw where it has resorbed, to give the implant a stable foundation." },
+        { "title": "Sinus augmentation", "text": "Lifting the sinus and filling the space with a graft so upper-arch implants have bone to sit in." },
+        { "title": "Placing the implants", "text": "Small incisions in the gum and the implants inserted, with a temporary crown, bridge or partial during the three to six month healing stage for patients who are candidates for one." },
+        { "title": "All-on-X and implant-supported dentures", "text": "Implant-retained bridges and dentures for a full arch, without adhesives." }
+      ],
+      "questions": [
+        { "q": "How long do implants last?", "a": "With proper hygiene and regular exams, implants can last twenty years to a lifetime, though the restorations on top need replacing with normal wear." },
+        { "q": "Why choose an implant over other options?", "a": "It keeps the remaining teeth from drifting, supports the facial muscles, and stimulates the jawbone so it does not resorb." }
+      ]
+    },
+    {
+      "slug": "invisalign",
+      "title": "Invisalign",
+      "icon": "smile",
+      "summary": "Clear aligners, scanned with iTero.",
+      "text": "Clear custom aligner trays in SmartTrack material, designed from an iTero scan rather than a tray of impression material.",
+      "lead": "Invisalign straightens teeth with clear removable trays. We scan your teeth with the iTero intraoral scanner, so there are no impressions to sit through.",
+      "image": "/brands/deerparkdentalgroup/invisalign",
+      "imageAlt": "An intraoral scanner being used during an appointment",
+      "covers": [
+        { "title": "Your consultation", "text": "Dr. Dave or Dr. Shah assesses your alignment and oral health, using cone beam imaging, and explains the treatment." },
+        { "title": "Designing the aligners", "text": "An iTero scan builds a 3D model of your teeth, and the trays are made from it." },
+        { "title": "Wearing the trays", "text": "At least 22 hours a day, out for meals and brushing, with fewer appointments than braces." },
+        { "title": "What it corrects", "text": "Crowding, gaps, overbites, underbites and crossbites." }
+      ],
+      "questions": [
+        { "q": "How long does treatment take?", "a": "Many Invisalign treatments are finished in 12 to 18 months." },
+        { "q": "What does Invisalign cost?", "a": "On average treatment falls between $4,000 and $6,000, depending on how complex the case is and how long it runs. We review your own figure at the consultation." },
+        { "q": "Can I spread the cost?", "a": "Yes. Many plans cover part of the treatment, financing plans are available through outside providers, and the office also offers no-interest in-house payment plans." }
+      ]
+    },
+    {
+      "slug": "emergency-dentistry",
+      "title": "Emergency Dentistry",
+      "icon": "stethoscope",
+      "summary": "Same-day appointments for urgent pain.",
+      "text": "Same-day appointments for severe toothache, a knocked-out tooth, a broken restoration or an abscess.",
+      "lead": "A dental emergency does not wait for the next opening. Call (281) 930-8744 and we will do everything we can to see you the same day.",
+      "image": "/brands/deerparkdentalgroup/emergency-dentistry",
+      "imageAlt": "A dentist talking with a patient in the treatment room",
+      "covers": [
+        { "title": "What counts as an emergency", "text": "Severe toothache or swelling, cracked, chipped or broken teeth, a knocked-out tooth, lost fillings or crowns, gum infections and abscesses, and broken braces or wires." },
+        { "title": "Before you arrive with a toothache", "text": "Rinse with warm water, floss gently to clear food particles, hold a cold compress against the swelling, and take an over-the-counter pain reliever rather than placing aspirin on the gum." },
+        { "title": "A knocked-out tooth", "text": "Pick it up by the crown rather than the root, rinse it gently without scrubbing, put it back in the socket if you can or keep it in milk, and come straight in." },
+        { "title": "Diagnosis on the spot", "text": "Cone beam imaging, the iTero scanner and panoramic x-rays, so the cause is found before treatment starts." }
+      ],
+      "questions": [
+        { "q": "Is there a charge to be seen in an emergency?", "a": "New patients can be seen under the $59 emergency exam and x-ray special." }
+      ]
+    },
+    {
+      "slug": "root-canal-therapy",
+      "title": "Root Canal Therapy",
+      "icon": "heart",
+      "summary": "Saving a tooth with infected pulp.",
+      "text": "Infected or inflamed pulp removed, the inside of the tooth cleaned and sealed, and the tooth rebuilt with a custom crown.",
+      "lead": "A root canal treats a tooth whose inner pulp has become infected or inflamed, so the natural tooth can be kept rather than pulled.",
+      "image": "/brands/deerparkdentalgroup/root-canal",
+      "imageAlt": "A patient receiving treatment in the dental chair",
+      "covers": [
+        { "title": "Why it happens", "text": "Deep decay, a cracked or fractured tooth, trauma, or repeated work on the same tooth." },
+        { "title": "The treatment", "text": "The infected pulp is removed, the inside of the tooth cleaned and sealed, and its structure restored with a custom crown." },
+        { "title": "Rotary endodontics", "text": "A rotary handpiece shortens the treatment and makes it more comfortable than hand instruments alone." },
+        { "title": "Imaging", "text": "Cone beam imaging and the iTero intraoral scanner are used to plan the treatment precisely." }
+      ],
+      "questions": [
+        { "q": "What are the signs I might need one?", "a": "Persistent tooth pain, particularly when biting or putting pressure on the tooth, is one of the signs to have looked at." },
+        { "q": "Why not just pull the tooth?", "a": "Keeping the natural tooth maintains your chewing and alignment, which is why it is preferred to extraction where the tooth can be saved." }
+      ]
+    },
+    {
+      "slug": "dental-crowns",
+      "title": "Dental Crowns",
+      "icon": "shield",
+      "summary": "A cap that covers and strengthens a tooth.",
+      "text": "A custom-made cap over a damaged tooth, restoring its shape and strength and blending with the teeth beside it.",
+      "lead": "A crown covers and protects a tooth that decay, injury or wear has weakened, reinforcing what is left of the enamel.",
+      "image": "/brands/deerparkdentalgroup/dental-crowns",
+      "imageAlt": "A dentist preparing a crown restoration",
+      "covers": [
+        { "title": "Porcelain", "text": "Natural-looking, suited to front teeth." },
+        { "title": "Porcelain fused to metal", "text": "Strong and durable, suited to back teeth." },
+        { "title": "All-ceramic", "text": "Metal-free and biocompatible, for patients with allergies." },
+        { "title": "Gold and metal", "text": "Very durable, used on molars that take heavy chewing." },
+        { "title": "Zirconia", "text": "A premium option with exceptional strength and longevity." }
+      ],
+      "questions": [
+        { "q": "When is a crown the right answer?", "a": "Severe decay a filling cannot fix, or a cracked or fractured tooth that needs reinforcing." }
+      ]
+    },
+    {
+      "slug": "dental-veneers",
+      "title": "Dental Veneers",
+      "icon": "gem",
+      "summary": "Thin shells bonded over the front teeth.",
+      "text": "Thin porcelain or composite shells bonded to the front of the teeth, covering stains, chips, small gaps and unevenness.",
+      "lead": "Veneers are custom-crafted shells bonded to the front surfaces of your teeth. They are made to look and feel like natural enamel.",
+      "covers": [
+        { "title": "What they correct", "text": "Discoloration, chipped teeth, small gaps and uneven shapes, often in a few visits." },
+        { "title": "Preparing the teeth", "text": "A small amount of enamel is removed, usually less than the width of a fingernail, so the veneer sits flush." },
+        { "title": "Who they suit", "text": "Healthy teeth and gums, enough natural enamel to bond to, no habit of grinding or clenching, and a steady hygiene routine." },
+        { "title": "Lumineers", "text": "Traditional veneers and Lumineers are both offered." }
+      ],
+      "questions": [
+        { "q": "How long do veneers last?", "a": "Ten to fifteen years or more with good care." }
+      ]
+    },
+    {
+      "slug": "teeth-whitening",
+      "title": "Teeth Whitening",
+      "icon": "smile",
+      "summary": "Philips ZOOM! in office or take-home trays.",
+      "text": "In-office Philips ZOOM! whitening or custom take-home trays, after an exam that checks whitening is safe for your teeth.",
+      "lead": "Professional whitening is matched to your oral health rather than sold off a shelf, and starts with a full exam to protect the enamel and limit sensitivity.",
+      "covers": [
+        { "title": "In-office Philips ZOOM!", "text": "An LED light system with whitening gel. Most patients improve by up to eight shades in an hour." },
+        { "title": "Take-home trays", "text": "Custom trays made from impressions of your teeth, with professional-grade gel. Results show in the first week and finish by the second." },
+        { "title": "What stains teeth", "text": "Coffee, tea, cola and red wine, dark berries, tomato sauces and curry, tobacco, and ageing enamel that thins to reveal darker dentin." }
+      ],
+      "questions": [
+        { "q": "How long do the results last?", "a": "Typically six to twelve months when maintained with proper care and touch-ups." }
+      ]
+    },
+    {
+      "slug": "periodontal-disease",
+      "title": "Periodontal Therapy",
+      "icon": "shield-check",
+      "summary": "Treatment for gum disease and its stages.",
+      "text": "Diagnosis and treatment of gum disease, from scaling and root planing to open flap debridement, kept in the same office as your general care.",
+      "lead": "Periodontal care covers the gums and the bone that hold your teeth in place. Untreated gum disease leads to tooth loss and bone deterioration.",
+      "image": "/brands/deerparkdentalgroup/periodontal",
+      "imageAlt": "A hygienist treating a patient's gums",
+      "covers": [
+        { "title": "Root planing and scaling", "text": "Plaque and tartar removed from below the gum line, where the bacteria feeding on sugars produce the acid that eats away at gum tissue." },
+        { "title": "Periodontal therapy", "text": "Ongoing treatment to hold the disease back and keep the supporting structures healthy." },
+        { "title": "Open flap debridement", "text": "A surgical clean of the root surfaces where the pockets are too deep to reach otherwise." },
+        { "title": "Gum disease treatment", "text": "Diagnosis and monitoring with cone beam imaging and the iTero intraoral scanner." }
+      ],
+      "questions": [
+        { "q": "What are the warning signs?", "a": "Loose teeth, gums that bleed when you brush or floss, chronic bad breath or a metallic taste, and red, swollen or tender gums." }
+      ]
+    },
+    {
+      "slug": "tooth-extraction",
+      "title": "Tooth Extraction",
+      "icon": "key",
+      "summary": "Simple and surgical removals, including wisdom teeth.",
+      "text": "Removal of a tooth that is badly decayed, fractured beyond repair, infected or crowding the others, including wisdom teeth.",
+      "lead": "We work to save a natural tooth wherever we can. When removal is the better option for your oral health, it is done under local anesthesia.",
+      "covers": [
+        { "title": "Simple extraction", "text": "For a tooth visible above the gum line: quick, non-surgical and done under local anesthesia." },
+        { "title": "Surgical extraction", "text": "For a tooth that has not fully erupted or has broken below the gum line." },
+        { "title": "Wisdom teeth", "text": "Removal of impacted or angulated wisdom teeth before they crowd or infect the teeth around them." },
+        { "title": "Socket preservation", "text": "Preserving the socket after a removal so the site is ready for what comes next." }
+      ]
+    },
+    {
+      "slug": "dentures",
+      "title": "Dentures",
+      "icon": "smile",
+      "summary": "Full, partial and implant-supported.",
+      "text": "Custom full, partial and implant-supported dentures, fitted to your own bite.",
+      "lead": "Missing teeth make eating and speaking harder. Dentures are made to match your natural bite, with several options depending on how many teeth are gone.",
+      "covers": [
+        { "title": "Full dentures", "text": "An entire upper or lower arch replaced, with replacement teeth set into a flesh-coloured acrylic base held by natural suction and fit." },
+        { "title": "Partial dentures", "text": "Gaps filled where healthy teeth remain, anchored to the adjacent teeth with discreet clasps so the rest do not shift." },
+        { "title": "Implant-supported dentures", "text": "Attached to titanium posts in the jaw, which prevents bone deterioration, stops slipping and does away with adhesives." }
+      ]
+    }
+  ],
+  "process": {
+    "title": "What a visit looks like",
+    "steps": [
+      { "title": "History and concerns", "text": "We go through your medical and dental history, what has changed since the last visit, and anything you want looked at." },
+      { "title": "Examination and imaging", "text": "Teeth, gums and soft tissue are examined, with digital x-rays, panoramic x-rays or cone beam imaging where they are needed." },
+      { "title": "Options explained", "text": "Dr. Dave or Dr. Shah explains what they found and what the treatment options are, before anything starts." },
+      { "title": "Treatment and cost", "text": "Your plan is built around your needs, your budget and your goals, and we file your insurance claim on your behalf." }
+    ]
+  },
+  "affiliations": {
+    "title": "Insurance we accept",
+    "items": [
+      "Aetna",
+      "AlwaysCare",
+      "Assurant",
+      "BlueCross BlueShield",
+      "Ameritas",
+      "Cigna",
+      "Dearborn National",
+      "Delta Dental",
+      "DentalSelect",
+      "GEHA",
+      "Guardian",
+      "Great-West Healthcare",
+      "Humana",
+      "Lincoln Financial Group",
+      "MetLife",
+      "Principal"
+    ]
+  },
+  "about": {
+    "title": "A Deer Park dental office for the whole family.",
+    "text": [
+      "Dr. Rushi Dave and Dr. Mili Shah are committed to providing excellent dentistry in a comfortable environment, using their education and growing skill sets to protect and enhance your smile. Both continue their education to stay on top of the latest advancements in modern dentistry.",
+      "Your care is personalised here. The team addresses every question and concern, and your oral health needs, goals and priorities are the focus of your treatment plan.",
+      "The office is equipped with intraoral cameras, panoramic x-rays, cone beam imaging and rotary endodontics, so treatment can be planned accurately and carried out comfortably. New and returning patients of all ages are welcome, from Deer Park and from Fresno, Houston, Alvin, Friendswood, Webster, Clear Lake and League City."
+    ],
+    "image": "/brands/deerparkdentalgroup/about",
+    "imageAlt": "A dentist talking with a patient in the office",
+    "values": [
+      { "title": "Transparency", "text": "Procedures and options are explained before treatment begins, so you can decide with the facts in front of you." },
+      { "title": "Everything under one roof", "text": "Preventive, cosmetic, restorative, periodontal and emergency care are all handled in this office." },
+      { "title": "Comfort first", "text": "Patient comfort and satisfaction come first, from a nervous child to an adult who has put off a visit." }
+    ]
+  },
+  "team": [
+    {
+      "name": "Dr. Rushi Dave",
+      "role": "DMD, FAGD, FICOI",
+      "bio": "Grew up in Sugar Land and decided on dentistry during his own years of braces, root canal and crown work. He completed a Bachelor of Science at Texas A&M University cum laude, earned his Doctorate of Dental Medicine at the University of Pittsburgh, and completed a one-year general practice residency in Brooklyn, New York focused on implant dentistry. He is a member of the Academy of General Dentistry, the International Congress of Oral Implantologists and the Academy of Osseointegration, and recently received his fellowship from the ICOI and the Academy of General Dentistry."
+    },
+    {
+      "name": "Dr. Mili Shah",
+      "role": "DMD",
+      "bio": "Followed her childhood dream into dentistry after tagging along to her sister's appointments and shadowing a dentist in high school, and earned her doctorate from Tufts University School of Dental Medicine in Boston. A member of the American Academy of General Dentistry, the Texas Academy of General Dentistry and the Spear Study Club, she keeps up with general dentistry, technology and facial esthetics through continuing education. In her words: \"I feel honored that my patients place their trust in me, and I take my responsibility and their health seriously. I try to put myself in the shoes of the patient and believe in the importance of education to help them make the best choices for their oral health.\""
+    }
+  ],
+  "faqs": [
+    { "q": "Does Deer Park Dental Group accept children?", "a": "Yes. The practice accepts new and returning patients of all ages, including children, from Deer Park and the surrounding towns." },
+    { "q": "Do you offer screening for oral cancer?", "a": "Yes. Oral cancer screening is part of every routine dental exam, using OralID screening, which uses the same fluorescence technology as other screening devices." },
+    { "q": "Do you offer emergency dentistry?", "a": "Yes. Dr. Dave and Dr. Shah will do everything they can to see you as soon as possible. Call (281) 930-8744 if you are in a dental emergency." },
+    { "q": "How often should I come in for an exam?", "a": "At least once every six months. Patients with existing oral health issues may be asked to come more often, so treatment can be done as needed and progress tracked." },
+    { "q": "What insurance do you take?", "a": "All major PPO insurances, and the office files your claims on your behalf to make the most of your benefits." },
+    { "q": "How do I book an appointment?", "a": "Call (281) 930-8744, send the form on the contact page, or use the practice's online booking portal." }
+  ],
+  "resources": [
+    {
+      "title": "Notice of Privacy Practices",
+      "text": "How the practice uses and protects your health information.",
+      "href": "https://dpdgsmiles.com/wp-content/uploads/2026/02/05-NOTICE-OF-PRIVACY-PRACTICES-1.pdf"
+    }
+  ],
+  "serviceArea": [
+    "Deer Park",
+    "Pasadena",
+    "Cedar Bayou",
+    "La Porte",
+    "Fresno",
+    "Houston",
+    "Alvin",
+    "Friendswood",
+    "Webster",
+    "Clear Lake",
+    "League City"
+  ],
+  "facts": [
+    {
+      "heading": "Current specials",
+      "items": [
+        "$159 new patient special: comprehensive exam, x-rays and a regular cleaning",
+        "$59 emergency exam and x-ray, new patients only"
+      ]
+    },
+    {
+      "heading": "Insurance and financing",
+      "items": [
+        "All major PPO insurances accepted, with claims filed on your behalf",
+        "Low-interest payment plans and third-party financing through CareCredit",
+        "No-interest in-house payment plans on request"
+      ]
+    },
+    {
+      "heading": "Payment methods",
+      "text": "Major credit cards, cash and checks, plus online payment through the patient portal."
+    },
+    {
+      "heading": "Technology in the office",
+      "items": [
+        "Digital x-rays, at much less radiation than film",
+        "Panoramic x-ray for a 360-degree view of teeth, sinuses and jaws",
+        "iTero intraoral scanner, with a new disposable cover each time",
+        "Cone beam imaging for a 3D scan of the maxillofacial structure",
+        "Rotary endodontics handpiece for root canal treatment",
+        "OralID fluorescence screening for oral cancer"
+      ]
+    },
+    {
+      "heading": "Memberships and fellowships",
+      "items": [
+        "Fellow, International Congress of Oral Implantologists (Dr. Dave)",
+        "Fellow, Academy of General Dentistry (Dr. Dave)",
+        "Academy of Osseointegration (Dr. Dave)",
+        "American Academy of General Dentistry and Texas Academy of General Dentistry (Dr. Shah)",
+        "Spear Study Club (Dr. Shah)"
+      ]
+    },
+    {
+      "heading": "Getting here",
+      "items": [
+        "From the north or west: Highway 225 into Deer Park",
+        "From League City or Clear Lake: the Gulf Freeway onto Beltway 8",
+        "From local neighborhoods: a short distance off Center Street"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/people/Deer-Park-Dental-Group/61563435685889",
+        "Instagram: instagram.com/deerparkdentalgroup"
+      ]
+    }
+  ]
+}

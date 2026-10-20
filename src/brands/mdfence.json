@@ -1,0 +1,419 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "MD Fence Co",
+  "shortName": "MD Fence Co",
+  "summary": "Residential, commercial and farm fencing, gates and outdoor living structures built across the Houston area.",
+  "phone": "(832) 233-4570",
+  "email": "info@mdfenceco.com",
+  "address": "8913 Jackrabbit Rd",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77095",
+  "rating": 4.9,
+  "reviewCount": 133,
+  "since": 2018,
+  "hours": [
+    ["Mon – Fri", "8 AM – 6 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#2f4046",
+    "primaryDeep": "#1d2a2f",
+    "accent": "#b07a3c",
+    "ink": "#1b2326",
+    "muted": "#56646a",
+    "surface": "#f3f3ec",
+    "line": "#dcdcd0",
+    "heading": "'Oswald', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap",
+    "logo": "/brands/mdfence/logo.webp",
+    "logoMono": "/brands/mdfence/logo-mono.webp",
+    "logoWidth": 83,
+    "logoHeight": 84,
+    "logoRatio": 0.992,
+    "logoGround": "#ffffff",
+    "logoReads": [0.692, 0.396, 0.341, 0.413, 0.671, 0.725, 0.734, 0.807, 0.876, 0.926, 1.0]
+  },
+  "hero": {
+    "eyebrow": "Fencing contractor in Houston, Texas",
+    "title": "Your trusted Houston",
+    "titleAccent": "fence contractor.",
+    "lead": "A fully insured, family-operated fence company building residential, commercial and farm fences, gates and outdoor living structures across the Houston area. Quotes are free.",
+    "image": "/brands/mdfence/hero",
+    "imageAlt": "A horizontal Brazilian ipe privacy fence wrapping the corner of a front yard above a planter of ferns"
+  },
+  "groups": [
+    {
+      "slug": "residential-fencing",
+      "title": "Residential Fencing",
+      "icon": "home",
+      "summary": "Wood, wrought iron, chain link and specialty fences for Houston homes.",
+      "intro": "Whether you want to enhance curb appeal, add security or maximize privacy, you can tailor your fence to suit your needs. We carry a wide range of quality fencing materials, and our fence consultants guide you through the choice from first measurement to installation.",
+      "image": "/brands/mdfence/residential",
+      "imageAlt": "A tall board wood privacy fence behind a planted bed",
+      "services": [
+        {
+          "slug": "wood-fences",
+          "title": "Wood Fences",
+          "icon": "home",
+          "text": "From classic picket fences to modern horizontal designs, our wood fences are built to complement your property and last in Houston weather.",
+          "points": [
+            "Pine, western red cedar and Brazilian ipe",
+            "Board on board, shadow box, stockade and horizontal styles",
+            "Spindle top, lattice top, dog ear picket and gothic picket",
+            "Heights, widths and finishes customized to your property"
+          ]
+        },
+        {
+          "slug": "wrought-iron-fences",
+          "title": "Wrought Iron Fences",
+          "icon": "shield",
+          "text": "Wrought iron is known for exceptional strength and needs very little maintenance, so it holds its value and its looks for years.",
+          "points": [
+            "2 rail flat top, 3 rail flush bottom and 3 rail extended bottom",
+            "Puppy picket, spear top, staggered and alternating picket patterns",
+            "Lifetime workmanship warranty on all wrought iron fences we install"
+          ]
+        },
+        {
+          "slug": "chain-link-fences",
+          "title": "Chain Link Fences",
+          "icon": "cable",
+          "text": "An affordable, durable and dependable choice. The galvanized coating stands up to harsh Houston weather while resisting rust and corrosion.",
+          "points": [
+            "Privacy slats and PVC coatings available",
+            "Galvanized posts, rails and wire",
+            "A popular choice for residential and commercial pool areas"
+          ]
+        },
+        {
+          "slug": "specialty-fences",
+          "title": "Specialty Fences",
+          "icon": "leaf",
+          "text": "Low-maintenance composite and framed systems that blend with your property's look and need little more than an occasional wash.",
+          "points": [
+            "FenceTrac framework in powder-coated aluminum, with wood, metal, vinyl or composite infill",
+            "Trex composite panels made from 95% recycled materials",
+            "Full privacy, partial privacy or open concept depending on the infill",
+            "Lifetime workmanship warranty on all specialty fences"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "commercial-fencing",
+      "title": "Commercial Fencing",
+      "icon": "building",
+      "summary": "Commercial-grade chain link, wrought iron, wood and custom fabrication.",
+      "intro": "Whether you need to define boundaries, control access or improve how a property looks, we have a commercial fence for it. We build for local businesses, commercial facilities and the Texas Department of Transportation, and we travel across the state for large projects.",
+      "image": "/brands/mdfence/commercial",
+      "imageAlt": "A black ornamental steel fence in front of a church building",
+      "services": [
+        {
+          "slug": "commercial-chain-link-fences",
+          "title": "Commercial Chain Link Fences",
+          "icon": "cable",
+          "text": "Cost-effective security that does not give up durability, available in a range of heights and grades to stop intruders climbing over or cutting through.",
+          "points": [
+            "Standard galvanized or black and green PVC-coated mesh",
+            "Commercial and industrial posts are pipe rather than tubing",
+            "9 or 11 1/2 gauge fabric on commercial and industrial fences",
+            "Barbed wire and razor wire options"
+          ]
+        },
+        {
+          "slug": "commercial-wrought-iron-fences",
+          "title": "Commercial Wrought Iron Fences",
+          "icon": "shield",
+          "text": "Intricate designs and durable construction that give a business a boundary with curb appeal and real security.",
+          "points": [
+            "Strong posts, rails and decorative pickets",
+            "Security and boundary fencing for commercial property",
+            "Lifetime workmanship warranty on wrought iron we install"
+          ]
+        },
+        {
+          "slug": "commercial-wood-fences",
+          "title": "Commercial Wood Fences",
+          "icon": "home",
+          "text": "A timeless look with the privacy and security a commercial property needs, built custom for the site."
+        },
+        {
+          "slug": "custom-fabrication",
+          "title": "Custom Fabrication",
+          "icon": "settings",
+          "text": "When a standard panel will not do, our team fabricates to your design, working through materials, colors and details with you.",
+          "points": ["Custom wrought iron work built to your drawings", "Handled from design to completion"]
+        }
+      ]
+    },
+    {
+      "slug": "farm-fencing",
+      "title": "Farm and Ranch Fencing",
+      "icon": "leaf",
+      "summary": "Ranch rail, cattle and boundary fencing for farms and acreage.",
+      "intro": "Keeping livestock safe and secure matters most, so our agricultural fences are built to take what rural property gives them. From three-rail ranch-style fences to cattle fencing, we build strong, long-lasting fences from quality materials.",
+      "image": "/brands/mdfence/farm",
+      "imageAlt": "A three-rail wood ranch fence running along a grass pasture",
+      "services": [
+        {
+          "slug": "ranch-rail-fencing",
+          "title": "Ranch Rail Fencing",
+          "icon": "leaf",
+          "text": "Wood posts and rails in the styles ranches here have always used, with a classic look that is hard to beat.",
+          "points": [
+            "2 rail, 3 rail and 4 rail, with or without wire",
+            "Crossbuck, with or without wire",
+            "Cedar and pressure-treated pine"
+          ]
+        },
+        {
+          "slug": "cattle-fencing",
+          "title": "Cattle Fencing",
+          "icon": "shield",
+          "text": "Several strands of barbed wire secured to the posts stop cattle leaning on the fence and getting out.",
+          "points": ["Woven wire options that resist impact from animals", "Little upkeep once it is in"]
+        },
+        {
+          "slug": "boundary-fencing",
+          "title": "Boundary Fencing",
+          "icon": "ruler",
+          "text": "Marks property lines clearly and gives a visible deterrent against unauthorized access to agricultural land."
+        },
+        {
+          "slug": "decorative-farm-fencing",
+          "title": "Decorative Farm Fencing",
+          "icon": "sun",
+          "text": "A picturesque entrance or decorative accents around parts of the property, balancing looks with the job the fence has to do."
+        }
+      ]
+    },
+    {
+      "slug": "gates",
+      "title": "Gates and Access Control",
+      "icon": "shield",
+      "summary": "Custom, ranch, estate and cantilever gates, automation and access control.",
+      "intro": "A gate completes the fence and makes the entrance to your home or business. Ours are built with durable materials and craftsmanship to take daily use, in anything from a sleek modern design to a timeless classic.",
+      "image": "/brands/mdfence/gates",
+      "imageAlt": "A modern horizontal-slat driveway gate at the side of a house",
+      "services": [
+        {
+          "slug": "custom-gates",
+          "title": "Custom Gates",
+          "icon": "settings",
+          "text": "Bring a design or an idea and our team builds it, in a range of materials and styles."
+        },
+        {
+          "slug": "ranch-gates",
+          "title": "Ranch Gates",
+          "icon": "leaf",
+          "text": "Rustic, charming gates that accentuate a front drive and stand up to the weather on rural and countryside property."
+        },
+        {
+          "slug": "estate-gates",
+          "title": "Estate Gates",
+          "icon": "building",
+          "text": "Wrought iron estate gates built with attention to detail, adding curb appeal and security to a large property."
+        },
+        {
+          "slug": "cantilever-gates",
+          "title": "Cantilever Gates",
+          "icon": "ruler",
+          "text": "Trackless sliding gates that run smoothly and quietly, suited to uneven surfaces and high-traffic entrances."
+        },
+        {
+          "slug": "gate-automation",
+          "title": "Gate Automation",
+          "icon": "zap",
+          "text": "Automatic gate systems that give you easy access while keeping the property secure."
+        },
+        {
+          "slug": "access-control",
+          "title": "Access Control",
+          "icon": "circuit",
+          "text": "Control who comes onto the property and restrict unauthorized entry.",
+          "points": ["Keypad entry systems", "Card readers"]
+        },
+        {
+          "slug": "custom-fabricated-wrought-iron-gates",
+          "title": "Custom Fabricated Wrought Iron Gates",
+          "icon": "wrench",
+          "text": "Hand-built wrought iron gates, from intricate scrollwork to sleek contemporary designs."
+        }
+      ]
+    },
+    {
+      "slug": "outdoor-living",
+      "title": "Outdoor Living",
+      "icon": "sun",
+      "summary": "Arbors, pergolas, decks, carports and handrails for Houston properties.",
+      "intro": "We design and install outdoor living structures custom to your property, whether you want to improve how it looks or build a space for entertaining. Every one is built from high-quality materials with attention to the detail.",
+      "image": "/brands/mdfence/outdoor",
+      "imageAlt": "A cedar pergola over a patio with a hanging light",
+      "services": [
+        {
+          "slug": "arbors-and-pergolas",
+          "title": "Arbors and Pergolas",
+          "icon": "sun",
+          "text": "Structures that add character to a backyard garden or front entry and give you shade to enjoy the outdoors in."
+        },
+        {
+          "slug": "decks",
+          "title": "Decks",
+          "icon": "home",
+          "text": "Expertly crafted decks for a quiet spot to relax or a spacious area to entertain, built to last."
+        },
+        {
+          "slug": "carports",
+          "title": "Carports",
+          "icon": "car",
+          "text": "Durable shelter that protects vehicles from the elements and stands up to the harshest weather."
+        },
+        {
+          "slug": "handrails",
+          "title": "Handrails",
+          "icon": "wrench",
+          "text": "Custom stair railings, balcony guards and outdoor handrails in wrought iron and steel."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Service first, quality always.",
+    "text": [
+      "MD Fence Co is a family-operated, fully insured residential and commercial fencing contractor, and we have been installing fences in the Houston area since 2018.",
+      "Our dedicated crews have over 20 years of combined experience in the fence industry and advanced carpentry. We consistently rank among the top Houston fence contractors for our customer service, and we are proud to be Houston's trusted fence contractor for the Texas Department of Transportation.",
+      "Whether you want a custom-designed fence to increase the value of your property or to replace an outdated one, contact us to speak with one of our fence consultants, who will guide you through the process."
+    ],
+    "image": "/brands/mdfence/about",
+    "imageAlt": "A new wood privacy fence along a side yard path",
+    "values": [
+      {
+        "title": "Accountability",
+        "text": "We take full accountability for our work, ensuring complete satisfaction with every project."
+      },
+      {
+        "title": "Honesty",
+        "text": "Count on transparent and truthful communication throughout every step of your project."
+      },
+      {
+        "title": "Trust",
+        "text": "Our dedication is to deliver on promises and build lasting relationships based on trust."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How long have you been installing fences in Houston?",
+      "a": "We have been installing fences in the Houston area since 2018. Since then we have established ourselves as one of the most reliable, most trusted fencing contractors in the area."
+    },
+    {
+      "q": "Are you licensed and insured to install fences in Houston?",
+      "a": "We meet all licensing and insurance requirements for each municipality where we install fences. Each municipality has different requirements for contractors, so speak with us directly about the requirements for your town. We are happy to provide proof of insurance and licensure information."
+    },
+    {
+      "q": "Do you offer a warranty?",
+      "a": "Yes. We use professional-grade materials from high-quality manufacturers, so in most cases you are protected by the manufacturer warranty on the materials, and we offer a workmanship warranty on all residential and commercial fences we install. Talk to our fence experts for the full details on your specific project."
+    },
+    {
+      "q": "How much does a new fence cost?",
+      "a": "Prices depend on the type of fence, how much fencing you need, and the style, height and options you choose. We provide fencing quotes for free, so reach out through our online form or give us a call and we will plan a consultation."
+    },
+    {
+      "q": "How long will it take to get my fence installed?",
+      "a": "Generally it takes a few days at most for one of our fence experts to reach your property, walk it and give you a detailed estimate. Once you approve the estimate we can often install within one to three weeks, though specially ordered materials, styles, colors or add-ons can delay a start. Check with our office about your specific project."
+    },
+    {
+      "q": "What is the most popular type of fence in Houston?",
+      "a": "Chain link, wrought iron and wood fences are all very popular here. The most popular styles are the 3-rail black wrought iron fence, used for perimeter fencing, pools and decorative work, and the standard 6 ft. wood privacy fence."
+    },
+    {
+      "q": "Do I need a permit to get a fence installed?",
+      "a": "Every local municipality has its own requirements, and the height, placement or purpose of the fence can change whether a permit is needed. There are HOA considerations in some areas too. The best way to get a specific answer is to call your town building code office, and we are happy to guide you through the process."
+    },
+    {
+      "q": "Do I need a survey done before installing a fence?",
+      "a": "Fence placement is ultimately the customer's responsibility, and moving a fence after installation can be costly, so a survey is never a bad idea. In many cases property lines are clear and well marked and no official survey is needed, but some municipalities do require one."
+    },
+    {
+      "q": "What time of year is best to install a fence in Houston?",
+      "a": "There is no bad time of year. We build fences across the Houston area all year. Some times are busier than others, so reach out to find out what the current schedule looks like."
+    },
+    {
+      "q": "Do you have fence materials on site to purchase?",
+      "a": "Yes. We have many fence materials and styles available for purchase on-site at our company office and yard in Houston, from nails, wood and concrete to some of the tools for the job. Whether you are a contractor or a property owner, our team can help."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Warranty",
+      "items": [
+        "Lifetime workmanship warranty on all residential fences",
+        "Lifetime workmanship warranty on all specialty and wrought iron fences we install",
+        "Workmanship warranty on all commercial fences we install",
+        "Gate installations warrantied for adjustments for 90 days after installation",
+        "Manufacturer warranties on fencing materials in most cases, depending on the type and manufacturer"
+      ]
+    },
+    {
+      "heading": "Licensed and insured",
+      "text": "A fully insured, family-operated company that meets the licensing and insurance requirements of each municipality where it installs. Proof of insurance and licensure is provided on request."
+    },
+    {
+      "heading": "Association",
+      "text": "A long-standing member of the American Fence Association, the fence industry's largest resource for contractors and the public since 1962."
+    },
+    {
+      "heading": "Texas Department of Transportation",
+      "text": "Houston's trusted fence contractor for the Texas Department of Transportation."
+    },
+    {
+      "heading": "Experience",
+      "items": [
+        "Installing fences in the Houston area since 2018",
+        "Crews with over 20 years of combined experience in fencing and advanced carpentry",
+        "Over 6 years of experience designing and installing outdoor living structures"
+      ]
+    },
+    {
+      "heading": "Our three-step process",
+      "items": [
+        "Measure your property: a team member measures so the solution is precise",
+        "Select a fence style: we guide you to the best style for your property",
+        "Delivery and installation: a high-quality installation built to last"
+      ]
+    },
+    {
+      "heading": "Estimates",
+      "text": "Quotes are free, by phone, email or the online estimate form. A fence expert walks your property, takes measurements and checks for obstructions before pricing the job."
+    },
+    {
+      "heading": "Fence materials for sale",
+      "text": "We supply professional-grade fencing materials to contractors and homeowners doing their own installs, available at our Houston office and yard."
+    },
+    {
+      "heading": "Commercial work across Texas",
+      "text": "Based in Houston and travelling throughout the state for commercial projects, with jobs completed as far away as Amarillo."
+    },
+    {
+      "heading": "Find us online",
+      "items": ["Facebook: facebook.com/MDFenceCo", "Nextdoor: nextdoor.com/pages/md-fence-co-houston-tx"]
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "River Oaks",
+    "Piney Point Village",
+    "Hunters Creek Village",
+    "Bunker Hill Village",
+    "West University Place",
+    "Bellaire",
+    "Houston Heights",
+    "Cypress"
+  ]
+}
