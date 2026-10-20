@@ -464,7 +464,7 @@ def build(prospect, root, slug):
             if not s["text"]:
                 continue
             icon = next((k for k, p in compose.ICONS.get(kind) or compose.ICONS["hvac"] if re.search(p, s["title"], re.I)), "wrench")
-            group = {"slug": compose.slugify(s["title"]), "title": s["title"], "icon": icon, "summary": compose.trim(s["text"], 140) or s["text"], "intro": s["text"]}
+            group = {"slug": compose.slugify(s["title"]), "title": s["title"], "icon": icon, "summary": compose.card_line(s["text"], 140) or s["text"], "intro": s["text"]}
             if s["title"] in named or wide:
                 group["image"] = named.get(s["title"]) or wide.pop(0)
                 group["imageAlt"] = f"A photo of {short}"
