@@ -367,6 +367,18 @@ def gist(text, limit):
     return head + "." if len(head.split()) >= 4 and len(head) < limit else ""
 
 
+def card_line(text, limit):
+    """gist() for a service card, after the hook their description opens on.
+    A short first sentence with no comma ("Texas sun is hard on a house.",
+    "There's a reason this list is short.") leads into the description and
+    says nothing of the work on its own; the card starts after it."""
+    said = sentences(text)
+    while len(said) > 1 and len(said[0].split()) <= 9 and not re.search(r"[,;:–—]", said[0]):
+        said = said[1:]
+    rest = " ".join(said)
+    return trim(rest, limit) or gist(rest, limit)
+
+
 def slugify(text):
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", text.lower())).strip("-")[:40]
 
@@ -610,7 +622,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # "Marine Equipment & Sales" is "Marine Equipment Sales" said again.
         key = " ".join(w for w in re.sub(r"[^a-z0-9 ]", " ", name.lower()).split() if w != "and")
         stem = lambda k: re.sub(r"s\b", "", k)
-        if any(stem(key).startswith(stem(k)) or stem(k).startswith(stem(key)) for k in found if k != key):
+        # So is "Residential Painting for Homes" of "Residential Painting
+        # Services": the word for the offer and whom it is for name no work.
+        core = lambda k: re.sub(r"(?: (?:services?|solutions))?(?: for (?:homes?|homeowners|your home|residences?))?$", "", k)
+        if any(stem(key).startswith(stem(k)) or stem(k).startswith(stem(key)) or core(k) == core(key) for k in found if k != key):
             return
         if key not in found:
             found[key] = {"title": title_case(name), "text": None}
