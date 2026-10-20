@@ -252,6 +252,23 @@ def _fits(item, slot):
     return not quality.problems(item["metrics"], slot)
 
 
+# Words in a service's name that say what kind of job it is, not what it is of.
+JOB_WORDS = {"service", "services", "repair", "repairs", "install", "installation", "installations", "replacement",
+             "maintenance", "company", "contractor", "contractors", "residential", "commercial", "emergency"}
+
+
+def _own_words(title, services):
+    """The words of a service's name no other service's name has, as plain lowercase."""
+    others = {w for s in services if s["title"] != title for w in re.findall(r"[a-z]+", s["title"].lower())}
+    return [w for w in re.findall(r"[a-z]+", title.lower()) if len(w) >= 4 and w not in others and w not in JOB_WORDS]
+
+
+def _said(item):
+    """What is known of a photo's subject in words: its file name and the look's few words on it."""
+    name = item["source"].rsplit("/", 1)[-1].rsplit(".", 1)[0]
+    return re.sub(r"[_\W\d]+", " ", f"{name} {(item['look'] or {}).get('why', '')}").lower()
+
+
 def build(prospect, root, slug):
     template = prospect["industry"]
     if template not in compose.AUTOMATED:
@@ -433,13 +450,23 @@ def build(prospect, root, slug):
         # enough for a wide slot goes there; a group without one shows its
         # services in that place instead.
         wide = [n for n, item in names if n in spare and n != about_image and _fits(item, "wide")]
+        # A photo whose file name or look names one service's own word (a
+        # generator, a panel) shows that service, so it goes to that service's
+        # page or to none; the others go in order to the pages left.
+        named = {}
+        for n in list(wide):
+            said = _said(pictures[n])
+            owner = next((s["title"] for s in services if any(re.search(rf"\b{w}", said) for w in _own_words(s["title"], services))), None)
+            if owner:
+                wide.remove(n)
+                named.setdefault(owner, n)
         for i, s in enumerate(services[:5]):
             if not s["text"]:
                 continue
             icon = next((k for k, p in compose.ICONS.get(kind) or compose.ICONS["hvac"] if re.search(p, s["title"], re.I)), "wrench")
             group = {"slug": compose.slugify(s["title"]), "title": s["title"], "icon": icon, "summary": compose.trim(s["text"], 140) or s["text"], "intro": s["text"]}
-            if wide:
-                group["image"] = wide.pop(0)
+            if s["title"] in named or wide:
+                group["image"] = named.get(s["title"]) or wide.pop(0)
                 group["imageAlt"] = f"A photo of {short}"
             groups.append(group)
         if len(groups) < 2:
