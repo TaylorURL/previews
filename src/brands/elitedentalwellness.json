@@ -1,0 +1,698 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "dental",
+  "name": "Elite Dental Wellness",
+  "shortName": "Elite Dental Wellness",
+  "tagline": "Your smile. Your life. Your vibe.",
+  "phone": "(713) 789-8680",
+  "email": "office@elitedentalwellness.com",
+  "address": "9296 Westheimer Rd, Suite 170",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77063",
+  "hours": [
+    [
+      "Monday",
+      "9 AM – 7 PM"
+    ],
+    [
+      "Tuesday",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Wednesday",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Thursday",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Friday",
+      "9 AM – 3 PM"
+    ],
+    [
+      "Saturday & Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Request an Appointment",
+    "text": "Call the office or send a message and a member of our team will get back to you."
+  },
+  "brand": {
+    "primary": "#0a0e29",
+    "primaryDeep": "#05081a",
+    "accent": "#ba8b33",
+    "ink": "#14182e",
+    "muted": "#5b6072",
+    "surface": "#f7f5f2",
+    "cream": "#ebd4c2",
+    "line": "#e3ddd4",
+    "heading": "'Montserrat', system-ui, sans-serif",
+    "body": "'Lato', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Lato:wght@400;700;900&display=swap",
+    "logo": "/brands/elitedentalwellness/logo.webp",
+    "logoMono": "/brands/elitedentalwellness/logo-mono.webp",
+    "logoWidth": 260,
+    "logoHeight": 36,
+    "logoRatio": 7.259,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.231,
+      0.197,
+      0.263,
+      0.323,
+      0.384,
+      0.461,
+      0.54,
+      0.637,
+      0.742,
+      0.866,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Dentists on Westheimer Road in Houston",
+    "title": "A new standard of modern dentistry in Houston.",
+    "lead": "Our mission at Elite Dental Wellness is to remove barriers to exceptional dental care by delivering a thoughtfully elevated experience. Through advanced technology, modern techniques, and a commitment to comfort, we create a dental visit that feels seamless and personalized.",
+    "image": "/brands/elitedentalwellness/hero",
+    "imageAlt": "Three members of the Elite Dental Wellness team in the practice hallway",
+    "points": [
+      "Same-day appointments available",
+      "Free virtual consult from Dr. Batiste",
+      "In-house benefit package for patients without insurance"
+    ]
+  },
+  "overview": {
+    "title": "No matter your smile needs, we're here for you.",
+    "text": "Pick a treatment to see what it includes, or call and talk it through with our front desk."
+  },
+  "services": [
+    {
+      "slug": "preventive-dentistry",
+      "title": "Preventive Dentistry",
+      "icon": "shield-check",
+      "summary": "Checkups, cleanings and early treatment.",
+      "text": "Routine six-month checkups, teeth cleanings and other preventive treatments that stop cavities and gum disease before they start.",
+      "lead": "Preventive dentistry is at the heart of what we do at Elite Dental Wellness. Our doctors have a simple mission: we want to prevent dental problems like cavities and gum disease before they happen.",
+      "image": "/brands/elitedentalwellness/preventive",
+      "imageAlt": "A dental hygienist treating a patient in the chair at Elite Dental Wellness",
+      "covers": [
+        {
+          "title": "Fluoride Treatments",
+          "text": "Your dentist paints a thin layer of fluoride-rich liquid onto your teeth, leaves it a few minutes, then rinses it away. This helps strengthen your teeth and prevents cavities."
+        },
+        {
+          "title": "Dental Sealants",
+          "text": "Thin layers of transparent dental resin, usually applied to the rear teeth and hardened with a special light. This forms a strong barrier that prevents cavities for 5 to 10 years."
+        },
+        {
+          "title": "Periodontal Care",
+          "text": "Deep cleanings such as scaling and root planing. With early intervention, periodontal (gum) disease can be halted or even reversed completely."
+        },
+        {
+          "title": "Oral Cancer Screenings",
+          "text": "Our dentists screen for lesions, discolored patches of tissue and other signs of oral cancer as part of every appointment."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Will my dental insurance cover preventive care?",
+          "a": "When it comes to routine checkups, the answer is almost always yes. Just about every dental insurance plan covers two yearly teeth cleanings and oral exams, as well as one set of x-rays per year. Coverage for fluoride treatments, dental sealants and periodontal care may differ."
+        },
+        {
+          "q": "What is the proper way to brush my teeth?",
+          "a": "Brush at least twice a day for two minutes with ADA-approved toothpaste that contains fluoride. Soft or medium bristles are best. Hold your toothbrush at a 45-degree angle and brush each tooth in short, tooth-length strokes, and floss once a day."
+        }
+      ]
+    },
+    {
+      "slug": "restorative-dentistry",
+      "title": "Restorative Dentistry",
+      "icon": "clipboard-check",
+      "summary": "Fillings, crowns, bridges and dentures.",
+      "text": "Repair for broken or damaged teeth, from cavity fillings and crowns to bridges, root canals and dentures.",
+      "lead": "Restorative dentistry aims to repair and enhance broken or damaged teeth so that patients can get back to exceptional oral health and, most importantly, restore their confidence and self-esteem.",
+      "image": "/brands/elitedentalwellness/restorative",
+      "imageAlt": "A dentist talking a patient through treatment options at Elite Dental Wellness",
+      "covers": [
+        {
+          "title": "Dental Fillings",
+          "text": "Fillings are used to fill cavities, or areas of the tooth where decay was removed. There are several types of filling material, including gold, silver and composite resin."
+        },
+        {
+          "title": "Inlays and Onlays",
+          "text": "Inlays are fitted and molded on the biting surface of a tooth damaged through decay or injury, while onlays cover the cusps of a tooth and the biting surface."
+        },
+        {
+          "title": "Lab-Made Crowns",
+          "text": "A traditional type of crown that can take a few weeks to design, made from a variety of materials including porcelain and ceramic."
+        },
+        {
+          "title": "Dental Bridges",
+          "text": "Known as false teeth, bridges fill in the gap of missing teeth and are held in place by dental crowns. They can be an alternative to partial dentures."
+        },
+        {
+          "title": "Root Canal Therapy",
+          "text": "Also known as endodontic therapy, this treatment removes infection from inside the tooth and protects it from future infections."
+        },
+        {
+          "title": "Full and Partial Dentures",
+          "text": "Full dentures are used when someone is missing all of their teeth, while partial dentures replace a few missing teeth to improve chewing and fill in gaps."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What issues can restorative dentistry solve?",
+          "a": "Everything from broken or missing teeth to gaps, decay and cavities. Cavity fillings, dental bridges and dentures all restore your smile's beauty and function, and offer protection for your teeth so you can maintain optimal oral health."
+        },
+        {
+          "q": "Does my insurance cover restorative dentistry?",
+          "a": "Most restorative procedures are usually covered, but the extent varies by insurer. Your plan may cover crowns and bridges but not implants. Call us at (713) 789-8680 and a member of our team will help you understand your insurance and maximize your benefits."
+        },
+        {
+          "q": "What are the benefits of restorative dental procedures?",
+          "a": "Proper alignment, improved functionality for eating and speaking, and reduced discomfort and pain. Getting the care you need right away helps you avoid serious dental issues from leaving teeth untreated, and saves time and money in the long run."
+        }
+      ]
+    },
+    {
+      "slug": "dental-implants",
+      "title": "Dental Implants",
+      "icon": "bone",
+      "summary": "Replacement tooth roots that last.",
+      "text": "Dental implants provide a strong foundation for either removable or permanently fixed teeth that give you a natural look, with the durability and comfort to smile with confidence.",
+      "lead": "Damaged teeth or tooth loss can make you feel self-conscious about your smile. Dental implants can restore that confidence by enhancing your functionality and overall oral health, so you can get back to comfortably eating, speaking and smiling.",
+      "image": "/brands/elitedentalwellness/implants",
+      "imageAlt": "A close-up of a dental implant model held in the hand",
+      "covers": [
+        {
+          "title": "Single Tooth Implants",
+          "text": "Single implants replace one missing tooth and are usually restored with a dental crown."
+        },
+        {
+          "title": "Full-Arch Implants",
+          "text": "Using a series of dental implants, full-arch implants restore an entire arch of missing teeth."
+        },
+        {
+          "title": "Mini Implants",
+          "text": "Much smaller than regular implants, with only a one-piece screw, and they do not typically require invasive surgery."
+        },
+        {
+          "title": "Implant-Retained Dentures",
+          "text": "These dentures have a natural appearance and are held in position by dental implants, allowing the force of the bite to maintain the integrity of the jaw bone."
+        },
+        {
+          "title": "All-On-4 Implants",
+          "text": "This technique replaces a full arch of upper or lower teeth using only four implants, as a more permanent and natural-looking alternative to dentures."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How long do dental implants last?",
+          "a": "With proper dental care and regular check-ups, many dental implants can last a lifetime, with an average lifespan of 25 years. Some, however, can require replacement after several years."
+        },
+        {
+          "q": "Can dental implants stop bone loss?",
+          "a": "Yes. Because the post of the implant is placed directly into the jaw bone and acts as a tooth root, it restimulates the bone by transmitting the force of chewing. The bone then bonds with the titanium for a strong, lasting hold."
+        }
+      ]
+    },
+    {
+      "slug": "cosmetic-dentistry",
+      "title": "Cosmetic Dentistry",
+      "icon": "gem",
+      "summary": "Whitening, bonding and smile makeovers.",
+      "text": "Cosmetic dentistry improves the appearance of your teeth and your overall smile, from teeth whitening to bonding and full smile makeovers.",
+      "lead": "Where restorative dentistry is focused on repair, cosmetic dentistry is focused on aesthetic enhancement. At Elite Dental Wellness we like to think of cosmetic dentistry as an art, making sure each patient feels like a masterpiece after any treatment.",
+      "image": "/brands/elitedentalwellness/cosmetic",
+      "imageAlt": "A dentist showing a dental model to a patient at Elite Dental Wellness",
+      "covers": [
+        {
+          "title": "In-Office Teeth Whitening",
+          "text": "The safest form of bleaching with the fastest result, and a more effective alternative to take-home kits."
+        },
+        {
+          "title": "Take-Home Teeth Whitening",
+          "text": "Most take-home whitening kits use hydrogen peroxide as the bleaching agent."
+        },
+        {
+          "title": "KöR Whitening",
+          "text": "Considered the best whitening method, KöR whitening uses a refrigerated gel that allows for the most long-lasting effects."
+        },
+        {
+          "title": "Bonding, Shaping and Contouring",
+          "text": "A small layer of enamel is removed from your tooth or teeth so your doctor can shape and enhance their appearance."
+        },
+        {
+          "title": "Lumineers",
+          "text": "This brand of veneers is much thinner, more durable and easier to apply to align and whiten your smile."
+        },
+        {
+          "title": "Cosmetic Dental Makeovers",
+          "text": "A total smile makeover can include an array of services and procedures including teeth whitening, gum reshaping and bridges."
+        },
+        {
+          "title": "Botox and Fillers",
+          "text": "Botox and fillers can be used to reduce gummy smiles and to treat temporomandibular joint dysfunction, or TMD, and migraines."
+        },
+        {
+          "title": "Opalustre",
+          "text": "This chemical abrasion slurry is used for removing white, brown or multi-colored stains from enamel."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Is cosmetic dentistry covered by dental insurance?",
+          "a": "Many cosmetic procedures are not covered by insurance, but this can depend on the type of service and the type of insurance. Get in touch with your carrier, or call us at (713) 789-8680 and a member of our team can go over our cosmetic treatment options with you."
+        },
+        {
+          "q": "Can I get more than one cosmetic procedure done at the same time?",
+          "a": "While it depends on the treatments, it is possible and quite common to do more than one cosmetic dental procedure at the same time. Give us a call to learn which treatments are combinable."
+        },
+        {
+          "q": "Should I get cosmetic dental treatment?",
+          "a": "Cosmetic dentistry not only improves your appearance, but can drastically boost your confidence when you have a smile you can feel proud of. To be sure, get in touch with us for a consultation with our dentist in Houston so we can go over some options with you."
+        },
+        {
+          "q": "What dental issues can cosmetic dentistry solve?",
+          "a": "Cosmetic dentistry can fix issues such as chipped and missing teeth, and can also be a solution for discolored or dull smiles, gaps, and uneven or crooked teeth. It is also popular for its ability to improve your self-esteem and help you feel comfortable with your smile."
+        }
+      ]
+    },
+    {
+      "slug": "orthodontics",
+      "title": "Orthodontics",
+      "icon": "smile",
+      "summary": "Braces and clear aligners for every age.",
+      "text": "Orthodontics focuses on straightening teeth and improving the appearance and health of the mouth using braces or clear aligners.",
+      "lead": "With our orthodontic treatments and modern techniques and equipment, our doctors are able to address and correct misaligned bites, crooked teeth, and abnormalities of the teeth and jaw.",
+      "image": "/brands/elitedentalwellness/orthodontics",
+      "imageAlt": "A clear aligner held over a dental model",
+      "covers": [
+        {
+          "title": "Metal Braces",
+          "text": "The most traditional form of aligning your smile, a less expensive alternative to clear aligners and popular for correcting a child's developing teeth."
+        },
+        {
+          "title": "Ceramic Braces",
+          "text": "A clear or tooth-colored alternative to metal braces, good for correcting overbites, underbites and crooked teeth."
+        },
+        {
+          "title": "ClearCorrect",
+          "text": "With clear, removable aligners, ClearCorrect lets you have the outcome of braces without the hardware."
+        },
+        {
+          "title": "Space Maintenance",
+          "text": "Metal space maintainers are commonly used for children, to hold space after the premature loss of a primary tooth or teeth."
+        }
+      ],
+      "questions": [
+        {
+          "q": "When should I receive orthodontic treatment?",
+          "a": "It is best for children to receive treatment before puberty, to make it easier for developing teeth to adjust. While treatment usually takes longer for adults, clear aligners can be a more efficient and convenient solution at nearly any age."
+        },
+        {
+          "q": "What are the benefits of orthodontic care?",
+          "a": "Beyond an improved appearance, orthodontic care can ensure better function of your teeth, align your jaws and bite, improve gum health and reduce wear and tear. Straight teeth are also much easier to clean and maintain."
+        }
+      ]
+    },
+    {
+      "slug": "sedation-dentistry",
+      "title": "Sedation Dentistry",
+      "icon": "heart",
+      "summary": "Nitrous oxide and oral conscious sedation.",
+      "text": "Medication that brings you into a state of relaxation and reduces feelings of anxiety, so a dental visit is something you can sit through comfortably.",
+      "lead": "Dental anxiety presents a significant barrier to necessary dental treatment for millions of Americans. Dental sedation is the use of medication to induce patients into a state of relaxation and reduce feelings of anxiety.",
+      "image": "/brands/elitedentalwellness/sedation",
+      "imageAlt": "A treatment room at Elite Dental Wellness",
+      "covers": [
+        {
+          "title": "Nitrous Oxide",
+          "text": "Conscious sedation administered through a nasal mask. The quick onset causes euphoria, relaxation and giddiness within a few minutes, and it is the mildest and safest sedative available in dentistry, which makes it a great option for children."
+        },
+        {
+          "title": "Oral Conscious Sedation",
+          "text": "A deeper form of sedation given as an anti-anxiety pill. You remain conscious and can respond to instructions, but are likely to feel very sleepy and may even fall asleep. It takes about an hour to take effect."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Is dental sedation safe?",
+          "a": "Yes, dental sedation is safe when administered by a trained professional in the dental setting. Our dentists take precautions by reviewing your medical history before approving you for sedation. If you are concerned, we can recommend nitrous oxide, which is very mild and low risk in healthy patients."
+        },
+        {
+          "q": "How long do the effects of dental sedation last?",
+          "a": "Nitrous oxide leaves the body within a couple of minutes of removing the nasal mask, so you can resume normal activities immediately, including driving. The lingering effects of oral conscious sedation last for 24 hours, so you will need someone to drive you home."
+        }
+      ]
+    },
+    {
+      "slug": "oral-surgery",
+      "title": "Oral Surgery",
+      "icon": "stethoscope",
+      "summary": "Bone grafts, alveoloplasty and tori removal.",
+      "text": "Surgical procedures on the teeth, gums and jaw, planned around a consultation, oral exams and x-rays, with sedation options and detailed aftercare.",
+      "lead": "At Elite Dental Wellness we will call you in for a consultation to assess your oral health through oral exams and x-rays, then discuss your treatment options and make you as comfortable as possible with local anesthesia and sedation.",
+      "covers": [
+        {
+          "title": "Bone Grafts",
+          "text": "The surgical transplantation of synthetic or real bone to replace missing jawbone. Replacing bone that has deteriorated creates enough support for dental implants and restores support to facial muscles."
+        },
+        {
+          "title": "Alveoloplasty",
+          "text": "Surgery that reshapes the jaw after a tooth extraction to smooth out bumps, pits or ridges, so that implants, bridges or dentures fit properly. It can be performed immediately after an extraction or once the site has healed."
+        },
+        {
+          "title": "Tori Removal",
+          "text": "Tori are extra bone deposits in the upper and lower jaws. They can usually be left alone when benign, but if they cause discomfort, trap food particles or make dentures hard to fit, they may need to be removed."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How long does it take to recover from oral surgery?",
+          "a": "Recovery can range from a few weeks to a few months, depending on the procedure, the complexity of your case, your oral health and how well you follow aftercare instructions. We can give you an estimate during your consultation."
+        },
+        {
+          "q": "How do I prepare for oral surgery?",
+          "a": "You will generally need to fast, often for about six hours, especially if you are being sedated. Arrange rides to and from your appointment, since you will not be able to drive, and have someone monitor you for the rest of the day."
+        }
+      ]
+    },
+    {
+      "slug": "tooth-extractions",
+      "title": "Tooth Extractions",
+      "icon": "shield",
+      "summary": "Simple, wisdom and impacted extractions.",
+      "text": "Removing a tooth from its socket when it is decayed or damaged beyond restoration, or when teeth are crowded ahead of braces or other treatment.",
+      "lead": "A tooth extraction describes a dental procedure where a dentist completely removes a tooth from its socket in the jaw. It may be recommended for severely decayed or damaged teeth beyond restoration, or to address crowded teeth before fitting braces.",
+      "covers": [
+        {
+          "title": "Basic Extractions",
+          "text": "Simple extractions that remove visible teeth above the gumline. The dentist injects the anesthetic and uses forceps to remove the tooth from its socket, which takes between 30 and 60 minutes."
+        },
+        {
+          "title": "Wisdom Tooth Extractions",
+          "text": "The wisdom teeth are the four permanent teeth at the back corners of your jaws. They sit deeply inside their sockets and are harder to remove than other teeth, so a surgical incision might be necessary."
+        },
+        {
+          "title": "Impacted Wisdom Teeth",
+          "text": "A wisdom tooth is impacted if it does not emerge from the gum properly. The tooth grows skewed or inside the gum, causing pain, swelling and discomfort, and removal provides instant relief."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How do I know if I need my teeth extracted?",
+          "a": "You might need a tooth extracted if you experience severe pain in the tooth and jaw. You may also need an extraction for overcrowded and impacted teeth, or if you show symptoms of severe periodontal disease."
+        }
+      ]
+    },
+    {
+      "slug": "teeth-in-a-day",
+      "title": "Teeth in a Day",
+      "icon": "award",
+      "summary": "Implants and new teeth in one visit.",
+      "text": "Also known as same-day dental implants, this treatment places your implants and a fully functional set of teeth in a single day.",
+      "lead": "Teeth in a Day eliminates the need for multiple dental visits and long waiting periods. Our dentists evaluate your oral health, place the implants into your jawbone, and attach custom-made temporary teeth the same day while your implants heal.",
+      "covers": [
+        {
+          "title": "Immediate Results",
+          "text": "You can walk into our office with missing or damaged teeth and leave with a complete set of functional teeth, which can boost your confidence and let you smile, speak and eat with ease."
+        },
+        {
+          "title": "Fewer Dental Visits",
+          "text": "Traditional implant procedures can take several months and multiple visits. Our streamlined process saves you time and minimizes disruption to your daily life."
+        },
+        {
+          "title": "Long-Lasting Results",
+          "text": "The implants are made from biocompatible materials that fuse with your jawbone over time, and the final restorations are custom-designed to match your natural teeth in color, shape and size."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Am I a good candidate for Teeth in a Day?",
+          "a": "It is a suitable option for many patients who are missing one or more teeth, have damaged or decayed teeth, or are currently wearing dentures. The best way to know is to schedule a consultation so our dentists can evaluate your oral health."
+        }
+      ]
+    },
+    {
+      "slug": "emergency-dentistry",
+      "title": "Emergency Dentistry",
+      "icon": "umbrella",
+      "summary": "Same-day appointments when it hurts.",
+      "text": "We offer same-day dental appointments for both emergency and non-emergency patients. If you have a dental emergency, contact us as soon as possible.",
+      "lead": "At Elite Dental Wellness, we are committed to the wellness of your smile at all times, even during an emergency. During your appointment you can expect a comprehensive examination, x-rays and a diagnosis, then a conversation about the best course of treatment.",
+      "covers": [
+        {
+          "title": "A Broken or Chipped Tooth",
+          "text": "Rinse your mouth with warm water and apply a cold compress to the area to reduce swelling."
+        },
+        {
+          "title": "A Knocked-Out Tooth",
+          "text": "Clean the tooth and try to put it back in the socket. If this is impossible, store it safely until you arrive at our office."
+        },
+        {
+          "title": "An Object Stuck Between Teeth",
+          "text": "Try to remove it with an interdental brush."
+        },
+        {
+          "title": "Severe Infection",
+          "text": "Consider using over-the-counter medications to reduce discomfort, and call us for an emergency appointment."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What are the most common dental emergencies?",
+          "a": "The most common dental emergencies include toothache, a knocked-out tooth, a lost filling, jaw pain, infection, an object stuck in the teeth and soft tissue injury."
+        },
+        {
+          "q": "What should I do if I have a dental emergency?",
+          "a": "Call Elite Dental Wellness at (713) 789-8680 and request an emergency appointment."
+        }
+      ]
+    },
+    {
+      "slug": "veneers",
+      "title": "Veneers",
+      "icon": "stamp",
+      "summary": "Thin shells over chips, cracks and stains.",
+      "text": "Wafer-thin shells that mimic your tooth's shape and color, attached to the top surface of the teeth to hide chips, cracks and stains.",
+      "lead": "Veneers are a quick and effective treatment for dental imperfections. They are a minimally invasive and longer-lasting alternative to teeth whitening, dental bonding and other cosmetic treatments.",
+      "covers": [
+        {
+          "title": "Minimally Invasive",
+          "text": "Getting veneers does not involve any incision or drilling into the teeth or jawbone and so does not require anesthesia. It only involves shaving bits of the enamel, which is largely painless."
+        },
+        {
+          "title": "They Look and Feel Natural",
+          "text": "Laboratories manufacture veneers to look and feel like your natural teeth, so they blend seamlessly with the rest of your smile."
+        },
+        {
+          "title": "Easy to Maintain",
+          "text": "Caring for your veneers is as easy as brushing and flossing regularly. Because they are non-porous, they resist staining from highly pigmented foods."
+        },
+        {
+          "title": "The Treatment Process",
+          "text": "A consultation and examination, a personalized treatment plan and tooth preparation, impressions taken by putty or a 3D digital scanner, then placement and final adjustments once the veneers arrive."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Am I a good candidate for veneers?",
+          "a": "Veneers are ideal for anyone with healthy teeth and in good health, and especially useful for cracks, chips and stains on the enamel. We will examine your teeth to determine your candidacy."
+        },
+        {
+          "q": "How long do veneers last?",
+          "a": "The longevity depends on the type. Strong porcelain veneers last 20 years or more, while composite veneers last 7 to 10 years. The lifespan also depends on how well you care for them."
+        }
+      ]
+    }
+  ],
+  "process": {
+    "title": "Get a free virtual consult from Dr. Batiste",
+    "text": "In three easy steps, before you ever come in.",
+    "steps": [
+      {
+        "title": "Send a photo",
+        "text": "Use our intuitive app to take a clear photo of your smile. Once you get the shot you like, upload it so we can get started."
+      },
+      {
+        "title": "Write your message",
+        "text": "Explain what you would like to change about your smile. It is your opportunity to tell our team what is bugging you and how you would like to improve it."
+      },
+      {
+        "title": "Get a video consult",
+        "text": "Dr. Batiste will send you a personal video consult explaining possible treatments to give you the smile you have always wanted."
+      }
+    ]
+  },
+  "affiliations": {
+    "title": "Memberships and credentials",
+    "items": [
+      "American Dental Association",
+      "Greater Houston Dental Society",
+      "Texas Academy of General Dentistry",
+      "American Academy of Cosmetic Dentists",
+      "International Implant Association",
+      "American Association of Women Dentists",
+      "Omicron Kappa Upsilon"
+    ]
+  },
+  "about": {
+    "title": "Welcome to the Elite.",
+    "text": [
+      "At Elite Dental Wellness, we are committed to refining your smile, your life, and your vibe. We offer the finest possible oral care and focus on the overall health, wellbeing and comfort of our patients.",
+      "As a team of diverse professionals, we expect to earn the loyalty and trust of our patients by acknowledging and fulfilling their specific needs, while seeking to establish and develop long lasting relationships as well as serve our communities with a smile.",
+      "Our welcoming and knowledgeable team is dedicated to making dental visits a fun and educational experience for every patient. We focus on incorporating all the core values of professionalism, honesty, teamwork, dedication, friendliness, accountability and communication into our daily work."
+    ],
+    "image": "/brands/elitedentalwellness/about",
+    "imageAlt": "Two members of the Elite Dental Wellness team with a patient in a treatment room",
+    "values": [
+      {
+        "title": "Comfort first",
+        "text": "Advanced technology and modern techniques, so a dental visit feels seamless and personalized."
+      },
+      {
+        "title": "Lasting relationships",
+        "text": "Our highly trained team and skilled doctors build relationships rooted in trust, so every patient feels valued and truly at home."
+      },
+      {
+        "title": "Giving back",
+        "text": "Members of our team are pillars of the community we serve, and through multiple community outreach programs we continually give new smiles to people in need."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Dr. Ashandra Batiste",
+      "role": "Owner and Dentist",
+      "bio": "Born and raised in Missouri City, Texas, Dr. Batiste was inspired to pursue dentistry after a swimming pool accident at age 11, when her pediatric dentist restored her smile, her spirit and her confidence. She attended The University of Texas, where she obtained top honors from the College of Natural Sciences and a Bachelor of Science in Human Development and Family Sciences, then earned a Doctorate in Dental Surgery at Howard University College of Dentistry, graduating with multiple honors as a top graduate of her class. With 14 years of experience, Dr. Batiste knows what it takes to make patients feel comfortable and empowered."
+    },
+    {
+      "name": "Dr. Lauren Auzenne",
+      "role": "Dentist"
+    },
+    {
+      "name": "Dr. Sarah Glenn",
+      "role": "Dentist"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do you offer same-day appointments?",
+      "a": "Yes. We offer same-day dental appointments for both emergency and non-emergency patients. If you experience a dental emergency in Houston, we encourage you to contact us as soon as possible."
+    },
+    {
+      "q": "What if I do not have dental insurance?",
+      "a": "We offer an in-house benefit package for patients who either do not have traditional dental insurance or have inadequate coverage. The plan starts at $299 a year for discounted dental services and cannot be used in conjunction with dental insurance."
+    },
+    {
+      "q": "Can I finance my treatment?",
+      "a": "Yes. We work with Proceed Finance, which offers flexible financing with fast approval, and with CareCredit, a lender that works with over 200,000 providers nationwide and can help with elective and cosmetic treatments."
+    },
+    {
+      "q": "What technology do you use?",
+      "a": "We use cone-beam computed tomography, or CBCT, an x-ray system that captures images in a cone shape. It requires fewer scans to get different angles of your mouth and uses less radiation, giving us a comprehensive view of your oral health in a short amount of time."
+    },
+    {
+      "q": "How do I book an appointment?",
+      "a": "Call the office at (713) 789-8680, send us a message, or book online. Please do not submit any Protected Health Information through the website form."
+    },
+    {
+      "q": "Can I request Dr. Batiste as a speaker?",
+      "a": "Yes. Get in touch with the office about speaking engagements and a member of our team will get back to you as soon as possible."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Book online with FlexBook",
+      "text": "Pick an appointment time with Elite Dental Wellness without calling the office.",
+      "href": "https://flexbook.me/edw"
+    },
+    {
+      "title": "Free virtual consult",
+      "text": "Send a photo of your smile and get a personal video consult back from Dr. Batiste.",
+      "href": "https://elite-dental-wellness.yourvirtualconsult.com"
+    },
+    {
+      "title": "Proceed Finance",
+      "text": "Flexible financing with fast and easy approval, at low interest rates and payments.",
+      "href": "https://www.proceedfinance.com/"
+    },
+    {
+      "title": "CareCredit",
+      "text": "A trusted lender that works with over 200,000 providers nationwide, including for elective and cosmetic treatment.",
+      "href": "https://www.carecredit.com/"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Insurance We Accept",
+      "items": [
+        "Aetna",
+        "Delta Dental",
+        "United Concordia",
+        "Guardian",
+        "MetLife",
+        "GEHA",
+        "SunLife",
+        "Lincoln",
+        "Principal",
+        "Ameritas",
+        "DenteMax",
+        "AlwaysAssist",
+        "Unum",
+        "AlwaysCare",
+        "DentalSelect"
+      ]
+    },
+    {
+      "heading": "In-House Benefit Package",
+      "text": "For patients without traditional dental insurance or with inadequate coverage. Starting at $299 a year for discounted dental services, it saves on diagnostic and cleaning treatments, fillings and crowns, root canals and extractions, implants, and prosthodontic and orthodontic care. The plan is a fee schedule, is non-refundable, and cannot be combined with another insurance plan."
+    },
+    {
+      "heading": "Financing",
+      "items": [
+        "Proceed Finance",
+        "CareCredit"
+      ]
+    },
+    {
+      "heading": "Same-Day Appointments",
+      "text": "We offer same-day dental appointments for both emergency and non-emergency patients."
+    },
+    {
+      "heading": "Technology",
+      "text": "Our CBCT, or cone-beam computed tomography, is an x-ray system that captures images in a cone shape. It requires fewer scans to get different angles of your mouth, uses less radiation, and is a comfortable experience for patients."
+    },
+    {
+      "heading": "Award",
+      "text": "Dr. Batiste was honored with the Longhorn 100 award from The University of Texas in 2023, which celebrates her contributions as a business owner in the field of dentistry."
+    },
+    {
+      "heading": "Book Online",
+      "items": [
+        "FlexBook: https://flexbook.me/edw",
+        "Virtual consult: https://elite-dental-wellness.yourvirtualconsult.com/"
+      ]
+    },
+    {
+      "heading": "Follow Us",
+      "items": [
+        "Instagram: https://www.instagram.com/elitedentalwellness/",
+        "Facebook: https://m.facebook.com/EliteDentalWellness/posts"
+      ]
+    },
+    {
+      "heading": "How We Give Back",
+      "text": "Members of the Elite Dental Wellness team are pillars of the community we serve. Through our multiple community outreach programs, we continually give new smiles to people in need."
+    },
+    {
+      "heading": "Speaking Engagements",
+      "text": "To request Dr. Batiste for your next speaking event, get in touch with the office and a member of our team will get back to you as soon as possible."
+    }
+  ]
+}
