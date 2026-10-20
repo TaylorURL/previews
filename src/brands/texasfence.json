@@ -1,0 +1,586 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Texas Fence",
+  "shortName": "Texas Fence",
+  "summary": "Residential and commercial fence and gate installation across Houston and the surrounding areas, building wood, iron, aluminum, vinyl, Hardie plank and chain link since 2003.",
+  "phone": "(281) 807-7900",
+  "email": "sales@texasfence.com",
+  "address": "17226 Bamwood Rd",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77090",
+  "rating": 4.7,
+  "reviewCount": 642,
+  "since": 2003,
+  "hours": [
+    [
+      "Mon – Sun",
+      "6 AM – 9 PM"
+    ]
+  ],
+  "brand": {
+    "primary": "#5c0025",
+    "primaryDeep": "#3d0018",
+    "accent": "#9e906e",
+    "ink": "#201a1c",
+    "muted": "#5f5257",
+    "surface": "#f7f3ec",
+    "line": "#e2d9cc",
+    "heading": "'Oswald', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap",
+    "logo": "/brands/texasfence/logo.webp",
+    "logoMono": "/brands/texasfence/logo-mono.webp",
+    "logoWidth": 260,
+    "logoHeight": 46,
+    "logoRatio": 5.676,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.112,
+      0.0,
+      0.0,
+      0.0,
+      0.27,
+      0.395,
+      0.513,
+      0.631,
+      0.756,
+      0.883,
+      1.0
+    ]
+  },
+  "financing": {
+    "text": "Promotional financing through Synchrony, advertised as $0 money down and no interest for 18 months based on approved credit, with a simple application and fast credit decisions, subject to credit approval."
+  },
+  "hero": {
+    "eyebrow": "Fence installation in Houston, TX",
+    "title": "Service you can count on",
+    "titleAccent": "from start to finish.",
+    "lead": "Texas Fence is a trusted local fence contractor providing fence installation services in the Houston and surrounding areas since 2003. We bring over 20 years of experience designing and building fences that offer both security and curb appeal.",
+    "image": "/brands/texasfence/hero",
+    "imageAlt": "An ornamental iron driveway gate closed across a residential drive"
+  },
+  "groups": [
+    {
+      "slug": "residential-fences",
+      "title": "Residential Fences",
+      "icon": "home",
+      "summary": "Privacy fences, ornamental iron, Hardie plank and driveway gates for Houston homes and HOA neighborhoods.",
+      "intro": "Texas Fence is a residential fencing company in Houston, TX. Whether you want to replace privacy fencing in your backyard, or you are looking to secure your front yard with a driveway gate and operator, Texas Fence has the resources and expertise to provide you with service you can count on. Talk to a representative and we can help you weigh the various residential fencing options and determine the best fencing solution for your particular situation.",
+      "image": "/brands/texasfence/residential",
+      "imageAlt": "A cedar privacy fence with brick columns running along a back yard",
+      "services": [
+        {
+          "slug": "wood-fences",
+          "title": "Wood Fences",
+          "icon": "home",
+          "text": "Natural privacy and customizable style with cedar or pine. Cedar is the most popular wood for a privacy residential fence, with all framework and posts made of treated pine.",
+          "points": [
+            "Hot-dipped galvanized ring shank nails; aluminum and stainless also available",
+            "A 6 ft post is set 24 in deep in concrete, a 7 ft post 32 in and an 8 ft post 36 in",
+            "Cedar is untreated, so shades and grain vary from picket to picket"
+          ]
+        },
+        {
+          "slug": "iron-aluminum-fences",
+          "title": "Iron & Aluminum Fences",
+          "icon": "shield",
+          "text": "Ornamental iron is elegant, durable and low maintenance with powder coating. Aluminum is lightweight, rust-resistant and HOA-friendly.",
+          "points": [
+            "Pre-galvanized and powder coated iron lasts a long time and is very durable",
+            "Aluminum lasts in the weather but costs more and is not as durable",
+            "Pool safety fencing available"
+          ]
+        },
+        {
+          "slug": "hardie-plank-fences",
+          "title": "Hardie Plank Fences",
+          "icon": "building",
+          "text": "A long-lasting alternative to wood with added weather resistance, built on a steel frame so it is fire- and moisture-resistant.",
+          "points": [
+            "Low-maintenance privacy panels with a modern look"
+          ]
+        },
+        {
+          "slug": "bufftech-fencing",
+          "title": "Bufftech Vinyl Fencing",
+          "icon": "shield",
+          "text": "Bufftech by Barrett Outdoor Living vinyl fencing: a clean look, low maintenance and fade-resistant.",
+          "points": [
+            "Vinyl and powder-coated iron offer the longest life in Houston with minimal maintenance"
+          ]
+        },
+        {
+          "slug": "custom-driveway-gates",
+          "title": "Custom Driveway Gates",
+          "icon": "car",
+          "text": "If you are looking to improve access to certain areas of your property, we can build a custom gate that leads to your driveway, yard, pool or sidewalk.",
+          "points": [
+            "Designed to match your fence with secure entry options"
+          ]
+        },
+        {
+          "slug": "hoa-fencing",
+          "title": "HOA Fencing",
+          "icon": "clipboard",
+          "text": "Fences built to meet subdivision rules and neighborhood standards. We handle all HOA approvals and permitting so your project meets local regulations.",
+          "points": [
+            "City permits and HOA documents prepared for approval"
+          ]
+        },
+        {
+          "slug": "fence-staining",
+          "title": "Fence Painting and Staining",
+          "icon": "droplets",
+          "text": "We offer stain for both new and older fences, to protect the wood and achieve the look and feel that matches your Houston home.",
+          "points": [
+            "Available on new installations and on existing fences"
+          ]
+        },
+        {
+          "slug": "specialty-fences",
+          "title": "Specialty Fences",
+          "icon": "leaf",
+          "text": "Cedar privacy fences, ranch rail fences, hog panel fencing, chain link, horizontal fencing in premium cedar or composite, and pool safety fences.",
+          "points": [
+            "Also arbors, pergolas and patio covers on request",
+            "Retaining walls and columns in stone or brick"
+          ]
+        },
+        {
+          "slug": "pergolas",
+          "title": "Pergolas and Patio Covers",
+          "icon": "leaf",
+          "text": "Custom luxury pergolas, arbors, patio covers and shade structures, designed and installed by our team with a master carpenter overseeing every project.",
+          "points": [
+            "Traditional open-top, louvered roof, attached, freestanding, modern cantilever and arched or curved designs",
+            "Built in cedar, treated pine, metal or composite",
+            "Fans, retractable screens, integrated speakers and lighting available as add-ons",
+            "Most pergola projects require permits, and we handle the paperwork and code compliance"
+          ]
+        },
+        {
+          "slug": "fence-repairs",
+          "title": "Fence Repairs and Upgrades",
+          "icon": "wrench",
+          "text": "Fix or improve old or damaged fencing, including rotted posts, and add retaining walls or masonry columns in stone or brick.",
+          "points": []
+        }
+      ]
+    },
+    {
+      "slug": "commercial-fences",
+      "title": "Commercial Fences",
+      "icon": "building",
+      "summary": "Secure perimeters, controlled entry points and durable materials for businesses, schools and industrial sites.",
+      "intro": "Texas Fence builds commercial fence systems for businesses that need secure perimeters, controlled entry points and durable materials. Whether protecting a warehouse, enclosing a retail storefront or segmenting a school property, we design commercial fencing to meet local codes and operational needs. We work with general contractors, property managers, school boards and facility owners.",
+      "image": "/brands/texasfence/commercial",
+      "imageAlt": "A black steel security fence around an equipment yard",
+      "services": [
+        {
+          "slug": "commercial-chain-link",
+          "title": "Chain Link Fencing",
+          "icon": "building",
+          "text": "Cost-effective perimeter security for industrial and commercial sites, including 6 ft plus 1 ft commercial chain link.",
+          "points": [
+            "Chain link with barbed or razor wire is the most common choice for security",
+            "Used for storage facilities, parks and sports fencing"
+          ]
+        },
+        {
+          "slug": "commercial-wood",
+          "title": "Wood Fencing",
+          "icon": "home",
+          "text": "Screen dumpsters, storage areas or employee break zones. Commercial wood fencing is a practical choice for apartment complexes and school facilities.",
+          "points": []
+        },
+        {
+          "slug": "commercial-iron-aluminum",
+          "title": "Iron and Aluminum Fencing",
+          "icon": "shield",
+          "text": "Secure and decorative options for commercial buildings or public spaces. Iron fencing provides both strength and visibility for public-facing properties.",
+          "points": []
+        },
+        {
+          "slug": "commercial-hardie-plank",
+          "title": "Hardie Plank Fencing",
+          "icon": "settings",
+          "text": "Low-maintenance privacy panels with a modern look, built for Houston weather and heavy use.",
+          "points": []
+        },
+        {
+          "slug": "commercial-vinyl",
+          "title": "Vinyl Fencing",
+          "icon": "shield",
+          "text": "For HOA or multifamily properties seeking a uniform appearance and durability.",
+          "points": []
+        },
+        {
+          "slug": "access-controlled-gates",
+          "title": "Access-Controlled Gates",
+          "icon": "car",
+          "text": "Sliding, swing or cantilever gates for vehicles and personnel, integrated with access control where it is needed.",
+          "points": []
+        }
+      ]
+    },
+    {
+      "slug": "gates-access-control",
+      "title": "Gates & Access Control",
+      "icon": "car",
+      "summary": "Custom wood, iron, aluminum and chain link gates, with keypads, openers and remote access.",
+      "intro": "Texas Fence installs custom wood, iron, aluminum and chain link gates designed for residential, commercial and industrial properties. Whether you need a manual double-swing gate, a motorized sliding gate or a walk gate for pedestrian access, we build it with precision. Every project uses Grade 1 materials, ensuring smooth operation and a long-lasting finish.",
+      "image": "/brands/texasfence/gates",
+      "imageAlt": "A wood double driveway gate with openers at a Houston home",
+      "services": [
+        {
+          "slug": "driveway-gates",
+          "title": "Driveway Gates",
+          "icon": "car",
+          "text": "Secure vehicle access points at homes or businesses. Most driveways require a 12 to 16 foot opening, and we custom-build to fit your exact entry width and swing or slide requirement.",
+          "points": [
+            "A typical gate takes one to two days; motorized systems may take longer"
+          ]
+        },
+        {
+          "slug": "iron-gates",
+          "title": "Iron and Wrought Iron Gates",
+          "icon": "shield",
+          "text": "Durable, ornate and low maintenance. Each gate is handcrafted by our team or welded in-house using Grade 1 frames and hardware.",
+          "points": [
+            "Gate posts set deep in concrete and tested for level, swing clearance and security"
+          ]
+        },
+        {
+          "slug": "wooden-gates",
+          "title": "Wooden Gates",
+          "icon": "home",
+          "text": "Western red cedar gates built to match your fence line, with Hardie plank on steel frame and Bufftech vinyl also available.",
+          "points": []
+        },
+        {
+          "slug": "chain-link-gates",
+          "title": "Chain Link Gates",
+          "icon": "building",
+          "text": "Affordable and functional for schools and warehouses, including cantilever gates for heavy-duty commercial properties with wide vehicle lanes.",
+          "points": [
+            "Sliding gates are a space-saving solution for narrow driveways"
+          ]
+        },
+        {
+          "slug": "walk-gates",
+          "title": "Walk and Double-Swing Gates",
+          "icon": "home",
+          "text": "Walk gates provide pedestrian entry to backyards or between zones. Double-swing gates suit large residential and ranch-style openings.",
+          "points": []
+        },
+        {
+          "slug": "access-control",
+          "title": "Access Control",
+          "icon": "circuit",
+          "text": "Keypads, openers and remote access for added security. We offer keypad entry, remote controls, access sensors, solar operators and commercial-grade actuators.",
+          "points": [
+            "Swing and slide gate openers with remote, keypad or sensor-based access",
+            "RFID cards and access control integration"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Today's special",
+    "title": "Our most popular fence, with millions of feet built over the years.",
+    "text": "A 6 ft western red cedar fence, 3 rail, with a 2x6 rot board. Ask your sales consultant about your pricing today with new truckloads of cedar on the way, based on a purchase of 120 feet or more."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "From humble beginnings to the top of the market.",
+    "text": [
+      "Texas Fence began as a one-man fence-building operation based in a home office and rental storage unit, guided by the vision of growing into the best in its field. Since 2003, Texas Fence has achieved milestone after milestone, becoming an established leader in the highly competitive residential and commercial fencing industry.",
+      "The key advantage of choosing Texas Fence for your project is two-fold: we know fences, and we care about our customers. Our mission is complete satisfaction on all projects, and we have grown our team and improved our company over the last decade to achieve that ideal, going the extra length for customers on thousands of projects per year.",
+      "Our focus early on was on serving exclusively homeowners by building fences on residential properties. Today we serve commercial customers with the same care and quality, and our crews have constructed commercial chain link, iron and aluminum, brick and stone and other fence products for schools, parks, subdivisions and apartment complexes.",
+      "We offer fence installations and replacements starting as low as $2,500 for smaller projects. Larger projects that require extensive work, custom work or premium materials can range into the tens of thousands of dollars, so we work closely with our customers to find the best solution that fits both their needs and budget."
+    ],
+    "image": "/brands/texasfence/about",
+    "imageAlt": "A horizontal cedar screen enclosure built beside a brick building",
+    "values": [
+      {
+        "title": "Licensed and insured",
+        "text": "Our installation team operates with full professional licensing and insurance coverage."
+      },
+      {
+        "title": "HOA and permit compliance",
+        "text": "We handle all HOA approvals and permitting so your fence project meets local regulations without any hassle."
+      },
+      {
+        "title": "100% satisfaction guarantee",
+        "text": "Our company provides a 100% satisfaction guarantee to all customers."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What kind of warranties do you offer?",
+      "a": "We offer a One Year Workmanship Warranty."
+    },
+    {
+      "q": "How much does fence installation cost?",
+      "a": "Cost depends on the fence type, length and terrain. Wood fences generally start around $25 per linear foot. We offer free estimates."
+    },
+    {
+      "q": "Do you handle permits and HOA paperwork?",
+      "a": "Yes. We take care of city permits and provide HOA documents for approval."
+    },
+    {
+      "q": "What fence lasts the longest in Houston weather?",
+      "a": "Vinyl and powder-coated iron offer the longest life with minimal maintenance. Cedar also performs well when properly sealed."
+    },
+    {
+      "q": "At what depth do you set fence posts?",
+      "a": "Typically a 6 ft fence post is set at 24 in deep in concrete, a 7 ft fence at 32 in in concrete and an 8 ft at 36 in."
+    },
+    {
+      "q": "Do I need to be home during the installation?",
+      "a": "No, all we need is a contact phone number if we run into any unexpected issues."
+    },
+    {
+      "q": "What type of nails are used when installing the fence?",
+      "a": "We use hot-dipped galvanized ring shank nails. Aluminum and stainless can be installed also."
+    },
+    {
+      "q": "Is it normal to have different shades of cedar in my pickets?",
+      "a": "Yes, cedar is a natural product that is not treated in any way. Because of this, every tree is unique in color and grain."
+    },
+    {
+      "q": "Who collects from my neighbors when sharing costs?",
+      "a": "We can collect. It requires separate contracts for neighbors fence splits."
+    },
+    {
+      "q": "Can you work alongside a general contractor on a new build?",
+      "a": "Yes. We regularly coordinate with GCs, subcontractors and jobsite supervisors. We can follow site plans or build to spec."
+    },
+    {
+      "q": "Can you install during business hours?",
+      "a": "We can schedule work during or after hours depending on your operational needs and site accessibility."
+    },
+    {
+      "q": "What do I need to know before having the fence installed?",
+      "a": "Assess the purpose of the fence (privacy, pet or pool enclosure, property line), where it will be located (an existing location or a new surveyed one), what type you want (materials, height, style, features and accessories) and when you plan to have the work completed."
+    },
+    {
+      "q": "Is an iron or an aluminum fence better?",
+      "a": "They both have positive and negative attributes. Iron, if pre-galvanized and powder coated, can last a long time and is very durable. Aluminum will last in the weather but costs more and is not as durable."
+    },
+    {
+      "q": "Do you offer stain for my fence?",
+      "a": "Yes, we offer stain for both new and older fences."
+    },
+    {
+      "q": "What's the difference between a pergola and an arbor?",
+      "a": "An arbor is typically smaller and used as a decorative entryway or garden feature, while a pergola is a larger, structural build that provides shade and outdoor living space. We build both."
+    },
+    {
+      "q": "Do I need a permit to build a pergola in Houston?",
+      "a": "Most pergola projects do require permits. We handle all the paperwork, permits and code compliance for you."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Houston Heights",
+    "River Oaks",
+    "Montrose",
+    "Midtown",
+    "Bellaire",
+    "West University Place",
+    "Greater Uptown",
+    "Memorial",
+    "Briar Forest",
+    "Hunters Creek Village",
+    "Bear Creek Village",
+    "Jersey Village",
+    "Cypress",
+    "Spring",
+    "Tomball",
+    "The Woodlands",
+    "Conroe",
+    "Magnolia",
+    "Montgomery",
+    "Willis",
+    "Waller",
+    "Hockley",
+    "Kingwood",
+    "Humble",
+    "Katy",
+    "Fulshear",
+    "Brookshire",
+    "Sealy",
+    "Fort Bend",
+    "Richmond",
+    "Rosenberg",
+    "Sugar Land",
+    "Missouri City",
+    "Stafford",
+    "Pearland",
+    "Friendswood",
+    "Clear Lake",
+    "League City",
+    "Manvel",
+    "Alvin",
+    "Pinehurst",
+    "Sienna Plantation",
+    "Huntsville"
+  ],
+  "facts": [
+    {
+      "heading": "Office Hours",
+      "text": "6 AM to 9 PM, seven days a week."
+    },
+    {
+      "heading": "Free Estimates",
+      "items": [
+        "Free quote by phone at (281) 807-7900",
+        "Free online estimate request",
+        "Email sales@texasfence.com"
+      ]
+    },
+    {
+      "heading": "Warranty",
+      "text": "A one year workmanship warranty on every fence. Ask about manufacturer-backed coverage on gates and operators."
+    },
+    {
+      "heading": "Guarantee",
+      "text": "A 100% satisfaction guarantee, with a walkthrough of the finished work before the crew packs up."
+    },
+    {
+      "heading": "Licensed and Insured",
+      "text": "The installation team operates with full professional licensing and insurance coverage."
+    },
+    {
+      "heading": "Financing",
+      "items": [
+        "$0 money down and no interest for 18 months, based on approved credit",
+        "Promotional financing through Synchrony Bank on the Home Design credit card, subject to credit approval",
+        "A simple application process and fast credit decisions",
+        "Unsecured, revolving credit lines, convenient monthly payment options and online account management",
+        "Minimum monthly payments required",
+        "Purchase APR is 26.99% on new accounts; a $29 account activation fee applies and the minimum monthly interest charge is $2"
+      ]
+    },
+    {
+      "heading": "Project Range",
+      "text": "Installations and replacements start as low as $2,500 for smaller projects. Larger custom or premium work can range into the tens of thousands."
+    },
+    {
+      "heading": "Materials We Build In",
+      "items": [
+        "Western red cedar and treated pine",
+        "Iron and aluminum, pre-galvanized and powder coated",
+        "Bufftech vinyl by Barrett Outdoor Living",
+        "Hardie plank on steel frame",
+        "Chain link and Simtek",
+        "Brick and stone"
+      ]
+    },
+    {
+      "heading": "Awards and Memberships",
+      "items": [
+        "A+ Rating with the BBB",
+        "Aggie 100",
+        "Texas Fence Association (TFA)",
+        "American Fence Association (AFA)",
+        "Best Pick 2017",
+        "Best of Houzz 2024",
+        "Angi 2024"
+      ]
+    },
+    {
+      "heading": "Referral Program",
+      "items": [
+        "A $50 gift card for a referred job of $2,500 to $4,999",
+        "A $100 gift card for $5,000 to $9,999",
+        "A $200 gift card for $10,000 and above",
+        "You must be a Texas Fence customer, and the referral must result in a signed contract with 100% of both balances collected",
+        "One gift card per contract, and one contract per address location",
+        "Call the office or submit the online form to claim it after both balances are collected",
+        "The gift card is mailed to the address on record within 5 to 10 business days"
+      ]
+    },
+    {
+      "heading": "How We Build",
+      "items": [
+        "Initial consultation: we walk your property and recommend the best options",
+        "Custom design: height, layout and materials chosen with you",
+        "Permitting and HOA support: we handle city permits and HOA submittals",
+        "Professional installation by our own crews",
+        "Satisfaction walkthrough before we pack up"
+      ]
+    },
+    {
+      "heading": "Where Our Commercial Fences Go",
+      "items": [
+        "Warehouses and distribution centers",
+        "Schools and campuses",
+        "Apartment complexes",
+        "Office parks",
+        "Government facilities",
+        "Construction sites",
+        "Athletic fields and sports complexes"
+      ]
+    },
+    {
+      "heading": "Our Team",
+      "items": [
+        "Trey Burgess, General Manager",
+        "Chris Bankston, Production Manager",
+        "Jose Posada, Commercial Sales and Project Manager",
+        "Angel Gonzalez, Project Manager",
+        "Brad Snodgrass, In-House Sales and PM Admin",
+        "Shieana Rifanburg, Office Manager",
+        "Matt Loughery, Controller",
+        "Matt Pearson, Yard Manager",
+        "Chad Taylor, Fabricator",
+        "Alexander Tristan, Fence Technician",
+        "Salesmen Jon Long, Juan Enriquez, Ean Mizell, Bullet Fenske and Troy Bender"
+      ]
+    },
+    {
+      "heading": "Family Owned and Operated",
+      "text": "A family-owned, owner-operated team with over 23 years of experience in outdoor living construction, with a master carpenter personally overseeing every project."
+    },
+    {
+      "heading": "Insurance",
+      "text": "Texas Fence carries a liability insurance policy and is required to show a copy to commercial clients. A homeowner who asks for it is emailed a copy."
+    },
+    {
+      "heading": "Underground Utility Protection",
+      "text": "Texas Fence offers underground utility protection, covering electrical, water or gas lines under a yard that a utility provider would not mark, such as a sprinkler system or a gas line to a barbeque pit."
+    },
+    {
+      "heading": "Pergola Installation",
+      "text": "Pergola installation across Houston and neighboring areas including Katy, Cypress, The Woodlands, Sugar Land, Pearland, Kingwood and Spring. Houston-area pergolas average $4,000 to $12,000 and up depending on size, materials, roof style and add-ons, quoted free."
+    },
+    {
+      "heading": "Making a Difference",
+      "items": [
+        "A portion of every fence sold goes to help someone else",
+        "A nourishing lunch provided to the 1960 Hope Center each month, which serves homeless men and women",
+        "Two children sponsored through Compassion International",
+        "A proud supporter of Operation Finally Home, building fences for wounded, ill or injured veterans"
+      ]
+    },
+    {
+      "heading": "Service Area",
+      "text": "Commercial and residential fencing and gating services in over 40 neighborhoods in and around Houston, TX."
+    },
+    {
+      "heading": "Find Us",
+      "items": [
+        "Facebook: facebook.com/texasfenceco",
+        "Instagram: instagram.com/texasfenceco",
+        "YouTube: Texas Fence channel"
+      ]
+    }
+  ]
+}
