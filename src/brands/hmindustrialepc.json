@@ -1,0 +1,562 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "H+M Industrial EPC",
+  "shortName": "H+M",
+  "summary": "Engineering, procurement, fabrication and construction for capital projects in the energy, chemical and terminal and logistics industries, from our Pasadena campus.",
+  "phone": "(281) 930-8750",
+  "email": "info@hm-ec.com",
+  "address": "5820 Center St",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77505",
+  "rating": 4.5,
+  "reviewCount": 27,
+  "since": 1988,
+  "hours": [
+    ["Mon – Fri", "8 AM – 5 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#0f4b7d",
+    "primaryDeep": "#092e4c",
+    "accent": "#587e1f",
+    "ink": "#14181f",
+    "muted": "#4f6275",
+    "surface": "#eef3f8",
+    "line": "#d7e1ea",
+    "heading": "'PT Sans', system-ui, sans-serif",
+    "body": "'Lato', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Lato:wght@400;700;900&display=swap",
+    "logo": "/brands/hmindustrialepc/logo.webp",
+    "logoMono": "/brands/hmindustrialepc/logo-mono.webp",
+    "logoWidth": 120,
+    "logoHeight": 84,
+    "logoRatio": 1.423,
+    "logoGround": "#14181f",
+    "logoReads": [1.0, 0.989, 0.863, 0.736, 0.605, 0.533, 0.469, 0.406, 0.24, 0.215, 0.12]
+  },
+  "hero": {
+    "eyebrow": "Industrial EPC on the Texas Gulf Coast",
+    "title": "Engineering, procurement and construction,",
+    "titleAccent": "under one roof.",
+    "lead": "For more than 35 years we have provided capital project execution services to the energy, chemical, and terminal and logistics industries. Our engineering, procurement, fabrication and construction departments are all in-house, so work on your project can overlap stages rather than wait on a handoff.",
+    "image": "/brands/hmindustrialepc/hero",
+    "imageAlt": "An aerial view of a chemical plant with storage tanks and process units"
+  },
+  "groups": [
+    {
+      "slug": "front-end-planning",
+      "title": "Front-End Planning",
+      "icon": "compass",
+      "summary": "Scope, budget and schedule defined before the money is committed.",
+      "intro": "Whether your project requires a formal stage-gate approach or you need to determine the minimum information requirements for an EPC proposal, we provide the front-end planning service and support to help your company make the best investment decisions. Our in-house engineering expertise, tools and capital project resources help ensure on-time and in-budget outcomes.",
+      "image": "/brands/hmindustrialepc/planning",
+      "imageAlt": "Process equipment and piping at an industrial facility under a clear sky",
+      "services": [
+        {
+          "slug": "feasibility-studies",
+          "title": "Feasibility Studies",
+          "icon": "chart",
+          "text": "Our feasibility studies objectively determine and assess the strengths and weaknesses of the proposed project plan to determine viability.",
+          "points": [
+            "Feasibility criteria such as required costs and attainable value",
+            "The resources your project needs, identified up front"
+          ]
+        },
+        {
+          "slug": "process-engineering",
+          "title": "Process Engineering",
+          "icon": "settings",
+          "text": "A full range of process engineering services during front-end planning and throughout the life cycle of your project.",
+          "points": [
+            "Process simulation",
+            "Cost estimating",
+            "Equipment sizing and specification",
+            "Safety studies"
+          ]
+        },
+        {
+          "slug": "concept-development",
+          "title": "Concept Development",
+          "icon": "clipboard",
+          "text": "In-house technical advisory services for the overall front-end engineering design (FEED) package.",
+          "points": [
+            "All design aspects overseen by our experts",
+            "Project needs and challenges collected and prioritised",
+            "Concepts developed and optimised to meet your needs"
+          ]
+        },
+        {
+          "slug": "planning-and-budget-estimates",
+          "title": "Planning, Screening and Budget Estimates",
+          "icon": "gauge",
+          "text": "We develop detailed project plans that highlight the critical path for capital projects, establishing and refining budget estimates so they meet your investment objectives.",
+          "points": ["Schedule and budget certainty before execution"]
+        },
+        {
+          "slug": "detailed-scope-development",
+          "title": "Detailed Scope Development",
+          "icon": "ruler",
+          "text": "A strong scope definition is critical for the success of a capital project. We use proven procedures to establish all required deliverables, tasks, deadlines and costs.",
+          "points": ["Robust scope definition before design and construction begin"]
+        },
+        {
+          "slug": "constructability-analysis",
+          "title": "Constructability Analysis",
+          "icon": "building",
+          "text": "We bring our construction expertise into the early phases of your project to improve safety, increase quality, reduce costs and minimise schedule delays.",
+          "points": [
+            "Planning, layout, design and procurement considered together",
+            "Field delivery optimised before the first drawing is issued"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "engineering-and-design",
+      "title": "Detail Engineering and Design",
+      "icon": "ruler",
+      "summary": "Multi-discipline engineering, 3D modelling and laser scanning from a Houston-area team.",
+      "intro": "Capital project success requires an integrated approach that considers the whole project lifecycle, from initial planning to construction and operation. Our project managers, engineers and designers work closely with clients to develop solutions that meet their requirements, and we design using the same processes and data our construction and fabrication departments work from.",
+      "image": "/brands/hmindustrialepc/engineering",
+      "imageAlt": "A crane lifting steel at a plant construction site beside a waterway",
+      "services": [
+        {
+          "slug": "multi-discipline-engineering",
+          "title": "Multi-Discipline Engineering and Design",
+          "icon": "compass",
+          "text": "Decades of experience developing front-end engineering and design documentation, including process flow diagrams and hazard analyses.",
+          "points": [
+            "Civil and structural",
+            "Mechanical",
+            "Piping",
+            "Electrical and instrumentation",
+            "Controls"
+          ]
+        },
+        {
+          "slug": "3d-laser-scanning",
+          "title": "3D Laser Scanning",
+          "icon": "chart",
+          "text": "In-house scanning that gives dimensional accuracy, clash detection and clarity, integrated at every phase from front-end planning through construction.",
+          "points": [
+            "Virtual walkthroughs and model reviews with scan overlays",
+            "Scan integration into CADworx",
+            "Existing infrastructure overlaid with new",
+            "Verification of critical fabrication items"
+          ]
+        },
+        {
+          "slug": "constructability-reviews",
+          "title": "Constructability Reviews and Bid Packages",
+          "icon": "clipboard",
+          "text": "With engineering documentation in place, we establish the criteria for procurement and the contracting bid process.",
+          "points": ["Model reviews", "Specifications", "Cost estimates"]
+        },
+        {
+          "slug": "embedded-engineering",
+          "title": "Embedded Engineering and Project Staffing",
+          "icon": "shield",
+          "text": "Vetted engineering, project and project controls professionals embedded directly in your team through a managed secondment model, without permanent headcount risk.",
+          "points": [
+            "We recruit, vet and employ the professional",
+            "They work under your daily direction as part of your team",
+            "H+M keeps employment, payroll, benefits and replacement support",
+            "Each placement evaluated for technical fit and safety awareness"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "procurement",
+      "title": "Procurement",
+      "icon": "clipboard",
+      "summary": "Materials management and supplier coordination that keep deliveries ahead of the field.",
+      "intro": "Projects benefit from a complete procurement cycle that incorporates construction materials management. Because all our departments are in-house, information flows from engineering drawings, datasheets and model material take-offs through procurement and material management before it is issued to the field.",
+      "image": "/brands/hmindustrialepc/procurement",
+      "imageAlt": "Workers on a rebar mat at a construction site at sunrise",
+      "services": [
+        {
+          "slug": "requisition-planning",
+          "title": "Requisition Planning and Status Reporting",
+          "icon": "chart",
+          "text": "Detailed requisition planning based on schedule requirements to ensure proper sequencing and timely delivery.",
+          "points": [
+            "Pre-planning of purchase orders and material take-offs",
+            "Detailed internal and external status reporting"
+          ]
+        },
+        {
+          "slug": "supplier-management",
+          "title": "Supplier Management",
+          "icon": "shield",
+          "text": "We work frequently and closely with trusted suppliers, managing critical vendor data to ensure on-time delivery.",
+          "points": [
+            "Strong supplier relationships that hold schedule through the unforeseen",
+            "In-house coordination of the inspection level required for each purchase order",
+            "Inspectors engaged before site delivery to eliminate onsite delays"
+          ]
+        },
+        {
+          "slug": "supply-chain-database",
+          "title": "Master Supply Chain Database",
+          "icon": "settings",
+          "text": "Our proven supply chain management system converts engineering data to purchase orders and manages material allocation for construction.",
+          "points": ["Material specifications managed, or created for you"]
+        },
+        {
+          "slug": "material-storage",
+          "title": "Material Storage",
+          "icon": "building",
+          "text": "Ample material storage space, held under detailed storage procedures so materials are preserved properly until the field calls for them."
+        }
+      ]
+    },
+    {
+      "slug": "fabrication",
+      "title": "Fabrication",
+      "icon": "settings",
+      "summary": "Self-performed pipe, module and pressure vessel fabrication on our own campus.",
+      "intro": "We self-perform fabrication, which lets us hold schedule and monitor quality ourselves rather than through a third party. Our shop was expanded in 2020, tripling the previous production capacity, and sits on the same Pasadena campus as our corporate offices with more than 12 acres of lay-down area.",
+      "image": "/brands/hmindustrialepc/fabrication",
+      "imageAlt": "Workers rigging a large pipe spool with a carry-deck crane inside a fabrication shop",
+      "services": [
+        {
+          "slug": "industrial-pipe-fabrication",
+          "title": "Industrial Pipe Fabrication",
+          "icon": "waves",
+          "text": "Pipe spooling and fabrication across 50,000 square feet of dedicated fabrication space, with 16 welding stations and in-house inspection.",
+          "points": [
+            "Carbon, galvanized carbon, 300 series stainless, duplex and super duplex, Monel and most alloys in all diameters",
+            "Miller PipeWorx 400 welding systems and Regulated Metal Deposition",
+            "Plasma cutting stations and Jimmy Jammer semi-automatic welding",
+            "100% visual weld inspection, with PT, MT, UT thickness, hydrostatic, ferrite, Brinell and PMI in house"
+          ]
+        },
+        {
+          "slug": "modular-fabrication",
+          "title": "Modular Fabrication",
+          "icon": "building",
+          "text": "Construction performed in a controlled environment, which takes weather, scheduling conflicts and workforce gaps out of the critical path.",
+          "points": [
+            "Over 40,000 sq. ft. of shop space and 5,000 sq. ft. of covered assembly space",
+            "12 acres of lay-down area and a dedicated modular assembly crew",
+            "Heavy-duty cranes, including a 35-ton crane",
+            "Truckable modules for the process industries",
+            "Access to freeways and to waterways for larger modules"
+          ]
+        },
+        {
+          "slug": "pressure-vessel-fabrication",
+          "title": "Pressure Vessel Fabrication and Repair",
+          "icon": "shield",
+          "text": "Custom ASME pressure vessel and storage tank engineering, fabrication and delivery, plus repair work that avoids a full replacement.",
+          "points": [
+            "ASME U Stamp, pressure vessels up to 8' D x 50' L",
+            "Ferrous and non-ferrous alloys, process skids, pig launchers and receivers",
+            "UT, RT, MT, PWHT and testing services",
+            "ASME R Stamp repairs: nozzle replacements, flange refacing, reinforcement pads, weld overlay"
+          ]
+        },
+        {
+          "slug": "on-site-fabrication",
+          "title": "On-Site Fabrication",
+          "icon": "wrench",
+          "text": "Fabrication tailored to your specifications whether in our shop or out in the field, with our multi-discipline engineers behind it.",
+          "points": [
+            "Basket strainers, instrument cabinets, jacketed pipe, skids and engineered pipe supports",
+            "Quality assurance measures on every fabricated product"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "construction",
+      "title": "Construction and Maintenance",
+      "icon": "building",
+      "summary": "In-house craft for processing plants and terminals, and supervised contract maintenance.",
+      "intro": "From simple to complex capital projects, construction demands a team that understands the full scope of your vision. We bring civil, structural, shop fabrication, piping, equipment, electrical and instrumentation capability, and our System-Based Execution and Completion process gives oversight across estimation, execution, controls and turnover.",
+      "image": "/brands/hmindustrialepc/construction",
+      "imageAlt": "Stainless steel piping and valve manifolds installed inside a plant",
+      "services": [
+        {
+          "slug": "industrial-construction",
+          "title": "Industrial Construction",
+          "icon": "wrench",
+          "text": "We specialize in building everything you might need in your processing plant or terminal facility in Texas and along the Gulf Coast.",
+          "points": [
+            "Site development, foundations and paving",
+            "Pipe racks and equipment structures",
+            "Piping shop fabrication and installation",
+            "Dock construction and module fabrication",
+            "Equipment installation and code repairs",
+            "Emissions control systems, pump and metering systems",
+            "Drum and tote filling stations",
+            "Facility demolition and relocation"
+          ]
+        },
+        {
+          "slug": "industrial-maintenance",
+          "title": "Industrial Maintenance Services",
+          "icon": "shield",
+          "text": "Contract maintenance delivered through a fully supervised model where we own the workforce, the on-site leadership and the execution.",
+          "points": [
+            "H+M supervisors are H+M employees, accountable for daily work and safety standards",
+            "Stable, long-term crews that learn your facility",
+            "Mechanical, piping, electrical and instrumentation craft",
+            "Long-term maintenance agreements rather than low-bid churn",
+            "Engineering, procurement and fabrication available without adding contractors"
+          ]
+        },
+        {
+          "slug": "data-center-cooling",
+          "title": "Data Center Cooling Infrastructure EPC",
+          "icon": "waves",
+          "text": "Outside Battery Limits cooling-loop EPC for large-scale campuses that need industrial-grade piping, structural steel and mechanical execution, for hyperscale, enterprise and co-location facilities.",
+          "points": [
+            "High-volume chilled water and condenser water piping",
+            "Structural steel pipe racks, equipment supports and access platforms",
+            "Precision equipment setting for chillers, dry coolers and cooling towers",
+            "Carbon and stainless steel systems, thermal energy storage interconnections",
+            "Greenfield developments and brownfield campus expansions",
+            "Early constructability input during preconstruction"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Founded in 1988, and still building on the same Gulf Coast.",
+    "text": [
+      "In 1988, Larry Hogan and Dudley Masterson founded H&M Design, an industrial engineering and design firm in La Porte, TX. Construction was added to the service lines in 2001, which began the growth into full service solutions for clients, and the team moved to its current, larger Pasadena facility in 2009.",
+      "H&M Design was re-branded to H+M Industrial EPC in 2013 to communicate the full list of offerings to clients in the region. Brandon Hogan, P.E. was named President and CEO in 2017, and the Woodlands, TX office opened in 2019. The fabrication shop expansion completed in Q1 of 2020 tripled the previous production capacity.",
+      "Our vision is to be the preferred partner for EPC projects in the Energy and Chemicals industries, providing trust, expertise and efficiency. We provide maximum value to clients by hiring and retaining the best employees, developing future talent, and encouraging a culture of responsibility and accountability."
+    ],
+    "image": "/brands/hmindustrialepc/about",
+    "imageAlt": "An aerial view of a marine terminal dock with tankers moored alongside",
+    "values": [
+      {
+        "title": "Safety - Take it Personal",
+        "text": "Every job can and shall be performed safely. Our Lifesaving Rules and Extra Hazardous Work Program are followed on every job."
+      },
+      {
+        "title": "Client Experience",
+        "text": "We are all responsible for exceptional service. We listen, communicate and act with a sense of urgency, and strive for repeat business with every client."
+      },
+      {
+        "title": "Continuous Improvement",
+        "text": "We maintain strict adherence to work process to deliver consistent, high quality products, and take action from our Lessons Learned Program."
+      },
+      {
+        "title": "Team Success - Serve with integrity, drive, and commitment",
+        "text": "We operate in an ethical and fair way, foster a work environment based on dignity, respect and accountability, and put the interests of our clients, community and the long-term success of the team above self interests."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What do your detailed design engineering services cover?",
+      "a": "Comprehensive engineering and design services address all project areas, from conception to implementation."
+    },
+    {
+      "q": "What types of engineering and design services do you offer?",
+      "a": "Wide-ranging engineering and design services, including feasibility studies, front-end engineering and design (FEED), detailed design, and construction support services."
+    },
+    {
+      "q": "How are 3D models and simulation technologies used?",
+      "a": "3D models and simulations, using advanced technology and software tools, help customers visualize capital projects and identify possible concerns before construction begins."
+    },
+    {
+      "q": "What is the benefit of a long-term maintenance contract?",
+      "a": "A long-term maintenance contract improves continuity and performance by stabilizing the workforce and strengthening accountability. Facilities benefit from stable crews familiar with the site, dedicated supervision, and clearer ownership of outcomes across safety, quality, and productivity."
+    },
+    {
+      "q": "Why is supervised craft important for plant maintenance?",
+      "a": "Supervised craft is important because daily work quality, safety performance, and productivity are driven by direct field leadership. A supervised model creates clearer accountability at the point of execution and reduces the variability that comes from fragmented oversight and labor-only contractor structures."
+    },
+    {
+      "q": "How do your services improve efficiency and cost management?",
+      "a": "Our approach is centered on improving project efficiency and cost-effectiveness through strategic planning, advanced technologies, and experienced project execution."
+    },
+    {
+      "q": "How do you reduce contractor churn in industrial facilities?",
+      "a": "H+M reduces contractor churn by employing a stable workforce model supported by dedicated H+M on-site supervision. Because we own the workforce and the on-site leadership, facilities avoid the rotating crew problem that creates repeated resets in performance and safety consistency."
+    },
+    {
+      "q": "What is OSBL cooling-loop EPC?",
+      "a": "Outside Battery Limits cooling-loop EPC refers to the piping, structural steel, and cooling equipment installation that connect data center cooling systems outside the data hall across a campus. It typically includes chilled water and condenser water systems serving one or multiple buildings or phases."
+    },
+    {
+      "q": "When should a data center cooling contractor be engaged?",
+      "a": "Early involvement during preconstruction allows cooling-loop execution strategy, fabrication planning, structural coordination, and labor strategy alignment with overall campus phasing and schedule milestones."
+    },
+    {
+      "q": "How is industrial piping for data centers different from commercial HVAC piping?",
+      "a": "Industrial piping for data centers involves larger diameters, heavier materials, greater structural integration, and more complex sequencing across multi-building campuses than interior commercial HVAC systems. It requires industrial-grade supervision and execution depth to maintain productivity and schedule performance."
+    },
+    {
+      "q": "Can H+M handle cooling infrastructure for multi-phase hyperscale campuses?",
+      "a": "Yes. Our OSBL cooling-loop EPC model is structured specifically for phased campus delivery, with integrated engineering, fabrication and construction teams engaged early to align cooling-loop sequencing with staggered building delivery, shared infrastructure tie-ins and expansion allowances for future phases."
+    }
+  ],
+  "serviceArea": [
+    "Pasadena",
+    "Houston",
+    "The Woodlands",
+    "Lake Jackson",
+    "Corpus Christi",
+    "South Texas",
+    "Texas Gulf Coast",
+    "Louisiana",
+    "Arkansas",
+    "New Mexico",
+    "Oklahoma"
+  ],
+  "facts": [
+    {
+      "heading": "Industries We Serve",
+      "items": [
+        "Chemicals and refining",
+        "Terminals and midstream",
+        "Energy transition",
+        "Industrial manufacturing",
+        "Data center cooling infrastructure"
+      ]
+    },
+    {
+      "heading": "Licensed In",
+      "text": "H+M is licensed in Texas, Louisiana, New Mexico and Oklahoma, and that list grows as our clients need it. In Louisiana and Texas we can complete all stages in-house, from detail engineering to construction and commissioning."
+    },
+    {
+      "heading": "Certifications",
+      "items": [
+        "ASME Section VIII vessel design and fabrication",
+        "ASME B31.3, B31.8 and B31.4 compliance",
+        "API 1104 welding standards",
+        "NBIC code certificates for R, S and U",
+        "Welders, inspectors and pipefitters certified to ASME, API and ASNT standards"
+      ]
+    },
+    {
+      "heading": "Offices",
+      "items": [
+        "Corporate: 5820 Center St., Pasadena, TX 77505 — 281-930-8750 or 713-218-3519",
+        "Freeport: 122 West Way St., Suite 300, Lake Jackson, TX 77566 — 346-698-1500",
+        "The Woodlands: 1780 Hughes Landing Blvd., Ste 565, The Woodlands, TX 77380 — 281-930-8750",
+        "Corpus Christi: 1959 Saratoga Blvd., Bldg. 11, Corpus Christi, TX 78417 — 361-445-7197"
+      ]
+    },
+    {
+      "heading": "Safety and Quality",
+      "text": "Our safety motto is \"Inspiring a Lifestyle of Safety.\" Every EPC project is evaluated for extra hazardous potential in the estimating and proposal phase using an EHW checklist; where it is identified, Safe Work Plans are created and must be approved by Corporate Management before work begins. Job Safety Analysis is the second line of defence, and crews can stop the job at any point."
+    },
+    {
+      "heading": "Awards",
+      "items": [
+        "Houston Chronicle Top Workplace: 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2015, 2014 and 2013",
+        "Named one of America's Safest Companies by EHS Today for 2017",
+        "Safety Excellence Awards, \"Best in Class\", 2022 and 2024",
+        "Houston Business Journal Fast 100: 2020, 2017, 2016, 2015 and 2014",
+        "Larry Hogan, H+M Founder, named a 2017 CEO Who \"Gets It\" by the National Safety Council"
+      ]
+    },
+    {
+      "heading": "Associations",
+      "items": [
+        "GPA Midstream - Supplier Association (GPSA)",
+        "Construction Industry Institute (CII)",
+        "Pasadena Chamber of Commerce",
+        "Economic Alliance - Houston Port Region",
+        "Houston Area Safety Council, Platinum Sponsor"
+      ]
+    },
+    {
+      "heading": "Leadership",
+      "items": [
+        "Larry Hogan, Founder",
+        "Brandon Hogan, P.E., Chief Executive Officer",
+        "Matthew McQuinn, President and Chief Operating Officer",
+        "Jet Tantibanchachai, Chief Financial Officer",
+        "Brandy Cates, VP of Human Resources",
+        "Brad Sawyer, VP of Business Development",
+        "Archie Alexander, VP of Project Execution",
+        "Jay Bice, SMS, CHST, Director of Health, Safety and Environmental",
+        "Robert Smith, P.E., Director of Engineering",
+        "David Bull, Director of Project Management",
+        "Terry Baker, Director of Supply Chain Management",
+        "Justin Fisher, Director of Construction",
+        "Bill Gassmann, Director of Estimating",
+        "Divyen Jivan, Senior Project Manager",
+        "Jessica Adams, P.E., Senior Project Manager",
+        "Megan Berryhill, Business Development — 281-930-8750"
+      ]
+    },
+    {
+      "heading": "In the Community",
+      "text": "Since 2015 we have partnered with Project Joy and Hope, delivered more than a ton of food to the Houston Food Bank, donated units to blood centers across the region, and provided annual scholarships to high school seniors in our area. The Foundation, our young professionals group, meets monthly for learning, team building and networking."
+    },
+    {
+      "heading": "Careers and Training",
+      "text": "Our EPC Training Program is a rotational program that takes engineers through the Engineering, Procurement and Construction phases of a project before they settle into an area, and applications are submitted on the program page. Open roles are posted on our job listings page across Engineering, HSE, Maintenance and Skilled Craft, in Pasadena, Odessa and Sugar Land, TX. Contact us at info@hm-ec.com or 281-930-8750 to ask about either."
+    },
+    {
+      "heading": "Safety Performance",
+      "items": [
+        "94.32% internal HSE performance rating",
+        "0.33 TRIR in 2019",
+        "Zero loss time in 2019",
+        "80+ EHW programs safely performed"
+      ]
+    },
+    {
+      "heading": "H+M Modular",
+      "text": "H+M Modular is our dedicated modular team, providing truckable modules for industries across the energy space, with design and build self-performed by H+M employees and work backed by our R Stamp and U Stamp certifications."
+    },
+    {
+      "heading": "Modular Experience Includes",
+      "items": [
+        "Pipe rack modules",
+        "Water injection skids",
+        "LACT skids",
+        "Compressor skids",
+        "Refrigeration units",
+        "Metering skids",
+        "Pump skids",
+        "Loading manifolds",
+        "Scrubber skids",
+        "Water treatment modules",
+        "Waste gas skids",
+        "Abatement modules",
+        "Pilot plant modules"
+      ]
+    },
+    {
+      "heading": "Projects",
+      "items": [
+        "Brownfield custom-design scrubber",
+        "EPC dock project",
+        "Firewater system revamp",
+        "Chemical plant reactor systems upgrade",
+        "Thermal oxidizer construction",
+        "Manifold and dock pump mechanical install",
+        "Underwater pelletizing system",
+        "Mercaptan removal",
+        "Underground piping",
+        "Oxygen piping system",
+        "Debottlenecking project"
+      ]
+    },
+    {
+      "heading": "Follow Us",
+      "items": [
+        "facebook.com/HM.Industrial.EPC",
+        "twitter.com/HM_Industrial",
+        "LinkedIn: H+M Industrial EPC"
+      ]
+    }
+  ]
+}

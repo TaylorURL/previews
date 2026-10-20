@@ -244,6 +244,9 @@ def names_the_business(title, own):
 # An address at one of these is a person's own, not another business's.
 FREE_MAIL = re.compile(r"@(gmail|yahoo|hotmail|outlook|live|msn|aol|icloud|me|att|sbcglobal|comcast|bellsouth|ymail|protonmail)\.", re.I)
 MAILTO = re.compile(r"^mailto:([^?\s]+@[^?\s]+)", re.I)
+# An address for investors, the press, job seekers or the website itself is not
+# where a customer asks for work.
+NOT_FOR_CUSTOMERS = re.compile(r"^(ir|investors?|investor[._-]?relations|shareholders?|media|press|pr|careers?|jobs|recruiting|hr|privacy|legal|compliance|ethics|webmaster|no-?reply|do-?not-?reply)@", re.I)
 
 
 def email_of(stored, pages, business):
@@ -251,13 +254,17 @@ def email_of(stored, pages, business):
     it is at their own website's domain, a free mail address, or one their own
     pages list, and otherwise the first their pages list at their own domain.
     An address at another business's domain (a listing that carries the email
-    of a practice they share a building or an owner with) is never shown."""
+    of a practice they share a building or an owner with), or one meant for
+    investors, the press or job seekers, is never shown."""
     host = urllib.parse.urlparse(pages[0].url).netloc.lower().replace("www.", "")
     listed = [m.group(1).lower() for page in pages for href, _ in page.links if (m := MAILTO.match(href.strip()))]
     if isinstance(business.get("email"), str):
         listed.append(business["email"].lower().removeprefix("mailto:"))
+    listed = [e for e in listed if not NOT_FOR_CUSTOMERS.match(e)]
     own = lambda e: e.rsplit("@", 1)[-1] == host
     stored = plain(stored).lower()
+    if NOT_FOR_CUSTOMERS.match(stored):
+        stored = ""
     if stored and (own(stored) or FREE_MAIL.search(stored) or stored in listed):
         return stored
     return next((e for e in listed if own(e)), None)

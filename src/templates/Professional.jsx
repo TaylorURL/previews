@@ -1137,7 +1137,12 @@ function TeamPage(props) {
   const cols = alone ? '' : team.length === 2 || lone ? 'sm:grid-cols-2' : 'sm:grid-cols-2 lg:grid-cols-3';
   const row = photos
     ? 'sm:grid sm:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] sm:items-center sm:gap-x-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]'
-    : 'lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] lg:gap-x-12';
+    : 'lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] lg:grid-rows-[auto_1fr] lg:gap-x-12';
+  // One person's bio with no photo beside it leaves the column under their name
+  // empty, so the colleagues known only by name are listed there (after the bio on a phone).
+  const beside = alone && !photos && named.length > 0;
+  // The names-only list takes as many columns as there are people, up to three.
+  const namedCols = named.length === 1 ? '' : named.length === 2 || named.length === 4 ? 'sm:grid-cols-2' : 'sm:grid-cols-2 lg:grid-cols-3';
   return (
     <>
       <PageHero trail={[['/', 'Home'], [null, 'Our Team']]} eyebrow={<Eyebrow>Our team</Eyebrow>} title={`The people behind ${b.shortName}`} text={b.tagline} />
@@ -1161,12 +1166,22 @@ function TeamPage(props) {
                 <p className="mt-1 text-[13px] font-bold uppercase tracking-[0.14em] text-accent">{p.role}</p>
                 {p.bio && photos && <p className="mt-3 text-base leading-[1.6] text-muted">{p.bio}</p>}
               </div>
-              {p.bio && !photos && <p className={`mt-3 text-base leading-[1.6] text-muted ${alone ? 'lg:mt-0 lg:text-lg' : ''}`}>{p.bio}</p>}
+              {p.bio && !photos && <p className={`mt-3 text-base leading-[1.6] text-muted ${alone ? 'lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:mt-0 lg:text-lg' : ''}`}>{p.bio}</p>}
+              {beside && (
+                <ul className="mt-10 grid gap-y-6 lg:col-start-1 lg:mt-10">
+                  {named.map((n) => (
+                    <li key={n.name} className="min-w-0 border-t border-line pt-4">
+                      <h2 className="font-heading font-display-2 text-lg leading-snug text-ink">{n.name}</h2>
+                      <p className="mt-1 text-[13px] font-bold uppercase tracking-[0.14em] text-accent">{n.role}</p>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
         </ul>
-        {named.length > 0 && (
-          <ul className={`${wrap} mt-16 grid gap-x-6 gap-y-6 sm:grid-cols-2 lg:grid-cols-3`}>
+        {named.length > 0 && !beside && (
+          <ul className={`${wrap} mt-16 grid gap-x-6 gap-y-6 ${namedCols}`}>
             {named.map((p) => (
               <li key={p.name} className="min-w-0 border-t border-line pt-4">
                 <h2 className="font-heading font-display-2 text-lg leading-snug text-ink">{p.name}</h2>

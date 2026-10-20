@@ -1,0 +1,327 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Martin Marine",
+  "shortName": "Martin Marine",
+  "summary": "Marine transportation of petroleum products and by-products largely in the Gulf Coast region, run from the Martin Marine regional office in La Porte.",
+  "phone": "(281) 471-2211",
+  "address": "2904 N 23rd St",
+  "town": "La Porte",
+  "state": "TX",
+  "zip": "77571",
+  "rating": 4.5,
+  "reviewCount": 21,
+  "brand": {
+    "primary": "#003e7e",
+    "primaryDeep": "#002a56",
+    "accent": "#e8453a",
+    "ink": "#2f2d2d",
+    "muted": "#585555",
+    "surface": "#eef3f9",
+    "line": "#d5dfea",
+    "heading": "'Lato', system-ui, sans-serif",
+    "body": "'Lato', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap",
+    "logo": "/brands/martinmarine/logo.webp",
+    "logoMono": "/brands/martinmarine/logo-mono.webp",
+    "logoWidth": 186,
+    "logoHeight": 74,
+    "logoRatio": 2.513,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.33,
+      0.197,
+      0.07,
+      0.0,
+      0.209,
+      0.344,
+      0.471,
+      0.599,
+      0.735,
+      0.872,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Marine transportation on the U.S. Gulf Coast",
+    "title": "A fleet of tank barges and push boats,",
+    "titleAccent": "working the Gulf Coast.",
+    "lead": "We utilize a fleet of inland marine tank barges, inland push boats, and one offshore tug/barge unit to transport petroleum products and by-products largely in the Gulf Coast region.",
+    "image": "/brands/martinmarine/hero",
+    "imageAlt": "Two towboats pushing loaded barge tows along a wide inland river, seen from the air"
+  },
+  "groups": [
+    {
+      "slug": "inland-tank-barges",
+      "title": "Inland Tank Barges",
+      "icon": "waves",
+      "summary": "Inland marine tank barges moving petroleum products, by-products and specialty products.",
+      "intro": "The inland barge fleet is the core of Martin Marine. Twenty-nine inland tank barges are listed in the fleet, each one published with its own vessel profile, certificate of inspection, certificate of documentation and strappings.",
+      "image": "/brands/martinmarine/barges",
+      "imageAlt": "A long flat-decked barge made up alongside a towboat on a river bank",
+      "services": [
+        {
+          "slug": "petroleum-products",
+          "title": "Petroleum Products",
+          "icon": "droplets",
+          "text": "Petroleum products moved by inland tank barge for major and independent oil and gas refining companies and petroleum marketing companies.",
+          "points": [
+            "Movements largely in the Gulf Coast region",
+            "Twenty-nine inland tank barges in the fleet"
+          ]
+        },
+        {
+          "slug": "petroleum-by-products",
+          "title": "Petroleum By-Products",
+          "icon": "waves",
+          "text": "By-products collected, transported and delivered for producers and purchasers who turn to third parties for the disposition of these products.",
+          "points": [
+            "The same by-products handled across Martin Midstream's terminalling and storage business"
+          ]
+        },
+        {
+          "slug": "specialty-products",
+          "title": "Specialty Products",
+          "icon": "shield",
+          "text": "Our robust fleet contains vessels that reflect our focus on the transportation of specialty products.",
+          "points": [
+            "Barges in the MGM, MMLP, TTT and MF series",
+            "Products that require specialized treatment"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "push-boats-and-offshore",
+      "title": "Push Boats and Offshore Units",
+      "icon": "compass",
+      "summary": "Seventeen inland push boats and the offshore tug and barge units that work beyond the inland waterway.",
+      "intro": "Barges do not move themselves. Martin Marine runs seventeen inland push boats and, offshore, the boats and articulated tug/barge units that carry the same products past the inland waterway.",
+      "image": "/brands/martinmarine/pushboats",
+      "imageAlt": "A push boat working a loaded barge beneath a steel river bridge",
+      "services": [
+        {
+          "slug": "inland-push-boats",
+          "title": "Inland Push Boats",
+          "icon": "settings",
+          "text": "Seventeen inland push boats are listed in the fleet, each with a published vessel profile, radio license, certificate of inspection, certificate of documentation and strappings.",
+          "points": [
+            "Martin Captain, Martin Challenger and Martin Express",
+            "CPL Jacob C Leicht and LCPL Phillip C. George",
+            "JoAnn Edwards, Joel Smith, Larry B Whipple and Lester Fulfer",
+            "Mary Roberts, Monica Means, Miss Sally Dane and Peter Brent Ice",
+            "Terry Conner, Terry Fontenot, Brian Hamilton and MMLP 2603"
+          ]
+        },
+        {
+          "slug": "offshore-tug-barge",
+          "title": "Offshore Tug and Barge",
+          "icon": "gauge",
+          "text": "One offshore tug/barge unit works beyond the inland waterway, carrying the same petroleum products and by-products.",
+          "points": [
+            "Offshore boats LaForce and Martin Explorer",
+            "Offshore tug/barge units M6000 and Margaret Sue",
+            "SOPEP approval letters and vessel response plans published for the offshore fleet"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "vessel-documentation",
+      "title": "Vessel Documentation",
+      "icon": "clipboard",
+      "summary": "Every vessel in the fleet is published with its own profile and certificates.",
+      "intro": "Customers and inspectors do not have to ask for paperwork. Martin Marine publishes the documents for each boat and barge in the fleet, so a vessel profile, a certificate or a set of strappings can be pulled before a movement rather than after it.",
+      "services": [
+        {
+          "slug": "vessel-profiles",
+          "title": "Vessel Profiles",
+          "icon": "clipboard",
+          "text": "A profile is published for each push boat, tank barge and offshore unit in the fleet."
+        },
+        {
+          "slug": "certificates-of-inspection",
+          "title": "Certificates of Inspection",
+          "icon": "shield",
+          "text": "Current certificates of inspection are published alongside each vessel."
+        },
+        {
+          "slug": "certificates-of-documentation",
+          "title": "Certificates of Documentation",
+          "icon": "chart",
+          "text": "Certificates of documentation are published for the boats and barges in the fleet."
+        },
+        {
+          "slug": "radio-licenses",
+          "title": "Radio Licenses",
+          "icon": "cable",
+          "text": "Radio licenses are published for the push boats and offshore vessels."
+        },
+        {
+          "slug": "strappings",
+          "title": "Strappings",
+          "icon": "gauge",
+          "text": "Strappings are published for the tank barges and the boats that carry product."
+        },
+        {
+          "slug": "response-plans",
+          "title": "Response Plans",
+          "icon": "shield",
+          "text": "Vessel response plans and SOPEP approval letters are published for the offshore fleet."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Marine transportation, built up over more than sixty years.",
+    "text": [
+      "Martin Marine is the marine transportation business of Martin Midstream Partners L.P., and its regional office is at 2904 N. 23rd St. in La Porte. We utilize a fleet of inland marine tank barges, inland push boats, and one offshore tug/barge unit to transport petroleum products and by-products largely in the Gulf Coast region.",
+      "Martin Midstream was formed in 2002 by Martin Resource Management Corporation, a privately held company whose initial predecessor was incorporated in 1951 as a supplier of products and services to drilling rig contractors. The current lines of business were developed and systematically integrated over a period of more than 60 years, including natural gas services and land transportation in the 1950s, sulfur in the 1960s, marine transportation in the late 1980s, and terminalling and storage in the early 1990s.",
+      "Our largest marine transportation customers include major and independent oil and gas refining companies, petroleum marketing companies, and Martin Resource Management Corporation. Additionally, our robust fleet contains vessels that reflect our focus on the transportation of specialty products."
+    ],
+    "image": "/brands/martinmarine/about",
+    "imageAlt": "An inland waterway winding through coastal marsh with barge tows under way, seen from the air",
+    "values": [
+      {
+        "title": "Gulf Coast focus",
+        "text": "We operate primarily in the U.S. Gulf Coast region, a major hub for petroleum refining and natural gas gathering and processing."
+      },
+      {
+        "title": "A documented fleet",
+        "text": "Every boat and barge is published with its profile, certificates, radio license and strappings."
+      },
+      {
+        "title": "Integrated with the rest of Martin",
+        "text": "Marine transportation sits beside terminalling and storage, specialty products, sulfur services and land transportation."
+      }
+    ]
+  },
+  "serviceArea": [
+    "La Porte",
+    "Galveston",
+    "Beaumont",
+    "Port O'Connor",
+    "Theodore",
+    "Tampa"
+  ],
+  "facts": [
+    {
+      "heading": "The Fleet",
+      "items": [
+        "29 inland tank barges",
+        "17 inland push boats",
+        "2 offshore boats: LaForce and Martin Explorer",
+        "2 offshore tug/barge units: M6000 and Margaret Sue"
+      ]
+    },
+    {
+      "heading": "Our Customers",
+      "text": "Our largest marine transportation customers include major and independent oil and gas refining companies, petroleum marketing companies, and Martin Resource Management Corporation."
+    },
+    {
+      "heading": "Marine Locations",
+      "items": [
+        "Martin Marine La Porte, 2904 N. 23rd St., La Porte, TX 77571, 281-471-2211",
+        "Martin Marine Galveston, 200 Pennzoil Road, Galveston, TX 77554, 281-842-3950",
+        "Tampa, 4118 Pendola Point Rd., Tampa, FL 33619, 813-247-5063"
+      ]
+    },
+    {
+      "heading": "Corporate Offices",
+      "items": [
+        "MMLP Corporate Headquarters, 4200 B Stone Rd., Kilgore, TX 75662, 903-983-6200",
+        "Regional Office Houston, Three Riverway Suite 400, Houston, TX 77056, 713-350-6800 or 800-962-8307",
+        "Mailing: P.O. Box 191, Kilgore, TX 75663"
+      ]
+    },
+    {
+      "heading": "General Contacts",
+      "items": [
+        "General information: (800) 256-6644",
+        "Fax: (903) 983-6271",
+        "Investor relations: ir@mmlp.com",
+        "Human Resources, for anything needing personal information: (903) 983-6288"
+      ]
+    },
+    {
+      "heading": "Vessel Documents Published",
+      "items": [
+        "Vessel Profile",
+        "Certificate of Inspection",
+        "Certificate of Documentation",
+        "Radio License",
+        "Strappings",
+        "Vessel Response Plan and SOPEP Approval Letter"
+      ]
+    },
+    {
+      "heading": "Part Of Martin Midstream Partners",
+      "text": "Martin Midstream Partners L.P. is a publicly traded limited partnership with four primary business lines: terminalling, processing and storage; land and marine transportation; sulfur and sulfur-based products; and natural gas liquids, specialty lubricants and grease."
+    },
+    {
+      "heading": "The Rest Of Martin Midstream",
+      "items": [
+        "Terminalling and storage: 12 marine shore-based terminals and 9 specialty terminals",
+        "Land transportation: 23 terminals, more than 700 trucks and 1,200 trailers",
+        "Sulfur services and Martin Lubricants and Specialty Products"
+      ]
+    },
+    {
+      "heading": "Gulf Coast Terminal Footprint",
+      "text": "Martin Midstream owns or operates 12 marine terminals along the United States Gulf Coast from Theodore, Alabama, to Port O'Connor, Texas, and is one of the largest operators of marine service terminals in the Gulf Coast region."
+    },
+    {
+      "heading": "Named Terminals",
+      "items": [
+        "Neches, a deep water marine terminal near Beaumont, Texas, on about 50 acres",
+        "Stanolind, on the Neches River in Beaumont, Texas, on about 11 acres",
+        "Tampa, on about 10 acres of land owned by the Tampa Port Authority",
+        "Ouachita County, on the Ouachita River in southern Arkansas, on about six acres",
+        "Three full service terminals, 13 lubricant and fuel oil terminals and 9 specialty petroleum terminals"
+      ]
+    },
+    {
+      "heading": "Shore Base Support",
+      "text": "Full service terminals provide shore bases for companies operating in the offshore exploration and production industry, including storing and handling tubular goods, loading and unloading bulk materials, facilities from which oil companies communicate with and control offshore operations, and dockside facilities leased to companies providing drilling fluids and cementing services."
+    },
+    {
+      "heading": "Marine Leadership",
+      "items": [
+        "Rick Freed, Vice President - Marine, who joined Martin Midstream in 2007 after 23 years in the United States Coast Guard",
+        "T. Damon King, Senior Vice President - Shore Bases, in the energy industry over 30 years",
+        "Randall L. Tauscher, Executive Vice President and Chief Operating Officer",
+        "Scot Shoup, Senior Vice President - Operations",
+        "Robert D. Bondurant, President, Chief Executive Officer and Director"
+      ]
+    },
+    {
+      "heading": "Marine Acquisitions",
+      "text": "Martin acquired Tesoro Marine Services in 2003."
+    },
+    {
+      "heading": "Our Sponsor",
+      "text": "Our general partner is owned by Martin Resource Management Corporation, an independent provider of marketing and distribution of fuel oil, asphalt, diesel fuel and naphthenic lubricants that markets over 250 million gallons of diesel fuel and lubricants per year along the Gulf Coast."
+    },
+    {
+      "heading": "Managers",
+      "text": "Shawn Roberts manages Martin Marine in Galveston, at 281-842-3914 and shawn.roberts@martinmlp.com."
+    },
+    {
+      "heading": "Careers",
+      "text": "Openings across the Martin companies are posted at themartincompanies.com/careers."
+    },
+    {
+      "heading": "Ethics Hotline",
+      "text": "Martin Midstream runs an ethics hotline through EthicsPoint at secure.ethicspoint.com."
+    },
+    {
+      "heading": "Follow Us",
+      "items": [
+        "Facebook: facebook.com/martinmidstreampartners",
+        "LinkedIn: linkedin.com/company/martin-midstream-partners-l-p-"
+      ]
+    }
+  ]
+}

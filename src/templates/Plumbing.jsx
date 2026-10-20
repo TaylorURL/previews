@@ -181,8 +181,8 @@ function Hero({ b, tel, rating }) {
         className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,color-mix(in_srgb,var(--primaryDeep)_92%,transparent)_0%,color-mix(in_srgb,var(--primaryDeep)_80%,transparent)_60%,color-mix(in_srgb,var(--primaryDeep)_55%,transparent)_100%)] lg:bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_95%,transparent)_0%,color-mix(in_srgb,var(--primaryDeep)_82%,transparent)_45%,color-mix(in_srgb,var(--primaryDeep)_10%,transparent)_100%)]"
         aria-hidden="true"
       />
-      <div className={`${wrap} flex min-h-[min(78vh,700px)] items-center pb-16 pt-14 sm:pb-20 lg:py-24`}>
-        <div className="w-full max-w-[44rem] lg:max-w-[41rem]">
+      <div className={`${wrap} flex min-h-[min(78vh,700px)] items-center gap-16 pb-16 pt-14 sm:pb-20 lg:py-24 xl:gap-24`}>
+        <div className="w-full max-w-[44rem] lg:max-w-[41rem] lg:flex-none">
           <Eyebrow dark>{b.hero.eyebrow}</Eyebrow>
           <h1 className="break-words font-heading text-[clamp(2.25rem,1.05rem+4vw,4.25rem)] font-extrabold leading-[1.03] tracking-[-0.015em] [text-wrap:balance]">
             {b.hero.title} <span className="text-accent">{b.hero.titleAccent}</span>
@@ -202,6 +202,37 @@ function Hero({ b, tel, rating }) {
             </p>
           )}
         </div>
+        {/* Without a photo the right half holds the phone, hours and address, so it is not left empty. */}
+        {!b.hero.image && (
+          <aside className="hidden min-w-0 flex-1 rounded-lg border border-white/15 bg-white/[0.06] p-8 lg:block xl:p-10">
+            <p className="text-[13px] font-bold uppercase tracking-[0.14em] text-white/70">Call now</p>
+            <a href={tel} className="mt-2 block font-heading text-[clamp(1.75rem,1rem+1.6vw,2.5rem)] font-extrabold leading-tight text-accent no-underline">
+              {b.phone}
+            </a>
+            {b.hours?.length > 0 && (
+              <table className="mt-6 w-full border-collapse">
+                <caption className="sr-only">Opening hours</caption>
+                <tbody>
+                  {b.hours.map(([d, h]) => (
+                    <tr key={d} className="border-b border-white/15">
+                      <th scope="row" className="py-3 pr-4 text-left font-semibold text-white/70">
+                        {d}
+                      </th>
+                      <td className="py-3 text-right font-semibold">{h}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            )}
+            <a href={mapsHref(b)} className="mt-6 flex items-start gap-3 font-semibold leading-[1.5] text-white/90 no-underline hover:text-white">
+              <MapPin size={18} className="mt-0.5 flex-none text-accent" aria-hidden="true" />
+              <span className="min-w-0 break-words">
+                {[b.address, b.town].filter(Boolean).join(', ')}, {b.state}
+                {b.zip ? ` ${b.zip}` : ''}
+              </span>
+            </a>
+          </aside>
+        )}
       </div>
       {b.hero.mascot && (
         <figure className="pointer-events-none absolute bottom-0 right-2 m-0 hidden w-[clamp(150px,15vw,220px)] animate-peek drop-shadow-2xl md:block lg:right-[6%]">
@@ -306,6 +337,7 @@ export default function Plumbing({ b }) {
       </section>
 
       <section id="why" className={`${anchor} bg-surface ${pad}`}>
+        {/* Without a photo the heading and words take the left half and the numbered points the right, so neither half is left empty. */}
         <div className={`${wrap} grid items-center gap-10 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-20`}>
           <Img
             className="aspect-[4/3] w-full rounded-lg object-cover md:aspect-[4/5]"
@@ -313,11 +345,13 @@ export default function Plumbing({ b }) {
             alt={b.crew.imageAlt}
             sizes="(max-width: 768px) 100vw, 45vw"
           />
-          <div>
-            <Eyebrow>{b.crew.eyebrow}</Eyebrow>
-            <h2 className={h2}>{b.crew.title}</h2>
-            <p className="mt-5 text-[17px] leading-[1.65] text-ink/80 sm:text-[18px]">{b.crew.text}</p>
-            <ol className="mt-8 grid">
+          <div className={b.crew.image ? '' : 'contents'}>
+            <div>
+              <Eyebrow>{b.crew.eyebrow}</Eyebrow>
+              <h2 className={h2}>{b.crew.title}</h2>
+              <p className="mt-5 text-[17px] leading-[1.65] text-ink/80 sm:text-[18px]">{b.crew.text}</p>
+            </div>
+            <ol className={`grid ${b.crew.image ? 'mt-8' : ''}`}>
               {b.crew.points.map((p, i) => (
                 <li key={p.title} className="flex gap-4 border-t border-ink/10 py-5 sm:gap-5">
                   <span className="w-9 flex-none font-heading text-[26px] font-extrabold leading-none text-primary">
@@ -375,12 +409,17 @@ export default function Plumbing({ b }) {
           className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_94%,transparent),color-mix(in_srgb,var(--primaryDeep)_78%,transparent)_60%,color-mix(in_srgb,var(--primaryDeep)_45%,transparent))]"
           aria-hidden="true"
         />
+        {/* Without a photo the towns take the right half beside the heading, so it is not left empty. */}
         <div className={`${wrap} py-[clamp(4.5rem,10vw,7.5rem)]`}>
-          <div className="max-w-[48rem]">
-            <Eyebrow dark>Service area</Eyebrow>
-            <h2 className={h2}>{b.band.title}</h2>
-            <p className="mt-4 max-w-[36rem] text-[17px] leading-[1.6] text-white/90 sm:text-[18px]">{b.band.text}</p>
-            <ul className="mt-7 flex flex-wrap gap-2">
+          <div
+            className={b.band.image ? 'max-w-[48rem]' : 'grid items-center lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-x-20'}
+          >
+            <div className={b.band.image ? 'contents' : 'lg:row-span-2'}>
+              <Eyebrow dark>Service area</Eyebrow>
+              <h2 className={h2}>{b.band.title}</h2>
+              <p className="mt-4 max-w-[36rem] text-[17px] leading-[1.6] text-white/90 sm:text-[18px]">{b.band.text}</p>
+            </div>
+            <ul className={`mt-7 flex flex-wrap gap-2 ${b.band.image ? '' : 'lg:mt-0'}`}>
               {b.serviceArea.map((t) => (
                 <li
                   key={t}
@@ -390,7 +429,7 @@ export default function Plumbing({ b }) {
                 </li>
               ))}
             </ul>
-            <a href={tel} className={`${btn} mt-9 w-full bg-accent text-ink hover:brightness-105 sm:w-auto`}>
+            <a href={tel} className={`${btn} mt-9 w-full justify-self-start bg-accent text-ink hover:brightness-105 sm:w-auto`}>
               <Phone size={18} aria-hidden="true" /> Call {b.phone}
             </a>
           </div>

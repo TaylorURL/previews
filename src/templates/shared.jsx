@@ -22,6 +22,9 @@ export function Stars({ value = 5, size = 16, className = 'text-star' }) {
 /** A responsive image from a brand file path or an Unsplash URL. */
 export function Img({ src, alt = '', sizes = '100vw', className, eager = false, ...rest }) {
   const { src: url, srcSet } = pic(src);
+  // A business with no photo for this slot draws nothing here. Without this an
+  // <img> with no src renders as a broken picture on every template.
+  if (!url) return null;
   return (
     <img
       {...rest}
