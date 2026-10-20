@@ -1,0 +1,97 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "San Miguel Painting",
+  "shortName": "San Miguel Painting",
+  "phone": "(469) 402-0688",
+  "email": "info@sanmiguelpainting.com",
+  "address": "1918 Goliad Dr",
+  "town": "Garland",
+  "state": "TX",
+  "zip": "75042",
+  "rating": 5,
+  "reviewCount": 211,
+  "since": 2005,
+  "brand": {
+    "primary": "#dd0008",
+    "primaryDeep": "#9b0005",
+    "accent": "#fc5936",
+    "ink": "#26181e",
+    "surface": "#fff1f2",
+    "muted": "#5b6470",
+    "line": "#e1dfe0",
+    "heading": "'Montserrat', system-ui, sans-serif",
+    "body": "'Montserrat', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap",
+    "logo": "/brands/sanmiguelpainting/logo.webp",
+    "logoMono": "/brands/sanmiguelpainting/logo-mono.webp",
+    "logoWidth": 100,
+    "logoHeight": 84,
+    "logoRatio": 1.188,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.787,
+      0.699,
+      0.611,
+      0.525,
+      0.097,
+      0.088,
+      0.0,
+      0.678,
+      0.771,
+      0.881,
+      1.0
+    ],
+    "logoName": true
+  },
+  "hero": {
+    "eyebrow": "San Miguel Painting",
+    "title": "Interior and exterior painting",
+    "lead": "Top rated painters in Dallas, TX. Jose checks your job in person, Eric prices it the same day. Family owned since 2005. Call for your estimate.",
+    "image": "/brands/sanmiguelpainting/photo1",
+    "imageAlt": "A photo of San Miguel Painting",
+    "titleAccent": "in Garland"
+  },
+  "serviceArea": [
+    "Garland",
+    "Spring"
+  ],
+  "ask": "quote",
+  "summary": "San Miguel Painting offers interior painting, exterior painting and wood staining across Garland and Spring.",
+  "groups": [
+    {
+      "slug": "interior-painting",
+      "title": "Interior Painting",
+      "icon": "home",
+      "summary": "Walls, ceilings, trim and doors, prepped properly before a drop of color goes on.",
+      "intro": "Walls, ceilings, trim and doors, prepped properly before a drop of color goes on. Cracks get filled, surfaces get sanded, and two coats go on as the standard rather than the upsell. Drywall repair and popcorn ceiling removal are handled here as well, since both are surface work that has to happen before paint anyway."
+    },
+    {
+      "slug": "exterior-painting",
+      "title": "Exterior Painting",
+      "icon": "home",
+      "summary": "Every exterior starts with a pressure wash and a real inspection for rotten wood and failed caulk.",
+      "intro": "Texas sun is hard on a house. Every exterior starts with a pressure wash and a real inspection for rotten wood and failed caulk, because paint over bad substrate fails twice as fast. Repairs first, primer on bare spots, then two coats."
+    },
+    {
+      "slug": "wood-staining",
+      "title": "Wood Staining",
+      "icon": "shield",
+      "summary": "Decks, fences and exterior wood get cleaned, prepped and stained so the grain still shows and the weather stays out.",
+      "intro": "Decks, fences and exterior wood get cleaned, prepped and stained so the grain still shows and the weather stays out. Stain protects wood in a way paint can't match on horizontal surfaces.",
+      "image": "/brands/sanmiguelpainting/photo4",
+      "imageAlt": "A photo of San Miguel Painting"
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "About San Miguel Painting",
+    "text": [
+      "One father, one son, and twenty years of work in the same neighborhoods. Here's who you're actually hiring.",
+      "Jose San Miguel came to Texas from Tampico in 1996 with no plan to run anything. He took the job most new painters take, masking floors and prepping surfaces so somebody else could put on the finish coat.",
+      "Nine years went by like that. Sheetrock, texture, staining, trim, the parts of the trade that don't photograph well and decide whether a job holds up. He learned which surfaces fail and why, usually by being the one sent back to fix them."
+    ],
+    "image": "/brands/sanmiguelpainting/photo2",
+    "imageAlt": "A photo of San Miguel Painting"
+  }
+}
