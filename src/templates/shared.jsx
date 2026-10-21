@@ -234,6 +234,12 @@ function pageOf(item) {
   return { label, href: /^https?:\/\//i.test(m[2]) ? m[2] : `https://${m[2]}` };
 }
 
+/** About how many lines a fact's card stands in a third of the page: its heading, its text and each item. */
+function factLines(fact) {
+  const lines = (s) => Math.ceil(String(s).length / 40);
+  return 3 + (fact.text ? lines(fact.text) : 0) + (fact.items ?? []).reduce((n, item) => n + lines(item) + 0.5, 0);
+}
+
 /**
  * What the business's own website says that no section of the template has a
  * place for: license numbers, certifications, affiliations, payment methods,
@@ -258,42 +264,57 @@ export function Facts({ b }) {
   const facts = (b.facts ?? []).filter((fact) => fact?.heading && (fact.text || fact.items?.length));
   if (!facts.length) return null;
   const rule = { borderColor: 'color-mix(in srgb, currentColor 18%, transparent)' };
+  // Each fact in turn goes to the shortest of three columns, so a long policy
+  // beside two short notes leaves no hole under them and no card stands alone
+  // in a row of its own.
+  const columns = [[], [], []];
+  const heights = [0, 0, 0];
+  for (const fact of facts) {
+    const col = heights.indexOf(Math.min(...heights));
+    columns[col].push(fact);
+    heights[col] += factLines(fact) + 1;
+  }
   return (
     // The same container every template sets its own sections in, so the
     // rules down the left of each block stand on the page's margin rather
     // than outside it.
     <section aria-label={`About ${b.name}`} className="mx-auto w-full max-w-page px-gutter">
-      {/* A grid rather than a column flow: a long list no longer drags the
-          blocks beside it out of line, and each row starts level. */}
+      {/* Three columns of their own on the desktop, each stacked down from the
+          top. Below it the column wrappers step aside and the cards flow down
+          two balanced columns instead. */}
       {/* Each block is a card on a wash of the ground it sits on, so the section reads as laid out
           rather than as loose text: no default bullets, and a list marked with its own rule. */}
-      <div className="grid gap-5 border-t pb-5 pt-12 sm:grid-cols-2 lg:grid-cols-3" style={rule}>
-        {facts.map((fact) => (
-          <div
-            key={fact.heading}
-            className="min-w-0 self-start rounded-2xl border p-5"
-            style={{ ...rule, backgroundColor: 'color-mix(in srgb, currentColor 4%, transparent)' }}
-          >
-            <h2 className="font-heading text-[15px] font-bold uppercase tracking-[0.1em] opacity-100">{fact.heading}</h2>
-            {fact.text && <p className="mt-2.5 text-[16px] leading-relaxed opacity-80">{fact.text}</p>}
-            {fact.items?.length > 0 && (
-              <ul className="mt-2.5 grid text-[16px] leading-relaxed opacity-80">
-                {fact.items.map((item) => {
-                  const page = pageOf(item);
-                  return (
-                    <li key={item} className="break-words border-t py-1.5 first:border-0 first:pt-0 last:pb-0" style={rule}>
-                      {page ? (
-                        <a href={page.href} className="no-underline hover:underline hover:opacity-100" rel="noopener">
-                          {page.label}
-                        </a>
-                      ) : (
-                        item
-                      )}
-                    </li>
-                  );
-                })}
-              </ul>
-            )}
+      <div className="border-t pt-12 sm:columns-2 sm:gap-5 lg:grid lg:grid-cols-3 lg:items-start" style={rule}>
+        {columns.filter((col) => col.length).map((col, i) => (
+          <div key={i} className="contents lg:block lg:min-w-0">
+            {col.map((fact) => (
+              <div
+                key={fact.heading}
+                className="mb-5 min-w-0 break-inside-avoid rounded-2xl border p-5"
+                style={{ ...rule, backgroundColor: 'color-mix(in srgb, currentColor 4%, transparent)' }}
+              >
+                <h2 className="font-heading text-[15px] font-bold uppercase tracking-[0.1em] opacity-100">{fact.heading}</h2>
+                {fact.text && <p className="mt-2.5 text-[16px] leading-relaxed opacity-80">{fact.text}</p>}
+                {fact.items?.length > 0 && (
+                  <ul className="mt-2.5 grid text-[16px] leading-relaxed opacity-80">
+                    {fact.items.map((item) => {
+                      const page = pageOf(item);
+                      return (
+                        <li key={item} className="break-words border-t py-1.5 first:border-0 first:pt-0 last:pb-0" style={rule}>
+                          {page ? (
+                            <a href={page.href} className="no-underline hover:underline hover:opacity-100" rel="noopener">
+                              {page.label}
+                            </a>
+                          ) : (
+                            item
+                          )}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
+              </div>
+            ))}
           </div>
         ))}
       </div>

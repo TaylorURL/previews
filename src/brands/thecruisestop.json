@@ -1,0 +1,438 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "reserve",
+  "name": "The Cruise Stop",
+  "shortName": "The Cruise Stop",
+  "summary": "Luggage storage, cruise essentials and cruise bookings on the Strand in downtown Galveston, less than a mile from all four cruise terminals.",
+  "phone": "(409) 509-0821",
+  "email": "cs@thecruisestoponline.com",
+  "address": "2002 Strand St Suite 101",
+  "town": "Galveston",
+  "state": "TX",
+  "zip": "77550",
+  "rating": 4.8,
+  "reviewCount": 107,
+  "since": 2016,
+  "hours": [
+    [
+      "Cruise days",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Not cruise days",
+      "Closed"
+    ],
+    [
+      "Luggage storage",
+      "9 AM – 4 PM"
+    ]
+  ],
+  "brand": {
+    "primary": "#017aa3",
+    "primaryDeep": "#065c78",
+    "accent": "#e01020",
+    "ink": "#0d1b24",
+    "muted": "#4a5f6b",
+    "surface": "#eef7fa",
+    "line": "#d6e6ec",
+    "heading": "'Montserrat', system-ui, sans-serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap",
+    "logo": "/brands/thecruisestop/logo.webp",
+    "logoMono": "/brands/thecruisestop/logo-mono.webp",
+    "logoWidth": 189,
+    "logoHeight": 74,
+    "logoRatio": 2.556,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.252,
+      0.182,
+      0.181,
+      0.209,
+      0.288,
+      0.401,
+      0.514,
+      0.631,
+      0.754,
+      0.881,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Galveston luggage storage on the Strand",
+    "title": "We babysit bags",
+    "titleAccent": "while you explore Galveston.",
+    "lead": "Have a late flight, a shuttle pickup, or a late hotel or Airbnb check-in? Leave your luggage with us and spend the day in downtown Galveston's shops, restaurants, bars and galleries. Space is limited, so please make a reservation.",
+    "image": "/brands/thecruisestop/hero",
+    "imageAlt": "A streetcar passing the historic buildings on the Strand in downtown Galveston"
+  },
+  "groups": [
+    {
+      "slug": "luggage-storage",
+      "title": "Luggage Storage",
+      "icon": "shield",
+      "summary": "Drop your bags on the Strand for $6 a piece and go see the island.",
+      "intro": "We store bags for cruise guests between check-out and their flight, shuttle or hotel check-in. Bags sit in the store's air-conditioned storage rooms, which only staff can get into, and storage hours run from 9:00 am to 4:00 pm. Space is limited, so a reservation is the way to be sure of a spot.",
+      "services": [
+        {
+          "slug": "bag-storage",
+          "title": "Bag Storage",
+          "icon": "shield",
+          "text": "Just $6 per bag, per piece, any size, when you reserve ahead. You are not asked to prepay, and payment is collected at the store on the day of service.",
+          "points": [
+            "$6 per bag, per piece, any size",
+            "Stored in the store's air-conditioned storage rooms",
+            "Only staff has access to the storage area",
+            "Storage hours 9:00 am to 4:00 pm"
+          ]
+        },
+        {
+          "slug": "walk-ins",
+          "title": "Walk-Ins",
+          "icon": "timer",
+          "text": "Turn up without a reservation and we will take your bags if there is room, charged at $7 per bag. Space is limited, so a reservation is safer.",
+          "points": [
+            "$7 per bag without a reservation",
+            "Subject to the space left that day"
+          ]
+        },
+        {
+          "slug": "what-counts-as-a-bag",
+          "title": "Every Piece",
+          "icon": "clipboard",
+          "text": "Backpacks, tote bags, plastic bags, paper bags and car seats each count as a separate piece at the same price, whatever their size or material. Anything stacked on or strapped to another bag counts separately too.",
+          "points": [
+            "Same price whatever the size or material",
+            "Car seats counted as a piece"
+          ]
+        },
+        {
+          "slug": "multi-day-storage",
+          "title": "Multi-Day",
+          "icon": "settings",
+          "text": "Storing a bag for more than one day may be possible. Call 409 497 2974 to ask. Nothing fragile, perishable, smelly, illegal, and no weapons.",
+          "points": [
+            "Call 409 497 2974 to ask",
+            "No weapons, nothing fragile or perishable"
+          ]
+        },
+        {
+          "slug": "reservations",
+          "title": "Reservations",
+          "icon": "chart",
+          "text": "Reserve at the-cruise-stop.booqable.store. There is no prepayment and you can cancel any time by calling 409 497 2974 or emailing cs@thecruisestoponline.com.",
+          "points": [
+            "No prepayment, cancel any time",
+            "Pay at the store on the day of service"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cruise-essentials",
+      "title": "Cruise Essentials",
+      "icon": "home",
+      "summary": "The one-stop shop for everything cruise, a few minutes from the terminals.",
+      "intro": "We opened on the Strand in December 2016 as a one-stop shop for everything cruise. Guests who forgot something, and crew ashore for the day, can walk in for what they need, and anything in the store can be ordered online for pickup or shipped to you.",
+      "services": [
+        {
+          "slug": "guest-essentials",
+          "title": "Guest Essentials",
+          "icon": "sun",
+          "text": "Forgot something? We are a few minutes' walk from the Galveston cruise terminals, with sunscreen, motion-sickness aids, toiletries, cruise luggage tags, travel accessories and phone chargers.",
+          "points": [
+            "Sunscreen and travel-size toiletries",
+            "Cruise luggage tags and lanyards",
+            "Phone chargers and waterproof cases"
+          ]
+        },
+        {
+          "slug": "crew-supplies",
+          "title": "Crew Supplies",
+          "icon": "waves",
+          "text": "Ship crew can drop by for ship-life essentials: toiletries, drinks and snacks, phone accessories, and small gifts and souvenirs to bring home to loved ones.",
+          "points": [
+            "Drinks, snacks and noodles",
+            "Phone and audio accessories",
+            "Work shirts, socks and casual wear"
+          ]
+        },
+        {
+          "slug": "souvenirs",
+          "title": "Souvenirs",
+          "icon": "leaf",
+          "text": "Galveston resin ornaments, wood and leather magnets made in the USA, drinkware, fragrance and gifts to take back with you.",
+          "points": [
+            "Wood magnets made in the USA",
+            "Galveston resin Christmas ornaments"
+          ]
+        },
+        {
+          "slug": "online-orders",
+          "title": "Online Orders",
+          "icon": "car",
+          "text": "In Galveston? Order online and pick up in store. Outside our local area, we ship within the contiguous United States, free on orders of $50 or more.",
+          "points": [
+            "Order online, pick up in store",
+            "Free shipping on orders $50 and above",
+            "USPS Priority Mail, usually 3 business days"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cruise-planning",
+      "title": "Cruise Planning",
+      "icon": "compass",
+      "summary": "We book Galveston cruises, and answer the port questions before you sail.",
+      "intro": "Besides the store, we are a Galveston-based travel agency. Cheryl Tambanillo books cruises sailing from Galveston and writes the cruise tips on our blog, from which terminal your ship uses to how to get to it.",
+      "services": [
+        {
+          "slug": "cruise-booking",
+          "title": "Cruise Booking",
+          "icon": "compass",
+          "text": "Yes, we book Galveston cruises too. Call 409 739 6441 or visit thecruisestoptravel.com for details.",
+          "points": [
+            "Call 409 739 6441",
+            "thecruisestoptravel.com"
+          ]
+        },
+        {
+          "slug": "terminal-guide",
+          "title": "Terminal Guide",
+          "icon": "clipboard",
+          "text": "Galveston has four cruise terminals, all on Harborside Drive. Our blog sets out which line sails from which one and what address to give Google Maps, Uber or Lyft.",
+          "points": [
+            "Terminal 25 and 28 for Carnival, Princess and Disney",
+            "Terminal 10 for Royal Caribbean",
+            "Terminal 16 for MSC Cruises and Norwegian",
+            "All four terminals on Harborside Drive"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "A one-stop shop for everything cruise, open since 2016",
+    "text": [
+      "We opened our doors in December 2016, in historic downtown Galveston, Texas. We are a one-stop shop for everything cruise.",
+      "Cruise guests who forgot something will find us a few minutes' walk from the Galveston cruise terminals, with sunscreen, motion-sickness aids, toiletries, cruise luggage tags, travel accessories and phone chargers. Ship crew drop by for ship-life essentials like toiletries, drinks and snacks, phone accessories, and small gifts and souvenirs to bring to loved ones.",
+      "We babysit bags, too. For those with late flights, shuttle pickups, or late check-ins for hotels and Airbnb, leave your bags with us and explore the island. And yes, we book Galveston cruises: call 409 739 6441 or visit thecruisestoptravel.com for details.",
+      "Thank you for visiting our store."
+    ],
+    "image": "/brands/thecruisestop/terminal",
+    "imageAlt": "Royal Caribbean's Cruise Terminal 10 on Harborside Drive in Galveston",
+    "values": [
+      {
+        "title": "Air-conditioned storage",
+        "text": "Bags are kept in the store's storage rooms, which are air-conditioned, and only staff has access to them."
+      },
+      {
+        "title": "Pay on the day",
+        "text": "Reservations take no prepayment and can be cancelled any time. Payment is collected at the store on the day of service."
+      },
+      {
+        "title": "Steps from the Strand",
+        "text": "We are on the Strand in downtown Galveston, just steps away from restaurants, shops, art galleries and tourist attractions."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Where is the luggage storage place located?",
+      "a": "The Cruise Stop is at 2002 Strand St Suite 101, Galveston Texas 77550."
+    },
+    {
+      "q": "Is it close to the cruise terminals? Can we walk from the terminal to the store?",
+      "a": "We are within walking distance, less than a mile, of all four Galveston cruise terminals. With heavy luggage it is best to take an Uber, Lyft or taxi from the terminal; it takes about 2 to 5 minutes by car depending on which terminal you are coming from. On foot it is 0.5 miles and about 11 minutes from Terminal 25, 0.6 miles and 14 minutes from Terminal 28, 0.5 miles and 12 minutes from Terminal 16, and 0.7 miles and 16 minutes from Terminal 10. Stay safe and always use the crosswalk and the sidewalk."
+    },
+    {
+      "q": "How much does it cost?",
+      "a": "Just $6 per bag, per piece, any size, with a reservation. Walk-ins with no reservation are charged $7 per bag."
+    },
+    {
+      "q": "Do backpacks, tote bags, plastic bags, paper bags or car seats count?",
+      "a": "Yes. Each bag or car seat is counted as a separate piece and costs $6 regardless of size or material. Any bag stacked on top of or attached in any way to another bag is counted as a separate piece."
+    },
+    {
+      "q": "What are the storage hours? What time is the latest for pickup?",
+      "a": "Storage hours are from 9:00 am to 4:00 pm."
+    },
+    {
+      "q": "Do I need a reservation?",
+      "a": "Yes. Space is limited, so do make a reservation at the-cruise-stop.booqable.store. You will not be required to prepay and you can cancel anytime. Payment will be collected at the location on the day of service."
+    },
+    {
+      "q": "How do I cancel my reservation if plans change?",
+      "a": "Just call 409 497 2974 or send an email to cs@thecruisestoponline.com."
+    },
+    {
+      "q": "Where are the bags stored? Is it air-conditioned?",
+      "a": "Your bags will be stored in the store's storage rooms, which are air-conditioned. Only staff has access to the storage area."
+    },
+    {
+      "q": "Is the store close to downtown and tourist attractions?",
+      "a": "The Cruise Stop is on the Strand in downtown Galveston, just steps away from restaurants, shops, art galleries and tourist attractions."
+    },
+    {
+      "q": "Can I store a bag for multiple days?",
+      "a": "Maybe, if there is nothing fragile, perishable or smelly in your bag, and no weapons or anything illegal. Please call 409 497 2974 to ask."
+    },
+    {
+      "q": "Anything else I need to know?",
+      "a": "There is no restroom in the store. Make sure you use the restroom where you are coming from before dropping off or picking up your bags."
+    }
+  ],
+  "serviceArea": [
+    "Galveston",
+    "The Strand",
+    "Galveston cruise terminals",
+    "Galveston Island"
+  ],
+  "facts": [
+    {
+      "heading": "Phone and email",
+      "items": [
+        "Store: 409 509 0821",
+        "Luggage storage, reservations and the contact page: 409 497 2974",
+        "Cruise bookings: 409 739 6441",
+        "cs@thecruisestoponline.com",
+        "admin@thecruisestop.net for product availability, suggestions and returns",
+        "cherylt@thecruisestoptravel.com for help booking a cruise"
+      ]
+    },
+    {
+      "heading": "Store hours",
+      "text": "Cruise days 9:00 am to 5:00 pm. Not cruise days, closed. Luggage storage hours are 9:00 am to 4:00 pm."
+    },
+    {
+      "heading": "Luggage storage rates",
+      "items": [
+        "$6 per bag, per piece, any size, with a reservation",
+        "$7 per bag for walk-ins with no reservation",
+        "No prepayment; paid at the store on the day of service"
+      ]
+    },
+    {
+      "heading": "Getting here from the terminals",
+      "items": [
+        "Terminals 25 and 28 (Carnival, Princess, Disney): a 4-minute car ride, about half a mile",
+        "Terminal 16 (MSC, Norwegian): a 4-minute car ride, about 0.7 mile",
+        "Terminal 10 (Royal Caribbean): a 5-minute car ride, about a mile"
+      ]
+    },
+    {
+      "heading": "Shipping",
+      "text": "We ship only within the contiguous United States, excluding Alaska and Hawaii, Monday to Friday from 12:00 pm to 4:00 pm CST except U.S. holidays, usually by USPS Priority Mail flat rate, which takes about 3 business days. Orders with a sub-total of $50 or more after discounts ship free."
+    },
+    {
+      "heading": "Returns and refunds",
+      "items": [
+        "14 calendar days from receiving the item to request a return",
+        "Items must be unworn or unused, with tags, in the original packaging, with the receipt",
+        "Sale items are final, and items below $20 are not returnable",
+        "Perishable food, special orders and personal care goods cannot be returned",
+        "Start a return at admin@thecruisestop.net; shipping costs are not refunded"
+      ]
+    },
+    {
+      "heading": "In store",
+      "items": [
+        "In Galveston? Order online and pick up in store",
+        "There is no restroom in the store"
+      ]
+    },
+    {
+      "heading": "Also from us",
+      "items": [
+        "thecruisestoptravel.com for Galveston cruise bookings",
+        "the-cruise-stop.booqable.store to reserve luggage storage",
+        "Galveston excursions and tours we recommend, on our home page"
+      ]
+    },
+    {
+      "heading": "Terminal addresses for Google Maps, Uber or Lyft",
+      "items": [
+        "Cruise Terminal 25: 2502 Harborside Drive, Galveston, TX 77550",
+        "Cruise Terminal 28: 2702 Harborside Drive, Galveston, TX 77550",
+        "Cruise Terminal 10: 1402 Harborside Drive, Galveston, TX 77550",
+        "Cruise Terminal 16: 1602 Harborside Drive, Galveston, TX 77550"
+      ]
+    },
+    {
+      "heading": "Which terminal your ship uses",
+      "items": [
+        "Carnival, Princess and Disney use both Terminal 25 and Terminal 28, which sit next to each other, so you can walk over if you are dropped at the wrong one",
+        "Royal Caribbean sails from Terminal 10, and its Oasis class ships such as Allure, Harmony and Symphony dock there",
+        "MSC Cruises and Norwegian Cruise Line sail from Terminal 16",
+        "When a line has two ships in port, the bigger one is at that line's main terminal and the smaller one is most likely at Terminal 28",
+        "Carnival's Excel class ships, such as the Carnival Jubilee, are at Terminal 25"
+      ]
+    },
+    {
+      "heading": "About the four terminals",
+      "items": [
+        "Terminal 25, once called Cruise Terminal 1, is closest to the downtown shops and restaurants, and is home to the Carnival Jubilee, the made-for-Texas Excel class ship that holds 6,600 passengers",
+        "Terminal 28, once called Cruise Terminal 2, is a plain building with x-ray machines inside",
+        "Terminal 10, the Royal Caribbean terminal, is the nicest so far but furthest from downtown, with the giant propellers hanging from the ceiling, the Galveston Beach Trio sculpture and a much nicer waiting area than the older terminals",
+        "Terminal 16, the MSC terminal, opened in November 2025",
+        "The elevated pedestrian walkway over Harborside Drive at Terminal 25 is not in operation and has been closed for decades, so use the crosswalk at street level"
+      ]
+    },
+    {
+      "heading": "What the shop stocks",
+      "items": [
+        "Ship Life: ID and lanyards, dining and bar, drinkware, gym and workout, air fresheners, cleaning and organizing, laundry, tools and gear, office supplies",
+        "Electronics: phones, waterproof pouches, mobile accessories, audio, battery and cord",
+        "Health and Beauty: medicine, first aid, oral, hair, skin, grooming, eye and ear, feminine, nail, foot and shoe care, vitamins and supplements, beauty, kids and baby",
+        "Grocery: drinks, snacks, noodles, candy, mints and gum, condiments, seasonings and sauces, coffee and tea",
+        "Clothing: underwear, work shirts, socks and hosiery, casual wear, clothing accessories",
+        "Gifts: souvenirs, fragrance, NBA",
+        "Travel: travel-size personal care, cruise luggage tags and lanyards, luggage accessories, backpacks and bags, wallets and cases"
+      ]
+    },
+    {
+      "heading": "Payment",
+      "text": "The online store takes Visa, Mastercard, American Express, Discover, Diners Club and Shop Pay. Luggage storage takes no prepayment and is paid at the store on the day of service."
+    },
+    {
+      "heading": "How a shipped order travels",
+      "items": [
+        "Tracking information comes in the shipping confirmation email",
+        "If an item turns out to be unavailable, we email you",
+        "Shipping rates are based on the product dimensions and which USPS flat-rate box they fit into",
+        "Recycled packaging may be used for irregular-sized items",
+        "We check every shipping address against USPS, ask you for a correction if it will not validate, and cancel and refund the order if it cannot be corrected",
+        "Return shipping is the buyer's cost"
+      ]
+    },
+    {
+      "heading": "Returns in detail",
+      "items": [
+        "Inspect your order when it arrives and contact us straight away about a defective, damaged or wrong item",
+        "Items sent back without a return being requested first are not accepted",
+        "For an exchange, return the item you have and place a separate order for the one you want",
+        "Once the return is received and inspected we tell you whether the refund is approved, and refund the approved items to the original payment method",
+        "The non-returnable personal care goods include grooming items such as hairbrushes, fragrance, beauty and hygiene products",
+        "Your bank or credit card company may take some time to post the refund"
+      ]
+    },
+    {
+      "heading": "Galveston cruise tips",
+      "text": "Our blog, Galveston Cruise Tips, is written by Cheryl Tambanillo, a Galveston-based travel agent, and covers where the port is, which terminal your ship uses and the luggage storage questions guests ask most."
+    },
+    {
+      "heading": "Galveston excursions and tours",
+      "text": "Explore Galveston at your leisure before or after your cruise. Our recommended excursions and tours are listed on our home page."
+    },
+    {
+      "heading": "Keep in touch",
+      "items": [
+        "Sign up for our newsletter and be the first to know about coupons and special promotions",
+        "https://www.facebook.com/thecruisestop/"
+      ]
+    }
+  ]
+}
