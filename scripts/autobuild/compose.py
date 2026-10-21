@@ -626,6 +626,12 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # Solutions") is the heading over their services, not one of them.
         if GENERIC_SERVICE.match(name) and re.search(r"\b(?:services|solutions)$", name, re.I):
             return
+        # One that ends on the people who do the work ("Electricians and
+        # Generator Installers", "Tax and Accounting Professionals") says who
+        # they are, not a service; one for them ("Estimating Support for
+        # Contractors") is still a service.
+        if re.search(r"\b(?:electricians|technicians|installers|contractors|plumbers|roofers|painters|builders|remodelers|specialists|experts|professionals|pros|mechanics|welders|landscapers|exterminators|inspectors|engineers|machinists|fabricators)$", name, re.I) and not re.search(r"\b(?:for|to|with)\b", name, re.I):
+            return
         if NOT_A_SERVICE_SHAPE.search(name) or (own and names_the_business(name, own)) or (local and local.search(name)):
             return
 
