@@ -1,0 +1,395 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Ocean Pool Services",
+  "shortName": "Ocean Pool Services",
+  "summary": "Pool cleaning, repair and remodeling for homes and commercial properties in Sugar Land, Katy and the greater Houston area.",
+  "phone": "(713) 349-3322",
+  "email": "info@oceanpoolservicesllc.com",
+  "address": "1800 Austin Pkwy",
+  "town": "Sugar Land",
+  "state": "TX",
+  "zip": "77479",
+  "rating": 5.0,
+  "reviewCount": 28,
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
+  "brand": {
+    "primary": "#023c5b",
+    "primaryDeep": "#001d4d",
+    "accent": "#00b9ff",
+    "ink": "#0b1b2b",
+    "muted": "#4e6274",
+    "surface": "#eef7fc",
+    "line": "#d6e5ef",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/oceanpool/logo.webp",
+    "logoMono": "/brands/oceanpool/logo-mono.webp",
+    "logoWidth": 187,
+    "logoHeight": 48,
+    "logoRatio": 3.893,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.045,
+      0.044,
+      0.044,
+      0.259,
+      0.361,
+      0.47,
+      0.571,
+      0.676,
+      0.785,
+      0.895,
+      1.0
+    ]
+  },
+  "emergency": {
+    "title": "24/7 emergency pool service",
+    "text": "Major leaks, pump failures and equipment malfunctions are handled with prompt emergency repairs, so call any time and we will get the pool back in action."
+  },
+  "hero": {
+    "eyebrow": "Pool service in Sugar Land, Katy and Houston",
+    "title": "Leading pool service in the",
+    "titleAccent": "Houston area.",
+    "lead": "Ocean Pool Services is your local Predators of Pool Perfection. Serving Sugar Land, Katy and the surrounding areas, we specialize in advanced pool cleaning, repairs and remodeling, so you enjoy a sparkling pool year-round.",
+    "image": "/brands/oceanpool/hero",
+    "imageAlt": "A technician vacuuming a backyard pool with a pole at a Sugar Land home"
+  },
+  "groups": [
+    {
+      "slug": "weekly-cleaning",
+      "title": "Weekly Cleaning",
+      "icon": "droplets",
+      "summary": "Weekly pool maintenance that keeps the water clear and the equipment running, starting at $165 a month.",
+      "intro": "Keep your pool in pristine condition year-round with our weekly maintenance service. We balance chemicals, vacuum, brush walls, clean filters and make sure all equipment runs efficiently. Enjoy a stress-free experience while we handle every detail of your pool's upkeep.",
+      "image": "/brands/oceanpool/weekly",
+      "imageAlt": "A clear blue backyard pool with a curved deck and shade trees",
+      "services": [
+        {
+          "slug": "chemical-balancing",
+          "title": "Chemical Balancing",
+          "icon": "droplets",
+          "text": "Water is tested and the chemicals balanced on every visit, which is what keeps the pool safe, clear and ready to enjoy.",
+          "points": [
+            "Weekly water testing",
+            "Chlorine and saltwater pools"
+          ]
+        },
+        {
+          "slug": "vacuum-and-brush",
+          "title": "Vacuum and Brush",
+          "icon": "waves",
+          "text": "The floor is vacuumed and the walls are brushed every week, so debris and algae never get a chance to settle in.",
+          "points": [
+            "Brushing prevents algae blooms"
+          ]
+        },
+        {
+          "slug": "filter-cleaning",
+          "title": "Filter Cleaning",
+          "icon": "filter",
+          "text": "Filters are cleaned as part of the weekly visit so the system keeps circulating and filtering the way it should."
+        },
+        {
+          "slug": "equipment-checks",
+          "title": "Equipment Checks",
+          "icon": "gauge",
+          "text": "Pumps, heaters and the rest of the equipment are checked each week so a small fault is caught before it stops the pool."
+        }
+      ]
+    },
+    {
+      "slug": "pool-repairs",
+      "title": "Pool Repairs",
+      "icon": "wrench",
+      "summary": "From minor fixes to major overhauls, with high-quality parts and prompt emergency repairs.",
+      "intro": "From minor fixes to major overhauls, our pool repair services address everything from leaks and pump issues to heater malfunctions and more. We use high-quality parts and industry-best practices to restore your pool's functionality quickly and effectively. Our technicians service all major brands.",
+      "image": "/brands/oceanpool/repairs",
+      "imageAlt": "A rectangular pool with a raised spa beside a brick house and covered patio",
+      "services": [
+        {
+          "slug": "leak-repairs",
+          "title": "Leak Repairs",
+          "icon": "waves",
+          "text": "Leaks are traced and repaired, and a major leak counts as an emergency we will come out for the same day.",
+          "points": [
+            "Emergency call-out for major leaks"
+          ]
+        },
+        {
+          "slug": "pump-repairs",
+          "title": "Pump Repairs",
+          "icon": "settings",
+          "text": "Pump problems and outright failures are repaired with high-quality parts, so circulation and filtration come back quickly.",
+          "points": [
+            "All major brands serviced"
+          ]
+        },
+        {
+          "slug": "heater-repairs",
+          "title": "Heater Repairs",
+          "icon": "thermometer",
+          "text": "Heater malfunctions are diagnosed and fixed so the pool and spa stay usable through the cooler months."
+        },
+        {
+          "slug": "filter-replacement",
+          "title": "Filter Replacement",
+          "icon": "filter",
+          "text": "A filter past cleaning is replaced rather than nursed along, using parts matched to the system you already have."
+        }
+      ]
+    },
+    {
+      "slug": "green-to-clean",
+      "title": "Green to Clean",
+      "icon": "leaf",
+      "summary": "Algae removal and a full water reset that turns a neglected pool back into a sparkling one.",
+      "intro": "Battling algae or murky water? Our Green to Clean service transforms neglected pools into sparkling oases. We tackle severe water imbalances, remove algae and rebalance chemicals, leaving your pool ready for a fresh start.",
+      "image": "/brands/oceanpool/green",
+      "imageAlt": "A clear blue pool with a spa and handrail after cleaning",
+      "services": [
+        {
+          "slug": "algae-removal",
+          "title": "Algae Removal",
+          "icon": "leaf",
+          "text": "A green pool usually means algae growth from imbalanced chemicals or poor filtration. Shock treatment and thorough brushing bring the clarity back.",
+          "points": [
+            "Shock treatment and brushing",
+            "Filtration checked at the same time"
+          ]
+        },
+        {
+          "slug": "water-rebalancing",
+          "title": "Water Rebalancing",
+          "icon": "droplets",
+          "text": "Severe water imbalances are corrected and the chemistry reset, so the pool holds its clarity once it is clean."
+        },
+        {
+          "slug": "acid-wash",
+          "title": "Acid Wash",
+          "icon": "shield",
+          "text": "Recommended for stubborn stains, discoloration or heavy algae buildup that regular cleaning cannot resolve. It removes a thin layer of plaster or surface material and reveals a fresher layer underneath."
+        }
+      ]
+    },
+    {
+      "slug": "residential-and-commercial",
+      "title": "Pool Types",
+      "icon": "home",
+      "summary": "Tailored pool care for a family backyard or a commercial facility, on chlorine or saltwater.",
+      "intro": "We understand that each pool is unique, so we offer tailored services to meet the specific needs and preferences of each client. Whether it is a residential pool or a commercial facility, we provide solutions that suit your requirements.",
+      "image": "/brands/oceanpool/residential",
+      "imageAlt": "A large curved pool with an attached spa behind a two-storey Houston home",
+      "services": [
+        {
+          "slug": "residential-pools",
+          "title": "Residential Pools",
+          "icon": "home",
+          "text": "Enhance your home's comfort and value with a perfectly maintained residential pool. Personalized care and tailored solutions keep the water safe and crystal clear for your family.",
+          "points": [
+            "Personalized care for each pool",
+            "A relaxing backyard escape"
+          ]
+        },
+        {
+          "slug": "commercial-pools",
+          "title": "Commercial Pools",
+          "icon": "building",
+          "text": "Commercial facilities get the same service built around what the property actually needs."
+        },
+        {
+          "slug": "saltwater-pools",
+          "title": "Saltwater Pools",
+          "icon": "waves",
+          "text": "A saltwater pool generates its own chlorine from salt using a chlorine generator. We service the generator along with the rest of the system."
+        },
+        {
+          "slug": "chlorine-pools",
+          "title": "Chlorine Pools",
+          "icon": "droplets",
+          "text": "A chlorine pool uses tablets or liquid chlorine to sanitize the water. Both methods sanitize effectively, and the choice comes down to preference and budget."
+        }
+      ]
+    },
+    {
+      "slug": "design-and-remodeling",
+      "title": "Remodeling",
+      "icon": "compass",
+      "summary": "New pool construction, remodeling and equipment upgrades for the backyard you have in mind.",
+      "intro": "From design and construction to remodeling and renovation, our expert team can create the perfect backyard oasis. We also build pools in the Sugar Land area, working closely with you to bring your vision to life, and we deliver top-quality services and equipment at competitive prices.",
+      "image": "/brands/oceanpool/remodeling",
+      "imageAlt": "A rectangular pool with a raised tiled spa and a travertine deck",
+      "services": [
+        {
+          "slug": "pool-construction",
+          "title": "Pool Construction",
+          "icon": "compass",
+          "text": "Early spring and summer are ideal for installing a new pool. We build in the Sugar Land area and work closely with you from the design through to the finished pool.",
+          "points": [
+            "Design through construction",
+            "Built in the Sugar Land area"
+          ]
+        },
+        {
+          "slug": "remodeling",
+          "title": "Renovation",
+          "icon": "ruler",
+          "text": "Remodeling and renovation of an existing pool, whether that is a resurface, a new look or a revamped patio around it."
+        },
+        {
+          "slug": "equipment-upgrades",
+          "title": "Equipment Upgrades",
+          "icon": "settings",
+          "text": "Upgraded pool equipment supplied and installed, using the Pentair products our team is set up to work with.",
+          "points": [
+            "Pentair products"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Weekly cleaning",
+    "title": "Weekly pool cleaning, starting at $165.",
+    "text": "Chemicals balanced, floor vacuumed, walls brushed, filters cleaned and every piece of equipment checked, every week.",
+    "price": "$165",
+    "priceNote": "per month",
+    "image": "/brands/oceanpool/promo",
+    "imageAlt": "A free-form pool overlooking a lake on a clear day"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Houston's #1 pool service provider.",
+    "text": [
+      "Ocean Pool Services is Houston's premier pool service provider, proudly serving the greater Houston area. While early spring and summer are ideal for installing a new pool, it is never too late to schedule service and maintenance to make sure your pool is ready for warmer days.",
+      "From design and construction to remodeling and renovation, our expert team can create the perfect backyard oasis. We are committed to delivering top-quality services and equipment at competitive prices, and we also build pools in the Sugar Land area, working closely with you to bring your vision to life.",
+      "Our technicians service all major brands and hold multiple industry-leading certifications, guaranteeing reliability and peace of mind."
+    ],
+    "image": "/brands/oceanpool/about",
+    "imageAlt": "A rectangular pool with a raised spa and stone deck in a Sugar Land backyard",
+    "values": [
+      {
+        "title": "Expertise you can trust",
+        "text": "With years of experience in the pool service industry, our team is equipped to handle any pool challenge."
+      },
+      {
+        "title": "Eco-friendly practices",
+        "text": "Our cleaning methods and products keep your pool clean and environmentally responsible."
+      },
+      {
+        "title": "Customized solutions",
+        "text": "Each pool is unique, so the service is built around what yours actually needs."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How often should I schedule pool maintenance?",
+      "a": "Ideally, once a week. Regular visits allow for timely chemical balancing, cleaning and equipment checks to ensure your pool stays safe, clear and ready to enjoy."
+    },
+    {
+      "q": "Why is my pool turning green?",
+      "a": "A green pool typically indicates algae growth due to imbalanced chemicals or insufficient filtration. Proper water testing, shock treatments and thorough brushing can help restore clarity."
+    },
+    {
+      "q": "Can I maintain the pool myself?",
+      "a": "Yes, basic upkeep like skimming leaves and checking chlorine levels can be done by homeowners. However, professional maintenance ensures you stay on top of chemical balances, prevent algae blooms and keep equipment running smoothly."
+    },
+    {
+      "q": "Do you offer emergency repair services?",
+      "a": "Absolutely. If you have urgent issues like major leaks, pump failures or equipment malfunctions, our team provides prompt emergency repairs to get your pool back in action quickly."
+    },
+    {
+      "q": "What's the difference between chlorine and saltwater pools?",
+      "a": "A chlorine pool uses chemical tablets or liquid chlorine to sanitize the water, while a saltwater pool generates chlorine from salt using a chlorine generator. Both methods effectively sanitize the pool; the choice depends on personal preference and budget."
+    },
+    {
+      "q": "When should I consider an acid wash?",
+      "a": "An acid wash is recommended if you notice stubborn stains, discoloration or heavy algae buildup that regular cleaning can't resolve. This process removes a thin layer of plaster or surface material, revealing a fresher layer underneath."
+    }
+  ],
+  "serviceArea": [
+    "Sugar Land",
+    "Katy",
+    "Houston"
+  ],
+  "reviews": [
+    {
+      "author": "Lobna Abbasi",
+      "text": "I would highly recommend Ocean Pool Services for all your pool needs. They have helped keep my pool in top shape and the owner is extremely knowledgeable about how to remedy various pool issues in a quick and efficient manner. My previous pool maintenance company was constantly trying to over-charge me and left the pool in a state of disarray. I was extremely lucky to find Ocean Pool Services because they know exactly what needs to be done to maintain a great looking pool and are honest about the work they do. Their pricing is also very competitive!"
+    },
+    {
+      "author": "Yousef Ghomian",
+      "text": "Great pool service; highly experienced; dedicated to make sure our pool is in its perfect condition. Have been happy working with Ocean pool services. Highly recommend it… Deserve a true 5 star!"
+    },
+    {
+      "author": "Perla Cabello",
+      "text": "Ocean Pool Services is the best. they're super dependable and keep my pool sparkling clean. They are super attentive and responsive when I have questions or just need an additional service for my pool!"
+    },
+    {
+      "author": "Jose Luis Rodriguez Moncada",
+      "text": "Satisfied with the service, they have been able to solve the problem with my pool with a guarantee"
+    },
+    {
+      "author": "William H",
+      "text": "Great service, I struggled to keep the pool clean for years in my own. Enjoying the pool more now that these guys are keeping it perfect."
+    },
+    {
+      "author": "Mariana Matute",
+      "text": "Very satisfied with the service of Ocean Pools, always available if there is any news with my pool no matter the time. Thank you"
+    },
+    {
+      "author": "Daniel Cuesta",
+      "text": "Happy with my service, very responsible and careful apart from the good price!!"
+    },
+    {
+      "author": "Paola Angulo",
+      "text": "Excellent service. Recommended 100%"
+    },
+    {
+      "author": "Gabriel G",
+      "text": "Very professionals and cleanings"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Equipment and Brands",
+      "text": "Ocean Pool Services holds a partner certificate with Pentair, and the team is equipped with Pentair products. Our technicians service all major brands."
+    },
+    {
+      "heading": "Certifications",
+      "text": "Our technicians hold multiple industry-leading certifications."
+    },
+    {
+      "heading": "Pricing",
+      "text": "Weekly cleaning pool services start at $165 a month, and estimates are free. Request one through the form or over the phone, and attach a photo of the pool or the equipment to the form if you have one."
+    },
+    {
+      "heading": "Consultations",
+      "text": "A consultation with the team can be booked for a new pool, a revamped patio or upgraded pool equipment."
+    },
+    {
+      "heading": "Why Choose Us",
+      "items": [
+        "Exceptional customer service: reliable support and clear communication from start to finish",
+        "Advanced technology: the latest techniques for faster service and more cost-effective solutions",
+        "Affordable pricing: premium service at competitive prices"
+      ]
+    },
+    {
+      "heading": "Find Us Online",
+      "items": [
+        "https://www.instagram.com/oceanpoolserv/",
+        "https://www.yelp.com/biz/ocean-pool-service-sugar-land",
+        "https://nextdoor.com/pages/ocean-pool-services-sugar-land-tx/"
+      ]
+    }
+  ]
+}

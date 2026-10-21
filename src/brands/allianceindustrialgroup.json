@@ -1,0 +1,447 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Alliance Industrial Group",
+  "shortName": "Alliance",
+  "summary": "A specialized turnkey EPC contractor for heavy industry, with fabrication shops in Lumberton, Texas and offices across the Gulf Coast.",
+  "phone": "(409) 205-0171",
+  "email": "info@allianceindustrialgroup.com",
+  "address": "570 N LHS Drive",
+  "town": "Lumberton",
+  "state": "TX",
+  "zip": "77657",
+  "since": 1987,
+  "rating": 4.8,
+  "reviewCount": 8,
+  "hours": [
+    [
+      "Monday – Sunday",
+      "Open 24 hours"
+    ]
+  ],
+  "brand": {
+    "primary": "#092548",
+    "primaryDeep": "#031326",
+    "accent": "#d53833",
+    "ink": "#1f2124",
+    "muted": "#6a7584",
+    "surface": "#eef2f7",
+    "line": "#d7dfe9",
+    "heading": "'Barlow Condensed', system-ui, sans-serif",
+    "body": "'Barlow', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap",
+    "logo": "/brands/allianceindustrialgroup/logo.webp",
+    "logoMono": "/brands/allianceindustrialgroup/logo-mono.webp",
+    "logoWidth": 167,
+    "logoHeight": 48,
+    "logoRatio": 3.486,
+    "logoGround": "#14181f",
+    "logoReads": [
+      1.0,
+      0.991,
+      0.883,
+      0.775,
+      0.662,
+      0.55,
+      0.442,
+      0.333,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "licenses": [
+    {
+      "label": "ASME Code Stamps",
+      "number": "U and S"
+    },
+    {
+      "label": "National Board Stamps",
+      "number": "NB and R"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Specialized turnkey EPC contractor",
+    "title": "Where safety and quality",
+    "titleAccent": "come together.",
+    "lead": "Alliance Industrial Group works in capital projects, maintenance services, turnaround management and execution, mechanical and specialty welding, fabrication and civil construction.",
+    "image": "/brands/allianceindustrialgroup/hero",
+    "imageAlt": "A large industrial plant under construction beside the water, with cranes on site"
+  },
+  "groups": [
+    {
+      "slug": "epc-projects",
+      "title": "EPC Projects",
+      "icon": "compass",
+      "summary": "Engineering, procurement and construction run as six concurrent silos rather than three.",
+      "intro": "Our EPC team's objective is to deliver your project safely, with exceptional quality at the best price, generating revenue for your company as early as possible. Engineering and procurement activities are organized around the needs of construction, and constructability is brought in early, where it has its greatest effect. We excel on fast track projects.",
+      "image": "/brands/allianceindustrialgroup/epc",
+      "imageAlt": "Refinery towers and a tall crane under an orange sky",
+      "services": [
+        {
+          "slug": "epc-projects",
+          "title": "EPC Projects",
+          "icon": "compass",
+          "text": "A unique approach to engineering, procurement and construction that can save as much as 12% to 18% of total installed cost and reduce schedule duration by months.",
+          "points": [
+            "Six silos rather than three: engineering, procurement, construction, maintenance, startup and commissioning, and operations",
+            "Backward integration driven by the owner's startup criteria",
+            "Mechanical completion and commissioning combined to cut redundant resources",
+            "Work to economical design standards, with reaction time built in for construction"
+          ]
+        },
+        {
+          "slug": "construction-management",
+          "title": "Construction Management",
+          "icon": "clipboard",
+          "text": "Because of our years in the business and our project experience, we can offer a select group of individuals experienced in the construction of large and small projects.",
+          "points": [
+            "Project management, quality control and procurement",
+            "Environmental safety and health, production control",
+            "Scheduling and document control",
+            "Upstream, midstream, downstream and renewables experience",
+            "Costs reduced by up to 18%"
+          ]
+        },
+        {
+          "slug": "commercial-construction",
+          "title": "Commercial Construction",
+          "icon": "building",
+          "text": "Interior build-outs, new construction, maintenance and major remodeling throughout the Gulf Coast region.",
+          "points": [
+            "Design/build, general contracting and remodeling",
+            "An in-house team with expertise in multiple crafts"
+          ]
+        },
+        {
+          "slug": "project-management-and-construction-staffing",
+          "title": "Project Management and Construction Staffing",
+          "icon": "clipboard",
+          "text": "Individual people or whole teams supplied to your project, drawn from the same group that staffs our own work."
+        }
+      ]
+    },
+    {
+      "slug": "construction-and-fabrication",
+      "title": "Construction and Fabrication",
+      "icon": "wrench",
+      "summary": "Direct hire craft, four fabrication shops, and the electrical, instrumentation and thermal work that goes with them.",
+      "intro": "Alliance provides direct hire construction to the refining, petrochemical, specialty chemicals, midstream, paper and power industries, backed by our own fabrication shops. We emphasize pre-assembly and modularization to reduce on-site man hours, and offer turnkey completion including documentation, testing, x-ray and stress relieving where required.",
+      "imageAlt": "A large metal shearing machine on a fabrication shop floor",
+      "services": [
+        {
+          "slug": "direct-hire-construction",
+          "title": "Direct Hire Construction",
+          "icon": "wrench",
+          "text": "Projects executed safely and efficiently through proven processes, with professional and experienced crafts personnel ensuring the quality control and quality assurance of your facility assets.",
+          "points": [
+            "A Construction Execution Plan covering staffing, constructability, project controls, infrastructure, subcontracts, material control, quality control, safety and security, logistics, rigging and lifting",
+            "Offsite pre-assembly of small bore piping, spools, valve and pump trim packages, control valve stations and safety showers",
+            "Precast manholes, catch basins, spread footers, structural supports, racks and underground electrical ducts",
+            "Point to point fabrication so piping spools ship as complete packages",
+            "Hangers, supports and shoes, and complete procurement and expediting",
+            "A Quality Program that documents and validates that plant assets were engineered properly, constructed and installed per design standards and regulatory requirements, commissioned correctly and started up without incident"
+          ]
+        },
+        {
+          "slug": "fabrication",
+          "title": "Fabrication",
+          "icon": "settings",
+          "text": "Alliance Fabrication produces high quality tanks, vessels, pipe spools and structural steel in carbon steel, stainless or alloys.",
+          "points": [
+            "Four shops in the Golden Triangle of Texas and southwest Louisiana",
+            "Over 230,000 square feet of fabrication floor under roof, 14 gantries rated up to 20 tons, automated welding equipment and 20 acres of laydown",
+            "Pipe fabrication in small and large bore, with carbon and alloy welding",
+            "Structural steel: ladders, handrails, supports, pipe racks, stands and platforms",
+            "Vessel fabrication: tanks, vessels, hoppers and drums",
+            "ASME U and S stamps, National Board NB and R stamps, licensed for boiler repair in the State of Louisiana",
+            "Modular fabrication including metering skids, LACT units, compressors, generators, launchers and receivers, gas dryer skids and pump skids"
+          ]
+        },
+        {
+          "slug": "instrumentation-and-electrical",
+          "title": "Instrumentation and Electrical",
+          "icon": "zap",
+          "text": "A safe, highly effective, specialized industrial electrical and instrumentation contractor, in both new construction and retrofit environments.",
+          "points": [
+            "Power supply, lighting, underground electrical work and temporary power",
+            "Electrical and mechanical instrumentation, pneumatic controls, calibration, loop check and start-up assistance",
+            "Substations, panelboards and instrument rack fabrication",
+            "Fiber optic installation and testing, electrical and steam heat tracing",
+            "Capital project construction, industrial turnarounds and outages, long term facility maintenance and remote field services"
+          ]
+        },
+        {
+          "slug": "thermal-energy-management",
+          "title": "Thermal Energy Management",
+          "icon": "flame",
+          "text": "A full service provider for industrial thermal needs: Alliance can design, procure, construct, install and maintain your facility's thermal systems.",
+          "points": [
+            "Thermal insulation systems for personnel protection, heat conservation and cryogenic service",
+            "Electric heat trace systems for freeze protection, process temperature maintenance and thermal heat up",
+            "Steam tracing systems",
+            "Our T.E.M.P. division works to the lowest total cost of ownership, with the resources to support a facility anywhere",
+            "Design and engineering assistance or turnkey service, whichever level the customer asks for"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "turnarounds-and-startup",
+      "title": "Turnarounds and Startup",
+      "icon": "timer",
+      "summary": "Turnaround management and commissioning that gets the unit back on line without surprises.",
+      "intro": "Alliance provides turnaround management professionals and proprietary processes for the petrochemical, refining, specialty chemicals, paper and power industries, working as part of the owner's integrated team. The systems we install stay with the owner for future use, and our commissioning team carries a project from FEED through to operations stabilization.",
+      "image": "/brands/allianceindustrialgroup/turnaround",
+      "imageAlt": "A process plant's pipework and columns against the sky",
+      "services": [
+        {
+          "slug": "turnaround-management",
+          "title": "Turnaround Management",
+          "icon": "timer",
+          "text": "A turnaround management process developed over the past 22 years that saves owners up to 70% of the planning cost for all future turnarounds.",
+          "points": [
+            "Turnaround Planning Documents and Capital Project Planning Documents that upload into the owner's CMMS",
+            "Detailed work steps similar to MAXIMO work order tasks and SAP maintenance order operations",
+            "Cost and duration reduced by as much as 15% to 20%",
+            "Four execution options, from installing the system alone to executing the complete turnaround",
+            "Copyright pending Turnaround Planning Documents and Capital Project Planning Documents, so the data is stored for every future turnaround",
+            "Planning costs lowered by 40% to 50% when turnaround planning is integrated into a new capital project"
+          ]
+        },
+        {
+          "slug": "commissioning-and-startup",
+          "title": "Commissioning and Startup",
+          "icon": "gauge",
+          "text": "A full array of plant completion services, starting in FEED and completing with operations stabilization, founded on a well-defined systems completion planning process.",
+          "points": [
+            "Electronic commissioning scope documents for every category of tagged item installed",
+            "Field service teams for P&ID walk down, inspection, electrical and mechanical specialists",
+            "Ready for Startup teams, handover and system packages, punch list management",
+            "Equipment certification and Factory Acceptance Testing, HAZOPs, PSRs and PSSRs",
+            "Operator training and procedure writing",
+            "Cold Eyes Review input on major capital projects, and direct hire commissioning teams for flushing, drying, motor run ins and loop sell off",
+            "Project tracking software, commissioning guidelines and procedures, job specific training programs, and the Outstanding Work List process"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "project-controls-and-asset-management",
+      "title": "Project Controls and Asset Management",
+      "icon": "chart",
+      "summary": "Real-time cost and progress on the project, and asset records that outlive it.",
+      "intro": "We pride ourselves on being able to supply real time costs and progress, so the owner has enough reaction time to correct deficiencies in cost and schedule. The same senior team prepares the asset records, inspection plans and maintenance strategies the facility runs on once the project is finished.",
+      "image": "/brands/allianceindustrialgroup/controls",
+      "imageAlt": "Blueprints with drafting pencils and a metal ruler",
+      "services": [
+        {
+          "slug": "project-controls",
+          "title": "Project Controls",
+          "icon": "chart",
+          "text": "Project controls systems and project controls specialists for capital projects and turnarounds, built around our proprietary Project Control Book.",
+          "points": [
+            "Budget and estimate, cost summary, quantity and man hour reporting, productivity profiles, progress charts, rules of credit and dashboard indicators",
+            "Primavera is our scheduling tool of choice",
+            "A contract strategy document that can reduce facility installed costs by 12% to 20%",
+            "A complete control team or individual personnel",
+            "A reimbursable, fixed fee contract strategy that generates an apple to apple bidding process and allows for pain and gain",
+            "Samples of the Control Book supplied on request"
+          ]
+        },
+        {
+          "slug": "asset-management",
+          "title": "Asset Management",
+          "icon": "clipboard",
+          "text": "A senior management team experienced in asset management, with proprietary templates for every asset class in your facility, working to enhance equipment availability and facility profitability.",
+          "points": [
+            "Asset records, bills of material requirements and approved spare parts lists",
+            "Asset inspection and testing plans and a visual inspection program",
+            "Reliability based preventive and predictive maintenance programs",
+            "Initial PM work orders and maintenance strategy framing documents",
+            "Reliability in design, asset database cataloging and an asset life cycle preventative maintenance plan"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "We are your Alliance.",
+    "text": [
+      "Alliance Industrial Group, founded in 1987, is a Gulf Coast-based EPC specializing in site preparation, heavy civil construction, specialty welding, piping, mechanical services, structural steel, equipment installation and demo, exchangers, boilers, furnaces, vessels and towers, tank repair, sheet metal, instrumentation and electrical, and project controls.",
+      "Alliance Industrial Group, in conjunction with SMW Projects, has earned the respect of the industry by focusing on empowering our customers to do more in less time through cost-savings approaches. With over 40 years of experience across all specialized fields of the industrial sector, we pursue a concentration on safety and quality for the sake of our customer and for the confidence of our team.",
+      "The company has grown organically on its reputation for safety and quality, innovation, and the ability to manage and execute work to maximize cost savings to our clients. We work with our customers to forge an alliance, and we are proud to call these clients our own."
+    ],
+    "values": [
+      {
+        "title": "Safety is a culture",
+        "text": "A Behavior Based Safety Program built on observation, analysis and modification of behaviors at every level of the organization."
+      },
+      {
+        "title": "The owner stays in the driver's seat",
+        "text": "Project controls that supply real time cost and progress, with enough reaction time to correct cost and schedule."
+      },
+      {
+        "title": "From mob to demob",
+        "text": "One stop for all stages of a project, so the work does not pass between contractors on the way to startup."
+      }
+    ]
+  },
+  "serviceArea": [
+    "Lumberton",
+    "Kountze",
+    "Sulphur",
+    "Lake Charles",
+    "Southeast Texas",
+    "Southwest Louisiana"
+  ],
+  "facts": [
+    {
+      "heading": "Offices",
+      "items": [
+        "Lumberton: 570 N LHS Drive, Lumberton, Texas 77657, 1.409.205.0171",
+        "Kountze: 1447 US Hwy 69 South, Kountze, Texas 77625, 1.409.205.0171",
+        "Sulphur: 701 E. Napoleon St, Sulphur, LA 70663, 1.337.888.4786",
+        "Main line: 1.832.932.9249",
+        "info@allianceindustrialgroup.com"
+      ]
+    },
+    {
+      "heading": "Founded",
+      "text": "Alliance Industrial Group was founded in 1987. Our top executives have an average of 40 or more years of major project experience."
+    },
+    {
+      "heading": "Safety record",
+      "items": [
+        "Over 36 years in business with no loss of time incidents",
+        "Six consecutive years with a 0 recordable incident rate",
+        "100% reduction of TRIR",
+        "Over 6 years without a recordable incident",
+        "0 recorded incidents"
+      ]
+    },
+    {
+      "heading": "Safety awards",
+      "text": "Top award winner with the ISTC and SWLA Safety Councils for 2018, 2019, 2020 and 2021. AIG received all five ISTC safety awards for 2019, with other safety acknowledgements across the Southwest Louisiana and Southeast Texas region."
+    },
+    {
+      "heading": "Accreditations",
+      "items": [
+        "ISNetworld",
+        "Avetta",
+        "DISA",
+        "ISTC",
+        "HASC",
+        "GCSC",
+        "SCSL",
+        "ABC",
+        "API",
+        "ASME",
+        "ASTM",
+        "AWS",
+        "NBBI",
+        "NEC",
+        "NFPA",
+        "ISO 9000"
+      ]
+    },
+    {
+      "heading": "Licensing",
+      "text": "Alliance Industrial LLC and SMW Projects Inc. are regulated by the Texas Department of Licensing and Regulation, P.O. Box 12517, Austin, TX 78711, 1-800-803-9202 or 1-512-463-6599, www.license.state.tx.us/complaints. Our fabrication group is licensed for boiler repair in the State of Louisiana."
+    },
+    {
+      "heading": "Company names",
+      "text": "Alliance Industrial Construction was formerly SMW Projects, Inc. (SMWP), and Alliance Industrial LLC and SMW Projects Inc. work as one group. The fabrication group trades as Alliance Fabrication, and the thermal group as the T.E.M.P. division."
+    },
+    {
+      "heading": "Free consultation",
+      "text": "Plan your next project with Alliance and get a free consultation. Call 1.832.932.9249 or fill out the contact form, and one of our representatives will contact you shortly."
+    },
+    {
+      "heading": "How we define the job",
+      "text": "Your project, our expertise, from cradle to grave: our mission critical belief is that we are in one business, the Results Business. We define project completion as on-time startup, with systems and processes oriented towards providing the owner with control of the project."
+    },
+    {
+      "heading": "Specialties",
+      "items": [
+        "Engineering, procurement and construction",
+        "Project controls",
+        "Turnaround and asset management",
+        "Commissioning and start-up",
+        "Instrumentation and electrical",
+        "Heat trace",
+        "Fabrication",
+        "Inspection services"
+      ]
+    },
+    {
+      "heading": "Sectors and asset types",
+      "items": [
+        "Upstream: central processing units and tank batteries, gathering lines, truckloading and storage",
+        "Midstream: pipelines, pump stations, compressor stations and metering stations",
+        "Downstream: refinery and petrochemical",
+        "Renewables: solar photovoltaic, thermal including molten salt, parabolic trough and heliostat power plants, and wind turbine tower foundations and erection"
+      ]
+    },
+    {
+      "heading": "Industries served",
+      "items": [
+        "Refineries",
+        "Petrochemical",
+        "Midstream",
+        "Power generation",
+        "Steel mills",
+        "Pulp and paper",
+        "Timber"
+      ]
+    },
+    {
+      "heading": "Where we work",
+      "text": "Our fabrication shops are in Lumberton, Texas and our headquarters is in Lake Charles, Louisiana, but we service the entire United States coast to coast and work across state lines and across countries."
+    },
+    {
+      "heading": "Project success",
+      "items": [
+        "Access Midstream Cherry Compressor Station, Dushore, Pennsylvania: a greenfield compressor station completed safely under challenging circumstances.",
+        "Atlantic Methanol, Equatorial Guinea, West Africa: planning support for the plant's annual turnaround.",
+        "Black Mountain Sand, Kermit, Texas: two frac sand facilities built.",
+        "ET Waste Management, Sulphur, Louisiana: electrical systems restored and civil and structural damage repaired after Hurricane Laura in 2020.",
+        "Indorama Ventures, Westlake, Louisiana: a long dormant ethylene cracker refurbished.",
+        "Lotte Chemical LACC, Lake Charles, Louisiana: construction of the complex completed, with commissioning and startup.",
+        "RB Fuels Biodiesel Plant, Port Neches, Texas: the go-to contractor for construction support.",
+        "Martin Midstream: terminal improvements."
+      ]
+    },
+    {
+      "heading": "Representative clients",
+      "items": [
+        "Cleaver-Brooks",
+        "Dresser-Rand",
+        "Enable",
+        "Entergy",
+        "Flint Hills",
+        "The Linde Group"
+      ]
+    },
+    {
+      "heading": "Employment",
+      "text": "Please visit our site regularly for updated employment opportunities, which we update as projects kick off. Applications are filled out online at https://app.goformz.com/s/M0bG7xuQXDtsZSqD."
+    },
+    {
+      "heading": "Roles we typically hire for",
+      "items": [
+        "Project managers, superintendents, general foremen and craft foremen",
+        "Construction field engineers, schedulers and cost control",
+        "QA/QC managers and inspectors, safety managers and safety inspectors",
+        "Specialty and rig welders, alloy welders, stick rod welders and structural welders",
+        "Pipe fabricators, boilermakers, iron workers, millwrights and riggers",
+        "Electrician lead men, electricians, instrument techs and instrument fitters",
+        "Operators (NCCO, heavy and light), carpenters, concrete finishers and sheet metal workers",
+        "Scaffold builders, insulators, painters, fire watch, helpers and craft apprentices",
+        "Office managers and purchasers, clerks and timekeepers, document control, expediters and tool room coordinators"
+      ]
+    }
+  ]
+}

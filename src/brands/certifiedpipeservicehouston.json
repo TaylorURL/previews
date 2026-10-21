@@ -1,0 +1,572 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Certified Pipe Service Houston",
+  "shortName": "CPS Houston",
+  "summary": "A diversified pipe and structural steel fabrication and coatings provider offering turnkey solutions, from two Houston-area facilities in Channelview and Baytown.",
+  "phone": "(281) 457-2454",
+  "email": "quotes@cpshouston.net",
+  "address": "15914 De Zavalla Rd",
+  "town": "Channelview",
+  "state": "TX",
+  "zip": "77530",
+  "rating": 3.2,
+  "reviewCount": 61,
+  "since": 1979,
+  "hours": [
+    ["Mon – Fri", "7:30 AM – 4:30 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#1b3664",
+    "primaryDeep": "#122444",
+    "accent": "#00bcd4",
+    "ink": "#363739",
+    "muted": "#6b6d72",
+    "surface": "#eef2f8",
+    "line": "#d6dde7",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/certifiedpipeservicehouston/logo.webp",
+    "logoMono": "/brands/certifiedpipeservicehouston/logo-mono.webp",
+    "logoWidth": 137,
+    "logoHeight": 74,
+    "logoRatio": 1.852,
+    "logoGround": "#ffffff",
+    "logoReads": [0.624, 0.551, 0.487, 0.418, 0.549, 0.542, 0.551, 0.598, 0.671, 0.849, 1.0]
+  },
+  "hero": {
+    "eyebrow": "Pipe and structural steel services in Channelview",
+    "title": "Pipe services that go",
+    "titleAccent": "full circle.",
+    "lead": "From pipe transport, storage and repair to API double jointing, AWS piling fabrication and marine coatings, we have you covered. Have a difficult project with unique challenges? Turn to your pipe and welding pros for service you can rely on.",
+    "image": "/brands/certifiedpipeservicehouston/hero",
+    "imageAlt": "A long row of coated pipe piles standing upright in the yard"
+  },
+  "groups": [
+    {
+      "slug": "coating",
+      "title": "Coating",
+      "icon": "droplets",
+      "summary": "Line pipe, commercial and marine coatings, applied in house.",
+      "intro": "CPS is a recognized applicator of high quality coatings for pipe, fittings, valves, piling products, structural steel and more. Primers, epoxies, urethanes and a number of specialty coatings are applied in house, and line pipe coatings include liquid spray FBE, ARO, Powercrete and internal linings. CPS holds AMPP QP1 and QP3 certifications and is an AISC Certified Fabricator with Complex Coating endorsement.",
+      "image": "/brands/certifiedpipeservicehouston/coating",
+      "imageAlt": "A large-diameter pipe coated black inside the indoor paint booth",
+      "services": [
+        {
+          "slug": "coating-application",
+          "title": "Coating Application",
+          "icon": "droplets",
+          "text": "Primers, epoxies, urethanes and specialty coatings applied to pipe, fittings, valves, piling products and structural steel.",
+          "points": [
+            "Pipe, internal and external",
+            "Fittings and valves",
+            "AWWA",
+            "Marine",
+            "Structural",
+            "Thermal spray aluminum / metalizing",
+            "TXDOT",
+            "NORSOK M-501"
+          ]
+        },
+        {
+          "slug": "blasting",
+          "title": "Blasting",
+          "icon": "wind",
+          "text": "Automated and enclosed blast cleaning for pipe and structural shapes ahead of coating.",
+          "points": [
+            "2 automated pipe wheelblast machines",
+            "External up to 42\"",
+            "Internal 2\" to unlimited",
+            "Enclosed blast room",
+            "Internal automated pipe blasting",
+            "Pipe maintenance and thread reconditioning"
+          ]
+        },
+        {
+          "slug": "equipment-and-resources",
+          "title": "Equipment & Resources",
+          "icon": "settings",
+          "text": "Equipped to handle the largest projects with three automated pipe and structural steel wheelblast machines, an indoor blast room and a 15,000 sf heated coating booth.",
+          "points": [
+            "15,000 sf heated indoor paint booth",
+            "2 pipe wheelblast machines, external up to 42\" and internal 2\" to unlimited",
+            "1 structural wheelblast machine for beam, channel, sheet pile and shapes up to 150' lengths",
+            "50 ton+ handling equipment",
+            "NACE Level I and II coating inspectors on staff"
+          ]
+        },
+        {
+          "slug": "steelant",
+          "title": "Steelant Application",
+          "icon": "shield",
+          "text": "CPS added Steelant installation in 2026, at its Houston facility and in the field nationwide."
+        }
+      ]
+    },
+    {
+      "slug": "double-jointing",
+      "title": "Double Jointing",
+      "icon": "zap",
+      "summary": "API 1104 and AWS D1.1 pipe splicing, in the shop and in the field.",
+      "intro": "CPS offers both AWS D1.1 structural pile splicing and API 1104 line pipe double jointing services at its Houston, Texas facility and nationwide. The equipment line-up includes portable structural rack systems capable of 200'+ pipe pile splicing and API double jointing rack systems capable of 10,000'+ daily production. CPS is uniquely equipped to handle the largest of API 1104 line pipe double jointing projects and D1.1 piling projects anywhere in the USA.",
+      "image": "/brands/certifiedpipeservicehouston/double-jointing",
+      "imageAlt": "A long pipe set on a mechanized welding rack inside the shop",
+      "services": [
+        {
+          "slug": "api-1104-double-jointing",
+          "title": "API 1104 Double Jointing",
+          "icon": "zap",
+          "text": "API 1104 double jointing at the Houston facility and in the field nationwide, deploying to docks, FBE coating plants, pipe mills and staging yards. CPS maintains one of the largest collections of double jointing equipment in the USA.",
+          "points": [
+            "20-54\" API 1104 double jointing",
+            "Portable rack available nationwide",
+            "10,000'+ daily production rates",
+            "Extensive line-up of support equipment"
+          ]
+        },
+        {
+          "slug": "aws-d1-1-double-jointing",
+          "title": "AWS D1.1 Double Jointing",
+          "icon": "building",
+          "text": "Structural pile splicing to AWS D1.1, with portable rack systems that travel to the project.",
+          "points": [
+            "Pipe piles fabricated and coated 175'+",
+            "H-pile full penetration splicing",
+            "Sheet pile splicing",
+            "Delivery to barge, rail or jobsite",
+            "Portable rack systems available nationwide"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "fabrication",
+      "title": "Fabrication",
+      "icon": "wrench",
+      "summary": "Welding, cutting and complex fabrication of sheet, h-pile and pipe structures.",
+      "intro": "Welding, cutting and complex fabrication of sheet, h-pile and pipe structures are the CPS specialty. CPS offers mechanized SAW production welding for the largest of projects, and certified operators, certified procedures and a CWI on staff keep results consistent.",
+      "image": "/brands/certifiedpipeservicehouston/fabrication",
+      "imageAlt": "A seam weld running the length of a steel section in the shop",
+      "services": [
+        {
+          "slug": "marine",
+          "title": "Marine Fabrication",
+          "icon": "waves",
+          "text": "Marine structures fabricated for dock, mooring and berth work.",
+          "points": [
+            "Dolphins",
+            "Studs and anchors",
+            "Fenders and walers",
+            "Monopiles and king piles",
+            "Mooring piles",
+            "Corners"
+          ]
+        },
+        {
+          "slug": "pipe-pile",
+          "title": "Pipe Pile",
+          "icon": "building",
+          "text": "High volume pipe splicing in the shop or on site, with the finished pile delivered where it is needed.",
+          "points": [
+            "Portable high volume pipe splicing nationwide",
+            "AWS D1.1 and D1.5 certified welding",
+            "Double jointing to 175'+",
+            "End plates and conical points",
+            "Delivery to barge, rail or jobsite"
+          ]
+        },
+        {
+          "slug": "sheet-and-h-pile",
+          "title": "Sheet & H-Pile",
+          "icon": "ruler",
+          "text": "Sheet pile, h-pile and flat sheet work, from interlock seam welding to anchor pile fabrication.",
+          "points": [
+            "Sheet pile: corners, transitions and connectors",
+            "Sheet pile: seam welding common interlocks",
+            "H-pile: anchor pile fabrication",
+            "Flat sheets: WYE and X piles and splicing"
+          ]
+        },
+        {
+          "slug": "general-fabrication",
+          "title": "General Fabrication",
+          "icon": "settings",
+          "text": "Structures, poles, racks and pipe assemblies built to the drawing.",
+          "points": [
+            "Sign structures, segmented poles and attachments",
+            "Pipe flanges, outlets and branches",
+            "Split casing",
+            "Structures, skids and pipe racks",
+            "Flame cutting"
+          ]
+        },
+        {
+          "slug": "cutting-and-end-finishing",
+          "title": "Cutting & End Finishing",
+          "icon": "gauge",
+          "text": "Beveling, grooving, saw cutting and CNC plate burning for pipe, fittings, sheets and shapes.",
+          "points": [
+            "Torch and machine beveling, compound bevels (J, K, etc), taper boring and transitions",
+            "Victaulic roll and cut grooving, 2-24\"",
+            "Saw cutting up to 24\"",
+            "Sheets and shapes: cut to length, handling holes, splice plates, lifting eyes, beam and channel splitting",
+            "CNC plate burning: splice plates, end plates, donuts and drive points"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "logistics",
+      "title": "Logistics",
+      "icon": "car",
+      "summary": "Vessel, rail, barge, pipe storage and delivery.",
+      "intro": "CPS delivers solutions to solve your most complex transport challenges: vessel, rail, barge, pipe storage and delivery. CPS operates its own fleet of semis for regular flatbed and over length loads up to 150', and loads and unloads railcars with turnkey packages available including local pickup, loading and freight to your destination.",
+      "image": "/brands/certifiedpipeservicehouston/logistics",
+      "imageAlt": "A loaded flatbed semi beside large-diameter pipe in the storage yard",
+      "services": [
+        {
+          "slug": "storage",
+          "title": "Storage",
+          "icon": "building",
+          "text": "Pipe processing and storage across two Houston locations, with direct discharge from vessel.",
+          "points": [
+            "2 Houston locations",
+            "110 acres pipe processing and storage",
+            "1000+ pipe storage racks",
+            "Direct discharge from vessel",
+            "Real time receivers and OS&D"
+          ]
+        },
+        {
+          "slug": "freight",
+          "title": "Freight",
+          "icon": "car",
+          "text": "A company fleet of semis for flatbed, over length and intermodal work.",
+          "points": [
+            "Fleet of semis serving TX and LA",
+            "Rig deliveries and returns",
+            "Overlength loads to 175'+",
+            "Intermodal transfers by vessel, rail, barge and container"
+          ]
+        },
+        {
+          "slug": "intermodal",
+          "title": "Intermodal",
+          "icon": "waves",
+          "text": "Vessel, rail, barge and container transfers handled end to end.",
+          "points": [
+            "Direct discharge: turnkey vessel-to-truck transfers from any Houston area terminal",
+            "Rail spur served by UP and BNSF, flatbed and gondola loading and unloading, local pickup and delivery, US, Canada and Mexico",
+            "Barge lengths up to 150', close proximity to Jacintoport",
+            "Container drayage, loading and unloading: open top, flat rack, 20/40'"
+          ]
+        },
+        {
+          "slug": "packaging",
+          "title": "Packaging",
+          "icon": "clipboard",
+          "text": "Material prepared and identified for the next leg of its journey.",
+          "points": ["Crating", "Bundling", "Marking", "Etching", "Barcoding"]
+        }
+      ]
+    },
+    {
+      "slug": "pipe-maintenance",
+      "title": "Pipe Maintenance",
+      "icon": "settings",
+      "summary": "OCTG, line pipe and mechanical maintenance, repair and value added services.",
+      "intro": "CPS offers a comprehensive line-up of pipe maintenance, repair and value added services. End finishing, straightening, blast cleaning, thread maintenance, cleaning and repairs are all handled at the Channelview pipe repair shop.",
+      "image": "/brands/certifiedpipeservicehouston/pipe-maintenance",
+      "imageAlt": "A forklift carrying a large-diameter pipe section across the yard",
+      "services": [
+        {
+          "slug": "end-finishing",
+          "title": "End Finishing",
+          "icon": "gauge",
+          "text": "Beveling, grooving and saw cutting to the end preparation the job calls for.",
+          "points": [
+            "Torch and machine beveling",
+            "Specialty end finishing: compound bevels (J, K, etc), taper boring and transitions",
+            "Fittings",
+            "Victaulic grooving: cut grooving 1-24\", roll grooving 2-24\"",
+            "Original Groove System (OGS 25.01), EndSeal (ES 25.02), Advanced Groove System (AGS 25.09)",
+            "IGS 25.14, Double Cut Groove (DCG 25.04), Radius Cut Groove (RCG 25.05)",
+            "Saw cutting up to 24\""
+          ]
+        },
+        {
+          "slug": "octg",
+          "title": "OCTG",
+          "icon": "wrench",
+          "text": "Thread and tubular maintenance for oil country tubular goods, including rig returns.",
+          "points": [
+            "Thread maintenance: repairs, inspection and maintenance",
+            "Full length drift, no drift repair, rounding and grinding",
+            "Bucking thru 16\"",
+            "Rig returns",
+            "Hydrostatic testing, T&C and plain end",
+            "Tubular maintenance: BRS, VTI/FLD, clean and redope",
+            "Alloys: storage and handling, bolsters and special handling",
+            "Special clearance coupling machining"
+          ]
+        },
+        {
+          "slug": "straightening",
+          "title": "Straightening",
+          "icon": "ruler",
+          "text": "Pipe, bar, shapes and beam brought back into line.",
+          "points": ["Pipe thru 36\"", "Precision bar straightening", "Shapes and beam"]
+        },
+        {
+          "slug": "maintenance-and-blast-cleaning",
+          "title": "Maintenance & Blast Cleaning",
+          "icon": "wind",
+          "text": "Brush and blast cleaning, thread maintenance and chloride remediation, inside and out.",
+          "points": [
+            "BR&S: brush or blast, lacquer and restencil",
+            "OD/ID automated pipe blast systems 2-48\"",
+            "Thread maintenance: clean and redope, inspection",
+            "Saltwater (chloride) remediation, internal and external",
+            "Degreasing: internal and external oil removal",
+            "Mill scale removal, internal and external",
+            "ID rattling and honing"
+          ]
+        },
+        {
+          "slug": "pipe-cleaning",
+          "title": "Pipe Cleaning",
+          "icon": "droplets",
+          "text": "Old coatings, concrete and contaminants stripped back to clean steel.",
+          "points": [
+            "FBE and ARO removal",
+            "Carasite, 3LPE, tapes and wraps",
+            "Concrete removal",
+            "Internal shot and water blasting",
+            "Oxygen service cleaning",
+            "Saltwater (chloride) remediation"
+          ]
+        },
+        {
+          "slug": "pipe-repairs",
+          "title": "Pipe Repairs",
+          "icon": "wrench",
+          "text": "Damaged pipe brought back to spec rather than scrapped.",
+          "points": [
+            "Dent removal",
+            "Rounding (ovality correction)",
+            "Chloride and saltwater remediation"
+          ]
+        },
+        {
+          "slug": "grinding",
+          "title": "Grinding",
+          "icon": "gauge",
+          "text": "Pitting and surface defects ground out and proved up, by hand or on the automated line.",
+          "points": [
+            "Pitting and defect removal and prove-up",
+            "OD/ID full length automated grinding"
+          ]
+        },
+        {
+          "slug": "marking-and-packaging",
+          "title": "Marking & Packaging",
+          "icon": "clipboard",
+          "text": "Pipe marked, identified and packaged for storage or onward shipment.",
+          "points": [
+            "Bar coding, labeling and stenciling",
+            "Bundling, crating and palletizing",
+            "Container loading and unloading"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "threading-and-grooving",
+      "title": "Threading & Grooving",
+      "icon": "gauge",
+      "summary": "Line pipe, water well and micropile threading, plus Victaulic grooving.",
+      "intro": "CPS cuts NPT, straight and tapered threads for line pipe, water well column pipe and micropile. Victaulic roll and cut grooving, taper boring and compound beveling are run on the same floor.",
+      "services": [
+        {
+          "slug": "threading",
+          "title": "Threading",
+          "icon": "settings",
+          "text": "NPT, straight and tapered threads, including water well column pipe and micropile work.",
+          "points": [
+            "NPT, straight and tapered threads",
+            "Water well column pipe and accessories",
+            "Micropile thru 13-5/8\": casing, rope and custom threads",
+            "Starters: U7L teeth and custom fabrication",
+            "Followers: 2.5' and up",
+            "Hunting TL-BTC"
+          ]
+        },
+        {
+          "slug": "victaulic-grooving",
+          "title": "Victaulic Roll & Cut Grooving",
+          "icon": "gauge",
+          "text": "Roll and cut grooving across a wide size range, including CNC cut grooving.",
+          "points": [
+            "AGS and OGS thru 60\"",
+            "CNC cut grooving thru 14\"",
+            "Conventional cut grooving thru 24\"",
+            "New Victaulic grooving equipment with expanded size capacity added in 2025"
+          ]
+        },
+        {
+          "slug": "taper-boring-and-beveling",
+          "title": "Taper Boring & Beveling",
+          "icon": "ruler",
+          "text": "Compound bevels and taper bores cut to the transition the job needs.",
+          "points": ["Compound beveling (J, K, etc) thru 48\"", "Taper boring"]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Turnkey pipe and structural steel work since 1979.",
+    "text": [
+      "CPS Houston is a diversified pipe and structural steel fabrication and coatings provider offering turnkey solutions. Ray Yarbrough founded Certified Welding & Fabrication in 1979, and CPS Houston opened at 301 South Sheldon Road in 2007.",
+      "CPS completed its first major USACE piling project in 2009 and built a second location, the 126 acre Baytown facility, in 2014. Indoor blast and paint booths were constructed in 2017, enabling larger and more complex projects, and in 2018 the Houston Business Journal recognised CPS among its Top 100 Fastest Growing Companies.",
+      "CPS was awarded its first major LNG project in 2019-2020 and acquired API double-joint rack systems. In 2022 it designed and built its first portable pile splicing rack system and launched field services, and in 2023 it performed work for three major LNG projects.",
+      "CPS obtained AMPP QP3 coating certification in 2024, then in 2025 added AISC certification with a complex coatings endorsement, commissioned its first fully portable API double joint rack system, introduced coal tar replacement coating products, grew its fleet of semis to 13 trucks and added 14 acres of new pipe storage at Baytown. In 2026 CPS earned AMPP QP1 certification, enabling field coating of complex structures."
+    ],
+    "image": "/brands/certifiedpipeservicehouston/about",
+    "imageAlt": "A CPS Houston semi with a pipe pile loaded on an over-length trailer",
+    "values": [
+      {
+        "title": "One call",
+        "text": "Fab, coat and deliver through one company, which simplifies the supply chain process."
+      },
+      {
+        "title": "Certified work",
+        "text": "AMPP QP1 and QP3, AISC with a complex coatings endorsement, and NACE inspectors and a CWI on staff."
+      },
+      {
+        "title": "Built for size",
+        "text": "110 acres of pipe processing and storage, and equipment set up to handle the largest projects."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Certifications",
+      "items": [
+        "AMPP QP1, earned 2026, for field coating of complex structures",
+        "AMPP QP3, obtained 2024",
+        "AISC Certified Fabricator with Complex Coating endorsement",
+        "AWS D1.1 and D1.5 certified welding",
+        "API 1104 double jointing",
+        "NACE Level I and II coating inspectors on staff",
+        "CWI on staff"
+      ]
+    },
+    {
+      "heading": "Industry & Trade Associations",
+      "items": ["AWS", "NACE", "NASPD"]
+    },
+    {
+      "heading": "Locations",
+      "items": [
+        "Channelview office entrance: 15914 De Zavalla Rd, Channelview, TX 77530, (281) 457-2454",
+        "Channelview truck entrance: 301 S. Sheldon Rd, Channelview, TX 77530",
+        "Baytown corporate office: 6225 FM 1942, Baytown, TX 77521, (832) 695-3100"
+      ]
+    },
+    {
+      "heading": "Channelview Facility",
+      "items": [
+        "15,000 sf enclosed and heated paint booth",
+        "Enclosed blast room",
+        "2 wheelblast machines",
+        "Pipe and structural shapes",
+        "Internal pipe blast machine",
+        "10,000 sf fabrication shop",
+        "15,000 sf pipe repair shop",
+        "Crane and forklift served, 50 ton+"
+      ]
+    },
+    {
+      "heading": "Baytown Facility",
+      "items": [
+        "85 acres of pipe storage",
+        "60 acres of elevated racks",
+        "60 acres berm storage",
+        "800+ rack locations",
+        "Railspur nearby, UP and BNSF",
+        "On-site pipe repair and value added services"
+      ]
+    },
+    {
+      "heading": "By The Numbers",
+      "items": [
+        "2 locations",
+        "110 acres of pipe processing and storage",
+        "140 dedicated staff",
+        "13 semis in the fleet"
+      ]
+    },
+    {
+      "heading": "Reach",
+      "text": "Two Houston-area facilities, a fleet of semis serving Texas and Louisiana, and portable API double jointing and pile splicing rack systems available nationwide."
+    },
+    {
+      "heading": "Directions",
+      "items": [
+        "Channelview: I-10 exit 783, half a mile south on Sheldon Rd",
+        "Baytown: I-10 exit 793 North Main St, 3 miles north on North Main St",
+        "Baytown: Hwy 90 exit FM 2100 (Crosby), 6 miles east on FM 1942"
+      ]
+    },
+    {
+      "heading": "Truck Drivers",
+      "items": [
+        "Delivery hours 7:30 am – 2:30 pm",
+        "Deliveries: no appointment required",
+        "Picking up: call for an appointment 24 hours in advance of arrival. No appointments needed at the Sheldon location",
+        "Loadouts by appointment only",
+        "Watch the safe loading practices video before arriving",
+        "Sign the visitor waiver, mandatory for all yard visitors",
+        "Minimum PPE: hard hat, steel toe boots, reflective vest and long pants",
+        "Equipment: pipe stakes and hardwood dunnage, sold onsite"
+      ]
+    },
+    {
+      "heading": "Yard Visitors",
+      "items": [
+        "Sign the Visitor Release and Indemnity Agreement",
+        "Wear minimum PPE: hard hat, steel toe boots and reflective vest",
+        "Remain with an escort throughout the visit",
+        "No cell phone use or photography"
+      ]
+    },
+    {
+      "heading": "Careers",
+      "items": [
+        "Skilled and unskilled positions with opportunities for advancement",
+        "Currently listed: Forklift Operator, Painter, and Flatbed Driver, regular and over-length, all full-time in Channelview",
+        "Apply with an online application or in person at either location",
+        "Pay is based on experience on every listed role",
+        "Every role takes a pre-employment physical and DOT drug screen",
+        "Flatbed Driver: valid Class A CDL and two years of driving experience, local legal and over-length loads across the Houston area, Texas and Louisiana",
+        "Heavy haul and oversize experience is preferred, and interested candidates are trained"
+      ]
+    },
+    {
+      "heading": "Coming Next",
+      "items": [
+        "2026: an additional API double joint rack and a new permanent building to be commissioned",
+        "2026-27: a second indoor coating booth and wheelblast machine to be commissioned at the Baytown facility"
+      ]
+    },
+    {
+      "heading": "Follow",
+      "items": ["Facebook: facebook.com/mycpshouston", "LinkedIn: linkedin.com/company/cps-houston"]
+    }
+  ]
+}
