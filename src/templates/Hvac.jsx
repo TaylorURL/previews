@@ -874,9 +874,10 @@ function PageHero({ b, crumbs, eyebrow, title, text, image, imageAlt, imageHold 
           {children}
         </div>
         {image ? (
-          // Held by its top edge unless the page says otherwise, so a portrait cut to this frame keeps the person's head.
+          // Drawn in its own proportions, so no fixed frame cuts its subject off at either edge. Only a photo too
+          // tall for the cap is cut, held by its top edge unless the page says otherwise.
           <Img
-            className={`aspect-[16/11] w-full rounded-[24px] object-cover ${imageHold} shadow-[0_30px_60px_-35px_rgba(11,27,43,0.55)]`}
+            className={`block h-auto max-h-[min(80svh,640px)] w-full rounded-[24px] object-cover ${imageHold} shadow-[0_30px_60px_-35px_rgba(11,27,43,0.55)]`}
             src={image}
             alt={imageAlt}
             sizes="(min-width: 1024px) 45vw, 100vw"
@@ -1199,18 +1200,19 @@ function Home({ b, groups, tel }) {
       {b.about && (
         <section className={`${pad} bg-surface`}>
           {/* The photo stands level with the heading, so words that run longer than it never leave a bare block above it.
-              It is held by its top edge, so a portrait cut to the frame keeps the person's head. */}
+              It is drawn in its own proportions and only one too tall for the cap is cut, held by its top edge so a portrait
+              keeps the person's head. The year stands under it, never over what the photo shows. */}
           <div className={`${wrap} grid items-start gap-10 ${b.about.image ? 'md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]' : ''} lg:gap-20`}>
             {b.about.image && (
-            <div className="relative">
+            <div>
               <Img
-                className="aspect-[4/3] w-full rounded-xl object-cover object-top"
+                className="block h-auto max-h-[min(80svh,600px)] w-full rounded-xl object-cover object-top"
                 src={b.about.image}
                 alt={b.about.imageAlt}
                 sizes="(min-width: 768px) 42vw, 100vw"
               />
               {b.since && (
-                <p className="absolute bottom-4 left-4 rounded-2xl bg-white px-5 py-3.5 shadow-[0_18px_40px_-20px_rgba(11,27,43,0.5)]">
+                <p className="mt-4 inline-block rounded-2xl bg-white px-5 py-3.5 shadow-[0_18px_40px_-20px_rgba(11,27,43,0.5)]">
                   <span className="block text-[13px] font-medium text-muted">Serving {b.town} since</span>
                   <strong className="font-heading text-[28px] font-extrabold leading-none tracking-[-0.03em] text-ink">{b.since}</strong>
                 </p>
@@ -1360,9 +1362,9 @@ function GroupPage({ b, groups, group, tel }) {
         text={group.intro}
         image={group.image}
         imageAlt={group.imageAlt}
-        // A photo of the work has it standing on the ground, a van, a unit or a panel, with sky or wall above,
-        // so the frame keeps the lower part and cuts from the top.
-        imageHold="object-[center_80%]"
+        // A photo of the work may be a person at the top or a van, a unit or a panel standing on the ground,
+        // so one too tall for the cap is cut evenly from both edges.
+        imageHold="object-center"
         panel={
           // A group with no list of its own, or a list of one, has nothing to set beside the form without
           // passing a service's own selling points off as services, so the form stands in the hero instead.
