@@ -1,0 +1,322 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "All Day Concrete Inc.",
+  "shortName": "All Day Concrete",
+  "summary": "Ready mixed concrete manufactured and delivered for commercial and residential work in Houston.",
+  "phone": "(713) 987-0741",
+  "email": "dispatch@alldayconcreteinc.com",
+  "address": "5621 Schurmier Rd",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77048",
+  "rating": 4.0,
+  "reviewCount": 34,
+  "hours": [
+    ["Mon – Fri", "6 AM – 5 PM"],
+    ["Saturday", "6 AM – 3 PM"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#0e1c7a",
+    "primaryDeep": "#070f49",
+    "accent": "#dd1c0d",
+    "ink": "#1a1d23",
+    "muted": "#596070",
+    "surface": "#f3f4fb",
+    "line": "#dcdfee",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/alldayconcrete/logo.webp",
+    "logoMono": "/brands/alldayconcrete/logo-mono.webp",
+    "logoWidth": 131,
+    "logoHeight": 84,
+    "logoRatio": 1.561,
+    "logoGround": "#ffffff",
+    "logoReads": [0.224, 0.195, 0.232, 0.252, 0.388, 0.484, 0.582, 0.683, 0.789, 0.896, 1.0]
+  },
+  "hero": {
+    "eyebrow": "Houston ready mix concrete company",
+    "title": "Commercial and residential",
+    "titleAccent": "concrete delivery.",
+    "lead": "For more than 20 years All Day Concrete has manufactured and delivered ready mixed concrete, from a TxDOT certified plant on Schurmier Road in Houston.",
+    "image": "/brands/alldayconcrete/hero",
+    "imageAlt": "The All Day Concrete plant in Houston with mixer trucks parked beside the silos"
+  },
+  "groups": [
+    {
+      "slug": "commercial",
+      "title": "Commercial",
+      "icon": "building",
+      "summary": "Mix designs that are approved and conform with ASTM and ACI standards, delivered to commercial sites.",
+      "intro": "We provide our services in the commercial sector by offering a range of mix designs that are approved and conform with ASTM and ACI standards. We understand the shortfalls of this industry and the sense of urgency that is required once a job begins. An integrated GPS tracking system in all of our trucks gives an accurate ETA once the truck leaves the plant.",
+      "services": [
+        {
+          "slug": "parking-lots",
+          "title": "Parking Lots",
+          "icon": "car",
+          "text": "Ready mixed concrete delivered for parking lot work, on mix designs approved to ASTM and ACI standards.",
+          "points": [
+            "Mix designs with supporting documentation for any type of submittal",
+            "GPS tracked trucks for an accurate ETA"
+          ]
+        },
+        {
+          "slug": "warehouses",
+          "title": "Warehouses",
+          "icon": "building",
+          "text": "Concrete for warehouse work, mixed at our own plant and delivered to the site.",
+          "points": [
+            "A range of mix designs to suit the specification",
+            "Variety of aggregates and admixtures held at the plant"
+          ]
+        },
+        {
+          "slug": "street-pavement",
+          "title": "Street Pavement",
+          "icon": "ruler",
+          "text": "Street pavement pours supplied from a TxDOT certified plant.",
+          "points": [
+            "Mix designs that conform with ASTM and ACI standards"
+          ]
+        },
+        {
+          "slug": "gas-stations",
+          "title": "Gas Stations",
+          "icon": "gauge",
+          "text": "Concrete delivered for gas station work, with the submittal paperwork to go with the mix.",
+          "points": [
+            "Supporting documentation provided with the mix design"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "residential",
+      "title": "Residential",
+      "icon": "home",
+      "summary": "House slabs, driveways, sidewalks and patios, worked hand in hand with your contractor.",
+      "intro": "With the steady demand of single unit and multi-unit homes, we work hand in hand with contractors to provide house slabs, driveways, sidewalks and patios. It is our pleasure to work with different contractors who have different needs, and that allows us to adapt to the changing environment and practices introduced in the concrete industry.",
+      "services": [
+        {
+          "slug": "house-slabs",
+          "title": "House Slabs",
+          "icon": "home",
+          "text": "Ready mixed concrete delivered for slabs on single unit and multi-unit homes.",
+          "points": [
+            "Worked hand in hand with your contractor",
+            "GPS tracked trucks for an accurate ETA"
+          ]
+        },
+        {
+          "slug": "driveways",
+          "title": "Driveways",
+          "icon": "car",
+          "text": "Concrete for residential driveways, mixed at our plant and delivered to the address.",
+          "points": [
+            "Pea gravel, limestone and hard rock mixes available"
+          ]
+        },
+        {
+          "slug": "sidewalks",
+          "title": "Sidewalks",
+          "icon": "ruler",
+          "text": "Sidewalk pours supplied from our Houston plant.",
+          "points": [
+            "Smaller aggregate mixes for tighter work"
+          ]
+        },
+        {
+          "slug": "patios",
+          "title": "Patios",
+          "icon": "leaf",
+          "text": "Concrete delivered for patio work at the strength your contractor specifies.",
+          "points": [
+            "Mix designs from 3000 PSI upward"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "special-concrete-application",
+      "title": "Special Concrete Application",
+      "icon": "compass",
+      "summary": "Customized mix properties for projects with engineering and contractor requirements.",
+      "intro": "We have been fortunate enough to work in unique and special projects using a variety of mix designs with customized properties that meet engineering and contractor requirements. We have different mix designs with supporting documentation for any type of submittal.",
+      "services": [
+        {
+          "slug": "customized-mix-designs",
+          "title": "Customized Mix Designs",
+          "icon": "compass",
+          "text": "A variety of mix designs with customized properties that meet engineering and contractor requirements.",
+          "points": [
+            "Different variety of aggregates and admixtures held at the plant",
+            "Built for unique and special projects"
+          ]
+        },
+        {
+          "slug": "submittals",
+          "title": "Submittals",
+          "icon": "clipboard",
+          "text": "Different mix designs with supporting documentation for any type of submittal.",
+          "points": [
+            "Tell us your needs and we will send you a free estimate or submittal"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "mixes",
+      "title": "Mixes",
+      "icon": "clipboard",
+      "summary": "Our mix list, from 3000 PSI to 5000 PSI and above, in three aggregates.",
+      "intro": "Our priority is making sure that our customer has access to all their concrete needs through us. To ensure this, we commit ourselves to having a different variety of aggregates and admixtures to best satisfy those needs. If you do not see a mix that you are looking for, contact us and we will make sure to obtain one that best fits your needs.",
+      "services": [
+        {
+          "slug": "3000-psi",
+          "title": "3000 PSI",
+          "icon": "chart",
+          "text": "4.5 sack mix.",
+          "points": [
+            "3000 PSI - 1.5\" hard rock",
+            "3000 PSI - 1.0\" limestone",
+            "3000 PSI - 3/8\" pea gravel"
+          ]
+        },
+        {
+          "slug": "3500-psi",
+          "title": "3500 PSI",
+          "icon": "chart",
+          "text": "5.0 sack mix.",
+          "points": [
+            "3500 PSI - 1.5\" hard rock",
+            "3500 PSI - 1.0\" limestone",
+            "3500 PSI - 3/8\" pea gravel"
+          ]
+        },
+        {
+          "slug": "4000-psi",
+          "title": "4000 PSI",
+          "icon": "chart",
+          "text": "5.5 sack mix.",
+          "points": [
+            "4000 PSI - 1.5\" hard rock",
+            "4000 PSI - 1.0\" limestone",
+            "4000 PSI - 3/8\" pea gravel"
+          ]
+        },
+        {
+          "slug": "4500-psi",
+          "title": "4500 PSI",
+          "icon": "chart",
+          "text": "6.0 sack mix.",
+          "points": [
+            "4500 PSI - 1.5\" hard rock",
+            "4500 PSI - 1.0\" limestone",
+            "4500 PSI - 3/8\" pea gravel"
+          ]
+        },
+        {
+          "slug": "5000-psi-plus",
+          "title": "5000 PSI and Above",
+          "icon": "chart",
+          "text": "7.0 sack and above.",
+          "points": [
+            "5000 PSI - 1.5\" hard rock",
+            "5000 PSI - 1.0\" limestone",
+            "5000 PSI - 3/8\" pea gravel"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "We love concreting.",
+    "text": [
+      "For more than 20 years, All Day Concrete has manufactured and delivered ready mixed concrete. We love improving and finding ways to become more efficient, so that our customers can benefit from good quality and competitive pricing.",
+      "Responsibility, Humility, and Hard work are at the basis of our philosophy. We believe that these are the tenets for success in our industry and we strive to exemplify these principles everyday.",
+      "With over 20 years of experience we have been able to establish loyal clientele who entrust us with their concrete needs. We try to provide the best customer support and are always receptive to feedback provided that it is just and constructive."
+    ],
+    "image": "/brands/alldayconcrete/fleet",
+    "imageAlt": "An All Day Concrete mixer truck parked on a Houston street",
+    "values": [
+      {
+        "title": "Over 20 years",
+        "text": "Loyal clientele who entrust us with their concrete needs, built up over more than 20 years of mixing and delivering."
+      },
+      {
+        "title": "Tracked trucks",
+        "text": "An integrated GPS tracking system in all of our trucks ensures an accurate ETA once the truck leaves the plant."
+      },
+      {
+        "title": "Documented mixes",
+        "text": "Different mix designs with supporting documentation for any type of submittal."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What if the mix I need is not on your list?",
+      "a": "Contact us and we will make sure to obtain one that best fits your needs."
+    },
+    {
+      "q": "How do I get a price?",
+      "a": "Call us at 713-987-0741 Ext. 1 or send an inquiry. Tell us your needs and we will send you a free estimate or submittal."
+    },
+    {
+      "q": "Do your mixes meet commercial standards?",
+      "a": "We offer a range of mix designs that are approved and conform with ASTM and ACI standards, and we are a TxDOT certified plant."
+    },
+    {
+      "q": "Will I know when the truck is coming?",
+      "a": "We have an integrated GPS tracking system in all of our trucks to ensure an accurate ETA once the truck leaves the plant."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "TxDOT Certified Plant",
+      "text": "Our plant is TxDOT certified, and our commercial mix designs are approved and conform with ASTM and ACI standards."
+    },
+    {
+      "heading": "Dispatch",
+      "text": "Call 713-987-0741 Ext. 1 and tell us your needs, and we will send you a free estimate or submittal."
+    },
+    {
+      "heading": "Email Us",
+      "text": "For general inquiries and questions, contact us via email at dispatch@alldayconcreteinc.com."
+    },
+    {
+      "heading": "GPS Tracking",
+      "text": "We have an integrated GPS tracking system in all of our trucks to ensure an accurate ETA once the truck leaves the plant."
+    },
+    {
+      "heading": "Submittals",
+      "text": "We have different mix designs with supporting documentation for any type of submittal."
+    },
+    {
+      "heading": "Aggregates",
+      "items": [
+        "1.5\" hard rock",
+        "1.0\" limestone",
+        "3/8\" pea gravel"
+      ]
+    },
+    {
+      "heading": "Our Philosophy",
+      "items": [
+        "Responsibility",
+        "Humility",
+        "Hard work"
+      ]
+    },
+    {
+      "heading": "Follow Us",
+      "items": [
+        "facebook.com/alldayconcreteinc"
+      ]
+    }
+  ]
+}

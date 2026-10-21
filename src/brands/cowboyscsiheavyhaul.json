@@ -1,0 +1,309 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Cowboy's Services, Inc.",
+  "shortName": "CSI Heavy Haul",
+  "summary": "Heavy haul and specialized transport for over-weight and over-dimensional loads, run out of Channelview and working the Gulf Coast and all 48 states.",
+  "phone": "(281) 385-5650",
+  "email": "Sales@CSIHeavyHaul.com",
+  "address": "15473 East Fwy",
+  "town": "Channelview",
+  "state": "TX",
+  "zip": "77530",
+  "rating": 4.1,
+  "reviewCount": 15,
+  "since": 1983,
+  "hours": [
+    ["Mon – Fri", "8 AM – 5 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#a5161f",
+    "primaryDeep": "#6d0f16",
+    "accent": "#e09c1f",
+    "ink": "#16181b",
+    "muted": "#55595f",
+    "surface": "#f6f5f3",
+    "line": "#e0dedb",
+    "heading": "'Saira', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Saira:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/cowboyscsiheavyhaul/logo.webp",
+    "logoMono": "/brands/cowboyscsiheavyhaul/logo-mono.webp",
+    "logoWidth": 199,
+    "logoHeight": 74,
+    "logoRatio": 2.695,
+    "logoGround": "#ffffff",
+    "logoReads": [0.0, 0.0, 0.0, 0.295, 0.397, 0.501, 0.599, 0.697, 0.799, 0.903, 1.0]
+  },
+  "hero": {
+    "eyebrow": "Heavy haul transport on the Gulf Coast",
+    "title": "Safe, specialized heavy haul",
+    "titleAccent": "and services.",
+    "lead": "Reliable trucks. Reliable service. Regardless of miles, destination or cargo, you can trust us with your trucking needs, for short or long hauls, nationally or locally.",
+    "image": "/brands/cowboyscsiheavyhaul/hero",
+    "imageAlt": "A Cowboy's Services truck hauling a modular building along a highway"
+  },
+  "groups": [
+    {
+      "slug": "heavy-haul",
+      "title": "Heavy Haul Transport",
+      "icon": "car",
+      "summary": "Over-weight and over-dimensional loads on a diverse fleet of trucks and trailers.",
+      "intro": "CSI Heavy Haul specializes in all your over-weight and over-dimensional loads. With our diverse fleet of trucks and trailers we are able to provide you the most efficient and reliable equipment for your transport. Established more than three decades ago, we have built a reputation on outstanding customer service, competitive rates, driver safety and professionalism.",
+      "image": "/brands/cowboyscsiheavyhaul/heavy-haul",
+      "imageAlt": "A CSI tractor hauling a transformer on a multi-axle trailer",
+      "services": [
+        {
+          "slug": "super-heavy-haul",
+          "title": "Super Heavy Haul",
+          "icon": "gauge",
+          "text": "The heaviest and widest loads, carried on modular and self-propelled equipment.",
+          "points": [
+            "13 axle double gooseneck 100-ton trailers (30' – 70' of main deck)",
+            "13 axle level deck extendable 80-ton trailers (43' – 64')",
+            "9 axle Scheuerle trailers",
+            "28 lines of K-25 heavy duty modular trailer (THP)",
+            "Self-propelled transporters (PST)"
+          ]
+        },
+        {
+          "slug": "step-decks-and-lowboys",
+          "title": "Step Decks, RGNs and Flatbeds",
+          "icon": "car",
+          "text": "Step decks, removable goosenecks, lowboys, flatbeds and dry vans for machinery and general freight.",
+          "points": [
+            "13 axle double drop extendable 70-ton trailers (29' – 50')",
+            "11 axle double drop RGN's 60-ton trailers (29' – 54')",
+            "9 axle double drop 65-ton lowboys",
+            "53' extendable step decks 55-ton (53' – 72')",
+            "53' triaxle step decks 50-ton",
+            "48' triaxle flatbeds",
+            "53' dry vans"
+          ]
+        },
+        {
+          "slug": "modular-building-transport",
+          "title": "Modular and Power Control Building Transport",
+          "icon": "building",
+          "text": "We specialize in modular and power control building transport, and in towing modular structures of all kinds.",
+          "points": [
+            "Specialized crawler jacks capable of 25 tons per jack",
+            "Ideal loading machines for MCC, VFD and PCR buildings",
+            "Gantry set up and service",
+            "Booster and jeep attachments, beam trailer"
+          ]
+        },
+        {
+          "slug": "barge-and-rail",
+          "title": "Barge and Rail Transport",
+          "icon": "waves",
+          "text": "Our shipping experts work with you to move goods efficiently, safely and cost-effectively, whichever mode the project calls for.",
+          "points": [
+            "Barge transport",
+            "Rail transport",
+            "Turnkey projects from the manufacturer to the end user"
+          ]
+        },
+        {
+          "slug": "storage-and-rentals",
+          "title": "Storage and Equipment Rental",
+          "icon": "settings",
+          "text": "Storage for the load between moves, and the equipment to set it down and pick it up again.",
+          "points": [
+            "Indoor and outdoor storage",
+            "Jack stand and beam rental",
+            "Winch trucks",
+            "Bucket trucks"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "oilfield-transport",
+      "title": "Turn-Key Oil Field Services",
+      "icon": "wrench",
+      "summary": "Rig and oilfield equipment moved by experienced, highly trained equipment movers.",
+      "intro": "Allow our team of experienced and highly trained professional equipment movers to take care of all the logistics of transporting your oil equipment. Do you have more than just equipment to move? We can help move your other heavy and commercial equipment, workforce buildings and trailers, and any portable buildings.",
+      "image": "/brands/cowboyscsiheavyhaul/oilfield",
+      "imageAlt": "A CSI tractor hauling equipment on a lowboy trailer",
+      "services": [
+        {
+          "slug": "equipment-transport",
+          "title": "Moving All Types of Equipment",
+          "icon": "gauge",
+          "text": "We handle all the logistics of getting your oil equipment from where it is to where it is needed.",
+          "points": [
+            "Barracks",
+            "Mud pumps",
+            "Traveling blocks and draw works",
+            "Sand pipes, tanks and conductor pipes",
+            "Cranes"
+          ]
+        },
+        {
+          "slug": "rig-handling",
+          "title": "Rig Handling",
+          "icon": "clipboard",
+          "text": "Our detail-oriented movers make sure the truck or trailer mounted rig is stabilized manually or by hydraulic jacks. We uncoil and lay out all guy lines to remove kinks or knots so your equipment is unharmed during the move."
+        },
+        {
+          "slug": "oilfield-equipment",
+          "title": "Oilfield Trailers and Equipment",
+          "icon": "car",
+          "text": "The trailers and lifting equipment the oil patch asks for, in our own fleet.",
+          "points": [
+            "13 axle oilfield 9' wide extendable 70-ton (47' – 61')",
+            "9 axle 70-ton lowboys with rolling tailboard",
+            "Winch trucks",
+            "Forklifts",
+            "Cranes"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "workforce-lodging",
+      "title": "Turn-Key Workforce Lodging",
+      "icon": "building",
+      "summary": "Man camps, field offices and temporary classrooms moved, set and taken back down.",
+      "intro": "We transport and handle the basic set up and tear down of oil field man camps, and the transport, set up and removal of field offices and temporary class rooms. Electrical and plumbing are not part of the work.",
+      "image": "/brands/cowboyscsiheavyhaul/workforce-lodging",
+      "imageAlt": "A row of workforce lodging buildings set on a prepared site",
+      "services": [
+        {
+          "slug": "make-ready-site-prep",
+          "title": "Make Ready Site Prep",
+          "icon": "ruler",
+          "text": "The site is made ready before the buildings arrive."
+        },
+        {
+          "slug": "transport",
+          "title": "Transport",
+          "icon": "car",
+          "text": "Man camps, field offices and temporary class rooms hauled to the site."
+        },
+        {
+          "slug": "full-set",
+          "title": "Full Set",
+          "icon": "building",
+          "text": "Basic set up and tear down of oil field man camps, and set up and removal of field offices and temporary class rooms. No electrical or plumbing."
+        }
+      ]
+    },
+    {
+      "slug": "roll-off",
+      "title": "CSI Roll-Off Division",
+      "icon": "timer",
+      "summary": "30 yard roll-off dumpsters and 8 yard concrete washout containers, delivered to the jobsite.",
+      "intro": "We offer 30 yard roll-off dumpsters for any size project, commercial, residential or industrial. Also available is our 8 yard concrete washout containers, specifically designed for concrete washout waste.",
+      "services": [
+        {
+          "slug": "roll-off-dumpsters",
+          "title": "30 Yard Roll-Off Dumpsters",
+          "icon": "timer",
+          "text": "Roll-off dumpsters for any size project, commercial, residential or industrial."
+        },
+        {
+          "slug": "concrete-washout",
+          "title": "8 Yard Concrete Washout Containers",
+          "icon": "droplets",
+          "text": "Containers designed specifically for concrete washout waste."
+        },
+        {
+          "slug": "rentals",
+          "title": "Long or Short Term Rentals",
+          "icon": "clipboard",
+          "text": "We offer long or short term rentals and can quickly deliver directly to your jobsite."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Family owned and operated since 1983.",
+    "text": [
+      "Cowboy's Services, Inc. is a family owned and operated company. Founded in 1983, the company began as a house and structure mover in the Beaumont, TX area. From the beginning, a very high level of service, dedication and safety was proven on every move. Those same levels have been passed upon and exceeded as the company has grown into what it is today.",
+      "Operated still by the original owner, we know without a doubt that our commitment to our customers has contributed to CSI's continued success. Our skilled employees make every effort to perform as seamlessly as possible alongside our customers.",
+      "Built on reputation and outstanding customer service, we feel it is these very actions that have allowed CSI to strengthen and maintain our relationships, continuing to be safe, efficient, effective and as transparent for our customers as possible."
+    ],
+    "image": "/brands/cowboyscsiheavyhaul/about",
+    "imageAlt": "A CSI truck and trailer carrying a modular building",
+    "values": [
+      {
+        "title": "Licensed and insured drivers",
+        "text": "All our drivers are licensed, experienced, insured and have exceptional driving records."
+      },
+      {
+        "title": "Safety record",
+        "text": "Our company has one of the highest safety records in the industry, proven on both the state and national levels."
+      },
+      {
+        "title": "Project management",
+        "text": "We offer turnkey projects. CSI and our team can cover the project from the manufacturer to the end user, regardless of the mode of transportation."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Logistics And Specialized Projects",
+      "text": "We are not your typical trucking company. From towing modular structures of all kinds to hauling small and large-scale cargo, CSI Heavy Haul offers a full range of innovative freight transportation solutions and emergency troubleshooting."
+    },
+    {
+      "heading": "Safety And Satisfaction Guaranteed",
+      "text": "Safety and satisfaction are guaranteed."
+    },
+    {
+      "heading": "Areas We Service",
+      "text": "We offer local and long-distance service. We make deliveries and pick-ups in all 48 states, but we concentrate our efforts along the Gulf Coast."
+    },
+    {
+      "heading": "Trucks, Trailers and Equipment",
+      "items": [
+        "Super Heavy Haul",
+        "Step decks",
+        "Oil Field Trailers",
+        "Flat-beds",
+        "RGN",
+        "Booster and Jeep attachments",
+        "Beam Trailer",
+        "Dry Van",
+        "9 Axle Scheuerle Trailers",
+        "28 Lines of K-25 Heavy Duty Modular Trailer (THP)",
+        "Self-Propelled Transporters (PST)",
+        "Winch Trucks",
+        "Indoor & Outdoor Storage",
+        "Jack Stand & Beam rental",
+        "Roll-Off Dumpster rental",
+        "Bucket Trucks"
+      ]
+    },
+    {
+      "heading": "Requesting A Quote",
+      "text": "Call (281) 385-5650 or email Sales@CSIHeavyHaul.com for a quote. Send the load's length, width, height and weight, the date it needs to move, the origin and destination addresses and any special instructions, and attach drawings or documents."
+    },
+    {
+      "heading": "Locations",
+      "items": ["15473 East Fwy, Channelview, TX 77530", "24095 Interstate 10, Wallisville, TX 77597"]
+    },
+    {
+      "heading": "Careers",
+      "items": [
+        "CDL Driver (Class A)",
+        "CDL Driver (Class B)",
+        "Diesel Equipment Mechanic",
+        "Dump Truck Driver (CDL)"
+      ]
+    },
+    {
+      "heading": "Applying For A Job",
+      "text": "An application takes the position applied for, a name, an email address, a phone number, a cover letter and a resume or CV upload."
+    },
+    {
+      "heading": "Find Us Online",
+      "items": ["Facebook: facebook.com/cowboysservicesinc", "LinkedIn: linkedin.com/company/csi-heavy-haul-cowboy's-services-inc"]
+    }
+  ]
+}
