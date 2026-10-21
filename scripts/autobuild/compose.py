@@ -357,13 +357,23 @@ def gist(text, limit):
     """trim() for a card's line: when even the first sentence is too long, its
     opening clause, if it reads as a sentence of its own, stands for it. One
     that opens on a preposition or a subordinating word ("At our chiropractic
-    clinic, we offer...") only sets the scene for the sentence, so it doesn't."""
+    clinic, we offer...") only sets the scene for the sentence, so it doesn't.
+    A cut inside a list ("We believe maintaining timely, complete, and accurate
+    books...") leaves the sentence without its point, so the clause runs on to
+    the first stop after the list is closed."""
     cut = trim(text, limit)
     if cut or not sentences(text):
         return cut
-    head = re.split(r"[,;:–—]\s", sentences(text)[0])[0].rstrip(".!? ")
-    if LEADING.match(head):
+    parts = re.split(r"([,;:–—]\s)", sentences(text)[0])
+    if LEADING.match(parts[0]):
         return ""
+    listed = False
+    for i in range(0, len(parts), 2):
+        head = "".join(parts[:i + 1]).rstrip(".!? ")
+        rest = "".join(parts[i + 2:])
+        listed = bool(re.match(r"(?:[\w'’-]+,?\s+){1,3}(?:and|or)\s", rest) or (listed and re.match(r"(?:and|or)\s", rest)))
+        if not listed:
+            break
     return head + "." if len(head.split()) >= 4 and len(head) < limit else ""
 
 
@@ -762,6 +772,11 @@ def about_of(pages, name, trade=None):
                 re.search(r"\b(?:he|she)\b", text, re.I)
                 and re.search(r"\b(?:on|to|at) (?:our|my) (?:roof|home|house|property|yard|pool)\b|\bset (?:him|her|them) apart\b|\bgave (?:us|me) peace of mind\b", text, re.I)
             ):
+                continue
+            # Or one a customer writes to them as "you", thanking them ("Thank
+            # you for the clear and concise explanation... Judith and I really
+            # appreciate the efforts of you and your team members").
+            if re.search(r"\b(?:I|me|my)\b", text) and (re.match(r"(?:thank you|thanks)\b", text, re.I) or re.search(r"\byou and your (?:team|staff|crew|office)\b", text, re.I)):
                 continue
             # Nor is their reply to one ("Hi, Tom. We must have done something
             # right...", "Thank you so much for your kind words, Tonya!").
