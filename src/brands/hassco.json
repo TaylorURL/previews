@@ -1,0 +1,494 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "HASSCO, LLC",
+  "shortName": "HASSCO",
+  "summary": "Trenchless boring and tunneling, heavy civil construction, trench shoring, dewatering and hydro excavation for industrial, commercial and municipal projects across Texas and the United States.",
+  "phone": "(281) 447-4277",
+  "email": "info@hassco.com",
+  "address": "2411 Frick Rd",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77038",
+  "rating": 4.6,
+  "reviewCount": 10,
+  "brand": {
+    "primary": "#004aad",
+    "primaryDeep": "#002f6e",
+    "accent": "#f17827",
+    "ink": "#12161d",
+    "muted": "#5a6472",
+    "surface": "#eef2f7",
+    "line": "#d6dde6",
+    "heading": "'Manrope', system-ui, sans-serif",
+    "body": "'Nunito Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Nunito+Sans:wght@400;500;600&display=swap",
+    "logo": "/brands/hassco/logo.webp",
+    "logoMono": "/brands/hassco/logo-mono.webp",
+    "logoWidth": 198,
+    "logoHeight": 48,
+    "logoRatio": 4.132,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.721,
+      0.688,
+      0.654,
+      0.25,
+      0.126,
+      0.29,
+      0.656,
+      0.696,
+      0.75,
+      0.848,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Trenchless, heavy civil and trench safety in Houston",
+    "title": "Precision below,",
+    "titleAccent": "performance above.",
+    "lead": "Turnkey civil, trench safety and dewatering solutions, built for performance and powered by experience. One integrated team takes a project from earthwork and trench shoring through to final surface restoration.",
+    "image": "/brands/hassco/team",
+    "imageAlt": "HASSCO crews working with heavy machinery on a railroad track installation"
+  },
+  "groups": [
+    {
+      "slug": "trenchless",
+      "title": "Trenchless",
+      "icon": "compass",
+      "summary": "Boring and tunneling that puts pipe underground without opening the surface above it.",
+      "intro": "As the need to expand or rehabilitate existing infrastructure grows, trenchless construction keeps getting more essential, because it is minimally disruptive to surface activities. HASSCO offers one of the most experienced trenchless construction resumes in the industry and is known for accurate and timely results. Alongside traditional boring and tunneling, we build and run our own in-house trenchless methods and machines for custom underground solutions.",
+      "image": "/brands/hassco/trenchless",
+      "imageAlt": "A HASSCO tunnel crossing beneath a railroad, with casing pipe set in the bore pit",
+      "services": [
+        {
+          "slug": "boring",
+          "title": "Boring",
+          "icon": "compass",
+          "text": "Utility crossings bored under roads, rail and runways, so the surface above stays open while the pipe goes in beneath it.",
+          "points": [
+            "Auger / dry bore",
+            "Jack & bore",
+            "Slurry / wet bore",
+            "Short crossings through to large-diameter work"
+          ]
+        },
+        {
+          "slug": "pipe-ramming",
+          "title": "Pipe Ramming",
+          "icon": "settings",
+          "text": "Casing driven through ground that will not hold an open bore, where soil conditions rule out other methods.",
+          "points": [
+            "Used where subsurface conditions are difficult",
+            "Specialized equipment run by our own crews"
+          ]
+        },
+        {
+          "slug": "guided-boring",
+          "title": "Guided Boring",
+          "icon": "ruler",
+          "text": "Pilot tube work for installations that have to hold line and grade from the entry pit to the exit.",
+          "points": [
+            "Pilot tube / guided boring",
+            "On-target steering"
+          ]
+        },
+        {
+          "slug": "tunneling",
+          "title": "Tunneling",
+          "icon": "circuit",
+          "text": "Hand and machine tunneling for the larger underground infrastructure a bore cannot carry, including work beneath international airports and sensitive railroads.",
+          "points": [
+            "Pipe jacking / hand tunneling",
+            "Micro tunneling",
+            "Machine tunneling",
+            "Proven through all soil types"
+          ]
+        },
+        {
+          "slug": "directional-drilling",
+          "title": "Directional Drilling",
+          "icon": "waves",
+          "text": "Steered drilling for crossings that have to curve around what is already in the ground rather than run straight through it.",
+          "points": [
+            "In-house trenchless methods and machines",
+            "Bores and tunnels of multiple lengths and diameters"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "heavy-civil",
+      "title": "Heavy Civil",
+      "icon": "building",
+      "summary": "Site work, underground utilities, pile driving and deep foundations, handled by one team.",
+      "intro": "We provide comprehensive heavy construction services backed by experience, reliability and a commitment to evolving with industry demands. Our team delivers complete, efficient solutions tailored to meet the needs of each project, from earthwork and underground utilities through to the foundations the structure sits on.",
+      "image": "/brands/hassco/heavy-civil",
+      "imageAlt": "HASSCO crews running excavators and earthmoving equipment on a cleared construction site",
+      "services": [
+        {
+          "slug": "site-work",
+          "title": "Site Work",
+          "icon": "building",
+          "text": "Site development and excavation with specialized earthmoving equipment, for municipal, industrial and commercial projects.",
+          "points": [
+            "Earthwork and site development",
+            "Through to final surface restoration"
+          ]
+        },
+        {
+          "slug": "utility-installation",
+          "title": "Utility Installation",
+          "icon": "cable",
+          "text": "Underground utility construction, including large-diameter storm sewer, sanitary sewer and drainage improvement work.",
+          "points": [
+            "Storm and sanitary sewer",
+            "Drainage improvements",
+            "Work adjacent to active airport facilities"
+          ]
+        },
+        {
+          "slug": "pile-driving",
+          "title": "Pile Driving",
+          "icon": "settings",
+          "text": "Precision-driven pile installation for civil and infrastructure projects, installed safely, efficiently and to specification for long-term performance.",
+          "points": [
+            "Steel, concrete and timber piles",
+            "Driven to specification"
+          ]
+        },
+        {
+          "slug": "deep-foundations",
+          "title": "Deep Foundations",
+          "icon": "shield",
+          "text": "Deep, stable foundations built in challenging soil conditions, supporting transportation, industrial, municipal and infrastructure projects.",
+          "points": [
+            "For challenging soil conditions",
+            "Transportation and infrastructure work"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "trench-shoring",
+      "title": "Trench Safety",
+      "icon": "shield",
+      "summary": "Engineered trench and excavation safety systems that keep crews protected and the job compliant.",
+      "intro": "HASSCO is a provider of trench shoring solutions across Texas and beyond, delivering engineered trench and excavation safety systems tailored to your project. Every project presents its own ground conditions, utility conflicts and structural demands, and our team customizes the right system to match, using safe, environmentally responsible shoring techniques that protect workers, infrastructure and surrounding communities while keeping projects on schedule.",
+      "image": "/brands/hassco/shoring",
+      "imageAlt": "A HASSCO crew running boring equipment inside an engineered trench shoring system",
+      "services": [
+        {
+          "slug": "trench-shoring-systems",
+          "title": "Trench Shoring",
+          "icon": "shield",
+          "text": "Shoring systems engineered for the trench they go into, rather than whatever box happens to be on the yard.",
+          "points": [
+            "Liner plate, trench boxes and beam & plate",
+            "Beam & lagging, slide rail and sheet piling",
+            "Engineered to the project",
+            "Compliance and worker protection first"
+          ]
+        },
+        {
+          "slug": "earth-retention",
+          "title": "Earth Retention",
+          "icon": "building",
+          "text": "Earth retention for excavations that have to stay open and stable while the work inside them goes ahead.",
+          "points": [
+            "Excavation support systems",
+            "Liner plate shafts and tunneling access",
+            "Sheet piling for high groundwater or surcharge conditions"
+          ]
+        },
+        {
+          "slug": "excavation-support",
+          "title": "Excavation Support",
+          "icon": "clipboard",
+          "text": "Support systems set alongside live infrastructure, including underground utility installation next to active airport facilities.",
+          "points": [
+            "Line-and-grade control maintained",
+            "Installed and maintained by our own crews"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dewatering",
+      "title": "Dewatering",
+      "icon": "droplets",
+      "summary": "Groundwater control designed, installed and maintained for the conditions on your site.",
+      "intro": "We provide construction dewatering and groundwater control solutions tailored to site-specific conditions. Our team designs, installs and maintains systems that keep excavation and construction operations safe, efficient and compliant, including deep excavations alongside trenchless and heavy civil work.",
+      "image": "/brands/hassco/dewatering",
+      "imageAlt": "A HASSCO dewatering setup with pipe laid out beside a crane and excavator on a residential street",
+      "services": [
+        {
+          "slug": "dewatering-systems",
+          "title": "Dewatering Systems",
+          "icon": "droplets",
+          "text": "Systems designed around the site rather than pulled off a shelf, then installed and maintained for the life of the excavation.",
+          "points": [
+            "Deep wells and wellpoints",
+            "Vacuum assisted and eductor systems",
+            "Horizontal wells and sumps",
+            "Designed to site-specific conditions"
+          ]
+        },
+        {
+          "slug": "groundwater-control",
+          "title": "Groundwater Control",
+          "icon": "waves",
+          "text": "Groundwater held back so excavation and construction can go ahead safely, efficiently and in compliance.",
+          "points": [
+            "Deep excavation support",
+            "Compliant operations"
+          ]
+        },
+        {
+          "slug": "wellpoint-systems",
+          "title": "Wellpoint Systems",
+          "icon": "settings",
+          "text": "Wellpoint installation for deep excavations, trenchless construction, underground utilities and heavy civil infrastructure projects.",
+          "points": [
+            "For deep excavations",
+            "Tied into trenchless and civil work"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hydro-excavation",
+      "title": "Hydro Excavation",
+      "icon": "waves",
+      "summary": "Non-destructive digging that exposes buried utilities without putting a blade near them.",
+      "intro": "We provide innovative solutions for safely locating and exposing buried utilities, including gas lines, fiber optics, electric lines and pipelines. Our non-destructive excavation methods let us work with precision where traditional machine or hand excavation is impractical or unsafe.",
+      "image": "/brands/hassco/hydro",
+      "imageAlt": "A HASSCO vacuum truck and crew in protective suits daylighting a utility on site",
+      "services": [
+        {
+          "slug": "utility-daylighting",
+          "title": "Utility Daylighting",
+          "icon": "sun",
+          "text": "Buried lines uncovered and confirmed before anyone digs near them, so the crew that follows knows exactly what is down there.",
+          "points": [
+            "Gas lines and pipelines",
+            "Fiber optic and electric lines",
+            "Potholing and exposure of live lines",
+            "Subsurface utility engineering"
+          ]
+        },
+        {
+          "slug": "hydrovac",
+          "title": "Hydrovac Services",
+          "icon": "droplets",
+          "text": "Vacuum excavation for the places a machine bucket or a shovel is impractical or unsafe.",
+          "points": [
+            "Non-destructive excavation",
+            "Slot trenching and point repair",
+            "Precision work in congested or unapproachable areas"
+          ]
+        },
+        {
+          "slug": "damage-prevention",
+          "title": "Damage Prevention",
+          "icon": "shield",
+          "text": "Safe underground utility exposure as a damage prevention step on construction projects, not an afterthought once something is hit.",
+          "points": [
+            "Utility exposure before excavation",
+            "Supports wider construction work"
+          ]
+        },
+        {
+          "slug": "material-transfer",
+          "title": "Material Transfer",
+          "icon": "settings",
+          "text": "Bulk liquids, solids and sludge moved or contained for clients who need it done quickly, from boiler systems, cooling towers, wastewater treatment facilities and process machinery pits.",
+          "points": [
+            "Pit or sump clean outs",
+            "Drain line cleaning and fly ash removal",
+            "Tank, rig and pit cleaning"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Turnkey specialty construction solutions.",
+    "text": [
+      "HASSCO, LLC is a full-service, multi-disciplined specialty construction company delivering underground and heavy civil solutions across the industrial, commercial and municipal sectors. With over 80 years of collective experience, our team provides innovative, efficient and safety-focused solutions for projects ranging from small-scale installations to complex infrastructure systems.",
+      "HASSCO is your single-source specialty contractor, providing the complete package of underground services with the convenience of working with one trusted partner. Five specialized divisions work in alignment, so earthwork, trench shoring, boring, dewatering and surface restoration are handled by one integrated team rather than five separate ones.",
+      "Our vision is simple: get the job done right and on time. Through advanced equipment, proven methods and a team built on experience and accountability, we deliver safe, cost-effective solutions while maintaining strong client partnerships. HASSCO is proud of a legacy of excellence built on safety, innovation and results."
+    ],
+    "image": "/brands/hassco/hero",
+    "imageAlt": "A HASSCO worker in a hard hat and safety vest working on large-diameter underground pipe at a jobsite",
+    "values": [
+      {
+        "title": "Experience that delivers",
+        "text": "Decades of proven results in complex civil and underground projects."
+      },
+      {
+        "title": "Turnkey capabilities",
+        "text": "One integrated team, from earthwork and trench shoring to final surface restoration."
+      },
+      {
+        "title": "Safety and precision",
+        "text": "Our crews follow rigorous safety standards and use proven methods to deliver consistent, measurable results."
+      }
+    ]
+  },
+  "serviceArea": [
+    "Texas",
+    "Colorado",
+    "Kansas",
+    "Nebraska",
+    "North Dakota",
+    "South Dakota",
+    "Iowa",
+    "Missouri",
+    "Illinois",
+    "Indiana",
+    "Ohio",
+    "Kentucky",
+    "Tennessee",
+    "North Carolina",
+    "South Carolina",
+    "Georgia",
+    "Florida"
+  ],
+  "facts": [
+    {
+      "heading": "What we specialize in",
+      "items": [
+        "Site work & utilities construction",
+        "Earth retention & trench shoring",
+        "Pile driving & deep foundations",
+        "Dewatering & groundwater control",
+        "Hydro / vacuum excavation",
+        "Boring & tunneling"
+      ]
+    },
+    {
+      "heading": "Trenchless methods",
+      "items": [
+        "Auger / dry bore",
+        "Jack & bore",
+        "Slurry / wet bore",
+        "Pipe ramming",
+        "Pilot tube / guided boring",
+        "Pipe jacking / hand tunneling",
+        "Micro tunneling",
+        "Machine tunneling",
+        "Directional drilling",
+        "On-target steering"
+      ]
+    },
+    {
+      "heading": "Safety and compliance networks",
+      "items": [
+        "ISN",
+        "Avetta (formerly PICS)",
+        "eRailSafe",
+        "HASC"
+      ]
+    },
+    {
+      "heading": "Markets served",
+      "text": "Municipal, industrial, commercial and energy markets, supported with turnkey underground solutions across regional and national markets."
+    },
+    {
+      "heading": "Experience",
+      "text": "Over 80 years of collective experience across the HASSCO team, on projects ranging from small-scale installations to complex infrastructure systems."
+    },
+    {
+      "heading": "Proven ground",
+      "text": "HASSCO has completed bores and tunnels of multiple lengths and diameters through all soil types, including work underneath multiple international airports and sensitive railroads."
+    },
+    {
+      "heading": "Mailing address",
+      "text": "21175 SH 249 #403, Houston, TX 77070. The headquarters at 2411 Frick Road is a separate address."
+    },
+    {
+      "heading": "Part of HASSCOGROUP",
+      "text": "HASSCO works alongside HASSCORE, at hasscore.com, which provides SWPPP implementation, routine site inspections, erosion and sediment control installation and ongoing maintenance, so sites stay stabilized, meet regulatory requirements and maintain environmental compliance throughout construction and beyond."
+    },
+    {
+      "heading": "Our commitment",
+      "text": "Get the job done right and on time, through advanced equipment, proven methods and a team built on experience and accountability."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook — facebook.com/Hasscocivil",
+        "LinkedIn — linkedin.com/company/hassco"
+      ]
+    },
+    {
+      "heading": "Bids and estimates",
+      "text": "Bid and estimate requests go to bids@hassco.com. General enquiries go to info@hassco.com, and the office line is 281-447-HASS (4277)."
+    },
+    {
+      "heading": "Who we work with",
+      "text": "HASSCO is recognized for collaborating seamlessly with owners, contractors and engineers to deliver integrated civil construction solutions."
+    },
+    {
+      "heading": "Reach across state lines",
+      "text": "HASSCO serves clients across multiple states, mobilizing quickly and deploying specialized equipment to execute complex projects in regional and national markets while keeping the responsiveness of a locally owned company."
+    },
+    {
+      "heading": "Multiple services, one contract",
+      "text": "Because dewatering and the other divisions are integrated within one operation, HASSCO frequently provides multiple services under a single contract, reducing downtime and risk and improving project efficiency."
+    },
+    {
+      "heading": "A record on major infrastructure",
+      "text": "HASSCO has been involved in the expansion of some of the largest and most complex underground infrastructure throughout Texas and the United States."
+    },
+    {
+      "heading": "Choosing a trenchless method",
+      "text": "HASSCO can help you choose the appropriate trenchless method for your next project, and combines experienced personnel, specialized equipment and proven methods on installations from short utility crossings to large-diameter infrastructure."
+    },
+    {
+      "heading": "Trench shoring systems we install",
+      "items": [
+        "Liner plate — shaft construction and tunneling access, deep excavations, limited access areas",
+        "Trench boxes — steel and aluminum shields, rapid installation, stackable for deeper trenches",
+        "Beam & plate — linear utility installations, strong lateral soil support, varying depths and widths",
+        "Beam & lagging — unstable soils and irregular excavation layouts, common on municipal work",
+        "Slide rail systems — deep, narrow excavations, manholes, vaults and structures, minimal surface disruption",
+        "Sheet piling — earth retention for high groundwater or surcharge conditions, industrial and marine"
+      ]
+    },
+    {
+      "heading": "Dewatering methods",
+      "items": [
+        "Deep wells — submersible pumps lowering the water table in permeable soils",
+        "Wellpoints — a series connected to a header pipe for shallow excavations in sands and silts",
+        "Vacuum assisted systems — wellpoints under vacuum pressure for low-permeability soils",
+        "Eductor systems — jet eductors using high-pressure water in tight soils",
+        "Horizontal wells",
+        "Sumps"
+      ]
+    },
+    {
+      "heading": "Why dewatering matters in Houston",
+      "text": "Houston's clay-dominant soils lose strength rapidly when saturated, so engineered dewatering lowers the water table and reduces pore pressure to protect foundations, utilities and adjacent structures, keeps groundwater discharge within TCEQ and local requirements, and cuts the downtime and slip hazards that water intrusion causes."
+    },
+    {
+      "heading": "Hydro excavation work",
+      "items": [
+        "Sensitive excavations and exposure of live lines",
+        "Congested, unapproachable or remote excavation at long distances",
+        "Excavation in frozen ground",
+        "Subsurface utility engineering and daylighting",
+        "Slot trenching and point repair",
+        "Track cleaning for retarders, switches, diamonds and other difficult-to-reach places",
+        "Oilfield services, location cleaning crews, tank cleaning, rig and pit cleaning"
+      ]
+    },
+    {
+      "heading": "Vacuum truck capability",
+      "text": "HASSCO states its trucks have the highest airflow in the industry, drawing material 100 feet vertically and up to 1,000 feet from the truck. The hydrovac fleet works with every HASSCO division and is also available at daily rates."
+    }
+  ]
+}

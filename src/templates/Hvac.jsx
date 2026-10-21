@@ -1041,9 +1041,10 @@ function Home({ b, groups, tel }) {
           // On a phone the photo is shown whole above the words; from lg up it is framed whole below them. Laid
           // behind the words and the card, its subject (mostly in the middle) was shaded out or hidden by the card.
           // Cropped about the middle, not the top: a top-anchored band kept the sky and cut the work off at the waist.
+          // On a phone it keeps its own proportions, as a 16:10 band cut the crew at the foot of the photo off at the head.
           <div className="lg:order-last lg:mx-auto lg:w-full lg:max-w-page lg:px-gutter lg:pb-24">
             <Img
-              className="block aspect-[16/10] w-full object-cover lg:aspect-[16/9] lg:rounded-[24px] lg:shadow-[0_30px_60px_-35px_rgba(0,0,0,0.6)]"
+              className="block h-auto max-h-[80svh] w-full object-cover lg:aspect-[16/9] lg:max-h-none lg:rounded-[24px] lg:shadow-[0_30px_60px_-35px_rgba(0,0,0,0.6)]"
               src={b.hero.image}
               alt={b.hero.imageAlt || ''}
               sizes="(min-width: 1024px) 1320px, 100vw"
@@ -1303,12 +1304,15 @@ function namedWords(text) {
   return named;
 }
 
-/** A name lowered to run inside a sentence, the towns in it and any word its own text writes as a name keeping their capitals. */
+/** A word written all in capitals, as an initialism is ('I', 'HVAC', 'A/C'), but not the article 'A'. */
+const initialism = (word) => /^[^a-z]*[A-Z][^a-z]*$/.test(word) && word !== 'A';
+
+/** A name lowered to run inside a sentence, the towns in it, its initialisms ('I & E') and any word its own text writes as a name keeping their capitals. */
 function lowerName(title, towns, text) {
   const named = namedWords(text);
   const lower = title
     .split(/(\s+)/)
-    .map((word) => (named.has(word.replace(/^\W+|\W+$/g, '').toLowerCase()) ? word : word.toLowerCase()))
+    .map((word) => (initialism(word) || named.has(word.replace(/^\W+|\W+$/g, '').toLowerCase()) ? word : word.toLowerCase()))
     .join('');
   return [towns].flat().filter(Boolean).reduce((name, town) => name.replace(townWords(town), town), lower);
 }
@@ -1412,10 +1416,12 @@ function GroupPage({ b, groups, group, tel }) {
       <section className={`${pad} bg-white`}>
         {/* A list of one has its form in the hero already, so its card stands alone rather than beside the form again. */}
         <div className={`${wrap} grid gap-12 ${services.length > 1 ? 'lg:grid-cols-[minmax(0,1fr)_380px] lg:gap-16' : ''}`}>
-          {/* content-start, so a short list keeps its cards their own height rather than stretching them to the form's. */}
-          <div className="grid content-start gap-5">
+          {/* content-start, so a short list keeps its cards their own height rather than stretching them to the form's.
+              min-w-0 here and on each card, with the text free to break a long email or web address, so a card never runs
+              past the page's margin: this list is a grid of its own, whose column would otherwise widen to the longest word. */}
+          <div className="grid min-w-0 content-start gap-5">
             {services.map((s, i) => (
-              <article key={s.slug} id={s.slug} className={`${anchor} rounded-2xl border border-line p-6 sm:p-8`}>
+              <article key={s.slug} id={s.slug} className={`${anchor} min-w-0 rounded-2xl border border-line p-6 sm:p-8`}>
                 <div className="flex items-start gap-4 sm:gap-5">
                   <span className={`${iconTile} h-12 w-12 sm:h-14 sm:w-14`}>
                     <GroupIcon name={s.icon || group.icon} size={24} />
@@ -1427,11 +1433,11 @@ function GroupPage({ b, groups, group, tel }) {
                     <h2 className="mt-1 font-heading text-[24px] font-extrabold leading-tight tracking-[-0.02em] text-ink sm:text-[26px]">
                       {s.title}
                     </h2>
-                    <p className="mt-3 text-[16px] leading-[1.65] text-muted sm:text-[17px]">{s.text}</p>
+                    <p className="mt-3 text-[16px] leading-[1.65] text-muted [overflow-wrap:break-word] sm:text-[17px]">{s.text}</p>
                     {list(s.points).length > 0 && (
                       <ul className="mt-5 grid gap-2.5 sm:grid-cols-2">
                         {list(s.points).map((p) => (
-                          <li key={p} className="flex gap-2.5 text-[16px] md:text-[15px] leading-[1.5] text-ink">
+                          <li key={p} className="flex min-w-0 gap-2.5 text-[16px] md:text-[15px] leading-[1.5] text-ink [overflow-wrap:break-word]">
                             <span className="mt-0.5 grid h-5 w-5 flex-none place-items-center rounded-full bg-primary/10 text-[color:var(--pt)]">
                               <Check size={13} strokeWidth={3} aria-hidden="true" />
                             </span>
@@ -1800,7 +1806,7 @@ function ContactPage({ b, groups, tel }) {
                       <span className={`${iconTile} h-10 w-10`}>
                         <Icon size={18} aria-hidden="true" />
                       </span>
-                      <span className="min-w-0 [overflow-wrap:anywhere]">{label}</span>
+                      <span className="min-w-0 [overflow-wrap:break-word]">{label}</span>
                     </a>
                   </li>
                 ))}
