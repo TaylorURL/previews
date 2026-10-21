@@ -534,7 +534,10 @@ function Hero({ b, tel, ctaLabel }) {
       {image ? (
         <>
           {/* On a phone the photo is shown whole above the words; from lg up it fills the band's right part and
-              fades into the brand's color, so the words stand on that color rather than over the people in it. */}
+              fades into the brand's color, so the words stand on that color rather than over the people in it. The color
+              stays solid as far as the words' column reaches (the page's edge, its gutter and the column's 44rem) and
+              fades only past it, so nothing in the photo's left part, such as a logo printed on a mug, shows through
+              faintly behind the words or across the line over the points. */}
           <Img
             className="relative block aspect-[16/10] w-full object-cover object-[center_30%] lg:absolute lg:inset-y-0 lg:right-0 lg:-z-20 lg:aspect-auto lg:h-full lg:w-[56%]"
             src={image}
@@ -545,7 +548,7 @@ function Hero({ b, tel, ctaLabel }) {
           />
           <div
             aria-hidden="true"
-            className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_94%,#000)_0%,var(--primaryDeep)_44%,color-mix(in_srgb,var(--primaryDeep)_30%,transparent)_62%,transparent_80%)]"
+            className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_94%,#000)_0%,var(--primaryDeep)_calc(max(0px,(100%_-_1320px)/2)_+_clamp(16px,4vw,64px)_+_44rem),color-mix(in_srgb,var(--primaryDeep)_30%,transparent)_calc(max(0px,(100%_-_1320px)/2)_+_clamp(16px,4vw,64px)_+_44rem_+_10%),transparent_calc(max(0px,(100%_-_1320px)/2)_+_clamp(16px,4vw,64px)_+_44rem_+_22%))]"
           />
         </>
       ) : (

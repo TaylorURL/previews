@@ -1,0 +1,442 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "RL Doskocil, Inc.",
+  "shortName": "RL Doskocil",
+  "summary": "Industrial construction and maintenance out of Crosby, Texas, with a multi-craft work force covering civil, I&E, structural, mechanical and landfill work.",
+  "phone": "(281) 426-4777",
+  "email": "info@doskocilinc.com",
+  "address": "12012 Sralla Rd",
+  "town": "Crosby",
+  "state": "TX",
+  "zip": "77532",
+  "rating": 5.0,
+  "reviewCount": 6,
+  "since": 2000,
+  "hours": [
+    ["Mon – Wed", "8 AM – 5 PM"],
+    ["Friday", "8 AM – 2 PM"],
+    ["Sat – Sun", "Closed"]
+  ],
+  "brand": {
+    "primary": "#2F5C78",
+    "primaryDeep": "#1E3D4F",
+    "accent": "#FF8A00",
+    "ink": "#201C17",
+    "muted": "#5A544B",
+    "surface": "#F1F5F8",
+    "line": "#D8DFE5",
+    "heading": "'Roboto Slab', Georgia, serif",
+    "body": "'Roboto', Arial, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/rldoskocil/logo.webp",
+    "logoMono": "/brands/rldoskocil/logo-mono.webp",
+    "logoWidth": 129,
+    "logoHeight": 58,
+    "logoRatio": 2.216,
+    "logoGround": "#ffffff",
+    "logoReads": [0.13, 0.119, 0.105, 0.822, 0.846, 0.871, 0.897, 0.922, 0.949, 0.975, 1.0]
+  },
+  "hero": {
+    "eyebrow": "Industrial construction and maintenance in Crosby, Texas",
+    "title": "A multi-craft work force,",
+    "titleAccent": "on time and with no surprises.",
+    "lead": "RL Doskocil has served the industrial sector since 2000, with the equipment and the crews to handle civil, electrical and instrumentation, structural steel, mechanical and landfill work.",
+    "image": "/brands/rldoskocil/hero",
+    "imageAlt": "A tracked excavator working on a pile of dirt at a construction site"
+  },
+  "groups": [
+    {
+      "slug": "civil",
+      "title": "Civil",
+      "icon": "ruler",
+      "summary": "All phases of site work, from clearing and grading to paving, drainage and underground utilities.",
+      "intro": "RL Doskocil specializes in performing all phases of site work. We have the necessary equipment to handle any project you may have in the types of work specified, and a skilled work force to meet all your site work needs.",
+      "image": "/brands/rldoskocil/civil",
+      "imageAlt": "Heavy equipment moving earth during levee construction",
+      "services": [
+        {
+          "slug": "land-clearing",
+          "title": "Land Clearing",
+          "icon": "leaf",
+          "text": "Clearing a site down to workable ground before grading and construction begin."
+        },
+        {
+          "slug": "earth-work",
+          "title": "Earth Work",
+          "icon": "ruler",
+          "text": "Grading and earth work to bring a site to the elevations the plans call for.",
+          "points": ["Grading", "Dirt work"]
+        },
+        {
+          "slug": "stabilization",
+          "title": "Stabilization",
+          "icon": "chart",
+          "text": "Treating subgrade so it will carry the structure or pavement going on top of it.",
+          "points": [
+            "Lime stabilization",
+            "Soil cement application",
+            "Full depth reclamation with cement (FDRC)"
+          ]
+        },
+        {
+          "slug": "concrete",
+          "title": "Concrete",
+          "icon": "building",
+          "text": "Concrete work as part of the site package, placed by our own crews."
+        },
+        {
+          "slug": "drainage",
+          "title": "Storm Drainage",
+          "icon": "waves",
+          "text": "All phases of storm drainage systems, built to carry water off the site and keep it there.",
+          "points": ["Retention ponds", "Erosion control"]
+        },
+        {
+          "slug": "water-and-sewer",
+          "title": "Water and Sewer",
+          "icon": "droplets",
+          "text": "Underground utility installation alongside the rest of the site work.",
+          "points": ["Water", "Sanitary sewer installation", "Curb and gutter"]
+        },
+        {
+          "slug": "paving",
+          "title": "Asphalt Paving",
+          "icon": "car",
+          "text": "New asphalt, resurfacing of worn pavement and seal coating to extend what is already down.",
+          "points": ["Asphalt paving", "Resurfacing", "Seal coating"]
+        }
+      ]
+    },
+    {
+      "slug": "ie",
+      "title": "I & E",
+      "icon": "circuit",
+      "summary": "Electrical and instrumentation work for pipelines, refineries and commercial sites.",
+      "intro": "RL Doskocil offers a full line of I&E services. The same multi-craft work force that handles the civil and mechanical scope can carry the electrical and instrumentation side of a project through with it.",
+      "image": "/brands/rldoskocil/ie",
+      "imageAlt": "Bus bars and inductive filters at an electrical substation",
+      "services": [
+        {
+          "slug": "pipeline-services",
+          "title": "Pipeline Services",
+          "icon": "cable",
+          "text": "General pipeline services covering the electrical and instrumentation scope along the line."
+        },
+        {
+          "slug": "refinery-services",
+          "title": "Refinery Services",
+          "icon": "building",
+          "text": "General refinery services inside operating plants, worked around the unit's own schedule."
+        },
+        {
+          "slug": "plc-and-controls",
+          "title": "PLC and Controls",
+          "icon": "settings",
+          "text": "PLC and controls work, from the panel through to the field device."
+        },
+        {
+          "slug": "cathodic-protection",
+          "title": "Cathodic Protection",
+          "icon": "shield",
+          "text": "Cathodic protection systems installed to keep buried and submerged steel from corroding."
+        },
+        {
+          "slug": "electrical",
+          "title": "Electrical",
+          "icon": "zap",
+          "text": "Electrical installation for residential and commercial work as well as industrial.",
+          "points": ["Residential", "Commercial"]
+        },
+        {
+          "slug": "instrumentation",
+          "title": "Instrumentation",
+          "icon": "gauge",
+          "text": "Analyzers and measurement devices installed, wired and brought into service.",
+          "points": ["Analyzers", "Measurements"]
+        },
+        {
+          "slug": "communication",
+          "title": "Communication",
+          "icon": "cable",
+          "text": "Communication and network cabling run alongside the power and signal work.",
+          "points": ["Communication", "Network"]
+        },
+        {
+          "slug": "cable-tray",
+          "title": "Cable Tray",
+          "icon": "plug",
+          "text": "Tray, panels and tubing set and supported so the cable and signal runs have a path.",
+          "points": ["Cable tray", "Panels", "Tubing", "Air and nitrogen pipe"]
+        }
+      ]
+    },
+    {
+      "slug": "structural",
+      "title": "Structural",
+      "icon": "building",
+      "summary": "Structural steel for building frames, equipment supports and hand rails, designed and fabricated.",
+      "intro": "RL Doskocil provides structural steel services from the drawing through to the erected frame. Design and fabrication are handled in house, so the steel that arrives on site is the steel the job needs.",
+      "image": "/brands/rldoskocil/structural",
+      "imageAlt": "Steel girders being set in place during bridge construction",
+      "services": [
+        {
+          "slug": "building-structures",
+          "title": "Building Structures",
+          "icon": "building",
+          "text": "Structural steel frames for industrial buildings and enclosures."
+        },
+        {
+          "slug": "supports",
+          "title": "Supports",
+          "icon": "wrench",
+          "text": "Pipe racks, equipment supports and platform steel built to carry what sits on them."
+        },
+        {
+          "slug": "hand-rails",
+          "title": "Hand Rails",
+          "icon": "shield",
+          "text": "Hand rails fabricated and installed around platforms, stairs and walkways."
+        },
+        {
+          "slug": "design-and-fabrication",
+          "title": "Design and Fabrication",
+          "icon": "compass",
+          "text": "Steel designed and fabricated to suit the job rather than bought off a shelf."
+        }
+      ]
+    },
+    {
+      "slug": "mechanical",
+      "title": "Mechanical",
+      "icon": "settings",
+      "summary": "Pipe and vessel fabrication, welding, tank repair, coatings and demolition.",
+      "intro": "RL Doskocil provides mechanical services across fabrication, installation and repair. Pipe and vessels are fabricated, welded, tested and coated, and worn out equipment is taken down when it is time to replace it.",
+      "image": "/brands/rldoskocil/mechanical",
+      "imageAlt": "Pipe couplings on a pressure tank under construction",
+      "services": [
+        {
+          "slug": "pipe-fabrication",
+          "title": "Pipe Fabrication",
+          "icon": "cable",
+          "text": "Pipe fabricated and installed, in the shop or in the field.",
+          "points": ["Pipe fabrication", "Piping"]
+        },
+        {
+          "slug": "vessel-fabrication",
+          "title": "Vessel Fabrication",
+          "icon": "building",
+          "text": "Vessel and process vessel fabrication, built to the drawings supplied.",
+          "points": ["Vessel fabrication", "Tank and process vessel fabrication"]
+        },
+        {
+          "slug": "welding",
+          "title": "Welding",
+          "icon": "zap",
+          "text": "Welding across the pipe, vessel and structural scope of a project."
+        },
+        {
+          "slug": "hydro-testing",
+          "title": "Hydro Testing",
+          "icon": "droplets",
+          "text": "Hydro testing and inspection to prove the work before it goes into service.",
+          "points": ["Hydro testing", "Inspections"]
+        },
+        {
+          "slug": "tank-repairs",
+          "title": "Tank Repairs",
+          "icon": "wrench",
+          "text": "Repairs to tanks already in service, rather than replacing the whole vessel."
+        },
+        {
+          "slug": "coatings",
+          "title": "Coatings",
+          "icon": "filter",
+          "text": "Abrasive blasting and coatings to prepare and protect steel surfaces.",
+          "points": ["Coatings", "Abrasive blasting"]
+        },
+        {
+          "slug": "demolition",
+          "title": "Demolition",
+          "icon": "wrench",
+          "text": "Demolition of equipment, piping and structures that have reached the end of their life."
+        }
+      ]
+    },
+    {
+      "slug": "landfill",
+      "title": "Landfill",
+      "icon": "leaf",
+      "summary": "Complete operation and maintenance of landfill gas and leachate systems, including monitoring and reporting.",
+      "intro": "RL Doskocil provides complete operational and maintenance services for landfill gas and leachate systems. That covers analysing the system, tuning it to site specific goals, repairing it and reporting on it month after month.",
+      "image": "/brands/rldoskocil/landfill",
+      "imageAlt": "A landfill gas flare stack at a landfill site",
+      "services": [
+        {
+          "slug": "lfg-systems",
+          "title": "LFG Systems",
+          "icon": "gauge",
+          "text": "Complete system analysis to determine the overall condition of a landfill gas system, and tuning it to meet site specific goals.",
+          "points": [
+            "LFG tuning to achieve site specific goals including NSPS compliance",
+            "LFG migration probe monitoring and systems to control migration",
+            "Landfill surface scans to determine overall effectiveness"
+          ]
+        },
+        {
+          "slug": "monitoring",
+          "title": "Monitoring",
+          "icon": "chart",
+          "text": "Routine monitoring of the gas system and the structures around it.",
+          "points": [
+            "Inspection and monitoring of continuous combustible gas monitors in site building structures",
+            "Liquid levels in extraction wells to determine amount of exposed perforations",
+            "Pump tests in extraction wells to determine feasibility of permanent pump installations"
+          ]
+        },
+        {
+          "slug": "pump-installations",
+          "title": "Pump Installations",
+          "icon": "droplets",
+          "text": "Pumps installed in extraction wells, with the air and force main installations that go with them."
+        },
+        {
+          "slug": "system-repairs",
+          "title": "System Repairs",
+          "icon": "wrench",
+          "text": "LFG system repairs and adjustments to keep the field collecting as it should.",
+          "points": [
+            "Repair and replacement of LFG piping",
+            "Well head height adjustments",
+            "Grade adjustments on LFG piping",
+            "Low point sump station repairs",
+            "Air leak investigations"
+          ]
+        },
+        {
+          "slug": "flare-systems",
+          "title": "Flare Systems",
+          "icon": "flame",
+          "text": "LFG flare system maintenance and monitoring."
+        },
+        {
+          "slug": "system-reports",
+          "title": "System Reports",
+          "icon": "clipboard",
+          "text": "Routine system summary reports so the site has a written record of how the system is running.",
+          "points": [
+            "Tabulated individual well head data",
+            "Flare station maintenance data",
+            "System observations, issues, concerns and suggestions for improvement"
+          ]
+        },
+        {
+          "slug": "leachate-systems",
+          "title": "Leachate Systems",
+          "icon": "waves",
+          "text": "Leachate system maintenance and monitoring, with repairs when something stops working.",
+          "points": [
+            "Record of levels and compliance points",
+            "Record of data flow measuring devices",
+            "Troubleshooting pump and piping systems",
+            "Pump and piping repairs"
+          ]
+        },
+        {
+          "slug": "site-maintenance",
+          "title": "Site Maintenance",
+          "icon": "leaf",
+          "text": "General landfill maintenance across the cap and the surrounding ground.",
+          "points": [
+            "Site grade maintenance to prevent on-site ponding, and erosion control",
+            "Installation of erosion control systems",
+            "Installation of devices to prevent migration of wind-blown refuse",
+            "Installation of vegetative cover"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Serving the industrial sector since 2000.",
+    "text": [
+      "RL Doskocil, Inc. is an industrial construction and maintenance company offering its services to the industrial sector since 2000. We offer a multi-craft work force committed to creating a safe working environment while providing superior services and production.",
+      "We strive to recognize our customer's objectives and accomplish them safely and on time with no surprises. We have the necessary equipment to handle any project you may have in the types of work specified.",
+      "Our quality work, efficiency, and expertise make it easy for us to guarantee complete customer satisfaction. A skilled work force, attention to detail, and our daily hands-on policy enable us to meet all your site work needs, and we strive to build a beneficial and lasting relationship with each of our business partners, subcontractors, suppliers and clients."
+    ],
+    "image": "/brands/rldoskocil/yard",
+    "imageAlt": "Paving machines lined up at a work site",
+    "values": [
+      {
+        "title": "Safety first",
+        "text": "Safety will take precedence over more expedient unsafe operations, on every job and every site."
+      },
+      {
+        "title": "Hands on daily",
+        "text": "A skilled work force, attention to detail and a daily hands-on policy on the work in front of us."
+      },
+      {
+        "title": "No surprises",
+        "text": "We recognize our customer's objectives and accomplish them safely and on time with no surprises."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Insurance",
+      "text": "RL Doskocil, Inc. maintains a comprehensive portfolio of insurance coverages, including General Liability, Workers Compensation and Equipment insurance."
+    },
+    {
+      "heading": "Areas Of Work",
+      "items": [
+        "Civil",
+        "Electrical and Instrumentation",
+        "Structural Steel",
+        "Mechanical",
+        "Maintenance"
+      ]
+    },
+    {
+      "heading": "Safety Policy",
+      "text": "It is the policy of RL Doskocil, Inc. to provide a safe and healthy place of employment for all of our employees and for the public in all our Company's operations, and to abide by all safety regulations as they pertain to the construction industry.",
+      "items": [
+        "Safety will take precedence over more expedient unsafe operations.",
+        "Every attempt will be made to provide equipment and create conditions that will make for a safe and productive workplace.",
+        "Safety education opportunities will be provided for our employees.",
+        "Any employee who willfully disregards known safety practices will be subject to strong disciplinary actions.",
+        "Subcontractors and employees are expected to read and understand the rules of safety that are posted on all jobsites.",
+        "Substance abuse will not be tolerated in the workplace, or in any manner that will cause an employee to be a hazard to himself or his co-workers."
+      ]
+    },
+    {
+      "heading": "Office",
+      "items": [
+        "12012 Sralla Road, Crosby, Texas 77532",
+        "Mailing: PO Box 505, Crosby, Texas 77532",
+        "Office: 281-426-4777",
+        "Fax: 281-426-8339",
+        "info@doskocilinc.com"
+      ]
+    },
+    {
+      "heading": "Careers",
+      "text": "Open job listings include industrial electricians. Opportunities for employment may be explored by directing your resume to hr@doskocilinc.com."
+    },
+    {
+      "heading": "Equal Opportunity",
+      "text": "RL Doskocil, Inc. will not discriminate against any employee or applicant for employment because of race, religion, color, sex, national origin, age, sexual orientation, veteran status, or disability."
+    },
+    {
+      "heading": "Employee Policies",
+      "items": [
+        "EEO and Affirmative Action Programs",
+        "Americans with Disabilities Act",
+        "Sexual Harassment",
+        "Substance Abuse Policies",
+        "Safety"
+      ]
+    }
+  ]
+}
