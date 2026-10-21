@@ -79,17 +79,21 @@ LOGO_FILLER = {"logo", "logos", "img", "image", "final", "main", "site", "header
                "horizontal", "vertical", "transparent", "copy", "scaled", "cropped", "min", "png", "jpg", "jpeg",
                "webp", "svg", "gif", "asset", "artboard", "untitled", "design", "group", "mark", "brand", "icon", "wp",
                "mobile", "sticky", "top", "home", "of", "and", "for", "the", "a"}
+TRADE_WORD = re.compile("|".join(compose.TRADE_WORDS.values()), re.I)
 
 
 def _names_another(img, name):
     """True when a picture's alt text or file name names someone other than the
-    business: a membership or training mark ('LVI', 'Las Vegas Institute')."""
+    business: a membership or training mark ('LVI', 'Las Vegas Institute') or
+    a carrier's ('Mercury Insurance'). A trade's own word ('insurance',
+    'roofing') is shared by every business in it, so it names no one."""
     own = compose.bare_name(name).split()
     joined = "".join(own)
     initials = {"".join(w[0] for w in own), "t" + "".join(w[0] for w in own)}
+    own = [w for w in own if not TRADE_WORD.search(w)]
     stem = img["src"].rsplit("/", 1)[-1].rsplit(".", 1)[0]
     words = [w for w in re.split(r"[^a-z0-9]+", f"{img['alt']} {stem}".lower())
-             if w and w not in LOGO_FILLER and not re.fullmatch(r"\d+|\d+x\d+|v\d+", w)]
+             if w and w not in LOGO_FILLER and not TRADE_WORD.search(w) and not re.fullmatch(r"\d+|\d+x\d+|v\d+", w)]
     return bool(words) and not any(w in own or (len(w) >= 4 and w in joined) or w in initials for w in words)
 
 

@@ -779,6 +779,15 @@ def about_of(pages, name, trade=None):
                 and re.search(r"\b(?:on|to|at) (?:our|my) (?:roof|home|house|property|yard|pool)\b|\bset (?:him|her|them) apart\b|\bgave (?:us|me) peace of mind\b", text, re.I)
             ):
                 continue
+            # Or one that tells of them as "they" doing the work for the writer
+            # or of finding them ("These Ladies did an amazing job for us... they
+            # constantly work for us", "I am so glad I found Ripkowski
+            # Insurance. Just tell them what you need, and they do all the work").
+            if re.search(r"\b(?:I|me|my|us)\b", text) and re.search(r"\b(?:they|them)\b", text, re.I) and (
+                re.search(r"\b(?:they|these \w+)\b[^.!?]{0,40}\bfor (?:us|me)\b", text, re.I)
+                or re.search(r"\bI found (?:them\b|[A-Z])", text)
+            ):
+                continue
             # Or one a customer writes to them as "you", thanking them ("Thank
             # you for the clear and concise explanation... Judith and I really
             # appreciate the efforts of you and your team members").
