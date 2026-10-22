@@ -774,10 +774,31 @@ function Values({ values }) {
   );
 }
 
+function OfficeFacts({ b }) {
+  const towns = list(b.serviceArea);
+  return (
+    <dl className="grid content-start gap-0 self-start rounded-lg border border-line bg-white px-6 py-2 sm:px-8">
+      {[
+        ['Office', `${b.address}, ${b.town}, ${b.state}${b.zip ? ` ${b.zip}` : ''}`],
+        ['Phone', b.phone],
+        b.since && ['Since', String(b.since)],
+        towns.length > 1 && ['Serving', towns.join(', ')],
+        b.license && ['License', b.license],
+      ]
+        .filter(Boolean)
+        .map(([label, value]) => (
+          <div key={label} className="grid gap-1 border-b border-line py-4 last:border-b-0">
+            <dt className="text-[12px] font-bold uppercase tracking-[0.16em] text-muted">{label}</dt>
+            <dd className="m-0 text-[16px] font-semibold leading-snug text-ink">{value}</dd>
+          </div>
+        ))}
+    </dl>
+  );
+}
+
 function AboutTeaser({ b, hasTeam }) {
   // A paragraph the hero already leads with is not told twice on one page.
   const text = paras(b.about.text).filter((t) => t !== b.hero.lead);
-  const towns = list(b.serviceArea);
   const links = (
     <div className="mt-9 grid gap-3 sm:flex sm:flex-wrap">
       <a href="/about" className={line}>
@@ -807,22 +828,7 @@ function AboutTeaser({ b, hasTeam }) {
             <Values values={list(b.about.values)} />
             {links}
           </div>
-          <dl className="grid content-start gap-0 self-start rounded-lg border border-line bg-white px-6 py-2 sm:px-8">
-            {[
-              ['Office', `${b.address}, ${b.town}, ${b.state}${b.zip ? ` ${b.zip}` : ''}`],
-              ['Phone', b.phone],
-              b.since && ['Since', String(b.since)],
-              towns.length > 1 && ['Serving', towns.join(', ')],
-              b.license && ['License', b.license],
-            ]
-              .filter(Boolean)
-              .map(([label, value]) => (
-                <div key={label} className="grid gap-1 border-b border-line py-4 last:border-b-0">
-                  <dt className="text-[12px] font-bold uppercase tracking-[0.16em] text-muted">{label}</dt>
-                  <dd className="m-0 text-[16px] font-semibold leading-snug text-ink">{value}</dd>
-                </div>
-              ))}
-          </dl>
+          <OfficeFacts b={b} />
         </div>
       </section>
     );
@@ -1224,6 +1230,8 @@ function AboutPage(props) {
           <div className="min-w-0">
             {list(b.about.values).length > 0 && <h2 className="font-heading font-display-2 text-2xl text-ink">What to expect</h2>}
             <Values values={list(b.about.values)} />
+            {/* With nothing to expect and nowhere to list, the office's own facts fill the half. */}
+            {!list(b.about.values).length && !area.length && <OfficeFacts b={b} />}
             {area.length > 0 && (
               <div className="mt-10 first:mt-0">
                 <h2 className="mb-4 font-heading font-display-2 text-2xl text-ink">Where we work</h2>
