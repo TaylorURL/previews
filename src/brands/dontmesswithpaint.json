@@ -1,0 +1,402 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Don't Mess With Paint",
+  "shortName": "Don't Mess With Paint",
+  "summary": "Residential and commercial painting, cabinet refinishing, Venetian plastering and epoxy flooring, based in Celina and working across North Texas.",
+  "phone": "(972) 649-5934",
+  "email": "paint-project@dontmesswithpaint.com",
+  "address": "1101 Bluebird Way",
+  "town": "Celina",
+  "state": "TX",
+  "zip": "75009",
+  "rating": 4.6,
+  "reviewCount": 11,
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 6 PM"
+    ],
+    [
+      "Saturday",
+      "8 AM – 2 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#012269",
+    "primaryDeep": "#011642",
+    "accent": "#eea309",
+    "ink": "#121a2b",
+    "muted": "#55607a",
+    "surface": "#f1f4fa",
+    "line": "#dbe2ee",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/dontmesswithpaint/logo.webp",
+    "logoMono": "/brands/dontmesswithpaint/logo-mono.webp",
+    "logoWidth": 87,
+    "logoHeight": 84,
+    "logoRatio": 1.034,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.281,
+      0.258,
+      0.227,
+      0.361,
+      0.629,
+      0.69,
+      0.748,
+      0.809,
+      0.871,
+      0.917,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Painting contractors in Celina, Texas",
+    "title": "Giving pride to",
+    "titleAccent": "American homes.",
+    "lead": "Interior and exterior painting for homes and businesses, along with cabinet refinishing, Venetian plaster and epoxy floors. Tell us about the property and we will come out and quote it.",
+    "image": "/brands/dontmesswithpaint/hero",
+    "imageAlt": "A paint roller loaded with white paint resting in a tray on a drop cloth"
+  },
+  "groups": [
+    {
+      "slug": "interior-painting",
+      "title": "Interior Painting",
+      "icon": "home",
+      "summary": "Residential and commercial interior painting, from a single room to the whole property.",
+      "intro": "We provide a complete range of residential and commercial interior painting services to give your space the perfect makeover. Whether you are updating a single room or the entire interior of your property, we take the job from colour selection and preparation through to application and cleanup.",
+      "image": "/brands/dontmesswithpaint/interior",
+      "imageAlt": "A bedroom with bright green painted walls and a white closet",
+      "services": [
+        {
+          "slug": "residential-interior-painting",
+          "title": "Residential Interior Painting",
+          "icon": "home",
+          "text": "We can paint every aspect of your property, including bathrooms, bedrooms, living rooms and more, ensuring a finish that will look great for many years to come.",
+          "points": [
+            "Homes and real estate properties",
+            "A single room or the entire interior",
+            "Colour selection, preparation, application and cleanup"
+          ]
+        },
+        {
+          "slug": "commercial-interior-painting",
+          "title": "Commercial Interior Painting",
+          "icon": "building",
+          "text": "Our team will finish the job quickly and smoothly so that you can get back to work as soon as possible, from offices to other commercial venues.",
+          "points": [
+            "Offices and commercial venues",
+            "Scheduled around your working hours"
+          ]
+        },
+        {
+          "slug": "wallpapering",
+          "title": "Wallpapering",
+          "icon": "ruler",
+          "text": "Wallpapering alongside the painting work, using the same preparation and the same care with the surfaces around it."
+        },
+        {
+          "slug": "staining",
+          "title": "Staining",
+          "icon": "droplets",
+          "text": "Staining for interior timber, with the stain picked out before we come out to do the work."
+        }
+      ]
+    },
+    {
+      "slug": "exterior-painting",
+      "title": "Exterior Painting",
+      "icon": "building",
+      "summary": "Exterior painting for houses and offices, with the surface washed and sealed before a brush is lifted.",
+      "intro": "A superior exterior paint job increases the longevity and value of a home or office. Before starting to paint, our exterior painters pressure wash all exterior surfaces and seal cracks to ensure there is no seepage into crucial parts of the house or office.",
+      "image": "/brands/dontmesswithpaint/exterior",
+      "imageAlt": "A painter on scaffolding working on the eaves and siding of a house",
+      "services": [
+        {
+          "slug": "residential-exterior-painting",
+          "title": "Residential Exterior Painting",
+          "icon": "home",
+          "text": "With our wide array of both exterior house paint and interior house paint, we can guarantee the quality and durability of our work.",
+          "points": [
+            "Whole house or selected sections",
+            "Prices depend on your colour preferences and the complexity of the job"
+          ]
+        },
+        {
+          "slug": "commercial-exterior-painting",
+          "title": "Commercial Exterior Painting",
+          "icon": "building",
+          "text": "Exterior painting for offices and commercial buildings, so the outside gives the same impression as the work going on inside.",
+          "points": [
+            "Offices and commercial buildings",
+            "Experience working close to power lines"
+          ]
+        },
+        {
+          "slug": "pressure-washing-and-sealing",
+          "title": "Pressure Washing And Sealing",
+          "icon": "waves",
+          "text": "Every exterior surface is pressure washed and the cracks sealed before painting, which keeps water out and holds the finish for longer.",
+          "points": [
+            "All exterior surfaces pressure washed",
+            "Cracks sealed against seepage",
+            "Experience working on damp surfaces"
+          ]
+        },
+        {
+          "slug": "windows-and-doors",
+          "title": "Windows And Doors",
+          "icon": "ruler",
+          "text": "Where the whole exterior does not need repainting, we can paint certain sections, such as windows and doors, to give a more respectable appearance."
+        }
+      ]
+    },
+    {
+      "slug": "cabinet-painting",
+      "title": "Cabinet Painting",
+      "icon": "wrench",
+      "summary": "Cabinet refinishing and painting, the cost-effective alternative to replacing your cabinets.",
+      "intro": "Cabinet refinishing is the most cost-effective alternative to replacing your cabinets, with no remodelling crew stomping through your home installing new cabinetry. Our objective is to make your cabinets look like the day you had them installed.",
+      "image": "/brands/dontmesswithpaint/cabinets",
+      "imageAlt": "A painter spraying a primed cabinet door in a workshop",
+      "services": [
+        {
+          "slug": "kitchen-cabinet-painting",
+          "title": "Kitchen Cabinet Painting",
+          "icon": "home",
+          "text": "Let us make your kitchen cabinets stand out. Pick out your stain and we will be out to look at them.",
+          "points": [
+            "Painting or refinishing",
+            "Pick out your stain before we come out"
+          ]
+        },
+        {
+          "slug": "cabinet-refinishing",
+          "title": "Cabinet Refinishing",
+          "icon": "droplets",
+          "text": "We take the same level of care and detail in refinishing or repainting your cabinets that we would apply to any residential or commercial painting job that we do.",
+          "points": [
+            "Cabinet and drawer doors carefully removed",
+            "Hardware removed or masked",
+            "Drop cloths over walls, counters and floors",
+            "Scheduling, access and timelines coordinated with you"
+          ]
+        },
+        {
+          "slug": "cabinetry-throughout-the-property",
+          "title": "Cabinetry Throughout The Property",
+          "icon": "building",
+          "text": "Cabinet refinishing and painting is not limited to the kitchen; we work on cabinetry all through the house.",
+          "points": [
+            "Kitchen cabinets",
+            "Outdoor kitchen cabinets",
+            "Laundry room cabinets",
+            "Home office cabinetry",
+            "Den and living room cabinets",
+            "Garage cabinets"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "venetian-plastering",
+      "title": "Venetian Plastering",
+      "icon": "waves",
+      "summary": "A decorative plaster finish that resembles marble or stone, applied in thin layers and polished.",
+      "intro": "Venetian plaster is a decorative coating made of fine plaster materials, water and pigments. It is applied to walls or surfaces in thin, multiple layers to create a smooth, polished finish that resembles marble or stone, and it is known for its glossy, shimmering appearance.",
+      "services": [
+        {
+          "slug": "venetian-plaster-finishes",
+          "title": "Venetian Plaster Finishes",
+          "icon": "waves",
+          "text": "We use only the finest materials to ensure the durability and longevity of our work, and the finish can be customised with different colours and finishes.",
+          "points": [
+            "Durable and long-lasting",
+            "Resistant to stains, moisture and mold",
+            "Easy to maintain",
+            "Can increase property value"
+          ]
+        },
+        {
+          "slug": "walls-ceilings-and-fireplace-surrounds",
+          "title": "Walls, Ceilings And Fireplace Surrounds",
+          "icon": "home",
+          "text": "Our Venetian plastering technique is a unique way of creating a smooth and luxurious finish to your walls, ceilings and fireplace surrounds.",
+          "points": [
+            "Versatile across various surfaces and textures",
+            "Adds visual interest and texture to a room",
+            "Focal points such as accent walls and fireplaces",
+            "Often used in high-end interior design"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "epoxy-flooring",
+      "title": "Epoxy Flooring",
+      "icon": "droplets",
+      "summary": "Seamless epoxy floor coatings for garages, basements and commercial space.",
+      "intro": "Epoxy flooring is a floor coating made from a mixture of epoxy resin and a hardener, applied to concrete surfaces to create a durable and seamless finish. It is commonly used in industrial, commercial and residential settings for its high resistance to wear and tear, chemicals and stains.",
+      "image": "/brands/dontmesswithpaint/epoxy",
+      "imageAlt": "Cars parked on a glossy white epoxy-coated floor",
+      "services": [
+        {
+          "slug": "garage-and-basement-epoxy",
+          "title": "Garage And Basement Epoxy",
+          "icon": "car",
+          "text": "Upgrade your garage or basement with a durable, long-lasting and low-maintenance floor that stands up to daily wear and tear.",
+          "points": [
+            "A wide range of colours and designs",
+            "Non-slip surface, reducing the risk of slips and falls",
+            "Easy to clean, with no waxing or buffing"
+          ]
+        },
+        {
+          "slug": "commercial-and-industrial-epoxy",
+          "title": "Commercial And Industrial Epoxy",
+          "icon": "building",
+          "text": "A seamless finish that withstands heavy foot traffic, with chemical resistance that makes it a good choice for laboratories and other high-tech facilities.",
+          "points": [
+            "Resistant to many chemicals and substances",
+            "Seamless, so dirt and debris cannot lodge in cracks or seams",
+            "Moisture-resistant, for damp or wet environments"
+          ]
+        },
+        {
+          "slug": "floor-repair-and-resurfacing",
+          "title": "Floor Repair And Resurfacing",
+          "icon": "wrench",
+          "text": "We also repair and resurface existing residential and commercial floors, from a small residential project to a large commercial job.",
+          "points": [
+            "Residential and commercial floors",
+            "Repair and resurfacing of existing floors",
+            "Free estimate before the work starts"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "The best painting services in Texas",
+    "text": [
+      "We are a veteran-owned business who understands that every home and business owner who cares about their property will invest in it. Painting is one of the simplest and most effective ways you can maintain your property, keep it fresh, and give it a long life.",
+      "Don't Mess With Paint is a professional painting company dedicated to providing exceptional painting services for homes and businesses. Our team of experienced and skilled painters is committed to delivering high-quality workmanship, attention to detail, and exceptional customer service.",
+      "Whether you need interior or exterior painting, wallpapering, or staining, epoxy flooring services, or Venetian plaster services, we have the expertise to transform your space. We use only the highest-quality materials and the latest techniques to ensure a long-lasting, beautiful finish.",
+      "We specialise in completing projects of any size, residential and commercial alike."
+    ],
+    "image": "/brands/dontmesswithpaint/about",
+    "imageAlt": "A painter staining a new timber fence with a long-handled brush",
+    "values": [
+      {
+        "title": "Precision Finishes",
+        "text": "We create eye-dropping finishes in any paintable surface."
+      },
+      {
+        "title": "Mildew Removal",
+        "text": "We offer expert mildew removal and mold remediation services."
+      },
+      {
+        "title": "Pre-Paint Demo",
+        "text": "We do pre-paint demo to execute the best painting services."
+      }
+    ]
+  },
+  "serviceArea": [
+    "Celina",
+    "Allen",
+    "Aubrey",
+    "Frisco",
+    "McKinney",
+    "Plano",
+    "Prosper",
+    "Southlake"
+  ],
+  "reviews": [
+    {
+      "author": "Kazi Bahauddin",
+      "text": "Amazing quality & All the stuff very friendly."
+    },
+    {
+      "author": "Geo Money",
+      "text": "Never seen better service. On top of that, they went above and beyond. Certainly recommend them to friends and families!"
+    },
+    {
+      "author": "angie castaneda",
+      "text": "Loved the service! Love the quality and great customer service. I absolutely recommend them."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Founder",
+      "text": "Fernando Espinoza is the founder of Don't Mess With Paint, a veteran-owned business."
+    },
+    {
+      "heading": "Text us",
+      "text": "Alongside the office line, you can text the company on (972) 837-5844."
+    },
+    {
+      "heading": "Quotes and estimates",
+      "text": "Quotes are free. Before the project starts someone examines the premises and you receive a free written quotation stating exactly what the project will cost, with no hidden costs. Get in touch to request a free consultation and estimation, or to schedule an estimate for cabinet painting or refinishing."
+    },
+    {
+      "heading": "Licensing",
+      "text": "Don't Mess With Paint is fully licensed and certified."
+    },
+    {
+      "heading": "Warranty and satisfaction",
+      "text": "We offer a warranty that ensures you will be satisfied once our exterior painting contractors complete the work, and a satisfaction guarantee on our epoxy flooring."
+    },
+    {
+      "heading": "Transparency and honesty",
+      "text": "Transparency and honesty are our two main slogans. We tell you exactly what needs to be done and why, and you know when the project will begin, when it will finish and what the process entails."
+    },
+    {
+      "heading": "A clean work site",
+      "text": "Our painters treat your walls and surfaces as if they were their own and do their best to minimise the mess, and sections of a commercial property can be cut off so they stay clean and protected."
+    },
+    {
+      "heading": "Why customers choose us",
+      "items": [
+        "Highly professional team",
+        "Satisfaction guarantee",
+        "Best quality standards",
+        "Excellent customer service",
+        "Quality materials"
+      ]
+    },
+    {
+      "heading": "Work we take on",
+      "items": [
+        "Residential properties",
+        "Commercial properties",
+        "Projects of any size"
+      ]
+    },
+    {
+      "heading": "Surface work before painting",
+      "items": [
+        "Pre-paint demo",
+        "Mildew removal and mold remediation",
+        "Pressure washing of exterior surfaces",
+        "Cracks sealed against seepage"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/dontmesswithpaint",
+        "Instagram: instagram.com/dontmesswithpaint",
+        "Pinterest: pinterest.com/dontmesswithpainttexas"
+      ]
+    }
+  ]
+}

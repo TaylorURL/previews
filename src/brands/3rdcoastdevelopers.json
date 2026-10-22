@@ -1,0 +1,289 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "3rd Coast Developers",
+  "shortName": "3rd Coast Developers",
+  "summary": "Custom wrought iron gates, fences, railing and burglar bars for homes and commercial properties across the Greater Houston area.",
+  "phone": "(713) 714-5991",
+  "email": "john@3rdcoastdevelopers.com",
+  "address": "5301 Polk St, Bldg 14 Suite G2",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77023",
+  "rating": 4.9,
+  "reviewCount": 89,
+  "hours": [
+    ["Mon – Fri", "9 AM – 5 PM"],
+    ["Saturday", "10 AM – 12 PM"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#225b8f",
+    "primaryDeep": "#143a5c",
+    "accent": "#a0ce4e",
+    "ink": "#1b2430",
+    "muted": "#5a6673",
+    "surface": "#eef3f8",
+    "line": "#d7e1ea",
+    "heading": "'Oswald', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/3rdcoastdevelopers/logo.webp",
+    "logoMono": "/brands/3rdcoastdevelopers/logo-mono.webp",
+    "logoWidth": 67,
+    "logoHeight": 84,
+    "logoRatio": 0.796,
+    "logoGround": "#ffffff",
+    "logoReads": [0.643, 0.553, 0.457, 0.376, 0.195, 0.278, 0.398, 0.515, 0.668, 0.835, 1.0],
+    "logoName": true
+  },
+  "hero": {
+    "eyebrow": "Iron gates, fences and railing in Houston",
+    "title": "Offering the highest quality",
+    "titleAccent": "metal solutions.",
+    "lead": "Hand forged, one-of-a-kind ironwork for residential and commercial projects, made from your choice of 100% American made steel, galvanized steel or aluminum. Tell us about the project and we will quote it.",
+    "image": "/brands/3rdcoastdevelopers/hero",
+    "imageAlt": "A metal driveway gate closed across a residential drive"
+  },
+  "groups": [
+    {
+      "slug": "fences",
+      "title": "Fences",
+      "icon": "home",
+      "summary": "Long-lasting iron fencing for homes, yards and commercial property, in whatever material suits the job.",
+      "intro": "Commercial or residential, the shop forges fences built to last in the material that fits the project. Looking for something more ornamental and custom, that is where wrought iron earns its keep.",
+      "image": "/brands/3rdcoastdevelopers/fences",
+      "imageAlt": "A black metal fence running beside a lawn",
+      "services": [
+        {
+          "slug": "residential-fences",
+          "title": "Residential Fences",
+          "icon": "home",
+          "text": "Fencing for the yard and around the pool, built to keep children away from the water and to look right in front of the house.",
+          "points": [
+            "Pool fencing",
+            "Ornamental and custom designs",
+            "Free installation"
+          ]
+        },
+        {
+          "slug": "commercial-fences",
+          "title": "Commercial Fences",
+          "icon": "building",
+          "text": "Extra security around a warehouse, yard or commercial building, forged in steel or aluminum and installed to suit the site.",
+          "points": [
+            "Warehouse and yard perimeters",
+            "Commercial projects quoted the same as residential"
+          ]
+        },
+        {
+          "slug": "custom-wrought-iron-fences",
+          "title": "Custom Wrought Iron Fences",
+          "icon": "ruler",
+          "text": "Wrought iron fence that makes a statement, hand forged to your design rather than pulled off a shelf.",
+          "points": [
+            "100% American made steel, galvanized steel or aluminum",
+            "Up to 10-year warranty"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gates",
+      "title": "Gates",
+      "icon": "compass",
+      "summary": "Driveway and access gates manufactured from American steel, aluminum or stainless steel to your own design.",
+      "intro": "3rd Coast Developers is the leader in driveway and access gates in the Greater Houston area. Every gate is manufactured from 100% American steel, aluminum or stainless steel, with decorative or ornamental elements worked into your custom design.",
+      "image": "/brands/3rdcoastdevelopers/gates",
+      "imageAlt": "A black metal gate standing between trees",
+      "services": [
+        {
+          "slug": "driveway-gates",
+          "title": "Driveway Gates",
+          "icon": "car",
+          "text": "Custom driveway gates for the home or the office, from the straightforward to the extravagant.",
+          "points": [
+            "100% American steel, aluminum or stainless steel",
+            "Built for home and office entrances"
+          ]
+        },
+        {
+          "slug": "access-gates",
+          "title": "Access Gates",
+          "icon": "shield",
+          "text": "Walk-through and access gates that control who gets onto the property without closing it in.",
+          "points": [
+            "Residential and commercial entrances"
+          ]
+        },
+        {
+          "slug": "custom-design-and-finishes",
+          "title": "Custom Design and Finishes",
+          "icon": "compass",
+          "text": "Decorative and ornamental elements worked into your own design, with a large selection of colors to finish it in.",
+          "points": [
+            "Huge selection of colors",
+            "Speak with a trained consultant about the design",
+            "On-site consultation available"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "railing",
+      "title": "Railing",
+      "icon": "ruler",
+      "summary": "Interior and exterior handrails, custom or classic, for staircases and walkways.",
+      "intro": "No staircase or walkway is complete without a charming handrail. Years of experience has taught us how much each detail of a house or building compliments each other, and custom or classic iron railing can transform a space.",
+      "image": "/brands/3rdcoastdevelopers/railing",
+      "imageAlt": "An ornate wrought iron railing with arched detail",
+      "services": [
+        {
+          "slug": "interior-handrails",
+          "title": "Interior Handrails",
+          "icon": "home",
+          "text": "Handrails for the staircase inside the house, matched to the detail already in the room.",
+          "points": [
+            "Custom or classic patterns"
+          ]
+        },
+        {
+          "slug": "exterior-handrails",
+          "title": "Exterior Handrails",
+          "icon": "building",
+          "text": "Rails for porch steps, walkways and entrances, forged to stand up to the weather outside.",
+          "points": [
+            "Steps, porches and walkways"
+          ]
+        },
+        {
+          "slug": "custom-iron-railing",
+          "title": "Custom and Classic Iron Railing",
+          "icon": "ruler",
+          "text": "Call for a free quote and one of our experts will show you what iron railing can do for the space, and a 3rd Coast Developer will treat you like family.",
+          "points": [
+            "Free quote",
+            "Up to 10-year warranty"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "security",
+      "title": "Security",
+      "icon": "shield",
+      "summary": "Wrought iron burglar bars for windows and doors, as simple or as ornate as you want them.",
+      "intro": "Recently broken into, or looking for more security? Wrought iron burglar bars add that sought-after peace of mind to a house or a commercial space. Window and door bars can be as simple or as ornate as you want them to be, and they can be made to compliment the building rather than hide it.",
+      "services": [
+        {
+          "slug": "window-burglar-bars",
+          "title": "Window Burglar Bars",
+          "icon": "shield",
+          "text": "Bars fitted to the windows of a house or office so valuables stay protected, made as a custom piece rather than a stock grille.",
+          "points": [
+            "Simple or ornate patterns",
+            "Residential and commercial"
+          ]
+        },
+        {
+          "slug": "door-burglar-bars",
+          "title": "Door Burglar Bars",
+          "icon": "home",
+          "text": "Security bars and screens over entry doors, forged to match the rest of the ironwork on the building.",
+          "points": [
+            "Wrought iron security doors",
+            "Made to compliment the building"
+          ]
+        },
+        {
+          "slug": "quick-release-bars",
+          "title": "Quick Release Bars",
+          "icon": "settings",
+          "text": "Quick release bars that come away from the inside, to align with insurance concerns about barred windows.",
+          "points": [
+            "Quick release offered on request"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "First-time buyer discount",
+    "title": "Ask about the first-time buyer discount.",
+    "text": "Installation is free and the work carries a warranty of up to ten years."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Hand forged metalwork for the Greater Houston area.",
+    "text": [
+      "3rd Coast Developers craft one-of-a-kind, hand forged works of art for both residential and commercial projects. Every piece is made from the customer's choice of 100% American made steel, galvanized steel or aluminum, and it is made to last.",
+      "From extravagant custom driveway gates to wrought iron fences that make a statement, the shop has the experience and the expertise to offer the highest level of quality, speed and customer service in the Greater Houston area. Call and a trained consultant will talk the project through, or come look at it on site."
+    ],
+    "image": "/brands/3rdcoastdevelopers/shop",
+    "imageAlt": "A worker in a protective helmet grinding a steel beam, with sparks flying",
+    "values": [
+      {
+        "title": "Free installation",
+        "text": "Installation is included on the fencing, gates, railing and security work the shop quotes."
+      },
+      {
+        "title": "100% satisfaction",
+        "text": "Customer satisfaction is the highest concern here, and every job carries a 100% satisfaction promise."
+      },
+      {
+        "title": "Up to 10-year warranty",
+        "text": "The work is backed by a warranty of up to ten years. Ask for the terms when the project is quoted."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Materials",
+      "items": [
+        "100% American made steel",
+        "Galvanized steel",
+        "Aluminum",
+        "Stainless steel"
+      ]
+    },
+    {
+      "heading": "On every project",
+      "items": [
+        "Up to 10-year warranty",
+        "Free installation",
+        "100% satisfaction",
+        "Ask about the first-time buyer discount"
+      ]
+    },
+    {
+      "heading": "Metal work they take on",
+      "items": [
+        "Welding",
+        "Decorative welding",
+        "Fencing",
+        "Burglar systems"
+      ]
+    },
+    {
+      "heading": "Residential and commercial",
+      "text": "Both are quoted the same way, from pool fencing and handrails at a house to warehouse perimeters and gates at a commercial building."
+    },
+    {
+      "heading": "Consultations",
+      "text": "Call and speak with one of the trained consultants about your project, or schedule an on-site consultation before anything is fabricated."
+    },
+    {
+      "heading": "Pricing",
+      "text": "Great work at a fair price, and the most competitive wrought iron, stainless steel and aluminum solutions in the market for both residential and commercial projects."
+    },
+    {
+      "heading": "Service area",
+      "text": "Residential and commercial projects across the Greater Houston area, from the shop on Polk Street."
+    },
+    {
+      "heading": "Follow the work",
+      "text": "Finished gates, fences and railing are posted at instagram.com/3rdcoastdevelopers and facebook.com/3rdCoastDevelopers."
+    }
+  ]
+}
