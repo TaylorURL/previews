@@ -1,0 +1,904 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "dental",
+  "name": "The Houston Dentists",
+  "shortName": "The Houston Dentists",
+  "tagline": "Exceptional doctors. Extraordinary care.",
+  "phone": "(346) 202-3432",
+  "email": "info@drfrazar.com",
+  "address": "4914 Bissonnet Street, Suite 200",
+  "town": "Bellaire",
+  "state": "TX",
+  "zip": "77401",
+  "since": 1989,
+  "hours": [
+    [
+      "Mon – Thu",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Friday",
+      "8 AM – 4 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Request an Appointment",
+    "text": "Contact us to schedule your consultation and take the first step towards your best smile ever."
+  },
+  "brand": {
+    "primary": "#2f5e67",
+    "primaryDeep": "#1e444c",
+    "accent": "#6998a0",
+    "ink": "#14181a",
+    "muted": "#56646a",
+    "surface": "#f6f7f6",
+    "cream": "#e9f0f0",
+    "line": "#dce5e6",
+    "heading": "'Libre Baskerville', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/thehoustondentists/logo.webp",
+    "logoMono": "/brands/thehoustondentists/logo-mono.webp",
+    "logoWidth": 152,
+    "logoHeight": 74,
+    "logoRatio": 2.061,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.347,
+      0.372,
+      0.387,
+      0.393,
+      0.392,
+      0.185,
+      0.185,
+      0.185,
+      0.716,
+      0.864,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Cosmetic and biological dentistry in Bellaire",
+    "title": "Discover a newfound confidence in your health, and experience your best smile ever.",
+    "lead": "At The Houston Dentists, we've blended advanced technology with a spa-like atmosphere to deliver exemplary, personalized cosmetic dental care in Bellaire and Houston for over 30 years.",
+    "image": "/brands/thehoustondentists/hero",
+    "imageAlt": "Two people talking in the reception area at The Houston Dentists",
+    "points": [
+      "A spa-like office with a comfort menu",
+      "Biological, minimally invasive care",
+      "Sedation options for anxious patients"
+    ]
+  },
+  "overview": {
+    "title": "Preventive, restorative, cosmetic and biological dentistry in one Bellaire office.",
+    "text": "Choose a treatment to see what it involves, or call the office and we will talk it through with you."
+  },
+  "services": [
+    {
+      "slug": "preventive-dentistry",
+      "title": "Preventive Dentistry",
+      "icon": "shield",
+      "summary": "Exams, cleanings and early detection.",
+      "text": "Regular check-ups, professional cleanings and patient education that keep problems small, or stop them starting at all.",
+      "lead": "Our preventive care goes beyond routine cleanings. We use advanced technology and holistic approaches to protect your oral health and overall well-being.",
+      "image": "/brands/thehoustondentists/workspace",
+      "imageAlt": "The clinical workspace behind the front counter at The Houston Dentists",
+      "covers": [
+        {
+          "title": "Exams and diagnostics",
+          "text": "Thorough exams using digital X-rays and intraoral cameras, screening for cavities, gum disease and other issues so they are caught early."
+        },
+        {
+          "title": "Cleaning and hygiene",
+          "text": "Professional cleanings that remove plaque and tartar, with personalised hygiene instruction for keeping on top of it between visits."
+        },
+        {
+          "title": "Dental sealants",
+          "text": "A thin protective coating on the chewing surfaces of back teeth, for children and adults prone to cavities."
+        },
+        {
+          "title": "Fluoride and remineralization therapy",
+          "text": "Treatments that strengthen enamel and make it more resistant to decay, useful for higher-risk or sensitive teeth."
+        },
+        {
+          "title": "Oral cancer screenings",
+          "text": "Screening at your regular check-up using the Velscope, which picks up abnormalities not visible to the naked eye."
+        },
+        {
+          "title": "Sleep apnea therapy",
+          "text": "Custom-made oral appliances for mild to moderate sleep apnea, helping keep your airway open while you sleep."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How often should I have a dental check-up and cleaning?",
+          "a": "For most patients we recommend a check-up and cleaning every six months. Some people need more frequent visits based on their oral health and risk factors, and we will work out the right schedule with you."
+        },
+        {
+          "q": "Are dental X-rays safe?",
+          "a": "Yes. We use advanced digital X-rays, which emit significantly less radiation than traditional film, and we only take them when they are needed for diagnosis or treatment planning."
+        }
+      ]
+    },
+    {
+      "slug": "restorative-dentistry",
+      "title": "Restorative Dentistry",
+      "icon": "bone",
+      "summary": "Repairing and replacing damaged teeth.",
+      "text": "Fillings, crowns, bridges, implants and dentures that restore function and appearance after decay, fracture or tooth loss.",
+      "lead": "We combine advanced technology with artistic skill to restore your smile's function and beauty. Our restorative treatments not only repair damage but enhance your overall oral health.",
+      "covers": [
+        {
+          "title": "Dental fillings",
+          "text": "Biocompatible, white composite fillings that blend with your natural tooth colour and support the tooth structure, with no metal."
+        },
+        {
+          "title": "Dental crowns",
+          "text": "Custom-made crowns that protect and strengthen a severely damaged or weakened tooth while matching the rest of your smile."
+        },
+        {
+          "title": "Dental bridges",
+          "text": "Custom bridges that fill the gap left by one or more missing teeth and stop the surrounding teeth from shifting."
+        },
+        {
+          "title": "Dental implants",
+          "text": "A permanent solution for missing teeth, including placement and restoration, that looks and functions much like a natural tooth."
+        },
+        {
+          "title": "Dentures",
+          "text": "Custom-fitted full or partial dentures designed for comfort, function and a natural look."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How long do dental restorations last?",
+          "a": "It depends on the type of restoration and your oral health habits. With good care, fillings, crowns, bridges and implants can serve you well for many years; your hygiene routine, biting forces, grinding habits and overall health all play a part."
+        },
+        {
+          "q": "Are tooth-colored fillings as durable as metal fillings?",
+          "a": "Yes. Modern composite fillings withstand biting and chewing just as well as traditional amalgam, and they are mercury-free and bond directly to the tooth, which often allows more conservative treatment."
+        }
+      ]
+    },
+    {
+      "slug": "cosmetic-dentistry",
+      "title": "Cosmetic Dentistry",
+      "icon": "gem",
+      "summary": "Whitening, veneers, bonding and aligners.",
+      "text": "Treatments for discoloration, chips, gaps and misalignment, planned around your face rather than a template smile.",
+      "lead": "Transform your smile and boost your confidence with our cosmetic dentistry services. We blend artistry and science to create stunning, natural-looking results tailored to your unique smile.",
+      "covers": [
+        {
+          "title": "KöR teeth whitening",
+          "text": "Professional whitening in the office or at home, removing years of stains and discoloration."
+        },
+        {
+          "title": "Dental bonding",
+          "text": "Tooth-coloured composite resin to repair chips, close small gaps or improve the shape of a tooth, often in a single visit."
+        },
+        {
+          "title": "Porcelain veneers",
+          "text": "Ultra-thin custom shells bonded to the front of the teeth, correcting discoloration, chips and misalignment."
+        },
+        {
+          "title": "Clear aligners",
+          "text": "OrthoFX Nighttime and traditional aligners as well as Invisalign, shifting teeth into alignment without braces."
+        },
+        {
+          "title": "Complete smile makeovers",
+          "text": "A treatment plan that combines several cosmetic procedures to address everything at once."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How long do cosmetic dental treatments typically last?",
+          "a": "It varies. Whitening results can last several months with proper care, veneers can last many years, and clear aligner results hold with consistent retainer use. Oral hygiene, lifestyle habits and regular check-ups all affect the lifespan."
+        },
+        {
+          "q": "Is cosmetic dentistry purely aesthetic, or are there health benefits too?",
+          "a": "Many treatments offer oral health benefits as well. Straightening teeth can improve bite alignment and make cleaning easier, and replacing missing teeth with implants or bridges can prevent bone loss and maintain facial structure."
+        }
+      ]
+    },
+    {
+      "slug": "biological-dentistry",
+      "title": "Biological Dentistry",
+      "icon": "heart",
+      "summary": "Biocompatible, minimally invasive care.",
+      "text": "A holistic approach that treats oral health as part of whole-body wellness, using biocompatible materials and conservative techniques.",
+      "lead": "Biological dentistry views oral health as an integral part of overall wellness. It emphasises biocompatible materials and minimally invasive techniques, recognising how closely dental health and the rest of the body are connected.",
+      "covers": [
+        {
+          "title": "Safe mercury removal",
+          "text": "Dr. Frazar and Dr. Coury are both SMART certified. We follow strict protocols to protect you from mercury exposure during removal and replace amalgams with biocompatible materials."
+        },
+        {
+          "title": "Ozone therapy",
+          "text": "Ozone used to disinfect and heal dental tissues, eliminating harmful bacteria and supporting faster recovery."
+        },
+        {
+          "title": "Zirconia implants",
+          "text": "Metal-free implants that are durable, aesthetic and less likely to cause allergic reactions."
+        },
+        {
+          "title": "Biological checkups",
+          "text": "In-depth checkups that look at how your oral health relates to your overall wellness, not just at your teeth."
+        },
+        {
+          "title": "Saliva testing",
+          "text": "Swish Bio saliva testing identifies pathogens in your saliva, giving us a read on your oral microbiome so treatment can address root causes."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Is biological dentistry safe and effective?",
+          "a": "Yes. It follows evidence-based practice while considering the body as a whole. Biocompatible materials and minimally invasive techniques often lead to better long-term outcomes and fewer complications."
+        },
+        {
+          "q": "How does biological dentistry differ from traditional dentistry?",
+          "a": "Traditional dentistry focuses primarily on treating specific dental issues. Biological dentistry also considers the effect of treatment on overall health, uses more biocompatible materials, and leans on prevention and the body's natural healing."
+        }
+      ]
+    },
+    {
+      "slug": "periodontal-care",
+      "title": "Periodontal Care",
+      "icon": "stethoscope",
+      "summary": "Gum disease, recession and gum lifts.",
+      "text": "Treatment for gum disease and recession from our periodontist, Dr. Moayad Mardini, using minimally invasive surgical techniques.",
+      "lead": "Periodontal care focuses on preventing, diagnosing and treating conditions that affect the gums and the structures supporting the teeth, from recession and advanced gum disease to a gummy smile.",
+      "covers": [
+        {
+          "title": "Gum grafting for recession",
+          "text": "Restores protective tissue around the teeth, covering exposed roots, reducing sensitivity and helping prevent further damage."
+        },
+        {
+          "title": "Crown lengthening (gum lift)",
+          "text": "Reshapes excess gum tissue to reveal a more balanced smile, or to make space for a future crown or veneer."
+        },
+        {
+          "title": "Osseous surgery (pocket reduction)",
+          "text": "Removes infection from deep gum pockets and reshapes the underlying bone so the gums can reattach closely to the teeth."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Is periodontal treatment painful?",
+          "a": "Our periodontal procedures are designed to be as comfortable as possible. We use local anesthesia and sedation options when needed, and many treatments are minimally invasive with quick recovery times."
+        },
+        {
+          "q": "Will my gums grow back on their own?",
+          "a": "Once gum tissue is lost it typically does not grow back naturally. Gum grafting is the most effective way to restore lost tissue and protect your teeth."
+        },
+        {
+          "q": "Do I need to see a periodontist?",
+          "a": "If you have signs of gum disease or recession, or you are planning restorative or cosmetic work, seeing a periodontist like Dr. Mardini means specialised care that supports both your health and the long-term result."
+        }
+      ]
+    },
+    {
+      "slug": "dental-implants",
+      "title": "Dental Implants",
+      "icon": "anchor",
+      "summary": "Metal-free zirconia tooth replacement.",
+      "text": "Permanent replacements for missing teeth using metal-free zirconia implants, for one tooth or a full arch.",
+      "lead": "Dental implants are permanent tooth replacements that mimic the natural structure of a tooth. We use metal-free zirconia implants, a biocompatible and highly aesthetic alternative to traditional titanium.",
+      "covers": [
+        {
+          "title": "Single tooth implants",
+          "text": "One zirconia implant topped with a custom crown, restoring a missing tooth without affecting the teeth either side of it."
+        },
+        {
+          "title": "Implant bridges",
+          "text": "Several teeth in a row replaced using just a few implants, with no removable partial denture needed."
+        },
+        {
+          "title": "Full-arch implant restorations",
+          "text": "A fixed set of teeth for an upper or lower jaw, more stable and natural-feeling than traditional dentures."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What makes zirconia implants different from titanium?",
+          "a": "Zirconia implants are metal-free and tooth-coloured, which gives excellent aesthetics and biocompatibility. They suit patients with allergies or anyone looking for a more holistic solution."
+        },
+        {
+          "q": "Does getting an implant hurt?",
+          "a": "Most patients say the discomfort is similar to a simple extraction. We offer sedation options and use minimally invasive techniques for your comfort during and after the procedure."
+        },
+        {
+          "q": "How long do dental implants last?",
+          "a": "With proper care, zirconia dental implants can last 20 years or more."
+        }
+      ]
+    },
+    {
+      "slug": "sedation-dentistry",
+      "title": "Sedation Dentistry",
+      "icon": "waves",
+      "summary": "Nitrous oxide, oral and IV sedation.",
+      "text": "Sedation for dental anxiety, a sensitive gag reflex or long appointments, from mild relaxation through to twilight sleep.",
+      "lead": "Sedation dentistry uses medication to help you relax during treatment. It suits anyone with dental anxiety, a sensitive gag reflex, or difficulty sitting still for long periods.",
+      "image": "/brands/thehoustondentists/comfort",
+      "imageAlt": "A patient in noise-cancelling headphones relaxing before treatment",
+      "covers": [
+        {
+          "title": "Nitrous oxide (laughing gas)",
+          "text": "A mild sedative inhaled through a mask. It takes effect quickly and wears off rapidly, so you can drive yourself home."
+        },
+        {
+          "title": "Oral sedation",
+          "text": "A tablet taken at the office under our supervision. After about 45 minutes you are deeply relaxed but still conscious throughout treatment."
+        },
+        {
+          "title": "IV sedation",
+          "text": "Administered by a certified anesthesiologist and adjustable during the procedure, producing a twilight sleep you can still respond from."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Is sedation dentistry safe?",
+          "a": "Yes, when administered by trained professionals. We carefully screen patients, use appropriate dosages and continuously monitor vital signs during the procedure."
+        },
+        {
+          "q": "Will I feel any pain during my procedure with sedation?",
+          "a": "Most patients experience little to no discomfort. The level of sedation is tailored to keep you comfortable throughout, and with deeper sedation you will have no memory of the procedure."
+        },
+        {
+          "q": "Will I need someone to drive me home?",
+          "a": "After nitrous oxide you can drive yourself home. With oral or IV sedation you will need a responsible adult to drive you, and we may ask you to fast beforehand."
+        }
+      ]
+    },
+    {
+      "slug": "dental-crowns",
+      "title": "Dental Crowns",
+      "icon": "shield",
+      "summary": "Zirconia, porcelain and implant crowns.",
+      "text": "Tooth-shaped restorations that cover and protect a cracked, worn or treated tooth, made in ceramic or zirconia.",
+      "lead": "Dental crowns completely cover and protect a damaged or compromised tooth. We use high-quality materials, including ceramic and zirconia, and design every crown to fit your bite.",
+      "covers": [
+        {
+          "title": "Zirconia crowns",
+          "text": "Strong, biocompatible and metal-free, with no grey lines near the gumline."
+        },
+        {
+          "title": "Porcelain crowns",
+          "text": "Excellent for front teeth and other visible areas, with natural translucency and close shade matching."
+        },
+        {
+          "title": "Implant-supported crowns",
+          "text": "The final piece of a dental implant, designed to look and feel like your natural tooth."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How long do dental crowns last?",
+          "a": "With proper care and regular dental visits, most crowns last 10 to 15 years or longer. Zirconia crowns often last longer still, thanks to their strength."
+        },
+        {
+          "q": "Does getting a crown hurt?",
+          "a": "The process is gentle and performed under local anesthesia. Most patients have little to no discomfort during or after treatment."
+        },
+        {
+          "q": "Is a crown better than a filling?",
+          "a": "If a tooth is too damaged for a filling to support it long term, a crown is the better choice, because it covers the tooth fully and restores strength to the whole structure."
+        }
+      ]
+    },
+    {
+      "slug": "smile-makeovers",
+      "title": "Smile Makeovers",
+      "icon": "smile",
+      "summary": "Several treatments planned as one.",
+      "text": "A comprehensive cosmetic plan that may combine veneers, whitening, bonding, crowns or Invisalign to address everything together.",
+      "lead": "A smile makeover is a comprehensive cosmetic treatment plan that enhances the overall appearance of your smile, built around your facial features, goals and lifestyle.",
+      "covers": [
+        {
+          "title": "Porcelain veneers",
+          "text": "Thin custom shells that correct chips, discoloration, minor misalignment and uneven shapes."
+        },
+        {
+          "title": "Professional teeth whitening",
+          "text": "In-office or take-home whitening that safely lifts stains."
+        },
+        {
+          "title": "Invisalign® clear aligners",
+          "text": "Discreet aligners, often used as part of a makeover to fix crowding, spacing or bite issues."
+        },
+        {
+          "title": "Cosmetic bonding and contouring",
+          "text": "A fast, conservative fix for small chips, gaps or uneven edges using tooth-coloured composite resin."
+        },
+        {
+          "title": "Zirconia crowns and restorations",
+          "text": "For teeth that need extra support, a durable solution that blends into the rest of the smile."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How long does a smile makeover take?",
+          "a": "It depends on your goals. Some makeovers are finished in one or two visits, while those involving Invisalign or several crowns and veneers may take several months."
+        },
+        {
+          "q": "Is a smile makeover permanent?",
+          "a": "Many treatments, such as veneers and crowns, are long-lasting. Professional whitening and bonding may need occasional maintenance to stay at their best."
+        },
+        {
+          "q": "Am I a good candidate for a smile makeover?",
+          "a": "If you are unhappy with discoloration, misalignment, chips or spacing, it may be right for you. We assess your oral health first to make sure the foundation is healthy before any cosmetic work begins."
+        }
+      ]
+    },
+    {
+      "slug": "porcelain-veneers",
+      "title": "Porcelain Veneers",
+      "summary": "Porcelain, no-prep and composite.",
+      "text": "Ultra-thin shells bonded to the front of the teeth to correct discoloration, chips, gaps and uneven edges, often in as few as two visits.",
+      "lead": "Porcelain veneers are ultra-thin, custom-crafted shells that bond to the front surface of your teeth. Dr. Kathy Frazar combines over three decades of experience with a commitment to biocompatible care.",
+      "covers": [
+        {
+          "title": "Porcelain veneers",
+          "text": "Crafted in a dental laboratory from high-quality porcelain, known for durability, lifelike translucency and resistance to staining."
+        },
+        {
+          "title": "No-prep veneers",
+          "text": "Ultra-thin shells placed over your existing teeth with little to no enamel removal, for patients who want to preserve as much natural tooth as possible."
+        },
+        {
+          "title": "Composite veneers",
+          "text": "Tooth-coloured resin applied directly to the teeth, often completed in a single visit and easily refined over time."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How many veneers will I need?",
+          "a": "Some patients need only one or two. A full transformation usually takes six to ten veneers."
+        },
+        {
+          "q": "How long does treatment take?",
+          "a": "You can see results in as little as two visits, over a period of just two to four weeks."
+        },
+        {
+          "q": "Do veneers need special care?",
+          "a": "Brush, floss and keep up regular visits. We recommend a nightguard if you clench or grind your teeth, and suggest avoiding nail biting and chewing ice."
+        },
+        {
+          "q": "Are veneers permanent?",
+          "a": "Veneers are considered permanent because a small amount of enamel is usually removed to fit them, though they will need replacing at some point. Lifespan varies with oral care, bite forces and grinding or clenching."
+        },
+        {
+          "q": "Can veneers stain?",
+          "a": "Porcelain veneers are highly resistant to staining. Composite veneers may stain slightly over time, much like natural teeth, so we suggest going easy on staining food and drink."
+        }
+      ]
+    },
+    {
+      "slug": "teeth-whitening",
+      "title": "Teeth Whitening",
+      "summary": "In-office and take-home whitening.",
+      "text": "Professional whitening that removes stains from coffee, wine, tobacco and age, with the strength tailored to your sensitivity.",
+      "lead": "Teeth whitening removes stains and discoloration from the enamel. We provide both in-office and take-home solutions, tailored to your goals, whether you are preparing for an event or simply want to refresh your look.",
+      "covers": [
+        {
+          "title": "In-office whitening",
+          "text": "Professional-strength gel activated by a specialised light. In less than an hour you leave with a significantly brighter smile."
+        },
+        {
+          "title": "Take-home whitening kits",
+          "text": "Custom fitted trays and professional-grade gel, for better and safer results than store-bought strips on your own schedule."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Is teeth whitening safe?",
+          "a": "Yes. Under the supervision of a dental professional, whitening is a safe and effective cosmetic procedure. We use only ADA-accepted, enamel-safe products."
+        },
+        {
+          "q": "Will whitening make my teeth sensitive?",
+          "a": "Some patients have temporary sensitivity. We minimise it with lower-concentration gels or fluoride desensitizers and tailor the treatment to your comfort."
+        },
+        {
+          "q": "How long will my results last?",
+          "a": "Results vary with diet and oral hygiene, but with proper care a brighter smile can last several months to a year, and occasional touch-ups extend it."
+        }
+      ]
+    },
+    {
+      "slug": "dental-bonding",
+      "title": "Dental Bonding",
+      "summary": "One-visit repairs for chips and gaps.",
+      "text": "Composite resin sculpted onto the tooth to close small gaps, repair chips or correct discoloration, usually in a single visit.",
+      "lead": "Dental bonding is a simple, effective treatment to restore, reshape and rejuvenate your teeth, often in just one visit. Dr. Kathy Frazar uses premium composite resin materials to sculpt your ideal smile.",
+      "covers": [
+        {
+          "title": "Quick and painless smile enhancement",
+          "text": "Typically completed in a single visit, with no extensive prep work and, in most cases, no need for numbing."
+        },
+        {
+          "title": "Natural-looking results",
+          "text": "Dr. Frazar hand-selects composite resin shades that mimic your natural tooth colour, so repairs blend with the surrounding enamel."
+        },
+        {
+          "title": "Minimally invasive",
+          "text": "Unlike crowns or veneers, bonding does not require removing a significant amount of natural enamel, which fits our biological dentistry philosophy."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How long does dental bonding take?",
+          "a": "Bonding can be completed in under an hour per tooth, often without anesthesia."
+        }
+      ]
+    },
+    {
+      "slug": "dentures",
+      "title": "Dentures",
+      "summary": "Full, partial and implant-supported.",
+      "text": "Removable restorations custom-crafted to fit your facial structure and restore eating, speaking and smiling comfortably.",
+      "lead": "Today's dentures are far more advanced than many people imagine. Every detail is personalised to your facial structure and appearance, so they fit comfortably and feel as natural as possible.",
+      "covers": [
+        {
+          "title": "Full dentures",
+          "text": "For patients missing all teeth in the upper or lower arch, restoring the smile and facial structure and preventing a sunken appearance."
+        },
+        {
+          "title": "Partial dentures",
+          "text": "Fill the gaps when several teeth are missing while preserving the healthy natural teeth that remain."
+        },
+        {
+          "title": "Implant-supported dentures",
+          "text": "Secured with dental implants to reduce slipping, improve chewing power and give a more secure feel."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Will dentures look natural?",
+          "a": "Yes. Modern dentures closely resemble natural teeth and gums, and with proper customisation most people will not be able to tell you are wearing them."
+        },
+        {
+          "q": "Are dentures uncomfortable?",
+          "a": "There may be a short adjustment period, but well-made dentures should feel comfortable and secure. We take the time to fine-tune the fit to minimise irritation."
+        },
+        {
+          "q": "How long do dentures last?",
+          "a": "Dentures typically last 5 to 10 years, depending on wear and changes in your jawbone. Regular visits keep the fit right."
+        }
+      ]
+    },
+    {
+      "slug": "full-mouth-rehab",
+      "title": "Full Mouth Rehab",
+      "summary": "Rebuilding a worn or damaged bite.",
+      "text": "A staged plan combining restorative and cosmetic treatment to rebuild the bite when teeth are worn, broken, missing or badly decayed.",
+      "lead": "Full mouth rehab restores the beauty, function and health of your entire smile. Dr. Kathy Frazar brings over 30 years of experience to every case, with biological dentistry principles and spa-like comfort throughout.",
+      "covers": [
+        {
+          "title": "Improved oral function",
+          "text": "A fully restored bite and balanced alignment, so chewing, biting and speaking are comfortable again."
+        },
+        {
+          "title": "Enhanced aesthetics",
+          "text": "Tooth-coloured fillings, crowns and bridges crafted to align with your facial features and personal goals."
+        },
+        {
+          "title": "Holistic health integration",
+          "text": "Materials chosen for biocompatibility, using a biological dentistry approach that minimises toxins."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does a full mouth rehab involve?",
+          "a": "One full mouth rehab can involve up to a dozen specialized procedures, planned in stages after a consultation with digital X-rays and intraoral scanning of your teeth, gums, jaw joints and bite."
+        }
+      ]
+    },
+    {
+      "slug": "ozone-treatment",
+      "title": "Ozone Treatment",
+      "summary": "Non-toxic disinfection and healing.",
+      "text": "Ozone applied as a gas or ozonated water to disinfect, treat early decay and support gum health without harsh chemicals.",
+      "lead": "Ozone treatment harnesses the antimicrobial and healing properties of ozone, a naturally occurring gas composed of three oxygen atoms, to disinfect and promote deep healing in the mouth.",
+      "covers": [
+        {
+          "title": "Non-toxic and biocompatible",
+          "text": "Ozone therapy uses pure oxygen to disinfect the mouth, so it suits patients sensitive to traditional materials or medications."
+        },
+        {
+          "title": "Accelerated healing",
+          "text": "Ozone increases blood flow and boosts the immune response in the treated area, and patients often notice faster healing and less inflammation."
+        },
+        {
+          "title": "Minimally invasive relief",
+          "text": "Early-stage cavities and gum infections can be treated without drilling or surgery."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What can ozone treatment be used for?",
+          "a": "Cavities, gum disease, sensitivity, gum infections and deep periodontal pockets, and for disinfecting a tooth after a filling. It is delivered as a gas or as ozonated water."
+        },
+        {
+          "q": "How effective is one application?",
+          "a": "Ozone can eliminate over 99% of oral bacteria after just one dental application session."
+        }
+      ]
+    }
+  ],
+  "process": {
+    "title": "Your first visit",
+    "text": "What to expect the first time you come in.",
+    "steps": [
+      {
+        "title": "Meet and greet",
+        "text": "You will be welcomed by our team, given a tour of the office and settled in before anything else happens."
+      },
+      {
+        "title": "Candid conversation",
+        "text": "We take the time to listen to your concerns, goals and dental history, so we understand what you actually want."
+      },
+      {
+        "title": "Personalized guidance",
+        "text": "Based on that conversation and a comprehensive examination, we build a treatment plan around your needs and aesthetic goals."
+      },
+      {
+        "title": "Scheduling and next steps",
+        "text": "We talk through the options, answer your questions and help you schedule the next appointment."
+      }
+    ]
+  },
+  "affiliations": {
+    "title": "Credentials and recognition",
+    "items": [
+      "Texas Monthly Top Dentists",
+      "Texas Super Dentists",
+      "Las Vegas Institute for Advanced Dental Studies",
+      "SMART certified for safe mercury amalgam removal",
+      "Fellow, Academy of General Dentistry",
+      "Fellow, Academy of Comprehensive Esthetics",
+      "International Academy of Oral Medicine and Toxicology (IAOMT)"
+    ]
+  },
+  "about": {
+    "title": "A healthy mouth is the gateway to a healthy body",
+    "text": [
+      "At The Houston Dentists, we believe that a healthy mouth is the gateway to a healthy body. We're committed to providing personalized, comprehensive treatments that not only enhance your smile but also contribute to your overall health and well-being.",
+      "By combining advanced technology with a holistic, patient-centered approach, we strive to empower our patients with knowledge, comfort, and confidence in their dental health journey. Dr. Frazar and her team have transformed more than 6,000 smiles."
+    ],
+    "image": "/brands/thehoustondentists/about",
+    "imageAlt": "Cards for the team on the front desk at The Houston Dentists",
+    "values": [
+      {
+        "title": "Experienced and nationally recognized team",
+        "text": "Our team, led by Dr. Frazar, is regularly featured in Texas Monthly's Top Dentists segment and has appeared in national media."
+      },
+      {
+        "title": "A spa-like environment",
+        "text": "A calming atmosphere with complimentary comforts: NuCalm, heated massage chairs, noise-cancelling headphones and aromatherapy."
+      },
+      {
+        "title": "High-tech, minimally invasive techniques",
+        "text": "We use current techniques and technology to treat with minimal discomfort and faster recovery times."
+      },
+      {
+        "title": "A patient-focused approach",
+        "text": "We take the time to listen to your concerns and goals, and tailor care to your needs with a health-first approach."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Dr. Kathy Frazar",
+      "role": "Dentist",
+      "bio": "Dr. Frazar worked as an ICU nurse before dentistry, and earned her Bachelor of Science in Nursing and her Doctorate of Dental Surgery at the University of Texas before opening her Bellaire and West University practice in 1989. She has completed more than 6,000 smile makeovers, is a graduate of the Las Vegas Institute for Advanced Dental Studies, holds Fellowships from the Academy of General Dentistry and the Academy of Comprehensive Esthetics, and is SMART certified through the International Academy of Oral Medicine and Toxicology."
+    },
+    {
+      "name": "Dr. Coury Zachary",
+      "role": "Dentist",
+      "bio": "Dr. Coury earned her Bachelor of Science in Exercise Science and her Doctor of Dental Medicine at the University of Mississippi, then completed an Advanced Education in General Dentistry residency and an Oral and Maxillofacial Surgery internship. She joined The Houston Dentists in 2022 and is completing advanced cosmetic training through the Las Vegas Institute."
+    },
+    {
+      "name": "Dr. Moayad Mardini, MDS",
+      "role": "Board-Certified Periodontist",
+      "bio": "Dr. Mardini began practising dentistry in 2009 and completed a three-year residency in periodontics and implant surgery at the University of Connecticut, where he also earned a Master of Dental Science degree focused on the progression of periodontal disease. He joined The Houston Dentists in 2023, and his training covers minimally invasive implant procedures and periodontal plastic surgery."
+    },
+    {
+      "name": "Radiance",
+      "role": "Operations Manager and Comprehensive Care Coordinator",
+      "bio": "Radiance has over 20 years of dental experience and has worked with Dr. Frazar since 2016. She graduated from Rio Salado College in 2012 with a degree in Applied Health Sciences."
+    },
+    {
+      "name": "Elizabeth",
+      "role": "Front Desk Leader, Insurance and Treatment Coordinator",
+      "bio": "Elizabeth graduated from Remington College in 2008 for dental assisting and is continuing her studies at Houston Community College, with the aim of attending dental hygiene school."
+    },
+    {
+      "name": "Seida",
+      "role": "Clinical Team Leader, Dental Assistant and Treatment Coordinator",
+      "bio": "Seida has 10 years of dental experience and has been with the practice since 2018. She graduated with honors from Houston Community College in 2016 with a degree in Health Science."
+    },
+    {
+      "name": "Sherita",
+      "role": "Hygiene Coordinator and Administrator",
+      "bio": "Sherita has 25 years in the dental field. She studied medical assisting at Houston Community College and found dentistry while living in Wisconsin."
+    },
+    {
+      "name": "Rosie",
+      "role": "Registered Dental Hygienist",
+      "bio": "Rosie has been with the practice since 2017 and is bilingual. She graduated from Hostos Community College in 2002 with a degree in dental hygiene and was previously on the dental hygiene faculty at Columbia University in New York."
+    },
+    {
+      "name": "Juanita",
+      "role": "Registered Dental Assistant and Administrator",
+      "bio": "Juanita has over 16 years in dentistry and earned her dental assisting certification at Houston Community College in 2009. She is now transitioning to the front office."
+    },
+    {
+      "name": "Ashley",
+      "role": "Dental Assistant",
+      "bio": "Ashley is a registered dental assistant and graduated from Houston Dental Assisting School in 2004."
+    },
+    {
+      "name": "Dana",
+      "role": "Registered Dental Assistant",
+      "bio": "Dana has eight years in dentistry and completed dental assisting school in 2016."
+    },
+    {
+      "name": "Tina",
+      "role": "Registered Dental Hygienist",
+      "bio": "Tina began as a registered dental assistant in 2017. She earned a B.S. in Biology with a minor in Kinesiology from the University of Houston in 2016 and an A.A.S. in Dental Hygiene from Austin Community College in 2021."
+    }
+  ],
+  "serviceArea": [
+    "Bellaire",
+    "Rice Village",
+    "West University Place",
+    "Houston Heights",
+    "Memorial",
+    "Meyerland",
+    "Southside Place",
+    "Braeswood Place",
+    "Willow Meadows",
+    "Houston"
+  ],
+  "facts": [
+    {
+      "heading": "Booking an appointment",
+      "text": "You can book online or call the office. A requested time is not final until you receive confirmation from us, and we ask that you keep protected health information out of the form.",
+      "items": [
+        "Book online: book.modento.io/c/502b3dc77dd0463cb5f47088be677bca/Website/patient-details"
+      ]
+    },
+    {
+      "heading": "Insurance",
+      "text": "We are a fee-for-service practice that accepts all PPO plans, which allows us to provide high quality care at a fair price. Our team will gladly submit insurance claims on your behalf to help you make the most of your benefits."
+    },
+    {
+      "heading": "Flexible financing",
+      "items": [
+        "CareCredit",
+        "Happen Bank",
+        "iCreditWorks",
+        "Cherry"
+      ]
+    },
+    {
+      "heading": "New patient forms",
+      "text": "Once you schedule your first appointment, we'll send your forms directly to you, so you can complete them before you arrive and we can spend the visit getting to know you.",
+      "items": [
+        "Download forms: app.modento.io/the-houston-dentists"
+      ]
+    },
+    {
+      "heading": "Our comfort menu",
+      "items": [
+        "NuCalm relaxation therapy",
+        "Heated massage chairs",
+        "Aromatherapy and warm lavender towels",
+        "Warm blankets and neck pillows",
+        "Keratin gloves and warm mittens",
+        "Noise-cancelling headphones and TVs with streaming services",
+        "Freshly baked cookies, snacks and hot and cold drinks"
+      ]
+    },
+    {
+      "heading": "Technology in the office",
+      "items": [
+        "Trios intraoral scanner for digital impressions",
+        "Prexion CBCT for 3D x-rays",
+        "Myotronics K7 and Tekscan for bite analysis and TMJ diagnostics",
+        "Pearl AI x-ray software for cavity detection",
+        "Diagnodent laser cavity detection and Velscope oral cancer screening",
+        "Diode and CO2 lasers",
+        "An in-house 3D printer for appliances and temporary restorations, which allows same-day service for many treatments"
+      ]
+    },
+    {
+      "heading": "Also offered",
+      "items": [
+        "TMJ/TMD therapy, including custom-fitted night guards",
+        "Sleep apnea therapy with custom-made oral appliances",
+        "OrthoFX Nighttime and Invisalign clear aligners",
+        "Deep cleanings and laser periodontal therapy",
+        "Guided implant placement using advanced digital techniques"
+      ]
+    },
+    {
+      "heading": "As seen in",
+      "items": [
+        "Great Day Houston",
+        "Texas Monthly",
+        "NBC",
+        "ABC",
+        "Houston Chronicle",
+        "H Texas",
+        "Deborah Duncan Show",
+        "Discovery Health Channel"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: m.facebook.com/thehoustondentists/",
+        "Instagram: instagram.com/thehoustondentists/",
+        "YouTube: m.youtube.com/@thehoustondentists/videos",
+        "Yelp: yelp.to/Wn6sTdsLND"
+      ]
+    },
+    {
+      "heading": "Giving back",
+      "text": "Dr. Frazar has provided transformative care to survivors through the Smiles for Life program."
+    },
+    {
+      "heading": "A cosmetic consultation",
+      "text": "Visiting for the first time? You are invited to a special cosmetic consultation, which includes:",
+      "items": [
+        "A comprehensive cosmetic evaluation with Dr. Frazar",
+        "A full smile assessment with 3D imaging included",
+        "A personalized treatment roadmap based on your goals"
+      ]
+    },
+    {
+      "heading": "Finding the office",
+      "text": "We are in Bellaire at 4914 Bissonnet Street, Suite 200, right off Chimney Rock Road, and parking is easy."
+    },
+    {
+      "heading": "Your information",
+      "text": "We are the sole owners of the information collected on this site and we do not sell or rent it to anyone. We may occasionally email you about specials, new services or changes to our privacy policy, and you can opt out at any time."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is included in a routine consultation?",
+      "a": "A comprehensive exam using advanced technology, digital imaging as needed, a conversation about your dental and health history, and a personalized treatment plan."
+    },
+    {
+      "q": "What does biological dentistry mean for my total body health?",
+      "a": "By using non-toxic materials, minimizing invasive procedures and prioritizing biocompatible solutions, treatment supports your smile and the rest of your body. The approach emphasizes safety and long-term health."
+    },
+    {
+      "q": "Can a smile makeover help with jaw pain or headaches?",
+      "a": "Yes. The issues behind chronic jaw pain or headaches can be addressed through adjustments to your bite, replacing worn-down teeth or correcting alignment."
+    },
+    {
+      "q": "How do I choose between professional whitening and porcelain veneers?",
+      "a": "Whitening removes stains from natural teeth, which is a great choice if you struggle with stains from smoking, wine or coffee. Veneers go further, correcting shape, size and alignment issues while also whitening your smile."
+    },
+    {
+      "q": "I have old silver fillings. Should they be replaced for health reasons?",
+      "a": "If your silver fillings are intact and functional, replacement may not be immediately necessary. Many patients choose modern tooth-colored composite instead because it is mercury-free, and we offer safe amalgam removal if you decide on that."
+    },
+    {
+      "q": "Do you use modern technology to improve patient comfort?",
+      "a": "Absolutely. NuCalm therapy, digital scanning, digital X-rays, laser dentistry, noise-cancelling headphones and massage chairs all make visits more comfortable."
+    },
+    {
+      "q": "Where is the office, and when are you open?",
+      "a": "4914 Bissonnet Street, Suite 200 in Bellaire, a short drive from Rice Village, West University Place, Houston Heights and Memorial. We are open 8 AM to 5 PM Monday to Thursday, 8 AM to 4 PM on Friday, and closed at the weekend."
+    }
+  ]
+}
