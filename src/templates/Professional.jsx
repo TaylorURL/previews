@@ -835,8 +835,9 @@ function AboutTeaser({ b, hasTeam }) {
   }
   return (
     <section className={pad}>
-      <div className={`${wrap} grid items-center gap-12 lg:grid-cols-2 lg:gap-24`}>
-        {/* Drawn in its own shape, so a wide team photo keeps the people at its edges. */}
+      <div className={`${wrap} grid items-start gap-12 lg:grid-cols-2 lg:gap-24`}>
+        {/* Drawn in its own shape, so a wide team photo keeps the people at its edges;
+            held level with the heading, so a long story can't push it down its column. */}
         <Img className="max-h-[34rem] w-full rounded-lg object-cover" src={b.about.image} alt={b.about.imageAlt || ''} sizes="(max-width: 1024px) 100vw, 46vw" />
         <div className="min-w-0">
           <Eyebrow>About {b.shortName}</Eyebrow>
