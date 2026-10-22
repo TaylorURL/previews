@@ -377,13 +377,20 @@ def gist(text, limit):
     return head + "." if len(head.split()) >= 4 and len(head) < limit else ""
 
 
+# A sentence that opens on an answer ("If so, ...", "If not, ...", "Yes, ...")
+# reads only after the question before it.
+ANSWERS = re.compile(r"(?:if (?:so|not|yes|you do|that's the case)\b|(?:yes|no)[,.!])", re.I)
+
+
 def card_line(text, limit):
     """gist() for a service card, after the hook their description opens on.
     A short first sentence with no comma ("Texas sun is hard on a house.",
     "There's a reason this list is short.") leads into the description and
-    says nothing of the work on its own; the card starts after it."""
+    says nothing of the work on its own; the card starts after it. One the
+    next sentence answers ("Do you run a business? If so, ...") stays, or the
+    card would answer a question it never asked."""
     said = sentences(text)
-    while len(said) > 1 and len(said[0].split()) <= 9 and not re.search(r"[,;:–—]", said[0]):
+    while len(said) > 1 and len(said[0].split()) <= 9 and not re.search(r"[,;:–—]", said[0]) and not ANSWERS.match(said[1]):
         said = said[1:]
     rest = " ".join(said)
     return trim(rest, limit) or gist(rest, limit)

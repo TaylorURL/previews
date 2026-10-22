@@ -1120,7 +1120,7 @@ function ContactLines({ b, tel, dark = false }) {
             <span className={`grid h-11 w-11 flex-none place-items-center ${dark ? 'bg-white/10 text-accent' : 'bg-surface text-primary'}`}>
               <Icon size={18} aria-hidden="true" />
             </span>
-            <span className="min-w-0 break-words">{label}</span>
+            <span className="min-w-0 [overflow-wrap:anywhere]">{label}</span>
           </a>
         </li>
       ))}
@@ -1664,7 +1664,7 @@ function ContactPage({ b, tel }) {
         imageAlt={b.contactImage ? b.contactImageAlt : b.hero.imageAlt}
       />
       <section id="inspection" className={`${anchor} ${pad}`}>
-        <div className={`${wrap} grid items-start gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16`}>
+        <div className={`${wrap} grid grid-cols-1 items-start gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16`}>
           <div>
             <h2 className={`${h3} mb-5 text-[26px]`}>Reach us</h2>
             <ContactLines b={b} tel={tel} />
