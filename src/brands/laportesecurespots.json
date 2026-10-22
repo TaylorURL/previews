@@ -1,0 +1,191 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "reserve",
+  "name": "La Porte Secure Spots",
+  "shortName": "Secure Spots",
+  "summary": "Secure trailer parking and drop yard spots in La Porte, leased by the day, the week or month to month.",
+  "phone": "(832) 861-6166",
+  "email": "info@bayportsecurespots.com",
+  "address": "431 Independence Pkwy",
+  "town": "La Porte",
+  "state": "TX",
+  "zip": "77571",
+  "hours": [
+    ["Mon – Fri", "8 AM – 5 PM"],
+    ["Sat – Sun", "10 AM – 4 PM"],
+    ["Yard access", "24/7 controlled access"]
+  ],
+  "brand": {
+    "primary": "#093b60",
+    "primaryDeep": "#06263f",
+    "accent": "#4b9e46",
+    "ink": "#11202c",
+    "muted": "#52697a",
+    "surface": "#eff4f8",
+    "line": "#d7e1ea",
+    "heading": "'Rubik', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/laportesecurespots/logo.webp",
+    "logoMono": "/brands/laportesecurespots/logo-mono.webp",
+    "logoWidth": 189,
+    "logoHeight": 48,
+    "logoRatio": 3.929,
+    "logoGround": "#ffffff",
+    "logoReads": [0.614, 0.486, 0.353, 0.316, 0.287, 0.278, 0.394, 0.508, 0.696, 0.852, 1.0]
+  },
+  "hero": {
+    "eyebrow": "Secure trailer parking in La Porte",
+    "title": "Secure trailer parking",
+    "titleAccent": "and drop yard spots.",
+    "lead": "A lighted, fenced yard with security cameras, unique coded entry and 24/7 controlled access. Contact us today to reserve your spot.",
+    "image": "/brands/laportesecurespots/hero",
+    "imageAlt": "A reach stacker lifting a shipping container onto a truck chassis at a container terminal"
+  },
+  "groups": [
+    {
+      "slug": "trailer-parking",
+      "title": "Trailer Parking",
+      "icon": "car",
+      "summary": "Spots for loaded and empty trailers, leased per spot by the day or the month.",
+      "intro": "Spots are leased one spot at a time, for a day or for the long run. The daily rate is $50 per spot and the monthly rate is $295 per spot, with long term options available.",
+      "image": "/brands/laportesecurespots/trailer-spots",
+      "imageAlt": "Dry van trailers parked side by side at a loading dock",
+      "services": [
+        {
+          "slug": "trailer-spots",
+          "title": "Trailer Spots",
+          "icon": "car",
+          "text": "Park a loaded or empty trailer on a spot of its own and pull it when it is needed.",
+          "points": [
+            "$50 daily rate, per spot",
+            "$295 monthly rate, per spot",
+            "One spot, or up to 31 or more"
+          ]
+        },
+        {
+          "slug": "drop-yard",
+          "title": "Drop Yard",
+          "icon": "building",
+          "text": "Ground to drop and swap trailers near the Houston Ship Channel container terminals."
+        },
+        {
+          "slug": "short-term-parking",
+          "title": "Short-Term Parking",
+          "icon": "timer",
+          "text": "A spot for 24 hours, 48 hours, one week or two weeks, taken on the licensee application.",
+          "points": ["24-hour and 48-hour terms", "One week and two week terms"]
+        },
+        {
+          "slug": "long-term-parking",
+          "title": "Month-to-Month and Long Term",
+          "icon": "clipboard",
+          "text": "Month-to-month spots at the monthly rate, with long term options available.",
+          "points": ["$295 per spot, per month", "Long term options available"]
+        }
+      ]
+    },
+    {
+      "slug": "access-and-security",
+      "title": "Access and Security",
+      "icon": "shield",
+      "summary": "Controlled access around the clock on a lighted, fenced yard that is managed on site.",
+      "intro": "The yard is fenced, lit and covered by security cameras, and every licensee enters on a code of their own. Access is controlled 24 hours a day, so a trailer can be dropped or pulled at any hour.",
+      "services": [
+        {
+          "slug": "controlled-access",
+          "title": "24/7 Controlled Access",
+          "icon": "timer",
+          "text": "Access to the yard is controlled around the clock rather than limited to office hours."
+        },
+        {
+          "slug": "coded-entry",
+          "title": "Unique Coded Entry",
+          "icon": "circuit",
+          "text": "Entry is on a unique code, so the yard knows who came through the gate."
+        },
+        {
+          "slug": "secure-location",
+          "title": "Lighted, Fenced and On Camera",
+          "icon": "shield",
+          "text": "A secure location: the yard is lighted, fenced and watched by security cameras."
+        },
+        {
+          "slug": "site-management",
+          "title": "Site Management",
+          "icon": "settings",
+          "text": "The site is managed day to day. We focus on quality, not quantity."
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Rates",
+    "title": "Spots by the day or by the month.",
+    "text": "The same spot, the same yard, whether the trailer sits overnight or stays on month to month.",
+    "price": "$295",
+    "priceNote": "monthly, per spot"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "A gated trailer yard near the terminals.",
+    "text": [
+      "Secure Spots leases trailer parking and drop yard space on gated ground in La Porte, close to the Bayport and Barbours Cut container terminals. A spot is taken for 24 hours, a week, or month to month, one spot or thirty.",
+      "The yard is lighted, fenced and covered by security cameras, with controlled access around the clock and a unique entry code for every licensee. The site is managed rather than left to itself, and the standard the company sets for it is quality, not quantity."
+    ],
+    "image": "/brands/laportesecurespots/yard",
+    "imageAlt": "A truck tractor parked on an open industrial yard beside trailer chassis",
+    "values": [
+      {
+        "title": "Controlled access",
+        "text": "Access is controlled 24/7 and every licensee enters on a unique code."
+      },
+      {
+        "title": "Watched ground",
+        "text": "Lighted, fenced and covered by security cameras."
+      },
+      {
+        "title": "Managed site",
+        "text": "We focus on quality, not quantity."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Rates",
+      "items": [
+        "$50 daily rate, per spot",
+        "$295 monthly rate, per spot",
+        "Long term options available"
+      ]
+    },
+    {
+      "heading": "Terms",
+      "items": ["24 hours", "48 hours", "1 week", "2 weeks", "Month-to-month", "Other, by arrangement"]
+    },
+    {
+      "heading": "Leasing a Spot",
+      "text": "Leasing starts with the licensee application, which asks for your name, company, start date, term and the number of spots you need, from one up to thirty-one or more."
+    },
+    {
+      "heading": "Hazardous Materials",
+      "text": "The licensee application asks whether the load carries hazardous materials, and for the MSDS numbers that go with it."
+    },
+    {
+      "heading": "Office Hours",
+      "items": ["Monday – Friday: 8:00am – 5:00pm", "Saturday – Sunday: 10:00am – 4:00pm"]
+    },
+    {
+      "heading": "Terminals In The Area",
+      "items": [
+        "Bayport Container Terminal, 12619 Port Rd, Seabrook, TX 77586",
+        "Barbours Cut Terminal, 1515 E Barbours Cut Blvd, La Porte, TX 77571"
+      ]
+    },
+    {
+      "heading": "Our Bayport Yard",
+      "text": "Secure Spots also runs a trailer yard at 9340 Bay Area Blvd, Pasadena, TX 77507."
+    }
+  ]
+}

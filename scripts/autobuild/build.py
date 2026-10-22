@@ -427,6 +427,11 @@ def build(prospect, root, slug):
             if icon:
                 item["icon"] = icon
             items.append(item)
+        # The grid draws its services as cards unless most have no line of
+        # their own (ServiceGrid in Professional.jsx), and a name alone among
+        # described cards is a card with nothing under its title; it is left out.
+        if sum(1 for item in items if not item["text"]) * 2 < len(items):
+            items = [item for item in items if item["text"]]
         brand["services"] = items
         if not about:
             raise Parked("no about text on their website")

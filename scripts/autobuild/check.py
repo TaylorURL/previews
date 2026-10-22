@@ -184,8 +184,23 @@ def words(brand, root, slug):
         for key in ("name", "shortName"):
             name = (other.get(key) or "").strip()
             # Whole words only: "Xpress" inside "American Express" and "Next
-            # Step" inside "next steps" name nobody.
-            if len(name) >= 6 and name.lower() not in own and re.search(rf"\b{re.escape(name)}\b", text, re.I):
+            # Step" inside "next steps" name nobody. Nor does a lowercase run
+            # of the same words - "the next step depends on the system" - so
+            # the match is case-sensitive: a business's name is written the way
+            # the business writes it.
+            if len(name) < 6 or name.lower() in own:
+                continue
+            hits = list(re.finditer(rf"\b{re.escape(name)}\b", text))
+            if key == "shortName":
+                # A short name that a capitalised word extends belongs to a
+                # longer proper name of something else: the Special Needs
+                # Alliance is an association, not Alliance Industrial Group.
+                # The full name above still catches that business itself
+                # wherever it is written out.
+                hits = [hit for hit in hits
+                        if not re.search(r"\b[A-Z][\w&.'-]*\s+$", text[:hit.start()])
+                        and not re.match(r"\s+[A-Z][\w&.'-]*", text[hit.end():])]
+            if hits:
                 problems.append(f"names another business: {name}")
     return problems
 

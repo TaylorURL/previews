@@ -1,0 +1,331 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Integrated Machine & Hydraulics, LLC",
+  "shortName": "IMH",
+  "summary": "Hydraulic cylinder, pump, motor and valve repair, custom machining and system solutions in Santa Fe, Texas.",
+  "phone": "(346) 818-8534",
+  "email": "ross@int-mc.com",
+  "address": "15921 Pine Street",
+  "town": "Santa Fe",
+  "state": "TX",
+  "zip": "77517",
+  "rating": 4.8,
+  "reviewCount": 14,
+  "hours": [
+    [
+      "Mon – Fri",
+      "7 AM – 5 PM CT"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#242c32",
+    "primaryDeep": "#171d22",
+    "accent": "#a76e44",
+    "ink": "#242c32",
+    "muted": "#6d655d",
+    "surface": "#f5f2ec",
+    "line": "#ddd3c7",
+    "heading": "'Barlow Condensed', 'Arial Narrow', sans-serif",
+    "body": "'Manrope', Arial, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap",
+    "logo": "/brands/integratedmachinehydraulics/logo.webp",
+    "logoMono": "/brands/integratedmachinehydraulics/logo-mono.webp",
+    "logoWidth": 96,
+    "logoHeight": 58,
+    "logoRatio": 1.663,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.355,
+      0.326,
+      0.288,
+      0.319,
+      0.375,
+      0.444,
+      0.525,
+      0.617,
+      0.727,
+      0.858,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Hydraulics and machining in Santa Fe, TX",
+    "title": "Power back.",
+    "titleAccent": "Downtime out.",
+    "lead": "When your equipment stops, the work doesn't. Hydraulic repair, custom machining and system solutions built around getting you moving again.",
+    "image": "/brands/integratedmachinehydraulics/hero",
+    "imageAlt": "A hydraulic cylinder stripped down on a bench beside its rod, gland and seals"
+  },
+  "groups": [
+    {
+      "slug": "hydraulic-repair",
+      "title": "Hydraulic Repair",
+      "icon": "gauge",
+      "summary": "Cylinder, pump, motor and valve repair for mobile, industrial and marine equipment.",
+      "intro": "A component failure rarely stops at the component. Share the application, the symptoms and any tag or part information, and the repair path starts with the part and the job it has to do. Repair, rebuild and replacement options are discussed before the work begins.",
+      "image": "/brands/integratedmachinehydraulics/hydraulic-repair",
+      "imageAlt": "Hydraulic cylinders on the boom of an excavator working a dirt site",
+      "services": [
+        {
+          "slug": "cylinder-repair",
+          "title": "Hydraulic Cylinder Repair",
+          "icon": "gauge",
+          "text": "Leaks, damaged rods, worn seals, or a cylinder that will not hold. A cylinder failure can stop the entire machine, so the repair path starts with the component and the job it needs to do.",
+          "points": [
+            "Seal replacement and cylinder rebuilds",
+            "Rod, barrel, gland and piston repair assessment",
+            "Replacement cylinder solutions",
+            "Machining and custom manufacturing support"
+          ]
+        },
+        {
+          "slug": "pump-motor-repair",
+          "title": "Hydraulic Pump & Motor Repair",
+          "icon": "settings",
+          "text": "Loss of power, unusual noise, heat or leakage. IMH repairs and replaces hydraulic pumps and motors for mobile equipment, industrial systems and marine applications.",
+          "points": [
+            "Hydraulic pump and motor repair",
+            "Failure troubleshooting and component assessment",
+            "Complete overhaul and replacement options",
+            "Application-specific repair and parts support"
+          ]
+        },
+        {
+          "slug": "valve-repair",
+          "title": "Hydraulic Valve Repair",
+          "icon": "filter",
+          "text": "When flow, pressure or motion becomes unpredictable, the valve is one part of a larger picture. Diagnostics, repair and replacement, including servo and proportional control applications.",
+          "points": [
+            "Hydraulic valve troubleshooting",
+            "Repair and replacement options",
+            "Servo and proportional control valve support",
+            "Support for industrial and mobile hydraulic systems"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "machining",
+      "title": "Machining & Fabrication",
+      "icon": "ruler",
+      "summary": "A machine shop behind the repair, for the part you need and the fit the job demands.",
+      "intro": "Hydraulic repair and precision machining belong in the same conversation. A damaged component should not be the end of it. Bring the part, the drawing or the repair challenge and IMH will work out what can be made or fixed.",
+      "image": "/brands/integratedmachinehydraulics/machining",
+      "imageAlt": "A steel shaft being turned on a lathe, chips curling off the cut",
+      "services": [
+        {
+          "slug": "custom-machining",
+          "title": "Custom Machining",
+          "icon": "ruler",
+          "text": "Precision machining for hydraulic and mechanical components, including custom machine parts and replacement components when the part is no longer available.",
+          "points": [
+            "Precision machining for hydraulic and mechanical components",
+            "Custom machine parts and replacement components",
+            "Part material and application reviewed with the job",
+            "Drawings or dimensions welcome, when available"
+          ]
+        },
+        {
+          "slug": "fabrication",
+          "title": "Fabrication & Custom Manufacturing",
+          "icon": "compass",
+          "text": "Fabrication and repair support, with custom manufacturing to suit the application when a repair calls for more than new parts.",
+          "points": [
+            "Fabrication and repair support",
+            "Custom manufacturing to suit the application",
+            "Machining support behind a hydraulic repair"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "systems-and-controls",
+      "title": "Systems & Controls",
+      "icon": "circuit",
+      "summary": "Hydraulic power units, PLC and control panel work, for power and the control over it.",
+      "intro": "Some repairs need a new seal. Some need a new way forward. IMH designs and engineers hydraulic power units and connects that power to precise control, so the repair can be discussed alongside the wider needs of the system.",
+      "image": "/brands/integratedmachinehydraulics/power-units",
+      "imageAlt": "A pumpjack working against an evening sky at an energy site",
+      "services": [
+        {
+          "slug": "hydraulic-power-units",
+          "title": "Hydraulic Power Units",
+          "icon": "power",
+          "text": "Purpose-built power and system-level thinking. IMH designs and engineers hydraulic power units and provides repair, customization and upgrades for existing systems.",
+          "points": [
+            "Custom hydraulic power unit design and engineering",
+            "Existing HPU repair and replacement",
+            "System upgrades and customization",
+            "Integration with automation and control requirements",
+            "Support for industrial and energy applications"
+          ]
+        },
+        {
+          "slug": "automation-and-controls",
+          "title": "Automation & Controls",
+          "icon": "circuit",
+          "text": "Connect hydraulic power with precise control. IMH provides custom PLC and control panel design, repair and replacement.",
+          "points": [
+            "Custom PLC and control panel design",
+            "Control panel repair and replacement",
+            "Existing system troubleshooting",
+            "Automation upgrades for hydraulic applications"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "marine-and-field-service",
+      "title": "Marine & Field Service",
+      "icon": "waves",
+      "summary": "Marine gearboxes and winches, plus on-site inspections and system diagnostics.",
+      "intro": "Some equipment is easier to meet where it works. IMH supports marine equipment with repair and replacement, and brings inspections and hydraulic system diagnostics to the site when that is the practical way to start.",
+      "image": "/brands/integratedmachinehydraulics/marine",
+      "imageAlt": "A tugboat under way in a harbour at sunset",
+      "services": [
+        {
+          "slug": "marine-gearboxes-winches",
+          "title": "Marine Gearboxes & Winches",
+          "icon": "waves",
+          "text": "Keep the equipment behind the vessel moving. Repair and replacement services for hydraulic pumps, motors, cylinders, gearboxes and winches.",
+          "points": [
+            "Marine gearbox diagnostics and rebuilds",
+            "Winch repair, replacement and overhaul",
+            "Marine hydraulic pump and motor repair",
+            "Cylinder repair and replacement for marine applications"
+          ]
+        },
+        {
+          "slug": "field-service-inspections",
+          "title": "Field Service & Inspections",
+          "icon": "clipboard",
+          "text": "Start where the equipment works. IMH offers on-site field service, inspections and hydraulic system diagnostics. Contact the shop to discuss location, equipment access, the issue and scheduling availability.",
+          "points": [
+            "On-site hydraulic equipment inspections",
+            "System diagnostics and troubleshooting",
+            "Maintenance and repair planning",
+            "Coordination of component repair needs"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About IMH",
+    "title": "Texas roots. Hands-on thinking. Serious capability.",
+    "text": [
+      "Integrated Machine & Hydraulics, LLC brings hydraulic repair, machining and system solutions together in Santa Fe, Texas.",
+      "Equipment problems rarely stop at a single component. That is why IMH brings repair, machining, manufacturing and hydraulic system capabilities into one conversation.",
+      "Our mission is to deliver dependable hydraulic and mechanical solutions, build lasting customer relationships and approach each job with integrity, precision and care.",
+      "From a cylinder repair to a custom power unit, our focus is the same: understand what your equipment needs and help you move forward."
+    ],
+    "image": "/brands/integratedmachinehydraulics/about",
+    "imageAlt": "Container cranes and stacked containers at a port terminal",
+    "values": [
+      {
+        "title": "Integrity",
+        "text": "Start with the problem, the application and the requirements. Good work begins with a shared understanding of the job."
+      },
+      {
+        "title": "Precision",
+        "text": "Hydraulic repair and machining demand attention to the component and to the system around it."
+      },
+      {
+        "title": "Partnership",
+        "text": "Support the equipment that supports your operation, with repair and manufacturing capabilities that work together."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What should I send with a repair inquiry?",
+      "a": "Send the equipment type, manufacturer and model if known, a description of the problem and your contact details. Tag photos, overall photos and close-ups of damage help the team understand the job."
+    },
+    {
+      "q": "Can you help if I do not know which part has failed?",
+      "a": "Yes. Start with the equipment and symptoms. IMH provides diagnostics and troubleshooting; the next step depends on the system and the issue."
+    },
+    {
+      "q": "Do you offer more than component repairs?",
+      "a": "Yes. IMH offers machining, fabrication, custom manufacturing, hydraulic power units, automation and control solutions, plus field service and inspections."
+    },
+    {
+      "q": "How do I get pricing and turnaround information?",
+      "a": "Contact IMH with your equipment details. Pricing, scope and timing depend on the component, condition, required parts and availability. No turnaround is promised by this website."
+    },
+    {
+      "q": "Where is the shop, and when is it open?",
+      "a": "15921 Pine Street, Santa Fe, Texas 77517. Monday through Friday, 7AM–5PM Central. Closed Saturday and Sunday. Call before arranging a drop-off or site visit."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Talk To The Shop",
+      "text": "Sales and repair inquiries go to 346.818.8534. The Santa Fe shop phone is 409.927.5354, and ross@int-mc.com takes equipment details, photos, video and supporting documents. If equipment is down, call 346.818.8534 to discuss availability."
+    },
+    {
+      "heading": "Industries Served",
+      "items": [
+        "Construction and heavy equipment: excavators, earthmoving equipment and the hydraulic components that carry the load, with cylinder, pump, motor and machining support.",
+        "Marine: hydraulic pumps and cylinders through to marine gearboxes and winches.",
+        "Ports and stevedoring: hydraulic repair, component replacement and custom manufacturing for cargo handling equipment.",
+        "Industrial manufacturing: hydraulic power units, control systems, precision components and field service.",
+        "Oil and gas: hydraulic repair, power units and custom machine parts for energy applications.",
+        "Utility vehicles: fleet hydraulics, cylinders, pumps and system upgrades."
+      ]
+    },
+    {
+      "heading": "How A Repair Starts",
+      "items": [
+        "Tell us what failed: the symptoms, equipment details and timing, with photos of the component and tag.",
+        "Define the repair: inspection, repair or replacement options, because the right scope comes before the work.",
+        "Put expertise to work: hydraulic repair, machining and system capabilities together for the needs of the job.",
+        "Plan the return: coordinate the next steps with the team so the equipment can get back to your operation."
+      ]
+    },
+    {
+      "heading": "Capability Sheets",
+      "text": "IMH publishes capability overviews for construction and heavy equipment, marine, ports and stevedoring, industrial manufacturing, oil and gas, and utility vehicles. Contact the shop to discuss current scope and availability."
+    },
+    {
+      "heading": "What To Send With An Inquiry",
+      "items": [
+        "Manufacturer, model and serial number",
+        "What the equipment is doing",
+        "Photos of the tag and damaged areas",
+        "Your location and required timing"
+      ]
+    },
+    {
+      "heading": "Useful Details By Service",
+      "items": [
+        "Cylinders: equipment type and cylinder application, photos of the cylinder, tag and visible damage, and what changed - leaks, drift, loss of force or damaged components.",
+        "Pumps and motors: manufacturer, model and serial number, the equipment application and operating symptoms, and photos of the nameplate and connections.",
+        "Valves: valve manufacturer and complete part number, photos of the tag, ports and electrical connectors, and a description of the motion or pressure issue.",
+        "Machining: drawings or dimensions when available, part material and application, and photos of the existing part and damaged areas.",
+        "Power units: the application and equipment the unit serves, existing pressure, flow and electrical details if known, and photos, drawings or the target outcome.",
+        "Automation and controls: photos of the existing panel and equipment, electrical diagrams or PLC details if available, and the fault symptoms and the operation you need to achieve.",
+        "Marine: the vessel or equipment application, gearbox, winch or component tag information, and the failure symptoms and required timing.",
+        "Field service: the site address and access requirements, equipment type and failure symptoms, and photos with your scheduling requirements."
+      ]
+    },
+    {
+      "heading": "Visiting The Shop",
+      "text": "The shop is at 15921 Pine Street, Santa Fe, TX 77517. Call ahead to coordinate a visit or an equipment drop-off."
+    },
+    {
+      "heading": "Scope And Pricing",
+      "text": "Scope, pricing and timing are confirmed with the IMH team. They depend on the component, its condition, the parts required and their availability."
+    }
+  ]
+}

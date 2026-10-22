@@ -1,0 +1,275 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "chiropractic",
+  "talk": "our front desk",
+  "name": "Os Physical Medicine, PLLC",
+  "shortName": "Os Physical Medicine",
+  "phone": "(281) 790-2222",
+  "email": "contact@osphysicalmedicine.com",
+  "address": "12450 East Freeway, Suite 130",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77015",
+  "license": "Dr. Elizabeth V. Barcenas is a Certified Medical Examiner registered with the Federal Motor Carrier Safety Administration (FMCSA).",
+  "hours": [
+    ["Mon – Fri", "8:00 AM – 5:00 PM"],
+    ["Saturday", "By appointment only"],
+    ["Sunday", "Closed"]
+  ],
+  "cta": {
+    "label": "Request an Appointment",
+    "text": "Schedule online. It's easy, fast and secure."
+  },
+  "brand": {
+    "primary": "#094c84",
+    "primaryDeep": "#06345a",
+    "accent": "#0ab285",
+    "ink": "#15202b",
+    "muted": "#56606d",
+    "surface": "#f4f7fa",
+    "cream": "#e8eef4",
+    "line": "#d8e2ea",
+    "heading": "'Montserrat', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/osphysicalmedicine/logo.webp",
+    "logoMono": "/brands/osphysicalmedicine/logo-mono.webp",
+    "logoWidth": 134,
+    "logoHeight": 58,
+    "logoRatio": 2.314,
+    "logoGround": "#ffffff",
+    "logoReads": [0.388, 0.252, 0.118, 0.1, 0.123, 0.318, 0.448, 0.582, 0.724, 0.865, 1.0]
+  },
+  "hero": {
+    "eyebrow": "Chiropractic care and DOT services on the East Freeway",
+    "title": "Chiropractic care, DOT exams and drug testing in one office.",
+    "lead": "We treat a wide variety of physical issues, such as migraines and headaches, chronic pain, carpal tunnel, pain due to injury or muscle strain, and much more.",
+    "points": [
+      "DOT exams and drug testing",
+      "Certified Medical Examiner, FMCSA",
+      "Schedule your appointment online"
+    ]
+  },
+  "overview": {
+    "title": "Services we provide",
+    "text": "Chiropractic treatment for drivers, workers and families, alongside the DOT exams and drug testing a commercial driver's license calls for."
+  },
+  "services": [
+    {
+      "slug": "chiropractic-care",
+      "title": "Chiropractic Care",
+      "icon": "bone",
+      "summary": "Hands-on, drug-free care for pain",
+      "text": "We treat a wide variety of physical issues, such as migraines and headaches, chronic pain, carpal tunnel, pain due to injury or muscle strain, and much more.",
+      "lead": "Chiropractic is a health care profession that focuses on disorders of the musculoskeletal system and the nervous system, and the effects of these disorders on general health. Chiropractic services are used most often to treat neuromusculoskeletal complaints, including but not limited to back pain, neck pain, pain in the joints of the arms or legs, and headaches.",
+      "image": "/brands/osphysicalmedicine/chiropractic",
+      "imageAlt": "A chiropractor working on a patient's upper back during a treatment session",
+      "covers": [
+        {
+          "title": "Examination and diagnosis",
+          "text": "Chiropractors practice a hands-on, drug-free approach to health care that includes a thorough patient examination, diagnosis, and treatment plan."
+        },
+        {
+          "title": "Exercise and lifestyle counseling",
+          "text": "Chiropractors have broad diagnostic skills and are also trained to recommend therapeutic and rehabilitative exercises, as well as to provide nutritional, dietary and lifestyle counseling."
+        },
+        {
+          "title": "Testing and imaging",
+          "text": "Chiropractors assess patients through clinical examination, laboratory testing, diagnostic imaging and other diagnostic interventions to determine when chiropractic treatment is or is not appropriate."
+        },
+        {
+          "title": "Referral and co-management",
+          "text": "Chiropractors will readily refer patients to the appropriate health care provider when chiropractic care is not suitable for the patient's condition, or the condition warrants co-management in conjunction with other health care providers."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Is chiropractic only for back pain?",
+          "a": "Chiropractic is not just for back pain either. Limb pain, numbness and weakness, headaches, and joint pain are things that chiropractors are trained to evaluate and address, if appropriate."
+        },
+        {
+          "q": "Can chiropractic work alongside medical treatment?",
+          "a": "In many cases, such as lower back pain, chiropractic care may be a patient's primary method of treatment. When other medical conditions exist, chiropractic services may complement or support medical treatment by relieving the musculoskeletal aspects associated with the condition."
+        }
+      ]
+    },
+    {
+      "slug": "dot-exams",
+      "title": "DOT Exams",
+      "icon": "stethoscope",
+      "summary": "Physicals for commercial drivers",
+      "text": "The DOT exam determines whether or not the driver is fit for work based on medical history, as well as current health status.",
+      "lead": "For commercial motor vehicle (CMV) drivers, the most important safety feature is you, the driver. The physical examination you take for your medical certificate confirms that you are healthy enough to safely perform the demanding job of a CMV driver and keep our nation's roads safe.",
+      "covers": [
+        {
+          "title": "Vision and hearing tests",
+          "text": "Carried out during the physical exam. Wear or bring your glasses and hearing aids."
+        },
+        {
+          "title": "Blood pressure check",
+          "text": "Taken as part of the DOT physical."
+        },
+        {
+          "title": "Urinalysis",
+          "text": "Collected as part of the DOT physical."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What should I bring to the DOT exam?",
+          "a": "Since you'll have to disclose your medical history, you should bring a list of any prescription medicines you are currently taking, including the dosage and any relevant lab work. You'll also need to remember to wear or bring your glasses or hearing aids."
+        }
+      ]
+    },
+    {
+      "slug": "dot-drug-testing",
+      "title": "DOT Drug Testing",
+      "icon": "truck",
+      "summary": "Testing under FMCSA and DOT rules",
+      "text": "The Federal Motor Carrier Safety Administration (FMCSA), along with the Department of Transportation (DOT), requires that persons subject to the commercial driver's license (CDL) requirements and their employers follow alcohol and drug testing rules.",
+      "lead": "The Federal Motor Carrier Safety Administration (FMCSA), along with the Department of Transportation (DOT), requires that persons subject to the commercial driver's license (CDL) requirements and their employers follow alcohol and drug testing rules. These rules include procedures for testing, frequency of tests, and substances tested for.",
+      "covers": [
+        {
+          "title": "Drivers and the people who employ them",
+          "text": "Anyone employing CDL drivers to operate commercial motor vehicles (CMVs) on public roads, and CDL drivers who operate CMVs on public roads."
+        },
+        {
+          "title": "Carriers and government",
+          "text": "Interstate motor carriers, intrastate motor carriers, and federal, state and local governments."
+        },
+        {
+          "title": "Civic and faith-based organizations",
+          "text": "Civic organizations such as disabled veteran transport and boy or girl scouts, and faith-based organizations."
+        },
+        {
+          "title": "The Clearinghouse",
+          "text": "The FMCSA established the Commercial Driver's License (CDL) Drug and Alcohol Clearinghouse, a database holding information on violations of the DOT controlled substances and alcohol testing program for holders of CDLs."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What should I bring for the drug exam?",
+          "a": "A picture ID and your company or employer contact information."
+        },
+        {
+          "q": "Who has to report to the Clearinghouse?",
+          "a": "The Clearinghouse rule requires FMCSA-regulated employers, medical review officers (MROs), substance abuse professionals (SAPs), consortia and third party administrators (C/TPAs), and other service agents to report information related to violations of the drug and alcohol regulations in 49 Code of Federal Regulations, Parts 40 and 382 by current and prospective employees."
+        }
+      ]
+    },
+    {
+      "slug": "pre-employment-drug-testing",
+      "title": "Pre-Employment Drug Testing",
+      "icon": "briefcase",
+      "summary": "12 panel rapid results urine test",
+      "text": "When an individual applies to a job, they may be subject to a pre-employment drug test once an offer of employment has been made. A urine test is the most common form of pre-employment testing and can be performed and read within minutes.",
+      "lead": "When an individual applies to a job, they may be subject to a pre-employment drug test once an offer of employment has been made. A urine test is the most common form of pre-employment testing and can be performed and read within minutes.",
+      "covers": [
+        {
+          "title": "A 12 panel rapid results test",
+          "text": "We offer a 12 panel rapid results test that includes the following drugs: marijuana (THC), cocaine (COC), amphetamines (AMP) and methamphetamines (MET), phencyclidine (PCP), opiates (OPI), ecstasy (MDMA), tricyclic antidepressants (TCA), barbiturates (BAR), benzodiazepines (BZO), methadone (MTD), and oxycodone (OXY)."
+        },
+        {
+          "title": "Why a urine test",
+          "text": "A urine test can show traces of drug use even after the effects of the drug have worn off, since they can remain in the body for an extended period of time. A urinalysis is the only method approved for federally mandated testing and is often chosen for both regulated and non-regulated employees."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What should I bring for the drug exam?",
+          "a": "A picture ID, and come with a full bladder."
+        }
+      ]
+    }
+  ],
+  "affiliations": {
+    "items": [
+      "Certified Medical Examiner registered with the Federal Motor Carrier Safety Administration (FMCSA)",
+      "Texas Chiropractic College"
+    ]
+  },
+  "about": {
+    "title": "About us",
+    "text": [
+      "Dr. Barcenas is native to Northern Mexico. Her passion for service to others led her to the chiropractic profession. Dr. Barcenas graduated from Texas Chiropractic College where she obtained her bachelor's in Human Biology and ultimately her Doctorate.",
+      "Dr. Barcenas is a Certified Medical Examiner registered with the Federal Motor Carrier Safety Administration (FMCSA). She strives to keep on helping our trucking community in any of their health concerns or needs.",
+      "The office is at 12450 East Freeway, Suite 130, Houston, and appointments are scheduled online."
+    ]
+  },
+  "team": [
+    {
+      "name": "Dr. Elizabeth V. Barcenas",
+      "role": "Chiropractor and Certified Medical Examiner",
+      "bio": "Dr. Barcenas is native to Northern Mexico. Her passion for service to others led her to the chiropractic profession. She graduated from Texas Chiropractic College where she obtained her bachelor's in Human Biology and ultimately her Doctorate, and she is a Certified Medical Examiner registered with the Federal Motor Carrier Safety Administration (FMCSA)."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I make an appointment?",
+      "a": "Schedule online. It's easy, fast and secure."
+    },
+    {
+      "q": "What should I bring for drug testing?",
+      "a": "Bring a photo ID. Trae tu identificación con foto."
+    },
+    {
+      "q": "What should I bring to a DOT exam?",
+      "a": "Bring your glasses, hearing aids, and medications. Traiga sus lentes, audífonos, y medicamentos."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Privacy Policy",
+      "text": "How the office handles the information you give it.",
+      "href": "https://www.canva.com/design/DAGrXQJAeGk/2txOPAM07nWwotdkMTaxog/view"
+    },
+    {
+      "title": "Terms and Conditions",
+      "text": "The terms you agree to when you use this office.",
+      "href": "https://www.termsfeed.com/live/073c63d7-e07a-4f39-be56-cdfded1316ea"
+    },
+    {
+      "title": "Consumer Complaints and Medical Records",
+      "text": "How to file a complaint and how to request your medical records.",
+      "href": "https://canva.link/yiya918peqy2i73"
+    },
+    {
+      "title": "What Is Chiropractic (American Chiropractic Association)",
+      "text": "The association's own explanation of what chiropractic treats.",
+      "href": "https://www.acatoday.org/Patients/Why-Choose-Chiropractic/What-is-Chiropractic"
+    },
+    {
+      "title": "Driver Medical Fitness for Duty (FMCSA)",
+      "text": "The federal medical requirements behind the DOT physical.",
+      "href": "https://www.fmcsa.dot.gov/medical/driver-medical-requirements/driver-medical-fitness-duty"
+    },
+    {
+      "title": "CDL Drug and Alcohol Clearinghouse (FMCSA)",
+      "text": "The federal database of drug and alcohol testing violations for CDL holders.",
+      "href": "https://www.fmcsa.dot.gov/regulations/commercial-drivers-license-drug-and-alcohol-clearinghouse"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "What to bring",
+      "items": [
+        "DOT drug testing: bring a photo ID. Trae tu identificación con foto.",
+        "Pre-employment drug testing: bring a photo ID. Trae tu identificación con foto.",
+        "DOT exams: bring your glasses, hearing aids, and medications. Traiga sus lentes, audífonos, y medicamentos."
+      ]
+    },
+    {
+      "heading": "Booking",
+      "text": "Schedule your appointment online at osphysicalmedicine.janeapp.com. It's easy, fast and secure."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/OsPhysicalMedicine",
+        "Instagram: instagram.com/osphysicalmedicine",
+        "TikTok: tiktok.com/@osphysicalmedicine"
+      ]
+    }
+  ]
+}
