@@ -367,6 +367,39 @@ def _faint_strips(arr, ground):
     return arr
 
 
+# A strip of words at the top or foot of the mark that would still be drawn
+# shorter than this, once the mark is drawn as tall as its header allows (a
+# two-line tagline under a badge, each line a tenth of it), is a smudge at that
+# size, and is cut away, so the rest of the mark is sized and drawn without it.
+STRIP_READS = 10
+
+
+def _small_strips(arr):
+    """The logo without a strip of words at its top or foot too small to read
+    at the size the header draws the mark."""
+    ink = arr[..., 3] > 32
+    rows = ink.any(axis=1)
+    edges = np.flatnonzero(np.diff(np.concatenate([[False], rows, [False]]).astype(np.int8)))
+    runs = [(start, stop) for start, stop in zip(edges[::2], edges[1::2]) if stop - start >= RULE_SHARE * len(rows)]
+    if len(runs) < 2:
+        return arr
+    h, w = arr.shape[:2]
+    _, height = drawn_size(w / h, strip_share(arr), h / SOURCE_OVER_DRAWN)
+    small = [(stop - start) * height / h < STRIP_READS for start, stop in runs]
+    # The mark itself is never cut away: what is cut is at most half of it.
+    top, foot = 0, len(runs)
+    while foot - top > 1 and small[foot - 1] and runs[foot - 1][0] - runs[0][0] >= 0.5 * h:
+        foot -= 1
+    while foot - top > 1 and small[top] and runs[foot - 1][1] - runs[top + 1][0] >= 0.5 * h:
+        top += 1
+    if (top, foot) == (0, len(runs)):
+        return arr
+    arr = arr.copy()
+    arr[:runs[top][0], :, 3] = 0
+    arr[runs[foot - 1][1]:, :, 3] = 0
+    return arr
+
+
 # A wash drawn behind or beside the mark in a pale tint of its ground (gray
 # swirls fading out behind a name on white) stands less than this contrast
 # ratio from that ground: on the header it is a smudge rather than part of the
@@ -722,7 +755,7 @@ def prepare(image):
     if best_share < LEGIBLE_SHARE:
         raise Unfit(f"too little of the logo stands out from its ground ({best_share:.0%} of it)")
 
-    arr = trim(_faint_strips(_wash(arr, best), best))
+    arr = trim(_small_strips(trim(_faint_strips(_wash(arr, best), best))))
     h, w = arr.shape[:2]
     ratio = w / h
     width, height = drawn_size(ratio, strip_share(arr), h / SOURCE_OVER_DRAWN)
@@ -764,7 +797,7 @@ def rework(image):
     if kind != "solid":
         on_white, on_dark = legibility(arr, WHITE), legibility(arr, DARK_GROUND)
         native = WHITE if on_white >= LEGIBLE_SHARE or on_white >= on_dark else DARK_GROUND
-    arr = trim(_faint_strips(_wash(arr, native), native))
+    arr = trim(_small_strips(trim(_faint_strips(_wash(arr, native), native))))
     h, w = arr.shape[:2]
     width, height = drawn_size(w / h, strip_share(arr), h / SOURCE_OVER_DRAWN)
     out = Image.fromarray(arr, "RGBA")

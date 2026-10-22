@@ -1,0 +1,612 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Danny's Landscaping",
+  "shortName": "Danny's Landscaping",
+  "summary": "A family-owned design-build landscaping company for Houston and Greater Houston: 2D and 3D design, then installation of landscape, hardscaping, lighting, irrigation, drainage and curb appeal.",
+  "phone": "(713) 514-3537",
+  "email": "danny@dannyslandscapingtx.com",
+  "address": "8619 Daycoach Ln",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77064",
+  "rating": 4.7,
+  "reviewCount": 113,
+  "since": 2013,
+  "hours": [
+    [
+      "Mon – Sat",
+      "7 AM – 5 PM"
+    ],
+    [
+      "Sun",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#2f6b3a",
+    "primaryDeep": "#1c4225",
+    "accent": "#c98a2e",
+    "ink": "#15201a",
+    "muted": "#56685b",
+    "surface": "#f1f6f0",
+    "line": "#d7e2d5",
+    "heading": "'Playfair Display', Georgia, serif",
+    "body": "'DM Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap",
+    "logo": "/brands/dannyslandscaping/logo.webp",
+    "logoMono": "/brands/dannyslandscaping/logo-mono.webp",
+    "logoWidth": 260,
+    "logoHeight": 60,
+    "logoRatio": 4.362,
+    "logoGround": "#14181f",
+    "logoReads": [
+      1.0,
+      0.99,
+      0.877,
+      0.764,
+      0.648,
+      0.532,
+      0.431,
+      0.336,
+      0.061,
+      0.107,
+      0.042
+    ]
+  },
+  "licenses": [
+    {
+      "label": "Texas landscaping license",
+      "number": "LI0029564"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Houston and Greater Houston",
+    "title": "Landscaping in Houston",
+    "titleAccent": "for homes built on clay.",
+    "lead": "Landscaping in Houston has to handle clay soil, Gulf heat and sudden heavy rain, not just a plant list. We are a family-owned design-build company that plans and installs outdoor spaces for real Houston conditions, from the first walk-through to the final walkthrough.",
+    "image": "/brands/dannyslandscaping/hero",
+    "imageAlt": "Finished Houston front beds with a stone border and new lawn after a landscape install"
+  },
+  "groups": [
+    {
+      "slug": "landscaping",
+      "title": "Landscaping",
+      "icon": "leaf",
+      "summary": "Design in 2D and 3D, installation, grading for clay, artificial turf, and sod or seeding.",
+      "intro": "Houston lots need more than a quick plant job. Expansive clay, Gulf heat and sudden storms mean the design, the grade, the turf and the install have to work together or the lot fails in the first season. We plan for that soil, install it, then walk the finished landscape with you.",
+      "image": "/brands/dannyslandscaping/landscaping",
+      "imageAlt": "Planted Houston beds with mulch, a stone edge and path lights",
+      "services": [
+        {
+          "slug": "landscape-design",
+          "title": "Landscape Design",
+          "icon": "compass",
+          "text": "A 2D layout, a 3D view and a custom plan that fits the lot. We design for Houston clay, grade, sun and shade, drainage and HOA rules before anyone digs.",
+          "points": [
+            "Site evaluation on your property",
+            "2D layout and a 3D view",
+            "Material and plant selection for Houston",
+            "Coordination with the install"
+          ]
+        },
+        {
+          "slug": "landscape-installations",
+          "title": "Landscape Installations",
+          "icon": "leaf",
+          "text": "A plan only works if the installation matches Houston conditions. We prepare the soil for expansive clay, place plants suited to heat and shade, and finish the work so the living landscape takes hold.",
+          "points": [
+            "Soil and bed preparation",
+            "Plant placement and installation",
+            "Mulch, edging and finish work",
+            "Coordination with irrigation and drainage"
+          ]
+        },
+        {
+          "slug": "grading-and-resloping",
+          "title": "Grading & Resloping",
+          "icon": "ruler",
+          "text": "Many Houston lots are nearly flat and sit on expansive clay. When the grade slopes toward the slab or settles into a bowl, water heads for the foundation instead of a safe outlet. Spreading a thin layer of topsoil does not fix the fall.",
+          "points": [
+            "Resloping, regrade and cut or fill",
+            "Compaction on expansive clay",
+            "Finish elevation for sod, a drain inlet or a hardscape subgrade",
+            "Grade first, then drainage or hardscape"
+          ]
+        },
+        {
+          "slug": "artificial-turf-installation",
+          "title": "Artificial Turf Installation",
+          "icon": "leaf",
+          "text": "Artificial turf on Houston clay only stays flat and usable if the base drains and the installation accounts for soil movement. Turf is only as good as the base underneath it.",
+          "points": [
+            "Base preparation and drainage",
+            "Turf selection and installation",
+            "Edge and finish work"
+          ]
+        },
+        {
+          "slug": "sod-and-seeding",
+          "title": "Sod & Seeding",
+          "icon": "leaf",
+          "text": "Proper grade, soil prep and establishment care so turf takes hold through heat and rain. St. Augustine, Bermuda and Zoysia are the types lots here usually compare, and the walk decides which one suits yours.",
+          "points": [
+            "Grade and surface preparation",
+            "Soil prep for clay",
+            "Sod placement, with a seeding option",
+            "After-care guidance at the walkthrough",
+            "All three grasses fail if the fall is wrong, so grade comes first"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hardscaping",
+      "title": "Hardscaping",
+      "icon": "home",
+      "summary": "Patios, walkways, retaining walls, steps, stone and concrete masonry, paving and water features.",
+      "intro": "Houston outdoor living needs hard surfaces that survive expansive clay, Gulf heat and sudden rain rather than looking good for one season. We design for soil movement and drainage, quote before we dig, and walk the finished work with you.",
+      "image": "/brands/dannyslandscaping/hardscaping",
+      "imageAlt": "A paver patio set in gravel beside a planted Houston fence line",
+      "services": [
+        {
+          "slug": "hardscapes",
+          "title": "Hardscapes",
+          "icon": "home",
+          "text": "Patio and outdoor living surfaces built on a compacted base with a planned drainage path. Skip the base prep or the drainage and the surface heaves, settles or traps water after the next Gulf storm.",
+          "points": [
+            "Base preparation",
+            "Drainage under and around the hardscape",
+            "Pavers or concrete finishes",
+            "Integration with the rest of the lot"
+          ]
+        },
+        {
+          "slug": "retaining-walls",
+          "title": "Retaining Walls",
+          "icon": "shield",
+          "text": "We walk the property, design for expansive soil and hydrostatic pressure, then install with a proper footer, reinforcement and a drainage envelope. Missing or clogged drainage behind the wall is the leading cause of failure on Houston clay.",
+          "points": [
+            "Footer and base set to depth",
+            "Gravel backfill, filter fabric, perforated pipe and weeps",
+            "Geogrid reinforcement where height or load requires it",
+            "Segmental block, often the practical face for Houston clay",
+            "We do not send water onto a neighbor's lot, and we do not claim a PE stamp we do not have"
+          ]
+        },
+        {
+          "slug": "outdoor-water-features",
+          "title": "Outdoor Water Features",
+          "icon": "waves",
+          "text": "Fountains and features built with the base, structure and circulation the hardscape needs, so clay movement does not crack a liner or shift a basin. We do not install swimming pools.",
+          "points": [
+            "Base and structure with waterproofing or a liner",
+            "Pumps and filtration sized for Houston heat",
+            "Planned electrical and pump access"
+          ]
+        },
+        {
+          "slug": "walkway-landscaping",
+          "title": "Walkway Landscaping",
+          "icon": "leaf",
+          "text": "Walkway landscaping is the living frame that has to work with the hard surface rather than against it. Plants are chosen for reflected heat and for clay that stays wet or compacted next to a hard edge.",
+          "points": [
+            "Plant selection for walk edges",
+            "Soil and bed preparation",
+            "Irrigation that reaches the edge without overspray on the walk"
+          ]
+        },
+        {
+          "slug": "outdoor-steps",
+          "title": "Outdoor Steps",
+          "icon": "ruler",
+          "text": "Steps built for clay and slope, with the base, drainage and structure to stay level and safe. Consistent rise and run, and a landing where the run needs one.",
+          "points": [
+            "Base and footing set below heave depth",
+            "Drainage so treads do not hold water",
+            "Segmental block, concrete or stone finishes"
+          ]
+        },
+        {
+          "slug": "stone-masonry",
+          "title": "Stone Masonry",
+          "icon": "home",
+          "text": "Natural stone built as a system for Houston soil rather than stacked for looks, so it holds through wet and dry cycles. Dry-stack, mortared or hybrid methods are chosen for the application and the movement expected.",
+          "points": [
+            "Base and foundation",
+            "Drainage detailing",
+            "Stone selection and installation"
+          ]
+        },
+        {
+          "slug": "concrete-masonry",
+          "title": "Concrete Masonry",
+          "icon": "home",
+          "text": "Formed concrete, block and decorative finishes designed for expansive clay, with the base, reinforcement and control joints sized for the soil and the element. We do not pour garage floors or chimneys; this is lot and outdoor living work.",
+          "points": [
+            "Formed concrete for low walls, seats, edges and pads",
+            "CMU block work for outdoor exposure",
+            "Decorative finishes",
+            "Control joints sized to the element"
+          ]
+        },
+        {
+          "slug": "driveway-or-walkway-paving",
+          "title": "Driveway & Walkway Paving",
+          "icon": "car",
+          "text": "Paving on clay with the base and drainage to hold under load and rain. Vehicle loads need a deeper or stronger base than a patio, and edges need proper restraint to keep the surface tight.",
+          "points": [
+            "Base preparation, deeper where vehicles run",
+            "Drainage at the edges",
+            "Surface and edge restraint"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "drainage",
+      "title": "Drainage",
+      "icon": "droplets",
+      "summary": "French drains, catch basins, channel drains and whole-lot systems for clay that stays saturated.",
+      "intro": "When a Houston storm leaves the lawn soft for days, water reappears in the same low spots, or beds stay wet near the foundation, that is a drainage problem rather than a sprinkler leak. We diagnose surface against subsurface water, plan a real outlet, then install. Foundation movement is a different specialty; we handle the lot water that contributes to wet conditions around the house.",
+      "image": "/brands/dannyslandscaping/drainage",
+      "imageAlt": "A channel drain set between a Houston walk and the lawn",
+      "services": [
+        {
+          "slug": "french-drains",
+          "title": "French Drains",
+          "icon": "droplets",
+          "text": "A properly graded trench with perforated pipe, washed gravel and filter fabric, sending water to a real outlet. The outlet comes first: a French drain with nowhere to send water becomes a long buried reservoir that eventually fails.",
+          "points": [
+            "Perforated pipe at a consistent fall",
+            "Washed angular gravel and filter fabric",
+            "Cleanouts for access",
+            "A real outlet: street, ditch, pop-up emitter or approved discharge point"
+          ]
+        },
+        {
+          "slug": "yard-drains-catch-basins",
+          "title": "Yard Drains & Catch Basins",
+          "icon": "droplets",
+          "text": "A grated inlet set at the real low spot, with a sediment chamber and solid pipe to a safe outlet. Houston leaf load and silt from clay make the chamber and the clean-out essential, because a simple hole with a grate will silt shut.",
+          "points": [
+            "Grated inlet set at the actual low point",
+            "Sediment chamber",
+            "Solid, not perforated, discharge pipe",
+            "Clean-out access"
+          ]
+        },
+        {
+          "slug": "channel-drains",
+          "title": "Channel Drains",
+          "icon": "waves",
+          "text": "A continuous grated channel for driveways, patio edges and walks, collecting sheet flow and carrying it in solid pipe to a safe outlet. A channel set high or without fall simply creates a long puddle.",
+          "points": [
+            "Polymer or concrete channel with a compatible grate",
+            "Proper slope inside the channel",
+            "Solid-wall discharge pipe",
+            "End caps, outlets and clean-out access"
+          ]
+        },
+        {
+          "slug": "water-drain-systems",
+          "title": "Water Drain Systems",
+          "icon": "gauge",
+          "text": "A whole-lot plan for properties with several water problems, combining French drains, catch basins, channel drains and outlets into one coordinated system. Previous single-point fixes often only moved the problem.",
+          "points": [
+            "The outlet or storage is planned first",
+            "Elevations and fall verified so water keeps moving",
+            "Fabric and gravel envelopes protect the system from clay fines",
+            "Sized to the actual wet zones, not a generic grid",
+            "The goal is a usable lot and controlled movement of water, not every drop in every storm"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "irrigation",
+      "title": "Irrigation",
+      "icon": "droplets",
+      "summary": "New sprinkler systems designed for clay and heat, plus maintenance and repair when zones fail.",
+      "intro": "Houston landscapes need water delivered on a schedule that matches clay soil and Gulf heat, not a system that floods one bed and starves another. In-ground irrigation is a regulated trade in Texas under TCEQ rules, and a new system needs a licensed design and a testable backflow assembly. Standing water after rain is drainage, not irrigation.",
+      "image": "/brands/dannyslandscaping/irrigation",
+      "imageAlt": "An established Houston lawn with irrigation covering the front",
+      "services": [
+        {
+          "slug": "irrigation-system-installation",
+          "title": "Irrigation System Installation",
+          "icon": "droplets",
+          "text": "We map zones for turf against beds, match heads to the plant material, include a testable backflow assembly, and set the controller for cycle-and-soak on clay. Expansive clay does not accept water quickly, so long single run times produce runoff and waste.",
+          "points": [
+            "Zoning that matches the plant material",
+            "Cycle-and-soak programming for Houston clay",
+            "Testable backflow assembly, with the first test part of the install",
+            "Pipe-pull, narrow slit or open trench discussed before we open the lawn",
+            "A rain sensor or Wi-Fi controller can be included on the quote"
+          ]
+        },
+        {
+          "slug": "irrigation-system-maintenance",
+          "title": "Irrigation Maintenance & Repair",
+          "icon": "wrench",
+          "text": "When a zone will not turn on, a head is broken, or the controller has stopped making sense, the system needs repair rather than a brand-new install. We locate leaks, correct coverage and put the zone map right.",
+          "points": [
+            "Head replacement, adjustment and raising or lowering for grade changes",
+            "Valve and solenoid repair or replacement",
+            "Controller reprogramming, battery or unit replacement",
+            "Lateral and mainline leak location and repair",
+            "Start-up and winterization guidance for Houston winters",
+            "Backflow testing coordination, which is often required annually"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "lighting",
+      "title": "Outdoor Lighting",
+      "icon": "lightbulb",
+      "summary": "Low-voltage landscape lighting planned with the beds, walks and hardscape.",
+      "intro": "When the lot disappears after dark the walks become hazards and the front beds lose their curb appeal. We plan low-voltage lighting with the landscape so paths stay safe and the house still looks finished after sunset, then review the aim with you after dark. We install low-voltage landscape lighting; high-voltage house wiring is a different trade.",
+      "services": [
+        {
+          "slug": "outdoor-lighting",
+          "title": "Outdoor Lighting",
+          "icon": "lightbulb",
+          "text": "Fixtures placed with the beds, walks and hardscape rather than added as a leftover string at the end. Mature trees and canopies make aiming and placement matter, so we walk the site at dusk where we can and adjust after the install.",
+          "points": [
+            "Path and step lights for safe circulation",
+            "Uplights for trees, specimen plants and architectural features",
+            "Accent and wash lights for beds and walls",
+            "Transformer and low-voltage wiring sized to the layout",
+            "A walkthrough after dark to review the effect and adjust the aim"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "curb-appeal",
+      "title": "Curb Appeal",
+      "icon": "sun",
+      "summary": "Street-facing planting, seasonal color, garden décor and planned front makeovers.",
+      "intro": "The street view is the first impression, and tired beds, a blank walk or missing color are curb-appeal problems. We work with clay and the Gulf climate so the front reads complete from the street and holds its shape through the heat.",
+      "image": "/brands/dannyslandscaping/curb-appeal",
+      "imageAlt": "A Houston brick home with boxwoods, a stone border and finished front beds",
+      "services": [
+        {
+          "slug": "curb-appeal",
+          "title": "Curb Appeal",
+          "icon": "sun",
+          "text": "Colour, structure and finish that make the property read complete from the street, for a front that still looks unfinished after the beds are planted and the walk is in.",
+          "points": [
+            "Structured foundation and bed plantings that hold shape in Houston heat",
+            "Seasonal color that keeps the front looking active",
+            "Clean edges, mulch and transitions to hardscape and lawn",
+            "Coordination with lighting and hardscape so the night view also works"
+          ]
+        },
+        {
+          "slug": "annual-planting",
+          "title": "Annual Planting",
+          "icon": "leaf",
+          "text": "Houston's long growing season and intense heat mean annuals have to be selected and planted for local conditions, not just the first week of bloom. This is planned seasonal color rather than a one-week flower drop.",
+          "points": [
+            "Heat-tolerant annuals selected for sun or shade",
+            "Clay beds amended so roots can establish",
+            "Planted at the right density for the street view",
+            "Establishment watering notes left with you",
+            "Exact plants are chosen on the site walk, not from a generic catalog"
+          ]
+        },
+        {
+          "slug": "garden-decorations",
+          "title": "Garden Decorations",
+          "icon": "home",
+          "text": "Pots, accents and decorative elements chosen and placed to belong with the planting and hardscape. We favor outdoor-rated materials that hold up in Houston heat and humidity rather than temporary clutter that fades after one summer.",
+          "points": [
+            "Selection and placement of pots and accents",
+            "Outdoor-rated materials for heat and humidity",
+            "Placed to read from the street without crowding the beds"
+          ]
+        },
+        {
+          "slug": "customized-solutions",
+          "title": "Customized Solutions",
+          "icon": "clipboard",
+          "text": "Every street view is different, so architecture, HOA rules, sun patterns and the rest of the landscape plan shape a tailored front rather than a one-size street package.",
+          "points": [
+            "Structured planting, seasonal color and décor combined to suit the house",
+            "Clean edges and mulch, with minor hardscape or lighting coordination",
+            "Matched to architecture, HOA rules and clay-site conditions"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "The crew",
+    "title": "Built from hands-on experience, hard work and a passion for outdoor spaces.",
+    "text": [
+      "Danny's Landscaping was built from hands-on experience, hard work and a genuine passion for creating outdoor spaces our clients can enjoy for years to come. Shortly after graduating from high school, Danny began his career in the landscaping industry working for a local company, where he gained valuable experience in every aspect of the business. From designing landscape projects and managing crews to overseeing installations and providing excellent customer service, those early years helped shape the standards and attention to detail that would later become the foundation of Danny's Landscaping.",
+      "In 2013, Danny took that experience and started his own company with a commitment to providing homeowners with professional service, quality workmanship and a more personal approach to landscaping. Today, Danny's Landscaping is a family-owned and operated company proudly serving Houston and the Greater Houston area. We specialize in complete landscape projects including landscape design and installation, irrigation, outdoor lighting, drainage and ongoing landscape maintenance.",
+      "Whether we are transforming an entire property or improving an existing outdoor space, our goal is to provide thoughtful design, dependable communication and quality work from the initial consultation through the final walkthrough. We are family-owned and locally owned, licensed and insured under LI0029564, and we do not sell weekly mowing or lawn-care routes."
+    ],
+    "image": "/brands/dannyslandscaping/about",
+    "imageAlt": "A flagstone walk and planted beds finished at a Houston cottage",
+    "values": [
+      {
+        "title": "Design you can see",
+        "text": "2D and 3D plans for Houston lots, so you can review the landscape before anyone moves dirt."
+      },
+      {
+        "title": "Itemized estimates",
+        "text": "A walk of the property, then a quote with line items. No surprise invoice."
+      },
+      {
+        "title": "Family-owned in Houston",
+        "text": "Locally owned. We design and install, and we do not sell mowing routes."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Do you handle landscaping projects from design through install?",
+      "a": "Yes. We are a design-build landscaping company serving Houston and Greater Houston. We start with an on-property consultation, then 2D and 3D design plus an itemized estimate, then installation and a final walkthrough with care guidance for the homeowner."
+    },
+    {
+      "q": "Are you licensed and insured?",
+      "a": "Yes. Danny's Landscaping is a licensed and insured team, and our published license number is LI0029564. Irrigation work in Texas is a regulated trade, and we discuss that on the irrigation pages rather than invent extra credentials here."
+    },
+    {
+      "q": "How much does landscaping cost in Houston?",
+      "a": "Most landscaping in Houston is scoped by what the lot needs first: grade, drainage, materials, and how much of the yard you change. A small bed refresh is a different job than a patio, lighting and drainage package. We do not publish a one-size price list because clay, flat lots and water paths change the work. The consultation and estimate are free, and you get an itemized quote before anyone digs."
+    },
+    {
+      "q": "How long does a landscaping project take?",
+      "a": "Weather and scope set the calendar, and we will not invent a day-count promise. The sequence you can count on is consultation, custom design and quote, professional installation, then a final walkthrough."
+    },
+    {
+      "q": "Why does every Houston landscaper talk about drainage?",
+      "a": "Greater Houston soil is heavy clay. Rain can sit on a flat lot and push moisture toward a slab. If water stands or runs at the house, drainage is where the job starts."
+    },
+    {
+      "q": "Do you install and repair irrigation?",
+      "a": "Yes. New zones when the landscape changes, and repair when a system wastes water or leaves dry spots. We do not offer 24/7 emergency leak response."
+    },
+    {
+      "q": "Do you mow lawns or offer weekly lawn care?",
+      "a": "No. Danny's Landscaping is a landscaping company, not a lawn-care route. We install sod and irrigation as part of a project. Care at the end of a job is walkthrough guidance for the homeowner, not a mowing subscription."
+    },
+    {
+      "q": "Can I see the design before you install?",
+      "a": "Yes. Landscape design in 2D and 3D is a signature service. You review the drawing and an itemized estimate before installation starts."
+    },
+    {
+      "q": "Do you work homes and commercial lots?",
+      "a": "Yes. Homes, commercial properties and custom builders, across Houston and Greater Houston."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Heights",
+    "Memorial",
+    "Bellaire",
+    "West University Place",
+    "Southside Place",
+    "Spring Valley Village",
+    "Hilshire Village",
+    "Bunker Hill Village",
+    "Hedwig Village",
+    "Hunters Creek Village",
+    "Katy",
+    "Cinco Ranch",
+    "Fulshear",
+    "Brookshire",
+    "Cumings",
+    "Hockley",
+    "Cypress",
+    "Tomball",
+    "Spring",
+    "The Woodlands",
+    "Oak Ridge North",
+    "Jersey Village",
+    "Sugar Land",
+    "Meadows Place",
+    "Sienna",
+    "Pecan Grove",
+    "Pearland",
+    "Friendswood",
+    "League City",
+    "Seabrook",
+    "Nassau Bay",
+    "El Lago",
+    "Taylor Lake Village"
+  ],
+  "reviews": [
+    {
+      "author": "Joseph Alexander",
+      "text": "Accurate bid, very easy to work with, clear lines of communication, show up when they say they are, finished within schedule around our crazy Houston weather."
+    },
+    {
+      "author": "Gigi Hernandez",
+      "text": "Professional, dependable, and detail oriented. Danny and his team did an amazing job on our new home's landscaping, including beautiful low-maintenance flower beds and a sprinkler system."
+    },
+    {
+      "author": "Ivan Sue",
+      "text": "Danny's team did a great job replacing our concrete walkway with cobblestone. They were attentive to details and made sure the adjoining landscape was cleaned up and manicured to look amazing."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "How a job runs",
+      "items": [
+        "Consultation and vision. We start with a conversation at your property, listen to your ideas, assess your needs and shape a clear vision for the project.",
+        "Custom design and quote. A detailed design, often including 2D or 3D visuals, with a transparent itemized quote.",
+        "Professional installation. The crew brings the design to life, from ground prep to the final plant.",
+        "Final walkthrough and care. We walk the finished work with you and leave guidance to keep the landscape thriving."
+      ]
+    },
+    {
+      "heading": "Free consultation",
+      "text": "The consultation and the estimate are free, and you get an itemized quote before anyone digs. Quotes are estimates until we walk the site."
+    },
+    {
+      "heading": "Work requests and the client hub",
+      "text": "New work requests and the client hub for existing clients both run through Jobber, at clienthub.getjobber.com/hubs/22a4267a-e576-488a-88b0-f788ce73bedd/public/requests/4825718/new."
+    },
+    {
+      "heading": "After you get in touch",
+      "items": [
+        "We get back to you, set a visit and walk the property, then follow with 2D or 3D drawings and an itemized estimate.",
+        "No pressure selling on the walk.",
+        "If the job is not a fit, including lawn-care-only requests, we say so."
+      ]
+    },
+    {
+      "heading": "Other work we have done",
+      "items": [
+        "Bermuda lawn top dressing",
+        "Fall seasonal maintenance",
+        "Gravel and paver side yards and walkways",
+        "Custom stone border edging",
+        "Landscaping around an existing pool",
+        "Full front yard transformations and back yard landscaping"
+      ]
+    },
+    {
+      "heading": "What we are built on",
+      "text": "We are a family-owned business founded on a commitment to quality, integrity and customer satisfaction."
+    },
+    {
+      "heading": "Text is preferred",
+      "text": "Call or text (713) 514-3537, or email danny@dannyslandscapingtx.com. We come to your Houston or Greater Houston property rather than a showroom. Tell us the city, what is failing on the lot, and when we can walk it."
+    },
+    {
+      "heading": "Work we do not take on",
+      "items": [
+        "We are not a 24/7 emergency service.",
+        "No weekly mowing or lawn-care routes.",
+        "No tree services.",
+        "No swimming pools, outdoor kitchens, patio covers or pool decks as standalone lines.",
+        "No holiday lighting packages or security-only systems.",
+        "No structural foundation repair or foundation waterproofing."
+      ]
+    },
+    {
+      "heading": "Licensed and insured",
+      "text": "Fully insured and licensed under Texas landscaping license LI0029564, family-owned and locally owned in Houston since 2013."
+    },
+    {
+      "heading": "Who we work for",
+      "text": "Homeowners, custom builders and commercial properties across Houston and Greater Houston, from Fulshear to The Woodlands and the Heights to Pearland."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/dannyslandscapingtx",
+        "Instagram: instagram.com/dannyslandscapingtx",
+        "Google: g.page/r/CQGeJdv7iaTsEBM/review"
+      ]
+    }
+  ]
+}

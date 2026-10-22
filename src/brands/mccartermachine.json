@@ -1,0 +1,535 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "McCarter Machine a Division of MZA Associates Corporation",
+  "shortName": "McCarter Machine",
+  "summary": "Precision machining, design, fabrication and Single Crystal Si components from a 10,000 sq. ft. shop in La Porte, fifteen minutes east of Houston.",
+  "phone": "(281) 476-4716",
+  "email": "shawn.praus@mccarteret.com",
+  "address": "1312 Underwood Rd",
+  "town": "La Porte",
+  "state": "TX",
+  "zip": "77571",
+  "since": 1981,
+  "hours": [
+    [
+      "Mon – Thu",
+      "5 AM – 4 PM"
+    ],
+    [
+      "Fri – Sun",
+      "Emergencies only"
+    ]
+  ],
+  "brand": {
+    "primary": "#b4121d",
+    "primaryDeep": "#7a0c14",
+    "accent": "#f2a900",
+    "ink": "#16191d",
+    "muted": "#5b6670",
+    "surface": "#f6f4f3",
+    "line": "#e1dedb",
+    "heading": "'Barlow Condensed', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/mccartermachine/logo.webp",
+    "logoMono": "/brands/mccartermachine/logo-mono.webp",
+    "logoWidth": 183,
+    "logoHeight": 48,
+    "logoRatio": 3.822,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.496,
+      0.491,
+      0.494,
+      0.503,
+      0.29,
+      0.312,
+      0.324,
+      0.726,
+      0.806,
+      0.9,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Precision machining in La Porte, Texas",
+    "title": "Precision machining, design and fabrication",
+    "titleAccent": "since 1981.",
+    "lead": "A full service, start to finish precision machine shop that specializes in rapid turnarounds for commercial, industrial and government entities. Call or email for a quote.",
+    "image": "/brands/mccartermachine/hero",
+    "imageAlt": "A machinist working on a long screw conveyor shaft on the McCarter shop floor"
+  },
+  "groups": [
+    {
+      "slug": "precision-machining",
+      "title": "Precision Machining",
+      "icon": "settings",
+      "summary": "Turnkey manufacturing of precision parts to your specification, on CNC and manual machines.",
+      "intro": "McCarter is a full service, start to finish precision machine shop. CNC and manual machines run alongside each other, so the same job can be set up for mass production or for the one off that no one else has. Our goal is to provide rapid and reliable precision work to enhance our customers' systems in a measurable way.",
+      "image": "/brands/mccartermachine/machining",
+      "imageAlt": "A CNC vertical machining center on the McCarter shop floor",
+      "services": [
+        {
+          "slug": "cnc-machining",
+          "title": "CNC Machining",
+          "icon": "settings",
+          "text": "Turnkey manufacturing of precision parts to customer specifications, in small to medium diameters and lengths.",
+          "points": [
+            "3 and 4 axis mills, 3 axis lathe",
+            "PSQ shaft, flanges, housings and rings",
+            "Large or small run manufacturing",
+            "Set up for mass production or a one off"
+          ]
+        },
+        {
+          "slug": "manual-machining",
+          "title": "Manual Machining",
+          "icon": "wrench",
+          "text": "Sometimes a computer just doesn't cut it, and that is where our experienced manual mill machinists come in.",
+          "points": [
+            "Manual lathes, mills, grinders and saws",
+            "Fixtures for manufacturing and shipping"
+          ]
+        },
+        {
+          "slug": "close-tolerances",
+          "title": "Close Tolerances",
+          "icon": "gauge",
+          "text": "We hold close tolerances across common and exotic alloys, plastics, ceramics and aluminums.",
+          "points": [
+            "+/- .0001\" diameters",
+            "¼ arc second angles",
+            "Standard 8 RMS finishing"
+          ]
+        },
+        {
+          "slug": "water-jet",
+          "title": "Large Capacity 5 Axis Water Jet",
+          "icon": "droplets",
+          "text": "With our large capacity 3D 5 axis water jet we can handle your projects up to 5' x 10' x 12\" thick.",
+          "points": [
+            "Cutting capacity of 5' x 10' x 12\" thick material"
+          ]
+        },
+        {
+          "slug": "gears-and-broaching",
+          "title": "Custom Gears and Keyway Broaching",
+          "icon": "settings",
+          "text": "Custom gears can be difficult to obtain. Large or small, McCarter can replicate gears to your specification and broach keyways to your precise specification.",
+          "points": [
+            "Specialty and replacement gears",
+            "Keyways broached to specification"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "replica-parts-and-repair",
+      "title": "Replica Parts and Repair",
+      "icon": "wrench",
+      "summary": "Steel and alloy machining of replica replacement parts for new and obsolete systems, and repair of the broken ones.",
+      "intro": "Since 1981 we have provided machining and repair services to the local petrochemical industries in and around the Houston Ship Channel area. We manufacture obsolete parts from a customer sample, particularly when drawings are no longer available or repairs are needed. Our attitude is \"No Print, No Problem\".",
+      "image": "/brands/mccartermachine/repair",
+      "imageAlt": "A machinist running a part on a manual lathe at McCarter",
+      "services": [
+        {
+          "slug": "precision-replica",
+          "title": "Precision Replica Replacement Parts",
+          "icon": "settings",
+          "text": "We fabricate precision replica replacement parts such as sleeves, shafts, bearings, bushings, plugs, rings, nuts, couplings, plates, spacers, stuffing boxes, valves and collars.",
+          "points": [
+            "Steel, brass and bronze, super alloys and inconels",
+            "Stainless steel, monel, titanium and aluminum",
+            "Plastics, ceramics, glasses, composites and tellurium copper",
+            "Parts for new and obsolete systems"
+          ]
+        },
+        {
+          "slug": "repair-services",
+          "title": "Repair Services",
+          "icon": "wrench",
+          "text": "Repair services including the repair and replacing of broken or non-working parts, with drawings of fabricated parts provided.",
+          "points": [
+            "Troubleshooting",
+            "Machinery retrofitting",
+            "Drawings supplied from a sample"
+          ]
+        },
+        {
+          "slug": "balancing-and-straightening",
+          "title": "Dynamic Balancing and Shaft Straightening",
+          "icon": "gauge",
+          "text": "We offer dynamic balancing for rotating assemblies and shaft straightening services.",
+          "points": [
+            "Dynamic balancing up to 500 lbs",
+            "Shaft straightening up to Ø17\" x 10' L"
+          ]
+        },
+        {
+          "slug": "welding",
+          "title": "In-House Welding",
+          "icon": "flame",
+          "text": "McCarter has in house MIG, TIG and Stick welders capable of welding your most difficult aluminum, stainless or steel alloy needs.",
+          "points": [
+            "MIG, TIG and Stick",
+            "Aluminum, stainless and other steels"
+          ]
+        },
+        {
+          "slug": "field-service",
+          "title": "Field Installation and Troubleshooting",
+          "icon": "clipboard",
+          "text": "Fabrication and fit check of assemblies in the shop, and installation and troubleshooting out in the field.",
+          "points": [
+            "Fabrication and fit check of assemblies",
+            "Field installation and troubleshooting"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "design-and-fabrication",
+      "title": "Design and Fabrication",
+      "icon": "compass",
+      "summary": "CAD/CAM design, drawing packages and material substitutions, including parts that arrive with no print at all.",
+      "intro": "We will actively participate in our customer's projects and assist with problem-solving to bring improvements into reality through material substitutions and design for manufacturability. Customers bring in broken parts and we provide a new sketch or CAD print and a new part, saving them money and costly downtime.",
+      "image": "/brands/mccartermachine/fabrication",
+      "imageAlt": "A custom herringbone gear machined at McCarter",
+      "services": [
+        {
+          "slug": "cad-design",
+          "title": "CAD/CAM Design",
+          "icon": "ruler",
+          "text": "We are proficient in solid modeling and supply technical drawing packages with the parts we make.",
+          "points": [
+            "Proficient in solid modeling",
+            "Technical drawing packages",
+            "Drawings of fabricated parts provided"
+          ]
+        },
+        {
+          "slug": "no-print-no-problem",
+          "title": "No Print, No Problem",
+          "icon": "clipboard",
+          "text": "Bring in a broken part and we provide a new sketch or CAD print and a new part, even when drawings are no longer available.",
+          "points": [
+            "Drawings supplied from your sample",
+            "Obsolete parts reproduced"
+          ]
+        },
+        {
+          "slug": "material-substitution",
+          "title": "Material Substitution Analysis",
+          "icon": "chart",
+          "text": "We specialize in assisting with design changes and material substitutions so that our customers' systems run more reliably.",
+          "points": [
+            "Material substitution analysis",
+            "Concept analysis for manufacturability",
+            "Exotic materials found and sourced"
+          ]
+        },
+        {
+          "slug": "assemblies-and-fixtures",
+          "title": "Assemblies and Fixtures",
+          "icon": "settings",
+          "text": "Fabrication and fit check of assemblies, with fixtures built for manufacturing and for shipping.",
+          "points": [
+            "Fabrication and fit check of assemblies",
+            "Fixtures for manufacturing and shipping",
+            "Machinery retrofitting"
+          ]
+        },
+        {
+          "slug": "prototypes",
+          "title": "Prototype Development, Testing and Evaluation",
+          "icon": "compass",
+          "text": "Whether you need a quick repair, a one-off product, industrial manufacturing or help bringing your product to life, McCarter can help.",
+          "points": [
+            "Prototype development, testing and evaluation",
+            "One-off products and industrial manufacturing"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "single-crystal-silicon",
+      "title": "Single Crystal Si",
+      "icon": "circuit",
+      "summary": "Single Crystal Si optics, structures and semiconductor components, made with patented and proprietary processes.",
+      "intro": "We manufacture Single Crystal Si components for the semiconductor and defense markets, and our success is possible due to the proprietary and patented processes we developed specifically for Single Crystal Si. We fabricate Single Crystal Si structures and optics with near zero surface damage and residual stress, net shaped and ready for optical finishing.",
+      "image": "/brands/mccartermachine/silicon",
+      "imageAlt": "A silicon wafer with a grid of microchip dies",
+      "services": [
+        {
+          "slug": "silicon-optics",
+          "title": "Silicon Optics and Structures",
+          "icon": "circuit",
+          "text": "Single Crystal Si optics and optical substrates, offered as the choice material even over beryllium, aluminum and zerodur, from small simple planar parts to large-scale and complex designs.",
+          "points": [
+            "Does not creep or jitter over time or during use",
+            "Stable in dynamic vibration, cryocycling and nuclear exposure",
+            "Used in high power laser optics and telescope optics",
+            "Expertise began with a Silicon Validation Study in 1999"
+          ]
+        },
+        {
+          "slug": "patented-superfinishing",
+          "title": "Patented Superfinishing",
+          "icon": "gauge",
+          "text": "Conventional machining of a raw Single Crystal Si boule induces surface and subsurface damage. Our patented superfinishing method provides a finish ready for single point diamond turning and final polishing.",
+          "points": [
+            "≤5um of subsurface damage",
+            "Near net shaped, reducing or eliminating lapping",
+            "Remaining damage removed by acid etching",
+            "Tested at Argonne National Laboratory"
+          ]
+        },
+        {
+          "slug": "glass-frit-bonding",
+          "title": "Glass Frit Bonding",
+          "icon": "shield",
+          "text": "Our proprietary glass frit bonding method produces lightweight, large scale and complex Single Crystal Si structures and optics, built up beyond the size of an available boule.",
+          "points": [
+            "Blanks built up to sizes in excess of one meter",
+            "No 300mm size limitation",
+            "Five-year plus optical stability performance record",
+            "Mirrors manufactured in four weight categories"
+          ]
+        },
+        {
+          "slug": "metal-inserts",
+          "title": "Metal Inserts for Silicon",
+          "icon": "plug",
+          "text": "Frit bonded 39NiFe inserts attach Single Crystal Si optics directly into metal hardware, eliminating mounting cans, fixtures and the cost and weight that come with them.",
+          "points": [
+            "39NiFe, a cryostable interface material",
+            "Built-in flexure design for radial and torsional movement",
+            "Rigid inserts tested to NASA flight requirements",
+            "Modular, allowing auto-alignment at assembly",
+            "Joint designed to act as a metallurgical joint, not a mechanical one"
+          ]
+        },
+        {
+          "slug": "semiconductor-parts",
+          "title": "Semiconductor Replacement Parts",
+          "icon": "circuit",
+          "text": "We first fabricated silicon components in 1988 when a local semiconductor company needed replacement parts made from silicon for their silicon-pulling equipment in order to maintain purity.",
+          "points": [
+            "Complex shapes with very close tolerances",
+            "Parts for the semiconductor and defense markets"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "A 10,000 sq. ft. shop fifteen minutes east of Houston.",
+    "text": [
+      "McCarter operates a 10,000 sq. ft. clean, fully-equipped facility fifteen minutes east of Houston, Texas, with separate cleanroom, manufacturing, laboratory, etching, welding, painting and conferencing areas.",
+      "The McCarter team is a multi-talented, efficient workforce with the proven ability to provide fast response to the complicated and critical needs of our customers. Most of the team has been with McCarter for many years and have weathered the ups and downs of growing a small business. That can-do attitude has given us a reputation for accomplishing tasks that others hesitate to attempt.",
+      "In October 2021, MZA Associates Corporation acquired full interest in McCarter Machine, Inc. McCarter is operated out of its longtime La Porte, Texas facility as a Division of MZA."
+    ],
+    "image": "/brands/mccartermachine/shop",
+    "imageAlt": "The McCarter shop floor in La Porte, Texas",
+    "values": [
+      {
+        "title": "Parts that work on delivery",
+        "text": "We plan for success by providing quality parts that work on delivery, and by taking what we know and incorporating it into other projects."
+      },
+      {
+        "title": "Speed and flexibility",
+        "text": "We focus on speed and flexibility to meet our customer's needs, and stay aware of the path industry is taking so we can participate in it."
+      },
+      {
+        "title": "Affordability through process control",
+        "text": "We maintain affordability through process controls and root cause corrective actions, and interact with customers to build confidence."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Can you make a part when the drawings are gone?",
+      "a": "Yes. Our attitude is \"No Print, No Problem\". Customers bring in broken parts and we provide a new sketch or CAD print and a new part, saving them money and costly downtime."
+    },
+    {
+      "q": "What materials do you machine?",
+      "a": "Steel, brass and bronze, super alloys, plastics, inconels, ceramics, glasses, composites, tellurium copper, stainless steel, monel, titanium and aluminum."
+    },
+    {
+      "q": "How close can you hold tolerances?",
+      "a": "Diameters to +/- .0001\", angles to a quarter arc second, and a standard 8 RMS finish."
+    },
+    {
+      "q": "Do you balance and straighten rotating parts?",
+      "a": "Yes. We offer dynamic balancing for rotating assemblies up to 500 lbs, and shaft straightening up to Ø17\" x 10' long."
+    },
+    {
+      "q": "How do I get a quote?",
+      "a": "Call 281-476-4716 or email shawn.praus@mccarteret.com. For work outside shop hours, Friday through Sunday is emergency only on (505) 206-2592."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "The facility",
+      "text": "A 10,000 sq. ft. clean, fully-equipped facility at 1312 Underwood Rd, La Porte, with separate cleanroom, manufacturing, laboratory, etching, welding, painting and conferencing areas. Fax 281-476-4547."
+    },
+    {
+      "heading": "After hours",
+      "text": "The shop runs Monday through Thursday, 5 AM to 4 PM. Friday through Sunday is emergencies only — contact Shawn Praus on (505) 206-2592."
+    },
+    {
+      "heading": "Turnaround",
+      "text": "We can provide one day service, find exotic materials, and supply drawings from sample, all at affordable rates. The shop specializes in rapid turnarounds for commercial, industrial and government entities."
+    },
+    {
+      "heading": "Equipment",
+      "items": [
+        "3D 5 axis water jet, cutting capacity 5' x 10' x 12\" thick",
+        "CNC machining: 3 and 4 axis mills, 3 axis lathe",
+        "Manual lathes, mills, grinders and saws",
+        "In-house MIG, TIG and Stick welding",
+        "Dynamic balancing up to 500 lbs",
+        "Shaft straightening up to Ø17\" x 10' L"
+      ]
+    },
+    {
+      "heading": "Tolerances and finishes",
+      "items": [
+        "+/- .0001\" diameters",
+        "¼ arc second angles",
+        "Standard 8 RMS finishing"
+      ]
+    },
+    {
+      "heading": "Materials",
+      "items": [
+        "Steel, stainless steel and monel",
+        "Brass, bronze and tellurium copper",
+        "Super alloys, inconels and titanium",
+        "Aluminum and common and exotic alloys",
+        "Plastics, ceramics, glasses and composites",
+        "Single Crystal Silicon"
+      ]
+    },
+    {
+      "heading": "Industries served",
+      "items": [
+        "Petrochemical industries around the Houston Ship Channel",
+        "Semiconductor",
+        "Defense and directed energy",
+        "Optical and telescope programs",
+        "Commercial, industrial and government entities"
+      ]
+    },
+    {
+      "heading": "Who to ask for",
+      "items": [
+        "Shawn Praus, Operations Manager — shawn.praus@mccarteret.com",
+        "Hayley Mehus, Office Manager — hayley.mehus@mccarteret.com",
+        "Phil Macklin, Optics Contact — phil.macklin@mza.com"
+      ]
+    },
+    {
+      "heading": "Part of MZA Associates Corporation",
+      "text": "In October 2021 MZA Associates Corporation acquired full interest in McCarter Machine, Inc., a precision machining company specializing in the design and fabrication of complex Single Crystal Silicon light-weight optics and components as well as precision metal machining for heavy industries. McCarter is run as a Division of MZA from its longtime La Porte facility. MZA Associates Corporation is at 4900 Lang Ave NE, Suite 100, Albuquerque, NM 87109, (505) 245-9970, mza.com."
+    },
+    {
+      "heading": "Vendors and subcontractors",
+      "text": "We have top-notch vendors for welding, coatings and heat treating. Our suppliers and subcontractors have consistently delivered high quality services with good response time and reasonable rates."
+    },
+    {
+      "heading": "Published technical papers",
+      "items": [
+        "Isotropic Behavior of an Anisotropic Material: Single Crystal Silicon, SPIE 2013",
+        "Path to Meter Class Single Crystal Silicon Optics, AOT 2012",
+        "Development of a Cryogenic All-Silicon Telescope (CAIT), SPIE Amsterdam 2012",
+        "Why Silicon for Telescopes, SPIE 2009",
+        "Fabrication and Bonding of Single Crystal Silicon, SPIE Optifab 2009",
+        "Lightweight Single Crystal Silicon Opto-mechanical Structures, SPIE Orlando 2009",
+        "Design and Fabrication of a Single Crystal Silicon Telescope: A Success Story, SPIE 2007",
+        "Frit Bonding, A Way to Larger and More Complex Silicon Components, SPIE 2003",
+        "Cryostable Lightweight Frit Bonded Silicon Mirror, SPIE 2002",
+        "McCarter Superfinish Grinding for Silicon, SPIE 2001 and SPIE 2000"
+      ]
+    },
+    {
+      "heading": "Founders and history",
+      "text": "McCarter Machine was founded by Doug and Ellie McCarter in 1981, and for more than thirty years has been a leading provider of silicon optics and components to NASA, DoD and DoE high-technology programs. Doug and Ellie continue to consult to MZA on general operations and on the design and fabrication of silicon components."
+    },
+    {
+      "heading": "Silicon milestones",
+      "items": [
+        "1988 — first silicon components, replacement parts for a local semiconductor company's silicon-pulling equipment",
+        "1993 — a Prime Contractor for the US Government contracted a sample Single Crystal Si optical device, which led to a follow-on program",
+        "1999 — a Silicon Validation Study began our expertise with silicon for optical structures",
+        "October 2021 — MZA Associates Corporation acquired full interest in McCarter Machine, Inc."
+      ]
+    },
+    {
+      "heading": "Starting material",
+      "text": "The key to stress-free Single Crystal Si components is the starting material, so we use only zero-defect, near perfect boules free of residual stress, which allows rapid machining with conventional CNC machines and tools. Boules are available from several suppliers to 300mm diameter and 800mm long, and frit bonding builds blanks up beyond one meter."
+    },
+    {
+      "heading": "Why surface finish matters",
+      "text": "Damage on the surface affects thermal-optical properties such as transmission, absorption and reflection, and subsurface damage affects thermal-mechanical properties such as strength, microyield, hardness and fracture toughness. That damage reaches deeper than etching and polishing alone can remove, which is why the superfinishing method matters."
+    },
+    {
+      "heading": "Independent testing",
+      "text": "All but a few of the tests on our Single Crystal Si samples were performed by independent universities and laboratories, so we have data on how our processing methods affect strength, dynamic response, cryostability, coating response, long-term stability and rad hardness."
+    },
+    {
+      "heading": "Measured optical stability",
+      "text": "In September 2006 Dr. Dave Content of NASA Goddard Space Flight Center remeasured a lightweighted 19 kg/m2 Single Crystal Si mirror, 6.7\" in diameter with a 6 to 1 aspect ratio and a 600mm aperture radius, that he bought from us in 2001. The 2001 measurement read P/V .410wv RMS .068 and the 2006 measurement read P/V .420wv RMS .070, so the mirror had no notable movement over five years."
+    },
+    {
+      "heading": "Vibration testing",
+      "text": "A seven-piece cantilevered Single Crystal Si assembly, with two mirror surfaces finished directly on the structure and four frit bonded inserts, was vibration tested at Goddard Space Flight Center beside a monolithic aluminum structure. The relative measurement between the two optical surfaces changed by only 0.1 arcsecond horizontally and vertically."
+    },
+    {
+      "heading": "Complex bonded assemblies",
+      "text": "One customer needed a 17\" diameter Single Crystal Si assembly made of seven Single Crystal Si parts, with cooling passages, core drilled holes and slots and a hyperbolic contour. There were no failures across the bondlines, all of the cores remained intact, and the bonded planks machined as if they were monolithic."
+    },
+    {
+      "heading": "Mirror weight categories",
+      "text": "We have manufactured lightweight mirrors in each of four weight categories, so a customer has flexibility when designing for payload requirements. QED Corporation removed 100% of the print-through on a Simplistic Lightweight Mirror in 90 minutes using their patented MRF process."
+    },
+    {
+      "heading": "Why Single Crystal Si",
+      "items": [
+        "Thermal and dimensional stability, and it does not creep or jitter over time or during use",
+        "A stable optic material from cryo to near 1100 C, with high thermal diffusivity",
+        "Blurr-free from 170K to 500 C, which qualifies it as the only optical material for endo/exo operational missions",
+        "Highly polishable and safe to handle, with no health hazards",
+        "Low thermal expansion, low density and high thermal conductivity",
+        "Excellent hardness and shock resistance, and low cost by volume",
+        "Used extensively in high power laser optics, and selected and qualified as the primary MEMS material",
+        "Not to be confused with polysilicon, amorphous silicon, silicon foam or silicon slurry, which show deficiencies in several thermal and structural properties"
+      ]
+    },
+    {
+      "heading": "Why glass frit",
+      "items": [
+        "Electrical insulation and hermeticity",
+        "High viscosity and low flow, which give good control of the bondline",
+        "Low reactivity, with no eutectics formed",
+        "Repair by refiring, and disassembly and reuse by high temperature or chemical means",
+        "Shown to withstand extreme temperature change, extreme vibration excitement and radiation hardening",
+        "Mirrors integrated into each other and mounted directly onto metal substrates, with no housings needed as a beryllium substitute would require"
+      ]
+    },
+    {
+      "heading": "Learning work environment",
+      "text": "We plan for success in part by creating a learning work environment."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "Facebook: facebook.com/profile.php?id=100071463858190",
+        "LinkedIn: linkedin.com/company/mccarter-machine"
+      ]
+    }
+  ]
+}
