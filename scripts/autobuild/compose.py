@@ -281,8 +281,15 @@ FONTS = [
 ]
 
 
+# A control character their page carries ("our customers \x03to complete")
+# has no glyph and draws as a box; it stands for a space, and a zero-width
+# mark or byte-order mark for nothing.
+UNDRAWN = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]")
+ZERO_WIDTH = re.compile(r"[​⁠﻿]")
+
+
 def plain(text):
-    return " ".join(str(text or "").split())
+    return " ".join(UNDRAWN.sub(" ", ZERO_WIDTH.sub("", str(text or ""))).split())
 
 
 def sentences(text):
