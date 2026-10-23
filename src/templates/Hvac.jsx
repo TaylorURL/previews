@@ -639,7 +639,7 @@ function BookingCard({ b, groups, heading = 'h2', title, service }) {
         <div className="min-w-0">
           <H className="font-heading text-[22px] font-extrabold leading-tight tracking-[-0.02em] text-ink">{unbroken(title || w.card)}</H>
           <p className="mt-1.5 text-[16px] md:text-[15px] leading-[1.5] text-muted">
-            {service ? w.itemText || `Tell us about your ${lowerName(service, townsOf(b), groups.find((g) => g.title === service)?.intro)} job.` : w.cardText}
+            {service ? w.itemText || `Tell us about your ${lowerName(service, townsOf(b), groups.find((g) => g.title === service)?.intro, namesOf(b))} job.` : w.cardText}
           </p>
         </div>
         <span className={`${iconTile} h-11 w-11`}>
@@ -1295,10 +1295,14 @@ function townWords(town) {
   return new RegExp(`\\b${town.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'gi');
 }
 
-/** The words a text capitalises inside its sentences: names such as a maker's ('your Polaris pool cleaner'). */
-function namedWords(text) {
+/**
+ * The words a text capitalises inside its sentences: names such as a maker's ('your Polaris pool cleaner'). The
+ * business's own name is left out, so the trade words in it ('Two Brothers Foundation Repair') are not names.
+ */
+function namedWords(text, own = []) {
   const named = new Set();
-  for (const sentence of String(text || '').split(/[.!?]\s+/)) {
+  const plain = own.filter(Boolean).reduce((t, name) => t.split(name).join(' '), String(text || ''));
+  for (const sentence of plain.split(/[.!?]\s+/)) {
     for (const word of sentence.split(/\s+/).slice(1)) {
       if (/^[A-Z]/.test(word.replace(/^\W+/, ''))) named.add(word.replace(/^\W+|\W+$/g, '').toLowerCase());
     }
@@ -1310,8 +1314,8 @@ function namedWords(text) {
 const initialism = (word) => /^[^a-z]*[A-Z][^a-z]*$/.test(word) && word !== 'A';
 
 /** A name lowered to run inside a sentence, the towns in it, its initialisms ('I & E') and any word its own text writes as a name keeping their capitals. */
-function lowerName(title, towns, text) {
-  const named = namedWords(text);
+function lowerName(title, towns, text, own) {
+  const named = namedWords(text, own);
   const lower = title
     .split(/(\s+)/)
     .map((word) => (initialism(word) || named.has(word.replace(/^\W+|\W+$/g, '').toLowerCase()) ? word : word.toLowerCase()))
@@ -1324,12 +1328,20 @@ function townsOf(b) {
   return [b.town, ...(b.serviceArea || [])];
 }
 
-/** What the closing band asks if they need: the goods of a sale ('Marine Equipment Sales' is 'marine equipment'), else the work as a service. */
+/** The business's own names, which name no service inside a sentence. */
+function namesOf(b) {
+  return [b.name, b.shortName];
+}
+
+/**
+ * What the closing band asks if they need: the goods of a sale ('Marine Equipment Sales' is 'marine equipment'), else
+ * the work as a service, unless it is already named as things done ('Structural Foundation Assessments', 'Heat Pumps').
+ */
 function needOf(b, group) {
-  const name = lowerName(group.title, townsOf(b), group.intro);
+  const name = lowerName(group.title, townsOf(b), group.intro, namesOf(b));
   const goods = name.replace(/\s+(?:sales|supply|supplies)$/i, '');
   if (goods !== name) return goods;
-  return `${name}${askOf(b).rents || /\bservices?\b/i.test(group.title) ? '' : ' service'}`;
+  return `${name}${askOf(b).rents || /\bservices?\b|[^aisu]s$/i.test(group.title) ? '' : ' service'}`;
 }
 
 function GroupPage({ b, groups, group, tel }) {
