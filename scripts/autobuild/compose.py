@@ -732,7 +732,10 @@ def about_of(pages, name, trade=None):
                 continue
             # Their contact form's own instructions ("Use the form to request an appointment") are not about them.
             # Nor is its fine print ("By submitting, you agree... Do not upload payment-card information").
-            if re.search(r"\b(?:use|fill (?:out|in)|complete|submit) (?:the|our|this) form\b|\bby submitting\b|\bdo not (?:upload|submit|send|include)\b", text, re.I):
+            if re.search(r"\b(?:use|fill (?:out|in)|complete|submit) (?:the|our|this)(?: \w+)? form\b|\bby submitting\b|\bdo not (?:upload|submit|send|include)\b", text, re.I):
+                continue
+            # Nor is a notice of trouble on their end ("We're currently experiencing phone issues. If you can't reach us...").
+            if re.search(r"\bcurrently experiencing\b|\b(?:can(?:no|')t|unable to) reach us\b|\bphones? (?:lines? )?(?:are|is) (?:down|out)\b", text.replace("’", "'"), re.I):
                 continue
             # Nor is the site's legal disclaimer ("Attorney Advertising. This website is designed for general information only... not be construed to be formal legal advice").
             if re.search(r"\battorney advertising\b|\bgeneral information(?:al)? (?:only|purposes)\b|\bnot (?:be )?construed\b|\b(?:lawyer|attorney)[/-]client relationship\b|\bdoes not constitute\b", text, re.I):

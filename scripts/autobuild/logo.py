@@ -406,7 +406,9 @@ def _small_strips(arr):
 # mark. Such pixels further than two pixels from the ink that reads are cut
 # away, so the mark is trimmed and sized to its ink, and a strip of words the
 # wash ran behind is parted from the rest again. A mark mostly drawn in such
-# tints is left whole.
+# tints is left whole. A tint lies between the ground and the ink that reads: on
+# a dark ground a pale ring reads by, ink darker than the ground (the black an
+# SVG's unstyled shapes are drawn in) is a second ink, not a wash, and is kept.
 WASH_RATIO = 1.5
 WASH_MOST = 0.5
 
@@ -420,7 +422,11 @@ def _wash(arr, ground):
     g = float(_luminance(bg))
     contrast = (np.maximum(lum, g) + 0.05) / (np.minimum(lum, g) + 0.05)
     inked = alpha > 8
-    wash = inked & (contrast < WASH_RATIO) & ~_grow(_grow(inked & (contrast >= WASH_RATIO)))
+    readable = inked & (contrast >= WASH_RATIO)
+    if not readable.any():
+        return arr
+    side = np.sign(np.median(lum[readable]) - g)
+    wash = inked & (contrast < WASH_RATIO) & (np.sign(lum - g) != -side) & ~_grow(_grow(readable))
     if not wash.any() or wash.sum() > WASH_MOST * inked.sum():
         return arr
     arr = arr.copy()
