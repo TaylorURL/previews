@@ -407,6 +407,11 @@ def title_case(text):
         if w.upper() in ACRONYMS:
             out.append("CPAs" if w.upper() == "CPAS" else w.upper())
             continue
+        # A form's code ("SR-22", "W-2", "1099-NEC") keeps its capitals; only
+        # a word set in capitals for the heading ("ROOF REPAIR") is put right.
+        if w.isupper() and re.search(r"\d", w):
+            out.append(w)
+            continue
         if w.isupper():
             w = w.lower()
         # A capital held one letter too long ("INterior") is put right.
@@ -775,10 +780,14 @@ def about_of(pages, name, trade=None):
                 continue
             # Or one that speaks of them as "they" or of their staff helping
             # the writer ("They fix pain fast! I had accepted...", "Dr. Barlas
-            # helped... He showed me"), with no "we" or "our" of their own.
+            # helped... He showed me"), or tells of the writer's visit to them
+            # ("I was at Pasadena office the agent... explained to me", "I
+            # stopped by a-best insurance last Saturday... Your agent was
+            # polite"), with no "we" or "our" of their own.
             if re.search(r"\b(?:I|my|me)\b", text) and not re.search(r"\b(?:we|our|us)\b", text, re.I) and (
                 re.match(r"(?:they|these guys)\b", text, re.I)
                 or re.search(r"\b(?:helped|showed|treated|fixed|taught|walked|took care of|got) me\b", text, re.I)
+                or re.search(r"\bI (?:stopped by|dropped by|came in|walked in|was at [\w ]{0,30}office)\b|\bexplained (?:\w+ )?to me\b|\bmy experience (?:was|with)\b|\bI highly recommend\b|\bgive them a call\b|\byour (?:agent|staff|team) (?:was|were|is|are)\b", text, re.I)
             ):
                 continue
             # Or one a customer signs as "we", of the owner as "he" or "she"

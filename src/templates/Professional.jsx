@@ -454,6 +454,13 @@ function Crumbs({ trail }) {
   );
 }
 
+/** A heading with each hyphenated word held whole, so 'A-Best' never breaks at its hyphen and leaves 'Best' alone on the next line. */
+function unbroken(title) {
+  return String(title || '')
+    .split(/(\S+-\S+)/)
+    .map((part, i) => (i % 2 ? <span key={i} className="whitespace-nowrap">{part}</span> : part));
+}
+
 function PageHero({ eyebrow, title, text, trail, image, imageAlt, aside, children }) {
   const split = image || aside;
   return (
@@ -464,7 +471,7 @@ function PageHero({ eyebrow, title, text, trail, image, imageAlt, aside, childre
           <div className="min-w-0 max-w-3xl">
             {eyebrow}
             <h1 className="break-words font-heading font-display text-[clamp(2.15rem,1.4rem+3vw,3.5rem)] leading-[1.1] text-ink [text-wrap:balance]">
-              {title}
+              {unbroken(title)}
             </h1>
             {text && <p className={`mt-5 max-w-2xl ${lead}`}>{text}</p>}
             {children}
@@ -565,7 +572,7 @@ function Hero({ b, tel, ctaLabel }) {
         <div className="min-w-0 max-w-[44rem]">
           {b.hero.eyebrow && <Eyebrow light>{b.hero.eyebrow}</Eyebrow>}
           <h1 className="break-words font-heading font-display text-[clamp(2.3rem,1.3rem+3.6vw,4.1rem)] leading-[1.06] text-white [text-wrap:balance]">
-            {b.hero.title}
+            {unbroken(b.hero.title)}
           </h1>
           <p className="mt-6 max-w-[36rem] text-[17px] leading-[1.65] text-white/85 sm:text-[19px]">{b.hero.lead}</p>
           <div className="mt-9 grid gap-3 sm:flex sm:flex-wrap">
@@ -819,7 +826,7 @@ function AboutTeaser({ b, hasTeam }) {
         <div className={`${wrap} grid gap-12 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.75fr)] lg:gap-20`}>
           <div className="min-w-0">
             <Eyebrow>About {b.shortName}</Eyebrow>
-            <h2 className={h2}>{b.about.title}</h2>
+            <h2 className={h2}>{unbroken(b.about.title)}</h2>
             {text.slice(0, 2).map((t) => (
               <p key={t} className={`mt-6 ${lead}`}>
                 {t}
@@ -841,7 +848,7 @@ function AboutTeaser({ b, hasTeam }) {
         <Img className="max-h-[34rem] w-full rounded-lg object-cover" src={b.about.image} alt={b.about.imageAlt || ''} sizes="(max-width: 1024px) 100vw, 46vw" />
         <div className="min-w-0">
           <Eyebrow>About {b.shortName}</Eyebrow>
-          <h2 className={h2}>{b.about.title}</h2>
+          <h2 className={h2}>{unbroken(b.about.title)}</h2>
           {text[0] && <p className={`mt-6 ${lead}`}>{text[0]}</p>}
           <Values values={list(b.about.values)} />
           {links}
