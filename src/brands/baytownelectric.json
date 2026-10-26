@@ -1,363 +1,361 @@
 {
-  "template": "hvac",
-  "preview": true,
-  "name": "Baytown Electric Company",
-  "shortName": "Baytown Electric",
-  "summary": "A full-service electrical contracting firm working commercial, municipal and residential jobs out of Baytown since 1988.",
-  "phone": "(281) 427-8196",
-  "email": "info@baytownelectric.com",
-  "address": "2106 Beaumont Rd",
-  "town": "Baytown",
-  "state": "TX",
-  "zip": "77520",
-  "rating": 3.6,
-  "reviewCount": 15,
-  "since": 1988,
-  "hours": [
-    [
-      "Mon – Fri",
-      "8 AM – 5 PM"
-    ],
-    [
-      "Saturday",
-      "Closed"
-    ],
-    [
-      "Sunday",
-      "Closed"
-    ]
+ "template": "hvac",
+ "preview": true,
+ "name": "Baytown Electric Company",
+ "shortName": "Baytown Electric",
+ "summary": "A full-service electrical contracting firm working commercial, municipal and residential jobs out of Baytown since 1988.",
+ "phone": "(281) 427-8196",
+ "email": "info@baytownelectric.com",
+ "address": "2106 Beaumont Rd",
+ "town": "Baytown",
+ "state": "TX",
+ "zip": "77520",
+ "rating": 3.6,
+ "reviewCount": 15,
+ "since": 1988,
+ "hours": [
+  [
+   "Mon – Fri",
+   "8 AM – 5 PM"
   ],
-  "brand": {
-    "primary": "#1419C4",
-    "primaryDeep": "#0A0D80",
-    "accent": "#D80A0E",
-    "ink": "#15181F",
-    "muted": "#555B68",
-    "surface": "#F2F4FC",
-    "line": "#DCE0F0",
-    "heading": "'Archivo', system-ui, sans-serif",
-    "body": "'Inter', system-ui, sans-serif",
-    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
-    "logo": "/brands/baytownelectric/logo.webp",
-    "logoMono": "/brands/baytownelectric/logo-mono.webp",
-    "logoWidth": 181,
-    "logoHeight": 48,
-    "logoRatio": 3.771,
-    "logoGround": "#ffffff",
-    "logoReads": [
-      0.464,
-      0.46,
-      0.47,
-      0.498,
-      0.541,
-      0.597,
-      0.665,
-      0.739,
-      0.824,
-      0.913,
-      1.0
-    ]
-  },
-  "licenses": [
-    {
-      "label": "Texas Electrical Contractor"
-    }
+  [
+   "Saturday",
+   "Closed"
   ],
-  "hero": {
-    "eyebrow": "Electrical contracting in Baytown since 1988",
-    "title": "Commercial, municipal and residential work,",
-    "titleAccent": "done promptly and properly.",
-    "lead": "Whether your need is simple maintenance or a new installation, you can be confident the job will be done promptly, properly and at a fair price.",
-    "image": "/brands/baytownelectric/hero",
-    "imageAlt": "A Baytown Electric bucket truck parked at the company yard in Baytown"
-  },
-  "groups": [
-    {
-      "slug": "residential",
-      "title": "Residential",
-      "icon": "home",
-      "summary": "Complete breaker panel service upgrades, lighting and wiring repairs for Baytown homes.",
-      "intro": "Our concentration is on commercial and municipal projects, but we also run a very successful and dependable residential service department. We can troubleshoot an existing system to identify the problem, then design and implement a system to solve it.",
-      "image": "/brands/baytownelectric/residential",
-      "imageAlt": "An open residential breaker panel with its circuit directory card",
-      "services": [
-        {
-          "slug": "service-upgrades",
-          "title": "Service Upgrades",
-          "icon": "circuit",
-          "text": "Complete breaker panel service upgrades, including the service installation itself and the branch wiring behind it.",
-          "points": [
-            "Breaker panel upgrades",
-            "Service installation",
-            "Branch wiring"
-          ]
-        },
-        {
-          "slug": "lighting-installation",
-          "title": "Lighting Installation",
-          "icon": "lightbulb",
-          "text": "We install all types of lighting, from fluorescent and compact fluorescent to LED and induction.",
-          "points": [
-            "Fluorescent and compact fluorescent",
-            "LED and induction lighting",
-            "Electric discharge lighting"
-          ]
-        },
-        {
-          "slug": "wiring-repairs",
-          "title": "Lighting and Wiring Repairs",
-          "icon": "plug",
-          "text": "Switches, outlets and new circuits, plus receptacle and device installation anywhere in the house.",
-          "points": [
-            "Switches and outlets",
-            "New circuits",
-            "Receptacle and device installation"
-          ]
-        },
-        {
-          "slug": "security-lighting",
-          "title": "Security Lighting",
-          "icon": "sun",
-          "text": "Security lights installed and repaired around the house, the drive and the yard."
-        },
-        {
-          "slug": "meter-loops",
-          "title": "Meter Loop Repairs and Upgrades",
-          "icon": "gauge",
-          "text": "Meter loop repairs and upgrades, done to the standard the utility will sign off on."
-        },
-        {
-          "slug": "surge-suppression",
-          "title": "Surge Suppression",
-          "icon": "shield",
-          "text": "Surge suppression fitted to the service so a hit on the line stops at the panel."
-        }
-      ]
-    },
-    {
-      "slug": "commercial",
-      "title": "Commercial",
-      "icon": "building",
-      "summary": "Complete bucket truck services, new construction and remodeling for commercial accounts.",
-      "intro": "We are qualified for project estimating, management, coordination, design and installation on remodeling and new construction. We are a full-service contracting firm able to service your every need, from major commercial contracts to small repairs.",
-      "image": "/brands/baytownelectric/commercial",
-      "imageAlt": "A commercial building under construction on a cleared site in Baytown",
-      "services": [
-        {
-          "slug": "new-construction-and-remodeling",
-          "title": "New Construction and Remodeling",
-          "icon": "building",
-          "text": "Design and installation on new buildings and on remodels of the ones you already occupy.",
-          "points": [
-            "Commercial contracts",
-            "Remodeling and new construction"
-          ]
-        },
-        {
-          "slug": "estimating-and-project-management",
-          "title": "Estimating and Project Management",
-          "icon": "settings",
-          "text": "Project estimating, management and coordination, carried by the same people who run the crew on site."
-        },
-        {
-          "slug": "custom-design",
-          "title": "Custom Design",
-          "icon": "circuit",
-          "text": "Custom electrical design where an off-the-shelf layout will not do the work you need."
-        },
-        {
-          "slug": "service-and-troubleshooting",
-          "title": "Service and Troubleshooting",
-          "icon": "wrench",
-          "text": "We troubleshoot an existing system to identify the problem, then design and implement a system to solve it.",
-          "points": [
-            "Service installation and upgrades",
-            "Branch wiring",
-            "Receptacle and device installation"
-          ]
-        },
-        {
-          "slug": "energy-efficient-systems",
-          "title": "Energy Efficient Systems",
-          "icon": "leaf",
-          "text": "Energy efficient systems specified and installed, so the building costs less to run than it did."
-        },
-        {
-          "slug": "machine-shops",
-          "title": "Machine Shops",
-          "icon": "power",
-          "text": "Electrical work for machine shops, including the power and controls their equipment runs on."
-        },
-        {
-          "slug": "bucket-truck-services",
-          "title": "Bucket Truck Services",
-          "icon": "car",
-          "text": "Complete bucket truck services, for the lights and the lines that sit too high to reach from a ladder."
-        }
-      ]
-    },
-    {
-      "slug": "municipal",
-      "title": "Municipal",
-      "icon": "power",
-      "summary": "Installation and maintenance of backup generators, plus electrical service for cities and school districts.",
-      "intro": "We provide all maintenance and electrical service for all types of municipalities, including city parks, wastewater treatment plants, sewer lift stations and surface water treatment plants. We also provide electrical maintenance for several school districts.",
-      "image": "/brands/baytownelectric/municipal",
-      "imageAlt": "A large high-bay lighting reflector on a workbench in the Baytown Electric shop",
-      "services": [
-        {
-          "slug": "backup-generators",
-          "title": "Backup Generators",
-          "icon": "battery",
-          "text": "Installation and maintenance of backup generators, including transfer switch installation.",
-          "points": [
-            "Lift station generators",
-            "Transfer switch installation"
-          ]
-        },
-        {
-          "slug": "water-and-wastewater",
-          "title": "Water and Wastewater Plants",
-          "icon": "settings",
-          "text": "Electrical service and maintenance for wastewater treatment plants, sewer lift stations and surface water treatment plants."
-        },
-        {
-          "slug": "parks-and-public-facilities",
-          "title": "Parks and Public Facilities",
-          "icon": "sun",
-          "text": "Maintenance and electrical service for city parks and the buildings a city keeps running."
-        },
-        {
-          "slug": "school-district-maintenance",
-          "title": "School District Maintenance",
-          "icon": "wrench",
-          "text": "Electrical maintenance for several school districts, including all repairs and additions to any schools and offices.",
-          "points": [
-            "Bucket truck and pole truck",
-            "Repair of lighting systems",
-            "Repairs and additions to schools and offices"
-          ]
-        },
-        {
-          "slug": "high-voltage-distribution",
-          "title": "High-Voltage Distribution",
-          "icon": "cable",
-          "text": "Repair of high-voltage distribution systems, with the bucket truck and pole truck to reach them."
-        },
-        {
-          "slug": "sports-lighting",
-          "title": "Sports Lighting",
-          "icon": "lightbulb",
-          "text": "Sports lighting installed, re-lamped and repaired on fields and courts."
-        }
-      ]
-    }
-  ],
-  "about": {
-    "eyebrow": "About us",
-    "title": "A reputation earned one customer at a time since 1988.",
-    "text": [
-      "We are a full-service electrical contracting firm in the commercial, municipal and residential fields. Our reputation has been earned slowly and with considerable effort, one customer at a time, since 1988. We are proud of it and guard it jealously.",
-      "We approach each job with the same care and consideration as we did the very first one. We learn from old experience and from new technology, but the commitment to excellence remains the same.",
-      "Larry W. Tharp founded the company and still runs project management, electrical design, administrative duties, governmental compliance, insurance procurement and customer relations. He has more than 40 years of experience in electrical construction and repair, and before state-wide licensing came into effect he held over 15 individual masters licenses. He is a longtime Baytown resident who attended Lee College right here in town."
-    ],
-    "image": "/brands/baytownelectric/team",
-    "imageAlt": "A Baytown Electric service truck under the cover at the company yard",
-    "values": [
-      {
-        "title": "Promptly and properly",
-        "text": "Simple maintenance or a new installation, the job gets done promptly, properly and at a fair price."
-      },
-      {
-        "title": "Every field",
-        "text": "Major commercial contracts through to small residential repairs, all from one firm."
-      },
-      {
-        "title": "Baytown people",
-        "text": "Our president and our superintendent are both longtime Baytown residents who trained at Lee College."
-      }
-    ]
-  },
-  "faqs": [
-    {
-      "q": "What kind of work do you take on?",
-      "a": "Commercial, municipal and residential. Our concentration is on commercial and municipal projects, but we also run a very successful and dependable residential service department."
-    },
-    {
-      "q": "When are you open?",
-      "a": "Monday through Friday, 8:00 a.m. to 5:00 p.m. Call 281-427-8196, or send an enquiry to info@baytownelectric.com."
-    },
-    {
-      "q": "How can I pay?",
-      "a": "We accept Visa, Mastercard, Discover and American Express."
-    },
-    {
-      "q": "Are you licensed?",
-      "a": "Yes. We are a licensed Texas electrical contractor, and our president holds both a Texas Masters Electrical License and a Texas Electrical Contracting License."
-    }
-  ],
-  "serviceArea": [
-    "Baytown",
-    "Mont Belvieu",
-    "Deer Park",
-    "Atascocita"
-  ],
-  "facts": [
-    {
-      "heading": "Licensing",
-      "items": [
-        "Licensed Texas electrical contractor",
-        "Texas Masters Electrical License held by our president",
-        "Masters Electrical License held by our estimator and project manager",
-        "Journeyman's Electrical License held by our superintendent"
-      ]
-    },
-    {
-      "heading": "Payment we accept",
-      "items": [
-        "Visa",
-        "Mastercard",
-        "Discover",
-        "American Express"
-      ]
-    },
-    {
-      "heading": "Our team",
-      "items": [
-        "Larry W. Tharp, President. Founder, over 40 years in electrical construction and repair, Lee College",
-        "Robert Reel, Estimator and Project Manager. With the company since 1997, Lee College electrical program",
-        "James Desadier, Superintendent. 32 years in the electrical field, heavy industrial through residential"
-      ]
-    },
-    {
-      "heading": "Recent projects",
-      "items": [
-        "CRCU Headquarters Building, Community Resource Credit Union, Baytown",
-        "Kilgore and Stuart Renovation, Goose Creek Consolidated Independent School District, Baytown",
-        "Mont Belvieu Senior Center, City of Mont Belvieu",
-        "BHISD Technology Renovation, Barbers Hill ISD, Mont Belvieu",
-        "Bayer Heritage FCU, Bayer Federal Credit Union, Baytown",
-        "Installation of Transfer Switch, Electromagnetic Industries LLP, Baytown"
-      ]
-    },
-    {
-      "heading": "Past projects",
-      "items": [
-        "Lift Station Generators, City of Baytown",
-        "Lee College Welding Facility, Lee College, Baytown",
-        "Town Square Renovation, City of Baytown",
-        "CRCU Mont Belvieu Branch, Community Resource Credit Union, Mont Belvieu",
-        "CRCU Atascocita Branch, Community Resource Credit Union, Atascocita",
-        "Malone Industrial Office Expansion, Malone Industrial Machine, Deer Park"
-      ]
-    },
-    {
-      "heading": "After the job",
-      "text": "Every job ends with a post-job and comments survey, so we hear how the work went from the customer rather than guessing."
-    },
-    {
-      "heading": "Our motto",
-      "text": "Setting a higher standard."
-    }
+  [
+   "Sunday",
+   "Closed"
   ]
+ ],
+ "brand": {
+  "primary": "#1419C4",
+  "primaryDeep": "#0A0D80",
+  "accent": "#D80A0E",
+  "ink": "#15181F",
+  "muted": "#555B68",
+  "surface": "#F2F4FC",
+  "line": "#DCE0F0",
+  "heading": "'Archivo', system-ui, sans-serif",
+  "body": "'Inter', system-ui, sans-serif",
+  "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+  "logo": "/brands/baytownelectric/logo.webp",
+  "logoMono": "/brands/baytownelectric/logo-mono.webp",
+  "logoWidth": 181,
+  "logoHeight": 48,
+  "logoRatio": 3.771,
+  "logoGround": "#ffffff",
+  "logoReads": [
+   0.464,
+   0.46,
+   0.47,
+   0.498,
+   0.541,
+   0.597,
+   0.665,
+   0.739,
+   0.824,
+   0.913,
+   1.0
+  ]
+ },
+ "licenses": [
+  {
+   "label": "Texas Electrical Contractor"
+  }
+ ],
+ "hero": {
+  "eyebrow": "Electrical contracting in Baytown since 1988",
+  "title": "Commercial, municipal and residential work,",
+  "titleAccent": "done promptly and properly.",
+  "lead": "Whether your need is simple maintenance or a new installation, you can be confident the job will be done promptly, properly and at a fair price.",
+  "image": "/brands/baytownelectric/hero",
+  "imageAlt": "A Baytown Electric bucket truck parked at the company yard in Baytown"
+ },
+ "groups": [
+  {
+   "slug": "residential",
+   "title": "Residential",
+   "icon": "home",
+   "summary": "Complete breaker panel service upgrades, lighting and wiring repairs for Baytown homes.",
+   "intro": "Our concentration is on commercial and municipal projects, but we also run a very successful and dependable residential service department. We can troubleshoot an existing system to identify the problem, then design and implement a system to solve it.",
+   "image": "/brands/baytownelectric/residential",
+   "imageAlt": "An open residential breaker panel with its circuit directory card",
+   "services": [
+    {
+     "slug": "service-upgrades",
+     "title": "Service Upgrades",
+     "icon": "circuit",
+     "text": "Complete breaker panel service upgrades, including the service installation itself and the branch wiring behind it.",
+     "points": [
+      "Breaker panel upgrades",
+      "Service installation",
+      "Branch wiring"
+     ]
+    },
+    {
+     "slug": "lighting-installation",
+     "title": "Lighting Installation",
+     "icon": "lightbulb",
+     "text": "We install all types of lighting, from fluorescent and compact fluorescent to LED and induction.",
+     "points": [
+      "Fluorescent and compact fluorescent",
+      "LED and induction lighting",
+      "Electric discharge lighting"
+     ]
+    },
+    {
+     "slug": "wiring-repairs",
+     "title": "Lighting and Wiring Repairs",
+     "icon": "plug",
+     "text": "Switches, outlets and new circuits, plus receptacle and device installation anywhere in the house.",
+     "points": [
+      "Switches and outlets",
+      "New circuits",
+      "Receptacle and device installation"
+     ]
+    },
+    {
+     "slug": "security-lighting",
+     "title": "Security Lighting",
+     "icon": "sun",
+     "text": "Security lights installed and repaired around the house, the drive and the yard."
+    },
+    {
+     "slug": "meter-loops",
+     "title": "Meter Loop Repairs and Upgrades",
+     "icon": "gauge",
+     "text": "Meter loop repairs and upgrades, done to the standard the utility will sign off on."
+    },
+    {
+     "slug": "surge-suppression",
+     "title": "Surge Suppression",
+     "icon": "shield",
+     "text": "Surge suppression fitted to the service so a hit on the line stops at the panel."
+    }
+   ]
+  },
+  {
+   "slug": "commercial",
+   "title": "Commercial",
+   "icon": "building",
+   "summary": "Complete bucket truck services, new construction and remodeling for commercial accounts.",
+   "intro": "We are qualified for project estimating, management, coordination, design and installation on remodeling and new construction. We are a full-service contracting firm able to service your every need, from major commercial contracts to small repairs.",
+   "image": "/brands/baytownelectric/commercial",
+   "imageAlt": "A commercial building under construction on a cleared site in Baytown",
+   "services": [
+    {
+     "slug": "new-construction-and-remodeling",
+     "title": "New Construction and Remodeling",
+     "icon": "building",
+     "text": "Design and installation on new buildings and on remodels of the ones you already occupy.",
+     "points": [
+      "Commercial contracts",
+      "Remodeling and new construction"
+     ]
+    },
+    {
+     "slug": "estimating-and-project-management",
+     "title": "Estimating and Project Management",
+     "icon": "settings",
+     "text": "Project estimating, management and coordination, carried by the same people who run the crew on site."
+    },
+    {
+     "slug": "custom-design",
+     "title": "Custom Design",
+     "icon": "circuit",
+     "text": "Custom electrical design where an off-the-shelf layout will not do the work you need."
+    },
+    {
+     "slug": "service-and-troubleshooting",
+     "title": "Service and Troubleshooting",
+     "icon": "wrench",
+     "text": "We troubleshoot an existing system to identify the problem, then design and implement a system to solve it.",
+     "points": [
+      "Service installation and upgrades",
+      "Branch wiring",
+      "Receptacle and device installation"
+     ]
+    },
+    {
+     "slug": "energy-efficient-systems",
+     "title": "Energy Efficient Systems",
+     "icon": "leaf",
+     "text": "Energy efficient systems specified and installed, so the building costs less to run than it did."
+    },
+    {
+     "slug": "machine-shops",
+     "title": "Machine Shops",
+     "icon": "power",
+     "text": "Electrical work for machine shops, including the power and controls their equipment runs on."
+    },
+    {
+     "slug": "bucket-truck-services",
+     "title": "Bucket Truck Services",
+     "icon": "car",
+     "text": "Complete bucket truck services, for the lights and the lines that sit too high to reach from a ladder."
+    }
+   ]
+  },
+  {
+   "slug": "municipal",
+   "title": "Municipal",
+   "icon": "power",
+   "summary": "Installation and maintenance of backup generators, plus electrical service for cities and school districts.",
+   "intro": "We provide all maintenance and electrical service for all types of municipalities, including city parks, wastewater treatment plants, sewer lift stations and surface water treatment plants. We also provide electrical maintenance for several school districts.",
+   "services": [
+    {
+     "slug": "backup-generators",
+     "title": "Backup Generators",
+     "icon": "battery",
+     "text": "Installation and maintenance of backup generators, including transfer switch installation.",
+     "points": [
+      "Lift station generators",
+      "Transfer switch installation"
+     ]
+    },
+    {
+     "slug": "water-and-wastewater",
+     "title": "Water and Wastewater Plants",
+     "icon": "settings",
+     "text": "Electrical service and maintenance for wastewater treatment plants, sewer lift stations and surface water treatment plants."
+    },
+    {
+     "slug": "parks-and-public-facilities",
+     "title": "Parks and Public Facilities",
+     "icon": "sun",
+     "text": "Maintenance and electrical service for city parks and the buildings a city keeps running."
+    },
+    {
+     "slug": "school-district-maintenance",
+     "title": "School District Maintenance",
+     "icon": "wrench",
+     "text": "Electrical maintenance for several school districts, including all repairs and additions to any schools and offices.",
+     "points": [
+      "Bucket truck and pole truck",
+      "Repair of lighting systems",
+      "Repairs and additions to schools and offices"
+     ]
+    },
+    {
+     "slug": "high-voltage-distribution",
+     "title": "High-Voltage Distribution",
+     "icon": "cable",
+     "text": "Repair of high-voltage distribution systems, with the bucket truck and pole truck to reach them."
+    },
+    {
+     "slug": "sports-lighting",
+     "title": "Sports Lighting",
+     "icon": "lightbulb",
+     "text": "Sports lighting installed, re-lamped and repaired on fields and courts."
+    }
+   ]
+  }
+ ],
+ "about": {
+  "eyebrow": "About us",
+  "title": "A reputation earned one customer at a time since 1988.",
+  "text": [
+   "We are a full-service electrical contracting firm in the commercial, municipal and residential fields. Our reputation has been earned slowly and with considerable effort, one customer at a time, since 1988. We are proud of it and guard it jealously.",
+   "We approach each job with the same care and consideration as we did the very first one. We learn from old experience and from new technology, but the commitment to excellence remains the same.",
+   "Larry W. Tharp founded the company and still runs project management, electrical design, administrative duties, governmental compliance, insurance procurement and customer relations. He has more than 40 years of experience in electrical construction and repair, and before state-wide licensing came into effect he held over 15 individual masters licenses. He is a longtime Baytown resident who attended Lee College right here in town."
+  ],
+  "image": "/brands/baytownelectric/team",
+  "imageAlt": "A Baytown Electric service truck under the cover at the company yard",
+  "values": [
+   {
+    "title": "Promptly and properly",
+    "text": "Simple maintenance or a new installation, the job gets done promptly, properly and at a fair price."
+   },
+   {
+    "title": "Every field",
+    "text": "Major commercial contracts through to small residential repairs, all from one firm."
+   },
+   {
+    "title": "Baytown people",
+    "text": "Our president is a longtime Baytown resident and our superintendent a lifetime one, and both our president and our project manager trained at Lee College in town."
+   }
+  ]
+ },
+ "faqs": [
+  {
+   "q": "What kind of work do you take on?",
+   "a": "Commercial, municipal and residential. Our concentration is on commercial and municipal projects, but we also run a very successful and dependable residential service department."
+  },
+  {
+   "q": "When are you open?",
+   "a": "Monday through Friday, 8:00 a.m. to 5:00 p.m. Call 281-427-8196, or send an enquiry to info@baytownelectric.com."
+  },
+  {
+   "q": "How can I pay?",
+   "a": "We accept Visa, Mastercard, Discover and American Express."
+  },
+  {
+   "q": "Are you licensed?",
+   "a": "Yes. We are a licensed Texas electrical contractor, and our president holds both a Texas Masters Electrical License and a Texas Electrical Contracting License."
+  }
+ ],
+ "serviceArea": [
+  "Baytown",
+  "Mont Belvieu",
+  "Deer Park",
+  "Atascocita"
+ ],
+ "facts": [
+  {
+   "heading": "Licensing",
+   "items": [
+    "Licensed Texas electrical contractor",
+    "Texas Masters Electrical License held by our president",
+    "Masters Electrical License held by our estimator and project manager",
+    "Journeyman's Electrical License held by our superintendent"
+   ]
+  },
+  {
+   "heading": "Payment we accept",
+   "items": [
+    "Visa",
+    "Mastercard",
+    "Discover",
+    "American Express"
+   ]
+  },
+  {
+   "heading": "Our team",
+   "items": [
+    "Larry W. Tharp, President. Founder, over 40 years in electrical construction and repair, Lee College",
+    "Robert Reel, Estimator and Project Manager. With the company since 1997, Lee College electrical program, known for attention to detail and finishing on time",
+    "James Desadier, Superintendent. Lifetime Baytown resident, 32 years in the electrical field, heavy industrial through residential"
+   ]
+  },
+  {
+   "heading": "Recent projects",
+   "items": [
+    "CRCU Headquarters Building, Community Resource Credit Union, Baytown. $1,302,000",
+    "Kilgore and Stuart Renovation, Goose Creek Consolidated Independent School District, Baytown. $2,141,000, completed September 2017",
+    "Mont Belvieu Senior Center, City of Mont Belvieu. $377,000, completed September 2018",
+    "BHISD Technology Renovation, Barbers Hill ISD, Mont Belvieu. $44,000, completed May 2018",
+    "Bayer Heritage FCU, Bayer Federal Credit Union, Baytown. $263,000, completed May 2018",
+    "Installation of Transfer Switch, Electromagnetic Industries LLP, Baytown. $8,000, completed October 2018"
+   ]
+  },
+  {
+   "heading": "Past projects",
+   "items": [
+    "Lift Station Generators, City of Baytown. $1,912,000, completed November 2012",
+    "Lee College Welding Facility, Lee College, Baytown. $2,296,000, completed November 2015",
+    "Town Square Renovation, City of Baytown. $160,000, completed February 2016",
+    "CRCU Mont Belvieu Branch, Community Resource Credit Union, Mont Belvieu. $254,000, completed September 2016",
+    "CRCU Atascocita Branch, Community Resource Credit Union, Atascocita. $452,000, completed September 2013",
+    "Malone Industrial Office Expansion, Malone Industrial Machine, Deer Park. $120,000, completed April 2013"
+   ]
+  },
+  {
+   "heading": "After the job",
+   "text": "Every job ends with a post-job and comments survey, so we hear how the work went from the customer rather than guessing. It asks how you heard about Baytown Electric and whether you would recommend us to friends, family or coworkers."
+  },
+  {
+   "heading": "Our motto",
+   "text": "Setting a higher standard."
+  }
+ ]
 }
