@@ -1,0 +1,499 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "HB Fence LLC",
+  "shortName": "HB Fence",
+  "summary": "Professional fence installation and repair for homeowners and property owners across Greater Houston, from cedar privacy fences to chain-link, iron and custom gates.",
+  "phone": "(832) 296-4721",
+  "email": "bladimir@hbfencecompany.com",
+  "address": "15608 S Brentwood St",
+  "town": "Channelview",
+  "state": "TX",
+  "zip": "77530",
+  "rating": 4.8,
+  "reviewCount": 53,
+  "hours": [
+    [
+      "Mon – Sat",
+      "8 AM – 6 PM"
+    ]
+  ],
+  "brand": {
+    "primary": "#15803d",
+    "primaryDeep": "#166534",
+    "accent": "#f59e0b",
+    "ink": "#1e293b",
+    "muted": "#64748b",
+    "surface": "#f1f8f3",
+    "line": "#cbd5e1",
+    "heading": "'Archivo', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/hbfence/logo.webp",
+    "logoMono": "/brands/hbfence/logo-mono.webp",
+    "logoWidth": 87,
+    "logoHeight": 84,
+    "logoRatio": 1.034,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.664,
+      0.644,
+      0.626,
+      0.582,
+      0.418,
+      0.339,
+      0.336,
+      0.548,
+      0.596,
+      0.867,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Fence installation and repair in Channelview and Greater Houston",
+    "title": "Houston's trusted",
+    "titleAccent": "fence pros.",
+    "lead": "Cedar, pine, chain-link and iron, with professional installation, repair and staining. Every project gets straight posts, clean lines, true gates and a tidy job site.",
+    "image": "/brands/hbfence/hero",
+    "imageAlt": "A new wood privacy fence along the back of a Houston-area yard"
+  },
+  "groups": [
+    {
+      "slug": "wood-fences",
+      "title": "Wood Fences",
+      "icon": "home",
+      "summary": "Cedar and pine privacy fences built for Houston heat and rain.",
+      "intro": "Wood is the fence most Houston yards get, and how it is built decides how long it lasts. We set posts at depth for Houston clay, keep the spacing true and the reveals consistent, and finish with a clean top line.",
+      "image": "/brands/hbfence/wood-fences",
+      "imageAlt": "A tall wood privacy fence with a level top line beside a lawn",
+      "services": [
+        {
+          "slug": "cedar-fence-installation",
+          "title": "Cedar Fence Installation",
+          "icon": "home",
+          "text": "Cedar privacy fencing in privacy, board-on-board and horizontal styles, including cedar cap-and-trim.",
+          "points": [
+            "Privacy, board-on-board and horizontal",
+            "Cedar cap-and-trim for durability",
+            "Cedar is what we recommend for wood in Houston weather"
+          ]
+        },
+        {
+          "slug": "pine-fence",
+          "title": "Pine Fence",
+          "icon": "ruler",
+          "text": "Cost-effective pressure-treated pine privacy fencing when the budget matters more than the grain.",
+          "points": [
+            "Pressure-treated for Houston heat and rain",
+            "A cost-effective alternative to cedar"
+          ]
+        },
+        {
+          "slug": "privacy-fences",
+          "title": "Privacy Fences",
+          "icon": "shield",
+          "text": "Full-height privacy fencing with square frames, plumb posts and consistent reveals.",
+          "points": [
+            "Square frames and plumb posts",
+            "Concrete-set posts for stability",
+            "HOA guidelines reviewed during the quote"
+          ]
+        },
+        {
+          "slug": "eco-fence",
+          "title": "Eco-Fence",
+          "icon": "home",
+          "text": "A lower-waste option built from sound reclaimed pickets, with a rustic look and natural variation.",
+          "points": [
+            "Reclaimed pickets",
+            "Lower-waste option",
+            "Rustic look with natural variation"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "metal-fences",
+      "title": "Metal Fences",
+      "icon": "shield",
+      "summary": "Chain-link and ornamental iron for security, enclosure and curb appeal.",
+      "intro": "Where a yard needs an enclosure rather than a screen, metal does more for less upkeep. We install chain-link in black and galvanized, and ornamental iron where security and style both matter.",
+      "image": "/brands/hbfence/metal-fences",
+      "imageAlt": "An ornamental iron fence with pickets along a front yard",
+      "services": [
+        {
+          "slug": "chain-link-fence",
+          "title": "Chain-Link Fence",
+          "icon": "cable",
+          "text": "Residential and commercial chain-link fencing, in black and galvanized finishes.",
+          "points": [
+            "Residential and commercial",
+            "Black and galvanized",
+            "A cost-effective enclosure",
+            "Chain-link with slats for commercial sites"
+          ]
+        },
+        {
+          "slug": "wrought-iron-fence",
+          "title": "Wrought Iron and Metal",
+          "icon": "building",
+          "text": "Ornamental iron and metal fencing for security and curb appeal.",
+          "points": [
+            "Security and curb appeal together",
+            "Ornamental iron for style and strength",
+            "Powder-coated iron panels and custom gates"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gates",
+      "title": "Gates",
+      "icon": "settings",
+      "summary": "Driveway and walk gates built, repaired and aligned so they swing true.",
+      "intro": "A gate is the part of a fence that moves, so it is the part that fails first. We build and repair swing, slide and custom gates, and we check hinge alignment, swing and latch before we leave.",
+      "image": "/brands/hbfence/gates",
+      "imageAlt": "A wide driveway gate across a residential drive",
+      "services": [
+        {
+          "slug": "gate-repair",
+          "title": "Gate Repair and Replacement",
+          "icon": "wrench",
+          "text": "Swing, slide and custom gates repaired or replaced, with hinges and latches set back to true.",
+          "points": [
+            "Swing, slide and custom",
+            "Aligned hinges and latches",
+            "Smooth swing checked before we leave",
+            "Gate hardware packages, rehang and rebuild"
+          ]
+        },
+        {
+          "slug": "custom-gates",
+          "title": "Driveway and Walk Gates",
+          "icon": "settings",
+          "text": "Custom driveway and walk gates built to the opening you have, with hardware that lines up.",
+          "points": [
+            "Driveway and walk gates",
+            "Custom sizes and oversized openings",
+            "Latch hits true",
+            "Manual and automatic gates to match the fence"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "repairs-and-staining",
+      "title": "Repairs and Staining",
+      "icon": "wrench",
+      "summary": "Storm damage, rotted sections and stain and seal to protect what you already have.",
+      "intro": "Not every fence needs replacing. We repair rotted and storm-damaged sections with the same care as a new build, and we stain and seal to hold color and extend the life of the wood.",
+      "image": "/brands/hbfence/repairs",
+      "imageAlt": "A stained wood fence with the grain showing through the finish",
+      "services": [
+        {
+          "slug": "fence-repair",
+          "title": "Fence Repair",
+          "icon": "wrench",
+          "text": "Repairs to rotted boards, leaning posts and failed sections, handled with the same clean finish as a new build.",
+          "points": [
+            "Post straightening, rail resets, picket repairs and gate hinge fixes",
+            "Storm cleanup",
+            "Sections repaired rather than replaced where we can",
+            "Old fencing and scrap hauled away",
+            "Repairs start at $125",
+            "Stain and paint matched as closely as possible"
+          ]
+        },
+        {
+          "slug": "storm-damage-repair",
+          "title": "Storm and Wind Damage",
+          "icon": "shield",
+          "text": "Emergency repairs after Houston storms and high wind take out posts, panels or a run of fence.",
+          "points": [
+            "Emergency repairs",
+            "Wind and storm damage assessed on site"
+          ]
+        },
+        {
+          "slug": "stain-and-seal",
+          "title": "Stain and Seal",
+          "icon": "droplets",
+          "text": "Oil-based stain and seal options that protect a fence from Houston heat and rain.",
+          "points": [
+            "Oil-based stain and seal options",
+            "Protects color and extends lifespan",
+            "Timing and finishes recommended with your quote"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "5% cash back",
+    "title": "Get 5% cash back on your fence project.",
+    "text": "Book your fence project with HB Fence and receive 5% cash back after your project is completed and paid in full.",
+    "image": "/brands/hbfence/promo",
+    "imageAlt": "A black chain-link fence along the edge of a property"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Houston's local fence company.",
+    "text": [
+      "HB Fence LLC is a Houston-area fence company providing professional fence installation and fence repair to homeowners and property owners across Greater Houston. We work in Houston, Channelview, Pasadena, Baytown, Pearland, Deer Park, La Porte, Cloverleaf, North Shore, and surrounding communities.",
+      "We specialize in wood privacy fences, cedar cap-and-trim, chain-link, ornamental iron, gate repair, and custom gate installation. Every project gets straight posts, clean lines, true gates, and a tidy job site. We communicate clearly from the first quote through the final walkthrough.",
+      "Our mission is to do the job right, communicate clearly, and leave your yard cleaner than we found it. From layout and post depth to hardware alignment and stain prep, our focus is straight lines and long life."
+    ],
+    "image": "/brands/hbfence/about",
+    "imageAlt": "A cedar fence running the length of a back yard",
+    "values": [
+      {
+        "title": "Local Houston-area service",
+        "text": "We know Houston soil, weather and HOA requirements, and we work where you live."
+      },
+      {
+        "title": "Clear communication",
+        "text": "Straight quotes, honest timelines, no surprise add-ons."
+      },
+      {
+        "title": "Clean, reliable work",
+        "text": "Tidy job sites, squared frames, and gate alignment checked before we leave."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "How We Work",
+      "items": [
+        "Walk-through and quote: we measure, check utilities and HOA, and provide a clear written estimate.",
+        "Layout and set posts: depth for Houston clay, true spacing, concrete set for stability.",
+        "Framing and panels: square frames, plumb posts, consistent reveals, clean top lines.",
+        "Gates and hardware: aligned hinges and latches, smooth swing, latch hits true.",
+        "Cleanup and stain: site cleaned, optional stain to protect color and lifespan."
+      ]
+    },
+    {
+      "heading": "Workmanship Warranty",
+      "text": "A workmanship warranty is available. Ask us for details with your quote."
+    },
+    {
+      "heading": "Free Estimates",
+      "text": "Free, no-obligation estimates by text or onsite. Send your length, style and wood type, and we will call you back fast, usually within 24 hours. Every quote is itemized."
+    },
+    {
+      "heading": "HOA and Permits",
+      "text": "We review HOA guidelines and local requirements during the quote so your project stays compliant. We prepare specs, photos and samples to streamline HOA approval, and we match profiles, heights and finishes to your community."
+    },
+    {
+      "heading": "Timelines",
+      "text": "Most installs start within 3 to 7 days depending on materials and schedule, and most standard residential projects take about 1 to 2 days once we start. Repair work usually starts within 2 to 3 days."
+    },
+    {
+      "heading": "Houston-Ready Builds",
+      "items": [
+        "Cedar cap-and-trim",
+        "Ornamental iron",
+        "Chain-link, black and galvanized",
+        "Driveway and walk gates",
+        "Staining and restoration"
+      ]
+    },
+    {
+      "heading": "Referral Reward",
+      "text": "Share your personal referral link with friends, family or neighbors. When a qualifying referred project is completed and paid in full, you earn 5% cash. An HB Fence account is needed so we can verify your email and pay the reward to the right person."
+    },
+    {
+      "heading": "We Come to You",
+      "text": "HB Fence is a mobile service across the Houston area, so quotes and work happen at your property."
+    },
+    {
+      "heading": "Licensed and Insured",
+      "text": "HB Fence is licensed and insured."
+    },
+    {
+      "heading": "Starting Prices",
+      "items": [
+        "Fence repairs start at $125",
+        "Fence replacements start at $1,895",
+        "Full fence projects start at $2,200",
+        "Material grade, fence height, terrain, labor hours, and demo and disposal also affect cost",
+        "Final cost depends on length, material, gate count, soil and grading, and cleanup"
+      ]
+    },
+    {
+      "heading": "Fence Replacement",
+      "text": "Replacement covers removal of the old fence, wood, chain-link and vinyl options, custom styles to fit your yard, and a workmanship warranty. We remove and dispose of the old fence as part of the job."
+    },
+    {
+      "heading": "Texas811 Before We Dig",
+      "text": "Every project includes a utility locate request with Texas811 to mark underground lines before we set posts. Our crew follows safe digging practices, uses PPE and keeps the job site tidy, with haul-off included."
+    },
+    {
+      "heading": "Materials We Install",
+      "items": [
+        "Cedar, including cap-and-trim",
+        "Pressure-treated pine",
+        "Vinyl",
+        "Chain-link in black and galvanized",
+        "Ornamental iron",
+        "Reclaimed pickets"
+      ]
+    },
+    {
+      "heading": "Every Project Includes",
+      "items": [
+        "Custom design and layout planning",
+        "Professional installation and replacement",
+        "Cedar, vinyl, chain-link and iron options",
+        "Permitting and HOA compliance",
+        "Clean job site and final walkthrough"
+      ]
+    },
+    {
+      "heading": "Commercial Fencing",
+      "text": "Chain-link with slats, ornamental iron and access control are available for commercial sites, alongside residential and commercial chain-link in black and galvanized."
+    },
+    {
+      "heading": "Gates and Hardware",
+      "text": "Manual and automatic driveway and walk gates to match the fence, gate hardware packages, and gate rehang or rebuild on a repair."
+    },
+    {
+      "heading": "From Quote to Walkthrough",
+      "items": [
+        "Consultation and site check",
+        "Design and itemized estimate",
+        "Installation and quality control",
+        "Final inspection and cleanup"
+      ]
+    },
+    {
+      "heading": "Design Ideas and Local Guides",
+      "text": "A project gallery of fence design ideas, plus a blog of fencing ideas, materials, costs and local permitting tips for Greater Houston and nearby cities."
+    },
+    {
+      "heading": "Every Houston Neighborhood",
+      "text": "We install and repair fences across all Houston neighborhoods, from the Heights, Montrose and Midtown to Spring Branch, Alief, Sharpstown, Meyerland, Westchase, Clear Lake and Kingwood, plus Bellaire, West University Place, Jacinto City and Webster."
+    },
+    {
+      "heading": "Your Information",
+      "text": "By sending a message you agree to be contacted about your quote. We never sell your data."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How fast can you start?",
+      "a": "Most installs start within 3 to 7 days depending on materials and schedule."
+    },
+    {
+      "q": "How fast can you install a typical backyard fence?",
+      "a": "Most standard residential projects take about 1 to 2 days once we start, depending on length, terrain and gate count."
+    },
+    {
+      "q": "Do you provide free estimates?",
+      "a": "Yes, free quotes by text or onsite. Send your length, style and wood type."
+    },
+    {
+      "q": "Do you handle HOA rules and permits?",
+      "a": "Yes. We review HOA guidelines and local requirements during the quote so your project stays compliant."
+    },
+    {
+      "q": "What fence materials do you recommend for Houston weather?",
+      "a": "Cedar for wood, with cap-and-trim for durability, ornamental iron for security and style, and chain-link for cost-effective enclosures."
+    },
+    {
+      "q": "Do you stain fences?",
+      "a": "Yes, oil-based stain and seal options to protect from Houston heat and rain. We will recommend timing and finishes with your quote."
+    },
+    {
+      "q": "How long will a new fence last?",
+      "a": "With quality materials, most fences last 15 to 20 years in the Houston area."
+    },
+    {
+      "q": "Do you repair chain-link fences?",
+      "a": "Yes, we service chain-link as well."
+    },
+    {
+      "q": "Do you remove the old fence?",
+      "a": "Yes, we remove and dispose of your old fence as part of a replacement."
+    },
+    {
+      "q": "Which fence material lasts longest?",
+      "a": "Cedar and powder-coated iron perform best long term, and vinyl is great for low maintenance."
+    },
+    {
+      "q": "Do you install vinyl fences?",
+      "a": "Yes. Wood, chain-link, vinyl and iron options are available, including vinyl and iron upgrades on a replacement."
+    },
+    {
+      "q": "Do you work on commercial properties?",
+      "a": "Yes. Chain-link with slats, iron and access control are available for commercial sites."
+    },
+    {
+      "q": "Do you match stain or paint on a repair?",
+      "a": "We will get as close as possible. Weathering can cause slight color differences."
+    },
+    {
+      "q": "How quickly can repairs be scheduled?",
+      "a": "Most repairs can be scheduled within 2 to 3 business days."
+    }
+  ],
+  "serviceArea": [
+    "Channelview",
+    "Houston",
+    "Crosby",
+    "Sheldon",
+    "Barrett",
+    "Highlands",
+    "Mont Belvieu",
+    "Baytown",
+    "Dyersdale",
+    "Galena Park",
+    "Cloverleaf",
+    "North Shore",
+    "Pasadena",
+    "South Houston",
+    "Deer Park",
+    "La Porte",
+    "Seabrook",
+    "Kemah",
+    "Friendswood",
+    "Pearland",
+    "Nassau Bay",
+    "Clear Lake (Houston)",
+    "League City",
+    "Conroe",
+    "The Woodlands",
+    "Spring",
+    "Tomball",
+    "Cypress",
+    "Kingwood",
+    "Humble",
+    "Atascocita",
+    "Katy",
+    "Sugar Land",
+    "Memorial (Houston)",
+    "Richmond",
+    "Fulshear",
+    "Rosenberg",
+    "Spring Valley",
+    "Tanglewood (Houston)",
+    "Bellaire",
+    "West University Place",
+    "Jacinto City",
+    "Webster"
+  ],
+  "reviews": [
+    {
+      "author": "Anton Stewart",
+      "text": "Bladimir and his crew did a fantastic (and very prompt) job building a custom, oversized wooden fence for us. Can't say enough great words about HB Fence and would recommend them to anyone in a heartbeat."
+    },
+    {
+      "author": "Justin Kay",
+      "text": "Fantastic work! Professional and prompt. Helped with HOA documentation and made sure all adjacent properties were okay with our project."
+    },
+    {
+      "author": "Victoria Falk",
+      "text": "They were able to repair a small section of fence for a reasonable rate. They did a great repair job, left the area tidy, and ended up charging me under initial quote."
+    }
+  ]
+}

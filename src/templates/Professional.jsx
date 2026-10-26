@@ -763,8 +763,9 @@ function Process({ b }) {
     <section className={`${pad} bg-surface`}>
       <div className={wrap}>
         <div className="mb-12 max-w-3xl lg:mb-14">
-          <Eyebrow>{b.process.title || 'How we work'}</Eyebrow>
-          {b.process.text && <h2 className={h2}>{b.process.text}</h2>}
+          {/* Without a line of its own, the title is the heading, so the section never stands on a label alone. */}
+          <Eyebrow>{(b.process.text && b.process.title) || 'How we work'}</Eyebrow>
+          <h2 className={h2}>{b.process.text || b.process.title || `How ${b.shortName} works`}</h2>
         </div>
         {/* On desktop the steps share the row's tracks, so a title that wraps lowers every step's text, not its own alone. */}
         <ol className={`grid gap-0 lg:gap-x-8 ${STEPS[steps.length]}`}>

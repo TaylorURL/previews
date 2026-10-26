@@ -325,7 +325,7 @@ function Eyebrow({ children, light = false }) {
         light ? 'text-white/85' : 'text-[color:var(--pt)]'
       }`}
     >
-      <span className={`h-1.5 w-1.5 flex-none rounded-full ${light ? 'bg-accent' : 'bg-primary'}`} aria-hidden="true" />
+      <span className={`h-1.5 w-1.5 flex-none rounded-full ${light ? 'bg-[color:var(--accent-lit)]' : 'bg-primary'}`} aria-hidden="true" />
       <span className="min-w-0">{children}</span>
     </p>
   );
@@ -813,7 +813,7 @@ function ClosingBand({ b, tel, title, text, flush = false }) {
                 <ul aria-label="Service area" className="mt-7 flex flex-wrap gap-2">
                   {area.map((t) => (
                     <li key={t} className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-[14px] font-medium text-white/90">
-                      <MapPin size={13} className="flex-none text-accent" aria-hidden="true" /> {t}
+                      <MapPin size={13} className="flex-none text-[color:var(--accent-lit)]" aria-hidden="true" /> {t}
                     </li>
                   ))}
                 </ul>
@@ -1880,6 +1880,9 @@ export default function Hvac({ b, path = '' }) {
     '--pt': onColor(b.brand.primary) === '#fff' ? 'var(--primary)' : 'var(--primaryDeep)',
     '--on-accent': labelOf(b.brand.accent || b.brand.primary),
     '--accent-fill': fillOf(b.brand.accent || b.brand.primary),
+    // The accent lifted toward white for marks on the deep band, where a dark
+    // accent (or the primary it falls back to) would vanish.
+    '--accent-lit': 'color-mix(in srgb, var(--accent) 40%, #fff)',
   };
 
   return (
