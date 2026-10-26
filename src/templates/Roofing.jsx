@@ -858,9 +858,15 @@ function Materials({ b, className = 'bg-surface' }) {
   return (
     <section className={`${className} ${pad}`}>
       <div className={`${wrap} grid gap-10 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:items-center lg:gap-16`}>
-        <div>
+        <div className="[container-type:inline-size]">
           <Eyebrow>Materials</Eyebrow>
-          <h2 className={h2}>{m.title}</h2>
+          {/* A long word ('Manufacturers') is set smaller until it fits the column whole, rather than broken. */}
+          <h2
+            className={`${h2} !text-[min(clamp(2rem,1.4rem+2.4vw,3.4rem),var(--fit))]`}
+            style={{ '--fit': `${(100 / (Math.max(longest(m.title), 1) * 0.78)).toFixed(2)}cqi` }}
+          >
+            {m.title}
+          </h2>
           {m.text && <p className="mt-5 max-w-[30rem] text-[17px] leading-[1.6] text-ink/75 sm:text-[18px]">{m.text}</p>}
         </div>
         <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3">
