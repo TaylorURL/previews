@@ -85,11 +85,12 @@ LOGO_FILLER = {"logo", "logos", "img", "image", "final", "main", "site", "header
 TRADE_WORD = re.compile("|".join(compose.TRADE_WORDS.values()), re.I)
 
 
-def _names_another(img, name):
+def _names_another(img, name, own_only=False):
     """True when a picture's alt text or file name names someone other than the
     business: a membership or training mark ('LVI', 'Las Vegas Institute') or
     a carrier's ('Mercury Insurance'). A trade's own word ('insurance',
-    'roofing') is shared by every business in it, so it names no one."""
+    'roofing') is shared by every business in it, so it names no one. With
+    own_only, one that names no one ('logo-2.png') is someone else's too."""
     own = compose.bare_name(name).split()
     joined = "".join(own)
     initials = {"".join(w[0] for w in own), "t" + "".join(w[0] for w in own)}
@@ -97,7 +98,9 @@ def _names_another(img, name):
     stem = img["src"].rsplit("/", 1)[-1].rsplit(".", 1)[0]
     words = [w for w in re.split(r"[^a-z0-9]+", f"{img['alt']} {stem}".lower())
              if w and w not in LOGO_FILLER and not TRADE_WORD.search(w) and not re.fullmatch(r"\d+|\d+x\d+|v\d+", w)]
-    return bool(words) and not any(w in own or (len(w) >= 4 and w in joined) or w in initials for w in words)
+    if not words:
+        return own_only
+    return not any(w in own or (len(w) >= 4 and w in joined) or w in initials for w in words)
 
 
 def _logo(pages, business, name, scratch, notes):
@@ -125,8 +128,10 @@ def _logo(pages, business, name, scratch, notes):
     for img in home.images:
         if img["header"] and img["src"] not in others:
             candidates.append(("url", img["src"]))
+    # Below the header, a picture named a logo and nothing more is as often a
+    # partner's badge in a row of them, so only one named for the business is tried.
     for img in named:
-        if not img["header"] and img["src"] not in others:
+        if not img["header"] and not _names_another(img, name, own_only=True):
             candidates.append(("url", img["src"]))
     refused = []
     seen = set()
