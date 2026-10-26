@@ -51,7 +51,10 @@ SKIP_PHOTO = re.compile(
     r"logo|icon|badge|seal|avatar|sprite|award|bbb|google|facebook|yelp|angi|homeadvisor|\.svg|certif|"
     r"accredit|member|partner|warranty|craftsman|certainteed|gaf|owens|malarkey|atlas|carrier|trane|lennox|"
     r"rheem|goodman|banner|coupon|offer|financ|map|qr|flyer|promo|special|deal|sale|graphic|infographic|"
-    r"placeholder|blank|spacer|loader|pixel|emoji|stars?\b|rating|testimonial|headshot", re.I)
+    r"placeholder|blank|spacer|loader|pixel|emoji|stars?\b|rating|testimonial|headshot|"
+    # A stock site's paid photo, which it serves with its mark across it.
+    r"plus\.unsplash|premium_photo|istockphoto|shutterstock|gettyimages|dreamstime|depositphotos|"
+    r"stock\.adobe|123rf|alamy", re.I)
 PHOTO_DOWNLOADS = 24
 
 
