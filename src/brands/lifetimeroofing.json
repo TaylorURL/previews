@@ -1,0 +1,85 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "Lifetime Roofing",
+  "shortName": "Lifetime Roofing",
+  "phone": "(409) 200-6760",
+  "email": "info@lifetimeroofing.net",
+  "address": "17802 Oak Ln",
+  "town": "Crosby",
+  "state": "TX",
+  "zip": "77532",
+  "brand": {
+    "primary": "#c3560e",
+    "primaryDeep": "#883c0a",
+    "accent": "#2fa8d8",
+    "ink": "#241f1f",
+    "surface": "#fef6f1",
+    "heading": "'Inter', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;600;700&display=swap",
+    "logo": "/brands/lifetimeroofing/logo.webp",
+    "logoMono": "/brands/lifetimeroofing/logo-mono.webp",
+    "logoWidth": 127,
+    "logoHeight": 84,
+    "logoRatio": 1.512,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.864,
+      0.806,
+      0.719,
+      0.613,
+      0.494,
+      0.081,
+      0.0,
+      0.001,
+      0.487,
+      0.799,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Lifetime Roofing",
+    "title": "Roof installation and roof repair",
+    "lead": "Roof installation, repair, and storm damage response for homes in Crosby and Liberty, with a free inspection.",
+    "titleAccent": "in Crosby"
+  },
+  "serviceArea": [
+    "Crosby",
+    "Liberty"
+  ],
+  "services": [
+    {
+      "slug": "roof-installation",
+      "title": "Roof Installation",
+      "short": "New roof?",
+      "text": "New roof? We tear off the old one and put down shingle, metal, or tile the right way, with the flashing and ventilation done properly so it lasts."
+    },
+    {
+      "slug": "roof-repair",
+      "title": "Roof Repair",
+      "short": "Got a leak or some missing shingles?",
+      "text": "Got a leak or some missing shingles? We find the actual cause and fix it, so a small repair today doesn't turn into a whole new roof later."
+    },
+    {
+      "slug": "storm-damage",
+      "title": "Storm Damage",
+      "group": "storm",
+      "short": "Hail and wind hit hard around here.",
+      "text": "Hail and wind hit hard around here. We'll check the damage, take photos your insurance company can use, and meet with your adjuster if you want us there."
+    },
+    {
+      "slug": "inspections",
+      "title": "Inspections",
+      "short": "Inspections",
+      "text": "Buying a house, selling one, or just wondering how your roof held up this spring? We'll climb up, take a look, and tell you straight what we see."
+    }
+  ],
+  "about": {
+    "title": "About Lifetime Roofing",
+    "text": [
+      "We're a local roofing company out of Crosby, TX, working on homes across Crosby and Liberty. New roofs, repairs, and storm damage. The inspection is free.",
+      "We find the actual cause before we fix anything, tell you straight what we see, and do the flashing and ventilation properly so the roof lasts. If your town isn't listed, send us a message and ask."
+    ]
+  }
+}

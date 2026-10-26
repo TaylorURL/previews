@@ -213,6 +213,36 @@ def other_trade(text, trade):
     return bool(own) and not re.search(own, text, re.I) and bool(TRADE_SOLD.search(text))
 
 
+STATES = {
+    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California", "CO": "Colorado",
+    "CT": "Connecticut", "DE": "Delaware", "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho",
+    "IL": "Illinois", "IN": "Indiana", "IA": "Iowa", "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana",
+    "ME": "Maine", "MD": "Maryland", "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi",
+    "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada", "NH": "New Hampshire", "NJ": "New Jersey",
+    "NM": "New Mexico", "NY": "New York", "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma",
+    "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina", "SD": "South Dakota",
+    "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont", "VA": "Virginia", "WA": "Washington",
+    "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming",
+}
+
+
+def placed_elsewhere(text, town=None, state=None, towns=()):
+    """True when the words set them in another state ("Kansas City's trusted
+    roofing contractor", "out of Kansas City, MO") and never in their own town
+    or state: a site written for another place, or a theme's demo copy."""
+    if not state or state not in STATES:
+        return False
+    # A town near them, even one named for another state ("Missouri City"), sets them here.
+    if any(re.search(rf"\b{re.escape(t)}\b", text) for t in [town, *towns] if t):
+        return False
+    if re.search(rf"\b{re.escape(STATES[state])}\b|,\s*{state}\b", text):
+        return False
+    # Washington is as often a street's name as a state's.
+    others = [n for c, n in STATES.items() if c not in (state, "WA")]
+    codes = [c for c in STATES if c != state]
+    return bool(re.search(rf"\b(?:{'|'.join(others)})\b|,\s*(?:{'|'.join(codes)})\b", text))
+
+
 SINCE = re.compile(r"\b(?:since|established|founded|est\.?|serving [^.]{0,40} since)\s+((?:19|20)\d\d)\b", re.I)
 LICENSE = re.compile(r"\b((?:TDLR|TACLA|TECL|TDI|NPN|License|Lic\.)\s*(?:No\.?|#|Number)\s*:?\s*[A-Z]{0,6}-?\d[\w-]{3,})", re.I)
 NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|where|your|schedule|consult|consultation|request|checklist|estimator|calculator|types of|signs (?:of|that|you)|(?:benefits?|advantages|importance) of|our|blog|news|faqs?|frequently asked|questions?|costs?|prices?|pricing|understanding|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|crews?|staff|professionals?|pros|painters?|technicians?|office|branch|powered|serving|products|vice president|vp|agents?|assistants?|hygienists?|dentists?|orthodontists?|periodontists?|endodontists?|prosthodontists?|surgeons?|physicians?|providers?|receptionists?|coordinators?|managers?|industry|page|apps?|directory|companies|contractors?|finance a|overview|dangers?)\b", re.I)
@@ -770,14 +800,23 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
     return [found[k] for k in order][:8]
 
 
-def about_of(pages, name, trade=None, services=()):
+def about_of(pages, name, trade=None, services=(), town=None, state=None, towns=()):
     """Their own about text: the about page first, then the home page's own paragraphs about them."""
     chosen = []
     # A service's own words, set under its heading on their page ("Poor airflow
     # can trap heat and moisture in your attic...", under Attic & Roof
     # Ventilation), tell what one service is, not who they are. A service
     # named only for the trade ("Roofing Services") can be told in their story's words.
-    told_of = [set(re.findall(r"[a-z]+", sentences(s["text"])[0].lower())) for s in services if s.get("text") and not GENERIC_SERVICE.match(s["title"])]
+    # Its opening is read on to six words at least, so one that opens on a
+    # short question ("New roof? We tear off the old one...") is still known.
+    def opening(text):
+        said = set()
+        for s in sentences(text):
+            said |= set(re.findall(r"[a-z]+", s.lower()))
+            if len(said) >= 6:
+                break
+        return said
+    told_of = [opening(s["text"]) for s in services if s.get("text") and not GENERIC_SERVICE.match(s["title"])]
     ordered = sorted(pages, key=lambda p: 0 if re.search(r"about|story|who-we", p.url, re.I) else 1)
     short = short_name(name).lower().split(" ")[0]
     for page in ordered:
@@ -871,6 +910,10 @@ def about_of(pages, name, trade=None, services=()):
                 continue
             if other_trade(text, trade):
                 continue
+            # Nor is one that sets them in another state ("a local roofing
+            # company out of Kansas City, MO" for a roofer in Crosby, TX).
+            if placed_elsewhere(text, town, state, towns):
+                continue
             said = set(re.findall(r"[a-z]+", text.lower()))
             if any(len(t) >= 6 and len(t & said) >= 0.8 * len(t) for t in told_of):
                 continue
@@ -957,12 +1000,17 @@ def unsited(text):
     return " ".join(s for s in sentences(text) if not SITE_TALK.match(s))
 
 
-def lead_of(pages, about, trade=None, services=()):
+def lead_of(pages, about, trade=None, services=(), town=None, state=None, towns=()):
     about = [unsited(unphoned(p)) for p in about]
     for page in pages[:1]:
         for key in ("og:description", "description"):
             text = trim(unsited(unphoned(HEADING_RUN_IN.sub("", plain(page.meta.get(key, ""))))), 220)
             if other_trade(text, trade) or not FINISHED.search(text):
+                continue
+            # A description that sets them in another state ("Kansas City's
+            # trusted roofing contractor" for a roofer in Crosby, TX) was
+            # written for somewhere else; under their hero it contradicts their address.
+            if placed_elsewhere(text, town, state, towns):
                 continue
             # A description left from the theme or another company's site
             # ("industrial machinery, tools, and engineering services" on a
