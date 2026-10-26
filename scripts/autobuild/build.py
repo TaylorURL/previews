@@ -444,10 +444,15 @@ def build(prospect, root, slug):
         brand["about"] = about_block()
 
     elif template == "roofing":
+        # A service page leads on the service's text under its heading, so its
+        # body carries only the sentences that text has not already said.
+        def untold(text):
+            return " ".join(compose.sentences(text)[len(compose.sentences(compose.trim(text, 170))):])
         brand["services"] = [
             {"slug": compose.slugify(s["title"]), "title": s["title"],
              **({"group": group} if (group := next((k for k, p in compose.ROOF_GROUPS if re.search(p, s["title"], re.I)), None)) else {}),
-             "short": compose.trim(s["text"], 70) or s["title"], "text": compose.trim(s["text"], 170) or "", **({"body": [s["text"]]} if s["text"] else {})}
+             "short": compose.trim(s["text"], 70) or s["title"], "text": compose.trim(s["text"], 170) or "",
+             **({"body": [rest]} if (rest := untold(s["text"])) else {})}
             for s in services
         ]
         if not about:
