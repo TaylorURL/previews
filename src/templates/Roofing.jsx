@@ -1569,7 +1569,8 @@ function AreasPage({ b, tel }) {
           <div>
             <Eyebrow>Find us</Eyebrow>
             <h2 className={h2}>
-              {b.address}, {b.town}
+              {/* A suite number ("Ste 202-350") wraps whole, never at its hyphen. */}
+              {b.address.split(/(\S*\d-\d\S*)/).map((part, i) => (i % 2 ? <span key={part} className="whitespace-nowrap">{part}</span> : part))}, {b.town}
             </h2>
             <p className="mt-5 text-[17px] leading-[1.6] text-ink/75 sm:text-[18px]">
               Not sure whether we reach you? Call and ask; if we cannot get there, we will say so.
