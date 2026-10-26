@@ -887,53 +887,55 @@ function Materials({ b, className = 'bg-surface' }) {
   );
 }
 
-function ProjectCard({ p }) {
+function ProjectCard({ p, wide = false }) {
   const [view, setView] = useState('after');
   const showing = p.before && view === 'before';
   return (
-    <li className="flex min-w-0 flex-col">
-      <figure className="relative m-0 overflow-hidden bg-ink">
-        <Img
-          className={`aspect-[4/3] w-full object-cover transition-opacity duration-300 ${showing ? 'opacity-0' : 'opacity-100'}`}
-          src={p.image}
-          alt={p.imageAlt}
-          sizes="(min-width: 1024px) 31vw, (min-width: 768px) 48vw, 100vw"
-        />
-        {p.before && (
+    <li className={`min-w-0 ${wide ? 'md:col-span-2 md:grid md:grid-cols-2 md:items-center md:gap-x-10' : 'flex flex-col'}`}>
+      <div>
+        <figure className="relative m-0 overflow-hidden bg-ink">
           <Img
-            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-300 ${showing ? 'opacity-100' : 'opacity-0'}`}
-            src={p.before}
-            alt={p.beforeAlt || ''}
+            className={`aspect-[4/3] w-full object-cover transition-opacity duration-300 ${showing ? 'opacity-0' : 'opacity-100'}`}
+            src={p.image}
+            alt={p.imageAlt}
             sizes="(min-width: 1024px) 31vw, (min-width: 768px) 48vw, 100vw"
           />
+          {p.before && (
+            <Img
+              className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-300 ${showing ? 'opacity-100' : 'opacity-0'}`}
+              src={p.before}
+              alt={p.beforeAlt || ''}
+              sizes="(min-width: 1024px) 31vw, (min-width: 768px) 48vw, 100vw"
+            />
+          )}
+          <figcaption className="absolute left-0 top-4 bg-accent px-3 py-1.5 font-heading text-[13px] font-semibold uppercase tracking-[0.14em] text-[color:var(--on-accent)]">
+            {showing ? 'Before' : 'After'}
+          </figcaption>
+        </figure>
+        {!p.before && (
+          <p className="flex min-h-[52px] items-center justify-center border-x-2 border-b-2 border-ink bg-ink font-heading text-[15px] font-semibold uppercase tracking-[0.12em] text-white">
+            Finished Roof
+          </p>
         )}
-        <figcaption className="absolute left-0 top-4 bg-accent px-3 py-1.5 font-heading text-[13px] font-semibold uppercase tracking-[0.14em] text-[color:var(--on-accent)]">
-          {showing ? 'Before' : 'After'}
-        </figcaption>
-      </figure>
-      {!p.before && (
-        <p className="flex min-h-[52px] items-center justify-center border-x-2 border-b-2 border-ink bg-ink font-heading text-[15px] font-semibold uppercase tracking-[0.12em] text-white">
-          Finished Roof
-        </p>
-      )}
-      {p.before && (
-        <div className="grid grid-cols-2 border-x-2 border-b-2 border-ink" role="group" aria-label={`Before and after: ${p.title}`}>
-          {['before', 'after'].map((v) => (
-            <button
-              key={v}
-              type="button"
-              aria-pressed={view === v}
-              onClick={() => setView(v)}
-              className={`min-h-[48px] cursor-pointer font-heading text-[15px] font-semibold uppercase tracking-[0.12em] transition ${
-                view === v ? 'bg-ink text-white' : 'bg-white text-ink hover:bg-surface'
-              }`}
-            >
-              {v === 'before' ? 'Before' : 'After'}
-            </button>
-          ))}
-        </div>
-      )}
-      <div className="pt-5">
+        {p.before && (
+          <div className="grid grid-cols-2 border-x-2 border-b-2 border-ink" role="group" aria-label={`Before and after: ${p.title}`}>
+            {['before', 'after'].map((v) => (
+              <button
+                key={v}
+                type="button"
+                aria-pressed={view === v}
+                onClick={() => setView(v)}
+                className={`min-h-[48px] cursor-pointer font-heading text-[15px] font-semibold uppercase tracking-[0.12em] transition ${
+                  view === v ? 'bg-ink text-white' : 'bg-white text-ink hover:bg-surface'
+                }`}
+              >
+                {v === 'before' ? 'Before' : 'After'}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+      <div className={wide ? 'pt-5 md:pt-0' : 'pt-5'}>
         <p className="text-[14px] font-semibold uppercase tracking-[0.12em] text-primary">
           {p.town} &middot; {p.scope}
         </p>
@@ -944,16 +946,29 @@ function ProjectCard({ p }) {
   );
 }
 
+/**
+ * Two projects, or five, would leave the last row a column short, so the
+ * heading takes the first column of the row; one project takes the two
+ * columns beside the heading, its photo beside its words. The photos are
+ * never drawn wider than a third of the page.
+ */
 function Projects({ items, title = 'Recent roofs', className = '' }) {
   if (!items.length) return null;
+  const inline = items.length === 1 || items.length % 3 === 2;
+  const heading = (
+    <>
+      <Eyebrow>Projects</Eyebrow>
+      <h2 className={`${h2} ${inline ? '' : 'mb-10 lg:mb-14'}`}>{title}</h2>
+    </>
+  );
   return (
     <section id="projects" className={`${anchor} ${className} ${pad}`}>
       <div className={wrap}>
-        <Eyebrow>Projects</Eyebrow>
-        <h2 className={`${h2} mb-10 lg:mb-14`}>{title}</h2>
+        {!inline && heading}
         <ul className="grid gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+          {inline && <li className="min-w-0 md:col-span-2 lg:col-span-1">{heading}</li>}
           {items.map((p) => (
-            <ProjectCard key={p.title} p={p} />
+            <ProjectCard key={p.title} p={p} wide={items.length === 1} />
           ))}
         </ul>
       </div>
