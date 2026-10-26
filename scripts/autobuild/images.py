@@ -14,7 +14,7 @@ import shutil
 import subprocess
 import tempfile
 
-from PIL import Image, ImageStat
+from PIL import Image, ImageChops, ImageStat
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 
@@ -79,6 +79,17 @@ def same_scene(a, b, share=0.6):
 def blank(image):
     stat = ImageStat.Stat(image.convert("L"))
     return stat.stddev[0] < 8
+
+
+def trimmed(image):
+    """A photo without the plain white margin their page laid it out with (a
+    picture set off to one side of a white panel, a transparent edge), which
+    would draw as a pale strip down the side of the frame it fills."""
+    rgba = image.convert("RGBA")
+    flat = Image.new("RGB", rgba.size, (255, 255, 255))
+    flat.paste(rgba, mask=rgba.getchannel("A"))
+    box = ImageChops.difference(flat, Image.new("RGB", flat.size, (255, 255, 255))).convert("L").point(lambda v: 255 if v > 16 else 0).getbbox()
+    return image.crop(box) if box and box != (0, 0) + image.size else image
 
 
 def save_photo(image, folder, name):

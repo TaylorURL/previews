@@ -146,6 +146,12 @@ function readableAccent(brand) {
 /** A service their site only names has no page of its own, which would say nothing under its heading; it is listed by name. */
 const hasPage = (s) => Boolean(s.lead || s.text || list(s.covers).length || list(s.questions).length);
 
+/** A service's short line, unless it only says the service's name again. */
+const summaryOf = (s) => (s.summary && s.summary.trim().toLowerCase() !== s.title.trim().toLowerCase() ? s.summary : '');
+
+/** Lines under the names of a set of services only when every one has its own; one line among bare names reads as cut-off text. */
+const summaries = (items) => items.every(summaryOf);
+
 /** A link to the service's page, or its name alone where it has none. */
 function ServiceLink({ s, ...rest }) {
   if (hasPage(s)) return <a href={`/services/${s.slug}`} {...rest} />;
@@ -219,6 +225,7 @@ function TopBar({ b, tel }) {
 }
 
 function MegaMenu({ b, groups, path, k, open, id }) {
+  const lines = summaries(groups.flatMap((g) => g.items));
   return (
     <div id={id} hidden={!open} className="absolute inset-x-0 top-full pt-2">
       <div className={wrap}>
@@ -240,7 +247,7 @@ function MegaMenu({ b, groups, path, k, open, id }) {
                         <Icon size={24} strokeWidth={1.25} className="mt-0.5 flex-none text-primary" aria-hidden="true" />
                         <span className="grid gap-0.5">
                           <span className="font-semibold text-ink">{s.title}</span>
-                          {s.summary && <span className="text-sm leading-snug text-muted">{s.summary}</span>}
+                          {lines && <span className="text-sm leading-snug text-muted">{s.summary}</span>}
                         </span>
                       </ServiceLink>
                     </li>
@@ -1047,6 +1054,7 @@ function ServicePage(props) {
   const questions = list(s.questions);
   const group = groups.find((g) => g.items.includes(s));
   const related = [...(group?.items || []), ...list(b.services)].filter((o, i, all) => o !== s && hasPage(o) && all.indexOf(o) === i).slice(0, 3);
+  const lines = summaries(related);
   return (
     <>
       <PageHero
@@ -1129,7 +1137,7 @@ function ServicePage(props) {
                       </span>
                       <span className="grid min-h-12 min-w-0 flex-1 content-center gap-0.5">
                         <span className="font-heading text-lg leading-snug">{o.title}</span>
-                        {o.summary && <span className="text-base leading-snug text-muted sm:text-[15px]">{o.summary}</span>}
+                        {lines && <span className="text-base leading-snug text-muted sm:text-[15px]">{o.summary}</span>}
                       </span>
                       <span className="grid h-12 flex-none place-items-center">
                         <ArrowRight size={18} className="text-primary transition-transform group-hover:translate-x-1" aria-hidden="true" />
