@@ -206,7 +206,7 @@ def _photos(pages, logo_src, logo_image, scratch, notes, root, slug):
     kept, refused = [], []
     for url in _photo_candidates(pages, logo_src)[:PHOTO_DOWNLOADS]:
         try:
-            image = images.open_image(collect.fetch(url, binary=True)[1])
+            image = images.trimmed(images.open_image(collect.fetch(url, binary=True)[1]))
         except Exception:
             continue
         if image.width < 700 or image.height < 400:
