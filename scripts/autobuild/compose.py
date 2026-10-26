@@ -606,15 +606,18 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # "Finishing the Job with Stump Grinding" is a line about the work
         # with the service at its end; the service is what it is done with.
         name = re.sub(r"^\w+ing (?:the|your|our|a|an|every) .+? (?:with|by|through) ", "", name, flags=re.I)
+        # "DRYWALL Drywall Installation & Repair" is a card's label run into
+        # its heading; the word is said once.
+        name = re.sub(r"\b(\w+)\s+(?=\1\b)", "", name, flags=re.I)
         if not (3 <= len(name) <= 42) or len(name.split()) > 6 or GENERIC_NAV.match(name):
             return
         if not pattern.search(name) or re.search(r"[?!@]|\d{3}", name) or NOT_A_SERVICE.search(name) or re.match(r"(on|for|with|to|in|at|from|and|i|my|we)\b", name, re.I):
             return
         # A heading that opens on a bidding verb ("Find Storage", "Rent a Unit",
-        # "Select a Fence Style", "Keep the Wheels Turning") is a call to action
-        # or a slogan, not a service, and one that names a warranty ("Warranty
-        # on Fence Materials") is a promise.
-        if re.match(r"(find|rent|reserve|book|get|browse|shop|keep|let|stay|click|tap)\b|(select|choose) (a|an|the|your)\b", name, re.I):
+        # "Select a Fence Style", "Keep the Wheels Turning", "Upgrade to a Roof
+        # That Lasts") is a call to action or a slogan, not a service, and one
+        # that names a warranty ("Warranty on Fence Materials") is a promise.
+        if re.match(r"(find|rent|reserve|book|get|browse|shop|keep|let|stay|click|tap)\b|(select|choose) (a|an|the|your)\b|upgrade (to|your)\b", name, re.I):
             return
         # One that ends on a full stop ("Click shingles to compare roof
         # colors.") is a sentence of their page, not the name of a service.
