@@ -392,7 +392,7 @@ def build(prospect, root, slug):
     if hero_image:
         brand["hero"]["image"] = hero_image
         brand["hero"]["imageAlt"] = f"A photo of {short}"
-    line = compose.hero_line(services, town, label)
+    line = compose.hero_line(services, town, label, vocab_key)
     if template in ("roofing", "hvac"):
         # The name leads in small type; the work is the headline and the town
         # its accent, so a long business name never fills the hero.
