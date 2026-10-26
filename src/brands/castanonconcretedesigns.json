@@ -1,0 +1,418 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Castanon Concrete Designs LLC",
+  "shortName": "Castanon Concrete Designs",
+  "summary": "Licensed and insured concrete contractor installing stamped patios, driveways, pool decks, slabs and decorative concrete across Houston, Pearland and the surrounding area.",
+  "phone": "(346) 760-7559",
+  "email": "marco@castanonconcretedesigns.com",
+  "address": "5710 Trendale St",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77087",
+  "rating": 4.9,
+  "reviewCount": 96,
+  "hours": [
+    ["Mon – Sat", "6 AM – 9 PM"],
+    ["Sunday", "7 AM – 5 PM"]
+  ],
+  "brand": {
+    "primary": "#06196a",
+    "primaryDeep": "#040f45",
+    "heading": "'Manrope', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/castanonconcretedesigns/logo.webp",
+    "logoMono": "/brands/castanonconcretedesigns/logo-mono.webp",
+    "logoWidth": 121,
+    "logoHeight": 84,
+    "logoRatio": 1.44,
+    "logoGround": "#06196a",
+    "logoReads": [0.994, 0.997, 0.908, 0.807, 0.705, 0.607, 0.519, 0.265, 0.045, 0.103, 0.216]
+  },
+  "hero": {
+    "eyebrow": "Licensed and insured concrete contractor",
+    "title": "Stamped concrete patios and driveways",
+    "titleAccent": "that last.",
+    "lead": "Castanon Concrete Designs is a concrete contractor serving Houston, Pearland and the surrounding area, specializing in driveways, patios, stamped concrete, slabs and decorative concrete. Every project is personally supervised by Marco Castanon.",
+    "image": "/brands/castanonconcretedesigns/hero",
+    "imageAlt": "A stamped concrete patio and curved walkway with decorative medallion panels beside a planted garden bed"
+  },
+  "groups": [
+    {
+      "slug": "stamped-and-decorative-concrete",
+      "title": "Stamped and Decorative Concrete",
+      "icon": "ruler",
+      "summary": "Custom stamped textures and colored finishes that stand up to Texas heat.",
+      "intro": "Stamped concrete is decorative concrete that is textured, patterned and colored to duplicate the look of natural slate, flagstone, brick, cobblestone or wood plank. While the freshly poured concrete is still plastic, specialized rigid polyurethane stamps are pressed into the surface after color hardeners and release agents are applied.",
+      "image": "/brands/castanonconcretedesigns/stamped-patio",
+      "imageAlt": "A stamped concrete patio under a timber pergola behind a brick house",
+      "services": [
+        {
+          "slug": "stamped-concrete-patios",
+          "title": "Stamped Concrete Patios",
+          "icon": "ruler",
+          "text": "Transform your outdoor living area with realistic stone, slate and wood-plank patterns, poured in high-strength mixes with integral color and sealed against fading and moisture.",
+          "points": [
+            "4,000 PSI commercial-grade mix",
+            "Integral color and UV protectant sealing",
+            "Moisture and pool chemical resistant"
+          ]
+        },
+        {
+          "slug": "decorative-concrete",
+          "title": "Decorative Concrete",
+          "icon": "sun",
+          "text": "Upgrade plain gray surfaces with decorative stamped borders, multi-tonal antique wash releases, custom acid staining, engraving, washed finishes and scored geometric patterns, on walkways and porches as well as outdoor living areas.",
+          "points": [
+            "Multi-tone antique wash release",
+            "Hand-tooled stamped borders",
+            "Chemical acid-stain resistance"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "driveways",
+      "title": "Driveways",
+      "icon": "car",
+      "summary": "Reinforced driveways, replacements and extensions engineered for Houston clay soils.",
+      "intro": "Replace cracked asphalt or deteriorated flatwork with reinforced concrete built for the way local ground moves. Every driveway is poured over compacted subgrade with a tied rebar grid and expansion joints placed where the slab needs them.",
+      "services": [
+        {
+          "slug": "concrete-driveways",
+          "title": "Concrete Driveways",
+          "icon": "car",
+          "text": "Heavy-duty reinforced concrete driveways poured for long-term vehicle weight durability and curb appeal.",
+          "points": [
+            "Subgrade clay soil compaction",
+            "#3 or #4 tied rebar grid structural core",
+            "Engineered expansion joints",
+            "Non-slip broom finish and durable cure sealant"
+          ]
+        },
+        {
+          "slug": "driveway-replacement",
+          "title": "Driveway Replacement",
+          "icon": "wrench",
+          "text": "Remove failing, cracked or settled driveways and pour a fully reinforced replacement engineered for Houston-area clay soils, proper drainage and long-term structural stability.",
+          "points": [
+            "Full demolition and haul-off of old concrete",
+            "Engineered sub-base and rebar reinforcement",
+            "Matched expansion joint placement"
+          ]
+        },
+        {
+          "slug": "driveway-extension",
+          "title": "Driveway Extension",
+          "icon": "ruler",
+          "text": "Extend your existing driveway for additional parking, boat or RV storage, or workspace, tied seamlessly into your current slab.",
+          "points": [
+            "Seamless tie-in to existing slab",
+            "Matched finish, color and thickness",
+            "Engineered expansion joint integration"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "patios-and-pool-decks",
+      "title": "Patios and Pool Decks",
+      "icon": "home",
+      "summary": "Outdoor living space and slip-resistant pool surrounds, sloped and drained properly.",
+      "intro": "From smooth troweled surfaces to broom-finished entertainment spaces, we engineer proper drainage slopes away from your home's foundation while integrating seamlessly with your landscaping. Pool surrounds get textures built for bare feet and pool chemicals.",
+      "image": "/brands/castanonconcretedesigns/covered-patio",
+      "imageAlt": "A finished concrete patio under a covered pergola with a dining set",
+      "services": [
+        {
+          "slug": "concrete-patio-installation",
+          "title": "Concrete Patio Installation",
+          "icon": "home",
+          "text": "Expansive outdoor living foundations tailored for backyard entertainment, fire pits and outdoor kitchens.",
+          "points": [
+            "Laser-leveled foundation pitch",
+            "Broom-finish or smooth trowel options",
+            "Seamless perimeter landscaping tie-in"
+          ]
+        },
+        {
+          "slug": "concrete-pool-decks",
+          "title": "Concrete Pool Decks",
+          "icon": "droplets",
+          "text": "Textured, cool-footed concrete engineered for superior slip resistance when wet, tied harmoniously into existing patio architecture.",
+          "points": [
+            "Non-slip tactile safety textures",
+            "Chlorine and saltwater barrier seal",
+            "Heat-reflective surface sealants",
+            "Thermal expansion joints against coastal water tables",
+            "Precision coping and perimeter slope"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "concrete-slabs",
+      "title": "Concrete Slabs",
+      "icon": "building",
+      "summary": "Level, reinforced slabs for sheds, workshops, detached garages and equipment pads.",
+      "intro": "Monolithic and perimeter-thickened concrete slab foundations poured to exact structural tolerances. Heavy vapor barriers and dense rebar grids go in before the pour so the slab carries the load it was built for.",
+      "services": [
+        {
+          "slug": "slab-foundations",
+          "title": "Slab Foundations",
+          "icon": "building",
+          "text": "Precision engineered, level foundation slabs for home additions, storage sheds, detached garages, workshops, outdoor gazebos and equipment pads.",
+          "points": [
+            "Perimeter-thickened monolithic pour, post-tension capable",
+            "Grade beams, wire mesh or rebar reinforcement",
+            "Shed, garage and workshop load-bearing",
+            "Heavy vapor barriers and dense rebar grids",
+            "Exact structural tolerance leveling"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "Owner-supervised quality",
+    "title": "Craftsmanship led personally by Marco Castanon",
+    "text": [
+      "Castanon Concrete Designs was founded on a simple principle: homeowners deserve direct access to the craftsman responsible for their property. Marco Castanon, Owner and CEO, personally supervises every project from initial site grading and reinforcement tie-offs to the final wash and seal.",
+      "With over a decade of hands-on experience in the Greater Houston trade, Marco brings structural rigor and architectural design insight to every pour. We don't cut corners on concrete strength or reinforcement spacing, which is why 98% of our clients recommend our work to their neighbors."
+    ],
+    "image": "/brands/castanonconcretedesigns/about",
+    "imageAlt": "A finished concrete patio and pergola at the back of a Houston home",
+    "values": [
+      {
+        "title": "Personal oversight",
+        "text": "Every project is personally managed by Marco Castanon, from mix specifications to surface curing."
+      },
+      {
+        "title": "Licensed and insured",
+        "text": "Fully licensed and carrying comprehensive general liability insurance for the length of the project."
+      },
+      {
+        "title": "Built for Texas soils",
+        "text": "Reinforced 4,000 PSI mixes, compacted subgrade and engineered joints for local clay and humidity."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Credentials",
+      "items": [
+        "10+ years of residential and commercial flatwork experience in Greater Houston",
+        "350+ concrete projects completed",
+        "98% customer satisfaction rate",
+        "Fully licensed and insured, with comprehensive general liability and property coverage",
+        "Licensed crews on every site",
+        "Residential and light commercial concrete work"
+      ]
+    },
+    {
+      "heading": "How we build",
+      "items": [
+        "Reinforced 4,000 PSI concrete mixes",
+        "Rebar or fiber mesh reinforcement, with 4-inch patios and 5 to 6-inch driveways",
+        "#3 or #4 tied rebar grid, set on chairs over compacted subgrade",
+        "Compacted crushed stone base under driveways",
+        "Engineered expansion joints, control joints and drainage slopes",
+        "Integral color with commercial-grade UV protectant sealing",
+        "Professional-grade breathable acrylic or polyurethane sealer, solvent or water based",
+        "High-strength ready-mix concrete, with wire mesh or non-corrosive reinforcement where the slab calls for it",
+        "Heavy moisture barriers under slabs, and grade beams on monolithic and post-tension foundations",
+        "Poured to local municipal depth and thickness requirements"
+      ]
+    },
+    {
+      "heading": "Who you work with",
+      "text": "Marco Castanon is the owner, CEO and lead contractor. He and the company's own concrete crews pour and supervise every project, and he manages each one on site from start to finish."
+    },
+    {
+      "heading": "Also poured",
+      "text": "Beyond patios, driveways and pool decks: walkways, entryways and porches, outdoor kitchen slabs, shade structure and gazebo pads, utility and equipment pads, boat parking slabs, garage expansions and home additions, plus refreshing and upgrading existing slabs."
+    },
+    {
+      "heading": "Estimates and pricing",
+      "text": "Pricing is quote-based rather than a flat rate: ground conditions, square footage, reinforcement and the finish you choose all shape the scope. On-site estimates are free and carry no obligation. Call or email Marco directly, or request one online. Decorative finishes are offered at contractor-direct pricing."
+    },
+    {
+      "heading": "What the free estimate visit covers",
+      "text": "Marco Castanon comes to the property himself to take laser measurements, inspect how the ground drains and go through stamp samples with you, then writes up an accurate scope of work and a transparent itemized quote."
+    },
+    {
+      "heading": "What shapes the price",
+      "items": [
+        "Total square footage, and the thickness the slab needs",
+        "Demolition of old slabs, excavation and subgrade preparation",
+        "Site access for concrete mixer trucks or wheelbarrows",
+        "Reinforcement schedule, rebar or fiber mesh",
+        "How much decorative color and stamping you choose"
+      ]
+    },
+    {
+      "heading": "How a project runs",
+      "items": [
+        "On-site consultation and estimate, then detailed layout and permitting where it is required",
+        "Site clearing, laser leveling and subbase compaction",
+        "Framing with wood or steel forms, with rebar placed on chairs",
+        "Pour and finish, control joint cutting, then proper curing",
+        "On stamped work: color hardener and release agent, pattern stamping, relief joints, power washing and two protective seal coats"
+      ]
+    },
+    {
+      "heading": "Timeline and curing",
+      "items": [
+        "Most residential patios and driveways are prepared, formed, poured and sealed within 2 to 4 consecutive business days, weather permitting",
+        "Foot traffic after 24 to 48 hours, depending on temperature and humidity",
+        "Keep pets and children off the slab for at least the first 24 hours",
+        "Passenger vehicles after 7 full days; heavy trucks, delivery vehicles and motorhomes after 28 days",
+        "Concrete cures by hydration rather than drying: about 70% of design strength at 7 days, full structural cure at 28 days"
+      ]
+    },
+    {
+      "heading": "Caring for your concrete",
+      "items": [
+        "Sweep off leaves, fertilizer pellets and soil debris regularly",
+        "Reseal stamped and decorative concrete every 2 to 3 years, depending on sun exposure and foot traffic, or every 2 years in direct south-facing sun",
+        "Rinse with a garden hose or a low-pressure washer under 2,000 PSI with a wide fan tip",
+        "Use pH-neutral cleaners, mild dish soap or a dedicated concrete detergent; avoid acid washes, muriatic acid and caustic strippers",
+        "Treat oil and grease stains promptly with a degreasing agent",
+        "Never use rock salt, calcium chloride or chemical deicers on concrete; use plain sand for traction"
+      ]
+    },
+    {
+      "heading": "Stamp patterns available",
+      "text": "Ashlar slate, random flagstone, European fan cobble, Roman slate, running bond brick and rustic timber wood-plank textures, combined with integral and topical color accents."
+    },
+    {
+      "heading": "Requesting an estimate online",
+      "text": "The online estimate form asks for your name, phone, email, the concrete service you need, the project address, an approximate budget and the project details with estimated dimensions. From there we schedule a prompt on-site consultation and quote."
+    },
+    {
+      "heading": "Built for Houston conditions",
+      "items": [
+        "Reinforced rebar and deep-tamped sub-bases engineered for Houston's expanding black gumbo clay and heavy vehicle loads",
+        "UV-stable sealers that hold up to intense Gulf Coast humidity and heat",
+        "Integrated slope designs that shed torrential Houston downpours safely away from home foundations",
+        "Reinforced sub-bases and weather-resistant sealers that guard against ground shifting and moisture damage"
+      ]
+    },
+    {
+      "heading": "Where we work",
+      "text": "Castanon Concrete Designs serves Pearland, Houston and the Houston metropolitan area, concentrating on the southern and eastern Houston metroplex, for both residential and light commercial concrete projects."
+    },
+    {
+      "heading": "Recent installations",
+      "items": [
+        "Custom stamped concrete patio in Houston",
+        "Reinforced residential driveway in Pearland",
+        "Textured stamped hardscape installation in Friendswood",
+        "Architectural pool deck and pool surround in Houston",
+        "Pergola and concrete patio decorative work",
+        "Engineered monolithic foundation slab"
+      ]
+    },
+    {
+      "heading": "Follow our latest projects",
+      "text": "New installations are posted to Facebook at facebook.com/castconcretedesigns."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Why is pricing quote-based rather than a flat fixed rate?",
+      "a": "Every project has unique field conditions. Soil stability, site grade changes, demolition of old slabs, accessibility for concrete mixer trucks, reinforcement specifications and the finish you choose all change the scope, so we give a thorough, no-obligation on-site estimate instead of a generic rate."
+    },
+    {
+      "q": "Is stamped concrete suitable for patios and pool decks?",
+      "a": "Yes. Stamped concrete is widely installed on residential patios, outdoor kitchens and swimming pool copings. Around wet areas like pool decks we add a micronized non-slip grip additive to the clear sealer coat for safe traction."
+    },
+    {
+      "q": "How durable is stamped concrete, and does it fade in UV?",
+      "a": "Poured with appropriate PSI ratings, reinforced subgrades and high-grade UV-resistant iron oxide pigments, stamped concrete does not wash out or peel. The clear protective topical sealer shields the pigment from ultraviolet degradation."
+    },
+    {
+      "q": "How long does it take before I can use a new driveway?",
+      "a": "Standard passenger vehicles can park and drive on the slab after 7 full days of cure time. Heavy trucks, delivery vehicles and recreational motorhomes should stay off it for a full 28 days."
+    },
+    {
+      "q": "What should I do about minor hairline cracks?",
+      "a": "Minor micro-fissures and hairline shrinkage cracks do not threaten structural integrity. They can be sealed with color-matched flexible polyurethane or elastomeric joint sealants during routine maintenance to keep moisture out of the subbase."
+    },
+    {
+      "q": "Who owns and operates Castanon Concrete Designs?",
+      "a": "Castanon Concrete Designs is locally owned and supervised on site by Marco Castanon, Owner and CEO, so every slab is checked for quality, alignment and finish by the person responsible for it."
+    },
+    {
+      "q": "How can I request a free on-site estimate?",
+      "a": "Call or email us directly and Marco Castanon comes out to the property in person. He takes laser measurements, inspects how the ground drains, reviews stamp samples with you and compiles an accurate written scope of work. There is no obligation."
+    },
+    {
+      "q": "What factors affect the cost of a concrete project?",
+      "a": "Total square footage, demolition and excavation, subgrade preparation, how easily a mixer truck or wheelbarrow can reach the work, the reinforcement schedule of rebar or fiber mesh, the thickness the slab needs - a 4-inch patio against a 5 to 6-inch heavy driveway - and how much decorative color and stamping you choose."
+    },
+    {
+      "q": "What are the typical steps in a concrete project?",
+      "a": "On-site consultation and estimate, detailed layout and permitting where it is required, site clearing and laser leveling, subbase compaction, framing with wood or steel forms, rebar placed on chairs, the pour and finish, control joint cutting, and proper curing. Stamped work adds color hardener and release agent, pattern stamping, relief joints, power washing and two protective seal coats."
+    },
+    {
+      "q": "How is stamped concrete sealed and maintained?",
+      "a": "Stamped concrete gets a professional-grade breathable acrylic or polyurethane sealer, solvent or water based, once the work is finished. Wash it periodically with a garden hose and mild soap, and reseal every two to three years depending on sun exposure and foot traffic."
+    },
+    {
+      "q": "How long does concrete take to cure?",
+      "a": "Concrete cures through hydration rather than drying. It reaches roughly 70% of its compressive design strength within 7 days and hits its full structural cure milestone at 28 days."
+    },
+    {
+      "q": "When can I walk on freshly poured concrete?",
+      "a": "Foot traffic is fine after 24 to 48 hours, depending on temperature and humidity. Keep pets and children off the slab for at least the first 24 hours."
+    },
+    {
+      "q": "What is the typical timeline from estimate to completed project?",
+      "a": "Once an estimate is accepted and scheduled, most residential patio and driveway projects are prepared, formed, poured and sealed within 2 to 4 consecutive business days, weather permitting."
+    },
+    {
+      "q": "What patterns and textures are available for stamped concrete?",
+      "a": "An extensive selection of architectural patterns: ashlar slate, random flagstone, European fan cobble, Roman slate, running bond brick and rustic timber wood-plank textures, combined with integral and topical color accents."
+    },
+    {
+      "q": "Is Castanon Concrete Designs licensed and insured?",
+      "a": "Yes. Castanon Concrete Designs is fully licensed and carries comprehensive general liability insurance to protect your property throughout all phases of the project."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Pearland",
+    "Friendswood",
+    "Alvin",
+    "Manvel",
+    "Rosharon",
+    "League City",
+    "Clear Lake",
+    "Pasadena",
+    "Sugar Land",
+    "Missouri City",
+    "Baytown",
+    "Dickinson",
+    "Seabrook",
+    "South Houston",
+    "Galena Park",
+    "Jacinto City",
+    "Deer Park"
+  ],
+  "reviews": [
+    {
+      "author": "Demetria Washington",
+      "text": "Marco and his team were simply great! We spoke on the phone on a Wednesday and I already had an appointment for Saturday morning. Fast, efficient, and detail-oriented! My patio is beautiful, I just wish I had done it sooner!"
+    },
+    {
+      "author": "Hillary Swank",
+      "text": "We hired them for a pool deck project and the craftsmanship is top-notch. They installed new steps and made sure the slope was exactly right."
+    },
+    {
+      "author": "David Shen",
+      "text": "I hired Castanon to remove and replace my driveway. First-class service and quality, highly recommended!"
+    }
+  ]
+}

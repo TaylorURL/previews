@@ -1,0 +1,457 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "legal",
+  "talk": "David",
+  "name": "The Salazar Law Firm",
+  "shortName": "The Salazar Law Firm",
+  "tagline": "Texas personal injury attorneys",
+  "phone": "(281) 857-6770",
+  "email": "hih@hurtinhouston.com",
+  "address": "321 Heights Blvd",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77007",
+  "since": 2011,
+  "license": "Attorney advertising. Licensed in Texas and New Mexico. Prior results do not guarantee a similar outcome.",
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
+  "cta": {
+    "label": "Free Case Review",
+    "text": "It costs nothing to find out where you stand. Send what you have, and we will tell you honestly whether you have a case, including when you do not."
+  },
+  "brand": {
+    "primary": "#0c0908",
+    "primaryDeep": "#000000",
+    "accent": "#d6b320",
+    "ink": "#14110f",
+    "muted": "#5e5951",
+    "surface": "#f7f5f1",
+    "cream": "#efebe2",
+    "line": "#e2ddd2",
+    "heading": "'Instrument Serif', Georgia, serif",
+    "body": "'Instrument Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&display=swap",
+    "logo": "/brands/thesalazarlawfirm/logo.webp",
+    "logoMono": "/brands/thesalazarlawfirm/logo-mono.webp",
+    "logoWidth": 84,
+    "logoHeight": 84,
+    "logoRatio": 1.005,
+    "logoGround": "#0c0908",
+    "logoReads": [
+      0.998,
+      0.911,
+      0.775,
+      0.649,
+      0.541,
+      0.364,
+      0.128,
+      0.231,
+      0.368,
+      0.532,
+      0.583
+    ],
+    "logoName": true
+  },
+  "hero": {
+    "eyebrow": "The Salazar Law Firm · Houston",
+    "title": "He worked for the insurance company. Now he works against them.",
+    "lead": "Before he was a trial lawyer, David Salazar was an insurance adjuster and a private investigator. He knows how the other side values a claim — because that used to be his job.",
+    "image": "/brands/thesalazarlawfirm/hero",
+    "imageAlt": "David Salazar at the Houston office",
+    "points": [
+      "Former insurance adjuster",
+      "Licensed in Texas and New Mexico",
+      "Se habla español"
+    ]
+  },
+  "overview": {
+    "title": "What he takes on.",
+    "text": "Car wrecks, truck crashes and falls on someone else's property lead the practice. Each has its own deadlines, and its own evidence that disappears first."
+  },
+  "services": [
+    {
+      "slug": "truck-accidents",
+      "title": "Truck & 18-Wheeler Accidents",
+      "icon": "truck",
+      "summary": "Commercial carriers, logbooks, federal rules.",
+      "text": "Commercial carriers, logbooks and federal safety rules. A collision with an 18-wheeler is not a bigger car wreck.",
+      "lead": "A collision with an 18-wheeler is not a bigger car wreck. Commercial carriers are governed by federal safety regulations, they carry policies an order of magnitude larger than a private driver, and they have a rapid-response team whose job is to limit what the case is worth before you have spoken to anyone.",
+      "image": "/brands/thesalazarlawfirm/truck",
+      "imageAlt": "An 18-wheeler on the highway at dawn",
+      "covers": [
+        {
+          "title": "Evidence that has a deadline",
+          "text": "The work starts immediately: preserving the electronic control module, the driver's hours-of-service logs, maintenance records, and the dashcam footage a carrier is under no obligation to keep once the retention window closes."
+        },
+        {
+          "title": "What we look for",
+          "text": "Hours-of-service violations and falsified logbooks. Negligent hiring and retention. Improper loading or securement. Deferred maintenance on brakes and tyres."
+        },
+        {
+          "title": "The carrier's own safety record",
+          "text": "A carrier's record often shows the collision was not the first of its kind."
+        },
+        {
+          "title": "The insurance side",
+          "text": "David spent time as an adjuster for a large insurer before he practised law. He knows how a commercial claim is reserved, what the carrier's own investigators are told to document, and where the valuation gets quietly reduced."
+        }
+      ]
+    },
+    {
+      "slug": "car-accidents",
+      "title": "Car & Rideshare Accidents",
+      "icon": "car",
+      "summary": "Uninsured motorists, Uber and Lyft, hit-and-run.",
+      "text": "Uninsured motorists, Uber and Lyft, hit-and-run. The first offer is not the value of your case.",
+      "lead": "An early offer is made before anyone knows the full extent of your injuries, before treatment has run its course, and before the lost income is countable. It is made because it is cheap, not because it is fair. We do not send a demand until we know what the medical picture actually is.",
+      "covers": [
+        {
+          "title": "What the first week decides",
+          "text": "Most of what proves a case has a retention window — onboard data, footage, incident reports. Once it closes, the argument becomes one word against another."
+        },
+        {
+          "title": "Rideshare claims",
+          "text": "Uber and Lyft carry substantial coverage, but which policy applies turns on what the driver was doing at the moment of the collision — offline, waiting for a request, en route, or carrying a passenger. Getting that period wrong can cost the entire claim."
+        },
+        {
+          "title": "Uninsured and hit-and-run",
+          "text": "Texas has a significant uninsured driver population. If the at-fault driver has no coverage or cannot be found, your own uninsured/underinsured motorist coverage may be the claim — and your insurer becomes, in practical terms, the opposing party."
+        }
+      ]
+    },
+    {
+      "slug": "motorcycle-accidents",
+      "title": "Motorcycle Accidents",
+      "icon": "motorbike",
+      "summary": "Where bias against the rider decides the offer.",
+      "text": "Where bias against the rider decides the offer, and the file has to be built for a jury from the beginning.",
+      "lead": "Adjusters and jurors carry an assumption that the rider was speeding, weaving, or reckless — often before a single fact is heard. That assumption gets priced into the offer.",
+      "covers": [
+        {
+          "title": "Overcoming the assumption",
+          "text": "Scene reconstruction, sight-line analysis, and a file built from the beginning for a jury rather than for a settlement conference."
+        },
+        {
+          "title": "Injuries are rarely minor",
+          "text": "Without a cage there is little between the rider and the road. Orthopaedic injuries, road rash requiring grafts, and traumatic brain injury are common, and the long-term cost is routinely underestimated in an early demand."
+        },
+        {
+          "title": "What the first week decides",
+          "text": "Most of what proves a case has a retention window — onboard data, footage, incident reports. Once it closes, the argument becomes one word against another."
+        }
+      ]
+    },
+    {
+      "slug": "premises-liability",
+      "title": "Premises Liability",
+      "icon": "building",
+      "summary": "Falls, unsafe property, negligent security.",
+      "text": "Falls, unsafe property and negligent security, where the duty owed turns on your status as a visitor.",
+      "lead": "Texas sorts visitors into invitees, licensees and trespassers, and the duty owed differs for each. A customer in a store is owed considerably more than a social guest. Establishing status correctly is the first fight.",
+      "covers": [
+        {
+          "title": "Notice is the second fight",
+          "text": "It is rarely enough that a hazard existed. The question is whether the owner knew or should have known about it and failed to act. Incident reports, inspection logs and surveillance footage answer that — and all three have retention windows."
+        },
+        {
+          "title": "Negligent security",
+          "text": "Where a foreseeable criminal act occurs on poorly secured property, the owner may share responsibility. These cases turn on the history of the location and what the owner did in response to it."
+        }
+      ]
+    },
+    {
+      "slug": "work-injuries",
+      "title": "Work & Offshore Injuries",
+      "icon": "anchor",
+      "summary": "Construction, maritime, Jones Act claims.",
+      "text": "Construction, maritime and Jones Act claims, including the routes that sit outside the compensation system entirely.",
+      "lead": "On a construction site or offshore, who is responsible is rarely only your employer, and the route to a claim depends on which system the work falls under.",
+      "image": "/brands/thesalazarlawfirm/work",
+      "imageAlt": "A construction site at dawn",
+      "covers": [
+        {
+          "title": "Non-subscriber employers",
+          "text": "An employer who opts out of the workers' compensation system loses the immunity that comes with it. That can open a direct negligence claim against the employer — a route not available in most states."
+        },
+        {
+          "title": "Third-party claims",
+          "text": "On a construction site, responsibility often lies with a party other than your employer: a general contractor, a subcontractor, an equipment manufacturer, or a property owner. Those claims sit outside the compensation system entirely."
+        },
+        {
+          "title": "Offshore and the Jones Act",
+          "text": "Seamen injured in the course of their work fall under the Jones Act rather than state law, with its own standards and its own deadlines. Gulf work makes this a live question for Houston-area workers."
+        }
+      ]
+    },
+    {
+      "slug": "wrongful-death",
+      "title": "Wrongful Death",
+      "icon": "heart",
+      "summary": "He wrote the Texas Bar CLE paper on these.",
+      "text": "Wrongful death and survival claims, an area David has authored and presented State Bar of Texas material on.",
+      "lead": "Under Texas law the surviving spouse, children and parents may bring a wrongful death action. A survival claim, which belongs to the estate, is separate and covers what the person themselves endured before death. The two are often brought together and are valued differently.",
+      "image": "/brands/thesalazarlawfirm/wrongful-death",
+      "imageAlt": "A family sitting together",
+      "covers": [
+        {
+          "title": "Written on, not just practised",
+          "text": "David authored and presented continuing legal education material for the State Bar of Texas on wrongful death, and on auto collision litigation. It is an area he has taught to other lawyers."
+        },
+        {
+          "title": "What we ask of you",
+          "text": "Very little, at first. There is no version of this where paperwork should be your problem. We will tell you plainly whether there is a claim, and if there is not, we will tell you that too."
+        }
+      ]
+    }
+  ],
+  "process": {
+    "title": "How a case runs here.",
+    "steps": [
+      {
+        "title": "Tell us what happened",
+        "text": "A few sentences, a photo, a police report — whatever you have. It costs nothing and it is not a commitment."
+      },
+      {
+        "title": "We go and get the evidence",
+        "text": "Onboard data, logbooks, surveillance, incident reports. Most of it has a retention window, which is why the first week matters."
+      },
+      {
+        "title": "We make them value it properly",
+        "text": "David worked as an adjuster. The file gets built so the other side has to treat it as a trial risk, not a nuisance."
+      },
+      {
+        "title": "You decide",
+        "text": "Settle or go to trial. It is your call, made with a straight account of what each road is worth."
+      }
+    ]
+  },
+  "affiliations": {
+    "title": "Credentials and memberships",
+    "items": [
+      "State Bar of Texas",
+      "State Bar of New Mexico",
+      "Texas Trial Lawyers Association (TTLA)",
+      "American Association for Justice (AAJ)",
+      "Houston Bar Association",
+      "Houston Trial Lawyers Association",
+      "Mexican-American Bar Association of Houston",
+      "Hispanic Bar Association of Houston"
+    ]
+  },
+  "about": {
+    "title": "He worked for the insurance company.",
+    "text": [
+      "A fifth-generation Texan, born and raised in San Marcos, who learned how claims are valued from inside the company that pays them. While he was in law school, David worked as an insurance adjuster for a large insurance company, and as a private investigator.",
+      "He knows how a claim is reserved, what an adjuster is instructed to document, which injuries get quietly discounted, and what a file has to look like before an insurer treats it as a trial risk rather than a nuisance.",
+      "David is the sole founding member of the firm. Our case managers keep things moving, while David stays directly involved in the strategy and resolution of your case. The firm has been practising under this mark since 2011."
+    ],
+    "image": "/brands/thesalazarlawfirm/about",
+    "imageAlt": "David Salazar at the Houston office",
+    "values": [
+      {
+        "title": "One attorney, start to finish",
+        "text": "Files are read, annotated and built by the attorney whose name is on the door — not summarised for him by someone else."
+      },
+      {
+        "title": "Written on, not just practised",
+        "text": "David has authored and presented State Bar of Texas continuing legal education material on auto collision litigation (2014) and wrongful death (2015)."
+      },
+      {
+        "title": "Español, de principio a fin",
+        "text": "From the first call to the end of your case, the firm handles it in your language. Se habla español."
+      },
+      {
+        "title": "Always prepared for trial",
+        "text": "Too many firms are settlement-only and farm out what they cannot settle. Every file here is built for a jury."
+      },
+      {
+        "title": "A straight answer",
+        "text": "We will tell you honestly whether you have a case, including when you do not."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "David Salazar",
+      "role": "Founder and trial attorney",
+      "bio": "A fifth-generation Texan, born and raised in San Marcos, and a Texas State alumnus. Before he practised law he worked as an insurance adjuster for a large insurance company and as a private investigator. He is licensed in Texas and New Mexico, and has authored and presented State Bar of Texas continuing legal education material on auto collision litigation and wrongful death.",
+      "image": "/brands/thesalazarlawfirm/david",
+      "imageAlt": "David Salazar, founder and trial attorney"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What does the case review cost?",
+      "a": "Nothing. It costs nothing to find out where you stand, and the review is free and confidential. A person reads every message."
+    },
+    {
+      "q": "Do you only take cases in Houston?",
+      "a": "No. David takes cases from across the United States and is not restricted to a particular county or state. The firm evaluates each matter on its facts, not on whether it began inside a short list of Texas counties."
+    },
+    {
+      "q": "¿Hablan español?",
+      "a": "Sí. Desde la primera llamada hasta el final de su caso, lo atendemos en su idioma. La evaluación es gratis y confidencial."
+    },
+    {
+      "q": "Why does the first week matter so much?",
+      "a": "Most of what proves a case has a retention window — onboard data, logbooks, surveillance, incident reports. Once it closes, the argument becomes one word against another."
+    },
+    {
+      "q": "Should I accept the first offer?",
+      "a": "An early offer is made before anyone knows the full extent of your injuries, before treatment has run its course, and before the lost income is countable. It is made because it is cheap, not because it is fair."
+    },
+    {
+      "q": "Does contacting you create an attorney-client relationship?",
+      "a": "No. Using the website, viewing information on it, sending an email, calling the firm or submitting an online form does not by itself create an attorney-client relationship. One is established only when the firm agrees to represent you and the necessary engagement requirements have been satisfied."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Houston Heights",
+    "Garden Oaks",
+    "Spring Branch",
+    "San Marcos",
+    "Kyle",
+    "Buda",
+    "New Braunfels",
+    "Seguin",
+    "Wimberley",
+    "Dripping Springs",
+    "Canyon Lake",
+    "Lockhart",
+    "Luling",
+    "Gonzales",
+    "Bastrop",
+    "La Grange",
+    "Flatonia",
+    "Schulenburg",
+    "Alamo Heights",
+    "Texas",
+    "New Mexico",
+    "Nationwide"
+  ],
+  "facts": [
+    {
+      "heading": "The Houston office",
+      "text": "321 Heights Boulevard, Houston, Texas 77007, under the monument sign. This is where the files are built and where clients meet the attorney handling their case."
+    },
+    {
+      "heading": "The San Marcos office",
+      "text": "215 W San Antonio Street, Suite 2001, San Marcos, Texas 78666. The same monogram carries a second office in San Marcos, where David was born and raised — a fifth-generation Texan and a Texas State alumnus."
+    },
+    {
+      "heading": "Where we practice",
+      "text": "Houston is the office; the practice is nationwide. David takes cases from across the United States and is not restricted to a particular county or state. An office in Albuquerque is coming soon."
+    },
+    {
+      "heading": "The firm in numbers",
+      "text": "Founded in 2011, the firm has recovered more than $80 million for its clients. David belongs to eight bar and trial associations and has written two continuing legal education papers for the State Bar of Texas."
+    },
+    {
+      "heading": "Results",
+      "text": "The firm's largest settlements include $33,000,000 in a trucking accident and $11,797,000 for a workplace incident, alongside settlements of $12,000,000, $11,900,000, $11,750,000 and $8,292,000. Sixty-three settled cases are on record, each with its case type, county, year and outcome. Every case is different, and prior results do not guarantee a similar outcome."
+    },
+    {
+      "heading": "Deadlines to know",
+      "items": [
+        "Car, truck, motorcycle and premises claims must be filed within two years in Texas.",
+        "A wrongful death claim must be filed within two years of the date of death, and the wrongful death and survival claims are brought separately.",
+        "Most Texas work injury claims must be filed within two years, and a Jones Act claim within three.",
+        "A commercial carrier must hold at least $750,000 in coverage under federal rules, and a truck's onboard data can be overwritten within days.",
+        "Texas sorts property visitors into three classes, and each is owed a different duty.",
+        "The case review is free."
+      ]
+    },
+    {
+      "heading": "The practice",
+      "text": "Six areas of catastrophic injury work. Each one has its own deadlines, its own regulators, and its own evidence that disappears first — which is why the first week matters more than most people are told."
+    },
+    {
+      "heading": "Languages",
+      "text": "English and Spanish. Se habla español, de principio a fin. When you send your case, you can choose to hear back in English or in Spanish. David Salazar is a member of the Mexican-American Bar Association of Houston and the Hispanic Bar Association of Houston."
+    },
+    {
+      "heading": "Sending us your case",
+      "text": "Send a few sentences, a photo or a police report — whatever you have. Photos and documents up to 10 files, 15 MB each, are sent privately to the firm. Confidential, no obligation, and we reply the same day."
+    },
+    {
+      "heading": "Reaching the firm",
+      "items": [
+        "The phone is answered 24/7",
+        "A person reads every message",
+        "We reply the same day",
+        "Confidential, no obligation",
+        "Email HIH@HurtInHouston.com, or info@hurtinhouston.com for privacy requests",
+        "Call (281) 857-6770 or send the free case review form"
+      ]
+    },
+    {
+      "heading": "Company mission",
+      "text": "We see our job as construction. We are here to help you rebuild your life after someone has destroyed it."
+    },
+    {
+      "heading": "Licensed in",
+      "items": [
+        "Texas",
+        "New Mexico"
+      ]
+    },
+    {
+      "heading": "Hurt in Houston",
+      "text": "The Salazar Law Firm also works under the name Hurt in Houston, at HurtInHouston.com."
+    },
+    {
+      "heading": "Other cases the firm handles",
+      "items": [
+        "Aviation accidents, including pilot negligence and faulty instrumentation",
+        "Bus accidents, including faulty safety gear and energy-absorption panels",
+        "Offshore rig explosions and Longshore and Harbor Workers' Compensation Act claims",
+        "Product liability and defective products",
+        "Pharmaceutical and medical litigation",
+        "Birth injuries and catastrophic injuries",
+        "Construction and landscaping accidents",
+        "WARN Act cases and insurance claims",
+        "Drunk driving, dram shop, distracted driving and texting-while-driving claims",
+        "Crashworthiness, rollovers and blowouts",
+        "Taxi and rideshare accidents, uninsured motorist claims",
+        "Box truck, tow truck and farming equipment accidents",
+        "Shoulder replacement accidents",
+        "Astroworld Music Festival accident claims"
+      ]
+    },
+    {
+      "heading": "Insights",
+      "text": "Fifty-seven articles on personal injury, car, truck and motorcycle accidents, and defective products: deadlines, evidence, and what an adjuster is actually doing when they call you the week after a wreck. Written for the person it happened to, not for a search engine."
+    },
+    {
+      "heading": "Attorney-client relationship",
+      "text": "Using the website, viewing information on it, sending an email, calling the firm or submitting an online form does not by itself create an attorney-client relationship. One is established only when the firm agrees to represent you and the necessary engagement requirements have been satisfied. Until then, do not assume a general website form is protected by attorney-client privilege."
+    },
+    {
+      "heading": "Text messages",
+      "items": [
+        "Texts cover scheduling an initial call, appointment reminders, intake follow-ups and secure links for e-signing documents",
+        "Text STOP to cancel the SMS service; a confirmation message follows",
+        "Reply HELP for assistance with the messaging program",
+        "Message and data rates may apply, and message frequency varies",
+        "Carriers are not liable for delayed or undelivered messages"
+      ]
+    },
+    {
+      "heading": "Privacy",
+      "items": [
+        "Privacy policy last updated 10 August 2026",
+        "The firm is a law firm, not a data broker, and does not sell information given in confidence to evaluate or represent a matter",
+        "Texas residents may have rights under the Texas Data Privacy and Security Act — access, correction, deletion, portability, and opting out of qualifying targeted advertising, sales and profiling",
+        "Consent to marketing communications is not a condition of hiring the firm",
+        "The site is not directed to children under 13",
+        "Privacy requests go to info@hurtinhouston.com or (281) 857-6770"
+      ]
+    }
+  ]
+}
