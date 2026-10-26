@@ -782,9 +782,13 @@ function ServiceCard({ s, tagged = true }) {
             )}
           </div>
         ) : (
-          group && (
-            <span className="mx-6 mt-6 w-fit bg-ink px-3 py-1.5 font-heading text-[13px] font-semibold uppercase tracking-[0.14em] text-white">
-              {group}
+          /* Every card in a tagged row keeps the tag's line, filled or blank, so the headings beside it stay level. */
+          tagged && (
+            <span
+              className={`mx-6 mt-6 w-fit bg-ink px-3 py-1.5 font-heading text-[13px] font-semibold uppercase tracking-[0.14em] text-white${group ? '' : ' invisible'}`}
+              aria-hidden={group ? undefined : 'true'}
+            >
+              {group || '\u00a0'}
             </span>
           )
         )}

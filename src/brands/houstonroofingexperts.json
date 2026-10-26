@@ -22,21 +22,21 @@
     "fonts": "https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Lora:wght@400;600;700&display=swap",
     "logo": "/brands/houstonroofingexperts/logo.webp",
     "logoMono": "/brands/houstonroofingexperts/logo-mono.webp",
-    "logoWidth": 204,
-    "logoHeight": 48,
-    "logoRatio": 4.255,
+    "logoWidth": 97,
+    "logoHeight": 58,
+    "logoRatio": 1.67,
     "logoGround": "#ffffff",
     "logoReads": [
-      0.878,
-      0.863,
-      0.856,
-      0.862,
-      0.868,
-      0.884,
-      0.905,
-      0.928,
-      0.949,
-      0.974,
+      0.432,
+      0.292,
+      0.154,
+      0.061,
+      0.0,
+      0.0,
+      0.011,
+      0.578,
+      0.72,
+      0.865,
       1.0
     ]
   },
@@ -50,17 +50,21 @@
   },
   "serviceArea": [
     "Houston",
-    "Baytown",
-    "Pasadena",
-    "Deer Park",
-    "La Porte",
-    "League City",
-    "Pearland",
     "Channelview",
+    "Baytown",
+    "Humble",
+    "Atascocita",
     "Crosby",
+    "Pearland",
     "Friendswood",
     "Webster",
-    "Humble"
+    "League City",
+    "Deer Park",
+    "Pasadena",
+    "La Porte",
+    "Bellaire",
+    "River Oaks",
+    "Katy"
   ],
   "services": [
     {
@@ -68,7 +72,38 @@
       "title": "Residential Roofing",
       "group": "residential",
       "short": "Residential Roofing",
-      "text": "Complete roof installations, repairs, and replacements for homes of all sizes. We specialize in shingle and metal roofing."
+      "text": "Complete roof installations, repairs, and replacements for homes of all sizes. We specialize in shingle and metal roofing.",
+      "materials": true,
+      "faqs": [
+        {
+          "q": "How long does a roof replacement project take in Houston?",
+          "a": "Most Houston residential roofs can be installed in 1-3 days. Including inspections and prep, the whole process usually spans about 7-14 days, depending on roof size, complexity and weather."
+        },
+        {
+          "q": "Do I need a permit to repair or replace a roof in Houston?",
+          "a": "Yes. Houston requires permits for new roof installations, complete re-roofing and major repairs."
+        },
+        {
+          "q": "How often should I inspect and maintain my Houston roof?",
+          "a": "We advise at least twice yearly, typically spring and fall, and after any major storm. Regular inspections in Houston's extreme climate help catch issues before they become leaks."
+        },
+        {
+          "q": "Which roofing materials are best suited to Houston's climate?",
+          "a": "The best Houston roofing materials are impact-resistant asphalt shingles, metal, tile, or synthetic slate, all rated for wind, hail, and heat."
+        },
+        {
+          "q": "What factors affect the cost of roofing in Houston?",
+          "a": "Home size and roofing material are the biggest cost drivers. High Houston rainfall and the need for impact-resistant shingles also influence prices."
+        },
+        {
+          "q": "How long does a typical roof last in Houston's weather conditions?",
+          "a": "Due to heat, storms and humidity, a Houston roof usually lasts about 15-25 years, although high-end architectural shingles can have warranties up to 50 years."
+        },
+        {
+          "q": "Are roofing contractors required to be licensed or certified in Houston?",
+          "a": "Texas does not have a state roofing license. However, Houston contractors must register with the city and carry insurance to pull permits. Look for voluntary certifications (RCAT, GAF Master Elite, etc.) as signs of quality."
+        }
+      ]
     },
     {
       "slug": "commercial-roofing",
@@ -77,7 +112,46 @@
       "short": "Commercial Roofing",
       "text": "Professional roofing solutions for commercial properties, including 1–4 story buildings, retail and multi-family developments.",
       "body": [
-        "Specializing in low sloped TPO and pitched metal roof systems."
+        "At Houston Roofing Experts, we are a proud, family-owned business with over a decade of experience delivering premium commercial roofing services. Specializing in comprehensive building envelope solutions, we are committed to providing unparalleled quality and performance for our clients as a reputable commercial roofing contractor.",
+        "Our mission is simple: to save you time and money by offering expert solutions for all your commercial roofing needs, including TPO roofs, metal roofing, roof overlays, and roof coatings. We combine extensive field expertise, top-tier products, and exceptional customer service to deliver outstanding results on every project. From design to project completion, we approach every detail with precision and excellence, ensuring your roofing investment is built to last."
+      ],
+      "points": [
+        "Metal roof systems - standing seam and PBR panels",
+        "PVC single ply roofs",
+        "TPO roof systems",
+        "Retro-fit roof systems",
+        "Roof coatings",
+        "Repairs and scheduled maintenance, recommended every 3-5 years"
+      ],
+      "faqs": [
+        {
+          "q": "What is the best commercial roofing material in Houston, Texas?",
+          "a": "In Houston, TPO, PVC and EPDM are the best materials for flat commercial roofs, while metal is a top choice for gable roof structure."
+        },
+        {
+          "q": "How much does a commercial roof inspection cost in Houston?",
+          "a": "A commercial roof inspection in Houston can cost anywhere between $400 and $1000 depending on roof size, features and inspection method used."
+        },
+        {
+          "q": "How much does a commercial roof cost in Houston?",
+          "a": "On average, in Houston, a commercial roof costs $5-$15 per square foot installed depending on material."
+        },
+        {
+          "q": "What is the lifespan of a commercial roof in Houston, Texas?",
+          "a": "Most commercial roofs last 15-30 years, depending on materials and maintenance."
+        },
+        {
+          "q": "Does Houston commercial roof insurance cover storm or hail damage?",
+          "a": "Yes, most policies cover wind and hail damage if documented promptly."
+        },
+        {
+          "q": "Are permits required for commercial roof work in Houston?",
+          "a": "Yes. Major repairs or replacements typically require city permits to meet building codes."
+        },
+        {
+          "q": "Can a commercial roof save on energy costs?",
+          "a": "Reflective membranes like TPO and metal can lower cooling costs in Houston's heat."
+        }
       ]
     },
     {
@@ -85,26 +159,64 @@
       "title": "Storm Damage Repair & Replacements",
       "group": "storm",
       "short": "Fast and reliable storm damage assessment and repairs.",
-      "text": "Fast and reliable storm damage assessment and repairs. We work with our customers and the insurance companies to simplify the claims process."
+      "text": "Fast and reliable storm damage assessment and repairs. We work with our customers and the insurance companies to simplify the claims process.",
+      "claim": true,
+      "body": [
+        "Storms can wreak havoc on your entire house but clearly the roof is going to take the brunt of the damage. After a severe storm hail or windstorm, it's important to have your roof checked thoroughly by a reputable residential roofing contractor. This will ward off any potential problems that can lead to expensive damage to the interior of your home.",
+        "Remember that the storm doesn't have to be complete with hail or a heavy downpour of rain; wind is enough to cause significant damage. We are your local Residential Roofing Company. Call today, we provide free roof inspections."
+      ],
+      "faqs": [
+        {
+          "q": "What steps should I take if my Houston roof is damaged by a storm or hail?",
+          "a": "After a storm, take photos of all damage and contact your insurer right away. Cover holes temporarily with a tarp to prevent further water intrusion."
+        },
+        {
+          "q": "Will my insurance cover the roof repair or replacement?",
+          "a": "Many roof repairs and replacements are covered by homeowner insurance, especially when damage is caused by storms or hail. We regularly work with insurance companies and help guide homeowners through the claims process."
+        }
+      ]
     },
     {
       "slug": "roof-inspections",
       "title": "Roof Inspections",
       "short": "Roof Inspections",
-      "text": "Comprehensive roof inspections to identify potential issues before they become costly problems."
+      "text": "Comprehensive roof inspections to identify potential issues before they become costly problems.",
+      "faqs": [
+        {
+          "q": "How much does a roof repair cost?",
+          "a": "The price can range from $475-$2,500 depending on the number of stories, the type of roof system and the height of the property an scope of work."
+        },
+        {
+          "q": "How do I know if my roof needs to be repaired or replaced?",
+          "a": "You should consider a repair if the damage is localized. For example, just one or two shingles missing, flashing around a chimney is loose, or leaks. You should consider a replacement when the roof is nearing or past its expected lifespan, there are widespread signs of deterioration or you're experiencing recurring problems that keep adding up."
+        }
+      ]
     },
     {
       "slug": "residential-asphalt-shingles",
       "title": "Residential Asphalt Shingles",
       "group": "residential",
       "short": "Residential Asphalt Shingles",
-      "text": ""
+      "text": "Asphalt shingle roofs for Houston homes, with a shingle color chart to choose from.",
+      "points": [
+        "Burnt Sienna",
+        "Mission Brown",
+        "Moire Black",
+        "Resawn Shake",
+        "Silver Birch",
+        "Weathered Wood"
+      ]
     },
     {
       "slug": "metal-roof",
       "title": "Metal Roof",
       "short": "Metal Roof",
-      "text": ""
+      "text": "Standing seam metal roofing is a concealed fastener metal panel system that features vertical legs and a broad, flat area between the two legs.",
+      "group": "residential",
+      "body": [
+        "Standing seam metal roofing is defined as a concealed fastener metal panel system that features vertical legs and a broad, flat area between the two legs. It's also described as having raised seams, or vertical legs, that rise above the level of the panel's flat area.",
+        "PBR Metal Roofing and Metal Siding Panel is an ideal solution for pre-engineered metal buildings, post-frame, and agricultural buildings. With this durable, and sustainable metal panel, you'll also find that it comes in several energy-efficient colors."
+      ]
     }
   ],
   "about": {
@@ -115,6 +227,94 @@
       "To set the Houston Roofing Experts standard for roofing excellence by combining premium materials with expert installation techniques. We are dedicated to delivering superior quality and excellent customer service, ensuring every client feels confident in their investment for years to come."
     ],
     "image": "/brands/houstonroofingexperts/photo2",
-    "imageAlt": "A photo of Houston Roofing Experts"
-  }
+    "imageAlt": "A photo of Houston Roofing Experts",
+    "values": [
+      {
+        "title": "No Shortcuts",
+        "text": "We believe in striving for excellence in all that we do. We adhere to strict building standards, ensuring that every layer of your roof is installed correctly, from the decking to the final shingle."
+      },
+      {
+        "title": "Transparency",
+        "text": "We believe in clear communication and competitive pricing. From the initial inspection to the final walkthrough, we keep you informed every step of the way."
+      },
+      {
+        "title": "Stand By Our Work",
+        "text": "As a Landmark Certainteed Certified Contractor - Master Craftsman, we stand behind our work, providing peace of mind to our clients with reliable, long-term solutions and warranties."
+      }
+    ]
+  },
+  "license": "Fully insured; SBE/DBE certified",
+  "promises": [
+    "Free roof inspections",
+    "Fully insured",
+    "Replies to new requests within 1-2 hours",
+    "Labor and manufacturer warranty"
+  ],
+  "areasText": "Our service areas include the following locations and neighboring cities.",
+  "materials": {
+    "title": "Products we install",
+    "text": "Trusted experts in residential and commercial roofing - Landmark Master Craftsman Certified. TPO, GAF and standing seam metal roofs.",
+    "brands": [
+      "CertainTeed",
+      "GAF"
+    ]
+  },
+  "claim": {
+    "title": "Have an insurance claim?",
+    "text": "Call us! We are glad to work with you and install your new roof.",
+    "steps": [
+      {
+        "title": "Inspection before you file",
+        "text": "We provide roof inspections prior to Client filing a claim."
+      },
+      {
+        "title": "Meet the adjuster",
+        "text": "Meet with Client's insurance adjuster as needed and document roof damages."
+      },
+      {
+        "title": "Install the new roof",
+        "text": "Install new roof professionally using quality products."
+      },
+      {
+        "title": "Warranty",
+        "text": "Offer Labor/Manufacturer Warranty/Extended Service Package."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Certifications",
+      "items": [
+        "Landmark CertainTeed Certified Contractor - Master Craftsman",
+        "SBE/DBE Certified"
+      ]
+    },
+    {
+      "heading": "Warranty",
+      "text": "We offer a Labor/Manufacturer Warranty and an Extended Service Package, and stand behind our work with reliable, long-term solutions and warranties."
+    },
+    {
+      "heading": "Our founder",
+      "text": "Agustin Gomez founded Houston Roofing Experts on the belief that all homeowners deserve reliable, expert care for their roofs. After 15+ years in the roofing business, serving our customers and community is our number one priority."
+    },
+    {
+      "heading": "Response time",
+      "text": "We reply to new requests within 1-2 hours, and our quotes are competitively priced every time. Our value exceeds price."
+    },
+    {
+      "heading": "Roof replacement cost",
+      "text": "On average, residential roof replacements in Houston range from $8,000 to $25,000. Minor repairs typically range from $300 to $1,000, while more extensive repairs can cost $1,000 to $3,000. We provide free, detailed estimates so you know exactly what to expect."
+    },
+    {
+      "heading": "Careers",
+      "text": "We are hiring roofing sales team members in Houston: full-time, commission-based, with $60,000-$80,000 average yearly potential and a $300 sign-up bonus after 90 days. Qualified individuals email resumes to sales@houstonroofingexperts.com. Houston Roofing Experts is an equal opportunity employer."
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "facebook.com/houstonroofingexperts",
+        "instagram.com/houston_roofing_experts"
+      ]
+    }
+  ]
 }
