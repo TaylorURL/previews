@@ -344,7 +344,7 @@ def build(prospect, root, slug):
         described = [s for s in services if s["text"]]
         if len(described) * 2 > len(services):
             services = described
-    about = compose.about_of(pages, name, vocab_key)
+    about = compose.about_of(pages, name, vocab_key, services)
     lead, lead_source = compose.lead_of(pages, about, vocab_key, services)
     if not lead:
         raise Parked("no description of the business in its own words")
@@ -392,7 +392,7 @@ def build(prospect, root, slug):
     if hero_image:
         brand["hero"]["image"] = hero_image
         brand["hero"]["imageAlt"] = f"A photo of {short}"
-    line = compose.hero_line(services, town, label, vocab_key)
+    line = compose.hero_line(services, town, label, vocab_key, short)
     if template in ("roofing", "hvac"):
         # The name leads in small type; the work is the headline and the town
         # its accent, so a long business name never fills the hero.
