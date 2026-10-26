@@ -54,9 +54,11 @@
  *
  *   services      required  one page each. Fields per service:
  *     slug        required  URL segment: "roof-repair" -> /services/roof-repair
- *     group       optional  "residential" (default), "storm" or "commercial";
- *                           picks the mega menu column (Residential, Storm and
- *                           Insurance, Commercial). Empty columns are not shown.
+ *     group       optional  "residential", "storm" or "commercial"; picks the
+ *                           mega menu column (Residential, Storm and Insurance,
+ *                           Commercial). A service without one is listed under
+ *                           General, as an inspection or a gutter is not only
+ *                           for homes. Empty columns are not shown.
  *     title       required  Title Case name, "Roof Repair"
  *     short       required  one-line description for the mega menu
  *     text        required  one or two sentences for cards and the page lead
@@ -139,6 +141,7 @@ import { onColor, townId } from './roofing/color.js';
 
 const GROUPS = [
   ['residential', 'Residential'],
+  ['general', 'General'],
   ['storm', 'Storm and Insurance'],
   ['commercial', 'Commercial'],
 ];
@@ -165,7 +168,7 @@ const list = (value) => (Array.isArray(value) ? value : []);
 const pad2 = (n) => String(n).padStart(2, '0');
 // Letters in the longest word, which a heading or cell must hold on one line.
 const longest = (...texts) => Math.max(0, ...texts.flatMap((t) => String(t || '').split(/\s+/)).map((w) => w.length));
-const groupOf = (s) => (GROUPS.some(([key]) => key === s.group) ? s.group : 'residential');
+const groupOf = (s) => (GROUPS.some(([key]) => key === s.group) ? s.group : 'general');
 const servicesOf = (b) => list(b.services).filter((s) => s && s.slug && s.title);
 // A short line that only says the title again is left out under it.
 const shortOf = (s) => (s.short && s.short.trim().toLowerCase() !== s.title.trim().toLowerCase() ? s.short : null);
@@ -760,7 +763,7 @@ function ClaimStrip({ b, stormHref }) {
 }
 
 function ServiceCard({ s, tagged = true }) {
-  const group = tagged ? GROUPS.find(([key]) => key === groupOf(s))[1] : null;
+  const group = tagged && groupOf(s) !== 'general' ? GROUPS.find(([key]) => key === groupOf(s))[1] : null;
   return (
     <li className="min-w-0">
       <a href={`/services/${s.slug}`} className="group flex h-full flex-col bg-surface text-ink no-underline">
@@ -1374,7 +1377,7 @@ function ServicePage({ b, tel, s }) {
   const projects = list(b.projects).filter((p) => p.service === s.slug);
   const steps = list(b.claim?.steps);
   const promises = list(b.promises);
-  const group = GROUPS.find(([key]) => key === groupOf(s))[1];
+  const group = groupOf(s) === 'general' ? `Roofing in ${b.town}` : GROUPS.find(([key]) => key === groupOf(s))[1];
   // A service their site only names has no words for its page; the
   // inspection card then runs across the page instead of beside an empty column.
   const said = list(s.body).length > 0 || list(s.points).length > 0 || list(s.faqs).length > 0;
@@ -1575,6 +1578,9 @@ function AreasPage({ b, tel }) {
 
 function AboutPage({ b, tel }) {
   const a = b.about;
+  // The first paragraph leads the hero and the rest tell the story. A lone
+  // paragraph tells the story, so the story is never a label over nothing.
+  const lone = list(a.text).length < 2;
   return (
     <>
       <PageHero
@@ -1583,7 +1589,7 @@ function AboutPage({ b, tel }) {
         crumbs={[['/about', 'About']]}
         eyebrow={b.since ? `Since ${b.since}` : `About ${b.shortName}`}
         title={a.title}
-        lead={list(a.text)[0]}
+        lead={lone ? null : list(a.text)[0]}
         image={a.image || b.hero.image}
         imageAlt={a.image ? a.imageAlt : b.hero.imageAlt}
       />
@@ -1592,7 +1598,7 @@ function AboutPage({ b, tel }) {
           <div>
             <Eyebrow>Our story</Eyebrow>
             {list(a.text)
-              .slice(1)
+              .slice(lone ? 0 : 1)
               .map((para) => (
                 <p key={para.slice(0, 40)} className="mb-5 text-[17px] leading-[1.7] text-ink/85 sm:text-[19px]">
                   {para}
