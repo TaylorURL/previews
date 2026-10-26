@@ -609,7 +609,7 @@ function HomeHero({ b, tel, rating }) {
             data-backdrop=""
           />
           <div
-            className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(100deg,color-mix(in_srgb,var(--ink)_94%,transparent)_0%,color-mix(in_srgb,var(--ink)_80%,transparent)_48%,color-mix(in_srgb,var(--ink)_25%,transparent)_100%)]"
+            className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(100deg,color-mix(in_srgb,var(--ink)_96%,transparent)_0%,color-mix(in_srgb,var(--ink)_90%,transparent)_58%,color-mix(in_srgb,var(--ink)_30%,transparent)_100%)]"
             aria-hidden="true"
           />
         </>
