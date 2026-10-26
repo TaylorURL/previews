@@ -109,8 +109,15 @@ def metrics(image):
     if h and w:
         blocks = small[:h, :w].reshape(h // 8, 8, w // 8, 8, 3).std(axis=(1, 3)).max(axis=-1)
         m["flat"] = float((blocks < 2.5).mean())
+        # A cut-out saved without its transparency keeps the ground it hid,
+        # flat pure black or white, round the subject and out to every corner.
+        means = small[:h, :w].reshape(h // 8, 8, w // 8, 8, 3).mean(axis=(1, 3))
+        bare = (blocks < 2.5) & ((means.max(axis=-1) <= 6) | (means.min(axis=-1) >= 249))
+        corners = bare[0, 0] and bare[0, -1] and bare[-1, 0] and bare[-1, -1]
+        m["bare"] = float(bare.mean()) if corners else 0.0
     else:
         m["flat"] = 1.0
+        m["bare"] = 0.0
     packed = (small[..., 0] >> 3) * 1024 + (small[..., 1] >> 3) * 32 + (small[..., 2] >> 3)
     m["colors"] = int(len(np.unique(packed)))
     m["mean"] = float(g.mean())
@@ -128,6 +135,8 @@ def problems(m, slot=None):
     out = []
     if m["transparent"] > 0.02:
         out.append("a cut-out on a transparent ground, not a photograph")
+    if m["bare"] > 0.1:
+        out.append("a cut-out whose transparent ground was saved as black and white, not a photograph")
     if m["flat"] > FLAT_MAX:
         out.append(f"mostly flat color ({m['flat']:.0%}), a graphic or a plain-ground cut-out")
     if m["colors"] < GRAPHIC_COLORS and m["flat"] > 0.25:

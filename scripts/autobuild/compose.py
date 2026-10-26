@@ -564,6 +564,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
     # link below for details"), which the preview does not have, and one left
     # without its full stop where that link was cut away.
     pointer = re.compile(r"\bclick\b|\b(?:link|button|form)s? (?:below|above)\b", re.I)
+    # A sentence that opens on their offer ("10% off any repair or $100 off
+    # any system for teachers...") or names a coupon is the deal set by the
+    # heading, not the work.
+    offer = re.compile(r"^(?:take |get |save )?(?:\d+\s?%|\$\d[\d,]*) off\b|\bcoupons?\b", re.I)
     # A short sentence that only promises to bring the reader's vision to life
     # ("AJ's will bring you vision to life.") is a slogan that names no work.
     slogan = re.compile(r"^(?:\S+\s){0,5}brings? (?:your?|the) (?:visions?|dreams?|ideas?) to life\b[^.!?]{0,20}[.!?]$", re.I)
@@ -686,7 +690,7 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
                     if nxt_tag == "p" and 60 <= len(nxt) <= 700:
                         desc = trim(" ".join(
                             s for s in sentences(RUN_IN.sub("", plain(nxt)))
-                            if not (elsewhere and elsewhere.search(s)) and not pointer.search(s) and not slogan.match(s) and not label.match(s) and not stranger(s) and FINISHED.search(s)
+                            if not (elsewhere and elsewhere.search(s)) and not pointer.search(s) and not offer.search(s) and not slogan.match(s) and not label.match(s) and not stranger(s) and FINISHED.search(s)
                         ), 360)
                         break
                     if nxt_tag.startswith("h"):
