@@ -1100,7 +1100,11 @@ def hero_line(services, town, label):
     elif lower:
         what = lower[0]
     else:
-        what = label.lower()
+        # A service named only for the trade ("Electrical Services") still names
+        # theirs, where the label may be the template's: an electrician drawn on
+        # the hvac template is not "heating and air".
+        own = [t for t in (s["title"] for s in services) if len(t.split()) > 1][:1]
+        what = " ".join(w if w.upper() in ACRONYMS else w.lower() for w in own[0].split()) if own else label.lower()
     return f"{what[:1].upper()}{what[1:]} in {town}"
 
 
