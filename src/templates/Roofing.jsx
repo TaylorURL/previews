@@ -1106,7 +1106,7 @@ function ContactLines({ b, tel, dark = false }) {
   const full = `${b.address}, ${b.town}, ${b.state}${b.zip ? ` ${b.zip}` : ''}`;
   const rows = [
     [Phone, tel, b.phone],
-    b.email && [Mail, `mailto:${b.email}`, b.email],
+    b.email && [Mail, `mailto:${b.email}`, b.email.split('@').flatMap((p, i) => (i ? ['@', <wbr key={i} />, p] : [p]))],
     [MapPin, mapsHref(b), full],
   ].filter(Boolean);
   return (
