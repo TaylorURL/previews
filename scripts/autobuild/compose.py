@@ -426,6 +426,10 @@ def title_case(text):
         if w.isupper() and re.search(r"\d", w):
             out.append(w)
             continue
+        # So does a name's initials in brackets ("Client Accounting Services (CAS)").
+        if re.fullmatch(r"\([A-Z]{2,6}\)", w):
+            out.append(w)
+            continue
         if w.isupper():
             w = w.lower()
         # A capital held one letter too long ("INterior") is put right.
@@ -436,7 +440,8 @@ def title_case(text):
 
 
 def short_name(name):
-    cut = re.sub(r",?\s+\b(LLC|L\.L\.C\.|Inc\.?|Co\.?|Corp\.?|PLLC|PC|P\.C\.|LP|Ltd\.?)$", "", plain(name), flags=re.I)
+    # "& Co." is part of the name ("JAG CPA & Co."), not a suffix after it.
+    cut = re.sub(r",?\s+\b(LLC|L\.L\.C\.|Inc\.?|(?<!&\s)(?<!\band\s)Co\.?|Corp\.?|PLLC|PC|P\.C\.|LP|Ltd\.?)$", "", plain(name), flags=re.I)
     cut = re.sub(r"\s+-\s+.*$", "", cut)
     return cut.strip() or plain(name)
 
@@ -571,6 +576,9 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
     # link below for details"), which the preview does not have, and one left
     # without its full stop where that link was cut away.
     pointer = re.compile(r"\bclick\b|\b(?:link|button|form)s? (?:below|above)\b", re.I)
+    # A pointer tacked on after a dash ("...and tax projection services –
+    # click to learn more.") is cut away, and the sentence before it kept.
+    tacked = re.compile(r"\s*[–—-]\s*(?:click|tap)\b[^.!?]*(?=[.!?]$)", re.I)
     # A sentence that opens on their offer ("10% off any repair or $100 off
     # any system for teachers...") or names a coupon is the deal set by the
     # heading, not the work.
@@ -660,7 +668,9 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # Generator Installers", "Tax and Accounting Professionals") says who
         # they are, not a service; one for them ("Estimating Support for
         # Contractors") is still a service.
-        if re.search(r"\b(?:electricians|technicians|installers|contractors|plumbers|roofers|painters|builders|remodelers|specialists|experts|professionals|pros|mechanics|welders|landscapers|exterminators|inspectors|engineers|machinists|fabricators)$", name, re.I) and not re.search(r"\b(?:for|to|with)\b", name, re.I):
+        # So does one that ends on one of them ("Tax Strategy Consultant"),
+        # which is a job on their team.
+        if re.search(r"\b(?:electricians|technicians|installers|contractors|plumbers|roofers|painters|builders|remodelers|specialists|experts|professionals|pros|mechanics|welders|landscapers|exterminators|inspectors|engineers|machinists|fabricators|consultants?|advis[eo]rs?|accountants?|bookkeepers?|preparers?)$", name, re.I) and not re.search(r"\b(?:for|to|with)\b", name, re.I):
             return
         if NOT_A_SERVICE_SHAPE.search(name) or (own and names_the_business(name, own)) or (local and local.search(name)):
             return
@@ -696,7 +706,7 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
                         continue
                     if nxt_tag == "p" and 60 <= len(nxt) <= 700:
                         desc = trim(" ".join(
-                            s for s in sentences(RUN_IN.sub("", plain(nxt)))
+                            s for s in (tacked.sub("", s) for s in sentences(RUN_IN.sub("", plain(nxt))))
                             if not (elsewhere and elsewhere.search(s)) and not pointer.search(s) and not offer.search(s) and not slogan.match(s) and not label.match(s) and not stranger(s) and FINISHED.search(s)
                         ), 360)
                         break
@@ -1066,6 +1076,8 @@ def hero_line(services, town, label):
     Baytown", "Roof repair and roof replacement in Tomball"). With no two
     services worth naming it is the trade and the town."""
     named = [s["title"] for s in services if not GENERIC_SERVICE.match(s["title"])][:2]
+    # Initials in brackets ("Client Accounting Services (CAS)") only lengthen a headline.
+    named = [re.sub(r"\s*\([^)]*\)$", "", t) for t in named]
     lower = [" ".join(w if (w.isupper() and len(w) > 1) or w.upper() in ACRONYMS else w.lower() for w in t.split()) for t in named]
     # A name that is a phrase of its own ("Storage for moving & life changes")
     # can't be joined to another with "and"; the trade stands for the two,
