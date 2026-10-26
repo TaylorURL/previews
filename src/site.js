@@ -7,9 +7,6 @@
  * Vercel preview URL, localhost - `?b=` names it instead.
  */
 
-const SUPABASE_URL = 'https://gujgtjqqurildqurpffh.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_qn4ZWB2n95HGMJm0L58I0w_ClE_Qu4M';
-
 // Each brand file is its own chunk, fetched only by the page that is dressed in
 // it, so a page carries one business rather than every business on the list.
 const brands = import.meta.glob('./brands/*.json', { import: 'default' });
@@ -70,13 +67,19 @@ function automated() {
   return navigator.webdriver || BOTS.test(navigator.userAgent) || !navigator.languages?.length;
 }
 
+// The view is counted by the studio's API rather than straight in the
+// database, so the visit's network can be checked first: a mail scanner opening
+// the link runs a real browser and waits out any timer, and only where it
+// connects from gives it away.
+const VIEW_ENDPOINT = 'https://www.taylorurl.com/api/preview-view';
+
 function send(brand) {
-  fetch(`${SUPABASE_URL}/rest/v1/rpc/preview_site`, {
-    method: 'POST',
-    keepalive: true,
-    headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ p_industry: brand.template, p_slug: brand.slug }),
-  }).catch(() => {});
+  const body = JSON.stringify({ slug: brand.slug, template: brand.template });
+  // Sent as text/plain, so the browser never asks first.
+  const blob = new Blob([body], { type: 'text/plain' });
+  if (!(navigator.sendBeacon && navigator.sendBeacon(VIEW_ENDPOINT, blob))) {
+    fetch(VIEW_ENDPOINT, { method: 'POST', body, keepalive: true, mode: 'no-cors' }).catch(() => {});
+  }
 }
 
 /**
