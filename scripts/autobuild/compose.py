@@ -757,9 +757,14 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
     return [found[k] for k in order][:8]
 
 
-def about_of(pages, name, trade=None):
+def about_of(pages, name, trade=None, services=()):
     """Their own about text: the about page first, then the home page's own paragraphs about them."""
     chosen = []
+    # A service's own words, set under its heading on their page ("Poor airflow
+    # can trap heat and moisture in your attic...", under Attic & Roof
+    # Ventilation), tell what one service is, not who they are. A service
+    # named only for the trade ("Roofing Services") can be told in their story's words.
+    told_of = [set(re.findall(r"[a-z]+", sentences(s["text"])[0].lower())) for s in services if s.get("text") and not GENERIC_SERVICE.match(s["title"])]
     ordered = sorted(pages, key=lambda p: 0 if re.search(r"about|story|who-we", p.url, re.I) else 1)
     short = short_name(name).lower().split(" ")[0]
     for page in ordered:
@@ -853,6 +858,9 @@ def about_of(pages, name, trade=None):
                 continue
             if other_trade(text, trade):
                 continue
+            said = set(re.findall(r"[a-z]+", text.lower()))
+            if any(len(t) >= 6 and len(t & said) >= 0.8 * len(t) for t in told_of):
+                continue
             # A sentence written around a search phrase ("searching for highly
             # rated Deer Park dentists near me") is left out of the paragraph.
             # A sentence their page set apart in a link or in bold is lost from
@@ -927,11 +935,20 @@ def unphoned(text):
     return " ".join(s for s in sentences(text) if not PHONE.search(s))
 
 
+# A sentence that points at their website rather than their work ("Take a look
+# at our Home page.") is the site theme's filler, not something to read.
+SITE_TALK = re.compile(r"(?:(?:take|have) a look at|look at|check out|browse|explore|visit|welcome to)\s+(?:our|this|the)\s+(?:[\w'’-]+\s+){0,2}(?:page|site|website|web site)\b[^.!?]*[.!?]$", re.I)
+
+
+def unsited(text):
+    return " ".join(s for s in sentences(text) if not SITE_TALK.match(s))
+
+
 def lead_of(pages, about, trade=None, services=()):
-    about = [unphoned(p) for p in about]
+    about = [unsited(unphoned(p)) for p in about]
     for page in pages[:1]:
         for key in ("og:description", "description"):
-            text = trim(unphoned(HEADING_RUN_IN.sub("", plain(page.meta.get(key, "")))), 220)
+            text = trim(unsited(unphoned(HEADING_RUN_IN.sub("", plain(page.meta.get(key, ""))))), 220)
             if other_trade(text, trade) or not FINISHED.search(text):
                 continue
             # A description left from the theme or another company's site
@@ -1070,7 +1087,7 @@ GENERIC_SERVICE = re.compile(
     r"(?:services?|contractors?|company|solutions|specialists?|experts?|care|work)$", re.I)
 
 
-def hero_line(services, town, label, trade=None):
+def hero_line(services, town, label, trade=None, name=""):
     """The headline a template draws under the name: the business's own two
     leading services and its town, worded once ("Auto and home insurance in
     Baytown", "Roof repair and roof replacement in Tomball"). With no two
@@ -1081,28 +1098,36 @@ def hero_line(services, town, label, trade=None):
     words = TRADE_WORDS.get(trade)
     if words:
         named.sort(key=lambda t: not re.search(words, t, re.I))
-    named = named[:2]
     # Initials in brackets ("Client Accounting Services (CAS)") only lengthen a headline.
     named = [re.sub(r"\s*\([^)]*\)$", "", t) for t in named]
-    lower = [" ".join(w if (w.isupper() and len(w) > 1) or w.upper() in ACRONYMS else w.lower() for w in t.split()) for t in named]
+    every = [" ".join(w if (w.isupper() and len(w) > 1) or w.upper() in ACRONYMS else w.lower() for w in t.split()) for t in named]
+    lower = every[:2]
+    phrase = lambda t: re.search(r"&|\b(?:and|or|for|of|with|to)\b", t, re.I)
+
+    def joined(a, b):
+        tail_a, tail_b = a.rsplit(" ", 1), b.rsplit(" ", 1)
+        # "Auto insurance and home insurance" reads as "auto and home insurance".
+        if len(tail_a) == 2 and len(tail_b) == 2 and tail_a[1].lower() == tail_b[1].lower():
+            return f"{tail_a[0]} and {b}"
+        return f"{a} and {b}"
     # A name that is a phrase of its own ("Storage for moving & life changes")
     # can't be joined to another with "and"; the trade stands for the two,
     # where their services name it. A listing filed under another trade
     # ("Painting" for a builder of lighting and fences) gives way to their
     # first service alone. One that lists the trade itself among its
     # services ("Pest Control" beside "Mosquito and Wasp Control") is filed
-    # under its own.
-    if len(lower) == 2 and any(re.search(r"&|\b(?:and|or|for|of|with|to)\b", t, re.I) for t in lower):
+    # under its own. Under a name that already says the trade ("Sugar
+    # Roofing") the trade says nothing again; their next two names that
+    # join stand for it.
+    if len(lower) == 2 and any(phrase(t) for t in lower):
         trade = label.lower().split()[0]
-        what = label.lower() if any(re.search(rf"\b{re.escape(trade)}", s["title"], re.I) for s in services) else lower[0]
-    elif len(lower) == 2:
-        a, b = lower
-        tail_a, tail_b = a.rsplit(" ", 1), b.rsplit(" ", 1)
-        # "Auto insurance and home insurance" reads as "auto and home insurance".
-        if len(tail_a) == 2 and len(tail_b) == 2 and tail_a[1].lower() == tail_b[1].lower():
-            what = f"{tail_a[0]} and {b}"
+        pair = [t for t in every if not phrase(t)][:2]
+        if re.search(rf"\b{re.escape(trade)}", name, re.I) and len(pair) == 2:
+            what = joined(*pair)
         else:
-            what = f"{a} and {b}"
+            what = label.lower() if any(re.search(rf"\b{re.escape(trade)}", s["title"], re.I) for s in services) else lower[0]
+    elif len(lower) == 2:
+        what = joined(*lower)
     elif lower:
         what = lower[0]
     else:
