@@ -121,6 +121,9 @@ function lowerName(title, town) {
   return town ? lower.replace(new RegExp(`\\b${town.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'gi'), town) : lower;
 }
 
+/** A group's label read as who it is for ("For Businesses"); a label that already says "For…" is kept, not doubled. */
+const forGroup = (label) => (/^for\b/i.test(label) ? label : `For ${label}`);
+
 /** A service their site only names has no page of its own, which would say nothing under its heading; it is listed by name. */
 const hasPage = (s) => Boolean(s.lead || s.text || list(s.covers).length || list(s.questions).length);
 
@@ -173,8 +176,9 @@ function TopBar({ b, tel }) {
         {first && (
           <p className="flex min-w-0 items-center gap-2 lg:hidden">
             <Clock size={14} className="flex-none text-white/60" aria-hidden="true" />
-            <span className="truncate">
-              {first[0]} {first[1]}
+            {/* Wraps between the days and the times rather than cutting the closing time off. */}
+            <span className="leading-snug">
+              <span className="whitespace-nowrap">{first[0]}</span> <span className="whitespace-nowrap">{first[1]}</span>
             </span>
           </p>
         )}
@@ -743,9 +747,10 @@ function Process({ b }) {
           <Eyebrow>{b.process.title || 'How we work'}</Eyebrow>
           {b.process.text && <h2 className={h2}>{b.process.text}</h2>}
         </div>
-        <ol className={`grid gap-0 lg:gap-8 ${STEPS[steps.length]}`}>
+        {/* On desktop the steps share the row's tracks, so a title that wraps lowers every step's text, not its own alone. */}
+        <ol className={`grid gap-0 lg:gap-x-8 ${STEPS[steps.length]}`}>
           {steps.map((s, i) => (
-            <li key={s.title} className="relative grid grid-cols-[48px_minmax(0,1fr)] gap-x-5 pb-9 last:pb-0 lg:block lg:pb-0">
+            <li key={s.title} className="relative grid grid-cols-[48px_minmax(0,1fr)] gap-x-5 pb-9 last:pb-0 lg:row-span-3 lg:grid-cols-1 lg:grid-rows-subgrid lg:pb-0">
               {i < steps.length - 1 && (
                 <>
                   <span aria-hidden="true" className="absolute bottom-0 left-6 top-12 w-px bg-primary/25 lg:hidden" />
@@ -755,7 +760,7 @@ function Process({ b }) {
               <span className="relative grid size-12 place-items-center rounded-full border-[1.5px] border-primary bg-white font-heading text-base text-primary">
                 {String(i + 1).padStart(2, '0')}
               </span>
-              <div className="min-w-0 pt-2.5 lg:pt-6">
+              <div className="min-w-0 pt-2.5 lg:row-span-2 lg:grid lg:grid-rows-subgrid lg:pt-6">
                 <h3 className="font-heading font-display-2 text-xl leading-snug text-ink">{s.title}</h3>
                 <p className="mt-2 text-base leading-[1.6] text-muted">{s.text}</p>
               </div>
@@ -1031,7 +1036,7 @@ function ServicePage(props) {
             <span className="grid size-12 flex-none place-items-center rounded-full bg-white text-primary">
               <Icon size={24} strokeWidth={1.25} aria-hidden="true" />
             </span>
-            {group?.label && <span className="text-[13px] font-bold uppercase tracking-[0.16em] text-accent">For {group.label}</span>}
+            {group?.label && <span className="text-[13px] font-bold uppercase tracking-[0.16em] text-accent">{forGroup(group.label)}</span>}
           </p>
         }
         title={s.title}
@@ -1090,7 +1095,7 @@ function ServicePage(props) {
         <section className={pad}>
           <div className={wrap}>
             <h2 className="mb-7 font-heading font-display-2 text-[clamp(1.4rem,1.1rem+1vw,1.75rem)] text-ink">
-              {group?.label ? `More for ${lowerName(group.label, b.town)}` : 'More services'}
+              {group?.label ? `More ${lowerName(forGroup(group.label), b.town)}` : 'More services'}
             </h2>
             <ul className="grid gap-4 md:grid-cols-3 lg:gap-5">
               {related.map((o) => {
