@@ -67,8 +67,8 @@
  */
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, Check, ChevronDown, Clock, ExternalLink, Mail, MapPin, Menu, Phone, Plus, X } from 'lucide-react';
-import { brandVars, displayVars, mapsHref, telHref } from '../site.js';
-import { BrandLogo, EnquiryForm, Img, Stars, Facts, StudioCredit } from './shared.jsx';
+import { brandVars, displayVars, luminance, mapsHref, telHref } from '../site.js';
+import { BrandLogo, EnquiryForm, Img, Stars, Facts, StudioCredit, hexOr, mixHex } from './shared.jsx';
 import { iconFor } from './professional/icons.js';
 
 const KIND = {
@@ -123,6 +123,25 @@ function lowerName(title, town) {
 
 /** A group's label read as who it is for ("For Businesses"); a label that already says "For…" is kept, not doubled. */
 const forGroup = (label) => (/^for\b/i.test(label) ? label : `For ${label}`);
+
+/**
+ * The accent as the template draws it: small labels and icons on the white,
+ * cream and surface grounds, so a pale accent (a lime, a sky blue) is darkened
+ * until it reads on every one of them.
+ */
+function readableAccent(brand) {
+  const contrast = (a, b) => {
+    const [x, y] = [luminance(a), luminance(b)].sort((p, q) => q - p);
+    return (x + 0.05) / (y + 0.05);
+  };
+  const accent = hexOr(brand.accent, hexOr(brand.primary, '#000000'));
+  const grounds = ['#ffffff', hexOr(brand.cream, '#ffffff'), hexOr(brand.surface, '#ffffff')];
+  for (let s = 0; s <= 1; s += 0.04) {
+    const shade = mixHex(accent, '#000000', s);
+    if (grounds.every((g) => contrast(shade, g) >= 4.5)) return shade;
+  }
+  return '#000000';
+}
 
 /** A service their site only names has no page of its own, which would say nothing under its heading; it is listed by name. */
 const hasPage = (s) => Boolean(s.lead || s.text || list(s.covers).length || list(s.questions).length);
@@ -1485,6 +1504,7 @@ export default function Professional({ b, path = '' }) {
         '--primaryDeep': 'color-mix(in srgb, var(--primary) 72%, #000)',
         ...displayVars(b.brand),
         ...brandVars(b.brand),
+        '--accent': readableAccent(b.brand),
       }}
     >
       <TopBar b={b} tel={tel} />
