@@ -1,0 +1,318 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Zemanek Marine Services, Inc.",
+  "shortName": "Zemanek Marine",
+  "summary": "Marine surveying and consulting for cargo, vessels and claims, in the heart of Houston and at the doorway to the Port of Houston.",
+  "phone": "(281) 960-6858",
+  "email": "jzemanek@zemanekmarine.com",
+  "address": "1096 Winfield Lane, Suite A",
+  "town": "Kemah",
+  "state": "TX",
+  "zip": "77565",
+  "since": 2001,
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#101a24",
+    "primaryDeep": "#05090d",
+    "accent": "#e01b24",
+    "ink": "#111820",
+    "muted": "#56626e",
+    "surface": "#f2f5f8",
+    "line": "#dde3e9",
+    "heading": "'Oswald', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap",
+    "logo": "/brands/zemanekmarine/logo.webp",
+    "logoMono": "/brands/zemanekmarine/logo-mono.webp",
+    "logoWidth": 75,
+    "logoHeight": 84,
+    "logoRatio": 0.893,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.234,
+      0.214,
+      0.182,
+      0.442,
+      0.49,
+      0.565,
+      0.645,
+      0.729,
+      0.819,
+      0.912,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Marine surveying and consulting",
+    "title": "Professional, high-level service",
+    "titleAccent": "for your marine surveying needs.",
+    "lead": "Zemanek Marine Services, Inc. is the company you are looking for to provide professional, high-level service for your marine surveying and consulting needs, backed by forty years of experience in the industry.",
+    "image": "/brands/zemanekmarine/hero",
+    "imageAlt": "A tug working past container cranes at a port terminal at sunset"
+  },
+  "groups": [
+    {
+      "slug": "surveying",
+      "title": "Surveying",
+      "icon": "clipboard",
+      "summary": "We provide a variety of surveys to meet your needs for your next project.",
+      "intro": "All of our surveys are done with the intention of mitigating losses to the greatest extent. The list below is the work we are called out for, from a draft reading or a hatch cover test to a full investigation of a damaged or short-landed cargo.",
+      "image": "/brands/zemanekmarine/surveying",
+      "imageAlt": "Shoreside cranes lifting large cylindrical sections onto a heavy lift vessel",
+      "services": [
+        {
+          "slug": "bunker",
+          "title": "Bunker",
+          "icon": "gauge",
+          "text": "Fuel on board measured and recorded, at a delivery, either side of a transfer or at a change of charter."
+        },
+        {
+          "slug": "condition",
+          "title": "Condition",
+          "icon": "clipboard",
+          "text": "The state of a vessel, a hold or a piece of cargo recorded as it is found, with photographs and notes."
+        },
+        {
+          "slug": "damage",
+          "title": "Damage",
+          "icon": "shield",
+          "text": "Damage to cargo or to a vessel examined and documented, with the extent set down for the parties involved."
+        },
+        {
+          "slug": "discharge",
+          "title": "Discharge",
+          "icon": "waves",
+          "text": "Cargo attended as it comes off the vessel, with its condition and any damage recorded as it happens."
+        },
+        {
+          "slug": "draft",
+          "title": "Draft",
+          "icon": "ruler",
+          "text": "Draft readings taken before and after working cargo to determine the weight loaded or discharged."
+        },
+        {
+          "slug": "fumigation",
+          "title": "Fumigation",
+          "icon": "leaf",
+          "text": "The fumigation of a cargo or a hold attended and recorded."
+        },
+        {
+          "slug": "hatch-cover",
+          "title": "Hatch Cover",
+          "icon": "settings",
+          "text": "Hatch covers examined and tested for weathertightness before a cargo is loaded."
+        },
+        {
+          "slug": "heavy-lift",
+          "title": "Heavy Lift",
+          "icon": "building",
+          "text": "Oversized and heavy pieces surveyed through the lift, the stowage and the securing."
+        },
+        {
+          "slug": "inventory",
+          "title": "Inventory",
+          "icon": "clipboard",
+          "text": "Cargo counted and recorded piece by piece against the manifest or the packing list."
+        },
+        {
+          "slug": "investigation",
+          "title": "Investigation",
+          "icon": "chart",
+          "text": "What happened to a cargo or a vessel established from the evidence, the records and the people who were there."
+        },
+        {
+          "slug": "lashing-and-securing",
+          "title": "Lashing & Securing",
+          "icon": "cable",
+          "text": "Lashings, dunnage and securing arrangements examined before the vessel sails."
+        },
+        {
+          "slug": "loading",
+          "title": "Loading",
+          "icon": "waves",
+          "text": "Cargo attended as it is loaded, with the stowage and the condition it went aboard in recorded."
+        },
+        {
+          "slug": "loss-control-and-prevention",
+          "title": "Loss Control & Prevention",
+          "icon": "shield",
+          "text": "Handling, stowage and storage reviewed to find where a cargo is being lost or damaged, and what would stop it."
+        },
+        {
+          "slug": "mill-claims",
+          "title": "Mill Claims",
+          "icon": "settings",
+          "text": "Steel and mill cargo claims examined against the mill certificates and the shipping records."
+        },
+        {
+          "slug": "off-hire",
+          "title": "Off-Hire",
+          "icon": "timer",
+          "text": "The vessel's condition, bunkers and stores recorded at redelivery at the end of a charter."
+        },
+        {
+          "slug": "on-hire",
+          "title": "On-Hire",
+          "icon": "timer",
+          "text": "The vessel's condition, bunkers and stores recorded on delivery into a charter."
+        },
+        {
+          "slug": "personal-effects",
+          "title": "Personal Effects",
+          "icon": "home",
+          "text": "Household goods and personal shipments examined and listed, before or after the move."
+        },
+        {
+          "slug": "project-cargo",
+          "title": "Project Cargo",
+          "icon": "compass",
+          "text": "Project shipments followed through loading, stowage, securing and discharge, piece by piece."
+        },
+        {
+          "slug": "quality-control",
+          "title": "Quality Control",
+          "icon": "filter",
+          "text": "Cargo checked against the specification and the condition it is required to be in."
+        },
+        {
+          "slug": "shortage-investigation",
+          "title": "Shortage Investigation",
+          "icon": "chart",
+          "text": "A short-landed or missing cargo traced back through the tally, the records and the terminal."
+        }
+      ]
+    },
+    {
+      "slug": "consulting",
+      "title": "Consulting",
+      "icon": "compass",
+      "summary": "We provide expert consulting services backed by over 40 years of experience.",
+      "intro": "Beyond the survey itself, we are brought in when a claim has to be made, defended or explained. We have considerable experience in assisting with subrogation efforts, and we have given many depositions as well as testified in federal courts.",
+      "image": "/brands/zemanekmarine/consulting",
+      "imageAlt": "A loaded container ship under way at sea, seen from above",
+      "services": [
+        {
+          "slug": "expert-witness",
+          "title": "Expert Witness",
+          "icon": "shield",
+          "text": "Depositions and testimony on cargo and vessel matters, in federal court in the United States and abroad.",
+          "points": [
+            "Many depositions given",
+            "Testimony in federal court, both in the United States and abroad",
+            "An abundance of success for his clients",
+            "Considerable experience assisting with subrogation efforts"
+          ]
+        },
+        {
+          "slug": "investigation",
+          "title": "Investigation",
+          "icon": "chart",
+          "text": "The circumstances behind a loss, a claim or an incident worked through from the documents and the evidence."
+        },
+        {
+          "slug": "port-captain",
+          "title": "Port Captain",
+          "icon": "compass",
+          "text": "A representative at the berth on your behalf, overseeing the cargo operation from start to finish."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Forty years on the waterfront.",
+    "text": [
+      "Zemanek Marine Services, Inc. is a marine surveying and consulting firm, providing professional, high-level service for your marine surveying and consulting needs.",
+      "ZMS is owned and operated by John P. Zemanek, Jr., who is a graduate of the United States Merchant Marine Academy and has over 40 years experience in the industry.",
+      "All of our surveys are done with the intention of mitigating losses to the greatest extent. We have considerable experience in assisting with subrogation efforts. We have given many depositions as well as testified in federal courts."
+    ],
+    "image": "/brands/zemanekmarine/about",
+    "imageAlt": "A cargo vessel lying alongside at a dock",
+    "values": [
+      {
+        "title": "Forty years in the industry",
+        "text": "Our company is backed by forty years of experience in the industry."
+      },
+      {
+        "title": "Surveys that mitigate losses",
+        "text": "All of our surveys are done with the intention of mitigating losses to the greatest extent."
+      },
+      {
+        "title": "Experience in the courtroom",
+        "text": "We have given many depositions as well as testified in federal courts."
+      }
+    ]
+  },
+  "serviceArea": [
+    "Houston",
+    "Port of Houston",
+    "League City",
+    "Kemah",
+    "La Porte"
+  ],
+  "facts": [
+    {
+      "heading": "Our Team",
+      "items": [
+        "John Zemanek, President. He founded Zemanek Marine Services, Inc. in 2001, after 17 years with another marine surveying firm in the Houston area, and began his marine surveying career in 1984 on graduating from the United States Merchant Marine Academy.",
+        "Stephanie Zemanek, Office Manager. She joined in 2006 after almost twenty years with Sea-Land Services and then Maersk Sealand, where she held various positions including Administration Manager and Facilities Manager, and is responsible for all administrative and accounting duties."
+      ]
+    },
+    {
+      "heading": "Direct Contacts",
+      "items": [
+        "John Zemanek, cell (281) 960-6858, jzemanek@zemanekmarine.com",
+        "Stephanie Zemanek, szemanek@zemanekmarine.com"
+      ]
+    },
+    {
+      "heading": "Areas Of Expertise",
+      "items": [
+        "Steel cargoes, discharge and damage surveys",
+        "Investigation surveys, including inventory and loss control and prevention",
+        "Work with steel trading companies, container lines, freight forwarders, stevedores, Port Authorities, and domestic and international underwriters"
+      ]
+    },
+    {
+      "heading": "Membership",
+      "text": "John is a member of the National Association of Marine Surveyors."
+    },
+    {
+      "heading": "Our Office",
+      "items": [
+        "Zemanek Marine Services, Inc. is based in League City, Texas.",
+        "As of August 1, 2024 our location is 1096 Winfield Lane, Suite A, Kemah, Texas 77565."
+      ]
+    },
+    {
+      "heading": "Mailing Address",
+      "text": "PO Box 1744, La Porte, TX 77572."
+    },
+    {
+      "heading": "Who We Work With",
+      "items": [
+        "CPW America Co.",
+        "Lockwood International",
+        "Terminal Link Texas",
+        "Cooper/Ports America",
+        "Blue Group International",
+        "Marian Shipping LTD"
+      ]
+    }
+  ]
+}
