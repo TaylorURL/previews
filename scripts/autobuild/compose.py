@@ -631,12 +631,22 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         if re.search(r"\b(warrant(y|ies)|guarantees?) (on|for)\b", name, re.I):
             return
         # One that opens on a claim made of them ("Fits All Vehicles", "Keeps
-        # Your Home Cool") is a selling point, not a service.
-        if re.match(r"(fits|keeps|suits|offers|provides|protects|helps|makes|saves|gives|delivers|lets)\b", name, re.I):
+        # Your Home Cool") or on what the reader gains ("Saving Money with a
+        # Repair") is a selling point, not a service.
+        if re.match(r"(fits|keeps|suits|offers|provides|protects|helps|makes|saves|saving|gives|delivers|lets)\b", name, re.I):
             return
         # So is one that praises what they work with ("High-Quality Materials
         # and Equipment", "Quality Parts and Equipment"); it sells the job.
         if re.match(r"(?:(?:high|top|premium|best)[- ]?quality|quality|premium|durable|reliable) (?:materials?|parts|equipment|tools|supplies|products)\b", name, re.I):
+            return
+        # One that praises the trade as a whole ("Quality Roofing and
+        # Remodeling Services", "Reliable Roofing Solutions") is the heading
+        # over their services, said as a slogan.
+        if re.match(r"(?:(?:high|top|best)[- ]?quality|quality|premium|reliable|trusted|dependable|affordable)\s", name, re.I) and re.search(r"\b(?:services|solutions)$", name, re.I):
+            return
+        # One that ends on how a job came out ("Insurance Claim Approved",
+        # "Roof Replaced") is news of a job done, not a service.
+        if re.search(r"\b(?:approved|denied|accepted|replaced|completed|finished|done)$", name, re.I):
             return
         # A heading that opens on an article or a comparison ("A Tradition of
         # Quality Construction", "The Need for Commercial Storage", "Better
