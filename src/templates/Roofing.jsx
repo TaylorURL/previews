@@ -817,11 +817,13 @@ function ServiceTile({ s }) {
 /**
  * The services as cards when most of them carry words of their own, and as
  * plain tiles when most do not, so no card stands empty beside a full one.
- * Worded services fill whole rows of three cards; any left over, and every
- * service without words, follow as tiles.
+ * Worded services fill whole rows of three cards, or of four where four or
+ * eight would leave one over; any left over, and every service without words,
+ * follow as tiles. A card's group tag sits above its heading where it has no
+ * photo, so the tags are drawn only when every such card has one, and the
+ * headings in a row stay level.
  */
 function HomeServices({ services }) {
-  const tagged = new Set(services.map(groupOf)).size > 1;
   const worded = services.filter((s) => s.text);
   if (worded.length * 2 < services.length) {
     return (
@@ -833,12 +835,14 @@ function HomeServices({ services }) {
     );
   }
   const ordered = [...worded, ...services.filter((s) => !s.text)];
-  const whole = worded.length >= 3 ? worded.length - (worded.length % 3) : worded.length;
+  const row = worded.length % 3 && worded.length % 4 === 0 ? 4 : 3;
+  const whole = worded.length >= row ? worded.length - (worded.length % row) : worded.length;
   const cards = ordered.slice(0, whole);
   const rest = ordered.slice(whole);
+  const tagged = new Set(services.map(groupOf)).size > 1 && cards.every((s) => s.image || groupOf(s) !== 'general');
   return (
     <>
-      <ul className={`grid gap-5 sm:grid-cols-2 ${cards.length >= 3 ? 'lg:grid-cols-3' : ''}`}>
+      <ul className={`grid gap-5 sm:grid-cols-2 ${cards.length >= 3 ? STEP_COLS[row] : ''}`}>
         {cards.map((s) => (
           <ServiceCard key={s.slug} s={s} tagged={tagged} />
         ))}
