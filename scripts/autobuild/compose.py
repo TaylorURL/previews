@@ -170,8 +170,9 @@ ICONS = {
 
 # The roofing template's menu columns, each the label over its list on the
 # services page and the eyebrow of its pages. A service whose title names
-# neither is a residential one.
-ROOF_GROUPS = [("commercial", r"commercial|industrial"), ("storm", r"storm|hail|insurance|claim|emergency")]
+# neither is a residential one. A building of many homes (multi-family,
+# apartments, condos) is roofed as a commercial job, not a house's.
+ROOF_GROUPS = [("commercial", r"commercial|industrial|multi[- ]?family|apartment|condo"), ("storm", r"storm|hail|insurance|claim|emergency")]
 
 # The words that name each trade as a business would of itself. A site built on
 # a theme for another trade can keep the theme's copy ("a team of 30 plumbing
