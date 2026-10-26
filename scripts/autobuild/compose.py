@@ -1070,12 +1070,18 @@ GENERIC_SERVICE = re.compile(
     r"(?:services?|contractors?|company|solutions|specialists?|experts?|care|work)$", re.I)
 
 
-def hero_line(services, town, label):
+def hero_line(services, town, label, trade=None):
     """The headline a template draws under the name: the business's own two
     leading services and its town, worded once ("Auto and home insurance in
     Baytown", "Roof repair and roof replacement in Tomball"). With no two
     services worth naming it is the trade and the town."""
-    named = [s["title"] for s in services if not GENERIC_SERVICE.match(s["title"])][:2]
+    named = [s["title"] for s in services if not GENERIC_SERVICE.match(s["title"])]
+    # Services that name their own trade lead, so a roofer whose menu opens on
+    # siding is not headlined "Residential siding install".
+    words = TRADE_WORDS.get(trade)
+    if words:
+        named.sort(key=lambda t: not re.search(words, t, re.I))
+    named = named[:2]
     # Initials in brackets ("Client Accounting Services (CAS)") only lengthen a headline.
     named = [re.sub(r"\s*\([^)]*\)$", "", t) for t in named]
     lower = [" ".join(w if (w.isupper() and len(w) > 1) or w.upper() in ACRONYMS else w.lower() for w in t.split()) for t in named]
