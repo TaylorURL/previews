@@ -682,7 +682,7 @@ function TrustRow({ b }) {
       BadgeCheck,
       'Licensed',
       list(b.licenses)
-        .map((l) => `${l.label} ${l.number}`)
+        .map((l) => [l.label, l.number].filter(Boolean).join(' '))
         .join(' · '),
     ],
     b.financing?.text && [CreditCard, 'Financing', b.financing.text],
@@ -918,10 +918,10 @@ function Footer({ b, groups, tel }) {
           {licenses.length > 0 && (
             <ul className="grid gap-1 text-[14px]">
               {licenses.map((l) => (
-                <li key={l.number} className="flex items-center gap-2">
+                <li key={l.label} className="flex items-center gap-2">
                   <ShieldCheck size={15} className="flex-none text-[color:var(--pt)]" aria-hidden="true" />
                   <span className="min-w-0 break-words">
-                    {l.label} {l.number}
+                    {[l.label, l.number].filter(Boolean).join(' ')}
                   </span>
                 </li>
               ))}
@@ -1707,9 +1707,9 @@ function AboutPage({ b, groups, tel }) {
                 </h2>
                 <dl className="mt-4 grid gap-3">
                   {licenses.map((l) => (
-                    <div key={l.number} className="flex flex-wrap justify-between gap-x-4 border-t border-line pt-3 text-[16px] md:text-[15px]">
-                      <dt className="text-muted">{l.label}</dt>
-                      <dd className="m-0 font-semibold text-ink">{l.number}</dd>
+                    <div key={l.label} className="flex flex-wrap justify-between gap-x-4 border-t border-line pt-3 text-[16px] md:text-[15px]">
+                      <dt className={l.number ? 'text-muted' : 'font-semibold text-ink'}>{l.label}</dt>
+                      {l.number && <dd className="m-0 font-semibold text-ink">{l.number}</dd>}
                     </div>
                   ))}
                 </dl>
@@ -1885,8 +1885,10 @@ export default function Hvac({ b, path = '' }) {
     '--accent-lit': 'color-mix(in srgb, var(--accent) 40%, #fff)',
   };
 
+  // Heading type is tracked tight, which also narrows the word space; a face
+  // with a slim space (Archivo) would run 'Book a Visit' into 'Booka Visit'.
   return (
-    <div className="min-w-0 overflow-x-clip bg-white font-body text-[16px] text-ink antialiased" style={style}>
+    <div className="min-w-0 overflow-x-clip bg-white font-body text-[16px] text-ink antialiased [&_.font-heading]:[word-spacing:0.08em]" style={style}>
       <EmergencyStrip b={b} tel={tel} />
       <Header b={b} groups={groups} tel={tel} current={current} />
       <main>
