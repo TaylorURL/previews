@@ -322,6 +322,10 @@ LEADING = re.compile(r"(?:at|in|on|for|with|from|by|through|throughout|since|aft
 # major aspects.") has its point in the sentences after it.
 ANNOUNCES = re.compile(r"\b(?:two|three|four|five|six|seven|several|a few|the following)\s+(?:\w+\s+)?(?:aspects|things|reasons|ways|steps|principles|values|pillars|parts|goals|points|qualities)[.:]?$", re.I)
 
+# A sentence that sets up a case ("Suppose you have a cracked tooth.") has its
+# point in the sentence after it.
+SUPPOSES = re.compile(r"(?:suppose|supposing|imagine|picture this|let's say|let us say)\b", re.I)
+
 # A paragraph that opens on its block's headline, run in without a stop ("Give
 # Your Roof a New Lease on Life Your roof has always..."), starts its sentence
 # where a capitalised opener meets a lowercase word; the headline is cut away.
@@ -339,8 +343,8 @@ def trim(text, limit):
     their page leaves before a comma or stop is closed up, one it leaves out
     after them ("pool service.Innovative Pools", "service,maintenance") is put
     in, and a last sentence that stops on a comma, a list their page cut off,
-    is left out, as is one that is only a leading clause or the announcement
-    of a list the cut parted from its point."""
+    is left out, as is one that is only a leading clause, the announcement
+    of a list or the setting up of a case the cut parted from its point."""
     text = re.sub(r"\s+([,.;:!?])", r"\1", plain(text))
     # A web address ("pools.com") and a figure ("1,200") keep theirs: a stop
     # opens up only before a capital, and either only after a word.
@@ -358,7 +362,7 @@ def trim(text, limit):
         if len(" ".join(out + [sentence])) > limit:
             break
         out.append(sentence)
-    while out and (re.search(r"[,;:–—-]$", out[-1]) or (len(out) > 1 and (FRAGMENT.match(out[-1]) or ANNOUNCES.search(out[-1])))):
+    while out and (re.search(r"[,;:–—-]$", out[-1]) or (len(out) > 1 and (FRAGMENT.match(out[-1]) or ANNOUNCES.search(out[-1]) or SUPPOSES.match(out[-1])))):
         out.pop()
     return " ".join(out)
 
@@ -708,6 +712,13 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
     texts = [found[k]["text"] for k in order if found[k]["text"]]
     for k in order:
         if texts.count(found[k]["text"]) > 1:
+            found[k]["text"] = None
+    # Words under an emergency heading that say nothing of haste ("After your
+    # dentist reviews your x-rays...", under Emergency Dentistry) describe a
+    # visit of another kind, and describe none of the emergency work.
+    haste = re.compile(r"emergenc|urgent|immediate|right away|as soon as|same[- ]day|24|around the clock|round[- ]the[- ]clock|day or night|after hours|quick|fast|rapid|sudden|pain|injur|broken|knocked|swell|burst|leak|storm|can(?:no|')t wait|don't wait", re.I)
+    for k in order:
+        if found[k]["text"] and re.search(r"\b(?:emergenc|urgent)", found[k]["title"], re.I) and not haste.search(found[k]["text"]):
             found[k]["text"] = None
     # A page that sets each card's words between its heading and the next
     # gives a heading the next card's words ("Successful termite treatments..."
