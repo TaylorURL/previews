@@ -365,7 +365,8 @@ SUPPOSES = re.compile(r"(?:suppose|supposing|imagine|picture this|let's say|let 
 RUN_IN = re.compile(r"^(?:(?:[A-Z][\w'’-]*,?|a|an|the|and|or|of|on|in|for|to|with|at|by|&)\s+){3,}[A-Z][\w'’-]*\s+(?=(?:Your|Our|We|You|At|When|If|This|It|Whether|With)\s+[a-z])")
 
 # Misspellings their page makes of a common word, put right.
-MISSPELT = {r"\bverity of\b": "variety of", r"\bVerity of\b": "Variety of", r"\blazer\b": "laser", r"\bLazer\b": "Laser"}
+MISSPELT = {r"\bverity of\b": "variety of", r"\bVerity of\b": "Variety of", r"\blazer\b": "laser", r"\bLazer\b": "Laser",
+            r"\b(began|begun|started|start|launched) (their|his|her|our|my) carriers\b": r"\1 \2 careers"}
 
 
 SHORTENED = {"etc", "vs", "approx", "incl", "est", "ft", "sq", "no", "st", "dr", "mr", "mrs", "ms", "jr", "sr", "inc", "co", "ltd", "llc", "ave", "rd", "blvd", "hwy", "ste"}
@@ -858,8 +859,9 @@ def about_of(pages, name, trade=None, services=(), town=None, state=None, towns=
             # Nor is a notice of trouble on their end ("We're currently experiencing phone issues. If you can't reach us...").
             if re.search(r"\bcurrently experiencing\b|\b(?:can(?:no|')t|unable to) reach us\b|\bphones? (?:lines? )?(?:are|is) (?:down|out)\b", text.replace("’", "'"), re.I):
                 continue
-            # Nor is the site's legal disclaimer ("Attorney Advertising. This website is designed for general information only... not be construed to be formal legal advice").
-            if re.search(r"\battorney advertising\b|\bgeneral information(?:al)? (?:only|purposes)\b|\bnot (?:be )?construed\b|\b(?:lawyer|attorney)[/-]client relationship\b|\bdoes not constitute\b", text, re.I):
+            # Nor is the site's legal disclaimer ("Attorney Advertising. This website is designed for general information only... not be construed to be formal legal advice"),
+            # or its notice that they are not another company ("We are not affiliated, associated... with the Turbo Tax... Dismiss").
+            if re.search(r"\battorney advertising\b|\bgeneral information(?:al)? (?:only|purposes)\b|\bnot (?:be )?construed\b|\b(?:lawyer|attorney)[/-]client relationship\b|\bdoes not constitute\b|\bnot (?:in any way )?(?:affiliated|associated|endorsed)\b|\bofficially connected\b", text, re.I):
                 continue
             # Nor are its fields scraped as a paragraph ("Full Name * Phone Number * ... If you are human, leave this field blank.").
             if re.search(r"\b(?:name|e-?mail|phone(?: number)?|message)\s*\*|\bleave this field (?:blank|empty)\b", text, re.I):
