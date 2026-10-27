@@ -1533,7 +1533,7 @@ function AreasPage({ b, tel }) {
         tel={tel}
         crumbs={[['/service-areas', 'Service Areas']]}
         eyebrow="Service areas"
-        title={`Roofing in ${towns[0] || b.town} and nearby`}
+        title={`Roofing in ${towns[0] || b.town}${towns.length > 1 ? ' and nearby' : ''}`}
         lead={b.areasText}
         image={b.areasImage || b.hero.image}
         imageAlt={b.areasImage ? b.areasImageAlt : b.hero.imageAlt}
@@ -1564,19 +1564,27 @@ function AreasPage({ b, tel }) {
           </div>
         </section>
       )}
-      {/* The menu's link to a lone town lands on the address. */}
+      {/* The menu's link to a lone town lands here, and the town heads it, so
+          the page names where they work and not only where they are. */}
       <section
         id={towns.length > 1 ? undefined : townId(towns[0] || b.town)}
         className={`${towns.length > 1 ? '' : anchor} bg-surface ${pad}`}
       >
         <div className={`${wrap} grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16`}>
           <div>
-            <Eyebrow>Find us</Eyebrow>
+            <Eyebrow>{towns.length > 1 ? 'Find us' : 'Where we work'}</Eyebrow>
             <h2 className={h2}>
-              {/* A suite number ("Ste 202-350") wraps whole, never at its hyphen. */}
-              {b.address.split(/(\S*\d-\d\S*)/).map((part, i) => (i % 2 ? <span key={part} className="whitespace-nowrap">{part}</span> : part))}, {b.town}
+              {towns.length > 1 ? (
+                <>
+                  {/* A suite number ("Ste 202-350") wraps whole, never at its hyphen. */}
+                  {b.address.split(/(\S*\d-\d\S*)/).map((part, i) => (i % 2 ? <span key={part} className="whitespace-nowrap">{part}</span> : part))}, {b.town}
+                </>
+              ) : (
+                `${towns[0] || b.town}, ${b.state}`
+              )}
             </h2>
             <p className="mt-5 text-[17px] leading-[1.6] text-ink/75 sm:text-[18px]">
+              {towns.length > 1 ? '' : `From our base at ${b.address}, ${b.town}. `}
               Not sure whether we reach you? Call and ask; if we cannot get there, we will say so.
             </p>
           </div>
