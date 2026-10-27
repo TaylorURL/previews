@@ -112,6 +112,11 @@ def _logo(pages, business, name, scratch, notes):
     found = business.get("logo")
     if isinstance(found, dict):
         found = found.get("url")
+    # Structured data a site theme brought with it describes the theme's demo
+    # company, so a logo in it is tried only when its name is the business's.
+    owner = business.get("name")
+    if isinstance(owner, str) and _names_another({"alt": owner, "src": ""}, name):
+        found = None
     if isinstance(found, str):
         candidates.append(("url", found))
     home = pages[0]
