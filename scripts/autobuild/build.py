@@ -274,6 +274,13 @@ JOB_WORDS = {"service", "services", "repair", "repairs", "install", "installatio
              "maintenance", "company", "contractor", "contractors", "residential", "commercial", "emergency"}
 
 
+# Machines a photo can show that are a line of work of their own; one no
+# service of theirs names (an ice machine on an air conditioner's site) is not
+# a picture of any service they offer.
+SIDE_LINES = (r"\bice (?:machine|maker)", r"\brefrigerat", r"\bfreezer", r"\bgenerator", r"\bwater heater",
+              r"\bpools?\b", r"\bhot tub", r"\bsolar", r"\bappliance")
+
+
 def _own_words(title, services):
     """The words of a service's name no other service's name has, as plain lowercase."""
     others = {w for s in services if s["title"] != title for w in re.findall(r"[a-z]+", s["title"].lower())}
@@ -483,9 +490,14 @@ def build(prospect, root, slug):
         # A photo whose file name or look names one service's own word (a
         # generator, a panel) shows that service, so it goes to that service's
         # page or to none; the others go in order to the pages left.
+        # A photo of a machine none of their services is of goes to no page.
         named = {}
+        offered = " ".join(f"{s['title']} {s.get('text') or ''}" for s in services).lower()
         for n in list(wide):
             said = _said(pictures[n])
+            if any(re.search(p, said) and not re.search(p, offered) for p in SIDE_LINES):
+                wide.remove(n)
+                continue
             owner = next((s["title"] for s in services if any(re.search(rf"\b{w}", said) for w in _own_words(s["title"], services))), None)
             if owner:
                 wide.remove(n)
