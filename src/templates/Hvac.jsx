@@ -1334,13 +1334,18 @@ function namesOf(b) {
 }
 
 /**
- * What the closing band asks if they need: the goods of a sale ('Marine Equipment Sales' is 'marine equipment'), else
- * the work as a service, unless it is already named as things done ('Structural Foundation Assessments', 'Heat Pumps').
+ * What the closing band asks if they need: the goods of a sale ('Marine Equipment Sales' is 'marine equipment', and
+ * one thing takes its article: 'Generator Sales' is 'a generator'), supplies as supplies ('Crew Supplies'), else the
+ * work as a service, unless it is already named as things done ('Structural Foundation Assessments', 'Heat Pumps').
  */
 function needOf(b, group) {
   const name = lowerName(group.title, townsOf(b), group.intro, namesOf(b));
-  const goods = name.replace(/\s+(?:sales|supply|supplies)$/i, '');
-  if (goods !== name) return goods;
+  if (/\s(?:supply|supplies)$/i.test(name)) return name.replace(/supply$/i, 'supplies');
+  const goods = name.replace(/\s+sales$/i, '');
+  if (goods !== name) {
+    if (/s$|\b(?:equipment|gear|machinery|hardware|software|furniture|lumber|material|stone|steel|fuel|ice|water)$/i.test(goods)) return goods;
+    return `${/^[aeiou]/i.test(goods) ? 'an' : 'a'} ${goods}`;
+  }
   return `${name}${askOf(b).rents || /\bservices?\b|[^aisu]s$/i.test(group.title) ? '' : ' service'}`;
 }
 
