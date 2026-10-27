@@ -739,6 +739,17 @@ def mono(arr, ground):
             bright_in_dark, dark_in_bright = _held(bright, dark & ~dark_in_bright), _held(dark, bright & ~bright_in_dark)
             keep = np.where(bright_in_dark, np.clip((cut - level) / 0.5 + 0.5, 0, 1), keep)
             keep = np.minimum(keep, np.where(dark_in_bright, np.clip((level - cut) / 0.5 + 0.5, 0, 1), 1))
+            # A fill that fades toward the ground the mark was drawn for (red
+            # letters washing to white inside a black outline) is cut through
+            # whole: its faint tints, too close to that ground to be ink, go
+            # with the shape they fade from rather than hang as a haze in its hole.
+            holes = bright_in_dark | dark_in_bright
+            faint = (alpha > 0.5) & ~ink
+            count = -1
+            while int(holes.sum()) != count:
+                count = int(holes.sum())
+                holes |= _grow(holes) & faint
+            keep = np.where(holes & faint, 0.0, keep)
     opacity = alpha * stands * keep
     marked = alpha > 0.5
     if (opacity[marked] > 0.5).mean() < MONO_KEEPS * (1 if keep.min() == 1 else 0.5):
