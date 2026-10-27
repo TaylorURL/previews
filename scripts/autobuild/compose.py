@@ -568,6 +568,12 @@ def hours_of(business):
     # anyone keeps ("12 AM – 11:59 PM").
     if not week or all(t in WHOLE_DAY for t in week.values()):
         return []
+    # Opening and closing at the same moment is schema.org's way of saying a
+    # day is closed ("12 AM – 12 AM"), and the templates say "Closed".
+    for d, t in week.items():
+        opens, _, closes = t.partition(" – ")
+        if opens == closes:
+            week[d] = "Closed"
     # Only the days their data names: a day it leaves out is not called closed.
     rows = []
     for d in sorted(week):
@@ -652,9 +658,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
             return
         # A heading that opens on a bidding verb ("Find Storage", "Rent a Unit",
         # "Select a Fence Style", "Keep the Wheels Turning", "Upgrade to a Roof
-        # That Lasts") is a call to action or a slogan, not a service, and one
-        # that names a warranty ("Warranty on Fence Materials") is a promise.
-        if re.match(r"(find|rent|reserve|book|get|browse|shop|keep|let|stay|click|tap)\b|(select|choose) (a|an|the|your)\b|upgrade (to|your)\b", name, re.I):
+        # That Lasts", "Compare AC Equipment") is a call to action or a slogan,
+        # not a service, and one that names a warranty ("Warranty on Fence
+        # Materials") is a promise.
+        if re.match(r"(find|rent|reserve|book|get|browse|shop|keep|let|stay|click|tap|compare|explore|discover|view)\b|(select|choose) (a|an|the|your)\b|upgrade (to|your)\b", name, re.I):
             return
         # One that ends on a full stop ("Click shingles to compare roof
         # colors.") is a sentence of their page, not the name of a service.
