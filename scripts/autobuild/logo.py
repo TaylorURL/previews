@@ -69,6 +69,10 @@ RULE_SHARE = 0.05
 # across a map and a skyline), so it is drawn up to this tall where its file
 # holds the pixels, and never under 74.
 BADGE_MOST = 84
+# A long wordmark ("SCOTT SINGLETON FINCHER" across eight times its height) is
+# drawn this tall where it fits this wide.
+LONG_LOW = 40
+LONG_MOST = 340
 
 
 def _runs(ink):
@@ -99,12 +103,15 @@ def drawn_size(ratio, strip=1.0, most=None):
     """The size the header draws a logo of this shape, in CSS px: wordmarks
     lower and wider, badges taller so the name inside them reads, a mark with
     a thin strip of words taller so the strip reads (never past `most`, the
-    file's own height), nothing past 260 across."""
+    file's own height), nothing past 260 across. A long wordmark held to 260
+    across would be drawn too low for its thin letters to read, so it runs on
+    to LONG_MOST across to stay LONG_LOW tall (never past `most`)."""
     height = 48 if ratio >= 3.2 else 58 if ratio >= 1.6 else max(74, min(BADGE_MOST, most or BADGE_MOST))
     height = max(height, min(STRIP_MIN / strip, STRIP_MOST, most or STRIP_MOST))
     width = height * ratio
     if width > 260:
-        width, height = 260, 260 / ratio
+        height = max(260 / ratio, min(height, LONG_LOW, LONG_MOST / ratio, most or LONG_LOW))
+        width = height * ratio
     return round(width), round(height)
 
 
