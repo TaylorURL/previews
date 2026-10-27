@@ -678,6 +678,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # "Roof Replaced") is news of a job done, not a service.
         if re.search(r"\b(?:approved|denied|accepted|replaced|completed|finished|done)$", name, re.I):
             return
+        # One that says how the work is done ("Roofs Serviced with Precision",
+        # "Built with Care") is a slogan about it, not a service.
+        if re.search(r"\b\w+(?:ed|t) (?:with|by) (?:precision|care|pride|integrity|quality|skill|expertise|excellence|confidence|experts?|professionals?)$", name, re.I):
+            return
         # A heading that opens on an article or a comparison ("A Tradition of
         # Quality Construction", "The Need for Commercial Storage", "Better
         # Decisions Before Construction"), or on every one of a thing ("Every
@@ -726,6 +730,14 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         core = lambda k: re.sub(r"(?: (?:services?|solutions))?(?: for (?:homes?|homeowners|your home|residences?))?$", "", k)
         if any(stem(key).startswith(stem(k)) or stem(k).startswith(stem(key)) or core(k) == core(key) for k in found if k != key):
             return
+        # A one-word heading that ends another ("Repair" of "Roof Repair") is
+        # that service with the trade left off; the full name is kept.
+        if " " not in key and any(stem(k).endswith(" " + stem(key)) for k in found):
+            return
+        for k in [k for k in order if " " not in k and stem(key).endswith(" " + stem(k))]:
+            text = text or found[k]["text"]
+            del found[k]
+            order.remove(k)
         if key not in found:
             found[key] = {"title": title_case(name), "text": None}
             order.append(key)
