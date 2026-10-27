@@ -727,7 +727,8 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         stem = lambda k: re.sub(r"s\b", "", k)
         # So is "Residential Painting for Homes" of "Residential Painting
         # Services": the word for the offer and whom it is for name no work.
-        core = lambda k: re.sub(r"(?: (?:services?|solutions))?(?: for (?:homes?|homeowners|your home|residences?))?$", "", k)
+        # "General Medicare" is "Medicare" said again; "general" names none.
+        core = lambda k: re.sub(r"^general |(?: (?:services?|solutions))?(?: for (?:homes?|homeowners|your home|residences?))?$", "", k)
         if any(stem(key).startswith(stem(k)) or stem(k).startswith(stem(key)) or core(k) == core(key) for k in found if k != key):
             return
         # A one-word heading that ends another ("Repair" of "Roof Repair") is
