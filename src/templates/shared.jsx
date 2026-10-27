@@ -70,9 +70,20 @@ export function logoStands(brand, ground) {
   }
   // The ground as the gray the build tried the mark on: its luma, as an image
   // library turns a color picture gray.
-  const [r, g, b] = [1, 3, 5].map((i) => parseInt(hexOr(ground, '#ffffff').slice(i, i + 2), 16) / 255);
-  const at = (0.299 * r + 0.587 * g + 0.114 * b) * (level.length - 1);
+  const gray = (hex) => {
+    const [r, g, b] = [1, 3, 5].map((i) => parseInt(hexOr(hex, '#ffffff').slice(i, i + 2), 16) / 255);
+    return (0.299 * r + 0.587 * g + 0.114 * b) * (level.length - 1);
+  };
+  const at = gray(ground);
   const i = Math.min(level.length - 2, Math.floor(at));
+  // A mark drawn for one of those grays (white, black) reads in full only on it:
+  // its pale or dark tints vanish on a ground just off it, so a ground between
+  // it and the next gray is held to that gray (a silver mark drawn for white
+  // loses its highlights on a pale gray footer).
+  const drawn = gray(brand.logoGround);
+  const native = Math.abs(drawn - Math.round(drawn)) < 0.01 ? Math.round(drawn) : -1;
+  if (native === i + 1 && at < native - 0.01) return level[i];
+  if (native === i && at > native + 0.01) return level[i + 1];
   return level[i] + (level[i + 1] - level[i]) * (at - i);
 }
 
