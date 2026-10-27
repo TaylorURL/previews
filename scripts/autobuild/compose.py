@@ -636,6 +636,9 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # "Finishing the Job with Stump Grinding" is a line about the work
         # with the service at its end; the service is what it is done with.
         name = re.sub(r"^\w+ing (?:the|your|our|a|an|every) .+? (?:with|by|through) ", "", name, flags=re.I)
+        # "We Do Seamless Gutters" is the service said in their own voice; the
+        # service is what they do.
+        name = re.sub(r"^we (?:also )?(?:do|offer|provide|install|specialize in) (?=\w)", "", name, flags=re.I)
         # "DRYWALL Drywall Installation & Repair" is a card's label run into
         # its heading; the word is said once.
         name = re.sub(r"\b(\w+)\s+(?=\1\b)", "", name, flags=re.I)
