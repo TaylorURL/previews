@@ -61,7 +61,8 @@ included, and its solid ground is cut to transparency from the edges in, keeping
 is painted the ground it reads on (`logoGround`), white or its own color, so it never sits in a box; where a
 footer's ground differs the name is set in type instead, and a mark whose name cannot be read at header size
 (`logoName`) carries the name beside it. A logo on a picture or pattern, too small for the header, blurry or too
-faint to read is refused, and with no logo that sits cleanly the business is parked. A photo (`quality.py`) must be
+faint to read is refused, and with no logo that sits cleanly the name is set in type where the logo goes.
+A missing logo never parks or skips a business. A photo (`quality.py`) must be
 large enough for its slot, sharp, free of heavy compression, not a graphic, banner or screenshot, not the logo, and
 not a near copy of another photo, and it must crop to its slot without losing most of itself; the best photo takes
 the hero, and a page with too few good ones is drawn without them. When the `claude` command is present, a model

@@ -84,7 +84,8 @@ def logo_problems(brand, root):
     needs to draw it on any ground."""
     b = brand.get("brand", {})
     if not b.get("logo"):
-        return ["the brand has no logo"]
+        # No logo is drawn as the name set in type, which needs nothing more.
+        return []
     path = os.path.join(root, "public") + b["logo"]
     if not os.path.exists(path):
         return [f"{b['logo']} does not exist"]
