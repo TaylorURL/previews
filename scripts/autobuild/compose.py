@@ -716,8 +716,13 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # they are, not a service; one for them ("Estimating Support for
         # Contractors") is still a service.
         # So does one that ends on one of them ("Tax Strategy Consultant"),
-        # which is a job on their team.
-        if re.search(r"\b(?:electricians|technicians|installers|contractors|plumbers|roofers|painters|builders|remodelers|specialists|experts|professionals|pros|mechanics|welders|landscapers|exterminators|inspectors|engineers|machinists|fabricators|consultants?|advis[eo]rs?|accountants?|bookkeepers?|preparers?)$", name, re.I) and not re.search(r"\b(?:for|to|with)\b", name, re.I):
+        # which is a job on their team, and so does one that ends on a rank
+        # ("Tax Manager", "Office Coordinator").
+        if re.search(r"\b(?:electricians|technicians|installers|contractors|plumbers|roofers|painters|builders|remodelers|specialists|experts|professionals|pros|mechanics|welders|landscapers|exterminators|inspectors|engineers|machinists|fabricators|consultants?|advis[eo]rs?|accountants?|bookkeepers?|preparers?|managers?|directors?|supervisors?|coordinators?|assistants?|clerks?)$", name, re.I) and not re.search(r"\b(?:for|to|with)\b", name, re.I):
+            return
+        # Words under it that describe an opening on their team ("This
+        # position is responsible for...") make it a job, not a service.
+        if text and re.search(r"\b(?:this|the) (?:position|role|job) (?:is|will|requires)\b|\bideal candidate\b|\bminimal supervision\b", text, re.I):
             return
         if NOT_A_SERVICE_SHAPE.search(name) or (own and names_the_business(name, own)) or (local and local.search(name)):
             return

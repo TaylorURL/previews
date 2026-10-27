@@ -684,7 +684,7 @@ function Affiliations({ b, k, className = '' }) {
   );
 }
 
-function ServiceCard({ s, compact = false }) {
+function ServiceCard({ s, compact = false, arrow = true }) {
   const Icon = iconFor(s.icon);
   const box = hasPage(s) ? cardLink : 'rounded-lg border border-line bg-white';
   if (compact) {
@@ -694,7 +694,7 @@ function ServiceCard({ s, compact = false }) {
           <Icon size={24} strokeWidth={1.5} aria-hidden="true" />
         </span>
         <span className="min-w-0 flex-1 font-heading font-display-2 text-[1.15rem] leading-snug">{s.title}</span>
-        {hasPage(s) && <ArrowRight size={18} className="flex-none text-primary transition-transform group-hover:translate-x-1" aria-hidden="true" />}
+        {arrow && hasPage(s) && <ArrowRight size={18} className="flex-none text-primary transition-transform group-hover:translate-x-1" aria-hidden="true" />}
       </ServiceLink>
     );
   }
@@ -706,7 +706,7 @@ function ServiceCard({ s, compact = false }) {
       <span className="flex min-w-0 flex-1 flex-col">
         <h3 className="mb-2 mt-2 font-heading font-display-2 text-[1.2rem] leading-snug sm:mb-2.5 sm:mt-5">{s.title}</h3>
         <span className="mb-4 text-base leading-[1.6] text-muted sm:mb-5">{s.text}</span>
-        {hasPage(s) && (
+        {arrow && hasPage(s) && (
           <span className="mt-auto inline-flex items-center gap-1.5 font-bold text-primary">
             Learn More <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" aria-hidden="true" />
           </span>
@@ -721,6 +721,9 @@ function ServiceGrid({ groups }) {
   // rather than as cards with an empty middle.
   const all = groups.flatMap((g) => g.items);
   const compact = all.filter((s) => !s.text).length * 2 >= all.length;
+  // Arrows on every card or on none; a card without one among cards with
+  // them reads as one that lost its link.
+  const arrow = all.every(hasPage);
   return (
     <div className="grid gap-12">
       {groups.map((g) => (
@@ -734,7 +737,7 @@ function ServiceGrid({ groups }) {
           <ul className={`grid gap-4 lg:gap-5 ${GRID[columns(g.items.length, compact ? 3 : 4)]}`}>
             {g.items.map((s) => (
               <li key={s.slug}>
-                <ServiceCard s={s} compact={compact} />
+                <ServiceCard s={s} compact={compact} arrow={arrow} />
               </li>
             ))}
           </ul>
