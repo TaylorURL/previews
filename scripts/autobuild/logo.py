@@ -4,7 +4,8 @@
 
 A logo arrives one of three ways. Drawn on nothing (an SVG or a PNG with
 alpha), it keeps its transparency and goes on whichever ground it reads on, a
-white header or a dark one. Drawn on a flat color (the usual JPEG on white, a
+white header or a dark one, unless it is a flat plate with its name knocked
+out through it, which is a flat ground of its own. Drawn on a flat color (the usual JPEG on white, a
 gold mark on a black square), the color is cut away from the edges inward with
 a tolerance, the soft edge left by anti-aliasing is turned back into
 transparency rather than a halo, and the header takes that same color, so the
@@ -166,6 +167,40 @@ def ground_of(arr):
     if near.mean() >= 0.55 and ((dist > 28) & (dist < 90)).mean() < 0.08:
         return "solid", tuple(float(v) for v in middle)
     return "busy", None
+
+
+# A mark drawn on nothing can still bring a ground of its own: a flat plate
+# filling its own bounds, the name knocked out through it to show the page it
+# was drawn for. At least this much of its outer ring is opaque and one color.
+PLATE_RING = 0.95
+
+
+def _plate(arr):
+    """A transparent mark that is a flat plate with its name knocked out
+    through it, as the flat ground it is: the holes filled with the ink they
+    were cut to show (dark through a light plate, white through a dark one), so
+    the plate is cut away like any flat ground and the name stays. The filled
+    mark and the plate's color, or None when the mark is no plate."""
+    alpha = arr[..., 3]
+    rows = np.flatnonzero((alpha > 8).any(axis=1))
+    cols = np.flatnonzero((alpha > 8).any(axis=0))
+    if not len(rows) or not len(cols):
+        return None
+    arr = arr[rows[0]:rows[-1] + 1, cols[0]:cols[-1] + 1]
+    ring = _border(arr)
+    opaque = ring[:, 3] >= 200
+    if opaque.mean() < PLATE_RING:
+        return None
+    rgb = ring[opaque][:, :3].astype(np.float32)
+    plate = np.median(rgb, axis=0)
+    if (np.sqrt(((rgb - plate) ** 2).sum(axis=1)) <= 28).mean() < PLATE_RING:
+        return None
+    hole = np.array(DARK_GROUND if _luminance(plate) >= 0.4 else WHITE, dtype=np.float32)
+    a = arr[..., 3:].astype(np.float32) / 255
+    out = np.empty_like(arr)
+    out[..., :3] = np.clip(arr[..., :3] * a + hole * (1 - a), 0, 255).astype(np.uint8)
+    out[..., 3] = 255
+    return out, tuple(float(v) for v in plate)
 
 
 def _grow(mask):
@@ -738,6 +773,9 @@ def prepare(image):
     """The logo cut, trimmed and placed. Raises Unfit when it cannot be shown cleanly."""
     arr = _rgba(image)
     kind, ground = ground_of(arr)
+    plate = _plate(arr) if kind == "transparent" else None
+    if plate is not None:
+        (arr, ground), kind = plate, "solid"
     if kind == "busy":
         raise Unfit("the logo sits on a picture or pattern that cannot be cut away or matched")
     if kind == "solid":
@@ -794,6 +832,9 @@ def rework(image):
     own edge) keeps what it was drawn on."""
     arr = _rgba(image)
     kind, ground = ground_of(arr)
+    plate = _plate(arr) if kind == "transparent" else None
+    if plate is not None:
+        (arr, ground), kind = plate, "solid"
     # A badge cropped to its own edge, or a mark on a picture, keeps what it
     # was drawn on: there is no flat ground to take away.
     if kind == "solid":
