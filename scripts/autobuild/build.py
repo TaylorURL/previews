@@ -40,6 +40,12 @@ class Parked(Exception):
     """A business this script cannot build without guessing, and why."""
 
 
+class NoLogo(Parked):
+    """No logo of their own sits cleanly. The draft is still built, with the
+    business's name set in type where the logo goes; a missing logo never
+    stops a draft."""
+
+
 def _sample(root, template):
     with open(os.path.join(root, "src", "brands", f"sample-{template}.json")) as handle:
         return json.load(handle)
@@ -168,8 +174,8 @@ def _logo(pages, business, name, scratch, notes):
         source = "inline SVG on their home page" if kind == "svg" else value
         return prepared, placement, source, image
     if refused:
-        raise Parked("no logo on their website sits cleanly: " + "; ".join(dict.fromkeys(refused))[:300])
-    raise Parked("no usable logo on their website")
+        raise NoLogo("no logo on their website sits cleanly: " + "; ".join(dict.fromkeys(refused))[:300])
+    raise NoLogo("no usable logo on their website")
 
 
 def _photo_candidates(pages, logo_src):
@@ -318,14 +324,21 @@ def build(prospect, root, slug):
     notes = []
     scratch = tempfile.mkdtemp(prefix=f"preview-{slug}-")
     try:
-        mark, placement, logo_src, logo_raw = _logo(pages, business, name, scratch, notes)
-        logo_fields = logo.write(mark, placement, folder, slug)
-        inks = images.logo_colors(mark)
-        # A mark cut from a colored ground keeps that color as the brand's own.
-        ground = images.rgbof(placement["logoGround"])
-        h_, l_, s_ = colorsys.rgb_to_hls(*(v / 255 for v in ground))
-        if s_ >= 0.22 and 0.12 < l_ < 0.85:
-            inks = [ground] + inks
+        try:
+            mark, placement, logo_src, logo_raw = _logo(pages, business, name, scratch, notes)
+        except NoLogo as reason:
+            # The page sets the name in type where the logo goes (BrandLogo in
+            # src/templates/shared.jsx), and the colors come from their stylesheet.
+            mark = placement = logo_src = logo_raw = None
+            notes.append(f"the name is set in type for a logo: {reason}")
+        logo_fields = logo.write(mark, placement, folder, slug) if mark is not None else {}
+        inks = images.logo_colors(mark) if mark is not None else []
+        if placement:
+            # A mark cut from a colored ground keeps that color as the brand's own.
+            ground = images.rgbof(placement["logoGround"])
+            h_, l_, s_ = colorsys.rgb_to_hls(*(v / 255 for v in ground))
+            if s_ >= 0.22 and 0.12 < l_ < 0.85:
+                inks = [ground] + inks
         colors = compose.colors_of(inks, css, template)
         if not colors:
             raise Parked("no brand color in the logo or the site's stylesheet")

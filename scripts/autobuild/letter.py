@@ -27,7 +27,7 @@ def letter_for(row, brand):
     p1 = (f"{opener} Since then I put together a first draft of a new website for {name}, "
           f"and it's live so you can click through it:\n{{url}}")
 
-    theirs = ["your logo and colors"]
+    theirs = ["your logo and colors" if (brand.get("brand") or {}).get("logo") else "your name and colors"]
     if brand.get("rating") and brand.get("reviewCount"):
         theirs.append(f"your {brand['rating']}-star rating from {brand['reviewCount']} Google reviews")
     if brand.get("hours"):
