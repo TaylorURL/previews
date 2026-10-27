@@ -663,7 +663,7 @@ function HomeHero({ b, tel, rating }) {
 function PageHero({ b, tel, crumbs, eyebrow, title, lead, image, imageAlt }) {
   return (
     <section className={`relative isolate overflow-hidden bg-ink text-white ${heroClip}`}>
-      {image && (
+      {image ? (
         <>
           {/* On a phone the photo is shown whole above the words; from lg up it fills the right half behind them. */}
           <Img
@@ -678,6 +678,12 @@ function PageHero({ b, tel, crumbs, eyebrow, title, lead, image, imageAlt }) {
             aria-hidden="true"
           />
         </>
+      ) : (
+        // No photo for the right half: the brand's own colors carry the band, as on the home hero.
+        <div
+          className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_88%_12%,color-mix(in_srgb,var(--primary)_55%,transparent),transparent_58%),repeating-linear-gradient(135deg,rgba(255,255,255,0.035)_0_2px,transparent_2px_26px)]"
+          aria-hidden="true"
+        />
       )}
       <div className={`${wrap} pt-10 pb-[calc(clamp(28px,5vw,88px)+3rem)] lg:pt-14`}>
         <nav aria-label="Breadcrumb" className="mb-8 lg:mb-12">
@@ -700,24 +706,33 @@ function PageHero({ b, tel, crumbs, eyebrow, title, lead, image, imageAlt }) {
             ))}
           </ol>
         </nav>
-        <div className="max-w-[40rem] [container-type:inline-size] lg:max-w-[46%]">
-          <Eyebrow dark>{eyebrow}</Eyebrow>
-          {/* A long word ('Construction') is set smaller until it fits the column whole, rather than broken. */}
-          <h1
-            className={`${h1} !text-[min(clamp(2.4rem,1.4rem+3.8vw,4.5rem),var(--fit))]`}
-            style={{ '--fit': `${(100 / (Math.max(longest(title), 1) * 0.78)).toFixed(2)}cqi` }}
-          >
-            {title}
-          </h1>
-          {lead && <p className="mt-6 text-[17px] leading-[1.6] text-white/85 sm:text-[19px]">{lead}</p>}
-          <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
-            <a href="/contact" className={solid}>
-              Book a Free Inspection
-            </a>
-            <a href={tel} className={ghostDark}>
-              <Phone size={18} aria-hidden="true" /> {b.phone}
-            </a>
+        {/* Without a photo the right half holds the inspection panel, so it is not left empty. */}
+        <div className={image ? '' : 'grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,380px)] lg:gap-16'}>
+          <div className={`max-w-[40rem] [container-type:inline-size] ${image ? 'lg:max-w-[46%]' : 'min-w-0 lg:max-w-none'}`}>
+            <Eyebrow dark>{eyebrow}</Eyebrow>
+            {/* A long word ('Construction') is set smaller until it fits the column whole, rather than broken. */}
+            <h1
+              className={`${h1} !text-[min(clamp(2.4rem,1.4rem+3.8vw,4.5rem),var(--fit))]`}
+              style={{ '--fit': `${(100 / (Math.max(longest(title), 1) * 0.78)).toFixed(2)}cqi` }}
+            >
+              {title}
+            </h1>
+            {lead && <p className="mt-6 text-[17px] leading-[1.6] text-white/85 sm:text-[19px]">{lead}</p>}
+            <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
+              <a href="/contact" className={solid}>
+                Book a Free Inspection
+              </a>
+              <a href={tel} className={ghostDark}>
+                <Phone size={18} aria-hidden="true" /> {b.phone}
+              </a>
+            </div>
           </div>
+          {/* On a phone the column is stacked and the panel would only repeat the buttons above it. */}
+          {!image && (
+            <div className="hidden self-center lg:block">
+              <HeroPanel b={b} tel={tel} rating={ratingLine(b)} promises={list(b.promises).slice(0, 4)} />
+            </div>
+          )}
         </div>
       </div>
     </section>

@@ -177,7 +177,7 @@ import {
   Zap,
 } from 'lucide-react';
 import { brandVars, displayVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { BrandLogo, EnquiryForm, Img, Stars, Facts, StudioCredit } from './shared.jsx';
+import { BrandLogo, EnquiryForm, Img, Stars, Facts, StudioCredit, hexOr, mixHex } from './shared.jsx';
 import { fillOf, labelOf, onColor } from './hvac/color.js';
 
 const ICONS = {
@@ -913,7 +913,7 @@ function Footer({ b, groups, tel }) {
       <div className={`${wrap} grid grid-cols-2 gap-x-6 gap-y-10 pb-12 pt-14 lg:grid-cols-[1.4fr_1fr_1.2fr] lg:gap-12`}>
         <div className="col-span-2 grid content-start gap-4 lg:col-span-1">
           <a href="/" className="flex min-h-[44px] w-fit max-w-full items-center" aria-label={`${b.name} home`}>
-            <BrandLogo b={b} ground="#f4f7fb" textClass="font-extrabold text-ink" />
+            <BrandLogo b={b} ground={hexOr(b.brand.surface, mixHex(b.brand.primary, '#ffffff', 0.94))} textClass="font-extrabold text-ink" />
           </a>
           {licenses.length > 0 && (
             <ul className="grid gap-1 text-[14px]">
