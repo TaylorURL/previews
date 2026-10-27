@@ -665,9 +665,10 @@ function PageHero({ b, tel, crumbs, eyebrow, title, lead, image, imageAlt }) {
     <section className={`relative isolate overflow-hidden bg-ink text-white ${heroClip}`}>
       {image ? (
         <>
-          {/* On a phone the photo is shown whole above the words; from lg up it fills the right half behind them. */}
+          {/* On a phone the photo is shown whole above the words; from lg up it fills the right half behind them.
+              A tall photo (people standing) is cut to its top on a phone, so heads are kept. */}
           <Img
-            className="relative block aspect-[16/10] w-full object-cover lg:absolute lg:inset-0 lg:left-auto lg:-z-20 lg:aspect-auto lg:h-full lg:w-[52%] lg:[clip-path:polygon(18%_0,100%_0,100%_100%,0_100%)]"
+            className="relative block aspect-[16/10] w-full object-cover object-top lg:absolute lg:object-center lg:inset-0 lg:left-auto lg:-z-20 lg:aspect-auto lg:h-full lg:w-[52%] lg:[clip-path:polygon(18%_0,100%_0,100%_100%,0_100%)]"
             src={image}
             alt={imageAlt || ''}
             sizes="(min-width: 1024px) 52vw, 100vw"
