@@ -20,7 +20,8 @@ Commands:
                                    passes none
     waiting                        how many prospects are due a site now
     skip PROSPECT_ID REASON        record that no site can be built for this
-                                   business, so it stops being offered
+                                   business, so it stops being offered; a
+                                   missing logo is refused as a reason
     register SLUG PROSPECT_ID LETTER_JSON
                                    file the preview and its letter; the
                                    industry and name come from the prospect,
@@ -163,6 +164,10 @@ def skip(prospect_id, reason):
     reason = " ".join(reason.split())[:300]
     if not reason:
         sys.exit("say why no site can be built")
+    # A missing or unusable logo is never a reason: the draft is built with the
+    # business's name set in type where the logo goes.
+    if re.search(r"\b(logo|wordmark|word mark)", reason, re.I):
+        sys.exit("a missing logo is not a reason to skip: build the draft with the name set in type for the logo")
     found = rest("GET", f"outreach_prospects?id=eq.{prospect_id}&select=id,name")
     if not found:
         sys.exit(f"no prospect {prospect_id}")
