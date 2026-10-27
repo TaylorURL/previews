@@ -316,7 +316,7 @@ function Header({ b, path, k, groups, nav, tel, ctaLabel }) {
   return (
     <header className={`sticky ${stick} z-40 border-b border-head-line bg-head`}>
       <div className={`${wrap} flex h-[76px] items-center gap-4 lg:h-[92px] lg:gap-6`}>
-        <a href="/" className="flex min-h-11 min-w-0 max-w-[62vw] flex-initial items-center no-underline lg:max-w-[280px] lg:flex-none" aria-label={`${b.name} home`}>
+        <a href="/" className="flex min-h-11 min-w-0 max-w-[62vw] flex-initial items-center no-underline lg:max-w-[280px] lg:flex-none xl:max-w-[340px]" aria-label={`${b.name} home`}>
           <BrandLogo b={b} textClass="text-head-ink" />
         </a>
 
@@ -1274,9 +1274,9 @@ function AboutPage(props) {
           <div className="min-w-0">
             {list(b.about.values).length > 0 && <h2 className="font-heading font-display-2 text-2xl text-ink">What to expect</h2>}
             <Values values={list(b.about.values)} />
-            {/* With nothing to expect and nowhere to list, the office's own facts fill the half. */}
-            {!list(b.about.values).length && !area.length && <OfficeFacts b={b} />}
-            {area.length > 0 && (
+            {/* With nothing to expect and no towns beyond one to list, the office's own facts, its town among them, fill the half. */}
+            {!list(b.about.values).length && area.length < 2 && <OfficeFacts b={b} />}
+            {area.length > 1 && (
               <div className="mt-10 first:mt-0">
                 <h2 className="mb-4 font-heading font-display-2 text-2xl text-ink">Where we work</h2>
                 <ul className="flex flex-wrap gap-2.5">

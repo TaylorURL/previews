@@ -319,10 +319,13 @@ FONTS = [
 # mark or byte-order mark for nothing.
 UNDRAWN = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]")
 ZERO_WIDTH = re.compile(r"[​⁠﻿]")
+# A list item's bullet set in its text ("◦ Audits of entities...") is their
+# page's markup, not their words.
+BULLET = re.compile(r"^[•◦▪▫‣⁃●○■□]\s*")
 
 
 def plain(text):
-    return " ".join(UNDRAWN.sub(" ", ZERO_WIDTH.sub("", str(text or ""))).split())
+    return BULLET.sub("", " ".join(UNDRAWN.sub(" ", ZERO_WIDTH.sub("", str(text or ""))).split()))
 
 
 def sentences(text):
@@ -972,6 +975,10 @@ def about_of(pages, name, trade=None, services=(), town=None, state=None, towns=
                 continue
             text = " ".join(kept)
             cut = trim(text, 600)
+            # Their name left on its own after the paragraph ("...advisory
+            # services.Scott Singleton Fincher & Co.") is a caption run into
+            # it, not a sentence of their story.
+            cut = " ".join(s for s in sentences(cut) if bare_name(s) not in (bare_name(name), bare_name(short_name(name))))
             # A paragraph their site repeats with a word or two changed
             # ("the team at Alex Pools Service" on one page, "Alex Pools" on
             # another) is the same paragraph, and is told once.
