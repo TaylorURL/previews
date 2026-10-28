@@ -568,37 +568,26 @@ function Hero({ b, tel, ctaLabel }) {
   const image = b.hero.image;
   return (
     <section className="relative isolate overflow-hidden bg-primary-deep text-white">
-      {image ? (
-        <>
-          {/* On a phone the photo is shown whole above the words; from lg up it fills the band's right part and
-              fades into the brand's color, so the words stand on that color rather than over the people in it. The color
-              stays solid as far as the words' column reaches (the page's edge, its gutter and the column's 44rem) and
-              fades only past it, so nothing in the photo's left part, such as a logo printed on a mug, shows through
-              faintly behind the words or across the line over the points. */}
-          <Img
-            className="relative block aspect-[16/10] w-full object-cover object-[center_30%] lg:absolute lg:inset-y-0 lg:right-0 lg:-z-20 lg:aspect-auto lg:h-full lg:w-[56%]"
-            src={image}
-            alt={b.hero.imageAlt || ''}
-            sizes="100vw"
-            eager
-            data-backdrop=""
-          />
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_94%,#000)_0%,var(--primaryDeep)_calc(max(0px,(100%_-_1320px)/2)_+_clamp(16px,4vw,64px)_+_44rem),color-mix(in_srgb,var(--primaryDeep)_30%,transparent)_calc(max(0px,(100%_-_1320px)/2)_+_clamp(16px,4vw,64px)_+_44rem_+_10%),transparent_calc(max(0px,(100%_-_1320px)/2)_+_clamp(16px,4vw,64px)_+_44rem_+_22%))]"
-          />
-        </>
-      ) : (
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_85%_10%,color-mix(in_srgb,var(--primary)_55%,transparent),transparent_60%),linear-gradient(135deg,color-mix(in_srgb,var(--primaryDeep)_92%,#000),var(--primaryDeep))]"
-        />
-      )}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_85%_10%,color-mix(in_srgb,var(--primary)_55%,transparent),transparent_60%),linear-gradient(135deg,color-mix(in_srgb,var(--primaryDeep)_92%,#000),var(--primaryDeep))]"
+      />
       <div
         className={`${wrap} grid items-center gap-12 py-12 sm:py-20 lg:py-28 ${
-          image ? 'lg:min-h-[min(660px,80vh)]' : 'lg:grid-cols-[minmax(0,1.3fr)_minmax(0,0.7fr)] lg:gap-20'
+          image ? 'lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-16' : 'lg:grid-cols-[minmax(0,1.3fr)_minmax(0,0.7fr)] lg:gap-20'
         }`}
       >
+        {/* Drawn in its own shape beside the words (above them on a phone), not stretched down the band's height
+            and faded into its color, so a wide photo keeps what is at its edges: a sign's lettering, a logo on the wall. */}
+        {image && (
+          <Img
+            className="h-auto max-h-[34rem] w-auto max-w-full justify-self-center rounded-lg lg:order-last lg:justify-self-end"
+            src={image}
+            alt={b.hero.imageAlt || ''}
+            sizes="(max-width: 1024px) 100vw, 45vw"
+            eager
+          />
+        )}
         <div className="min-w-0 max-w-[44rem]">
           {b.hero.eyebrow && <Eyebrow light>{b.hero.eyebrow}</Eyebrow>}
           <h1 className="break-words font-heading font-display text-[clamp(2.3rem,1.3rem+3.6vw,4.1rem)] leading-[1.06] text-white [text-wrap:balance]">
