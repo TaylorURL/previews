@@ -1150,7 +1150,8 @@ function ContactLines({ b, tel, dark = false }) {
   const full = `${b.address}, ${b.town}, ${b.state}${b.zip ? ` ${b.zip}` : ''}`;
   const rows = [
     [Phone, tel, b.phone],
-    b.email && [Mail, `mailto:${b.email}`, b.email.split('@').flatMap((p, i) => (i ? ['@', <wbr key={i} />, p] : [p]))],
+    // On a phone the address is set a size down, so a long domain fits its line whole after the @ instead of breaking mid-word.
+    b.email && [Mail, `mailto:${b.email}`, <span className="text-[15px] sm:text-[17px]">{b.email.split('@').flatMap((p, i) => (i ? ['@', <wbr key={i} />, p] : [p]))}</span>],
     [MapPin, mapsHref(b), full],
   ].filter(Boolean);
   return (
