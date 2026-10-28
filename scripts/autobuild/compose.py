@@ -710,6 +710,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # Estate Closings", "Exceptional Roofing"), whatever it ends on.
         if re.match(r"(?:extraordinary|exceptional|outstanding|unmatched|unparalleled|unbeatable|superb|amazing|incredible|remarkable|world[- ]class|first[- ]class)\s", name, re.I):
             return
+        # One that gathers the rest ("All Accounting Services", "Other Tax
+        # Services") is their menu's link to the services page, not a service.
+        if re.match(r"(?:all|other)\s.*\bservices$", name, re.I):
+            return
         # One that ends on how a job came out ("Insurance Claim Approved",
         # "Roof Replaced") is news of a job done, not a service.
         if re.search(r"\b(?:approved|denied|accepted|replaced|completed|finished|done)$", name, re.I):
@@ -1236,7 +1240,9 @@ def hero_line(services, town, label, trade=None, name=""):
         named.sort(key=lambda t: not re.search(words, t, re.I))
     # Initials in brackets ("Client Accounting Services (CAS)") only lengthen a headline.
     named = [re.sub(r"\s*\([^)]*\)$", "", t) for t in named]
-    every = [" ".join(w if (w.isupper() and len(w) > 1) or w.upper() in ACRONYMS else w.lower() for w in t.split()) for t in named]
+    # Each half of a slashed word ("Controller/CFO") keeps its own initials.
+    low = lambda w: w if (w.isupper() and len(w) > 1) or w.upper() in ACRONYMS else "/".join(low(p) for p in w.split("/")) if "/" in w else w.lower()
+    every = [" ".join(low(w) for w in t.split()) for t in named]
     lower = every[:2]
     phrase = lambda t: re.search(r"&|\b(?:and|or|for|of|with|to)\b", t, re.I)
 
