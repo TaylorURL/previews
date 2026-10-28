@@ -1,12 +1,22 @@
 # Previews
 
-Preview websites built in a local business's own brand, so TaylorURL can show them what a new site could look like.
+Preview websites built in a local business's own brand, linked from TaylorURL's outreach emails.
 
-When TaylorURL reaches out to a business, the email links to a preview made from that business's name, logo, colors, photos and details. Each one lives at `<business>.taylorurl.com`, has a bar across the top saying it's a preview, and is hidden from search engines.
+Each preview is made from the business's name, logo, colors, photos and details. It lives at `<business>.taylorurl.com`, has a bar across the top saying it's a preview, and is hidden from search engines.
 
-## Templates
+## How it's built
 
-Every template has a sample business you can look at:
+- **One brand file per business.** `src/brands/<slug>.json` holds the details, colors, fonts, logo and copy. Photos go in `public/brands/<slug>/` as webp at 800 and 1600 wide.
+- **The subdomain picks the business.** `vercel.json` rewrites `<slug>.taylorurl.com` to `/b/<slug>`. A template name (plumbing, salon) is that template's sample business. Anywhere else, like localhost or a Vercel preview URL, `?b=` picks it.
+- **Each brand is its own chunk.** A page loads one business, not the whole list.
+- **Prerendered.** `scripts/prerender.js` writes every page of every business to its own document after the build.
+- **Hidden from search.** `X-Robots-Tag: noindex, nofollow` on every path.
+- **Facts come from the business.** Its own website and Google listing. Nothing borrowed from another business. Anything unknown is left out.
+
+<details>
+<summary>Templates</summary>
+
+Every template has a sample business:
 
 | Template | Sample |
 | :--- | :--- |
@@ -24,24 +34,39 @@ Every template has a sample business you can look at:
 | Roofing | [roofing.taylorurl.com](https://roofing.taylorurl.com) |
 | Salon | [salon.taylorurl.com](https://salon.taylorurl.com) |
 
-## How a preview is made
+</details>
 
-- Each business is one file, `src/brands/<slug>.json`, with its details, colors, fonts, logo and copy
-- Its photos go in `public/brands/<slug>/` as webp, at 800 and 1600 pixels wide
-- The slug is the subdomain, so a new brand file becomes `<slug>.taylorurl.com` once it's deployed
-- Facts come from the business's own website and Google listing. Nothing is borrowed from another business, and anything unknown is left out
-- Views and basic activity (pages, scrolling, clicks) are reported to taylorurl.com. What people type into forms is never recorded
+<details>
+<summary>Building a brand file</summary>
 
-Most brand files are built by the scripts in `scripts/autobuild/`, which read the business's website and check the result before it's added. You can run the same checks on a brand file written by hand (needs Python with `numpy` and `Pillow`):
+Most brand files come from `scripts/autobuild/`, which reads the business's website, builds the preview and checks it before it lands. The same checks run on a hand-written brand file. Needs Python with `numpy` and `Pillow`:
 
 ```bash
 npm run build
 python3 -m scripts.autobuild.gate check <slug>
 ```
 
-`gate logo <url> <slug>` prepares a logo, and `gate photo <file>` tells you whether a photo is good enough to use.
+- `gate check` checks the facts' shape, the pictures and logo, every server-rendered page, and the home page measured at desktop and phone size. Exits 1 on any problem.
+- `gate logo <url> <slug>` cuts the logo's background away, refuses one that can't sit cleanly, and writes `logo.webp` and a one-color `logo-mono.webp`.
+- `gate photo <file>` says whether a photo can be shown, and in which slot.
 
-## Running it locally
+</details>
+
+<details>
+<summary>Tracking</summary>
+
+`src/track.js` reports pages opened, scroll depth, clicks and where people get stuck to taylorurl.com.
+
+- Loads after the page is idle, so it's never in front of the first frame.
+- Sends nothing until the page has actually been looked at, so a link scanner that loads and leaves isn't recorded.
+- Skips the studio's own browser and automated ones.
+- Form fields are named, never read. No values or keystrokes.
+
+</details>
+
+<details>
+<summary>Running it locally</summary>
+
 
 ```bash
 npm install
@@ -49,6 +74,8 @@ npm run dev
 ```
 
 Then open `http://localhost:5173/?b=<slug>`, for example `?b=plumbing` for the plumbing sample. `npm run build` prerenders every page of every business.
+
+</details>
 
 ## Built with
 
