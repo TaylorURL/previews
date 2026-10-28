@@ -127,8 +127,12 @@ def _logo(pages, business, name, scratch, notes):
         found = found.get("url")
     # Structured data a site theme brought with it describes the theme's demo
     # company, so a logo in it is tried only when its name is the business's.
+    # The site's maker can leave its own mark there under the business's name,
+    # so one whose file name says it is someone else's is not tried either.
     owner = business.get("name")
     if isinstance(owner, str) and _names_another({"alt": owner, "src": ""}, name):
+        found = None
+    if isinstance(found, str) and _names_another(_plain({"alt": "", "src": found}), name):
         found = None
     if isinstance(found, str):
         candidates.append(("url", found))
