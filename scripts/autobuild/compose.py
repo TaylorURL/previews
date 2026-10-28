@@ -291,8 +291,9 @@ def names_the_business(title, own):
 FREE_MAIL = re.compile(r"@(gmail|yahoo|hotmail|outlook|live|msn|aol|icloud|me|att|sbcglobal|comcast|bellsouth|ymail|protonmail)\.", re.I)
 MAILTO = re.compile(r"^mailto:([^?\s]+@[^?\s]+)", re.I)
 # An address for investors, the press, job seekers or the website itself is not
-# where a customer asks for work.
-NOT_FOR_CUSTOMERS = re.compile(r"^(ir|investors?|investor[._-]?relations|shareholders?|media|press|pr|careers?|jobs|recruiting|hr|privacy|legal|compliance|ethics|webmaster|no-?reply|do-?not-?reply)@", re.I)
+# where a customer asks for work, however the box is prefixed ('corporatehumanresources@').
+NOT_FOR_CUSTOMERS = re.compile(r"^(ir|investors?|investor[._-]?relations|shareholders?|media|press|pr|careers?|jobs|recruiting|hr|privacy|legal|compliance|ethics|webmaster|no-?reply|do-?not-?reply"
+                               r"|[^@]*(human[._-]?resources|recruit(ing|ment|er)?|careers|hiring|payroll)[^@]*)@", re.I)
 
 
 def email_of(stored, pages, business):
