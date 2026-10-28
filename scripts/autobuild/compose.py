@@ -391,6 +391,9 @@ def trim(text, limit):
                   lambda m: m.group(0) if m.group(1).lower() in SHORTENED else m.group(1) + m.group(2) + m.group(3).upper(), text)
     for wrong, right in MISSPELT.items():
         text = re.sub(wrong, right, text)
+    # A name that ends in a plural ("Aloha Swimming Pools's expert services")
+    # takes the apostrophe alone; one that ends in a double s ("Bass's") keeps it.
+    text = re.sub(r"\b([A-Z][a-z]*[^\Ws]s)(['’])s\b", r"\1\2", text)
     out = []
     for sentence in sentences(text):
         if len(" ".join(out + [sentence])) > limit:
