@@ -179,6 +179,8 @@ const inspected = (title) => {
   return what ? `${what} ` : '';
 };
 const STEP_COLS = { 3: 'lg:grid-cols-3', 4: 'lg:grid-cols-4', 5: 'lg:grid-cols-5', 6: 'lg:grid-cols-6' };
+/** A service card's width in a row of three or four, less its share of the gap-5 gutters. */
+const CARD_WIDTH = { 3: 'lg:w-[calc((100%-2.5rem)/3)]', 4: 'lg:w-[calc((100%-3.75rem)/4)]' };
 
 /** The extra pages this business's site has, from its services. */
 export function pages(b) {
@@ -778,12 +780,13 @@ function ClaimStrip({ b, stormHref }) {
   );
 }
 
-function ServiceCard({ s, tagged = true }) {
+function ServiceCard({ s, tagged = true, photo = true, className = '' }) {
+  const image = photo && s.image;
   const group = tagged && groupOf(s) !== 'general' ? GROUPS.find(([key]) => key === groupOf(s))[1] : null;
   return (
-    <li className="min-w-0">
+    <li className={`min-w-0 ${className}`}>
       <a href={`/services/${s.slug}`} className="group flex h-full flex-col bg-surface text-ink no-underline">
-        {s.image ? (
+        {image ? (
           <div className="relative overflow-hidden">
             <Img
               className="aspect-[16/10] w-full object-cover transition duration-500 [clip-path:polygon(0_0,100%_0,100%_86%,0_100%)] group-hover:scale-[1.03]"
@@ -833,11 +836,14 @@ function ServiceTile({ s }) {
 /**
  * The services as cards when most of them carry words of their own, and as
  * plain tiles when most do not, so no card stands empty beside a full one.
- * Worded services fill whole rows of three cards, or of four where four or
- * eight would leave one over; any left over, and every service without words,
- * follow as tiles. A card's group tag sits above its heading where it has no
- * photo, so the tags are drawn only when every such card has one, and the
- * headings in a row stay level.
+ * Worded services fill rows of three cards, or of four where four or eight
+ * would leave one over, and a short last row sits centred under the full ones
+ * at the same card width, so a worded service is never set apart as a tile;
+ * every service without words follows as tiles. A card without a photo beside cards with one stands empty
+ * down to its link, so the photos are drawn only when every card has one. A
+ * card's group tag sits above its heading where it has no photo, so the tags
+ * are drawn only when every such card has one, and the headings in a row stay
+ * level.
  */
 function HomeServices({ services }) {
   const worded = services.filter((s) => s.text);
@@ -850,17 +856,17 @@ function HomeServices({ services }) {
       </ul>
     );
   }
-  const ordered = [...worded, ...services.filter((s) => !s.text)];
   const row = worded.length % 3 && worded.length % 4 === 0 ? 4 : 3;
-  const whole = worded.length >= row ? worded.length - (worded.length % row) : worded.length;
-  const cards = ordered.slice(0, whole);
-  const rest = ordered.slice(whole);
-  const tagged = new Set(services.map(groupOf)).size > 1 && cards.every((s) => s.image || groupOf(s) !== 'general');
+  const cards = worded;
+  const rest = services.filter((s) => !s.text);
+  const photos = cards.every((s) => s.image);
+  const tagged = new Set(services.map(groupOf)).size > 1 && (photos || cards.every((s) => groupOf(s) !== 'general'));
+  const width = `w-full sm:w-[calc((100%-1.25rem)/2)] ${cards.length >= 3 ? CARD_WIDTH[row] : ''}`;
   return (
     <>
-      <ul className={`grid gap-5 sm:grid-cols-2 ${cards.length >= 3 ? STEP_COLS[row] : ''}`}>
+      <ul className="flex flex-wrap justify-center gap-5">
         {cards.map((s) => (
-          <ServiceCard key={s.slug} s={s} tagged={tagged} />
+          <ServiceCard key={s.slug} s={s} tagged={tagged} photo={photos} className={width} />
         ))}
       </ul>
       {rest.length > 0 && (
@@ -1036,7 +1042,7 @@ function AboutBand({ b }) {
   if (!a) return null;
   const words = (
     <>
-      <p className={`mt-5 text-[17px] leading-[1.65] text-white/80 sm:text-[18px] ${a.image ? '' : 'lg:mt-0'}`}>{list(a.text)[0]}</p>
+      <p className="mt-5 text-[17px] leading-[1.65] text-white/80 sm:text-[18px] lg:mt-0">{list(a.text)[0]}</p>
       {list(a.values).length > 0 && (
         <ul className="mt-8 grid gap-5 sm:grid-cols-3">
           {list(a.values).map((v) => (
@@ -1056,22 +1062,25 @@ function AboutBand({ b }) {
     <section className={`bg-ink text-white ${topClip} pb-[clamp(4rem,9vw,7rem)] pt-[calc(clamp(28px,5vw,88px)+clamp(3.5rem,8vw,6rem))]`}>
       {/* Without a photo the heading takes the left half and the words the right, so neither half is left empty. */}
       <div
-        className={`${wrap} grid items-center ${a.image ? 'gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]' : 'lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]'} lg:gap-20`}
+        className={`${wrap} grid ${a.image ? 'items-start gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]' : 'items-center lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]'} lg:gap-20`}
       >
-        {a.image && (
-          <Img
-            className="aspect-[4/3] w-full object-cover [clip-path:polygon(0_0,100%_0,100%_100%,8%_100%,0_92%)]"
-            src={a.image}
-            alt={a.imageAlt}
-            sizes="(min-width: 768px) 46vw, 100vw"
-          />
-        )}
         <div>
           <Eyebrow dark>{b.since ? `Since ${b.since}` : 'About us'}</Eyebrow>
           <h2 className={h2}>{a.title}</h2>
-          {a.image && words}
+          {/* The photo keeps its own shape, so a wide team photo loses no one at its
+              edges, and it sits under the heading rather than floating in a column of
+              its own: a photo shorter than the words beside it would leave the band
+              empty above and below it. */}
+          {a.image && (
+            <Img
+              className="mt-9 h-auto max-h-[34rem] w-auto max-w-full [clip-path:polygon(0_0,100%_0,100%_100%,8%_100%,0_92%)]"
+              src={a.image}
+              alt={a.imageAlt}
+              sizes="(min-width: 768px) 46vw, 100vw"
+            />
+          )}
         </div>
-        {!a.image && <div>{words}</div>}
+        <div>{words}</div>
       </div>
     </section>
   );
@@ -1365,6 +1374,8 @@ function ServicesIndex({ b, tel, stormHref }) {
       {GROUPS.map(([key, label]) => {
         const items = services.filter((s) => groupOf(s) === key);
         if (!items.length) return null;
+        // A row without a thumbnail starts its title where the others' photos sit, so they are drawn only when every row has one.
+        const photos = items.every((s) => s.image);
         return (
           <section key={key} className="pt-[clamp(3.5rem,7vw,5.5rem)] last-of-type:pb-[clamp(3.5rem,7vw,5.5rem)]">
             <div className={wrap}>
@@ -1376,9 +1387,9 @@ function ServicesIndex({ b, tel, stormHref }) {
                   <li key={s.slug} className="border-b border-ink/10">
                     <a
                       href={`/services/${s.slug}`}
-                      className={`group grid items-center gap-5 py-6 text-ink no-underline sm:gap-8 ${s.image ? 'sm:grid-cols-[180px_minmax(0,1fr)_auto]' : 'sm:grid-cols-[minmax(0,1fr)_auto]'}`}
+                      className={`group grid items-center gap-5 py-6 text-ink no-underline sm:gap-8 ${photos ? 'sm:grid-cols-[180px_minmax(0,1fr)_auto]' : 'sm:grid-cols-[minmax(0,1fr)_auto]'}`}
                     >
-                      {s.image && (
+                      {photos && (
                         <Img
                           className="aspect-[16/10] w-full object-cover [clip-path:polygon(0_0,100%_0,90%_100%,0_100%)]"
                           src={s.image}
@@ -1626,6 +1637,10 @@ function AboutPage({ b, tel }) {
   // The first paragraph leads the hero and the rest tell the story. A lone
   // paragraph tells the story, so the story is never a label over nothing.
   const lone = list(a.text).length < 2;
+  // The hero takes the business's hero photo, not its about one: the hero's
+  // half-panel is cut on a diagonal and filled, which loses the people at the
+  // edges of a wide group photo, while the about photo is the one chosen to be
+  // shown whole in the band on the home page.
   return (
     <>
       <PageHero
@@ -1635,8 +1650,8 @@ function AboutPage({ b, tel }) {
         eyebrow={b.since ? `Since ${b.since}` : `About ${b.shortName}`}
         title={a.title}
         lead={lone ? null : list(a.text)[0]}
-        image={a.image || b.hero.image}
-        imageAlt={a.image ? a.imageAlt : b.hero.imageAlt}
+        image={b.hero.image || a.image}
+        imageAlt={b.hero.image ? b.hero.imageAlt : a.imageAlt}
       />
       <section className={pad}>
         <div className={`${wrap} grid gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-20`}>
