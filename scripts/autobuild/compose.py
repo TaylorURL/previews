@@ -265,9 +265,10 @@ ACRONYMS = {"IRS", "CFO", "CPA", "CPAS", "HVAC", "AC", "A/C", "TPO", "LLC", "QB"
 CORPORATE = re.compile(r"\b(llc|l\.l\.c|inc|incorporated|corp|corporation|ltd|pllc|co|company)\b", re.I)
 # A numbered step, an emoji or a trademark sign, a page aimed at a town
 # ("... Houston, TX", "... in Pasadena"), a product's one-word brand name
-# ("ClosingLock") and a person's name with its initial ("Nicholas M. Wills")
+# ("ClosingLock") and a person's name with its initial ("Nicholas M. Wills"),
+# with or without a title after it ("Charles H. Mansour, Closing Attorney"),
 # are headings on their site, not services they sell.
-NOT_A_SERVICE_SHAPE = re.compile(r"^\d+\.\s|[^\w\s&'\u2019,./()\-\u2013+]|,\s*[A-Za-z]{2}$|\b(?i:tx|texas)$|\bin [A-Z][a-z]|^[A-Z][a-z]+[A-Z]\w*$|^[A-Z][a-z]+ [A-Z]\. [A-Z][a-z]+$")
+NOT_A_SERVICE_SHAPE = re.compile(r"^\d+\.\s|[^\w\s&'\u2019,./()\-\u2013+]|,\s*[A-Za-z]{2}$|\b(?i:tx|texas)$|\bin [A-Z][a-z]|^[A-Z][a-z]+[A-Z]\w*$|^[A-Z][a-z]+ [A-Z]\. [A-Z][a-z]+(?:,|$)")
 NAME_FILLER = {"the", "llc", "inc", "co", "company", "corp", "ltd", "pllc", "agency", "group"}
 
 
@@ -705,6 +706,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # over their services, said as a slogan.
         if re.match(r"(?:(?:high|top|best)[- ]?quality|quality|premium|reliable|trusted|dependable|affordable)\s", name, re.I) and re.search(r"\b(?:services|solutions)$", name, re.I):
             return
+        # So is one that opens on praise of the work ("Extraordinary Real
+        # Estate Closings", "Exceptional Roofing"), whatever it ends on.
+        if re.match(r"(?:extraordinary|exceptional|outstanding|unmatched|unparalleled|unbeatable|superb|amazing|incredible|remarkable|world[- ]class|first[- ]class)\s", name, re.I):
+            return
         # One that ends on how a job came out ("Insurance Claim Approved",
         # "Roof Replaced") is news of a job done, not a service.
         if re.search(r"\b(?:approved|denied|accepted|replaced|completed|finished|done)$", name, re.I):
@@ -898,6 +903,11 @@ def about_of(pages, name, trade=None, services=(), town=None, state=None, towns=
                 continue
             # Their call for job seekers ("Join a team... View our list of open positions") is a careers page, not their story.
             if re.search(r"\bopen positions\b|\bjob openings\b|\bnow hiring\b|\bjoin (?:a|our|the) (?:team|family)\b|\bapply to (?:be|join)\b", text, re.I):
+                continue
+            # Nor is the site's foreword to its own pages ("The following pages
+            # should give you an idea of what we're all about. We hope you enjoy
+            # them!"), which the preview does not have.
+            if re.search(r"\b(?:the following|these|the next|our other) pages\b|\b(?:this|our) (?:web ?site|site) (?:should|will|lets?|is designed to)\b|\bwe hope you enjoy (?:them|it|our (?:web ?site|site|pages))\b", text, re.I):
                 continue
             if not is_about and not re.search(rf"\b(we|our|{re.escape(short)})\b", text, re.I):
                 continue

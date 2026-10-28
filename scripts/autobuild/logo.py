@@ -87,14 +87,16 @@ def strip_share(arr):
     clear rows part the mark into strips; 1 for a mark in one piece. Lines of
     words stacked beside a symbol (a tagline under the name, next to a badge)
     are parted only on their own side, so each half of the mark is read too,
-    where it stacks three strips or more (not one word and the dot of an i)."""
+    where it stacks three strips or more (not one word and the dot of an i),
+    or holds one line of words alone beside a tall symbol (a thin name beside
+    a bird that spans the mark)."""
     ink = arr[..., 3] > 32
     half = ink.shape[1] // 2
     runs = _runs(ink)
     shares = [min(runs) / len(ink)] if len(runs) > 1 else []
     for side in (ink[:, :half], ink[:, half:]):
         runs = _runs(side)
-        if len(runs) > 2:
+        if len(runs) > 2 or len(runs) == 1:
             shares.append(min(runs) / len(ink))
     return min(shares, default=1.0)
 

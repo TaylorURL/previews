@@ -886,6 +886,12 @@ function AboutTeaser({ b, hasTeam }) {
           <h2 className={h2}>{unbroken(b.about.title)}</h2>
           {text[0] && <p className={`mt-6 ${lead}`}>{text[0]}</p>}
           <Values values={list(b.about.values)} />
+          {/* With its story told by the hero and nothing to expect, the office's own facts fill the half beside the photo. */}
+          {!text[0] && !list(b.about.values).length && (
+            <div className="mt-8">
+              <OfficeFacts b={b} />
+            </div>
+          )}
           {links}
         </div>
       </div>
