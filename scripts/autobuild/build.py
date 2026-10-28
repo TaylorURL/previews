@@ -506,6 +506,11 @@ def build(prospect, root, slug):
         # generator, a panel) shows that service, so it goes to that service's
         # page or to none; the others go in order to the pages left.
         # A photo of a machine none of their services is of goes to no page.
+        # A photo that names no service shows their trade at large (a
+        # painter's living room), so it goes only to a page whose service
+        # names that trade, not to a side job named for something else (a
+        # fence, a deck, pressure washing).
+        trade = compose.TRADE_WORDS.get(kind) if kind else compose.VOCAB["hvac"]
         named = {}
         offered = " ".join(f"{s['title']} {s.get('text') or ''}" for s in services).lower()
         for n in list(wide):
@@ -522,7 +527,7 @@ def build(prospect, root, slug):
                 continue
             icon = next((k for k, p in compose.ICONS.get(kind) or compose.ICONS["hvac"] if re.search(p, s["title"], re.I)), "wrench")
             group = {"slug": compose.slugify(s["title"]), "title": s["title"], "icon": icon, "summary": compose.card_line(s["text"], 140) or s["text"], "intro": s["text"]}
-            if s["title"] in named or wide:
+            if s["title"] in named or (wide and (not trade or re.search(trade, s["title"], re.I))):
                 group["image"] = named.get(s["title"]) or wide.pop(0)
                 group["imageAlt"] = f"A photo of {short}"
             groups.append(group)
