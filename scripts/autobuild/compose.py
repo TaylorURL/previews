@@ -243,6 +243,18 @@ def placed_elsewhere(text, town=None, state=None, towns=()):
     return bool(re.search(rf"\b(?:{'|'.join(others)})\b|,\s*(?:{'|'.join(codes)})\b", text))
 
 
+# Spam slipped into a hacked page sells medicine ("...consulting with a
+# healthcare professional about generic Clonidine" on an accountant's). Only a
+# trade that cares for health or insures it has reason to speak of it.
+MEDICINE = re.compile(r"\b(?:medications?|medicines?|prescriptions?|pharmac(?:y|ies|ists?)|pills?|dosages?|hypertension|blood pressure|viagra|cialis|levitra|tramadol|xanax|clonidine)\b", re.I)
+HEALTH_KINDS = {"dental", "chiropractic", "insurance"}
+
+
+def sells_medicine(text, trade):
+    """True when the words speak of medicine for a trade that has nothing to do with it."""
+    return trade not in HEALTH_KINDS and bool(MEDICINE.search(text))
+
+
 # A year can follow its word with "in" ("Established in 2014").
 SINCE = re.compile(r"\b(?:since|established|founded|est\.?|serving [^.]{0,40} since)\s+(?:in\s+)?((?:19|20)\d\d)\b", re.I)
 LICENSE = re.compile(r"\b((?:TDLR|TACLA|TECL|TDI|NPN|License|Lic\.)\s*(?:No\.?|#|Number)\s*:?\s*[A-Z]{0,6}-?\d[\w-]{3,})", re.I)
@@ -951,6 +963,8 @@ def about_of(pages, name, trade=None, services=(), town=None, state=None, towns=
             # company out of Kansas City, MO" for a roofer in Crosby, TX).
             if placed_elsewhere(text, town, state, towns):
                 continue
+            if sells_medicine(text, trade):
+                continue
             said = set(re.findall(r"[a-z]+", text.lower()))
             if any(len(t) >= 6 and len(t & said) >= 0.8 * len(t) for t in told_of):
                 continue
@@ -1046,7 +1060,7 @@ def lead_of(pages, about, trade=None, services=(), town=None, state=None, towns=
     for page in pages[:1]:
         for key in ("og:description", "description"):
             text = trim(unsited(unphoned(HEADING_RUN_IN.sub("", plain(page.meta.get(key, ""))))), 220)
-            if other_trade(text, trade) or not FINISHED.search(text):
+            if other_trade(text, trade) or sells_medicine(text, trade) or not FINISHED.search(text):
                 continue
             # A description that sets them in another state ("Kansas City's
             # trusted roofing contractor" for a roofer in Crosby, TX) was
