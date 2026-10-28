@@ -769,12 +769,18 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
 
         # "Marine Equipment & Sales" is "Marine Equipment Sales" said again.
         key = " ".join(w for w in re.sub(r"[^a-z0-9 ]", " ", name.lower()).split() if w != "and")
-        stem = lambda k: re.sub(r"s\b", "", k)
+        # "IRS Bank Levies" is "IRS Bank Levy" said again: a plural in -ies
+        # is its word in -y.
+        stem = lambda k: re.sub(r"s\b", "", re.sub(r"ies\b", "y", k))
         # So is "Residential Painting for Homes" of "Residential Painting
         # Services": the word for the offer and whom it is for name no work.
         # "General Medicare" is "Medicare" said again; "general" names none.
         core = lambda k: re.sub(r"^general |(?: (?:services?|solutions))?(?: for (?:homes?|homeowners|your home|residences?))?$", "", k)
-        if any(stem(key).startswith(stem(k)) or stem(k).startswith(stem(key)) or core(k) == core(key) for k in found if k != key):
+        same = next((k for k in found if k != key and (stem(key).startswith(stem(k)) or stem(k).startswith(stem(key)) or core(k) == core(key))), None)
+        if same:
+            # The words under the name said again describe the one kept.
+            if text and not found[same]["text"]:
+                found[same]["text"] = text
             return
         # A one-word heading that ends another ("Repair" of "Roof Repair") is
         # that service with the trade left off; the full name is kept.
