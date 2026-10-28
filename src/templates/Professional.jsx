@@ -1434,7 +1434,7 @@ function Footer({ b, nav, tel }) {
       >
         <div className="min-w-0 sm:col-span-2 lg:col-span-1">
           <a href="/" className="inline-flex min-h-11 max-w-full items-center no-underline" aria-label={`${b.name} home`}>
-            <BrandLogo b={b} ground="#f5f6f8" textClass="text-ink" />
+            <BrandLogo b={b} ground={hexOr(b.brand.surface, '#ffffff')} textClass="text-ink" />
           </a>
           {b.tagline && <p className="mt-4 max-w-xs leading-relaxed text-muted">{b.tagline}</p>}
           <p className="mt-4 leading-relaxed text-ink">
