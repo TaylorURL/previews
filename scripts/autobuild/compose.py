@@ -378,7 +378,7 @@ SUPPOSES = re.compile(r"(?:suppose|supposing|imagine|picture this|let's say|let 
 RUN_IN = re.compile(r"^(?:(?:[A-Z][\w'’-]*,?|a|an|the|and|or|of|on|in|for|to|with|at|by|&)\s+){3,}[A-Z][\w'’-]*\s+(?=(?:Your|Our|We|You|At|When|If|This|It|Whether|With)\s+[a-z])")
 
 # Misspellings their page makes of a common word, put right.
-MISSPELT = {r"\bverity of\b": "variety of", r"\bVerity of\b": "Variety of", r"\blazer\b": "laser", r"\bLazer\b": "Laser",
+MISSPELT = {r"\bverity of\b": "variety of", r"\bVerity of\b": "Variety of", r"\blazer\b": "laser", r"\bLazer\b": "Laser", r"\bvist\b": "visit", r"\bVist\b": "Visit",
             r"\b(began|begun|started|start|launched) (their|his|her|our|my) carriers\b": r"\1 \2 careers"}
 
 
@@ -900,7 +900,9 @@ def about_of(pages, name, trade=None, services=(), town=None, state=None, towns=
                 continue
             if not is_about and not re.search(rf"\b(we|our|{re.escape(short)})\b", text, re.I):
                 continue
-            if not re.match(r"[A-Z0-9\"'\u201c]", text) or "\u2026" in text or "..." in text:
+            # A paragraph that trails off ("...decisions. And when you do, here
+            # are a few ..") lost its list; the sentences left lead into nothing.
+            if not re.match(r"[A-Z0-9\"'\u201c]", text) or "\u2026" in text or re.search(r"\.\s?\.", text):
                 continue
             # A numbered step of how they work ("1. Walkthrough and measurements
             # We review...") is a process with its heading run in, not their story,
@@ -1083,7 +1085,12 @@ def lead_of(pages, about, trade=None, services=(), town=None, state=None, towns=
             # site's settings, not written; their own about text says it.
             if re.search(r"\b(\w+), and \1\b", text):
                 continue
-            if len(text) >= 60 and re.match(r"[A-Z]", text) and not re.search(r"cookie|javascript|internet explorer|\bbrowsers?\b|\||near me|call us|\u2026|\.\.\.", text, re.I):
+            # A description that opens on the page's title chain ("AIT -
+            # Insurance - Affordable Insurance of Texas is...") is directory
+            # copy, like one split by "|".
+            if re.search(r"\s-\s[^.!?]*\s-\s", text):
+                continue
+            if len(text) >= 60 and re.match(r"[A-Z]", text) and not re.search(r"cookie|javascript|internet explorer|\bbrowsers?\b|\||near me|call us|\u2026|\.\.", text, re.I):
                 return text, f"{page.url} meta {key}"
     # A paragraph that opens on a sentence too long for the hero gives way to
     # the next. One that asks a question ("Who is A.J. Benys? He is a native
