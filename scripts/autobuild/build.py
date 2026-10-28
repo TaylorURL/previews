@@ -109,6 +109,13 @@ def _names_another(img, name, own_only=False):
     return not any(w in own or (len(w) >= 4 and w in joined) or w in initials for w in words)
 
 
+def _plain(img):
+    """The picture with only the plain words of its file name, the ones with
+    no digit in them, so a file name of hashes ('a1b2c3_d4e5~mv2') says nothing."""
+    stem = img["src"].rsplit("/", 1)[-1].rsplit(".", 1)[0]
+    return {"alt": img["alt"], "src": " ".join(w for w in re.split(r"[^A-Za-z0-9]+", stem) if w.isalpha())}
+
+
 def _logo(pages, business, name, scratch, notes):
     """The logo, from the business's own structured data, a file named for it
     in its header, an SVG drawn in its header, the header's pictures, or a file
@@ -131,6 +138,11 @@ def _logo(pages, business, name, scratch, notes):
     # else's is never tried, and one below the header is tried last.
     named = [img for img in home.images if "logo" in img["hint"] or "logo" in img["alt"].lower()]
     others = {img["src"] for img in named if _names_another(img, name)}
+    # So is a picture in the header not named a logo whose alt text or file
+    # name says in plain words that it is someone else's (a financing
+    # partner's mark beside the menu); a file name of hashes and numbers
+    # names no one.
+    others |= {img["src"] for img in home.images if img["header"] and _names_another(_plain(img), name)}
     for img in named:
         if img["header"] and img["src"] not in others:
             candidates.append(("url", img["src"]))

@@ -1219,6 +1219,8 @@ GENERIC_SERVICE = re.compile(
     r"bookkeeping|cpa|legal|law|dental|chiropractic|pool|landscaping|landscape|lawn|painting|concrete|pest control|pest|"
     r"fencing|fence|tree|welding|machining|machine shop|industrial|marine|towing|storage)\s+)?"
     r"(?:services?|contractors?|company|solutions|specialists?|experts?|care|work)$", re.I)
+# The most words two services joined may take before the town.
+HEADLINE_WORDS = 5
 
 
 def hero_line(services, town, label, trade=None, name=""):
@@ -1242,8 +1244,13 @@ def hero_line(services, town, label, trade=None, name=""):
         tail_a, tail_b = a.rsplit(" ", 1), b.rsplit(" ", 1)
         # "Auto insurance and home insurance" reads as "auto and home insurance".
         if len(tail_a) == 2 and len(tail_b) == 2 and tail_a[1].lower() == tail_b[1].lower():
-            return f"{tail_a[0]} and {b}"
-        return f"{a} and {b}"
+            both = f"{tail_a[0]} and {b}"
+        else:
+            both = f"{a} and {b}"
+        # Two long names joined ("Outdoor sound system installation and
+        # landscape lighting installation") run the headline over five lines;
+        # the first alone is the headline.
+        return both if len(both.split()) <= HEADLINE_WORDS else a
     # A name that is a phrase of its own ("Storage for moving & life changes")
     # can't be joined to another with "and"; the trade stands for the two,
     # where their services name it. A listing filed under another trade
