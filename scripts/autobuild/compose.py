@@ -1025,9 +1025,9 @@ def about_of(pages, name, trade=None, services=(), town=None, state=None, towns=
 HEADING_RUN_IN = re.compile(r"^(?:Meet|Welcome to|About)\s[^.!?,:;]*?\s(?=(?:I|We|Our)\s)")
 # A description that stops without a full stop was cut off by the page or the
 # search snippet ("...that has defined our Houston"), as was one that trails off
-# ("Why Commercial Fences Matter for Every Business Every..."), an article's
-# teaser for a page we don't have.
-FINISHED = re.compile(r"(?<!\.\.)[.!?][\"'”)]?$")
+# ("Why Commercial Fences Matter for Every Business Every...", "home insurance
+# in Houston, TX is.."), an article's teaser for a page we don't have.
+FINISHED = re.compile(r"(?<![.…])[.!?][\"'”)]?$")
 
 
 def names_a_service(text, services):
