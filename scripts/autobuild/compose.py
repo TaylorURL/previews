@@ -892,8 +892,9 @@ def about_of(pages, name, trade=None, services=(), town=None, state=None, towns=
             if re.search(r"cookie|javascript|internet explorer|\bbrowsers?\b|copyright|all rights reserved|privacy|©|% off|\$\d|off any|coupon|call (us|now|today)|click here", text, re.I):
                 continue
             # Their contact form's own instructions ("Use the form to request an appointment") are not about them.
+            # Nor is what to put in it ("Share the building address... in our commercial request form").
             # Nor is its fine print ("By submitting, you agree... Do not upload payment-card information").
-            if re.search(r"\b(?:use|fill (?:out|in)|complete|submit) (?:the|our|this)(?: \w+)? form\b|\bby submitting\b|\bdo not (?:upload|submit|send|include)\b", text, re.I):
+            if re.search(r"\b(?:use|fill (?:out|in)|complete|submit) (?:the|our|this)(?: \w+)? form\b|\b(?:in|on|through|via|with) (?:the|our|this)(?: [\w-]+){0,2} form\b(?! of)|\bby submitting\b|\bdo not (?:upload|submit|send|include)\b", text, re.I):
                 continue
             # Nor is a notice of trouble on their end ("We're currently experiencing phone issues. If you can't reach us...").
             if re.search(r"\bcurrently experiencing\b|\b(?:can(?:no|')t|unable to) reach us\b|\bphones? (?:lines? )?(?:are|is) (?:down|out)\b", text.replace("’", "'"), re.I):

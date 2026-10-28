@@ -1,0 +1,129 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "Sure Claim Roofing",
+  "shortName": "Sure Claim Roofing",
+  "phone": "(281) 691-0552",
+  "email": "james@sureclaimroofing.com",
+  "address": "215 San Marcos Dr",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77523",
+  "hours": [
+    [
+      "Mon – Sun",
+      "8 AM – 8 PM"
+    ]
+  ],
+  "brand": {
+    "primary": "#1a2340",
+    "primaryDeep": "#12182d",
+    "accent": "#7082c3",
+    "ink": "#161b23",
+    "surface": "#f1f2f4",
+    "heading": "'Montserrat', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;600;700&display=swap",
+    "logo": "/brands/sureclaimroofing/logo.webp",
+    "logoMono": "/brands/sureclaimroofing/logo-mono.webp",
+    "logoWidth": 142,
+    "logoHeight": 58,
+    "logoRatio": 2.454,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.247,
+      0.279,
+      0.312,
+      0.343,
+      0.383,
+      0.439,
+      0.523,
+      0.632,
+      0.755,
+      0.88,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Sure Claim Roofing",
+    "title": "Roof repair and roof replacement",
+    "lead": "Schedule your free roof inspection in Baytown, TX. Available Mon–Sun 8AM–8PM.",
+    "image": "/brands/sureclaimroofing/photo1",
+    "imageAlt": "A photo of Sure Claim Roofing",
+    "titleAccent": "in Baytown"
+  },
+  "serviceArea": [
+    "Baytown",
+    "Houston",
+    "Pasadena",
+    "Deer Park",
+    "La Porte",
+    "Mont Belvieu",
+    "Highlands",
+    "Crosby",
+    "Dayton",
+    "Liberty",
+    "La Marque",
+    "Atascocita"
+  ],
+  "services": [
+    {
+      "slug": "roof-repair",
+      "title": "Roof Repair",
+      "short": "Roof Repair",
+      "text": "We document visible roof damage, provide a contractor's scope, and attend the adjuster inspection when requested."
+    },
+    {
+      "slug": "roof-replacement",
+      "title": "Roof Replacement",
+      "short": "Roof Replacement",
+      "text": "Residential and commercial roof replacement, with inspection photos, a written roofing scope, and installation. Coverage depends on your policy and insurer."
+    },
+    {
+      "slug": "commercial-roofing",
+      "title": "Commercial Roofing",
+      "group": "commercial",
+      "short": "Commercial Roofing",
+      "text": "TPO flat roofing and metal systems for warehouses, retail centers, and industrial properties across the greater East Texas area."
+    },
+    {
+      "slug": "storm-damage-repair",
+      "title": "Storm Damage Repair",
+      "group": "storm",
+      "short": "Storm Damage Repair",
+      "text": "Hurricane, hail, and high-wind damage inspected, documented, and repaired. We know what adjusters need to see."
+    },
+    {
+      "slug": "emergency-roof-repair",
+      "title": "Emergency Roof Repair",
+      "group": "storm",
+      "short": "Emergency Roof Repair",
+      "text": ""
+    },
+    {
+      "slug": "metal-roofing",
+      "title": "Metal Roofing",
+      "short": "Metal roofing options for homes and businesses.",
+      "text": "Metal roofing options for homes and businesses. Compare materials, coatings, product ratings, and installation requirements for your roof."
+    },
+    {
+      "slug": "shingle-roofing",
+      "title": "Shingle Roofing",
+      "short": "Architectural and impact-resistant asphalt shingles installed right.",
+      "text": "Architectural and impact-resistant asphalt shingles installed right. The best cost-to-value roofing material available for Texas homes."
+    },
+    {
+      "slug": "tile-roofing",
+      "title": "Tile Roofing",
+      "short": "Tile Roofing",
+      "text": "Clay and concrete tile roofing, with a structural assessment and a review of the selected system before installation."
+    }
+  ],
+  "about": {
+    "title": "About Sure Claim Roofing",
+    "text": [
+      "If you have a leak or think the last storm caused damage, request a free roof inspection. We'll show you what we find and talk through the repair or replacement options. There's no obligation to hire us.",
+      "We walk the roof, check the attic when needed, and look for damage and ordinary wear. Then we show you what we found. You don't have to hire us afterward."
+    ]
+  }
+}
