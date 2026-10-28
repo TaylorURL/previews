@@ -564,7 +564,16 @@ def reads(arr, native):
     the ground and outlined in another (black letters in a blue keyline on a
     navy footer): the keyline keeps its edges while the letters sink into the
     ground. So each level is also no more than the share of the ink standing
-    out on the native ground that still stands out there."""
+    out on the native ground that still stands out there.
+
+    Both of those are measured against the ground the mark was drawn for, so
+    on that ground they are 1 by construction, however pale the mark is: a
+    logo set in tints too light to read on the white it was drawn for scores
+    the same as a black one. So each level is also no more than the share of
+    the mark's ink that stands out on that level's own ground, read as the
+    page reads it. A pale mark then falls below the share the page draws its
+    own colors at, and its one-color cut is painted in the ink of the spot
+    instead, which is what such a mark needs."""
     own = _edges(arr, native)
     total = float(own.sum())
     ink = _stands(arr, native)
@@ -572,9 +581,11 @@ def reads(arr, native):
     for i in range(READ_LEVELS):
         gray = round(255 * i / (READ_LEVELS - 1))
         there = _edges(arr, (gray, gray, gray))
+        stands = _stands(arr, (gray, gray, gray))
         edges = float(np.minimum(own, there).sum()) / total if total else 0.0
-        kept = float((ink & _stands(arr, (gray, gray, gray))).sum()) / ink.sum() if ink.any() else 0.0
-        out.append(round(min(edges, kept), 3))
+        kept = float((ink & stands).sum()) / ink.sum() if ink.any() else 0.0
+        reads_there = float(stands.mean()) if stands.size else 0.0
+        out.append(round(min(edges, kept, reads_there), 3))
     return out
 
 

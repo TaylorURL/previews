@@ -1,0 +1,545 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "dental",
+  "name": "Rainforest Dental",
+  "shortName": "Rainforest Dental",
+  "tagline": "Family dentist serving the Baytown and Deer Park, TX area",
+  "phone": "(281) 427-3511",
+  "email": "office@rainforestdental.net",
+  "address": "2003 Ward Rd",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77520",
+  "license": "Rainforest Dental, PLLC",
+  "hours": [
+    [
+      "Monday",
+      "8:00 AM – 5:00 PM"
+    ],
+    [
+      "Tuesday",
+      "7:00 AM – 4:00 PM"
+    ],
+    [
+      "Wednesday",
+      "7:00 AM – 4:00 PM"
+    ],
+    [
+      "Thursday",
+      "8:00 AM – 5:00 PM"
+    ],
+    [
+      "Friday",
+      "7:00 AM – 2:00 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Request an Appointment",
+    "text": "Call the office or send us a note to schedule a consultation. We would be happy to answer any questions or address any concerns you may have."
+  },
+  "brand": {
+    "primary": "#277e3e",
+    "primaryDeep": "#17532a",
+    "accent": "#6b699f",
+    "ink": "#17231b",
+    "muted": "#55635a",
+    "surface": "#f4f8f3",
+    "cream": "#e8f2e7",
+    "line": "#dbe7da",
+    "heading": "'Mada', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Mada:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/rainforestdental/logo.webp",
+    "logoMono": "/brands/rainforestdental/logo-mono.webp",
+    "logoWidth": 154,
+    "logoHeight": 48,
+    "logoRatio": 3.212,
+    "logoGround": "#14181f",
+    "logoReads": [
+      0.998,
+      0.993,
+      0.912,
+      0.756,
+      0.664,
+      0.588,
+      0.606,
+      0.472,
+      0.357,
+      0.418,
+      0.478
+    ]
+  },
+  "hero": {
+    "eyebrow": "Family dentist in Baytown and Deer Park",
+    "title": "A family dentist for Baytown and Deer Park.",
+    "lead": "Dr. Platt, Dr. Alrihani and Dr. Omari care for children, teens and adults at our Ward Road office in Baytown and our Center Street office in Deer Park, from preventative care and fillings to root canals, implants and cosmetic work.",
+    "points": [
+      "Emergencies and walk-ins seen same day",
+      "Major insurance, Medicaid and CHIP accepted",
+      "CareCredit financing available"
+    ]
+  },
+  "overview": {
+    "title": "General, cosmetic and implant dentistry under one roof.",
+    "text": "Pick a treatment to see what it involves, or call and talk it through with our front desk."
+  },
+  "services": [
+    {
+      "slug": "dental-emergency",
+      "title": "Dental Emergency",
+      "icon": "heart",
+      "summary": "Walk-ins and same day treatment.",
+      "text": "Call the office immediately if you have a dental emergency. Time can play a major factor between saving or losing the tooth.",
+      "lead": "Our protocol here at Rainforest Dental is to accommodate emergencies and walk-ins with same day treatment. We want pain free teeth and happy patients.",
+      "image": "/brands/rainforestdental/emergency",
+      "imageAlt": "The reception area at Rainforest Dental in Baytown",
+      "questions": [
+        {
+          "q": "What should I do in case of a dental emergency?",
+          "a": "Please call our office immediately. Time can play a major factor between saving or losing the tooth."
+        },
+        {
+          "q": "When should I call?",
+          "a": "Please call us if you have bleeding from the mouth, severe pain, loose or broken teeth, swelling in the face or mouth, or popping and pain in the jaw."
+        }
+      ]
+    },
+    {
+      "slug": "pediatric-dentistry",
+      "title": "Pediatric Dentistry",
+      "icon": "users",
+      "summary": "A fun place for your child's dental needs.",
+      "text": "Our mission is to give all children a positive memorable experience, in an atmosphere that is both warm and welcoming.",
+      "lead": "A fun exciting place to treat your child's dental needs. We take pride in educating children in their dental health, embracing their specific needs and personalities. The kids look forward to the view of the atrium that includes exotic birds and koi fish, and to Miss Flossy, the Eclectus Parrot who is the newest member of our Rainforest Dental family.",
+      "covers": [
+        {
+          "title": "Preventative dentistry for children",
+          "text": "Through regular dental cleanings, fluoride treatments and dental sealants, we strive to prevent the onset, progress and recurrence of common dental problems."
+        },
+        {
+          "title": "First visits",
+          "text": "Beginning with a child's first visit to the dentist, our goal is to build a foundation for patients to achieve healthy smiles that last a lifetime."
+        },
+        {
+          "title": "Where pediatric treatment is seen",
+          "text": "Starting November 1st 2023, Dr. Deeb Alrihani is no longer available at our Baytown location. All pediatric treatment is referred to him at our Deer Park location."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How do I prevent cavities?",
+          "a": "Good oral hygiene removes bacteria and the leftover food particles that combine to create cavities. For infants, use a wet gauze or clean washcloth to wipe the plaque from teeth and gums, and avoid putting your child to bed with a bottle filled with anything other than water. For older children, brush their teeth at least twice a day and watch the number of snacks containing sugar."
+        },
+        {
+          "q": "How often should my child be seen?",
+          "a": "Dental check-ups should start at three months of age, and children should be examined every six months."
+        }
+      ]
+    },
+    {
+      "slug": "root-canal",
+      "title": "Root Canal",
+      "icon": "shield",
+      "summary": "Treatment for an inflamed or infected pulp.",
+      "text": "Root canal treatment is necessary when the pulp, the soft tissue inside the root canal, becomes inflamed or infected.",
+      "lead": "Deep decay, repeated dental procedures on the tooth, or a crack or chip can inflame or infect the pulp, and an injury can damage it even where the tooth has no visible chips or cracks. Left untreated, it can cause pain or lead to an abscess.",
+      "covers": [
+        {
+          "title": "Signs you may need one",
+          "text": "Pain, prolonged sensitivity to heat or cold, tenderness to touch and chewing, or discoloration of the tooth. Sometimes there are no symptoms at all."
+        },
+        {
+          "title": "What to expect afterwards",
+          "text": "For the first few days your tooth may feel sensitive, especially if there was pain or infection before the procedure. This discomfort can be relieved with over-the-counter or prescription medications."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How long will the tooth feel different?",
+          "a": "Your tooth may continue to feel slightly different from your other teeth for some time after treatment is completed. If you have severe pain or pressure, or pain that lasts more than a few days, call our office for further evaluation."
+        }
+      ]
+    },
+    {
+      "slug": "wisdom-tooth-extraction",
+      "title": "Wisdom Tooth Extraction",
+      "icon": "bone",
+      "summary": "Third molars removed before they cause harm.",
+      "text": "There is often not enough room for wisdom teeth, so they come in at an angle or never fully emerge, which causes problems for the rest of the mouth.",
+      "lead": "Third molars routinely damage the teeth right next door, the second molars. Dentists recommend removing wisdom teeth before they become a problem and to avoid a more complicated surgery.",
+      "covers": [
+        {
+          "title": "What happens if they stay",
+          "text": "When wisdom teeth come in sideways they throw off your bite, create an area where food gets caught and decays both teeth, and can even cause a painful infection."
+        },
+        {
+          "title": "Recovery",
+          "text": "The recovery period can take several days, and in some cases there may still be swelling and discomfort for a week or more. Use ice packs, enjoy soft foods and keep your mouth clean with simple salt water."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What if something does not look right afterwards?",
+          "a": "If you notice any unusual symptoms like pus discharge, severe pain or a fever, call right away. Complications such as an infection are rare, but they are possible."
+        }
+      ]
+    },
+    {
+      "slug": "dental-implants",
+      "title": "Dental Implants",
+      "icon": "anchor",
+      "summary": "One tooth or an entire mouth recreated.",
+      "text": "Dental implants have revolutionized the replacement of teeth. If you have dentures or are missing teeth, implants can improve your quality of life and give you confidence when eating or smiling.",
+      "lead": "As dentists we can recreate a single tooth or an entire mouth with dental implants. Our doctors will determine whether you are a candidate for dental implants at your consultation appointment in our office.",
+      "image": "/brands/rainforestdental/implants",
+      "imageAlt": "A treatment room at Rainforest Dental with an aquarium beside the chair",
+      "covers": [
+        {
+          "title": "Diagnosis and planning",
+          "text": "Models of your mouth are taken and a wax-up is done to recreate the teeth being replaced, as a blueprint for the implant surgery. A CT scan is taken in our in house imaging center of each area where the implants are to be placed."
+        },
+        {
+          "title": "Understanding the procedure",
+          "text": "Phase one is the placement of the titanium implants. After the bone grows around the implant and integrates, phase two is performed and the new crown is fabricated."
+        },
+        {
+          "title": "The benefits",
+          "text": "Implants replace a lost tooth without destroying the adjacent teeth, as a bridge would, retain the bone in the area of the lost tooth, and can look and feel like your natural teeth. They are predictable and reliable when treatment planning and diagnosis is done correctly, and are easier to maintain than natural teeth."
+        },
+        {
+          "title": "Afterwards",
+          "text": "Dental implants are like your own teeth and require the same care, so brushing and flossing still apply. Periodic follow-up visits are scheduled to monitor the implant, teeth and gums."
+        }
+      ]
+    },
+    {
+      "slug": "veneer",
+      "title": "Veneer",
+      "icon": "gem",
+      "summary": "Porcelain facings for a natural looking smile.",
+      "text": "A veneer can be placed on your teeth to correct esthetic problems or the results of an injury, and help give you the natural smile you have always wanted.",
+      "lead": "Porcelain veneers, also known as ceramic veneers or laminates, are ultra-thin custom made facings that are bonded to tooth structure to improve and restore function and appearance.",
+      "covers": [
+        {
+          "title": "Why porcelain",
+          "text": "The porcelain material is known for mimicking natural tooth structure better than any other material, which lets Dr. Omari stay conservative and keep as much tooth structure as possible."
+        },
+        {
+          "title": "Benefits of porcelain veneers",
+          "text": "Minimal tooth reduction, natural looking results, a strengthened tooth, and shape, color and smile design chosen by the patient."
+        },
+        {
+          "title": "The porcelain we use",
+          "text": "Our doctors work really hard to recreate the translucency and colors of nature, and we use the highest quality porcelain veneers so our patients get the best results. Our doctors have the artistic and cosmetic ability to create the beautiful, youthful smile you have always wanted."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How do I find out whether veneers suit me?",
+          "a": "Please contact our office for a consultation appointment to see how porcelain veneers can rejuvenate and enhance your smile."
+        }
+      ]
+    },
+    {
+      "slug": "invisalign",
+      "title": "Invisalign",
+      "icon": "smile",
+      "summary": "A nearly invisible way to straighten teeth.",
+      "text": "Invisalign is a popular alternative to the old metal braces that use metal wires, and it is nearly invisible while you are wearing it.",
+      "lead": "If your smile's front teeth are misaligned you may be considering braces. Invisalign aligners are faster, less expensive, more comfortable to wear, and nearly invisible while you are wearing them.",
+      "covers": [
+        {
+          "title": "How it works",
+          "text": "You wear each aligner for about two weeks and then move on to the next set. Each set of aligners moves your teeth closer to the desired final outcome."
+        }
+      ]
+    },
+    {
+      "slug": "teeth-whitening",
+      "title": "Teeth Whitening",
+      "icon": "award",
+      "summary": "Zoom whitening, in office, in about an hour.",
+      "text": "We now offer ZOOM whitening, an in office treatment that allows our patients to lighten their teeth up to 8 shades in one hour.",
+      "lead": "Zoom is a bleaching process used to lighten discoloration of enamel and dentin. Tooth discoloration may result from drinking coffee, tea, soda or red wine, from smoking, or from the aging process.",
+      "questions": [
+        {
+          "q": "How do I book a whitening appointment?",
+          "a": "Call our office if you are interested in scheduling your whitening procedure with one of our professional team members."
+        }
+      ]
+    },
+    {
+      "slug": "dentures",
+      "title": "Dentures",
+      "icon": "clipboard-check",
+      "summary": "Partial and full dentures, fitted and adjusted.",
+      "text": "A partial denture replaces one lost tooth or a group of teeth, while full dentures are a total replacement for either the upper or lower teeth, or both.",
+      "lead": "Our doctor will be happy to give you all the advice you need in order to choose which option is better for you, and may also recommend crowns on some of the natural teeth as they improve the fit of your partial dentures.",
+      "covers": [
+        {
+          "title": "Partial dentures",
+          "text": "They attach to the remaining teeth with either metal clasps or precision attachments. The latter are the more expensive option, but they are more aesthetically pleasing as they are nearly invisible."
+        },
+        {
+          "title": "Full dentures",
+          "text": "Any remaining teeth are removed and the gum tissue is allowed to undergo preliminary healing before the dentures are placed in the mouth."
+        },
+        {
+          "title": "Getting used to them",
+          "text": "New dentures may feel awkward or bulky during the first few weeks until your mouth adapts. Do not force the denture into position by biting down, as that could bend or break the clasps."
+        },
+        {
+          "title": "Daily denture care",
+          "text": "Brush each night with a soft-bristle denture brush and water, then leave them to dry to avoid bacterial growth. Dentures can be soaked in a denture cleanser or cool water, but ask first, as some solutions can tarnish metal attachments."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How do I eat with new dentures?",
+          "a": "Start with soft foods such as purée, soup, boiled eggs, ground meat or cooked vegetables, and soft cereals like warm porridge for breakfast. Take small bites and chew on both sides of the mouth to keep even pressure on the denture. Foods and liquids may taste different at first but your sense of taste will improve, and because the denture insulates your mouth it is harder to judge temperature, so be careful with hot food and drink. You can eat almost anything, though you may want to avoid crusty breads, tough red meats and chewing gum."
+        },
+        {
+          "q": "Will my dentures need adjusting?",
+          "a": "If your dentures no longer fit properly, visit our office. They may need adjustments to prevent irritation or infections, and you will usually need a check-up every six months so the denture's condition can be reviewed."
+        }
+      ]
+    },
+    {
+      "slug": "gum-disease",
+      "title": "Gum Disease",
+      "icon": "stethoscope",
+      "summary": "From gum inflammation to periodontal disease.",
+      "text": "Periodontal diseases range from simple gum inflammation to serious disease that results in major damage to the soft tissue and bone that support the teeth.",
+      "lead": "Many adults in the U.S. currently have some form of gum disease. In the worst cases, teeth are lost.",
+      "covers": [
+        {
+          "title": "How do I know if I have it?",
+          "text": "Bad breath that will not go away, red or swollen gums, and tender or bleeding gums."
+        },
+        {
+          "title": "What causes it",
+          "text": "Bacteria in plaque, a sticky colorless film that constantly forms on your teeth. If plaque is not removed it hardens into tartar, which brushing and flossing cannot remove."
+        },
+        {
+          "title": "Treatment and prevention",
+          "text": "Our dentist or dental hygienist will remove plaque that has built up and hardened into tartar. With regular checkups twice a year, early stage gum disease can be treated before it leads to a much more serious condition."
+        }
+      ]
+    },
+    {
+      "slug": "mouthguards",
+      "title": "Mouthguards",
+      "icon": "shield-check",
+      "summary": "For grinding and clenching your teeth.",
+      "text": "Bruxism is a habit of grinding or clenching the teeth, and it can happen in children and adults of any age.",
+      "lead": "Over time bruxism can cause damage to your enamel and your oral health. Call our office for an evaluation if you have any of the symptoms below and we will be happy to schedule you with our dentist.",
+      "covers": [
+        {
+          "title": "Grinding and clenching",
+          "text": "Clenching happens when you tightly hold your top and bottom teeth together. Grinding is when you slide your teeth back and forth over each other."
+        },
+        {
+          "title": "Symptoms to call about",
+          "text": "Headache or earache, a sore jaw, jaw clicking or popping, frequent toothaches, facial pain, worn or cracked teeth or fillings, and trouble sleeping."
+        }
+      ]
+    },
+    {
+      "slug": "colored-fillings",
+      "title": "Colored Fillings",
+      "icon": "pen-line",
+      "summary": "Fillings in natural tooth shades.",
+      "text": "Fillings help restore teeth damaged by decay back to their normal function, and can prevent further decay.",
+      "lead": "A number of factors are considered when choosing which type of filling material is best for you. Ask our dentist which option suits your tooth.",
+      "covers": [
+        {
+          "title": "Why tooth colored fillings",
+          "text": "Most patients prefer tooth colored fillings because they come in natural tooth shades and are less noticeable than metal amalgam fillings."
+        },
+        {
+          "title": "What a filling does",
+          "text": "Filling material supports and strengthens damaged or decayed teeth, and prevents the decay from going further."
+        }
+      ]
+    }
+  ],
+  "affiliations": {
+    "title": "Memberships and credentials",
+    "items": [
+      "American Dental Association",
+      "Texas Dental Association",
+      "Academy of General Dentistry",
+      "Houston District Dental Society",
+      "Baytown Dental Study Club",
+      "American Orthodontic Society",
+      "American Academy of Pediatric Dentistry"
+    ]
+  },
+  "about": {
+    "title": "A family dental practice named for the atrium at its center.",
+    "text": [
+      "Rainforest Dental is a family dental practice serving the Baytown and Deer Park area from two offices: 2003 Ward Rd in Baytown and 2705 Center Street in Deer Park. Dr. George A. Platt, Dr. Deeb Y. Alrihani and Dr. Wassim Omari look after children, teens and adults, with general dentistry, cosmetic dentistry and dental implants under one roof.",
+      "Children and adults enjoy the view of the rainforest-like glass atrium where colorful birds, beautiful fish and assorted rabbits are on full display. In fact, we like this area so much we have named the practice Rainforest Dental. Relax in the reception area with a beverage from our coffee bar before or after your appointment, or while a family member is receiving dental treatment.",
+      "Dr. Platt graduated from St. Louis University School of Dentistry in 1970, trained further through the Veterans Administration Hospital and the University of Texas Dental Branch in Houston, and returned to Baytown in 1972 to open his dental practice. Dr. Alrihani and Dr. Omari both graduated from Loma Linda School of Dentistry, and between them the practice covers sedation dentistry, treating children, restorative and esthetic work, oral surgery and implant placement.",
+      "Our protocol here at Rainforest Dental is to accommodate emergencies and walk-ins with same day treatment. We want pain free teeth and happy patients."
+    ],
+    "image": "/brands/rainforestdental/about",
+    "imageAlt": "The Rainforest Dental team",
+    "values": [
+      {
+        "title": "Same day for emergencies",
+        "text": "Our protocol is to accommodate emergencies and walk-ins with same day treatment."
+      },
+      {
+        "title": "An atrium to wait in",
+        "text": "Birds, fish and rabbits on full display, and a coffee bar in the reception area."
+      },
+      {
+        "title": "Children welcome",
+        "text": "We take pride in educating children in their dental health, in an atmosphere that is both warm and welcoming."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Dr. George A. Platt",
+      "role": "Dentist",
+      "bio": "A longtime resident of Baytown who graduated from Robert E. Lee High School and Lee College, and then from St. Louis University School of Dentistry in 1970. He went on to a rotating internship sponsored by the Veterans Administration Hospital and the University of Texas Dental Branch in Houston, which gave him graduate level training in pedodontics, periodontics, endodontics, prosthesis, oral surgery and anesthesiology. He returned to Baytown in 1972 and opened his dental practice. Across 48 years of service to patients he has maintained continuing education and lifetime memberships in the Academy of General Dentistry, whose education requirements exceed state requirements, as well as the American Dental Association, the Texas Dental Association, the Houston District Dental Society, the Baytown Dental Study Club and the American Orthodontic Society, and has enjoyed sponsoring local events including Relay For Life, Pilot Club, Project Graduation, the Lee College Foundation and the Baytown Chamber of Commerce. Dr. Platt and his family have been part of the Baytown and Mt. Belvieu family for over 59 years, and he still enjoys his profession, the association with patients and the new innovative technology Rainforest Dental has brought to the facility."
+    },
+    {
+      "name": "Dr. Deeb Y. Alrihani, DDS",
+      "role": "Dentist",
+      "bio": "Graduated with honors from Loma Linda School of Dentistry in 2012, where he received his Doctor of Dental Surgery degree. Dr. Deeb provides general dentistry for adults and teens, sedation dentistry, and has a special interest in treating children in a gentle and fun environment. His professional affiliations include the American Dental Association, the Texas Dental Association and the American Academy of Pediatric Dentistry. Since November 1st 2023 he sees patients at our Deer Park location."
+    },
+    {
+      "name": "Dr. Wassim Omari, DDS",
+      "role": "Dentist",
+      "bio": "Following graduation from Loma Linda School of Dentistry with a Doctor of Dental Surgery degree, he completed a post-graduate residency in esthetic dentistry, and has received additional training and certifications in implant placement. Dr. Omari provides general dental services for adults, teens and children including restorative dentistry, oral surgery, root canal therapy, implants and cosmetic dentistry, and is currently available Monday through Friday. His professional affiliations include the American Dental Association and the Texas Dental Association."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What insurance do you accept?",
+      "a": "Major insurance providers are accepted, and we also accept most Medicaid and CHIP. For more information regarding your insurance coverage please contact our office."
+    },
+    {
+      "q": "Do you offer financing?",
+      "a": "We are proud to offer CareCredit, America's leading healthcare credit card, which lets you begin treatment immediately with small, manageable monthly payments."
+    },
+    {
+      "q": "How can I pay?",
+      "a": "We accept Visa, MasterCard, American Express, Discover and CareCredit."
+    },
+    {
+      "q": "Do you see emergencies and walk-ins?",
+      "a": "Yes. Our protocol here at Rainforest Dental is to accommodate emergencies and walk-ins with same day treatment."
+    },
+    {
+      "q": "Where is pediatric treatment seen?",
+      "a": "Due to family circumstances, starting November 1st 2023, Dr. Deeb Alrihani is no longer available at our Baytown location. All pediatric treatment is referred to him at our Deer Park location."
+    },
+    {
+      "q": "Can I fill in my forms before I come in?",
+      "a": "Yes. Our patient registration form can be completed on our site before your visit, and appointments can be requested through our online booking form."
+    },
+    {
+      "q": "Do you have a second office?",
+      "a": "Yes. Rainforest of Deer Park is at 2705 Center Street, Deer Park, TX 77536, and its phone number is (281) 479-8668."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Request an appointment",
+      "text": "Our online booking form, for a first visit or a check-up.",
+      "href": "https://www.rainforestdental.net/booking/"
+    },
+    {
+      "title": "Patient registration form",
+      "text": "Fill in your registration details before you come in.",
+      "href": "https://rainforestdental.net/patient-registration-form/"
+    },
+    {
+      "title": "CareCredit",
+      "text": "Apply for the healthcare credit card we offer for treatment financing.",
+      "href": "https://www.carecredit.com/doctor-locator/General-Dentistry-in-Baytown-TX-77520/Rainforest-Dental-PLLC/"
+    }
+  ],
+  "serviceArea": [
+    "Baytown",
+    "Deer Park"
+  ],
+  "facts": [
+    {
+      "heading": "Our Deer Park office",
+      "items": [
+        "Rainforest of Deer Park",
+        "2705 Center Street, Deer Park, TX 77536",
+        "Phone: (281) 479-8668",
+        "Monday 8:00 AM – 5:00 PM",
+        "Tuesday 8:00 AM – 5:00 PM",
+        "Wednesday 8:00 AM – 4:00 PM",
+        "Thursday 8:00 AM – 5:00 PM",
+        "Friday 8:00 AM – 4:00 PM"
+      ]
+    },
+    {
+      "heading": "Insurance",
+      "text": "Major insurance providers accepted. We also accept most Medicaid and CHIP. For more information regarding your insurance coverage please contact our office."
+    },
+    {
+      "heading": "Financing and payment",
+      "items": [
+        "CareCredit, America's leading healthcare credit card, with small monthly payments",
+        "Visa",
+        "MasterCard",
+        "American Express",
+        "Discover"
+      ]
+    },
+    {
+      "heading": "Emergencies and walk-ins",
+      "text": "Our protocol here at Rainforest Dental is to accommodate emergencies and walk-ins with same day treatment. Please call our office immediately if you have a dental emergency, because time can play a major factor between saving or losing the tooth."
+    },
+    {
+      "heading": "Pediatric treatment",
+      "text": "Due to family circumstances, starting November 1st 2023, Dr. Deeb Alrihani is no longer available at our Baytown location. All pediatric treatment is referred to him at our Deer Park location."
+    },
+    {
+      "heading": "Our clinic",
+      "text": "Children and adults enjoy the view of the rainforest-like glass atrium where colorful birds, beautiful fish and assorted rabbits are on full display. Relax in the reception area with a beverage from our coffee bar before or after your appointment, or while a family member is receiving dental treatment."
+    },
+    {
+      "heading": "General dentistry",
+      "text": "General dentistry here includes preventative care, root canals, extraction of wisdom teeth and natural-colored fillings."
+    },
+    {
+      "heading": "Cosmetic dentistry",
+      "text": "In consultation with our professionals, including a plastic surgeon, we can decide which procedures will give you the smile of your dreams."
+    },
+    {
+      "heading": "Miss Flossy",
+      "text": "Miss Flossy is our mascot, an Eclectus Parrot and the newest member of our Rainforest Dental family."
+    },
+    {
+      "heading": "In house imaging",
+      "text": "For implant treatment, a CT scan is taken in our in house imaging center of each area where the implants are to be placed."
+    },
+    {
+      "heading": "Before your visit",
+      "text": "Our patient registration form can be filled in on our site before you come in, and appointments can be requested through our online booking form, where you choose the Baytown or the Deer Park office and the reason for your visit: a broken tooth, a toothache, a check-up and cleaning, a general consultation, a new patient appointment or something else."
+    },
+    {
+      "heading": "Privacy and your records",
+      "text": "Our Notice of Privacy Practices provides information about how we may use or disclose protected health information, and contains a patient's rights section describing your rights under the law. You have the right to restrict how your protected health information is used and disclosed for treatment, payment or healthcare operations."
+    }
+  ]
+}
