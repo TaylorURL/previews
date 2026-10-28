@@ -1,0 +1,465 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "chiropractic",
+  "name": "ProHealth Chiropractic + Wellness",
+  "shortName": "ProHealth",
+  "tagline": "Dedicated to Wellness",
+  "phone": "(281) 991-7676",
+  "email": "frontdesk@prohealthcw.com",
+  "address": "6733 Fairmont Pkwy",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77505",
+  "license": "ProHealth Chiropractic + Wellness is operated by Melvin C Aldridge Jr DC PC.",
+  "hours": [
+    [
+      "Mon – Thu",
+      "8:30 AM – 12 PM, 3 – 6 PM"
+    ],
+    [
+      "Friday",
+      "8:30 AM – 12 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Request an Appointment",
+    "text": "Book online through our patient portal or call the front desk at (281) 991-7676, and fill out your new patient forms online before you arrive."
+  },
+  "brand": {
+    "primary": "#2f5b4e",
+    "primaryDeep": "#1e3f35",
+    "accent": "#d99530",
+    "ink": "#1d2a26",
+    "muted": "#5a6a64",
+    "surface": "#f6f6f2",
+    "cream": "#efe9dd",
+    "line": "#e3ded3",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/prohealthchiropracticwellness/logo.webp",
+    "logoMono": "/brands/prohealthchiropracticwellness/logo-mono.webp",
+    "logoWidth": 146,
+    "logoHeight": 58,
+    "logoRatio": 2.514,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.358,
+      0.318,
+      0.336,
+      0.372,
+      0.419,
+      0.48,
+      0.355,
+      0.292,
+      0.357,
+      0.461,
+      0.532
+    ]
+  },
+  "hero": {
+    "eyebrow": "Chiropractic and wellness on Fairmont Parkway",
+    "title": "It's your body, your health and your future.",
+    "lead": "We believe that health is one of our most valuable possessions. Our commitment is two-fold: relief care to start, and wellness care to keep you there.",
+    "points": [
+      "Relief care and wellness care",
+      "Every age, from infants upward",
+      "Initial visit $99 with x-rays"
+    ]
+  },
+  "overview": {
+    "title": "Chiropractic care for relief first, and for staying well afterwards.",
+    "text": "Pick a service to see what it includes and what it costs, or call and talk it through with our front desk."
+  },
+  "services": [
+    {
+      "slug": "chiropractic-adjustments",
+      "title": "Chiropractic Adjustments",
+      "icon": "bone",
+      "summary": "Adult visits $65, children 0-12 $45.",
+      "text": "An adult adjustment visit is $65 and a visit for a child aged 0 to 12 is $45. We adjust all ages, from hours-old infants to 100 year olds.",
+      "lead": "Chiropractic has been helping people of all ages with a variety of health issues for over a century without the use of drugs or surgery.",
+      "covers": [
+        {
+          "title": "Adult adjustment visit",
+          "text": "$65 per visit without insurance. Additional services vary based on your condition, goals and the care recommended by the doctor."
+        },
+        {
+          "title": "Kid adjustment visit",
+          "text": "$45 per visit for children aged 0 to 12, without insurance."
+        },
+        {
+          "title": "Every age",
+          "text": "We can adjust all ages ranging from hours-old infants to 100 year olds and everything in between."
+        },
+        {
+          "title": "How we decide",
+          "text": "Chiropractors use the best available evidence from research, the preferences of the patient and their own expertise and personal experience to help your spine and nervous system function optimally."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How does chiropractic work?",
+          "a": "Our clinic philosophy rests on a few common-sense principles: being healthy is your normal state, your nervous system controls everything, stress can overload your nervous system, spinal joint dysfunction is a coping strategy, adjustments help reduce spinal dysfunction, and you will likely need more than one adjustment."
+        },
+        {
+          "q": "Will one adjustment be enough?",
+          "a": "You will likely need more than one adjustment. The doctor will suggest a care plan to produce the fastest results possible and explain any charges before they are made."
+        }
+      ]
+    },
+    {
+      "slug": "new-patient-exam",
+      "title": "New Patient Exam and X-Rays",
+      "icon": "stethoscope",
+      "summary": "Consultation, exam and x-rays for $99.",
+      "text": "Your initial visit in our office is $99, which includes your initial consultation, examination and any necessary x-rays.",
+      "lead": "Set aside about an hour for the initial appointment. Our doctors will listen to your concerns, assess your condition, and discuss their findings and their diagnosis with you.",
+      "covers": [
+        {
+          "title": "Booking your visit",
+          "text": "Are you ready to see how chiropractic care can help? Contact ProHealth Chiropractic + Wellness today at (281) 991-7676 or book online through our patient portal."
+        },
+        {
+          "title": "What the $99 covers",
+          "text": "Your initial consultation, examination and any necessary x-rays. Any charges for treatment will be explained prior to any additional charges."
+        },
+        {
+          "title": "Before you arrive",
+          "text": "Fill out your new patient forms online, and bring along reports or test results from other providers if you have them handy. These things may assist us in grasping the full scope of your condition."
+        },
+        {
+          "title": "What to wear",
+          "text": "Feel free to wear whatever clothing you find most comfortable."
+        },
+        {
+          "title": "An open dialogue",
+          "text": "Throughout your visit our doctors encourage an open dialogue and are known for educating the patient at every step. Feel free to ask questions."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why x-rays?",
+          "a": "They provide a structural record of your spine, locate fractures or other signs of trauma, identify evidence of long term spinal degeneration and confirm other examination findings. We take only the most necessary views, use up to date equipment, and shield sensitive body parts."
+        },
+        {
+          "q": "How long should I set aside?",
+          "a": "About an hour for the initial appointment."
+        },
+        {
+          "q": "Who will I meet first?",
+          "a": "As you arrive, Fabi will greet you and make sure you are ready for your appointment. You will probably have spoken with her on the phone when booking."
+        }
+      ]
+    },
+    {
+      "slug": "pediatric-chiropractic",
+      "title": "Pediatric Chiropractic",
+      "icon": "smile",
+      "summary": "Adjustments for children, $45 a visit.",
+      "text": "A kid (0-12) adjustment visit is $45. We can adjust all ages ranging from hours-old infants to 100 year olds and everything in between.",
+      "lead": "Chiropractic care is appropriate for all ages, and our doctors take care of whole families rather than one member of them.",
+      "covers": [
+        {
+          "title": "Kid adjustment visit",
+          "text": "$45 per visit for children aged 0 to 12, without insurance."
+        },
+        {
+          "title": "From hours old",
+          "text": "We can adjust all ages ranging from hours-old infants to 100 year olds."
+        },
+        {
+          "title": "Further pediatric training",
+          "text": "Dr. Cecily Cantu is in the process of getting certified by the Academy Council of Chiropractic Pediatrics (CACCP)."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Is chiropractic appropriate for all ages?",
+          "a": "Absolutely. We can adjust all ages ranging from hours-old infants to 100 year olds and everything in between."
+        }
+      ]
+    },
+    {
+      "slug": "webster-technique",
+      "title": "Webster Technique",
+      "icon": "heart",
+      "summary": "Prenatal care, Webster certified.",
+      "text": "Dr. Cecily Cantu is certified in the Webster Technique in order to provide care for prenatal and pediatric practice members.",
+      "lead": "Webster technique is a specific technique that involves specific sacral analysis and diversified adjustments in order to reduce the effects of sacral subluxation and SI joint dysfunction.",
+      "covers": [
+        {
+          "title": "Sacral analysis",
+          "text": "A specific analysis of the sacrum, followed by diversified adjustments."
+        },
+        {
+          "title": "Why it is used",
+          "text": "To reduce the effects of sacral subluxation and SI joint dysfunction."
+        },
+        {
+          "title": "Who provides it",
+          "text": "Dr. Cecily Cantu, who is certified in the Webster Technique and takes care of prenatal and pediatric practice members."
+        }
+      ]
+    },
+    {
+      "slug": "therapy-add-ons",
+      "title": "Therapy Add-Ons",
+      "icon": "waves",
+      "summary": "Cupping, laser, ultrasound, tape, traction.",
+      "text": "Cupping, muscle stimulation, ultrasound, kinesiotape, spinal traction, laser and the massage chair are available alongside your adjustment, each priced on its own.",
+      "lead": "These are the therapies we can add to a visit. Each is priced separately and non-insurance; insurance does not pay for laser, kinesiotape or cupping.",
+      "covers": [
+        {
+          "title": "Cupping",
+          "text": "$7 to $12. Not paid for by insurance."
+        },
+        {
+          "title": "Muscle stimulation",
+          "text": "$20."
+        },
+        {
+          "title": "Ultrasound",
+          "text": "$25."
+        },
+        {
+          "title": "Kinesiotape",
+          "text": "$10 per area. Not paid for by insurance."
+        },
+        {
+          "title": "Spinal traction",
+          "text": "$20."
+        },
+        {
+          "title": "Laser",
+          "text": "$25. Not paid for by insurance."
+        },
+        {
+          "title": "Massage chair",
+          "text": "$20."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Does my insurance cover these?",
+          "a": "Insurance does not pay for laser, kinesiotape or cupping. We will verify your insurance coverage for the rest, though verifying coverage does not guarantee payment."
+        }
+      ]
+    },
+    {
+      "slug": "custom-orthotics",
+      "title": "Custom Orthotics",
+      "icon": "footprints",
+      "summary": "Custom orthotics from $324.",
+      "text": "Custom orthotics are available through the office, priced from $324.",
+      "lead": "Custom orthotics can be ordered through the office as part of your care. They start at $324 and are not an insurance-priced item.",
+      "covers": [
+        {
+          "title": "Price",
+          "text": "$324 and up, depending on what is ordered."
+        },
+        {
+          "title": "Ordered through the office",
+          "text": "Listed among our non-insurance add-ons, so the cost is explained to you before anything is ordered."
+        }
+      ]
+    },
+    {
+      "slug": "bloodwork",
+      "title": "Bloodwork",
+      "icon": "chart",
+      "summary": "Bloodwork arranged through the office.",
+      "text": "Bloodwork can be arranged through the office. The cost varies and is quoted to you beforehand.",
+      "lead": "Bloodwork is one of the non-insurance services we can arrange for practice members. The price varies with what is ordered, and any charges are explained before they are made.",
+      "covers": [
+        {
+          "title": "Price",
+          "text": "Varies with the panel ordered."
+        },
+        {
+          "title": "Charges explained first",
+          "text": "Any charges for treatment will be explained prior to any additional charges."
+        }
+      ]
+    }
+  ],
+  "process": {
+    "title": "What your first visit looks like",
+    "text": "Set aside about an hour, and come as you are.",
+    "steps": [
+      {
+        "title": "Book your appointment",
+        "text": "Book online through our patient portal, or call the front desk at (281) 991-7676. You will probably speak with Fabi, who will remind you of a few key things before you come in."
+      },
+      {
+        "title": "Fill out your forms",
+        "text": "Complete your new patient forms online before you arrive, and bring along reports or test results from other providers if you have them handy."
+      },
+      {
+        "title": "Consultation and examination",
+        "text": "Our doctors will listen to your concerns and assess your condition, taking any necessary x-rays. The initial visit is $99."
+      },
+      {
+        "title": "Findings and a care plan",
+        "text": "They discuss their findings and their diagnosis with you, suggest a care plan to produce the fastest results possible, and offer ways you can take part in your own recovery."
+      }
+    ]
+  },
+  "affiliations": {
+    "title": "Memberships and credentials",
+    "items": [
+      "Webster Technique Certified",
+      "Parker University",
+      "Texas Chiropractic College"
+    ]
+  },
+  "about": {
+    "title": "Our story",
+    "text": [
+      "Our approach is simple. We believe that health is one of our most valuable possessions. And while we generally meet people after they've lost their health, our commitment is two-fold.",
+      "Many people seek care in our practice and have one goal: relief. So that's where we start. During this initial stage of intensive care we uncover the underlying cause of the health problem, suggest a care plan to produce the fastest results possible, offer ways patients can participate in their recovery, and explain the value of post-symptomatic wellness care.",
+      "We're committed to teaching our patients that true health is a journey, not a destination. Our desire is to see our practice members abandon the prevailing sickness care model of health, waiting for symptoms and then taking action, in favor of the emerging wellness model.",
+      "It's your body, your health and your future. Our job is to offer you the finest chiropractic care possible, make appropriate recommendations and work together to achieve your goals."
+    ],
+    "values": [
+      {
+        "title": "Relief Care",
+        "text": "Many people seek care in our practice and have one goal: relief. So that's where we start, by uncovering the underlying cause of the health problem."
+      },
+      {
+        "title": "Wellness Care",
+        "text": "True health is a journey, not a destination. We hope to communicate the value of ongoing chiropractic care rather than waiting for symptoms."
+      },
+      {
+        "title": "Your Body, Your Future",
+        "text": "It's your body, your health and your future. We make appropriate recommendations and work together with you to achieve your goals."
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Alexandra Aldridge, D.C.",
+      "role": "Doctor of Chiropractic",
+      "bio": "I grew up in Houston, Texas where I developed my passion for fitness and natural health care as a ballet dancer. I have been under the care of a chiropractor since well before the age of one thanks to my father, and that early exposure led me to pursue an education in the field of Chiropractic. I graduated from Parker University in 2015 with dual degrees: a Bachelor of Science in Health and Wellness, and a Doctorate of Chiropractic. After graduation I relocated to Portland for four years with my husband before returning to Texas. In 2018 I partnered with Peking University in Beijing and the Southern University of Science and Technology in Shenzhen to contribute to multiple major research articles in the field of pain management, and presented to pain management specialists at a worldwide conference at the Peking University Cancer Hospital. I have also volunteered my time and skills as a chiropractor in Haiti and the Dominican Republic, and sponsored other chiropractors in Jamaica and Ecuador. Outside the practice I am committed to bettering the world through service and education."
+    },
+    {
+      "name": "Cecily Cantu, D.C.",
+      "role": "Doctor of Chiropractic",
+      "bio": "I grew up in Houston, Texas and never expected to pursue a career in Chiropractic. During my time at Pasadena Memorial High School I was involved in HOSA, and in my senior year I participated in the co-op program and was lucky enough to find my way to ProHealth Chiropractic + Wellness. I graduated from Texas Chiropractic College in 2020 with dual degrees: a Bachelor of Science in Human Biology and a Doctorate of Chiropractic, and completed internships at Moody Health Center, The Bridge Over Troubled Waters, and University of Houston at Clear Lake. I absolutely love taking care of families, and I am certified in the Webster Technique and in the process of getting certified by the Academy Council of Chiropractic Pediatrics. I am excited to continue to serve my community by guiding patients to the healthy lifestyle they deserve."
+    },
+    {
+      "name": "Fabi",
+      "role": "Front Desk / Chiropractic Assistant",
+      "bio": "Fabi greets you as you arrive and makes sure you are ready for your appointment. She is usually the person you speak with on the phone when you book."
+    },
+    {
+      "name": "Ebony",
+      "role": "Chiropractic Assistant"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is true health?",
+      "a": "Dorland's Medical Dictionary, along with the World Health Organization, define health as optimum physical, mental and social well-being, not merely the absence of disease or infirmities. Most people think that how they feel is an indicator of how healthy they are, and it's just not true. Vomiting, sneezing, coughing and even fevers may actually be signs that your body is working correctly."
+    },
+    {
+      "q": "How does chiropractic work?",
+      "a": "Your brain, spinal cord and all of your nerves control and regulate your body. Every cell, tissue, organ and system takes instructions from your nervous system, so an important aspect of health is how well your nervous system is orchestrating the workings of your body. That's why we're interested in your spinal column: joint restrictions or fixations among the moving bones of the vertebral column can affect your well-being."
+    },
+    {
+      "q": "Can chiropractic help me?",
+      "a": "Nerve compromise can result from postural distortions that are easily revealed with a few simple tests. A good place to begin is to notice distortions in the head, neck and shoulders. Unbalanced shoulders, where one shoulder is higher than the other or the head tilts to one side, and a forward leaning head are both common signs that respond nicely to chiropractic care."
+    },
+    {
+      "q": "Is chiropractic appropriate for all ages?",
+      "a": "Absolutely. We can adjust all ages ranging from hours-old infants to 100 year olds and everything in between."
+    },
+    {
+      "q": "Why do you take x-rays?",
+      "a": "X-rays provide a structural record of your spine, locate fractures or other signs of trauma, identify evidence of long term spinal degeneration and confirm other examination findings. The chiropractic profession is a leader in the reduction of X-ray exposure: we take only the most necessary views, use up to date equipment, filter unneeded frequencies, narrow the energy beam, shield sensitive body parts, and have our equipment regularly inspected."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Book an Appointment Online",
+      "text": "Pick a time that suits you in our online patient portal.",
+      "href": "https://patient.chirotouch.com/ProHealthChiropracticWellness"
+    },
+    {
+      "title": "New Patient Intake Forms",
+      "text": "Complete your new patient paperwork online before your first visit.",
+      "href": "https://ctinforms.patientengagepro.com/new/sbmad9/rtkadn"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Booking an Appointment",
+      "text": "Book online through our patient portal, or call the front desk at (281) 991-7676. We are so excited that you are ready to feel better and function better, and we can't wait to meet you. If you can't find a time that works for you, or you are still not quite sure, please contact us."
+    },
+    {
+      "heading": "Cash Prices (Non-Insurance)",
+      "items": [
+        "Initial visit $99, including consultation, examination and any necessary x-rays",
+        "Adult adjustment visit $65",
+        "Kid (0-12) adjustment visit $45"
+      ]
+    },
+    {
+      "heading": "Add-Ons (Non-Insurance)",
+      "items": [
+        "Cupping $7-12",
+        "Muscle Stimulation $20",
+        "Ultrasound $25",
+        "Kinesiotape $10 per area",
+        "Spinal Traction $20",
+        "Massage Chair $20",
+        "Laser $25",
+        "Custom Orthotics $324+",
+        "Bloodwork varies"
+      ]
+    },
+    {
+      "heading": "Using Your Insurance",
+      "text": "Fees per visit when using your health insurance vary based on the contracted amount for each insurance company, but the prices are very close to the non-insurance prices. What you pay out of pocket is based on your individual policy: you may just have a co-pay, or you may have to meet a deductible first. We will verify your insurance coverage, and you can also check your policy by contacting your insurance company directly. Verifying coverage does not guarantee payment. Insurance does not pay for laser, kinesiotape or cupping."
+    },
+    {
+      "heading": "Our Clinic Philosophy",
+      "items": [
+        "Being healthy is your normal state",
+        "Your nervous system controls everything",
+        "Stress can overload your nervous system",
+        "Spinal joint dysfunction is a coping strategy",
+        "Adjustments help reduce spinal dysfunction",
+        "You'll likely need more than one adjustment"
+      ]
+    },
+    {
+      "heading": "Phone and Fax",
+      "items": [
+        "Phone (281) 991-7676",
+        "Fax (281) 991-7617",
+        "Email frontdesk@prohealthcw.com"
+      ]
+    },
+    {
+      "heading": "Appointment Reminders by Text",
+      "text": "If you give us your phone number and opt in, we send SMS text messages for appointment reminders and general two-way communication, up to six messages per month. Message and data rates may apply based on your mobile carrier's terms. Reply HELP for support, or STOP at any time to opt out; you can also email frontdesk@prohealthcw.com. By opting in you confirm you are the owner or authorised user of the phone number given and that you are at least 18 years old."
+    },
+    {
+      "heading": "Find Us Online",
+      "items": [
+        "Facebook: facebook.com/ProHealthChiroWellness",
+        "Instagram: instagram.com/prohealthchirowellness"
+      ]
+    },
+    {
+      "heading": "Your Information",
+      "text": "We do not share your phone number or SMS opt-in information with third parties for marketing purposes. You can ask for a copy of the personal data we hold about you, ask us to correct anything inaccurate or incomplete, or ask us to delete it: contact the front desk at (281) 991-7676 or frontdesk@prohealthcw.com."
+    }
+  ]
+}

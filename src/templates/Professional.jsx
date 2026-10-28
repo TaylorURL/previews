@@ -1337,9 +1337,7 @@ function ResourcesPage(props) {
           </div>
         </section>
       )}
-      <div className="pt-[clamp(4rem,8vw,6.5rem)]">
-        <Cta {...props} />
-      </div>
+      <Cta {...props} />
     </>
   );
 }

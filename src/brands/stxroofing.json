@@ -10,8 +10,9 @@
   "state": "TX",
   "zip": "77336",
   "rating": 4.9,
-  "reviewCount": 265,
-  "license": "Fully insured and bondable to $750,000. Texas does not license roofers at the state level.",
+  "reviewCount": 263,
+  "since": 2016,
+  "license": "Fully insured and bondable to $750,000",
   "hours": [
     [
       "Monday – Sunday",
@@ -23,7 +24,7 @@
     ]
   ],
   "brand": {
-    "primary": "#F90000",
+    "primary": "#ea0000",
     "primaryDeep": "#B40000",
     "accent": "#F3A712",
     "ink": "#03204C",
@@ -33,21 +34,21 @@
     "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap",
     "logo": "/brands/stxroofing/logo.webp",
     "logoMono": "/brands/stxroofing/logo-mono.webp",
-    "logoWidth": 155,
-    "logoHeight": 48,
-    "logoRatio": 3.229,
+    "logoWidth": 131,
+    "logoHeight": 63,
+    "logoRatio": 2.083,
     "logoGround": "#ffffff",
     "logoReads": [
-      0.446,
-      0.394,
-      0.359,
-      0.351,
-      0.384,
-      0.454,
-      0.545,
-      0.65,
-      0.766,
-      0.885,
+      0.388,
+      0.349,
+      0.333,
+      0.335,
+      0.367,
+      0.436,
+      0.478,
+      0.632,
+      0.753,
+      0.878,
       1.0
     ]
   },
@@ -73,7 +74,7 @@
       "short": "A full tear-off and a new roof, priced before you sign.",
       "text": "Professional roof replacement using quality materials, with the decking inspected and every pipe jack, vent and flashing replaced as part of the job.",
       "image": "/brands/stxroofing/replacement",
-      "imageAlt": "A Houston home with a freshly installed architectural shingle roof",
+      "imageAlt": "A completed roof replacement by STX Roofing on a home in The Woodlands, Texas",
       "materials": true,
       "body": [
         "Replacing a roof is a major investment, and the contractor you pick changes both the performance and the value. We start every project with a detailed inspection to assess the roof's condition and to confirm whether a full replacement is genuinely necessary. From there we walk you through materials, warranties and costs so the decision is yours to make with the numbers in front of you.",
@@ -152,13 +153,39 @@
       ]
     },
     {
+      "slug": "impact-resistant-roofing",
+      "group": "residential",
+      "title": "Impact-Resistant Roofing",
+      "short": "Class 4 shingles, and what they do and do not do.",
+      "text": "Class 3 and Class 4 impact-resistant roof systems, with a straight answer on what the rating covers, what it does not, and how your carrier treats it.",
+      "body": [
+        "Impact resistance has a lab test behind it. Most impact-rated shingles are tested under UL 2218, where steel balls from 1.25 to 2 inches across are dropped onto new roofing samples. Class 4, the top rating, means the material takes two hits in the same spot from a 2-inch ball dropped 20 feet without cracking or splitting. Class 3 uses a 1.75-inch ball. A second standard, FM 4473, fires ice balls instead.",
+        "It helps to know the limits. Those tests use new, unweathered material at room temperature, so a rating is not a true measure of how a roof handles every real storm. In our experience a Class 4 shingle shrugs off hits that would bruise a standard one. It is not hail-proof, and no honest roofer will tell you it is. Wind is rated by separate tests, so we check both ratings before we recommend a product. Around Houston the bigger threat is often wind and the debris it throws at your roof rather than hail.",
+        "The Texas Department of Insurance says a Class 4 roof covering gets the highest premium credit, but each insurer sets its own amount, so call your agent before you choose a shingle. We confirm the actual product carries a UL 2218 Class 4 label rather than just the product family, and we tell you to keep the product name and class printed on the bundle wrapper. Texas has a form for this, TDI Form PC068, the Impact-Resistant Roofing Installation Form, and some insurers ask for it before they apply a discount."
+      ],
+      "points": [
+        "Class 3 and Class 4 impact-rated shingle systems",
+        "Both the impact rating and the wind rating checked before we recommend a product",
+        "The UL 2218 class confirmed on the actual product, not the product family",
+        "Your policy read with you so the upgrade decision uses real numbers",
+        "Installed to the manufacturer's specification, which the rating and warranty depend on",
+        "Replacement is the cheapest time to upgrade"
+      ],
+      "faqs": [
+        {
+          "q": "Will a Class 4 roof lower my premium?",
+          "a": "The Texas Department of Insurance says a Class 4 roof covering gets the highest premium credit, but each insurer sets its own amount. Most of our customers live inland, outside the coastal area served by the Texas Windstorm Insurance Association, so the discount question usually goes to a private carrier rather than TWIA. Ask your agent before you choose a shingle."
+        }
+      ]
+    },
+    {
       "slug": "roof-maintenance",
       "group": "residential",
       "title": "Roof Maintenance",
       "short": "Proactive care that extends the life of a roof.",
       "text": "Proactive roof maintenance that extends roof life and prevents costly repairs, with the problems caught while they are still small.",
       "image": "/brands/stxroofing/maintenance",
-      "imageAlt": "An aerial view of a shingle roof during a maintenance visit in Houston",
+      "imageAlt": "A shingle roof STX Roofing replaced in Splendora, Texas",
       "body": [
         "Most of what fails on a roof gives warning first: a lifted shingle, a pipe boot starting to crack, a valley collecting debris. Maintenance is what finds those while the fix is still cheap, and it is the difference between a roof that reaches its rated life and one that does not.",
         "We document what we find rather than describing it, so you see photographs of the condition of your roof each time we are on it."
@@ -176,8 +203,6 @@
       "title": "Soft Washing",
       "short": "Stains, algae and buildup removed without damage.",
       "text": "Gentle soft washing that safely removes stains, algae and buildup from a roof without damaging the surface underneath.",
-      "image": "/brands/stxroofing/soft-washing",
-      "imageAlt": "A metal roof being soft washed in Houston",
       "body": [
         "Pressure washing a roof strips granules off shingles and drives water where it does not belong. Soft washing uses low pressure and a cleaning solution instead, so the algae streaks and buildup come off and the roof surface stays intact.",
         "We soft wash shingle and metal roofs across Greater Houston."
@@ -186,7 +211,9 @@
         "Low-pressure cleaning on shingle and metal roofs",
         "Algae streaks, stains and organic buildup removed",
         "No granule loss from high-pressure washing"
-      ]
+      ],
+      "image": "/brands/stxroofing/soft-washing",
+      "imageAlt": "An aerial view of a shingle roof on a Houston-area home"
     },
     {
       "slug": "gutter-installation",
@@ -194,8 +221,6 @@
       "title": "Gutter Installation",
       "short": "Seamless gutter formed on site, sized to the roof.",
       "text": "Custom-fit gutter installation that directs water away from the walls and the foundation, roll-formed on site so the only joints are at corners and end caps.",
-      "image": "/brands/stxroofing/gutters",
-      "imageAlt": "Custom-fit gutter installed along the roof edge of a Houston home",
       "body": [
         "Gutters have one job: move water off the roof and away from the foundation. In Houston that job is harder than it sounds, because our rainfall comes in bursts and our soil is shrink-swell clay that punishes any water left standing near the slab. A few inches of rain on an average roof produces several thousand gallons of water, and all of it has to go somewhere.",
         "We roll-form gutter on site from a continuous coil, so each run comes off the machine as one piece. Sectional gutter sold in ten-foot lengths has a joint every ten feet, and joints are where gutters leak. Sizing is the other decision: five inch trough with two by three inch downspouts handles most single-story roofs, while six inch trough with three by four inch downspouts moves substantially more water and is usually the better answer on two-story homes, steep pitches or long runs. We calculate the roof area draining to each run rather than defaulting to whatever the builder installed.",
@@ -222,8 +247,6 @@
       "title": "Gutter Guards",
       "short": "Leaf Blaster Pro guards, professionally installed.",
       "text": "Leaf Blaster Pro gutter guards professionally installed for clog-free, low-maintenance gutters.",
-      "image": "/brands/stxroofing/gutter-guards",
-      "imageAlt": "Leaf Blaster Pro gutter guard mesh fitted to a gutter in Houston",
       "body": [
         "Leaf protection is the right conversation on homes where cleaning frequency has become the real problem. Kingwood and Atascocita have heavy pine canopy, and a gutter under that cover fills faster than any schedule keeps up with.",
         "We install Leaf Blaster Pro guards over the existing trough, and we tell you after we look whether guards or a different fix is what your system actually needs."
@@ -236,13 +259,43 @@
       ]
     },
     {
+      "slug": "emergency-roof-repair",
+      "group": "storm",
+      "title": "Emergency Roof Repair and Tarping",
+      "short": "24/7 response, with the water stopped tonight.",
+      "text": "Emergency roof repair and professional tarping, available 24 hours a day including nights and weekends, with same-day response in most cases within about 25 miles of Huffman.",
+      "body": [
+        "An emergency is any roof problem letting water in right now: a limb or debris through the roof, a section of shingles peeled off in high wind, water pouring in during rain, or storm damage that left the deck open to the sky. A stain that has been there for months can wait for a normal appointment. A new active leak cannot, because every hour adds to the repair bill inside the house rather than on the roof.",
+        "You call (281) 601-7663 and tell us what is happening, day or night, and you talk to a local team rather than a call center. We photograph the damage from the roof before anything gets covered up, then make the home safe and dry with a professional tarp or a temporary patch. We check the attic for wet decking and insulation, and we give you a written plan and a timeline for the permanent repair.",
+        "A tarp is a temporary cover, not a repair. A proper one is heavy-duty, extends well past the damaged area, wraps over the ridge where possible so water cannot run under the top edge, and is held down with wood battens fastened through the tarp rather than bricks or tires. Loose tarps catch the wind and tear more shingles loose. Emergency tarping is usually covered by a policy as mitigation because it stops further damage, so keep the receipt. We have answered emergency calls here since 2016."
+      ],
+      "points": [
+        "Available 24 hours a day, including nights and weekends",
+        "Same-day response in most cases within about 25 miles of Huffman",
+        "Professional heavy-duty tarping battened down, not weighted down",
+        "Damage photographed from the roof before it is covered up",
+        "Attic checked for wet decking and insulation",
+        "Written assessment and plan for the permanent repair"
+      ],
+      "faqs": [
+        {
+          "q": "Do you tarp at night and on weekends?",
+          "a": "Yes. We are available 24 hours a day, seven days a week, including nights and weekends. In most cases we can respond the same day within about 25 miles of Huffman."
+        },
+        {
+          "q": "Should I sign something a door knocker hands me after a storm?",
+          "a": "No. After a Houston storm the door knockers come out fast and use the panic of a fresh leak to get a signature. We have a real shop in Huffman at 25419 FM 2100 and an A+ BBB rating, and we will still be here next year."
+        }
+      ]
+    },
+    {
       "slug": "storm-damage",
       "group": "storm",
       "title": "Storm Damage and Insurance Claims",
       "short": "Hail and wind damage documented, and the claim handled.",
       "text": "Storm damage restoration with insurance claim support, led by an owner who spent years as an insurance adjuster before founding the company.",
       "image": "/brands/stxroofing/storm",
-      "imageAlt": "Fallen tree branches on the roof of a house after a severe storm",
+      "imageAlt": "A roof STX Roofing replaced in Pearland, Texas",
       "claim": true,
       "body": [
         "Russell Mullin, who owns STX Roofing, spent years as an insurance adjuster and insurance salesperson before founding the company. That matters because Texas carriers have changed the rules on homeowners over the past few years — RCV policies shifting to ACV, deductibles climbing to 1 to 2 percent of the dwelling value, and roof-age non-renewals once a roof passes 15 years. We read your policy for what it actually says, not what you wish it said.",
@@ -255,6 +308,7 @@
         "Policy read with you before the claim is filed",
         "Work alongside your insurance company through the claim",
         "Emergency storm response on residential and commercial roofs",
+        "We do not take assignment of benefits, so the claim stays yours",
         "Your deductible is never waived"
       ],
       "faqs": [
@@ -275,7 +329,7 @@
       "short": "Free inspections, and pre-sale inspections for a closing.",
       "text": "A documented inspection of the roof, free across Greater Houston except on real estate transaction inspections, with same-day estimates.",
       "image": "/brands/stxroofing/inspection",
-      "imageAlt": "A pre-sale roof inspection underway on a Houston home",
+      "imageAlt": "A pre-sale roof inspection on a Houston home",
       "body": [
         "Every project we take on starts with an inspection, because a recommendation made without one is a guess. We get on the roof, document what is there in photographs, and put the scope in writing before any work starts.",
         "Inspections are free across Huffman, Atascocita, Kingwood, Porter and Greater Houston. The one exception is a real estate transaction inspection, which is a paid report. Homeowners selling a house use that report so the roof is settled before a buyer's inspector raises it."
@@ -300,8 +354,6 @@
       "title": "Commercial Roofing",
       "short": "TPO, PVC, EPDM, modified bitumen and metal systems.",
       "text": "Commercial roofing for property managers, business owners, HOAs and general contractors across Southeast Texas, on the full range of low-slope systems.",
-      "image": "/brands/stxroofing/commercial",
-      "imageAlt": "A white flat commercial roof serviced by STX Roofing in Houston",
       "body": [
         "STX Roofing is a veteran-owned commercial roofing contractor serving property managers, business owners, HOAs and general contractors across Southeast Texas. We install, replace, repair and restore commercial roofing systems on industrial facilities, retail plazas, warehouses, multi-family properties and office buildings.",
         "We carry GAF Master Elite, GAF Coating, IKO Commercial and CertainTeed ShingleMaster certifications, and we are bondable to $750,000. We operate one company across both residential and commercial, which means the same standards govern a $4,000 repair and a $400,000 multi-building replacement.",
@@ -323,8 +375,6 @@
       "title": "Commercial Roof Coatings and Restoration",
       "short": "Years of service life added without a tear-off.",
       "text": "Roof coating and restoration for a commercial roof that is aging but not ready for replacement, applied only where the roof qualifies.",
-      "image": "/brands/stxroofing/coatings",
-      "imageAlt": "A commercial roof coating applied to a flat roof in Houston",
       "body": [
         "A roof coating buys you years without a tear-off, but only on a roof that qualifies, and that distinction is where most building owners get it wrong. If the membrane is sound and the insulation underneath is dry, a restoration system can extend service life and cut cooling load for a fraction of what replacement costs. ENERGY STAR guidance on cool roofs notes that a clean, reflective surface stays dramatically cooler than a dark one, which lowers air conditioning demand and slows how fast the roof materials degrade.",
         "If water has already reached the insulation, coating over it seals the problem in. That is why every project starts with a commercial roof inspection and core samples before we recommend anything. We work on all the major single-ply membrane systems, so the recommendation is not driven by what we happen to install.",
@@ -441,6 +491,9 @@
     "River Oaks",
     "Bellaire",
     "West University Place",
+    "Memorial",
+    "Hunters Creek Village",
+    "Spring Valley Village",
     "Baytown",
     "Channelview",
     "Deer Park",
@@ -463,17 +516,14 @@
     "North Cleveland",
     "Katy",
     "Sugar Land",
+    "Missouri City",
     "Richmond",
     "Pearland",
     "Pasadena",
     "League City",
     "Friendswood"
   ],
-  "areasText": "Our shop is in Huffman at 25419 FM 2100, and the crews work Greater Houston and the Lake Houston area every day. Emergency repair calls within roughly 25 miles of Huffman are handled the same day in most cases.",
-  "areasImage": "/brands/stxroofing/areas",
-  "areasImageAlt": "An aerial view of a suburban neighborhood of rooftops",
-  "contactImage": "/brands/stxroofing/contact",
-  "contactImageAlt": "A close view of a roof surface against a clear sky",
+  "areasText": "Our shop is in Huffman at 25419 FM 2100, and the crews work Greater Houston and the Lake Houston area every day. Emergency repair calls within roughly 25 miles of Huffman are handled the same day in most cases, and we reach beyond the towns listed here, including Beaumont and Galveston.",
   "facts": [
     {
       "heading": "Certifications",
@@ -503,6 +553,8 @@
         "The lifetime workmanship warranty is transferable one time to your buyer",
         "Two-year workmanship warranty on roof repairs and on gutter work",
         "Manufacturer warranty duration is set by the product installed",
+        "GAF Master Elite status lets us offer GAF's strongest warranty options, including coverage of both materials and workmanship for the life of the roof",
+        "CertainTeed ShingleMaster status lets us install the full CertainTeed line and back it with CertainTeed's extended warranty options",
         "Report a workmanship problem within 48 hours of discovering it, and only STX Roofing repairs warranty items",
         "The workmanship warranty covers labor repairs for installation defects that cause leakage or shingle loss",
         "Not covered: normal wear and tear, hail, hurricane-force wind and rain, ice, foreign objects, fungus, bacteria, infestation, UV degradation, rust, corrosion, metal or wood decay, structural damage from an outside event, and unauthorized repairs"
@@ -510,7 +562,7 @@
     },
     {
       "heading": "Financing",
-      "text": "Promotional financing is available so you can pay for the work over time. You get a decision in seconds with no impact to your credit score, and the application is online. With approved credit."
+      "text": "Promotional financing is available on qualifying projects through Credit Human and Synchrony, so you can pay for the work over time. You get a decision in seconds with no impact to your credit score, and the application is online. With approved credit."
     },
     {
       "heading": "Current Specials",
@@ -526,11 +578,24 @@
     },
     {
       "heading": "Insurance Claims",
-      "text": "The owner spent years as an insurance adjuster and insurance salesperson, and we work alongside your carrier through the claim to save you time and money. We never waive a deductible, which has been illegal in Texas since 2019 under HB 2102."
+      "text": "The owner spent years as an insurance adjuster and insurance salesperson, and we work alongside your carrier through the claim to save you time and money. We handle supplements, depreciation recovery and direct communication with the adjuster. We do not take assignment of benefits, so your claim stays yours and you stay in control of it. We never waive a deductible, which has been illegal in Texas since 2019 under HB 2102."
+    },
+    {
+      "heading": "Insurance Renewal and Non-Renewal",
+      "text": "Carriers across Greater Houston are non-renewing, cancelling or surcharging homeowners' policies over roof age and condition, and a new insurance-approved roof almost always puts you back in good standing. We document the roof with a free drone and in-person inspection, give you a written roof condition letter you can share with your insurer, and install insurance-approved systems: Class 3 and Class 4 impact-resistant shingles, standing seam metal, or TPO on flat and low-slope roofs. Most carriers allow only 30 to 60 days to fix the issue, and we have turned a non-renewal letter into coverage again in as little as 7 to 10 days."
+    },
+    {
+      "heading": "Insurance and Bonding",
+      "items": [
+        "Comprehensive general liability insurance",
+        "Workers' compensation coverage",
+        "Bondable to $750,000",
+        "High safety standards maintained on every job"
+      ]
     },
     {
       "heading": "Hours and Emergency Service",
-      "text": "Open 24 hours, seven days a week. Emergency roof repair calls within roughly 25 miles of Huffman are handled the same day in most cases, and commercial storm response is dispatched as soon as weather allows."
+      "text": "Open 24 hours, seven days a week, and the phones are answered 24/7. Emergency roof repair and professional roof tarping are available day or night, including nights and weekends, and calls within roughly 25 miles of Huffman are handled the same day in most cases. Commercial storm response is dispatched as soon as weather allows."
     },
     {
       "heading": "Licensing",
@@ -552,7 +617,10 @@
     {
       "heading": "Product Information",
       "items": [
-        "GAF Timberline HDZ shingles",
+        "GAF Timberline HDZ and Timberline Ultra HDZ shingles",
+        "Owens Corning TruDefinition Duration and Duration FLEX, with SureNail technology, StreakGuard algae resistance and a 130 mph wind warranty",
+        "CertainTeed Landmark IR",
+        "Class 3 and Class 4 impact-resistant shingles",
         "Shingle comparison and shingle color guides",
         "Leaf Blaster Pro gutter guards",
         "Decra and Euroshield metal roof systems"
@@ -579,7 +647,12 @@
         "Chimney flashing repair",
         "Fascia and soffit repair",
         "Roof leak detection and leak repair",
-        "Flat roof repairs"
+        "Flat roof repairs",
+        "Siding",
+        "Custom trim work",
+        "New construction roofing",
+        "Emergency roof tarping",
+        "Commercial roof maintenance programs"
       ]
     },
     {
@@ -600,6 +673,7 @@
         "TikTok",
         "YouTube",
         "X",
+        "Mastodon",
         "LinkedIn",
         "Yelp",
         "Nextdoor",
@@ -608,7 +682,15 @@
     },
     {
       "heading": "Booking and Policies",
-      "text": "Book a free roof estimate by phone, through the form on the site, or with the instant online estimate, and the team can be out to look at the roof the same week. If you sign up for text messages, consent is not a condition of purchase and you can reply STOP at any time."
+      "text": "Book a free roof estimate by phone or text on (281) 601-7663, by email at info@stxroofing.com, through the form on the site, or with the instant online estimate, and the team can be out to look at the roof the same week. If you sign up for text messages, consent is not a condition of purchase, you can reply STOP at any time to unsubscribe, and you can reply HELP for help."
+    },
+    {
+      "heading": "Project Timelines",
+      "text": "Most residential roof replacements take one to two days, depending on the size of the home, the complexity of the roof and the weather. Our team can usually come look at your roof the same week you call. Gutter projects are scheduled rather than same-day, because we roll-form the material on site."
+    },
+    {
+      "heading": "Company Registration",
+      "text": "STX Roofing is the trading name of Madison Reece LLC, which does business as STX Roofing."
     }
   ]
 }
