@@ -379,7 +379,9 @@ def build(prospect, root, slug):
     if not lead:
         raise Parked("no description of the business in its own words")
     areas = compose.areas_of(text, town, TOWNS)
-    since = compose.SINCE.search(text)
+    # The year they were founded is the earliest they give; a later one
+    # ("Since 2023") dates something newer, such as a move or a new service.
+    since = min((int(m.group(1)) for m in compose.SINCE.finditer(text)), default=None)
     license_line = compose.LICENSE.search(text)
 
     label = compose.TRADE_LABEL[kind or template]
@@ -402,7 +404,7 @@ def build(prospect, root, slug):
         brand["rating"] = rating
         brand["reviewCount"] = count
     if since:
-        brand["since"] = int(since.group(1))
+        brand["since"] = since
     if license_line:
         brand["license"] = compose.plain(license_line.group(1))
     hours = compose.hours_of(business)
