@@ -512,6 +512,26 @@ def on_ground(arr, ground):
     return flat
 
 
+# A mark drawn on nothing goes on white when it reads there, unless white
+# keeps this much less of its edges than the dark ground does. The share that
+# reads counts only solid ink, so it misses a name laid in a thin white wash
+# beside gold initials (a mark made for a dark header): on white the name is
+# gone and the initials float alone, faint and small.
+DARK_EDGES = 0.2
+
+
+def _keeps(arr, native, there):
+    """The share of the edges the mark shows on `native` that it still shows on `there`."""
+    own = _edges(arr, native)
+    total = float(own.sum())
+    return float(np.minimum(own, _edges(arr, there)).sum()) / total if total else 0.0
+
+
+def _for_dark(arr):
+    """Whether a mark drawn on nothing shows clearly more of itself on the dark ground than on white."""
+    return _keeps(arr, WHITE, DARK_GROUND) - _keeps(arr, DARK_GROUND, WHITE) >= DARK_EDGES
+
+
 def edge_sharpness(arr, ground, height):
     """How steep the logo's edges are when drawn `height` px tall: the strongest
     gradients against its own contrast. Crisp art is near 0.8, a blown-up
@@ -824,8 +844,11 @@ def prepare(image):
         grounds = [WHITE, DARK_GROUND]
     scored = [(legibility(arr, g), g) for g in grounds]
     best_share, best = max(scored, key=lambda s: s[0])
-    # A transparent mark that reads on white goes on white.
-    if kind != "solid" and scored[0][0] >= LEGIBLE_SHARE:
+    # A transparent mark that reads on white goes on white, unless it was
+    # made for the dark ground and loses part of itself on white.
+    if kind != "solid" and _for_dark(arr):
+        best_share, best = scored[1]
+    elif kind != "solid" and scored[0][0] >= LEGIBLE_SHARE:
         best_share, best = scored[0]
     if best_share < LEGIBLE_SHARE:
         raise Unfit(f"too little of the logo stands out from its ground ({best_share:.0%} of it)")
@@ -874,7 +897,7 @@ def rework(image):
     arr = trim(arr)
     if kind != "solid":
         on_white, on_dark = legibility(arr, WHITE), legibility(arr, DARK_GROUND)
-        native = WHITE if on_white >= LEGIBLE_SHARE or on_white >= on_dark else DARK_GROUND
+        native = WHITE if (on_white >= LEGIBLE_SHARE or on_white >= on_dark) and not _for_dark(arr) else DARK_GROUND
     arr = trim(_small_strips(trim(_faint_strips(_wash(arr, native), native))))
     h, w = arr.shape[:2]
     width, height = drawn_size(w / h, strip_share(arr), h / SOURCE_OVER_DRAWN)
