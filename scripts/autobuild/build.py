@@ -457,11 +457,11 @@ def build(prospect, root, slug):
 
     # The about section is drawn on the home page under the hero, so it takes
     # the first spare photo that is not another shot of the hero's scene.
-    # The roofing About page also draws it as its hero, across half the page,
-    # so there it must be sharp enough for the hero slot, not just a card.
+    # The roofing and hvac About pages also draw it as their hero, across half
+    # the page, so there it must be sharp enough for the hero slot, not just a card.
     pictures = dict(names)
     about_image = next((n for n in spare if not (hero_pick and images.same_scene(pictures[n]["image"], hero_pick["image"]))
-                        and (template != "roofing" or _fits(pictures[n], "hero"))), None)
+                        and (template not in ("roofing", "hvac") or _fits(pictures[n], "hero"))), None)
 
     def about_block(**extra):
         block = {**extra, "title": f"About {short}", "text": about}
