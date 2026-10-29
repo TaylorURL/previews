@@ -310,7 +310,8 @@ def email_of(stored, pages, business):
         listed.append(business["email"].lower().removeprefix("mailto:"))
     listed = [e for e in listed if not NOT_FOR_CUSTOMERS.match(e)]
     own = lambda e: e.rsplit("@", 1)[-1] == host
-    stored = plain(stored).lower()
+    # A listing that stores the link ("mailto:info@...") stores the address in it.
+    stored = plain(stored).lower().removeprefix("mailto:")
     if NOT_FOR_CUSTOMERS.match(stored):
         stored = ""
     if stored and (own(stored) or FREE_MAIL.search(stored) or stored in listed):
@@ -894,7 +895,9 @@ def about_of(pages, name, trade=None, services=(), town=None, state=None, towns=
             # Their contact form's own instructions ("Use the form to request an appointment") are not about them.
             # Nor is what to put in it ("Share the building address... in our commercial request form").
             # Nor is its fine print ("By submitting, you agree... Do not upload payment-card information").
-            if re.search(r"\b(?:use|fill (?:out|in)|complete|submit) (?:the|our|this)(?: \w+)? form\b|\b(?:in|on|through|via|with) (?:the|our|this)(?: [\w-]+){0,2} form\b(?! of)|\bby submitting\b|\bdo not (?:upload|submit|send|include)\b", text, re.I):
+            # Nor is how to use a tool on their page ("Enter the property address and we'll measure the roof...").
+            if re.search(r"\b(?:use|fill (?:out|in)|complete|submit) (?:the|our|this)(?: \w+)? form\b|\b(?:in|on|through|via|with) (?:the|our|this)(?: [\w-]+){0,2} form\b(?! of)|\bby submitting\b|\bdo not (?:upload|submit|send|include)\b", text, re.I) \
+                    or re.match(r"(?:enter|type|input|put in) (?:the|your)(?: [\w-]+){0,2} (?:address|zip(?: code)?|postcode|details|information)\b", text, re.I):
                 continue
             # Nor is a notice of trouble on their end ("We're currently experiencing phone issues. If you can't reach us...").
             if re.search(r"\bcurrently experiencing\b|\b(?:can(?:no|')t|unable to) reach us\b|\bphones? (?:lines? )?(?:are|is) (?:down|out)\b", text.replace("’", "'"), re.I):
@@ -948,11 +951,15 @@ def about_of(pages, name, trade=None, services=(), town=None, state=None, towns=
             # helped... He showed me"), or tells of the writer's visit to them
             # ("I was at Pasadena office the agent... explained to me", "I
             # stopped by a-best insurance last Saturday... Your agent was
-            # polite"), with no "we" or "our" of their own.
+            # polite"), or recommends them or thanks one of them by name ("I
+            # would highly recommend American Veteran Roofing", "Would definitely
+            # recommend...", "Thank you Daniel for a great experience"), with no
+            # "we" or "our" of their own.
             if re.search(r"\b(?:I|my|me)\b", text) and not re.search(r"\b(?:we|our|us)\b", text, re.I) and (
                 re.match(r"(?:they|these guys)\b", text, re.I)
                 or re.search(r"\b(?:helped|showed|treated|fixed|taught|walked|took care of|got) me\b", text, re.I)
-                or re.search(r"\bI (?:stopped by|dropped by|came in|walked in|was at [\w ]{0,30}office)\b|\bexplained (?:\w+ )?to me\b|\bmy experience (?:was|with)\b|\bI highly recommend\b|\bgive them a call\b|\byour (?:agent|staff|team) (?:was|were|is|are)\b", text, re.I)
+                or re.search(r"\bI (?:stopped by|dropped by|came in|walked in|was at [\w ]{0,30}office)\b|\bexplained (?:\w+ )?to me\b|\bmy experience (?:was|with)\b|\b(?:I(?:'d| would| will)?|would) (?:(?:highly|definitely|strongly) )?recommend\b|\bgive them a call\b|\byour (?:agent|staff|team) (?:was|were|is|are)\b", text.replace("’", "'"), re.I)
+                or re.search(r"\b(?:thank you|thanks) (?-i:[A-Z][a-z]+)\b", text, re.I)
             ):
                 continue
             # Or one a customer signs as "we", of the owner as "he" or "she"
