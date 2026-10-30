@@ -1,0 +1,402 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "SMP Supply | Specialty Metal Products",
+  "shortName": "SMP Supply",
+  "summary": "A distributor of pipe, valves, fittings and flanges for the power, petrochemical and oil and gas industries, stocked and shipped from Baytown, Texas.",
+  "phone": "(713) 840-9333",
+  "email": "sales@smp-supply.com",
+  "address": "8626 Unity Dr",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77523",
+  "rating": 4.4,
+  "reviewCount": 20,
+  "since": 1987,
+  "hours": [["Mon – Sun", "Open 24 hours"]],
+
+  "brand": {
+    "primary": "#0973ba",
+    "primaryDeep": "#1f4577",
+    "ink": "#10243a",
+    "muted": "#4a5d70",
+    "surface": "#eef5fb",
+    "line": "#d6e3ee",
+    "heading": "'Barlow', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/smpsupply/logo.webp",
+    "logoMono": "/brands/smpsupply/logo-mono.webp",
+    "logoWidth": 129,
+    "logoHeight": 58,
+    "logoRatio": 2.226,
+    "logoGround": "#ffffff",
+    "logoReads": [0.439, 0.363, 0.332, 0.075, 0.032, 0.092, 0.138, 0.669, 0.777, 0.891, 1.0]
+  },
+
+  "hero": {
+    "eyebrow": "Pipe, valves, fittings and flanges in Baytown",
+    "title": "Your premiere distributor of pipe, valves,",
+    "titleAccent": "fittings and flanges.",
+    "lead": "SMP Supply has bridged the gap between customer and manufacturer since 1987, with over 30 years of experience in the power, petrochemical and oil and gas industries. Send an RFQ and we will quote from stock or source it from our manufacturing partners.",
+    "image": "/brands/smpsupply/hero",
+    "imageAlt": "Large-diameter steel pipe strapped onto a flatbed trailer at the yard"
+  },
+
+  "groups": [
+    {
+      "slug": "pipe",
+      "title": "Pipe",
+      "icon": "cable",
+      "summary": "Carbon steel, stainless steel and chromoly pipe, welded and seamless, stocked in Baytown.",
+      "intro": "SMP Supply is proud to stock some of the finest pipe in the world and distribute it to our valued customers. The grades and sizes below are what we commonly keep on the shelf; additional sizes and specs are sourced and purchased from our manufacturing partners on request.",
+      "services": [
+        {
+          "slug": "carbon-steel-pipe",
+          "title": "Carbon Steel Pipe",
+          "icon": "cable",
+          "text": "Welded and seamless carbon steel pipe, including high yield, kept in commonly ordered sizes.",
+          "points": ["Welded, 1/2\" up to 72\"", "Seamless, 1/2\" up to 24\"", "High yield grades listed on our line sheet"]
+        },
+        {
+          "slug": "stainless-steel-pipe",
+          "title": "Stainless Steel Pipe",
+          "icon": "shield",
+          "text": "Welded and seamless stainless steel pipe in the same size range we carry in carbon.",
+          "points": ["Welded, 1/2\" up to 72\"", "Seamless, 1/2\" up to 24\""]
+        },
+        {
+          "slug": "chromoly-pipe",
+          "title": "Chromoly Pipe",
+          "icon": "flame",
+          "text": "Welded and seamless chromoly pipe for high temperature and high pressure service.",
+          "points": ["6\" up to 48\"", "Grades P5, P9, P11 and P22"]
+        },
+        {
+          "slug": "coated-and-lined-pipe",
+          "title": "Coated and Lined Pipe",
+          "icon": "droplets",
+          "text": "Pipe supplied with the coating or lining the line calls for.",
+          "points": ["Fusion bond epoxy", "Cement lined", "Galvanized"]
+        }
+      ]
+    },
+    {
+      "slug": "valves",
+      "title": "Valves",
+      "icon": "gauge",
+      "summary": "A vast variety of valves for all of your flow control needs, cast and forged, 150# to 2500#.",
+      "intro": "SMP Supply maintains a vast variety of valves for all of your flow control needs, cast and forged. The types, specifications and pressure classes below are what we commonly stock, and we can source and purchase additional sizes and specs from our manufacturing partners on request.",
+      "image": "/brands/smpsupply/valves",
+      "imageAlt": "A row of Grove trunnion ball valves on pallets in the warehouse",
+      "services": [
+        {
+          "slug": "ball-valves",
+          "title": "Ball Valves",
+          "icon": "gauge",
+          "text": "Floating and trunnion mounted ball valves to API-6D, 598, 607 and 608.",
+          "points": ["Sizes 1/2\" to 36\"", "Pressure class 150# to 2500#"]
+        },
+        {
+          "slug": "gate-valves",
+          "title": "Gate Valves",
+          "icon": "gauge",
+          "text": "Compact, expanding, slab and wedge gate valves to API-6D, 600 and 602.",
+          "points": ["Sizes 1/4\" to 48\"", "Pressure class 150# to 2500#"]
+        },
+        {
+          "slug": "globe-valves",
+          "title": "Globe Valves",
+          "icon": "gauge",
+          "text": "T pattern and Y pattern globe valves to API-6D, 602, 603 and 623.",
+          "points": ["Sizes 1/2\" to 24\"", "Pressure class 150# to 2500#"]
+        },
+        {
+          "slug": "plug-valves",
+          "title": "Plug Valves",
+          "icon": "gauge",
+          "text": "Double block and bleed and lubricated plug valves to API-6D.",
+          "points": ["Sizes 1/2\" to 36\"", "Pressure class 150# to 2500#"]
+        },
+        {
+          "slug": "check-valves",
+          "title": "Check Valves",
+          "icon": "gauge",
+          "text": "Swing, piston and wafer check valves to API-6D, 598, 600 and 602.",
+          "points": ["Sizes 1/4\" to 48\"", "Pressure class 150# to 2500#"]
+        },
+        {
+          "slug": "butterfly-valves",
+          "title": "Butterfly Valves",
+          "icon": "gauge",
+          "text": "Triple offset, high performance, TOV and resilient seated butterfly valves to API 609.",
+          "points": ["Sizes 2\" to 48\"", "Pressure class 150# to 2500#"]
+        }
+      ]
+    },
+    {
+      "slug": "fittings-flanges",
+      "title": "Fittings & Flanges",
+      "icon": "settings",
+      "summary": "Fittings, flanges, olets, gaskets and nuts and bolts for all of your industry needs.",
+      "intro": "SMP Supply stocks fittings, flanges, olets, gaskets, and nuts & bolts for all of your industry needs. Below is a list of our commonly stocked fittings and flanges; additional sizes and specs are sourced and purchased from our manufacturing partners.",
+      "services": [
+        {
+          "slug": "buttweld-fittings",
+          "title": "Buttweld Fittings",
+          "icon": "settings",
+          "text": "Carbon steel, high yield, stainless steel and chromoly buttweld fittings, welded and seamless.",
+          "points": [
+            "90 and 45 elbows, straight and reducing tees, stub ends, reducers, laterals",
+            "Welded, 1/2\" up to 72\"; seamless, 1/2\" up to 24\"",
+            "Chromoly seamless, 4\" up to 48\", grades P5, P9, P11 and P22"
+          ]
+        },
+        {
+          "slug": "forged-fittings",
+          "title": "Forged Fittings",
+          "icon": "settings",
+          "text": "Threaded and socket weld forged fittings in carbon steel, high yield, stainless steel and chromoly.",
+          "points": ["Elbows, tees, plugs, unions, reducers", "Nipples and swages", "Galvanized available"]
+        },
+        {
+          "slug": "flanges",
+          "title": "Flanges",
+          "icon": "settings",
+          "text": "Carbon steel, high yield and stainless steel flanges in the faces and classes your spec calls for.",
+          "points": [
+            "Weld neck, slip-on, blind, socket weld, threaded and lap joint",
+            "RF, FF and RTJ faces",
+            "Pressure class 150# to 2500#"
+          ]
+        },
+        {
+          "slug": "olets",
+          "title": "Olets",
+          "icon": "settings",
+          "text": "Branch connections stocked alongside the fittings they run with.",
+          "points": ["Weldolets", "Threadolets", "Sockolets", "Elbolets", "Nipolets"]
+        },
+        {
+          "slug": "gaskets",
+          "title": "Gaskets",
+          "icon": "filter",
+          "text": "Gaskets and insulation kits to go with the flanges on the same order.",
+          "points": ["Spiral wound and ring joints", "Rubber, neoprene and Buna", "Non-asbestos", "Insulation kits"]
+        },
+        {
+          "slug": "nuts-and-bolts",
+          "title": "Nuts & Bolts",
+          "icon": "settings",
+          "text": "Stud bolts and nuts in the grades and finishes the job calls for.",
+          "points": ["Grade 5, 8 and B7", "Black, cadmium plated and Teflon coated", "Stainless and galvanized"]
+        }
+      ]
+    },
+    {
+      "slug": "valve-services",
+      "title": "Valve Services",
+      "icon": "wrench",
+      "summary": "End modifications, trim changes, pipe pups, automation and testing, handled before the valve ships.",
+      "intro": "Valves do not always leave the manufacturer in the configuration a job needs. SMP Supply changes ends and trim, adds pipe pups, automates valves and tests them before they go out.",
+      "image": "/brands/smpsupply/valve-services",
+      "imageAlt": "An automated ball valve on a pallet beside wrapped valves loaded on a flatbed trailer",
+      "services": [
+        {
+          "slug": "end-modifications",
+          "title": "End Modifications",
+          "icon": "wrench",
+          "text": "Valve ends modified to the connection the line requires."
+        },
+        {
+          "slug": "trim-changes",
+          "title": "Trim Changes",
+          "icon": "wrench",
+          "text": "Valve trim changed to the materials called for by the service."
+        },
+        {
+          "slug": "pipe-pups",
+          "title": "Pipe Pups",
+          "icon": "cable",
+          "text": "Pipe pups welded to valve ends so the valve arrives ready to tie in."
+        },
+        {
+          "slug": "valve-automation",
+          "title": "Valve Automation",
+          "icon": "settings",
+          "text": "Valves fitted with actuators and mounted hardware before they ship."
+        },
+        {
+          "slug": "witness-testing",
+          "title": "Witness Testing",
+          "icon": "clipboard",
+          "text": "Testing carried out with your inspector present to witness it."
+        },
+        {
+          "slug": "hydro-testing",
+          "title": "Hydro Testing",
+          "icon": "droplets",
+          "text": "Hydrostatic testing of valves before they leave."
+        }
+      ]
+    },
+    {
+      "slug": "machining-fabrication",
+      "title": "Machining & Fabrication",
+      "icon": "ruler",
+      "summary": "Machining, material verification, structural shims, coating and off-site support fabrication.",
+      "intro": "Alongside the warehouse, SMP Supply offers machining and structural fabrication services. Material is verified, flanges and bores are machined to the drawing, and supports are fabricated, coated and galvanized off site.",
+      "image": "/brands/smpsupply/machining",
+      "imageAlt": "A machinist at the control panel of a shop machine",
+      "services": [
+        {
+          "slug": "taper-bore",
+          "title": "Taper Bore",
+          "icon": "ruler",
+          "text": "Bores tapered to the dimensions on the drawing."
+        },
+        {
+          "slug": "drill-and-tap",
+          "title": "Drill & Tap",
+          "icon": "ruler",
+          "text": "Holes drilled and tapped to the spec supplied with the order."
+        },
+        {
+          "slug": "orifice-flanges",
+          "title": "Orifice Flanges",
+          "icon": "settings",
+          "text": "Orifice flanges machined and supplied for metering runs."
+        },
+        {
+          "slug": "pmi-testing",
+          "title": "PMI Testing",
+          "icon": "clipboard",
+          "text": "Positive material identification to confirm the alloy before material goes out."
+        },
+        {
+          "slug": "structural-shims",
+          "title": "Structural Shims",
+          "icon": "building",
+          "text": "Structural shims cut to the sizes a job calls for."
+        },
+        {
+          "slug": "pipe-and-structural-coating",
+          "title": "Pipe & Structural Coating",
+          "icon": "droplets",
+          "text": "Pipe, fittings and structural steel coated to spec, including FBE, ARO, shrink sleeves and Denso."
+        },
+        {
+          "slug": "off-site-support-fabrication",
+          "title": "Off-site Support Fabrication & Galvanizing",
+          "icon": "building",
+          "text": "Pipe supports fabricated and galvanized off site and delivered ready to set."
+        }
+      ]
+    }
+  ],
+
+  "about": {
+    "eyebrow": "About us",
+    "title": "Bridging the gap between customer and manufacturer since 1987.",
+    "text": [
+      "SMP Supply is your premiere distributor of pipe, valves, fittings and flanges. We pride ourselves on bridging the gap between customer and manufacturer since 1987.",
+      "With over 30 years of experience in the power, petrochemical, and oil & gas industries, we let our relationships do the work so you don't have to.",
+      "We achieved our position as a premiere supplier by maintaining stock and distributing only the most trusted brands for our customers, and by backing that stock with valve, machining and structural fabrication services. Five offices in Texas and Louisiana let us serve customers across the United States."
+    ],
+    "image": "/brands/smpsupply/welding",
+    "imageAlt": "Welding on steel workpieces in a fabrication shop",
+    "values": [
+      {
+        "title": "Stock on the shelf",
+        "text": "Pipe, valves, fittings and flanges kept in the sizes and classes our customers order most."
+      },
+      {
+        "title": "Sourced on request",
+        "text": "Anything outside our commonly stocked list is sourced and purchased from our manufacturing partners."
+      },
+      {
+        "title": "Trusted brands only",
+        "text": "We maintain stock and distribute only the most trusted brands for our customers."
+      }
+    ]
+  },
+
+  "faqs": [
+    {
+      "q": "What if the size or spec I need is not on your stock list?",
+      "a": "SMP Supply can source and purchase additional sizes and specs from our manufacturing partners on request. Send the line item and we will quote it."
+    },
+    {
+      "q": "Can you modify a valve before it ships?",
+      "a": "Yes. We handle end modifications, trim changes, pipe pups, valve automation, witness testing and hydro testing."
+    },
+    {
+      "q": "Which industries do you supply?",
+      "a": "We have over 30 years of experience in the power, petrochemical, and oil and gas industries."
+    },
+    {
+      "q": "How do I request a quote?",
+      "a": "Email sales@smp-supply.com with your RFQ, or call the Baytown corporate office at (713) 840-9333."
+    }
+  ],
+
+  "serviceArea": ["Baytown", "Houston", "Victoria", "Odessa", "Gonzales, LA"],
+
+  "facts": [
+    {
+      "heading": "Markets Served",
+      "items": ["Power", "Petrochemical", "Oil & Gas", "Midstream"]
+    },
+    {
+      "heading": "Certification",
+      "items": ["ISO 9001, UKAS Management Systems"]
+    },
+    {
+      "heading": "Other Offices",
+      "items": [
+        "Midstream Office — 11450 Compaq Center Drive, Suite 410, Houston, TX 77070, 346-200-5542",
+        "Victoria Office — 8331 Lone Tree Road, Victoria, TX 77905, 361-579-1087",
+        "Odessa Office — 11500 W State Hwy 80 E, Odessa, TX 79765, 432-653-0115",
+        "Gonzales Office — 13207 Airline Hwy, Gonzales, LA 70737, 225-332-9501"
+      ]
+    },
+    {
+      "heading": "Reach",
+      "text": "SMP Supply has five strategic office locations located in Texas and Louisiana which allow us to service our customers across the United States."
+    },
+    {
+      "heading": "Corporate Office",
+      "text": "8626 Unity Drive, Baytown, TX 77523. Phone 713-840-9333, fax 713-840-9339."
+    },
+    {
+      "heading": "Quotes",
+      "text": "Send your RFQ to sales@smp-supply.com and we will quote from stock or source it from our manufacturing partners."
+    },
+    {
+      "heading": "Line Sheet and Charts",
+      "items": [
+        "SMP Supply line sheet, the full list of pipe, buttweld and forged fittings, flanges, olets, gaskets, nuts and bolts, valves and coatings carried",
+        "Pipe chart, a wall thickness reference covering nominal pipe sizes 1/4\" through 36\" and schedules 5S through XXH, with the most common wall thickness marked",
+        "Valve trim chart, the API 600 trim number chart covering trim numbers 1 through 18"
+      ]
+    },
+    {
+      "heading": "Stock Notes",
+      "items": [
+        "All pipe grades available in carbon steel and stainless steel",
+        "Grades P5, P9, P11 and P22 available in chromoly pipe",
+        "Chromoly fittings available in grades P5, P9, P11 and P22",
+        "Valves stocked cast and forged"
+      ]
+    },
+    {
+      "heading": "Coatings Offered",
+      "items": ["FBE and ARO", "Paint to spec", "Pipe and fittings", "Shrink sleeves", "Denso"]
+    },
+    {
+      "heading": "Online",
+      "items": ["LinkedIn: SMP Supply Corporation"]
+    }
+  ]
+}
