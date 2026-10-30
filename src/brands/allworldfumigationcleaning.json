@@ -1,0 +1,355 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "All World Fumigation & Cleaning Services LLC",
+  "shortName": "All World Fumigation",
+  "summary": "Fumigation, quarantine treatment and cargo cleaning for importers and exporters, handled out of La Porte for Houston and Galveston.",
+  "phone": "(281) 361-8400",
+  "email": "mail@allworldfumigation.com",
+  "address": "107 W Madison St",
+  "town": "La Porte",
+  "state": "TX",
+  "zip": "77571",
+  "hours": [
+    [
+      "Mon – Sat",
+      "Open 24 hours"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#657d22",
+    "primaryDeep": "#1e2606",
+    "accent": "#cbfb45",
+    "ink": "#202020",
+    "muted": "#5a6050",
+    "surface": "#f6faea",
+    "line": "#e2e7d4",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/allworldfumigationcleaning/logo.webp",
+    "logoMono": "/brands/allworldfumigationcleaning/logo-mono.webp",
+    "logoWidth": 126,
+    "logoHeight": 58,
+    "logoRatio": 2.179,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.224,
+      0.267,
+      0.198,
+      0.431,
+      0.506,
+      0.587,
+      0.665,
+      0.746,
+      0.831,
+      0.918,
+      0.999
+    ]
+  },
+  "hero": {
+    "eyebrow": "Fumigation and cargo cleaning in La Porte, Texas",
+    "title": "Import and export,",
+    "titleAccent": "the right way.",
+    "lead": "Fumigation on a large scale and a small scale, for imports and exports. We are certified by the United States Department of Agriculture to treat imported commodities that have been quarantined by U.S. Customs.",
+    "image": "/brands/allworldfumigationcleaning/port-cranes",
+    "imageAlt": "Container cranes standing over the wharf at the port"
+  },
+  "groups": [
+    {
+      "slug": "ispm-15",
+      "title": "ISPM 15 Wood Packaging",
+      "icon": "clipboard",
+      "summary": "Fumigation and stamping of wood packaging to the ISPM 15 standard, for pallets, crates and dunnage.",
+      "intro": "ISPM 15 is an international phytosanitary measure developed by the International Plant Protection Convention that addresses the need to treat wood materials thicker than 6mm used to ship products between countries. Its purpose is to prevent the international transport and spread of disease and insects that could harm plants or ecosystems. All World Fumigation is accredited to the ISPM 15 Wood Packaging Program standard for fumigation of export wood products.",
+      "image": "/brands/allworldfumigationcleaning/logs-container",
+      "imageAlt": "Hardwood logs marked in red and loaded in a shipping container",
+      "services": [
+        {
+          "slug": "ispm-stamping",
+          "title": "ISPM Stamping",
+          "icon": "clipboard",
+          "text": "ISPM 15 requires wood packaging to be debarked and then heat treated or fumigated with methyl bromide, and stamped or branded with a mark of compliance. That mark is colloquially known as the wheat stamp.",
+          "points": [
+            "Pallets, crates and dunnage",
+            "Wood materials thicker than 6mm",
+            "Products made from paper, plastic or wood panel products are exempt from ISPM 15"
+          ]
+        },
+        {
+          "slug": "mb-fumigation",
+          "title": "MB (Methyl Bromide)",
+          "icon": "wind",
+          "text": "Treatment that completely fills an area with methyl bromide, a gaseous pesticide. Quarantine authorities around the world have stipulated that methyl bromide fumigation has to be carried out for packaging materials made out of wood or straw.",
+          "points": [
+            "Most widely used fumigant for quarantine purposes, and the preferred fumigant of most quarantine authorities around the world",
+            "Good penetrating ability and rapid action",
+            "High toxicity to a broad spectrum of insects and pests, and effective against all stages of insects, from egg to adult",
+            "Frequently used on timber, agricultural products, empty containers, foodstuffs and other agricultural produce",
+            "Aeration is quick and easy, so fumigant residue problems do not occur"
+          ]
+        },
+        {
+          "slug": "container-fumigation",
+          "title": "Container Fumigation",
+          "icon": "building",
+          "text": "The container the wooden packaging is placed in is completely filled with methyl bromide. After a 24-hour quarantine, the container is aerated and the wood or cargo is released.",
+          "points": [
+            "Import and export containers",
+            "24-hour quarantine, then aeration"
+          ]
+        },
+        {
+          "slug": "tent-fumigation",
+          "title": "Tent Fumigation",
+          "icon": "home",
+          "text": "The wooden packaging is covered with a specific type of tent, sealed to the ground with weight, and the tent is completely filled with methyl bromide. After a 24-hour quarantine, the tent is removed and the wood or cargo is released.",
+          "points": [
+            "Tarped fumigation on the ground",
+            "Sealed with weight along the edge",
+            "24-hour quarantine, then the tent comes off"
+          ]
+        },
+        {
+          "slug": "pallet-fumigation",
+          "title": "Pallet Fumigation and Timber Treatment",
+          "icon": "leaf",
+          "text": "Pallet fumigation and timber treatment, along with crate stamping and fumigating, for exports that need their packaging certified.",
+          "points": [
+            "Pallet fumigation",
+            "Timber treatment",
+            "Crate stamping and fumigating"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "quarantine-fumigation",
+      "title": "Quarantine Fumigation",
+      "icon": "shield",
+      "summary": "USDA and PPQ fumigation of cargo held by U.S. Customs, and fumigation for destination countries that require it.",
+      "intro": "Plant Protection and Quarantine (PPQ) is a program within the Animal and Plant Health Inspection Service (APHIS), an agency of the United States Department of Agriculture. The PPQ program works to safeguard agriculture and natural resources in the United States against the entry, establishment and spread of animal and plant pests and noxious weeds. All World Fumigation is a USDA certified company to treat quarantined commodities placed on hold by CBP, U.S. Customs.",
+      "image": "/brands/allworldfumigationcleaning/tent-fumigation",
+      "imageAlt": "Cargo sealed under a fumigation tarp on a concrete pad",
+      "services": [
+        {
+          "slug": "usda-quarantine-fumigation",
+          "title": "USDA Quarantine Fumigation",
+          "icon": "shield",
+          "text": "Quarantine fumigation of commodities entering the United States under USAID and APHIS jurisdiction, which requires fumigation of specific commodities to prevent the import of pests or disease.",
+          "points": [
+            "Commodities placed on hold by CBP, U.S. Customs",
+            "Carried out under USDA certification"
+          ]
+        },
+        {
+          "slug": "import-cargo",
+          "title": "Import Cargo",
+          "icon": "gauge",
+          "text": "Pest Plant Quarantine fumigation of import cargo. We are accredited to carry out fumigation of imports."
+        },
+        {
+          "slug": "export-cargo",
+          "title": "Export Cargo",
+          "icon": "chart",
+          "text": "Pest Plant Quarantine fumigation of export cargo, from exports that need certification of packaging through to tarped container fumigations."
+        },
+        {
+          "slug": "chilean-fumigation",
+          "title": "Chilean Fumigation",
+          "icon": "leaf",
+          "text": "The Chilean government requires certain cargos imported into Chilean ports to be fumigated. The Chilean Agricultural and Livestock Service (SAG) requires that any second-hand clothes, toys, vehicles or similar used merchandise must be fumigated.",
+          "points": [
+            "Second-hand clothes, toys and vehicles",
+            "Intended to keep out Halyomorpha halys, reported in China, Korea, Taiwan, Japan and the United States"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "aqis-cleaning",
+      "title": "AQIS Cleaning and Fumigation",
+      "icon": "droplets",
+      "summary": "Steam cleaning and fumigation of machinery bound for Australia, to the biosecurity conditions set for import.",
+      "intro": "To help protect Australia's unique environment from unwanted pests and diseases, the Department of Agriculture and Water Resources regulates products imported into Australia. The importation of some products is, by law, subject to certain biosecurity import conditions: some products are not permitted entry, while others are only allowed in once they meet import conditions that mitigate the biosecurity risk. All World Fumigation is an AUS-treat pre-border treatment provider and can handle every type of machinery.",
+      "image": "/brands/allworldfumigationcleaning/wheel-loader-cleaning",
+      "imageAlt": "A wheel loader standing on a lined wash pad after cleaning",
+      "services": [
+        {
+          "slug": "austreat",
+          "title": "AUS-treat (MB Fumigation)",
+          "icon": "shield",
+          "text": "All World Fumigation & Cleaning is an AUS-treat pre-border treatment provider for methyl bromide fumigation of goods headed into Australia."
+        },
+        {
+          "slug": "machinery-steam-cleaning",
+          "title": "Machinery Steam Cleaning",
+          "icon": "droplets",
+          "text": "We can handle every type of machinery and are more than capable of expediting the steam cleaning for AQIS as fast as possible.",
+          "points": [
+            "Excavators",
+            "Tractors",
+            "Any agriculture equipment"
+          ]
+        },
+        {
+          "slug": "aqis-soil-removal",
+          "title": "AQIS Soil Removal",
+          "icon": "waves",
+          "text": "Soil removal to AQIS requirements, so equipment clears the biosecurity conditions on the way into Australia."
+        },
+        {
+          "slug": "equipment-cleaning",
+          "title": "Equipment Cleaning",
+          "icon": "settings",
+          "text": "Equipment cleaning under Pest Plant Quarantine, carried out alongside the import and export cargo work."
+        }
+      ]
+    },
+    {
+      "slug": "cargo-cleaning",
+      "title": "Cargo and Container Cleaning",
+      "icon": "waves",
+      "summary": "Steam cleaning, pressure washing and soil removal for containers, equipment and miscellaneous cargo.",
+      "intro": "Among the services we provide are steam cleaning equipment and containers and miscellaneous cargo cleaning. We take soil off to USDA and AQIS requirements, and steam clean or pressure wash whatever the inspection calls for.",
+      "image": "/brands/allworldfumigationcleaning/dozer-cleaning",
+      "imageAlt": "A tracked dozer standing in the yard ready for cleaning",
+      "services": [
+        {
+          "slug": "usda-soil-removal",
+          "title": "USDA Soil Removal",
+          "icon": "waves",
+          "text": "Soil removal to USDA requirements on miscellaneous cargo, so it clears inspection on arrival."
+        },
+        {
+          "slug": "steam-cleaning",
+          "title": "Steam Cleaning and Pressure Washing",
+          "icon": "droplets",
+          "text": "Steam cleaning and pressure washing of equipment and containers, under the miscellaneous cargo cleaning we provide."
+        },
+        {
+          "slug": "container-cleaning",
+          "title": "Container Cleaning",
+          "icon": "building",
+          "text": "Cleaning of shipping containers, whether they are going out loaded or coming back empty."
+        }
+      ]
+    },
+    {
+      "slug": "pest-control",
+      "title": "General Pest Control and Warehouse Fumigation",
+      "icon": "wind",
+      "summary": "Fogging programs, facility spray applications and warehouse fumigation for space and bagged commodities.",
+      "intro": "Alongside the import and export work we run general pest control for warehouses and facilities. All services can be provided using aluminum phosphide, sulfuryl fluoride and methyl bromide.",
+      "services": [
+        {
+          "slug": "precision-fogging",
+          "title": "Precision Fogging Programs",
+          "icon": "wind",
+          "text": "Precision fogging programs for warehouses, set up around the space and what is stored in it."
+        },
+        {
+          "slug": "facility-spray",
+          "title": "Customized Facility Spray Applications",
+          "icon": "filter",
+          "text": "Spray applications worked out for the facility rather than off a standard sheet."
+        },
+        {
+          "slug": "empty-storage-spray",
+          "title": "Empty Storage Spray Applications",
+          "icon": "home",
+          "text": "Spray applications for empty storage, before the space is filled again."
+        },
+        {
+          "slug": "warehouse-fumigation",
+          "title": "Warehouse Fumigation",
+          "icon": "building",
+          "text": "Warehouse fogging and fumigating, covering the space itself and bagged commodities held in it.",
+          "points": [
+            "Space fumigation",
+            "Bagged commodities",
+            "Fogging"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "We do this everyday",
+    "text": [
+      "All World Fumigation & Cleaning LLC works out of La Porte, Texas, with over 15 years of experience. We fumigate on a large scale and a small scale, for imports and exports.",
+      "We are licensed, bonded and insured, and certified by the United States Department of Agriculture to treat imported commodities that have been quarantined by U.S. Customs. We are accredited to carry out fumigation of imports, and accredited to the ISPM 15 Wood Packaging Program standard for fumigation of export wood products.",
+      "From exports requiring certification of packaging to tarped container fumigations, we do it. All services can be provided using aluminum phosphide, sulfuryl fluoride and methyl bromide."
+    ],
+    "image": "/brands/allworldfumigationcleaning/equipment-wash-pad",
+    "imageAlt": "A combine harvester standing on the wash pad in the yard",
+    "values": [
+      {
+        "title": "Licensed, bonded and insured",
+        "text": "All World Fumigation is licensed, bonded and insured for the work we take on."
+      },
+      {
+        "title": "USDA certified",
+        "text": "Certified by the United States Department of Agriculture to treat quarantined commodities placed on hold by CBP, U.S. Customs."
+      },
+      {
+        "title": "Over 15 years of experience",
+        "text": "Over 15 years of fumigation and cleaning work for importers and exporters."
+      }
+    ]
+  },
+  "serviceArea": [
+    "La Porte",
+    "Houston",
+    "Galveston"
+  ],
+  "facts": [
+    {
+      "heading": "Certifications and accreditations",
+      "items": [
+        "Certified by the United States Department of Agriculture to treat imported commodities quarantined by U.S. Customs",
+        "USDA certified to treat quarantined commodities placed on hold by CBP, U.S. Customs",
+        "Accredited to carry out fumigation of imports",
+        "Accredited to the ISPM 15 Wood Packaging Program standard for fumigation of export wood products",
+        "AUS-treat (MB Fumigation) Australia pre-border treatment provider",
+        "Licensed, bonded and insured"
+      ]
+    },
+    {
+      "heading": "Fumigants we use",
+      "text": "All services can be provided using aluminum phosphide, sulfuryl fluoride and methyl bromide."
+    },
+    {
+      "heading": "Phone lines",
+      "items": [
+        "Office: (281) 361-8400",
+        "Houston: (281) 898-0936",
+        "Galveston: (281) 898-0825"
+      ]
+    },
+    {
+      "heading": "Email contacts",
+      "items": [
+        "Houston: mail@allworldfumigation.com",
+        "Galveston: Galveston.ops@allworldfumigation.com"
+      ]
+    },
+    {
+      "heading": "Fumigation scenarios",
+      "items": [
+        "ISPM MB stamping for wood packing material",
+        "Warehouse: space, bagged commodities and fogging",
+        "Container: import and export",
+        "Pest Plant Quarantine (PPQ): import cargo, export cargo and equipment cleaning",
+        "Miscellaneous cargo cleaning: USDA soil removal, AQIS soil removal, steam cleaning and pressure washing",
+        "General pest control: precision fogging programs, customized facility spray applications and empty storage spray applications"
+      ]
+    }
+  ]
+}

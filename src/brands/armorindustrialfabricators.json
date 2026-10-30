@@ -1,0 +1,365 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Armor Industrial Fabricators, Inc",
+  "shortName": "Armor",
+  "summary": "Metal and plastic fabrication, precision machining and finishing from a 20,000 square foot shop on Interstate 10 in Baytown, Texas.",
+  "phone": "(281) 573-2777",
+  "email": "info@armorfab.com",
+  "address": "11344 Interstate 10 Service Rd",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77523",
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ]
+  ],
+  "brand": {
+    "primary": "#262a2e",
+    "primaryDeep": "#121518",
+    "ink": "#17191c",
+    "muted": "#5b6168",
+    "surface": "#f2f3f4",
+    "line": "#dde0e3",
+    "heading": "'Roboto Condensed', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600;700&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/armorindustrialfabricators/logo.webp",
+    "logoMono": "/brands/armorindustrialfabricators/logo-mono.webp",
+    "logoWidth": 217,
+    "logoHeight": 74,
+    "logoRatio": 2.928,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.13,
+      0.097,
+      0.06,
+      0.424,
+      0.496,
+      0.577,
+      0.657,
+      0.739,
+      0.826,
+      0.915,
+      0.941
+    ]
+  },
+  "hero": {
+    "eyebrow": "Fabrication and machining in Baytown, Texas",
+    "title": "Need something cut, bent, sheared, drilled or welded?",
+    "titleAccent": "Look no further.",
+    "lead": "With in-house machining, sandblast and paint, load testing and even urethane mold pouring, we have the equipment and experience to get your job done.",
+    "image": "/brands/armorindustrialfabricators/hero",
+    "imageAlt": "A lineup of machined metal and plastic parts made at Armor's shop"
+  },
+  "groups": [
+    {
+      "slug": "fabrication",
+      "title": "Fabrication",
+      "icon": "wrench",
+      "summary": "Full-service fabrication in metal and plastic, from structural steel to storage racks.",
+      "intro": "If it's metal or plastic, we can make it. Our staff is equipped to take on nearly any project including structural steel, piping, guardrail, storage racks, fixtures, shims, and much more. Contact us today for quotes or more information.",
+      "image": "/brands/armorindustrialfabricators/fabrication",
+      "imageAlt": "Primed structural steel sections stacked outside the shop",
+      "services": [
+        {
+          "slug": "structural-steel-and-plate",
+          "title": "Structural Steel and Plate",
+          "icon": "building",
+          "text": "Structural work cut, fit and welded to your drawings, in the sizes and sections the job calls for.",
+          "points": [
+            "Structural steel",
+            "Piping",
+            "Guardrail",
+            "Storage racks",
+            "Fixtures and shims"
+          ]
+        },
+        {
+          "slug": "welding",
+          "title": "Welding",
+          "icon": "zap",
+          "text": "Stick, MIG and TIG welding by certified welders working to qualified procedures.",
+          "points": [
+            "Stick, MIG and TIG",
+            "Certified welders",
+            "Qualified procedures"
+          ]
+        },
+        {
+          "slug": "cutting-and-forming",
+          "title": "Cutting and Forming",
+          "icon": "settings",
+          "text": "Cutting, punching, shearing and bending handled in house, so a part does not have to leave the building between steps.",
+          "points": [
+            "Waterjet",
+            "Plasma",
+            "Punch",
+            "Shear",
+            "Press brake",
+            "Band saw",
+            "Drill press"
+          ]
+        },
+        {
+          "slug": "weld-procedures",
+          "title": "Weld Procedures",
+          "icon": "clipboard",
+          "text": "We maintain weld procedures for multiple AWS and ASME specifications, with several procedures going through additional DNV certification. Our staff will work with you to ensure that all procedures meet your specifications."
+        },
+        {
+          "slug": "plastic-fabrication",
+          "title": "Plastic Fabrication",
+          "icon": "shield",
+          "text": "Metal is not the only thing we build in. Plastic parts and assemblies are fabricated alongside the steel work."
+        }
+      ]
+    },
+    {
+      "slug": "machining",
+      "title": "Machining",
+      "icon": "settings",
+      "summary": "Turning, boring, milling, drilling and tapping, whether you have one part or thousands.",
+      "intro": "When it comes to turning, boring, milling, drilling and tapping - whether you have one part or thousands, our machining department is up to the challenge. We have experience working with a wide range of materials, anything from Teflon and Acrylic to Super Duplex Stainless Steel and Nickel alloys.",
+      "image": "/brands/armorindustrialfabricators/machining",
+      "imageAlt": "A machined stainless steel fitting with a threaded bore",
+      "services": [
+        {
+          "slug": "turning-and-boring",
+          "title": "Turning and Boring",
+          "icon": "gauge",
+          "text": "CNC and manual lathe work for round parts, bores and threads.",
+          "points": [
+            "Okuma Captain L370M",
+            "DMG-MORI NLX2500Y",
+            "Two manual lathes"
+          ]
+        },
+        {
+          "slug": "milling",
+          "title": "Milling",
+          "icon": "ruler",
+          "text": "Vertical machining centers with the table size to take on large parts as well as small ones.",
+          "points": [
+            "Haas VF9, 84 in x 40 in table, 36 in vertical",
+            "Haas VF4 with 4th axis rotary table",
+            "Haas VF3",
+            "Manual mill"
+          ]
+        },
+        {
+          "slug": "drilling-and-tapping",
+          "title": "Drilling and Tapping",
+          "icon": "circuit",
+          "text": "Holes drilled and threads tapped on the machines that cut the part, and on the manual presses for the simple jobs.",
+          "points": [
+            "CNC rigid tapping in lathes and mills",
+            "Three manual drill presses"
+          ]
+        },
+        {
+          "slug": "inspection",
+          "title": "Inspection",
+          "icon": "clipboard",
+          "text": "Parts are inspected to ensure compliance with customer specifications."
+        },
+        {
+          "slug": "industrial-3d-printing",
+          "title": "Industrial 3D Printing",
+          "icon": "compass",
+          "text": "Industrial 3D printing for projects large or small, easy or complicated, alongside the machine shop."
+        }
+      ]
+    },
+    {
+      "slug": "additional-services",
+      "title": "Additional Services",
+      "icon": "shield",
+      "summary": "Finishing, load testing, urethane molds and on-site installation under the same roof.",
+      "intro": "Here at Armor we believe in being a one-stop shop for our customers by providing additional services that help to improve lead time, quality and cost while simplifying your supply chain.",
+      "image": "/brands/armorindustrialfabricators/additional-services",
+      "imageAlt": "Painted yellow and black steel posts finished in the shop",
+      "services": [
+        {
+          "slug": "sandblast-and-paint",
+          "title": "Sandblast and Paint",
+          "icon": "droplets",
+          "text": "Blasting and coating with the capacity to take large parts, in the system and the color your specification calls for.",
+          "points": [
+            "Large part capacity",
+            "Epoxy",
+            "Urethane",
+            "Enamel",
+            "High-gloss clear coat",
+            "Custom colors"
+          ]
+        },
+        {
+          "slug": "load-testing",
+          "title": "Load Testing",
+          "icon": "gauge",
+          "text": "Lifting and structural items proof tested before they leave, using fixtures we build ourselves.",
+          "points": [
+            "Custom fixtures",
+            "Dead weights",
+            "Hydraulic jacks"
+          ]
+        },
+        {
+          "slug": "urethane-molds",
+          "title": "Urethane Molds",
+          "icon": "waves",
+          "text": "Urethane poured in house for rollers, pads and racks, so a part does not have to be sent out to a second vendor.",
+          "points": [
+            "Straight rollers",
+            "V-rollers",
+            "Pads",
+            "Tooling racks"
+          ]
+        },
+        {
+          "slug": "on-site-installation",
+          "title": "On-site Installation",
+          "icon": "home",
+          "text": "Crews go out to the job to weld, drill, anchor and paint what the shop built.",
+          "points": [
+            "MIG and stick welding",
+            "Arc-gouging",
+            "Drilling and anchoring",
+            "Brush and roller painting"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Knowledgeable, experienced.",
+    "text": [
+      "With decades of experience in fabrication and machining, there is not much that Armor's management team has not seen. Put our expertise to work for you to get your projects done right.",
+      "Armor's 20,000 square foot manufacturing facility sits along Interstate 10, just east of Houston, TX. This location provides unobstructed access to Houston highways and shipping ports.",
+      "Here at Armor we believe in being a one-stop shop for our customers by providing additional services that help to improve lead time, quality and cost while simplifying your supply chain."
+    ],
+    "image": "/brands/armorindustrialfabricators/about",
+    "imageAlt": "A machined stainless steel part with drilled and milled features",
+    "values": [
+      {
+        "title": "Certified welders",
+        "text": "Welding is done by certified welders working to qualified procedures."
+      },
+      {
+        "title": "Quality control",
+        "text": "Parts are inspected to ensure compliance with customer specifications."
+      },
+      {
+        "title": "One-stop shop",
+        "text": "Machining, sandblast and paint, load testing and urethane molds in the same building, to improve lead time, quality and cost."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Industries Served",
+      "items": [
+        "Manufacturers",
+        "Chemical plants and refineries",
+        "Oil and gas",
+        "Offshore and subsea",
+        "Instrumentation"
+      ]
+    },
+    {
+      "heading": "Codes and Certifications",
+      "text": "Armor maintains weld procedures for multiple AWS and ASME specifications, with several procedures going through additional DNV certification."
+    },
+    {
+      "heading": "Materials",
+      "text": "Metal or plastic, from Teflon and acrylic to super duplex stainless steel and nickel alloys."
+    },
+    {
+      "heading": "Fabrication Equipment",
+      "items": [
+        "Welders - stick, MIG and TIG",
+        "Waterjet",
+        "Plasma",
+        "Punch",
+        "Shear",
+        "Press brake",
+        "Band saw",
+        "Drill press"
+      ]
+    },
+    {
+      "heading": "Machining Equipment",
+      "items": [
+        "Okuma Captain L370M",
+        "DMG-MORI NLX2500Y",
+        "Two manual lathes",
+        "Haas VF9, 84 in x 40 in table, 36 in vertical",
+        "Haas VF4 with 4th axis rotary table",
+        "Haas VF3",
+        "Manual mill",
+        "Three manual drill presses"
+      ]
+    },
+    {
+      "heading": "The Shop",
+      "text": "A 20,000 square foot manufacturing facility along Interstate 10 just east of Houston, with unobstructed access to Houston highways and shipping ports."
+    },
+    {
+      "heading": "Fabrication Projects",
+      "items": [
+        "Flare stacks, flare piping, flare air rings and flare bases",
+        "Filter vessels and filter screens",
+        "Water separators",
+        "Hydrotest manifolds and shield walls",
+        "Generator skids",
+        "Subsea mudmats",
+        "UTAs, UTA carts and UTA side frames",
+        "Pull-in cans and pulling heads",
+        "Termination heads",
+        "Umbilical ramps",
+        "Mooring chain hang off beams",
+        "Load distribution beams and structural beams",
+        "Lifting padeyes",
+        "Reels, reel saddles, storage reels and transportation reels",
+        "Reel under rollers and deployment snails",
+        "Roller stands, laser guide roller stands and roller track",
+        "Steel coil racks, custom racks and portable bottle racks",
+        "Adjustable carts and rigging boxes",
+        "Portable buildings",
+        "Tube bending frames and custom saw bases",
+        "Custom roller chain",
+        "Square to round transitions",
+        "Stainless steel pipe",
+        "Custom PVC 8 in 3-way 90",
+        "Weld overlay"
+      ]
+    },
+    {
+      "heading": "Machined Parts",
+      "items": [
+        "Super duplex end fittings",
+        "Tapered guide pins",
+        "HDPE machined parts",
+        "UTA side frames"
+      ]
+    },
+    {
+      "heading": "Finishing and Testing Projects",
+      "items": [
+        "Painted air receivers",
+        "Load tests",
+        "Hang off beam load test fixtures",
+        "Flooring installation"
+      ]
+    },
+    {
+      "heading": "Fax",
+      "text": "(281) 573-2278"
+    }
+  ]
+}
