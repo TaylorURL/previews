@@ -1,0 +1,352 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "reserve",
+  "name": "Bayland Marina",
+  "shortName": "Bayland Marina",
+  "summary": "Slip rentals, transient dockage and a fuel dock on the Houston Ship Channel at Baytown, just inside a marked channel past marker 100.",
+  "phone": "(281) 422-8900",
+  "email": "marina@baylandmarina.com",
+  "address": "2651 TX-146",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77520",
+  "rating": 4.3,
+  "reviewCount": 114,
+  "hours": [
+    [
+      "Monday",
+      "Closed"
+    ],
+    [
+      "Tue – Sun",
+      "8 AM – 5 PM"
+    ]
+  ],
+  "brand": {
+    "primary": "#143453",
+    "primaryDeep": "#0b2238",
+    "accent": "#c98a2b",
+    "ink": "#0e1b2a",
+    "muted": "#4a5c6e",
+    "surface": "#eef3f8",
+    "line": "#d7e1ea",
+    "heading": "'Source Serif 4', Georgia, serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/baylandmarina/logo.webp",
+    "logoMono": "/brands/baylandmarina/logo-mono.webp",
+    "logoWidth": 180,
+    "logoHeight": 48,
+    "logoRatio": 3.746,
+    "logoGround": "#143453",
+    "logoReads": [
+      1.0,
+      0.999,
+      0.977,
+      0.86,
+      0.739,
+      0.619,
+      0.504,
+      0.391,
+      0.008,
+      0.014,
+      0.022
+    ]
+  },
+  "hero": {
+    "eyebrow": "Slip rentals and transient dockage in Baytown",
+    "title": "Your cruising destination",
+    "titleAccent": "on the Houston Ship Channel.",
+    "lead": "Bayland Marina is back in service. Renovations to the docks and the marina are finished, and we are now accepting lease applications for slips from 35 to 55 feet."
+  },
+  "groups": [
+    {
+      "slug": "slip-rentals",
+      "title": "Slip Rentals",
+      "icon": "waves",
+      "summary": "Slips from 35 to 55 feet, month to month or on a three-month lease.",
+      "intro": "Slips run from 35 to 55 feet, and we are now accepting lease applications. Please call for availability, and larger vessels should make advanced reservations. Water is furnished and electricity is metered at commercial rates.",
+      "image": "/brands/baylandmarina/slips",
+      "imageAlt": "New floating docks with power pedestals, looking back toward the marina buildings",
+      "services": [
+        {
+          "slug": "month-to-month-slips",
+          "title": "Month to Month Slips",
+          "icon": "waves",
+          "text": "Monthly rates run from $260 for a 35-foot slip to $390 for a 55-foot slip, effective May 2020.",
+          "points": [
+            "35′ $260, 40′ $300, 45′ $335",
+            "50′ $360, 55′ $390",
+            "Please call for availability"
+          ]
+        },
+        {
+          "slug": "lease-slips",
+          "title": "Three Month and Longer Leases",
+          "icon": "clipboard",
+          "text": "A three-month or longer lease takes $10 off the monthly rate at every slip length.",
+          "points": [
+            "35′ $250, 40′ $290, 45′ $325",
+            "50′ $350, 55′ $380",
+            "We are now accepting lease applications"
+          ]
+        },
+        {
+          "slug": "deposit-and-insurance",
+          "title": "Deposit and Insurance",
+          "icon": "shield",
+          "text": "A deposit of one month's rent plus $35.00 is due with the lease, and $300,000 liability insurance is required to rent a slip.",
+          "points": [
+            "Deposit: one month rent plus $35.00",
+            "$300,000 liability insurance required",
+            "Electricity metered at commercial rates, water furnished"
+          ]
+        },
+        {
+          "slug": "larger-vessels",
+          "title": "Larger Vessels",
+          "icon": "building",
+          "text": "Vessels larger than 55 feet must make advanced reservations. Call the marina manager to talk through what is open."
+        }
+      ]
+    },
+    {
+      "slug": "transient-dockage",
+      "title": "Transient Dockage",
+      "icon": "car",
+      "summary": "Transients welcome at $2.00 per boat foot per night.",
+      "intro": "We welcome transients. The nightly rate is $2.00 per boat foot, and the marina sits about 12 miles from the Kemah Boardwalk, just inside a marked channel off the Houston Ship Channel. Call ahead and the harbor master will tell you where to tie up.",
+      "services": [
+        {
+          "slug": "nightly-dockage",
+          "title": "Nightly Dockage",
+          "icon": "car",
+          "text": "Transient boats are charged $2.00 per boat foot per day, with the same water and metered power as a leased slip.",
+          "points": [
+            "$2.00 per boat foot per night",
+            "Water furnished",
+            "Electricity metered at commercial rates"
+          ]
+        },
+        {
+          "slug": "coming-in-by-water",
+          "title": "Coming In By Water",
+          "icon": "compass",
+          "text": "Enter the Houston Ship Channel before HSC marker 89 and follow on toward marker 100. The entrance to the marina is a marked channel just past marker 100, through a high range and a low range marker.",
+          "points": [
+            "Past the Bayport channel it is open water toward Morgans Point",
+            "The water can be skinny at low tides",
+            "There is a shallow spot at the marina entrance, so swing wide before heading into the docks"
+          ]
+        },
+        {
+          "slug": "advance-reservations",
+          "title": "Advance Reservations",
+          "icon": "clipboard",
+          "text": "Larger vessels must make advanced reservations. Call ahead and we will confirm what is open before you make the run."
+        }
+      ]
+    },
+    {
+      "slug": "fuel-dock-and-store",
+      "title": "Fuel Dock and Marina Store",
+      "icon": "gauge",
+      "summary": "A fuel dock open during regular business hours and a renovated marina store.",
+      "intro": "The fuel dock is open during regular business hours, and the marina store has been renovated along with the rest of the marina. The office is on site, so there is someone to talk to when you come in.",
+      "image": "/brands/baylandmarina/store",
+      "imageAlt": "The marina store and office buildings seen across the water from the docks",
+      "services": [
+        {
+          "slug": "fuel-dock",
+          "title": "Fuel Dock",
+          "icon": "gauge",
+          "text": "The fuel dock is open during regular business hours.",
+          "points": [
+            "Open during regular business hours"
+          ]
+        },
+        {
+          "slug": "marina-store",
+          "title": "Marina Store",
+          "icon": "home",
+          "text": "The marina store was rebuilt as part of the renovation and reopened with the docks."
+        },
+        {
+          "slug": "marina-office",
+          "title": "Marina Office",
+          "icon": "clipboard",
+          "text": "The marina office keeps regular hours for leases, questions and anything a tenant needs on the dock.",
+          "points": [
+            "Open 8 AM to 5 PM, Tuesday through Sunday"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "docks-and-security",
+      "title": "Docks and Security",
+      "icon": "shield",
+      "summary": "New docks and storm surge security platforms, with a harbormaster on site.",
+      "intro": "Bayland Marina has been restored beyond her former glory: new docks, storm surge security platforms and a renovated marina store. The harbormaster keeps the rules that make the marina safe for everyone tied up here.",
+      "services": [
+        {
+          "slug": "new-docks",
+          "title": "New Docks",
+          "icon": "waves",
+          "text": "Renovations to the docks and the marina are now finished, and the marina is back in service."
+        },
+        {
+          "slug": "storm-surge-platforms",
+          "title": "Storm Surge Security Platforms",
+          "icon": "shield",
+          "text": "The renovation added storm surge security platforms to the marina."
+        },
+        {
+          "slug": "harbormaster",
+          "title": "Harbormaster On Site",
+          "icon": "clipboard",
+          "text": "Damage to marina property and any accident at the marina is reported straight to the harbormaster, who also gives permission for anything stored outside a vessel.",
+          "points": [
+            "Accidents reported to the harbormaster, or a designated representative within ten days",
+            "No storage of cargo, property or equipment without the harbormaster's permission"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Transients welcome",
+    "title": "Tie up for the night on your way through the ship channel.",
+    "text": "Transient boats are welcome at the nightly rate, about 12 miles from the Kemah Boardwalk and just past HSC marker 100.",
+    "price": "$2.00",
+    "priceNote": "per boat foot, per night"
+  },
+  "about": {
+    "eyebrow": "About the marina",
+    "title": "Bayland Marina is back in service.",
+    "text": [
+      "Hello fellow boaters. Bayland Marina is back in service. Renovations to the docks and the marina are now finished, and Bayland Marina has been restored beyond her former glory: new docks, storm surge security platforms and a renovated marina store.",
+      "We are now accepting lease applications for slips from 35 to 55 feet, and we welcome transients at $2.00 per boat foot per night. If you have any questions, please do not hesitate to contact the marina manager.",
+      "Bob Hartquist is the harbor master, and Tim and Tom Hazelwood own the marina. Please feel free to navigate our website and forward this site to fellow boaters."
+    ],
+    "image": "/brands/baylandmarina/office",
+    "imageAlt": "The marina office building at the head of the walkway down to the docks",
+    "values": [
+      {
+        "title": "New docks",
+        "text": "The docks and the marina have been renovated and are back in service."
+      },
+      {
+        "title": "Storm surge platforms",
+        "text": "Storm surge security platforms were built in as part of the renovation."
+      },
+      {
+        "title": "A safe marina",
+        "text": "Rules and regulations are kept so everyone has a safe and enjoyable time at the marina."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What does a slip cost?",
+      "a": "Rates effective May 2020: 35′ $260, 40′ $300, 45′ $335, 50′ $360 and 55′ $390 a month, and $10 a month less on each at a three-month or longer lease. Please call for availability."
+    },
+    {
+      "q": "Do you take transient boats?",
+      "a": "Yes. We welcome transients at $2.00 per boat foot per night. Larger vessels must make advanced reservations."
+    },
+    {
+      "q": "What is needed to rent a slip?",
+      "a": "A deposit of one month's rent plus $35.00, and $300,000 liability insurance. Water is furnished and electricity is metered at commercial rates."
+    },
+    {
+      "q": "Is there fuel at the marina?",
+      "a": "Yes. The fuel dock is open during regular business hours."
+    },
+    {
+      "q": "How do I find the entrance from the water?",
+      "a": "Enter the Houston Ship Channel before HSC marker 89 and follow toward marker 100. The entrance is a marked channel just past marker 100, through a high range and a low range marker. The water can be skinny at low tides and there is a shallow spot at the entrance, so swing wide before you head into the docks."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Who to call",
+      "items": [
+        "Harbor Master: Bob Hartquist, cell (832) 414-8413, bob@baylandmarina.com",
+        "Owner: Tim Hazelwood, cell (281) 413-3700, tim@baylandmarina.com or tim1evergreen@aol.com",
+        "Owner: Tom Hazelwood, cell (281) 413-3666",
+        "Marina: (281) 422-8900, marina@baylandmarina.com"
+      ]
+    },
+    {
+      "heading": "Slip rental rates, effective May 2020",
+      "items": [
+        "35′: $260 month to month, $250 on a 3+ month lease",
+        "40′: $300 month to month, $290 on a 3+ month lease",
+        "45′: $335 month to month, $325 on a 3+ month lease",
+        "50′: $360 month to month, $350 on a 3+ month lease",
+        "55′: $390 month to month, $380 on a 3+ month lease",
+        "Transient daily rate: $2.00 per boat foot per day"
+      ]
+    },
+    {
+      "heading": "Renting a slip",
+      "items": [
+        "Slips from 35′ to 55′ — please call for availability",
+        "Larger vessels must make advanced reservations",
+        "Deposit: one month rent plus $35.00",
+        "Electricity metered at commercial rates",
+        "Water is furnished",
+        "$300,000 liability insurance required to rent a slip"
+      ]
+    },
+    {
+      "heading": "Hours of operation",
+      "items": [
+        "Fuel dock is open during regular business hours",
+        "Marina office: 8 AM to 5 PM, Tuesday through Sunday",
+        "Closed Monday"
+      ]
+    },
+    {
+      "heading": "Coming in by water",
+      "items": [
+        "Once in the Upper Galveston Bay and past the Bayport channel it is wide open water for navigating toward Morgans Point",
+        "Enter the Houston Ship Channel before HSC marker 89 and follow on toward marker 100",
+        "The entrance is a marked channel just past HSC marker 100, through a high range and a low range marker",
+        "The water can be skinny at low tides and there is a shallow spot at the marina entrance, so swing wide before you head into the docks",
+        "The marina is about 12 miles from the Kemah Boardwalk"
+      ]
+    },
+    {
+      "heading": "Driving here",
+      "items": [
+        "From Houston near I-45: I-45 South to I-610 East toward TX-225/Pasadena, exit TX-225 East/La Porte, go left at the fork and follow signs for TX-146 North/Baytown, over the Fred Hartman Bridge, then take the first exit for TX-146 Business North",
+        "From Houston near I-10: I-10 East to TX-330 Spur South/Baytown, then TX-146 South, exit Missouri St/Waterfront District, merge onto Robert C. Lanier Dr (feeder road) and continue onto TX-146 Business North",
+        "From Kemah, La Porte and Clear Lake: TX-146 North over the Fred Hartman Bridge, first exit for TX-146 Business North",
+        "From Beaumont: I-10 West to TX-99 Grand Parkway South (tolls may apply), TX-99 South to TX-146 Business, left at the stop sign onto TX-146 Business South, left at the Missouri signal light into the marina entrance",
+        "At the first signal light the marina entrance is on your right — turn in and follow down toward the docks"
+      ]
+    },
+    {
+      "heading": "Rules and regulations",
+      "items": [
+        "So that everyone has a safe and enjoyable time at Bayland Marina, boaters and their companions are asked to adhere to the marina's rules and regulations",
+        "To ensure safety, certain rules and regulations must be observed and enforced; violations may be cause for eviction and/or other appropriate legal action",
+        "Anyone causing damage to or destroying public property of any kind, including buildings, fixtures or appurtenances, whether through violation of the rules or through any act or omission, is fully liable to the City, and the damage must be reported immediately to the harbormaster",
+        "Anyone involved in an accident at the marina or in the vicinity resulting in personal injury or damage to vessels, docks or aids to navigation must report it to the harbormaster, or a designated representative, within ten days",
+        "An accident report must include, but is not limited to, the names and addresses of all principals and witnesses, if known, and a statement of the facts",
+        "Commercial vessels operating from the municipal marina that are involved in any accident resulting in personal injury or damage to other vessels, docks or aids to navigation must report it immediately to the harbormaster",
+        "Unless a lease or other contractual agreement provides otherwise, no area of the marina, including buildings whether privately or publicly owned, may be used to store cargo or any other property or equipment without the harbormaster's permission",
+        "If an area is used for storage without that permission, the harbormaster may order the cargo or property removed, or have it removed and stored at the expense of the owner or consignee",
+        "The rules and regulations for craft owners and lessees are set out in sections covering definitions, compliance with the rules, insurance certificates, responsibility for damages, non-vessel storage of equipment and hours of operation",
+        "The insurance certificates section is pending changes"
+      ]
+    },
+    {
+      "heading": "Find us on Facebook",
+      "text": "Like us at facebook.com/baylandmarina, and turn on Get Notifications under the Liked button to see marina news as it is posted."
+    }
+  ]
+}
