@@ -758,13 +758,17 @@ function Services({ b, groups, heading = true }) {
 function Process({ b }) {
   const steps = list(b.process?.steps).slice(0, 5);
   if (steps.length < 2) return null;
+  // A line short enough to set as display type is the heading; a longer one is a paragraph, so it reads under the title.
+  const line = b.process.text || '';
+  const short = line.length <= 100;
   return (
     <section className={`${pad} bg-surface`}>
       <div className={wrap}>
         <div className="mb-12 max-w-3xl lg:mb-14">
           {/* Without a line of its own, the title is the heading, so the section never stands on a label alone. */}
-          <Eyebrow>{(b.process.text && b.process.title) || 'How we work'}</Eyebrow>
-          <h2 className={h2}>{b.process.text || b.process.title || `How ${b.shortName} works`}</h2>
+          <Eyebrow>{(line && short && b.process.title) || 'How we work'}</Eyebrow>
+          <h2 className={h2}>{(short && line) || b.process.title || `How ${b.shortName} works`}</h2>
+          {line && !short && <p className={`mt-5 ${lead}`}>{line}</p>}
         </div>
         {/* On desktop the steps share the row's tracks, so a title that wraps lowers every step's text, not its own alone. */}
         <ol className={`grid gap-0 lg:gap-x-8 ${STEPS[steps.length]}`}>
@@ -1499,9 +1503,11 @@ export default function Professional({ b, path = '' }) {
   else if (path === 'resources' && hasResources) page = <ResourcesPage {...props} />;
   else if (path === 'contact') page = <ContactPage {...props} />;
 
+  // Heading type is tracked tight, which also narrows the word space; a face
+  // with a slim space (Archivo) would run 'Tried in front of juries' together.
   return (
     <div
-      className="min-w-0 overflow-x-clip bg-white font-body text-base text-ink antialiased"
+      className="min-w-0 overflow-x-clip bg-white font-body text-base text-ink antialiased [&_.font-heading]:[word-spacing:0.08em]"
       style={{
         '--muted': 'color-mix(in srgb, var(--ink) 70%, #fff)',
         '--cream': 'var(--surface)',

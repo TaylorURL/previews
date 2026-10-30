@@ -1,0 +1,380 @@
+{
+  "template": "professional",
+  "preview": true,
+  "kind": "chiropractic",
+  "name": "Houston Chiropractic & Therapy",
+  "shortName": "Houston Chiropractic & Therapy",
+  "talk": "Dr. Le",
+  "tagline": "Chiropractic and therapy in Baytown, by appointment",
+  "phone": "(832) 779-2249",
+  "email": "office@houstonchiropracticandtherapy.com",
+  "address": "1300 Rollingbrook Drive, Suite 401",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77521",
+  "license": "Dr. Jenny Q. Le, DC, CAc is licensed by the State of Texas to practice chiropractic and is board certified to practice acupuncture.",
+  "hours": [
+    [
+      "Tue & Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Sat & Sun",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Request an Appointment",
+    "text": "The clinic is by appointment only and does not accept walk-ins, so call, text or email the office and we will find you a time."
+  },
+  "brand": {
+    "primary": "#13504d",
+    "primaryDeep": "#0c3734",
+    "accent": "#a98b5d",
+    "ink": "#17211f",
+    "muted": "#556360",
+    "surface": "#f5f4f1",
+    "cream": "#eae7e0",
+    "line": "#ddd9d1",
+    "heading": "'Playfair Display', Georgia, serif",
+    "body": "'Lato', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@400;700&display=swap",
+    "logo": "/brands/houstonchiropractictherapy/logo.webp",
+    "logoMono": "/brands/houstonchiropractictherapy/logo-mono.webp",
+    "logoWidth": 84,
+    "logoHeight": 84,
+    "logoRatio": 1.006,
+    "logoGround": "#000000",
+    "logoReads": [
+      1.0,
+      0.9,
+      0.801,
+      0.704,
+      0.603,
+      0.5,
+      0.404,
+      0.307,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Chiropractic clinic on Rollingbrook Drive",
+    "title": "Care that helps you move and feel your best.",
+    "lead": "Dr. Jenny Q. Le, DC, CAc analyses your body and creates a custom pain relief and rehabilitation plan, using natural, non-invasive care.",
+    "image": "/brands/houstonchiropractictherapy/hero",
+    "imageAlt": "Dr. Jenny Q. Le, DC, CAc, chiropractor at Houston Chiropractic & Therapy",
+    "points": [
+      "Chiropractic, acupuncture and soft tissue therapy",
+      "Webster, Activator and acupuncture certified",
+      "By appointment only, no walk-ins"
+    ]
+  },
+  "overview": {
+    "title": "Adjustments, soft tissue work and rehabilitation in one clinic.",
+    "text": "We offer a range of services, including chiropractic adjustments, spinal decompression therapy, and rehabilitation exercises, to help our patients achieve optimal health. Pick a service to see what it involves, or call the office and talk it through with Dr. Le."
+  },
+  "services": [
+    {
+      "slug": "chiropractic-adjustments",
+      "title": "Chiropractic Adjustments",
+      "icon": "bone",
+      "summary": "Short, quick force applied to the joints.",
+      "text": "A chiropractic adjustment occurs when a short, quick force is applied to the joints in order to correct a misalignment, increase range of motion, or release pressure on nerves.",
+      "lead": "A chiropractic adjustment occurs when a short, quick force is applied to the joints in order to correct a misalignment, increase range of motion, or release pressure on nerves.",
+      "covers": [
+        {
+          "title": "Different methods",
+          "text": "Chiropractors use different methods to perform adjustments. Some use their hands to \"pop\" the joints back into place, others use a drop table or activator, and many rely on a more gentle stretching to ease the joints to their proper position."
+        },
+        {
+          "title": "The same goal",
+          "text": "Regardless of the specific spinal manipulation method used, the goal of an adjustment is to restore proper alignment to the joints and allow the body to heal naturally."
+        },
+        {
+          "title": "Activator certified",
+          "text": "Dr. Le is Activator certified, so the instrument-assisted technique is available when a gentler adjustment suits you better."
+        }
+      ]
+    },
+    {
+      "slug": "myofascial-release",
+      "title": "Myofascial Release Therapy",
+      "icon": "handshake",
+      "summary": "Manual therapy for acute and chronic pain.",
+      "text": "Manual therapy that uses skilled hand and passive movements to mobilize and manipulate soft tissue, improve range of motion, reduce swelling and inflammation, and promote healing and relaxation.",
+      "lead": "For many individuals, pain can be debilitating and detrimental to a person's quality of life. Chiropractors, as well as many physical therapists and licensed massage therapists, use manual therapy to help target acute and chronic types of pain.",
+      "covers": [
+        {
+          "title": "What the technique does",
+          "text": "Skilled hand and passive movements help mobilize and manipulate soft tissue and improve range of motion."
+        },
+        {
+          "title": "Swelling and inflammation",
+          "text": "The work reduces swelling and inflammation, as well as promoting healing and relaxation."
+        },
+        {
+          "title": "Trained in soft tissue therapy",
+          "text": "Dr. Le has taken courses in FAKTR and soft tissue therapy."
+        }
+      ]
+    },
+    {
+      "slug": "cupping",
+      "title": "Cupping",
+      "icon": "waves",
+      "summary": "Suction that increases blood flow.",
+      "text": "Cupping therapy is a healing method that utilizes suction to pull on your skin and increase blood flow to the affected areas.",
+      "lead": "Cupping therapy is a healing method that utilizes suction to pull on your skin and increase blood flow to the affected areas.",
+      "covers": [
+        {
+          "title": "What it helps",
+          "text": "It aids in reducing pain and muscle tightness, and helps to improve circulation and range of motion."
+        },
+        {
+          "title": "Static or dynamic",
+          "text": "Cupping can be used static or dynamically, and can be coupled with exercise to help with muscle recovery."
+        }
+      ]
+    },
+    {
+      "slug": "dry-needling-acupuncture",
+      "title": "Dry Needling & Acupuncture",
+      "icon": "pen-line",
+      "summary": "Needling for trigger points and tension.",
+      "text": "Dry needling uses a thin needle to stimulate underlying trigger points, and acupuncture uses needles to open up your Chi, both to relieve pain and muscle tension.",
+      "lead": "Dry needling is a technique utilizing a thin needle to penetrate the skin and stimulate underlying trigger points to help release and relieve pain and muscle tension.",
+      "covers": [
+        {
+          "title": "Acupuncture",
+          "text": "An Eastern medicine technique that uses needles to open up your Chi or healing energy, which may affect your nervous system."
+        },
+        {
+          "title": "Natural painkillers",
+          "text": "It also helps to stimulate a release of endorphins, which are your brain's natural painkillers, to help relieve pain and muscle tension."
+        },
+        {
+          "title": "Board certified",
+          "text": "Dr. Le is board certified by the State of Texas to practice acupuncture."
+        }
+      ]
+    },
+    {
+      "slug": "electrical-muscle-stimulation",
+      "title": "Electrical Muscle Stimulation",
+      "icon": "stethoscope",
+      "summary": "Currents that ease pain and spasm.",
+      "text": "Electrical muscle stimulation sends currents through the skin and into the muscles to reduce pain, stimulate tissue healing, and help to strengthen muscles.",
+      "lead": "Electrical muscle stimulation sends currents through the skin and into the muscles to reduce pain, stimulate tissue healing, and help to strengthen muscles.",
+      "covers": [
+        {
+          "title": "Pain and spasms",
+          "text": "It can fatigue muscles in order to decrease muscle pain and spasms."
+        },
+        {
+          "title": "Weak muscles",
+          "text": "It can also improve muscles that are weak and are not functioning properly."
+        }
+      ]
+    },
+    {
+      "slug": "prenatal-postnatal-care",
+      "title": "Prenatal & Postnatal Care",
+      "icon": "heart",
+      "summary": "Webster certified care through pregnancy.",
+      "text": "Chiropractic care during pregnancy may decrease labor time, aid in a healthier pregnancy, relieve back and neck pain, and help decrease pain due to carpal tunnel, sciatica and pubic pain.",
+      "lead": "During pregnancy, there are several changes that occur in preparation for creating the environment for the developing baby.",
+      "covers": [
+        {
+          "title": "What studies have shown",
+          "text": "Studies have shown that chiropractic care during pregnancy may decrease labor time, aid in a healthier pregnancy, relieve back and neck pain, and help decrease pain due to carpal tunnel, sciatica, pubic pain and more."
+        },
+        {
+          "title": "The Webster Technique",
+          "text": "Dr. Le is certified in the Webster Technique, so she is specifically trained to aid in balancing the body's biomechanics and the neurology that supplies the pelvic structure, the ligaments that support the uterus, and the muscles that help provide stability."
+        },
+        {
+          "title": "After birth",
+          "text": "Often after birth, mothers may have discomfort with walking, sleeping and nursing. Regular chiropractic care can help restore and mobilize the mother's body and aid in returning to her normal alignment and biomechanics."
+        }
+      ]
+    },
+    {
+      "slug": "pediatric-chiropractic",
+      "title": "Pediatric Chiropractic",
+      "icon": "users",
+      "summary": "Gentle care for babies and children.",
+      "text": "Babies and children can benefit from regular chiropractic care and adjustments, which can help improve their sleep and immune function and decrease pain caused by misalignments.",
+      "lead": "Newborns are often pulled, twisted or torqued, causing misalignments of the baby's spine, and it can often be traumatic to their bodies.",
+      "covers": [
+        {
+          "title": "What it can help",
+          "text": "Regular care and adjustments can help improve sleep and immune function, and decrease any pain caused by misalignments."
+        },
+        {
+          "title": "Growing and playing",
+          "text": "It can also ease pain caused by growing pains, daily activities and sports."
+        }
+      ]
+    },
+    {
+      "slug": "compression-recovery-boots",
+      "title": "Compression Recovery Boots",
+      "icon": "footprints",
+      "summary": "Fifteen minutes in office for recovery.",
+      "text": "Compression recovery boots aid in reducing pain, decreasing muscle fatigue, and helping circulation and fluid retention. You can use them in office in as little as 15 minutes.",
+      "lead": "Many athletes swear by compression recovery boots and their aid in reducing pain, decreasing muscle fatigue, and helping circulation and fluid retention.",
+      "covers": [
+        {
+          "title": "In as little as 15 minutes",
+          "text": "At Houston Chiropractic & Therapy you can use the boots in office in as little as 15 minutes."
+        },
+        {
+          "title": "What they do",
+          "text": "They help cut down on recovery time, reduce soreness, decrease lactic acid, and reduce muscle tension."
+        }
+      ]
+    },
+    {
+      "slug": "rehabilitative-exercises",
+      "title": "Rehabilitative Exercises",
+      "icon": "clipboard-check",
+      "summary": "Back to full function after injury.",
+      "text": "Rehabilitation exercises help you return to full function following injury by re-building muscle strength, endurance and power, and improving overall flexibility and mobility.",
+      "lead": "Rehabilitation exercises aim to help you return to full function following injury through re-building muscle strength, endurance and power, and improving overall flexibility and mobility.",
+      "covers": [
+        {
+          "title": "Pain and inflammation",
+          "text": "The work provides pain relief and reduces inflammation."
+        },
+        {
+          "title": "How you feel",
+          "text": "It improves mood and reduces anxiety and fatigue."
+        },
+        {
+          "title": "Balance and sleep",
+          "text": "It assists with balance, prevents falls and improves sleep quality."
+        }
+      ]
+    },
+    {
+      "slug": "kinesiology-taping",
+      "title": "Kinesiology Taping",
+      "icon": "shield-check",
+      "summary": "Support for joints and muscles.",
+      "text": "Kinesiology taping is a taping method used to help enhance performance, re-educate muscles, give extra support to joints and muscles that need it, and help treat injuries.",
+      "lead": "Kinesiology taping is a taping method used to help enhance performance, re-educate muscles, give extra support to any joints and muscles that may need it, and help treat injuries."
+    }
+  ],
+  "affiliations": {
+    "title": "Credentials and certifications",
+    "items": [
+      "Doctor of Chiropractic, Texas Chiropractic College",
+      "Licensed by the State of Texas to practice chiropractic",
+      "Board certified to practice acupuncture",
+      "Webster Technique certified",
+      "Activator certified",
+      "FAKTR and soft tissue therapy courses",
+      "BS in Biology, University of Houston"
+    ]
+  },
+  "about": {
+    "title": "A Baytown practice built on natural, non-invasive care.",
+    "text": [
+      "At Houston Chiropractic & Therapy, we are dedicated to providing patients with the highest quality of care and assisting them to achieve an active, pain-free and healthy lifestyle. Our goal is to help you move and feel your best.",
+      "Dr. Jenny Q. Le, DC, CAc is a skilled chiropractor with a passion for helping her patients achieve their health and wellness goals through natural, non-invasive care. She was raised in Port Arthur, Texas, graduated from Nederland High School, and later moved to Houston to attend the University of Houston. She graduated with a Bachelor of Science in Biology, and went on to obtain her Doctorate in Chiropractic from Texas Chiropractic College in Pasadena, Texas.",
+      "Dr. Le completed her internship under various chiropractors at the Moody Health Center in Pasadena, Texas, in both the inpatient and outpatient clinics, completed her clinical rotations in neurology and radiology, and completed several externships across the Houston area, specializing in personal injury and wellness. She has taken courses in FAKTR and soft tissue therapy, and is Acupuncture, Webster and Activator certified.",
+      "In her downtime, she finds herself spending time with her family, husband and dog. She enjoys the arts, traveling, and trying out new restaurants."
+    ],
+    "values": [
+      {
+        "title": "The importance of your health",
+        "text": "Dr. Le is committed to putting your specific needs first. We are proud to provide a high quality level of customer service, chiropractic experience, and commitment to health and wellness to all our patients."
+      },
+      {
+        "title": "Experienced knowledge",
+        "text": "With years of experience, Dr. Le is trained to analyze your body and creates a custom pain relief and rehabilitation plan to benefit your health."
+      },
+      {
+        "title": "Chiropractors who care",
+        "text": "Not only will our team treat your existing conditions, we strive to prevent pain and illness from reoccurring, and to help you improve your quality of life."
+      },
+      {
+        "title": "Patient education",
+        "text": "We believe in the importance of patient education, and we understand that educating you on chiropractic care helps you heal quickly. That is why we provide resources and information to help you better understand your health and the benefits of chiropractic care."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "By Appointment Only",
+      "text": "We love our patients, but Houston Chiropractic & Therapy is by appointment only and does not accept walk-ins. Text or email to schedule an appointment."
+    },
+    {
+      "heading": "Book Online",
+      "text": "Appointments can be booked online at houstonchiropracticandtherapy.janeapp.com."
+    },
+    {
+      "heading": "Reach the Office",
+      "items": [
+        "Call or text: (832) 779-2249",
+        "Fax: (844) 444-1265",
+        "Email: office@houstonchiropracticandtherapy.com"
+      ]
+    },
+    {
+      "heading": "Find Us Online",
+      "items": [
+        "Facebook: Houston Chiropractic & Therapy",
+        "Instagram: @houstonchiropracticandtherapy",
+        "Yelp: Houston Chiropractic and Therapy, Baytown"
+      ]
+    },
+    {
+      "heading": "Your First Visit",
+      "text": "If you are new to the clinic, book an Initial New Patient visit. It includes a thorough consultation, a detailed history, an examination and therapy, with treatment based on your needs, assuming no further tests or imaging are required. Choose the New Patient option again if you have not been in for a year or more, and please check you are booking the correct patient and the correct visit type, as incorrect visit bookings will be invoiced as necessary."
+    },
+    {
+      "heading": "Appointments You Can Book",
+      "items": [
+        "New Patient – Initial Chiropractic Visit",
+        "New Patient – Initial Chiropractic Visit (Pediatric: Ages 0–17)",
+        "New Patient – Initial Acupuncture Visit",
+        "Established Chiropractic Visit",
+        "Established Chiropractic Visit (Ages 0–17)",
+        "Acupuncture Only",
+        "Adjustment Only",
+        "Cupping Only",
+        "Dry Needling Only",
+        "Taping Only",
+        "Compression Boots Only"
+      ]
+    },
+    {
+      "heading": "Children's Appointments",
+      "text": "Pediatric visits are for ages 0 to 17, and the patient must be accompanied by a parent or guardian."
+    },
+    {
+      "heading": "Insurance",
+      "text": "We offer out-of-network benefits, which means we are happy to send you an itemized superbill that you can submit to your insurance company, and they may reimburse you. We do not accept Medicare or Medicaid."
+    },
+    {
+      "heading": "Payment",
+      "text": "Payment is not required at the time of booking, but a card on file is required to book, and payment is collected at the time of your visit. All refunds incur a 4% credit card convenience fee, or we can apply the amount as a credit to your account, which you can use as payment when you text us to book."
+    },
+    {
+      "heading": "Cancellation and No-Show Policy",
+      "items": [
+        "Appointments not cancelled at least 24 hours before the scheduled time are treated as a late cancellation or no-show and are charged.",
+        "Late cancellation: $25",
+        "No show: $30",
+        "You can reschedule more than 24 hours ahead in your patient booking portal."
+      ]
+    },
+    {
+      "heading": "Gift Cards",
+      "text": "You can create a gift card code to send to a friend or loved one for products or services at Houston Chiropractic & Therapy."
+    }
+  ]
+}
