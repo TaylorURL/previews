@@ -737,8 +737,9 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # So is one that says how things ought to be ("Boating Should Be Fun,
         # Not Stressful"), or sets one thing against another (", Not"), or
         # says after a comma how the work comes ("Modern Equipment, Standard",
-        # "Quality Work, Guaranteed").
-        if re.search(r"\b(should|must|ought|deserves?)\b|,\s*not\b|,\s*(?:standard|included|guaranteed|built[- ]in|\w+ed)$", name, re.I):
+        # "Quality Work, Guaranteed"), or what it comes without ("Electrical
+        # Work Without the Guesswork", "Repairs Without the Runaround").
+        if re.search(r"\b(should|must|ought|deserves?|without)\b|,\s*not\b|,\s*(?:standard|included|guaranteed|built[- ]in|\w+ed)$", name, re.I):
             return
         # One in their own voice ("Paints We Use") heads a page about how they
         # work, not a service.
