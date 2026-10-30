@@ -1,0 +1,337 @@
+{
+ "template": "hvac",
+ "preview": true,
+ "ask": "service",
+ "name": "Harrison Pest Services",
+ "shortName": "Harrison Pest",
+ "summary": "Pest control for homes and businesses in Baytown, Texas, from a family owned company with more than 40 years in the trade.",
+ "phone": "(281) 573-3221",
+ "email": "suzonne@harrisonpest.com",
+ "address": "9703 Ellen St",
+ "town": "Baytown",
+ "state": "TX",
+ "zip": "77521",
+ "hours": [
+  [
+   "Mon – Fri",
+   "8 AM – 5 PM"
+  ],
+  [
+   "Saturday",
+   "Appointment only"
+  ],
+  [
+   "Sunday",
+   "Closed"
+  ]
+ ],
+ "brand": {
+  "primary": "#262626",
+  "primaryDeep": "#0a0a0a",
+  "accent": "#fff300",
+  "ink": "#141414",
+  "muted": "#57575c",
+  "surface": "#fbfaf0",
+  "line": "#e3e0d1",
+  "heading": "'Roboto Slab', Georgia, serif",
+  "body": "'Roboto', system-ui, sans-serif",
+  "fonts": "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap",
+  "logo": null
+ },
+ "hero": {
+  "eyebrow": "Pest control in Baytown, Texas",
+  "title": "Baytown's trusted",
+  "titleAccent": "pest control experts.",
+  "lead": "Experienced professionals offering effective pest extermination solutions for residential and commercial properties. Inspection, prevention and treatment, with no contract required.",
+  "image": "/brands/harrisonpest/hero",
+  "imageAlt": "An aerial view of a cable-stayed bridge crossing a wide waterway"
+ },
+ "groups": [
+  {
+   "slug": "roaches",
+   "title": "Roaches",
+   "icon": "shield",
+   "summary": "Roach control that keeps at it until your property is entirely free of them.",
+   "intro": "Roaches cause harmful diseases if left to infest a house or office. They cause health problems and are extremely dangerous, making it necessary to get rid of them immediately. Roach treatment is more challenging than it sounds, so we take extra pains to go where no one ever has and keep at it until it is complete.",
+   "image": "/brands/harrisonpest/roaches",
+   "imageAlt": "A cockroach on a textured grey surface",
+   "services": [
+    {
+     "slug": "roach-control",
+     "title": "Roach Control",
+     "icon": "shield",
+     "text": "We provide roach control services to ensure your property is entirely free from roaches, in a house or in an office.",
+     "points": [
+      "Complete and timely eradication",
+      "No contract required",
+      "Residential and commercial properties"
+     ]
+    },
+    {
+     "slug": "hotel-restaurant-and-factory-service",
+     "title": "Hotel, Restaurant and Factory Service",
+     "icon": "building",
+     "text": "For your convenience, we offer hotel, restaurant and factory services on a monthly, quarterly, semi-annual or annual basis. No contract is required.",
+     "points": [
+      "Monthly, quarterly, semi-annual or annual visits",
+      "No documentation or contract creation hassle"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "termites",
+   "title": "Termites",
+   "icon": "home",
+   "summary": "Inspection and termite treatment before the damage inside your walls becomes unmanageable.",
+   "intro": "Termites eat up wooden structures entirely from the inside, and it would be too late before you realize the same. Our experts help solve a termite problem before it becomes unmanageable. We employ only tested methods so that you are not harmed in the eradication process, and we start with a thorough inspection of your property.",
+   "image": "/brands/harrisonpest/termites",
+   "imageAlt": "Termites in a piece of rotted wood",
+   "services": [
+    {
+     "slug": "termite-inspection",
+     "title": "Termite Inspection",
+     "icon": "clipboard",
+     "text": "A thorough inspection of your property, and based on the findings we recommend the most suitable treatment for your situation.",
+     "points": [
+      "Gnawing sounds from doors and wooden structures checked",
+      "Treatment matched to the extent of the infestation"
+     ]
+    },
+    {
+     "slug": "liquid-termiticides",
+     "title": "Liquid Termiticides",
+     "icon": "droplets",
+     "text": "Liquid termiticides are applied to the soil around the structure, or injected directly into infested wood. It creates a chemical barrier that either repels or kills termites that come into contact with it."
+    },
+    {
+     "slug": "wood-treatments",
+     "title": "Wood Treatments",
+     "icon": "home",
+     "text": "Our wood treatments involve directly applying termiticides to infested wood or vulnerable wooden structures to kill termites and protect against future infestations."
+    },
+    {
+     "slug": "foaming",
+     "title": "Foaming",
+     "icon": "waves",
+     "text": "Foam termiticides are injected into termite galleries and voids within the structure. The foam expands, reaching inaccessible areas and effectively eliminating termites."
+    }
+   ]
+  },
+  {
+   "slug": "fleas",
+   "title": "Fleas",
+   "icon": "leaf",
+   "summary": "Flea treatment for the whole property, starting with where they nest.",
+   "intro": "If you have pets, you know how susceptible they are to fleas. Fleas spread diseases and are extremely difficult to eliminate, so getting rid of them at the first indication matters. Our methods of treating fleas and removing them from your property are advanced and harmless.",
+   "image": "/brands/harrisonpest/fleas",
+   "imageAlt": "A golden retriever scratching itself on a wooden deck",
+   "services": [
+    {
+     "slug": "flea-treatment",
+     "title": "Flea Treatment",
+     "icon": "leaf",
+     "text": "We help you remove fleas from the entire property, using methods that are advanced and harmless.",
+     "points": [
+      "Treatment for homes with dogs, cats and other pets",
+      "Advanced and harmless methods",
+      "Flea and tick control"
+     ]
+    },
+    {
+     "slug": "finding-where-they-nest",
+     "title": "Finding Where They Nest",
+     "icon": "clipboard",
+     "text": "We determine where fleas might nest on the property, so the treatment reaches the source rather than only the rooms you noticed them in."
+    }
+   ]
+  },
+  {
+   "slug": "rodent",
+   "title": "Rodent",
+   "icon": "building",
+   "summary": "Rat and mouse control that starts with a free inspection and finds the entry points.",
+   "intro": "Holes in your walls or floors that have gone unnoticed, rat droppings in the nooks of your attic, and chewed wires, clothes and food packages are all signs you might have a rodent problem. We take care of a rodent infestation by identifying entry points and providing customized, effective solutions to control them.",
+   "image": "/brands/harrisonpest/rodent",
+   "imageAlt": "A brown rat standing on a wooden floor",
+   "services": [
+    {
+     "slug": "rodent-inspection",
+     "title": "Rodent Inspection",
+     "icon": "clipboard",
+     "text": "Contact us today for a free inspection of your property. We identify the entry points rodents are using before we treat.",
+     "points": [
+      "Free inspection of your property",
+      "Entry points identified"
+     ]
+    },
+    {
+     "slug": "rodent-removal",
+     "title": "Rodent Removal and Control",
+     "icon": "building",
+     "text": "We get to the root of their infestation and remove rodents from their hiding places, so that you do not need to worry about another infestation.",
+     "points": [
+      "Customized, effective solutions",
+      "Environmentally friendly products"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "ants",
+   "title": "Ants",
+   "icon": "droplets",
+   "summary": "Ant removal matched to the species that has invaded your space.",
+   "intro": "Ants invade homes, infest kitchens, contaminate foods and surfaces and cause damage. You must know which ant has invaded your space to understand how to treat it, so we deal with different kinds of ants differently. Our solutions are customized to the type of ant and the extent of the infestation.",
+   "image": "/brands/harrisonpest/ants",
+   "imageAlt": "A close-up of a black ant in front of a plant",
+   "services": [
+    {
+     "slug": "pavement-ants",
+     "title": "Pavement Ants",
+     "icon": "droplets",
+     "text": "We help remove pavement ants by sealing entry points in walls or foundations, using ant baits, nonrepellent insecticides, new trails or nesting sites."
+    },
+    {
+     "slug": "carpenter-ants",
+     "title": "Carpenter Ants",
+     "icon": "home",
+     "text": "We locate the nesting sites, which are often in damp or damaged wood, and eliminate sources of moisture."
+    },
+    {
+     "slug": "fire-ants",
+     "title": "Fire Ants",
+     "icon": "shield",
+     "text": "If you have been stung by a fire ant, you know how painful it is. We use granular or liquid baits to target the ant colony and the queen."
+    },
+    {
+     "slug": "pharaoh-ants",
+     "title": "Pharaoh Ants",
+     "icon": "leaf",
+     "text": "To manage these ants, we use insect growth regulators mixed with insecticides to disrupt their reproductive cycle."
+    },
+    {
+     "slug": "argentine-ants",
+     "title": "Argentine Ants",
+     "icon": "droplets",
+     "text": "We locate and treat Argentine ant trails with insecticides and baits."
+    }
+   ]
+  }
+ ],
+ "about": {
+  "eyebrow": "About us",
+  "title": "Family owned and operated, and 40 years in Baytown.",
+  "text": [
+   "Welcome to Harrison Pest Services, your trusted partner in pest control solutions in Baytown, Texas. With our team of experienced professionals and commitment to customer satisfaction, we are dedicated to creating pest-free environments for residential and commercial properties alike.",
+   "We understand the importance of prompt and effective pest management. Whether you are dealing with pesky ants, stubborn rodents or persistent bed bugs, we have the expertise and tools to address a wide range of pest infestations. Our comprehensive services include inspection, prevention and treatment, ensuring long-term protection for your property.",
+   "What sets us apart is our personalized approach to pest control. We take the time to assess your specific needs and tailor our solutions accordingly. Our skilled technicians employ advanced techniques and eco-friendly products to minimize the impact on your surroundings while maximizing the efficacy of our treatments.",
+   "We have been proudly serving our local community for 40+ years, and our team has 40 years of experience in getting to the root of the problem so the pests do not return. In 2022 we were given the Best of Baytown Award in the pest control service category."
+  ],
+  "image": "/brands/harrisonpest/about",
+  "imageAlt": "Termite damage uncovered in the wooden frame of a house",
+  "values": [
+   {
+    "title": "Personalized approach",
+    "text": "We take the time to assess your specific needs and tailor our solutions accordingly."
+   },
+   {
+    "title": "Eco-friendly products",
+    "text": "Our skilled technicians employ advanced techniques and eco-friendly products to minimize the impact on your surroundings."
+   },
+   {
+    "title": "Safety and training",
+    "text": "Our team undergoes regular training, stays up to date with industry standards and adheres to strict safety protocols during and after the process."
+   }
+  ]
+ },
+ "facts": [
+  {
+   "heading": "Award",
+   "text": "2022 Best of Baytown Award in the pest control service category."
+  },
+  {
+   "heading": "Family owned and operated",
+   "text": "We have been proudly serving our local community for 40+ years."
+  },
+  {
+   "heading": "No contracts",
+   "text": "Our no-contract requirement policy means you do not go through the documentation and contract creation hassle, so you can get our services whenever you need them. Hotel, restaurant and factory services are offered on a monthly, quarterly, semi-annual or annual basis, and no contract is required."
+  },
+  {
+   "heading": "Pricing",
+   "text": "We are confident we have some of the most competitive pricing in all of Baytown, Texas, and we offer all our services at very competitive rates. Call us to learn more about our services and cost."
+  },
+  {
+   "heading": "Quality",
+   "text": "The quality of our work is unmatched. We pay close attention to detail to ensure every job is completed correctly and on time, and we work diligently to meet the needs of our customers while adhering to industry quality standards."
+  },
+  {
+   "heading": "Free inspection",
+   "text": "Rodent work starts with a free inspection of your property, and termite work starts with a thorough property inspection."
+  },
+  {
+   "heading": "Pests we treat",
+   "items": [
+    "Roaches",
+    "Termites",
+    "Fleas",
+    "Ticks",
+    "Rats and mice",
+    "Ants, including fire ants and carpenter ants",
+    "Bed bugs"
+   ]
+  },
+  {
+   "heading": "Past work",
+   "text": "Our gallery shows previous jobs we have completed. Ask us about our scope of work or any past project."
+  },
+  {
+   "heading": "What customers say",
+   "items": [
+    "“I have used this service for 12 years. I have never had to ask them to redo a treatment. They are the best and most honest company I have ever dealt with.” — Kim M.",
+    "“One of the best pest service companies in the Baytown and surrounding area. We would highly recommend!!” — Caroline M.",
+    "“Really nice guy and I'm very pleased with the services. I recommend him to call for your pest control.” — Candace G."
+   ]
+  },
+  {
+   "heading": "Book online",
+   "text": "Book an appointment yourself on our online booking page, or give us a call, email us or fill out our request a quote submission form."
+  },
+  {
+   "heading": "Appointments you can book online",
+   "items": [
+    "Initial Service, 1 hour 30 minutes",
+    "Quarterly Pest Control, 1 hour",
+    "Monthly Service, 1 hour. Monthly services are offered to commercial properties only",
+    "Rodent Control, 1 hour",
+    "Flea and Tick Control, 1 hour",
+    "Fire Ant Treatment, 1 hour",
+    "ATI, Annual Termite Inspection, 1 hour"
+   ]
+  },
+  {
+   "heading": "Termite treatment warranty",
+   "text": "The annual termite inspection is for customers who have a termite treatment warranty."
+  },
+  {
+   "heading": "Prompt service",
+   "text": "We take minimum time to set to action and start with our processes immediately, and we begin as soon as you contact us."
+  },
+  {
+   "heading": "Reviews",
+   "text": "Reviews are the lifeblood of our business. If you had a great experience, take a moment to leave us one on Google."
+  }
+ ],
+ "serviceArea": [
+  "Baytown",
+  "La Porte",
+  "Deer Park",
+  "Highlands",
+  "Mont Belvieu",
+  "Crosby",
+  "Liberty",
+  "Dayton",
+  "Anahuac"
+ ]
+}

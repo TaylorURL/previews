@@ -76,8 +76,13 @@ try {
           }
           const mark = document.querySelector('header img[data-logo]') || header?.querySelector('img');
           let logo = null;
-          if (!mark) issues.push('the header has no logo');
-          else {
+          // A brand with no logo of its own has its name set in type where the
+          // mark would go, which is how the templates are built to draw it. A
+          // header is only missing its logo when it carries neither.
+          const inType = header?.querySelector('[data-logo-name]');
+          if (!mark) {
+            if (!inType || !inType.innerText.trim()) issues.push('the header has no logo');
+          } else {
             const box = mark.getBoundingClientRect();
             logo = { x: box.left, y: box.top, width: box.width, height: box.height, naturalWidth: mark.naturalWidth, naturalHeight: mark.naturalHeight };
             if (box.height < LOGO_MIN[name]) issues.push(`the logo is drawn ${Math.round(box.height)}px tall, too small to read`);
