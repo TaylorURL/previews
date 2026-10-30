@@ -1,0 +1,400 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Triumph Industrial Supply LLC.",
+  "shortName": "Triumph Industrial Supply",
+  "summary": "Industrial supplies for the petrochemical and construction trades across Greater Houston, stocked and delivered from our Baytown store.",
+  "phone": "(281) 425-1314",
+  "email": "sales@triumphindustrial.com",
+  "address": "55 W Main St",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77520",
+  "since": 2013,
+  "hours": [
+    ["Mon – Fri", "7 AM – 4 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "brand": {
+    "primary": "#d30b2a",
+    "primaryDeep": "#8c0a1c",
+    "ink": "#222222",
+    "muted": "#595959",
+    "surface": "#f8f8f8",
+    "line": "#dadada",
+    "heading": "'Oswald', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/triumphindustrialsupply/logo.webp",
+    "logoMono": "/brands/triumphindustrialsupply/logo-mono.webp",
+    "logoWidth": 182,
+    "logoHeight": 58,
+    "logoRatio": 3.135,
+    "logoGround": "#ffffff",
+    "logoReads": [0.201, 0.218, 0.238, 0.255, 0.293, 0.409, 0.522, 0.639, 0.76, 0.885, 1.0]
+  },
+  "hero": {
+    "eyebrow": "Industrial supplies in Baytown",
+    "title": "Your one-stop source",
+    "titleAccent": "for industrial supplies.",
+    "lead": "Triumph Industrial Supply is your trusted partner for petrochemical and construction supplies across Greater Houston. As a fast-growing supplier, we deliver the products and personal service your business depends on.",
+    "image": "/brands/triumphindustrialsupply/hero",
+    "imageAlt": "The Triumph Industrial Supply store and yard on W Main St in Baytown at dusk"
+  },
+  "groups": [
+    {
+      "slug": "tools-and-equipment",
+      "title": "Tools & Equipment",
+      "icon": "wrench",
+      "summary": "From hand tools to heavy-duty power tools and welding gear, the essential equipment professionals rely on.",
+      "intro": "From hand tools to heavy-duty power tools and welding gear, we provide the essential equipment professionals rely on to get the job done right. Milwaukee, Metabo and Case are among the lines we carry, and anything you do not see we will help you source.",
+      "services": [
+        {
+          "slug": "hand-tools",
+          "title": "Hand Tools",
+          "icon": "wrench",
+          "text": "The everyday tools a crew goes through, kept on the shelf in Baytown.",
+          "points": [
+            "Combination wrenches",
+            "Hammers",
+            "Hex keys",
+            "Pliers",
+            "Screwdrivers",
+            "Shovels",
+            "Sockets",
+            "Tool storage and boxes"
+          ]
+        },
+        {
+          "slug": "power-tools",
+          "title": "Power Tools",
+          "icon": "settings",
+          "text": "Cordless and corded tools for the shop and the jobsite.",
+          "points": ["Cordless", "Drills", "Impacts", "Saws"]
+        },
+        {
+          "slug": "power-tool-accessories",
+          "title": "Power Tool Accessories",
+          "icon": "circuit",
+          "text": "The consumables that keep a tool working through the shift.",
+          "points": ["Blades", "Drill bits"]
+        },
+        {
+          "slug": "measuring-and-leveling",
+          "title": "Measuring & Leveling Tools",
+          "icon": "ruler",
+          "text": "Layout and inspection tools for fabrication and construction work.",
+          "points": ["Calipers", "Laser levels", "Mics", "Squares", "Tape measures"]
+        },
+        {
+          "slug": "marking-tools",
+          "title": "Marking Tools",
+          "icon": "clipboard",
+          "text": "What a crew needs to mark out and cordon off an area.",
+          "points": ["Barricade tape", "Flagging", "Paint", "Pens and markers"]
+        }
+      ]
+    },
+    {
+      "slug": "supplies-and-materials",
+      "title": "Supplies & Materials",
+      "icon": "building",
+      "summary": "Abrasives, adhesives, fasteners and more, everything you need to keep operations running smoothly.",
+      "intro": "Our wide range of industrial supplies includes abrasives, adhesives, fasteners, and more. Bulk fasteners, welding equipment, janitorial supplies and custom hose fittings all come off the same order, and if you do not see exactly what you need, contact us and we will help you source it.",
+      "services": [
+        {
+          "slug": "abrasives",
+          "title": "Abrasives",
+          "icon": "settings",
+          "text": "Grinding and finishing consumables for fabrication and repair work.",
+          "points": ["Cutoff wheels", "Flap wheels", "Grinding discs", "Shop rolls", "Wire wheels"]
+        },
+        {
+          "slug": "adhesives",
+          "title": "Adhesives",
+          "icon": "droplets",
+          "text": "Tapes, sealants and compounds for assembly and packaging.",
+          "points": [
+            "Caulks",
+            "Duct tape",
+            "Electrical tape",
+            "Glues",
+            "Masking tape",
+            "Packaging tape",
+            "Retaining compound",
+            "Thread lockers"
+          ]
+        },
+        {
+          "slug": "chemicals-lubricants-paints",
+          "title": "Chemicals, Lubricants & Paints",
+          "icon": "droplets",
+          "text": "Shop chemicals for cleaning, cutting, protecting and marking.",
+          "points": [
+            "Cleaner and degreaser",
+            "Corrosion X",
+            "Cutting oil",
+            "Insect repellent",
+            "Leak detectors and penetrants",
+            "Marking paint",
+            "Spray paint"
+          ]
+        },
+        {
+          "slug": "fasteners-clamps-straps",
+          "title": "Fasteners, Clamps & Straps",
+          "icon": "circuit",
+          "text": "Bulk fasteners in metric and standard, plus what holds a load together.",
+          "points": [
+            "Anchors",
+            "Bolts, metric and standard",
+            "Clamps",
+            "Nails",
+            "Screws and threaded rod",
+            "Studs, bolts, nuts and washers",
+            "Tie wraps and straps"
+          ]
+        },
+        {
+          "slug": "material-handling",
+          "title": "Material Handling",
+          "icon": "car",
+          "text": "Moving and wrapping product around a warehouse or a jobsite.",
+          "points": ["Pallet jack", "Hopper", "Stretch film", "Dolly", "Carts"]
+        },
+        {
+          "slug": "janitorial-supplies",
+          "title": "Janitorial Supplies",
+          "icon": "leaf",
+          "text": "Cleaning and paper goods to keep a facility in order.",
+          "points": ["Brooms and brushes", "Cleaners", "Drum liners", "Paper goods", "Trash bags and receptacles"]
+        }
+      ]
+    },
+    {
+      "slug": "facility-and-safety",
+      "title": "Facility & Safety",
+      "icon": "shield",
+      "summary": "Workplace safety, MRO, lighting and facility maintenance to protect your team and your space.",
+      "intro": "We offer comprehensive solutions for workplace safety, MRO needs, lighting, and facility maintenance to help you protect your team and your space. Gas Clip Technologies monitors, Prime wire and cable, personal protective equipment and pipe, fittings and gaskets are all stocked for plant and construction work.",
+      "image": "/brands/triumphindustrialsupply/shipchannel",
+      "imageAlt": "Petrochemical plants and tank farms along the Houston Ship Channel at dusk",
+      "services": [
+        {
+          "slug": "mro-supplies",
+          "title": "MRO Supplies",
+          "icon": "settings",
+          "text": "Maintenance and repair stock for a working plant, with custom orders where you need them.",
+          "points": [
+            "Fittings",
+            "Pneumatic and hydraulic hoses",
+            "Keystock",
+            "Plastic sheeting",
+            "Rags",
+            "Shims, custom order available"
+          ]
+        },
+        {
+          "slug": "personal-safety",
+          "title": "Personal Safety",
+          "icon": "shield",
+          "text": "Head-to-toe personal protective equipment for plant and jobsite crews.",
+          "points": [
+            "Ear protection",
+            "Eye protection",
+            "Face shields",
+            "Fall protection",
+            "Foot protection",
+            "FR clothing",
+            "Gas monitors",
+            "Hand protection",
+            "Hard hats",
+            "Rainwear",
+            "Respirators and cartridges"
+          ]
+        },
+        {
+          "slug": "jobsite-safety",
+          "title": "Jobsite Safety",
+          "icon": "timer",
+          "text": "What keeps a site compliant and contained, from lockout tagout to spill control.",
+          "points": [
+            "Absorbents",
+            "Air horns",
+            "First aid kits",
+            "Gas clips",
+            "Locks",
+            "LOTO",
+            "Safety fence",
+            "Signage",
+            "Spill control kits",
+            "Storage cans and cabinets",
+            "Tags"
+          ]
+        },
+        {
+          "slug": "electrical-and-lighting",
+          "title": "Electrical & Lighting",
+          "icon": "lightbulb",
+          "text": "Power and light for temporary setups and permanent facilities.",
+          "points": [
+            "Batteries",
+            "Connectors, terminals and clips",
+            "Extension cords",
+            "Flash lights",
+            "Light bulbs",
+            "Light strands",
+            "String lights"
+          ]
+        },
+        {
+          "slug": "pipe-fittings-gaskets",
+          "title": "Pipe, Fittings & Gaskets",
+          "icon": "waves",
+          "text": "Carbon, alloy, exotic and stainless pipe and the fittings that go with it.",
+          "points": ["Carbon, alloy, exotic, stainless", "Fittings", "Flanges", "Gaskets", "Pipe"]
+        },
+        {
+          "slug": "food-service-supplies",
+          "title": "Food Service Supplies",
+          "icon": "droplets",
+          "text": "Break room and hydration supplies for a crew working in the heat.",
+          "points": ["Cups", "Cutlery", "Hydration", "Plates", "Water coolers"]
+        }
+      ]
+    },
+    {
+      "slug": "ordering-and-delivery",
+      "title": "Ordering & Delivery",
+      "icon": "car",
+      "summary": "Will call, local delivery, in-store shopping and direct shipping across Texas and out of state.",
+      "intro": "Our team is here to make sourcing simple. Whether you have a specific request, need a bulk quote, or want help navigating our product range, we are ready to help. Our full online store is coming soon; for now you can browse select items on our site and contact us directly to place an order.",
+      "services": [
+        {
+          "slug": "will-call",
+          "title": "Will Call",
+          "icon": "clipboard",
+          "text": "We will carefully package your order and have it ready for pickup in our Will Call area."
+        },
+        {
+          "slug": "local-delivery",
+          "title": "Local Delivery",
+          "icon": "car",
+          "text": "For customers in the Greater Houston area, we offer convenient local delivery straight to your doorstep or job site."
+        },
+        {
+          "slug": "in-store-shopping",
+          "title": "In-Store Shopping",
+          "icon": "home",
+          "text": "Visit our Baytown store for expert advice, friendly service, and the products you need, right when you need them."
+        },
+        {
+          "slug": "shipping",
+          "title": "Shipping",
+          "icon": "timer",
+          "text": "Whether you are in Texas or out of state, we also provide a variety of direct shipping options, including expedited delivery to meet your timeline."
+        },
+        {
+          "slug": "bulk-quotes",
+          "title": "Bulk Quotes & Sourcing",
+          "icon": "chart",
+          "text": "Do not see exactly what you need? Contact us and we will help you source it, including bulk quotes on larger orders."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Built on reliability, driven by service.",
+    "text": [
+      "Proudly serving the Greater Houston area, Triumph Industrial Supply delivers fast, dependable solutions to the petrochemical and construction industries. Founded by fourth-generation industry leaders, we bring over 50 years of experience and a hands-on approach to every order.",
+      "From tools and materials to safety gear and site essentials, our mission is simple: keep your job running with unmatched service, speed, and expertise.",
+      "Triumph was formed in 2013 as part of the BAM Industrial Group, alongside Baytown Ace Industrial Services and Production Metal Sawing & Processing. In 2023 we moved into our own facilities at 55 W Main St in Baytown."
+    ],
+    "image": "/brands/triumphindustrialsupply/warehouse",
+    "imageAlt": "Pallet racking stocked with industrial supplies inside the Triumph warehouse in Baytown"
+  },
+  "serviceArea": ["Baytown", "Greater Houston", "Texas", "Out of state by direct shipping"],
+  "facts": [
+    {
+      "heading": "Our Team",
+      "items": [
+        "Josh Kubik, Owner",
+        "Julie Joines, Owner",
+        "Joel Mulkey, General Manager",
+        "Jeff Cone, Warehouse Manager",
+        "Cory Gonzales, Inside Sales Manager",
+        "Christopher Abilez, Inside Sales",
+        "Adam Gonzales, Inside Sales",
+        "Josh Gaines, Outside Sales",
+        "Charles Gooden Jr, Outside Sales"
+      ]
+    },
+    {
+      "heading": "Brands We Carry",
+      "items": ["Milwaukee", "Metabo", "Case", "Prime Wire and Cable", "Gas Clip Technologies"]
+    },
+    {
+      "heading": "Industries Served",
+      "text": "Petrochemical and construction across the Greater Houston area."
+    },
+    {
+      "heading": "Our Catalog",
+      "text": "Explore our complete range of tools, materials, and safety solutions, organized to keep your operation moving. From jobsite essentials to facility maintenance and safety gear, our catalog covers everything you need to keep your operation running smoothly."
+    },
+    {
+      "heading": "Contacting Us",
+      "text": "Have questions, need a quote, or ready to place an order? Our team is standing by to help you find the right supplies for your project, whether you need product details, order support, or general assistance. Reach out today, we are committed to fast responses and exceptional service."
+    },
+    {
+      "heading": "BAM Industrial Family of Companies",
+      "items": [
+        "Baytown Ace Industrial Services",
+        "Production Metal Sawing & Processing",
+        "Triumph Industrial Supply"
+      ]
+    },
+    {
+      "heading": "BAM Industrial Group History",
+      "items": [
+        "1971: Original Baytown Ace Machine shop was built at 1001 E Fayle St., Baytown, TX",
+        "1990: New shop and offices built at 1102 S. Hwy. 146, Baytown, TX",
+        "1997: Addition to back of building for mechanic shop at 1102 S. Hwy. 146",
+        "2001: Addition to east side of building for small lathes, CNC, and balancing",
+        "2008: Purchase of land and addition to west side of building for warehouse and fabrication shop",
+        "2012: Addition of new offices to the front of building",
+        "2013: Name change for Baytown Ace Machine to Baytown Ace Industrial Services to align better with new services provided",
+        "2013: Triumph Industrial Supply formed and housed at 1102 S. Hwy 146",
+        "2018: Acquisition of long-time vendor Production Metal Sawing and name change to Production Metal Sawing and Processing at 7215 Canal St., Houston, TX",
+        "2023: Triumph moves into new facilities at 55 W. Main St., Baytown, TX"
+      ]
+    },
+    {
+      "heading": "Online Store",
+      "text": "Our full online store is coming soon. Until then you can browse select items on our site and contact us directly to place an order."
+    },
+    {
+      "heading": "Follow Us",
+      "items": [
+        "Facebook: facebook.com/profile.php?id=100057089244374",
+        "Instagram: instagram.com/triumphindustrialsupply",
+        "LinkedIn: linkedin.com/company/triumph-industrial-supply-llc"
+      ]
+    },
+    {
+      "heading": "Privacy Policy",
+      "items": [
+        "Last updated October 29, 2026, and published at triumphindustrial.com",
+        "Our store and website are powered by Shopify, which processes personal information in order to provide and improve the services",
+        "Information we collect or process includes contact, payment, account, transaction, communication, device and usage details",
+        "Depending on where you live you may have rights to access, delete, correct or receive a copy of your personal information",
+        "You can opt out of the sale or sharing of your personal information for targeted advertising, and we honor the Global Privacy Control signal",
+        "Promotional emails can be stopped at any time with the unsubscribe option in our emails",
+        "The services are not intended for children under the age of majority",
+        "Privacy questions and requests go to sales@triumphindustrial.com"
+      ]
+    }
+  ]
+}

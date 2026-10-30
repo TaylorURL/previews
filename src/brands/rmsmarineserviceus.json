@@ -1,0 +1,659 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "RMS Marine Service US LLC",
+  "shortName": "RMS Marine Service US",
+  "summary": "One-stop marine service from the Port of Houston: stores, provisions, spare parts, safety service, technical service and logistics for vessels calling the US Gulf, the East and West Coasts, Canada and Panama.",
+  "phone": "(832) 560-5708",
+  "email": "customer@rmsmarineservice.com",
+  "address": "1234 Kress St",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77020",
+  "since": 2023,
+  "brand": {
+    "primary": "#0b4a7d",
+    "primaryDeep": "#082f52",
+    "accent": "#e2711d",
+    "ink": "#101822",
+    "muted": "#4a5a6b",
+    "surface": "#eef4f9",
+    "line": "#d4e0ea",
+    "heading": "'Barlow', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/rmsmarineserviceus/logo.webp",
+    "logoMono": "/brands/rmsmarineserviceus/logo-mono.webp",
+    "logoWidth": 243,
+    "logoHeight": 48,
+    "logoRatio": 5.073,
+    "logoGround": "#14181f",
+    "logoReads": [
+      1.0,
+      0.991,
+      0.88,
+      0.771,
+      0.661,
+      0.544,
+      0.44,
+      0.334,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "emergency": {
+    "title": "24/7/365 cover",
+    "text": "RMS keeps its spare parts desk and its safety service division on call 7 days a week, 24 hours a day, and the Houston office publishes an after-office-hours line on +1-832-560-5886."
+  },
+  "hero": {
+    "eyebrow": "Marine service from the Port of Houston",
+    "title": "Make your voyage",
+    "titleAccent": "simpler and safer.",
+    "lead": "RMS Marine Service US LLC works from a 4,000 square metre warehouse in the Port of Houston, supplying stores, provisions, spare parts, safety service, technical service and logistics to vessels across North America, backed by the RMS Group network of 19 offices."
+  },
+  "groups": [
+    {
+      "slug": "stores",
+      "title": "Stores Supply",
+      "icon": "building",
+      "summary": "Deck, engine, cabin, electrical and safety stores from a 4,000 square metre warehouse in the Port of Houston.",
+      "intro": "Stores supply is the RMS core. The group holds more than 55,000 SKU in stock across warehouses in China, Singapore, Korea, Rotterdam, Dubai and the USA, coded to IMPA and the RMS coding system and bar-code labelled. RMS supplies only marine standard and quality stores, and delivers stores to more than 55,000 vessels a year worldwide.",
+      "services": [
+        {
+          "slug": "consumable-and-technical-stores",
+          "title": "Consumable and Technical Stores",
+          "icon": "clipboard",
+          "text": "Standard supplies for the deck, engine, cabin, electrical and safety departments, on quarterly or semi-annual schedules.",
+          "points": [
+            "Stock coded by IMPA and the RMS coding system, bar-code labelled",
+            "Customised supply for docking vessels with urgent or technical needs",
+            "Stock replenishment supply for global suppliers"
+          ]
+        },
+        {
+          "slug": "bulk-and-project-stores",
+          "title": "Bulk and Project Stores",
+          "icon": "cable",
+          "text": "Technical stores bought in bulk and to order, from lashing materials to project cables and pipework.",
+          "points": [
+            "Lashing materials, anchor chain, anchors and anodes",
+            "Bulk purchasing for PPE, crockery, non-single-use plastic replacement and 110V / 60Hz electrical appliances",
+            "Cables, valves and pipes for BWMS and scrubber projects",
+            "Wire rope and mooring rope compliant with MEG4"
+          ]
+        },
+        {
+          "slug": "newbuilding-initial-supply",
+          "title": "Newbuilding Initial Supply",
+          "icon": "compass",
+          "text": "RMS has delivered more than 4,500 newbuilding initial supplies in China, Korea, Japan, Vietnam and the Philippines, for bulk carriers, general cargo ships, tankers and container ships.",
+          "points": [
+            "Initial stores for over 3,700 vessels in Chinese shipyards and over 800 overseas",
+            "International standard packing SOP for easy checking and labelling",
+            "Packing list with IMPA number coding, recyclable packing"
+          ]
+        },
+        {
+          "slug": "export-service",
+          "title": "Export Service",
+          "icon": "chart",
+          "text": "Wholesale marine standard products and initial supply for trading companies, shipyards and ship builders outside China, with global forwarding and local checking support.",
+          "points": [
+            "Deck, engine, cabin, electrical and safety stores wholesale",
+            "IMO signals and flags, deck fittings, hatch cover spares, wire and mooring rope",
+            "Professional packing and labelling to the client's request"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "provisions",
+      "title": "Provisions Supply",
+      "icon": "leaf",
+      "summary": "Fresh, frozen, dry and beverage provisions for merchant vessels, offshore facilities and cruise ships.",
+      "intro": "RMS has supplied provisions to international shipping companies for over three decades. The group runs more than 10,000 square metres of provisions stock and 7,000 cubic metres of freezer space with refrigerated trucks, and is certified to ISO 22000 food safety management, working to HACCP standards for food handling, temperature control, QC, labelling and traceability.",
+      "services": [
+        {
+          "slug": "fresh",
+          "title": "Fresh Provisions",
+          "icon": "leaf",
+          "text": "Fruit and vegetables, eggs and dairy products, handled under temperature control from store to deck."
+        },
+        {
+          "slug": "frozen",
+          "title": "Frozen Provisions",
+          "icon": "snowflake",
+          "text": "Frozen meat, poultry and seafood, and frozen fruit and vegetables, held in 7,000 cubic metres of cold storage."
+        },
+        {
+          "slug": "dry-and-beverage",
+          "title": "Dry Goods and Beverage",
+          "icon": "filter",
+          "text": "Canned products, rice, flour and oil, coffee and teas, sauces, spices and herbs, snacks, nuts and dried fruit, plus wine, beer and soft drinks."
+        },
+        {
+          "slug": "cruise-catering",
+          "title": "Cruise and Offshore Catering",
+          "icon": "building",
+          "text": "RMS also supplies well-known cruise companies with food and beverage, hotel and strategic sourcing services to support their global operations."
+        }
+      ]
+    },
+    {
+      "slug": "spare-parts",
+      "title": "Spare Parts and Equipment",
+      "icon": "settings",
+      "summary": "Genuine spare parts for main and auxiliary engines, engine room and deck auxiliary equipment, supplied since 2008.",
+      "intro": "The RMS spare parts team has supplied genuine spare parts worldwide since 2008 and is authorised by 100 well-regarded makers. Centralised purchasing keeps the price competitive, and the team promises 7 x 24 non-stop service with one-stop warehousing and logistics at major ports and shipyards in China, Korea, Singapore, Europe, the UAE and the USA.",
+      "services": [
+        {
+          "slug": "main-and-auxiliary-engine",
+          "title": "Main and Auxiliary Engine Spares",
+          "icon": "settings",
+          "text": "Original spare parts inventory for MAN, WinGD and CSSC engines.",
+          "points": [
+            "Cylinder liners and piston rings",
+            "FIVA and fuel injection system spares"
+          ]
+        },
+        {
+          "slug": "deck-and-hatch-cover",
+          "title": "Hatch Cover and Deck Spares",
+          "icon": "wrench",
+          "text": "Hydraulic cylinders, hydraulic motors and control valves for hatch cover equipment."
+        },
+        {
+          "slug": "pumps-and-motors",
+          "title": "Pumps, Motors and Coolers",
+          "icon": "power",
+          "text": "Pump spares for Japanese and Chinese brands, electric motors in original and tailor-made form, and plates and gaskets for fresh water generators and coolers in European, Japanese and Korean brands.",
+          "points": [
+            "Tailor-made electric motors built in China with a long warranty period"
+          ]
+        },
+        {
+          "slug": "owners-spares-handling",
+          "title": "Owners' Spares Handling",
+          "icon": "clipboard",
+          "text": "RMS USA handles logistics for owners' spare parts alongside its own supply, delivering to the designated port, shipyard or destination."
+        }
+      ]
+    },
+    {
+      "slug": "safety-service",
+      "title": "Safety Service",
+      "icon": "shield",
+      "summary": "FSR service, calibration and navigation work: fire fighting, life-saving appliances, gas detectors, radio and VDR inspection.",
+      "intro": "RMS has run its FSR service since 1995. The division works from 11 self-owned workshops with 100 trained and certified technicians, is approved by 10 classification societies and is authorised by makers including SIKA, Riken Keiki, Scott, Lalizas, CSM, Hatecke, Oriental, Jiaoyan and Qingdao Beihai. Service is offered 24/7/365.",
+      "services": [
+        {
+          "slug": "fire-fighting-equipment",
+          "title": "Fire Fighting Equipment",
+          "icon": "flame",
+          "text": "Fire fighting service certified by ABS, BV, NK, CCS, LR, DNV-GL, KR, IRS, RS and RINA.",
+          "points": [
+            "Portable fire extinguishers",
+            "Fixed systems: CO2, foam, halon, dry powder, FM200 and Novec 1230",
+            "Water mist, wet chemical and fire detection system maintenance",
+            "Breathing apparatus, EEBD and oxygen resuscitator service",
+            "CO2 system flexible hose supply and installation"
+          ]
+        },
+        {
+          "slug": "life-saving-appliances",
+          "title": "Life-Saving Appliances",
+          "icon": "shield",
+          "text": "Immersion suit, lifeboat, davit and liferaft service by certified technicians.",
+          "points": [
+            "Immersion suit service and repair for Aquata, Lalizas and major Chinese makers",
+            "Lifeboat and davit inspection and maintenance, certified by ABS, BV, CCS, DNV-GL, NK, KR, LR and RINA",
+            "Panama and Liberia flag approval for lifeboat service",
+            "CSM and Lalizas authorised liferaft service stations"
+          ]
+        },
+        {
+          "slug": "calibration",
+          "title": "Testing and Calibration",
+          "icon": "gauge",
+          "text": "Annual calibration of portable and fixed gas detectors, pressure and temperature calibrators and UTI equipment.",
+          "points": [
+            "Gas detector calibration authorised by Riken Keiki, BW, RAE, Crowcon and Toka Seiki",
+            "Pressure and temperature calibrator calibration authorised by SIKA"
+          ]
+        },
+        {
+          "slug": "communication-and-navigation",
+          "title": "Communication and Navigation",
+          "icon": "waves",
+          "text": "Introduced in 2022: radio inspection, VDR inspection, and repair, installation and maintenance of navigation equipment.",
+          "points": [
+            "Radio inspection qualifications from ABS, CCS, BV, NK and LR",
+            "Authorised by Beijing Highlander Digital Technology and JOTRON"
+          ]
+        },
+        {
+          "slug": "safety-products",
+          "title": "Safety Products",
+          "icon": "clipboard",
+          "text": "The product team selects fire extinguishers, SCBA, EEBD, immersion suits, flexible hoses, ROV and lifeboat spare parts for clients worldwide."
+        }
+      ]
+    },
+    {
+      "slug": "technical-service",
+      "title": "Technical Service",
+      "icon": "wrench",
+      "summary": "Engine, electrical, hydraulic, refrigeration and retrofit work in port and in the yard.",
+      "intro": "RMS Technical Service works alongside PrimeTech Marine Service Co., Ltd., an RMS Group subsidiary with a 1,100 square metre technical service workshop and authorisations and training qualifications from many international and domestic makers. The service network spans ports and shipyards across China and reaches 36 countries and regions.",
+      "services": [
+        {
+          "slug": "diesel-engine",
+          "title": "Diesel Engine Service",
+          "icon": "settings",
+          "text": "Routine overhaul, trouble-shooting and retrofit on two-stroke, four-stroke, electronic control and gas engines.",
+          "points": [
+            "FO pump, Alpha and HJ lubricator overhaul",
+            "FIVA and HPS major overhaul",
+            "Maneuvering and pneumatic system, main starting valve and air distributor overhaul",
+            "Turbocharger major overhaul and trouble-shooting",
+            "ME and AE component reconditioning"
+          ]
+        },
+        {
+          "slug": "electric-and-automation",
+          "title": "Electric and Automation Service",
+          "icon": "circuit",
+          "text": "Alarm, monitoring, detection and control systems serviced and calibrated.",
+          "points": [
+            "Alarm monitoring, fire detection and water ingress alarm systems",
+            "MSB, ESB, ACB and VCB service",
+            "Level and draft gauging, valve remote control, boiler and incinerator automation",
+            "Viscometer, flowmeter, 15PPM and ODME calibration",
+            "Inert gas, vapour emission control, public address, navigation lights and CCTV"
+          ]
+        },
+        {
+          "slug": "hydraulic",
+          "title": "Hydraulic Service",
+          "icon": "droplets",
+          "text": "Deck machinery and steering hydraulics inspected, overhauled and load tested.",
+          "points": [
+            "Crane annual inspection, maintenance, repair and load test",
+            "Hatch cover service",
+            "Hydraulic motor, pump, valve, actuator and cylinder overhaul",
+            "Steering gear overhaul, windlass and mooring winch brake test and repair"
+          ]
+        },
+        {
+          "slug": "air-conditioning-and-refrigeration",
+          "title": "Air Conditioning and Refrigeration",
+          "icon": "snowflake",
+          "text": "Accommodation air conditioning, provision reefer plant, ECR and bridge air conditioners and compressor overhaul."
+        },
+        {
+          "slug": "retrofitting",
+          "title": "Retrofitting and Workshop Service",
+          "icon": "ruler",
+          "text": "Retrofit projects and bench work, from BWTS and scrubber commissioning to machining and testing.",
+          "points": [
+            "BWTS retrofitting and commissioning, scrubber installation and commissioning",
+            "Panama chocks and bollards",
+            "Cylinder liner honing, laser cladding, ultrasonic cleaning, dynamic balancing test",
+            "Hydraulic component bench test, general fabrication and machining"
+          ]
+        },
+        {
+          "slug": "other-technical-work",
+          "title": "Other Technical Work",
+          "icon": "flame",
+          "text": "Boiler circulation cleaning and retubing, incinerator refractory repair, lifeboat and rescue boat engine overhaul, cooler and heat exchanger maintenance, elevator inspection and wire rope renewal, anchor and anchor chain replacement, renaming, accommodation ladder and piping fabrication."
+        }
+      ]
+    },
+    {
+      "slug": "logistics",
+      "title": "Logistics and Transit",
+      "icon": "timer",
+      "summary": "Door to deck forwarding, customs clearance, warehousing and transit care-off through 19 offices worldwide.",
+      "intro": "The RMS logistics teams carry over 30 years of marine service expertise, work from 19 offices with warehouses worldwide, and keep more than 50 third-party logistics partners. The service runs 24 hours a day, 365 days a year.",
+      "services": [
+        {
+          "slug": "door-to-deck",
+          "title": "Door to Deck Shipments",
+          "icon": "timer",
+          "text": "Shipments carried from the supplier through to delivery on board.",
+          "points": [
+            "Air and sea freight forwarding",
+            "Customs clearance",
+            "Warehousing and transportation"
+          ]
+        },
+        {
+          "slug": "last-mile",
+          "title": "Last Mile Delivery",
+          "icon": "waves",
+          "text": "Delivery on board from the RMS network of 19 offices, with 365 days of ship tracking and 24 hour supply on board.",
+          "points": [
+            "Multiple ports and anchorages covered",
+            "LNG port supplying knowledge and chemicals and paints supplying capability"
+          ]
+        },
+        {
+          "slug": "transit-and-care-off",
+          "title": "Transit and Care-Off",
+          "icon": "clipboard",
+          "text": "RMS USA handles transit and care-off for owners' goods, including logistic handling of owners' spare parts into North American ports."
+        },
+        {
+          "slug": "bonded-warehousing",
+          "title": "Bonded Warehousing",
+          "icon": "building",
+          "text": "RMS runs bonded warehouses in China, Korea and the Netherlands, where overseas goods can be held before customs clearance for flexible inventory planning.",
+          "points": [
+            "Bonded goods delivered to foreign flag vessels within 24 hours at Shanghai ports",
+            "48 to 72 hours at other Chinese ports depending on location"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "general-agency",
+      "title": "General Shipping Agency",
+      "icon": "clipboard",
+      "summary": "Port agency work for vessels and owners: entry and exit formalities, crew change, transit clearance and dry dock agency.",
+      "intro": "The RMS agency team coordinates between vessels, ports and shipyards to save the owner cost and time, covering ports and shipyards in China, Korea, Japan, Vietnam, Singapore, Europe, the UAE and the USA. The team serves container carriers, bulk carriers, tankers, LPG and LNG carriers, drilling platforms and FPSO vessels.",
+      "services": [
+        {
+          "slug": "port-formalities",
+          "title": "Port Call Formalities",
+          "icon": "clipboard",
+          "text": "Entry and exit formalities handled as owner's agent, with Port State Control attendance and timely reporting of ETB and ETD.",
+          "points": [
+            "Vessel entry and exit formalities and cash to master",
+            "Port State Control attendance and SPRO",
+            "Towing permits and navigation warning applications for project vessels",
+            "Dry dock agency and other owner's matters"
+          ]
+        },
+        {
+          "slug": "crew-change",
+          "title": "Crew Change and Travel",
+          "icon": "building",
+          "text": "Crew change handled end to end, including letters of indemnity, visa applications, sign-on and sign-off formalities, transport and repatriation.",
+          "points": [
+            "Special visa handling and crew repatriation",
+            "Boarding passes, flights and hotels for superintendents, technicians and crew",
+            "Transport and boarding pass arrangements, and crew taken to medical appointments"
+          ]
+        },
+        {
+          "slug": "agency-support",
+          "title": "Technical and Survey Support",
+          "icon": "gauge",
+          "text": "Local inspectors and technicians arranged for work on board, with surveys and sampling organised around the port call.",
+          "points": [
+            "Spare parts transit and customs clearance",
+            "Charts and provisions delivered on board",
+            "Lube oil and bunker samples sent to overseas testing institutions",
+            "Bunker survey and off-hire survey arranged",
+            "24/7 handling of urgent matters as tentative broker"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "equipment-project",
+      "title": "Equipment and Project",
+      "icon": "ruler",
+      "summary": "Retrofit engineering and equipment supply: scrubber, ballast water, desulphurisation and Panama mooring projects.",
+      "intro": "The RMS equipment and project department is staffed by senior ship engineers with ship design and equipment experience, and is authorised by several Chinese manufacturers to sell their equipment. The team takes a project from technical consulting, proposal assessment and equipment selection through site survey, design, installation and commissioning, for newbuilding, retrofit and shipyard repair work, backed by a global after-sales network. The aim is to optimise the client's systems so the vessel burns less fuel at lower cost.",
+      "services": [
+        {
+          "slug": "scrubber-accessories",
+          "title": "Scrubber Retrofit Accessories",
+          "icon": "settings",
+          "text": "Valves, bellows and cable for exhaust gas cleaning system retrofits, with distribution partnerships across more than 100 makers.",
+          "points": [
+            "Butterfly, ball, check and SDNR valves, with local and remote hand pumps",
+            "Expansion bellows from DN350 to DN1800 in SUS316L, SUS321, 2205, 2507 and 254SMo",
+            "Marine cables type approved by class"
+          ]
+        },
+        {
+          "slug": "bwms-solutions",
+          "title": "Ballast Water Management Solutions",
+          "icon": "droplets",
+          "text": "Ballast water treatment systems selected and retrofitted, with the work done at berth or anchorage to limit disruption and running cost.",
+          "points": [
+            "OBS from Optimarin AS, the first globally USCG type-approved BWMS",
+            "BalClor from Sunrui in Qingdao, using side-stream electrolysis",
+            "Shanghai Chunyan filtration and UV system, IMO and class approved",
+            "OceanGuard from Headway, passed USCG land-based and environmental tests",
+            "Retrofit package: scheme selection, 3D-scan survey, approval and production design, equipment supply and installation"
+          ]
+        },
+        {
+          "slug": "desulphurisation",
+          "title": "Desulphurisation Solutions",
+          "icon": "filter",
+          "text": "Exhaust gas cleaning systems chosen for the vessel to meet the global sulphur cap, with GRE piping and installation guidance.",
+          "points": [
+            "Suitable exhaust gas cleaning system selection",
+            "Optimal GRE piping with installation guidance",
+            "Valves, expansion bellows and instruments with anti-corrosion properties"
+          ]
+        },
+        {
+          "slug": "panama-transit",
+          "title": "New Panama Canal Transit Solutions",
+          "icon": "compass",
+          "text": "Mooring systems designed and installed for New Panama Canal transit, with drawings prepared for Panama Authority and class approval.",
+          "points": [
+            "Panama mooring equipment approved by ACP and class",
+            "On-board installation alongside repair facilities or shipyards",
+            "Design, class approval, materials and installation guidance delivered for CMA Ships' HHI 11,400 TEU vessels"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About RMS USA",
+    "title": "A Houston branch with a global network behind it.",
+    "text": [
+      "RMS Marine Service US LLC was established in 2023 and operates from a strategically positioned facility in the Port of Houston. With a 4,000 square metre warehouse, RMS USA is dedicated to providing reliable and responsive marine service solutions to meet the diverse needs of clients in North America.",
+      "Positioned strategically within the US Gulf area, RMS USA serves as a significant milestone in RMS's international service capacity. It complements the group's existing offices in China, Korea, Singapore, the Netherlands and the UAE.",
+      "RMS USA offers a wide array of services, ranging from food and technical stores to spare parts, logistic handling for owners' spare parts, safety service testing and calibration, engineering services and export services. More services are in the pipeline as RMS Group continuously advances as a one-stop marine service company.",
+      "Backed by the trust of global customers and supported by our headquarters, the local expertise team at RMS Marine Service US Branch is poised to become a lasting presence in the North American market."
+    ],
+    "image": "/brands/rmsmarineserviceus/usa",
+    "imageAlt": "The New York waterfront seen from the harbour past the Statue of Liberty",
+    "values": [
+      {
+        "title": "Reliable and responsive",
+        "text": "The words RMS has used for its service since 1993, home and abroad."
+      },
+      {
+        "title": "One stop",
+        "text": "Stores, provisions, spare parts, safety, technical service and logistics from one supplier."
+      },
+      {
+        "title": "Simpler and safer",
+        "text": "The group's own promise: make your voyage simpler and safer."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Which ports does RMS USA cover?",
+      "a": "Services span the United States, covering the US Gulf at Houston and New Orleans, the West Coast at Los Angeles and Long Beach, and the East Coast including New York. RMS also covers Canadian ports such as Vancouver and Quebec, and Panama in Central America."
+    },
+    {
+      "q": "What is in the Houston facility?",
+      "a": "RMS Marine Service US LLC works from a 4,000 square metre warehouse in a strategically positioned facility in the Port of Houston."
+    },
+    {
+      "q": "Who do I contact for a particular service?",
+      "a": "Stores at us@rmsmarineservice.us, provisions at food@rmsmarineservice.com, spare parts and equipment at spare-euro@rmsmarineservice.com, FSR safety service at FSRglobal@rmsmarineservice.com, technical service at service@ptmarineservice.com and logistics transit and care-off at logistics@rmsmarineservice.us."
+    },
+    {
+      "q": "Is RMS certified?",
+      "a": "The Houston branch shows ISO 9001 and ISO 14001 certificates for the US company. At group level RMS holds ISO 9001, ISO 14001, ISO 22000 and ISO 45001, and its safety and life-saving services are certified by 10 classification societies: NK, BV, ABS, CCS, RS, KR, LR, DNV-GL, IRS and RINA."
+    },
+    {
+      "q": "Can RMS supply a newbuilding or a vessel in dry dock?",
+      "a": "Yes. RMS has delivered more than 4,500 newbuilding initial supplies worldwide, and its site service team of more than 70 boarding officers attends docking vessels on a daily basis."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "New Orleans",
+    "Los Angeles",
+    "Long Beach",
+    "New York",
+    "Vancouver",
+    "Quebec",
+    "Panama"
+  ],
+  "facts": [
+    {
+      "heading": "Houston Office",
+      "items": [
+        "RMS Marine Service US LLC",
+        "1234 Kress Street, Houston 77020",
+        "Tel: +1-346-483-0007",
+        "After office hours: +1-832-560-5886",
+        "General e-mail: us@rmsmarineservice.us"
+      ]
+    },
+    {
+      "heading": "Service Enquiries",
+      "items": [
+        "Stores supply: us@rmsmarineservice.us",
+        "Provisions supply: food@rmsmarineservice.com",
+        "Spare parts and equipment supply: spare-euro@rmsmarineservice.com",
+        "FSR service: FSRglobal@rmsmarineservice.com",
+        "Technical service: service@ptmarineservice.com",
+        "Logistics transit and care-off: logistics@rmsmarineservice.us",
+        "Customer service: customer@rmsmarineservice.com"
+      ]
+    },
+    {
+      "heading": "Regional Contacts",
+      "items": [
+        "USA provisions: food@rmsmarineservice.us, +1-832-340-1612",
+        "USA logistics: logistics@rmsmarineservice.us, +1-346-955-3603",
+        "USA FSR: fsr@rmsmarineservice.us",
+        "General shipping agency: agency@rmsmarineservice.com, +86-18222039101",
+        "Equipment and project: project@rmsmarineservice.com, +86-21-20822945",
+        "Offshore: offshore@rmsmarineservice.com",
+        "Communication and navigation: radio@rmsmarineservice.com"
+      ]
+    },
+    {
+      "heading": "Group Hotlines",
+      "items": [
+        "Europe customers: +86-21-20822953, mobile +86-18321749386",
+        "Asia customers: +86-21-20822828, mobile +86-15801920789",
+        "China customers: +86-21-20822914, mobile +86-15921108835"
+      ]
+    },
+    {
+      "heading": "Certification",
+      "items": [
+        "ISO 9001 and ISO 14001 held by the US company",
+        "Group certified to ISO 9001, ISO 14001, ISO 22000 and ISO 45001",
+        "Safety and life-saving services certified by 10 classes: NK, BV, ABS, CCS, RS, KR, LR, DNV-GL, IRS, RINA",
+        "Radio inspection qualifications from ABS, CCS, BV, NK and LR",
+        "Panama and Liberia flag approval for lifeboat service",
+        "HACCP compliant food handling under ISO 22000"
+      ]
+    },
+    {
+      "heading": "Associations",
+      "items": [
+        "Member of ISSA",
+        "Member of IMPA, and an IMPA Council member"
+      ]
+    },
+    {
+      "heading": "RMS Group At A Glance",
+      "items": [
+        "Founded 1993, over 30 years of history",
+        "1,800+ employees",
+        "19 offices worldwide",
+        "80,000 m² of warehouses, including 8,600 m² of dry food storage",
+        "7,000 m³ of cold storage",
+        "11 workshops and 150+ professional technicians",
+        "55,000+ voyages supplied a year",
+        "4,500+ newbuilding initial supplies"
+      ]
+    },
+    {
+      "heading": "Group Companies",
+      "items": [
+        "China: RMS Marine Service Company Ltd.",
+        "Korea: ACE-RMS Marine Service Co., Ltd.",
+        "Singapore: RMS Marine & Offshore Service Pte. Ltd.",
+        "Europe: RMS Marine Service B.V.",
+        "UAE: R M S Middle East Ship Services L.L.C",
+        "USA: RMS Marine Service US LLC"
+      ]
+    },
+    {
+      "heading": "Site Service",
+      "text": "More than 70 boarding officers, placed in the RMS branches closest to the shipyards, attend on board on a daily basis to give docking vessels customised and prompt assistance in Asia, Europe, the Middle East and the USA."
+    },
+    {
+      "heading": "Offshore And Cruise",
+      "text": "Teams in China, Busan, Singapore, Rotterdam, Dubai and Houston cover offshore supply chain and service work: general stores, cabin stores, provisions, spare parts, safety service, technical service and shipping agency, plus newbuilding supervision, agency services, and platform, ship and equipment maintenance. RMS also supplies cruise operators with food and beverage, hotel and strategic sourcing services."
+    },
+    {
+      "heading": "Vessel Types Served",
+      "text": "RMS attends container carriers, bulk carriers, tankers, LPG and LNG carriers, drilling platforms and FPSO vessels, as well as offshore facilities and cruise ships."
+    },
+    {
+      "heading": "Recent Group News",
+      "items": [
+        "RMS US relocated to a new 4,000 m² facility to expand capacity and improve efficiency",
+        "RMS Netherlands relocated to a new 9,500 m² facility to support vessels across Europe",
+        "RMS Korea warehouse expansion and a Shanghai smart warehouse upgrade",
+        "RMS and Hatecke launched Safeguard Marine for safety service",
+        "RMS recognised as a Hikvision strategic partner",
+        "Strategic cooperation framework agreement signed with Cummins (China)",
+        "RMS Guangxi and RMS Hainan now fully operational in South China"
+      ]
+    },
+    {
+      "heading": "Published Policies",
+      "text": "RMS publishes a Code of Conduct, a mission and values statement, a company history and its CSR work, including long-term support for children's education in remote Yunnan."
+    },
+    {
+      "heading": "Honours",
+      "items": [
+        "Shanghai High-end Shipping Service Enterprise",
+        "Asia-Pacific Operator in the Shanghai Pilot Free Trade Zone",
+        "Shanghai Private Enterprise Headquarters",
+        "Shanghai Supply Chain Innovation and Application Demonstration Enterprise",
+        "Shanghai Harmonious Labor Relations Enterprise",
+        "Signatory of the GOP (Global Operation Programme) Memorandum of Strategic Cooperation"
+      ]
+    },
+    {
+      "heading": "Languages",
+      "text": "The RMS site is published in English, Chinese, Japanese and Korean, and the group's teams come from different countries, cultures and languages."
+    },
+    {
+      "heading": "Find Us Online",
+      "items": [
+        "LinkedIn: linkedin.com/company/rmsmarineservice",
+        "Facebook: RMS Marine Service Co. Ltd.",
+        "Alibaba store: rmsmarine.en.alibaba.com",
+        "Shipment tracking: rmsmarineservice.com/resources/track",
+        "Company PDF brochure published on the RMS site"
+      ]
+    }
+  ]
+}
