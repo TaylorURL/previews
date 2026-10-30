@@ -1675,7 +1675,8 @@ function AboutPage({ b, groups, tel }) {
               <ol className="grid gap-4">
                 {values.map((v, i) => (
                   <li key={v.title} className="flex gap-5 rounded-2xl border border-line p-5 sm:p-6">
-                    <span className="font-heading text-[28px] font-extrabold leading-none tracking-[-0.03em] text-[color:var(--pt)]">
+                    {/* A set width, so the titles line up down the column whatever the numerals' widths. */}
+                    <span className="w-11 flex-none font-heading text-[28px] font-extrabold leading-none tracking-[-0.03em] tabular-nums text-[color:var(--pt)]">
                       {String(i + 1).padStart(2, '0')}
                     </span>
                     <div className="min-w-0">

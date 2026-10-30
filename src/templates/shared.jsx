@@ -106,7 +106,10 @@ export function logoStands(brand, ground) {
  */
 export function BrandLogo({ b, className = '', textClass = '', scale = 1, ground = '#ffffff', ink = null }) {
   const brand = b.brand;
-  const name = <span className={`block font-heading text-[22px] font-bold leading-tight ${textClass}`}>{b.shortName}</span>;
+  // Marked so the layout check can tell a header that sets the name in type
+  // from one that has no mark at all: a brand with no logo of its own is drawn
+  // this way on purpose, and that is not a header missing its logo.
+  const name = <span data-logo-name="" className={`block font-heading text-[22px] font-bold leading-tight ${textClass}`}>{b.shortName}</span>;
   if (!brand.logo) return name;
   const backdrop = hexOr(ground, '#ffffff');
   const own = logoStands(brand, backdrop) >= READS;
