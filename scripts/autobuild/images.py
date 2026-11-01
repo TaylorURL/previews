@@ -84,11 +84,16 @@ def blank(image):
 def trimmed(image):
     """A photo without the plain white margin their page laid it out with (a
     picture set off to one side of a white panel, a transparent edge), which
-    would draw as a pale strip down the side of the frame it fills."""
+    would draw as a pale strip down the side of the frame it fills, nor the
+    plain black one a phone screenshot puts beside a picture narrower than the
+    screen, which would draw as a black bar."""
     rgba = image.convert("RGBA")
     flat = Image.new("RGB", rgba.size, (255, 255, 255))
     flat.paste(rgba, mask=rgba.getchannel("A"))
     box = ImageChops.difference(flat, Image.new("RGB", flat.size, (255, 255, 255))).convert("L").point(lambda v: 255 if v > 16 else 0).getbbox()
+    if box and box != (0, 0) + image.size:
+        image, flat = image.crop(box), flat.crop(box)
+    box = flat.convert("L").point(lambda v: 255 if v > 16 else 0).getbbox()
     return image.crop(box) if box and box != (0, 0) + image.size else image
 
 
