@@ -170,17 +170,25 @@ function Header({ b, tel }) {
 function Hero({ b, tel, rating }) {
   return (
     <section id="top" className="relative isolate overflow-hidden bg-primary-deep text-white">
-      <Img
-        className="absolute inset-0 -z-20 h-full w-full object-cover object-[center_45%]"
-        src={b.hero.image}
-        alt={b.hero.imageAlt}
-        sizes="100vw"
-        eager
-      />
-      <div
-        className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,color-mix(in_srgb,var(--primaryDeep)_92%,transparent)_0%,color-mix(in_srgb,var(--primaryDeep)_80%,transparent)_60%,color-mix(in_srgb,var(--primaryDeep)_55%,transparent)_100%)] lg:bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_95%,transparent)_0%,color-mix(in_srgb,var(--primaryDeep)_82%,transparent)_45%,color-mix(in_srgb,var(--primaryDeep)_10%,transparent)_100%)]"
-        aria-hidden="true"
-      />
+      {b.hero.image && (
+        <>
+          {/* On a phone the photo is shown whole above the words; from lg up it is the ground behind
+              them, where the gradient covers it. A tall phone hero drawn from a wide photo showed a
+              sliver of it blown up past its pixels, which is why the photo is not the ground there. */}
+          <Img
+            className="relative block aspect-[16/10] w-full object-cover object-[center_45%] lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto lg:h-full"
+            src={b.hero.image}
+            alt={b.hero.imageAlt}
+            sizes="100vw"
+            eager
+            data-backdrop=""
+          />
+          <div
+            className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_95%,transparent)_0%,color-mix(in_srgb,var(--primaryDeep)_82%,transparent)_45%,color-mix(in_srgb,var(--primaryDeep)_10%,transparent)_100%)]"
+            aria-hidden="true"
+          />
+        </>
+      )}
       <div className={`${wrap} flex min-h-[min(78vh,700px)] items-center gap-16 pb-16 pt-14 sm:pb-20 lg:py-24 xl:gap-24`}>
         <div className="w-full max-w-[44rem] lg:max-w-[41rem] lg:flex-none">
           <Eyebrow dark>{b.hero.eyebrow}</Eyebrow>
@@ -339,11 +347,13 @@ export default function Plumbing({ b }) {
       <section id="why" className={`${anchor} bg-surface ${pad}`}>
         {/* Without a photo the heading and words take the left half and the numbered points the right, so neither half is left empty. */}
         <div className={`${wrap} grid items-center gap-10 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-20`}>
+          {/* A portrait frame covers from a wide photo by its height, so it draws on more pixels
+              across than its own width: `sizes` asks for the wider file rather than softening. */}
           <Img
             className="aspect-[4/3] w-full rounded-lg object-cover md:aspect-[4/5]"
             src={b.crew.image}
             alt={b.crew.imageAlt}
-            sizes="(max-width: 768px) 100vw, 45vw"
+            sizes="(max-width: 768px) 100vw, 60vw"
           />
           <div className={b.crew.image ? '' : 'contents'}>
             <div>
@@ -404,11 +414,23 @@ export default function Plumbing({ b }) {
       )}
 
       <section id="area" className={`${anchor} relative isolate overflow-hidden bg-primary-deep text-white`}>
-        <Img className="absolute inset-0 -z-20 h-full w-full object-cover" src={b.band.image} alt={b.band.imageAlt} />
-        <div
-          className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_94%,transparent),color-mix(in_srgb,var(--primaryDeep)_78%,transparent)_60%,color-mix(in_srgb,var(--primaryDeep)_45%,transparent))]"
-          aria-hidden="true"
-        />
+        {b.band.image && (
+          <>
+            {/* As in the hero: on a phone the photo is a strip above the words, because this band
+                runs tall with every town in it and a wide photo stretched behind all of it softens. */}
+            <Img
+              className="relative block aspect-[16/9] w-full object-cover lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto lg:h-full"
+              src={b.band.image}
+              alt={b.band.imageAlt}
+              sizes="100vw"
+              data-backdrop=""
+            />
+            <div
+              className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_94%,transparent),color-mix(in_srgb,var(--primaryDeep)_78%,transparent)_60%,color-mix(in_srgb,var(--primaryDeep)_45%,transparent))]"
+              aria-hidden="true"
+            />
+          </>
+        )}
         {/* Without a photo the towns take the right half beside the heading, so it is not left empty. */}
         <div className={`${wrap} py-[clamp(4.5rem,10vw,7.5rem)]`}>
           <div

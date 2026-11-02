@@ -1,0 +1,381 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "reserve",
+  "name": "Cedar Bayou Self Storage",
+  "shortName": "Cedar Bayou Self Storage",
+  "summary": "A local, second generation, family owned storage facility in Baytown with climate controlled units, drive-up units and outdoor parking for RVs, boats and trailers.",
+  "phone": "(832) 444-1345",
+  "email": "sherry@cbs-storage.com",
+  "address": "10051 Cedar Landing Dr",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77521",
+  "rating": 4.2,
+  "reviewCount": 15,
+  "hours": [
+    [
+      "Mon – Sat",
+      "7 AM – 9 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#123f7d",
+    "primaryDeep": "#001b4d",
+    "accent": "#d0021b",
+    "ink": "#0c1526",
+    "muted": "#4d5a72",
+    "surface": "#f1f4f9",
+    "line": "#d7dee8",
+    "heading": "'Zilla Slab', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/cedarbayouselfstorage/logo.webp",
+    "logoMono": "/brands/cedarbayouselfstorage/logo-mono.webp",
+    "logoWidth": 164,
+    "logoHeight": 58,
+    "logoRatio": 2.833,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.045,
+      0.045,
+      0.042,
+      0.232,
+      0.338,
+      0.448,
+      0.551,
+      0.658,
+      0.771,
+      0.888,
+      0.993
+    ]
+  },
+  "hero": {
+    "eyebrow": "Self storage in Baytown, TX",
+    "title": "Storage in Baytown,",
+    "titleAccent": "rented online any time.",
+    "lead": "Climate controlled and drive-up units, plus outdoor spaces for RVs, boats and trailers. Check availability, rent a unit and pay your rent online, any time, from any place."
+  },
+  "groups": [
+    {
+      "slug": "climate-controlled-units",
+      "title": "Climate Controlled Units",
+      "icon": "snowflake",
+      "summary": "Interior, ground level units for what you would rather not leave in Gulf Coast heat and humidity.",
+      "intro": "Our climate controlled units are inside the building and all on the ground level, so there are no stairs and no elevator between you and your unit. Deposits are fully refundable and rent is pro-rated when you move in.",
+      "services": [
+        {
+          "slug": "5x5-climate-controlled",
+          "title": "5 x 5 Climate Controlled",
+          "icon": "snowflake",
+          "text": "The smallest interior unit, about the size of a hall closet, for boxes, files and seasonal things.",
+          "points": [
+            "$65 / month",
+            "Ground Level",
+            "Interior",
+            "Deposit Fully Refundable"
+          ]
+        },
+        {
+          "slug": "5x10-climate-controlled",
+          "title": "5 x 10 Climate Controlled",
+          "icon": "snowflake",
+          "text": "Room for the contents of a bedroom, with space to walk in and reach the back.",
+          "points": [
+            "$75 / month",
+            "Ground Level",
+            "Interior",
+            "Deposit Fully Refundable"
+          ]
+        },
+        {
+          "slug": "10x10-climate-controlled",
+          "title": "10 x 10 Climate Controlled",
+          "icon": "snowflake",
+          "text": "A common size for furniture and appliances from a one or two bedroom home.",
+          "points": [
+            "$125 / month",
+            "Ground Level",
+            "Interior",
+            "Deposit Fully Refundable"
+          ]
+        },
+        {
+          "slug": "10x15-climate-controlled",
+          "title": "10 x 15 Climate Controlled",
+          "icon": "snowflake",
+          "text": "Half again as deep, for a larger household or a business keeping stock and records inside.",
+          "points": [
+            "$145 / month",
+            "Ground Level",
+            "Interior",
+            "Deposit Fully Refundable"
+          ]
+        },
+        {
+          "slug": "10x20-climate-controlled",
+          "title": "10 x 20 Climate Controlled",
+          "icon": "snowflake",
+          "text": "Our largest interior unit, about the size of a single garage.",
+          "points": [
+            "$165 / month",
+            "Ground Level",
+            "Interior",
+            "Deposit Fully Refundable"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "drive-up-units",
+      "title": "Drive-Up Units",
+      "icon": "building",
+      "summary": "Non climate-controlled units with a roll-up door you can back a truck or trailer right up to.",
+      "intro": "Every drive-up unit is on the ground level with a roll-up door, so you can park at the door and unload straight in. The alleys are wide enough for an 18-wheeler. Deposits are fully refundable and rent is pro-rated when you move in.",
+      "services": [
+        {
+          "slug": "5x10-drive-up",
+          "title": "5 x 10 Drive-Up",
+          "icon": "building",
+          "text": "A small drive-up unit for tools, boxes and yard equipment.",
+          "points": [
+            "$60 / month",
+            "Drive Up Unit",
+            "Deposit Fully Refundable"
+          ]
+        },
+        {
+          "slug": "10x10-drive-up",
+          "title": "10 x 10 Drive-Up",
+          "icon": "building",
+          "text": "Furniture, appliances and the contents of a small home, loaded straight off the truck.",
+          "points": [
+            "$85 / month",
+            "Drive Up Unit",
+            "Deposit Fully Refundable"
+          ]
+        },
+        {
+          "slug": "10x15-drive-up",
+          "title": "10 x 15 Drive-Up",
+          "icon": "building",
+          "text": "Extra depth for long items, a motorcycle or a contractor's materials.",
+          "points": [
+            "$110 / month",
+            "Drive Up Unit",
+            "Deposit Fully Refundable"
+          ]
+        },
+        {
+          "slug": "10x20-drive-up",
+          "title": "10 x 20 Drive-Up",
+          "icon": "building",
+          "text": "About a single garage, with a roll-up door at ground level.",
+          "points": [
+            "$125 / month",
+            "Drive Up Unit",
+            "Deposit Fully Refundable"
+          ]
+        },
+        {
+          "slug": "10x30-drive-up",
+          "title": "10 x 30 Drive-Up",
+          "icon": "building",
+          "text": "Our deepest drive-up unit, for a whole household or a business working out of one space.",
+          "points": [
+            "$150 / month",
+            "Drive Up Unit",
+            "Deposit Fully Refundable"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rv-boat-and-trailer-parking",
+      "title": "RV, Boat and Trailer Parking",
+      "icon": "car",
+      "summary": "Assigned outdoor spaces on a choice of surfaces, with no deposit.",
+      "intro": "Outdoor storage for RVs, boats and trailers, in assigned spaces behind the same gate, cameras and fencing as the units. You pick the surface, concrete or rock, and there is no deposit on outdoor storage.",
+      "services": [
+        {
+          "slug": "concrete-spaces",
+          "title": "Concrete Spaces",
+          "icon": "car",
+          "text": "Angled parking spaces on concrete, from a small trailer space up to a 13 by 40 space for a large coach.",
+          "points": [
+            "10 x 10 — $30 / month",
+            "10 x 20 — $40 / month",
+            "10 x 30 — $70 / month",
+            "10 x 40 — $90 / month",
+            "13 x 40 — $95 / month",
+            "Angled Parking Space",
+            "Assigned Parking",
+            "No Deposit"
+          ]
+        },
+        {
+          "slug": "rock-spaces",
+          "title": "Rock Spaces",
+          "icon": "car",
+          "text": "Angled or straight parking on rock, in the same assigned-space arrangement at a lower monthly rate.",
+          "points": [
+            "11 x 20 — $40 / month",
+            "10 x 30 — $60 / month",
+            "11 x 30 — $65 / month",
+            "10 x 36, 11 x 36, 12 x 36 and 15 x 36 — $70 / month",
+            "11 x 40 — $80 / month",
+            "Angled or Straight Parking",
+            "Assigned Parking",
+            "No Deposit"
+          ]
+        },
+        {
+          "slug": "boat-and-trailer-storage",
+          "title": "Boat and Trailer Storage",
+          "icon": "waves",
+          "text": "Boats, utility trailers and travel trailers park in the same assigned outdoor spaces, with a choice of surfaces.",
+          "points": [
+            "Choice of Surfaces for Parking",
+            "Assigned Parking",
+            "No Deposit",
+            "Gate access 6 a.m. to 10 p.m., seven days a week"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Move-in",
+    "title": "No administration fee, and your deposit comes back.",
+    "text": "Rentals are month to month, unit deposits are 100% refundable, there is no deposit at all on outdoor storage, and we pro-rate upon move-in."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "A local, second generation, family owned storage yard.",
+    "text": [
+      "We are a local, 2nd generation, family owned business. We are very security conscious, currently adding even more lighting and cameras. Cedar Bayou Self Storage always strives to make your experience with us as enjoyable and stress free as possible.",
+      "On this website you can check availability, rent a unit or RV (boat, rv, trailer) space , pay your rent, or a variety of other things. Book online or give us a call today! You can feel assured we are always here for you and try to accommodate any storage needs you might have.",
+      "Contact me by email at, sherry@cbs-storage.com. You may also call or text 832-444-1345."
+    ],
+    "values": [
+      {
+        "title": "Security",
+        "text": "We take the security of your property seriously, and our SSL secure website protects your personal information."
+      },
+      {
+        "title": "Customer Service",
+        "text": "We commit to providing you a clean, ready-to-rent unit and friendly, helpful employees."
+      },
+      {
+        "title": "Convenience",
+        "text": "Access your account from the convenience of your own home, 24 hours a day and 7 days a week. Facility access 6 a.m.-10 p.m. Sunday-Saturday."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What are the gate hours?",
+      "a": "Gate hours are 6 a.m. to 10 p.m., seven days a week. The office is a different thing: you can contact us from 7 a.m. to 9 p.m., Monday through Saturday."
+    },
+    {
+      "q": "Do I have to sign a long lease?",
+      "a": "No. Rentals are month to month, and rent is pro-rated when you move in."
+    },
+    {
+      "q": "Is there a deposit, and do I get it back?",
+      "a": "Unit deposits are 100% refundable, and there are no deposits on outdoor storage. There is no administration fee."
+    },
+    {
+      "q": "Can I rent and pay online?",
+      "a": "Yes. You can check availability, rent and pay, all online, any time and from any place. Email billing, text reminders and online account review are available."
+    },
+    {
+      "q": "How do I get in, and do you sell locks?",
+      "a": "Every tenant gets an individual access code for the electronic gate. Disc locks and tongue locks are available, and a handcart can be borrowed through the office."
+    },
+    {
+      "q": "What can I pay with?",
+      "a": "Cash, checks and credit cards are accepted."
+    }
+  ],
+  "serviceArea": [
+    "Baytown"
+  ],
+  "facts": [
+    {
+      "heading": "Security",
+      "items": [
+        "High Level Security Cameras",
+        "Digital Video Surveillance With Nightvision",
+        "Security Lighting",
+        "Individually Coded Access",
+        "Latest Gate System",
+        "Electronic Gate Access",
+        "High Security Fencing"
+      ]
+    },
+    {
+      "heading": "Gate Hours",
+      "text": "Gate hours are 6 a.m. to 10 p.m., seven days a week. Office contact hours are 7 a.m. to 9 p.m., Monday through Saturday."
+    },
+    {
+      "heading": "Facility",
+      "items": [
+        "All Units Are Ground Level",
+        "Roll-Up Doors",
+        "Drive-up Access",
+        "Large Variety of Unit Sizes",
+        "18-Wheeler Alleys",
+        "Choice of Surfaces for Parking",
+        "Outdoor Storage for RV, Boats and Trailers",
+        "Handcart Available Through Office"
+      ]
+    },
+    {
+      "heading": "Renting and Payment",
+      "items": [
+        "Month to Month Rentals",
+        "Book and Pay Online",
+        "No Administration Fee",
+        "Unit deposits are 100% refundable",
+        "No deposits on outdoor storage",
+        "Pro-Rated Move In",
+        "Cash, Checks, and Credit Cards Accepted",
+        "Email Billing Available",
+        "Text Reminders Available",
+        "Online Account Review"
+      ]
+    },
+    {
+      "heading": "Locks",
+      "items": [
+        "Disc Locks Available",
+        "Tongue Locks Available"
+      ]
+    },
+    {
+      "heading": "Mailing Address",
+      "text": "Cedar Bayou Self Storage, P.O. Box 1783, Baytown, TX 77522. The facility itself is at 10051 Cedar Landing Dr, Baytown, TX 77521."
+    },
+    {
+      "heading": "Call or Text",
+      "text": "You can call or text 832-444-1345, or email Sherry at sherry@cbs-storage.com. The same number is listed as both the phone and the cell."
+    },
+    {
+      "heading": "Online Account",
+      "text": "Rent a storage unit online any time, and review your account from home, 24 hours a day and 7 days a week. Tenants already renting log in under Make a Payment/Login to pay and to review the account."
+    },
+    {
+      "heading": "Availability",
+      "text": "Every size on the rent page shows what is left to rent, and offers a waiting list to join when a size is full."
+    },
+    {
+      "heading": "Unit Sizes",
+      "text": "We have a variety of unit sizes, and outdoor storage to meet every storage need. Climate controlled units run 5 x 5 to 10 x 20, drive-up units 5 x 10 to 10 x 30, and outdoor spaces 10 x 10 to 13 x 40."
+    }
+  ]
+}

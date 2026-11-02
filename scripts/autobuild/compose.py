@@ -405,6 +405,10 @@ def trim(text, limit):
     # Rainforest Dental") takes its capital, unless the stop ends a shortening.
     text = re.sub(r"\b([A-Za-z]{2,})([.!?] )([a-z])",
                   lambda m: m.group(0) if m.group(1).lower() in SHORTENED else m.group(1) + m.group(2) + m.group(3).upper(), text)
+    # A sentence their page runs into the next without its stop ("What you
+    # find is amazing It's almost a museum") takes one where a lowercase word
+    # meets a capitalised pronoun's shortening, which opens no name or title.
+    text = re.sub(r"\b([a-z]{2,})(?= (?:It|We|They|You|He|She|There)['’](?:s|re|ve|ll|d)\b)", r"\1.", text)
     for wrong, right in MISSPELT.items():
         text = re.sub(wrong, right, text)
     # A name that ends in a plural ("Aloha Swimming Pools's expert services")
