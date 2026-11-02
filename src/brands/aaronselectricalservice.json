@@ -11,7 +11,7 @@
   "state": "TX",
   "zip": "77386",
   "rating": 4.9,
-  "reviewCount": 688,
+  "reviewCount": 748,
   "since": 2013,
   "hours": [
     [
@@ -36,22 +36,22 @@
     "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
     "logo": "/brands/aaronselectricalservice/logo.webp",
     "logoMono": "/brands/aaronselectricalservice/logo-mono.webp",
-    "logoWidth": 179,
+    "logoWidth": 180,
     "logoHeight": 48,
-    "logoRatio": 3.729,
+    "logoRatio": 3.749,
     "logoGround": "#ffffff",
     "logoReads": [
-      0.535,
-      0.467,
-      0.46,
-      0.524,
-      0.592,
-      0.662,
-      0.728,
-      0.794,
-      0.863,
-      0.933,
-      1.0
+      0.099,
+      0.085,
+      0.062,
+      0.049,
+      0.57,
+      0.639,
+      0.703,
+      0.765,
+      0.812,
+      0.858,
+      0.874
     ]
   },
   "emergency": {
@@ -65,16 +65,13 @@
       "number": "31569"
     }
   ],
-  "financing": {
-    "text": "Financing is available on your electrical work, with same-day approval."
-  },
   "hero": {
     "eyebrow": "Licensed electricians in Spring and the greater Houston area",
     "title": "Aaron's Electrical Service,",
     "titleAccent": "proudly serving the Houston area.",
     "lead": "A Christian, family-owned team of licensed and insured electricians for your wiring, panel, lighting and standby generator, with an accurate estimate, no hidden fees and a lifetime warranty on the work.",
     "image": "/brands/aaronselectricalservice/hero",
-    "imageAlt": "A single-storey house at dusk with its exterior and interior lighting on"
+    "imageAlt": "A single-storey house at dusk with its porch and interior lights on"
   },
   "groups": [
     {
@@ -83,8 +80,6 @@
       "icon": "home",
       "summary": "Wiring, panels, lighting and safety devices for single-family homes, mobile homes and townhomes.",
       "intro": "You rely on your home's electrical system every day. If your breakers keep tripping, your panel is overheating or your lights are simply outdated, our licensed and insured electricians have the answer that works for your home and family. We work on single-family homes, mobile homes and townhomes.",
-      "image": "/brands/aaronselectricalservice/residential",
-      "imageAlt": "A technician testing circuits inside an open electrical panel",
       "services": [
         {
           "slug": "wiring",
@@ -161,10 +156,34 @@
           ]
         },
         {
+          "slug": "smoke-co-detectors",
+          "title": "Smoke and Carbon Monoxide Detectors",
+          "icon": "shield",
+          "text": "Smoke detectors should be there to save your life in dire circumstances. We fit hardwired, interconnected smoke alarms throughout the home, and carbon monoxide alarms to protect against potentially fatal gas exposure.",
+          "points": [
+            "Smoke detector wiring, installation and repair",
+            "Commercial smoke detectors in apartments, rental properties and offices",
+            "Local and state laws require smoke alarms in every bedroom, as well as hallways, kitchens and staircases",
+            "A wired smoke detector protects you 24/7/365 without the low-battery beeping, and keeps a backup battery",
+            "Replace alarms more than 10 years old, after remodeling, after converting a spare room to a bedroom, or when one fails a test",
+            "Carbon monoxide alarms fitted in the same places as smoke alarms and near HVAC equipment",
+            "Free quote"
+          ]
+        },
+        {
           "slug": "fans",
           "title": "Attic and Ceiling Fans",
           "icon": "fan",
-          "text": "Attic fans and ceiling fans installed and repaired, wired to the right switch."
+          "text": "Attic fans installed and repaired in homes and businesses, sized and placed so the air circulates smoothly and evenly. Ceiling fan wiring handled by licensed and certified electricians.",
+          "points": [
+            "Proper size and placement identified for even circulation",
+            "Reduces strain on your HVAC systems and prolongs the life of the furnace and air conditioner",
+            "Keeps the attic cool and dry, limiting moisture, mold growth, pest infestations and wood rot",
+            "Houston attics can reach 150 degrees or higher in summer",
+            "Blade direction reverses in cooler months to recirculate warm air",
+            "Attic fan repairs",
+            "A ceiling fan motor should be wired and secured by a licensed electrician"
+          ]
         }
       ]
     },
@@ -174,8 +193,6 @@
       "icon": "building",
       "summary": "Installations, repairs, lighting and maintenance for offices, warehouses, retail stores and restaurants.",
       "intro": "We are here to keep your business running day or night. Your employees and guests need reliable power for everything from keeping the lights on to climate control, and any electrical problem in a commercial setting can mean lost business. Our fully licensed and insured technicians are available at all times to get your building back up and running.",
-      "image": "/brands/aaronselectricalservice/commercial",
-      "imageAlt": "Pendant lights hanging in a row from a commercial ceiling",
       "services": [
         {
           "slug": "commercial-installations",
@@ -228,9 +245,20 @@
         },
         {
           "slug": "surge-protection",
-          "title": "Surge Protection",
+          "title": "Whole-House Surge Protection",
           "icon": "zap",
-          "text": "Surge protection installed to keep a spike on the utility line from reaching your equipment."
+          "text": "A whole-house surge protector covers all of your wiring and appliances, and the protection lasts infinitely longer than any plug-in strip. We install the device next to your service panel or outside your home.",
+          "points": [
+            "Surges start inside the home too, when a large appliance such as the air conditioner or dishwasher cycles on",
+            "Surges also enter from phone and cable lines",
+            "A power strip only protects what is plugged into it, and its sacrificial metal strip wears out quickly",
+            "Protects TVs, computers, kitchen appliances, security systems, thermostats and anything with a circuit board",
+            "Recommended for older or historic homes with outdated wiring",
+            "Recommended if you use sensitive computerised or smart home devices",
+            "Recommended if you get breaker trips or flickering lights",
+            "Same-day appointments, installed in one visit",
+            "Free quote"
+          ]
         }
       ]
     },
@@ -241,7 +269,7 @@
       "summary": "Repairs, wiring installations and electrical safety work, from a small fix to a major install.",
       "intro": "From small repairs to major installations, your electrical system should always be worked on by trained, licensed electricians. Once you know a Houston electrician you can trust to do the work for a fair price, you can feel a lot more confident about your safety and comfort. We guarantee to be on time in a fully stocked vehicle.",
       "image": "/brands/aaronselectricalservice/general-electrician",
-      "imageAlt": "A person in work gloves using a screwdriver on an electrical outlet",
+      "imageAlt": "Gloved hands fitting a white electrical outlet with a screwdriver",
       "services": [
         {
           "slug": "electrical-repairs",
@@ -301,8 +329,6 @@
       "icon": "battery",
       "summary": "Whole-home and commercial standby generators, repairs, and transfer switches for portable units.",
       "intro": "When a power outage or hurricane strikes, you need more than candles to light the way. We install whole-home generators and commercial standby generators, as well as interlock kits for easy operation of a portable generator, and we offer emergency service for standby and commercial units.",
-      "image": "/brands/aaronselectricalservice/generators",
-      "imageAlt": "A large standby generator installed beside wall-mounted power inverters",
       "services": [
         {
           "slug": "generator-installation",
@@ -316,7 +342,8 @@
             "Larger models can run central HVAC",
             "Simple to maintain and refuel",
             "Properly sized, integrated with your electrical system and compliant with local codes",
-            "Assessment through to final setup and testing"
+            "Assessment through to final setup and testing",
+            "Briggs & Stratton standby generators installed, replaced and repaired"
           ]
         },
         {
@@ -326,7 +353,8 @@
           "text": "If your generator is not working right, we offer prompt repairs to get it back on track, plus routine testing and maintenance over the years.",
           "points": [
             "All the top brands serviced",
-            "Emergency service for standby units"
+            "Emergency service for standby units",
+            "Same-day and after-hours emergency service"
           ]
         },
         {
@@ -356,32 +384,28 @@
     "title": "Save on your service today.",
     "text": "Take $25 off any service, and ask about the whole house surge protector deal and the free panel inspection.",
     "price": "$25",
-    "priceNote": "off any service",
-    "image": "/brands/aaronselectricalservice/offers",
-    "imageAlt": "A row of white circuit breakers in a panel"
+    "priceNote": "off any service"
   },
   "about": {
     "eyebrow": "About us",
-    "title": "A Christian, family-owned electrical company.",
+    "title": "A Christian, family-owned and operated team.",
     "text": [
-      "When you need quality electrical services in the Houston area, turn to the Aaron's Electrical Service team. We offer residential and commercial electrical services, and we are available 24 hours Monday through Saturday.",
-      "We are a Christian, family-owned and operated team, and we pride ourselves on truth, integrity and honor in everything we do. It is our goal to set ourselves apart in the industry as a trustworthy company that takes pride in serving all those we encounter.",
-      "Your neighbors have relied on our team for top-rated service since 2013. We are committed to quality, and all of our work is backed by a 100% satisfaction guarantee and a lifetime workmanship warranty. We are closed on Sundays for faith, family and friends."
+      "We offer residential and commercial electrical services, and we are available 24 hours from Monday-Saturday. We are a Christian, family-owned and operated team. We pride ourselves on truth, integrity, and honor in everything we do. It is our goal to set ourselves apart in the industry as a trustworthy company that takes pride in serving all those we encounter.",
+      "We are committed to quality, and are proud to offer 100% satisfaction guarantee on all our services.",
+      "Whether you need help with flickering lights or whole-home rewiring, our trained and experienced team is here to provide top-notch residential and commercial electrical solutions."
     ],
-    "image": "/brands/aaronselectricalservice/team",
-    "imageAlt": "The owners of Aaron's Electrical Service",
     "values": [
       {
         "title": "Accurate estimates",
-        "text": "We give you an accurate estimate with no hidden fees, and we have been transparent about our costs from the very beginning."
+        "text": "Additionally, we will provide you with an accurate estimate and no hidden fees. We have been extremely transparent about our costs from the very beginning."
       },
       {
         "title": "On-time service",
-        "text": "We guarantee our electricians show up on time, ready to work, in a fully equipped service vehicle."
+        "text": "We guarantee that our electricians will show up on time and ready to work."
       },
       {
         "title": "Customer first",
-        "text": "We value strong customer relationships formed on honesty and trust, and we encourage you to ask our electricians any question you have."
+        "text": "Because we emphasize customer service, we encourage our customers to ask our electricians any questions or raise any concerns that they may have."
       }
     ]
   },
@@ -462,20 +486,23 @@
       "heading": "License",
       "items": [
         "TX State Electrical Contractor's License #31569",
-        "Every electrician on the team is licensed, insured and bonded",
-        "Licensed, certified and insured electrical masters on the team"
+        "Every electrician on the team is licensed and insured",
+        "Licensed, certified and insured electrical masters on the team",
+        "Insured and bonded contractors"
       ]
     },
     {
       "heading": "Guarantee and warranty",
       "items": [
         "100% satisfaction guarantee on all our services",
-        "Lifetime workmanship warranty"
+        "Lifetime workmanship warranty on all our services"
       ]
     },
     {
-      "heading": "Award",
-      "text": "Houston's Best Gold Winner, 2025."
+      "heading": "Recognition",
+      "items": [
+        "Listed with the Better Business Bureau"
+      ]
     },
     {
       "heading": "Current offers",
@@ -491,13 +518,21 @@
       "items": [
         "Briggs & Stratton",
         "Square D",
-        "Eaton",
-        "Generators from Briggs & Stratton, Honda, Cummins and more"
+        "Eaton"
       ]
     },
     {
-      "heading": "Payment",
-      "text": "All major credit cards accepted, and a free estimate before the work."
+      "heading": "Payment and estimates",
+      "text": "All major credit cards accepted, and free estimates and same-day appointments."
+    },
+    {
+      "heading": "Phone numbers",
+      "items": [
+        "Houston: (281) 719-0464",
+        "Houston: (832) 699-0531",
+        "Dallas: (469) 998-0097",
+        "Dallas: (469) 802-0231"
+      ]
     },
     {
       "heading": "Counties served",
@@ -508,20 +543,21 @@
       "items": [
         "Skilled, licensed electricians",
         "Top-quality work at fair, upfront prices",
-        "Complete courtesy and respect, and technicians who clean up after themselves",
+        "Complete courtesy and respect",
         "Guaranteed on-time service",
         "Fully equipped service vehicles",
         "Same-day service for routine service calls",
-        "24-hour emergency service, and after-hours service",
+        "24-hour emergency service",
         "A 100% satisfaction guarantee on all our services",
-        "Exclusive specials, discounts and coupons",
-        "Locally owned and operated"
+        "A lifetime warranty on all our services",
+        "Exclusive specials, discounts and coupons"
       ]
     },
     {
       "heading": "Code",
       "items": [
         "Texas electrical code requires arc-fault circuit interrupter breakers",
+        "Since 1999 arc fault protection has been required by the NEC in bedrooms, and since 2008 in new or renovated homes",
         "The National Electrical Code is updated every three years, and we suggest scheduling an inspection to coincide with each update"
       ]
     },
@@ -539,11 +575,7 @@
     },
     {
       "heading": "Dallas-Fort Worth area",
-      "text": "We also serve the Dallas-Fort Worth area from our Irving office: Plano, Arlington, Irving, Lewisville, Garland, Allen, Richardson, Grapevine, Carrollton, Mesquite, Mansfield, Midlothian and Cedar Hill."
-    },
-    {
-      "heading": "Financing",
-      "text": "Financing is available on your electrical work, with same-day approval."
+      "text": "We also serve the Dallas-Fort Worth area from our Irving office: Allen and Plano in Collin County; Carrollton, Cedar Hill, Dallas, Garland, Irving, Lewisville, Mesquite and Richardson in Dallas County; Argyle, Denton and Flower Mound in Denton County; Ennis, Midlothian, Red Oak and Waxahachie in Ellis County; Granbury in Hood County; Forney, Kaufman and Terrell in Kaufman County; Aledo and Weatherford in Parker County; Rockwall in Rockwall County; and Arlington, Burleson, Euless, Fort Worth, Grapevine, Haslet, Keller and Mansfield in Tarrant County."
     },
     {
       "heading": "Offices",
@@ -565,6 +597,31 @@
     {
       "heading": "Hiring",
       "text": "We are now hiring. Call us or leave a form."
+    },
+    {
+      "heading": "Electrical maintenance program",
+      "text": "Our maintenance programs are customized to each customer's needs, so you can have exactly what you need to ensure your electrical systems are serving you well. Electrical maintenance helps you avoid the cost of a shutdown by identifying and rectifying malfunctions before they affect your productivity."
+    },
+    {
+      "heading": "Service we are asked for most",
+      "items": [
+        "Panel install",
+        "Wiring",
+        "Breaker box repair",
+        "EV charger install",
+        "Generators",
+        "General electrician",
+        "Residential repair",
+        "Commercial repair"
+      ]
+    },
+    {
+      "heading": "Policies",
+      "text": "A privacy policy and a disclaimer are published on the site, and you can opt in to emails when you send the service request form."
+    },
+    {
+      "heading": "Since 2013",
+      "text": "Since 2013, the high-quality technicians at Aaron's Electrical Service have exceeded customers' expectations throughout the Houston and Dallas, Texas, area. Our dedicated and honest team guarantees you are completely satisfied with our work."
     }
   ]
 }

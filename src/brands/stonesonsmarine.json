@@ -1,0 +1,418 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Stone & Sons Marine",
+  "shortName": "Stone & Sons Marine",
+  "summary": "Outboard motor parts and service in Houston, with one of the world's largest on-hand inventories of hard-to-find, obsolete and no longer manufactured parts.",
+  "phone": "(713) 686-3011",
+  "email": "stone@outboard-parts.com",
+  "address": "3410 Oak Forest Dr",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77018",
+  "since": 1958,
+  "hours": [
+    [
+      "Mon – Fri",
+      "6 AM – 3 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#33679a",
+    "primaryDeep": "#1d3f61",
+    "accent": "#c8912f",
+    "ink": "#13202e",
+    "muted": "#4d6070",
+    "surface": "#eff5fa",
+    "line": "#d6e2ec",
+    "heading": "'Cabin', system-ui, sans-serif",
+    "body": "'Lato', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&family=Lato:wght@400;700&display=swap",
+    "logo": null
+  },
+  "hero": {
+    "eyebrow": "Outboard motor parts and service in Houston",
+    "title": "Boat motor parts and service,",
+    "titleAccent": "back on the water.",
+    "lead": "A factory-authorized service center for Evinrude outboards, servicing all major brands, with aisle after aisle of new, used and long-discontinued parts. Quality, timely service is our goal."
+  },
+  "groups": [
+    {
+      "slug": "outboard-service",
+      "title": "Outboard Service",
+      "icon": "wrench",
+      "summary": "Factory-authorized Evinrude service, plus repair and maintenance on all major outboard brands.",
+      "intro": "We are a factory-authorized service center for Evinrude outboards and can perform your warranty and maintenance needs. We service all major brands of outboard motors. Quality, timely service is our goal.",
+      "services": [
+        {
+          "slug": "evinrude-warranty-service",
+          "title": "Factory-Authorized Evinrude Service",
+          "icon": "shield",
+          "text": "As a factory-authorized service center for Evinrude outboards, we handle warranty and maintenance work on your motor.",
+          "points": [
+            "Warranty work on Evinrude outboards",
+            "Original factory parts and equipment",
+            "OEM-recommended procedures"
+          ]
+        },
+        {
+          "slug": "all-brand-outboard-repair",
+          "title": "All-Brand Outboard Repair",
+          "icon": "settings",
+          "text": "We service all major brands of outboard motors, from current four strokes to motors older than the people who own them.",
+          "points": [
+            "Evinrude, Johnson, Mercury, Yamaha",
+            "Suzuki, Honda and Chrysler",
+            "Older motors other shops turn away"
+          ]
+        },
+        {
+          "slug": "diagnostics-and-tune-ups",
+          "title": "Diagnostics And Maintenance",
+          "icon": "gauge",
+          "text": "Starting trouble, bogging, surging, overheat alarms and charging faults traced to the cause, with maintenance to keep them from coming back.",
+          "points": [
+            "Fuel restriction, carburetor and timing work",
+            "Water pump and four stroke maintenance",
+            "Ignition, starter, trim and charging faults"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "outboard-parts",
+      "title": "Outboard Parts",
+      "icon": "clipboard",
+      "summary": "One of the world's largest on-hand inventories of parts that are hard to find, obsolete or no longer manufactured.",
+      "intro": "We are a go-to supplier of original factory parts and equipment, and a remanufacturer of major components. Our warehouse holds the largest inventory of new and used Evinrude and Johnson parts in the world, some of it dating back to 1932. Instead of a motor gathering dust for months, you can be back in the water within a few days.",
+      "services": [
+        {
+          "slug": "original-factory-parts",
+          "title": "Original Factory Parts",
+          "icon": "shield",
+          "text": "A go-to supplier of original factory parts and equipment, OEM recommended.",
+          "points": [
+            "New parts across the major outboard brands",
+            "Original equipment, not look-alikes"
+          ]
+        },
+        {
+          "slug": "obsolete-and-discontinued-parts",
+          "title": "Obsolete And Discontinued Parts",
+          "icon": "timer",
+          "text": "Parts that are hard to find, obsolete or no longer manufactured, with stock going back to 1932. People are amazed when they find previously discontinued and unavailable parts.",
+          "points": [
+            "Largest inventory of new and used Evinrude and Johnson parts in the world",
+            "Over 500 used outboard motors held as cores",
+            "Cowlings, hardware and fasteners for decades-old models"
+          ]
+        },
+        {
+          "slug": "remanufactured-components",
+          "title": "Remanufactured Components",
+          "icon": "fan",
+          "text": "We remanufacture major components, tearing down cores and restoring the parts with special machines to bring them back to life.",
+          "points": [
+            "Major components remanufactured in house",
+            "Cores torn down, cleaned and restored"
+          ]
+        },
+        {
+          "slug": "parts-request-and-shipping",
+          "title": "Parts Request And Shipping",
+          "icon": "chart",
+          "text": "Email us what you are looking for and we will find it. Outboard motor owners around the world locate parts with us, and we can send a part out to you.",
+          "points": [
+            "Email stone@outboard-parts.com with the part you need",
+            "Include your name, phone number and email address",
+            "Parts shipped to customers across the country"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sterndrive-and-inboard",
+      "title": "Sterndrive And Inboard",
+      "icon": "waves",
+      "summary": "Sterndrive repairs for OMC, Cobra, Mercruiser and Volvo, and inboard boat service on all brands.",
+      "intro": "Beyond outboards we take on sterndrive repairs and inboard boat service. Sterndrive work covers OMC, Cobra, Mercruiser and Volvo, and we service inboard boats of all brands.",
+      "services": [
+        {
+          "slug": "sterndrive-repairs",
+          "title": "Sterndrive Repairs",
+          "icon": "settings",
+          "text": "Sterndrive repairs for OMC, Cobra, Mercruiser and Volvo drives.",
+          "points": [
+            "OMC and Cobra",
+            "Mercruiser",
+            "Volvo"
+          ]
+        },
+        {
+          "slug": "inboard-boat-service",
+          "title": "Inboard Boat Service",
+          "icon": "wrench",
+          "text": "Inboard boat service on all brands.",
+          "points": [
+            "All inboard brands serviced"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Service special",
+    "title": "Ask about our 48 hour service special.",
+    "text": "Ask about our 48 hour service special, where we get you back on the water."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "A Houston parts warehouse that is almost a museum.",
+    "text": [
+      "On one side of the street stands a spacious two-story building with aisle after aisle of new outboard motor parts. Shiny and bright, this is Stone & Sons Marine. At first glance, this motor repair shop may seem typical of the thousands of repair facilities across the country and around the world. It is what lies on the other side of the street that is the heart and soul of the Stone & Sons legacy. There are no polished marble floors on the other side of the street. What you find is amazing. It’s almost a museum for outboard motor parts, some dating back to 1932.",
+      "Jack Stone, Sr. has built a mighty business from his humble beginnings – operating out of the bed of a “service vehicle” (his old pickup) back in 1958. Walking through Stone’s warehouse, you get the impression he has collected every used outboard motor from that time until now. Indeed, he has. Stone boasts the largest inventory of new and used Evinrude and Johnson parts in the world. Boat owners across the country are glad he and his son, Jack Jr., have gone to the effort. Instead of an outboard motor gathering dust for months or years, they can contact the company and be back in the water within a few days.",
+      "Pointing to over 500 used outboard motors, Stone Jr., whose nickname is “Outboard Jack,” says, “These are just cores, our product in its raw form. We take this stuff that is junk to most people and we tear it down and clean the parts.” The company uses special machines to restore the parts and bring them back to life.",
+      "In fact, it was the lack of availability of parts that gave Stone Sr. the idea for concentrating on the parts business. When he took in engines to repair, he often had difficulty locating parts. “My vision was a good service department and parts availability, so people would not have to go hunting everywhere for parts,” he says. “When we disassemble an engine we put the parts in inventory. That’s the only way you can have a complete inventory.",
+      "Stone Sr. credits Outboard Marine Corp., the parent company of Evinrude and Johnson, for helping his business grow by providing parts contracts and recommending Stone & Sons Marine to customers as a parts supplier."
+    ],
+    "values": [
+      {
+        "title": "Quality, Timely Service",
+        "text": "Quality, timely service is our goal, on every motor that comes through the shop."
+      },
+      {
+        "title": "Your Boat Motor Expert",
+        "text": "Decades of outboard knowledge, down to telling you the model year of a single bolt."
+      },
+      {
+        "title": "Parts On The Shelf",
+        "text": "One of the world's largest on-hand inventories, so you are back in the water within a few days."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Trim clicks but will not work",
+      "a": "Relays, bad connections or the trim motor."
+    },
+    {
+      "q": "Starter solenoid clicks, no spin",
+      "a": "Solenoid, starter, bad battery cable connections or a weak battery."
+    },
+    {
+      "q": "No spinning of starter or trim",
+      "a": "Bad fuse."
+    },
+    {
+      "q": "Motor bogs",
+      "a": "Fuel restriction to the motor, carbs dirty or misadjusted, or timing not advancing."
+    },
+    {
+      "q": "Motor spits or coughs",
+      "a": "Lean fuel to air mixture, dirty carbs, carbs not synchronized or bad timing."
+    },
+    {
+      "q": "Hard cold start",
+      "a": "Choke butterfly not closing tight, primer choke not priming the motor, dirty carbs, or the motor not primed."
+    },
+    {
+      "q": "Hard to start when hot",
+      "a": "VST vapor pump."
+    },
+    {
+      "q": "Runs a minute and dies",
+      "a": "Fuel pump or water in the fuel."
+    },
+    {
+      "q": "High speed miss",
+      "a": "Primary connections at the coils, weak charge coil output, a faulty power pack, or 12 volts in the kill wire."
+    },
+    {
+      "q": "Solid alarm",
+      "a": "Overheat or fuel restriction."
+    },
+    {
+      "q": "Intermittent alarm",
+      "a": "Low oil in the oil tank, or no oil flow on the motor."
+    },
+    {
+      "q": "Excessive battery voltage",
+      "a": "Voltage regulator."
+    },
+    {
+      "q": "Starter drags",
+      "a": "Battery cable connections, the battery or the starter."
+    },
+    {
+      "q": "Motor surges",
+      "a": "Fuel restriction or an ignition miss."
+    },
+    {
+      "q": "Primer bulb collapsed",
+      "a": "Fuel restriction from the tank."
+    },
+    {
+      "q": "Will not exceed 2500 RPM and shudders",
+      "a": "The motor is in SAFE mode: overheating, oiling or fuel restriction."
+    },
+    {
+      "q": "No water from the motor indicator, with no alarm",
+      "a": "Plugged hose or outlet."
+    },
+    {
+      "q": "Hard shifting",
+      "a": "Shift interrupter, tight control cables or a corroded shift rod housing."
+    },
+    {
+      "q": "Grinds when shifting",
+      "a": "Worn clutch dog and gear."
+    },
+    {
+      "q": "Will not go into gear",
+      "a": "Broken anchor on the shift cable at the control, a broken drive shaft or a bad hub in the prop."
+    },
+    {
+      "q": "Vibrates in gear",
+      "a": "Bent prop shaft or a prop out of balance."
+    },
+    {
+      "q": "Bad hole shot",
+      "a": "Worn prop or an engine problem."
+    },
+    {
+      "q": "Motor not reaching full RPM",
+      "a": "Wrong pitch prop or an engine problem."
+    },
+    {
+      "q": "Milky oil in the lower unit",
+      "a": "Water."
+    },
+    {
+      "q": "Grey or metallic oil in the lower unit",
+      "a": "Failure in the gear case."
+    }
+  ],
+  "serviceArea": [
+    "Houston"
+  ],
+  "facts": [
+    {
+      "heading": "Outboard Brands Serviced",
+      "items": [
+        "Evinrude",
+        "Johnson",
+        "Mercury",
+        "Yamaha",
+        "Suzuki",
+        "Honda",
+        "Chrysler"
+      ]
+    },
+    {
+      "heading": "Sterndrive Repairs For",
+      "items": [
+        "OMC",
+        "Cobra",
+        "Mercruiser",
+        "Volvo"
+      ]
+    },
+    {
+      "heading": "Inboard Boat Service",
+      "text": "All brands."
+    },
+    {
+      "heading": "Factory Authorization",
+      "text": "A factory-authorized service center for Evinrude outboards, able to perform your warranty and maintenance needs. A go-to supplier of original factory parts and equipment, remanufacturer of major components and OEM recommended."
+    },
+    {
+      "heading": "The Stone Family",
+      "items": [
+        "Jack Stone, Sr., founder, started the business in 1958",
+        "Jack Stone, Jr., known as Outboard Jack, works alongside his father"
+      ]
+    },
+    {
+      "heading": "Looking For A Part",
+      "text": "We are here to help. Send us an email at stone@outboard-parts.com. Please include what part you are looking for, or what question you have, with your name, phone number and email address."
+    },
+    {
+      "heading": "Ask Jack",
+      "text": "Jack Stone is a wealth of knowledge on outboard motors, parts and repair. Check out his blog filled with in-depth discussions and tips on all things boat."
+    },
+    {
+      "heading": "Service Special",
+      "text": "Ask about our 48 hour service special, where we get you back on the water."
+    },
+    {
+      "heading": "Visit Us",
+      "text": "Better yet, see us in person. We love our customers, so feel free to visit during normal business hours. We are open Monday to Friday from 6:00am to 3:00pm at 3410 Oak Forest Dr, Houston, TX 77018."
+    },
+    {
+      "heading": "Follow Us",
+      "text": "Follow us on Facebook for our tips feed, at facebook.com/Stone-and-Sons-Marine-253870067993540."
+    },
+    {
+      "heading": "Ask Jack Tips",
+      "items": [
+        "Control your step",
+        "You get what you pay for",
+        "More Ethanol Problems, an every day occurrence",
+        "Battery terminal connections, how a $1 wing nut can cost you big money",
+        "Ethanol Treatment, when it goes wrong and what to do",
+        "Don't believe everything you read on the internet",
+        "Prop Shaft, save yourself money and time with free advise",
+        "How often should you change your water pump?",
+        "Not using the right part could cost you thousands $$$",
+        "Easy prop maintenance",
+        "Even a new part or new motor can be bad",
+        "Low water pick-ups, there are some disadvantages!",
+        "Four Stroke Maintenance",
+        "Trailer Bearing Grease, to much of a good thing",
+        "The effects of ethanol on fuel hose",
+        "I didn't hit anything! Did I?",
+        "Boat Trailer Care",
+        "Fuel Filter",
+        "Ask about our 48hr service special, where we get you back on the water",
+        "Water in your fuel can cause all kinds of issues",
+        "Need a part sent to you, we got that!",
+        "I love my Johnson and my wife too",
+        "When A Memory is a BAD Thing",
+        "Do I really need to wax it???",
+        "How fast are we?",
+        "Evinrude E-Tec, problems???",
+        "It might be older than you, but they are still great motors",
+        "Having a Meltdown on the water is never a good thing",
+        "Money to burn? The enemy of the wallet and boats",
+        "The Damage we do to our lower unit",
+        "Is it time for a new Prop?"
+      ]
+    },
+    {
+      "heading": "Why Owners Call Us For Old Parts",
+      "items": [
+        "Boat engines do not wear out as quickly as car engines, because the average boater puts only 20 hours a year on a motor",
+        "A surprising number of old Evinrude and Johnson motors are still in existence in the United States and around the world",
+        "When a customer orders an obscure part, such as a cowling to a 1964 model Johnson motor, Stone & Sons usually has it",
+        "Jack Jr. can take a screw or a bolt brought in over the counter and tell you it is a 1954 model seven-and-a-half horsepower exhaust cover bolt"
+      ]
+    },
+    {
+      "heading": "Parts By Email, Worldwide",
+      "items": [
+        "Outboard motor owners around the world locate parts at Stone & Sons by email",
+        "Boat owners across the country order from the warehouse rather than let a motor sit for months",
+        "Email the part you need, or your question, with your name, phone number and email address"
+      ]
+    },
+    {
+      "heading": "Parts Request Form",
+      "text": "You can also send a parts request from the site with your name, email and phone number, and we will get back to you."
+    }
+  ]
+}

@@ -1,0 +1,716 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "service",
+  "name": "Luke's Plumbing & Air Conditioning",
+  "shortName": "Luke's",
+  "summary": "Licensed plumbing, heating and cooling for homes and small businesses across Houston, from the Heights to Katy, Sugar Land and Spring.",
+  "phone": "(713) 701-7245",
+  "email": "info@calllukes.com",
+  "address": "3548 E T C Jester Blvd",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77018",
+  "rating": 4.8,
+  "reviewCount": 333,
+  "hours": [
+    [
+      "Every day",
+      "Open 24 hours"
+    ]
+  ],
+  "brand": {
+    "primary": "#003865",
+    "primaryDeep": "#00243f",
+    "accent": "#c44a8a",
+    "ink": "#13202c",
+    "muted": "#52657a",
+    "surface": "#eef4f9",
+    "line": "#d7e2ec",
+    "heading": "'Archivo', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Source+Sans+3:wght@400;500;600&display=swap",
+    "logo": "/brands/lukesplumbingairconditioning/logo.webp",
+    "logoMono": "/brands/lukesplumbingairconditioning/logo-mono.webp",
+    "logoWidth": 93,
+    "logoHeight": 58,
+    "logoRatio": 1.601,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.57,
+      0.465,
+      0.384,
+      0.543,
+      0.702,
+      0.729,
+      0.657,
+      0.684,
+      0.743,
+      0.808,
+      0.925
+    ]
+  },
+  "emergency": {
+    "title": "24/7 emergency service",
+    "text": "When something goes wrong, we are already on our way, with fast expert service on nights, weekends and holidays and no surprise charges."
+  },
+  "sameDay": "Same-day service is available in most cases for non-emergency work, and the same price any time, even nights, weekends and holidays.",
+  "licenses": [
+    {
+      "label": "Texas plumbing licence",
+      "number": "MPL 37466"
+    },
+    {
+      "label": "Texas HVAC licence",
+      "number": "TACLB 53102E"
+    }
+  ],
+  "financing": {
+    "text": "Flexible financing through Synchrony, with a quick application, so an unexpected repair or a system upgrade does not have to be paid up front."
+  },
+  "hero": {
+    "eyebrow": "Plumbing, heating and cooling in Houston",
+    "title": "One call",
+    "titleAccent": "handles it all.",
+    "lead": "Built on referrals, runs on trust. Our licensed Houston plumbers and HVAC technicians show up on time, in uniform, with upfront pricing and a 30-day money back guarantee behind every job.",
+    "image": "/brands/lukesplumbingairconditioning/hero",
+    "imageAlt": "The Luke's Plumbing & Air Conditioning team gathered together"
+  },
+  "groups": [
+    {
+      "slug": "air-conditioning",
+      "title": "Air Conditioning",
+      "icon": "snowflake",
+      "summary": "Repairs, installations and maintenance tailored for Houston's climate, so you stay cool year-round.",
+      "intro": "Feeling the heat from a malfunctioning AC? Houston weather demands a reliable system, and our local team brings straightforward solutions without the jargon or upsells. When something is not right with your cooling, we fix it right the first time and get your home feeling like home again.",
+      "image": "/brands/lukesplumbingairconditioning/ac-maintenance",
+      "imageAlt": "A Luke's technician servicing an air conditioning system",
+      "services": [
+        {
+          "slug": "ac-repair",
+          "title": "AC Repair",
+          "icon": "wrench",
+          "text": "When your air conditioner stops keeping up, our Houston technicians find the cause quickly and fix it right the first time.",
+          "points": [
+            "24/7 emergency HVAC service",
+            "Upfront pricing before work starts",
+            "Same price on nights, weekends and holidays",
+            "Repairs all major brands: Carrier, Trane, Lennox, Goodman, Rheem, York, Daikin and American Standard"
+          ]
+        },
+        {
+          "slug": "ac-maintenance",
+          "title": "AC Maintenance",
+          "icon": "timer",
+          "text": "Regular tune-ups keep your cooling system running efficiently through a long Houston summer and head off breakdowns before they start.",
+          "points": [
+            "Two annual HVAC tune-ups with Top Dog Membership",
+            "Honest recommendations, no upsells"
+          ]
+        },
+        {
+          "slug": "ac-installation",
+          "title": "AC Installation & Replacement",
+          "icon": "air-vent",
+          "text": "Planning a system upgrade? We handle air conditioning installation and replacement with equipment sized for your home and your budget.",
+          "points": [
+            "Financing available through Synchrony",
+            "Thermostat installation and upgrades",
+            "Go-to brands: Lennox, Ruud, Armstrong and Goodman"
+          ]
+        },
+        {
+          "slug": "ductless-ac",
+          "title": "Ductless AC",
+          "icon": "air-vent",
+          "text": "Ductless mini-split systems cool rooms and additions that ductwork never reached, without tearing into walls.",
+          "points": [
+            "Installation, repair and maintenance"
+          ]
+        },
+        {
+          "slug": "heat-pumps",
+          "title": "Heat Pumps",
+          "icon": "thermometer",
+          "text": "A heat pump heats and cools your home by moving heat between indoors and outdoors, which makes it an efficient fit for Houston's climate.",
+          "points": [
+            "Dual functionality: heating and cooling in one system",
+            "Uses significantly less electricity than traditional systems",
+            "Repair, installation, replacement and maintenance"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "heating",
+      "title": "Heating",
+      "icon": "flame",
+      "summary": "Dependable heating repair, installation and tune-ups for when Houston temperatures drop.",
+      "intro": "Houston's unpredictable winter weather, from mild days to sudden cold snaps, demands heating that responds when you need it. Whether your furnace will not start, your heating bills are climbing or you are ready for an efficient upgrade, our local team provides the honest expertise Houston homeowners deserve.",
+      "image": "/brands/lukesplumbingairconditioning/furnace-maintenance",
+      "imageAlt": "A Luke's technician performing furnace maintenance in a Houston home",
+      "services": [
+        {
+          "slug": "heater-repair",
+          "title": "Heater Repair",
+          "icon": "wrench",
+          "text": "We handle any heating challenge in Houston, no matter what type of system you have or how old it is.",
+          "points": [
+            "Available nights, weekends and holidays at the same rate"
+          ]
+        },
+        {
+          "slug": "heater-installation",
+          "title": "Heater Installation",
+          "icon": "air-vent",
+          "text": "New and replacement heating systems installed for Houston homes, with an honest recommendation on whether repair or replacement makes more sense.",
+          "points": [
+            "Financing available through Synchrony"
+          ]
+        },
+        {
+          "slug": "heater-maintenance",
+          "title": "Heater Maintenance",
+          "icon": "timer",
+          "text": "A fall tune-up keeps your heating system ready for the first cold snap and keeps running costs down.",
+          "points": [
+            "One spring and one fall tune-up with Top Dog Membership"
+          ]
+        },
+        {
+          "slug": "furnaces",
+          "title": "Furnaces",
+          "icon": "flame",
+          "text": "Furnace repair, installation and maintenance for Houston homes, from a unit that will not start to a full replacement.",
+          "points": [
+            "Repair, installation and maintenance"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "indoor-air-quality",
+      "title": "Indoor Air Quality",
+      "icon": "wind",
+      "summary": "Air purification, duct cleaning, sealing and humidity control so the air inside your home is your refuge, not your problem.",
+      "intro": "When your home's air feels stuffy, smells off or triggers allergies, it is more than an inconvenience. Houston's climate creates perfect conditions for allergens, pollutants and humidity problems to thrive indoors. Our indoor air quality experts deliver customized solutions to help you breathe easier, sleep better and stay healthier.",
+      "services": [
+        {
+          "slug": "air-quality-solutions",
+          "title": "Indoor Air Quality Solutions",
+          "icon": "wind",
+          "text": "Say goodbye to airborne irritants and hello to fresher, cleaner air throughout your Houston home.",
+          "points": [
+            "Indoor air quality testing",
+            "Air purification and filtration",
+            "Humidifiers and dehumidifiers",
+            "Insulation removal and new blow-in insulation"
+          ]
+        },
+        {
+          "slug": "ductwork-services",
+          "title": "Ductwork Services",
+          "icon": "air-vent",
+          "text": "Rooms that never cool down, dust that will not quit or energy bills that keep climbing often trace back to your ductwork. We handle everything from inspection to full replacement.",
+          "points": [
+            "Duct inspection and airflow testing with camera inspections",
+            "Duct repair and sealing to stop wasting conditioned air",
+            "Duct installation and replacement, properly sized",
+            "Free estimates on duct repair, replacement and cleaning, and a free second opinion"
+          ]
+        },
+        {
+          "slug": "duct-cleaning",
+          "title": "Duct Cleaning",
+          "icon": "wind",
+          "text": "Houston's heat and humidity make it easy for dust, dander, pollen and renovation debris to settle deep inside ductwork, where it circulates through your home again and again.",
+          "points": [
+            "Duct passages, grilles, registers and air handler cleaned",
+            "A good idea after a remodel sent dust through the vents"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "plumbing",
+      "title": "Plumbing & Water Heaters",
+      "icon": "droplets",
+      "summary": "From leaky faucets to full repipes and water heaters, fast and reliable solutions that keep your home's plumbing flowing.",
+      "intro": "When your home's plumbing needs attention, you need a plumber you can trust to show up, diagnose the problem honestly and fix it the right way the first time. We are locally owned, fully licensed and rooted in this community. One call gets you fast, honest plumbing service with upfront pricing, no surprise charges and a 30-day money back guarantee behind every job.",
+      "image": "/brands/lukesplumbingairconditioning/plumbing-service",
+      "imageAlt": "Greg from Luke's Plumbing working on an under-sink plumbing repair in a Houston kitchen",
+      "services": [
+        {
+          "slug": "emergency-plumbing",
+          "title": "Emergency Plumbing",
+          "icon": "shield",
+          "text": "Burst pipes and overflowing fixtures do not wait for business hours, and neither do we. We answer nights, weekends and holidays.",
+          "points": [
+            "Available 24/7",
+            "No surprise after-hours charges"
+          ]
+        },
+        {
+          "slug": "plumbing-repair",
+          "title": "Plumbing Repair",
+          "icon": "wrench",
+          "text": "Leaky faucets, failing fixtures and aging pipe systems repaired by licensed Houston plumbers.",
+          "points": [
+            "Most plumbing repairs carry a one-year warranty"
+          ]
+        },
+        {
+          "slug": "plumbing-installation",
+          "title": "Plumbing Installation",
+          "icon": "wrench",
+          "text": "New fixtures, lines and plumbing systems installed for Houston homes and businesses.",
+          "points": [
+            "Fixture replacements carry a two-year warranty",
+            "Kohler, American Standard, Moen, Delta, Rinnai, Bradford White, Rheem, AO Smith, Navien and Uponor"
+          ]
+        },
+        {
+          "slug": "plumbing-maintenance",
+          "title": "Plumbing Maintenance",
+          "icon": "timer",
+          "text": "Routine checks stay ahead of hidden leaks and costly surprises across your whole plumbing system.",
+          "points": [
+            "Whole-home plumbing inspection included with Top Dog Membership"
+          ]
+        },
+        {
+          "slug": "leak-detection",
+          "title": "Leak Detection",
+          "icon": "gauge",
+          "text": "A hidden leak can run up a water bill for months before it shows. We find it and fix it.",
+          "points": [
+            "Hidden leaks located before they damage the house"
+          ]
+        },
+        {
+          "slug": "repiping",
+          "title": "Repiping",
+          "icon": "wrench",
+          "text": "When patching an aging pipe system stops making sense, we replace it, including full repipes on older Houston homes.",
+          "points": [
+            "Whole-home repipes, including older townhomes and bungalows"
+          ]
+        },
+        {
+          "slug": "water-heaters",
+          "title": "Water Heaters",
+          "icon": "flame",
+          "text": "No hot water, inconsistent temperatures, unusual noises or discolored water all call for prompt attention. We repair, install and maintain water heaters across Houston.",
+          "points": [
+            "Repair, installation and maintenance",
+            "Annual flush included with Top Dog Membership"
+          ]
+        },
+        {
+          "slug": "tankless-water-heaters",
+          "title": "Tankless Water Heaters",
+          "icon": "flame",
+          "text": "Tankless systems heat water on demand instead of keeping a tank hot all day. We install and service them.",
+          "points": [
+            "Tankless installation and service"
+          ]
+        },
+        {
+          "slug": "toilets",
+          "title": "Toilets",
+          "icon": "droplets",
+          "text": "Running, leaking or wobbly toilets repaired, pulled and reset, or replaced.",
+          "points": [
+            "Replacements carry a two-year warranty"
+          ]
+        },
+        {
+          "slug": "garbage-disposals",
+          "title": "Garbage Disposals",
+          "icon": "wrench",
+          "text": "Jammed or failed disposals repaired or replaced, and we will show you how to keep the new one healthy.",
+          "points": [
+            "Replacements carry a two-year warranty"
+          ]
+        },
+        {
+          "slug": "water-treatment",
+          "title": "Water Treatment",
+          "icon": "droplets",
+          "text": "Filtration and treatment for the water coming into your Houston home.",
+          "points": [
+            "Whole-home water treatment options"
+          ]
+        },
+        {
+          "slug": "boilers",
+          "title": "Boilers",
+          "icon": "flame",
+          "text": "Boiler service for the Houston homes and buildings that still run on one.",
+          "points": [
+            "Repair and maintenance",
+            "Commercial boiler servicing for Houston businesses"
+          ]
+        },
+        {
+          "slug": "sump-pumps",
+          "title": "Sump Pumps",
+          "icon": "droplets",
+          "text": "Many Houston-area homes have no basement, but crawl spaces, low-lying utility areas and properties with drainage concerns all benefit from a dependable sump pump when heavy rainstorms push groundwater up fast.",
+          "points": [
+            "Repair, installation and replacement",
+            "Battery backup pumps, float switches and check valves",
+            "Discharge line repair, basin cleaning and high water alarms",
+            "Emergency sump pump service"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "drains-sewers",
+      "title": "Drains & Sewers",
+      "icon": "droplets",
+      "summary": "Clearing clogs and restoring proper flow, from routine drain cleaning to trenchless sewer repair.",
+      "intro": "When backups, slow drains or foul odors disrupt your home, you need solutions fast. Our Houston plumbers have seen everything from simple clogs to complete sewer line collapses. Houston's soil conditions and occasional flooding can be particularly hard on underground plumbing, and we identify the issue quickly and fix it to last.",
+      "image": "/brands/lukesplumbingairconditioning/drain-service",
+      "imageAlt": "Joe, a certified plumber at Luke's, on a service call",
+      "services": [
+        {
+          "slug": "drain-cleaning",
+          "title": "Drain Cleaning",
+          "icon": "droplets",
+          "text": "Slow or blocked drains cleared, and advice on keeping them clear afterwards.",
+          "points": [
+            "Routine and emergency drain clearing"
+          ]
+        },
+        {
+          "slug": "sewer-cleaning",
+          "title": "Sewer Cleaning",
+          "icon": "droplets",
+          "text": "Main line cleaning for the backups a plunger will never reach.",
+          "points": [
+            "Main sewer line clearing"
+          ]
+        },
+        {
+          "slug": "sewer-repair",
+          "title": "Sewer Repair",
+          "icon": "wrench",
+          "text": "Cracked, offset and root-damaged sewer lines repaired, with the cause explained before the work starts.",
+          "points": [
+            "Upfront pricing before any digging"
+          ]
+        },
+        {
+          "slug": "sewer-replacement",
+          "title": "Sewer Replacement",
+          "icon": "wrench",
+          "text": "When a line has collapsed or is past repair, we replace it and put the yard back together.",
+          "points": [
+            "Full line replacement, including under-house work"
+          ]
+        },
+        {
+          "slug": "sewer-inspections",
+          "title": "Sewer Inspections",
+          "icon": "gauge",
+          "text": "Camera inspection shows exactly what is happening inside the line, so you are not guessing before you buy or dig.",
+          "points": [
+            "Camera inspection of the sewer line"
+          ]
+        },
+        {
+          "slug": "trenchless-sewer-repair",
+          "title": "Trenchless Sewer Repair",
+          "icon": "wrench",
+          "text": "Where the line allows it, trenchless methods restore the sewer with far less digging across your yard.",
+          "points": [
+            "Less excavation than traditional replacement"
+          ]
+        },
+        {
+          "slug": "hydro-jetting",
+          "title": "Hydro Jetting",
+          "icon": "droplets",
+          "text": "High-pressure water scours grease, soap residue, food waste and root intrusion out of a sewer line instead of just punching a hole through the blockage.",
+          "points": [
+            "Clears grease and debris buildup and root intrusion",
+            "Preventative sewer maintenance"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Current offer",
+    "title": "New hot water heater replacement",
+    "text": "Call for details.",
+    "price": "$200 Off"
+  },
+  "plan": {
+    "name": "Top Dog Membership",
+    "intro": "Comfort, convenience and confidence. We created this plan to take the stress out of maintaining your home's most essential systems, from HVAC tune-ups to full-home plumbing checkups.",
+    "tiers": [
+      {
+        "name": "Monthly",
+        "price": "$14.99",
+        "period": "per month",
+        "features": [
+          "Priority scheduling, even during peak seasons",
+          "10% off all services, parts and labor",
+          "24/7 dispatch access",
+          "Two annual HVAC tune-ups, one spring and one fall",
+          "One hot water heater flush",
+          "One whole-home plumbing inspection"
+        ]
+      },
+      {
+        "name": "Annual",
+        "price": "$179",
+        "period": "per year",
+        "featured": true,
+        "features": [
+          "Everything in the monthly plan",
+          "Paid once a year instead of monthly",
+          "Limited-time promo: $30 off when you pay up front, $149 for 12 months"
+        ]
+      }
+    ],
+    "note": "Prices as published by Luke's. Call for current terms."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "A Houston company, through and through.",
+    "text": [
+      "Luke’s Plumbing & Air Conditioning has been serving Houston families for decades. This isn’t just where we work—it’s where we live. Many of our team members have been with us for years, and we’ve built our business by showing up, doing right by people, and letting our work speak for itself. From the Heights to Katy, we’ve built lasting connections in homes across the region. And we plan to keep it that way.",
+      "At Luke’s Plumbing & Air Conditioning, we treat your home like a connected system, not a patchwork of parts. Our experienced Houston home service team takes the time to understand the root of the issue and fix it the right way, the first time. Whether it’s a broken AC or a hidden leak, we bring the care, expertise, and energy to make things right.",
+      "Sure, we fix broken things. But what really keeps us going are the calls from longtime customers—and the referrals they send our way. That kind of trust doesn’t happen overnight. It’s earned over time, through honest work and the kind of service that makes people feel cared for. We’re not here to check a box and move on. We’re here to be the team you rely on, again and again."
+    ],
+    "image": "/brands/lukesplumbingairconditioning/truck",
+    "imageAlt": "A Luke's Plumbing & Air Conditioning service van parked outside a Houston home",
+    "values": [
+      {
+        "title": "Upfront Pricing",
+        "text": "You will always know the cost before we get started. We charge by the hour, and if the job takes longer than expected, your bill stays the same."
+      },
+      {
+        "title": "30-Day Money Back Guarantee",
+        "text": "If you are not completely satisfied, call within 30 days for a refund. No questions asked."
+      },
+      {
+        "title": "Same Price, Any Time",
+        "text": "We do not charge extra just because your problem showed up on a night, a weekend or a holiday."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How do you price your work?",
+      "a": "We price things based on time. You get a clear quote before we start any work, and that quote will not change just because a job takes longer than expected. If we think a job will take two hours and it ends up taking six, that is on us."
+    },
+    {
+      "q": "What warranty comes with your work?",
+      "a": "Most plumbing repairs, like toilets, drains and gas or water lines, come with a one-year warranty. For fixture replacements, like toilets, faucets and garbage disposals, we extend that coverage to two years."
+    },
+    {
+      "q": "Do you charge more for nights, weekends and holidays?",
+      "a": "No. Whenever you need us, you get the same fair rate."
+    },
+    {
+      "q": "What if I am not happy with the work?",
+      "a": "Give us a call within 30 days and we will make it right, or refund you completely. We would rather lose a payment than lose our reputation."
+    },
+    {
+      "q": "Do you offer financing?",
+      "a": "Yes. We offer flexible financing through Synchrony, with a quick application process and payment plans for an unexpected repair or a planned system upgrade."
+    },
+    {
+      "q": "Do you work with insurance?",
+      "a": "Yes, we accept insurance, and we back all of our work with strong warranties."
+    },
+    {
+      "q": "Are your plumbers licensed and insured in Texas?",
+      "a": "Yes. Every plumber on Luke's team is licensed through the Texas State Board of Plumbing Examiners and fully insured. We also background-check all of our technicians, because you are inviting us into your home."
+    },
+    {
+      "q": "Are your AC technicians licensed and certified?",
+      "a": "Yes. All Luke's Plumbing & Air Conditioning technicians are fully licensed by the State of Texas and NATE-certified for both residential and light commercial systems. We also maintain ongoing training so our team stays current with the latest HVAC technology and energy-efficiency standards."
+    },
+    {
+      "q": "Do you offer same-day or emergency service?",
+      "a": "For non-emergency repairs we offer same-day service in most cases. For plumbing emergencies, burst pipes, major leaks and sewer backups, our team is available 24 hours a day, 7 days a week, including weekends and holidays, and we do not charge extra for after-hours service."
+    },
+    {
+      "q": "Do you offer plumbing services for commercial properties in Houston?",
+      "a": "Yes. We service both residential and commercial customers. Our commercial plumbing work includes boiler servicing, plumbing repairs and routine inspections for businesses throughout the Houston area."
+    },
+    {
+      "q": "Do you offer free estimates or second opinions?",
+      "a": "Yes. We provide free estimates for duct repair, replacement and cleaning, and a free second opinion. If another company has given you a quote and you want a second opinion, we are happy to take a look and give you an honest assessment."
+    },
+    {
+      "q": "Do you serve the entire Houston area or specific neighborhoods?",
+      "a": "We proudly serve the Greater Houston metro, including Katy, Cypress, Pearland, The Woodlands, Sugar Land, Bellaire, Memorial and surrounding communities. No matter where you are in Houston, our technicians can usually arrive same-day or within hours for emergency service."
+    },
+    {
+      "q": "Can Luke's help me decide between repair and replacement?",
+      "a": "Yes. Luke's can inspect your current system, explain the condition of the equipment, review repair options and help you compare whether repair or replacement makes more sense for your comfort, budget and long-term energy costs."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "The Heights",
+    "Memorial",
+    "Bellaire",
+    "Katy",
+    "Cypress",
+    "Spring",
+    "The Woodlands",
+    "Sugar Land",
+    "Conroe",
+    "Baytown",
+    "Pearland",
+    "Missouri City",
+    "Magnolia",
+    "Highlands"
+  ],
+  "facts": [
+    {
+      "heading": "Guarantees",
+      "items": [
+        "Upfront pricing always. No surprises ever.",
+        "30-day money back guarantee.",
+        "Same price, any time, even nights, weekends and holidays.",
+        "One-year warranty on most plumbing repairs; two years on fixture replacements."
+      ]
+    },
+    {
+      "heading": "Licensed and insured",
+      "text": "Texas licences MPL 37466 and TACLB 53102E. Every plumber on the team is licensed through the Texas State Board of Plumbing Examiners and fully insured, and all technicians are background-checked. HVAC technicians are licensed by the State of Texas and NATE-certified for residential and light commercial systems, with ongoing training. Luke's accepts insurance and backs all of its work with strong warranties."
+    },
+    {
+      "heading": "Accreditations",
+      "items": [
+        "BBB A+ rating, accredited business",
+        "Nextdoor Neighborhood Favorite",
+        "HomeAdvisor Screened & Approved",
+        "HomeAdvisor Elite Service",
+        "4.8 from approximately 334 Google reviews"
+      ]
+    },
+    {
+      "heading": "Our team",
+      "items": [
+        "Luke Lawlis, plumbing expert and owner, a plumbing expert since the age of 16",
+        "Michael Hegpeth, HVAC expert, 20+ years in new home sales and home improvement",
+        "Diego Ferreyra, HVAC expert, over 16 years in the HVAC industry, residential and commercial",
+        "Joe Dunn, plumbing expert and foreman, over 20 years in plumbing and home services",
+        "Jason Taylor, plumbing expert, over 18 years of hands-on plumbing",
+        "Greg Humphrey, plumbing expert and journeyman plumber, over 18 years of plumbing experience",
+        "Tupelo, Chief Morale Officer, a two-year-old English Labrador from Bigfork, Montana who rides along in the truck with owner Luke, greets the crew every morning and is the face on the vans"
+      ]
+    },
+    {
+      "heading": "Financing",
+      "text": "Flexible financing is available through Synchrony, with a quick application, for unexpected repairs and planned system upgrades."
+    },
+    {
+      "heading": "Top Dog Membership",
+      "text": "$14.99 a month or $179 a year for priority scheduling, 10% off all services, 24/7 dispatch access, two annual HVAC tune-ups, a hot water heater flush and a whole-home plumbing inspection. A limited-time promo takes $30 off the annual plan, making it $149."
+    },
+    {
+      "heading": "Current offer",
+      "text": "$200 off a new hot water heater replacement. Call for details."
+    },
+    {
+      "heading": "Neighborhoods we serve",
+      "text": "Houston and the surrounding area, including the Heights, Garden Oaks, Oak Forest, Montrose, Bellaire, West University, Memorial and Spring Branch, plus Baytown, Conroe, Cypress, Katy, Spring, Sugar Land and The Woodlands."
+    },
+    {
+      "heading": "Follow Luke's",
+      "items": [
+        "Facebook: facebook.com/profile.php?id=61580858811093",
+        "Instagram: instagram.com/lukesplumbingandair",
+        "TikTok: tiktok.com/@calllukes",
+        "LinkedIn: linkedin.com/company/calllukes",
+        "HomeAdvisor: homeadvisor.com/rated.lukesplumbingandair.158941577.html"
+      ]
+    },
+    {
+      "heading": "Phones published on their site",
+      "items": [
+        "(713) 903-7064, the main line across the site",
+        "(713) 686-7000, the line on the air conditioning pages",
+        "info@calllukes.com"
+      ]
+    },
+    {
+      "heading": "Booking and directions",
+      "items": [
+        "Book online at calllukes.com/schedule-service/",
+        "Map and directions: maps.app.goo.gl/xvfFhYA3yh6ZrrLu5",
+        "Leave a Google review: g.page/r/CbJIkZxmj8EBEBM/review",
+        "Office and dispatch at 3548 E T C Jester Blvd, Houston, TX 77018, in Oak Forest"
+      ]
+    },
+    {
+      "heading": "Coupons and offers",
+      "items": [
+        "$79 AC Tune Up",
+        "$93 or it's Free! If we can't unclog your drain, service is FREE",
+        "Free Second Opinion, get a second opinion on us",
+        "$200 Off a new hot water heater replacement",
+        "$500 Off a new tankless system",
+        "Free media cabinet, a $1,255 value, with the purchase of an IAQ package, installation and duct cleaning",
+        "$1,000 buy-back on your old AC system with the purchase of a new system",
+        "Offers cannot be combined with any other offers, exclusions may apply, call for details"
+      ]
+    },
+    {
+      "heading": "Brands we work with",
+      "items": [
+        "Plumbing: Kohler, American Standard, Moen, Delta, Rinnai, Bradford White, Rheem, AO Smith, Navien and Uponor",
+        "HVAC repair, all major brands: Carrier, Trane, Lennox, Goodman, Rheem, York, Daikin and American Standard",
+        "Air conditioning installation, go-to brands: Lennox, Ruud, Armstrong and Goodman",
+        "Bring up a specific brand or product when you call and we are happy to work with your selection"
+      ]
+    },
+    {
+      "heading": "Residential and commercial",
+      "text": "Luke's services both residential and commercial customers. Commercial plumbing work includes boiler servicing, plumbing repairs and routine inspections for businesses throughout the Houston area."
+    },
+    {
+      "heading": "Free estimates and second opinions",
+      "text": "Free estimates for duct repair, replacement and cleaning, and a free second opinion on another company's quote."
+    },
+    {
+      "heading": "Our core values",
+      "items": [
+        "Honesty: we communicate clearly, offer upfront pricing, and keep things transparent from the first call to the final fix",
+        "Integrity: we take pride in doing the right thing, even when no one's watching",
+        "Reliability: you can count on us to follow through, if we say we'll fix it, we mean it",
+        "Teamwork: we help each other, step up when it counts, and win as a team"
+      ]
+    },
+    {
+      "heading": "How long Luke’s has been here",
+      "text": "Luke's has been serving the Greater Houston area for over 30 years, showing up for Houston families since the 90s, and has been handling plumbing installations in Houston for over 30 years."
+    },
+    {
+      "heading": "Emergency and after-hours service",
+      "text": "Emergency plumbing and HVAC service 24 hours a day, 7 days a week, 365 days a year, including weekends and holidays, with no extra charge for after-hours service. Hours are listed as 24/7 Emergency Services."
+    },
+    {
+      "heading": "Careers",
+      "text": "Luke's is hiring. Many employees have been with the company for decades, and applications are taken through the careers page for field and office roles, with a resume upload and years of experience."
+    },
+    {
+      "heading": "Policies",
+      "items": [
+        "Terms and Conditions and Privacy Policy pages are linked in the site footer",
+        "Text message consent: informational, marketing and promotional messages from Luke's at the number provided, message and data rates may apply, reply STOP to unsubscribe and HELP for help, or email info@calllukes.com"
+      ]
+    }
+  ]
+}
