@@ -1,0 +1,699 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Electrical Masters Company Inc.",
+  "shortName": "Electrical Masters",
+  "summary": "Licensed, certified, insured and bonded electricians serving Houston and surrounding areas, with residential, commercial and industrial electrical work and 24/7 emergency response.",
+  "phone": "(832) 970-3101",
+  "email": "info@electricalmasterscompany.com",
+  "address": "7110 Winding Trace Dr",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77086",
+  "rating": 5.0,
+  "reviewCount": 137,
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Office closed"
+    ],
+    [
+      "Emergencies",
+      "24 hours, any day"
+    ]
+  ],
+  "brand": {
+    "primary": "#c2161d",
+    "primaryDeep": "#8f0f16",
+    "accent": "#ffc20e",
+    "ink": "#0e0e10",
+    "muted": "#5a5a62",
+    "surface": "#f5f4f3",
+    "line": "#dedcda",
+    "heading": "'Oswald', system-ui, sans-serif",
+    "body": "'Manrope', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap",
+    "logo": null
+  },
+  "emergency": {
+    "title": "Electricians available 24 hours a day",
+    "text": "Emergency service, any time, any day: burning smells, scorched or discoloured outlets, sparking devices, a panel that is hot to the touch, a partial outage while neighbours still have power, or arcing after storm damage all warrant an immediate call to (832) 970-3101."
+  },
+  "licenses": [
+    {
+      "label": "Texas Electrical Contractor (TECL)",
+      "number": "34419"
+    },
+    {
+      "label": "Master Electrician",
+      "number": "459441"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Licensed · Certified · Insured · Houston, TX",
+    "title": "Our licensed electricians provide top-notch electrical services for",
+    "titleAccent": "Houston and surrounding areas",
+    "lead": "Residential, commercial and industrial electrical work, done right the first time. Call for a free estimate, with electricians available 24 hours a day for emergencies."
+  },
+  "groups": [
+    {
+      "slug": "residential",
+      "title": "Residential",
+      "icon": "home",
+      "summary": "Licensed, friendly electricians for Houston homes, from lighting refreshes to full rewiring.",
+      "intro": "Your home deserves the same precision and care as any high-end project. Electrical Masters Company brings licensed, friendly electricians into Houston homes for everything from lighting refreshes to full rewiring, always treating your space like our own. Our master electricians pull the proper permits, work clean, and leave your home better than they found it.",
+      "services": [
+        {
+          "slug": "panel-and-breaker-upgrades",
+          "title": "Electrical Panel and Breaker Upgrades",
+          "icon": "circuit",
+          "text": "Many Houston homes are still running the service panel they were built with, and air conditioning, EV charging, induction ranges, tankless water heaters, pool equipment and home offices place demands on that panel no one anticipated.",
+          "points": [
+            "Warning signs: breakers that trip under normal use, lights that dim when a large appliance starts, warm cover plates, a burning smell, or a panel with no space left to add a circuit",
+            "We inspect what is actually in the home and tell you whether a repair, a sub-panel or a full service upgrade is the honest answer",
+            "We handle the utility coordination, permitting and inspection that a service change requires"
+          ]
+        },
+        {
+          "slug": "standby-generator-installation",
+          "title": "Whole-Home and Standby Generator Installation",
+          "icon": "power",
+          "text": "A permanently installed standby generator sits outside the home like a condenser unit, monitors utility power, and starts automatically within seconds of an outage.",
+          "points": [
+            "We size the unit to what the home actually needs rather than selling the largest model on the shelf",
+            "The install includes the automatic transfer switch, a code-compliant gas supply, the pad, bonding and grounding, permitting and inspection, and a commissioning test under real load",
+            "We register the equipment so the manufacturer warranty starts clean",
+            "Generac standby systems installed for homes and businesses"
+          ]
+        },
+        {
+          "slug": "ev-charger-installation",
+          "title": "EV Charger Installation",
+          "icon": "ev",
+          "text": "Most Houston EV owners move to a Level 2 charger on a dedicated 240-volt circuit and recover a full battery overnight. The part that needs an electrician's judgment is whether the existing service can carry the new load.",
+          "points": [
+            "We perform a load calculation before quoting, not after",
+            "A dedicated circuit with the correct breaker, conductor size and GFCI protection for the location",
+            "Garage, carport and outdoor installations each carry different requirements for conduit, weather rating and mounting height",
+            "Hardwired or plug-in options, charger placement and permitting"
+          ]
+        },
+        {
+          "slug": "rewiring-and-circuits",
+          "title": "Rewiring, Circuits and Remodel Electrical",
+          "icon": "cable",
+          "text": "Older Houston housing stock often hides cloth-insulated wiring, ungrounded two-prong outlets, aluminium branch circuits, or a decade of undocumented handyman work behind the drywall.",
+          "points": [
+            "Whole-home rewiring is disruptive and we do not recommend it lightly",
+            "Partial rewires, dedicated circuits for heavy appliances and grounding corrections solve most problems without gutting the house",
+            "For remodels and additions we lay out circuits, lighting and device locations against how the room will actually be used"
+          ]
+        },
+        {
+          "slug": "lighting-and-fans",
+          "title": "Lighting Upgrades, Outdoor Lighting and Fan Installation",
+          "icon": "lightbulb",
+          "text": "Upgrade old lighting to hot trending dimmers, make your home look inviting with outdoor lighting fixtures, and stay cool in summer with a decorative fan installed by our electrical team.",
+          "points": [
+            "Recessed lighting, chandeliers, accent lighting and outdoor lighting, designed and installed to enhance both function and aesthetics",
+            "Outlets with USB, behind the wall wiring and more",
+            "Electrical design for a home that is getting older and where repairs are inevitable"
+          ]
+        },
+        {
+          "slug": "safety-inspections",
+          "title": "Electrical Safety Inspections",
+          "icon": "shield",
+          "text": "A safety inspection is worth booking when you are buying or selling a home, after major storm or flood exposure, when an insurer asks, or when a house has never had its electrical system properly looked at.",
+          "points": [
+            "We check the panel and breakers, grounding and bonding, GFCI and AFCI protection in the locations code requires, outlet polarity, visible wiring condition and smoke alarm placement",
+            "A written summary separating genuine safety issues from things that are merely dated"
+          ]
+        },
+        {
+          "slug": "electrical-repair-and-installation",
+          "title": "Electrical Repair and Installation",
+          "icon": "wrench",
+          "text": "From troubleshooting a tripping breaker to installing new circuits, lighting and equipment, Electrical Masters Company delivers reliable electrical repair and installation across Houston, TX. We diagnose the real problem and fix it right the first time.",
+          "points": [
+            "Circuit breaker installation and panel repair",
+            "Outlet, switch and wiring repair, plus outlet and switch relocation",
+            "Lighting installation, indoor and outdoor, and light fixture installation",
+            "Dedicated circuits and equipment hookups",
+            "Common repairs include tripping breakers, flickering lights, dead outlets and switches, aluminum-wiring corrections, loose or scorched connections, and grounding problems",
+            "We repair rather than replace whenever it is safe and cost-effective, and we always tell you which is which",
+            "24/7 emergency electrical repair"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial",
+      "icon": "building",
+      "summary": "Full electrical scope from design to final inspection for offices, retail and mixed-use spaces.",
+      "intro": "Our clients are our number one priority, and we make the effort to ensure that they are completely satisfied with our work. We manage full electrical scope from design to final inspection for offices, retail and mixed-use spaces, working with developers, property owners, general contractors and business owners across multiple industries.",
+      "services": [
+        {
+          "slug": "new-commercial-builds",
+          "title": "New Commercial Builds and Tenant Build-Outs",
+          "icon": "building",
+          "text": "We manage full electrical scope from design to final inspection for offices, retail and mixed-use spaces, and we work with property managers, owners and investors.",
+          "points": [
+            "We coordinate closely with contractors, inspectors and project managers to meet strict deadlines, especially for openings",
+            "Known for rapid mobilisation, especially for time-sensitive commercial openings",
+            "Fast-track electrical upgrades for tenant build-outs and openings"
+          ]
+        },
+        {
+          "slug": "system-upgrades",
+          "title": "Panel Upgrades and System Expansions",
+          "icon": "circuit",
+          "text": "We specialise in panel upgrades, system expansions and bringing properties up to current code for an existing business.",
+          "points": [
+            "Signs a commercial property needs an upgrade: frequent outages, outdated panels, increased equipment demand, or failing inspections",
+            "Facility power, lighting and code compliance"
+          ]
+        },
+        {
+          "slug": "emergency-and-exit-lighting",
+          "title": "Emergency and Exit Lighting",
+          "icon": "lightbulb",
+          "text": "Code-compliant emergency and exit lighting is a core part of our commercial services.",
+          "points": [
+            "Installed and brought up to current code"
+          ]
+        },
+        {
+          "slug": "energy-efficient-lighting",
+          "title": "Energy-Efficient Lighting and Energy Efficiency Audits",
+          "icon": "leaf",
+          "text": "We offer energy-efficient lighting upgrades and system optimisation to lower operating expenses.",
+          "points": [
+            "Energy efficiency audits",
+            "Lighting solutions and electrical design"
+          ]
+        },
+        {
+          "slug": "maintenance-agreements",
+          "title": "Maintenance and Service Agreements",
+          "icon": "settings",
+          "text": "We provide maintenance and service agreements to prevent downtime and costly repairs.",
+          "points": [
+            "Ongoing maintenance for commercial properties"
+          ]
+        },
+        {
+          "slug": "lighting-retrofits-and-tenant-improvements",
+          "title": "Tenant Improvements and LED Lighting Retrofits",
+          "icon": "lightbulb",
+          "text": "Electrical Masters Company delivers licensed, insured commercial electrical work for offices, retail, restaurants, warehouses and multi-tenant properties across Houston and the surrounding area.",
+          "points": [
+            "Tenant improvement and build-out electrical for new spaces",
+            "Lighting design, LED retrofits, and emergency/exit lighting",
+            "Panel upgrades, sub-panels and service increases for growing loads",
+            "Dedicated circuits, sub-panels, EV charging, generator tie-ins and preventative maintenance",
+            "Apartment complexes and property management teams are vital in ensuring safety: stay up to Texas Code"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "industrial",
+      "title": "Industrial",
+      "icon": "gauge",
+      "summary": "Electrical systems built for heavy industry, from system design to automation and emergency repair.",
+      "intro": "Electrical systems are the backbone of any industrial operation. These systems are meant to power heavy machinery and support intricate processes not present in your typical commercial building. With extensive experience serving Houston and surrounding counties, our team at EMC understands the complexity of industrial systems and the importance of reliable power.",
+      "services": [
+        {
+          "slug": "system-design-and-installation",
+          "title": "System Design and Installation",
+          "icon": "compass",
+          "text": "A well-designed electrical system is the foundation of any successful industrial operation. Our team works closely with clients to create customised electrical plans that match the specific needs of their facility.",
+          "points": [
+            "Warehouse and distribution centre electrical build-outs",
+            "Full-scale facility build-outs"
+          ]
+        },
+        {
+          "slug": "maintenance-and-prevention",
+          "title": "Maintenance and Prevention",
+          "icon": "settings",
+          "text": "Routine maintenance is one of the most effective ways to prevent unexpected breakdowns. Industrial systems operate under heavy loads, which can cause wear and tear over time.",
+          "points": [
+            "Regular maintenance and prompt repairs help keep your systems running smoothly",
+            "Frequent power interruptions are one of the most common indicators of a problem"
+          ]
+        },
+        {
+          "slug": "repairs-and-troubleshooting",
+          "title": "Repairs and Troubleshooting",
+          "icon": "wrench",
+          "text": "Electrical problems can come up anytime, and when they do, it is extremely crucial to act quickly. We have got the expertise to figure out and fix complex issues fast and smoothly.",
+          "points": [
+            "Rapid-response troubleshooting and emergency repairs",
+            "Common causes of unexpected power loss include overloaded systems, faulty equipment or aging infrastructure"
+          ]
+        },
+        {
+          "slug": "machinery-wiring",
+          "title": "Machinery Wiring",
+          "icon": "cable",
+          "text": "Heavy machinery is the backbone of industrial operations, demanding precise electrical connections for optimal performance. Correct wiring guarantees that your equipment functions safely and at peak efficiency.",
+          "points": [
+            "Equipment and machinery wiring",
+            "We assess load requirements and upgrade systems to safely support new equipment"
+          ]
+        },
+        {
+          "slug": "power-distribution-and-upgrades",
+          "title": "Power Distribution and Upgrades",
+          "icon": "power",
+          "text": "As your business grows, your electrical system must keep up with increasing demands. Power distribution plays a key role in ensuring that electricity is delivered efficiently throughout your facility.",
+          "points": [
+            "High-capacity panel upgrades, switchgear, transformers and large-scale power distribution",
+            "High-voltage electrical systems for industrial and commercial facilities",
+            "Heavy-load system upgrades for new machinery",
+            "High-bay lighting, exterior safety lighting and energy-efficient upgrades"
+          ]
+        },
+        {
+          "slug": "automation-and-control-systems",
+          "title": "Automation and Control Systems",
+          "icon": "chart",
+          "text": "Modern factories frequently employ automated systems to enhance consistency and efficiency. Control systems play a crucial role in the operation of machines and processes.",
+          "points": [
+            "We follow strict OSHA standards and implement safety-first protocols on every job site"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "permits-and-inspection",
+      "title": "Permits and Inspection",
+      "icon": "clipboard",
+      "summary": "Permit pulling, inspection prep and code-correction remediation across Houston jurisdictions.",
+      "intro": "Electrical Masters Company helps Houston businesses and homeowners pull the right electrical permits, pass inspection the first time, and correct code-compliance issues fast. Our master electricians know the City of Houston and surrounding jurisdictions' requirements and handle the paperwork, corrections and inspection scheduling for you.",
+      "services": [
+        {
+          "slug": "permit-pulling",
+          "title": "Electrical Permit Pulling and Coordination",
+          "icon": "clipboard",
+          "text": "Most electrical work in Houston, including panel upgrades, service changes, new circuits and commercial build-outs, legally requires a permit and inspection. We determine what permits are needed, file with the City of Houston or the appropriate jurisdiction, and schedule inspections.",
+          "points": [
+            "We pull permits as part of the job, because unpermitted work tends to surface later during a sale or an insurance claim",
+            "You get documentation for your records, your insurer and any future sale"
+          ]
+        },
+        {
+          "slug": "code-correction",
+          "title": "Code-Correction and Failed-Inspection Remediation",
+          "icon": "shield",
+          "text": "If your property failed an electrical inspection, or an inspector flagged violations during a sale or insurance review, we specialise in code-correction remediation.",
+          "points": [
+            "We identify exactly what is out of code, correct it to current NEC and local standards, and coordinate the re-inspection",
+            "Last-minute corrections before inspection and failed inspection turnarounds",
+            "We will never knowingly violate the standards of the National Electrical Code"
+          ]
+        },
+        {
+          "slug": "inspection-ready-electrical",
+          "title": "Inspection-Ready Electrical for Buyers, Sellers and Landlords",
+          "icon": "home",
+          "text": "An inspection-ready electrical system protects the deal. We perform pre-sale electrical evaluations, correct deficiencies, and provide documentation that satisfies lenders, buyers and insurers.",
+          "points": [
+            "Documentation for insurance, lenders and property sales"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "25+ years of electrical expertise in Houston",
+    "text": [
+      "At Electrical Masters Company, we are committed to providing Houston and surrounding counties with electrical education and services for commercial, residential and industrial. Our vision is to operate through collaborations with contractors who pride themselves on customer satisfaction, respect, and community impact.",
+      "Our mission is to provide Houstonians with reliable electrical service at an affordable cost. By providing high-quality education from a knowledgeable staff, EMC will help you take care of your home or business's electrical needs in the most efficient way possible. We offer a wide range of services including installation, maintenance, and repair work as well as training for your employees or clients.",
+      "Electrical Masters Company is owned and operated by a seasoned professional with over 25 years of experience in the electrical field. As a certified electrician, he has worked with a wide range of systems, including commercial, industrial, and residential projects.",
+      "The experienced electricians of Electrical Masters Company strive to provide our customers with exceptional service, whether it be emergency repairs or regular maintenance on their property."
+    ],
+    "values": [
+      {
+        "title": "Warranty",
+        "text": "Our team is composed of Master Electricians, we pride ourselves on our services. We guarantee our work for up to 1 year after installation."
+      },
+      {
+        "title": "Affordable",
+        "text": "Our mission is to provide affordable, safe and efficient services. Ask about our discounts!"
+      },
+      {
+        "title": "Safety",
+        "text": "Safety is our teams number 1 priority. As an INSURED & BONDED company, you can trust our team to protect your assets."
+      },
+      {
+        "title": "Specialized",
+        "text": "Not all ventures are the same. Our team customizes your Electrical Packages to fit your budget, deadlines, and needed services."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How do I know if my home needs an electrical panel upgrade?",
+      "a": "If you're experiencing frequent breaker trips, flickering lights, or adding major appliances (EV charger, HVAC, etc.), your panel may be outdated or overloaded."
+    },
+    {
+      "q": "Do I need a permit for electrical work?",
+      "a": "In most cases, yes. We handle all permits and coordinate with the City of Houston to ensure full compliance."
+    },
+    {
+      "q": "Why does my breaker keep tripping?",
+      "a": "This usually means the circuit is overloaded or there's a fault. It's a safety feature, but one that should be evaluated."
+    },
+    {
+      "q": "Do you install whole-home generators?",
+      "a": "Yes, we install generators (including Generac systems) to keep your home powered during outages and storms."
+    },
+    {
+      "q": "Do you install EV chargers at home?",
+      "a": "Yes, we specialize in EV charger installations, including load calculations and panel upgrades to ensure safe, code-compliant operation."
+    },
+    {
+      "q": "Can you handle high-voltage systems?",
+      "a": "Yes, Electrical Masters Company is fully equipped to handle high-voltage electrical systems for industrial and commercial facilities, including warehouses, distribution centers, and manufacturing environments. We specialize in working with complex, high-demand power systems, including panel upgrades, switchgear, transformers, and large-scale power distribution."
+    },
+    {
+      "q": "How much does it cost to rewire a home?",
+      "a": "Costs vary based on size, age, and scope. We provide detailed, transparent estimates after an on-site evaluation."
+    },
+    {
+      "q": "Do you offer emergency electrical services?",
+      "a": "Yes, we provide fast-response service for urgent residential electrical issues."
+    },
+    {
+      "q": "How do you ensure OSHA and safety compliance?",
+      "a": "We follow strict OSHA standards and implement safety-first protocols on every job site."
+    },
+    {
+      "q": "Do you offer ongoing maintenance services?",
+      "a": "Yes, we provide maintenance and service agreements to prevent downtime and costly repairs."
+    },
+    {
+      "q": "Why are my lights flickering?",
+      "a": "Flickering lights can indicate loose wiring, overloaded circuits, or panel issues. It's important to have this inspected promptly to avoid safety risks."
+    },
+    {
+      "q": "Can you help with lighting design?",
+      "a": "Absolutely. We design and install recessed lighting, chandeliers, accent lighting, and outdoor lighting to enhance both function and aesthetics."
+    },
+    {
+      "q": "Is it safe to live in a home with outdated wiring?",
+      "a": "Older wiring (like aluminum or knob-and-tube) can pose fire risks. An inspection can determine if upgrades are needed."
+    },
+    {
+      "q": "Will a Level 2 EV charger require a panel upgrade?",
+      "a": "Not always. It depends on your existing service size and current load. We run the calculation before quoting so the answer is known before work begins."
+    },
+    {
+      "q": "How long does EV charger installation take?",
+      "a": "Most residential installations can be completed within a few hours, depending on the complexity of the electrical system and whether upgrades are needed."
+    },
+    {
+      "q": "Can I install an EV charger outside my home?",
+      "a": "Yes. Many EV chargers are designed for outdoor installation and are built to withstand weather conditions when properly installed."
+    },
+    {
+      "q": "How long does a standby generator installation take?",
+      "a": "The on-site electrical and gas work is typically completed in a few days once equipment is on hand, but permitting, utility or gas coordination, and inspection scheduling extend the overall timeline. We give you a realistic schedule up front rather than an optimistic one."
+    },
+    {
+      "q": "Do I need a permit for residential electrical work?",
+      "a": "Panel changes, service upgrades, new circuits, generator installations, and EV charger circuits generally require a permit and inspection in the City of Houston and surrounding jurisdictions. We pull permits as part of the job."
+    },
+    {
+      "q": "Can you handle electrical work for new commercial builds?",
+      "a": "Yes, we manage full electrical scope from design to final inspection for offices, retail, and mixed-use spaces. We work with property managers, owners and investors."
+    },
+    {
+      "q": "How do you ensure projects stay on schedule?",
+      "a": "We coordinate closely with contractors, inspectors, and project managers to meet strict deadlines, especially for openings."
+    },
+    {
+      "q": "Do you handle permits and inspections?",
+      "a": "Yes, we manage the entire permitting process and work directly with local inspectors to ensure compliance."
+    },
+    {
+      "q": "What types of commercial clients do you serve?",
+      "a": "We work with developers, property owners, general contractors, and business owners across multiple industries."
+    },
+    {
+      "q": "Can you upgrade electrical systems for an existing business?",
+      "a": "Absolutely. We specialize in panel upgrades, system expansions, and bringing properties up to current code."
+    },
+    {
+      "q": "Do you install emergency and exit lighting?",
+      "a": "Yes, code-compliant emergency and exit lighting is a core part of our commercial services."
+    },
+    {
+      "q": "What are signs a commercial property needs an upgrade?",
+      "a": "Frequent outages, outdated panels, increased equipment demand, or failing inspections are all indicators."
+    },
+    {
+      "q": "Can you help reduce energy costs?",
+      "a": "We offer energy-efficient lighting upgrades and system optimization to lower operating expenses."
+    },
+    {
+      "q": "How quickly can you mobilize on a project?",
+      "a": "We're known for rapid mobilization, especially for time-sensitive commercial openings."
+    },
+    {
+      "q": "Do you work on warehouses and industrial facilities?",
+      "a": "Yes, industrial electrical is one of our specialties, including warehouses, plants, distribution and data centers."
+    },
+    {
+      "q": "What services do you offer for industrial clients?",
+      "a": "We handle everything from high-capacity panel upgrades and power distribution systems to equipment and machinery wiring, high-bay and exterior safety lighting, and full-scale facility build-outs."
+    },
+    {
+      "q": "Can you help get a facility ready for inspection quickly?",
+      "a": "Absolutely. We step in immediately to identify what's wrong, fix it fast, and get you across the finish line."
+    },
+    {
+      "q": "Do you install industrial lighting systems?",
+      "a": "Yes, high-bay lighting, exterior safety lighting, and energy-efficient upgrades are all part of our services."
+    },
+    {
+      "q": "What causes unexpected power loss in industrial settings?",
+      "a": "Common causes include overloaded systems, faulty equipment, or aging infrastructure."
+    },
+    {
+      "q": "Can you upgrade systems to support new machinery?",
+      "a": "Absolutely, we assess load requirements and upgrade systems to safely support new equipment."
+    },
+    {
+      "q": "Do you offer emergency industrial electrical services?",
+      "a": "Yes. We provide rapid-response industrial electrical services designed to get your facility back online as quickly and safely as possible."
+    },
+    {
+      "q": "Why choose Electrical Masters Company for industrial work?",
+      "a": "Because we combine technical expertise, speed, and deep knowledge of compliance to keep your operations running safely and efficiently."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Katy",
+    "Sugar Land",
+    "The Woodlands",
+    "Pasadena",
+    "Pearland",
+    "Baytown",
+    "Cypress",
+    "Spring",
+    "Conroe",
+    "Kingwood",
+    "Humble",
+    "Tomball",
+    "Richmond",
+    "League City"
+  ],
+  "facts": [
+    {
+      "heading": "Licensing",
+      "items": [
+        "Charles H.J. Hargrave, TEML",
+        "Master Electrician #459441",
+        "TECL #34419",
+        "Texas Electrical Contractor License #34419",
+        "Licensed, certified, insured & bonded",
+        "We follow strict OSHA standards and implement safety-first protocols on every job site.",
+        "We stay updated on the latest electrical codes and innovations in Texas"
+      ]
+    },
+    {
+      "heading": "Warranty",
+      "items": [
+        "Our team is composed of Master Electricians, we pride ourselves on our services. We guarantee our work for up to 1 year after installation.",
+        "We offer a workmanship guarantee for up to one year after installation.",
+        "We register the equipment so the manufacturer warranty starts clean."
+      ]
+    },
+    {
+      "heading": "Insurance",
+      "text": "Safety is our teams number 1 priority. As an INSURED & BONDED company, you can trust our team to protect your assets."
+    },
+    {
+      "heading": "Estimates and discounts",
+      "items": [
+        "Contact us today to schedule your free estimate",
+        "Our mission is to provide affordable, safe and efficient services. Ask about our discounts!",
+        "We provide our clients with a wide range of electrical services at competitive market rates in Houston",
+        "Need a quote? Don't wait until it's too late — reach out today. Availability updated in real time, so secure your slot now.",
+        "Call now for a free estimate — available 24/7 for emergencies.",
+        "Costs vary based on size, age, and scope. We provide detailed, transparent estimates after an on-site evaluation.",
+        "Serving small businesses and large facilities alike, we respond fast and price transparently."
+      ]
+    },
+    {
+      "heading": "Hours",
+      "items": [
+        "24/7 Emergency Availability",
+        "Mon–Fri 8:00 AM – 5:00 PM",
+        "Sat & Sun: Office Closed"
+      ]
+    },
+    {
+      "heading": "Our goals",
+      "items": [
+        "Energy",
+        "Safety",
+        "Quality",
+        "Service",
+        "Innovation",
+        "Trust"
+      ]
+    },
+    {
+      "heading": "Mission",
+      "items": [
+        "It is our mission to provide the highest ethical standards, we promise to provide the best electrical solutions for our customers & clients through QUALITY, VALUE and SERVICE.",
+        "Electrical Masters strives to implement a long-term relationship with our customers, based on safety, prompt service and anticipating our customers' needs.",
+        "We strive every day to learn, assess and implement the newest technologies and best practices in all that we do.",
+        "We prioritize a secure environment for workers, customers and clients while honoring our legacy of providing reliable and quality electrical services.",
+        "To guarantee our QUALITY, we will continually invest in training and education for our workforce and will never knowingly violate the standards of the National Electrical Code."
+      ]
+    },
+    {
+      "heading": "Vision",
+      "items": [
+        "We are dedicated to being the best at exceeding customer expectations, growing through technology & training, and creating the safest work environment possible.",
+        "We pledge to be an ethical and socially responsible company by volunteering our resources and supporting charities: which help our community and neighbors to prosper."
+      ]
+    },
+    {
+      "heading": "Industries served",
+      "items": [
+        "Manufacturing facilities",
+        "Warehouses and distribution centers",
+        "Oil and gas operations",
+        "Food processing plants",
+        "Construction sites",
+        "Heavy industry",
+        "Water treatment facilities",
+        "Data centers"
+      ]
+    },
+    {
+      "heading": "Equipment",
+      "text": "Generac standby generators installed for Houston homes and businesses, with the equipment registered so the manufacturer warranty starts clean."
+    },
+    {
+      "heading": "Careers",
+      "items": [
+        "Electrical Masters Company is growing. We currently have 4 full-time openings based in Houston, TX.",
+        "Electrical Estimator — Houston, TX, Full-Time",
+        "Electrical Project Manager — Houston, TX, Full-Time",
+        "Licensed Apprentice Electrician — Houston, TX, Full-Time",
+        "Licensed Journeyman Electrician — Houston, TX, Full-Time"
+      ]
+    },
+    {
+      "heading": "Apprenticeship program",
+      "items": [
+        "In partnership with the Texas Electrical Safety Association, we offer a four-year apprenticeship program for individuals who are interested in entering the electrical trade.",
+        "Electrical Masters Company is proud to support our next generation of skilled electricians.",
+        "Joining an apprenticeship program gives you a clear path forward. No prior experience is needed.",
+        "The electrical apprenticeship program, approved by the Department of Labor, meets all the recognized standards and sets students up for long-term success in the industry.",
+        "The Texas Electrical Safety Association is known as one of Houston's leading electrical training schools. Since 2002, it has been helping students create solid careers with practical vocational and technical education.",
+        "When you reach out, be sure to mention that you were referred by the Electrical Masters Company."
+      ]
+    },
+    {
+      "heading": "Houston neighbourhoods we serve",
+      "items": [
+        "We work throughout the Houston metro, including Memorial and Spring Branch, the Heights and Garden Oaks, Oak Forest, Near Northside, Uptown and the Galleria area, Jersey Village, Champions and northwest Houston, and south and southwest Houston.",
+        "Don't see your city listed? We likely still serve it — call (832) 970-3101 to confirm coverage.",
+        "Each of our service-area pages covers the local electrical needs, permitting, and neighborhoods specific to that city."
+      ]
+    },
+    {
+      "heading": "By the numbers",
+      "items": [
+        "20+ Years In Houston",
+        "100% Licensed & Insured",
+        "24/7 Emergency Response",
+        "5★ Rated Local Service",
+        "1 Yr Workmanship Guarantee",
+        "2–3 Hour Typical Install (EV charger)",
+        "6 Signature Home Services, 6 Core Commercial Services, 6 Industrial Specialties"
+      ]
+    },
+    {
+      "heading": "What we do across every service area",
+      "items": [
+        "Commercial & industrial — panel upgrades, tenant build-outs, facility power, lighting, code compliance",
+        "Residential — panels, rewiring, EV chargers, generators, safety inspections",
+        "Permits & inspection — permit pulling, inspection prep, code-correction remediation",
+        "24/7 emergency response — fast, safe resolution of urgent electrical problems"
+      ]
+    },
+    {
+      "heading": "Services at a glance",
+      "items": [
+        "Energy Efficiency Audits",
+        "Electrical Design",
+        "Lighting Solutions",
+        "Breakers & Panels",
+        "Electrical Repairs",
+        "Outlet & Switches",
+        "Wiring & Rewiring",
+        "Commercial Services"
+      ]
+    },
+    {
+      "heading": "Generator options",
+      "items": [
+        "Portable generators are a simple choice for short outages. They can power basic items like lights or a refrigerator, but they need to be set up manually.",
+        "Standby generators are installed outside your property and turn on automatically. These can power most or all of your space.",
+        "Solar generators use stored energy from the sun, which is a cleaner option but may have limited power.",
+        "Generac standby generators installed for Houston homes and businesses — automatic backup power that turns on within seconds of an outage.",
+        "We work with both residential and commercial clients in Houston and the surrounding areas."
+      ]
+    },
+    {
+      "heading": "From An Electrician blog",
+      "text": "Tips, guides, and updates from the Electrical Masters Company team."
+    },
+    {
+      "heading": "Find us",
+      "items": [
+        "facebook.com/ElectricalMastersCo",
+        "instagram.com/electrical_masters_company_inc",
+        "linkedin.com/company/electrical-masters-company"
+      ]
+    }
+  ]
+}

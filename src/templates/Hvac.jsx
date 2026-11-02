@@ -1043,9 +1043,11 @@ function Home({ b, groups, tel }) {
           // behind the words and the card, its subject (mostly in the middle) was shaded out or hidden by the card.
           // Cropped about the middle, not the top: a top-anchored band kept the sky and cut the work off at the waist.
           // On a phone it keeps its own proportions, as a 16:10 band cut the crew at the foot of the photo off at the head.
+          // From lg up it keeps them too, centred and no taller than the screen: a 16:9 band cut a squarer photo's
+          // truck, parked along its foot, off at the wheels.
           <div className="lg:order-last lg:mx-auto lg:w-full lg:max-w-page lg:px-gutter lg:pb-24">
             <Img
-              className="block h-auto max-h-[80svh] w-full object-cover lg:aspect-[16/9] lg:max-h-none lg:rounded-[24px] lg:shadow-[0_30px_60px_-35px_rgba(0,0,0,0.6)]"
+              className="block h-auto max-h-[80svh] w-full object-cover lg:mx-auto lg:w-auto lg:max-w-full lg:rounded-[24px] lg:shadow-[0_30px_60px_-35px_rgba(0,0,0,0.6)]"
               src={b.hero.image}
               alt={b.hero.imageAlt || ''}
               sizes="(min-width: 1024px) 1320px, 100vw"
