@@ -17,6 +17,12 @@
         the pages look is the review's to judge (scripts.autobuild.review),
         which photographs every page and fixes what it finds at the source.
 
+    python3 -m scripts.autobuild.gate facts <slug> <site.json>
+        What a customer can read on the business's own website that the
+        brand file does not say (contents.py), from the copy of their site
+        the builder was given. Exits 1 when anything is missing; each line is
+        for the builder to carry onto the preview or to say why not.
+
 The vision check runs wherever the `claude` command does; PREVIEW_VISION=off
 leaves it out.
 """
@@ -30,7 +36,7 @@ import subprocess
 import sys
 import tempfile
 
-from . import check, collect, images, logo, quality, vision, visual
+from . import check, collect, contents, images, logo, quality, vision, visual
 from .__main__ import ROOT, render
 
 
@@ -97,21 +103,26 @@ def cmd_photo(args):
     return 1 if bad else 0
 
 
-def cmd_check(slugs):
-    found = {}
+SHOTS = os.path.join(ROOT, ".autobuild", "shots")
+
+
+def examine(slugs, say=print):
+    """Every check of cmd_check, after `npm run build`: {slug: problems}."""
+    found, unread = {}, set()
     for slug in slugs:
-        with open(os.path.join(ROOT, "src", "brands", f"{slug}.json")) as handle:
-            brand = json.load(handle)
+        try:
+            with open(os.path.join(ROOT, "src", "brands", f"{slug}.json")) as handle:
+                brand = json.load(handle)
+        except (OSError, ValueError) as error:
+            found[slug] = [f"the brand file does not read: {str(error)[:160]}"]
+            unread.add(slug)
+            continue
         found[slug] = check.colors(brand) + check.shape(brand) + check.pictures(brand, ROOT, slug) + check.words(brand, ROOT, slug)
-    drawn = render(slugs)
+    drawn = render([slug for slug in slugs if slug not in unread])
     for slug in slugs:
         found[slug] += drawn.get(slug, [])
-    if not os.path.isdir(os.path.join(ROOT, "dist", "b")):
-        print("dist/ is missing: run npm run build first")
-        return 1
-    shots = os.path.join(ROOT, ".autobuild", "shots")
-    os.makedirs(shots, exist_ok=True)
-    out = subprocess.run(["node", "scripts/autobuild/layout.mjs", shots, *slugs], cwd=ROOT, capture_output=True, text=True,
+    os.makedirs(SHOTS, exist_ok=True)
+    out = subprocess.run(["node", "scripts/autobuild/layout.mjs", SHOTS, *slugs], cwd=ROOT, capture_output=True, text=True,
                          stdin=subprocess.DEVNULL)
     seen = json.loads(out.stdout or "{}")
     for slug in slugs:
@@ -121,25 +132,43 @@ def cmd_check(slugs):
             continue
         found[slug] += result["problems"] + visual.look(result, ask_vision=False)
         for note in result.get("notes", []):
-            print(f"{slug}: ({note})")
+            say(f"{slug}: ({note})")
+    return found
+
+
+def cmd_check(slugs):
+    if not os.path.isdir(os.path.join(ROOT, "dist", "b")):
+        print("dist/ is missing: run npm run build first")
+        return 1
+    found = examine(slugs)
     bad = 0
     for slug, problems in found.items():
         bad += bool(problems)
         print(("PARK " if problems else "PASS ") + slug)
         for p in problems:
             print(f"     - {p}")
-        print(f"     screenshots: {shots}/{slug}-desktop-top.png, {shots}/{slug}-phone-top.png")
+        print(f"     screenshots: {SHOTS}/{slug}-desktop-top.png, {SHOTS}/{slug}-phone-top.png")
     return 1 if bad else 0
 
 
+def cmd_facts(slug, site):
+    found = contents.report(os.path.join(ROOT, "src", "brands", f"{slug}.json"), site)
+    for what, where in found:
+        print(f"MISSING {what}  [{where}]")
+    print(f"{len(found)} thing(s) on their site the preview does not say" if found else "nothing missing")
+    return 1 if found else 0
+
+
 def main(argv):
-    if not argv or argv[0] not in ("logo", "photo", "check"):
+    if not argv or argv[0] not in ("logo", "photo", "check", "facts"):
         print(__doc__)
         return 2
     if argv[0] == "logo":
         return cmd_logo(argv[1], argv[2])
     if argv[0] == "photo":
         return cmd_photo(argv[1:])
+    if argv[0] == "facts":
+        return cmd_facts(argv[1], argv[2])
     return cmd_check(argv[1:])
 
 

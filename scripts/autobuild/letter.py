@@ -23,9 +23,9 @@ def letter_for(row, brand):
     town = brand["town"]
     services = [s["title"] for s in brand.get("services") or brand.get("groups") or []]
     month = _month(row.get("prior"))
-    opener = f"I wrote to you in {month} about your website." if month else "I'm Trenton with TaylorURL, a small web studio in Baytown."
-    p1 = (f"{opener} Since then I put together a first draft of a new website for {name}, "
-          f"and it's live so you can click through it:\n{{url}}")
+    opener = (f"I wrote to you in {month} about your website. Since then I put together" if month
+              else "I'm Trenton with TaylorURL, a small web studio in Baytown. I put together")
+    p1 = f"{opener} a first draft of a new website for {name}, and it's live so you can click through it:\n{{url}}"
 
     theirs = ["your logo and colors" if (brand.get("brand") or {}).get("logo") else "your name and colors"]
     if brand.get("rating") and brand.get("reviewCount"):
