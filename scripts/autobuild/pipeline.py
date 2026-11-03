@@ -58,7 +58,7 @@ from .check import all_checks
 from .compose import AUTOMATED
 from .letter import letter_for
 from .slug import slug_for
-from . import review, visual
+from . import drafts, review, visual
 
 spec = importlib.util.spec_from_file_location("routine", os.path.join(ROOT, "scripts", "routine.py"))
 routine = importlib.util.module_from_spec(spec)
@@ -146,10 +146,12 @@ LAND_MINUTES = 12
 REVIEW_MINUTES = 6
 
 
-def build_batch(rows):
+def build_batch(rows, keep=True):
     """Builds, checks and reviews each business; returns the ones that passed,
     the parked ones, the ones not reached before the batch had to land, and
-    what the review fixed: {"fixes": [sentences], "changed": [paths]}."""
+    what the review fixed: {"fixes": [sentences], "changed": [paths]}. With
+    keep, what was made of each parked business is kept as its draft
+    (drafts.py), for the morning run to finish rather than start again."""
     passed, parked, unbuilt = [], [], []
     fixed = {"fixes": [], "changed": []}
     for row in rows:
@@ -169,16 +171,17 @@ def build_batch(rows):
                 log("already landed", slug)
                 continue
         slug = slug_for(row["name"], row.get("town"), ROOT)
+        known, evidence = None, None
         try:
             brand, evidence = build(row, ROOT, slug)
             problems = all_checks(brand, evidence, ROOT, slug)
             for note in evidence.get("notes", []):
                 log(slug, note)
         except Parked as reason:
-            problems, brand = [str(reason)], None
+            problems, brand, known = [str(reason)], None, getattr(reason, "known", None)
         except Exception as error:
             problems, brand = [f"the build broke: {type(error).__name__}: {str(error)[:160]}"], None
-        item = {"row": row, "slug": slug, "brand": brand, "problems": problems}
+        item = {"row": row, "slug": slug, "brand": brand, "problems": problems, "known": known, "evidence": evidence}
         (parked if problems else passed).append(item)
         log("built" if not problems else "parked", slug, "; ".join(problems))
     fresh = [p for p in passed if not p.get("landed")]
@@ -213,6 +216,13 @@ def build_batch(rows):
                 parked.append(item)
     for item in parked:
         if not item.get("landed"):
+            if keep:
+                try:
+                    drafts.save(item["row"], item["slug"], ROOT, "; ".join(item["problems"]), item.get("known"),
+                                item.get("evidence"))
+                except Exception as error:
+                    # A draft not kept is a business the morning run starts from scratch.
+                    log(item["slug"], "its draft was not kept:", f"{type(error).__name__}: {str(error)[:160]}")
             discard(item["slug"])
     return passed, parked, unbuilt, fixed
 
@@ -432,6 +442,15 @@ def main(argv):
     if args.send and not args.dry and catching_up():
         send_waiting(report, held_only=True)
     rows = [r for r in routine.due() if not r.get("parked_at") and r["industry"] in AUTOMATED]
+    # A letter's site is built only while the mailbox is near it: one built
+    # days before the mailbox has room for its letter only waits. The text
+    # line keeps its own limit in routine.due().
+    if not args.dry:
+        held = routine.backlog()
+        if held["full"]:
+            rows = [r for r in rows if r.get("channel") != "email"]
+            report["notes"].append(f"{held['waiting']} letters wait for the mailbox, which sent at most "
+                                   f"{held['best_day']} in a day this week, so no letter's site was built")
     if args.limit:
         rows = rows[:args.limit]
     log(f"{len(rows)} due for a scripted build")
@@ -444,7 +463,7 @@ def main(argv):
     while rows and time.time() < deadline() - reserve:
         batch, rows = rows[:args.batch], rows[args.batch:]
         n += 1
-        passed, parked, unbuilt, fixed = build_batch(batch)
+        passed, parked, unbuilt, fixed = build_batch(batch, keep=not args.dry)
         rows = unbuilt + rows
         report["parked"] += [{"slug": p["slug"], "name": p["row"]["name"], "why": "; ".join(p["problems"])} for p in parked]
         if args.dry:

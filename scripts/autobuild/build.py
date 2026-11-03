@@ -316,6 +316,19 @@ def _said(item):
 
 
 def build(prospect, root, slug):
+    """A business it cannot finish raises Parked carrying, as `known`, what it
+    had already made of them: the brand so far, the logo's and the photos'
+    sources, and the services and words it found. The run that finishes the
+    business by hand starts from that rather than from nothing."""
+    known = {}
+    try:
+        return _build(prospect, root, slug, known)
+    except Parked as reason:
+        reason.known = known
+        raise
+
+
+def _build(prospect, root, slug, known):
     template = prospect["industry"]
     if template not in compose.AUTOMATED:
         raise Parked(f"no automatic build for the {template} template yet")
@@ -355,10 +368,15 @@ def build(prospect, root, slug):
             h_, l_, s_ = colorsys.rgb_to_hls(*(v / 255 for v in ground))
             if s_ >= 0.22 and 0.12 < l_ < 0.85:
                 inks = [ground] + inks
+        known["logo_source"] = logo_src
+        known["brand"] = {"brand": {**compose.font_block(compose.fonts_of(css), sample), **logo_fields}}
+        known["notes"] = notes
         colors = compose.colors_of(inks, css, template)
         if not colors:
             raise Parked("no brand color in the logo or the site's stylesheet")
+        known["brand"]["brand"].update(colors)
         photos, refused = _photos(pages, logo_src, logo_raw, scratch, notes, root, slug)
+        known["photos_refused"] = refused
     finally:
         shutil.rmtree(scratch, ignore_errors=True)
 
@@ -376,10 +394,13 @@ def build(prospect, root, slug):
             _shown.append((os.path.join(folder, f"photo{i}-800.webp").replace(os.sep, "/"), images.ahash(item["image"])))
     hero_image = names[0][0] if hero_pick else None
     spare = [n for n, _ in (names[1:] if hero_pick else names)]
+    known["photos"] = [{"path": n, "source": item["source"], "slot": "hero" if n == hero_image else "card",
+                        "look": (item["look"] or {}).get("why")} for n, item in names]
 
     kind = compose.KIND.get(prospect["trade"])
     vocab_key = kind or template
     services = compose.services_of(pages, compose.VOCAB[vocab_key], name, town, described_first=template == "hvac", towns=TOWNS)
+    known["services"] = services
     if len(services) < 2:
         raise Parked("fewer than two services named on their website")
     if template == "professional":
@@ -392,6 +413,7 @@ def build(prospect, root, slug):
             services = described
     about = compose.about_of(pages, name, vocab_key, services, town, state, TOWNS)
     lead, lead_source = compose.lead_of(pages, about, vocab_key, services, town, state, TOWNS)
+    known["about"], known["lead"] = about, lead
     if not lead:
         raise Parked("no description of the business in its own words")
     areas = compose.areas_of(text, town, TOWNS)
@@ -432,6 +454,8 @@ def build(prospect, root, slug):
         **compose.font_block(compose.fonts_of(css), sample),
         **logo_fields,
     }
+    # From here the brand is what a park leaves behind, as far as it got.
+    known["brand"] = brand
     brand["hero"] = {
         "eyebrow": f"{label} in {town}",
         "title": short,
