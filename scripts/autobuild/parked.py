@@ -533,8 +533,9 @@ def main(argv):
             held = routine.backlog() if not DRY else {"full": False}
             if held["full"]:
                 report["paused"] = n == 0
-                report["notes"].append(f"{held['waiting']} letters wait for the mailbox, which sent at most "
-                                       f"{held['best_day']} in a day this week, so nothing more was built")
+                report["held"] = (f"{held['waiting']} letters wait for the mailbox, which sent at most "
+                                  f"{held['best_day']} in a day this week, so nothing more was built")
+                report["notes"].append(report["held"])
                 break
             batch, rows = rows[:args.batch], rows[args.batch:]
             n += 1
@@ -551,7 +552,7 @@ def main(argv):
     report["cost_usd"] = round(report["cost_usd"], 2)
     print("<parked_report>" + json.dumps(report) + "</parked_report>")
     if report["paused"]:
-        print(f"Built nothing: {report['notes'][-1]}.")
+        print(f"Built nothing: {report['held']}.")
     else:
         print(f"Of {report['found']} parked businesses, {len(report['built'])} were "
               f"{'ready to land (a trial lands nothing)' if DRY else 'built and registered'}, "
