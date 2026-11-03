@@ -41,6 +41,11 @@ Commands:
     sent-today                     how many preview letters went out today,
                                    less any a catch-up held
     texts-today                    how many texts the text line sent today
+    backlog                        the letters of live sites waiting to go,
+                                   what the mailbox has sent in its best
+                                   recent day, and whether that is enough
+                                   waiting that nothing new is built, as JSON;
+                                   exits 3 when it is
 """
 
 import hashlib
@@ -60,6 +65,15 @@ SEND = "https://www.taylorurl.com/api/outreach/previews"
 # The most text previews built ahead of the text line: sites wait for it to
 # open, and a draft built months before its text goes is a draft gone stale.
 TEXT_BACKLOG = 40
+# How far ahead of the mailbox the letters' sites are built: this many of its
+# best recent days. The mailbox's room grows as its addresses warm up, so the
+# best day of the last week is what it can send, and a site built further
+# ahead than that only waits, spending its build before it can be any use.
+BACKLOG_DAYS = 2
+BACKLOG_LOOKBACK = 7
+# Never less than this, so a mailbox that has sent nothing yet still has sites
+# waiting for its first day.
+BACKLOG_FLOOR = 30
 INDUSTRY = {
     "plumber": "plumbing",
     "barber shop": "barber",
@@ -407,6 +421,25 @@ def sent_today():
     print(sent_today_count())
 
 
+def backlog():
+    """The letters of registered sites waiting to go, the most letters the
+    mailbox sent on one Houston day of the last week, and whether the wait is
+    long enough that nothing new should be built:
+    {"waiting", "best_day", "limit", "full"}."""
+    from zoneinfo import ZoneInfo
+
+    houston = ZoneInfo("America/Chicago")
+    waiting = len(rest("GET", "preview_sites?select=id&channel=eq.email&sent_at=is.null&prospect_id=not.is.null") or [])
+    since = (datetime.now(timezone.utc) - timedelta(days=BACKLOG_LOOKBACK)).isoformat().replace("+00:00", "Z")
+    days = {}
+    for row in rest("GET", f"preview_sites?select=sent_at&channel=eq.email&sent_at=gte.{since}") or []:
+        day = instant(row["sent_at"]).astimezone(houston).date()
+        days[day] = days.get(day, 0) + 1
+    best = max(days.values(), default=0)
+    limit = max(BACKLOG_DAYS * best, BACKLOG_FLOOR)
+    return {"waiting": waiting, "best_day": best, "limit": limit, "full": waiting >= limit}
+
+
 def texts_sent_today():
     """Texts the text line sent today, Houston's day, first texts and
     follow-ups alike: the count the line's own daily cap is held to."""
@@ -436,6 +469,11 @@ def main(argv):
         sent_today()
     elif command == "texts-today":
         print(texts_sent_today())
+    elif command == "backlog":
+        found = backlog()
+        print(json.dumps(found))
+        if found["full"]:
+            sys.exit(3)
     else:
         sys.exit(__doc__)
 
