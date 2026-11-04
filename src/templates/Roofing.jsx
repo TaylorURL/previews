@@ -810,8 +810,10 @@ function ServiceCard({ s, tagged = true, photo = true, className = '' }) {
         <div className="flex flex-1 flex-col border-b-4 border-transparent px-6 pb-6 pt-4 transition group-hover:border-primary sm:px-7">
           <h3 className={`${h3} text-[25px]`}>{s.title}</h3>
           {s.text ? <p className="mt-2.5 flex-1 leading-[1.6] text-ink/75">{s.text}</p> : <span className="flex-1" />}
+          {/* The heading already names the service; a long name repeated here ran
+              to two lines and sat its link higher than the ones beside it. */}
           <span className="mt-5 inline-flex items-center gap-2 font-heading text-[15px] font-semibold uppercase tracking-[0.1em] text-primary">
-            {s.title} <ArrowRight size={16} className="transition group-hover:translate-x-1" aria-hidden="true" />
+            Learn More <ArrowRight size={16} className="transition group-hover:translate-x-1" aria-hidden="true" />
           </span>
         </div>
       </a>
@@ -1060,26 +1062,25 @@ function AboutBand({ b }) {
   );
   return (
     <section className={`bg-ink text-white ${topClip} pb-[clamp(4rem,9vw,7rem)] pt-[calc(clamp(28px,5vw,88px)+clamp(3.5rem,8vw,6rem))]`}>
-      {/* Without a photo the heading takes the left half and the words the right, so neither half is left empty. */}
+      {/* Without a photo the heading takes the left half and the words the right, so neither half is left empty.
+          With one the heading runs across the top and the photo sits beside the words: under the heading
+          it made the left half the heading's height taller than the words, and left the right half empty. */}
       <div
-        className={`${wrap} grid ${a.image ? 'items-start gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]' : 'items-center lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]'} lg:gap-20`}
+        className={`${wrap} grid ${a.image ? 'items-center gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-x-20' : 'items-center lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-20'}`}
       >
-        <div>
+        <div className={a.image ? 'md:col-span-2' : ''}>
           <Eyebrow dark>{b.since ? `Since ${b.since}` : 'About us'}</Eyebrow>
           <h2 className={h2}>{a.title}</h2>
-          {/* The photo keeps its own shape, so a wide team photo loses no one at its
-              edges, and it sits under the heading rather than floating in a column of
-              its own: a photo shorter than the words beside it would leave the band
-              empty above and below it. */}
-          {a.image && (
-            <Img
-              className="mt-9 h-auto max-h-[34rem] w-auto max-w-full [clip-path:polygon(0_0,100%_0,100%_100%,8%_100%,0_92%)]"
-              src={a.image}
-              alt={a.imageAlt}
-              sizes="(min-width: 768px) 46vw, 100vw"
-            />
-          )}
         </div>
+        {/* The photo keeps its own shape, so a wide team photo loses no one at its edges. */}
+        {a.image && (
+          <Img
+            className="h-auto max-h-[34rem] w-auto max-w-full [clip-path:polygon(0_0,100%_0,100%_100%,8%_100%,0_92%)]"
+            src={a.image}
+            alt={a.imageAlt}
+            sizes="(min-width: 768px) 46vw, 100vw"
+          />
+        )}
         <div>{words}</div>
       </div>
     </section>
