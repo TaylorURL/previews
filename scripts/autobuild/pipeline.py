@@ -275,7 +275,22 @@ def land(passed, branch, fixed=None):
     # check out develop here, which the primary checkout already holds.
     gh("pr", "merge", url, "--squash")
     git("push", "origin", "--delete", branch, check=False)
+    # What comes after landing reads the files that just landed: the letter is
+    # written from the brand file, and routine.py's register refuses a site
+    # whose brand file no longer hashes to the one the review stamped. So the
+    # checkout is moved to develop as it stands after the merge, which is
+    # fetched first - detaching on the origin/develop this run started from
+    # takes the new sites straight back out of the checkout.
+    git("fetch", "origin", check=False)
     git("checkout", "--detach", "origin/develop", check=False)
+    gone = [p["slug"] for p in passed
+            if not os.path.exists(os.path.join(ROOT, "src", "brands", f"{p['slug']}.json"))]
+    if gone:
+        # The merge has not reached origin/develop, so the branch's own commit
+        # is what still holds these sites; registering from a checkout that has
+        # lost them cannot work.
+        log("the checkout does not hold what it landed, so it goes back to the branch:", ", ".join(gone))
+        git("checkout", "--detach", branch, check=False)
     git("branch", "-D", branch, check=False)
     release()
 
