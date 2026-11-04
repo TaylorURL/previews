@@ -182,6 +182,9 @@ def ground_of(arr):
 # filling its own bounds, the name knocked out through it to show the page it
 # was drawn for. At least this much of its outer ring is opaque and one color.
 PLATE_RING = 0.95
+# And at least this much of it is solid: a thin frame drawn round a name is
+# one color all round its ring too, but it is a line, not a plate.
+PLATE_FILL = 0.5
 
 
 def _plate(arr):
@@ -191,14 +194,16 @@ def _plate(arr):
     the plate is cut away like any flat ground and the name stays. The filled
     mark and the plate's color, or None when the mark is no plate."""
     alpha = arr[..., 3]
-    rows = np.flatnonzero((alpha > 8).any(axis=1))
-    cols = np.flatnonzero((alpha > 8).any(axis=0))
+    # The plate's solid body, not the soft rim its edge leaves where a ground
+    # was cut from round it (a red badge on a white square).
+    rows = np.flatnonzero((alpha >= 200).any(axis=1))
+    cols = np.flatnonzero((alpha >= 200).any(axis=0))
     if not len(rows) or not len(cols):
         return None
     arr = arr[rows[0]:rows[-1] + 1, cols[0]:cols[-1] + 1]
     ring = _border(arr)
     opaque = ring[:, 3] >= 200
-    if opaque.mean() < PLATE_RING:
+    if opaque.mean() < PLATE_RING or (arr[..., 3] >= 200).mean() < PLATE_FILL:
         return None
     rgb = ring[opaque][:, :3].astype(np.float32)
     plate = np.median(rgb, axis=0)
@@ -836,6 +841,14 @@ def prepare(image):
         else:
             ground_for_header = ground
         arr = cut_ground(arr, ground)
+        # A plate drawn on a flat ground (a red badge on a white square) is
+        # still a plate once the square is cut away, and would sit on the page
+        # as a box: it is cut away in turn, and its name is the mark.
+        plate = _plate(arr)
+        if plate is not None:
+            arr, ground = plate
+            ground_for_header = WHITE if min(ground) >= 238 else ground
+            arr = cut_ground(arr, ground)
     arr = trim(arr)
 
     if kind == "solid":
@@ -893,6 +906,11 @@ def rework(image):
     # was drawn on: there is no flat ground to take away.
     if kind == "solid":
         arr = cut_ground(arr, ground)
+        # A plate on a flat ground is cut away in turn, as in `prepare`.
+        plate = _plate(arr)
+        if plate is not None:
+            arr, ground = plate
+            arr = cut_ground(arr, ground)
         native = WHITE if min(ground) >= 238 else ground
     arr = trim(arr)
     if kind != "solid":

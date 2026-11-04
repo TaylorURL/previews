@@ -19,34 +19,13 @@
     "surface": "#fcf1f2",
     "heading": "'Source Sans 3', system-ui, sans-serif",
     "body": "'Lora', Georgia, serif",
-    "fonts": "https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Lora:wght@400;600;700&display=swap",
-    "logo": "/brands/houstonroofingexperts/logo.webp",
-    "logoMono": "/brands/houstonroofingexperts/logo-mono.webp",
-    "logoWidth": 204,
-    "logoHeight": 48,
-    "logoRatio": 4.255,
-    "logoGround": "#ffffff",
-    "logoReads": [
-      0.878,
-      0.863,
-      0.856,
-      0.862,
-      0.868,
-      0.884,
-      0.905,
-      0.928,
-      0.949,
-      0.974,
-      1.0
-    ]
+    "fonts": "https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Lora:wght@400;600;700&display=swap"
   },
   "hero": {
-    "eyebrow": "Roofing in Houston",
-    "title": "Houston Roofing Experts",
+    "eyebrow": "Houston Roofing Experts",
+    "title": "Residential and commercial roofing",
     "lead": "Houston Roofing Experts is a family-owned roofing company, serving the Houston and surrounding areas for over 16 years. We are dedicated to providing superior residential and commercial roofing solutions.",
-    "image": "/brands/houstonroofingexperts/photo1",
-    "imageAlt": "A photo of Houston Roofing Experts",
-    "titleAccent": "Residential Roofing in Houston."
+    "titleAccent": "in Houston"
   },
   "serviceArea": [
     "Houston",
@@ -67,17 +46,23 @@
       "slug": "residential-roofing",
       "title": "Residential Roofing",
       "group": "residential",
-      "short": "Residential Roofing",
+      "short": "Shingle and metal roof installs, repairs and replacements.",
       "text": "Complete roof installations, repairs, and replacements for homes of all sizes. We specialize in shingle and metal roofing."
     },
     {
       "slug": "commercial-roofing",
       "title": "Commercial Roofing",
       "group": "commercial",
-      "short": "Commercial Roofing",
+      "short": "Low-sloped TPO and pitched metal roof systems.",
       "text": "Professional roofing solutions for commercial properties, including 1–4 story buildings, retail and multi-family developments.",
       "body": [
         "Specializing in low sloped TPO and pitched metal roof systems."
+      ],
+      "points": [
+        "Low-sloped TPO roof systems",
+        "Pitched metal roof systems",
+        "1–4 story commercial buildings",
+        "Retail and multi-family developments"
       ]
     },
     {
@@ -90,21 +75,23 @@
     {
       "slug": "roof-inspections",
       "title": "Roof Inspections",
-      "short": "Roof Inspections",
+      "short": "Find potential issues before they become costly problems.",
       "text": "Comprehensive roof inspections to identify potential issues before they become costly problems."
     },
     {
-      "slug": "residential-asphalt-shingles",
-      "title": "Residential Asphalt Shingles",
-      "group": "residential",
-      "short": "Residential Asphalt Shingles",
-      "text": ""
-    },
-    {
-      "slug": "metal-roof",
-      "title": "Metal Roof",
-      "short": "Metal Roof",
-      "text": ""
+      "slug": "metal-roofing",
+      "title": "Metal Roofing",
+      "short": "Standing seam and PBR metal panel systems.",
+      "text": "Standing seam and PBR metal roof systems for homes and commercial buildings. Metal panels designed for performance and looks, for a durable finish.",
+      "body": [
+        "Standing seam metal roofing is a concealed fastener metal panel system that features vertical legs and a broad, flat area between the two legs.",
+        "PBR metal roofing and metal siding panels are an ideal solution for pre-engineered metal buildings, post-frame, and agricultural buildings, and come in several energy-efficient colors."
+      ],
+      "points": [
+        "Standing seam metal panels",
+        "PBR metal roofing and siding panels",
+        "Elastomeric acrylic roof coatings"
+      ]
     }
   ],
   "about": {
