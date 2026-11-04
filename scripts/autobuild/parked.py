@@ -467,9 +467,13 @@ def finish(items, n, stamp, report):
         if item.get("landed") and git("status", "--porcelain", "--", f"src/brands/{item['slug']}.json",
                                       f"public/brands/{item['slug']}").stdout.strip():
             item["landed"] = False
+    # Every letter is written from the brand file as this run built it, before
+    # landing moves the checkout to what develop holds.
+    for item in ready:
+        item["letter_out"] = letter(item)
     if DRY:
         for item in ready:
-            log("ready to land", item["slug"], json.dumps(letter(item))[:600])
+            log("ready to land", item["slug"], json.dumps(item["letter_out"])[:600])
             report["built"].append(item["slug"])
         return
     if not ready and not changed:
@@ -484,7 +488,7 @@ def finish(items, n, stamp, report):
         path = os.path.join(ROOT, ".autobuild", f"{item['slug']}.letter.json")
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w") as handle:
-            json.dump(letter(item), handle)
+            json.dump(item["letter_out"], handle)
         code, out = call("register", item["slug"], item["row"]["id"], path)
         if code:
             report["notes"].append(f"{item['slug']} could not be registered: {out[-160:]}")
