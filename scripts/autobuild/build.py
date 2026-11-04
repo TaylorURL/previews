@@ -520,13 +520,19 @@ def _build(prospect, root, slug, known):
         # body carries only the sentences that text has not already said.
         def untold(text):
             return " ".join(compose.sentences(text)[len(compose.sentences(compose.trim(text, 170))):])
-        brand["services"] = [
+        items = [
             {"slug": compose.slugify(s["title"]), "title": s["title"],
              **({"group": group} if (group := next((k for k, p in compose.ROOF_GROUPS if re.search(p, s["title"], re.I)), None)) else {}),
              "short": compose.trim(s["text"], 70) or s["title"], "text": compose.trim(s["text"], 170) or "",
              **({"body": [rest]} if (rest := untold(s["text"])) else {})}
             for s in services
         ]
+        # Where most services are described the home grid draws them as cards,
+        # and a service their site only names is a page with nothing under its
+        # heading but the inspection card; it is left out, as on professional.
+        if sum(1 for item in items if not item["text"]) * 2 < len(items):
+            items = [item for item in items if item["text"]]
+        brand["services"] = items
         if not about:
             raise Parked("no about text on their website")
         brand["about"] = about_block()
