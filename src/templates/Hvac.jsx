@@ -867,7 +867,7 @@ function PageHero({ b, crumbs, eyebrow, title, text, image, imageAlt, imageHold 
           ) : (
             eyebrow && <Eyebrow>{eyebrow}</Eyebrow>
           )}
-          <h1 className="font-heading text-[clamp(2.2rem,1.3rem+3.2vw,3.6rem)] font-extrabold leading-[1.04] tracking-[-0.03em] text-ink [text-wrap:balance] break-words">
+          <h1 className="font-heading text-[clamp(2.2rem,1.3rem+3.2vw,3.6rem)] font-extrabold leading-[1.12] tracking-[-0.03em] text-ink [text-wrap:balance] break-words">
             {unbroken(title)}
           </h1>
           {text && <p className={`mt-5 max-w-[38rem] ${lead}`}>{text}</p>}
@@ -1060,7 +1060,7 @@ function Home({ b, groups, tel }) {
         >
           <div className="min-w-0">
             <Eyebrow light>{b.hero.eyebrow}</Eyebrow>
-            <h1 className="font-heading font-display text-[clamp(2.4rem,1.2rem+4vw,4.3rem)] leading-[1.03] text-white [text-wrap:balance] break-words">
+            <h1 className="font-heading font-display text-[clamp(2.4rem,1.2rem+4vw,4.3rem)] leading-[1.12] text-white [text-wrap:balance] break-words">
               {/* The second half is solid white too: a see-through white turns grey over a busy photo and reads weaker than the first. */}
               {b.hero.title} {b.hero.titleAccent && <span className="text-white">{b.hero.titleAccent}</span>}
             </h1>
