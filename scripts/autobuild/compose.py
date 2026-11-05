@@ -269,6 +269,9 @@ CORPORATE = re.compile(r"\b(llc|l\.l\.c|inc|incorporated|corp|corporation|ltd|pl
 # with or without a title after it ("Charles H. Mansour, Closing Attorney"),
 # are headings on their site, not services they sell.
 NOT_A_SERVICE_SHAPE = re.compile(r"^\d+\.\s|[^\w\s&'\u2019,./()\-\u2013+]|,\s*[A-Za-z]{2}$|\b(?i:tx|texas)$|\bin [A-Z][a-z]|^[A-Z][a-z]+[A-Z]\w*$|^[A-Z][a-z]+ [A-Z]\. [A-Z][a-z]+(?:,|$)")
+# The state's cities outside the area the builder draws its towns from.
+CITIES = ["Austin", "Dallas", "San Antonio", "Fort Worth", "El Paso", "Corpus Christi", "Arlington", "Plano", "Lubbock",
+          "Laredo", "Irving", "Frisco", "McKinney", "Amarillo", "Brownsville", "McAllen", "Killeen", "Waco", "College Station"]
 NAME_FILLER = {"the", "llc", "inc", "co", "company", "corp", "ltd", "pllc", "agency", "group"}
 
 
@@ -628,7 +631,9 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
     # for a search engine, and "Houston Weather and Commercial Exteriors" an
     # article about the area; the service under them is listed on its own. A
     # town whose name is a word ("Spring Cleanup") is left to the word.
-    near = [t for t in [town, *towns] if t and t not in ("Spring", "Liberty", "Highlands", "Humble", "Cove")]
+    # So are "Austin Car Accident Lawyers" and "Dallas Car Accident Lawyers",
+    # pages for the state's other cities, far from where they are.
+    near = [t for t in [town, *towns, *CITIES] if t and t not in ("Spring", "Liberty", "Highlands", "Humble", "Cove")]
     local = re.compile(rf"\b(?:{'|'.join(re.escape(t) for t in near)})\b", re.I) if near else None
     # A description's sentence that sets the work in another town ("...brings
     # your dreams to life in Kingwood") was written for that town's page, and
@@ -766,6 +771,11 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # which is a job on their team, and so does one that ends on a rank
         # ("Tax Manager", "Office Coordinator").
         if re.search(r"\b(?:electricians|technicians|installers|contractors|plumbers|roofers|painters|builders|remodelers|specialists|experts|professionals|pros|mechanics|welders|landscapers|exterminators|inspectors|engineers|machinists|fabricators|consultants?|advis[eo]rs?|accountants?|bookkeepers?|preparers?|managers?|directors?|supervisors?|coordinators?|assistants?|clerks?)$", name, re.I) and not re.search(r"\b(?:for|to|with)\b", name, re.I):
+            return
+        # One in Spanish ("Abogadas De Accidente De Autos", "Accidentes
+        # Peatonales") is their Spanish menu's link to a service they list in
+        # English, or the lawyers for it, and the preview is in English.
+        if re.search(r"(?:^|\s)(?:de|del|los|las|y|para|con)(?=\s)|\b(?:abogad[oa]s?|accidentes|lesiones|peatonal(?:es)?)\b", name, re.I):
             return
         # Words under it that describe an opening on their team ("This
         # position is responsible for...") make it a job, not a service.
@@ -1108,8 +1118,11 @@ def unsited(text):
     return " ".join(s for s in sentences(text) if not SITE_TALK.match(s))
 
 
-def lead_of(pages, about, trade=None, services=(), town=None, state=None, towns=()):
+def lead_of(pages, about, trade=None, services=(), town=None, state=None, towns=(), name=None):
     about = [unsited(unphoned(p)) for p in about]
+    # A description that opens on a firm's name not theirs ("HLA Law Firm in
+    # Houston offers..." for Husain Law) calls them what the preview does not.
+    subject = re.compile(r"^((?:[A-Z][\w&'’.-]*\s+){0,4}(?:Law Firm|Law Group|Law Offices?|Firm|Group|Associates|Agency))\b(?:,?\s+in\s+[A-Z][\w ]*?)?,?\s+(?:is|are|offers?|provides?|helps?|serves?|specializ\w+|has|brings)\b")
     for page in pages[:1]:
         for key in ("og:description", "description"):
             text = trim(unsited(unphoned(HEADING_RUN_IN.sub("", plain(page.meta.get(key, ""))))), 220)
@@ -1119,6 +1132,8 @@ def lead_of(pages, about, trade=None, services=(), town=None, state=None, towns=
             # trusted roofing contractor" for a roofer in Crosby, TX) was
             # written for somewhere else; under their hero it contradicts their address.
             if placed_elsewhere(text, town, state, towns):
+                continue
+            if name and (m := subject.match(text)) and not names_the_business(m.group(1), name):
                 continue
             # A description left from the theme or another company's site
             # ("industrial machinery, tools, and engineering services" on a
