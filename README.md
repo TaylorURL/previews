@@ -2,7 +2,7 @@
 
 Preview websites built in a local business's own brand, linked from TaylorURL's outreach emails.
 
-Each preview is made from the business's name, logo, colors, photos and details. It lives at `<business>.taylorurl.com`, has a bar across the top saying it's a preview, and is hidden from search engines.
+Each preview is made from the business's name, logo, colors, photos and details. It lives at `<business>.taylorurl.com`, has a bar across the top saying it's a preview, and is hidden from search engines. A brand file marked `draft` is a rough draft someone asked for, not an outreach preview. Its bar says so.
 
 Those live in one brand file per business, `src/brands/<slug>.json`, with the details, colors, fonts, logo and copy. Photos go in `public/brands/<slug>/` as webp at 800 and 1600 wide. Every fact comes from the business's own website and Google listing. Nothing is borrowed from another business, and anything unknown is left out rather than guessed.
 
