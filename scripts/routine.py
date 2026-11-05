@@ -111,10 +111,18 @@ INDUSTRY = {
 }
 
 
+# Layouts being drawn for the trades that were on another trade's layout: the
+# outdoor project trades, the industrial and B2B trades, and the health
+# practices. No site is built for them, by the script or the morning session,
+# until these are proved and taken off this list.
+HELD = {"outdoor", "industrial", "health"}
+
+
 def templates():
-    """The templates this checkout can draw, by the name a brand file uses."""
+    """The templates this checkout can draw, by the name a brand file uses,
+    less the ones still held."""
     folder = os.path.join(HERE, "..", "src", "templates")
-    return {name[:-4].lower() for name in os.listdir(folder) if name.endswith(".jsx") and name != "shared.jsx"}
+    return {name[:-4].lower() for name in os.listdir(folder) if name.endswith(".jsx") and name != "shared.jsx"} - HELD
 
 
 def key():
