@@ -258,7 +258,7 @@ def sells_medicine(text, trade):
 # A year can follow its word with "in" ("Established in 2014").
 SINCE = re.compile(r"\b(?:since|established|founded|est\.?|serving [^.]{0,40} since)\s+(?:in\s+)?((?:19|20)\d\d)\b", re.I)
 LICENSE = re.compile(r"\b((?:TDLR|TACLA|TECL|TDI|NPN|License|Lic\.)\s*(?:No\.?|#|Number)\s*:?\s*[A-Z]{0,6}-?\d[\w-]{3,})", re.I)
-NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|where|your|schedule|consult|consultation|request|quotes?|checklist|estimator|calculator|types of|signs (?:of|that|you)|causes? of|(?:needed|required) for|(?:benefits?|advantages|importance) of|our|blog|news|faqs?|frequently asked|questions?|costs?|prices?|pricing|understanding|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|(?<!chain[- ])links?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|crews?|staff|professionals?|pros|painters?|technicians?|office|branch|powered|serving|products|vice president|vp|agents?|assistants?|hygienists?|dentists?|orthodontists?|periodontists?|endodontists?|prosthodontists?|surgeons?|physicians?|providers?|receptionists?|coordinators?|managers?|industry|page|apps?|directory|companies|contractors?|finance a|overview|dangers?)\b", re.I)
+NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|where|your|schedule|consult|consultation|request|quotes?|checklist|estimator|calculator|types of|signs (?:of|that|you)|causes? of|(?:needed|required) for|(?:benefits?|advantages|importance) of|our|blog|news|faqs?|frequently asked|questions?|costs?|prices?|pricing|understanding|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|(?<!chain[- ])links?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|crews?|staff|professionals?|pros|painters?|technicians?|office|branch|powered|serving|products|vice president|vp|agents?|assistants?|hygienists?|dentists?|orthodontists?|periodontists?|endodontists?|prosthodontists?|surgeons?|physicians?|providers?|receptionists?|coordinators?|managers?|industry|page|apps?|directory|companies|contractors?|finance a|overview|info|dangers?)\b", re.I)
 ACRONYMS = {"IRS", "CFO", "CPA", "CPAS", "HVAC", "AC", "A/C", "TPO", "LLC", "QB", "EPDM", "UV", "HOA", "1031", "S-CORP"}
 # A business's own name, or anything carrying a corporate suffix, is never
 # one of its services.
@@ -712,8 +712,9 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         if re.match(r"(?:(?:high|top|best)[- ]?quality|quality|premium|reliable|trusted|dependable|affordable)\s", name, re.I) and re.search(r"\b(?:services|solutions)$", name, re.I):
             return
         # So is one that opens on praise of the work ("Extraordinary Real
-        # Estate Closings", "Exceptional Roofing"), whatever it ends on.
-        if re.match(r"(?:extraordinary|exceptional|outstanding|unmatched|unparalleled|unbeatable|superb|amazing|incredible|remarkable|world[- ]class|first[- ]class)\s", name, re.I):
+        # Estate Closings", "Exceptional Roofing", "State-Of-The-Art Dental
+        # Technologies"), whatever it ends on.
+        if re.match(r"(?:extraordinary|exceptional|outstanding|unmatched|unparalleled|unbeatable|superb|amazing|incredible|remarkable|world[- ]class|first[- ]class|state[- ]of[- ]the[- ]art|cutting[- ]edge)\s", name, re.I):
             return
         # One that gathers the rest ("All Accounting Services", "Other Tax
         # Services") is their menu's link to the services page, not a service.
@@ -781,7 +782,9 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # So is "Residential Painting for Homes" of "Residential Painting
         # Services": the word for the offer and whom it is for name no work.
         # "General Medicare" is "Medicare" said again; "general" names none.
-        core = lambda k: re.sub(r"^general |(?: (?:services?|solutions))?(?: for (?:homes?|homeowners|your home|residences?))?$", "", k)
+        # "Restorative Dental Services" is "Restorative Dentistry" said again:
+        # "dental" is the word for the trade said of the work.
+        core = lambda k: re.sub(r"\bdental$", "dentistry", re.sub(r"^general |(?: (?:services?|solutions))?(?: for (?:homes?|homeowners|your home|residences?))?$", "", k))
         same = next((k for k in found if k != key and (stem(key).startswith(stem(k)) or stem(k).startswith(stem(key)) or core(k) == core(key))), None)
         if same:
             # The words under the name said again describe the one kept.
@@ -816,6 +819,11 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
                     # Knight 832-221-3003 www.knightsmarinellc.com") is who to
                     # call, not what the service is.
                     if nxt_tag == "p" and CONTACT_LINE.search(nxt):
+                        continue
+                    # A customer's review set under it ("\"Had a really great
+                    # first experience with...") tells of their visit, not
+                    # what the service is.
+                    if nxt_tag == "p" and (re.match(r"[\"“]", nxt) or re.search(r"\b[1-5]\s*stars?\b|★", nxt, re.I)):
                         continue
                     if nxt_tag == "p" and 60 <= len(nxt) <= 700:
                         desc = trim(" ".join(
@@ -853,6 +861,15 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
     # card that belongs elsewhere names its service in its opening words.
     stems = lambda t: {w[:5] for w in re.findall(r"[a-z]{4,}", t.lower())} - {"servi", "repai", "contr"}
     named = {k: stems(found[k]["title"]) for k in order}
+    # Words that name their heading's service only as what they come after
+    # ("Placed right after extractions so you never leave without teeth...",
+    # under Tooth Extraction) describe the next card's work (immediate
+    # dentures), and describe none of their heading's.
+    after = re.compile(r"\b(?:after|before|following)\s+(?:(?:the|your|an?|any)\s+)?[\w-]+", re.I)
+    for k in order:
+        text = found[k]["text"]
+        if text and named[k] & stems(text) and not named[k] & stems(after.sub("", text)):
+            found[k]["text"] = None
     moved = {}
     for k in order:
         text = found[k]["text"]
@@ -1135,10 +1152,12 @@ def lead_of(pages, about, trade=None, services=(), town=None, state=None, towns=
         text = trim(paragraph, 220)
         if len(text) >= 60 and FINISHED.search(text):
             return text, "about text"
-    # Failing those, a paragraph's own sentences after its too-long opener.
+    # Failing those, a paragraph's own sentences after its too-long opener,
+    # unless they tell of one person, whatever the case ("There she obtained
+    # degrees in Human Development...").
     for paragraph in about:
         text = trim(" ".join(sentences(paragraph)[1:]), 220)
-        if len(text) >= 60 and FINISHED.search(text) and not re.search(r"\?|\b(?:He|She|his|her)\b", text):
+        if len(text) >= 60 and FINISHED.search(text) and not re.search(r"\?|\b(?i:he|she|his|her)\b", text):
             return text, "about text"
     return None, None
 
