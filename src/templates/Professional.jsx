@@ -741,7 +741,7 @@ function Services({ b, groups, heading = true }) {
     <section className={pad}>
       <div className={wrap}>
         {heading && (
-          <div className="mb-12 grid gap-5 xl:grid-cols-[minmax(0,1fr)_minmax(0,24rem)] xl:items-end xl:gap-20">
+          <div className="mb-12 grid gap-5 xl:grid-cols-[minmax(0,1fr)_minmax(0,32rem)] xl:items-start xl:gap-20">
             <div>
               <Eyebrow>Services</Eyebrow>
               <h2 className={h2}>{b.overview?.title || `What ${b.shortName} does`}</h2>

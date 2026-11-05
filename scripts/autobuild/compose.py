@@ -385,7 +385,10 @@ RUN_IN = re.compile(r"^(?:(?:[A-Z][\w'’-]*,?|a|an|the|and|or|of|on|in|for|to|w
 
 # Misspellings their page makes of a common word, put right.
 MISSPELT = {r"\bverity of\b": "variety of", r"\bVerity of\b": "Variety of", r"\blazer\b": "laser", r"\bLazer\b": "Laser", r"\bvist\b": "visit", r"\bVist\b": "Visit",
-            r"\b(began|begun|started|start|launched) (their|his|her|our|my) carriers\b": r"\1 \2 careers"}
+            r"\b(began|begun|started|start|launched) (their|his|her|our|my) carriers\b": r"\1 \2 careers",
+            r"\bamble (savings|time|room|space|parking)\b": r"ample \1", r"\bfinancially responsibility\b": "financially responsibly",
+            # A verb their page dropped ("If you a special project that requires...").
+            r"\b([Ii]f|[Ww]hen) you (an?) ": r"\1 you have \2 "}
 
 
 SHORTENED = {"etc", "vs", "approx", "incl", "est", "ft", "sq", "no", "st", "dr", "mr", "mrs", "ms", "jr", "sr", "inc", "co", "ltd", "llc", "ave", "rd", "blvd", "hwy", "ste"}
@@ -921,6 +924,10 @@ def about_of(pages, name, trade=None, services=(), town=None, state=None, towns=
         for tag, text, header in page.blocks:
             if tag != "p" or header or len(text) < 90:
                 continue
+            # A paragraph their page set under its own small heading can run
+            # that heading into its first sentence ("Our Mission To assist
+            # individuals...", "Our Values Every day..."); the heading is left off.
+            text = ABOUT_RUN_IN.sub("", text)
             # Nor is the site's notice to an old browser ("You are currently using Internet Explorer 7/8/9, which is not supported by our site").
             if re.search(r"cookie|javascript|internet explorer|\bbrowsers?\b|copyright|all rights reserved|privacy|©|% off|\$\d|off any|coupon|call (us|now|today)|click here", text, re.I):
                 continue
@@ -1086,6 +1093,9 @@ def about_of(pages, name, trade=None, services=(), town=None, state=None, towns=
 # A description made from a page's text can run its heading into the first
 # sentence ("Meet Shane Pellerin I am Attorney..."); the heading is left off.
 HEADING_RUN_IN = re.compile(r"^(?:Meet|Welcome to|About)\s[^.!?,:;]*?\s(?=(?:I|We|Our)\s)")
+# An about paragraph's own heading ("Our Mission", "Our Story & Values") run
+# into the sentence it heads, which opens on a capital.
+ABOUT_RUN_IN = re.compile(r"^(?:Our|My)\s+(?:Mission|Vision|Values|Story|History|Philosophy|Approach|Commitment|Purpose|Promise)(?:\s+(?:and|&)\s+(?:Mission|Vision|Values|Story|History|Philosophy|Approach|Commitment|Purpose|Promise))?\s+(?=[A-Z])")
 # A description that stops without a full stop was cut off by the page or the
 # search snippet ("...that has defined our Houston"), as was one that trails off
 # ("Why Commercial Fences Matter for Every Business Every...", "home insurance
