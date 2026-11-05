@@ -258,7 +258,7 @@ def sells_medicine(text, trade):
 # A year can follow its word with "in" ("Established in 2014").
 SINCE = re.compile(r"\b(?:since|established|founded|est\.?|serving [^.]{0,40} since)\s+(?:in\s+)?((?:19|20)\d\d)\b", re.I)
 LICENSE = re.compile(r"\b((?:TDLR|TACLA|TECL|TDI|NPN|License|Lic\.)\s*(?:No\.?|#|Number)\s*:?\s*[A-Z]{0,6}-?\d[\w-]{3,})", re.I)
-NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|where|your|schedule|consult|consultation|request|quotes?|checklist|estimator|calculator|types of|signs (?:of|that|you)|causes? of|(?:needed|required) for|(?:benefits?|advantages|importance) of|our|blog|news|faqs?|frequently asked|questions?|costs?|prices?|pricing|understanding|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|(?<!chain[- ])links?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|crews?|staff|professionals?|pros|painters?|technicians?|office|branch|powered|serving|products|vice president|vp|agents?|assistants?|hygienists?|dentists?|orthodontists?|periodontists?|endodontists?|prosthodontists?|surgeons?|physicians?|providers?|receptionists?|coordinators?|managers?|industry|page|apps?|directory|companies|contractors?|finance a|overview|info|dangers?)\b", re.I)
+NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|where|your|schedule|consult|consultation|request|quotes?|checklist|estimator|calculator|quiz(?:zes)?|types of|signs (?:of|that|you)|causes? of|(?:needed|required) for|(?:benefits?|advantages|importance) of|our|blog|news|faqs?|frequently asked|questions?|costs?|prices?|pricing|understanding|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|(?<!chain[- ])links?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|crews?|staff|professionals?|pros|painters?|technicians?|office|branch|powered|serving|products|vice president|vp|agents?|assistants?|hygienists?|dentists?|orthodontists?|periodontists?|endodontists?|prosthodontists?|surgeons?|physicians?|providers?|receptionists?|coordinators?|managers?|industry|page|apps?|directory|companies|contractors?|finance a|overview|info|dangers?)\b", re.I)
 ACRONYMS = {"IRS", "CFO", "CPA", "CPAS", "HVAC", "AC", "A/C", "TPO", "LLC", "QB", "EPDM", "UV", "HOA", "1031", "S-CORP"}
 # A business's own name, or anything carrying a corporate suffix, is never
 # one of its services.
@@ -281,14 +281,22 @@ def bare_name(text):
 
 
 def names_the_business(title, own):
-    """True when a heading is the business's own name or carries it."""
+    """True when a heading is the business's own name or carries it. A name in
+    parts ("Farmers Insurance - Paula Smith", a carrier's agency and the agent
+    who runs it) is carried by its later part too ("Paula Smith Insurance"),
+    where that part names a person or a firm and not the trade."""
     if CORPORATE.search(title):
         return True
-    own = bare_name(own).split()
-    if not own:
-        return False
-    lead = " ".join(own[:2])
-    return f" {lead} " in f" {bare_name(title)} " and (len(own) > 1 or len(lead) >= 4)
+    for i, part in enumerate(re.split(r"\s+[-–—|]\s+", own or "")):
+        words = bare_name(part).split()
+        if not words:
+            continue
+        lead = " ".join(words[:2])
+        if i and (len(words) < 2 or re.search("|".join(TRADE_WORDS.values()), lead, re.I)):
+            continue
+        if f" {lead} " in f" {bare_name(title)} " and (len(words) > 1 or len(lead) >= 4):
+            return True
+    return False
 
 
 # An address at one of these is a person's own, not another business's.
@@ -689,10 +697,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
             return
         # A heading that opens on a bidding verb ("Find Storage", "Rent a Unit",
         # "Select a Fence Style", "Keep the Wheels Turning", "Upgrade to a Roof
-        # That Lasts", "Compare AC Equipment") is a call to action or a slogan,
-        # not a service, and one that names a warranty ("Warranty on Fence
-        # Materials") is a promise.
-        if re.match(r"(find|rent|reserve|book|get|browse|shop|keep|let|stay|click|tap|compare|explore|discover|view)\b|(select|choose) (a|an|the|your)\b|upgrade (to|your)\b", name, re.I):
+        # That Lasts", "Compare AC Equipment", "Take the Life Insurance Quiz")
+        # is a call to action or a slogan, not a service, and one that names a
+        # warranty ("Warranty on Fence Materials") is a promise.
+        if re.match(r"(find|rent|reserve|book|get|browse|shop|keep|let|stay|click|tap|compare|explore|discover|view|take)\b|(select|choose) (a|an|the|your)\b|upgrade (to|your)\b", name, re.I):
             return
         # One that ends on a full stop ("Click shingles to compare roof
         # colors.") is a sentence of their page, not the name of a service.
@@ -1122,10 +1130,13 @@ def unphoned(text):
 # A sentence that points at their website rather than their work ("Take a look
 # at our Home page.") is the site theme's filler, not something to read.
 SITE_TALK = re.compile(r"(?:(?:take|have) a look at|look at|check out|browse|explore|visit|welcome to)\s+(?:our|this|the)\s+(?:[\w'’-]+\s+){0,2}(?:page|site|website|web site)\b[^.!?]*[.!?]$", re.I)
+# So is the site maker's note on the page it built ("Hawkins Insurance
+# homepage redesign for home, auto and life insurance."), left in its description.
+SITE_NOTE = re.compile(r"\b(?:home ?page|web ?site|landing page)\s+(?:re-?design|mock-?up|prototype|template)\b", re.I)
 
 
 def unsited(text):
-    return " ".join(s for s in sentences(text) if not SITE_TALK.match(s))
+    return " ".join(s for s in sentences(text) if not SITE_TALK.match(s) and not SITE_NOTE.search(s))
 
 
 def lead_of(pages, about, trade=None, services=(), town=None, state=None, towns=(), name=None):
