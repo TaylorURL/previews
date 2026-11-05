@@ -412,7 +412,7 @@ def _build(prospect, root, slug, known):
         if len(described) * 2 > len(services):
             services = described
     about = compose.about_of(pages, name, vocab_key, services, town, state, TOWNS)
-    lead, lead_source = compose.lead_of(pages, about, vocab_key, services, town, state, TOWNS)
+    lead, lead_source = compose.lead_of(pages, about, vocab_key, services, town, state, TOWNS, name)
     known["about"], known["lead"] = about, lead
     if not lead:
         raise Parked("no description of the business in its own words")
