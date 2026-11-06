@@ -47,10 +47,24 @@ def shape(brand):
     return problems
 
 
+def _listing_not_for_customers(brand, evidence):
+    """Whether the page may lead with another number than the listing's: their
+    site labels the listing's number as the line for job seekers or a fax, it
+    stays among the page's lines under that label, and the number shown first
+    is another of those lines (each of which is proved on their site below)."""
+    digits = lambda s: re.sub(r"\D", "", str(s or ""))[-10:]
+    lines = brand.get("phones") or []
+    listed = any(digits(p.get("number")) == digits(evidence["phone"]) and compose.NOT_A_CUSTOMER_LINE.search(p.get("label") or "")
+                 for p in lines)
+    shown = any(digits(p.get("number")) == digits(brand.get("phone")) and not compose.NOT_A_CUSTOMER_LINE.search(p.get("label") or "")
+                for p in lines)
+    return listed and shown
+
+
 def facts(brand, evidence):
     problems = []
     digits = lambda s: re.sub(r"\D", "", str(s or ""))
-    if len(digits(brand.get("phone"))) != 10 or digits(brand.get("phone")) != digits(evidence["phone"]):
+    if len(digits(brand.get("phone"))) != 10 or digits(brand.get("phone")) != digits(evidence["phone"]) and not _listing_not_for_customers(brand, evidence):
         problems.append("the phone does not match the one stored from the Google listing")
     if not brand.get("address") or brand.get("address") != evidence["address"]:
         problems.append("the address does not match the one stored from the Google listing")

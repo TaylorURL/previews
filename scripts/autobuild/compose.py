@@ -317,6 +317,11 @@ NOT_FOR_CUSTOMERS = re.compile(r"^(ir|investors?|investor[._-]?relations|shareho
                                r"|[^@]*(human[._-]?resources|recruit(ing|ment|er)?|careers|hiring|payroll)[^@]*)@", re.I)
 
 
+# A line a business keeps for job seekers, its staff or a fax machine is not the
+# one a customer calls ("Hiring Office: 281-837-3644").
+NOT_A_CUSTOMER_LINE = re.compile(r"hir(e|ing)|careers?|\bjobs?\b|employ|recruit|applicants?|applications?|human resources|\bhr\b|fax", re.I)
+
+
 def email_of(stored, pages, business):
     """The email the contact page lists: the one stored from the listing where
     it is at their own website's domain, a free mail address, or one their own

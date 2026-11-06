@@ -6,7 +6,8 @@ image services, the lazy loaders' attributes, redirects a browser follows
 (307 and 308, a 307 back to itself until a cookie is set), a site that sends
 its visitors to an address with the port written in still counting as itself,
 the hero's shapes, the quality rules against photographs blurred, flattened and
-recompressed, and the optional facts left out rather than parking a business.
+recompressed, the optional facts left out rather than parking a business, and
+a listing whose number is the hiring line leading with the customer line instead.
 """
 
 import http.server
@@ -20,7 +21,7 @@ os.environ.setdefault("no_proxy", "*")
 import numpy as np
 from PIL import Image, ImageFilter
 
-from . import collect, compose, facts, quality
+from . import build, check, collect, compose, facts, quality
 
 
 def _photo(width=1400, height=900, seed=7):
@@ -184,6 +185,25 @@ def hosts():
     assert compose.email_of("billing@othercpa.com", [home], {}) == "info@cpa1099.com"
 
 
+def customer_line():
+    # turn2sc.com: Google lists the hiring office; the site gives "Headquarters"
+    # for everyone else. The page leads with headquarters and keeps the hiring line.
+    sheet = {"phones": [{"label": "Headquarters", "number": "(346) 241-0439"}, {"label": "Hiring Office", "number": "(281) 837-3644"}]}
+    brand = {"phone": "(281) 837-3644"}
+    build._facts_fields(brand, sheet, None, [], "(281) 837-3644", "industrial", "TX")
+    assert brand["phone"] == "(346) 241-0439", brand
+    assert {p["number"] for p in brand["phones"]} == {"(346) 241-0439", "(281) 837-3644"}, brand
+    evidence = {"phone": "(281) 837-3644"}
+    assert check._listing_not_for_customers(brand, evidence)
+    # A listing that is the main line, or a swap with nothing to justify it, is still held to the listing.
+    plain = {"phone": "(281) 837-3644"}
+    build._facts_fields(plain, {"phones": [{"label": "Office", "number": "(281) 837-3644"}, {"label": "Sales", "number": "(346) 241-0439"}]},
+                        None, [], "(281) 837-3644", "industrial", "TX")
+    assert plain["phone"] == "(281) 837-3644", plain
+    assert not check._listing_not_for_customers({"phone": "(346) 241-0439", "phones": plain["phones"]}, evidence)
+    assert not check._listing_not_for_customers({"phone": "(713) 555-0100", "phones": brand["phones"]}, evidence)
+
+
 def main():
     bigger()
     lazy()
@@ -192,7 +212,8 @@ def main():
     slots()
     pixels()
     optional_facts()
-    print("selftest_photos: image sizes, lazy pictures, redirects, hosts with a port, the hero's shapes, the pixel rules and optional facts all hold")
+    customer_line()
+    print("selftest_photos: image sizes, lazy pictures, redirects, hosts with a port, the hero's shapes, the pixel rules, optional facts and the customer line all hold")
 
 
 if __name__ == "__main__":
