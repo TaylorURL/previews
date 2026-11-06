@@ -5,8 +5,11 @@ session builds only those.
 
 The review (review.py) looks at every page of each built site and sends an
 agent to fix what it finds in the template or the builder, where the fault
-comes from, before anything lands; a site it has not passed is never
-registered, so its letter never goes.
+comes from, before anything lands, then sets each site beside the business's
+own website (versus.py) and passes only one clearly better than it; a site it
+has not passed is never registered, so its letter never goes. Each site's
+scores against its business's own site are in the report's "versus", and the
+run's lowest in "versus_lowest", for a person to look at.
 
     ~/.claude/tools/with-credential.py \\
       supabase-service-role-sunday=SUPABASE_SERVICE_ROLE_KEY \\
@@ -58,7 +61,7 @@ from .check import all_checks
 from .compose import AUTOMATED
 from .letter import letter_for
 from .slug import slug_for
-from . import drafts, review, visual
+from . import drafts, review, versus, visual
 
 spec = importlib.util.spec_from_file_location("routine", os.path.join(ROOT, "scripts", "routine.py"))
 routine = importlib.util.module_from_spec(spec)
@@ -144,16 +147,20 @@ def layout(slugs):
 LAND_MINUTES = 12
 # The time the review's second look needs, after its fixes.
 REVIEW_MINUTES = 6
+# The time the comparison with each business's own site needs after that: a
+# batch's pages photographed one after another, then judged together.
+VERSUS_MINUTES = 10
 
 
 def build_batch(rows, keep=True):
     """Builds, checks and reviews each business; returns the ones that passed,
     the parked ones, the ones not reached before the batch had to land, and
-    what the review fixed: {"fixes": [sentences], "changed": [paths]}. With
+    what the review fixed and found: {"fixes": [sentences], "changed": [paths],
+    "versus": {slug: its comparison with the business's own site}}. With
     keep, what was made of each parked business is kept as its draft
     (drafts.py), for the morning run to finish rather than start again."""
     passed, parked, unbuilt = [], [], []
-    fixed = {"fixes": [], "changed": []}
+    fixed = {"fixes": [], "changed": [], "versus": {}}
     for row in rows:
         if time.time() > deadline() - LAND_MINUTES * 60:
             # Left due rather than parked, so the next run takes it first.
@@ -205,8 +212,9 @@ def build_batch(rows, keep=True):
                 parked.append(item)
     unreviewed = [p["slug"] for p in passed if not review.passed(p["slug"])]
     if unreviewed:
-        verdict = review.run(unreviewed, deadline=deadline() - (LAND_MINUTES + REVIEW_MINUTES) * 60)
-        fixed = {"fixes": verdict["fixes"], "changed": verdict["changed"]}
+        verdict = review.run(unreviewed, deadline=deadline() - (LAND_MINUTES + REVIEW_MINUTES + VERSUS_MINUTES) * 60,
+                             businesses={p["slug"]: p["row"] for p in passed})
+        fixed = {"fixes": verdict["fixes"], "changed": verdict["changed"], "versus": verdict.get("versus", {})}
         for line in verdict["fixes"]:
             log("review fixed", line)
         for item in list(passed):
@@ -446,7 +454,7 @@ def main(argv):
     parser.add_argument("--limit", type=int, default=0)
     args = parser.parse_args(argv)
 
-    report = {"built": [], "parked": [], "sent": [], "not_sent": [], "not_live": [], "notes": []}
+    report = {"built": [], "parked": [], "sent": [], "not_sent": [], "not_live": [], "notes": [], "versus": {}}
     if args.catch_up:
         if not args.dry and catching_up():
             send_waiting(report, held_only=True)
@@ -480,6 +488,7 @@ def main(argv):
         n += 1
         passed, parked, unbuilt, fixed = build_batch(batch, keep=not args.dry)
         rows = unbuilt + rows
+        report["versus"].update(fixed.get("versus") or {})
         report["parked"] += [{"slug": p["slug"], "name": p["row"]["name"], "why": "; ".join(p["problems"])} for p in parked]
         if args.dry:
             report["built"] += [p["slug"] for p in passed]
@@ -509,6 +518,7 @@ def main(argv):
     if args.send and not args.dry:
         send_waiting(report)
     report["left"] = len(rows)
+    report["versus_lowest"] = versus.lowest(report["versus"])
     print("<pipeline_report>" + json.dumps(report) + "</pipeline_report>")
 
 

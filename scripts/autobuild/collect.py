@@ -36,6 +36,13 @@ WANTED = re.compile(
     r"commercial|residential|title|closing|escrow)\b",
     re.I,
 )
+# Pages read for the fact sheet alone, after those a brand is made from: what
+# customers say on their site, how the work goes, who does it. The regex
+# readers in compose.py never see them (page.extra), so they change nothing
+# of what those find.
+MORE = re.compile(r"\b(testimonials?|reviews?|why (?:us|choose)|process|how it works|what to expect|faqs?|meet|"
+                  r"team|our story|history|credentials|certifications?|industries|capabilities|equipment)\b", re.I)
+EXTRA_PAGES = 3
 SKIP_LINK = re.compile(r"(blog|news|privacy|terms|login|cart|careers|jobs|wp-admin|feed|\.pdf$|\.jpg$|\.png$|mailto:|tel:)", re.I)
 
 
@@ -244,6 +251,10 @@ def read_page(url):
         pass
     page.title = _title(text)
     page.svgs = inline_svgs(text)
+    # Every line a customer reads on it, footer and forms' labels included,
+    # headings marked "#" and list items "-": what the fact sheet is read
+    # from and proved against (facts.py).
+    page.lines = readable(text).lines
     return page
 
 
@@ -282,6 +293,25 @@ def site(website):
             pages.append(read_page(url))
         except Exception:
             continue
+    extra = 0
+    for href, text in home.links:
+        if extra >= EXTRA_PAGES:
+            break
+        url = urllib.parse.urljoin(home.url, href).split("#")[0]
+        if not url.startswith("http") or SKIP_LINK.search(url) or url.rstrip("/") in seen:
+            continue
+        if urllib.parse.urlparse(url).netloc.replace("www.", "") != host:
+            continue
+        if not (MORE.search(text) or MORE.search(urllib.parse.urlparse(url).path)):
+            continue
+        seen.add(url.rstrip("/"))
+        try:
+            page = read_page(url)
+        except Exception:
+            continue
+        page.extra = True
+        pages.append(page)
+        extra += 1
     return pages
 
 

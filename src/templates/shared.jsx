@@ -1,5 +1,43 @@
-import { useState } from 'react';
-import { luminance, pic } from '../site.js';
+import { useId, useState } from 'react';
+import {
+  Anchor,
+  Award,
+  BadgeCheck,
+  Banknote,
+  Check,
+  Briefcase,
+  Building2,
+  Calculator,
+  CalendarCheck,
+  Clock,
+  FileText,
+  Flame,
+  Gauge,
+  Gavel,
+  GraduationCap,
+  Hammer,
+  Handshake,
+  Heart,
+  House,
+  KeyRound,
+  Languages as LanguagesIcon,
+  Leaf,
+  MapPin,
+  Phone,
+  Quote,
+  Scale,
+  ShieldCheck,
+  Snowflake,
+  Sparkles,
+  Star,
+  Thermometer,
+  Toothbrush,
+  Truck,
+  Users,
+  Wrench,
+  Zap,
+} from 'lucide-react';
+import { luminance, pic, telHref } from '../site.js';
 
 export function Stars({ value = 5, size = 16, className = 'text-star' }) {
   const full = Math.round(value);
@@ -382,6 +420,498 @@ export function StudioCredit({ b }) {
           </a>
         </span>
       ))}
+    </span>
+  );
+}
+
+/* -------------------------------------------------------------------------
+ * The optional brand fields every template may draw: heroStyle, tone,
+ * highlights, phones, languages, reviews, credentials, owner and steps. Each
+ * reader returns only what is real and well formed, so a section whose field
+ * is absent or broken is left out rather than drawn empty.
+ * ---------------------------------------------------------------------- */
+
+const arr = (v) => (Array.isArray(v) ? v : []);
+const str = (v) => (typeof v === 'string' ? v.trim() : '');
+const digits = (v) =>
+  String(v || '')
+    .replace(/\D/g, '')
+    .replace(/^1(?=\d{10}$)/, '');
+
+/**
+ * How the home page opens: "photo" (the photo across the band under a wash
+ * that keeps the words legible), "split" (the words beside the photo) or
+ * "type" (no photo: a designed band of type in the brand's own colors). A
+ * brand that names none opens with `fallback` when it has a photo (the
+ * template's own photo hero, "split" unless it says otherwise) and with type
+ * when it has none; one that asks for a photo style without a photo gets type.
+ */
+export function heroStyleOf(b, fallback = 'split') {
+  if (!b?.hero?.image) return 'type';
+  if (['photo', 'split', 'type'].includes(b.heroStyle)) return b.heroStyle;
+  return fallback;
+}
+
+/** "bold" (heavy type, tight tracking, strong color) unless the brand says "classic" (lighter, roomier, quieter). */
+export function toneOf(b) {
+  return b?.tone === 'classic' ? 'classic' : 'bold';
+}
+
+/** Up to four things that set the business apart: [{ title, text, icon }]. */
+export function highlightsOf(b) {
+  return arr(b?.highlights)
+    .filter((h) => h && str(h.title))
+    .slice(0, 4);
+}
+
+/**
+ * Every phone line the business gives, the main one first, as
+ * [{ label, number, href, main }]. `phone` is the Google listing's number and
+ * `phones` adds labelled lines ("Español"); a line there with the main number
+ * only labels it, rather than listing it twice.
+ */
+export function phonesOf(b) {
+  const main = { label: '', number: str(b?.phone), main: true };
+  const extra = [];
+  const seen = new Set([digits(main.number)]);
+  for (const p of arr(b?.phones)) {
+    const number = str(p?.number);
+    const label = str(p?.label);
+    const key = digits(number);
+    if (key.length < 7) continue;
+    if (key === digits(main.number)) {
+      if (label && !main.label) main.label = label;
+      continue;
+    }
+    if (seen.has(key)) continue;
+    seen.add(key);
+    extra.push({ label, number, main: false });
+  }
+  return [main, ...extra].filter((p) => p.number).map((p) => ({ ...p, href: telHref(p.number) }));
+}
+
+/**
+ * A line's label when it says something: "Español" or "After hours", not
+ * "Main" or "Phone", which only stand beside another line's label.
+ */
+export function telling(label) {
+  return /^(main|phone|office|call|tel|telephone|number)$/i.test(str(label)) ? '' : str(label);
+}
+
+/** The labelled lines beyond the main phone. */
+export const extraPhonesOf = (b) => phonesOf(b).filter((p) => !p.main);
+
+/** The languages the business serves customers in: ["English", "Spanish"]. */
+export function languagesOf(b) {
+  return arr(b?.languages).map(str).filter(Boolean);
+}
+
+/**
+ * Reviews quoted word for word: [{ author, text, source, rating }]. A
+ * testimonial on their own site may carry no author's name, so only its
+ * words are required; it is then credited to where it was left.
+ */
+export function reviewsOf(b) {
+  return arr(b?.reviews).filter((r) => r && str(r.text) && (str(r.author) || sourceOf(r)));
+}
+
+/** Licenses, certifications, memberships, carriers: [{ label, detail }]. */
+export function credentialsOf(b) {
+  return arr(b?.credentials).filter((c) => c && str(c.label));
+}
+
+/** How working with the business goes, two to five steps: [{ title, text }]. */
+export function stepsOf(b) {
+  const steps = arr(b?.steps).filter((s) => s && str(s.title));
+  return steps.length >= 2 ? steps.slice(0, 5) : [];
+}
+
+/** The owner or founding partner: { name, role, text, image }, or null. */
+export function ownerOf(b) {
+  const o = b?.owner;
+  return o && typeof o === 'object' && str(o.name) ? o : null;
+}
+
+/** Up to two initials for a name, past an honorific or "The": "David Salazar" is "DS". */
+export function initialsOf(name) {
+  return String(name || '')
+    .replace(/^(the|dr|mr|mrs|ms|mx)\.?\s+/i, '')
+    .split(/[\s&,-]+/)
+    .filter((w) => /^[a-z0-9]/i.test(w))
+    .map((w) => w[0].toUpperCase())
+    .slice(0, 2)
+    .join('');
+}
+
+/** Where a review was left, as a reader would say it: "Google review", "Website testimonial". */
+export function sourceOf(review) {
+  const s = str(review?.source) || str(review?.where);
+  if (!s) return '';
+  if (/their site|our site|website|own site/i.test(s)) return 'Website testimonial';
+  if (/^(google|facebook|yelp|nextdoor|angi|bbb|houzz|thumbtack|homeadvisor|avvo)$/i.test(s)) return `${s[0].toUpperCase()}${s.slice(1)} review`;
+  return s;
+}
+
+/**
+ * The icon a highlight's free word stands for ("family", "award", "spanish"),
+ * read from the word or, without one, from its title. Anything unknown is a
+ * plain check badge.
+ */
+const HIGHLIGHT_ICONS = [
+  [/famil|owner|people|user|team|crew|staff|veteran|local.?own/, Users],
+  [/award|medal|trophy|best|winner|top.?rated/, Award],
+  [/insur|shield|warrant|guarant|protect|safe|bond/, ShieldCheck],
+  [/language|spanish|espa|bilingual|habla/, LanguagesIcon],
+  [/clock|time|fast|quick|hour|24|emergenc|same.?day|prompt|open/, Clock],
+  [/star|rating|review|rated/, Star],
+  [/map|local|location|area|town|pin|region|nearby|county/, MapPin],
+  [/price|money|dollar|cost|financ|pay|afford|free|quote|estimate|fee/, Banknote],
+  [/calendar|schedul|appoint|book/, CalendarCheck],
+  [/tool|wrench|repair|service|fix|maint/, Wrench],
+  [/home|house|residen/, House],
+  [/leaf|eco|green|lawn|garden|tree|plant|organic/, Leaf],
+  [/heart|care|love|kind|compassion|patient/, Heart],
+  [/phone|call/, Phone],
+  [/truck|van|fleet|mobile|deliver|tow/, Truck],
+  [/hand|trust|honest|relationship|partner|integrity/, Handshake],
+  [/gavel|trial|verdict|court|litigat/, Gavel],
+  [/scale|law|legal|justice|attorney|case/, Scale],
+  [/building|commercial|office|business|industr/, Building2],
+  [/hammer|build|construct|craft/, Hammer],
+  [/spark|clean|quality|detail|premium/, Sparkles],
+  [/zap|power|electric|bolt|energy|generator/, Zap],
+  [/thermo|temperat|hvac|air/, Thermometer],
+  [/flame|heat|fire|furnace/, Flame],
+  [/snow|cool|cold/, Snowflake],
+  [/graduat|educat|degree|school|train|experien|year|since/, GraduationCap],
+  [/calcul|tax|account|cpa|bookkeep|audit/, Calculator],
+  [/key|title|closing|escrow|deed/, KeyRound],
+  [/file|document|paper|form|contract/, FileText],
+  [/briefcase|career|professional/, Briefcase],
+];
+/** The icon names the copy writer picks from (scripts/autobuild/write.py ICONS), each its own drawing. */
+const ICON_NAMES = {
+  family: Users,
+  users: Users,
+  language: LanguagesIcon,
+  clock: Clock,
+  calendar: CalendarCheck,
+  shield: ShieldCheck,
+  award: Award,
+  badge: BadgeCheck,
+  wrench: Wrench,
+  leaf: Leaf,
+  home: House,
+  building: Building2,
+  truck: Truck,
+  phone: Phone,
+  dollar: Banknote,
+  star: Star,
+  heart: Heart,
+  map: MapPin,
+  check: Check,
+  hammer: Hammer,
+  tooth: Toothbrush,
+  scale: Scale,
+  calculator: Calculator,
+  spark: Sparkles,
+  anchor: Anchor,
+  gauge: Gauge,
+};
+export function highlightIcon(word) {
+  const w = String(word || '').trim().toLowerCase();
+  if (ICON_NAMES[w]) return ICON_NAMES[w];
+  for (const [re, Icon] of HIGHLIGHT_ICONS) if (re.test(w)) return Icon;
+  return BadgeCheck;
+}
+
+const COLS_4 = { 1: '', 2: 'sm:grid-cols-2', 3: 'md:grid-cols-3', 4: 'sm:grid-cols-2 xl:grid-cols-4' };
+
+/**
+ * The highlights as a row of two to four, each an icon, a title and its line.
+ * The template dresses each part through `styles`:
+ * { list, item, icon, title, text }. `iconSize` sizes the icon.
+ */
+export function Highlights({ items, styles = {}, iconSize = 22, label = 'What sets us apart' }) {
+  if (!items?.length) return null;
+  return (
+    <ul aria-label={label} className={`grid ${COLS_4[items.length] || COLS_4[4]} ${styles.list || 'gap-4'}`}>
+      {items.map((h) => {
+        const Icon = highlightIcon(h.icon || h.title);
+        return (
+          <li key={h.title} className={`flex min-w-0 gap-4 ${styles.item || ''}`}>
+            <span className={`grid flex-none place-items-center ${styles.icon || ''}`}>
+              <Icon size={iconSize} aria-hidden="true" />
+            </span>
+            <span className="block min-w-0">
+              <span className={`block ${styles.title || 'font-semibold'}`}>{h.title}</span>
+              {str(h.text) && <span className={`block ${styles.text || ''}`}>{h.text}</span>}
+            </span>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+/**
+ * Phone lines as links, each with its label: "Español (512) 938-2043". `lines`
+ * comes from phonesOf or extraPhonesOf. `styles`: { list, item, label, number }.
+ * `icon` draws a handset before each line; `nowrap` keeps them on one row, for a bar.
+ */
+export function PhoneLines({ lines, styles = {}, icon = false, iconSize = 15, className = '', nowrap = false }) {
+  if (!lines?.length) return null;
+  return (
+    <ul className={`flex ${nowrap ? 'flex-nowrap' : 'flex-wrap'} ${styles.list || 'gap-x-5 gap-y-1'} ${className}`}>
+      {lines.map((p) => (
+        <li key={p.number} className="min-w-0">
+          <a href={p.href} className={`inline-flex min-h-[44px] flex-wrap items-center gap-x-2 no-underline ${styles.item || ''}`}>
+            {icon && <Phone size={iconSize} className="flex-none" aria-hidden="true" />}
+            {p.label && <span className={styles.label || 'opacity-75'}>{p.label}</span>}
+            <span className={`whitespace-nowrap ${styles.number || 'font-semibold'}`}>{p.number}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+/** The languages spoken, on one line behind a languages icon: "English · Spanish". */
+export function Languages({ items, className = '', iconSize = 15 }) {
+  if (!items?.length) return null;
+  return (
+    <p className={`inline-flex items-center gap-2 ${className}`}>
+      <LanguagesIcon size={iconSize} className="flex-none" aria-hidden="true" />
+      <span>
+        <span className="sr-only">Languages spoken: </span>
+        {items.join(' · ')}
+      </span>
+    </p>
+  );
+}
+
+/**
+ * Up to `max` reviews quoted word for word, each with its author, where it was
+ * left, and its stars only when the review gives them. `styles`:
+ * { list, item, mark, text, author, source }.
+ */
+export function ReviewQuotes({ reviews, max = 3, styles = {}, starClass = 'text-star', quoteMark = true }) {
+  const items = arr(reviews).slice(0, max);
+  if (!items.length) return null;
+  const cols = items.length === 1 ? '' : items.length === 2 ? 'md:grid-cols-2' : 'md:grid-cols-2 lg:grid-cols-3';
+  return (
+    <ul className={`grid ${cols} ${styles.list || 'gap-5'}`}>
+      {items.map((r, i) => (
+        <li key={i} className={`flex min-w-0 flex-col ${styles.item || ''}`}>
+          <figure className="m-0 flex flex-1 flex-col">
+            {(quoteMark || Number(r.rating) > 0) && (
+              <span className="flex items-center justify-between gap-3">
+                {quoteMark ? <Quote size={26} className={styles.mark || 'opacity-25'} aria-hidden="true" /> : <span />}
+                {Number(r.rating) > 0 && <Stars value={Math.min(5, Number(r.rating))} size={14} className={starClass} />}
+              </span>
+            )}
+            <blockquote className={`m-0 mb-6 flex-1 ${quoteMark || Number(r.rating) > 0 ? 'mt-4' : ''} ${styles.text || ''}`}>&ldquo;{str(r.text)}&rdquo;</blockquote>
+            <figcaption className={`mt-auto ${styles.author || ''}`}>
+              {str(r.author) && <span className="font-semibold">{r.author}</span>}
+              {str(r.author) && sourceOf(r) && <span className={styles.source || 'opacity-70'}> &middot; </span>}
+              {sourceOf(r) && <span className={styles.source || 'opacity-70'}>{sourceOf(r)}</span>}
+            </figcaption>
+          </figure>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+/**
+ * Licenses, certifications, memberships and carriers, each its label and its
+ * detail ("State Bar of Texas", "Licensed since 2004"). `styles`:
+ * { list, item, icon, label, detail }. `icon` is the lucide icon before each.
+ */
+export function Credentials({ items, styles = {}, icon: Icon = BadgeCheck, iconSize = 18 }) {
+  if (!items?.length) return null;
+  return (
+    <ul className={`grid ${styles.list || 'gap-3'}`}>
+      {items.map((c) => (
+        <li key={`${c.label}|${c.detail || ''}`} className={`flex min-w-0 items-start gap-3 ${styles.item || ''}`}>
+          {Icon && <Icon size={iconSize} className={`mt-0.5 flex-none ${styles.icon || ''}`} aria-hidden="true" />}
+          <span className="block min-w-0">
+            <span className={`block break-words ${styles.label || 'font-semibold'}`}>{c.label}</span>
+            {str(c.detail) && <span className={`block break-words ${styles.detail || 'opacity-75'}`}>{c.detail}</span>}
+          </span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+const STEP_COLS = { 2: 'md:grid-cols-2', 3: 'md:grid-cols-3', 4: 'md:grid-cols-2 xl:grid-cols-4', 5: 'md:grid-cols-3 xl:grid-cols-5' };
+
+/** How working with the business goes, as numbered steps. `styles`: { list, item, number, title, text }. */
+export function Steps({ items, styles = {} }) {
+  if (!items?.length) return null;
+  return (
+    <ol className={`grid ${STEP_COLS[items.length] || ''} ${styles.list || 'gap-x-6 gap-y-8'}`}>
+      {items.map((s, i) => (
+        <li key={s.title} className={`min-w-0 ${styles.item || ''}`}>
+          <span aria-hidden="true" className={`block ${styles.number || ''}`}>
+            {String(i + 1).padStart(2, '0')}
+          </span>
+          <h3 className={styles.title || ''}>{s.title}</h3>
+          {str(s.text) && <p className={styles.text || ''}>{s.text}</p>}
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+/**
+ * The owner or founding partner: their photo, or their initials where there is
+ * none, with their name, role and a line or two. `styles`:
+ * { box, photo, initials, name, role, text }.
+ */
+export function Owner({ owner, styles = {}, sizes = '200px' }) {
+  if (!owner) return null;
+  return (
+    <figure className={`m-0 flex min-w-0 ${styles.box || 'items-start gap-5'}`}>
+      {owner.image ? (
+        <Img src={owner.image} alt={owner.imageAlt || owner.name} sizes={sizes} className={`flex-none object-cover object-top ${styles.photo || 'h-20 w-20 rounded-full'}`} />
+      ) : (
+        <span aria-hidden="true" className={`grid flex-none place-items-center ${styles.initials || 'h-20 w-20 rounded-full'}`}>
+          {initialsOf(owner.name)}
+        </span>
+      )}
+      <figcaption className="min-w-0">
+        <span className={`block ${styles.name || 'font-semibold'}`}>{owner.name}</span>
+        {str(owner.role) && <span className={`block ${styles.role || ''}`}>{owner.role}</span>}
+        {str(owner.text) && <span className={`block ${styles.text || ''}`}>{owner.text}</span>}
+      </figcaption>
+    </figure>
+  );
+}
+
+/** The Google rating as a badge: the figure, its stars and the count. `styles`: { box, value, count }. */
+export function RatingBadge({ b, styles = {}, starClass = 'text-star', size = 16 }) {
+  if (!b?.rating || !b?.reviewCount) return null;
+  return (
+    <div className={`flex items-center ${styles.box || 'gap-3.5'}`}>
+      <strong className={`leading-none ${styles.value || ''}`}>{Number(b.rating).toFixed(1)}</strong>
+      <span className="grid gap-1">
+        <Stars value={Number(b.rating)} size={size} className={starClass} />
+        <span className={styles.count || ''}>{Number(b.reviewCount).toLocaleString('en-US')} Google reviews</span>
+      </span>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------ type hero */
+
+/** A fine repeating pattern, drawn in white at the strength the tone asks for. */
+function patternTile(kind) {
+  if (kind === 'dots') return { size: 22, body: <circle cx="11" cy="11" r="1.3" fill="#fff" fillOpacity="0.2" /> };
+  if (kind === 'diagonal') return { size: 16, body: <path d="M-4 20L20 -4" stroke="#fff" strokeOpacity="0.07" strokeWidth="1" /> };
+  return { size: 44, body: <path d="M44 0H0V44" fill="none" stroke="#fff" strokeOpacity="0.08" strokeWidth="1" /> };
+}
+
+/**
+ * The ground of a hero with no photo, the brand's own colors with depth: a
+ * gradient from `from` to `to`, a glow of `glow` from the top right and a
+ * fainter one of `glow2` low on the left, a fine `pattern` ('grid', 'dots',
+ * 'diagonal' or 'none') that fades out toward the words, and the template's
+ * own `motif` (a Motif, or any drawing in currentColor) laid over the right.
+ * The classic tone draws all of it quieter. It is a backdrop only: hidden from
+ * readers, behind the hero's content, which sets `isolate` on its section.
+ */
+export function TypeGround({ from, to, glow, glow2, pattern = 'grid', motif = null, tone = 'bold', className = '' }) {
+  const id = `tg${useId().replace(/[^a-z0-9]/gi, '')}`;
+  const quiet = tone === 'classic';
+  const tile = patternTile(pattern);
+  const fade = 'linear-gradient(100deg, transparent 10%, rgba(0,0,0,0.55) 45%, #000 85%)';
+  return (
+    <div aria-hidden="true" className={`pointer-events-none absolute inset-0 -z-10 overflow-hidden ${className}`} style={{ background: `linear-gradient(135deg, ${from} 0%, ${to} 100%)` }}>
+      <div className="absolute inset-0" style={{ background: `radial-gradient(70% 80% at 92% 0%, color-mix(in srgb, ${glow} ${quiet ? 30 : 58}%, transparent), transparent 72%)` }} />
+      <div className="absolute inset-0" style={{ background: `radial-gradient(50% 60% at 0% 100%, color-mix(in srgb, ${glow2 || glow} ${quiet ? 14 : 28}%, transparent), transparent 72%)` }} />
+      {pattern !== 'none' && (
+        <svg className="absolute inset-0 h-full w-full" style={{ opacity: quiet ? 0.55 : 1, maskImage: fade, WebkitMaskImage: fade }}>
+          <defs>
+            <pattern id={id} width={tile.size} height={tile.size} patternUnits="userSpaceOnUse">
+              {tile.body}
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill={`url(#${id})`} />
+        </svg>
+      )}
+      {motif}
+      {/* A soft shade at the foot, so the band settles onto the page below it rather than stopping flat. */}
+      <div className="absolute inset-x-0 bottom-0 h-1/3" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.18), transparent)' }} />
+    </div>
+  );
+}
+
+/**
+ * A large line drawing for the right of a type hero, in currentColor, so the
+ * template colors it: 'chevrons' (nested roof lines), 'rings' (circles spreading
+ * from the right edge, as air or sound does) or 'arcs' (fine arcs from the top
+ * right corner, as an engraved certificate's). `accent` colors one line of it.
+ */
+export function Motif({ kind = 'rings', className = '', accent = null, strokeWidth = 1.25, fade = false }) {
+  // `fade` lets the drawing die away toward the left, so lines that run under the words end softly, not cut.
+  const mask = fade ? { maskImage: 'linear-gradient(to right, transparent 0%, #000 55%)', WebkitMaskImage: 'linear-gradient(to right, transparent 0%, #000 55%)' } : undefined;
+  const common = { 'aria-hidden': true, fill: 'none', stroke: 'currentColor', className: `absolute ${className}`, style: mask };
+  if (kind === 'chevrons') {
+    return (
+      <svg viewBox="0 0 640 640" preserveAspectRatio="xMaxYMax meet" {...common}>
+        {[0, 1, 2, 3, 4, 5, 6].map((i) => (
+          <path
+            key={i}
+            d={`M-20 ${380 + i * 64} L320 ${110 + i * 64} L660 ${380 + i * 64}`}
+            strokeWidth={i === 1 && accent ? strokeWidth * 2.4 : strokeWidth * (i === 0 ? 2.4 : 1)}
+            stroke={i === 1 && accent ? accent : 'currentColor'}
+            strokeLinejoin="miter"
+            strokeOpacity={i === 1 && accent ? 0.6 : 1 - i * 0.11}
+          />
+        ))}
+      </svg>
+    );
+  }
+  if (kind === 'arcs') {
+    return (
+      <svg viewBox="0 0 640 640" preserveAspectRatio="xMaxYMin meet" {...common}>
+        {Array.from({ length: 11 }, (_, i) => (
+          <circle key={i} cx="640" cy="0" r={110 + i * 52} strokeWidth={i === 3 && accent ? strokeWidth * 1.6 : strokeWidth} stroke={i === 3 && accent ? accent : 'currentColor'} strokeOpacity={i === 3 && accent ? 0.45 : 1 - i * 0.07} />
+        ))}
+      </svg>
+    );
+  }
+  return (
+    <svg viewBox="0 0 640 640" preserveAspectRatio="xMaxYMid meet" {...common}>
+      {Array.from({ length: 9 }, (_, i) => (
+        <circle key={i} cx="640" cy="320" r={90 + i * 66} strokeWidth={i === 2 && accent ? strokeWidth * 2 : strokeWidth} stroke={i === 2 && accent ? accent : 'currentColor'} strokeOpacity={i === 2 && accent ? 0.7 : 1 - i * 0.09} />
+      ))}
+    </svg>
+  );
+}
+
+/**
+ * The business's mark drawn large and faint, as a type hero's watermark: its
+ * one-color cut painted in `color` when the mark is about as tall as it is wide
+ * (a long wordmark that large reads as a banner, not a mark), else the first
+ * letter of its name in the heading face, unless `letter` is false. `size` is
+ * a CSS length; `className` places it.
+ */
+export function Watermark({ b, color = '#ffffff', size = '420px', className = '', letter = true }) {
+  const brand = b?.brand || {};
+  const ratio = Number(brand.logoRatio) || (brand.logoWidth && brand.logoHeight ? brand.logoWidth / brand.logoHeight : 0);
+  if (brand.logo && brand.logoMono && ratio > 0 && ratio <= 1.6) {
+    const cut = `url(${brand.logoMono}) center / contain no-repeat`;
+    return <span aria-hidden="true" className={`pointer-events-none absolute block ${className}`} style={{ width: size, height: `calc(${size} / ${ratio})`, WebkitMask: cut, mask: cut, backgroundColor: color }} />;
+  }
+  if (!letter) return null;
+  const initial = initialsOf(b?.shortName || b?.name).slice(0, 1);
+  if (!initial) return null;
+  return (
+    <span aria-hidden="true" className={`pointer-events-none absolute block select-none font-heading font-bold leading-[0.8] ${className}`} style={{ color, fontSize: size }}>
+      {initial}
     </span>
   );
 }

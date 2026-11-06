@@ -4,14 +4,23 @@
 
 `prospect` is a row from preview_candidates. The phone, address, rating and
 review count come from that row, which was filled from the Google listing when
-the prospect was found, so no Google API is asked anything here. Everything
-else comes from the business's own website. `evidence` is what the checks
-prove the brand against: the stored listing values and the text of the
-business's own pages.
+the prospect was found. Everything else comes from the business's own website,
+read twice: by the regex readers in compose.py, for their services, about text
+and description in their own words, and by a model (facts.py) that turns their
+pages into a fact sheet whose every item is proved word for word on the page it
+came from. The copy - the headline, the lead, the about section, highlights,
+steps and the blurbs their site leaves out - is written from that sheet
+(write.py), and every sentence of it is proved against the sheet before it is
+used. Without the model (PREVIEW_WRITE=off, no `claude` command, a failed
+call) the brand is made from their own words, as before there was a sheet.
 
-No review is quoted. Nothing stored holds review text, and a review read from
-anywhere but its source cannot be proved word for word, so the page shows the
-stored rating and count alone, which is true.
+Reviews are quoted only word for word: up to three recent Google reviews when
+PLACES_API_KEY is set and the row has a place_id (the raw answer is kept as
+evidence), else the testimonials on their own site.
+
+`evidence` is what the checks prove the brand against: the stored listing
+values, the text of every page read, the fact sheet, the written lines with the
+facts they cite, and the Places answer.
 """
 
 import colorsys
@@ -24,7 +33,7 @@ import tempfile
 
 from PIL import Image
 
-from . import collect, compose, images, logo, quality, vision
+from . import collect, compose, facts, images, logo, quality, vision, write
 
 TOWNS = [
     "Baytown", "Houston", "Pasadena", "Deer Park", "La Porte", "Mont Belvieu", "League City", "Pearland", "Channelview",
@@ -47,8 +56,13 @@ class NoLogo(Parked):
 
 
 def _sample(root, template):
-    with open(os.path.join(root, "src", "brands", f"sample-{template}.json")) as handle:
-        return json.load(handle)
+    """The template's sample brand, or its shape's while a new layout has none of its own."""
+    for name in dict.fromkeys([template, compose.shape_of(template)]):
+        path = os.path.join(root, "src", "brands", f"sample-{name}.json")
+        if os.path.exists(path):
+            with open(path) as handle:
+                return json.load(handle)
+    raise Parked(f"no sample brand for the {template} template")
 
 
 SKIP_LOGO = re.compile(r"google|review|badge|bbb|yelp|facebook|award|seal|angi|homeadvisor|nextdoor|thumbtack|houzz|"
@@ -332,10 +346,14 @@ def _build(prospect, root, slug, known):
     template = prospect["industry"]
     if template not in compose.AUTOMATED:
         raise Parked(f"no automatic build for the {template} template yet")
+    shape = compose.shape_of(template)
     try:
-        pages = collect.site(prospect["website"])
+        read = collect.site(prospect["website"])
     except Exception as error:
         raise Parked(f"their website did not load: {str(error)[:120]}")
+    # The pages read for the fact sheet alone stay out of the regex readers'
+    # way, so what those find is what they found before the sheet.
+    pages = [page for page in read if not getattr(page, "extra", False)]
     business = collect.jsonld_business(pages)
     text = compose.page_text(pages)
     css = collect.css_text(pages)
@@ -398,12 +416,37 @@ def _build(prospect, root, slug, known):
                         "look": (item["look"] or {}).get("why")} for n, item in names]
 
     kind = compose.KIND.get(prospect["trade"])
-    vocab_key = kind or template
-    services = compose.services_of(pages, compose.VOCAB[vocab_key], name, town, described_first=template == "hvac", towns=TOWNS)
+    vocab_key = kind or (template if template in compose.VOCAB else shape)
+    services = compose.services_of(pages, compose.VOCAB[vocab_key], name, town, described_first=shape == "hvac", towns=TOWNS)
+    # The fact sheet: one model read of every page, each item proved on its page.
+    sheet = facts.sheet(prospect, read, business, notes, TOWNS) if facts.available() else None
+    if sheet is None and not facts.available():
+        notes.append(f"no fact sheet: {facts.last_error or 'writing is switched off or the claude command is missing'}")
+    known["facts"] = {k: v for k, v in (sheet or {}).items() if k != "pages"}
+    # A site that sets them in another state again and again ("a local roofing
+    # company out of Kansas City, MO" for a roofer in Crosby, TX) was written
+    # for another place, or is another business of the same name: what it says
+    # of the work is not known to be theirs.
+    if sheet and sheet.get("elsewhere", 0) >= 5 and sheet["elsewhere"] * 4 >= sheet.get("read", 0):
+        raise Parked(f"their website sets them outside {state} {sheet['elsewhere']} times, where their Google listing is; "
+                     "it may be another business's site")
+    google, places = facts.google_reviews(prospect, notes)
+    services = _with_facts(services, sheet, name, shape, notes)
     known["services"] = services
     if len(services) < 2:
         raise Parked("fewer than two services named on their website")
-    if template == "professional":
+    about = compose.about_of(pages, name, vocab_key, services, town, state, TOWNS)
+    lead, lead_source = compose.lead_of(pages, about, vocab_key, services, town, state, TOWNS, name)
+    known["about"], known["lead"] = about, lead
+    copy = write.write(prospect, template, kind, sheet, services, notes, town=town, state=state,
+                       own={"lead": lead, "about": about}, towns=TOWNS) if sheet else None
+    if copy:
+        known["copy"] = [{k: l[k] for k in ("path", "text", "facts")} for l in copy["lines"]]
+        for s in services:
+            blurb = copy["blurbs"].get(s["title"].lower())
+            if blurb:
+                s["text"], s["short"], s["written"] = blurb["text"], blurb.get("short") or None, True
+    if shape == "professional":
         # Where most services are described the grid draws cards with their
         # words, so a service named alone is left out rather than drawn as a
         # card and a page with nothing in them; where most are named alone
@@ -411,19 +454,27 @@ def _build(prospect, root, slug, known):
         described = [s for s in services if s["text"]]
         if len(described) * 2 > len(services):
             services = described
-    about = compose.about_of(pages, name, vocab_key, services, town, state, TOWNS)
-    lead, lead_source = compose.lead_of(pages, about, vocab_key, services, town, state, TOWNS, name)
-    known["about"], known["lead"] = about, lead
+    written = (copy or {}).get("hero") or {}
+    lead = written.get("lead") or lead
+    if copy and written.get("lead"):
+        lead_source = "written from the fact sheet"
     if not lead:
         raise Parked("no description of the business in its own words")
-    areas = compose.areas_of(text, town, TOWNS)
+    if (copy or {}).get("about"):
+        about = copy["about"]["text"]
+    text_areas = compose.areas_of(text, town, TOWNS)
+    towns_said = [compose.plain(t["name"]).split(",")[0].strip() for t in (sheet or {}).get("towns") or []]
+    towns_said = [t for t in towns_said if t and len(t) <= 30 and not re.search(r"\d", t)]
+    areas = list(dict.fromkeys([town] + towns_said))[:12] if towns_said else text_areas
     # The year they were founded is the earliest they give; a later one
     # ("Since 2023") dates something newer, such as a move or a new service.
     since = min((int(m.group(1)) for m in compose.SINCE.finditer(text)), default=None)
+    if not since:
+        founded = [h["number"] for h in (sheet or {}).get("highlights") or [] if h.get("kind") == "founded" and 1850 < int(h.get("number") or 0) <= 2026]
+        since = min(founded, default=None)
     license_line = compose.LICENSE.search(text)
 
-    label = compose.TRADE_LABEL[kind or template]
-    main = services[0]["title"]
+    label = compose.TRADE_LABEL.get(kind) or compose.TRADE_LABEL.get(template) or compose.TRADE_LABEL[shape]
     brand = {
         "template": template,
         "preview": True,
@@ -449,11 +500,17 @@ def _build(prospect, root, slug, known):
     if hours:
         brand["hours"] = hours
 
+    fonts = compose.fonts_of(css)
     brand["brand"] = {
         **colors,
-        **compose.font_block(compose.fonts_of(css), sample),
+        **compose.font_block(fonts, sample),
         **logo_fields,
     }
+    # How the hero is drawn: across a wide, strong photo; beside a decent one;
+    # in type where there is none. Classic where their own headings are set
+    # in a serif or the site reads as a traditional firm, else bold.
+    brand["heroStyle"] = _hero_style(hero_pick)
+    brand["tone"] = "classic" if compose.heading_serif(css, fonts) or ((sheet or {}).get("tone") or {}).get("value") == "classic" else "bold"
     # From here the brand is what a park leaves behind, as far as it got.
     known["brand"] = brand
     brand["hero"] = {
@@ -464,20 +521,31 @@ def _build(prospect, root, slug, known):
     if hero_image:
         brand["hero"]["image"] = hero_image
         brand["hero"]["imageAlt"] = f"A photo of {short}"
-    line = compose.hero_line(services, town, label, vocab_key, short)
-    if template in ("roofing", "hvac"):
-        # The name leads in small type; the work is the headline and the town
-        # its accent, so a long business name never fills the hero.
-        what, _, where = line.rpartition(f" in {town}")
-        brand["hero"]["eyebrow"] = short
-        brand["hero"]["title"] = what or line
-        if what:
-            brand["hero"]["titleAccent"] = f"in {town}"
+    if written.get("title"):
+        # A written headline says a benefit or their story; the name and town
+        # lead above it in small type.
+        brand["hero"]["eyebrow"] = f"{short} · {town}"
+        brand["hero"]["title"] = written["title"]
+        if written.get("titleAccent") and shape in ("roofing", "hvac"):
+            brand["hero"]["titleAccent"] = written["titleAccent"]
+        elif written.get("titleAccent"):
+            brand["hero"]["title"] = f"{written['title']} {written['titleAccent']}"
     else:
-        brand["hero"]["eyebrow"] = short
-        brand["hero"]["title"] = line
+        line = compose.hero_line(services, town, label, vocab_key, short)
+        if shape in ("roofing", "hvac"):
+            # The name leads in small type; the work is the headline and the town
+            # its accent, so a long business name never fills the hero.
+            what, _, where = line.rpartition(f" in {town}")
+            brand["hero"]["eyebrow"] = short
+            brand["hero"]["title"] = what or line
+            if what:
+                brand["hero"]["titleAccent"] = f"in {town}"
+        else:
+            brand["hero"]["eyebrow"] = short
+            brand["hero"]["title"] = line
 
     brand["serviceArea"] = areas
+    _facts_fields(brand, sheet, copy, google, phone, template, state)
 
     # The about section is drawn on the home page under the hero, so it takes
     # the first spare photo that is not another shot of the hero's scene.
@@ -485,21 +553,23 @@ def _build(prospect, root, slug, known):
     # the page, so there it must be sharp enough for the hero slot, not just a card.
     pictures = dict(names)
     about_image = next((n for n in spare if not (hero_pick and images.same_scene(pictures[n]["image"], hero_pick["image"]))
-                        and (template not in ("roofing", "hvac") or _fits(pictures[n], "hero"))), None)
+                        and (shape not in ("roofing", "hvac") or _fits(pictures[n], "hero"))), None)
+    about_title = ((copy or {}).get("about") or {}).get("title") or f"About {short}"
 
     def about_block(**extra):
-        block = {**extra, "title": f"About {short}", "text": about}
+        block = {**extra, "title": about_title, "text": about}
         if about_image:
             block["image"] = about_image
             block["imageAlt"] = f"A photo of {short}"
         return block
 
-    if template == "professional":
+    if shape == "professional":
         brand["kind"] = kind
         items = []
         for s in services:
             icon = next((k for k, p in compose.ICONS.get(kind) or compose.ICONS["professional"] if re.search(p, s["title"], re.I)), None)
-            item = {"slug": compose.slugify(s["title"]), "title": s["title"], "summary": compose.gist(s["text"], 50), "text": compose.gist(s["text"], 170)}
+            summary = s.get("short") if s.get("short") and len(s["short"]) <= 50 else compose.gist(s["text"], 50)
+            item = {"slug": compose.slugify(s["title"]), "title": s["title"], "summary": summary, "text": compose.gist(s["text"], 170)}
             if s["text"]:
                 item["lead"] = s["text"]
             if icon:
@@ -515,7 +585,7 @@ def _build(prospect, root, slug, known):
             raise Parked("no about text on their website")
         brand["about"] = about_block()
 
-    elif template == "roofing":
+    elif shape == "roofing":
         # A service page leads on the service's text under its heading, so its
         # body carries only the sentences that text has not already said.
         def untold(text):
@@ -523,7 +593,8 @@ def _build(prospect, root, slug, known):
         items = [
             {"slug": compose.slugify(s["title"]), "title": s["title"],
              **({"group": group} if (group := next((k for k, p in compose.ROOF_GROUPS if re.search(p, s["title"], re.I)), None)) else {}),
-             "short": compose.trim(s["text"], 70) or s["title"], "text": compose.trim(s["text"], 170) or "",
+             "short": (s.get("short") if s.get("short") and len(s["short"]) <= 70 else None) or compose.trim(s["text"], 70) or s["title"],
+             "text": compose.trim(s["text"], 170) or "",
              **({"body": [rest]} if (rest := untold(s["text"])) else {})}
             for s in services
         ]
@@ -537,7 +608,7 @@ def _build(prospect, root, slug, known):
             raise Parked("no about text on their website")
         brand["about"] = about_block()
 
-    elif template == "hvac":
+    elif shape == "hvac":
         ask = compose.ask_of(kind, services)
         if ask:
             brand["ask"] = ask
@@ -572,7 +643,8 @@ def _build(prospect, root, slug, known):
             if not s["text"]:
                 continue
             icon = next((k for k, p in compose.ICONS.get(kind) or compose.ICONS["hvac"] if re.search(p, s["title"], re.I)), "wrench")
-            group = {"slug": compose.slugify(s["title"]), "title": s["title"], "icon": icon, "summary": compose.card_line(s["text"], 140) or s["text"], "intro": s["text"]}
+            summary = compose.card_line(s["text"], 140) or s["text"]
+            group = {"slug": compose.slugify(s["title"]), "title": s["title"], "icon": icon, "summary": summary, "intro": s["text"]}
             if s["title"] in named or (wide and (not trade or re.search(trade, s["title"], re.I))):
                 group["image"] = named.get(s["title"]) or wide.pop(0)
                 group["imageAlt"] = f"A photo of {short}"
@@ -581,18 +653,24 @@ def _build(prospect, root, slug, known):
             raise Parked("fewer than two services described on their website")
         # The services heading's line names the services and the towns; the
         # lead, their description of themselves, is the hero's alone.
-        brand["summary"] = compose.summary_line(groups, short, areas or [town])
+        brand["summary"] = (copy or {}).get("summary") or compose.summary_line(groups, short, areas or [town])
         brand["groups"] = groups
         if about:
             brand["about"] = about_block(eyebrow="About us")
 
+    pages_text = (sheet or {}).get("pages") or facts.page_texts(read, business)
     evidence = {
         "phone": phone,
         "address": street,
         "rating": rating,
         "reviewCount": count,
         "lead_source": lead_source,
-        "text": text,
+        "text": compose.page_text(read),
+        "pages": pages_text,
+        "facts": {k: v for k, v in (sheet or {}).items() if k != "pages"},
+        "copy": [{k: l[k] for k in ("path", "text", "facts", "against")} for l in (copy or {}).get("lines") or []],
+        "corpus": (copy or {}).get("corpus") or "",
+        "places": places,
         "photos": [item["source"] for _, item in names],
         "photo_looks": {path: (item["look"] or {}).get("why") for path, item in names},
         "photos_refused": refused,
@@ -602,4 +680,145 @@ def _build(prospect, root, slug, known):
     with open(os.path.join(root, "src", "brands", f"{slug}.json"), "w") as handle:
         json.dump(brand, handle, indent=2, ensure_ascii=False)
         handle.write("\n")
+    _keep_evidence(root, slug, evidence, (copy or {}).get("dropped") or [])
     return brand, evidence
+
+
+def _with_facts(services, sheet, name, shape, notes):
+    """The regex's services, each undescribed one given the description the
+    fact sheet proved for it, or the fact sheet's own where the regex found
+    fewer than two."""
+    if not sheet:
+        return services
+    found = []
+    for item in sheet.get("services") or []:
+        title = compose.plain(re.sub(r"\s*\([^)]*\)$", "", item["title"]))
+        # The sheet gives titles in Title Case, initials ("DOT Exams") kept;
+        # one set all in one case is put right.
+        if title.islower() or title.isupper():
+            title = compose.title_case(title)
+        if not (3 <= len(title) <= 42) or len(title.split()) > 6 or compose.names_the_business(title, name) \
+                or compose.NOT_A_SERVICE_SHAPE.search(title) or compose.GENERIC_NAV.match(title) \
+                or re.search(r"\b(privacy|terms|glossary)\b", title, re.I):
+            continue
+        if any(facts.normal(f["title"]) == facts.normal(title) for f in found):
+            continue
+        found.append({"title": title, "text": compose.plain(item.get("description")) or None, "fact": item["id"]})
+    by_title = {facts.normal(f["title"]): f for f in found}
+    for s in services:
+        match = by_title.get(facts.normal(s["title"]))
+        if not s["text"] and match and match["text"]:
+            s["text"] = match["text"]
+    if len(services) < 2 <= len(found):
+        notes.append("the services are the fact sheet's: " + ", ".join(f["title"] for f in found[:8]))
+        services = found[:8]
+    # A heading the check refuses as no service ("Nationwide Ship-in Balancing
+    # and Machining" reads as a page aimed at a town) is left out here rather
+    # than parking the business for it.
+    refused = [s["title"] for s in services if compose.NOT_A_SERVICE_SHAPE.search(s["title"]) or compose.names_the_business(s["title"], name)]
+    if refused:
+        notes.append("left out headings the check refuses as services: " + ", ".join(refused))
+        services = [s for s in services if s["title"] not in refused]
+    if shape == "hvac":
+        services.sort(key=lambda s: not s["text"])
+    return services
+
+
+def _hero_style(pick):
+    """photo for a wide, sharp photo the look rated strong; split for any
+    other the hero can take; type with none."""
+    if not pick:
+        return "type"
+    m = pick["metrics"]
+    look = (pick.get("look") or {}).get("score")
+    strong = m["width"] >= 1800 and m["height"] >= 900 and m["ratio"] >= 1.45 and (look >= 4 if look else pick["score"] >= 0.8)
+    return "photo" if strong else "split"
+
+
+SPANISH = re.compile(r"^(?:spanish|espa[nñ]ol)$", re.I)
+
+
+def _facts_fields(brand, sheet, copy, google, phone, template, state):
+    """The brand's fields that come straight from the proved fact sheet and
+    the written copy: highlights, steps, phone lines, languages, reviews,
+    credentials, the owner, industries and states served."""
+    if copy:
+        if copy.get("highlights"):
+            brand["highlights"] = copy["highlights"]
+        if copy.get("steps"):
+            brand["steps"] = copy["steps"]
+    sheet = sheet or {}
+    digits = lambda s: re.sub(r"\D", "", s or "")[-10:]
+    lines = sheet.get("phones") or []
+    if any(digits(p["number"]) != digits(phone) for p in lines):
+        out = []
+        for p in lines:
+            label = p.get("label") or ("Main" if digits(p["number"]) == digits(phone) else "Phone")
+            if SPANISH.match(label):
+                label = "Español"
+            out.append({"label": compose.title_case(label) if label.islower() else label, "number": p["number"]})
+        # The listing's own number is always one of them.
+        if not any(digits(p["number"]) == digits(phone) for p in out):
+            out.insert(0, {"label": "Main", "number": phone})
+        brand["phones"] = out[:4]
+    spoken = []
+    for item in sheet.get("languages") or []:
+        language = "Spanish" if SPANISH.match(item["language"].strip()) else compose.title_case(item["language"].strip())
+        if language not in spoken:
+            spoken.append(language)
+    if any(l != "English" for l in spoken):
+        # Their site is written in English, so English is one of them.
+        brand["languages"] = list(dict.fromkeys(["English"] + spoken))
+    reviews = list(google)
+    for t in sheet.get("testimonials") or []:
+        if len(reviews) >= facts.REVIEWS_SHOWN:
+            break
+        if len(t["text"]) <= 600:
+            reviews.append({"author": t.get("author") or "", "text": t["text"], "source": "their site"})
+    if reviews:
+        brand["reviews"] = [{k: v for k, v in r.items() if v not in ("", None)} for r in reviews]
+    credentials = []
+    for c in sheet.get("credentials") or []:
+        entry = {"label": c["label"]}
+        if c.get("detail") and facts.normal(c["detail"]) != facts.normal(c["label"]):
+            entry["detail"] = c["detail"]
+        if entry not in credentials:
+            credentials.append(entry)
+    if credentials:
+        brand["credentials"] = credentials[:8]
+    owner = next((p for p in sheet.get("people") or [] if p.get("owner")), None)
+    if owner:
+        block = {"name": owner["name"]}
+        if owner.get("role"):
+            block["role"] = owner["role"]
+        if owner.get("bio"):
+            told = []
+            for sentence in compose.sentences(owner["bio"]):
+                if len(" ".join(told + [sentence])) > 300:
+                    break
+                told.append(sentence)
+            if told:
+                block["text"] = " ".join(told)
+        brand["owner"] = block
+    # Who they work for says something of an industrial firm; of a
+    # landscaper it only says "homes and businesses".
+    industries = list(dict.fromkeys(compose.plain(i["name"]) for i in sheet.get("industries") or []))
+    if industries and template == "industrial":
+        brand["industries"] = industries[:10]
+    states = list(dict.fromkeys(compose.plain(s["name"]) for s in sheet.get("states") or []))
+    home = compose.STATES.get(state or "")
+    if len(states) >= 2 or (states and (states != [home] or template == "industrial")):
+        brand["statesServed"] = states[:12]
+
+
+def _keep_evidence(root, slug, evidence, dropped):
+    """What the copy was written and proved from, beside the checkout, for a
+    person reading why the preview says what it says (.autobuild is ignored by git)."""
+    folder = os.path.join(root, ".autobuild", "facts")
+    try:
+        os.makedirs(folder, exist_ok=True)
+        with open(os.path.join(folder, f"{slug}.json"), "w") as handle:
+            json.dump({**{k: v for k, v in evidence.items() if k not in ("text", "pages")}, "copy_dropped": dropped,
+                       "pages": list((evidence.get("pages") or {}).keys())}, handle, indent=1, ensure_ascii=False, default=str)
+    except OSError:
+        pass

@@ -13,12 +13,16 @@ import re
 import numpy as np
 from PIL import Image
 
-from . import compose, images, logo, quality
+from . import compose, facts as factsheet, images, logo, quality
 
 REQUIRED = {
     "professional": ["name", "shortName", "phone", "email", "address", "town", "state", "brand", "hero", "services", "about"],
     "roofing": ["name", "shortName", "phone", "address", "town", "state", "brand", "hero", "services", "about", "serviceArea"],
     "hvac": ["name", "shortName", "summary", "phone", "address", "town", "state", "brand", "hero", "groups"],
+    # The new layouts draw the hvac shape (outdoor, industrial) and the professional one (health).
+    "outdoor": ["name", "shortName", "summary", "phone", "address", "town", "state", "brand", "hero", "groups"],
+    "industrial": ["name", "shortName", "summary", "phone", "address", "town", "state", "brand", "hero", "groups"],
+    "health": ["kind", "name", "shortName", "phone", "email", "address", "town", "state", "brand", "hero", "services", "about"],
     "restaurant": ["name", "shortName", "cuisine", "phone", "address", "town", "state", "hours", "brand", "hero"],
     "recreation": ["kind", "name", "shortName", "phone", "address", "town", "state", "hours", "brand", "hero", "programs"],
 }
@@ -52,13 +56,97 @@ def facts(brand, evidence):
         problems.append("the address does not match the one stored from the Google listing")
     if "rating" in brand and (brand["rating"] != evidence["rating"] or brand.get("reviewCount") != evidence["reviewCount"]):
         problems.append("the rating does not match the one stored from the Google listing")
-    # Nothing stored holds review text, so no review may be quoted.
-    if brand.get("reviews"):
-        problems.append("quotes reviews that cannot be proved word for word")
-    page = " ".join(evidence["text"].split())
+    return problems + written(brand, evidence)
+
+
+def _covered(text, own, lines, corpus):
+    """None when every word of `text` is their own (on their pages) or a
+    written line still supported by the fact sheet; else what is not."""
+    rest = factsheet.normal(text)
+    for line in sorted(lines, key=lambda l: -len(l["text"])):
+        # A headline drawn without the comma it was written with ("We look
+        # for the root cause," before its accent) is still that line.
+        said = factsheet.normal(line["text"]).strip(" .,;:!?-")
+        if said and said in rest:
+            missing = factsheet.supported(line["text"], corpus)
+            if missing:
+                return f"{line['text'][:60]!r} says what the fact sheet does not ({', '.join(missing[:4])})"
+            rest = rest.replace(said, "\x00")
+    for part in rest.split("\x00"):
+        part = part.strip(" .,;:-")
+        if len(part) > 3 and not factsheet.found_in(part, own):
+            return f"{part[:60]!r} is neither their own words nor written from the fact sheet"
+    return None
+
+
+def written(brand, evidence):
+    """The copy, reviews and facts a brand carries beyond the listing, proved
+    against what the build read: every written sentence supported by the
+    fact sheet, every review word for word in its source, every phone line,
+    language, credential, person, industry and state on their own pages, and
+    every quote in the fact sheet on the page it names."""
+    problems = []
+    pages = evidence.get("pages") or {}
+    own = "\n".join([evidence.get("text") or ""] + list(pages.values()))
+    lines = evidence.get("copy") or []
+    corpus = evidence.get("corpus") or ""
+    # The about text is their own words or written from checked facts.
     for paragraph in (brand.get("about") or {}).get("text") or []:
-        if paragraph not in page:
-            problems.append("the about text is not word for word from their site")
+        why = _covered(paragraph, own, lines, corpus)
+        if why:
+            problems.append(f"the about text: {why}")
+            break
+    paths = {l["path"].split(".")[0] for l in lines}
+    hero = brand.get("hero") or {}
+    checked = [("highlights", [v for h in brand.get("highlights") or [] for v in (h.get("title"), h.get("text"))]),
+               ("steps", [v for h in brand.get("steps") or [] for v in (h.get("title"), h.get("text"))])]
+    if evidence.get("lead_source") == "written from the fact sheet":
+        checked.append(("the lead", [hero.get("lead")]))
+    if any(l["path"] == "hero.title" for l in lines) and hero.get("title"):
+        checked.append(("the headline", [hero.get("title"), hero.get("titleAccent")]))
+    if "summary" in paths and brand.get("summary"):
+        checked.append(("the summary", [brand["summary"]]))
+    for what, texts in checked:
+        for text in texts:
+            if text:
+                why = _covered(text, own if what not in ("highlights", "steps") else "", lines, corpus)
+                if why:
+                    problems.append(f"{what}: {why}")
+                    break
+    # Every written line the page shows is still supported, wherever it went.
+    shown = factsheet.normal(json.dumps(brand, ensure_ascii=False))
+    for line in lines:
+        if factsheet.normal(line["text"]) in shown and factsheet.supported(line["text"], corpus):
+            problems.append(f"a written line says what the fact sheet does not: {line['text'][:70]!r}")
+    for review in brand.get("reviews") or []:
+        if not factsheet.review_proved(review, evidence):
+            problems.append(f"quotes a review that is not word for word in {review.get('source') or 'its source'}: "
+                            f"{str(review.get('text'))[:50]!r}")
+    own_digits = re.sub(r"\D", "", own)
+    for line in brand.get("phones") or []:
+        number = re.sub(r"\D", "", line.get("number") or "")[-10:]
+        if len(number) != 10 or (number not in own_digits and number != re.sub(r"\D", "", evidence["phone"])[-10:]):
+            problems.append(f"the phone line {line.get('number')} is not on their site")
+    for language in brand.get("languages") or []:
+        said = r"spanish|espa[nñ]ol|habla" if language == "Spanish" else re.escape(language.lower())
+        if language != "English" and not re.search(said, factsheet.normal(own)):
+            problems.append(f"says they speak {language}, which their site does not")
+    for item in brand.get("credentials") or []:
+        if not factsheet.found_in(item.get("label"), own) or factsheet.supported(item.get("detail") or "", own):
+            problems.append(f"the credential {item.get('label')!r} is not on their site as written")
+    owner = brand.get("owner") or {}
+    if owner and (not factsheet.found_in(owner.get("name"), own) or
+                  owner.get("text") and _covered(owner["text"], own, lines, corpus)):
+        problems.append(f"the owner {owner.get('name')!r} is not on their site as written")
+    for key in ("industries", "statesServed"):
+        for name in brand.get(key) or []:
+            if not factsheet.found_in(name, own):
+                problems.append(f"{key} names {name!r}, which their site does not")
+    for fid, _, item in factsheet.items(evidence.get("facts") or {}):
+        page = pages.get(item.get("url")) or ""
+        if fid[0] not in "af" and not factsheet.found_in(item.get("quote"), page):
+            problems.append(f"the fact sheet's {fid} quotes what is not on {item.get('url')}")
+            break
     return problems
 
 

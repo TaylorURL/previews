@@ -28,6 +28,10 @@ A letter's site is built only while the mailbox is near it (routine.py
 backlog): a run that finds enough letters already waiting builds nothing and
 says so, and a run stops starting batches once the wait is long enough.
 
+The review passes only a site clearly better than the business's own website
+(versus.py); one that is not stays parked with why, and each comparison's
+scores are in the report's "versus", the run's lowest in "versus_lowest".
+
 The run's last line is the routine's status for routine-deliver.py:
 `ROUTINE-STATUS: ok`, or `ROUTINE-STATUS: attention <why>` when the run broke,
 or when it found parked businesses, had room to build and finished none.
@@ -48,7 +52,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 
-from . import collect, drafts, gate, review, vision
+from . import collect, drafts, gate, review, versus, vision
 from .__main__ import ROOT
 from .build import Parked, build
 from .check import all_checks
@@ -434,11 +438,13 @@ def finish(items, n, stamp, report):
             ready.remove(item)
     fixes, changed, problems = [], [], {}
     looking = [item for item in ready if not review.passed(item["slug"])]
+    businesses = {item["slug"]: item["row"] for item in items}
     if looking:
-        verdict = review.run([item["slug"] for item in looking], deadline=deadline() - 20 * 60)
+        verdict = review.run([item["slug"] for item in looking], deadline=deadline() - 20 * 60, businesses=businesses)
         fixes += verdict["fixes"]
         changed += verdict["changed"]
         problems = verdict["problems"]
+        report["versus"].update(verdict.get("versus") or {})
     failing = [item for item in looking if problems.get(item["slug"])]
     if failing and time.time() < deadline() - 30 * 60:
         # What the review still finds after its own fixes is fixed in each
@@ -452,10 +458,11 @@ def finish(items, n, stamp, report):
         problems = {slug: p for slug, p in found.items() if p}
         again = [item["slug"] for item in failing if item["slug"] not in problems]
         if again:
-            verdict = review.run(again, deadline=deadline() - 20 * 60)
+            verdict = review.run(again, deadline=deadline() - 20 * 60, businesses=businesses)
             fixes += verdict["fixes"]
             changed += verdict["changed"]
             problems.update(verdict["problems"])
+            report["versus"].update(verdict.get("versus") or {})
     for item in failing:
         if problems.get(item["slug"]):
             why = "; ".join(problems[item["slug"]])
@@ -523,7 +530,7 @@ def main(argv):
     DRY = args.dry
 
     report = {"found": 0, "built": [], "dropped": [], "parked": [], "sent": [], "not_sent": [], "not_live": [],
-              "notes": [], "paused": False, "cost_usd": 0.0}
+              "notes": [], "paused": False, "cost_usd": 0.0, "versus": {}}
     drafts.prune()
     rows = [r for r in routine.due() if r.get("parked_at") and (not args.prospect or r["id"] in args.prospect)]
     if args.limit:
@@ -554,6 +561,7 @@ def main(argv):
         send_waiting(report)
     report["left"] = len(rows)
     report["cost_usd"] = round(report["cost_usd"], 2)
+    report["versus_lowest"] = versus.lowest(report["versus"])
     print("<parked_report>" + json.dumps(report) + "</parked_report>")
     if report["paused"]:
         print(f"Built nothing: {report['held']}.")

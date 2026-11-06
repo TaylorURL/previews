@@ -1,0 +1,268 @@
+{
+  "template": "outdoor",
+  "name": "Live Oak Landscape & Hardscape LLC",
+  "shortName": "Live Oak Landscape",
+  "summary": "Landscape design, planting, patios, irrigation and lawn care for homes across Round Rock, Georgetown and north Austin.",
+  "phone": "(512) 555-0142",
+  "phones": [
+    {
+      "label": "Español",
+      "number": "(512) 555-0179"
+    }
+  ],
+  "languages": [
+    "English",
+    "Español"
+  ],
+  "email": "hello@liveoaklandscape.example",
+  "address": "1820 Sam Bass Rd, Suite 4",
+  "town": "Round Rock",
+  "state": "TX",
+  "zip": "78681",
+  "rating": 4.9,
+  "reviewCount": 187,
+  "since": 2011,
+  "hours": [
+    [
+      "Mon – Fri",
+      "7 AM – 6 PM"
+    ],
+    [
+      "Saturday",
+      "8 AM – 1 PM"
+    ]
+  ],
+  "brand": {
+    "primary": "#2f6b3a",
+    "primaryDeep": "#13261a",
+    "accent": "#d9a441",
+    "ink": "#151c17",
+    "muted": "#56605a",
+    "line": "#dfe3dc",
+    "heading": "'Bricolage Grotesque', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": null
+  },
+  "heroStyle": "split",
+  "tone": "bold",
+  "licenses": [
+    {
+      "label": "Texas Irrigator",
+      "number": "LI 0021847"
+    }
+  ],
+  "credentials": [
+    {
+      "label": "Fully insured",
+      "detail": "General liability and workers' comp"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Landscape design and hardscapes in Round Rock",
+    "title": "Yards built for Texas summers,",
+    "titleAccent": "planted to last.",
+    "lead": "Native planting, stone patios and irrigation that keeps up with July. One crew designs it, builds it and comes back to look after it.",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+    "imageAlt": "A modern house at dusk with a fresh lawn and a mature oak in the yard"
+  },
+  "highlights": [
+    {
+      "title": "One crew, start to finish",
+      "text": "The people who draw your plan are the people who plant it.",
+      "icon": "team"
+    },
+    {
+      "title": "Planted for the heat",
+      "text": "Natives and adapted plants that hold up without a fight over water.",
+      "icon": "leaf"
+    },
+    {
+      "title": "Free estimates",
+      "text": "A written, line-by-line price before any work starts.",
+      "icon": "price"
+    },
+    {
+      "title": "Se habla español",
+      "text": "Call the Spanish line and talk to the crew lead directly.",
+      "icon": "language"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Walk the yard",
+      "text": "We visit, measure and listen to how you want to use the space."
+    },
+    {
+      "title": "Plan and price",
+      "text": "You get a drawing and a written estimate within a week."
+    },
+    {
+      "title": "Build it",
+      "text": "Our own crew installs it, usually in a few days."
+    },
+    {
+      "title": "Keep it looking right",
+      "text": "Lawn care and seasonal visits, if you want them."
+    }
+  ],
+  "groups": [
+    {
+      "slug": "landscape-design",
+      "title": "Landscape Design & Planting",
+      "summary": "Planting plans built around your yard's sun, shade and soil, then installed by our crew.",
+      "intro": "A good yard starts with what grows here. We walk the property, sketch a plan around how you use it and plant beds that look full in the first season and better in the third.",
+      "image": "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae",
+      "imageAlt": "A garden path between clipped hedges and flowering shrubs",
+      "services": [
+        {
+          "slug": "design-plans",
+          "title": "Design Plans",
+          "text": "A scaled drawing of beds, paths and plants, with a written price for each part.",
+          "points": [
+            "Site visit and measurements",
+            "Plant list chosen for sun and shade"
+          ]
+        },
+        {
+          "slug": "bed-installation",
+          "title": "Bed Installation",
+          "text": "New beds dug, amended and planted, with steel edging and mulch to finish.",
+          "points": [
+            "Soil amended before planting",
+            "Steel or stone edging"
+          ]
+        },
+        {
+          "slug": "tree-planting",
+          "title": "Tree Planting",
+          "text": "Shade and ornamental trees set at the right depth and staked for the first year."
+        }
+      ]
+    },
+    {
+      "slug": "hardscapes",
+      "title": "Patios & Hardscapes",
+      "summary": "Flagstone and paver patios, walkways and low stone walls built on a compacted base.",
+      "intro": "Stone that stays level comes down to what is under it. Every patio and path we build sits on a compacted base, pitched so water runs away from the house.",
+      "image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
+      "imageAlt": "A backyard pool deck with pale stone paving and planted borders",
+      "services": [
+        {
+          "slug": "patios",
+          "title": "Patios",
+          "text": "Flagstone, travertine and paver patios sized for a table, a grill or a fire pit."
+        },
+        {
+          "slug": "walkways",
+          "title": "Walkways",
+          "text": "Front walks and garden paths in stone, pavers or decomposed granite."
+        },
+        {
+          "slug": "retaining-walls",
+          "title": "Retaining Walls",
+          "text": "Low limestone and block walls that hold a slope and give beds a clean edge."
+        }
+      ]
+    },
+    {
+      "slug": "lawn-care",
+      "title": "Lawn Care",
+      "summary": "Weekly mowing, edging and seasonal care for St. Augustine and Bermuda lawns.",
+      "intro": "A steady schedule keeps a lawn thick enough to crowd out weeds. Our crews mow, edge and blow every visit, and treat the lawn on a seasonal plan.",
+      "image": "https://images.unsplash.com/photo-1558904541-efa843a96f01",
+      "imageAlt": "A freshly mowed lawn in close-up",
+      "services": [
+        {
+          "slug": "mowing",
+          "title": "Mowing and Edging",
+          "text": "Weekly or every-other-week visits, cut at the right height for the season."
+        },
+        {
+          "slug": "sod",
+          "title": "Sod Installation",
+          "text": "Old turf removed, the ground graded and new sod laid and rolled."
+        }
+      ]
+    },
+    {
+      "slug": "irrigation",
+      "title": "Irrigation & Drainage",
+      "summary": "Sprinkler repair, drip conversions and French drains by a licensed irrigator.",
+      "intro": "Most of a summer water bill is a system that waters the wrong places. We repair heads and leaks, convert beds to drip and drain the low spots that stay wet.",
+      "image": "https://images.unsplash.com/photo-1598902108854-10e335adac99",
+      "imageAlt": "A lush shaded garden with ferns and a low bed of flowers",
+      "services": [
+        {
+          "slug": "sprinkler-repair",
+          "title": "Sprinkler Repair",
+          "text": "Broken heads, leaking valves and controllers fixed and the zones reset."
+        },
+        {
+          "slug": "drip",
+          "title": "Drip Conversions",
+          "text": "Spray zones in beds switched to drip, which puts water at the roots."
+        },
+        {
+          "slug": "french-drains",
+          "title": "French Drains",
+          "text": "Gravel drains that carry standing water away from the house and the lawn."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "A Round Rock crew that plants what it would plant at home.",
+    "text": [
+      "Live Oak started in 2011 with one truck and a trailer of native plants. Most of our work still comes from neighbors who saw a yard we built and asked who did it.",
+      "Today the company designs, builds and maintains yards across Round Rock, Georgetown and north Austin, with the same crew leads who have been with us for years.",
+      "We would rather plant fewer things that thrive than fill a bed with plants that will not see August."
+    ],
+    "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b",
+    "imageAlt": "A trowel and fresh potting soil on a work table"
+  },
+  "reviews": [
+    {
+      "author": "Homeowner in Round Rock",
+      "text": "They turned a bare backyard into a patio and beds we actually use. The estimate matched the final bill to the dollar.",
+      "source": "Google",
+      "rating": 5
+    },
+    {
+      "author": "Homeowner in Georgetown",
+      "text": "Our sprinklers were watering the street. One visit, two broken heads and a reset controller, and the bill dropped the next month.",
+      "source": "Google",
+      "rating": 5
+    },
+    {
+      "author": "Homeowner in north Austin",
+      "text": "The crew showed up when they said, kept the driveway clean and finished the walkway a day early.",
+      "source": "Google",
+      "rating": 5
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do you charge for an estimate?",
+      "a": "No. We visit, measure and send a written estimate, free."
+    },
+    {
+      "q": "How soon can you start?",
+      "a": "Most design and build jobs start two to four weeks after the estimate is approved."
+    },
+    {
+      "q": "Do you only do new installs?",
+      "a": "No. We also take over lawn care and repair irrigation on yards we did not build."
+    }
+  ],
+  "serviceArea": [
+    "Round Rock",
+    "Georgetown",
+    "Cedar Park",
+    "Pflugerville",
+    "Hutto",
+    "Leander",
+    "North Austin"
+  ]
+}
