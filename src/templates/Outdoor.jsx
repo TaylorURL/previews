@@ -153,7 +153,7 @@ function lowered(title, b) {
 /* -------------------------------------------------------------------- home */
 
 function Home({ b, groups }) {
-  const { photos, aboutUsed, spare } = galleryOf(b);
+  const { photos, spare } = galleryOf(b);
   const ask = askOf(b);
   // Each section that has something to show, in order, on grounds that alternate from white.
   const sections = [
@@ -177,7 +177,7 @@ function Home({ b, groups }) {
     groups.length > 0 && ((ground) => <Services key="services" b={b} groups={groups} ground={ground} />),
     b.promo?.title && ((ground) => <Promo key="promo" b={b} ground={ground} />),
     list(b.steps).length > 1 && ((ground) => <Steps key="steps" b={b} ground={ground} />),
-    (b.about || list(b.highlights).length > 0) && ((ground) => <AboutBlock key="about" b={b} photoUsed={aboutUsed} spare={spare} ground={ground} />),
+    (b.about || list(b.highlights).length > 0) && ((ground) => <AboutBlock key="about" b={b} spare={spare} ground={ground} />),
     (list(b.reviews).length > 0 || ratingLine(b)) && ((ground) => <Reviews key="reviews" b={b} ground={ground} />),
     list(b.faqs).length > 0 && ((ground) => <Faqs key="faqs" b={b} ground={ground} />),
     (ground) => <Estimate key="estimate" b={b} groups={groups} ground={ground} />,
