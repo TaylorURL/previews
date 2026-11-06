@@ -42,6 +42,15 @@ python3 -m scripts.autobuild.gate check <slug>
 
 That checks the facts' shape, the pictures and logo, every server-rendered page, and the home page at desktop and phone size, and exits 1 on any problem. `gate logo <url> <slug>` cuts a logo's background away and writes `logo.webp` plus a one-color `logo-mono.webp`, or refuses a logo that can't sit cleanly. `gate photo <file>` says whether a photo can be used and in which slot. `gate facts <slug> <site.json>` lists what the business's own website tells a customer that the brand file doesn't. It needs Python with `numpy` and `Pillow`.
 
+## Better than what they have
+
+A preview that passes the review is then set beside the business's own website: `scripts/autobuild/versus.py` photographs both home pages the same way (the top on a desktop and a phone, which is all the letter shows, and the whole desktop page) and asks one model which is better for the business, without saying which is the preview. Each site gets a score out of 10, and only a preview that scores at least 6, leads by 1.5 and is called clearly better gets its letter. One that isn't is parked with why ("not clearly better than their current site: ..."), and each run's report carries every site's scores and its three lowest. To compare one by hand:
+
+```bash
+npm run build
+python3 -m scripts.autobuild.versus <slug> <their-website> [trade]
+```
+
 ## Businesses the script can't finish
 
 When the script parks a business, it keeps what it made so far (the brand file as far as it got, the logo and photos) as a draft outside the checkout. The weekday morning run, `python3 -m scripts.autobuild.parked`, picks those up. It restores each draft, saves a copy of the business's website next to it, and starts one short Claude turn per business to fix the reason it was parked and write its letter. The script then does the rest the same way it does for its own builds: the checks, the review, landing, waiting for the deploy, registering and sending.

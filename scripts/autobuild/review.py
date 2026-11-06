@@ -1,9 +1,11 @@
 """The review every preview gets before its letter can go, and the fixes it sends for.
 
-    python3 -m scripts.autobuild.review [--no-fix] <slug>...
+    python3 -m scripts.autobuild.review [--no-fix] [--site <their-website>] <slug>...
 
 Run from the previews repository after `npm run build`. Exits 1 when any site
-still has a fault once the fixes are in.
+still has a fault once the fixes are in, or is not clearly better than the
+business's own website. Each business's website is looked up by its slug or
+name when SUPABASE_SERVICE_ROLE_KEY is set; --site gives it for a single slug.
 
 Every page of each site is photographed whole at desktop and phone size
 (shoot.mjs) and shown to a model that sees, which names what the studio would
@@ -31,8 +33,18 @@ against its brand file as it stands), and `routine.py register` refuses a site
 without a stamp that matches, so no letter can point at a preview the review
 has not passed. A site still failing is reported with what is wrong, and waits.
 
-The look and the fixes run through the `claude` command, as the vision check
-does. Without it nothing is stamped, so nothing is sent unreviewed.
+A site with nothing wrong is then set beside the business's own website
+(versus.py): one model sees both home pages, the tops the letter shows and the
+whole desktop page, without being told which is the preview, and scores each.
+Only a preview clearly better than what they have now is stamped; one that is
+not is reported with why ("not clearly better than their current site: ..."),
+so the run parks it with that reason and the morning session sees it. The
+scores go in the stamp, in .autobuild/<slug>.versus.json and in what run()
+returns, for the run's report.
+
+The look, the fixes and the comparison run through the `claude` command, as
+the vision check does. Without it nothing is stamped, so nothing is sent
+unreviewed.
 """
 
 import os
@@ -46,12 +58,14 @@ import subprocess
 import sys
 import tempfile
 import time
+import urllib.parse
+import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 
 from PIL import Image
 
-from . import vision, visual
+from . import versus, vision, visual
 from .__main__ import ROOT, render
 
 SHOTS = os.path.join(ROOT, ".autobuild", "review")
@@ -473,27 +487,72 @@ def stamp_path(slug):
     return os.path.join(ROOT, ".autobuild", f"{slug}.review.json")
 
 
-def stamp(slug):
+def stamp(slug, compared):
+    """Stamps a site the review passed and the comparison found clearly better
+    than the business's own; the comparison's scores go with it."""
     os.makedirs(os.path.dirname(stamp_path(slug)), exist_ok=True)
     with open(stamp_path(slug), "w") as handle:
-        json.dump({"ok": True, "brand": brand_hash(slug), "at": datetime.now(timezone.utc).isoformat()}, handle)
+        json.dump({"ok": True, "brand": brand_hash(slug), "at": datetime.now(timezone.utc).isoformat(),
+                   "versus": {k: compared[k] for k in ("verdict", "gap", "floor", "margin", "model")}
+                   | {"ours": compared["ours"]["overall"], "theirs": compared["theirs"]["overall"]}}, handle)
 
 
 def passed(slug):
-    """Whether the review passed this site as its brand file now stands."""
+    """Whether the review passed this site as its brand file now stands. A
+    stamp from before the comparison with the business's own site was part of
+    the review does not count, so such a site is looked at again."""
     try:
         with open(stamp_path(slug)) as handle:
             mark = json.load(handle)
-        return bool(mark.get("ok")) and mark.get("brand") == brand_hash(slug)
+        return (bool(mark.get("ok")) and mark.get("brand") == brand_hash(slug)
+                and (mark.get("versus") or {}).get("verdict") == "pass")
     except (OSError, ValueError):
         return False
 
 
-def run(slugs, fix_faults=True, deadline=None):
+def businesses_for(slugs):
+    """{slug: {"name", "trade", "town", "website"}} for the sites the database
+    knows, by the preview's slug or the business's name; for the review run by
+    hand, which is given slugs alone. Empty without the service-role key."""
+    key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
+    if not key:
+        return {}
+    base = "https://gujgtjqqurildqurpffh.supabase.co/rest/v1/"
+
+    def get(path):
+        request = urllib.request.Request(base + path, headers={"apikey": key, "Authorization": f"Bearer {key}"})
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                return json.loads(response.read().decode() or "[]")
+        except (OSError, ValueError):
+            return []
+
+    out = {}
+    for slug in slugs:
+        found = get(f"preview_sites?slug=eq.{slug}&select=outreach_prospects(name,trade,town,website)")
+        row = (found[0].get("outreach_prospects") if found else None) or None
+        if not row:
+            try:
+                with open(os.path.join(ROOT, "src", "brands", f"{slug}.json")) as handle:
+                    name = json.load(handle).get("name") or ""
+            except (OSError, ValueError):
+                name = ""
+            found = get("outreach_prospects?select=name,trade,town,website&limit=1&name=eq."
+                        + urllib.parse.quote(name)) if name else []
+            row = found[0] if found else None
+        if row:
+            out[slug] = row
+    return out
+
+
+def run(slugs, fix_faults=True, deadline=None, businesses=None):
     """Looks at every page of each site, fixes what it finds where it comes
-    from, and looks once more. Returns {"problems": {slug: [sentences]},
-    "fixes": [sentences], "changed": [paths]}; a site missing from problems
-    passed and is stamped."""
+    from, and looks once more; then sets each site with nothing wrong beside
+    the business's own website, once. businesses is {slug: the prospect's row}
+    (its name, trade, town and website), looked up when not given. Returns
+    {"problems": {slug: [sentences]}, "fixes": [sentences], "changed": [paths],
+    "versus": {slug: its comparison, as the run's report carries it}}; a site
+    missing from problems passed and is stamped."""
     deadline = deadline or time.time() + 60 * 60
     for slug in slugs:
         if os.path.exists(stamp_path(slug)):
@@ -506,10 +565,11 @@ def run(slugs, fix_faults=True, deadline=None):
         if changed:
             built, why = _build()
             if not built:
-                return {"problems": {s: [f"the site no longer builds: {why}"] for s in slugs}, "fixes": [], "changed": []}
+                return {"problems": {s: [f"the site no longer builds: {why}"] for s in slugs}, "fixes": [], "changed": [],
+                        "versus": {}}
             again = [s for s in slugs if found.get(s)]
             found.update(look_all(again))
-    problems = {}
+    problems, clean = {}, []
     for slug in slugs:
         seen = found.get(slug)
         if seen is None:
@@ -517,20 +577,41 @@ def run(slugs, fix_faults=True, deadline=None):
         elif seen:
             problems[slug] = [f"the review: {f['where']}: {f['what']}" for f in seen]
         else:
-            stamp(slug)
-    return {"problems": problems, "fixes": fixes, "changed": changed}
+            clean.append(slug)
+    # Nothing is broken on these; whether each is worth sending is asked once,
+    # beside the site the business has now.
+    compared = {}
+    if clean:
+        known = dict(businesses) if businesses is not None else businesses_for(clean)
+        compared = versus.compare(clean, known)
+    for slug in clean:
+        record = compared[slug]
+        if record["verdict"] == "pass":
+            stamp(slug, record)
+        else:
+            problems[slug] = [versus.problem(record)]
+    return {"problems": problems, "fixes": fixes, "changed": changed,
+            "versus": {slug: versus.brief(record) for slug, record in compared.items()}}
 
 
 def main(argv):
     fix_faults = "--no-fix" not in argv
+    site = None
+    if "--site" in argv:
+        at = argv.index("--site")
+        site = argv[at + 1] if at + 1 < len(argv) else None
+        argv = argv[:at] + argv[at + 2:]
     slugs = [a for a in argv if not a.startswith("-")]
-    if not slugs:
+    if not slugs or (site and len(slugs) != 1):
         print(__doc__)
         return 2
     if not os.path.isdir(os.path.join(ROOT, "dist", "b")):
         print("dist/ is missing: run npm run build first")
         return 1
-    result = run(slugs, fix_faults)
+    businesses = businesses_for(slugs)
+    if site:
+        businesses[slugs[0]] = dict(businesses.get(slugs[0]) or {}, website=site)
+    result = run(slugs, fix_faults, businesses=businesses)
     for line in result["fixes"]:
         print(f"FIXED {line}")
     for path in result["changed"]:
@@ -540,6 +621,8 @@ def main(argv):
         print(("WAIT " if problems else "PASS ") + slug)
         for p in problems or []:
             print(f"     - {p}")
+        if result["versus"].get(slug):
+            print(f"     versus: {json.dumps(result['versus'][slug])}")
     return 1 if result["problems"] else 0
 
 
