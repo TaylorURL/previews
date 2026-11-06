@@ -28,7 +28,7 @@ unjudged.
 Every comparison is kept in .autobuild/<slug>.versus.json, with the pictures
 under .autobuild/versus/<slug>/, for a person to look at.
 
-    PREVIEW_VERSUS_MODEL    the model that judges (claude-fable-5-1)
+    PREVIEW_VERSUS_MODEL    the model that judges (claude-opus-5-5)
     PREVIEW_VERSUS_FLOOR    the preview's least overall score to pass (see FLOOR)
     PREVIEW_VERSUS_MARGIN   how far it must beat their site overall (see MARGIN)
     PREVIEW_VERSUS_TIMEOUT  seconds one judging call may take (480)
@@ -57,14 +57,19 @@ from . import vision
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 PICTURES = os.path.join(ROOT, ".autobuild", "versus")
-MODEL = os.environ.get("PREVIEW_VERSUS_MODEL") or "claude-fable-5-1"
+# Opus, not Fable: Fable draws on its own small share of the weekly limit, and
+# this gate runs for every preview in every review pass.
+MODEL = os.environ.get("PREVIEW_VERSUS_MODEL") or "claude-opus-5-5"
 # Calibrated on 20 previews already sent and The Salazar Law Firm's hand-built
 # one, each judged three times (the notes are in the pull request that added
 # this gate). The four clearly better than the site they replace led by 1.75
 # to 4.6 and scored 6.0 to 7.75 in every run; the other seventeen never led by
 # more than 1.25. A site's scores moved by 0.4 or less between runs, mostly.
+# Judged again with Opus on 2026-11-06: the same four led by 2.12 to 4.12 and
+# scored 6.5 to 7.5, and the other seventeen led by 1.5 at most, so the lead
+# needed is 1.75, which keeps all 21 verdicts the same as Fable's.
 FLOOR = float(os.environ.get("PREVIEW_VERSUS_FLOOR") or 6.0)
-MARGIN = float(os.environ.get("PREVIEW_VERSUS_MARGIN") or 1.5)
+MARGIN = float(os.environ.get("PREVIEW_VERSUS_MARGIN") or 1.75)
 TIMEOUT = int(os.environ.get("PREVIEW_VERSUS_TIMEOUT") or 480)
 # A batch of four (pipeline.py) is judged in one round.
 AT_ONCE = 4

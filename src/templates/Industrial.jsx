@@ -489,18 +489,25 @@ function TitleBlock({ b, groups, specs }) {
           </li>
         ))}
       </ol>
-      <dl className="grid grid-cols-2">
-        {[...specs, { label: 'Phone', value: b.phone }].slice(0, 4).map((s, i, all) => (
-          <div
-            key={s.label}
-            className={`min-w-0 border-white/10 px-5 py-4 sm:px-6 ${i % 2 ? 'border-l' : ''} ${i > 1 ? 'border-t' : ''} ${all.length % 2 && i === all.length - 1 ? 'col-span-2' : ''}`}
-          >
-            <dt className={`${mono} text-[10.5px] text-white/50`}>{s.label}</dt>
-            <dd className="m-0 mt-1 break-words font-heading text-[15px] font-bold leading-snug text-white sm:text-[16px]">{s.value}</dd>
-          </div>
-        ))}
-      </dl>
+      <Particulars b={b} specs={specs} />
     </div>
+  );
+}
+
+/** The title block's cells: the business's particulars, the phone last. */
+function Particulars({ b, specs }) {
+  return (
+    <dl className="grid grid-cols-2">
+      {[...specs, { label: 'Phone', value: b.phone }].slice(0, 4).map((s, i, all) => (
+        <div
+          key={s.label}
+          className={`min-w-0 border-white/10 px-5 py-4 sm:px-6 ${i % 2 ? 'border-l' : ''} ${i > 1 ? 'border-t' : ''} ${all.length % 2 && i === all.length - 1 ? 'col-span-2' : ''}`}
+        >
+          <dt className={`${mono} text-[10.5px] text-white/50`}>{s.label}</dt>
+          <dd className="m-0 mt-1 break-words font-heading text-[15px] font-bold leading-snug text-white sm:text-[16px]">{s.value}</dd>
+        </div>
+      ))}
+    </dl>
   );
 }
 
@@ -712,7 +719,10 @@ function Industries({ g, n, b }) {
               <li key={ind.name} className="flex min-h-[128px] min-w-0 flex-col justify-between gap-5 border-b border-r border-white/15 p-5 sm:p-6">
                 <Icon size={26} strokeWidth={1.6} className="text-[color:var(--hi)]" aria-hidden="true" />
                 <span className="min-w-0">
-                  <span className="block break-words font-heading text-[17px] font-bold leading-snug sm:text-[19px]">{ind.name}</span>
+                  {/* A name of two joined by a slash ("manufacturers/packers") breaks after the slash before it breaks a word. */}
+                  <span className="block break-words font-heading text-[17px] font-bold leading-snug sm:text-[19px]">
+                    {ind.name.split('/').flatMap((p, i) => (i ? ['/', <wbr key={i} />, p] : [p]))}
+                  </span>
                   {ind.detail && <span className="mt-1.5 block text-[14px] leading-[1.5] text-white/60">{ind.detail}</span>}
                 </span>
               </li>
@@ -1510,7 +1520,7 @@ function OtherGroups({ groups, current, dark = false }) {
   );
 }
 
-function GroupPage({ b, g, groups, group, tel }) {
+function GroupPage({ b, g, groups, group, tel, specs }) {
   const index = groups.findIndex((gr) => gr.slug === group.slug);
   const services = list(group.services).filter((s) => s?.title);
   const anchor = b.preview ? 'scroll-mt-[150px]' : 'scroll-mt-[110px]';
@@ -1528,7 +1538,7 @@ function GroupPage({ b, g, groups, group, tel }) {
         image={group.image}
         imageAlt={group.imageAlt}
         aside={
-          services.length > 1 && (
+          services.length > 1 ? (
             <div className="relative hidden border border-white/20 bg-[color:var(--night)]/70 lg:block">
               <Corners />
               <p className={`${mono} border-b border-white/15 px-6 py-3.5 text-[11px] text-white/60`}>In this capability</p>
@@ -1542,6 +1552,17 @@ function GroupPage({ b, g, groups, group, tel }) {
                   </li>
                 ))}
               </ol>
+            </div>
+          ) : (
+            // With no photo and no list of its own, the drawing's title block
+            // stands beside the words, as on the home hero with no photo.
+            <div className="relative border border-white/20 bg-[color:var(--night)]/70">
+              <Corners />
+              <div className={`flex items-center justify-between gap-4 border-b border-white/15 px-5 py-3.5 ${mono} text-[11px] text-white/60 sm:px-6`}>
+                <span>{b.shortName}</span>
+                <span className="text-[color:var(--hi)]">{nn(index + 1)}</span>
+              </div>
+              <Particulars b={b} specs={specs} />
             </div>
           )
         }
@@ -1794,7 +1815,7 @@ export default function Industrial({ b, path = '' }) {
       <Header b={b} g={g} groups={groups} tel={tel} current={current} />
       <main>
         {page === 'home' && <Home b={b} g={g} groups={groups} tel={tel} specs={specs} />}
-        {page === 'group' && <GroupPage b={b} g={g} groups={groups} group={group} tel={tel} />}
+        {page === 'group' && <GroupPage b={b} g={g} groups={groups} group={group} tel={tel} specs={specs} />}
         {page === 'about' && <AboutPage b={b} g={g} groups={groups} tel={tel} />}
         {page === 'contact' && <ContactPage b={b} g={g} groups={groups} tel={tel} />}
       </main>

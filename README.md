@@ -47,7 +47,7 @@ That checks the facts' shape, the pictures and logo, every server-rendered page,
 
 ## Better than what they have
 
-A preview that passes the review is then set beside the business's own website: `scripts/autobuild/versus.py` photographs both home pages the same way (the top on a desktop and a phone, which is all the letter shows, and the whole desktop page) and asks one model which is better for the business, without saying which is the preview. Each site gets a score out of 10, and only a preview that scores at least 6, leads by 1.5 and is called clearly better gets its letter. One that isn't is parked with why ("not clearly better than their current site: ..."), and each run's report carries every site's scores and its three lowest. To compare one by hand:
+A preview that passes the review is then set beside the business's own website: `scripts/autobuild/versus.py` photographs both home pages the same way (the top on a desktop and a phone, which is all the letter shows, and the whole desktop page) and asks one model which is better for the business, without saying which is the preview. Each site gets a score out of 10, and only a preview that scores at least 6, leads by 1.75 and is called clearly better gets its letter. One that isn't is parked with why ("not clearly better than their current site: ..."), and each run's report carries every site's scores and its three lowest. To compare one by hand:
 
 ```bash
 npm run build

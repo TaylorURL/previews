@@ -58,7 +58,7 @@ def ask(prompt, schema, model=None, timeout=None):
         last_error = "writing is switched off (PREVIEW_WRITE=off) or the claude command is missing"
         return None
     command = ["claude", "-p", "--model", model or MODEL, "--tools", "", "--setting-sources", "",
-               "--no-session-persistence", "--output-format", "json", "--json-schema", json.dumps(schema)]
+               "--strict-mcp-config", "--no-session-persistence", "--output-format", "json", "--json-schema", json.dumps(schema)]
     with tempfile.TemporaryDirectory(prefix="preview-words-") as folder:
         try:
             done = subprocess.run(command, cwd=folder, input=prompt, capture_output=True, text=True,
