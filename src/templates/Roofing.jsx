@@ -1074,21 +1074,21 @@ function ProjectCard({ p, wide = false }) {
   const [view, setView] = useState('after');
   const showing = p.before && view === 'before';
   return (
-    <li className={`min-w-0 ${wide ? 'md:col-span-2 md:grid md:grid-cols-2 md:items-center md:gap-x-10' : 'flex flex-col'}`}>
+    <li className={`min-w-0 ${wide ? 'md:col-span-2 md:grid md:grid-cols-2 md:items-center md:gap-x-10 lg:col-span-3 lg:gap-x-14' : 'flex flex-col'}`}>
       <div>
         <figure className="relative m-0 overflow-hidden bg-ink">
           <Img
             className={`aspect-[4/3] w-full object-cover transition-opacity duration-300 ${showing ? 'opacity-0' : 'opacity-100'}`}
             src={p.image}
             alt={p.imageAlt}
-            sizes="(min-width: 1024px) 31vw, (min-width: 768px) 48vw, 100vw"
+            sizes={wide ? '(min-width: 768px) 48vw, 100vw' : '(min-width: 1024px) 31vw, (min-width: 768px) 48vw, 100vw'}
           />
           {p.before && (
             <Img
               className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-300 ${showing ? 'opacity-100' : 'opacity-0'}`}
               src={p.before}
               alt={p.beforeAlt || ''}
-              sizes="(min-width: 1024px) 31vw, (min-width: 768px) 48vw, 100vw"
+              sizes={wide ? '(min-width: 768px) 48vw, 100vw' : '(min-width: 1024px) 31vw, (min-width: 768px) 48vw, 100vw'}
             />
           )}
           <figcaption className="absolute left-0 top-4 bg-accent px-3 py-1.5 font-heading text-[13px] font-semibold uppercase tracking-[0.14em] text-[color:var(--on-accent)]">
@@ -1131,13 +1131,14 @@ function ProjectCard({ p, wide = false }) {
 
 /**
  * Two projects, or five, would leave the last row a column short, so the
- * heading takes the first column of the row; one project takes the two
- * columns beside the heading, its photo beside its words. The photos are
- * never drawn wider than a third of the page.
+ * heading takes the first column of the row. One project sits under the
+ * heading across the whole row, its photo beside its words, so it leaves
+ * no empty column under the heading and no small photo off to one side.
+ * Several photos are never drawn wider than a third of the page.
  */
 function Projects({ items, title = 'Recent roofs', className = '' }) {
   if (!items.length) return null;
-  const inline = items.length === 1 || items.length % 3 === 2;
+  const inline = items.length % 3 === 2;
   const heading = (
     <>
       <Eyebrow>Projects</Eyebrow>
