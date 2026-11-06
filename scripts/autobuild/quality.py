@@ -19,9 +19,19 @@ import numpy as np
 from PIL import Image
 
 # What each slot draws, as width over height, and the fewest source pixels it
-# needs across. A wide slot is the hero; a card is a service or about picture.
+# needs across. The hero draws its photo in more than one shape: beside the
+# words, in a frame near square (outdoor and industrial, every phone) or in
+# the photo's own proportions up to a height (hvac, roofing, professional,
+# health), and across the whole band at 16:9 ("photo" style, which build.py
+# gives only a photo 1800 wide). So it takes any shape between those, and a
+# portrait no taller than 3:4, at the size the split frames draw it: up to
+# about 600 high on a desktop and a phone's width at twice its density. A
+# band is the hero as it was before it had a split style: 16:9 across the
+# page, which build.py still prefers when a photo fits it. A wide slot is a
+# group page's picture; a card is a service or about picture.
 SLOTS = {
-    "hero": {"ratio": 16 / 9, "width": 1400, "height": 700},
+    "hero": {"ratio": 16 / 9, "ratios": (1.0, 16 / 9), "tallest": 0.75, "width": 1000, "height": 600},
+    "band": {"ratio": 16 / 9, "width": 1400, "height": 700},
     "wide": {"ratio": 3 / 2, "width": 1000, "height": 600},
     "card": {"ratio": 4 / 3, "width": 800, "height": 520},
 }
@@ -29,10 +39,21 @@ SLOTS = {
 # The cut-offs, set against the photos already on previews and against the
 # same photos blurred, enlarged and recompressed (see quality_selftest.py).
 SHARP_MIN = 0.016     # finest-detail share; a photo blurred by 1px or enlarged 3x sits under it
-DETAIL_MIN = 7.0      # Laplacian spread at 1024px; only a plainly blurred picture sits under it
-BLOCKY_MAX = 1.42     # 8px JPEG grid against everywhere else; quality 25 sits over it
+DETAIL_MIN = 7.0      # Laplacian spread at 1024px; only a plainly blurred picture sits under it...
+FOCUS_MIN = 12.0      # ...and has no part this sharp: a portrait or a close-up on a soft, out-of-focus
+                      # ground (a dentist before a blurred garden) is spread low but sharp where it matters.
+                      # A photo blurred by 1.5px sits at 11, by 2px at 7.
+BLOCKY_MAX = 1.42     # 8px JPEG grid against everywhere else; quality 25 sits over it...
+BLOCK_STEP_MIN = 1.2  # ...and the grid's step is this many gray levels or more. A soft photo has
+                      # so little detail between the grid lines that a step no eye sees there
+                      # (0.4 to 1.0, a frame from their video) reads as heavy blocks by the ratio
+                      # alone; a sharp photo saved at quality 30 steps 3.5, a soft one at 60 steps 1.3.
 JPEG_QUALITY_MIN = 45
-FLAT_MAX = 0.5        # share of the picture that is one flat color: flyers, logos, cut-outs
+FLAT_MAX = 0.5        # share of the picture that is one flat color: flyers, logos, cut-outs...
+DEAD_MIN = 0.25       # ...when this much of it is filled dead flat, as a graphic is; a plain wall or
+                      # backdrop behind a person in a photograph is smooth but never dead (under 0.11
+                      # for a practice's own portraits), and the look judges those
+FLAT_ANYWAY = 0.8     # flatter than this and it is a panel of color whatever its grain
 GRAPHIC_COLORS = 160  # a picture this short of colors with any flat ground is a graphic
 CROP_KEEP_MIN = 0.58  # share of the picture a slot may keep after cropping
 
@@ -84,6 +105,10 @@ def metrics(image):
     g = _gray(work)
     lap = _laplacian(g)
     m["detail"] = float(lap.std())
+    # The sharpest part of it: the spread in the sharpest of a 6 by 6 grid of tiles.
+    h, w = lap.shape
+    m["focus"] = max((float(lap[i * h // 6:(i + 1) * h // 6, j * w // 6:(j + 1) * w // 6].std())
+                      for i in range(6) for j in range(6) if h >= 12 and w >= 12), default=m["detail"])
     # The share of the picture's energy in its finest detail. A photo enlarged
     # from a smaller one, or out of focus, has almost none there.
     half = _gray(work.resize((max(1, work.width // 2), max(1, work.height // 2)), Image.LANCZOS))
@@ -100,8 +125,13 @@ def metrics(image):
         edge_x = dx[7::8].mean() / (np.delete(dx, np.s_[7::8]).mean() + 1e-6)
         edge_y = dy[7::8].mean() / (np.delete(dy, np.s_[7::8]).mean() + 1e-6)
         m["blocky"] = float((edge_x + edge_y) / 2)
+        # The same jump in gray levels: how plainly the grid shows.
+        step_x = dx[7::8].mean() - np.delete(dx, np.s_[7::8]).mean()
+        step_y = dy[7::8].mean() - np.delete(dy, np.s_[7::8]).mean()
+        m["block_step"] = float((step_x + step_y) / 2)
     else:
         m["blocky"] = 1.0
+        m["block_step"] = 0.0
 
     # A graphic, a flyer or a cut-out is mostly flat color and few colors.
     small = np.asarray(_fit(rgb, 256), dtype=np.int16)
@@ -109,6 +139,8 @@ def metrics(image):
     if h and w:
         blocks = small[:h, :w].reshape(h // 8, 8, w // 8, 8, 3).std(axis=(1, 3)).max(axis=-1)
         m["flat"] = float((blocks < 2.5).mean())
+        # Dead flat: one exact color across the block, as a fill is drawn.
+        m["dead"] = float((blocks < 0.8).mean())
         # A cut-out saved without its transparency keeps the ground it hid,
         # flat pure black or white, round the subject and out to every corner.
         means = small[:h, :w].reshape(h // 8, 8, w // 8, 8, 3).mean(axis=(1, 3))
@@ -117,6 +149,7 @@ def metrics(image):
         m["bare"] = float(bare.mean()) if corners else 0.0
     else:
         m["flat"] = 1.0
+        m["dead"] = 1.0
         m["bare"] = 0.0
     packed = (small[..., 0] >> 3) * 1024 + (small[..., 1] >> 3) * 32 + (small[..., 2] >> 3)
     m["colors"] = int(len(np.unique(packed)))
@@ -126,7 +159,14 @@ def metrics(image):
 
 
 def crop_keep(ratio, slot_ratio):
-    """The share of a picture a slot of slot_ratio keeps when it fills by cropping."""
+    """The share of a picture a slot of slot_ratio keeps when it fills by
+    cropping; slot_ratio may be a (narrowest, widest) range of shapes, and a
+    picture whose shape is in it keeps all of itself."""
+    if isinstance(slot_ratio, tuple):
+        low, high = slot_ratio
+        if low <= ratio <= high:
+            return 1.0
+        slot_ratio = low if ratio < low else high
     return min(ratio / slot_ratio, slot_ratio / ratio)
 
 
@@ -137,15 +177,15 @@ def problems(m, slot=None):
         out.append("a cut-out on a transparent ground, not a photograph")
     if m["bare"] > 0.1:
         out.append("a cut-out whose transparent ground was saved as black and white, not a photograph")
-    if m["flat"] > FLAT_MAX:
+    if m["flat"] > FLAT_MAX and (m.get("dead", 1.0) >= DEAD_MIN or m["flat"] > FLAT_ANYWAY):
         out.append(f"mostly flat color ({m['flat']:.0%}), a graphic or a plain-ground cut-out")
     if m["colors"] < GRAPHIC_COLORS and m["flat"] > 0.25:
         out.append(f"only {m['colors']} colors on a flat ground, a graphic rather than a photograph")
     if m["sharp"] < SHARP_MIN:
         out.append(f"soft or enlarged (fine detail {m['sharp']:.3f})")
-    if m["detail"] < DETAIL_MIN:
+    if m["detail"] < DETAIL_MIN and m.get("focus", 0) < FOCUS_MIN:
         out.append(f"blurry or hazy (detail {m['detail']:.0f})")
-    if m["blocky"] > BLOCKY_MAX:
+    if m["blocky"] > BLOCKY_MAX and m.get("block_step", BLOCK_STEP_MIN) >= BLOCK_STEP_MIN:
         out.append(f"heavy compression blocks ({m['blocky']:.2f})")
     if m["jpeg_quality"] is not None and m["jpeg_quality"] < JPEG_QUALITY_MIN:
         out.append(f"saved at JPEG quality {m['jpeg_quality']}")
@@ -155,9 +195,11 @@ def problems(m, slot=None):
         need = SLOTS[slot]
         if m["width"] < need["width"] or m["height"] < need["height"]:
             out.append(f"{m['width']}x{m['height']} is too small for the {slot} (needs {need['width']}x{need['height']})")
-        keep = crop_keep(m["ratio"], need["ratio"])
+        keep = crop_keep(m["ratio"], need.get("ratios") or need["ratio"])
         if keep < CROP_KEEP_MIN:
             out.append(f"its shape would lose {1 - keep:.0%} of it to fill the {slot}")
+        elif m["ratio"] < need.get("tallest", 0):
+            out.append(f"too tall for the {slot} ({m['width']}x{m['height']})")
     return out
 
 

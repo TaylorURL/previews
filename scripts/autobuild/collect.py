@@ -11,6 +11,7 @@ import os
 os.environ.setdefault("no_proxy", "*")
 
 import html
+import http.cookiejar
 import json
 import re
 import subprocess
@@ -46,14 +47,100 @@ EXTRA_PAGES = 3
 SKIP_LINK = re.compile(r"(blog|news|privacy|terms|login|cart|careers|jobs|wp-admin|feed|\.pdf$|\.jpg$|\.png$|mailto:|tel:)", re.I)
 
 
-def fetch(url, timeout=20, binary=False):
-    request = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "en-US,en"})
-    with urllib.request.urlopen(request, timeout=timeout) as response:
-        data = response.read(PAGE_LIMIT)
+# A picture can be far bigger than a page: a photo straight off a phone
+# (fetch(url, binary=True, limit=IMAGE_LIMIT)).
+IMAGE_LIMIT = 16_000_000
+# The most redirects one address may take before it counts as not loading.
+REDIRECTS = 10
+
+
+HEADERS = {"User-Agent": UA, "Accept-Language": "en-US,en"}
+
+
+class Redirects(urllib.request.HTTPRedirectHandler):
+    """Every redirect a browser follows, 307 and 308 included, each hop
+    carrying the cookies the hops before it set. A host that answers with a
+    307 back to the same address until a cookie is set (a bot check) would
+    otherwise look like a loop."""
+
+    max_redirections = REDIRECTS
+    # The same address may come round again once its cookie is set.
+    max_repeats = 4
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        if code in (307, 308) and req.get_method() in ("GET", "HEAD"):
+            # Older Pythons refuse to follow these for any method; a GET is safe to repeat.
+            newurl = newurl.replace(" ", "%20")
+            return urllib.request.Request(newurl, headers={k: v for k, v in req.headers.items()
+                                                           if k.lower() not in ("content-length", "content-type")},
+                                          origin_req_host=req.origin_req_host, unverifiable=True)
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+    http_error_307 = urllib.request.HTTPRedirectHandler.http_error_302
+    http_error_308 = urllib.request.HTTPRedirectHandler.http_error_302
+
+
+def _opener():
+    return urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()), Redirects())
+
+
+def fetch(url, timeout=20, binary=False, limit=PAGE_LIMIT):
+    try:
+        response = _opener().open(urllib.request.Request(url, headers=HEADERS), timeout=timeout)
+    except urllib.error.HTTPError as error:
+        if error.code not in (301, 302, 303, 307, 308):
+            raise
+        # A redirect the handler gave up on (a loop it could not break with
+        # cookies) is tried once more from where it pointed, afresh. One that
+        # points nowhere is a page that moves on by script (a host's bot check
+        # answering plain http with a 307 and no Location); the same address
+        # over https is what it moves on to.
+        target = error.headers.get("Location") if error.headers else None
+        if target:
+            target = urllib.parse.urljoin(url, target)
+        elif url.startswith("http://"):
+            target = "https://" + url[len("http://"):]
+        else:
+            raise
+        response = _opener().open(urllib.request.Request(target, headers=HEADERS), timeout=timeout)
+    with response:
+        data = response.read(limit)
         if binary:
             return response.geturl(), data, response.headers.get("Content-Type", "")
         charset = response.headers.get_content_charset() or "utf-8"
         return response.geturl(), data.decode(charset, errors="replace")
+
+
+# Image services that resize a picture to the size the address asks for,
+# and how to ask each for a large one: GoDaddy's builder (img1.wsimg.com,
+# "/:/rs=w:365,h:365,cg:true" after the file), Wix ("/v1/fill/w_365,h_365,.../"),
+# Squarespace ("?format=500w"), Duda ("-640w.jpg"), and WordPress's own
+# smaller copies ("photo-768x512.jpg" beside "photo.jpg").
+LARGE = 2000
+
+
+def bigger(url):
+    """The addresses of the same picture at a large size, the largest first,
+    the address itself last; just the address for any other host."""
+    out = []
+    parts = urllib.parse.urlsplit(url)
+    host, path = parts.netloc.lower(), parts.path
+    if host.endswith("wsimg.com") and "/:/" in path:
+        # The crop is the page's frame for it (a square tile); the photo is the whole picture.
+        out.append(urllib.parse.urlunsplit(parts._replace(path=path.split("/:/")[0] + f"/:/rs=w:{LARGE},m", query="")))
+    elif host.endswith("wixstatic.com") and "/v1/" in path:
+        base, _, rest = path.partition("/v1/")
+        name = rest.rsplit("/", 1)[-1]
+        out.append(urllib.parse.urlunsplit(parts._replace(path=f"{base}/v1/fit/w_{LARGE},h_{LARGE},q_90/{name}", query="")))
+    elif "squarespace-cdn.com" in host or "sqspcdn.com" in host:
+        query = [(k, v) for k, v in urllib.parse.parse_qsl(parts.query) if k != "format"]
+        out.append(urllib.parse.urlunsplit(parts._replace(query=urllib.parse.urlencode(query + [("format", "2500w")]))))
+    elif "cdn-website.com" in host and re.search(r"-\d{2,4}w(\.\w+)$", path):
+        out.append(urllib.parse.urlunsplit(parts._replace(path=re.sub(r"-\d{2,4}w(\.\w+)$", r"-1920w\1", path).replace("/opt/", "/"))))
+    elif re.search(r"-\d{2,4}x\d{2,4}(\.(?:jpe?g|png|webp))$", path, re.I) and "/wp-content/" in path:
+        out.append(urllib.parse.urlunsplit(parts._replace(path=re.sub(r"-\d{2,4}x\d{2,4}(\.\w+)$", r"\1", path))))
+    out.append(url)
+    return list(dict.fromkeys(out))
 
 
 
@@ -77,6 +164,13 @@ def parse_srcset(value):
         if url:
             out.append((url, descriptor))
     return out
+
+LAZY_SRC = ("data-src", "data-lazy-src", "data-srclazy", "data-original", "data-orig-src", "data-lazy")
+LAZY_SET = ("data-srcset", "data-lazy-srcset", "data-srcsetlazy")
+# What a lazy loader's attribute holds when it holds a picture's address,
+# not a flag ("true") or a setting.
+PICTURE_ADDRESS = re.compile(r"^(?:https?:)?/?/?[^\s\"'<>]*[/.][^\s\"'<>]*$", re.I)
+
 
 class Page(HTMLParser):
     """The parts of one page a brand is made from."""
@@ -131,8 +225,12 @@ class Page(HTMLParser):
             self._link = [a.get("href", ""), []]
             self._edge = True
         elif tag == "img":
-            src = a.get("src") or a.get("data-src") or a.get("data-lazy-src") or ""
-            srcset = a.get("srcset") or a.get("data-srcset") or ""
+            # A lazy loader keeps the real picture in a data- attribute and a
+            # placeholder in src until the page is scrolled to it.
+            lazy = next((a[k].strip() for k in LAZY_SRC if PICTURE_ADDRESS.match(a.get(k, "").strip())
+                         and not a[k].strip().startswith("data:")), "")
+            src = lazy or a.get("src") or ""
+            srcset = a.get("srcset") or next((a[k] for k in LAZY_SET if a.get(k)), "")
             if srcset:
                 best = sorted(parse_srcset(srcset), key=lambda c: float(re.sub(r"[^\d.]", "", c[1]) or 0))
                 if best:
@@ -242,8 +340,12 @@ def inline_svgs(text):
     return out[:3]
 
 
-def read_page(url):
-    final, text = fetch(url)
+def read_page(url, text=None):
+    """One page, fetched, or from `text` already read (the home page as a
+    browser drew it)."""
+    final = url
+    if text is None:
+        final, text = fetch(url)
     page = Page(final)
     try:
         page.feed(text)
@@ -270,9 +372,23 @@ def _things(node):
                 yield from _things(node[key])
 
 
+# The title of a host's bot check rather than of their page.
+CHALLENGE = re.compile(r"just a moment|attention required|access denied|checking your browser|verify you are human|"
+                       r"you are being redirected|forbidden|not found", re.I)
+
+
 def site(website):
     """Reads the home page and the pages it links to that a brand is made from."""
-    home = read_page(website)
+    try:
+        home = read_page(website)
+    except urllib.error.HTTPError as error:
+        # A host whose bot check a plain fetch cannot pass (a script that sets
+        # a cookie and reloads) lets a browser through. A page the browser
+        # still finds the check on, or next to nothing on, did not load.
+        drawn = rendered(website) if error.code in (301, 302, 303, 307, 308, 403, 429, 503) else None
+        if not drawn or len("".join(readable(drawn).lines)) < SHELL_TEXT or CHALLENGE.search(_title(drawn)):
+            raise
+        home = read_page(website, drawn)
     host = urllib.parse.urlparse(home.url).netloc.replace("www.", "")
     pages = [home]
     seen = {home.url.rstrip("/")}
@@ -437,6 +553,51 @@ def rendered(url):
     except (OSError, subprocess.TimeoutExpired):
         return None
     return done.stdout if done.returncode == 0 and done.stdout.strip() else None
+
+
+# How long the browser may spend drawing one business's pages for their
+# photos, all its pages together; the Pi is a small machine.
+DRAW_SECONDS = int(os.environ.get("PREVIEW_DRAW_SECONDS") or 75)
+last_draw_error = None
+
+
+def drawn_images(urls, seconds=None):
+    """Every picture a browser shows on these pages of their site, the home
+    page's first and each page's largest first, in the shape Page.images
+    has, with "drawn" (its size on the page, [w, h]) and "kind" (img,
+    srcset, lazy, picture, poster or background) beside it. [] when no
+    browser could open them (why is in last_draw_error)."""
+    global last_draw_error
+    seconds = seconds or DRAW_SECONDS
+    here = os.path.dirname(os.path.abspath(__file__))
+    try:
+        done = subprocess.run(["node", os.path.join(here, "photos.mjs"), str(seconds), *urls], capture_output=True,
+                              text=True, timeout=seconds + 45, stdin=subprocess.DEVNULL)
+        pages = json.loads(done.stdout or "[]")
+    except (OSError, subprocess.TimeoutExpired, ValueError) as error:
+        last_draw_error = f"{type(error).__name__}: {str(error)[:160]}"
+        return []
+    if done.returncode != 0 and not pages:
+        last_draw_error = f"exit {done.returncode}: {done.stderr.strip()[-200:]}"
+        return []
+    last_draw_error = "; ".join(f"{p.get('url')}: {p.get('error')}" for p in pages if not p.get("ok"))[:300] or None
+    out = []
+    for page in pages:
+        for img in page.get("images") or []:
+            src = img.get("src") or ""
+            if not src.startswith("http"):
+                continue
+            out.append({
+                "src": src,
+                "alt": img.get("alt") or "",
+                "hint": " ".join([img.get("hint") or "", src.split("?")[0].rsplit("/", 1)[-1]]).lower(),
+                "header": bool(img.get("header")),
+                "width": int((img.get("natural") or [0])[0] or 0),
+                "drawn": img.get("drawn") or [0, 0],
+                "kind": img.get("kind") or "",
+                "page": page.get("final") or page.get("url"),
+            })
+    return out
 
 
 class NotAPage(Exception):

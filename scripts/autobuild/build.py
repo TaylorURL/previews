@@ -30,6 +30,8 @@ import os
 import re
 import shutil
 import tempfile
+import time
+from concurrent.futures import ThreadPoolExecutor
 
 from PIL import Image
 
@@ -208,13 +210,17 @@ def _logo(pages, business, name, scratch, notes):
     raise NoLogo("no usable logo on their website")
 
 
+def _skipped(img, logo_src):
+    text = img["hint"] + " " + img["alt"].lower() + " " + img["src"].lower()
+    return img["src"] == logo_src or bool(SKIP_PHOTO.search(text))
+
+
 def _photo_candidates(pages, logo_src):
     urls = []
     for page in pages:
         og = page.meta.get("og:image")
         for img in page.images:
-            text = img["hint"] + " " + img["alt"].lower() + " " + img["src"].lower()
-            if img["src"] == logo_src or SKIP_PHOTO.search(text):
+            if _skipped(img, logo_src):
                 continue
             urls.append(img["src"])
         if og and not SKIP_PHOTO.search(og.lower()):
@@ -222,11 +228,40 @@ def _photo_candidates(pages, logo_src):
     return list(dict.fromkeys(urls))
 
 
+# Fewer pictures than this in their pages' own markup, or none wide enough
+# for the hero, and their pages are drawn in a browser for the photos put on
+# them by script, loaded as they are scrolled to, or set as backgrounds.
+DRAW_BELOW = 4
+DRAWN_DOWNLOADS = 20
+# A picture drawn smaller than this on their page, from a file no bigger, is
+# an icon, a thumbnail or a badge rather than a photo they show.
+DRAWN_MIN = 200
+
+
+def _drawn_candidates(drawn, logo_src, tried):
+    """The pictures a browser showed on their pages that are worth trying as
+    photos, the largest drawn first, leaving out those already tried."""
+    out = []
+    for img in drawn:
+        w, h = (img.get("drawn") or [0, 0])[:2]
+        if _skipped(img, logo_src) or collect.bigger(img["src"])[0] in tried:
+            continue
+        if img["kind"] != "background" and max(w, img.get("width") or 0) < DRAWN_MIN:
+            continue
+        # A picture in the header or menu drawn narrower than half the page is
+        # the logo or a badge beside it; a background there is often the hero.
+        if img["header"] and img["kind"] != "background" and w < 500:
+            continue
+        out.append(img["src"])
+    return list(dict.fromkeys(out))
+
+
 _shown = None
 
 
-def _shown_elsewhere(root, slug):
-    """The fingerprint of every photo already on another business's preview."""
+def _shown_elsewhere(root, slug, own=()):
+    """The fingerprint of every photo already on another business's preview.
+    `own` names other slugs that are this business's own earlier preview."""
     global _shown
     if _shown is None:
         _shown = []
@@ -236,53 +271,116 @@ def _shown_elsewhere(root, slug):
                     _shown.append((path.replace(os.sep, "/"), images.ahash(image)))
             except Exception:
                 continue
-    return [h for path, h in _shown if f"/brands/{slug}/" not in path]
+    mine = [f"/brands/{s}/" for s in (slug, *own)]
+    return [h for path, h in _shown if not any(m in path for m in mine)]
 
 
-def _photos(pages, logo_src, logo_image, scratch, notes, root, slug):
+# Pictures fetched at once, and the longest side one is kept at once judged:
+# enough for the hero's widest file, and a phone's 4000px photo is not held whole.
+FETCHERS = 6
+KEEP_SIDE = 2400
+# The most photos the look is asked about, the best by their pixels first.
+PHOTO_LOOKS = 16
+# How long one business's photos may take to fetch and judge, all of them.
+PHOTO_SECONDS = int(os.environ.get("PREVIEW_PHOTO_SECONDS") or 150)
+
+
+def _download(url):
+    """The picture at the largest size its image service will give, else as
+    linked; (address, image) or None."""
+    for address in collect.bigger(url):
+        try:
+            return address, images.trimmed(images.open_image(collect.fetch(address, binary=True, limit=collect.IMAGE_LIMIT)[1]))
+        except Exception:
+            continue
+    return None
+
+
+def _downloads(urls, until):
+    """(url, (address, image) or None) for each url in order, fetched a few at
+    a time; those not started by `until` (a time.time()) are left out."""
+    with ThreadPoolExecutor(FETCHERS) as pool:
+        for at in range(0, len(urls), FETCHERS):
+            if time.time() > until:
+                return
+            batch = urls[at:at + FETCHERS]
+            yield from zip(batch, pool.map(_download, batch))
+
+
+def _photos(pages, logo_src, logo_image, scratch, notes, root, slug, earlier=None):
     """Their own photos, each judged by its pixels and then by the look, best first.
 
     Returns [{"image", "source", "metrics", "score", "look"}] of the photos
     worth showing, the strongest first. Anything blurry, enlarged, crushed by
     compression, flat like a graphic, a cut-out, a duplicate or the logo again
     is left out, as is anything the vision check refuses.
+
+    The pictures in their pages' markup are tried first. Where those are
+    few, or none is wide and sharp enough for the hero, the pages are drawn in
+    a browser (photos.mjs) and every picture it shows is tried too. Where
+    still none fits the hero, `earlier` (the photos of this business's own
+    earlier preview, which came from their site) is tried last.
     """
     logo_prints = quality.fingerprints(logo_image.convert("RGB")) if logo_image is not None else None
-    shown = _shown_elsewhere(root, slug)
-    kept, refused = [], []
-    for url in _photo_candidates(pages, logo_src)[:PHOTO_DOWNLOADS]:
-        try:
-            image = images.trimmed(images.open_image(collect.fetch(url, binary=True)[1]))
-        except Exception:
-            continue
+    shown = _shown_elsewhere(root, slug, (earlier or {}).get("slugs") or ())
+    kept, refused, tried = [], [], set()
+
+    until = time.time() + PHOTO_SECONDS
+
+    def consider(url, image):
         if image.width < 700 or image.height < 400:
-            continue
+            return
         m = quality.metrics(image)
         why = quality.problems(m)
+        if max(image.size) > KEEP_SIDE:
+            # Judged at full size; kept at a size that still fills every slot.
+            image = image.copy()
+            image.thumbnail((KEEP_SIDE, KEEP_SIDE), Image.LANCZOS)
         if why:
             refused.append(f"{url.rsplit('/', 1)[-1][:40]}: {why[0]}")
-            continue
+            return
         stamp = images.ahash(image)
         # A stock photo another preview already shows. The check allows two
         # bits between the saved files; the source before saving drifts a
         # little further, so this is looser to stay ahead of it.
         if any(images.distance(stamp, h) <= 4 for h in shown):
             refused.append(f"{url.rsplit('/', 1)[-1][:40]}: already on another preview")
-            continue
+            return
         prints = quality.fingerprints(image.convert("RGB"))
         if logo_prints and quality.same_picture(prints, logo_prints, limit=8):
-            continue
+            return
         twin = next((k for k in kept if quality.same_picture(prints, k["prints"])), None)
         item = {"image": image, "source": url, "metrics": m, "score": quality.score(m), "prints": prints, "look": None}
         if twin:
-            if item["score"] > twin["score"]:
+            # The sharper copy of one picture is kept, unless the look already passed the other.
+            if item["score"] > twin["score"] and not twin.get("looked"):
                 kept[kept.index(twin)] = item
-            continue
+            return
         kept.append(item)
-    if kept and vision.available():
+
+    def fetch_all(urls):
+        for url, got in _downloads(urls, until):
+            tried.add(collect.bigger(url)[0])
+            if got:
+                consider(*got)
+
+    def look():
+        """The look at every kept photo, the best PHOTO_LOOKS of them by
+        their pixels; those it refuses are dropped."""
+        fresh = [k for k in kept if not k.get("looked")]
+        if len(fresh) > PHOTO_LOOKS:
+            # The best by their pixels, those wide enough for the hero first.
+            fresh.sort(key=lambda k: (_fits(k, "hero"), k["score"]), reverse=True)
+            for item in fresh[PHOTO_LOOKS:]:
+                kept.remove(item)
+            fresh = fresh[:PHOTO_LOOKS]
+        for item in fresh:
+            item["looked"] = True
+        if not fresh or not vision.available():
+            return
         paths = []
-        for i, item in enumerate(kept):
-            path = os.path.join(scratch, f"candidate-{i:02d}.png")
+        for item in fresh:
+            path = os.path.join(scratch, f"candidate-{len(refused):02d}-{len(paths):02d}.png")
             copy = item["image"].convert("RGB")
             copy.thumbnail((1400, 1400))
             copy.save(path)
@@ -290,15 +388,70 @@ def _photos(pages, logo_src, logo_image, scratch, notes, root, slug):
         looks = vision.screen_photos(paths)
         if looks is None:
             notes.append(f"the photos were not looked at: {vision.last_error}")
-        else:
-            for item, path in zip(list(kept), paths):
-                item["look"] = looks.get(path)
-                if not item["look"] or not item["look"]["ok"]:
-                    refused.append(f"{item['source'].rsplit('/', 1)[-1][:40]}: {(item['look'] or {}).get('why', 'no verdict')}")
-                    kept.remove(item)
+            return
+        for item, path in zip(fresh, paths):
+            item["look"] = looks.get(path)
+            if not item["look"] or not item["look"]["ok"]:
+                refused.append(f"{item['source'].rsplit('/', 1)[-1][:40]}: {(item['look'] or {}).get('why', 'no verdict')}")
+                kept.remove(item)
+
+    hero_ready = lambda: any(_fits(k, "hero") for k in kept)
+    static = _photo_candidates(pages, logo_src)
+    fetch_all(static[:PHOTO_DOWNLOADS])
+    if os.environ.get("PREVIEW_DRAW", "on") != "off" and (len(static) < DRAW_BELOW or not hero_ready()):
+        drawn = collect.drawn_images([page.url for page in pages])
+        more = _drawn_candidates(drawn, logo_src, tried)
+        before = len(kept)
+        fetch_all(more[:DRAWN_DOWNLOADS])
+        notes.append(f"their pages drawn in a browser showed {len(more)} more pictures; {len(kept) - before} of them "
+                     "passed their pixels" + (f" ({collect.last_draw_error})" if collect.last_draw_error else ""))
+    # One look at them all, as before there was a browser's read.
+    look()
+    if earlier and earlier.get("photos") and not hero_ready():
+        # Their earlier preview's photos were looked at when it was built,
+        # and its review passed them; they are not asked about again.
+        before = len(kept)
+        for path, image in earlier["photos"]:
+            consider(path, image)
+        for item in kept:
+            item["looked"] = True
+        if len(kept) > before:
+            notes.append(f"no photo on their site now fits the hero, so {len(kept) - before} of the photos of their earlier "
+                         f"preview (from their site) were kept")
     # The look's score leads; the pixels break ties.
     kept.sort(key=lambda k: ((k["look"] or {}).get("score", 3), k["score"]), reverse=True)
     return kept, refused
+
+
+def _earlier(root, slug, name):
+    """The photos this business's own preview already shows, when there is
+    one: the brand file at this slug, or at the slug its name alone gives,
+    that carries its name. Those came from its own site when that preview was
+    built. {"slugs": [...], "photos": [(path, image)]}, the hero's first, or None."""
+    from .slug import slug_for
+    for other in dict.fromkeys([slug, slug_for(name, None, root)]):
+        path = os.path.join(root, "src", "brands", f"{other}.json")
+        try:
+            with open(path) as handle:
+                brand = json.load(handle)
+        except (OSError, ValueError):
+            continue
+        if compose.plain(brand.get("name")) != name:
+            continue
+        refs = [(brand.get("hero") or {}).get("image"), (brand.get("about") or {}).get("image")]
+        refs += [item.get("image") for item in (brand.get("groups") or []) + (brand.get("services") or [])
+                 + (brand.get("projects") or [])]
+        photos = []
+        for ref in dict.fromkeys(r for r in refs if isinstance(r, str) and r.startswith(f"/brands/{other}/")):
+            file = os.path.join(root, "public") + f"{ref}-1600.webp"
+            try:
+                with Image.open(file) as image:
+                    image.load()
+                    photos.append((ref, image.copy()))
+            except Exception:
+                continue
+        return {"slugs": [other], "photos": photos}
+    return None
 
 
 def _fits(item, slot):
@@ -393,7 +546,7 @@ def _build(prospect, root, slug, known):
         if not colors:
             raise Parked("no brand color in the logo or the site's stylesheet")
         known["brand"]["brand"].update(colors)
-        photos, refused = _photos(pages, logo_src, logo_raw, scratch, notes, root, slug)
+        photos, refused = _photos(pages, logo_src, logo_raw, scratch, notes, root, slug, earlier=_earlier(root, slug, name))
         known["photos_refused"] = refused
     finally:
         shutil.rmtree(scratch, ignore_errors=True)
@@ -401,15 +554,38 @@ def _build(prospect, root, slug, known):
     # The hero takes the strongest photo wide and sharp enough for it; the
     # rest go where a card-sized picture is drawn. Too few good ones and the
     # page is drawn without them rather than with weak ones.
-    hero_pick = next((p for p in photos if _fits(p, "hero")), None)
-    cards = [p for p in photos if p is not hero_pick and _fits(p, "card")][:5]
-    names = []
-    for i, item in enumerate(([hero_pick] if hero_pick else []) + cards, 1):
-        images.save_photo(item["image"], folder, f"photo{i}")
-        names.append((f"/brands/{slug}/photo{i}", item))
+    # A photo that fills the hero as a 16:9 band is taken first, as before the
+    # hero had a split style; else the best one its split frame takes.
+    # Each is measured again as saved, as the check before landing measures
+    # it: a photo just over the line can fall under it once recompressed, and
+    # then the next one is taken instead.
+    names, failed = [], []
+
+    def place(item, slot):
+        if any(item is f for f in failed):
+            return False
+        name = f"photo{len(names) + 1}"
+        images.save_photo(item["image"], folder, name)
+        with Image.open(os.path.join(folder, f"{name}-1600.webp")) as saved:
+            why = quality.problems(quality.metrics(saved), slot)
+        if why:
+            for width in (800, 1600):
+                os.remove(os.path.join(folder, f"{name}-{width}.webp"))
+            refused.append(f"{item['source'].rsplit('/', 1)[-1][:40]}: once saved, {why[0]}")
+            failed.append(item)
+            return False
+        names.append((f"/brands/{slug}/{name}", item))
         if _shown is not None:
             # Taken now, so the next business in the same run cannot take it too.
-            _shown.append((os.path.join(folder, f"photo{i}-800.webp").replace(os.sep, "/"), images.ahash(item["image"])))
+            _shown.append((os.path.join(folder, f"{name}-800.webp").replace(os.sep, "/"), images.ahash(item["image"])))
+        return True
+
+    heroes = [p for p in photos if _fits(p, "band")] + [p for p in photos if _fits(p, "hero") and not _fits(p, "band")]
+    hero_pick = next((p for p in heroes if place(p, "hero")), None)
+    for item in [p for p in photos if p is not hero_pick and _fits(p, "card")]:
+        if len(names) - bool(hero_pick) >= 5:
+            break
+        place(item, "card")
     hero_image = names[0][0] if hero_pick else None
     spare = [n for n, _ in (names[1:] if hero_pick else names)]
     known["photos"] = [{"path": n, "source": item["source"], "slot": "hero" if n == hero_image else "card",
@@ -677,6 +853,9 @@ def _build(prospect, root, slug, known):
         "logo_source": logo_src,
         "notes": notes,
     }
+    # An optional fact their site does not bear out word for word (an industry
+    # it words otherwise) is left out rather than parking the business.
+    facts.drop_unproved(brand, evidence, notes)
     with open(os.path.join(root, "src", "brands", f"{slug}.json"), "w") as handle:
         json.dump(brand, handle, indent=2, ensure_ascii=False)
         handle.write("\n")
