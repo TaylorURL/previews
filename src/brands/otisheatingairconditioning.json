@@ -1,0 +1,182 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Otis Heating & Air Conditioning",
+  "shortName": "Otis Heating & Air Conditioning",
+  "phone": "(281) 328-3255",
+  "email": null,
+  "address": "15115 Lindstrom Rd",
+  "town": "Crosby",
+  "state": "TX",
+  "zip": "77532",
+  "rating": 4.8,
+  "reviewCount": 159,
+  "since": 1986,
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ]
+  ],
+  "brand": {
+    "primary": "#0b7891",
+    "primaryDeep": "#085465",
+    "accent": "#f1503a",
+    "ink": "#152229",
+    "surface": "#f1fafc",
+    "muted": "#5b6470",
+    "line": "#dee0e1",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Barlow', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Barlow:wght@400;600;700&display=swap",
+    "logo": "/brands/otisheatingairconditioning/logo.webp",
+    "logoMono": "/brands/otisheatingairconditioning/logo-mono.webp",
+    "logoWidth": 174,
+    "logoHeight": 58,
+    "logoRatio": 3.0,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.204,
+      0.249,
+      0.288,
+      0.325,
+      0.363,
+      0.417,
+      0.522,
+      0.638,
+      0.76,
+      0.884,
+      1.0
+    ]
+  },
+  "heroStyle": "split",
+  "tone": "classic",
+  "hero": {
+    "eyebrow": "Otis Heating & Air Conditioning · Crosby",
+    "title": "Paul Otis started this company in 1986.",
+    "lead": "Otis Heating & Air Conditioning repairs and installs heating and cooling for homes and businesses in Crosby, Texas, and the towns around it.",
+    "image": "/brands/otisheatingairconditioning/photo1",
+    "imageAlt": "A photo of Otis Heating & Air Conditioning",
+    "titleAccent": "Our family still runs it."
+  },
+  "serviceArea": [
+    "Crosby",
+    "Dayton",
+    "Huffman",
+    "Baytown",
+    "Mont Belvieu",
+    "Highlands",
+    "Northshore"
+  ],
+  "highlights": [
+    {
+      "title": "Founded in 1986",
+      "text": "Paul Otis started the company, and we have served our community for over 30 years.",
+      "icon": "calendar"
+    },
+    {
+      "title": "Financing through Goodleap",
+      "text": "We have partnered with Goodleap to offer flexible financing.",
+      "icon": "dollar"
+    },
+    {
+      "title": "Family owned and operated",
+      "text": "Otis has been a family business since 1986.",
+      "icon": "family"
+    },
+    {
+      "title": "Cream of the Crop HVAC Company",
+      "text": "We have received the designation four years running.",
+      "icon": "award"
+    }
+  ],
+  "steps": [
+    {
+      "title": "We assess your property",
+      "text": "We look at the size of your space, your preferences and your budget to find the right air conditioning system for you."
+    },
+    {
+      "title": "We recommend options",
+      "text": "We walk you through each unit's energy efficiency, cooling capacity and cost."
+    },
+    {
+      "title": "We install the system",
+      "text": "Our technicians install with minimal disruption to your day and leave your space as clean as we found it."
+    },
+    {
+      "title": "We stay available afterward",
+      "text": "Our team answers your questions after installation and offers maintenance plans to keep the system running smoothly."
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Todd Hanson",
+      "text": "Really professional and dependable company. We have used a lot of contractors over 40 years in construction, but this group is outstanding. This is a real review. I only leave reviews when I mean what I say. Very honest, capable and professional.",
+      "source": "their site"
+    },
+    {
+      "author": "Andy McAvin",
+      "text": "I had several estimates before I reached out to Otis, and they both told me I needed to completely redo my ductwork (witch was going to cost a lot!). Otis, on the other hand, was able to repair the existing ducts, and they did it in short order for a fraction of the cost. They also repaired my AC fan motor for a reasonable price which is important because im a pensioner). These guys were first rate!",
+      "source": "their site"
+    }
+  ],
+  "credentials": [
+    {
+      "label": "Cream of the Crop HVAC Company",
+      "detail": "Four consecutive years"
+    }
+  ],
+  "owner": {
+    "name": "Kristin (Kris) Otis",
+    "role": "Owner and operator"
+  },
+  "summary": "We handle AC service, furnace installation and heat pump work for Crosby, Dayton, Huffman and nearby towns.",
+  "groups": [
+    {
+      "slug": "heat-pump-service",
+      "title": "Heat Pump Service",
+      "icon": "flame",
+      "summary": "Get year-round comfort with heat pumps that handle both heating and cooling efficiently.",
+      "intro": "Get year-round comfort with heat pumps that handle both heating and cooling efficiently."
+    },
+    {
+      "slug": "mini-split-service",
+      "title": "Mini-Split Service",
+      "icon": "wrench",
+      "summary": "Enjoy flexible zoning and ductless cooling and heating with mini-splits.",
+      "intro": "Enjoy flexible zoning and ductless cooling and heating with mini-splits."
+    },
+    {
+      "slug": "mini-splits-heat-pump-services",
+      "title": "Mini-Splits & Heat Pump Services",
+      "icon": "flame",
+      "summary": "We’re your experts for mini-split and heat pump installations, repairs, and maintenance.",
+      "intro": "We’re your experts for mini-split and heat pump installations, repairs, and maintenance."
+    },
+    {
+      "slug": "indoor-air-quality-done-right",
+      "title": "Indoor Air Quality Done Right",
+      "icon": "wind",
+      "summary": "With our air filtration, uv light cleaning, and humidification services we’re here to help you.",
+      "intro": "With our air filtration, uv light cleaning, and humidification services we’re here to help you."
+    },
+    {
+      "slug": "ac-service",
+      "title": "AC Service",
+      "icon": "snowflake",
+      "summary": "From refrigerant checks to coil cleaning and filter replacement, we keep your air conditioner running smoothly with affordable, reliable maintenance and repair services.",
+      "intro": "From refrigerant checks to coil cleaning and filter replacement, we keep your air conditioner running smoothly with affordable, reliable maintenance and repair services."
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "A family company since 1986",
+    "text": [
+      "Otis Heating & Air Conditioning was founded in 1986 by Paul Otis, and it is still family owned and operated.",
+      "Kris Otis is our owner and operator, and our motto is honest work for honest pay.",
+      "We work with all major brands, for homeowners, businesses, and owners of mobile and modular homes in and around Crosby."
+    ],
+    "image": "/brands/otisheatingairconditioning/photo2",
+    "imageAlt": "A photo of Otis Heating & Air Conditioning"
+  }
+}

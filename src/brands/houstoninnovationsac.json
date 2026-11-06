@@ -1,0 +1,72 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Houston Innovations A/C",
+  "shortName": "Houston Innovations A/C",
+  "phone": "(832) 766-0752",
+  "email": null,
+  "address": "8022 Sesame St",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77521",
+  "rating": 5,
+  "reviewCount": 12,
+  "brand": {
+    "primary": "#ea0d32",
+    "primaryDeep": "#a40923",
+    "accent": "#f7768c",
+    "ink": "#271921",
+    "surface": "#fef1f3",
+    "muted": "#5b6470",
+    "line": "#e1dfe0",
+    "heading": "'Inter', system-ui, sans-serif",
+    "body": "'Lato', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato:wght@400;600;700&display=swap"
+  },
+  "heroStyle": "split",
+  "tone": "bold",
+  "hero": {
+    "eyebrow": "Houston Innovations A/C · Baytown",
+    "title": "Cool comfort,",
+    "lead": "Houston Innovations A/C installs, repairs and maintains HVAC systems for homes and businesses in Baytown, Texas.",
+    "image": "/brands/houstoninnovationsac/photo1",
+    "imageAlt": "A photo of Houston Innovations A/C",
+    "titleAccent": "guaranteed."
+  },
+  "serviceArea": [
+    "Baytown"
+  ],
+  "summary": "Houston Innovations A/C handles HVAC installation, repair and maintenance, and indoor air quality work including duct cleaning, in Baytown, Texas.",
+  "groups": [
+    {
+      "slug": "installation",
+      "title": "Installation",
+      "icon": "wrench",
+      "summary": "We specialize in installing new HVAC systems, furnaces, air conditioners, and more.",
+      "intro": "We specialize in installing new HVAC systems, furnaces, air conditioners, and more."
+    },
+    {
+      "slug": "repair-and-maintenance",
+      "title": "Repair and Maintenance",
+      "icon": "wrench",
+      "summary": "Our technicians can diagnose and repair any HVAC/R problems you may encounter.",
+      "intro": "Our technicians can diagnose and repair any HVAC/R problems you may encounter."
+    },
+    {
+      "slug": "indoor-air-quality",
+      "title": "Indoor Air Quality",
+      "icon": "wind",
+      "summary": "We offer services to improve the quality of the air in your home including duct cleaning.",
+      "intro": "We offer services to improve the quality of the air in your home including duct cleaning."
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "We keep your home or business running smoothly.",
+    "text": [
+      "Don't let HVAC problems disrupt your life: contact us for prompt and professional service.",
+      "We install new HVAC systems, furnaces and air conditioners, and our technicians diagnose and repair any HVAC/R problem you run into.",
+      "We also work on the air inside your home, including duct cleaning, and we hold a 5-star Google rating from 12 reviews in Baytown."
+    ]
+  }
+}
