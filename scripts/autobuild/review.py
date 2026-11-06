@@ -151,7 +151,9 @@ the sites named above and Read the new screenshots. `node scripts/autobuild/layo
 gate measures (a photo drawn past its pixels or cropped to a sliver, a section left empty, a page wider than the \
 screen); a change that adds anything to it is taken back. A change to the builder in scripts/autobuild/ is proved \
 by `python3 -m scripts.autobuild.selftest_facts` and `python3 -m scripts.autobuild.selftest_photos`, which must \
-still pass. Use no git command but `git diff` and `git status`; the run \
+still pass; the run that called you runs them again and takes back a builder change they fail. Run every command \
+here exactly as written and on its own, from where you start: no `cd` before it and no pipe, redirect or `&&` after \
+it, or it is refused. Use no git command but `git diff` and `git status`; the run \
 that called you lands the work. Answer with what you fixed (one plain sentence each, in the project's own terms, \
 naming the files) and what you left and why."""
 
@@ -378,8 +380,8 @@ def dispatch(template, findings, budget):
         "--tools", "Read,Edit,Write,Glob,Grep,Bash",
         "--allowedTools", "Read", "Edit", "Write", "Glob", "Grep", "Bash(npm run build)",
         "Bash(node scripts/autobuild/shoot.mjs:*)", "Bash(node scripts/autobuild/layout.mjs:*)", "Bash(git diff:*)",
-        "Bash(git status:*)", "Bash(python3 -m scripts.autobuild.selftest_facts)",
-        "Bash(python3 -m scripts.autobuild.selftest_photos)",
+        "Bash(git status:*)", "Bash(python3 -m scripts.autobuild.selftest_facts:*)",
+        "Bash(python3 -m scripts.autobuild.selftest_photos:*)",
         "--setting-sources", "", "--no-session-persistence", "--output-format", "json",
         "--json-schema", json.dumps(FIX_SCHEMA), prompt,
     ]
@@ -410,13 +412,24 @@ def dispatch(template, findings, budget):
     return answer, (changed, before_status, before_text)
 
 
-def _build():
+SELFTESTS = ("scripts.autobuild.selftest_facts", "scripts.autobuild.selftest_photos")
+
+
+def _build(changed=()):
     """Whether the site still builds and the builder still loads: a fix in
-    compose.py or build.py that no longer imports would stop the next run."""
+    compose.py or build.py that no longer imports would stop the next run. A
+    fix that changed the builder must also pass its self-tests, which hold
+    what every business's build depends on."""
     done = subprocess.run([sys.executable, "-c", "import scripts.autobuild.pipeline, scripts.autobuild.gate, scripts.routine"],
                           cwd=ROOT, capture_output=True, text=True, stdin=subprocess.DEVNULL)
     if done.returncode != 0:
         return False, done.stderr[-400:]
+    if any(path.startswith("scripts/") and path.endswith(".py") for path in changed):
+        for test in SELFTESTS:
+            done = subprocess.run([sys.executable, "-m", test], cwd=ROOT, capture_output=True, text=True,
+                                  stdin=subprocess.DEVNULL)
+            if done.returncode != 0:
+                return False, f"{test} failed: {(done.stderr or done.stdout)[-400:]}"
     done = subprocess.run(["npm", "run", "build"], cwd=ROOT, capture_output=True, text=True, stdin=subprocess.DEVNULL)
     return done.returncode == 0, done.stderr[-400:]
 
@@ -476,7 +489,7 @@ def fix(findings, deadline):
         if not change or not change[0]:
             continue
         changed, before_status, before_text = change
-        built, why = _build()
+        built, why = _build(changed)
         after = _drawn(template) if built else {}
         broke = {s: p for s, p in after.items() if p != before.get(s)}
         if built and not broke:
