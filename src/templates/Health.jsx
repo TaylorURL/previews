@@ -117,7 +117,7 @@ import {
   X,
 } from 'lucide-react';
 import { brandVars, displayVars, mapsHref, telHref } from '../site.js';
-import { BrandLogo, EnquiryForm, Facts, Img, Stars, StudioCredit } from './shared.jsx';
+import { BrandLogo, EnquiryForm, Facts, Img, phonesOf, Stars, StudioCredit } from './shared.jsx';
 import { Backdrop, MapArt, Orbit } from './health/art.jsx';
 import { highlightIcon, kindIcon, treatmentIcon } from './health/icons.jsx';
 import { isDoctor, labelCase, list, opening, openDays, palette, paras, welcomesNew } from './health/util.js';
@@ -129,7 +129,7 @@ const KIND = {
 
 const wrap = 'mx-auto w-full max-w-page px-gutter';
 const btn =
-  'inline-flex min-h-[52px] items-center justify-center gap-2 rounded-full px-7 text-[15.5px] font-semibold no-underline transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary';
+  'inline-flex min-h-[52px] items-center justify-center gap-2 rounded-full px-7 py-2.5 text-center text-[15.5px] leading-snug font-semibold no-underline transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary';
 const solid = `${btn} bg-primary text-white shadow-[0_16px_30px_-16px_color-mix(in_srgb,var(--primary)_80%,transparent)] hover:bg-[var(--deep)]`;
 const outline = `${btn} border border-line bg-white text-ink hover:border-primary/40 hover:text-primary`;
 const onColor = `${btn} bg-white text-primary hover:bg-[var(--tint)]`;
@@ -501,7 +501,7 @@ function Header({ b, path, k, nav, tel, ctaLabel }) {
             <a href={tel} className={outline}>
               <Phone size={17} aria-hidden="true" /> {b.phone}
             </a>
-            {list(b.phones).map((p) => (
+            {phonesOf(b).filter((p) => !p.main).map((p) => (
               <a key={p.number} href={telHref(p.number)} className={outline}>
                 <Phone size={17} aria-hidden="true" /> {p.label ? `${p.label}: ` : ''}
                 {p.number}
@@ -1153,7 +1153,7 @@ function ContactLines({ b, tel, className = '' }) {
           {b.phone}
         </a>
       </li>
-      {list(b.phones).map((p) => (
+      {phonesOf(b).filter((p) => !p.main).map((p) => (
         <li key={p.number}>
           <a href={telHref(p.number)} className="flex min-h-12 items-center gap-3 font-semibold text-ink no-underline hover:text-primary">
             <span className="grid size-10 flex-none place-items-center rounded-full bg-[var(--tint)] text-primary">
@@ -1760,7 +1760,7 @@ function Footer({ b, k, nav, tel }) {
                 {b.phone}
               </a>
             </li>
-            {list(b.phones).map((p) => (
+            {phonesOf(b).filter((p) => !p.main).map((p) => (
               <li key={p.number}>
                 <a href={telHref(p.number)} className={linkCls}>
                   {p.number}
@@ -1771,7 +1771,8 @@ function Footer({ b, k, nav, tel }) {
             {b.email && (
               <li>
                 <a href={`mailto:${b.email}`} className={`${linkCls} [overflow-wrap:anywhere]`}>
-                  {b.email}
+                  {/* Breaks after the @ before it breaks a word, so a long address never leaves a letter alone. */}
+                  <span className="min-w-0">{b.email.split('@').flatMap((p, i) => (i ? ['@', <wbr key={i} />, p] : [p]))}</span>
                 </a>
               </li>
             )}

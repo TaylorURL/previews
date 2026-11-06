@@ -533,7 +533,16 @@ export default function Plumbing({ b }) {
         </div>
       </section>
 
-      <Facts b={b} />
+      {/* Headed like every other section, so the cards read as a designed block rather than loose notes. */}
+      <Facts
+        b={b}
+        title={
+          <div className="mb-10 lg:mb-12">
+            <Eyebrow>Good to know</Eyebrow>
+            <h2 className={h2}>More about {b.shortName || b.name}</h2>
+          </div>
+        }
+      />
       <footer className="bg-primary-deep pb-24 text-white/75 md:pb-0">
         <div className={`${wrap} grid gap-10 pb-12 pt-14 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:gap-12`}>
           <div className="grid content-start gap-4">

@@ -29,8 +29,9 @@ export function Backdrop({ strong = false, Mark = null }) {
           maskImage: 'radial-gradient(closest-side, #000 30%, transparent)',
         }}
       />
+      {/* Kept off a phone, where the hero's first line runs the full width and the mark would sit cut off behind it. */}
       {Mark && (
-        <div className="absolute -right-28 -top-[5.5rem] size-[19rem] opacity-80 sm:-right-16 lg:hidden">
+        <div className="absolute -right-16 -top-[5.5rem] hidden size-[19rem] opacity-80 sm:block lg:hidden">
           <div className="absolute inset-0 rounded-full border border-primary/10" />
           <div className="absolute inset-[16%] rounded-full border border-dashed border-primary/15" />
           <div className="absolute inset-[32%] grid place-items-center rounded-full bg-white/70">
