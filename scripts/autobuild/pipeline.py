@@ -336,17 +336,32 @@ def ceiling(row):
     return row["daily_cap"] if row["sending_enabled"] else 0
 
 
+# The stages the send job turns a letter away at (barred() in
+# api/outreach/previews.js), so a site whose business stands at one is not
+# offered to it again on every run.
+CLOSED = {"replied", "unsubscribed", "bounced", "undeliverable"}
+
+
 def unsent():
     """Registered, live sites whose letter or text has not gone, oldest first.
     A business the text line has refused is left out: its number cannot take
-    the text, and asking again would only be refused again."""
+    the text, and asking again would only be refused again. So is a letter's
+    business whose address bounced or was refused, or that has replied or
+    unsubscribed: the send job would turn it away again."""
     rows = routine.rest(
         "GET",
-        "preview_sites?select=slug,prospect_id,created_at,channel,outreach_prospects(preview_skipped_at)"
+        "preview_sites?select=slug,prospect_id,created_at,channel,"
+        "outreach_prospects(preview_skipped_at,stage,bounced_at,replied_at)"
         "&sent_at=is.null&prospect_id=not.is.null&order=created_at",
     ) or []
-    return [row for row in rows
-            if row["channel"] != "text" or not (row.get("outreach_prospects") or {}).get("preview_skipped_at")]
+    return [row for row in rows if not closed(row)]
+
+
+def closed(row):
+    prospect = row.get("outreach_prospects") or {}
+    if row["channel"] == "text":
+        return bool(prospect.get("preview_skipped_at"))
+    return prospect.get("stage") in CLOSED or bool(prospect.get("bounced_at") or prospect.get("replied_at"))
 
 
 def catching_up():
