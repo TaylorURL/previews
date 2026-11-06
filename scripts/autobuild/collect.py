@@ -327,19 +327,42 @@ def _title(html_text):
 HEADER = re.compile(r"<header\b[\s\S]*?</header>", re.I)
 LOGO_TAG = re.compile(r"<(?:a|div|span|figure)\b[^>]*(?:class|id)=[\"'][^\"']*logo[^\"']*[\"'][^>]*>", re.I)
 SVG = re.compile(r"<svg\b[\s\S]*?</svg>", re.I)
+# The company whose tool made the site, which leaves its own mark on the page
+# ('Edit with Lovable', 'Powered by Wix'): its logo is not the business's.
+SITE_MAKER = re.compile(r"lovable|gpteng|wix|squarespace|godaddy|weebly|webflow|framer|duda|hostinger|jimdo|"
+                        r"strikingly|site123|carrd|wordpress\.com|bolt\.new|readdy|durable", re.I)
+OPEN_LINK = re.compile(r"<a\b[^>]*>", re.I)
 
 
-def inline_svgs(text):
+def _makers(text, at, url=""):
+    """True when the SVG at `at` names the site's maker, or sits in a link
+    that does (its badge in a corner of the page). A link home to the site's
+    own address names no one, though the maker hosts it ('x.lovable.app')."""
+    start = text.rfind("<a ", 0, at)
+    if start >= 0 and text.rfind("</a>", start, at) < 0:
+        link = OPEN_LINK.match(text, start)
+        href = re.search(r"\bhref=[\"']([^\"']*)", link.group(0), re.I) if link else None
+        host = urllib.parse.urlparse(urllib.parse.urljoin(url, href.group(1)) if href else "").hostname or ""
+        own = host and host == (urllib.parse.urlparse(url).hostname or "")
+        if link and SITE_MAKER.search(link.group(0) if not own else re.sub(r"\bhref=[\"'][^\"']*", "", link.group(0))):
+            return True
+    m = SVG.match(text, at)
+    return bool(m and SITE_MAKER.search(" ".join(re.findall(r"<(?:svg|title)\b[^>]*>(?:[^<]*)", m.group(0)))))
+
+
+def inline_svgs(text, url=""):
     found = []
     for tag in LOGO_TAG.finditer(text):
         near = text.find("<svg", tag.end(), tag.end() + 400)
-        if near >= 0:
+        if near >= 0 and not SITE_MAKER.search(re.sub(r"\bhref=[\"'][^\"']*", "", tag.group(0))) \
+                and not _makers(text, near, url):
             m = SVG.match(text, near)
             if m:
                 found.append(m.group(0))
     header = HEADER.search(text)
     if header:
-        found.extend(SVG.findall(header.group(0))[:2])
+        found.extend([m.group(0) for m in SVG.finditer(text, header.start(), header.end())
+                      if not _makers(text, m.start(), url)][:2])
     # A real mark carries some drawing; an icon is a line or two.
     out = []
     for svg in found:
@@ -360,7 +383,7 @@ def read_page(url, text=None):
     except Exception:
         pass
     page.title = _title(text)
-    page.svgs = inline_svgs(text)
+    page.svgs = inline_svgs(text, final)
     # Every line a customer reads on it, footer and forms' labels included,
     # headings marked "#" and list items "-": what the fact sheet is read
     # from and proved against (facts.py).
