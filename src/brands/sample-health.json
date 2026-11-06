@@ -1,0 +1,207 @@
+{
+  "template": "health",
+  "kind": "dental",
+  "name": "Bayou Grove Family Dentistry",
+  "shortName": "Bayou Grove Dentistry",
+  "tagline": "Gentle family dentistry in Baytown",
+  "talk": "our front desk",
+  "phone": "(281) 555-0148",
+  "phones": [
+    {
+      "label": "Español",
+      "number": "(281) 555-0149"
+    }
+  ],
+  "email": "hello@bayougrove.example",
+  "address": "6210 Garth Rd, Suite 110",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77521",
+  "since": 2009,
+  "license": "Dentists licensed by the Texas State Board of Dental Examiners.",
+  "rating": 4.9,
+  "reviewCount": 312,
+  "newPatients": true,
+  "languages": ["English", "Spanish"],
+  "hours": [
+    ["Monday", "7:30 AM – 4:30 PM"],
+    ["Tuesday", "7:30 AM – 4:30 PM"],
+    ["Wednesday", "9 AM – 6 PM"],
+    ["Thursday", "7:30 AM – 4:30 PM"],
+    ["Friday", "7:30 AM – 1 PM"],
+    ["Saturday", "Closed"],
+    ["Sunday", "Closed"]
+  ],
+  "cta": {
+    "label": "Book an Appointment",
+    "text": "Call or send a request, and our front desk will find a time that works for you and check your benefits before you come in."
+  },
+  "brand": {
+    "primary": "#17708a",
+    "accent": "#c4744a",
+    "ink": "#18222d",
+    "muted": "#5a6672",
+    "surface": "#f4f8f9",
+    "cream": "#faf7f2",
+    "line": "#dfe7ea",
+    "heading": "'Manrope', system-ui, sans-serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": null
+  },
+  "hero": {
+    "eyebrow": "Family dentistry on Garth Road",
+    "title": "Unhurried dental care for the whole family.",
+    "lead": "Cleanings, fillings, crowns and implants in one calm office, with a dentist who explains every option before anything is done.",
+    "points": ["Same-day emergency visits", "Most PPO plans accepted", "Sedation for anxious patients"]
+  },
+  "highlights": [
+    {
+      "title": "Same-day emergencies",
+      "text": "Call before noon with a toothache or a broken tooth and we will see you that day.",
+      "icon": "emergency"
+    },
+    {
+      "title": "Insurance checked first",
+      "text": "We confirm your benefits and give you the cost before treatment starts.",
+      "icon": "insurance"
+    },
+    {
+      "title": "Gentle with nervous patients",
+      "text": "Nitrous oxide and oral sedation for anyone who dreads the chair.",
+      "icon": "comfort"
+    }
+  ],
+  "overview": {
+    "title": "Everything your smile needs, under one roof.",
+    "text": "Pick a treatment to see what it involves, or call and talk it through with our front desk."
+  },
+  "services": [
+    {
+      "slug": "cleanings-and-exams",
+      "title": "Cleanings & Exams",
+      "icon": "shield",
+      "summary": "Checkups every six months.",
+      "text": "A thorough cleaning, digital X-rays when they are due, and an exam that catches small problems while they are still small.",
+      "lead": "Most patients see us twice a year. Each visit is a cleaning with a hygienist and an exam with the dentist, who walks you through anything worth watching.",
+      "covers": [
+        { "title": "Cleaning", "text": "Plaque and tartar removed, teeth polished, and tips for the spots that need more attention at home." },
+        { "title": "Digital X-rays", "text": "Low-dose images, taken only when they are due, to see between teeth and below the gums." },
+        { "title": "Oral cancer screening", "text": "A quick check of the tongue, cheeks and throat at every exam." }
+      ],
+      "questions": [
+        { "q": "How often should I come in?", "a": "Twice a year suits most people. If your gums need more care, the dentist may suggest every three or four months." }
+      ]
+    },
+    {
+      "slug": "fillings-and-crowns",
+      "title": "Fillings & Crowns",
+      "icon": "smile",
+      "summary": "Tooth-colored repairs.",
+      "text": "Tooth-colored fillings for small cavities and crowns for teeth that need more strength, matched to the shade of your own.",
+      "lead": "A cavity caught early is a quick filling. A tooth that is cracked or heavily filled may need a crown to protect it for years to come."
+    },
+    {
+      "slug": "dental-implants",
+      "title": "Dental Implants",
+      "icon": "smile",
+      "summary": "A lasting replacement tooth.",
+      "text": "A single missing tooth or a full arch replaced with implants placed and restored in our office.",
+      "lead": "An implant replaces the root of a missing tooth and carries a crown that looks and bites like your own. Planning starts with a 3D scan.",
+      "covers": [
+        { "title": "Consultation and 3D scan", "text": "We check the bone, plan the position and give you the full cost up front." },
+        { "title": "Placement", "text": "The implant is placed in one visit, with sedation available." },
+        { "title": "Crown", "text": "After healing, a custom crown is attached and matched to your other teeth." }
+      ]
+    },
+    {
+      "slug": "teeth-whitening",
+      "title": "Teeth Whitening",
+      "icon": "sparkles",
+      "summary": "In office or take home.",
+      "text": "Several shades brighter in a single visit, or gradually at home with custom trays."
+    },
+    {
+      "slug": "invisalign",
+      "title": "Invisalign",
+      "icon": "smile",
+      "summary": "Clear aligners for teens and adults.",
+      "text": "Straighter teeth with clear aligners you can take out to eat, checked every few weeks in the office."
+    },
+    {
+      "slug": "emergency-dentistry",
+      "title": "Emergency Dentistry",
+      "icon": "heart",
+      "summary": "Same-day visits for pain.",
+      "text": "Toothaches, broken teeth and swelling seen the same day whenever we can, with relief as the first step."
+    }
+  ],
+  "about": {
+    "title": "A neighborhood practice that takes its time.",
+    "text": [
+      "Bayou Grove Family Dentistry has cared for Baytown families since 2009. We book longer appointments than most offices so there is time to answer questions and nobody feels rushed.",
+      "Patients range from toddlers at their first visit to grandparents with implants, and many families have been with us for more than a decade."
+    ],
+    "values": [
+      { "title": "Costs before care", "text": "You see the price and what insurance covers before any treatment begins." },
+      { "title": "Comfort first", "text": "Blankets, headphones and sedation options for anyone who is nervous." },
+      { "title": "On time", "text": "We keep to the schedule, so your hour is your hour." }
+    ]
+  },
+  "owner": {
+    "name": "Dr. Elena Marsh",
+    "role": "Dentist and owner",
+    "text": "Dr. Marsh earned her D.D.S. at the UTHealth School of Dentistry in Houston and opened Bayou Grove in 2009. She lives in Baytown with her family and spends her free time on the water at Cedar Bayou."
+  },
+  "team": [
+    { "name": "Dr. Elena Marsh", "role": "Dentist and owner", "bio": "Dr. Marsh founded the practice in 2009 and sees patients of every age." },
+    { "name": "Dr. Samuel Ortiz", "role": "Associate dentist", "bio": "Dr. Ortiz focuses on implants and restorative care, and sees patients in English and Spanish." },
+    { "name": "Rosa Delgado", "role": "Hygienist", "bio": "Rosa has cleaned Baytown smiles for fifteen years and is known for her gentle touch." }
+  ],
+  "credentials": [
+    { "label": "D.D.S., UTHealth School of Dentistry" },
+    { "label": "American Dental Association", "detail": "Member" },
+    { "label": "Texas Dental Association", "detail": "Member" }
+  ],
+  "steps": [
+    { "title": "Book your visit", "text": "Call or send a request, and we will find a time and check your benefits." },
+    { "title": "Meet the team", "text": "A short tour, a few questions about your health, and any X-rays that are due." },
+    { "title": "Your exam", "text": "The dentist looks over everything and shows you what they see on a screen." },
+    { "title": "Your plan", "text": "Clear options with costs, so you can decide what to do and when." }
+  ],
+  "affiliations": {
+    "title": "Insurance we accept",
+    "items": ["Aetna", "Cigna", "Delta Dental", "Guardian", "MetLife", "United Healthcare", "Most PPO plans"]
+  },
+  "facts": [
+    {
+      "heading": "Payment and financing",
+      "text": "We accept cash, all major credit cards, HSA and FSA cards, and CareCredit for treatment paid over time."
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Maria G.",
+      "source": "Google",
+      "rating": 5,
+      "text": "I have been nervous at the dentist my whole life, and this is the first office where I never felt rushed. They explained everything before they started."
+    },
+    {
+      "author": "James T.",
+      "source": "Google",
+      "rating": 5,
+      "text": "Broke a tooth on a Monday morning and was seen before lunch. The crown looks exactly like my other teeth."
+    },
+    {
+      "author": "Priya R.",
+      "source": "Google",
+      "rating": 5,
+      "text": "Our whole family comes here, from my four-year-old to my parents. The front desk always sorts out the insurance for us."
+    }
+  ],
+  "faqs": [
+    { "q": "Do you see children?", "a": "Yes. We see children from their first tooth, and many families come in together." },
+    { "q": "What if I do not have insurance?", "a": "We give you the cost before treatment and offer financing through CareCredit." }
+  ],
+  "serviceArea": ["Baytown", "Mont Belvieu", "Highlands", "La Porte", "Crosby"]
+}
