@@ -247,6 +247,9 @@ const ICONS = {
 };
 
 const list = (v) => (Array.isArray(v) ? v : []);
+// What a visitor can ask for: each group's services, or the group itself
+// where the site names it as one service with nothing under it.
+const askable = (groups) => [...groups.flatMap((g) => (list(g.services).length ? list(g.services).map((s) => s.title) : [g.title])), 'Something else'];
 const groupsOf = (b) => list(b.groups).filter((g) => g?.slug && g?.title);
 
 /**
@@ -561,6 +564,25 @@ function MobileMenu({ b, groups, tel, links, onClose }) {
       <ul className="border-b border-line">
         {groups.map((g) => {
           const isOpen = section === g.slug;
+          // A service with nothing under it is a link to its page, not a
+          // section that opens on one link to that same page.
+          if (!list(g.services).length) {
+            return (
+              <li key={g.slug} className="border-t border-line">
+                <a
+                  href={`/${g.slug}`}
+                  onClick={onClose}
+                  className="flex min-h-[56px] w-full items-center gap-3 font-heading text-[18px] font-bold text-ink no-underline"
+                >
+                  <span className={`${iconTile} h-9 w-9`}>
+                    <GroupIcon name={g.icon} size={18} />
+                  </span>
+                  <span className="min-w-0 flex-1">{g.title}</span>
+                  <ArrowRight size={18} className="flex-none text-[color:var(--pt)]" aria-hidden="true" />
+                </a>
+              </li>
+            );
+          }
           return (
             <li key={g.slug} className="border-t border-line">
               <button
@@ -701,7 +723,7 @@ function Header({ b, groups, tel, current }) {
 function BookingCard({ b, groups, heading = 'h2', title, service }) {
   const H = heading;
   const w = askOf(b);
-  const options = [...groups.flatMap((g) => list(g.services).map((s) => s.title)), 'Something else'];
+  const options = askable(groups);
   return (
     <div className="rounded-2xl border border-line bg-white p-5 shadow-[0_30px_60px_-30px_rgba(11,27,43,0.45)] sm:p-7">
       <div className="mb-5 flex items-start justify-between gap-4">
@@ -1103,7 +1125,7 @@ function MobileBar({ b, tel }) {
  */
 function QuickBook({ b, groups, classic }) {
   const w = askOf(b);
-  const options = [...groups.flatMap((g) => list(g.services).map((s) => s.title)), 'Something else'];
+  const options = askable(groups);
   const r = classic ? 'rounded-lg' : 'rounded-xl';
   return (
     <div
@@ -2123,7 +2145,7 @@ function AboutPage({ b, groups, tel }) {
 function ContactPage({ b, groups, tel }) {
   const hours = list(b.hours);
   const full = `${b.address}, ${b.town}, ${b.state}${b.zip ? ` ${b.zip}` : ''}`;
-  const options = [...groups.flatMap((g) => list(g.services).map((s) => s.title)), 'Something else'];
+  const options = askable(groups);
   const w = askOf(b);
   return (
     <>
