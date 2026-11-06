@@ -514,7 +514,7 @@ def _build(prospect, root, slug, known):
 
     name = compose.plain(prospect["name"])
     short = compose.short_name(name)
-    phone = compose.plain(prospect.get("phone"))
+    phone = compose.us_phone(prospect.get("phone"))
     street, town, state, zip_ = compose.address_parts(prospect)
     if not phone or not street or not town:
         raise Parked("no phone or street address stored from the Google listing")

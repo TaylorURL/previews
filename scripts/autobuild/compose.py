@@ -370,6 +370,18 @@ def plain(text):
     return BULLET.sub("", " ".join(UNDRAWN.sub(" ", ZERO_WIDTH.sub("", str(text or ""))).split()))
 
 
+def us_phone(text):
+    """A US number written the way the Google listing writes one, "(832)
+    339-5799". The businesses on the text line carry theirs the way the texting
+    service stores it ("+18323395799"); any other writing is left as it is."""
+    number = plain(text)
+    bare = re.fullmatch(r"\+?1?(\d{10})", re.sub(r"[\s.-]", "", number))
+    if not bare:
+        return number
+    d = bare.group(1)
+    return f"({d[:3]}) {d[3:6]}-{d[6:]}"
+
+
 def sentences(text):
     out = []
     for s in re.split(r"(?<=[.!?])\s+(?=[A-Z0-9\"'])", plain(text)):
