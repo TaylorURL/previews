@@ -64,7 +64,7 @@ Reviews are quoted word for word only: up to three recent four- and five-star Go
 
 The brand also gets `heroStyle` (photo for a wide, strong photo; split for a decent one; type with none) and `tone` (classic when their headings are set in a serif or the fact sheet reads them as traditional, else bold). A business with no usable logo is never parked for it; its name is set in type.
 
-The industrial template reads the hvac brand shape and health the professional one, so the same builder fills them, and outdoor (still to come) will read the hvac shape too; the template comes from the prospect's `industry`, and `HELD` in `scripts/routine.py` keeps the runs off these layouts until it no longer names them.
+The outdoor and industrial templates read the hvac brand shape and health the professional one, so the same builder fills them; the template comes from the prospect's `industry`.
 
 `python3 -m scripts.autobuild.selftest_facts` proves the fact sheet's quote checks, the copy's support checks, the Places review picker (against an answer recorded in Google's documented shape) and the check's review and phone proofs, with no model asked.
 

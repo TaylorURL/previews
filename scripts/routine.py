@@ -90,19 +90,19 @@ INDUSTRY = {
     "accountant": "professional",
     "title company": "professional",
     "law firm": "professional",
-    "dentist": "professional",
-    "chiropractor": "professional",
+    "dentist": "health",
+    "chiropractor": "health",
     "pool service": "hvac",
-    "landscaping": "hvac",
-    "painting contractor": "hvac",
-    "concrete contractor": "hvac",
+    "landscaping": "outdoor",
+    "painting contractor": "outdoor",
+    "concrete contractor": "outdoor",
     "pest control": "hvac",
-    "fencing contractor": "hvac",
-    "tree service": "hvac",
-    "welding": "hvac",
-    "machine shop": "hvac",
-    "industrial contractor": "hvac",
-    "marine services": "hvac",
+    "fencing contractor": "outdoor",
+    "tree service": "outdoor",
+    "welding": "industrial",
+    "machine shop": "industrial",
+    "industrial contractor": "industrial",
+    "marine services": "industrial",
     "towing service": "hvac",
     "storage": "hvac",
     "restaurant": "restaurant",
@@ -111,18 +111,10 @@ INDUSTRY = {
 }
 
 
-# Layouts being drawn for the trades that were on another trade's layout: the
-# outdoor project trades, the industrial and B2B trades, and the health
-# practices. No site is built for them, by the script or the morning session,
-# until these are proved and taken off this list.
-HELD = {"outdoor", "industrial", "health"}
-
-
 def templates():
-    """The templates this checkout can draw, by the name a brand file uses,
-    less the ones still held."""
+    """The templates this checkout can draw, by the name a brand file uses."""
     folder = os.path.join(HERE, "..", "src", "templates")
-    return {name[:-4].lower() for name in os.listdir(folder) if name.endswith(".jsx") and name != "shared.jsx"} - HELD
+    return {name[:-4].lower() for name in os.listdir(folder) if name.endswith(".jsx") and name != "shared.jsx"}
 
 
 def key():
@@ -159,15 +151,15 @@ def due():
     # The businesses the studio can only text go first, but only as many as
     # keep TEXT_BACKLOG sites waiting on the text line, so the letters behind
     # them wait on a handful of builds and never on the whole list. The
-    # professional template shows the business's address, which none of these
-    # has, so it never draws one.
+    # professional and health templates show the business's address, which
+    # none of these has, so they never draw one.
     rows = []
     backlog = len(rest("GET", "preview_sites?select=id,outreach_prospects!inner(preview_skipped_at)"
                               "&channel=eq.text&sent_at=is.null"
                               "&outreach_prospects.preview_skipped_at=is.null") or [])
     if backlog < TEXT_BACKLOG:
         texts = [row for row in rest("POST", "rpc/preview_text_candidates", {}) or []
-                 if row["industry"] in ready and row["industry"] != "professional" and not row.get("parked_at")]
+                 if row["industry"] in ready and row["industry"] not in ("professional", "health") and not row.get("parked_at")]
         rows += texts[:TEXT_BACKLOG - backlog]
     rows += [dict(row, channel="email") for row in rest("POST", "rpc/preview_candidates", {}) or []]
     return [row for row in rows if row["industry"] in ready]
