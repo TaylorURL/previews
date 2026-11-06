@@ -234,6 +234,13 @@ STATES = {
     "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming",
 }
 
+# Countries a page names among the places it serves, which are no town or port.
+COUNTRY = re.compile(r"(?:the\s+)?(?:United States|USA|U\.S\.A?\.?|America|Americas|Canada|Mexico|Guatemala|Belize|Honduras|El Salvador|Nicaragua|Costa Rica|Panama|"
+                     r"Cuba|Jamaica|Haiti|Dominican Republic|Puerto Rico|Bahamas|Trinidad(?: and Tobago)?|Barbados|Aruba|Curacao|Curaçao|Colombia|Venezuela|Ecuador|Peru|"
+                     r"Bolivia|Chile|Argentina|Uruguay|Paraguay|Brazil|Guyana|Suriname|Caribbean|Latin America|Central America|South America|North America|"
+                     r"Europe|Asia|Africa|Middle East|United Kingdom|UK|Norway|Netherlands|Germany|France|Spain|Italy|Greece|Nigeria|Angola|Saudi Arabia|"
+                     r"United Arab Emirates|UAE|Qatar|Kuwait|China|Japan|Korea|South Korea|Singapore|India|Australia|Worldwide|International)", re.I)
+
 
 def placed_elsewhere(text, town=None, state=None, towns=()):
     """True when the words set them in another state ("Kansas City's trusted
@@ -422,6 +429,11 @@ RUN_IN = re.compile(r"^(?:(?:[A-Z][\w'’-]*,?|a|an|the|and|or|of|on|in|for|to|w
 MISSPELT = {r"\bverity of\b": "variety of", r"\bVerity of\b": "Variety of", r"\blazer\b": "laser", r"\bLazer\b": "Laser", r"\bvist\b": "visit", r"\bVist\b": "Visit",
             r"\b(began|begun|started|start|launched) (their|his|her|our|my) carriers\b": r"\1 \2 careers",
             r"\bamble (savings|time|room|space|parking)\b": r"ample \1", r"\bfinancially responsibility\b": "financially responsibly",
+            r"\bbuisness": "business", r"\bBuisness": "Business",
+            # A verb set where its noun goes, and a promise said as a permission
+            # ("a quick respond to your inquiries is granted").
+            r"\b(quick|fast|prompt|rapid|timely) respond\b": r"\1 response",
+            r"\b(respon(?:se|d)s? to [\w\s]{1,40}?) (is|are) granted\b": r"\1 \2 guaranteed",
             # A shortening of speech ("workman's comp") reads as a word cut off.
             r"\bwork(?:man|men|er|ers)['’]?s?['’]? comp\b(?!\w)": "workers’ compensation",
             # A verb their page dropped ("If you a special project that requires...").

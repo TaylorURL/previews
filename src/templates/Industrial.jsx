@@ -713,10 +713,12 @@ function Industries({ g, n, b }) {
           <h2 className={`${h2} text-white`}>Industries served</h2>
         </div>
         <ul className={`grid grid-cols-2 border-l border-t border-white/15 lg:col-span-8 ${INDUSTRY_COLS(g.industries.length)}`}>
-          {g.industries.map((ind) => {
+          {g.industries.map((ind, i) => {
             const Icon = industryIcon(`${ind.name} ${ind.detail}`);
+            // An odd last card takes the phone's whole row rather than leave an empty box beside it.
+            const alone = i === g.industries.length - 1 && i % 2 === 0;
             return (
-              <li key={ind.name} className="flex min-h-[128px] min-w-0 flex-col justify-between gap-5 border-b border-r border-white/15 p-5 sm:p-6">
+              <li key={ind.name} className={`flex min-h-[128px] min-w-0 flex-col justify-between gap-5 border-b border-r border-white/15 p-5 sm:p-6 ${alone ? 'col-span-2 md:col-span-1' : ''}`}>
                 <Icon size={26} strokeWidth={1.6} className="text-[color:var(--hi)]" aria-hidden="true" />
                 <span className="min-w-0">
                   {/* A name of two joined by a slash ("manufacturers/packers") breaks after the slash before it breaks a word. */}
