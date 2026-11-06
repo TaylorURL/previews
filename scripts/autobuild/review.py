@@ -148,7 +148,9 @@ second fix on top of the first.
 Prove each fix: run `npm run build`, then `node scripts/autobuild/shoot.mjs .autobuild/review/check <slug>` for \
 the sites named above and Read the new screenshots. `node scripts/autobuild/layout.mjs - <slug>` measures what the \
 gate measures (a photo drawn past its pixels or cropped to a sliver, a section left empty, a page wider than the \
-screen); a change that adds anything to it is taken back. Use no git command but `git diff` and `git status`; the run \
+screen); a change that adds anything to it is taken back. A change to the builder in scripts/autobuild/ is proved \
+by `python3 -m scripts.autobuild.selftest_facts` and `python3 -m scripts.autobuild.selftest_photos`, which must \
+still pass. Use no git command but `git diff` and `git status`; the run \
 that called you lands the work. Answer with what you fixed (one plain sentence each, in the project's own terms, \
 naming the files) and what you left and why."""
 
@@ -375,7 +377,8 @@ def dispatch(template, findings, budget):
         "--tools", "Read,Edit,Write,Glob,Grep,Bash",
         "--allowedTools", "Read", "Edit", "Write", "Glob", "Grep", "Bash(npm run build)",
         "Bash(node scripts/autobuild/shoot.mjs:*)", "Bash(node scripts/autobuild/layout.mjs:*)", "Bash(git diff:*)",
-        "Bash(git status:*)",
+        "Bash(git status:*)", "Bash(python3 -m scripts.autobuild.selftest_facts)",
+        "Bash(python3 -m scripts.autobuild.selftest_photos)",
         "--setting-sources", "", "--no-session-persistence", "--output-format", "json",
         "--json-schema", json.dumps(FIX_SCHEMA), prompt,
     ]
