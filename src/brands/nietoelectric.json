@@ -1,0 +1,168 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "NIETO ELECTRIC",
+  "shortName": "NIETO ELECTRIC",
+  "phone": "(832) 597-1054",
+  "email": null,
+  "address": "4327 Texana Dr",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77523",
+  "rating": 5,
+  "reviewCount": 12,
+  "brand": {
+    "primary": "#8b6f33",
+    "primaryDeep": "#614e24",
+    "accent": "#c9ac6d",
+    "ink": "#1f2122",
+    "surface": "#faf8f4",
+    "muted": "#5b6470",
+    "line": "#e0e0e0",
+    "heading": "'Roboto', system-ui, sans-serif",
+    "body": "'Plus Jakarta Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap",
+    "logo": "/brands/nietoelectric/logo.webp",
+    "logoMono": "/brands/nietoelectric/logo-mono.webp",
+    "logoWidth": 109,
+    "logoHeight": 84,
+    "logoRatio": 1.293,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.253,
+      0.326,
+      0.379,
+      0.405,
+      0.425,
+      0.444,
+      0.482,
+      0.487,
+      0.733,
+      0.872,
+      1.0
+    ]
+  },
+  "heroStyle": "photo",
+  "tone": "bold",
+  "hero": {
+    "eyebrow": "NIETO ELECTRIC · Baytown",
+    "title": "When the power goes out, your home keeps running.",
+    "lead": "Nieto Electric is a family-owned electrician in Baytown, Texas, installing, maintaining and repairing home standby generators for homeowners, local businesses and property owners across the Baytown and Mont Belvieu area.",
+    "image": "/brands/nietoelectric/photo1",
+    "imageAlt": "A photo of NIETO ELECTRIC"
+  },
+  "serviceArea": [
+    "Baytown",
+    "Mont Belvieu"
+  ],
+  "highlights": [
+    {
+      "title": "Family owned",
+      "text": "A local, family-owned company built on trust and expertise.",
+      "icon": "family"
+    },
+    {
+      "title": "Licensed professionals",
+      "text": "Our licensed professionals handle every project, large or small.",
+      "icon": "badge"
+    },
+    {
+      "title": "Briggs & Stratton dealer",
+      "text": "We are a Briggs & Stratton Authorized Dealer.",
+      "icon": "award"
+    },
+    {
+      "title": "Itemized estimates",
+      "text": "Our estimates are transparent and itemized, and can be adjusted with different options.",
+      "icon": "check"
+    }
+  ],
+  "steps": [
+    {
+      "title": "On-site assessment",
+      "text": "After you complete our form, we assess your home and size the right generator for you."
+    },
+    {
+      "title": "Get a transparent, itemized estimate",
+      "text": "The estimate is itemized and can be adjusted with different options, and once you approve it we move to installation."
+    },
+    {
+      "title": "Installation",
+      "text": "We take care of permits, code compliance, a base for the generator, transfer switches and anything generator related."
+    },
+    {
+      "title": "Future maintenance",
+      "text": "Once the job is done, we make sure everything is operational and ready for the next outage, with maintenance and our warranty to follow."
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Kathy Fielding",
+      "text": "We had a great experience with Nieto Electric. Joe installed our new Briggs and Stratton home standby generator and completely new breaker panel. Joe and his team are hard working, fair, and very professional. The quality of work is excellent. Highly recommended!",
+      "source": "their site"
+    },
+    {
+      "author": "esther7hadassah",
+      "text": "Joe and the Nieto Electric team are very professional and patient. They clearly explained what they would be doing, what issues were found, and how to remedy them. I appreciate the clear guidance and options that were provided. I highly recommend the service Joe and his Nieto Electric team provide.",
+      "source": "their site"
+    },
+    {
+      "author": "Connie Dominguez",
+      "text": "Joe and Nieto Electric have handled several jobs for me, and I can always rely on them for excellent results. Their work is high quality, done with speed and care, and they are both reliable and knowledgeable. It’s rare to find a company you can fully trust, but Nieto Electric is definitely one of them. Highly recommend!",
+      "source": "their site"
+    }
+  ],
+  "credentials": [
+    {
+      "label": "Briggs & Stratton",
+      "detail": "Authorized Dealer"
+    }
+  ],
+  "summary": "Nieto Electric installs, maintains and repairs standby generators for customers in Baytown and Mont Belvieu.",
+  "groups": [
+    {
+      "slug": "home-standby-generator-installation",
+      "title": "Home Standby Generator Installation",
+      "icon": "zap",
+      "summary": "At Nieto Electric we take care of permits, code compliance, a base for the generator, transfer switches, and anything generator related.",
+      "intro": "At Nieto Electric we take care of permits, code compliance, a base for the generator, transfer switches, and anything generator related."
+    },
+    {
+      "slug": "generator-maintenance",
+      "title": "Generator Maintenance",
+      "icon": "zap",
+      "summary": "We also ensure the longevity of your generator with maintenance and our warranty.",
+      "intro": "We also ensure the longevity of your generator with maintenance and our warranty."
+    },
+    {
+      "slug": "generator-service-repair",
+      "title": "Generator Service / Repair",
+      "icon": "zap",
+      "summary": "We also provide replacement, maintenance, and repair services to keep your system running smoothly when you need it most.",
+      "intro": "Already have a generator? We also provide replacement, maintenance, and repair services to keep your system running smoothly when you need it most."
+    },
+    {
+      "slug": "new-commercial-generator",
+      "title": "New Commercial Generator",
+      "icon": "zap",
+      "summary": "We install new generators for local businesses and property owners, and guide you to the right fit for your building.",
+      "intro": "We install new generators for local businesses and property owners, and guide you to the right fit for your building."
+    },
+    {
+      "slug": "warranty",
+      "title": "Warranty",
+      "icon": "wrench",
+      "summary": "Our warranty is part of how we look after your generator for the long run, alongside regular maintenance.",
+      "intro": "Our warranty is part of how we look after your generator for the long run, alongside regular maintenance."
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "A local family business, built on trust and expertise.",
+    "text": [
+      "Nieto Electric is a family-owned company serving homeowners, local businesses and property owners across the Baytown and Mont Belvieu area. We are committed to your safety, comfort and satisfaction.",
+      "Our licensed professionals handle every project, large or small. We guide you to the right generator for your home or business and handle the permits.",
+      "We are a Briggs & Stratton Authorized Dealer, so you can buy your generator and have it installed through us."
+    ]
+  }
+}
