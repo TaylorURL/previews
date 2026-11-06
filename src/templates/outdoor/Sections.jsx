@@ -218,17 +218,16 @@ export function Promo({ b, ground = 'white' }) {
 /**
  * Who the business is: its about words, the owner when the brand names one,
  * and the things that set it apart (highlights, else the about section's own
- * promises). The about photo stands beside the words unless the gallery has
- * already shown it.
+ * promises). The about photo stands beside the words.
  */
-export function AboutBlock({ b, photoUsed, spare, ground = 'white' }) {
+export function AboutBlock({ b, spare, ground = 'white' }) {
   const g0 = grounds(ground);
   const about = b.about;
   const points = list(b.highlights).length ? list(b.highlights).slice(0, 4) : list(about?.values).slice(0, 4);
   if (!about && !points.length) return null;
-  // The owner's photo first, else the about photo when the gallery has not shown it, else a lone work photo with no gallery to stand in.
-  const image = b.owner?.image || (!photoUsed && about?.image) || spare?.src;
-  const imageAlt = b.owner?.image ? b.owner.name || '' : !photoUsed && about?.image ? about.imageAlt || '' : spare?.alt || '';
+  // The owner's photo first, else the about photo, else a lone work photo with no gallery to stand in.
+  const image = b.owner?.image || about?.image || spare?.src;
+  const imageAlt = b.owner?.image ? b.owner.name || '' : about?.image ? about.imageAlt || '' : spare?.alt || '';
   const cols = ['', '', 'md:grid-cols-2', 'md:grid-cols-3', 'md:grid-cols-2 xl:grid-cols-4'][points.length];
   return (
     <section className={`${pad} ${g0.bg}`}>

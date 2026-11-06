@@ -30,9 +30,9 @@ export function askOf(b) {
  * the brand file lists them, else the photos it already carries for its
  * service groups and its about section. Never the hero's photo, which the
  * hero shows, never one photo twice, and on a preview never a stock photo.
- * The about photo joins the gallery only when the groups bring fewer than
- * three of their own, and the home page's about section then goes without
- * it, so no photo is drawn twice on a page. A gallery of one photo is no
+ * The about photo never joins it: the gallery is headed as the business's
+ * work, and a tile captioned 'About us' is a menu link, not a piece of work;
+ * that photo stays with the about section. A gallery of one photo is no
  * gallery: that photo is left to the about section (`spare`).
  */
 export function galleryOf(b) {
@@ -42,18 +42,13 @@ export function galleryOf(b) {
   const projects = list(b.projects)
     .map((p) => ({ src: p.image, alt: p.imageAlt || p.title || '', title: p.title, text: p.text, place: [p.scope, p.town].filter(Boolean).join(' · ') }))
     .filter(keep);
-  if (projects.length) return { photos: projects.slice(0, 8), aboutUsed: false, spare: null };
-  const groups = groupsOf(b)
+  if (projects.length) return { photos: projects.slice(0, 8), spare: null };
+  const photos = groupsOf(b)
     .map((g) => ({ src: g.image, alt: g.imageAlt || g.title, title: g.title, href: `/${g.slug}` }))
-    .filter(keep);
-  // The about photo is labelled for the page it opens, as each group's is for its own, so no tile goes without a caption.
-  const about =
-    b.about?.image && groups.length < 3
-      ? [{ src: b.about.image, alt: b.about.imageAlt || '', title: b.about.eyebrow || 'About us', href: '/about' }].filter(keep)
-      : [];
-  const photos = [...groups, ...about].slice(0, 8);
-  if (photos.length < 2) return { photos: [], aboutUsed: false, spare: groups[0] || null };
-  return { photos, aboutUsed: about.length > 0, spare: null };
+    .filter(keep)
+    .slice(0, 8);
+  if (photos.length < 2) return { photos: [], spare: photos[0] || null };
+  return { photos, spare: null };
 }
 
 /** How the home page opens: the brand's heroStyle, else beside its photo, else in type. */
