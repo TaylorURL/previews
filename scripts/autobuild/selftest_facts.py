@@ -15,7 +15,7 @@ import io
 import json
 import os
 
-from . import check, facts, write
+from . import build, check, collect, compose, facts, write
 
 PAGE = """Title: Gutierrez Landscaping
 # Family Owned Landscaping in Lockhart
@@ -182,10 +182,49 @@ def the_writer():
     assert write._assemble(kept, {}, "Arnold CPA", "Houston", {}, [], "")["hero"]["title"] == "Stop guessing about your numbers"
 
 
+SERVICES = """<html><body><main>
+<h3>Electrical Troubleshoot &amp; Repair</h3>
+<p>In time of crisis without power can be chaotic but having a generator is a great solution for your home. We offer installation of portable generator interlock kits so you are ready.</p>
+<h3>Portable Generator Interlock Installation</h3>
+<h3>Back Up Generator Installation</h3>
+<h3>Generator Installation</h3>
+<h3>Electric Panel Upgrade</h3>
+<p>Empower your home with our expert electric panel upgrade services, sized for the appliances and chargers you run today.</p>
+<h3>Panel Upgrades</h3>
+</main></body></html>"""
+
+
+def the_services():
+    """Words under the wrong heading go to the service they name in full, a
+    service said shorter than a described one is said once, before the fact
+    sheet and after it, and a shortened "workman's comp" is said in full."""
+    pages = [collect.read_page("https://fortress.test/services", SERVICES)]
+    got = {s["title"]: s["text"] for s in compose.services_of(pages, compose.VOCAB["hvac"], "Fortress Electric", None, described_first=True)}
+    assert "interlock" in (got.get("Portable Generator Interlock Installation") or ""), got
+    assert not got.get("Electrical Troubleshoot & Repair"), got
+    assert "Panel Upgrades" not in got, got
+    # Back Up Generator Installation is described only by the fact sheet, and
+    # once it is, Generator Installation is the same work said shorter.
+    assert "Generator Installation" in got and "Back Up Generator Installation" in got, got
+    sheet = {"services": [{"id": "s2", "title": "Back Up Generator Installation",
+                           "description": "Whether you need a permanent back up generator installed or a connection for your portable one, we can help."}]}
+    services = [{"title": t, "text": x} for t, x in got.items()]
+    titles = [s["title"] for s in build._with_facts(services, sheet, "Fortress Electric", "hvac", [])]
+    assert "Back Up Generator Installation" in titles and "Generator Installation" not in titles, titles
+    # Two named alone stay: neither is known to be the other's work.
+    alone = [{"title": "Generator Installation", "text": None}, {"title": "Back Up Generator Installation", "text": None}]
+    assert compose.said_shorter(alone) == alone
+    spell = lambda t: [t := __import__("re").sub(w, r, t) for w, r in compose.MISSPELT.items()][-1]
+    for said in ("workman's comp", "workers comp", "workers' comp"):
+        assert spell(f"Insured with {said} and liability") == "Insured with workers’ compensation and liability", spell(said)
+    assert spell("a computer company") == "a computer company"
+
+
 if __name__ == "__main__":
     quotes_and_support()
     sheet = the_sheet()
     reviews, raw = places()
     the_check(sheet, reviews, raw)
     the_writer()
-    print("selftest_facts: the fact sheet, the copy's checks, the Places reviews and the check all hold")
+    the_services()
+    print("selftest_facts: the fact sheet, the copy's checks, the Places reviews, the services and the check all hold")
