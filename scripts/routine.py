@@ -205,7 +205,8 @@ def skip(prospect_id, reason):
 
 def reviewed(slug):
     """Whether the review passed this site as its brand file now stands: the
-    stamp review.py writes names the brand file it looked at."""
+    stamp review.py writes names the brand file it looked at, and says the
+    preview was found clearly better than the business's own website."""
     root = os.path.dirname(HERE)
     try:
         with open(os.path.join(root, ".autobuild", f"{slug}.review.json")) as handle:
@@ -214,7 +215,8 @@ def reviewed(slug):
             now = hashlib.sha256(handle.read()).hexdigest()
     except (OSError, ValueError):
         return False
-    return bool(mark.get("ok")) and mark.get("brand") == now
+    return (bool(mark.get("ok")) and mark.get("brand") == now
+            and (mark.get("versus") or {}).get("verdict") == "pass")
 
 
 def register(slug, prospect_id, letter_path):
@@ -222,8 +224,8 @@ def register(slug, prospect_id, letter_path):
         sys.exit(f"{slug} is not a valid subdomain label")
     # No letter may point at a preview the review has not passed.
     if not reviewed(slug):
-        sys.exit(f"the review has not passed {slug} as it stands: run npm run build, then "
-                 f"python3 -m scripts.autobuild.review {slug}")
+        sys.exit(f"the review has not passed {slug} as it stands, or found it not clearly better than the "
+                 f"business's own website: run npm run build, then python3 -m scripts.autobuild.review {slug}")
     with open(letter_path) as handle:
         letter = json.load(handle)
     if not letter.get("subject") or len(letter.get("paragraphs") or []) < 2:

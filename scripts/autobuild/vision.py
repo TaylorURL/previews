@@ -60,9 +60,12 @@ def _copy(paths, folder, longest=1100):
     return names
 
 
-def ask(prompt, paths, schema, longest=1100):
-    """One question about some pictures; the structured answer, or None."""
+def ask(prompt, paths, schema, longest=1100, model=None, timeout=None):
+    """One question about some pictures; the structured answer, or None. The
+    comparison with a business's own site (versus.py) asks its own model, given
+    longer to answer."""
     global last_error
+    timeout = timeout or TIMEOUT
     if not available():
         last_error = "the vision check is switched off or the claude command is missing"
         return None
@@ -70,16 +73,16 @@ def ask(prompt, paths, schema, longest=1100):
         names = _copy(paths, folder, longest)
         listed = "\n".join(f"{os.path.join(folder, n)}" for n in names)
         command = [
-            "claude", "-p", "--model", MODEL, "--tools", "Read", "--allowedTools", "Read",
+            "claude", "-p", "--model", model or MODEL, "--tools", "Read", "--allowedTools", "Read",
             "--setting-sources", "", "--no-session-persistence", "--output-format", "json",
             "--json-schema", json.dumps(schema),
             f"{prompt}\n\nRead every one of these files before answering:\n{listed}",
         ]
         try:
-            done = subprocess.run(command, cwd=folder, capture_output=True, text=True, timeout=TIMEOUT,
+            done = subprocess.run(command, cwd=folder, capture_output=True, text=True, timeout=timeout,
                                   stdin=subprocess.DEVNULL, env=_env())
         except subprocess.TimeoutExpired:
-            last_error = f"the vision check took longer than {TIMEOUT}s"
+            last_error = f"the vision check took longer than {timeout}s"
             return None
         except OSError as error:
             last_error = f"the vision check could not start: {error}"
