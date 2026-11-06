@@ -42,8 +42,9 @@ says.
   price ("$100 off", "from $39 a month"): those go stale on a preview nobody keeps up.
 - Steps: three or four, only when the facts include their process. Title is what happens, text is one
   sentence.
-- Write as the business ("we", "our") unless the facts are about one named owner, who may be written
-  of by name. Keep it to the people the facts name.
+- Write as the business ("we", "our") in every part, the about paragraphs and highlights as much as
+  the hero: "Our racks hold...", not "Their racks hold..." or "They are committed to...". Only one
+  named owner the facts are about may be written of by name. Keep it to the people the facts name.
 
 ## Voice by family
 
@@ -79,3 +80,5 @@ says.
   quality service, dedicated team, second to none, trusted, state-of-the-art, cutting-edge, solutions,
   elevate, seamless, nestled, boasts, peace of mind, needs (as in "all your roofing needs").
 - No exclamation marks. No questions as headlines. No quoting a review as if it were a fact.
+- Nothing about their site or these facts: the page is their site. Not "their home page leads with",
+  "their site says", "as their website puts it"; say the thing itself, as the business.

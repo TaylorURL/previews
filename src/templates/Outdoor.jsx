@@ -431,7 +431,7 @@ function AboutPage({ b, groups }) {
         <section className={`${pad} bg-[color:var(--paper)]`}>
           <div className={wrap}>
             <Eyebrow>Why {b.shortName}</Eyebrow>
-            <ul className={`mt-2 grid gap-4 ${points.length >= 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'}`}>
+            <ul className={`mt-2 grid gap-4 ${points.length === 4 ? 'md:grid-cols-2 xl:grid-cols-4' : points.length >= 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'}`}>
               {points.slice(0, 6).map((p, i) => (
                 <li key={p.title} className="rounded-[22px] bg-white p-6 sm:p-7">
                   <span className="font-heading text-[30px] font-extrabold leading-none tabular-nums text-[color:var(--pt)]">{String(i + 1).padStart(2, '0')}</span>

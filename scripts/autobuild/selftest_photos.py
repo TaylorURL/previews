@@ -183,6 +183,10 @@ def hosts():
     assert compose.email_of("mosherseifert@cpa1099.com", [home], {}) == "mosherseifert@cpa1099.com"
     assert compose.email_of("", [home], {}) == "info@cpa1099.com"
     assert compose.email_of("billing@othercpa.com", [home], {}) == "info@cpa1099.com"
+    # A law firm's clients write to legal@ (jmharrisonlawfirm.com); careers@ is still nobody's door.
+    firm = types.SimpleNamespace(url="https://jmharrisonlawfirm.com/", links=[("mailto:careers@jmharrisonlawfirm.com", "Jobs")])
+    assert compose.email_of("legal@jmharrisonlawfirm.com", [firm], {}) == "legal@jmharrisonlawfirm.com"
+    assert compose.email_of("careers@jmharrisonlawfirm.com", [firm], {}) is None
 
 
 def customer_line():

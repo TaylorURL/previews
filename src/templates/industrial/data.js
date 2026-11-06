@@ -7,7 +7,7 @@
  * and never reworded.
  */
 import { luminance } from '../../site.js';
-import { hexOr, mixHex } from '../shared.jsx';
+import { extraPhonesOf, hexOr, mixHex, phonesOf } from '../shared.jsx';
 
 export const list = (v) => (Array.isArray(v) ? v : []);
 const text = (v) => String(v ?? '').trim();
@@ -175,6 +175,10 @@ export function gather(b) {
     states: list(b.statesServed).map(text).filter(Boolean),
     areas: list(b.serviceArea).map(text).filter(Boolean),
     phones: list(b.phones).filter((p) => p?.number),
+    // The lines beyond the main phone, for wherever `phone` is drawn beside
+    // them (a line with the main number only labels it), and that label.
+    extraPhones: extraPhonesOf(b),
+    phoneLabel: phonesOf(b)[0]?.label || '',
     highlights: list(b.highlights).filter((h) => h?.title).slice(0, 4),
     reviews: list(b.reviews).filter((r) => r?.text).slice(0, 3),
   };
