@@ -177,7 +177,37 @@ import {
   Zap,
 } from 'lucide-react';
 import { brandVars, displayVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { BrandLogo, EnquiryForm, Img, Stars, Facts, StudioCredit, hexOr, mixHex } from './shared.jsx';
+import {
+  BrandLogo,
+  Credentials,
+  EnquiryForm,
+  Facts,
+  Highlights,
+  Img,
+  Languages,
+  Motif,
+  Owner,
+  PhoneLines,
+  RatingBadge,
+  ReviewQuotes,
+  Stars,
+  Steps,
+  StudioCredit,
+  TypeGround,
+  credentialsOf,
+  extraPhonesOf,
+  heroStyleOf,
+  hexOr,
+  highlightsOf,
+  languagesOf,
+  mixHex,
+  ownerOf,
+  phonesOf,
+  reviewsOf,
+  stepsOf,
+  telling,
+  toneOf,
+} from './shared.jsx';
 import { fillOf, labelOf, onColor } from './hvac/color.js';
 
 const ICONS = {
@@ -351,9 +381,48 @@ function EmergencyStrip({ b, tel }) {
             <span className="hidden font-normal opacity-85 xl:inline"> &middot; {b.emergency.text}</span>
           </span>
         </p>
-        <a href={tel} className="inline-flex min-h-[44px] flex-none items-center gap-1.5 font-bold text-current no-underline hover:underline">
-          <Phone size={15} aria-hidden="true" /> <span className="hidden sm:inline">Call</span> {b.phone}
-        </a>
+        {extraPhonesOf(b).length > 0 ? (
+          <>
+            <PhoneLines
+              lines={phonesOf(b)}
+              icon
+              className="hidden flex-none md:flex"
+              styles={{ list: 'gap-x-5', item: 'font-bold text-current hover:underline', label: 'font-normal opacity-85' }}
+            />
+            <a href={tel} className="inline-flex min-h-[44px] flex-none items-center gap-1.5 font-bold text-current no-underline hover:underline md:hidden">
+              <Phone size={15} aria-hidden="true" /> {b.phone}
+            </a>
+          </>
+        ) : (
+          <a href={tel} className="inline-flex min-h-[44px] flex-none items-center gap-1.5 font-bold text-current no-underline hover:underline">
+            <Phone size={15} aria-hidden="true" /> <span className="hidden sm:inline">Call</span> {b.phone}
+          </a>
+        )}
+      </div>
+    </div>
+  );
+}
+
+/**
+ * Every phone line and the languages spoken, in a slim strip above the
+ * header, for a business with more than one line or a language beyond
+ * English to name. A business that answers 24/7 carries them in its
+ * emergency strip instead.
+ */
+function LinesStrip({ b }) {
+  const extra = extraPhonesOf(b);
+  const langs = languagesOf(b);
+  if (b.emergency || (!extra.length && !langs.length)) return null;
+  return (
+    <div className="border-b border-line bg-surface text-[14px] text-ink">
+      <div className={`${wrap} flex min-h-[44px] flex-wrap items-center justify-between gap-x-6`}>
+        <Languages items={langs} className="hidden font-medium text-muted sm:inline-flex" />
+        <PhoneLines
+          lines={phonesOf(b)}
+          icon
+          className="ml-auto"
+          styles={{ list: 'gap-x-5 justify-end', item: 'text-ink hover:text-[color:var(--pt)]', label: 'text-muted', number: 'font-bold' }}
+        />
       </div>
     </div>
   );
@@ -592,7 +661,7 @@ function Header({ b, groups, tel, current }) {
               <Phone size={17} aria-hidden="true" />
             </span>
             <span className="grid leading-tight">
-              <span className="text-[12px] font-medium text-head-soft">{b.emergency ? 'Call 24/7' : 'Call Us'}</span>
+              <span className="text-[12px] font-medium text-head-soft">{telling(phonesOf(b)[0]?.label) || (b.emergency ? 'Call 24/7' : 'Call Us')}</span>
               <strong className="whitespace-nowrap font-heading text-[17px] font-bold">{b.phone}</strong>
             </span>
           </a>
@@ -709,8 +778,9 @@ function TrustRow({ b }) {
   );
 }
 
-function Reviews({ b, surface = false }) {
-  const reviews = list(b.reviews);
+/** The reviews quoted word for word, three on the home page, each naming where it was left. */
+function Reviews({ b, surface = false, max = 3, more = false }) {
+  const reviews = reviewsOf(b);
   if (!reviews.length) return null;
   return (
     <section id="reviews" className={`${pad} ${surface ? 'bg-surface' : 'bg-white'}`}>
@@ -732,18 +802,23 @@ function Reviews({ b, surface = false }) {
             </div>
           )}
         </div>
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {reviews.slice(0, 6).map((r, i) => (
-            <figure key={i} className="m-0 flex flex-col rounded-2xl border border-line bg-white p-6 sm:p-7">
-              <div className="flex items-center justify-between">
-                <Quote size={26} className="text-primary/25" aria-hidden="true" />
-                <Stars value={5} size={14} />
-              </div>
-              <blockquote className="m-0 mb-6 mt-4 text-[16px] leading-[1.65] text-ink">{r.text}</blockquote>
-              <figcaption className="mt-auto border-t border-line pt-4 text-[16px] md:text-[15px] font-semibold text-muted">{r.author}</figcaption>
-            </figure>
-          ))}
-        </div>
+        <ReviewQuotes
+          reviews={reviews}
+          max={max}
+          styles={{
+            list: 'gap-5',
+            item: 'rounded-2xl border border-line bg-white p-6 sm:p-7',
+            mark: 'text-primary/25',
+            text: 'text-[16px] leading-[1.65] text-ink',
+            author: 'border-t border-line pt-4 text-[16px] text-ink md:text-[15px]',
+            source: 'font-normal text-muted',
+          }}
+        />
+        {more && b.about && reviews.length > max && (
+          <a href="/about#reviews" className="mt-8 inline-flex min-h-[44px] items-center gap-1.5 font-heading text-[16px] font-bold text-[color:var(--pt)] no-underline hover:underline">
+            More reviews <ArrowRight size={17} aria-hidden="true" />
+          </a>
+        )}
       </div>
     </section>
   );
@@ -942,9 +1017,17 @@ function Footer({ b, groups, tel }) {
         </div>
         <div className="col-span-2 lg:col-span-1">
           <h2 className={head}>Contact</h2>
-          <a href={tel} className="flex min-h-[44px] items-center font-heading text-[20px] font-bold text-ink no-underline hover:text-[color:var(--pt)]">
-            {b.phone}
-          </a>
+          {extraPhonesOf(b).length > 0 ? (
+            <PhoneLines
+              lines={phonesOf(b)}
+              styles={{ list: 'flex-col gap-0', item: 'gap-x-2.5 text-ink hover:text-[color:var(--pt)]', label: 'text-[15px] text-muted', number: 'font-heading text-[20px] font-bold' }}
+            />
+          ) : (
+            <a href={tel} className="flex min-h-[44px] items-center font-heading text-[20px] font-bold text-ink no-underline hover:text-[color:var(--pt)]">
+              {b.phone}
+            </a>
+          )}
+          <Languages items={languagesOf(b)} className="py-1.5 text-muted" />
           {b.email && (
             <a href={`mailto:${b.email}`} className="flex min-h-[44px] items-center break-all text-muted no-underline hover:text-[color:var(--pt)]">
               {b.email}
@@ -1010,6 +1093,350 @@ function MobileBar({ b, tel }) {
   );
 }
 
+/* --------------------------------------------------------------- home hero */
+
+/**
+ * The booking card cut down to one row under the hero's words: what is
+ * needed, the ZIP code and a phone number. A visit is still booked from the
+ * first screen, but the headline and the photo lead it, rather than a tall
+ * form standing where the photo should be.
+ */
+function QuickBook({ b, groups, classic }) {
+  const w = askOf(b);
+  const options = [...groups.flatMap((g) => list(g.services).map((s) => s.title)), 'Something else'];
+  const r = classic ? 'rounded-lg' : 'rounded-xl';
+  return (
+    <div
+      className={`${classic ? 'rounded-xl' : 'rounded-2xl'} border border-line bg-white p-5 text-ink shadow-[0_30px_60px_-30px_rgba(11,27,43,0.55)] sm:p-6 lg:flex lg:items-end lg:gap-7 lg:py-5`}
+    >
+      <div className="mb-4 flex items-center gap-3.5 lg:mb-0.5 lg:w-[14.5rem] lg:flex-none">
+        <span className={`${iconTile} h-12 w-12`}>
+          <CalendarCheck size={21} aria-hidden="true" />
+        </span>
+        <div className="min-w-0">
+          <p className="font-heading text-[19px] font-extrabold leading-tight tracking-[-0.01em] text-ink">{unbroken(w.card)}</p>
+          <a href={telHref(b.phone)} className="inline-flex min-h-[28px] items-center text-[15px] font-semibold text-[color:var(--pt)] no-underline hover:underline">
+            or call {b.phone}
+          </a>
+        </div>
+      </div>
+      <div className="min-w-0 lg:flex-1">
+        <EnquiryForm
+          b={b}
+          submitLabel={w.check}
+          styles={{
+            form: `gap-3 ${w.zip ? 'lg:grid-cols-[minmax(0,1.45fr)_minmax(0,0.7fr)_minmax(0,0.95fr)_auto]' : 'lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)_auto]'} lg:items-end`,
+            label: 'text-[14px] font-semibold text-ink lg:col-span-1 lg:text-[13px]',
+            field: `min-h-[50px] ${r} border border-line bg-surface/60 px-3.5 py-2.5 text-[16px] font-normal text-ink focus:border-primary focus:bg-white focus:outline focus:outline-2 focus:outline-offset-0 focus:outline-primary/25`,
+            button: `min-h-[50px] ${r} whitespace-nowrap bg-primary px-6 font-heading text-[16px] font-bold text-[color:var(--on-primary)] transition hover:bg-primary-deep hover:text-white lg:col-span-1`,
+            done: `${r} bg-surface p-4 text-[16px] text-ink md:text-[15px]`,
+          }}
+          fields={[
+            { name: 'service', label: w.field, type: 'select', required: true, wide: true, options },
+            w.zip && { name: 'zip', label: 'ZIP Code', required: true, autoComplete: 'postal-code' },
+            { name: 'phone', label: 'Phone', type: 'tel', required: true, autoComplete: 'tel', wide: !w.zip },
+          ].filter(Boolean)}
+        />
+      </div>
+    </div>
+  );
+}
+
+/**
+ * The hero's words: the eyebrow, the headline, the lead, the call to action
+ * and the number, any further lines (another language's), and the rating
+ * where nothing beside the words carries it. `accent` sets the headline's
+ * second half in the accent's light tint, which reads only where no photo
+ * lies behind the words.
+ */
+function HeroWords({ b, tel, classic, accent = false, ratingClass = '' }) {
+  const lines = extraPhonesOf(b);
+  return (
+    <div className="min-w-0">
+      <Eyebrow light>{b.hero.eyebrow}</Eyebrow>
+      <h1
+        className={`break-words font-heading ${
+          classic ? 'font-semibold tracking-[-0.012em]' : 'font-display'
+        } text-[clamp(2.4rem,1.2rem+4vw,4.3rem)] leading-[1.12] text-white [text-wrap:balance]`}
+      >
+        {/* The second half is solid white over a photo: a see-through white turns grey over a busy photo and reads weaker than the first. */}
+        {b.hero.title} {b.hero.titleAccent && <span className={accent ? 'text-[color:var(--accent-lit)]' : 'text-white'}>{b.hero.titleAccent}</span>}
+      </h1>
+      <p className="mt-6 max-w-[34rem] text-[17px] leading-[1.65] text-white/85 sm:text-[18px]">{b.hero.lead}</p>
+      <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
+        <a href="/contact" className={`${btn} bg-white text-[color:var(--pt)] hover:bg-surface`}>
+          {askOf(b).act} <ArrowRight size={18} aria-hidden="true" />
+        </a>
+        {/* Filled with the brand's deep color so lettering in a photo behind (a sign, a truck's door) never shows through the number. */}
+        <a href={tel} className={`${btn} border border-white/40 bg-[color-mix(in_srgb,var(--primaryDeep)_88%,#000)] text-white hover:bg-primary-deep`}>
+          <Phone size={17} aria-hidden="true" /> {b.phone}
+        </a>
+      </div>
+      {lines.length > 0 && (
+        <PhoneLines
+          lines={lines}
+          icon
+          className="mt-3"
+          styles={{ list: 'gap-x-6', item: 'text-[16px] text-white hover:underline', label: 'text-white/70', number: 'font-bold' }}
+        />
+      )}
+      {ratingLine(b) && (
+        <p className={`mt-7 flex flex-wrap items-center gap-x-3 gap-y-1 text-[16px] font-medium text-white/85 md:text-[15px] ${ratingClass}`}>
+          <Stars value={b.rating} size={16} /> <span>{ratingLine(b)}</span>
+        </p>
+      )}
+    </div>
+  );
+}
+
+/**
+ * A hero with no photo: the panel beside the words names what the business
+ * does, group by group, each linked to its page, under its Google rating.
+ * The services are the one thing every business here has, so the half
+ * beside the words is never a bare block of color.
+ */
+function ServicePanel({ b, groups, classic }) {
+  const items = groups.length > 1 ? groups.map((g) => ({ href: `/${g.slug}`, title: g.title, icon: g.icon })) : list(groups[0]?.services).map((s) => ({ href: `/${groups[0].slug}#${s.slug}`, title: s.title, icon: s.icon || groups[0].icon }));
+  if (!items.length) return null;
+  return (
+    <div
+      className={`${classic ? 'rounded-xl' : 'rounded-[24px]'} border border-white/15 bg-white/[0.07] p-6 shadow-[0_40px_80px_-40px_rgba(0,0,0,0.6)] backdrop-blur-md sm:p-7 lg:w-full lg:max-w-[440px] lg:justify-self-end`}
+    >
+      {ratingLine(b) && (
+        <div className="mb-5 flex items-center justify-between gap-4 border-b border-white/15 pb-5">
+          <RatingBadge
+            b={b}
+            size={17}
+            styles={{ box: 'gap-4', value: 'font-heading text-[46px] font-extrabold tracking-[-0.03em] text-white', count: 'text-[14px] font-medium text-white/75' }}
+          />
+        </div>
+      )}
+      <p className="font-heading text-[13px] font-bold uppercase tracking-[0.14em] text-white/70">Services</p>
+      <ul className="mt-2 grid">
+        {items.slice(0, 5).map((item) => (
+          <li key={item.href} className="border-t border-white/10 first:border-0">
+            <a href={item.href} className="group flex min-h-[58px] items-center gap-3.5 py-2 font-heading text-[17px] font-bold text-white no-underline">
+              <span className="grid h-10 w-10 flex-none place-items-center rounded-xl bg-white/10 text-[color:var(--accent-lit)] transition group-hover:bg-white group-hover:text-[color:var(--pt)]">
+                <GroupIcon name={item.icon} size={19} />
+              </span>
+              <span className="min-w-0 flex-1">{item.title}</span>
+              <ChevronRight size={17} className="flex-none text-white/60 transition group-hover:translate-x-0.5 group-hover:text-white" aria-hidden="true" />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+/**
+ * The home page's opening, in the style the brand asks for (heroStyle):
+ *
+ *   split  the words beside the photo, framed in its own proportions, with
+ *          the Google rating pinned to its corner. The default with a photo.
+ *   photo  the photo across the band behind the words, under a wash of the
+ *          brand's deep color that keeps them legible. On a phone the photo
+ *          stands whole above the words, as there it would be mostly wash.
+ *   type   no photo: the brand's colors with depth (a gradient, a glow, a
+ *          fine grid and rings spreading from the right), the headline at
+ *          full size, and the services panel beside it. The default without.
+ *
+ * Each ends with the one-row booking card, so the first screen still books a
+ * visit without the form leading it.
+ */
+function HomeHero({ b, groups, tel }) {
+  const style = heroStyleOf(b);
+  const classic = toneOf(b) === 'classic';
+  const book = (
+    <div className="mt-10 lg:mt-14">
+      <QuickBook b={b} groups={groups} classic={classic} />
+    </div>
+  );
+  if (style === 'type') {
+    return (
+      <section className="relative isolate overflow-hidden bg-primary-deep text-white">
+        <TypeGround
+          tone={toneOf(b)}
+          from="color-mix(in srgb, var(--primaryDeep) 82%, #000)"
+          to="color-mix(in srgb, var(--primary) 62%, var(--primaryDeep))"
+          glow="color-mix(in srgb, var(--primary) 55%, #fff)"
+          glow2="var(--accent)"
+          pattern="grid"
+          motif={<Motif kind="rings" accent="var(--accent-lit)" className="right-0 top-0 hidden h-full w-[min(70vw,880px)] text-white/[0.09] md:block" />}
+        />
+        <div className={`${wrap} pb-12 pt-12 sm:pb-16 sm:pt-16 lg:pb-16 lg:pt-20`}>
+          <div className="grid gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:items-center lg:gap-16 xl:gap-24">
+            <HeroWords b={b} tel={tel} classic={classic} accent ratingClass="lg:hidden" />
+            <div className="hidden min-w-0 lg:grid">
+              <ServicePanel b={b} groups={groups} classic={classic} />
+            </div>
+          </div>
+          {book}
+        </div>
+      </section>
+    );
+  }
+  const photo = (
+    <Img
+      className={`block h-auto max-h-[min(80svh,560px)] w-full object-cover lg:max-h-[min(66svh,600px)] lg:shadow-[0_40px_80px_-40px_rgba(0,0,0,0.7)] ${classic ? 'lg:rounded-xl' : 'lg:rounded-[24px]'}`}
+      src={b.hero.image}
+      alt={b.hero.imageAlt || ''}
+      sizes="(min-width: 1024px) 46vw, 100vw"
+      eager
+    />
+  );
+  if (style === 'photo') {
+    return (
+      <section className="relative isolate overflow-hidden bg-primary-deep text-white">
+        {/* From lg up the photo is the band's ground under the brand's deep wash, darkest behind the words. */}
+        <Img
+          className="absolute inset-0 -z-20 hidden h-full w-full object-cover lg:block"
+          src={b.hero.image}
+          alt={b.hero.imageAlt || ''}
+          sizes="100vw"
+          eager
+          data-backdrop=""
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(95deg,color-mix(in_srgb,var(--primaryDeep)_95%,#000)_0%,color-mix(in_srgb,var(--primaryDeep)_86%,transparent)_45%,color-mix(in_srgb,var(--primaryDeep)_30%,transparent)_100%)]"
+        />
+        <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 hidden h-1/2 bg-[linear-gradient(to_top,color-mix(in_srgb,var(--primaryDeep)_85%,transparent),transparent)] lg:block" />
+        <div className="lg:hidden">{photo}</div>
+        <div className={`${wrap} pb-12 pt-10 sm:pb-16 sm:pt-14 lg:flex lg:min-h-[min(78svh,720px)] lg:flex-col lg:justify-end lg:pb-16 lg:pt-28`}>
+          <div className="max-w-[46rem]">
+            <HeroWords b={b} tel={tel} classic={classic} />
+          </div>
+          {book}
+        </div>
+      </section>
+    );
+  }
+  return (
+    <section className="relative isolate overflow-hidden bg-primary-deep text-white">
+      <div
+        className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_90%_0%,color-mix(in_srgb,var(--primary)_70%,transparent),transparent_60%)]"
+        aria-hidden="true"
+      />
+      <div className={`${wrap} pb-12 sm:pb-16 lg:pb-16 lg:pt-16`}>
+        <div className="grid gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:items-center lg:gap-14 xl:gap-20">
+          {/* On a phone the photo runs edge to edge above the words; from lg up it stands beside them in its own
+              proportions, no taller than the screen allows, so neither a squarer photo's foot nor a wide one's
+              ends are cut off. */}
+          <div className="relative -mx-gutter min-w-0 lg:order-last lg:mx-0">
+            {photo}
+            {ratingLine(b) && (
+              <div
+                className={`absolute bottom-3 left-[clamp(16px,4vw,64px)] bg-white px-4 py-3 text-ink shadow-[0_24px_48px_-20px_rgba(0,0,0,0.55)] lg:bottom-5 lg:left-5 lg:px-5 lg:py-4 ${classic ? 'rounded-lg' : 'rounded-xl lg:rounded-2xl'}`}
+              >
+                <RatingBadge
+                  b={b}
+                  size={14}
+                  styles={{ box: 'gap-3', value: 'font-heading text-[28px] font-extrabold tracking-[-0.03em] text-ink lg:text-[34px]', count: 'text-[13px] font-medium text-muted' }}
+                />
+              </div>
+            )}
+          </div>
+          <div className="min-w-0 pt-2 lg:pt-0">
+            <HeroWords b={b} tel={tel} classic={classic} ratingClass="hidden" />
+          </div>
+        </div>
+        {book}
+      </div>
+    </section>
+  );
+}
+
+/** The highlights right under the hero: two to four things that set the business apart, as cards. */
+function HighlightBand({ b }) {
+  const items = highlightsOf(b);
+  if (!items.length) return null;
+  const classic = toneOf(b) === 'classic';
+  return (
+    <section aria-label={`Why choose ${b.shortName}`} className="bg-white py-10 sm:py-12">
+      <div className={wrap}>
+        <Highlights
+          items={items}
+          label={`What sets ${b.shortName} apart`}
+          styles={{
+            list: 'gap-4 lg:gap-5',
+            item: `${classic ? 'rounded-xl' : 'rounded-2xl'} border border-line bg-white p-5 shadow-[0_18px_40px_-32px_rgba(11,27,43,0.5)] sm:p-6`,
+            icon: `${iconTile} h-12 w-12`,
+            title: 'font-heading text-[17px] font-bold leading-snug text-ink',
+            text: 'mt-1.5 text-[16px] leading-[1.55] text-muted md:text-[15px]',
+          }}
+        />
+      </div>
+    </section>
+  );
+}
+
+/** How working with the business goes, where its own site describes it. */
+function HowItWorks({ b }) {
+  const steps = stepsOf(b);
+  if (!steps.length) return null;
+  return (
+    <section aria-labelledby="how-it-works" className="bg-white pb-[clamp(4rem,8vw,6.5rem)]">
+      <div className={wrap}>
+        <Eyebrow>How it works</Eyebrow>
+        <h2 id="how-it-works" className={`${h2} mb-10 lg:mb-12`}>
+          Working with {b.shortName}
+        </h2>
+        <Steps
+          items={steps}
+          styles={{
+            list: 'gap-5',
+            item: 'relative rounded-2xl border border-line bg-surface/60 p-6 sm:p-7',
+            number: 'grid h-11 w-11 place-items-center rounded-full bg-primary font-heading text-[15px] font-extrabold text-[color:var(--on-primary)]',
+            title: 'mt-5 font-heading text-[20px] font-extrabold leading-snug tracking-[-0.01em] text-ink',
+            text: 'mt-2 text-[16px] leading-[1.6] text-muted',
+          }}
+        />
+      </div>
+    </section>
+  );
+}
+
+/** The owner and the credentials, under the about text on the home and about pages. */
+function OwnerAndCredentials({ b, className = '', card = 'rounded-2xl bg-white p-5 sm:p-6' }) {
+  const owner = ownerOf(b);
+  const creds = credentialsOf(b);
+  if (!owner && !creds.length) return null;
+  return (
+    <div className={`grid gap-3 ${className}`}>
+      {owner && (
+        <div className={card}>
+          <Owner
+            owner={owner}
+            styles={{
+              box: 'items-center gap-5',
+              photo: 'h-20 w-20 rounded-full',
+              initials: 'h-20 w-20 rounded-full bg-primary font-heading text-[24px] font-extrabold text-[color:var(--on-primary)]',
+              name: 'font-heading text-[18px] font-bold text-ink',
+              role: 'mt-0.5 text-[15px] font-medium text-[color:var(--pt)]',
+              text: 'mt-2 text-[16px] leading-[1.55] text-muted md:text-[15px]',
+            }}
+          />
+        </div>
+      )}
+      {creds.length > 0 && (
+        <div className={card}>
+          <p className="mb-3 flex items-center gap-2 font-heading text-[13px] font-bold uppercase tracking-[0.14em] text-muted">Licensed and certified</p>
+          <Credentials
+            items={creds}
+            styles={{
+              list: 'gap-3 sm:grid-cols-2',
+              icon: 'text-[color:var(--pt)]',
+              label: 'text-[16px] font-semibold leading-snug text-ink md:text-[15px]',
+              detail: 'text-[14px] leading-snug text-muted',
+            }}
+          />
+        </div>
+      )}
+    </div>
+  );
+}
+
 /* ------------------------------------------------------------------- pages */
 
 /**
@@ -1032,60 +1459,8 @@ function Home({ b, groups, tel }) {
   const aboutFacts = !b.about?.image && (b.since || rating);
   return (
     <>
-      <section className="relative isolate flex flex-col overflow-hidden bg-primary-deep text-white">
-        {/* The brand's own color, with the grid it draws elsewhere, behind the words and the booking card. */}
-        <div
-          className={`absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_90%_0%,color-mix(in_srgb,var(--primary)_70%,transparent),transparent_60%)] ${b.hero.image ? 'hidden lg:block' : ''}`}
-          aria-hidden="true"
-        />
-        {b.hero.image && (
-          // On a phone the photo is shown whole above the words; from lg up it is framed whole below them. Laid
-          // behind the words and the card, its subject (mostly in the middle) was shaded out or hidden by the card.
-          // Cropped about the middle, not the top: a top-anchored band kept the sky and cut the work off at the waist.
-          // On a phone it keeps its own proportions, as a 16:10 band cut the crew at the foot of the photo off at the head.
-          // From lg up it keeps them too, centred and no taller than the screen: a 16:9 band cut a squarer photo's
-          // truck, parked along its foot, off at the wheels.
-          <div className="lg:order-last lg:mx-auto lg:w-full lg:max-w-page lg:px-gutter lg:pb-24">
-            <Img
-              className="block h-auto max-h-[80svh] w-full object-cover lg:mx-auto lg:w-auto lg:max-w-full lg:rounded-[24px] lg:shadow-[0_30px_60px_-35px_rgba(0,0,0,0.6)]"
-              src={b.hero.image}
-              alt={b.hero.imageAlt || ''}
-              sizes="(min-width: 1024px) 1320px, 100vw"
-              eager
-            />
-          </div>
-        )}
-        <div
-          className={`${wrap} grid gap-10 py-10 sm:py-16 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:items-center lg:gap-16 lg:py-24 xl:gap-24 ${b.hero.image ? 'lg:pb-16' : ''}`}
-        >
-          <div className="min-w-0">
-            <Eyebrow light>{b.hero.eyebrow}</Eyebrow>
-            <h1 className="font-heading font-display text-[clamp(2.4rem,1.2rem+4vw,4.3rem)] leading-[1.12] text-white [text-wrap:balance] break-words">
-              {/* The second half is solid white too: a see-through white turns grey over a busy photo and reads weaker than the first. */}
-              {b.hero.title} {b.hero.titleAccent && <span className="text-white">{b.hero.titleAccent}</span>}
-            </h1>
-            <p className="mt-6 max-w-[34rem] text-[17px] leading-[1.65] text-white/85 sm:text-[18px]">{b.hero.lead}</p>
-            <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
-              <a href="/contact" className={`${btn} bg-white text-[color:var(--pt)] hover:bg-surface`}>
-                {askOf(b).act} <ArrowRight size={18} aria-hidden="true" />
-              </a>
-              {/* Filled with the brand's deep color so lettering in the photo behind (a sign, a truck's door) never shows through the number. */}
-              <a href={tel} className={`${btn} border border-white/40 bg-[color-mix(in_srgb,var(--primaryDeep)_88%,#000)] text-white hover:bg-primary-deep`}>
-                <Phone size={17} aria-hidden="true" /> {b.phone}
-              </a>
-            </div>
-            {rating && (
-              <p className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-1 text-[16px] font-medium text-white/85 md:text-[15px]">
-                <Stars value={b.rating} size={16} /> <span>{rating}</span>
-              </p>
-            )}
-          </div>
-          <div className="min-w-0 text-ink lg:justify-self-end lg:w-full lg:max-w-[420px]">
-            <BookingCard b={b} groups={groups} />
-          </div>
-        </div>
-      </section>
-
+      <HomeHero b={b} groups={groups} tel={tel} />
+      <HighlightBand b={b} />
       <TrustRow b={b} />
 
       <section id="services" className={`${pad} bg-white`}>
@@ -1199,6 +1574,8 @@ function Home({ b, groups, tel }) {
         </section>
       )}
 
+      <HowItWorks b={b} />
+
       {b.about && (
         <section className={`${pad} bg-surface`}>
           {/* The photo stands level with the heading, so words that run longer than it never leave a bare block above it.
@@ -1262,6 +1639,7 @@ function Home({ b, groups, tel }) {
                     ))}
                   </ul>
                 )}
+                <OwnerAndCredentials b={b} className="mt-8" />
                 <a href="/about" className="mt-8 inline-flex min-h-[44px] items-center gap-1.5 font-heading text-[16px] font-bold text-[color:var(--pt)] no-underline hover:underline">
                   About {b.shortName} <ArrowRight size={17} aria-hidden="true" />
                 </a>
@@ -1271,7 +1649,7 @@ function Home({ b, groups, tel }) {
         </section>
       )}
 
-      <Reviews b={b} />
+      <Reviews b={b} more />
       <Faqs b={b} tel={tel} />
       <ClosingBand
         b={b}
@@ -1656,7 +2034,7 @@ function AboutPage({ b, groups, tel }) {
         <CtaPair b={b} tel={tel} />
       </PageHero>
       {/* A service area with nothing else to stand beside is left to the closing band's chips, not drawn as one card over a blank. */}
-      {(story.length > 0 || values.length > 0 || b.since || rating || licenses.length > 0) && (
+      {(story.length > 0 || values.length > 0 || b.since || rating || licenses.length > 0 || ownerOf(b) || credentialsOf(b).length > 0) && (
       <section className={`${pad} bg-white`}>
         <div className={`${wrap} grid gap-12 ${story.length > 0 ? 'lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]' : ''} lg:gap-20`}>
           {/* The rest of the about text is whatever the business wrote about itself, often the owner's own story, not a process. */}
@@ -1723,6 +2101,7 @@ function AboutPage({ b, groups, tel }) {
                 </dl>
               </div>
             )}
+            <OwnerAndCredentials b={b} card="rounded-2xl border border-line p-6" />
             {list(b.serviceArea).length > 0 && (
               <div className="rounded-2xl border border-line p-6">
                 <h2 className="flex items-center gap-2 font-heading text-[17px] font-bold text-ink">
@@ -1735,7 +2114,7 @@ function AboutPage({ b, groups, tel }) {
         </div>
       </section>
       )}
-      <Reviews b={b} surface />
+      <Reviews b={b} surface max={6} />
       <ClosingBand b={b} tel={tel} title={`${askOf(b).closing} ${b.shortName}`} text={askOf(b).closingText} />
     </>
   );
@@ -1815,7 +2194,7 @@ function ContactPage({ b, groups, tel }) {
             )}
             <ul className="grid gap-1 rounded-2xl border border-line p-3">
               {[
-                [Phone, tel, b.phone],
+                ...phonesOf(b).map((p) => [Phone, p.href, p.label ? `${p.label} ${p.number}` : p.number]),
                 // A long address may break after the @ and before each dot of its domain but the last, never mid-word,
                 // so '.com' never drops onto a line of its own.
                 b.email && [Mail, `mailto:${b.email}`, b.email.split(/(?=\.[^.]*\.)|(?<=@)/).flatMap((p, i) => (i ? [<wbr key={i} />, p] : [p]))],
@@ -1850,6 +2229,12 @@ function ContactPage({ b, groups, tel }) {
                     ))}
                   </tbody>
                 </table>
+              </div>
+            )}
+            {languagesOf(b).length > 0 && (
+              <div className="rounded-2xl border border-line p-6">
+                <h2 className="font-heading text-[17px] font-bold text-ink">Languages</h2>
+                <Languages items={languagesOf(b)} className="mt-3 text-[16px] text-muted md:text-[15px]" />
               </div>
             )}
             {list(b.serviceArea).length > 0 && (
@@ -1898,6 +2283,7 @@ export default function Hvac({ b, path = '' }) {
   return (
     <div className="min-w-0 overflow-x-clip bg-white font-body text-[16px] text-ink antialiased [&_.font-heading]:[word-spacing:0.08em]" style={style}>
       <EmergencyStrip b={b} tel={tel} />
+      <LinesStrip b={b} />
       <Header b={b} groups={groups} tel={tel} current={current} />
       <main>
         {page === 'home' && <Home b={b} groups={groups} tel={tel} />}
