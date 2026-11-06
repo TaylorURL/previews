@@ -38,29 +38,79 @@
       0.55,
       0.442,
       0.333,
-      0.221,
-      0.108,
+      0.0,
+      0.0,
       0.0
     ]
   },
+  "heroStyle": "photo",
+  "tone": "bold",
   "hero": {
-    "eyebrow": "Hunt & Hunt",
-    "title": "High-volume cnc and lights-out cnc machining",
-    "lead": "Based in Houston, Texas, Hunt and Hunt Ltd. is a precision machine shop and high-volume manufacturer situated at the heart of the energy and aerospace industries, as well as the nation’s largest port.",
-    "titleAccent": "in Houston"
+    "eyebrow": "Hunt & Hunt · Houston",
+    "title": "From a small machine shop to 32 robotic cells",
+    "lead": "Hunt & Hunt is a precision machine shop and high-volume manufacturer in Houston, Texas, serving the energy and aerospace industries. Our robotic cells produce many thousands of parts a month with fewer variances.",
+    "image": "/brands/hunthunt/photo1",
+    "imageAlt": "A photo of Hunt & Hunt",
+    "titleAccent": "making parts in Houston since 1954"
   },
   "serviceArea": [
     "Houston"
   ],
+  "highlights": [
+    {
+      "title": "104,000 sq ft complex",
+      "text": "More than 30 CNC, laser and multitasking machines under one roof.",
+      "icon": "building"
+    },
+    {
+      "title": "Founded in 1954",
+      "text": "Making precision parts in Houston for 72 years.",
+      "icon": "calendar"
+    },
+    {
+      "title": "Near the Port of Houston",
+      "text": "In one of the nation's biggest hubs for oil and gas.",
+      "icon": "anchor"
+    }
+  ],
+  "phones": [
+    {
+      "label": "Main",
+      "number": "(713) 413-2500"
+    },
+    {
+      "label": "Phone",
+      "number": "(713) 413-1271"
+    }
+  ],
+  "industries": [
+    "Energy",
+    "Aerospace",
+    "Oil and gas",
+    "Automotive",
+    "Marine"
+  ],
+  "statesServed": [
+    "Texas"
+  ],
   "ask": "quote",
-  "summary": "Hunt & Hunt offers high-volume cnc machining and lights-out cnc machining in and around Houston.",
+  "summary": "High-volume CNC machining, robotic cells and tube laser cutting from our shop in Houston, Texas.",
   "groups": [
     {
       "slug": "high-volume-cnc-machining",
       "title": "High-Volume Cnc Machining",
       "icon": "settings",
       "summary": "Production CNC machining built to repeat: 32 robotic cells and multi-tasking machines running the same part, the same way, at volume.",
-      "intro": "Production CNC machining built to repeat: 32 robotic cells and multi-tasking machines running the same part, the same way, at volume."
+      "intro": "Production CNC machining built to repeat: 32 robotic cells and multi-tasking machines running the same part, the same way, at volume.",
+      "image": "/brands/hunthunt/photo3",
+      "imageAlt": "A photo of Hunt & Hunt"
+    },
+    {
+      "slug": "robotic-cnc-cells",
+      "title": "Robotic Cnc Cells",
+      "icon": "settings",
+      "summary": "Robotic cells run unattended through nights and weekends, adding capacity without adding shifts.",
+      "intro": "Robotic cells run unattended through nights and weekends, adding capacity without adding shifts."
     },
     {
       "slug": "lights-out-cnc-machining",
@@ -68,17 +118,31 @@
       "icon": "settings",
       "summary": "Robotic cells run unattended through nights and weekends, adding capacity without adding shifts.",
       "intro": "Robotic cells run unattended through nights and weekends, adding capacity without adding shifts."
+    },
+    {
+      "slug": "multitasking-machines",
+      "title": "Multitasking Machines",
+      "icon": "settings",
+      "summary": "Multitasking machines are part of the more than 30 CNC, laser and multitasking machines in our 104,000-square-foot Houston complex.",
+      "intro": "Multitasking machines are part of the more than 30 CNC, laser and multitasking machines in our 104,000-square-foot Houston complex."
+    },
+    {
+      "slug": "mill-turn-machining",
+      "title": "Mill/turn Machining",
+      "icon": "settings",
+      "summary": "We run mill/turn work in our Houston complex alongside our CNC, laser and multitasking machines.",
+      "intro": "We run mill/turn work in our Houston complex alongside our CNC, laser and multitasking machines."
     }
   ],
   "about": {
     "eyebrow": "About us",
-    "title": "About Hunt & Hunt",
+    "title": "Making parts in Houston for 72 years",
     "text": [
-      "Based in Houston, Texas, Hunt and Hunt Ltd. is a precision machine shop and high-volume manufacturer situated at the heart of the energy and aerospace industries, as well as the nation’s largest port. We use the advanced technology of industrial robotic cells to produce many thousands of parts per month with fewer variances and consistently high quality.",
-      "In 72 years of service, we continue to meet and exceed our customers’ contractual and quality requirements. Our proactive approach to process and quality excellence comes from our proactive internal research and development program, and our turnkey services mean our customers can rely on us as a “Done In One” precision manufacturing company.",
-      "Located in a crucial industrial belt right near the coast, we have a proven history and track record of serving the oil and gas industry based in the vicinity. This strategic location has allowed us to grow our capabilities right across the entire energy value chain and beyond."
+      "Hunt & Hunt has been making parts in Houston since 1954, growing from a small machine shop into a high-volume precision manufacturer.",
+      "Our team designed and built seven rotary laser machining centers in-house, and our motto is “cutting into the future.”",
+      "Sourcing, manufacturing, warehousing and worldwide distribution come from a single source, backed by our internal research and development program."
     ],
-    "image": "/brands/hunthunt/photo1",
+    "image": "/brands/hunthunt/photo2",
     "imageAlt": "A photo of Hunt & Hunt"
   }
 }

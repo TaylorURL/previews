@@ -62,9 +62,11 @@ python3 -m scripts.autobuild.versus <slug> <their-website> [trade]
 
 Reviews are quoted word for word only: up to three recent four- and five-star Google reviews (Places API, Place Details) when `PLACES_API_KEY` is set and the row has a `place_id`, with the author as first name and last initial, else the testimonials on their own site. The check (`check.py`) proves every written sentence against the fact sheet again, every review against the Places answer or their pages, and every phone line, language, credential and name against their pages. What a build read and wrote is kept in `.autobuild/facts/<slug>.json`.
 
+Photos come from their own pages. When the page source gives fewer than four, or none big enough for the hero, `photos.mjs` opens the pages in a headless browser, scrolls them so lazy-loaded pictures appear, follows a gallery link, and takes every picture shown, CSS backgrounds included, at the largest size the site builder (GoDaddy, Wix, Squarespace, Duda, WordPress) will serve. Every photo then has to pass the quality checks and the vision check, and is measured again once saved. Rebuilding a preview whose site no longer has a hero-size photo keeps that preview's own photos.
+
 The brand also gets `heroStyle` (photo for a wide, strong photo; split for a decent one; type with none) and `tone` (classic when their headings are set in a serif or the fact sheet reads them as traditional, else bold). A business with no usable logo is never parked for it; its name is set in type.
 
-The industrial template reads the hvac brand shape and health the professional one, so the same builder fills them, and outdoor (still to come) will read the hvac shape too; the template comes from the prospect's `industry`, and `HELD` in `scripts/routine.py` keeps the runs off these layouts until it no longer names them.
+The outdoor and industrial templates read the hvac brand shape and health the professional one, so the same builder fills them; the template comes from the prospect's `industry`.
 
 `python3 -m scripts.autobuild.selftest_facts` proves the fact sheet's quote checks, the copy's support checks, the Places review picker (against an answer recorded in Google's documented shape) and the check's review and phone proofs, with no model asked.
 

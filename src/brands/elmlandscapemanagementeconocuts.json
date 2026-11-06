@@ -10,15 +10,15 @@
   "state": "TX",
   "zip": "77530",
   "rating": 3.2,
-  "reviewCount": 39,
+  "reviewCount": 40,
   "brand": {
-    "primary": "#18301a",
-    "primaryDeep": "#112212",
-    "accent": "#4a9350",
-    "ink": "#161c20",
-    "surface": "#f1f3f1",
+    "primary": "#35822e",
+    "primaryDeep": "#255b20",
+    "accent": "#74cb6c",
+    "ink": "#182221",
+    "surface": "#f4fbf4",
     "muted": "#5b6470",
-    "line": "#dedfe0",
+    "line": "#dfe0e0",
     "heading": "'Open Sans', system-ui, sans-serif",
     "body": "'Rubik', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Rubik:wght@400;600;700&display=swap",
@@ -29,33 +29,67 @@
     "logoRatio": 2.614,
     "logoGround": "#14181f",
     "logoReads": [
-      1.0,
-      0.999,
-      0.989,
-      0.979,
-      0.97,
-      0.958,
-      0.949,
-      0.939,
-      0.929,
-      0.919,
-      0.911
+      0.998,
+      0.995,
+      0.935,
+      0.881,
+      0.829,
+      0.781,
+      0.727,
+      0.667,
+      0.018,
+      0.189,
+      0.231
     ]
   },
+  "heroStyle": "photo",
+  "tone": "bold",
   "hero": {
-    "eyebrow": "ELM Landscape Management (Econocuts)",
-    "title": "Commercial landscaping",
-    "lead": "ELM Landscape Management has been a key partner for many businesses and individuals around Houston, helping to keep our city neat and green.",
+    "eyebrow": "ELM Landscape Management (Econocuts) · Channelview",
+    "title": "Keeping Houston beautiful",
+    "lead": "ELM Landscape Management looks after lawns, trees and irrigation for homes, businesses and municipalities, from Channelview across the greater Houston area.",
     "image": "/brands/elmlandscapemanagementeconocuts/photo1",
     "imageAlt": "A photo of ELM Landscape Management (Econocuts)",
-    "titleAccent": "in Channelview"
+    "titleAccent": "for nearly 40 years."
   },
   "serviceArea": [
     "Channelview",
-    "Houston"
+    "Greater Houston area",
+    "Clearlake",
+    "Katy",
+    "Pasadena",
+    "Spring",
+    "Sugar Land"
   ],
+  "highlights": [
+    {
+      "title": "Nearly 40 years",
+      "text": "Serving the greater Houston area for nearly 40 years.",
+      "icon": "calendar"
+    },
+    {
+      "title": "Homes and businesses",
+      "text": "Residential and commercial properties, and municipalities across the city.",
+      "icon": "building"
+    },
+    {
+      "title": "400+ managed properties",
+      "text": "Hundreds of properties are under ELM's care.",
+      "icon": "check"
+    },
+    {
+      "title": "Two offices",
+      "text": "ELM has grown to two offices under its current owner.",
+      "icon": "map"
+    }
+  ],
+  "owner": {
+    "name": "Christophe Merriam",
+    "role": "Owner",
+    "text": "He quickly came to realize how much he enjoyed the team as well as the work itself and took over after the previous owners retired."
+  },
   "ask": "quote",
-  "summary": "ELM Landscape Management (Econocuts) offers commercial landscaping, irrigation, maintenance & installation, and tree services across Channelview and Houston.",
+  "summary": "Commercial landscaping, tree services and irrigation in Clearlake, Katy, Pasadena and the rest of the greater Houston area.",
   "groups": [
     {
       "slug": "commercial-landscaping",
@@ -67,7 +101,7 @@
     {
       "slug": "irrigation-maintenance-installation",
       "title": "Irrigation, Maintenance & Installation",
-      "icon": "droplets",
+      "icon": "leaf",
       "summary": "From sprinkler repairs to weekly upkeep and new installs, ELM keeps your property green and growing.",
       "intro": "From sprinkler repairs to weekly upkeep and new installs, ELM keeps your property green and growing."
     },
@@ -79,27 +113,27 @@
       "intro": "From trimming to removals, ELM keeps your trees healthy, safe, and looking their best."
     },
     {
-      "slug": "tree-care",
-      "title": "Tree Care",
+      "slug": "lawn-maintenance",
+      "title": "Lawn Maintenance",
       "icon": "leaf",
-      "summary": "Healthy trees add shade, value, and curb appeal.",
-      "intro": "Healthy trees add shade, value, and curb appeal. They can also become a risk when branches are overgrown or damaged, especially during storm season."
+      "summary": "We offer ongoing maintenance services that keep your landscape thriving year-round.",
+      "intro": "We offer ongoing maintenance services that keep your landscape thriving year-round."
     },
     {
-      "slug": "maintenance-installations",
-      "title": "Maintenance & Installations",
+      "slug": "irrigation",
+      "title": "Irrigation",
       "icon": "leaf",
-      "summary": "Get help maintaining current setups and tackling new installs.",
-      "intro": "Get help maintaining current setups and tackling new installs."
+      "summary": "ELM designs, installs, and repairs systems that water your property efficiently.",
+      "intro": "ELM designs, installs, and repairs systems that water your property efficiently, so your lawn stays green and your water bill stays reasonable."
     }
   ],
   "about": {
     "eyebrow": "About us",
-    "title": "About ELM Landscape Management (Econocuts)",
+    "title": "Founded to help keep Houston beautiful",
     "text": [
-      "ELM Landscape Management has been a key partner for many businesses and individuals around Houston, helping to keep our city neat and green.",
-      "ELM was founded nearly 40 years ago with the mission of helping to keep Houston beautiful. As we’ve grown, that mission has grown as well and today we support a variety of businesses and individuals around Houston.",
-      "Our team is made up of hardworking and dedicated professionals, each of whom is passionate about outdoor spaces. Our owner, Christophe Merriam, started at ELM Landscape Management over 10 years ago, working alongside employees both in the field and in the office."
+      "ELM was founded nearly 40 years ago with the mission of helping to keep Houston beautiful, and as it has grown, that mission has grown with it.",
+      "Owner Christophe Merriam started at ELM more than 10 years ago, working alongside employees in the field and in the office, and took over after the previous owners retired.",
+      "His mantra, \"relentless execution\", is there to remind every member of the team to make each project perfect. Under his leadership ELM has grown to two offices and hundreds of commercial and residential clients."
     ],
     "image": "/brands/elmlandscapemanagementeconocuts/photo2",
     "imageAlt": "A photo of ELM Landscape Management (Econocuts)"

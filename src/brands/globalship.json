@@ -24,46 +24,124 @@
     "fonts": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap",
     "logo": "/brands/globalship/logo.webp",
     "logoMono": "/brands/globalship/logo-mono.webp",
-    "logoWidth": 130,
-    "logoHeight": 74,
-    "logoRatio": 1.754,
+    "logoWidth": 114,
+    "logoHeight": 58,
+    "logoRatio": 1.973,
     "logoGround": "#ffffff",
     "logoReads": [
-      0.314,
-      0.262,
-      0.196,
+      0.343,
+      0.3,
+      0.232,
       0.738,
-      0.791,
-      0.828,
-      0.857,
-      0.893,
-      0.929,
-      0.965,
-      1.0
-    ]
+      0.77,
+      0.803,
+      0.835,
+      0.865,
+      0.657,
+      0.679,
+      0.707
+    ],
+    "logoName": true
   },
+  "heroStyle": "split",
+  "tone": "bold",
   "hero": {
-    "eyebrow": "Global Ship Services",
-    "title": "Deck & engine supplies",
-    "lead": "Your trusted partner in marine supplies, spare parts, and global technical ship services. Reliable solutions to keep vessels running worldwide.",
+    "eyebrow": "Global Ship Services · Houston",
+    "title": "50 years as a ship chandler, from Houston to Fujairah",
+    "lead": "Global Ship Services is a ship chandler in Houston, Texas, supplying and repairing vessels for ship owners and operators at ports including Houston, New Orleans and Corpus Christi.",
     "image": "/brands/globalship/photo1",
     "imageAlt": "A photo of Global Ship Services",
-    "titleAccent": "in Houston"
+    "titleAccent": "from the Gulf Coast to the Middle East."
   },
   "serviceArea": [
-    "Houston"
+    "Houston",
+    "New Orleans",
+    "Corpus Christi",
+    "Jeddah",
+    "Fujairah"
+  ],
+  "highlights": [
+    {
+      "title": "50 years in the trade",
+      "text": "50 years of industry experience as a ship chandler.",
+      "icon": "award"
+    },
+    {
+      "title": "Gulf Coast and Middle East warehouses",
+      "text": "Warehouses across the U.S. Gulf Coast and the Middle East.",
+      "icon": "building"
+    },
+    {
+      "title": "110+ qualified staff",
+      "text": "A team of more than 110 qualified people.",
+      "icon": "users"
+    },
+    {
+      "title": "ISO certified",
+      "text": "Certified to ISO 9001:2015, 14001:2015, 37001:2016 and 45001:2018.",
+      "icon": "badge"
+    }
+  ],
+  "phones": [
+    {
+      "label": "Phone",
+      "number": "(713) 779-9901"
+    },
+    {
+      "label": "Main",
+      "number": "(713) 589-2282"
+    },
+    {
+      "label": "Phone",
+      "number": "(504) 338-0012"
+    }
+  ],
+  "credentials": [
+    {
+      "label": "ISSA",
+      "detail": "ISSA Membership Certificate"
+    },
+    {
+      "label": "ISSA",
+      "detail": "ISSA Quality Standard Certificate"
+    },
+    {
+      "label": "IMPA",
+      "detail": "IMPA Supplier Certificate"
+    },
+    {
+      "label": "HACCP",
+      "detail": "HACCP Certificate"
+    },
+    {
+      "label": "ISO 9001:2015",
+      "detail": "ISO 9001:2015 Certificate"
+    },
+    {
+      "label": "ISO 14001:2015",
+      "detail": "ISO 14001:2015 Certificate"
+    },
+    {
+      "label": "ISO 37001:2016",
+      "detail": "ISO 37001:2016 Certificate"
+    },
+    {
+      "label": "ISO 45001:2018",
+      "detail": "ISO 45001:2018 Certificate"
+    }
+  ],
+  "industries": [
+    "Ship owners and operators"
   ],
   "ask": "quote",
-  "summary": "Global Ship Services offers deck & engine supplies, and ship repairs & maintenance in and around Houston.",
+  "summary": "Ship provisions, bonded stores and ship repairs for vessels at Houston, New Orleans and Corpus Christi.",
   "groups": [
     {
       "slug": "deck-engine-supplies",
       "title": "Deck & Engine Supplies",
       "icon": "settings",
       "summary": "Professional technical assistance, repairs, and support to ensure smooth vessel operations.",
-      "intro": "Professional technical assistance, repairs, and support to ensure smooth vessel operations.",
-      "image": "/brands/globalship/photo3",
-      "imageAlt": "A photo of Global Ship Services"
+      "intro": "Professional technical assistance, repairs, and support to ensure smooth vessel operations."
     },
     {
       "slug": "ship-repairs-maintenance",
@@ -75,13 +153,13 @@
   ],
   "about": {
     "eyebrow": "About us",
-    "title": "About Global Ship Services",
+    "title": "A ship chandler with fifty years behind it",
     "text": [
-      "We are a well-reputed Ship Chandler based in the U.S. and Global with 50 years of industry experience. With warehouses across the U.S. Gulf Coast and Middle East. We proudly serve thousands of vessels every year.",
-      "Global Ship Services operates in major U.S. ports including Houston, New Orleans, and Corpus Christi, Jeddah, Fujairah, we also maintaining a strong international presence with our partner in South America, Asia and partners across Africa and many more.",
-      "We provide comprehensive marine solutions including Ship Provisions & Stores, Bonded Stores, Deck & Engine Supplies, Ship Repairs & Maintenance, and Cash to Master (CTM) services."
+      "We are a well-reputed ship chandler based in the U.S., with 50 years of industry experience.",
+      "Our warehouses across the U.S. Gulf Coast and Middle East serve thousands of vessels every year.",
+      "Our mission is marine supplies and services for safe, efficient and sustainable ship operations, backed by experienced engineers ready to solve complex challenges."
     ],
-    "image": "/brands/globalship/photo2",
+    "image": "/brands/globalship/photo3",
     "imageAlt": "A photo of Global Ship Services"
   }
 }

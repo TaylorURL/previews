@@ -360,7 +360,7 @@ def _page_of(item, texts):
     url = str(item.get("url") or "")
     if url in texts:
         return url
-    key = lambda u: urllib.parse.urlparse(u).netloc.replace("www.", "") + urllib.parse.urlparse(u).path.rstrip("/") + \
+    key = lambda u: compose.collect.site_host(u) + urllib.parse.urlparse(u).path.rstrip("/") + \
         ("#" + urllib.parse.urlparse(u).fragment if urllib.parse.urlparse(u).fragment else "")
     return next((u for u in texts if key(u) == key(url)), None)
 
@@ -534,6 +534,53 @@ def sheet(prospect, pages, business, notes, towns=()):
     kept["dropped"] = dropped
     kept["pages"] = texts
     return kept
+
+
+# What a brand may carry beyond what its page needs: each is shown only where
+# it is proved, and one that is not is left out, never a reason to park.
+OPTIONAL = ("industries", "statesServed", "credentials", "highlights", "steps", "owner", "languages", "phones", "reviews")
+
+
+def drop_unproved(brand, evidence, notes):
+    """Takes out of `brand` every optional item (OPTIONAL) that the check
+    before landing (check.written) would refuse, one item at a time, and says
+    in the notes what went and why. What the page needs - the name, phone,
+    address, headline, lead, about text, summary and services - is left as it
+    is, so those keep their checks and still park a business that fails them."""
+    from . import check
+    base = set(check.written({}, evidence))
+
+    def refused(key, value):
+        return [p for p in check.written({key: value}, evidence) if p not in base]
+
+    for key in OPTIONAL:
+        value = brand.get(key)
+        if not value:
+            continue
+        if isinstance(value, dict):
+            why = refused(key, value)
+            if why:
+                del brand[key]
+                notes.append(f"left out the {key} the check could not prove: {why[0][:160]}")
+            continue
+        kept = []
+        for item in value:
+            why = refused(key, [item])
+            if why:
+                notes.append(f"left out one {key} item the check could not prove: {why[0][:160]}")
+            else:
+                kept.append(item)
+        if kept:
+            brand[key] = kept
+        else:
+            del brand[key]
+    # What is left of the extra phone lines and languages says something only
+    # beside the listing's own number and English.
+    if brand.get("phones") and all(digits(p.get("number"))[-10:] == digits(brand.get("phone"))[-10:] for p in brand["phones"]):
+        del brand["phones"]
+    if brand.get("languages") and all(language == "English" for language in brand["languages"]):
+        del brand["languages"]
+    return brand
 
 
 def items(fact_sheet):
