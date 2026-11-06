@@ -382,7 +382,7 @@ def dispatch(template, findings, budget):
         "Bash(node scripts/autobuild/shoot.mjs:*)", "Bash(node scripts/autobuild/layout.mjs:*)", "Bash(git diff:*)",
         "Bash(git status:*)", "Bash(python3 -m scripts.autobuild.selftest_facts:*)",
         "Bash(python3 -m scripts.autobuild.selftest_photos:*)",
-        "--setting-sources", "", "--no-session-persistence", "--output-format", "json",
+        "--setting-sources", "", "--strict-mcp-config", "--no-session-persistence", "--output-format", "json",
         "--json-schema", json.dumps(FIX_SCHEMA), prompt,
     ]
     try:
