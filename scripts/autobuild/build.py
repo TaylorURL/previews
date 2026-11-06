@@ -645,7 +645,7 @@ def _build(prospect, root, slug, known):
         about = copy["about"]["text"]
     text_areas = compose.areas_of(text, town, TOWNS)
     towns_said = [compose.plain(t["name"]).split(",")[0].strip() for t in (sheet or {}).get("towns") or []]
-    towns_said = [t for t in towns_said if t and len(t) <= 30 and not re.search(r"\d", t)]
+    towns_said = [t for t in towns_said if t and len(t) <= 30 and not re.search(r"\d", t) and not compose.COUNTRY.fullmatch(t)]
     areas = list(dict.fromkeys([town] + towns_said))[:12] if towns_said else text_areas
     # The year they were founded is the earliest they give; a later one
     # ("Since 2023") dates something newer, such as a move or a new service.
@@ -1019,7 +1019,18 @@ def _facts_fields(brand, sheet, copy, google, phone, template, state):
         brand["owner"] = block
     # Who they work for says something of an industrial firm; of a
     # landscaper it only says "homes and businesses".
-    industries = list(dict.fromkeys(compose.plain(i["name"]) for i in sheet.get("industries") or []))
+    # One named as a sector ("Energy industry") is the sector's name, and one
+    # of two sectors said as one ("Petrochemical and maritime industry") is
+    # the two by their own names; a trade that is one ("Oil and gas") stays.
+    def sectors(name):
+        bare = re.fullmatch(r"(?:the\s+)?(.+?)\s+(?:industry|industries|sectors?)", name, re.I)
+        if not bare:
+            return [name]
+        parts = [p for p in re.split(r",\s*(?:and\s+)?|\s+(?:and|&)\s+", bare.group(1)) if p]
+        if len(parts) < 2 or not all(re.fullmatch(r"[A-Za-z-]+(?:al|ic|ime|ine|ive)", p) for p in parts):
+            parts = [bare.group(1)]
+        return [p[:1].upper() + p[1:] for p in parts]
+    industries = list(dict.fromkeys(n for i in sheet.get("industries") or [] for n in sectors(compose.plain(i["name"]))))
     if industries and template == "industrial":
         brand["industries"] = industries[:10]
     states = list(dict.fromkeys(compose.plain(s["name"]) for s in sheet.get("states") or []))
