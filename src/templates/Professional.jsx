@@ -1447,27 +1447,19 @@ function ServicePage(props) {
   );
 }
 
-function initials(name) {
-  return name
-    .split(/\s+/)
-    .filter(Boolean)
-    .map((w) => w[0])
-    .slice(0, 2)
-    .join('');
-}
-
 function TeamPage(props) {
   const { b } = props;
   const all = list(b.team);
   // People the site gives only a name and role for are listed together under the
   // full cards, so their cards do not stand empty beside a colleague's bio or photo.
+  // They keep the cards' rule and name style, so they read as the same team, not as an afterthought.
   const full = all.filter((p) => p.bio || p.image);
   const named = full.length ? all.filter((p) => !p.bio && !p.image) : [];
   const team = full.length ? full : all;
-  // With no one's photo to show, the people are drawn as their names and
-  // words alone; a wall of grey boxes with initials reads as placeholders.
-  // Initials stand in only beside colleagues who do have a photo.
-  const photos = team.some((p) => p.image);
+  // Portrait cards only when everyone has a photo; otherwise the people are drawn
+  // as their names and words, since a box of initials where a portrait should be
+  // reads as a placeholder. Those who do have a photo show it small and round above their name.
+  const photos = team.every((p) => p.image);
   // One person alone spans the row, the photo or name beside the words, so a
   // single card does not sit at the left of an empty band.
   const alone = team.length === 1;
@@ -1494,14 +1486,11 @@ function TeamPage(props) {
             <li key={p.name} className={`min-w-0 ${photos ? '' : 'border-t-2 border-accent pt-6'} ${alone ? row : ''}`}>
               {/* Framed by a hairline, so a portrait whose edge is near-white (a door frame, a studio
                   backdrop) keeps a clean edge against the white page instead of fading into it. */}
-              {p.image ? (
+              {p.image && photos && (
                 <Img className="aspect-[4/5] w-full rounded-lg border border-line bg-surface object-cover object-top" src={p.image} alt={p.imageAlt || p.name} sizes={alone ? '(max-width: 640px) 100vw, 40vw' : team.length === 2 || lone ?'(max-width: 640px) 100vw, 50vw' : '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'} />
-              ) : (
-                photos && (
-                  <span aria-hidden="true" className="grid aspect-[4/5] w-full place-items-center rounded-lg bg-surface font-heading text-6xl text-primary/70">
-                    {initials(p.name)}
-                  </span>
-                )
+              )}
+              {p.image && !photos && (
+                <Img className="mb-4 size-24 rounded-full border border-line bg-surface object-cover object-top" src={p.image} alt={p.imageAlt || p.name} sizes="96px" />
               )}
               <div className="min-w-0">
                 <h2 className={`${photos ? 'mt-5' : ''} ${alone && photos ? 'sm:mt-0' : ''} font-heading font-display-2 text-[1.35rem] leading-snug text-ink`}>{p.name}</h2>
@@ -1512,8 +1501,8 @@ function TeamPage(props) {
               {beside && (
                 <ul className="mt-10 grid gap-y-6 lg:col-start-1 lg:mt-10">
                   {named.map((n) => (
-                    <li key={n.name} className="min-w-0 border-t border-line pt-4">
-                      <h2 className="font-heading font-display-2 text-lg leading-snug text-ink">{n.name}</h2>
+                    <li key={n.name} className="min-w-0 border-t-2 border-accent pt-6">
+                      <h2 className="font-heading font-display-2 text-[1.35rem] leading-snug text-ink">{n.name}</h2>
                       <p className="mt-1 text-[13px] font-bold uppercase tracking-[0.14em] text-accent">{n.role}</p>
                     </li>
                   ))}
@@ -1525,8 +1514,8 @@ function TeamPage(props) {
         {named.length > 0 && !beside && (
           <ul className={`${wrap} mt-16 grid gap-x-6 gap-y-6 ${namedCols}`}>
             {named.map((p) => (
-              <li key={p.name} className="min-w-0 border-t border-line pt-4">
-                <h2 className="font-heading font-display-2 text-lg leading-snug text-ink">{p.name}</h2>
+              <li key={p.name} className="min-w-0 border-t-2 border-accent pt-6">
+                <h2 className="font-heading font-display-2 text-[1.35rem] leading-snug text-ink">{p.name}</h2>
                 <p className="mt-1 text-[13px] font-bold uppercase tracking-[0.14em] text-accent">{p.role}</p>
               </li>
             ))}
