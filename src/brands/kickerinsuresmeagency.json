@@ -14,7 +14,7 @@
   "brand": {
     "primary": "#0101ff",
     "primaryDeep": "#0000b3",
-    "accent": "#f22c2f",
+    "accent": "#e41013",
     "ink": "#141832",
     "surface": "#f0f0ff",
     "muted": "#5b6470",
@@ -25,41 +25,99 @@
     "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
     "logo": "/brands/kickerinsuresmeagency/logo.webp",
     "logoMono": "/brands/kickerinsuresmeagency/logo-mono.webp",
-    "logoWidth": 153,
+    "logoWidth": 172,
     "logoHeight": 58,
-    "logoRatio": 2.636,
+    "logoRatio": 2.959,
     "logoGround": "#ffffff",
     "logoReads": [
-      0.274,
-      0.172,
+      0.277,
+      0.174,
       0.176,
-      0.244,
-      0.352,
+      0.031,
+      0.093,
       0.46,
       0.565,
       0.671,
       0.782,
       0.893,
-      1.0
+      0.98
     ]
   },
+  "heroStyle": "split",
+  "tone": "classic",
   "hero": {
-    "eyebrow": "Kicker Insures Me Agency",
-    "title": "Homeowners and flood insurance in Deer Park",
-    "lead": "Independent insurance agency for your homeowners, auto & other personal or business insurance needs to get you the best rates and coverage to fit your needs",
+    "eyebrow": "Kicker Insures Me Agency · Deer Park",
+    "title": "Insurance that works for you, not the carriers",
+    "lead": "Kicker Insures Me Agency is an independent insurance agency in Deer Park, Texas, led by president and principal agent Kicker Cardenas. We compare companies for your home, car and business, and we explain coverage so you feel confident in it before you need it.",
     "image": "/brands/kickerinsuresmeagency/photo1",
     "imageAlt": "A photo of Kicker Insures Me Agency"
   },
   "serviceArea": [
-    "Deer Park",
-    "Pasadena"
+    "Deer Park"
   ],
+  "highlights": [
+    {
+      "title": "Renewal reminders",
+      "text": "We send text and email reminders for your insurance renewals.",
+      "icon": "calendar"
+    },
+    {
+      "title": "100% independent agency",
+      "text": "We are not tied to any one company, so we are not limited to one company's products.",
+      "icon": "scale"
+    },
+    {
+      "title": "Claims liaison in-house",
+      "text": "If a claim occurs, we walk you through the entire claims process.",
+      "icon": "shield"
+    },
+    {
+      "title": "Complimentary quote and review",
+      "text": "Start with a complimentary quote or policy review.",
+      "icon": "check"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Start online",
+      "text": "Enter some basic info on our website."
+    },
+    {
+      "title": "We shop for you",
+      "text": "We check with multiple insurance carriers."
+    },
+    {
+      "title": "Choose your plan",
+      "text": "We present multiple options for you to pick from."
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Brandy Chaparro",
+      "text": "I would highly recommend this company. I dropped in with a question on a day that my agent was at another office and a different agent took time out of her lunch to contact her for me. I appreciate that I didn't get told to come back later. My agent then contacted me and helped my obtain the insurance I needed.",
+      "source": "their site"
+    },
+    {
+      "author": "Annette Oseguera",
+      "text": "Kicker Insures Me is a great agency. They take care of everything for me. As a busy teacher, I appreciate the text message and email reminders for my insurance renewals. They search for the best home insurance policy to suit my needs. Thank you for your professional, competent, caring service.",
+      "source": "their site"
+    },
+    {
+      "author": "Melissa Ferstl",
+      "text": "Kicker and her team have managed my insurance needs for years. The customer service has always been fantastic. They are proactive and always seem to want the best for their clients. Great follow through, rates and customer service. I highly recommend them!",
+      "source": "their site"
+    }
+  ],
+  "owner": {
+    "name": "Kicker Cardenas",
+    "role": "President, Principal Agent"
+  },
   "kind": "insurance",
   "services": [
     {
       "slug": "homeowners-insurance",
       "title": "Homeowners Insurance",
-      "summary": "Homeowners Insurance",
+      "summary": "",
       "text": "For most people, their home is their biggest financial asset and thus, should be protected as such.",
       "lead": "For most people, their home is their biggest financial asset and thus, should be protected as such.",
       "icon": "house"
@@ -67,54 +125,61 @@
     {
       "slug": "flood-insurance",
       "title": "Flood Insurance",
-      "summary": "Flood Insurance",
-      "text": ""
+      "summary": "",
+      "text": "Flood insurance is one of the policies we can shop for you, alongside your homeowners coverage.",
+      "lead": "Flood insurance is one of the policies we can shop for you, alongside your homeowners coverage."
     },
     {
       "slug": "auto-insurance",
       "title": "Auto Insurance",
-      "summary": "Auto Insurance",
-      "text": "",
+      "summary": "Right coverage, right rates",
+      "text": "We look past the quick quote to find the right auto coverage and rates for you.",
+      "lead": "We look past the quick quote to find the right auto coverage and rates for you.",
       "icon": "car"
     },
     {
       "slug": "motorcycle-insurance",
       "title": "Motorcycle Insurance",
-      "summary": "Motorcycle Insurance",
-      "text": ""
+      "summary": "Coverage for your motorcycle",
+      "text": "We can find motorcycle coverage that fits you and your family's specific needs.",
+      "lead": "We can find motorcycle coverage that fits you and your family's specific needs."
     },
     {
       "slug": "condo-insurance",
       "title": "Condo Insurance",
-      "summary": "Condo Insurance",
-      "text": ""
+      "summary": "Coverage for condo owners",
+      "text": "Condo insurance is one of the personal policies we offer, compared across multiple companies.",
+      "lead": "Condo insurance is one of the personal policies we offer, compared across multiple companies."
     },
     {
       "slug": "rv-insurance",
       "title": "Rv Insurance",
-      "summary": "Rv Insurance",
-      "text": ""
+      "summary": "Coverage for your RV",
+      "text": "RV insurance is one of the personal policies we can shop for you across multiple companies.",
+      "lead": "RV insurance is one of the personal policies we can shop for you across multiple companies."
     },
     {
       "slug": "boat-insurance",
       "title": "Boat Insurance",
-      "summary": "Boat Insurance",
-      "text": ""
+      "summary": "Coverage for your boat",
+      "text": "We can find boat coverage that fits your specific and unique needs.",
+      "lead": "We can find boat coverage that fits your specific and unique needs."
     },
     {
       "slug": "renters-insurance",
       "title": "Renters Insurance",
-      "summary": "Renters Insurance",
-      "text": "",
+      "summary": "Coverage for renters",
+      "text": "Renters insurance is one of the personal policies we offer, compared across multiple companies.",
+      "lead": "Renters insurance is one of the personal policies we offer, compared across multiple companies.",
       "icon": "house"
     }
   ],
   "about": {
-    "title": "About Kicker Insures Me Agency",
+    "title": "Insurance made clear, before you need it",
     "text": [
-      "Unlike a captive, or direct insurance company who only offers their own proprietary products, our agency is 100% independent of any one company. Many insurance consumers don’t fully understand just how important that really is.",
-      "When it comes to something as important as insurance, it’s imperative that you work with an agency who has an in-depth knowledge of multiple insurance products, companies, and guidelines — not just one.",
-      "At the end of the day, what separates one agent from another, is their ability to proactively service their policy holders, and their knowledge of the insurance industry, products, and different situations that may present themselves to their clients."
+      "As an independent agency, we work for you, not the carriers, so we can compare top-rated companies and find coverage at the right price.",
+      "Kicker Cardenas is president and principal agent, and we say what sets us apart is our people, our processes and our personality.",
+      "If a claim happens, we are your in-house claims liaison and walk you through the whole process. We also don't necessarily recommend shopping carriers every year, because switching that often can hurt your insurance score."
     ],
     "image": "/brands/kickerinsuresmeagency/photo2",
     "imageAlt": "A photo of Kicker Insures Me Agency"

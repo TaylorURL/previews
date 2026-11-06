@@ -12,10 +12,10 @@
   "rating": 3.3,
   "reviewCount": 22,
   "brand": {
-    "primary": "#810000",
+    "primary": "#800000",
     "primaryDeep": "#5a0000",
-    "accent": "#ff0404",
-    "ink": "#1f181d",
+    "accent": "#ed0000",
+    "ink": "#1e181d",
     "surface": "#f7f0f0",
     "muted": "#5b6470",
     "line": "#e0dfdf",
@@ -25,96 +25,128 @@
     "fonts": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap",
     "logo": "/brands/mosherseifert/logo.webp",
     "logoMono": "/brands/mosherseifert/logo-mono.webp",
-    "logoWidth": 173,
-    "logoHeight": 58,
-    "logoRatio": 2.983,
+    "logoWidth": 221,
+    "logoHeight": 74,
+    "logoRatio": 2.986,
     "logoGround": "#ffffff",
     "logoReads": [
-      0.118,
-      0.187,
-      0.272,
-      0.357,
-      0.449,
-      0.544,
-      0.633,
-      0.722,
-      0.816,
-      0.911,
+      0.117,
+      0.188,
+      0.275,
+      0.362,
+      0.454,
+      0.547,
+      0.595,
+      0.725,
+      0.818,
+      0.912,
       1.0
     ]
   },
+  "heroStyle": "type",
+  "tone": "classic",
   "hero": {
-    "eyebrow": "Mosher Seifert + Co",
-    "title": "Retirement and estate planning in Houston",
-    "lead": "Mosher Seifert + Co PC is a full service tax, accounting and business consulting firm located in Houston, TX."
+    "eyebrow": "Mosher Seifert + Co · Houston",
+    "title": "Your books kept right, so you can run the business",
+    "lead": "Mosher Seifert + Co PC is a full service tax, accounting and business consulting firm in Houston, Texas, serving business owners, executives and independent professionals. Call us for a free initial consultation."
   },
   "serviceArea": [
-    "Houston",
-    "Pasadena",
-    "Clear Lake"
+    "Houston"
+  ],
+  "highlights": [
+    {
+      "title": "Personal service, real expertise",
+      "text": "A blend of personal service and expertise from a firm that is experienced and friendly.",
+      "icon": "users"
+    },
+    {
+      "title": "Affordable rates",
+      "text": "Our rates are affordable.",
+      "icon": "dollar"
+    },
+    {
+      "title": "Free initial consultation",
+      "text": "Call us for a free initial consultation.",
+      "icon": "phone"
+    },
+    {
+      "title": "Consultations included",
+      "text": "Consultations are already included in our price, so call whenever you have a question.",
+      "icon": "check"
+    }
   ],
   "kind": "accounting",
   "services": [
     {
       "slug": "retirement-planning",
       "title": "Retirement Planning",
-      "summary": "Retirement Planning",
-      "text": ""
+      "summary": "Do not put retirement planning on the back burner.",
+      "text": "Do not put retirement planning on the back burner. Use a tax professional to plan ahead now, and reap the benefits later.",
+      "lead": "Do not put retirement planning on the back burner. Use a tax professional to plan ahead now, and reap the benefits later."
     },
     {
       "slug": "estate-planning",
       "title": "Estate Planning",
-      "summary": "Estate Planning",
-      "text": ""
+      "summary": "",
+      "text": "The hassles and red tape associated with estate planning can be daunting, but you don't need to do it alone.",
+      "lead": "The hassles and red tape associated with estate planning can be daunting, but you don't need to do it alone. Our team is waiting to assist you through every step of the process."
     },
     {
       "slug": "forensic-accounting",
       "title": "Forensic Accounting",
-      "summary": "Forensic Accounting",
-      "text": "",
-      "icon": "calculator"
-    },
-    {
-      "slug": "tax-services",
-      "title": "Tax Services",
-      "summary": "Tax Services",
-      "text": "",
+      "summary": "",
+      "text": "Forensic accounting - also called financial forensics or forensic auditing - is an area of accounting that investigates actual or anticipated disputes.",
+      "lead": "Forensic accounting - also called financial forensics or forensic auditing - is an area of accounting that investigates actual or anticipated disputes.",
       "icon": "calculator"
     },
     {
       "slug": "tax-preparation",
       "title": "Tax Preparation",
-      "summary": "Tax Preparation",
-      "text": "",
+      "summary": "Your returns, prepared",
+      "text": "We prepare your tax returns as part of a full service tax and accounting practice in Houston.",
+      "lead": "We prepare your tax returns as part of a full service tax and accounting practice in Houston.",
       "icon": "calculator"
     },
     {
       "slug": "tax-planning",
       "title": "Tax Planning",
-      "summary": "Tax Planning",
-      "text": "",
+      "summary": "Plan ahead for your taxes",
+      "text": "We plan your taxes ahead of time, and tax planning can be added to the accounting services you already receive.",
+      "lead": "We plan your taxes ahead of time, and tax planning can be added to the accounting services you already receive.",
       "icon": "calculator"
     },
     {
       "slug": "tax-problems",
       "title": "Tax Problems",
-      "summary": "Tax Problems",
-      "text": "",
+      "summary": "Help with tax problems",
+      "text": "If you have a problem with your taxes, our firm can help you work through it.",
+      "lead": "If you have a problem with your taxes, our firm can help you work through it.",
       "icon": "calculator"
     },
     {
       "slug": "irs-audit-representation",
       "title": "IRS Audit Representation",
-      "summary": "IRS Audit Representation",
-      "text": "",
+      "summary": "Representation in an IRS audit",
+      "text": "If the IRS audits you, we can represent you through the audit.",
+      "lead": "If the IRS audits you, we can represent you through the audit.",
+      "icon": "calculator"
+    },
+    {
+      "slug": "non-filed-tax-returns",
+      "title": "Non-Filed Tax Returns",
+      "summary": "",
+      "text": "If you have tax returns that were never filed, we can help you get them filed.",
+      "lead": "If you have tax returns that were never filed, we can help you get them filed.",
       "icon": "calculator"
     }
   ],
   "about": {
-    "title": "About Mosher Seifert + Co",
+    "title": "Experienced, friendly, and easy to call",
     "text": [
-      "Mosher Seifert + Co PC is a full service tax, accounting and business consulting firm located in Houston, TX.",
-      "We help with retirement and estate planning, forensic accounting, tax preparation and tax planning, tax problems and IRS audit representation."
+      "Mosher Seifert + Co PC is a full service tax, accounting and business consulting firm located in Houston, Texas.",
+      "We offer a blend of personal service and expertise. We are experienced and we are friendly.",
+      "Our consultations are already included in our price, so call us whenever you have a question or concern.",
+      "The team includes James Weber, CPA, Director, Tax, and Madeline Simpson, CPA."
     ]
   }
 }

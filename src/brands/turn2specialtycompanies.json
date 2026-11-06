@@ -3,14 +3,14 @@
   "preview": true,
   "name": "Turn2 Specialty Companies",
   "shortName": "Turn2 Specialty Companies",
-  "phone": "(832) 568-6000",
+  "phone": "(346) 241-0439",
   "email": "info@turn2sc.com",
-  "address": "428 TX-146 Bus",
-  "town": "La Porte",
+  "address": "2315 W Main St",
+  "town": "Baytown",
   "state": "TX",
-  "zip": "77571",
-  "rating": 5,
-  "reviewCount": 5,
+  "zip": "77520",
+  "rating": 4.3,
+  "reviewCount": 26,
   "brand": {
     "primary": "#0971ce",
     "primaryDeep": "#064f90",
@@ -34,26 +34,70 @@
       0.283,
       0.139,
       0.116,
-      0.258,
-      0.383,
+      0.202,
+      0.062,
       0.509,
       0.667,
       0.837,
       1.0
     ]
   },
+  "heroStyle": "type",
+  "tone": "bold",
   "hero": {
-    "eyebrow": "Turn2 Specialty Companies",
-    "title": "Specialty welding and pipe fabrication",
-    "lead": "Our specialties include Mechanical, Specialty Welding, Catalyst, Tower and Drum, Fabrication, Precision, Refractory, and Instrumentation & Electrical Services.",
-    "titleAccent": "in La Porte"
+    "eyebrow": "Turn2 Specialty Companies · Baytown",
+    "title": "Proven people. Proven results.",
+    "lead": "Turn2 Specialty Companies is an industrial contractor in Baytown, Texas, providing specialty turnaround services to the refining, petrochemical and power industries. The company is ASME and NBIC certified.",
+    "titleAccent": "Specialty turnaround work for refineries and plants."
   },
   "serviceArea": [
-    "La Porte",
     "Baytown"
   ],
+  "highlights": [
+    {
+      "title": "ASME & NBIC certified",
+      "text": "The company holds ASME and NBIC certification, and all its welders are ASME certified.",
+      "icon": "badge"
+    },
+    {
+      "title": "250+ years combined on towers and drums",
+      "text": "The leadership team has over 250 years of combined tower and drum experience.",
+      "icon": "award"
+    },
+    {
+      "title": "Emergency tower work",
+      "text": "Emergency tower work is part of what Turn2 offers.",
+      "icon": "clock"
+    },
+    {
+      "title": "Long-tenure crews",
+      "text": "Tower crews are long-tenure employees with many years of experience working together.",
+      "icon": "users"
+    }
+  ],
+  "phones": [
+    {
+      "label": "Headquarters",
+      "number": "(346) 241-0439"
+    },
+    {
+      "label": "Hiring",
+      "number": "(281) 837-3644"
+    }
+  ],
+  "credentials": [
+    {
+      "label": "ASME & NBIC",
+      "detail": "ASME & NBIC Certified"
+    }
+  ],
+  "industries": [
+    "Refining",
+    "Petrochemical",
+    "Power"
+  ],
   "ask": "quote",
-  "summary": "Our specialties include Mechanical, Specialty Welding, Catalyst, Tower and Drum, Fabrication, Precision, Refractory, and Instrumentation & Electrical Services.",
+  "summary": "Turn2 in Baytown, TX, handles tower and drum services, specialty welding and catalyst handling for refining, petrochemical and power.",
   "groups": [
     {
       "slug": "specialty-welding",
@@ -63,20 +107,34 @@
       "intro": "Turn2 Specialty Welding employs the most talented welders in the industry. All our welders are ASME certified, experienced, and thoroughly vetted by an arduous evaluation process."
     },
     {
+      "slug": "instrumentation-electrical",
+      "title": "Instrumentation & Electrical",
+      "icon": "zap",
+      "summary": "Turn2 I&E provides instrumentation, controls and electrical services to the process, chemical and energy industries.",
+      "intro": "Turn2 I&E provides instrumentation, controls and electrical services to the process, chemical and energy industries, supporting clients through construction, commissioning and maintenance."
+    },
+    {
       "slug": "pipe-fabrication",
       "title": "Pipe Fabrication",
-      "icon": "settings",
+      "icon": "flame",
       "summary": "Our fabrication facilities are also equipped to install insulation (ceramic modules and ceramic fiber), apply industrial coatings, and perform hydro testing, allowing us to offer our clients turnkey solutions for their fabrication needs.",
       "intro": "Our fabrication facilities are also equipped to install insulation (ceramic modules and ceramic fiber), apply industrial coatings, and perform hydro testing, allowing us to offer our clients turnkey solutions for their fabrication needs."
+    },
+    {
+      "slug": "mechanical",
+      "title": "Mechanical",
+      "icon": "settings",
+      "summary": "Turn2 Mechanical provides heat exchanger services, with a stated goal of exceeding industry performance.",
+      "intro": "Turn2 Mechanical provides heat exchanger services, with a stated goal of exceeding industry performance."
     }
   ],
   "about": {
     "eyebrow": "About us",
-    "title": "About Turn2 Specialty Companies",
+    "title": "From helper to welder to president",
     "text": [
-      "We believe our people are our most important asset, which is why we're home to the top management, supervision, and craft in the industry. “Proven People. Proven Results.” is more than just our motto, it’s our core value.",
-      "With over 40 years in the refining, chemical, fertilizer, power industries, Joe is an expert in all types of turnarounds and capital projects.",
-      "Working his way from helper, to welder, to the President of one of the largest turnaround service providers in the industry, Joe believes that integrity and transparency are the keys to successful partnerships."
+      "Turn2 Specialty Companies was formed to provide specialty turnaround services to the refining, petrochemical and power industries.",
+      "President Joe Vardell worked his way up from helper to welder to president, and has more than 40 years in refining, chemical, fertilizer and power. Joe Vardell, our president, believes integrity and transparency are the keys to successful partnerships.",
+      "The company's motto, \"Proven People. Proven Results.\", is also its core value, and it counts its people as its most important asset. Quality and safety are fundamental, and every employee, supplier and customer is part of the process."
     ]
   }
 }

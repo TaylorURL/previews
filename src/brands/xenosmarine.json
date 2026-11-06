@@ -10,48 +10,97 @@
   "state": "TX",
   "zip": "77503",
   "brand": {
-    "primary": "#986702",
-    "primaryDeep": "#6a4802",
-    "accent": "#fdcb64",
-    "ink": "#20201e",
-    "surface": "#fffbf3",
+    "primary": "#3279be",
+    "primaryDeep": "#235585",
+    "accent": "#c29769",
+    "ink": "#18222d",
+    "surface": "#f3f7fb",
     "muted": "#5b6470",
-    "line": "#e0e0df",
+    "line": "#dfe0e2",
     "heading": "'Roboto', system-ui, sans-serif",
     "body": "'Fira Sans', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&family=Fira+Sans:wght@400;600;700&display=swap",
     "logo": "/brands/xenosmarine/logo.webp",
     "logoMono": "/brands/xenosmarine/logo-mono.webp",
-    "logoWidth": 51,
-    "logoHeight": 84,
-    "logoRatio": 0.602,
+    "logoWidth": 140,
+    "logoHeight": 58,
+    "logoRatio": 2.414,
     "logoGround": "#14181f",
     "logoReads": [
-      1.0,
-      0.986,
-      0.847,
-      0.708,
-      0.562,
-      0.417,
-      0.086,
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ],
-    "logoName": true
+      0.998,
+      0.988,
+      0.848,
+      0.714,
+      0.585,
+      0.511,
+      0.481,
+      0.454,
+      0.329,
+      0.361,
+      0.302
+    ]
   },
+  "heroStyle": "photo",
+  "tone": "bold",
   "hero": {
-    "eyebrow": "XENOS MARINE",
-    "title": "Marine services",
-    "lead": "Xenos is a contracting firm specializing in the provision of comprehensive marine construction solutions, offshore heavy lifting, and marine salvage operations.",
-    "titleAccent": "in Pasadena"
+    "eyebrow": "XENOS MARINE · Pasadena",
+    "title": "One team, one execution strategy",
+    "lead": "Xenos is a Texas based marine contractor in Pasadena, specializing in marine construction, offshore heavy lifting and marine salvage.",
+    "image": "/brands/xenosmarine/photo1",
+    "imageAlt": "A photo of XENOS MARINE",
+    "titleAccent": "for the whole offshore job."
   },
   "serviceArea": [
-    "Pasadena"
+    "Pasadena",
+    "Sabine Pass"
+  ],
+  "highlights": [
+    {
+      "title": "Texas based firm",
+      "text": "A Texas based maritime contractor, working from Pasadena.",
+      "icon": "map"
+    },
+    {
+      "title": "SDVOSB",
+      "text": "Xenos LLC is a service-disabled veteran-owned small business.",
+      "icon": "badge"
+    },
+    {
+      "title": "Maritime veterans",
+      "text": "We value the skill, discipline and leadership veterans bring.",
+      "icon": "users"
+    },
+    {
+      "title": "People who work across trades",
+      "text": "We hire people who can work across trades for productivity, efficiency and safety.",
+      "icon": "wrench"
+    }
+  ],
+  "phones": [
+    {
+      "label": "Main",
+      "number": "(409) 740-4035"
+    },
+    {
+      "label": "Phone",
+      "number": "(409) 744-1222"
+    }
+  ],
+  "credentials": [
+    {
+      "label": "SDVOSB",
+      "detail": "Xenos LLC (SDVOSB)"
+    }
+  ],
+  "industries": [
+    "Offshore energy",
+    "Oil & gas"
+  ],
+  "statesServed": [
+    "Texas"
   ],
   "ask": "quote",
-  "summary": "XENOS MARINE offers heavy lift & engineered marine operations, marine salvage & emergency response, and marine spread & vessel management in and around Pasadena.",
+  "summary": "Xenos handles offshore heavy lifting, marine salvage and vessel management from Pasadena, with a dock facility in Sabine Pass.",
   "groups": [
     {
       "slug": "heavy-lift-engineered-marine-operations",
@@ -73,17 +122,31 @@
       "icon": "waves",
       "summary": "Complex offshore projects often require numerous specialized vessels, subcontractors, equipment packages, and technical disciplines operating simultaneously.",
       "intro": "Complex offshore projects often require numerous specialized vessels, subcontractors, equipment packages, and technical disciplines operating simultaneously."
+    },
+    {
+      "slug": "offshore-marine-services",
+      "title": "Offshore Marine Services",
+      "icon": "waves",
+      "summary": "Xenos supports offshore energy, subsea infrastructure, marine construction, salvage and decommissioning projects.",
+      "intro": "Xenos supports offshore energy, subsea infrastructure, marine construction, salvage and decommissioning projects."
+    },
+    {
+      "slug": "heavy-lifting",
+      "title": "Heavy Lifting",
+      "icon": "waves",
+      "summary": "Offshore heavy lifting for structures up to 7,500t and beyond, with heavy-lift vessels, crane vessels and specialized rigging.",
+      "intro": "Offshore heavy lifting for structures up to 7,500t and beyond, with heavy-lift vessels, crane vessels and specialized rigging."
     }
   ],
   "about": {
     "eyebrow": "About us",
-    "title": "About XENOS MARINE",
+    "title": "People who work freely between trades",
     "text": [
-      "Xenos is a contracting firm specializing in the provision of comprehensive marine construction solutions, offshore heavy lifting, and marine salvage operations. With a commitment to excellence, safety, and innovation Xenos has successfully delivered high quality services across the marine industry. At Xenos, we recognize the extraordinary skill set possessed by skilled maritime veterans and the invaluable contributions they provide.",
-      "A Vision for the Future Together, Xenos LLC (SDVOSB) and T&T Salvage are redefining marine heavy lifting and salvage through their combined expertise and leadership. Xenos' strategic vision and broad industry experience, paired with T&T's decades of technical excellence and deep understanding of salvage operations, position Xenos Marine LLC as a leader in the field. Their dedication to innovation, sustainability, and operational precision ensures that Xenos Marine remains at the forefront of the industry, meeting the evolving needs of clients and setting new standards for success.",
-      "The strength of Xenos is our ability to bring multiple offshore disciplines together under a single execution strategy."
+      "Xenos is a contracting firm specializing in marine construction, offshore heavy lifting and marine salvage operations.",
+      "We hire people who can work freely across trades, because everyone on the team can contribute to the project beyond their given trade. We also value skilled maritime veterans and the discipline and leadership they bring.",
+      "Xenos can run an individual scope of work or bring engineering, heavy lift, construction, subsea, diving and salvage together as one complete marine spread."
     ],
-    "image": "/brands/xenosmarine/photo1",
+    "image": "/brands/xenosmarine/photo2",
     "imageAlt": "A photo of XENOS MARINE"
   }
 }

@@ -10,7 +10,7 @@
   "state": "TX",
   "zip": "77521",
   "rating": 4.4,
-  "reviewCount": 222,
+  "reviewCount": 223,
   "since": 1973,
   "hours": [
     [
@@ -46,34 +46,89 @@
       0.678,
       0.745,
       0.577,
-      0.567,
-      0.68,
-      0.743,
-      0.911,
-      1.0
+      0.549,
+      0.616,
+      0.656,
+      0.804,
+      0.882
     ]
   },
+  "heroStyle": "photo",
+  "tone": "classic",
   "hero": {
-    "eyebrow": "Cryer Pools & Spas",
-    "title": "Swimming pools and pool repair",
-    "lead": "Do you want to hire one of the most reliable above ground pool companies in Baytown, TX? Look no further than Cryer Pools & Spas!",
-    "titleAccent": "in Baytown"
+    "eyebrow": "Cryer Pools & Spas · Baytown",
+    "title": "A Baytown pool store since 1973,",
+    "lead": "Cryer Pools & Spas builds above ground pools, services pools, hot tubs and spas, and tests your water at our retail store in Baytown, Texas.",
+    "image": "/brands/cryerpoolsspas/photo1",
+    "imageAlt": "A photo of Cryer Pools & Spas",
+    "titleAccent": "woman-owned, with over 50 years of experience."
   },
   "serviceArea": [
     "Baytown",
-    "Houston",
-    "Deer Park",
-    "La Porte",
     "Mont Belvieu",
-    "Channelview",
-    "Highlands",
-    "Crosby",
     "Dayton",
+    "Liberty City",
+    "Beach City",
+    "Channelview",
+    "La Porte",
+    "Deer Park",
+    "Crosby",
     "Anahuac",
-    "Liberty",
+    "Wallisville",
     "Huffman"
   ],
-  "summary": "Cryer Pools & Spas offers swimming pools, pool repair and pool maintenance across Baytown, Houston and Deer Park.",
+  "highlights": [
+    {
+      "title": "Free phone quotes",
+      "text": "Call us for a quote over the phone at no charge.",
+      "icon": "phone"
+    },
+    {
+      "title": "Over 50 years",
+      "text": "We have been in the pool business in Baytown since 1973.",
+      "icon": "calendar"
+    },
+    {
+      "title": "Manufacturer warranties",
+      "text": "Manufacturer warranties are available.",
+      "icon": "shield"
+    },
+    {
+      "title": "Readers' Choice 2024",
+      "text": "Named Best Swimming Pool Company in Baytown in the 2024 Readers' Choice Award.",
+      "icon": "award"
+    }
+  ],
+  "phones": [
+    {
+      "label": "Main",
+      "number": "(346) 567-4951"
+    },
+    {
+      "label": "Alternate",
+      "number": "(281) 420-7665"
+    }
+  ],
+  "languages": [
+    "English",
+    "Spanish"
+  ],
+  "credentials": [
+    {
+      "label": "Readers' Choice Award",
+      "detail": "Best Swimming Pool Company in Baytown, 2024"
+    },
+    {
+      "label": "Better Business Bureau"
+    },
+    {
+      "label": "Association of Pool and Spa Professionals"
+    },
+    {
+      "label": "Baytown Chamber of Commerce"
+    }
+  ],
+  "summary": "Pool repair, pool maintenance and hot tubs and spas for Baytown, Mont Belvieu and Dayton.",
   "groups": [
     {
       "slug": "swimming-pools",
@@ -113,11 +168,13 @@
   ],
   "about": {
     "eyebrow": "About us",
-    "title": "About Cryer Pools & Spas",
+    "title": "It started in 1973 as a Baytown pool supply store",
     "text": [
-      "Are you looking for one of the most dependable above ground pool companies in Baytown, TX? Cryer Pools & Spas has been a trusted name in Baytown, TX, and surrounding areas since 1973. With over 50 years of experience, our woman-owned business excels in delivering exceptional swimming pool construction and maintenance services.",
-      "Our commitment to quality and customer satisfaction has earned us the prestigious Readers' Choice Award for Best Swimming Pool Company in Baytown for 2024. At Cryer Pools & Spas, we understand the importance of creating a backyard oasis that not only enhances your property's aesthetics but also provides a haven for relaxation and enjoyment.",
-      "At our retail store, we offer a variety of products and services to meet all your pool and spa needs. From professional water testing to a comprehensive range of pool maintenance items, we ensure that you have everything required to keep your pool in pristine condition."
-    ]
+      "Cryer Pools & Spas was established in 1973 as a local swimming pool supply store in Baytown.",
+      "It is a woman-owned business with over 50 years of experience in pool construction and maintenance.",
+      "You can look after your pool yourself or have our team do it, and our technicians repair pumps, heaters, filters, salt generators and pool cleaners."
+    ],
+    "image": "/brands/cryerpoolsspas/photo2",
+    "imageAlt": "A photo of Cryer Pools & Spas"
   }
 }

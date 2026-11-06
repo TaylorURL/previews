@@ -10,7 +10,7 @@
   "state": "TX",
   "zip": "78613",
   "rating": 5,
-  "reviewCount": 34,
+  "reviewCount": 35,
   "brand": {
     "primary": "#966a01",
     "primaryDeep": "#694a01",
@@ -19,9 +19,9 @@
     "surface": "#fffbf1",
     "muted": "#5b6470",
     "line": "#e0e0df",
-    "heading": "'Plus Jakarta Sans', system-ui, sans-serif",
+    "heading": "'Bricolage Grotesque', system-ui, sans-serif",
     "body": "'Inter', system-ui, sans-serif",
-    "fonts": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "fonts": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
     "logo": "/brands/rangerpainting/logo.webp",
     "logoMono": "/brands/rangerpainting/logo-mono.webp",
     "logoWidth": 80,
@@ -37,33 +37,125 @@
       0.477,
       0.355,
       0.23,
-      0.175,
-      0.172,
-      0.176
+      0.0,
+      0.0,
+      0.0
     ]
   },
+  "heroStyle": "split",
+  "tone": "classic",
   "hero": {
-    "eyebrow": "Ranger Painting",
-    "title": "Exterior and interior painting",
-    "lead": "Cedar Park painters who don't take deposits. You hand over nothing until the job is finished, inspected, and you love it.",
+    "eyebrow": "Ranger Painting · Cedar Park",
+    "title": "No deposit.",
+    "lead": "Ranger Painting is a locally owned residential painting company in Cedar Park, handling exterior, interior, cabinet, brick and stucco work for homes in Austin and nearby towns. Nathan Wingate walks your project himself and writes the scope you approve.",
     "image": "/brands/rangerpainting/photo1",
     "imageAlt": "A photo of Ranger Painting",
-    "titleAccent": "in Cedar Park"
+    "titleAccent": "You pay once you've seen the finished work."
   },
   "serviceArea": [
     "Cedar Park",
-    "Cypress"
+    "Austin",
+    "Round Rock",
+    "Georgetown",
+    "Lakeway",
+    "Leander",
+    "Pflugerville",
+    "Bee Cave",
+    "Lago Vista",
+    "West Lake Hills"
   ],
+  "highlights": [
+    {
+      "title": "No deposit",
+      "text": "You pay only after you've inspected the finished work and you're happy.",
+      "icon": "dollar"
+    },
+    {
+      "title": "BBB A+ accredited",
+      "text": "BBB A+ Accredited, and fully insured with General Liability and Workers' Compensation.",
+      "icon": "award"
+    },
+    {
+      "title": "Fully insured",
+      "text": "General Liability and Workers' Compensation coverage.",
+      "icon": "check"
+    },
+    {
+      "title": "Written workmanship warranty",
+      "text": "Every project is covered by up to a 5-year written warranty on the workmanship.",
+      "icon": "shield"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Reach out",
+      "text": "Use the form or call and tell us what you'd like to change."
+    },
+    {
+      "title": "Get a written estimate",
+      "text": "Ranger walks the project, documents the prep, products and timeline, and hands you a clear scope to decide on, with no pressure and no deposit."
+    },
+    {
+      "title": "Sit back while it gets done",
+      "text": "You get consistent crews, daily protection and cleanup, and updates throughout, then you pay only after the final walkthrough."
+    }
+  ],
+  "phones": [
+    {
+      "label": "Main",
+      "number": "(512) 270-2617"
+    },
+    {
+      "label": "Phone",
+      "number": "(512) 537-7000"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Christine Tom1986",
+      "text": "Ranger Painting showed up on a Monday and by Tuesday they had begun. Nathan knew we were going to market the house soon and not only got done in a timely manner but efficient too. His crew were so nice and knowledgeable, carefully maintaining a clean work environment. They said it would be done in four days but with great weather and a great crew 3 days is all it needed. And they are allowing the 5yr home warranty to transfer to the new homeowners!!! Very highly recommended.",
+      "source": "their site"
+    },
+    {
+      "author": "Louis Hunt",
+      "text": "Ranger Painting did an amazing job on the interior of my home. They used two colors throughout the house, and the cut-in work was absolutely perfect—clean, sharp, and professional. They also worked alongside my roofing company crew, and the coordination was smooth and effortless. The team was on time, respectful, and easy to work with. My home looks fresh and better than ever.",
+      "source": "their site"
+    },
+    {
+      "author": "TriTon",
+      "text": "I’m very happy with Ranger Painting, the final result truly exceeded my expectations. Nathan, the owner was very attentive, responsive and patiently answering all of my questions. Their price was very reasonable price for the quality of work they delivered. The entire process was smooth and stress-free. I’m extremely pleased with the outcome.",
+      "source": "their site"
+    }
+  ],
+  "credentials": [
+    {
+      "label": "BBB",
+      "detail": "A+ Accredited"
+    },
+    {
+      "label": "Good Contractors List",
+      "detail": "$25,000 Good Contractors List guarantee"
+    },
+    {
+      "label": "Insurance",
+      "detail": "General Liability and Workers' Compensation"
+    }
+  ],
+  "owner": {
+    "name": "Nathan Wingate",
+    "role": "Founder",
+    "text": "Ranger Painting started with Nathan Wingate, who has spent twenty years around the trades."
+  },
   "ask": "quote",
-  "summary": "Ranger Painting offers exterior painting, interior painting and cabinet painting across Cedar Park and Cypress.",
+  "summary": "Ranger Painting does exterior, interior and cabinet painting for homes in Cedar Park, Austin and Round Rock.",
   "groups": [
     {
       "slug": "exterior-painting",
       "title": "Exterior Painting",
       "icon": "home",
-      "summary": "A finish engineered to take Texas heat and UV head-on, riding on the surface prep that decides whether color holds for three years or for ten.",
-      "intro": "A finish engineered to take Texas heat and UV head-on, riding on the surface prep that decides whether color holds for three years or for ten.",
-      "image": "/brands/rangerpainting/photo3",
+      "summary": "A finish engineered to take Greater Austin heat and UV head-on.",
+      "intro": "A finish engineered to take Greater Austin heat and UV head-on, riding on the surface prep that decides whether color holds for three years or for ten.",
+      "image": "/brands/rangerpainting/photo4",
       "imageAlt": "A photo of Ranger Painting"
     },
     {
@@ -72,7 +164,7 @@
       "icon": "home",
       "summary": "A defined scope, your rooms and belongings shielded, and a project that keeps moving without taking over your house.",
       "intro": "A defined scope, your rooms and belongings shielded, and a project that keeps moving without taking over your house.",
-      "image": "/brands/rangerpainting/photo4",
+      "image": "/brands/rangerpainting/photo5",
       "imageAlt": "A photo of Ranger Painting"
     },
     {
@@ -81,7 +173,7 @@
       "icon": "home",
       "summary": "Tired kitchens reborn in a durable premium enamel, with honest cure times so you know the day they're ready to use again.",
       "intro": "Tired kitchens reborn in a durable premium enamel, with honest cure times so you know the day they're ready to use again.",
-      "image": "/brands/rangerpainting/photo5",
+      "image": "/brands/rangerpainting/photo6",
       "imageAlt": "A photo of Ranger Painting"
     },
     {
@@ -89,25 +181,25 @@
       "title": "Brick Painting",
       "icon": "home",
       "summary": "Dated brick brought current, using the precise masonry coating Ranger commits to on paper before the crew ever arrives.",
-      "intro": "Dated brick brought current, using the precise masonry coating Ranger commits to on paper before the crew ever arrives.",
-      "image": "/brands/rangerpainting/photo6",
-      "imageAlt": "A photo of Ranger Painting"
+      "intro": "Dated brick brought current, using the precise masonry coating Ranger commits to on paper before the crew ever arrives."
     },
     {
       "slug": "stucco-painting",
       "title": "Stucco Painting",
       "icon": "home",
       "summary": "Hairline cracks repaired and sealed under a flexible coating that moves with your walls instead of fighting them.",
-      "intro": "Hairline cracks repaired and sealed under a flexible coating that moves with your walls instead of fighting them."
+      "intro": "Hairline cracks repaired and sealed under a flexible coating that moves with your walls instead of fighting them.",
+      "image": "/brands/rangerpainting/photo3",
+      "imageAlt": "A photo of Ranger Painting"
     }
   ],
   "about": {
     "eyebrow": "About us",
-    "title": "About Ranger Painting",
+    "title": "Twenty years around the trades, then a company of his own",
     "text": [
-      "Ranger Painting is Cedar Park’s & Austin’s trusted painter for exterior, interior, cabinet, brick & stucco - and we never ask for a deposit upfront.",
-      "Ranger never does — you pay only once you've inspected the finished work and you're happy.",
-      "Look for a written scope, proof of insurance, real reviews, and a quality warranty, all of which Ranger puts on the table before you commit."
+      "Ranger Painting was started by Nathan Wingate, who has spent twenty years around the trades.",
+      "Nathan Wingate walks your project himself, writes the scope you'll approve, and stays reachable while the work is underway. A dedicated crew stays on the job start to finish instead of rotating between sites.",
+      "Ranger tells you what your home truly needs instead of whatever's easiest to sell, and a project manager walks the finished job with you and fixes punch-list items before you pay."
     ],
     "image": "/brands/rangerpainting/photo2",
     "imageAlt": "A photo of Ranger Painting"

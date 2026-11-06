@@ -14,7 +14,7 @@
   "brand": {
     "primary": "#19325a",
     "primaryDeep": "#11233f",
-    "accent": "#e53940",
+    "accent": "#ec393f",
     "ink": "#161c25",
     "surface": "#f1f3f5",
     "muted": "#5b6470",
@@ -29,47 +29,106 @@
     "logoRatio": 1.348,
     "logoGround": "#ffffff",
     "logoReads": [
-      0.383,
-      0.341,
-      0.306,
-      0.27,
-      0.7,
-      0.71,
-      0.727,
-      0.933,
-      0.96,
-      0.98,
-      1.0
+      0.442,
+      0.397,
+      0.344,
+      0.28,
+      0.529,
+      0.566,
+      0.619,
+      0.691,
+      0.785,
+      0.893,
+      0.994
     ]
   },
+  "heroStyle": "type",
+  "tone": "bold",
   "hero": {
-    "eyebrow": "DanCo Services",
-    "title": "Concrete work",
-    "lead": "DanCo Services handles commercial concrete repair, asphalt paving, striping & ADA compliance for Houston property managers, HOAs & GCs. Get a quote.",
-    "titleAccent": "in New Caney"
+    "eyebrow": "DanCo Services · New Caney",
+    "title": "Patch it where that will last.",
+    "lead": "DanCo Services is a concrete contractor in New Caney, Texas, repairing concrete and paving asphalt for commercial properties, HOAs, retail centers and industrial facilities.",
+    "titleAccent": "No shortcuts, just the right repair."
   },
   "serviceArea": [
     "New Caney",
-    "Baytown",
+    "Greater Houston",
     "Houston",
+    "Pearland",
+    "Sugar Land",
     "Pasadena",
     "League City",
-    "Pearland",
     "Friendswood",
-    "Webster",
-    "Alvin",
-    "Sugar Land",
     "Clear Lake",
-    "Missouri City"
+    "Missouri City",
+    "Alvin",
+    "Baytown"
+  ],
+  "highlights": [
+    {
+      "title": "One point of contact",
+      "text": "Clear timelines and regular updates from a dedicated contact.",
+      "icon": "phone"
+    },
+    {
+      "title": "Free estimates",
+      "text": "Get a free, no-obligation estimate before any work starts.",
+      "icon": "dollar"
+    },
+    {
+      "title": "Licensed and insured",
+      "text": "Fully licensed and insured for commercial concrete, asphalt and site work in Texas.",
+      "icon": "shield"
+    },
+    {
+      "title": "No hidden fees",
+      "text": "Quotes are kept straightforward, with no hidden fees or surprises.",
+      "icon": "check"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Site review",
+      "text": "We walk the property and assess damaged areas, drainage and traffic patterns."
+    },
+    {
+      "title": "Scope confirmation",
+      "text": "We document exactly what needs repair and why."
+    },
+    {
+      "title": "Repair recommendation",
+      "text": "Patching or full panel replacement, based on the actual condition of the concrete."
+    },
+    {
+      "title": "Final walkthrough",
+      "text": "We confirm the completed work meets the agreed scope."
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Luke Fuller",
+      "text": "The team at DanCo was able to get me a quote quickly and accurately. They handled our parking lot professionally and did excellent work. Strongly recommend!",
+      "source": "their site"
+    },
+    {
+      "author": "Linda Lewis",
+      "text": "We used their company for a cement repair and parking lot restriping project. They were timely, professional, and competitively priced. We will use their company again.",
+      "source": "their site"
+    },
+    {
+      "author": "David Morefield",
+      "text": "Our company had a large project on a very tight timeline. Daniel came out, listened to our needs, and proposed a solution that would not only achieve our objectives, but also meet our time constraints.",
+      "source": "their site"
+    }
   ],
   "ask": "quote",
-  "summary": "DanCo Services offers concrete paving and panel replacement, sidewalk, curb, and trip hazard repair, and full-depth concrete repair across New Caney, Baytown and Houston.",
+  "summary": "DanCo Services does concrete repair, asphalt paving and pavement markings from New Caney, Texas.",
   "groups": [
     {
       "slug": "concrete-paving-and-panel-replacement",
       "title": "Concrete Paving and Panel Replacement",
       "icon": "settings",
-      "summary": "Not every concrete problem can be patched.",
+      "summary": "Not every concrete problem can be patched. Damaged panels, cracked sections, settled areas, broken edges, and surface failures often need full panel replacement to hold up under commercial traffic long-term. DanCo evaluates each damaged section individually — repairing where patching will last, and replacing panels where it won’t.",
       "intro": "Not every concrete problem can be patched. Damaged panels, cracked sections, settled areas, broken edges, and surface failures often need full panel replacement to hold up under commercial traffic long-term. DanCo evaluates each damaged section individually — repairing where patching will last, and replacing panels where it won’t."
     },
     {
@@ -90,7 +149,7 @@
       "slug": "concrete-repair-for-commercial-propertie",
       "title": "Concrete Repair for Commercial Properties",
       "icon": "building",
-      "summary": "Every property has different traffic patterns, drainage conditions, and tenant considerations, so we scope repairs around how the site is actually used rather than a one-size-fits-all spec.",
+      "summary": "Every property has different traffic patterns, drainage conditions, and tenant considerations.",
       "intro": "Every property has different traffic patterns, drainage conditions, and tenant considerations, so we scope repairs around how the site is actually used rather than a one-size-fits-all spec."
     },
     {
@@ -103,11 +162,11 @@
   ],
   "about": {
     "eyebrow": "About us",
-    "title": "About DanCo Services",
+    "title": "Repairs built for the ground they sit on.",
     "text": [
-      "DanCo Services is a locally owned and operated company based in Houston, proudly serving commercial properties, HOAs, retail centers, and industrial facilities throughout the Greater Houston area. We understand the unique demands of Houston’s climate, soil conditions, and high-traffic commercial environments, allowing us to deliver durable concrete, asphalt, and parking lot solutions built to last.",
-      "At DanCo, quality workmanship goes hand in hand with clear, consistent communication. From the initial estimate to project completion, clients receive transparent timelines, regular updates, and a dedicated point of contact. Our commercial-grade standards ensure long-lasting results while minimizing future maintenance, downtime, and unexpected costs.",
-      "Your property and people are protected at every stage of the project. DanCo Services is fully insured and follows strict industry safety standards to safeguard employees, customers, and tenants. Our experienced crews work efficiently while maintaining secure, well-managed job sites that reduce risk, liability, and operational disruptions."
+      "DanCo crews understand local soil conditions and engineer repairs accordingly, not just patch over the symptom.",
+      "The team brings years of experience in construction, project management and commercial property services, and DanCo is more than a paving company, handling utilities, drainage, fencing and tree removal too.",
+      "Every damaged section is evaluated individually, and clients get transparent timelines, regular updates and one dedicated point of contact."
     ]
   }
 }
