@@ -514,7 +514,7 @@ def _build(prospect, root, slug, known):
 
     name = compose.plain(prospect["name"])
     short = compose.short_name(name)
-    phone = compose.plain(prospect.get("phone"))
+    phone = compose.us_phone(prospect.get("phone"))
     street, town, state, zip_ = compose.address_parts(prospect)
     if not phone or not street or not town:
         raise Parked("no phone or street address stored from the Google listing")
@@ -969,7 +969,11 @@ def _facts_fields(brand, sheet, copy, google, phone, template, state):
     for c in sheet.get("credentials") or []:
         entry = {"label": c["label"]}
         if c.get("detail") and facts.normal(c["detail"]) != facts.normal(c["label"]):
+            # Their words are put right as a description's are ("workman's
+            # comp", which reads as cut off, is said in full).
             entry["detail"] = c["detail"]
+            for wrong, right in compose.MISSPELT.items():
+                entry["detail"] = re.sub(wrong, right, entry["detail"])
         if entry not in credentials:
             credentials.append(entry)
     if credentials:

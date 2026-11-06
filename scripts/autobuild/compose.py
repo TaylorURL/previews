@@ -370,6 +370,18 @@ def plain(text):
     return BULLET.sub("", " ".join(UNDRAWN.sub(" ", ZERO_WIDTH.sub("", str(text or ""))).split()))
 
 
+def us_phone(text):
+    """A US number written the way the Google listing writes one, "(832)
+    339-5799". The businesses on the text line carry theirs the way the texting
+    service stores it ("+18323395799"); any other writing is left as it is."""
+    number = plain(text)
+    bare = re.fullmatch(r"\+?1?(\d{10})", re.sub(r"[\s.-]", "", number))
+    if not bare:
+        return number
+    d = bare.group(1)
+    return f"({d[:3]}) {d[3:6]}-{d[6:]}"
+
+
 def sentences(text):
     out = []
     for s in re.split(r"(?<=[.!?])\s+(?=[A-Z0-9\"'])", plain(text)):
@@ -410,6 +422,8 @@ RUN_IN = re.compile(r"^(?:(?:[A-Z][\w'’-]*,?|a|an|the|and|or|of|on|in|for|to|w
 MISSPELT = {r"\bverity of\b": "variety of", r"\bVerity of\b": "Variety of", r"\blazer\b": "laser", r"\bLazer\b": "Laser", r"\bvist\b": "visit", r"\bVist\b": "Visit",
             r"\b(began|begun|started|start|launched) (their|his|her|our|my) carriers\b": r"\1 \2 careers",
             r"\bamble (savings|time|room|space|parking)\b": r"ample \1", r"\bfinancially responsibility\b": "financially responsibly",
+            # A shortening of speech ("workman's comp") reads as a word cut off.
+            r"\bwork(?:man|men|er|ers)['’]?s?['’]? comp\b(?!\w)": "workers’ compensation",
             # A verb their page dropped ("If you a special project that requires...").
             r"\b([Ii]f|[Ww]hen) you (an?) ": r"\1 you have \2 "}
 
@@ -925,17 +939,30 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         if text and named[k] & stems(text) and not named[k] & stems(after.sub("", text)):
             found[k]["text"] = None
     moved = {}
+    # Words that name another service whole and not their own heading ("...
+    # having a generator... installation of portable generator interlock
+    # kits", under Electrical Troubleshoot & Repair) are that service's too,
+    # wherever they name it; the one they name most fully takes them.
     for k in order:
         text = found[k]["text"]
         if text and not named[k] & stems(text):
             opening = stems(" ".join(text.split()[:6]))
-            other = next((o for o in order if o != k and named[o] & opening), None)
+            whole = [o for o in order if o != k and len(named[o]) >= 2 and named[o] <= stems(text)]
+            other = max(whole, key=lambda o: len(named[o]), default=None) or next((o for o in order if o != k and named[o] & opening), None)
             if other:
                 moved.setdefault(other, text)
                 found[k]["text"] = None
     for k, text in moved.items():
         if not (found[k]["text"] and named[k] & stems(found[k]["text"])):
             found[k]["text"] = text
+    # A name said alone that ends a described one ("Generator Installation"
+    # of "Back Up Generator Installation") is that service said shorter; the
+    # described one is kept, so the grid does not offer the work twice.
+    stem = lambda k: re.sub(r"s\b", "", re.sub(r"ies\b", "y", k))
+    for k in [k for k in order if " " in k and not found[k]["text"]]:
+        if any(o != k and found[o]["text"] and stem(o).endswith(" " + stem(k)) for o in order):
+            del found[k]
+            order.remove(k)
     if described_first:
         order.sort(key=lambda k: found[k]["text"] is None)
     return [found[k] for k in order][:8]

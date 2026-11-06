@@ -7,7 +7,8 @@ image services, the lazy loaders' attributes, redirects a browser follows
 its visitors to an address with the port written in still counting as itself,
 the hero's shapes, the quality rules against photographs blurred, flattened and
 recompressed, the optional facts left out rather than parking a business, and
-a listing whose number is the hiring line leading with the customer line instead.
+a listing whose number is the hiring line leading with the customer line instead,
+and a listing number stored as the texting service writes it.
 """
 
 import http.server
@@ -189,6 +190,15 @@ def hosts():
     assert compose.email_of("careers@jmharrisonlawfirm.com", [firm], {}) is None
 
 
+def listing_phone():
+    # The text line's rows carry "+18323395799"; the page and the check both read "(832) 339-5799".
+    assert compose.us_phone("+18323395799") == "(832) 339-5799"
+    assert compose.us_phone("8323395799") == "(832) 339-5799"
+    assert compose.us_phone("(832) 339-5799") == "(832) 339-5799"
+    assert compose.us_phone("832-339-5799") == "(832) 339-5799"
+    assert compose.us_phone("+44 20 7946 0958") == "+44 20 7946 0958"
+
+
 def customer_line():
     # turn2sc.com: Google lists the hiring office; the site gives "Headquarters"
     # for everyone else. The page leads with headquarters and keeps the hiring line.
@@ -217,7 +227,8 @@ def main():
     pixels()
     optional_facts()
     customer_line()
-    print("selftest_photos: image sizes, lazy pictures, redirects, hosts with a port, the hero's shapes, the pixel rules, optional facts and the customer line all hold")
+    listing_phone()
+    print("selftest_photos: image sizes, lazy pictures, redirects, hosts with a port, the hero's shapes, the pixel rules, optional facts, the customer line and the listing's number all hold")
 
 
 if __name__ == "__main__":
