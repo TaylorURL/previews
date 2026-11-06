@@ -20,6 +20,7 @@ Every template has a sample business:
 | Fitness               | [fitness.taylorurl.com](https://fitness.taylorurl.com)           |
 | Flooring              | [flooring.taylorurl.com](https://flooring.taylorurl.com)         |
 | HVAC                  | [hvac.taylorurl.com](https://hvac.taylorurl.com)                 |
+| Industrial            | [industrial.taylorurl.com](https://industrial.taylorurl.com)     |
 | Plumbing              | [plumbing.taylorurl.com](https://plumbing.taylorurl.com)         |
 | Printing              | [printing.taylorurl.com](https://printing.taylorurl.com)         |
 | Professional services | [professional.taylorurl.com](https://professional.taylorurl.com) |

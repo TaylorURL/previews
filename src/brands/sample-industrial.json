@@ -1,0 +1,161 @@
+{
+  "template": "industrial",
+  "name": "Channelside Fabrication & Machine, LLC",
+  "shortName": "Channelside Fabrication",
+  "summary": "Structural and pipe fabrication, CNC machining and field services for plants, terminals and contractors along the Houston Ship Channel.",
+  "phone": "(281) 555-0142",
+  "email": "quotes@channelsidefab.example",
+  "address": "16220 Market St, Suite B",
+  "town": "Channelview",
+  "state": "TX",
+  "zip": "77530",
+  "since": 1994,
+  "hours": [
+    ["Mon – Fri", "6 AM – 4:30 PM"],
+    ["Sat – Sun", "Field crews by schedule"]
+  ],
+  "brand": {
+    "primary": "#1d3b57",
+    "primaryDeep": "#0f2235",
+    "accent": "#f2a900",
+    "ink": "#121820",
+    "muted": "#56616d",
+    "surface": "#f3f4f5",
+    "line": "#dcdfe3",
+    "heading": "'Barlow Condensed', 'Arial Narrow', system-ui, sans-serif",
+    "body": "'Barlow', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap",
+    "logo": null
+  },
+  "heroStyle": "type",
+  "tone": "bold",
+  "emergency": {
+    "title": "Turnaround and breakdown line",
+    "text": "Field crews answer around the clock during turnarounds and unplanned outages. Call the main line and press 2."
+  },
+  "hero": {
+    "eyebrow": "Fabrication, machining and field service on the ship channel",
+    "title": "Built to the drawing.",
+    "titleAccent": "Delivered to the unit.",
+    "lead": "Structural steel, pressure piping, skids and machined parts from a 40,000 square foot shop in Channelview, with field crews for turnarounds across Texas and Louisiana."
+  },
+  "highlights": [
+    { "title": "ASME U and R stamps", "text": "Pressure vessel fabrication and repair under code.", "icon": "certified" },
+    { "title": "Zero lost-time incidents", "text": "Five years running across shop and field work.", "icon": "safety" },
+    { "title": "Turnaround crews on call", "text": "Field machining and welding through the night shift.", "icon": "clock" }
+  ],
+  "groups": [
+    {
+      "slug": "fabrication",
+      "title": "Fabrication",
+      "icon": "flame",
+      "summary": "Structural steel, pressure piping and skid packages cut, fit and welded to your drawings.",
+      "intro": "From a single pipe rack to a full process skid, fabrication is planned against your drawings and specification, welded by certified welders to qualified procedures, and inspected before it ships.",
+      "services": [
+        {
+          "slug": "structural-steel",
+          "title": "Structural Steel",
+          "icon": "building",
+          "text": "Pipe racks, platforms, stairs, handrail and support steel for new units and revamps.",
+          "points": ["AWS D1.1 structural welding", "Shop primed or finish coated", "Shipped in erection sequence"]
+        },
+        {
+          "slug": "pressure-piping",
+          "title": "Pressure Piping",
+          "icon": "settings",
+          "text": "Carbon, stainless and chrome spools fabricated to ASME B31.3.",
+          "points": ["Spools to 48 inch diameter", "PWHT and hydrotest arranged", "Full material traceability"]
+        },
+        {
+          "slug": "skids-and-modules",
+          "title": "Skids and Modules",
+          "icon": "boxes",
+          "text": "Process, metering and chemical injection skids built, piped and tested in the shop."
+        }
+      ]
+    },
+    {
+      "slug": "machining",
+      "title": "Machining",
+      "icon": "gauge",
+      "summary": "CNC turning and milling for new parts, reverse engineered parts and repairs.",
+      "intro": "A machine shop sized for heavy industrial work: large-swing lathes, a horizontal boring mill and five-axis milling, run by machinists who read a worn part as well as a print.",
+      "services": [
+        {
+          "slug": "cnc-turning",
+          "title": "CNC Turning",
+          "icon": "settings",
+          "text": "Shafts, sleeves, flanges and threaded connections, one-off or in production runs.",
+          "points": ["Up to 36 inch swing", "120 inch between centers"]
+        },
+        {
+          "slug": "cnc-milling",
+          "title": "CNC Milling",
+          "icon": "ruler",
+          "text": "Three, four and five-axis milling for housings, manifolds and fixtures."
+        },
+        {
+          "slug": "repair-machining",
+          "title": "Repair and Reverse Engineering",
+          "icon": "wrench",
+          "text": "Worn and broken parts measured, drawn and made new when the maker no longer supplies them."
+        }
+      ]
+    },
+    {
+      "slug": "field-services",
+      "title": "Field Services",
+      "icon": "hard-hat",
+      "summary": "On-site machining, welding and installation during turnarounds and outages.",
+      "intro": "Crews and portable equipment go to the unit, so a flange face, a heat exchanger or a pump base is put right without pulling the equipment.",
+      "services": [
+        {
+          "slug": "on-site-machining",
+          "title": "On-site Machining",
+          "icon": "settings",
+          "text": "Flange facing, line boring and milling in place with portable machines."
+        },
+        {
+          "slug": "turnaround-support",
+          "title": "Turnaround Support",
+          "icon": "clipboard",
+          "text": "Welding, fitting and rigging crews scheduled into your turnaround plan."
+        }
+      ]
+    }
+  ],
+  "industries": ["Petrochemical", "Refining", "Midstream", "Marine", "Power generation", "Offshore"],
+  "credentials": [
+    { "label": "ASME U and R stamps", "detail": "Pressure vessel fabrication and repair" },
+    { "label": "AWS D1.1", "detail": "Certified structural welding" },
+    { "label": "ISNetworld", "detail": "Member contractor" },
+    { "label": "TWIC", "detail": "Field crews cleared for port and terminal work" }
+  ],
+  "statesServed": ["Texas", "Louisiana"],
+  "serviceArea": ["Channelview", "Baytown", "Pasadena", "Deer Park", "La Porte", "Port Arthur", "Lake Charles"],
+  "steps": [
+    { "title": "Send the drawings", "text": "Drawings, a specification or the worn part itself, with the date it is needed." },
+    { "title": "Get a written quote", "text": "Price, lead time and the inspection plan, usually within two working days." },
+    { "title": "Build and inspect", "text": "Fabricated or machined in the shop, then inspected and documented." },
+    { "title": "Deliver to the unit", "text": "Shipped on our trucks in erection order, or installed by a field crew." }
+  ],
+  "about": {
+    "eyebrow": "About",
+    "title": "Thirty years on the ship channel.",
+    "text": [
+      "Channelside started in 1994 as a two-bay welding shop serving the plants along Market Street. It grew with its customers, adding a machine shop, a pipe shop and field crews as the work called for them.",
+      "Today the shop runs two shifts on a ten-acre yard in Channelview, a few minutes from the refineries, terminals and chemical plants it works for.",
+      "Most of the work comes from customers who have been sending drawings for twenty years or more."
+    ],
+    "values": [
+      { "title": "Safety first, every shift", "text": "Every crew member can stop a job that is not safe." },
+      { "title": "Quality you can document", "text": "Material certificates, weld maps and inspection reports with every job." },
+      { "title": "Dates that hold", "text": "A lead time is quoted to be kept, not to win the job." }
+    ]
+  },
+  "faqs": [
+    { "q": "What do you need to quote a job?", "a": "Drawings or a sketch with dimensions, the material and the specification, the quantity and the date it is needed. For a repair, the worn part or a photo of it." },
+    { "q": "Do you work inside plant gates?", "a": "Yes. Field crews carry the site safety training and TWIC cards the work calls for, and the company is a member contractor on ISNetworld." },
+    { "q": "Can you deliver?", "a": "Yes, on our own trucks across the Houston area and to Louisiana, in the order the pieces will be erected." }
+  ]
+}

@@ -19,6 +19,7 @@ REQUIRED = {
     "professional": ["name", "shortName", "phone", "email", "address", "town", "state", "brand", "hero", "services", "about"],
     "roofing": ["name", "shortName", "phone", "address", "town", "state", "brand", "hero", "services", "about", "serviceArea"],
     "hvac": ["name", "shortName", "summary", "phone", "address", "town", "state", "brand", "hero", "groups"],
+    "industrial": ["name", "shortName", "summary", "phone", "address", "town", "state", "brand", "hero", "groups"],
     "restaurant": ["name", "shortName", "cuisine", "phone", "address", "town", "state", "hours", "brand", "hero"],
     "recreation": ["kind", "name", "shortName", "phone", "address", "town", "state", "hours", "brand", "hero", "programs"],
 }
