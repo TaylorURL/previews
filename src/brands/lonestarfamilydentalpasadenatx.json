@@ -1,0 +1,191 @@
+{
+  "template": "health",
+  "preview": true,
+  "kind": "dental",
+  "name": "Lone Star Family Dental",
+  "shortName": "Lone Star Family Dental",
+  "tagline": "A caring dentistry touch to protect your teeth and make them last.",
+  "talk": "Dr. Shoaib Ahmed",
+  "phone": "(346) 388-0505",
+  "phones": [
+    { "label": "Same-day appointments", "number": "(713) 943-9832" },
+    { "label": "Office", "number": "(713) 455-6484" },
+    { "label": "Fax", "number": "(346) 388-1114" }
+  ],
+  "email": "info@lonestarfamilydentistry.com",
+  "address": "3701 Shaver St",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77504",
+  "hours": [
+    ["Monday", "9:00 AM - 6:00 PM"],
+    ["Tuesday", "9:00 AM - 6:00 PM"],
+    ["Wednesday", "9:00 AM - 6:00 PM"],
+    ["Thursday", "9:00 AM - 6:00 PM"],
+    ["Friday", "9:00 AM - 6:00 PM"],
+    ["Saturday", "8:00 AM - 3:00 PM"],
+    ["Sunday", "Closed"]
+  ],
+  "cta": {
+    "label": "Book an Appointment",
+    "text": "Call or send a request with your expected date, and our friendly reception staff will get back to you. Our doctors will receive or return any urgent calls."
+  },
+  "heroStyle": "type",
+  "brand": {
+    "primary": "#108482",
+    "accent": "#ef8726",
+    "ink": "#1c2a2e",
+    "muted": "#5a6a6e",
+    "surface": "#f2f8f8",
+    "cream": "#faf7f2",
+    "line": "#dce8e8",
+    "heading": "'Raleway', system-ui, sans-serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap",
+    "logo": "/brands/lonestarfamilydentalpasadenatx/logo.webp",
+    "logoMono": "/brands/lonestarfamilydentalpasadenatx/logo-mono.webp",
+    "logoWidth": 191,
+    "logoHeight": 48,
+    "logoRatio": 3.971,
+    "logoGround": "#ffffff",
+    "logoReads": [0.301, 0.28, 0.26, 0.238, 0.238, 0.359, 0.374, 0.606, 0.739, 0.872, 1.0]
+  },
+  "hero": {
+    "eyebrow": "Family dentist on Shaver Street in Pasadena",
+    "title": "Quality dental care for the whole family.",
+    "lead": "Quality care in a state of the art facility. To see for yourself, visit us and get a consultation from one of our highly trained and experienced dentists.",
+    "points": ["Same-day dental appointments", "Most insurance plans accepted", "A doctor on call for emergencies"]
+  },
+  "highlights": [
+    { "title": "Best Professionals", "text": "Our team of highly trained doctors, with countless hours of experience, is here to give you the best service possible.", "icon": "team" },
+    { "title": "Complete Care", "text": "General dentistry covers a wide range of procedures. The goal of general dentistry is to remove all disease from your mouth.", "icon": "tooth" },
+    { "title": "Modern Equipment", "text": "Whatever your plan is, our state of the art equipment makes it simple for our team to make it a reality.", "icon": "technology" },
+    { "title": "Emergency Ready", "text": "A dental emergency can be a traumatizing experience, so we always have a doctor on call, ready to help.", "icon": "emergency" }
+  ],
+  "overview": {
+    "title": "Complete dental services",
+    "text": "General, preventative, cosmetic and other dental services for the whole family, tailored for each case, all under one roof."
+  },
+  "services": [
+    {
+      "slug": "emergency-dentistry",
+      "title": "Emergency Dentistry",
+      "summary": "Same-day visits for pain and injuries.",
+      "text": "Fast relief for sudden tooth pain or a dental injury, with same-day appointments for adults and children.",
+      "lead": "When sudden tooth pain or a dental injury occurs, you need quick, reliable care. Whether you are dealing with a chipped tooth, swelling, bleeding gums or a knocked-out tooth, our dental team is ready to provide same-day dental appointments to restore your comfort and peace of mind.",
+      "covers": [
+        { "title": "Toothaches", "text": "Severe or persistent toothaches." },
+        { "title": "Broken teeth", "text": "Cracked, broken or chipped teeth, and knocked-out or loose teeth due to trauma." },
+        { "title": "Swelling and infection", "text": "Swollen gums, dental abscesses, gum infections and bleeding." },
+        { "title": "Lost restorations", "text": "Lost fillings, crowns or veneers." }
+      ],
+      "questions": [
+        { "q": "What is considered a dental emergency?", "a": "A dental emergency includes severe pain, swelling, broken teeth, abscesses, or bleeding that won't stop." },
+        { "q": "What should I do before I reach the office?", "a": "For tooth pain, rinse with warm water and apply a cold compress. Keep a knocked-out tooth moist in milk or saliva and bring it with you. For swelling or infection, avoid heat and call our office right away. For broken restorations, save any pieces and schedule an urgent visit." },
+        { "q": "Do emergency dental treatments cost more?", "a": "Our emergency dentistry is affordable, and we accept most insurance plans. We also provide flexible payment options to fit your budget." },
+        { "q": "Do you offer after-hours emergency dentistry?", "a": "If you have an urgent issue after hours, call our office, and we'll arrange the earliest possible appointment to address your emergency." }
+      ]
+    },
+    {
+      "slug": "dental-exams",
+      "title": "Dental Exams",
+      "summary": "Checkups that catch problems early.",
+      "text": "Comprehensive dental exams with state-of-the-art technology, for the early detection and prevention of dental issues.",
+      "lead": "Maintaining excellent oral health starts with regular dental exams. Our experienced team uses state-of-the-art technology and a patient-centered approach so that each exam is thorough, and regular exams are crucial for the early detection and prevention of dental issues."
+    },
+    {
+      "slug": "cavity-filling",
+      "title": "Cavity Filling",
+      "summary": "Fillings to stop decay.",
+      "text": "Cavity filling treatments to help you achieve and maintain a healthy smile, with your comfort looked after throughout.",
+      "lead": "We offer comprehensive dental services, including cavity filling treatments, to help our patients achieve and maintain healthy smiles. Our team of dental professionals is committed to providing exceptional care and making sure you are comfortable throughout the entire treatment."
+    },
+    {
+      "slug": "root-canals",
+      "title": "Root Canals",
+      "summary": "Save an infected tooth.",
+      "text": "Root canal treatment removes the infected pulp, cleans and seals the tooth, and saves your natural tooth.",
+      "lead": "Root canal treatment, also known as endodontic treatment, is designed to eliminate bacteria from the infected root canal, prevent reinfection of the tooth and save the natural tooth. The inflamed or infected pulp is removed, and the inside of the tooth is carefully cleaned and disinfected, then filled and sealed.",
+      "covers": [
+        { "title": "When it is needed", "text": "A cracked tooth from injury or genetics, a deep cavity, or issues from a previous filling." },
+        { "title": "Signs to watch for", "text": "Teeth that are sensitive, particularly to hot and cold." }
+      ]
+    },
+    {
+      "slug": "implant-dentistry",
+      "title": "Implant Dentistry",
+      "summary": "Replace missing teeth.",
+      "text": "Dental implants fuse with your jawbone, so they won't slip, make noise or decay the way bridgework or dentures can.",
+      "lead": "Because the titanium in the implants fuses with your jawbone, implants won't slip, make noise, or cause bone damage the way fixed bridgework or dentures might. And the materials can't decay like your own teeth that support regular bridgework can."
+    },
+    {
+      "slug": "laser-gum-therapy",
+      "title": "Laser Gum Therapy",
+      "summary": "Treatment for gum disease.",
+      "text": "Treatment for gum disease, which can cause bad breath, bleeding gums and, without care, tooth loss.",
+      "lead": "Most adults have some form of gum disease, also called periodontal disease, and the risk increases with age. It can cause bad breath, make it painful to eat or drink, and leave gums puffy, red and prone to bleeding. Without proper care, periodontal disease can weaken and destroy the bones that support your teeth, leading to tooth loss."
+    },
+    {
+      "slug": "tooth-whitening",
+      "title": "Tooth Whitening",
+      "summary": "A brighter smile.",
+      "text": "Whitening lightens the color of your teeth, with both home-based and in-office options.",
+      "lead": "Tooth whitening is any process that lightens the color of a tooth, by removing the stain or by a chemical reaction that lightens the tooth color. It is among the most popular cosmetic procedures, and we offer both home-based products and office-based whitening applied under professional supervision."
+    },
+    {
+      "slug": "dental-brackets",
+      "title": "Dental Brackets",
+      "summary": "Braces to straighten teeth.",
+      "text": "Metal or ceramic braces to correct misaligned teeth, with application and maintenance by our team.",
+      "lead": "If you're looking to improve your smile and correct misaligned teeth, dental brackets may be the solution for you. Brackets, also known as braces, are small metal or ceramic brackets bonded to the front of the teeth. They work with arch wires, elastics and other components to apply gentle pressure and gradually move the teeth into place. Our team provides comprehensive orthodontic care, including the application and maintenance of brackets."
+    },
+    {
+      "slug": "under-sedation",
+      "title": "Under Sedation",
+      "summary": "Care for anxious patients.",
+      "text": "Sedation dentistry so you can receive the care you need in a relaxed state.",
+      "lead": "Dental anxiety or fear can be a significant barrier to receiving necessary treatment. That's why we offer sedation dentistry options for a comfortable and stress-free experience. Our team is trained in administering sedation, which suits people with dental anxiety, a low pain threshold, or extensive treatment needs."
+    },
+    {
+      "slug": "radiology-service",
+      "title": "Radiology Service",
+      "summary": "Dental X-rays for diagnosis.",
+      "text": "Dental X-rays to see what a routine exam cannot, from cavities and decay to bone loss and impacted teeth.",
+      "lead": "Dental radiography uses X-rays to create images of the teeth, bones and the soft tissues around them. These images help diagnose conditions that are not visible during a routine oral examination, such as cavities, tooth decay, bone loss and impacted teeth."
+    }
+  ],
+  "about": {
+    "title": "Family dentistry in Pasadena, TX",
+    "text": [
+      "Our experienced dentists and staff offer comprehensive dental exams and a wide array of general, preventative, cosmetic and other dental services, using state-of-the-art equipment. We provide care to you and your loved ones in a warm and cozy atmosphere.",
+      "Our dentists take time to educate patients about proper dental care and the treatments suggested, and encourage good preventative habits. Patients never feel rushed. We involve you in decisions about your treatment, give you access to your records and explain all the options, and our dentists pursue continuing education to keep up with new research and technology."
+    ],
+    "values": [
+      { "title": "Affordable care", "text": "We accept most insurance plans and offer payment options to fit your budget." },
+      { "title": "Family friendly", "text": "A stress-free visit for adults and kids alike." },
+      { "title": "You stay in control", "text": "We explain every option and involve you in the decisions about your treatment." }
+    ]
+  },
+  "team": [
+    { "name": "Dr. Shoaib Ahmed", "role": "Dentist" },
+    { "name": "Dr. Ikechukwu T. Osemene", "role": "Dentist" }
+  ],
+  "steps": [
+    { "title": "Book your visit", "text": "Call us or book online, and tell us your expected date. We reserve daily slots for same-day visits." },
+    { "title": "Bring your documents", "text": "Please bring a valid ID, your insurance card if you have one, and any previous dental records or X-rays if available." },
+    { "title": "We check your coverage", "text": "Our staff will verify your benefits and explain your coverage before treatment." }
+  ],
+  "faqs": [
+    { "q": "Do you offer same-day dental appointments?", "a": "Yes. We provide same-day dental appointments for urgent cases such as tooth pain, broken teeth or lost fillings." },
+    { "q": "What should I bring to my dental appointment?", "a": "Please bring a valid ID, your insurance card (if applicable), and any previous dental records or X-rays if available." },
+    { "q": "Do you accept walk-ins for emergencies?", "a": "We do our best to accommodate walk-ins, but scheduling a same-day appointment ensures faster service and minimal wait times." },
+    { "q": "Are same-day dental appointments covered by insurance?", "a": "Yes, most same-day treatments are covered by dental insurance. Our staff will verify your benefits and explain your coverage before treatment." },
+    { "q": "How do I book an appointment?", "a": "You can book online through our website or call (713) 943-9832 to schedule with Dr. Shoaib Ahmed or Dr. Ikechukwu T. Osemene." }
+  ],
+  "facts": [
+    { "heading": "Insurance", "text": "We accept most insurance plans, and most same-day treatments are covered by dental insurance. Our staff will verify your benefits and explain your coverage before treatment." },
+    { "heading": "Payment options", "text": "We offer flexible payment options to fit your budget. Our emergency dentistry is affordable, with same-day appointments for urgent cases." },
+    { "heading": "Kids dentistry", "text": "Our caring, pediatric-focused dental team provides a welcoming, stress-free environment for children, with services tailored to their needs." },
+    { "heading": "Other ways to reach us", "items": ["Email: Isfdental1@outlook.com", "Facebook: facebook.com/LoneStarFamilydentalpasadena", "Instagram: @lsfdental"] }
+  ]
+}

@@ -311,8 +311,12 @@ function factLines(fact) {
  * The facts run down columns one after another, as a newspaper sets them, so a
  * long one and a short one side by side leave no hole under the short one.
  * Each sits behind a rule of its own and its items are marked as a list.
+ *
+ * A template may pass its own `title` (an eyebrow and heading in its idiom),
+ * set above the cards inside the rule, so the block reads as a section of the
+ * page rather than loose cards under the last one.
  */
-export function Facts({ b }) {
+export function Facts({ b, title }) {
   const facts = (b.facts ?? []).filter((fact) => fact?.heading && (fact.text || fact.items?.length));
   if (!facts.length) return null;
   const rule = { borderColor: 'color-mix(in srgb, currentColor 18%, transparent)' };
@@ -336,7 +340,15 @@ export function Facts({ b }) {
           two balanced columns instead. */}
       {/* Each block is a card on a wash of the ground it sits on, so the section reads as laid out
           rather than as loose text: no default bullets, and a list marked with its own rule. */}
-      <div className="border-t pt-12 sm:columns-2 sm:gap-5 lg:grid lg:grid-cols-3 lg:items-start" style={rule}>
+      {title && (
+        <div className="border-t pt-12" style={rule}>
+          {title}
+        </div>
+      )}
+      <div
+        className={`${title ? '' : 'border-t pt-12 '}sm:columns-2 sm:gap-5 lg:grid lg:grid-cols-3 lg:items-start`}
+        style={title ? undefined : rule}
+      >
         {columns.filter((col) => col.length).map((col, i) => (
           <div key={i} className="contents lg:block lg:min-w-0">
             {col.map((fact) => (
@@ -354,7 +366,9 @@ export function Facts({ b }) {
                       return (
                         <li key={item} className="break-words border-t py-1.5 first:border-0 first:pt-0 last:pb-0" style={rule}>
                           {page ? (
-                            <a href={page.href} className="no-underline hover:underline hover:opacity-100" rel="noopener">
+                            // Underlined and set heavier, so a card that only holds a link
+                            // reads as one to follow rather than as a few loose words.
+                            <a href={page.href} className="font-semibold underline underline-offset-4 hover:opacity-100" rel="noopener">
                               {page.label}
                             </a>
                           ) : (
