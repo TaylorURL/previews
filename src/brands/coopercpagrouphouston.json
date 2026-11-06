@@ -43,78 +43,152 @@
       0.0
     ]
   },
+  "heroStyle": "photo",
+  "tone": "classic",
   "hero": {
-    "eyebrow": "Cooper CPA Group",
-    "title": "Tax preparation and tax planning in Houston",
-    "lead": "Cooper CPA Group is an accounting and tax firm based in Houston, Texas focused on tax planning and tax preparation.",
+    "eyebrow": "Cooper CPA Group · Houston",
+    "title": "You can talk to Gary Cooper directly.",
+    "lead": "Cooper CPA Group is an accounting and tax firm in Houston, Texas, focused on tax planning and tax preparation for individuals and businesses. They have served Houston and surrounding areas for over two decades.",
     "image": "/brands/coopercpagrouphouston/photo1",
     "imageAlt": "A photo of Cooper CPA Group"
   },
   "serviceArea": [
-    "Houston"
+    "Houston",
+    "Houston Heights"
+  ],
+  "highlights": [
+    {
+      "title": "Over two decades in Houston",
+      "text": "Serving the accounting and tax needs of Houston and surrounding areas for over two decades.",
+      "icon": "clock"
+    },
+    {
+      "title": "Talk to Gary or senior staff",
+      "text": "For urgent questions, clients can reach Gary Cooper or senior staff directly.",
+      "icon": "phone"
+    },
+    {
+      "title": "Your Rock Star CPA",
+      "text": "Gary Cooper has been recognized by ABC News Channel 13 with that title.",
+      "icon": "award"
+    },
+    {
+      "title": "Flat, friendly team",
+      "text": "A flat organizational chart built on trust in their staff.",
+      "icon": "users"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Meet and greet",
+      "text": "Meet with Director of Practice Management Christopher Cooper at no cost to see if the firm is right for you."
+    },
+    {
+      "title": "Quote and engagement letter",
+      "text": "Christopher sends a quote prepared by the tax manager, then you receive an engagement letter electronically."
+    },
+    {
+      "title": "Begin preparation",
+      "text": "Once the letter is signed, you are assigned a preparer and a manager, and your preparer helps you set up a secure portal."
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Paul Cater | Trefoil Holdings, LLC; Capital Inspectors LLC",
+      "text": "The one thing that I will never forget is on the day we where to close the deal I woke up all stressed and worried about how the day would go. When I drove into my parking lot at the office Gary Cooper himself was standing their waiting on me to help walk me through this life changing event.",
+      "source": "their site"
+    },
+    {
+      "author": "Bruce Whitaker | President of The Whitaker Companies",
+      "text": "As a small firm without in-house tax expertise, finding a reliable and responsive accounting partner was crucial for us, and Cooper CPA Group has exceeded our expectations. What sets this firm apart is their commitment to small businesses and their responsiveness... Moreover, the pricing is reasonable and transparent... If you have an urgent question or challenge, you can pick up the phone and talk to Gary Cooper or any of his senior staff members immediately. I can’t get that level of response from a big accounting firm.",
+      "source": "their site"
+    },
+    {
+      "author": "Frederick Warren | Frederick Warren Photography",
+      "text": "His team was very thorough in preparing my taxes and always brings the attention to detail that I have no idea of or the time to investigate all the complicated tax codes.",
+      "source": "their site"
+    }
+  ],
+  "credentials": [
+    {
+      "label": "ABC News - Channel 13",
+      "detail": "Recognized Gary Cooper as “Your Rock Star CPA”"
+    },
+    {
+      "label": "Google",
+      "detail": "Ranked “One of The Best CPA firms in Houston, TX”"
+    }
   ],
   "kind": "accounting",
   "services": [
     {
       "slug": "payroll",
       "title": "Payroll",
-      "summary": "",
-      "text": "",
+      "summary": "Payroll for Houston businesses",
+      "text": "Payroll is one of the accounting services Cooper CPA Group offers to Houston businesses.",
+      "lead": "Payroll is one of the accounting services Cooper CPA Group offers to Houston businesses.",
       "icon": "calculator"
     },
     {
       "slug": "tax-preparation",
       "title": "Tax Preparation",
-      "summary": "",
-      "text": "",
+      "summary": "Filing your taxes doesn't have to be complicated.",
+      "text": "Filing your taxes doesn't have to be complicated.",
+      "lead": "Filing your taxes doesn't have to be complicated. At Cooper CPA Group, we provide comprehensive tax preparation services for individuals and businesses in Houston, helping you navigate complex tax requirements, identify eligible deductions, and file with confidence.",
       "icon": "calculator"
     },
     {
       "slug": "tax-planning",
       "title": "Tax Planning",
       "summary": "",
-      "text": "",
+      "text": "Effective tax planning happens before it's time to file.",
+      "lead": "Effective tax planning happens before it's time to file. Cooper CPA Group works with Houston business owners to evaluate their tax position , identify potential planning opportunities, and develop strategies that can be implemented before year-end.",
       "icon": "calculator"
     },
     {
       "slug": "succession-planning",
       "title": "Succession Planning",
       "summary": "",
-      "text": ""
+      "text": "Helping business owners transition ownership smoothly while preserving financial and tax efficiencies.",
+      "lead": "Helping business owners transition ownership smoothly while preserving financial and tax efficiencies."
     },
     {
       "slug": "financial-accounting-advisory",
       "title": "Financial & Accounting Advisory",
       "summary": "",
-      "text": "",
+      "text": "Fractional CFO and advisory support that gives business owners clearer reporting, stronger planning, and greater confidence in what comes next.",
+      "lead": "Fractional CFO and advisory support that gives business owners clearer reporting, stronger planning, and greater confidence in what comes next.",
       "icon": "calculator"
     },
     {
       "slug": "financial-statements",
       "title": "Financial Statements",
-      "summary": "",
-      "text": ""
+      "summary": "Financial statements for owners",
+      "text": "Cooper CPA Group prepares financial statements for business owners in Houston.",
+      "lead": "Cooper CPA Group prepares financial statements for business owners in Houston."
     },
     {
       "slug": "quickbooks-consulting",
       "title": "QuickBooks Consulting",
-      "summary": "",
-      "text": ""
+      "summary": "QuickBooks help and training",
+      "text": "Our bookkeeping supervisor is a QuickBooks Online Level 1 and Level 2 Certified ProAdvisor who knows both the Online and Desktop versions.",
+      "lead": "Our bookkeeping supervisor is a QuickBooks Online Level 1 and Level 2 Certified ProAdvisor who knows both the Online and Desktop versions."
     },
     {
       "slug": "accounting-clean-up-and-analysis",
       "title": "Accounting Clean-up and Analysis",
-      "summary": "",
-      "text": "",
+      "summary": "Clean up and review your books",
+      "text": "We go through your accounting records, clean them up and analyze where your business stands.",
+      "lead": "We go through your accounting records, clean them up and analyze where your business stands.",
       "icon": "calculator"
     }
   ],
   "about": {
-    "title": "About Cooper CPA Group",
+    "title": "Over two decades of Houston accounting, built on conversation",
     "text": [
-      "Gary Cooper has been recognized by ABC News- Channel 13 as “Your Rock Star CPA.” With that said, if you are looking for a blend of personal service and expertise, you have come to the right place! Our team offers a broad range of solutions for business owners, executives, and independent professionals.",
-      "Our core values are based on an energetic, lively, and friendly environment. At Cooper CPA Group, we have implemented a flat organizational chart, which comes from trust in our very competent staff. We believe in relationships which can only be built through strong communications.",
-      "Our staff have regular team building activities to enhance the internal health of our organization. This leads to strong collaboration when assisting our customers. Collaboration is the key-working together with a smile."
+      "Cooper CPA Group has served the accounting and tax needs of Houston and the surrounding areas for over two decades.",
+      "Gary Cooper has been recognized by ABC News Channel 13 as \"Your Rock Star CPA.\" The firm works with real estate investors, medical professionals, startups, construction firms and retail businesses, among others.",
+      "The team runs on a flat organizational chart, which comes from trust in its staff, and a friendly, energetic office. They believe relationships are built only through strong communication."
     ],
     "image": "/brands/coopercpagrouphouston/photo2",
     "imageAlt": "A photo of Cooper CPA Group"

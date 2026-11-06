@@ -19,9 +19,9 @@
     "surface": "#f9fbf5",
     "muted": "#5b6470",
     "line": "#dfe0e0",
-    "heading": "'Plus Jakarta Sans', system-ui, sans-serif",
+    "heading": "'Bricolage Grotesque', system-ui, sans-serif",
     "body": "'Inter', system-ui, sans-serif",
-    "fonts": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "fonts": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
     "logo": "/brands/fernandezlandscapecontractors/logo.webp",
     "logoMono": "/brands/fernandezlandscapecontractors/logo-mono.webp",
     "logoWidth": 170,
@@ -31,7 +31,7 @@
     "logoReads": [
       0.111,
       0.168,
-      0.253,
+      0.247,
       0.333,
       0.407,
       0.481,
@@ -42,59 +42,141 @@
       1.0
     ]
   },
+  "heroStyle": "split",
+  "tone": "bold",
   "hero": {
-    "eyebrow": "Fernandez Landscape Contractors Services",
-    "title": "Lawn and landscape",
-    "lead": "We offer professional landscaping services including concrete work, tree services, drain solutions, patio covers, and more across Houston, Texas.",
-    "titleAccent": "in Houston"
+    "eyebrow": "Fernandez Landscape Contractors Services · Houston",
+    "title": "We install what we design.",
+    "lead": "Fernandez Landscape Contractors Services designs and installs custom landscapes for homes and businesses in Houston, Texas.",
+    "image": "/brands/fernandezlandscapecontractors/photo1",
+    "imageAlt": "A photo of Fernandez Landscape Contractors Services",
+    "titleAccent": "Our own crews, for over 20 years."
   },
   "serviceArea": [
     "Houston",
+    "River Oaks",
+    "Memorial",
+    "West University Place",
+    "Bellaire",
+    "The Heights",
+    "Cypress",
     "Katy",
     "Spring",
-    "Tomball"
+    "Tomball",
+    "The Woodlands"
   ],
+  "highlights": [
+    {
+      "title": "Our own crews",
+      "text": "We install what we design, so one company answers for the project.",
+      "icon": "hammer"
+    },
+    {
+      "title": "Trained and licensed",
+      "text": "Our technicians and workers are trained and licensed to do the job.",
+      "icon": "badge"
+    },
+    {
+      "title": "Over 20 years",
+      "text": "More than 20 years in the landscaping business in Houston and nearby.",
+      "icon": "calendar"
+    },
+    {
+      "title": "Homes and businesses",
+      "text": "Residential and commercial work, and no job is too big or too small.",
+      "icon": "building"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Send a request",
+      "text": "You send a request through the website or call us, and we respond within one business day."
+    },
+    {
+      "title": "Free on-site estimate",
+      "text": "We visit the property and give you a free on-site estimate."
+    },
+    {
+      "title": "Written proposal",
+      "text": "Right after the visit, you get the written proposal with the design and the scope."
+    },
+    {
+      "title": "Installation",
+      "text": "Our crews install the project."
+    }
+  ],
+  "phones": [
+    {
+      "label": "Call or text",
+      "number": "(346) 281-9621"
+    },
+    {
+      "label": "Call or text",
+      "number": "(713) 597-0907"
+    }
+  ],
+  "reviews": [
+    {
+      "text": "Wonderful people! Did exactly what they said they were going to do and then some. Everyone involved was very pleasant and very cooperative I would highly recommend them to anyone. I will definitely use them again if I have another project Thanks",
+      "source": "their site"
+    },
+    {
+      "text": "Ernesto was incredibly responsive, helpful, and extremely friendly and professional. He came out to consult and worked with me on what I wanted and offered his suggestions. Scheduling and quoting was very quick on turnaround! His crew was respectful of the property, prompt, and very punctual. He turned our bland backyard into a lovely and relaxing place. I highly recommend Fernandez Landscaping for any landscaping work.",
+      "source": "their site"
+    }
+  ],
+  "owner": {
+    "name": "Ernesto Fernandez",
+    "role": "Founder + Principal",
+    "text": "Ernesto Fernandez is the founder and principal of Fernandez Landscape Contractors Services. His passion for all things outdoor living is driven by his desire to help people reconnect to nature wherever they can."
+  },
   "ask": "quote",
-  "summary": "We offer professional landscaping services including concrete work, tree services, drain solutions, patio covers, and more across Houston, Texas.",
+  "summary": "Landscape design, drainage, irrigation and patio covers for homes and businesses in Houston, River Oaks, Memorial and Bellaire.",
   "groups": [
     {
-      "slug": "tree-services",
-      "title": "Tree Services",
+      "slug": "custom-landscaping",
+      "title": "Custom Landscaping",
       "icon": "leaf",
-      "summary": "Looking for tree pruning, trimming, and felling/thinning tree care services?",
-      "intro": "Looking for tree pruning, trimming, and felling/thinning tree care services? Whatever your tree needs are, we'd love to take care of it for you! We offer professional tree services in Houston, Texas."
+      "summary": "Have a look in mind for your front yard or backyard?",
+      "intro": "Have a look in mind for your front yard or backyard? Tell us what you want, and we will help you turn it into a design that fits your space, your style and your budget. Flower beds, new sod, gravel details and garden stones can all be part of it."
     },
     {
-      "slug": "elegant-striking-landscaping",
-      "title": "Elegant & Striking Landscaping",
+      "slug": "tree-planting",
+      "title": "Tree Planting",
       "icon": "leaf",
-      "summary": "Do you find yourself searching \"landscaping services near me\" on Google?",
-      "intro": "Do you find yourself searching \"landscaping services near me\" on Google? If you're from Houston and the surrounding areas, we are here for you! We provide elegant and striking landscaping! Just give us a call!"
-    },
-    {
-      "slug": "installation-construction",
-      "title": "Installation & Construction",
-      "icon": "leaf",
-      "summary": "Do you have a design or look in mind that you want to achieve? Want to add garden stones or gravel detail? No worries! We got your back!",
-      "intro": "Do you have a design or look in mind that you want to achieve? Want to add garden stones or gravel detail? No worries! We got your back! We do custom landscaping. Let your creative juice flow and we'll make it happen."
+      "summary": "That's the reason why we also offer Tree Planting services. Give us a call if you want to make it happen!",
+      "intro": "We'd love to contribute to saving the environment. That's the reason why we also offer Tree Planting services. Give us a call if you want to make it happen! We also offer other landscaping services."
     },
     {
       "slug": "comprehensive-pool-maintenance",
       "title": "Comprehensive Pool Maintenance",
       "icon": "leaf",
-      "summary": "Keep your pool pristine with our thorough maintenance services.",
+      "summary": "We cover everything from routine cleaning to chemical balancing, ensuring a safe and sparkling pool all year round.",
       "intro": "Keep your pool pristine with our thorough maintenance services. We cover everything from routine cleaning to chemical balancing, ensuring a safe and sparkling pool all year round. Trust us to handle the upkeep so you can enjoy a spotless swimming haven without the hassle."
+    },
+    {
+      "slug": "new-pool-installation",
+      "title": "New Pool Installation",
+      "icon": "leaf",
+      "summary": "Transform your backyard into a bespoke aquatic retreat with our custom pool design and remodeling services.",
+      "intro": "Transform your backyard into a bespoke aquatic retreat with our custom pool design and remodeling services. Whether you're envisioning a modern oasis or a natural lagoon, our designers will bring your dream pool to life, enhancing both aesthetics and value to your property."
+    },
+    {
+      "slug": "full-service-landscaping",
+      "title": "Full-Service Landscaping",
+      "icon": "leaf",
+      "summary": "Fernandez Landscape Contractors Services is a Houston landscaping company that designs and installs custom landscapes for homes and businesses.",
+      "intro": "Fernandez Landscape Contractors Services is a Houston landscaping company that designs and installs custom landscapes for homes and businesses."
     }
   ],
   "about": {
     "eyebrow": "About us",
-    "title": "About Fernandez Landscape Contractors Services",
+    "title": "Built to help people reconnect with nature",
     "text": [
-      "Fernandez Landscape Contractors Services is an innovative company specialized in offering the best custom-made solutions to utilize outdoor spaces all year round.",
-      "At Fernandez Landscape Contractors Services, we understand that the outdoor aesthetic of your home or business is as important as your interior. We have a team of experts that will consult with you to determine your exact needs.",
-      "From landscape maintenance to new construction, our residential and commercial clients in Houston, TX know that when they call Fernandez Landscape Contractors Services, they will get the best."
-    ],
-    "image": "/brands/fernandezlandscapecontractors/photo1",
-    "imageAlt": "A photo of Fernandez Landscape Contractors Services"
+      "Ernesto Fernandez is the founder and principal of Fernandez Landscape Contractors Services, and his passion for outdoor living comes from wanting to help people reconnect to nature wherever they can.",
+      "For more than 20 years the company has offered a full range of landscaping services in Houston and the surrounding areas.",
+      "Landscaping, drainage, irrigation, pavers and patio covers can be one project with one team, and they have handled HOA approvals and permits before.",
+      "Their most important value is customer service: prompt, open communication and honesty."
+    ]
   }
 }

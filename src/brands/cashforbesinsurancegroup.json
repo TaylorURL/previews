@@ -10,114 +10,180 @@
   "state": "TX",
   "zip": "77079",
   "rating": 5,
-  "reviewCount": 616,
+  "reviewCount": 629,
+  "since": 2018,
   "brand": {
-    "primary": "#b75d3c",
-    "primaryDeep": "#80412a",
-    "accent": "#afbc28",
-    "ink": "#231f22",
-    "surface": "#fbf6f4",
+    "primary": "#ba592b",
+    "primaryDeep": "#823e1e",
+    "accent": "#737c1a",
+    "ink": "#231f21",
+    "surface": "#fcf6f3",
     "muted": "#5b6470",
     "line": "#e0e0e0",
-    "cream": "#fdf8f1",
+    "cream": "#fef8f0",
     "heading": "'Roboto', system-ui, sans-serif",
     "body": "'Fira Sans', system-ui, sans-serif",
     "fonts": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&family=Fira+Sans:wght@400;600;700&display=swap",
     "logo": "/brands/cashforbesinsurancegroup/logo.webp",
     "logoMono": "/brands/cashforbesinsurancegroup/logo-mono.webp",
-    "logoWidth": 100,
+    "logoWidth": 106,
     "logoHeight": 58,
-    "logoRatio": 1.724,
+    "logoRatio": 1.829,
     "logoGround": "#ffffff",
     "logoReads": [
-      0.371,
-      0.353,
-      0.36,
-      0.392,
-      0.443,
-      0.514,
-      0.594,
-      0.684,
-      0.784,
-      0.893,
-      1.0
+      0.327,
+      0.26,
+      0.251,
+      0.468,
+      0.505,
+      0.555,
+      0.617,
+      0.691,
+      0.785,
+      0.894,
+      0.98
     ]
   },
+  "heroStyle": "split",
+  "tone": "classic",
   "hero": {
-    "eyebrow": "Cash & Forbes Insurance Group",
-    "title": "Personal insurance and auto in Houston",
-    "lead": "Cash & Forbes Insurance Group has been providing Texas families with home, auto, flood, and other personal insurance since 2018. Get a quote!"
+    "eyebrow": "Cash & Forbes Insurance Group · Houston",
+    "title": "Two captive agents went independent to serve you better",
+    "lead": "Cash & Forbes Insurance Group is an independent insurance agency in Houston, Texas, helping families and businesses find home, auto, flood and business coverage. Owners Chris Forbes and Charles Cash have nearly two decades of insurance experience each.",
+    "image": "/brands/cashforbesinsurancegroup/photo1",
+    "imageAlt": "A photo of Cash & Forbes Insurance Group"
   },
   "serviceArea": [
     "Houston",
-    "Liberty",
+    "Liberty Hill",
     "Katy"
   ],
+  "highlights": [
+    {
+      "title": "Founded in 2018",
+      "text": "Started by two agents who wanted to better serve their clients.",
+      "icon": "calendar"
+    },
+    {
+      "title": "Independent agency",
+      "text": "We can find you insurance from a variety of coverage options.",
+      "icon": "shield"
+    },
+    {
+      "title": "Facts first",
+      "text": "Honesty, integrity and quick, reliable responses.",
+      "icon": "check"
+    },
+    {
+      "title": "Licensed in Texas",
+      "text": "We are licensed in Texas.",
+      "icon": "badge"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Fill out the form",
+      "text": "Start by filling out the form."
+    },
+    {
+      "title": "Review your options with us",
+      "text": "Then we go over your options together."
+    },
+    {
+      "title": "Get the coverage you need",
+      "text": "You finish with the coverage you need."
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Hunter W.",
+      "text": "Chris and his team are top notch. Extremely responsive and professional. Have recommended them to numerous friends and family and they always take care of them.",
+      "source": "their site"
+    },
+    {
+      "author": "Justin D.",
+      "text": "Charles and his team are 2nd to none—in every department. Seems like every time I need a change to a policy they find something better and with a lower cost. 10/10 would recommend!",
+      "source": "their site"
+    }
+  ],
+  "owner": {
+    "name": "Chris Forbes",
+    "role": "Owner",
+    "text": "With nearly two decades of insurance experience each, owners Chris Forbes and Charles Cash are excited to work with you."
+  },
   "kind": "insurance",
   "services": [
     {
       "slug": "personal-insurance",
       "title": "Personal Insurance",
-      "summary": "Personal Insurance",
-      "text": ""
-    },
-    {
-      "slug": "auto",
-      "title": "Auto",
-      "summary": "Auto",
-      "text": "",
-      "icon": "car"
+      "summary": "Home, auto and flood coverage",
+      "text": "Personal insurance for Texas families, including home, auto and flood coverage.",
+      "lead": "Personal insurance for Texas families, including home, auto and flood coverage."
     },
     {
       "slug": "flood",
       "title": "Flood",
-      "summary": "Flood",
-      "text": ""
+      "summary": "Protect your home from flooding",
+      "text": "Flood insurance protects your home and your assets, wherever you live.",
+      "lead": "Flood insurance protects your home and your assets, wherever you live."
     },
     {
       "slug": "business-insurance",
       "title": "Business Insurance",
-      "summary": "Business Insurance",
-      "text": "",
+      "summary": "Coverage for your business",
+      "text": "Coverage for business owners, including general liability, business auto and commercial property.",
+      "lead": "Coverage for business owners, including general liability, business auto and commercial property.",
       "icon": "briefcase"
     },
     {
       "slug": "business-owners",
       "title": "Business Owners",
-      "summary": "Business Owners",
-      "text": "",
+      "summary": "A policy for business owners",
+      "text": "A business owners policy, shopped by an independent agency across a variety of coverage options.",
+      "lead": "A business owners policy, shopped by an independent agency across a variety of coverage options.",
       "icon": "briefcase"
     },
     {
       "slug": "general-liability",
       "title": "General Liability",
-      "summary": "General Liability",
-      "text": "",
+      "summary": "Liability coverage for businesses",
+      "text": "General liability insurance for your business, found from a variety of coverage options.",
+      "lead": "General liability insurance for your business, found from a variety of coverage options.",
       "icon": "briefcase"
     },
     {
       "slug": "business-auto",
       "title": "Business Auto",
-      "summary": "Business Auto",
-      "text": "",
+      "summary": "Coverage for business vehicles",
+      "text": "Business auto insurance for the vehicles your business relies on.",
+      "lead": "Business auto insurance for the vehicles your business relies on.",
       "icon": "car"
     },
     {
       "slug": "life-insurance",
       "title": "Life Insurance",
-      "summary": "Life Insurance",
-      "text": "",
+      "summary": "Individual life insurance",
+      "text": "Individual life insurance, with coverage chosen to fit you and your family.",
+      "lead": "Individual life insurance, with coverage chosen to fit you and your family.",
       "icon": "heart"
+    },
+    {
+      "slug": "home-insurance",
+      "title": "Home Insurance",
+      "summary": "Your home is the center of your life.",
+      "text": "Your home is the center of your life. It’s also your biggest investment. That’s where home insurance comes in, covering the unique risks you face.",
+      "lead": "Your home is the center of your life. It’s also your biggest investment. That’s where home insurance comes in, covering the unique risks you face. We’ll help you find a policy that protects you from the small and large risks related to owning a home.",
+      "icon": "house"
     }
   ],
   "about": {
-    "title": "About Cash & Forbes Insurance Group",
+    "title": "Started by two agents, built on facts first",
     "text": [
-      "Cash & Forbes Insurance Group began as an independent insurance agency in 2018 by two agents who had similar ideals and goals in mind to better serve the needs of their clients. With nearly two decades of insurance experience each, owners Chris Forbes and Charles Cash are excited to work with you.",
-      "Cash & Forbes Insurance Group is an independent insurance agency, and that’s important for more reasons than one. It allows us to help you find insurance from a variety of coverage options. It is also part of who we are and where we’ve been—owners Chris Forbes and Charles Cash were captive agents before going independent to better serve the people and families of Texas.",
-      "Since our start in 2018, we bring decades of combined experience and a team that’s ready to help each and every client. We’ve also been focused on growth to allow more capacity to serve you, merging with Memorial Insurance Agency and adding another office location. Above all, we carry on the founding principles of facts first, honesty and integrity, and providing quick, reliable responses you can count on."
+      "Cash & Forbes Insurance Group began as an independent agency in 2018, started by two agents with similar ideals and goals to better serve their clients.",
+      "Owners Chris Forbes and Charles Cash were captive agents before going independent, and each has nearly two decades of insurance experience. Being independent lets us find you insurance from a variety of coverage options.",
+      "We carry on the founding principles of facts first, honesty and integrity, and quick, reliable responses. Our mission is to help you and your family find insurance that works for you."
     ],
-    "image": "/brands/cashforbesinsurancegroup/photo1",
+    "image": "/brands/cashforbesinsurancegroup/photo2",
     "imageAlt": "A photo of Cash & Forbes Insurance Group"
   }
 }

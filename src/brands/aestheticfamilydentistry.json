@@ -30,33 +30,81 @@
     "logoReads": [
       1.0,
       0.989,
-      0.86,
+      0.861,
       0.731,
       0.598,
-      0.461,
+      0.398,
       0.378,
       0.333,
-      0.288,
+      0.0,
       0.243,
       0.197
     ]
   },
+  "heroStyle": "split",
+  "tone": "classic",
   "hero": {
-    "eyebrow": "Aesthetic Family Dentistry",
-    "title": "Dental technology and dental sealants in Baytown",
-    "lead": "Need a dentist in Baytown? Our Aesthetic Family Dentistry team can’t wait to show you why local families have trusted us with their smiles for over 30 years!"
+    "eyebrow": "Aesthetic Family Dentistry · Baytown",
+    "title": "His family has served Baytown since 1927.",
+    "lead": "Dr. Dean Hutto was born and raised in Baytown, and Aesthetic Family Dentistry has taken care of Baytown families for over 30 years. We only recommend the care you need.",
+    "image": "/brands/aestheticfamilydentistry/photo1",
+    "imageAlt": "A photo of Aesthetic Family Dentistry"
   },
   "serviceArea": [
-    "Baytown",
-    "Mont Belvieu"
+    "Baytown"
   ],
+  "highlights": [
+    {
+      "title": "Over 30 years in Baytown",
+      "text": "We have been caring for Baytown families for over 30 years.",
+      "icon": "calendar"
+    },
+    {
+      "title": "Conservative care",
+      "text": "We only recommend what you need and never sell dentistry.",
+      "icon": "shield"
+    },
+    {
+      "title": "On time, every time",
+      "text": "Your time matters, so your appointment begins on time.",
+      "icon": "clock"
+    },
+    {
+      "title": "Transparent fees",
+      "text": "Our fees are transparent, and we don't charge for every little thing.",
+      "icon": "dollar"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Latisha B",
+      "text": "“I Absolutely Enjoy Visiting Aesthetic Family Dentistry! The Staff Is Friendly, The Atmosphere Is Great And I Never Have To Wait. Not Only Do They Care About Doing A Great Job, They Take Time To Thoroughly Ensure That You Are On A Sustainable Regiment. I Don’t Live As Close To The Office As I Did Before But I Will Travel The Distance Just For The Great Service And Results!”",
+      "source": "their site"
+    },
+    {
+      "author": "Lilli",
+      "text": "“This Place Is Great! Me And My Kids Have Been Going There For The Past Year Or So And From Day One The Staff Has Always Been Friendly (One Of The Things I Always Pay Attention To At Any Business). They Greet You By Name And Always Have A Smile. My Hygienist Lien Is Amazing! She’s So Gentle And Great At What She Does. It Literally Feels Like I’m In And Right Out. My Kids Also Give Good Feedback About Their Hygienists So I Highly Recommend This Place If You’re Looking Around For A Dentist. You Won’t Be Disappointed!”",
+      "source": "their site"
+    },
+    {
+      "author": "Abe M",
+      "text": "“Gotta Love When You Go To The Dentist And They Treat You Like Family. They Are Very Considerate For Your Needs, I HIGHLY Recommended Them!!! Great People, Great Customer Service And Excellent Work!”",
+      "source": "their site"
+    }
+  ],
+  "owner": {
+    "name": "Dean V. Hutto, DDS",
+    "role": "Lead Dentist",
+    "text": "With more than three decades of dental experience, Dr. Hutto is dedicated to aiding his patients in discovering the conﬁdence that comes with a beautiful, healthy smile."
+  },
   "kind": "dental",
   "services": [
     {
       "slug": "dental-technology",
       "title": "Dental Technology",
       "summary": "",
-      "text": "",
+      "text": "We use dental technology in caring for patients of all ages at our Baytown office.",
+      "lead": "We use dental technology in caring for patients of all ages at our Baytown office.",
       "icon": "smile"
     },
     {
@@ -70,22 +118,17 @@
     {
       "slug": "dental-crowns",
       "title": "Dental Crowns",
-      "summary": "",
-      "text": "",
+      "summary": "Custom-made crowns for damaged teeth",
+      "text": "A custom-made crown can cover a chipped or cracked tooth so it looks whole again.",
+      "lead": "A custom-made crown can cover a chipped or cracked tooth so it looks whole again.",
       "icon": "smile"
     },
     {
       "slug": "dental-bridges",
       "title": "Dental Bridges",
-      "summary": "",
-      "text": "",
-      "icon": "smile"
-    },
-    {
-      "slug": "dentures",
-      "title": "Dentures",
-      "summary": "",
-      "text": "",
+      "summary": "Missing teeth, replaced to look and feel natural",
+      "text": "A custom-made bridge can close the gap left by missing teeth and make chips and cracks disappear.",
+      "lead": "A custom-made bridge can close the gap left by missing teeth and make chips and cracks disappear.",
       "icon": "smile"
     },
     {
@@ -99,26 +142,36 @@
     {
       "slug": "implant-dentures",
       "title": "Implant Dentures",
-      "summary": "",
-      "text": "",
+      "summary": "Dentures anchored by implants",
+      "text": "Implant dentures are a way to replace missing teeth using dental implants as the foundation.",
+      "lead": "Implant dentures are a way to replace missing teeth using dental implants as the foundation.",
       "icon": "smile"
     },
     {
       "slug": "mini-dental-implants",
       "title": "Mini Dental Implants",
-      "summary": "",
-      "text": "",
+      "summary": "A smaller kind of dental implant",
+      "text": "Mini dental implants are a smaller form of implant for replacing missing teeth.",
+      "lead": "Mini dental implants are a smaller form of implant for replacing missing teeth.",
+      "icon": "smile"
+    },
+    {
+      "slug": "all-on-4-dental-implants",
+      "title": "All-on-4 Dental Implants",
+      "summary": "A full row of teeth, restored",
+      "text": "All-on-4 dental implants are a way to bring back a full row of teeth using implants.",
+      "lead": "All-on-4 dental implants are a way to bring back a full row of teeth using implants.",
       "icon": "smile"
     }
   ],
   "about": {
-    "title": "About Aesthetic Family Dentistry",
+    "title": "Dr. Hutto's family has served Baytown since 1927",
     "text": [
-      "At Aesthetic Family Dentistry, we’re proud to offer oral healthcare that’s exceptional from all angles. Dr. Hutto was born and raised right here in Baytown, and his passion for this great community is clear throughout his dental office. He and the rest of our team work together to create a dedicated, anxiety-free care experience that helps patients of all ages enjoy strong, healthy smiles that brim with self-confidence. We hope to see you here in our Baytown dental office for many years to come!",
-      "If you’re interested in learning more about us and the unique benefits we share, keep reading below. If you’d like to ask us any questions or schedule a visit, don’t hesitate to contact us today.",
-      "A common fear that patients often have when visiting a new dentist is that the team will try to pressure them into accepting overblown services at every opportunity, even if they don’t really need them. Thankfully, you can rest easy under Dr. Hutto’s care. We believe in treatment that is truly conservative, meaning that our goal is to preserve and protect as much of your healthy, natural smile as possible. We will take the time to understand your specific concerns and goals and only recommend care that makes sense for YOU."
+      "Dr. Hutto's family has served Baytown since his grandparents moved here in 1927, and his dad served as mayor for 12 years.",
+      "Dr. Hutto gives back through the Baytown Rotary Club and the Wounded Warriors Project, among other community groups.",
+      "In the office, the goal is to preserve as much of your healthy, natural smile as possible, and we file your insurance claims and paperwork for you."
     ],
-    "image": "/brands/aestheticfamilydentistry/photo1",
+    "image": "/brands/aestheticfamilydentistry/photo2",
     "imageAlt": "A photo of Aesthetic Family Dentistry"
   }
 }

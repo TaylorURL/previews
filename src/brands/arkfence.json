@@ -10,7 +10,7 @@
   "state": "TX",
   "zip": "77354",
   "rating": 4.9,
-  "reviewCount": 146,
+  "reviewCount": 149,
   "since": 2019,
   "hours": [
     [
@@ -34,9 +34,9 @@
     "surface": "#fef2f2",
     "muted": "#5b6470",
     "line": "#e1dfe0",
-    "heading": "'Plus Jakarta Sans', system-ui, sans-serif",
+    "heading": "'Bricolage Grotesque', system-ui, sans-serif",
     "body": "'Inter', system-ui, sans-serif",
-    "fonts": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "fonts": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
     "logo": "/brands/arkfence/logo.webp",
     "logoMono": "/brands/arkfence/logo-mono.webp",
     "logoWidth": 149,
@@ -57,24 +57,82 @@
       1.0
     ]
   },
+  "heroStyle": "split",
+  "tone": "bold",
   "hero": {
-    "eyebrow": "Ark Fence Company",
-    "title": "Fence installation and fence replacement",
-    "lead": "Ark Fence provides expert fence installation and repair in Magnolia, TX and across North Houston. Wood, vinyl, chain-link, iron & commercial fencing.",
+    "eyebrow": "Ark Fence Company · Magnolia",
+    "title": "Faith-based and family-owned,",
+    "lead": "Ark Fence Company designs and installs fences for homeowners and businesses in Magnolia, TX and across North Houston.",
     "image": "/brands/arkfence/photo1",
     "imageAlt": "A photo of Ark Fence Company",
-    "titleAccent": "in Magnolia"
+    "titleAccent": "we do the job right the first time."
   },
   "serviceArea": [
     "Magnolia",
-    "Houston",
-    "Spring",
-    "The Woodlands",
-    "Conroe",
-    "Tomball"
+    "North Houston"
+  ],
+  "highlights": [
+    {
+      "title": "Free on-site estimates",
+      "text": "No-pressure estimates, done at your property.",
+      "icon": "check"
+    },
+    {
+      "title": "Licensed and insured",
+      "text": "Also BBB Accredited A+.",
+      "icon": "shield"
+    },
+    {
+      "title": "Faith-based, family-owned",
+      "text": "A family company that treats every customer the way it would want to be treated.",
+      "icon": "family"
+    },
+    {
+      "title": "Founded in 2019",
+      "text": "Started with a mission to bring honest fencing to North Houston.",
+      "icon": "calendar"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Free on-site estimate",
+      "text": "We visit your property, measure, and give you a clear, upfront quote."
+    },
+    {
+      "title": "Choose materials and design",
+      "text": "Pick the material, height and style that fits your property, budget and HOA rules."
+    },
+    {
+      "title": "Professional installation",
+      "text": "Our crew builds your fence with deep-set posts and careful craftsmanship."
+    },
+    {
+      "title": "Final walkthrough",
+      "text": "We walk the finished fence with you, answer questions, and leave the site clean."
+    }
+  ],
+  "reviews": [
+    {
+      "text": "Leon's bid offered far better value than the others we got, and the work exceeded our expectations. Couldn't be happier with our new fence.",
+      "source": "their site"
+    },
+    {
+      "text": "The price was excellent and beat three other companies. Fast, professional, and the crew left everything spotless.",
+      "source": "their site"
+    },
+    {
+      "text": "Great team and communication — competitively priced and they kept me updated the entire time. Highly recommend Ark Fence.",
+      "source": "their site"
+    }
+  ],
+  "credentials": [
+    {
+      "label": "BBB",
+      "detail": "Accredited A+"
+    }
   ],
   "ask": "quote",
-  "summary": "Ark Fence Company offers fence installation, fence replacement, and gates & access across Magnolia, Houston and Spring.",
+  "summary": "Fence installation, repair and replacement for homeowners and businesses in Magnolia and North Houston.",
   "groups": [
     {
       "slug": "fence-installation",
@@ -99,9 +157,7 @@
       "title": "Gates & Access",
       "icon": "settings",
       "summary": "Perimeter security, access control, and durable enclosures for businesses and worksites.",
-      "intro": "Perimeter security, access control, and durable enclosures for businesses and worksites.",
-      "image": "/brands/arkfence/photo5",
-      "imageAlt": "A photo of Ark Fence Company"
+      "intro": "Perimeter security, access control, and durable enclosures for businesses and worksites."
     },
     {
       "slug": "residential-fencing",
@@ -109,7 +165,7 @@
       "icon": "home",
       "summary": "Privacy, style, and security for your home — wood, vinyl, iron, ranch, and pool fencing.",
       "intro": "Privacy, style, and security for your home — wood, vinyl, iron, ranch, and pool fencing.",
-      "image": "/brands/arkfence/photo6",
+      "image": "/brands/arkfence/photo5",
       "imageAlt": "A photo of Ark Fence Company"
     },
     {
@@ -122,11 +178,11 @@
   ],
   "about": {
     "eyebrow": "About us",
-    "title": "About Ark Fence Company",
+    "title": "Founded in 2019 with a simple mission: honest fencing.",
     "text": [
-      "A faith-based, family-owned fence company serving North Houston with honesty and integrity.",
-      "Ark Fence Company was founded in 2019 with a simple mission: to bring honest, high-quality fencing to North Houston homeowners and businesses. As a faith-based, family-owned company, we believe in doing the job right the first time and treating every customer the way we'd want to be treated.",
-      "From our home base in Magnolia, we've grown by word of mouth — earning 133+ five-star reviews from customers who mention our reasonable pricing, fast turnaround, clean work, and excellent communication. We use better materials, beat competing bids, and keep you updated from the first estimate to the final walkthrough."
+      "Ark Fence Company was founded in 2019 to bring honest, high-quality fencing to North Houston homeowners and businesses.",
+      "We are a faith-based, family-owned company, and we believe in doing the job right the first time and treating every customer the way we would want to be treated.",
+      "From our home base in Magnolia we have grown by word of mouth, and we leave your yard spotless with full cleanup and haul-away on every project."
     ],
     "image": "/brands/arkfence/photo2",
     "imageAlt": "A photo of Ark Fence Company"
