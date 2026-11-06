@@ -400,6 +400,16 @@ def write(prospect, family, kind, sheet, services, notes, town=None, state=None,
     return _assemble(kept, answer, short, town, sheet, dropped, corpus)
 
 
+# One that opens on whom it speaks of ("We're...", "Our...", "You...") or on
+# how they work ("Built on trust...", "Serving..."), runs three words or more
+# and has its own full stop is a sentence, not the end of the title's. One
+# that opens on a name or a service ("Houston has relied on for decades.",
+# "Roof Replacement in Houston.") goes on from the title.
+STARTS_A_SENTENCE = re.compile(
+    r"^(?:We|We['’](?:re|ve|ll)|Our|Us|You|You['’](?:re|ll)|Your|It|It['’]s|They|They['’]re|Their|There|This|That|"
+    r"Built|Serving|Trusted|Proudly|Family|Locally)\b\S*(?:\s+\S+){2,}[.!?]$")
+
+
 def _assemble(kept, answer, short, town, sheet, dropped, corpus):
     by = {l["path"]: l for l in kept}
     text = lambda path: by[path]["text"] if path in by else ""
@@ -418,6 +428,13 @@ def _assemble(kept, answer, short, town, sheet, dropped, corpus):
         elif said and title.lower().endswith(said):
             title = title[:-len(said)]
         title = title.rstrip() if accent else title.rstrip(" ,;:–—-")
+        # An accent that is a sentence of its own ("We're not comfortable until
+        # you are." after "Baytown's family HVAC company since 1947") is set on
+        # the same line, so a title that ends on a word without its full stop
+        # runs the two together; the title is given its full stop.
+        if accent and STARTS_A_SENTENCE.match(accent) and re.search(r"[\w’')]$", title) \
+                and not re.search(r"\b(?:for|of|and|or|the|to|with|in|on|at|by|a|an|your|our|their|from|than)$", title, re.I):
+            title += "."
         copy["hero"] = {"title": title, **({"titleAccent": accent} if accent else {}), **({"lead": lead} if lead else {})}
     elif lead:
         copy["hero"] = {"lead": lead}

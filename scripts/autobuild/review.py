@@ -54,6 +54,7 @@ os.environ.setdefault("no_proxy", "*")
 import glob
 import hashlib
 import json
+import signal
 import subprocess
 import sys
 import tempfile
@@ -383,9 +384,18 @@ def dispatch(template, findings, budget):
         "--json-schema", json.dumps(FIX_SCHEMA), prompt,
     ]
     try:
-        done = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, timeout=max(60, budget),
-                              stdin=subprocess.DEVNULL, env=_env())
-        out = json.loads(done.stdout or "{}")
+        # In a session of its own, so a timeout ends the build or browser the
+        # agent started too: one left running goes on writing dist/ while the
+        # comparison photographs it, and the preview answers 404.
+        agent = subprocess.Popen(command, cwd=ROOT, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
+                                 stdin=subprocess.DEVNULL, env=_env(), start_new_session=True)
+        try:
+            stdout, _ = agent.communicate(timeout=max(60, budget))
+        except subprocess.TimeoutExpired:
+            os.killpg(agent.pid, signal.SIGKILL)
+            agent.communicate()
+            raise
+        out = json.loads(stdout or "{}")
         answer = out.get("structured_output") if not out.get("is_error") else None
     except subprocess.TimeoutExpired:
         log(template, "the fixing agent ran out of time")
@@ -457,7 +467,13 @@ def fix(findings, deadline):
         measured = _measured(sites)
         log(f"sending an agent for {len(items)} finding(s) on {template}")
         answer, change = dispatch(template, items, budget)
-        if answer is None or not change or not change[0]:
+        if answer is None:
+            # Its changes were taken back, but a build it ran may have left
+            # dist/ drawn from them, or half drawn: dist/ is built again from
+            # the tree as it stands before anything is photographed from it.
+            _build()
+            continue
+        if not change or not change[0]:
             continue
         changed, before_status, before_text = change
         built, why = _build()

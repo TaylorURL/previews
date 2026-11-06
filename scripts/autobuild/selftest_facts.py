@@ -180,6 +180,17 @@ def the_writer():
     assert write._assemble(kept, {}, "ICM", "Dickinson", {}, [], "")["hero"]["title"] == "We do not compromise on quality,"
     kept = [dict(line("hero.title", "Stop guessing about your numbers,"), facts=["h1"])]
     assert write._assemble(kept, {}, "Arnold CPA", "Houston", {}, [], "")["hero"]["title"] == "Stop guessing about your numbers"
+    # An accent that is a sentence of its own gives the title its full stop.
+    hero = lambda title, accent: write._assemble([dict(line("hero.title", title), facts=["h1"]), dict(line("hero.titleAccent", accent), facts=["h1"])],
+                                                 {}, "X", "Baytown", {}, [], "")["hero"]["title"]
+    assert hero("Baytown's family HVAC company since 1947", "We're not comfortable until you are.") == "Baytown's family HVAC company since 1947."
+    assert hero("Electricians in Baytown since 2017", "Built on trust, honesty and attention to detail.") == "Electricians in Baytown since 2017."
+    assert hero("Over 40 years of pest control,", "still family owned") == "Over 40 years of pest control,"
+    assert hero("Houston roofing you can count on", "Since 1998") == "Houston roofing you can count on"
+    assert hero("Cooling and heating for", "Every Home In Baytown.") == "Cooling and heating for"
+    assert hero("Ready when the power goes out.", "We keep your home running.") == "Ready when the power goes out."
+    assert hero("Centrifugal chiller specialists", "Houston has relied on for decades.") == "Centrifugal chiller specialists"
+    assert hero("TX Roofing & Services", "Roof Replacement in Houston.") == "TX Roofing & Services"
 
 
 SERVICES = """<html><body><main>
