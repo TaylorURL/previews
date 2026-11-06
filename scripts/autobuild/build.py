@@ -469,6 +469,11 @@ JOB_WORDS = {"service", "services", "repair", "repairs", "install", "installatio
 SIDE_LINES = (r"\bice (?:machine|maker)", r"\brefrigerat", r"\bfreezer", r"\bgenerator", r"\bwater heater",
               r"\bpools?\b", r"\bhot tub", r"\bsolar", r"\bappliance")
 
+# The trade's own work under names that do not say the trade: a concrete
+# contractor's driveway, parking lot or foundation is a pour like any other,
+# so a photo of their trade at large belongs on that page too.
+TRADE_WORK = {"concrete": r"driveway|parking|foundation|\bslab|sidewalk|patio|flatwork|\bcurb|\bsteps\b"}
+
 
 def _own_words(title, services):
     """The words of a service's name no other service's name has, as plain lowercase."""
@@ -804,6 +809,8 @@ def _build(prospect, root, slug, known):
         # names that trade, not to a side job named for something else (a
         # fence, a deck, pressure washing).
         trade = compose.TRADE_WORDS.get(kind) if kind else compose.VOCAB["hvac"]
+        if kind in TRADE_WORK:
+            trade = f"{trade}|{TRADE_WORK[kind]}"
         named = {}
         offered = " ".join(f"{s['title']} {s.get('text') or ''}" for s in services).lower()
         for n in list(wide):

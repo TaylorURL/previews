@@ -46,7 +46,11 @@ export function galleryOf(b) {
   const groups = groupsOf(b)
     .map((g) => ({ src: g.image, alt: g.imageAlt || g.title, title: g.title, href: `/${g.slug}` }))
     .filter(keep);
-  const about = b.about?.image && groups.length < 3 ? [{ src: b.about.image, alt: b.about.imageAlt || '' }].filter(keep) : [];
+  // The about photo is labelled for the page it opens, as each group's is for its own, so no tile goes without a caption.
+  const about =
+    b.about?.image && groups.length < 3
+      ? [{ src: b.about.image, alt: b.about.imageAlt || '', title: b.about.eyebrow || 'About us', href: '/about' }].filter(keep)
+      : [];
   const photos = [...groups, ...about].slice(0, 8);
   if (photos.length < 2) return { photos: [], aboutUsed: false, spare: groups[0] || null };
   return { photos, aboutUsed: about.length > 0, spare: null };
