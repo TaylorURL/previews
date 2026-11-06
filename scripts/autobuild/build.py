@@ -888,6 +888,7 @@ def _with_facts(services, sheet, name, shape, notes):
         match = by_title.get(facts.normal(s["title"]))
         if not s["text"] and match and match["text"]:
             s["text"] = match["text"]
+    services = compose.said_shorter(services)
     if len(services) < 2 <= len(found):
         notes.append("the services are the fact sheet's: " + ", ".join(f["title"] for f in found[:8]))
         services = found[:8]
