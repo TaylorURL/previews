@@ -19,7 +19,16 @@ import urllib.parse
 from . import collect, images
 
 # Templates this file can fill. Any other is parked for a person or a session.
-AUTOMATED = {"professional", "roofing", "hvac"}
+AUTOMATED = {"professional", "roofing", "hvac", "outdoor", "industrial", "health"}
+
+# The brand file shape each template takes: the outdoor and industrial
+# layouts draw an hvac brand file (groups of services, the ask, the service
+# area), and the health layout a professional one (services, about, kind).
+SHAPE = {"outdoor": "hvac", "industrial": "hvac", "health": "professional"}
+
+
+def shape_of(template):
+    return SHAPE.get(template, template)
 
 # The trades a template is drawn for beyond its own, each under a kind that
 # names its vocabulary, its label and its icons. The template itself comes from
@@ -1227,6 +1236,32 @@ def fonts_of(css):
     return seen
 
 
+SERIF = {"Merriweather", "Playfair Display", "Libre Baskerville", "Lora", "Source Serif 4", "Cormorant Garamond",
+         "EB Garamond", "Crimson Text"}
+# Serif faces a site sets from its own files or the system, not Google's.
+OTHER_SERIFS = r"georgia|times|garamond|baskerville|didot|bodoni|caslon|cambria|palatino|book antiqua|minion|" \
+               r"playfair|lora|merriweather|cormorant|crimson|libre|serif display|domine|cardo|spectral|prata|marcellus|cinzel|" \
+               r"dm serif|noto serif|pt serif|roboto slab|zilla|arvo|bitter|rockwell|trajan|instrument serif"
+
+
+def heading_serif(css, found=()):
+    """True when their site sets its headings in a serif: the first face it
+    uses is one, or a rule for its h1 or h2 names one."""
+    if found and found[0] in SERIF:
+        return True
+    for selector, body in re.findall(r"([^{}]{1,300})\{([^{}]*)\}", css or ""):
+        if not re.search(r"(?<![\w-])h[12](?![\w-])", selector, re.I):
+            continue
+        family = re.search(r"font-family\s*:\s*([^;]+)", body, re.I)
+        if not family:
+            continue
+        stack = family.group(1).lower()
+        first = stack.split(",")[0].strip(" '\"")
+        if re.search(OTHER_SERIFS, first) or first == "serif" or (re.search(r"(?<!sans-)\bserif\b", stack) and "sans" not in first):
+            return True
+    return False
+
+
 def font_block(found, sample):
     """The site's own faces where they are Google fonts, else the template's own pair."""
     if not found:
@@ -1267,7 +1302,7 @@ def colors_of(logo_inks, css, template):
     while images.contrast(accent, ink) < 4 and tries < 40:
         accent = images.shade(accent, 1.12)
         tries += 1
-    if template == "professional":
+    if shape_of(template) == "professional":
         # The professional template draws the accent as small labels on white,
         # so it is darkened again until it reads there, as far as it still
         # reads on the dark grounds.
@@ -1282,10 +1317,10 @@ def colors_of(logo_inks, css, template):
         "ink": images.hexof(ink),
         "surface": images.hexof(surface),
     }
-    if template in ("professional", "hvac"):
+    if shape_of(template) in ("professional", "hvac"):
         out["muted"] = "#5b6470"
         out["line"] = images.hexof(images.mix((255, 255, 255), ink, 0.14))
-    if template == "professional":
+    if shape_of(template) == "professional":
         out["cream"] = images.hexof(images.mix((255, 252, 246), inks[0], 0.03))
     return out
 
