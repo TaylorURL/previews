@@ -395,7 +395,7 @@ function Header({ b, g, groups, tel, current }) {
             <a href={tel} className={btnLine}>
               <Phone size={17} aria-hidden="true" /> {b.phone}
             </a>
-            {g.phones.map((p) => (
+            {g.extraPhones.map((p) => (
               <a key={p.number} href={telHref(p.number)} className={btnLine}>
                 <Phone size={17} aria-hidden="true" /> {p.label ? `${p.label} ` : ''}
                 {p.number}
@@ -452,9 +452,9 @@ function HeroWords({ b, tel, g }) {
         </a>
         <Call b={b} tel={tel} short className={`${btnGhost} px-3 text-[14px] tracking-[0.04em] sm:px-6 sm:text-[15px] sm:tracking-[0.07em]`} />
       </div>
-      {g.phones.length > 0 && (
+      {g.extraPhones.length > 0 && (
         <p className="mt-4 flex flex-wrap gap-x-5 gap-y-1 text-[15px] text-white/70">
-          {g.phones.map((p) => (
+          {g.extraPhones.map((p) => (
             <a key={p.number} href={telHref(p.number)} className="inline-flex min-h-[40px] items-center gap-1.5 text-white/80 no-underline hover:text-white">
               {p.label && <span className="text-white/55">{p.label}</span>} {p.number}
             </a>
@@ -553,17 +553,23 @@ function Hero({ b, g, groups, tel, specs }) {
   if (style === 'photo') {
     return (
       <div>
-        <section className="relative isolate flex min-h-[min(88svh,760px)] items-end overflow-hidden bg-[color:var(--steel)] text-white lg:min-h-[640px] lg:items-center">
-          <Img className="absolute inset-0 -z-20 h-full w-full object-cover" src={b.hero.image} alt={b.hero.imageAlt || ''} sizes="100vw" eager />
+        <section className="relative isolate overflow-hidden bg-[color:var(--steel)] text-white lg:flex lg:min-h-[640px] lg:items-center">
+          {/* On a phone the photo leads, whole across the screen, and the words follow on the steel below it; a tall
+              phone frame would cut a sliver from a wide photo and blow it up. From lg up the photo is the ground the
+              words are set on. */}
+          <div className="relative aspect-[16/10] w-full sm:aspect-[16/9] lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto">
+            <Img className="absolute inset-0 h-full w-full object-cover" src={b.hero.image} alt={b.hero.imageAlt || ''} sizes="100vw" eager />
+            <span className="absolute inset-x-0 bottom-0 h-[3px] bg-[color:var(--hi)] lg:hidden" aria-hidden="true" />
+          </div>
           <div
-            className="absolute inset-0 -z-10"
+            className="absolute inset-0 -z-10 hidden lg:block"
             style={{
               background:
                 'linear-gradient(90deg, color-mix(in srgb, var(--steel) 94%, transparent) 0%, color-mix(in srgb, var(--steel) 78%, transparent) 45%, color-mix(in srgb, var(--steel) 25%, transparent) 100%), linear-gradient(0deg, color-mix(in srgb, var(--night) 85%, transparent), transparent 55%)',
             }}
             aria-hidden="true"
           />
-          <div className={`${wrap} py-14 lg:py-24`}>
+          <div className={`${wrap} relative py-10 sm:py-14 lg:py-24`}>
             <div className="max-w-[44rem]">
               <HeroWords b={b} tel={tel} g={g} />
             </div>
@@ -1169,8 +1175,8 @@ function DirectLines({ b, g, tel, dark = true }) {
   return (
     <dl className={`grid gap-0 border-t ${dark ? 'border-white/15' : 'border-line'}`}>
       {[
-        ['Phone', <a key="p" href={tel} className={`font-heading text-[24px] font-bold no-underline hover:underline ${strong}`}>{b.phone}</a>],
-        ...g.phones.map((p) => [p.label || 'Phone', <a key={p.number} href={telHref(p.number)} className={`font-heading text-[20px] font-bold no-underline hover:underline ${strong}`}>{p.number}</a>]),
+        [g.phoneLabel || 'Phone', <a key="p" href={tel} className={`font-heading text-[24px] font-bold no-underline hover:underline ${strong}`}>{b.phone}</a>],
+        ...g.extraPhones.map((p) => [p.label || 'Phone', <a key={p.number} href={telHref(p.number)} className={`font-heading text-[20px] font-bold no-underline hover:underline ${strong}`}>{p.number}</a>]),
         b.emergency?.text && ['After hours', <span key="e" className={`text-[15.5px] leading-[1.55] ${strong}`}>{b.emergency.text}</span>],
         b.email && ['Email', <a key="m" href={`mailto:${b.email}`} className={`break-all text-[17px] font-semibold no-underline hover:underline ${strong}`}>{b.email}</a>],
         ['Address', <a key="a" href={mapsHref(b)} className={`text-[16px] leading-[1.55] no-underline hover:underline ${strong}`}>{full}</a>],
@@ -1309,7 +1315,7 @@ function Footer({ b, g, groups, tel, night }) {
           <a href={tel} className="flex min-h-[44px] items-center font-heading text-[22px] font-bold text-white no-underline hover:underline">
             {b.phone}
           </a>
-          {g.phones.map((p) => (
+          {g.extraPhones.map((p) => (
             <a key={p.number} href={telHref(p.number)} className="flex min-h-[40px] items-center gap-2 text-white/80 no-underline hover:text-white">
               {p.label && <span className="text-white/50">{p.label}</span>} {p.number}
             </a>
@@ -1429,14 +1435,15 @@ function PageHero({ crumbs, label, title, text, image, imageAlt, aside, children
         <div className={`min-w-0 ${image || aside ? 'lg:col-span-7' : 'lg:col-span-9'}`}>
           <nav aria-label="Breadcrumb" className="mb-7">
             <ol className={`flex flex-wrap items-center gap-2 ${mono} text-[11px] text-white/55`}>
-              <li>
+              {/* Each step's slash follows it, so a crumb that wraps starts its line on a name, not a dangling slash. */}
+              <li className="flex items-center gap-2">
                 <a href="/" className="inline-flex min-h-[32px] items-center text-white/55 no-underline hover:text-white">
                   Home
                 </a>
+                <span aria-hidden="true">/</span>
               </li>
-              {crumbs.map(([href, name]) => (
+              {crumbs.map(([href, name], i) => (
                 <li key={name} className="flex items-center gap-2">
-                  <span aria-hidden="true">/</span>
                   {href ? (
                     <a href={href} className="inline-flex min-h-[32px] items-center text-white/55 no-underline hover:text-white">
                       {name}
@@ -1446,6 +1453,7 @@ function PageHero({ crumbs, label, title, text, image, imageAlt, aside, children
                       {name}
                     </span>
                   )}
+                  {i < crumbs.length - 1 && <span aria-hidden="true">/</span>}
                 </li>
               ))}
             </ol>
@@ -1506,7 +1514,9 @@ function GroupPage({ b, g, groups, group, tel }) {
   const services = list(group.services).filter((s) => s?.title);
   const anchor = b.preview ? 'scroll-mt-[150px]' : 'scroll-mt-[110px]';
   const stick = b.preview ? 'lg:top-[156px]' : 'lg:top-[112px]';
-  const summary = group.intro && group.summary && group.summary !== group.intro ? group.summary : '';
+  // The summary line is drawn under the hero only when it says something the
+  // hero's paragraph does not; one cut from that paragraph would repeat it.
+  const summary = group.intro && group.summary && !group.intro.includes(group.summary.replace(/[.!?]+$/, '')) ? group.summary : '';
   return (
     <>
       <PageHero
