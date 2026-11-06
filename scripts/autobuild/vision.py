@@ -74,7 +74,7 @@ def ask(prompt, paths, schema, longest=1100, model=None, timeout=None):
         listed = "\n".join(f"{os.path.join(folder, n)}" for n in names)
         command = [
             "claude", "-p", "--model", model or MODEL, "--tools", "Read", "--allowedTools", "Read",
-            "--setting-sources", "", "--no-session-persistence", "--output-format", "json",
+            "--setting-sources", "", "--strict-mcp-config", "--no-session-persistence", "--output-format", "json",
             "--json-schema", json.dumps(schema),
             f"{prompt}\n\nRead every one of these files before answering:\n{listed}",
         ]
