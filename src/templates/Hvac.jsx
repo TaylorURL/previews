@@ -1447,7 +1447,8 @@ function OwnerAndCredentials({ b, className = '', card = 'rounded-2xl bg-white p
           <Credentials
             items={creds}
             styles={{
-              list: 'gap-3 sm:grid-cols-2',
+              // Two across only when there are two to share the card; one alone takes its width.
+              list: creds.length > 1 ? 'gap-3 sm:grid-cols-2' : 'gap-3',
               icon: 'text-[color:var(--pt)]',
               label: 'text-[16px] font-semibold leading-snug text-ink md:text-[15px]',
               detail: 'text-[14px] leading-snug text-muted',

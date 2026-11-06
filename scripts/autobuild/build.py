@@ -906,13 +906,19 @@ def _with_facts(services, sheet, name, shape, notes):
 
 def _hero_style(pick):
     """photo for a wide, sharp photo the look rated strong; split for any
-    other the hero can take; type with none."""
+    other the hero can take; type with none.
+
+    The photo style spreads the picture across the whole band under the
+    brand's deep wash, so it also needs one sharp from edge to edge, not a
+    close-up on a soft, out-of-focus ground (its blur fills the band), and one
+    not mostly pale (the thin wash at the right turns white to a faded tint)."""
     if not pick:
         return "type"
     m = pick["metrics"]
     look = (pick.get("look") or {}).get("score")
     strong = m["width"] >= 1800 and m["height"] >= 900 and m["ratio"] >= 1.45 and (look >= 4 if look else pick["score"] >= 0.8)
-    return "photo" if strong else "split"
+    across = m.get("detail", 0) >= 0.4 * m.get("focus", 0) and m.get("mean", 0) <= 175
+    return "photo" if strong and across else "split"
 
 
 SPANISH = re.compile(r"^(?:spanish|espa[nñ]ol)$", re.I)
