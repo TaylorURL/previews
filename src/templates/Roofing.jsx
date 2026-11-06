@@ -662,9 +662,13 @@ function HeroPanel({ b, tel, rating, promises, services = [] }) {
 /** The hero's words: the eyebrow, the headline with its accent line, the lead, the two calls and any further lines. */
 function HeroWords({ b, tel, classic, after = null }) {
   return (
-    <div className="min-w-0 self-center">
+    <div className="min-w-0 self-center [container-type:inline-size]">
       <Eyebrow dark>{b.hero.eyebrow}</Eyebrow>
-      <h1 className={`${h1} ${classic ? '!font-semibold !tracking-[0.02em]' : ''}`}>
+      {/* A long word ('Relationship') is set smaller until it fits the column whole, rather than broken, as on the inner pages. */}
+      <h1
+        className={`${h1} !text-[min(clamp(2.5rem,1.3rem+4.6vw,5.25rem),var(--fit))] ${classic ? '!font-semibold !tracking-[0.02em]' : ''}`}
+        style={{ '--fit': `${(100 / (Math.max(longest(b.hero.title, b.hero.titleAccent), 1) * 0.78)).toFixed(2)}cqi` }}
+      >
         {b.hero.title}
         {b.hero.titleAccent && <span className="block text-accent">{b.hero.titleAccent}</span>}
       </h1>

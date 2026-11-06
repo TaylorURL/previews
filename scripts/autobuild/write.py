@@ -464,6 +464,10 @@ def _assemble(kept, answer, short, town, sheet, dropped, corpus):
                 continue
             if OFFER.search(text(f"highlights.{i}.title") + " " + text(f"highlights.{i}.text")):
                 continue
+            # Nor does one whose words only say its title again ('Angi Super
+            # Service 2025' over 'Angi Super Service 2025.'): a card of filler.
+            if set(re.findall(r"\w+", text(f"highlights.{i}.text").lower())) <= set(re.findall(r"\w+", text(f"highlights.{i}.title").lower())):
+                continue
             highlights.append({"title": text(f"highlights.{i}.title"), "text": text(f"highlights.{i}.text"),
                                "icon": item.get("icon") or "check", "_cites": cites, "_at": i})
     highlights.sort(key=lambda h: (_lead_rank(h["_cites"], sheet), h["_at"]))
