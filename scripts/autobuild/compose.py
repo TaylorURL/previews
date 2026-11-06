@@ -955,17 +955,24 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
     for k, text in moved.items():
         if not (found[k]["text"] and named[k] & stems(found[k]["text"])):
             found[k]["text"] = text
-    # A name said alone that ends a described one ("Generator Installation"
-    # of "Back Up Generator Installation") is that service said shorter; the
-    # described one is kept, so the grid does not offer the work twice.
-    stem = lambda k: re.sub(r"s\b", "", re.sub(r"ies\b", "y", k))
-    for k in [k for k in order if " " in k and not found[k]["text"]]:
-        if any(o != k and found[o]["text"] and stem(o).endswith(" " + stem(k)) for o in order):
-            del found[k]
-            order.remove(k)
+    services = said_shorter([found[k] for k in order])
     if described_first:
-        order.sort(key=lambda k: found[k]["text"] is None)
-    return [found[k] for k in order][:8]
+        services.sort(key=lambda s: s["text"] is None)
+    return services[:8]
+
+
+def said_shorter(services):
+    """The services less any named alone whose name ends a described one's.
+
+    "Generator Installation" of "Back Up Generator Installation" is that
+    service said shorter: the described one is kept, so the grid does not
+    offer the work twice. The fact sheet describes some the page reader could
+    not, so this is asked again once it has.
+    """
+    stem = lambda t: re.sub(r"s\b", "", re.sub(r"ies\b", "y", " ".join(w for w in re.sub(r"[^a-z0-9 ]", " ", t.lower()).split() if w != "and")))
+    described = [stem(s["title"]) for s in services if s["text"]]
+    return [s for s in services if s["text"] or " " not in stem(s["title"])
+            or not any(d != stem(s["title"]) and d.endswith(" " + stem(s["title"])) for d in described)]
 
 
 def about_of(pages, name, trade=None, services=(), town=None, state=None, towns=()):
