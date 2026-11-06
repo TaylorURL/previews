@@ -145,12 +145,12 @@ try {
       images.sort((a, b) => b.drawn[0] * b.drawn[1] - a.drawn[0] * a.drawn[1]);
       results.push({ url, ok: true, final: page.url(), images });
       if (at === 0) {
-        const host = new URL(page.url()).host.replace(/^www\./, '');
+        const host = new URL(page.url()).hostname.replace(/^www\./, '');
         const known = new Set(queue.map((u) => u.replace(/\/$/, '')));
         const galleries = await page.evaluate((pattern) => [...document.querySelectorAll('a[href]')]
           .filter((a) => new RegExp(pattern, 'i').test(`${a.innerText} ${new URL(a.href, document.baseURI).pathname.replace(/[-_/]/g, ' ')}`))
           .map((a) => new URL(a.href, document.baseURI).href.split('#')[0]), GALLERY.source).catch(() => []);
-        const more = [...new Set(galleries)].filter((u) => /^https?:/.test(u) && new URL(u).host.replace(/^www\./, '') === host
+        const more = [...new Set(galleries)].filter((u) => /^https?:/.test(u) && new URL(u).hostname.replace(/^www\./, '') === host
           && !known.has(u.replace(/\/$/, '')) && !/\.(jpe?g|png|webp|gif|pdf)$/i.test(u)).slice(0, GALLERY_PAGES);
         queue.splice(1, 0, ...more);
       }

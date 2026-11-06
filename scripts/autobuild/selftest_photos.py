@@ -3,22 +3,24 @@
 Proves, with no website and no model asked, the parts of the photo search and
 the fact checks that decide what a preview shows: the large sizes asked of
 image services, the lazy loaders' attributes, redirects a browser follows
-(307 and 308, a 307 back to itself until a cookie is set), the hero's shapes,
-the quality rules against photographs blurred, flattened and recompressed, and
-the optional facts left out rather than parking a business.
+(307 and 308, a 307 back to itself until a cookie is set), a site that sends
+its visitors to an address with the port written in still counting as itself,
+the hero's shapes, the quality rules against photographs blurred, flattened and
+recompressed, and the optional facts left out rather than parking a business.
 """
 
 import http.server
 import io
 import os
 import threading
+import types
 
 os.environ.setdefault("no_proxy", "*")
 
 import numpy as np
 from PIL import Image, ImageFilter
 
-from . import collect, facts, quality
+from . import collect, compose, facts, quality
 
 
 def _photo(width=1400, height=900, seed=7):
@@ -169,14 +171,28 @@ def optional_facts():
     assert len(notes) == 5, notes
 
 
+def hosts():
+    # cpa1099.com sends every visitor to "https://www.cpa1099.com:443/" and links
+    # its pages without the port; the listing's address at that domain was once
+    # refused as another business's, and the preview parked for want of an email.
+    assert collect.site_host("https://www.cpa1099.com:443/") == "cpa1099.com"
+    assert collect.site_host("http://CPA1099.com/about-us") == "cpa1099.com"
+    assert collect.site_host("https://awww.com/") == "awww.com"
+    home = types.SimpleNamespace(url="https://www.cpa1099.com:443/", links=[("mailto:info@cpa1099.com", "Email us")])
+    assert compose.email_of("mosherseifert@cpa1099.com", [home], {}) == "mosherseifert@cpa1099.com"
+    assert compose.email_of("", [home], {}) == "info@cpa1099.com"
+    assert compose.email_of("billing@othercpa.com", [home], {}) == "info@cpa1099.com"
+
+
 def main():
     bigger()
     lazy()
     redirects()
+    hosts()
     slots()
     pixels()
     optional_facts()
-    print("selftest_photos: image sizes, lazy pictures, redirects, the hero's shapes, the pixel rules and optional facts all hold")
+    print("selftest_photos: image sizes, lazy pictures, redirects, hosts with a port, the hero's shapes, the pixel rules and optional facts all hold")
 
 
 if __name__ == "__main__":

@@ -360,7 +360,7 @@ def _page_of(item, texts):
     url = str(item.get("url") or "")
     if url in texts:
         return url
-    key = lambda u: urllib.parse.urlparse(u).netloc.replace("www.", "") + urllib.parse.urlparse(u).path.rstrip("/") + \
+    key = lambda u: compose.collect.site_host(u) + urllib.parse.urlparse(u).path.rstrip("/") + \
         ("#" + urllib.parse.urlparse(u).fragment if urllib.parse.urlparse(u).fragment else "")
     return next((u for u in texts if key(u) == key(url)), None)
 
