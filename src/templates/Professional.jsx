@@ -75,7 +75,6 @@ import {
   Facts,
   Highlights,
   Img,
-  initialsOf,
   Languages,
   Motif,
   Owner,
@@ -553,10 +552,11 @@ function PageHero({ eyebrow, title, text, trail, image, imageAlt, aside, childre
             {text && <p className={`mt-5 max-w-2xl ${lead}`}>{text}</p>}
             {children}
           </div>
-          {/* Drawn in its own shape and no taller than the band, so a portrait keeps the head and is not blown up to the column's width. */}
+          {/* Drawn in its own shape and no taller than the band, so a portrait keeps the head and is not blown up to the column's width.
+              A fine rule holds its edge, so a pale, high-key photo does not fade into the band's pale ground. */}
           {image && (
             <Img
-              className="h-auto max-h-[30rem] w-auto max-w-full justify-self-center rounded-lg lg:justify-self-end"
+              className="h-auto max-h-[30rem] w-auto max-w-full justify-self-center rounded-lg border border-line lg:justify-self-end"
               src={image}
               alt={imageAlt || ''}
               sizes="(max-width: 1024px) 100vw, 45vw"
@@ -1108,8 +1108,7 @@ function HighlightBand({ b }) {
 
 /**
  * Who you would be working with and what stands behind them: the owner (their
- * photo, or their initials where there is none, their role and their own
- * words) beside the credentials (licenses, admissions, certifications,
+ * photo where there is one, their role and their own words) beside the credentials (licenses, admissions, certifications,
  * appointments) the office's own site lists. Either stands alone.
  */
 function OwnerBand({ b, k, ctaLabel, className = '' }) {
@@ -1142,38 +1141,51 @@ function OwnerBand({ b, k, ctaLabel, className = '' }) {
       </section>
     );
   }
+  const words = (
+    <>
+      {owner.role && <Eyebrow>{owner.role}</Eyebrow>}
+      <h2 id="owner" className={h2}>
+        {owner.name}
+      </h2>
+      {owner.text && <p className={`mt-5 max-w-2xl ${lead}`}>{owner.text}</p>}
+      {creds.length > 0 && (
+        <div className="mt-8">
+          <h3 className="mb-1 text-[12.5px] font-bold uppercase tracking-[0.18em] text-muted">{k.credentials}</h3>
+          {credList}
+        </div>
+      )}
+    </>
+  );
+  const actions = (
+    <>
+      <a href="/contact" className={solid}>
+        {ctaLabel} <ArrowRight size={17} aria-hidden="true" />
+      </a>
+      <a href={telHref(b.phone)} className={line}>
+        <Phone size={17} aria-hidden="true" /> {b.phone}
+      </a>
+    </>
+  );
+  if (!owner.image) {
+    // No photo of them: their words and the ways to reach them on one card across the row, rather than a block of initials standing in for a portrait.
+    return (
+      <section aria-labelledby="owner" className={`${pad} ${className}`}>
+        <div className={wrap}>
+          <div className="grid gap-8 rounded-lg border border-line border-t-[3px] border-t-accent p-6 sm:p-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:gap-16">
+            <div className="min-w-0">{words}</div>
+            <div className="grid gap-3 sm:flex sm:flex-wrap lg:justify-end">{actions}</div>
+          </div>
+        </div>
+      </section>
+    );
+  }
   return (
     <section aria-labelledby="owner" className={`${pad} ${className}`}>
       <div className={`${wrap} grid items-start gap-10 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-20`}>
-        {owner.image ? (
-          <Img className="block aspect-[4/5] w-full max-w-[26rem] rounded-lg object-cover object-top" src={owner.image} alt={owner.imageAlt || owner.name} sizes="(max-width: 768px) 100vw, 34vw" />
-        ) : (
-          // No photo of them: their initials, set large in the heading face on the brand's color, rather than a grey silhouette.
-          <div aria-hidden="true" className="relative isolate grid aspect-[4/5] w-full max-w-[26rem] place-items-center overflow-hidden rounded-lg bg-primary-deep text-white">
-            <TypeGround from="var(--primaryDeep)" to="color-mix(in srgb, var(--primary) 75%, var(--primaryDeep))" glow={hexOr(b.brand.accent, '#888888')} pattern="none" />
-            <span className="font-heading font-display text-[clamp(5rem,12vw,9rem)] leading-none">{initialsOf(owner.name)}</span>
-          </div>
-        )}
+        <Img className="block aspect-[4/5] w-full max-w-[26rem] rounded-lg object-cover object-top" src={owner.image} alt={owner.imageAlt || owner.name} sizes="(max-width: 768px) 100vw, 34vw" />
         <div className="min-w-0">
-          {owner.role && <Eyebrow>{owner.role}</Eyebrow>}
-          <h2 id="owner" className={h2}>
-            {owner.name}
-          </h2>
-          {owner.text && <p className={`mt-5 max-w-2xl ${lead}`}>{owner.text}</p>}
-          {creds.length > 0 && (
-            <div className="mt-8">
-              <h3 className="mb-1 text-[12.5px] font-bold uppercase tracking-[0.18em] text-muted">{k.credentials}</h3>
-              {credList}
-            </div>
-          )}
-          <div className="mt-9 grid gap-3 sm:flex sm:flex-wrap">
-            <a href="/contact" className={solid}>
-              {ctaLabel} <ArrowRight size={17} aria-hidden="true" />
-            </a>
-            <a href={telHref(b.phone)} className={line}>
-              <Phone size={17} aria-hidden="true" /> {b.phone}
-            </a>
-          </div>
+          {words}
+          <div className="mt-9 grid gap-3 sm:flex sm:flex-wrap">{actions}</div>
         </div>
       </div>
     </section>
