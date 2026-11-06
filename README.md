@@ -19,8 +19,10 @@ Every template has a sample business:
 | Barber                | [barber.taylorurl.com](https://barber.taylorurl.com)             |
 | Fitness               | [fitness.taylorurl.com](https://fitness.taylorurl.com)           |
 | Flooring              | [flooring.taylorurl.com](https://flooring.taylorurl.com)         |
+| Health                | [health.taylorurl.com](https://health.taylorurl.com)             |
 | HVAC                  | [hvac.taylorurl.com](https://hvac.taylorurl.com)                 |
 | Industrial            | [industrial.taylorurl.com](https://industrial.taylorurl.com)     |
+| Outdoor               | [outdoor.taylorurl.com](https://outdoor.taylorurl.com)           |
 | Plumbing              | [plumbing.taylorurl.com](https://plumbing.taylorurl.com)         |
 | Printing              | [printing.taylorurl.com](https://printing.taylorurl.com)         |
 | Professional services | [professional.taylorurl.com](https://professional.taylorurl.com) |
