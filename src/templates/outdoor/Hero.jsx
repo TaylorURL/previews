@@ -125,9 +125,10 @@ export function HomeHero({ b }) {
             eager
             data-backdrop=""
           />
-          {/* The headline is set over the photo's foot on a phone, on a shade rising from below. */}
+          {/* The headline is set over the photo's foot on a phone, on a shade rising from below, deep enough up to the
+              eyebrow (about half the photo's height) that small spaced type and the coloured line read on a busy photo. */}
           <div
-            className="absolute inset-0 bg-[linear-gradient(to_top,color-mix(in_srgb,var(--deep)_80%,transparent)_0%,color-mix(in_srgb,var(--deep)_50%,transparent)_38%,transparent_72%)] lg:hidden"
+            className="absolute inset-0 bg-[linear-gradient(to_top,color-mix(in_srgb,var(--deep)_90%,transparent)_0%,color-mix(in_srgb,var(--deep)_80%,transparent)_50%,color-mix(in_srgb,var(--deep)_45%,transparent)_70%,transparent_90%)] lg:hidden"
             aria-hidden="true"
           />
         </div>
