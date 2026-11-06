@@ -940,6 +940,15 @@ def _facts_fields(brand, sheet, copy, google, phone, template, state):
         if not any(digits(p["number"]) == digits(phone) for p in out):
             out.insert(0, {"label": "Main", "number": phone})
         brand["phones"] = out[:4]
+        # The listing's number is the one a customer is shown first, unless their
+        # own site says it is the line for job seekers or a fax: then the first
+        # line their site gives customers leads, and the listing's stays below it
+        # under its own label.
+        listed = next((p for p in brand["phones"] if digits(p["number"]) == digits(phone)), None)
+        if listed and compose.NOT_A_CUSTOMER_LINE.search(listed["label"]):
+            main = next((p for p in brand["phones"] if not compose.NOT_A_CUSTOMER_LINE.search(p["label"])), None)
+            if main:
+                brand["phone"] = main["number"]
     spoken = []
     for item in sheet.get("languages") or []:
         language = "Spanish" if SPANISH.match(item["language"].strip()) else compose.title_case(item["language"].strip())
