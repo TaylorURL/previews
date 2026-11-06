@@ -1200,6 +1200,9 @@ SITE_TALK = re.compile(r"(?:(?:take|have) a look at|look at|check out|browse|exp
 # So is the site maker's note on the page it built ("Hawkins Insurance
 # homepage redesign for home, auto and life insurance."), left in its description.
 SITE_NOTE = re.compile(r"\b(?:home ?page|web ?site|landing page)\s+(?:re-?design|mock-?up|prototype|template)\b", re.I)
+# And a credential's note on how their site shows it ("Shown as a badge on
+# our website"), which the preview, drawing no such badge, cannot bear out.
+SITE_SHOWN = re.compile(r"\b(?:shown|displayed|featured|pictured|seen)\b[^.!?]*\b(?:badges?|logos?|seals?|icons?|emblems?)\b|\bon (?:our|this|the) (?:home ?page|web ?site|site|page)\b", re.I)
 
 
 def unsited(text):

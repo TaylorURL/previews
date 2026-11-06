@@ -173,14 +173,15 @@ function Label({ n, children, dark = false }) {
 function Arrowed({ children, Icon = ArrowRight, size = 16 }) {
   const words = String(children).trim();
   const last = words.split(/\s+/).pop();
+  // One span, so a flex link keeps the words as one item and the space before the last word is not dropped.
   return (
-    <>
+    <span>
       {words.slice(0, words.length - last.length)}
       <span className="whitespace-nowrap">
         {last}
         <Icon size={size} className="ml-1.5 inline-block align-[-3px] transition group-hover:translate-x-0.5" aria-hidden="true" />
       </span>
-    </>
+    </span>
   );
 }
 

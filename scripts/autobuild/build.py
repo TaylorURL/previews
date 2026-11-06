@@ -982,7 +982,9 @@ def _facts_fields(brand, sheet, copy, google, phone, template, state):
     credentials = []
     for c in sheet.get("credentials") or []:
         entry = {"label": c["label"]}
-        if c.get("detail") and facts.normal(c["detail"]) != facts.normal(c["label"]):
+        # A detail that only says how their site shows it ("Shown as a badge
+        # on our website") is left out, and the name stands alone.
+        if c.get("detail") and facts.normal(c["detail"]) != facts.normal(c["label"]) and not compose.SITE_SHOWN.search(c["detail"]):
             # Their words are put right as a description's are ("workman's
             # comp", which reads as cut off, is said in full).
             entry["detail"] = c["detail"]
