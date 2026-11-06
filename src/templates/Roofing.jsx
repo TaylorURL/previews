@@ -136,7 +136,35 @@ import {
   X,
 } from 'lucide-react';
 import { brandVars, displayVars, mapsHref, ratingLine, telHref } from '../site.js';
-import { BrandLogo, EnquiryForm, Img, Stars, Facts, StudioCredit } from './shared.jsx';
+import {
+  BrandLogo,
+  Credentials,
+  EnquiryForm,
+  Facts,
+  Highlights,
+  Img,
+  Languages,
+  Motif,
+  Owner,
+  PhoneLines,
+  RatingBadge,
+  ReviewQuotes,
+  Stars,
+  Steps,
+  StudioCredit,
+  TypeGround,
+  credentialsOf,
+  extraPhonesOf,
+  heroStyleOf,
+  highlightsOf,
+  languagesOf,
+  ownerOf,
+  phonesOf,
+  reviewsOf,
+  stepsOf,
+  telling,
+  toneOf,
+} from './shared.jsx';
 import { onColor, townId } from './roofing/color.js';
 
 const GROUPS = [
@@ -204,6 +232,8 @@ function Eyebrow({ children, dark = false }) {
 
 function UtilityBar({ b, tel }) {
   const first = list(b.hours)[0];
+  const [main] = phonesOf(b);
+  const extra = extraPhonesOf(b);
   return (
     <div className="bg-ink text-[14px] text-white/75">
       <div className={`${wrap} flex min-h-[48px] items-center justify-between gap-4`}>
@@ -214,16 +244,30 @@ function UtilityBar({ b, tel }) {
               <span className="truncate">{b.license}</span>
             </span>
           )}
-          {first && (
+          {first && !extra.length && (
             <span className="hidden flex-none items-center gap-2 lg:flex">
               <Clock size={15} className="flex-none text-accent" aria-hidden="true" />
               {first[0]} {first[1]}
             </span>
           )}
+          {languagesOf(b).length > 0 && <Languages items={languagesOf(b)} className="hidden flex-none text-white/75 xl:inline-flex [&_svg]:text-accent" />}
         </p>
-        <div className="flex w-full items-center justify-between gap-4 md:w-auto md:justify-end">
+        {/* The calls keep their width; it is the licence line beside them that gives way, cut short. */}
+        <div className="flex w-full items-center justify-between gap-4 md:w-auto md:flex-none md:justify-end">
+          {extra.length > 0 && (
+            // One row, from xl up only: wrapped into the bar they pushed it to twice its height. The hero, the
+            // footer and the contact page carry every line at every width.
+            <PhoneLines
+              lines={extra.slice(0, 2)}
+              nowrap
+              className="hidden flex-none xl:flex"
+              styles={{ list: 'gap-x-5', item: 'flex-nowrap whitespace-nowrap font-heading text-[16px] font-semibold tracking-[0.03em] text-white hover:text-accent', label: 'font-body text-[13px] font-medium uppercase tracking-[0.08em] text-white/60' }}
+            />
+          )}
           <a href={tel} className="flex min-h-[44px] items-center gap-2 whitespace-nowrap font-heading text-[16px] font-semibold tracking-[0.03em] text-white no-underline sm:text-[18px]">
-            <Phone size={16} className="flex-none text-accent" aria-hidden="true" /> {b.phone}
+            <Phone size={16} className="flex-none text-accent" aria-hidden="true" />
+            {extra.length > 0 && telling(main.label) && <span className="hidden font-body text-[13px] font-medium uppercase tracking-[0.08em] text-white/60 xl:inline">{main.label}</span>}
+            {b.phone}
           </a>
           <a
             href="/contact"
@@ -561,10 +605,17 @@ function Promises({ items, dark = false }) {
   );
 }
 
-function HeroPanel({ b, tel, rating, promises }) {
+/**
+ * The free inspection at a glance, for a hero with no photo: the number, the
+ * hours, the rating, and the promises the roofer makes, or, with none, the
+ * work it does, each linked to its page, so the card is never a phone number
+ * alone on a white box.
+ */
+function HeroPanel({ b, tel, rating, promises, services = [] }) {
   const first = list(b.hours)[0];
+  const work = promises.length ? [] : services.slice(0, 4);
   return (
-    <div className="self-center border-t-4 border-accent bg-white p-7 text-ink shadow-[0_32px_64px_-32px_rgba(0,0,0,0.7)] sm:p-8">
+    <div className="relative self-center border-t-4 border-accent bg-white p-7 text-ink shadow-[0_32px_64px_-32px_rgba(0,0,0,0.7)] sm:p-8">
       <p className="font-heading text-[14px] font-semibold uppercase tracking-[0.16em] text-primary">Free Roof Inspection</p>
       <a href={tel} className="mt-3 flex items-center gap-3 whitespace-nowrap font-heading text-[clamp(1.6rem,1.2rem+1.4vw,2rem)] font-bold tracking-[0.02em] text-ink no-underline">
         <Phone size={24} className="flex-none text-primary" aria-hidden="true" /> {b.phone}
@@ -588,6 +639,19 @@ function HeroPanel({ b, tel, rating, promises }) {
           <Promises items={promises} />
         </div>
       )}
+      {work.length > 0 && (
+        <ul className="mt-6 grid border-t border-ink/10 pt-2">
+          {work.map((s, i) => (
+            <li key={s.slug} className="border-b border-ink/10 last:border-0">
+              <a href={`/services/${s.slug}`} className="group flex min-h-[52px] items-center gap-4 py-2 text-ink no-underline hover:text-primary">
+                <span className="w-[1.6em] flex-none font-heading text-[14px] font-semibold tabular-nums text-primary">{pad2(i + 1)}</span>
+                <span className={`${h3} min-w-0 flex-1 text-[18px]`}>{s.title}</span>
+                <ArrowRight size={16} className="flex-none text-primary transition group-hover:translate-x-1" aria-hidden="true" />
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
       <a href="/contact" className={`${solid} mt-7 w-full`}>
         Book an Inspection <ArrowRight size={18} aria-hidden="true" />
       </a>
@@ -595,55 +659,142 @@ function HeroPanel({ b, tel, rating, promises }) {
   );
 }
 
-function HomeHero({ b, tel, rating }) {
-  const promises = list(b.promises).slice(0, 4);
+/** The hero's words: the eyebrow, the headline with its accent line, the lead, the two calls and any further lines. */
+function HeroWords({ b, tel, classic, after = null }) {
   return (
-    <section className={`relative isolate overflow-hidden bg-ink text-white ${heroClip}`}>
-      {b.hero.image ? (
-        <>
-          {/* On a phone the photo is shown whole above the words; from lg up it is the ground behind them. */}
-          <Img
-            className="relative block aspect-[16/10] w-full object-cover object-[center_40%] lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto lg:h-full"
-            src={b.hero.image}
-            alt={b.hero.imageAlt}
-            sizes="100vw"
-            eager
-            data-backdrop=""
-          />
-          <div
-            className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(100deg,color-mix(in_srgb,var(--ink)_96%,transparent)_0%,color-mix(in_srgb,var(--ink)_90%,transparent)_58%,color-mix(in_srgb,var(--ink)_30%,transparent)_100%)]"
-            aria-hidden="true"
-          />
-        </>
-      ) : (
-        // No photo strong enough to lead: the brand's own colors carry the band.
-        <div
-          className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_88%_12%,color-mix(in_srgb,var(--primary)_55%,transparent),transparent_58%),repeating-linear-gradient(135deg,rgba(255,255,255,0.035)_0_2px,transparent_2px_26px)]"
-          aria-hidden="true"
+    <div className="min-w-0 self-center">
+      <Eyebrow dark>{b.hero.eyebrow}</Eyebrow>
+      <h1 className={`${h1} ${classic ? '!font-semibold !tracking-[0.02em]' : ''}`}>
+        {b.hero.title}
+        {b.hero.titleAccent && <span className="block text-accent">{b.hero.titleAccent}</span>}
+      </h1>
+      <p className="mt-6 max-w-[38rem] text-[17px] leading-[1.6] text-white/85 sm:text-[19px]">{b.hero.lead}</p>
+      <div className="mt-9 grid gap-3 sm:flex sm:flex-wrap">
+        <a href="/contact" className={solid}>
+          Book a Free Inspection <ArrowRight size={18} aria-hidden="true" />
+        </a>
+        <a href={tel} className={ghostDark}>
+          <Phone size={18} aria-hidden="true" /> {b.phone}
+        </a>
+      </div>
+      {extraPhonesOf(b).length > 0 && (
+        <PhoneLines
+          lines={extraPhonesOf(b)}
+          icon
+          className="mt-3"
+          styles={{ list: 'gap-x-6', item: 'font-heading text-[17px] font-semibold tracking-[0.03em] text-white hover:text-accent', label: 'font-body text-[14px] font-medium uppercase tracking-[0.08em] text-white/60' }}
         />
       )}
-      <div
-        className={`${wrap} grid items-end gap-10 pt-10 pb-[calc(clamp(28px,5vw,88px)+3.5rem)] sm:pt-16 lg:min-h-[min(88vh,800px)] lg:grid-cols-[minmax(0,1fr)_minmax(0,380px)] lg:gap-16 lg:pt-24`}
-      >
-        <div className="min-w-0 self-center">
-          <Eyebrow dark>{b.hero.eyebrow}</Eyebrow>
-          <h1 className={h1}>
-            {b.hero.title}
-            {b.hero.titleAccent && <span className="block text-accent">{b.hero.titleAccent}</span>}
-          </h1>
-          <p className="mt-6 max-w-[38rem] text-[17px] leading-[1.6] text-white/85 sm:text-[19px]">{b.hero.lead}</p>
-          <div className="mt-9 grid gap-3 sm:flex sm:flex-wrap">
-            <a href="/contact" className={solid}>
-              Book a Free Inspection <ArrowRight size={18} aria-hidden="true" />
-            </a>
-            <a href={tel} className={ghostDark}>
-              <Phone size={18} aria-hidden="true" /> {b.phone}
-            </a>
+      {after}
+    </div>
+  );
+}
+
+/**
+ * The home page's opening, in the style the brand asks for (heroStyle):
+ *
+ *   photo  the photo is the band's ground from lg up, under the charcoal
+ *          wash, with the rating and promises in a card beside the words; on
+ *          a phone it stands whole above them. The default with a photo.
+ *   split  the words beside the photo, framed with the template's cut
+ *          corner, the rating pinned to it and the promises under the calls.
+ *   type   no photo: the brand's colors with depth, roof lines drawn in from
+ *          the right and fading out under the words, and the inspection
+ *          card. The default without one.
+ */
+function HomeHero({ b, tel, rating }) {
+  const promises = list(b.promises).slice(0, 4);
+  const style = heroStyleOf(b, 'photo');
+  const classic = toneOf(b) === 'classic';
+  const grid = `${wrap} grid items-end gap-10 pt-10 pb-[calc(clamp(28px,5vw,88px)+3.5rem)] sm:pt-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,380px)] lg:gap-16 lg:pt-24`;
+  if (style === 'type') {
+    return (
+      <section className={`relative isolate overflow-hidden bg-ink text-white ${heroClip}`}>
+        <TypeGround
+          tone={toneOf(b)}
+          from="color-mix(in srgb, var(--primaryDeep) 62%, var(--ink))"
+          to="color-mix(in srgb, var(--ink) 92%, #000)"
+          glow="var(--primary)"
+          glow2="var(--accent)"
+          pattern="dots"
+          motif={<Motif kind="chevrons" accent="var(--accent)" strokeWidth={1.5} fade className="-right-[4%] bottom-0 h-[70%] w-[110%] text-white/[0.1] md:h-[118%] md:w-[66%]" />}
+        />
+        <div className={`${grid} lg:min-h-[min(80vh,760px)]`}>
+          <HeroWords b={b} tel={tel} classic={classic} />
+          <HeroPanel b={b} tel={tel} rating={rating} promises={promises} services={servicesOf(b)} />
+        </div>
+      </section>
+    );
+  }
+  if (style === 'split') {
+    return (
+      <section className={`relative isolate overflow-hidden bg-ink text-white ${heroClip}`}>
+        <div
+          className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_88%_12%,color-mix(in_srgb,var(--primary)_40%,transparent),transparent_58%)]"
+          aria-hidden="true"
+        />
+        <div className={`${wrap} grid items-center gap-10 pb-[calc(clamp(28px,5vw,88px)+3.5rem)] lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:gap-16 lg:pt-20`}>
+          {/* The photo keeps its own shape, no taller than the screen allows; on a phone it runs edge to edge above the words. */}
+          <div className="relative -mx-gutter min-w-0 lg:order-last lg:mx-0">
+            <Img
+              className="block h-auto max-h-[min(70svh,580px)] w-full object-cover lg:[clip-path:polygon(0_0,100%_0,100%_100%,9%_100%,0_88%)]"
+              src={b.hero.image}
+              alt={b.hero.imageAlt}
+              sizes="(min-width: 1024px) 46vw, 100vw"
+              eager
+            />
+            <span className="absolute -bottom-2 right-0 hidden h-2 w-2/5 bg-accent lg:block" aria-hidden="true" />
+            {rating && (
+              <div className="absolute bottom-0 left-[clamp(16px,4vw,64px)] translate-y-1/2 border-l-4 border-accent bg-ink px-5 py-4 lg:-left-8 lg:bottom-10 lg:translate-y-0">
+                <RatingBadge b={b} size={15} styles={{ box: 'gap-3.5', value: 'font-heading text-[40px] font-bold', count: 'text-[14px] text-white/75' }} />
+              </div>
+            )}
+          </div>
+          <div className={`min-w-0 ${rating ? 'pt-8 lg:pt-0' : ''}`}>
+            <HeroWords
+              b={b}
+              tel={tel}
+              classic={classic}
+              after={
+                promises.length > 0 && (
+                  <div className="mt-9 border-t border-white/15 pt-7 sm:max-w-[40rem]">
+                    <ul className="grid gap-3 sm:grid-cols-2">
+                      {promises.map((p) => (
+                        <li key={p} className="flex items-start gap-3 text-[16px] font-medium leading-snug">
+                          <span className="mt-0.5 grid h-6 w-6 flex-none place-items-center bg-accent text-[color:var(--on-accent)]">
+                            <Check size={14} strokeWidth={3} aria-hidden="true" />
+                          </span>
+                          {p}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )
+              }
+            />
           </div>
         </div>
-        {!b.hero.image ? (
-          <HeroPanel b={b} tel={tel} rating={rating} promises={promises} />
-        ) : (rating || promises.length > 0) && (
+      </section>
+    );
+  }
+  return (
+    <section className={`relative isolate overflow-hidden bg-ink text-white ${heroClip}`}>
+      {/* On a phone the photo is shown whole above the words; from lg up it is the ground behind them. */}
+      <Img
+        className="relative block aspect-[16/10] w-full object-cover object-[center_40%] lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto lg:h-full"
+        src={b.hero.image}
+        alt={b.hero.imageAlt}
+        sizes="100vw"
+        eager
+        data-backdrop=""
+      />
+      <div
+        className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(100deg,color-mix(in_srgb,var(--ink)_96%,transparent)_0%,color-mix(in_srgb,var(--ink)_90%,transparent)_58%,color-mix(in_srgb,var(--ink)_30%,transparent)_100%)]"
+        aria-hidden="true"
+      />
+      <div className={`${grid} lg:min-h-[min(88vh,800px)]`}>
+        <HeroWords b={b} tel={tel} classic={classic} />
+        {(rating || promises.length > 0) && (
           <div className="border-l-4 border-accent bg-[color-mix(in_srgb,var(--ink)_78%,transparent)] p-6 backdrop-blur-sm sm:p-7">
             {rating && (
               <div className={`flex items-center gap-4 ${promises.length > 0 ? 'mb-6 border-b border-white/15 pb-6' : ''}`}>
@@ -1004,8 +1155,9 @@ function Projects({ items, title = 'Recent roofs', className = '' }) {
   );
 }
 
-function Reviews({ b, className = '' }) {
-  const reviews = list(b.reviews);
+/** The reviews quoted word for word, three on the home page, each naming where it was left. */
+function Reviews({ b, className = '', max = 3 }) {
+  const reviews = reviewsOf(b);
   if (!reviews.length) return null;
   return (
     <section id="reviews" className={`${anchor} ${className} ${pad}`}>
@@ -1025,17 +1177,121 @@ function Reviews({ b, className = '' }) {
             </div>
           )}
         </div>
-        <ul className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {reviews.map((r) => (
-            <li key={r.text.slice(0, 40)} className="flex flex-col border-l-4 border-primary bg-surface p-6 sm:p-8">
-              <Stars value={5} size={15} />
-              <blockquote className="m-0 mb-6 mt-4 flex-1 text-[17px] leading-[1.65] text-ink/85">{r.text}</blockquote>
-              <p className="font-heading text-[15px] font-semibold uppercase tracking-[0.1em] text-ink/70">{r.author}</p>
-            </li>
-          ))}
-        </ul>
+        <ReviewQuotes
+          reviews={reviews}
+          max={max}
+          quoteMark={false}
+          styles={{
+            list: 'gap-5',
+            item: 'border-l-4 border-primary bg-surface p-6 sm:p-8',
+            text: 'text-[17px] leading-[1.65] text-ink/85',
+            author: 'font-heading text-[15px] uppercase tracking-[0.1em] text-ink/80',
+            source: 'font-body normal-case tracking-normal text-ink/60',
+          }}
+        />
       </div>
     </section>
+  );
+}
+
+/** The highlights right under the hero: two to four things that set the roofer apart. */
+function HighlightBand({ b }) {
+  const items = highlightsOf(b);
+  if (!items.length) return null;
+  return (
+    <section aria-label={`Why choose ${b.shortName}`} className="bg-white pb-2 pt-[clamp(2.5rem,5vw,3.5rem)]">
+      <div className={wrap}>
+        <Highlights
+          items={items}
+          label={`What sets ${b.shortName} apart`}
+          iconSize={24}
+          styles={{
+            list: 'gap-4 lg:gap-5',
+            item: 'border-l-4 border-primary bg-surface p-5 sm:p-6',
+            icon: 'h-12 w-12 bg-ink text-accent',
+            title: `${h3} text-[20px] text-ink`,
+            text: 'mt-1.5 text-[16px] leading-[1.55] text-ink/75',
+          }}
+        />
+      </div>
+    </section>
+  );
+}
+
+/** How a job goes with this roofer, where its own site describes it. */
+function StepsBand({ b, className = 'bg-surface' }) {
+  const steps = stepsOf(b);
+  if (!steps.length) return null;
+  return (
+    <section aria-labelledby="how-it-works" className={`${className} ${pad}`}>
+      <div className={wrap}>
+        <Eyebrow>How it works</Eyebrow>
+        <h2 id="how-it-works" className={`${h2} mb-10 lg:mb-14`}>
+          Working with {b.shortName}
+        </h2>
+        <Steps
+          items={steps}
+          styles={{
+            list: 'gap-x-6 gap-y-10',
+            item: 'relative border-t-2 border-ink/15 pt-6 before:absolute before:-top-[2px] before:left-0 before:h-[2px] before:w-14 before:bg-primary',
+            number: 'font-heading text-[64px] font-bold leading-none text-transparent [-webkit-text-stroke:1.5px_var(--primary)]',
+            title: `${h3} mt-4 text-[21px] text-ink`,
+            text: 'mt-2 leading-[1.6] text-ink/75',
+          }}
+        />
+      </div>
+    </section>
+  );
+}
+
+/** Licenses, certifications, insurance and memberships, as the roofer's own site names them. */
+function CredentialsBand({ b, className = 'bg-white' }) {
+  const items = credentialsOf(b);
+  if (!items.length) return null;
+  return (
+    <section aria-labelledby="credentials" className={`${className} ${pad}`}>
+      <div className={`${wrap} grid gap-10 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:items-start lg:gap-16`}>
+        <div>
+          <Eyebrow>Credentials</Eyebrow>
+          <h2 id="credentials" className={h2}>
+            Licensed, certified and insured
+          </h2>
+        </div>
+        <Credentials
+          items={items}
+          icon={ShieldCheck}
+          iconSize={22}
+          styles={{
+            list: 'gap-3 sm:grid-cols-2',
+            item: 'border-2 border-ink bg-white p-5',
+            icon: 'text-primary',
+            label: `${h3} text-[19px] text-ink`,
+            detail: 'mt-1 text-[16px] leading-[1.5] text-ink/70',
+          }}
+        />
+      </div>
+    </section>
+  );
+}
+
+/** The owner, beside the about words: their photo or initials, name, role and a line or two. */
+function OwnerNote({ b, dark = false }) {
+  const owner = ownerOf(b);
+  if (!owner) return null;
+  return (
+    <div className={`mt-8 border-l-4 border-accent p-5 sm:p-6 ${dark ? 'bg-white/[0.06]' : 'bg-surface'}`}>
+      <Owner
+        owner={owner}
+        styles={{
+          box: 'items-center gap-5',
+          photo: 'h-20 w-20',
+          initials: `h-20 w-20 bg-accent font-heading text-[28px] font-bold text-[color:var(--on-accent)]`,
+          name: `${h3} text-[21px]`,
+          role: `mt-0.5 text-[15px] font-semibold uppercase tracking-[0.08em] ${dark ? 'text-accent' : 'text-primary'}`,
+          text: `mt-2 text-[16px] leading-[1.55] ${dark ? 'text-white/75' : 'text-ink/75'}`,
+        }}
+      />
+    </div>
   );
 }
 
@@ -1055,6 +1311,7 @@ function AboutBand({ b }) {
           ))}
         </ul>
       )}
+      <OwnerNote b={b} dark />
       <a href="/about" className={`${ghostDark} mt-9`}>
         About {b.shortName} <ArrowRight size={18} aria-hidden="true" />
       </a>
@@ -1159,7 +1416,7 @@ function InspectionForm({ b }) {
 function ContactLines({ b, tel, dark = false }) {
   const full = `${b.address}, ${b.town}, ${b.state}${b.zip ? ` ${b.zip}` : ''}`;
   const rows = [
-    [Phone, tel, b.phone],
+    ...phonesOf(b).map((p) => [Phone, p.href, p.label ? `${p.label} ${p.number}` : p.number]),
     // On a phone the address is set a size down, so a long domain fits its line whole after the @ instead of breaking mid-word.
     b.email && [Mail, `mailto:${b.email}`, <span className="text-[15px] sm:text-[17px]">{b.email.split('@').flatMap((p, i) => (i ? ['@', <wbr key={i} />, p] : [p]))}</span>],
     [MapPin, mapsHref(b), full],
@@ -1289,9 +1546,17 @@ function Footer({ b, tel }) {
         </div>
         <div>
           <h2 className={head}>Contact</h2>
-          <a href={tel} className="flex min-h-[44px] items-center font-heading text-[26px] font-semibold tracking-[0.03em] text-white no-underline">
-            {b.phone}
-          </a>
+          {extraPhonesOf(b).length > 0 ? (
+            <PhoneLines
+              lines={phonesOf(b)}
+              styles={{ list: 'flex-col gap-0', item: 'gap-x-3 text-white hover:text-accent', label: 'text-[14px] font-medium uppercase tracking-[0.08em] text-white/55', number: 'font-heading text-[24px] font-semibold tracking-[0.03em]' }}
+            />
+          ) : (
+            <a href={tel} className="flex min-h-[44px] items-center font-heading text-[26px] font-semibold tracking-[0.03em] text-white no-underline">
+              {b.phone}
+            </a>
+          )}
+          <Languages items={languagesOf(b)} className="py-1.5 text-white/75 [&_svg]:text-accent" />
           {b.email && (
             <a href={`mailto:${b.email}`} className="flex min-h-[44px] items-center text-white/80 no-underline [overflow-wrap:anywhere] hover:text-white">
               {b.email}
@@ -1328,11 +1593,20 @@ function Footer({ b, tel }) {
 
 function HomePage({ b, tel, rating, stormHref }) {
   const services = servicesOf(b);
+  // The bands between the services and the projects take turns on the pale
+  // ground and the white, whichever of them the roofer has.
+  const ground = {};
+  ['materials', 'steps', 'credentials']
+    .filter((k) => (k === 'materials' ? list(b.materials?.brands).length : k === 'steps' ? stepsOf(b).length : credentialsOf(b).length))
+    .forEach((k, i) => {
+      ground[k] = i % 2 ? 'bg-white' : 'bg-surface';
+    });
   return (
     <>
-      <div className={list(b.claim?.steps).length ? 'bg-ink' : 'bg-white'}>
+      <div className={list(b.claim?.steps).length && !highlightsOf(b).length ? 'bg-ink' : 'bg-white'}>
         <HomeHero b={b} tel={tel} rating={rating} />
       </div>
+      <HighlightBand b={b} />
       <ClaimStrip b={b} stormHref={stormHref} />
       <section id="services" className={`${anchor} ${pad}`}>
         <div className={wrap}>
@@ -1348,7 +1622,9 @@ function HomePage({ b, tel, rating, stormHref }) {
           <HomeServices services={services} />
         </div>
       </section>
-      <Materials b={b} />
+      <Materials b={b} className={ground.materials} />
+      <StepsBand b={b} className={ground.steps} />
+      <CredentialsBand b={b} className={ground.credentials} />
       <Projects items={list(b.projects)} />
       <AboutBand b={b} />
       <Reviews b={b} />
@@ -1712,11 +1988,13 @@ function AboutPage({ b, tel }) {
             <a href="/contact" className={solid}>
               Book a Free Inspection
             </a>
+            <OwnerNote b={b} />
           </div>
         </div>
       </section>
       <Materials b={b} />
-      <Reviews b={b} />
+      <CredentialsBand b={b} className={list(b.materials?.brands).length ? 'bg-white' : 'bg-surface'} />
+      <Reviews b={b} max={6} />
       <CtaBand b={b} tel={tel} />
     </>
   );
