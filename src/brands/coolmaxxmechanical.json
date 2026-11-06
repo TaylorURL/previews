@@ -1,0 +1,138 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Cool Maxx Mechanical Inc.",
+  "shortName": "Cool Maxx Mechanical",
+  "phone": "(281) 573-9300",
+  "email": null,
+  "address": "7927 Brookfield St",
+  "town": "Baytown",
+  "state": "TX",
+  "zip": "77523",
+  "rating": 5,
+  "reviewCount": 5,
+  "license": "License # TACLA27911C",
+  "brand": {
+    "primary": "#066aef",
+    "primaryDeep": "#044aa7",
+    "accent": "#ff1515",
+    "ink": "#152031",
+    "surface": "#f0f6fe",
+    "muted": "#5b6470",
+    "line": "#dee0e2",
+    "heading": "'Plus Jakarta Sans', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/coolmaxxmechanical/logo.webp",
+    "logoMono": "/brands/coolmaxxmechanical/logo-mono.webp",
+    "logoWidth": 260,
+    "logoHeight": 46,
+    "logoRatio": 5.636,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.369,
+      0.305,
+      0.25,
+      0.253,
+      0.217,
+      0.329,
+      0.524,
+      0.629,
+      0.744,
+      0.871,
+      0.995
+    ]
+  },
+  "heroStyle": "type",
+  "tone": "classic",
+  "hero": {
+    "eyebrow": "Cool Maxx Mechanical · Baytown",
+    "title": "Honest answers from technicians",
+    "lead": "We are a family owned heating, air conditioning and refrigeration company in Baytown, serving homes, businesses and industry across Houston and the surrounding area.",
+    "titleAccent": "who don't work on commission."
+  },
+  "serviceArea": [
+    "Baytown",
+    "Houston"
+  ],
+  "highlights": [
+    {
+      "title": "Family owned and operated",
+      "text": "We are a family company, locally owned and operated.",
+      "icon": "family"
+    },
+    {
+      "title": "No commission technicians",
+      "text": "Our technicians don't work on commission, which keeps our prices down.",
+      "icon": "dollar"
+    },
+    {
+      "title": "NATE certified technicians",
+      "text": "Certified to repair or install your heating and air conditioning system the first time.",
+      "icon": "badge"
+    },
+    {
+      "title": "Satisfaction guaranteed",
+      "text": "Complete satisfaction with our services and technicians is 100% guaranteed.",
+      "icon": "shield"
+    }
+  ],
+  "credentials": [
+    {
+      "label": "NATE",
+      "detail": "Technicians are NATE certified"
+    },
+    {
+      "label": "Better Business Bureau",
+      "detail": "Accredited by the Better Business Bureau®"
+    }
+  ],
+  "summary": "Cool Maxx Mechanical handles air conditioning repair, heating installation and commercial refrigeration in Baytown and Houston.",
+  "groups": [
+    {
+      "slug": "air-conditioning-installation",
+      "title": "Air Conditioning Installation",
+      "icon": "snowflake",
+      "summary": "We install air conditioning systems, and our NATE certified technicians aim to get the job right the first time.",
+      "intro": "We install air conditioning systems, and our NATE certified technicians aim to get the job right the first time."
+    },
+    {
+      "slug": "air-conditioning-repair",
+      "title": "Air Conditioning Repair",
+      "icon": "snowflake",
+      "summary": "When your air conditioner stops working, we repair it, whatever the make or model.",
+      "intro": "When your air conditioner stops working, we repair it, whatever the make or model."
+    },
+    {
+      "slug": "heating-installation",
+      "title": "Heating Installation",
+      "icon": "flame",
+      "summary": "We install heating systems for your home or business, done by NATE certified technicians.",
+      "intro": "We install heating systems for your home or business, done by NATE certified technicians."
+    },
+    {
+      "slug": "heating-repair",
+      "title": "Heating Repair",
+      "icon": "flame",
+      "summary": "If your heat isn't working, we repair heating systems of all makes and models.",
+      "intro": "If your heat isn't working, we repair heating systems of all makes and models."
+    },
+    {
+      "slug": "commercial-refrigeration",
+      "title": "Commercial Refrigeration",
+      "icon": "wrench",
+      "summary": "We work on commercial refrigeration, including walk-ins, for local businesses.",
+      "intro": "We work on commercial refrigeration, including walk-ins, for local businesses."
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "A family company that keeps its prices down",
+    "text": [
+      "Cool Maxx Mechanical is a locally owned and operated heating, air conditioning and refrigeration company, and we are family owned and operated.",
+      "Our technicians do not work on commission, which lets us keep our prices down and lets you count on honest answers that are best for you and your family's comfort.",
+      "We have the experience to work on all makes and models, and our goal is a good job at a good price so you keep doing business with us for years.",
+      "Many of our customers love to refer us to their friends and family."
+    ]
+  }
+}
