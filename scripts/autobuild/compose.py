@@ -324,7 +324,7 @@ def email_of(stored, pages, business):
     An address at another business's domain (a listing that carries the email
     of a practice they share a building or an owner with), or one meant for
     investors, the press or job seekers, is never shown."""
-    host = urllib.parse.urlparse(pages[0].url).netloc.lower().replace("www.", "")
+    host = collect.site_host(pages[0].url)
     listed = [m.group(1).lower() for page in pages for href, _ in page.links if (m := MAILTO.match(href.strip()))]
     if isinstance(business.get("email"), str):
         listed.append(business["email"].lower().removeprefix("mailto:"))

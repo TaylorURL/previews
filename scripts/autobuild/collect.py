@@ -119,6 +119,14 @@ def fetch(url, timeout=20, binary=False, limit=PAGE_LIMIT):
 LARGE = 2000
 
 
+def site_host(url):
+    """The host a page is at, for telling their own pages from anyone else's:
+    lower case, without the www or a port. A site that sends its visitors to
+    "https://www.example.com:443/" links to "https://example.com/about", and
+    both are the same site."""
+    return (urllib.parse.urlsplit(url).hostname or "").removeprefix("www.")
+
+
 def bigger(url):
     """The addresses of the same picture at a large size, the largest first,
     the address itself last; just the address for any other host."""
@@ -389,7 +397,7 @@ def site(website):
         if not drawn or len("".join(readable(drawn).lines)) < SHELL_TEXT or CHALLENGE.search(_title(drawn)):
             raise
         home = read_page(website, drawn)
-    host = urllib.parse.urlparse(home.url).netloc.replace("www.", "")
+    host = site_host(home.url)
     pages = [home]
     seen = {home.url.rstrip("/")}
     for href, text in home.links:
@@ -398,7 +406,7 @@ def site(website):
         url = urllib.parse.urljoin(home.url, href).split("#")[0]
         if not url.startswith("http") or SKIP_LINK.search(url):
             continue
-        if urllib.parse.urlparse(url).netloc.replace("www.", "") != host:
+        if site_host(url) != host:
             continue
         if url.rstrip("/") in seen:
             continue
@@ -416,7 +424,7 @@ def site(website):
         url = urllib.parse.urljoin(home.url, href).split("#")[0]
         if not url.startswith("http") or SKIP_LINK.search(url) or url.rstrip("/") in seen:
             continue
-        if urllib.parse.urlparse(url).netloc.replace("www.", "") != host:
+        if site_host(url) != host:
             continue
         if not (MORE.search(text) or MORE.search(urllib.parse.urlparse(url).path)):
             continue
@@ -650,7 +658,7 @@ def copy(website):
     browser = len(home["text"]) < SHELL_TEXT
     if browser:
         home = _copy_page(website, browser=True)
-    host = urllib.parse.urlparse(home["url"]).netloc.replace("www.", "")
+    host = site_host(home["url"])
     pages, seen = [home], {home["url"].rstrip("/")}
     for href, _ in home["links"]:
         if len(pages) >= COPY_PAGES:
@@ -658,7 +666,7 @@ def copy(website):
         url = href.split("#")[0]
         if not url.startswith("http") or SKIP_LINK.search(url) or MEDIA.search(urllib.parse.urlparse(url).path):
             continue
-        if urllib.parse.urlparse(url).netloc.replace("www.", "") != host or url.rstrip("/") in seen:
+        if site_host(url) != host or url.rstrip("/") in seen:
             continue
         seen.add(url.rstrip("/"))
         try:
