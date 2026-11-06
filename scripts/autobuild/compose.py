@@ -313,7 +313,8 @@ FREE_MAIL = re.compile(r"@(gmail|yahoo|hotmail|outlook|live|msn|aol|icloud|me|at
 MAILTO = re.compile(r"^mailto:([^?\s]+@[^?\s]+)", re.I)
 # An address for investors, the press, job seekers or the website itself is not
 # where a customer asks for work, however the box is prefixed ('corporatehumanresources@').
-NOT_FOR_CUSTOMERS = re.compile(r"^(ir|investors?|investor[._-]?relations|shareholders?|media|press|pr|careers?|jobs|recruiting|hr|privacy|legal|compliance|ethics|webmaster|no-?reply|do-?not-?reply"
+# legal@ is not among them: at a law firm it is the address clients write to.
+NOT_FOR_CUSTOMERS = re.compile(r"^(ir|investors?|investor[._-]?relations|shareholders?|media|press|pr|careers?|jobs|recruiting|hr|privacy|compliance|ethics|webmaster|no-?reply|do-?not-?reply"
                                r"|[^@]*(human[._-]?resources|recruit(ing|ment|er)?|careers|hiring|payroll)[^@]*)@", re.I)
 
 
@@ -412,6 +413,9 @@ MISSPELT = {r"\bverity of\b": "variety of", r"\bVerity of\b": "Variety of", r"\b
             # A verb their page dropped ("If you a special project that requires...").
             r"\b([Ii]f|[Ww]hen) you (an?) ": r"\1 you have \2 "}
 
+# Three or more words in capitals that the sentence goes on from in lowercase.
+SHOUTED = re.compile(r"\b[A-Z]{2,}(?:\s+[A-Z]{2,}){2,}\b(?=\s+[a-z])")
+
 
 SHORTENED = {"etc", "vs", "approx", "incl", "est", "ft", "sq", "no", "st", "dr", "mr", "mrs", "ms", "jr", "sr", "inc", "co", "ltd", "llc", "ave", "rd", "blvd", "hwy", "ste"}
 
@@ -439,6 +443,21 @@ def trim(text, limit):
     text = re.sub(r"\b([a-z]{2,})(?= (?:It|We|They|You|He|She|There)['’](?:s|re|ve|ll|d)\b)", r"\1.", text)
     for wrong, right in MISSPELT.items():
         text = re.sub(wrong, right, text)
+    # Three or more words their page sets in capitals before the sentence goes
+    # on in lowercase ("STACKABLE METAL RACKS will...") shout; they take the
+    # sentence's case, an initialism keeping its capitals.
+    def hush(m):
+        said = " ".join(w if w in ACRONYMS else w.lower() for w in m.group(0).split())
+        opens = not m.start() or re.search(r"[.!?]\s$", text[:m.start()])
+        return said[:1].upper() + said[1:] if opens else said
+    text = SHOUTED.sub(hush, text)
+    # A word after a helping verb opens no name ("will Optimize the space").
+    text = re.sub(r"\b(will|can|could|would|should|may|might|must) ([A-Z])([a-z]+)\b", lambda m: f"{m.group(1)} {m.group(2).lower()}{m.group(3)}", text)
+    # A sentence their page runs on after a comma with its capital ("the
+    # vertical space, If you have...") takes its stop, unless the clause before
+    # the comma only leads into it ("At our shop, If you...").
+    text = re.sub(r"(^|(?<=[.!?] ))([^.!?]*?[a-z]), (If|When) (?=you\b|your\b)",
+                  lambda m: m.group(0) if LEADING.match(m.group(2)) else f"{m.group(1)}{m.group(2)}. {m.group(3)} ", text)
     # A name that ends in a plural ("Aloha Swimming Pools's expert services")
     # takes the apostrophe alone; one that ends in a double s ("Bass's") keeps it.
     text = re.sub(r"\b([A-Z][a-z]*[^\Ws]s)(['’])s\b", r"\1\2", text)
