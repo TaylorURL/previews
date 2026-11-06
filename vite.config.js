@@ -25,6 +25,8 @@ function brandBoot() {
           barber: '(max-width: 768px) 100vw, 45vw',
           realestate: '100vw',
           hvac: '(max-width: 1024px) 100vw, 50vw',
+          // The split hero's photo is cropped across its tall frame and asks for more.
+          industrial: '(max-width: 1024px) 100vw, 90vw',
           autorepair: '(max-width: 1024px) 100vw, 50vw',
           professional: '(max-width: 1024px) 100vw, 50vw',
           salon: '(max-width: 768px) 100vw, 45vw',
