@@ -827,7 +827,11 @@ def _build(prospect, root, slug, known):
                 continue
             icon = next((k for k, p in compose.ICONS.get(kind) or compose.ICONS["hvac"] if re.search(p, s["title"], re.I)), "wrench")
             summary = compose.card_line(s["text"], 140) or s["text"]
-            group = {"slug": compose.slugify(s["title"]), "title": s["title"], "icon": icon, "summary": summary, "intro": s["text"]}
+            # The intro is their description whole, but put right as the
+            # summary's is ("STACKABLE METAL RACKS will Optimize the vertical
+            # space, If you have..." takes the sentence's case and its stop).
+            intro = compose.trim(s["text"], 2 * len(s["text"])) or s["text"]
+            group = {"slug": compose.slugify(s["title"]), "title": s["title"], "icon": icon, "summary": summary, "intro": intro}
             if s["title"] in named or (wide and (not trade or re.search(trade, s["title"], re.I))):
                 group["image"] = named.get(s["title"]) or wide.pop(0)
                 group["imageAlt"] = f"A photo of {short}"
@@ -990,6 +994,11 @@ def _facts_fields(brand, sheet, copy, google, phone, template, state):
             entry["detail"] = c["detail"]
             for wrong, right in compose.MISSPELT.items():
                 entry["detail"] = re.sub(wrong, right, entry["detail"])
+            # A short detail that says the name again inside it ("Certified in
+            # 3-A & FDA Weld Specs" under "3-A & FDA Weld Specs") is the name
+            # said in full, so it stands as the name, alone.
+            if facts.normal(c["label"]) in facts.normal(entry["detail"]) and len(entry["detail"]) <= 60 and not re.search(r"[.!?;]\s", entry["detail"]):
+                entry = {"label": entry["detail"].rstrip(".")}
         if entry not in credentials:
             credentials.append(entry)
     if credentials:
