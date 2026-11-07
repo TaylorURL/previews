@@ -240,6 +240,11 @@ COUNTRY = re.compile(r"(?:the\s+)?(?:United States|USA|U\.S\.A?\.?|America|Ameri
                      r"Bolivia|Chile|Argentina|Uruguay|Paraguay|Brazil|Guyana|Suriname|Caribbean|Latin America|Central America|South America|North America|"
                      r"Europe|Asia|Africa|Middle East|United Kingdom|UK|Norway|Netherlands|Germany|France|Spain|Italy|Greece|Nigeria|Angola|Saudi Arabia|"
                      r"United Arab Emirates|UAE|Qatar|Kuwait|China|Japan|Korea|South Korea|Singapore|India|Australia|Worldwide|International)", re.I)
+# Nor are the regions it names ("Gulf Coast", "Upper Gulf Coast", "Greater
+# Houston", "Southeast Texas", "the Houston area"), nor a state on its own.
+REGION = re.compile(r"(?:the\s+)?(?:(?:[\w.'’-]+\s+){0,3}(?:Coast|Coastal Bend|Coastline|Region|Area|Metroplex|Metro|Hill Country|Panhandle|Piney Woods)|"
+                    r"Greater\s+[\w .'’-]+|(?:Upper|Lower|North|South|East|West|Northeast|Northwest|Southeast|Southwest|Central)(?:ern)?\s+(?:" + "|".join(STATES.values()) + r")|"
+                    + "|".join(STATES.values()) + r")", re.I)
 
 
 def placed_elsewhere(text, town=None, state=None, towns=()):
