@@ -427,6 +427,15 @@ def _assemble(kept, answer, short, town, sheet, dropped, corpus):
             accent = ""
         elif said and title.lower().endswith(said):
             title = title[:-len(said)]
+        # An accent that opens on a word its title has already said ("made
+        # right and delivered on time." after "Precision CNC components, made
+        # since 2009") makes a second claim the same way, and the line reads
+        # as two stitched together; the title is kept on its own.
+        opens = re.match(r"[A-Za-z]{4,}\b", accent)
+        if opens and not re.fullmatch(r"with|your|that|this|from|have|they|will|what|when|where|which|their|our|and",
+                                      opens.group(), re.I) \
+                and re.search(rf"\b{re.escape(opens.group())}\b", title, re.I):
+            accent = ""
         title = title.rstrip() if accent else title.rstrip(" ,;:–—-")
         # An accent that is a sentence of its own ("We're not comfortable until
         # you are." after "Baytown's family HVAC company since 1947") is set on
