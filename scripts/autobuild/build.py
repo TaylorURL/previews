@@ -920,6 +920,15 @@ def _with_facts(services, sheet, name, shape, notes):
     if refused:
         notes.append("left out headings the check refuses as services: " + ", ".join(refused))
         services = [s for s in services if s["title"] not in refused]
+    # A heading that is only one of the industries they serve ("Steel" beside
+    # "Food & Beverage" and "Petrochemical") names who they work for, not a
+    # service; the industries band names it, and it is no capability page.
+    served = {facts.normal(re.sub(r"^the\s+|\s+(?:industry|industries|sectors?)$", "", compose.plain(i["name"]), flags=re.I))
+              for i in sheet.get("industries") or []}
+    industry = [s["title"] for s in services if facts.normal(s["title"]) in served]
+    if industry:
+        notes.append("left out headings that are industries they serve: " + ", ".join(industry))
+        services = [s for s in services if s["title"] not in industry]
     if shape == "hvac":
         services.sort(key=lambda s: not s["text"])
     return services
