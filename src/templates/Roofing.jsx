@@ -443,7 +443,11 @@ function Header({ b, tel }) {
       <div className={`${wrap} flex h-[76px] items-stretch gap-6 lg:h-[92px]`}>
         {/* The menu items keep to one line; when the bar is tight the name beside the logo wraps instead. */}
         <a href="/" className="flex min-w-0 flex-initial items-center no-underline" aria-label={`${b.name} home`}>
-          <BrandLogo b={b} textClass="font-heading uppercase text-head-ink" />
+          {/* A long name set in type is smaller on a phone, so its wrapped lines stay inside the bar with room above and below. */}
+          <BrandLogo
+            b={b}
+            textClass={`font-heading uppercase text-head-ink ${b.shortName.length > 24 ? 'max-lg:!text-[17px] max-lg:!leading-[1.1]' : ''}`}
+          />
         </a>
 
         <nav aria-label="Main" className="ml-auto hidden lg:block">
@@ -1864,7 +1868,7 @@ function AreasPage({ b, tel }) {
                 <li
                   key={t}
                   id={townId(t)}
-                  className={`${anchor} flex min-h-[132px] flex-col justify-between border-2 border-ink p-6 target:border-primary target:bg-surface`}
+                  className={`${anchor} flex min-h-[132px] flex-col gap-1 border-2 border-ink p-6 target:border-primary target:bg-surface`}
                 >
                   <span className="font-heading text-[15px] font-semibold text-primary">{pad2(i + 1)}</span>
                   <span>

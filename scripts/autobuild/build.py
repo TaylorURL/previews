@@ -769,14 +769,24 @@ def _build(prospect, root, slug, known):
     elif shape == "roofing":
         # A service page leads on the service's text under its heading, so its
         # body carries only the sentences that text has not already said.
+        # A single short sentence left over would sit alone on the page under
+        # the heading; it stays in the text the heading leads on instead.
         def untold(text):
             return " ".join(compose.sentences(text)[len(compose.sentences(compose.trim(text, 170))):])
+
+        def lone(rest):
+            return len(compose.sentences(rest)) == 1 and len(rest) < 120
+
+        # A short line that is only the service's name says nothing under it;
+        # the card then takes the opening of its text, as one with no line does.
+        def named(s):
+            return compose.plain(s.get("short") or "").lower() == compose.plain(s["title"]).lower()
         items = [
             {"slug": compose.slugify(s["title"]), "title": s["title"],
              **({"group": group} if (group := next((k for k, p in compose.ROOF_GROUPS if re.search(p, s["title"], re.I)), None)) else {}),
-             "short": (s.get("short") if s.get("short") and len(s["short"]) <= 70 else None) or compose.trim(s["text"], 70) or s["title"],
-             "text": compose.trim(s["text"], 170) or "",
-             **({"body": [rest]} if (rest := untold(s["text"])) else {})}
+             "short": (s.get("short") if s.get("short") and len(s["short"]) <= 70 and not named(s) else None) or compose.gist(s["text"], 70) or s["title"],
+             "text": (compose.trim(s["text"], 300) if lone(rest := untold(s["text"])) else compose.trim(s["text"], 170)) or "",
+             **({"body": [rest]} if rest and not lone(rest) else {})}
             for s in services
         ]
         # Where most services are described the home grid draws them as cards,
