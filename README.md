@@ -1,6 +1,6 @@
 # Previews
 
-Preview websites built in a local business's own brand, linked from TaylorURL's outreach emails.
+Preview websites built in a local business's own brand, linked from the outreach email or text TaylorURL sends them.
 
 Each preview is made from the business's name, logo, colors, photos and details. It lives at `<business>.taylorurl.com`, has a bar across the top saying it's a preview, and is hidden from search engines. A brand file marked `draft` is a rough draft someone asked for, not an outreach preview. Its bar says so.
 
