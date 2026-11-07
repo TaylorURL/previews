@@ -993,12 +993,12 @@ def _facts_fields(brand, sheet, copy, google, phone, template, state):
     if any(l != "English" for l in spoken):
         # Their site is written in English, so English is one of them.
         brand["languages"] = list(dict.fromkeys(["English"] + spoken))
-    reviews = list(google)
+    reviews = [{**r, "text": compose.unemoji(r["text"])} for r in google]
     for t in sheet.get("testimonials") or []:
         if len(reviews) >= facts.REVIEWS_SHOWN:
             break
         if len(t["text"]) <= 600:
-            reviews.append({"author": t.get("author") or "", "text": t["text"], "source": "their site"})
+            reviews.append({"author": t.get("author") or "", "text": compose.unemoji(t["text"]), "source": "their site"})
     if reviews:
         brand["reviews"] = [{k: v for k, v in r.items() if v not in ("", None)} for r in reviews]
     credentials = []
