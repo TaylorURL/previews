@@ -444,6 +444,7 @@ MISSPELT = {r"\bverity of\b": "variety of", r"\bVerity of\b": "Variety of", r"\b
             r"\b(began|begun|started|start|launched) (their|his|her|our|my) carriers\b": r"\1 \2 careers",
             r"\bamble (savings|time|room|space|parking)\b": r"ample \1", r"\bfinancially responsibility\b": "financially responsibly",
             r"\bbuisness": "business", r"\bBuisness": "Business",
+            r"\b([Ss])oluiton": r"\1olution", r"\b([Cc])onstructio\b": r"\1onstruction",
             # A verb set where its noun goes, and a promise said as a permission
             # ("a quick respond to your inquiries is granted").
             r"\b(quick|fast|prompt|rapid|timely) respond\b": r"\1 response",
