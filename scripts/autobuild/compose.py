@@ -756,6 +756,9 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # "We Do Seamless Gutters" is the service said in their own voice; the
         # service is what they do.
         name = re.sub(r"^we (?:also )?(?:do|offer|provide|install|specialize in) (?=\w)", "", name, flags=re.I)
+        # "Ductwork Is Not an Afterthought" is a sentence about the service
+        # it opens on; the service is what it is said of.
+        name = re.sub(r"\s+(?:is|are|isn['’]t|aren['’]t)\s+.*$", "", name, flags=re.I)
         # "DRYWALL Drywall Installation & Repair" is a card's label run into
         # its heading; the word is said once.
         name = re.sub(r"\b(\w+)\s+(?=\1\b)", "", name, flags=re.I)
@@ -1230,6 +1233,12 @@ SITE_NOTE = re.compile(r"\b(?:home ?page|web ?site|landing page)\s+(?:re-?design
 # And a credential's note on how their site shows it ("Shown as a badge on
 # our website"), which the preview, drawing no such badge, cannot bear out.
 SITE_SHOWN = re.compile(r"\b(?:shown|displayed|featured|pictured|seen)\b[^.!?]*\b(?:badges?|logos?|seals?|icons?|emblems?)\b|\bon (?:our|this|the) (?:home ?page|web ?site|site|page)\b", re.I)
+# A team they sponsor ("Texas Tech Athletics – Corporate Partner") is a
+# sponsorship, not a licence or certification held.
+SPONSORSHIP = re.compile(r"\b(?:sponsors?|sponsorships?|sponsored|corporate partners?|official partners?|proud partners?)\b", re.I)
+# Nor is the company that writes their bonds ("Granite Re, Inc. – Payment and
+# performance bonds"), outside an agency that sells them.
+BONDER = re.compile(r"\b(?:payment and performance bonds?|performance and payment bonds?|surety|bonding (?:company|capacity|provider))\b", re.I)
 
 
 def unsited(text):

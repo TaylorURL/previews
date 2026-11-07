@@ -1003,6 +1003,9 @@ def _facts_fields(brand, sheet, copy, google, phone, template, state):
         brand["reviews"] = [{k: v for k, v in r.items() if v not in ("", None)} for r in reviews]
     credentials = []
     for c in sheet.get("credentials") or []:
+        said = f"{c['label']} {c.get('detail') or ''}"
+        if compose.SPONSORSHIP.search(said) or (template != "professional" and compose.BONDER.search(said)):
+            continue
         entry = {"label": c["label"]}
         # A detail that only says how their site shows it ("Shown as a badge
         # on our website") is left out, and the name stands alone.
