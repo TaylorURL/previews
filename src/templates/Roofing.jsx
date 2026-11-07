@@ -922,7 +922,8 @@ function ClaimStrip({ b, stormHref }) {
             )}
           </div>
         </div>
-        <ol className={`grid gap-x-6 gap-y-10 sm:grid-cols-2 ${STEP_COLS[steps.length] || 'lg:grid-cols-4'}`}>
+        {/* Five or six across, a column holds a heading word of about eleven letters; a longer one ("Documentation") sets the row in three, so it never runs into its neighbour. */}
+        <ol className={`grid gap-x-6 gap-y-10 sm:grid-cols-2 ${STEP_COLS[steps.length > 4 && longest(...steps.map((s) => s.title)) > 11 ? 3 : steps.length] || 'lg:grid-cols-4'}`}>
           {steps.map((s, i) => (
             <li key={s.title} className="relative border-t-2 border-white/15 pt-6">
               <span className="absolute -top-[2px] left-0 h-[2px] w-14 bg-accent" aria-hidden="true" />
@@ -1368,8 +1369,8 @@ function AreasBand({ b }) {
             All Service Areas
           </a>
         </div>
-        {/* On a phone a half-width cell holds a word of seven letters; a longer town name takes the full width, so it is never broken. */}
-        <ul className={`grid ${longest(...towns) > 7 ? 'grid-cols-1' : 'grid-cols-2'} content-start self-start border-l-2 border-t-2 border-ink sm:grid-cols-3`}>
+        {/* On a phone a half-width cell holds a word of seven letters, and three across a cell holds one of nine; a longer town name gets the wider cells, so it is never broken. */}
+        <ul className={`grid ${longest(...towns) > 7 ? 'grid-cols-1' : 'grid-cols-2'} content-start self-start border-l-2 border-t-2 border-ink ${longest(...towns) > 9 ? 'sm:grid-cols-2' : 'sm:grid-cols-3'}`}>
           {towns.map((t, i) => (
             <li key={t} className="border-b-2 border-r-2 border-ink bg-white">
               <a href={`/service-areas#${townId(t)}`} className="flex min-h-[64px] items-center gap-3 px-4 py-3 text-ink no-underline transition hover:bg-ink hover:text-white">
