@@ -93,7 +93,7 @@ MARKER = re.compile(r"(?m)^(?:#{1,6}|-)\s")
 @functools.lru_cache(maxsize=512)
 def normal(text):
     text = unicodedata.normalize("NFKC", text or "").translate(SAME)
-    text = compose.ZERO_WIDTH.sub("", compose.UNDRAWN.sub(" ", text)).lower()
+    text = compose.ZERO_WIDTH.sub("", compose.UNDRAWN.sub(" ", compose.EMOJI.sub(" ", text))).lower()
     text = MARKER.sub(" ", text)
     text = re.sub(r"\s+", " ", text)
     # A space their markup leaves before a stop or after a bracket is no word.
