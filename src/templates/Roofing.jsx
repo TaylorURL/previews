@@ -165,7 +165,7 @@ import {
   telling,
   toneOf,
 } from './shared.jsx';
-import { onColor, townId } from './roofing/color.js';
+import { onCharcoal, onColor, townId } from './roofing/color.js';
 
 const GROUPS = [
   ['residential', 'Residential'],
@@ -1709,7 +1709,12 @@ function ServicePage({ b, tel, s }) {
   const group = groupOf(s) === 'general' ? `Roofing in ${b.town}` : GROUPS.find(([key]) => key === groupOf(s))[1];
   // A service their site only names has no words for its page; the
   // inspection card then runs across the page instead of beside an empty column.
-  const said = list(s.body).length > 0 || list(s.points).length > 0 || list(s.faqs).length > 0;
+  // A sentence or two would leave the column beside the card mostly white, so
+  // the card then runs across under them.
+  const told = list(s.body).length > 0 || list(s.points).length > 0 || list(s.faqs).length > 0;
+  const said = list(s.points).length > 0 || list(s.faqs).length > 0 || list(s.body).join(' ').length > 320;
+  // An inspection their own words put a price on is not called free.
+  const priced = /\binspections?$/i.test(s.title.trim()) && /\$\s?\d/.test([s.text, ...list(s.body)].join(' '));
   return (
     <>
       <PageHero
@@ -1727,7 +1732,7 @@ function ServicePage({ b, tel, s }) {
       />
       <section className={pad}>
         <div className={`${wrap} grid items-start gap-12 ${said ? 'lg:grid-cols-[minmax(0,1fr)_380px]' : ''} lg:gap-16`}>
-          <div className={said ? 'min-w-0' : 'hidden'}>
+          <div className={told ? 'min-w-0' : 'hidden'}>
             {list(s.body).map((para) => (
               <p key={para.slice(0, 40)} className="mb-5 max-w-[44rem] text-[17px] leading-[1.7] text-ink/85 sm:text-[19px]">
                 {para}
@@ -1766,7 +1771,7 @@ function ServicePage({ b, tel, s }) {
               said ? `lg:sticky ${b.preview ? 'lg:top-[150px]' : 'lg:top-[108px]'}` : 'lg:grid lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:gap-x-12'
             }`}
           >
-            <p className={`${h3} text-[24px]`}>Free {inspected(s.title)}inspection</p>
+            <p className={`${h3} text-[24px]`}>{priced ? s.title : `Free ${inspected(s.title)}inspection`}</p>
             <a href={tel} className="mt-4 flex min-h-[48px] items-center gap-3 font-heading text-[28px] font-semibold tracking-[0.03em] text-accent no-underline">
               <Phone size={22} aria-hidden="true" /> {b.phone}
             </a>
@@ -1815,13 +1820,14 @@ function ServicePage({ b, tel, s }) {
             <ul className="grid gap-x-10 md:grid-cols-2">
               {others.map((o, i) => (
                 <li key={o.slug} className="border-b border-ink/10">
-                  <a href={`/services/${o.slug}`} className="group flex min-h-[72px] items-center gap-5 py-4 text-ink no-underline">
-                    <span className="w-[1.5em] flex-none font-heading text-[15px] font-semibold tabular-nums text-primary">{pad2(i + 1)}</span>
+                  {/* Titles sit on one line across the row whether or not a short line follows them. */}
+                  <a href={`/services/${o.slug}`} className="group flex min-h-[72px] items-start gap-5 py-4 text-ink no-underline">
+                    <span className="w-[1.5em] flex-none font-heading text-[15px] font-semibold leading-[23px] tabular-nums text-primary">{pad2(i + 1)}</span>
                     <span className="min-w-0 flex-1">
                       <span className={`${h3} block text-[21px] group-hover:text-primary`}>{o.title}</span>
                       {shortOf(o) && <span className="mt-1 block text-[15px] leading-snug text-ink/65">{shortOf(o)}</span>}
                     </span>
-                    <ArrowRight size={18} className="flex-none text-primary transition group-hover:translate-x-1" aria-hidden="true" />
+                    <ArrowRight size={18} className="mt-[2.5px] flex-none text-primary transition group-hover:translate-x-1" aria-hidden="true" />
                   </a>
                 </li>
               ))}
@@ -2087,11 +2093,13 @@ export default function Roofing({ b, path = '' }) {
   const services = servicesOf(b);
   const storm = services.find((s) => s.claim);
   const stormHref = storm ? `/services/${storm.slug}` : null;
+  const accent = onCharcoal(b.brand.accent, b.brand.ink);
   const vars = {
     ...displayVars(b.brand),
     ...brandVars(b.brand),
+    '--accent': accent,
     '--on-primary': onColor(b.brand.primary),
-    '--on-accent': onColor(b.brand.accent),
+    '--on-accent': onColor(accent),
   };
 
   let page;
