@@ -645,7 +645,7 @@ def _build(prospect, root, slug, known):
         about = copy["about"]["text"]
     text_areas = compose.areas_of(text, town, TOWNS)
     towns_said = [compose.plain(t["name"]).split(",")[0].strip() for t in (sheet or {}).get("towns") or []]
-    towns_said = [t for t in towns_said if t and len(t) <= 30 and not re.search(r"\d", t) and not compose.COUNTRY.fullmatch(t)]
+    towns_said = [t for t in towns_said if t and len(t) <= 30 and not re.search(r"\d", t) and not compose.COUNTRY.fullmatch(t) and not compose.REGION.fullmatch(t)]
     areas = list(dict.fromkeys([town] + towns_said))[:12] if towns_said else text_areas
     # The year they were founded is the earliest they give; a later one
     # ("Since 2023") dates something newer, such as a move or a new service.
