@@ -871,7 +871,11 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # "Restorative Dental Services" is "Restorative Dentistry" said again:
         # "dental" is the word for the trade said of the work.
         core = lambda k: re.sub(r"\bdental$", "dentistry", re.sub(r"^general |(?: (?:services?|solutions))?(?: for (?:homes?|homeowners|your home|residences?))?$", "", k))
-        same = next((k for k in found if k != key and (stem(key).startswith(stem(k)) or stem(k).startswith(stem(key)) or core(k) == core(key))), None)
+        # "Willis & Probate" is "Wills & Probate" misspelt: one word of five
+        # letters or more with a letter slipped in or dropped, the rest alike.
+        slip = lambda a, b: len(a) + 1 == len(b) and len(a) >= 5 and any(b[:i] + b[i + 1:] == a for i in range(len(b)))
+        typo = lambda j, k: len(j.split()) == len(k.split()) and sum(x != y for x, y in zip(j.split(), k.split())) == 1 and any(slip(x, y) or slip(y, x) for x, y in zip(j.split(), k.split()) if x != y)
+        same = next((k for k in found if k != key and (stem(key).startswith(stem(k)) or stem(k).startswith(stem(key)) or core(k) == core(key) or typo(k, key))), None)
         if same:
             # The words under the name said again describe the one kept.
             if text and not found[same]["text"]:

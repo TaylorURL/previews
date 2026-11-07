@@ -1331,7 +1331,8 @@ function HomePage(props) {
       <OwnerBand b={b} k={k} ctaLabel={props.ctaLabel} className={processOf(b) ? 'pt-0' : 'pt-0 pb-[clamp(4rem,8vw,6.5rem)]'} />
       <Process b={b} />
       <AboutTeaser b={b} hasTeam={hasTeam} />
-      <Reviews b={b} />
+      {/* The about band without a photo is the surface the reviews card is drawn in, so the card is set below it. */}
+      <Reviews b={b} className={b.about.image ? '' : 'pt-[clamp(4rem,8vw,6.5rem)]'} />
       <Cta {...props} />
     </>
   );
