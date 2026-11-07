@@ -944,6 +944,14 @@ def _hero_style(pick):
 
 SPANISH = re.compile(r"^(?:spanish|espa[nñ]ol)$", re.I)
 
+# A doctor as the health template's isDoctor knows one: a "Dr." name, a
+# D.C. or D.D.S. after it, or a dentist's, chiropractor's or doctor's role.
+DOCTOR = lambda p: bool(
+    re.match(r"dr\.?\s", p.get("name") or "", re.I)
+    or re.search(r"\b(?:D\.?C|D\.?D\.?S|D\.?M\.?D|M\.?D|D\.?O)\.?$", re.sub(r",?\s*$", "", p.get("name") or ""), re.I)
+    or re.search(r"\b(?:dentist|chiropractor|doctor|orthodontist|periodontist|endodontist|prosthodontist|oral surgeon|physician)\b", p.get("role") or "", re.I)
+)
+
 
 def _facts_fields(brand, sheet, copy, google, phone, template, state):
     """The brand's fields that come straight from the proved fact sheet and
@@ -1014,6 +1022,10 @@ def _facts_fields(brand, sheet, copy, google, phone, template, state):
     if credentials:
         brand["credentials"] = credentials[:8]
     owner = next((p for p in sheet.get("people") or [] if p.get("owner")), None)
+    # A practice's owner stands as "Meet the doctor": one who is not a doctor
+    # (a managing partner) gives way to the doctor their site names.
+    if template == "health" and owner and not DOCTOR(owner):
+        owner = next((p for p in sheet.get("people") or [] if DOCTOR(p)), owner)
     if owner:
         block = {"name": owner["name"]}
         if owner.get("role"):
