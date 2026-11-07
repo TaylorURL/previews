@@ -420,7 +420,9 @@ def _faint_strips(arr, ground):
 # shorter than this, once the mark is drawn as tall as its header allows (a
 # two-line tagline under a badge, each line a tenth of it), is a smudge at that
 # size, and is cut away, so the rest of the mark is sized and drawn without it.
-STRIP_READS = 10
+# It is the height a strip is drawn at to read (STRIP_MIN): a tagline the header
+# cannot draw that tall (held to STRIP_MOST) is cut, not set as a fuzzy line.
+STRIP_READS = STRIP_MIN
 
 
 def _small_strips(arr):
