@@ -833,8 +833,9 @@ function Credentials({ g, n, tone }) {
   const facts = g.credentialFacts;
   if (!g.credentials.length && !facts.length) return null;
   const safety = facts.some((f) => /safety/i.test(f.heading));
+  // A lone credential runs the width of its column, so it leaves no empty half beside it.
   const tiles = (items) => (
-    <ul className="grid gap-3 sm:grid-cols-2">
+    <ul className={`grid gap-3 ${items.length > 1 ? 'sm:grid-cols-2' : ''}`}>
       {items.map((c) => (
         <CredentialTile key={`${c.label}${c.detail}`} label={c.label} detail={c.detail} />
       ))}
