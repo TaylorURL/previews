@@ -1138,7 +1138,9 @@ function QuickBook({ b, groups, classic }) {
         <div className="min-w-0">
           <p className="font-heading text-[19px] font-extrabold leading-tight tracking-[-0.01em] text-ink">{unbroken(w.card)}</p>
           <a href={telHref(b.phone)} className="inline-flex min-h-[28px] items-center text-[15px] font-semibold text-[color:var(--pt)] no-underline hover:underline">
-            or call {b.phone}
+            <span>
+              or call <span className="whitespace-nowrap">{b.phone}</span>
+            </span>
           </a>
         </div>
       </div>
@@ -1718,6 +1720,7 @@ const initialism = (word) => /^[^a-z]*[A-Z][^a-z]*$/.test(word) && word !== 'A';
 
 /** A name lowered to run inside a sentence, the towns in it, its initialisms ('I & E') and any word its own text writes as a name keeping their capitals. */
 function lowerName(title, towns, text, own) {
+  if (own.includes(title)) return title;
   const named = namedWords(text, own);
   const lower = title
     .split(/(\s+)/)
@@ -1731,9 +1734,24 @@ function townsOf(b) {
   return [b.town, ...(b.serviceArea || [])];
 }
 
-/** The business's own names, which name no service inside a sentence. */
+/** The business's own names, which name no service inside a sentence, and its own brands, which keep their capitals. */
 function namesOf(b) {
-  return [b.name, b.shortName];
+  return [b.name, b.shortName, ...brandsOf(b)];
+}
+
+/**
+ * The groups that are the business's own brands ('Hawkins Air Conditioning & Refrigeration'): a title whose opening
+ * words its own about words write as a name inside a sentence ('our own brands, Hawkins Air Conditioning and …').
+ */
+function brandsOf(b) {
+  const said = [b.summary, b.about?.text].flat().filter(Boolean).join(' ');
+  return groupsOf(b)
+    .map((g) => g.title)
+    .filter((title) => {
+      const opening = title.split(/\s+/).slice(0, 2).join(' ');
+      if (!/^[A-Z]\S*\s+[A-Z]/.test(opening)) return false;
+      return new RegExp(`[^.!?\\s]\\s+${opening.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`).test(said);
+    });
 }
 
 /**
