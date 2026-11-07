@@ -983,6 +983,36 @@ function Doctor({ b, bg, hasTeam }) {
       </section>
     );
   }
+  // Only a name, a role and credentials: they run across the card in one row,
+  // so no wide empty half is left where a photo or a bio would stand.
+  if (!bio && !others.length) {
+    return (
+      <section className={`py-[clamp(4rem,8vw,6.5rem)] ${bg}`}>
+        <div className={wrap}>
+          <div className="grid gap-7 rounded-[2.25rem] bg-[var(--tint)] p-6 sm:p-10 lg:grid-cols-[auto_minmax(0,1fr)_minmax(0,auto)] lg:items-center lg:gap-10 lg:p-14">
+            <span className="grid size-16 place-items-center rounded-[1.25rem] bg-white text-primary shadow-[0_14px_30px_-20px_rgba(16,32,48,0.5)] lg:size-20">
+              <Stethoscope size={30} strokeWidth={1.5} aria-hidden="true" />
+            </span>
+            <div className="min-w-0">
+              <Eyebrow>{eyebrow}</Eyebrow>
+              <h2 className="font-heading font-display-2 text-[clamp(1.85rem,1.3rem+2vw,2.75rem)] leading-[1.12] text-ink [text-wrap:balance]">{doc.name}</h2>
+              {doc.role && <p className="mt-2 text-[16px] font-semibold text-accent">{doc.role}</p>}
+            </div>
+            {(creds.length > 0 || hasTeam) && (
+              <div className="min-w-0 lg:max-w-md lg:justify-self-end">
+                <CredentialList items={creds} className="lg:justify-end" />
+                {hasTeam && (
+                  <div className={creds.length ? 'mt-6 lg:text-right' : 'lg:text-right'}>
+                    <TextLink href="/team">Meet the whole team</TextLink>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+    );
+  }
   return (
     <section className={`py-[clamp(4rem,8vw,6.5rem)] ${bg}`}>
       <div className={wrap}>
@@ -1253,12 +1283,13 @@ function Closing({ b, tel, ctaLabel, title = 'Ready to book your visit?' }) {
           <div aria-hidden="true" className="absolute -right-24 -top-28 -z-10 size-[26rem] rounded-full" style={{ background: 'radial-gradient(closest-side, rgba(255,255,255,0.16), transparent)' }} />
           <div aria-hidden="true" className="absolute -bottom-48 left-[22%] -z-10 size-[30rem] rounded-full" style={{ background: 'radial-gradient(closest-side, rgba(255,255,255,0.09), transparent)' }} />
           <Mark size={220} strokeWidth={0.8} aria-hidden="true" className="absolute -bottom-10 right-6 -z-10 hidden text-white/10 lg:block" />
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:gap-14">
+          {/* The words and buttons stand clear of the mark, which keeps the band's right side to itself. */}
+          <div className="grid gap-8 lg:pr-64">
             <div className="min-w-0 max-w-2xl">
               <h2 className="font-heading font-display-2 text-[clamp(1.75rem,1.25rem+1.9vw,2.6rem)] leading-tight text-white [text-wrap:balance]">{title}</h2>
               {b.cta?.text && <p className="mt-3 text-[17px] leading-[1.6] text-white/85 sm:text-lg">{b.cta.text}</p>}
             </div>
-            <div className="grid flex-none gap-3 sm:flex sm:flex-wrap lg:mr-24">
+            <div className="grid flex-none gap-3 sm:flex sm:flex-wrap">
               <a href="/contact" className={onColor}>
                 <CalendarCheck size={18} aria-hidden="true" /> {ctaLabel}
               </a>
