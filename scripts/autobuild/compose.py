@@ -376,10 +376,19 @@ ZERO_WIDTH = re.compile(r"[​⁠﻿]")
 # A list item's bullet set in its text ("◦ Audits of entities...") is their
 # page's markup, not their words.
 BULLET = re.compile(r"^[•◦▪▫‣⁃●○■□]\s*")
+# An emoji in a quote ("Raymond is the best🙏.") has no glyph in the site's
+# fonts and draws as a box; it stands for nothing, and so do the joiner,
+# variation selector and keycap mark it is built with.
+EMOJI = re.compile("[\U0001F000-\U0001FAFF⌀-⏿☀-➿⬀-⯿‍︎️⃣]")
 
 
 def plain(text):
     return BULLET.sub("", " ".join(UNDRAWN.sub(" ", ZERO_WIDTH.sub("", str(text or ""))).split()))
+
+
+def unemoji(text):
+    """A quote without its emoji, its words and stops kept as they were."""
+    return re.sub(r"\s+([,.;:!?])", r"\1", " ".join(EMOJI.sub(" ", str(text or "")).split()))
 
 
 def us_phone(text):
