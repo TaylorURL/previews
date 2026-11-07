@@ -90,7 +90,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, ArrowUpRight, ChevronDown, Clock3, Mail, MapPin, Menu, Phone, Plus, Quote, ShieldCheck, Siren, X } from 'lucide-react';
 import { brandVars, displayVars, mapsHref, telHref } from '../site.js';
-import { BrandLogo, EnquiryForm, Facts, Img, Stars, StudioCredit } from './shared.jsx';
+import { BrandLogo, EnquiryForm, Facts, Img, Stars, StudioCredit, sourceOf } from './shared.jsx';
 import { condensed, gather, headlineSize, heroStyleOf, list, nn, palette, specsOf, split, stateCode } from './industrial/data.js';
 import { groupIcon, highlightIcon, industryIcon } from './industrial/icons.js';
 
@@ -1061,10 +1061,12 @@ function Coverage({ b, g, n, tone }) {
           <Label n={n}>Coverage</Label>
           <h2 className={`${h2} text-ink`}>Where we work</h2>
           {g.states.length > 0 && (
-            <ul className="mt-9 grid border-t-2 border-ink sm:grid-cols-2">
+            // One state runs the full width under the rule, and a name with no
+            // postal code ('All 50 states') keeps no empty gutter for one.
+            <ul className={`mt-9 grid border-t-2 border-ink ${g.states.length > 1 ? 'sm:grid-cols-2' : ''}`}>
               {g.states.map((s) => (
                 <li key={s} className="flex items-baseline gap-4 border-b border-line py-4 sm:[&:nth-child(even)]:pl-6">
-                  <span className="w-9 flex-none font-mono text-[14px] text-[color:var(--mark)]">{stateCode(s) || ''}</span>
+                  {stateCode(s) && <span className="w-9 flex-none font-mono text-[14px] text-[color:var(--mark)]">{stateCode(s)}</span>}
                   <span className={`${display} text-[24px] leading-tight text-ink`}>{s}</span>
                 </li>
               ))}
@@ -1140,8 +1142,8 @@ function Reviews({ b, g, n, tone }) {
               <Quote size={24} className="text-[color:var(--mark)]" aria-hidden="true" />
               <blockquote className="m-0 mb-6 mt-4 text-[16.5px] leading-[1.65] text-ink">{r.text}</blockquote>
               <figcaption className="mt-auto flex flex-wrap items-center justify-between gap-2 border-t border-line pt-4 text-[15px]">
-                <span className="font-semibold text-ink">{r.author}</span>
-                {r.source && <span className={`${mono} text-[11px] text-muted`}>{r.source}</span>}
+                {r.author && <span className="font-semibold text-ink">{r.author}</span>}
+                {sourceOf(r) && <span className={`${mono} text-[11px] text-muted`}>{sourceOf(r)}</span>}
               </figcaption>
             </figure>
           ))}

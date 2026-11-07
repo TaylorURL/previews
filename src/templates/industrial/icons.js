@@ -11,6 +11,7 @@ import {
   Cable,
   Car,
   ChartLine,
+  Church,
   CircuitBoard,
   ClipboardList,
   Clock3,
@@ -24,7 +25,7 @@ import {
   Fuel,
   Gauge,
   HardHat,
-  Hexagon,
+  GraduationCap,
   Hospital,
   House,
   Landmark,
@@ -40,6 +41,7 @@ import {
   Settings,
   ShieldCheck,
   Ship,
+  ShoppingCart,
   Snowflake,
   Sun,
   Thermometer,
@@ -126,14 +128,21 @@ const INDUSTRY = [
   [/storage|tank|terminal|warehouse/i, Container],
   [/agri|farm/i, Tractor],
   [/research|lab|scien/i, Microscope],
+  [/educat|school|universit|college|campus/i, GraduationCap],
+  [/financ|bank|credit union|insurance/i, Landmark],
+  [/grocer|supermarket|convenience/i, ShoppingCart],
+  [/relig|church|worship|faith|ministr/i, Church],
   [/commercial|retail|office|corporate/i, Building2],
   [/manufactur|industrial|fabricat|steel|metal/i, Factory],
   [/mro|maintenance|repair/i, Wrench],
 ];
 
-/** An industry's icon, read off its name; a hex head when nothing fits. */
+/**
+ * An industry's icon, read off its name; a client's building when nothing
+ * fits, since a bare hex head reads as a missing picture.
+ */
 export function industryIcon(name) {
-  return INDUSTRY.find(([re]) => re.test(name))?.[1] || Hexagon;
+  return INDUSTRY.find(([re]) => re.test(name))?.[1] || Building2;
 }
 
 const HIGHLIGHT = [
