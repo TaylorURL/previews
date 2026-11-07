@@ -238,14 +238,15 @@ export function specsOf(b, g) {
     specs.push({ label: 'Serving', value: `${shown.join(', ')}${more ? ` and ${more} more` : ''}` });
   }
   if (g.industries.length) {
-    // As many names as fit one short line, the rest counted after them.
+    // As many names as fit one short line. The rest are not counted after
+    // them ('and 1 more' reads as a placeholder); the Industries band, drawn
+    // whenever there are two or more, names them all.
     const names = [];
     for (const { name } of g.industries) {
       if (names.length && [...names, name].join(' · ').length > 40) break;
       names.push(name);
     }
-    const more = g.industries.length - names.length;
-    specs.push({ label: 'Industries', value: `${names.join(' · ')}${more ? ` and ${more} more` : ''}` });
+    specs.push({ label: 'Industries', value: names.join(' · ') });
   }
   if (b.emergency?.title) specs.push({ label: 'After hours', value: b.emergency.title });
   else if (list(b.hours)[0]) specs.push({ label: b.hours[0][0], value: b.hours[0][1] });
