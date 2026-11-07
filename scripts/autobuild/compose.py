@@ -518,6 +518,10 @@ def gist(text, limit):
         listed = bool(re.match(r"(?:[\w'’-]+,?\s+){1,3}(?:and|or)\s", rest) or (listed and re.match(r"(?:and|or)\s", rest)))
         if not listed:
             break
+    # A clause that opens a pair ("We pride ourselves on not only offering
+    # storage units in Pasadena") has its point in the half after "but".
+    if re.search(r"\bnot only\b", head, re.I) and not re.search(r"\bbut\b", head, re.I):
+        return ""
     return head + "." if len(head.split()) >= 4 and len(head) < limit else ""
 
 
@@ -758,8 +762,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # "Select a Fence Style", "Keep the Wheels Turning", "Upgrade to a Roof
         # That Lasts", "Compare AC Equipment", "Take the Life Insurance Quiz")
         # is a call to action or a slogan, not a service, and one that names a
-        # warranty ("Warranty on Fence Materials") is a promise.
-        if re.match(r"(find|rent|reserve|book|get|browse|shop|keep|let|stay|click|tap|compare|explore|discover|view|take)\b|(select|choose) (a|an|the|your)\b|upgrade (to|your)\b", name, re.I):
+        # warranty ("Warranty on Fence Materials") is a promise. So is one that
+        # sorts their listings ("Filter Units", "Search Sizes"); a part named
+        # for its work ("Filter Cleaning") is still a service.
+        if re.match(r"(find|rent|reserve|book|get|browse|shop|keep|let|stay|click|tap|compare|explore|discover|view|take)\b|(select|choose) (a|an|the|your)\b|upgrade (to|your)\b|(filter|sort|search) (units?|results|listings|sizes|by)\b", name, re.I):
             return
         # One that ends on a full stop ("Click shingles to compare roof
         # colors.") is a sentence of their page, not the name of a service.
