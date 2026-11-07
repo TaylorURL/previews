@@ -229,13 +229,15 @@ export function specsOf(b, g) {
   if (b.town) specs.push({ label: 'Based in', value: `${b.town}${b.state ? `, ${b.state}` : ''}` });
   if (g.states.length) specs.push({ label: g.states.length === 1 ? 'State served' : 'States served', value: statesLine(g.states) });
   else if (g.areas.filter((a) => a !== b.town).length >= 1) {
+    // The places beyond the base, which 'Based in' already names, as many as
+    // fit one short line. The rest are not counted after them ('and 1 more'
+    // reads as a placeholder); the Where we work section names them all.
     const shown = [];
-    for (const a of g.areas) {
+    for (const a of g.areas.filter((a) => a !== b.town)) {
       if (shown.length && [...shown, a].join(', ').length > 30) break;
       shown.push(a);
     }
-    const more = g.areas.length - shown.length;
-    specs.push({ label: 'Serving', value: `${shown.join(', ')}${more ? ` and ${more} more` : ''}` });
+    specs.push({ label: 'Serving', value: shown.join(', ') });
   }
   if (g.industries.length) {
     // As many names as fit one short line. The rest are not counted after
