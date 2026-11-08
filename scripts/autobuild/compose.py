@@ -529,6 +529,12 @@ def gist(text, limit):
     if cut or not sentences(text):
         return cut
     parts = re.split(r"([,;:–—]\s)", sentences(text)[0])
+    # A town's state ("The staff in Mont Belvieu, TX, always has time") is
+    # part of the town's name; the commas either side of it part no clause.
+    for i in range(len(parts) - 1, 1, -2):
+        if parts[i - 1].startswith(",") and parts[i].rstrip(".!? ") in set(STATES) | set(STATES.values()):
+            end = i + 3 if i + 1 < len(parts) and parts[i + 1].startswith(",") else i + 1
+            parts[i - 2:end] = ["".join(parts[i - 2:end])]
     if LEADING.match(parts[0]):
         return ""
     listed = False
