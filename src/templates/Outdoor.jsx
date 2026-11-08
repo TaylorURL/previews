@@ -556,12 +556,15 @@ function textShade(hex) {
   return c;
 }
 
-/** The headline's second half on the dark ground: the accent or main color where it reads there, lifted toward white until it does. */
-function highlightOn(brand, deep) {
+/**
+ * The headline's second half on the dark ground: the accent or main color where it reads there, lifted toward white until it does.
+ * Over a photo the shade lets the photo through, so the ground is lighter and as green as the garden; there `min` is raised.
+ */
+function highlightOn(brand, deep, min = 4.5) {
   for (const base of [brand.accent, brand.primary].map((v) => hexOr(v, null)).filter(Boolean)) {
     for (const lift of [0, 0.2, 0.4]) {
       const c = lift ? mixHex(base, '#ffffff', lift) : base;
-      if (contrast(c, deep) >= 4.5) return c;
+      if (contrast(c, deep) >= min) return c;
     }
   }
   return '#ffffff';
@@ -595,6 +598,7 @@ export default function Outdoor({ b, path = '' }) {
     '--deep': deep,
     '--pt': textShade(primary),
     '--hl': highlightOn(brand, deep),
+    '--hl-photo': highlightOn(brand, deep, 7),
     '--cta': primary,
     '--cta-ink': onColor(primary),
     '--cta-disc': disc(onColor(primary)),
