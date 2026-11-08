@@ -2,9 +2,9 @@
 
 Preview websites built in a local business's own brand, linked from the outreach email or text TaylorURL sends them.
 
-Each preview is made from the business's name, logo, colors, photos and details. It lives at `<business>.taylorurl.com`, has a bar across the top saying it's a preview, and is hidden from search engines. A brand file marked `draft` is a rough draft someone asked for, not an outreach preview. Its bar says so.
+Each preview is made from the business's name, logo, colors, photos and details. It lives at `<business>.taylorurl.com`, has a bar across the top saying it's a preview, and is hidden from search engines.
 
-Those live in one brand file per business, `src/brands/<slug>.json`, with the details, colors, fonts, logo and copy. Photos go in `public/brands/<slug>/` as webp at 800 and 1600 wide. Every fact comes from the business's own website and Google listing. Nothing is borrowed from another business, and anything unknown is left out rather than guessed.
+Each business is one brand file, `src/brands/<slug>.json`, with its details, colors, fonts, logo and copy. Photos go in `public/brands/<slug>/` as webp at 800 and 1600 wide. Every fact comes from the business's own website and Google listing. Nothing is borrowed from another business, and anything unknown is left out rather than guessed. A brand file marked `draft` is a rough draft someone asked for, not an outreach preview, and its bar says so.
 
 `vercel.json` rewrites `<slug>.taylorurl.com` to `/b/<slug>`, and every path gets `X-Robots-Tag: noindex, nofollow`. A template name like plumbing or salon resolves to that template's sample business. Each brand is its own chunk, so a page only loads one business, and `scripts/prerender.js` writes every page of every business after the build.
 
