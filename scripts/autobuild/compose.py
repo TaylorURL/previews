@@ -778,12 +778,12 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
             return
         # A heading that opens on a bidding verb ("Find Storage", "Rent a Unit",
         # "Select a Fence Style", "Keep the Wheels Turning", "Upgrade to a Roof
-        # That Lasts", "Compare AC Equipment", "Take the Life Insurance Quiz")
-        # is a call to action or a slogan, not a service, and one that names a
+        # That Lasts", "Compare AC Equipment", "Take the Life Insurance Quiz",
+        # "Prevent Pool Problems Before They Start") is a call to action or a slogan, not a service, and one that names a
         # warranty ("Warranty on Fence Materials") is a promise. So is one that
         # sorts their listings ("Filter Units", "Search Sizes"); a part named
         # for its work ("Filter Cleaning") is still a service.
-        if re.match(r"(find|rent|reserve|book|get|browse|shop|keep|let|stay|click|tap|compare|explore|discover|view|take)\b|(select|choose) (a|an|the|your)\b|upgrade (to|your)\b|(filter|sort|search) (units?|results|listings|sizes|by)\b", name, re.I):
+        if re.match(r"(find|rent|reserve|book|get|browse|shop|keep|let|stay|click|tap|compare|explore|discover|view|take|prevent|avoid)\b|(select|choose) (a|an|the|your)\b|upgrade (to|your)\b|(filter|sort|search) (units?|results|listings|sizes|by)\b", name, re.I):
             return
         # One that ends on a full stop ("Click shingles to compare roof
         # colors.") is a sentence of their page, not the name of a service.
@@ -806,9 +806,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         if re.match(r"(?:(?:high|top|premium|best)[- ]?quality|quality|premium|durable|reliable) (?:materials?|parts|equipment|tools|supplies|products)\b", name, re.I):
             return
         # One that praises the trade as a whole ("Quality Roofing and
-        # Remodeling Services", "Reliable Roofing Solutions") is the heading
-        # over their services, said as a slogan.
-        if re.match(r"(?:(?:high|top|best)[- ]?quality|quality|premium|reliable|trusted|dependable|affordable)\s", name, re.I) and re.search(r"\b(?:services|solutions)$", name, re.I):
+        # Remodeling Services", "Reliable Roofing Solutions", "Consistent and
+        # Reliable Pool Service") is the heading over their services, said as
+        # a slogan.
+        if re.match(r"(?:(?:high|top|best)[- ]?quality|quality|premium|reliable|trusted|dependable|affordable|consistent)\s", name, re.I) and re.search(r"\b(?:services?|solutions)$", name, re.I):
             return
         # So is one that opens on praise of the work ("Extraordinary Real
         # Estate Closings", "Exceptional Roofing", "State-Of-The-Art Dental
