@@ -476,6 +476,13 @@ JOB_WORDS = {"service", "services", "repair", "repairs", "install", "installatio
 SIDE_LINES = (r"\bice (?:machine|maker)", r"\brefrigerat", r"\bfreezer", r"\bgenerator", r"\bwater heater",
               r"\bpools?\b", r"\bhot tub", r"\bsolar", r"\bappliance")
 
+# Built work a photo can show that is a trade of its own (a paver walkway on a
+# tree service's site): one no service of theirs names, in a photo the look
+# says shows nothing of their own trade, is not a picture of any service they
+# offer. The file name is not asked, as a theme's ("Landscaping-Img6") is not.
+OTHER_WORK = (r"\bwalkway", r"\bpavers?\b", r"\bpatios?\b", r"\bdecks?\b", r"\bpergola", r"\bretaining walls?\b",
+              r"\bdriveway", r"\bfenc")
+
 # What the look says of a photo whose person is cut to an arm and a torso
 # ("Person is cropped to body parts, so it works better as a secondary
 # image"): fine on a card, but the hero draws it large and first.
@@ -830,7 +837,8 @@ def _build(prospect, root, slug, known):
         # A photo whose file name or look names one service's own word (a
         # generator, a panel) shows that service, so it goes to that service's
         # page or to none; the others go in order to the pages left.
-        # A photo of a machine none of their services is of goes to no page.
+        # A photo of a machine none of their services is of goes to no page, and
+        # so does one of another trade's built work that never names theirs.
         # A photo that names no service shows their trade at large (a
         # painter's living room), so it goes only to a page whose service
         # names that trade, not to a side job named for something else (a
@@ -842,7 +850,9 @@ def _build(prospect, root, slug, known):
         offered = " ".join(f"{s['title']} {s.get('text') or ''}" for s in services).lower()
         for n in list(wide):
             said = _said(pictures[n])
-            if any(re.search(p, said) and not re.search(p, offered) for p in SIDE_LINES):
+            if any(re.search(p, said) and not re.search(p, offered) for p in SIDE_LINES) or \
+                    (any(re.search(p, said) and not re.search(p, offered) for p in OTHER_WORK)
+                     and not (trade and re.search(trade, ((pictures[n]["look"] or {}).get("why") or "").lower()))):
                 wide.remove(n)
                 continue
             owner = next((s["title"] for s in services if any(re.search(rf"\b{w}", said) for w in _own_words(s["title"], services))), None)
