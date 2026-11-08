@@ -800,9 +800,13 @@ function TrustRow({ b }) {
   );
 }
 
-/** The reviews quoted word for word, three on the home page, each naming where it was left. */
+/**
+ * The reviews quoted word for word, three on the home page, each naming where it was left.
+ * A testimonial their site gives without a name is credited to a customer of the
+ * business, so its card never closes on the source alone like a placeholder.
+ */
 function Reviews({ b, surface = false, max = 3, more = false }) {
-  const reviews = reviewsOf(b);
+  const reviews = reviewsOf(b).map((r) => (String(r.author || '').trim() ? r : { ...r, author: `A ${b.shortName || b.name} customer` }));
   if (!reviews.length) return null;
   return (
     <section id="reviews" className={`${pad} ${surface ? 'bg-surface' : 'bg-white'}`}>
