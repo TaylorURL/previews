@@ -456,8 +456,19 @@ def _assemble(kept, answer, short, town, sheet, dropped, corpus):
             blurbs[compose.plain(blurb["service"]).lower()] = {"text": said, "short": text(f"blurbs.{i}.short")}
     copy["blurbs"] = blurbs
     paragraphs = []
+    # A sentence the story already told, or that an earlier sentence opens on
+    # ("Fabrication is our passion." after "Fabrication is our passion, from
+    # overcoming challenges..."), is their site's copy-and-paste, told once.
+    told = []
+    bare = lambda t: " ".join(re.findall(r"[a-z0-9’']+", t.lower()))
     for p, paragraph in enumerate((answer.get("about") or {}).get("paragraphs") or []):
-        said = " ".join(text(f"about.paragraphs.{p}.{j}") for j in range(len(paragraph or [])) if text(f"about.paragraphs.{p}.{j}"))
+        kept = []
+        for j in range(len(paragraph or [])):
+            line = text(f"about.paragraphs.{p}.{j}")
+            if line and not any(t == bare(line) or t.startswith(bare(line) + " ") for t in told):
+                kept.append(line)
+                told.append(bare(line))
+        said = " ".join(kept)
         if said:
             paragraphs.append(said)
     if paragraphs:
