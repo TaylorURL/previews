@@ -1761,7 +1761,7 @@ function Footer({ b, nav, tel }) {
           {extraPhonesOf(b).length > 0 ? (
             <PhoneLines lines={phonesOf(b)} styles={{ list: 'flex-col gap-0', item: 'gap-x-2 text-primary hover:underline', label: 'text-muted', number: 'font-semibold' }} />
           ) : (
-            <a href={tel} className={`${linkCls} font-semibold !text-primary`}>
+            <a href={tel} className={`${linkCls} !flex w-fit font-semibold !text-primary`}>
               {b.phone}
             </a>
           )}
