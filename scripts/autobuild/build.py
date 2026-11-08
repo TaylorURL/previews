@@ -530,7 +530,9 @@ def _build(prospect, root, slug, known):
     css = collect.css_text(pages)
     sample = _sample(root, template)
 
-    name = compose.plain(prospect["name"])
+    # A listing name can end on a stray stop ("Driven Industrial Specialists
+    # Corp,"); a comma, colon or dash there ends no name.
+    name = compose.plain(prospect["name"]).rstrip(" ,;:-") or compose.plain(prospect["name"])
     short = compose.short_name(name)
     phone = compose.us_phone(prospect.get("phone"))
     street, town, state, zip_ = compose.address_parts(prospect)
