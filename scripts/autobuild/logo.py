@@ -573,11 +573,11 @@ def _edges(arr, ground):
     return np.maximum(across, down)
 
 
-def _stands(arr, ground):
+def _stands(arr, ground, ratio=LEGIBLE_RATIO):
     """Which of the mark's inked pixels stand out from `ground`, by contrast ratio."""
     lum = _luminance(arr[..., :3].astype(np.float32))[arr[..., 3] > 127]
     g = float(_luminance(np.array(ground, dtype=np.float32)))
-    return (np.maximum(lum, g) + 0.05) / (np.minimum(lum, g) + 0.05) >= LEGIBLE_RATIO
+    return (np.maximum(lum, g) + 0.05) / (np.minimum(lum, g) + 0.05) >= ratio
 
 
 def reads(arr, native):
@@ -598,9 +598,12 @@ def reads(arr, native):
     logo set in tints too light to read on the white it was drawn for scores
     the same as a black one. So each level is also no more than the share of
     the mark's ink that stands out on that level's own ground, read as the
-    page reads it. A pale mark then falls below the share the page draws its
-    own colors at, and its one-color cut is painted in the ink of the spot
-    instead, which is what such a mark needs."""
+    page reads it. That ink is held to the ratio words need to read at the
+    size a header draws them (FAINT_RATIO), not the looser one a mark's outline
+    is told apart by: pale gray letters beside an orange disc clear the 1.8 an
+    outline needs on white and still fade into a white header. A pale mark then falls below the
+    share the page draws its own colors at, and its one-color cut is painted in
+    the ink of the spot instead, which is what such a mark needs."""
     own = _edges(arr, native)
     total = float(own.sum())
     ink = _stands(arr, native)
@@ -611,7 +614,8 @@ def reads(arr, native):
         stands = _stands(arr, (gray, gray, gray))
         edges = float(np.minimum(own, there).sum()) / total if total else 0.0
         kept = float((ink & stands).sum()) / ink.sum() if ink.any() else 0.0
-        reads_there = float(stands.mean()) if stands.size else 0.0
+        legible = _stands(arr, (gray, gray, gray), FAINT_RATIO)
+        reads_there = float(legible.mean()) if legible.size else 0.0
         out.append(round(min(edges, kept, reads_there), 3))
     return out
 
