@@ -1192,8 +1192,13 @@ function OwnerBand({ b, k, ctaLabel, className = '' }) {
   );
 }
 
+/**
+ * A testimonial their site gives without a name is credited to a client of the
+ * business, so the caption never reads as a bare "Website testimonial". One
+ * quote on its own is set larger and centred against the rating column.
+ */
 function Reviews({ b, className = '', max = 3 }) {
-  const reviews = reviewsOf(b).slice(0, max);
+  const reviews = reviewsOf(b).slice(0, max).map((r) => (String(r.author || '').trim() ? r : { ...r, author: `A ${b.shortName || b.name} client` }));
   const rated = b.rating && b.reviewCount;
   // A rating with no words to quote is the stats strip's, not a panel of its own.
   if (!reviews.length) return null;
@@ -1222,9 +1227,9 @@ function Reviews({ b, className = '', max = 3 }) {
             )}
           </div>
           {first && (
-            <div className="min-w-0">
-              <figure className="m-0 pb-7">
-                <blockquote className="font-heading text-[clamp(1.15rem,1rem+0.6vw,1.4rem)] leading-[1.6] text-ink">&ldquo;{first.text}&rdquo;</blockquote>
+            <div className={`min-w-0 ${rest.length ? '' : 'lg:self-center'}`}>
+              <figure className={`m-0 ${rest.length ? 'pb-7' : ''}`}>
+                <blockquote className={`font-heading text-ink ${rest.length ? 'text-[clamp(1.15rem,1rem+0.6vw,1.4rem)] leading-[1.6]' : 'text-[clamp(1.3rem,1rem+1.2vw,2rem)] leading-[1.45]'}`}>&ldquo;{first.text}&rdquo;</blockquote>
                 <figcaption className="mt-4 text-[15px] font-semibold text-muted">
                   {first.author}
                   {sourceOf(first) && <span className="font-normal">{first.author ? ' \u00b7 ' : ''}{sourceOf(first)}</span>}
