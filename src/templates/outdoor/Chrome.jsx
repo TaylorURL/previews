@@ -311,8 +311,10 @@ export function Footer({ b, groups, deep, hasWork }) {
             ))}
             {b.email && (
               <li>
-                <a href={`mailto:${b.email}`} className={`${link} gap-2 break-all`}>
-                  <Mail size={16} className="flex-none" aria-hidden="true" /> {b.email}
+                {/* The address may break after its @, never inside a word, unless a part alone is wider than the column. */}
+                <a href={`mailto:${b.email}`} className={`${link} gap-2 [overflow-wrap:anywhere]`}>
+                  <Mail size={16} className="flex-none" aria-hidden="true" />
+                  <span className="min-w-0">{b.email.split('@').flatMap((p, i) => (i ? ['@', <wbr key={i} />, p] : [p]))}</span>
                 </a>
               </li>
             )}
