@@ -204,6 +204,7 @@ import {
   ownerOf,
   phonesOf,
   reviewsOf,
+  sourceOf,
   stepsOf,
   telling,
   toneOf,
@@ -803,10 +804,17 @@ function TrustRow({ b }) {
 /**
  * The reviews quoted word for word, three on the home page, each naming where it was left.
  * A testimonial their site gives without a name is credited to a customer of the
- * business, so its card never closes on the source alone like a placeholder.
+ * business, so its card never closes on the source alone like a placeholder. The
+ * credit names the business after "of", so a name opening on "A" isn't doubled
+ * ("A A Phase Electric customer"), and drops "Website testimonial", which the
+ * credit already says.
  */
 function Reviews({ b, surface = false, max = 3, more = false }) {
-  const reviews = reviewsOf(b).map((r) => (String(r.author || '').trim() ? r : { ...r, author: `A ${b.shortName || b.name} customer` }));
+  const reviews = reviewsOf(b).map((r) =>
+    String(r.author || '').trim()
+      ? r
+      : { ...r, author: `A customer of ${b.shortName || b.name}`, ...(sourceOf(r) === 'Website testimonial' ? { source: '', where: '' } : {}) }
+  );
   if (!reviews.length) return null;
   return (
     <section id="reviews" className={`${pad} ${surface ? 'bg-surface' : 'bg-white'}`}>
