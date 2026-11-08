@@ -1,0 +1,125 @@
+{
+  "template": "outdoor",
+  "preview": true,
+  "name": "A1 Painting",
+  "shortName": "A1 Painting",
+  "phone": "(713) 906-4663",
+  "email": "tim@nicepainter.com",
+  "address": "1942 W Gray St #1074",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77019",
+  "rating": 5,
+  "reviewCount": 58,
+  "brand": {
+    "primary": "#dd3333",
+    "primaryDeep": "#a31b1b",
+    "accent": "#e04b4b",
+    "ink": "#261c22",
+    "surface": "#fdf3f3",
+    "muted": "#5b6470",
+    "line": "#e1dfe0",
+    "heading": "'Bricolage Grotesque', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+  },
+  "heroStyle": "type",
+  "tone": "bold",
+  "hero": {
+    "eyebrow": "A1 Painting · Houston",
+    "title": "On an exterior paint job, prep is 75% of the work.",
+    "lead": "A1 Painting has 20 plus years of painting the inside and outside of homes in Houston, and we paint commercial properties too.",
+    "titleAccent": "We do it right before any paint goes on."
+  },
+  "serviceArea": [
+    "Houston",
+    "West University",
+    "Bellaire",
+    "River Oaks",
+    "Afton Oaks",
+    "Heights",
+    "Memorial Park",
+    "Tanglewood",
+    "Galleria",
+    "Memorial",
+    "Upper Kirby",
+    "Uptown"
+  ],
+  "highlights": [
+    {
+      "title": "Free estimates",
+      "text": "We give free, personalized estimates.",
+      "icon": "dollar"
+    },
+    {
+      "title": "Homes and businesses",
+      "text": "We do residential and commercial, interior and exterior painting.",
+      "icon": "building"
+    },
+    {
+      "title": "We paint anything",
+      "text": "If it can be painted, we paint it.",
+      "icon": "check"
+    },
+    {
+      "title": "20 plus years",
+      "text": "We have painted the exterior and interior of Houston homes for more than 20 years.",
+      "icon": "calendar"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Bobby G.",
+      "text": "I needed a painter near me, A1 was there and did a fantastic exterior paint job!",
+      "source": "their site"
+    }
+  ],
+  "ask": "quote",
+  "summary": "A1 Painting does interior, exterior and commercial painting and drywall repair for Houston, River Oaks and Bellaire.",
+  "groups": [
+    {
+      "slug": "interior-painting",
+      "title": "Interior Painting",
+      "icon": "home",
+      "summary": "We follow a methodical approach to each interior house painting project.",
+      "intro": "We follow a methodical approach to each interior house painting project."
+    },
+    {
+      "slug": "commercial-painting",
+      "title": "Commercial Painting",
+      "icon": "building",
+      "summary": "A fresh coat of paint improves the aesthetics of your commercial properties.",
+      "intro": "Our pro commercial painters deliver quality. A fresh coat of paint improves the aesthetics of your commercial properties. We have the know how to successfully and safely perform commercial painting projects."
+    },
+    {
+      "slug": "drywall-repair",
+      "title": "Drywall Repair",
+      "icon": "home",
+      "summary": "A1 Painting is experienced in fixing all types of drywall.",
+      "intro": "A1 Painting is experienced in fixing all types of drywall."
+    },
+    {
+      "slug": "epoxy-flooring",
+      "title": "Epoxy Flooring",
+      "icon": "shield",
+      "summary": "We apply a high quality, stain-resistant floor coating.",
+      "intro": "We apply a high quality, stain-resistant floor coating."
+    },
+    {
+      "slug": "wallpaper-removal",
+      "title": "Wallpaper Removal",
+      "icon": "home",
+      "summary": "We remove wallpaper from your walls.",
+      "intro": "We remove wallpaper from your walls."
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "20 plus years painting Houston homes, inside and out.",
+    "text": [
+      "Most Houston homeowners have busy work schedules and just don't have the time to paint the outside or the inside of their house, so we do it for them.",
+      "If it can be painted, we paint it, and we also work for commercial properties.",
+      "During the estimate, we assess your problems and recommend a plan that fits your budget."
+    ]
+  }
+}
