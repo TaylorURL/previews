@@ -476,6 +476,12 @@ JOB_WORDS = {"service", "services", "repair", "repairs", "install", "installatio
 SIDE_LINES = (r"\bice (?:machine|maker)", r"\brefrigerat", r"\bfreezer", r"\bgenerator", r"\bwater heater",
               r"\bpools?\b", r"\bhot tub", r"\bsolar", r"\bappliance")
 
+# What the look says of a photo whose person is cut to an arm and a torso
+# ("Person is cropped to body parts, so it works better as a secondary
+# image"): fine on a card, but the hero draws it large and first.
+OFF_HERO = (r"\bbody parts?\b", r"\bsecondary\b", r"\bheadless\b", r"\bhead(?:s)? (?:is |are )?(?:cut|cropped)",
+            r"\b(?:no|without a) (?:head|face)\b", r"\bfaceless\b")
+
 # The trade's own work under names that do not say the trade: a concrete
 # contractor's driveway, parking lot or foundation is a pour like any other,
 # so a photo of their trade at large belongs on that page too.
@@ -592,7 +598,9 @@ def _build(prospect, root, slug, known):
             _shown.append((os.path.join(folder, f"{name}-800.webp").replace(os.sep, "/"), images.ahash(item["image"])))
         return True
 
-    heroes = [p for p in photos if _fits(p, "band")] + [p for p in photos if _fits(p, "hero") and not _fits(p, "band")]
+    # A photo the look says is cut to body parts is left to the cards.
+    framed = [p for p in photos if not any(re.search(w, ((p["look"] or {}).get("why") or "").lower()) for w in OFF_HERO)]
+    heroes = [p for p in framed if _fits(p, "band")] + [p for p in framed if _fits(p, "hero") and not _fits(p, "band")]
     hero_pick = next((p for p in heroes if place(p, "hero")), None)
     for item in [p for p in photos if p is not hero_pick and _fits(p, "card")]:
         if len(names) - bool(hero_pick) >= 5:
