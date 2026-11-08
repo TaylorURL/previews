@@ -57,14 +57,14 @@ function Proof({ b, dark = true, ratingClass = 'flex', className = '' }) {
   );
 }
 
-function Headline({ b, type = false, className = '' }) {
+function Headline({ b, type = false, hl = 'text-[color:var(--hl)]', className = '' }) {
   return (
     <h1 className={`${heroTitle} ${titleSize(b, type)} ${className}`}>
       <Unbroken>{b.hero.title}</Unbroken>
       {b.hero.titleAccent && (
         <>
           {' '}
-          <span className="text-[color:var(--hl)]">
+          <span className={hl}>
             <Unbroken>{b.hero.titleAccent}</Unbroken>
           </span>
         </>
@@ -146,9 +146,11 @@ export function HomeHero({ b }) {
           <RatingCard b={b} />
         )}
       </div>
-      <div className={`relative col-start-1 row-start-1 self-end px-gutter pb-2 lg:row-start-2 lg:pb-0 lg:pt-16 ${edge} ${full ? 'lg:max-w-[64rem]' : 'lg:pr-14 xl:pr-20'}`}>
+      {/* Over the photo the headline keeps to the measure of the lead, inside the shade, and its coloured half is held to the
+          stricter --hl-photo; beside the photo on a large screen it is on the flat dark ground again. */}
+      <div className={`relative col-start-1 row-start-1 self-end px-gutter pb-2 lg:row-start-2 lg:pb-0 lg:pt-16 ${edge} ${full ? 'lg:max-w-[52rem]' : 'lg:pr-14 xl:pr-20'}`}>
         <Eyebrow light>{b.hero.eyebrow}</Eyebrow>
-        <Headline b={b} className="text-white" />
+        <Headline b={b} hl={full ? 'text-[color:var(--hl-photo)]' : 'text-[color:var(--hl-photo)] lg:text-[color:var(--hl)]'} className="text-white" />
       </div>
       <div className={`col-start-1 row-start-2 px-gutter pb-12 pt-5 lg:row-start-3 lg:pb-16 ${edge} ${full ? 'lg:max-w-[52rem]' : 'lg:pr-14 xl:pr-20'}`}>
         {b.hero.lead && <p className="max-w-[36rem] text-[17px] leading-[1.65] text-white/80 sm:text-[19px]">{b.hero.lead}</p>}
