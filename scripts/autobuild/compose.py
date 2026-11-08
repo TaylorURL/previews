@@ -329,6 +329,9 @@ MAILTO = re.compile(r"^mailto:([^?\s]+@[^?\s]+)", re.I)
 # legal@ is not among them: at a law firm it is the address clients write to.
 NOT_FOR_CUSTOMERS = re.compile(r"^(ir|investors?|investor[._-]?relations|shareholders?|media|press|pr|careers?|jobs|recruiting|hr|privacy|compliance|ethics|webmaster|no-?reply|do-?not-?reply"
                                r"|[^@]*(human[._-]?resources|recruit(ing|ment|er)?|careers|hiring|payroll)[^@]*)@", re.I)
+# A site theme's stand-in address, left in with their domain after it
+# ('yourdesign@', 'yourname@', 'name@', 'john.doe@'), is no one's mailbox.
+STAND_IN_MAIL = re.compile(r"^(your[._-]?(name|e?mail|design|company|business|site|website|domain)?|you|name|email|e-?mail[._-]?address|user(name)?|someone|test|john[._-]?doe|jane[._-]?doe)@", re.I)
 
 
 # A line a business keeps for job seekers, its staff or a fax machine is not the
@@ -347,11 +350,11 @@ def email_of(stored, pages, business):
     listed = [m.group(1).lower() for page in pages for href, _ in page.links if (m := MAILTO.match(href.strip()))]
     if isinstance(business.get("email"), str):
         listed.append(business["email"].lower().removeprefix("mailto:"))
-    listed = [e for e in listed if not NOT_FOR_CUSTOMERS.match(e)]
+    listed = [e for e in listed if not NOT_FOR_CUSTOMERS.match(e) and not STAND_IN_MAIL.match(e)]
     own = lambda e: e.rsplit("@", 1)[-1] == host
     # A listing that stores the link ("mailto:info@...") stores the address in it.
     stored = plain(stored).lower().removeprefix("mailto:")
-    if NOT_FOR_CUSTOMERS.match(stored):
+    if NOT_FOR_CUSTOMERS.match(stored) or STAND_IN_MAIL.match(stored):
         stored = ""
     if stored and (own(stored) or FREE_MAIL.search(stored) or stored in listed):
         return stored
