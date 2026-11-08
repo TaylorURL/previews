@@ -210,7 +210,9 @@ function GroupPage({ b, groups, group }) {
         image={group.image}
         imageAlt={group.imageAlt}
         aside={
-          services.length > 1 && (
+          // Its own services to jump to; else, so the dark ground is not left
+          // half empty, the business's other work as the about page lists it.
+          services.length > 1 ? (
             <nav aria-label={`${group.title} services`} className="hidden rounded-[28px] border border-white/15 bg-white/[0.06] p-7 backdrop-blur-sm lg:block">
               <p className="font-heading text-[13px] font-bold uppercase tracking-[0.18em] text-white/60">On this page</p>
               <ol className="mt-3 grid">
@@ -224,6 +226,26 @@ function GroupPage({ b, groups, group }) {
                 ))}
               </ol>
             </nav>
+          ) : (
+            groups.length > 1 && (
+              <nav aria-label="What we do" className="hidden rounded-[28px] border border-white/15 bg-white/[0.06] p-7 backdrop-blur-sm lg:block">
+                <p className="font-heading text-[13px] font-bold uppercase tracking-[0.18em] text-white/60">What we do</p>
+                <ul className="mt-3 grid">
+                  {groups.map((g) => (
+                    <li key={g.slug} className="border-t border-white/15 first:border-0">
+                      <a
+                        href={`/${g.slug}`}
+                        aria-current={g.slug === group.slug ? 'page' : undefined}
+                        className={`flex min-h-[52px] items-center gap-3 py-2.5 font-heading text-[17px] font-bold no-underline hover:underline ${g.slug === group.slug ? 'text-white' : 'text-white/70'}`}
+                      >
+                        <span className="min-w-0 flex-1">{g.title}</span>
+                        {g.slug === group.slug && <Check size={17} className="flex-none text-white/60" aria-hidden="true" />}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            )
           )
         }
       >

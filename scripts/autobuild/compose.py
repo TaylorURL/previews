@@ -839,6 +839,11 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # Technologies"), whatever it ends on.
         if re.match(r"(?:extraordinary|exceptional|outstanding|unmatched|unparalleled|unbeatable|superb|amazing|incredible|remarkable|world[- ]class|first[- ]class|state[- ]of[- ]the[- ]art|cutting[- ]edge)\s", name, re.I):
             return
+        # So is one that opens on how they feel about the work ("Passion for
+        # Trees", "Love of the Outdoors", "Commitment to Quality"); it says
+        # who they are, not what they do.
+        if re.match(r"(?:passion|love|commitment|dedication|devotion|pride|respect)\s+(?:for|of|to|in)\s", name, re.I):
+            return
         # One that gathers the rest ("All Accounting Services", "Other Tax
         # Services") is their menu's link to the services page, not a service.
         if re.match(r"(?:all|other)\s.*\bservices$", name, re.I):
