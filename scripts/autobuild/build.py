@@ -182,10 +182,17 @@ def _logo(pages, business, name, scratch, notes):
         if value in seen or (kind == "url" and SKIP_LOGO.search(value)):
             continue
         seen.add(value)
-        try:
-            data = value.encode() if kind == "svg" else collect.fetch(value, binary=True)[1]
-            image = images.open_image(data)
-        except Exception:
+        # A logo, like a photo, is fetched at the largest size its image
+        # service will give (a header's "rs=h:149" copy is soft at its size).
+        image = None
+        for address in ([None] if kind == "svg" else collect.bigger(value)):
+            try:
+                data = value.encode() if kind == "svg" else collect.fetch(address, binary=True)[1]
+                image = images.open_image(data)
+                break
+            except Exception:
+                continue
+        if image is None:
             continue
         if not images.looks_like_logo(image):
             continue
