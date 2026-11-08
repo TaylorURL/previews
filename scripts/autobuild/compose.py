@@ -446,6 +446,7 @@ MISSPELT = {r"\bverity of\b": "variety of", r"\bVerity of\b": "Variety of", r"\b
             r"\bamble (savings|time|room|space|parking)\b": r"ample \1", r"\bfinancially responsibility\b": "financially responsibly",
             r"\bbuisness": "business", r"\bBuisness": "Business",
             r"\b([Ss])oluiton": r"\1olution", r"\b([Cc])onstructio\b": r"\1onstruction",
+            r"\b([Cc])ommerical": r"\1ommercial",
             # A verb set where its noun goes, and a promise said as a permission
             # ("a quick respond to your inquiries is granted").
             r"\b(quick|fast|prompt|rapid|timely) respond\b": r"\1 response",
@@ -589,7 +590,12 @@ def title_case(text):
         if re.fullmatch(r"[A-Z]{2}[a-z]{2,}", w):
             w = w[0] + w[1:].lower()
         out.append(w.lower() if i and w.lower() in small else w[:1].upper() + w[1:])
-    return " ".join(out)
+    # A heading their page misspells ("Commerical Plumbing") is put right as
+    # trim puts a description right, so no service is named with the slip.
+    said = " ".join(out)
+    for wrong, right in MISSPELT.items():
+        said = re.sub(wrong, right, said)
+    return said
 
 
 def short_name(name):
