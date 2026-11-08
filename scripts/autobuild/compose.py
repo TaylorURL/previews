@@ -452,7 +452,10 @@ MISSPELT = {r"\bverity of\b": "variety of", r"\bVerity of\b": "Variety of", r"\b
             # A shortening of speech ("workman's comp") reads as a word cut off.
             r"\bwork(?:man|men|er|ers)['’]?s?['’]? comp\b(?!\w)": "workers’ compensation",
             # A verb their page dropped ("If you a special project that requires...").
-            r"\b([Ii]f|[Ww]hen) you (an?) ": r"\1 you have \2 "}
+            r"\b([Ii]f|[Ww]hen) you (an?) ": r"\1 you have \2 ",
+            # A comma their page left between a describing word and the noun it
+            # describes ("a methodical, approach to each project").
+            r"\b([Aa]n?|[Tt]he|[Oo]ur) (\w+(?:al|ful|ous|ive|ic|ed|ough)), (approach|process|method|way|plan|system|finish|job|look|result)\b": r"\1 \2 \3"}
 
 # Three or more words in capitals that the sentence goes on from in lowercase.
 SHOUTED = re.compile(r"\b[A-Z]{2,}(?:\s+[A-Z]{2,}){2,}\b(?=\s+[a-z])")
