@@ -793,6 +793,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         # colors.") is a sentence of their page, not the name of a service.
         if re.search(r"[a-z]{2}\.$", name, re.I):
             return
+        # One that ends on a joining word ("Roof Repair &") is a name cut off
+        # where their page broke the line, not the name of a service.
+        if re.search(r"(?:\s|^)(?:&|\+|/|and|or|with|of|for)$", name, re.I):
+            return
         # One that opens on its place in their process ("Step Three
         # Construction and Remodeling", "Phase 2: Design") is a stage of the
         # job, not a service.
@@ -923,7 +927,19 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
             if "service" in href.lower() or pattern.search(href):
                 add(text)
     for page in pages:
-        blocks = page.blocks
+        blocks = list(page.blocks)
+        # A heading their page set on two lines ("Roof Repair &" over
+        # "Replacement") is one name; it is read whole, and the second line
+        # is not a service of its own.
+        joiner = re.compile(r"(?:\s|^)(?:&|\+|/|and|or)\s*$|,\s*$", re.I)
+        i = 0
+        while i + 1 < len(blocks):
+            tag, text, header = blocks[i]
+            nxt_tag, nxt, nxt_header = blocks[i + 1]
+            if tag in ("h2", "h3", "h4") and nxt_tag in ("h2", "h3", "h4") and joiner.search(plain(text)) and nxt.strip():
+                blocks[i:i + 2] = [(tag, plain(text).rstrip() + " " + plain(nxt).strip(), header)]
+                continue
+            i += 1
         for i, (tag, text, header) in enumerate(blocks):
             if tag in ("h2", "h3", "h4") and not header:
                 desc = None
