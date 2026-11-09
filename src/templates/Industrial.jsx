@@ -1120,8 +1120,18 @@ function Coverage({ b, g, n, tone }) {
   );
 }
 
+/**
+ * The reviews quoted word for word. A testimonial their site gives without a
+ * name is credited to a customer of the business, as the hvac Reviews section
+ * does, and drops "Website testimonial", which the credit already says.
+ */
 function Reviews({ b, g, n, tone }) {
   if (!g.reviews.length) return null;
+  const reviews = g.reviews.map((r) =>
+    String(r.author || '').trim()
+      ? r
+      : { ...r, author: `A customer of ${b.shortName || b.name}`, ...(sourceOf(r) === 'Website testimonial' ? { source: '', where: '' } : {}) }
+  );
   return (
     <section className={`${pad} ${tone}`}>
       <div className={wrap}>
@@ -1136,8 +1146,8 @@ function Reviews({ b, g, n, tone }) {
             </p>
           )}
         </div>
-        <div className={`grid gap-4 ${g.reviews.length > 1 ? 'md:grid-cols-2' : ''} ${g.reviews.length > 2 ? 'lg:grid-cols-3' : ''}`}>
-          {g.reviews.map((r, i) => (
+        <div className={`grid gap-4 ${reviews.length > 1 ? 'md:grid-cols-2' : ''} ${reviews.length > 2 ? 'lg:grid-cols-3' : ''}`}>
+          {reviews.map((r, i) => (
             <figure key={i} className="m-0 flex flex-col border-t-2 border-ink bg-white p-6 sm:p-7">
               <Quote size={24} className="text-[color:var(--mark)]" aria-hidden="true" />
               <blockquote className="m-0 mb-6 mt-4 text-[16.5px] leading-[1.65] text-ink">{r.text}</blockquote>
@@ -1194,7 +1204,7 @@ function DirectLines({ b, g, tel, dark = true }) {
         [g.phoneLabel || 'Phone', <a key="p" href={tel} className={`font-heading text-[24px] font-bold no-underline hover:underline ${strong}`}>{b.phone}</a>],
         ...g.extraPhones.map((p) => [p.label || 'Phone', <a key={p.number} href={telHref(p.number)} className={`font-heading text-[20px] font-bold no-underline hover:underline ${strong}`}>{p.number}</a>]),
         b.emergency?.text && ['After hours', <span key="e" className={`text-[15.5px] leading-[1.55] ${strong}`}>{b.emergency.text}</span>],
-        b.email && ['Email', <a key="m" href={`mailto:${b.email}`} className={`break-all text-[17px] font-semibold no-underline hover:underline ${strong}`}>{b.email}</a>],
+        b.email && ['Email', <a key="m" href={`mailto:${b.email}`} className={`text-[17px] font-semibold no-underline [overflow-wrap:anywhere] hover:underline ${strong}`}>{b.email.split('@').flatMap((p, i) => (i ? ['@', <wbr key={i} />, p] : [p]))}</a>],
         ['Address', <a key="a" href={mapsHref(b)} className={`text-[16px] leading-[1.55] no-underline hover:underline ${strong}`}>{full}</a>],
         hours.length > 0 && [
           'Hours',
@@ -1337,8 +1347,8 @@ function Footer({ b, g, groups, tel, night }) {
             </a>
           ))}
           {b.email && (
-            <a href={`mailto:${b.email}`} className="flex min-h-[44px] items-center break-all text-white/70 no-underline hover:text-white">
-              {b.email}
+            <a href={`mailto:${b.email}`} className="flex min-h-[44px] items-center text-white/70 no-underline [overflow-wrap:anywhere] hover:text-white">
+              <span className="min-w-0">{b.email.split('@').flatMap((p, i) => (i ? ['@', <wbr key={i} />, p] : [p]))}</span>
             </a>
           )}
           <a href={mapsHref(b)} className="block py-2 leading-[1.6] text-white/70 no-underline hover:text-white">
