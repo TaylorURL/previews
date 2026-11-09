@@ -1,0 +1,111 @@
+{
+  "template": "roofing",
+  "preview": true,
+  "name": "Morgan Roofing",
+  "shortName": "Morgan Roofing",
+  "phone": "(409) 762-8068",
+  "email": "office@morganroofingtexas.com",
+  "address": "1311 42nd St",
+  "town": "Galveston",
+  "state": "TX",
+  "zip": "77550",
+  "rating": 3.9,
+  "reviewCount": 27,
+  "brand": {
+    "primary": "#09841d",
+    "primaryDeep": "#065d14",
+    "accent": "#ff0a0a",
+    "ink": "#152320",
+    "surface": "#f0fcf2",
+    "heading": "'Open Sans', system-ui, sans-serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+  },
+  "heroStyle": "type",
+  "tone": "classic",
+  "hero": {
+    "eyebrow": "Morgan Roofing · Galveston",
+    "title": "Over 30 years of roofs in Galveston,",
+    "lead": "Morgan Roofing is a Galveston roofing and remodeling company, and we can roof any style for a home or business. Call us for a free estimate.",
+    "titleAccent": "and our own metal shop for the details."
+  },
+  "serviceArea": [
+    "Galveston"
+  ],
+  "highlights": [
+    {
+      "title": "Over 30 years",
+      "text": "We have been in business in Galveston for over 30 years.",
+      "icon": "calendar"
+    },
+    {
+      "title": "Own sheet metal shop",
+      "text": "We fabricate our own flashing, gutters, down spouts and chimney caps onsite.",
+      "icon": "wrench"
+    },
+    {
+      "title": "Free estimates",
+      "text": "We offer free estimates, with an aerial view of your roof.",
+      "icon": "check"
+    },
+    {
+      "title": "Windstorm engineer certificate",
+      "text": "We provide an engineer certificate showing your roof meets Texas Windstorm requirements.",
+      "icon": "shield"
+    }
+  ],
+  "services": [
+    {
+      "slug": "roof-repair",
+      "title": "Roof Repair",
+      "short": "Roof repair for homes and businesses",
+      "text": "We repair roofs on homes and businesses in Galveston."
+    },
+    {
+      "slug": "emergency-repair",
+      "title": "Emergency Repair",
+      "group": "storm",
+      "short": "Emergency roof repair",
+      "text": "When a roof needs emergency repair, call us at (409) 762-8068."
+    },
+    {
+      "slug": "roof-maintenance",
+      "title": "Roof Maintenance",
+      "short": "Roof maintenance for your home or business",
+      "text": "We maintain roofs on homes and businesses."
+    },
+    {
+      "slug": "roof-restorations",
+      "title": "Roof Restorations",
+      "short": "Restoring existing roofs",
+      "text": "We restore existing roofs on homes and businesses."
+    },
+    {
+      "slug": "roof-replacements",
+      "title": "Roof Replacements",
+      "short": "Full roof replacement",
+      "text": "We replace roofs in any style, and we provide an engineer certificate showing your roof meets Texas Windstorm requirements."
+    },
+    {
+      "slug": "new-construction",
+      "title": "New Construction",
+      "short": "Roofing for new builds",
+      "text": "We roof new construction for homes and businesses."
+    },
+    {
+      "slug": "home-remodeling",
+      "title": "Home Remodeling",
+      "group": "residential",
+      "short": "Home Remodeling",
+      "text": "Our Remodeling department can assist you with any type of home improvements."
+    }
+  ],
+  "about": {
+    "title": "Same town for 30 years, same address for 20.",
+    "text": [
+      "Morgan Roofing has been in business for over 30 years in Galveston, Texas, and over 20 years at the same location, 1311 42nd Street.",
+      "We have our own custom sheet metal shop onsite, where we fabricate our own flashing, gutters, down spouts and chimney caps. We work in Galvalume, aluminum, stainless steel or copper, depending on what the customer requires.",
+      "We offer free estimates, along with an aerial view of your roof, so we can give you an accurate price."
+    ]
+  }
+}
