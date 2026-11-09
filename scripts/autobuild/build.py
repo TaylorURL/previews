@@ -863,11 +863,13 @@ def _build(prospect, root, slug, known):
             if not s["text"]:
                 continue
             icon = next((k for k, p in compose.ICONS.get(kind) or compose.ICONS["hvac"] if re.search(p, s["title"], re.I)), "wrench")
-            summary = compose.card_line(s["text"], 140) or s["text"]
             # The intro is their description whole, but put right as the
             # summary's is ("STACKABLE METAL RACKS will Optimize the vertical
             # space, If you have..." takes the sentence's case and its stop).
             intro = compose.trim(s["text"], 2 * len(s["text"])) or s["text"]
+            # A description with no card line short enough is the card's whole,
+            # put right too ("installation , routine" closes up).
+            summary = compose.card_line(s["text"], 140) or intro
             group = {"slug": compose.slugify(s["title"]), "title": s["title"], "icon": icon, "summary": summary, "intro": intro}
             if s["title"] in named or (wide and (not trade or re.search(trade, s["title"], re.I))):
                 group["image"] = named.get(s["title"]) or wide.pop(0)
