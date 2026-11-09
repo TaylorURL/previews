@@ -1036,7 +1036,8 @@ def _facts_fields(brand, sheet, copy, google, phone, template, state):
         if len(reviews) >= facts.REVIEWS_SHOWN:
             break
         if len(t["text"]) <= 600:
-            reviews.append({"author": t.get("author") or "", "text": compose.unemoji(t["text"]), "source": "their site"})
+            author = (t.get("author") or "").strip(" -–—")
+            reviews.append({"author": "" if compose.STAND_IN_AUTHOR.match(author) else author, "text": compose.unemoji(t["text"]), "source": "their site"})
     if reviews:
         brand["reviews"] = [{k: v for k, v in r.items() if v not in ("", None)} for r in reviews]
     credentials = []
