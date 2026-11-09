@@ -332,6 +332,10 @@ NOT_FOR_CUSTOMERS = re.compile(r"^(ir|investors?|investor[._-]?relations|shareho
 # A site theme's stand-in address, left in with their domain after it
 # ('yourdesign@', 'yourname@', 'name@', 'john.doe@'), is no one's mailbox.
 STAND_IN_MAIL = re.compile(r"^(your[._-]?(name|e?mail|design|company|business|site|website|domain)?|you|name|email|e-?mail[._-]?address|user(name)?|someone|test|john[._-]?doe|jane[._-]?doe)@", re.I)
+# A testimonial signed with a theme's stand-in rather than a person ('Happy
+# Customer', 'Satisfied Client', 'Anonymous') carries no author's name.
+STAND_IN_AUTHOR = re.compile(r"^(an?\s+)?((happy|satisfied|valued|loyal|verified|repeat|real|actual|thankful|grateful|pleased)\s+)?"
+                             r"(customer|client|homeowner|owner|buyer|patient|user|reviewer|guest)s?$|^(anonymous|anon|name|your name|john doe|jane doe)$", re.I)
 
 
 # A line a business keeps for job seekers, its staff or a fax machine is not the
