@@ -44,7 +44,6 @@ os.environ.setdefault("no_proxy", "*")
 import argparse
 import json
 import re
-import shutil
 import subprocess
 import sys
 import tempfile
@@ -133,8 +132,9 @@ def _env():
 
 def ask(prompt, minutes, label):
     """One builder turn; its structured answer and what it cost, or (None, cost, why)."""
-    claude = shutil.which("claude") or os.path.expanduser("~/.local/bin/claude")
-    command = [claude, "-p", "--model", MODEL, "--effort", EFFORT, "--dangerously-skip-permissions",
+    # Through the fallback, not claude itself: a weekly limit otherwise refuses
+    # every builder in the run and nothing the script set aside gets finished.
+    command = [vision.claude_bin(), "-p", "--model", MODEL, "--effort", EFFORT, "--dangerously-skip-permissions",
                "--setting-sources", "", "--strict-mcp-config", "--output-format", "json",
                "--json-schema", json.dumps(ANSWER)]
     budget = min(minutes * 60, deadline() - time.time() - 60)
