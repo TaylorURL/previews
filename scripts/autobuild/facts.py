@@ -45,7 +45,9 @@ last_error = None
 
 
 def available():
-    return os.environ.get("PREVIEW_WRITE", "on") != "off" and bool(shutil.which("claude"))
+    fallback = os.path.expanduser("~/bin/claude-fallback.py")
+    return os.environ.get("PREVIEW_WRITE", "on") != "off" and (
+        bool(shutil.which("claude")) or (os.path.isfile(fallback) and os.access(fallback, os.X_OK)))
 
 
 def ask(prompt, schema, model=None, timeout=None):
@@ -57,7 +59,7 @@ def ask(prompt, schema, model=None, timeout=None):
     if not available():
         last_error = "writing is switched off (PREVIEW_WRITE=off) or the claude command is missing"
         return None
-    command = ["claude", "-p", "--model", model or MODEL, "--tools", "", "--setting-sources", "",
+    command = [vision.claude_bin(), "-p", "--model", model or MODEL, "--tools", "", "--setting-sources", "",
                "--strict-mcp-config", "--no-session-persistence", "--output-format", "json", "--json-schema", json.dumps(schema)]
     with tempfile.TemporaryDirectory(prefix="preview-words-") as folder:
         try:

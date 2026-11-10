@@ -139,7 +139,14 @@ def rest(method, path, body=None, prefer=None):
             text = response.read().decode()
             return json.loads(text) if text else None
     except urllib.error.HTTPError as error:
-        sys.exit(f"{method} {path}: {error.code} {error.read().decode()[:400]}")
+        body = error.read().decode()
+        try:
+            said = json.loads(body).get("message") or body
+        except ValueError:
+            said = body
+        # The message, not the failing row: the row is long enough that the
+        # last slice a run keeps never reaches the reason.
+        sys.exit(f"{method} {path}: {error.code} {said[:400]}")
 
 
 def due():

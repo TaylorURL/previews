@@ -376,7 +376,7 @@ def dispatch(template, findings, budget):
     before_status = _status()
     before_text = _snapshot(before_status)
     command = [
-        "claude", "-p", "--model", FIX_MODEL, "--permission-mode", "acceptEdits",
+        vision.claude_bin(), "-p", "--model", FIX_MODEL, "--permission-mode", "acceptEdits",
         "--tools", "Read,Edit,Write,Glob,Grep,Bash",
         "--allowedTools", "Read", "Edit", "Write", "Glob", "Grep", "Bash(npm run build)",
         "Bash(node scripts/autobuild/shoot.mjs:*)", "Bash(node scripts/autobuild/layout.mjs:*)", "Bash(git diff:*)",
