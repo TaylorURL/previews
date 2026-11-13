@@ -1582,13 +1582,13 @@ function Home({ b, groups, tel }) {
                   <h2 className="font-heading text-[clamp(1.9rem,1.35rem+2.1vw,2.85rem)] font-extrabold leading-[1.08] tracking-[-0.025em] [text-wrap:balance]">
                     {b.promo.title}
                   </h2>
-                  <p className="mt-4 max-w-xl text-[17px] leading-[1.65] opacity-85 sm:text-[18px]">{b.promo.text}</p>
+                  <p className="mt-4 max-w-xl text-[17px] leading-[1.65] sm:text-[18px]">{b.promo.text}</p>
                 </div>
                 <div className={`mt-8 flex flex-col gap-6 sm:flex-row sm:items-center ${b.promo.image ? '' : 'lg:mt-0 lg:flex-none'}`}>
                   {b.promo.price && (
                     <p className="flex items-baseline gap-2">
                       <strong className="font-heading text-[52px] font-extrabold leading-none tracking-[-0.04em]">{b.promo.price}</strong>
-                      {b.promo.priceNote && <span className="text-[16px] md:text-[15px] opacity-80">{b.promo.priceNote}</span>}
+                      {b.promo.priceNote && <span className="text-[16px] md:text-[15px]">{b.promo.priceNote}</span>}
                     </p>
                   )}
                   {/* The button asks for what the business does, the same as

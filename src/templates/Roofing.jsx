@@ -1046,6 +1046,9 @@ function Materials({ b, className = 'bg-surface' }) {
   const m = b.materials;
   const brands = list(m?.brands);
   if (!brands.length) return null;
+  // One system would be a small box in a corner of its column, so it takes
+  // the whole column, set larger.
+  const one = brands.length === 1;
   return (
     <section className={`${className} ${pad}`}>
       <div className={`${wrap} grid gap-10 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:items-center lg:gap-16`}>
@@ -1060,11 +1063,13 @@ function Materials({ b, className = 'bg-surface' }) {
           </h2>
           {m.text && <p className="mt-5 max-w-[30rem] text-[17px] leading-[1.6] text-ink/75 sm:text-[18px]">{m.text}</p>}
         </div>
-        <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+        <ul className={`grid gap-3 ${one ? '' : 'grid-cols-2 sm:grid-cols-3'}`}>
           {brands.map((name) => (
             <li
               key={name}
-              className="grid min-h-[88px] place-items-center border-2 border-ink bg-white px-3 py-4 text-center font-heading text-[clamp(1.15rem,0.9rem+0.9vw,1.6rem)] font-bold uppercase leading-tight tracking-[0.04em] text-ink"
+              className={`grid place-items-center border-2 border-ink bg-white text-center font-heading font-bold uppercase leading-tight tracking-[0.04em] text-ink ${
+                one ? 'min-h-[clamp(8rem,5rem+9vw,13rem)] px-6 py-8 text-[clamp(1.7rem,1.1rem+2.2vw,3rem)]' : 'min-h-[88px] px-3 py-4 text-[clamp(1.15rem,0.9rem+0.9vw,1.6rem)]'
+              }`}
             >
               {name}
             </li>
@@ -1258,9 +1263,12 @@ function StepsBand({ b, className = 'bg-surface' }) {
 function CredentialsBand({ b, className = 'bg-white' }) {
   const items = credentialsOf(b);
   if (!items.length) return null;
+  // One credential would be a small card in a corner of its column, so it
+  // takes the whole column, set larger, level with the heading.
+  const one = items.length === 1;
   return (
     <section aria-labelledby="credentials" className={`${className} ${pad}`}>
-      <div className={`${wrap} grid gap-10 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:items-start lg:gap-16`}>
+      <div className={`${wrap} grid gap-10 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] ${one ? 'lg:items-center' : 'lg:items-start'} lg:gap-16`}>
         <div>
           <Eyebrow>Credentials</Eyebrow>
           <h2 id="credentials" className={h2}>
@@ -1270,13 +1278,13 @@ function CredentialsBand({ b, className = 'bg-white' }) {
         <Credentials
           items={items}
           icon={ShieldCheck}
-          iconSize={22}
+          iconSize={one ? 34 : 22}
           styles={{
-            list: 'gap-3 sm:grid-cols-2',
-            item: 'border-2 border-ink bg-white p-5',
+            list: one ? 'gap-3' : 'gap-3 sm:grid-cols-2',
+            item: one ? 'items-center gap-5 border-2 border-ink bg-white p-7 sm:p-10' : 'border-2 border-ink bg-white p-5',
             icon: 'text-primary',
-            label: `${h3} text-[19px] text-ink`,
-            detail: 'mt-1 text-[16px] leading-[1.5] text-ink/70',
+            label: `${h3} ${one ? 'text-[clamp(1.5rem,1.1rem+1.4vw,2.2rem)]' : 'text-[19px]'} text-ink`,
+            detail: `mt-1 ${one ? 'text-[17px] sm:text-[18px]' : 'text-[16px]'} leading-[1.5] text-ink/70`,
           }}
         />
       </div>

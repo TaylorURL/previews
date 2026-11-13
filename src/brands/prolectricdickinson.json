@@ -1,0 +1,511 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "ProLectric LLC",
+  "shortName": "ProLectric",
+  "phone": "(281) 337-5060",
+  "email": "kathy@prolectricllc.com",
+  "address": "4701 State Hwy 3",
+  "town": "Dickinson",
+  "state": "TX",
+  "zip": "77539",
+  "rating": 5,
+  "reviewCount": 230,
+  "since": 2009,
+  "brand": {
+    "primary": "#bd5109",
+    "primaryDeep": "#843907",
+    "accent": "#7d77fb",
+    "ink": "#231e1e",
+    "surface": "#fef7f2",
+    "muted": "#5b6470",
+    "line": "#e0e0e0",
+    "heading": "'Plus Jakarta Sans', system-ui, sans-serif",
+    "body": "'Inter', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap",
+    "logo": "/brands/prolectricdickinson/logo.webp",
+    "logoMono": "/brands/prolectricdickinson/logo-mono.webp",
+    "logoWidth": 160,
+    "logoHeight": 48,
+    "logoRatio": 3.342,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.389,
+      0.384,
+      0.409,
+      0.432,
+      0.454,
+      0.435,
+      0.445,
+      0.455,
+      0.651,
+      0.89,
+      1.0
+    ]
+  },
+  "heroStyle": "split",
+  "tone": "bold",
+  "hero": {
+    "eyebrow": "Family owned, veteran operated",
+    "title": "Electrical work done right,",
+    "titleAccent": "by licensed electricians with no subcontractors.",
+    "lead": "ProLectric is a family-owned, veteran-operated electrical contractor serving Galveston County and the southern parts of Harris and Brazoria Counties. Call and your phone is answered live.",
+    "image": "/brands/prolectricdickinson/hero",
+    "imageAlt": "Coach lights added to the front of a home in Friendswood by ProLectric"
+  },
+  "serviceArea": [
+    "Alvin",
+    "Bacliff",
+    "Bayou Vista",
+    "Clear Lake City",
+    "Clear Lake Shores",
+    "Deer Park",
+    "Dickinson",
+    "El Lago",
+    "Fresno",
+    "Friendswood",
+    "Galveston",
+    "Hitchcock",
+    "Houston",
+    "Kemah",
+    "La Marque",
+    "La Porte",
+    "League City",
+    "Manvel",
+    "Nassau Bay",
+    "Pasadena",
+    "Pearland",
+    "San Leon",
+    "Santa Fe",
+    "Seabrook",
+    "Tiki Island",
+    "Texas City",
+    "Webster"
+  ],
+  "highlights": [
+    {
+      "title": "Family owned, veteran operated",
+      "text": "Licensed electricians on staff, and no subcontractors, ever.",
+      "icon": "family"
+    },
+    {
+      "title": "Tesla approved electrician",
+      "text": "We are a Tesla Wall Connector Approved Electrician.",
+      "icon": "badge"
+    },
+    {
+      "title": "Licensed, bonded, insured",
+      "text": "We hold an Electrical Contractor License and a Master Electrician License.",
+      "icon": "shield"
+    },
+    {
+      "title": "Serving you since 2009",
+      "text": "We started the business in April of 2009.",
+      "icon": "calendar"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Verification",
+      "text": "We confirm whether your panel is truly on the \"Ineligible\" list."
+    },
+    {
+      "title": "Permitting",
+      "text": "We pull the required permits with your city."
+    },
+    {
+      "title": "Modern upgrade",
+      "text": "We install a UL-listed panel that meets all 2026 standards."
+    },
+    {
+      "title": "Documentation",
+      "text": "We give you the final paperwork to send your insurance agent to keep your coverage active."
+    }
+  ],
+  "credentials": [
+    {
+      "label": "Electrical Contractor License",
+      "detail": "TECL25741"
+    },
+    {
+      "label": "Master Electrician License",
+      "detail": "183206"
+    },
+    {
+      "label": "Tesla Wall Connector",
+      "detail": "Approved Electrician"
+    }
+  ],
+  "owner": {
+    "name": "Jimmy Bankston",
+    "role": "Master Electrician & Owner of ProLectric"
+  },
+  "summary": "Electrical panel upgrades, repair, lighting, EV chargers and generator hookups for Dickinson, League City, Friendswood and the rest of Galveston County.",
+  "groups": [
+    {
+      "slug": "panels-and-service",
+      "title": "Panels & Electrical Service",
+      "icon": "zap",
+      "summary": "Panel upgrades, insurance-required panel changes, meter boxes, risers and service poles.",
+      "intro": "Electrical panel changes are one of our specialties. Each panel is configured for your home and its power use, and we follow city, state and national electric code and pull the permits.",
+      "services": [
+        {
+          "slug": "panel-upgrades",
+          "title": "Electrical Panel Upgrades",
+          "text": "We offer three brands of replacement panels: GE, Cutler/Hammer and Square D. Panel warranties range from one year to lifetime depending on the brand.",
+          "points": [
+            "Same day replacement in most cases when you have no power",
+            "Free phone advice from a Master Electrician on the right load"
+          ]
+        },
+        {
+          "slug": "insurance-panel-change",
+          "title": "Insurance Required Panel Change",
+          "text": "If your insurer says your Federal Pacific, Stab-Lok, Zinsco, Sylvania or Challenger panel is ineligible, we confirm it, pull the permit and give you the paperwork for your agent.",
+          "points": [
+            "Verification",
+            "Permitting",
+            "Modern UL-listed panel",
+            "Documentation for your insurance agent"
+          ]
+        },
+        {
+          "slug": "meter-box-replacement",
+          "title": "Electric Meter Box Replacement",
+          "text": "We replace rusted or damaged meter boxes, meter bases, weatherheads and service masts, which are common near the coast.",
+          "icon": "wrench"
+        },
+        {
+          "slug": "breaker-change-outs",
+          "title": "Breaker Change Outs",
+          "text": "Breaker troubleshooting, repair and replacement for breakers that keep tripping, will not reset or feel hot.",
+          "icon": "wrench"
+        },
+        {
+          "slug": "panel-tune-up",
+          "title": "Electrical Panel Tune-Up",
+          "text": "An inspection, cleaning, tightening and testing of your panel for $89 per panel. Commercial panel inspections are quoted by phone.",
+          "points": [
+            "Checks for loose connections, damaged wiring, overheating",
+            "Dust, debris and corrosion cleaned out"
+          ]
+        },
+        {
+          "slug": "riser-repair",
+          "title": "Electrical Service Riser Repair",
+          "text": "Repair of the service riser and mast that carry power from the utility to your building.",
+          "icon": "wrench"
+        },
+        {
+          "slug": "sub-panels",
+          "title": "Sub Panels",
+          "text": "Subpanel installation for added circuits.",
+          "icon": "zap"
+        },
+        {
+          "slug": "service-poles",
+          "title": "Electric Service Poles & Temporary Power Poles",
+          "text": "Electrical service pole installation and replacement, and temporary power poles for construction.",
+          "icon": "zap"
+        },
+        {
+          "slug": "underground-services",
+          "title": "Underground Services",
+          "text": "Replacing your home's underground electrical service.",
+          "icon": "zap"
+        },
+        {
+          "slug": "power-restoration",
+          "title": "Power Restoration & Permitting",
+          "text": "We help get the power turned back on and handle the permitting.",
+          "icon": "zap"
+        },
+        {
+          "slug": "surge-protection",
+          "title": "Whole House Surge Protection",
+          "text": "Whole-home surge protection installed at your panel.",
+          "icon": "zap"
+        }
+      ],
+      "image": "/brands/prolectricdickinson/panel",
+      "imageAlt": "A new Square D electrical panel installed by ProLectric"
+    },
+    {
+      "slug": "repair-troubleshooting",
+      "title": "Repair & Troubleshooting",
+      "icon": "wrench",
+      "summary": "We track down electrical problems and repair them, with the price explained before work proceeds.",
+      "intro": "Troubleshooting means testing circuits, tracing wiring and checking connections. Once the problem is diagnosed, we explain what we found and give pricing for the repair before proceeding.",
+      "services": [
+        {
+          "slug": "electrical-repair",
+          "title": "Electrical Repair & Troubleshooting",
+          "text": "Tripping breakers, outlets without power, flickering lights and circuits that stopped working."
+        },
+        {
+          "slug": "gfci-arc-fault",
+          "title": "GFCI & Arc Fault Protection",
+          "text": "GFCI outlet replacement and arc fault protection.",
+          "icon": "shield"
+        },
+        {
+          "slug": "smoke-detectors",
+          "title": "Smoke Detector Replacement",
+          "text": "Smoke detector replacement in Dickinson and the Bay Area.",
+          "icon": "wrench"
+        },
+        {
+          "slug": "ballast-replacement",
+          "title": "Ballast Replacement",
+          "text": "Ballast replacement, and LED upgrades for flickering fluorescent lights.",
+          "icon": "wrench"
+        },
+        {
+          "slug": "garage-circuits",
+          "title": "Garage Circuits",
+          "text": "New circuits for garage tools and equipment.",
+          "icon": "zap"
+        },
+        {
+          "slug": "vent-hood-wire-up",
+          "title": "Vent Hood Wire Up",
+          "text": "Wiring for kitchen vent hoods.",
+          "icon": "wrench"
+        },
+        {
+          "slug": "outlets-and-low-voltage",
+          "title": "Outlets, TV Circuits, Cable & Phone",
+          "text": "Cable TV outlets, flat screen TV circuits and phone jacks.",
+          "icon": "plug"
+        }
+      ]
+    },
+    {
+      "slug": "lighting",
+      "title": "Lighting & Fans",
+      "icon": "lightbulb",
+      "summary": "Indoor and outdoor lighting, ceiling fans, landscape lighting and dock lighting.",
+      "intro": "From a chandelier in the grand entry way to coach lights and landscape lighting, we install lighting that is cleanly and safely wired.",
+      "services": [
+        {
+          "slug": "lighting-fixtures",
+          "title": "Lighting Fixture Installation",
+          "text": "Chandeliers, pendants, sconces, vanity lights, flush-mount fixtures and recessed lighting, including recessed-light conversions."
+        },
+        {
+          "slug": "under-counter-lighting",
+          "title": "Under Counter & Recessed Lighting",
+          "text": "Under counter lighting and recessed lighting.",
+          "icon": "lightbulb"
+        },
+        {
+          "slug": "outdoor-lighting",
+          "title": "Outdoor Lighting & Coach Lights",
+          "text": "Coach lights, porch and entry lighting, garage lighting, security lighting, barn lights and motion sensor lighting.",
+          "icon": "lightbulb"
+        },
+        {
+          "slug": "landscape-lighting",
+          "title": "LED & Low Voltage Landscape Lighting",
+          "text": "LED landscape lighting design and installation, including low voltage lighting.",
+          "icon": "lightbulb"
+        },
+        {
+          "slug": "boat-dock-lighting",
+          "title": "Boat Dock Lighting & Circuits",
+          "text": "Lighting and circuits for boat docks.",
+          "icon": "lightbulb"
+        },
+        {
+          "slug": "ceiling-fans",
+          "title": "Ceiling Fan Installation",
+          "text": "Ceiling fan installation for homes and businesses by licensed electricians.",
+          "icon": "fan"
+        },
+        {
+          "slug": "bath-fan-lighting",
+          "title": "Bath Fan & Lighting",
+          "text": "Bath fan and bathroom lighting installation.",
+          "icon": "fan"
+        }
+      ],
+      "image": "/brands/prolectricdickinson/lighting",
+      "imageAlt": "Wall sconces installed on each side of a bed"
+    },
+    {
+      "slug": "ev-generators-circuits",
+      "title": "EV Chargers, Generators & Special Circuits",
+      "icon": "zap",
+      "summary": "Tesla Wall Connector and EV charger installs, generator interlocks, RV and hot tub circuits.",
+      "intro": "ProLectric is a Tesla Wall Connector Approved Electrician. We also install generator interlocks and dedicated circuits for RVs, spas and more.",
+      "services": [
+        {
+          "slug": "ev-chargers",
+          "title": "Electric Vehicle Charging Stations",
+          "text": "Home and commercial EV charger installation, including Tesla Wall Connectors, with an evaluation of your panel capacity and wiring.",
+          "icon": "zap"
+        },
+        {
+          "slug": "generator-interlock",
+          "title": "Generator Interlock Installation",
+          "text": "A generator interlock at your panel plus a dedicated outdoor inlet box so a portable generator can safely power your essential circuits.",
+          "points": [
+            "Prevents dangerous backfeeding",
+            "Protects utility workers"
+          ]
+        },
+        {
+          "slug": "rv-circuits",
+          "title": "RV Circuits",
+          "text": "RV circuit installation.",
+          "icon": "plug"
+        },
+        {
+          "slug": "hot-tub-circuits",
+          "title": "Hot Tub & Spa Circuits",
+          "text": "Dedicated circuits for hot tubs and spas.",
+          "icon": "zap"
+        }
+      ],
+      "image": "/brands/prolectricdickinson/ev",
+      "imageAlt": "A Level 2 Tesla EV charger installed by ProLectric"
+    },
+    {
+      "slug": "inspections",
+      "title": "Electrical Inspections",
+      "icon": "shield",
+      "summary": "Pre-purchase and home electrical inspections by a licensed electrician.",
+      "intro": "If a home inspector flagged electrical concerns, a ProLectric electrician can evaluate them in more detail before you close, and give repair recommendations and an estimate.",
+      "services": [
+        {
+          "slug": "pre-purchase-inspection",
+          "title": "Pre-Purchase Home Electrical Inspections",
+          "text": "A detailed evaluation of electrical concerns found in a home inspection, with repair recommendations and an estimate."
+        },
+        {
+          "slug": "home-inspection",
+          "title": "Home Electrical Inspections",
+          "text": "Electrical inspections for homes you already own."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "We had to rename the company. We kept going.",
+    "text": [
+      "We started the business in April of 2009 as Beacon Electrical Service. Nearly a year later we learned another company had reserved that name in Texas, and in March of 2010 we chose the name ProLectric.",
+      "In August of 2013 we moved from a home office into a 2000 square foot office building in Dickinson. In 2018 our son came to work full time after high school, earned his Journeyman's license in 2022 and is studying for his master license.",
+      "We pay for all the training and licensing our electricians need, and our phones are answered live."
+    ],
+    "image": "/brands/prolectricdickinson/team",
+    "imageAlt": "A ProLectric electrician installing a patio light fixture"
+  },
+  "hours": [
+    [
+      "Every day",
+      "Open 24 hours"
+    ]
+  ],
+  "sameDay": "Same day electrical service is usually available for commercial and residential customers.",
+  "licenses": [
+    {
+      "label": "Electrical Contractor License",
+      "number": "TECL25741"
+    },
+    {
+      "label": "Master Electrician License",
+      "number": "183206"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do you have an electrician near me?",
+      "a": "ProLectric provides electrical services across the Bay Area Houston region, with licensed electricians based throughout Dickinson, League City and Alvin. We can frequently offer same-day service for urgent repairs."
+    },
+    {
+      "q": "Can I add a new outlet to an existing circuit?",
+      "a": "Yes, but it must be done safely to avoid overloading the circuit. Our master electricians can evaluate your current load and install a new outlet that meets modern building codes, including GFCI protection where required."
+    },
+    {
+      "q": "Why won't my GFCI outlet reset?",
+      "a": "It is usually due to a ground fault, or the outlet itself has failed. First check your main breaker panel. If the breaker is on, the outlet may need professional replacement."
+    },
+    {
+      "q": "Does ProLectric give free estimates for electrical work?",
+      "a": "We offer free estimates for new electrical additions and replacements, such as adding outlets, installing EV chargers, or panel additions and upgrades. Free estimates do not apply to troubleshooting, repair calls, or panel replacements/change-outs; for repairs we give a clear price before work begins."
+    },
+    {
+      "q": "Why does my circuit breaker keep tripping?",
+      "a": "Usually an overloaded circuit, a short circuit, or a ground fault. If it trips repeatedly, do not keep resetting it; a licensed electrician should inspect the circuit."
+    },
+    {
+      "q": "When should I replace my electrical panel?",
+      "a": "Consider it if your home is over 20 years old, if you are adding high-power appliances like an EV charger, or if you have a brand like Federal Pacific, Stab-Lok, Sylvania, Challenger or Zinsco. Flickering lights and buzzing sounds are also warning signs."
+    },
+    {
+      "q": "Need help determining the correct load?",
+      "a": "Call anytime and speak with a Master Electrician for free. We don't mind helping you get it all figured out, even if it's just a do-it-yourself type question."
+    },
+    {
+      "q": "Why hire an electrician instead of a handyman for a ceiling fan?",
+      "a": "A ceiling fan is a moving electrical appliance that must be properly supported, safely wired and securely mounted. Many fan problems happen because the fan was installed on a standard light fixture box instead of a fan-rated box. When you hire ProLectric, you get a licensed electrician who knows the wiring, mounting, code requirements and fan-rated boxes."
+    },
+    {
+      "q": "How long does it take to get the power turned back on at a vacant home?",
+      "a": "It usually takes 3 days: day one is the electrical inspection, day two the city inspection, and on day three the utility connects power. If repairs are needed to bring the home up to code, it could take longer."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Our guarantee",
+      "text": "Our commitment to you is 100% satisfaction. If the work is not done to local, state, national and your guidelines, we will refund your money. ProLectric is fully insured, bonded and licensed."
+    },
+    {
+      "heading": "Free estimates",
+      "items": [
+        "Panel additions and upgrades",
+        "New outlets and dedicated circuits",
+        "Ceiling fans, indoor and outdoor lighting, under-cabinet lighting",
+        "EV charger and Tesla Wall Connector installs",
+        "Generator inlet and interlock installs",
+        "RV hookups, hot tub and spa circuits, subpanels, whole-home surge protection",
+        "Not free: troubleshooting, repair calls and panel replacements"
+      ]
+    },
+    {
+      "heading": "Our electricians",
+      "text": "Qualified, background-checked and drug-free electricians, with about 20 hours of training per month. We pay for the training and licensing they need."
+    },
+    {
+      "heading": "Call us",
+      "text": "Our phones are answered live. Call (281) 337-5060 for same day service, or to speak with a Master Electrician about the right load for your home."
+    },
+    {
+      "heading": "Customers on their site",
+      "items": [
+        "“ProLectric demonstrated experience that was needed to select for the car charger install service and it showed with the quality of the install.” – Ryan D., Pearland",
+        "“We only called you and you could come quickly... friendly technician!” – Gary G., La Porte",
+        "“Always friendly professional, good value, fair price” – David W., Houston",
+        "“A lot less expensive then others, Jimmy and Kathy are the best!” – Donna W., Dickinson",
+        "“Both electricians were polite and knowledgeable” – Dwayne W., Dickinson",
+        "“You answer your phones after hours!” – Eric B., San Leon"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "X (Twitter): twitter.com/ProLectricLLC",
+        "Facebook: facebook.com/pages/ProLectric/114086638604881",
+        "Pinterest: pinterest.com/ProLectricLLCDickinson"
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Panel tune-up",
+    "title": "Electrical panel tune-up",
+    "text": "An inspection, cleaning, tightening and testing of your panel by a licensed electrician.",
+    "price": "$89",
+    "priceNote": "per panel"
+  }
+}
