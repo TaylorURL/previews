@@ -698,7 +698,14 @@ function Capabilities({ b, groups, n, tone }) {
   );
 }
 
-const INDUSTRY_COLS = (count) => (count <= 2 ? 'md:grid-cols-2' : count === 4 || count >= 7 ? 'md:grid-cols-4' : 'md:grid-cols-3');
+/* Four across leaves a tile about 150px of text, less than one long word
+   ("Manufacturing") needs at the tile's size, so a list holding one keeps to three. */
+const LONG_WORD = 11;
+const INDUSTRY_COLS = (items) => {
+  const count = items.length;
+  const long = items.some((i) => i.name.split(/[\s/]+/).some((w) => w.length > LONG_WORD));
+  return count <= 2 ? 'md:grid-cols-2' : (count === 4 || count >= 7) && !long ? 'md:grid-cols-4' : 'md:grid-cols-3';
+};
 
 function Industries({ g, n, b }) {
   if (g.industries.length < 2) return null;
@@ -712,7 +719,7 @@ function Industries({ g, n, b }) {
           </Label>
           <h2 className={`${h2} text-white`}>Industries served</h2>
         </div>
-        <ul className={`grid grid-cols-2 border-l border-t border-white/15 lg:col-span-8 ${INDUSTRY_COLS(g.industries.length)}`}>
+        <ul className={`grid grid-cols-2 border-l border-t border-white/15 lg:col-span-8 ${INDUSTRY_COLS(g.industries)}`}>
           {g.industries.map((ind, i) => {
             const Icon = industryIcon(`${ind.name} ${ind.detail}`);
             // An odd last card takes the phone's whole row rather than leave an empty box beside it.
