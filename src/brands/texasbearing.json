@@ -1,0 +1,111 @@
+{
+  "template": "industrial",
+  "preview": true,
+  "name": "Texas Bearing Services",
+  "shortName": "Texas Bearing Services",
+  "phone": "(713) 941-1644",
+  "email": "sales@texasbearingservices.com",
+  "address": "4333 Dixie Farm Rd",
+  "town": "Pearland",
+  "state": "TX",
+  "zip": "77581",
+  "brand": {
+    "primary": "#b32317",
+    "primaryDeep": "#7d1810",
+    "accent": "#e54032",
+    "ink": "#231b1f",
+    "surface": "#faf2f1",
+    "muted": "#5b6470",
+    "line": "#e0dfe0",
+    "heading": "'Lato', system-ui, sans-serif",
+    "body": "'Lato', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap",
+    "logo": "/brands/texasbearing/logo.webp",
+    "logoMono": "/brands/texasbearing/logo-mono.webp",
+    "logoWidth": 89,
+    "logoHeight": 84,
+    "logoRatio": 1.055,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.481,
+      0.045,
+      0.04,
+      0.025,
+      0.013,
+      0.0,
+      0.0,
+      0.543,
+      0.692,
+      0.849,
+      0.975
+    ],
+    "logoName": true
+  },
+  "heroStyle": "type",
+  "tone": "bold",
+  "hero": {
+    "eyebrow": "Texas Bearing Services · Pearland",
+    "title": "Large bearings back in service",
+    "lead": "Texas Bearing Services manufactures and repairs large bearings in Pearland, Texas, up to 130 inches in diameter. When a bearing fails, we are available 24/7 to help.",
+    "titleAccent": "at 50% the cost of new."
+  },
+  "serviceArea": [
+    "Pearland"
+  ],
+  "highlights": [
+    {
+      "title": "Modern CNC machinery",
+      "text": "Our new Pearland facility is equipped with modern CNC machinery.",
+      "icon": "gauge"
+    },
+    {
+      "title": "Every manufacturer",
+      "text": "We repair slewing ring bearings from Rotek to Rothe Erde, Kaydon and more.",
+      "icon": "wrench"
+    },
+    {
+      "title": "Available 24/7",
+      "text": "Expedited repair and an emergency line for any bearing emergency.",
+      "icon": "clock"
+    },
+    {
+      "title": "One-year warranty",
+      "text": "Our work is backed by a one-year warranty.",
+      "icon": "shield"
+    }
+  ],
+  "ask": "quote",
+  "summary": "Texas Bearing Services handles bearing repair and refurbishment, fluid film bearings and seals from our Pearland, Texas shop.",
+  "groups": [
+    {
+      "slug": "bearing-repair-refurbishment",
+      "title": "Bearing Repair & Refurbishment",
+      "icon": "wrench",
+      "summary": "Reduce critical machinery downtime at 50% the cost of new.",
+      "intro": "Reduce critical machinery downtime at 50% the cost of new."
+    },
+    {
+      "slug": "expedited-repair-services",
+      "title": "Expedited Repair Services",
+      "icon": "wrench",
+      "summary": "Faster turnaround for urgent needs.",
+      "intro": "Faster turnaround for urgent needs."
+    },
+    {
+      "slug": "advanced-cnc-machinery",
+      "title": "Advanced CNC Machinery",
+      "icon": "settings",
+      "summary": "Our newly built Pearland facility runs modern CNC machinery for manufacturing and repairing large bearings.",
+      "intro": "Our newly built Pearland facility runs modern CNC machinery for manufacturing and repairing large bearings."
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "A new Pearland shop built around CNC machining",
+    "text": [
+      "Our newly constructed Pearland facility features modern CNC machinery, which we use to hold our standard of quality.",
+      "We repair slewing ring bearings from all manufacturers, including Rotek, Rothe Erde, Rollix, Kaydon, Avon, Taperex, INA and PSL.",
+      "We make or repair large bearings of any type, such as ball, tapered roller, thrust roller and rotary table, and offer expedited repair when time is short."
+    ]
+  }
+}

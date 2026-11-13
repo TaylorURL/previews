@@ -756,9 +756,12 @@ def _build(prospect, root, slug, known):
     # the first spare photo that is not another shot of the hero's scene.
     # The roofing and hvac About pages also draw it as their hero, across half
     # the page, so there it must be sharp enough for the hero slot, not just a card.
+    # The professional About page draws it as its hero too; on these three a
+    # photo the look says is cut at a head is left to the cards, as in the hero.
     pictures = dict(names)
     about_image = next((n for n in spare if not (hero_pick and images.same_scene(pictures[n]["image"], hero_pick["image"]))
-                        and (shape not in ("roofing", "hvac") or _fits(pictures[n], "hero"))), None)
+                        and (shape not in ("roofing", "hvac") or _fits(pictures[n], "hero"))
+                        and (shape not in ("roofing", "hvac", "professional") or not any(re.search(w, ((pictures[n]["look"] or {}).get("why") or "").lower()) for w in OFF_HERO))), None)
     about_title = ((copy or {}).get("about") or {}).get("title") or f"About {short}"
 
     def about_block(**extra):
@@ -927,7 +930,7 @@ def _with_facts(services, sheet, name, shape, notes):
         if title.islower() or title.isupper():
             title = compose.title_case(title)
         if not (3 <= len(title) <= 42) or len(title.split()) > 6 or compose.names_the_business(title, name) \
-                or compose.NOT_A_SERVICE_SHAPE.search(title) or compose.GENERIC_NAV.match(title) \
+                or compose.NOT_A_SERVICE_SHAPE.search(title) or compose.GENERIC_NAV.match(title) or compose.FOR_THE_READER.search(title) \
                 or re.search(r"\b(privacy|terms|glossary)\b", title, re.I):
             continue
         if any(facts.normal(f["title"]) == facts.normal(title) for f in found):
