@@ -1286,8 +1286,9 @@ SITE_TALK = re.compile(r"(?:(?:take|have) a look at|look at|check out|browse|exp
 # homepage redesign for home, auto and life insurance."), left in its description.
 SITE_NOTE = re.compile(r"\b(?:home ?page|web ?site|landing page)\s+(?:re-?design|mock-?up|prototype|template)\b", re.I)
 # And a credential's note on how their site shows it ("Shown as a badge on
-# our website"), which the preview, drawing no such badge, cannot bear out.
-SITE_SHOWN = re.compile(r"\b(?:shown|displayed|featured|pictured|seen)\b[^.!?]*\b(?:badges?|logos?|seals?|icons?|emblems?)\b|\bon (?:our|this|the) (?:home ?page|web ?site|site|page)\b", re.I)
+# our website", "Their BBB profile is linked from their website"), which the
+# preview, drawing no such badge or link, cannot bear out.
+SITE_SHOWN = re.compile(r"\b(?:shown|displayed|featured|pictured|seen)\b[^.!?]*\b(?:badges?|logos?|seals?|icons?|emblems?)\b|\b(?:on|from) (?:our|their|this|the) (?:home ?page|web ?site|site|page)\b", re.I)
 # A team they sponsor ("Texas Tech Athletics – Corporate Partner") is a
 # sponsorship, not a licence or certification held.
 SPONSORSHIP = re.compile(r"\b(?:sponsors?|sponsorships?|sponsored|corporate partners?|official partners?|proud partners?)\b", re.I)
