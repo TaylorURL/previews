@@ -754,8 +754,10 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
     elsewhere = re.compile(rf"(?<=\s)(?:{'|'.join(re.escape(t) for t in others)})\b") if others else None
     # So is one that sends the reader to a link of their page ("Click the
     # link below for details"), which the preview does not have, and one left
-    # without its full stop where that link was cut away.
-    pointer = re.compile(r"\bclick\b|\b(?:link|button|form)s? (?:below|above)\b", re.I)
+    # without its full stop where that link was cut away. So is one that points
+    # at the list their page sets after it ("Made by the following Ball Screw
+    # Manufactures and others."), which the description, a paragraph, leaves out.
+    pointer = re.compile(r"\bclick\b|\b(?:link|button|form)s? (?:below|above)\b|\bthe following\b(?!\s+(?:day|week|month|year|morning)s?\b)|\b(?:listed|shown) below\b", re.I)
     # A pointer tacked on after a dash ("...and tax projection services –
     # click to learn more.") is cut away, and the sentence before it kept.
     tacked = re.compile(r"\s*[–—-]\s*(?:click|tap)\b[^.!?]*(?=[.!?]$)", re.I)
@@ -1295,6 +1297,9 @@ SPONSORSHIP = re.compile(r"\b(?:sponsors?|sponsorships?|sponsored|corporate part
 # Nor is the company that writes their bonds ("Granite Re, Inc. – Payment and
 # performance bonds"), outside an agency that sells them.
 BONDER = re.compile(r"\b(?:payment and performance bonds?|performance and payment bonds?|surety|bonding (?:company|capacity|provider))\b", re.I)
+# Nor is a count of awards with none of them named ("10+ awards", "Over 20
+# awards won"): it is a claim for the highlights, and names nothing held.
+AWARD_COUNT = re.compile(r"^\s*(?:over |more than )?\d+\+?\s+(?:industry )?awards?(?:\s+won)?\s*$", re.I)
 
 
 def unsited(text):

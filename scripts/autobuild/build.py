@@ -1043,7 +1043,7 @@ def _facts_fields(brand, sheet, copy, google, phone, template, state):
     credentials = []
     for c in sheet.get("credentials") or []:
         said = f"{c['label']} {c.get('detail') or ''}"
-        if compose.SPONSORSHIP.search(said) or (template != "professional" and compose.BONDER.search(said)):
+        if compose.SPONSORSHIP.search(said) or compose.AWARD_COUNT.match(c["label"]) or (template != "professional" and compose.BONDER.search(said)):
             continue
         entry = {"label": c["label"]}
         # A detail that only says how their site shows it ("Shown as a badge
