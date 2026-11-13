@@ -787,9 +787,9 @@ function Gallery({ b, g, groups, n, tone }) {
             const Tag = item.href ? 'a' : 'div';
             return (
               <li key={item.image} className={`relative min-w-0 overflow-hidden bg-[color:var(--steel)] ${layout.cells[i]}`}>
-                <Tag {...(item.href ? { href: item.href } : {})} className="group block h-full text-white no-underline">
+                <Tag {...(item.href ? { href: item.href } : {})} className="group flex h-full flex-col text-white no-underline">
                   <Img
-                    className={`block aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-[1.03] ${
+                    className={`block aspect-[4/3] w-full flex-none object-cover transition duration-500 group-hover:scale-[1.03] ${
                       // Out of flow, so a tall photo cannot stretch the rows the tiles beside it set.
                       big ? 'lg:absolute lg:inset-0 lg:aspect-auto lg:h-full' : ''
                     }`}
@@ -797,7 +797,14 @@ function Gallery({ b, g, groups, n, tone }) {
                     alt={item.alt}
                     sizes={(i === 0 ? SIZES[items.length][0] : SIZES[items.length].at(-1))}
                   />
-                  <span className="pointer-events-none absolute bottom-0 left-0 flex max-w-[calc(100%-1.5rem)] items-baseline gap-3 bg-[color:var(--night)] px-4 py-3 sm:px-5">
+                  {/* Under the photo, the width of the tile and grown to the row's height, so
+                      each caption runs edge to edge and those side by side start level; over
+                      the lead photo, which stands out of flow, it sits at the foot of it. */}
+                  <span
+                    className={`pointer-events-none relative flex flex-1 items-baseline gap-3 bg-[color:var(--night)] px-4 py-3 sm:px-5 ${
+                      big ? 'lg:absolute lg:inset-x-0 lg:bottom-0' : ''
+                    }`}
+                  >
                     <span className="font-mono text-[12px] text-[color:var(--hi)]">{nn(i + 1)}</span>
                     <span className="min-w-0">
                       <span className="block font-heading text-[16px] font-bold leading-snug">{item.title}</span>
@@ -1836,7 +1843,15 @@ export default function Industrial({ b, path = '' }) {
       </main>
       {!path && g.rest.length > 0 && (
         <div className="pb-[clamp(2rem,4vw,3rem)] pt-[clamp(3.5rem,7vw,5.5rem)]">
-          <Facts b={{ ...b, facts: g.rest }} />
+          <Facts
+            b={{ ...b, facts: g.rest }}
+            title={
+              <div className="mb-10 lg:mb-12">
+                <Label>Good to know</Label>
+                <h2 className={`${h2} text-ink`}>More about {b.shortName}</h2>
+              </div>
+            }
+          />
         </div>
       )}
       <Footer b={b} g={g} groups={groups} tel={tel} night={pal.night} />

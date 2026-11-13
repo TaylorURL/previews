@@ -1,0 +1,271 @@
+{
+  "template": "industrial",
+  "preview": true,
+  "name": "Houston Welders Supply - Houston",
+  "shortName": "Houston Welders Supply",
+  "summary": "Industrial gases, welding and safety supplies, machine calibration and repair, and welding engineering for manufacturers in the Houston and Beaumont areas.",
+  "phone": "(713) 672-4467",
+  "phones": [
+    { "label": "Houston", "number": "(713) 672-4467" },
+    { "label": "Beaumont", "number": "(409) 242-1101" }
+  ],
+  "email": "info@houstonwelders.com",
+  "address": "11001 Wallisville Rd, Bldg B",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77013",
+  "since": 2015,
+  "hours": [
+    ["Mon – Fri", "7 AM – 5 PM"],
+    ["Sat – Sun", "Closed"]
+  ],
+  "rating": 4.9,
+  "reviewCount": 16,
+  "brand": {
+    "primary": "#15275c",
+    "primaryDeep": "#0b1538",
+    "accent": "#d7194a",
+    "ink": "#121820",
+    "muted": "#56616d",
+    "surface": "#f3f4f6",
+    "line": "#dcdfe5",
+    "heading": "'Barlow Condensed', 'Arial Narrow', system-ui, sans-serif",
+    "body": "'Barlow', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap",
+    "logo": "/brands/houstonwelderssupplyhouston/logo.webp",
+    "logoWidth": 245,
+    "logoHeight": 48,
+    "logoRatio": 5.103,
+    "logoGround": "#ffffff",
+    "logoReads": [0.506, 0.477, 0.166, 0.097, 0.055, 0.44, 0.473, 0.506, 0.788, 0.86, 0.895]
+  },
+  "heroStyle": "split",
+  "tone": "bold",
+  "hero": {
+    "eyebrow": "Celebrating 10 years of success since 2015",
+    "title": "Industrial gases and welding supplies",
+    "titleAccent": "for manufacturers since 2015.",
+    "lead": "An independently owned industrial gas supplier in Houston and Beaumont, with welding supplies, machine calibration and repair, and technical expertise backed by over 250 years of combined industry experience.",
+    "image": "/brands/houstonwelderssupplyhouston/hero",
+    "imageAlt": "A welder at work inside a large steel pipe."
+  },
+  "highlights": [
+    { "title": "Since 2015", "text": "Industrial gases and welding supplies with a focus on top notch customer service.", "icon": "since" },
+    { "title": "250+ years combined experience", "text": "Quality service, competitive pricing and trustworthy technical expertise.", "icon": "experience" },
+    { "title": "Aggie 100 honoree", "text": "Named among the fastest-growing Aggie-owned companies in 2024 and 2025.", "icon": "award" },
+    { "title": "Houston and Beaumont", "text": "Two branches, plus a welding machine repair facility in Northwest Houston.", "icon": "facility" }
+  ],
+  "groups": [
+    {
+      "slug": "cylinder-and-bulk-gases",
+      "title": "Cylinder and Bulk Gases",
+      "icon": "boxes",
+      "summary": "Argon, CO2, helium, nitrogen, oxygen and gas mixes in cylinders, bulk and micro bulk.",
+      "intro": "Cylinder gases for rent and delivery, and bulk and micro bulk supply for larger users. Our installation team can install closed loop piping, manifold systems and telemetry monitoring systems.",
+      "image": "/brands/houstonwelderssupplyhouston/cylinder-gases",
+      "imageAlt": "Rows of large green and red gas cylinders stored outdoors at a facility.",
+      "services": [
+        {
+          "slug": "cylinder-gases",
+          "title": "Cylinder Gases",
+          "icon": "boxes",
+          "text": "Argon, CO2, helium, nitrogen, oxygen and gas mixes. Individual cylinders, VGLs, 6-pks and 12-pks are available for rent and delivery.",
+          "points": ["Argon, CO2, helium, nitrogen and oxygen", "Gas mixes", "Individual cylinders, VGLs, 6-pks and 12-pks", "Rent and delivery"]
+        },
+        {
+          "slug": "bulk-gases",
+          "title": "Bulk Gases",
+          "icon": "factory",
+          "text": "Bulk argon, oxygen, carbon dioxide, nitrogen and helium, with closed loop piping, manifold systems and telemetry monitoring installed by our team.",
+          "points": ["Argon, oxygen, carbon dioxide, nitrogen and helium", "Closed loop piping and manifold systems", "Telemetry monitoring systems"]
+        },
+        {
+          "slug": "micro-bulk",
+          "title": "Micro Bulk",
+          "icon": "gauge",
+          "text": "Argon, oxygen, nitrogen and carbon dioxide micro bulk, with closed loop piping, manifold systems and telemetry monitoring installed by our team.",
+          "points": ["Argon, oxygen, nitrogen and carbon dioxide", "Closed loop piping and manifold systems", "Telemetry monitoring systems"]
+        },
+        {
+          "slug": "acetylene",
+          "title": "Acetylene",
+          "icon": "flame",
+          "text": "Acetylene is part of our industrial gas line, alongside argon, CO2, gas mixes, helium, nitrogen, oxygen, propylene and propane."
+        }
+      ]
+    },
+    {
+      "slug": "propane-and-propylene",
+      "title": "Propane and Propylene",
+      "icon": "flame",
+      "summary": "Propane and propylene cylinders with on-site fills, and a forklift cylinder program.",
+      "intro": "Propane and propylene in a range of cylinder sizes, with on-site fills available. The Houston branch can fill customer owned propane tanks on-site as well, and the forklift cylinder program keeps full cylinders on hand every week.",
+      "image": "/brands/houstonwelderssupplyhouston/propane-forklift",
+      "imageAlt": "Aluminum forklift propane cylinders lined up together.",
+      "services": [
+        {
+          "slug": "propylene",
+          "title": "Propylene",
+          "icon": "flame",
+          "text": "Propylene in 27#, 63#, 105# and 435# cylinders. On-site fills available.",
+          "points": ["27#, 63#, 105# and 435# cylinders", "On-site fills available"]
+        },
+        {
+          "slug": "propane",
+          "title": "Propane",
+          "icon": "flame",
+          "text": "Propane in 20#, 33#, 60#, 105# and 435# cylinders. On-site fills available, and the Houston branch can fill customer owned propane tanks on-site as well.",
+          "points": ["20#, 33#, 60#, 105# and 435# cylinders", "On-site fills available", "Customer owned tanks filled on-site at the Houston branch"]
+        },
+        {
+          "slug": "forklift-cylinder-program",
+          "title": "Forklift Cylinder Program",
+          "icon": "truck",
+          "text": "Keep employees efficient and productive with full forklift propane cylinders every week, exchanged or filled on-site. Store the light weight aluminum cylinders in a secure and properly labeled cage.",
+          "points": [
+            "Weekly exchange or on-site filling",
+            "Secure, properly labeled storage cage",
+            "Aluminum cylinders without the interior rust and scaling common to steel cylinders, which can clog forklift injectors and raise maintenance costs"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "welding-and-safety-supplies",
+      "title": "Welding and Safety Supplies",
+      "icon": "shield",
+      "summary": "Filler metals, consumables, safety gear, and new and used welding machines for purchase or rental.",
+      "intro": "Industrial and MRO supplies and capital equipment from leading brands. We partner with you to identify the right products, services and applications to support your operational goals.",
+      "services": [
+        {
+          "slug": "welding-supplies",
+          "title": "Welding Supplies",
+          "icon": "flame",
+          "text": "Filler metals, abrasives, consumables, gouging rods, cutting torches and regulators, welding cable, and hand and power tools.",
+          "points": ["Filler metals and abrasives", "Gouging rods", "Cutting torches and regulators", "Welding cable", "Hand and power tools"]
+        },
+        {
+          "slug": "safety-supplies",
+          "title": "Safety Supplies",
+          "icon": "shield",
+          "text": "Welding hoods, leather jackets, welding sleeves, gloves and other safety supplies.",
+          "points": ["Welding hoods", "Leather jackets and welding sleeves", "Gloves"]
+        },
+        {
+          "slug": "welding-equipment",
+          "title": "Welding Equipment",
+          "icon": "power",
+          "text": "Welding machines, engine drive and electric, with new and used welding equipment available for purchase or rental.",
+          "points": ["Engine drive and electric welding machines", "New and used equipment", "Purchase or rental"]
+        },
+        {
+          "slug": "brands-we-carry",
+          "title": "Leading Brands",
+          "icon": "boxes",
+          "text": "3M, ATTC, Arcair, Bug-O Systems, ESAB, Hobart, Hypertherm, KEEN, Kobelco, Koike, Lincoln Electric, Magswitch, Mathey Dearman, Midalloy, Miller, Norton, Pinnacle Alloys, ProFax, SFE Group and Trust Gloves."
+        }
+      ]
+    },
+    {
+      "slug": "technical-services",
+      "title": "Calibration, Repair and Engineering",
+      "icon": "wrench",
+      "summary": "On-site welding machine calibration, machine and torch repair, welder testing, training and WPS/PQR development.",
+      "intro": "Onsite calibration offers a quick and easy way to get your equipment certified while reducing the risk of damage during transportation. Calibrating compares the weld outputs, typically voltage and amperage, on a piece of welding equipment to the indications of a certified test instrument, to determine whether the equipment is within the tolerances of the applicable standard. In 2024 we opened a welding machine repair facility in the Northwest Houston area.",
+      "services": [
+        {
+          "slug": "welding-machine-calibrations",
+          "title": "Welding Machine Calibrations",
+          "icon": "gauge",
+          "text": "On-site calibration of welding machines, wire feeders, flow meters and rod ovens, with a quick turn around.",
+          "points": ["Welding machines", "Wire feeders", "Flow meters", "Rod ovens"]
+        },
+        {
+          "slug": "pressure-gauge-calibration",
+          "title": "Pressure Gauge Calibration",
+          "icon": "gauge",
+          "text": "Pressure gauge calibration alongside our welding equipment calibrations."
+        },
+        {
+          "slug": "machine-maintenance-and-repair",
+          "title": "Machine Maintenance and Repair",
+          "icon": "wrench",
+          "text": "Onsite machine maintenance, welding machine repair, and torch and regulator repair.",
+          "points": ["Onsite machine maintenance", "Welding machine repair", "Torch and regulator repair"]
+        },
+        {
+          "slug": "welder-testing-and-engineering",
+          "title": "Welder Testing and Application Engineering",
+          "icon": "clipboard",
+          "text": "Welder testing and application engineering, with WPS/PQR development.",
+          "points": ["Welder testing", "Application engineering", "WPS/PQR development"]
+        },
+        {
+          "slug": "customized-welder-training",
+          "title": "Customized Welder Training",
+          "icon": "hard-hat",
+          "text": "Welder training customized to your team. Email info@houstonwelders.com to request it."
+        }
+      ]
+    }
+  ],
+  "industries": ["Manufacturing", "Welding industry"],
+  "credentials": [
+    { "label": "Aggie 100 honoree", "detail": "2024 and 2025, fastest-growing companies owned or led by Texas A&M former students" },
+    { "label": "ISNetworld", "detail": "Proud member" },
+    { "label": "ABC Southeast Texas", "detail": "Proud member" },
+    { "label": "Beaumont Chamber of Commerce", "detail": "Proud member" }
+  ],
+  "statesServed": ["Texas"],
+  "serviceArea": ["Houston", "Beaumont", "Southeast Texas"],
+  "about": {
+    "eyebrow": "About",
+    "title": "Old school values are never out of date.",
+    "text": [
+      "Houston Welders Supply is an independently owned and operated company that provides industrial gases, welding supplies and technical expertise throughout the Houston and Beaumont areas. We have taken pride in focusing on top notch customer service since 2015.",
+      "We are relationship driven, directly impacting the success of our customers through reliable and innovative solutions. With over 250 years of combined industry experience, quality service, competitive pricing and trustworthy technical expertise, we are an essential partner in the welding industry.",
+      "In 2024 we launched two new locations: a Beaumont branch for the Southeast Texas market and a welding machine repair facility in the Northwest Houston area. In 2025 Houston Welders Supply was selected for the Aggie 100 for a second consecutive year."
+    ],
+    "image": "/brands/houstonwelderssupplyhouston/bulk-tanks",
+    "imageAlt": "Industrial gas storage tanks outside a facility under a clear blue sky.",
+    "values": [
+      { "title": "Customer service", "text": "Top notch customer service, competitive pricing and trustworthy support." },
+      { "title": "Relationships", "text": "Relationship driven, with reliable and innovative solutions." },
+      { "title": "Technical expertise", "text": "Over 250 years of combined industry experience." }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Our Locations",
+      "items": [
+        "Houston: 11001 Wallisville Rd, Bldg B, Houston, TX 77013. (713) 672-4467",
+        "Beaumont: 2490 West Cardinal Drive, Beaumont, TX 77705. (409) 242-1101",
+        "Welding machine repair facility in the Northwest Houston area"
+      ]
+    },
+    {
+      "heading": "Request a Quote",
+      "text": "Email orders@houstonwelders.com for a quote. For general questions, email info@houstonwelders.com."
+    },
+    {
+      "heading": "After Hours",
+      "text": "Feel free to visit during normal business hours. If you have an urgent request after business hours, please email us at info@houstonwelders.com."
+    },
+    {
+      "heading": "Owners",
+      "items": ["Blaine Webb, Class of 2000, owner", "Jake Juker, owner", "Christine Juker, marketing and media contact: christine@houstonwelders.com"]
+    },
+    {
+      "heading": "Downloads",
+      "items": ["Houston Welders company flyer (PDF)", "Propane forklift cylinder program flyer (PDF)", "On-site calibration flyer (PDF)", "HWS credit application (PDF)"]
+    },
+    {
+      "heading": "Careers",
+      "text": "We are always looking for motivated, talented and driven people who want to grow, contribute and make an impact. We invest in your success through ongoing training, mentorship and career advancement. The hiring process runs from your resume to an initial review, phone or in-person interviews, a road test or skill evaluation for some roles, then an offer and onboarding. Email your resume to jobs@houstonwelders.com. #NOSLACKERS"
+    },
+    {
+      "heading": "Follow Us",
+      "items": ["Facebook: facebook.com/houstonwelderssupplybeaumont", "LinkedIn: linkedin.com/company/houston-welders-supply"]
+    }
+  ]
+}

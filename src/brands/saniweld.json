@@ -1,0 +1,295 @@
+{
+  "template": "industrial",
+  "preview": true,
+  "name": "Sani Weld Inc",
+  "shortName": "Sani Weld",
+  "phone": "(281) 442-0667",
+  "email": "info@sani-weld.com",
+  "address": "1614 Isom St",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77039",
+  "rating": 5,
+  "reviewCount": 13,
+  "since": 1977,
+  "brand": {
+    "primary": "#005e8d",
+    "primaryDeep": "#004263",
+    "accent": "#2196f3",
+    "ink": "#141f29",
+    "surface": "#f0f5f8",
+    "muted": "#5b6470",
+    "line": "#dee0e1",
+    "heading": "'Open Sans', system-ui, sans-serif",
+    "body": "'Lato', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Lato:wght@400;600;700&display=swap"
+  },
+  "heroStyle": "photo",
+  "tone": "classic",
+  "hero": {
+    "eyebrow": "Sani Weld · Houston",
+    "title": "Fabrication with imagination,",
+    "lead": "We are a family-owned welding and fabrication shop on the north side of Houston, making sanitary equipment for food processors and equipment for oil and gas producers.",
+    "image": "/brands/saniweld/photo1",
+    "imageAlt": "An operator loading sheet onto the AKS fiber laser cutting table in the Sani-Weld shop",
+    "titleAccent": "built to keep contamination out of your line."
+  },
+  "serviceArea": [
+    "Houston"
+  ],
+  "highlights": [
+    {
+      "title": "American made, family owned",
+      "text": "Our equipment is built in Houston by a family-owned company.",
+      "icon": "family"
+    },
+    {
+      "title": "Serving since 1977",
+      "text": "Our Houston facility has been building sanitary equipment for the food processing industry since 1977.",
+      "icon": "calendar"
+    },
+    {
+      "title": "3-A and FDA certified",
+      "text": "We are certified in 3-A and FDA weld specs.",
+      "icon": "badge"
+    },
+    {
+      "title": "Personal service",
+      "text": "With us you can expect prompt delivery and personal service every time.",
+      "icon": "truck"
+    }
+  ],
+  "credentials": [
+    {
+      "label": "Certified in 3-A & FDA Weld Specs"
+    },
+    {
+      "label": "Distributor for Topline Process Equipment"
+    }
+  ],
+  "industries": [
+    "Oil and gas production firms",
+    "Food service manufacturers/packers",
+    "Food processing",
+    "Clean room"
+  ],
+  "ask": "quote",
+  "summary": "Sani Weld in Houston does fabrication, machining, metal finishing, conveyor systems and sanitary piping for food processors, oil and gas producers and clean rooms.",
+  "groups": [
+    {
+      "slug": "machining",
+      "title": "Machining",
+      "icon": "settings",
+      "summary": "Our Houston facility boasts CNC controlled machines and skilled operators who create our line of UltraClean products or your custom project.",
+      "intro": "Our Houston facility boasts CNC controlled machines and skilled operators who create our line of UltraClean products or your custom project.",
+      "image": "/brands/saniweld/photo5",
+      "imageAlt": "The 750 ton Pacific press brake on the Sani-Weld shop floor"
+    },
+    {
+      "slug": "metal-finishing",
+      "title": "Metal Finishing",
+      "icon": "settings",
+      "summary": "Mechanical Polishing - sanding and polishing to produce single digit Ra finishes as preperation for electropolishing.",
+      "intro": "Mechanical Polishing - sanding and polishing to produce single digit Ra finishes as preperation for electropolishing, or as a finished product.",
+      "services": [
+        {
+          "slug": "mechanical-polishing",
+          "title": "Mechanical Polishing",
+          "icon": "settings",
+          "text": "Sanding and polishing to single digit Ra finishes, as preparation for electropolishing or as a finished product."
+        },
+        {
+          "slug": "pickling-passivation",
+          "title": "Pickling and Passivation",
+          "icon": "settings",
+          "text": "Pickling and passivation to ASTM 380."
+        }
+      ]
+    },
+    {
+      "slug": "conveyor-systems",
+      "title": "Conveyor Systems",
+      "icon": "settings",
+      "summary": "We build conveyor systems, and we can retrofit an existing production line with bearings, wear strips, sprockets and rollers.",
+      "intro": "We build conveyor systems, and we can retrofit an existing production line with bearings, wear strips, sprockets and rollers.",
+      "services": [
+        {
+          "slug": "ultraclean-conveyors",
+          "title": "UltraClean Conveyors",
+          "icon": "settings",
+          "text": "Our patented Flat Bed Conveyor is the preferred USDA accepted conveyor on the market, and UltraClean conveyors come as single units or complete systems.",
+          "points": [
+            "Assemble and disassemble in minutes without tools",
+            "Easier cleaning reduces downtime",
+            "Built to 3A, USDA or FDA standards",
+            "Beds, frames and end rollers fabricated with 304 stainless steel",
+            "Fully seal welded to eliminate laminated surfaces and reduce contamination growth",
+            "Pressure tested frame",
+            "Through holes are welded sleeves to prevent internal contamination",
+            "Available in custom specifications and a wide variety of industry-approved belting",
+            "Available with UltraClean electropolish finish"
+          ]
+        },
+        {
+          "slug": "conveyor-retrofits",
+          "title": "Conveyor Retrofits",
+          "icon": "wrench",
+          "text": "We retrofit existing production lines with bearings, rollers, sprockets and removable wear strips."
+        }
+      ]
+    },
+    {
+      "slug": "custom-equipment",
+      "title": "Custom Equipment",
+      "icon": "settings",
+      "summary": "Our design engineers use AutoCad and Solidworks for design work as well as fabrication, from an addition to your facility to a start-to-finish production line.",
+      "intro": "Let our design engineers streamline your operations to speed productivity. We use AutoCad and Solidworks to help you with design work as well as fabrication, and we can add to your existing facilities or create a start-to-finish production line."
+    },
+    {
+      "slug": "stainless-steel",
+      "title": "Stainless Steel",
+      "icon": "building",
+      "summary": "We weld stainless steel to 3-A and FDA weld specs, and our laser cutting table handles stainless up to 3/4 inch.",
+      "intro": "We weld stainless steel to 3-A and FDA weld specs, and our laser cutting table handles stainless up to 3/4 inch.",
+      "image": "/brands/saniweld/photo3",
+      "imageAlt": "Laser cutting and fabrication equipment on the Sani-Weld shop floor"
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Sanitary equipment from one Houston shop since 1977",
+    "text": [
+      "Since 1977 our Houston facility has developed sanitary equipment and processes designed to meet USDA, FDA, 3-A and AMI standards, and we are American made and family owned.",
+      "We are on the north side of Houston, within 15 minutes of IAH airport, with 25,000 square feet of manufacturing space, 15,000 of it under three 5 ton overhead cranes, and lift truck capability of 3000 pounds indoors or outdoors.",
+      "A full-time service field crew handles work on-site, our shop is equipped for logistics and freight pickups, and we serve oil and gas production firms as well as food service manufacturers and packers."
+    ],
+    "image": "/brands/saniweld/photo2",
+    "imageAlt": "The Sani-Weld, Inc. sign over the gate at the Isom Street shop"
+  },
+  "hours": [
+    [
+      "Mon – Fri",
+      "7 AM – 4 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
+  "facts": [
+    {
+      "heading": "Services We Provide",
+      "items": [
+        "Conveyor systems",
+        "Clean room furniture and fixtures",
+        "Oilfield equipment",
+        "Parts department",
+        "Custom equipment",
+        "Stainless steel",
+        "Sanitary piping systems",
+        "Electrical enclosures",
+        "Fluid handling systems",
+        "Kitchen equipment",
+        "Ornamental metal",
+        "Vessel repairs",
+        "Chutes and flumes",
+        "Metal tanks and vessels",
+        "Piping systems",
+        "Packaging equipment",
+        "Structural steel",
+        "Repair services",
+        "On-site repairs"
+      ]
+    },
+    {
+      "heading": "Request a Quote",
+      "text": "Tell us about yourself and your organization and one of our sales representatives will contact you as soon as possible. We protect your privacy: we do not sell or distribute contact information, and it is used only to better serve your business needs."
+    },
+    {
+      "heading": "Installation",
+      "text": "Our service experts install our systems on-site with minimal interruption to your production line. We install complete systems, modify your existing system with our conveyors and machines, or retrofit existing systems with UltraClean parts and conveyor accessories."
+    },
+    {
+      "heading": "Food Industry Products",
+      "items": [
+        "Our patented Flat Bed Conveyor is the preferred USDA accepted conveyor on the market",
+        "Electropolished sanitary surfaces have been proven to reduce contamination",
+        "Our dual case washer is unique to the beverages and dairy industries"
+      ],
+      "text": "Pathogens are a significant public health problem for food processors, and can be particularly problematic in food handling equipment. Our UltraClean line of conveyors and electropolished products lets you clean your production line more quickly and thoroughly and promotes a contamination-free environment for your product."
+    },
+    {
+      "heading": "UltraClean Conveyor Models",
+      "items": [
+        "Flat Bed Conveyor",
+        "Vertical Lift Conveyor",
+        "Incline Conveyor",
+        "Modular Conveyor",
+        "Curved Conveyor",
+        "Conveyor Accessories"
+      ]
+    },
+    {
+      "heading": "Oil and Gas Industry",
+      "text": "All oil and gas processing products are fabricated to customer specifications. Bring us your design or let our design engineers create the solution, whether in our shop, at your facility or on the job site."
+    },
+    {
+      "heading": "Clean Room Industry",
+      "items": [
+        "Growing racks",
+        "Computer enclosures"
+      ],
+      "text": "All clean room products are custom fabricated to customer specifications."
+    },
+    {
+      "heading": "Sheet Metal Shop Equipment",
+      "items": [
+        "2018 Mitsubishi 4KW Fiber Laser Cutting Table – 60 x 120 inch sheet, 1 inch steel, 3/4 inch stainless, 1/2 inch aluminum",
+        "2012 AKS / Hypertherm 2KW Fiber Laser Cutting Table – 60 x 120 inch sheet, 5/8 inch steel, 3/8 inch stainless, 3/16 inch aluminum",
+        "2012 Haco Press Brake – 225 ton, 12 foot bed, 10 feet between uprights",
+        "1996 Hypertherm 100Amp Plasma Cutting Table – 96 x 140 inch sheet, 1 inch steel and stainless, 3/4 inch aluminum",
+        "1989 Haco / Atlantic Press Brake – 150 ton, 12 foot bed, 9 feet between uprights",
+        "1958 Pacific Press Brake – 750 ton, 20 foot bed, 14 feet between uprights (refurbished in 2017)",
+        "1946 Cincinnati Shear – 10 foot cut length, 1/4 inch steel, 3/16 inch stainless, 3/8 inch aluminum"
+      ]
+    },
+    {
+      "heading": "Weld Shop Equipment",
+      "items": [
+        "4 stations with Miller Digital Syncrowave 250 Heliarc and Millermatic 252 Mig machines",
+        "Two additional Miller Syncrowave 250 Heliarc and Millermatic 252 Mig machines for extra capacity",
+        "The machines above are all newer than 2015",
+        "MBC 12 inch 3 jaw positioner, 200 pound capacity",
+        "Westward 24 inch face plate positioner, 600 pound capacity"
+      ]
+    },
+    {
+      "heading": "Machine Shop Equipment",
+      "items": [
+        "2012 Summit Engine Lathe – 4 inch spindle bore, 10 foot bed, 2-axis DRO",
+        "2012 ACER Vertical Mill – 10 x 54 inch bed, 24 inch knee travel, 3HP vari-drive motor, 3-axis DRO",
+        "1998 Vantage Engine Lathe – 3 inch spindle bore, 9 foot bed",
+        "1986 Kalamazoo Band Saw – 12 x 12 inch max cut",
+        "1984 Wells Index Vertical Mill – 9 x 54 inch bed, 18 inch knee travel, 3HP motor with vari-belt drive",
+        "1974 Van Norman Horizontal Mill – 12 x 48 inch bed, 16 inch knee travel, 5HP motor",
+        "1942 G & L Horizontal Boring Mill – 18 x 18 inch bed, 3 inch x 17 inch stroke quill"
+      ]
+    },
+    {
+      "heading": "Polishing Shop Equipment",
+      "items": [
+        "Baldor Pipe and Tubing Polisher – 3 inch capacity, infinite length",
+        "Baldor Pedestal Grinders",
+        "Hammond Flat Finisher – 10 inch usable width, 4 inch tall capacity, infinite length"
+      ]
+    },
+    {
+      "heading": "Distributor",
+      "text": "We are a distributor for Topline Process Equipment (toplineonline.com) and keep most fittings up to 3 inches in stock."
+    },
+    {
+      "heading": "Racing",
+      "text": "At Sani-Weld, we like to play as hard as we work. The father and son racing team of Doug and Neil Manchester has run local tracks for more than ten years and consistently finishes in the top five, whether in the Bomber, Street Stock, Late Model or UMP Modified divisions. With one bomber championship under their belts, you can catch the Sani-Weld racing team at 105 Speedway or Gator Speedway."
+    }
+  ]
+}
