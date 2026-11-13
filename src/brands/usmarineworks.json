@@ -1,0 +1,348 @@
+{
+  "template": "industrial",
+  "preview": true,
+  "name": "US Marine Works",
+  "shortName": "US Marine Works",
+  "phone": "(832) 799-2157",
+  "email": "service@usmarineworks.com",
+  "address": "1717 Turning Basin Dr Ste 430",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77029",
+  "brand": {
+    "primary": "#0b3c61",
+    "primaryDeep": "#082a44",
+    "accent": "#ef4044",
+    "ink": "#151d25",
+    "surface": "#f0f3f6",
+    "muted": "#5b6470",
+    "line": "#dedfe1",
+    "heading": "'Roboto', system-ui, sans-serif",
+    "body": "'Noto Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap",
+    "logo": "/brands/usmarineworks/logo.webp",
+    "logoMono": "/brands/usmarineworks/logo-mono.webp",
+    "logoWidth": 201,
+    "logoHeight": 74,
+    "logoRatio": 2.71,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.438,
+      0.296,
+      0.163,
+      0.152,
+      0.168,
+      0.299,
+      0.434,
+      0.572,
+      0.716,
+      0.863,
+      0.999
+    ]
+  },
+  "heroStyle": "split",
+  "tone": "bold",
+  "hero": {
+    "eyebrow": "Ship repair and service · Houston, Texas",
+    "title": "Supporting ships",
+    "titleAccent": "in the Americas.",
+    "lead": "US Marine Works carries out the entire range of ship repair, service, maintenance and inspection services, at docks, at anchorage or in port.",
+    "image": "/brands/usmarineworks/hero",
+    "imageAlt": "Three container ships under way on open water"
+  },
+  "serviceArea": [
+    "North America",
+    "USA",
+    "Dominican Republic",
+    "Panama",
+    "Brazil",
+    "Argentina",
+    "Colombia",
+    "Canada",
+    "Mexico"
+  ],
+  "highlights": [
+    {
+      "title": "100+ years combined",
+      "text": "Our team collectively holds over 100 years of experience in the marine repair industry.",
+      "icon": "award"
+    },
+    {
+      "title": "Docks, anchorage or port",
+      "text": "Our qualified repair teams carry out technical services wherever your vessel is.",
+      "icon": "anchor"
+    },
+    {
+      "title": "Routine or urgent",
+      "text": "Our qualified service engineers are equipped for routine maintenance or urgent repairs.",
+      "icon": "clock"
+    }
+  ],
+  "phones": [
+    {
+      "label": "Office",
+      "number": "(832) 967-7523"
+    }
+  ],
+  "industries": [
+    "Ship owners and management"
+  ],
+  "ask": "quote",
+  "summary": "US Marine Works carries out ship repair, service, maintenance and inspection from Houston, Texas, for vessels at docks, at anchorage and in ports across the Americas.",
+  "groups": [
+    {
+      "slug": "steel-repairs",
+      "title": "Steel Repairs",
+      "icon": "flame",
+      "summary": "Shipside steel and pipeline renewal, fabrication and onboard welding.",
+      "intro": "We renew steel and pipelines shipside and fabricate structural and pipe work for vessels, from catwalks and railings to stopper plates, reducers and stainless-steel tank repairs.",
+      "services": [
+        {
+          "slug": "shipside-steel-renewal",
+          "title": "Shipside Steel Renewal",
+          "icon": "ship",
+          "text": "Steel renewal carried out shipside, along with pipeline renewal.",
+          "points": [
+            "Shipside steel renewal",
+            "Pipeline renewal"
+          ]
+        },
+        {
+          "slug": "structural-and-pipe-fabrication",
+          "title": "Structural and Pipe Fabrication",
+          "icon": "settings",
+          "text": "Structural and pipe fabrication for vessels, with prefabrication and supply.",
+          "points": [
+            "Structural and pipe fabrication",
+            "Prefabrication and supply",
+            "Catwalks, railings and platforms",
+            "Gangway repair"
+          ]
+        },
+        {
+          "slug": "stoppers-and-d-rings",
+          "title": "Stopper Plates and D-Rings",
+          "icon": "wrench",
+          "text": "Fabrication of stopper plates in all sizes, and welding of stoppers and D-rings onboard the vessel.",
+          "points": [
+            "Stopper plates, all sizes",
+            "Stoppers and D-rings welded onboard"
+          ]
+        },
+        {
+          "slug": "reducers",
+          "title": "Reducers",
+          "icon": "boxes",
+          "text": "Reducers fabricated in carbon steel and stainless steel, for purchase or rental.",
+          "points": [
+            "Carbon steel",
+            "Stainless steel",
+            "Purchase or rental"
+          ]
+        },
+        {
+          "slug": "special-projects",
+          "title": "Special Projects",
+          "icon": "clipboard",
+          "text": "Special projects such as stainless-steel tank and pipeline repairs."
+        }
+      ]
+    },
+    {
+      "slug": "machinery-repair-service-and-overhaul",
+      "title": "Machinery Repair, Service, and Overhaul",
+      "icon": "gauge",
+      "summary": "Main and auxiliary engines, deck machinery, HVAC, electrical and automation.",
+      "intro": "Our service engineers repair, service and overhaul the machinery aboard your vessel, from main and auxiliary engines to cranes, deck hydraulics, refrigeration and bridge navigation equipment.",
+      "services": [
+        {
+          "slug": "engines",
+          "title": "Main and Auxiliary Engines",
+          "icon": "settings",
+          "text": "Main engine and auxiliary engine overhaul and retrofit, including M/E HP pumps, plungers and barrels, and pistons and liners.",
+          "points": [
+            "Main engine",
+            "Auxiliary engines",
+            "M/E HP pumps, plungers and barrels",
+            "Pistons and liners"
+          ]
+        },
+        {
+          "slug": "pumps-compressors-boilers",
+          "title": "Pumps, Compressors and Boilers",
+          "icon": "gauge",
+          "text": "Pumps, compressors and blowers, and boilers.",
+          "points": [
+            "Pumps, compressors and blowers",
+            "Boilers",
+            "IGG system"
+          ]
+        },
+        {
+          "slug": "refrigeration-and-hvac",
+          "title": "Refrigeration and HVAC",
+          "icon": "snowflake",
+          "text": "Refrigeration and HVAC maintenance, repairs, inspections and testing."
+        },
+        {
+          "slug": "deck-machinery-and-cranes",
+          "title": "Deck Machinery and Cranes",
+          "icon": "anchor",
+          "text": "Windlass, mooring winch and deck machinery, with crane services and deck hydraulics.",
+          "points": [
+            "Windlass and mooring winch",
+            "Deck machinery",
+            "Cranes and deck hydraulics"
+          ]
+        },
+        {
+          "slug": "electrical-and-automation",
+          "title": "Electrical and Automation",
+          "icon": "zap",
+          "text": "Electrical and automation work, and electric motors supplied or serviced.",
+          "points": [
+            "Electrical and automation",
+            "Electric motors, supply or service",
+            "Bridge navigation equipment"
+          ]
+        },
+        {
+          "slug": "alignments-and-vibration",
+          "title": "Alignments and Vibration Analysis",
+          "icon": "chart",
+          "text": "Alignments and vibration analysis."
+        },
+        {
+          "slug": "fire-and-safety",
+          "title": "Fire and Safety",
+          "icon": "shield",
+          "text": "Fire and safety equipment."
+        }
+      ]
+    },
+    {
+      "slug": "inspection-services",
+      "title": "Inspection Services",
+      "icon": "clipboard",
+      "summary": "Vessel inspections, audits, investigations, testing and condition assessment.",
+      "intro": "We inspect, audit and assess vessels, including condition reporting on the owner's behalf, pre-purchase and Pre-SIRE and Pre-USCG inspections, and testing from NDT to gauge calibration.",
+      "services": [
+        {
+          "slug": "vessel-inspection-and-condition",
+          "title": "Vessel Inspection and Condition",
+          "icon": "ship",
+          "text": "Vessel inspection reports and vessel condition assessment, with condition reporting on the owner's behalf.",
+          "points": [
+            "Vessel inspection report",
+            "Vessel condition assessment",
+            "Pre-purchase inspection",
+            "Pre-SIRE, Pre-USCG inspection"
+          ]
+        },
+        {
+          "slug": "audits-and-investigations",
+          "title": "Audits and Investigations",
+          "icon": "clipboard",
+          "text": "Audits, damage and incident investigation, and MARPOL audits and investigation.",
+          "points": [
+            "Audits",
+            "Damage and incident investigation",
+            "MARPOL audits and investigation"
+          ]
+        },
+        {
+          "slug": "annual-inspections",
+          "title": "Annual Inspections",
+          "icon": "timer",
+          "text": "Lifeboat annual inspections and elevator annual inspections.",
+          "points": [
+            "Lifeboat annual inspections",
+            "Elevator annual inspections"
+          ]
+        },
+        {
+          "slug": "testing",
+          "title": "Testing and Calibration",
+          "icon": "gauge",
+          "text": "Pressure testing and calibration of gauges, NDT, UTM and UTI, and other inspections and testing.",
+          "points": [
+            "Pressure testing and calibration of gauges",
+            "NDT, UTM, UTI"
+          ]
+        },
+        {
+          "slug": "underwater-repairs",
+          "title": "Underwater Repairs",
+          "icon": "waves",
+          "text": "Underwater (diver) repairs."
+        }
+      ]
+    },
+    {
+      "slug": "technical-supplies",
+      "title": "Technical Supplies",
+      "icon": "boxes",
+      "summary": "Technical components, electrical motors, ship stores and spare parts.",
+      "intro": "We source technical components, electrical motors and equipment, vessel ship stores and spare parts, and carry out retrofits.",
+      "services": [
+        {
+          "slug": "technical-components",
+          "title": "Technical Components",
+          "icon": "settings",
+          "text": "Sourcing technical components, electrical motors and equipment, and retrofits.",
+          "points": [
+            "Technical components",
+            "Electrical motors and equipment",
+            "Retrofits"
+          ]
+        },
+        {
+          "slug": "ship-stores-and-spare-parts",
+          "title": "Ship Stores and Spare Parts",
+          "icon": "boxes",
+          "text": "Vessel ship stores and spare parts.",
+          "points": [
+            "Vessel ship stores",
+            "Spare parts"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "More than a ship repair company.",
+    "text": [
+      "At US Marine Works, we are committed collaborators dedicated to ensuring the seamless operation of vessels. Established in Houston, Texas, USA, our team collectively holds over 100 years of experience in the marine repair industry.",
+      "Our commitment extends beyond routine repairs: we collaborate with ship owners and management to optimize vessel performance for their customers. Whether your vessel requires technical services at docks, anchorage or ports worldwide, our qualified repair teams are ready to meet your needs.",
+      "From sailing with your vessel to completing repairs in any port, we hold to high standards of craftsmanship. We understand the urgency of maritime operations, so we offer timely and efficient assistance along with our expertise."
+    ]
+  },
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
+  "facts": [
+    {
+      "heading": "Our Live Agents Are Ready to Assist You",
+      "text": "Reach out for expert guidance, tailored solutions and friendly support."
+    },
+    {
+      "heading": "Email",
+      "items": [
+        "service@usmarineworks.com",
+        "sanjiv.mishra@usmarineworks.com"
+      ]
+    },
+    {
+      "heading": "Follow Us",
+      "items": [
+        "Facebook: https://www.facebook.com/profile.php?id=61552518539987",
+        "LinkedIn: http://www.linkedin.com/in/us-marine-works",
+        "Instagram: https://www.instagram.com/usmarineworks/"
+      ]
+    }
+  ]
+}
