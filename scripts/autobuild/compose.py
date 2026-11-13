@@ -280,6 +280,13 @@ def sells_medicine(text, trade):
 SINCE = re.compile(r"\b(?:since|established|founded|est\.?|serving [^.]{0,40} since)\s+(?:in\s+)?((?:19|20)\d\d)\b", re.I)
 LICENSE = re.compile(r"\b((?:TDLR|TACLA|TECL|TDI|NPN|License|Lic\.)\s*(?:No\.?|#|Number)\s*:?\s*[A-Z]{0,6}-?\d[\w-]{3,})", re.I)
 NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient education|what|when|where|your|schedule|consult|consultation|request|quotes?|checklist|estimator|calculator|quiz(?:zes)?|types of|signs (?:of|that|you)|causes? of|(?:needed|required) for|(?:benefits?|advantages|importance) of|our|blog|news|faqs?|frequently asked|questions?|costs?|prices?|pricing|understanding|near me|reviews?|testimonials?|careers?|financing|coupons?|specials?|offer|% off|\$|free|contact|call|about|portal|login|pay|apply|learn|read|welcome|meet|experts?|areas?|locations?|view|more|projects?|types?|gallery|portfolio|resources?|(?<!chain[- ])links?|trusted|best|top|leading|most|#1|number one|award|privacy|terms|glossary|forms|payments?|order|explore|steps|chart|options|by the numbers|excellence|one-stop|you can|solutions?|division|team|crews?|staff|professionals?|pros|painters?|technicians?|office|branch|powered|serving|products|vice president|vp|agents?|assistants?|hygienists?|dentists?|orthodontists?|periodontists?|endodontists?|prosthodontists?|surgeons?|physicians?|providers?|receptionists?|coordinators?|managers?|industry|page|apps?|directory|companies|contractors?|finance a|overview|info|dangers?)\b", re.I)
+# A heading that asks the reader in ("Ask a Medicare Question"), greets them
+# where they stand ("Already on Medicare", "New to Medicare"), shelves their
+# material ("Medicare Video Library") or dates their deadlines ("Medicare
+# Enrollment Periods") is a page of their site for the reader, not a service.
+FOR_THE_READER = re.compile(r"^(?:ask|already on|new to)\b|\blibrary\b|\benrol(?:l)?ment periods?\b", re.I)
+# Names that keep their capitals inside a sentence ("Medicare supplements").
+PROPER = ("Medicare Advantage", "Medicare", "Medicaid")
 ACRONYMS = {"IRS", "CFO", "CPA", "CPAS", "HVAC", "AC", "A/C", "TPO", "LLC", "QB", "EPDM", "UV", "HOA", "1031", "S-CORP",
             "NDE", "NDT", "CNC", "OEM", "ASME", "AWS", "MIG", "TIG", "CWI", "PLC", "QA", "QC"}
 # A business's own name, or anything carrying a corporate suffix, is never
@@ -799,7 +806,7 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         name = re.sub(r"\b(\w+)\s+(?=\1\b)", "", name, flags=re.I)
         if not (3 <= len(name) <= 42) or len(name.split()) > 6 or GENERIC_NAV.match(name):
             return
-        if not pattern.search(name) or re.search(r"[?!@]|\d{3}", name) or NOT_A_SERVICE.search(name) or re.match(r"(on|for|with|to|in|at|from|and|i|my|we)\b", name, re.I):
+        if not pattern.search(name) or re.search(r"[?!@]|\d{3}", name) or NOT_A_SERVICE.search(name) or FOR_THE_READER.search(name) or re.match(r"(on|for|with|to|in|at|from|and|i|my|we)\b", name, re.I):
             return
         # A heading that opens on a bidding verb ("Find Storage", "Rent a Unit",
         # "Select a Fence Style", "Keep the Wheels Turning", "Upgrade to a Roof
@@ -1510,6 +1517,8 @@ def hero_line(services, town, label, trade=None, name=""):
     # Each half of a slashed word ("Controller/CFO") keeps its own initials.
     low = lambda w: w if (w.isupper() and len(w) > 1) or w.upper() in ACRONYMS else "/".join(low(p) for p in w.split("/")) if "/" in w else w.lower()
     every = [" ".join(low(w) for w in t.split()) for t in named]
+    every = [re.sub(rf"\b(?:{'|'.join(PROPER)})\b", lambda m: next(p for p in PROPER if p.lower() == m.group(0).lower()), t, flags=re.I)
+             for t in every]
     lower = every[:2]
     phrase = lambda t: re.search(r"&|\b(?:and|or|for|of|with|to)\b", t, re.I)
 
