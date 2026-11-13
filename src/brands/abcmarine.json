@@ -1,0 +1,374 @@
+{
+  "template": "industrial",
+  "preview": true,
+  "name": "ABC Marine Enterprises, LLC",
+  "shortName": "ABC Marine",
+  "phone": "(800) 970-1763",
+  "email": "serviceusa@abc-maritime.com",
+  "address": "5734 Heffernan St",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77087",
+  "hours": [
+    [
+      "Mon – Sun",
+      "7 AM – 11 PM"
+    ]
+  ],
+  "brand": {
+    "primary": "#0000cc",
+    "primaryDeep": "#00008f",
+    "accent": "#7575ff",
+    "ink": "#14182e",
+    "surface": "#f0f0fc",
+    "muted": "#5b6470",
+    "line": "#dedfe2",
+    "heading": "'Barlow Condensed', 'Arial Narrow', system-ui, sans-serif",
+    "body": "'Barlow', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap",
+    "logo": "/brands/abcmarine/logo.webp",
+    "logoMono": "/brands/abcmarine/logo-mono.webp",
+    "logoWidth": 260,
+    "logoHeight": 47,
+    "logoRatio": 5.525,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.273,
+      0.102,
+      0.056,
+      0.137,
+      0.449,
+      0.53,
+      0.614,
+      0.705,
+      0.803,
+      0.903,
+      1.0
+    ]
+  },
+  "heroStyle": "type",
+  "tone": "classic",
+  "summary": "Lifeboat and davit inspection, repair and sales, ship repair and shop machining, load testing, Siyang diesel engines and technical supply, from Houston, Los Angeles and Panama.",
+  "hero": {
+    "eyebrow": "Marine services · Houston, Los Angeles and Panama",
+    "title": "Class-related and technical marine services",
+    "titleAccent": "for lifeboats, davits and the ships that carry them.",
+    "lead": "ABC Marine is a marine service provider for class-related and technical services in North America, and one of the life-saving appliance suppliers in the US Gulf. Our certificated and experienced professionals offer a package of services for lifeboats and davits, welding, shop machining, and hydraulic and load tests."
+  },
+  "highlights": [
+    {
+      "title": "One-Time Visit",
+      "text": "Inspection, release gear test, on-load test, and repairs and parts if needed, in a single visit, which saves time and cost.",
+      "icon": "clipboard"
+    },
+    {
+      "title": "Class-Approved Appliances",
+      "text": "Our life-saving appliances are approved by class societies including ABS, NK, BV, LR, DNV, KR, GL, RINA, RS and USCG.",
+      "icon": "certified"
+    },
+    {
+      "title": "24/7 Line",
+      "text": "Our Houston, Los Angeles and Panama line, (800) 970-1763, is open 24/7.",
+      "icon": "clock"
+    }
+  ],
+  "phones": [
+    {
+      "label": "Houston, Los Angeles & Panama (24/7)",
+      "number": "(800) 970-1763"
+    },
+    {
+      "label": "New Jersey",
+      "number": "(201) 706-7897"
+    }
+  ],
+  "emergency": {
+    "title": "24/7 line",
+    "text": "Call (800) 970-1763, our Houston, Los Angeles and Panama line, any time, 24/7."
+  },
+  "ask": "quote",
+  "groups": [
+    {
+      "slug": "lifeboat-davit",
+      "title": "Lifeboats, Davits & Winches",
+      "icon": "waves",
+      "summary": "Sales, inspection, repair and spare parts for lifeboats, rescue boats, davits and winches.",
+      "intro": "Our certificated engineers, authorized by the manufacturers, can offer a package of service on one visit: inspection, release gear test and on-load test, with repairs and part supply if necessary. That makes a difference and saves time and cost.",
+      "services": [
+        {
+          "slug": "sales",
+          "title": "Sales: New Lifeboats, Davits & Winches",
+          "icon": "ship",
+          "text": "ABC Marine is a sales office for the maker Neptune and others in North and South America. We supply a complete range of boats, davits and winches to meet custom requirements in the marine and oil industry. All of our life-saving appliances are approved by the class societies of CCS, ABS, NK, BV, LR, DNV, KR, GL, RINA, RS and USCG, and comply with SOLAS as amended in 1996, the LSA Code and MSC.81(70), MSC.218(82), MSC.216(82), MSC.226(82), MSC.272(85) and MSC.274(85).",
+          "points": [
+            "F.R.P. lifeboats: free fall, totally enclosed, partially enclosed and open type",
+            "Rescue boats, fast rescue boats and inflatable fender rescue boats",
+            "Gravity, platform and free fall davits",
+            "Winches"
+          ]
+        },
+        {
+          "slug": "inspection",
+          "title": "Inspection",
+          "icon": "clipboard",
+          "text": "Inspection of lifeboats, davits and winches by certificated engineers authorized by the manufacturers, with repairs and part supply on the same visit if necessary.",
+          "points": [
+            "Lifeboat annual inspection",
+            "Lifeboat five year inspection",
+            "Release gear replacement",
+            "On load test",
+            "Dynamic brake test",
+            "Davit inspection"
+          ]
+        },
+        {
+          "slug": "repair",
+          "title": "Repair",
+          "icon": "wrench",
+          "text": "Our experienced and professional engineers offer one-stop lifeboat service: lifeboat repair, fiberglass repair, engine repair, brake overhaul and davit service.",
+          "points": [
+            "Lifeboat repair",
+            "Fiberglass repair",
+            "Engine repair",
+            "Cable adjustment",
+            "Davit repair",
+            "Brake overhaul"
+          ]
+        },
+        {
+          "slug": "spare-parts",
+          "title": "Spare Parts",
+          "icon": "boxes",
+          "text": "Parts and materials for lifeboats, davits and winches.",
+          "points": [
+            "Lifeboat parts",
+            "Davit parts",
+            "Fibreglass materials",
+            "Winch parts",
+            "FPD strops",
+            "Seal rings, new hooks and brake linings",
+            "Bilge pumps, chargers and compasses",
+            "Controlling cables, wire rope, indicating lights and search lights"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ship-repair",
+      "title": "Ship Repair & Shop Machining",
+      "icon": "flame",
+      "summary": "Welding, fabrication and repair by certificated welders who read blueprints, schematics and technical publications.",
+      "intro": "We offer extremely high quality welding and fabrication service and repair. Our welding professionals are certificated, and we are able to read and interpret blueprints, schematics and technical publications.",
+      "services": [
+        {
+          "slug": "fabrication",
+          "title": "Pipe & Steel Fabrication",
+          "icon": "settings",
+          "text": "Pipe fabrication, and fabrication in steel, stainless steel, carbon steel and high tensile steel.",
+          "points": [
+            "Pipe fabrication",
+            "Steel and stainless steel fabrication",
+            "Carbon steel",
+            "High tensile steel"
+          ]
+        },
+        {
+          "slug": "welding",
+          "title": "Welding",
+          "icon": "flame",
+          "text": "Certificated welders and high quality craftsmanship.",
+          "points": [
+            "FCAW, GMAW, GTAW and SAW",
+            "MIG welding",
+            "TIG welding",
+            "Brazing"
+          ]
+        },
+        {
+          "slug": "engine-and-deck",
+          "title": "Main Engine & Deck Machinery",
+          "icon": "gauge",
+          "text": "Our experience includes main engine overhaul and deck machinery."
+        }
+      ]
+    },
+    {
+      "slug": "load-test",
+      "title": "Load Testing",
+      "icon": "gauge",
+      "summary": "Turnkey proof-load tests for lifeboats and davits, cranes, gangways and ladders, and lifting equipment.",
+      "intro": "ABC Marine offers turnkey services for proof-load tests, along with hydraulic tests.",
+      "services": [
+        {
+          "slug": "lifeboat-davit-load-test",
+          "title": "Lifeboats & Davits",
+          "icon": "waves",
+          "text": "Proof-load tests of lifeboats and davits, and on load tests during inspection."
+        },
+        {
+          "slug": "crane-load-test",
+          "title": "Cranes",
+          "icon": "building",
+          "text": "Proof-load tests of cranes. One of our projects was the annual survey and proof load test of a 150Te knuckle boom crane to 100% of WLL."
+        },
+        {
+          "slug": "gangway-ladder",
+          "title": "Gangways & Ladders",
+          "icon": "ruler",
+          "text": "Proof-load tests of gangways and ladders."
+        },
+        {
+          "slug": "lifting-equipment",
+          "title": "Lifting Equipment",
+          "icon": "anchor",
+          "text": "Proof-load tests of lifting equipment."
+        }
+      ]
+    },
+    {
+      "slug": "siyang-engine",
+      "title": "Siyang Diesel Engines",
+      "icon": "settings",
+      "summary": "Sales, service and spare parts center in North and South America for Siyang diesel engines.",
+      "intro": "ABC Marine is the sales, service and spare parts center in North and South America for Siyang diesel engines.",
+      "services": [
+        {
+          "slug": "marine-diesel-engines",
+          "title": "Marine Diesel Engines",
+          "icon": "gauge",
+          "text": "Siyang high speed marine diesel engines, with sales, service and spare parts.",
+          "points": [
+            "High speed marine diesel engines",
+            "Diesel engine sets for totally enclosed lifeboats",
+            "Diesel engines for fishing boats",
+            "Marine diesel engine equipment",
+            "Hydraulic starting devices for diesel engines"
+          ]
+        },
+        {
+          "slug": "generators-and-pumps",
+          "title": "Generator Sets & Pumps",
+          "icon": "power",
+          "text": "Siyang generator sets and pump units for ships.",
+          "points": [
+            "Marine diesel generator sets",
+            "Marine emergency fire pump units",
+            "Water jet propulsion pumps"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "supply-logistics",
+      "title": "Supply & Logistics",
+      "icon": "truck",
+      "summary": "Technical supply, warehousing, freight shipping, customs clearance and boat transportation for fleets in the US Gulf of Mexico.",
+      "intro": "The destination of your global logistics for your fleet in the US Gulf of Mexico.",
+      "services": [
+        {
+          "slug": "technical-supply",
+          "title": "Technical Supply",
+          "icon": "boxes",
+          "text": "Technical supply for your fleet, including spare parts delivery."
+        },
+        {
+          "slug": "warehousing",
+          "title": "Warehousing & Distribution",
+          "icon": "building",
+          "text": "Material warehousing and distribution."
+        },
+        {
+          "slug": "freight",
+          "title": "Freight & Customs",
+          "icon": "ship",
+          "text": "Domestic and international freight shipping, and customs clearance.",
+          "points": [
+            "Domestic freight shipping",
+            "International freight shipping",
+            "Customs clearance"
+          ]
+        },
+        {
+          "slug": "boat-transportation",
+          "title": "Boat Transportation",
+          "icon": "truck",
+          "text": "Transportation of boats."
+        }
+      ]
+    }
+  ],
+  "industries": [
+    "Marine",
+    "Oil industry"
+  ],
+  "credentials": [
+    {
+      "label": "Class society approvals",
+      "detail": "Our life-saving appliances are approved by CCS, ABS, NK, BV, LR, DNV, KR, GL, RINA, RS and USCG"
+    },
+    {
+      "label": "SOLAS and LSA Code",
+      "detail": "Appliances comply with SOLAS as amended in 1996, the LSA Code and MSC.81(70), MSC.218(82), MSC.216(82), MSC.226(82), MSC.272(85) and MSC.274(85)"
+    },
+    {
+      "label": "Manufacturer-authorized engineers",
+      "detail": "Certificated engineers authorized by the manufacturers"
+    },
+    {
+      "label": "Certificated welders",
+      "detail": "Welding professionals certificated for ship repair"
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Los Angeles",
+    "Panama",
+    "New Jersey"
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Your marine service provider in North America",
+    "text": [
+      "ABC Marine is your reliable marine service provider for class-related and technical services in North America, and one of the life-saving appliance suppliers in the US Gulf.",
+      "Our certificated and experienced professionals offer a package of services for lifeboats and davits, welding, shop machining, and hydraulic and load tests. Our welding professionals are certificated, and we offer ship repairs such as shop machining and hydraulic and proof-load tests.",
+      "We are a sales office for the maker Neptune and others in North and South America, and the sales, service and spare parts center for Siyang diesel engines in North and South America. Our shop is in Houston."
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Our Offices",
+      "items": [
+        "Houston, Los Angeles and Panama: serviceusa@abc-maritime.com, tel (800) 970-1763 (24/7), fax (713) 799-9480",
+        "New Jersey: abcmarine@abc-maritime.com, tel (201) 706-7897, fax (201) 331-7806"
+      ]
+    },
+    {
+      "heading": "Recent Projects",
+      "items": [
+        "New Hook Replacement: According to the requirements of Paragraphs 4.4.7.6.4 to 4.4.7.6.6 of MSC.48(66), the International Life-saving Appliance Code, MSC.1392 and MSC.320(89), we performed hook replacements for the vessel Nilza in the shipyard. The maker of the lifeboat is Neptune.",
+        "Emergency Service: During annual service performed by a third party, the lifeboat fell to the water from its stowed position. One crew member inside the boat was in critical condition, and the lifeboat was seriously damaged in construction. We performed emergency service and moved the boat to our shop in Houston to strengthen the construction and make related repairs.",
+        "Collision Repair: The lifeboat was damaged by hitting a bridge during transportation on a truck, and the whole top part and construction area were damaged. The boat was moved to our shop in Houston for complete repair. A new module was designed and built for the top part to the drawings supplied by the boat maker, Qingdao Beihai.",
+        "150T Crane Load Test: Annual survey and proof load test of a 150Te knuckle boom crane to 100% of WLL. During the holding period the crane was slewed left and right five degrees and the test load hoisted up and down 1 meter."
+      ]
+    },
+    {
+      "heading": "Who Like Us",
+      "items": [
+        "Yiannis, Greece: “It’s very impressive these guys do the job on the deck at 15°F with strong wind in Portland ME …”",
+        "Subrata, Singapore: “They did great job – to design mold to re-construction the top part of our lifeboat which was off during transportation…”",
+        "Bill, USA: “They will tell you some parts need to be replaced, and also they will mention some new ones in their service truck…”"
+      ]
+    },
+    {
+      "heading": "Brands We Carry",
+      "items": [
+        "Neptune lifeboats, davits and winches: sales office in North and South America",
+        "Siyang diesel engines: sales, service and spare parts center in North and South America"
+      ]
+    },
+    {
+      "heading": "Get in Touch",
+      "text": "Feel free to contact ABC Marine by email or phone with any questions or concerns, or fill in the form. We will gladly answer your questions and give you any information you need about our services."
+    }
+  ]
+}

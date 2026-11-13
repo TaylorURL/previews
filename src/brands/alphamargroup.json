@@ -1,0 +1,436 @@
+{
+  "template": "industrial",
+  "preview": true,
+  "name": "Alpha Mar Group",
+  "shortName": "Alpha Mar Group",
+  "phone": "(713) 644-1313",
+  "email": "sales@alphamar.us",
+  "address": "5814 Heffernan St",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77087",
+  "rating": 4.4,
+  "reviewCount": 14,
+  "brand": {
+    "primary": "#27397e",
+    "primaryDeep": "#1b2858",
+    "accent": "#8c87bd",
+    "ink": "#171c28",
+    "surface": "#f2f3f7",
+    "muted": "#5b6470",
+    "line": "#dfdfe1",
+    "heading": "'Roboto', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap",
+    "logo": "/brands/alphamargroup/logo.webp",
+    "logoMono": "/brands/alphamargroup/logo-mono.webp",
+    "logoWidth": 260,
+    "logoHeight": 42,
+    "logoRatio": 6.124,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.227,
+      0.182,
+      0.181,
+      0.309,
+      0.397,
+      0.493,
+      0.587,
+      0.684,
+      0.789,
+      0.896,
+      0.998
+    ]
+  },
+  "heroStyle": "photo",
+  "tone": "classic",
+  "hero": {
+    "eyebrow": "Ship and oil rig repair · Port of Houston",
+    "title": "Quality service around the world,",
+    "titleAccent": "around the clock.",
+    "lead": "Marine, offshore and industrial services from our shop near the Port of Houston: repairs, steel fabrication, machining, piping and engineering for ship owners, managers and the energy industry.",
+    "image": "/brands/alphamargroup/photo7",
+    "imageAlt": "A vessel's hull alongside the dock during an Alpha Mar Group repair"
+  },
+  "serviceArea": [
+    "Houston",
+    "Galveston",
+    "Corpus Christi"
+  ],
+  "highlights": [
+    {
+      "title": "Over 30 years",
+      "text": "Our repair division has served the maritime and offshore industries for over 30 years.",
+      "icon": "calendar"
+    },
+    {
+      "title": "24/7 number",
+      "text": "Our 24/7 number is always active and a quick response to your inquiries is granted.",
+      "icon": "clock"
+    },
+    {
+      "title": "ISO 9001:2015",
+      "text": "Received in November 2018, with a quality system for certified and traceable components.",
+      "icon": "certified"
+    },
+    {
+      "title": "Class approved welders",
+      "text": "Repairs to classification rules, accepted by Class and the U.S. Coast Guard.",
+      "icon": "shield"
+    }
+  ],
+  "industries": [
+    "Maritime",
+    "Offshore",
+    "Petrochemical",
+    "Energy",
+    "Ship owners and managers"
+  ],
+  "ask": "quote",
+  "summary": "Alpha Mar Group is a ship and oil rig repair company near the Port of Houston, offering marine, offshore and industrial services 24/7.",
+  "groups": [
+    {
+      "slug": "offshore-services",
+      "title": "Offshore Services",
+      "icon": "anchor",
+      "summary": "Highest standards in quality and safety for your offshore installation, rig or drill ship, in Houston and world wide.",
+      "intro": "With our expertise gained by working with marine vessels and industrial projects, our experienced personnel and engineers have a vast knowledge in application of marine classification society codes such as ABS, DNV and other IACS Members, as well as industrial codes such as ASME and API. Our project experience includes new process piping, structural reinforcements, pumping skid fabrications, hull repairs, specialized conversions, mechanical maintenance, machining services and customized rig modifications. In addition to our engineering services we offer inspection services, certification services, marine surveyor and cleaning and painting services for your rigs or drill ships. Knowing the hazards of working offshore, our team is well trained with the highest quality and safety standards in mind.",
+      "image": "/brands/alphamargroup/photo2",
+      "imageAlt": "An offshore platform at sea",
+      "services": [
+        {
+          "slug": "engineering",
+          "title": "Engineering",
+          "icon": "compass",
+          "text": "Our dedicated engineering department designs and engineers projects from scratch, from drop-in platforms for a semi-submersible rig to a custom hopper for a private terminal."
+        },
+        {
+          "slug": "inspections-tests",
+          "title": "Inspections / Tests",
+          "icon": "clipboard",
+          "text": "Inspection and certification services, marine surveyor services, ultrasonic hatch cover inspections, UT, x-ray and pressure testing, and load testing in our shop."
+        },
+        {
+          "slug": "steel-fabrication",
+          "title": "Steel Fabrication",
+          "icon": "building",
+          "text": "Structural fabrications, skids, tanks, bollards and steel replacement, welded by our class approved welders in our structural steel shop."
+        },
+        {
+          "slug": "ship-repairs",
+          "title": "Ship Repairs",
+          "icon": "ship",
+          "text": "Hull and shell plate repairs, steering gear, rudders, propellers, hatch covers and stern damage, often while the vessel is afloat or alongside."
+        },
+        {
+          "slug": "piping-services",
+          "title": "Piping Services",
+          "icon": "droplets",
+          "text": "New process piping, pipeline installations, heating coil repairs and potable water lines in carbon steel, stainless and special alloys."
+        },
+        {
+          "slug": "machining",
+          "title": "Machining",
+          "icon": "settings",
+          "text": "Our primary machining operations in Houston turn out parts manufacturing, shaft repairs and hundreds of machined parts for our clients."
+        },
+        {
+          "slug": "mechanical-services",
+          "title": "Mechanical Services",
+          "icon": "wrench",
+          "text": "Engine and auxiliary equipment repairs, mechanical maintenance, gearbox overhauls and main engine inspections."
+        },
+        {
+          "slug": "electrical-instrumentation",
+          "title": "Electrical & Instrumentation",
+          "icon": "zap",
+          "text": "Electrical wiring and layouts for new equipment, and rewinding of all kinds and sizes of generators and motors."
+        },
+        {
+          "slug": "crane-services",
+          "title": "Crane Services",
+          "icon": "hard-hat",
+          "text": "Crane jib repairs, crane foot bearing exchanges, wire sheave repairs and crane hook overhauls with load testing."
+        },
+        {
+          "slug": "gangways",
+          "title": "Gangways",
+          "icon": "anchor",
+          "text": "A wide stock of gangways to purchase or rent. We also modify gangways, and test and certify them before delivery."
+        },
+        {
+          "slug": "cleaning-painting",
+          "title": "Cleaning / Painting Services",
+          "icon": "filter",
+          "text": "Cargo hold and tank cleaning, sandblasting, and coating and painting for hulls, bulkheads, rigs and drill ships."
+        },
+        {
+          "slug": "spare-parts-distribution",
+          "title": "Spare Parts Distribution",
+          "icon": "boxes",
+          "text": "Spare parts and supplies for your vessel as part of our one stop solution for ship services."
+        }
+      ]
+    },
+    {
+      "slug": "marine-services",
+      "title": "Marine Services",
+      "icon": "ship",
+      "summary": "Marine services around the clock for vessels calling in U.S. ports, from repairs to supplies and crew transportation.",
+      "intro": "We understand that your vessels may require both occasional and regular service when calling in U.S. ports. For over 30 years, Alpha Mar's repair division has responded to the needs of the maritime and offshore industries by providing ship owners and managers 24/7, high quality and economical services while ensuring the vessel's optimal performance. Designed to work as a one stop solution, we can assist with any ship services you may need, from repairs, to supplies and crew transportation, to ship general maintenance. We specialize in engine and auxiliary equipment repairs, hatch covers, cranes, steel repairs, parts manufacturing and much more.",
+      "image": "/brands/alphamargroup/photo3",
+      "imageAlt": "A container ship under way near a port",
+      "services": [
+        {
+          "slug": "engineering",
+          "title": "Engineering",
+          "icon": "compass",
+          "text": "Our dedicated engineering department designs and engineers projects from scratch, from drop-in platforms for a semi-submersible rig to a custom hopper for a private terminal."
+        },
+        {
+          "slug": "inspections-tests",
+          "title": "Inspections / Tests",
+          "icon": "clipboard",
+          "text": "Inspection and certification services, marine surveyor services, ultrasonic hatch cover inspections, UT, x-ray and pressure testing, and load testing in our shop."
+        },
+        {
+          "slug": "steel-fabrication",
+          "title": "Steel Fabrication",
+          "icon": "building",
+          "text": "Structural fabrications, skids, tanks, bollards and steel replacement, welded by our class approved welders in our structural steel shop."
+        },
+        {
+          "slug": "ship-repairs",
+          "title": "Ship Repairs",
+          "icon": "ship",
+          "text": "Hull and shell plate repairs, steering gear, rudders, propellers, hatch covers and stern damage, often while the vessel is afloat or alongside."
+        },
+        {
+          "slug": "piping-services",
+          "title": "Piping Services",
+          "icon": "droplets",
+          "text": "New process piping, pipeline installations, heating coil repairs and potable water lines in carbon steel, stainless and special alloys."
+        },
+        {
+          "slug": "machining",
+          "title": "Machining",
+          "icon": "settings",
+          "text": "Our primary machining operations in Houston turn out parts manufacturing, shaft repairs and hundreds of machined parts for our clients."
+        },
+        {
+          "slug": "mechanical-services",
+          "title": "Mechanical Services",
+          "icon": "wrench",
+          "text": "Engine and auxiliary equipment repairs, mechanical maintenance, gearbox overhauls and main engine inspections."
+        },
+        {
+          "slug": "electrical-instrumentation",
+          "title": "Electrical & Instrumentation",
+          "icon": "zap",
+          "text": "Electrical wiring and layouts for new equipment, and rewinding of all kinds and sizes of generators and motors."
+        },
+        {
+          "slug": "crane-services",
+          "title": "Crane Services",
+          "icon": "hard-hat",
+          "text": "Crane jib repairs, crane foot bearing exchanges, wire sheave repairs and crane hook overhauls with load testing."
+        },
+        {
+          "slug": "gangways",
+          "title": "Gangways",
+          "icon": "anchor",
+          "text": "A wide stock of gangways to purchase or rent. We also modify gangways, and test and certify them before delivery."
+        },
+        {
+          "slug": "cleaning-painting",
+          "title": "Cleaning / Painting Services",
+          "icon": "filter",
+          "text": "Cargo hold and tank cleaning, sandblasting, and coating and painting for hulls, bulkheads, rigs and drill ships."
+        },
+        {
+          "slug": "spare-parts-distribution",
+          "title": "Spare Parts Distribution",
+          "icon": "boxes",
+          "text": "Spare parts and supplies for your vessel as part of our one stop solution for ship services."
+        }
+      ]
+    },
+    {
+      "slug": "industrial-services",
+      "title": "Industrial Services",
+      "icon": "factory",
+      "summary": "Turnkey engineering, construction, maintenance and support services for the shore based industry around Houston.",
+      "intro": "The Alpha Mar Group is your one source for engineering, industrial, construction, maintenance and support services. We specialize in turnkey solutions and comprehensive services for companies in the shore based industry around Houston, with long term contracts for on-site as well as shop fabrication and production. We have completed jobs like pipeline installations, structural fabrications, skid fabrications, tank services and hundreds of machined parts for our clients in the energy industry. Let us know what you need and our dedicated engineering department will take care of your projects.",
+      "image": "/brands/alphamargroup/photo6",
+      "imageAlt": "Machined stainless steel parts",
+      "services": [
+        {
+          "slug": "engineering",
+          "title": "Engineering",
+          "icon": "compass",
+          "text": "Our dedicated engineering department designs and engineers projects from scratch, from drop-in platforms for a semi-submersible rig to a custom hopper for a private terminal."
+        },
+        {
+          "slug": "inspections-tests",
+          "title": "Inspections / Tests",
+          "icon": "clipboard",
+          "text": "Inspection and certification services, marine surveyor services, ultrasonic hatch cover inspections, UT, x-ray and pressure testing, and load testing in our shop."
+        },
+        {
+          "slug": "steel-fabrication",
+          "title": "Steel Fabrication",
+          "icon": "building",
+          "text": "Structural fabrications, skids, tanks, bollards and steel replacement, welded by our class approved welders in our structural steel shop."
+        },
+        {
+          "slug": "piping-services",
+          "title": "Piping Services",
+          "icon": "droplets",
+          "text": "New process piping, pipeline installations, heating coil repairs and potable water lines in carbon steel, stainless and special alloys."
+        },
+        {
+          "slug": "machining",
+          "title": "Machining",
+          "icon": "settings",
+          "text": "Our primary machining operations in Houston turn out parts manufacturing, shaft repairs and hundreds of machined parts for our clients."
+        },
+        {
+          "slug": "electrical-instrumentation",
+          "title": "Electrical & Instrumentation",
+          "icon": "zap",
+          "text": "Electrical wiring and layouts for new equipment, and rewinding of all kinds and sizes of generators and motors."
+        },
+        {
+          "slug": "cleaning-painting",
+          "title": "Cleaning / Painting Services",
+          "icon": "filter",
+          "text": "Cargo hold and tank cleaning, sandblasting, and coating and painting for hulls, bulkheads, rigs and drill ships."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Established in the 1980s for petrochemical and maritime work",
+    "text": [
+      "Alpha Mar was established in the 1980s to cater to the petrochemical and maritime industry. Some of the areas in which we excel are ship repair, modification, engineering and other technical marine systems and controls, which were later incorporated in the offshore industry as well.",
+      "It has been the primary goal of Alpha Mar to consistently provide our customers with exceptional service and maximum value, while exceeding our customers' expectations and maintaining our strong leadership role among our peers.",
+      "Our mission is to continually maintain and improve our status as one of the most reliable organizations in the marine repair, maintenance and fabrication industries in the world."
+    ],
+    "image": "/brands/alphamargroup/photo5",
+    "imageAlt": "Hull plating repair from a lift alongside a ship",
+    "values": [
+      {
+        "title": "Quality",
+        "text": "A quality system in place to produce certified and traceable components, with the proper documentation and traceability."
+      },
+      {
+        "title": "Safety",
+        "text": "Knowing the hazards of working offshore, our team is well trained with the highest quality and safety standards in mind."
+      },
+      {
+        "title": "Around the clock",
+        "text": "Quality service around the world, around the clock."
+      }
+    ]
+  },
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
+  "emergency": {
+    "title": "24/7 number",
+    "text": "Our 24/7 number, (713) 644-1313, is always active, and our response team can deploy class approved welders and materials on short notice."
+  },
+  "credentials": [
+    {
+      "label": "ISO 9001:2015",
+      "detail": "Received in November 2018"
+    },
+    {
+      "label": "ISO 9001",
+      "detail": "First certified in March 2003"
+    },
+    {
+      "label": "Class approved welders",
+      "detail": "Procedures and equipment to classification rules"
+    },
+    {
+      "label": "ABS, DNV, IACS, ASME, API",
+      "detail": "Codes our engineers apply"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Structural Steel Repair 2025",
+      "text": "A challenging ship repair and steel replacement project in Houston, completed safely and fully accepted by Class and the U.S. Coast Guard.",
+      "image": "/brands/alphamargroup/photo8",
+      "imageAlt": "Side shell steel cropped out during a ship repair in Houston"
+    },
+    {
+      "title": "Steering Gear Repair 2024",
+      "text": "An extensive repair completed while the vessel was alongside in the Port of Galveston. Many new parts were fabricated and machined in our shop, and the repairs lasted over 2 months.",
+      "image": "/brands/alphamargroup/photo9",
+      "imageAlt": "Steering gear repair alongside in the Port of Galveston"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Contact",
+      "items": [
+        "Phone: (713) 644-1313 (24/7)",
+        "Fax: 713.644.1216",
+        "Email: sales@alphamar.us",
+        "5814 Heffernan St, Houston, TX 77087"
+      ]
+    },
+    {
+      "heading": "Our Location",
+      "text": "Our administrative offices and primary machining operations are within minutes of Hobby Airport and the Houston Ship Channel, with fast access to the 610 Loop and the Gulf Freeway. The facility is in the heart of an established industrial area, with rail access close to the complex along Mykawa Road."
+    },
+    {
+      "heading": "Where We Work",
+      "text": "Houston and world wide. We serve the entire Gulf Coast, from the Port of Houston, City Docks, Barbours Cut and Jacintoport to Galveston, Bolivar Roads and Corpus Christi, and our engineers have travelled to jobs in Miami and Kingston, Jamaica."
+    },
+    {
+      "heading": "Partners",
+      "items": [
+        "MacGregor U.S.A.",
+        "HMB Lintec Marine"
+      ]
+    },
+    {
+      "heading": "More From Our Project Portfolio",
+      "items": [
+        "Shell Plate Repair 2024: class approved welders, procedures and equipment, with plates coated from our pontoon",
+        "Propeller Hub Cap Repair 2024: re-secured from our work pontoon after an underwater inspection",
+        "Jack Up Rigs Leg Operation 2023: a huge gear box repaired at our Houston location",
+        "Anchor Chain Replacement 2022: anchors and chains changed at Bolivar Roads or wherever clients need it",
+        "Hopper Fabrication 2022: designed, engineered, fabricated and tested from scratch for a private terminal",
+        "Generator Rewinding 2021: a 910 kW Leroy Somer generator rewound and shop tested",
+        "Bow Thruster Installation 2020: installed afloat at City Docks using our own pontoon",
+        "Port of Houston Barbours Cut Terminal 2018: tie downs and stowage pockets for the container cranes, worked in two shifts",
+        "Portable Crane 2017: a 1-ton marine grade aluminum jib crane built for Enterprise Products",
+        "Port of Houston Bulkhead Sand Blasting and Coating 2016: more than 1,800 linear feet of bulkhead at Woodhouse Terminal",
+        "Maersk Drillship Filterpress Piping 2015: about 2,000 linear ft of new piping, inspected by ABS surveyors",
+        "Maersk Drillship Completion Bridges 2014/2015: 2 x 25 ton completion bridges, with laser measurements taken to guarantee fitment",
+        "Propeller Straightening 2014: 2 blades straightened afloat under class supervision"
+      ]
+    },
+    {
+      "heading": "Careers",
+      "text": "We are continually looking for qualified professionals and constantly accepting applications. Apply in person Monday to Thursday, 8am to 5:00pm, at 5814 Heffernan, Houston, TX 77087; send your resume and cover letter to Projects@alphamar.us; or apply by mail to the same address."
+    },
+    {
+      "heading": "Job Opportunities",
+      "items": [
+        "Shop: Supervisors",
+        "Shop: Welders (FCAW, GMAW, GTAW, SAW), 5G with Mig (GMAW), Tig and Flux Core, 6G Stick (SMAW), 100% X-ray quality",
+        "Shop: Fabricators, Machinists, Electricians, Helpers",
+        "Office: Project Managers, Purchaser, Administrative"
+      ]
+    }
+  ]
+}

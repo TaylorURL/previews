@@ -1,0 +1,361 @@
+{
+  "template": "industrial",
+  "preview": true,
+  "name": "BCM Marine Service",
+  "shortName": "BCM Marine Service",
+  "phone": "(832) 425-6585",
+  "email": "service@bcmmarineservice.com",
+  "address": "1902 Algoa-Friendswood Rd",
+  "town": "Alvin",
+  "state": "TX",
+  "zip": "77511",
+  "rating": 4.9,
+  "reviewCount": 135,
+  "since": 2018,
+  "brand": {
+    "primary": "#1a3668",
+    "primaryDeep": "#122649",
+    "accent": "#438dbe",
+    "ink": "#161c26",
+    "surface": "#f1f3f6",
+    "muted": "#5b6470",
+    "line": "#dedfe1",
+    "heading": "Oswald, system-ui, sans-serif",
+    "body": "Barlow, system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap",
+    "logo": "/brands/bcmmarineservice/logo.webp",
+    "logoMono": "/brands/bcmmarineservice/logo-mono.webp",
+    "logoWidth": 142,
+    "logoHeight": 74,
+    "logoRatio": 1.921,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.426,
+      0.288,
+      0.155,
+      0.142,
+      0.189,
+      0.318,
+      0.45,
+      0.584,
+      0.724,
+      0.867,
+      1.0
+    ]
+  },
+  "heroStyle": "split",
+  "tone": "bold",
+  "hero": {
+    "eyebrow": "Authorized Mercury Marine dealer · Alvin, TX",
+    "title": "Boat, jet ski and powersports repair.",
+    "titleAccent": "Done with meticulous detail.",
+    "lead": "BCM Marine Service is an authorized Mercury Marine dealer, service center and repower center in Alvin, serving boat owners across Galveston, Clear Lake, League City and Friendswood. Full service and repair for all major brands.",
+    "image": "/brands/bcmmarineservice/photo2",
+    "imageAlt": "Three Mercury Verado outboards running on open water"
+  },
+  "serviceArea": [
+    "Alvin",
+    "Galveston",
+    "Clear Lake",
+    "League City",
+    "Friendswood"
+  ],
+  "highlights": [
+    {
+      "title": "Authorized Mercury dealer",
+      "text": "We are a Mercury Marine dealer, service center and repower center.",
+      "icon": "badge"
+    },
+    {
+      "title": "All major brands",
+      "text": "Full service and repair for all major brands. If yours is not listed, call to find out.",
+      "icon": "wrench"
+    },
+    {
+      "title": "Established in 2018",
+      "text": "Started out of our passion for boating and powersports.",
+      "icon": "calendar"
+    },
+    {
+      "title": "Family owned",
+      "text": "We treat each customer how we want to be treated.",
+      "icon": "family"
+    }
+  ],
+  "credentials": [
+    {
+      "label": "Mercury Marine",
+      "detail": "Authorized Mercury Marine dealer, service center & repower center"
+    }
+  ],
+  "statesServed": [
+    "Texas"
+  ],
+  "summary": "Boat and engine service, repower, electronics, jet ski repair and powersports work from our shop in Alvin, for owners across Clear Lake and Galveston.",
+  "groups": [
+    {
+      "slug": "engine-mechanical",
+      "title": "Engine & Mechanical",
+      "icon": "settings",
+      "summary": "Diagnostics, engine rebuilds, mechanical surveys and oil samples, big jobs or small.",
+      "intro": "BCM Marine Service is committed to making your life easier with convenient and comprehensive support when you need it most. We have the tools and knowledge to tackle the difficult work, and a full range of laptop based diagnostic tools at our disposal. Need an engine rebuild? We can handle the job, big or small.",
+      "image": "/brands/bcmmarineservice/photo3",
+      "imageAlt": "Twin outboards on the stern of a center console boat",
+      "services": [
+        {
+          "slug": "diagnostics",
+          "title": "Diagnostics",
+          "icon": "gauge",
+          "text": "A full range of laptop based diagnostic tools to find what is wrong."
+        },
+        {
+          "slug": "engine-rebuild",
+          "title": "Engine Rebuilds",
+          "icon": "wrench",
+          "text": "Need an engine rebuild? We can handle the job, big or small."
+        },
+        {
+          "slug": "mechanical-survey",
+          "title": "Mechanical Surveys",
+          "icon": "clipboard",
+          "text": "Need a mechanical survey? Yep."
+        },
+        {
+          "slug": "oil-samples",
+          "title": "Oil Samples",
+          "icon": "droplets",
+          "text": "Oil samples? Absolutely."
+        },
+        {
+          "slug": "boat-types",
+          "title": "Outboard, Inboard and Jet Boats",
+          "icon": "ship",
+          "text": "We work on outboards, inboards, jet boats and jet skis, for all major brands."
+        }
+      ]
+    },
+    {
+      "slug": "mercury-service-repower",
+      "title": "Mercury Service & Repower",
+      "icon": "anchor",
+      "summary": "Authorized Mercury Marine dealer, service center and repower center in Alvin.",
+      "intro": "Looking for reliable Mercury outboard service near Galveston? BCM Marine Service is an authorized Mercury Marine dealer located in Alvin, Texas, serving boat owners throughout Galveston, Clear Lake, League City, Friendswood and the surrounding Gulf Coast boating communities. Whether you are maintaining your current Mercury engine, diagnosing an issue, or considering a new outboard, we are ready to help.",
+      "services": [
+        {
+          "slug": "mercury-diagnostics",
+          "title": "Diagnostics and Troubleshooting",
+          "icon": "gauge",
+          "text": "Mercury outboard engine diagnostics and troubleshooting."
+        },
+        {
+          "slug": "mercury-maintenance",
+          "title": "Routine Maintenance",
+          "icon": "timer",
+          "text": "Routine engine maintenance and service."
+        },
+        {
+          "slug": "mercury-repairs",
+          "title": "Mercury Outboard Repairs",
+          "icon": "wrench",
+          "text": "Repairs on Mercury outboards."
+        },
+        {
+          "slug": "engine-sales",
+          "title": "Engine Sales",
+          "icon": "boxes",
+          "text": "Mercury engine sales. Looking at a few different engines? Let us help you choose, price and compare."
+        },
+        {
+          "slug": "repower",
+          "title": "Repower and Installation",
+          "icon": "settings",
+          "text": "New Mercury engine repower and installation."
+        },
+        {
+          "slug": "warranty-service",
+          "title": "Warranty Service",
+          "icon": "shield",
+          "text": "Warranty service, where applicable."
+        }
+      ]
+    },
+    {
+      "slug": "electronics",
+      "title": "Electronics",
+      "icon": "circuit",
+      "summary": "Electrical troubleshooting and repair, and stereo, speaker and GPS upgrades.",
+      "intro": "BCM Marine Service is highly skilled at electrical system troubleshooting and repair for the various boat systems. Upgrade your speakers, stereo or GPS, and go Bluetooth.",
+      "services": [
+        {
+          "slug": "electrical-repair",
+          "title": "Electrical Troubleshooting and Repair",
+          "icon": "zap",
+          "text": "Troubleshooting and repair for the various electrical systems on a boat."
+        },
+        {
+          "slug": "electronics-upgrades",
+          "title": "Stereo, Speaker and GPS Upgrades",
+          "icon": "compass",
+          "text": "Upgrade your speakers, stereo or GPS, and go Bluetooth."
+        }
+      ]
+    },
+    {
+      "slug": "jet-ski-repair-service",
+      "title": "Jet Ski Repair / Service",
+      "icon": "waves",
+      "summary": "Maintenance, repairs, batteries and engine rebuilds for all jet brands.",
+      "intro": "Providing everything you need for all jet brands, from yearly maintenance to a complete engine rebuild or new engine. We service Sea Doo, Yamaha, Kawasaki and Honda jet skis.",
+      "services": [
+        {
+          "slug": "jet-ski-maintenance",
+          "title": "Regular Maintenance",
+          "icon": "timer",
+          "text": "Recommended yearly.",
+          "points": [
+            "Oil changes",
+            "Tune-ups",
+            "Spark plugs",
+            "Filter"
+          ]
+        },
+        {
+          "slug": "jet-ski-engine",
+          "title": "Complete Engine Rebuild / New Engine",
+          "icon": "settings",
+          "text": "Sometimes you have engine failure. In most cases we can send the core to be rebuilt, which is called a re-man engine. In more severe cases the engine cannot be saved and a new engine is needed. We will always try to save any components we can to get you back on the water fast and safe."
+        },
+        {
+          "slug": "jet-ski-repairs",
+          "title": "Repairs",
+          "icon": "wrench",
+          "text": "Parts we repair and replace.",
+          "points": [
+            "Impeller",
+            "Jet pump & jet drive",
+            "Wear ring",
+            "Shaft",
+            "Fuel filters",
+            "Steering cable",
+            "Starter",
+            "Starter relays",
+            "Solenoids",
+            "Injectors",
+            "Coils",
+            "Fuel lines"
+          ]
+        },
+        {
+          "slug": "jet-ski-batteries",
+          "title": "Batteries",
+          "icon": "battery",
+          "text": "Very commonly needed.",
+          "points": [
+            "Dealer pricing",
+            "In stock"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "powersports",
+      "title": "Powersports",
+      "icon": "wrench",
+      "summary": "Dirt bikes, ATVs and buggies: repairs, upgrades and custom work.",
+      "intro": "Engine lacking a bit of compression to blast past the competition, or clutch slipping a bit when climbing that big hill? Give us a call to get your bike or quad running like new again. We work on Kawasaki, Suzuki, Honda, Yamaha and KTM dirt bikes and four wheelers.",
+      "services": [
+        {
+          "slug": "dirt-bikes",
+          "title": "Dirt Bikes",
+          "icon": "wrench",
+          "text": "Compression, clutch and other repairs to get your bike running like new again."
+        },
+        {
+          "slug": "powersports-upgrades",
+          "title": "Upgrades",
+          "icon": "gauge",
+          "text": "Need a bit more cam lift, a new shock installed, a larger diameter carburetor installed, or anything else? Give us a call."
+        },
+        {
+          "slug": "custom-work",
+          "title": "Custom Work",
+          "icon": "ruler",
+          "text": "Custom work on bikes and quads. Call and let's talk about it."
+        },
+        {
+          "slug": "atv-buggy",
+          "title": "ATV & Buggy",
+          "icon": "car",
+          "text": "We are more than happy to look at performing any type of work that our customers need done, so give us a call and let's talk about it."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About Us",
+    "title": "Behind the repairs, family owned.",
+    "text": [
+      "BCM Marine & Powersports Service was established in 2018 with one mission: to bring a reliable and high quality service to the Clear Lake and Galveston area. Our passion for boating and powersports is what inspired us to open our business, and it continues to drive us to this day.",
+      "We have grown to become a well known boat repair company in the Clear Lake area. Our mission is simple: to provide the best customer experience possible and the highest quality repairs. We pride ourselves on being a family business that treats each customer how we want to be treated.",
+      "All our repairs are completed with meticulous detail, so you can spend more time doing what you enjoy, playing on the water or riding in the mud."
+    ]
+  },
+  "hours": [
+    [
+      "Mon – Fri",
+      "8:30 AM – 5 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
+  "industries": [
+    "Boat owners",
+    "Jet ski owners",
+    "Powersports riders",
+    "Golf cart owners"
+  ],
+  "facts": [
+    {
+      "heading": "What We Offer",
+      "items": [
+        "Part sales",
+        "Electronics",
+        "Diagnostics",
+        "Engine sales",
+        "Warranty",
+        "Outboard, inboard, jet boats and jet skis"
+      ]
+    },
+    {
+      "heading": "Engines We Service",
+      "text": "Mercury, Mercury Verado, Mercruiser, Suzuki, Yamaha, Evinrude, Volvo, Tohatsu, Crusader, Pleasurecraft Marine, Indmar, Cummins, Kohler, Westerbeke, Marine Power, Honda, SeaDoo, Rotax and diesel engines."
+    },
+    {
+      "heading": "Boats We Service",
+      "text": "Mastercraft, Axis, Malibu, Nautique, Moomba, Sea Ray, Cruisers, Carver, Regal, Bayliner, Boston Whaler, Chaparral, Crownline, Baja, Fountain, Freeman, Formula, Grady-White, Lund, Tracker, Yamaha, Sea Doo, Donzi, Scout, Scarab, Wellcraft, Beneteau, Supreme, Robalo, Heesen Yachts, Benetti Yachts and Azimut Yachts."
+    },
+    {
+      "heading": "Jet Boats, Jet Skis, Golf Carts and Dirt Bikes",
+      "items": [
+        "Jet boats: Sea Doo, Scarab, Yamaha and all Rotax engines",
+        "Jet skis: Sea Doo, Yamaha, Kawasaki and Honda",
+        "Golf carts: Club Car, Yamaha, EZ Go and many more",
+        "Dirt bikes and four wheelers: Kawasaki, Suzuki, Honda, Yamaha and KTM"
+      ]
+    },
+    {
+      "heading": "Not Listed?",
+      "text": "We service and repair all major brands. If what you need is not listed, call to find out."
+    },
+    {
+      "heading": "Get in Touch",
+      "items": [
+        "Text us, call us or email us: 832-425-6585, Service@bcmmarineservice.com",
+        "Send a message and we will get back to you today",
+        "Facebook: https://www.facebook.com/bcmmarinservice"
+      ]
+    }
+  ]
+}
