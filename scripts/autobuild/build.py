@@ -538,8 +538,10 @@ def _build(prospect, root, slug, known):
     sample = _sample(root, template)
 
     # A listing name can end on a stray stop ("Driven Industrial Specialists
-    # Corp,"); a comma, colon or dash there ends no name.
-    name = compose.plain(prospect["name"]).rstrip(" ,;:-") or compose.plain(prospect["name"])
+    # Corp,"); a comma, colon or dash there ends no name. Nor does a bar end
+    # one: what follows it is search words ("Bay Area Auto | Auto Repair Near
+    # Webster, TX"), not the business's name.
+    name = compose.plain(prospect["name"]).split("|")[0].rstrip(" ,;:-") or compose.plain(prospect["name"])
     short = compose.short_name(name)
     phone = compose.us_phone(prospect.get("phone"))
     street, town, state, zip_ = compose.address_parts(prospect)
