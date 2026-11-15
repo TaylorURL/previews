@@ -363,7 +363,8 @@ function Header({ b, path, k, groups, nav, tel, ctaLabel }) {
     <header className={`sticky ${stick} z-40 border-b border-head-line bg-head`}>
       <div className={`${wrap} flex h-[76px] items-center gap-4 lg:h-[92px] lg:gap-6`}>
         <a href="/" className="flex min-h-11 min-w-0 max-w-[62vw] flex-initial items-center no-underline lg:max-w-[280px] lg:flex-none xl:max-w-[340px]" aria-label={`${b.name} home`}>
-          <BrandLogo b={b} textClass="text-head-ink" />
+          {/* A long name set in type wraps to three lines on a phone; it is set smaller there, so its lines stay inside the bar's height. */}
+          <BrandLogo b={b} textClass={`text-head-ink ${b.shortName.length > 24 ? 'max-lg:!text-[17px] max-lg:!leading-[1.15]' : ''}`} />
         </a>
 
         <nav aria-label="Main" className="ml-auto hidden self-stretch lg:block">
