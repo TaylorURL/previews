@@ -477,11 +477,12 @@ SIDE_LINES = (r"\bice (?:machine|maker)", r"\brefrigerat", r"\bfreezer", r"\bgen
               r"\bpools?\b", r"\bhot tub", r"\bsolar", r"\bappliance")
 
 # Built work a photo can show that is a trade of its own (a paver walkway on a
-# tree service's site): one no service of theirs names, in a photo the look
-# says shows nothing of their own trade, is not a picture of any service they
-# offer. The file name is not asked, as a theme's ("Landscaping-Img6") is not.
+# tree service's site, an epoxy garage floor on a fence builder's): one no
+# service of theirs names, in a photo the look says shows nothing of their own
+# trade, is not a picture of any service they offer. The file name is not
+# asked, as a theme's ("Landscaping-Img6") is not.
 OTHER_WORK = (r"\bwalkway", r"\bpavers?\b", r"\bpatios?\b", r"\bdecks?\b", r"\bpergola", r"\bretaining walls?\b",
-              r"\bdriveway", r"\bfenc")
+              r"\bdriveway", r"\bfenc", r"\bepoxy", r"\bgarage floors?\b")
 
 # What the look says of a photo whose person is cut to an arm and a torso
 # ("Person is cropped to body parts, so it works better as a secondary
