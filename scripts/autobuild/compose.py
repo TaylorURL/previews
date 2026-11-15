@@ -285,6 +285,11 @@ NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient 
 # material ("Medicare Video Library") or dates their deadlines ("Medicare
 # Enrollment Periods") is a page of their site for the reader, not a service.
 FOR_THE_READER = re.compile(r"^(?:ask|already on|new to)\b|\blibrary\b|\benrol(?:l)?ment periods?\b", re.I)
+# A heading that is only the agency or the title a service is about ("IRS",
+# "CPA") is a fragment of one, and one that ends on the kind of business they
+# are ("Tax and Accounting Firm", "Independent Insurance Agency") says who
+# they are; neither is a service.
+WHO_NOT_WHAT = re.compile(r"^(?:IRS|CPAs?|CFO|LLC)$|\b(?:firm|agency)$", re.I)
 # Names that keep their capitals inside a sentence ("Medicare supplements").
 PROPER = ("Medicare Advantage", "Medicare", "Medicaid")
 ACRONYMS = {"IRS", "CFO", "CPA", "CPAS", "HVAC", "AC", "A/C", "TPO", "LLC", "QB", "EPDM", "UV", "HOA", "1031", "S-CORP",
@@ -806,7 +811,7 @@ def services_of(pages, vocab, own=None, town=None, described_first=False, towns=
         name = re.sub(r"\b(\w+)\s+(?=\1\b)", "", name, flags=re.I)
         if not (3 <= len(name) <= 42) or len(name.split()) > 6 or GENERIC_NAV.match(name):
             return
-        if not pattern.search(name) or re.search(r"[?!@]|\d{3}", name) or NOT_A_SERVICE.search(name) or FOR_THE_READER.search(name) or re.match(r"(on|for|with|to|in|at|from|and|i|my|we)\b", name, re.I):
+        if not pattern.search(name) or re.search(r"[?!@]|\d{3}", name) or NOT_A_SERVICE.search(name) or FOR_THE_READER.search(name) or WHO_NOT_WHAT.search(name) or re.match(r"(on|for|with|to|in|at|from|and|i|my|we)\b", name, re.I):
             return
         # A heading that opens on a bidding verb ("Find Storage", "Rent a Unit",
         # "Select a Fence Style", "Keep the Wheels Turning", "Upgrade to a Roof
