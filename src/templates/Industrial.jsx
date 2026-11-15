@@ -1320,7 +1320,8 @@ function Footer({ b, g, groups, tel, night }) {
               {credentials.map((c) => (
                 <li key={c.label} className="flex items-start gap-2">
                   <ShieldCheck size={15} className="mt-0.5 flex-none text-[color:var(--hi)]" aria-hidden="true" />
-                  <span className="min-w-0 break-words">{[c.label, c.detail].filter(Boolean).join(' ')}</span>
+                  {/* A detail that opens on the label ("ASE-Certified master technicians") says it once. */}
+                  <span className="min-w-0 break-words">{c.detail?.toLowerCase().startsWith(c.label.toLowerCase()) ? c.detail : [c.label, c.detail].filter(Boolean).join(' ')}</span>
                 </li>
               ))}
             </ul>
