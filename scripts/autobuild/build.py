@@ -933,7 +933,7 @@ def _with_facts(services, sheet, name, shape, notes):
         if title.islower() or title.isupper():
             title = compose.title_case(title)
         if not (3 <= len(title) <= 42) or len(title.split()) > 6 or compose.names_the_business(title, name) \
-                or compose.NOT_A_SERVICE_SHAPE.search(title) or compose.GENERIC_NAV.match(title) or compose.FOR_THE_READER.search(title) \
+                or compose.NOT_A_SERVICE_SHAPE.search(title) or compose.GENERIC_NAV.match(title) or compose.FOR_THE_READER.search(title) or compose.WHO_NOT_WHAT.search(title) \
                 or re.search(r"\b(privacy|terms|glossary)\b", title, re.I):
             continue
         if any(facts.normal(f["title"]) == facts.normal(title) for f in found):
