@@ -1,0 +1,330 @@
+{
+  "template": "professional",
+  "preview": true,
+  "name": "Sintia Solis Law Firm PLLC",
+  "shortName": "Sintia Solis Law Firm",
+  "phone": "(713) 987-4010",
+  "email": "info@sintiasolislaw.com",
+  "address": "2318 Burke Rd",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77502",
+  "brand": {
+    "primary": "#c71585",
+    "primaryDeep": "#8b0f5d",
+    "accent": "#ce168a",
+    "ink": "#241a28",
+    "surface": "#fcf1f8",
+    "muted": "#5b6470",
+    "line": "#e0dfe1",
+    "cream": "#fdf5f3",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Raleway', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap",
+    "logo": "/brands/sintiasolislawfirm/logo.webp",
+    "logoMono": "/brands/sintiasolislawfirm/logo-mono.webp",
+    "logoWidth": 102,
+    "logoHeight": 84,
+    "logoRatio": 1.217,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.301,
+      0.437,
+      0.547,
+      0.657,
+      0.773,
+      0.89,
+      1.0
+    ],
+    "logoName": true
+  },
+  "heroStyle": "type",
+  "tone": "classic",
+  "hero": {
+    "eyebrow": "Your Abogada Sintia · Pasadena, Texas",
+    "title": "Legal help from an attorney who has walked the same road as her clients.",
+    "lead": "Sintia Solis Law Firm handles personal injury, criminal defense, immigration, family law, and traffic tickets and citations, in English and Spanish. We are available 24/7 for urgent matters.",
+    "points": [
+      "No legal fees on injury cases unless we win",
+      "Available 24/7 for urgent matters",
+      "Se habla español"
+    ]
+  },
+  "highlights": [
+    {
+      "title": "Available 24/7",
+      "text": "Office hours are Monday to Friday, and we are available around the clock for urgent matters.",
+      "icon": "clock"
+    },
+    {
+      "title": "No Fee Unless We Win",
+      "text": "We will not charge you legal fees for your personal injury case unless we win.",
+      "icon": "scale"
+    },
+    {
+      "title": "English and Spanish",
+      "text": "Every part of our practice is offered in English and in Spanish.",
+      "icon": "spanish"
+    },
+    {
+      "title": "Summa Cum Laude",
+      "text": "Sintia ranked in the top ten percent of her law school class all three years and graduated Summa Cum Laude with honors.",
+      "icon": "award"
+    }
+  ],
+  "owner": {
+    "name": "Sintia Solis",
+    "role": "Attorney",
+    "text": "Sintia's personal experience as an immigrant herself and her own struggles in life, combined with her passion for justice and helping others, is the reason she is able to empathize with her clients and truly care about them and their loved ones."
+  },
+  "kind": "legal",
+  "services": [
+    {
+      "slug": "personal-injury",
+      "title": "Personal Injury",
+      "summary": "Accidents, work injuries and wrongful death",
+      "text": "If you have been injured, contact us right away. We help you through the legal process, protect you from the insurance companies, and charge no legal fees unless we win.",
+      "lead": "When you are injured it is very important that you contact us immediately. Our representation will ensure that you take the steps necessary in your case and that you receive the maximum compensation for your injuries. We know being injured can be life changing, and dealing with doctors, medical bills, lost wages and other expenses is an additional burden and stress. Let us help you navigate the legal process and protect you from the insurance companies. We will not charge you legal fees for your case unless we win.",
+      "icon": "car",
+      "covers": [
+        {
+          "title": "Motor Vehicle Accidents",
+          "text": "Injuries from car and other motor vehicle accidents."
+        },
+        {
+          "title": "18 Wheeler Accidents",
+          "text": "Injuries from accidents with 18 wheelers."
+        },
+        {
+          "title": "Slip and Falls",
+          "text": "Injuries from slip and fall accidents."
+        },
+        {
+          "title": "Plant and Refinery Accidents",
+          "text": "Injuries from accidents at plants and refineries."
+        },
+        {
+          "title": "Work Injuries",
+          "text": "Injuries suffered on the job."
+        },
+        {
+          "title": "Wrongful Death and Catastrophic Injuries",
+          "text": "Wrongful death claims and catastrophic injuries."
+        }
+      ]
+    },
+    {
+      "slug": "criminal-defense",
+      "title": "Criminal Defense",
+      "summary": "DWI, assault, drugs, theft and more",
+      "text": "If you have been arrested or charged with a crime, we help you understand your rights and fight for the best outcome in your case.",
+      "lead": "If you have been arrested or charged with a crime, we understand how frightening and confusing it can be. We are here for you to help you understand your rights and fight for the best outcome in your case, whether you are innocent or made a bad decision.",
+      "icon": "gavel",
+      "covers": [
+        {
+          "title": "Expunctions and Nondisclosures",
+          "text": "Expunctions and nondisclosures of your record."
+        },
+        {
+          "title": "Probation and Adjudication",
+          "text": "Motions to adjudicate guilt and motions to revoke probation."
+        },
+        {
+          "title": "DUI and DWI",
+          "text": "DUI and DWI charges."
+        },
+        {
+          "title": "Assault and Domestic Violence",
+          "text": "Assault, aggravated assault and domestic violence charges."
+        },
+        {
+          "title": "Drugs and Theft",
+          "text": "Drug possession, and theft, robbery and burglary charges."
+        },
+        {
+          "title": "Juvenile and Other Cases",
+          "text": "Juvenile offenses and most other misdemeanor and felony cases."
+        }
+      ]
+    },
+    {
+      "slug": "immigration",
+      "title": "Immigration",
+      "summary": "Deportation, visas, green cards, citizenship",
+      "text": "We represent you whether you are in immigration detention facing deportation or looking for a way to adjust your status or a loved one's.",
+      "lead": "It can be difficult to navigate through the immigration system on your own, especially if you don't know the complicated immigration laws, immigrated from a foreign country, or don't speak English. Let us represent you whether you are in immigration detention facing deportation in an immigration court or you are looking to find a way to adjust your status or the status of a loved one.",
+      "icon": "landmark",
+      "covers": [
+        {
+          "title": "Deportation Defense",
+          "text": "Deportation proceedings, immigration bonds, asylum and withholding of removal, and cancellation of removal."
+        },
+        {
+          "title": "Citizenship and Green Cards",
+          "text": "Citizenship, green card renewal and FOIA requests."
+        },
+        {
+          "title": "Family Petitions",
+          "text": "Petitions for a relative and fiance visas."
+        },
+        {
+          "title": "U Visa, T Visa and VAWA",
+          "text": "U visas, T visas and VAWA cases."
+        },
+        {
+          "title": "Investor and Visitor Visas",
+          "text": "Investor visas and B-1 and B-2 visas."
+        },
+        {
+          "title": "Appeals and Motions",
+          "text": "Immigration appeals, motions to reopen and motions to reconsider."
+        }
+      ]
+    },
+    {
+      "slug": "family-law",
+      "title": "Family Law",
+      "summary": "Divorce, custody, adoption and support",
+      "text": "Divorce, child custody, adoption, child support, protection from domestic violence and estate planning.",
+      "lead": "We understand navigating through a family law case can be challenging, but we are here to help you.",
+      "icon": "users",
+      "covers": [
+        {
+          "title": "Divorce",
+          "text": "We provide compassionate and effective representation for all aspects of divorce, including property division, child custody and more. Our team can help you navigate this difficult time."
+        },
+        {
+          "title": "Child Custody",
+          "text": "We understand the importance of your children's well-being. Our team will work to protect your parental rights and ensure your children's best interests are represented."
+        },
+        {
+          "title": "Adoption",
+          "text": "We help families grow through adoption. Our team has experience with all types of adoption, from agency adoptions to stepparent adoptions."
+        },
+        {
+          "title": "Child Support",
+          "text": "We can help you navigate the complex world of child support. Our team will guide you through the process and ensure your children are taken care of."
+        },
+        {
+          "title": "Domestic Violence",
+          "text": "We provide legal services for victims of domestic violence. Our team can help you obtain a restraining order and protect yourself and your family."
+        },
+        {
+          "title": "Estate Planning",
+          "text": "We can help you plan for the future and protect your family's assets. Our team will guide you through the estate planning process and ensure your wishes are carried out."
+        }
+      ]
+    },
+    {
+      "slug": "traffic-citations",
+      "title": "Traffic & Citations",
+      "summary": "Tickets, citations and CDL violations",
+      "text": "Getting a traffic ticket is no fun, and neither is a citation. Let Sintia's team resolve your traffic violation and citation worries for you.",
+      "lead": "Everyone knows that getting a traffic ticket is no fun, neither is getting bothered with a citation. We understand that maneuvering through the legal process can be difficult and tedious. Let Sintia's teams resolve your traffic violations and citation worries for you.",
+      "icon": "receipt",
+      "covers": [
+        {
+          "title": "Citations",
+          "text": "DUI, loud noise, simple assault, theft, PI and possession of paraphernalia."
+        },
+        {
+          "title": "Traffic Violations",
+          "text": "Speeding, no insurance, stop sign, red light, fail to control speed (accident), no driver's license, fail to maintain a single lane and fail to signal."
+        },
+        {
+          "title": "CDL Holders",
+          "text": "Speeding, accidents, stop sign, red light, overweight and over tandem axle."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "title": "From a one-bedroom apartment in Pasadena to a law degree",
+    "text": [
+      "Sintia Solis was born in Veracruz, Mexico, and soon after her parents moved to Tamaulipas, where the family built a home. Under the Immigration Act of 1990 they decided to immigrate permanently to the United States as a family, full of fears because they did not know the language or the culture, yet hopeful for a better life. They lived in a tiny one-bedroom apartment in a very low-income area of Pasadena, and Sintia started kindergarten without a speck of English.",
+      "Soon after high school, Sintia was a single mother. She started classes at a community college while working a full-time job, determined not to let her parents down after all the sacrifices they had made. After much hard work she graduated from the University of Houston Clear Lake, then worked as a realtor for a few years, though her heart and passion were always in the law.",
+      "When her sons were old enough to all go to school, she took the leap of faith and applied to law school. As a mother of three boys she ranked in the top ten percent of her class all three years and graduated Summa Cum Laude with honors. In law school she took immigration courses, was part of the criminal clinic, and won dismissals for clients as a student attorney.",
+      "Sintia is a proud mother of three wonderful sons and a pug, and the proud daughter of the most amazing and supportive parents. Her strong Christian faith is the foundation and strength that keeps her going every single day."
+    ]
+  },
+  "tagline": "Your Abogada Sintia",
+  "talk": "Sintia",
+  "languages": [
+    "English",
+    "Spanish"
+  ],
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "By appointment"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Fill out the form and one of our team leaders will contact you shortly."
+  },
+  "overview": {
+    "title": "Five areas of law, one attorney who cares about you and your loved ones.",
+    "text": "Pick an area to see what we handle, or call and talk it through with Sintia."
+  },
+  "credentials": [
+    {
+      "label": "University of Houston Clear Lake",
+      "detail": "Graduate"
+    },
+    {
+      "label": "Summa Cum Laude with honors",
+      "detail": "Law school, top ten percent of her class all three years"
+    },
+    {
+      "label": "Student attorney",
+      "detail": "Took immigration courses and was part of the criminal clinic in law school"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "¿Te Chocaron?",
+      "text": "If you have been injured due to an accident, call your Abogada Sintia. Si has sufrido lesiones personales, llama a tu abogada Sintia."
+    },
+    {
+      "heading": "Urgent Matters",
+      "text": "Office hours are Monday to Friday, 8 AM to 5 PM, with Saturdays by appointment. We are available 24/7 for urgent matters. Disponibles 24/7 para asuntos urgentes."
+    },
+    {
+      "heading": "Ancla de Esperanza",
+      "text": "Ancla de Esperanza is a non-profit organization founded in 2014 by Your Abogada Sintia. It assists children and their families in and around the Pasadena area who are facing hardship due to crisis or adversity."
+    },
+    {
+      "heading": "Community Involvement",
+      "text": "Your Abogada Sintia loves to give back to her community."
+    },
+    {
+      "heading": "Monthly Updates",
+      "text": "The firm sends monthly updates with important legal information, firm news and helpful resources."
+    },
+    {
+      "heading": "Our Foundation",
+      "text": "\"I keep my eyes always on the Lord. With Him at my right hand, I will not be shaken.\" Psalm 16:8"
+    },
+    {
+      "heading": "Follow Us",
+      "items": [
+        "Facebook: facebook.com/sintiasolislaw",
+        "Instagram: instagram.com/soysintiasolis",
+        "TikTok: tiktok.com/@soysintiasolis"
+      ]
+    }
+  ]
+}

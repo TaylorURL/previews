@@ -351,7 +351,8 @@ function Header({ b, path, k, nav, tel, ctaLabel }) {
     <header className={`sticky ${b.preview ? 'top-11' : 'top-0'} z-40 border-b border-[color:var(--line)] bg-white`}>
       <div className={`${wrap} flex h-[72px] items-center gap-3 lg:h-[86px]`}>
         <a href="/" className="flex min-h-11 min-w-0 max-w-[56vw] flex-initial items-center no-underline sm:max-w-[60vw] lg:max-w-[300px] lg:flex-none" aria-label={`${b.name} home`}>
-          <BrandLogo b={b} textClass="text-ink" />
+          {/* A badge is drawn up to 84px tall; it is kept shorter than the bar so it has room above and below. */}
+          <BrandLogo b={b} className="max-h-14 lg:max-h-[68px]" textClass="text-ink" />
         </a>
 
         <nav aria-label="Main" className="ml-auto hidden self-stretch xl:block">

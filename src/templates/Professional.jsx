@@ -244,16 +244,18 @@ function TopBar({ b, tel }) {
               {first[0]}&nbsp;&nbsp;{first[1]}
             </span>
           )}
-          {extraPhonesOf(b).length > 0 ? (
+          {/* A second labelled line fits the strip only on a wide screen, and a third never does: it would
+              run past the edge, so more lines stay with the hero, the contact page and the footer, which list them all. */}
+          {extraPhonesOf(b).length === 1 ? (
             <>
               <PhoneLines
                 lines={phonesOf(b)}
                 icon
                 iconSize={14}
-                className="hidden md:flex"
+                className="hidden xl:flex"
                 styles={{ list: 'gap-x-6', item: 'font-bold text-white hover:underline [&_svg]:text-white/60', label: 'font-normal text-white/70' }}
               />
-              <a href={tel} className="flex min-h-11 items-center gap-2 font-bold text-white no-underline hover:underline md:hidden">
+              <a href={tel} className="flex min-h-11 items-center gap-2 font-bold text-white no-underline hover:underline xl:hidden">
                 <Phone size={14} className="text-white/60" aria-hidden="true" />
                 {b.phone}
               </a>
@@ -1167,6 +1169,30 @@ function OwnerBand({ b, k, ctaLabel, className = '' }) {
       </a>
     </>
   );
+  if (!owner.image && creds.length > 0) {
+    // No photo of them but credentials to list: their words and the ways to reach them on the left of
+    // one card, the credentials on the right, so the half where a portrait would stand is not left empty.
+    return (
+      <section aria-labelledby="owner" className={`${pad} ${className}`}>
+        <div className={wrap}>
+          <div className="grid gap-10 rounded-lg border border-line border-t-[3px] border-t-accent p-6 sm:p-10 lg:grid-cols-2 lg:gap-16">
+            <div className="min-w-0">
+              {owner.role && <Eyebrow>{owner.role}</Eyebrow>}
+              <h2 id="owner" className={h2}>
+                {owner.name}
+              </h2>
+              {owner.text && <p className={`mt-5 ${lead}`}>{owner.text}</p>}
+              <div className="mt-9 grid gap-3 sm:flex sm:flex-wrap">{actions}</div>
+            </div>
+            <div className="min-w-0">
+              <h3 className="mb-1 text-[12.5px] font-bold uppercase tracking-[0.18em] text-muted">{k.credentials}</h3>
+              {credList}
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
   if (!owner.image) {
     // No photo of them: their words and the ways to reach them on one card across the row, rather than a block of initials standing in for a portrait.
     return (
@@ -1477,8 +1503,11 @@ function TeamPage(props) {
   const team = full.length ? full : all;
   // Portrait cards only when everyone has a photo; otherwise the people are drawn
   // as their names and words, since a box of initials where a portrait should be
-  // reads as a placeholder. Those who do have a photo show it small and round above their name.
+  // reads as a placeholder. Those who do have a photo show it small and round beside their name,
+  // and every card's name stands in a band of that photo's height, so the names and words of the
+  // people with and without one start level across the row.
   const photos = team.every((p) => p.image);
+  const some = !photos && team.some((p) => p.image);
   // One person alone spans the row, the photo or name beside the words, so a
   // single card does not sit at the left of an empty band.
   const alone = team.length === 1;
@@ -1508,13 +1537,15 @@ function TeamPage(props) {
               {p.image && photos && (
                 <Img className="aspect-[4/5] w-full rounded-lg border border-line bg-surface object-cover object-top" src={p.image} alt={p.imageAlt || p.name} sizes={alone ? '(max-width: 640px) 100vw, 40vw' : team.length === 2 || lone ?'(max-width: 640px) 100vw, 50vw' : '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'} />
               )}
-              {p.image && !photos && (
-                <Img className="mb-4 size-24 rounded-full border border-line bg-surface object-cover object-top" src={p.image} alt={p.imageAlt || p.name} sizes="96px" />
-              )}
-              <div className="min-w-0">
-                <h2 className={`${photos ? 'mt-5' : ''} ${alone && photos ? 'sm:mt-0' : ''} font-heading font-display-2 text-[1.35rem] leading-snug text-ink`}>{p.name}</h2>
-                <p className="mt-1 text-[13px] font-bold uppercase tracking-[0.14em] text-accent">{p.role}</p>
-                {p.bio && photos && <p className="mt-3 text-base leading-[1.6] text-muted">{p.bio}</p>}
+              <div className={`min-w-0 ${some ? 'flex min-h-24 items-center gap-5' : ''}`}>
+                {p.image && !photos && (
+                  <Img className="size-24 flex-none rounded-full border border-line bg-surface object-cover object-top" src={p.image} alt={p.imageAlt || p.name} sizes="96px" />
+                )}
+                <div className="min-w-0">
+                  <h2 className={`${photos ? 'mt-5' : ''} ${alone && photos ? 'sm:mt-0' : ''} font-heading font-display-2 text-[1.35rem] leading-snug text-ink`}>{p.name}</h2>
+                  <p className="mt-1 text-[13px] font-bold uppercase tracking-[0.14em] text-accent">{p.role}</p>
+                  {p.bio && photos && <p className="mt-3 text-base leading-[1.6] text-muted">{p.bio}</p>}
+                </div>
               </div>
               {p.bio && !photos && <p className={`mt-3 text-base leading-[1.6] text-muted ${alone ? 'lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:mt-0 lg:text-lg' : ''}`}>{p.bio}</p>}
               {beside && (
