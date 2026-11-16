@@ -1322,8 +1322,14 @@ function AboutBand({ b }) {
       {list(a.values).length > 0 && (
         <ul className="mt-8 grid gap-5 sm:grid-cols-3">
           {list(a.values).map((v) => (
-            <li key={v.title} className="border-t-2 border-accent pt-4">
-              <h3 className={`${h3} text-[18px]`}>{v.title}</h3>
+            <li key={v.title} className="border-t-2 border-accent pt-4 [container-type:inline-size]">
+              {/* A long word ('Recommendations') is set smaller until it fits the column whole, rather than overrunning it. */}
+              <h3
+                className={`${h3} text-[min(18px,var(--fit))]`}
+                style={{ '--fit': `${(100 / (Math.max(longest(v.title), 1) * 0.78)).toFixed(2)}cqi` }}
+              >
+                {v.title}
+              </h3>
               <p className="mt-1.5 text-[16px] leading-[1.55] text-white/70 lg:text-[15px]">{v.text}</p>
             </li>
           ))}
@@ -1341,16 +1347,17 @@ function AboutBand({ b }) {
           With one the heading runs across the top and the photo sits beside the words: under the heading
           it made the left half the heading's height taller than the words, and left the right half empty. */}
       <div
-        className={`${wrap} grid ${a.image ? 'items-center gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-x-20' : 'items-center lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-20'}`}
+        className={`${wrap} grid ${a.image ? 'items-start gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-x-20' : 'items-center lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-20'}`}
       >
         <div className={a.image ? 'md:col-span-2' : ''}>
           <Eyebrow dark>{b.since ? `Since ${b.since}` : 'About us'}</Eyebrow>
           <h2 className={h2}>{a.title}</h2>
         </div>
-        {/* The photo keeps its own shape, so a wide team photo loses no one at its edges. */}
+        {/* The photo keeps its own shape, uncut, so a wide team photo loses no one at its edges or corners;
+            it sits at the top of its column under the heading, level with the words, not centred on their height. */}
         {a.image && (
           <Img
-            className="h-auto max-h-[34rem] w-auto max-w-full [clip-path:polygon(0_0,100%_0,100%_100%,8%_100%,0_92%)]"
+            className="h-auto max-h-[34rem] w-auto max-w-full"
             src={a.image}
             alt={a.imageAlt}
             sizes="(min-width: 768px) 46vw, 100vw"
@@ -1377,8 +1384,8 @@ function AreasBand({ b }) {
             All Service Areas
           </a>
         </div>
-        {/* On a phone a half-width cell holds a word of seven letters, and three across a cell holds one of nine; a longer town name gets the wider cells, so it is never broken. */}
-        <ul className={`grid ${longest(...towns) > 7 ? 'grid-cols-1' : 'grid-cols-2'} content-start self-start border-l-2 border-t-2 border-ink ${longest(...towns) > 9 ? 'sm:grid-cols-2' : 'sm:grid-cols-3'}`}>
+        {/* On a phone a half-width cell holds a word of seven letters, and three across a cell holds a name of eleven ('League City'); a longer town name gets the wider cells, so it is never broken and its row stays the height of the others. */}
+        <ul className={`grid ${longest(...towns) > 7 ? 'grid-cols-1' : 'grid-cols-2'} content-start self-start border-l-2 border-t-2 border-ink ${Math.max(...towns.map((t) => t.length)) > 11 ? 'sm:grid-cols-2' : 'sm:grid-cols-3'}`}>
           {towns.map((t, i) => (
             <li key={t} className="border-b-2 border-r-2 border-ink bg-white">
               <a href={`/service-areas#${townId(t)}`} className="flex min-h-[64px] items-center gap-3 px-4 py-3 text-ink no-underline transition hover:bg-ink hover:text-white">
