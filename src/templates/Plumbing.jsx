@@ -417,16 +417,19 @@ export default function Plumbing({ b }) {
         {b.band.image && (
           <>
             {/* As in the hero: on a phone the photo is a strip above the words, because this band
-                runs tall with every town in it and a wide photo stretched behind all of it softens. */}
+                runs tall with every town in it and a wide photo stretched behind all of it softens.
+                On a wide screen it takes the right half beside the words, not behind them, so the
+                heading and towns never sit on the face of whoever is in the photo. That half is
+                taller than it is wide and covers by its height, so `sizes` still asks for the wide file. */}
             <Img
-              className="relative block aspect-[16/9] w-full object-cover lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto lg:h-full"
+              className="relative block aspect-[16/9] w-full object-cover lg:absolute lg:inset-y-0 lg:left-1/2 lg:right-0 lg:-z-20 lg:aspect-auto lg:h-full lg:w-1/2"
               src={b.band.image}
               alt={b.band.imageAlt}
               sizes="100vw"
               data-backdrop=""
             />
             <div
-              className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_94%,transparent),color-mix(in_srgb,var(--primaryDeep)_78%,transparent)_60%,color-mix(in_srgb,var(--primaryDeep)_45%,transparent))]"
+              className="absolute inset-y-0 left-1/2 -z-10 hidden w-24 lg:block lg:bg-[linear-gradient(90deg,var(--primaryDeep),transparent)]"
               aria-hidden="true"
             />
           </>
@@ -434,7 +437,7 @@ export default function Plumbing({ b }) {
         {/* Without a photo the towns take the right half beside the heading, so it is not left empty. */}
         <div className={`${wrap} py-[clamp(4.5rem,10vw,7.5rem)]`}>
           <div
-            className={b.band.image ? 'max-w-[48rem]' : 'grid items-center lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-x-20'}
+            className={b.band.image ? 'max-w-[48rem] lg:w-1/2 lg:pr-12' : 'grid items-center lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-x-20'}
           >
             <div className={b.band.image ? 'contents' : 'lg:row-span-2'}>
               <Eyebrow dark>Service area</Eyebrow>

@@ -1013,6 +1013,41 @@ function Doctor({ b, bg, hasTeam }) {
       </section>
     );
   }
+  // Several doctors and nothing but their names and roles: each gets the same
+  // card in one row, so none is a big heading beside a small one.
+  if (!bio) {
+    const all = [doc, ...others.slice(0, 4)];
+    const cols = all.length === 2 || all.length === 4 ? 'sm:grid-cols-2' : 'sm:grid-cols-2 lg:grid-cols-3';
+    return (
+      <section className={`py-[clamp(4rem,8vw,6.5rem)] ${bg}`}>
+        <div className={wrap}>
+          <div className="rounded-[2.25rem] bg-[var(--tint)] p-6 sm:p-10 lg:p-14">
+            <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,auto)] lg:items-end lg:gap-16">
+              <div className="min-w-0">
+                <Eyebrow>{eyebrow}</Eyebrow>
+                <h2 className="font-heading font-display-2 text-[clamp(1.85rem,1.3rem+2vw,2.75rem)] leading-[1.12] text-ink [text-wrap:balance]">{`The doctors at ${b.shortName}`}</h2>
+              </div>
+              {hasTeam && <TextLink href="/team">Meet the whole team</TextLink>}
+            </div>
+            <ul className={`mt-8 grid gap-4 lg:mt-10 lg:gap-5 ${cols}`}>
+              {all.map((p) => (
+                <li key={p.name} className="flex items-center gap-5 rounded-[1.5rem] bg-white p-6 ring-1 ring-[color:var(--line)] sm:p-7">
+                  <span className="grid size-16 flex-none place-items-center rounded-[1.25rem] bg-[var(--tint)] text-primary">
+                    <Stethoscope size={28} strokeWidth={1.5} aria-hidden="true" />
+                  </span>
+                  <span className="min-w-0">
+                    <span className="block font-heading font-display-2 text-[1.35rem] leading-snug text-ink">{p.name}</span>
+                    {p.role && <span className="mt-1 block text-[15.5px] font-semibold text-accent">{p.role}</span>}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <CredentialList items={creds} className="mt-7" />
+          </div>
+        </div>
+      </section>
+    );
+  }
   return (
     <section className={`py-[clamp(4rem,8vw,6.5rem)] ${bg}`}>
       <div className={wrap}>
@@ -1064,10 +1099,10 @@ function Steps({ b, bg }) {
   );
 }
 
-function PayBlock({ block }) {
+function PayBlock({ block, className = 'mb-5' }) {
   const short = block.items.length > 0 && block.items.every((i) => String(i).length <= 60);
   return (
-    <div className={`mb-5 break-inside-avoid p-6 sm:p-7 ${card}`}>
+    <div className={`${className} break-inside-avoid p-6 sm:p-7 ${card}`}>
       <h3 className="font-heading font-display-2 text-[1.15rem] leading-snug text-ink">{block.heading}</h3>
       {block.text && <p className="mt-3 text-[15.5px] leading-[1.65] text-muted">{block.text}</p>}
       {short ? (
@@ -1097,11 +1132,22 @@ function PayBlock({ block }) {
 function Insurance({ b, bg }) {
   const blocks = payBlocks(b);
   if (!blocks.length) return null;
+  // One block stands beside the heading, so no wide empty half is left where a second card would stand.
+  if (blocks.length === 1) {
+    return (
+      <section className={`py-[clamp(4rem,8vw,6.5rem)] ${bg}`}>
+        <div className={`${wrap} grid gap-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-center lg:gap-16`}>
+          <SectionHead eyebrow="Insurance & payment" title="Insurance, payment and financing" className="" />
+          <PayBlock block={blocks[0]} className="" />
+        </div>
+      </section>
+    );
+  }
   return (
     <section className={`py-[clamp(4rem,8vw,6.5rem)] ${bg}`}>
       <div className={wrap}>
         <SectionHead eyebrow="Insurance & payment" title="Insurance, payment and financing" />
-        <div className={blocks.length > 1 ? 'md:columns-2 md:gap-5' : 'max-w-3xl'}>
+        <div className="md:columns-2 md:gap-5">
           {blocks.map((block) => (
             <PayBlock key={block.heading} block={block} />
           ))}
@@ -1227,7 +1273,14 @@ function Visit({ b, bg, tel, ctaLabel }) {
         <SectionHead eyebrow={hours.length ? 'Hours & location' : 'Location'} title={`Visit us in ${b.town}`} />
         <div className="grid gap-5 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]">
           <div className="relative isolate min-h-[23rem] overflow-hidden rounded-[2rem] ring-1 ring-black/5 lg:min-h-[28rem]">
-            <MapArt />
+            {/* The real streets around the office, from Google Maps; the drawn plan only shows while it loads. */}
+            <MapArt street={String(b.address || '').split(',')[0].replace(/^\d+[\w-]*\s+/, '')} town={b.town} />
+            <iframe
+              title={`Map to ${b.name}`}
+              src={`https://maps.google.com/maps?q=${encodeURIComponent(b.mapQuery || [b.address, b.town, `${b.state} ${b.zip || ''}`.trim()].filter(Boolean).join(', '))}&z=15&output=embed`}
+              referrerPolicy="no-referrer-when-downgrade"
+              className="absolute inset-0 size-full border-0"
+            />
             <div className="absolute inset-x-3 bottom-3 flex flex-col gap-4 rounded-[1.4rem] bg-white p-5 shadow-[0_24px_48px_-28px_rgba(16,32,48,0.55)] sm:inset-x-5 sm:bottom-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
               <p className="flex min-w-0 items-start gap-3 text-[16px] leading-snug">
                 <MapPin size={20} className="mt-0.5 flex-none text-primary" aria-hidden="true" />
