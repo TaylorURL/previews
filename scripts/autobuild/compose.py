@@ -543,7 +543,9 @@ def gist(text, limit):
     clinic, we offer...") only sets the scene for the sentence, so it doesn't.
     A cut inside a list ("We believe maintaining timely, complete, and accurate
     books...") leaves the sentence without its point, so the clause runs on to
-    the first stop after the list is closed."""
+    the first stop after the list is closed. So does a cut before a pair's
+    second half ("We offer an array of payroll, and human resource services"),
+    unless that half opens a clause of its own ("..., and we file them")."""
     cut = trim(text, limit)
     if cut or not sentences(text):
         return cut
@@ -560,7 +562,8 @@ def gist(text, limit):
     for i in range(0, len(parts), 2):
         head = "".join(parts[:i + 1]).rstrip(".!? ")
         rest = "".join(parts[i + 2:])
-        listed = bool(re.match(r"(?:[\w'’-]+,?\s+){1,3}(?:and|or)\s", rest) or (listed and re.match(r"(?:and|or)\s", rest)))
+        listed = bool(re.match(r"(?:[\w'’-]+,?\s+){1,3}(?:and|or)\s", rest) or (listed and re.match(r"(?:and|or)\s", rest))
+                      or re.match(r"(?:and|or)\s(?!(?:we|you|they|it|he|she|our|their|then|so)\b)", rest, re.I))
         if not listed:
             break
     # A clause that opens a pair ("We pride ourselves on not only offering
