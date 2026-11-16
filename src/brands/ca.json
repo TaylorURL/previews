@@ -1,0 +1,259 @@
+{
+  "template": "outdoor",
+  "preview": true,
+  "name": "CA Company Services LLC",
+  "shortName": "CA Company Services",
+  "phone": "(346) 274-0849",
+  "email": "contact@cacompanyllc.com",
+  "address": "3142 Westside Dr",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77504",
+  "rating": 4.8,
+  "reviewCount": 68,
+  "brand": {
+    "primary": "#1f6434",
+    "primaryDeep": "#123d20",
+    "accent": "#e0142c",
+    "ink": "#16201a",
+    "surface": "#f4f8f4",
+    "muted": "#58625b",
+    "line": "#dde3dd",
+    "heading": "'Playfair Display', Georgia, serif",
+    "body": "'Cormorant Garamond', Georgia, serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+  },
+  "heroStyle": "split",
+  "tone": "classic",
+  "hero": {
+    "eyebrow": "Where the grass is greener on our side",
+    "title": "Greater Houston properties,",
+    "titleAccent": "looking their best year-round.",
+    "lead": "From HOAs and apartment communities to commercial campuses, retail centers and residential properties, our clients trust us for reliable service, consistent results and the attention to detail that keeps their landscapes looking professional.",
+    "image": "/brands/ca/hero",
+    "imageAlt": "The CA Company Services crew standing with their mowers and equipment in front of the company trucks"
+  },
+  "serviceArea": [
+    "Pasadena",
+    "The Woodlands",
+    "Houston",
+    "Surrounding areas"
+  ],
+  "highlights": [
+    {
+      "title": "Licensed and Insured",
+      "text": "We are fully licensed and insured, and our team is committed to reliable lawn care that keeps your property safe.",
+      "icon": "shield"
+    },
+    {
+      "title": "A Personalized Approach",
+      "text": "Every lawn is unique, so we work closely with you on a customized lawn care plan that meets your needs and preferences.",
+      "icon": "check"
+    },
+    {
+      "title": "Residential and Commercial",
+      "text": "We care for homes, HOAs, apartment communities, commercial campuses, retail centers, healthcare facilities, parks and industrial properties.",
+      "icon": "building"
+    },
+    {
+      "title": "An Experienced Team",
+      "text": "Our team is made up of experienced landscape designers, horticulturists and skilled technicians.",
+      "icon": "leaf"
+    }
+  ],
+  "phones": [
+    {
+      "label": "Woodlands",
+      "number": "(346) 242-6761"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Michael S.",
+      "text": "This has been a great lawn service. They have been cutting my lawn for over a year now and it always looks great. Specifically I have asked small details such as for them to cut my grass a little higher to match my neighbor and they did it. I get texts asking for feedback (very professional).",
+      "source": "their site"
+    }
+  ],
+  "ask": "quote",
+  "summary": "Lawn care, landscape design and grounds maintenance for homes, HOAs, apartment communities and commercial properties in Pasadena, The Woodlands, Houston and the surrounding areas.",
+  "groups": [
+    {
+      "slug": "residential",
+      "title": "Residential",
+      "summary": "Landscape design, lawn care, tree and shrub care, lighting and seasonal cleanup for your home.",
+      "intro": "Our professional landscaping services are designed to transform your outdoor spaces into beautiful, functional and sustainable environments. Whether you want to enhance the curb appeal of your home, create a serene garden retreat or maintain a vibrant landscape, our team is here to help.",
+      "image": "/brands/ca/residential",
+      "imageAlt": "Square stepping stones through gray gravel beside a newly planted flower bed with stone edging",
+      "services": [
+        {
+          "slug": "landscape-design",
+          "title": "Landscape Design"
+        },
+        {
+          "slug": "lawn-care-and-maintenance",
+          "title": "Lawn Care and Maintenance"
+        },
+        {
+          "slug": "tree-and-shrub-care",
+          "title": "Tree and Shrub Care"
+        },
+        {
+          "slug": "landscape-lighting",
+          "title": "Landscape Lighting"
+        },
+        {
+          "slug": "seasonal-cleanup",
+          "title": "Seasonal Cleanup"
+        }
+      ]
+    },
+    {
+      "slug": "commercial",
+      "title": "Commercial",
+      "summary": "Landscaping and grounds maintenance for offices, retail centers, industrial complexes and other commercial properties.",
+      "intro": "Our commercial landscaping services are tailored to the needs of businesses, offices, retail centers, industrial complexes and other commercial properties. Whether you want to enhance the exterior of your building, maintain large green spaces or make your outdoor areas more sustainable, we offer a full range of services.",
+      "image": "/brands/ca/commercial",
+      "imageAlt": "A row of CA Company Services pickup trucks parked in a lot",
+      "services": [
+        {
+          "slug": "commercial-landscape-design",
+          "title": "Landscape Design"
+        },
+        {
+          "slug": "commercial-lawn-care-and-maintenance",
+          "title": "Lawn Care and Maintenance"
+        },
+        {
+          "slug": "ground-maintenance",
+          "title": "Ground Maintenance"
+        },
+        {
+          "slug": "regular-maintenance",
+          "title": "Regular Maintenance"
+        },
+        {
+          "slug": "exterior-features",
+          "title": "Exterior Features"
+        }
+      ]
+    },
+    {
+      "slug": "healthcare",
+      "title": "Healthcare",
+      "summary": "Landscaping and lawn care for hospitals, clinics, medical centers and nursing homes.",
+      "intro": "The grounds of hospitals, clinics and medical centers play a part in patient recovery, staff well-being and how the facility is seen. We provide tailored landscaping and lawn care for healthcare settings, creating and maintaining outdoor spaces that support healing, promote wellness and feel calm for patients, visitors and staff."
+    },
+    {
+      "slug": "parks",
+      "title": "Parks",
+      "summary": "Design, installation and maintenance for parks, from large urban parks to small neighborhood green spaces.",
+      "intro": "We provide landscaping for parks of all sizes, from large urban parks to small neighborhood green spaces. Our work supports both the natural ecosystem and the needs of park visitors, so every park is a safe, accessible and beautiful place for everyone to enjoy. From initial design and installation to ongoing maintenance, we offer a full range of landscaping services to keep your park looking its best year-round.",
+      "services": [
+        {
+          "slug": "park-master-plans",
+          "title": "Park Master Plans",
+          "text": "Our landscapers work with park authorities, municipalities and community organizations on park master plans that balance function with looks.",
+          "points": [
+            "Playgrounds",
+            "Picnic areas",
+            "Walking paths",
+            "Gardens",
+            "Water features",
+            "Sports facilities"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "retail",
+      "title": "Retail",
+      "summary": "Landscaping that gives retail stores and shopping centers curb appeal and a welcoming first impression.",
+      "intro": "For retail stores, first impressions matter. Whether you run a small boutique or a large shopping center, our landscaping is tailored to your business, improving curb appeal and keeping your property clean, safe and inviting year-round."
+    },
+    {
+      "slug": "industrial",
+      "title": "Industrial",
+      "summary": "Durable, low-maintenance landscaping and lawn care for manufacturing plants, distribution centers and industrial complexes.",
+      "intro": "Industrial properties need landscapes that balance function, safety and looks. Whether it is a manufacturing facility, a distribution center or an industrial complex, we provide landscaping and lawn care that improve the appearance, function and sustainability of your outdoor spaces."
+    }
+  ],
+  "about": {
+    "eyebrow": "About CA Company Services",
+    "title": "A partner you can count on",
+    "text": [
+      "CA Company Services is committed to helping properties across the Greater Houston area look their best year-round. We take pride in building long-term partnerships through quality workmanship, dependable service and clear communication.",
+      "We are dedicated to top-notch lawn care for both residential and commercial clients. Our landscaping package delivers curb appeal with lush greenery all year round, and we take pride in understanding what our clients need and exploring every possible solution when a challenge comes up.",
+      "Working with nature to showcase its beauty is why CA Company Services has built a reputation as a top lawn care service in Pasadena. Every lawn is unique, so our team works closely with you on a customized lawn care plan."
+    ],
+    "image": "/brands/ca/photo4",
+    "imageAlt": "A CA Company Services pickup truck and trailer parked by a lake and a mowed lawn"
+  },
+  "hours": [
+    [
+      "Mon – Sat",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "projects": [
+    {
+      "title": "Residential Landscaping Design",
+      "text": "From beautifully landscaped flower beds to well-maintained front yard landscaping, we create picturesque environments for your home.",
+      "image": "/brands/ca/project-design",
+      "imageAlt": "A curved flower bed with stone edging, red and green plants and young palms beside a house"
+    },
+    {
+      "title": "Lawn Mowing Services",
+      "text": "A neatly landscaped yard with well-manicured lawns and mulched flower beds, for residential and commercial outdoor spaces.",
+      "image": "/brands/ca/project-mowing",
+      "imageAlt": "A freshly mowed front lawn with a young tree in a red mulch ring and trimmed shrubs along a brick house"
+    },
+    {
+      "title": "Professional Lawn Care Services",
+      "text": "From maintaining the grass in residential gardens to commercial grounds, our team is dedicated to providing top-notch lawn care for all outdoor spaces.",
+      "image": "/brands/ca/project-lawncare",
+      "imageAlt": "A CA Company Services crew member in a wide-brimmed hat trimming the edge of a green lawn in front of a house"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Our Services",
+      "items": [
+        "Lawn Care: we are passionate about creating beautiful outdoor spaces that showcase the best of nature's beauty.",
+        "Landscape Design: custom landscape design tailored to bring out the unique character of your property.",
+        "Other Services: with our expertise, you can have peace of mind knowing your landscape is well taken care of."
+      ]
+    },
+    {
+      "heading": "Who We Service",
+      "items": [
+        "Residential",
+        "Parks",
+        "Commercial",
+        "Retail",
+        "Healthcare",
+        "Industrial"
+      ]
+    },
+    {
+      "heading": "Our Service Areas",
+      "text": "We serve Pasadena, The Woodlands, Houston and the surrounding areas. From the humid Houston summers to the cooler, drier months, we provide tailored solutions designed to thrive in the local climate."
+    },
+    {
+      "heading": "Getting a Quote",
+      "text": "Whether you need routine maintenance, landscaping design or specialized treatments, getting a quote is easy. Call us, fill out the contact form or look through the services we provide."
+    },
+    {
+      "heading": "Phone and Email",
+      "items": [
+        "Main (Pasadena): (346) 274-0849",
+        "Woodlands: (346) 242-6761",
+        "contact@cacompanyllc.com",
+        "cacompanyservices@gmail.com"
+      ]
+    }
+  ]
+}

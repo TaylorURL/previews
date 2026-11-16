@@ -107,8 +107,12 @@ export function Orbit({ b, services, hasPage }) {
   );
 }
 
-/** A street plan drawn for the directions card: soft blocks, a few roads and a pin. It is no map of the real streets. */
-export function MapArt() {
+/**
+ * A street plan drawn for the directions card: soft blocks, a road and a pin,
+ * the road named for the street of their address and the plan for their town.
+ * It is no map of the real streets; it is what shows until the real one loads.
+ */
+export function MapArt({ street = '', town = '' }) {
   return (
     <svg aria-hidden="true" className="absolute inset-0 size-full" viewBox="0 0 600 420" preserveAspectRatio="xMidYMid slice" fill="none">
       <rect width="600" height="420" style={{ fill: 'color-mix(in srgb, var(--primary) 11%, #fff)' }} />
@@ -125,7 +129,18 @@ export function MapArt() {
         <rect x="424" y="296" width="152" height="102" rx="14" />
       </g>
       <path d="M-20 360 C 140 330, 220 250, 340 210 S 520 150, 640 70" stroke="#fff" strokeWidth="18" strokeLinecap="round" />
-      <path d="M-20 360 C 140 330, 220 250, 340 210 S 520 150, 640 70" style={{ stroke: 'color-mix(in srgb, var(--primary) 14%, transparent)' }} strokeWidth="2" strokeDasharray="2 10" strokeLinecap="round" />
+      <path id="map-road" d="M-20 360 C 140 330, 220 250, 340 210 S 520 150, 640 70" style={{ stroke: 'color-mix(in srgb, var(--primary) 14%, transparent)' }} strokeWidth="2" strokeDasharray="2 10" strokeLinecap="round" />
+      {street && (
+        <text dy="-16" fontSize="13" fontWeight="600" letterSpacing="0.06em" style={{ fill: 'color-mix(in srgb, var(--primary) 70%, #000)' }}>
+          <textPath href="#map-road" startOffset="72%" textAnchor="middle">{street}</textPath>
+        </text>
+      )}
+      {/* The card is narrower than the plan, so its sides are cut off (about 100 of 600 each side on a phone): the town sits on a middle block. */}
+      {town && (
+        <text x="264" y="76" textAnchor="middle" fontSize="12" fontWeight="700" letterSpacing="0.16em" style={{ fill: 'color-mix(in srgb, var(--primary) 55%, #fff)' }}>
+          {town.toUpperCase()}
+        </text>
+      )}
       <circle cx="339" cy="207" r="46" style={{ fill: 'color-mix(in srgb, var(--primary) 12%, transparent)' }} />
       <circle cx="339" cy="207" r="24" style={{ fill: 'color-mix(in srgb, var(--primary) 18%, transparent)' }} />
       <path d="M339 150c-17 0-30 13-30 30 0 23 30 50 30 50s30-27 30-50c0-17-13-30-30-30Z" style={{ fill: 'var(--primary)' }} />
