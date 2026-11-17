@@ -1,0 +1,596 @@
+{
+  "template": "professional",
+  "preview": true,
+  "name": "Baity & Assoc. Tax and Financial Services, Inc.",
+  "shortName": "Baity & Assoc. Tax and Financial Services",
+  "phone": "(713) 946-1040",
+  "email": "info@baitytax.com",
+  "address": "6005 Fairmont Pkwy # J",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77505",
+  "rating": 4.8,
+  "reviewCount": 41,
+  "brand": {
+    "primary": "#005f3f",
+    "primaryDeep": "#00422c",
+    "accent": "#0074d1",
+    "ink": "#142022",
+    "surface": "#f0f5f3",
+    "muted": "#5b6470",
+    "line": "#dee0e0",
+    "cream": "#f7f7f1",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;600;700&display=swap"
+  },
+  "heroStyle": "split",
+  "tone": "bold",
+  "hero": {
+    "eyebrow": "Licensed Enrolled Agents in Pasadena",
+    "title": "Big firm capability, small firm personality.",
+    "lead": "Baity & Assoc. provides comprehensive tax and financial services to our clients in order to enable them to meet their personal and business goals more effectively.",
+    "image": "/brands/baityassoctaxfinancial/office",
+    "imageAlt": "The front door of Baity & Assoc. at 6005 Fairmont Pkwy, Suite J",
+    "points": [
+      "Licensed Enrolled Agents",
+      "Free 30-minute new client consultation",
+      "Notary services at no charge for clients"
+    ]
+  },
+  "kind": "accounting",
+  "services": [
+    {
+      "slug": "tax-preparation",
+      "title": "Individual Tax Preparation",
+      "audience": "individuals",
+      "icon": "receipt",
+      "summary": "Personal returns and tax planning.",
+      "text": "We guide our clients through a full range of tax planning and preparation decisions with strategies that minimize your tax liabilities.",
+      "lead": "We guide our clients through a full range of tax planning and preparation decisions with strategies that minimize your tax liabilities. Our expertise, experience, analysis, and thorough research allow us to optimize financial opportunities found in existing and recently altered tax laws.",
+      "covers": [
+        {
+          "title": "Structured tax plans",
+          "text": "Our tax professionals strategically formulate structured tax plans that increase tax benefits for both business and personal goals."
+        },
+        {
+          "title": "Efficient preparation",
+          "text": "We make use of computerized technologies and software in providing the most efficient preparation of tax returns."
+        },
+        {
+          "title": "Drop-off or mail-in",
+          "text": "During tax season we also offer drop-off or mail-in service, processed on a first-come, first-serve basis."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How long will it take to prepare my tax return?",
+          "a": "There is no specific answer to this. During tax season, drop-off and mail-in returns are processed on a first-come, first-serve basis, and turnaround time is usually 2-3 days (given that all information required has been received). The later it is during tax season, the more time it takes."
+        },
+        {
+          "q": "What information do you need to prepare my tax return?",
+          "a": "A general listing of items needed is in the Client Tax Documents section of our website. In some circumstances, you may need to consult one of our associates for further review."
+        }
+      ]
+    },
+    {
+      "slug": "estates-and-trusts",
+      "title": "Estates and Trusts",
+      "audience": "individuals",
+      "icon": "landmark",
+      "summary": "Estate and trust tax return preparation.",
+      "text": "We understand the diverse set of tax laws necessary to successfully plan the transfer of assets to beneficiaries.",
+      "lead": "We understand the diverse set of tax laws necessary to successfully plan the transfer of assets to beneficiaries and are proactively involved in providing the requisite individual attention to your situation. We ensure that you will receive the greatest tax benefit from your will, trust, gift contribution, etc. through our Estate and Trust Tax Return Preparation."
+    },
+    {
+      "slug": "irs-representation",
+      "title": "IRS Representation",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "Notices, examinations, protests, audits.",
+      "text": "Professional representation can be vital during an audit. We resolve IRS controversies including notices, examinations, protests and proceedings.",
+      "lead": "Professional representation can be vital during an audit, and our experience with taxing authorities enables us to guide clients in their dealings with federal and state agencies. During our years of experience dealing with many taxing authorities, we have achieved a level of competence that can ensure our clients they are being properly represented before the various federal and state tax agencies.",
+      "covers": [
+        {
+          "title": "Notices",
+          "text": "Bring your IRS letter to us so that we can research what the IRS is after."
+        },
+        {
+          "title": "Examinations and audits",
+          "text": "If it is an audit, we are experienced with the IRS in regards to audits and can help you through the audit process."
+        },
+        {
+          "title": "Protests and proceedings",
+          "text": "We resolve IRS controversies including notices, examinations, protests and proceedings."
+        }
+      ],
+      "questions": [
+        {
+          "q": "I have received a letter from the IRS, what do I do?",
+          "a": "First of all, don’t panic. Just because you receive a letter from the IRS, it does not indicate that an audit is in process. There are many types of correspondence from the IRS, so bring your IRS letter to Baity & Assoc. so that we can research what the IRS is after."
+        }
+      ]
+    },
+    {
+      "slug": "notary-services",
+      "title": "Notary Services",
+      "audience": "individuals",
+      "icon": "stamp",
+      "summary": "Free notary services for our clients.",
+      "text": "We offer notary services to our clients at no charge."
+    },
+    {
+      "slug": "business-tax-preparation",
+      "title": "Business Tax Preparation",
+      "audience": "businesses",
+      "icon": "building",
+      "summary": "Corporate tax planning and compliance.",
+      "text": "Our tax approach is tailored at the corporate level to be responsive to the Company’s needs both with respect to planning and compliance issues.",
+      "lead": "Our tax approach is tailored at the corporate level to be responsive to the Company’s needs both with respect to planning and compliance issues. To understand the total tax posture of all parties, we review prior year tax returns and interview appropriate personnel to identify issues of economic impact.",
+      "covers": [
+        {
+          "title": "Ongoing planning",
+          "text": "We are proactive in providing tax planning suggestions on an ongoing basis, with a significant emphasis on advance tax planning for prospective transactions."
+        },
+        {
+          "title": "Fewer disputes",
+          "text": "We plan transactions in order to minimize disputes with the Internal Revenue Service and other taxing authorities."
+        },
+        {
+          "title": "Working with your advisors",
+          "text": "Our assistance in tax planning extends to dealing with other advisors of our clients to obtain the best overall business and financial reporting results."
+        }
+      ]
+    },
+    {
+      "slug": "business-personal-property-tax-returns",
+      "title": "Business Personal Property Tax Returns",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Personal property tax analysis.",
+      "text": "One possible way we can help you reduce your annual tax burden is through a Personal Property Tax Analysis.",
+      "lead": "One possible way we can help you reduce your annual tax burden is through a Personal Property Tax Analysis. The review verifies the removal of disposed assets and may reduce the value of your assessment for other non-includable items."
+    },
+    {
+      "slug": "state-franchise-tax-returns",
+      "title": "State Franchise Tax Returns",
+      "audience": "businesses",
+      "icon": "landmark",
+      "summary": "Texas franchise tax returns.",
+      "text": "With our attention to detail and up-to-date tax knowledge, we are able to prepare your State Franchise Tax Returns.",
+      "lead": "With our attention to detail and up-to-date tax knowledge, we are able to prepare your State Franchise Tax Returns. We will make sure that you receive any and all tax benefits that are available to your particular business."
+    },
+    {
+      "slug": "sales-tax-returns",
+      "title": "Sales Tax Returns",
+      "audience": "businesses",
+      "icon": "store",
+      "summary": "Sales tax returns, prepared on time.",
+      "text": "We can assist your company in the compilation of information and preparation of sales tax returns in an efficient and timely manner.",
+      "lead": "Many of our clients are responsible for collecting and submitting sales taxes in many different vicinities. We can assist your company in the compilation of information and preparation of sales tax returns in an efficient and timely manner."
+    },
+    {
+      "slug": "bookkeeping-write-up",
+      "title": "Bookkeeping/Write-Up",
+      "audience": "businesses",
+      "icon": "book",
+      "summary": "Monthly, quarterly and annual books.",
+      "text": "We can help you with the organization and Monthly, Quarterly, and Annual tasks of bookkeeping so that you can focus on your core business.",
+      "lead": "Accurate record keeping is an essential component of a successful business yet can also be complicated and time consuming. We can help you with the organization and Monthly, Quarterly, and Annual tasks of bookkeeping so that you can focus on your core business.",
+      "questions": [
+        {
+          "q": "How can outsourcing my bookkeeping department help my business?",
+          "a": "Successful outsourcing relationships enable business owners and CEOs to focus on their business’ core competencies, eliminating the daily tactical to-do lists (working in the business) that keep them from spending time on the big picture and strategic initiatives (working on the business). Businesses find that they save money, improve quality of work, and free up resources when they outsource the right functions."
+        }
+      ]
+    },
+    {
+      "slug": "quickbooks",
+      "title": "QuickBooks Support and Training",
+      "audience": "businesses",
+      "icon": "calculator",
+      "summary": "QuickBooks® Professional Advisors.",
+      "text": "As QuickBooks® Professional Advisors, we can help you with any QuickBooks® support you may need.",
+      "lead": "As QuickBooks® Professional Advisors, we can help you with any QuickBooks® support you may need. Research shows that most QuickBooks® users only utilize 30 to 40% of its potential. We can help you learn features, processes, and techniques that will increase productivity and enhance the profitability of your business.",
+      "covers": [
+        {
+          "title": "Support",
+          "text": "Help with any QuickBooks® support you may need."
+        },
+        {
+          "title": "Training",
+          "text": "Features, processes, and techniques that increase productivity."
+        },
+        {
+          "title": "A plan of action",
+          "text": "We will be pleased to take a look at your specific circumstances and develop a plan of action for implementing the procedures you need in numerous areas."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How can QuickBooks® training help my business?",
+          "a": "Business owners who keep up-to-date with their bookkeeping and who understand their financial reports become more confident in their decision making and reduce their stress levels. Being able to access accurate information quickly allows them to make business decisions in an effective, efficient manner and can prevent many potential cash flow crises."
+        }
+      ]
+    },
+    {
+      "slug": "payroll-reports",
+      "title": "Quarterly & Annual Payroll Reports",
+      "audience": "businesses",
+      "icon": "wallet",
+      "summary": "Payroll controls and payroll tax returns.",
+      "text": "Our firm can prepare all necessary payroll tax returns for all taxing authorities (i.e. IRS, TWC, and out-of-state agencies).",
+      "lead": "As a business grows, it must hire more employees, which will result in increased payroll administration. We can assist you in implementing the controls necessary to ensure a reliable, efficient, and effective payroll system. Our firm can also prepare all necessary payroll tax returns for all taxing authorities (i.e. IRS, TWC, and out-of-state agencies)."
+    },
+    {
+      "slug": "tax-planning",
+      "title": "Tax Planning",
+      "audience": "businesses",
+      "icon": "chart",
+      "summary": "Entity choice and year-end planning.",
+      "text": "Tax planning is critical for both personal and business growth.",
+      "lead": "Tax planning is critical for both personal and business growth. If your business is just starting out, we can advise you on different entities forms and the related tax consequences. If you are already an established business, we can help you with year-end tax planning, as well as evaluate the tax consequences of previous transactions. As your situation changes, we will ensure that all tax opportunities for your benefit are utilized."
+    },
+    {
+      "slug": "corporate-dissolution",
+      "title": "Corporate Dissolution and Corporate Tax Planning",
+      "audience": "businesses",
+      "icon": "scale",
+      "summary": "Dissolving an entity, correctly.",
+      "text": "Baity & Assoc. provides the expertise necessary to properly dissolve your business entity.",
+      "lead": "Baity & Assoc. provides the expertise necessary to properly dissolve your business entity. We ensure that your final tax return is completed and correct before dealing with the proper authorities on your behalf. Many business owners come to us who have previously formed Corporations or Limited Liability Companies (LLC), but are not taking advantage of the “built in” tax benefits. Effective tax planning and coordination puts money into our client’s pocket."
+    }
+  ],
+  "about": {
+    "title": "About Baity & Assoc. Tax and Financial Services",
+    "text": [
+      "Our mission is to provide comprehensive tax and financial services to our clients in order to enable them to meet their personal and business goals more effectively. We are committed to offering our clients valuable time and money saving tips, along with professional, ethical and courteous service.",
+      "By continuously updating our bookkeeping and tax knowledge through seminars and classes throughout the year, we can make certain your tax returns are not only in compliance, but make available to you the most current benefits possible to reduce tax liabilities.",
+      "Debra Baity joined the firm of Robert Chessher Financial Services (previous owner) on April 12, 1999. In October of 2000 she earned her designation as an Enrolled Agent, and on March 1, 2003 she became a partner in Chessher & Baity Financial Services. In July 2003, Debra purchased the company and changed the name to its current one, Baity & Assoc. Tax and Financial Services, Inc."
+    ],
+    "values": [
+      {
+        "title": "Professional, ethical, courteous",
+        "text": "Time and money saving tips, along with professional, ethical and courteous service."
+      },
+      {
+        "title": "Always learning",
+        "text": "Seminars and classes throughout the year keep our bookkeeping and tax knowledge current."
+      },
+      {
+        "title": "Kept confidential",
+        "text": "All files are maintained in house, and no client information leaves the office."
+      }
+    ]
+  },
+  "tagline": "Big Firm Capability, Small Firm Personality",
+  "license": "Licensed Enrolled Agents, credentialed by the Internal Revenue Service.",
+  "phones": [
+    {
+      "label": "Fax",
+      "number": "(713) 946-9241"
+    }
+  ],
+  "hours": [
+    [
+      "Monday",
+      "8:00 AM – 5:00 PM"
+    ],
+    [
+      "Tuesday",
+      "8:00 AM – 5:00 PM"
+    ],
+    [
+      "Wednesday",
+      "8:00 AM – 5:00 PM"
+    ],
+    [
+      "Thursday",
+      "8:00 AM – 5:00 PM"
+    ],
+    [
+      "Friday",
+      "8:00 AM – 5:00 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "New clients can call us for a complimentary 30-minute consultation. Call today to see if you are eligible - most clients are."
+  },
+  "overview": {
+    "title": "Tax and financial services for individuals and businesses.",
+    "text": "We prepare returns for individuals, partnerships, corporations, estates, trusts and not-for-profit organizations, and help businesses with bookkeeping, payroll reports and planning."
+  },
+  "audiences": {
+    "individuals": "Individuals & Families",
+    "businesses": "Businesses"
+  },
+  "credentials": [
+    {
+      "label": "Enrolled Agents",
+      "detail": "The highest credential offered by the Internal Revenue Service"
+    },
+    {
+      "label": "Accredited Tax Preparer",
+      "detail": "A credential presented by ACAT"
+    },
+    {
+      "label": "QuickBooks® Professional Advisors"
+    }
+  ],
+  "affiliations": {
+    "title": "Memberships and credentials",
+    "items": [
+      "National Society of Accountants (NSA)",
+      "National Association of Enrolled Agents (NAEA)",
+      "ACAT Accredited Tax Preparer",
+      "IRS Enrolled Agents"
+    ]
+  },
+  "owner": {
+    "name": "Debra Baity",
+    "role": "Principal / Enrolled Agent",
+    "text": "Debra purchased the company in July 2003 and changed the name to Baity & Assoc. Tax and Financial Services, Inc., where she continues to serve the community with her experience in bookkeeping and tax preparation."
+  },
+  "team": [
+    {
+      "name": "Debra Baity",
+      "role": "Principal / Enrolled Agent",
+      "bio": "Debra joined the firm in 1999 with many years of private industry bookkeeping and tax preparation experience, earned her Enrolled Agent designation in October 2000 and became an Accredited Tax Preparer through ACAT. She is an active member of the National Society of Accountants (NSA) and the National Association of Enrolled Agents (NAEA)."
+    },
+    {
+      "name": "Jerad Heintschel",
+      "role": "Tax Manager / Enrolled Agent",
+      "bio": "Jerad is a graduate of Texas A&M’s Mays School of Business and began his career at Baity & Assoc. in June 2012. He obtained his certification as an Enrolled Agent in 2023 and provides tax preparation, bookkeeping, and related services to our business and individual clients."
+    },
+    {
+      "name": "Vicki Hemminger",
+      "role": "Tax Specialist / Enrolled Agent",
+      "bio": "Vicki joined Baity & Assoc. in May of 2016, bringing substantial tax preparation and bookkeeping experience with her. She is a licensed and certified Enrolled Agent who excels in representing our clients with their IRS matters."
+    },
+    {
+      "name": "Sarai Garza",
+      "role": "Office Manager",
+      "bio": "Sarai joined Baity & Associates in 2021, bringing previous experience in IRS Resolution and Firm Administration to the firm. She is currently testing for her Enrolled Agent certification."
+    },
+    {
+      "name": "Jennifer Ruiz",
+      "role": "Financial Reporting and Tax Specialist",
+      "bio": "Jennifer received her Associates in Applied Science in Accounting Degree in 2019 with a 4.0 GPA and is currently pursuing her designation as an Enrolled Agent."
+    },
+    {
+      "name": "Gloria Jordan",
+      "role": "Administrative Specialist",
+      "bio": "Gloria joined the firm as an intern while studying at San Jacinto College, graduated with her Associates of Applied Science in Accounting degree in May of 2020, and became an official team member in October of 2020."
+    },
+    {
+      "name": "Natalie Olvera",
+      "role": "Financial Reporting and Tax Specialist",
+      "bio": "Natalie joined the Baity & Associates team in June 2023. She has over 10 years in personal and small business income tax preparation, accounting, data entry, payroll, and government resolution on all levels, federal, state and county."
+    },
+    {
+      "name": "Sol Macias",
+      "role": "Work Flow Coordinator",
+      "bio": "Sol joined Baity & Associates in October 2023. She graduated from San Jacinto Community College with an Associate of Arts in Business and has several years of experience in office work duties."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is an Enrolled Agent (EA)?",
+      "a": "An Enrolled Agent is an individual who has demonstrated technical competence in the field of taxation. The term “Enrolled” means the individual is licensed by the federal government. The term “Agent” means the individual is authorized to appear in place of the taxpayer at the Internal Revenue Service. Only Enrolled Agents, Attorneys, and Certified Public Accountants may represent taxpayers before the IRS at all administrative levels. EAs are required to complete 72 hours of continuing professional education, reported every three years, to maintain their status. Unlike Attorneys and CPAs, who may or may not choose to specialize in taxes, all EAs specialize in taxation, and they can practice in all 50 states."
+    },
+    {
+      "q": "What information does Baity & Assoc. need to prepare my tax return?",
+      "a": "A general listing of items needed is located in the Client Tax Documents section of the website. In some circumstances, you may need to consult one of our associates for further review."
+    },
+    {
+      "q": "Why do I have to fill out all of this paperwork if nothing has changed?",
+      "a": "We update all client files every three years. Although things such as addresses and birthdates may not have changed, people do routinely change employment, cell phone numbers and e-mail addresses. There may also be changes to marital and dependent status. The updates ensure that we have the most current information on file when reporting to the IRS."
+    },
+    {
+      "q": "How long will it take to prepare my tax return?",
+      "a": "There is no specific answer to this. During Tax Season we also offer drop-off or mail-in service; these returns are processed on a first-come, first-serve basis, and turnaround time is usually 2-3 days (given that all information required has been received). The later it is during Tax Season, the more time it takes for preparation as the drop-off and mail-in service numbers increase."
+    },
+    {
+      "q": "How does Baity & Assoc. ensure that all of my information is kept safe and confidential?",
+      "a": "All employees are thoroughly trained on confidentiality procedures. All files are maintained in house – no client information leaves the office. Files are also maintained in an Electronic File Cabinet with very stringent firewall protection. We maintain all physical file information for a three-year period; then it is destroyed by an on-site commercial cross-cut shredding company. The shredding is always witnessed by an employee of Baity & Assoc. Tax and Financial Services, Inc."
+    },
+    {
+      "q": "How long do I need to save my back-up documents in case I am audited?",
+      "a": "The IRS recommends that you save any files related to your income tax return for 7 years."
+    },
+    {
+      "q": "How do I avoid being audited?",
+      "a": "There’s no sure way to avoid a tax audit but keeping good books and records is a definite start. Most audited tax returns are selected for review either because the filer is part of a target group or because a computer program selects the return. The computer system selects many returns randomly, but there are red flags that will draw the Internal Revenue Service’s attention. Having your return prepared by a professional tax preparer helps you to navigate around these red flags."
+    },
+    {
+      "q": "I have received a letter from the IRS, what do I do?",
+      "a": "First of all, don’t panic. Just because you receive a letter from the IRS, it does not indicate that an audit is in process. There are many types of correspondence from the IRS, so bring your IRS letter to Baity & Assoc. so that we can research what the IRS is after. If it is an audit, Baity & Assoc. is experienced with the IRS in regards to audits and can help you through the audit process."
+    },
+    {
+      "q": "How can outsourcing my bookkeeping department help my business?",
+      "a": "Successful outsourcing relationships enable business owners/CEOs to focus on their business’ core competencies, eliminating the daily tactical to-do lists (working in the business) that keeps them from spending time on the big picture and strategic initiatives (working on the business). Businesses find that they save money, improve quality of work, and free up resources when they outsource the right functions."
+    },
+    {
+      "q": "How can QuickBooks® training help my business?",
+      "a": "Business owners who keep up-to-date with their bookkeeping and who understand their financial reports become more confident in their decision making and reduce their stress levels. They know precisely what they need to do and when they need to do it to make their business grow. Being able to access accurate information quickly allows them to make business decisions in an effective, efficient manner and can prevent many potential cash flow crises."
+    }
+  ],
+  "resources": [
+    {
+      "title": "Internal Revenue Service – Forms & Instructions",
+      "text": "Federal tax forms and their instructions.",
+      "href": "https://www.irs.gov/forms-instructions"
+    },
+    {
+      "title": "Internal Revenue Service – Where’s My Refund?",
+      "text": "Track your federal refund.",
+      "href": "https://www.irs.gov/refunds"
+    },
+    {
+      "title": "Texas Workforce Commission",
+      "text": "State payroll and unemployment tax.",
+      "href": "https://www.twc.texas.gov/"
+    },
+    {
+      "title": "Texas Secretary of State",
+      "text": "Business entity filings in Texas.",
+      "href": "https://www.sos.state.tx.us/"
+    },
+    {
+      "title": "Texas State Comptrollers Office",
+      "text": "Sales and franchise tax in Texas.",
+      "href": "https://comptroller.texas.gov/"
+    },
+    {
+      "title": "Social Security Administration",
+      "text": "Social Security benefits and records.",
+      "href": "https://www.ssa.gov/"
+    },
+    {
+      "title": "1040 Information Needed for Tax Returns",
+      "text": "Client tax document to download from our website.",
+      "href": "https://baitytax.com/wp-content/uploads/2026/01/1040-Information-Needed-for-Tax-Returns-2025.pdf"
+    },
+    {
+      "title": "2025 Tax Questionnaire",
+      "text": "Client tax document to download from our website.",
+      "href": "https://baitytax.com/wp-content/uploads/2026/01/2025-Tax-Questionnaire-2025.pdf"
+    },
+    {
+      "title": "2025 Consent Form",
+      "text": "Client tax document to download from our website.",
+      "href": "https://baitytax.com/wp-content/uploads/2026/01/2025_Consent_Form-2025.pdf"
+    },
+    {
+      "title": "2025 Tax Engagement Signature Form",
+      "text": "Client tax document to download from our website.",
+      "href": "https://baitytax.com/wp-content/uploads/2026/01/2025_Tax_Engagement_Signature_Form-2025.pdf"
+    },
+    {
+      "title": "2025 Tax Engagement Signature Form – Business",
+      "text": "Client tax document to download from our website.",
+      "href": "https://baitytax.com/wp-content/uploads/2026/01/2025_Tax_Engagement_Signature_Form-Business-2025.pdf"
+    },
+    {
+      "title": "Charitable Contributions Tracker",
+      "text": "Client tax document to download from our website.",
+      "href": "https://baitytax.com/wp-content/uploads/2026/01/Charitable-Contributions-Tracker-2025.pdf"
+    },
+    {
+      "title": "Noncash Charitable Donation Tracker",
+      "text": "Client tax document to download from our website.",
+      "href": "https://baitytax.com/wp-content/uploads/2026/01/Noncash-Charitable-Donation-Tracker-2025.pdf"
+    },
+    {
+      "title": "Dependent Support Worksheet",
+      "text": "Client tax document to download from our website.",
+      "href": "https://baitytax.com/wp-content/uploads/2026/01/Dependent-Support-Worksheet-2025.pdf"
+    },
+    {
+      "title": "Business Expenses Worksheet",
+      "text": "Client tax document to download from our website.",
+      "href": "https://baitytax.com/wp-content/uploads/2026/01/Business-Expenses-Worksheet-2025.pdf"
+    },
+    {
+      "title": "Gambling Log",
+      "text": "Client tax document to download from our website.",
+      "href": "https://baitytax.com/wp-content/uploads/2026/01/Gambling-Log-2025.xlsx"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Johnny So",
+      "source": "Google",
+      "text": "We've been using Baity & Assoc. for over a decade for all of our small businesses--always thorough, responsive, and insightful, and can handle as much or as little as you need them to. Everyone there has been great, but Jerad in particular is outstanding. Recommended for small businesses everywhere!"
+    },
+    {
+      "author": "Jesse Cruz",
+      "source": "Google",
+      "text": "Baity & Associates has been an amazing company for helping me with my tax preparation. Jennifer is very knowledgeable and willing to help me understand my finances."
+    },
+    {
+      "author": "Rod Davis",
+      "source": "Google",
+      "text": "We are very happy with Baity & Associates. Jerad does great work for our personal and business needs!"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Tax Season Hours",
+      "text": "We are open extended hours during tax season, including Saturdays 8:00 AM – 1:00 PM."
+    },
+    {
+      "heading": "New Client Consultation",
+      "text": "Contact us for a new client complimentary 30-minute consultation. Call us today to see if you are eligible - most clients are."
+    },
+    {
+      "heading": "Drop-Off and Mail-In Service",
+      "text": "During tax season we offer drop-off or mail-in service. Returns are processed first-come, first-serve, and turnaround is usually 2-3 days once all information required has been received."
+    },
+    {
+      "heading": "Referral Reminder Coupon",
+      "text": "Download the Referral Reminder Coupon on our website to start saving at Baity & Assoc."
+    },
+    {
+      "heading": "Client Tax Documents",
+      "items": [
+        "1040 Information Needed for Tax Returns",
+        "2025 Tax Questionnaire",
+        "2025 Consent Form",
+        "2025 Tax Engagement Signature Form (Individual and Business)",
+        "Charitable Contributions Tracker",
+        "Noncash Charitable Donation Tracker",
+        "Farm Income & Expense Worksheet",
+        "Office in Home Deduction Worksheet",
+        "Dependent Support Worksheet",
+        "Business Income & Expense Worksheet",
+        "Business Expenses Worksheet",
+        "Mileage Log",
+        "Rental Property Worksheet",
+        "Business Tax Info. Form – Schedule C",
+        "Client Information Sheet – Personal and Business",
+        "Gambling Log",
+        "Privacy Policy"
+      ]
+    },
+    {
+      "heading": "Liscio Client Login",
+      "text": "Clients can use the Liscio Login link on our website."
+    },
+    {
+      "heading": "Affiliates",
+      "items": [
+        "Law Office of Derek Matta, P.C. – www.CCTAXLAW.com",
+        "Robert A. Whitley, Attorney at Law – www.whitlegal.com",
+        "Mike Williams, Edward Jones Financial Advisor"
+      ]
+    },
+    {
+      "heading": "Who We Prepare Returns For",
+      "items": [
+        "Individuals",
+        "Partnerships",
+        "Corporations",
+        "Estates",
+        "Trusts",
+        "Not-for-Profit Organizations"
+      ]
+    },
+    {
+      "heading": "Follow Us",
+      "items": [
+        "Facebook: https://www.facebook.com/BaityTax",
+        "LinkedIn: https://www.linkedin.com/company/baity-&-assoc-tax-and-financial-services-inc-/about/"
+      ]
+    }
+  ]
+}
