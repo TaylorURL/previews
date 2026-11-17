@@ -1353,6 +1353,8 @@ function OfficeCard({ b, tel, ctaLabel, k }) {
 
 function HomePage(props) {
   const { b, groups, k, hasTeam } = props;
+  // A hero with no photo already sets the owner on its card (their photo, words and credentials), so they are not introduced twice on one page.
+  const ownerInHero = heroStyleOf(b) === 'type' && ownerOf(b);
   return (
     <>
       <Hero {...props} />
@@ -1360,7 +1362,7 @@ function HomePage(props) {
       <Stats b={b} />
       <Affiliations b={b} k={k} />
       <Services b={b} groups={groups} />
-      <OwnerBand b={b} k={k} ctaLabel={props.ctaLabel} className={processOf(b) ? 'pt-0' : 'pt-0 pb-[clamp(4rem,8vw,6.5rem)]'} />
+      {!ownerInHero && <OwnerBand b={b} k={k} ctaLabel={props.ctaLabel} className={processOf(b) ? 'pt-0' : 'pt-0 pb-[clamp(4rem,8vw,6.5rem)]'} />}
       <Process b={b} />
       <AboutTeaser b={b} hasTeam={hasTeam} />
       {/* The about band without a photo is the surface the reviews card is drawn in, so the card is set below it. */}
