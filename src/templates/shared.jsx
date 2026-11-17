@@ -150,7 +150,11 @@ export function BrandLogo({ b, className = '', textClass = '', scale = 1, ground
   const name = <span data-logo-name="" className={`block font-heading text-[22px] font-bold leading-tight ${textClass}`}>{b.shortName}</span>;
   if (!brand.logo) return name;
   const backdrop = hexOr(ground, '#ffffff');
-  const own = logoStands(brand, backdrop) >= READS;
+  // A mark that does not stand even on the ground it was made for is set in
+  // mid tones (gray letters beside an orange one) that sink into every
+  // ground: on a dark footer they clear the bar yet look washed out beside the
+  // cut the header draws. It is drawn as its cut wherever it goes.
+  const own = logoStands(brand, backdrop) >= READS && logoStands(brand, hexOr(brand.logoGround, '#ffffff')) >= READS;
   if (!own && !brand.logoMono) return name;
   const src = own ? brand.logo : brand.logoMono;
   // On a pale tint, the white a mark carries at its rim (a keyline drawn for
