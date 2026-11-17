@@ -419,10 +419,11 @@ export default function Plumbing({ b }) {
             {/* As in the hero: on a phone the photo is a strip above the words, because this band
                 runs tall with every town in it and a wide photo stretched behind all of it softens.
                 On a wide screen it takes the right half beside the words, not behind them, so the
-                heading and towns never sit on the face of whoever is in the photo. That half is
-                taller than it is wide and covers by its height, so `sizes` still asks for the wide file. */}
+                heading and towns never sit on the face of whoever is in the photo. There it keeps its
+                own shape, centred on the band's height: covering a half taller than it is wide blew a
+                landscape photo up twice over, softening it and cutting off the top of a head. */}
             <Img
-              className="relative block aspect-[16/9] w-full object-cover lg:absolute lg:inset-y-0 lg:left-1/2 lg:right-0 lg:-z-20 lg:aspect-auto lg:h-full lg:w-1/2"
+              className="relative block aspect-[16/9] w-full object-cover lg:absolute lg:right-0 lg:top-1/2 lg:-z-20 lg:aspect-auto lg:h-auto lg:w-1/2 lg:-translate-y-1/2"
               src={b.band.image}
               alt={b.band.imageAlt}
               sizes="100vw"

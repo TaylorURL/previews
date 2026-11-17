@@ -1323,10 +1323,11 @@ function AboutBand({ b }) {
         <ul className="mt-8 grid gap-5 sm:grid-cols-3">
           {list(a.values).map((v) => (
             <li key={v.title} className="border-t-2 border-accent pt-4 [container-type:inline-size]">
-              {/* A long word ('Recommendations') is set smaller until it fits the column whole, rather than overrunning it. */}
+              {/* A long word ('Recommendations') is set smaller until it fits the column whole, rather than overrunning it;
+                  every column is sized from the longest word in the row, so the headings and text stay level. */}
               <h3
                 className={`${h3} text-[min(18px,var(--fit))]`}
-                style={{ '--fit': `${(100 / (Math.max(longest(v.title), 1) * 0.78)).toFixed(2)}cqi` }}
+                style={{ '--fit': `${(100 / (Math.max(longest(...list(a.values).map((x) => x.title)), 1) * 0.78)).toFixed(2)}cqi` }}
               >
                 {v.title}
               </h3>

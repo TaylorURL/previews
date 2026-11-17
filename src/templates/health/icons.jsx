@@ -107,14 +107,16 @@ export const Spine = drawn(
   'Spine',
 );
 
-// First match wins, so the narrow words come before the broad ones.
+// First match wins, so the narrow words come before the broad ones. 'Same-day'
+// is left out of the emergency words: in a treatment's title it says how fast
+// the work is done ('Same-Day Crowns', 'Same-Day Dentures'), not that it is urgent.
 const BY_WORDS = [
   [/implant/i, Implant],
-  [/emergenc|urgent|same[- ]day|toothache|walk-?ins?/i, Siren],
+  [/emergenc|urgent|toothache|walk-?ins?/i, Siren],
   [/whiten|bleach|zoom/i, Sparkles],
   [/veneer|cosmetic|aesthetic|esthetic|bonding|makeover|smile design|botox|filler/i, WandSparkles],
   [/invisalign|aligner|orthodont|braces|straighten/i, Smile],
-  [/crown|bridge|onlay|inlay/i, Crown],
+  [/crown|bridge|onlay|inlay|cerec/i, Crown],
   [/denture|partials?\b/i, Smile],
   [/sedation|nitrous|anxi|relax|laughing gas|iv\b/i, Moon],
   [/sleep|apnea|snor|airway/i, Moon],
