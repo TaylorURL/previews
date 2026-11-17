@@ -284,7 +284,8 @@ NOT_A_SERVICE = re.compile(r"\b(guide|tips?|season|vs\.?|versus|how|why|patient 
 # where they stand ("Already on Medicare", "New to Medicare"), shelves their
 # material ("Medicare Video Library") or dates their deadlines ("Medicare
 # Enrollment Periods") is a page of their site for the reader, not a service.
-FOR_THE_READER = re.compile(r"^(?:ask|already on|new to)\b|\blibrary\b|\benrol(?:l)?ment periods?\b", re.I)
+# So is one that warns them ("Don't wait until a roof replacement").
+FOR_THE_READER = re.compile(r"^(?:ask|already on|new to|don['’]t|do not)\b|\blibrary\b|\benrol(?:l)?ment periods?\b", re.I)
 # A heading that is only the agency or the title a service is about ("IRS",
 # "CPA") is a fragment of one, and one that ends on the kind of business they
 # are ("Tax and Accounting Firm", "Independent Insurance Agency") says who
