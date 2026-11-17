@@ -1,0 +1,275 @@
+{
+  "template": "professional",
+  "preview": true,
+  "name": "James M. Harrison Law Firm, PLLC",
+  "shortName": "James M. Harrison Law Firm",
+  "phone": "(832) 767-6446",
+  "email": "legal@jmharrisonlawfirm.com",
+  "address": "4008 Vista Rd, Suite A101",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77504",
+  "brand": {
+    "primary": "#071427",
+    "primaryDeep": "#050e1b",
+    "accent": "#266dd5",
+    "ink": "#151a21",
+    "surface": "#f0f1f2",
+    "muted": "#5b6470",
+    "line": "#dedfe0",
+    "cream": "#f8f5f0",
+    "heading": "'Lora', Georgia, serif",
+    "body": "'Crimson Text', Georgia, serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Crimson+Text:wght@400;600;700&display=swap",
+    "logo": "/brands/jamesmharrisonlawfirm/logo.webp",
+    "logoMono": "/brands/jamesmharrisonlawfirm/logo-mono.webp",
+    "logoWidth": 84,
+    "logoHeight": 84,
+    "logoRatio": 1.0,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.036,
+      0.032,
+      0.027,
+      0.582,
+      0.622,
+      0.667,
+      0.721,
+      0.778,
+      0.845,
+      0.92,
+      0.98
+    ]
+  },
+  "heroStyle": "type",
+  "tone": "classic",
+  "hero": {
+    "eyebrow": "Attorney in Pasadena, TX",
+    "title": "Personalized legal guidance for business, real estate and estate planning.",
+    "lead": "James M. Harrison Law Firm, PLLC helps clients with business and corporate law, real estate, probate and wills, with over 20 years of experience on your side.",
+    "points": [
+      "20+ years of experience",
+      "One-on-one consultations",
+      "Honest advice, no frills"
+    ]
+  },
+  "serviceArea": [
+    "Pasadena"
+  ],
+  "highlights": [
+    {
+      "title": "Personalized Attention",
+      "text": "Meet one-on-one to discuss your legal needs and goals. Whether it is business law, corporate law, real estate law or wills, we guide you through every step.",
+      "icon": "users"
+    },
+    {
+      "title": "Experienced Guidance",
+      "text": "With 20+ years of experience, we help you understand your options, from drafting wills to handling probate.",
+      "icon": "award"
+    },
+    {
+      "title": "Transparent Communication",
+      "text": "Honest advice on your options, likely outcomes and next steps throughout your legal matter. No frills, real and honest advice.",
+      "icon": "check"
+    }
+  ],
+  "kind": "legal",
+  "services": [
+    {
+      "slug": "corporate-business",
+      "title": "Corporate & Business Law",
+      "icon": "briefcase",
+      "summary": "Entities, contracts, collections and disputes",
+      "text": "Help forming, restructuring and dissolving entities, keeping corporate records, drafting and negotiating contracts, and resolving owner disputes.",
+      "lead": "Whether you need a small business lawyer or help with a corporate transaction, the firm assists with the legal side of owning and running a business, from formation to sale.",
+      "covers": [
+        {
+          "title": "Entity formation and dissolution",
+          "text": "Assistance with the formation, restructuring and dissolution of all types of entities."
+        },
+        {
+          "title": "Corporate books and records",
+          "text": "Maintaining corporate books and records."
+        },
+        {
+          "title": "Debt collection",
+          "text": "Collection of debts owed to your business."
+        },
+        {
+          "title": "Contracts",
+          "text": "Drafting, reviewing and negotiating contracts."
+        },
+        {
+          "title": "Buying or selling a business",
+          "text": "Assistance in the purchase and/or sale of business interests."
+        },
+        {
+          "title": "Owner disputes",
+          "text": "Resolving shareholder, member or partner disputes."
+        }
+      ]
+    },
+    {
+      "slug": "real-estate",
+      "title": "Real Estate Law",
+      "icon": "house",
+      "summary": "Deeds, title issues, leases, liens and evictions",
+      "text": "Deeds and loan documents, title corrections, commercial and residential leases, liens and evictions.",
+      "lead": "The firm handles commercial and residential real estate matters, from the documents behind a sale or loan to clearing title and resolving disputes.",
+      "covers": [
+        {
+          "title": "Deeds and loan documents",
+          "text": "Drafting deeds, deeds of trust, promissory notes, security documents and other related documents."
+        },
+        {
+          "title": "Title issues",
+          "text": "Correcting title issues, including assistance in the removal of invalid liens."
+        },
+        {
+          "title": "Leases",
+          "text": "Drafting and negotiating commercial and residential leases."
+        },
+        {
+          "title": "Declaratory actions",
+          "text": "Filing declaratory actions."
+        },
+        {
+          "title": "Liens",
+          "text": "Lien filing and removal."
+        },
+        {
+          "title": "Evictions",
+          "text": "Handling evictions."
+        }
+      ]
+    },
+    {
+      "slug": "probate-wills",
+      "title": "Probate & Wills",
+      "icon": "scale",
+      "summary": "Wills, estate planning and probate",
+      "text": "Wills and estate planning documents, probate of wills, muniment of title, small estate and heirship affidavits, and independent administrations.",
+      "lead": "From drafting a will to handling probate, the firm helps you understand your options and guides you through every step.",
+      "covers": [
+        {
+          "title": "Wills and estate planning",
+          "text": "Drafting wills and ancillary estate planning documents."
+        },
+        {
+          "title": "Probate of wills",
+          "text": "Probating wills."
+        },
+        {
+          "title": "Muniment of title",
+          "text": "Probating wills as a muniment of title."
+        },
+        {
+          "title": "Small estate and heirship affidavits",
+          "text": "Preparing small estate affidavits and heirship affidavits."
+        },
+        {
+          "title": "Independent administrations",
+          "text": "Handling independent administrations."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "title": "A small firm with over 20 years of experience",
+    "text": [
+      "At James M. Harrison Law Firm, PLLC, we are committed to achieving the best possible outcomes for your legal matters, whether they involve business law, corporate law, probate, real estate law or wills. We guide clients through every phase of the legal process, so you understand your options and feel confident in your decisions.",
+      "As a small firm, we take pride in offering personalized attention to each case. Your legal matters are important to us, and we handle them with the care and diligence they deserve. Whether you need a small business lawyer or assistance with estate planning, we are here to help.",
+      "James M. Harrison was born in Pasadena, Texas, raised in Deer Park and is a proud graduate of Deer Park High School."
+    ],
+    "values": [
+      {
+        "title": "Personalized attention",
+        "text": "Meet one-on-one to discuss your legal needs and goals."
+      },
+      {
+        "title": "Experienced guidance",
+        "text": "20+ years of experience helping you understand your options."
+      },
+      {
+        "title": "Transparent communication",
+        "text": "Honest advice on your options, likely outcomes and next steps."
+      }
+    ]
+  },
+  "tagline": "Personalized legal guidance for business, real estate and estate planning in Pasadena, TX",
+  "license": "James M. Harrison has been licensed to practice law in Texas since November 2001.",
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 6 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "cta": {
+    "label": "Schedule Your Consultation",
+    "text": "Call (832) 767-6446 or email legal@jmharrisonlawfirm.com to request a consultation and meet one-on-one about your legal needs and goals."
+  },
+  "overview": {
+    "title": "Practice areas",
+    "text": "These are a sample of the services the firm provides. Call or send a consultation request to talk through your matter with James M. Harrison."
+  },
+  "owner": {
+    "name": "James M. Harrison",
+    "role": "Attorney at Law",
+    "text": "Licensed to practice law in Texas since November 2001, James began his career as a tax associate with KPMG, LLP, then joined COATS|ROSE before establishing his own practice. He was born in Pasadena and raised in Deer Park."
+  },
+  "credentials": [
+    {
+      "label": "Licensed in Texas",
+      "detail": "Licensed to practice law in Texas since November 2001"
+    },
+    {
+      "label": "South Texas College of Law",
+      "detail": "J.D., Summa Cum Laude, May 2001"
+    },
+    {
+      "label": "University of Houston–Clear Lake",
+      "detail": "B.S. in Accounting, Magna Cum Laude"
+    }
+  ],
+  "team": [
+    {
+      "name": "James M. Harrison",
+      "role": "Attorney at Law",
+      "bio": "James M. Harrison has been licensed to practice law in Texas since November 2001. He began his legal career as a tax associate with KPMG, LLP, where he worked on complex tax issues involving insurance, corporate income, mergers and acquisitions. He then joined COATS|ROSE, expanding his work to business organization, corporate transactions, restructuring and dissolution, commercial and residential real estate transactions, loan documentation, collections and construction law, before establishing his own practice. At South Texas College of Law he was a member of the South Texas Law Review, made the Dean's List across several semesters, received the Order of the Lytae award and was appointed a Langdell Scholar, graduating Summa Cum Laude in May 2001. He earned a Bachelor of Science in Accounting, Magna Cum Laude, from the University of Houston–Clear Lake. Born in Pasadena and raised in Deer Park, he is a proud graduate of Deer Park High School."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Book Your Consultation",
+      "text": "For any inquiries about our legal services, call (832) 767-6446, or send a consultation request by email to legal@jmharrisonlawfirm.com."
+    },
+    {
+      "heading": "Experience",
+      "items": [
+        "Licensed to practice law in Texas since November 2001",
+        "Began his career as a tax associate with KPMG, LLP, working on tax issues involving insurance, corporate income, mergers and acquisitions",
+        "Joined COATS|ROSE, handling business organization, corporate transactions, restructuring and dissolution, real estate transactions, loan documentation, collections and construction law",
+        "Established his own practice in Pasadena"
+      ]
+    },
+    {
+      "heading": "Education",
+      "items": [
+        "South Texas College of Law, Summa Cum Laude, May 2001",
+        "Member of the South Texas Law Review",
+        "Dean's List across several semesters",
+        "Order of the Lytae award",
+        "Langdell Scholar",
+        "University of Houston–Clear Lake, B.S. in Accounting, Magna Cum Laude"
+      ]
+    }
+  ]
+}
