@@ -2,7 +2,7 @@
   "template": "professional",
   "preview": true,
   "name": "Rivera & Co. Tax & Business Services",
-  "shortName": "Rivera & Co. Tax & Business Services",
+  "shortName": "Rivera & Co.",
   "phone": "(713) 534-9691",
   "email": "info@riveratax.com",
   "address": "1120 Pasadena Blvd",
@@ -22,33 +22,19 @@
     "cream": "#f7f4f5",
     "heading": "'Roboto', system-ui, sans-serif",
     "body": "'Roboto', system-ui, sans-serif",
-    "fonts": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap",
-    "logo": "/brands/riverataxbusiness/logo.webp",
-    "logoMono": "/brands/riverataxbusiness/logo-mono.webp",
-    "logoWidth": 198,
-    "logoHeight": 48,
-    "logoRatio": 4.125,
-    "logoGround": "#ffffff",
-    "logoReads": [
-      0.588,
-      0.596,
-      0.615,
-      0.64,
-      0.676,
-      0.718,
-      0.761,
-      0.81,
-      0.867,
-      0.933,
-      1.0
-    ]
+    "fonts": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap"
   },
   "hero": {
-    "eyebrow": "Accounting and tax in Pasadena",
-    "title": "Bookkeeping and financial planning in Pasadena from Rivera & Co. Tax & Business Services",
-    "lead": "Timely, efficient bookkeeping services are available for businesses of all sizes. Computerized accounts are prepared, saved and presented for client review on a quarterly, monthly, and/or annual basis.",
-    "image": "/brands/riverataxbusiness/photo1",
-    "imageAlt": "A photo of Rivera & Co. Tax & Business Services"
+    "eyebrow": "Tax and accounting in Pasadena · Hablamos Español",
+    "title": "Tax and accounting services for small businesses and individuals in Pasadena",
+    "lead": "We will help you obtain all the credits and deductions you deserve, with bookkeeping, payroll and tax preparation for individuals, businesses, corporations and LLCs.",
+    "image": "/brands/riverataxbusiness/photo4",
+    "imageAlt": "Tax and accounting work at Rivera & Co.",
+    "points": [
+      "Individual and business tax returns",
+      "Bookkeeping, payroll and financial statements",
+      "Hablamos Español"
+    ]
   },
   "serviceArea": [
     "Pasadena"
@@ -58,64 +44,82 @@
     {
       "slug": "bookkeeping",
       "title": "Bookkeeping",
-      "summary": "Bookkeeping",
-      "text": "",
-      "icon": "calculator"
+      "summary": "Complete bookkeeping services for small businesses",
+      "text": "Complete bookkeeping services for small businesses, prepared and presented for your review quarterly, monthly or annually.",
+      "icon": "calculator",
+      "audience": "businesses",
+      "lead": "Timely, efficient bookkeeping services are available for businesses of all sizes. Computerized accounts are prepared, saved and presented for client review on a quarterly, monthly, and/or annual basis. Budgeting and forecasting support are also available. We support all major accounting programs including Quickbooks."
     },
     {
       "slug": "financial-planning",
       "title": "Financial Planning",
-      "summary": "Financial Planning",
-      "text": ""
+      "summary": "Planning for retirement, college and more",
+      "text": "Full service financial planning for future goals, from retirement to a child's college education.",
+      "audience": "individuals",
+      "lead": "Whether planning for retirement or for a child's college education, financial planning is the cornerstone for meeting your goal. We help individual and business clients with a full array of planning tools. Our planning also incorporates tax and estate planning."
     },
     {
       "slug": "financial-statements",
       "title": "Financial Statements",
-      "summary": "Financial Statements",
-      "text": ""
+      "summary": "Monthly, quarterly and year-end statements",
+      "text": "Monthly, quarterly and year-end balance sheets and operating statements, prepared accurately and on time.",
+      "audience": "businesses",
+      "lead": "Financial Statement preparation for small business clients is a long-standing service of this firm. Depending on the client's needs, monthly, quarterly and year-end balance sheet and detailed operating statements can be prepared and analyzed on a timely basis. The state-of-the-art accounting software used in our office can provide helpful comparisons and calculations for effective, practical business analysis."
     },
     {
       "slug": "individual-tax",
       "title": "Individual Tax",
-      "summary": "Individual Tax",
-      "text": "",
-      "icon": "calculator"
+      "summary": "Federal and state returns for individuals",
+      "text": "A core specialty: thousands of Federal and State returns for individual taxpayers have been prepared and filed over the years.",
+      "icon": "calculator",
+      "audience": "individuals",
+      "lead": "A core specialty is the preparation of tax returns for individual taxpayers. Over the years literally 1000's of Federal and State returns have been prepared and filed."
     },
     {
       "slug": "payroll-services",
       "title": "Payroll Services",
-      "summary": "Payroll Services",
-      "text": "",
-      "icon": "calculator"
+      "summary": "Total payroll for small businesses",
+      "text": "Total payroll services for small business clients, from time cards and withholdings to W-2s and 1099s.",
+      "icon": "calculator",
+      "audience": "businesses",
+      "lead": "Total payroll services for small business clients have been provided for many years. Services include: Set up and maintenance of all records, time card tabulations, withholdings of tax and benefit contributions, Federal and State tax filings, issuance of checks and preparation of all W-2's and 1099 forms."
     },
     {
       "slug": "business-tax-returns",
       "title": "Business Tax Returns",
-      "summary": "Business Tax Returns",
-      "text": "",
-      "icon": "briefcase"
+      "summary": "C Corp, S Corp, LLC and partnership returns",
+      "text": "Small business tax returns for C corporations, S corps, LLCs, partnerships and sole proprietors, prepared to minimize the tax owed.",
+      "icon": "briefcase",
+      "audience": "businesses",
+      "lead": "Small business tax return preparation and filing instructions is a core service offered to our clients. Whether your company is a C corporation, S Corp, Limited Liability Company, Partnership or Sole Proprietor a properly prepared tax return can be filed to minimize the tax owed. Over the years, 100's of small business Federal and State tax returns have been prepared for both service and manufacturing company clients."
     },
     {
       "slug": "tax-planning",
       "title": "Tax Planning",
-      "summary": "Tax Planning",
-      "text": "",
-      "icon": "calculator"
-    },
-    {
-      "slug": "accounting-services",
-      "title": "Accounting Services",
-      "summary": "Accounting Services",
-      "text": "",
-      "icon": "calculator"
+      "summary": "Tax forecasting and mid-year planning",
+      "text": "Tax planning and forecasting for individual and small business clients, with long-term strategy and mid-year planning.",
+      "icon": "calculator",
+      "audience": "individuals",
+      "lead": "Tax planning and tax forecasting services for individual and small business clients is a core competency of the firm. Effective tax minimization begins with long-term tax strategizing to establish overall objectives and is maintained with conscientious and consistent annual tax forecasting and mid-year tax planning."
     }
   ],
   "about": {
     "title": "About Rivera & Co. Tax & Business Services",
     "text": [
-      "Timely, efficient bookkeeping services are available for businesses of all sizes. Computerized accounts are prepared, saved and presented for client review on a quarterly, monthly, and/or annual basis. Budgeting and forecasting support are also available. We support all major accounting programs including Quickbooks."
+      "Our company specializes in bookkeeping and tax preparation services for a wide variety of clients: business and personal tax return filing, bookkeeping and financial statements for small businesses, and corporate (LLC, Inc, S Corp, Partnership) tax return filing. Hablamos Español.",
+      "Annual participation in Continuing Professional Education courses offered by local chapters of national accounting and tax associations keeps our firm on the leading edge of ever-changing tax laws and accounting methods.",
+      "Computerized offices and internet access ensures clients accurate, efficient, state-of-the-art service at a competitive price. Feel free to contact the office anytime. We're here to help."
     ],
     "image": "/brands/riverataxbusiness/photo2",
-    "imageAlt": "A photo of Rivera & Co. Tax & Business Services"
+    "imageAlt": "Desk work at a tax and accounting office"
+  },
+  "tagline": "Tax and Accounting Services Specializing in Small Businesses",
+  "overview": {
+    "title": "Services you can trust, so you can focus on the bigger picture",
+    "text": "Bookkeeping, payroll, financial statements, tax preparation and planning for small businesses and the people who run them."
+  },
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "You've worked hard on your business, we'll work just as hard for you. Call 1 713 534-9691 or visit us at 1120 Pasadena Blvd."
   }
 }

@@ -1713,7 +1713,8 @@ function ContactPage(props) {
           <div className="min-w-0">
             <ul className="border-t border-line">
               {[
-                ...phonesOf(b).map((p) => [Phone, p.href, p.label ? `${p.label} ${p.number}` : p.number]),
+                // The number is kept whole, so a long office label wraps before it rather than at its hyphen.
+                ...phonesOf(b).map((p) => [Phone, p.href, <span>{p.label && `${p.label} `}<span className="whitespace-nowrap">{p.number}</span></span>]),
                 // A break point after the '@', so a long address wraps whole at its domain rather than mid-word.
                 b.email && [Mail, `mailto:${b.email}`, b.email.split('@').flatMap((p, i) => (i ? ['@', <wbr key={i} />, p] : [p]))],
                 [MapPin, mapsHref(b), address],
