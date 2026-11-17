@@ -1,0 +1,582 @@
+{
+  "template": "professional",
+  "preview": true,
+  "name": "West & West, LLP",
+  "shortName": "West & West, LLP",
+  "phone": "(713) 222-9378",
+  "email": "laurawest@westandwest.com",
+  "address": "3818 Fox Meadow Ln",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77504",
+  "hours": [
+    [
+      "Mon – Fri",
+      "9 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#1f4a2c",
+    "primaryDeep": "#14331e",
+    "accent": "#b8922e",
+    "ink": "#1c211d",
+    "surface": "#f8f6f0",
+    "muted": "#5b6470",
+    "line": "#e3dfd3",
+    "cream": "#f1ede1",
+    "heading": "'Libre Baskerville', Georgia, serif",
+    "body": "'Source Sans 3', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap",
+    "logo": "/brands/westwestllp/logo.webp",
+    "logoMono": "/brands/westwestllp/logo-mono.webp",
+    "logoWidth": 222,
+    "logoHeight": 48,
+    "logoRatio": 4.63,
+    "logoGround": "#14181f",
+    "logoReads": [
+      0.956,
+      0.951,
+      0.888,
+      0.784,
+      0.678,
+      0.573,
+      0.041,
+      0.047,
+      0.055,
+      0.072,
+      0.086
+    ]
+  },
+  "hero": {
+    "eyebrow": "Pasadena, TX law firm",
+    "title": "Personal injury, probate and estate planning attorney in Pasadena.",
+    "lead": "Trusted law firm offering professional legal representation and advocacy for individuals, families and businesses across Harris County and the surrounding Texas communities.",
+    "points": [
+      "Over 30 years practicing law",
+      "A multigenerational, locally owned law practice",
+      "Consultations in the office, by Zoom or at home"
+    ]
+  },
+  "serviceArea": [
+    "Pasadena",
+    "Houston",
+    "Deer Park",
+    "La Porte",
+    "Baytown",
+    "Friendswood",
+    "Pearland",
+    "Alvin",
+    "Clear Lake",
+    "League City",
+    "Kemah",
+    "Manvel",
+    "South Houston",
+    "Galveston",
+    "Texas City",
+    "Santa Fe",
+    "The Woodlands"
+  ],
+  "kind": "legal",
+  "services": [
+    {
+      "slug": "personal-injury",
+      "title": "Personal Injury",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Injury claims after someone else's negligence.",
+      "text": "When you suffer an injury because of someone else's negligence, you deserve to be compensated. Don't put yourself in financial peril because of someone else's carelessness.",
+      "lead": "If you've been injured due to someone else's negligence, you deserve experienced legal representation and the chance to recover fair compensation for medical bills, lost wages, pain and suffering. Call for a free consultation: no fees unless we win your case.",
+      "covers": [
+        {
+          "title": "Wrongful death",
+          "text": "Representing families in seeking compensation and closure after tragic, preventable losses."
+        },
+        {
+          "title": "Workplace injuries",
+          "text": "Cases involving workplace injuries and other forms of negligence and liability."
+        },
+        {
+          "title": "Free consultation",
+          "text": "Personal injury cases are taken on a contingency basis, so there are no fees to you unless we win your case."
+        }
+      ]
+    },
+    {
+      "slug": "car-accident-attorney",
+      "title": "Car Accidents",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Claims after a crash on Houston-area roads.",
+      "text": "Car accidents are sudden and stressful, but knowing what to do right after can make a huge difference for your health, your insurance claim and any legal action.",
+      "lead": "Car accidents are sudden and stressful, but knowing what to do immediately after can make a huge difference for your health, your insurance claim, and any future legal action. We represent drivers and passengers hurt in crashes on I-45, Loop 610, Beltway 8 and roads across the Houston area."
+    },
+    {
+      "slug": "truck-accidents",
+      "title": "Truck Accidents",
+      "audience": "individuals",
+      "icon": "truck",
+      "summary": "18-wheelers, big rigs and box trucks.",
+      "text": "Trucking companies and their employees have a responsibility to keep other drivers safe. When they fail, they can be held liable.",
+      "lead": "If you've been injured in a truck crash, you may be entitled to compensation. Because of their size and weight, 18-wheelers, big rigs, tractor trailers and box trucks can be particularly dangerous, and these cases pose challenges that call for experienced legal counsel.",
+      "covers": [
+        {
+          "title": "Federal Motor Carrier Safety Regulations",
+          "text": "We look into every aspect of the trucking company's employment practices: hiring, annual driver safety reviews, inspection and maintenance of tractors and trailers, driving hours, and drug and alcohol testing."
+        },
+        {
+          "title": "Driver qualification files",
+          "text": "Under section 391.21 of the regulations, a trucking company must keep a driver qualification file, and under section 391.25 it must review each trucker's record every year."
+        },
+        {
+          "title": "Violations that strengthen a case",
+          "text": "If the trucking company is in violation of the federal regulations, it can significantly improve the chances of successful litigation, especially in disputed cases."
+        }
+      ]
+    },
+    {
+      "slug": "dui-victim-accidents",
+      "title": "DUI Victim Accidents",
+      "audience": "individuals",
+      "icon": "car",
+      "summary": "Holding drunk drivers civilly accountable.",
+      "text": "If you or a loved one were seriously injured by a drunk driver on a Texas roadway, you may be entitled to financial compensation.",
+      "lead": "If you or a loved one have been seriously injured in a car accident with a drunk driver on a Texas roadway, you may be entitled to financial compensation. Beyond the criminal penalties, there are ways to hold the driver civilly accountable for the accident that harmed you."
+    },
+    {
+      "slug": "delivery-truck-accident",
+      "title": "Delivery Truck Accidents",
+      "audience": "individuals",
+      "icon": "truck",
+      "summary": "Crashes involving delivery vans and trucks.",
+      "text": "Drivers under pressure to make deliveries quickly are more apt to cut corners and make mistakes.",
+      "lead": "If you or a loved one has been injured or someone has died in a delivery truck accident, you may be entitled to compensation through a personal injury or wrongful death lawsuit. Texas laws are complicated and insurance companies are out to protect themselves, so this is not something you should handle on your own.",
+      "covers": [
+        {
+          "title": "Amazon, DHL and other carriers",
+          "text": "Amazon has its own vans and semi-trucks as well as thousands of independent contractors who deliver in their personal vehicles. We handle crashes involving these and other delivery companies."
+        },
+        {
+          "title": "Dealing with the insurance company",
+          "text": "Insurance adjusters are not on your side. Tell them to speak to your attorney, and let us handle the questions and negotiations."
+        },
+        {
+          "title": "Wrongful death claims",
+          "text": "When a delivery truck accident results in a death, a wrongful death claim must be filed within two years of the death under Texas law."
+        },
+        {
+          "title": "Investigation",
+          "text": "We work with investigators and experts in accident reconstruction to determine how the crash happened and who may have been at fault."
+        },
+        {
+          "title": "Contingency fee",
+          "text": "Call (713) 222-9378 for a free consultation. There are no fees to you unless and until we win your case."
+        }
+      ]
+    },
+    {
+      "slug": "motorcycle-accident",
+      "title": "Motorcycle Accidents",
+      "audience": "individuals",
+      "icon": "motorbike",
+      "summary": "Justice and compensation for riders.",
+      "text": "Motorcycle accidents often result in catastrophic injuries and overwhelming financial burdens.",
+      "lead": "Whether you were struck by a distracted driver or injured due to unsafe road conditions, we understand the unique dangers motorcyclists face and are here to fight for your rights and the compensation you deserve."
+    },
+    {
+      "slug": "pedestrian-bicycle-accidents",
+      "title": "Pedestrian & Bicycle Accidents",
+      "audience": "individuals",
+      "icon": "footprints",
+      "summary": "Vulnerable road users hurt by drivers.",
+      "text": "Protecting pedestrians and cyclists hurt by negligent drivers.",
+      "lead": "Pedestrian and bicycle accidents can lead to serious injuries and significant emotional and financial hardships. We are dedicated to helping victims of these accidents obtain the compensation they deserve."
+    },
+    {
+      "slug": "boating-and-aviation-accidents",
+      "title": "Boating & Aviation Accidents",
+      "audience": "individuals",
+      "icon": "plane",
+      "summary": "Recreational and commercial accidents.",
+      "text": "Handling complex claims involving recreational and commercial boating and aviation accidents.",
+      "lead": "Accidents involving boats and aircraft can result in severe injuries, significant property damage, and complex legal issues. We handle boating and aviation accident cases and help victims seek the compensation they deserve."
+    },
+    {
+      "slug": "slip-and-fall",
+      "title": "Slip & Fall Accidents",
+      "audience": "individuals",
+      "icon": "footprints",
+      "summary": "Premises liability and unsafe property.",
+      "text": "Holding negligent property owners accountable for dangerous property conditions.",
+      "lead": "A slip and fall can happen in a grocery store aisle, on a wet restaurant floor, or on a poorly maintained sidewalk, and often leads to broken bones, head trauma, spinal damage or long-term mobility issues. We work to hold negligent property owners accountable."
+    },
+    {
+      "slug": "assault-battery-victims",
+      "title": "Assault & Battery Victims",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "Civil claims for intentional harm.",
+      "text": "Holding individuals accountable through civil litigation for intentional acts of harm.",
+      "lead": "Assault and battery can have profound physical, emotional, and financial impacts on victims. We help victims seek justice and obtain compensation through civil claims."
+    },
+    {
+      "slug": "estate-planning",
+      "title": "Estate Planning",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Wills, trusts and powers of attorney.",
+      "text": "Estate planning and family protection are essential steps in making sure your loved ones are cared for and your wishes are honored.",
+      "lead": "Whether you need a simple will or a more comprehensive plan involving trusts, powers of attorney, and advance healthcare directives, Attorney Michael West helps individuals and families develop estate plans tailored to their goals, so important decisions are not left to the courts or to state law.",
+      "covers": [
+        {
+          "title": "Wills",
+          "text": "Drafting and updating wills so your estate is distributed according to your intentions."
+        },
+        {
+          "title": "Trusts",
+          "text": "Revocable, irrevocable and special-purpose trusts for asset protection and legacy planning."
+        },
+        {
+          "title": "Powers of attorney",
+          "text": "Designating trusted people to manage your financial or healthcare decisions when needed."
+        },
+        {
+          "title": "Advance directives",
+          "text": "Living wills and healthcare proxies so your medical preferences are known and respected."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is a Directive to Physicians and Family or Surrogates?",
+          "a": "An advance directive is a broad term for legal documents that outline your healthcare and financial preferences if you become incapacitated. Typically Advance Directives include the Medical Power of Attorney, HIPAA Release, Directive to Physicians and Family or Surrogates, and a Durable (Financial) Power of Attorney."
+        },
+        {
+          "q": "What is a HIPAA Authorization?",
+          "a": "A HIPAA Authorization allows healthcare providers to share medical information with individuals you designate. Without it, family members may have difficulty obtaining important medical information due to federal privacy laws."
+        }
+      ]
+    },
+    {
+      "slug": "wills",
+      "title": "Wills",
+      "audience": "individuals",
+      "icon": "gavel",
+      "summary": "A legally valid will for your family.",
+      "text": "A properly prepared will says how your assets are distributed, who manages your estate, and who cares for your minor children.",
+      "lead": "Without a legally valid will, those decisions may be made according to Texas law rather than your wishes. Attorney Michael West helps individuals and families throughout Pasadena, Houston and Harris County prepare a first will, update an existing plan, or create documents after a major life event.",
+      "questions": [
+        {
+          "q": "What Is a Last Will and Testament?",
+          "a": "A Last Will and Testament is a legal document that expresses your wishes regarding the distribution of your property after your death. It also identifies the person you want to administer your estate and can include other important instructions concerning your family and beneficiaries."
+        },
+        {
+          "q": "What Is a Self-Proving Affidavit?",
+          "a": "A self-proving affidavit is a document that is commonly executed at the same time as a Texas will. Its purpose is to simplify the probate process by providing evidence that the will was properly signed and witnessed."
+        },
+        {
+          "q": "Can a Will Be Contested?",
+          "a": "Yes. Under certain circumstances, an interested party may challenge the validity of a will during the probate process."
+        },
+        {
+          "q": "What happens if my executor cannot serve?",
+          "a": "You can name one or more alternate executors in your will. If the person you originally selected is unable or unwilling to serve, the alternate executor may assume those responsibilities."
+        },
+        {
+          "q": "What is the difference between a beneficiary and an executor?",
+          "a": "A beneficiary is a person or organization that receives property from your estate."
+        }
+      ]
+    },
+    {
+      "slug": "advance-directives",
+      "title": "Advance Directives",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Living wills and healthcare proxies.",
+      "text": "Establishing living wills and healthcare proxies so your medical preferences are known and respected.",
+      "lead": "Advance directives make your healthcare preferences clear and legally sound. We take the time to understand your needs and goals, and prepare documents that reflect your values and wishes."
+    },
+    {
+      "slug": "revocable-living-trusts",
+      "title": "Revocable Living Trusts",
+      "audience": "individuals",
+      "icon": "scale",
+      "summary": "Control, privacy and simpler administration.",
+      "text": "A revocable living trust gives you more control over how assets are managed during life and distributed after death.",
+      "lead": "A properly prepared trust can simplify estate administration, provide flexibility as circumstances change, and become an important part of a comprehensive estate plan. Attorney Michael West helps individuals, families, retirees, business owners and professionals create trusts tailored to their goals."
+    },
+    {
+      "slug": "prenuptial-agreements",
+      "title": "Prenuptial Agreements",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Protect assets before marriage.",
+      "text": "Custom agreements that protect assets and clarify expectations before marriage.",
+      "lead": "Prenuptial agreements outline the division of assets and responsibilities in the event of divorce or death. We understand the sensitive nature of these agreements and guide couples who want to protect their assets and clarify expectations."
+    },
+    {
+      "slug": "transfer-on-death-and-ladybird-deeds",
+      "title": "Transfer on Death & Ladybird Deeds",
+      "audience": "individuals",
+      "icon": "house",
+      "summary": "Pass real estate outside of probate.",
+      "text": "Estate planning tools that transfer real estate to beneficiaries outside of the probate process.",
+      "lead": "Transfer on Death and Ladybird Deeds, also known as Enhanced Life Estate Deeds, allow you to transfer real estate to beneficiaries outside of the probate process. We help clients use them to streamline the transfer of property."
+    },
+    {
+      "slug": "probate",
+      "title": "Probate",
+      "audience": "individuals",
+      "icon": "scale",
+      "summary": "Settling an estate under Texas law.",
+      "text": "If you want your estate to be maintained, proper estate planning and wills are a necessity. When a loved one passes, we guide families through probate.",
+      "lead": "Losing a loved one is hard, and questions about a will, property, bank accounts, debts and court procedures add stress. Whether your loved one left a valid will or passed away without one, Attorney Michael West explains your options and guides you through each stage of the Texas probate process and estate administration."
+    },
+    {
+      "slug": "elder-law",
+      "title": "Elder Law",
+      "audience": "individuals",
+      "icon": "users",
+      "summary": "Medicaid, long-term care and Medicare.",
+      "text": "Elder law covers many of the challenges and concerns of older Texans. Whatever your situation, we can help you protect your rights and interests as you age.",
+      "lead": "As we age, legal planning becomes more essential for our finances, our health care, our independence, and the legacy we hope to leave. We help Texas seniors and their loved ones with Medicaid planning, long-term care planning, Medicare and health care advocacy, and estate plans that reflect their wishes.",
+      "covers": [
+        {
+          "title": "Medicaid planning",
+          "text": "Legal strategies to protect your assets while qualifying for essential long-term care support."
+        },
+        {
+          "title": "Long-term care planning",
+          "text": "Planning ahead for care, independence and the costs that come with it."
+        },
+        {
+          "title": "Medicare and health care advocacy",
+          "text": "Understanding what Medicare covers, and what it doesn't, so you can make informed medical decisions."
+        }
+      ]
+    },
+    {
+      "slug": "asset-protection",
+      "title": "Asset Protection",
+      "audience": "individuals",
+      "icon": "shield",
+      "summary": "Shield holdings from lawsuits and creditors.",
+      "text": "Structuring your holdings to shield them from potential litigation, liability or creditor claims.",
+      "lead": "Asset protection shields your hard-earned assets from risks such as lawsuits, creditors, and unforeseen financial challenges. We build asset protection strategies tailored to your circumstances."
+    },
+    {
+      "slug": "special-needs-trusts",
+      "title": "Special Needs Trusts",
+      "audience": "individuals",
+      "icon": "heart",
+      "summary": "Protect benefits for a loved one.",
+      "text": "Protecting benefits and improving quality of life for individuals with disabilities.",
+      "lead": "Special Needs Trusts protect the assets of individuals with disabilities while helping them remain eligible for essential government benefits and assistance programs."
+    },
+    {
+      "slug": "special-needs-planning-guardianships",
+      "title": "Special Needs Planning",
+      "audience": "individuals",
+      "icon": "users",
+      "summary": "Long-term care for loved ones with disabilities.",
+      "text": "Planning for the long-term well-being, security and care of loved ones with disabilities.",
+      "lead": "Whether you are the parent of a child with special needs or caring for an aging adult with diminished capacity, proper legal planning can make all the difference. We provide special needs planning and guardianship services throughout Pasadena, Houston and the surrounding areas."
+    },
+    {
+      "slug": "guardianships",
+      "title": "Guardianships",
+      "audience": "individuals",
+      "icon": "users",
+      "summary": "Court-appointed decision makers.",
+      "text": "Guardianships are legal arrangements in which a court appoints a guardian to make decisions for someone unable to make decisions for themselves due to incapacity or disability.",
+      "lead": "We understand the complexities and sensitivities involved in guardianship matters, and help families obtain legal guardianship or conservatorship over elderly or incapacitated loved ones."
+    },
+    {
+      "slug": "business-law",
+      "title": "Business Law",
+      "audience": "businesses",
+      "icon": "briefcase",
+      "summary": "Contracts, formation and disputes.",
+      "text": "Whether you need help drawing up contracts, someone skilled in negotiation, or you need to bring litigation against someone, we've got you covered.",
+      "lead": "From business formation to asset protection and daily operational support, we offer legal counsel for small and mid-sized business owners. Our firm has more than 40 years of combined experience in business and commercial litigation.",
+      "covers": [
+        {
+          "title": "Contracts",
+          "text": "Drafting, review and negotiation of contracts that protect your business relationships."
+        },
+        {
+          "title": "Business formation and governance",
+          "text": "LLCs, corporations and partnerships, with operating agreements and bylaws."
+        },
+        {
+          "title": "Employment and non-compete agreements",
+          "text": "Non-competition agreements and wage and hour disputes."
+        },
+        {
+          "title": "Real estate transactions",
+          "text": "Buying, selling, leasing and resolving disputes in commercial and residential transactions."
+        },
+        {
+          "title": "Disputes and litigation",
+          "text": "Business disputes, dissolutions, mechanics and materialman's liens, and corporate and partner or shareholder litigation."
+        },
+        {
+          "title": "Succession planning",
+          "text": "A smooth transition of ownership or management to the next generation or a buyer."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "title": "About West & West, LLP",
+    "text": [
+      "Some law firms are built around numbers. Ours was built around people, and family. West & West, LLP is a multigenerational law practice rooted in integrity, personal attention, and a commitment to helping our community through life's most challenging legal moments.",
+      "Our principal attorney, Michael West, leads the firm. His wife, Laura West, serves as business manager and mediation coordinator. Michael's father, the Honorable David West, served as a Harris County judge for 13 years, from 1984 to 1997, and was Michael's law partner for more than two decades.",
+      "When you come to our law firm, we won't just tell you what your case is, we'll teach it to you. We make sure you understand every aspect of your situation before you walk out our doors, and we will never pressure you into a course of action that benefits us more than it benefits you."
+    ],
+    "values": [
+      {
+        "title": "Educating Our Clients",
+        "text": "We explain your rights, options, and the legal process at every step, from your initial consultation through the resolution of your case."
+      },
+      {
+        "title": "Fighting for Community",
+        "text": "You're a part of our community just as much as us. We take care of our people and want to be involved in serving them."
+      },
+      {
+        "title": "Family First",
+        "text": "When you hire us, we treat your case with the same care we would give our own loved ones."
+      }
+    ]
+  },
+  "tagline": "Your legal compass in Pasadena, TX",
+  "cta": {
+    "label": "Schedule a Consultation",
+    "text": "Call 713.222.WEST or send a note, and we will take the time to understand your situation and explain your options in plain, honest language."
+  },
+  "highlights": [
+    {
+      "title": "Educating our clients",
+      "text": "We won't just tell you what your case is, we'll teach it to you."
+    },
+    {
+      "title": "Fighting for community",
+      "text": "You're a part of our community just as much as us."
+    },
+    {
+      "title": "Locally owned",
+      "text": "We see every client as a neighbor and valued member of our community."
+    }
+  ],
+  "overview": {
+    "title": "Legal services for individuals, families and businesses across Harris County.",
+    "text": "Pick a practice area to read more, or call and talk it through with an attorney."
+  },
+  "audiences": {
+    "individuals": "Injury, Estate & Family",
+    "businesses": "Business"
+  },
+  "owner": {
+    "name": "Michael West",
+    "role": "Attorney",
+    "text": "Michael West has devoted over 30 years to the practice of law, continuing a family legacy of legal service. He meets with clients in his Pasadena office or via Zoom and offers after-hours and in-home consultations when needed.",
+    "image": "/brands/westwestllp/photo3",
+    "imageAlt": "Attorney Michael West"
+  },
+  "team": [
+    {
+      "name": "Michael West",
+      "role": "Attorney",
+      "bio": "Michael has spent most of his career representing people in personal injury and wrongful death, auto and truck accident, workplace injury and negligence cases, and more recently built a focused practice in elder law after specialized training at Elder Law College. He learned the law beside his father, the late retired State District Judge David West, his law partner for more than two decades. Outside the office he enjoys hunting, fishing, and time with his children and grandchildren."
+    },
+    {
+      "name": "Laura West",
+      "role": "Business Manager",
+      "bio": "Laura came to help out for two weeks and stayed more than a decade. She prepares wills and probate documents, manages invoices and payments, serves as mediation coordinator, and keeps the firm running. Her favorite part of the job is meeting new clients. She holds a Bachelor of Arts in Business Administration from Baylor University."
+    },
+    {
+      "name": "Sonia Emmons",
+      "role": "Legal Assistant",
+      "bio": "Sonia is part of the estate planning, probate and real estate team, helping prepare wills, probates and deeds. By day she also serves the community as a school bus driver."
+    }
+  ],
+  "credentials": [
+    {
+      "label": "Doctor of Jurisprudence",
+      "detail": "South Texas College of Law"
+    },
+    {
+      "label": "BBA, Finance & Economics",
+      "detail": "Baylor University"
+    },
+    {
+      "label": "40-hour Mediation Training",
+      "detail": "A.A. White Dispute Resolution Institute"
+    },
+    {
+      "label": "Elder Law College",
+      "detail": "Specialized elder law training"
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Consultations",
+      "items": [
+        "Free consultation for personal injury cases, available 24/7 by phone",
+        "Personal injury cases on a contingency basis: no fees unless we win your case",
+        "Meet in the Pasadena office or via Zoom",
+        "After-hours and in-home consultations when needed",
+        "Call 713.222.WEST (713-222-9378)"
+      ]
+    },
+    {
+      "heading": "Also Handled",
+      "items": [
+        "Wrongful death",
+        "Medicaid planning",
+        "Divorce and separation, upon request",
+        "Guardianship and conservatorship",
+        "VA benefits and appeals for veterans",
+        "Estate planning for military families, including survivor benefits, TRICARE planning and military wills"
+      ]
+    },
+    {
+      "heading": "Results",
+      "text": "West & West has often won large settlements for clients. In total, the firm has earned multiple millions in settlements and verdicts."
+    },
+    {
+      "heading": "In the Community",
+      "items": [
+        "Michael West: Bible study leader at his local church and Bible Study Fellowship International",
+        "Michael West: former Chairman of the Board, Communities in Schools, Pasadena",
+        "Michael West: former Executive Committee member, Pasadena Chamber of Commerce",
+        "Michael West: former Cub Scout den leader, Boy Scout troop chaplain and youth sports coach",
+        "Laura West: Sunday School director and ministry volunteer at South Main Baptist Church"
+      ]
+    },
+    {
+      "heading": "A Family-Run Practice",
+      "text": "\"Working with my father taught me many lessons, and the most important is to look out for your clients first.\" Michael West. As a locally owned law firm, we see every client as a neighbor."
+    },
+    {
+      "heading": "Find Us Online",
+      "items": [
+        "Facebook: facebook.com/westandwest.attorney (reviews at facebook.com/westandwest.attorney/reviews)",
+        "Instagram: instagram.com/westandwestlaw",
+        "LinkedIn: linkedin.com/company/west-&-west-llp",
+        "Nextdoor: nextdoor.com/pages/west-west-llp-pasadena-tx",
+        "Yelp: yelp.com/biz/west-and-west-pasadena-5",
+        "YouTube: youtube.com/@WestWestLLP",
+        "Mastodon: mastodon.social/@westandwest_LLP"
+      ]
+    }
+  ],
+  "heroStyle": "type"
+}
