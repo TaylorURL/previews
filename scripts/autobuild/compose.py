@@ -1309,6 +1309,10 @@ SITE_NOTE = re.compile(r"\b(?:home ?page|web ?site|landing page)\s+(?:re-?design
 # our website", "Their BBB profile is linked from their website"), which the
 # preview, drawing no such badge or link, cannot bear out.
 SITE_SHOWN = re.compile(r"\b(?:shown|displayed|featured|pictured|seen)\b[^.!?]*\b(?:badges?|logos?|seals?|icons?|emblems?)\b|\b(?:on|from) (?:our|their|this|the) (?:home ?page|web ?site|site|page)\b", re.I)
+# And a person's line that only captions their video ("Craig Spear, founder,
+# tells the story of how it all began"; "explains the importance of the
+# family atmosphere"), which says they speak, not what they said.
+SPEAKS_ON = re.compile(r"\b(?:tells|told|shares|recounts) (?:the|his|her|their) (?:story|journey)\b|\bexplains the importance of\b|\btalks about\b", re.I)
 # A team they sponsor ("Texas Tech Athletics – Corporate Partner") is a
 # sponsorship, not a licence or certification held.
 SPONSORSHIP = re.compile(r"\b(?:sponsors?|sponsorships?|sponsored|corporate partners?|official partners?|proud partners?)\b", re.I)

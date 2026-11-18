@@ -1,0 +1,105 @@
+{
+  "template": "industrial",
+  "preview": true,
+  "name": "Renshaw Dynamics",
+  "shortName": "Renshaw Dynamics",
+  "phone": "(909) 731-8455",
+  "email": "chris@renshawdynamics.com",
+  "address": "307 S 5th St",
+  "town": "Highlands",
+  "state": "TX",
+  "zip": "77562",
+  "brand": {
+    "primary": "#b13b31",
+    "primaryDeep": "#7c2922",
+    "accent": "#d16258",
+    "ink": "#221d21",
+    "surface": "#faf3f3",
+    "muted": "#5b6470",
+    "line": "#e0dfe0",
+    "heading": "'Roboto', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap",
+    "logo": "/brands/renshawdynamics/logo.webp",
+    "logoMono": "/brands/renshawdynamics/logo-mono.webp",
+    "logoWidth": 70,
+    "logoHeight": 84,
+    "logoRatio": 0.829,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.355,
+      0.022,
+      0.0,
+      0.0,
+      0.002,
+      0.352,
+      0.47,
+      0.598,
+      0.734,
+      0.87,
+      1.0
+    ],
+    "logoName": true
+  },
+  "heroStyle": "split",
+  "tone": "bold",
+  "hero": {
+    "eyebrow": "Renshaw Dynamics · Highlands",
+    "title": "Two brothers who like solving hard problems.",
+    "lead": "Renshaw Dynamics is a machine shop in Highlands, Texas, making precision CNC parts and inspecting customer-supplied components on a CMM.",
+    "image": "/brands/renshawdynamics/photo1",
+    "imageAlt": "A photo of Renshaw Dynamics",
+    "titleAccent": "We machine and inspect the parts."
+  },
+  "serviceArea": [
+    "Highlands"
+  ],
+  "highlights": [
+    {
+      "title": "Detailed inspection reports",
+      "text": "Customers receive a detailed dimensional inspection report documenting the measured results.",
+      "icon": "check"
+    },
+    {
+      "title": "Founded by two brothers",
+      "text": "Two brothers who share a passion for manufacturing started the company.",
+      "icon": "users"
+    },
+    {
+      "title": "Machining plus metrology",
+      "text": "We combine advanced machining and metrology technology with a commitment to craftsmanship.",
+      "icon": "gauge"
+    }
+  ],
+  "ask": "quote",
+  "summary": "Renshaw Dynamics in Highlands, Texas offers precision CNC machining and CMM and metrology inspection.",
+  "groups": [
+    {
+      "slug": "cnc-machining",
+      "title": "CNC Machining",
+      "icon": "settings",
+      "summary": "Renshaw Dynamics provides precision CNC machining for one-off protypes, low-volume work, and production runs.",
+      "intro": "Renshaw Dynamics provides precision CNC machining for one-off protypes, low-volume work, and production runs. Using advanced multi-axis CNC equipment, we manufacture complex, tight-tolerance components to customer drawings and specifications for a wide range of industries.",
+      "image": "/brands/renshawdynamics/photo3",
+      "imageAlt": "A photo of Renshaw Dynamics"
+    },
+    {
+      "slug": "cmm-metrology",
+      "title": "CMM & Metrology",
+      "icon": "wrench",
+      "summary": "We provide precision CMM inspection and metrology services for customer-supplied components.",
+      "intro": "We provide precision CMM inspection and metrology services for customer-supplied components. Using advanced CMM equipment, we perform dimensional inspection, part verification, and GD&T inspection to evaluate components against customer drawings and specifications. Upon completion, customers receive a detailed dimensional inspection report documenting the measured results, providing clear, traceable data for their records and quality requirements."
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Built by two brothers who love manufacturing.",
+    "text": [
+      "Renshaw Dynamics was founded by two brothers with a shared passion for manufacturing and solving complex problems.",
+      "We deliver precision-machined components and dimensional inspection services with reliability, consistency and attention to detail.",
+      "Every project starts the same way: we understand your requirements, execute with precision, and deliver work that meets the highest standards."
+    ],
+    "image": "/brands/renshawdynamics/photo2",
+    "imageAlt": "A photo of Renshaw Dynamics"
+  }
+}
