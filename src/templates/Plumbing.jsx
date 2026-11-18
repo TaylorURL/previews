@@ -414,38 +414,34 @@ export default function Plumbing({ b }) {
       )}
 
       <section id="area" className={`${anchor} relative isolate overflow-hidden bg-primary-deep text-white`}>
-        {b.band.image && (
-          <>
+        {/* Without a photo the towns take the right half beside the heading, so it is not left empty. */}
+        <div className={`${wrap} ${b.band.image ? 'pb-[clamp(4.5rem,10vw,7.5rem)] lg:pt-[clamp(4.5rem,10vw,7.5rem)]' : 'py-[clamp(4.5rem,10vw,7.5rem)]'}`}>
+          <div
+            className={b.band.image ? 'grid lg:grid-cols-2 lg:items-center lg:gap-x-16' : 'grid items-center lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-x-20'}
+          >
             {/* As in the hero: on a phone the photo is a strip above the words, because this band
                 runs tall with every town in it and a wide photo stretched behind all of it softens.
-                On a wide screen it takes the right half beside the words, not behind them, so the
-                heading and towns never sit on the face of whoever is in the photo. There it keeps its
-                own shape, centred on the band's height: covering a half taller than it is wide blew a
-                landscape photo up twice over, softening it and cutting off the top of a head. */}
-            <Img
-              className="relative block aspect-[16/9] w-full object-cover lg:absolute lg:right-0 lg:top-1/2 lg:-z-20 lg:aspect-auto lg:h-auto lg:w-1/2 lg:-translate-y-1/2"
-              src={b.band.image}
-              alt={b.band.imageAlt}
-              sizes="100vw"
-              data-backdrop=""
-            />
-            <div
-              className="absolute inset-y-0 left-1/2 -z-10 hidden w-24 lg:block lg:bg-[linear-gradient(90deg,var(--primaryDeep),transparent)]"
-              aria-hidden="true"
-            />
-          </>
-        )}
-        {/* Without a photo the towns take the right half beside the heading, so it is not left empty. */}
-        <div className={`${wrap} py-[clamp(4.5rem,10vw,7.5rem)]`}>
-          <div
-            className={b.band.image ? 'max-w-[48rem] lg:w-1/2 lg:pr-12' : 'grid items-center lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-x-20'}
-          >
-            <div className={b.band.image ? 'contents' : 'lg:row-span-2'}>
+                On a wide screen it stands in its own shape in the right column level with the heading,
+                and the towns run the full width below both. Set against the whole band, beside the
+                towns too, it either blew a landscape photo up twice over or, kept to its shape,
+                floated in an empty green half. */}
+            {b.band.image && (
+              <div className="-mx-gutter min-w-0 lg:col-start-2 lg:row-start-1 lg:mx-0">
+                <Img
+                  className="block aspect-[16/9] w-full object-cover lg:aspect-auto lg:h-auto lg:max-h-[32rem] lg:rounded-lg"
+                  src={b.band.image}
+                  alt={b.band.imageAlt}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  data-backdrop=""
+                />
+              </div>
+            )}
+            <div className={b.band.image ? 'mt-[clamp(3rem,8vw,4.5rem)] max-w-[48rem] lg:col-start-1 lg:row-start-1 lg:mt-0' : 'lg:row-span-2'}>
               <Eyebrow dark>Service area</Eyebrow>
               <h2 className={h2}>{b.band.title}</h2>
               <p className="mt-4 max-w-[36rem] text-[17px] leading-[1.6] text-white/90 sm:text-[18px]">{b.band.text}</p>
             </div>
-            <ul className={`mt-7 flex flex-wrap gap-2 ${b.band.image ? '' : 'lg:mt-0'}`}>
+            <ul className={`mt-7 flex flex-wrap gap-2 ${b.band.image ? 'lg:col-span-2 lg:mt-12' : 'lg:mt-0'}`}>
               {b.serviceArea.map((t) => (
                 <li
                   key={t}
@@ -455,7 +451,7 @@ export default function Plumbing({ b }) {
                 </li>
               ))}
             </ul>
-            <a href={tel} className={`${btn} mt-9 w-full justify-self-start bg-accent text-ink hover:brightness-105 sm:w-auto`}>
+            <a href={tel} className={`${btn} mt-9 w-full justify-self-start bg-accent ${b.band.image ? 'lg:col-span-2' : ''} text-ink hover:brightness-105 sm:w-auto`}>
               <Phone size={18} aria-hidden="true" /> Call {b.phone}
             </a>
           </div>
