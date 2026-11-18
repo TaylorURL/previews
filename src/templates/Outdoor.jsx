@@ -52,9 +52,9 @@
  *                      photo and the footer stand on it when it is dark
  *                      enough for white words; else on the primary taken most
  *                      of the way to a near-black
- *     accent           The headline's second half and the main button on the
- *                      dark ground, when it stands out there; else the primary
- *                      or white
+ *     accent           The headline's second half, and the main button on the
+ *                      dark ground when the primary does not stand out there
+ *                      and it does; else white
  *     ink, muted, line, surface   As Hvac.jsx; derived when absent
  *     heading    (req) CSS font stack for headings, set large in the hero
  *     body       (req) CSS font stack for body text
@@ -343,7 +343,9 @@ function AboutPage({ b, groups }) {
   ].filter((c) => c.label);
   const points = list(b.highlights).length ? list(b.highlights) : list(about.values);
   const area = areaOf(b);
-  const side = b.since || rating || creds.length || b.owner?.name || area.length;
+  // The owner's card, where it says more than their name.
+  const owner = b.owner?.name && (b.owner.role || b.owner.text || b.owner.image) ? b.owner : null;
+  const side = b.since || rating || creds.length || owner || area.length;
   return (
     <>
       <PageHero
@@ -408,7 +410,7 @@ function AboutPage({ b, groups }) {
                     )}
                   </div>
                 )}
-                {b.owner?.name && (
+                {owner && (
                   <div className="flex gap-4 rounded-[22px] border border-line p-5">
                     {b.owner.image && (
                       <Img className="h-20 w-20 flex-none rounded-full object-cover" src={b.owner.image} alt={b.owner.name} sizes="80px" />

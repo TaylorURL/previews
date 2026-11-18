@@ -292,9 +292,10 @@ export function Footer({ b, groups, deep, hasWork }) {
             </li>
           </ul>
           {area.length > 0 && (
-            <p className="mt-5 flex gap-2 text-[15px] leading-[1.6] text-white/60">
-              <MapPin size={16} className="mt-[3px] flex-none" aria-hidden="true" />
-              <span className="min-w-0">Serving {area.slice(0, 8).join(', ')}{area.length > 8 ? ' and more' : ''}</span>
+            // Set flush with the links above it and as light as they are: a pin
+            // before it indented it under them, and at 60% it sank into the ground.
+            <p className="mt-5 leading-[1.6] text-white/80">
+              Serving {area.slice(0, 8).join(', ')}{area.length > 8 ? ' and more' : ''}
             </p>
           )}
         </div>
