@@ -680,6 +680,13 @@ def _build(prospect, root, slug, known):
     if not since:
         founded = [h["number"] for h in (sheet or {}).get("highlights") or [] if h.get("kind") == "founded" and 1850 < int(h.get("number") or 0) <= 2026]
         since = min(founded, default=None)
+    # A year that puts them at it far longer than they say themselves
+    # ("Established 1966" beside "over 16 years of experience") is a slip on
+    # one side, and the preview would print both, so it gives no year.
+    years = [int(m.group(1)) for m in compose.YEARS.finditer(text)]
+    years += [int(h["number"]) for h in (sheet or {}).get("highlights") or [] if h.get("kind") == "years_in_business" and str(h.get("number") or "").isdigit()]
+    if since and years and time.localtime().tm_year - since > max(years) + 5:
+        since = None
     license_line = compose.LICENSE.search(text)
 
     label = compose.TRADE_LABEL.get(kind) or compose.TRADE_LABEL.get(template) or compose.TRADE_LABEL[shape]
