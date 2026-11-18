@@ -821,10 +821,12 @@ function Stats({ b }) {
   // A lone figure is no strip: it would sit in a wide box of its own.
   if (items.length < 2) return null;
   const cols = ['', '', 'grid-cols-2', 'grid-cols-3', 'grid-cols-2 md:grid-cols-4'][items.length];
+  // The outer side rules start at sm: on a phone they stand a gutter short of
+  // the screen's edge, where the right one reads as a third cell cut off.
   return (
     <section aria-label={`${b.shortName} in numbers`} className="border-b border-line bg-white">
       <div className={`${wrap}`}>
-        <ul className={`grid ${cols} border-x border-line`}>
+        <ul className={`grid ${cols} border-line sm:border-x`}>
           {items.map((item, i) => (
             <li key={item.label} className={`flex flex-col items-center justify-start gap-1.5 px-4 py-7 text-center ${i ? 'border-l border-line' : ''} ${i >= 2 && items.length > 3 ? 'max-md:border-t' : ''}`}>
               <strong className="font-heading font-display text-[clamp(1.8rem,1.4rem+1.4vw,2.4rem)] leading-none text-primary">{item.value}</strong>
