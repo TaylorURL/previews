@@ -289,7 +289,8 @@ function AboutWords({ b }) {
   return (
     <>
       {list(b.about.text)[0] && <p className={`mt-6 ${lead}`}>{list(b.about.text)[0]}</p>}
-      {b.owner?.name && (
+      {/* A name with nothing under it would stand as a quote with no quote. */}
+      {b.owner?.name && (b.owner.role || b.owner.text) && (
         <p className="mt-6 border-l-2 border-[color:var(--pt)] pl-4">
           <strong className="block font-heading text-[17px] text-ink">{b.owner.name}</strong>
           {b.owner.role && <span className="text-[15px] text-muted">{b.owner.role}</span>}

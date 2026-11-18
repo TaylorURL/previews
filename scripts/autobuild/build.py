@@ -1091,6 +1091,10 @@ def _facts_fields(brand, sheet, copy, google, phone, template, state):
         if owner.get("bio"):
             told = []
             for sentence in compose.sentences(owner["bio"]):
+                # A caption of their video tells nothing of them; the about
+                # words already say it in their place.
+                if compose.SPEAKS_ON.search(sentence):
+                    continue
                 if len(" ".join(told + [sentence])) > 300:
                     break
                 told.append(sentence)

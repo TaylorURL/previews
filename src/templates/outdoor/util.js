@@ -96,11 +96,13 @@ export function contrast(a, b) {
 }
 
 /**
- * The fill of the main button on the dark ground: the brand's accent or its
- * main color when one stands out from the ground, else white.
+ * The fill of the main button on the dark ground: the brand's main color when
+ * it stands out from the ground, so it is the same button as the header's;
+ * else its accent when that does, else white. An accent taken first put a
+ * second hue (a pale blue beside a green brand) on the hero's button.
  */
 export function darkActionOf(brand, deep) {
-  for (const c of [brand.accent, brand.primary].map((v) => hexOr(v, null)).filter(Boolean)) {
+  for (const c of [brand.primary, brand.accent].map((v) => hexOr(v, null)).filter(Boolean)) {
     if (contrast(c, deep) >= 3) return c;
   }
   return '#ffffff';
