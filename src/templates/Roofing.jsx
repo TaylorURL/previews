@@ -999,9 +999,11 @@ function ServiceTile({ s }) {
  * The services as cards when most of them carry words of their own, and as
  * plain tiles when most do not, so no card stands empty beside a full one.
  * Worded services fill rows of three cards, or of four where four or eight
- * would leave one over, and a short last row sits centred under the full ones
- * at the same card width, so a worded service is never set apart as a tile;
- * every service without words follows as tiles. A card without a photo beside cards with one stands empty
+ * would leave one over or threes would leave one alone (seven, ten) and fours
+ * would not, and a short last row sits centred under the full ones at the
+ * same card width, so a worded service is never set apart as a tile; every
+ * service without words follows as tiles, a lone one across the whole width
+ * rather than half of it. A card without a photo beside cards with one stands empty
  * down to its link, so the photos are drawn only when every card has one. A
  * card's group tag sits above its heading where it has no photo, so the tags
  * are drawn only when every such card has one, and the headings in a row stay
@@ -1018,7 +1020,7 @@ function HomeServices({ services }) {
       </ul>
     );
   }
-  const row = worded.length % 3 && worded.length % 4 === 0 ? 4 : 3;
+  const row = (worded.length % 3 && worded.length % 4 === 0) || (worded.length % 3 === 1 && worded.length % 4 !== 1) ? 4 : 3;
   const cards = worded;
   const rest = services.filter((s) => !s.text);
   const photos = cards.every((s) => s.image);
@@ -1032,7 +1034,7 @@ function HomeServices({ services }) {
         ))}
       </ul>
       {rest.length > 0 && (
-        <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+        <ul className={`mt-5 grid gap-3 ${rest.length > 1 ? 'sm:grid-cols-2' : ''}`}>
           {rest.map((s) => (
             <ServiceTile key={s.slug} s={s} />
           ))}
