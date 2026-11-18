@@ -1,0 +1,302 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Any Season Termite and Pest Control LLC",
+  "shortName": "Any Season Termite and Pest Control",
+  "phone": "(281) 484-6740",
+  "email": "info@anyseasonpestcontrol.com",
+  "address": "11114 Sageyork Dr",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77089",
+  "rating": 4.9,
+  "reviewCount": 15,
+  "since": 1984,
+  "brand": {
+    "primary": "#3f5f47",
+    "primaryDeep": "#24452f",
+    "accent": "#d36158",
+    "ink": "#1b2420",
+    "surface": "#f3f6f3",
+    "muted": "#5a665f",
+    "line": "#dde3de",
+    "heading": "'Open Sans', system-ui, sans-serif",
+    "body": "'Nunito', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap",
+    "logo": "/brands/anyseasontermitepestcontrol/logo.webp",
+    "logoMono": "/brands/anyseasontermitepestcontrol/logo-mono.webp",
+    "logoWidth": 83,
+    "logoHeight": 84,
+    "logoRatio": 0.989,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.342,
+      0.269,
+      0.228,
+      0.194,
+      0.103,
+      0.426,
+      0.503,
+      0.599,
+      0.722,
+      0.78,
+      0.8
+    ],
+    "logoName": true
+  },
+  "heroStyle": "split",
+  "tone": "classic",
+  "hero": {
+    "eyebrow": "Termite and pest control in Houston",
+    "title": "Any season in Houston",
+    "titleAccent": "is bug season.",
+    "lead": "Family owned and operated since 1984, we treat homes across the greater Houston area for termites, rodents, fleas, fire ants and everyday pests.",
+    "image": "/brands/anyseasontermitepestcontrol/hero",
+    "imageAlt": "Jacob Miller, pest and termite professional and the founder's grandson"
+  },
+  "serviceArea": [
+    "Houston",
+    "Sagemont",
+    "Pearland",
+    "Friendswood",
+    "Manvel",
+    "Rosharon",
+    "Clear Lake",
+    "Webster",
+    "League City",
+    "Seabrook",
+    "Kemah",
+    "Nassau Bay",
+    "Dickinson",
+    "Texas City",
+    "Pasadena",
+    "Deer Park",
+    "La Porte"
+  ],
+  "highlights": [
+    {
+      "title": "Family Owned Since 1984",
+      "text": "Family owned and operated for over 35 years, now going on three generations.",
+      "icon": "family"
+    },
+    {
+      "title": "10 Year Termite Warranty",
+      "text": "Our complete control termite service carries a 10 year warranty.",
+      "icon": "shield"
+    },
+    {
+      "title": "No Contracts",
+      "text": "Contract free one time, bi-monthly, quarterly, semi-annual and annual treatments.",
+      "icon": "check"
+    },
+    {
+      "title": "Licensed and Insured",
+      "text": "All our technicians are fully insured and licensed by the Texas Department of Agriculture.",
+      "icon": "badge"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Theresa Darley",
+      "text": "I have been a satisfied customer of Any Season since 1985. They have provided sub terrain termite treatment and annual inspection with no recurrence of termite presence.",
+      "source": "their site"
+    },
+    {
+      "author": "Mary Fernandez",
+      "text": "Anthony came out this morning. He was professional and very kind. Explained everything expertly. I was very impressed with his demeanor and overall good vibes. Excellent service.",
+      "source": "their site"
+    },
+    {
+      "author": "Clara Gee",
+      "text": "I have been a customer for several years. The staff is very friendly and the technicians do an excellent job inside the house and outside. They keep my house pest free.",
+      "source": "their site"
+    }
+  ],
+  "owner": {
+    "name": "Dick Orth",
+    "role": "Founder",
+    "text": "Dick Orth has worked in the chemical industry for over 50 years after graduating from Trinity University with a BS degree in chemistry. Termites are Dick's specialty. In his words, \"Any season in Houston is bug season.\""
+  },
+  "summary": "Termite, pest, rodent, flea, lawn pest and fire ant control for homes across the greater Houston area, from La Porte and Seabrook to Pearland and Manvel.",
+  "groups": [
+    {
+      "slug": "pest-control",
+      "title": "Pest Control",
+      "icon": "shield",
+      "summary": "Contract free general pest, rodent and flea treatments for your home, inside and out.",
+      "intro": "We offer contract free one time, bi-monthly, quarterly, semi-annual and annual treatments. General pest control comes with a 90 day warranty, and flea control comes with guaranteed control and a 60 day warranty.",
+      "services": [
+        {
+          "slug": "general-pest-control",
+          "title": "General Pest Control",
+          "icon": "shield",
+          "text": "Contract free one time, bi-monthly, quarterly, semi-annual and annual treatments, with a 90 day warranty.",
+          "points": [
+            "Ants, cockroaches, spiders, earwigs, pill and sowbugs",
+            "Hornets, wasps, beetles, flies, gnats, weevils and silverfish",
+            "90 day warranty, excluding German cockroaches, which is based on level of infestation"
+          ]
+        },
+        {
+          "slug": "mice-and-rat-control",
+          "title": "Mice and Rat Control",
+          "icon": "home",
+          "text": "Baiting to eliminate your rodent problem, plus a thorough inspection of the home for entry points and conducive conditions for rodents.",
+          "points": [
+            "Rodent baiting",
+            "Inspection for entry points and conducive conditions",
+            "Advice on how to control entry points in the future"
+          ]
+        },
+        {
+          "slug": "flea-control",
+          "title": "Flea Control",
+          "icon": "home",
+          "text": "A broadcast treatment of the home inside and out, including carpets, upholstery, grass and shrubbery.",
+          "points": [
+            "Guaranteed control and a 60 day warranty",
+            "No warranty for outside only treatments"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "termite-control",
+      "title": "Termites and Wood Destroyers",
+      "icon": "home",
+      "summary": "Complete control termite service with a 10 year warranty, plus control of other wood destroying insects.",
+      "intro": "With over 30 years of South Texas termite control experience, we are proud to provide a service of complete control that has a 10 year warranty. Termites are our founder's specialty.",
+      "services": [
+        {
+          "slug": "termite-control",
+          "title": "Termite Control",
+          "icon": "home",
+          "text": "Complete control with a 10 year warranty, covering indigenous subterranean, formosan, drywood and dampwood termites.",
+          "points": [
+            "10 year warranty",
+            "Most likely cases include indigenous and formosan subterranean termites"
+          ]
+        },
+        {
+          "slug": "other-wood-destroying-insects",
+          "title": "Other Wood Destroying Insects",
+          "icon": "shield",
+          "text": "Control of wood destroying beetles, carpenter ants and carpenter bees.",
+          "points": [
+            "Wood destroying beetles",
+            "Carpenter ants",
+            "Carpenter bees"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "lawn-and-fire-ant-control",
+      "title": "Lawn and Fire Ants",
+      "icon": "leaf",
+      "summary": "Lawn pest and fire ant control for your yard, with a one year warranty on fire ant coverage.",
+      "intro": "Pests in the yard call for their own treatment. The best way to come up with a solution for lawn pests is to schedule an inspection, and our fire ant service covers your whole property.",
+      "services": [
+        {
+          "slug": "lawn-pest-control",
+          "title": "Lawn Pest Control",
+          "icon": "leaf",
+          "text": "Control of aphids, white scale, sod worms, chinch bugs, fleas and more. The best way to come up with a solution is to schedule an inspection.",
+          "points": [
+            "Aphids and white scale",
+            "Sod worms and chinch bugs",
+            "Fleas"
+          ]
+        },
+        {
+          "slug": "fire-ant-control",
+          "title": "Fire Ant Control",
+          "icon": "sun",
+          "text": "Complete coverage of your property, which includes a one year warranty.",
+          "points": [
+            "Complete coverage of your property",
+            "One year warranty"
+          ]
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "Our story",
+    "title": "Family owned and operated for over 35 years",
+    "text": [
+      "Any Season Pest Control started in 1984 with one truck and our founder's wife in the office. Over time we gained enough customers to hire on a second truck, then a third, and his two daughters worked here for many years along with a few family friends.",
+      "We have grown from the Sagemont and Pearland area to servicing from La Porte, Seabrook and Texas City all the way to Manvel and Rosharon. After 35+ years of business we are embracing the new advances in treatment, advertising and communications.",
+      "Now going on three generations, his grandson Jacob has been with us for over 14 years and is ready to keep us growing. This company has and always will be family owned and operated."
+    ],
+    "image": "/brands/anyseasontermitepestcontrol/photo1",
+    "imageAlt": "Anthony Verizzi, pest control professional at Any Season, in a company shirt"
+  },
+  "hours": [
+    [
+      "Mon – Thu",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Friday",
+      "8 AM – 4:30 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
+  "credentials": [
+    {
+      "label": "Texas Department of Agriculture",
+      "detail": "Every technician is fully insured and licensed by the TDA Structural Pest Control Service, and keeps that license with annual continuing education classes."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Our Team",
+      "items": [
+        "Dick Orth, Founder",
+        "Jacob Miller, Pest and Termite Professional",
+        "Anthony Verizzi, Pest Control Professional"
+      ]
+    },
+    {
+      "heading": "Warranties",
+      "items": [
+        "General pest control: 90 day warranty, excluding German cockroaches, which is based on level of infestation",
+        "Termite control: complete control with a 10 year warranty",
+        "Flea control: guaranteed control and a 60 day warranty, with no warranty for outside only treatments",
+        "Fire ant control: complete coverage of your property with a one year warranty"
+      ]
+    },
+    {
+      "heading": "By Appointment",
+      "text": "Service is by appointment only. Call 281-484-6740 or send an appointment request by email to info@anyseasonpestcontrol.com."
+    },
+    {
+      "heading": "Customer Portal",
+      "items": [
+        "Pay your account balance",
+        "See individual invoices for multiple properties",
+        "View invoice history",
+        "Manage and update your credit card on file",
+        "Manage and update your portal login and password"
+      ]
+    },
+    {
+      "heading": "Learn About Pests",
+      "items": [
+        "Five Types of Termites",
+        "Texas AgriLife Extension entomology: extensionentomology.tamu.edu",
+        "Houston Museum of Natural Science education: hmns.org"
+      ]
+    },
+    {
+      "heading": "Follow Us",
+      "items": [
+        "Facebook: facebook.com/anyseasonpest"
+      ]
+    }
+  ]
+}
