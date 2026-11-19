@@ -652,7 +652,7 @@ function Hero({ b, k, tel, ctaLabel, strip }) {
           <div className="relative order-first min-w-0 sm:order-none sm:pb-6 lg:pb-0 lg:pl-4">
             <div aria-hidden="true" className="absolute -right-4 -top-4 bottom-10 left-10 hidden rounded-[2.5rem] bg-[var(--tint2)] sm:block" />
             <div className="relative overflow-hidden rounded-[2rem] shadow-[0_40px_80px_-44px_rgba(16,32,48,0.6)]">
-              <Img className="block aspect-[2/1] h-auto w-full object-cover sm:aspect-auto sm:max-h-[34rem]" src={image} alt={b.hero.imageAlt || ''} sizes="(max-width: 1024px) 100vw, 48vw" eager />
+              <Img className="block h-auto max-h-[80vw] w-full object-cover object-top sm:max-h-[34rem] sm:object-center" src={image} alt={b.hero.imageAlt || ''} sizes="(max-width: 1024px) 100vw, 48vw" eager />
             </div>
             <div className="absolute -bottom-2 left-3 hidden sm:-left-5 sm:block lg:-bottom-7">
               <PhotoCard b={b} />
