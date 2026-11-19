@@ -291,8 +291,9 @@ FOR_THE_READER = re.compile(r"^(?:ask|already on|new to|don['’]t|do not)\b|\bl
 # A heading that is only the agency or the title a service is about ("IRS",
 # "CPA") is a fragment of one, and one that ends on the kind of business they
 # are ("Tax and Accounting Firm", "Independent Insurance Agency") says who
-# they are; neither is a service.
-WHO_NOT_WHAT = re.compile(r"^(?:IRS|CPAs?|CFO|LLC)$|\b(?:firm|agency)$", re.I)
+# they are; neither is a service. Nor is one that heads the list of who they
+# work for ("Industries We Serve", "Clients Served").
+WHO_NOT_WHAT = re.compile(r"^(?:IRS|CPAs?|CFO|LLC)$|\b(?:firm|agency)$|^(?:industries|markets|sectors|clients|customers)\s+(?:we\s+)?serve[ds]?$", re.I)
 # Names that keep their capitals inside a sentence ("Medicare supplements").
 PROPER = ("Medicare Advantage", "Medicare", "Medicaid")
 ACRONYMS = {"IRS", "CFO", "CPA", "CPAS", "HVAC", "AC", "A/C", "TPO", "LLC", "QB", "EPDM", "UV", "HOA", "1031", "S-CORP",
