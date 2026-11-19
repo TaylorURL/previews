@@ -147,8 +147,9 @@ export function HomeHero({ b }) {
         )}
       </div>
       {/* Over the photo the headline keeps to the measure of the lead, inside the shade, and its coloured half is held to the
-          stricter --hl-photo; beside the photo on a large screen it is on the flat dark ground again. */}
-      <div className={`relative col-start-1 row-start-1 self-end px-gutter pb-2 lg:row-start-2 lg:pb-0 lg:pt-16 ${edge} ${full ? 'lg:max-w-[52rem]' : 'lg:pr-14 xl:pr-20'}`}>
+          stricter --hl-photo; beside the photo on a large screen it is on the flat dark ground again. On a phone a long
+          headline lifts the eyebrow past the photo's shade, so the words carry a shade of their own reaching above it. */}
+      <div className={`relative isolate col-start-1 row-start-1 self-end px-gutter pb-2 before:absolute before:inset-x-0 before:-top-10 before:bottom-0 before:-z-10 before:bg-[linear-gradient(to_top,color-mix(in_srgb,var(--deep)_75%,transparent)_0%,color-mix(in_srgb,var(--deep)_75%,transparent)_calc(100%-3.5rem),transparent_100%)] before:content-[''] lg:row-start-2 lg:before:hidden lg:pb-0 lg:pt-16 ${edge} ${full ? 'lg:max-w-[52rem]' : 'lg:pr-14 xl:pr-20'}`}>
         <Eyebrow light>{b.hero.eyebrow}</Eyebrow>
         <Headline b={b} hl={full ? 'text-[color:var(--hl-photo)]' : 'text-[color:var(--hl-photo)] lg:text-[color:var(--hl)]'} className="text-white" />
       </div>
