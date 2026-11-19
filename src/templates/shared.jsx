@@ -364,7 +364,9 @@ export function Facts({ b, title }) {
                 <h2 className="font-heading text-[15px] font-bold uppercase tracking-[0.1em] opacity-100">{fact.heading}</h2>
                 {fact.text && <p className="mt-2.5 text-[16px] leading-relaxed opacity-80">{fact.text}</p>}
                 {fact.items?.length > 0 && (
-                  <ul className="mt-2.5 grid text-[16px] leading-relaxed opacity-80">
+                  // One column no wider than the card, so a long address in an item
+                  // wraps inside it rather than stretching the list and its rules past it.
+                  <ul className="mt-2.5 grid grid-cols-1 text-[16px] leading-relaxed opacity-80">
                     {fact.items.map((item) => {
                       const page = pageOf(item);
                       return (
