@@ -502,6 +502,9 @@ def trim(text, limit):
     text = re.sub(r"(?<=[a-z]{2})(,|:|[.!?](?=[A-Z][a-z]))(?=[A-Za-z])", r"\1 ", text)
     # A year their page set apart runs into the next word ("in 2019and is").
     text = re.sub(r"\b((?:19|20)\d\d)(?=[a-z]{2,})", r"\1 ", text)
+    # A name their page sets as a label before its own verb ("Dingwall
+    # Painting: is a full-service...") is the sentence's subject, not a heading.
+    text = re.sub(r"(?<=\w): (?=(?:is|are|was|were|has|have)\b)", " ", text)
     # A sentence their page opens in lowercase ("for over 30 years. call
     # Rainforest Dental") takes its capital, unless the stop ends a shortening.
     text = re.sub(r"\b([A-Za-z]{2,})([.!?] )([a-z])",
