@@ -1,0 +1,587 @@
+{
+  "template": "health",
+  "preview": true,
+  "name": "Blessed Dental Pasadena",
+  "shortName": "Blessed Dental Pasadena",
+  "phone": "(346) 449-5200",
+  "email": "lucia@blesseddental.com",
+  "address": "3606 Fairmont Pkwy",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77504",
+  "brand": {
+    "primary": "#98663b",
+    "primaryDeep": "#6a4829",
+    "accent": "#9d6a3d",
+    "ink": "#202022",
+    "surface": "#fbf8f5",
+    "muted": "#5b6470",
+    "line": "#e0e0e0",
+    "cream": "#fdf8f1",
+    "heading": "'Roboto', system-ui, sans-serif",
+    "body": "'Noto Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap",
+    "logo": null
+  },
+  "heroStyle": "split",
+  "tone": "bold",
+  "hero": {
+    "eyebrow": "Dentist in Pasadena, TX",
+    "title": "Your bright smile is our true blessing.",
+    "lead": "Compassionate, kind and gentle dental care for everyone who walks through our doors in Pasadena, TX, from children to grandparents.",
+    "image": "/brands/blesseddentalpasadena/team",
+    "imageAlt": "The Blessed Dental team",
+    "points": [
+      "Emergencies seen same day",
+      "Sedation and Invisalign certified",
+      "No insurance? In-office dental plan"
+    ]
+  },
+  "serviceArea": [
+    "Pasadena",
+    "Champions",
+    "River Oaks",
+    "Houston"
+  ],
+  "kind": "dental",
+  "services": [
+    {
+      "slug": "zoom-teeth-whitening",
+      "title": "Zoom Teeth Whitening",
+      "icon": "sparkles",
+      "summary": "A brighter smile in about an hour.",
+      "text": "A brighter smile in about an hour.",
+      "lead": "Achieve a brighter smile with our advanced Zoom Teeth Whitening treatment. This procedure effectively removes stains and discoloration, leaving you with a stunning white smile. The process is quick, usually completed within an hour, and delivers immediate results, boosting your confidence instantly."
+    },
+    {
+      "slug": "dental-bonding",
+      "title": "Dental Bonding",
+      "icon": "smile",
+      "summary": "Repairs for chips, gaps and stains.",
+      "text": "Repairs for chips, gaps and stains.",
+      "lead": "At Blessed Dental, we understand that everyone deserves to smile with confidence. If your teeth are stained, chipped, gapped, or slightly misaligned, dental bonding may be the perfect solution to transform your smile. This is a less invasive and more cost-effective alternative to veneers, designed to reshape and cover imperfections with ease.",
+      "questions": [
+        {
+          "q": "What Is Dental Bonding?",
+          "a": "Dental bonding is a cosmetic and restorative dental procedure in which a tooth-colored resin material, usually composite resin, is applied to the surface of a tooth and then hardened using a special curing light. This straightforward procedure can address various dental flaws, leaving you with a radiant, confident smile."
+        }
+      ]
+    },
+    {
+      "slug": "smile-makeovers",
+      "title": "Smile Makeovers",
+      "icon": "smile",
+      "summary": "A plan built around your goals.",
+      "text": "A plan built around your goals.",
+      "lead": "Your smile is one of your most attractive assets, essential in making a positive first impression in both social and professional settings. At Blessed Dental, we understand the profound impact that dull, stained, chipped, crooked, or missing teeth can have on your confidence and self-esteem. A beautiful smile not only enhances your appearance but also renews your self-assurance.",
+      "covers": [
+        {
+          "title": "What we offer",
+          "text": "Porcelain veneers; porcelain crowns, bridges and onlays; dental implants; tooth-colored bonded filling replacements; gum contouring; and teeth whitening."
+        },
+        {
+          "title": "A plan for your goals",
+          "text": "A smile makeover is a tailored plan that can include whitening, veneers, braces or crowns. We work closely with you to understand your expectations and make sure you are comfortable with your choices before your makeover begins."
+        },
+        {
+          "title": "What it can change",
+          "text": "Restore a youthful look, close gaps between teeth, and repair decayed, chipped, broken or cracked teeth."
+        }
+      ],
+      "image": "/brands/blesseddentalpasadena/smile-plan",
+      "imageAlt": "A Blessed Dental dentist showing a patient a smile on screen"
+    },
+    {
+      "slug": "orthodontics",
+      "title": "Orthodontics",
+      "icon": "smile",
+      "summary": "Straighter teeth for kids, teens and adults.",
+      "text": "Straighter teeth for kids, teens and adults.",
+      "lead": "At Blessed Dental, we believe every patient deserves a confident smile. Our orthodontic services are designed to help kids, teens, and adults achieve straighter teeth and better oral health. Whether you are considering traditional braces, ceramic braces, or Invisalign treatment, our dentists provide personalized care and advanced technology to guide your smile journey."
+    },
+    {
+      "slug": "invisalign",
+      "title": "Invisalign",
+      "icon": "smile",
+      "summary": "Clear aligners for teens and adults.",
+      "text": "Clear aligners for teens and adults.",
+      "lead": "At Blessed Dental, we understand your desire for a straight and beautiful smile without the complications of traditional metal braces. Metal braces can cause plaque buildup, potential demineralization, and a series of inconveniences, especially without proper care, that may not be suitable for everyone.",
+      "questions": [
+        {
+          "q": "What Is Invisalign?",
+          "a": "Invisalign aligners are clear, plastic trays designed to straighten your teeth without the use of metal brackets or wires. Custom-made to fit your teeth, these aligners gradually close gaps and correct bite issues, providing an effective and comfortable orthodontic solution."
+        },
+        {
+          "q": "How Does Invisalign Work?",
+          "a": "Invisalign aligns your teeth similarly to traditional braces but without the need for metal adjustments. You’ll receive a new set of aligners every one to two weeks. Each set of aligners incrementally moves your teeth closer to the final desired position, offering a sophisticated approach to orthodontic care."
+        },
+        {
+          "q": "How Much Does Invisalign Cost?",
+          "a": "The price of Invisalign depends on several factors, including the complexity of the case, treatment duration, and the number of aligners needed. Typically, costs start at $4,800 or $144 monthly for simpler cases. However, for comprehensive cases, including records and retainers, the expense can reach approximately $7,200."
+        },
+        {
+          "q": "What Is the Average Cost of Invisalign Treatment?",
+          "a": "While Invisalign can be more costly than conventional braces, its average cost may be more affordable than you think. The cost depends on treatment duration, including office visits and the number of aligners needed. Generally, Invisalign treatments range from $4,800 to $7,200, with monthly payment options starting at $144."
+        }
+      ]
+    },
+    {
+      "slug": "braces",
+      "title": "Braces",
+      "icon": "smile",
+      "summary": "Traditional braces for kids and adults.",
+      "text": "Traditional braces for kids and adults.",
+      "lead": "Welcome to Blessed Dental, where we believe every smile can bring joy to the world. If you or your child are considering braces in Houston, TX, we are here to guide you every step of the way. Our experienced team is dedicated to providing you with compassionate, gentle, and exceptional care to achieve the smile of your dreams.",
+      "questions": [
+        {
+          "q": "How Long Does Treatment Typically Take?",
+          "a": "The duration of your braces treatment depends on the complexity of your dental issues. Most patients can expect their treatment to last between one to two years. Our certified dentists will provide a personalized timeline during your consultation."
+        },
+        {
+          "q": "How Much Do Braces Cost?",
+          "a": "The cost of braces can vary depending on the type chosen and the severity of your dental problems. Generally, braces start at $4800 or $144/month. Our team will work with you to create a treatment plan that fits your budget and ensures the best results for your smile."
+        },
+        {
+          "q": "Are Braces Painful?",
+          "a": "It’s common to experience minor discomfort when braces are first applied or during adjustments. However, this discomfort typically diminishes within a few days. Over-the-counter pain relief can help manage any temporary discomfort you might experience."
+        }
+      ]
+    },
+    {
+      "slug": "emergency-dentistry",
+      "title": "Emergency Dentistry",
+      "icon": "emergency",
+      "summary": "Same-day care for pain and injuries.",
+      "text": "Same-day care for pain and injuries.",
+      "lead": "Severe toothache? Broken tooth? Swelling or infection? Call now for same-day emergency dental care in Pasadena, TX. Our dentist’s team in Pasadena, TX prioritizes urgent dental cases to relieve pain fast and protect your oral health. We provide comprehensive emergency dental services in Pasadena, TX for a wide range of urgent dental issues, making sure you get quick and effective care exactly when it’s needed most. Our dental emergency services cover a broad range of dental emergencies, including toothaches, infections, cracked teeth and broken restorations.",
+      "questions": [
+        {
+          "q": "What qualifies as a dental emergency?",
+          "a": "A dental emergency includes anything causing severe pain, bleeding, or trauma. Common dental emergencies include a knocked out tooth, chipped teeth, gum infections, and abscesses."
+        },
+        {
+          "q": "Can I get a same-day appointment if I am in pain?",
+          "a": "Yes. Blessed Dental offers same day emergency appointments at all three of our locations — Pasadena, Champions, and River Oaks. Patients can schedule immediate care to receive treatment without waiting."
+        },
+        {
+          "q": "Do you accept walk-ins for urgent dental care?",
+          "a": "We recommend calling ahead, but we do accept patients who need immediate care. Our emergency dentistry team provides relief as quickly as possible."
+        },
+        {
+          "q": "What if I cannot afford treatment right away?",
+          "a": "We offer payment plans to make urgent dental care more accessible. No matter which office you visit, our goal is to provide relief without financial stress."
+        }
+      ],
+      "image": "/brands/blesseddentalpasadena/front-desk",
+      "imageAlt": "The Blessed Dental front desk taking a call"
+    },
+    {
+      "slug": "dental-implants",
+      "title": "Dental Implants",
+      "icon": "smile",
+      "summary": "A lasting replacement for missing teeth.",
+      "text": "A lasting replacement for missing teeth.",
+      "lead": "At Blessed Dental in Houston, TX, we understand the challenges and insecurities that missing teeth can bring. Our professional dental implant services provide a durable, stable, and natural-looking way to restore your smile and confidence. Whether you need a single-tooth implant, All-on-4, or implant-supported dentures, our experienced dentists use advanced technology to deliver precise, comfortable, and long-lasting results.",
+      "questions": [
+        {
+          "q": "How long do dental implants last?",
+          "a": "With proper care, dental implants can last a lifetime. Brushing, flossing, and keeping up with regular dental care visits are the best ways to protect your investment and maintain a long-lasting smile."
+        },
+        {
+          "q": "What is the healing period after implant surgery?",
+          "a": "The healing period usually takes a few months as the implant fuses with the jawbone. This process creates the stability needed for your replacement tooth or full arch restoration. Your dentist will monitor your progress and let you know when it is time to place your final crown or denture."
+        }
+      ]
+    },
+    {
+      "slug": "single-tooth-implants",
+      "title": "Single Tooth Implants",
+      "icon": "smile",
+      "summary": "One implant for one missing tooth.",
+      "text": "One implant for one missing tooth.",
+      "lead": "At Blessed Dental, where your smile is our true blessing. We believe that everyone deserves to feel confident and joyful in their smile. Our compassionate, kind, and gentle approach will provide you with the highest quality care tailored specifically to your needs."
+    },
+    {
+      "slug": "all-on-4-implants",
+      "title": "All-on-4 Implants",
+      "icon": "smile",
+      "summary": "A full arch on four implants.",
+      "text": "A full arch on four implants.",
+      "lead": "At Blessed Dental, we believe that when there are more smiles and joy, the world becomes a more wonderful place. That’s why we are dedicated to blessing everyone we encounter with compassionate, exceptional dental care. Our goal is to give every patient who departs our office with renewed confidence and joy.",
+      "questions": [
+        {
+          "q": "What Is the Cost of All-on-4 Implants?",
+          "a": "The cost of All-on-4 Implants can vary significantly based on factors such as the number of implants required, the complexity of the procedure, and geographical location. On average, All-on-4 Implants cost approximately $25,000 per arch, which includes both the upper and lower jaws if necessary."
+        },
+        {
+          "q": "How Do All-on-4 Dental Implants Work?",
+          "a": "The All-on-4 procedure involves placing four implants in the jaw—two in the front and two in the back—to support a full arch of replacement teeth."
+        },
+        {
+          "q": "Are They Comfortable?",
+          "a": "Yes, All-on-4 Implants are designed to be very comfortable. They are placed directly in the jaw without requiring a bone graft, providing a sturdy foundation. The custom-made denture or bridge fits your mouth perfectly, minimizing irritation and enhancing comfort."
+        }
+      ]
+    },
+    {
+      "slug": "family-dentistry",
+      "title": "Family Dentistry",
+      "icon": "heart",
+      "summary": "Care from children to grandparents.",
+      "text": "Care from children to grandparents.",
+      "lead": "At Blessed Dental, we believe that the world needs more joy. That’s why we strive to bless everyone we meet with compassionate and exceptional dental care, ensuring every patient leaves our office with renewed confidence and joy. From routine check-ups to advanced cosmetic procedures, we are committed to enhancing your oral health and transforming your smile into one you’ll be proud to show off.",
+      "image": "/brands/blesseddentalpasadena/treatment-room",
+      "imageAlt": "A Blessed Dental treatment room"
+    },
+    {
+      "slug": "dental-cleaning",
+      "title": "Dental Cleaning",
+      "icon": "shield",
+      "summary": "Cleanings and exams.",
+      "text": "Cleanings and exams.",
+      "lead": "Welcome to Blessed Dental in Houston, TX, where your smile’s health and beauty are our top priorities. We understand that dental visits can be daunting, which is why our compassionate team is dedicated to making your experience as comfortable and stress-free as possible.",
+      "questions": [
+        {
+          "q": "Why Are Dental Cleanings and Exams Beneficial?",
+          "a": "Professional dental cleanings with our skilled dental hygienists help remove tartar and plaque that can lead to dental decay and gum disease. While brushing and flossing at home are essential for daily oral care, they can only go so far. Your teeth have many nooks and crannies that can only be reached with professional dental instruments."
+        },
+        {
+          "q": "How Often Should You Have Your Teeth Cleaned?",
+          "a": "Routine cleanings and exams are recommended at least every six months to maintain optimal oral health. For deep cleaning, the frequency varies based on individual needs, typically necessary every three months for those with significant gum disease or tooth decay. The duration of a deep cleaning session can range from one to two hours, and multiple visits may be required to achieve thorough results, depending on the severity of the condition."
+        }
+      ],
+      "image": "/brands/blesseddentalpasadena/exam",
+      "imageAlt": "A Blessed Dental dentist with a patient in the chair"
+    },
+    {
+      "slug": "oral-cancer-screening",
+      "title": "Oral Cancer Screening",
+      "icon": "shield",
+      "summary": "Early detection at your checkup.",
+      "text": "Early detection at your checkup.",
+      "lead": "Oral cancer is a serious condition, but early detection can dramatically improve your chances of successful treatment. At Blessed Dental in Houston, TX, we offer professional and empathetic oral cancer screenings to catch any signs early and give you much-needed peace of mind. Our compassionate dental team understands the anxiety you might feel and is dedicated to making your screening as comfortable and stress-free as possible.",
+      "questions": [
+        {
+          "q": "What Is Oral Cancer Screening?",
+          "a": "Oral cancer screening is a quick, painless examination performed by a dentist or healthcare provider to check for signs of cancer or precancerous conditions in the mouth. The screening typically involves visually inspecting the lips, gums, tongue, and other areas inside the mouth, as well as feeling for any unusual lumps or abnormalities. Early detection through screening can help identify cancer at a more treatable stage."
+        },
+        {
+          "q": "How Often Should You Get Screened?",
+          "a": "Oral cancer screenings are a key component of dental care. We recommend that every new patient undergo an oral cancer screening. After the initial screening, we typically perform these assessments annually. However, higher-risk patients might consider bi-annual evaluations."
+        }
+      ]
+    },
+    {
+      "slug": "dental-sealants",
+      "title": "Dental Sealants",
+      "icon": "shield",
+      "summary": "Protection for back teeth.",
+      "text": "Protection for back teeth.",
+      "lead": "If you are searching for a reliable and compassionate provider of dental sealants in Houston, Blessed Dental is your best choice. Our exceptional dental care is designed to protect your smile and prevent future dental problems.",
+      "questions": [
+        {
+          "q": "What Are Dental Sealants?",
+          "a": "Dental sealants are a preventive treatment designed to shield the chewing surfaces of molars and premolars from cavities. This treatment involves applying a thin plastic coating that covers the grooves and fissures of these teeth, thereby preventing food particles and bacteria from accumulating in these tiny crevices. This simple yet effective barrier helps maintain oral health and prevent tooth decay."
+        },
+        {
+          "q": "What Is the Process for Applying Dental Sealants?",
+          "a": "At Blessed Dental, applying dental sealants is straightforward and painless, usually requiring only a single visit."
+        }
+      ]
+    },
+    {
+      "slug": "dental-fillings",
+      "title": "Dental Fillings",
+      "icon": "smile",
+      "summary": "Tooth-colored composite fillings.",
+      "text": "Tooth-colored composite fillings.",
+      "lead": "Welcome to Blessed Dental, where your bright smile is our top priority. We pride ourselves on delivering compassionate, kind, and gentle dental care to the Pasadena, Champions, and River Oaks communities for over 3 decades.",
+      "questions": [
+        {
+          "q": "What Are Composite Fillings?",
+          "a": "Composite fillings are a type of dental fillings made from a durable, tooth-colored composite resin composed of glass and plastic. They can be used on both the front and back teeth to effectively treat mild to moderate cavities, providing an aesthetically pleasing result. In cases of advanced decay, more extensive treatments, such as dental crowns, may be necessary. Composite fillings offer a seamless blending with your natural teeth."
+        },
+        {
+          "q": "What Are Alternative Solutions to Composite Fillings?",
+          "a": "While both patients and dentists highly prefer composite fillings, there are scenarios where amalgam fillings may be recommended. For instance, in cases where a back tooth has a large cavity, the durability and longevity of amalgam might be more suitable. These teeth endure greater pressure from chewing, making metal fillings a more viable option. The good news is that metal fillings are less noticeable at the back of the mouth."
+        }
+      ],
+      "image": "/brands/blesseddentalpasadena/chairside",
+      "imageAlt": "A Blessed Dental assistant at work chairside"
+    },
+    {
+      "slug": "fluoride-treatment",
+      "title": "Fluoride Treatment",
+      "icon": "shield",
+      "summary": "Stronger enamel, fewer cavities.",
+      "text": "Stronger enamel, fewer cavities.",
+      "lead": "Fluoride treatments are a simple yet highly effective way to protect your teeth from decay and strengthen your enamel. Whether you’re prone to cavities or simply want to take a preventive approach to your oral health, our fluoride treatments provide a safe, quick, and painless solution.",
+      "questions": [
+        {
+          "q": "What Are Fluoride Treatments?",
+          "a": "Fluoride treatments are preventive measures aimed at strengthening the enamel—the strongest substance in the human body that protects teeth from harsh acids and sugars. Though regular brushing and fluoride in toothpaste and drinking water are beneficial, they might not suffice for everyone. Professional fluoride treatments provide an extra layer of protection to maximize enamel strength and minimize tooth decay."
+        }
+      ]
+    },
+    {
+      "slug": "dentures",
+      "title": "Full and Partial Dentures",
+      "icon": "smile",
+      "summary": "Full and partial dentures.",
+      "text": "Full and partial dentures.",
+      "lead": "Are you aiming to restore your smile and enhance your ability to eat and speak with ease? Blessed Dental is ready to assist with our all-encompassing denture services. Whether you require full or partial dentures, our committed team guarantees compassionate and gentle care customized to your specific needs. We use the latest techniques and premium materials to deliver outstanding, long-lasting results. Your oral health and satisfaction remain our foremost priorities.",
+      "questions": [
+        {
+          "q": "What Are Dentures?",
+          "a": "For centuries, dentures have been a viable solution for replacing missing teeth. Thankfully, modern advancements have significantly improved their comfort and functionality. Today’s dentures are customizable and can closely match the appearance and feel of natural teeth, giving you a seamless and confident smile."
+        }
+      ]
+    },
+    {
+      "slug": "root-canal-treatment",
+      "title": "Root Canal Treatment",
+      "icon": "heart",
+      "summary": "Relief for an infected tooth.",
+      "text": "Relief for an infected tooth.",
+      "lead": "If you’re experiencing severe tooth pain or suspect an infection, Blessed Dental’s compassionate team is here to relieve your discomfort with professional root canal treatment. Our practice offers state-of-the-art care in a warm and welcoming environment, ensuring you receive the best possible treatment with minimal stress.",
+      "image": "/brands/blesseddentalpasadena/dentist-at-work",
+      "imageAlt": "A Blessed Dental dentist at work"
+    },
+    {
+      "slug": "tooth-extraction",
+      "title": "Tooth Extraction",
+      "icon": "heart",
+      "summary": "Gentle extractions with aftercare.",
+      "text": "Gentle extractions with aftercare.",
+      "lead": "Tooth extractions are performed with a gentle approach to ensure minimal discomfort. Whether due to damage, decay, or overcrowding, we use advanced techniques to carry out tooth extractions safely and efficiently, always prioritizing your comfort and quick recovery. Our post-extraction care ensures a smooth healing process."
+    }
+  ],
+  "about": {
+    "title": "About Blessed Dental Pasadena",
+    "text": [
+      "Your bright smile is our true blessing. At Blessed Dental in Pasadena, we believe that the world needs more joy. Our dentists team is dedicated to providing compassionate, kind, and gentle dental care to everyone who walks through our doors in Pasadena, TX.",
+      "If you are looking for a cosmetic dentist in Pasadena, we invite you to experience our top-notch dental care that will leave you confident and happy with your smile.",
+      "Leading our Pasadena team is Dr. Tatum Louie, whose artistic touch helps patients regain their confidence with beautiful, functional smiles. Dr. Bob Stewart, our founder, brings over 30 years of experience and a heartfelt commitment to treating every patient like family. Come meet Dr. Louie and Dr. Bob and experience dental care delivered with kindness, expertise, and a personal touch."
+    ],
+    "values": [
+      {
+        "title": "Respectful and Genuine Care",
+        "text": "We treat every patient with kindness, respect, and genuine care, as family."
+      },
+      {
+        "title": "Advanced Techniques and Technology",
+        "text": "Up-to-date techniques and technology for your comfort throughout all treatments."
+      },
+      {
+        "title": "Gentle Touch",
+        "text": "Our skilled professionals use the latest techniques and technology to ensure your comfort during every step."
+      }
+    ],
+    "image": "/brands/blesseddentalpasadena/desk-review",
+    "imageAlt": "Dr. Bob Stewart looking over a screen with a Blessed Dental team member"
+  },
+  "phones": [
+    {
+      "label": "Office line",
+      "number": "(281) 487-6453"
+    },
+    {
+      "label": "Emergency line",
+      "number": "(346) 680-4673"
+    }
+  ],
+  "newPatients": true,
+  "hours": [
+    [
+      "Monday",
+      "9:00 AM – 6:00 PM"
+    ],
+    [
+      "Tuesday",
+      "9:00 AM – 6:00 PM"
+    ],
+    [
+      "Wednesday",
+      "9:00 AM – 6:00 PM"
+    ],
+    [
+      "Thursday",
+      "9:00 AM – 6:00 PM"
+    ],
+    [
+      "Friday",
+      "8:00 AM – 2:00 PM"
+    ],
+    [
+      "Saturday",
+      "Closed"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "tagline": "Your bright smile is our true blessing.",
+  "cta": {
+    "label": "Schedule Appointment",
+    "text": "Contact us today at our Pasadena location to schedule your appointment, whether you want to enhance your smile or need a reliable family dentist."
+  },
+  "highlights": [
+    {
+      "title": "Experienced Team",
+      "text": "Sedation certified for nervous patients and Invisalign certified, with decades of combined experience.",
+      "icon": "award"
+    },
+    {
+      "title": "Comprehensive Family Care",
+      "text": "From children to grandparents, with services ranging from orthodontics to dentures.",
+      "icon": "family"
+    },
+    {
+      "title": "Flexible Payment Options",
+      "text": "Visa, Mastercard, American Express and Discover, flexible financing and an in-house dental plan.",
+      "icon": "insurance"
+    },
+    {
+      "title": "Focus on Integrity",
+      "text": "The dental advice and treatments we offer are always in your best interests.",
+      "icon": "heart"
+    }
+  ],
+  "overview": {
+    "title": "Our comprehensive dental services in Pasadena",
+    "text": "Cosmetic, orthodontic, implant, emergency and family dentistry from one team."
+  },
+  "owner": {
+    "name": "Dr. Tatum Louie",
+    "role": "Dentist, DDS",
+    "text": "Dr. Tatum Louie leads our team in Pasadena. Her artistic touch helps patients regain their confidence with beautiful, functional smiles, including after chips, cracks and other dental trauma."
+  },
+  "team": [
+    {
+      "name": "Dr. Tatum Louie",
+      "role": "Dentist, DDS",
+      "bio": "Her artistic touch helps patients regain their confidence with beautiful, functional smiles."
+    },
+    {
+      "name": "Dr. Bob Stewart",
+      "role": "Founder, DDS",
+      "bio": "Brings over 30 years of experience and a heartfelt commitment to treating every patient like family. He has gone on dental mission trips to Honduras, Guatemala, Panama, Jamaica, Bolivia and Kenya."
+    },
+    {
+      "name": "Dr. Michael Akinyeye",
+      "role": "Dentist, DDS",
+      "bio": "Dr. Akinyeye grew up locally and graduated from Clear Lake High School, the son of a medical doctor. He earned a BS in Biomedical Sciences from Texas A&M University in College Station, his Doctor of Dental Surgery degree from UT Houston, and completed a General Practice Residency in Utica, New York. Outside the office he loves playing and watching sports, watches a lot of movies and TV, and spends free time writing and producing music."
+    },
+    {
+      "name": "Lucia",
+      "role": "Office Administrator"
+    },
+    {
+      "name": "Nicole",
+      "role": "Front Office"
+    },
+    {
+      "name": "Sabrina",
+      "role": "Front Office"
+    },
+    {
+      "name": "Lori",
+      "role": "Dental Assistant"
+    },
+    {
+      "name": "Ashly",
+      "role": "Dental Assistant"
+    },
+    {
+      "name": "Elyssa",
+      "role": "Dental Assistant"
+    },
+    {
+      "name": "Guadalupe",
+      "role": "Dental Assistant"
+    },
+    {
+      "name": "Lourdes",
+      "role": "Dental Assistant"
+    }
+  ],
+  "affiliations": {
+    "title": "Insurance and payment",
+    "items": [
+      "Most PPO insurance",
+      "In-network with Delta and MetLife",
+      "Medicare",
+      "Medicaid",
+      "Assignment of Benefits",
+      "Visa, Mastercard, American Express, Discover",
+      "Care Credit"
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Financing and in-office dental plan",
+      "text": "We offer interest-free financing and no-down-payment plans. No insurance? Our in-office dental membership plan is $275 per year and includes 2 free cleanings and check-ups, unlimited free X-rays, unlimited free exams, and 25% off any treatment needed (some exclusions may apply)."
+    },
+    {
+      "heading": "Specials",
+      "items": [
+        "Free exam and X-ray for patients experiencing pain (some restrictions apply).",
+        "Uninsured? This month, schedule a check-up and cleaning appointment for only $99 (some restrictions apply)."
+      ]
+    },
+    {
+      "heading": "Driving directions",
+      "text": "We are located on the south side of Fairmont Parkway half way between Burke and Strawberry. We are near Peppers Restaurant and next to Johnson’s Glass."
+    },
+    {
+      "heading": "Emergency care",
+      "text": "Same-day emergency appointments at all three of our locations. We recommend calling ahead, but we do accept patients who need immediate care. Emergency line: (346) 680-4673."
+    },
+    {
+      "heading": "Our other locations",
+      "items": [
+        "Blessed Dental Champions, 5203 FM 1960 W. Suite H, Houston, TX 77069, (281) 894-4311, Monday – Friday 8:00 am – 6:00 pm, Chasity@blesseddental.com",
+        "Blessed Dental River Oaks, 3701 Kirby Dr #1116, Houston, TX 77098, (713) 526-8989, Mon, Wed & Fri 8:00 am – 6:00 pm, Tue & Thu 9:00 am – 6:00 pm, Chasity@blesseddental.com. River Oaks emergency page: call (346) 487-3456"
+      ]
+    },
+    {
+      "heading": "Giving back",
+      "text": "Dr. Stewart has gone on dental mission trips to Honduras, Guatemala, Panama, Jamaica, Bolivia, and Kenya. Local giving back includes volunteering at St Vincent’s clinic in Galveston, San Jose Clinic in Houston, Veteran’s Day, Program and Give Kids a Smile Day, and DDS (Donated Dental Services)."
+    },
+    {
+      "heading": "Also offered",
+      "items": [
+        "Porcelain veneers",
+        "Dental technology",
+        "Dental Assisting School",
+        "Oral surgery",
+        "Wisdom tooth extraction",
+        "Gum disease treatment",
+        "Sedation dentistry"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Are you accepting new patients?",
+      "a": "Yes! We welcome new patients of all ages, whether you are looking for general dentistry, cosmetic dentistry, or emergency dental care."
+    },
+    {
+      "q": "Do you offer sedation options for anxious patients?",
+      "a": "Absolutely. We offer safe sedation options to ensure a calm, comfortable experience during treatments and procedures."
+    },
+    {
+      "q": "How do I schedule an appointment?",
+      "a": "You can schedule an appointment by calling your nearest Blessed Dental office or using our online booking system."
+    },
+    {
+      "q": "Do you accept dental emergencies?",
+      "a": "Yes, we provide emergency dental services for urgent concerns like severe toothaches, broken teeth, or infections."
+    },
+    {
+      "q": "What if I cannot afford treatment right away?",
+      "a": "We offer payment plans to make urgent dental care more accessible. No matter which office you visit, our goal is to provide relief without financial stress."
+    }
+  ]
+}

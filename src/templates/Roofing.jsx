@@ -1304,7 +1304,7 @@ function OwnerNote({ b, dark = false }) {
         owner={owner}
         styles={{
           box: 'items-center gap-5',
-          photo: 'h-20 w-20',
+          photo: 'h-32 w-24 sm:h-40 sm:w-32',
           initials: `h-20 w-20 bg-accent font-heading text-[28px] font-bold text-[color:var(--on-accent)]`,
           name: `${h3} text-[21px]`,
           role: `mt-0.5 text-[15px] font-semibold uppercase tracking-[0.08em] ${dark ? 'text-accent' : 'text-primary'}`,
