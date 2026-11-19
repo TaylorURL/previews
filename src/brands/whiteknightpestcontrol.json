@@ -1,0 +1,144 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "White Knight Pest Control",
+  "shortName": "White Knight",
+  "summary": "Residential and commercial pest control, termite, mosquito, bed bug and rodent services from the White Knight Pest Control office on the Gulf Freeway in Houston.",
+  "phone": "(713) 589-9637",
+  "phones": [{ "label": "Toll free", "number": "844-512-7378" }],
+  "email": "team@whiteknightpest.com",
+  "address": "15255 Gulf Fwy Ste 142A",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77034",
+  "rating": 4.8,
+  "reviewCount": 3149,
+  "since": 2006,
+  "hours": [["Mon – Fri", "9 AM – 7 PM"], ["Saturday", "9 AM – 1 PM"], ["Sunday", "Closed"]],
+  "brand": {
+    "primary": "#52802b",
+    "primaryDeep": "#1d262e",
+    "accent": "#98e15b",
+    "ink": "#343434",
+    "heading": "'Raleway', system-ui, sans-serif",
+    "body": "'Raleway', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap",
+    "logo": "/brands/whiteknightpestcontrol/logo.webp",
+    "logoMono": "/brands/whiteknightpestcontrol/logo-mono.webp",
+    "logoWidth": 216,
+    "logoHeight": 48,
+    "logoRatio": 4.506,
+    "logoGround": "#ffffff",
+    "logoReads": [0.084, 0.084, 0.071, 0.325, 0.532, 0.594, 0.625, 0.655, 0.655, 0.668, 0.675]
+  },
+  "sameDay": "Same-day service whenever possible.",
+  "hero": {
+    "eyebrow": "Guaranteed pest control services in Houston",
+    "title": "Pest control that comes back",
+    "titleAccent": "when you need it.",
+    "lead": "Residential and commercial pest control since 2006. If you need us to come back out for any reason, we return within 24 to 48 hours at no additional charge."
+  },
+  "highlights": [
+    { "title": "Service Guarantee", "text": "If at any time you need us to come back out for any reason, we will return within 24-48 hours to address the issue with no additional charges.", "icon": "shield" },
+    { "title": "Customized Treatment Plans", "text": "Every home and business is unique. We tailor a pest control plan to fit your specific needs and budget.", "icon": "clipboard" },
+    { "title": "Free Termite Monitoring", "text": "All new pest control customers receive the Termi-Shield Termite Monitoring system installed and inspected for free.", "icon": "home" }
+  ],
+  "groups": [
+    {
+      "slug": "home-pest-control",
+      "title": "Home Pest Control",
+      "icon": "home",
+      "summary": "Monthly, bi-monthly and quarterly plans with the Platinum Shield 15-point protection.",
+      "intro": "Instead of offering one general plan to every customer, we offer three plans to choose from: monthly for the most aggressive approach, bi-monthly for frequent service, and quarterly for basic maintenance. Common pests such as spiders, scorpions, fire ants, wasps, earwigs, ticks, fleas and roaches are covered under our treatment plans without additional costs.",
+      "services": [
+        { "slug": "initial-service", "title": "Initial Inspection & Service", "icon": "clipboard", "text": "Your technician goes over your pest concerns, then does an interior and exterior flush-out treatment that takes about an hour.", "points": ["If activity has not subsided after ten days, we come back", "An increase in activity right after treatment is normal as pests are flushed out"] },
+        { "slug": "maintenance-treatments", "title": "Maintenance Treatments", "icon": "timer", "text": "Regular treatments begin 30 days after your initial service, and we return every 30, 60 or 90 days depending on your plan.", "points": ["Monthly, bi-monthly or quarterly plans", "Gaps over 90 days raise the risk of new infestations"] },
+        { "slug": "platinum-shield", "title": "Platinum Shield 15-Point Protection", "icon": "shield", "text": "A 15-step process covering the yard and fence, the outside of the home and the inside of the home, including attic treatment.", "points": ["Yard and flower beds treated for fire ants", "10-12 foot perimeter power spray around the home", "Baseboards, plumbing voids and appliances treated inside", "Webs and wasp and mud dauber nests removed from accessible eaves"] },
+        { "slug": "service-guarantee", "title": "Service Guarantee", "icon": "shield", "text": "If you start seeing pests between your regularly scheduled services, we return to your home within one to two days of your call." }
+      ]
+    },
+    {
+      "slug": "targeted-pest-control",
+      "title": "Targeted Pest Control",
+      "icon": "wrench",
+      "summary": "Bed bug, mosquito, rodent, ant, German cockroach and gopher control, plus lawn services.",
+      "intro": "In addition to our general pest control plans, we offer targeted pest control services for a wide variety of pests.",
+      "services": [
+        { "slug": "bed-bug-control", "title": "Bed Bug Control", "icon": "shield", "text": "A visual inspection to confirm bed bugs, a preparation checklist before treatment, then treatment with liquids, dusts and aerosols. Room-by-room treatments are offered, and whole-house treatment is recommended.", "points": ["Follow-up visit 10-14 days after the initial treatment", "30-day service guarantee from the day of the initial treatment"] },
+        { "slug": "mosquito-control", "title": "Mosquito Control", "icon": "droplets", "text": "A two-step system: we find and treat breeding sites, then apply a fine mist with a backpack blower that suppresses mosquito activity for up to 30 days.", "points": ["Monthly service recommended April through October", "Standing water that cannot be drained is treated"] },
+        { "slug": "rodent-control", "title": "Rodent Control", "icon": "home", "text": "An inspection to find activity and entry points, a customized plan with a quote, then bait boxes, traps or glue boards as needed.", "points": ["Minor exclusion work to seal entry points"] },
+        { "slug": "ant-control", "title": "Ant Control", "icon": "leaf", "text": "Targeted treatment for ant problems around your home." },
+        { "slug": "german-cockroach-control", "title": "German Cockroach Control", "icon": "settings", "text": "Targeted treatment for German cockroach infestations." },
+        { "slug": "gopher-control", "title": "Gopher Control", "icon": "leaf", "text": "Gopher control is one of our targeted pest services." },
+        { "slug": "lawn-services", "title": "Lawn Services", "icon": "leaf", "text": "Lawn services offered alongside our pest control plans." }
+      ]
+    },
+    {
+      "slug": "termite-control",
+      "title": "Termite Control",
+      "icon": "shield",
+      "summary": "Termite inspections, Termidor and Trelona treatments, wood-destroying insect reports and the Termi-Shield warranty.",
+      "intro": "Whether you have an active termite problem or are ready to take preventative action, our technicians inspect, treat and help prevent termites. Treatment can take several hours to a full day depending on the method.",
+      "services": [
+        { "slug": "termite-inspection", "title": "Termite Inspection", "icon": "clipboard", "text": "A technician inspects your home for visible termite activity or damage. If you have termites, you get a quote for treatment the same day as the inspection.", "points": ["Wood-destroying insect reports", "If no termites, we show you areas of the home conducive to termites"] },
+        { "slug": "termidor", "title": "Termidor", "icon": "shield", "text": "Termidor Certified Professional applications, used in spot treatments and around the perimeter of your home." },
+        { "slug": "trelona", "title": "Trelona ATBS", "icon": "settings", "text": "Trelona Advance Termite Bait System stations with the active ingredient Novaluron, which disrupts the growth of immature termites throughout the colony." },
+        { "slug": "termi-shield", "title": "Termi-Shield Monitoring & Warranty", "icon": "home", "text": "All new pest control customers receive Termi-Shield Termite Monitoring installed and inspected for free, checked each time we come out for your regular treatment.", "points": ["Termi-Shield Termite Warranty available"] }
+      ]
+    },
+    {
+      "slug": "commercial-pest-control",
+      "title": "Commercial Pest Control",
+      "icon": "building",
+      "summary": "Customized pest control programs for businesses, with general and targeted treatments.",
+      "intro": "One of our most experienced technicians meets with you, looks around the property for entry points and conducive conditions, then writes up a proposal with pricing. Follow-up treatments run on the schedule set out in your proposal.",
+      "services": [
+        { "slug": "commercial-programs", "title": "Custom Commercial Programs", "icon": "clipboard", "text": "Exterior and interior treatments aimed at the pests your business has been having trouble with, especially rodents and cockroaches.", "points": ["Organic treatment options available upon request", "Flexible scheduling options"] },
+        { "slug": "industries", "title": "Industries We Serve", "icon": "building", "text": "We serve a wide range of industries.", "points": ["Nursing homes, hospitals and other healthcare providers", "Schools", "Homeowners associations", "Condos and apartment buildings", "Warehouses", "Churches", "Camps and cabins", "Office buildings"] }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Service is the driving force behind everything we do",
+    "text": [
+      "Founded in 2006 in Kyle, Texas, White Knight Pest Control was inspired by the idea of creating a company that would provide growth opportunities for employees with a strong desire and passion for serving others.",
+      "A white knight is someone who comes to the rescue when dire circumstances are at hand. Honesty, integrity, teamwork and commitment are the four cornerstones of our company, and families, ours and our customers', are what drive us.",
+      "Today we deliver residential and commercial pest control in Texas, Oklahoma, Colorado, California, Arizona, Minnesota, Alabama, Nevada and Utah."
+    ],
+    "image": "/brands/whiteknightpestcontrol/residential",
+    "imageAlt": "A White Knight Pest Control residential service at a home",
+    "values": [
+      { "title": "Guaranteed Services", "text": "We guarantee all of our pest control services." },
+      { "title": "Flexible Scheduling", "text": "We offer flexible online scheduling for your convenience." },
+      { "title": "Pest-Specific Options", "text": "General pest control or one pest targeted, we have you covered." }
+    ]
+  },
+  "credentials": [
+    { "label": "National Pest Management Association", "detail": "Member" },
+    { "label": "Texas Pest Control Association", "detail": "Member" },
+    { "label": "Termidor Certified Professional" }
+  ],
+  "faqs": [
+    { "q": "Are recurring services necessary?", "a": "If your goal is to both rid your business of active pests and keep pests out in the future, recurring services are essential. Our treatments begin to break down over time, so ongoing service keeps your property protected." },
+    { "q": "Can pest control get rid of mosquitoes?", "a": "No pest control treatment will eliminate mosquitoes entirely. With our two-step mosquito control service, we can greatly reduce their numbers on your property and keep them low with monthly re-treatments." },
+    { "q": "How do you control bed bugs?", "a": "We offer professional bed bug control with a 30-day guarantee. We use a combination of liquids, dusts and aerosols, and we return 10-14 days after your initial treatment to inspect and re-treat if necessary." },
+    { "q": "How long does a termite treatment take?", "a": "Depending on the type of treatment necessary, it may take several hours to a full day to complete your termite control treatment." }
+  ],
+  "serviceArea": ["Texas", "Oklahoma", "Arizona", "Colorado", "Nevada", "Alabama", "Utah", "California", "Minnesota"],
+  "reviews": [
+    { "author": "Bill Tefft", "text": "Our technician was Mark and he was very polite, asked questions and did an excellent job doing the service. Thank you.", "source": "their site" },
+    { "author": "Michael Leach", "text": "Great service! Alex S helped out and he was really efficient, fast and extremely nice and polite. Thank you, White Knight!", "source": "their site" },
+    { "author": "Hector Suarez", "text": "Shannon is a very personable technician. Thorough and well-mannered person. Highly recommend.", "source": "their site" }
+  ],
+  "facts": [
+    { "heading": "Payments We Accept", "items": ["Visa", "MasterCard", "American Express", "Discover"] },
+    { "heading": "By the Numbers", "items": ["100,000+ satisfied homeowners", "Over 10,000 5-star Google reviews", "1,000+ protected businesses", "20 years in business"] },
+    { "heading": "New Customers", "text": "Call or send the inquiry form to ask about current discounts for new customers. Current customers can call the office directly at (844) 512-7378." },
+    { "heading": "Customer Portal", "text": "Current customers can sign in at whiteknight.fieldportals.com." },
+    { "heading": "Follow Us", "items": ["Facebook: facebook.com/wkpest", "Instagram: instagram.com/whiteknightpest"] },
+    { "heading": "Accreditation", "text": "BBB accredited business." },
+    { "heading": "Other Texas Offices", "items": ["14300 Northwest Fwy #A-14, Houston, TX 77040", "1713 Broadmoor Dr. #306, Bryan, TX 77802", "1411 Lemay Dr #306, Carrollton, TX 75007", "2638 Kerrybrook Ct., San Antonio, TX 78230", "4055B Paramount Pkwy, Temple, TX 76501", "1900 FM 967 Suite A, Buda, TX 78610", "3101 Pleasant Valley Ln, Arlington, TX 76015"] },
+    { "heading": "Careers", "text": "White Knight provides service and employment opportunities in every state it serves." }
+  ]
+}

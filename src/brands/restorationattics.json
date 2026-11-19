@@ -1,0 +1,370 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "The Restoration Attics Wildlife & Pest",
+  "shortName": "The Restoration Attics",
+  "summary": "Pest control, wildlife removal and attic restoration for homes and businesses in Houston and the Greater Houston area.",
+  "phone": "(832) 748-5966",
+  "email": "info@restorationattics.com",
+  "address": "15255 Gulf Fwy, Suite 146A",
+  "town": "Houston",
+  "state": "TX",
+  "zip": "77034",
+  "rating": 5.0,
+  "reviewCount": 168,
+  "hours": [
+    [
+      "Mon – Sun",
+      "6 AM – 9 PM"
+    ]
+  ],
+  "brand": {
+    "primary": "#1d1b17",
+    "primaryDeep": "#141414",
+    "accent": "#8b8473",
+    "ink": "#1c1b1b",
+    "muted": "#686969",
+    "surface": "#f7f7f5",
+    "line": "#e3dfd6",
+    "heading": "'Montserrat', system-ui, sans-serif",
+    "body": "'Poppins', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap",
+    "logo": "/brands/restorationattics/logo.webp",
+    "logoMono": "/brands/restorationattics/logo-mono.webp",
+    "logoWidth": 167,
+    "logoHeight": 74,
+    "logoRatio": 2.258,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.343,
+      0.455,
+      0.561,
+      0.668,
+      0.78,
+      0.893,
+      1.0
+    ]
+  },
+  "hero": {
+    "eyebrow": "Serving Houston and surrounding areas",
+    "title": "Pest control, wildlife removal",
+    "titleAccent": "and attic restoration done right.",
+    "lead": "When pests or wildlife invade, most companies spray and leave. We repair the damage, seal entry points and build solutions that last. No shortcuts. No temporary fixes.",
+    "image": "/brands/restorationattics/hero",
+    "imageAlt": "A hole in a home's exterior caused by wildlife, shown to a customer during a wildlife inspection"
+  },
+  "groups": [
+    {
+      "slug": "wildlife-removal",
+      "title": "Wildlife Removal",
+      "icon": "shield",
+      "summary": "Professional wildlife removal with full exclusion work designed to permanently stop attic intrusions.",
+      "intro": "Our wildlife inspections identify active wildlife, entry points, nesting areas and the conditions letting animals into the structure. From removal and trapping to professional exclusion, we address the activity and how wildlife is getting inside.",
+      "services": [
+        {
+          "slug": "raccoon-removal",
+          "title": "Raccoon Removal",
+          "text": "Raccoon removal takes more than trapping. We find the active areas and how raccoons are getting in, then recommend removal and exclusion based on what the inspection shows.",
+          "points": [
+            "Rooflines, vents and other vulnerable areas checked"
+          ]
+        },
+        {
+          "slug": "squirrel-removal",
+          "title": "Squirrel Removal",
+          "text": "Squirrels chew wiring, damage insulation and nest in attics. We find active areas, entry points and nesting, then use removal and exclusion to secure the access points."
+        },
+        {
+          "slug": "rat-and-mice-removal",
+          "title": "Rat and Mice Removal",
+          "text": "Rodents travel through attics and walls before most homeowners notice. We find active areas and entry points, then use rodent control and exclusion based on our findings.",
+          "points": [
+            "Follow-ups typically every 3 to 5 days while activity is being resolved"
+          ]
+        },
+        {
+          "slug": "bat-removal",
+          "title": "Bat Removal",
+          "text": "Bat removal takes a specialized approach and must follow applicable wildlife regulations. We find bat activity and access points and perform exclusion based on the conditions at the property."
+        },
+        {
+          "slug": "opossum-removal",
+          "title": "Opossum Removal",
+          "text": "Opossums get into attics and crawl spaces looking for shelter, leaving droppings, odors and disturbed insulation. We find the access points and recommend the right removal and exclusion."
+        },
+        {
+          "slug": "snake-removal",
+          "title": "Snake Removal",
+          "text": "Snakes get into garages, attics and crawl spaces looking for shelter or prey. We find where they are active and provide professional snake removal."
+        },
+        {
+          "slug": "skunk-removal",
+          "title": "Skunk Removal",
+          "text": "Skunks often shelter under homes, decks and sheds. We find active areas and access points and give recommendations to help prevent repeat activity."
+        },
+        {
+          "slug": "bird-removal",
+          "title": "Bird Removal",
+          "text": "Birds nest in vents, rooflines, attics and other openings. We find nesting and entry areas and provide bird removal and exclusion when appropriate."
+        },
+        {
+          "slug": "dead-animal-removal",
+          "title": "Dead Animal Removal",
+          "text": "Dead animals in attics, walls or crawl spaces cause strong odors and sanitation concerns. We locate accessible remains, remove them and identify related wildlife activity."
+        },
+        {
+          "slug": "wildlife-exclusion",
+          "title": "Wildlife Exclusion",
+          "text": "Removing the animal alone does not stop future problems. Exclusion seals rooflines, vents, soffits, gaps and other entry points so animals cannot return and re-nest.",
+          "points": [
+            "One-way doors let wildlife leave without getting back in",
+            "Live traps are actively monitored",
+            "Final review once activity is resolved"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pest-control",
+      "title": "Pest Control",
+      "icon": "home",
+      "summary": "Targeted pest control focused on entry points, nesting zones and the conditions that cause infestations, not just surface sprays.",
+      "intro": "Every service begins with a detailed inspection for active pest activity, entry points and conducive conditions around the home. Our routes are not jam-packed, so technicians have time to inspect and treat properly instead of a rushed spray-and-go visit.",
+      "image": "/brands/restorationattics/pest-control",
+      "imageAlt": "A pest control technician inspecting a Houston home for pest activity",
+      "services": [
+        {
+          "slug": "one-time-pest-treatment",
+          "title": "One-Time Pest Treatment",
+          "text": "A single visit for a pest problem you need handled now.",
+          "points": [
+            "Inspection to find active pest activity and problem areas",
+            "Targeted treatment based on findings",
+            "Recommendations if recurring activity is found"
+          ]
+        },
+        {
+          "slug": "pest-proof-protection-plan",
+          "title": "Pest Proof Protection Plan",
+          "text": "Our Pest Proof Protection Plan (PPPP) gives monthly, bi-monthly or quarterly service based on your home's needs, pest activity and the season. Each visit includes inspection and targeted treatment, with monitoring as conditions change.",
+          "points": [
+            "Scheduled visits with treatment adjusted to current findings",
+            "Monitoring of recurring problem areas",
+            "Rodent control for rats and mice included",
+            "Frequency recommended from the inspection"
+          ]
+        },
+        {
+          "slug": "household-pests",
+          "title": "Household Pests",
+          "text": "Houston's heat and humidity keep pests active all year. We treat based on the pests and conditions actually found at your home.",
+          "points": [
+            "Ants, including fire ants",
+            "Roaches, spiders and silverfish",
+            "Mosquitoes and wasps",
+            "Fleas, crickets and earwigs",
+            "Rats and mice"
+          ]
+        },
+        {
+          "slug": "bed-bugs-and-german-roaches",
+          "title": "Bed Bugs and German Roaches",
+          "text": "Bed bugs and German roaches need specialized, intensive treatment. They are handled as separate clean-out services, not as part of recurring pest control plans."
+        }
+      ]
+    },
+    {
+      "slug": "attic-restoration",
+      "title": "Attic Restoration",
+      "icon": "wind",
+      "summary": "Contaminated insulation removal, sanitation, sealing and new insulation that closes the door on wildlife re-entry.",
+      "intro": "Wildlife droppings, urine and odors soak into attic insulation and structure. We remove contaminated insulation, disinfect the affected areas, seal entry points and install new insulation only after wildlife and rodent activity is fully resolved. Our standard: exclusion, insulation removal, decontamination, then new insulation.",
+      "services": [
+        {
+          "slug": "contaminated-insulation-removal",
+          "title": "Contaminated Insulation Removal",
+          "text": "Rodent and wildlife activity contaminates insulation with droppings, urine, nesting material and odors. We remove the affected insulation and debris to prepare the attic for decontamination."
+        },
+        {
+          "slug": "attic-decontamination",
+          "title": "Attic Decontamination and Disinfection",
+          "text": "After contaminated materials come out, the attic is sanitized and deodorized to address bacteria, animal waste and persistent odors."
+        },
+        {
+          "slug": "blown-in-insulation",
+          "title": "New Insulation Installation (Blown In)",
+          "text": "Once activity is resolved and the attic is cleaned and sealed, new blown-in insulation is installed to the right depth for the home.",
+          "points": [
+            "Entry points sealed before restoration begins",
+            "Follow-up visits on rodent cases before removal",
+            "Follow-up inspection two to three weeks after the work is done"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "commercial-services",
+      "title": "Commercial Services",
+      "icon": "building",
+      "summary": "Pest control, wildlife removal, exclusion and insulation services for commercial properties across Greater Houston.",
+      "intro": "From office buildings to high-traffic commercial properties, we bring the same inspection-first approach to businesses. Commercial inspections are available by appointment throughout Greater Houston and the surrounding communities.",
+      "services": [
+        {
+          "slug": "commercial-pest-control",
+          "title": "Commercial Pest Control",
+          "text": "Customized pest management programs for offices, retail, healthcare and industrial facilities.",
+          "points": [
+            "Interior and exterior treatments",
+            "Rodent control, bait stations and monitoring",
+            "Cockroach, ant, spider and stored product pest management",
+            "Routine inspections and preventative maintenance"
+          ]
+        },
+        {
+          "slug": "commercial-wildlife-removal",
+          "title": "Commercial Wildlife Removal and Exclusion",
+          "text": "Bat, raccoon, squirrel, opossum, bird and rodent removal for commercial buildings.",
+          "points": [
+            "Commercial wildlife inspections",
+            "Structural exclusion and entry-point sealing",
+            "Wildlife monitoring and activity verification",
+            "Ongoing maintenance inspections"
+          ]
+        },
+        {
+          "slug": "commercial-attic-restoration",
+          "title": "Commercial Attic Restoration and Insulation",
+          "text": "Contaminated insulation removal, sanitation and new insulation for commercial attics.",
+          "points": [
+            "Disinfection and deodorization",
+            "Rodent-proofing before insulation goes in",
+            "Blown-in insulation after complete restoration"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Free inspection",
+    "title": "See what's happening in your home.",
+    "text": "Whether you're hearing activity, noticing signs of wildlife or worried about your attic, it starts with a free, detailed inspection."
+  },
+  "about": {
+    "eyebrow": "Our mission",
+    "title": "Do it right the first time, every time.",
+    "text": [
+      "At The Restoration Attics, we exist to raise the standard for what homeowners should expect from wildlife control, attic restoration and pest solutions. We saw too many companies rushing jobs, cutting corners and offering temporary fixes disguised as solutions.",
+      "Houston homes face their own challenges, from wildlife intrusions to moisture, insulation damage and long-term contamination. Our team is trained to look deeper, seal tighter and restore smarter, so our work prevents re-entry, protects the structure and improves the health of the home.",
+      "We communicate clearly, show up when we say we will and stand behind our work. Every project is treated as if it were our own home."
+    ],
+    "values": [
+      {
+        "title": "Root causes",
+        "text": "We inspect entry points, contamination and root causes so the problem doesn't come back."
+      },
+      {
+        "title": "Honest options",
+        "text": "If something doesn't need to be done, we'll tell you. If it does, we'll show you exactly why. No rush, no upselling."
+      },
+      {
+        "title": "Lasting repairs",
+        "text": "We seal and reinforce vulnerable areas and restore your attic so re-entry is far less likely."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "What wildlife animals do you remove from homes and attics?",
+      "a": "We provide professional wildlife removal for rats, mice, bats, raccoons, squirrels, possums and snakes commonly found in Houston attics, walls, crawl spaces and structures."
+    },
+    {
+      "q": "What damage can wildlife cause inside an attic?",
+      "a": "Torn insulation, chewed electrical wiring, damaged ductwork, roof and soffit entry damage, nesting debris, droppings, urine contamination and strong odors. Many animals also create fire hazards and structural issues when activity goes unnoticed."
+    },
+    {
+      "q": "Do you repair the damage caused by wildlife?",
+      "a": "Yes. Wildlife removal includes repairing entry points, sealing rooflines, vents, soffits and other access areas, and addressing damage that lets animals re-enter. Where there is contamination, attic restoration and insulation removal may also be recommended."
+    },
+    {
+      "q": "Why is wildlife exclusion necessary after removal?",
+      "a": "Removing the animal alone does not stop future problems. Wildlife exclusion permanently seals entry points to prevent animals from returning, re-nesting and causing repeated damage."
+    },
+    {
+      "q": "What does your Pest Proof Protection Plan (PPPP) cover in Houston?",
+      "a": "Common Houston household pests including ants, roaches, spiders, silverfish, crickets, earwigs, fleas, mosquitoes, wasps, and rodent control for rats and mice."
+    },
+    {
+      "q": "Does your pest control plan include rodent control?",
+      "a": "Yes. Rodent control is part of our pest management services. Rats and mice are common in Houston and often need consistent monitoring, exclusion and control to prevent attic and structural issues."
+    },
+    {
+      "q": "How often should pest control be done in Houston, monthly or bi-monthly?",
+      "a": "Houston's heat, humidity and long pest season let insects and rodents reproduce year-round. Monthly or bi-monthly pest control is far more effective than quarterly service, which lets pest populations rebound between visits."
+    },
+    {
+      "q": "Are bed bugs and German roaches included in regular pest control?",
+      "a": "No. Bed bugs and German roaches need specialized, intensive treatments and are handled as separate clean-out services."
+    },
+    {
+      "q": "Can you install new insulation right away after contamination is found?",
+      "a": "New insulation is best installed after the source is resolved and the attic is secured. Otherwise contamination and activity can return and compromise the new material."
+    },
+    {
+      "q": "What is the process for insulation removal and attic decontamination?",
+      "a": "Attic inspection, then exclusion, then removal of contaminated insulation with proper equipment, then sanitizing the attic, then new insulation once the space is ready."
+    },
+    {
+      "q": "Can rodent urine and feces in insulation affect indoor air quality?",
+      "a": "Yes. Contaminated insulation can contribute to ongoing odors and airborne contamination, especially when attic air moves through gaps and ventilation pathways."
+    },
+    {
+      "q": "When should contaminated attic insulation be removed?",
+      "a": "When it's contaminated by feces, urine, droppings, nesting material and persistent odors, because contamination can linger and keep affecting the attic."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Greater Houston area"
+  ],
+  "facts": [
+    {
+      "heading": "Industries We Serve",
+      "text": "Office buildings, restaurants and hospitality, retail centers, schools and churches, property management groups, multi-family housing and new construction projects. We work with apartment, HOA and facility management partners, and alongside builders and general contractors before occupancy."
+    },
+    {
+      "heading": "Talk With Our Team",
+      "text": "Clear answers, honest guidance and a plan built for your home. Every job starts with a free inspection: book one online or call (832) 748-5966, and call or text during business hours for scheduling and service questions."
+    },
+    {
+      "heading": "Licensed and Insured",
+      "text": "Pest control, wildlife removal and attic restoration performed by licensed, insured professionals."
+    },
+    {
+      "heading": "Pest Control Visit Options",
+      "items": [
+        "One-time pest treatment",
+        "Monthly pest control",
+        "Bi-monthly pest control",
+        "Quarterly pest control"
+      ]
+    },
+    {
+      "heading": "Real Work on Video",
+      "text": "Our media page shows real wildlife jobs from Houston homes, including raccoon families leaving after entry points were sealed and monitored squirrel removal. All footage is real work, owned and monitored by The Restoration Attics."
+    },
+    {
+      "heading": "Follow Us",
+      "items": [
+        "Facebook: https://www.facebook.com/294423677092888",
+        "Instagram: https://www.instagram.com/therestorationattics/",
+        "TikTok: https://www.tiktok.com/@therestorationattics",
+        "YouTube: https://www.youtube.com/@therestorationattics",
+        "Yelp: https://www.yelp.com/biz/the-restoration-attics-houston-4"
+      ]
+    }
+  ]
+}
