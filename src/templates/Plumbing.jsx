@@ -170,27 +170,27 @@ function Header({ b, tel }) {
 function Hero({ b, tel, rating }) {
   return (
     <section id="top" className="relative isolate overflow-hidden bg-primary-deep text-white">
-      {b.hero.image && (
-        <>
-          {/* On a phone the photo is shown whole above the words; from lg up it is the ground behind
-              them, where the gradient covers it. A tall phone hero drawn from a wide photo showed a
-              sliver of it blown up past its pixels, which is why the photo is not the ground there. */}
-          <Img
-            className="relative block aspect-[16/10] w-full object-cover object-[center_45%] lg:absolute lg:inset-0 lg:-z-20 lg:aspect-auto lg:h-full"
-            src={b.hero.image}
-            alt={b.hero.imageAlt}
-            sizes="100vw"
-            eager
-            data-backdrop=""
-          />
-          <div
-            className="absolute inset-0 -z-10 hidden lg:block lg:bg-[linear-gradient(90deg,color-mix(in_srgb,var(--primaryDeep)_95%,transparent)_0%,color-mix(in_srgb,var(--primaryDeep)_82%,transparent)_45%,color-mix(in_srgb,var(--primaryDeep)_10%,transparent)_100%)]"
-            aria-hidden="true"
-          />
-        </>
-      )}
-      <div className={`${wrap} flex min-h-[min(78vh,700px)] items-center gap-16 pb-16 pt-14 sm:pb-20 lg:py-24 xl:gap-24`}>
-        <div className="w-full max-w-[44rem] lg:max-w-[41rem] lg:flex-none">
+      <div
+        className={`${wrap} flex min-h-[min(78vh,700px)] items-center pb-16 sm:pb-20 lg:py-24 ${b.hero.image ? 'flex-col lg:flex-row lg:gap-16 xl:gap-24' : 'gap-16 pt-14 xl:gap-24'}`}
+      >
+        {/* On a phone the photo is shown whole above the words; from lg up it stands in its own shape
+            in the right column, level with them. A tall phone hero drawn from a wide photo showed a
+            sliver of it blown up past its pixels, and set behind the words on a wide screen it was
+            cut to a band through its middle, enlarged, with whatever stood at its left showing
+            through the headline. */}
+        {b.hero.image && (
+          <div className="-mx-gutter min-w-0 self-stretch lg:order-last lg:mx-0 lg:flex-1 lg:self-center">
+            <Img
+              className="block aspect-[16/10] w-full object-cover object-[center_45%] lg:aspect-auto lg:h-auto lg:max-h-[32rem] lg:rounded-lg"
+              src={b.hero.image}
+              alt={b.hero.imageAlt}
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              eager
+              data-backdrop=""
+            />
+          </div>
+        )}
+        <div className={`w-full max-w-[44rem] ${b.hero.image ? 'pt-14 lg:min-w-0 lg:flex-1 lg:pt-0' : 'lg:max-w-[41rem] lg:flex-none'}`}>
           <Eyebrow dark>{b.hero.eyebrow}</Eyebrow>
           <h1 className="break-words font-heading text-[clamp(2.25rem,1.05rem+4vw,4.25rem)] font-extrabold leading-[1.03] tracking-[-0.015em] [text-wrap:balance]">
             {b.hero.title} <span className="text-accent">{b.hero.titleAccent}</span>
