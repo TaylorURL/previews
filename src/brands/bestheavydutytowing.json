@@ -1,0 +1,458 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Best Heavy Duty Towing",
+  "shortName": "Best Heavy Duty Towing",
+  "phone": "(619) 939-4656",
+  "email": "dispatch@bestheavydutytowing.com",
+  "address": "921 Pasadena Fwy",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77506",
+  "brand": {
+    "primary": "#9a6e00",
+    "primaryDeep": "#6c4d00",
+    "accent": "#ffd775",
+    "ink": "#21211d",
+    "surface": "#fffcf4",
+    "muted": "#5b6470",
+    "line": "#e0e0df",
+    "heading": "'Kanit', system-ui, sans-serif",
+    "body": "'Archivo', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&family=Archivo:wght@400;600;700&display=swap"
+  },
+  "heroStyle": "split",
+  "tone": "bold",
+  "hero": {
+    "eyebrow": "24/7 towing and roadside assistance",
+    "title": "Do you need road assistance now?",
+    "titleAccent": "Heavy duty towing in Pasadena",
+    "lead": "Prompt and dependable towing and roadside assistance available 24/7 wherever the road may lead you, for cars, trucks and heavy-duty vehicles.",
+    "image": "/brands/bestheavydutytowing/photo5",
+    "imageAlt": "A towing worker securing a car's wheel on a flatbed tow truck platform"
+  },
+  "serviceArea": [
+    "Pasadena",
+    "Houston",
+    "Katy",
+    "Sugar Land",
+    "The Woodlands",
+    "Missouri City",
+    "Richmond",
+    "Harris County",
+    "Fort Bend County"
+  ],
+  "summary": "Best Heavy Duty Towing tows semis, buses, RVs, cars and heavy equipment around the clock, with recovery, roadside help, transload and storage across Houston, Pasadena and Southeast Texas.",
+  "groups": [
+    {
+      "slug": "heavy-duty-towing",
+      "title": "Heavy Duty Towing",
+      "icon": "car",
+      "summary": "Semi-trucks, buses, RVs, trailers and heavy construction machinery, towed with rotators, wreckers and flatbeds.",
+      "intro": "What we do is more about heavy commercial vehicle servicing, like semi-trucks, buses and heavy construction machinery. With heavy-duty rotator tow trucks and skilled operators, we get you back on the road quickly and keep downtime low. Every vehicle is handled with care, and all procedures follow strict safety standards to avoid any damage.",
+      "services": [
+        {
+          "slug": "semi-towing",
+          "title": "Semi Towing",
+          "text": "Semi-trucks require specialized towing when they break down. Our commercial truck towing includes air-ride suspension tow trucks to keep large rigs safely carried without damage to the cargo or vehicle.",
+          "points": [
+            "Tractor-trailers and semi-trucks",
+            "Box trucks and delivery vans",
+            "Full-load recoveries, even when loaded with freight"
+          ]
+        },
+        {
+          "slug": "bus-rv-towing",
+          "title": "Bus and RV Towing",
+          "text": "We tow oversized vehicles including RVs, tour buses, motorhomes and other recreational vehicles with heavy-duty flatbed and wrecker towing.",
+          "points": [
+            "Buses and tour buses",
+            "RVs and motorhomes",
+            "Commercial fleet towing"
+          ]
+        },
+        {
+          "slug": "equipment-towing",
+          "title": "Construction Equipment and Oversized Loads",
+          "text": "Forklifts, backhoes, bulldozers and other heavy machinery move on lowboys and tilt beds for safe transport.",
+          "points": [
+            "Dump trucks and garbage trucks",
+            "Construction and farm equipment",
+            "Cranes, containers and forklifts"
+          ]
+        },
+        {
+          "slug": "trailer-towing",
+          "title": "Trailer Towing",
+          "text": "We can tow and store trailers even when the tractor unit is not present, using specialized equipment to move and secure them."
+        },
+        {
+          "slug": "wide-load-permits",
+          "title": "Wide-Load Permits and Escorts",
+          "text": "We assist with permits and escorts for heavy duty towing transports and help ensure compliance with TXDOT transport laws."
+        },
+        {
+          "slug": "long-distance-towing",
+          "title": "Long-Distance Towing",
+          "text": "Disabled heavy vehicles are towed long distance to your desired location or repair facility."
+        }
+      ]
+    },
+    {
+      "slug": "emergency-towing",
+      "title": "Emergency Towing and Recovery",
+      "icon": "timer",
+      "summary": "24/7 emergency towing, accident and rollover recovery, and off-road winch-outs.",
+      "intro": "You never expect breakdowns to happen, not to mention at odd hours. That is why our 24/7 emergency towing service is here, with quick, reliable help for stranded vehicles. Be it an accident or mechanical failure, we dispatch the right truck to you, and within Houston our response time for heavy duty emergencies is typically 30 to 45 minutes.",
+      "services": [
+        {
+          "slug": "emergency-towing",
+          "title": "Emergency Towing",
+          "text": "We provide 24-hour emergency towing and keep a fast standby for removing your vehicle from critical places, including freeways, highways and interstates.",
+          "points": [
+            "Available 24/7, even on holidays",
+            "Work with local and state law enforcement for clearance",
+            "Dispatch from multiple locations"
+          ]
+        },
+        {
+          "slug": "accident-recovery",
+          "title": "Accident and Rollover Recovery",
+          "text": "We stay with you for recovery, towing and clean-up after a collision, including overturned trucks and trailers. Our team is trained to respond quickly and clear the scene safely."
+        },
+        {
+          "slug": "jackknife-recovery",
+          "title": "Jackknifed and Stuck Tractor Trailers",
+          "text": "We recover jackknifed tractor trailers and trucks stuck in ditches or embankments, using winches and rotators to reposition them safely."
+        },
+        {
+          "slug": "offroad-recovery",
+          "title": "Off-Road Recovery",
+          "text": "Stuck in mud, sand or a ditch? Our off-road recovery uses lines, snatch blocks, recovery straps and winch-equipped trucks to get your vehicle out damage-free, on construction sites and rough terrain too."
+        },
+        {
+          "slug": "crane-winch",
+          "title": "Crane and Winch Services",
+          "text": "On-site winching and crane lifts for vehicles that need lifting, repositioning or recovery from unusual angles."
+        },
+        {
+          "slug": "hazmat",
+          "title": "HAZMAT Incidents",
+          "text": "Our drivers are trained to handle hazardous material incidents and follow proper safety protocols when recovering these vehicles."
+        }
+      ]
+    },
+    {
+      "slug": "auto-towing-services",
+      "title": "Auto and Flatbed Towing",
+      "icon": "car",
+      "summary": "Cars, SUVs, motorcycles and fleet vehicles, towed with soft straps, wheel-lifts or a flatbed.",
+      "intro": "Our automobile towing covers personal and fleet vehicles, from a mini car to an SUV. We prevent vehicle damage with soft straps and wheel-lift technology so the tow is smooth and safe.",
+      "services": [
+        {
+          "slug": "auto-towing",
+          "title": "Auto Towing",
+          "text": "Personal and fleet vehicles of every size, towed with soft straps and wheel-lift technology to prevent damage."
+        },
+        {
+          "slug": "flatbed-towing",
+          "title": "Flatbed Towing",
+          "text": "Flatbed towing keeps all four wheels off the ground to minimize wear and tear. It is the best choice for luxury and exotic cars, motorcycles, damaged autos and vehicles with drivetrain problems."
+        },
+        {
+          "slug": "motorcycle-towing",
+          "title": "Motorcycle Towing",
+          "text": "Motorcycles are towed on a flatbed, so they travel with extra protection."
+        }
+      ],
+      "image": "/brands/bestheavydutytowing/photo4",
+      "imageAlt": "A tow truck lifting a damaged silver car by its front wheels"
+    },
+    {
+      "slug": "roadside-assistance",
+      "title": "Roadside Assistance",
+      "icon": "wrench",
+      "summary": "Flat tires, jump starts, fuel delivery, lockouts and on-site diagnostics for cars and commercial trucks.",
+      "intro": "From flat tires to battery jumps, our roadside service gets you moving with expert help any time and anywhere. We help semi-trucks too, with tire changes, jump starts and minor mechanical support.",
+      "services": [
+        {
+          "slug": "flat-tire",
+          "title": "Flat Tire Service",
+          "icon": "settings",
+          "text": "Tire patching or a tire change, for cars and semi-trucks. One of our road service technicians will get you back on the road fast."
+        },
+        {
+          "slug": "fuel-delivery",
+          "title": "Out of Gas Service",
+          "icon": "droplets",
+          "text": "Ran out of fuel? We deliver fuel to stranded cars and commercial trucks and bring the right fuel type to get you going again."
+        },
+        {
+          "slug": "jump-start",
+          "title": "Battery Jump-Start Service",
+          "icon": "battery",
+          "text": "Jump starts and pull-starts 24/7 for cars and commercial vehicles with dead batteries or engine stalls."
+        },
+        {
+          "slug": "lockout",
+          "title": "Lockout Service",
+          "icon": "shield",
+          "text": "Locked out of your vehicle? Our trained technicians carry professional tools to get you back in and back on the road."
+        },
+        {
+          "slug": "mobile-diagnostics",
+          "title": "Mobile Diagnostics and Repair",
+          "icon": "gauge",
+          "text": "Mobile diagnostics and limited mechanical repair on-site, to get your truck moving without a full tow."
+        }
+      ]
+    },
+    {
+      "slug": "transload-storage",
+      "title": "Transload, Storage and Impound",
+      "icon": "building",
+      "summary": "Cargo transfers, secure storage near Houston, private property towing and fleet contracts.",
+      "intro": "When a commercial truck is disabled, damaged or overloaded, we transfer the cargo to another unit, store it and the vehicle in our secure lot, and get the load moving again. We also work with property owners and fleets on towing agreements.",
+      "services": [
+        {
+          "slug": "transload",
+          "title": "Transload Services",
+          "text": "Emergency transload when your truck or trailer is disabled: we unload the cargo and move it to another unit to continue delivery, on-site or at our yard, secured with straps, tarps and barriers against weather, damage or contamination."
+        },
+        {
+          "slug": "load-shifts",
+          "title": "Load Shifts and Transfers",
+          "text": "Load shifts and transfers caused by accidents or improper cargo distribution, realigned or offloaded to stabilize the vehicle."
+        },
+        {
+          "slug": "freight-transfer",
+          "title": "Cross-Dock and Freight Transfer",
+          "text": "Cross-dock and freight transfer for commercial trucking companies, brokers and independent operators, plus container, shipping trailer and dropped load recovery."
+        },
+        {
+          "slug": "storage",
+          "title": "Secure Vehicle and Cargo Storage",
+          "text": "Our heavy duty storage lot is centrally located in Houston, gated, under 24/7 surveillance and monitored. Store trucks, trailers, buses, equipment, cargo or accident-damaged trucks for as long as needed.",
+          "points": [
+            "Daily and long-term rates; call for pricing",
+            "Room for fleet vehicles and repossession holding",
+            "Storage while awaiting inspection or insurance review"
+          ]
+        },
+        {
+          "slug": "private-property-towing",
+          "title": "Private Property Towing and Impound",
+          "text": "We are authorized and insured to impound vehicles from commercial lots, apartments, retail centers and logistics hubs, with custom towing contracts and free towing signage for properties in our enforcement program.",
+          "points": [
+            "Abandoned commercial vehicle removal",
+            "Parking enforcement for property owners and managers",
+            "All legal protocols followed"
+          ]
+        },
+        {
+          "slug": "fleet-towing",
+          "title": "Fleet Towing Contracts",
+          "text": "Full-service towing for fleet and logistics companies, with service contracts and priority response. Schedule regular fleet tows, pickups from terminals or relocations between yards."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "How we provide road assistance like no other",
+    "text": [
+      "Best Heavy Duty Towing is a heavy-duty towing and roadside assistance company, providing smart, powerful towing solutions with precision service that protects and reliably cares for all vehicles. Our latest equipment and know-how make us a strong choice for heavy-duty towing and roadside care.",
+      "We are experts in commercial truck towing, gas delivery and auto towing. Our fleet includes heavy-duty wreckers, rotators, flatbeds, winches and cranes, and our operators are trained to work under pressure and in tough environments so the job gets done right the first time.",
+      "Breakdowns can get worse with poor timing. We are here for 24/7 roadside service, and our line is open for semi-truck towing, fuel delivery or roadside assistance, just a call away."
+    ],
+    "values": [
+      {
+        "title": "Integrity",
+        "text": "Trust and honest communication in all our operations."
+      },
+      {
+        "title": "Reliability",
+        "text": "Prompt, dependable help on the road, 24 hours a day."
+      },
+      {
+        "title": "Customer-Centric Service",
+        "text": "The highest standards in the industry, with excellence on every call."
+      }
+    ],
+    "image": "/brands/bestheavydutytowing/photo2",
+    "imageAlt": "A car carrier truck hauling vans and cars on a mountain highway"
+  },
+  "ask": "quote",
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
+  "emergency": {
+    "title": "24/7 emergency towing",
+    "text": "Breakdowns, accidents and rollovers are handled 24 hours a day, 7 days a week, holidays and weekends included; call dispatch at (619) 939-4656."
+  },
+  "highlights": [
+    {
+      "title": "24/7 Towing Service",
+      "text": "Day or night, holidays included, dispatch sends the right truck to your location."
+    },
+    {
+      "title": "Satisfaction Guaranteed",
+      "text": "Every tow and recovery is handled with care to keep your vehicle and cargo free of damage."
+    },
+    {
+      "title": "Licensed and Insured",
+      "text": "Licensed, insured and certified operators trained for heavy duty recovery."
+    },
+    {
+      "title": "Upfront Pricing",
+      "text": "Honest communication and transparent pricing, with no hidden charges."
+    }
+  ],
+  "credentials": [
+    {
+      "label": "Licensed and insured",
+      "detail": "Licensed, insured and certified operators"
+    },
+    {
+      "label": "Authorized for private property impound",
+      "detail": "Authorized and insured to tow from commercial lots, apartments and businesses"
+    },
+    {
+      "label": "HAZMAT trained drivers",
+      "detail": "Drivers trained to handle hazardous material incidents"
+    },
+    {
+      "label": "DOT-compliant practices",
+      "detail": "Certified rigging, traffic control and DOT-compliant practices on every recovery"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is heavy duty towing and what vehicles qualify?",
+      "a": "Heavy duty towing means transporting large vehicles such as semi-trucks, buses, RVs and construction equipment. These vehicles need specialized equipment and expertise."
+    },
+    {
+      "q": "Will my vehicle become damaged during towing?",
+      "a": "No. We take every safety and preventive measure possible to avoid any damage, from soft straps and wheel-lifts to flatbeds and air-ride suspension tow trucks."
+    },
+    {
+      "q": "What vehicle types do you tow?",
+      "a": "Everything from small automobiles to enormous rigs: cars, SUVs, motorcycles, box trucks, semis, tractor-trailers, buses, RVs and construction equipment."
+    },
+    {
+      "q": "How fast can you respond to a heavy duty towing emergency?",
+      "a": "Our response time for heavy duty emergencies is typically 30 to 45 minutes within Houston. We dispatch from multiple locations for faster service."
+    },
+    {
+      "q": "What areas do you cover?",
+      "a": "Houston, Harris County, Fort Bend County and surrounding cities across Southeast Texas, including Pasadena, Katy, Sugar Land and The Woodlands."
+    },
+    {
+      "q": "What should I do if my semi breaks down on the road?",
+      "a": "Move it to safety if possible and call our 24/7 heavy duty towing line. We will dispatch the right truck to your location immediately."
+    },
+    {
+      "q": "Do you offer transload services for broken-down or wrecked trucks?",
+      "a": "Yes. When your commercial truck is disabled, damaged or overloaded, we transfer your cargo to another unit safely and quickly, on-site or at our yard."
+    },
+    {
+      "q": "Where is your heavy duty storage lot, and is it secure?",
+      "a": "Our lot is centrally located in Houston, easily reached from major highways and industrial areas. It is gated, under 24/7 surveillance and monitored."
+    },
+    {
+      "q": "How long can I store my truck or trailer at your lot?",
+      "a": "As long as needed. Daily and long-term storage rates are available; contact us for pricing."
+    },
+    {
+      "q": "How can I get a vehicle released from your impound lot?",
+      "a": "The registered owner brings a driver's license, proof of ownership (registration or title) and payment of the required fees. Commercial vehicles also need company authorization."
+    },
+    {
+      "q": "What are the fees for impound towing and storage?",
+      "a": "Fees vary with the vehicle type, heavy duty or light duty towing, tow distance and days stored. We give transparent pricing upfront, so call us to confirm your total."
+    },
+    {
+      "q": "Can my car be towed without any notice?",
+      "a": "Towing without notice is usually for illegal parking, repossession or breaking city rules. We follow towing rules in an open and authorized way."
+    },
+    {
+      "q": "Can you set up private property towing contracts?",
+      "a": "Yes. We create custom towing contracts for property owners with proper documentation and service terms, and provide free towing signage for properties in our enforcement program."
+    },
+    {
+      "q": "Can I schedule a regular tow or fleet pickup?",
+      "a": "Yes. Fleet and logistics companies can set up a service contract with priority response and schedule regular tows, terminal pickups or relocations between yards."
+    },
+    {
+      "q": "How do I request a heavy duty tow right now?",
+      "a": "Call our emergency line, or press Call Now on our Google profile, for immediate help."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "What Our Crews Handle",
+      "items": [
+        "Load balance",
+        "Axle safety",
+        "Hydraulic lifting",
+        "Secure winching",
+        "Air cushion recovery",
+        "Brake lock release"
+      ]
+    },
+    {
+      "heading": "Equipment",
+      "items": [
+        "Heavy-duty rotators and wreckers",
+        "Flatbeds and air-ride suspension tow trucks",
+        "Lowboys and tilt beds",
+        "Winches, snatch blocks and cranes",
+        "Lift equipment and forklifts for container and dropped load recovery"
+      ]
+    },
+    {
+      "heading": "Texas Locations",
+      "items": [
+        "921 Pasadena Fwy, Pasadena, TX 77506",
+        "3202 Jeanetta St, Houston, TX 77063",
+        "2330 Holmes Rd, Houston, TX 77051",
+        "15646 Ennis Rd, Sugar Land, TX 77498",
+        "2949 N Stemmons Fwy, Dallas, TX 75247",
+        "6730 Fairdale Dr, San Antonio, TX 78218",
+        "1201 Centurion Pkwy, Marble Falls, TX 78654"
+      ]
+    },
+    {
+      "heading": "Other Locations",
+      "items": [
+        "Fresno, CA: 3114 E Iowa Ave and 160 N First St, (925) 262-9830",
+        "Los Angeles, CA: 610 W El Segundo Blvd",
+        "Santa Ana, CA: 409 S Harbor Blvd, (925) 262-9789",
+        "Santa Clara, CA: 2869 Central Expy b 1, (925) 262-9821",
+        "Indio, CA: 46595 Vargas Rd",
+        "Oakland, CA: 2240 Wood St",
+        "Phoenix, AZ: 3027 W Juana Ct and 2342 W Buckeye Rd",
+        "Bronx, NY: 1680 Stillwell Ave",
+        "Philadelphia, PA: 2400 Orthodox St",
+        "Baltimore, MD: 357 N Calvert St",
+        "Hagerstown, MD: 412 W Washington St",
+        "North East, MD: 505 Mechanics Valley Rd",
+        "Cleveland, OH: 8755 Broadway Ave",
+        "Denver, CO: 4751 N Broadway",
+        "Dothan, AL: 1801 W Main St",
+        "Jacksonville, FL: 637 Kentucky St",
+        "Miami, FL: 672 NE 79th St",
+        "Tampa, FL: 1813 N Tampa St",
+        "Newark, NJ: 357-365 Elizabeth Ave",
+        "Sparks, NV: 615 E Lincoln Way"
+      ]
+    },
+    {
+      "heading": "Pricing and Guarantee",
+      "text": "A 100% satisfaction guarantee, with affordable, upfront pricing and no hidden charges."
+    }
+  ]
+}

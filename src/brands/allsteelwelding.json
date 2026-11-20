@@ -1,0 +1,283 @@
+{
+  "template": "industrial",
+  "preview": true,
+  "name": "All Steel Welding LLC",
+  "shortName": "All Steel Welding",
+  "summary": "Turn-key structural steel fabrication and steel erection for new construction and renovation projects, from our shop in Channelview, Texas.",
+  "phone": "(832) 694-3131",
+  "email": "gary@allsteelwelding.com",
+  "address": "220 Grand St",
+  "town": "Channelview",
+  "state": "TX",
+  "zip": "77530",
+  "since": 2010,
+  "hours": [
+    [
+      "Mon – Fri",
+      "7 AM – 5 PM"
+    ],
+    [
+      "Sat – Sun",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#c00018",
+    "primaryDeep": "#1c1c1f",
+    "accent": "#e3172f",
+    "ink": "#141416",
+    "muted": "#5a5c63",
+    "surface": "#f4f4f5",
+    "line": "#dedfe2",
+    "heading": "'Oswald', 'Arial Narrow', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap",
+    "logo": "/brands/allsteelwelding/logo.webp",
+    "logoMono": "/brands/allsteelwelding/logo-mono.webp",
+    "logoWidth": 175,
+    "logoHeight": 58,
+    "logoRatio": 3.016,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.487,
+      0.274,
+      0.235,
+      0.186,
+      0.428,
+      0.39,
+      0.377,
+      0.607,
+      0.749,
+      0.779,
+      0.806
+    ]
+  },
+  "heroStyle": "split",
+  "tone": "bold",
+  "hero": {
+    "eyebrow": "Steel erector in Houston, Texas",
+    "title": "Turn-key structural steel fabrication",
+    "titleAccent": "and steel erection.",
+    "lead": "Structural steel framing for new construction or renovation projects. We fabricate our steel in-house in Channelview, so it is delivered and erected on time.",
+    "image": "/brands/allsteelwelding/hero",
+    "imageAlt": "Structural steel framing going up on an All Steel Welding job site"
+  },
+  "highlights": [
+    {
+      "title": "Certified minority-owned",
+      "text": "A minority-owned and operated, multi-skilled company.",
+      "icon": "certified"
+    },
+    {
+      "title": "Fabricated in-house",
+      "text": "Our own shop builds the steel, so it is delivered and erected on time.",
+      "icon": "factory"
+    },
+    {
+      "title": "Shop drawings for approval",
+      "text": "We work with your architect and engineer so the job is done right.",
+      "icon": "ruler"
+    }
+  ],
+  "groups": [
+    {
+      "slug": "steel-fabrication",
+      "title": "Steel Fabrication",
+      "icon": "flame",
+      "summary": "Columns, beams, steel frames, skids and mezzanines fabricated in our own shop.",
+      "intro": "We fabricate and erect structural steel framing for new ground-up construction and renovation projects. Our steel products are fabricated in-house, so the steel is delivered and erected on time.",
+      "image": "/brands/allsteelwelding/fabrication",
+      "imageAlt": "Structural steel canopy framing fabricated by All Steel Welding",
+      "services": [
+        {
+          "slug": "structural-steel-fabrication",
+          "title": "Structural Steel Fabrication",
+          "icon": "building",
+          "text": "Structural fabrication of miscellaneous steel, columns, beams, steel frames, skids, mezzanines and structural steel framing.",
+          "points": [
+            "Columns and beams",
+            "Steel frames and skids",
+            "Mezzanines"
+          ]
+        },
+        {
+          "slug": "new-construction",
+          "title": "New Ground-Up Construction",
+          "icon": "hard-hat",
+          "text": "Structural steel framing fabricated and erected for new buildings."
+        },
+        {
+          "slug": "renovation",
+          "title": "Renovation",
+          "icon": "wrench",
+          "text": "Structural steel framing fabricated and erected for renovation projects."
+        },
+        {
+          "slug": "steel-detailing",
+          "title": "Steel Detailing and Shop Drawings",
+          "icon": "ruler",
+          "text": "We work with your architect and engineer so the job is done right, and we provide shop drawings for approval."
+        }
+      ]
+    },
+    {
+      "slug": "steel-erection",
+      "title": "Steel Erection",
+      "icon": "hard-hat",
+      "summary": "Skilled teams ready to raise your steel safely.",
+      "intro": "We employ teams of experienced tradesmen that include certified welders, iron workers and fitters. We have the right workers with the right expertise and years of experience.",
+      "image": "/brands/allsteelwelding/erection",
+      "imageAlt": "Steel trusses being set on structural framing",
+      "services": [
+        {
+          "slug": "structural-steel-erection",
+          "title": "Structural Steel",
+          "icon": "building",
+          "text": "Expert fabrication and erection of beams, columns and primary framing for strong, reliable structures in new builds and renovations."
+        },
+        {
+          "slug": "miscellaneous-steel-erection",
+          "title": "Miscellaneous Steel",
+          "icon": "settings",
+          "text": "Custom fabrication of stairs, railings, platforms and specialty components, installed with precision and care."
+        },
+        {
+          "slug": "structural-steel-support",
+          "title": "Structural Steel Support",
+          "icon": "shield",
+          "text": "Dependable support systems engineered and installed to reinforce structural integrity and long-term performance."
+        }
+      ]
+    },
+    {
+      "slug": "miscellaneous-steel",
+      "title": "Miscellaneous Steel",
+      "icon": "building",
+      "summary": "Structural framing, equipment platforms, mezzanines, stairs, landings, railings, roof supports and roof ladders.",
+      "intro": "Structural framing for buildings, additions and equipment platforms, along with mezzanines, stairs, landings, railings, roof supports and roof ladders. We work with your architect and engineer and provide shop drawings for approval.",
+      "image": "/brands/allsteelwelding/misc-steel",
+      "imageAlt": "Two-story structural steel frame with a steel deck platform",
+      "services": [
+        {
+          "slug": "structural-framing",
+          "title": "Structural Framing",
+          "icon": "building",
+          "text": "Structural framing for buildings and additions."
+        },
+        {
+          "slug": "equipment-platforms",
+          "title": "Equipment Platforms and Mezzanines",
+          "icon": "boxes",
+          "text": "Structural framing for equipment, equipment platforms and mezzanines."
+        },
+        {
+          "slug": "stairs-landings-railings",
+          "title": "Stairs, Landings and Railings",
+          "icon": "settings",
+          "text": "Stairs, landings and railings fabricated in our shop and installed on site."
+        },
+        {
+          "slug": "roof-supports-ladders",
+          "title": "Roof Supports and Roof Ladders",
+          "icon": "wrench",
+          "text": "Roof supports and roof ladders for new construction and renovation projects."
+        }
+      ]
+    }
+  ],
+  "credentials": [
+    {
+      "label": "Certified minority-owned",
+      "detail": "Minority-owned and operated"
+    },
+    {
+      "label": "Certified welders",
+      "detail": "Teams of certified welders, iron workers and fitters"
+    },
+    {
+      "label": "OSHA standards",
+      "detail": "OSHA and company safety protocols followed on every job"
+    }
+  ],
+  "statesServed": [
+    "Texas"
+  ],
+  "serviceArea": [
+    "Houston"
+  ],
+  "steps": [
+    {
+      "title": "Shop drawings",
+      "text": "We work with your architect and engineer and provide shop drawings for approval."
+    },
+    {
+      "title": "In-house fabrication",
+      "text": "Steel detailing and fabrication are done in our own shop."
+    },
+    {
+      "title": "Delivery and erection",
+      "text": "The steel is delivered and erected on time by our welders and iron workers."
+    }
+  ],
+  "about": {
+    "eyebrow": "Company",
+    "title": "Certified structural steel specialists.",
+    "text": [
+      "We are All Steel Welding, a certified minority-owned and operated company specializing in complete, responsive structural steel fabrication and erection services. Our core mission is to deliver superior structural framing for your new construction or renovation projects, driven by our years of experience and skill.",
+      "We offer a turn-key system covering every need, including mezzanines, stairs, railings and roof supports. We collaborate closely with your architects and engineers and provide shop drawings for your approval.",
+      "Since 2010, we have fabricated our steel products in-house. This internal control ensures that our steel detailing, fabrication and erection are managed efficiently, guaranteeing delivery and installation are completed reliably and on schedule."
+    ],
+    "image": "/brands/allsteelwelding/photo1",
+    "imageAlt": "Structural steel roof framing with an aerial lift on site",
+    "values": [
+      {
+        "title": "Experience",
+        "text": "Proven expertise in structural steel fabrication and erection."
+      },
+      {
+        "title": "Customer Service",
+        "text": "Commitment to outstanding support throughout every project phase."
+      },
+      {
+        "title": "Quality of Work",
+        "text": "Guaranteed high quality delivered by skilled welders and iron workers."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "heading": "Contractor",
+      "text": "We will work with your architect and engineer so that the job is done right. We provide shop drawings for approval."
+    },
+    {
+      "heading": "Safety First",
+      "items": [
+        "Every team member receives orientation, substance screening, and job-specific training and evaluation, which must be passed before they may enter an All Steel Welding job site.",
+        "Each workday starts with our MOVE-IT program followed by pre-task planning, so every employee helps identify and reduce risks before work starts.",
+        "Employees are continuously evaluated by their supervisors, management and outside third-party safety consultants."
+      ]
+    },
+    {
+      "heading": "Open Positions",
+      "items": [
+        "Structural Steel Shop Foreman",
+        "Structural Steel Estimator",
+        "Structural Steel Quality Controller",
+        "Structural Steel Welder",
+        "Structural Steel Purchaser",
+        "Structural Steel Project Manager",
+        "Shipping and Receiving Equipment Operator",
+        "Structural Fabrication Technician",
+        "Structural Steel Fitter"
+      ]
+    },
+    {
+      "heading": "Join Our Team",
+      "text": "We seek skilled, safety-focused welders and ironworkers committed to quality and professionalism. Apply through the form on our employment page with your resume (doc or pdf, up to 2 MB)."
+    },
+    {
+      "heading": "Visit Us",
+      "text": "We love our customers, so feel free to visit during normal business hours: Monday to Friday, 7:00 AM to 5:00 PM, at 220 Grand Street, Channelview, Texas 77530."
+    }
+  ]
+}
