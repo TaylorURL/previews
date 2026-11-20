@@ -283,7 +283,7 @@ const SITE_NAMES = { linkedin: 'LinkedIn', youtube: 'YouTube', tiktok: 'TikTok' 
  * named for its site, as a long one would otherwise break mid-word.
  */
 function pageOf(item) {
-  const m = String(item).match(/^(?:([^:]{1,40}):\s*)?((?:https?:\/\/)?(?:www\.)?([\w-]+)(?:\.[\w-]+)+\/\S*)$/i);
+  const m = String(item).match(/^(?:([^:]{1,80}):\s*)?((?:https?:\/\/)?(?:www\.)?([\w-]+)(?:\.[\w-]+)+\/\S*)$/i);
   if (!m) return null;
   const site = m[3].toLowerCase();
   const label = m[1]?.trim() || SITE_NAMES[site] || site[0].toUpperCase() + site.slice(1);
