@@ -1,0 +1,455 @@
+{
+  "template": "industrial",
+  "preview": true,
+  "name": "Gulf Coast Complete Marine Service, Inc.",
+  "shortName": "Gulf Coast Complete Marine Service",
+  "summary": "Engine repair and maintenance, paint and fiberglass, electronics, parts and boat sales for power boats and sailboats, from a 25,000 sq ft facility in Kemah.",
+  "phone": "(281) 334-4417",
+  "email": "info@gulfcoastcomplete.com",
+  "address": "2301 Anders Ln",
+  "town": "Kemah",
+  "state": "TX",
+  "zip": "77565",
+  "hours": [
+    [
+      "Mon – Fri",
+      "8 AM – 5 PM"
+    ],
+    [
+      "Saturday",
+      "8 AM – 12 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ],
+    [
+      "Lunch, daily",
+      "Closed 12 – 1 PM"
+    ]
+  ],
+  "rating": 4,
+  "reviewCount": 28,
+  "brand": {
+    "primary": "#5c7826",
+    "primaryDeep": "#40541b",
+    "accent": "#06b2ef",
+    "ink": "#1c2120",
+    "surface": "#fafcf6",
+    "muted": "#5b6470",
+    "line": "#dfe0e0",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Roboto', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;600;700&display=swap",
+    "logo": "/brands/gulfcoastcompletemarineservice/logo.webp",
+    "logoMono": "/brands/gulfcoastcompletemarineservice/logo-mono.webp",
+    "logoWidth": 183,
+    "logoHeight": 48,
+    "logoRatio": 3.808,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.734,
+      0.695,
+      0.681,
+      0.659,
+      0.421,
+      0.185,
+      0.154,
+      0.189,
+      0.233,
+      0.261,
+      0.289
+    ]
+  },
+  "heroStyle": "split",
+  "tone": "bold",
+  "hero": {
+    "eyebrow": "Your one stop marine facility in Kemah",
+    "title": "Engine repair, paint and fiberglass,",
+    "titleAccent": "all under one roof.",
+    "lead": "Over 20,000 square feet of repair space, an 80’ x 25’ indoor paint booth and factory certified mechanics for Mercury, Mercury Racing, Yamaha and Volvo-Penta, with the largest Yamaha and Mercury parts inventory in Clear Lake.",
+    "image": "/brands/gulfcoastcompletemarineservice/photo3",
+    "imageAlt": "A sailboat in the travel lift outside the Gulf Coast Complete Marine shop"
+  },
+  "highlights": [
+    {
+      "title": "Factory Certified Mechanics",
+      "text": "Trained in Mercury, Mercury Racing, Yamaha and Volvo-Penta gas engines, and Garmin Marine electronics.",
+      "icon": "certified"
+    },
+    {
+      "title": "80’ x 25’ Indoor Paint Booth",
+      "text": "We can paint anytime, in any weather.",
+      "icon": "facility"
+    },
+    {
+      "title": "Largest Parts Department in Clear Lake",
+      "text": "The largest inventory of Yamaha and Mercury parts in the Clear Lake area.",
+      "icon": "inventory"
+    },
+    {
+      "title": "Insurance Claims",
+      "text": "We work with all major insurance companies to make sure you are treated fairly.",
+      "icon": "insurance"
+    }
+  ],
+  "groups": [
+    {
+      "slug": "engine-repair-and-maintenance",
+      "title": "Engine Repair and Maintenance",
+      "icon": "settings",
+      "summary": "Whether it’s preventative maintenance you’re looking for or you’re having engine troubles, our team can make sure you get back on the water quickly.",
+      "intro": "Our dedicated service team will take care of your needs with a level of professionalism seldom found in the marine industry. Performance tuning, minor or major repairs and routine maintenance are only a few of the services we offer. All of our mechanics are factory certified and trained in Mercury, Mercury Racing, Yamaha and Volvo-Penta gas engines. Whether you need an oil change, re-flash or a re-build, our mechanics are qualified.",
+      "image": "/brands/gulfcoastcompletemarineservice/photo4",
+      "imageAlt": "A Gulf Coast Complete Marine technician running diagnostics on a Yamaha outboard",
+      "services": [
+        {
+          "slug": "routine-maintenance",
+          "title": "Routine Maintenance",
+          "icon": "timer",
+          "text": "Regular engine maintenance is essential to ensuring your engine will provide you with years of trouble-free operation. Problems like a minor oil leak or fuel system contamination can lead to expensive repairs, so it’s important to have your engine inspected and serviced at an authorized dealer at least once a year, even if you haven’t reached 100 hours.",
+          "points": [
+            "25, 50 and 100 hour service",
+            "150, 200 and 300 hour service",
+            "Tune-up, service and warranty issues"
+          ]
+        },
+        {
+          "slug": "diagnosis-and-repair",
+          "title": "Diagnosis and Repair",
+          "icon": "wrench",
+          "text": "Not sure what the problem is? Our Service Manager, Chris Bailey, and his team of certified mechanics will diagnose and fix what needs fixing, from minor to major repairs."
+        },
+        {
+          "slug": "performance-engine-service",
+          "title": "Performance Engine Service and Tuning",
+          "icon": "gauge",
+          "text": "Maintenance, repair and rebuild services for all makes and models of high performance, center console and custom pleasure boats. Our technicians are factory trained with Mercury Racing, Yamaha Outboards and more."
+        },
+        {
+          "slug": "generators-and-ac",
+          "title": "Generators and A/C Units",
+          "icon": "zap",
+          "text": "Bring us your high performance racing engine, onboard generator or A/C unit, and get back out on the water."
+        }
+      ]
+    },
+    {
+      "slug": "paint-and-fiberglass",
+      "title": "Paint and Fiberglass",
+      "icon": "waves",
+      "summary": "Our paint and fiberglass shops are equipped to handle any job. Our paint shop is unmatched on the Gulf Coast.",
+      "intro": "We specialize in the repair, refurbishment and customization of performance, fishing and sailing watercraft. Our experts in fiberglass, Kevlar, carbon, polyester, epoxy and paint can handle jobs of virtually any size and scope to meet your specifications. Whether it be a cosmetic repair or custom fit parts, we can tackle any project our customers throw at us. Our hourly labor rate is $110 per hour.",
+      "image": "/brands/gulfcoastcompletemarineservice/photo6",
+      "imageAlt": "A red and black performance boat on its trailer at Gulf Coast Complete Marine",
+      "services": [
+        {
+          "slug": "fiberglass-repair",
+          "title": "Fiberglass Repair",
+          "icon": "wrench",
+          "text": "If your boat has fallen on hard times, or a hard surface, and the fiberglass is in need of repair, our team of experts will make the repairs needed. Call David to discuss the work you wish to have done.",
+          "points": [
+            "Structural composite repairs",
+            "Cosmetic gelcoat repairs",
+            "Stress crack repair and hull moisture inspection"
+          ]
+        },
+        {
+          "slug": "restoration-and-custom-paint",
+          "title": "Restoration and Custom Paint",
+          "icon": "settings",
+          "text": "If you have an older boat that has seen better days, let our guys restore her back to original condition. Jose Jr and Javier work with our painter, Miguel, to make your boat beautiful once again, and for custom paint jobs you can trust Miguel and his team to make your boat look spectacular.",
+          "points": [
+            "80’ x 25’ indoor paint booth",
+            "Paint anytime, in any weather"
+          ]
+        },
+        {
+          "slug": "customization-and-refits",
+          "title": "Customization and Refits",
+          "icon": "ruler",
+          "text": "Our paint and fiberglass shop is equipped to handle almost any job you can imagine. Whether you own a Skater Powerboat, MTI, Pathfinder or Mastercraft, let Gulf Coast take your boat from ordinary to extraordinary."
+        },
+        {
+          "slug": "performance-sailing",
+          "title": "Performance Sailing",
+          "icon": "waves",
+          "text": "Are you ready to take your performance sailboat above the rest of the fleet? Gulf Coast offers a wide range of services for your performance sailboat, whether you are looking for hull fairing, rudder repair or something more."
+        }
+      ]
+    },
+    {
+      "slug": "electronics-and-accessories",
+      "title": "Electronics and Accessories",
+      "icon": "zap",
+      "summary": "Upgrade your stereo, radar and electronics. Gulf Coast is an authorized dealer for some of the most trusted electronics brands in the marine industry.",
+      "intro": "Make your boat your own! We offer a vast array of accessories to customize your boat. Whether a newly purchased Pathfinder, Maverick or Cobia from our shop, or upgrades to your existing boat, we will be happy to customize to your specifications. Make an appointment with our service department today.",
+      "services": [
+        {
+          "slug": "marine-electronics",
+          "title": "Marine Electronics",
+          "icon": "compass",
+          "text": "In need of navigational assistance or fish-finding technology? We are proud to offer Garmin Marine products, one of the most extensive selections of marine electronics available. Power boat or sailboat, deep ocean, bay or lake, we have got something to make your experience on the water safe and fun."
+        },
+        {
+          "slug": "marine-audio",
+          "title": "Marine Audio",
+          "icon": "zap",
+          "text": "Installing a marine stereo makes for an even more fun and relaxing day on the water for you and your guests. We specialize in FUSION Marine Stereos, and also install Wet Sounds, JL Audio and Davis Marine Audio systems."
+        },
+        {
+          "slug": "trolling-motors-and-anchors",
+          "title": "Trolling Motors and Shallow Water Anchors",
+          "icon": "anchor",
+          "text": "For stealthy maneuvering while angling, a Minn Kota trolling motor is what you need. Power-Pole is the original shallow water anchor, a great accessory for skiffs, bass boats, flats boats, bay boats, aluminum and pontoon boats. Call and talk to Chris about having a Power-Pole installed."
+        },
+        {
+          "slug": "lighting-decking-and-comfort",
+          "title": "Lighting, Decking and Comfort",
+          "icon": "lightbulb",
+          "text": "Plashlights LED lighting, including light bars, headlights and strobe lights. SeaDek traction decking in an array of colors. Dave Clark headsets with intercom for go-fast boating. Cruise N Comfort 12 volt marine A/C, self contained and water cooled, for fresh or salt water."
+        }
+      ]
+    },
+    {
+      "slug": "parts-department",
+      "title": "Parts Department",
+      "icon": "boxes",
+      "summary": "With over 30 years of experience and the largest inventory of Mercury, Yamaha and Volvo-Penta parts in Clear Lake, our parts department is sure to have the part you are looking for.",
+      "intro": "At Gulf Coast we pride ourselves on giving our customers the benefit of genuine parts and accessories. Our parts store has the largest Yamaha and Mercury OEM inventory in the Clear Lake area, and our staff is made up of experienced industry professionals who know your engine from top to bottom. For questions about parts and accessories, call Bill, our parts specialist, at (281) 334-4417. Please note that our parts department is closed from 12 pm to 1 pm each day.",
+      "services": [
+        {
+          "slug": "yamaha-parts",
+          "title": "Yamaha Outboard Parts",
+          "icon": "settings",
+          "text": "Find the right parts for your Yamaha outboard in the Yamaha parts catalog by its Primary Identification Number (PID). The catalog covers Yamaha models sold in the United States only, and some older parts are no longer available from Yamaha."
+        },
+        {
+          "slug": "mercury-parts",
+          "title": "Mercury and MerCruiser Parts",
+          "icon": "settings",
+          "text": "Search the Mercury catalog by serial number to see detailed engine diagrams and part numbers, then contact our parts department to place your order. We strongly recommend using your serial number to ensure you find the correct parts."
+        },
+        {
+          "slug": "volvo-penta-parts",
+          "title": "Volvo Penta Parts and Accessories",
+          "icon": "settings",
+          "text": "Search the Volvo Penta online catalog for your specific engine or drive, with exploded views, and generate your own list of required parts to order from Gulf Coast."
+        },
+        {
+          "slug": "pick-up-or-delivery",
+          "title": "Pick Up or Delivery",
+          "icon": "truck",
+          "text": "Contact our parts department to place your order for pick up or delivery. Come by or call today!"
+        }
+      ],
+      "image": "/brands/gulfcoastcompletemarineservice/photo1",
+      "imageAlt": "The engine shop at Gulf Coast Complete Marine, with its wall of Mercury tools and parts"
+    },
+    {
+      "slug": "boat-sales",
+      "title": "New and Used Boat Sales",
+      "icon": "ship",
+      "summary": "We have selectively chosen to provide the Gulf Coast with Pathfinder and Maverick boats. Come by and see our inventory today.",
+      "intro": "We want the best for our customers and that is why we have selectively chosen to provide the Gulf Coast with Pathfinder and Maverick boats. Please give us a call at (281) 334-4417 to find out about engines on order and availability. Don’t see what you’re looking for? Repower with confidence. Call us today to get a quote.",
+      "services": [
+        {
+          "slug": "pathfinder-2400-open",
+          "title": "2024 Pathfinder 2400 Open",
+          "icon": "ship",
+          "text": "Listed in stock on our inventory page. Call to check availability.",
+          "points": [
+            "Color: Whisper Grey",
+            "Power: Yamaha 300 XSB"
+          ]
+        },
+        {
+          "slug": "pathfinder-2200-trs",
+          "title": "2024 Pathfinder 2200 TRS",
+          "icon": "ship",
+          "text": "Listed in stock on our inventory page. Call to check availability.",
+          "points": [
+            "Color: Sardinia Green",
+            "Power: Yamaha VF200"
+          ]
+        },
+        {
+          "slug": "repowers",
+          "title": "Repowers",
+          "icon": "settings",
+          "text": "Repower with confidence. Call us today to get a quote."
+        }
+      ]
+    },
+    {
+      "slug": "pick-up-haul-outs-and-detailing",
+      "title": "Pick Ups, Haul Outs and Detailing",
+      "icon": "truck",
+      "summary": "Don’t have time to bring us your boat? We can pick it up, schedule haul outs and bring it back looking brand new.",
+      "intro": "With the largest marine repair facility on the Gulf Coast, we have got your power boats and sail boats covered. Our 25,000 sq ft facility contains a parts department, engine shop, welding shop, paint booth and fiberglass shop.",
+      "services": [
+        {
+          "slug": "scheduled-pick-ups",
+          "title": "Scheduled Pick Ups",
+          "icon": "truck",
+          "text": "We can schedule a time to pick up your boat and bring it to our facility, then return it when we are done."
+        },
+        {
+          "slug": "haul-outs-and-hull-inspections",
+          "title": "Haul Outs and Hull Inspections",
+          "icon": "anchor",
+          "text": "We can also schedule haul outs and hull inspections with our local shipyards if necessary."
+        },
+        {
+          "slug": "wash-and-detail",
+          "title": "Wash and Detail",
+          "icon": "droplets",
+          "text": "After a while, contaminants from the water, salt and dirt particles from the air start to collect on the boat’s surface and the interior. Our detailing service will bring it back to its former glory. Bring in your boat and we’ll make it look brand new again!"
+        },
+        {
+          "slug": "insurance-claims",
+          "title": "Insurance Claims",
+          "icon": "shield",
+          "text": "We work with all major insurance companies to make sure you are treated fairly and your boat is repaired better than before your accident."
+        }
+      ]
+    }
+  ],
+  "industries": [
+    "Performance boats",
+    "Fishing boats",
+    "Sailboats",
+    "Center console and custom pleasure boats"
+  ],
+  "credentials": [
+    {
+      "label": "Factory certified mechanics",
+      "detail": "Trained in Mercury, Mercury Racing, Yamaha and Volvo-Penta gas engines"
+    },
+    {
+      "label": "Garmin Marine Electronics",
+      "detail": "Mechanics trained in Garmin Marine electronics"
+    },
+    {
+      "label": "Authorized electronics dealer",
+      "detail": "Garmin Marine, Davis Marine Audio, JL Audio, FUSION Audio and more"
+    },
+    {
+      "label": "Pathfinder and Maverick boats",
+      "detail": "New and used boat sales"
+    }
+  ],
+  "serviceArea": [
+    "Kemah",
+    "Clear Lake",
+    "The Gulf Coast"
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "The largest facility of its kind on the Gulf Coast",
+    "text": [
+      "We are proud to be the largest facility of its kind on the Gulf Coast. With over 20,000 square feet of repair space located in Kemah, TX, we are equipped to handle many major jobs and large vessels that other facilities simply cannot.",
+      "How do we stay small and sell big? It’s simple: years of experience. At Gulf Coast Complete Marine, our mission is to offer you the latest in parts and products at the best prices, and with unparalleled service. We pledge to use our best efforts to make your experience both beneficial and enjoyable. Once you give us a try, we’re sure you’ll be back!",
+      "Our dedicated service team works with a level of professionalism seldom found in the marine industry, and our safety record is incomparable."
+    ],
+    "image": "/brands/gulfcoastcompletemarineservice/photo2",
+    "imageAlt": "Performance boats on trailers in the yard at Gulf Coast Complete Marine",
+    "values": [
+      {
+        "title": "Genuine parts",
+        "text": "We pride ourselves on giving our customers the benefit of genuine parts and accessories."
+      },
+      {
+        "title": "Any job, any size",
+        "text": "Our experts can handle jobs of virtually any size and scope to meet your specifications."
+      },
+      {
+        "title": "Back on the water",
+        "text": "Our team can make sure you get back on the water quickly."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How much does fiberglass repair cost?",
+      "a": "The cost of fiberglass and gelcoat repair can vary greatly depending on the level of damage. Our hourly labor rate is $110 per hour."
+    },
+    {
+      "q": "What causes stress cracks in fiberglass?",
+      "a": "Hairline cracks, stress cracks or spider cracks can occur in the gelcoat surfaces of fiberglass boats and are often seen as a cosmetic issue. In most cases this is true, but it is important to seal them correctly, otherwise water could penetrate into the fiberglass and cause more serious damage. They occur as a result of stress and movement, manufacturing issues and environmental challenges. If structural damage is suspected, we will inspect the hull thoroughly for any moisture damage."
+    },
+    {
+      "q": "How can I avoid gelcoat stress cracks?",
+      "a": "Spider cracks can be avoided by countersinking holes just through the gelcoat, so the load is placed on the structural fiberglass rather than the brittle gelcoat. Quite often, however, it’s near impossible to prevent these cracks because gelcoat is so brittle and rigid."
+    },
+    {
+      "q": "Can the shine be restored to my fiberglass?",
+      "a": "The outer surface of a fiberglass boat is normally a resin called gelcoat, which protects the hull and gives it its color and shine. Time and exposure to the elements can erode the relatively soft surface of gelcoat, leaving it dull and chalky. Fortunately, the gloss usually can be restored."
+    },
+    {
+      "q": "How often should my engine be serviced?",
+      "a": "Have your engine inspected and serviced at an authorized dealer at least once a year, even if you haven’t reached 100 hours, so we can attend to any tune-up, service or warranty issues."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Our Team",
+      "items": [
+        "Chris Bailey, Service Manager",
+        "Bill, Parts Specialist",
+        "David, Fiberglass Repair",
+        "Miguel, Painter",
+        "Jose Jr and Javier, Restoration"
+      ]
+    },
+    {
+      "heading": "Our Facility",
+      "items": [
+        "25,000 sq ft facility",
+        "Over 20,000 square feet of repair space",
+        "80’ x 25’ indoor paint booth",
+        "Parts department, engine shop, welding shop, paint booth and fiberglass shop"
+      ]
+    },
+    {
+      "heading": "Contact",
+      "items": [
+        "Phone: (281) 334-4417",
+        "Fax: (281) 334-2418",
+        "Email: info@gulfcoastcomplete.com",
+        "Service: service@gulfcoastcomplete.com"
+      ]
+    },
+    {
+      "heading": "Brands We Work With",
+      "items": [
+        "Mercury and Mercury Racing",
+        "Yamaha Outboards",
+        "Volvo Penta",
+        "Garmin Marine",
+        "FUSION Audio",
+        "Wet Sounds",
+        "JL Audio",
+        "Davis Marine Audio",
+        "Minn Kota",
+        "Power-Pole",
+        "SeaDek",
+        "Plashlights",
+        "Dave Clark Headsets",
+        "Cruise N Comfort",
+        "Pathfinder, Maverick and Cobia boats"
+      ]
+    },
+    {
+      "heading": "Yamaha Maintenance Matters",
+      "text": "Our Yamaha Outboards page carries Yamaha’s maintenance guide: corrosion prevention, fuel and fuel system, electrical system, power trim and tilt, propeller solutions, external appearance, interval maintenance, engine oil and lube, lower unit, extended storage, and capacities and specs."
+    },
+    {
+      "heading": "Follow Us",
+      "items": [
+        "Facebook: https://www.facebook.com/gulfcoastcomplete",
+        "Instagram: https://www.instagram.com/gulfcoastcompletemarine/"
+      ]
+    }
+  ]
+}
