@@ -1,0 +1,446 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "ask": "quote",
+  "name": "Eco-Pest Inc.",
+  "shortName": "Eco-Pest",
+  "summary": "Eco-friendly pest control for homes and businesses across the Greater Houston area, from termites and rodents to mosquitoes and bed bugs.",
+  "phone": "(281) 488-3362",
+  "email": "askapro@eco-pestinc.com",
+  "address": "814 Bay Star Blvd",
+  "town": "Webster",
+  "state": "TX",
+  "zip": "77598",
+  "rating": 4.8,
+  "reviewCount": 177,
+  "hours": [
+    [
+      "Monday",
+      "7 AM – 4 PM"
+    ],
+    [
+      "Tuesday – Saturday",
+      "7 AM – 5 PM"
+    ],
+    [
+      "Sunday",
+      "Closed"
+    ]
+  ],
+  "brand": {
+    "primary": "#232a6e",
+    "primaryDeep": "#141848",
+    "accent": "#d02424",
+    "ink": "#1a1c2a",
+    "muted": "#575a6b",
+    "surface": "#f3f4f9",
+    "line": "#dfe1ec",
+    "heading": "'Montserrat', system-ui, sans-serif",
+    "body": "'Open Sans', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap",
+    "logo": "/brands/ecopestwebster/logo.webp",
+    "logoMono": "/brands/ecopestwebster/logo-mono.webp",
+    "logoWidth": 79,
+    "logoHeight": 84,
+    "logoRatio": 0.936,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.284,
+      0.251,
+      0.009,
+      0.008,
+      0.162,
+      0.308,
+      0.435,
+      0.566,
+      0.797,
+      0.9,
+      0.992
+    ]
+  },
+  "sameDay": "Same-day emergency service is available, and we respond to requests within 30 minutes during business hours.",
+  "hero": {
+    "eyebrow": "Eco-friendly pest control in the Greater Houston area",
+    "title": "Houston's trusted",
+    "titleAccent": "pest control experts.",
+    "lead": "Professional, eco-friendly pest control for homes and businesses, with free inspections, no contracts and a 100% satisfaction guarantee. Send a request and we will get back to you within 30 minutes during business hours.",
+    "image": "/brands/ecopestwebster/hero",
+    "imageAlt": "A grey two-story house with a front porch and a green lawn"
+  },
+  "groups": [
+    {
+      "slug": "general-pest-control",
+      "title": "General Pest Control",
+      "icon": "shield",
+      "summary": "Protection against the common household pests, including ants, roaches and spiders.",
+      "intro": "Comprehensive protection against the common household pests, including ants, roaches and spiders. We use eco-friendly methods that are safe for your family and pets, and the quarterly protection plan keeps your home covered year-round.",
+      "services": [
+        {
+          "slug": "quarterly-pest-service",
+          "title": "Quarterly Pest Service",
+          "icon": "timer",
+          "text": "Keep your home protected year-round with the quarterly service plan: regular inspections, preventive treatments and unlimited callbacks between visits.",
+          "points": [
+            "Four visits per year",
+            "Regular inspections at every visit",
+            "Preventive treatments",
+            "Unlimited callbacks between visits",
+            "Priority scheduling",
+            "No contract"
+          ]
+        },
+        {
+          "slug": "ants-roaches-and-spiders",
+          "title": "Ants, Roaches and Spiders",
+          "icon": "shield",
+          "text": "Comprehensive protection against the common household pests, treated with eco-friendly methods that are safe for your family and pets.",
+          "points": [
+            "Free comprehensive inspection first",
+            "Pet and child safe treatments"
+          ]
+        },
+        {
+          "slug": "commercial-pest-control",
+          "title": "Commercial Pest Control",
+          "icon": "building",
+          "text": "Quarterly protection plans for businesses as well as homes, with the same eco-friendly treatments and free inspection.",
+          "points": [
+            "Commercial and residential",
+            "Quarterly protection plans"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "termite-control",
+      "title": "Termite Control",
+      "icon": "home",
+      "summary": "Sentricon baiting systems and liquid treatments that protect the structure of your home.",
+      "intro": "Advanced Sentricon baiting systems and liquid treatments protect your home from termite damage. We are a Sentricon Authorized Operator, and every job starts with a free comprehensive inspection and a quote.",
+      "services": [
+        {
+          "slug": "termite-inspections",
+          "title": "Termite Inspections",
+          "icon": "clipboard",
+          "text": "A free comprehensive inspection and a detailed assessment of your property, followed by a quote for the treatment.",
+          "points": [
+            "Free comprehensive inspection",
+            "Free quote"
+          ]
+        },
+        {
+          "slug": "sentricon-baiting-systems",
+          "title": "Sentricon Baiting Systems",
+          "icon": "shield",
+          "text": "Advanced Sentricon baiting systems that protect your home from termite damage.",
+          "points": [
+            "Sentricon Authorized Operator"
+          ]
+        },
+        {
+          "slug": "liquid-termite-treatments",
+          "title": "Liquid Termite Treatments",
+          "icon": "droplets",
+          "text": "Liquid termite treatments to protect your home from termite damage.",
+          "points": [
+            "Free inspection and quote"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "rodent-and-wildlife-control",
+      "title": "Rodent and Wildlife Control",
+      "icon": "wrench",
+      "summary": "Mice, rats and the larger animals that get into an attic, removed and kept out.",
+      "intro": "Effective solutions for mice and rat problems, with exclusion services and ongoing monitoring. We also handle the humane removal of raccoons, opossums, squirrels and other wildlife from your property.",
+      "services": [
+        {
+          "slug": "rodent-control",
+          "title": "Rodent Control",
+          "icon": "wrench",
+          "text": "Effective solutions for mice and rat problems, with ongoing monitoring once the activity stops.",
+          "points": [
+            "Mice and rats",
+            "Ongoing monitoring"
+          ]
+        },
+        {
+          "slug": "rodent-exclusion",
+          "title": "Rodent Exclusion",
+          "icon": "home",
+          "text": "Exclusion services that seal the entry points rodents use to get in, so the problem does not come back.",
+          "points": [
+            "Entry points sealed",
+            "Free quote for rodent exclusion"
+          ]
+        },
+        {
+          "slug": "wildlife-removal",
+          "title": "Wildlife Removal",
+          "icon": "leaf",
+          "text": "Humane removal of raccoons, opossums, squirrels and other wildlife from your property.",
+          "points": [
+            "Humane removal",
+            "Raccoons, opossums and squirrels"
+          ]
+        }
+      ],
+      "image": "/brands/ecopestwebster/rodent",
+      "imageAlt": "A small mouse sitting on a wooden surface"
+    },
+    {
+      "slug": "mosquito-control",
+      "title": "Mosquito Control",
+      "icon": "droplets",
+      "summary": "Treatment programs that cut the mosquito population around your property.",
+      "intro": "Reduce mosquito populations around your property with our eco-friendly treatment programs, safe for your family and pets.",
+      "services": [
+        {
+          "slug": "mosquito-treatment-programs",
+          "title": "Mosquito Treatment Programs",
+          "icon": "droplets",
+          "text": "Eco-friendly treatment programs that reduce the mosquito population around your property.",
+          "points": [
+            "Eco-friendly products",
+            "Safe for family and pets"
+          ]
+        }
+      ],
+      "image": "/brands/ecopestwebster/mosquito",
+      "imageAlt": "A brown mosquito up close"
+    },
+    {
+      "slug": "bed-bug-treatment",
+      "title": "Bed Bug Treatment",
+      "icon": "thermometer",
+      "summary": "Heat treatment and targeted applications that clear bed bugs out of a home.",
+      "intro": "Thorough inspection and elimination of bed bugs using heat treatment and targeted applications.",
+      "services": [
+        {
+          "slug": "bed-bug-inspection",
+          "title": "Bed Bug Inspection",
+          "icon": "clipboard",
+          "text": "A thorough inspection to find where the bed bugs are before treatment begins.",
+          "points": [
+            "Free comprehensive inspection"
+          ]
+        },
+        {
+          "slug": "heat-treatment",
+          "title": "Heat Treatment",
+          "icon": "thermometer",
+          "text": "Elimination of bed bugs using heat treatment together with targeted applications.",
+          "points": [
+            "Heat treatment",
+            "Targeted applications"
+          ]
+        }
+      ]
+    }
+  ],
+  "promo": {
+    "eyebrow": "Quarterly protection plan",
+    "title": "Protected year-round, with no contract.",
+    "text": "Four visits a year with regular inspections, preventive treatments, unlimited callbacks between visits and priority scheduling, and no contracts or cancelation fees."
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Your local pest control experts.",
+    "text": [
+      "At Eco-Pest Inc. we understand that pests do not just threaten your property, they threaten your peace of mind. That is why we have dedicated ourselves to providing Houston and the surrounding areas with effective, environmentally responsible pest control.",
+      "Our team of ACE-certified technicians brings years of experience and ongoing training to every job. We use the latest eco-friendly technologies and methods to protect your home while keeping the environmental impact down.",
+      "We are a local, family-owned company serving the Houston community, a licensed pest control company and a Sentricon Authorized Operator."
+    ],
+    "values": [
+      {
+        "title": "Eco-friendly methods",
+        "text": "Treatments that are safe for your family, your pets and the environment."
+      },
+      {
+        "title": "Local and family owned",
+        "text": "Serving the Houston community with pride and dedication."
+      },
+      {
+        "title": "Licensed and certified",
+        "text": "ACE-certified technicians with ongoing training."
+      }
+    ]
+  },
+  "faqs": [
+    {
+      "q": "How quickly will you get back to me?",
+      "a": "Within 30 minutes during business hours. Same-day emergency service is available when the problem cannot wait."
+    },
+    {
+      "q": "Do I have to sign a contract?",
+      "a": "No. There are no contracts and no cancelation fees, including on the quarterly protection plan."
+    },
+    {
+      "q": "Is the treatment safe around children and pets?",
+      "a": "Yes. We use eco-friendly products and pet and child safe treatments on every job."
+    },
+    {
+      "q": "Does an inspection cost anything?",
+      "a": "No. Inspections are free and comprehensive, and you get the quote after we have seen the property."
+    },
+    {
+      "q": "What if the pests come back?",
+      "a": "Give us a call. If for any reason you are not satisfied with the results of an Eco-Pest application, we will come back until you are satisfied or refund the charge for the application. Quarterly plans include unlimited callbacks between visits."
+    },
+    {
+      "q": "Do you treat businesses as well as homes?",
+      "a": "Yes, commercial and residential. Quarterly protection plans are available for both."
+    }
+  ],
+  "serviceArea": [
+    "Houston",
+    "Sugarland",
+    "Pearland",
+    "Cypress",
+    "Katy",
+    "Missouri City",
+    "League City",
+    "Richmond",
+    "Rosenberg",
+    "Friendswood",
+    "Pasadena",
+    "Baytown",
+    "Clear Lake",
+    "The Woodlands",
+    "Spring"
+  ],
+  "facts": [
+    {
+      "heading": "100% satisfaction guarantee",
+      "text": "If for any reason you are not satisfied with the results of an Eco-Pest application, give us a call. We will continue to come back until you are satisfied, or we will refund the charge for the application."
+    },
+    {
+      "heading": "What comes with every job",
+      "items": [
+        "Free comprehensive inspections",
+        "Pet and child safe treatments",
+        "Same-day emergency service",
+        "Quarterly protection plans",
+        "Commercial and residential",
+        "No contracts or cancelation fees"
+      ]
+    },
+    {
+      "heading": "Referral program",
+      "text": "Refer a friend and get 50% off your next service. Your friend gets 10% off their first treatment too."
+    },
+    {
+      "heading": "How It Works: Paying Online",
+      "text": "Submit a payment request with your invoice number and amount. The team verifies the invoice and contacts you to complete payment securely by phone or a secure link, and a confirmation and receipt follow by email. Card details are never stored on our servers. You can also pay by phone at (281) 488-3362."
+    },
+    {
+      "heading": "By the numbers",
+      "items": [
+        "50+ years of experience",
+        "5,000+ happy customers",
+        "150+ five-star reviews",
+        "15+ service areas"
+      ]
+    },
+    {
+      "heading": "Find us online",
+      "items": [
+        "facebook.com/Eco-Pest-Inc-107836565025327",
+        "instagram.com/ecopest_inc",
+        "x.com/ecopest_inc",
+        "tiktok.com/@ecopest_inc",
+        "Reviews on Google and Angi"
+      ]
+    },
+    {
+      "heading": "Service request",
+      "text": "The free quote form takes your name, phone, email, the service you need (general pest control, termite treatment, rodent control, mosquito control, bed bug treatment, wildlife removal or other / not sure), your property address and a note about the problem. We get back to you within 30 minutes during business hours."
+    },
+    {
+      "heading": "Not sure if we serve your area?",
+      "text": "We serve the Greater Houston area and are always expanding. If you do not see your city listed, give us a call and we may still be able to help."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "No Contracts",
+      "text": "No contracts and no cancelation fees.",
+      "icon": "check"
+    },
+    {
+      "title": "Free Inspections",
+      "text": "A free comprehensive inspection of your property.",
+      "icon": "clipboard"
+    },
+    {
+      "title": "100% Guaranteed",
+      "text": "Not satisfied? We will retreat for free or refund your money.",
+      "icon": "shield"
+    },
+    {
+      "title": "Eco-Friendly Solutions",
+      "text": "Safe for your family, pets and the environment.",
+      "icon": "leaf"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Call or Request Online",
+      "text": "Fast response within 30 minutes during business hours."
+    },
+    {
+      "title": "Free Inspection",
+      "text": "A detailed assessment of your property."
+    },
+    {
+      "title": "Treatment and Protection",
+      "text": "Effective eco-friendly solutions."
+    }
+  ],
+  "credentials": [
+    {
+      "label": "Licensed Pest Control Company",
+      "detail": "Houston, Texas"
+    },
+    {
+      "label": "ACE Certified Technicians",
+      "detail": "With ongoing training"
+    },
+    {
+      "label": "Sentricon Authorized Operator"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Sarah M., Sugarland",
+      "source": "website",
+      "text": "Eco-Pest has been servicing our home for over 3 years now. They're always professional, on time, and the treatments are very effective. Haven't seen a roach since they started!"
+    },
+    {
+      "author": "James P., Pearland",
+      "source": "website",
+      "text": "Had a serious termite problem and was worried about my home. The team came out same day, did a thorough inspection, and explained everything clearly. The Sentricon system they installed works great!"
+    },
+    {
+      "author": "Linda T., Missouri City",
+      "source": "website",
+      "text": "I called about a mouse problem and they came out the next morning. Problem solved within a week! They also sealed up entry points to prevent future issues."
+    },
+    {
+      "author": "Maria G., Cypress",
+      "source": "website",
+      "text": "What I love most is that they use eco-friendly products. I have pets and young kids, so it was important to me. The technician Chase was super professional and answered all my questions."
+    },
+    {
+      "author": "Robert K., Katy",
+      "source": "website",
+      "text": "Best pest control company in Houston! Their quarterly service keeps our restaurant pest-free. Very reasonable prices and excellent customer service."
+    },
+    {
+      "author": "David W., Houston",
+      "source": "website",
+      "text": "The referral program is awesome - got half off my treatment when my neighbor signed up! Great service and great value. Highly recommend Eco-Pest Inc."
+    }
+  ]
+}
