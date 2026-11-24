@@ -167,6 +167,13 @@ function Header({ b, tel }) {
   );
 }
 
+/** A line with each hyphenated word held whole, so a license number like '#M-36410' never breaks at its hyphen. */
+function unbroken(text) {
+  return String(text || '')
+    .split(/(\S+-\S+)/)
+    .map((part, i) => (i % 2 ? <span key={i} className="whitespace-nowrap">{part}</span> : part));
+}
+
 function Hero({ b, tel, rating }) {
   return (
     <section id="top" className="relative isolate overflow-hidden bg-primary-deep text-white">
@@ -295,7 +302,7 @@ export default function Plumbing({ b }) {
                 <span className="grid h-7 w-7 flex-none place-items-center rounded-full bg-accent text-ink">
                   <Check size={15} strokeWidth={3} aria-hidden="true" />
                 </span>
-                {p}
+                <span>{unbroken(p)}</span>
               </li>
             ))}
           </ul>
