@@ -1049,10 +1049,14 @@ function Doctor({ b, bg, hasTeam }) {
       </section>
     );
   }
+  // No photo: the bio follows the name, and the credentials and the other
+  // doctors fill the other half, so neither half is a short paragraph floating
+  // in an empty space where a portrait would stand.
+  const side = (bio && creds.length > 0) || others.length > 0 || hasTeam;
   return (
     <section className={`py-[clamp(4rem,8vw,6.5rem)] ${bg}`}>
       <div className={wrap}>
-        <div className={`grid gap-10 rounded-[2.25rem] bg-[var(--tint)] p-6 sm:p-10 lg:gap-16 lg:p-14 ${bio || others.length ? 'lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]' : ''}`}>
+        <div className={`grid gap-10 rounded-[2.25rem] bg-[var(--tint)] p-6 sm:p-10 lg:gap-16 lg:p-14 ${side ? 'lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]' : ''}`}>
           <div className="min-w-0">
             <span className="grid size-16 place-items-center rounded-[1.25rem] bg-white text-primary shadow-[0_14px_30px_-20px_rgba(16,32,48,0.5)]">
               <Stethoscope size={30} strokeWidth={1.5} aria-hidden="true" />
@@ -1060,13 +1064,16 @@ function Doctor({ b, bg, hasTeam }) {
             <Eyebrow className="mt-7">{eyebrow}</Eyebrow>
             <h2 className="font-heading font-display-2 text-[clamp(1.85rem,1.3rem+2vw,2.75rem)] leading-[1.12] text-ink [text-wrap:balance]">{doc.name}</h2>
             {doc.role && <p className="mt-2 text-[16px] font-semibold text-accent">{doc.role}</p>}
-            <CredentialList items={creds} className="mt-7" />
-            {bio && <div className="hidden lg:block">{more}</div>}
+            {bio ? (
+              <p className="mt-6 font-heading text-[clamp(1.1rem,1rem+0.45vw,1.32rem)] leading-[1.65] text-ink/85">{bio}</p>
+            ) : (
+              <CredentialList items={creds} className="mt-7" />
+            )}
           </div>
-          {(bio || others.length > 0 || hasTeam) && (
-            <div className={`min-w-0 ${bio ? 'lg:self-center' : 'lg:pt-2'}`}>
-              {bio && <p className="font-heading text-[clamp(1.1rem,1rem+0.45vw,1.32rem)] leading-[1.65] text-ink/85">{bio}</p>}
-              <div className={bio ? 'lg:hidden' : ''}>{more}</div>
+          {side && (
+            <div className="min-w-0 lg:pt-2">
+              {bio && <CredentialList items={creds} />}
+              {more}
             </div>
           )}
         </div>

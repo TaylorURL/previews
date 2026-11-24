@@ -115,8 +115,10 @@ export function Orbit({ b, services, hasPage }) {
 export function MapArt({ street = '', town = '' }) {
   return (
     <svg aria-hidden="true" className="absolute inset-0 size-full" viewBox="0 0 600 420" preserveAspectRatio="xMidYMid slice" fill="none">
-      <rect width="600" height="420" style={{ fill: 'color-mix(in srgb, var(--primary) 11%, #fff)' }} />
-      <g style={{ fill: 'color-mix(in srgb, var(--primary) 3%, #fff)' }}>
+      {/* Pale streets between tinted blocks, as a printed street map draws them: near-white
+          blocks on a pale ground read as empty tiles still loading, not as a plan. */}
+      <rect width="600" height="420" style={{ fill: 'color-mix(in srgb, var(--primary) 4%, #fff)' }} />
+      <g style={{ fill: 'color-mix(in srgb, var(--primary) 14%, #fff)' }}>
         <rect x="24" y="22" width="150" height="96" rx="14" />
         <rect x="204" y="22" width="120" height="96" rx="14" />
         <rect x="354" y="22" width="222" height="96" rx="14" />
@@ -128,8 +130,9 @@ export function MapArt({ street = '', town = '' }) {
         <rect x="254" y="296" width="140" height="102" rx="14" />
         <rect x="424" y="296" width="152" height="102" rx="14" />
       </g>
+      <path d="M-20 360 C 140 330, 220 250, 340 210 S 520 150, 640 70" style={{ stroke: 'color-mix(in srgb, var(--primary) 24%, #fff)' }} strokeWidth="22" strokeLinecap="round" />
       <path d="M-20 360 C 140 330, 220 250, 340 210 S 520 150, 640 70" stroke="#fff" strokeWidth="18" strokeLinecap="round" />
-      <path id="map-road" d="M-20 360 C 140 330, 220 250, 340 210 S 520 150, 640 70" style={{ stroke: 'color-mix(in srgb, var(--primary) 14%, transparent)' }} strokeWidth="2" strokeDasharray="2 10" strokeLinecap="round" />
+      <path id="map-road" d="M-20 360 C 140 330, 220 250, 340 210 S 520 150, 640 70" style={{ stroke: 'color-mix(in srgb, var(--primary) 30%, transparent)' }} strokeWidth="2" strokeDasharray="2 10" strokeLinecap="round" />
       {street && (
         <text dy="-16" fontSize="13" fontWeight="600" letterSpacing="0.06em" style={{ fill: 'color-mix(in srgb, var(--primary) 70%, #000)' }}>
           <textPath href="#map-road" startOffset="72%" textAnchor="middle">{street}</textPath>
@@ -137,7 +140,7 @@ export function MapArt({ street = '', town = '' }) {
       )}
       {/* The card is narrower than the plan, so its sides are cut off (about 100 of 600 each side on a phone): the town sits on a middle block. */}
       {town && (
-        <text x="264" y="76" textAnchor="middle" fontSize="12" fontWeight="700" letterSpacing="0.16em" style={{ fill: 'color-mix(in srgb, var(--primary) 55%, #fff)' }}>
+        <text x="264" y="76" textAnchor="middle" fontSize="12" fontWeight="700" letterSpacing="0.16em" style={{ fill: 'color-mix(in srgb, var(--primary) 70%, #000)' }}>
           {town.toUpperCase()}
         </text>
       )}
