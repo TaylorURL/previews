@@ -2275,9 +2275,12 @@ function ContactPage({ b, groups, tel }) {
                     {hours.map(([d, h]) => (
                       <tr key={d} className="border-b border-line last:border-0">
                         <th scope="row" className="py-2.5 pr-4 text-left font-medium text-muted">
-                          {d}
+                          {/* A day range such as 'Mon – Sun' wraps whole, never at its dash. */}
+                          {String(d)
+                            .split(/(\S+ – \S+)/)
+                            .map((part, i) => (i % 2 ? <span key={i} className="whitespace-nowrap">{part}</span> : part))}
                         </th>
-                        <td className="py-2.5 text-right font-semibold text-ink">{h}</td>
+                        <td className="whitespace-nowrap py-2.5 text-right font-semibold text-ink">{h}</td>
                       </tr>
                     ))}
                   </tbody>
