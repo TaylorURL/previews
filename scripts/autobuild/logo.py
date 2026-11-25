@@ -416,18 +416,22 @@ def _faint_strips(arr, ground):
     return arr
 
 
-# A strip of words at the top or foot of the mark that would still be drawn
-# shorter than this, once the mark is drawn as tall as its header allows (a
-# two-line tagline under a badge, each line a tenth of it), is a smudge at that
-# size, and is cut away, so the rest of the mark is sized and drawn without it.
-# It is the height a strip is drawn at to read (STRIP_MIN): a tagline the header
+# A strip of words at the foot of the mark that would still be drawn shorter
+# than this, once the mark is drawn as tall as its header allows (a two-line
+# tagline under a badge, each line a tenth of it), is a smudge at that size,
+# and is cut away, so the rest of the mark is sized and drawn without it. It is
+# the height a strip is drawn at to read (STRIP_MIN): a tagline the header
 # cannot draw that tall (held to STRIP_MOST) is cut, not set as a fuzzy line.
+# The strip at the top is never cut: it is where the name sits (a thin
+# 'COASTLINE' over 'MARINE' and a swoosh), and the mark without it is a picture
+# with no name; it is kept and the mark drawn taller so it reads, or refused as
+# too small to.
 STRIP_READS = STRIP_MIN
 
 
 def _small_strips(arr):
-    """The logo without a strip of words at its top or foot too small to read
-    at the size the header draws the mark."""
+    """The logo without a strip of words at its foot too small to read at the
+    size the header draws the mark."""
     ink = arr[..., 3] > 32
     rows = ink.any(axis=1)
     edges = np.flatnonzero(np.diff(np.concatenate([[False], rows, [False]]).astype(np.int8)))
@@ -438,15 +442,12 @@ def _small_strips(arr):
     _, height = drawn_size(w / h, strip_share(arr), h / SOURCE_OVER_DRAWN)
     small = [(stop - start) * height / h < STRIP_READS for start, stop in runs]
     # The mark itself is never cut away: what is cut is at most half of it.
-    top, foot = 0, len(runs)
-    while foot - top > 1 and small[foot - 1] and runs[foot - 1][0] - runs[0][0] >= 0.5 * h:
+    foot = len(runs)
+    while foot > 1 and small[foot - 1] and runs[foot - 1][0] - runs[0][0] >= 0.5 * h:
         foot -= 1
-    while foot - top > 1 and small[top] and runs[foot - 1][1] - runs[top + 1][0] >= 0.5 * h:
-        top += 1
-    if (top, foot) == (0, len(runs)):
+    if foot == len(runs):
         return arr
     arr = arr.copy()
-    arr[:runs[top][0], :, 3] = 0
     arr[runs[foot - 1][1]:, :, 3] = 0
     return arr
 
