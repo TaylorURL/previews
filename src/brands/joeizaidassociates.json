@@ -1,0 +1,825 @@
+{
+  "template": "professional",
+  "preview": true,
+  "name": "Joe I. Zaid & Associates",
+  "shortName": "Joe I. Zaid & Associates",
+  "phone": "(346) 756-9243",
+  "email": "info@joezaid.com",
+  "address": "4701 Preston Ave",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77505",
+  "brand": {
+    "primary": "#252e64",
+    "primaryDeep": "#1a2046",
+    "accent": "#616fc5",
+    "ink": "#171c25",
+    "surface": "#f2f2f6",
+    "muted": "#5b6470",
+    "line": "#dfdfe1",
+    "cream": "#f8f6f2",
+    "heading": "'Poppins', system-ui, sans-serif",
+    "body": "'Montserrat', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap",
+    "logo": "/brands/joeizaidassociates/logo.webp",
+    "logoMono": "/brands/joeizaidassociates/logo-mono.webp",
+    "logoWidth": 212,
+    "logoHeight": 48,
+    "logoRatio": 4.425,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.255,
+      0.234,
+      0.202,
+      0.148,
+      0.076,
+      0.517,
+      0.605,
+      0.695,
+      0.786,
+      0.809,
+      0.843
+    ]
+  },
+  "heroStyle": "split",
+  "tone": "classic",
+  "hero": {
+    "eyebrow": "Personal injury attorneys in Pasadena and Houston",
+    "title": "Injury lawyers who know how insurers challenge claims",
+    "lead": "Joe I. Zaid spent nearly a decade working for one of the world’s largest insurance companies before he founded the firm in 2013. Consultations are free, and you owe no attorney’s fees unless we recover compensation for you.",
+    "image": "/brands/joeizaidassociates/joe-zaid",
+    "imageAlt": "Portrait of founding personal injury attorney Joe I. Zaid",
+    "points": [
+      "1,500+ five-star reviews",
+      "Free case evaluation, no fees unless we recover",
+      "Se habla español, available 24/7"
+    ]
+  },
+  "serviceArea": [
+    "Pasadena",
+    "Downtown Houston",
+    "Clear Lake",
+    "Humble",
+    "Deer Park",
+    "La Porte",
+    "League City",
+    "Webster",
+    "Seabrook",
+    "Pearland",
+    "Alvin",
+    "Galveston",
+    "Brazoria County"
+  ],
+  "kind": "legal",
+  "services": [
+    {
+      "slug": "personal-injury",
+      "title": "Personal Injury",
+      "summary": "Car crashes, falls, animal attacks and more.",
+      "text": "Representing people injured in car crashes, falls, animal attacks, workplace incidents, and other accidents caused by negligence.",
+      "lead": "Representing people injured in car crashes, falls, animal attacks, workplace incidents, and other accidents caused by negligence.",
+      "icon": "scale",
+      "questions": [
+        {
+          "q": "What if I was partially at fault for the accident?",
+          "a": "Texas’s comparative fault rule allows recovery even if you share some responsibility, as long as your portion of fault is below 51 percent. However, the compensation you receive will be reduced by your percentage of fault. This makes accurate liability analysis critical."
+        }
+      ],
+      "image": "/brands/joeizaidassociates/reception",
+      "imageAlt": "Reception area of the Joe I. Zaid & Associates office",
+      "covers": [
+        {
+          "title": "Nearly a decade inside the insurance industry",
+          "text": "Joe Zaid’s inside perspective helps our lawyers anticipate how insurers evaluate, delay, and dispute injury claims."
+        },
+        {
+          "title": "Millions recovered for injured clients",
+          "text": "Including multiple seven-figure settlements in disputed-liability cases."
+        },
+        {
+          "title": "No fees unless we recover compensation",
+          "text": "You pay no upfront attorney’s fees. We are paid only if we recover compensation for your case."
+        },
+        {
+          "title": "Personal attention from start to finish",
+          "text": "Every case starts with your injuries, your daily life, and what you actually need."
+        }
+      ]
+    },
+    {
+      "slug": "car-accidents",
+      "title": "Car Accidents",
+      "summary": "Rear-end, distracted-driving and hit-and-run crashes.",
+      "text": "Helping drivers and passengers injured in rear-end crashes, distracted-driving accidents, hit-and-runs, and other collisions.",
+      "lead": "Helping drivers and passengers injured in rear-end crashes, distracted-driving accidents, hit-and-runs, and other collisions.",
+      "icon": "car",
+      "image": "/brands/joeizaidassociates/photo5",
+      "imageAlt": "A driver on the phone beside a damaged vehicle after a crash",
+      "covers": [
+        {
+          "title": "Rear-end collisions",
+          "text": "Common on congested Houston freeways. We recently secured a $200,000 settlement for a client who was rear-ended in a high-speed freeway crash."
+        },
+        {
+          "title": "T-bone and side-impact collisions",
+          "text": "Intersection crashes that often turn on who had the right of way or ran a red light."
+        },
+        {
+          "title": "Distracted driving crashes",
+          "text": "Cases that may need phone records, witness statements, or surveillance footage to show what the other driver was doing."
+        },
+        {
+          "title": "Hit-and-run accidents",
+          "text": "A driver who flees the scene does not eliminate your right to compensation."
+        },
+        {
+          "title": "Drunk driving accidents",
+          "text": "We handle the civil side, working to secure compensation for medical bills, lost income, and pain and suffering."
+        },
+        {
+          "title": "Uber and Lyft accidents",
+          "text": "Rideshare claims where coverage can depend on whether the driver was logged into the app or carrying a passenger."
+        }
+      ]
+    },
+    {
+      "slug": "truck-accidents",
+      "title": "Truck Accidents",
+      "summary": "18-wheelers and commercial trucks.",
+      "text": "Handling crashes involving 18-wheelers, commercial trucks, negligent carriers, fatigued drivers, and unsafe trucking practices.",
+      "lead": "Handling crashes involving 18-wheelers, commercial trucks, negligent carriers, fatigued drivers, and unsafe trucking practices.",
+      "icon": "truck",
+      "questions": [
+        {
+          "q": "What if the trucking company denies responsibility?",
+          "a": "A trucking company denying responsibility does not automatically mean there is no case. Evidence such as hours-of-service logs, maintenance records, and driver qualification files can sometimes tell a different story than the company’s initial position."
+        }
+      ],
+      "image": "/brands/joeizaidassociates/photo3",
+      "imageAlt": "Heavy truck traffic on a Houston freeway",
+      "covers": [
+        {
+          "title": "18-wheelers and tractor-trailers",
+          "text": "Semi-trucks hauling freight through Houston’s port and industrial corridors."
+        },
+        {
+          "title": "Company and fleet trucks",
+          "text": "Trucks operated by businesses across the metro."
+        },
+        {
+          "title": "Package delivery trucks",
+          "text": "Box trucks and courier vehicles."
+        },
+        {
+          "title": "Dump trucks and construction vehicles",
+          "text": "Trucks operating near active job sites."
+        },
+        {
+          "title": "Tanker and oilfield trucks",
+          "text": "Crashes tied to the region’s energy and petrochemical activity."
+        },
+        {
+          "title": "Every responsible party",
+          "text": "The driver, the trucking company, a maintenance contractor, a cargo loader or a parts manufacturer may share liability."
+        }
+      ]
+    },
+    {
+      "slug": "motorcycle-accidents",
+      "title": "Motorcycle Accidents",
+      "summary": "Injured riders after serious crashes.",
+      "text": "Representing injured riders after lane-change crashes, left-turn collisions, driver inattention, and other serious motorcycle accidents.",
+      "lead": "Representing injured riders after lane-change crashes, left-turn collisions, driver inattention, and other serious motorcycle accidents.",
+      "icon": "motorbike",
+      "image": "/brands/joeizaidassociates/photo6",
+      "imageAlt": "A motorcycle and helmet on the road after a collision",
+      "questions": [
+        {
+          "q": "What if I wasn’t wearing a helmet when the crash happened?",
+          "a": "Not wearing a helmet does not automatically prevent you from recovering compensation. It may become an issue the insurance company raises to argue that your injuries were worse than they would have been with a helmet, which can affect the value of the claim depending on the facts."
+        },
+        {
+          "q": "What if the insurance company says I was partly at fault?",
+          "a": "Under Texas’s comparative fault rules, you can still recover compensation as long as you are found 50% or less responsible for the crash, though your recovery is reduced by your percentage of fault. Disputed liability does not automatically mean you have no case, particularly when the insurance company’s version of events isn’t supported by the evidence."
+        }
+      ],
+      "covers": [
+        {
+          "title": "Helmet requirements under Texas law",
+          "text": "Texas requires every operator and passenger under 21 to wear a DOT-compliant helmet."
+        },
+        {
+          "title": "Lane splitting and lane filtering",
+          "text": "Texas does not allow a motorcyclist to ride between lanes of traffic or share a lane to pass a vehicle."
+        },
+        {
+          "title": "Comparative fault and the 51% rule",
+          "text": "Compensation is reduced by your share of fault, and a rider found more than 50% responsible cannot recover."
+        },
+        {
+          "title": "The two-year deadline to file",
+          "text": "Most motorcycle accident lawsuits in Texas must be filed within two years of the date of the crash."
+        }
+      ]
+    },
+    {
+      "slug": "commercial-vehicle-accidents",
+      "title": "Commercial Vehicle Accidents",
+      "summary": "Delivery vans, company and service vehicles.",
+      "text": "Handling collisions involving delivery vans, company vehicles, construction trucks, service vehicles, and negligent commercial drivers.",
+      "lead": "Handling collisions involving delivery vans, company vehicles, construction trucks, service vehicles, and negligent commercial drivers.",
+      "icon": "truck",
+      "questions": [
+        {
+          "q": "What if the commercial vehicle was leased or operated by a third-party contractor?",
+          "a": "Delivery and fleet arrangements sometimes involve a vehicle owned by one company but operated by a driver working for a separate delivery service partner or independent contractor. Sorting out these relationships is often necessary to identify the correct insurance policy and responsible parties."
+        }
+      ],
+      "image": "/brands/joeizaidassociates/commercial-vehicle",
+      "imageAlt": "A box truck on a highway at sunset",
+      "covers": [
+        {
+          "title": "Package and parcel delivery",
+          "text": "Crashes involving national carriers and regional delivery companies."
+        },
+        {
+          "title": "Amazon and FedEx delivery",
+          "text": "Including third-party delivery partners and independent contractor drivers."
+        },
+        {
+          "title": "Food delivery",
+          "text": "Sorting out whether personal insurance, a delivery platform’s policy, or both apply."
+        },
+        {
+          "title": "U-Haul and rental trucks",
+          "text": "Claims against the driver, the rental company, or both."
+        },
+        {
+          "title": "Company vehicles, work vans and fleet cars",
+          "text": "Whether the driver was working at the time and what the employer knew."
+        },
+        {
+          "title": "$455,000 commercial vehicle settlement",
+          "text": "A private ambulance driver ran a stop sign, struck our client and fled. The firm built the case around the company’s failure to vet its driver."
+        }
+      ]
+    },
+    {
+      "slug": "premises-liability",
+      "title": "Premises Liability",
+      "icon": "store",
+      "summary": "Unsafe stores, restaurants and properties.",
+      "text": "Pursuing claims involving unsafe stores, restaurants, apartments, workplaces, parking lots, and other dangerous properties.",
+      "lead": "Pursuing claims involving unsafe stores, restaurants, apartments, workplaces, parking lots, and other dangerous properties, including injuries at H-E-B, Costco, Kroger, Walmart and McDonald’s locations.",
+      "questions": [
+        {
+          "q": "Can I still have a case if the property owner says the hazard was obvious?",
+          "a": "Possibly. The owner’s characterization does not determine the issue by itself. Texas generally does not impose a duty to warn an invitee about a condition that was actually open and obvious or already known to the person, but whether a condition meets that standard can depend on the specific circumstances."
+        },
+        {
+          "q": "What if I’m not sure the property owner even knew about the hazard?",
+          "a": "Constructive knowledge, meaning the hazard existed long enough that a reasonable inspection should have caught it, can satisfy this requirement even without proof the owner had actually noticed it beforehand. This is often the central issue in a premises liability investigation."
+        }
+      ],
+      "image": "/brands/joeizaidassociates/photo4",
+      "imageAlt": "The aisles of a grocery store",
+      "covers": [
+        {
+          "title": "Why you were there",
+          "text": "Under Texas law, the property owner’s duty depends on why you were on the property."
+        },
+        {
+          "title": "What the owner knew",
+          "text": "Proving the property owner knew, or should have known, about the hazard."
+        },
+        {
+          "title": "The open and obvious defense",
+          "text": "A defense property owners raise in Texas premises liability claims."
+        },
+        {
+          "title": "Retail stores and restaurants",
+          "text": "Injuries at H-E-B, Costco, Kroger, Walmart, McDonald’s and other businesses."
+        },
+        {
+          "title": "$85,000 premises liability settlement",
+          "text": "After a grocery store fall, we pursued both the property owner and the construction company behind an unmarked hazard at the entrance."
+        }
+      ]
+    },
+    {
+      "slug": "slip-and-fall-accidents",
+      "title": "Slip and Fall Accidents",
+      "icon": "footprints",
+      "summary": "Wet floors, uneven walkways, broken stairs.",
+      "text": "Helping people injured by wet floors, uneven walkways, poor lighting, broken stairs, and other dangerous property conditions.",
+      "lead": "Helping people injured by wet floors, uneven walkways, poor lighting, broken stairs, and other dangerous property conditions.",
+      "questions": [
+        {
+          "q": "What if the store says the hazard was obvious?",
+          "a": "An obvious hazard does not automatically eliminate a claim. Texas law still considers whether the property owner should have fixed or better warned about the condition, and whether the injured person’s own actions contributed to what happened."
+        },
+        {
+          "q": "What if I fell at a store that says they were not notified about the hazard?",
+          "a": "A property owner does not need direct notice from an employee to be responsible. If a hazard existed long enough that reasonable inspection should have caught it, that may support a claim even without a specific complaint on file."
+        },
+        {
+          "q": "What if my fall happened at a shopping center with multiple businesses?",
+          "a": "When a fall happens in a shared area, such as a parking lot or common walkway, more than one party may share responsibility, including individual tenants and the property management company. Identifying every responsible party can affect what compensation may be available."
+        },
+        {
+          "q": "Can I still have a case if there were no witnesses?",
+          "a": "A lack of witnesses does not automatically prevent a claim. Photos taken after the fall, medical records, and the injured person’s own account can all help establish what happened, depending on the facts."
+        }
+      ],
+      "covers": [
+        {
+          "title": "Walmart and big box retailers",
+          "text": "Falls in large retail stores."
+        },
+        {
+          "title": "Grocery stores",
+          "text": "Produce sections, refrigerated aisles and entrance mats, where spills and wet floors can go unnoticed between cleanings."
+        },
+        {
+          "title": "Home improvement stores",
+          "text": "Including Home Depot locations."
+        },
+        {
+          "title": "Restaurants, shopping centers, apartments and hotels",
+          "text": "Falls at restaurants, shopping centers, apartment complexes and hotels."
+        },
+        {
+          "title": "Cases without clear documentation",
+          "text": "A client hurt by unmarked mats at a fitness center had no incident report. We built the case from family photographs and firsthand accounts and reached a $90,000 settlement."
+        }
+      ]
+    },
+    {
+      "slug": "dog-bites",
+      "title": "Dog Bites",
+      "icon": "bone",
+      "summary": "Adults and children injured in dog attacks.",
+      "text": "Representing adults and children injured in dog attacks, including cases involving serious wounds, scarring, and emotional trauma.",
+      "lead": "Representing adults and children injured in dog attacks, including cases involving serious wounds, scarring, and emotional trauma.",
+      "questions": [
+        {
+          "q": "What if you were partly at fault for the attack?",
+          "a": "Common arguments insurance adjusters make involve accusing the victim of either provoking the dog, ignoring warning signs, or trespassing. However, even if you share responsibility, under Texas’s comparative negligence rules , you can still recover compensation if you’re less than 50 percent at fault. Comparative fault applies differently depending on whether your claim relies on Texas’s one-bite rule or is a regular negligence claim."
+        },
+        {
+          "q": "Will my dog bite case go to court?",
+          "a": "Most dog bite claims resolve through negotiation with the insurance company. We prepare every case as though it may need to go to court, which puts us in a stronger position if the insurer will not offer a fair settlement."
+        },
+        {
+          "q": "What if my child needs future reconstructive surgery?",
+          "a": "Additional procedures are sometimes required years after a child is bitten due to facial and hand scarring changing as they grow. We document injuries thoroughly and factor in future care when we evaluate the value of your dog bite claim."
+        }
+      ],
+      "image": "/brands/joeizaidassociates/dog-bite",
+      "imageAlt": "An aggressive dog showing its teeth",
+      "covers": [
+        {
+          "title": "The dog’s owner",
+          "text": "Liable through the one-bite rule or an ordinary negligence claim."
+        },
+        {
+          "title": "Landlords and property managers",
+          "text": "Who may share responsibility when they knew about a dangerous dog and failed to act."
+        },
+        {
+          "title": "Businesses and public places",
+          "text": "Attacks at stores, restaurants, dog parks, trails and other public places."
+        },
+        {
+          "title": "Pet sitters, dog walkers and boarding",
+          "text": "Including visits booked through an app."
+        },
+        {
+          "title": "Mail carriers and delivery drivers",
+          "text": "Dog attacks on postal and service workers."
+        }
+      ]
+    },
+    {
+      "slug": "wrongful-death",
+      "title": "Wrongful Death",
+      "summary": "Families pursuing accountability.",
+      "text": "Helping families pursue accountability after fatal vehicle crashes, workplace accidents, unsafe property conditions, and other negligent acts.",
+      "lead": "Helping families pursue accountability after fatal vehicle crashes, workplace accidents, unsafe property conditions, and other negligent acts.",
+      "icon": "heart",
+      "covers": [
+        {
+          "title": "Who can file",
+          "text": "Under Texas law, surviving spouses, children and parents of the deceased may bring a wrongful death claim."
+        },
+        {
+          "title": "Economic damages",
+          "text": "Medical costs before death, funeral and burial expenses, lost financial support, household services and lost inheritance."
+        },
+        {
+          "title": "Non-economic damages",
+          "text": "Mental anguish and grief, loss of companionship, guidance and care, and loss of consortium for a surviving spouse."
+        },
+        {
+          "title": "Exemplary damages",
+          "text": "Texas law allows them in cases involving gross negligence or intentional harm."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "title": "About Joe I. Zaid & Associates",
+    "text": [
+      "Joe I. Zaid & Associates was founded on a simple idea. Injured people deserve the kind of representation you would want for your own family, not standard insurance claim handling.",
+      "Since founding the firm in 2013, Joe I. Zaid & Associates has recovered millions of dollars in settlements for injured clients, including numerous seven figure results for individual clients. Before he represented his first injured client, Joe spent nearly a decade inside one of the world’s largest insurance companies, and he built the firm around what that taught him about how insurers evaluate, delay, and dispute claims.",
+      "From the first day of a case, the firm works to confirm liability, preserve evidence before it disappears, and identify every insurance policy that may apply. The firm takes every case seriously, whether it settles at the negotiating table or requires litigation."
+    ],
+    "values": [
+      {
+        "title": "We Handle the Insurance Company",
+        "text": "Once retained, our firm manages adjuster calls, documentation, and negotiations so you can focus on your medical care and recovery."
+      },
+      {
+        "title": "Clear, Bilingual Communication, Se Habla Español",
+        "text": "We keep clients informed, answer questions directly, and provide clear guidance in both English and Spanish throughout the legal process."
+      },
+      {
+        "title": "A Full Legal Team Behind Your Case",
+        "text": "Your case is supported by attorneys and staff working together to investigate the accident, preserve evidence, and pursue compensation."
+      },
+      {
+        "title": "Available 24/7",
+        "text": "Serious accidents do not follow business hours. Our team is available 24/7 to discuss your situation and explain the next steps."
+      }
+    ],
+    "image": "/brands/joeizaidassociates/office",
+    "imageAlt": "The Joe I. Zaid & Associates Pasadena office on Preston Ave"
+  },
+  "tagline": "Personal injury attorneys",
+  "since": 2013,
+  "license": "Joe I. Zaid is licensed to practice law in Texas.",
+  "hours": [
+    [
+      "Mon – Sun",
+      "Open 24 hours"
+    ]
+  ],
+  "languages": [
+    "English",
+    "Spanish"
+  ],
+  "phones": [
+    {
+      "label": "Pasadena office, se habla español",
+      "number": "(346) 756-9243"
+    },
+    {
+      "label": "Downtown Houston office",
+      "number": "(346) 340-0800"
+    },
+    {
+      "label": "Humble office",
+      "number": "(346) 594-0500"
+    },
+    {
+      "label": "Clear Lake office",
+      "number": "(346) 690-0500"
+    },
+    {
+      "label": "Fax",
+      "number": "(866) 563-9243"
+    }
+  ],
+  "cta": {
+    "label": "Free Consultation",
+    "text": "Ready to talk about your case? Schedule your free consultation or call (346) 756-9243 to speak with our team today. You owe no attorney’s fees unless the firm recovers compensation for you."
+  },
+  "highlights": [
+    {
+      "title": "$1.2 Million Car Accident Settlement",
+      "text": "After another firm could not establish liability, our team went back to the police report, located witnesses and confirmed the at-fault driver’s coverage.",
+      "icon": "gavel"
+    },
+    {
+      "title": "$455,000 Commercial Vehicle Settlement",
+      "text": "A private ambulance driver ran a stop sign and fled. We built the case around the company that put him on the road.",
+      "icon": "gavel"
+    },
+    {
+      "title": "2026 Super Lawyers List",
+      "text": "Joe I. Zaid was selected through a multiphase process of peer nominations and independent research.",
+      "icon": "award"
+    },
+    {
+      "title": "Top 40 Under 40 Trial Lawyer",
+      "text": "Awarded by The National Trial Lawyers to fewer than 40 attorneys per state each year.",
+      "icon": "award"
+    }
+  ],
+  "overview": {
+    "title": "Practice areas our Houston personal injury attorneys handle",
+    "text": "Joe I. Zaid & Associates represents injured clients across Houston and the surrounding Texas communities. Each case gets built around the specific facts and injuries involved."
+  },
+  "owner": {
+    "name": "Joe I. Zaid",
+    "role": "Founding Attorney and Managing Partner",
+    "text": "Joe founded the firm in 2013 after spending nearly a decade working for one of the world’s largest insurance companies. He has represented thousands of clients and recovered millions through settlements and jury verdicts, and he earned his Juris Doctor from South Texas College of Law Houston."
+  },
+  "credentials": [
+    {
+      "label": "2026 Super Lawyers List",
+      "detail": "Selected through a multiphase process of peer nominations and independent research."
+    },
+    {
+      "label": "Top 40 Under 40 Trial Lawyer",
+      "detail": "Awarded by The National Trial Lawyers to fewer than 40 attorneys per state each year."
+    },
+    {
+      "label": "One of Houston’s Top Lawyers",
+      "detail": "Recognized by H-Texas Magazine as a top Houston personal injury lawyer."
+    },
+    {
+      "label": "Houston Chronicle Best of the Best",
+      "detail": "Houston Chronicle Best of the Best award given to Joe I. Zaid & Associates."
+    },
+    {
+      "label": "Top Three Personal Injury Lawyers in Pasadena",
+      "detail": "Award to Joe I. Zaid & Associates."
+    },
+    {
+      "label": "Top 10 Car Accident Lawyers in Pasadena",
+      "detail": "Award to Joe I. Zaid & Associates."
+    },
+    {
+      "label": "Best Car Accident Lawyers in Pearland",
+      "detail": "Award to Joe I. Zaid & Associates."
+    },
+    {
+      "label": "Licensed in Texas",
+      "detail": "Joe I. Zaid is licensed to practice law in Texas."
+    },
+    {
+      "label": "Juris Doctor",
+      "detail": "South Texas College of Law Houston"
+    },
+    {
+      "label": "Houston Trial Lawyers Association",
+      "detail": "Active member"
+    },
+    {
+      "label": "Texas Trial Lawyers Association",
+      "detail": "Active member"
+    }
+  ],
+  "affiliations": {
+    "title": "Awards and As Featured On",
+    "items": [
+      "2026 Super Lawyers",
+      "Top 40 Under 40, The National Trial Lawyers",
+      "H-Texas Top Lawyers",
+      "Houston Chronicle Best of the Best",
+      "Associated Press",
+      "Business Insider",
+      "Benzinga",
+      "FOX 43",
+      "Newsmax",
+      "The Globe and Mail",
+      "Street Insider",
+      "Asia One"
+    ]
+  },
+  "team": [
+    {
+      "name": "Joe I. Zaid",
+      "role": "Managing Partner, Founding Attorney"
+    },
+    {
+      "name": "Lawrence Sims",
+      "role": "Senior Associate Attorney"
+    },
+    {
+      "name": "Zane Noureddine",
+      "role": "Associate Attorney"
+    },
+    {
+      "name": "Zari Brown",
+      "role": "Associate Attorney"
+    },
+    {
+      "name": "John Edwards",
+      "role": "Senior Case Manager"
+    },
+    {
+      "name": "Nicole Mason",
+      "role": "Case Manager"
+    },
+    {
+      "name": "George Zaid",
+      "role": "Senior Case Manager"
+    },
+    {
+      "name": "Neil Pannell",
+      "role": "Case Manager"
+    },
+    {
+      "name": "Romey Zaid",
+      "role": "Director of Operations"
+    },
+    {
+      "name": "Yanett Salgado",
+      "role": "Office Assistant"
+    },
+    {
+      "name": "Cristal Trevino",
+      "role": "Legal Assistant"
+    },
+    {
+      "name": "Cindy Leal",
+      "role": "Paralegal"
+    },
+    {
+      "name": "Melissa Guerra",
+      "role": "Legal Assistant to Joe I. Zaid"
+    },
+    {
+      "name": "Crystal Glover",
+      "role": "Legal Assistant"
+    },
+    {
+      "name": "Heather Williams",
+      "role": "Office Administrator"
+    },
+    {
+      "name": "Rachel Paez",
+      "role": "Office Assistant"
+    },
+    {
+      "name": "Alexis Diaz",
+      "role": "Legal Assistant"
+    },
+    {
+      "name": "Crystal Rodriguez",
+      "role": "Legal Assistant"
+    },
+    {
+      "name": "Christina Gonzales",
+      "role": "Legal Assistant"
+    },
+    {
+      "name": "Thomas Avaloz",
+      "role": "Legal Assistant"
+    },
+    {
+      "name": "Marilyn Martinez",
+      "role": "Legal Assistant"
+    },
+    {
+      "name": "Elsa Rivera",
+      "role": "Legal Assistant"
+    },
+    {
+      "name": "Jessica Perez",
+      "role": "Legal Assistant"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I know if I have a personal injury case?",
+      "a": "If another party’s negligence caused your injury and you have losses like medical bills, missed work, or ongoing pain, you likely have grounds worth reviewing. The clearest way to understand whether you may have a case is to have an attorney look at the specific facts, since disputed liability or limited documentation doesn’t automatically rule out a claim."
+    },
+    {
+      "q": "How much does it cost to hire a personal injury lawyer?",
+      "a": "Joe I. Zaid & Associates handles personal injury cases on a contingency fee basis, so you pay no upfront attorney’s fees, and we only get paid if we recover compensation for you."
+    },
+    {
+      "q": "How much is my personal injury case worth?",
+      "a": "There’s no fixed number. Value depends on medical treatment and future care, lost income, the severity of the injury, and available insurance coverage, among other factors. An attorney can give you a realistic picture only after reviewing the details."
+    },
+    {
+      "q": "How long do I have to file a personal injury claim in Texas?",
+      "a": "In most cases, Texas law gives you two years from the date of the injury to file a personal injury lawsuit, under Texas Civil Practice and Remedies Code Section 16.003. Certain situations, like claims involving a minor, can affect how that deadline applies."
+    },
+    {
+      "q": "What should I do after an accident in Houston?",
+      "a": "The priorities right after an accident are safety and medical attention, even if injuries don’t seem serious at first. Once you’re safe, documenting the scene, getting a police report, and avoiding early recorded statements to an insurance adjuster can all help protect a future claim."
+    },
+    {
+      "q": "Will my personal injury case go to trial?",
+      "a": "Most personal injury cases settle before trial, but that depends on whether an insurer is willing to offer a fair resolution. Preparing every case with the readiness to litigate, not just negotiate, tends to support a stronger settlement position."
+    },
+    {
+      "q": "How long does a personal injury case take?",
+      "a": "Timelines vary with the complexity of the case, the severity of the injury, how long treatment takes, and whether the insurance company disputes liability. Some cases resolve in a few months, while more serious or contested claims take longer."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Four Houston-Area Offices",
+      "items": [
+        "Pasadena Office: 4701 Preston Ave, Pasadena, TX 77505. Phone (346) 756-9243, se habla español. Fax (866) 563-9243.",
+        "Downtown Houston Office: 1001 Texas Ave Suite 1400, Houston, TX 77002. Phone (346) 340-0800.",
+        "Humble Office: 5616 FM1960 Road East Suite 290D, Humble, TX 77346. Phone (346) 594-0500.",
+        "Clear Lake Office: 16821 Buccaneer Ln #226, Houston, TX 77058. Phone (346) 690-0500.",
+        "The firm is available 24 hours a day at each office."
+      ]
+    },
+    {
+      "heading": "Nearly a Decade Inside the Insurance Industry",
+      "text": "Joe Zaid’s inside perspective helps our personal injury lawyers anticipate how insurers evaluate, delay, and dispute injury claims. Our firm has recovered millions for injury victims, including multiple seven-figure settlements in disputed-liability cases. Every case starts with your injuries, your daily life, and what you actually need, so you are never treated like just another case number."
+    },
+    {
+      "heading": "Case Results Built Through Insight and Investigation",
+      "items": [
+        "Our lawyers revisit disputed liability, locate missing evidence before it disappears, identify additional responsible parties, and build claims around facts that may have been overlooked.",
+        "$1.2M car accident settlement after a previous firm could not establish liability.",
+        "$455,000 commercial vehicle settlement after a private ambulance driver ran a stop sign, hit a client and fled the scene.",
+        "$435,000 uninsured motorist settlement through the client’s own $1 million UM/UIM policy.",
+        "$250,000 policy-limits drunk driving accident settlement after a head-on crash on Highway 105.",
+        "$237,500 underinsured motorist settlement after a T-bone crash caused three spinal fractures.",
+        "$200,000 rear-end collision settlement after a high-speed crash on a Houston freeway.",
+        "$187,500 hit and run settlement through the client’s own insurance.",
+        "$134,000 truck accident settlement after a third party offered $20,000 for everyone in the vehicle.",
+        "$132,500 car accident settlement after a rollover on NASA Bypass.",
+        "$125,000 slip and fall settlement after years of litigation over a hardware store wet floor.",
+        "$120,000 grocery store slip and fall settlement.",
+        "$90,000 slip and fall settlement with no formal incident report.",
+        "$85,000 premises liability settlement against a grocery store and its contractor.",
+        "$80,000 multi-vehicle crash settlement.",
+        "Past results are not a guarantee of future results. Each case depends on its own unique facts and circumstances."
+      ]
+    },
+    {
+      "heading": "Finding Every Layer of Insurance Coverage",
+      "text": "When a client was hit by an uninsured 17-year-old driver in Pasadena, TX, the firm recovered a $435,000 settlement by identifying and pursuing the client’s own $1 million UM/UIM policy. In a separate case, a medical van passenger hurt by a driver carrying only $30,000 in liability coverage reached a total settlement of $237,500 after the firm pursued the client’s underinsured motorist coverage. Past results do not guarantee future results."
+    },
+    {
+      "heading": "Thousands of Clients Represented",
+      "text": "Joe Zaid has represented thousands of injured clients and families in personal injury cases."
+    },
+    {
+      "heading": "Premises Cases We Handle",
+      "items": [
+        "H-E-B",
+        "Costco",
+        "Kroger",
+        "Walmart",
+        "McDonald’s",
+        "Hotels, pools, theme parks and water parks",
+        "Daycare and nursing home abuse",
+        "Roof and ceiling collapse",
+        "School injuries"
+      ]
+    },
+    {
+      "heading": "Auto Accident Cases We Handle",
+      "items": [
+        "Drunk driver, DUI and DWI accidents",
+        "Uber, Lyft and rideshare accidents",
+        "Metro bus accidents",
+        "Package delivery and Amazon delivery truck accidents",
+        "Golf cart and ATV accidents",
+        "Rental car and Turo accidents"
+      ]
+    },
+    {
+      "heading": "Follow the Firm",
+      "items": [
+        "Facebook: facebook.com/joe.zaid.165",
+        "Facebook: facebook.com/profile.php?id=100063468699854",
+        "X: twitter.com/AssociatesJoe",
+        "Instagram: instagram.com/joezaid_personal_injury",
+        "YouTube: youtube.com/@joei.zaidassociates5126",
+        "TikTok: tiktok.com/@joe_zaid",
+        "LinkedIn: linkedin.com/in/joe-zaid-483a921"
+      ]
+    },
+    {
+      "heading": "Se Habla Español",
+      "text": "Our website is also available in Spanish, with the same practice areas, FAQs and legal guides, and our team provides clear guidance in both English and Spanish throughout the legal process."
+    },
+    {
+      "heading": "What Clients Say",
+      "items": [
+        "“Joe supported and defended us in a very difficult and heartbreaking case. Through it all, he maintained contact, kept us updated, and then worked diligently to get the best settlement while also keeping us informed. He always provided genuine, personal care. I would recommend him 100%.” Stacy Dale, originally posted on Google to our office in Pasadena, TX.",
+        "“I’d like to thank Nicholas and everyone at Joe I. Zaid & Associates for helping me. Without them, I wouldn’t have been treated or had my car fixed by the responsible party. They worked tirelessly to help me and went above and beyond for my case.” Adam Bourchig, originally posted on Google to our office in Pasadena, TX.",
+        "“Mr. Zaid and his team were always available to answer my questions and concerns. They put me at ease throughout the legal process. Their team has a thorough knowledge of the law and defended my case with determination. I highly recommend them.” Cindy Campos, originally posted on Google to our office in Clear Lake, TX."
+      ]
+    },
+    {
+      "heading": "Latest Legal Guides",
+      "items": [
+        "Can You Sue After a Hayride Accident in Texas? (October 19, 2026)",
+        "Should I Give a Recorded Statement After a Car Accident in Texas? (August 7, 2026)",
+        "How Much Does a Car Accident Lawyer Cost in Texas? (May 29, 2026)"
+      ]
+    },
+    {
+      "heading": "En Español",
+      "items": [
+        "¿Por qué contratar a nuestros abogados de lesiones personales en Houston? Casi una década dentro del sector de los seguros, millones de dólares recuperados para clientes lesionados, no se cobrarán honorarios a menos que obtengamos una indemnización para usted, y atención personalizada de principio a fin.",
+        "¿Necesito un abogado especializado en lesiones personales? Si usted sufrió lesiones graves debido a la negligencia de otra persona, un abogado especializado en lesiones personales puede ayudarle a obtener una indemnización completa por sus lesiones.",
+        "Guías legales en español: ¿Se puede demandar a una empresa tras un accidente en un paseo en carreta de heno en Texas? ¿Debo prestar declaración grabada después de un accidente de coche en Texas? ¿Cuánto cuesta un abogado especializado en accidentes de tráfico en Texas?"
+      ]
+    }
+  ]
+}
