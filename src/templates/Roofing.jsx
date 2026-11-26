@@ -1348,9 +1348,11 @@ function AboutBand({ b }) {
     <section className={`bg-ink text-white ${topClip} pb-[clamp(4rem,9vw,7rem)] pt-[calc(clamp(28px,5vw,88px)+clamp(3.5rem,8vw,6rem))]`}>
       {/* Without a photo the heading takes the left half and the words the right, so neither half is left empty.
           With one the heading runs across the top and the photo sits beside the words: under the heading
-          it made the left half the heading's height taller than the words, and left the right half empty. */}
+          it made the left half the heading's height taller than the words, and left the right half empty.
+          The heading sits at the top of its half, level with the words: centred on their height it was pushed
+          down beside the values and left a dark empty block above it. */}
       <div
-        className={`${wrap} grid ${a.image ? 'items-start gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-x-20' : 'items-center lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-20'}`}
+        className={`${wrap} grid items-start ${a.image ? 'gap-10 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-x-20' : 'lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-20'}`}
       >
         <div className={a.image ? 'md:col-span-2' : ''}>
           <Eyebrow dark>{b.since ? `Since ${b.since}` : 'About us'}</Eyebrow>
@@ -1733,9 +1735,9 @@ function ServicePage({ b, tel, s }) {
   // A service their site only names has no words for its page; the
   // inspection card then runs across the page instead of beside an empty column.
   // A sentence or two would leave the column beside the card mostly white, so
-  // the card then runs across under them.
+  // the card then runs across under them; so it does under a checklist of one to three short points.
   const told = list(s.body).length > 0 || list(s.points).length > 0 || list(s.faqs).length > 0;
-  const said = list(s.points).length > 0 || list(s.faqs).length > 0 || list(s.body).join(' ').length > 320;
+  const said = list(s.points).length > 3 || list(s.faqs).length > 0 || list(s.body).join(' ').length > 320;
   // An inspection their own words put a price on is not called free.
   const priced = /\binspections?$/i.test(s.title.trim()) && /\$\s?\d/.test([s.text, ...list(s.body)].join(' '));
   return (
