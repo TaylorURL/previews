@@ -1,0 +1,354 @@
+{
+  "template": "hvac",
+  "preview": true,
+  "name": "Allen Genoa Self Storage",
+  "shortName": "Allen Genoa Self Storage",
+  "phone": "(281) 723-7671",
+  "email": "reserve@agselfstorage.com",
+  "address": "2525-A, 2525 Allen Genoa Rd",
+  "town": "Pasadena",
+  "state": "TX",
+  "zip": "77502",
+  "rating": 4.6,
+  "reviewCount": 56,
+  "brand": {
+    "primary": "#52602c",
+    "primaryDeep": "#39431f",
+    "accent": "#b6783e",
+    "ink": "#1b2021",
+    "surface": "#f5f5f2",
+    "muted": "#5b6470",
+    "line": "#dfe0e0",
+    "heading": "'Montserrat', system-ui, sans-serif",
+    "body": "'Montserrat', system-ui, sans-serif",
+    "fonts": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap",
+    "logo": "/brands/allengenoaselfstorage/logo.webp",
+    "logoMono": "/brands/allengenoaselfstorage/logo-mono.webp",
+    "logoWidth": 260,
+    "logoHeight": 47,
+    "logoRatio": 5.535,
+    "logoGround": "#ffffff",
+    "logoReads": [
+      0.756,
+      0.477,
+      0.468,
+      0.451,
+      0.086,
+      0.0,
+      0.02,
+      0.502,
+      0.526,
+      0.537,
+      0.546
+    ]
+  },
+  "heroStyle": "split",
+  "tone": "bold",
+  "hero": {
+    "eyebrow": "Storage units in Pasadena, TX",
+    "title": "Secure and affordable storage units",
+    "titleAccent": "in Pasadena, TX.",
+    "lead": "Climate-controlled and interior units from $47 a month on Allen Genoa Road, all at ground level, with month-to-month leases and online booking.",
+    "image": "/brands/allengenoaselfstorage/photo1",
+    "imageAlt": "An indoor hallway of storage units with cream roll-up doors"
+  },
+  "serviceArea": [
+    "Pasadena"
+  ],
+  "highlights": [
+    {
+      "title": "Ground-Level Units",
+      "text": "No elevators or stairs are needed to reach your unit.",
+      "icon": "home"
+    },
+    {
+      "title": "Security Cameras",
+      "text": "Dependable security cameras, lighting and a secure personal keycode at the gate.",
+      "icon": "shield"
+    },
+    {
+      "title": "Wide Drive Aisles",
+      "text": "Wide drive aisles and parking make loading and unloading easy.",
+      "icon": "car"
+    },
+    {
+      "title": "Se Habla Español",
+      "text": "Our bilingual staff assist customers in both English and Spanish.",
+      "icon": "building"
+    }
+  ],
+  "languages": [
+    "English",
+    "Spanish"
+  ],
+  "ask": "reserve",
+  "summary": "Clean, secure storage units in Pasadena, Texas: climate-controlled and interior units, outdoor drive-up units and month-to-month leases.",
+  "groups": [
+    {
+      "slug": "climate-controlled-storage",
+      "title": "Climate Controlled Storage",
+      "icon": "thermometer",
+      "summary": "Climate-controlled units for those storing temperature-sensitive items.",
+      "intro": "We pride ourselves on not only offering storage units in Pasadena, TX but also providing climate-controlled options for those seeking to store temperature-sensitive items. Every unit is ground-level access, so no elevators or stairs are needed to reach it.",
+      "image": "/brands/allengenoaselfstorage/photo3",
+      "imageAlt": "An indoor storage hallway with one unit's roll-up door open",
+      "services": [
+        {
+          "slug": "climate-controlled-units",
+          "title": "Climate-Controlled Units",
+          "text": "Climate-controlled storage units in Pasadena, TX, in nine sizes from 5x7 up to 10x17, each with 50% off your first month.",
+          "points": [
+            "5x10: $51.30 a month (booked)",
+            "5x7: $54.00 a month (booked)",
+            "8.5x10: $69.00 a month (booked)",
+            "8.5x5: $82.00 a month (booked)",
+            "10x5: $89.00 a month (available to rent)",
+            "10x12: $134.00 a month (booked)",
+            "10x10: $136.00 a month (available to rent)",
+            "15x10: $182.00 a month (booked)",
+            "10x17: $190.80 a month (booked)"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "indoor-and-drive-up-storage-units",
+      "title": "Indoor and Drive-Up Units",
+      "icon": "building",
+      "summary": "Indoor units and outdoor drive-up units, so you can choose the space that fits.",
+      "intro": "Our facility provides both indoor units and outdoor drive up units, giving you the flexibility to choose the type of space that fits your needs best. With dependable security cameras, wide drive aisles and simple month to month rentals, storing with us is easy from day one.",
+      "services": [
+        {
+          "slug": "interior-units",
+          "title": "Interior Units",
+          "icon": "home",
+          "text": "Indoor storage units for mini storage, personal storage, business storage or simply extra space for your belongings, each with 50% off your first month.",
+          "points": [
+            "8.5x5: $47.00 a month (available to rent)",
+            "5x10: $54.00 a month (available to rent)",
+            "5.5x10: $73.00 a month (booked)",
+            "10x8.5: $94.00 a month (booked)",
+            "10x10: $110.00 a month (booked)",
+            "15x10: $119.00 a month (booked)",
+            "10x17: $148.00 a month (booked)"
+          ]
+        },
+        {
+          "slug": "drive-up-units",
+          "title": "Drive-Up Units",
+          "icon": "car",
+          "text": "Outdoor drive-up units with drive-up access and wide drive aisles that make loading and unloading easy."
+        },
+        {
+          "slug": "parking",
+          "title": "Parking",
+          "icon": "car",
+          "text": "Parking is available at the facility."
+        }
+      ]
+    },
+    {
+      "slug": "month-to-month-leases",
+      "title": "Leases and Billing",
+      "icon": "clipboard",
+      "summary": "Month-to-month leases, extended access, online booking and online bill payment.",
+      "intro": "Allen Genoa Self Storage offers flexible leases, so you can change your storage unit size or duration as your needs evolve. Book online any time and manage your bill online.",
+      "services": [
+        {
+          "slug": "month-to-month-leases",
+          "title": "Month-to-Month Leases",
+          "icon": "clipboard",
+          "text": "Flexible month-to-month leases, so you can change your storage unit size or duration as your needs evolve."
+        },
+        {
+          "slug": "extended-access-and-rentals",
+          "title": "Extended Access and Rentals",
+          "icon": "timer",
+          "text": "We provide you with access to your stored items in Pasadena with ultimate convenience and flexibility. The gate is open 7 AM to 10 PM every day, and your secure personal keycode lets you come by without a reservation."
+        },
+        {
+          "slug": "online-booking",
+          "title": "24/7 Online Booking",
+          "icon": "timer",
+          "text": "Select the size you want and book online. You can reserve a unit ahead of your move-in date and you do not pay until the day you move in."
+        },
+        {
+          "slug": "online-bill-payment",
+          "title": "Online Bill Payment",
+          "icon": "settings",
+          "text": "Conveniently manage your storage bills with our easy online bill payment. Need assistance? Our customer support team is just a call away."
+        }
+      ]
+    }
+  ],
+  "about": {
+    "eyebrow": "About us",
+    "title": "Modern storage solution built around your needs",
+    "text": [
+      "At Allen Genoa Self Storage, we make it easy to store the things that matter. Our focus is simple: secure storage units, affordable options, and a smooth, stress-free experience from start to finish.",
+      "Whether you are organizing your home, moving, or storing business inventory, we provide a safe, clean and convenient place for your belongings.",
+      "Allen Genoa Self Storage isn't just a storage facility. It's a place built to give you peace of mind, modern security and easy access to your space whenever you need it.",
+      "We are at 2525 Allen Genoa Rd A, just south of the Pasadena Little Theatre on Allen-Genoa Road and a short drive from Space Center Houston, a convenient spot for residents, students and businesses.",
+      "Our team includes bilingual staff who assist customers in both English and Spanish, and we strive to answer all inquiries within 24 hours."
+    ],
+    "image": "/brands/allengenoaselfstorage/photo2",
+    "imageAlt": "An empty, clean indoor storage unit at Allen Genoa Self Storage with its roll-up door open",
+    "values": [
+      {
+        "title": "Clean",
+        "text": "Clean, secure and convenient units for all your storage needs."
+      },
+      {
+        "title": "Easy Access",
+        "text": "A secure personal keycode lets you pop in to your unit without a reservation in advance."
+      },
+      {
+        "title": "Flexible",
+        "text": "Month-to-month leases you can change as your needs evolve."
+      }
+    ]
+  },
+  "phones": [
+    {
+      "label": "Call or text",
+      "number": "(281) 723-7671"
+    }
+  ],
+  "hours": [
+    [
+      "Access hours, Mon – Sun",
+      "7 AM – 10 PM"
+    ],
+    [
+      "Support hours, Mon – Sun",
+      "9 AM – 6 PM"
+    ]
+  ],
+  "faqs": [
+    {
+      "q": "How do I reserve a storage unit?",
+      "a": "Select the unit size you want and book online. If you have any questions about the units, please feel free to call us, we're always happy to help."
+    },
+    {
+      "q": "Can I reserve a storage unit in advance?",
+      "a": "Yes. You can reserve a storage unit ahead of your move-in date. You do not have to pay for the unit until the day you move in."
+    },
+    {
+      "q": "How much are storage units near me in Pasadena?",
+      "a": "Our storage units are competitively priced for the Pasadena area. Our current monthly rates are listed on this site, from $47.00 for an 8.5x5 interior unit, and every unit comes with 50% off your first month."
+    },
+    {
+      "q": "What is self storage?",
+      "a": "Self storage is the kind of storage that you can access regularly by yourself. Generally people use it when they have extra items they want to store outside their home to make additional space and/or when they are moving. Our facility is accessible via a secure personal keycode, so you are free to pop in to your storage unit and grab your things without a reservation in advance."
+    },
+    {
+      "q": "Do you have bilingual staff available?",
+      "a": "Yes. Our facility has bilingual staff who can assist both English and Spanish speaking customers. Se habla español. If you prefer to communicate in Spanish, we are happy to help."
+    },
+    {
+      "q": "Is Allen Genoa Self Storage facility temperature controlled?",
+      "a": "Yes, we offer climate-controlled storage units in Pasadena, TX."
+    },
+    {
+      "q": "Are there storage units with elevator access?",
+      "a": "All of our storage units are ground-level access. No elevators or stairs are needed to reach your unit."
+    }
+  ],
+  "facts": [
+    {
+      "heading": "Facility Features",
+      "items": [
+        "Security cameras",
+        "Lighting",
+        "Climate controlled units",
+        "Interior and outdoor drive-up units",
+        "Wide drive aisles",
+        "Parking",
+        "Ground-level access, no elevators or stairs",
+        "Secure personal keycode entry"
+      ]
+    },
+    {
+      "heading": "Climate-Controlled Units: Dimensions and Price",
+      "text": "Monthly rates from our unit list, each with 50% off your first month. Rates and availability change, so book online or call or text for the latest.",
+      "items": [
+        "5x10: $51.30 a month (booked)",
+        "5x7: $54.00 a month (booked)",
+        "8.5x10: $69.00 a month (booked)",
+        "8.5x5: $82.00 a month (booked)",
+        "10x5: $89.00 a month (available)",
+        "10x12: $134.00 a month (booked)",
+        "10x10: $136.00 a month (available)",
+        "15x10: $182.00 a month (booked)",
+        "10x17: $190.80 a month (booked)"
+      ]
+    },
+    {
+      "heading": "Interior Units: Dimensions and Price",
+      "items": [
+        "8.5x5: $47.00 a month (available)",
+        "5x10: $54.00 a month (available)",
+        "5.5x10: $73.00 a month (booked)",
+        "10x8.5: $94.00 a month (booked)",
+        "10x10: $110.00 a month (booked)",
+        "15x10: $119.00 a month (booked)",
+        "10x17: $148.00 a month (booked)"
+      ]
+    },
+    {
+      "heading": "Online Services",
+      "items": [
+        "Browse units and book online, 24/7",
+        "Reserve ahead of your move-in date and pay on the day you move in",
+        "Pay your bill online"
+      ]
+    },
+    {
+      "heading": "Contact Us About",
+      "items": [
+        "Pricing and availability",
+        "Existing tenant questions",
+        "Making a payment",
+        "Gate or unit access",
+        "Facility or service issues",
+        "Move-outs",
+        "Account questions"
+      ]
+    },
+    {
+      "heading": "Facility Tour",
+      "text": "Watch our intro video to learn more about who we are.",
+      "items": [
+        "Allen Genoa Self Storage | Facility Tour: https://www.youtube.com/watch?v=pUQ5h9n8qo4"
+      ]
+    },
+    {
+      "heading": "Management",
+      "text": "Powered by White Label Storage, a self storage management company."
+    }
+  ],
+  "promo": {
+    "eyebrow": "Move-in special",
+    "title": "50% off your first month",
+    "text": "Every unit on our list comes with 50% off your first month, so a $47.00 interior unit is $23.50 to start. Pick your size, book online and move in.",
+    "price": "50%",
+    "priceNote": "off your first month"
+  },
+  "reviews": [
+    {
+      "author": "Nohemy Cabrera",
+      "text": "I walked in, and the receptionist there was so nice. Very welcoming and answered all my questions with much patience. Took time to show me where my new storage unit was located. Thank you!",
+      "source": "Google"
+    },
+    {
+      "author": "Irene Guzman",
+      "text": "Been with this storage for quite some time now and never had no problems if any issues or forgot ur code they help immediately.",
+      "source": "Google"
+    },
+    {
+      "author": "Lorena Vega",
+      "text": "Love the staff, very friendly. I don’t have any issues with the storage. Very affordable and I really recommend it.",
+      "source": "Google"
+    }
+  ]
+}
