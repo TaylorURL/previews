@@ -1841,7 +1841,7 @@ function ServicePage({ b, tel, s }) {
         <section className={`border-t border-ink/10 ${pad}`}>
           <div className={wrap}>
             <Eyebrow>More services</Eyebrow>
-            <h2 className={`${h2} mb-8`}>Other roof work we do</h2>
+            <h2 className={`${h2} mb-8`}>Other work we do</h2>
             <ul className="grid gap-x-10 md:grid-cols-2">
               {others.map((o, i) => (
                 <li key={o.slug} className="border-b border-ink/10">
